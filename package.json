@@ -1,0 +1,13 @@
+{
+  "name": "topo-italie-baseline",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "dev": "python3 -m http.server 8000",
+    "lint": "node scripts/check-syntax.mjs",
+    "typecheck": "node -e \"console.log('No type checker configured: standalone JavaScript baseline')\"",
+    "test": "node scripts/validate-map.mjs",
+    "build": "node scripts/build.mjs"
+  }
+}

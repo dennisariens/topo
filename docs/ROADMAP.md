@@ -20,7 +20,7 @@ Final Italy stabilization implemented the Rome/Vatican selector, shuffled sessio
 |---|---|---|---|
 | Track weak/mastered items and simple due reviews; keep a transparent map-first flow | CONCEPT | Shuffled deck and stable item IDs | M |
 | Category-filtered quiz using the existing worksheet groups | PLANNED | Deck accepts a filtered pool | S |
-| Improve grouped reference maps and print legibility | PARTIAL | Stable map/labels | S |
+| Review print contrast and legibility on a physical school printer | PARTIAL (A4 booklet and print HTML implemented) | First printed copy/user feedback | S |
 | Parent/teacher overview only if observed need | CONCEPT | Validated learning data | M |
 
 ## Later

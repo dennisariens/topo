@@ -6,6 +6,12 @@ const context = {};
 runInNewContext(readFileSync(new URL('./learning-engine.js', import.meta.url), 'utf8'), context);
 const E = context.TopoLearning;
 const cards = Array.from({length:45},(_,n)=>({id:`city-${n+1}`}));
+assert.ok(E.matchesCode(' a ', 'a'));
+assert.ok(E.matchesCode(' A ', 'A'));
+assert.ok(!E.matchesCode('A', 'a'), 'capital A is not the same worksheet feature as lowercase a');
+assert.ok(!E.matchesCode('a', 'A'), 'lowercase a is not the same worksheet feature as capital A');
+assert.ok(E.matchesCode('11', '11'));
+assert.ok(!E.matchesCode('1', '11'));
 function rng(seed) {
   let x = seed;
   return () => { x = (Math.imul(x,1664525) + 1013904223) >>> 0; return x / 4294967296; };

@@ -6,6 +6,12 @@
   const SLICES_PER_PIZZA = 8;
   const PIZZAS_PER_TRIP = 3;
 
+  // Uppercase worksheet letters refer to waters/rivers; lowercase to land/features.
+  // This comparison must remain case-sensitive: a and A are different answers.
+  function matchesCode(answer, expected) {
+    return typeof answer === 'string' && answer.trim() === expected;
+  }
+
   function shuffle(values, random = Math.random) {
     const result = [...values];
     for (let i = result.length - 1; i > 0; i--) {
@@ -92,6 +98,6 @@
     return { from, to };
   }
 
-  root.TopoLearning = { shuffle, session, draw, migrate, award, journey,
+  root.TopoLearning = { shuffle, session, draw, migrate, award, journey, matchesCode,
     SLICES_PER_PIZZA, PIZZAS_PER_TRIP, STOPS };
 })(typeof window === 'undefined' ? globalThis : window);

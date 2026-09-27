@@ -54,6 +54,12 @@ for (const id of ['area-n', 'area-o', 'area-e', 'area-f', 'area-d']) {
   const { name, px, py } = byId.get(id);
   assert.ok(onItalianLand([px, py]), `${name} marker on Italian land`);
 }
+const distance = (a, b) => Math.hypot(a.px - b.px, a.py - b.py);
+assert.ok(distance(byId.get('area-o'), byId.get('city-9')) < 20, 'Vatican remains beside Rome');
+assert.ok(distance(byId.get('area-n'), byId.get('city-2')) > 40, 'San Marino remains distinct from Bologna');
+assert.match(script, /i\.id==='area-o'\?2\.7:4\.5/, 'Vatican uses tiny visible point');
+assert.match(script, /const romeHit=el\('circle',[^;]*class:'microHit'/, 'Rome/Vatican have a separate transparent hit circle');
+assert.match(script, /data-choice="city-9"[\s\S]*data-choice="area-o"/, 'lens keeps two distinct targets');
 assert.ok(onItalianLand([443, 370]), 'Po stops on current land');
 const anchorsLiteral = script.match(/const NAME_ANCHORS=(\{[\s\S]*?\});/)?.[1];
 assert.ok(anchorsLiteral, 'learning label anchors exist');

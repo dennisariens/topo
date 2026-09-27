@@ -8,4 +8,6 @@ execFileSync(process.execPath, [resolve(root, 'scripts/check-syntax.mjs')], { st
 execFileSync(process.execPath, [resolve(root, 'scripts/validate-map.mjs')], { stdio: 'inherit' });
 mkdirSync(resolve(root, 'dist'), { recursive: true });
 cpSync(resolve(root, 'index.html'), resolve(root, 'dist/index.html'));
+mkdirSync(resolve(root, 'dist/scripts'), { recursive: true });
+cpSync(resolve(root, 'scripts/learning-engine.js'), resolve(root, 'dist/scripts/learning-engine.js'));
 console.log('Static build: dist/index.html');

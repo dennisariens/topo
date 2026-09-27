@@ -1,30 +1,23 @@
 # Project state
 
-**Last verified against repository: 2026-09-24.** Source baseline: recovered `topo-italie-v6.html`, copied byte-for-byte to `index.html`. A former repository was not available; this is a newly initialized Git baseline, not a claim that older source files were audited.
-
-Canonical Git remote: `dennisariens/topo`, branch `main`. The Library ZIP is a recovery snapshot, not an alternative editing source.
+**Last verified against repository: 2026-09-27.** Canonical repository: `dennisariens/topo`, branch `main`. Recovered from standalone `topo-italie-v6.html`; older HTML and recovery ZIP are historical.
 
 ## Purpose and implementation
 
-Dutch primary-school learner, around Group 7; map-first Italy topography with 45 items: 23 cities; 2 islands, 2 mountain ranges, 2 volcanoes, 2 regions, 7 countries/microstates; 5 seas; 2 rivers. One offline HTML file contains CSS, inline JavaScript, SVG paths and an embedded photographed worksheet. No dependencies, API, routes, localization framework, build pipeline, CI, or existing tests preceded this baseline.
+Dutch Group 7 learner; map-first Italy practice with 45 items: 23 cities, 2 islands, 2 mountain ranges, 2 volcanoes, 2 regions, 7 countries/microstates, 5 seas and 2 rivers. Dependency-free HTML/CSS/SVG/JavaScript. `index.html` embeds SVG paths and the worksheet photo; `scripts/learning-engine.js` is loaded locally for sessions/rewards. `npm run build` copies both to `dist/`; no API, framework, deployment configuration or CI.
 
-## What works in code
+## Working in code
 
-- Learn: category selector (city groups 1–6, 7–12, 13–18, 19–23; thematic groups; all; mistakes), highlight, next/list navigation, names on group-specific map, print. `all` deliberately suppresses labels to avoid crowding.
-- Quiz: all-item point mode, name typing, and a mixed test that also asks the school-sheet letter/number. Click/tap or keyboard Enter/Space on SVG targets; normalize diacritics for typed names; correct/incorrect feedback and reveal.
-- Progress: correct count, current streak, mistakes, five correct answers per pizza. Counts/mistakes/pizzas saved in `localStorage` key `topo-italie-v2`; streak and current question are session-only. Pizza-only and full reset have confirmation dialogs.
-- Responsive: desktop map + panel columns; panel above map under 950 px; smaller text/spacing under 600 px. SVG scales with `viewBox`. No verified tablet/mobile tap ergonomics or live-browser run yet.
+- Learn: four city groups (1–6, 7–12, 13–18, 19–23), thematic groups, all, mistakes, shuffled first highlight and subsequent cards, fixed-order list, group labels and print. The all-items group suppresses labels to avoid collisions.
+- Quiz: point, type, mixed test (point/name/worksheet code), feedback, reveal and mistake-only practice. The 45-item deck shuffles without immediate repeats; saved mistakes can recur after five turns. Quiz category selection and mastery scheduling are absent.
+- Rome/Vatican: small visible Vatican dot near Rome; shared transparent trigger opens a two-target local selector on hover/focus/tap. San Marino has a separate visible dot and transparent hit circle. Exact source coordinates remain unverified.
+- Rewards: each correct answer earns a slice; 8 slices = pizza; every third pizza = Vespa trip along Rome → Florence → Bologna → Venetië → Milaan → Genua → Napels, cycling thereafter. Nonblocking 1.4-second animation respects reduced motion. Good count, mistakes, pizzas, slices and trips persist under `topo-italie-v3`; v2 saves migrate preserving earned pizzas. Pizza-only and full reset work; streak and current question are session-only.
+- Responsive: SVG viewBox fixed; map and panel rearrange below 950 px. Local browser connection was blocked at verification, so phone/tablet ergonomics remain unverified.
 
-## Stable decisions / do not regress
+## Geography and worksheet
 
-Real country silhouettes for the five quiz countries, distinct surrounding land, San Marino within Italy, country labels inside their countries, 23 cities on land in the **current drawn coastline**, Ligurian Sea in content, Po endpoint on land, volcano markers on land, Sicily label on Sicily, Dolomites zone on Italian land, original group order, reward resets. Keep actual map geometry separate from generous target geometry during future work.
+Surrounding European/North African land is distinct from sea. Country shapes, 23 city markers, microstates, Ligurian Sea label, Po endpoint, Etna, Sicily label and Dolomites have targeted static invariants (`scripts/validate-map.mjs`). These test the **drawn** geometry, not external GIS. Path provenance is unknown; coastlines, mountain regions, rivers and sea zones are partly schematic. Worksheet photo and SVG both measure 890 × 1235; sampled printed red dots mostly align with the SVG markers. A global rotation would degrade alignment. Photo perspective and coastlines remain independently unregistered; keep the readable 1:1 overlay. Details: `MAP_SYSTEM.md`.
 
-## Known issues and limits
+## Do not regress / next priority
 
-The JS `ITEMS` combines objects, positions and hand-authored quiz shapes in one large line; SVG country/Italy paths and context shapes are embedded without upstream provenance. Map coordinates are custom SVG pixels, not stored longitude/latitude. The drawing is coarse at coastal cities; moving markers inland to fit it is not a substitute for accurate coastline data. River and sea zones, mountain shading, regional outlines and some anchor labels are didactic approximations. No browser or mobile verification was available at reconstruction.
-
-The worksheet is a perspective photograph shown with `object-fit: fill` against the SVG; it is north-up approximately but uncalibrated and stretches nonuniformly. Vatican and Rome are separate circles around 15 px apart at source viewBox scale, without an inset; their tap areas are small/adjacent. Questions use independent `Math.random` picks, avoid only immediate repeat, and weight saved mistakes 3×; there is no shuffled session deck, category-balanced practice, mastery, or adaptive scheduling. `mode('learn')` always opens with Bari because the list follows `ITEMS` order; the reported first-Bari symptom belongs to Learn, while quiz starts are random in code. Pizza is five answers, no slices or Vespa. See `MAP_SYSTEM.md` for the issue table and `LEARNING_MODEL.md` for sequencing.
-
-## Active direction and next package
-
-Stabilize the existing Italy experience. First package: **Topo Stabilization / Final Italy Pass** — establish source-provenance and geometric validation, calibrate the worksheet, implement Rome/Vatican lens, testable shuffled questions, then an eight-slice/three-pizza Vespa loop, with restrained motion and regression coverage. This is a recommendation, not an implemented feature. Details and dependencies in `ROADMAP.md`.
+Preserve 45 item IDs and school codes, learning groups and reference labels, surrounding land color, corrected locations, Vatican/Rome selector, shuffled deck, saved-progress migration and both resets. **Next package:** Geographic Data Foundation: source/projection, independently sourced coast/points/rivers, visual vs hit validation and browser checks at phone/tablet/desktop sizes. See `ROADMAP.md`.

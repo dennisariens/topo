@@ -1,15 +1,15 @@
 # Learning model
 
-## Actual sequence (2026-09-24)
+## Current sequence (2026-09-27)
 
-Learn steps through `ITEMS` order inside a chosen group and displays the label/highlight; the first city is always Bari. Switching to `point`, `write` or `exam` calls `next()`, which samples the entire 45-item pool using `Math.random()`, with saved mistakes represented three times and the previous item removed. Mixed test randomly picks point, name or code. There is no deck, session coverage, category balancing, history of per-item successes, or spaced repetition. A wrong item remains in the mistake list until a correct answer clears it. Reveal does not count as a correct response.
+Learn keeps worksheet order in its visible group list, while shuffling the first highlight and subsequent `Volgende plek` cards. Point/name/mixed quiz modes draw from a Fisher–Yates shuffled 45-item deck (`scripts/learning-engine.js`). Initial items vary across sessions; a new deck avoids an adjacent repeat at its boundary. Every fifth turn, a saved mistake may be reviewed if different from the last question. A correct answer clears that item's mistake flag. `Oefen fouten` restricts the quiz pool. Mixed test separately samples point/name/code formats. Reveal does not count as correct. There is no per-item success history, category-filtered quiz, adaptive weighting or due-date scheduler.
 
-## Target progression (recommendation, not code)
+The app stores `{schema:3,good,pizzas,slices,trips,mistakes}` locally. Legacy v2 pizza totals are preserved; a partial five-answer pizza converts proportionally into the new eight-slice meter. Progress is resettable. One correct answer earns one slice; eight slices make a pizza; each third pizza triggers a brief Vespa trip. Mistakes never remove earned rewards.
 
-1. **See and recognize:** labeled map and true silhouette/path first; name, code and location together.
-2. **Active recall:** point to an unlabeled feature, then identify a highlighted feature by name, then mixed test. Reduce labels/hints gradually rather than withholding them immediately.
-3. **Short-term robust random:** use a seeded shuffle or a testable session deck with each eligible item once before reshuffling; disallow consecutive repeats across deck boundaries; test that first items vary with seed and that full coverage occurs. Category practice should select that category, not all 45. Keep any deliberately increased mistake frequency measurable.
-4. **Later adaptive:** track `correct`, `incorrect`, `lastSeen`, `lastMistake`, and `nextReview` for each ID; classify `new`, `learning`, `weak`, `mastered` through simple thresholds (e.g. correct after multiple sessions, with no recent error). Mix due weak items with new ones, occasionally revisit mastered items. Never present the same prompt twice in a row.
-5. **Feedback:** immediately show correct location/shape and name after an error; allow another attempt later, no punitive reward loss. Keep prompt, target and next action clear for a child.
+## Next learning improvements (recommendations)
 
-Progress remains local and resettable. Avoid opaque mastery scores or a dashboard that distracts from the map. Rewards should recognize practice without replacing geographic recall: proposed eight slices → pizza; three pizzas → brief Vespa trip, then back to the next question. Decide whether the existing five-answer-pizza saved data migrates before changing the persistence schema.
+1. Show labeled maps and real silhouettes/paths before recall; gradually reduce hints. Retain city groups and offer future category-filtered quiz.
+2. Keep deck coverage and no adjacent repeats; measure whether interleaved mistake review helps before tuning its frequency.
+3. Track `correct`, `incorrect`, `lastSeen`, `lastMistake` and `nextReview` by stable ID. Present due weak items more often, occasionally revisit mastered ones and mix in new items.
+4. Define mastery by multiple correct answers across sessions without a recent mistake. Immediately reveal location/name after errors and repeat later.
+5. Keep Vespa celebration brief and nonblocking; the next question stays available, and reduced-motion preference is honored.

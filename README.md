@@ -1,6 +1,6 @@
 # Topo — Italië baseline
 
-Topo helps a Dutch Group 7 learner practise 45 Italian and neighbouring geographic names on an interactive map. `index.html` is a self-contained v6-derived HTML file: open it directly or run `npm run dev` and visit the printed local URL. The school image and both scripts are embedded; no network requests or other files are needed for its buttons.
+Topo helps a Dutch Group 7 learner practise 45 Italian and neighbouring geographic names on an interactive map. `index.html` is a self-contained v6-derived HTML file: serve it with `npm run dev` and visit the local URL in a browser, or host the built `dist/` over HTTPS. The school image and both scripts are embedded; no network requests or other files are needed for its buttons. Learn, Point, Write and Test share worksheet groups and start with cities 1–6.
 
 **Direct downloads:** `output/html/topo-italie-interactief.html` is byte-identical to `index.html`. `print.html` is a standalone, printable group selector with learning cards, code → name and name → code practice, and a choice of clean map or photographed school sheet. `output/pdf/topo-italie-printboek.pdf` contains all 11 groups in those three formats on numbered A4 pages. The PDF pages use the photographed school sheet. All outputs are generated from the same 45 worksheet items. A GitHub raw link or an iOS Files preview is not a hosted app; use a served HTTPS page for browser interaction.
 

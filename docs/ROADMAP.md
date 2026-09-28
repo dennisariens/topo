@@ -19,7 +19,7 @@ Final Italy stabilization implemented the Rome/Vatican selector, shuffled sessio
 | Goal | Status | Dependency | Size |
 |---|---|---|---|
 | Track weak/mastered items and simple due reviews; keep a transparent map-first flow | CONCEPT | Shuffled deck and stable item IDs | M |
-| Category-filtered quiz using the existing worksheet groups | PLANNED | Deck accepts a filtered pool | S |
+| Check whether category practice and the bidirectional test improve recall with actual learners | PLANNED (category selection implemented) | Child/teacher observation | S |
 | Review print contrast and legibility on a physical school printer | PARTIAL (A4 booklet and print HTML implemented) | First printed copy/user feedback | S |
 | Parent/teacher overview only if observed need | CONCEPT | Validated learning data | M |
 

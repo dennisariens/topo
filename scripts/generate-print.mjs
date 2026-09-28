@@ -18,7 +18,7 @@ const context = literal(/const CONTEXT_LAND=(\{[^;]+\});/, 'CONTEXT_LAND');
 const italy = script.match(/const italy="([^"]+)";/)?.[1];
 const anchors = literal(/const NAME_ANCHORS=(\{[\s\S]*?\});/, 'NAME_ANCHORS');
 const cityAnchors = literal(/const CITY_NAME_ANCHORS=(\{[^;]+\});/, 'CITY_NAME_ANCHORS');
-const groups = literal(/const groups=(\{[^;]+\});\n return/, 'learning groups');
+const groups = literal(/const GROUPS=(\{[^;]+\});/, 'learning groups');
 const photo = html.match(/id="school"[^>]*src="data:image\/jpeg;base64,([A-Za-z0-9+/=]+)"/)?.[1];
 if (!italy || !photo) throw new Error('Map or worksheet image not found');
 const selector = html.slice(html.indexOf('<select id="groupSelect">'), html.indexOf('</select>', html.indexOf('<select id="groupSelect">')));

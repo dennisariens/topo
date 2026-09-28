@@ -7,4 +7,5 @@ if (!html.includes(`<script>\n${engine.trimEnd()}\n</script>`)) throw new Error(
 const file = new URL('output/html/topo-italie-interactief.html', root);
 mkdirSync(new URL('output/html/', root), { recursive: true });
 writeFileSync(file, html);
+writeFileSync(new URL('output/html/topo-italie-duolingo.html', root), html);
 console.log('Standalone interactive HTML: output/html/topo-italie-interactief.html');

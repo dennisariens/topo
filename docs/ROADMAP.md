@@ -12,7 +12,7 @@ Each item is a distinct outcome; statuses describe code today. Dependency order 
 | Browser/mobile audit of lens, quiz, labels, touch targets, progress and resets | PLANNED | Browser accessible to local app | M |
 | Add data-level invariants against independent source, not just drawn coastline | PARTIAL (static checks now) | Geospatial source | M |
 
-Final Italy stabilization implemented the Rome/Vatican selector, shuffled sessions, v2 migration and continuous pizza/Vespa loop on 2026-09-27. Geographic source validation remains the next package. Avoid unrelated pages, dashboard redesign or curriculum expansion.
+Guided route with eleven stops, replayable stages, gold and short scheduled review was added 2026-09-28; its actual mobile layout and UX need device review. Final Italy stabilization implemented the Rome/Vatican selector, shuffled sessions, v2 migration and continuous pizza/Vespa loop on 2026-09-27. Geographic source validation remains the next package. Avoid unrelated pages, dashboard redesign or curriculum expansion.
 
 ## Next
 

@@ -7,7 +7,10 @@
     "dev": "python3 -m http.server 8000",
     "lint": "node scripts/check-syntax.mjs",
     "typecheck": "node -e \"console.log('No type checker configured: standalone JavaScript baseline')\"",
-    "test": "node scripts/validate-map.mjs && node scripts/validate-print.mjs && node scripts/learning-engine.test.mjs && node scripts/exam-flow.test.mjs && node scripts/ui-smoke.test.mjs",
+    "test": "node scripts/validate-map.mjs && node scripts/validate-print.mjs && node scripts/learning-engine.test.mjs && node scripts/route-engine.test.mjs && node scripts/exam-flow.test.mjs && node scripts/ui-smoke.test.mjs && node scripts/route-dom.test.mjs",
     "build": "node scripts/build.mjs"
+  },
+  "devDependencies": {
+    "jsdom": "^30.1.1"
   }
 }

@@ -7,10 +7,10 @@ import { createContext, runInContext } from 'node:vm';
 class Node {
   constructor() {
     this.children = []; this.events = {}; this.attrs = {}; this.dataset = {};
-    this.value = ''; this.textContent = ''; this.disabled = false; this.style = {};
+    this.value = ''; this.textContent = ''; this.disabled = false; this.style = { setProperty(name,value) { this[name] = value; } };
     this.classes = new Set();
     this.classList = {
-      add: name => this.classes.add(name), remove: name => this.classes.delete(name),
+      add: (...names) => names.forEach(name => this.classes.add(name)), remove: (...names) => names.forEach(name => this.classes.delete(name)),
       toggle: (name, force) => {
         const add = force === undefined ? !this.classes.has(name) : force;
         if (add) this.classes.add(name); else this.classes.delete(name);
@@ -35,6 +35,7 @@ class Node {
   querySelector(selector) { return selector === 'button' ? this.children[0] : null; }
   focus() {}
   click() {
+    if(this.disabled)return;
     const event = { target:this, stopPropagation() {}, preventDefault() {} };
     this.onclick?.(event);
     for (const handler of this.events.click || []) handler(event);
@@ -51,7 +52,7 @@ const get = selector => {
 };
 get('#groupSelect').value = 'city1';
 get('#testFormat').value = 'both';
-const tabs = ['learn','point','write','exam'].map(mode => {
+const tabs = ['learn','point','write','exam','route'].map(mode => {
   const tab = new Node(); tab.dataset.mode = mode; return tab;
 });
 const document = {
@@ -71,9 +72,11 @@ const context = createContext({
 context.window = context; // Browser window and global object are the same object.
 const html = readFileSync(new URL('../output/html/topo-italie-interactief.html', import.meta.url), 'utf8');
 const scripts = [...html.matchAll(/<script>([\s\S]*?)<\/script>/g)];
-assert.equal(scripts.length, 2, 'standalone HTML loads its complete logic internally');
+assert.equal(scripts.length, 3, 'standalone HTML loads its complete logic internally');
 scripts.forEach((match, index) => runInContext(match[1], context, { filename:`standalone-${index}.js` }));
 const inspect = expression => runInContext(expression, context);
+assert.equal(inspect('state.mode'),'route','new learners see the journey first');
+tabs[0].click();
 
 assert.equal(get('#groupCount').textContent, '6 namen in deze groep');
 assert.ok(get('#learnPrompt').textContent, 'learn mode booted with a visible name');
@@ -141,3 +144,63 @@ get('#resetPizza').click();get('#resetAll').click();
 assert.equal(Number(get('#good').textContent), 0, 'reset button clears progress');
 assert.match(get('#prompt').textContent, /^Welke /, 'test remains usable after reset');
 console.log('Full standalone boot and learn/point/write/exam/reset button flow: OK');
+
+// Drive every chapter through the visible controls, including both enclave choices.
+tabs[4].click();
+assert.equal(get('#routeHome').classList.contains('hidden'),false);
+assert.equal(get('#routeCards').children.length,11);
+assert.equal(inspect('TopoRoute.unlocked(state.route,ROUTE_CHAPTERS,"city2")'),false);
+get('#routeContinue').click();
+assert.equal(inspect('state.questionMode'),'discover');
+get('#next').click();
+const resumeIndex=inspect('state.route.active.index');
+tabs[0].click();tabs[4].click();get('#routeContinue').click();
+assert.equal(inspect('state.route.active.index'),resumeIndex,'switching away resumes the same card');
+assert.equal(get('#routeMapDock').classList.contains('hidden'),false,'small-screen dock available in route lesson');
+let deliberatelyWrong=false,routeActions=0;
+function answerRouteTask(useDock=false){
+ const mode=inspect('state.questionMode'),id=inspect('state.current?.id');
+ if(mode==='discover'){get('#next').click();return}
+ if(!deliberatelyWrong&&mode==='point'){
+   deliberatelyWrong=true;get('#next').click();
+   assert.equal(inspect('state.route.active.wrong'),1);
+ }else if(mode==='point'){
+   if(id==='area-o'||id==='city-9'){
+     inspect('romeHit.click()');
+     inspect(`lens.querySelectorAll('button')[${id==='city-9'?0:1}].click()`);
+   }else if(id==='area-n')inspect('sanHit.click()');
+   else inspect('elements[state.current.id].click()');
+ }else{
+   const answer=inspect(mode==='nameCode'?'state.current.code':'state.current.name');
+   if(useDock){get('#routeDockAnswer').value=answer;get('#routeDockCheck').click()}
+   else{get('#answer').value=answer;get('#check').click()}
+ }
+ assert.equal(inspect('state.answered'),true,'route answer accepted through its control');
+ const good=inspect('state.good');get('#check').click();assert.equal(inspect('state.good'),good,'disabled check cannot duplicate a slice');
+ if(useDock)get('#routeDockNext').click();else get('#next').click();
+}
+const chapterIds=inspect('ROUTE_CHAPTERS.map(c=>c.id)');
+for(const chapterId of chapterIds){
+ if(chapterId!=='city1')get('#routeContinue').click();
+ while(inspect(`TopoRoute.record(state.route,${JSON.stringify(chapterId)}).stage`)<4){
+   if(inspect('state.route.active.done'))get('#next').click();
+   else answerRouteTask(++routeActions%2===0);
+   assert.ok(routeActions<650,'route cannot silently loop forever');
+ }
+ assert.equal(inspect('state.route.active.result.newlyCompleted'),true);
+ get('#routeExtra').click();
+ assert.equal(inspect('state.route.active.kind'),'gold');
+ while(!inspect('state.route.active.done'))answerRouteTask(++routeActions%2===0);
+ assert.ok(inspect(`TopoRoute.record(state.route,${JSON.stringify(chapterId)}).goldAt`)>0,'gold earned after point and write coverage');
+ get('#next').click();
+}
+assert.match(get('#routeSummary').textContent,/11 \/ 11.*11 goud/);
+assert.ok(JSON.parse(stored.get('topo-italie-v3')).route.chapters.rivers.goldAt>0,'last chapter and gold persisted');
+const beforeReset=inspect('state.pizzas');
+get('#routeReset').click();
+assert.equal(inspect('state.pizzas'),beforeReset,'route-only reset preserves earned pizzas');
+assert.equal(inspect('TopoRoute.record(state.route,"city1").stage'),0);
+tabs[1].click();get('#resetAll').click();
+assert.equal(inspect('state.good'),0);
+assert.equal(inspect('Object.keys(state.route.chapters).length'),0,'full reset removes route progress');
+console.log('All 11 route chapters and gold tests, dock controls, mode switch, resume and reset: OK');

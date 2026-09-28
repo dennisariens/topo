@@ -35,3 +35,7 @@ Status is relative to **current drawn geometry**, not independent ground-truth G
 ## Long-term map contract
 
 Use one licensed/versioned geospatial source and explicit CRS/projection/viewBox transform. Store stable geographic coordinates for points and feature geometry for land, seas and rivers; generate SVG drawing from it. Keep `(1)` source geographic geometry, `(2)` rendered visual shape, `(3)` hit shape/tolerance and `(4)` editorial label anchor separate. Tiny states get a local two-target lens. Validate city/microstate coordinates against intended country, labels against polygons or declared leader lines, routes against source lines, and representative render screenshots at multiple sizes. This is the next implementation package, not a silent transformation performed by this documentation task.
+
+## Route screen and Rome selector (2026-09-28)
+
+The route overview is a sibling of the map and practice panel in `.layout`; CSS hides the map only in `routeHomeLayout`. Active lessons switch to `routeLessonLayout`, retain the same 890 × 1235 SVG, and expose a sticky mobile question dock. No geographic coordinates are modified by the route UI. The Rome/Vatican inset draws a schematic Rome city oval with Vatican inside it, identifies it as **not to scale**, and offers two separately graded buttons. The oval illustrates administrative containment and does not purport to be city boundary geometry. Main-map point anchors remain subject to external GIS verification.

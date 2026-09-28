@@ -67,3 +67,15 @@
 ## 2026-09-28 — Keep printed place markers visible
 
 **Decision** Offset city codes on printable worksheets and connect each code to its original city dot with a short leader line. Generate shared positions for print HTML and PDF; require minimum clearance from every printed city dot and from other codes. Fail the build if the PDF does not match the generated print source. **Reason** The previous badges sat nearly on top of the red school worksheet dots, obscuring the location a child must learn. **Status** ACTIVE, implemented and visually checked on city group learning/test pages. **Supersedes** The printable city code positioned just 12 SVG units from the marker.
+
+## 2026-09-28 — Guided route is the first screen and existing practice remains accessible
+
+**Decision** Present a separate eleven-stop path first. Every future stop and its four stages is visible but disabled until the preceding stop is finished. All completed stages can be replayed; a stop unlocks the next without requiring the optional flawless gold challenge. Guided lessons reuse the same map and school codes. **Reason** A child sees a clear next step and their whole journey while retaining direct category practice and a real map during exercises. **Status** ACTIVE. **Supersedes** Making the grouped Learn tab the sole arrival screen.
+
+## 2026-09-28 — Small adaptive reviews and pizza as positive reinforcement
+
+**Decision** Save in-progress route questions, chapter completion and gold locally; repeat errors after other items, schedule short review of weak items, and award slices once for a correct question token. Pizza/Vespa remains a brief visual celebration, with no penalties for wrong answers or skipped days. Show the reward near route progress. **Reason** Active recall and spacing should support learning; repeated reloads must not mint slices, and rewards must not hold up a lesson. **Status** ACTIVE. **Supersedes** The 2026-09-27 assumption that item history and due reviews are entirely future work; longer-term mastery across modes is still open.
+
+## 2026-09-28 — Explain Rome and Vatican containment in a schematic inset
+
+**Decision** Draw an oval representing Rome's city area inside the selector and place the Vatican marker inside it, clearly labeling the inset not to scale. Keep the original separate mapped item coordinates and identifiers. **Reason** Two nearby dots alone imply neighboring places; the learner needs to understand Vatican is enclosed by Rome. **Status** ACTIVE. **Supersedes** The earlier lens sketch with two seemingly adjacent dots. Independently sourced map geometry is still pending.

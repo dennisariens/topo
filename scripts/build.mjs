@@ -1,5 +1,6 @@
-import { cpSync, mkdirSync } from 'node:fs';
+import { cpSync, mkdirSync, readFileSync } from 'node:fs';
 import { execFileSync } from 'node:child_process';
+import { createHash } from 'node:crypto';
 import { fileURLToPath } from 'node:url';
 import { dirname, resolve } from 'node:path';
 
@@ -8,6 +9,10 @@ execFileSync(process.execPath, [resolve(root, 'scripts/generate-print.mjs')], { 
 execFileSync(process.execPath, [resolve(root, 'scripts/package-standalone.mjs')], { stdio: 'inherit' });
 execFileSync(process.execPath, [resolve(root, 'scripts/check-syntax.mjs')], { stdio: 'inherit' });
 execFileSync(process.execPath, [resolve(root, 'scripts/validate-map.mjs')], { stdio: 'inherit' });
+const printSource = readFileSync(resolve(root, 'print.html'));
+const expectedHash = createHash('sha256').update(printSource).digest('hex');
+const printedHash = readFileSync(resolve(root, 'output/pdf/print-source.sha256'), 'utf8').trim();
+if (expectedHash !== printedHash) throw new Error('Print booklet is outdated. Run python3 scripts/generate-pdf.py and rebuild.');
 mkdirSync(resolve(root, 'dist'), { recursive: true });
 cpSync(resolve(root, 'index.html'), resolve(root, 'dist/index.html'));
 cpSync(resolve(root, 'print.html'), resolve(root, 'dist/print.html'));

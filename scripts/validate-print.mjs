@@ -14,6 +14,24 @@ const cityGroup = source.groups.find(group => group.key === 'city1');
 assert.deepEqual(cityGroup.ids, ['city-1','city-2','city-3','city-4','city-5','city-6']);
 assert.equal(source.groups.find(group => group.key === 'all').ids.length, 45);
 assert.equal(source.groups.find(group => group.key === 'rivers').ids.length, 2);
+const dots=source.items.filter(item=>item.kind==='city');
+for(const group of source.groups.filter(group=>group.key.startsWith('city'))){
+  const labels=group.ids.map(id=>{
+    const dot=dots.find(item=>item.id===id),[x,y]=source.printLabels[group.key][id];
+    const w=dot.code.length>1?50:44,h=42;
+    const box={left:x-w/2,right:x+w/2,top:y-h/2,bottom:y+h/2};
+    assert.ok(Math.hypot(x-dot.px,y-dot.py)>=70,`${dot.name}: code separated from city dot`);
+    for(const other of dots){
+      const gap=Math.hypot(Math.max(box.left-other.px,0,other.px-box.right),Math.max(box.top-other.py,0,other.py-box.bottom));
+      assert.ok(gap>=15,`${dot.name}: printed code must not cover ${other.name}'s dot`);
+    }
+    return {id,box};
+  });
+  for(let i=0;i<labels.length;i++)for(let j=i+1;j<labels.length;j++){
+    const a=labels[i].box,b=labels[j].box;
+    assert.ok(a.right+8<=b.left||b.right+8<=a.left||a.bottom+8<=b.top||b.bottom+8<=a.top,`${labels[i].id}/${labels[j].id}: printed codes must not overlap`);
+  }
+}
 assert.match(printable, /@page\{size:A4 portrait/);
 assert.match(printable, /<option value="codeName">/);
 assert.match(printable, /<option value="nameCode">/);

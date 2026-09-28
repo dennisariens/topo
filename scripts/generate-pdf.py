@@ -1,5 +1,6 @@
 """Create the printable booklet from print.html's generated, canonical map content."""
 import base64
+import hashlib
 import io
 import json
 import re
@@ -58,7 +59,7 @@ def draw_header(pdf, group, mode, number, total):
     pdf.drawString(27, 34, 'Codes: steden 1-23  ·  gebieden a-o  ·  zeeën/rivieren A-G')
 
 
-def draw_map(pdf, items, mode):
+def draw_map(pdf, items, mode, group_key):
     pdf.drawImage(PHOTO, MAP_X, MAP_Y, width=MAP_W, height=MAP_H)
     pdf.setStrokeColor(colors.HexColor('#728883'))
     pdf.rect(MAP_X, MAP_Y, MAP_W, MAP_H, fill=0, stroke=1)
@@ -66,9 +67,15 @@ def draw_map(pdf, items, mode):
         return
     for item in items:
         if item['kind'] == 'city':
-            x, y = item['px'] + 12, item['py'] - 13
-            if item['id'] == 'city-9':
-                x += 9
+            x, y = DATA['printLabels'][group_key][item['id']]
+            w = 50 if len(item['code']) > 1 else 44
+            end_x = x - w / 2 if x > item['px'] else x + w / 2 if x < item['px'] else x
+            end_y = (y - 21 if y > item['py'] else y + 21) if x == item['px'] else y
+            dot_x, dot_y = pxy(item['px'], item['py'])
+            edge_x, edge_y = pxy(end_x, end_y)
+            pdf.setStrokeColor(colors.HexColor('#214e5b'))
+            pdf.setLineWidth(1)
+            pdf.line(dot_x, dot_y, edge_x, edge_y)
         else:
             x, y = DATA['anchors'][item['id']]
             if item['id'] == 'area-o':
@@ -166,10 +173,11 @@ def main():
             number += 1
             items = [ITEMS[item_id] for item_id in group['ids']]
             draw_header(pdf, group, mode, number, total)
-            draw_map(pdf, items, mode)
+            draw_map(pdf, items, mode, group['key'])
             draw_answers(pdf, items, mode)
             pdf.showPage()
     pdf.save()
+    (DESTINATION.parent / 'print-source.sha256').write_text(hashlib.sha256(SOURCE.encode()).hexdigest() + '\n')
     print(f'Created {DESTINATION} ({total} pages)')
 
 

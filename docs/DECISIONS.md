@@ -63,3 +63,7 @@
 ## 2026-09-28 — Preserve category progression in every activity
 
 **Decision** Keep the worksheet groups selectable in Learn, Point, Write and Test. Start on cities 1–6, then let the learner advance by group. In practice, an explicit Skip or Reveal shows the answer and adds the item to mistake review; Next advances only after feedback. Clicking a map item outside the Learn group moves to that item's group. **Reason** The previous point/write modes unexpectedly drew from all 45 items, and a learner could silently skip hard items without review. **Status** ACTIVE, implemented and covered by standalone button-flow tests. **Supersedes** The group selector being exclusive to Learn and Test, and practice skips that silently discard a question.
+
+## 2026-09-28 — Keep printed place markers visible
+
+**Decision** Offset city codes on printable worksheets and connect each code to its original city dot with a short leader line. Generate shared positions for print HTML and PDF; require minimum clearance from every printed city dot and from other codes. Fail the build if the PDF does not match the generated print source. **Reason** The previous badges sat nearly on top of the red school worksheet dots, obscuring the location a child must learn. **Status** ACTIVE, implemented and visually checked on city group learning/test pages. **Supersedes** The printable city code positioned just 12 SVG units from the marker.

@@ -30,7 +30,29 @@ const groupItems = key => key === 'all' ? items : key.startsWith('city')
   : items.filter(item => (groups[key] || []).includes(item.id));
 if (groupOptions.some(({ key }) => !groupItems(key).length)) throw new Error('Empty worksheet group');
 
-const source = { items, context, italy, anchors, cityAnchors, groups: groupOptions.map(({ key, title }) => ({ key, title, ids: groupItems(key).map(item => item.id) })), photo };
+// Editorial print positions only: never move the geographic dot to fit its code.
+// Both the HTML worksheets and PDF booklet use these exact positions.
+const cityDots = items.filter(item => item.kind === 'city');
+function printCityLabels(selected) {
+  const placed = [];
+  const result = {};
+  const offsets = [[78,-48],[-78,-48],[78,48],[-78,48],[0,-88],[0,88],[108,0],[-108,0]];
+  for (const item of selected.filter(item => item.kind === 'city')) {
+    const width = item.code.length > 1 ? 50 : 44, height = 42;
+    const candidate = offsets.map(([dx,dy],rank) => {
+      const x=item.px+dx,y=item.py+dy,left=x-width/2,right=x+width/2,top=y-height/2,bottom=y+height/2;
+      const outside=left<8||right>882||top<8||bottom>1227;
+      const nearDot=cityDots.some(dot => Math.hypot(Math.max(left-dot.px,0,dot.px-right),Math.max(top-dot.py,0,dot.py-bottom))<15);
+      const overlaps=placed.some(box => left<box.right+8&&right>box.left-8&&top<box.bottom+8&&bottom>box.top-8);
+      return {x,y,left,right,top,bottom,score:(outside?1e6:0)+(nearDot?1e5:0)+(overlaps?1e4:0)+rank};
+    }).sort((a,b)=>a.score-b.score)[0];
+    if(candidate.score>=1e4)throw new Error(`Cannot position printed code for ${item.name} without covering a city or label`);
+    result[item.id]=[candidate.x,candidate.y];placed.push(candidate);
+  }
+  return result;
+}
+const printLabels=Object.fromEntries(groupOptions.map(({key})=>[key,key==='all'?{}:printCityLabels(groupItems(key))]));
+const source = { items, context, italy, anchors, cityAnchors, printLabels, groups: groupOptions.map(({ key, title }) => ({ key, title, ids: groupItems(key).map(item => item.id) })), photo };
 const data = JSON.stringify(source).replace(/</g, '\\u003c');
 const document = `<!doctype html>
 <html lang="nl"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
@@ -54,15 +76,19 @@ const byId=Object.fromEntries(DATA.items.map(item=>[item.id,item]));
 const $=selector=>document.querySelector(selector);
 const esc=value=>String(value).replace(/[&<>"']/g,char=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[char]));
 const path=(d,fill,stroke='#a6b1a9',width=1.7)=>'<path d="'+esc(d)+'" fill="'+fill+'" stroke="'+stroke+'" stroke-width="'+width+'" stroke-linejoin="round"/>';
-function label(item,format){
+function label(item,format,groupKey){
  if(format==='nameCode')return '';
- const city=item.kind==='city',custom=DATA.cityAnchors[item.id],anchor=city?[item.px+(custom?-10:12),item.py-12]:DATA.anchors[item.id]||[item.px,item.py];
- const [x,y]=anchor,text=format==='learn'?item.code+' · '+item.name:item.code;
- const w=Math.min(194,Math.max(23,text.length*(format==='learn'?8:9)+10));
- const left=city&&custom?x-w:x-w/2;
- return '<g><rect x="'+left+'" y="'+(y-16)+'" width="'+w+'" height="21" rx="5" fill="#fff" fill-opacity=".95" stroke="#738985" stroke-width="1"/><text x="'+(left+w/2)+'" y="'+y+'" text-anchor="middle" font-size="'+(format==='learn'?13:17)+'" font-family="system-ui,sans-serif" font-weight="800" fill="#193740">'+esc(text)+'</text></g>';
+ if(item.kind==='city'){
+  const [x,y]=DATA.printLabels[groupKey][item.id],w=item.code.length>1?50:44,h=42;
+  const endX=x>item.px?x-w/2:x<item.px?x+w/2:x;
+  const endY=x===item.px?(y>item.py?y-h/2:y+h/2):y;
+  return '<g><line x1="'+item.px+'" y1="'+item.py+'" x2="'+endX+'" y2="'+endY+'" stroke="#214e5b" stroke-width="2.4"/><rect x="'+(x-w/2)+'" y="'+(y-h/2)+'" width="'+w+'" height="'+h+'" rx="9" fill="#fff" stroke="#214e5b" stroke-width="2"/><text x="'+x+'" y="'+(y+6)+'" text-anchor="middle" font-size="19" font-family="system-ui,sans-serif" font-weight="800" fill="#193740">'+esc(item.code)+'</text></g>';
+ }
+ const [x,y]=DATA.anchors[item.id]||[item.px,item.py],text=item.code;
+ const w=Math.max(26,text.length*10+12);
+ return '<g><rect x="'+(x-w/2)+'" y="'+(y-16)+'" width="'+w+'" height="22" rx="5" fill="#fff" fill-opacity=".95" stroke="#738985" stroke-width="1"/><text x="'+x+'" y="'+y+'" text-anchor="middle" font-size="17" font-family="system-ui,sans-serif" font-weight="800" fill="#193740">'+esc(text)+'</text></g>';
 }
-function mapMarkup(items,format,style){
+function mapMarkup(items,format,style,groupKey){
  let svg='<svg class="mapSvg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 890 1235" role="img" aria-label="Kaart van Italië met '+esc(items.length)+' oefenplekken">';
  if(style==='school')svg+='<image href="data:image/jpeg;base64,'+DATA.photo+'" x="0" y="0" width="890" height="1235"/>';
  else{
@@ -77,7 +103,7 @@ function mapMarkup(items,format,style){
   for(const item of DATA.items.filter(item=>item.kind==='city'))svg+='<circle cx="'+item.px+'" cy="'+item.py+'" r="6" fill="#a44435" stroke="#fff" stroke-width="2"/>';
   for(const item of DATA.items.filter(item=>['area-n','area-o','area-e','area-f'].includes(item.id)))svg+='<circle cx="'+item.px+'" cy="'+item.py+'" r="'+(item.id==='area-o'?3:5)+'" fill="#814737" stroke="#fff" stroke-width="1"/>';
  }
- svg+=items.map(item=>label(item,format)).join('')+'</svg>';
+ svg+=items.map(item=>label(item,format,groupKey)).join('')+'</svg>';
  return svg;
 }
 function table(items,format){
@@ -95,7 +121,7 @@ function render(){
   const items=entry.ids.map(id=>byId[id]);
   const title=format==='learn'?'Leerkaart':format==='codeName'?'Toets · schrijf de naam':'Toets · schrijf de code';
   const note=format==='nameCode'?'Schrijf het juiste nummer of de juiste letter. Kleine letters a–o en hoofdletters A–G verschillen.':format==='codeName'?'Schrijf bij elke code de volledige naam.':'Bekijk de codes en noem elke plek hardop.';
-  return '<section class="sheet"><div class="sheetHead"><h2>Topo Italië · '+esc(entry.title)+'</h2><span>'+title+' · '+items.length+' namen'+(group==='all'?' · blad '+(index+1)+'/'+choices.length:'')+'</span></div><p class="sheetSub">Naam: ____________________________ &nbsp; Datum: ______________ &nbsp; '+esc(note)+'</p><div class="practice">'+mapMarkup(items,format,style)+table(items,format)+'</div><p class="smallNote">De schoolfoto is een gefotografeerd werkblad. De heldere kaart volgt de huidige Topo-kaart; rivieren en sommige gebieden zijn schematische oefenvormen. Gebruik de interactieve versie om antwoorden te controleren.</p></section>';
+  return '<section class="sheet"><div class="sheetHead"><h2>Topo Italië · '+esc(entry.title)+'</h2><span>'+title+' · '+items.length+' namen'+(group==='all'?' · blad '+(index+1)+'/'+choices.length:'')+'</span></div><p class="sheetSub">Naam: ____________________________ &nbsp; Datum: ______________ &nbsp; '+esc(note)+'</p><div class="practice">'+mapMarkup(items,format,style,entry.key)+table(items,format)+'</div><p class="smallNote">De schoolfoto is een gefotografeerd werkblad. De heldere kaart volgt de huidige Topo-kaart; rivieren en sommige gebieden zijn schematische oefenvormen. Gebruik de interactieve versie om antwoorden te controleren.</p></section>';
  }).join('');
 }
 $('#group').innerHTML=DATA.groups.map(entry=>'<option value="'+esc(entry.key)+'">'+esc(entry.title)+(entry.key==='all'?' · alle deelbladen':'')+'</option>').join('');

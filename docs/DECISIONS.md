@@ -79,3 +79,7 @@
 ## 2026-09-28 — Explain Rome and Vatican containment in a schematic inset
 
 **Decision** Draw an oval representing Rome's city area inside the selector and place the Vatican marker inside it, clearly labeling the inset not to scale. Keep the original separate mapped item coordinates and identifiers. **Reason** Two nearby dots alone imply neighboring places; the learner needs to understand Vatican is enclosed by Rome. **Status** ACTIVE. **Supersedes** The earlier lens sketch with two seemingly adjacent dots. Independently sourced map geometry is still pending.
+
+## 2026-09-28 — Give the route its own original Italian artwork
+
+**Decision** Use a compact inline vector landscape, an original Vespa graphic, category and lesson pictograms, and eight visually earned pizza slices on the route and quiz reward. Keep the map plain and avoid Duolingo-owned character art or virtual currency. **Reason** Progress should feel tangible to a ten-year-old without obscuring locations or adding external asset requests to the standalone HTML. **Status** ACTIVE. **Supersedes** Emoji-only Vespa and pizza indicators on the learner-facing route.

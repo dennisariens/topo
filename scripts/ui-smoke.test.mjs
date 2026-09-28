@@ -26,6 +26,7 @@ class Node {
   }
   get innerHTML() { return this.html || ''; }
   append(...children) { this.children.push(...children); }
+  prepend(...children) { this.children.unshift(...children); }
   after() {}
   replaceChildren(...children) { this.children = children; }
   setAttribute(name, value) { this.attrs[name] = value; }

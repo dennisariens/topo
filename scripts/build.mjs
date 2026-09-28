@@ -11,6 +11,7 @@ execFileSync(process.execPath, [resolve(root, 'scripts/validate-map.mjs')], { st
 mkdirSync(resolve(root, 'dist'), { recursive: true });
 cpSync(resolve(root, 'index.html'), resolve(root, 'dist/index.html'));
 cpSync(resolve(root, 'print.html'), resolve(root, 'dist/print.html'));
+cpSync(resolve(root, 'output/pdf/topo-italie-printboek.pdf'), resolve(root, 'dist/printboek.pdf'));
 mkdirSync(resolve(root, 'dist/scripts'), { recursive: true });
 cpSync(resolve(root, 'scripts/learning-engine.js'), resolve(root, 'dist/scripts/learning-engine.js'));
-console.log('Static build: dist/index.html and dist/print.html');
+console.log('Static build: dist/index.html, dist/print.html, dist/printboek.pdf');

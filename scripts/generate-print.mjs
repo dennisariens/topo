@@ -3,7 +3,7 @@ import { runInNewContext } from 'node:vm';
 
 const root = new URL('../', import.meta.url);
 const html = readFileSync(new URL('index.html', root), 'utf8');
-const script = html.match(/<script>([\s\S]*?)<\/script>/)?.[1];
+const script = [...html.matchAll(/<script>([\s\S]*?)<\/script>/g)].at(-1)?.[1];
 if (!script) throw new Error('Interactive map source not found');
 const literal = (expression, label) => {
   const match = script.match(expression);

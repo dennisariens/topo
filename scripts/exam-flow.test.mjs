@@ -3,7 +3,7 @@ import { readFileSync } from 'node:fs';
 import { runInNewContext } from 'node:vm';
 
 const html = readFileSync(new URL('../index.html', import.meta.url), 'utf8');
-const source = html.match(/<script>([\s\S]*?)<\/script>/)?.[1];
+const source = [...html.matchAll(/<script>([\s\S]*?)<\/script>/g)].at(-1)?.[1];
 assert.ok(source, 'app script present');
 const examCode = source.slice(source.indexOf('function worksheetCode('), source.indexOf('function revealItem('));
 assert.ok(examCode.includes('function finishExam('), 'finite exam result exists');

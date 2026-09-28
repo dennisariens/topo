@@ -55,3 +55,7 @@
 ## 2026-09-27 — Print from one content source
 
 **Decision** Generate standalone interactive HTML, an A4 print page and a PDF booklet from the current `index.html` content and `learning-engine.js`. Use the existing 11 worksheet groups, with a reference sheet and both paper test directions. Allow the clean map or the photographed school sheet in the HTML; the PDF uses the original photo as a familiar reference. **Reason** The child needs a usable answer map and paper tests without copying 45 coordinates and code mappings into a separately maintained document. **Status** ACTIVE, implemented. **Supersedes** Relying only on the browser print of the interactive screen.
+
+## 2026-09-28 — Restore one-file v6 execution and require button smoke coverage
+
+**Decision** Keep all runtime scripts inside `index.html`, as in the working v6 baseline. Check that the first inline script exactly matches the testable engine source, that the downloadable HTML is byte-identical, and execute the complete boot plus learn/point/write/exam/reset buttons in a DOM smoke harness. Provide a served HTTPS URL for actual browser usage, not GitHub raw content or the iOS Files preview. **Reason** A missing secondary JS file or non-rendering preview makes every control appear broken despite passing syntax/unit tests; a child needs a first-tap working experience. **Status** ACTIVE; code and automated checks implemented, live device/hosting verification pending. **Supersedes** The 2026-09-27 split-runtime `index.html` and treating a raw downloadable HTML link as a live app.

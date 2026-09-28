@@ -3,7 +3,7 @@ import { readFileSync } from 'node:fs';
 import { runInNewContext } from 'node:vm';
 
 const html = readFileSync(new URL('../index.html', import.meta.url), 'utf8');
-const script = html.match(/<script>([\s\S]*?)<\/script>/)?.[1];
+const script = [...html.matchAll(/<script>([\s\S]*?)<\/script>/g)].at(-1)?.[1];
 assert.ok(script, 'inline app script exists');
 const items = JSON.parse(script.match(/const ITEMS=(\[.*?\]);\nconst \$/s)?.[1] ?? 'null');
 const byId = new Map(items.map(item => [item.id, item]));

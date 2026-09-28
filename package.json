@@ -7,7 +7,7 @@
     "dev": "python3 -m http.server 8000",
     "lint": "node scripts/check-syntax.mjs",
     "typecheck": "node -e \"console.log('No type checker configured: standalone JavaScript baseline')\"",
-    "test": "node scripts/validate-map.mjs && node scripts/validate-print.mjs && node scripts/learning-engine.test.mjs && node scripts/exam-flow.test.mjs",
+    "test": "node scripts/validate-map.mjs && node scripts/validate-print.mjs && node scripts/learning-engine.test.mjs && node scripts/exam-flow.test.mjs && node scripts/ui-smoke.test.mjs",
     "build": "node scripts/build.mjs"
   }
 }

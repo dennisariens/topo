@@ -108,6 +108,7 @@ inspect('state.slices=7;state.pizzas=2;state.trips=0;next()');
 inspect('elements[state.current.id].click()');
 assert.equal(inspect('state.pizzas'), 3, 'eight slices form another pizza');
 assert.equal(inspect('state.trips'), 1, 'three pizzas advance the Vespa');
+assert.match(get('#vespaTripText').textContent,/Nino rijdt van /,'the earned milestone names the character and destination');
 get('#next').click();
 const skipped = inspect('state.current.id');
 get('#next').click();
@@ -182,7 +183,10 @@ function answerRouteTask(useDock=false){
 }
 const chapterIds=inspect('ROUTE_CHAPTERS.map(c=>c.id)');
 for(const chapterId of chapterIds){
- if(chapterId!=='city1')get('#routeContinue').click();
+ if(chapterId!=='city1'){
+   assert.equal(get('#routeCards').children.filter(card=>card.children[0]?.classes.has('ninoBadge')).length,1,'Nino moves to the next available chapter');
+   get('#routeContinue').click();
+ }
  while(inspect(`TopoRoute.record(state.route,${JSON.stringify(chapterId)}).stage`)<4){
    if(inspect('state.route.active.done'))get('#next').click();
    else answerRouteTask(++routeActions%2===0);

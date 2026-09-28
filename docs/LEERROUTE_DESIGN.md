@@ -18,3 +18,7 @@ Route: 11 stops × Discover → Point → Write → Worksheet codes. Errors retu
 ## Remaining verification
 
 Automated tests exercise complete standalone HTML, stage unlocks, map events, persistence and awards. Real phone/tablet visual appearance, touch precision and coastline source quality require a device/browser audit.
+
+## Character direction (approved 2026-09-28)
+
+Nino is an original eleven-year-old scooter explorer. The Italian harbor panorama conveys a bright, cinematic summer adventure inspired by the user’s attached mood references, without copying a movie still, character or logo. The same cutout rides from one active stop to the next, appears beside the lesson title and briefly celebrates each earned trip. Artwork is generated for this Topo project with the built-in image generation tool, stored as optimized WebP in `output/art/`, and inlined in `index.html`. Stages and locks still explain progress with words and symbols; map geometry stays exactly as before.

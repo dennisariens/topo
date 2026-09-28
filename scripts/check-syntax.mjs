@@ -2,6 +2,10 @@ import { readFileSync } from 'node:fs';
 import { Script } from 'node:vm';
 
 const html = readFileSync(new URL('../index.html', import.meta.url), 'utf8');
+const heroArt = readFileSync(new URL('../output/art/topo-italie-avontuur.webp', import.meta.url)).toString('base64');
+const ninoArt = readFileSync(new URL('../output/art/nino-op-de-scooter.webp', import.meta.url)).toString('base64');
+if (!html.includes(`<img src="data:image/webp;base64,${heroArt}"`)) throw new Error('Route panorama differs from its source WebP');
+if (!html.includes(`--nino-art:url("data:image/webp;base64,${ninoArt}")`)) throw new Error('Nino artwork differs from its source WebP');
 const scripts = [...html.matchAll(/<script\b([^>]*)>([\s\S]*?)<\/script>/g)];
 const inline = scripts.filter(match => !match[1].includes('src='));
 if (inline.length !== 3 || scripts.length !== 3) throw new Error(`Expected three self-contained scripts, found ${inline.length}`);

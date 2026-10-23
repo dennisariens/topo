@@ -15,6 +15,22 @@ function boot(saved=null,blocked=false){
  const q=id=>{const element=d.getElementById(id);assert.ok(element,'real markup contains '+id);return element};
  return {dom,w,d,q,errors,state:()=>w.eval('state')};
 }
+// Resolve the actual badge/stage references, not just the number of <use> nodes.
+const icons=boot();
+for(const status of ['locked','complete','gold']){
+ if(status!=='locked')icons.w.eval(`for(const chapter of ROUTE_CHAPTERS){const record=TopoRoute.record(state.route,chapter.id);record.stage=3;record.goldAt=${status==='gold'?123:0}}renderRouteHome()`);
+ const badges=[...icons.d.querySelectorAll('#routeCards .routeBadge svg use')];
+ assert.equal(badges.length,status==='locked'?10:11,status+': all category badges are represented');
+ for(const use of icons.d.querySelectorAll('#routeCards svg use')){
+  const target=icons.d.querySelector(use.getAttribute('href'));
+  assert.ok(target,status+': defined SVG symbol for '+use.getAttribute('href'));
+  assert.equal(target.localName,'symbol');
+  assert.ok(target.querySelector('path,circle,rect,ellipse,polygon,polyline,line'),status+': nonempty icon artwork');
+ }
+}
+icons.dom.window.close();
+assert.doesNotMatch(html,/5 goede antwoorden\s*=\s*1 pizza/,'standalone markup never advertises the obsolete five-answer reward');
+assert.match(html,/8 goede antwoorden\s*=\s*1 pizza/,'standalone markup explains the existing eight-answer reward');
 let app=boot(),{q,w,d}=app;
 assert.equal(q('journeyScreen').classList.contains('hidden'),false,'dedicated route screen is shown on arrival');
 assert.equal(d.querySelectorAll('#routeCards .routeCard').length,11,'all future stops are visible');

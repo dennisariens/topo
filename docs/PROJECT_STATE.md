@@ -1,5 +1,9 @@
 # Project state
 
+## Issue #4 follow-up — category badge and pizza explanation
+
+The Islands symbol now uses the chapter's `islands` ID, so its category badge resolves in locked, completed and gold route states. The static pizza explanation now says eight correct answers, matching the existing reward engine and runtime explanation. DOM regressions resolve every rendered category/stage symbol and check nonempty artwork across those route states, plus the static eight-answer copy. Canonical and generated standalone HTML remain identical. No geography, reward calculation, saved progress, Nino artwork or print content was changed. This follow-up targets the pending Release 1 integration branch; merge and deployment still require owner approval.
+
 Verified 2026-10-23 for Release 1 integration. GitHub `dennisariens/topo` remains the source of truth. Integration is reviewable on `codex/topo-release-1-integration`; merge and deployment require owner approval. No deployment was performed.
 
 ## Canonical application

@@ -1,0 +1,272 @@
+[
+  {
+    "id": "city-1",
+    "name": "Bari",
+    "px": 708,
+    "py": 669
+  },
+  {
+    "id": "city-2",
+    "name": "Bologna",
+    "px": 401.3,
+    "py": 406.1
+  },
+  {
+    "id": "city-3",
+    "name": "Florence",
+    "px": 395.5,
+    "py": 459.9
+  },
+  {
+    "id": "city-4",
+    "name": "Genua",
+    "px": 264.5,
+    "py": 408.1
+  },
+  {
+    "id": "city-5",
+    "name": "Milaan",
+    "px": 282.1,
+    "py": 330.7
+  },
+  {
+    "id": "city-6",
+    "name": "Napels",
+    "px": 567.4,
+    "py": 683.0
+  },
+  {
+    "id": "city-7",
+    "name": "Palermo",
+    "px": 508,
+    "py": 912
+  },
+  {
+    "id": "city-8",
+    "name": "Pisa",
+    "px": 347.8,
+    "py": 463.1
+  },
+  {
+    "id": "city-9",
+    "name": "Rome",
+    "px": 472,
+    "py": 611
+  },
+  {
+    "id": "city-10",
+    "name": "Turijn",
+    "px": 195.4,
+    "py": 356.6
+  },
+  {
+    "id": "city-11",
+    "name": "Venetië",
+    "px": 453,
+    "py": 333
+  },
+  {
+    "id": "city-12",
+    "name": "Verona",
+    "px": 382.7,
+    "py": 336.4
+  },
+  {
+    "id": "city-13",
+    "name": "Varese",
+    "px": 261.8,
+    "py": 301.6
+  },
+  {
+    "id": "city-14",
+    "name": "Cagliari",
+    "px": 264.4,
+    "py": 807.5
+  },
+  {
+    "id": "city-15",
+    "name": "Catania",
+    "px": 600,
+    "py": 945
+  },
+  {
+    "id": "city-16",
+    "name": "Catanzaro",
+    "px": 710.2,
+    "py": 834.0
+  },
+  {
+    "id": "city-17",
+    "name": "Foggia",
+    "px": 640.9,
+    "py": 636.3
+  },
+  {
+    "id": "city-18",
+    "name": "La Spezia",
+    "px": 316.8,
+    "py": 432.8
+  },
+  {
+    "id": "city-19",
+    "name": "Messina",
+    "px": 620,
+    "py": 895
+  },
+  {
+    "id": "city-20",
+    "name": "Modena",
+    "px": 378.1,
+    "py": 394.5
+  },
+  {
+    "id": "city-21",
+    "name": "Pescara",
+    "px": 562.6,
+    "py": 560.9
+  },
+  {
+    "id": "city-22",
+    "name": "Trente",
+    "px": 389.5,
+    "py": 288.7
+  },
+  {
+    "id": "city-23",
+    "name": "Triëst",
+    "px": 535,
+    "py": 313
+  },
+  {
+    "id": "area-a",
+    "name": "Sicilië",
+    "px": 530.0,
+    "py": 940.0
+  },
+  {
+    "id": "area-b",
+    "name": "Sardinië",
+    "px": 235.0,
+    "py": 690.0
+  },
+  {
+    "id": "area-c",
+    "name": "Apennijnen",
+    "px": 490.0,
+    "py": 560.0
+  },
+  {
+    "id": "area-d",
+    "name": "Dolomieten",
+    "px": 490.0,
+    "py": 215.0
+  },
+  {
+    "id": "area-e",
+    "name": "Vesuvius",
+    "px": 555.0,
+    "py": 680.0
+  },
+  {
+    "id": "area-f",
+    "name": "Etna",
+    "px": 596,
+    "py": 920
+  },
+  {
+    "id": "area-g",
+    "name": "de Povlakte",
+    "px": 385.0,
+    "py": 375.0
+  },
+  {
+    "id": "area-h",
+    "name": "Toscane",
+    "px": 380.0,
+    "py": 485.0
+  },
+  {
+    "id": "area-i",
+    "name": "Frankrijk",
+    "px": 130.0,
+    "py": 290.0
+  },
+  {
+    "id": "area-j",
+    "name": "Zwitserland",
+    "px": 290.0,
+    "py": 160.0
+  },
+  {
+    "id": "area-k",
+    "name": "Oostenrijk",
+    "px": 570.0,
+    "py": 170.0
+  },
+  {
+    "id": "area-l",
+    "name": "Slovenië",
+    "px": 705.0,
+    "py": 305.0
+  },
+  {
+    "id": "area-m",
+    "name": "Kroatië",
+    "px": 775.0,
+    "py": 430.0
+  },
+  {
+    "id": "area-n",
+    "name": "San Marino",
+    "px": 459,
+    "py": 448
+  },
+  {
+    "id": "area-o",
+    "name": "Vaticaanstad",
+    "px": 458,
+    "py": 595
+  },
+  {
+    "id": "water-A",
+    "name": "Middellandse Zee",
+    "px": 117,
+    "py": 890
+  },
+  {
+    "id": "water-B",
+    "name": "Adriatische Zee",
+    "px": 685.0,
+    "py": 535.0
+  },
+  {
+    "id": "water-C",
+    "name": "Ligurische Zee",
+    "px": 195.0,
+    "py": 510.0
+  },
+  {
+    "id": "water-D",
+    "name": "Tyrreense Zee",
+    "px": 395.0,
+    "py": 715.0
+  },
+  {
+    "id": "water-E",
+    "name": "Ionische Zee",
+    "px": 735.0,
+    "py": 940.0
+  },
+  {
+    "id": "water-F",
+    "name": "Tiber",
+    "px": 470.0,
+    "py": 575.0
+  },
+  {
+    "id": "water-G",
+    "name": "Po",
+    "px": 319,
+    "py": 368
+  }
+]

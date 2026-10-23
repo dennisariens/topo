@@ -11,13 +11,10 @@ const literal = (expression, label) => {
   return runInNewContext(`(${match[1]})`);
 };
 const items = literal(/const ITEMS=(\[.*?\]);\nconst \$/s, 'ITEMS');
-for (const [variable, id] of [['dolomites', 'area-d'], ['vatican', 'area-o']]) {
-  Object.assign(items.find(item => item.id === id), literal(new RegExp(`Object\\.assign\\(${variable},(\\{[^;]+\\})\\);`), variable));
-}
 const context = literal(/const CONTEXT_LAND=(\{[^;]+\});/, 'CONTEXT_LAND');
 const italy = script.match(/const italy="([^"]+)";/)?.[1];
 const anchors = literal(/const NAME_ANCHORS=(\{[\s\S]*?\});/, 'NAME_ANCHORS');
-const cityAnchors = literal(/const CITY_NAME_ANCHORS=(\{[^;]+\});/, 'CITY_NAME_ANCHORS');
+const cityAnchors = literal(/const CITY_NAME_ANCHORS=(\{[^;]*\});/, 'CITY_NAME_ANCHORS');
 const groups = literal(/const GROUPS=(\{[^;]+\});/, 'learning groups');
 const photo = html.match(/id="school"[^>]*src="data:image\/jpeg;base64,([A-Za-z0-9+/=]+)"/)?.[1];
 if (!italy || !photo) throw new Error('Map or worksheet image not found');
@@ -32,13 +29,14 @@ if (groupOptions.some(({ key }) => !groupItems(key).length)) throw new Error('Em
 
 // Editorial print positions only: never move the geographic dot to fit its code.
 // Both the HTML worksheets and PDF booklet use these exact positions.
-const cityDots = items.filter(item => item.kind === 'city');
+const isPoint = item => item.kind === 'city' || ['area-e','area-f','area-n','area-o'].includes(item.id);
+const cityDots = items.filter(isPoint);
 function printCityLabels(selected) {
   const placed = [];
   const result = {};
   const offsets = [[78,-48],[-78,-48],[78,48],[-78,48],[0,-88],[0,88],[108,0],[-108,0]];
-  for (const item of selected.filter(item => item.kind === 'city')) {
-    const width = item.code.length > 1 ? 50 : 44, height = 42;
+  for (const item of selected.filter(isPoint)) {
+    const width = 50, height = 42;
     const candidate = offsets.map(([dx,dy],rank) => {
       const x=item.px+dx,y=item.py+dy,left=x-width/2,right=x+width/2,top=y-height/2,bottom=y+height/2;
       const outside=left<8||right>882||top<8||bottom>1227;
@@ -67,8 +65,8 @@ body{margin:0}.toolbar{max-width:1050px;margin:0 auto;padding:22px 18px 10px}.to
 @page{size:A4 portrait;margin:9mm}
 @media print{html,body{background:#fff}body{-webkit-print-color-adjust:exact;print-color-adjust:exact}.toolbar{display:none}.sheet{width:auto;max-width:none;margin:0;padding:0;border:0;border-radius:0;box-shadow:none;min-height:0}.sheetHead{margin-bottom:5mm}.sheetSub{margin-bottom:3mm}.practice{grid-template-columns:61% 1fr;gap:4mm}.answers{font-size:10pt}.answers td,.answers th{padding:3mm 1mm}.answers .blank{height:6mm}.smallNote{font-size:8pt}svg{max-height:258mm}}
 </style></head><body>
-<header class="toolbar"><h1>Topo Italië · printversie</h1><p>Kies een groep en een blad. De codes en namen komen uit dezelfde 45 onderdelen als de interactieve toets.</p>
-<div class="controls"><label>Groep<select id="group"></select></label><label>Blad<select id="format"><option value="learn">Leerkaart · namen en codes</option><option value="codeName">Toets · code → naam</option><option value="nameCode">Toets · naam → code</option></select></label><label>Kaart<select id="mapStyle"><option value="clean">Heldere Topo-kaart</option><option value="school">Origineel schoolblad</option></select></label><button type="button" id="print">Print dit blad</button></div></header>
+<header class="toolbar"><h1>Topo Italië · printversie</h1><p>Kies een groep en een blad. Oefen dezelfde 45 plekken als in de app. V-labels horen alleen bij dit blad; je hoeft geen schoolcodes te onthouden.</p>
+<div class="controls"><label>Groep<select id="group"></select></label><label>Blad<select id="format"><option value="learn">Leerkaart · plekken en namen</option><option value="name">Oefening · schrijf de naam</option><option value="locate">Oefening · zoek de plek</option></select></label><label>Kaart<select id="mapStyle"><option value="clean">Heldere Topo-kaart</option><option value="school">Kaart + origineel schoolblad</option></select></label><button type="button" id="print">Print dit blad</button></div></header>
 <main id="pages"></main>
 <script>
 const DATA=${data};
@@ -77,21 +75,21 @@ const $=selector=>document.querySelector(selector);
 const esc=value=>String(value).replace(/[&<>"']/g,char=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[char]));
 const path=(d,fill,stroke='#a6b1a9',width=1.7)=>'<path d="'+esc(d)+'" fill="'+fill+'" stroke="'+stroke+'" stroke-width="'+width+'" stroke-linejoin="round"/>';
 function label(item,format,groupKey){
- if(format==='nameCode')return '';
- if(item.kind==='city'){
-  const [x,y]=DATA.printLabels[groupKey][item.id],w=item.code.length>1?50:44,h=42;
+ if(format==='locate')return '';
+ const question='V'+(DATA.groups.find(g=>g.key===groupKey).ids.indexOf(item.id)+1);
+ if(item.kind==='city'||['area-e','area-f','area-n','area-o'].includes(item.id)){
+  const [x,y]=DATA.printLabels[groupKey][item.id],w=50,h=42;
   const endX=x>item.px?x-w/2:x<item.px?x+w/2:x;
   const endY=x===item.px?(y>item.py?y-h/2:y+h/2):y;
-  return '<g><line x1="'+item.px+'" y1="'+item.py+'" x2="'+endX+'" y2="'+endY+'" stroke="#214e5b" stroke-width="2.4"/><rect x="'+(x-w/2)+'" y="'+(y-h/2)+'" width="'+w+'" height="'+h+'" rx="9" fill="#fff" stroke="#214e5b" stroke-width="2"/><text x="'+x+'" y="'+(y+6)+'" text-anchor="middle" font-size="19" font-family="system-ui,sans-serif" font-weight="800" fill="#193740">'+esc(item.code)+'</text></g>';
+  return '<g><line x1="'+item.px+'" y1="'+item.py+'" x2="'+endX+'" y2="'+endY+'" stroke="#214e5b" stroke-width="2.4"/><rect x="'+(x-w/2)+'" y="'+(y-h/2)+'" width="'+w+'" height="'+h+'" rx="9" fill="#fff" stroke="#214e5b" stroke-width="2"/><text x="'+x+'" y="'+(y+6)+'" text-anchor="middle" font-size="19" font-family="system-ui,sans-serif" font-weight="800" fill="#193740">'+esc(question)+'</text></g>';
  }
- const [x,y]=DATA.anchors[item.id]||[item.px,item.py],text=item.code;
+ const [x,y]=DATA.anchors[item.id]||[item.px,item.py],text=question;
  const w=Math.max(26,text.length*10+12);
  return '<g><rect x="'+(x-w/2)+'" y="'+(y-16)+'" width="'+w+'" height="22" rx="5" fill="#fff" fill-opacity=".95" stroke="#738985" stroke-width="1"/><text x="'+x+'" y="'+y+'" text-anchor="middle" font-size="17" font-family="system-ui,sans-serif" font-weight="800" fill="#193740">'+esc(text)+'</text></g>';
 }
 function mapMarkup(items,format,style,groupKey){
  let svg='<svg class="mapSvg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 890 1235" role="img" aria-label="Kaart van Italië met '+esc(items.length)+' oefenplekken">';
- if(style==='school')svg+='<image href="data:image/jpeg;base64,'+DATA.photo+'" x="0" y="0" width="890" height="1235"/>';
- else{
+ {
   svg+='<rect width="890" height="1235" fill="#eaf3f5"/>';
   for(const item of DATA.items.filter(item=>item.kind==='water'))svg+=path(item.shape,'#d6edf2','#a5c7ca',1);
   for(const d of Object.values(DATA.context))svg+=path(d,'#f4f2e9','#b8beb2',1.5);
@@ -107,10 +105,10 @@ function mapMarkup(items,format,style,groupKey){
  return svg;
 }
 function table(items,format){
- const heading=format==='nameCode'?'<th>Naam</th><th>Letter / nummer</th>':'<th>Letter / nummer</th><th>Naam</th>';
- return '<table class="answers"><thead><tr>'+heading+'</tr></thead><tbody>'+items.map(item=>{
-  const code=esc(item.code),name=esc(item.name);
-  return format==='nameCode'?'<tr><td class="name">'+name+'</td><td class="blank"></td></tr>'
+ const heading=format==='locate'?'<th>Naam</th><th>Letter / nummer</th>':'<th>Letter / nummer</th><th>Naam</th>';
+ return '<table class="answers"><thead><tr>'+heading+'</tr></thead><tbody>'+items.map((item,index)=>{
+  const code='V'+(index+1),name=esc(item.name);
+  return format==='locate'?'<tr><td class="code">'+code+'</td><td class="name">'+name+'</td></tr>'
    :'<tr><td class="code">'+code+'</td><td class="'+(format==='learn'?'name':'blank')+'">'+(format==='learn'?name:'')+'</td></tr>';
  }).join('')+'</tbody></table>';
 }
@@ -119,10 +117,11 @@ function render(){
  const choices=group==='all'?DATA.groups.filter(entry=>entry.key!=='all'):DATA.groups.filter(entry=>entry.key===group);
  $('#pages').innerHTML=choices.map((entry,index)=>{
   const items=entry.ids.map(id=>byId[id]);
-  const title=format==='learn'?'Leerkaart':format==='codeName'?'Toets · schrijf de naam':'Toets · schrijf de code';
-  const note=format==='nameCode'?'Schrijf het juiste nummer of de juiste letter. Kleine letters a–o en hoofdletters A–G verschillen.':format==='codeName'?'Schrijf bij elke code de volledige naam.':'Bekijk de codes en noem elke plek hardop.';
-  return '<section class="sheet"><div class="sheetHead"><h2>Topo Italië · '+esc(entry.title)+'</h2><span>'+title+' · '+items.length+' namen'+(group==='all'?' · blad '+(index+1)+'/'+choices.length:'')+'</span></div><p class="sheetSub">Naam: ____________________________ &nbsp; Datum: ______________ &nbsp; '+esc(note)+'</p><div class="practice">'+mapMarkup(items,format,style,entry.key)+table(items,format)+'</div><p class="smallNote">De schoolfoto is een gefotografeerd werkblad. De heldere kaart volgt de huidige Topo-kaart; rivieren en sommige gebieden zijn schematische oefenvormen. Gebruik de interactieve versie om antwoorden te controleren.</p></section>';
+  const title=format==='learn'?'Leerkaart':format==='name'?'Toets · schrijf de naam':'Oefening · zoek de plek';
+  const note=format==='locate'?'Zoek elke naam op de kaart en schrijf het vraaglabel V1, V2, … bij de plek.':format==='name'?'Schrijf de naam van elke gemarkeerde kaartplek. V-labels zijn tijdelijke vraagnummers.':'Bekijk de gemarkeerde plekken en zeg de namen hardop.';
+  return '<section class="sheet"><div class="sheetHead"><h2>Topo Italië · '+esc(entry.title)+'</h2><span>'+title+' · '+items.length+' namen'+(group==='all'?' · blad '+(index+1)+'/'+choices.length:'')+'</span></div><p class="sheetSub">Naam: ____________________________ &nbsp; Datum: ______________ &nbsp; '+esc(note)+'</p><div class="practice">'+mapMarkup(items,format,style,entry.key)+table(items,format)+'</div><p class="smallNote">Kaart: Natural Earth; punten: Natural Earth, GeoNames en Smithsonian GVP. Bergen, streken en zeezones zijn schematisch. V-labels zijn tijdelijke vragen, geen te leren codes. Gebruik de interactieve versie om antwoorden te controleren.</p></section>';
  }).join('');
+ if(style==='school')$('#pages').innerHTML+='<section class="sheet"><h2>Origineel schoolblad · alleen ter vergelijking</h2><p>De foto heeft een eigen schaal en perspectief. Gebruik de heldere kaart voor de oefeningen.</p><img alt="Origineel gefotografeerd schoolblad" style="width:100%;max-height:245mm;object-fit:contain" src="data:image/jpeg;base64,'+DATA.photo+'"></section>';
 }
 $('#group').innerHTML=DATA.groups.map(entry=>'<option value="'+esc(entry.key)+'">'+esc(entry.title)+(entry.key==='all'?' · alle deelbladen':'')+'</option>').join('');
 $('#group').value='city1';

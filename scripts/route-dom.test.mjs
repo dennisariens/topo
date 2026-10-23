@@ -5,7 +5,7 @@ const html=readFileSync(new URL('../output/html/topo-italie-duolingo.html',impor
 function boot(saved=null,blocked=false){
  const errors=[];const vc=new VirtualConsole();vc.on('jsdomError',error=>errors.push(error.message));
  const dom=new JSDOM(html,{url:'https://topo.test/',runScripts:'dangerously',virtualConsole:vc,beforeParse(w){
-   w.confirm=()=>true;w.print=()=>{};
+   w.HTMLElement.prototype.scrollIntoView=()=>{};w.confirm=()=>true;w.print=()=>{};
    if(blocked)Object.defineProperty(w,'localStorage',{value:{getItem(){return null},setItem(){throw Error('storage disabled')}}});
    else if(saved!==null)w.localStorage.setItem('topo-italie-v3',saved);
  }});
@@ -18,11 +18,11 @@ function boot(saved=null,blocked=false){
 let app=boot(),{q,w,d}=app;
 assert.equal(q('journeyScreen').classList.contains('hidden'),false,'dedicated route screen is shown on arrival');
 assert.equal(d.querySelectorAll('#routeCards .routeCard').length,11,'all future stops are visible');
-assert.equal(d.querySelectorAll('#routeCards .routeStep').length,44,'four stages are shown per stop');
+assert.equal(d.querySelectorAll('#routeCards .routeStep').length,33,'three stages are shown per stop');
 assert.equal(d.querySelectorAll('#journeyWheel .wheelSlice').length,8,'the reward draws eight distinct earned wedges');
 assert.equal(d.querySelectorAll('#routeCards .routeBadge svg use').length,10,'completed and future chapters keep their category icon');
 assert.equal(d.querySelectorAll('#routeCards .routeBadge.ninoBadge').length,1,'Nino travels to the current stop');
-assert.equal(d.querySelectorAll('#routeCards .routeStep svg use').length,44,'each stage has an actionable visual icon');
+assert.equal(d.querySelectorAll('#routeCards .routeStep svg use').length,33,'each stage has an actionable visual icon');
 assert.match(d.querySelector('.routeScene img').getAttribute('src'),/^data:image\/webp;base64,/,'the new original panorama works as one-file HTML');
 assert.ok(d.querySelector('.brandMark'),'Nino appears in the app header');
 assert.equal(d.querySelectorAll('#routeCards .routeCard.locked .routeStep:not([disabled])').length,0,'future lessons are locked');
@@ -69,3 +69,11 @@ assert.deepEqual(app.errors,[]);app.dom.window.close();
 const corrupt=boot('null');assert.ok(corrupt.q('learnPrompt').textContent);corrupt.dom.window.close();
 const blocked=boot(null,true);assert.equal(blocked.q('storageNote').classList.contains('hidden'),false,'storage failure is explained without disabling lessons');blocked.dom.window.close();
 console.log('Real HTML DOM: controls, SVG events, reload, atomic rewards, unique IDs, enclave and storage failure: OK');
+
+const meter=boot();
+for(let k=0;k<100;k++){
+ meter.w.eval(`state.pizzas=${k};state.slices=${k%8};state.trips=${Math.floor(k/3)};sync()`);
+ assert.equal(meter.d.querySelectorAll('#journeyWheel .earned').length,k%8);
+ assert.equal(meter.q('journeyTripDots').textContent,(k%3)+' / 3 pizza’s voor de volgende rit');
+}
+meter.dom.window.close();

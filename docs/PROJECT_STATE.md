@@ -1,5 +1,7 @@
 # Project state
 
+**2026-10-23 handoff:** A divergent, tested Work implementation is preserved in `work-sync/2026-10-23/topo-work-snapshot.zip`. Read [WORK_HANDOFF_2026-10-23.md](WORK_HANDOFF_2026-10-23.md) before continuing. It includes sourced geography, adaptive practice and removal of code-memory questions, but is **not integrated into root index.html or deployed**. The descriptions below remain the GitHub baseline; no-code learning is now the approved target. Preserve Nino artwork and the print pipeline during integration.
+
 **Last verified against repository: 2026-09-28.** Canonical repository: `dennisariens/topo`, branch `main`. Recovered from standalone `topo-italie-v6.html`; older HTML and recovery ZIP are historical.
 
 ## Purpose and implementation

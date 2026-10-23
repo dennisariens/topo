@@ -39,7 +39,7 @@ ev("mode('point');state.current=byId['area-o'];state.answered=false;state.questi
 ev('romeHit.dispatchEvent(new MouseEvent("click",{bubbles:true}))');
 assert(q('mapPicker').hasAttribute('open'));assert(!/Rome|Vaticaan/.test(q('mapPicker').textContent));
 assert(q('romeLens').classList.contains('hidden'));
-q('mapPicker').querySelectorAll('.pickerActions button')[1].click();assert.match(q('message').textContent,/^Goed!/);
+q('mapPicker').querySelectorAll('.pickerActions button')[1].click();assert(q('message').classList.contains('good'));
 for(const id of ['water-F','water-G']){
  const hit=d.querySelector('[data-hit-id="'+id+'"]');assert.equal(hit.getAttribute('stroke-width'),'44');assert.equal(hit.getAttribute('vector-effect'),'non-scaling-stroke');
  assert.equal(hit.getAttribute('d'),ev(`byId['${id}'].shape`));
@@ -48,7 +48,7 @@ for(const id of ['area-n','area-o']){
  ev(`state.current=byId['${id}'];state.questionMode='point';state.answered=false`);
  const mark=d.querySelector('.microstate[data-id="'+id+'"]');assert.equal(mark.getAttribute('tabindex'),'0');
  mark.dispatchEvent(new w.KeyboardEvent('keydown',{key:'Enter',bubbles:true}));
- assert.equal(ev('state.answered'),true,'visible microstate is keyboard actionable');assert.match(q('message').textContent,/^Goed!/);
+ assert.equal(ev('state.answered'),true,'visible microstate is keyboard actionable');assert(q('message').classList.contains('good'));
 }
 const daily=ev('state.daily.correct');q('resetPizza').click();assert.equal(ev('state.daily.correct'),daily);assert.equal(ev('state.route.chapters.city1.goldAt'),456);
 q('resetAll').click();assert.equal(ev('state.daily.correct'),0);assert.equal(ev('state.good'),0);assert.equal(ev('state.route.rewardTokens.length'),0);assert.equal(ev('Object.keys(state.route.items).length'),0);

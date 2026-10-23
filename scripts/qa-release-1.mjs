@@ -22,7 +22,7 @@ for(let n=0;n<6;n++){
  assert.equal(await page.evaluate(()=>state.good),good);
  await page.locator('#next').click();
 }
-assert.equal(await page.locator('#finishTitle').textContent(),'Mooi rondje!');
+assert.equal(await page.locator('#finishScreen').getAttribute('data-event'),'ROUND.RESULT_PERFECT');
 assert.equal(await page.locator('.finishStats b').first().textContent(),'6');
 await page.screenshot({path:destination+'/adaptive-finish.png',fullPage:true});
 await page.locator('#finishScreen .button').last().click();
@@ -42,7 +42,7 @@ assert(!/Rome|Vaticaan/.test(await page.locator('#mapPicker').innerText()),'pick
 await page.screenshot({path:destination+'/rome-vatican-picker.png',fullPage:true});
 const index=await page.evaluate(()=>{const matrix=document.querySelector('#map').getScreenCTM(),p=new DOMPoint(byId['area-o'].px,byId['area-o'].py).matrixTransform(matrix);return ITEMS.filter(i=>i.kind==='city'||['area-e','area-f','area-n','area-o'].includes(i.id)).map(i=>({i,d:Math.hypot(p.x-new DOMPoint(i.px,i.py).matrixTransform(matrix).x,p.y-new DOMPoint(i.px,i.py).matrixTransform(matrix).y)})).filter(v=>v.d<=22).sort((a,b)=>a.d-b.d).findIndex(v=>v.i.id==='area-o')});
 await page.locator('#mapPicker .pickerActions button').nth(index).click();
-assert.equal(await page.evaluate(()=>state.answered),true);assert.match(await page.locator('#message').textContent(),/^Goed!/);
+assert.equal(await page.evaluate(()=>state.answered),true);assert.match(await page.locator('#message').getAttribute('class'),/good/);
 for(const [name,width,height] of [['tablet',820,1180],['phone',390,844]]){
  await page.setViewportSize({width,height});await page.locator('[data-mode="route"]').click();await page.locator('#smartStart').click();
  const map=await page.locator('#map').boundingBox();assert(Math.abs(map.width/map.height-890/1235)<.002,'fixed map aspect');
@@ -53,7 +53,7 @@ for(const [name,width,height] of [['tablet',820,1180],['phone',390,844]]){
 await page.locator('.mastery summary').click();await page.locator('#masteryGrid tbody tr').last().waitFor();assert.equal(await page.locator('#masteryGrid tbody tr').count(),45);
 await page.setViewportSize({width:1366,height:1000});
 await page.evaluate(()=>{for(const c of ROUTE_CHAPTERS){const r=TopoRoute.record(state.route,c.id);r.stage=3;r.goldAt=0}state.route.active=null;mode('route')});
-await page.locator('#routeCards .routeCard').filter({hasText:'9. Landen'}).getByRole('button',{name:'Verdien goud',exact:false}).click();
+await page.locator('#completedStops').evaluate(n=>n.open=true);await page.locator('#routeCards .routeCard').filter({hasText:'9. Landen'}).getByRole('button',{name:'Verdien goud',exact:false}).click();
 let goldAnswers=0;
 while(!await page.evaluate(()=>state.route.active.done)){
  if(await page.evaluate(()=>roundPaused)){await page.locator('#finishScreen .button').first().click();continue}

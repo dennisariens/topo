@@ -8,7 +8,7 @@ assert.ok(source, 'app script present');
 const examCode = source.slice(source.indexOf('function worksheetCode('), source.indexOf('function revealItem('));
 assert.ok(examCode.includes('function finishExam('), 'finite exam result exists');
 const engineContext = {};
-runInNewContext(readFileSync(new URL('./learning-engine.js', import.meta.url), 'utf8')+readFileSync(new URL('./route-engine.js', import.meta.url), 'utf8'), engineContext);
+runInNewContext(readFileSync(new URL('./learning-engine.js', import.meta.url), 'utf8')+readFileSync(new URL('./route-engine.js', import.meta.url), 'utf8')+readFileSync(new URL('./nino-feedback.js', import.meta.url), 'utf8'), engineContext);
 
 const items = [
   { id: 'area-a', name: 'Sicilië', code: 'a', kind: 'area', aliases: [] },
@@ -29,7 +29,7 @@ const state = {
   route:engineContext.TopoRoute.fresh(), good: 0, pizzas: 0, slices: 0, trips: 0, streak: 0, mistakes: []
 };
 const context = {
-  state, TopoRoute:engineContext.TopoRoute, ITEMS: items, TopoLearning: engineContext.TopoLearning,
+  state, TopoNino:engineContext.TopoNino, TopoRoute:engineContext.TopoRoute, ITEMS: items, TopoLearning: engineContext.TopoLearning,
   $: node, groupItems: () => items, clearActive() {}, highlight() {}, sync() {},
   message: (text) => { node('#message').textContent = text; },
   hideLens() {}, showLens() {}, isRomeArea: () => false, celebrateTrip() {},celebrateReward() {}, recordDailyCorrect() {},

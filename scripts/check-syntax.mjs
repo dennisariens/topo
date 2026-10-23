@@ -24,3 +24,6 @@ if (bundled.length !== 3 || standalone !== html) throw new Error('Downloaded HTM
 if (readFileSync(new URL('../output/html/topo-italie-duolingo.html', import.meta.url), 'utf8') !== html) throw new Error('New route download differs from canonical app');
 bundled.forEach((match, index) => new Script(match[1], { filename: `standalone:script-${index}` }));
 console.log('App, print page, standalone bundle and learning engine JavaScript syntax: OK');
+
+const nino=readFileSync(new URL('./nino-feedback.js',import.meta.url),'utf8');
+if(!html.includes('// BEGIN NINO FEEDBACK\n'+nino+'// END NINO FEEDBACK'))throw new Error('Embedded Nino resolver differs from tested source');

@@ -68,3 +68,7 @@ unzip work-sync/2026-10-23/topo-work-snapshot.zip -d /tmp/topo-work-2026-10-23
 ```
 
 The archive is historical handoff material, not a second active application. After integration, retain it only for provenance/recovery and mark this handoff completed with the integration commit.
+
+## Integration status — 2026-10-23
+
+Implemented selectively on `codex/topo-release-1-integration`; implementation commit `d4a273bb54a6fa5b09236aff52fef26a5f0aaa73`; see `RELEASE_1_INTEGRATION.md` for evidence, and `HERMES_QA_RELEASE_1.md` for independent acceptance. This records integration work, not owner acceptance, merge or deployment. The archive and its checksum remain unchanged.

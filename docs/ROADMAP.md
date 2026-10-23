@@ -1,33 +1,18 @@
-# Roadmap (no date commitments)
+# Roadmap
 
-Each item is a distinct outcome; statuses describe code today. Dependency order is intentional.
+## Current — Release 1 owner acceptance
 
-## Now — Geographic Data Foundation (recommended next Codex package)
+Integration branch: `codex/topo-release-1-integration`. Geography, three-stage learning, adaptive practice, migration, reward continuity, original Nino artwork and generated printing are integrated. Required checks and Chrome browser QA are documented in `RELEASE_1_INTEGRATION.md`.
 
-| Goal | Status | Dependency | Size |
-|---|---|---|---|
-| Establish named/license-checked source geometry and explicit projection; independently check all 45 and coastal lines | PLANNED | Current embedded map and invariants | L |
-| Separate visual paths and interaction tolerances for remaining rivers, countries and city dots | PARTIAL (microstates separated) | Geospatial source and touch review | M |
-| Compare worksheet photo against independent coastline control points before any warp | PARTIAL (printed dots checked) | Verified source geometry | M |
-| Browser/mobile audit of lens, quiz, labels, touch targets, progress and resets | PLANNED | Browser accessible to local app | M |
-| Add data-level invariants against independent source, not just drawn coastline | PARTIAL (static checks now) | Geospatial source | M |
+Remaining acceptance work:
 
-Guided route with eleven stops, replayable stages, gold and short scheduled review was added 2026-09-28; its actual mobile layout and UX need device review. Final Italy stabilization implemented the Rome/Vatican selector, shuffled sessions, v2 migration and continuous pizza/Vespa loop on 2026-09-27. Geographic source validation remains the next package. Avoid unrelated pages, dashboard redesign or curriculum expansion.
+1. Independent Hermes review using `HERMES_QA_RELEASE_1.md`.
+2. Physical iPad Safari: portrait/landscape touch, close-point picker, writing with keyboard, reload, storage and reduced motion.
+3. Print representative city and country sheets; check microstates/leader lines and legibility on the actual school printer.
+4. Owner accepts the PR; only then merge/deploy. No production deployment has been verified in this work.
 
-## Next
+Geography limits remain explicit: nine schematic zones, unregistered school photo, and missing raw version-pinned upstream source archives. A future intentional geometry change must fetch/pin upstream data and update provenance plus baselines together.
 
-| Goal | Status | Dependency | Size |
-|---|---|---|---|
-| Track weak/mastered items and simple due reviews; keep a transparent map-first flow | CONCEPT | Shuffled deck and stable item IDs | M |
-| Check whether category practice and the bidirectional test improve recall with actual learners | PLANNED (category selection implemented) | Child/teacher observation | S |
-| Review print contrast and legibility on a physical school printer | PARTIAL (A4 booklet and print HTML implemented) | First printed copy/user feedback | S |
-| Parent/teacher overview only if observed need | CONCEPT | Validated learning data | M |
+## Deferred — outside Release 1
 
-## Later
-
-| Goal | Status | Dependency | Size |
-|---|---|---|---|
-| Additional countries/regions and difficulty levels | CONCEPT | Trusted map/content pipeline | L |
-| Profiles and cloud progress | CONCEPT | Privacy/user need, stable local model | L |
-
-Current reward threshold/stops and legacy conversion are in `scripts/learning-engine.js`; change them only with migration tests and a recorded decision.
+Postcards, Vespa customisation, parent print builder, placement challenges, curriculum expansion, profiles and cloud sync are not implemented or started. Reconsider only after Release 1 acceptance and actual learner feedback. Do not expand the reward system or redesign the established Nino journey while stabilisation is pending.

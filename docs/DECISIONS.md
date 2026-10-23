@@ -87,3 +87,27 @@
 ## 2026-09-28 — Original Nino character becomes the visual thread
 
 **Decision** Replace the vector scooter landscape with an original premium animated illustration of a sunny Italian coastal village and a fictional young explorer, Nino, on a red scooter. Use a matching transparent cutout for the active stop, the lesson, and the earned Vespa trip. Keep category/stage pictograms, the eight pizza wedges and accessible words. Bundle both optimized WebP assets inside the standalone HTML. Do not use the supplied movie frames or characters as shipped app assets. **Reason** The flat banner failed the requested visual quality; a consistent character makes the child’s journey through the 11 worksheet groups easier to follow. The geographic SVG remains the teaching surface. **Status** ACTIVE. **Supersedes** the hand-drawn road/Vespa scenic banner and the previous vector-only art direction.
+
+## 2026-10-23 — Integrate Work selectively into canonical Release 1
+
+**Decision** Preserve the original Nino document, assets, route presentation, engine extraction checks and print pipeline; port verified Work geography, learning and interaction changes. Keep the archive checksum-identical as historical recovery material. **Status** IMPLEMENTED on integration branch; owner acceptance pending. **Supersedes** Treating the divergent Work app or its older published Site as the active source. GitHub remains canonical; no merge/deployment is authorised by this implementation task.
+
+## 2026-10-23 — Geographical recall replaces schoolcode memorisation
+
+**Decision** Use exactly Ontdekken, Aanwijzen, Namen schrijven. Free tests, reviews and smart rounds evaluate pointing/writing, never fixed worksheet codes. Printable questions use temporary V-labels for marked-place naming or named-place locating. Preserve all 45 IDs/reference codes and eleven stops. Schema-1 writing completion and gold migrate; obsolete code queues close. **Status** IMPLEMENTED. **Supersedes** The ACTIVE 2026-09-27 bidirectional worksheet-code test decision, the four-stage/code requirements in 2026-09-28 route decisions, and the two code-recall print directions. Those historical behaviors are now SUPERSEDED.
+
+## 2026-10-23 — Source-projected geometry and independent photo
+
+**Decision** Adopt Work's explicit x=55*longitude−225.5, y=3830.75−77*latitude map frame and reference-backed output; preserve the nine declared schematic zones. Derive static/print views from root data. Use accurate visible points and separate CSS-pixel touch tolerance, neutral overlap picker and microstate locator rings. Show the original school photograph separately, never as a registered overlay. **Status** IMPLEMENTED. **Supersedes** September's unprovenanced geometry, inferred-only projection and 1:1 photo overlay policy. Raw upstream/versioned inputs remain a documented provenance limitation, not something geometry hashes prove independently.
+
+## 2026-10-23 — Separate skills and bounded rounds
+
+**Decision** Store independent point/write histories with weak/due/new selection, six-task smart rounds and a 45-place passport. Split longer route/gold sessions at six-task pauses without dropping any tasks. Show round scores separately from lesson/lifetime totals. Preserve legacy aggregate history without fabricating skill history. **Status** IMPLEMENTED. **Supersedes** Earlier planned-only global mastery/adaptive practice status. Local daily goals reset independently of earned lifetime rewards.
+
+## 2026-10-23 — Idempotent rewards with original visual identity
+
+**Decision** Keep the existing eight-wedge pizza, three-pizza Vespa cadence, Nino illustrations and short nonblocking trip toast. Show the current partial pizza continuously, including at rollover; use one compact meter in focused lessons. Persist a bounded chapter/stage/question ledger across stage/gold replays, reload and migration, including route-only resets. Fresh review/adaptive/free sessions remain rewarded retrieval opportunities. Pizza-only reset leaves learning/daily progress; full reset clears both. **Status** IMPLEMENTED. **Supersedes** Session-only reward tokens for replayed stage/gold questions. No modal reward gate, postcards, customisation or extra currency.
+
+## 2026-10-23 — Preserve print pipeline with canonical vector geography
+
+**Decision** Generate reference/name/location exercises and a 35-page ReportLab booklet from root items/geometry, with leaders that clear accurate points. Keep the original school photo in a separate appendix/reference sheet. Maintain PDF source freshness checks and byte-identical app downloads. **Status** IMPLEMENTED. **Supersedes** PDF geographic labels positioned over the perspective-skewed photograph and schoolcode-recall exercises. Physical printer legibility remains an acceptance check.

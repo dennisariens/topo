@@ -1,0 +1,18 @@
+{
+  "browser": "146.0.7680.153",
+  "url": "http://127.0.0.1:8000/",
+  "checks": [
+    "33 stages; original Nino",
+    "six adaptive correct answers, reload per answer and round result",
+    "canonical microstate highlight rings",
+    "neutral Rome/Vatican pointer picker and correct grading",
+    "tablet and phone aspect ratio, no overflow",
+    "45-place passport",
+    "14-task countries gold across six-question pauses",
+    "name/locate print exercise rendering",
+    "reduced-motion context",
+    "no page errors"
+  ],
+  "physicalIPadSafari": "not tested",
+  "errors": []
+}

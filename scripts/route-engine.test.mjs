@@ -32,8 +32,8 @@ const repaired=finish('point',1);
 assert.ok(repaired.answers>3,'mistake returns after other cards');
 assert.equal(repaired.rewards,3,'correction fillers do not farm extra slices');
 assert.equal(data.chapters.one.stage,2);
-finish('write');finish('codes');
-assert.equal(data.chapters.one.stage,4);
+finish('write');
+assert.equal(data.chapters.one.stage,3);
 assert.equal(R.unlocked(data,chapters,'two'),true);
 assert.equal(R.due(data,chapters,now).length,0);
 assert.equal(R.due(data,chapters,now+R.DAY+1).length,1);
@@ -46,7 +46,16 @@ finish('review');assert.equal(data.chapters.one.nextReviewAt,now+3*R.DAY);
 finish('review',0);assert.equal(data.chapters.one.nextReviewAt,now+R.DAY);
 assert.equal(data.chapters.one.goldAt,now,'earned gold survives a later mistake');
 assert.equal(R.restore({schema:1,active:{chapterId:'one',kind:'point',queue:[{id:'unknown',mode:'point'}]}},chapters).active,null);
-assert.equal(R.restore(null,chapters).schema,1);
+assert.equal(R.restore(null,chapters).schema,2);
+// Stage and gold replay never remint a previously rewarded question.
+for(const kind of ['point','write','gold'])assert.equal(finish(kind).rewards,0,kind+' replay is reward-idempotent');
+const old=R.restore({schema:1,chapters:{one:{stage:4,goldAt:now,completedAt:now}},items:{}},chapters);
+assert.equal(old.chapters.one.stage,3);
+for(const kind of ['point','write','gold']){
+ assert(R.start(old,chapters,'one',kind,now));
+ while(R.current(old)){assert.equal(R.answer(old,chapters,true).reward,false,'legacy completed question is already rewarded');R.advance(old,chapters)}
+}
+
 data=R.fresh();R.start(data,chapters,'one','discover',now);while(R.current(data)){R.answer(data,chapters,true,now);R.advance(data,chapters,now)}
 R.start(data,chapters,'one','point',now);
 let attempts=0;while(R.current(data)){R.answer(data,chapters,false,now);R.advance(data,chapters,now);attempts++;assert.ok(attempts<100)}

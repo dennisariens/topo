@@ -1,0 +1,407 @@
+[
+  {
+    "id": "city-1",
+    "name": "Bari",
+    "code": "1",
+    "px": 702.5,
+    "py": 664.96,
+    "shape_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "reference": "Natural Earth populated places 10m"
+  },
+  {
+    "id": "city-2",
+    "name": "Bologna",
+    "code": "2",
+    "px": 398.2,
+    "py": 404.22,
+    "shape_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "reference": "Natural Earth populated places 10m"
+  },
+  {
+    "id": "city-3",
+    "name": "Florence",
+    "code": "3",
+    "px": 393.25,
+    "py": 459.69,
+    "shape_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "reference": "Natural Earth populated places 10m"
+  },
+  {
+    "id": "city-4",
+    "name": "Genua",
+    "code": "4",
+    "px": 265.65,
+    "py": 411.18,
+    "shape_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "reference": "Natural Earth populated places 10m"
+  },
+  {
+    "id": "city-5",
+    "name": "Milaan",
+    "code": "5",
+    "px": 280.67,
+    "py": 329.41,
+    "shape_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "reference": "Natural Earth populated places 10m"
+  },
+  {
+    "id": "city-6",
+    "name": "Napels",
+    "code": "6",
+    "px": 557.87,
+    "py": 685.92,
+    "shape_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "reference": "Natural Earth populated places 10m"
+  },
+  {
+    "id": "city-7",
+    "name": "Palermo",
+    "code": "7",
+    "px": 508.64,
+    "py": 894.97,
+    "shape_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "reference": "Natural Earth populated places 10m"
+  },
+  {
+    "id": "city-8",
+    "name": "Pisa",
+    "code": "8",
+    "px": 346.5,
+    "py": 464.27,
+    "shape_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "reference": "Natural Earth populated places 10m"
+  },
+  {
+    "id": "city-9",
+    "name": "Rome",
+    "code": "9",
+    "px": 460.97,
+    "py": 604.61,
+    "shape_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "reference": "Natural Earth populated places 10m"
+  },
+  {
+    "id": "city-10",
+    "name": "Turijn",
+    "code": "10",
+    "px": 196.24,
+    "py": 360.18,
+    "shape_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "reference": "Natural Earth populated places 10m"
+  },
+  {
+    "id": "city-11",
+    "name": "Venetië",
+    "code": "11",
+    "px": 452.92,
+    "py": 331.97,
+    "shape_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "reference": "Natural Earth populated places 10m"
+  },
+  {
+    "id": "city-12",
+    "name": "Verona",
+    "code": "12",
+    "px": 378.95,
+    "py": 331.84,
+    "shape_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "reference": "Natural Earth populated places 10m"
+  },
+  {
+    "id": "city-13",
+    "name": "Varese",
+    "code": "13",
+    "px": 259.88,
+    "py": 302.57,
+    "shape_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "reference": "GeoNames"
+  },
+  {
+    "id": "city-14",
+    "name": "Cagliari",
+    "code": "14",
+    "px": 275.22,
+    "py": 810.63,
+    "shape_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "reference": "Natural Earth populated places 10m"
+  },
+  {
+    "id": "city-15",
+    "name": "Catania",
+    "code": "15",
+    "px": 603.9,
+    "py": 943.25,
+    "shape_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "reference": "Natural Earth populated places 10m"
+  },
+  {
+    "id": "city-16",
+    "name": "Catanzaro",
+    "code": "16",
+    "px": 687.5,
+    "py": 835.42,
+    "shape_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "reference": "Natural Earth populated places 10m"
+  },
+  {
+    "id": "city-17",
+    "name": "Foggia",
+    "code": "17",
+    "px": 630.3,
+    "py": 638.29,
+    "shape_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "reference": "Natural Earth populated places 10m"
+  },
+  {
+    "id": "city-18",
+    "name": "La Spezia",
+    "code": "18",
+    "px": 314.81,
+    "py": 434.82,
+    "shape_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "reference": "GeoNames"
+  },
+  {
+    "id": "city-19",
+    "name": "Messina",
+    "code": "19",
+    "px": 629.75,
+    "py": 889.31,
+    "shape_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "reference": "Natural Earth populated places 10m"
+  },
+  {
+    "id": "city-20",
+    "name": "Modena",
+    "code": "20",
+    "px": 375.1,
+    "py": 392.7,
+    "shape_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "reference": "Natural Earth populated places 10m"
+  },
+  {
+    "id": "city-21",
+    "name": "Pescara",
+    "code": "21",
+    "px": 556.53,
+    "py": 561.68,
+    "shape_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "reference": "Natural Earth populated places 10m"
+  },
+  {
+    "id": "city-22",
+    "name": "Trente",
+    "code": "22",
+    "px": 386.1,
+    "py": 282.56,
+    "shape_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "reference": "Natural Earth populated places 10m"
+  },
+  {
+    "id": "city-23",
+    "name": "Triëst",
+    "code": "23",
+    "px": 533.5,
+    "py": 315.67,
+    "shape_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "reference": "Natural Earth populated places 10m"
+  },
+  {
+    "id": "area-a",
+    "name": "Sicilië",
+    "code": "a",
+    "px": 530.0,
+    "py": 940.0,
+    "shape_sha256": "58b1b1e93724fac3339c4f8d2cac067dfaedd60c9c5630a4443d91c380367a5f",
+    "reference": "Natural Earth admin 0 50m"
+  },
+  {
+    "id": "area-b",
+    "name": "Sardinië",
+    "code": "b",
+    "px": 235.0,
+    "py": 690.0,
+    "shape_sha256": "9012cb0bea87c274ee280c753907d7e0d82561d1a1f34907c70eed67672c10b0",
+    "reference": "Natural Earth admin 0 50m"
+  },
+  {
+    "id": "area-c",
+    "name": "Apennijnen",
+    "code": "c",
+    "px": 490.0,
+    "py": 560.0,
+    "shape_sha256": "f426868c8af66543dece43443524006424d535bb10b7bcfe293b927245ca6b2c",
+    "reference": "Retained schematic practice zone; approximate, not a surveyed boundary"
+  },
+  {
+    "id": "area-d",
+    "name": "Dolomieten",
+    "code": "d",
+    "px": 443,
+    "py": 263,
+    "shape_sha256": "5646706882a943ae84723e52deffb6aae597eb36be58ffd488494c8fc2d4443f",
+    "reference": "Retained schematic practice zone; approximate, not a surveyed boundary"
+  },
+  {
+    "id": "area-e",
+    "name": "Vesuvius",
+    "code": "e",
+    "px": 567.93,
+    "py": 687.53,
+    "shape_sha256": "8d6d2ae371dcb25d44f84f06b25c9049e11d0ba648ea056fa08ced386042036d",
+    "reference": "Smithsonian GVP"
+  },
+  {
+    "id": "area-f",
+    "name": "Etna",
+    "code": "f",
+    "px": 599.45,
+    "py": 924.15,
+    "shape_sha256": "af4df1b112c06f56a38265a986468e82c8d49b1d3f6266c2b39b3b6e4b12cd9d",
+    "reference": "Smithsonian GVP"
+  },
+  {
+    "id": "area-g",
+    "name": "de Povlakte",
+    "code": "g",
+    "px": 385.0,
+    "py": 375.0,
+    "shape_sha256": "61472b54bb0bb25c6c4a912d6e1f01fd64b83fd83d3f83487eec861f4bf1c1e9",
+    "reference": "Retained schematic practice zone; approximate, not a surveyed boundary"
+  },
+  {
+    "id": "area-h",
+    "name": "Toscane",
+    "code": "h",
+    "px": 380.0,
+    "py": 485.0,
+    "shape_sha256": "a278f9b7faa61319e19668142dd83ca996f8243d8596f2c01c66bb6ee6f705b9",
+    "reference": "Retained schematic practice zone; approximate, not a surveyed boundary"
+  },
+  {
+    "id": "area-i",
+    "name": "Frankrijk",
+    "code": "i",
+    "px": 130.0,
+    "py": 290.0,
+    "shape_sha256": "0c0710c474c7477c82ac4b5015fe337e2540ab9c4eff7211e4eee6168df8074c",
+    "reference": "Natural Earth admin 0 50m"
+  },
+  {
+    "id": "area-j",
+    "name": "Zwitserland",
+    "code": "j",
+    "px": 290.0,
+    "py": 160.0,
+    "shape_sha256": "2254d8bd01230f8b9382e285ddf2c5a172b6c7158556d7f02279fd2f364cc9cf",
+    "reference": "Natural Earth admin 0 50m"
+  },
+  {
+    "id": "area-k",
+    "name": "Oostenrijk",
+    "code": "k",
+    "px": 570.0,
+    "py": 170.0,
+    "shape_sha256": "f8b46cc7e0d7015bf26a805cad5518da87a69621b80eeff41f454e1038384c48",
+    "reference": "Natural Earth admin 0 50m"
+  },
+  {
+    "id": "area-l",
+    "name": "Slovenië",
+    "code": "l",
+    "px": 705.0,
+    "py": 305.0,
+    "shape_sha256": "65505c7ca54c6e3f31a142ca6edb9510c4cc60887e6f5b82f25508f6a3b04d53",
+    "reference": "Natural Earth admin 0 50m"
+  },
+  {
+    "id": "area-m",
+    "name": "Kroatië",
+    "code": "m",
+    "px": 775.0,
+    "py": 430.0,
+    "shape_sha256": "c1d739f19191b8647d3f4be5dcdefa1a4d23527bec79b1367b4ecda4ff195265",
+    "reference": "Natural Earth admin 0 50m"
+  },
+  {
+    "id": "area-n",
+    "name": "San Marino",
+    "code": "n",
+    "px": 458.8,
+    "py": 447.67,
+    "shape_sha256": "4a718ee86b2be92ed677eb675075d9fcd2afdb795fecc033957d8b4c35c9e95f",
+    "reference": "Natural Earth populated places 10m"
+  },
+  {
+    "id": "area-o",
+    "name": "Vaticaanstad",
+    "code": "o",
+    "px": 459.44,
+    "py": 604.2,
+    "shape_sha256": "f04381e2cccbaa7e8abf4f0cdaebafd9b2277d03ead8a077a4dc960b5b239bc2",
+    "reference": "Natural Earth populated places 10m"
+  },
+  {
+    "id": "water-A",
+    "name": "Middellandse Zee",
+    "code": "A",
+    "px": 117,
+    "py": 890,
+    "shape_sha256": "56b269c7f962eada885714035cb8bbf9a4b76fb5b62de8a46de3267b57e47824",
+    "reference": "Retained schematic practice zone; approximate, not a surveyed boundary"
+  },
+  {
+    "id": "water-B",
+    "name": "Adriatische Zee",
+    "code": "B",
+    "px": 685.0,
+    "py": 535.0,
+    "shape_sha256": "f2b336e1a221e5b35cbba8d4fa8b4ef275eb9c8836839432e307b3cfe2893953",
+    "reference": "Retained schematic practice zone; approximate, not a surveyed boundary"
+  },
+  {
+    "id": "water-C",
+    "name": "Ligurische Zee",
+    "code": "C",
+    "px": 195.0,
+    "py": 510.0,
+    "shape_sha256": "7073a741166524779554f21c0c26036d2666d7b0c223d7d1c36a34d6c8512db4",
+    "reference": "Retained schematic practice zone; approximate, not a surveyed boundary"
+  },
+  {
+    "id": "water-D",
+    "name": "Tyrreense Zee",
+    "code": "D",
+    "px": 395.0,
+    "py": 715.0,
+    "shape_sha256": "c0055f838d3f2f4022a4d2950abfccae66be9d098c3b8caba0665fc9a0f477fc",
+    "reference": "Retained schematic practice zone; approximate, not a surveyed boundary"
+  },
+  {
+    "id": "water-E",
+    "name": "Ionische Zee",
+    "code": "E",
+    "px": 735.0,
+    "py": 940.0,
+    "shape_sha256": "c0dfa64c1a0422bee874a1eee137ebe073c80ed89a966c135dcebb8e5a24311b",
+    "reference": "Retained schematic practice zone; approximate, not a surveyed boundary"
+  },
+  {
+    "id": "water-F",
+    "name": "Tiber",
+    "code": "F",
+    "px": 470.0,
+    "py": 575.0,
+    "shape_sha256": "f12ebe1fb67e8cdfed0b9995cb2c67f4b9992b96298e36441d21b0a09f50125f",
+    "reference": "Natural Earth rivers 10m"
+  },
+  {
+    "id": "water-G",
+    "name": "Po",
+    "code": "G",
+    "px": 319,
+    "py": 368,
+    "shape_sha256": "832f524a6efcd2a78367b74f7ff6ee909e5c141d116e911a2ae7069dfeca17a9",
+    "reference": "Natural Earth rivers 10m"
+  }
+]

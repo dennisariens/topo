@@ -1,0 +1,245 @@
+[
+  {
+    "id": "city-1",
+    "name": "Bari",
+    "lon": 16.872758,
+    "lat": 41.11422,
+    "px": 702.5,
+    "py": 664.96,
+    "reference": "Natural Earth populated places 10m"
+  },
+  {
+    "id": "city-2",
+    "name": "Bologna",
+    "lon": 11.340021,
+    "lat": 44.500422,
+    "px": 398.2,
+    "py": 404.22,
+    "reference": "Natural Earth populated places 10m"
+  },
+  {
+    "id": "city-3",
+    "name": "Florence",
+    "lon": 11.25,
+    "lat": 43.780001,
+    "px": 393.25,
+    "py": 459.69,
+    "reference": "Natural Earth populated places 10m"
+  },
+  {
+    "id": "city-4",
+    "name": "Genua",
+    "lon": 8.930039,
+    "lat": 44.409988,
+    "px": 265.65,
+    "py": 411.18,
+    "reference": "Natural Earth populated places 10m"
+  },
+  {
+    "id": "city-5",
+    "name": "Milaan",
+    "lon": 9.203063,
+    "lat": 45.471921,
+    "px": 280.67,
+    "py": 329.41,
+    "reference": "Natural Earth populated places 10m"
+  },
+  {
+    "id": "city-6",
+    "name": "Napels",
+    "lon": 14.243066,
+    "lat": 40.841971,
+    "px": 557.87,
+    "py": 685.92,
+    "reference": "Natural Earth populated places 10m"
+  },
+  {
+    "id": "city-7",
+    "name": "Palermo",
+    "lon": 13.348081,
+    "lat": 38.126969,
+    "px": 508.64,
+    "py": 894.97,
+    "reference": "Natural Earth populated places 10m"
+  },
+  {
+    "id": "city-8",
+    "name": "Pisa",
+    "lon": 10.400026,
+    "lat": 43.72047,
+    "px": 346.5,
+    "py": 464.27,
+    "reference": "Natural Earth populated places 10m"
+  },
+  {
+    "id": "city-9",
+    "name": "Rome",
+    "lon": 12.481313,
+    "lat": 41.897902,
+    "px": 460.97,
+    "py": 604.61,
+    "reference": "Natural Earth populated places 10m"
+  },
+  {
+    "id": "city-10",
+    "name": "Turijn",
+    "lon": 7.668015,
+    "lat": 45.072333,
+    "px": 196.24,
+    "py": 360.18,
+    "reference": "Natural Earth populated places 10m"
+  },
+  {
+    "id": "city-11",
+    "name": "Venetië",
+    "lon": 12.334999,
+    "lat": 45.438659,
+    "px": 452.92,
+    "py": 331.97,
+    "reference": "Natural Earth populated places 10m"
+  },
+  {
+    "id": "city-12",
+    "name": "Verona",
+    "lon": 10.990016,
+    "lat": 45.44039,
+    "px": 378.95,
+    "py": 331.84,
+    "reference": "Natural Earth populated places 10m"
+  },
+  {
+    "id": "city-13",
+    "name": "Varese",
+    "lon": 8.82511,
+    "lat": 45.82058,
+    "px": 259.88,
+    "py": 302.57,
+    "reference": "GeoNames"
+  },
+  {
+    "id": "city-14",
+    "name": "Cagliari",
+    "lon": 9.103981,
+    "lat": 39.222398,
+    "px": 275.22,
+    "py": 810.63,
+    "reference": "Natural Earth populated places 10m"
+  },
+  {
+    "id": "city-15",
+    "name": "Catania",
+    "lon": 15.079999,
+    "lat": 37.499971,
+    "px": 603.9,
+    "py": 943.25,
+    "reference": "Natural Earth populated places 10m"
+  },
+  {
+    "id": "city-16",
+    "name": "Catanzaro",
+    "lon": 16.60001,
+    "lat": 38.900376,
+    "px": 687.5,
+    "py": 835.42,
+    "reference": "Natural Earth populated places 10m"
+  },
+  {
+    "id": "city-17",
+    "name": "Foggia",
+    "lon": 15.55997,
+    "lat": 41.460478,
+    "px": 630.3,
+    "py": 638.29,
+    "reference": "Natural Earth populated places 10m"
+  },
+  {
+    "id": "city-18",
+    "name": "La Spezia",
+    "lon": 9.82375,
+    "lat": 44.103,
+    "px": 314.81,
+    "py": 434.82,
+    "reference": "GeoNames"
+  },
+  {
+    "id": "city-19",
+    "name": "Messina",
+    "lon": 15.549996,
+    "lat": 38.200471,
+    "px": 629.75,
+    "py": 889.31,
+    "reference": "Natural Earth populated places 10m"
+  },
+  {
+    "id": "city-20",
+    "name": "Modena",
+    "lon": 10.919995,
+    "lat": 44.650025,
+    "px": 375.1,
+    "py": 392.7,
+    "reference": "Natural Earth populated places 10m"
+  },
+  {
+    "id": "city-21",
+    "name": "Pescara",
+    "lon": 14.218656,
+    "lat": 42.45543,
+    "px": 556.53,
+    "py": 561.68,
+    "reference": "Natural Earth populated places 10m"
+  },
+  {
+    "id": "city-22",
+    "name": "Trente",
+    "lon": 11.119983,
+    "lat": 46.080429,
+    "px": 386.1,
+    "py": 282.56,
+    "reference": "Natural Earth populated places 10m"
+  },
+  {
+    "id": "city-23",
+    "name": "Triëst",
+    "lon": 13.800026,
+    "lat": 45.650378,
+    "px": 533.5,
+    "py": 315.67,
+    "reference": "Natural Earth populated places 10m"
+  },
+  {
+    "id": "area-e",
+    "name": "Vesuvius",
+    "lon": 14.426,
+    "lat": 40.821,
+    "px": 567.93,
+    "py": 687.53,
+    "reference": "Smithsonian GVP"
+  },
+  {
+    "id": "area-f",
+    "name": "Etna",
+    "lon": 14.999,
+    "lat": 37.748,
+    "px": 599.45,
+    "py": 924.15,
+    "reference": "Smithsonian GVP"
+  },
+  {
+    "id": "area-n",
+    "name": "San Marino",
+    "lon": 12.44177,
+    "lat": 43.936096,
+    "px": 458.8,
+    "py": 447.67,
+    "reference": "Natural Earth populated places 10m"
+  },
+  {
+    "id": "area-o",
+    "name": "Vaticaanstad",
+    "lon": 12.453387,
+    "lat": 41.903282,
+    "px": 459.44,
+    "py": 604.2,
+    "reference": "Natural Earth populated places 10m"
+  }
+]

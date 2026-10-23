@@ -1,13 +1,34 @@
-# Topo — Italië baseline
+# Topo — Italië
 
-Topo helps a Dutch Group 7 learner practise 45 Italian and neighbouring geographic names on an interactive map. `index.html` is a self-contained v6-derived HTML file: serve it with `npm run dev` and visit the local URL in a browser, or host the built `dist/` over HTTPS. The school image and three scripts are embedded; no network requests or other files are needed for its buttons. The opening screen is an eleven-stop guided learning route; Learn, Point, Write and Test remain available with worksheet groups starting at cities 1–6.
+A self-contained Dutch geography learning app for Group 7: 45 places, eleven guided stops, original Nino artwork, and **Ontdekken → Aanwijzen → Namen schrijven**. Smart six-question practice tracks pointing and writing separately. Progress, mistakes, pizza/Vespa rewards, reviews and gold challenges stay in local browser storage. No worksheet-code memorisation or cloud account.
 
-**Direct downloads:** `output/html/topo-italie-interactief.html` and `output/html/topo-italie-duolingo.html` are each byte-identical to `index.html`. `print.html` is a standalone, printable group selector with learning cards, code → name and name → code practice, and a choice of clean map or photographed school sheet. `output/pdf/topo-italie-printboek.pdf` contains all 11 groups in those three formats on numbered A4 pages. The PDF pages use the photographed school sheet. All outputs are generated from the same 45 worksheet items. A GitHub raw link or an iOS Files preview is not a hosted app; use a served HTTPS page for browser interaction.
+GitHub `dennisariens/topo` is the canonical source. Start with `AGENTS.md`, `docs/PROJECT_STATE.md` and `docs/MAP_SYSTEM.md`. The frozen October 23 Work ZIP is provenance, not an alternative app. Release 1 integration requires owner acceptance before merge/deployment.
 
-This repository was **reconstructed on 2026-09-24** from the latest available standalone artifact, `/Topo/topo-italie-v6.html` (Library version 7). No existing Git checkout was available. The copied `index.html` is the implementation baseline; earlier `v2`–`v5` versions are historical, not alternative sources. The original worksheet photo is embedded in the HTML. Its image origin and the upstream source of country geometry have not been established.
+```sh
+npm ci
+npm run dev
+# Open http://127.0.0.1:8000/
+npm run lint
+npm test
+npm run build
+```
 
-Start with `docs/PROJECT_STATE.md`, then `docs/MAP_SYSTEM.md`. See `AGENTS.md` before changing code. `npm test` checks geography, print labels, exam flow, rewards and a full standalone boot/button smoke flow; `npm run lint` checks app, print and engine syntax. For print changes run `node scripts/generate-print.mjs`, `python3 scripts/generate-pdf.py` (requires ReportLab), then `npm run build`; a stale PDF fails the build. The latter regenerates standalone files and copies the current booklet to `dist/`. `npm run typecheck` reports that this JavaScript project has no type system yet. Node.js 18+ and Python 3 are sufficient for the app.
+For the jsdom 30 test toolchain use Node 24.15+ (or another version satisfying its engine constraint); this Mac's Node 24.13.1 runs the complete suite but emits dependency engine warnings. The browser app itself has no runtime package dependency. `npm run typecheck` is explicitly a no-op: the app is JavaScript.
 
-The Git history starts at this reconstruction. The source is the HTML plus documentation and scripts in this repository. The canonical remote is `https://github.com/dennisariens/topo.git` on `main`. A zipped Git snapshot is retained at Library path `/Topo/topo-baseline-2026-09-24.zip` as a historical recovery copy; the historical HTML Library file remains intact.
+Root `index.html` embeds all runtime scripts, map content and images. Engine extracts must exactly match its first two scripts. Build generates byte-identical downloads under `output/html/` and a static `dist/` directory. Serve `dist/` over HTTP(S); GitHub raw links or iOS file previews do not establish interactive browser operation.
 
-**Visual direction:** Nino, an original scooter-riding guide, appears in the guided route, current stop, lesson and earned Vespa trip. The coastal panorama and transparent character art are stored in `output/art/` and embedded in the self-contained HTML. Geographic positions and the printed worksheet are unaffected.
+## Printing
+
+`print.html` offers reference sheets, marked-place naming and named-place locating for all eleven groups. Temporary V-labels identify questions only. The booklet has 35 A4 pages including contents and an original school-photo appendix. Canonical vector geography is used for the exercises; the perspective-skewed photo remains a separate reference.
+
+After changes affecting print source:
+
+```sh
+node scripts/generate-print.mjs
+python3 scripts/generate-pdf.py
+npm run build
+```
+
+PDF generation requires ReportLab and Pillow, plus DejaVu Sans on Linux or Arial on macOS. A temporary Python environment is recommended. On this Mac's old Python 3.8/OpenSSL, regeneration used ReportLab 3.6.12 and Pillow 9.5.0; use a current supported Python and compatible ReportLab for ongoing development. Build/tests reject a booklet with a stale print-source hash. Do not manually edit generated files.
+
+Browser QA: see `docs/HERMES_QA_RELEASE_1.md` and `scripts/qa-release-1.mjs` (Playwright path/browser can be supplied by environment or command options). Physical iPad Safari and actual printer acceptance remain separate checks.

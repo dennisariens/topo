@@ -31,7 +31,7 @@ This matrix defines **event IDs and multiple approved strings**, not random glob
 | ENTRY.FIRST | Fresh route entry / hero | "Ciao! Ik ben Nino. Zin in Italië?" | "Welkom! We ontdekken Italië samen." | "Klaar voor onze eerste halte?" | NOW |
 | ENTRY.RETURN | Saved progress / small hero | "Welkom terug. Zullen we verdergaan?" | "Daar ben je weer! De route ligt klaar." | "Klaar voor de volgende stap?" | NOW |
 | ENTRY.RESUME | Unfinished active lesson | "We gaan verder waar je was." | "Je plek is bewaard. Rijden we door?" | "Nog even verder met deze les?" | NOW |
-| ENTRY.COMPLETE | All 11 stops complete | "Alle haltes ontdekt. Wat oefenen we vandaag?" | "Heel Italië op de kaart! Tijd om op te frissen." | "Je reis gaat verder met nieuwe uitdagingen." | NOW |
+| ENTRY.COMPLETE | All 11 stops complete | "Alle haltes ontdekt. Wat oefenen we vandaag?" | "Alle elf haltes gedaan. Tijd om op te frissen." | "Je reis gaat verder met nieuwe uitdagingen." | NOW |
 | ENTRY.START | First CTA / short | "Start mijn reis" | "Op naar de eerste halte" | "Begin met ontdekken" | NOW |
 | ENTRY.START_SMART | Smart round CTA | "Mijn slimme rondje · 6 vragen" | "Zes vragen, speciaal voor jou" | "Korte oefenrit" | NOW |
 | ENTRY.LESSON_UNAVAILABLE | Locked stage info | "Rond eerst de vorige stap af." | "Deze halte komt later aan de beurt." | "Eerst een stukje verder op de route." | NOW |
@@ -80,7 +80,7 @@ This matrix defines **event IDs and multiple approved strings**, not random glob
 ### E. Wrong response, skipping and retry
 | ID | Trigger / channel | Variant A | Variant B | Variant C | Status |
 |---|---|---|---|---|---|
-| ANSWER.WRONG_POINT_KNOWN | Wrong pointer has reliable selected ID; after grade | "Dat was {chosen}. Gezocht: {place}." | "{chosen} ligt ergens anders. Hier is {place}." | "Net mis: je tikte {chosen} aan." | NOW |
+| ANSWER.WRONG_POINT_KNOWN | Wrong pointer has reliable selected ID; after grade | "Dat was {chosen}. Gezocht: {place}." | "{chosen} ligt ergens anders. Hier is {place}." | "Net mis: dat was {chosen}, niet {place}." | NOW |
 | ANSWER.WRONG_POINT_UNKNOWN | Wrong but clicked ID unavailable | "Bijna. Hier ligt {place}." | "Dit is de plek van {place}." | "Kijk waar {place} ligt." | NOW |
 | ANSWER.WRONG_WRITE | Wrong name, after grade | "De juiste naam is {place}." | "Dit was {place}. Kijk nog even." | "Nog even oefenen: {place}." | NOW |
 | ANSWER.WRONG_WITH_HINT | Verified clue available after wrong answer | "{hint}" | "Onthoud: {hint}" | "Kijk naar deze aanwijzing: {hint}" | NEXT |
@@ -96,7 +96,7 @@ This matrix defines **event IDs and multiple approved strings**, not random glob
 | ROUND.INTRO_WEAK | Weak/due/new selection is real | "Vandaag oefenen we bekende én lastige plekken." | "Een paar oude, een paar nieuwe." | "Nino heeft zes passende vragen gekozen." | NOW |
 | ROUND.PAUSE | Six-question pause | "Even parkeren. Zes vragen gedaan." | "Tijd voor een kleine pauze." | "Zes vragen achter de rug!" | NOW |
 | ROUND.PAUSE_LONG | More tasks remain after six | "Nog meer plekken te gaan. Zin om door te rijden?" | "Goed bezig. De rest volgt in het volgende rondje." | "Halverwege? Je kunt straks verder." | NOW |
-| ROUND.RESULT_PERFECT | Round actually {total}/{total} correct | "Alles goed in dit rondje!" | "Mooie ronde. Alles raak." | "Zes op zes, als de ronde zes vragen had." | NOW |
+| ROUND.RESULT_PERFECT | Round actually {total}/{total} correct | "Alles goed in dit rondje!" | "Mooie ronde. Alles raak." | "{count} van {total} goed. Alles raak!" | NOW |
 | ROUND.RESULT_MIXED | Round contains errors | "{count} van {total} goed. We oefenen de rest later." | "Mooi geoefend. Je fouten helpen bij het herhalen." | "Je hebt {total} vragen gedaan. Verder oefenen?" | NOW |
 | ROUND.RESULT_NO_RETRIEVAL | Discover-only (zero active retrieval) | "Je hebt de plekken bekeken." | "Klaar om het zelf te proberen?" | "Op naar aanwijzen!" | NOW |
 | ROUND.CONTINUE | More queued tasks | "Zullen we verderrijden?" | "Nog een rondje?" | "Klaar voor de volgende zes?" | NOW |

@@ -17,7 +17,7 @@ function boot(saved=null,blocked=false){
 }
 let app=boot(),{q,w,d}=app;
 assert.equal(q('journeyScreen').classList.contains('hidden'),false,'dedicated route screen is shown on arrival');
-assert.equal(d.querySelectorAll('#routeCards .routeCard').length,11,'all future stops are visible');
+assert.equal(d.querySelectorAll('#routeCards .routeCard').length,11,'all eleven stops remain available');
 assert.equal(d.querySelectorAll('#routeCards .routeStep').length,33,'three stages are shown per stop');
 assert.equal(d.querySelectorAll('#journeyWheel .wheelSlice').length,8,'the reward draws eight distinct earned wedges');
 assert.equal(d.querySelectorAll('#routeCards .routeBadge svg use').length,10,'completed and future chapters keep their category icon');

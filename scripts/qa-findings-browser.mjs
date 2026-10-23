@@ -11,7 +11,7 @@ try{
  const output=process.env.QA_OUTPUT||'docs/visual/release-1-qa-fixes';mkdirSync(output,{recursive:true});
  const progress=()=>page.evaluate(()=>({daily:state.daily.correct,rewards:[state.good,state.pizzas,state.slices,state.trips],skills:state.route.items}));
  async function home(){await page.locator('#finishScreen .button').last().click()}
- async function start(kind){const card=page.locator('#routeCards .routeCard').first();const n=['discover','point','write'].indexOf(kind);if(n>=0)await card.locator('.routeStep').nth(n).click();else await card.locator('.goldButton').click()}
+ async function start(kind){const card=page.locator('#routeCards .routeCard[data-chapter="city1"]');if(!await card.isVisible())await page.locator('#completedStops>summary').click();const n=['discover','point','write'].indexOf(kind);if(n>=0)await card.locator('.routeStep').nth(n).click();else await card.locator('.goldButton').click()}
  async function complete(reload=false){
   let answered=0;
   while(!await page.evaluate(()=>state.route.active.done)){

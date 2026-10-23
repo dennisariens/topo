@@ -44,7 +44,7 @@ inspect('state.slices=7;state.pizzas=2;state.trips=0;next()');
 inspect('elements[state.current.id].dispatchEvent(new MouseEvent("click",{bubbles:true}))');
 assert.equal(inspect('state.pizzas'), 3, 'eight slices form another pizza');
 assert.equal(inspect('state.trips'), 1, 'three pizzas advance the Vespa');
-assert.match(get('#vespaTripText').textContent,/Nino rijdt van /,'the earned milestone names the character and destination');
+assert.match(get('#vespaTripText').textContent,/Nino rijdt naar /,'the earned milestone names the character and destination');
 get('#next').click();
 const skipped = inspect('state.current.id');
 get('#next').click();
@@ -74,7 +74,7 @@ inspect("elements[state.current.id].dispatchEvent(new MouseEvent('click',{bubble
 get('#testFormat').value='write';get('#testFormat').onchange();
 assert.match(get('#prompt').textContent,/Wat is dit/);
 get('#answer').value=inspect('state.current.name');get('#check').click();
-assert.match(get('#message').textContent,/^Goed!/);
+assert(get('#message').classList.contains('good'));
 get('#groupSelect').value = 'city1'; get('#groupSelect').onchange();
 assert.equal(get('#groupCount').textContent, '6 namen in deze toets');
 get('#resetPizza').click();get('#resetAll').click();
@@ -85,7 +85,7 @@ console.log('Full standalone boot and learn/point/write/exam/reset button flow: 
 // Drive every chapter through the visible controls, including both enclave choices.
 tabs[4].click();
 assert.equal(get('#routeHome').classList.contains('hidden'),false);
-assert.equal(get('#routeCards').children.length,11);
+assert.equal(document.querySelectorAll('#routeCards .routeCard').length,11);
 assert.equal(inspect('TopoRoute.unlocked(state.route,ROUTE_CHAPTERS,"city2")'),false);
 get('#routeContinue').click();
 assert.equal(inspect('state.questionMode'),'discover');

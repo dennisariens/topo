@@ -40,3 +40,9 @@ Chrome desktop, tablet-sized and phone-sized viewports were exercised, including
 ## Hermes QA follow-up — QA-1 and QA-2 only
 
 Fixed replay daily credit and strict nested-backup validation after the independent review of `6746a3079d594693dbf8e08702cdb3db42aa3d4d`. Targeted regressions: `scripts/qa-findings.test.mjs`; real Chrome reproduction: `scripts/qa-findings-browser.mjs`. Evidence is in `visual/release-1-qa-fixes/browser-results.json`. Physical iPad Safari and real printer acceptance remain outstanding; no merge or deployment performed.
+
+## Release 1.1 polish — separate PR against integration
+
+`codex/topo-release-1-1-polish` starts from PR #3 HEAD `9df498919cd6fa1a07aadd6a15e973b496a8b0fd`. All eleven chapter icons have explicit valid references (including Eilanden); stale five-answer pizza copy is removed. Current chapter and next preview remain open, while later and completed stops use native accessible disclosures with replay/Gold access. Mobile modes fit without horizontal clipping, and map provenance moves into **Over de kaart**.
+
+Nino's selected NOW messages come from PR #6's three documents at `d746ac9d1f4cbc5e9c8b7b8544cdba396cf60f1d`, via a checked embedded resolver. First/return/resume, lesson starts, graded answers, round results, chapter/Gold/review messages reflect actual engine events. No new artwork, hints, spelling retries or postcards; no new save schema or reward rules. Learning engines, geography and printable assets are unchanged. Details, browser evidence and device/learner limitations: `RELEASE_1_1.md`. This work is reviewable, not merged/deployed.

@@ -220,3 +220,21 @@ Produce CARD_ISLANDS + CARD_VOLCANO and test desirability with child before full
 7. Deploy a separate preview and test on the child's real iPad before replacing the old site.
 
 No new images are attached to this document; this is the approved-input specification for a subsequent distinct image production task.
+
+---
+
+## 11. App icon / iPad Home Screen — added 2026-10-23
+
+**Dedicated specification:** [APP_ICON_SPEC.md](APP_ICON_SPEC.md)  
+**Phased status:** [NINO_ART_ROADMAP.md](NINO_ART_ROADMAP.md)  
+**Implementation issue:** [#8](https://github.com/dennisariens/topo/issues/8)
+
+The user's prior Topo app icon is worth preserving as a historical reference, but the current Release 1 HTML at PR #3 HEAD `9df4989` does **not** explicitly declare favicon, Apple Touch Icon, webmanifest or theme-color links. So this is both a **visual design update and an installation/hosting wiring task**.
+
+**Current candidate direction:** high-recognition head-and-red-scooter composition using the owner's original approved transparent Nino PNG, Riviera-blue background, warm sun/coast and tiny Italy tricolore. A terracotta/cream alternative exists. Do not create a fake geography map or put tiny required text on the home-screen icon.
+
+**Reviewable local art delivery from this conversation:** `topo-nino-app-icon-v1.zip`, containing genuine 1024px master PNG and size variants for both candidates, iOS 180px, 192/512px, 16/32px, ICO and size comparison. These files are **not yet part of GitHub** and are not installed in the live test app; owner chooses the preferred variant first.
+
+**Production gates:** owner compares candidate A (Riviera) and B (terracotta) at iPad home-screen size; Codex implements head links and build/export parity with no regression to offline single-file HTML; Hermes verifies actual iPad Safari Add to Home Screen and cross-browser favicon; no merge or deployment without owner approval.
+
+**Character pose note:** Earlier overview/contact-sheet crops are illustrative concepts, not full-resolution transparent `Nino Guide / Encourage / Gold` deliverables. They still need individual production and alpha QA, independently of the icon design work.

@@ -115,3 +115,7 @@
 ## 2026-10-23 — Hermes QA-1/QA-2 corrections
 
 **Decision** Count daily-goal credit in guarded correct-retrieval grading, independently of the unchanged pizza reward ledger. Correct completed-stage/gold replays count; duplicate submissions/reloaded answered feedback do not. Validate imported route schemas 1/2 and nested structures strictly before replacement confirmation or persistence; keep startup recovery permissive. **Status** IMPLEMENTED with focused DOM and Chrome regressions. **Clarifies** The Release 1 daily-goal and backup behavior; supersedes daily credit being a side effect of pizza eligibility. No other product behavior or release scope changes.
+
+## 2026-10-24 — Issue #4 category symbol and static reward copy
+
+**Decision** Match the Islands SVG symbol ID to the existing islands chapter ID, and align the static pizza explanation with the implemented eight-answer cadence. Resolve rendered symbols in locked, completed and gold states in DOM regressions; retain Nino for the active stop. **Status** Implemented as a focused follow-up to the pending Release 1 branch. **Clarifies** Existing pictogram and eight-slice decisions; no reward, geography, storage or release-authority change.

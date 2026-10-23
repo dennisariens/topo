@@ -27,6 +27,52 @@
     const index = chapters.findIndex(chapter => chapter.id === id);
     return index >= 0 && (index === 0 || record(data, chapters[index - 1].id).stage === 3);
   }
+  // Imports must reject malformed data; startup restore remains permissive recovery.
+  function validBackup(raw, chapters) {
+    const object = value => value !== null && typeof value === 'object' && !Array.isArray(value);
+    const count = value => Number.isSafeInteger(value) && value >= 0;
+    const counts = (value, fields) => object(value) && fields.every(field => count(value[field]));
+    const optional = (value, field, check) => !(field in value) || check(value[field]);
+    if (!object(raw) || ![1,2].includes(raw.schema) || !object(raw.chapters) || !object(raw.items) || !('active' in raw)) return false;
+    const chapterIds = new Set(chapters.map(c => c.id));
+    const ids = new Set(chapters.flatMap(c => c.itemIds));
+    for (const [id, r] of Object.entries(raw.chapters)) {
+      if (!chapterIds.has(id) && !(id === 'smart' && raw.schema === 2)) return false;
+      if (!counts(r, ['stage','completedAt','goldAt','nextReviewAt','reviews']) || r.stage > (raw.schema === 1 ? 4 : 3)) return false;
+    }
+    for (const [id, item] of Object.entries(raw.items)) {
+      if (!ids.has(id) || !counts(item, ['correct','wrong','streak','lastSeen','lastWrong'])) return false;
+      if ('skills' in item) {
+        if (!object(item.skills)) return false;
+        for (const [mode, skill] of Object.entries(item.skills)) {
+          if (!['point','write'].includes(mode) || !counts(skill, ['correct','wrong','streak','lastSeen','due'])) return false;
+        }
+      }
+    }
+    const rewardTokens = new Set(chapters.flatMap(c => c.itemIds.flatMap(id =>
+      ['point','write','gold'].flatMap(kind => (kind === 'gold' ? ['point','write'] : [kind]).map(mode => [c.id,kind,id,mode].join(':'))))));
+    if (!optional(raw, 'rewardTokens', list => Array.isArray(list) && list.every(t => rewardTokens.has(t)))) return false;
+    const s = raw.active;
+    if (s === null) return true;
+    if (!object(s)) return false;
+    const chapter = resolveChapter(chapters, s.chapterId);
+    const kinds = raw.schema === 1 ? ['discover','point','write','codes','gold','review'] : [...STAGES,'gold','review','smart'];
+    const modes = raw.schema === 1 ? [...MODES,'codeName','nameCode'] : MODES;
+    if (!chapter || !kinds.includes(s.kind) || !Array.isArray(s.queue) || !s.queue.length || s.queue.length > 120) return false;
+    if (!s.queue.every(t => object(t) && chapter.itemIds.includes(t.id) && modes.includes(t.mode))) return false;
+    const tokens = new Set(s.queue.map(key));
+    if (!['pending','awarded'].every(field => Array.isArray(s[field]) && s[field].every(t => tokens.has(t)))) return false;
+    if (!counts(s, ['index','originalTotal','correct','wrong']) || s.originalTotal < 1 || s.originalTotal > 28 || s.originalTotal > s.queue.length || s.index > s.queue.length) return false;
+    if (typeof s.answered !== 'boolean' || typeof s.done !== 'boolean' || (s.index === s.queue.length && !s.done)) return false;
+    if (!optional(s, 'answers', list => Array.isArray(list) && list.every(a => object(a) && typeof a.ok === 'boolean'))) return false;
+    if (!('lastAnswer' in s) || !(s.lastAnswer === null || (object(s.lastAnswer) && typeof s.lastAnswer.ok === 'boolean'))) return false;
+    if (!('result' in s) || !(s.result === null || (object(s.result) && typeof s.result.passed === 'boolean' &&
+      ['goldEarned','newlyCompleted'].every(field => optional(s.result, field, value => typeof value === 'boolean'))))) return false;
+    if (s.done && (!s.result || !s.answered)) return false;
+    // Legacy code sessions are intentionally closed during the supported migration.
+    if (raw.schema === 1 && s.kind === 'codes') return true;
+    return restore(raw, chapters).active !== null;
+  }
   function restore(raw, chapters) {
     const data = fresh();
     if (!raw || ![1,2].includes(raw.schema)) return data;
@@ -186,5 +232,5 @@
   function due(data, chapters, now = Date.now()) {
     return chapters.filter(chapter=>{const r=record(data,chapter.id);return r.stage===3&&r.nextReviewAt>0&&r.nextReviewAt<=now;});
   }
-  root.TopoRoute={resolveChapter,skill,track,smartDeck,DAY,STAGES,fresh,restore,record,unlocked,start,current,answer,advance,due};
+  root.TopoRoute={resolveChapter,skill,track,smartDeck,DAY,STAGES,fresh,validBackup,restore,record,unlocked,start,current,answer,advance,due};
 })(typeof window==='undefined'?globalThis:window);

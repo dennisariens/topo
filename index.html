@@ -327,6 +327,52 @@ header .brand small{color:#ae573b}
     const index = chapters.findIndex(chapter => chapter.id === id);
     return index >= 0 && (index === 0 || record(data, chapters[index - 1].id).stage === 3);
   }
+  // Imports must reject malformed data; startup restore remains permissive recovery.
+  function validBackup(raw, chapters) {
+    const object = value => value !== null && typeof value === 'object' && !Array.isArray(value);
+    const count = value => Number.isSafeInteger(value) && value >= 0;
+    const counts = (value, fields) => object(value) && fields.every(field => count(value[field]));
+    const optional = (value, field, check) => !(field in value) || check(value[field]);
+    if (!object(raw) || ![1,2].includes(raw.schema) || !object(raw.chapters) || !object(raw.items) || !('active' in raw)) return false;
+    const chapterIds = new Set(chapters.map(c => c.id));
+    const ids = new Set(chapters.flatMap(c => c.itemIds));
+    for (const [id, r] of Object.entries(raw.chapters)) {
+      if (!chapterIds.has(id) && !(id === 'smart' && raw.schema === 2)) return false;
+      if (!counts(r, ['stage','completedAt','goldAt','nextReviewAt','reviews']) || r.stage > (raw.schema === 1 ? 4 : 3)) return false;
+    }
+    for (const [id, item] of Object.entries(raw.items)) {
+      if (!ids.has(id) || !counts(item, ['correct','wrong','streak','lastSeen','lastWrong'])) return false;
+      if ('skills' in item) {
+        if (!object(item.skills)) return false;
+        for (const [mode, skill] of Object.entries(item.skills)) {
+          if (!['point','write'].includes(mode) || !counts(skill, ['correct','wrong','streak','lastSeen','due'])) return false;
+        }
+      }
+    }
+    const rewardTokens = new Set(chapters.flatMap(c => c.itemIds.flatMap(id =>
+      ['point','write','gold'].flatMap(kind => (kind === 'gold' ? ['point','write'] : [kind]).map(mode => [c.id,kind,id,mode].join(':'))))));
+    if (!optional(raw, 'rewardTokens', list => Array.isArray(list) && list.every(t => rewardTokens.has(t)))) return false;
+    const s = raw.active;
+    if (s === null) return true;
+    if (!object(s)) return false;
+    const chapter = resolveChapter(chapters, s.chapterId);
+    const kinds = raw.schema === 1 ? ['discover','point','write','codes','gold','review'] : [...STAGES,'gold','review','smart'];
+    const modes = raw.schema === 1 ? [...MODES,'codeName','nameCode'] : MODES;
+    if (!chapter || !kinds.includes(s.kind) || !Array.isArray(s.queue) || !s.queue.length || s.queue.length > 120) return false;
+    if (!s.queue.every(t => object(t) && chapter.itemIds.includes(t.id) && modes.includes(t.mode))) return false;
+    const tokens = new Set(s.queue.map(key));
+    if (!['pending','awarded'].every(field => Array.isArray(s[field]) && s[field].every(t => tokens.has(t)))) return false;
+    if (!counts(s, ['index','originalTotal','correct','wrong']) || s.originalTotal < 1 || s.originalTotal > 28 || s.originalTotal > s.queue.length || s.index > s.queue.length) return false;
+    if (typeof s.answered !== 'boolean' || typeof s.done !== 'boolean' || (s.index === s.queue.length && !s.done)) return false;
+    if (!optional(s, 'answers', list => Array.isArray(list) && list.every(a => object(a) && typeof a.ok === 'boolean'))) return false;
+    if (!('lastAnswer' in s) || !(s.lastAnswer === null || (object(s.lastAnswer) && typeof s.lastAnswer.ok === 'boolean'))) return false;
+    if (!('result' in s) || !(s.result === null || (object(s.result) && typeof s.result.passed === 'boolean' &&
+      ['goldEarned','newlyCompleted'].every(field => optional(s.result, field, value => typeof value === 'boolean'))))) return false;
+    if (s.done && (!s.result || !s.answered)) return false;
+    // Legacy code sessions are intentionally closed during the supported migration.
+    if (raw.schema === 1 && s.kind === 'codes') return true;
+    return restore(raw, chapters).active !== null;
+  }
   function restore(raw, chapters) {
     const data = fresh();
     if (!raw || ![1,2].includes(raw.schema)) return data;
@@ -486,7 +532,7 @@ header .brand small{color:#ae573b}
   function due(data, chapters, now = Date.now()) {
     return chapters.filter(chapter=>{const r=record(data,chapter.id);return r.stage===3&&r.nextReviewAt>0&&r.nextReviewAt<=now;});
   }
-  root.TopoRoute={resolveChapter,skill,track,smartDeck,DAY,STAGES,fresh,restore,record,unlocked,start,current,answer,advance,due};
+  root.TopoRoute={resolveChapter,skill,track,smartDeck,DAY,STAGES,fresh,validBackup,restore,record,unlocked,start,current,answer,advance,due};
 })(typeof window==='undefined'?globalThis:window);
 </script>
 <script>
@@ -602,7 +648,7 @@ function grade(ok,clicked,skipped=false){
  if(state.mode==='route'){routeGrade(ok,skipped);return}
  if(state.answered)return;state.answered=true;const i=state.current;TopoRoute.track(state.route,i.id,state.questionMode,ok);$('#next').textContent='Volgende →';
  if(state.mode==='exam'){state.examAnswered++;if(ok)state.examCorrect++;$('#testStatus').textContent='Vraag '+state.examAnswered+' / '+state.examTotal+' · '+state.examCorrect+' goed';if(state.examAnswered===state.examTotal)$('#next').textContent='Bekijk resultaat →'}
- if(ok){const reward=TopoLearning.award(state);state.streak++;state.mistakes=state.mistakes.filter(x=>x!==i.id);message(reward.pizza?'Goed! '+i.name+' — een pizza verdiend! 🍕':'Goed! '+i.name+'.','good');if(reward.pizza)celebrateReward(reward)}
+ if(ok){recordDailyCorrect();const reward=TopoLearning.award(state);state.streak++;state.mistakes=state.mistakes.filter(x=>x!==i.id);message(reward.pizza?'Goed! '+i.name+' — een pizza verdiend! 🍕':'Goed! '+i.name+'.','good');if(reward.pizza)celebrateReward(reward)}
  else{state.streak=0;if(!state.mistakes.includes(i.id))state.mistakes.push(i.id);message((skipped?'Overgeslagen.':'Bijna.')+' Het juiste antwoord is '+expectedAnswer(i)+(clicked?' (je koos '+clicked.name+').':'.'),'bad')}
  highlight(i);sync();$('#answer').disabled=true;$('#check').disabled=true
 }
@@ -744,7 +790,7 @@ function routeGrade(ok,skipped=false){
  const i=state.current,result=TopoRoute.answer(state.route,ROUTE_CHAPTERS,ok);
  if(result.ignored)return;
  state.answered=true;
- if(ok){state.streak++;state.mistakes=state.mistakes.filter(id=>id!==i.id);if(result.reward){const reward=TopoLearning.award(state);message(reward.pizza?'Goed! '+i.name+' · pizza verdiend! 🍕':'Goed! '+i.name+'.','good');if(reward.pizza)celebrateReward(reward)}else message('Goed onthouden: '+i.name+'.','good')}
+ if(ok){recordDailyCorrect();state.streak++;state.mistakes=state.mistakes.filter(id=>id!==i.id);if(result.reward){const reward=TopoLearning.award(state);message(reward.pizza?'Goed! '+i.name+' · pizza verdiend! 🍕':'Goed! '+i.name+'.','good');if(reward.pizza)celebrateReward(reward)}else message('Goed onthouden: '+i.name+'.','good')}
  else{state.streak=0;if(!state.mistakes.includes(i.id))state.mistakes.push(i.id);message((skipped?(s.kind==='gold'?'Antwoord bekeken. ':'We oefenen deze straks nog. '):'Nog even oefenen. ')+'Het antwoord is '+expectedAnswer(i)+'.'+(s.kind==='gold'?' Je kunt deze gouden proef opnieuw doen.':''),'bad')}
  highlight(i);if(isRomeArea(i)&&state.questionMode==='point')showLens();
  $('#answer').disabled=true;$('#check').disabled=true;$('#reveal').disabled=true;$('#next').textContent='Volgende →';sync();updateRouteDock();
@@ -807,7 +853,7 @@ function setupJourneyExtras(){
  $('#importProgress').onclick=()=>$('#backupFile').click();
  $('#backupFile').onchange=async e=>{const f=e.target.files[0];if(!f)return;try{
   if(f.size>1000000)throw Error();const data=JSON.parse(await f.text());const raw=data.progress;
-  if(data.app!=='topo-italie'||data.version!==1||!raw||raw.schema!==3||!['good','pizzas','slices','trips'].every(k=>Number.isSafeInteger(raw[k])&&raw[k]>=0)||raw.slices>7||raw.trips!==Math.floor(raw.pizzas/3)||!Array.isArray(raw.mistakes)||!raw.route||typeof raw.route!=='object')throw Error();
+  if(data.app!=='topo-italie'||data.version!==1||!raw||raw.schema!==3||!['good','pizzas','slices','trips'].every(k=>Number.isSafeInteger(raw[k])&&raw[k]>=0)||raw.slices>7||raw.trips!==Math.floor(raw.pizzas/3)||!Array.isArray(raw.mistakes)||!TopoRoute.validBackup(raw.route,ROUTE_CHAPTERS))throw Error();
   const restored=TopoLearning.migrate(raw,{});restored.mistakes=restored.mistakes.filter(id=>byId[id]);restored.route=TopoRoute.restore(raw.route,ROUTE_CHAPTERS);restored.daily=restoreDaily(raw.daily);
   if(!confirm('Deze reservekopie vervangt je huidige voortgang. Doorgaan?'))return;
   // Store first: a storage failure must leave the active game untouched.
@@ -820,8 +866,7 @@ let roundPaused=false;
 function localDay(){const d=new Date();return d.getFullYear()+'-'+String(d.getMonth()+1).padStart(2,'0')+'-'+String(d.getDate()).padStart(2,'0')}
 function restoreDaily(raw){return {date:typeof raw?.date==='string'?raw.date:localDay(),correct:Number.isSafeInteger(raw?.correct)&&raw.correct>=0?raw.correct:0}}
 state.daily=restoreDaily(previousV3?.daily);
-const originalAward=TopoLearning.award;
-TopoLearning.award=function(progress){const reward=originalAward(progress);if(!progress.daily||progress.daily.date!==localDay())progress.daily={date:localDay(),correct:0};progress.daily.correct++;renderDailyGoal();return reward};
+function recordDailyCorrect(){if(!state.daily||state.daily.date!==localDay())state.daily={date:localDay(),correct:0};state.daily.correct++;renderDailyGoal()}
 function renderDailyGoal(){const n=$('#dailyGoal');if(!n)return;const count=state.daily?.date===localDay()?state.daily.correct:0;$('#dailyTitle').textContent=count>=8?'Dagdoel gehaald!':'Een klein rondje vandaag';$('#dailyText').textContent=count>=8?'Acht goede antwoorden binnen. Verder reizen mag, stoppen is ook goed.':count+' / 8 goede antwoorden · elke stap telt';$('#dailyProgress').value=Math.min(8,count)}
 function exitFinish(){roundPaused=false;$('.layout').classList.remove('finishLayout');const f=$('#finishScreen');if(f)f.remove()}
 function renderJourneyFinish(pause){

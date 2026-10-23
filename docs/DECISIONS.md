@@ -111,3 +111,7 @@
 ## 2026-10-23 — Preserve print pipeline with canonical vector geography
 
 **Decision** Generate reference/name/location exercises and a 35-page ReportLab booklet from root items/geometry, with leaders that clear accurate points. Keep the original school photo in a separate appendix/reference sheet. Maintain PDF source freshness checks and byte-identical app downloads. **Status** IMPLEMENTED. **Supersedes** PDF geographic labels positioned over the perspective-skewed photograph and schoolcode-recall exercises. Physical printer legibility remains an acceptance check.
+
+## 2026-10-23 — Hermes QA-1/QA-2 corrections
+
+**Decision** Count daily-goal credit in guarded correct-retrieval grading, independently of the unchanged pizza reward ledger. Correct completed-stage/gold replays count; duplicate submissions/reloaded answered feedback do not. Validate imported route schemas 1/2 and nested structures strictly before replacement confirmation or persistence; keep startup recovery permissive. **Status** IMPLEMENTED with focused DOM and Chrome regressions. **Clarifies** The Release 1 daily-goal and backup behavior; supersedes daily credit being a side effect of pizza eligibility. No other product behavior or release scope changes.

@@ -15,10 +15,10 @@ for(const stage of ['discover','point','write','gold']){
  assert.equal(total,stage==='gold'?12:6);
 }
 assert.equal(c.TopoRoute.record(progress,'six').stage,3);assert(c.TopoRoute.record(progress,'six').goldAt);
-// Actual day-goal wrapper: count a fresh day without losing lifetime rewards.
+// Actual accepted-retrieval day counter: count a fresh day without losing lifetime rewards.
 const dayContext={TopoLearning:{award:c.TopoLearning.award},state:{...s},previousV3:{daily:{date:'2000-01-01',correct:9}},$:()=>null};vm.createContext(dayContext);
 const dailyCode=app.slice(app.indexOf('function localDay()'),app.indexOf('function exitFinish()'));vm.runInContext(dailyCode,dayContext);
-const before=dayContext.state.pizzas;dayContext.TopoLearning.award(dayContext.state);assert.equal(dayContext.state.daily.correct,1);assert(dayContext.state.pizzas>=before);
+const before=dayContext.state.pizzas;dayContext.recordDailyCorrect();assert.equal(dayContext.state.daily.correct,1);assert(dayContext.state.pizzas>=before);
 console.log('PASS: six-question breaks retain full gold coverage; halfway save/restore; daily goal resets independently of lifetime rewards.');
 // Adaptive session: separate skills, exact six tasks, restore, no chapter unlock side effect.
 const adaptive=c.TopoRoute.fresh();const now=1800000000000;

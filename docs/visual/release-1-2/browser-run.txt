@@ -1,0 +1,30 @@
+{
+  "browser": "156.0.8078.4",
+  "appBase": "a481317b33f5f6f55c179ee0fbfe6b211663be7b",
+  "artSource": "047f74390bbb0cc7cfbd1fa3ba4f65fe23e2ec6d",
+  "url": "http://127.0.0.1:8015/",
+  "checks": [
+    "six states; true trip; full Gold vs pauses/replay; due review; answered reload idempotence",
+    "no illustration hints in formal exam",
+    "mixed 2/6 and failed Gold never receive Success/Gold",
+    "desktop: images decode, keyboard, map ratio, reduced motion, resumed save, long Dutch text, real Arrival and Gold",
+    "ipad-portrait: images decode, keyboard, map ratio, reduced motion, resumed save, long Dutch text, real Arrival and Gold",
+    "ipad-landscape: images decode, keyboard, map ratio, reduced motion, resumed save, long Dutch text, real Arrival and Gold",
+    "phone: images decode, keyboard, map ratio, reduced motion, resumed save, long Dutch text, real Arrival and Gold",
+    "small-phone: images decode, keyboard, map ratio, reduced motion, resumed save, long Dutch text, real Arrival and Gold",
+    "topo-italie-interactief.html: file:// offline boot and all six illustrations decoded",
+    "topo-italie-duolingo.html: file:// offline boot and all six illustrations decoded",
+    "pending chapter/postcard and image error fallback without state mutation"
+  ],
+  "arrival": {
+    "trips": 1,
+    "pizzas": 3,
+    "destination": "Andiamo! Nino rijdt naar Florence.",
+    "role": "arrival",
+    "pointerEvents": "none"
+  },
+  "errors": [],
+  "externalRequests": [],
+  "physicalIPadSafari": "not tested",
+  "ownerArtSignoff": "pending; Encourage rays preserved"
+}

@@ -1,0 +1,128 @@
+[
+  {
+    "id": "garda",
+    "name": "Lago di Garda",
+    "dataset": "ne_10m_lakes.geojson",
+    "ne_id": 1159116699,
+    "sourceGeometrySha256": "482b3a8780b1e8171682335dc49696d1ccc378a928ca49810ace6e36d412c0c0",
+    "pathSha256": "fc48a59fbed54b56c4dc7cb5698e0210489c0eb16eceaf92f81f66f6666d0f6d",
+    "vertices": 63,
+    "boundsWgs84": [
+      10.5116,
+      45.449346,
+      10.869841,
+      45.895602
+    ],
+    "boundsProjected": [
+      352.64,
+      296.79,
+      372.34,
+      331.15
+    ]
+  },
+  {
+    "id": "maggiore",
+    "name": "Lago Maggiore",
+    "dataset": "ne_10m_lakes.geojson",
+    "ne_id": 1159116693,
+    "sourceGeometrySha256": "28b902dbd718fdd3aa9d30ca8f14ca21b781cc332946c804023ea191066b3401",
+    "pathSha256": "4e012783e13c681ef7ef81fd1cc4dcb1285030d9a60674a034240e89f93d0139",
+    "vertices": 103,
+    "boundsWgs84": [
+      8.492851,
+      45.722222,
+      8.849031,
+      46.171716
+    ],
+    "boundsProjected": [
+      241.61,
+      275.53,
+      261.2,
+      310.14
+    ]
+  },
+  {
+    "id": "como",
+    "name": "Lago di Como",
+    "dataset": "ne_10m_lakes_europe.geojson",
+    "ne_id": 1159109333,
+    "sourceGeometrySha256": "796487ab5ec70d4bdf95a9f75a27bad13de7fa88f149ecb1003100056e46af0c",
+    "pathSha256": "a067147156cc710ecc168005621f086c5af38159e877e80e8b6e40077e4475b3",
+    "vertices": 76,
+    "boundsWgs84": [
+      9.067515,
+      45.819342,
+      9.412852,
+      46.174994
+    ],
+    "boundsProjected": [
+      273.21,
+      275.28,
+      292.21,
+      302.66
+    ]
+  },
+  {
+    "id": "lugano",
+    "name": "Lago di Lugano",
+    "dataset": "ne_10m_lakes_europe.geojson",
+    "ne_id": 1159109403,
+    "sourceGeometrySha256": "4c8bb5bf9db88c0ad75d40e9e645160d4ff10db679979f86e999d495c04803d0",
+    "pathSha256": "adc43061ebe237a536eae9ed82b226c24b5af582c7665216b16b00e94a187ee9",
+    "vertices": 35,
+    "boundsWgs84": [
+      8.885997,
+      45.912726,
+      9.121837,
+      46.041266
+    ],
+    "boundsProjected": [
+      263.23,
+      285.57,
+      276.2,
+      295.47
+    ]
+  },
+  {
+    "id": "bolsena",
+    "name": "Lago di Bolsena",
+    "dataset": "ne_10m_lakes_europe.geojson",
+    "ne_id": 1159109633,
+    "sourceGeometrySha256": "75543812055fb03f0599eb8e7037db4c6dd8a43dd7e46335ed30e80827185828",
+    "pathSha256": "f23758bfbb84be0050fff360912ac7316610cfbd934061677f23e6dbc0e410f2",
+    "vertices": 18,
+    "boundsWgs84": [
+      11.862804,
+      42.542914,
+      11.995372,
+      42.659613
+    ],
+    "boundsProjected": [
+      426.95,
+      545.96,
+      434.25,
+      554.95
+    ]
+  },
+  {
+    "id": "geneva",
+    "name": "Lac Léman / Meer van Genève",
+    "dataset": "ne_10m_lakes.geojson",
+    "ne_id": 1159114143,
+    "sourceGeometrySha256": "606062c19cd29fc1a1bf3061297fbd8b2818670a223bfe1dd13376df6e5accb9",
+    "pathSha256": "4056685d80e77e95d3f44c05fdcdc3ce7808539a994708f097554169cebc6ba4",
+    "vertices": 39,
+    "boundsWgs84": [
+      6.133228,
+      46.204685,
+      6.93537,
+      46.522304
+    ],
+    "boundsProjected": [
+      111.83,
+      248.53,
+      155.95,
+      272.99
+    ]
+  }
+]

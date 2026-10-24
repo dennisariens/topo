@@ -1,0 +1,25 @@
+/* PROPOSED implementation tokens, not imported by the production application. */
+[data-map-theme="discovery"]{
+ --topo-map-sea:#c2dae2;
+ --topo-map-land:#f2e3bf;
+ --topo-map-context-land:#dce2cf;
+ --topo-map-context-border:#64765f;
+ --topo-map-country:#e8ddbf;
+ --topo-map-country-border:#6c775f;
+ --topo-map-coast:#8a8269;
+ --topo-map-city:#9b442f;
+ --topo-map-lake:#a5cbd8;
+ --topo-map-lake-border:#3e6d80;
+ --topo-map-river:#477f8d;
+ --topo-map-context-label:#52624c;
+ --topo-map-paper-opacity:.16;
+}
+[data-map-context="graded"]{
+ /* Bind these only to noninteractive decor; do not change the chosen theme. */
+ --topo-map-paper-opacity:0;
+}
+@media(prefers-reduced-motion:reduce){[data-map-theme]{--topo-map-motion-duration:0ms}}
+@media(prefers-contrast:more){[data-map-theme]{--topo-map-paper-opacity:0}}
+/* Schoolkaart: do not set map paint tokens; retain the pinned canonical rules.
+   .activeTarget, hit widths, radii, event listeners and locator geometry remain canonical.
+   Use theme.css for the executable docs-only proof; these semantic names are a handoff contract. */

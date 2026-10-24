@@ -1,0 +1,1 @@
+Generated self-contained docs proof from exact canonical Git object c68ace4e44a6e797f536ec1a8d6b517d29167320

@@ -1,0 +1,97 @@
+{
+  "base": "c68ace4e44a6e797f536ec1a8d6b517d29167320",
+  "browser": "146.0.7680.153",
+  "transport": "file://; offline:true",
+  "viewports": [
+    {
+      "name": "desktop",
+      "width": 1440,
+      "height": 1000,
+      "modes": [
+        "learn",
+        "point",
+        "write",
+        "exam"
+      ],
+      "routeAndGold": "PASS",
+      "answeredAndUnanswered": "PASS",
+      "caretAndFocus": "PASS",
+      "fitZoomPan": "PASS",
+      "escapeAndTabContainment": "PASS",
+      "largeTextAndOrientation": "covered on iPad"
+    },
+    {
+      "name": "ipad-portrait",
+      "width": 820,
+      "height": 1180,
+      "modes": [
+        "learn",
+        "point",
+        "write",
+        "exam"
+      ],
+      "routeAndGold": "PASS",
+      "answeredAndUnanswered": "PASS",
+      "caretAndFocus": "PASS",
+      "fitZoomPan": "PASS",
+      "escapeAndTabContainment": "PASS",
+      "largeTextAndOrientation": "PASS"
+    },
+    {
+      "name": "ipad-landscape",
+      "width": 1180,
+      "height": 820,
+      "modes": [
+        "learn",
+        "point",
+        "write",
+        "exam"
+      ],
+      "routeAndGold": "PASS",
+      "answeredAndUnanswered": "PASS",
+      "caretAndFocus": "PASS",
+      "fitZoomPan": "PASS",
+      "escapeAndTabContainment": "PASS",
+      "largeTextAndOrientation": "PASS"
+    },
+    {
+      "name": "phone-390",
+      "width": 390,
+      "height": 844,
+      "modes": [
+        "learn",
+        "point",
+        "write",
+        "exam"
+      ],
+      "routeAndGold": "PASS",
+      "answeredAndUnanswered": "PASS",
+      "caretAndFocus": "PASS",
+      "fitZoomPan": "PASS",
+      "escapeAndTabContainment": "PASS",
+      "largeTextAndOrientation": "covered on iPad"
+    },
+    {
+      "name": "phone-320",
+      "width": 320,
+      "height": 568,
+      "modes": [
+        "learn",
+        "point",
+        "write",
+        "exam"
+      ],
+      "routeAndGold": "PASS",
+      "answeredAndUnanswered": "PASS",
+      "caretAndFocus": "PASS",
+      "fitZoomPan": "PASS",
+      "escapeAndTabContainment": "PASS",
+      "largeTextAndOrientation": "covered on iPad"
+    }
+  ],
+  "artifacts": "both downloads + dist PASS",
+  "errors": [],
+  "externalRequests": [],
+  "physicalIPadSafari": "not tested",
+  "VoiceOver": "semantics inspected; physical VoiceOver not tested"
+}

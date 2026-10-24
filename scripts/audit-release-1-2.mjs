@@ -22,16 +22,17 @@ const manifest = JSON.parse(read('assets/nino/runtime-manifest.json'));
 for (const asset of Object.values(manifest.assets)) {exact(asset.path,art); assert(read(asset.path).equals(original(masters,asset.path)), 'Original owner export bytes');}
 for (const file of ['geography/lakes/source.geojson','geography/lakes/sources.json','geography/lakes/projected-manifest.json','scripts/geography/lakes.mjs','scripts/geography/generate-lakes.mjs','scripts/geography/lakes.test.mjs','scripts/geography/verify-lake-sources.mjs','scripts/generate-preview.mjs']) exact(file,lakes);
 const html = read('index.html').toString();
-const withoutLakes = html.replace(/<!-- BEGIN GENERATED LAKES -->[\s\S]*?<!-- END GENERATED LAKES -->/,'')
+const withoutSchoolblad = html.replace(/\/\* BEGIN SCHOOLBLAD \*\/[\s\S]*?\/\* END SCHOOLBLAD \*\/\n/,'').replace(/\/\/ BEGIN SCHOOLBLAD\n[\s\S]*?\/\/ END SCHOOLBLAD\n/,'');
+const withoutLakes = withoutSchoolblad.replace(/<!-- BEGIN GENERATED LAKES -->[\s\S]*?<!-- END GENERATED LAKES -->/,'')
   .replace('<use href="#lakeGeometry" data-context-layer="lakes" aria-hidden="true" pointer-events="none"/>','')
   .replace("el('use',{href:'#lakeGeometry','data-context-layer':'lakes','aria-hidden':'true','pointer-events':'none'},$('#areaLayer'));\n",'');
-assert.equal(withoutLakes,original(art,'index.html').toString(), 'Entire Hermes app retained with only three lake insertions');
+assert.equal(withoutLakes,original(art,'index.html').toString(), 'Entire Hermes app retained with only lake and isolated schoolblad insertions');
 for (const file of ['output/html/topo-italie-interactief.html','output/html/topo-italie-duolingo.html','dist/index.html']) assert(read(file).equals(read('index.html')),file+' parity');
 const derived = ['index.html','output/html/topo-italie-interactief.html','output/html/topo-italie-duolingo.html','geography/lakes/projected-manifest.json','print.html'];
 const first = derived.map(read);
 execFileSync(process.execPath,['scripts/build.mjs'],{cwd:root,stdio:'pipe'});
 derived.forEach((file,i) => assert(first[i].equals(read(file)),file+' idempotent rebuild'));
-const output = new URL('docs/visual/release-1-2-integration/',root); mkdirSync(output,{recursive:true});
-const result = {base,art,lakes,masters,preserved,canonicalComposition:'PASS: entire pinned Hermes app + exactly three lake insertions',derivedParity:'PASS: canonical, two downloads, dist',rebuild:'byte-idempotent',masters:'read-only source; no PNGs imported or altered'};
+const output = new URL(html.includes('// BEGIN SCHOOLBLAD')?'docs/visual/schoolblad/':'docs/visual/release-1-2-integration/',root); mkdirSync(output,{recursive:true});
+const result = {base,art,lakes,masters,preserved,canonicalComposition:'PASS: pinned Hermes app + three lake insertions; isolated schoolblad blocks excluded when present',derivedParity:'PASS: canonical, two downloads, dist',rebuild:'byte-idempotent',masters:'read-only source; no PNGs imported or altered'};
 writeFileSync(new URL('source-preservation.json',output),JSON.stringify(result,null,2)+'\n');
 console.log('Combined source audit: immutable art/geometry, entire Hermes app, engines/print, downloads and idempotent rebuild: PASS');

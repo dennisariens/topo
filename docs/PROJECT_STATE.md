@@ -1,5 +1,11 @@
 # Project state
 
+## Release 1.2 candidate — owner art in the runtime
+
+`hermes/topo-nino-visual-integration` is based precisely on Release 1.1 `a481317b33f5f6f55c179ee0fbfe6b211663be7b`, targeting `codex/topo-release-1-1-polish`. Six byte-verified WebP exports from owner art commit `047f74390bbb0cc7cfbd1fa3ba4f65fe23e2ec6d` are embedded in the self-contained app. Welcome, Guide, Encourage, Success, new earned Gold and actual Vespa Arrival follow real events. Gold pauses/replays never use the Gold pose; mixed rounds do not imply perfection. Existing artwork, both learning engines, geography, progress/reward schemas and print assets are preserved. Reusable chapter/postcard slots hide unfinished art without inventing unlocks. No app icon selected; art masters/branch untouched.
+
+Both standalone downloads decode all six illustrations offline. Five viewport sizes, keyboard, reduced motion, resumed answers and real reward events have browser evidence. Candidate asset approval, physical iPad Safari/keyboard and real-printer acceptance remain outstanding. The narrow dev-only undici security update does not add runtime dependencies. See `RELEASE_1_2.md` and `assets/nino/RUNTIME.md`. No merge/deployment performed; stop at draft PR/owner review.
+
 Verified 2026-10-23 for Release 1 integration. GitHub `dennisariens/topo` remains the source of truth. Integration is reviewable on `codex/topo-release-1-integration`; merge and deployment require owner approval. No deployment was performed.
 
 ## Canonical application

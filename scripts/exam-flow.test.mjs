@@ -29,7 +29,7 @@ const state = {
   route:engineContext.TopoRoute.fresh(), good: 0, pizzas: 0, slices: 0, trips: 0, streak: 0, mistakes: []
 };
 const context = {
-  state, TopoNino:engineContext.TopoNino, TopoRoute:engineContext.TopoRoute, ITEMS: items, TopoLearning: engineContext.TopoLearning,
+  state, TopoArt:{roleFor:()=>null}, updatePracticeArt() {}, TopoNino:engineContext.TopoNino, TopoRoute:engineContext.TopoRoute, ITEMS: items, TopoLearning: engineContext.TopoLearning,
   $: node, groupItems: () => items, clearActive() {}, highlight() {}, sync() {},
   message: (text) => { node('#message').textContent = text; },
   hideLens() {}, showLens() {}, isRomeArea: () => false, celebrateTrip() {},celebrateReward() {}, recordDailyCorrect() {},

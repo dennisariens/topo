@@ -1,5 +1,6 @@
 import { readFileSync } from 'node:fs';
 import { Script } from 'node:vm';
+import { createHash } from 'node:crypto';
 
 const html = readFileSync(new URL('../index.html', import.meta.url), 'utf8');
 const heroArt = readFileSync(new URL('../output/art/topo-italie-avontuur.webp', import.meta.url)).toString('base64');
@@ -27,3 +28,16 @@ console.log('App, print page, standalone bundle and learning engine JavaScript s
 
 const nino=readFileSync(new URL('./nino-feedback.js',import.meta.url),'utf8');
 if(!html.includes('// BEGIN NINO FEEDBACK\n'+nino+'// END NINO FEEDBACK'))throw new Error('Embedded Nino resolver differs from tested source');
+const art=readFileSync(new URL('./nino-art.js',import.meta.url),'utf8');
+const artUI=readFileSync(new URL('./nino-art-ui.js',import.meta.url),'utf8');
+const artCSS=readFileSync(new URL('./nino-art.css',import.meta.url),'utf8');
+if(!html.includes(art+'// END NINO ART')||!html.includes('// BEGIN NINO ART UI\n'+artUI+'// END NINO ART UI')||!html.includes(artCSS+'/* END NINO ART CSS */'))throw Error('Embedded illustration code/styles are stale. Rebuild.');
+const manifest=JSON.parse(readFileSync(new URL('../assets/nino/runtime-manifest.json',import.meta.url),'utf8'));
+const embedded=JSON.parse(html.match(/window\.TOPO_NINO_ART_DATA=(\{[^\n]+\});/)?.[1]||'null');
+if(!embedded||embedded.sourceCommit!==manifest.sourceCommit)throw Error('Missing pinned offline art manifest');
+for(const field of ['states','chapters','postcards'])if(JSON.stringify(embedded[field])!==JSON.stringify(manifest[field]))throw Error('Stale art mapping: '+field);
+for(const [role,asset] of Object.entries(manifest.assets)){
+ const bytes=readFileSync(new URL('../'+asset.path,import.meta.url));
+ if(createHash('sha256').update(bytes).digest('hex')!==asset.sha256||embedded.assets[role]?.src!=='data:image/webp;base64,'+bytes.toString('base64'))throw Error('Offline art differs from immutable export: '+role);
+}
+console.log('Pinned Nino art, reusable slots and all offline image bytes: OK');

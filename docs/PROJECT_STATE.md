@@ -1,5 +1,11 @@
 # Project state
 
+## Release 1.2 candidate — owner art in the runtime
+
+`hermes/topo-nino-visual-integration` is based precisely on Release 1.1 `a481317b33f5f6f55c179ee0fbfe6b211663be7b`, targeting `codex/topo-release-1-1-polish`. Six byte-verified WebP exports from owner art commit `047f74390bbb0cc7cfbd1fa3ba4f65fe23e2ec6d` are embedded in the self-contained app. Welcome, Guide, Encourage, Success, new earned Gold and actual Vespa Arrival follow real events. Gold pauses/replays never use the Gold pose; mixed rounds do not imply perfection. Existing artwork, both learning engines, geography, progress/reward schemas and print assets are preserved. Reusable chapter/postcard slots hide unfinished art without inventing unlocks. No app icon selected; art masters/branch untouched.
+
+Both standalone downloads decode all six illustrations offline. Five viewport sizes, keyboard, reduced motion, resumed answers and real reward events have browser evidence. Candidate asset approval, physical iPad Safari/keyboard and real-printer acceptance remain outstanding. The narrow dev-only undici security update does not add runtime dependencies. See `RELEASE_1_2.md` and `assets/nino/RUNTIME.md`. No merge/deployment performed; stop at draft PR/owner review.
+
 Verified 2026-10-23 for Release 1 integration. GitHub `dennisariens/topo` remains the source of truth. Integration is reviewable on `codex/topo-release-1-integration`; merge and deployment require owner approval. No deployment was performed.
 
 ## Canonical application
@@ -46,3 +52,15 @@ Fixed replay daily credit and strict nested-backup validation after the independ
 `codex/topo-release-1-1-polish` starts from PR #3 HEAD `9df498919cd6fa1a07aadd6a15e973b496a8b0fd`. All eleven chapter icons have explicit valid references (including Eilanden); stale five-answer pizza copy is removed. Current chapter and next preview remain open, while later and completed stops use native accessible disclosures with replay/Gold access. Mobile modes fit without horizontal clipping, and map provenance moves into **Over de kaart**.
 
 Nino's selected NOW messages come from PR #6's three documents at `d746ac9d1f4cbc5e9c8b7b8544cdba396cf60f1d`, via a checked embedded resolver. First/return/resume, lesson starts, graded answers, round results, chapter/Gold/review messages reflect actual engine events. No new artwork, hints, spelling retries or postcards; no new save schema or reward rules. Learning engines, geography and printable assets are unchanged. Details, browser evidence and device/learner limitations: `RELEASE_1_1.md`. This work is reviewable, not merged/deployed.
+
+## Issue #13 — background lake cartography
+
+From pinned Release 1.1 `a481317b33f5f6f55c179ee0fbfe6b211663be7b`, branch `codex/topo-lakes-map-layer` adds Garda, Maggiore, Como, Lugano, Bolsena and Léman/Genève as noninteractive inline background polygons. Natural Earth 5.0.0 main/Europe datasets are revision/byte-hash pinned, with original excerpts and reproducible projection tooling. Maggiore's upstream mislabelling is explicitly corrected and documented; Como retains its forks. Same geometry in runtime, static fallback and both offline downloads; print remains byte-identical. All 45 learning targets, engines, saves/rewards and Nino remain unchanged apart from the single map composition call.
+
+Full lint/test/build, source audit, Chrome responsive/offline checks at five viewport sizes and existing save/lesson/Gold/replay/import browser regressions pass. Evidence, source/license, device limits, existing development dependency audit finding and controlled Hermes integration instructions: [geography/LAKES.md](geography/LAKES.md). Draft handoff only; no merge, deployment or combined-art acceptance.
+
+## Release 1.2 combined candidate — Issue #16
+
+`integration/topo-release-1-2-nino-lakes` combines pinned Hermes PR #14 `4f15b610` and lake PR #15 `35ff21b6` from common Release 1.1 `a481317b`. Both histories, all six immutable WebPs, art UI/event policies, all six pinned lake polygons and offline embedding are preserved. Actual conflicts in package/build/decision log retain both features; generated files were rebuilt. No learning/reward engine, target, save schema or print/PDF change. The existing undici audit finding is resolved by Hermes' unchanged lockfile patch: fresh audit reports zero vulnerabilities under Node 24.15.0.
+
+All 13 test programs, lint/build, source preservation audit, five responsive Chrome suites and combined file/offline backup+keyboard checks pass. Fresh evidence, conflict ledger, changed-file manifest and exact reproduction: [RELEASE_1_2_INTEGRATION.md](RELEASE_1_2_INTEGRATION.md). Codex verification is a conditional handoff for independent Hermes exact-SHA review and owner visual acceptance; physical Safari/child/print proof are outstanding. No target/main merge or deployment.

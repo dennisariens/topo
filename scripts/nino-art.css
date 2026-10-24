@@ -1,0 +1,26 @@
+/* Fixed illustration boxes reserve decode space; art never intercepts input. */
+.ninoArtSlot{margin:0;flex:none;pointer-events:none;overflow:hidden;display:flex;align-items:center;justify-content:center}
+.ninoArtSlot[hidden]{display:none!important}
+.ninoArtSlot img{display:block;width:100%;height:100%;object-fit:contain}
+.ninoArtSlot .ninoPortrait{width:52px;height:52px;flex:none;border-radius:50%;border:1px solid #dfc296;background-color:#e8e8d8;background-image:var(--nino-art);background-size:120px auto;background-position:51% -2px;background-repeat:no-repeat}
+.ninoWelcomeLine{display:flex;align-items:center;gap:18px;margin:12px 0}
+.ninoWelcomeCopy{min-width:0;flex:1}.ninoWelcomeCopy h2{margin-top:0}
+.ninoArtSlot--welcome{width:132px;height:132px}
+.ninoLesson>div{min-width:0}.routeLessonLayout>.panel,.routeLessonLayout>.mapCard{min-width:0}
+@media(max-width:950px){.routeLessonLayout{grid-template-columns:minmax(0,1fr)}}
+.ninoLesson{min-height:108px}.ninoArtSlot--lesson{width:80px;height:108px}
+.ninoArtSlot--practice{width:60px;height:80px}
+.ninoLesson.illustrated>.ninoPortrait,.ninoCoach.illustrated>.ninoPortrait{display:none}
+.ninoArtSlot--summary{width:170px;height:196px;margin:0 auto 12px}
+.finishScreen.illustrated .finishIcon{display:none}
+.ninoArtSlot--scene{width:100%;aspect-ratio:16/9;max-height:240px;border-radius:18px;margin:12px 0}
+.ninoArtSlot--arrival{width:112px;height:64px;border-radius:10px}
+.ninoArtSlot--arrival img{object-fit:cover}
+.vespaTripToast{pointer-events:none}.vespaTripToast:has(.ninoArtSlot:not([hidden]))>.ninoTrip{display:none}
+.vespaTripToast strong{min-width:0;overflow-wrap:anywhere}
+.arrivalCopy{min-width:0}.arrivalCopy small{display:block;font-size:10px;font-weight:400;color:#60747b;margin-top:3px}
+.ninoWelcomeLine .ninoArtSlot,.finishScreen>.ninoArtSlot{animation:ninoArtIn .22s ease-out both}
+@keyframes ninoArtIn{from{opacity:.4;transform:translateY(3px)}to{opacity:1;transform:none}}
+@media(max-width:600px){.ninoWelcomeLine{gap:10px}.ninoArtSlot--welcome{width:88px;height:104px}.ninoWelcomeCopy h2{font-size:22px}.ninoWelcomeCopy p{font-size:14px}.ninoArtSlot--lesson{width:66px;height:96px}.ninoLesson{min-height:96px}.ninoArtSlot--summary{width:138px;height:164px}.ninoArtSlot--arrival{width:92px;height:56px}.vespaTripToast{max-width:calc(100vw - 24px);font-size:13px}}
+@media(prefers-reduced-motion:reduce){.ninoArtSlot{animation:none!important;transition:none!important}}
+@media print{.ninoArtSlot,.ninoWelcomeLine{display:none!important}}

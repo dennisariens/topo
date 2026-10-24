@@ -30,6 +30,7 @@
   'ANSWER.WRONG_GOLD':'Deze proef is nog niet foutloos.',
   'ANSWER.SKIP':'Geen probleem. Dit was {place}.',
   'ROUND.PAUSE':'Even parkeren. Zes vragen gedaan.',
+  'ROUND.DISCOVER_PAUSE':'Tijd voor een kleine pauze.',
   'ROUND.PAUSE_LONG':'Nog meer plekken te gaan. Zin om door te rijden?',
   'ROUND.RESULT_PERFECT':'Alles goed in dit rondje!',
   'ROUND.RESULT_MIXED':'Je hebt {total} vragen gedaan. Verder oefenen?',

@@ -1,0 +1,46 @@
+{
+  "browser": "146.0.7680.153",
+  "url": "file:///private/tmp/topo-lakes-20261024/index.html",
+  "QA1": {
+    "initialDaily": 6,
+    "stageReplayDaily": 12,
+    "initialRewards": [
+      6,
+      0,
+      6,
+      0
+    ],
+    "stageReplayRewards": [
+      6,
+      0,
+      6,
+      0
+    ],
+    "goldDaily": 30,
+    "goldReplayDaily": 42,
+    "goldRewards": [
+      24,
+      3,
+      0,
+      1
+    ],
+    "goldReplayRewards": [
+      24,
+      3,
+      0,
+      1
+    ],
+    "reloadAndResubmission": "PASS"
+  },
+  "QA2": {
+    "negativeImports": 6,
+    "memoryAndStorageByteEquivalent": true,
+    "rejectedBeforeConfirmation": true,
+    "validSchemas": [
+      1,
+      2
+    ]
+  },
+  "errors": [],
+  "physicalIPadSafari": "not tested"
+}

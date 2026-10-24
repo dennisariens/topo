@@ -30,6 +30,8 @@ Vesuvius is east of Naples; Etna is north of Catania; Rome and Vatican retain th
 
 ## Drawing versus selection
 
+Issue #13 adds six source-backed background lakes using pinned Natural Earth 5.0.0 main/Europe polygon excerpts. See [geography/LAKES.md](geography/LAKES.md) for revision, license, the upstream Maggiore naming correction, geometry hashes and offline reproduction. One shared inline SVG definition is composed after schematic regions and before rivers/point marks in runtime and static fallback. Lakes have no learning IDs, labels, pointer handling or focus stops. Projection, frame and existing target geometry are unchanged; print remains byte-identical to Release 1.1.
+
 Layer order remains sea, surrounding land/quiz countries/Italy/islands, schematic regions/mountains, river centre lines, static labels, accurate point marks, Learn labels. Source visual geometry is independent of hit tolerance and editorial label placement.
 
 - Pointer proximity uses `getScreenCTM` to compare accurate point positions in CSS pixels; a 22-pixel radius does not move/enlarge the visual marker. A single candidate selects that place; multiple candidates open a neutral numbered crop of the same map. It does not identify the requested answer or offer answer names.

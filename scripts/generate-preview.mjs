@@ -1,5 +1,6 @@
 import {readFileSync,writeFileSync} from 'node:fs';
 import {runInNewContext} from 'node:vm';
+import {lakeUse} from './geography/lakes.mjs';
 const file=new URL('../index.html',import.meta.url),html=readFileSync(file,'utf8');
 const app=[...html.matchAll(/<script>([\s\S]*?)<\/script>/g)].at(-1)[1];
 const items=JSON.parse(app.match(/const ITEMS=(\[.*?\]);/)[1]);
@@ -14,6 +15,7 @@ for(const i of items.filter(i=>countries.includes(i.id)))preview+=path(i.shape,'
 preview+=path(italy,'#f5ead2');
 for(const i of items.filter(i=>['area-a','area-b'].includes(i.id)))preview+=path(i.shape,'#f5ead2',i.id);
 for(const i of items.filter(i=>['area-c','area-d','area-g','area-h'].includes(i.id)))preview+=path(i.shape,'#e9cda2',i.id);
+preview+=lakeUse;
 for(const i of items.filter(i=>i.kind==='river'))preview+=path(i.shape,'none',i.id,'#669eaf',5);
 for(const i of items.filter(i=>['area-e','area-f'].includes(i.id)))preview+=path(i.shape,'#814737',i.id);
 for(const i of items.filter(i=>i.kind==='city'||['area-n','area-o'].includes(i.id)))preview+=`<circle data-reference-id="${i.id}" cx="${i.px}" cy="${i.py}" r="${i.id==='area-o'?2.7:i.id==='area-n'?4.5:6.5}" fill="#a44435" stroke="white"/>`;

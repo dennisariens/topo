@@ -1,0 +1,130 @@
+{
+  "browser": "146.0.7680.153",
+  "checks": [
+    {
+      "file": "output/html/topo-italie-interactief.html",
+      "width": 390,
+      "height": 844,
+      "images": [
+        {
+          "role": "guide",
+          "width": 1024,
+          "height": 1536
+        },
+        {
+          "role": "encourage",
+          "width": 1067,
+          "height": 1600
+        },
+        {
+          "role": "success",
+          "width": 1067,
+          "height": 1600
+        },
+        {
+          "role": "gold",
+          "width": 1024,
+          "height": 1536
+        },
+        {
+          "role": "welcome",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "role": "arrival",
+          "width": 1600,
+          "height": 900
+        }
+      ],
+      "lakes": 6,
+      "backup": "actual download → reset → file restore → reload: exact progress",
+      "keyboardPicker": "neutral, real answer graded",
+      "offline": true
+    },
+    {
+      "file": "output/html/topo-italie-duolingo.html",
+      "width": 320,
+      "height": 568,
+      "images": [
+        {
+          "role": "guide",
+          "width": 1024,
+          "height": 1536
+        },
+        {
+          "role": "encourage",
+          "width": 1067,
+          "height": 1600
+        },
+        {
+          "role": "success",
+          "width": 1067,
+          "height": 1600
+        },
+        {
+          "role": "gold",
+          "width": 1024,
+          "height": 1536
+        },
+        {
+          "role": "welcome",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "role": "arrival",
+          "width": 1600,
+          "height": 900
+        }
+      ],
+      "lakes": 6,
+      "backup": "actual download → reset → file restore → reload: exact progress",
+      "keyboardPicker": "neutral, real answer graded",
+      "offline": true
+    },
+    {
+      "file": "dist/index.html",
+      "width": 1440,
+      "height": 1000,
+      "images": [
+        {
+          "role": "guide",
+          "width": 1024,
+          "height": 1536
+        },
+        {
+          "role": "encourage",
+          "width": 1067,
+          "height": 1600
+        },
+        {
+          "role": "success",
+          "width": 1067,
+          "height": 1600
+        },
+        {
+          "role": "gold",
+          "width": 1024,
+          "height": 1536
+        },
+        {
+          "role": "welcome",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "role": "arrival",
+          "width": 1600,
+          "height": 900
+        }
+      ],
+      "lakes": 6,
+      "backup": "actual download → reset → file restore → reload: exact progress",
+      "keyboardPicker": "neutral, real answer graded",
+      "offline": true
+    }
+  ],
+  "errors": [],
+  "externalRequests": []
+}

@@ -1,0 +1,47 @@
+{
+  "revision": "ace5fed0eaf3c6c03c951e75b439ba8fffbc218e",
+  "release": "Natural Earth 5.0.0 (1:10m main + Europe supplement)",
+  "retrieved": "2026-10-24",
+  "license": "public domain",
+  "licenseUrl": "https://www.naturalearthdata.com/about/terms-of-use/",
+  "datasetDocumentation": "https://www.naturalearthdata.com/downloads/10m-physical-vectors/10m-lakes/",
+  "upstream": [
+    {
+      "dataset": "ne_10m_lakes.geojson",
+      "url": "https://raw.githubusercontent.com/nvkelso/natural-earth-vector/ace5fed0eaf3c6c03c951e75b439ba8fffbc218e/geojson/ne_10m_lakes.geojson",
+      "sha256": "2d036f53dedec578001c5c30c2959ee7d4eebc1306900fa4367c49929ec8f2d9"
+    },
+    {
+      "dataset": "ne_10m_lakes_europe.geojson",
+      "url": "https://raw.githubusercontent.com/nvkelso/natural-earth-vector/ace5fed0eaf3c6c03c951e75b439ba8fffbc218e/geojson/ne_10m_lakes_europe.geojson",
+      "sha256": "b4dd9e7a5edd0d07b54768b5404d1ebe77f80b9d579c85fff65f90cf50369769"
+    }
+  ],
+  "excerptSha256": "0fe0492d3a0123bd6bcfb79826061cc8d90418ff2cc510df328ee0054f379cf5",
+  "metadataCorrections": {
+    "maggiore": {
+      "upstreamName": "Lago di Como",
+      "upstreamWikidata": "Q15523",
+      "correctName": "Lago Maggiore",
+      "note": "Retain original source properties and geometry verbatim. Identity correction only; do not use upstream Como name/Wikidata as a selector. Real Como comes from Europe supplement.",
+      "evidence": [
+        "https://github.com/nvkelso/natural-earth-vector/issues/1022",
+        "https://wldb.ilec.or.jp/Display/html/3467"
+      ]
+    }
+  },
+  "projection": {
+    "x": "55 * longitude - 225.5",
+    "y": "3830.75 - 77 * latitude",
+    "viewBox": [
+      0,
+      0,
+      890,
+      1235
+    ]
+  },
+  "simplification": {
+    "tolerance": 0,
+    "note": "Preserve every upstream vertex; only round projected SVG coordinates to 0.01 map units."
+  }
+}

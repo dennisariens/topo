@@ -1,0 +1,38 @@
+{
+  "sourceCommit": "047f74390bbb0cc7cfbd1fa3ba4f65fe23e2ec6d",
+  "verifiedAgainstGitObject": true,
+  "assets": [
+    {
+      "role": "guide",
+      "sha256": "13cb4bc888d62573dde1cfb6a6645da82c20180547354aab8f3557e99a691a2a",
+      "bytes": 223920
+    },
+    {
+      "role": "encourage",
+      "sha256": "4ab8b1af4289ffd47dd9d2e8e102dfff68a53da97030741df1db16bc0889d3c5",
+      "bytes": 255360
+    },
+    {
+      "role": "success",
+      "sha256": "e43124089abfa0878705c9f4c9389487c16b914c3579cff88d8532f64f6fa518",
+      "bytes": 255022
+    },
+    {
+      "role": "gold",
+      "sha256": "b735c2dd44003c62969adcf4d11b446ec432f86a2f2f27f56aa6281b2ce435f2",
+      "bytes": 229344
+    },
+    {
+      "role": "welcome",
+      "sha256": "89966925cb2f277e89bdd53eb22a5a328a26c54c1f52ccf9a91a3b263bd4a568",
+      "bytes": 247918
+    },
+    {
+      "role": "arrival",
+      "sha256": "ff1b6908fcbcfd81098232b9e108ad2b32826c5914a2c3414465385b05fcbd78",
+      "bytes": 297324
+    }
+  ],
+  "standaloneBytes": 2969947,
+  "screenshotCount": 36
+}

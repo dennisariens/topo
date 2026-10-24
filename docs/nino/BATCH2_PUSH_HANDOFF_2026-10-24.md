@@ -1,8 +1,8 @@
 # Topo Nino — chapter art batch 2 handoff (2026-10-24)
 
-**STATUS: BINARY ASSET UPLOAD PENDING.** This branch inherits the actual Batch 1 originals from `art/nino-complete-20261024`. The new Batch 2 PNG/WebP binaries are not committed yet: the available connected GitHub API cannot read the conversation-local image bytes, and the local artifact runtime has no outgoing GitHub network access.
+**STATUS: ALL BATCH 2 BINARIES INCLUDED IN THIS ART COMMIT.** This branch inherits the actual Batch 1 originals from `art/nino-complete-20261024`. The new Batch 2 PNG and WebP files were transferred via the owner-authenticated Mac Git workflow; all archive checksums were validated before commit.
 
-The owner asked to push all new Nino art. All new files are assembled, SHA-256 checked, and organized as conversation-local downloads under `topo-nino-batch2-20261024`. An executable `PUSH_TO_GITHUB.sh` in the supplied archive clones *this branch*, verifies checksums, adds all assets, and pushes only `art/nino-chapters-20261024`. It neither merges nor deploys.
+The owner asked to push all new Nino art. All new files are assembled, SHA-256 checked, and organized as conversation-local downloads under `topo-nino-batch2-20261024`. The executable `PUSH_TO_GITHUB.sh` from the supplied archive verified checksums, added all assets, and pushed only `art/nino-chapters-20261024`. It neither merges nor deploys.
 
 ## New character art (PNG + WebP)
 - `assets/nino/characters/nino-travel.png`

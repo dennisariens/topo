@@ -1,0 +1,121 @@
+{
+  "browser": "146.0.7680.153",
+  "baseline": "9df498919cd6fa1a07aadd6a15e973b496a8b0fd",
+  "url": "http://127.0.0.1:8016/",
+  "viewports": [
+    {
+      "name": "desktop",
+      "width": 1440,
+      "height": 1000,
+      "navModes": [
+        "🛵 Leerroute",
+        "Leren",
+        "Aanwijzen",
+        "Namen schrijven",
+        "Toets"
+      ],
+      "renderedChapterIcons": 11,
+      "map": {
+        "ratio": 0.7206650715366961,
+        "count": 45,
+        "maxDrift": 0.003202936644129295,
+        "width": 461.203125
+      },
+      "oldSave": "PASS"
+    },
+    {
+      "name": "ipad-portrait",
+      "width": 820,
+      "height": 1180,
+      "navModes": [
+        "🛵 Leerroute",
+        "Leren",
+        "Aanwijzen",
+        "Namen schrijven",
+        "Toets"
+      ],
+      "renderedChapterIcons": 11,
+      "map": {
+        "ratio": 0.7206554799197202,
+        "count": 45,
+        "maxDrift": 0.0016838295501884204,
+        "width": 544.21875
+      },
+      "oldSave": "PASS"
+    },
+    {
+      "name": "ipad-landscape",
+      "width": 1180,
+      "height": 820,
+      "navModes": [
+        "🛵 Leerroute",
+        "Leren",
+        "Aanwijzen",
+        "Namen schrijven",
+        "Toets"
+      ],
+      "renderedChapterIcons": 11,
+      "map": {
+        "ratio": 0.7206574167808015,
+        "count": 45,
+        "maxDrift": 0.0014641996087902953,
+        "width": 378.1875
+      },
+      "oldSave": "PASS"
+    },
+    {
+      "name": "phone",
+      "width": 390,
+      "height": 844,
+      "navModes": [
+        "🛵 Leerroute",
+        "Leren",
+        "Aanwijzen",
+        "Namen schrijven",
+        "Toets"
+      ],
+      "renderedChapterIcons": 11,
+      "map": {
+        "ratio": 0.7206633823934396,
+        "count": 45,
+        "maxDrift": 0.002306114383827662,
+        "width": 368
+      },
+      "oldSave": "PASS"
+    },
+    {
+      "name": "small-phone",
+      "width": 320,
+      "height": 568,
+      "navModes": [
+        "🛵 Leerroute",
+        "Leren",
+        "Aanwijzen",
+        "Namen schrijven",
+        "Toets"
+      ],
+      "renderedChapterIcons": 11,
+      "map": {
+        "ratio": 0.7206533419299377,
+        "count": 45,
+        "maxDrift": 0.0005856798435104338,
+        "width": 261.96875
+      },
+      "oldSave": "PASS"
+    }
+  ],
+  "errors": [],
+  "externalRequests": [],
+  "standaloneOffline": "PASS",
+  "printAssets": "byte-identical to integration baseline",
+  "feedback": [
+    "2/6 mixed round",
+    "wrong chosen/target after grading",
+    "Gold replay retains gold without reward claim",
+    "review start",
+    "islands start; no NEXT assistance"
+  ],
+  "allUnlockedIcons": "PASS (desktop)",
+  "physicalIPadSafari": "not tested",
+  "artwork": "existing original artwork; no new assets"
+}

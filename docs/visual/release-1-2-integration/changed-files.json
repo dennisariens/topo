@@ -1,0 +1,810 @@
+{
+  "base": "a481317b33f5f6f55c179ee0fbfe6b211663be7b",
+  "candidateBranch": "integration/topo-release-1-2-nino-lakes",
+  "featureInputs": {
+    "hermes": "4f15b610479358b4bf64a7de8be6c5875039b086",
+    "lakes": "35ff21b639e4672b7ed221b540b2c48dcd582285"
+  },
+  "actualConflicts": [
+    "package.json",
+    "scripts/build.mjs",
+    "docs/DECISIONS.md"
+  ],
+  "sharedAutoMergesExplicitlyVerified": [
+    "index.html",
+    "output/html/topo-italie-interactief.html",
+    "output/html/topo-italie-duolingo.html",
+    "docs/PROJECT_STATE.md"
+  ],
+  "fileCount": 197,
+  "files": [
+    {
+      "status": "A",
+      "path": "assets/nino/RUNTIME.md"
+    },
+    {
+      "status": "A",
+      "path": "assets/nino/exports/nino-arrival.webp"
+    },
+    {
+      "status": "A",
+      "path": "assets/nino/exports/nino-encourage.webp"
+    },
+    {
+      "status": "A",
+      "path": "assets/nino/exports/nino-gold.webp"
+    },
+    {
+      "status": "A",
+      "path": "assets/nino/exports/nino-guide.webp"
+    },
+    {
+      "status": "A",
+      "path": "assets/nino/exports/nino-success.webp"
+    },
+    {
+      "status": "A",
+      "path": "assets/nino/exports/nino-welcome.webp"
+    },
+    {
+      "status": "A",
+      "path": "assets/nino/runtime-manifest.json"
+    },
+    {
+      "status": "M",
+      "path": "docs/DECISIONS.md"
+    },
+    {
+      "status": "M",
+      "path": "docs/MAP_SYSTEM.md"
+    },
+    {
+      "status": "M",
+      "path": "docs/PROJECT_STATE.md"
+    },
+    {
+      "status": "A",
+      "path": "docs/RELEASE_1_2.md"
+    },
+    {
+      "status": "A",
+      "path": "docs/RELEASE_1_2_INTEGRATION.md"
+    },
+    {
+      "status": "A",
+      "path": "docs/geography/LAKES.md"
+    },
+    {
+      "status": "A",
+      "path": "docs/visual/lakes/browser-results.json"
+    },
+    {
+      "status": "A",
+      "path": "docs/visual/lakes/desktop-after.png"
+    },
+    {
+      "status": "A",
+      "path": "docs/visual/lakes/desktop-before.png"
+    },
+    {
+      "status": "A",
+      "path": "docs/visual/lakes/desktop-lesson.png"
+    },
+    {
+      "status": "A",
+      "path": "docs/visual/lakes/ipad-landscape-after.png"
+    },
+    {
+      "status": "A",
+      "path": "docs/visual/lakes/ipad-landscape-before.png"
+    },
+    {
+      "status": "A",
+      "path": "docs/visual/lakes/ipad-landscape-lesson.png"
+    },
+    {
+      "status": "A",
+      "path": "docs/visual/lakes/ipad-portrait-after.png"
+    },
+    {
+      "status": "A",
+      "path": "docs/visual/lakes/ipad-portrait-before.png"
+    },
+    {
+      "status": "A",
+      "path": "docs/visual/lakes/ipad-portrait-lesson.png"
+    },
+    {
+      "status": "A",
+      "path": "docs/visual/lakes/lazio-after.png"
+    },
+    {
+      "status": "A",
+      "path": "docs/visual/lakes/lazio-before.png"
+    },
+    {
+      "status": "A",
+      "path": "docs/visual/lakes/learning-regression.json"
+    },
+    {
+      "status": "A",
+      "path": "docs/visual/lakes/phone-320-after.png"
+    },
+    {
+      "status": "A",
+      "path": "docs/visual/lakes/phone-320-before.png"
+    },
+    {
+      "status": "A",
+      "path": "docs/visual/lakes/phone-320-lesson.png"
+    },
+    {
+      "status": "A",
+      "path": "docs/visual/lakes/phone-390-after.png"
+    },
+    {
+      "status": "A",
+      "path": "docs/visual/lakes/phone-390-before.png"
+    },
+    {
+      "status": "A",
+      "path": "docs/visual/lakes/phone-390-lesson.png"
+    },
+    {
+      "status": "A",
+      "path": "docs/visual/lakes/replay-import-regression.json"
+    },
+    {
+      "status": "A",
+      "path": "docs/visual/lakes/scope-audit.json"
+    },
+    {
+      "status": "A",
+      "path": "docs/visual/lakes/static-fallback.png"
+    },
+    {
+      "status": "A",
+      "path": "docs/visual/lakes/switzerland-after.png"
+    },
+    {
+      "status": "A",
+      "path": "docs/visual/lakes/switzerland-before.png"
+    },
+    {
+      "status": "A",
+      "path": "docs/visual/release-1-2-integration/changed-files.json"
+    },
+    {
+      "status": "A",
+      "path": "docs/visual/release-1-2-integration/combined-offline.json"
+    },
+    {
+      "status": "A",
+      "path": "docs/visual/release-1-2-integration/lakes/browser-results.json"
+    },
+    {
+      "status": "A",
+      "path": "docs/visual/release-1-2-integration/lakes/desktop-after.png"
+    },
+    {
+      "status": "A",
+      "path": "docs/visual/release-1-2-integration/lakes/desktop-before.png"
+    },
+    {
+      "status": "A",
+      "path": "docs/visual/release-1-2-integration/lakes/desktop-lesson.png"
+    },
+    {
+      "status": "A",
+      "path": "docs/visual/release-1-2-integration/lakes/ipad-landscape-after.png"
+    },
+    {
+      "status": "A",
+      "path": "docs/visual/release-1-2-integration/lakes/ipad-landscape-before.png"
+    },
+    {
+      "status": "A",
+      "path": "docs/visual/release-1-2-integration/lakes/ipad-landscape-lesson.png"
+    },
+    {
+      "status": "A",
+      "path": "docs/visual/release-1-2-integration/lakes/ipad-portrait-after.png"
+    },
+    {
+      "status": "A",
+      "path": "docs/visual/release-1-2-integration/lakes/ipad-portrait-before.png"
+    },
+    {
+      "status": "A",
+      "path": "docs/visual/release-1-2-integration/lakes/ipad-portrait-lesson.png"
+    },
+    {
+      "status": "A",
+      "path": "docs/visual/release-1-2-integration/lakes/lazio-after.png"
+    },
+    {
+      "status": "A",
+      "path": "docs/visual/release-1-2-integration/lakes/lazio-before.png"
+    },
+    {
+      "status": "A",
+      "path": "docs/visual/release-1-2-integration/lakes/phone-320-after.png"
+    },
+    {
+      "status": "A",
+      "path": "docs/visual/release-1-2-integration/lakes/phone-320-before.png"
+    },
+    {
+      "status": "A",
+      "path": "docs/visual/release-1-2-integration/lakes/phone-320-lesson.png"
+    },
+    {
+      "status": "A",
+      "path": "docs/visual/release-1-2-integration/lakes/phone-390-after.png"
+    },
+    {
+      "status": "A",
+      "path": "docs/visual/release-1-2-integration/lakes/phone-390-before.png"
+    },
+    {
+      "status": "A",
+      "path": "docs/visual/release-1-2-integration/lakes/phone-390-lesson.png"
+    },
+    {
+      "status": "A",
+      "path": "docs/visual/release-1-2-integration/lakes/static-fallback.png"
+    },
+    {
+      "status": "A",
+      "path": "docs/visual/release-1-2-integration/lakes/switzerland-after.png"
+    },
+    {
+      "status": "A",
+      "path": "docs/visual/release-1-2-integration/lakes/switzerland-before.png"
+    },
+    {
+      "status": "A",
+      "path": "docs/visual/release-1-2-integration/nino/arrival.png"
+    },
+    {
+      "status": "A",
+      "path": "docs/visual/release-1-2-integration/nino/before-release-1-1.png"
+    },
+    {
+      "status": "A",
+      "path": "docs/visual/release-1-2-integration/nino/browser-results.json"
+    },
+    {
+      "status": "A",
+      "path": "docs/visual/release-1-2-integration/nino/desktop-arrival.png"
+    },
+    {
+      "status": "A",
+      "path": "docs/visual/release-1-2-integration/nino/desktop-encourage-resumed.png"
+    },
+    {
+      "status": "A",
+      "path": "docs/visual/release-1-2-integration/nino/desktop-gold.png"
+    },
+    {
+      "status": "A",
+      "path": "docs/visual/release-1-2-integration/nino/desktop-guide.png"
+    },
+    {
+      "status": "A",
+      "path": "docs/visual/release-1-2-integration/nino/desktop-welcome.png"
+    },
+    {
+      "status": "A",
+      "path": "docs/visual/release-1-2-integration/nino/encourage.png"
+    },
+    {
+      "status": "A",
+      "path": "docs/visual/release-1-2-integration/nino/gold-missed-no-medal.png"
+    },
+    {
+      "status": "A",
+      "path": "docs/visual/release-1-2-integration/nino/gold-replay-no-new-medal.png"
+    },
+    {
+      "status": "A",
+      "path": "docs/visual/release-1-2-integration/nino/gold-six-question-pause.png"
+    },
+    {
+      "status": "A",
+      "path": "docs/visual/release-1-2-integration/nino/gold.png"
+    },
+    {
+      "status": "A",
+      "path": "docs/visual/release-1-2-integration/nino/guide.png"
+    },
+    {
+      "status": "A",
+      "path": "docs/visual/release-1-2-integration/nino/ipad-landscape-arrival.png"
+    },
+    {
+      "status": "A",
+      "path": "docs/visual/release-1-2-integration/nino/ipad-landscape-encourage-resumed.png"
+    },
+    {
+      "status": "A",
+      "path": "docs/visual/release-1-2-integration/nino/ipad-landscape-gold.png"
+    },
+    {
+      "status": "A",
+      "path": "docs/visual/release-1-2-integration/nino/ipad-landscape-guide.png"
+    },
+    {
+      "status": "A",
+      "path": "docs/visual/release-1-2-integration/nino/ipad-landscape-welcome.png"
+    },
+    {
+      "status": "A",
+      "path": "docs/visual/release-1-2-integration/nino/ipad-portrait-arrival.png"
+    },
+    {
+      "status": "A",
+      "path": "docs/visual/release-1-2-integration/nino/ipad-portrait-encourage-resumed.png"
+    },
+    {
+      "status": "A",
+      "path": "docs/visual/release-1-2-integration/nino/ipad-portrait-gold.png"
+    },
+    {
+      "status": "A",
+      "path": "docs/visual/release-1-2-integration/nino/ipad-portrait-guide.png"
+    },
+    {
+      "status": "A",
+      "path": "docs/visual/release-1-2-integration/nino/ipad-portrait-welcome.png"
+    },
+    {
+      "status": "A",
+      "path": "docs/visual/release-1-2-integration/nino/mixed-round-no-success.png"
+    },
+    {
+      "status": "A",
+      "path": "docs/visual/release-1-2-integration/nino/phone-arrival.png"
+    },
+    {
+      "status": "A",
+      "path": "docs/visual/release-1-2-integration/nino/phone-encourage-resumed.png"
+    },
+    {
+      "status": "A",
+      "path": "docs/visual/release-1-2-integration/nino/phone-gold.png"
+    },
+    {
+      "status": "A",
+      "path": "docs/visual/release-1-2-integration/nino/phone-guide.png"
+    },
+    {
+      "status": "A",
+      "path": "docs/visual/release-1-2-integration/nino/phone-welcome.png"
+    },
+    {
+      "status": "A",
+      "path": "docs/visual/release-1-2-integration/nino/small-phone-arrival.png"
+    },
+    {
+      "status": "A",
+      "path": "docs/visual/release-1-2-integration/nino/small-phone-encourage-resumed.png"
+    },
+    {
+      "status": "A",
+      "path": "docs/visual/release-1-2-integration/nino/small-phone-gold.png"
+    },
+    {
+      "status": "A",
+      "path": "docs/visual/release-1-2-integration/nino/small-phone-guide.png"
+    },
+    {
+      "status": "A",
+      "path": "docs/visual/release-1-2-integration/nino/small-phone-welcome.png"
+    },
+    {
+      "status": "A",
+      "path": "docs/visual/release-1-2-integration/nino/success.png"
+    },
+    {
+      "status": "A",
+      "path": "docs/visual/release-1-2-integration/nino/welcome.png"
+    },
+    {
+      "status": "A",
+      "path": "docs/visual/release-1-2-integration/npm-audit.json"
+    },
+    {
+      "status": "A",
+      "path": "docs/visual/release-1-2-integration/offline-1440-keyboard-picker.png"
+    },
+    {
+      "status": "A",
+      "path": "docs/visual/release-1-2-integration/offline-1440-restored.png"
+    },
+    {
+      "status": "A",
+      "path": "docs/visual/release-1-2-integration/offline-320-keyboard-picker.png"
+    },
+    {
+      "status": "A",
+      "path": "docs/visual/release-1-2-integration/offline-320-restored.png"
+    },
+    {
+      "status": "A",
+      "path": "docs/visual/release-1-2-integration/offline-390-keyboard-picker.png"
+    },
+    {
+      "status": "A",
+      "path": "docs/visual/release-1-2-integration/offline-390-restored.png"
+    },
+    {
+      "status": "A",
+      "path": "docs/visual/release-1-2-integration/polish/browser-results.json"
+    },
+    {
+      "status": "A",
+      "path": "docs/visual/release-1-2-integration/polish/desktop-future-icons.png"
+    },
+    {
+      "status": "A",
+      "path": "docs/visual/release-1-2-integration/polish/desktop-lesson.png"
+    },
+    {
+      "status": "A",
+      "path": "docs/visual/release-1-2-integration/polish/desktop-returning.png"
+    },
+    {
+      "status": "A",
+      "path": "docs/visual/release-1-2-integration/polish/desktop-route.png"
+    },
+    {
+      "status": "A",
+      "path": "docs/visual/release-1-2-integration/polish/gold-replay.png"
+    },
+    {
+      "status": "A",
+      "path": "docs/visual/release-1-2-integration/polish/ipad-landscape-lesson.png"
+    },
+    {
+      "status": "A",
+      "path": "docs/visual/release-1-2-integration/polish/ipad-landscape-route.png"
+    },
+    {
+      "status": "A",
+      "path": "docs/visual/release-1-2-integration/polish/ipad-portrait-lesson.png"
+    },
+    {
+      "status": "A",
+      "path": "docs/visual/release-1-2-integration/polish/ipad-portrait-route.png"
+    },
+    {
+      "status": "A",
+      "path": "docs/visual/release-1-2-integration/polish/islands-discover.png"
+    },
+    {
+      "status": "A",
+      "path": "docs/visual/release-1-2-integration/polish/mixed-round.png"
+    },
+    {
+      "status": "A",
+      "path": "docs/visual/release-1-2-integration/polish/phone-future-icons.png"
+    },
+    {
+      "status": "A",
+      "path": "docs/visual/release-1-2-integration/polish/phone-lesson.png"
+    },
+    {
+      "status": "A",
+      "path": "docs/visual/release-1-2-integration/polish/phone-route.png"
+    },
+    {
+      "status": "A",
+      "path": "docs/visual/release-1-2-integration/polish/review-start.png"
+    },
+    {
+      "status": "A",
+      "path": "docs/visual/release-1-2-integration/polish/small-phone-lesson.png"
+    },
+    {
+      "status": "A",
+      "path": "docs/visual/release-1-2-integration/polish/small-phone-route.png"
+    },
+    {
+      "status": "A",
+      "path": "docs/visual/release-1-2-integration/polish/wrong-point.png"
+    },
+    {
+      "status": "A",
+      "path": "docs/visual/release-1-2-integration/replay/browser-results.json"
+    },
+    {
+      "status": "A",
+      "path": "docs/visual/release-1-2-integration/replay/gold-replay-daily.png"
+    },
+    {
+      "status": "A",
+      "path": "docs/visual/release-1-2-integration/replay/invalid-backup-preserved.png"
+    },
+    {
+      "status": "A",
+      "path": "docs/visual/release-1-2-integration/replay/stage-replay-daily.png"
+    },
+    {
+      "status": "A",
+      "path": "docs/visual/release-1-2-integration/source-preservation.json"
+    },
+    {
+      "status": "A",
+      "path": "docs/visual/release-1-2-integration/verification-summary.json"
+    },
+    {
+      "status": "A",
+      "path": "docs/visual/release-1-2-integration/verification.txt"
+    },
+    {
+      "status": "A",
+      "path": "docs/visual/release-1-2/arrival.png"
+    },
+    {
+      "status": "A",
+      "path": "docs/visual/release-1-2/asset-verification.json"
+    },
+    {
+      "status": "A",
+      "path": "docs/visual/release-1-2/before-release-1-1.png"
+    },
+    {
+      "status": "A",
+      "path": "docs/visual/release-1-2/browser-results.json"
+    },
+    {
+      "status": "A",
+      "path": "docs/visual/release-1-2/browser-run.txt"
+    },
+    {
+      "status": "A",
+      "path": "docs/visual/release-1-2/desktop-arrival.png"
+    },
+    {
+      "status": "A",
+      "path": "docs/visual/release-1-2/desktop-encourage-resumed.png"
+    },
+    {
+      "status": "A",
+      "path": "docs/visual/release-1-2/desktop-gold.png"
+    },
+    {
+      "status": "A",
+      "path": "docs/visual/release-1-2/desktop-guide.png"
+    },
+    {
+      "status": "A",
+      "path": "docs/visual/release-1-2/desktop-welcome.png"
+    },
+    {
+      "status": "A",
+      "path": "docs/visual/release-1-2/encourage.png"
+    },
+    {
+      "status": "A",
+      "path": "docs/visual/release-1-2/gold-missed-no-medal.png"
+    },
+    {
+      "status": "A",
+      "path": "docs/visual/release-1-2/gold-replay-no-new-medal.png"
+    },
+    {
+      "status": "A",
+      "path": "docs/visual/release-1-2/gold-six-question-pause.png"
+    },
+    {
+      "status": "A",
+      "path": "docs/visual/release-1-2/gold.png"
+    },
+    {
+      "status": "A",
+      "path": "docs/visual/release-1-2/guide.png"
+    },
+    {
+      "status": "A",
+      "path": "docs/visual/release-1-2/ipad-landscape-arrival.png"
+    },
+    {
+      "status": "A",
+      "path": "docs/visual/release-1-2/ipad-landscape-encourage-resumed.png"
+    },
+    {
+      "status": "A",
+      "path": "docs/visual/release-1-2/ipad-landscape-gold.png"
+    },
+    {
+      "status": "A",
+      "path": "docs/visual/release-1-2/ipad-landscape-guide.png"
+    },
+    {
+      "status": "A",
+      "path": "docs/visual/release-1-2/ipad-landscape-welcome.png"
+    },
+    {
+      "status": "A",
+      "path": "docs/visual/release-1-2/ipad-portrait-arrival.png"
+    },
+    {
+      "status": "A",
+      "path": "docs/visual/release-1-2/ipad-portrait-encourage-resumed.png"
+    },
+    {
+      "status": "A",
+      "path": "docs/visual/release-1-2/ipad-portrait-gold.png"
+    },
+    {
+      "status": "A",
+      "path": "docs/visual/release-1-2/ipad-portrait-guide.png"
+    },
+    {
+      "status": "A",
+      "path": "docs/visual/release-1-2/ipad-portrait-welcome.png"
+    },
+    {
+      "status": "A",
+      "path": "docs/visual/release-1-2/mixed-round-no-success.png"
+    },
+    {
+      "status": "A",
+      "path": "docs/visual/release-1-2/phone-arrival.png"
+    },
+    {
+      "status": "A",
+      "path": "docs/visual/release-1-2/phone-encourage-resumed.png"
+    },
+    {
+      "status": "A",
+      "path": "docs/visual/release-1-2/phone-gold.png"
+    },
+    {
+      "status": "A",
+      "path": "docs/visual/release-1-2/phone-guide.png"
+    },
+    {
+      "status": "A",
+      "path": "docs/visual/release-1-2/phone-welcome.png"
+    },
+    {
+      "status": "A",
+      "path": "docs/visual/release-1-2/small-phone-arrival.png"
+    },
+    {
+      "status": "A",
+      "path": "docs/visual/release-1-2/small-phone-encourage-resumed.png"
+    },
+    {
+      "status": "A",
+      "path": "docs/visual/release-1-2/small-phone-gold.png"
+    },
+    {
+      "status": "A",
+      "path": "docs/visual/release-1-2/small-phone-guide.png"
+    },
+    {
+      "status": "A",
+      "path": "docs/visual/release-1-2/small-phone-welcome.png"
+    },
+    {
+      "status": "A",
+      "path": "docs/visual/release-1-2/success.png"
+    },
+    {
+      "status": "A",
+      "path": "docs/visual/release-1-2/verification.txt"
+    },
+    {
+      "status": "A",
+      "path": "docs/visual/release-1-2/welcome.png"
+    },
+    {
+      "status": "A",
+      "path": "geography/lakes/projected-manifest.json"
+    },
+    {
+      "status": "A",
+      "path": "geography/lakes/source.geojson"
+    },
+    {
+      "status": "A",
+      "path": "geography/lakes/sources.json"
+    },
+    {
+      "status": "M",
+      "path": "index.html"
+    },
+    {
+      "status": "M",
+      "path": "output/html/topo-italie-duolingo.html"
+    },
+    {
+      "status": "M",
+      "path": "output/html/topo-italie-interactief.html"
+    },
+    {
+      "status": "M",
+      "path": "package-lock.json"
+    },
+    {
+      "status": "M",
+      "path": "package.json"
+    },
+    {
+      "status": "A",
+      "path": "scripts/audit-release-1-2.mjs"
+    },
+    {
+      "status": "M",
+      "path": "scripts/build.mjs"
+    },
+    {
+      "status": "M",
+      "path": "scripts/check-syntax.mjs"
+    },
+    {
+      "status": "A",
+      "path": "scripts/embed-nino-art.mjs"
+    },
+    {
+      "status": "M",
+      "path": "scripts/exam-flow.test.mjs"
+    },
+    {
+      "status": "M",
+      "path": "scripts/generate-preview.mjs"
+    },
+    {
+      "status": "A",
+      "path": "scripts/geography/generate-lakes.mjs"
+    },
+    {
+      "status": "A",
+      "path": "scripts/geography/lakes.mjs"
+    },
+    {
+      "status": "A",
+      "path": "scripts/geography/lakes.test.mjs"
+    },
+    {
+      "status": "A",
+      "path": "scripts/geography/qa-lakes.mjs"
+    },
+    {
+      "status": "A",
+      "path": "scripts/geography/verify-lake-sources.mjs"
+    },
+    {
+      "status": "A",
+      "path": "scripts/nino-art-ui.js"
+    },
+    {
+      "status": "A",
+      "path": "scripts/nino-art.css"
+    },
+    {
+      "status": "A",
+      "path": "scripts/nino-art.js"
+    },
+    {
+      "status": "A",
+      "path": "scripts/nino-art.test.mjs"
+    },
+    {
+      "status": "M",
+      "path": "scripts/nino-feedback.js"
+    },
+    {
+      "status": "A",
+      "path": "scripts/qa-nino-art.mjs"
+    },
+    {
+      "status": "A",
+      "path": "scripts/qa-release-1-2-integration.mjs"
+    }
+  ]
+}

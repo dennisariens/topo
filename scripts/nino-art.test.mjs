@@ -177,8 +177,10 @@ test('canonical engines, geometry, original artwork and print artifacts equal pi
       assert.deepEqual(JSON.parse(a.ev(`JSON.stringify(${expression})`)),JSON.parse(b.ev(`JSON.stringify(${expression})`)),expression);
     }
     assert.equal(a.ev('ITEMS.length'),45);
-    // All rendered map shape attributes, independent of illustration-only DOM selectors.
+    // Existing target/context geometry stays exact. Release 1.2 adds only the six
+    // separately pinned background polygons covered by geography/lakes.test.mjs.
     const geometry = app => [...app.d.querySelectorAll('#map path, #map circle, #map polygon, #map polyline')]
+      .filter(n => !n.closest('#lakeGeometry'))
       .map(n => [...n.attributes].filter(a => ['d','cx','cy','r','points','viewBox'].includes(a.name)).map(a => [a.name,a.value]));
     assert(geometry(a).length > 45, 'map geometry comparison is not empty');
     assert.deepEqual(geometry(a),geometry(b));

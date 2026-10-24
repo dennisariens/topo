@@ -1,0 +1,21 @@
+{
+  "node": "24.15.0",
+  "npmCi": "PASS: added 37 packages; lockfile from pinned Hermes PR unchanged",
+  "lint": "PASS",
+  "test": "PASS: 13 test programs, including six nino-art test cases and lake regression",
+  "build": "PASS",
+  "audit": "PASS: zero vulnerabilities",
+  "sourceAudit": "PASS",
+  "browserSuites": [
+    "nino/browser-results.json",
+    "lakes/browser-results.json",
+    "polish/browser-results.json",
+    "replay/browser-results.json",
+    "combined-offline.json"
+  ],
+  "scope": "combined app; no merge to target or deployment",
+  "independentHermesReview": "pending; request exact-SHA review on draft integration PR",
+  "physicalIPadSafari": "not tested",
+  "learnerFeedback": "not tested",
+  "realPrintProof": "not tested"
+}

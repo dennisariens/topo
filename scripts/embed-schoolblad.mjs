@@ -1,0 +1,11 @@
+import {readFileSync,writeFileSync} from 'node:fs';
+const root=new URL('../',import.meta.url),file=new URL('index.html',root);
+let html=readFileSync(file,'utf8');
+const css='/* BEGIN SCHOOLBLAD */\n'+readFileSync(new URL('scripts/schoolblad.css',root),'utf8')+'/* END SCHOOLBLAD */';
+const js='// BEGIN SCHOOLBLAD\n'+readFileSync(new URL('scripts/schoolblad.js',root),'utf8')+'// END SCHOOLBLAD';
+html=html.includes('/* BEGIN SCHOOLBLAD */')?html.replace(/\/\* BEGIN SCHOOLBLAD \*\/[\s\S]*?\/\* END SCHOOLBLAD \*\//,()=>css):html.replace('</style>',()=>css+'\n</style>');
+html=html.replace(/\/\/ BEGIN SCHOOLBLAD\n[\s\S]*?\/\/ END SCHOOLBLAD\n/,'');
+const position=html.lastIndexOf("sync();mode('route');");
+if(position<0)throw Error('Missing app initialization');
+html=html.slice(0,position)+js+'\n'+html.slice(position);
+writeFileSync(file,html);console.log('Original schoolblad overlay embedded; no external assets');

@@ -1,0 +1,76 @@
+Node v24.15.0
+
+$ npm run lint
+
+> topo-italie-baseline@0.1.0 lint
+> node scripts/check-syntax.mjs
+
+App, print page, standalone bundle and learning engine JavaScript syntax: OK
+Pinned Nino art, reusable slots and all offline image bytes: OK
+
+$ npm test
+
+> topo-italie-baseline@0.1.0 test
+> node scripts/validate-map.mjs && node scripts/validate-print.mjs && node scripts/learning-engine.test.mjs && node scripts/route-engine.test.mjs && node scripts/exam-flow.test.mjs && node scripts/ui-smoke.test.mjs && node scripts/route-dom.test.mjs && node scripts/work-regression.cjs && node scripts/release-1-dom.test.mjs && node scripts/qa-findings.test.mjs && node scripts/polish.test.mjs && node --test scripts/nino-art.test.mjs && node scripts/geography/lakes.test.mjs && node --test scripts/schoolblad.test.mjs
+
+45 content entries, anchors, coastal markers, microstates, selected land checks: OK
+Limit: drawn Italy polygon is not an independent geographic ground truth
+Printable A4 groups, school photo and all 45 worksheet mappings: OK
+Shuffle, coverage, spaced mistake review, legacy migration and Vespa cadence: OK
+Route locks, stages, repair spacing, gold, persistence, rewards and scheduled review: OK
+Finite geography test, point/write grading, scoring, skips and restart: OK
+Full standalone boot and learn/point/write/exam/reset button flow: OK
+All 11 route chapters and gold tests, dock controls, mode switch, resume and reset: OK
+Real HTML DOM: controls, SVG events, reload, atomic rewards, unique IDs, enclave and storage failure: OK
+PASS: JavaScript syntax; 168 correct answers → 21 pizzas / 7 trips; every 8/24 rollover; reload preserves rewards; duplicate answer cannot earn twice.
+PASS: six-question breaks retain full gold coverage; halfway save/restore; daily goal resets independently of lifetime rewards.
+PASS: adaptive six-task session, skill isolation, restore and legacy migration; 27 source-projected locations; 45 geometry/code baselines; fallback matches live coordinates.
+PASS: three-stage migration preserves writing completion; code sessions removed; tests and adaptive rounds use pointing/writing only.
+Legacy saves, skill isolation, round/lifetime scores, neutral keyboard picker, microstate highlights, river tolerance and daily reset: OK
+QA-1: stage/gold replay daily credit, reload/resubmit idempotence and pizza ledger: PASS
+QA-2: 19 malformed imports preserve exact memory/storage before confirmation; valid schemas 1/2 and interrupted/code migrations: PASS
+Release 1.1: eleven icon references/fallback, route disclosures, eight-slice copy, NOW gating and truthful Nino outcomes: PASS
+✔ pure role policy: strict Gold, real success, exam suppression and genuine trip only (1.804882ms)
+✔ all six local exports equal manifest hashes and canonical embedded WebP bytes (975.832419ms)
+✔ pending scenes/postcards stay locked or empty; missing and failed art falls back safely (427.759215ms)
+✔ canonical engines, geometry, original artwork and print artifacts equal pinned base (844.825705ms)
+✔ DOM grade/resubmit/reload, chapter completion, Gold/replay/miss preserve base progress and rewards (3417.377433ms)
+✔ free practice wrong-only art, exam suppression, and arrival only at real reward threshold (582.020152ms)
+ℹ tests 6
+ℹ suites 0
+ℹ pass 6
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 7121.525372
+Six pinned lake polygons, exact projection/envelopes/hashes, Como forks, live/static/offline parity and noninteractive background contract: OK
+✔ one unchanged photograph; all pre-existing code, geography, art and print are exact (371.572138ms)
+✔ Learn, Point, Write, exam and route reference opening never mutates a task or progress (1261.047633ms)
+✔ answered/unanswered route and Gold remain exact across cancel; draft answer/caret recover (604.239643ms)
+✔ modal semantics, keyboard containment and progressive legacy fallback (1392.821087ms)
+ℹ tests 4
+ℹ suites 0
+ℹ pass 4
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 4733.496711
+
+$ npm run build
+
+> topo-italie-baseline@0.1.0 build
+> node scripts/build.mjs
+
+Original schoolblad overlay embedded; no external assets
+Embedded six byte-verified owner WebPs; no external runtime assets
+Six background lakes generated from pinned Natural Earth polygons (no simplification)
+Static preview generated from canonical 45 places
+Generated print.html from 45 current worksheet items and 12 groups
+Standalone interactive HTML: output/html/topo-italie-interactief.html
+App, print page, standalone bundle and learning engine JavaScript syntax: OK
+Pinned Nino art, reusable slots and all offline image bytes: OK
+45 content entries, anchors, coastal markers, microstates, selected land checks: OK
+Limit: drawn Italy polygon is not an independent geographic ground truth
+Static build: dist/index.html, dist/print.html, dist/printboek.pdf

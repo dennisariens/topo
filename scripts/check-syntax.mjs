@@ -3,6 +3,9 @@ import { Script } from 'node:vm';
 import { createHash } from 'node:crypto';
 
 const html = readFileSync(new URL('../index.html', import.meta.url), 'utf8');
+for (const [file,start,end] of [['schoolblad.js','// BEGIN SCHOOLBLAD\n','// END SCHOOLBLAD'],['schoolblad.css','/* BEGIN SCHOOLBLAD */\n','/* END SCHOOLBLAD */']]) {
+  if(!html.includes(start+readFileSync(new URL(file,import.meta.url),'utf8')+end))throw Error('Embedded schoolblad source is stale; rebuild');
+}
 const heroArt = readFileSync(new URL('../output/art/topo-italie-avontuur.webp', import.meta.url)).toString('base64');
 const ninoArt = readFileSync(new URL('../output/art/nino-op-de-scooter.webp', import.meta.url)).toString('base64');
 if (!html.includes(`<img src="data:image/webp;base64,${heroArt}"`)) throw new Error('Route panorama differs from its source WebP');

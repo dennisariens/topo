@@ -1,0 +1,11 @@
+{
+  "baseline": "c68ace4e44a6e797f536ec1a8d6b517d29167320",
+  "canonicalMinusTwoOverlayBlocks": "byte-identical to baseline (dedicated test)",
+  "originalPhotoDataUriSha256": "b489693b683acfe48888d0c05b66eb2da4c47a9c6941c68537755dc2034fb56c",
+  "originalPhotoUnchanged": true,
+  "photoCountInMarkup": 1,
+  "printHtmlUnchanged": true,
+  "pdfUnchanged": true,
+  "noStateAccessInOverlaySource": true,
+  "noRuntimeDependencies": true
+}

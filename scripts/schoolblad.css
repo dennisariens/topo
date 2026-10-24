@@ -1,0 +1,22 @@
+.schoolbladButton{border:1px solid #cdd9d5;border-radius:10px;background:#fffefa;color:#345860;padding:7px 12px;min-height:44px;font:inherit;font-size:.875rem;font-weight:700}
+.schoolbladButton:hover{background:#eef5f1}.schoolbladButton:focus-visible,.schoolbladDialog :focus-visible{outline:3px solid #087887;outline-offset:3px}
+.schoolbladRouteButton{display:block;margin:14px 0 0}
+.schoolbladDockButton{margin-top:10px}
+.schoolbladDialog{box-sizing:border-box;width:min(860px,calc(100% - 24px));height:min(940px,calc(100vh - 24px));height:min(940px,calc(100dvh - 24px));max-width:none;max-height:none;padding:0;border:1px solid #d9c9ac;border-radius:18px;background:#fffaf0;color:var(--ink);box-shadow:0 20px 70px #463a2940;overflow:hidden}
+.schoolbladDialog:not([open]){display:none}.schoolbladDialog[open]{display:flex;flex-direction:column;animation:schoolbladUnfold .18s ease-out;transform-origin:top center}
+.schoolbladDialog::backdrop{background:#18352f66}
+.schoolbladHeader{padding:14px 18px 10px;display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap;border-bottom:1px solid #e5dac7;flex:none}
+.schoolbladHeader h2{font-size:1.125rem;line-height:1.3;margin:0}.schoolbladHeader p{font-size:.8125rem;margin:4px 0 0;color:#56696b}
+.schoolbladClose{min-height:44px;max-width:100%;border:1px solid #b8c9c4;border-radius:10px;background:white;color:#23494d;font:inherit;font-size:.875rem;font-weight:750;padding:8px 12px}
+.schoolbladToolbar{display:flex;align-items:center;gap:8px;flex-wrap:wrap;padding:10px 18px;flex:none}
+.schoolbladToolbar button{min-width:44px;min-height:44px;border:1px solid #c7d4cf;border-radius:10px;background:#fff;color:#254b50;font:inherit;font-weight:700;padding:7px 12px}
+.schoolbladToolbar button:disabled{opacity:.45;cursor:default}.schoolbladToolbar output{min-width:3.8em;text-align:center;font-size:.875rem;font-variant-numeric:tabular-nums}
+.schoolbladHelp{margin:0;padding:0 18px 10px;font-size:.8125rem;color:#56696b;flex:none}
+.schoolbladViewport{position:relative;flex:1;min-height:60px;min-width:0;overflow:auto;overscroll-behavior:contain;touch-action:none;background:#eee7d8;cursor:grab;outline-offset:-4px!important}
+.schoolbladViewport:active{cursor:grabbing}.schoolbladStage{position:relative;min-width:100%;min-height:100%}
+.schoolbladDialog #school{position:absolute;inset:auto;display:block;height:auto;max-width:none;border:0;opacity:1;object-fit:contain;pointer-events:none;user-select:none;-webkit-user-select:none;box-shadow:0 3px 8px #5b463c35,0 14px 26px #5b463c26}
+@keyframes schoolbladUnfold{from{opacity:0;transform:translateY(-8px) scaleY(.98)}to{opacity:1;transform:none}}
+@media(min-width:1100px){.schoolbladDialog{width:min(760px,72vw);margin-right:28px}}
+@media(max-width:420px){.schoolbladHeader{padding:12px;gap:8px}.schoolbladToolbar{padding:8px 12px;gap:6px}.schoolbladHelp{padding:0 12px 8px}.schoolbladClose{width:100%}}
+@media(prefers-reduced-motion:reduce){.schoolbladDialog[open]{animation:none}}
+@media print{.schoolbladDialog,.schoolbladButton{display:none!important}}

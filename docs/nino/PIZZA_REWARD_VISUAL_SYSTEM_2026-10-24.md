@@ -43,3 +43,6 @@ Italian margherita pizza is a deliberate, playful Topo identity cue. Keep it che
 **Pizza master / wedge / board binaries: NOT YET PRODUCED OR APPROVED.**
 **Site-wide code integration: NOT STARTED under this decision.**
 **Merge / deploy: NOT AUTHORIZED.**
+
+## Candidate proof-of-concept produced in conversation (not committed)
+A draft visual asset set `topo-pizza-reward-candidate-2026-10-24.zip` was assembled from the earlier generated visual direction board. It contains transparent candidate master, 45-degree slice cutout, a distinct wooden board layer, nine aligned 0/8–8/8 state PNGs, WebP counterparts, contact-sheet preview, and SHA-256 manifest. **These are extracted/upscaled from a ~314px design-board pizza, not a true native high-resolution master.** They are a QA/design candidate only, are NOT owner-approved, NOT uploaded to this branch, and MUST NOT be silently substituted for an approved production master. Art owner should review legibility at 48px and crust edges before Codex builds a runtime replacement.

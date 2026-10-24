@@ -1,0 +1,88 @@
+{
+  "base": "c68ace4e44a6e797f536ec1a8d6b517d29167320",
+  "protectedFiles": [
+    "index.html",
+    "scripts/build.mjs",
+    "scripts/learning-engine.js",
+    "scripts/route-engine.js",
+    "package.json",
+    "package-lock.json",
+    "print.html",
+    "output/pdf/topo-italie-printboek.pdf",
+    "output/html/topo-italie-interactief.html",
+    "output/html/topo-italie-duolingo.html"
+  ],
+  "productionFilesChanged": 0,
+  "originalInlineScriptsByteIdentical": 3,
+  "canonicalSHA256": "e423b86ab588666fcbeb2fae46f78058582d1093fe1cf183fdb7bf384dcc4465",
+  "cssBytes": 11900,
+  "uiBytes": 6988,
+  "combinedGzipBytes": 6003,
+  "proofBytes": 2995021,
+  "contrastChecks": [
+    {
+      "name": "primary text",
+      "fg": "#203c39",
+      "bg": "#fbf8ef",
+      "ratio": 11.19,
+      "minimum": 4.5
+    },
+    {
+      "name": "secondary text",
+      "fg": "#5b7069",
+      "bg": "#fffefa",
+      "ratio": 5.25,
+      "minimum": 4.5
+    },
+    {
+      "name": "city/land",
+      "fg": "#9b442f",
+      "bg": "#f2e3bf",
+      "ratio": 5.06,
+      "minimum": 3
+    },
+    {
+      "name": "context border",
+      "fg": "#64765f",
+      "bg": "#dce2cf",
+      "ratio": 3.68,
+      "minimum": 3
+    },
+    {
+      "name": "country border",
+      "fg": "#6c775f",
+      "bg": "#e8ddbf",
+      "ratio": 3.5,
+      "minimum": 3
+    },
+    {
+      "name": "Italy coast",
+      "fg": "#8a8269",
+      "bg": "#f2e3bf",
+      "ratio": 3.02,
+      "minimum": 3
+    },
+    {
+      "name": "lake border/fill",
+      "fg": "#3e6d80",
+      "bg": "#a5cbd8",
+      "ratio": 3.28,
+      "minimum": 3
+    },
+    {
+      "name": "river/land",
+      "fg": "#477f8d",
+      "bg": "#f2e3bf",
+      "ratio": 3.52,
+      "minimum": 3
+    },
+    {
+      "name": "context label",
+      "fg": "#52624c",
+      "bg": "#dce2cf",
+      "ratio": 4.93,
+      "minimum": 4.5
+    }
+  ],
+  "contrastLimit": "Selected proposed normal-state token pairs only; not comprehensive accessibility certification or an audit of inherited feedback styles."
+}

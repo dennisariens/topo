@@ -1,0 +1,8 @@
+{
+  "base": "c68ace4e44a6e797f536ec1a8d6b517d29167320",
+  "canonicalSHA256": "e423b86ab588666fcbeb2fae46f78058582d1093fe1cf183fdb7bf384dcc4465",
+  "canonicalBytes": 2975877,
+  "proofBytes": 2995021,
+  "sourcePolicy": "Canonical HTML/scripts/geometry embedded unchanged. Only docs presentation CSS and fixture UI appended. No production files edited.",
+  "generatedWith": "node docs/map-design-proof/generate.mjs"
+}

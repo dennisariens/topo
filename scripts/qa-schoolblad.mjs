@@ -6,7 +6,7 @@ import {pathToFileURL} from 'node:url';
 import {execFileSync} from 'node:child_process';
 const {chromium}=await import(process.env.PLAYWRIGHT_MODULE||'playwright');
 const browser=await chromium.launch({headless:true,executablePath:process.env.CHROME_PATH||undefined});
-const root=new URL('../',import.meta.url),output=new URL('docs/visual/schoolblad/',root);mkdirSync(output,{recursive:true});
+const root=new URL('../',import.meta.url),output=process.env.QA_OUTPUT?pathToFileURL(process.env.QA_OUTPUT+'/'):new URL('docs/visual/schoolblad/',root);mkdirSync(output,{recursive:true});
 const base='c68ace4e44a6e797f536ec1a8d6b517d29167320',before=join(mkdtempSync(join(tmpdir(),'topo-schoolblad-before-')),'index.html');
 writeFileSync(before,execFileSync('git',['show',base+':index.html'],{maxBuffer:24*1024*1024}));
 const errors=[],network=[],results=[];

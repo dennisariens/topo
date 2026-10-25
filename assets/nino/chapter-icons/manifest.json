@@ -1,0 +1,220 @@
+{
+  "name": "Topo Chapter Icon Set V1",
+  "source_native": "1254x1254 pixels, RGBA (NOT 2048)",
+  "approved_master": "chapter-01-steden-1-6 (Florence V2)",
+  "art_branch": "art/nino-pizza-rewards-20261024",
+  "created_at": "2026-10-25",
+  "upload_status": "LOCAL_PACKAGE_ONLY_NOT_IN_GITHUB",
+  "check": "11 assets present, native image details preserved; alpha 1-15 fringes stripped; 512 WebP exports and 32/48/64/96 previews",
+  "assets": [
+    {
+      "id": "01-steden-1-6",
+      "title": "Florence V2",
+      "source_filename": "a_detailed_stylized_high_quality_3d_illustrated.png",
+      "source_sha256": "068b44b726c77d3d72f6689733c3ba2d69b0c9ee153146ddd2b87b8c54ba89d2",
+      "source_dimensions": [
+        1254,
+        1254
+      ],
+      "native_source": true,
+      "alpha_cutoff_minor_fringe": 16,
+      "sub_16_alpha_pixels_cleaned": 34869,
+      "png_path": "assets/nino/chapter-icons/masters/chapter-01-steden-1-6.png",
+      "png_sha256": "3e0deb011d7cf6f92681e126365119ac55f593318da12fd3f69c6c4b42194737",
+      "webp_512_path": "assets/nino/chapter-icons/exports/chapter-01-steden-1-6.webp",
+      "webp_512_sha256": "337e02ba2c1ecb909d9e1f9921070492e575c64e6f255733b5837c817fa42c11",
+      "design_status": "GO",
+      "visual_note": null
+    },
+    {
+      "id": "02-steden-7-12",
+      "title": "Colosseum",
+      "source_filename": "gouden_colosseum_in_rome.png",
+      "source_sha256": "db80571814e17124cbd3aca4d104817dfaf5b32db19d9f31c359308217984003",
+      "source_dimensions": [
+        1254,
+        1254
+      ],
+      "native_source": true,
+      "alpha_cutoff_minor_fringe": 16,
+      "sub_16_alpha_pixels_cleaned": 22801,
+      "png_path": "assets/nino/chapter-icons/masters/chapter-02-steden-7-12.png",
+      "png_sha256": "8cb987e0096b2093f3fe7d83b32444c233e0ea515b4c126852450517ac5c14cf",
+      "webp_512_path": "assets/nino/chapter-icons/exports/chapter-02-steden-7-12.webp",
+      "webp_512_sha256": "f9c76c2c0926d31838abc82063a4e866546e0c5b49c4c75cf68ac3d1fb739589",
+      "design_status": "GO",
+      "visual_note": null
+    },
+    {
+      "id": "03-extra-steden-13-18",
+      "title": "Toscaanse torens",
+      "source_filename": "circular_framed_picturesque_mediterranean_italian.png",
+      "source_sha256": "862ad9198e2a8486fdf922a4f9a0c163d319b07a258f57b194ba43217a449547",
+      "source_dimensions": [
+        1254,
+        1254
+      ],
+      "native_source": true,
+      "alpha_cutoff_minor_fringe": 16,
+      "sub_16_alpha_pixels_cleaned": 32966,
+      "png_path": "assets/nino/chapter-icons/masters/chapter-03-extra-steden-13-18.png",
+      "png_sha256": "3c739c4232d69f436604159250bd332528905b87ed0a2bb9f721755be2138325",
+      "webp_512_path": "assets/nino/chapter-icons/exports/chapter-03-extra-steden-13-18.webp",
+      "webp_512_sha256": "1801146a77b15f4e7b57b3e8a543244b55e37f828b57f02bf83dd1636f034b63",
+      "design_status": "GO",
+      "visual_note": null
+    },
+    {
+      "id": "04-extra-steden-19-23",
+      "title": "Ligurische kust",
+      "source_filename": "a_highly_detailed_bright_sunny_mediterranean_coa.png",
+      "source_sha256": "0fbcfe0fa9803c81112d35197da957bec1110a946b3a064af6587d80b9341c21",
+      "source_dimensions": [
+        1254,
+        1254
+      ],
+      "native_source": true,
+      "alpha_cutoff_minor_fringe": 16,
+      "sub_16_alpha_pixels_cleaned": 17885,
+      "png_path": "assets/nino/chapter-icons/masters/chapter-04-extra-steden-19-23.png",
+      "png_sha256": "053a4ea9ee61e6271f880c50efd09722171a0804684cc87cef1de81b6c812311",
+      "webp_512_path": "assets/nino/chapter-icons/exports/chapter-04-extra-steden-19-23.webp",
+      "webp_512_sha256": "125a496d4c65e3008c5b25606048b087a8d1678dfe551f3d7b2d256a33de1526",
+      "design_status": "GO",
+      "visual_note": null
+    },
+    {
+      "id": "05-eilanden",
+      "title": "Eilandkust",
+      "source_filename": "a_circular_framed_high_detail_bright_mediterrane.png",
+      "source_sha256": "7bb707364321468cbf7ada66554184801f49deb73dce941b9481922eaf78c6a2",
+      "source_dimensions": [
+        1254,
+        1254
+      ],
+      "native_source": true,
+      "alpha_cutoff_minor_fringe": 16,
+      "sub_16_alpha_pixels_cleaned": 17710,
+      "png_path": "assets/nino/chapter-icons/masters/chapter-05-eilanden.png",
+      "png_sha256": "09435f1370c9682759c0508f1ca201df7fa15c18b905fd0de32d094751ab5b17",
+      "webp_512_path": "assets/nino/chapter-icons/exports/chapter-05-eilanden.webp",
+      "webp_512_sha256": "f1ca42b2a08c2586ef601a1d4e6174a1996bdeb95a64c0b8fadabafbcb2fe9f0",
+      "design_status": "GO_WITH_NOTE",
+      "visual_note": "Eiland leest deels als kust; UI-label Eilanden is noodzakelijk."
+    },
+    {
+      "id": "06-bergen",
+      "title": "Dolomieten",
+      "source_filename": "dolomietenpanorama_met_alpenweide.png",
+      "source_sha256": "7db8dc6326fbe57708bc93662e11cd2c6d379a23b7cadc997c7c8c13681ba289",
+      "source_dimensions": [
+        1254,
+        1254
+      ],
+      "native_source": true,
+      "alpha_cutoff_minor_fringe": 16,
+      "sub_16_alpha_pixels_cleaned": 22214,
+      "png_path": "assets/nino/chapter-icons/masters/chapter-06-bergen.png",
+      "png_sha256": "6beee992a1efa5f2b0a24185de7041b9d9e51e6f2952ab48e56817f48bce2578",
+      "webp_512_path": "assets/nino/chapter-icons/exports/chapter-06-bergen.webp",
+      "webp_512_sha256": "a6b8def0c138109385f96de64c02026d11dd19bea9ffa9ad6e31fca5fab0b7c3",
+      "design_status": "GO",
+      "visual_note": null
+    },
+    {
+      "id": "07-vulkanen",
+      "title": "Etna-illustratie",
+      "source_filename": "a_circular_framed_high_quality_vibrant_digital_i.png",
+      "source_sha256": "68843ac7f0904ee78a158fdb26a15e377cf39a6320a1f190fa13373ea02cfdc4",
+      "source_dimensions": [
+        1254,
+        1254
+      ],
+      "native_source": true,
+      "alpha_cutoff_minor_fringe": 16,
+      "sub_16_alpha_pixels_cleaned": 34833,
+      "png_path": "assets/nino/chapter-icons/masters/chapter-07-vulkanen.png",
+      "png_sha256": "2ed61ce515349192625701482713aacc81d0632fe18dc34e35d8215c4897146f",
+      "webp_512_path": "assets/nino/chapter-icons/exports/chapter-07-vulkanen.webp",
+      "webp_512_sha256": "52efca255b21936d51c7c86868d438005393b2fac66a7ae8c2f05daaa593c232",
+      "design_status": "GO",
+      "visual_note": null
+    },
+    {
+      "id": "08-streken",
+      "title": "Val d’Orcia",
+      "source_filename": "wide_scenic_circular_framed_landscape_illustrati.png",
+      "source_sha256": "b43e4082737f8df7c4cd1dc0918f8edfdae01e95e23a4f94c62fb709ca1f499f",
+      "source_dimensions": [
+        1254,
+        1254
+      ],
+      "native_source": true,
+      "alpha_cutoff_minor_fringe": 16,
+      "sub_16_alpha_pixels_cleaned": 18985,
+      "png_path": "assets/nino/chapter-icons/masters/chapter-08-streken.png",
+      "png_sha256": "20c105e185900b0b36e69e5fcb7cc61a490073ba8e19d93b9833216431867927",
+      "webp_512_path": "assets/nino/chapter-icons/exports/chapter-08-streken.webp",
+      "webp_512_sha256": "2885eeb2d2b4d2479895761457968768d7046e65958ed6df0fd1ee056ee88a14",
+      "design_status": "GO",
+      "visual_note": null
+    },
+    {
+      "id": "09-landen",
+      "title": "Italiaanse grens met FR/CH/AT",
+      "source_filename": "alpenvallei_met_grenswegwijzer.png",
+      "source_sha256": "5608ac025fd76d6eb14f996310a0083f70eb83c73c5042c2ed6273eb70435182",
+      "source_dimensions": [
+        1254,
+        1254
+      ],
+      "native_source": true,
+      "alpha_cutoff_minor_fringe": 16,
+      "sub_16_alpha_pixels_cleaned": 17440,
+      "png_path": "assets/nino/chapter-icons/masters/chapter-09-landen.png",
+      "png_sha256": "6f1452c93a6f2fd2dfb6a6a18e7e521aaf12e6888f6bed246156d7245e05a144",
+      "webp_512_path": "assets/nino/chapter-icons/exports/chapter-09-landen.webp",
+      "webp_512_sha256": "c616f7524a546ed77e59347cbf8335be9013e687483fa689e00b1c26ab7a0f79",
+      "design_status": "GO_WITH_NOTE",
+      "visual_note": "Landbord is symbolisch, pijlen zijn geen geografisch exacte routes; landnamen op 48px onleesbaar, UI-label noodzakelijk."
+    },
+    {
+      "id": "10-zeeen",
+      "title": "Middellandse Zee",
+      "source_filename": "a_circular_high_detail_stylized_illustrative_sea.png",
+      "source_sha256": "917e55ca352e90a1e25631b02dab87fd2d9af963a754e77ee4c83145be98873b",
+      "source_dimensions": [
+        1254,
+        1254
+      ],
+      "native_source": true,
+      "alpha_cutoff_minor_fringe": 16,
+      "sub_16_alpha_pixels_cleaned": 21397,
+      "png_path": "assets/nino/chapter-icons/masters/chapter-10-zeeen.png",
+      "png_sha256": "c4d776148c519cbd5efd2dc294e61a7a92fb5807a89fa779de70c37b97e2ae84",
+      "webp_512_path": "assets/nino/chapter-icons/exports/chapter-10-zeeen.webp",
+      "webp_512_sha256": "66139c1119925b9584aaa0de0be9472ff2c0272235ac019bf5316be7c2325f0f",
+      "design_status": "GO",
+      "visual_note": null
+    },
+    {
+      "id": "11-rivieren",
+      "title": "Italiaanse rivier",
+      "source_filename": "a_vibrant_high_detail_stylized_illustrative_circ.png",
+      "source_sha256": "15364983b460bbefe62837fea744bda2e058f0fbae5f96225cabadb70f2b4e5b",
+      "source_dimensions": [
+        1254,
+        1254
+      ],
+      "native_source": true,
+      "alpha_cutoff_minor_fringe": 16,
+      "sub_16_alpha_pixels_cleaned": 51731,
+      "png_path": "assets/nino/chapter-icons/masters/chapter-11-rivieren.png",
+      "png_sha256": "b9dd8949f125e526696671f7595943a594f8d01797a42fb2176b6255dd29e1a3",
+      "webp_512_path": "assets/nino/chapter-icons/exports/chapter-11-rivieren.webp",
+      "webp_512_sha256": "c08a48c15a9e64abe11e6f839b160c0d24961a09ea2d627dd43277575b368ff2",
+      "design_status": "GO",
+      "visual_note": null
+    }
+  ]
+}

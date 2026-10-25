@@ -1,45 +1,28 @@
-# Topo chapter icon set — visual benchmark & technical QA (2026-10-25)
+# TOPO CHAPTER ICONS — visual art QA / pre-Git sync — 2026-10-25
 
-**Status:** **GO for art-branch source upload.** Not yet integrated into app and NOT approved for production deployment.
+## Decision
+**ARTWORK GO — TECHNICAL CLEANUP DONE LOCALLY, GIT UPLOAD NOT YET DONE.** Eleven premium circular chapter icons visually consistent with the original Nino Italian illustrative world and the new Topo cream/terracotta/navy/turquoise interface.
 
-## Approved reference
-- Original owner-created Nino / Italian-coast visual assets and Topo 2026 renewed travel-journal UI.
-- First icon **Florence V2** defines the approved matte cream round frame; Rome, hilltown, Liguria, islands, Dolomites, Etna, regions, border, seas, rivers follow it.
-- Earlier composite concept-sheet icons are visual inspiration, not exact production masters; this eleven-piece V2 series supersedes their border/rendering treatment.
+- All 11 source master renders are native **1254×1254 RGBA** (do not claim 2048).
+- Production PNG derivatives are pixel-identical to source except nearly invisible alpha values 1–15 outside/near the cutout border cleared to zero; original colors/texture unchanged.
+- Individual masters have consistent round matte-cream frames and broad Italian art palette.
+- Each has transparent exterior in production derivatives, and 512px alpha WebP export. Small previews 32/48/64/96px provided.
+- No new Nino character or scooter drawn. No image/Git change to main branch.
 
-## Visual review
-| Icon | Subject | Visual gate |
-| --- | --- | --- |
-| 01 | Firenze Duomo | PASS |
-| 02 | Rome Colosseum | PASS |
-| 03 | San Gimignano-inspired town | PASS |
-| 04 | Ligurian coast | PASS |
-| 05 | Mediterranean islands | PASS with note: coast is more legible than isolated island silhouette |
-| 06 | Dolomites | PASS |
-| 07 | Etna-inspired volcano | PASS; stylized, not exact eruptive/topographic study |
-| 08 | Val d'Orcia regions | PASS |
-| 09 | Alpine border, Italian marker, France/Switzerland/Austria flags | PASS with note: arrow directions symbolic, not real pass geography |
-| 10 | Mediterranean sea | PASS |
-| 11 | Meandering river and bridge | PASS |
+## Small-screen suitability
+- At 96 and 64 pixels: all subjects recognizable.
+- At 48 pixels: labels help identify similar city icons. Keep chapter labels visible in UI.
+- At 32 pixels: many historical details and three tiny place names on Icon 09 cannot be read; use simplified existing SVG route pictograms for very small tap targets, and chapter labels in DOM.
 
-**Overall visual verdict:** 9/10 for coherent high-quality Nino/Topo warm Mediterranean premium illustration family. No new image generation required before pushing these masters.
+## Conceptual cautions (nonblocking)
+- **05 Eilanden:** depicts a close-up island *coast*, not the identifiable silhouette of Sardinia or Sicily; acceptable only as a decorative chapter illustration with explicit text label and true geography learned on map. Consider future revision if child confuses it with 'Zeeën'.
+- **09 Landen:** France, Switzerland and Austria Dutch text + flags read at medium and large sizes; **arrows are symbolic and not geographically correct from a specific border pass**. Do not reuse as geography quiz location/map. Slovenia and the microstates still remain in actual teaching content.
+- **07 Vulkanen:** cinematic Etna-inspired scene, **not an exact geographic/eruptive reconstruction**. Distinct from alpine mountains in navigation.
+- **11 Rivieren:** three-arch bridge is an evocative scene, not a specific documented Po bridge.
 
-## Technical gate
-- All 11 unique source images present in the conversation runtime, **native 1254×1254 RGBA**. Do not misreport as 2048 native.
-- All source images have transparency outside circle, but sub-16-alpha fringe/speckles around cutout perimeter. Clean these negligible fringe pixels to true transparent in derivative masters before upload.
-- Preserve original RGB colors and all visible content. Separate **archival PNG** from **optimized 512px WebP**.
-- Inspect 96/64/48/32px. At 64–96 the subjects work. At 32, icons are atmospheric rather than sufficient geographic markers: ALWAYS keep external chapter text and/or canonical legible SVG route pictogram.
-- 09 baked-in flag/text detail cannot be read at 32–48; do not rely on it to name countries.
-- 05 is an illustrative island coastline, not a map or literal Sardinia/Sicily silhouette. Geographic identification belongs to the real interactive map.
-- All icons use a creamy matte ring rather than Gold Mastery gold. No newly generated Nino characters.
-
-## Package prepared LOCALLY, not GitHub
-`TOPO-ICONS-ART-01.zip` through `TOPO-ICONS-ART-06.zip` (each <6MB) plus `TOPO-ICONS-QA-MANIFEST.zip`, in this conversation's downloads. These contain 11 cleanup-only native-size PNG masters, 11 alpha WebP exports, manifest of SHA-256 hashes and provenance, 32/48/64/96 previews, contact sheet and an optional safe art-branch upload shell script.
-**Important: source pixels and binaries are not yet in GitHub. Do not claim Git sync complete until the binary file paths appear in `assets/nino/chapter-icons/` in the GitHub tree.**
-
-## Codex/Hermes integration checks
-- Verify routing to all 11 actual lesson group IDs; maintain exact current map/scoring.
-- Check desktop/iPad/mobile small cards, dark/light contrast if supported, 200% font and focus/labels.
-- Preserve standalone offline availability, text equivalents, locked/unlocked contrast and profile/passport references.
-- Real iPad Safari acceptance is distinct and still pending.
-- Separate owner review before merge/deploy.
+## Handoff
+- Use `assets/nino/chapter-icons/masters/` as archival masters, `assets/nino/chapter-icons/exports/` for app-level candidates.
+- Preserve source docs, map SVG/geography content, quiz rules, current app icon and passport unlock logic.
+- App-side functional integration, icons matching 11 chapter IDs, reduced motion, offline export and responsive tests belong to Codex/Hermes.
+- Physical iPad QA and final owner review after integration are still pending.
+- Use `manifest.json` for source and export checksums and provenance.

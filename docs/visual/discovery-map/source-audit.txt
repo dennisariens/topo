@@ -1,0 +1,5 @@
+
+> topo-italie-baseline@0.1.0 audit:release-1-2
+> node scripts/audit-release-1-2.mjs
+
+Combined source audit: immutable art/geometry, entire Hermes app, engines/print, downloads and idempotent rebuild: PASS

@@ -1,0 +1,5 @@
+
+> topo-italie-baseline@0.1.0 qa:schoolblad
+> node scripts/qa-schoolblad.mjs
+
+Schoolblad: five viewports, all modes + Gold, answered/unanswered, caret/focus, keyboard modal, zoom/pan, iPad text/orientation and both offline downloads: PASS

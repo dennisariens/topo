@@ -1,0 +1,22 @@
+[
+  {
+    "board": "ipad-landscape-reference-comparison.png",
+    "actual": "ipad-landscape-discovery-learn.png",
+    "actual_size": [
+      1180,
+      820
+    ],
+    "reference_sha256": "3adcd8e01cffffb4016bfcf2c746d7f7f0edd9cdf274c60f6075f4ebb18d5cc9",
+    "source_geo": "unchanged canonical vector map; reference is comparison-only"
+  },
+  {
+    "board": "ipad-portrait-reference-comparison.png",
+    "actual": "ipad-portrait-discovery-learn.png",
+    "actual_size": [
+      820,
+      1180
+    ],
+    "reference_sha256": "3adcd8e01cffffb4016bfcf2c746d7f7f0edd9cdf274c60f6075f4ebb18d5cc9",
+    "source_geo": "unchanged canonical vector map; reference is comparison-only"
+  }
+]

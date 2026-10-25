@@ -1,0 +1,10 @@
+import{readFileSync,writeFileSync}from'node:fs';
+import{createHash}from'node:crypto';
+const root=new URL('../',import.meta.url),file=new URL('index.html',root),manifest=JSON.parse(readFileSync(new URL('assets/discovery/runtime-manifest.json',root),'utf8'));
+const bytes=readFileSync(new URL('assets/discovery/terrain.webp',root));if(bytes.length!==manifest.bytes||createHash('sha256').update(bytes).digest('hex')!==manifest.sha256)throw Error('Discovery DEM export differs from reviewed manifest');
+let html=readFileSync(file,'utf8');
+const css='/* BEGIN DISCOVERY MAP */\n'+readFileSync(new URL('scripts/discovery-map.css',root),'utf8')+'/* END DISCOVERY MAP */';
+const js='// BEGIN DISCOVERY MAP\nwindow.TOPO_ATLAS_DATA='+JSON.stringify({terrain:'data:image/webp;base64,'+bytes.toString('base64'),sha256:manifest.sha256,width:890,height:1235})+';\n'+readFileSync(new URL('scripts/discovery-map.js',root),'utf8')+'// END DISCOVERY MAP\n';
+html=html.replace(/\/\* BEGIN DISCOVERY MAP \*\/[\s\S]*?\/\* END DISCOVERY MAP \*\/\n?/,'');const style=html.lastIndexOf('</style>');if(style<0)throw Error('Missing inline style');html=html.slice(0,style)+css+'\n'+html.slice(style);
+html=html.replace(/\/\/ BEGIN DISCOVERY MAP\n[\s\S]*?\/\/ END DISCOVERY MAP\n/,'');const init=html.lastIndexOf("sync();mode('route');");if(init<0)throw Error('Missing app initialization');html=html.slice(0,init)+js+html.slice(init);
+writeFileSync(file,html);console.log('Discovery atlas embedded: pinned DEM, live two-choice utility, no external runtime dependency');

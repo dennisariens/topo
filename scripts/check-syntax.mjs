@@ -44,3 +44,9 @@ for(const [role,asset] of Object.entries(manifest.assets)){
  if(createHash('sha256').update(bytes).digest('hex')!==asset.sha256||embedded.assets[role]?.src!=='data:image/webp;base64,'+bytes.toString('base64'))throw Error('Offline art differs from immutable export: '+role);
 }
 console.log('Pinned Nino art, reusable slots and all offline image bytes: OK');
+const atlasSource=readFileSync(new URL('./discovery-map.js',import.meta.url),'utf8'),atlasCSS=readFileSync(new URL('./discovery-map.css',import.meta.url),'utf8');
+if(!html.includes(atlasSource+'// END DISCOVERY MAP')||!html.includes('/* BEGIN DISCOVERY MAP */\n'+atlasCSS+'/* END DISCOVERY MAP */'))throw Error('Stale Discovery map embedding');
+const atlas=JSON.parse(html.match(/window\.TOPO_ATLAS_DATA=(\{[^\n]+\});/)?.[1]||'null');
+const relief=readFileSync(new URL('../assets/discovery/terrain.webp',import.meta.url)),atlasManifest=JSON.parse(readFileSync(new URL('../assets/discovery/runtime-manifest.json',import.meta.url),'utf8'));
+if(!atlas||atlas.terrain!=='data:image/webp;base64,'+relief.toString('base64')||createHash('sha256').update(relief).digest('hex')!==atlasManifest.sha256)throw Error('Offline terrain source/hash mismatch');
+console.log('Discovery atlas code, original geometry references and embedded DEM bytes: OK');

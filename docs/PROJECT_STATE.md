@@ -1,5 +1,9 @@
 # Project state
 
+## Working Discovery Map candidate — owner benchmark implementation
+
+`hermes/topo-discovery-map-production` is based on verified schoolblad PR #27 `1c4d00f8` atop integrated PR #17 `c68ace4e`. Exactly two live map styles share the original vector/hit/grading engine. Discovery embeds a 59,152-byte geographically registered DEM relief, Riviera water/materials and restrained original-Nino framing; Schoolkaart paint is retained. Active question/draft/progress survive style selection; explicit preference is separate from learner saves. Both standalone HTML files embed everything. Original schoolblad module/style, owner art, geography, learning/reward engines and print are unchanged. Real browser evidence covers desktop, both iPad orientations, 390/320px phones, route Discover→Point, zoomed neutral touch picking and source schoolblad regression. See `DISCOVERY_MAP.md` for actual reference comparisons, exact sources, test output and explicitly remaining visual gaps. Draft review candidate only: physical iPad/VoiceOver/owner visual acceptance remain open; no merge/deploy. This supersedes treating PR #26's conservative technical proof as the finished visual implementation.
+
 ## Release 1.2 candidate — owner art in the runtime
 
 `hermes/topo-nino-visual-integration` is based precisely on Release 1.1 `a481317b33f5f6f55c179ee0fbfe6b211663be7b`, targeting `codex/topo-release-1-1-polish`. Six byte-verified WebP exports from owner art commit `047f74390bbb0cc7cfbd1fa3ba4f65fe23e2ec6d` are embedded in the self-contained app. Welcome, Guide, Encourage, Success, new earned Gold and actual Vespa Arrival follow real events. Gold pauses/replays never use the Gold pose; mixed rounds do not imply perfection. Existing artwork, both learning engines, geography, progress/reward schemas and print assets are preserved. Reusable chapter/postcard slots hide unfinished art without inventing unlocks. No app icon selected; art masters/branch untouched.

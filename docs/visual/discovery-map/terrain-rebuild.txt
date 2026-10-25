@@ -1,0 +1,87 @@
+{
+  "output": "/Users/dennisariens/projects/topo-discovery-map/assets/discovery/terrain.webp",
+  "bytes": 59152,
+  "tiles": 63,
+  "validation": {
+    "all_samples_finite": true,
+    "sample_count": 1099150,
+    "source_tile_count": 63,
+    "dem_elevation_range_m": [
+      -4248.588264930671,
+      4344.556293487712
+    ],
+    "webp_decoded_dimensions_verified": true,
+    "under_220000_bytes": true,
+    "landmark_checks": [
+      {
+        "name": "Mont Blanc / western Alps",
+        "lon_lat": [
+          6.865,
+          45.833
+        ],
+        "svg_xy": [
+          152.075,
+          301.6089999999999
+        ],
+        "nearby_max_elevation_m": 4344.556293487712,
+        "expected_range_m": [
+          2500,
+          4900
+        ],
+        "passed": true
+      },
+      {
+        "name": "Gran Sasso / central Apennines",
+        "lon_lat": [
+          13.565,
+          42.47
+        ],
+        "svg_xy": [
+          520.5749999999999,
+          560.56
+        ],
+        "nearby_max_elevation_m": 2606.8395639778264,
+        "expected_range_m": [
+          1400,
+          3100
+        ],
+        "passed": true
+      },
+      {
+        "name": "Etna",
+        "lon_lat": [
+          14.995,
+          37.75
+        ],
+        "svg_xy": [
+          599.2249999999999,
+          924.0
+        ],
+        "nearby_max_elevation_m": 3121.697065548396,
+        "expected_range_m": [
+          2000,
+          3500
+        ],
+        "passed": true
+      },
+      {
+        "name": "Po plain near Ferrara",
+        "lon_lat": [
+          11.62,
+          44.84
+        ],
+        "svg_xy": [
+          413.5999999999999,
+          378.0699999999997
+        ],
+        "nearby_max_elevation_m": 13.427968985194367,
+        "expected_range_m": [
+          -10,
+          100
+        ],
+        "passed": true
+      }
+    ],
+    "registration_roundtrip_max_error_px": 4.547473508864641e-13
+  }
+}

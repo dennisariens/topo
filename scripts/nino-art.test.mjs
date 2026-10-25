@@ -270,6 +270,11 @@ test('free practice wrong-only art, exam suppression, and arrival only at real r
     both(a=>a.ev("mode('write');state.pizzas=2;state.slices=7;state.trips=0;sync()"));
     assert.equal(role(app,'#arrivalArt'),null,'no arrival for an almost-earned trip');
     both(a=>{a.q('answer').value=a.ev('state.current.name');a.q('check').click();});
+    // Drain the transient full-pizza/open-box stages before the earned trip.
+    for(let n=0;n<6;n++){
+      const timer=app.timers.find(t=>!t.ran&&[320,900].includes(t.delay));
+      if(!timer)break;timer.ran=true;timer.fn();
+    }
     assert.equal(app.ev('state.trips'),1); assert.equal(role(app,'#arrivalArt'),'arrival');
     assert(!app.q('vespaTripToast').classList.contains('hidden'));
     assert.deepEqual(snapshot(app),snapshot(old),'trip threshold does not change reward rules');

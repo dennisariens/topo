@@ -1,0 +1,41 @@
+{
+  "hingeImplemented": false,
+  "sequenceEvidence": [
+    {
+      "flavor": "margherita",
+      "time": 1792929600000,
+      "phase": "full-pizza"
+    },
+    {
+      "flavor": "margherita",
+      "time": 1792929600320,
+      "phase": "open-box"
+    },
+    {
+      "flavor": "salami",
+      "time": 1792929601220,
+      "phase": "full-pizza"
+    },
+    {
+      "flavor": "salami",
+      "time": 1792929601540,
+      "phase": "open-box"
+    },
+    {
+      "flavor": "quattro-formaggi",
+      "time": 1792929602440,
+      "phase": "full-pizza"
+    },
+    {
+      "flavor": "quattro-formaggi",
+      "time": 1792929602760,
+      "phase": "open-box"
+    },
+    {
+      "flavor": "quattro-formaggi",
+      "time": 1792929603660,
+      "phase": "journey",
+      "destination": "Andiamo! Nino rijdt naar Florence."
+    }
+  ]
+}

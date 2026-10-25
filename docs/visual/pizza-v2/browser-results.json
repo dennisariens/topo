@@ -1,0 +1,23 @@
+{
+  "checks": [
+    "27 production-rendered states; eight unique registered slices; full-frame reconstruction audited at asset preparation",
+    "actual eighth retrieval: all flavors and correct static box, full→open timing 320+900ms, Quattro before actual journey, duplicate grade/reload grant nothing",
+    "real backup import: 3,000,002 pizzas + 7 slices yields Quattro and trip 1,000,001; invalid import leaves save untouched",
+    "reset cancels pending earned-trip presentation; reward counters reset via existing control",
+    "desktop: route/lesson/box/travel fit; keyboard; reduced-motion static open box; next answer remains available",
+    "ipad-portrait: route/lesson/box/travel fit; keyboard; reduced-motion static open box; next answer remains available",
+    "ipad-landscape: route/lesson/box/travel fit; keyboard; reduced-motion static open box; next answer remains available",
+    "phone: route/lesson/box/travel fit; keyboard; reduced-motion static open box; next answer remains available",
+    "small-phone: route/lesson/box/travel fit; keyboard; reduced-motion static open box; next answer remains available",
+    "Discover→point→write→new Gold earns 3 pizzas and 1 trip; full Gold replay earns no reward and triggers no celebration",
+    "topo-italie-interactief.html: offline file://, all 7 runtime WebPs decode, real pizza/box/journey and next answer",
+    "topo-italie-duolingo.html: offline file://, all 7 runtime WebPs decode, real pizza/box/journey and next answer"
+  ],
+  "errors": [],
+  "externalRequests": [],
+  "hingedLid": {
+    "status": "BLOCKED",
+    "reason": "Complete renders have incompatible perspective and hidden surfaces; no separated registered lid/base/inside layers. Static opened box shown deliberately."
+  },
+  "deviceLimit": "Chromium emulation; physical iPad Safari not tested."
+}

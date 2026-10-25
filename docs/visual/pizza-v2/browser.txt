@@ -1,0 +1,9 @@
+
+> topo-italie-baseline@0.1.0 qa:pizza
+> node scripts/qa-pizza-reward.mjs
+
+{
+  "checks": 12,
+  "errors": [],
+  "external": []
+}

@@ -1,0 +1,38 @@
+{
+  "schoolblad": "1c4d00f8d5cf9a293ac0d2643b4163c2eed384d0",
+  "method": "read-only git merge-tree c68ace4 HEAD origin/codex/topo-schoolblad-overlay",
+  "files": [
+    {
+      "path": "docs/DECISIONS.md",
+      "conflict": true
+    },
+    {
+      "path": "docs/PROJECT_STATE.md",
+      "conflict": true
+    },
+    {
+      "path": "index.html",
+      "conflict": false
+    },
+    {
+      "path": "output/html/topo-italie-duolingo.html",
+      "conflict": false
+    },
+    {
+      "path": "output/html/topo-italie-interactief.html",
+      "conflict": false
+    },
+    {
+      "path": "package.json",
+      "conflict": true
+    },
+    {
+      "path": "scripts/build.mjs",
+      "conflict": false
+    },
+    {
+      "path": "scripts/check-syntax.mjs",
+      "conflict": false
+    }
+  ]
+}

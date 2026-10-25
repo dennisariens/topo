@@ -1,0 +1,274 @@
+{
+  "formal": [
+    {
+      "theme": "school",
+      "asked": {
+        "id": "area-h",
+        "name": "Toscane",
+        "mode": "point",
+        "answered": false
+      },
+      "trace": {
+        "xy": [
+          410,
+          495
+        ],
+        "screen": [
+          421.67247596153845,
+          463.20913461538464
+        ],
+        "native": {
+          "tag": "path",
+          "id": null,
+          "hit": "water-F"
+        }
+      },
+      "order": null,
+      "good": true,
+      "before": [
+        1,
+        0,
+        1,
+        0
+      ],
+      "after": [
+        2,
+        0,
+        2,
+        0
+      ],
+      "feedback": "Goed! Toscane."
+    },
+    {
+      "theme": "school",
+      "asked": {
+        "id": "area-g",
+        "name": "de Povlakte",
+        "mode": "point",
+        "answered": false
+      },
+      "trace": {
+        "xy": [
+          335,
+          340
+        ],
+        "screen": [
+          390.9873798076923,
+          399.7932692307692
+        ],
+        "native": {
+          "tag": "path",
+          "id": null,
+          "hit": "water-G"
+        }
+      },
+      "order": null,
+      "good": true,
+      "before": [
+        2,
+        0,
+        2,
+        0
+      ],
+      "after": [
+        3,
+        0,
+        3,
+        0
+      ],
+      "feedback": "Goed! de Povlakte."
+    },
+    {
+      "theme": "school",
+      "asked": {
+        "id": "water-G",
+        "name": "Po",
+        "mode": "point",
+        "answered": false
+      },
+      "trace": {
+        "xy": [
+          291.50421142578125,
+          357.9700012207031
+        ],
+        "screen": [
+          373.1917470785288,
+          407.1454187686627
+        ],
+        "native": {
+          "tag": "path",
+          "id": null,
+          "hit": "water-G"
+        }
+      },
+      "order": null,
+      "good": true,
+      "before": [
+        4,
+        0,
+        4,
+        0
+      ],
+      "after": [
+        5,
+        0,
+        5,
+        0
+      ],
+      "feedback": "Goed! Po."
+    },
+    {
+      "theme": "discovery",
+      "asked": {
+        "id": "area-h",
+        "name": "Toscane",
+        "mode": "point",
+        "answered": false
+      },
+      "trace": {
+        "xy": [
+          410,
+          495
+        ],
+        "screen": [
+          421.67247596153845,
+          463.20913461538464
+        ],
+        "native": {
+          "tag": "path",
+          "id": null,
+          "hit": "water-F"
+        }
+      },
+      "order": null,
+      "good": true,
+      "before": [
+        6,
+        0,
+        6,
+        0
+      ],
+      "after": [
+        7,
+        0,
+        7,
+        0
+      ],
+      "feedback": "Goed! Toscane."
+    },
+    {
+      "theme": "discovery",
+      "asked": {
+        "id": "area-g",
+        "name": "de Povlakte",
+        "mode": "point",
+        "answered": false
+      },
+      "trace": {
+        "xy": [
+          335,
+          340
+        ],
+        "screen": [
+          390.9873798076923,
+          399.7932692307692
+        ],
+        "native": {
+          "tag": "path",
+          "id": null,
+          "hit": "water-G"
+        }
+      },
+      "order": null,
+      "good": true,
+      "before": [
+        8,
+        1,
+        0,
+        0
+      ],
+      "after": [
+        9,
+        1,
+        1,
+        0
+      ],
+      "feedback": "Goed! de Povlakte."
+    },
+    {
+      "theme": "discovery",
+      "asked": {
+        "id": "water-G",
+        "name": "Po",
+        "mode": "point",
+        "answered": false
+      },
+      "trace": {
+        "xy": [
+          291.50421142578125,
+          357.9700012207031
+        ],
+        "screen": [
+          373.1917470785288,
+          407.1454187686627
+        ],
+        "native": {
+          "tag": "path",
+          "id": null,
+          "hit": "water-G"
+        }
+      },
+      "order": null,
+      "good": true,
+      "before": [
+        9,
+        1,
+        1,
+        0
+      ],
+      "after": [
+        10,
+        1,
+        2,
+        0
+      ],
+      "feedback": "Goed! Po."
+    }
+  ],
+  "rewards": [
+    {
+      "retrieval": 8,
+      "counters": [
+        8,
+        1,
+        0,
+        0
+      ],
+      "toast": []
+    },
+    {
+      "retrieval": 24,
+      "counters": [
+        24,
+        3,
+        0,
+        1
+      ],
+      "toast": []
+    }
+  ],
+  "extras": [
+    {
+      "schoolbladSameQuestion": true
+    },
+    {
+      "learnSelectionNoReward": true,
+      "lakes": {
+        "count": 6,
+        "pointerEvents": "none"
+      }
+    }
+  ],
+  "errors": [],
+  "network": []
+}

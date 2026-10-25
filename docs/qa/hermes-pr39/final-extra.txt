@@ -1,0 +1,51 @@
+PASS neutral real-crypto chooser, 27 anchors, keyboard and boundaries
+PASS offline topo-italie-interactief.html
+PASS offline topo-italie-duolingo.html
+{
+  "matrix": 0,
+  "routes": 0,
+  "anchors": 27,
+  "extras": [
+    {
+      "pointAnchors": 27,
+      "nativeCryptoRomeTrials": 24,
+      "orderCounts": {
+        "first": 13,
+        "second": 11
+      },
+      "wrongFirstRejected": 11,
+      "keyboardTrapEscape": true,
+      "sea": {
+        "overlap": {
+          "x": 341,
+          "y": 547,
+          "ids": [
+            "water-C",
+            "water-D"
+          ]
+        },
+        "inland": {
+          "x": 467,
+          "y": 323,
+          "id": "water-B"
+        }
+      },
+      "schoolbladUnchanged": true
+    },
+    {
+      "offline": "topo-italie-interactief.html",
+      "styles": 2,
+      "zoom": 2,
+      "realRegionRiverGrading": true
+    },
+    {
+      "offline": "topo-italie-duolingo.html",
+      "styles": 2,
+      "zoom": 2,
+      "realRegionRiverGrading": true
+    }
+  ],
+  "findings": [],
+  "errors": [],
+  "network": []
+}

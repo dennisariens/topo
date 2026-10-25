@@ -1,0 +1,301 @@
+{
+  "focus": [
+    {
+      "label": "baseline",
+      "trace": [
+        {
+          "tag": "BUTTON",
+          "text": "Stip 1",
+          "inside": true
+        },
+        {
+          "tag": "BUTTON",
+          "text": "Stip 2",
+          "inside": true
+        },
+        {
+          "tag": "BUTTON",
+          "text": "Terug naar de kaart",
+          "inside": true
+        },
+        {
+          "tag": "BODY",
+          "text": "browser-focus-boundary",
+          "inside": false
+        },
+        {
+          "tag": "BUTTON",
+          "text": "Stip 1",
+          "inside": true
+        },
+        {
+          "tag": "BUTTON",
+          "text": "Stip 2",
+          "inside": true
+        },
+        {
+          "tag": "BUTTON",
+          "text": "Terug naar de kaart",
+          "inside": true
+        },
+        {
+          "tag": "BODY",
+          "text": "browser-focus-boundary",
+          "inside": false
+        }
+      ]
+    },
+    {
+      "label": "candidate",
+      "trace": [
+        {
+          "tag": "BUTTON",
+          "text": "Stip 1",
+          "inside": true
+        },
+        {
+          "tag": "BUTTON",
+          "text": "Stip 2",
+          "inside": true
+        },
+        {
+          "tag": "BUTTON",
+          "text": "Terug naar de kaart",
+          "inside": true
+        },
+        {
+          "tag": "BODY",
+          "text": "browser-focus-boundary",
+          "inside": false
+        },
+        {
+          "tag": "BUTTON",
+          "text": "Stip 1",
+          "inside": true
+        },
+        {
+          "tag": "BUTTON",
+          "text": "Stip 2",
+          "inside": true
+        },
+        {
+          "tag": "BUTTON",
+          "text": "Terug naar de kaart",
+          "inside": true
+        },
+        {
+          "tag": "BODY",
+          "text": "browser-focus-boundary",
+          "inside": false
+        }
+      ]
+    }
+  ],
+  "formal": [],
+  "rewards": [],
+  "extras": [
+    {
+      "nativeCryptoTrials": 24,
+      "counts": {
+        "first": 13,
+        "second": 11
+      },
+      "orders": [
+        {
+          "asked": "city-9",
+          "order": [
+            "area-o",
+            "city-9"
+          ],
+          "firstCorrect": false
+        },
+        {
+          "asked": "city-9",
+          "order": [
+            "area-o",
+            "city-9"
+          ],
+          "firstCorrect": false
+        },
+        {
+          "asked": "city-9",
+          "order": [
+            "city-9",
+            "area-o"
+          ],
+          "firstCorrect": true
+        },
+        {
+          "asked": "city-9",
+          "order": [
+            "area-o",
+            "city-9"
+          ],
+          "firstCorrect": false
+        },
+        {
+          "asked": "city-9",
+          "order": [
+            "city-9",
+            "area-o"
+          ],
+          "firstCorrect": true
+        },
+        {
+          "asked": "city-9",
+          "order": [
+            "city-9",
+            "area-o"
+          ],
+          "firstCorrect": true
+        },
+        {
+          "asked": "city-9",
+          "order": [
+            "area-o",
+            "city-9"
+          ],
+          "firstCorrect": false
+        },
+        {
+          "asked": "city-9",
+          "order": [
+            "city-9",
+            "area-o"
+          ],
+          "firstCorrect": true
+        },
+        {
+          "asked": "city-9",
+          "order": [
+            "area-o",
+            "city-9"
+          ],
+          "firstCorrect": false
+        },
+        {
+          "asked": "city-9",
+          "order": [
+            "city-9",
+            "area-o"
+          ],
+          "firstCorrect": true
+        },
+        {
+          "asked": "city-9",
+          "order": [
+            "city-9",
+            "area-o"
+          ],
+          "firstCorrect": true
+        },
+        {
+          "asked": "city-9",
+          "order": [
+            "area-o",
+            "city-9"
+          ],
+          "firstCorrect": false
+        },
+        {
+          "asked": "city-9",
+          "order": [
+            "area-o",
+            "city-9"
+          ],
+          "firstCorrect": false
+        },
+        {
+          "asked": "city-9",
+          "order": [
+            "city-9",
+            "area-o"
+          ],
+          "firstCorrect": true
+        },
+        {
+          "asked": "city-9",
+          "order": [
+            "area-o",
+            "city-9"
+          ],
+          "firstCorrect": false
+        },
+        {
+          "asked": "city-9",
+          "order": [
+            "area-o",
+            "city-9"
+          ],
+          "firstCorrect": false
+        },
+        {
+          "asked": "city-9",
+          "order": [
+            "city-9",
+            "area-o"
+          ],
+          "firstCorrect": true
+        },
+        {
+          "asked": "city-9",
+          "order": [
+            "city-9",
+            "area-o"
+          ],
+          "firstCorrect": true
+        },
+        {
+          "asked": "city-9",
+          "order": [
+            "area-o",
+            "city-9"
+          ],
+          "firstCorrect": false
+        },
+        {
+          "asked": "city-9",
+          "order": [
+            "city-9",
+            "area-o"
+          ],
+          "firstCorrect": true
+        },
+        {
+          "asked": "city-9",
+          "order": [
+            "area-o",
+            "city-9"
+          ],
+          "firstCorrect": false
+        },
+        {
+          "asked": "city-9",
+          "order": [
+            "city-9",
+            "area-o"
+          ],
+          "firstCorrect": true
+        },
+        {
+          "asked": "city-9",
+          "order": [
+            "city-9",
+            "area-o"
+          ],
+          "firstCorrect": true
+        },
+        {
+          "asked": "city-9",
+          "order": [
+            "city-9",
+            "area-o"
+          ],
+          "firstCorrect": true
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "network": []
+}

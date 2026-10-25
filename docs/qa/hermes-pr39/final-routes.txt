@@ -1,0 +1,11 @@
+PASS full route ipad-landscape
+PASS full route ipad-portrait
+{
+  "matrix": 0,
+  "routes": 2,
+  "anchors": 0,
+  "extras": [],
+  "findings": [],
+  "errors": [],
+  "network": []
+}

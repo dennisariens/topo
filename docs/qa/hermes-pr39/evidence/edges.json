@@ -1,0 +1,454 @@
+{
+  "vatican": [
+    {
+      "order": [
+        "area-o",
+        "city-9"
+      ],
+      "correctPosition": 1,
+      "firstSucceeded": true
+    },
+    {
+      "order": [
+        "area-o",
+        "city-9"
+      ],
+      "correctPosition": 1,
+      "firstSucceeded": true
+    },
+    {
+      "order": [
+        "area-o",
+        "city-9"
+      ],
+      "correctPosition": 1,
+      "firstSucceeded": true
+    },
+    {
+      "order": [
+        "area-o",
+        "city-9"
+      ],
+      "correctPosition": 1,
+      "firstSucceeded": true
+    },
+    {
+      "order": [
+        "area-o",
+        "city-9"
+      ],
+      "correctPosition": 1,
+      "firstSucceeded": true
+    },
+    {
+      "order": [
+        "city-9",
+        "area-o"
+      ],
+      "correctPosition": 2,
+      "firstSucceeded": false
+    }
+  ],
+  "rivers": [
+    {
+      "style": "school",
+      "z": 1,
+      "offset": 20,
+      "sample": {
+        "x": 290.65296133759017,
+        "y": 406.8462551869192,
+        "independentNearestCenterlinePx": 19.843092293347386
+      },
+      "renderer": [
+        "water-G"
+      ],
+      "interpretation": "SVG miter joins may extend beyond a Euclidean 22px tube; compare with original renderer hit geometry",
+      "asked": {
+        "id": "water-G",
+        "name": "Po",
+        "mode": "point",
+        "answered": false
+      },
+      "trace": {
+        "xy": [
+          290.65296133759017,
+          406.8462551869192
+        ],
+        "screen": [
+          372.8434712011006,
+          427.1423861365713
+        ],
+        "native": {
+          "tag": "path",
+          "id": null,
+          "hit": "water-G"
+        }
+      },
+      "order": null,
+      "good": true,
+      "before": [
+        19,
+        2,
+        3,
+        0
+      ],
+      "after": [
+        20,
+        2,
+        4,
+        0
+      ],
+      "feedback": "Precies aangewezen."
+    },
+    {
+      "style": "school",
+      "z": 1,
+      "offset": 28,
+      "sample": {
+        "x": 290.31246130231375,
+        "y": 426.3967567734057,
+        "independentNearestCenterlinePx": 27.771213397720725
+      },
+      "renderer": [
+        "water-G"
+      ],
+      "interpretation": "SVG miter joins may extend beyond a Euclidean 22px tube; compare with original renderer hit geometry",
+      "asked": {
+        "id": "water-G",
+        "name": "Po",
+        "mode": "point",
+        "answered": false
+      },
+      "trace": {
+        "xy": [
+          290.31246130231375,
+          426.3967567734057
+        ],
+        "screen": [
+          372.7041608501293,
+          435.1411730837347
+        ],
+        "native": {
+          "tag": "path",
+          "id": null,
+          "hit": "water-G"
+        }
+      },
+      "order": null,
+      "good": true,
+      "before": [
+        20,
+        2,
+        4,
+        0
+      ],
+      "after": [
+        21,
+        2,
+        5,
+        0
+      ],
+      "feedback": "Goed gevonden!"
+    },
+    {
+      "style": "school",
+      "z": 2,
+      "offset": 20,
+      "sample": {
+        "x": 291.0785929624647,
+        "y": 382.40775035500894,
+        "independentNearestCenterlinePx": 19.997184456902833
+      },
+      "renderer": [
+        "water-G"
+      ],
+      "interpretation": "SVG miter joins may extend beyond a Euclidean 22px tube; compare with original renderer hit geometry",
+      "asked": {
+        "id": "water-G",
+        "name": "Po",
+        "mode": "point",
+        "answered": false
+      },
+      "trace": {
+        "xy": [
+          291.0785929624647,
+          382.40775035500894
+        ],
+        "screen": [
+          310.1114012782557,
+          513.6048338779215
+        ],
+        "native": {
+          "tag": "path",
+          "id": null,
+          "hit": "water-G"
+        }
+      },
+      "order": null,
+      "good": true,
+      "before": [
+        22,
+        2,
+        6,
+        0
+      ],
+      "after": [
+        23,
+        2,
+        7,
+        0
+      ],
+      "feedback": "Precies aangewezen."
+    },
+    {
+      "style": "school",
+      "z": 2,
+      "offset": 28,
+      "sample": {
+        "x": 290.9083455771381,
+        "y": 392.18285000873124,
+        "independentNearestCenterlinePx": 27.901932485608917
+      },
+      "renderer": [
+        "water-G"
+      ],
+      "interpretation": "SVG miter joins may extend beyond a Euclidean 22px tube; compare with original renderer hit geometry",
+      "asked": {
+        "id": "water-G",
+        "name": "Po",
+        "mode": "point",
+        "answered": false
+      },
+      "trace": {
+        "xy": [
+          290.9083455771381,
+          392.18285000873124
+        ],
+        "screen": [
+          309.97209092728446,
+          513.6036208250848
+        ],
+        "native": {
+          "tag": "path",
+          "id": null,
+          "hit": "water-G"
+        }
+      },
+      "order": null,
+      "good": true,
+      "before": [
+        24,
+        3,
+        0,
+        1
+      ],
+      "after": [
+        25,
+        3,
+        1,
+        1
+      ],
+      "feedback": "Goed gevonden!"
+    },
+    {
+      "style": "discovery",
+      "z": 1,
+      "offset": 20,
+      "sample": {
+        "x": 290.65296133759017,
+        "y": 406.8462551869192,
+        "independentNearestCenterlinePx": 19.843092293347386
+      },
+      "renderer": [
+        "water-G"
+      ],
+      "interpretation": "SVG miter joins may extend beyond a Euclidean 22px tube; compare with original renderer hit geometry",
+      "asked": {
+        "id": "water-G",
+        "name": "Po",
+        "mode": "point",
+        "answered": false
+      },
+      "trace": {
+        "xy": [
+          290.65296133759017,
+          406.8462551869192
+        ],
+        "screen": [
+          372.8434712011006,
+          427.1423861365713
+        ],
+        "native": {
+          "tag": "path",
+          "id": null,
+          "hit": "water-G"
+        }
+      },
+      "order": null,
+      "good": true,
+      "before": [
+        26,
+        3,
+        2,
+        1
+      ],
+      "after": [
+        27,
+        3,
+        3,
+        1
+      ],
+      "feedback": "Precies aangewezen."
+    },
+    {
+      "style": "discovery",
+      "z": 1,
+      "offset": 28,
+      "sample": {
+        "x": 290.31246130231375,
+        "y": 426.3967567734057,
+        "independentNearestCenterlinePx": 27.771213397720725
+      },
+      "renderer": [
+        "water-G"
+      ],
+      "interpretation": "SVG miter joins may extend beyond a Euclidean 22px tube; compare with original renderer hit geometry",
+      "asked": {
+        "id": "water-G",
+        "name": "Po",
+        "mode": "point",
+        "answered": false
+      },
+      "trace": {
+        "xy": [
+          290.31246130231375,
+          426.3967567734057
+        ],
+        "screen": [
+          372.7041608501293,
+          435.1411730837347
+        ],
+        "native": {
+          "tag": "path",
+          "id": null,
+          "hit": "water-G"
+        }
+      },
+      "order": null,
+      "good": true,
+      "before": [
+        27,
+        3,
+        3,
+        1
+      ],
+      "after": [
+        28,
+        3,
+        4,
+        1
+      ],
+      "feedback": "Goed gevonden!"
+    },
+    {
+      "style": "discovery",
+      "z": 2,
+      "offset": 20,
+      "sample": {
+        "x": 291.0785929624647,
+        "y": 382.40775035500894,
+        "independentNearestCenterlinePx": 19.997184456902833
+      },
+      "renderer": [
+        "water-G"
+      ],
+      "interpretation": "SVG miter joins may extend beyond a Euclidean 22px tube; compare with original renderer hit geometry",
+      "asked": {
+        "id": "water-G",
+        "name": "Po",
+        "mode": "point",
+        "answered": false
+      },
+      "trace": {
+        "xy": [
+          291.0785929624647,
+          382.40775035500894
+        ],
+        "screen": [
+          310.1114012782557,
+          513.6048338779215
+        ],
+        "native": {
+          "tag": "path",
+          "id": null,
+          "hit": "water-G"
+        }
+      },
+      "order": null,
+      "good": true,
+      "before": [
+        28,
+        3,
+        4,
+        1
+      ],
+      "after": [
+        29,
+        3,
+        5,
+        1
+      ],
+      "feedback": "Ja, dat is Po."
+    },
+    {
+      "style": "discovery",
+      "z": 2,
+      "offset": 28,
+      "sample": {
+        "x": 290.9083455771381,
+        "y": 392.18285000873124,
+        "independentNearestCenterlinePx": 27.901932485608917
+      },
+      "renderer": [
+        "water-G"
+      ],
+      "interpretation": "SVG miter joins may extend beyond a Euclidean 22px tube; compare with original renderer hit geometry",
+      "asked": {
+        "id": "water-G",
+        "name": "Po",
+        "mode": "point",
+        "answered": false
+      },
+      "trace": {
+        "xy": [
+          290.9083455771381,
+          392.18285000873124
+        ],
+        "screen": [
+          309.97209092728446,
+          513.6036208250848
+        ],
+        "native": {
+          "tag": "path",
+          "id": null,
+          "hit": "water-G"
+        }
+      },
+      "order": null,
+      "good": true,
+      "before": [
+        29,
+        3,
+        5,
+        1
+      ],
+      "after": [
+        30,
+        3,
+        6,
+        1
+      ],
+      "feedback": "Precies aangewezen."
+    }
+  ]
+}

@@ -1,0 +1,319 @@
+{
+  "exact": "fc8f5be4dc77c8b1adb71aae3931a1c134389cf5",
+  "browserVersion": "156.0.8078.4",
+  "matrix": [],
+  "routes": [
+    {
+      "device": "ipad-landscape",
+      "fixture": "predecessors only unlocked; region Discover/Point/Write/Gold completed via UI",
+      "events": [
+        {
+          "asked": {
+            "id": "area-g",
+            "name": "de Povlakte",
+            "mode": "point",
+            "answered": false,
+            "kind": "point"
+          },
+          "trace": {
+            "xy": [
+              410,
+              495
+            ],
+            "screen": [
+              421.67247596153845,
+              358.20913461538464
+            ],
+            "native": {
+              "tag": "path",
+              "id": null,
+              "hit": "water-F"
+            },
+            "physical": {
+              "x": 422,
+              "y": 358,
+              "tag": "path",
+              "id": null,
+              "hit": "water-F"
+            }
+          },
+          "order": null,
+          "good": false,
+          "before": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "after": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "feedback": "Dat was Toscane. Gezocht: de Povlakte."
+        },
+        {
+          "asked": {
+            "id": "area-h",
+            "name": "Toscane",
+            "mode": "point",
+            "answered": false,
+            "kind": "point"
+          },
+          "trace": {
+            "xy": [
+              410,
+              495
+            ],
+            "screen": [
+              421.67247596153845,
+              358.20913461538464
+            ],
+            "native": {
+              "tag": "path",
+              "id": null,
+              "hit": "water-F"
+            },
+            "physical": {
+              "x": 422,
+              "y": 358,
+              "tag": "path",
+              "id": null,
+              "hit": "water-F"
+            }
+          },
+          "order": null,
+          "good": true,
+          "before": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "after": [
+            1,
+            0,
+            1,
+            0
+          ],
+          "feedback": "Goed gevonden!"
+        },
+        {
+          "asked": {
+            "id": "area-g",
+            "name": "de Povlakte",
+            "mode": "point",
+            "answered": false,
+            "kind": "point"
+          },
+          "trace": {
+            "xy": [
+              335,
+              340
+            ],
+            "screen": [
+              390.9873798076923,
+              294.7932692307692
+            ],
+            "native": {
+              "tag": "path",
+              "id": null,
+              "hit": "water-G"
+            },
+            "physical": {
+              "x": 391,
+              "y": 295,
+              "tag": "path",
+              "id": null,
+              "hit": "water-G"
+            }
+          },
+          "order": null,
+          "good": true,
+          "before": [
+            1,
+            0,
+            1,
+            0
+          ],
+          "after": [
+            2,
+            0,
+            2,
+            0
+          ],
+          "feedback": "Ja, dat is de Povlakte."
+        }
+      ],
+      "wrongReload": true,
+      "stage3": true,
+      "goldReplayNoRewards": true,
+      "finalCounters": [
+        8,
+        1,
+        0,
+        0
+      ]
+    },
+    {
+      "device": "ipad-portrait",
+      "fixture": "predecessors only unlocked; region Discover/Point/Write/Gold completed via UI",
+      "events": [
+        {
+          "asked": {
+            "id": "area-h",
+            "name": "Toscane",
+            "mode": "point",
+            "answered": false,
+            "kind": "point"
+          },
+          "trace": {
+            "xy": [
+              335,
+              340
+            ],
+            "screen": [
+              216.11930668016194,
+              458.7732793522267
+            ],
+            "native": {
+              "tag": "path",
+              "id": null,
+              "hit": "water-G"
+            },
+            "physical": {
+              "x": 216,
+              "y": 459,
+              "tag": "path",
+              "id": null,
+              "hit": "water-G"
+            }
+          },
+          "order": null,
+          "good": false,
+          "before": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "after": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "feedback": "Dat was de Povlakte. Gezocht: Toscane."
+        },
+        {
+          "asked": {
+            "id": "area-g",
+            "name": "de Povlakte",
+            "mode": "point",
+            "answered": false,
+            "kind": "point"
+          },
+          "trace": {
+            "xy": [
+              335,
+              340
+            ],
+            "screen": [
+              216.11930668016194,
+              458.7732793522267
+            ],
+            "native": {
+              "tag": "path",
+              "id": null,
+              "hit": "water-G"
+            },
+            "physical": {
+              "x": 216,
+              "y": 459,
+              "tag": "path",
+              "id": null,
+              "hit": "water-G"
+            }
+          },
+          "order": null,
+          "good": true,
+          "before": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "after": [
+            1,
+            0,
+            1,
+            0
+          ],
+          "feedback": "Goed gevonden!"
+        },
+        {
+          "asked": {
+            "id": "area-h",
+            "name": "Toscane",
+            "mode": "point",
+            "answered": false,
+            "kind": "point"
+          },
+          "trace": {
+            "xy": [
+              410,
+              495
+            ],
+            "screen": [
+              260.69705212550605,
+              550.9006199392712
+            ],
+            "native": {
+              "tag": "path",
+              "id": null,
+              "hit": "water-F"
+            },
+            "physical": {
+              "x": 261,
+              "y": 551,
+              "tag": "path",
+              "id": null,
+              "hit": "water-F"
+            }
+          },
+          "order": null,
+          "good": true,
+          "before": [
+            1,
+            0,
+            1,
+            0
+          ],
+          "after": [
+            2,
+            0,
+            2,
+            0
+          ],
+          "feedback": "Ja, dat is Toscane."
+        }
+      ],
+      "wrongReload": true,
+      "stage3": true,
+      "goldReplayNoRewards": true,
+      "finalCounters": [
+        8,
+        1,
+        0,
+        0
+      ]
+    }
+  ],
+  "choices": [],
+  "extras": [],
+  "findings": [],
+  "errors": [],
+  "network": [],
+  "physicalSafari": "PENDING: Chromium touch emulation only"
+}

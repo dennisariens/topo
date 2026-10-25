@@ -1,0 +1,26 @@
+{
+  "candidate": "fc8f5be4dc77c8b1adb71aae3931a1c134389cf5",
+  "base": "f67027d42202d1bd2a78f1d82dd02aa7fba41a91",
+  "wholeAppOutsideExactResolver": "byte-identical",
+  "embedding": "source exact",
+  "protectedHashes": {
+    "scripts/learning-engine.js": "e6d1992865892d3eefd661abae74cac300d0659ab1827c41a8b057b4dc7ef6e0",
+    "scripts/route-engine.js": "484fb91f8458cc38834edf45ae898f78ecea00342e6c405ae8dfd68078333043",
+    "scripts/discovery-map.js": "dfc1b35a44cf481f9a9617965d07430b16c8385fbfc8df41c918a72f95a7dd35",
+    "scripts/discovery-map.css": "207b9e4354e9e6d349c5bf82a7d54ebd3db1c1a57db042c74b374834fc5b03bd",
+    "scripts/schoolblad.js": "6c3570474aee84f6b4c07a13467ef8ae9622d490a73781d760a22aaebdbb29f6",
+    "scripts/schoolblad.css": "edaf1fdee7b861386c3aba2f02c31b184a5ec3782f81fbed187ceebc0f64e8ee",
+    "package-lock.json": "1a546d6bdcc5e38980277bd593e6dd844a830c62acd9b50edf8ce395d7472ce7",
+    "print.html": "129be293a0aeff48e0e06f545d238f1b56abfc76a2380f110a0f8362237a67bf",
+    "output/pdf/topo-italie-printboek.pdf": "fa6495b0f45f1840cf5d4c8a35b7ee63f5a18cc6ad1af8302f57adf268618070",
+    "assets/discovery/terrain.webp": "c9130b73fe1e52800e2b85750e203491071f1c4835932afbeab207ea9ecfa0db",
+    "assets/discovery/terrain-provenance.json": "af3ae2adf8f1b7599b3fc6d90f461af5180800a8d7cd5c8b69f334e0141ddabc",
+    "geography/lakes/projected-manifest.json": "1062a6dec6ec69193f23557131d2ff4debf90d83bd43e02d53933a3581284865",
+    "scripts/nino-art.js": "edcd062b0dd3573b28401a36e06c665613ff47c7af89ef88ebae499b6ebf6fd7",
+    "scripts/nino-art-ui.js": "c65c6746db7386ca4ea897e942e466042a51b97324b5aa3f8086c03c6229472f",
+    "scripts/nino-feedback.js": "6dd704ece12baf5874bb8feb7a75c3278b4629610e983a55ca56ef91d9244cb6"
+  },
+  "artAndGeographyDirectories": "unchanged",
+  "offlineBuilds": "both byte-identical to canonical",
+  "canonicalSha256": "eef8aaf35d43064a1c4afae245030c7e10b435c53ec2cbdd1064dfb0b4b64446"
+}

@@ -1,0 +1,7357 @@
+{
+  "exact": "fc8f5be4dc77c8b1adb71aae3931a1c134389cf5",
+  "browserVersion": "156.0.8078.4",
+  "matrix": [
+    {
+      "device": "ipad-landscape",
+      "w": 1180,
+      "h": 820,
+      "style": "school",
+      "z": 1,
+      "checks": [
+        {
+          "asked": {
+            "id": "area-h",
+            "name": "Toscane",
+            "mode": "point",
+            "answered": false
+          },
+          "trace": {
+            "xy": [
+              350,
+              450
+            ],
+            "screen": [
+              397.12439903846155,
+              444.7980769230769
+            ],
+            "native": {
+              "tag": "path",
+              "id": "area-h",
+              "hit": null
+            },
+            "physical": {
+              "x": 397,
+              "y": 445,
+              "tag": "path",
+              "id": "area-h",
+              "hit": null
+            }
+          },
+          "order": null,
+          "good": true,
+          "before": [
+            1,
+            0,
+            1,
+            0
+          ],
+          "after": [
+            2,
+            0,
+            2,
+            0
+          ],
+          "feedback": "Ja, dat is Toscane."
+        },
+        {
+          "asked": {
+            "id": "area-h",
+            "name": "Toscane",
+            "mode": "point",
+            "answered": false
+          },
+          "trace": {
+            "xy": [
+              410,
+              495
+            ],
+            "screen": [
+              421.67247596153845,
+              463.20913461538464
+            ],
+            "native": {
+              "tag": "path",
+              "id": null,
+              "hit": "water-F"
+            },
+            "physical": {
+              "x": 422,
+              "y": 463,
+              "tag": "path",
+              "id": null,
+              "hit": "water-F"
+            }
+          },
+          "order": null,
+          "good": true,
+          "before": [
+            2,
+            0,
+            2,
+            0
+          ],
+          "after": [
+            3,
+            0,
+            3,
+            0
+          ],
+          "feedback": "Precies aangewezen."
+        },
+        {
+          "asked": {
+            "id": "area-h",
+            "name": "Toscane",
+            "mode": "point",
+            "answered": false
+          },
+          "trace": {
+            "xy": [
+              420,
+              500
+            ],
+            "screen": [
+              425.76382211538464,
+              465.2548076923077
+            ],
+            "native": {
+              "tag": "path",
+              "id": null,
+              "hit": "water-F"
+            },
+            "physical": {
+              "x": 426,
+              "y": 465,
+              "tag": "path",
+              "id": null,
+              "hit": "water-F"
+            }
+          },
+          "order": null,
+          "good": true,
+          "before": [
+            3,
+            0,
+            3,
+            0
+          ],
+          "after": [
+            4,
+            0,
+            4,
+            0
+          ],
+          "feedback": "Goed gevonden!"
+        },
+        {
+          "asked": {
+            "id": "area-g",
+            "name": "de Povlakte",
+            "mode": "point",
+            "answered": false
+          },
+          "trace": {
+            "xy": [
+              335,
+              375
+            ],
+            "screen": [
+              390.9873798076923,
+              414.1129807692308
+            ],
+            "native": {
+              "tag": "path",
+              "id": null,
+              "hit": "water-G"
+            },
+            "physical": {
+              "x": 391,
+              "y": 414,
+              "tag": "path",
+              "id": null,
+              "hit": "water-G"
+            }
+          },
+          "order": null,
+          "good": true,
+          "before": [
+            4,
+            0,
+            4,
+            0
+          ],
+          "after": [
+            5,
+            0,
+            5,
+            0
+          ],
+          "feedback": "Ja, dat is de Povlakte."
+        },
+        {
+          "asked": {
+            "id": "area-g",
+            "name": "de Povlakte",
+            "mode": "point",
+            "answered": false
+          },
+          "trace": {
+            "xy": [
+              335,
+              340
+            ],
+            "screen": [
+              390.9873798076923,
+              399.7932692307692
+            ],
+            "native": {
+              "tag": "path",
+              "id": null,
+              "hit": "water-G"
+            },
+            "physical": {
+              "x": 391,
+              "y": 400,
+              "tag": "path",
+              "id": null,
+              "hit": "water-G"
+            }
+          },
+          "order": null,
+          "good": true,
+          "before": [
+            5,
+            0,
+            5,
+            0
+          ],
+          "after": [
+            6,
+            0,
+            6,
+            0
+          ],
+          "feedback": "Precies aangewezen."
+        },
+        {
+          "asked": {
+            "id": "area-g",
+            "name": "de Povlakte",
+            "mode": "point",
+            "answered": false
+          },
+          "trace": {
+            "xy": [
+              400,
+              365
+            ],
+            "screen": [
+              417.5811298076923,
+              410.02163461538464
+            ],
+            "native": {
+              "tag": "path",
+              "id": null,
+              "hit": "water-G"
+            },
+            "physical": {
+              "x": 418,
+              "y": 410,
+              "tag": "path",
+              "id": null,
+              "hit": "water-G"
+            }
+          },
+          "order": null,
+          "good": true,
+          "before": [
+            7,
+            0,
+            7,
+            0
+          ],
+          "after": [
+            8,
+            1,
+            0,
+            0
+          ],
+          "feedback": "Perfetto! Een pizza compleet."
+        },
+        {
+          "asked": {
+            "id": "area-g",
+            "name": "de Povlakte",
+            "mode": "point",
+            "answered": false
+          },
+          "trace": {
+            "xy": [
+              291.50421142578125,
+              357.9700012207031
+            ],
+            "screen": [
+              373.1917470785288,
+              407.1454187686627
+            ],
+            "native": {
+              "tag": "path",
+              "id": null,
+              "hit": "water-G"
+            },
+            "physical": {
+              "x": 373,
+              "y": 407,
+              "tag": "path",
+              "id": null,
+              "hit": "water-G"
+            }
+          },
+          "order": null,
+          "good": true,
+          "before": [
+            9,
+            1,
+            1,
+            0
+          ],
+          "after": [
+            10,
+            1,
+            2,
+            0
+          ],
+          "feedback": "Precies aangewezen."
+        },
+        {
+          "asked": {
+            "id": "water-G",
+            "name": "Po",
+            "mode": "point",
+            "answered": false
+          },
+          "trace": {
+            "xy": [
+              291.50421142578125,
+              357.9700012207031
+            ],
+            "screen": [
+              373.1917470785288,
+              407.1454187686627
+            ],
+            "native": {
+              "tag": "path",
+              "id": null,
+              "hit": "water-G"
+            },
+            "physical": {
+              "x": 373,
+              "y": 407,
+              "tag": "path",
+              "id": null,
+              "hit": "water-G"
+            }
+          },
+          "order": null,
+          "good": true,
+          "before": [
+            10,
+            1,
+            2,
+            0
+          ],
+          "after": [
+            11,
+            1,
+            3,
+            0
+          ],
+          "feedback": "Goed gevonden!"
+        },
+        {
+          "asked": {
+            "id": "area-g",
+            "name": "de Povlakte",
+            "mode": "point",
+            "answered": false
+          },
+          "trace": {
+            "xy": [
+              410,
+              495
+            ],
+            "screen": [
+              421.67247596153845,
+              463.20913461538464
+            ],
+            "native": {
+              "tag": "path",
+              "id": null,
+              "hit": "water-F"
+            },
+            "physical": {
+              "x": 422,
+              "y": 463,
+              "tag": "path",
+              "id": null,
+              "hit": "water-F"
+            }
+          },
+          "order": null,
+          "good": false,
+          "before": [
+            11,
+            1,
+            3,
+            0
+          ],
+          "after": [
+            11,
+            1,
+            3,
+            0
+          ],
+          "feedback": "Dat was Toscane. Gezocht: de Povlakte."
+        },
+        {
+          "asked": {
+            "id": "water-F",
+            "name": "Tiber",
+            "mode": "point",
+            "answered": false
+          },
+          "trace": {
+            "xy": [
+              291.50421142578125,
+              357.9700012207031
+            ],
+            "screen": [
+              373.1917470785288,
+              407.1454187686627
+            ],
+            "native": {
+              "tag": "path",
+              "id": null,
+              "hit": "water-G"
+            },
+            "physical": {
+              "x": 373,
+              "y": 407,
+              "tag": "path",
+              "id": null,
+              "hit": "water-G"
+            }
+          },
+          "order": null,
+          "good": false,
+          "before": [
+            11,
+            1,
+            3,
+            0
+          ],
+          "after": [
+            11,
+            1,
+            3,
+            0
+          ],
+          "feedback": "Dat was Po. Gezocht: Tiber."
+        }
+      ]
+    },
+    {
+      "device": "ipad-landscape",
+      "w": 1180,
+      "h": 820,
+      "style": "school",
+      "z": 2,
+      "checks": [
+        {
+          "asked": {
+            "id": "area-h",
+            "name": "Toscane",
+            "mode": "point",
+            "answered": false
+          },
+          "trace": {
+            "xy": [
+              350,
+              450
+            ],
+            "screen": [
+              358.3257211538462,
+              316.9143471659919
+            ],
+            "native": {
+              "tag": "path",
+              "id": "area-h",
+              "hit": null
+            },
+            "physical": {
+              "x": 358,
+              "y": 317,
+              "tag": "path",
+              "id": "area-h",
+              "hit": null
+            }
+          },
+          "order": null,
+          "good": true,
+          "before": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "after": [
+            1,
+            0,
+            1,
+            0
+          ],
+          "feedback": "Goed gevonden!"
+        },
+        {
+          "asked": {
+            "id": "area-h",
+            "name": "Toscane",
+            "mode": "point",
+            "answered": false
+          },
+          "trace": {
+            "xy": [
+              410,
+              495
+            ],
+            "screen": [
+              407.42263410931173,
+              353.7370318825911
+            ],
+            "native": {
+              "tag": "path",
+              "id": "area-h",
+              "hit": null
+            },
+            "physical": {
+              "x": 407,
+              "y": 354,
+              "tag": "path",
+              "id": "area-h",
+              "hit": null
+            }
+          },
+          "order": null,
+          "good": true,
+          "before": [
+            1,
+            0,
+            1,
+            0
+          ],
+          "after": [
+            2,
+            0,
+            2,
+            0
+          ],
+          "feedback": "Ja, dat is Toscane."
+        },
+        {
+          "asked": {
+            "id": "area-h",
+            "name": "Toscane",
+            "mode": "point",
+            "answered": false
+          },
+          "trace": {
+            "xy": [
+              420,
+              500
+            ],
+            "screen": [
+              415.60545293522273,
+              643.8284412955466
+            ],
+            "native": {
+              "tag": "path",
+              "id": "area-h",
+              "hit": null
+            },
+            "physical": {
+              "x": 416,
+              "y": 644,
+              "tag": "path",
+              "id": "area-h",
+              "hit": null
+            }
+          },
+          "order": null,
+          "good": true,
+          "before": [
+            3,
+            0,
+            3,
+            0
+          ],
+          "after": [
+            4,
+            0,
+            4,
+            0
+          ],
+          "feedback": "Goed gevonden!"
+        },
+        {
+          "asked": {
+            "id": "area-g",
+            "name": "de Povlakte",
+            "mode": "point",
+            "answered": false
+          },
+          "trace": {
+            "xy": [
+              335,
+              375
+            ],
+            "screen": [
+              346.0514929149798,
+              541.54320597166
+            ],
+            "native": {
+              "tag": "path",
+              "id": null,
+              "hit": "water-G"
+            },
+            "physical": {
+              "x": 346,
+              "y": 542,
+              "tag": "path",
+              "id": null,
+              "hit": "water-G"
+            }
+          },
+          "order": null,
+          "good": true,
+          "before": [
+            4,
+            0,
+            4,
+            0
+          ],
+          "after": [
+            5,
+            0,
+            5,
+            0
+          ],
+          "feedback": "Ja, dat is de Povlakte."
+        },
+        {
+          "asked": {
+            "id": "area-g",
+            "name": "de Povlakte",
+            "mode": "point",
+            "answered": false
+          },
+          "trace": {
+            "xy": [
+              335,
+              340
+            ],
+            "screen": [
+              346.0514929149798,
+              512.9033400809717
+            ],
+            "native": {
+              "tag": "path",
+              "id": null,
+              "hit": "water-G"
+            },
+            "physical": {
+              "x": 346,
+              "y": 513,
+              "tag": "path",
+              "id": null,
+              "hit": "water-G"
+            }
+          },
+          "order": null,
+          "good": true,
+          "before": [
+            5,
+            0,
+            5,
+            0
+          ],
+          "after": [
+            6,
+            0,
+            6,
+            0
+          ],
+          "feedback": "Precies aangewezen."
+        },
+        {
+          "asked": {
+            "id": "area-g",
+            "name": "de Povlakte",
+            "mode": "point",
+            "answered": false
+          },
+          "trace": {
+            "xy": [
+              400,
+              365
+            ],
+            "screen": [
+              399.23981528340084,
+              533.360387145749
+            ],
+            "native": {
+              "tag": "path",
+              "id": null,
+              "hit": "water-G"
+            },
+            "physical": {
+              "x": 399,
+              "y": 533,
+              "tag": "path",
+              "id": null,
+              "hit": "water-G"
+            }
+          },
+          "order": null,
+          "good": true,
+          "before": [
+            7,
+            0,
+            7,
+            0
+          ],
+          "after": [
+            8,
+            1,
+            0,
+            0
+          ],
+          "feedback": "Perfetto! Een pizza compleet."
+        },
+        {
+          "asked": {
+            "id": "area-g",
+            "name": "de Povlakte",
+            "mode": "point",
+            "answered": false
+          },
+          "trace": {
+            "xy": [
+              291.50421142578125,
+              357.9700012207031
+            ],
+            "screen": [
+              310.4596771556839,
+              527.6078665100129
+            ],
+            "native": {
+              "tag": "path",
+              "id": null,
+              "hit": "water-G"
+            },
+            "physical": {
+              "x": 310,
+              "y": 528,
+              "tag": "path",
+              "id": null,
+              "hit": "water-G"
+            }
+          },
+          "order": null,
+          "good": true,
+          "before": [
+            8,
+            1,
+            0,
+            0
+          ],
+          "after": [
+            9,
+            1,
+            1,
+            0
+          ],
+          "feedback": "Ja, dat is de Povlakte."
+        },
+        {
+          "asked": {
+            "id": "water-G",
+            "name": "Po",
+            "mode": "point",
+            "answered": false
+          },
+          "trace": {
+            "xy": [
+              291.50421142578125,
+              357.9700012207031
+            ],
+            "screen": [
+              310.4596771556839,
+              527.6078665100129
+            ],
+            "native": {
+              "tag": "path",
+              "id": null,
+              "hit": "water-G"
+            },
+            "physical": {
+              "x": 310,
+              "y": 528,
+              "tag": "path",
+              "id": null,
+              "hit": "water-G"
+            }
+          },
+          "order": null,
+          "good": true,
+          "before": [
+            10,
+            1,
+            2,
+            0
+          ],
+          "after": [
+            11,
+            1,
+            3,
+            0
+          ],
+          "feedback": "Goed gevonden!"
+        },
+        {
+          "asked": {
+            "id": "area-g",
+            "name": "de Povlakte",
+            "mode": "point",
+            "answered": false
+          },
+          "trace": {
+            "xy": [
+              410,
+              495
+            ],
+            "screen": [
+              407.42263410931173,
+              639.737031882591
+            ],
+            "native": {
+              "tag": "path",
+              "id": "area-h",
+              "hit": null
+            },
+            "physical": {
+              "x": 407,
+              "y": 640,
+              "tag": "path",
+              "id": "area-h",
+              "hit": null
+            }
+          },
+          "order": null,
+          "good": false,
+          "before": [
+            11,
+            1,
+            3,
+            0
+          ],
+          "after": [
+            11,
+            1,
+            3,
+            0
+          ],
+          "feedback": "Dat was Toscane. Gezocht: de Povlakte."
+        },
+        {
+          "asked": {
+            "id": "water-F",
+            "name": "Tiber",
+            "mode": "point",
+            "answered": false
+          },
+          "trace": {
+            "xy": [
+              291.50421142578125,
+              357.9700012207031
+            ],
+            "screen": [
+              310.4596771556839,
+              527.6078665100129
+            ],
+            "native": {
+              "tag": "path",
+              "id": null,
+              "hit": "water-G"
+            },
+            "physical": {
+              "x": 310,
+              "y": 528,
+              "tag": "path",
+              "id": null,
+              "hit": "water-G"
+            }
+          },
+          "order": null,
+          "good": false,
+          "before": [
+            12,
+            1,
+            4,
+            0
+          ],
+          "after": [
+            12,
+            1,
+            4,
+            0
+          ],
+          "feedback": "Dat was Po. Gezocht: Tiber."
+        }
+      ]
+    },
+    {
+      "device": "ipad-landscape",
+      "w": 1180,
+      "h": 820,
+      "style": "discovery",
+      "z": 1,
+      "checks": [
+        {
+          "asked": {
+            "id": "area-h",
+            "name": "Toscane",
+            "mode": "point",
+            "answered": false
+          },
+          "trace": {
+            "xy": [
+              350,
+              450
+            ],
+            "screen": [
+              397.12439903846155,
+              444.7980769230769
+            ],
+            "native": {
+              "tag": "path",
+              "id": "area-h",
+              "hit": null
+            },
+            "physical": {
+              "x": 397,
+              "y": 445,
+              "tag": "path",
+              "id": "area-h",
+              "hit": null
+            }
+          },
+          "order": null,
+          "good": true,
+          "before": [
+            2,
+            0,
+            2,
+            0
+          ],
+          "after": [
+            3,
+            0,
+            3,
+            0
+          ],
+          "feedback": "Precies aangewezen."
+        },
+        {
+          "asked": {
+            "id": "area-h",
+            "name": "Toscane",
+            "mode": "point",
+            "answered": false
+          },
+          "trace": {
+            "xy": [
+              410,
+              495
+            ],
+            "screen": [
+              421.67247596153845,
+              463.20913461538464
+            ],
+            "native": {
+              "tag": "path",
+              "id": null,
+              "hit": "water-F"
+            },
+            "physical": {
+              "x": 422,
+              "y": 463,
+              "tag": "path",
+              "id": null,
+              "hit": "water-F"
+            }
+          },
+          "order": null,
+          "good": true,
+          "before": [
+            3,
+            0,
+            3,
+            0
+          ],
+          "after": [
+            4,
+            0,
+            4,
+            0
+          ],
+          "feedback": "Goed gevonden!"
+        },
+        {
+          "asked": {
+            "id": "area-h",
+            "name": "Toscane",
+            "mode": "point",
+            "answered": false
+          },
+          "trace": {
+            "xy": [
+              420,
+              500
+            ],
+            "screen": [
+              425.76382211538464,
+              465.2548076923077
+            ],
+            "native": {
+              "tag": "path",
+              "id": null,
+              "hit": "water-F"
+            },
+            "physical": {
+              "x": 426,
+              "y": 465,
+              "tag": "path",
+              "id": null,
+              "hit": "water-F"
+            }
+          },
+          "order": null,
+          "good": true,
+          "before": [
+            5,
+            0,
+            5,
+            0
+          ],
+          "after": [
+            6,
+            0,
+            6,
+            0
+          ],
+          "feedback": "Precies aangewezen."
+        },
+        {
+          "asked": {
+            "id": "area-g",
+            "name": "de Povlakte",
+            "mode": "point",
+            "answered": false
+          },
+          "trace": {
+            "xy": [
+              335,
+              375
+            ],
+            "screen": [
+              390.9873798076923,
+              414.1129807692308
+            ],
+            "native": {
+              "tag": "path",
+              "id": null,
+              "hit": "water-G"
+            },
+            "physical": {
+              "x": 391,
+              "y": 414,
+              "tag": "path",
+              "id": null,
+              "hit": "water-G"
+            }
+          },
+          "order": null,
+          "good": true,
+          "before": [
+            7,
+            0,
+            7,
+            0
+          ],
+          "after": [
+            8,
+            1,
+            0,
+            0
+          ],
+          "feedback": "Perfetto! Een pizza compleet."
+        },
+        {
+          "asked": {
+            "id": "area-g",
+            "name": "de Povlakte",
+            "mode": "point",
+            "answered": false
+          },
+          "trace": {
+            "xy": [
+              335,
+              340
+            ],
+            "screen": [
+              390.9873798076923,
+              399.7932692307692
+            ],
+            "native": {
+              "tag": "path",
+              "id": null,
+              "hit": "water-G"
+            },
+            "physical": {
+              "x": 391,
+              "y": 400,
+              "tag": "path",
+              "id": null,
+              "hit": "water-G"
+            }
+          },
+          "order": null,
+          "good": true,
+          "before": [
+            8,
+            1,
+            0,
+            0
+          ],
+          "after": [
+            9,
+            1,
+            1,
+            0
+          ],
+          "feedback": "Ja, dat is de Povlakte."
+        },
+        {
+          "asked": {
+            "id": "area-g",
+            "name": "de Povlakte",
+            "mode": "point",
+            "answered": false
+          },
+          "trace": {
+            "xy": [
+              400,
+              365
+            ],
+            "screen": [
+              417.5811298076923,
+              410.02163461538464
+            ],
+            "native": {
+              "tag": "path",
+              "id": null,
+              "hit": "water-G"
+            },
+            "physical": {
+              "x": 418,
+              "y": 410,
+              "tag": "path",
+              "id": null,
+              "hit": "water-G"
+            }
+          },
+          "order": null,
+          "good": true,
+          "before": [
+            9,
+            1,
+            1,
+            0
+          ],
+          "after": [
+            10,
+            1,
+            2,
+            0
+          ],
+          "feedback": "Precies aangewezen."
+        },
+        {
+          "asked": {
+            "id": "area-g",
+            "name": "de Povlakte",
+            "mode": "point",
+            "answered": false
+          },
+          "trace": {
+            "xy": [
+              291.50421142578125,
+              357.9700012207031
+            ],
+            "screen": [
+              373.1917470785288,
+              407.1454187686627
+            ],
+            "native": {
+              "tag": "path",
+              "id": null,
+              "hit": "water-G"
+            },
+            "physical": {
+              "x": 373,
+              "y": 407,
+              "tag": "path",
+              "id": null,
+              "hit": "water-G"
+            }
+          },
+          "order": null,
+          "good": true,
+          "before": [
+            10,
+            1,
+            2,
+            0
+          ],
+          "after": [
+            11,
+            1,
+            3,
+            0
+          ],
+          "feedback": "Goed gevonden!"
+        },
+        {
+          "asked": {
+            "id": "water-G",
+            "name": "Po",
+            "mode": "point",
+            "answered": false
+          },
+          "trace": {
+            "xy": [
+              291.50421142578125,
+              357.9700012207031
+            ],
+            "screen": [
+              373.1917470785288,
+              407.1454187686627
+            ],
+            "native": {
+              "tag": "path",
+              "id": null,
+              "hit": "water-G"
+            },
+            "physical": {
+              "x": 373,
+              "y": 407,
+              "tag": "path",
+              "id": null,
+              "hit": "water-G"
+            }
+          },
+          "order": null,
+          "good": true,
+          "before": [
+            12,
+            1,
+            4,
+            0
+          ],
+          "after": [
+            13,
+            1,
+            5,
+            0
+          ],
+          "feedback": "Precies aangewezen."
+        },
+        {
+          "asked": {
+            "id": "area-g",
+            "name": "de Povlakte",
+            "mode": "point",
+            "answered": false
+          },
+          "trace": {
+            "xy": [
+              410,
+              495
+            ],
+            "screen": [
+              421.67247596153845,
+              463.20913461538464
+            ],
+            "native": {
+              "tag": "path",
+              "id": null,
+              "hit": "water-F"
+            },
+            "physical": {
+              "x": 422,
+              "y": 463,
+              "tag": "path",
+              "id": null,
+              "hit": "water-F"
+            }
+          },
+          "order": null,
+          "good": false,
+          "before": [
+            14,
+            1,
+            6,
+            0
+          ],
+          "after": [
+            14,
+            1,
+            6,
+            0
+          ],
+          "feedback": "Dat was Toscane. Gezocht: de Povlakte."
+        },
+        {
+          "asked": {
+            "id": "water-F",
+            "name": "Tiber",
+            "mode": "point",
+            "answered": false
+          },
+          "trace": {
+            "xy": [
+              291.50421142578125,
+              357.9700012207031
+            ],
+            "screen": [
+              373.1917470785288,
+              407.1454187686627
+            ],
+            "native": {
+              "tag": "path",
+              "id": null,
+              "hit": "water-G"
+            },
+            "physical": {
+              "x": 373,
+              "y": 407,
+              "tag": "path",
+              "id": null,
+              "hit": "water-G"
+            }
+          },
+          "order": null,
+          "good": false,
+          "before": [
+            14,
+            1,
+            6,
+            0
+          ],
+          "after": [
+            14,
+            1,
+            6,
+            0
+          ],
+          "feedback": "Dat was Po. Gezocht: Tiber."
+        }
+      ]
+    },
+    {
+      "device": "ipad-landscape",
+      "w": 1180,
+      "h": 820,
+      "style": "discovery",
+      "z": 2,
+      "checks": [
+        {
+          "asked": {
+            "id": "area-h",
+            "name": "Toscane",
+            "mode": "point",
+            "answered": false
+          },
+          "trace": {
+            "xy": [
+              350,
+              450
+            ],
+            "screen": [
+              358.3257211538462,
+              316.9143471659919
+            ],
+            "native": {
+              "tag": "path",
+              "id": "area-h",
+              "hit": null
+            },
+            "physical": {
+              "x": 358,
+              "y": 317,
+              "tag": "path",
+              "id": "area-h",
+              "hit": null
+            }
+          },
+          "order": null,
+          "good": true,
+          "before": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "after": [
+            1,
+            0,
+            1,
+            0
+          ],
+          "feedback": "Goed gevonden!"
+        },
+        {
+          "asked": {
+            "id": "area-h",
+            "name": "Toscane",
+            "mode": "point",
+            "answered": false
+          },
+          "trace": {
+            "xy": [
+              410,
+              495
+            ],
+            "screen": [
+              407.42263410931173,
+              353.7370318825911
+            ],
+            "native": {
+              "tag": "path",
+              "id": "area-h",
+              "hit": null
+            },
+            "physical": {
+              "x": 407,
+              "y": 354,
+              "tag": "path",
+              "id": "area-h",
+              "hit": null
+            }
+          },
+          "order": null,
+          "good": true,
+          "before": [
+            1,
+            0,
+            1,
+            0
+          ],
+          "after": [
+            2,
+            0,
+            2,
+            0
+          ],
+          "feedback": "Ja, dat is Toscane."
+        },
+        {
+          "asked": {
+            "id": "area-h",
+            "name": "Toscane",
+            "mode": "point",
+            "answered": false
+          },
+          "trace": {
+            "xy": [
+              420,
+              500
+            ],
+            "screen": [
+              415.60545293522273,
+              643.8284412955466
+            ],
+            "native": {
+              "tag": "path",
+              "id": "area-h",
+              "hit": null
+            },
+            "physical": {
+              "x": 416,
+              "y": 644,
+              "tag": "path",
+              "id": "area-h",
+              "hit": null
+            }
+          },
+          "order": null,
+          "good": true,
+          "before": [
+            3,
+            0,
+            3,
+            0
+          ],
+          "after": [
+            4,
+            0,
+            4,
+            0
+          ],
+          "feedback": "Goed gevonden!"
+        },
+        {
+          "asked": {
+            "id": "area-g",
+            "name": "de Povlakte",
+            "mode": "point",
+            "answered": false
+          },
+          "trace": {
+            "xy": [
+              335,
+              375
+            ],
+            "screen": [
+              346.0514929149798,
+              541.54320597166
+            ],
+            "native": {
+              "tag": "path",
+              "id": null,
+              "hit": "water-G"
+            },
+            "physical": {
+              "x": 346,
+              "y": 542,
+              "tag": "path",
+              "id": null,
+              "hit": "water-G"
+            }
+          },
+          "order": null,
+          "good": true,
+          "before": [
+            5,
+            0,
+            5,
+            0
+          ],
+          "after": [
+            6,
+            0,
+            6,
+            0
+          ],
+          "feedback": "Precies aangewezen."
+        },
+        {
+          "asked": {
+            "id": "area-g",
+            "name": "de Povlakte",
+            "mode": "point",
+            "answered": false
+          },
+          "trace": {
+            "xy": [
+              335,
+              340
+            ],
+            "screen": [
+              346.0514929149798,
+              512.9033400809717
+            ],
+            "native": {
+              "tag": "path",
+              "id": null,
+              "hit": "water-G"
+            },
+            "physical": {
+              "x": 346,
+              "y": 513,
+              "tag": "path",
+              "id": null,
+              "hit": "water-G"
+            }
+          },
+          "order": null,
+          "good": true,
+          "before": [
+            6,
+            0,
+            6,
+            0
+          ],
+          "after": [
+            7,
+            0,
+            7,
+            0
+          ],
+          "feedback": "Goed gevonden!"
+        },
+        {
+          "asked": {
+            "id": "area-g",
+            "name": "de Povlakte",
+            "mode": "point",
+            "answered": false
+          },
+          "trace": {
+            "xy": [
+              400,
+              365
+            ],
+            "screen": [
+              399.23981528340084,
+              533.360387145749
+            ],
+            "native": {
+              "tag": "path",
+              "id": null,
+              "hit": "water-G"
+            },
+            "physical": {
+              "x": 399,
+              "y": 533,
+              "tag": "path",
+              "id": null,
+              "hit": "water-G"
+            }
+          },
+          "order": null,
+          "good": true,
+          "before": [
+            7,
+            0,
+            7,
+            0
+          ],
+          "after": [
+            8,
+            1,
+            0,
+            0
+          ],
+          "feedback": "Perfetto! Een pizza compleet."
+        },
+        {
+          "asked": {
+            "id": "area-g",
+            "name": "de Povlakte",
+            "mode": "point",
+            "answered": false
+          },
+          "trace": {
+            "xy": [
+              291.50421142578125,
+              357.9700012207031
+            ],
+            "screen": [
+              310.4596771556839,
+              527.6078665100129
+            ],
+            "native": {
+              "tag": "path",
+              "id": null,
+              "hit": "water-G"
+            },
+            "physical": {
+              "x": 310,
+              "y": 528,
+              "tag": "path",
+              "id": null,
+              "hit": "water-G"
+            }
+          },
+          "order": null,
+          "good": true,
+          "before": [
+            9,
+            1,
+            1,
+            0
+          ],
+          "after": [
+            10,
+            1,
+            2,
+            0
+          ],
+          "feedback": "Precies aangewezen."
+        },
+        {
+          "asked": {
+            "id": "water-G",
+            "name": "Po",
+            "mode": "point",
+            "answered": false
+          },
+          "trace": {
+            "xy": [
+              291.50421142578125,
+              357.9700012207031
+            ],
+            "screen": [
+              310.4596771556839,
+              527.6078665100129
+            ],
+            "native": {
+              "tag": "path",
+              "id": null,
+              "hit": "water-G"
+            },
+            "physical": {
+              "x": 310,
+              "y": 528,
+              "tag": "path",
+              "id": null,
+              "hit": "water-G"
+            }
+          },
+          "order": null,
+          "good": true,
+          "before": [
+            10,
+            1,
+            2,
+            0
+          ],
+          "after": [
+            11,
+            1,
+            3,
+            0
+          ],
+          "feedback": "Goed gevonden!"
+        },
+        {
+          "asked": {
+            "id": "area-g",
+            "name": "de Povlakte",
+            "mode": "point",
+            "answered": false
+          },
+          "trace": {
+            "xy": [
+              410,
+              495
+            ],
+            "screen": [
+              407.42263410931173,
+              639.737031882591
+            ],
+            "native": {
+              "tag": "path",
+              "id": "area-h",
+              "hit": null
+            },
+            "physical": {
+              "x": 407,
+              "y": 640,
+              "tag": "path",
+              "id": "area-h",
+              "hit": null
+            }
+          },
+          "order": null,
+          "good": false,
+          "before": [
+            11,
+            1,
+            3,
+            0
+          ],
+          "after": [
+            11,
+            1,
+            3,
+            0
+          ],
+          "feedback": "Dat was Toscane. Gezocht: de Povlakte."
+        },
+        {
+          "asked": {
+            "id": "water-F",
+            "name": "Tiber",
+            "mode": "point",
+            "answered": false
+          },
+          "trace": {
+            "xy": [
+              291.50421142578125,
+              357.9700012207031
+            ],
+            "screen": [
+              310.4596771556839,
+              527.6078665100129
+            ],
+            "native": {
+              "tag": "path",
+              "id": null,
+              "hit": "water-G"
+            },
+            "physical": {
+              "x": 310,
+              "y": 528,
+              "tag": "path",
+              "id": null,
+              "hit": "water-G"
+            }
+          },
+          "order": null,
+          "good": false,
+          "before": [
+            12,
+            1,
+            4,
+            0
+          ],
+          "after": [
+            12,
+            1,
+            4,
+            0
+          ],
+          "feedback": "Dat was Po. Gezocht: Tiber."
+        }
+      ]
+    },
+    {
+      "device": "ipad-portrait",
+      "w": 820,
+      "h": 1180,
+      "style": "school",
+      "z": 1,
+      "checks": [
+        {
+          "asked": {
+            "id": "area-h",
+            "name": "Toscane",
+            "mode": "point",
+            "answered": false
+          },
+          "trace": {
+            "xy": [
+              350,
+              450
+            ],
+            "screen": [
+              225.03485576923077,
+              524.1539726720648
+            ],
+            "native": {
+              "tag": "path",
+              "id": "area-h",
+              "hit": null
+            },
+            "physical": {
+              "x": 225,
+              "y": 524,
+              "tag": "path",
+              "id": "area-h",
+              "hit": null
+            }
+          },
+          "order": null,
+          "good": true,
+          "before": [
+            1,
+            0,
+            1,
+            0
+          ],
+          "after": [
+            2,
+            0,
+            2,
+            0
+          ],
+          "feedback": "Ja, dat is Toscane."
+        },
+        {
+          "asked": {
+            "id": "area-h",
+            "name": "Toscane",
+            "mode": "point",
+            "answered": false
+          },
+          "trace": {
+            "xy": [
+              410,
+              495
+            ],
+            "screen": [
+              260.69705212550605,
+              550.9006199392712
+            ],
+            "native": {
+              "tag": "path",
+              "id": null,
+              "hit": "water-F"
+            },
+            "physical": {
+              "x": 261,
+              "y": 551,
+              "tag": "path",
+              "id": null,
+              "hit": "water-F"
+            }
+          },
+          "order": null,
+          "good": true,
+          "before": [
+            2,
+            0,
+            2,
+            0
+          ],
+          "after": [
+            3,
+            0,
+            3,
+            0
+          ],
+          "feedback": "Precies aangewezen."
+        },
+        {
+          "asked": {
+            "id": "area-h",
+            "name": "Toscane",
+            "mode": "point",
+            "answered": false
+          },
+          "trace": {
+            "xy": [
+              420,
+              500
+            ],
+            "screen": [
+              266.6407515182186,
+              553.8724696356276
+            ],
+            "native": {
+              "tag": "path",
+              "id": null,
+              "hit": "water-F"
+            },
+            "physical": {
+              "x": 267,
+              "y": 554,
+              "tag": "path",
+              "id": null,
+              "hit": "water-F"
+            }
+          },
+          "order": null,
+          "good": true,
+          "before": [
+            3,
+            0,
+            3,
+            0
+          ],
+          "after": [
+            4,
+            0,
+            4,
+            0
+          ],
+          "feedback": "Goed gevonden!"
+        },
+        {
+          "asked": {
+            "id": "area-g",
+            "name": "de Povlakte",
+            "mode": "point",
+            "answered": false
+          },
+          "trace": {
+            "xy": [
+              335,
+              375
+            ],
+            "screen": [
+              216.11930668016194,
+              479.5762272267207
+            ],
+            "native": {
+              "tag": "path",
+              "id": null,
+              "hit": "water-G"
+            },
+            "physical": {
+              "x": 216,
+              "y": 480,
+              "tag": "path",
+              "id": null,
+              "hit": "water-G"
+            }
+          },
+          "order": null,
+          "good": true,
+          "before": [
+            4,
+            0,
+            4,
+            0
+          ],
+          "after": [
+            5,
+            0,
+            5,
+            0
+          ],
+          "feedback": "Ja, dat is de Povlakte."
+        },
+        {
+          "asked": {
+            "id": "area-g",
+            "name": "de Povlakte",
+            "mode": "point",
+            "answered": false
+          },
+          "trace": {
+            "xy": [
+              335,
+              340
+            ],
+            "screen": [
+              216.11930668016194,
+              458.7732793522267
+            ],
+            "native": {
+              "tag": "path",
+              "id": null,
+              "hit": "water-G"
+            },
+            "physical": {
+              "x": 216,
+              "y": 459,
+              "tag": "path",
+              "id": null,
+              "hit": "water-G"
+            }
+          },
+          "order": null,
+          "good": true,
+          "before": [
+            5,
+            0,
+            5,
+            0
+          ],
+          "after": [
+            6,
+            0,
+            6,
+            0
+          ],
+          "feedback": "Precies aangewezen."
+        },
+        {
+          "asked": {
+            "id": "area-g",
+            "name": "de Povlakte",
+            "mode": "point",
+            "answered": false
+          },
+          "trace": {
+            "xy": [
+              400,
+              365
+            ],
+            "screen": [
+              254.75335273279353,
+              473.6325278340081
+            ],
+            "native": {
+              "tag": "path",
+              "id": null,
+              "hit": "water-G"
+            },
+            "physical": {
+              "x": 255,
+              "y": 474,
+              "tag": "path",
+              "id": null,
+              "hit": "water-G"
+            }
+          },
+          "order": null,
+          "good": true,
+          "before": [
+            6,
+            0,
+            6,
+            0
+          ],
+          "after": [
+            7,
+            0,
+            7,
+            0
+          ],
+          "feedback": "Goed gevonden!"
+        },
+        {
+          "asked": {
+            "id": "area-g",
+            "name": "de Povlakte",
+            "mode": "point",
+            "answered": false
+          },
+          "trace": {
+            "xy": [
+              291.50421142578125,
+              357.9700012207031
+            ],
+            "screen": [
+              190.2667174667482,
+              469.4541078864804
+            ],
+            "native": {
+              "tag": "path",
+              "id": null,
+              "hit": "water-G"
+            },
+            "physical": {
+              "x": 190,
+              "y": 469,
+              "tag": "path",
+              "id": null,
+              "hit": "water-G"
+            }
+          },
+          "order": null,
+          "good": true,
+          "before": [
+            7,
+            0,
+            7,
+            0
+          ],
+          "after": [
+            8,
+            1,
+            0,
+            0
+          ],
+          "feedback": "Perfetto! Een pizza compleet."
+        },
+        {
+          "asked": {
+            "id": "water-G",
+            "name": "Po",
+            "mode": "point",
+            "answered": false
+          },
+          "trace": {
+            "xy": [
+              291.50421142578125,
+              357.9700012207031
+            ],
+            "screen": [
+              190.2667174667482,
+              469.4541078864804
+            ],
+            "native": {
+              "tag": "path",
+              "id": null,
+              "hit": "water-G"
+            },
+            "physical": {
+              "x": 190,
+              "y": 469,
+              "tag": "path",
+              "id": null,
+              "hit": "water-G"
+            }
+          },
+          "order": null,
+          "good": true,
+          "before": [
+            9,
+            1,
+            1,
+            0
+          ],
+          "after": [
+            10,
+            1,
+            2,
+            0
+          ],
+          "feedback": "Precies aangewezen."
+        },
+        {
+          "asked": {
+            "id": "area-g",
+            "name": "de Povlakte",
+            "mode": "point",
+            "answered": false
+          },
+          "trace": {
+            "xy": [
+              410,
+              495
+            ],
+            "screen": [
+              260.69705212550605,
+              550.9006199392712
+            ],
+            "native": {
+              "tag": "path",
+              "id": null,
+              "hit": "water-F"
+            },
+            "physical": {
+              "x": 261,
+              "y": 551,
+              "tag": "path",
+              "id": null,
+              "hit": "water-F"
+            }
+          },
+          "order": null,
+          "good": false,
+          "before": [
+            10,
+            1,
+            2,
+            0
+          ],
+          "after": [
+            10,
+            1,
+            2,
+            0
+          ],
+          "feedback": "Dat was Toscane. Gezocht: de Povlakte."
+        },
+        {
+          "asked": {
+            "id": "water-F",
+            "name": "Tiber",
+            "mode": "point",
+            "answered": false
+          },
+          "trace": {
+            "xy": [
+              291.50421142578125,
+              357.9700012207031
+            ],
+            "screen": [
+              190.2667174667482,
+              469.4541078864804
+            ],
+            "native": {
+              "tag": "path",
+              "id": null,
+              "hit": "water-G"
+            },
+            "physical": {
+              "x": 190,
+              "y": 469,
+              "tag": "path",
+              "id": null,
+              "hit": "water-G"
+            }
+          },
+          "order": null,
+          "good": false,
+          "before": [
+            10,
+            1,
+            2,
+            0
+          ],
+          "after": [
+            10,
+            1,
+            2,
+            0
+          ],
+          "feedback": "Dat was Po. Gezocht: Tiber."
+        }
+      ]
+    },
+    {
+      "device": "ipad-portrait",
+      "w": 820,
+      "h": 1180,
+      "style": "school",
+      "z": 2,
+      "checks": [
+        {
+          "asked": {
+            "id": "area-h",
+            "name": "Toscane",
+            "mode": "point",
+            "answered": false
+          },
+          "trace": {
+            "xy": [
+              350,
+              450
+            ],
+            "screen": [
+              169.06850961538458,
+              754.6261386639676
+            ],
+            "native": {
+              "tag": "path",
+              "id": "area-h",
+              "hit": null
+            },
+            "physical": {
+              "x": 169,
+              "y": 755,
+              "tag": "path",
+              "id": "area-h",
+              "hit": null
+            }
+          },
+          "order": null,
+          "good": true,
+          "before": [
+            1,
+            0,
+            1,
+            0
+          ],
+          "after": [
+            2,
+            0,
+            2,
+            0
+          ],
+          "feedback": "Ja, dat is Toscane."
+        },
+        {
+          "asked": {
+            "id": "area-h",
+            "name": "Toscane",
+            "mode": "point",
+            "answered": false
+          },
+          "trace": {
+            "xy": [
+              410,
+              495
+            ],
+            "screen": [
+              240.39366143724692,
+              808.1200025303643
+            ],
+            "native": {
+              "tag": "path",
+              "id": "area-h",
+              "hit": null
+            },
+            "physical": {
+              "x": 240,
+              "y": 808,
+              "tag": "path",
+              "id": "area-h",
+              "hit": null
+            }
+          },
+          "order": null,
+          "good": true,
+          "before": [
+            2,
+            0,
+            2,
+            0
+          ],
+          "after": [
+            3,
+            0,
+            3,
+            0
+          ],
+          "feedback": "Precies aangewezen."
+        },
+        {
+          "asked": {
+            "id": "area-h",
+            "name": "Toscane",
+            "mode": "point",
+            "answered": false
+          },
+          "trace": {
+            "xy": [
+              420,
+              500
+            ],
+            "screen": [
+              252.2811867408907,
+              814.0637651821862
+            ],
+            "native": {
+              "tag": "path",
+              "id": "area-h",
+              "hit": null
+            },
+            "physical": {
+              "x": 252,
+              "y": 814,
+              "tag": "path",
+              "id": "area-h",
+              "hit": null
+            }
+          },
+          "order": null,
+          "good": true,
+          "before": [
+            4,
+            0,
+            4,
+            0
+          ],
+          "after": [
+            5,
+            0,
+            5,
+            0
+          ],
+          "feedback": "Ja, dat is Toscane."
+        },
+        {
+          "asked": {
+            "id": "area-g",
+            "name": "de Povlakte",
+            "mode": "point",
+            "answered": false
+          },
+          "trace": {
+            "xy": [
+              335,
+              375
+            ],
+            "screen": [
+              151.237221659919,
+              665.4696988866397
+            ],
+            "native": {
+              "tag": "path",
+              "id": null,
+              "hit": "water-G"
+            },
+            "physical": {
+              "x": 151,
+              "y": 665,
+              "tag": "path",
+              "id": null,
+              "hit": "water-G"
+            }
+          },
+          "order": null,
+          "good": true,
+          "before": [
+            5,
+            0,
+            5,
+            0
+          ],
+          "after": [
+            6,
+            0,
+            6,
+            0
+          ],
+          "feedback": "Precies aangewezen."
+        },
+        {
+          "asked": {
+            "id": "area-g",
+            "name": "de Povlakte",
+            "mode": "point",
+            "answered": false
+          },
+          "trace": {
+            "xy": [
+              335,
+              340
+            ],
+            "screen": [
+              151.237221659919,
+              623.8633603238866
+            ],
+            "native": {
+              "tag": "path",
+              "id": "area-g",
+              "hit": null
+            },
+            "physical": {
+              "x": 151,
+              "y": 624,
+              "tag": "path",
+              "id": "area-g",
+              "hit": null
+            }
+          },
+          "order": null,
+          "good": true,
+          "before": [
+            6,
+            0,
+            6,
+            0
+          ],
+          "after": [
+            7,
+            0,
+            7,
+            0
+          ],
+          "feedback": "Goed gevonden!"
+        },
+        {
+          "asked": {
+            "id": "area-g",
+            "name": "de Povlakte",
+            "mode": "point",
+            "answered": false
+          },
+          "trace": {
+            "xy": [
+              400,
+              365
+            ],
+            "screen": [
+              228.5061361336032,
+              653.5821735829959
+            ],
+            "native": {
+              "tag": "path",
+              "id": null,
+              "hit": "water-G"
+            },
+            "physical": {
+              "x": 229,
+              "y": 654,
+              "tag": "path",
+              "id": null,
+              "hit": "water-G"
+            }
+          },
+          "order": null,
+          "good": true,
+          "before": [
+            7,
+            0,
+            7,
+            0
+          ],
+          "after": [
+            8,
+            1,
+            0,
+            0
+          ],
+          "feedback": "Perfetto! Een pizza compleet."
+        },
+        {
+          "asked": {
+            "id": "area-g",
+            "name": "de Povlakte",
+            "mode": "point",
+            "answered": false
+          },
+          "trace": {
+            "xy": [
+              291.50421142578125,
+              357.9700012207031
+            ],
+            "screen": [
+              99.53149293212272,
+              645.2252447456483
+            ],
+            "native": {
+              "tag": "path",
+              "id": null,
+              "hit": "water-G"
+            },
+            "physical": {
+              "x": 100,
+              "y": 645,
+              "tag": "path",
+              "id": null,
+              "hit": "water-G"
+            }
+          },
+          "order": null,
+          "good": true,
+          "before": [
+            9,
+            1,
+            1,
+            0
+          ],
+          "after": [
+            10,
+            1,
+            2,
+            0
+          ],
+          "feedback": "Precies aangewezen."
+        },
+        {
+          "asked": {
+            "id": "water-G",
+            "name": "Po",
+            "mode": "point",
+            "answered": false
+          },
+          "trace": {
+            "xy": [
+              291.50421142578125,
+              357.9700012207031
+            ],
+            "screen": [
+              99.53149293212272,
+              645.2252447456483
+            ],
+            "native": {
+              "tag": "path",
+              "id": null,
+              "hit": "water-G"
+            },
+            "physical": {
+              "x": 100,
+              "y": 645,
+              "tag": "path",
+              "id": null,
+              "hit": "water-G"
+            }
+          },
+          "order": null,
+          "good": true,
+          "before": [
+            10,
+            1,
+            2,
+            0
+          ],
+          "after": [
+            11,
+            1,
+            3,
+            0
+          ],
+          "feedback": "Goed gevonden!"
+        },
+        {
+          "asked": {
+            "id": "area-g",
+            "name": "de Povlakte",
+            "mode": "point",
+            "answered": false
+          },
+          "trace": {
+            "xy": [
+              410,
+              495
+            ],
+            "screen": [
+              240.39366143724692,
+              808.1200025303643
+            ],
+            "native": {
+              "tag": "path",
+              "id": "area-h",
+              "hit": null
+            },
+            "physical": {
+              "x": 240,
+              "y": 808,
+              "tag": "path",
+              "id": "area-h",
+              "hit": null
+            }
+          },
+          "order": null,
+          "good": false,
+          "before": [
+            12,
+            1,
+            4,
+            0
+          ],
+          "after": [
+            12,
+            1,
+            4,
+            0
+          ],
+          "feedback": "Dat was Toscane. Gezocht: de Povlakte."
+        },
+        {
+          "asked": {
+            "id": "water-F",
+            "name": "Tiber",
+            "mode": "point",
+            "answered": false
+          },
+          "trace": {
+            "xy": [
+              291.50421142578125,
+              357.9700012207031
+            ],
+            "screen": [
+              99.53149293212272,
+              645.2252447456483
+            ],
+            "native": {
+              "tag": "path",
+              "id": null,
+              "hit": "water-G"
+            },
+            "physical": {
+              "x": 100,
+              "y": 645,
+              "tag": "path",
+              "id": null,
+              "hit": "water-G"
+            }
+          },
+          "order": null,
+          "good": false,
+          "before": [
+            12,
+            1,
+            4,
+            0
+          ],
+          "after": [
+            12,
+            1,
+            4,
+            0
+          ],
+          "feedback": "Dat was Po. Gezocht: Tiber."
+        }
+      ]
+    },
+    {
+      "device": "ipad-portrait",
+      "w": 820,
+      "h": 1180,
+      "style": "discovery",
+      "z": 1,
+      "checks": [
+        {
+          "asked": {
+            "id": "area-h",
+            "name": "Toscane",
+            "mode": "point",
+            "answered": false
+          },
+          "trace": {
+            "xy": [
+              350,
+              450
+            ],
+            "screen": [
+              225.03485576923077,
+              524.1539726720648
+            ],
+            "native": {
+              "tag": "path",
+              "id": "area-h",
+              "hit": null
+            },
+            "physical": {
+              "x": 225,
+              "y": 524,
+              "tag": "path",
+              "id": "area-h",
+              "hit": null
+            }
+          },
+          "order": null,
+          "good": true,
+          "before": [
+            1,
+            0,
+            1,
+            0
+          ],
+          "after": [
+            2,
+            0,
+            2,
+            0
+          ],
+          "feedback": "Ja, dat is Toscane."
+        },
+        {
+          "asked": {
+            "id": "area-h",
+            "name": "Toscane",
+            "mode": "point",
+            "answered": false
+          },
+          "trace": {
+            "xy": [
+              410,
+              495
+            ],
+            "screen": [
+              260.69705212550605,
+              550.9006199392712
+            ],
+            "native": {
+              "tag": "path",
+              "id": null,
+              "hit": "water-F"
+            },
+            "physical": {
+              "x": 261,
+              "y": 551,
+              "tag": "path",
+              "id": null,
+              "hit": "water-F"
+            }
+          },
+          "order": null,
+          "good": true,
+          "before": [
+            3,
+            0,
+            3,
+            0
+          ],
+          "after": [
+            4,
+            0,
+            4,
+            0
+          ],
+          "feedback": "Goed gevonden!"
+        },
+        {
+          "asked": {
+            "id": "area-h",
+            "name": "Toscane",
+            "mode": "point",
+            "answered": false
+          },
+          "trace": {
+            "xy": [
+              420,
+              500
+            ],
+            "screen": [
+              266.6407515182186,
+              553.8724696356276
+            ],
+            "native": {
+              "tag": "path",
+              "id": null,
+              "hit": "water-F"
+            },
+            "physical": {
+              "x": 267,
+              "y": 554,
+              "tag": "path",
+              "id": null,
+              "hit": "water-F"
+            }
+          },
+          "order": null,
+          "good": true,
+          "before": [
+            5,
+            0,
+            5,
+            0
+          ],
+          "after": [
+            6,
+            0,
+            6,
+            0
+          ],
+          "feedback": "Precies aangewezen."
+        },
+        {
+          "asked": {
+            "id": "area-g",
+            "name": "de Povlakte",
+            "mode": "point",
+            "answered": false
+          },
+          "trace": {
+            "xy": [
+              335,
+              375
+            ],
+            "screen": [
+              216.11930668016194,
+              479.5762272267207
+            ],
+            "native": {
+              "tag": "path",
+              "id": null,
+              "hit": "water-G"
+            },
+            "physical": {
+              "x": 216,
+              "y": 480,
+              "tag": "path",
+              "id": null,
+              "hit": "water-G"
+            }
+          },
+          "order": null,
+          "good": true,
+          "before": [
+            7,
+            0,
+            7,
+            0
+          ],
+          "after": [
+            8,
+            1,
+            0,
+            0
+          ],
+          "feedback": "Perfetto! Een pizza compleet."
+        },
+        {
+          "asked": {
+            "id": "area-g",
+            "name": "de Povlakte",
+            "mode": "point",
+            "answered": false
+          },
+          "trace": {
+            "xy": [
+              335,
+              340
+            ],
+            "screen": [
+              216.11930668016194,
+              458.7732793522267
+            ],
+            "native": {
+              "tag": "path",
+              "id": null,
+              "hit": "water-G"
+            },
+            "physical": {
+              "x": 216,
+              "y": 459,
+              "tag": "path",
+              "id": null,
+              "hit": "water-G"
+            }
+          },
+          "order": null,
+          "good": true,
+          "before": [
+            9,
+            1,
+            1,
+            0
+          ],
+          "after": [
+            10,
+            1,
+            2,
+            0
+          ],
+          "feedback": "Precies aangewezen."
+        },
+        {
+          "asked": {
+            "id": "area-g",
+            "name": "de Povlakte",
+            "mode": "point",
+            "answered": false
+          },
+          "trace": {
+            "xy": [
+              400,
+              365
+            ],
+            "screen": [
+              254.75335273279353,
+              473.6325278340081
+            ],
+            "native": {
+              "tag": "path",
+              "id": null,
+              "hit": "water-G"
+            },
+            "physical": {
+              "x": 255,
+              "y": 474,
+              "tag": "path",
+              "id": null,
+              "hit": "water-G"
+            }
+          },
+          "order": null,
+          "good": true,
+          "before": [
+            11,
+            1,
+            3,
+            0
+          ],
+          "after": [
+            12,
+            1,
+            4,
+            0
+          ],
+          "feedback": "Ja, dat is de Povlakte."
+        },
+        {
+          "asked": {
+            "id": "area-g",
+            "name": "de Povlakte",
+            "mode": "point",
+            "answered": false
+          },
+          "trace": {
+            "xy": [
+              291.50421142578125,
+              357.9700012207031
+            ],
+            "screen": [
+              190.2667174667482,
+              469.4541078864804
+            ],
+            "native": {
+              "tag": "path",
+              "id": null,
+              "hit": "water-G"
+            },
+            "physical": {
+              "x": 190,
+              "y": 469,
+              "tag": "path",
+              "id": null,
+              "hit": "water-G"
+            }
+          },
+          "order": null,
+          "good": true,
+          "before": [
+            13,
+            1,
+            5,
+            0
+          ],
+          "after": [
+            14,
+            1,
+            6,
+            0
+          ],
+          "feedback": "Goed gevonden!"
+        },
+        {
+          "asked": {
+            "id": "water-G",
+            "name": "Po",
+            "mode": "point",
+            "answered": false
+          },
+          "trace": {
+            "xy": [
+              291.50421142578125,
+              357.9700012207031
+            ],
+            "screen": [
+              190.2667174667482,
+              469.4541078864804
+            ],
+            "native": {
+              "tag": "path",
+              "id": null,
+              "hit": "water-G"
+            },
+            "physical": {
+              "x": 190,
+              "y": 469,
+              "tag": "path",
+              "id": null,
+              "hit": "water-G"
+            }
+          },
+          "order": null,
+          "good": true,
+          "before": [
+            14,
+            1,
+            6,
+            0
+          ],
+          "after": [
+            15,
+            1,
+            7,
+            0
+          ],
+          "feedback": "Ja, dat is Po."
+        },
+        {
+          "asked": {
+            "id": "area-g",
+            "name": "de Povlakte",
+            "mode": "point",
+            "answered": false
+          },
+          "trace": {
+            "xy": [
+              410,
+              495
+            ],
+            "screen": [
+              260.69705212550605,
+              550.9006199392712
+            ],
+            "native": {
+              "tag": "path",
+              "id": null,
+              "hit": "water-F"
+            },
+            "physical": {
+              "x": 261,
+              "y": 551,
+              "tag": "path",
+              "id": null,
+              "hit": "water-F"
+            }
+          },
+          "order": null,
+          "good": false,
+          "before": [
+            16,
+            2,
+            0,
+            0
+          ],
+          "after": [
+            16,
+            2,
+            0,
+            0
+          ],
+          "feedback": "Dat was Toscane. Gezocht: de Povlakte."
+        },
+        {
+          "asked": {
+            "id": "water-F",
+            "name": "Tiber",
+            "mode": "point",
+            "answered": false
+          },
+          "trace": {
+            "xy": [
+              291.50421142578125,
+              357.9700012207031
+            ],
+            "screen": [
+              190.2667174667482,
+              469.4541078864804
+            ],
+            "native": {
+              "tag": "path",
+              "id": null,
+              "hit": "water-G"
+            },
+            "physical": {
+              "x": 190,
+              "y": 469,
+              "tag": "path",
+              "id": null,
+              "hit": "water-G"
+            }
+          },
+          "order": null,
+          "good": false,
+          "before": [
+            16,
+            2,
+            0,
+            0
+          ],
+          "after": [
+            16,
+            2,
+            0,
+            0
+          ],
+          "feedback": "Dat was Po. Gezocht: Tiber."
+        }
+      ]
+    },
+    {
+      "device": "ipad-portrait",
+      "w": 820,
+      "h": 1180,
+      "style": "discovery",
+      "z": 2,
+      "checks": [
+        {
+          "asked": {
+            "id": "area-h",
+            "name": "Toscane",
+            "mode": "point",
+            "answered": false
+          },
+          "trace": {
+            "xy": [
+              350,
+              450
+            ],
+            "screen": [
+              169.06850961538458,
+              754.6261386639676
+            ],
+            "native": {
+              "tag": "path",
+              "id": "area-h",
+              "hit": null
+            },
+            "physical": {
+              "x": 169,
+              "y": 755,
+              "tag": "path",
+              "id": "area-h",
+              "hit": null
+            }
+          },
+          "order": null,
+          "good": true,
+          "before": [
+            2,
+            0,
+            2,
+            0
+          ],
+          "after": [
+            3,
+            0,
+            3,
+            0
+          ],
+          "feedback": "Precies aangewezen."
+        },
+        {
+          "asked": {
+            "id": "area-h",
+            "name": "Toscane",
+            "mode": "point",
+            "answered": false
+          },
+          "trace": {
+            "xy": [
+              410,
+              495
+            ],
+            "screen": [
+              240.39366143724692,
+              808.1200025303643
+            ],
+            "native": {
+              "tag": "path",
+              "id": "area-h",
+              "hit": null
+            },
+            "physical": {
+              "x": 240,
+              "y": 808,
+              "tag": "path",
+              "id": "area-h",
+              "hit": null
+            }
+          },
+          "order": null,
+          "good": true,
+          "before": [
+            4,
+            0,
+            4,
+            0
+          ],
+          "after": [
+            5,
+            0,
+            5,
+            0
+          ],
+          "feedback": "Ja, dat is Toscane."
+        },
+        {
+          "asked": {
+            "id": "area-h",
+            "name": "Toscane",
+            "mode": "point",
+            "answered": false
+          },
+          "trace": {
+            "xy": [
+              420,
+              500
+            ],
+            "screen": [
+              252.2811867408907,
+              814.0637651821862
+            ],
+            "native": {
+              "tag": "path",
+              "id": "area-h",
+              "hit": null
+            },
+            "physical": {
+              "x": 252,
+              "y": 814,
+              "tag": "path",
+              "id": "area-h",
+              "hit": null
+            }
+          },
+          "order": null,
+          "good": true,
+          "before": [
+            6,
+            0,
+            6,
+            0
+          ],
+          "after": [
+            7,
+            0,
+            7,
+            0
+          ],
+          "feedback": "Goed gevonden!"
+        },
+        {
+          "asked": {
+            "id": "area-g",
+            "name": "de Povlakte",
+            "mode": "point",
+            "answered": false
+          },
+          "trace": {
+            "xy": [
+              335,
+              375
+            ],
+            "screen": [
+              151.237221659919,
+              665.4696988866397
+            ],
+            "native": {
+              "tag": "path",
+              "id": null,
+              "hit": "water-G"
+            },
+            "physical": {
+              "x": 151,
+              "y": 665,
+              "tag": "path",
+              "id": null,
+              "hit": "water-G"
+            }
+          },
+          "order": null,
+          "good": true,
+          "before": [
+            7,
+            0,
+            7,
+            0
+          ],
+          "after": [
+            8,
+            1,
+            0,
+            0
+          ],
+          "feedback": "Perfetto! Een pizza compleet."
+        },
+        {
+          "asked": {
+            "id": "area-g",
+            "name": "de Povlakte",
+            "mode": "point",
+            "answered": false
+          },
+          "trace": {
+            "xy": [
+              335,
+              340
+            ],
+            "screen": [
+              151.237221659919,
+              623.8633603238866
+            ],
+            "native": {
+              "tag": "path",
+              "id": "area-g",
+              "hit": null
+            },
+            "physical": {
+              "x": 151,
+              "y": 624,
+              "tag": "path",
+              "id": "area-g",
+              "hit": null
+            }
+          },
+          "order": null,
+          "good": true,
+          "before": [
+            8,
+            1,
+            0,
+            0
+          ],
+          "after": [
+            9,
+            1,
+            1,
+            0
+          ],
+          "feedback": "Ja, dat is de Povlakte."
+        },
+        {
+          "asked": {
+            "id": "area-g",
+            "name": "de Povlakte",
+            "mode": "point",
+            "answered": false
+          },
+          "trace": {
+            "xy": [
+              400,
+              365
+            ],
+            "screen": [
+              228.5061361336032,
+              653.5821735829959
+            ],
+            "native": {
+              "tag": "path",
+              "id": null,
+              "hit": "water-G"
+            },
+            "physical": {
+              "x": 229,
+              "y": 654,
+              "tag": "path",
+              "id": null,
+              "hit": "water-G"
+            }
+          },
+          "order": null,
+          "good": true,
+          "before": [
+            9,
+            1,
+            1,
+            0
+          ],
+          "after": [
+            10,
+            1,
+            2,
+            0
+          ],
+          "feedback": "Precies aangewezen."
+        },
+        {
+          "asked": {
+            "id": "area-g",
+            "name": "de Povlakte",
+            "mode": "point",
+            "answered": false
+          },
+          "trace": {
+            "xy": [
+              291.50421142578125,
+              357.9700012207031
+            ],
+            "screen": [
+              99.53149293212272,
+              645.2252447456483
+            ],
+            "native": {
+              "tag": "path",
+              "id": null,
+              "hit": "water-G"
+            },
+            "physical": {
+              "x": 100,
+              "y": 645,
+              "tag": "path",
+              "id": null,
+              "hit": "water-G"
+            }
+          },
+          "order": null,
+          "good": true,
+          "before": [
+            10,
+            1,
+            2,
+            0
+          ],
+          "after": [
+            11,
+            1,
+            3,
+            0
+          ],
+          "feedback": "Goed gevonden!"
+        },
+        {
+          "asked": {
+            "id": "water-G",
+            "name": "Po",
+            "mode": "point",
+            "answered": false
+          },
+          "trace": {
+            "xy": [
+              291.50421142578125,
+              357.9700012207031
+            ],
+            "screen": [
+              99.53149293212272,
+              645.2252447456483
+            ],
+            "native": {
+              "tag": "path",
+              "id": null,
+              "hit": "water-G"
+            },
+            "physical": {
+              "x": 100,
+              "y": 645,
+              "tag": "path",
+              "id": null,
+              "hit": "water-G"
+            }
+          },
+          "order": null,
+          "good": true,
+          "before": [
+            11,
+            1,
+            3,
+            0
+          ],
+          "after": [
+            12,
+            1,
+            4,
+            0
+          ],
+          "feedback": "Ja, dat is Po."
+        },
+        {
+          "asked": {
+            "id": "area-g",
+            "name": "de Povlakte",
+            "mode": "point",
+            "answered": false
+          },
+          "trace": {
+            "xy": [
+              410,
+              495
+            ],
+            "screen": [
+              240.39366143724692,
+              808.1200025303643
+            ],
+            "native": {
+              "tag": "path",
+              "id": "area-h",
+              "hit": null
+            },
+            "physical": {
+              "x": 240,
+              "y": 808,
+              "tag": "path",
+              "id": "area-h",
+              "hit": null
+            }
+          },
+          "order": null,
+          "good": false,
+          "before": [
+            12,
+            1,
+            4,
+            0
+          ],
+          "after": [
+            12,
+            1,
+            4,
+            0
+          ],
+          "feedback": "Dat was Toscane. Gezocht: de Povlakte."
+        },
+        {
+          "asked": {
+            "id": "water-F",
+            "name": "Tiber",
+            "mode": "point",
+            "answered": false
+          },
+          "trace": {
+            "xy": [
+              291.50421142578125,
+              357.9700012207031
+            ],
+            "screen": [
+              99.53149293212272,
+              645.2252447456483
+            ],
+            "native": {
+              "tag": "path",
+              "id": null,
+              "hit": "water-G"
+            },
+            "physical": {
+              "x": 100,
+              "y": 645,
+              "tag": "path",
+              "id": null,
+              "hit": "water-G"
+            }
+          },
+          "order": null,
+          "good": false,
+          "before": [
+            12,
+            1,
+            4,
+            0
+          ],
+          "after": [
+            12,
+            1,
+            4,
+            0
+          ],
+          "feedback": "Dat was Po. Gezocht: Tiber."
+        }
+      ]
+    },
+    {
+      "device": "desktop",
+      "w": 1440,
+      "h": 1000,
+      "style": "school",
+      "z": 1,
+      "checks": [
+        {
+          "asked": {
+            "id": "area-h",
+            "name": "Toscane",
+            "mode": "point",
+            "answered": false
+          },
+          "trace": {
+            "xy": [
+              350,
+              450
+            ],
+            "screen": [
+              513.3239182692308,
+              510.77815030364377
+            ],
+            "native": {
+              "tag": "path",
+              "id": "area-h",
+              "hit": null
+            },
+            "physical": {
+              "x": 513,
+              "y": 511,
+              "tag": "path",
+              "id": "area-h",
+              "hit": null
+            }
+          },
+          "order": null,
+          "good": true,
+          "before": [
+            1,
+            0,
+            1,
+            0
+          ],
+          "after": [
+            2,
+            0,
+            2,
+            0
+          ],
+          "feedback": "Ja, dat is Toscane."
+        },
+        {
+          "asked": {
+            "id": "area-h",
+            "name": "Toscane",
+            "mode": "point",
+            "answered": false
+          },
+          "trace": {
+            "xy": [
+              410,
+              495
+            ],
+            "screen": [
+              546.5880883097167,
+              535.7262778340081
+            ],
+            "native": {
+              "tag": "path",
+              "id": null,
+              "hit": "water-F"
+            },
+            "physical": {
+              "x": 547,
+              "y": 536,
+              "tag": "path",
+              "id": null,
+              "hit": "water-F"
+            }
+          },
+          "order": null,
+          "good": true,
+          "before": [
+            2,
+            0,
+            2,
+            0
+          ],
+          "after": [
+            3,
+            0,
+            3,
+            0
+          ],
+          "feedback": "Precies aangewezen."
+        },
+        {
+          "asked": {
+            "id": "area-h",
+            "name": "Toscane",
+            "mode": "point",
+            "answered": false
+          },
+          "trace": {
+            "xy": [
+              420,
+              500
+            ],
+            "screen": [
+              552.1321166497976,
+              538.4982920040486
+            ],
+            "native": {
+              "tag": "path",
+              "id": null,
+              "hit": "water-F"
+            },
+            "physical": {
+              "x": 552,
+              "y": 539,
+              "tag": "path",
+              "id": null,
+              "hit": "water-F"
+            }
+          },
+          "order": null,
+          "good": true,
+          "before": [
+            3,
+            0,
+            3,
+            0
+          ],
+          "after": [
+            4,
+            0,
+            4,
+            0
+          ],
+          "feedback": "Goed gevonden!"
+        },
+        {
+          "asked": {
+            "id": "area-g",
+            "name": "de Povlakte",
+            "mode": "point",
+            "answered": false
+          },
+          "trace": {
+            "xy": [
+              335,
+              375
+            ],
+            "screen": [
+              505.00787575910937,
+              469.19793775303646
+            ],
+            "native": {
+              "tag": "path",
+              "id": null,
+              "hit": "water-G"
+            },
+            "physical": {
+              "x": 505,
+              "y": 469,
+              "tag": "path",
+              "id": null,
+              "hit": "water-G"
+            }
+          },
+          "order": null,
+          "good": true,
+          "before": [
+            5,
+            0,
+            5,
+            0
+          ],
+          "after": [
+            6,
+            0,
+            6,
+            0
+          ],
+          "feedback": "Precies aangewezen."
+        },
+        {
+          "asked": {
+            "id": "area-g",
+            "name": "de Povlakte",
+            "mode": "point",
+            "answered": false
+          },
+          "trace": {
+            "xy": [
+              335,
+              340
+            ],
+            "screen": [
+              505.00787575910937,
+              449.7938385627531
+            ],
+            "native": {
+              "tag": "path",
+              "id": null,
+              "hit": "water-G"
+            },
+            "physical": {
+              "x": 505,
+              "y": 450,
+              "tag": "path",
+              "id": null,
+              "hit": "water-G"
+            }
+          },
+          "order": null,
+          "good": true,
+          "before": [
+            6,
+            0,
+            6,
+            0
+          ],
+          "after": [
+            7,
+            0,
+            7,
+            0
+          ],
+          "feedback": "Goed gevonden!"
+        },
+        {
+          "asked": {
+            "id": "area-g",
+            "name": "de Povlakte",
+            "mode": "point",
+            "answered": false
+          },
+          "trace": {
+            "xy": [
+              400,
+              365
+            ],
+            "screen": [
+              541.0440599696357,
+              463.6539094129555
+            ],
+            "native": {
+              "tag": "path",
+              "id": null,
+              "hit": "water-G"
+            },
+            "physical": {
+              "x": 541,
+              "y": 464,
+              "tag": "path",
+              "id": null,
+              "hit": "water-G"
+            }
+          },
+          "order": null,
+          "good": true,
+          "before": [
+            8,
+            1,
+            0,
+            0
+          ],
+          "after": [
+            9,
+            1,
+            1,
+            0
+          ],
+          "feedback": "Ja, dat is de Povlakte."
+        },
+        {
+          "asked": {
+            "id": "area-g",
+            "name": "de Povlakte",
+            "mode": "point",
+            "answered": false
+          },
+          "trace": {
+            "xy": [
+              291.50421142578125,
+              357.9700012207031
+            ],
+            "screen": [
+              480.89368730614547,
+              459.75645816663985
+            ],
+            "native": {
+              "tag": "path",
+              "id": null,
+              "hit": "water-G"
+            },
+            "physical": {
+              "x": 481,
+              "y": 460,
+              "tag": "path",
+              "id": null,
+              "hit": "water-G"
+            }
+          },
+          "order": null,
+          "good": true,
+          "before": [
+            10,
+            1,
+            2,
+            0
+          ],
+          "after": [
+            11,
+            1,
+            3,
+            0
+          ],
+          "feedback": "Goed gevonden!"
+        },
+        {
+          "asked": {
+            "id": "water-G",
+            "name": "Po",
+            "mode": "point",
+            "answered": false
+          },
+          "trace": {
+            "xy": [
+              291.50421142578125,
+              357.9700012207031
+            ],
+            "screen": [
+              480.89368730614547,
+              459.75645816663985
+            ],
+            "native": {
+              "tag": "path",
+              "id": null,
+              "hit": "water-G"
+            },
+            "physical": {
+              "x": 481,
+              "y": 460,
+              "tag": "path",
+              "id": null,
+              "hit": "water-G"
+            }
+          },
+          "order": null,
+          "good": true,
+          "before": [
+            12,
+            1,
+            4,
+            0
+          ],
+          "after": [
+            13,
+            1,
+            5,
+            0
+          ],
+          "feedback": "Precies aangewezen."
+        },
+        {
+          "asked": {
+            "id": "area-g",
+            "name": "de Povlakte",
+            "mode": "point",
+            "answered": false
+          },
+          "trace": {
+            "xy": [
+              410,
+              495
+            ],
+            "screen": [
+              546.5880883097167,
+              535.7262778340081
+            ],
+            "native": {
+              "tag": "path",
+              "id": null,
+              "hit": "water-F"
+            },
+            "physical": {
+              "x": 547,
+              "y": 536,
+              "tag": "path",
+              "id": null,
+              "hit": "water-F"
+            }
+          },
+          "order": null,
+          "good": false,
+          "before": [
+            14,
+            1,
+            6,
+            0
+          ],
+          "after": [
+            14,
+            1,
+            6,
+            0
+          ],
+          "feedback": "Dat was Toscane. Gezocht: de Povlakte."
+        },
+        {
+          "asked": {
+            "id": "water-F",
+            "name": "Tiber",
+            "mode": "point",
+            "answered": false
+          },
+          "trace": {
+            "xy": [
+              291.50421142578125,
+              357.9700012207031
+            ],
+            "screen": [
+              480.89368730614547,
+              459.75645816663985
+            ],
+            "native": {
+              "tag": "path",
+              "id": null,
+              "hit": "water-G"
+            },
+            "physical": {
+              "x": 481,
+              "y": 460,
+              "tag": "path",
+              "id": null,
+              "hit": "water-G"
+            }
+          },
+          "order": null,
+          "good": false,
+          "before": [
+            15,
+            1,
+            7,
+            0
+          ],
+          "after": [
+            15,
+            1,
+            7,
+            0
+          ],
+          "feedback": "Dat was Po. Gezocht: Tiber."
+        }
+      ]
+    },
+    {
+      "device": "desktop",
+      "w": 1440,
+      "h": 1000,
+      "style": "school",
+      "z": 2,
+      "checks": [
+        {
+          "asked": {
+            "id": "area-h",
+            "name": "Toscane",
+            "mode": "point",
+            "answered": false
+          },
+          "trace": {
+            "xy": [
+              350,
+              450
+            ],
+            "screen": [
+              461.36658653846155,
+              358.2594256072875
+            ],
+            "native": {
+              "tag": "path",
+              "id": "area-h",
+              "hit": null
+            },
+            "physical": {
+              "x": 461,
+              "y": 358,
+              "tag": "path",
+              "id": "area-h",
+              "hit": null
+            }
+          },
+          "order": null,
+          "good": true,
+          "before": [
+            1,
+            0,
+            1,
+            0
+          ],
+          "after": [
+            2,
+            0,
+            2,
+            0
+          ],
+          "feedback": "Ja, dat is Toscane."
+        },
+        {
+          "asked": {
+            "id": "area-h",
+            "name": "Toscane",
+            "mode": "point",
+            "answered": false
+          },
+          "trace": {
+            "xy": [
+              410,
+              495
+            ],
+            "screen": [
+              527.8949266194332,
+              408.1556806680162
+            ],
+            "native": {
+              "tag": "path",
+              "id": "area-h",
+              "hit": null
+            },
+            "physical": {
+              "x": 528,
+              "y": 408,
+              "tag": "path",
+              "id": "area-h",
+              "hit": null
+            }
+          },
+          "order": null,
+          "good": true,
+          "before": [
+            2,
+            0,
+            2,
+            0
+          ],
+          "after": [
+            3,
+            0,
+            3,
+            0
+          ],
+          "feedback": "Precies aangewezen."
+        },
+        {
+          "asked": {
+            "id": "area-h",
+            "name": "Toscane",
+            "mode": "point",
+            "answered": false
+          },
+          "trace": {
+            "xy": [
+              420,
+              500
+            ],
+            "screen": [
+              538.9829832995952,
+              780.6997090080972
+            ],
+            "native": {
+              "tag": "path",
+              "id": "area-h",
+              "hit": null
+            },
+            "physical": {
+              "x": 539,
+              "y": 781,
+              "tag": "path",
+              "id": "area-h",
+              "hit": null
+            }
+          },
+          "order": null,
+          "good": true,
+          "before": [
+            4,
+            0,
+            4,
+            0
+          ],
+          "after": [
+            5,
+            0,
+            5,
+            0
+          ],
+          "feedback": "Ja, dat is Toscane."
+        },
+        {
+          "asked": {
+            "id": "area-g",
+            "name": "de Povlakte",
+            "mode": "point",
+            "answered": false
+          },
+          "trace": {
+            "xy": [
+              335,
+              375
+            ],
+            "screen": [
+              444.7345015182187,
+              642.0990005060729
+            ],
+            "native": {
+              "tag": "path",
+              "id": null,
+              "hit": "water-G"
+            },
+            "physical": {
+              "x": 445,
+              "y": 642,
+              "tag": "path",
+              "id": null,
+              "hit": "water-G"
+            }
+          },
+          "order": null,
+          "good": true,
+          "before": [
+            5,
+            0,
+            5,
+            0
+          ],
+          "after": [
+            6,
+            0,
+            6,
+            0
+          ],
+          "feedback": "Precies aangewezen."
+        },
+        {
+          "asked": {
+            "id": "area-g",
+            "name": "de Povlakte",
+            "mode": "point",
+            "answered": false
+          },
+          "trace": {
+            "xy": [
+              335,
+              340
+            ],
+            "screen": [
+              444.7345015182187,
+              603.2908021255062
+            ],
+            "native": {
+              "tag": "path",
+              "id": null,
+              "hit": "water-G"
+            },
+            "physical": {
+              "x": 445,
+              "y": 603,
+              "tag": "path",
+              "id": null,
+              "hit": "water-G"
+            }
+          },
+          "order": null,
+          "good": true,
+          "before": [
+            6,
+            0,
+            6,
+            0
+          ],
+          "after": [
+            7,
+            0,
+            7,
+            0
+          ],
+          "feedback": "Goed gevonden!"
+        },
+        {
+          "asked": {
+            "id": "area-g",
+            "name": "de Povlakte",
+            "mode": "point",
+            "answered": false
+          },
+          "trace": {
+            "xy": [
+              400,
+              365
+            ],
+            "screen": [
+              516.8068699392713,
+              631.010943825911
+            ],
+            "native": {
+              "tag": "path",
+              "id": null,
+              "hit": "water-G"
+            },
+            "physical": {
+              "x": 517,
+              "y": 631,
+              "tag": "path",
+              "id": null,
+              "hit": "water-G"
+            }
+          },
+          "order": null,
+          "good": true,
+          "before": [
+            7,
+            0,
+            7,
+            0
+          ],
+          "after": [
+            8,
+            1,
+            0,
+            0
+          ],
+          "feedback": "Perfetto! Een pizza compleet."
+        },
+        {
+          "asked": {
+            "id": "area-g",
+            "name": "de Povlakte",
+            "mode": "point",
+            "answered": false
+          },
+          "trace": {
+            "xy": [
+              291.50421142578125,
+              357.9700012207031
+            ],
+            "screen": [
+              396.5061246122909,
+              623.2160413332797
+            ],
+            "native": {
+              "tag": "path",
+              "id": null,
+              "hit": "water-G"
+            },
+            "physical": {
+              "x": 397,
+              "y": 623,
+              "tag": "path",
+              "id": null,
+              "hit": "water-G"
+            }
+          },
+          "order": null,
+          "good": true,
+          "before": [
+            8,
+            1,
+            0,
+            0
+          ],
+          "after": [
+            9,
+            1,
+            1,
+            0
+          ],
+          "feedback": "Ja, dat is de Povlakte."
+        },
+        {
+          "asked": {
+            "id": "water-G",
+            "name": "Po",
+            "mode": "point",
+            "answered": false
+          },
+          "trace": {
+            "xy": [
+              291.50421142578125,
+              357.9700012207031
+            ],
+            "screen": [
+              396.5061246122909,
+              623.2160413332797
+            ],
+            "native": {
+              "tag": "path",
+              "id": null,
+              "hit": "water-G"
+            },
+            "physical": {
+              "x": 397,
+              "y": 623,
+              "tag": "path",
+              "id": null,
+              "hit": "water-G"
+            }
+          },
+          "order": null,
+          "good": true,
+          "before": [
+            10,
+            1,
+            2,
+            0
+          ],
+          "after": [
+            11,
+            1,
+            3,
+            0
+          ],
+          "feedback": "Goed gevonden!"
+        },
+        {
+          "asked": {
+            "id": "area-g",
+            "name": "de Povlakte",
+            "mode": "point",
+            "answered": false
+          },
+          "trace": {
+            "xy": [
+              410,
+              495
+            ],
+            "screen": [
+              527.8949266194332,
+              775.1556806680162
+            ],
+            "native": {
+              "tag": "path",
+              "id": "area-h",
+              "hit": null
+            },
+            "physical": {
+              "x": 528,
+              "y": 775,
+              "tag": "path",
+              "id": "area-h",
+              "hit": null
+            }
+          },
+          "order": null,
+          "good": false,
+          "before": [
+            11,
+            1,
+            3,
+            0
+          ],
+          "after": [
+            11,
+            1,
+            3,
+            0
+          ],
+          "feedback": "Dat was Toscane. Gezocht: de Povlakte."
+        },
+        {
+          "asked": {
+            "id": "water-F",
+            "name": "Tiber",
+            "mode": "point",
+            "answered": false
+          },
+          "trace": {
+            "xy": [
+              291.50421142578125,
+              357.9700012207031
+            ],
+            "screen": [
+              396.5061246122909,
+              623.2160413332797
+            ],
+            "native": {
+              "tag": "path",
+              "id": null,
+              "hit": "water-G"
+            },
+            "physical": {
+              "x": 397,
+              "y": 623,
+              "tag": "path",
+              "id": null,
+              "hit": "water-G"
+            }
+          },
+          "order": null,
+          "good": false,
+          "before": [
+            12,
+            1,
+            4,
+            0
+          ],
+          "after": [
+            12,
+            1,
+            4,
+            0
+          ],
+          "feedback": "Dat was Po. Gezocht: Tiber."
+        }
+      ]
+    },
+    {
+      "device": "desktop",
+      "w": 1440,
+      "h": 1000,
+      "style": "discovery",
+      "z": 1,
+      "checks": [
+        {
+          "asked": {
+            "id": "area-h",
+            "name": "Toscane",
+            "mode": "point",
+            "answered": false
+          },
+          "trace": {
+            "xy": [
+              350,
+              450
+            ],
+            "screen": [
+              513.3239182692308,
+              510.77815030364377
+            ],
+            "native": {
+              "tag": "path",
+              "id": "area-h",
+              "hit": null
+            },
+            "physical": {
+              "x": 513,
+              "y": 511,
+              "tag": "path",
+              "id": "area-h",
+              "hit": null
+            }
+          },
+          "order": null,
+          "good": true,
+          "before": [
+            1,
+            0,
+            1,
+            0
+          ],
+          "after": [
+            2,
+            0,
+            2,
+            0
+          ],
+          "feedback": "Ja, dat is Toscane."
+        },
+        {
+          "asked": {
+            "id": "area-h",
+            "name": "Toscane",
+            "mode": "point",
+            "answered": false
+          },
+          "trace": {
+            "xy": [
+              410,
+              495
+            ],
+            "screen": [
+              546.5880883097167,
+              535.7262778340081
+            ],
+            "native": {
+              "tag": "path",
+              "id": null,
+              "hit": "water-F"
+            },
+            "physical": {
+              "x": 547,
+              "y": 536,
+              "tag": "path",
+              "id": null,
+              "hit": "water-F"
+            }
+          },
+          "order": null,
+          "good": true,
+          "before": [
+            2,
+            0,
+            2,
+            0
+          ],
+          "after": [
+            3,
+            0,
+            3,
+            0
+          ],
+          "feedback": "Precies aangewezen."
+        },
+        {
+          "asked": {
+            "id": "area-h",
+            "name": "Toscane",
+            "mode": "point",
+            "answered": false
+          },
+          "trace": {
+            "xy": [
+              420,
+              500
+            ],
+            "screen": [
+              552.1321166497976,
+              538.4982920040486
+            ],
+            "native": {
+              "tag": "path",
+              "id": null,
+              "hit": "water-F"
+            },
+            "physical": {
+              "x": 552,
+              "y": 539,
+              "tag": "path",
+              "id": null,
+              "hit": "water-F"
+            }
+          },
+          "order": null,
+          "good": true,
+          "before": [
+            3,
+            0,
+            3,
+            0
+          ],
+          "after": [
+            4,
+            0,
+            4,
+            0
+          ],
+          "feedback": "Goed gevonden!"
+        },
+        {
+          "asked": {
+            "id": "area-g",
+            "name": "de Povlakte",
+            "mode": "point",
+            "answered": false
+          },
+          "trace": {
+            "xy": [
+              335,
+              375
+            ],
+            "screen": [
+              505.00787575910937,
+              469.19793775303646
+            ],
+            "native": {
+              "tag": "path",
+              "id": null,
+              "hit": "water-G"
+            },
+            "physical": {
+              "x": 505,
+              "y": 469,
+              "tag": "path",
+              "id": null,
+              "hit": "water-G"
+            }
+          },
+          "order": null,
+          "good": true,
+          "before": [
+            5,
+            0,
+            5,
+            0
+          ],
+          "after": [
+            6,
+            0,
+            6,
+            0
+          ],
+          "feedback": "Precies aangewezen."
+        },
+        {
+          "asked": {
+            "id": "area-g",
+            "name": "de Povlakte",
+            "mode": "point",
+            "answered": false
+          },
+          "trace": {
+            "xy": [
+              335,
+              340
+            ],
+            "screen": [
+              505.00787575910937,
+              449.7938385627531
+            ],
+            "native": {
+              "tag": "path",
+              "id": null,
+              "hit": "water-G"
+            },
+            "physical": {
+              "x": 505,
+              "y": 450,
+              "tag": "path",
+              "id": null,
+              "hit": "water-G"
+            }
+          },
+          "order": null,
+          "good": true,
+          "before": [
+            6,
+            0,
+            6,
+            0
+          ],
+          "after": [
+            7,
+            0,
+            7,
+            0
+          ],
+          "feedback": "Goed gevonden!"
+        },
+        {
+          "asked": {
+            "id": "area-g",
+            "name": "de Povlakte",
+            "mode": "point",
+            "answered": false
+          },
+          "trace": {
+            "xy": [
+              400,
+              365
+            ],
+            "screen": [
+              541.0440599696357,
+              463.6539094129555
+            ],
+            "native": {
+              "tag": "path",
+              "id": null,
+              "hit": "water-G"
+            },
+            "physical": {
+              "x": 541,
+              "y": 464,
+              "tag": "path",
+              "id": null,
+              "hit": "water-G"
+            }
+          },
+          "order": null,
+          "good": true,
+          "before": [
+            7,
+            0,
+            7,
+            0
+          ],
+          "after": [
+            8,
+            1,
+            0,
+            0
+          ],
+          "feedback": "Perfetto! Een pizza compleet."
+        },
+        {
+          "asked": {
+            "id": "area-g",
+            "name": "de Povlakte",
+            "mode": "point",
+            "answered": false
+          },
+          "trace": {
+            "xy": [
+              291.50421142578125,
+              357.9700012207031
+            ],
+            "screen": [
+              480.89368730614547,
+              459.75645816663985
+            ],
+            "native": {
+              "tag": "path",
+              "id": null,
+              "hit": "water-G"
+            },
+            "physical": {
+              "x": 481,
+              "y": 460,
+              "tag": "path",
+              "id": null,
+              "hit": "water-G"
+            }
+          },
+          "order": null,
+          "good": true,
+          "before": [
+            8,
+            1,
+            0,
+            0
+          ],
+          "after": [
+            9,
+            1,
+            1,
+            0
+          ],
+          "feedback": "Ja, dat is de Povlakte."
+        },
+        {
+          "asked": {
+            "id": "water-G",
+            "name": "Po",
+            "mode": "point",
+            "answered": false
+          },
+          "trace": {
+            "xy": [
+              291.50421142578125,
+              357.9700012207031
+            ],
+            "screen": [
+              480.89368730614547,
+              459.75645816663985
+            ],
+            "native": {
+              "tag": "path",
+              "id": null,
+              "hit": "water-G"
+            },
+            "physical": {
+              "x": 481,
+              "y": 460,
+              "tag": "path",
+              "id": null,
+              "hit": "water-G"
+            }
+          },
+          "order": null,
+          "good": true,
+          "before": [
+            9,
+            1,
+            1,
+            0
+          ],
+          "after": [
+            10,
+            1,
+            2,
+            0
+          ],
+          "feedback": "Precies aangewezen."
+        },
+        {
+          "asked": {
+            "id": "area-g",
+            "name": "de Povlakte",
+            "mode": "point",
+            "answered": false
+          },
+          "trace": {
+            "xy": [
+              410,
+              495
+            ],
+            "screen": [
+              546.5880883097167,
+              535.7262778340081
+            ],
+            "native": {
+              "tag": "path",
+              "id": null,
+              "hit": "water-F"
+            },
+            "physical": {
+              "x": 547,
+              "y": 536,
+              "tag": "path",
+              "id": null,
+              "hit": "water-F"
+            }
+          },
+          "order": null,
+          "good": false,
+          "before": [
+            11,
+            1,
+            3,
+            0
+          ],
+          "after": [
+            11,
+            1,
+            3,
+            0
+          ],
+          "feedback": "Dat was Toscane. Gezocht: de Povlakte."
+        },
+        {
+          "asked": {
+            "id": "water-F",
+            "name": "Tiber",
+            "mode": "point",
+            "answered": false
+          },
+          "trace": {
+            "xy": [
+              291.50421142578125,
+              357.9700012207031
+            ],
+            "screen": [
+              480.89368730614547,
+              459.75645816663985
+            ],
+            "native": {
+              "tag": "path",
+              "id": null,
+              "hit": "water-G"
+            },
+            "physical": {
+              "x": 481,
+              "y": 460,
+              "tag": "path",
+              "id": null,
+              "hit": "water-G"
+            }
+          },
+          "order": null,
+          "good": false,
+          "before": [
+            11,
+            1,
+            3,
+            0
+          ],
+          "after": [
+            11,
+            1,
+            3,
+            0
+          ],
+          "feedback": "Dat was Po. Gezocht: Tiber."
+        }
+      ]
+    },
+    {
+      "device": "desktop",
+      "w": 1440,
+      "h": 1000,
+      "style": "discovery",
+      "z": 2,
+      "checks": [
+        {
+          "asked": {
+            "id": "area-h",
+            "name": "Toscane",
+            "mode": "point",
+            "answered": false
+          },
+          "trace": {
+            "xy": [
+              350,
+              450
+            ],
+            "screen": [
+              461.36658653846155,
+              725.2594256072875
+            ],
+            "native": {
+              "tag": "path",
+              "id": "area-h",
+              "hit": null
+            },
+            "physical": {
+              "x": 461,
+              "y": 725,
+              "tag": "path",
+              "id": "area-h",
+              "hit": null
+            }
+          },
+          "order": null,
+          "good": true,
+          "before": [
+            1,
+            0,
+            1,
+            0
+          ],
+          "after": [
+            2,
+            0,
+            2,
+            0
+          ],
+          "feedback": "Ja, dat is Toscane."
+        },
+        {
+          "asked": {
+            "id": "area-h",
+            "name": "Toscane",
+            "mode": "point",
+            "answered": false
+          },
+          "trace": {
+            "xy": [
+              410,
+              495
+            ],
+            "screen": [
+              527.8949266194332,
+              775.1556806680162
+            ],
+            "native": {
+              "tag": "path",
+              "id": "area-h",
+              "hit": null
+            },
+            "physical": {
+              "x": 528,
+              "y": 775,
+              "tag": "path",
+              "id": "area-h",
+              "hit": null
+            }
+          },
+          "order": null,
+          "good": true,
+          "before": [
+            3,
+            0,
+            3,
+            0
+          ],
+          "after": [
+            4,
+            0,
+            4,
+            0
+          ],
+          "feedback": "Goed gevonden!"
+        },
+        {
+          "asked": {
+            "id": "area-h",
+            "name": "Toscane",
+            "mode": "point",
+            "answered": false
+          },
+          "trace": {
+            "xy": [
+              420,
+              500
+            ],
+            "screen": [
+              538.9829832995952,
+              780.6997090080972
+            ],
+            "native": {
+              "tag": "path",
+              "id": "area-h",
+              "hit": null
+            },
+            "physical": {
+              "x": 539,
+              "y": 781,
+              "tag": "path",
+              "id": "area-h",
+              "hit": null
+            }
+          },
+          "order": null,
+          "good": true,
+          "before": [
+            4,
+            0,
+            4,
+            0
+          ],
+          "after": [
+            5,
+            0,
+            5,
+            0
+          ],
+          "feedback": "Ja, dat is Toscane."
+        },
+        {
+          "asked": {
+            "id": "area-g",
+            "name": "de Povlakte",
+            "mode": "point",
+            "answered": false
+          },
+          "trace": {
+            "xy": [
+              335,
+              375
+            ],
+            "screen": [
+              444.7345015182187,
+              642.0990005060729
+            ],
+            "native": {
+              "tag": "path",
+              "id": null,
+              "hit": "water-G"
+            },
+            "physical": {
+              "x": 445,
+              "y": 642,
+              "tag": "path",
+              "id": null,
+              "hit": "water-G"
+            }
+          },
+          "order": null,
+          "good": true,
+          "before": [
+            6,
+            0,
+            6,
+            0
+          ],
+          "after": [
+            7,
+            0,
+            7,
+            0
+          ],
+          "feedback": "Goed gevonden!"
+        },
+        {
+          "asked": {
+            "id": "area-g",
+            "name": "de Povlakte",
+            "mode": "point",
+            "answered": false
+          },
+          "trace": {
+            "xy": [
+              335,
+              340
+            ],
+            "screen": [
+              444.7345015182187,
+              603.2908021255062
+            ],
+            "native": {
+              "tag": "path",
+              "id": null,
+              "hit": "water-G"
+            },
+            "physical": {
+              "x": 445,
+              "y": 603,
+              "tag": "path",
+              "id": null,
+              "hit": "water-G"
+            }
+          },
+          "order": null,
+          "good": true,
+          "before": [
+            7,
+            0,
+            7,
+            0
+          ],
+          "after": [
+            8,
+            1,
+            0,
+            0
+          ],
+          "feedback": "Perfetto! Een pizza compleet."
+        },
+        {
+          "asked": {
+            "id": "area-g",
+            "name": "de Povlakte",
+            "mode": "point",
+            "answered": false
+          },
+          "trace": {
+            "xy": [
+              400,
+              365
+            ],
+            "screen": [
+              516.8068699392713,
+              631.010943825911
+            ],
+            "native": {
+              "tag": "path",
+              "id": null,
+              "hit": "water-G"
+            },
+            "physical": {
+              "x": 517,
+              "y": 631,
+              "tag": "path",
+              "id": null,
+              "hit": "water-G"
+            }
+          },
+          "order": null,
+          "good": true,
+          "before": [
+            8,
+            1,
+            0,
+            0
+          ],
+          "after": [
+            9,
+            1,
+            1,
+            0
+          ],
+          "feedback": "Ja, dat is de Povlakte."
+        },
+        {
+          "asked": {
+            "id": "area-g",
+            "name": "de Povlakte",
+            "mode": "point",
+            "answered": false
+          },
+          "trace": {
+            "xy": [
+              291.50421142578125,
+              357.9700012207031
+            ],
+            "screen": [
+              396.5061246122909,
+              623.2160413332797
+            ],
+            "native": {
+              "tag": "path",
+              "id": null,
+              "hit": "water-G"
+            },
+            "physical": {
+              "x": 397,
+              "y": 623,
+              "tag": "path",
+              "id": null,
+              "hit": "water-G"
+            }
+          },
+          "order": null,
+          "good": true,
+          "before": [
+            10,
+            1,
+            2,
+            0
+          ],
+          "after": [
+            11,
+            1,
+            3,
+            0
+          ],
+          "feedback": "Goed gevonden!"
+        },
+        {
+          "asked": {
+            "id": "water-G",
+            "name": "Po",
+            "mode": "point",
+            "answered": false
+          },
+          "trace": {
+            "xy": [
+              291.50421142578125,
+              357.9700012207031
+            ],
+            "screen": [
+              396.5061246122909,
+              623.2160413332797
+            ],
+            "native": {
+              "tag": "path",
+              "id": null,
+              "hit": "water-G"
+            },
+            "physical": {
+              "x": 397,
+              "y": 623,
+              "tag": "path",
+              "id": null,
+              "hit": "water-G"
+            }
+          },
+          "order": null,
+          "good": true,
+          "before": [
+            11,
+            1,
+            3,
+            0
+          ],
+          "after": [
+            12,
+            1,
+            4,
+            0
+          ],
+          "feedback": "Ja, dat is Po."
+        },
+        {
+          "asked": {
+            "id": "area-g",
+            "name": "de Povlakte",
+            "mode": "point",
+            "answered": false
+          },
+          "trace": {
+            "xy": [
+              410,
+              495
+            ],
+            "screen": [
+              527.8949266194332,
+              775.1556806680162
+            ],
+            "native": {
+              "tag": "path",
+              "id": "area-h",
+              "hit": null
+            },
+            "physical": {
+              "x": 528,
+              "y": 775,
+              "tag": "path",
+              "id": "area-h",
+              "hit": null
+            }
+          },
+          "order": null,
+          "good": false,
+          "before": [
+            13,
+            1,
+            5,
+            0
+          ],
+          "after": [
+            13,
+            1,
+            5,
+            0
+          ],
+          "feedback": "Dat was Toscane. Gezocht: de Povlakte."
+        },
+        {
+          "asked": {
+            "id": "water-F",
+            "name": "Tiber",
+            "mode": "point",
+            "answered": false
+          },
+          "trace": {
+            "xy": [
+              291.50421142578125,
+              357.9700012207031
+            ],
+            "screen": [
+              396.5061246122909,
+              623.2160413332797
+            ],
+            "native": {
+              "tag": "path",
+              "id": null,
+              "hit": "water-G"
+            },
+            "physical": {
+              "x": 397,
+              "y": 623,
+              "tag": "path",
+              "id": null,
+              "hit": "water-G"
+            }
+          },
+          "order": null,
+          "good": false,
+          "before": [
+            14,
+            1,
+            6,
+            0
+          ],
+          "after": [
+            14,
+            1,
+            6,
+            0
+          ],
+          "feedback": "Dat was Po. Gezocht: Tiber."
+        }
+      ]
+    },
+    {
+      "device": "phone",
+      "w": 390,
+      "h": 844,
+      "style": "school",
+      "z": 1,
+      "checks": [
+        {
+          "asked": {
+            "id": "area-h",
+            "name": "Toscane",
+            "mode": "point",
+            "answered": false
+          },
+          "trace": {
+            "xy": [
+              350,
+              450
+            ],
+            "screen": [
+              155.71995192307693,
+              352.28213562753035
+            ],
+            "native": {
+              "tag": "path",
+              "id": "area-h",
+              "hit": null
+            },
+            "physical": {
+              "x": 156,
+              "y": 352,
+              "tag": "path",
+              "id": "area-h",
+              "hit": null
+            }
+          },
+          "order": null,
+          "good": true,
+          "before": [
+            1,
+            0,
+            1,
+            0
+          ],
+          "after": [
+            2,
+            0,
+            2,
+            0
+          ],
+          "feedback": "Ja, dat is Toscane."
+        },
+        {
+          "asked": {
+            "id": "area-h",
+            "name": "Toscane",
+            "mode": "point",
+            "answered": false
+          },
+          "trace": {
+            "xy": [
+              410,
+              495
+            ],
+            "screen": [
+              180.52840334008098,
+              370.88847419028343
+            ],
+            "native": {
+              "tag": "path",
+              "id": null,
+              "hit": "water-F"
+            },
+            "physical": {
+              "x": 181,
+              "y": 371,
+              "tag": "path",
+              "id": null,
+              "hit": "water-F"
+            }
+          },
+          "order": null,
+          "good": true,
+          "before": [
+            3,
+            0,
+            3,
+            0
+          ],
+          "after": [
+            4,
+            0,
+            4,
+            0
+          ],
+          "feedback": "Goed gevonden!"
+        },
+        {
+          "asked": {
+            "id": "area-h",
+            "name": "Toscane",
+            "mode": "point",
+            "answered": false
+          },
+          "trace": {
+            "xy": [
+              420,
+              500
+            ],
+            "screen": [
+              184.663145242915,
+              372.9558451417004
+            ],
+            "native": {
+              "tag": "path",
+              "id": null,
+              "hit": "water-F"
+            },
+            "physical": {
+              "x": 185,
+              "y": 373,
+              "tag": "path",
+              "id": null,
+              "hit": "water-F"
+            }
+          },
+          "order": null,
+          "good": true,
+          "before": [
+            4,
+            0,
+            4,
+            0
+          ],
+          "after": [
+            5,
+            0,
+            5,
+            0
+          ],
+          "feedback": "Ja, dat is Toscane."
+        },
+        {
+          "asked": {
+            "id": "area-g",
+            "name": "de Povlakte",
+            "mode": "point",
+            "answered": false
+          },
+          "trace": {
+            "xy": [
+              335,
+              375
+            ],
+            "screen": [
+              149.5178390688259,
+              321.27157135627533
+            ],
+            "native": {
+              "tag": "path",
+              "id": null,
+              "hit": "water-G"
+            },
+            "physical": {
+              "x": 150,
+              "y": 321,
+              "tag": "path",
+              "id": null,
+              "hit": "water-G"
+            }
+          },
+          "order": null,
+          "good": true,
+          "before": [
+            6,
+            0,
+            6,
+            0
+          ],
+          "after": [
+            7,
+            0,
+            7,
+            0
+          ],
+          "feedback": "Goed gevonden!"
+        },
+        {
+          "asked": {
+            "id": "area-g",
+            "name": "de Povlakte",
+            "mode": "point",
+            "answered": false
+          },
+          "trace": {
+            "xy": [
+              335,
+              340
+            ],
+            "screen": [
+              149.5178390688259,
+              306.7999746963563
+            ],
+            "native": {
+              "tag": "path",
+              "id": null,
+              "hit": "water-G"
+            },
+            "physical": {
+              "x": 150,
+              "y": 307,
+              "tag": "path",
+              "id": null,
+              "hit": "water-G"
+            }
+          },
+          "order": null,
+          "good": true,
+          "before": [
+            7,
+            0,
+            7,
+            0
+          ],
+          "after": [
+            8,
+            1,
+            0,
+            0
+          ],
+          "feedback": "Perfetto! Een pizza compleet."
+        },
+        {
+          "asked": {
+            "id": "area-g",
+            "name": "de Povlakte",
+            "mode": "point",
+            "answered": false
+          },
+          "trace": {
+            "xy": [
+              400,
+              365
+            ],
+            "screen": [
+              176.39366143724698,
+              317.1368294534413
+            ],
+            "native": {
+              "tag": "path",
+              "id": null,
+              "hit": "water-G"
+            },
+            "physical": {
+              "x": 176,
+              "y": 317,
+              "tag": "path",
+              "id": null,
+              "hit": "water-G"
+            }
+          },
+          "order": null,
+          "good": true,
+          "before": [
+            8,
+            1,
+            0,
+            0
+          ],
+          "after": [
+            9,
+            1,
+            1,
+            0
+          ],
+          "feedback": "Ja, dat is de Povlakte."
+        },
+        {
+          "asked": {
+            "id": "area-g",
+            "name": "de Povlakte",
+            "mode": "point",
+            "answered": false
+          },
+          "trace": {
+            "xy": [
+              291.50421142578125,
+              357.9700012207031
+            ],
+            "screen": [
+              131.53345310736282,
+              314.23010640047823
+            ],
+            "native": {
+              "tag": "path",
+              "id": null,
+              "hit": "water-G"
+            },
+            "physical": {
+              "x": 132,
+              "y": 314,
+              "tag": "path",
+              "id": null,
+              "hit": "water-G"
+            }
+          },
+          "order": null,
+          "good": true,
+          "before": [
+            9,
+            1,
+            1,
+            0
+          ],
+          "after": [
+            10,
+            1,
+            2,
+            0
+          ],
+          "feedback": "Precies aangewezen."
+        },
+        {
+          "asked": {
+            "id": "water-G",
+            "name": "Po",
+            "mode": "point",
+            "answered": false
+          },
+          "trace": {
+            "xy": [
+              291.50421142578125,
+              357.9700012207031
+            ],
+            "screen": [
+              131.53345310736282,
+              314.23010640047823
+            ],
+            "native": {
+              "tag": "path",
+              "id": null,
+              "hit": "water-G"
+            },
+            "physical": {
+              "x": 132,
+              "y": 314,
+              "tag": "path",
+              "id": null,
+              "hit": "water-G"
+            }
+          },
+          "order": null,
+          "good": true,
+          "before": [
+            10,
+            1,
+            2,
+            0
+          ],
+          "after": [
+            11,
+            1,
+            3,
+            0
+          ],
+          "feedback": "Goed gevonden!"
+        },
+        {
+          "asked": {
+            "id": "area-g",
+            "name": "de Povlakte",
+            "mode": "point",
+            "answered": false
+          },
+          "trace": {
+            "xy": [
+              410,
+              495
+            ],
+            "screen": [
+              180.52840334008098,
+              370.88847419028343
+            ],
+            "native": {
+              "tag": "path",
+              "id": null,
+              "hit": "water-F"
+            },
+            "physical": {
+              "x": 181,
+              "y": 371,
+              "tag": "path",
+              "id": null,
+              "hit": "water-F"
+            }
+          },
+          "order": null,
+          "good": false,
+          "before": [
+            11,
+            1,
+            3,
+            0
+          ],
+          "after": [
+            11,
+            1,
+            3,
+            0
+          ],
+          "feedback": "Dat was Toscane. Gezocht: de Povlakte."
+        },
+        {
+          "asked": {
+            "id": "water-F",
+            "name": "Tiber",
+            "mode": "point",
+            "answered": false
+          },
+          "trace": {
+            "xy": [
+              291.50421142578125,
+              357.9700012207031
+            ],
+            "screen": [
+              131.53345310736282,
+              314.23010640047823
+            ],
+            "native": {
+              "tag": "path",
+              "id": null,
+              "hit": "water-G"
+            },
+            "physical": {
+              "x": 132,
+              "y": 314,
+              "tag": "path",
+              "id": null,
+              "hit": "water-G"
+            }
+          },
+          "order": null,
+          "good": false,
+          "before": [
+            12,
+            1,
+            4,
+            0
+          ],
+          "after": [
+            12,
+            1,
+            4,
+            0
+          ],
+          "feedback": "Dat was Po. Gezocht: Tiber."
+        }
+      ]
+    },
+    {
+      "device": "phone",
+      "w": 390,
+      "h": 844,
+      "style": "school",
+      "z": 2,
+      "checks": [
+        {
+          "asked": {
+            "id": "area-h",
+            "name": "Toscane",
+            "mode": "point",
+            "answered": false
+          },
+          "trace": {
+            "xy": [
+              350,
+              450
+            ],
+            "screen": [
+              116.43870192307688,
+              512.3512145748988
+            ],
+            "native": {
+              "tag": "path",
+              "id": "area-h",
+              "hit": null
+            },
+            "physical": {
+              "x": 116,
+              "y": 512,
+              "tag": "path",
+              "id": "area-h",
+              "hit": null
+            }
+          },
+          "order": null,
+          "good": true,
+          "before": [
+            1,
+            0,
+            1,
+            0
+          ],
+          "after": [
+            2,
+            0,
+            2,
+            0
+          ],
+          "feedback": "Ja, dat is Toscane."
+        },
+        {
+          "asked": {
+            "id": "area-h",
+            "name": "Toscane",
+            "mode": "point",
+            "answered": false
+          },
+          "trace": {
+            "xy": [
+              410,
+              495
+            ],
+            "screen": [
+              166.0563638663967,
+              549.5644610323886
+            ],
+            "native": {
+              "tag": "path",
+              "id": "area-h",
+              "hit": null
+            },
+            "physical": {
+              "x": 166,
+              "y": 550,
+              "tag": "path",
+              "id": "area-h",
+              "hit": null
+            }
+          },
+          "order": null,
+          "good": true,
+          "before": [
+            2,
+            0,
+            2,
+            0
+          ],
+          "after": [
+            3,
+            0,
+            3,
+            0
+          ],
+          "feedback": "Precies aangewezen."
+        },
+        {
+          "asked": {
+            "id": "area-h",
+            "name": "Toscane",
+            "mode": "point",
+            "answered": false
+          },
+          "trace": {
+            "xy": [
+              420,
+              500
+            ],
+            "screen": [
+              174.32597419028335,
+              553.699266194332
+            ],
+            "native": {
+              "tag": "path",
+              "id": "area-h",
+              "hit": null
+            },
+            "physical": {
+              "x": 174,
+              "y": 554,
+              "tag": "path",
+              "id": "area-h",
+              "hit": null
+            }
+          },
+          "order": null,
+          "good": true,
+          "before": [
+            4,
+            0,
+            4,
+            0
+          ],
+          "after": [
+            5,
+            0,
+            5,
+            0
+          ],
+          "feedback": "Ja, dat is Toscane."
+        },
+        {
+          "asked": {
+            "id": "area-g",
+            "name": "de Povlakte",
+            "mode": "point",
+            "answered": false
+          },
+          "trace": {
+            "xy": [
+              335,
+              375
+            ],
+            "screen": [
+              104.03428643724695,
+              450.329137145749
+            ],
+            "native": {
+              "tag": "path",
+              "id": null,
+              "hit": "water-G"
+            },
+            "physical": {
+              "x": 104,
+              "y": 450,
+              "tag": "path",
+              "id": null,
+              "hit": "water-G"
+            }
+          },
+          "order": null,
+          "good": true,
+          "before": [
+            6,
+            0,
+            6,
+            0
+          ],
+          "after": [
+            7,
+            0,
+            7,
+            0
+          ],
+          "feedback": "Goed gevonden!"
+        },
+        {
+          "asked": {
+            "id": "area-g",
+            "name": "de Povlakte",
+            "mode": "point",
+            "answered": false
+          },
+          "trace": {
+            "xy": [
+              335,
+              340
+            ],
+            "screen": [
+              104.03428643724695,
+              421.3855010121457
+            ],
+            "native": {
+              "tag": "path",
+              "id": null,
+              "hit": "water-G"
+            },
+            "physical": {
+              "x": 104,
+              "y": 421,
+              "tag": "path",
+              "id": null,
+              "hit": "water-G"
+            }
+          },
+          "order": null,
+          "good": true,
+          "before": [
+            7,
+            0,
+            7,
+            0
+          ],
+          "after": [
+            8,
+            1,
+            0,
+            0
+          ],
+          "feedback": "Perfetto! Een pizza compleet."
+        },
+        {
+          "asked": {
+            "id": "area-g",
+            "name": "de Povlakte",
+            "mode": "point",
+            "answered": false
+          },
+          "trace": {
+            "xy": [
+              400,
+              365
+            ],
+            "screen": [
+              157.78675354251007,
+              442.05952682186233
+            ],
+            "native": {
+              "tag": "path",
+              "id": null,
+              "hit": "water-G"
+            },
+            "physical": {
+              "x": 158,
+              "y": 442,
+              "tag": "path",
+              "id": null,
+              "hit": "water-G"
+            }
+          },
+          "order": null,
+          "good": true,
+          "before": [
+            9,
+            1,
+            1,
+            0
+          ],
+          "after": [
+            10,
+            1,
+            2,
+            0
+          ],
+          "feedback": "Precies aangewezen."
+        },
+        {
+          "asked": {
+            "id": "area-g",
+            "name": "de Povlakte",
+            "mode": "point",
+            "answered": false
+          },
+          "trace": {
+            "xy": [
+              291.50421142578125,
+              357.9700012207031
+            ],
+            "screen": [
+              68.06496421335194,
+              436.24599177364394
+            ],
+            "native": {
+              "tag": "path",
+              "id": null,
+              "hit": "water-G"
+            },
+            "physical": {
+              "x": 68,
+              "y": 436,
+              "tag": "path",
+              "id": null,
+              "hit": "water-G"
+            }
+          },
+          "order": null,
+          "good": true,
+          "before": [
+            10,
+            1,
+            2,
+            0
+          ],
+          "after": [
+            11,
+            1,
+            3,
+            0
+          ],
+          "feedback": "Goed gevonden!"
+        },
+        {
+          "asked": {
+            "id": "water-G",
+            "name": "Po",
+            "mode": "point",
+            "answered": false
+          },
+          "trace": {
+            "xy": [
+              291.50421142578125,
+              357.9700012207031
+            ],
+            "screen": [
+              68.06496421335194,
+              436.24599177364394
+            ],
+            "native": {
+              "tag": "path",
+              "id": null,
+              "hit": "water-G"
+            },
+            "physical": {
+              "x": 68,
+              "y": 436,
+              "tag": "path",
+              "id": null,
+              "hit": "water-G"
+            }
+          },
+          "order": null,
+          "good": true,
+          "before": [
+            11,
+            1,
+            3,
+            0
+          ],
+          "after": [
+            12,
+            1,
+            4,
+            0
+          ],
+          "feedback": "Ja, dat is Po."
+        },
+        {
+          "asked": {
+            "id": "area-g",
+            "name": "de Povlakte",
+            "mode": "point",
+            "answered": false
+          },
+          "trace": {
+            "xy": [
+              410,
+              495
+            ],
+            "screen": [
+              166.0563638663967,
+              549.5644610323886
+            ],
+            "native": {
+              "tag": "path",
+              "id": "area-h",
+              "hit": null
+            },
+            "physical": {
+              "x": 166,
+              "y": 550,
+              "tag": "path",
+              "id": "area-h",
+              "hit": null
+            }
+          },
+          "order": null,
+          "good": false,
+          "before": [
+            13,
+            1,
+            5,
+            0
+          ],
+          "after": [
+            13,
+            1,
+            5,
+            0
+          ],
+          "feedback": "Dat was Toscane. Gezocht: de Povlakte."
+        },
+        {
+          "asked": {
+            "id": "water-F",
+            "name": "Tiber",
+            "mode": "point",
+            "answered": false
+          },
+          "trace": {
+            "xy": [
+              291.50421142578125,
+              357.9700012207031
+            ],
+            "screen": [
+              68.06496421335194,
+              436.24599177364394
+            ],
+            "native": {
+              "tag": "path",
+              "id": null,
+              "hit": "water-G"
+            },
+            "physical": {
+              "x": 68,
+              "y": 436,
+              "tag": "path",
+              "id": null,
+              "hit": "water-G"
+            }
+          },
+          "order": null,
+          "good": false,
+          "before": [
+            14,
+            1,
+            6,
+            0
+          ],
+          "after": [
+            14,
+            1,
+            6,
+            0
+          ],
+          "feedback": "Dat was Po. Gezocht: Tiber."
+        }
+      ]
+    },
+    {
+      "device": "phone",
+      "w": 390,
+      "h": 844,
+      "style": "discovery",
+      "z": 1,
+      "checks": [
+        {
+          "asked": {
+            "id": "area-h",
+            "name": "Toscane",
+            "mode": "point",
+            "answered": false
+          },
+          "trace": {
+            "xy": [
+              350,
+              450
+            ],
+            "screen": [
+              155.71995192307693,
+              352.28213562753035
+            ],
+            "native": {
+              "tag": "path",
+              "id": "area-h",
+              "hit": null
+            },
+            "physical": {
+              "x": 156,
+              "y": 352,
+              "tag": "path",
+              "id": "area-h",
+              "hit": null
+            }
+          },
+          "order": null,
+          "good": true,
+          "before": [
+            1,
+            0,
+            1,
+            0
+          ],
+          "after": [
+            2,
+            0,
+            2,
+            0
+          ],
+          "feedback": "Ja, dat is Toscane."
+        },
+        {
+          "asked": {
+            "id": "area-h",
+            "name": "Toscane",
+            "mode": "point",
+            "answered": false
+          },
+          "trace": {
+            "xy": [
+              410,
+              495
+            ],
+            "screen": [
+              180.52840334008098,
+              370.88847419028343
+            ],
+            "native": {
+              "tag": "path",
+              "id": null,
+              "hit": "water-F"
+            },
+            "physical": {
+              "x": 181,
+              "y": 371,
+              "tag": "path",
+              "id": null,
+              "hit": "water-F"
+            }
+          },
+          "order": null,
+          "good": true,
+          "before": [
+            2,
+            0,
+            2,
+            0
+          ],
+          "after": [
+            3,
+            0,
+            3,
+            0
+          ],
+          "feedback": "Precies aangewezen."
+        },
+        {
+          "asked": {
+            "id": "area-h",
+            "name": "Toscane",
+            "mode": "point",
+            "answered": false
+          },
+          "trace": {
+            "xy": [
+              420,
+              500
+            ],
+            "screen": [
+              184.663145242915,
+              372.9558451417004
+            ],
+            "native": {
+              "tag": "path",
+              "id": null,
+              "hit": "water-F"
+            },
+            "physical": {
+              "x": 185,
+              "y": 373,
+              "tag": "path",
+              "id": null,
+              "hit": "water-F"
+            }
+          },
+          "order": null,
+          "good": true,
+          "before": [
+            3,
+            0,
+            3,
+            0
+          ],
+          "after": [
+            4,
+            0,
+            4,
+            0
+          ],
+          "feedback": "Goed gevonden!"
+        },
+        {
+          "asked": {
+            "id": "area-g",
+            "name": "de Povlakte",
+            "mode": "point",
+            "answered": false
+          },
+          "trace": {
+            "xy": [
+              335,
+              375
+            ],
+            "screen": [
+              149.5178390688259,
+              321.27157135627533
+            ],
+            "native": {
+              "tag": "path",
+              "id": null,
+              "hit": "water-G"
+            },
+            "physical": {
+              "x": 150,
+              "y": 321,
+              "tag": "path",
+              "id": null,
+              "hit": "water-G"
+            }
+          },
+          "order": null,
+          "good": true,
+          "before": [
+            5,
+            0,
+            5,
+            0
+          ],
+          "after": [
+            6,
+            0,
+            6,
+            0
+          ],
+          "feedback": "Precies aangewezen."
+        },
+        {
+          "asked": {
+            "id": "area-g",
+            "name": "de Povlakte",
+            "mode": "point",
+            "answered": false
+          },
+          "trace": {
+            "xy": [
+              335,
+              340
+            ],
+            "screen": [
+              149.5178390688259,
+              306.7999746963563
+            ],
+            "native": {
+              "tag": "path",
+              "id": null,
+              "hit": "water-G"
+            },
+            "physical": {
+              "x": 150,
+              "y": 307,
+              "tag": "path",
+              "id": null,
+              "hit": "water-G"
+            }
+          },
+          "order": null,
+          "good": true,
+          "before": [
+            7,
+            0,
+            7,
+            0
+          ],
+          "after": [
+            8,
+            1,
+            0,
+            0
+          ],
+          "feedback": "Perfetto! Een pizza compleet."
+        },
+        {
+          "asked": {
+            "id": "area-g",
+            "name": "de Povlakte",
+            "mode": "point",
+            "answered": false
+          },
+          "trace": {
+            "xy": [
+              400,
+              365
+            ],
+            "screen": [
+              176.39366143724698,
+              317.1368294534413
+            ],
+            "native": {
+              "tag": "path",
+              "id": null,
+              "hit": "water-G"
+            },
+            "physical": {
+              "x": 176,
+              "y": 317,
+              "tag": "path",
+              "id": null,
+              "hit": "water-G"
+            }
+          },
+          "order": null,
+          "good": true,
+          "before": [
+            9,
+            1,
+            1,
+            0
+          ],
+          "after": [
+            10,
+            1,
+            2,
+            0
+          ],
+          "feedback": "Precies aangewezen."
+        },
+        {
+          "asked": {
+            "id": "area-g",
+            "name": "de Povlakte",
+            "mode": "point",
+            "answered": false
+          },
+          "trace": {
+            "xy": [
+              291.50421142578125,
+              357.9700012207031
+            ],
+            "screen": [
+              131.53345310736282,
+              314.23010640047823
+            ],
+            "native": {
+              "tag": "path",
+              "id": null,
+              "hit": "water-G"
+            },
+            "physical": {
+              "x": 132,
+              "y": 314,
+              "tag": "path",
+              "id": null,
+              "hit": "water-G"
+            }
+          },
+          "order": null,
+          "good": true,
+          "before": [
+            10,
+            1,
+            2,
+            0
+          ],
+          "after": [
+            11,
+            1,
+            3,
+            0
+          ],
+          "feedback": "Goed gevonden!"
+        },
+        {
+          "asked": {
+            "id": "water-G",
+            "name": "Po",
+            "mode": "point",
+            "answered": false
+          },
+          "trace": {
+            "xy": [
+              291.50421142578125,
+              357.9700012207031
+            ],
+            "screen": [
+              131.53345310736282,
+              314.23010640047823
+            ],
+            "native": {
+              "tag": "path",
+              "id": null,
+              "hit": "water-G"
+            },
+            "physical": {
+              "x": 132,
+              "y": 314,
+              "tag": "path",
+              "id": null,
+              "hit": "water-G"
+            }
+          },
+          "order": null,
+          "good": true,
+          "before": [
+            12,
+            1,
+            4,
+            0
+          ],
+          "after": [
+            13,
+            1,
+            5,
+            0
+          ],
+          "feedback": "Precies aangewezen."
+        },
+        {
+          "asked": {
+            "id": "area-g",
+            "name": "de Povlakte",
+            "mode": "point",
+            "answered": false
+          },
+          "trace": {
+            "xy": [
+              410,
+              495
+            ],
+            "screen": [
+              180.52840334008098,
+              370.88847419028343
+            ],
+            "native": {
+              "tag": "path",
+              "id": null,
+              "hit": "water-F"
+            },
+            "physical": {
+              "x": 181,
+              "y": 371,
+              "tag": "path",
+              "id": null,
+              "hit": "water-F"
+            }
+          },
+          "order": null,
+          "good": false,
+          "before": [
+            13,
+            1,
+            5,
+            0
+          ],
+          "after": [
+            13,
+            1,
+            5,
+            0
+          ],
+          "feedback": "Dat was Toscane. Gezocht: de Povlakte."
+        },
+        {
+          "asked": {
+            "id": "water-F",
+            "name": "Tiber",
+            "mode": "point",
+            "answered": false
+          },
+          "trace": {
+            "xy": [
+              291.50421142578125,
+              357.9700012207031
+            ],
+            "screen": [
+              131.53345310736282,
+              314.23010640047823
+            ],
+            "native": {
+              "tag": "path",
+              "id": null,
+              "hit": "water-G"
+            },
+            "physical": {
+              "x": 132,
+              "y": 314,
+              "tag": "path",
+              "id": null,
+              "hit": "water-G"
+            }
+          },
+          "order": null,
+          "good": false,
+          "before": [
+            13,
+            1,
+            5,
+            0
+          ],
+          "after": [
+            13,
+            1,
+            5,
+            0
+          ],
+          "feedback": "Dat was Po. Gezocht: Tiber."
+        }
+      ]
+    },
+    {
+      "device": "phone",
+      "w": 390,
+      "h": 844,
+      "style": "discovery",
+      "z": 2,
+      "checks": [
+        {
+          "asked": {
+            "id": "area-h",
+            "name": "Toscane",
+            "mode": "point",
+            "answered": false
+          },
+          "trace": {
+            "xy": [
+              350,
+              450
+            ],
+            "screen": [
+              116.43870192307688,
+              512.3512145748988
+            ],
+            "native": {
+              "tag": "path",
+              "id": "area-h",
+              "hit": null
+            },
+            "physical": {
+              "x": 116,
+              "y": 512,
+              "tag": "path",
+              "id": "area-h",
+              "hit": null
+            }
+          },
+          "order": null,
+          "good": true,
+          "before": [
+            1,
+            0,
+            1,
+            0
+          ],
+          "after": [
+            2,
+            0,
+            2,
+            0
+          ],
+          "feedback": "Ja, dat is Toscane."
+        },
+        {
+          "asked": {
+            "id": "area-h",
+            "name": "Toscane",
+            "mode": "point",
+            "answered": false
+          },
+          "trace": {
+            "xy": [
+              410,
+              495
+            ],
+            "screen": [
+              166.0563638663967,
+              549.5644610323886
+            ],
+            "native": {
+              "tag": "path",
+              "id": "area-h",
+              "hit": null
+            },
+            "physical": {
+              "x": 166,
+              "y": 550,
+              "tag": "path",
+              "id": "area-h",
+              "hit": null
+            }
+          },
+          "order": null,
+          "good": true,
+          "before": [
+            2,
+            0,
+            2,
+            0
+          ],
+          "after": [
+            3,
+            0,
+            3,
+            0
+          ],
+          "feedback": "Precies aangewezen."
+        },
+        {
+          "asked": {
+            "id": "area-h",
+            "name": "Toscane",
+            "mode": "point",
+            "answered": false
+          },
+          "trace": {
+            "xy": [
+              420,
+              500
+            ],
+            "screen": [
+              174.32597419028335,
+              553.699266194332
+            ],
+            "native": {
+              "tag": "path",
+              "id": "area-h",
+              "hit": null
+            },
+            "physical": {
+              "x": 174,
+              "y": 554,
+              "tag": "path",
+              "id": "area-h",
+              "hit": null
+            }
+          },
+          "order": null,
+          "good": true,
+          "before": [
+            3,
+            0,
+            3,
+            0
+          ],
+          "after": [
+            4,
+            0,
+            4,
+            0
+          ],
+          "feedback": "Goed gevonden!"
+        },
+        {
+          "asked": {
+            "id": "area-g",
+            "name": "de Povlakte",
+            "mode": "point",
+            "answered": false
+          },
+          "trace": {
+            "xy": [
+              335,
+              375
+            ],
+            "screen": [
+              104.03428643724695,
+              450.329137145749
+            ],
+            "native": {
+              "tag": "path",
+              "id": null,
+              "hit": "water-G"
+            },
+            "physical": {
+              "x": 104,
+              "y": 450,
+              "tag": "path",
+              "id": null,
+              "hit": "water-G"
+            }
+          },
+          "order": null,
+          "good": true,
+          "before": [
+            4,
+            0,
+            4,
+            0
+          ],
+          "after": [
+            5,
+            0,
+            5,
+            0
+          ],
+          "feedback": "Ja, dat is de Povlakte."
+        },
+        {
+          "asked": {
+            "id": "area-g",
+            "name": "de Povlakte",
+            "mode": "point",
+            "answered": false
+          },
+          "trace": {
+            "xy": [
+              335,
+              340
+            ],
+            "screen": [
+              104.03428643724695,
+              421.3855010121457
+            ],
+            "native": {
+              "tag": "path",
+              "id": null,
+              "hit": "water-G"
+            },
+            "physical": {
+              "x": 104,
+              "y": 421,
+              "tag": "path",
+              "id": null,
+              "hit": "water-G"
+            }
+          },
+          "order": null,
+          "good": true,
+          "before": [
+            5,
+            0,
+            5,
+            0
+          ],
+          "after": [
+            6,
+            0,
+            6,
+            0
+          ],
+          "feedback": "Precies aangewezen."
+        },
+        {
+          "asked": {
+            "id": "area-g",
+            "name": "de Povlakte",
+            "mode": "point",
+            "answered": false
+          },
+          "trace": {
+            "xy": [
+              400,
+              365
+            ],
+            "screen": [
+              157.78675354251007,
+              442.05952682186233
+            ],
+            "native": {
+              "tag": "path",
+              "id": null,
+              "hit": "water-G"
+            },
+            "physical": {
+              "x": 158,
+              "y": 442,
+              "tag": "path",
+              "id": null,
+              "hit": "water-G"
+            }
+          },
+          "order": null,
+          "good": true,
+          "before": [
+            7,
+            0,
+            7,
+            0
+          ],
+          "after": [
+            8,
+            1,
+            0,
+            0
+          ],
+          "feedback": "Perfetto! Een pizza compleet."
+        },
+        {
+          "asked": {
+            "id": "area-g",
+            "name": "de Povlakte",
+            "mode": "point",
+            "answered": false
+          },
+          "trace": {
+            "xy": [
+              291.50421142578125,
+              357.9700012207031
+            ],
+            "screen": [
+              68.06496421335194,
+              436.24599177364394
+            ],
+            "native": {
+              "tag": "path",
+              "id": null,
+              "hit": "water-G"
+            },
+            "physical": {
+              "x": 68,
+              "y": 436,
+              "tag": "path",
+              "id": null,
+              "hit": "water-G"
+            }
+          },
+          "order": null,
+          "good": true,
+          "before": [
+            8,
+            1,
+            0,
+            0
+          ],
+          "after": [
+            9,
+            1,
+            1,
+            0
+          ],
+          "feedback": "Ja, dat is de Povlakte."
+        },
+        {
+          "asked": {
+            "id": "water-G",
+            "name": "Po",
+            "mode": "point",
+            "answered": false
+          },
+          "trace": {
+            "xy": [
+              291.50421142578125,
+              357.9700012207031
+            ],
+            "screen": [
+              68.06496421335194,
+              436.24599177364394
+            ],
+            "native": {
+              "tag": "path",
+              "id": null,
+              "hit": "water-G"
+            },
+            "physical": {
+              "x": 68,
+              "y": 436,
+              "tag": "path",
+              "id": null,
+              "hit": "water-G"
+            }
+          },
+          "order": null,
+          "good": true,
+          "before": [
+            10,
+            1,
+            2,
+            0
+          ],
+          "after": [
+            11,
+            1,
+            3,
+            0
+          ],
+          "feedback": "Goed gevonden!"
+        },
+        {
+          "asked": {
+            "id": "area-g",
+            "name": "de Povlakte",
+            "mode": "point",
+            "answered": false
+          },
+          "trace": {
+            "xy": [
+              410,
+              495
+            ],
+            "screen": [
+              166.0563638663967,
+              549.5644610323886
+            ],
+            "native": {
+              "tag": "path",
+              "id": "area-h",
+              "hit": null
+            },
+            "physical": {
+              "x": 166,
+              "y": 550,
+              "tag": "path",
+              "id": "area-h",
+              "hit": null
+            }
+          },
+          "order": null,
+          "good": false,
+          "before": [
+            11,
+            1,
+            3,
+            0
+          ],
+          "after": [
+            11,
+            1,
+            3,
+            0
+          ],
+          "feedback": "Dat was Toscane. Gezocht: de Povlakte."
+        },
+        {
+          "asked": {
+            "id": "water-F",
+            "name": "Tiber",
+            "mode": "point",
+            "answered": false
+          },
+          "trace": {
+            "xy": [
+              291.50421142578125,
+              357.9700012207031
+            ],
+            "screen": [
+              68.06496421335194,
+              436.24599177364394
+            ],
+            "native": {
+              "tag": "path",
+              "id": null,
+              "hit": "water-G"
+            },
+            "physical": {
+              "x": 68,
+              "y": 436,
+              "tag": "path",
+              "id": null,
+              "hit": "water-G"
+            }
+          },
+          "order": null,
+          "good": false,
+          "before": [
+            11,
+            1,
+            3,
+            0
+          ],
+          "after": [
+            11,
+            1,
+            3,
+            0
+          ],
+          "feedback": "Dat was Po. Gezocht: Tiber."
+        }
+      ]
+    }
+  ],
+  "routes": [],
+  "choices": [],
+  "extras": [],
+  "findings": [],
+  "errors": [],
+  "network": [],
+  "physicalSafari": "PENDING: Chromium touch emulation only"
+}

@@ -1,0 +1,25 @@
+PASS ipad-landscape school 1
+PASS ipad-landscape school 2
+PASS ipad-landscape discovery 1
+PASS ipad-landscape discovery 2
+PASS ipad-portrait school 1
+PASS ipad-portrait school 2
+PASS ipad-portrait discovery 1
+PASS ipad-portrait discovery 2
+PASS desktop school 1
+PASS desktop school 2
+PASS desktop discovery 1
+PASS desktop discovery 2
+PASS phone school 1
+PASS phone school 2
+PASS phone discovery 1
+PASS phone discovery 2
+{
+  "matrix": 16,
+  "routes": 0,
+  "anchors": 0,
+  "extras": [],
+  "findings": [],
+  "errors": [],
+  "network": []
+}

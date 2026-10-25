@@ -105,7 +105,7 @@ function answerRouteTask(useDock=false){
  }else if(mode==='point'){
    if(id==='area-o'||id==='city-9'){
      inspect('romeHit.dispatchEvent(new MouseEvent("click",{bubbles:true}))');
-     document.querySelectorAll('#mapPicker .pickerActions button')[id==='city-9'?0:1].click();
+     document.querySelector('#mapPicker [data-map-choice="'+id+'"]').click();
    }else if(id==='area-n')inspect('sanHit.dispatchEvent(new MouseEvent("click",{bubbles:true}))');
    else inspect('elements[state.current.id].dispatchEvent(new MouseEvent("click",{bubbles:true}))');
  }else{

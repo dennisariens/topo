@@ -1,0 +1,508 @@
+{
+  "baseline": "f67027d42202d1bd2a78f1d82dd02aa7fba41a91",
+  "runs": [
+    {
+      "name": "ipad-landscape",
+      "style": "school",
+      "zoom": 1,
+      "tuscanyPoints": 3,
+      "poPlainPoints": 3,
+      "river": true,
+      "wrongSameClass": true,
+      "apenninesInteraction": true,
+      "sanMarino": true,
+      "romeVatican": true,
+      "questionIndependentCandidates": true
+    },
+    {
+      "name": "ipad-landscape",
+      "style": "school",
+      "zoom": 2,
+      "tuscanyPoints": 3,
+      "poPlainPoints": 3,
+      "river": true,
+      "wrongSameClass": true,
+      "apenninesInteraction": true,
+      "sanMarino": true,
+      "romeVatican": true,
+      "questionIndependentCandidates": true
+    },
+    {
+      "name": "ipad-landscape",
+      "style": "discovery",
+      "zoom": 1,
+      "tuscanyPoints": 3,
+      "poPlainPoints": 3,
+      "river": true,
+      "wrongSameClass": true,
+      "apenninesInteraction": true,
+      "sanMarino": true,
+      "romeVatican": true,
+      "questionIndependentCandidates": true
+    },
+    {
+      "name": "ipad-landscape",
+      "style": "discovery",
+      "zoom": 2,
+      "tuscanyPoints": 3,
+      "poPlainPoints": 3,
+      "river": true,
+      "wrongSameClass": true,
+      "apenninesInteraction": true,
+      "sanMarino": true,
+      "romeVatican": true,
+      "questionIndependentCandidates": true
+    },
+    {
+      "name": "ipad-portrait",
+      "style": "school",
+      "zoom": 1,
+      "tuscanyPoints": 3,
+      "poPlainPoints": 3,
+      "river": true,
+      "wrongSameClass": true,
+      "apenninesInteraction": true,
+      "sanMarino": true,
+      "romeVatican": true,
+      "questionIndependentCandidates": true
+    },
+    {
+      "name": "ipad-portrait",
+      "style": "school",
+      "zoom": 2,
+      "tuscanyPoints": 3,
+      "poPlainPoints": 3,
+      "river": true,
+      "wrongSameClass": true,
+      "apenninesInteraction": true,
+      "sanMarino": true,
+      "romeVatican": true,
+      "questionIndependentCandidates": true
+    },
+    {
+      "name": "ipad-portrait",
+      "style": "discovery",
+      "zoom": 1,
+      "tuscanyPoints": 3,
+      "poPlainPoints": 3,
+      "river": true,
+      "wrongSameClass": true,
+      "apenninesInteraction": true,
+      "sanMarino": true,
+      "romeVatican": true,
+      "questionIndependentCandidates": true
+    },
+    {
+      "name": "ipad-portrait",
+      "style": "discovery",
+      "zoom": 2,
+      "tuscanyPoints": 3,
+      "poPlainPoints": 3,
+      "river": true,
+      "wrongSameClass": true,
+      "apenninesInteraction": true,
+      "sanMarino": true,
+      "romeVatican": true,
+      "questionIndependentCandidates": true
+    },
+    {
+      "name": "desktop",
+      "style": "school",
+      "zoom": 1,
+      "tuscanyPoints": 3,
+      "poPlainPoints": 3,
+      "river": true,
+      "wrongSameClass": true,
+      "apenninesInteraction": true,
+      "sanMarino": true,
+      "romeVatican": true,
+      "questionIndependentCandidates": true
+    },
+    {
+      "name": "desktop",
+      "style": "school",
+      "zoom": 2,
+      "tuscanyPoints": 3,
+      "poPlainPoints": 3,
+      "river": true,
+      "wrongSameClass": true,
+      "apenninesInteraction": true,
+      "sanMarino": true,
+      "romeVatican": true,
+      "questionIndependentCandidates": true
+    },
+    {
+      "name": "desktop",
+      "style": "discovery",
+      "zoom": 1,
+      "tuscanyPoints": 3,
+      "poPlainPoints": 3,
+      "river": true,
+      "wrongSameClass": true,
+      "apenninesInteraction": true,
+      "sanMarino": true,
+      "romeVatican": true,
+      "questionIndependentCandidates": true
+    },
+    {
+      "name": "desktop",
+      "style": "discovery",
+      "zoom": 2,
+      "tuscanyPoints": 3,
+      "poPlainPoints": 3,
+      "river": true,
+      "wrongSameClass": true,
+      "apenninesInteraction": true,
+      "sanMarino": true,
+      "romeVatican": true,
+      "questionIndependentCandidates": true
+    },
+    {
+      "name": "phone",
+      "style": "school",
+      "zoom": 1,
+      "tuscanyPoints": 3,
+      "poPlainPoints": 3,
+      "river": true,
+      "wrongSameClass": true,
+      "apenninesInteraction": true,
+      "sanMarino": true,
+      "romeVatican": true,
+      "questionIndependentCandidates": true
+    },
+    {
+      "name": "phone",
+      "style": "school",
+      "zoom": 2,
+      "tuscanyPoints": 3,
+      "poPlainPoints": 3,
+      "river": true,
+      "wrongSameClass": true,
+      "apenninesInteraction": true,
+      "sanMarino": true,
+      "romeVatican": true,
+      "questionIndependentCandidates": true
+    },
+    {
+      "name": "phone",
+      "style": "discovery",
+      "zoom": 1,
+      "tuscanyPoints": 3,
+      "poPlainPoints": 3,
+      "river": true,
+      "wrongSameClass": true,
+      "apenninesInteraction": true,
+      "sanMarino": true,
+      "romeVatican": true,
+      "questionIndependentCandidates": true
+    },
+    {
+      "name": "phone",
+      "style": "discovery",
+      "zoom": 2,
+      "tuscanyPoints": 3,
+      "poPlainPoints": 3,
+      "river": true,
+      "wrongSameClass": true,
+      "apenninesInteraction": true,
+      "sanMarino": true,
+      "romeVatican": true,
+      "questionIndependentCandidates": true
+    }
+  ],
+  "routes": [
+    {
+      "name": "ipad-landscape",
+      "passed": true,
+      "wrong": 1,
+      "good": 2,
+      "slices": 2,
+      "answered": [
+        {
+          "asked": "area-h",
+          "picker": false,
+          "trace": {
+            "xy": [
+              435.87417763157896,
+              513.5542130566802
+            ],
+            "top": {
+              "tag": "path",
+              "feature": "area-h",
+              "hit": null
+            }
+          },
+          "candidates": [
+            "area-h"
+          ],
+          "feedback": "Goed gevonden!"
+        },
+        {
+          "asked": "area-g",
+          "picker": false,
+          "trace": {
+            "xy": [
+              436.0514929149798,
+              513.54320597166
+            ],
+            "top": {
+              "tag": "path",
+              "feature": null,
+              "hit": "water-G"
+            }
+          },
+          "candidates": [
+            "area-g"
+          ],
+          "feedback": "Ja, dat is de Povlakte."
+        }
+      ]
+    },
+    {
+      "name": "ipad-portrait",
+      "passed": true,
+      "wrong": 1,
+      "good": 2,
+      "slices": 2,
+      "answered": [
+        {
+          "asked": "area-h",
+          "picker": false,
+          "trace": {
+            "xy": [
+              281.7310855263158,
+              623.2324772267207
+            ],
+            "top": {
+              "tag": "path",
+              "feature": "area-h",
+              "hit": null
+            }
+          },
+          "candidates": [
+            "area-h"
+          ],
+          "feedback": "Goed gevonden!"
+        },
+        {
+          "asked": "area-g",
+          "picker": false,
+          "trace": {
+            "xy": [
+              281.237221659919,
+              623.4696988866397
+            ],
+            "top": {
+              "tag": "path",
+              "feature": null,
+              "hit": "water-G"
+            }
+          },
+          "candidates": [
+            "area-g"
+          ],
+          "feedback": "Ja, dat is de Povlakte."
+        }
+      ]
+    },
+    {
+      "name": "desktop",
+      "passed": true,
+      "wrong": 1,
+      "good": 2,
+      "slices": 2,
+      "answered": [
+        {
+          "asked": "area-h",
+          "picker": false,
+          "trace": {
+            "xy": [
+              565.6307565789474,
+              604.0676239878543
+            ],
+            "top": {
+              "tag": "path",
+              "feature": "area-h",
+              "hit": null
+            }
+          },
+          "candidates": [
+            "area-h"
+          ],
+          "feedback": "Goed gevonden!"
+        },
+        {
+          "asked": "area-g",
+          "picker": false,
+          "trace": {
+            "xy": [
+              565.7345015182186,
+              604.0990005060729
+            ],
+            "top": {
+              "tag": "path",
+              "feature": null,
+              "hit": "water-G"
+            }
+          },
+          "candidates": [
+            "area-g"
+          ],
+          "feedback": "Ja, dat is de Povlakte."
+        }
+      ]
+    },
+    {
+      "name": "phone",
+      "passed": true,
+      "wrong": 1,
+      "good": 2,
+      "slices": 2,
+      "answered": [
+        {
+          "asked": "area-h",
+          "picker": false,
+          "trace": {
+            "xy": [
+              195.2475328947368,
+              314.810475708502
+            ],
+            "top": {
+              "tag": "path",
+              "feature": "area-h",
+              "hit": null
+            }
+          },
+          "candidates": [
+            "area-h"
+          ],
+          "feedback": "Goed gevonden!"
+        },
+        {
+          "asked": "area-g",
+          "picker": false,
+          "trace": {
+            "xy": [
+              195.03428643724695,
+              314.844762145749
+            ],
+            "top": {
+              "tag": "path",
+              "feature": null,
+              "hit": "water-G"
+            }
+          },
+          "candidates": [
+            "area-g"
+          ],
+          "feedback": "Ja, dat is de Povlakte."
+        }
+      ]
+    }
+  ],
+  "pointAnchorsTested": 27,
+  "polygonInteriorsTested": 16,
+  "schoolblad": "same task/progress after open/Escape",
+  "orderProof": [
+    {
+      "id": "city-2",
+      "order": [
+        "city-20",
+        "city-2"
+      ],
+      "correctIndex": 1
+    },
+    {
+      "id": "city-5",
+      "order": [
+        "city-13",
+        "city-5"
+      ],
+      "correctIndex": 1
+    },
+    {
+      "id": "city-6",
+      "order": [
+        "area-e",
+        "city-6"
+      ],
+      "correctIndex": 1
+    },
+    {
+      "id": "city-9",
+      "order": [
+        "area-o",
+        "city-9"
+      ],
+      "correctIndex": 1
+    },
+    {
+      "id": "city-13",
+      "order": [
+        "city-13",
+        "city-5"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "city-15",
+      "order": [
+        "area-f",
+        "city-15"
+      ],
+      "correctIndex": 1
+    },
+    {
+      "id": "city-20",
+      "order": [
+        "city-20",
+        "city-2"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "area-e",
+      "order": [
+        "area-e",
+        "city-6"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "area-f",
+      "order": [
+        "area-f",
+        "city-15"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "area-o",
+      "order": [
+        "area-o",
+        "city-9"
+      ],
+      "correctIndex": 0
+    }
+  ],
+  "seaOverlap": {
+    "x": 343,
+    "y": 528,
+    "ids": [
+      "water-C",
+      "water-D"
+    ]
+  },
+  "inlandSeaRejected": {
+    "id": "water-B",
+    "x": 530,
+    "y": 350
+  },
+  "learnSelection": "Tuscany via the same tap; progress unchanged",
+  "pizzaPR29Compatibility": "read-only HTML overlay of resolver on dcc474e; true eighth-answer Quattro completion and existing third trip PASS; PR29 untouched",
+  "goldReplay": "exact counters, tokens and goldAt unchanged",
+  "offline": "both downloads, both themes, zoomed region/river and neutral microstate grading PASS",
+  "errors": [],
+  "externalRequests": [],
+  "physicalIPad": "PENDING; Chromium touch emulation is not Safari device acceptance"
+}

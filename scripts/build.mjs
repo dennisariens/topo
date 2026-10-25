@@ -5,6 +5,7 @@ import { fileURLToPath } from 'node:url';
 import { dirname, resolve } from 'node:path';
 
 const root = resolve(dirname(fileURLToPath(import.meta.url)), '..');
+execFileSync(process.execPath, [resolve(root, 'scripts/embed-map-hit.mjs')], { stdio: 'inherit' });
 execFileSync(process.execPath, [resolve(root, 'scripts/embed-schoolblad.mjs')], { stdio: 'inherit' });
 execFileSync(process.execPath, [resolve(root, 'scripts/embed-nino-art.mjs')], { stdio: 'inherit' });
 execFileSync(process.execPath, [resolve(root, 'scripts/geography/generate-lakes.mjs')], { stdio: 'inherit' });

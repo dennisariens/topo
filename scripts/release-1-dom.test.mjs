@@ -39,7 +39,7 @@ ev("mode('point');state.current=byId['area-o'];state.answered=false;state.questi
 ev('romeHit.dispatchEvent(new MouseEvent("click",{bubbles:true}))');
 assert(q('mapPicker').hasAttribute('open'));assert(!/Rome|Vaticaan/.test(q('mapPicker').textContent));
 assert(q('romeLens').classList.contains('hidden'));
-q('mapPicker').querySelectorAll('.pickerActions button')[1].click();assert(q('message').classList.contains('good'));
+q('mapPicker').querySelector('[data-map-choice="area-o"]').click();assert(q('message').classList.contains('good'));
 for(const id of ['water-F','water-G']){
  const hit=d.querySelector('[data-hit-id="'+id+'"]');assert.equal(hit.getAttribute('stroke-width'),'44');assert.equal(hit.getAttribute('vector-effect'),'non-scaling-stroke');
  assert.equal(hit.getAttribute('d'),ev(`byId['${id}'].shape`));

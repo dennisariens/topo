@@ -47,7 +47,7 @@ try {
     assert.equal(await p.locator('#mapPicker use[data-context-layer="lakes"]').count(),1);
     assert(await p.evaluate(()=>document.documentElement.scrollWidth<=innerWidth));
     await p.screenshot({path:new URL(`offline-${width}-keyboard-picker.png`,output).pathname,fullPage:true});
-    await p.locator('#mapPicker .pickerActions button').nth(1).press('Enter');
+    await p.locator('#mapPicker [data-map-choice="area-o"]').press('Enter');
     assert(await p.locator('#message').evaluate(n=>n.classList.contains('good')));
     checks.push({file,width,height,images,lakes:6,backup:'actual download → reset → file restore → reload: exact progress',keyboardPicker:'neutral, real answer graded',offline:true});
     await ctx.close();

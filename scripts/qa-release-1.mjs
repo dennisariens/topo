@@ -40,8 +40,7 @@ const point=await page.evaluate(()=>{const p=new DOMPoint(byId['area-o'].px,byId
 await page.mouse.click(point.x,point.y);await page.locator('#mapPicker[open]').waitFor();
 assert(!/Rome|Vaticaan/.test(await page.locator('#mapPicker').innerText()),'picker never names the answer');
 await page.screenshot({path:destination+'/rome-vatican-picker.png',fullPage:true});
-const index=await page.evaluate(()=>{const matrix=document.querySelector('#map').getScreenCTM(),p=new DOMPoint(byId['area-o'].px,byId['area-o'].py).matrixTransform(matrix);return ITEMS.filter(i=>i.kind==='city'||['area-e','area-f','area-n','area-o'].includes(i.id)).map(i=>({i,d:Math.hypot(p.x-new DOMPoint(i.px,i.py).matrixTransform(matrix).x,p.y-new DOMPoint(i.px,i.py).matrixTransform(matrix).y)})).filter(v=>v.d<=22).sort((a,b)=>a.d-b.d).findIndex(v=>v.i.id==='area-o')});
-await page.locator('#mapPicker .pickerActions button').nth(index).click();
+await page.locator('#mapPicker [data-map-choice="area-o"]').click();
 assert.equal(await page.evaluate(()=>state.answered),true);assert.match(await page.locator('#message').getAttribute('class'),/good/);
 for(const [name,width,height] of [['tablet',820,1180],['phone',390,844]]){
  await page.setViewportSize({width,height});await page.locator('[data-mode="route"]').click();await page.locator('#smartStart').click();

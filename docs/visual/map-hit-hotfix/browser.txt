@@ -1,0 +1,14 @@
+
+> topo-italie-baseline@0.1.0 qa:map-hit
+> node scripts/qa-map-hit.mjs
+
+{
+  "viewportStyleZoomRuns": 16,
+  "completedRepairRoutes": 4,
+  "pointAnchors": 27,
+  "ambiguousPointCases": 10,
+  "correctFirst": 5,
+  "correctNonFirst": 5,
+  "errors": [],
+  "external": []
+}

@@ -1,0 +1,127 @@
+{
+  "base": "a481317b33f5f6f55c179ee0fbfe6b211663be7b",
+  "art": "4f15b610479358b4bf64a7de8be6c5875039b086",
+  "lakes": "35ff21b639e4672b7ed221b540b2c48dcd582285",
+  "masters": "read-only source; no PNGs imported or altered",
+  "preserved": {
+    "scripts/learning-engine.js": {
+      "source": "a481317b33f5f6f55c179ee0fbfe6b211663be7b",
+      "sha256": "e6d1992865892d3eefd661abae74cac300d0659ab1827c41a8b057b4dc7ef6e0"
+    },
+    "scripts/route-engine.js": {
+      "source": "a481317b33f5f6f55c179ee0fbfe6b211663be7b",
+      "sha256": "484fb91f8458cc38834edf45ae898f78ecea00342e6c405ae8dfd68078333043"
+    },
+    "print.html": {
+      "source": "a481317b33f5f6f55c179ee0fbfe6b211663be7b",
+      "sha256": "129be293a0aeff48e0e06f545d238f1b56abfc76a2380f110a0f8362237a67bf"
+    },
+    "output/pdf/topo-italie-printboek.pdf": {
+      "source": "a481317b33f5f6f55c179ee0fbfe6b211663be7b",
+      "sha256": "fa6495b0f45f1840cf5d4c8a35b7ee63f5a18cc6ad1af8302f57adf268618070"
+    },
+    "output/pdf/print-source.sha256": {
+      "source": "a481317b33f5f6f55c179ee0fbfe6b211663be7b",
+      "sha256": "40783ba80b76b38a19ad68dd41c0c8b93dbd8338e67a899841a520f858c901a7"
+    },
+    "output/art/nino-op-de-scooter.webp": {
+      "source": "a481317b33f5f6f55c179ee0fbfe6b211663be7b",
+      "sha256": "0b83332392b90193eff04979fbc592df5bbc3e0ef3f19a16801d1d7dc822b2a1"
+    },
+    "output/art/topo-italie-avontuur.webp": {
+      "source": "a481317b33f5f6f55c179ee0fbfe6b211663be7b",
+      "sha256": "18befedac70a95876f5a620c78bd0a210920ff1de4b40d084190eb371ed8acb9"
+    },
+    "assets/nino/runtime-manifest.json": {
+      "source": "4f15b610479358b4bf64a7de8be6c5875039b086",
+      "sha256": "fa6e53a8fac71da621e094e1f10f9ebc0a4ccb4b1513c544aa5d9527b460710d"
+    },
+    "assets/nino/RUNTIME.md": {
+      "source": "4f15b610479358b4bf64a7de8be6c5875039b086",
+      "sha256": "299db0a6849080dde96828789aa207621c6a8d6ec9a832a396607c91cc580971"
+    },
+    "scripts/nino-art.js": {
+      "source": "4f15b610479358b4bf64a7de8be6c5875039b086",
+      "sha256": "edcd062b0dd3573b28401a36e06c665613ff47c7af89ef88ebae499b6ebf6fd7"
+    },
+    "scripts/nino-art-ui.js": {
+      "source": "4f15b610479358b4bf64a7de8be6c5875039b086",
+      "sha256": "c65c6746db7386ca4ea897e942e466042a51b97324b5aa3f8086c03c6229472f"
+    },
+    "scripts/nino-art.css": {
+      "source": "4f15b610479358b4bf64a7de8be6c5875039b086",
+      "sha256": "f018fbe1efb8e8258c8094b0543beff3c435d4027d7eedeb1fba202c96069411"
+    },
+    "scripts/nino-feedback.js": {
+      "source": "4f15b610479358b4bf64a7de8be6c5875039b086",
+      "sha256": "6dd704ece12baf5874bb8feb7a75c3278b4629610e983a55ca56ef91d9244cb6"
+    },
+    "scripts/embed-nino-art.mjs": {
+      "source": "4f15b610479358b4bf64a7de8be6c5875039b086",
+      "sha256": "78ef2223c9df736e6a6d9c7d45ec9af0a8489efaa184dcbbc817e160e2fdb071"
+    },
+    "package-lock.json": {
+      "source": "4f15b610479358b4bf64a7de8be6c5875039b086",
+      "sha256": "1a546d6bdcc5e38980277bd593e6dd844a830c62acd9b50edf8ce395d7472ce7"
+    },
+    "assets/nino/exports/nino-guide.webp": {
+      "source": "4f15b610479358b4bf64a7de8be6c5875039b086",
+      "sha256": "13cb4bc888d62573dde1cfb6a6645da82c20180547354aab8f3557e99a691a2a"
+    },
+    "assets/nino/exports/nino-encourage.webp": {
+      "source": "4f15b610479358b4bf64a7de8be6c5875039b086",
+      "sha256": "4ab8b1af4289ffd47dd9d2e8e102dfff68a53da97030741df1db16bc0889d3c5"
+    },
+    "assets/nino/exports/nino-success.webp": {
+      "source": "4f15b610479358b4bf64a7de8be6c5875039b086",
+      "sha256": "e43124089abfa0878705c9f4c9389487c16b914c3579cff88d8532f64f6fa518"
+    },
+    "assets/nino/exports/nino-gold.webp": {
+      "source": "4f15b610479358b4bf64a7de8be6c5875039b086",
+      "sha256": "b735c2dd44003c62969adcf4d11b446ec432f86a2f2f27f56aa6281b2ce435f2"
+    },
+    "assets/nino/exports/nino-welcome.webp": {
+      "source": "4f15b610479358b4bf64a7de8be6c5875039b086",
+      "sha256": "89966925cb2f277e89bdd53eb22a5a328a26c54c1f52ccf9a91a3b263bd4a568"
+    },
+    "assets/nino/exports/nino-arrival.webp": {
+      "source": "4f15b610479358b4bf64a7de8be6c5875039b086",
+      "sha256": "ff1b6908fcbcfd81098232b9e108ad2b32826c5914a2c3414465385b05fcbd78"
+    },
+    "geography/lakes/source.geojson": {
+      "source": "35ff21b639e4672b7ed221b540b2c48dcd582285",
+      "sha256": "0fe0492d3a0123bd6bcfb79826061cc8d90418ff2cc510df328ee0054f379cf5"
+    },
+    "geography/lakes/sources.json": {
+      "source": "35ff21b639e4672b7ed221b540b2c48dcd582285",
+      "sha256": "34e39b6881de3dad863e40f66a7593c83dfed5f0ff555f942233163921f78fee"
+    },
+    "geography/lakes/projected-manifest.json": {
+      "source": "35ff21b639e4672b7ed221b540b2c48dcd582285",
+      "sha256": "1062a6dec6ec69193f23557131d2ff4debf90d83bd43e02d53933a3581284865"
+    },
+    "scripts/geography/lakes.mjs": {
+      "source": "35ff21b639e4672b7ed221b540b2c48dcd582285",
+      "sha256": "e6780d44d9425a96819b6147a678deee599d362828d9d768aa32d036a0f3c373"
+    },
+    "scripts/geography/generate-lakes.mjs": {
+      "source": "35ff21b639e4672b7ed221b540b2c48dcd582285",
+      "sha256": "38cce56a22911f241f6fa30eb00c97cfbc96d8610ea63fe9b9e6bfe27cdacaa5"
+    },
+    "scripts/geography/lakes.test.mjs": {
+      "source": "35ff21b639e4672b7ed221b540b2c48dcd582285",
+      "sha256": "7d68c2921b1c643f9ed35b1ca0d31e8d2ac0191ad26540f23297dde1d49c08a0"
+    },
+    "scripts/geography/verify-lake-sources.mjs": {
+      "source": "35ff21b639e4672b7ed221b540b2c48dcd582285",
+      "sha256": "e2a278cbc9a8798acfcced388f1066233b5330b99426f4796416315f3621af90"
+    },
+    "scripts/generate-preview.mjs": {
+      "source": "35ff21b639e4672b7ed221b540b2c48dcd582285",
+      "sha256": "bf35da5638de7832fbffc09eaff1480762ec11fc64a72c9de0c71df8dbf39b6f"
+    }
+  },
+  "canonicalComposition": "PASS: pinned Hermes app + three lake insertions; isolated schoolblad/Discovery additions and the exact bounded map-hit replacement excluded and checked separately",
+  "derivedParity": "PASS: canonical, two downloads, dist",
+  "rebuild": "byte-idempotent"
+}

@@ -1,0 +1,148 @@
+{
+  "baseline": "f67027d42202d1bd2a78f1d82dd02aa7fba41a91",
+  "viewport": "1180x820 Chromium touch emulation; actual learner build unknown",
+  "results": [
+    {
+      "id": "area-h",
+      "x": 380,
+      "y": 485,
+      "screen": [
+        409.3984375,
+        459.11778846153845
+      ],
+      "top": "<path d=\"M 343 423 L 402 413 436 436 462 467 465 523 448 544 413 534 390 517 368 486 343 467 Z\" class=\"zone\" data-id=\"area-h\" aria-label=\"Toscane\" tabindex=\"0\"></path>",
+      "region": false,
+      "tuscany": true,
+      "answered": false,
+      "good": false,
+      "message": "Jij bent aan zet.",
+      "picker": true,
+      "options": [
+        "Stip 1",
+        "Stip 2"
+      ]
+    },
+    {
+      "id": "area-h",
+      "x": 420,
+      "y": 500,
+      "screen": [
+        425.76382211538464,
+        465.2548076923077
+      ],
+      "top": "<path d=\"M 437.36 460.83 L 436.58 461.48 L 436.23 462.88 L 436.33 464.55 L 436.7 465.68 L 437.83 469.91 L 438.15 472.48 L 437.07 474.06 L 437.07 474.59 L 439.01 475.09 L 440.68 475.88 L 442.14 477.07 L 443.48 478.84 L 44",
+      "region": false,
+      "tuscany": true,
+      "answered": true,
+      "good": false,
+      "message": "Dat was Florence. Gezocht: Toscane.",
+      "picker": false,
+      "options": [
+        "Stip 1",
+        "Stip 2"
+      ]
+    },
+    {
+      "id": "area-h",
+      "x": 350,
+      "y": 450,
+      "screen": [
+        397.12439903846155,
+        444.7980769230769
+      ],
+      "top": "<path d=\"M 343 423 L 402 413 436 436 462 467 465 523 448 544 413 534 390 517 368 486 343 467 Z\" class=\"zone\" data-id=\"area-h\" aria-label=\"Toscane\" tabindex=\"0\"></path>",
+      "region": false,
+      "tuscany": true,
+      "answered": false,
+      "good": false,
+      "message": "Jij bent aan zet.",
+      "picker": true,
+      "options": [
+        "Stip 1",
+        "Stip 2",
+        "Stip 3"
+      ]
+    },
+    {
+      "id": "area-g",
+      "x": 350,
+      "y": 365,
+      "screen": [
+        397.12439903846155,
+        410.02163461538464
+      ],
+      "top": "<path d=\"M 195.11 378.14 L 193.27 379.34 L 190.52 380.23 L 189.94 381.44 L 188.28 382.39 L 186.93 383.6 L 185.85 384.88 L 184.31 385.83 L 184.18 387.23 L 184.5 388.25 L 184.31 389.97 L 183.92 392.08 L 182.9 393.61 L 181.",
+      "region": true,
+      "tuscany": false,
+      "answered": false,
+      "good": false,
+      "message": "Geen probleem. Dit was Toscane.",
+      "picker": true,
+      "options": [
+        "Stip 1",
+        "Stip 2"
+      ]
+    },
+    {
+      "id": "area-g",
+      "x": 335,
+      "y": 345,
+      "screen": [
+        390.9873798076923,
+        401.83894230769226
+      ],
+      "top": "<path d=\"M 195.11 378.14 L 193.27 379.34 L 190.52 380.23 L 189.94 381.44 L 188.28 382.39 L 186.93 383.6 L 185.85 384.88 L 184.31 385.83 L 184.18 387.23 L 184.5 388.25 L 184.31 389.97 L 183.92 392.08 L 182.9 393.61 L 181.",
+      "region": true,
+      "tuscany": false,
+      "answered": true,
+      "good": false,
+      "message": "Dat was Verona. Gezocht: de Povlakte.",
+      "picker": false,
+      "options": [
+        "Stip 1",
+        "Stip 2"
+      ]
+    },
+    {
+      "id": "area-g",
+      "x": 420,
+      "y": 375,
+      "screen": [
+        425.76382211538464,
+        414.1129807692308
+      ],
+      "top": "<path d=\"M 195.11 378.14 L 193.27 379.34 L 190.52 380.23 L 189.94 381.44 L 188.28 382.39 L 186.93 383.6 L 185.85 384.88 L 184.31 385.83 L 184.18 387.23 L 184.5 388.25 L 184.31 389.97 L 183.92 392.08 L 182.9 393.61 L 181.",
+      "region": true,
+      "tuscany": false,
+      "answered": false,
+      "good": false,
+      "message": "Jij bent aan zet.",
+      "picker": true,
+      "options": [
+        "Stip 1",
+        "Stip 2",
+        "Stip 3"
+      ]
+    },
+    {
+      "id": "water-G",
+      "x": 350,
+      "y": 365,
+      "screen": [
+        397.12439903846155,
+        410.02163461538464
+      ],
+      "top": "<path d=\"M 195.11 378.14 L 193.27 379.34 L 190.52 380.23 L 189.94 381.44 L 188.28 382.39 L 186.93 383.6 L 185.85 384.88 L 184.31 385.83 L 184.18 387.23 L 184.5 388.25 L 184.31 389.97 L 183.92 392.08 L 182.9 393.61 L 181.",
+      "region": true,
+      "tuscany": false,
+      "answered": false,
+      "good": false,
+      "message": "Geen probleem. Dit was de Povlakte.",
+      "picker": true,
+      "options": [
+        "Stip 1",
+        "Stip 2"
+      ]
+    }
+  ]
+}

@@ -41,3 +41,21 @@ for(const [role,asset] of Object.entries(manifest.assets)){
  if(createHash('sha256').update(bytes).digest('hex')!==asset.sha256||embedded.assets[role]?.src!=='data:image/webp;base64,'+bytes.toString('base64'))throw Error('Offline art differs from immutable export: '+role);
 }
 console.log('Pinned Nino art, reusable slots and all offline image bytes: OK');
+
+const pizzaSource=readFileSync(new URL('./pizza-reward.js',import.meta.url),'utf8');
+const pizzaCSS=readFileSync(new URL('./pizza-reward.css',import.meta.url),'utf8');
+if(!html.includes(pizzaSource+'// END PIZZA REWARD')||!html.includes(pizzaCSS+'/* END PIZZA REWARD CSS */'))throw Error('Stale embedded pizza presentation; rebuild');
+const pizzaBase='../assets/nino/rewards/pizza/';
+const pizzaManifest=JSON.parse(readFileSync(new URL(pizzaBase+'manifest.json',import.meta.url)));
+const pizzaRuntime=JSON.parse(readFileSync(new URL(pizzaBase+'runtime-manifest.json',import.meta.url)));
+const inlinePizza=JSON.parse(html.match(/window\.TOPO_PIZZA_ART=(\{[^\n]+\});/)?.[1]||'null');
+if(inlinePizza?.sourceCommit!==pizzaRuntime.sourceCommit)throw Error('Pizza source commit mismatch');
+for(const [path,meta] of Object.entries(pizzaManifest.files)){
+ const b=readFileSync(new URL(pizzaBase+path,import.meta.url));if(b.length!==meta.bytes||createHash('sha256').update(b).digest('hex')!==meta.sha256)throw Error('Pizza source mismatch: '+path);
+}
+for(const [key,meta] of Object.entries(pizzaRuntime.assets)){
+ const b=readFileSync(new URL(pizzaBase+meta.path,import.meta.url));
+ if(b.length!==meta.bytes||createHash('sha256').update(b).digest('hex')!==meta.sha256)throw Error('Pizza runtime mismatch: '+key);
+ if(key!=='closed'&&inlinePizza.assets[key]!=='data:image/webp;base64,'+b.toString('base64'))throw Error('Pizza offline bytes mismatch: '+key);
+}
+console.log('Pizza masters, slices, registered runtime frames and offline embedding: OK');

@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "sourceCommit": "15ce46fb556d4e05734d72787b054125f5869cba",
+  "frameSize": 320,
+  "assets": {
+    "margherita": {
+      "path": "runtime/pizza-margherita-states.webp",
+      "bytes": 250164,
+      "sha256": "b3fa5fbdd2eea780186742b802d0f9acf996842365b18f2f734a78e55011829f"
+    },
+    "salami": {
+      "path": "runtime/pizza-salami-states.webp",
+      "bytes": 275088,
+      "sha256": "ff782e287391c4e707b8b967327bc13277f456776e30d48d02eeeb169cf587ed"
+    },
+    "quattro-formaggi": {
+      "path": "runtime/pizza-quattro-formaggi-states.webp",
+      "bytes": 234570,
+      "sha256": "e99a7e0d6ed2fab32898074b4a375f35eff3bb0ffac715667434cb5d45d1d795"
+    },
+    "board": {
+      "path": "exports/pizza-board-wood.webp",
+      "bytes": 96202,
+      "sha256": "e241b9408c866a5ad4aff787cbd1be7a74a23f4875d52359792d424ea5c5de9e"
+    },
+    "closed": {
+      "path": "exports/pizza-box-closed-pisa.webp",
+      "bytes": 203044,
+      "sha256": "6e47559c8eea4932fa4516fea324ee85fbe386ab7c3df26034f820a8c4860d3c"
+    },
+    "box-margherita": {
+      "path": "exports/pizza-box-open-pisa-margherita.webp",
+      "bytes": 223780,
+      "sha256": "742a5d39843dc84b6a8b781678edcb3ce6643a60bde1c8ae67c1e0567125f7d7"
+    },
+    "box-salami": {
+      "path": "exports/pizza-box-open-pisa-salami.webp",
+      "bytes": 285172,
+      "sha256": "9f3795b47f6b60a975f3f83af6edb07981739cc2a55c0d4de1b7cb66f2b184aa"
+    },
+    "box-quattro-formaggi": {
+      "path": "exports/pizza-box-open-pisa-quattro-formaggi.webp",
+      "bytes": 209562,
+      "sha256": "1b317d38980873756276ffaedeca3843a30c386233e83ecf846a1563f99903b2"
+    }
+  },
+  "assembly": {
+    "margherita": {
+      "sourceDimensions": [
+        1254,
+        1254
+      ],
+      "sourceMaxChannelDifference": 0,
+      "overlappingPixels": 0,
+      "method": "Compose unique aligned source slices at native resolution before one resize; transparent 3x3 atlas, row-major states 0–8."
+    },
+    "salami": {
+      "sourceDimensions": [
+        1265,
+        1244
+      ],
+      "sourceMaxChannelDifference": 0,
+      "overlappingPixels": 0,
+      "method": "Compose unique aligned source slices at native resolution before one resize; transparent 3x3 atlas, row-major states 0–8."
+    },
+    "quattro-formaggi": {
+      "sourceDimensions": [
+        1254,
+        1254
+      ],
+      "sourceMaxChannelDifference": 0,
+      "overlappingPixels": 0,
+      "method": "Compose unique aligned source slices at native resolution before one resize; transparent 3x3 atlas, row-major states 0–8."
+    }
+  }
+}

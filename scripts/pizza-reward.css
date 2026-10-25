@@ -1,0 +1,15 @@
+/* One board + losslessly assembled source sectors, resized once into runtime WebP states. */
+.pizzaWheel,#pizzaRow .pizzaWheel,.journeyReward .pizzaWheel{position:relative;display:block;flex:none;width:104px;height:104px;border:0;border-radius:0;box-shadow:none;background:var(--pizza-board) center/contain no-repeat}
+.pizzaPixels{position:absolute;inset:8%;display:block;background-repeat:no-repeat;background-size:300% 300%}
+.pizzaWheel[hidden],.pizzaOpenBox[hidden],.pizzaCelebration[hidden]{display:none!important}
+.lessonReward .pizzaWheel{width:58px;height:58px}.lessonReward{margin-top:8px}
+.journeyReward{flex-wrap:wrap}.journeyReward>div:not(.pizzaWheel):not(.journeyScooter){min-width:0;flex:1}
+#routeReward,#sliceCount,#lessonRewardText{font-variant-numeric:tabular-nums}
+.pizzaCelebration{position:fixed;z-index:24;right:clamp(12px,4vw,36px);bottom:20px;width:min(260px,calc(100vw - 24px));padding:12px;border:1px solid #dfc397;border-radius:20px;background:#fff9ed;box-shadow:0 6px 24px #263d3929;text-align:center;pointer-events:none;color:#294943}
+.pizzaCelebrationPicture{display:grid;place-items:center;height:190px}.pizzaCelebration .pizzaWheel{width:186px;height:186px}.pizzaOpenBox{width:190px;height:190px;object-fit:contain}.pizzaCelebration strong{display:block;font-size:14px;line-height:1.4}
+/* Existing generic scooter characters must not sit on top of the approved Travel art. */
+.journeyScooter,#vespaIcon{display:none!important}
+#vespaTripToast>.ninoTrip{display:none}
+@media(max-width:950px){body.lessonFocus .pizzaCelebration,body.lessonFocus .vespaTripToast{bottom:calc(165px + env(safe-area-inset-bottom,0px))}.pizzaCelebration{width:210px}.pizzaCelebrationPicture{height:145px}.pizzaCelebration .pizzaWheel,.pizzaOpenBox{width:145px;height:145px}}
+@media(prefers-reduced-motion:reduce){.pizzaCelebration *,.vespaTripToast.riding .ninoTrip,#vespaIcon.trip{animation:none!important;transition:none!important}}
+@media print{.pizzaCelebration{display:none!important}}

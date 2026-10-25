@@ -1,71 +1,58 @@
-# Nino / Topo — Open artwork backlog
-**Status reviewed:** 2026-10-25
-**Scope:** design artwork, not app functionality. Visual source of truth: original Nino, his red Vespa, eight finished landscape chapters, approved pizza art direction and Pisa box.
+# TOPO / NINO — Artwork & integration roadmap checklist
+**Verified:** 2026-10-25. **Branch:** `art/nino-pizza-rewards-20261024`. No merge or deploy authorized.
 
-## Verified ready in GitHub (do not recreate)
-- Character PNGs: Welcome, Guide, Encourage, Success, Gold, Travel, Reflect; Arrival scene; owner source references.
-- Chapter landscape PNGs: Eilanden v2, Vulkanen, Bergen, Steden, Zeeën, Rivieren, Landen, Streken.
-- Corresponding runtime WebP exports in `assets/nino/exports/`.
-- A composite art-direction board and 11 route icon *concepts* exist; those are NOT individual production icon exports.
+## Completed design & artwork
+- [x] 7 reusable Nino character PNGs + Arrival scene present on the earlier Nino art branch (Welcome, Guide, Encourage, Success, Gold, Travel, Reflect; verify any final QA notes before app use).
+- [x] 8 chapter-wide landscape scenes in the existing Nino art branch (islands, volcanoes, mountains, cities, seas, rivers, countries, regions).
+- [x] 11 individual premium round chapter icons generated and visually reviewed together. Native 1254×1254 RGBA, matte cream edge.
+- [x] Small-size visual review: clear at 64–96; at 32px route text or matching canonical SVG must accompany these images.
+- [x] Three Pizza Masters, 8 unique source slices each, shared board, Pisa closed/open boxes (Margherita, Salami, Quattro Formaggi).
+- [x] **Pizza art binaries have now reached this branch**: `assets/nino/rewards/pizza/` contains source masters, 24 slices, PNG boxes, optimized WebPs and manifest, contrary to the earlier handoff's *historical* no-binary status.
+- [x] Chapter icon QA doc: `docs/nino/CHAPTER_ICONS_VISUAL_QA_2026-10-25.md`.
 
-## Designed/produced in conversation; **not yet in GitHub**
-- Margherita, Salami and Quattro Formaggi master pizzas.
-- Exact 8 × 45° slice layers each, transparent alpha individual segments and small icons.
-- Wooden round board.
-- Pisa closed box, Pisa open Margherita, Salami and Quattro Formaggi.
-- Pizza art package `TOPO_PIZZA_REWARDS_GIT_SYNC_2026-10-24.zip` or eight smaller segments with check manifests/upload script; Git tree currently contains planning docs but **no `assets/nino/rewards/pizza/` binaries**.
-- Pizza lid/base/pizza hinged animation layers: **engineering asset preparation**, not a new illustration request; Codex owns and should report any impossible layer separation to Design.
+## P0 — Git asset release (NEXT)
+- [ ] Upload ALL 11 chapter icon source PNGs + WebP exports + manifest to `assets/nino/chapter-icons/` using the 6 smaller ZIP parts and QA manifest from the design chat.
+- [ ] Verify SHA256, alpha transparency, file dimensions, complete original-image fidelity and 11 filenames in actual GitHub tree.
+- [ ] Check 32/48/64/96px real UI display and keep original route text/icon fallbacks. Avoid claiming PNG is production SVG.
+- [ ] Create reviewable art-only PR if needed; no merge/deploy without owner approval.
 
-## ART-01 — P1: 11 production chapter icons (NOT finished)
-Need single original stand-alone small, readable icon per group with cohesive premium Italian/Nino art direction and transparent output; export display/optimized versions and accurate scalable 32–64px route marks, ideally manually authored vector for small UI if renders are too busy.
-- [ ] 01 Steden 1–6 — city skyline / domed historic church
-- [ ] 02 Steden 7–12 — Roman Colosseum
-- [ ] 03 Extra steden 13–18 — Italian hill town
-- [ ] 04 Extra steden 19–23 — Ligurian colorful coastal town
-- [ ] 05 Eilanden — island coast / sailboats
-- [ ] 06 Bergen — Alpine peak
-- [ ] 07 Vulkanen — Etna-inspired smoking volcano
-- [ ] 08 Streken — cypress hillscape
-- [ ] 09 Landen — border sign / country shapes; no fictitious boundaries
-- [ ] 10 Zeeën — blue waves + sun
-- [ ] 11 Rivieren — winding river/stone bridge
-Acceptance: one cohesive visual system, no baked required labels, 32/48/64px checks, correct real SVG/PNG/exports, one canonical mapping for every route chapter, test locked/unlocked states. **Next art prompt:** `TOPO CHAPTER ICON 01 — STEDEN 1–6`.
+## P1 — Passport / stamp book (design)
+- [ ] Premium hinged personal Italian travel passport cover.
+- [ ] Open inner-page master with 11 correctly associated chapter stamp positions.
+- [ ] Profile identity panel with user-entered name and favorite pizza as dynamic UI content; do not bake personal text into art.
+- [ ] Empty, earned, Gold variants, postcard pockets; profile storage/interaction owned by Codex.
+- [ ] iPad and desktop composition and small-viewport accessibility review.
 
-## ART-02 — P2: Italian travel passport / stamp-book visual concept (NOT finished)
-- [ ] Premium passport/booklet cover, original Topo travel identity; personal learner name in UI not raster image.
-- [ ] Open spread / inside-page master with room for 11 chapter stamps.
-- [ ] Empty/locked page or stamp placeholder, subtle illustrated page pockets for postcards.
-- [ ] Profile/passport entry illustration or compact book icon.
-Art only. Codex later decides data & open/close interactions; reward states must remain truthful. Passport is linked to real learner profile when such architecture exists; do not invent a new store/schema here.
+## P2 — 11 travel stamps + Gold
+- [ ] Eleven geographically characteristic ink emblems matched to chapter ID.
+- [ ] Separate genuine Gold Mastery embossed stamp/seal.
+- [ ] Empty/locked and earned stamped treatment; subtle realistic placement on chapter illustration or passport.
+- [ ] Stamped transitions under 1s, reduced-motion static alternative; wire to real chapter completions only.
 
-## ART-03 — P2: Chapter completion stamps and Gold (NOT finished)
-- [ ] 11 coherent chapter-specific ink travel stamps / chapter emblems; variable title/dates ideally in UI.
-- [ ] One separate Gold Mastery seal/embossed badge, clearly different from normal completion.
-- [ ] Locked/unearned and stamped appearance; original parchment/ink texture.
-- [ ] Minimal completion mark for chapter cards; full stamp belongs in passport, not obstructing route icon.
-Production acceptance: transparent individually reusable, readable small, authentic geography, no badges earned solely for pizza quantity.
+## P3 — Postcards/collectibles pilot
+- [ ] Sicilië
+- [ ] Sardinië
+- [ ] Napoli & Vesuvio
+- [ ] Venezia
+- [ ] Shared card reverse/paper border and profile-linked travel album behavior.
+- [ ] Additional destinations only after owner/learner review; avoid reward currencies or duplicates.
 
-## ART-04 — P3: Limited postcard/collectibles pilot (concepts exist, NOT final art)
-Create 4 to 6 high-quality individual postcard fronts (not 11 automatically). Start with owner/learner-approved destinations and factual, credible scenery. Candidates already on contact sheet: Sicilia, Sardegna, Naples & Vesuvius, Venezia; alternatively examples tied directly to completed chapter groups: Po, Tyrrhenian coast, San Marino/Vatican. Choose the set as a separate artwork decision, without accidental repeated chapter reward.
-- [ ] Pilot postcard 01 — Sicilia
-- [ ] Pilot postcard 02 — Sardegna
-- [ ] Pilot postcard 03 — Napoli / Vesuvio
-- [ ] Pilot postcard 04 — Venezia
-- [ ] Pilot postcard 05–06 — optional based on actual curriculum and trial
-- [ ] Common back, paper frame / stamped or album treatment if required
-Do not bake UI-dependent earned dates, scores or descriptions into fixed images.
+## P4 — App icon/QA release
+- [ ] Finalize original Nino red scooter iPad/iPhone/macOS icon from previously approved direction, verified at 32/60/180.
+- [ ] Export/implement app icon, touch icon, favicon and installable assets (Codex).
+- [ ] Independent Hermes QA on real iPad Safari, mobile, desktop and offline standalone.
+- [ ] Owner review before merge/deploy.
 
-## ART-05 — P2: App icon finalization (concepts only; integration pending)
-- [ ] Select locked Nino + red scooter icon composition; compare at real 32, 60, 180px.
-- [ ] Prepare verified transparent/opaque icon master, iOS touch / favicon / manifest / macOS exports.
-- [ ] Codex wires icons; Hermes tests Safari and devices. Do not invent new character identity.
+## Parallel engineering — do not duplicate in design branch
+- [x] **Codex PR #29 (draft):** three-flavor Pizza Reward V2 integrated in a separate app branch, eight source slices, progression, anti-replay, offline builds, visual QA. Head `dcc474e8` as checked on Oct 25. NOT merged.
+- [ ] True 3D/2D hinged lid animation: **blocked on missing registered separate base, inner/outer lid, occlusions and consistent camera**, reported in PR #29. The draft currently shows honest static open boxes instead of a deceptive crossfade. New art layers only if design source extraction can preserve appearance.
+- [ ] Independent Hermes QA and physical iPad Safari acceptance for #29.
+- [ ] Schoolblad (PR #27) and Discovery atlas (PR #30) remain separate open development branches; don't assume they are merged or deployed.
+- [ ] Integrate icons/paspoort/stamps/postcards in focused PRs after production-ready art assets exist, not simultaneously with unrelated geometry or map changes.
 
-## Not in art backlog / implementation elsewhere
-- Pizza meter app-wide wiring, correct flavor cycling, double scooter removal, lid animation and genuine third-pizza trip: **Codex**.
-- Offline/mobile/real-device QA: **Hermes**.
-- Real clickable booklet profile integration: **Codex**, after UX approval.
-- No new Nino mascot poses, background chapter artworks or more pizzas unless an owner QA failure identifies a concrete gap.
-- Do not merge/deploy art by itself.
-
-## Suggested order
-**Immediate:** finish pizza ZIP Git upload (administrative; NOT new artwork) while starting chapter icon 01. Then 02–11 icons. Next passport cover/open spread, 11 stamps+gold, four postcard pilot, app icon delivery/check.
+## Recommended execution order
+1. **NOW:** push 11 chapter icon files, verify their branch tree/manifest.
+2. **NEXT DESIGN:** passport cover + open spread for owner review.
+3. Stamp system (11 chapter + Gold), then a 4-postcard collectible pilot.
+4. Final Nino app-icon delivery, compatibility and device QA.
+5. Codex/Hermes do app wiring and QA independently, no duplicate work or unapproved production actions.

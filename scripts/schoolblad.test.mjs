@@ -4,6 +4,7 @@ import {readFileSync} from 'node:fs';
 import {execFileSync} from 'node:child_process';
 import {JSDOM,VirtualConsole} from 'jsdom';
 import {withoutDiscovery} from './discovery-source.mjs';
+import {restoreLegacyMapHit} from './map-hit-source.mjs';
 const root=new URL('../',import.meta.url),read=p=>readFileSync(new URL(p,root)),html=read('index.html').toString();
 const base='c68ace4e44a6e797f536ec1a8d6b517d29167320';
 const previous=p=>execFileSync('git',['show',base+':'+p],{maxBuffer:24*1024*1024});
@@ -17,8 +18,8 @@ function boot(native=true){
  const w=dom.window,d=w.document;return {w,d,errors,ev:s=>w.eval(s),close:()=>w.close()};
 }
 const protectedState=a=>a.ev('JSON.stringify({state,current:state.current,progress:progressSnapshot(),storage:localStorage.getItem("topo-italie-v3"),answer:document.querySelector("#answer").value})');
-test('one unchanged photograph; all pre-existing code, geography, art and print are exact',()=>{
- const stripped=withoutDiscovery(html).replace(/\/\* BEGIN SCHOOLBLAD \*\/[\s\S]*?\/\* END SCHOOLBLAD \*\/\n/,'').replace(/\/\/ BEGIN SCHOOLBLAD\n[\s\S]*?\/\/ END SCHOOLBLAD\n/,'');
+test('one unchanged photograph; pre-existing code exact except the bounded map resolver hotfix',()=>{
+ const stripped=restoreLegacyMapHit(withoutDiscovery(html),previous('index.html').toString()).replace(/\/\* BEGIN SCHOOLBLAD \*\/[\s\S]*?\/\* END SCHOOLBLAD \*\/\n/,'').replace(/\/\/ BEGIN SCHOOLBLAD\n[\s\S]*?\/\/ END SCHOOLBLAD\n/,'');
  assert.equal(stripped,previous('index.html').toString());
  for(const p of ['scripts/learning-engine.js','scripts/route-engine.js','scripts/nino-feedback.js','scripts/nino-art.js','scripts/nino-art-ui.js','scripts/nino-art.css','print.html','output/pdf/topo-italie-printboek.pdf','output/pdf/print-source.sha256','geography/lakes/source.geojson','geography/lakes/projected-manifest.json'])assert(read(p).equals(previous(p)),p);
  for(const p of ['output/html/topo-italie-interactief.html','output/html/topo-italie-duolingo.html'])assert.equal(read(p).toString(),html);

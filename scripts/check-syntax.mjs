@@ -50,3 +50,7 @@ const atlas=JSON.parse(html.match(/window\.TOPO_ATLAS_DATA=(\{[^\n]+\});/)?.[1]|
 const relief=readFileSync(new URL('../assets/discovery/terrain.webp',import.meta.url)),atlasManifest=JSON.parse(readFileSync(new URL('../assets/discovery/runtime-manifest.json',import.meta.url),'utf8'));
 if(!atlas||atlas.terrain!=='data:image/webp;base64,'+relief.toString('base64')||createHash('sha256').update(relief).digest('hex')!==atlasManifest.sha256)throw Error('Offline terrain source/hash mismatch');
 console.log('Discovery atlas code, original geometry references and embedded DEM bytes: OK');
+
+const mapHit=readFileSync(new URL('./map-hit.js',import.meta.url),'utf8');
+if(!html.includes('// BEGIN MAP HIT\n'+mapHit+'// END MAP HIT'))throw Error('Stale embedded map hit resolver; rebuild');
+console.log('Semantic map hit resolver source/standalone parity: OK');

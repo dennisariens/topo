@@ -1,0 +1,149 @@
+{
+  "baseline": "f67027d42202d1bd2a78f1d82dd02aa7fba41a91",
+  "viewport": {
+    "width": 1180,
+    "height": 820
+  },
+  "pointAnchors": 27,
+  "ambiguousExactAnchorCases": [
+    {
+      "id": "city-2",
+      "order": [
+        "city-2",
+        "city-20"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "city-3",
+      "order": [
+        "city-3",
+        "city-8"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "city-4",
+      "order": [
+        "city-4",
+        "city-18"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "city-5",
+      "order": [
+        "city-5",
+        "city-13"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "city-6",
+      "order": [
+        "city-6",
+        "area-e"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "city-8",
+      "order": [
+        "city-8",
+        "city-18",
+        "city-3"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "city-9",
+      "order": [
+        "city-9",
+        "area-o"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "city-12",
+      "order": [
+        "city-12",
+        "city-22"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "city-13",
+      "order": [
+        "city-13",
+        "city-5"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "city-15",
+      "order": [
+        "city-15",
+        "area-f"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "city-18",
+      "order": [
+        "city-18",
+        "city-8"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "city-19",
+      "order": [
+        "city-19",
+        "area-f"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "city-20",
+      "order": [
+        "city-20",
+        "city-2"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "city-22",
+      "order": [
+        "city-22",
+        "city-12"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "area-e",
+      "order": [
+        "city-6",
+        "area-e"
+      ],
+      "correctIndex": 1
+    },
+    {
+      "id": "area-f",
+      "order": [
+        "area-f",
+        "city-15",
+        "city-19"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "area-o",
+      "order": [
+        "area-o",
+        "city-9"
+      ],
+      "correctIndex": 0
+    }
+  ],
+  "firstIsCorrect": 16
+}

@@ -1,0 +1,39 @@
+{
+  "baseline": "f67027d42202d1bd2a78f1d82dd02aa7fba41a91",
+  "actualLearnerBuild": "not supplied; reproduced on reported PR30 baseline",
+  "baselineRoute": [
+    {
+      "requested": "area-g",
+      "x": 335,
+      "y": 375,
+      "native": {
+        "id": null,
+        "hit": "water-G"
+      },
+      "answered": true,
+      "picker": false,
+      "feedback": "Dat was Po. Gezocht: de Povlakte.",
+      "wrong": 1,
+      "pending": [
+        "area-g:point"
+      ]
+    },
+    {
+      "requested": "area-h",
+      "x": 380,
+      "y": 485,
+      "native": {
+        "id": "area-h",
+        "hit": null
+      },
+      "answered": false,
+      "picker": true,
+      "feedback": "Jij bent aan zet.",
+      "wrong": 0,
+      "pending": [
+        "area-h:point",
+        "area-g:point"
+      ]
+    }
+  ]
+}

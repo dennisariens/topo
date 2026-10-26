@@ -20,6 +20,20 @@ The latest combined functional branch verified when updating this document is **
 | Individual chapter Gold + grand 11/11 Gold ending, Venice/Milan/Bologna stories | **DESIGN SPEC ONLY** — [Nino Journey](NINO_JOURNEY_GOLD_STORY_2026-10-26.md) | Passport implementation, art acceptance and exact state/test integration |
 | App packaging: home icon / iPad + macOS | #12 concept | Stabilise web/offline beta first; plan packaging without promising native DMG now |
 
+## 0A. Verified art intake — new source branch 26 October
+
+**Now actually present in Git, not a local art folder:** `art/nino-travel-stamps-v2-20261026` exact **`367b875c83a4e8b77c1f1d09523c20c96364f178`**. Dedicated producer-QA task **[#45](https://github.com/dennisariens/topo/issues/45)** is the authority for paths and release gates.
+
+| Asset set | Live Git content | Product acceptance status |
+| --- | --- | --- |
+| 11 premium route chapter icons | 11 master PNGs + 11 optimized WebP exports + manifest in `assets/nino/chapter-icons/` | Art designs substantially ready; actual display-scale / hash verification needed. Manifest `upload_status=LOCAL_PACKAGE_ONLY_NOT_IN_GITHUB` is stale: binaries ARE in Git |
+| 11 chapter travel ink stamps | 11 master PNGs + 11 extracted preview WebPs in `assets/nino/travel-passport/stamps/` | Master visual design approved, **production alpha NOT approved**; Roma, Toscana, Confine Italia have embedded matte/checkerboard concerns; Isole silhouette needs geography verification |
+| Passport book | Closed/open book master PNGs in `assets/nino/travel-passport/book/masters/` | Available; must be a background for dynamic truly-earned content, never pre-baked awards/profile |
+| Pizza three flavors and Pisa boxes | Real full asset package, already used in separate PR #29 | Safe source, no duplicate engineering; true hinged lid still lacks registered layers #31 |
+| Final 11/11 Gold seal, Palermo/Milano football postcard, isolated botanical map frames | Not yet independently verified as final optimized release assets | Track as missing future design, not as shipped; do not replace with generic stock |
+
+**Immediate independent work:** Hermes **art-only inspection/alpha QA** on pinned source head, contact sheets, per-asset PASS/REWORK/BLOCKED and approved runtime candidates, while Codex continues #37/#38 geography and teaching P0. Then Codex integrates verified art in one clean post-P0 branch using #21/#41 and this roadmap. Hermes reviews that exact code SHA once; don't make two agents edit runtime together. The owner’s observed green Discovery map/hidden Nino margins are still #35 design work, not proof these new icons solve the entire illustrated-map benchmark.
+
 ## 1. P0 — get a child learning correctly on the real iPad (beta gate)
 
 1. **Owner physical-device acceptance #33:** serve immutable PR #40 candidate locally on iPad Safari, not a stale prior HTML. Portrait + landscape, genuine native on-screen keyboard showing question/input/Controleer together, focus/caret after rotation, map/full/chapter switching, Schoolblad restore, Po Plain/Tuscany, Rome/Vatican, wrong→Next→repair. Preserve existing learner save; use a disposable test profile/backup.

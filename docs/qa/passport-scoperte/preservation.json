@@ -1,0 +1,46 @@
+{
+  "baseline": "b111ed2abfed15c97106e3d755fcff33c704215f",
+  "runtime_integrated": false,
+  "files": [
+    {
+      "path": "index.html",
+      "sha256": "89464c6686ff90eeaa9cd1274cb39f5881a1905b1b49211427a8f352c5d96c31",
+      "equals_baseline": true
+    },
+    {
+      "path": "scripts/learning-engine.js",
+      "sha256": "e6d1992865892d3eefd661abae74cac300d0659ab1827c41a8b057b4dc7ef6e0",
+      "equals_baseline": true
+    },
+    {
+      "path": "scripts/route-engine.js",
+      "sha256": "484fb91f8458cc38834edf45ae898f78ecea00342e6c405ae8dfd68078333043",
+      "equals_baseline": true
+    },
+    {
+      "path": "package.json",
+      "sha256": "b20c205e0c609f0d0479082ecb7bade1907e8d6588c373895d64f9598d4111d0",
+      "equals_baseline": true
+    },
+    {
+      "path": "package-lock.json",
+      "sha256": "1a546d6bdcc5e38980277bd593e6dd844a830c62acd9b50edf8ce395d7472ce7",
+      "equals_baseline": true
+    },
+    {
+      "path": "print.html",
+      "sha256": "f892b7656c91e443c937f550c103e5f50ca6f924518d4fff29b0e63aaba60bd3",
+      "equals_baseline": true
+    },
+    {
+      "path": "output/html/topo-italie-interactief.html",
+      "sha256": "89464c6686ff90eeaa9cd1274cb39f5881a1905b1b49211427a8f352c5d96c31",
+      "equals_baseline": true
+    },
+    {
+      "path": "output/html/topo-italie-duolingo.html",
+      "sha256": "89464c6686ff90eeaa9cd1274cb39f5881a1905b1b49211427a8f352c5d96c31",
+      "equals_baseline": true
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+✔ fresh canonical state stays empty and read-only; titles and page mapping come from the app (3.514801ms)
+✔ actual engine completion, failed Gold, genuine Gold, replay and reload project without awards (2.763061ms)
+✔ all six completed, selective and multiple Gold; Isole completion has no approved image claim (1.575194ms)
+✔ stale Gold on incomplete state never displays Gold; no coercion or extra chapters (0.857858ms)
+ℹ tests 4
+ℹ suites 0
+ℹ pass 4
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 136.246403

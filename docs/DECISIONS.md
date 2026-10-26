@@ -151,3 +151,16 @@ Supersedes unconditional nearest-point capture and SVG paint-order selection for
 ## P0 #37/#44 — bounded functional iPad update on PR40
 
 **Decision** Replace only area-c.shape with a reproducible mainland teaching corridor through18 sourced peaks/passes, guided by63 hash-verified registered DEM tiles and clipped inside the original mainland. The old shape leaked19.62% of its fill offshore. Corrected fill is connected and0% offshore; Cadibona and Aspromonte coverage is explicit. This is not a surveyed boundary. Keep other44 complete item records,27 anchors,6 lakes, semantic resolver, spelling/Gold/pizza/route unchanged. Disable inapplicable chapter zoom; clear controls and learner-first Menu, printing/backups secondary. Require idempotent disabled writes to avoid observer starvation. Regenerate print/PDF and narrow historical guards to the exact signed shape/approved UI rather than skipping preservation tests. Evidence and server8033 instructions: `AFTERNOON_IPAD_BETA_2026-10-26.md`. No art/passport/reward feature, server mutation, merge or production deployment; physical Safari approval still pending.
+
+
+## 2026-10-26 — Gate Scoperte pages 03–04 behind P0 and Gold art QA
+
+The owner explicitly authorizes only isolated preparation if P0 integration or critical
+artwork QA is unsafe. Pin preparation to PR47 b111ed2; full #38 audit and physical
+iPad acceptance remain open, while Chapter Gold lacks a production-approved export.
+Prepare a read-only, tested state projection without loading it in the app. Use
+canonical stage===3 and goldAt>0; never call the mutating record helper for display.
+Isole completion will have text-only fallback; folio can use CSS parchment.
+Resume one runtime implementation after gates, without merging the legacy art app
+or duplicating passport/reward logic. See nino/PASSPORT_SCOPERTE_PREPARATION_2026-10-26.md.
+No merge/deploy or test-server/learner-state change.

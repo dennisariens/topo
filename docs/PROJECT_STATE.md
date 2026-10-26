@@ -1,6 +1,10 @@
 # Project state
 
-## Working Discovery Map candidate — owner benchmark implementation
+## Current P0: iPad Focus Mode — stacked on independently verified PR #39
+
+`hermes/topo-ipad-focus-mode` starts at exact `fc8f5be4dc77c8b1adb71aae3931a1c134389cf5` and targets `codex/topo-semantic-map-hotfix`, without editing PR #30/#39. Compact/tablet view removes the permanent sidebar, reparents the original quiz/input/check into a keyboard-safe Frosted Parchment sheet, keeps native navigation/controls in explicit Menu, and adds full/chapter camera controls over the one unchanged SVG. Seven responsive/keyboard-simulation viewports and independent integrated semantic probes pass; a genuinely played first stop reaches Gold/three pizzas/one trip. Seventeen test programs, build/lint/source audit pass. Original semantic resolver, engines, art, geography, schoolblad and exports remain protected. **CONDITIONAL**: physical iPad Safari/IME/VoiceOver and the approval-blocked inherited browser-hotfix harness rerun are still pending. See [FOCUS_MODE.md](FOCUS_MODE.md) for evidence, exact limits and owner device procedure. No merge/deployment; #35 illustration polish waits.
+
+## Historical Discovery Map candidate — owner benchmark implementation
 
 `hermes/topo-discovery-map-production` is based on verified schoolblad PR #27 `1c4d00f8` atop integrated PR #17 `c68ace4e`. Exactly two live map styles share the original vector/hit/grading engine. Discovery embeds a 59,152-byte geographically registered DEM relief, Riviera water/materials and restrained original-Nino framing; Schoolkaart paint is retained. Active question/draft/progress survive style selection; explicit preference is separate from learner saves. Both standalone HTML files embed everything. Original schoolblad module/style, owner art, geography, learning/reward engines and print are unchanged. Real browser evidence covers desktop, both iPad orientations, 390/320px phones, route Discover→Point, zoomed neutral touch picking and source schoolblad regression. See `DISCOVERY_MAP.md` for actual reference comparisons, exact sources, test output and explicitly remaining visual gaps. Draft review candidate only: physical iPad/VoiceOver/owner visual acceptance remain open; no merge/deploy. This supersedes treating PR #26's conservative technical proof as the finished visual implementation.
 

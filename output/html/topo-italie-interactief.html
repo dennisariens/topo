@@ -299,6 +299,71 @@ body[data-map-assessment="true"] .atlasTerrain{display:none}body[data-map-assess
 @media(prefers-contrast:more){.atlasWaterTexture,.atlasScenery{display:none!important}body>header{background-image:none!important}.atlasTerrain{opacity:.35!important}}
 @media print{.atlasOptions,.atlasZoom{display:none!important}.atlasTerrain,.atlasWaterTexture{display:none!important}.mapArea.atlasViewport{width:100%;max-width:none;aspect-ratio:auto;overflow:visible}.atlasCanvas{width:100%!important}.mapCard:after{display:none!important}}
 /* END DISCOVERY MAP */
+/* BEGIN FOCUS MODE */
+/* Camera geometry belongs on the wrapper, not the clonable source SVG.
+   The Focus layout owner supplies the viewport's available width and height. */
+.focusCameraTools{display:none}
+body[data-focus-mode="true"] .focusCameraTools{display:flex;flex-wrap:wrap;gap:6px;align-items:center}
+body[data-focus-mode="true"] .focusCameraTools button{min-height:44px;padding:8px 12px;border:1px solid #cdd9d5;border-radius:9px;background:#fffefa;color:#345860;font:inherit;font-size:13px;font-weight:700;cursor:pointer}
+body[data-focus-mode="true"] .focusCameraTools button:focus-visible{outline:3px solid #087887;outline-offset:3px}
+body[data-focus-mode="true"] .mapArea.atlasViewport{overflow:auto;overflow-anchor:none;scroll-behavior:auto;overscroll-behavior:contain;touch-action:pan-x pan-y pinch-zoom}
+body[data-focus-mode="true"] .atlasCanvas{position:relative;min-width:100%;min-height:100%;flex:none;overflow-anchor:none}
+body[data-focus-mode="true"] .atlasCanvas>#map{position:absolute;display:block;left:var(--focus-world-left,0px);top:var(--focus-world-top,0px);width:var(--focus-world-width,100%);height:var(--focus-world-height,auto);min-width:0;max-width:none;min-height:0;max-height:none;margin:0;aspect-ratio:890/1235}
+@media print{.focusCameraTools{display:none!important}body[data-focus-mode="true"] .atlasCanvas{width:100%!important;height:auto!important;min-height:0}body[data-focus-mode="true"] .atlasCanvas>#map{position:static;width:100%;height:auto}}
+
+/* P0 functional map-first shell. No geographic paint changes; background alpha never affects children. */
+#focusMenu{display:none}#focusAnswerSheet[hidden],#focusLearnBar[hidden],#focusLessonStatus[hidden]{display:none!important}
+.focusSafeProbe{position:fixed;visibility:hidden;pointer-events:none;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);width:0;height:0}
+body[data-focus-shell="true"]>header{position:fixed;z-index:30;left:0;right:0;top:var(--focus-vv-top,0px);max-width:none;height:calc(44px + var(--focus-safe-top,0px));padding:calc(4px + var(--focus-safe-top,0px)) 12px 4px;background:#fbf7eb!important;background-image:none!important;border-radius:0;border-bottom:1px solid #e0d7c3;gap:10px}
+body[data-focus-shell="true"] .brandWrap{gap:6px;min-width:0}body[data-focus-shell="true"] .brandMark{width:34px;height:36px;flex-basis:34px;border-radius:8px}.focusMenuPanel .backupTools{max-width:100%;margin:10px 0 0;padding:8px 0}.focusMenuPanel .backupTools button{min-height:44px}
+body[data-focus-shell="true"] .brand{font-size:24px;letter-spacing:-.04em;white-space:nowrap}body[data-focus-shell="true"] .brand small{display:none}body[data-focus-shell="true"] header .stats{margin-right:94px;max-height:34px;overflow:hidden;gap:5px}body[data-focus-shell="true"] header .stat{padding:2px 8px;font-size:10px;border-radius:7px}body[data-focus-shell="true"] header .stat strong{font-size:13px;display:inline;margin-right:4px}
+body[data-focus-shell="true"] #focusMenu{display:block;position:fixed;right:12px;top:calc(var(--focus-vv-top,0px) + var(--focus-safe-top,0px));z-index:45}
+#focusMenu>summary{display:flex;align-items:center;min-height:44px;padding:6px 12px;cursor:pointer;list-style:none;border:1px solid #cabea6;border-radius:9px;background:#fffaf0;color:#264e48;font-size:13px;font-weight:750}#focusMenu>summary::-webkit-details-marker{display:none}
+.focusMenuPanel{position:absolute;right:0;top:48px;width:min(500px,calc(var(--focus-vv-width,100vw) - 24px));max-height:calc(var(--focus-vv-height,100svh) - 66px);overflow:auto;overscroll-behavior:contain;background:#fffaf0;border:1px solid #d3c4a5;border-radius:14px;padding:14px;box-shadow:0 12px 34px #493b2728;color:#243f3a}
+.focusMenuPanel>strong{font-size:13px}.focusMenuPanel nav.tabs{position:static;display:grid!important;grid-template-columns:repeat(5,minmax(0,1fr));gap:4px;padding:8px 0;margin:0;max-width:none;overflow:visible}.focusMenuPanel nav.tabs .tab{min-height:44px;padding:7px 4px;font-size:11px;white-space:normal;line-height:1.2}.focusMenuPanel #groupPicker{margin:10px 0;display:flex;flex-wrap:wrap;gap:8px}.focusMenuPanel select{min-height:44px;max-width:100%;font-size:16px}.focusMenuPanel #nameToggleWrap{display:flex;align-items:center;min-height:44px;font-size:13px}.focusMenuPanel #reveal,.focusMenuPanel #mistakes,.focusMenuPanel #printMap{min-height:44px;margin:6px 4px 0 0}.focusMenuPanel .testSetup{margin:8px 0}
+body[data-focus-shell="true"] .layout.routeHomeLayout,body[data-focus-shell="true"] .layout.finishLayout{margin-top:54px}
+body[data-focus-mode="true"]{overflow:hidden}
+body[data-focus-mode="true"] .layout:not(.routeHomeLayout):not(.finishLayout){display:block!important;margin:0;padding:0}
+body[data-focus-mode="true"] .layout>.panel{display:none!important}
+body[data-focus-mode="true"] .mapCard{position:fixed;left:10px;right:10px;top:calc(48px + var(--focus-safe-top,0px) + var(--focus-vv-top,0px));bottom:auto;height:calc(var(--focus-layout-height,100svh) - 58px - var(--focus-safe-top,0px) - var(--focus-safe-bottom,0px));display:flex;flex-direction:column;grid-column:auto!important;grid-row:auto!important;border-radius:15px;overflow:hidden;background:#faf5e8}
+body[data-focus-mode="true"] .mapTools{display:flex!important;flex:none;gap:6px;padding:5px 8px;min-height:54px;align-items:center;justify-content:flex-start;background:#fbf7eb}
+body[data-focus-mode="true"] .mapTools>strong{display:none}body[data-focus-mode="true"] .mapSwitches{display:flex;gap:5px;align-items:center;flex-wrap:wrap}
+body[data-focus-mode="true"] #focusLessonStatus{font-size:11px;font-weight:700;color:#496358;margin-right:auto;max-width:230px;line-height:1.25}
+body[data-focus-mode="true"] .atlasOptions summary,body[data-focus-mode="true"] .schoolbladButton{font-size:12px;padding:6px 8px;min-height:44px}
+body[data-focus-mode="true"] .atlasZoom button[aria-label="Hele kaart"]{display:none}
+body[data-focus-mode="true"] .mapArea.atlasViewport{flex:1;min-height:0;height:auto!important;max-width:none;width:100%!important;aspect-ratio:auto;margin:0;box-shadow:none}
+body[data-focus-mode="true"] .mapCaption,body[data-focus-mode="true"] .atlasScenery,body[data-focus-mode="true"] #routeMapDock,body[data-focus-mode="true"] .mapCard:after{display:none!important}
+/* Keep the original checkbox/photo fallback usable when native dialog is unavailable. */
+body[data-focus-mode="true"] .mapCard>#school:not(.hidden){position:fixed;z-index:35;left:12px;top:120px;width:calc(100vw - 24px);height:calc(var(--focus-vv-height,100svh) - 140px);object-fit:contain;background:#fffaf0;pointer-events:none}
+.focusAnswerSheet,.focusLearnBar{position:fixed;z-index:22;transform:translateX(-50%);width:min(560px,calc(var(--focus-vv-width,100vw) - 24px));padding:10px 12px;border:1px solid #cbb792;border-radius:16px;background:rgba(255,249,236,.93);color:#1d3634;box-shadow:0 5px 20px #55402526;overflow:auto;overscroll-behavior:contain;opacity:1}
+@supports(backdrop-filter:blur(4px)){.focusAnswerSheet{backdrop-filter:blur(4px);-webkit-backdrop-filter:blur(4px)}}
+#focusAnswerSheet #freeCoach,#focusAnswerSheet #routeLessonBar,#focusAnswerSheet #type,#focusAnswerSheet #help,#focusAnswerSheet #testStatus,#focusAnswerSheet .pizza,#focusAnswerSheet .pizzaProgress,#focusAnswerSheet #pizzaCaption,#focusAnswerSheet .eyebrow,#focusAnswerSheet #sliceCount,#focusAnswerSheet #vespaDestination,#focusAnswerSheet .backupTools,#focusAnswerSheet .reset{display:none!important}
+#focusAnswerSheet #quiz> :not(#prompt):not(#inputWrap):not(#message):not(.buttons){display:none!important}
+#focusAnswerSheet #quiz{padding:0;margin:0;background:transparent}
+#focusAnswerSheet #prompt{padding:2px 130px 3px 0;margin:0 0 5px;font-size:18px;line-height:1.25;letter-spacing:-.015em;color:#193d35;background:#fff9ec;min-height:30px}
+#focusSheetToggle{position:absolute;right:7px;top:5px;min-height:44px;padding:6px 8px;border:1px solid #c9bea6;border-radius:9px;background:#fffaf0;color:#435c4c;font:inherit;font-size:11px;cursor:pointer;z-index:2}
+#focusAnswerSheet #inputWrap:not(.hidden){display:flex!important;gap:8px;align-items:stretch;margin:4px 0 0}
+#focusAnswerSheet #answer{min-width:0;flex:1;width:auto!important;min-height:46px;font-size:16px;line-height:1.25;background:#fffef9;color:#1c3530;border:1px solid #7b897a;border-radius:9px;padding:10px 12px;opacity:1}
+#focusAnswerSheet #check{min-height:46px;min-width:104px;padding:8px 12px;border-radius:9px;background:#155c50;color:#fff;font-size:15px;opacity:1}
+#focusAnswerSheet #check:disabled{background:#526c62;color:#fff;opacity:1}
+#focusAnswerSheet #message{margin:7px 0 0;padding:6px 9px;background:#fffaf0;color:#29453b;min-height:0;font-size:13px;line-height:1.35;opacity:1}#focusAnswerSheet #message.good{background:#e7f5e9;color:#165a35}#focusAnswerSheet #message.bad{background:#fff0e9;color:#803529}
+#focusAnswerSheet .buttons{display:flex;gap:6px;margin:6px 0 0;flex-wrap:wrap}#focusAnswerSheet .buttons .button{min-height:44px;font-size:13px;padding:8px 12px}
+body[data-focus-answered="false"] #focusAnswerSheet #message{display:none!important}
+body[data-focus-task="point"] #focusAnswerSheet,body[data-focus-task="discover"] #focusAnswerSheet{width:min(520px,calc(var(--focus-vv-width,100vw) - 24px))}
+body[data-focus-task="point"] #focusAnswerSheet #prompt,body[data-focus-task="discover"] #focusAnswerSheet #prompt{font-size:16px;padding-right:120px}
+body[data-focus-task="point"] #focusAnswerSheet #inputWrap,body[data-focus-task="discover"] #focusAnswerSheet #inputWrap{display:none!important}
+body[data-focus-keyboard="true"][data-focus-answered="false"][data-focus-task="write"] #focusAnswerSheet .buttons{display:none!important}
+#focusAnswerSheet[data-collapsed="true"]{width:auto;min-width:160px;padding:0;overflow:visible;background:#fff9ec}
+#focusAnswerSheet[data-collapsed="true"] #quiz{display:none!important}#focusAnswerSheet[data-collapsed="true"] #focusSheetToggle{position:static;min-width:160px;border:0}
+.focusLearnBar{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:6px 10px;width:min(480px,calc(var(--focus-vv-width,100vw) - 24px));background:#fff9ec}
+.focusLearnBar #learnPrompt{font-size:17px;line-height:1.2;margin:0}.focusLearnBar #learnNext{min-height:44px;font-size:13px;padding:8px 10px;white-space:nowrap}
+#focusAnswerSheet :focus-visible,#focusMenu :focus-visible,.focusLearnBar :focus-visible{outline:3px solid #087887;outline-offset:3px}
+@media(max-width:560px){body[data-focus-shell="true"] .brand{font-size:21px}body[data-focus-shell="true"] header .stat{padding:2px 4px}body[data-focus-shell="true"] #focusLessonStatus{flex-basis:100%;max-width:none}body[data-focus-mode="true"] .mapTools{padding:4px 5px}#focusAnswerSheet #prompt{font-size:16px;padding-right:112px}#focusSheetToggle{font-size:10px;padding:6px}#focusAnswerSheet #check{min-width:96px;font-size:14px}}
+@media(prefers-contrast:more),(prefers-reduced-transparency:reduce){.focusAnswerSheet,.focusLearnBar{background:#fff9ec;backdrop-filter:none;-webkit-backdrop-filter:none;border:2px solid #745d37}.focusAnswerSheet #answer{border:2px solid #294b41}}
+@media(forced-colors:active){.focusAnswerSheet,.focusLearnBar,.focusMenuPanel{background:Canvas;color:CanvasText;backdrop-filter:none;border:2px solid CanvasText}#focusAnswerSheet #prompt,#focusAnswerSheet #message,#focusAnswerSheet #answer{background:Canvas;color:CanvasText}#focusAnswerSheet #check{background:ButtonFace;color:ButtonText;border:2px solid ButtonText}}
+@media(prefers-reduced-motion:reduce){.focusAnswerSheet,.focusAnswerSheet *,.focusLearnBar,#focusMenu *{animation:none!important;transition:none!important;scroll-behavior:auto!important}}
+@media print{#focusMenu,#focusAnswerSheet,#focusLearnBar,#focusLessonStatus{display:none!important}body[data-focus-mode="true"] .mapCard{position:static;height:auto;display:block}body[data-focus-shell="true"]>header{position:static}}
+/* END FOCUS MODE */
 </style></head><body>
 <header><div class="brandWrap"><div class="brandMark" aria-hidden="true"></div><div class="brand"><small>Ontdek · onthoud · herhaal</small>TOPO / ITALIË</div></div><div class="stats"><div class="stat">Goed<strong id="good">0</strong></div><div class="stat">Reeks<strong id="streak">0</strong></div><div class="stat">Pizza's<strong id="pizzas">0</strong></div></div></header><div id="vespaTripToast" class="vespaTripToast hidden" aria-hidden="true"><div class="ninoTrip" aria-hidden="true"></div><strong id="vespaTripText"></strong></div>
 <svg id="topoIconSprite" aria-hidden="true" focusable="false" width="0" height="0" style="position:absolute;overflow:hidden"><defs>
@@ -1458,6 +1523,273 @@ function setupDiscoveryMap(){
 }
 setupDiscoveryMap();
 // END DISCOVERY MAP
+// BEGIN FOCUS MODE
+/* Focus camera: presentation only; the single source SVG stays 890 × 1235.
+ * Load after discovery-map.js. The layout owner calls update(active).
+ * No source-SVG styles/attributes are written: picker clones remain canonical.
+ */
+(function (root) {
+ 'use strict';
+ const WORLD = { width: 890, height: 1235 }, MAX_ZOOM = 4;
+ const clamp = (n, min, max) => Math.max(min, Math.min(max, n));
+ function fitPlan(width, height, zoom = 1, center = { x: 445, y: 617.5 }) {
+  if (!(width > 0 && height > 0)) return null;
+  const fit = Math.min(width / WORLD.width, height / WORLD.height);
+  const scale = fit * clamp(Number.isFinite(zoom) ? zoom : 1, 1, MAX_ZOOM);
+  const w = WORLD.width * scale, h = WORLD.height * scale;
+  const stageW = Math.max(width, w), stageH = Math.max(height, h);
+  const left = (stageW - w) / 2, top = (stageH - h) / 2;
+  return { fit, scale, w, h, stageW, stageH, left, top,
+   scrollLeft: clamp(left + center.x * scale - width / 2, 0, stageW - width),
+   scrollTop: clamp(top + center.y * scale - height / 2, 0, stageH - height) };
+ }
+ let controller = null;
+ function setup() {
+  const map = document.getElementById('map'), atlas = root.TopoAtlas;
+  const canvas = map?.parentElement, area = map?.closest('.atlasViewport');
+  const tools = document.querySelector('.mapTools');
+  // Discovery owns the wrapper and API; never create a competing wrapper.
+  if (!atlas || !canvas?.classList.contains('atlasCanvas') || !area || !tools) return null;
+  let active = false, level = 1, cameraMode = 'overview', last = null;
+  let lastW = 0, lastH = 0, center = { x: 445, y: 617.5 }, explorationKey = null;
+  let saved = null, pending = 0;
+  const properties = ['width', 'height', '--focus-world-width', '--focus-world-height',
+   '--focus-world-left', '--focus-world-top'];
+  const nav = document.createElement('div');
+  nav.className = 'focusCameraTools';
+  nav.setAttribute('role', 'group');nav.setAttribute('aria-label', 'Kaart in beeld');
+  function button(text, action) {
+   const b = document.createElement('button');b.type = 'button';b.textContent = text;
+   b.onclick = action;nav.append(b);return b;
+  }
+  button('Volledige kaart', () => overview());
+  button('Hoofdstuk in beeld', () => chapter());
+  tools.append(nav);
+  function writeStyle(name, value) {
+   if (canvas.style.getPropertyValue(name) !== value) canvas.style.setProperty(name, value);
+  }
+  function readCenter() {
+   return last ? { x: (area.scrollLeft + lastW / 2 - last.left) / last.scale,
+    y: (area.scrollTop + lastH / 2 - last.top) / last.scale } : { ...center };
+  }
+  function outputs() {
+   const text = Math.round(level * 100) + '%';
+   for (const n of document.querySelectorAll('.atlasZoom button:last-child')) {
+    if (n.textContent !== text) n.textContent = text;
+   }
+  }
+  function render() {
+   if (!active) return;
+   const w = area.clientWidth, h = area.clientHeight, p = fitPlan(w, h, level, center);
+   if (!p) return;
+   last = p;lastW = w;lastH = h;
+   writeStyle('width', p.stageW + 'px');writeStyle('height', p.stageH + 'px');
+   for (const [name, value] of Object.entries({ width: p.w, height: p.h, left: p.left, top: p.top })) {
+    writeStyle('--focus-world-' + name, value + 'px');
+   }
+   area.scrollLeft = p.scrollLeft;area.scrollTop = p.scrollTop;
+   center = readCenter();outputs();
+  }
+  function resize() {
+   if (!active || !area.clientWidth || !area.clientHeight ||
+       (area.clientWidth === lastW && area.clientHeight === lastH)) return;
+   center = readCenter();
+   // Keyboard/VisualViewport resize must not refit a chapter or reveal an answer.
+   // Preserve world scale and pan center for manual/chapter cameras when possible.
+   if (last && cameraMode !== 'overview') {
+    level = clamp(last.scale / Math.min(area.clientWidth / WORLD.width,
+     area.clientHeight / WORLD.height), 1, MAX_ZOOM);
+   }
+   render();
+  }
+  function overview() {
+   if (!active) return;
+   level = 1;cameraMode = 'overview';center = { x: 445, y: 617.5 };render();
+  }
+  function zoom(value) {
+   if (!active || !Number.isFinite(Number(value))) return;
+   center = readCenter();level = clamp(Number(value), 1, MAX_ZOOM);
+   cameraMode = level === 1 ? 'overview' : 'manual';
+   if (level === 1) center = { x: 445, y: 617.5 };
+   render();
+  }
+  function context() {
+   // Use group/chapter membership, NEVER state.current or a queue's answer ID.
+   if (typeof state === 'undefined' || typeof ITEMS === 'undefined') return { key: null, ids: null };
+   if (state.mode === 'route') {
+    const route = state.route?.active, id = route?.chapterId;
+    const chapter = typeof ROUTE_CHAPTERS === 'undefined' ? null : ROUTE_CHAPTERS.find(c => c.id === id);
+    return { key: state.questionMode === 'discover' && route && !route.done ? 'route:' + id : null,
+     ids: id === 'smart' ? null : chapter?.itemIds || null };
+   }
+   const group = document.getElementById('groupSelect')?.value;
+   // Mixed/smart/all groups get the safe full-map context.
+   const ids = !group || ['all', 'mistakes', 'smart'].includes(group) ? null :
+    (typeof groupItems === 'function' ? groupItems().map(i => i.id) : null);
+   return { key: state.mode === 'learn' ? 'learn:' + group : null, ids };
+  }
+  function bounds(ids) {
+   if (!ids?.length || typeof elements === 'undefined' || typeof ITEMS === 'undefined') return null;
+   const boxes = [];
+   for (const id of ids) {
+    const item = ITEMS.find(i => i.id === id), node = elements[id];
+    if (!item || !node || !map.contains(node)) return null;
+    try {
+     const b = node.getBBox();
+     if (![b.x, b.y, b.width, b.height].every(Number.isFinite)) return null;
+     // Source positions supplement tiny point/microstate geometry, not a new hit area.
+     boxes.push(b);
+     if (Number.isFinite(item.px) && Number.isFinite(item.py)) {
+      boxes.push({ x: item.px, y: item.py, width: 0, height: 0 });
+     }
+    } catch (_) { return null; }
+   }
+   const x = Math.min(...boxes.map(b => b.x)), y = Math.min(...boxes.map(b => b.y));
+   const right = Math.max(...boxes.map(b => b.x + b.width)), bottom = Math.max(...boxes.map(b => b.y + b.height));
+   const pad = Math.max(35, Math.max(right - x, bottom - y) * .12);
+   const left = Math.max(0, x - pad), top = Math.max(0, y - pad);
+   return { x: left, y: top, width: Math.min(890, right + pad) - left,
+    height: Math.min(1235, bottom + pad) - top };
+  }
+  function chapter() {
+   if (!active) return;
+   const b = bounds(context().ids), w = area.clientWidth, h = area.clientHeight;
+   if (!b || b.width <= 0 || b.height <= 0 || !w || !h) { overview();return; }
+   const fit = Math.min(w / WORLD.width, h / WORLD.height);
+   level = clamp(Math.min(w / b.width, h / b.height) / fit, 1, MAX_ZOOM);
+   center = { x: b.x + b.width / 2, y: b.y + b.height / 2 };
+   cameraMode = 'chapter';render();
+  }
+  function enter() {
+   saved = {
+    zoom: Object.getOwnPropertyDescriptor(atlas, 'zoom'),
+    scale: Object.getOwnPropertyDescriptor(atlas, 'scale'),
+    oldScale: atlas.scale,
+    styles: properties.map(name => [name, canvas.style.getPropertyValue(name), canvas.style.getPropertyPriority(name)]),
+    buttons: [...document.querySelectorAll('.atlasZoom button')].map(node => [node, node.onclick])
+   };
+   active = true;last = null;lastW = lastH = 0;
+   Object.defineProperty(atlas, 'zoom', { configurable: true, enumerable: true, writable: true, value: zoom });
+   Object.defineProperty(atlas, 'scale', { configurable: true, enumerable: true, get: () => level });
+   for (const [node] of saved.buttons) {
+    const buttons = [...node.parentElement.querySelectorAll('button')], index = buttons.indexOf(node);
+    node.onclick = () => index === buttons.length - 1 ? overview() : zoom(level + (index === 0 ? -.5 : .5));
+   }
+   overview();
+   explorationKey = context().key;
+   if (explorationKey) chapter();
+  }
+  function exit() {
+   active = false;explorationKey = null;
+   Object.defineProperty(atlas, 'zoom', saved.zoom);Object.defineProperty(atlas, 'scale', saved.scale);
+   for (const [node, onclick] of saved.buttons) node.onclick = onclick;
+   for (const [name, value, priority] of saved.styles) {
+    if (value) canvas.style.setProperty(name, value, priority);else canvas.style.removeProperty(name);
+   }
+   // Return control to the original private V1 zoom closure, including its outputs.
+   atlas.zoom(saved.oldScale || 1);last = null;saved = null;
+  }
+  area.addEventListener('keydown', e => {
+   if (!active || e.target !== area || !['+', '=', '-', 'Home'].includes(e.key)) return;
+   // Capture prevents the original anonymous V1 bubble handler from zooming twice.
+   e.preventDefault();e.stopImmediatePropagation();
+   e.key === 'Home' ? overview() : zoom(level + (e.key === '-' ? -.5 : .5));
+  }, true);
+  // Arrow keys and native touch/trackpad scroll remain owned by the original area.
+  function queueResize() {
+   if (!active || pending) return;
+   pending = root.requestAnimationFrame(() => { pending = 0;resize(); });
+  }
+  if (typeof ResizeObserver !== 'undefined') new ResizeObserver(queueResize).observe(area);
+  root.addEventListener('resize', queueResize);
+  return {
+   update(wanted) {
+    const next = !!wanted && document.body.dataset.focusMode === 'true';
+    if (next && !active) { enter();return; }
+    if (!next && active) { exit();return; }
+    if (!active) return;
+    resize();
+    const key = context().key;
+    // Entry/chapter only. Grading, Next, typing, theme and repeated observer calls
+    // never move the camera. Re-entering exploration permits one fresh context fit.
+    if (key && key !== explorationKey) chapter();
+    explorationKey = key;
+   },
+   overview, chapter, zoom,
+   snapshot: () => ({ active, zoom: level, mode: cameraMode, center: readCenter(),
+    worldScale: last?.scale || 0, viewport: [lastW, lastH] })
+  };
+ }
+ root.TopoFocusCamera = {
+  update(active) { if (!controller) controller = setup();controller?.update(active); },
+  overview() { controller?.overview(); },
+  chapter() { controller?.chapter(); },
+  zoom(value) { controller?.zoom(value); },
+  snapshot() { return controller?.snapshot() || { active: false }; },
+  fitPlan
+ };
+})(typeof window !== 'undefined' ? window : globalThis);
+
+/* Responsive presentation only. The canonical quiz/input/check and PR39 resolver remain authoritative. */
+function setupFocusMode(){
+ const $id=id=>document.getElementById(id),map=$id('map'),area=map?.closest('.mapArea'),layout=document.querySelector('.layout'),quiz=$id('quiz');
+ if(!area||!quiz)return;
+ const slots=new Map(),park=(node,parent)=>{if(!node||node.parentElement===parent)return;if(!slots.has(node)){const marker=document.createComment('focus-return');node.before(marker);slots.set(node,marker)}parent.append(node);},restore=()=>{for(const[n,m]of slots)if(m.parentNode&&n.parentNode!==m.parentNode)m.after(n);};
+ const menu=document.createElement('details');menu.id='focusMenu';menu.innerHTML='<summary>☰ Menu</summary><div class="focusMenuPanel"><strong>Jouw oefening</strong></div>';const menuPanel=menu.lastElementChild;document.body.append(menu);
+ const sheet=document.createElement('section');sheet.id='focusAnswerSheet';sheet.className='focusAnswerSheet';sheet.setAttribute('aria-label','Huidige opdracht');sheet.hidden=true;
+ const toggle=document.createElement('button');toggle.id='focusSheetToggle';toggle.type='button';toggle.textContent='Kaart vrijmaken';toggle.setAttribute('aria-expanded','true');sheet.append(toggle);document.body.append(sheet);
+ const learnBar=document.createElement('section');learnBar.id='focusLearnBar';learnBar.setAttribute('aria-label','Plek ontdekken');learnBar.hidden=true;document.body.append(learnBar);
+ const status=document.createElement('span');status.id='focusLessonStatus';status.setAttribute('role','status');status.setAttribute('aria-live','polite');area.closest('.mapCard').querySelector('.mapTools').prepend(status);
+ const safe=document.createElement('div');safe.className='focusSafeProbe';safe.setAttribute('aria-hidden','true');document.body.append(safe);
+ const input=$id('answer'),mirror=$id('routeDockAnswer');
+ const text=(n,v)=>{if(n.textContent!==v)n.textContent=v;};let parked=false,active=false,lastQuestion='',collapsed=false,lastSelection=null,scheduled=0,layoutHeight=innerHeight,lastWidth=innerWidth;
+ function caret(){return document.activeElement===input?{start:input.selectionStart,end:input.selectionEnd,direction:input.selectionDirection}:null;}
+ let moveCaret=null;
+ function preserveMove(fn){const c=caret();fn();if(c)moveCaret=c;}
+ function shell(on){if(on===parked)return;preserveMove(()=>{if(on){park(quiz,sheet);for(const n of[document.querySelector('nav.tabs'),$id('groupPicker'),$id('testSetup'),$id('nameToggleWrap'),$id('printMap'),$id('reveal'),$id('mistakes'),document.querySelector('footer.backupTools')])park(n,menuPanel);park($id('learnPrompt'),learnBar);park($id('learnNext'),learnBar);}else restore();});parked=on;menu.hidden=!on;}
+ function viewport(){const v=window.visualViewport;return {left:v?.offsetLeft||0,top:v?.offsetTop||0,width:v?.width||innerWidth,height:v?.height||innerHeight,scale:v?.scale||1};}
+ function position(){
+  scheduled=0;if(!active)return;const v=viewport(),cs=getComputedStyle(safe),bottom=parseFloat(cs.paddingBottom)||0,top=parseFloat(cs.paddingTop)||0;
+  const root=document.documentElement;for(const[k,val]of Object.entries({'--focus-vv-top':v.top,'--focus-vv-left':v.left,'--focus-vv-width':v.width,'--focus-vv-height':v.height,'--focus-safe-top':top,'--focus-safe-bottom':bottom,'--focus-layout-height':layoutHeight}))root.style.setProperty(k,val+'px');
+  const keyboard=document.activeElement===input&&v.height<layoutHeight*.78&&v.scale<=1.1;document.body.dataset.focusKeyboard=String(keyboard);
+  const available=Math.max(92,v.height-top-bottom-64);sheet.style.maxHeight=available+'px';
+  const center=v.left+v.width/2;sheet.style.left=center+'px';learnBar.style.left=center+'px';
+  const h=sheet.getBoundingClientRect().height,low=v.top+v.height-bottom-12-h,min=v.top+top+50;
+  let y=Math.max(min,low);const typing=state.questionMode==='write'&&state.mode!=='learn';
+  // Only a writing task's ALREADY highlighted shape may influence placement. Never reveal point answers by moving UI.
+  if(typing&&!collapsed){const r=elements[state.current?.id]?.getBoundingClientRect(),w=sheet.getBoundingClientRect().width;if(r&&r.width+r.height>0&&r.bottom>y-8&&r.top<y+h+8&&r.right>center-w/2&&r.left<center+w/2){const alt=Math.max(min,area.getBoundingClientRect().top+10);if(alt+h<=v.top+v.height-bottom-12&&!(r.bottom>alt-8&&r.top<alt+h+8))y=alt;}}
+  sheet.style.top=y+'px';learnBar.style.top=Math.max(min,v.top+v.height-bottom-12-learnBar.getBoundingClientRect().height)+'px';
+ }
+ function schedule(){if(active&&!scheduled)scheduled=(window.requestAnimationFrame||((fn)=>setTimeout(fn,0)))(position);}
+ function apply(){
+  if(!document.body?.isConnected)return;
+  const eligible=(innerWidth<=1180||(innerWidth<=1440&&window.matchMedia?.('(pointer:coarse)').matches))&&document.documentElement.clientWidth>0;
+  if(!eligible)document.body.dataset.focusMode='false';document.body.dataset.focusShell=String(eligible);shell(eligible);
+  const home=layout.classList.contains('routeHomeLayout')||layout.classList.contains('finishLayout'),show=eligible&&!home;
+  active=show;document.body.dataset.focusMode=String(show);sheet.hidden=!show||state.mode==='learn';learnBar.hidden=!show||state.mode!=='learn';status.hidden=!show;
+  if(show){const task=state.mode==='learn'?'learn':state.questionMode;document.body.dataset.focusTask=task;document.body.dataset.focusAnswered=String(state.answered);
+   const key=[state.mode,state.questionMode,state.current?.id,state.route.active?.index].join(':');if(key!==lastQuestion){lastQuestion=key;collapsed=false;}sheet.dataset.collapsed=String(collapsed);text(toggle,collapsed?'Antwoord openen':'Kaart vrijmaken');toggle.setAttribute('aria-expanded',String(!collapsed));
+   const stage=state.mode==='route'?$id('routeLessonCount').textContent:state.mode==='exam'?$id('testStatus').textContent:state.mode==='learn'?'Leren':state.mode==='write'?'Namen schrijven':'Aanwijzen';text(status,stage);text(menu.firstElementChild,'☰ Menu');
+   // Retire the existing mobile mirror in Focus Mode. Exactly one visible/enabled semantic answer input is used.
+   if(mirror&&!mirror.disabled)mirror.disabled=true;if($id('routeDockCheck')&&!$id('routeDockCheck').disabled)$id('routeDockCheck').disabled=true;
+  }
+  window.TopoFocusCamera?.update(show);
+  // Restore only after both destination parents and responsive visibility are settled.
+  const c=moveCaret;moveCaret=null;if(c&&!input.disabled){input.focus({preventScroll:true});input.setSelectionRange(c.start,c.end,c.direction);}schedule();
+ }
+ toggle.onclick=()=>{lastSelection=caret()||lastSelection;collapsed=!collapsed;sheet.dataset.collapsed=String(collapsed);text(toggle,collapsed?'Antwoord openen':'Kaart vrijmaken');toggle.setAttribute('aria-expanded',String(!collapsed));if(!collapsed&&state.questionMode==='write'&&!input.disabled){input.focus({preventScroll:true});if(lastSelection)input.setSelectionRange(lastSelection.start,lastSelection.end,lastSelection.direction);}schedule();};
+ menu.addEventListener('click',e=>{if(e.target.closest('.tab'))menu.open=false});
+ menu.addEventListener('keydown',e=>{if(e.key==='Escape'){e.preventDefault();menu.open=false;menu.firstElementChild.focus({preventScroll:true})}});
+ document.addEventListener('pointerdown',e=>{if(menu.open&&!menu.contains(e.target))menu.open=false});
+ const observer=new MutationObserver(apply);for(const node of[layout,quiz,$id('groupPicker'),$id('learnList')])if(node)observer.observe(node,{subtree:true,childList:true,attributes:true,attributeFilter:['class','disabled']});
+ window.addEventListener('resize',()=>{if(innerWidth!==lastWidth||document.activeElement!==input){layoutHeight=innerHeight;lastWidth=innerWidth;}apply();});
+ window.visualViewport?.addEventListener('resize',position);window.visualViewport?.addEventListener('scroll',position);input.addEventListener('focus',schedule);input.addEventListener('blur',()=>{lastSelection={start:input.selectionStart,end:input.selectionEnd,direction:input.selectionDirection};schedule()});
+ if(window.ResizeObserver)new ResizeObserver(schedule).observe(sheet);
+ const meta=document.querySelector('meta[name="viewport"]');if(meta&&!meta.content.includes('viewport-fit'))meta.content+=',viewport-fit=cover';
+ window.TopoFocus={apply,position,viewport,get active(){return active}};apply();
+}
+setupFocusMode();
+// END FOCUS MODE
 sync();mode('route');
 document.getElementById('previewMap')?.remove();
 

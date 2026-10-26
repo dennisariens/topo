@@ -1,0 +1,204 @@
+{
+  "project": "Topo / Nino",
+  "release": "2026-10-26 V2 studio source handoff",
+  "quality_gate": "SOURCE_READY / DERIVATIVE_QA_REQUIRED",
+  "source_branch": "art/nino-travel-stamps-v2-20261026",
+  "production_rules": [
+    "Masters are byte-perfect preserved original AI renders and may contain embedded off-white or checkerboard.",
+    "qa-candidates are machine-extracted ink-only alpha PREVIEWS; independent visual QA is mandatory before app shipping.",
+    "05 ISOLE island outlines must be compared to canonical school map; visual art not a geographic source.",
+    "Never bake earned stamps into open-book image, use overlay slots and learner progress.",
+    "Gold Mastery is separate from normal 11 stamp completions."
+  ],
+  "stamps": [
+    {
+      "chapter": 1,
+      "slug": "firenze",
+      "source_filename": "a_detailed_graphic_illustration_on_a_transparent_b.png",
+      "master": "assets/nino/travel-passport/stamps/masters/stamp-01-firenze.png",
+      "qa_candidate": "assets/nino/travel-passport/stamps/qa-candidates/stamp-01-firenze-ink-preview.webp",
+      "width": 1254,
+      "height": 1254,
+      "source_mode": "RGBA",
+      "source_sha256": "cb1bd16d983ac570c727eeab31f6dbce2392af2a6dc55c14418908835ad5ae56",
+      "notes": [],
+      "approved_visual_design": true,
+      "production_alpha_approved": false
+    },
+    {
+      "chapter": 2,
+      "slug": "roma",
+      "source_filename": "a_detailed_illustration_graphic_on_transparent_bac.png",
+      "master": "assets/nino/travel-passport/stamps/masters/stamp-02-roma.png",
+      "qa_candidate": "assets/nino/travel-passport/stamps/qa-candidates/stamp-02-roma-ink-preview.webp",
+      "width": 1536,
+      "height": 1024,
+      "source_mode": "RGBA",
+      "source_sha256": "19c8e75708e6fbfbf0ff8fffcd6d172008a7069610a235f843f6985db9628a27",
+      "notes": [
+        "SOURCE_HAS_EMBEDDED_BACKGROUND: independent alpha review required"
+      ],
+      "approved_visual_design": true,
+      "production_alpha_approved": false
+    },
+    {
+      "chapter": 3,
+      "slug": "borghi",
+      "source_filename": "vintage_toscaanse_dorpszegel_met_borghi.png",
+      "master": "assets/nino/travel-passport/stamps/masters/stamp-03-borghi.png",
+      "qa_candidate": "assets/nino/travel-passport/stamps/qa-candidates/stamp-03-borghi-ink-preview.webp",
+      "width": 1254,
+      "height": 1254,
+      "source_mode": "RGBA",
+      "source_sha256": "d00d7e3fd8aa88dac971c204959a1d21b8986a15b14b8247da7c4a8bb36b6ab1",
+      "notes": [],
+      "approved_visual_design": true,
+      "production_alpha_approved": false
+    },
+    {
+      "chapter": 4,
+      "slug": "liguria",
+      "source_filename": "vintage_ligurische_kustpostzegel.png",
+      "master": "assets/nino/travel-passport/stamps/masters/stamp-04-liguria.png",
+      "qa_candidate": "assets/nino/travel-passport/stamps/qa-candidates/stamp-04-liguria-ink-preview.webp",
+      "width": 1254,
+      "height": 1254,
+      "source_mode": "RGBA",
+      "source_sha256": "ddcb8076932f0259ccfa61af8b4ca7836b407fa49973560f4a89b0833ee8fdf4",
+      "notes": [],
+      "approved_visual_design": true,
+      "production_alpha_approved": false
+    },
+    {
+      "chapter": 5,
+      "slug": "isole",
+      "source_filename": "vintage_italiaans_eilandenpoststempel.png",
+      "master": "assets/nino/travel-passport/stamps/masters/stamp-05-isole.png",
+      "qa_candidate": "assets/nino/travel-passport/stamps/qa-candidates/stamp-05-isole-ink-preview.webp",
+      "width": 1254,
+      "height": 1254,
+      "source_mode": "RGBA",
+      "source_sha256": "91b9ed25d5255b784d447080df16f2e644937f05b37bb94d08235312ee54fb50",
+      "notes": [
+        "geographic silhouette against school map required"
+      ],
+      "approved_visual_design": true,
+      "production_alpha_approved": false
+    },
+    {
+      "chapter": 6,
+      "slug": "dolomiti",
+      "source_filename": "vintage_dolomieten_postzegel大小规律.png",
+      "master": "assets/nino/travel-passport/stamps/masters/stamp-06-dolomiti.png",
+      "qa_candidate": "assets/nino/travel-passport/stamps/qa-candidates/stamp-06-dolomiti-ink-preview.webp",
+      "width": 1254,
+      "height": 1254,
+      "source_mode": "RGBA",
+      "source_sha256": "aad87d7b6c7eddfcd9b1996301f714da19421e6005c449b847b7fa9a957a16cf",
+      "notes": [],
+      "approved_visual_design": true,
+      "production_alpha_approved": false
+    },
+    {
+      "chapter": 7,
+      "slug": "etna",
+      "source_filename": "vintage_etna_volcano_stamp.png",
+      "master": "assets/nino/travel-passport/stamps/masters/stamp-07-etna.png",
+      "qa_candidate": "assets/nino/travel-passport/stamps/qa-candidates/stamp-07-etna-ink-preview.webp",
+      "width": 1254,
+      "height": 1254,
+      "source_mode": "RGBA",
+      "source_sha256": "443d97af3411e56c139e6e6397ba9a474748c227e4325006820cc0d6dd0957b4",
+      "notes": [],
+      "approved_visual_design": true,
+      "production_alpha_approved": false
+    },
+    {
+      "chapter": 8,
+      "slug": "toscana",
+      "source_filename": "a_vintage_travel_stamp_style_illustration_on_a_tra.png",
+      "master": "assets/nino/travel-passport/stamps/masters/stamp-08-toscana.png",
+      "qa_candidate": "assets/nino/travel-passport/stamps/qa-candidates/stamp-08-toscana-ink-preview.webp",
+      "width": 1536,
+      "height": 1024,
+      "source_mode": "RGBA",
+      "source_sha256": "d12eaa8ff6804ccb280e029ee351ac0c435b2c35db141ad8dd85f46c533cb61b",
+      "notes": [
+        "SOURCE_HAS_EMBEDDED_BACKGROUND: independent alpha review required"
+      ],
+      "approved_visual_design": true,
+      "production_alpha_approved": false
+    },
+    {
+      "chapter": 9,
+      "slug": "confine-italia",
+      "source_filename": "a_clean_graphic_illustration_of_a_vintage_passport.png",
+      "master": "assets/nino/travel-passport/stamps/masters/stamp-09-confine-italia.png",
+      "qa_candidate": "assets/nino/travel-passport/stamps/qa-candidates/stamp-09-confine-italia-ink-preview.webp",
+      "width": 1536,
+      "height": 1024,
+      "source_mode": "RGB",
+      "source_sha256": "e884445aeb1c06795bb2fb78f7ba329a71eba922832a6a3e745849eb0d71ae4c",
+      "notes": [
+        "SOURCE_HAS_EMBEDDED_BACKGROUND: independent alpha review required",
+        "source contains baked-in checkerboard; verify alpha reconstruction"
+      ],
+      "approved_visual_design": true,
+      "production_alpha_approved": false
+    },
+    {
+      "chapter": 10,
+      "slug": "mari",
+      "source_filename": "a_detailed_vector_engraving_style_illustration_of.png",
+      "master": "assets/nino/travel-passport/stamps/masters/stamp-10-mari.png",
+      "qa_candidate": "assets/nino/travel-passport/stamps/qa-candidates/stamp-10-mari-ink-preview.webp",
+      "width": 1312,
+      "height": 1199,
+      "source_mode": "RGBA",
+      "source_sha256": "9dc89b2b82a018c830991aeace67d296990397b3bc61793292827cca08ba3249",
+      "notes": [],
+      "approved_visual_design": true,
+      "production_alpha_approved": false
+    },
+    {
+      "chapter": 11,
+      "slug": "fiumi",
+      "source_filename": "a_detailed_illustration_style_travel_stamp_emble.png",
+      "master": "assets/nino/travel-passport/stamps/masters/stamp-11-fiumi.png",
+      "qa_candidate": "assets/nino/travel-passport/stamps/qa-candidates/stamp-11-fiumi-ink-preview.webp",
+      "width": 1254,
+      "height": 1254,
+      "source_mode": "RGBA",
+      "source_sha256": "d79bc297171fabbf426968d36d7c1193b9adde65033a1b26fe84ccae158df06e",
+      "notes": [],
+      "approved_visual_design": true,
+      "production_alpha_approved": false
+    }
+  ],
+  "book": [
+    {
+      "name": "passport-closed-cover",
+      "source": "antiek_rood_reisdagboek_met_kompas.png",
+      "path": "assets/nino/travel-passport/book/masters/passport-closed-cover.png",
+      "mode": "RGBA",
+      "size": [
+        1254,
+        1254
+      ],
+      "sha256": "3d1c0e1978373d2a21b0072baa3f342375641341635fc7f9f06e5721ff58f1b9",
+      "note": "source artwork: dynamic profile and stamps must be separate overlays"
+    },
+    {
+      "name": "passport-open-book",
+      "source": "vintage_italiaans_reisdagboek_met_postzegels.png",
+      "path": "assets/nino/travel-passport/book/masters/passport-open-book.png",
+      "mode": "RGBA",
+      "size": [
+        1586,
+        992
+      ],
+      "sha256": "94f5d286e502b81ee156ae0923132f22dc8475f474f44709087e83662e032b8d",
+      "note": "source artwork: dynamic profile and stamps must be separate overlays"
+    }
+  ]
+}

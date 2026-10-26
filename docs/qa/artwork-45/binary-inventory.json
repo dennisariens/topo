@@ -1,0 +1,1294 @@
+{
+  "source_sha": "367b875c83a4e8b77c1f1d09523c20c96364f178",
+  "files": [
+    {
+      "path": "assets/nino/chapter-icons/masters/chapter-01-steden-1-6.png",
+      "bytes": 2320145,
+      "sha256": "3e0deb011d7cf6f92681e126365119ac55f593318da12fd3f69c6c4b42194737",
+      "expected_sha256": "3e0deb011d7cf6f92681e126365119ac55f593318da12fd3f69c6c4b42194737",
+      "hash_match": true,
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "mode": "RGBA",
+      "format": "PNG",
+      "icc_bytes": 0,
+      "icc_sha256": null,
+      "alpha_min": 0,
+      "alpha_max": 255,
+      "transparent_pixels": 433999,
+      "partial_alpha_pixels": 1138454,
+      "opaque_pixels": 63,
+      "alpha_bbox": [
+        13,
+        10,
+        1227,
+        1204
+      ],
+      "nontransparent_border_pixels": 0,
+      "partial_neutral_pixels": 65438
+    },
+    {
+      "path": "assets/nino/chapter-icons/exports/chapter-01-steden-1-6.webp",
+      "bytes": 108690,
+      "sha256": "337e02ba2c1ecb909d9e1f9921070492e575c64e6f255733b5837c817fa42c11",
+      "expected_sha256": "337e02ba2c1ecb909d9e1f9921070492e575c64e6f255733b5837c817fa42c11",
+      "hash_match": true,
+      "dimensions": [
+        512,
+        512
+      ],
+      "mode": "RGBA",
+      "format": "WEBP",
+      "icc_bytes": 0,
+      "icc_sha256": null,
+      "alpha_min": 0,
+      "alpha_max": 255,
+      "transparent_pixels": 70328,
+      "partial_alpha_pixels": 190930,
+      "opaque_pixels": 886,
+      "alpha_bbox": [
+        3,
+        2,
+        503,
+        494
+      ],
+      "nontransparent_border_pixels": 0,
+      "partial_neutral_pixels": 9633
+    },
+    {
+      "path": "assets/nino/chapter-icons/masters/chapter-02-steden-7-12.png",
+      "bytes": 2375541,
+      "sha256": "8cb987e0096b2093f3fe7d83b32444c233e0ea515b4c126852450517ac5c14cf",
+      "expected_sha256": "8cb987e0096b2093f3fe7d83b32444c233e0ea515b4c126852450517ac5c14cf",
+      "hash_match": true,
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "mode": "RGBA",
+      "format": "PNG",
+      "icc_bytes": 0,
+      "icc_sha256": null,
+      "alpha_min": 0,
+      "alpha_max": 255,
+      "transparent_pixels": 420878,
+      "partial_alpha_pixels": 1151257,
+      "opaque_pixels": 381,
+      "alpha_bbox": [
+        8,
+        9,
+        1236,
+        1210
+      ],
+      "nontransparent_border_pixels": 0,
+      "partial_neutral_pixels": 40618
+    },
+    {
+      "path": "assets/nino/chapter-icons/exports/chapter-02-steden-7-12.webp",
+      "bytes": 104694,
+      "sha256": "f9c76c2c0926d31838abc82063a4e866546e0c5b49c4c75cf68ac3d1fb739589",
+      "expected_sha256": "f9c76c2c0926d31838abc82063a4e866546e0c5b49c4c75cf68ac3d1fb739589",
+      "hash_match": true,
+      "dimensions": [
+        512,
+        512
+      ],
+      "mode": "RGBA",
+      "format": "WEBP",
+      "icc_bytes": 0,
+      "icc_sha256": null,
+      "alpha_min": 0,
+      "alpha_max": 255,
+      "transparent_pixels": 68081,
+      "partial_alpha_pixels": 193092,
+      "opaque_pixels": 971,
+      "alpha_bbox": [
+        1,
+        1,
+        507,
+        497
+      ],
+      "nontransparent_border_pixels": 0,
+      "partial_neutral_pixels": 6245
+    },
+    {
+      "path": "assets/nino/chapter-icons/masters/chapter-03-extra-steden-13-18.png",
+      "bytes": 2415934,
+      "sha256": "3c739c4232d69f436604159250bd332528905b87ed0a2bb9f721755be2138325",
+      "expected_sha256": "3c739c4232d69f436604159250bd332528905b87ed0a2bb9f721755be2138325",
+      "hash_match": true,
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "mode": "RGBA",
+      "format": "PNG",
+      "icc_bytes": 0,
+      "icc_sha256": null,
+      "alpha_min": 0,
+      "alpha_max": 255,
+      "transparent_pixels": 426199,
+      "partial_alpha_pixels": 1146148,
+      "opaque_pixels": 169,
+      "alpha_bbox": [
+        11,
+        10,
+        1230,
+        1210
+      ],
+      "nontransparent_border_pixels": 0,
+      "partial_neutral_pixels": 58495
+    },
+    {
+      "path": "assets/nino/chapter-icons/exports/chapter-03-extra-steden-13-18.webp",
+      "bytes": 109932,
+      "sha256": "1801146a77b15f4e7b57b3e8a543244b55e37f828b57f02bf83dd1636f034b63",
+      "expected_sha256": "1801146a77b15f4e7b57b3e8a543244b55e37f828b57f02bf83dd1636f034b63",
+      "hash_match": true,
+      "dimensions": [
+        512,
+        512
+      ],
+      "mode": "RGBA",
+      "format": "WEBP",
+      "icc_bytes": 0,
+      "icc_sha256": null,
+      "alpha_min": 0,
+      "alpha_max": 255,
+      "transparent_pixels": 68982,
+      "partial_alpha_pixels": 192188,
+      "opaque_pixels": 974,
+      "alpha_bbox": [
+        2,
+        2,
+        505,
+        496
+      ],
+      "nontransparent_border_pixels": 0,
+      "partial_neutral_pixels": 9718
+    },
+    {
+      "path": "assets/nino/chapter-icons/masters/chapter-04-extra-steden-19-23.png",
+      "bytes": 2669801,
+      "sha256": "053a4ea9ee61e6271f880c50efd09722171a0804684cc87cef1de81b6c812311",
+      "expected_sha256": "053a4ea9ee61e6271f880c50efd09722171a0804684cc87cef1de81b6c812311",
+      "hash_match": true,
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "mode": "RGBA",
+      "format": "PNG",
+      "icc_bytes": 0,
+      "icc_sha256": null,
+      "alpha_min": 0,
+      "alpha_max": 255,
+      "transparent_pixels": 429040,
+      "partial_alpha_pixels": 1143078,
+      "opaque_pixels": 398,
+      "alpha_bbox": [
+        10,
+        10,
+        1230,
+        1206
+      ],
+      "nontransparent_border_pixels": 0,
+      "partial_neutral_pixels": 63347
+    },
+    {
+      "path": "assets/nino/chapter-icons/exports/chapter-04-extra-steden-19-23.webp",
+      "bytes": 124022,
+      "sha256": "125a496d4c65e3008c5b25606048b087a8d1678dfe551f3d7b2d256a33de1526",
+      "expected_sha256": "125a496d4c65e3008c5b25606048b087a8d1678dfe551f3d7b2d256a33de1526",
+      "hash_match": true,
+      "dimensions": [
+        512,
+        512
+      ],
+      "mode": "RGBA",
+      "format": "WEBP",
+      "icc_bytes": 0,
+      "icc_sha256": null,
+      "alpha_min": 0,
+      "alpha_max": 255,
+      "transparent_pixels": 69450,
+      "partial_alpha_pixels": 191719,
+      "opaque_pixels": 975,
+      "alpha_bbox": [
+        2,
+        2,
+        504,
+        495
+      ],
+      "nontransparent_border_pixels": 0,
+      "partial_neutral_pixels": 8623
+    },
+    {
+      "path": "assets/nino/chapter-icons/masters/chapter-05-eilanden.png",
+      "bytes": 2658621,
+      "sha256": "09435f1370c9682759c0508f1ca201df7fa15c18b905fd0de32d094751ab5b17",
+      "expected_sha256": "09435f1370c9682759c0508f1ca201df7fa15c18b905fd0de32d094751ab5b17",
+      "hash_match": true,
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "mode": "RGBA",
+      "format": "PNG",
+      "icc_bytes": 0,
+      "icc_sha256": null,
+      "alpha_min": 0,
+      "alpha_max": 255,
+      "transparent_pixels": 417086,
+      "partial_alpha_pixels": 1155162,
+      "opaque_pixels": 268,
+      "alpha_bbox": [
+        6,
+        7,
+        1231,
+        1214
+      ],
+      "nontransparent_border_pixels": 0,
+      "partial_neutral_pixels": 58128
+    },
+    {
+      "path": "assets/nino/chapter-icons/exports/chapter-05-eilanden.webp",
+      "bytes": 127238,
+      "sha256": "f1ca42b2a08c2586ef601a1d4e6174a1996bdeb95a64c0b8fadabafbcb2fe9f0",
+      "expected_sha256": "f1ca42b2a08c2586ef601a1d4e6174a1996bdeb95a64c0b8fadabafbcb2fe9f0",
+      "hash_match": true,
+      "dimensions": [
+        512,
+        512
+      ],
+      "mode": "RGBA",
+      "format": "WEBP",
+      "icc_bytes": 0,
+      "icc_sha256": null,
+      "alpha_min": 0,
+      "alpha_max": 255,
+      "transparent_pixels": 67445,
+      "partial_alpha_pixels": 193716,
+      "opaque_pixels": 983,
+      "alpha_bbox": [
+        0,
+        1,
+        505,
+        498
+      ],
+      "nontransparent_border_pixels": 33,
+      "partial_neutral_pixels": 9038
+    },
+    {
+      "path": "assets/nino/chapter-icons/masters/chapter-06-bergen.png",
+      "bytes": 2567132,
+      "sha256": "6beee992a1efa5f2b0a24185de7041b9d9e51e6f2952ab48e56817f48bce2578",
+      "expected_sha256": "6beee992a1efa5f2b0a24185de7041b9d9e51e6f2952ab48e56817f48bce2578",
+      "hash_match": true,
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "mode": "RGBA",
+      "format": "PNG",
+      "icc_bytes": 0,
+      "icc_sha256": null,
+      "alpha_min": 0,
+      "alpha_max": 255,
+      "transparent_pixels": 416246,
+      "partial_alpha_pixels": 1156012,
+      "opaque_pixels": 258,
+      "alpha_bbox": [
+        4,
+        7,
+        1233,
+        1212
+      ],
+      "nontransparent_border_pixels": 0,
+      "partial_neutral_pixels": 79111
+    },
+    {
+      "path": "assets/nino/chapter-icons/exports/chapter-06-bergen.webp",
+      "bytes": 121680,
+      "sha256": "a6b8def0c138109385f96de64c02026d11dd19bea9ffa9ad6e31fca5fab0b7c3",
+      "expected_sha256": "a6b8def0c138109385f96de64c02026d11dd19bea9ffa9ad6e31fca5fab0b7c3",
+      "hash_match": true,
+      "dimensions": [
+        512,
+        512
+      ],
+      "mode": "RGBA",
+      "format": "WEBP",
+      "icc_bytes": 0,
+      "icc_sha256": null,
+      "alpha_min": 0,
+      "alpha_max": 255,
+      "transparent_pixels": 67305,
+      "partial_alpha_pixels": 193861,
+      "opaque_pixels": 978,
+      "alpha_bbox": [
+        0,
+        1,
+        506,
+        497
+      ],
+      "nontransparent_border_pixels": 26,
+      "partial_neutral_pixels": 13706
+    },
+    {
+      "path": "assets/nino/chapter-icons/masters/chapter-07-vulkanen.png",
+      "bytes": 2463027,
+      "sha256": "2ed61ce515349192625701482713aacc81d0632fe18dc34e35d8215c4897146f",
+      "expected_sha256": "2ed61ce515349192625701482713aacc81d0632fe18dc34e35d8215c4897146f",
+      "hash_match": true,
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "mode": "RGBA",
+      "format": "PNG",
+      "icc_bytes": 0,
+      "icc_sha256": null,
+      "alpha_min": 0,
+      "alpha_max": 255,
+      "transparent_pixels": 421028,
+      "partial_alpha_pixels": 1151339,
+      "opaque_pixels": 149,
+      "alpha_bbox": [
+        9,
+        9,
+        1233,
+        1214
+      ],
+      "nontransparent_border_pixels": 0,
+      "partial_neutral_pixels": 98143
+    },
+    {
+      "path": "assets/nino/chapter-icons/exports/chapter-07-vulkanen.webp",
+      "bytes": 119992,
+      "sha256": "52efca255b21936d51c7c86868d438005393b2fac66a7ae8c2f05daaa593c232",
+      "expected_sha256": "52efca255b21936d51c7c86868d438005393b2fac66a7ae8c2f05daaa593c232",
+      "hash_match": true,
+      "dimensions": [
+        512,
+        512
+      ],
+      "mode": "RGBA",
+      "format": "WEBP",
+      "icc_bytes": 0,
+      "icc_sha256": null,
+      "alpha_min": 0,
+      "alpha_max": 255,
+      "transparent_pixels": 68132,
+      "partial_alpha_pixels": 193060,
+      "opaque_pixels": 952,
+      "alpha_bbox": [
+        1,
+        1,
+        506,
+        498
+      ],
+      "nontransparent_border_pixels": 0,
+      "partial_neutral_pixels": 15266
+    },
+    {
+      "path": "assets/nino/chapter-icons/masters/chapter-08-streken.png",
+      "bytes": 2617985,
+      "sha256": "20c105e185900b0b36e69e5fcb7cc61a490073ba8e19d93b9833216431867927",
+      "expected_sha256": "20c105e185900b0b36e69e5fcb7cc61a490073ba8e19d93b9833216431867927",
+      "hash_match": true,
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "mode": "RGBA",
+      "format": "PNG",
+      "icc_bytes": 0,
+      "icc_sha256": null,
+      "alpha_min": 0,
+      "alpha_max": 255,
+      "transparent_pixels": 417459,
+      "partial_alpha_pixels": 1154884,
+      "opaque_pixels": 173,
+      "alpha_bbox": [
+        5,
+        8,
+        1236,
+        1212
+      ],
+      "nontransparent_border_pixels": 0,
+      "partial_neutral_pixels": 65517
+    },
+    {
+      "path": "assets/nino/chapter-icons/exports/chapter-08-streken.webp",
+      "bytes": 127734,
+      "sha256": "2885eeb2d2b4d2479895761457968768d7046e65958ed6df0fd1ee056ee88a14",
+      "expected_sha256": "2885eeb2d2b4d2479895761457968768d7046e65958ed6df0fd1ee056ee88a14",
+      "hash_match": true,
+      "dimensions": [
+        512,
+        512
+      ],
+      "mode": "RGBA",
+      "format": "WEBP",
+      "icc_bytes": 0,
+      "icc_sha256": null,
+      "alpha_min": 0,
+      "alpha_max": 255,
+      "transparent_pixels": 67523,
+      "partial_alpha_pixels": 193668,
+      "opaque_pixels": 953,
+      "alpha_bbox": [
+        0,
+        1,
+        507,
+        497
+      ],
+      "nontransparent_border_pixels": 35,
+      "partial_neutral_pixels": 10123
+    },
+    {
+      "path": "assets/nino/chapter-icons/masters/chapter-09-landen.png",
+      "bytes": 2511729,
+      "sha256": "6f1452c93a6f2fd2dfb6a6a18e7e521aaf12e6888f6bed246156d7245e05a144",
+      "expected_sha256": "6f1452c93a6f2fd2dfb6a6a18e7e521aaf12e6888f6bed246156d7245e05a144",
+      "hash_match": true,
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "mode": "RGBA",
+      "format": "PNG",
+      "icc_bytes": 0,
+      "icc_sha256": null,
+      "alpha_min": 0,
+      "alpha_max": 255,
+      "transparent_pixels": 408620,
+      "partial_alpha_pixels": 1162975,
+      "opaque_pixels": 921,
+      "alpha_bbox": [
+        4,
+        7,
+        1237,
+        1220
+      ],
+      "nontransparent_border_pixels": 0,
+      "partial_neutral_pixels": 67957
+    },
+    {
+      "path": "assets/nino/chapter-icons/exports/chapter-09-landen.webp",
+      "bytes": 101332,
+      "sha256": "c616f7524a546ed77e59347cbf8335be9013e687483fa689e00b1c26ab7a0f79",
+      "expected_sha256": "c616f7524a546ed77e59347cbf8335be9013e687483fa689e00b1c26ab7a0f79",
+      "hash_match": true,
+      "dimensions": [
+        512,
+        512
+      ],
+      "mode": "RGBA",
+      "format": "WEBP",
+      "icc_bytes": 0,
+      "icc_sha256": null,
+      "alpha_min": 0,
+      "alpha_max": 255,
+      "transparent_pixels": 66139,
+      "partial_alpha_pixels": 194929,
+      "opaque_pixels": 1076,
+      "alpha_bbox": [
+        0,
+        0,
+        507,
+        500
+      ],
+      "nontransparent_border_pixels": 46,
+      "partial_neutral_pixels": 10578
+    },
+    {
+      "path": "assets/nino/chapter-icons/masters/chapter-10-zeeen.png",
+      "bytes": 2403979,
+      "sha256": "c4d776148c519cbd5efd2dc294e61a7a92fb5807a89fa779de70c37b97e2ae84",
+      "expected_sha256": "c4d776148c519cbd5efd2dc294e61a7a92fb5807a89fa779de70c37b97e2ae84",
+      "hash_match": true,
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "mode": "RGBA",
+      "format": "PNG",
+      "icc_bytes": 0,
+      "icc_sha256": null,
+      "alpha_min": 0,
+      "alpha_max": 255,
+      "transparent_pixels": 404204,
+      "partial_alpha_pixels": 1168161,
+      "opaque_pixels": 151,
+      "alpha_bbox": [
+        0,
+        5,
+        1236,
+        1217
+      ],
+      "nontransparent_border_pixels": 69,
+      "partial_neutral_pixels": 90704
+    },
+    {
+      "path": "assets/nino/chapter-icons/exports/chapter-10-zeeen.webp",
+      "bytes": 117930,
+      "sha256": "66139c1119925b9584aaa0de0be9472ff2c0272235ac019bf5316be7c2325f0f",
+      "expected_sha256": "66139c1119925b9584aaa0de0be9472ff2c0272235ac019bf5316be7c2325f0f",
+      "hash_match": true,
+      "dimensions": [
+        512,
+        512
+      ],
+      "mode": "RGBA",
+      "format": "WEBP",
+      "icc_bytes": 0,
+      "icc_sha256": null,
+      "alpha_min": 0,
+      "alpha_max": 255,
+      "transparent_pixels": 65388,
+      "partial_alpha_pixels": 195750,
+      "opaque_pixels": 1006,
+      "alpha_bbox": [
+        0,
+        0,
+        507,
+        499
+      ],
+      "nontransparent_border_pixels": 97,
+      "partial_neutral_pixels": 14188
+    },
+    {
+      "path": "assets/nino/chapter-icons/masters/chapter-11-rivieren.png",
+      "bytes": 2757606,
+      "sha256": "b9dd8949f125e526696671f7595943a594f8d01797a42fb2176b6255dd29e1a3",
+      "expected_sha256": "b9dd8949f125e526696671f7595943a594f8d01797a42fb2176b6255dd29e1a3",
+      "hash_match": true,
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "mode": "RGBA",
+      "format": "PNG",
+      "icc_bytes": 0,
+      "icc_sha256": null,
+      "alpha_min": 0,
+      "alpha_max": 255,
+      "transparent_pixels": 409092,
+      "partial_alpha_pixels": 1163355,
+      "opaque_pixels": 69,
+      "alpha_bbox": [
+        4,
+        6,
+        1236,
+        1216
+      ],
+      "nontransparent_border_pixels": 0,
+      "partial_neutral_pixels": 77513
+    },
+    {
+      "path": "assets/nino/chapter-icons/exports/chapter-11-rivieren.webp",
+      "bytes": 136506,
+      "sha256": "c08a48c15a9e64abe11e6f839b160c0d24961a09ea2d627dd43277575b368ff2",
+      "expected_sha256": "c08a48c15a9e64abe11e6f839b160c0d24961a09ea2d627dd43277575b368ff2",
+      "hash_match": true,
+      "dimensions": [
+        512,
+        512
+      ],
+      "mode": "RGBA",
+      "format": "WEBP",
+      "icc_bytes": 0,
+      "icc_sha256": null,
+      "alpha_min": 0,
+      "alpha_max": 255,
+      "transparent_pixels": 66138,
+      "partial_alpha_pixels": 195099,
+      "opaque_pixels": 907,
+      "alpha_bbox": [
+        0,
+        0,
+        507,
+        499
+      ],
+      "nontransparent_border_pixels": 55,
+      "partial_neutral_pixels": 11371
+    },
+    {
+      "path": "assets/nino/travel-passport/stamps/masters/stamp-01-firenze.png",
+      "bytes": 2733306,
+      "sha256": "cb1bd16d983ac570c727eeab31f6dbce2392af2a6dc55c14418908835ad5ae56",
+      "expected_sha256": "cb1bd16d983ac570c727eeab31f6dbce2392af2a6dc55c14418908835ad5ae56",
+      "hash_match": true,
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "mode": "RGBA",
+      "format": "PNG",
+      "icc_bytes": 0,
+      "icc_sha256": null,
+      "alpha_min": 0,
+      "alpha_max": 255,
+      "transparent_pixels": 567238,
+      "partial_alpha_pixels": 1005088,
+      "opaque_pixels": 190,
+      "alpha_bbox": [
+        0,
+        8,
+        1242,
+        1254
+      ],
+      "nontransparent_border_pixels": 72,
+      "partial_neutral_pixels": 13772
+    },
+    {
+      "path": "assets/nino/travel-passport/stamps/qa-candidates/stamp-01-firenze-ink-preview.webp",
+      "bytes": 358350,
+      "sha256": "de4d32cf277a806fad8fc343451f574ef7a9d0a482cc2b8bb7e5c24c3fc47125",
+      "expected_sha256": null,
+      "hash_match": null,
+      "dimensions": [
+        768,
+        768
+      ],
+      "mode": "RGBA",
+      "format": "WEBP",
+      "icc_bytes": 0,
+      "icc_sha256": null,
+      "alpha_min": 0,
+      "alpha_max": 255,
+      "transparent_pixels": 319221,
+      "partial_alpha_pixels": 246232,
+      "opaque_pixels": 24371,
+      "alpha_bbox": [
+        25,
+        39,
+        761,
+        726
+      ],
+      "nontransparent_border_pixels": 0,
+      "partial_neutral_pixels": 316
+    },
+    {
+      "path": "assets/nino/travel-passport/stamps/masters/stamp-02-roma.png",
+      "bytes": 3068773,
+      "sha256": "19c8e75708e6fbfbf0ff8fffcd6d172008a7069610a235f843f6985db9628a27",
+      "expected_sha256": "19c8e75708e6fbfbf0ff8fffcd6d172008a7069610a235f843f6985db9628a27",
+      "hash_match": true,
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "mode": "RGBA",
+      "format": "PNG",
+      "icc_bytes": 0,
+      "icc_sha256": null,
+      "alpha_min": 0,
+      "alpha_max": 254,
+      "transparent_pixels": 542578,
+      "partial_alpha_pixels": 1030286,
+      "opaque_pixels": 0,
+      "alpha_bbox": [
+        0,
+        0,
+        1535,
+        1024
+      ],
+      "nontransparent_border_pixels": 120,
+      "partial_neutral_pixels": 5323
+    },
+    {
+      "path": "assets/nino/travel-passport/stamps/qa-candidates/stamp-02-roma-ink-preview.webp",
+      "bytes": 242356,
+      "sha256": "b34ff0780ebd442080f53d79c13d63bb89d45cb4ad961ec582a902758fec8628",
+      "expected_sha256": null,
+      "hash_match": null,
+      "dimensions": [
+        768,
+        512
+      ],
+      "mode": "RGBA",
+      "format": "WEBP",
+      "icc_bytes": 0,
+      "icc_sha256": null,
+      "alpha_min": 0,
+      "alpha_max": 255,
+      "transparent_pixels": 212892,
+      "partial_alpha_pixels": 165640,
+      "opaque_pixels": 14684,
+      "alpha_bbox": [
+        19,
+        35,
+        745,
+        482
+      ],
+      "nontransparent_border_pixels": 0,
+      "partial_neutral_pixels": 199
+    },
+    {
+      "path": "assets/nino/travel-passport/stamps/masters/stamp-03-borghi.png",
+      "bytes": 3001278,
+      "sha256": "d00d7e3fd8aa88dac971c204959a1d21b8986a15b14b8247da7c4a8bb36b6ab1",
+      "expected_sha256": "d00d7e3fd8aa88dac971c204959a1d21b8986a15b14b8247da7c4a8bb36b6ab1",
+      "hash_match": true,
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "mode": "RGBA",
+      "format": "PNG",
+      "icc_bytes": 0,
+      "icc_sha256": null,
+      "alpha_min": 0,
+      "alpha_max": 255,
+      "transparent_pixels": 439704,
+      "partial_alpha_pixels": 1132044,
+      "opaque_pixels": 768,
+      "alpha_bbox": [
+        0,
+        3,
+        1234,
+        1254
+      ],
+      "nontransparent_border_pixels": 37,
+      "partial_neutral_pixels": 91322
+    },
+    {
+      "path": "assets/nino/travel-passport/stamps/qa-candidates/stamp-03-borghi-ink-preview.webp",
+      "bytes": 392392,
+      "sha256": "b00fb30fc5ebfedcdec8970fa78bbba48b6d1b52288d5aa440a85dd6b9dfcae5",
+      "expected_sha256": null,
+      "hash_match": null,
+      "dimensions": [
+        768,
+        768
+      ],
+      "mode": "RGBA",
+      "format": "WEBP",
+      "icc_bytes": 0,
+      "icc_sha256": null,
+      "alpha_min": 0,
+      "alpha_max": 255,
+      "transparent_pixels": 307857,
+      "partial_alpha_pixels": 250978,
+      "opaque_pixels": 30989,
+      "alpha_bbox": [
+        45,
+        60,
+        723,
+        724
+      ],
+      "nontransparent_border_pixels": 0,
+      "partial_neutral_pixels": 437
+    },
+    {
+      "path": "assets/nino/travel-passport/stamps/masters/stamp-04-liguria.png",
+      "bytes": 2719320,
+      "sha256": "ddcb8076932f0259ccfa61af8b4ca7836b407fa49973560f4a89b0833ee8fdf4",
+      "expected_sha256": "ddcb8076932f0259ccfa61af8b4ca7836b407fa49973560f4a89b0833ee8fdf4",
+      "hash_match": true,
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "mode": "RGBA",
+      "format": "PNG",
+      "icc_bytes": 0,
+      "icc_sha256": null,
+      "alpha_min": 0,
+      "alpha_max": 255,
+      "transparent_pixels": 614779,
+      "partial_alpha_pixels": 957131,
+      "opaque_pixels": 606,
+      "alpha_bbox": [
+        33,
+        3,
+        1218,
+        1254
+      ],
+      "nontransparent_border_pixels": 3,
+      "partial_neutral_pixels": 177097
+    },
+    {
+      "path": "assets/nino/travel-passport/stamps/qa-candidates/stamp-04-liguria-ink-preview.webp",
+      "bytes": 338984,
+      "sha256": "b7cf9eeb47dd88028ce8da8789fd6f042c0998df182b43bd4996453148dc4fac",
+      "expected_sha256": null,
+      "hash_match": null,
+      "dimensions": [
+        768,
+        768
+      ],
+      "mode": "RGBA",
+      "format": "WEBP",
+      "icc_bytes": 0,
+      "icc_sha256": null,
+      "alpha_min": 0,
+      "alpha_max": 255,
+      "transparent_pixels": 306086,
+      "partial_alpha_pixels": 240623,
+      "opaque_pixels": 43115,
+      "alpha_bbox": [
+        93,
+        66,
+        734,
+        715
+      ],
+      "nontransparent_border_pixels": 0,
+      "partial_neutral_pixels": 285
+    },
+    {
+      "path": "assets/nino/travel-passport/stamps/masters/stamp-05-isole.png",
+      "bytes": 1063717,
+      "sha256": "91b9ed25d5255b784d447080df16f2e644937f05b37bb94d08235312ee54fb50",
+      "expected_sha256": "91b9ed25d5255b784d447080df16f2e644937f05b37bb94d08235312ee54fb50",
+      "hash_match": true,
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "mode": "RGBA",
+      "format": "PNG",
+      "icc_bytes": 0,
+      "icc_sha256": null,
+      "alpha_min": 0,
+      "alpha_max": 255,
+      "transparent_pixels": 1146047,
+      "partial_alpha_pixels": 424641,
+      "opaque_pixels": 1828,
+      "alpha_bbox": [
+        0,
+        15,
+        1254,
+        1254
+      ],
+      "nontransparent_border_pixels": 141,
+      "partial_neutral_pixels": 8805
+    },
+    {
+      "path": "assets/nino/travel-passport/stamps/qa-candidates/stamp-05-isole-ink-preview.webp",
+      "bytes": 177126,
+      "sha256": "4e72f649edbb50570f66006e02723d6b048bc2fabaab940cf5cea723a12aafd3",
+      "expected_sha256": null,
+      "hash_match": null,
+      "dimensions": [
+        768,
+        768
+      ],
+      "mode": "RGBA",
+      "format": "WEBP",
+      "icc_bytes": 0,
+      "icc_sha256": null,
+      "alpha_min": 0,
+      "alpha_max": 255,
+      "transparent_pixels": 458543,
+      "partial_alpha_pixels": 128235,
+      "opaque_pixels": 3046,
+      "alpha_bbox": [
+        21,
+        114,
+        764,
+        665
+      ],
+      "nontransparent_border_pixels": 0,
+      "partial_neutral_pixels": 43
+    },
+    {
+      "path": "assets/nino/travel-passport/stamps/masters/stamp-06-dolomiti.png",
+      "bytes": 2678060,
+      "sha256": "aad87d7b6c7eddfcd9b1996301f714da19421e6005c449b847b7fa9a957a16cf",
+      "expected_sha256": "aad87d7b6c7eddfcd9b1996301f714da19421e6005c449b847b7fa9a957a16cf",
+      "hash_match": true,
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "mode": "RGBA",
+      "format": "PNG",
+      "icc_bytes": 0,
+      "icc_sha256": null,
+      "alpha_min": 0,
+      "alpha_max": 255,
+      "transparent_pixels": 703961,
+      "partial_alpha_pixels": 868006,
+      "opaque_pixels": 549,
+      "alpha_bbox": [
+        0,
+        2,
+        1248,
+        1254
+      ],
+      "nontransparent_border_pixels": 364,
+      "partial_neutral_pixels": 161275
+    },
+    {
+      "path": "assets/nino/travel-passport/stamps/qa-candidates/stamp-06-dolomiti-ink-preview.webp",
+      "bytes": 363386,
+      "sha256": "4d989d4b6147acd3b43ff11ee068123eea643ec5d2cc530d7fa3826dd4430c98",
+      "expected_sha256": null,
+      "hash_match": null,
+      "dimensions": [
+        768,
+        768
+      ],
+      "mode": "RGBA",
+      "format": "WEBP",
+      "icc_bytes": 0,
+      "icc_sha256": null,
+      "alpha_min": 0,
+      "alpha_max": 255,
+      "transparent_pixels": 328454,
+      "partial_alpha_pixels": 244806,
+      "opaque_pixels": 16564,
+      "alpha_bbox": [
+        76,
+        7,
+        691,
+        754
+      ],
+      "nontransparent_border_pixels": 0,
+      "partial_neutral_pixels": 209
+    },
+    {
+      "path": "assets/nino/travel-passport/stamps/masters/stamp-07-etna.png",
+      "bytes": 2482645,
+      "sha256": "443d97af3411e56c139e6e6397ba9a474748c227e4325006820cc0d6dd0957b4",
+      "expected_sha256": "443d97af3411e56c139e6e6397ba9a474748c227e4325006820cc0d6dd0957b4",
+      "hash_match": true,
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "mode": "RGBA",
+      "format": "PNG",
+      "icc_bytes": 0,
+      "icc_sha256": null,
+      "alpha_min": 0,
+      "alpha_max": 255,
+      "transparent_pixels": 699749,
+      "partial_alpha_pixels": 872177,
+      "opaque_pixels": 590,
+      "alpha_bbox": [
+        0,
+        21,
+        1236,
+        1254
+      ],
+      "nontransparent_border_pixels": 14,
+      "partial_neutral_pixels": 191602
+    },
+    {
+      "path": "assets/nino/travel-passport/stamps/qa-candidates/stamp-07-etna-ink-preview.webp",
+      "bytes": 314476,
+      "sha256": "1794a3ee574294278b5147aefd069d0904d6d356c3e350cac56f302c497c1a6f",
+      "expected_sha256": null,
+      "hash_match": null,
+      "dimensions": [
+        768,
+        768
+      ],
+      "mode": "RGBA",
+      "format": "WEBP",
+      "icc_bytes": 0,
+      "icc_sha256": null,
+      "alpha_min": 0,
+      "alpha_max": 255,
+      "transparent_pixels": 376518,
+      "partial_alpha_pixels": 211412,
+      "opaque_pixels": 1894,
+      "alpha_bbox": [
+        83,
+        23,
+        685,
+        746
+      ],
+      "nontransparent_border_pixels": 0,
+      "partial_neutral_pixels": 188
+    },
+    {
+      "path": "assets/nino/travel-passport/stamps/masters/stamp-08-toscana.png",
+      "bytes": 3329280,
+      "sha256": "d12eaa8ff6804ccb280e029ee351ac0c435b2c35db141ad8dd85f46c533cb61b",
+      "expected_sha256": "d12eaa8ff6804ccb280e029ee351ac0c435b2c35db141ad8dd85f46c533cb61b",
+      "hash_match": true,
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "mode": "RGBA",
+      "format": "PNG",
+      "icc_bytes": 0,
+      "icc_sha256": null,
+      "alpha_min": 0,
+      "alpha_max": 254,
+      "transparent_pixels": 531690,
+      "partial_alpha_pixels": 1041174,
+      "opaque_pixels": 0,
+      "alpha_bbox": [
+        0,
+        21,
+        1535,
+        1024
+      ],
+      "nontransparent_border_pixels": 76,
+      "partial_neutral_pixels": 17532
+    },
+    {
+      "path": "assets/nino/travel-passport/stamps/qa-candidates/stamp-08-toscana-ink-preview.webp",
+      "bytes": 257492,
+      "sha256": "042bd1d301006582b6d91b98ae3132b81a8fb40cbc7a69aaac936fee62f82403",
+      "expected_sha256": null,
+      "hash_match": null,
+      "dimensions": [
+        768,
+        512
+      ],
+      "mode": "RGBA",
+      "format": "WEBP",
+      "icc_bytes": 0,
+      "icc_sha256": null,
+      "alpha_min": 0,
+      "alpha_max": 255,
+      "transparent_pixels": 210644,
+      "partial_alpha_pixels": 164928,
+      "opaque_pixels": 17644,
+      "alpha_bbox": [
+        20,
+        39,
+        749,
+        486
+      ],
+      "nontransparent_border_pixels": 0,
+      "partial_neutral_pixels": 9251
+    },
+    {
+      "path": "assets/nino/travel-passport/stamps/masters/stamp-09-confine-italia.png",
+      "bytes": 2926582,
+      "sha256": "e884445aeb1c06795bb2fb78f7ba329a71eba922832a6a3e745849eb0d71ae4c",
+      "expected_sha256": "e884445aeb1c06795bb2fb78f7ba329a71eba922832a6a3e745849eb0d71ae4c",
+      "hash_match": true,
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "mode": "RGB",
+      "format": "PNG",
+      "icc_bytes": 0,
+      "icc_sha256": null,
+      "alpha_min": 255,
+      "alpha_max": 255,
+      "transparent_pixels": 0,
+      "partial_alpha_pixels": 0,
+      "opaque_pixels": 1572864,
+      "alpha_bbox": [
+        0,
+        0,
+        1536,
+        1024
+      ],
+      "nontransparent_border_pixels": 5120,
+      "partial_neutral_pixels": 0
+    },
+    {
+      "path": "assets/nino/travel-passport/stamps/qa-candidates/stamp-09-confine-italia-ink-preview.webp",
+      "bytes": 233276,
+      "sha256": "9032c4ff1ec9083b8ddf4a5dc4107e448d9578675fec4ab62221dc13310d38cf",
+      "expected_sha256": null,
+      "hash_match": null,
+      "dimensions": [
+        768,
+        512
+      ],
+      "mode": "RGBA",
+      "format": "WEBP",
+      "icc_bytes": 0,
+      "icc_sha256": null,
+      "alpha_min": 0,
+      "alpha_max": 255,
+      "transparent_pixels": 239804,
+      "partial_alpha_pixels": 136013,
+      "opaque_pixels": 17399,
+      "alpha_bbox": [
+        55,
+        79,
+        721,
+        467
+      ],
+      "nontransparent_border_pixels": 0,
+      "partial_neutral_pixels": 368
+    },
+    {
+      "path": "assets/nino/travel-passport/stamps/masters/stamp-10-mari.png",
+      "bytes": 2517804,
+      "sha256": "9dc89b2b82a018c830991aeace67d296990397b3bc61793292827cca08ba3249",
+      "expected_sha256": "9dc89b2b82a018c830991aeace67d296990397b3bc61793292827cca08ba3249",
+      "hash_match": true,
+      "dimensions": [
+        1312,
+        1199
+      ],
+      "mode": "RGBA",
+      "format": "PNG",
+      "icc_bytes": 0,
+      "icc_sha256": null,
+      "alpha_min": 0,
+      "alpha_max": 255,
+      "transparent_pixels": 565052,
+      "partial_alpha_pixels": 1007981,
+      "opaque_pixels": 55,
+      "alpha_bbox": [
+        0,
+        9,
+        1312,
+        1199
+      ],
+      "nontransparent_border_pixels": 564,
+      "partial_neutral_pixels": 486744
+    },
+    {
+      "path": "assets/nino/travel-passport/stamps/qa-candidates/stamp-10-mari-ink-preview.webp",
+      "bytes": 246464,
+      "sha256": "686b3f091f933dcec54a9710405af24236bf8921cdeca316cd7403c806a0e34f",
+      "expected_sha256": null,
+      "hash_match": null,
+      "dimensions": [
+        768,
+        702
+      ],
+      "mode": "RGBA",
+      "format": "WEBP",
+      "icc_bytes": 0,
+      "icc_sha256": null,
+      "alpha_min": 0,
+      "alpha_max": 255,
+      "transparent_pixels": 205124,
+      "partial_alpha_pixels": 322911,
+      "opaque_pixels": 11101,
+      "alpha_bbox": [
+        28,
+        39,
+        759,
+        679
+      ],
+      "nontransparent_border_pixels": 0,
+      "partial_neutral_pixels": 60
+    },
+    {
+      "path": "assets/nino/travel-passport/stamps/masters/stamp-11-fiumi.png",
+      "bytes": 2891112,
+      "sha256": "d79bc297171fabbf426968d36d7c1193b9adde65033a1b26fe84ccae158df06e",
+      "expected_sha256": "d79bc297171fabbf426968d36d7c1193b9adde65033a1b26fe84ccae158df06e",
+      "hash_match": true,
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "mode": "RGBA",
+      "format": "PNG",
+      "icc_bytes": 0,
+      "icc_sha256": null,
+      "alpha_min": 0,
+      "alpha_max": 255,
+      "transparent_pixels": 533700,
+      "partial_alpha_pixels": 1038568,
+      "opaque_pixels": 248,
+      "alpha_bbox": [
+        0,
+        9,
+        1254,
+        1254
+      ],
+      "nontransparent_border_pixels": 32,
+      "partial_neutral_pixels": 21005
+    },
+    {
+      "path": "assets/nino/travel-passport/stamps/qa-candidates/stamp-11-fiumi-ink-preview.webp",
+      "bytes": 375622,
+      "sha256": "063a643d0d16436e0be7fdacd39316d0bf1bd99427137bf284c027b0610b63b7",
+      "expected_sha256": null,
+      "hash_match": null,
+      "dimensions": [
+        768,
+        768
+      ],
+      "mode": "RGBA",
+      "format": "WEBP",
+      "icc_bytes": 0,
+      "icc_sha256": null,
+      "alpha_min": 0,
+      "alpha_max": 255,
+      "transparent_pixels": 308978,
+      "partial_alpha_pixels": 257045,
+      "opaque_pixels": 23801,
+      "alpha_bbox": [
+        18,
+        34,
+        765,
+        735
+      ],
+      "nontransparent_border_pixels": 0,
+      "partial_neutral_pixels": 170
+    },
+    {
+      "path": "assets/nino/travel-passport/book/masters/passport-closed-cover.png",
+      "bytes": 2235471,
+      "sha256": "3d1c0e1978373d2a21b0072baa3f342375641341635fc7f9f06e5721ff58f1b9",
+      "expected_sha256": "3d1c0e1978373d2a21b0072baa3f342375641341635fc7f9f06e5721ff58f1b9",
+      "hash_match": true,
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "mode": "RGBA",
+      "format": "PNG",
+      "icc_bytes": 0,
+      "icc_sha256": null,
+      "alpha_min": 0,
+      "alpha_max": 255,
+      "transparent_pixels": 693083,
+      "partial_alpha_pixels": 879102,
+      "opaque_pixels": 331,
+      "alpha_bbox": [
+        0,
+        0,
+        1254,
+        1254
+      ],
+      "nontransparent_border_pixels": 728,
+      "partial_neutral_pixels": 15695
+    },
+    {
+      "path": "assets/nino/travel-passport/book/masters/passport-open-book.png",
+      "bytes": 2674616,
+      "sha256": "94f5d286e502b81ee156ae0923132f22dc8475f474f44709087e83662e032b8d",
+      "expected_sha256": "94f5d286e502b81ee156ae0923132f22dc8475f474f44709087e83662e032b8d",
+      "hash_match": true,
+      "dimensions": [
+        1586,
+        992
+      ],
+      "mode": "RGBA",
+      "format": "PNG",
+      "icc_bytes": 0,
+      "icc_sha256": null,
+      "alpha_min": 0,
+      "alpha_max": 255,
+      "transparent_pixels": 319509,
+      "partial_alpha_pixels": 1253720,
+      "opaque_pixels": 83,
+      "alpha_bbox": [
+        0,
+        20,
+        1552,
+        992
+      ],
+      "nontransparent_border_pixels": 32,
+      "partial_neutral_pixels": 11522
+    }
+  ],
+  "count": 46
+}

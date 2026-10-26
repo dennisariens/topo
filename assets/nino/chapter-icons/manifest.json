@@ -4,7 +4,7 @@
   "approved_master": "chapter-01-steden-1-6 (Florence V2)",
   "art_branch": "art/nino-pizza-rewards-20261024",
   "created_at": "2026-10-25",
-  "upload_status": "LOCAL_PACKAGE_ONLY_NOT_IN_GITHUB",
+  "upload_status": "GITHUB_VERIFIED_AT_PINNED_SOURCE",
   "check": "11 assets present, native image details preserved; alpha 1-15 fringes stripped; 512 WebP exports and 32/48/64/96 previews",
   "assets": [
     {
@@ -216,5 +216,8 @@
       "design_status": "GO",
       "visual_note": null
     }
-  ]
+  ],
+  "verified_source_branch": "art/nino-travel-stamps-v2-20261026",
+  "verified_source_sha": "367b875c83a4e8b77c1f1d09523c20c96364f178",
+  "independent_qa_evidence": "docs/qa/artwork-45/icons-verdicts.json"
 }

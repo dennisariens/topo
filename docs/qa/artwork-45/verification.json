@@ -1,0 +1,21 @@
+{
+  "source_revision": "367b875c83a4e8b77c1f1d09523c20c96364f178",
+  "supplied_files_unchanged": 46,
+  "manifest_hash_matches": 35,
+  "mismatch": 0,
+  "allowlisted_files_verified": 22,
+  "stamp_copy_roundtrips": 10,
+  "cover_decoded_RGBA_exact": true,
+  "protected_app_files_unchanged": {
+    "index.html": "79e11c495f4b6ecae54a88602d30ee24b73c484a4571448345139eba41a2992e",
+    "scripts/learning-engine.js": "e6d1992865892d3eefd661abae74cac300d0659ab1827c41a8b057b4dc7ef6e0",
+    "scripts/route-engine.js": "d4eda0c82d8483855ad31123af85ff56a08a29e2e60848b717331398ed8ce9b8",
+    "output/html/topo-italie-interactief.html": "79e11c495f4b6ecae54a88602d30ee24b73c484a4571448345139eba41a2992e",
+    "output/html/topo-italie-duolingo.html": "79e11c495f4b6ecae54a88602d30ee24b73c484a4571448345139eba41a2992e",
+    "print.html": "60a2c0c3d7522c80368301f57e351cebde86ab03f039bc05ecb430bac9f881d9",
+    "output/pdf/topo-italie-printboek.pdf": "0884af9e6e87c09d95b4cafc8fc5f25572caa670d75c4ac38acdedab9b93c22c",
+    "package.json": "04619984c5ce2418552e01d3b916a321a1a0f3fe0cc64afe50fd6a048acc387b",
+    "package-lock.json": "bf48b9275a17aecb10782afba65af406898075e405e7340b3b35ef09d12cb6f4"
+  },
+  "visual_scope": "separate reviewed ledger; not gameplay/Safari approval"
+}

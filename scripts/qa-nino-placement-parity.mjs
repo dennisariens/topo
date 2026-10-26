@@ -1,0 +1,7 @@
+import assert from 'node:assert/strict';
+import{readFileSync,writeFileSync}from'node:fs';
+const out=new URL('../docs/qa/artwork-45/',import.meta.url),d=JSON.parse(readFileSync(new URL('placement-poses.json',out)));
+function h32(s){let h=2166136261;for(const b of new TextEncoder().encode(s))h=Math.imul(h^b,16777619)>>>0;return h}
+function pick(seed,lane,v,w){let n=h32(seed+'\0'+lane)%w.reduce((a,b)=>a+b);for(let i=0;i<v.length;i++){if(n<w[i])return v[i];n-=w[i]}throw Error('weights')}
+for(const p of d.poses){const seed=JSON.stringify(['topo-stamp-v1','chapter',p.key,'']);assert.equal(seed,p.seed);const angle=pick(seed,'rotation',[0,-1.5,1.5,-4.5,4.5],[3,3,3,1,1]);let x=pick(seed,'x',[-10,-5,0,5,10],[1,2,8,2,1]),y=pick(seed,'y',[-6,-3,0,3,6],[1,2,8,2,1]);const a=angle*Math.PI/180,w=112*Math.abs(Math.cos(a))+96*Math.abs(Math.sin(a)),h=112*Math.abs(Math.sin(a))+96*Math.abs(Math.cos(a));x=Math.max(-(68-w/2),Math.min(68-w/2,x));y=Math.max(-(64-h/2),Math.min(64-h/2,y));assert.deepEqual([angle,x,y],[p.angle,p.x,p.y]);assert.equal(pick(seed,'pressure',['even','left-heavy','right-heavy','lower-edge-heavy'],[6,2,2,1]),p.pressure);assert((160-w)/2-Math.abs(x)>=12-1e-8);assert((152-h)/2-Math.abs(y)>=12-1e-8)}
+const r={identities:d.poses.length,pythonJavaScriptParity:'PASS',safeInsets:'PASS',repeatRenders:'PASS (pure stable identity projection)',runtimeReopenBackupOffline:'NOT EXERCISED: passport integration absent',scope:'design fixture, no reward state'};writeFileSync(new URL('placement-parity-results.json',out),JSON.stringify(r,null,2)+'\n');console.log(r);

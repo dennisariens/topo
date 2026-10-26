@@ -1,0 +1,276 @@
+{
+  "source_revision": "367b875c83a4e8b77c1f1d09523c20c96364f178",
+  "entries": [
+    {
+      "category": "chapter-stamp",
+      "chapter": 1,
+      "path": "assets/nino/travel-passport/stamps/exports/stamp-01-firenze.webp",
+      "sha256": "de4d32cf277a806fad8fc343451f574ef7a9d0a482cc2b8bb7e5c24c3fc47125",
+      "source": "assets/nino/travel-passport/stamps/qa-candidates/stamp-01-firenze-ink-preview.webp",
+      "transform": "byte-identical copy of visually accepted QA candidate",
+      "dimensions": [
+        768,
+        768
+      ]
+    },
+    {
+      "category": "chapter-stamp",
+      "chapter": 2,
+      "path": "assets/nino/travel-passport/stamps/exports/stamp-02-roma.webp",
+      "sha256": "b34ff0780ebd442080f53d79c13d63bb89d45cb4ad961ec582a902758fec8628",
+      "source": "assets/nino/travel-passport/stamps/qa-candidates/stamp-02-roma-ink-preview.webp",
+      "transform": "byte-identical copy of visually accepted QA candidate",
+      "dimensions": [
+        768,
+        512
+      ]
+    },
+    {
+      "category": "chapter-stamp",
+      "chapter": 3,
+      "path": "assets/nino/travel-passport/stamps/exports/stamp-03-borghi.webp",
+      "sha256": "b00fb30fc5ebfedcdec8970fa78bbba48b6d1b52288d5aa440a85dd6b9dfcae5",
+      "source": "assets/nino/travel-passport/stamps/qa-candidates/stamp-03-borghi-ink-preview.webp",
+      "transform": "byte-identical copy of visually accepted QA candidate",
+      "dimensions": [
+        768,
+        768
+      ]
+    },
+    {
+      "category": "chapter-stamp",
+      "chapter": 4,
+      "path": "assets/nino/travel-passport/stamps/exports/stamp-04-liguria.webp",
+      "sha256": "b7cf9eeb47dd88028ce8da8789fd6f042c0998df182b43bd4996453148dc4fac",
+      "source": "assets/nino/travel-passport/stamps/qa-candidates/stamp-04-liguria-ink-preview.webp",
+      "transform": "byte-identical copy of visually accepted QA candidate",
+      "dimensions": [
+        768,
+        768
+      ]
+    },
+    {
+      "category": "chapter-stamp",
+      "chapter": 6,
+      "path": "assets/nino/travel-passport/stamps/exports/stamp-06-dolomiti.webp",
+      "sha256": "4d989d4b6147acd3b43ff11ee068123eea643ec5d2cc530d7fa3826dd4430c98",
+      "source": "assets/nino/travel-passport/stamps/qa-candidates/stamp-06-dolomiti-ink-preview.webp",
+      "transform": "byte-identical copy of visually accepted QA candidate",
+      "dimensions": [
+        768,
+        768
+      ]
+    },
+    {
+      "category": "chapter-stamp",
+      "chapter": 7,
+      "path": "assets/nino/travel-passport/stamps/exports/stamp-07-etna.webp",
+      "sha256": "1794a3ee574294278b5147aefd069d0904d6d356c3e350cac56f302c497c1a6f",
+      "source": "assets/nino/travel-passport/stamps/qa-candidates/stamp-07-etna-ink-preview.webp",
+      "transform": "byte-identical copy of visually accepted QA candidate",
+      "dimensions": [
+        768,
+        768
+      ]
+    },
+    {
+      "category": "chapter-stamp",
+      "chapter": 8,
+      "path": "assets/nino/travel-passport/stamps/exports/stamp-08-toscana.webp",
+      "sha256": "042bd1d301006582b6d91b98ae3132b81a8fb40cbc7a69aaac936fee62f82403",
+      "source": "assets/nino/travel-passport/stamps/qa-candidates/stamp-08-toscana-ink-preview.webp",
+      "transform": "byte-identical copy of visually accepted QA candidate",
+      "dimensions": [
+        768,
+        512
+      ]
+    },
+    {
+      "category": "chapter-stamp",
+      "chapter": 9,
+      "path": "assets/nino/travel-passport/stamps/exports/stamp-09-confine-italia.webp",
+      "sha256": "9032c4ff1ec9083b8ddf4a5dc4107e448d9578675fec4ab62221dc13310d38cf",
+      "source": "assets/nino/travel-passport/stamps/qa-candidates/stamp-09-confine-italia-ink-preview.webp",
+      "transform": "byte-identical copy of visually accepted QA candidate",
+      "dimensions": [
+        768,
+        512
+      ]
+    },
+    {
+      "category": "chapter-stamp",
+      "chapter": 10,
+      "path": "assets/nino/travel-passport/stamps/exports/stamp-10-mari.webp",
+      "sha256": "686b3f091f933dcec54a9710405af24236bf8921cdeca316cd7403c806a0e34f",
+      "source": "assets/nino/travel-passport/stamps/qa-candidates/stamp-10-mari-ink-preview.webp",
+      "transform": "byte-identical copy of visually accepted QA candidate",
+      "dimensions": [
+        768,
+        702
+      ]
+    },
+    {
+      "category": "chapter-stamp",
+      "chapter": 11,
+      "path": "assets/nino/travel-passport/stamps/exports/stamp-11-fiumi.webp",
+      "sha256": "063a643d0d16436e0be7fdacd39316d0bf1bd99427137bf284c027b0610b63b7",
+      "source": "assets/nino/travel-passport/stamps/qa-candidates/stamp-11-fiumi-ink-preview.webp",
+      "transform": "byte-identical copy of visually accepted QA candidate",
+      "dimensions": [
+        768,
+        768
+      ]
+    },
+    {
+      "category": "book-cover",
+      "path": "assets/nino/travel-passport/book/exports/passport-closed-cover.webp",
+      "sha256": "8901f57c74feb6d81fea23cb7b216ef403b982e8bdf66f1c89ea83eca15add44",
+      "source": "assets/nino/travel-passport/book/masters/passport-closed-cover.png",
+      "transform": "native-size lossless WebP; decoded RGBA exact",
+      "dimensions": [
+        1254,
+        1254
+      ]
+    },
+    {
+      "category": "chapter-icon",
+      "id": "01-steden-1-6",
+      "path": "assets/nino/chapter-icons/exports/chapter-01-steden-1-6.webp",
+      "sha256": "337e02ba2c1ecb909d9e1f9921070492e575c64e6f255733b5837c817fa42c11",
+      "source": "assets/nino/chapter-icons/masters/chapter-01-steden-1-6.png",
+      "dimensions": [
+        512,
+        512
+      ],
+      "scope": "labelled route UI; prefer48-96px; not geography or baked-text teaching source"
+    },
+    {
+      "category": "chapter-icon",
+      "id": "02-steden-7-12",
+      "path": "assets/nino/chapter-icons/exports/chapter-02-steden-7-12.webp",
+      "sha256": "f9c76c2c0926d31838abc82063a4e866546e0c5b49c4c75cf68ac3d1fb739589",
+      "source": "assets/nino/chapter-icons/masters/chapter-02-steden-7-12.png",
+      "dimensions": [
+        512,
+        512
+      ],
+      "scope": "labelled route UI; prefer48-96px; not geography or baked-text teaching source"
+    },
+    {
+      "category": "chapter-icon",
+      "id": "03-extra-steden-13-18",
+      "path": "assets/nino/chapter-icons/exports/chapter-03-extra-steden-13-18.webp",
+      "sha256": "1801146a77b15f4e7b57b3e8a543244b55e37f828b57f02bf83dd1636f034b63",
+      "source": "assets/nino/chapter-icons/masters/chapter-03-extra-steden-13-18.png",
+      "dimensions": [
+        512,
+        512
+      ],
+      "scope": "labelled route UI; prefer48-96px; not geography or baked-text teaching source"
+    },
+    {
+      "category": "chapter-icon",
+      "id": "04-extra-steden-19-23",
+      "path": "assets/nino/chapter-icons/exports/chapter-04-extra-steden-19-23.webp",
+      "sha256": "125a496d4c65e3008c5b25606048b087a8d1678dfe551f3d7b2d256a33de1526",
+      "source": "assets/nino/chapter-icons/masters/chapter-04-extra-steden-19-23.png",
+      "dimensions": [
+        512,
+        512
+      ],
+      "scope": "labelled route UI; prefer48-96px; not geography or baked-text teaching source"
+    },
+    {
+      "category": "chapter-icon",
+      "id": "05-eilanden",
+      "path": "assets/nino/chapter-icons/exports/chapter-05-eilanden.webp",
+      "sha256": "f1ca42b2a08c2586ef601a1d4e6174a1996bdeb95a64c0b8fadabafbcb2fe9f0",
+      "source": "assets/nino/chapter-icons/masters/chapter-05-eilanden.png",
+      "dimensions": [
+        512,
+        512
+      ],
+      "scope": "labelled route UI; prefer48-96px; not geography or baked-text teaching source"
+    },
+    {
+      "category": "chapter-icon",
+      "id": "06-bergen",
+      "path": "assets/nino/chapter-icons/exports/chapter-06-bergen.webp",
+      "sha256": "a6b8def0c138109385f96de64c02026d11dd19bea9ffa9ad6e31fca5fab0b7c3",
+      "source": "assets/nino/chapter-icons/masters/chapter-06-bergen.png",
+      "dimensions": [
+        512,
+        512
+      ],
+      "scope": "labelled route UI; prefer48-96px; not geography or baked-text teaching source"
+    },
+    {
+      "category": "chapter-icon",
+      "id": "07-vulkanen",
+      "path": "assets/nino/chapter-icons/exports/chapter-07-vulkanen.webp",
+      "sha256": "52efca255b21936d51c7c86868d438005393b2fac66a7ae8c2f05daaa593c232",
+      "source": "assets/nino/chapter-icons/masters/chapter-07-vulkanen.png",
+      "dimensions": [
+        512,
+        512
+      ],
+      "scope": "labelled route UI; prefer48-96px; not geography or baked-text teaching source"
+    },
+    {
+      "category": "chapter-icon",
+      "id": "08-streken",
+      "path": "assets/nino/chapter-icons/exports/chapter-08-streken.webp",
+      "sha256": "2885eeb2d2b4d2479895761457968768d7046e65958ed6df0fd1ee056ee88a14",
+      "source": "assets/nino/chapter-icons/masters/chapter-08-streken.png",
+      "dimensions": [
+        512,
+        512
+      ],
+      "scope": "labelled route UI; prefer48-96px; not geography or baked-text teaching source"
+    },
+    {
+      "category": "chapter-icon",
+      "id": "09-landen",
+      "path": "assets/nino/chapter-icons/exports/chapter-09-landen.webp",
+      "sha256": "c616f7524a546ed77e59347cbf8335be9013e687483fa689e00b1c26ab7a0f79",
+      "source": "assets/nino/chapter-icons/masters/chapter-09-landen.png",
+      "dimensions": [
+        512,
+        512
+      ],
+      "scope": "labelled route UI; prefer48-96px; not geography or baked-text teaching source"
+    },
+    {
+      "category": "chapter-icon",
+      "id": "10-zeeen",
+      "path": "assets/nino/chapter-icons/exports/chapter-10-zeeen.webp",
+      "sha256": "66139c1119925b9584aaa0de0be9472ff2c0272235ac019bf5316be7c2325f0f",
+      "source": "assets/nino/chapter-icons/masters/chapter-10-zeeen.png",
+      "dimensions": [
+        512,
+        512
+      ],
+      "scope": "labelled route UI; prefer48-96px; not geography or baked-text teaching source"
+    },
+    {
+      "category": "chapter-icon",
+      "id": "11-rivieren",
+      "path": "assets/nino/chapter-icons/exports/chapter-11-rivieren.webp",
+      "sha256": "c08a48c15a9e64abe11e6f839b160c0d24961a09ea2d627dd43277575b368ff2",
+      "source": "assets/nino/chapter-icons/masters/chapter-11-rivieren.png",
+      "dimensions": [
+        512,
+        512
+      ],
+      "scope": "labelled route UI; prefer48-96px; not geography or baked-text teaching source"
+    }
+  ],
+  "count": 22,
+  "excluded": [
+    "stamp-05-isole",
+    "passport-open-book",
+    "final Gold seal (missing)",
+    "canonical arrival stamp set (missing)"
+  ],
+  "color_profile": "All supplied sources untagged; no certified ICC conversion claimed."
+}

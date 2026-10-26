@@ -1,5 +1,11 @@
 # Project state
 
+## Art-only Issue #45 QA (not app integration)
+
+Pinned art source `367b875c83a4e8b77c1f1d09523c20c96364f178` is independently reviewed on `hermes/nino-art-intake-45`:11 labelled chapter icons PASS;10 warm-paper stamp derivatives PASS;Isole REWORK for relative island placement;closed-cover lossless export PASS;open-book REWORK for baked illegible postmark.22 allowlisted production files and per-file evidence are in [qa/artwork-45/README.md](qa/artwork-45/README.md).Original masters, app, reward engines, map and PR #40 are unchanged. Missing Gold/arrival art remains BLOCKED; no fake stamps or competing passport. Codex must integrate only safe assets into the then-reviewed iPad baseline after P0 gates, never merge this art branch's historical app. No merge/deploy.
+
+## Historical application snapshot inherited from art source
+
 **Last verified against repository: 2026-09-28.** Canonical repository: `dennisariens/topo`, branch `main`. Recovered from standalone `topo-italie-v6.html`; older HTML and recovery ZIP are historical.
 
 ## Purpose and implementation

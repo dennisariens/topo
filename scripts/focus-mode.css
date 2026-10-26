@@ -1,0 +1,52 @@
+/* P0 functional map-first shell. No geographic paint changes; background alpha never affects children. */
+#focusMenu{display:none}#focusAnswerSheet[hidden],#focusLearnBar[hidden],#focusLessonStatus[hidden]{display:none!important}
+.focusSafeProbe{position:fixed;visibility:hidden;pointer-events:none;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);width:0;height:0}
+body[data-focus-shell="true"]>header{position:fixed;z-index:30;left:0;right:0;top:var(--focus-vv-top,0px);max-width:none;height:calc(44px + var(--focus-safe-top,0px));padding:calc(4px + var(--focus-safe-top,0px)) 12px 4px;background:#fbf7eb!important;background-image:none!important;border-radius:0;border-bottom:1px solid #e0d7c3;gap:10px}
+body[data-focus-shell="true"] .brandWrap{gap:6px;min-width:0}body[data-focus-shell="true"] .brandMark{width:34px;height:36px;flex-basis:34px;border-radius:8px}.focusMenuPanel .backupTools{max-width:100%;margin:10px 0 0;padding:8px 0}.focusMenuPanel .backupTools button{min-height:44px}
+body[data-focus-shell="true"] .brand{font-size:24px;letter-spacing:-.04em;white-space:nowrap}body[data-focus-shell="true"] .brand small{display:none}body[data-focus-shell="true"] header .stats{margin-right:94px;max-height:34px;overflow:hidden;gap:5px}body[data-focus-shell="true"] header .stat{padding:2px 8px;font-size:10px;border-radius:7px}body[data-focus-shell="true"] header .stat strong{font-size:13px;display:inline;margin-right:4px}
+body[data-focus-shell="true"] #focusMenu{display:block;position:fixed;right:12px;top:calc(var(--focus-vv-top,0px) + var(--focus-safe-top,0px));z-index:45}
+#focusMenu>summary{display:flex;align-items:center;min-height:44px;padding:6px 12px;cursor:pointer;list-style:none;border:1px solid #cabea6;border-radius:9px;background:#fffaf0;color:#264e48;font-size:13px;font-weight:750}#focusMenu>summary::-webkit-details-marker{display:none}
+.focusMenuPanel{position:absolute;right:0;top:48px;width:min(500px,calc(var(--focus-vv-width,100vw) - 24px));max-height:calc(var(--focus-vv-height,100svh) - 66px);overflow:auto;overscroll-behavior:contain;background:#fffaf0;border:1px solid #d3c4a5;border-radius:14px;padding:14px;box-shadow:0 12px 34px #493b2728;color:#243f3a}
+.focusMenuPanel>strong{font-size:13px}.focusMenuPanel nav.tabs{position:static;display:grid!important;grid-template-columns:repeat(5,minmax(0,1fr));gap:4px;padding:8px 0;margin:0;max-width:none;overflow:visible}.focusMenuPanel nav.tabs .tab{min-height:44px;padding:7px 4px;font-size:11px;white-space:normal;line-height:1.2}.focusMenuPanel #groupPicker{margin:10px 0;display:flex;flex-wrap:wrap;gap:8px}.focusMenuPanel select{min-height:44px;max-width:100%;font-size:16px}.focusMenuPanel #nameToggleWrap{display:flex;align-items:center;min-height:44px;font-size:13px}.focusMenuPanel #reveal,.focusMenuPanel #mistakes,.focusMenuPanel #printMap{min-height:44px;margin:6px 4px 0 0}.focusMenuPanel .testSetup{margin:8px 0}
+body[data-focus-shell="true"] .layout.routeHomeLayout,body[data-focus-shell="true"] .layout.finishLayout{margin-top:54px}
+body[data-focus-mode="true"]{overflow:hidden}
+body[data-focus-mode="true"] .layout:not(.routeHomeLayout):not(.finishLayout){display:block!important;margin:0;padding:0}
+body[data-focus-mode="true"] .layout>.panel{display:none!important}
+body[data-focus-mode="true"] .mapCard{position:fixed;left:10px;right:10px;top:calc(48px + var(--focus-safe-top,0px) + var(--focus-vv-top,0px));bottom:auto;height:calc(var(--focus-layout-height,100svh) - 58px - var(--focus-safe-top,0px) - var(--focus-safe-bottom,0px));display:flex;flex-direction:column;grid-column:auto!important;grid-row:auto!important;border-radius:15px;overflow:hidden;background:#faf5e8}
+body[data-focus-mode="true"] .mapTools{display:flex!important;flex:none;gap:6px;padding:5px 8px;min-height:54px;align-items:center;justify-content:flex-start;background:#fbf7eb}
+body[data-focus-mode="true"] .mapTools>strong{display:none}body[data-focus-mode="true"] .mapSwitches{display:flex;gap:5px;align-items:center;flex-wrap:wrap}
+body[data-focus-mode="true"] #focusLessonStatus{font-size:11px;font-weight:700;color:#496358;margin-right:auto;max-width:230px;line-height:1.25}
+body[data-focus-mode="true"] .atlasOptions summary,body[data-focus-mode="true"] .schoolbladButton{font-size:12px;padding:6px 8px;min-height:44px}
+body[data-focus-mode="true"] .atlasZoom button[aria-label="Hele kaart"]{display:none}
+body[data-focus-mode="true"] .mapArea.atlasViewport{flex:1;min-height:0;height:auto!important;max-width:none;width:100%!important;aspect-ratio:auto;margin:0;box-shadow:none}
+body[data-focus-mode="true"] .mapCaption,body[data-focus-mode="true"] .atlasScenery,body[data-focus-mode="true"] #routeMapDock,body[data-focus-mode="true"] .mapCard:after{display:none!important}
+/* Keep the original checkbox/photo fallback usable when native dialog is unavailable. */
+body[data-focus-mode="true"] .mapCard>#school:not(.hidden){position:fixed;z-index:35;left:12px;top:120px;width:calc(100vw - 24px);height:calc(var(--focus-vv-height,100svh) - 140px);object-fit:contain;background:#fffaf0;pointer-events:none}
+.focusAnswerSheet,.focusLearnBar{position:fixed;z-index:22;transform:translateX(-50%);width:min(560px,calc(var(--focus-vv-width,100vw) - 24px));padding:10px 12px;border:1px solid #cbb792;border-radius:16px;background:rgba(255,249,236,.93);color:#1d3634;box-shadow:0 5px 20px #55402526;overflow:auto;overscroll-behavior:contain;opacity:1}
+@supports(backdrop-filter:blur(4px)){.focusAnswerSheet{backdrop-filter:blur(4px);-webkit-backdrop-filter:blur(4px)}}
+#focusAnswerSheet #freeCoach,#focusAnswerSheet #routeLessonBar,#focusAnswerSheet #type,#focusAnswerSheet #help,#focusAnswerSheet #testStatus,#focusAnswerSheet .pizza,#focusAnswerSheet .pizzaProgress,#focusAnswerSheet #pizzaCaption,#focusAnswerSheet .eyebrow,#focusAnswerSheet #sliceCount,#focusAnswerSheet #vespaDestination,#focusAnswerSheet .backupTools,#focusAnswerSheet .reset{display:none!important}
+#focusAnswerSheet #quiz> :not(#prompt):not(#inputWrap):not(#message):not(.buttons){display:none!important}
+#focusAnswerSheet #quiz{padding:0;margin:0;background:transparent}
+#focusAnswerSheet #prompt{padding:2px 130px 3px 0;margin:0 0 5px;font-size:18px;line-height:1.25;letter-spacing:-.015em;color:#193d35;background:#fff9ec;min-height:30px}
+#focusSheetToggle{position:absolute;right:7px;top:5px;min-height:44px;padding:6px 8px;border:1px solid #c9bea6;border-radius:9px;background:#fffaf0;color:#435c4c;font:inherit;font-size:11px;cursor:pointer;z-index:2}
+#focusAnswerSheet #inputWrap:not(.hidden){display:flex!important;gap:8px;align-items:stretch;margin:4px 0 0}
+#focusAnswerSheet #answer{min-width:0;flex:1;width:auto!important;min-height:46px;font-size:16px;line-height:1.25;background:#fffef9;color:#1c3530;border:1px solid #7b897a;border-radius:9px;padding:10px 12px;opacity:1}
+#focusAnswerSheet #check{min-height:46px;min-width:104px;padding:8px 12px;border-radius:9px;background:#155c50;color:#fff;font-size:15px;opacity:1}
+#focusAnswerSheet #check:disabled{background:#526c62;color:#fff;opacity:1}
+#focusAnswerSheet #message{margin:7px 0 0;padding:6px 9px;background:#fffaf0;color:#29453b;min-height:0;font-size:13px;line-height:1.35;opacity:1}#focusAnswerSheet #message.good{background:#e7f5e9;color:#165a35}#focusAnswerSheet #message.bad{background:#fff0e9;color:#803529}
+#focusAnswerSheet .buttons{display:flex;gap:6px;margin:6px 0 0;flex-wrap:wrap}#focusAnswerSheet .buttons .button{min-height:44px;font-size:13px;padding:8px 12px}
+body[data-focus-answered="false"] #focusAnswerSheet #message{display:none!important}
+body[data-focus-task="point"] #focusAnswerSheet,body[data-focus-task="discover"] #focusAnswerSheet{width:min(520px,calc(var(--focus-vv-width,100vw) - 24px))}
+body[data-focus-task="point"] #focusAnswerSheet #prompt,body[data-focus-task="discover"] #focusAnswerSheet #prompt{font-size:16px;padding-right:120px}
+body[data-focus-task="point"] #focusAnswerSheet #inputWrap,body[data-focus-task="discover"] #focusAnswerSheet #inputWrap{display:none!important}
+body[data-focus-keyboard="true"][data-focus-answered="false"][data-focus-task="write"] #focusAnswerSheet .buttons{display:none!important}
+#focusAnswerSheet[data-collapsed="true"]{width:auto;min-width:160px;padding:0;overflow:visible;background:#fff9ec}
+#focusAnswerSheet[data-collapsed="true"] #quiz{display:none!important}#focusAnswerSheet[data-collapsed="true"] #focusSheetToggle{position:static;min-width:160px;border:0}
+.focusLearnBar{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:6px 10px;width:min(480px,calc(var(--focus-vv-width,100vw) - 24px));background:#fff9ec}
+.focusLearnBar #learnPrompt{font-size:17px;line-height:1.2;margin:0}.focusLearnBar #learnNext{min-height:44px;font-size:13px;padding:8px 10px;white-space:nowrap}
+#focusAnswerSheet :focus-visible,#focusMenu :focus-visible,.focusLearnBar :focus-visible{outline:3px solid #087887;outline-offset:3px}
+@media(max-width:560px){body[data-focus-shell="true"] .brand{font-size:21px}body[data-focus-shell="true"] header .stat{padding:2px 4px}body[data-focus-shell="true"] #focusLessonStatus{flex-basis:100%;max-width:none}body[data-focus-mode="true"] .mapTools{padding:4px 5px}#focusAnswerSheet #prompt{font-size:16px;padding-right:112px}#focusSheetToggle{font-size:10px;padding:6px}#focusAnswerSheet #check{min-width:96px;font-size:14px}}
+@media(prefers-contrast:more),(prefers-reduced-transparency:reduce){.focusAnswerSheet,.focusLearnBar{background:#fff9ec;backdrop-filter:none;-webkit-backdrop-filter:none;border:2px solid #745d37}.focusAnswerSheet #answer{border:2px solid #294b41}}
+@media(forced-colors:active){.focusAnswerSheet,.focusLearnBar,.focusMenuPanel{background:Canvas;color:CanvasText;backdrop-filter:none;border:2px solid CanvasText}#focusAnswerSheet #prompt,#focusAnswerSheet #message,#focusAnswerSheet #answer{background:Canvas;color:CanvasText}#focusAnswerSheet #check{background:ButtonFace;color:ButtonText;border:2px solid ButtonText}}
+@media(prefers-reduced-motion:reduce){.focusAnswerSheet,.focusAnswerSheet *,.focusLearnBar,#focusMenu *{animation:none!important;transition:none!important;scroll-behavior:auto!important}}
+@media print{#focusMenu,#focusAnswerSheet,#focusLearnBar,#focusLessonStatus{display:none!important}body[data-focus-mode="true"] .mapCard{position:static;height:auto;display:block}body[data-focus-shell="true"]>header{position:static}}

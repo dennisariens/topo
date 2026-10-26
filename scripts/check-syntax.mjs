@@ -51,6 +51,7 @@ const relief=readFileSync(new URL('../assets/discovery/terrain.webp',import.meta
 if(!atlas||atlas.terrain!=='data:image/webp;base64,'+relief.toString('base64')||createHash('sha256').update(relief).digest('hex')!==atlasManifest.sha256)throw Error('Offline terrain source/hash mismatch');
 console.log('Discovery atlas code, original geometry references and embedded DEM bytes: OK');
 
+for(const f of ['focus-camera.js','focus-mode.js','focus-camera.css','focus-mode.css'])if(!html.includes(readFileSync(new URL(f,import.meta.url),'utf8')))throw Error('Stale Focus source: '+f);
 const mapHit=readFileSync(new URL('./map-hit.js',import.meta.url),'utf8');
 if(!html.includes('// BEGIN MAP HIT\n'+mapHit+'// END MAP HIT'))throw Error('Stale embedded map hit resolver; rebuild');
 console.log('Semantic map hit resolver source/standalone parity: OK');

@@ -1,0 +1,10 @@
+/* Camera geometry belongs on the wrapper, not the clonable source SVG.
+   The Focus layout owner supplies the viewport's available width and height. */
+.focusCameraTools{display:none}
+body[data-focus-mode="true"] .focusCameraTools{display:flex;flex-wrap:wrap;gap:6px;align-items:center}
+body[data-focus-mode="true"] .focusCameraTools button{min-height:44px;padding:8px 12px;border:1px solid #cdd9d5;border-radius:9px;background:#fffefa;color:#345860;font:inherit;font-size:13px;font-weight:700;cursor:pointer}
+body[data-focus-mode="true"] .focusCameraTools button:focus-visible{outline:3px solid #087887;outline-offset:3px}
+body[data-focus-mode="true"] .mapArea.atlasViewport{overflow:auto;overflow-anchor:none;scroll-behavior:auto;overscroll-behavior:contain;touch-action:pan-x pan-y pinch-zoom}
+body[data-focus-mode="true"] .atlasCanvas{position:relative;min-width:100%;min-height:100%;flex:none;overflow-anchor:none}
+body[data-focus-mode="true"] .atlasCanvas>#map{position:absolute;display:block;left:var(--focus-world-left,0px);top:var(--focus-world-top,0px);width:var(--focus-world-width,100%);height:var(--focus-world-height,auto);min-width:0;max-width:none;min-height:0;max-height:none;margin:0;aspect-ratio:890/1235}
+@media print{.focusCameraTools{display:none!important}body[data-focus-mode="true"] .atlasCanvas{width:100%!important;height:auto!important;min-height:0}body[data-focus-mode="true"] .atlasCanvas>#map{position:static;width:100%;height:auto}}

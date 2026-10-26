@@ -10,6 +10,7 @@ execFileSync(process.execPath, [resolve(root, 'scripts/embed-schoolblad.mjs')], 
 execFileSync(process.execPath, [resolve(root, 'scripts/embed-nino-art.mjs')], { stdio: 'inherit' });
 execFileSync(process.execPath, [resolve(root, 'scripts/geography/generate-lakes.mjs')], { stdio: 'inherit' });
 execFileSync(process.execPath, [resolve(root, 'scripts/embed-discovery-map.mjs')], { stdio: 'inherit' });
+execFileSync(process.execPath, [resolve(root, 'scripts/embed-focus-mode.mjs')], { stdio: 'inherit' });
 execFileSync(process.execPath, [resolve(root, 'scripts/generate-preview.mjs')], { stdio: 'inherit' });
 execFileSync(process.execPath, [resolve(root, 'scripts/generate-print.mjs')], { stdio: 'inherit' });
 execFileSync(process.execPath, [resolve(root, 'scripts/package-standalone.mjs')], { stdio: 'inherit' });

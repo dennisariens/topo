@@ -1,0 +1,5 @@
+
+> topo-italie-baseline@0.1.0 qa:focus
+> node scripts/qa-focus-mode.mjs
+
+Focus: 7 viewports, simulated IME, rotation/caret, actual canonical submission, theme coordinates, overview/chapter, schoolblad, route and offline PASS

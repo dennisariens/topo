@@ -1,6 +1,10 @@
 # Project state
 
-## Current P0: iPad Focus Mode — stacked on independently verified PR #39
+## Current P0: functional iPad update — PR #47
+
+`fix/afternoon-ipad-blockers-20261026` is stacked on exact PR40 `71b33fd`. Apennines now use18 sourced mountain anchors and the unchanged registered DEM, with a connected mainland educational corridor and0% filled-area leakage (PR40:19.62%). Only area-c.shape changes; other44 items/27 anchors/6 lakes stay exact. All45 disables chapter zoom with an explanation; Heel Italië/Zoom op hoofdstuk/Kaartstijl are clear, settings/printing secondary. Actual gates found/fixed stale print artifacts and an observer-loop in chapter disabling. Both offline HTMLs,35-page PDF,17-program chain,7-viewport Focus browser suite,64 existing semantic taps and32 Apennines/offshore taps are verified. See [AFTERNOON_IPAD_BETA_2026-10-26.md](AFTERNOON_IPAD_BETA_2026-10-26.md) for raw evidence/source limits/server8033 instructions. Final independent exact-SHA verdict belongs in PR47 comments; physical Safari remains PENDING. Existing server/test clone untouched. No art/passport/new rewards, merge or production deployment.
+
+## Previous P0: iPad Focus Mode — stacked on independently verified PR #39
 
 `hermes/topo-ipad-focus-mode` starts at exact `fc8f5be4dc77c8b1adb71aae3931a1c134389cf5` and targets `codex/topo-semantic-map-hotfix`, without editing PR #30/#39. Compact/tablet view removes the permanent sidebar, reparents the original quiz/input/check into a keyboard-safe Frosted Parchment sheet, keeps native navigation/controls in explicit Menu, and adds full/chapter camera controls over the one unchanged SVG. Seven responsive/keyboard-simulation viewports and independent integrated semantic probes pass; a genuinely played first stop reaches Gold/three pizzas/one trip. Seventeen test programs, build/lint/source audit pass. Original semantic resolver, engines, art, geography, schoolblad and exports remain protected. **CONDITIONAL**: physical iPad Safari/IME/VoiceOver and the approval-blocked inherited browser-hotfix harness rerun are still pending. See [FOCUS_MODE.md](FOCUS_MODE.md) for evidence, exact limits and owner device procedure. No merge/deployment; #35 illustration polish waits.
 

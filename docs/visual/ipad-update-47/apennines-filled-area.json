@@ -1,0 +1,43 @@
+{
+  "baseline": "71b33fd973c7b650c63e7921af3e7bf6aab5f79f",
+  "tiles_verified": 63,
+  "projection": "x=55*lon-225.5; y=3830.75-77*lat",
+  "units": "SVG projected square units, not geodesic km2",
+  "polygons": {
+    "before": {
+      "valid": true,
+      "connected": true,
+      "area": 15897.484375,
+      "outsideMainlandArea": 3119.0425105320396,
+      "outsidePercent": 19.619723705701325,
+      "bounds": [
+        305.0,
+        415.0,
+        660.0,
+        875.0
+      ],
+      "centroid": [
+        509.62786139187864,
+        616.1017613831885
+      ]
+    },
+    "current": {
+      "valid": true,
+      "connected": true,
+      "area": 15657.412000000057,
+      "outsideMainlandArea": 0.0,
+      "outsidePercent": 0.0,
+      "bounds": [
+        224.0,
+        389.0,
+        689.0,
+        903.0
+      ],
+      "centroid": [
+        511.5078115595769,
+        596.9199506851232
+      ]
+    }
+  },
+  "other44_records_exact": true
+}

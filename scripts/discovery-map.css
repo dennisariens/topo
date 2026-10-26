@@ -33,3 +33,8 @@ body[data-map-assessment="true"] .atlasTerrain{display:none}body[data-map-assess
 @media(prefers-reduced-motion:reduce){.atlasOptions *,.atlasViewport,.atlasViewport *,.atlasCanvas{animation:none!important;transition:none!important;scroll-behavior:auto!important}}
 @media(prefers-contrast:more){.atlasWaterTexture,.atlasScenery{display:none!important}body>header{background-image:none!important}.atlasTerrain{opacity:.35!important}}
 @media print{.atlasOptions,.atlasZoom{display:none!important}.atlasTerrain,.atlasWaterTexture{display:none!important}.mapArea.atlasViewport{width:100%;max-width:none;aspect-ratio:auto;overflow:visible}.atlasCanvas{width:100%!important}.mapCard:after{display:none!important}}
+
+/* Local icon and label are aligned together; the arrow remains independent. */
+.atlasOptions summary{display:inline-flex;align-items:center;justify-content:center;gap:7px;vertical-align:middle}
+.atlasOptions summary .atlasStyleIcon{width:19px;height:19px;flex:0 0 19px;display:block;stroke-linejoin:round}
+.atlasOptions summary:after{margin-left:3px}

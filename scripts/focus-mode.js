@@ -3,7 +3,7 @@ function setupFocusMode(){
  const $id=id=>document.getElementById(id),map=$id('map'),area=map?.closest('.mapArea'),layout=document.querySelector('.layout'),quiz=$id('quiz');
  if(!area||!quiz)return;
  const slots=new Map(),park=(node,parent)=>{if(!node||node.parentElement===parent)return;if(!slots.has(node)){const marker=document.createComment('focus-return');node.before(marker);slots.set(node,marker)}parent.append(node);},restore=()=>{for(const[n,m]of slots)if(m.parentNode&&n.parentNode!==m.parentNode)m.after(n);};
- const menu=document.createElement('details');menu.id='focusMenu';menu.innerHTML='<summary>☰ Menu</summary><div class="focusMenuPanel"><strong>Jouw oefening</strong></div>';const menuPanel=menu.lastElementChild;document.body.append(menu);
+ const menu=document.createElement('details');menu.id='focusMenu';menu.innerHTML='<summary>☰ Menu</summary><div class="focusMenuPanel"><strong>Oefenen en toetsen</strong><div class="focusMenuSettings"><details><summary>Instellingen en meer</summary><div class="focusMenuSettingsContents"></div></details></div></div>';const menuPanel=menu.lastElementChild;document.body.append(menu);
  const sheet=document.createElement('section');sheet.id='focusAnswerSheet';sheet.className='focusAnswerSheet';sheet.setAttribute('aria-label','Huidige opdracht');sheet.hidden=true;
  const toggle=document.createElement('button');toggle.id='focusSheetToggle';toggle.type='button';toggle.textContent='Kaart vrijmaken';toggle.setAttribute('aria-expanded','true');sheet.append(toggle);document.body.append(sheet);
  const learnBar=document.createElement('section');learnBar.id='focusLearnBar';learnBar.setAttribute('aria-label','Plek ontdekken');learnBar.hidden=true;document.body.append(learnBar);
@@ -14,7 +14,7 @@ function setupFocusMode(){
  function caret(){return document.activeElement===input?{start:input.selectionStart,end:input.selectionEnd,direction:input.selectionDirection}:null;}
  let moveCaret=null;
  function preserveMove(fn){const c=caret();fn();if(c)moveCaret=c;}
- function shell(on){if(on===parked)return;preserveMove(()=>{if(on){park(quiz,sheet);for(const n of[document.querySelector('nav.tabs'),$id('groupPicker'),$id('testSetup'),$id('nameToggleWrap'),$id('printMap'),$id('reveal'),$id('mistakes'),document.querySelector('footer.backupTools')])park(n,menuPanel);park($id('learnPrompt'),learnBar);park($id('learnNext'),learnBar);}else restore();});parked=on;menu.hidden=!on;}
+ function shell(on){if(on===parked)return;preserveMove(()=>{if(on){park(quiz,sheet);for(const n of[document.querySelector('nav.tabs'),$id('groupPicker'),$id('testSetup'),$id('nameToggleWrap'),$id('printMap'),$id('reveal'),$id('mistakes'),document.querySelector('footer.backupTools')])park(n,n?.matches('footer.backupTools,#printMap')?menuPanel.querySelector('.focusMenuSettingsContents'):menuPanel);menuPanel.append(menuPanel.querySelector('.focusMenuSettings'));park($id('learnPrompt'),learnBar);park($id('learnNext'),learnBar);}else restore();});parked=on;menu.hidden=!on;}
  function viewport(){const v=window.visualViewport;return {left:v?.offsetLeft||0,top:v?.offsetTop||0,width:v?.width||innerWidth,height:v?.height||innerHeight,scale:v?.scale||1};}
  function position(){
   scheduled=0;if(!active)return;const v=viewport(),cs=getComputedStyle(safe),bottom=parseFloat(cs.paddingBottom)||0,top=parseFloat(cs.paddingTop)||0;

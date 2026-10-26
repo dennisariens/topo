@@ -1,3 +1,4 @@
+import{assertPreserved,restoreApprovedArea}from'./ipad-update-source.mjs';
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import{readFileSync}from'node:fs';
@@ -9,7 +10,7 @@ const html=read('index.html').toString(),baseline=execFileSync('git',['show','f6
 function boot(){const errors=[],vc=new VirtualConsole();vc.on('jsdomError',e=>errors.push(e.message));const dom=new JSDOM(html,{url:'https://hit.test',runScripts:'dangerously',virtualConsole:vc,beforeParse(w){w.HTMLElement.prototype.scrollIntoView=()=>{};w.confirm=()=>true;w.HTMLDialogElement.prototype.showModal=function(){this.open=true};w.HTMLDialogElement.prototype.close=function(){this.open=false}}});const w=dom.window;return{w,d:w.document,ev:s=>w.eval(s),errors,close:()=>w.close()}}
 test('the only canonical app delta is the bounded resolver; engines, geography, schoolblad and atlas remain exact',()=>{
  assert.equal(restoreLegacyMapHit(html,baseline),baseline);
- for(const path of['scripts/learning-engine.js','scripts/route-engine.js','scripts/schoolblad.js','scripts/schoolblad.css','scripts/discovery-map.js','scripts/discovery-map.css','assets/discovery/terrain.webp','geography/lakes/projected-manifest.json','print.html','output/pdf/topo-italie-printboek.pdf','package-lock.json'])assert.deepEqual(read(path),execFileSync('git',['show','f67027d:'+path],{cwd:root,maxBuffer:32e6}),path);
+ for(const path of['scripts/learning-engine.js','scripts/route-engine.js','scripts/schoolblad.js','scripts/schoolblad.css','scripts/discovery-map.js','scripts/discovery-map.css','assets/discovery/terrain.webp','geography/lakes/projected-manifest.json','print.html','output/pdf/topo-italie-printboek.pdf','package-lock.json'])assertPreserved(path,read(path),execFileSync('git',['show','f67027d:'+path],{cwd:root,maxBuffer:32e6}));
  assert(html.includes(read('scripts/map-hit.js')));
  for(const path of['output/html/topo-italie-interactief.html','output/html/topo-italie-duolingo.html'])assert.equal(read(path).toString(),html);
 });

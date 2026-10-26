@@ -1,7 +1,7 @@
 {
   "project": "Topo / Nino",
   "release": "2026-10-26 V2 studio source handoff",
-  "quality_gate": "SOURCE_READY / DERIVATIVE_QA_REQUIRED",
+  "quality_gate": "PARTIAL_QA_PASS / ISOLE_AND_OPEN_BOOK_REWORK",
   "source_branch": "art/nino-travel-stamps-v2-20261026",
   "production_rules": [
     "Masters are byte-perfect preserved original AI renders and may contain embedded off-white or checkerboard.",
@@ -23,7 +23,15 @@
       "source_sha256": "cb1bd16d983ac570c727eeab31f6dbce2392af2a6dc55c14418908835ad5ae56",
       "notes": [],
       "approved_visual_design": true,
-      "production_alpha_approved": false
+      "production_alpha_approved": true,
+      "independent_qa": {
+        "source_revision": "367b875c83a4e8b77c1f1d09523c20c96364f178",
+        "verdict": "PASS",
+        "scope": "Ink derivative on warm paper only; live caption at thumbnail sizes; detail >=160 CSS px. Not original-master alpha approval.",
+        "evidence": "docs/qa/artwork-45/README.md"
+      },
+      "production_export": "assets/nino/travel-passport/stamps/exports/stamp-01-firenze.webp",
+      "production_sha256": "de4d32cf277a806fad8fc343451f574ef7a9d0a482cc2b8bb7e5c24c3fc47125"
     },
     {
       "chapter": 2,
@@ -39,7 +47,15 @@
         "SOURCE_HAS_EMBEDDED_BACKGROUND: independent alpha review required"
       ],
       "approved_visual_design": true,
-      "production_alpha_approved": false
+      "production_alpha_approved": true,
+      "independent_qa": {
+        "source_revision": "367b875c83a4e8b77c1f1d09523c20c96364f178",
+        "verdict": "PASS",
+        "scope": "Ink derivative on warm paper only; live caption at thumbnail sizes; detail >=160 CSS px. Not original-master alpha approval.",
+        "evidence": "docs/qa/artwork-45/README.md"
+      },
+      "production_export": "assets/nino/travel-passport/stamps/exports/stamp-02-roma.webp",
+      "production_sha256": "b34ff0780ebd442080f53d79c13d63bb89d45cb4ad961ec582a902758fec8628"
     },
     {
       "chapter": 3,
@@ -53,7 +69,15 @@
       "source_sha256": "d00d7e3fd8aa88dac971c204959a1d21b8986a15b14b8247da7c4a8bb36b6ab1",
       "notes": [],
       "approved_visual_design": true,
-      "production_alpha_approved": false
+      "production_alpha_approved": true,
+      "independent_qa": {
+        "source_revision": "367b875c83a4e8b77c1f1d09523c20c96364f178",
+        "verdict": "PASS",
+        "scope": "Ink derivative on warm paper only; live caption at thumbnail sizes; detail >=160 CSS px. Not original-master alpha approval.",
+        "evidence": "docs/qa/artwork-45/README.md"
+      },
+      "production_export": "assets/nino/travel-passport/stamps/exports/stamp-03-borghi.webp",
+      "production_sha256": "b00fb30fc5ebfedcdec8970fa78bbba48b6d1b52288d5aa440a85dd6b9dfcae5"
     },
     {
       "chapter": 4,
@@ -67,7 +91,15 @@
       "source_sha256": "ddcb8076932f0259ccfa61af8b4ca7836b407fa49973560f4a89b0833ee8fdf4",
       "notes": [],
       "approved_visual_design": true,
-      "production_alpha_approved": false
+      "production_alpha_approved": true,
+      "independent_qa": {
+        "source_revision": "367b875c83a4e8b77c1f1d09523c20c96364f178",
+        "verdict": "PASS",
+        "scope": "Ink derivative on warm paper only; live caption at thumbnail sizes; detail >=160 CSS px. Not original-master alpha approval.",
+        "evidence": "docs/qa/artwork-45/README.md"
+      },
+      "production_export": "assets/nino/travel-passport/stamps/exports/stamp-04-liguria.webp",
+      "production_sha256": "b7cf9eeb47dd88028ce8da8789fd6f042c0998df182b43bd4996453148dc4fac"
     },
     {
       "chapter": 5,
@@ -83,7 +115,14 @@
         "geographic silhouette against school map required"
       ],
       "approved_visual_design": true,
-      "production_alpha_approved": false
+      "production_alpha_approved": false,
+      "independent_qa": {
+        "source_revision": "367b875c83a4e8b77c1f1d09523c20c96364f178",
+        "verdict": "REWORK",
+        "scope": "Ink derivative on warm paper only; live caption at thumbnail sizes; detail >=160 CSS px. Not original-master alpha approval.",
+        "evidence": "docs/qa/artwork-45/README.md",
+        "reason": "Sicily/Sardinia almost side-by-side; canonical geography requires pronounced southeast offset. Do not ship this stamp."
+      }
     },
     {
       "chapter": 6,
@@ -97,7 +136,15 @@
       "source_sha256": "aad87d7b6c7eddfcd9b1996301f714da19421e6005c449b847b7fa9a957a16cf",
       "notes": [],
       "approved_visual_design": true,
-      "production_alpha_approved": false
+      "production_alpha_approved": true,
+      "independent_qa": {
+        "source_revision": "367b875c83a4e8b77c1f1d09523c20c96364f178",
+        "verdict": "PASS",
+        "scope": "Ink derivative on warm paper only; live caption at thumbnail sizes; detail >=160 CSS px. Not original-master alpha approval.",
+        "evidence": "docs/qa/artwork-45/README.md"
+      },
+      "production_export": "assets/nino/travel-passport/stamps/exports/stamp-06-dolomiti.webp",
+      "production_sha256": "4d989d4b6147acd3b43ff11ee068123eea643ec5d2cc530d7fa3826dd4430c98"
     },
     {
       "chapter": 7,
@@ -111,7 +158,15 @@
       "source_sha256": "443d97af3411e56c139e6e6397ba9a474748c227e4325006820cc0d6dd0957b4",
       "notes": [],
       "approved_visual_design": true,
-      "production_alpha_approved": false
+      "production_alpha_approved": true,
+      "independent_qa": {
+        "source_revision": "367b875c83a4e8b77c1f1d09523c20c96364f178",
+        "verdict": "PASS",
+        "scope": "Ink derivative on warm paper only; live caption at thumbnail sizes; detail >=160 CSS px. Not original-master alpha approval.",
+        "evidence": "docs/qa/artwork-45/README.md"
+      },
+      "production_export": "assets/nino/travel-passport/stamps/exports/stamp-07-etna.webp",
+      "production_sha256": "1794a3ee574294278b5147aefd069d0904d6d356c3e350cac56f302c497c1a6f"
     },
     {
       "chapter": 8,
@@ -127,7 +182,15 @@
         "SOURCE_HAS_EMBEDDED_BACKGROUND: independent alpha review required"
       ],
       "approved_visual_design": true,
-      "production_alpha_approved": false
+      "production_alpha_approved": true,
+      "independent_qa": {
+        "source_revision": "367b875c83a4e8b77c1f1d09523c20c96364f178",
+        "verdict": "PASS",
+        "scope": "Ink derivative on warm paper only; live caption at thumbnail sizes; detail >=160 CSS px. Not original-master alpha approval.",
+        "evidence": "docs/qa/artwork-45/README.md"
+      },
+      "production_export": "assets/nino/travel-passport/stamps/exports/stamp-08-toscana.webp",
+      "production_sha256": "042bd1d301006582b6d91b98ae3132b81a8fb40cbc7a69aaac936fee62f82403"
     },
     {
       "chapter": 9,
@@ -144,7 +207,15 @@
         "source contains baked-in checkerboard; verify alpha reconstruction"
       ],
       "approved_visual_design": true,
-      "production_alpha_approved": false
+      "production_alpha_approved": true,
+      "independent_qa": {
+        "source_revision": "367b875c83a4e8b77c1f1d09523c20c96364f178",
+        "verdict": "PASS",
+        "scope": "Ink derivative on warm paper only; live caption at thumbnail sizes; detail >=160 CSS px. Not original-master alpha approval.",
+        "evidence": "docs/qa/artwork-45/README.md"
+      },
+      "production_export": "assets/nino/travel-passport/stamps/exports/stamp-09-confine-italia.webp",
+      "production_sha256": "9032c4ff1ec9083b8ddf4a5dc4107e448d9578675fec4ab62221dc13310d38cf"
     },
     {
       "chapter": 10,
@@ -158,7 +229,15 @@
       "source_sha256": "9dc89b2b82a018c830991aeace67d296990397b3bc61793292827cca08ba3249",
       "notes": [],
       "approved_visual_design": true,
-      "production_alpha_approved": false
+      "production_alpha_approved": true,
+      "independent_qa": {
+        "source_revision": "367b875c83a4e8b77c1f1d09523c20c96364f178",
+        "verdict": "PASS",
+        "scope": "Ink derivative on warm paper only; live caption at thumbnail sizes; detail >=160 CSS px. Not original-master alpha approval.",
+        "evidence": "docs/qa/artwork-45/README.md"
+      },
+      "production_export": "assets/nino/travel-passport/stamps/exports/stamp-10-mari.webp",
+      "production_sha256": "686b3f091f933dcec54a9710405af24236bf8921cdeca316cd7403c806a0e34f"
     },
     {
       "chapter": 11,
@@ -172,7 +251,15 @@
       "source_sha256": "d79bc297171fabbf426968d36d7c1193b9adde65033a1b26fe84ccae158df06e",
       "notes": [],
       "approved_visual_design": true,
-      "production_alpha_approved": false
+      "production_alpha_approved": true,
+      "independent_qa": {
+        "source_revision": "367b875c83a4e8b77c1f1d09523c20c96364f178",
+        "verdict": "PASS",
+        "scope": "Ink derivative on warm paper only; live caption at thumbnail sizes; detail >=160 CSS px. Not original-master alpha approval.",
+        "evidence": "docs/qa/artwork-45/README.md"
+      },
+      "production_export": "assets/nino/travel-passport/stamps/exports/stamp-11-fiumi.webp",
+      "production_sha256": "063a643d0d16436e0be7fdacd39316d0bf1bd99427137bf284c027b0610b63b7"
     }
   ],
   "book": [
@@ -186,7 +273,14 @@
         1254
       ],
       "sha256": "3d1c0e1978373d2a21b0072baa3f342375641341635fc7f9f06e5721ff58f1b9",
-      "note": "source artwork: dynamic profile and stamps must be separate overlays"
+      "note": "source artwork: dynamic profile and stamps must be separate overlays",
+      "independent_qa": {
+        "source_revision": "367b875c83a4e8b77c1f1d09523c20c96364f178",
+        "verdict": "PASS",
+        "evidence": "docs/qa/artwork-45/README.md"
+      },
+      "production_export": "assets/nino/travel-passport/book/exports/passport-closed-cover.webp",
+      "production_sha256": "8901f57c74feb6d81fea23cb7b216ef403b982e8bdf66f1c89ea83eca15add44"
     },
     {
       "name": "passport-open-book",
@@ -198,7 +292,18 @@
         992
       ],
       "sha256": "94f5d286e502b81ee156ae0923132f22dc8475f474f44709087e83662e032b8d",
-      "note": "source artwork: dynamic profile and stamps must be separate overlays"
+      "note": "source artwork: dynamic profile and stamps must be separate overlays",
+      "independent_qa": {
+        "source_revision": "367b875c83a4e8b77c1f1d09523c20c96364f178",
+        "verdict": "REWORK",
+        "evidence": "docs/qa/artwork-45/README.md",
+        "reason": "Baked circular cancellation/postmark with illegible text beside profile frame; needs blank/no-postmark source before earned-state background approval."
+      }
     }
-  ]
+  ],
+  "independent_qa": {
+    "source_revision": "367b875c83a4e8b77c1f1d09523c20c96364f178",
+    "quality_gate": "SAFE_SUBSET_ONLY; ISOLE_AND_OPEN_BOOK_REWORK",
+    "report": "docs/qa/artwork-45/README.md"
+  }
 }

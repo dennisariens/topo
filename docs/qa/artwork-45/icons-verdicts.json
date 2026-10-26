@@ -1,0 +1,1129 @@
+{
+  "revision": "367b875c83a4e8b77c1f1d09523c20c96364f178",
+  "manifest_sha256": "83b307192b1a327c02bc41bebfa9dca4a071946e88834d2244175225f65e771a",
+  "audit_type": "Independent bounded visual QA, not export approval ledger or implementation approval",
+  "verdict_definition": "PASS means existing art is acceptable for the constrained labelled UI uses below; not standalone semantic identification, source restoration, geography certification or native-size master approval.",
+  "inspection": {
+    "tool": "vision_analyze",
+    "boards": [
+      "icons-sizes-warm.png",
+      "icons-sizes-dark.png",
+      "icons-sizes-checker.png",
+      "icons-overview-01-06.png",
+      "icons-overview-07-11.png",
+      "icons-native-details.png"
+    ],
+    "coverage": "All 11 masters and all 11 exports at 32/48/64/96 on each background. Full boards initially downscaled by tool; all size boards subsequently re-inspected as upper/lower crops at native display resolution. Larger paired 256px views and native sea-edge/country-sign details also inspected.",
+    "sample_count": 264,
+    "backgrounds": {
+      "warm": "#f5ead6",
+      "dark": "#17252b",
+      "checker": [
+        "#eeeeee",
+        "#b9b9b9"
+      ]
+    },
+    "resampler": "Pillow LANCZOS; PNG downsized directly from 1254, export downsized from existing 512 WebP; not browser/device screenshots."
+  },
+  "common_findings": [
+    "No visible export-specific silhouette/color shift, objectionable compression block, opaque rectangular matte or unintended broad alpha halo in the reviewed renders. Cream circular rim is present in masters and is intentional artwork, not a newly introduced export halo.",
+    "All 22 actual asset hashes match the manifest; masters are 1254x1254 RGBA PNG, exports 512x512 RGBA WebP. No embedded ICC profiles; do not claim independently verified sRGB conversion.",
+    "Exports 05/06/08/09/11 have outer-edge alpha at most 4 from resampling; not visibly objectionable. Sea 10 has genuine native left-edge contact, separately documented.",
+    "All icons require adjacent readable live UI labels. Do not bake labels into the images or depend on small country-sign text. Icons are supporting chapter artwork, not exact category/item maps."
+  ],
+  "limitations": [
+    "Upstream pre-cleanup original source files are not provided by the supplied manifest paths; source_sha256 is retained as an unverified upstream claim separately from verified PNG master hash.",
+    "This audit does not check UI integration, accessible text implementation, device/browser resampling, color-managed display equivalence or legal provenance. Parent owns full ledger, export approval and status metadata."
+  ],
+  "icons": [
+    {
+      "id": "01-steden-1-6",
+      "title": "Florence V2",
+      "verdict": "PASS",
+      "reasons": [
+        "Dome and tower give a strong city/architecture silhouette; red dome survives 32px. Fine roof detail merges but does not undermine category.",
+        "Independent comparison of master/export across warm, dark and checker found no additional small-size defect requiring regeneration."
+      ],
+      "source_path": "assets/nino/chapter-icons/masters/chapter-01-steden-1-6.png",
+      "source_sha256": "3e0deb011d7cf6f92681e126365119ac55f593318da12fd3f69c6c4b42194737",
+      "export_path": "assets/nino/chapter-icons/exports/chapter-01-steden-1-6.webp",
+      "export_sha256": "337e02ba2c1ecb909d9e1f9921070492e575c64e6f255733b5837c817fa42c11",
+      "upstream_source_sha256_unverified": "068b44b726c77d3d72f6689733c3ba2d69b0c9ee153146ddd2b87b8c54ba89d2",
+      "technical": {
+        "master": {
+          "path": "assets/nino/chapter-icons/masters/chapter-01-steden-1-6.png",
+          "sha256": "3e0deb011d7cf6f92681e126365119ac55f593318da12fd3f69c6c4b42194737",
+          "manifest_sha256": "3e0deb011d7cf6f92681e126365119ac55f593318da12fd3f69c6c4b42194737",
+          "hash_matches": true,
+          "mode": "RGBA",
+          "dimensions": [
+            1254,
+            1254
+          ],
+          "format": "PNG",
+          "icc_profile_bytes": 0,
+          "icc_profile_name": null,
+          "srgb_chunk": null,
+          "gamma": null,
+          "alpha_bbox": [
+            13,
+            10,
+            1227,
+            1204
+          ],
+          "alpha_min": 0,
+          "alpha_max": 255,
+          "alpha_1_15_pixels": 0,
+          "nonzero_outer_edge_pixels": 0,
+          "outer_edge_alpha_max": 0,
+          "outer_edge_alpha_16_plus_pixels": 0,
+          "technical_pass": true
+        },
+        "export": {
+          "path": "assets/nino/chapter-icons/exports/chapter-01-steden-1-6.webp",
+          "sha256": "337e02ba2c1ecb909d9e1f9921070492e575c64e6f255733b5837c817fa42c11",
+          "manifest_sha256": "337e02ba2c1ecb909d9e1f9921070492e575c64e6f255733b5837c817fa42c11",
+          "hash_matches": true,
+          "mode": "RGBA",
+          "dimensions": [
+            512,
+            512
+          ],
+          "format": "WEBP",
+          "icc_profile_bytes": 0,
+          "icc_profile_name": null,
+          "srgb_chunk": null,
+          "gamma": null,
+          "alpha_bbox": [
+            3,
+            2,
+            503,
+            494
+          ],
+          "alpha_min": 0,
+          "alpha_max": 255,
+          "alpha_1_15_pixels": 1755,
+          "nonzero_outer_edge_pixels": 0,
+          "outer_edge_alpha_max": 0,
+          "outer_edge_alpha_16_plus_pixels": 0,
+          "technical_pass": true
+        }
+      },
+      "approved_size_usage": {
+        "css_px": [
+          32,
+          48,
+          64,
+          96
+        ],
+        "32px": "Supporting/decorative thumbnail with adjacent live category/chapter label only; not a standalone identifier. Dense scenes lose fine detail.",
+        "48_64_96px": "City architecture at all tested sizes; not an identifier for every city in its worksheet group.",
+        "live_ui_label_required": true,
+        "baked_words_required_to_read": false,
+        "backgrounds": [
+          "warm",
+          "dark",
+          "checker"
+        ],
+        "larger_than_96px": "Not approved by this bounded small-size QA."
+      },
+      "production_source_recommendation": {
+        "recommended": true,
+        "path": "assets/nino/chapter-icons/exports/chapter-01-steden-1-6.webp",
+        "sha256": "337e02ba2c1ecb909d9e1f9921070492e575c64e6f255733b5837c817fa42c11",
+        "condition": "Use existing verified 512 WebP as source only for reviewed labelled 32/48/64/96 CSS-px usage; parent retains integration/export approval."
+      }
+    },
+    {
+      "id": "02-steden-7-12",
+      "title": "Colosseum",
+      "verdict": "PASS",
+      "reasons": [
+        "Colosseum mass and stacked arches remain recognizable; arches soften at 32px without export-specific damage.",
+        "Independent comparison of master/export across warm, dark and checker found no additional small-size defect requiring regeneration."
+      ],
+      "source_path": "assets/nino/chapter-icons/masters/chapter-02-steden-7-12.png",
+      "source_sha256": "8cb987e0096b2093f3fe7d83b32444c233e0ea515b4c126852450517ac5c14cf",
+      "export_path": "assets/nino/chapter-icons/exports/chapter-02-steden-7-12.webp",
+      "export_sha256": "f9c76c2c0926d31838abc82063a4e866546e0c5b49c4c75cf68ac3d1fb739589",
+      "upstream_source_sha256_unverified": "db80571814e17124cbd3aca4d104817dfaf5b32db19d9f31c359308217984003",
+      "technical": {
+        "master": {
+          "path": "assets/nino/chapter-icons/masters/chapter-02-steden-7-12.png",
+          "sha256": "8cb987e0096b2093f3fe7d83b32444c233e0ea515b4c126852450517ac5c14cf",
+          "manifest_sha256": "8cb987e0096b2093f3fe7d83b32444c233e0ea515b4c126852450517ac5c14cf",
+          "hash_matches": true,
+          "mode": "RGBA",
+          "dimensions": [
+            1254,
+            1254
+          ],
+          "format": "PNG",
+          "icc_profile_bytes": 0,
+          "icc_profile_name": null,
+          "srgb_chunk": null,
+          "gamma": null,
+          "alpha_bbox": [
+            8,
+            9,
+            1236,
+            1210
+          ],
+          "alpha_min": 0,
+          "alpha_max": 255,
+          "alpha_1_15_pixels": 0,
+          "nonzero_outer_edge_pixels": 0,
+          "outer_edge_alpha_max": 0,
+          "outer_edge_alpha_16_plus_pixels": 0,
+          "technical_pass": true
+        },
+        "export": {
+          "path": "assets/nino/chapter-icons/exports/chapter-02-steden-7-12.webp",
+          "sha256": "f9c76c2c0926d31838abc82063a4e866546e0c5b49c4c75cf68ac3d1fb739589",
+          "manifest_sha256": "f9c76c2c0926d31838abc82063a4e866546e0c5b49c4c75cf68ac3d1fb739589",
+          "hash_matches": true,
+          "mode": "RGBA",
+          "dimensions": [
+            512,
+            512
+          ],
+          "format": "WEBP",
+          "icc_profile_bytes": 0,
+          "icc_profile_name": null,
+          "srgb_chunk": null,
+          "gamma": null,
+          "alpha_bbox": [
+            1,
+            1,
+            507,
+            497
+          ],
+          "alpha_min": 0,
+          "alpha_max": 255,
+          "alpha_1_15_pixels": 1762,
+          "nonzero_outer_edge_pixels": 0,
+          "outer_edge_alpha_max": 0,
+          "outer_edge_alpha_16_plus_pixels": 0,
+          "technical_pass": true
+        }
+      },
+      "approved_size_usage": {
+        "css_px": [
+          32,
+          48,
+          64,
+          96
+        ],
+        "32px": "Supporting/decorative thumbnail with adjacent live category/chapter label only; not a standalone identifier. Dense scenes lose fine detail.",
+        "48_64_96px": "City/monument category; 48px or larger preferred for the arches.",
+        "live_ui_label_required": true,
+        "baked_words_required_to_read": false,
+        "backgrounds": [
+          "warm",
+          "dark",
+          "checker"
+        ],
+        "larger_than_96px": "Not approved by this bounded small-size QA."
+      },
+      "production_source_recommendation": {
+        "recommended": true,
+        "path": "assets/nino/chapter-icons/exports/chapter-02-steden-7-12.webp",
+        "sha256": "f9c76c2c0926d31838abc82063a4e866546e0c5b49c4c75cf68ac3d1fb739589",
+        "condition": "Use existing verified 512 WebP as source only for reviewed labelled 32/48/64/96 CSS-px usage; parent retains integration/export approval."
+      }
+    },
+    {
+      "id": "03-extra-steden-13-18",
+      "title": "Toscaanse torens",
+      "verdict": "PASS",
+      "reasons": [
+        "Vertical tower cluster reads as town at 48-96px. At 32px dense foliage competes with the small towers; visually distinct from the dome/arena but not a unique city-group identifier.",
+        "Independent comparison of master/export across warm, dark and checker found no additional small-size defect requiring regeneration."
+      ],
+      "source_path": "assets/nino/chapter-icons/masters/chapter-03-extra-steden-13-18.png",
+      "source_sha256": "3c739c4232d69f436604159250bd332528905b87ed0a2bb9f721755be2138325",
+      "export_path": "assets/nino/chapter-icons/exports/chapter-03-extra-steden-13-18.webp",
+      "export_sha256": "1801146a77b15f4e7b57b3e8a543244b55e37f828b57f02bf83dd1636f034b63",
+      "upstream_source_sha256_unverified": "862ad9198e2a8486fdf922a4f9a0c163d319b07a258f57b194ba43217a449547",
+      "technical": {
+        "master": {
+          "path": "assets/nino/chapter-icons/masters/chapter-03-extra-steden-13-18.png",
+          "sha256": "3c739c4232d69f436604159250bd332528905b87ed0a2bb9f721755be2138325",
+          "manifest_sha256": "3c739c4232d69f436604159250bd332528905b87ed0a2bb9f721755be2138325",
+          "hash_matches": true,
+          "mode": "RGBA",
+          "dimensions": [
+            1254,
+            1254
+          ],
+          "format": "PNG",
+          "icc_profile_bytes": 0,
+          "icc_profile_name": null,
+          "srgb_chunk": null,
+          "gamma": null,
+          "alpha_bbox": [
+            11,
+            10,
+            1230,
+            1210
+          ],
+          "alpha_min": 0,
+          "alpha_max": 255,
+          "alpha_1_15_pixels": 0,
+          "nonzero_outer_edge_pixels": 0,
+          "outer_edge_alpha_max": 0,
+          "outer_edge_alpha_16_plus_pixels": 0,
+          "technical_pass": true
+        },
+        "export": {
+          "path": "assets/nino/chapter-icons/exports/chapter-03-extra-steden-13-18.webp",
+          "sha256": "1801146a77b15f4e7b57b3e8a543244b55e37f828b57f02bf83dd1636f034b63",
+          "manifest_sha256": "1801146a77b15f4e7b57b3e8a543244b55e37f828b57f02bf83dd1636f034b63",
+          "hash_matches": true,
+          "mode": "RGBA",
+          "dimensions": [
+            512,
+            512
+          ],
+          "format": "WEBP",
+          "icc_profile_bytes": 0,
+          "icc_profile_name": null,
+          "srgb_chunk": null,
+          "gamma": null,
+          "alpha_bbox": [
+            2,
+            2,
+            505,
+            496
+          ],
+          "alpha_min": 0,
+          "alpha_max": 255,
+          "alpha_1_15_pixels": 1734,
+          "nonzero_outer_edge_pixels": 0,
+          "outer_edge_alpha_max": 0,
+          "outer_edge_alpha_16_plus_pixels": 0,
+          "technical_pass": true
+        }
+      },
+      "approved_size_usage": {
+        "css_px": [
+          32,
+          48,
+          64,
+          96
+        ],
+        "32px": "Supporting/decorative thumbnail with adjacent live category/chapter label only; not a standalone identifier. Dense scenes lose fine detail.",
+        "48_64_96px": "Town category with label; prefer 64-96px for tower detail.",
+        "live_ui_label_required": true,
+        "baked_words_required_to_read": false,
+        "backgrounds": [
+          "warm",
+          "dark",
+          "checker"
+        ],
+        "larger_than_96px": "Not approved by this bounded small-size QA."
+      },
+      "production_source_recommendation": {
+        "recommended": true,
+        "path": "assets/nino/chapter-icons/exports/chapter-03-extra-steden-13-18.webp",
+        "sha256": "1801146a77b15f4e7b57b3e8a543244b55e37f828b57f02bf83dd1636f034b63",
+        "condition": "Use existing verified 512 WebP as source only for reviewed labelled 32/48/64/96 CSS-px usage; parent retains integration/export approval."
+      }
+    },
+    {
+      "id": "04-extra-steden-19-23",
+      "title": "Ligurische kust",
+      "verdict": "PASS",
+      "reasons": [
+        "Cliffside buildings and blue bay read as coastal settlement at 48-96px. At 32px buildings collapse into warm texture, so exact city-group meaning depends on the live label.",
+        "Independent comparison of master/export across warm, dark and checker found no additional small-size defect requiring regeneration."
+      ],
+      "source_path": "assets/nino/chapter-icons/masters/chapter-04-extra-steden-19-23.png",
+      "source_sha256": "053a4ea9ee61e6271f880c50efd09722171a0804684cc87cef1de81b6c812311",
+      "export_path": "assets/nino/chapter-icons/exports/chapter-04-extra-steden-19-23.webp",
+      "export_sha256": "125a496d4c65e3008c5b25606048b087a8d1678dfe551f3d7b2d256a33de1526",
+      "upstream_source_sha256_unverified": "0fbcfe0fa9803c81112d35197da957bec1110a946b3a064af6587d80b9341c21",
+      "technical": {
+        "master": {
+          "path": "assets/nino/chapter-icons/masters/chapter-04-extra-steden-19-23.png",
+          "sha256": "053a4ea9ee61e6271f880c50efd09722171a0804684cc87cef1de81b6c812311",
+          "manifest_sha256": "053a4ea9ee61e6271f880c50efd09722171a0804684cc87cef1de81b6c812311",
+          "hash_matches": true,
+          "mode": "RGBA",
+          "dimensions": [
+            1254,
+            1254
+          ],
+          "format": "PNG",
+          "icc_profile_bytes": 0,
+          "icc_profile_name": null,
+          "srgb_chunk": null,
+          "gamma": null,
+          "alpha_bbox": [
+            10,
+            10,
+            1230,
+            1206
+          ],
+          "alpha_min": 0,
+          "alpha_max": 255,
+          "alpha_1_15_pixels": 0,
+          "nonzero_outer_edge_pixels": 0,
+          "outer_edge_alpha_max": 0,
+          "outer_edge_alpha_16_plus_pixels": 0,
+          "technical_pass": true
+        },
+        "export": {
+          "path": "assets/nino/chapter-icons/exports/chapter-04-extra-steden-19-23.webp",
+          "sha256": "125a496d4c65e3008c5b25606048b087a8d1678dfe551f3d7b2d256a33de1526",
+          "manifest_sha256": "125a496d4c65e3008c5b25606048b087a8d1678dfe551f3d7b2d256a33de1526",
+          "hash_matches": true,
+          "mode": "RGBA",
+          "dimensions": [
+            512,
+            512
+          ],
+          "format": "WEBP",
+          "icc_profile_bytes": 0,
+          "icc_profile_name": null,
+          "srgb_chunk": null,
+          "gamma": null,
+          "alpha_bbox": [
+            2,
+            2,
+            504,
+            495
+          ],
+          "alpha_min": 0,
+          "alpha_max": 255,
+          "alpha_1_15_pixels": 1729,
+          "nonzero_outer_edge_pixels": 0,
+          "outer_edge_alpha_max": 0,
+          "outer_edge_alpha_16_plus_pixels": 0,
+          "technical_pass": true
+        }
+      },
+      "approved_size_usage": {
+        "css_px": [
+          32,
+          48,
+          64,
+          96
+        ],
+        "32px": "Supporting/decorative thumbnail with adjacent live category/chapter label only; not a standalone identifier. Dense scenes lose fine detail.",
+        "48_64_96px": "Coastal town/category cue, not a map or item-specific city representation; prefer 64-96px.",
+        "live_ui_label_required": true,
+        "baked_words_required_to_read": false,
+        "backgrounds": [
+          "warm",
+          "dark",
+          "checker"
+        ],
+        "larger_than_96px": "Not approved by this bounded small-size QA."
+      },
+      "production_source_recommendation": {
+        "recommended": true,
+        "path": "assets/nino/chapter-icons/exports/chapter-04-extra-steden-19-23.webp",
+        "sha256": "125a496d4c65e3008c5b25606048b087a8d1678dfe551f3d7b2d256a33de1526",
+        "condition": "Use existing verified 512 WebP as source only for reviewed labelled 32/48/64/96 CSS-px usage; parent retains integration/export approval."
+      }
+    },
+    {
+      "id": "05-eilanden",
+      "title": "Eilandkust",
+      "verdict": "PASS",
+      "reasons": [
+        "Green rocky promontory and turquoise coves read as coast, not unambiguously as an island. Even 96px does not establish an enclosed island outline. Acceptable supporting Eilanden illustration only with a live label; must not teach island geometry.",
+        "Independent comparison of master/export across warm, dark and checker found no additional small-size defect requiring regeneration."
+      ],
+      "source_path": "assets/nino/chapter-icons/masters/chapter-05-eilanden.png",
+      "source_sha256": "09435f1370c9682759c0508f1ca201df7fa15c18b905fd0de32d094751ab5b17",
+      "export_path": "assets/nino/chapter-icons/exports/chapter-05-eilanden.webp",
+      "export_sha256": "f1ca42b2a08c2586ef601a1d4e6174a1996bdeb95a64c0b8fadabafbcb2fe9f0",
+      "upstream_source_sha256_unverified": "7bb707364321468cbf7ada66554184801f49deb73dce941b9481922eaf78c6a2",
+      "technical": {
+        "master": {
+          "path": "assets/nino/chapter-icons/masters/chapter-05-eilanden.png",
+          "sha256": "09435f1370c9682759c0508f1ca201df7fa15c18b905fd0de32d094751ab5b17",
+          "manifest_sha256": "09435f1370c9682759c0508f1ca201df7fa15c18b905fd0de32d094751ab5b17",
+          "hash_matches": true,
+          "mode": "RGBA",
+          "dimensions": [
+            1254,
+            1254
+          ],
+          "format": "PNG",
+          "icc_profile_bytes": 0,
+          "icc_profile_name": null,
+          "srgb_chunk": null,
+          "gamma": null,
+          "alpha_bbox": [
+            6,
+            7,
+            1231,
+            1214
+          ],
+          "alpha_min": 0,
+          "alpha_max": 255,
+          "alpha_1_15_pixels": 0,
+          "nonzero_outer_edge_pixels": 0,
+          "outer_edge_alpha_max": 0,
+          "outer_edge_alpha_16_plus_pixels": 0,
+          "technical_pass": true
+        },
+        "export": {
+          "path": "assets/nino/chapter-icons/exports/chapter-05-eilanden.webp",
+          "sha256": "f1ca42b2a08c2586ef601a1d4e6174a1996bdeb95a64c0b8fadabafbcb2fe9f0",
+          "manifest_sha256": "f1ca42b2a08c2586ef601a1d4e6174a1996bdeb95a64c0b8fadabafbcb2fe9f0",
+          "hash_matches": true,
+          "mode": "RGBA",
+          "dimensions": [
+            512,
+            512
+          ],
+          "format": "WEBP",
+          "icc_profile_bytes": 0,
+          "icc_profile_name": null,
+          "srgb_chunk": null,
+          "gamma": null,
+          "alpha_bbox": [
+            0,
+            1,
+            505,
+            498
+          ],
+          "alpha_min": 0,
+          "alpha_max": 255,
+          "alpha_1_15_pixels": 1741,
+          "nonzero_outer_edge_pixels": 33,
+          "outer_edge_alpha_max": 4,
+          "outer_edge_alpha_16_plus_pixels": 0,
+          "technical_pass": true
+        }
+      },
+      "approved_size_usage": {
+        "css_px": [
+          32,
+          48,
+          64,
+          96
+        ],
+        "32px": "Supporting/decorative thumbnail with adjacent live category/chapter label only; not a standalone identifier. Dense scenes lose fine detail.",
+        "48_64_96px": "Labelled Eilanden decoration only; 48-96px preferred. Not a standalone island-recognition test.",
+        "live_ui_label_required": true,
+        "baked_words_required_to_read": false,
+        "backgrounds": [
+          "warm",
+          "dark",
+          "checker"
+        ],
+        "larger_than_96px": "Not approved by this bounded small-size QA."
+      },
+      "production_source_recommendation": {
+        "recommended": true,
+        "path": "assets/nino/chapter-icons/exports/chapter-05-eilanden.webp",
+        "sha256": "f1ca42b2a08c2586ef601a1d4e6174a1996bdeb95a64c0b8fadabafbcb2fe9f0",
+        "condition": "Use existing verified 512 WebP as source only for reviewed labelled 32/48/64/96 CSS-px usage; parent retains integration/export approval."
+      }
+    },
+    {
+      "id": "06-bergen",
+      "title": "Dolomieten",
+      "verdict": "PASS",
+      "reasons": [
+        "Pale jagged mountain skyline is clear from 32px. Foreground meadow softens at small sizes; mountain category remains intact.",
+        "Independent comparison of master/export across warm, dark and checker found no additional small-size defect requiring regeneration."
+      ],
+      "source_path": "assets/nino/chapter-icons/masters/chapter-06-bergen.png",
+      "source_sha256": "6beee992a1efa5f2b0a24185de7041b9d9e51e6f2952ab48e56817f48bce2578",
+      "export_path": "assets/nino/chapter-icons/exports/chapter-06-bergen.webp",
+      "export_sha256": "a6b8def0c138109385f96de64c02026d11dd19bea9ffa9ad6e31fca5fab0b7c3",
+      "upstream_source_sha256_unverified": "7db8dc6326fbe57708bc93662e11cd2c6d379a23b7cadc997c7c8c13681ba289",
+      "technical": {
+        "master": {
+          "path": "assets/nino/chapter-icons/masters/chapter-06-bergen.png",
+          "sha256": "6beee992a1efa5f2b0a24185de7041b9d9e51e6f2952ab48e56817f48bce2578",
+          "manifest_sha256": "6beee992a1efa5f2b0a24185de7041b9d9e51e6f2952ab48e56817f48bce2578",
+          "hash_matches": true,
+          "mode": "RGBA",
+          "dimensions": [
+            1254,
+            1254
+          ],
+          "format": "PNG",
+          "icc_profile_bytes": 0,
+          "icc_profile_name": null,
+          "srgb_chunk": null,
+          "gamma": null,
+          "alpha_bbox": [
+            4,
+            7,
+            1233,
+            1212
+          ],
+          "alpha_min": 0,
+          "alpha_max": 255,
+          "alpha_1_15_pixels": 0,
+          "nonzero_outer_edge_pixels": 0,
+          "outer_edge_alpha_max": 0,
+          "outer_edge_alpha_16_plus_pixels": 0,
+          "technical_pass": true
+        },
+        "export": {
+          "path": "assets/nino/chapter-icons/exports/chapter-06-bergen.webp",
+          "sha256": "a6b8def0c138109385f96de64c02026d11dd19bea9ffa9ad6e31fca5fab0b7c3",
+          "manifest_sha256": "a6b8def0c138109385f96de64c02026d11dd19bea9ffa9ad6e31fca5fab0b7c3",
+          "hash_matches": true,
+          "mode": "RGBA",
+          "dimensions": [
+            512,
+            512
+          ],
+          "format": "WEBP",
+          "icc_profile_bytes": 0,
+          "icc_profile_name": null,
+          "srgb_chunk": null,
+          "gamma": null,
+          "alpha_bbox": [
+            0,
+            1,
+            506,
+            497
+          ],
+          "alpha_min": 0,
+          "alpha_max": 255,
+          "alpha_1_15_pixels": 1746,
+          "nonzero_outer_edge_pixels": 26,
+          "outer_edge_alpha_max": 4,
+          "outer_edge_alpha_16_plus_pixels": 0,
+          "technical_pass": true
+        }
+      },
+      "approved_size_usage": {
+        "css_px": [
+          32,
+          48,
+          64,
+          96
+        ],
+        "32px": "Supporting/decorative thumbnail with adjacent live category/chapter label only; not a standalone identifier. Dense scenes lose fine detail.",
+        "48_64_96px": "Mountain category at all tested sizes, not geographic extent evidence.",
+        "live_ui_label_required": true,
+        "baked_words_required_to_read": false,
+        "backgrounds": [
+          "warm",
+          "dark",
+          "checker"
+        ],
+        "larger_than_96px": "Not approved by this bounded small-size QA."
+      },
+      "production_source_recommendation": {
+        "recommended": true,
+        "path": "assets/nino/chapter-icons/exports/chapter-06-bergen.webp",
+        "sha256": "a6b8def0c138109385f96de64c02026d11dd19bea9ffa9ad6e31fca5fab0b7c3",
+        "condition": "Use existing verified 512 WebP as source only for reviewed labelled 32/48/64/96 CSS-px usage; parent retains integration/export approval."
+      }
+    },
+    {
+      "id": "07-vulkanen",
+      "title": "Etna-illustratie",
+      "verdict": "PASS",
+      "reasons": [
+        "Cone and eruption plume distinguish volcano from the non-erupting mountain illustration at 48-96px; at 32px plume is small but silhouette remains useful.",
+        "Independent comparison of master/export across warm, dark and checker found no additional small-size defect requiring regeneration."
+      ],
+      "source_path": "assets/nino/chapter-icons/masters/chapter-07-vulkanen.png",
+      "source_sha256": "2ed61ce515349192625701482713aacc81d0632fe18dc34e35d8215c4897146f",
+      "export_path": "assets/nino/chapter-icons/exports/chapter-07-vulkanen.webp",
+      "export_sha256": "52efca255b21936d51c7c86868d438005393b2fac66a7ae8c2f05daaa593c232",
+      "upstream_source_sha256_unverified": "68843ac7f0904ee78a158fdb26a15e377cf39a6320a1f190fa13373ea02cfdc4",
+      "technical": {
+        "master": {
+          "path": "assets/nino/chapter-icons/masters/chapter-07-vulkanen.png",
+          "sha256": "2ed61ce515349192625701482713aacc81d0632fe18dc34e35d8215c4897146f",
+          "manifest_sha256": "2ed61ce515349192625701482713aacc81d0632fe18dc34e35d8215c4897146f",
+          "hash_matches": true,
+          "mode": "RGBA",
+          "dimensions": [
+            1254,
+            1254
+          ],
+          "format": "PNG",
+          "icc_profile_bytes": 0,
+          "icc_profile_name": null,
+          "srgb_chunk": null,
+          "gamma": null,
+          "alpha_bbox": [
+            9,
+            9,
+            1233,
+            1214
+          ],
+          "alpha_min": 0,
+          "alpha_max": 255,
+          "alpha_1_15_pixels": 0,
+          "nonzero_outer_edge_pixels": 0,
+          "outer_edge_alpha_max": 0,
+          "outer_edge_alpha_16_plus_pixels": 0,
+          "technical_pass": true
+        },
+        "export": {
+          "path": "assets/nino/chapter-icons/exports/chapter-07-vulkanen.webp",
+          "sha256": "52efca255b21936d51c7c86868d438005393b2fac66a7ae8c2f05daaa593c232",
+          "manifest_sha256": "52efca255b21936d51c7c86868d438005393b2fac66a7ae8c2f05daaa593c232",
+          "hash_matches": true,
+          "mode": "RGBA",
+          "dimensions": [
+            512,
+            512
+          ],
+          "format": "WEBP",
+          "icc_profile_bytes": 0,
+          "icc_profile_name": null,
+          "srgb_chunk": null,
+          "gamma": null,
+          "alpha_bbox": [
+            1,
+            1,
+            506,
+            498
+          ],
+          "alpha_min": 0,
+          "alpha_max": 255,
+          "alpha_1_15_pixels": 1735,
+          "nonzero_outer_edge_pixels": 0,
+          "outer_edge_alpha_max": 0,
+          "outer_edge_alpha_16_plus_pixels": 0,
+          "technical_pass": true
+        }
+      },
+      "approved_size_usage": {
+        "css_px": [
+          32,
+          48,
+          64,
+          96
+        ],
+        "32px": "Supporting/decorative thumbnail with adjacent live category/chapter label only; not a standalone identifier. Dense scenes lose fine detail.",
+        "48_64_96px": "Volcano category at all tested sizes with label; 48px or larger preferred.",
+        "live_ui_label_required": true,
+        "baked_words_required_to_read": false,
+        "backgrounds": [
+          "warm",
+          "dark",
+          "checker"
+        ],
+        "larger_than_96px": "Not approved by this bounded small-size QA."
+      },
+      "production_source_recommendation": {
+        "recommended": true,
+        "path": "assets/nino/chapter-icons/exports/chapter-07-vulkanen.webp",
+        "sha256": "52efca255b21936d51c7c86868d438005393b2fac66a7ae8c2f05daaa593c232",
+        "condition": "Use existing verified 512 WebP as source only for reviewed labelled 32/48/64/96 CSS-px usage; parent retains integration/export approval."
+      }
+    },
+    {
+      "id": "08-streken",
+      "title": "Val d’Orcia",
+      "verdict": "PASS",
+      "reasons": [
+        "Rolling fields, cypresses and winding road convey countryside/region, not a bounded administrative region. At 32px field texture dominates; no claim that scenery alone names Streken.",
+        "Independent comparison of master/export across warm, dark and checker found no additional small-size defect requiring regeneration."
+      ],
+      "source_path": "assets/nino/chapter-icons/masters/chapter-08-streken.png",
+      "source_sha256": "20c105e185900b0b36e69e5fcb7cc61a490073ba8e19d93b9833216431867927",
+      "export_path": "assets/nino/chapter-icons/exports/chapter-08-streken.webp",
+      "export_sha256": "2885eeb2d2b4d2479895761457968768d7046e65958ed6df0fd1ee056ee88a14",
+      "upstream_source_sha256_unverified": "b43e4082737f8df7c4cd1dc0918f8edfdae01e95e23a4f94c62fb709ca1f499f",
+      "technical": {
+        "master": {
+          "path": "assets/nino/chapter-icons/masters/chapter-08-streken.png",
+          "sha256": "20c105e185900b0b36e69e5fcb7cc61a490073ba8e19d93b9833216431867927",
+          "manifest_sha256": "20c105e185900b0b36e69e5fcb7cc61a490073ba8e19d93b9833216431867927",
+          "hash_matches": true,
+          "mode": "RGBA",
+          "dimensions": [
+            1254,
+            1254
+          ],
+          "format": "PNG",
+          "icc_profile_bytes": 0,
+          "icc_profile_name": null,
+          "srgb_chunk": null,
+          "gamma": null,
+          "alpha_bbox": [
+            5,
+            8,
+            1236,
+            1212
+          ],
+          "alpha_min": 0,
+          "alpha_max": 255,
+          "alpha_1_15_pixels": 0,
+          "nonzero_outer_edge_pixels": 0,
+          "outer_edge_alpha_max": 0,
+          "outer_edge_alpha_16_plus_pixels": 0,
+          "technical_pass": true
+        },
+        "export": {
+          "path": "assets/nino/chapter-icons/exports/chapter-08-streken.webp",
+          "sha256": "2885eeb2d2b4d2479895761457968768d7046e65958ed6df0fd1ee056ee88a14",
+          "manifest_sha256": "2885eeb2d2b4d2479895761457968768d7046e65958ed6df0fd1ee056ee88a14",
+          "hash_matches": true,
+          "mode": "RGBA",
+          "dimensions": [
+            512,
+            512
+          ],
+          "format": "WEBP",
+          "icc_profile_bytes": 0,
+          "icc_profile_name": null,
+          "srgb_chunk": null,
+          "gamma": null,
+          "alpha_bbox": [
+            0,
+            1,
+            507,
+            497
+          ],
+          "alpha_min": 0,
+          "alpha_max": 255,
+          "alpha_1_15_pixels": 1722,
+          "nonzero_outer_edge_pixels": 35,
+          "outer_edge_alpha_max": 4,
+          "outer_edge_alpha_16_plus_pixels": 0,
+          "technical_pass": true
+        }
+      },
+      "approved_size_usage": {
+        "css_px": [
+          32,
+          48,
+          64,
+          96
+        ],
+        "32px": "Supporting/decorative thumbnail with adjacent live category/chapter label only; not a standalone identifier. Dense scenes lose fine detail.",
+        "48_64_96px": "Labelled landscape/regions cue; 48-96px preferred, 64-96px to appreciate fields.",
+        "live_ui_label_required": true,
+        "baked_words_required_to_read": false,
+        "backgrounds": [
+          "warm",
+          "dark",
+          "checker"
+        ],
+        "larger_than_96px": "Not approved by this bounded small-size QA."
+      },
+      "production_source_recommendation": {
+        "recommended": true,
+        "path": "assets/nino/chapter-icons/exports/chapter-08-streken.webp",
+        "sha256": "2885eeb2d2b4d2479895761457968768d7046e65958ed6df0fd1ee056ee88a14",
+        "condition": "Use existing verified 512 WebP as source only for reviewed labelled 32/48/64/96 CSS-px usage; parent retains integration/export approval."
+      }
+    },
+    {
+      "id": "09-landen",
+      "title": "Italiaanse grens met FR/CH/AT",
+      "verdict": "PASS",
+      "reasons": [
+        "Italian tricolor border stone and direction boards support border/countries meaning at 48-96px. At 32px this can read as mountain scenery with a post. Baked words are too small to read at all four UI sizes. Native crop shows correct Dutch Frankrijk, Zwitserland, Oostenrijk; decorative directions are not geography.",
+        "Independent comparison of master/export across warm, dark and checker found no additional small-size defect requiring regeneration."
+      ],
+      "source_path": "assets/nino/chapter-icons/masters/chapter-09-landen.png",
+      "source_sha256": "6f1452c93a6f2fd2dfb6a6a18e7e521aaf12e6888f6bed246156d7245e05a144",
+      "export_path": "assets/nino/chapter-icons/exports/chapter-09-landen.webp",
+      "export_sha256": "c616f7524a546ed77e59347cbf8335be9013e687483fa689e00b1c26ab7a0f79",
+      "upstream_source_sha256_unverified": "5608ac025fd76d6eb14f996310a0083f70eb83c73c5042c2ed6273eb70435182",
+      "technical": {
+        "master": {
+          "path": "assets/nino/chapter-icons/masters/chapter-09-landen.png",
+          "sha256": "6f1452c93a6f2fd2dfb6a6a18e7e521aaf12e6888f6bed246156d7245e05a144",
+          "manifest_sha256": "6f1452c93a6f2fd2dfb6a6a18e7e521aaf12e6888f6bed246156d7245e05a144",
+          "hash_matches": true,
+          "mode": "RGBA",
+          "dimensions": [
+            1254,
+            1254
+          ],
+          "format": "PNG",
+          "icc_profile_bytes": 0,
+          "icc_profile_name": null,
+          "srgb_chunk": null,
+          "gamma": null,
+          "alpha_bbox": [
+            4,
+            7,
+            1237,
+            1220
+          ],
+          "alpha_min": 0,
+          "alpha_max": 255,
+          "alpha_1_15_pixels": 0,
+          "nonzero_outer_edge_pixels": 0,
+          "outer_edge_alpha_max": 0,
+          "outer_edge_alpha_16_plus_pixels": 0,
+          "technical_pass": true
+        },
+        "export": {
+          "path": "assets/nino/chapter-icons/exports/chapter-09-landen.webp",
+          "sha256": "c616f7524a546ed77e59347cbf8335be9013e687483fa689e00b1c26ab7a0f79",
+          "manifest_sha256": "c616f7524a546ed77e59347cbf8335be9013e687483fa689e00b1c26ab7a0f79",
+          "hash_matches": true,
+          "mode": "RGBA",
+          "dimensions": [
+            512,
+            512
+          ],
+          "format": "WEBP",
+          "icc_profile_bytes": 0,
+          "icc_profile_name": null,
+          "srgb_chunk": null,
+          "gamma": null,
+          "alpha_bbox": [
+            0,
+            0,
+            507,
+            500
+          ],
+          "alpha_min": 0,
+          "alpha_max": 255,
+          "alpha_1_15_pixels": 1719,
+          "nonzero_outer_edge_pixels": 46,
+          "outer_edge_alpha_max": 4,
+          "outer_edge_alpha_16_plus_pixels": 0,
+          "technical_pass": true
+        }
+      },
+      "approved_size_usage": {
+        "css_px": [
+          32,
+          48,
+          64,
+          96
+        ],
+        "32px": "Supporting/decorative thumbnail with adjacent live category/chapter label only; not a standalone identifier. Dense scenes lose fine detail.",
+        "48_64_96px": "Labelled Landen cue only, preferably 64-96px; never rely on sign words or arrow orientation as learning content.",
+        "live_ui_label_required": true,
+        "baked_words_required_to_read": false,
+        "backgrounds": [
+          "warm",
+          "dark",
+          "checker"
+        ],
+        "larger_than_96px": "Not approved by this bounded small-size QA."
+      },
+      "production_source_recommendation": {
+        "recommended": true,
+        "path": "assets/nino/chapter-icons/exports/chapter-09-landen.webp",
+        "sha256": "c616f7524a546ed77e59347cbf8335be9013e687483fa689e00b1c26ab7a0f79",
+        "condition": "Use existing verified 512 WebP as source only for reviewed labelled 32/48/64/96 CSS-px usage; parent retains integration/export approval."
+      }
+    },
+    {
+      "id": "10-zeeen",
+      "title": "Middellandse Zee",
+      "verdict": "PASS",
+      "reasons": [
+        "Blue open water and wave band read as sea from 32px. Native left edge is tangent/clipped: master has 69 left-edge nonzero pixels, maximum alpha 185; export left edge has 57 nonzero pixels, maximum 226, plus 40 top-edge alpha-3 pixels. Native strip and all small-size boards show no conspicuous flat cut or stray matte. Nonblocking within tested 32-96px use; do not certify pristine native/master edge.",
+        "Independent comparison of master/export across warm, dark and checker found no additional small-size defect requiring regeneration."
+      ],
+      "source_path": "assets/nino/chapter-icons/masters/chapter-10-zeeen.png",
+      "source_sha256": "c4d776148c519cbd5efd2dc294e61a7a92fb5807a89fa779de70c37b97e2ae84",
+      "export_path": "assets/nino/chapter-icons/exports/chapter-10-zeeen.webp",
+      "export_sha256": "66139c1119925b9584aaa0de0be9472ff2c0272235ac019bf5316be7c2325f0f",
+      "upstream_source_sha256_unverified": "917e55ca352e90a1e25631b02dab87fd2d9af963a754e77ee4c83145be98873b",
+      "technical": {
+        "master": {
+          "path": "assets/nino/chapter-icons/masters/chapter-10-zeeen.png",
+          "sha256": "c4d776148c519cbd5efd2dc294e61a7a92fb5807a89fa779de70c37b97e2ae84",
+          "manifest_sha256": "c4d776148c519cbd5efd2dc294e61a7a92fb5807a89fa779de70c37b97e2ae84",
+          "hash_matches": true,
+          "mode": "RGBA",
+          "dimensions": [
+            1254,
+            1254
+          ],
+          "format": "PNG",
+          "icc_profile_bytes": 0,
+          "icc_profile_name": null,
+          "srgb_chunk": null,
+          "gamma": null,
+          "alpha_bbox": [
+            0,
+            5,
+            1236,
+            1217
+          ],
+          "alpha_min": 0,
+          "alpha_max": 255,
+          "alpha_1_15_pixels": 0,
+          "nonzero_outer_edge_pixels": 69,
+          "outer_edge_alpha_max": 185,
+          "outer_edge_alpha_16_plus_pixels": 69,
+          "technical_pass": true
+        },
+        "export": {
+          "path": "assets/nino/chapter-icons/exports/chapter-10-zeeen.webp",
+          "sha256": "66139c1119925b9584aaa0de0be9472ff2c0272235ac019bf5316be7c2325f0f",
+          "manifest_sha256": "66139c1119925b9584aaa0de0be9472ff2c0272235ac019bf5316be7c2325f0f",
+          "hash_matches": true,
+          "mode": "RGBA",
+          "dimensions": [
+            512,
+            512
+          ],
+          "format": "WEBP",
+          "icc_profile_bytes": 0,
+          "icc_profile_name": null,
+          "srgb_chunk": null,
+          "gamma": null,
+          "alpha_bbox": [
+            0,
+            0,
+            507,
+            499
+          ],
+          "alpha_min": 0,
+          "alpha_max": 255,
+          "alpha_1_15_pixels": 1687,
+          "nonzero_outer_edge_pixels": 97,
+          "outer_edge_alpha_max": 226,
+          "outer_edge_alpha_16_plus_pixels": 39,
+          "technical_pass": true
+        }
+      },
+      "approved_size_usage": {
+        "css_px": [
+          32,
+          48,
+          64,
+          96
+        ],
+        "32px": "Supporting/decorative thumbnail with adjacent live category/chapter label only; not a standalone identifier. Dense scenes lose fine detail.",
+        "48_64_96px": "Sea category at all tested sizes with label. Existing edge contact accepted only for reviewed small-size use; inspect again for larger display or master remediation.",
+        "live_ui_label_required": true,
+        "baked_words_required_to_read": false,
+        "backgrounds": [
+          "warm",
+          "dark",
+          "checker"
+        ],
+        "larger_than_96px": "Not approved by this bounded small-size QA."
+      },
+      "production_source_recommendation": {
+        "recommended": true,
+        "path": "assets/nino/chapter-icons/exports/chapter-10-zeeen.webp",
+        "sha256": "66139c1119925b9584aaa0de0be9472ff2c0272235ac019bf5316be7c2325f0f",
+        "condition": "Use existing verified 512 WebP as source only for reviewed labelled 32/48/64/96 CSS-px usage; parent retains integration/export approval."
+      }
+    },
+    {
+      "id": "11-rivieren",
+      "title": "Italiaanse rivier",
+      "verdict": "PASS",
+      "reasons": [
+        "Blue river corridor and multi-arch bridge remain recognizable at 48-96px; at 32px the bridge/vegetation compresses, but watercourse is still useful beside a label.",
+        "Independent comparison of master/export across warm, dark and checker found no additional small-size defect requiring regeneration."
+      ],
+      "source_path": "assets/nino/chapter-icons/masters/chapter-11-rivieren.png",
+      "source_sha256": "b9dd8949f125e526696671f7595943a594f8d01797a42fb2176b6255dd29e1a3",
+      "export_path": "assets/nino/chapter-icons/exports/chapter-11-rivieren.webp",
+      "export_sha256": "c08a48c15a9e64abe11e6f839b160c0d24961a09ea2d627dd43277575b368ff2",
+      "upstream_source_sha256_unverified": "15364983b460bbefe62837fea744bda2e058f0fbae5f96225cabadb70f2b4e5b",
+      "technical": {
+        "master": {
+          "path": "assets/nino/chapter-icons/masters/chapter-11-rivieren.png",
+          "sha256": "b9dd8949f125e526696671f7595943a594f8d01797a42fb2176b6255dd29e1a3",
+          "manifest_sha256": "b9dd8949f125e526696671f7595943a594f8d01797a42fb2176b6255dd29e1a3",
+          "hash_matches": true,
+          "mode": "RGBA",
+          "dimensions": [
+            1254,
+            1254
+          ],
+          "format": "PNG",
+          "icc_profile_bytes": 0,
+          "icc_profile_name": null,
+          "srgb_chunk": null,
+          "gamma": null,
+          "alpha_bbox": [
+            4,
+            6,
+            1236,
+            1216
+          ],
+          "alpha_min": 0,
+          "alpha_max": 255,
+          "alpha_1_15_pixels": 0,
+          "nonzero_outer_edge_pixels": 0,
+          "outer_edge_alpha_max": 0,
+          "outer_edge_alpha_16_plus_pixels": 0,
+          "technical_pass": true
+        },
+        "export": {
+          "path": "assets/nino/chapter-icons/exports/chapter-11-rivieren.webp",
+          "sha256": "c08a48c15a9e64abe11e6f839b160c0d24961a09ea2d627dd43277575b368ff2",
+          "manifest_sha256": "c08a48c15a9e64abe11e6f839b160c0d24961a09ea2d627dd43277575b368ff2",
+          "hash_matches": true,
+          "mode": "RGBA",
+          "dimensions": [
+            512,
+            512
+          ],
+          "format": "WEBP",
+          "icc_profile_bytes": 0,
+          "icc_profile_name": null,
+          "srgb_chunk": null,
+          "gamma": null,
+          "alpha_bbox": [
+            0,
+            0,
+            507,
+            499
+          ],
+          "alpha_min": 0,
+          "alpha_max": 255,
+          "alpha_1_15_pixels": 1750,
+          "nonzero_outer_edge_pixels": 55,
+          "outer_edge_alpha_max": 4,
+          "outer_edge_alpha_16_plus_pixels": 0,
+          "technical_pass": true
+        }
+      },
+      "approved_size_usage": {
+        "css_px": [
+          32,
+          48,
+          64,
+          96
+        ],
+        "32px": "Supporting/decorative thumbnail with adjacent live category/chapter label only; not a standalone identifier. Dense scenes lose fine detail.",
+        "48_64_96px": "River category with live label; 48-96px preferred, not a specific river map.",
+        "live_ui_label_required": true,
+        "baked_words_required_to_read": false,
+        "backgrounds": [
+          "warm",
+          "dark",
+          "checker"
+        ],
+        "larger_than_96px": "Not approved by this bounded small-size QA."
+      },
+      "production_source_recommendation": {
+        "recommended": true,
+        "path": "assets/nino/chapter-icons/exports/chapter-11-rivieren.webp",
+        "sha256": "c08a48c15a9e64abe11e6f839b160c0d24961a09ea2d627dd43277575b368ff2",
+        "condition": "Use existing verified 512 WebP as source only for reviewed labelled 32/48/64/96 CSS-px usage; parent retains integration/export approval."
+      }
+    }
+  ],
+  "totals": {
+    "PASS": 11
+  },
+  "evidence_sha256": {
+    "icons-sizes-warm.png": "33428277adbbc871b5fac753092d6a99f99bf11dee46660fbdb82aeecd676f3d",
+    "icons-sizes-dark.png": "6f2138a776e2aff9795d2e6aae0a072aa8ec3716684bfc7537900cb6a68cc336",
+    "icons-sizes-checker.png": "297d27426be69eba920e565c28b00cffbbbf7535ebed80f2408a9fd242af0d43",
+    "icons-overview-01-06.png": "65d20c65a0dc035a8e1b0a3d76d8d1dd821aa54a9c283b0fe16defe95ba45152",
+    "icons-overview-07-11.png": "3b36e7f1f6c47193a2a605ad1e33c73387c0a5ccee85e074605e975172b35941",
+    "icons-native-details.png": "0c99e3f9a29abe25b685336d8fad15a3db06784959945f98765e026874f5e915"
+  }
+}

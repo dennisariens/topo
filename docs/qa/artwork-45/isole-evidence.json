@@ -1,0 +1,48 @@
+{
+  "artHead": "367b875c83a4e8b77c1f1d09523c20c96364f178",
+  "focusHead": "71b33fd973c7b650c63e7921af3e7bf6aab5f79f",
+  "pr39": "fc8f5be4dc77c8b1adb71aae3931a1c134389cf5",
+  "islandsEqual": true,
+  "italyEqual": true,
+  "contextEqual": true,
+  "islands": [
+    {
+      "id": "area-a",
+      "name": "Sicilië",
+      "code": "a",
+      "shapeSha256": "58b1b1e93724fac3339c4f8d2cac067dfaedd60c9c5630a4443d91c380367a5f"
+    },
+    {
+      "id": "area-b",
+      "name": "Sardinië",
+      "code": "b",
+      "shapeSha256": "9012cb0bea87c274ee280c753907d7e0d82561d1a1f34907c70eed67672c10b0"
+    }
+  ],
+  "bboxes": [
+    {
+      "id": "area-a",
+      "x": 431,
+      "y": 881.969970703125,
+      "width": 203.40997314453125,
+      "height": 123.82000732421875
+    },
+    {
+      "id": "area-b",
+      "x": 224.4499969482422,
+      "y": 653.9500122070312,
+      "width": 89.34001159667969,
+      "height": 180.760009765625
+    }
+  ],
+  "sourceAssets": [
+    {
+      "path": "masters/stamp-05-isole.png",
+      "sha256": "91b9ed25d5255b784d447080df16f2e644937f05b37bb94d08235312ee54fb50"
+    },
+    {
+      "path": "qa-candidates/stamp-05-isole-ink-preview.webp",
+      "sha256": "4e72f649edbb50570f66006e02723d6b048bc2fabaab940cf5cea723a12aafd3"
+    }
+  ]
+}

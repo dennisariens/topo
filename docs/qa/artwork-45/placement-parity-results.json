@@ -1,0 +1,8 @@
+{
+  "identities": 11,
+  "pythonJavaScriptParity": "PASS",
+  "safeInsets": "PASS",
+  "repeatRenders": "PASS (pure stable identity projection)",
+  "runtimeReopenBackupOffline": "NOT EXERCISED: passport integration absent",
+  "scope": "design fixture, no reward state"
+}

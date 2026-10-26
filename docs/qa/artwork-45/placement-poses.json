@@ -1,0 +1,121 @@
+{
+  "fixture": "NO-REWARD MOCKUP, not earned state",
+  "version": "topo-stamp-v1",
+  "poses": [
+    {
+      "key": "city1",
+      "seed": "[\"topo-stamp-v1\",\"chapter\",\"city1\",\"\"]",
+      "angle": -1.5,
+      "x": -10,
+      "y": 0,
+      "pressure": "even",
+      "clearanceX": 12.762696282590888,
+      "clearanceY": 26.550539295932353
+    },
+    {
+      "key": "city2",
+      "seed": "[\"topo-stamp-v1\",\"chapter\",\"city2\",\"\"]",
+      "angle": -1.5,
+      "x": 0,
+      "y": -6,
+      "pressure": "even",
+      "clearanceX": 22.762696282590888,
+      "clearanceY": 20.550539295932353
+    },
+    {
+      "key": "city3",
+      "seed": "[\"topo-stamp-v1\",\"chapter\",\"city3\",\"\"]",
+      "angle": 1.5,
+      "x": 0,
+      "y": 0,
+      "pressure": "even",
+      "clearanceX": 22.762696282590888,
+      "clearanceY": 26.550539295932353
+    },
+    {
+      "key": "city4",
+      "seed": "[\"topo-stamp-v1\",\"chapter\",\"city4\",\"\"]",
+      "angle": -1.5,
+      "x": -5,
+      "y": 0,
+      "pressure": "left-heavy",
+      "clearanceX": 17.762696282590888,
+      "clearanceY": 26.550539295932353
+    },
+    {
+      "key": "islands",
+      "seed": "[\"topo-stamp-v1\",\"chapter\",\"islands\",\"\"]",
+      "angle": -1.5,
+      "x": 0,
+      "y": -3,
+      "pressure": "right-heavy",
+      "clearanceX": 22.762696282590888,
+      "clearanceY": 23.550539295932353
+    },
+    {
+      "key": "mountains",
+      "seed": "[\"topo-stamp-v1\",\"chapter\",\"mountains\",\"\"]",
+      "angle": 0,
+      "x": 0,
+      "y": 0,
+      "pressure": "even",
+      "clearanceX": 24.0,
+      "clearanceY": 28.0
+    },
+    {
+      "key": "volcanoes",
+      "seed": "[\"topo-stamp-v1\",\"chapter\",\"volcanoes\",\"\"]",
+      "angle": -1.5,
+      "x": -10,
+      "y": 0,
+      "pressure": "even",
+      "clearanceX": 12.762696282590888,
+      "clearanceY": 26.550539295932353
+    },
+    {
+      "key": "regions",
+      "seed": "[\"topo-stamp-v1\",\"chapter\",\"regions\",\"\"]",
+      "angle": -1.5,
+      "x": 0,
+      "y": -3,
+      "pressure": "even",
+      "clearanceX": 22.762696282590888,
+      "clearanceY": 23.550539295932353
+    },
+    {
+      "key": "countries",
+      "seed": "[\"topo-stamp-v1\",\"chapter\",\"countries\",\"\"]",
+      "angle": 4.5,
+      "x": -5,
+      "y": 0,
+      "pressure": "right-heavy",
+      "clearanceX": 15.406592716008277,
+      "clearanceY": 23.754258620050543
+    },
+    {
+      "key": "seas",
+      "seed": "[\"topo-stamp-v1\",\"chapter\",\"seas\",\"\"]",
+      "angle": -4.5,
+      "x": 0,
+      "y": 3,
+      "pressure": "even",
+      "clearanceX": 20.406592716008277,
+      "clearanceY": 20.754258620050543
+    },
+    {
+      "key": "rivers",
+      "seed": "[\"topo-stamp-v1\",\"chapter\",\"rivers\",\"\"]",
+      "angle": -1.5,
+      "x": 5,
+      "y": 0,
+      "pressure": "even",
+      "clearanceX": 17.762696282590888,
+      "clearanceY": 26.550539295932353
+    }
+  ],
+  "sourcePressureAlphaRange": [
+    0.98,
+    1
+  ],
+  "gold": "BLOCKED: final seal missing"
+}

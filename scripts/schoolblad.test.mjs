@@ -1,3 +1,4 @@
+import{assertPreserved,restoreApprovedArea}from'./ipad-update-source.mjs';
 import assert from 'node:assert/strict';
 import test from 'node:test';
 import {readFileSync} from 'node:fs';
@@ -21,7 +22,7 @@ const protectedState=a=>a.ev('JSON.stringify({state,current:state.current,progre
 test('one unchanged photograph; pre-existing code exact except the bounded map resolver hotfix',()=>{
  const stripped=restoreLegacyMapHit(withoutDiscovery(html),previous('index.html').toString()).replace(/\/\* BEGIN SCHOOLBLAD \*\/[\s\S]*?\/\* END SCHOOLBLAD \*\/\n/,'').replace(/\/\/ BEGIN SCHOOLBLAD\n[\s\S]*?\/\/ END SCHOOLBLAD\n/,'');
  assert.equal(stripped,previous('index.html').toString());
- for(const p of ['scripts/learning-engine.js','scripts/route-engine.js','scripts/nino-feedback.js','scripts/nino-art.js','scripts/nino-art-ui.js','scripts/nino-art.css','print.html','output/pdf/topo-italie-printboek.pdf','output/pdf/print-source.sha256','geography/lakes/source.geojson','geography/lakes/projected-manifest.json'])assert(read(p).equals(previous(p)),p);
+ for(const p of ['scripts/learning-engine.js','scripts/route-engine.js','scripts/nino-feedback.js','scripts/nino-art.js','scripts/nino-art-ui.js','scripts/nino-art.css','print.html','output/pdf/topo-italie-printboek.pdf','output/pdf/print-source.sha256','geography/lakes/source.geojson','geography/lakes/projected-manifest.json'])assertPreserved(p,read(p),previous(p));
  for(const p of ['output/html/topo-italie-interactief.html','output/html/topo-italie-duolingo.html'])assert.equal(read(p).toString(),html);
 });
 test('Learn, Point, Write, exam and route reference opening never mutates a task or progress',()=>{

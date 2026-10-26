@@ -1,0 +1,191 @@
+{
+  "purpose": "reproducible educational Apennines mainland corridor, not geodetic boundary",
+  "anchors": [
+    {
+      "name": "Colle di Cadibona",
+      "lat": 44.33428608,
+      "lon": 8.3490873,
+      "x": 233.69980150000004,
+      "y": 417.00997184000016,
+      "pageid": 32690946,
+      "url": "https://en.wikipedia.org/?curid=32690946"
+    },
+    {
+      "name": "Monte Beigua",
+      "lat": 44.43333333,
+      "lon": 8.56527778,
+      "x": 245.59027790000005,
+      "y": 409.3833335899999,
+      "pageid": 21335282,
+      "url": "https://en.wikipedia.org/?curid=21335282"
+    },
+    {
+      "name": "Monte Antola",
+      "lat": 44.57444444,
+      "lon": 9.14972222,
+      "x": 277.73472209999994,
+      "y": 398.51777812,
+      "pageid": 26138321,
+      "url": "https://en.wikipedia.org/?curid=26138321"
+    },
+    {
+      "name": "Monte Maggiorasca",
+      "lat": 44.55,
+      "lon": 9.48333333,
+      "x": 296.08333315000004,
+      "y": 400.4000000000001,
+      "pageid": 12181475,
+      "url": "https://en.wikipedia.org/?curid=12181475"
+    },
+    {
+      "name": "Cisa Pass",
+      "lat": 44.4716,
+      "lon": 9.9283,
+      "x": 320.5565,
+      "y": 406.43679999999995,
+      "pageid": 18957531,
+      "url": "https://en.wikipedia.org/?curid=18957531"
+    },
+    {
+      "name": "Monte Cimone",
+      "lat": 44.19388889,
+      "lon": 10.70138889,
+      "x": 363.07638895,
+      "y": 427.8205554700003,
+      "pageid": 15052397,
+      "url": "https://en.wikipedia.org/?curid=15052397"
+    },
+    {
+      "name": "Monte Falterona",
+      "lat": 43.86666667,
+      "lon": 11.7,
+      "x": 418.0,
+      "y": 453.01666640999974,
+      "pageid": 10722653,
+      "url": "https://en.wikipedia.org/?curid=10722653"
+    },
+    {
+      "name": "Monte Catria",
+      "lat": 43.46166667,
+      "lon": 12.70444444,
+      "x": 473.2444442,
+      "y": 484.20166641000014,
+      "pageid": 16981204,
+      "url": "https://en.wikipedia.org/?curid=16981204"
+    },
+    {
+      "name": "Monte Vettore",
+      "lat": 42.8251,
+      "lon": 13.2744,
+      "x": 504.592,
+      "y": 533.2173000000003,
+      "pageid": 514116,
+      "url": "https://it.wikipedia.org/?curid=514116"
+    },
+    {
+      "name": "Corno Grande",
+      "lat": 42.4692,
+      "lon": 13.5656,
+      "x": 520.608,
+      "y": 560.6216,
+      "pageid": 3126001,
+      "url": "https://en.wikipedia.org/?curid=3126001"
+    },
+    {
+      "name": "Maiella",
+      "lat": 42.08694444,
+      "lon": 14.0875,
+      "x": 549.3125,
+      "y": 590.0552781199999,
+      "pageid": 22275972,
+      "url": "https://en.wikipedia.org/?curid=22275972"
+    },
+    {
+      "name": "Monte Miletto",
+      "lat": 41.449963,
+      "lon": 14.372003,
+      "x": 564.960165,
+      "y": 639.1028490000003,
+      "pageid": 1175115,
+      "url": "https://it.wikipedia.org/?curid=1175115"
+    },
+    {
+      "name": "Monte Cervialto",
+      "lat": 40.77875441,
+      "lon": 15.1292413,
+      "x": 606.6082715,
+      "y": 690.7859104300001,
+      "pageid": 2000656,
+      "url": "https://it.wikipedia.org/?curid=2000656"
+    },
+    {
+      "name": "Massiccio del Sirino",
+      "lat": 40.132691,
+      "lon": 15.83602,
+      "x": 645.4811,
+      "y": 740.5327929999999,
+      "pageid": 1136870,
+      "url": "https://it.wikipedia.org/?curid=1136870"
+    },
+    {
+      "name": "Pollino",
+      "lat": 39.89472222,
+      "lon": 16.2175,
+      "x": 666.4625000000001,
+      "y": 758.8563890600003,
+      "pageid": 12218123,
+      "url": "https://en.wikipedia.org/?curid=12218123"
+    },
+    {
+      "name": "Monte Botte Donato",
+      "lat": 39.284729,
+      "lon": 16.447091,
+      "x": 679.090005,
+      "y": 805.825867,
+      "pageid": 1838293,
+      "url": "https://it.wikipedia.org/?curid=1838293"
+    },
+    {
+      "name": "Monte Pecoraro",
+      "lat": 38.5333,
+      "lon": 16.3333,
+      "x": 672.8315000000001,
+      "y": 863.6859000000004,
+      "pageid": 1324220,
+      "url": "https://it.wikipedia.org/?curid=1324220"
+    },
+    {
+      "name": "Montalto (Aspromonte)",
+      "lat": 38.15888889,
+      "lon": 15.92111111,
+      "x": 650.16111105,
+      "y": 892.51555547,
+      "pageid": 25687856,
+      "url": "https://en.wikipedia.org/?curid=25687856"
+    }
+  ],
+  "anchor_source_api": [
+    "https://en.wikipedia.org/w/api.php?action=query&prop=coordinates",
+    "https://it.wikipedia.org/w/api.php?action=query&prop=coordinates"
+  ],
+  "dem_provenance": "assets/discovery/terrain-provenance.json; 63 original hashes checked by qa-apennines.py",
+  "routing": {
+    "neighbors": 8,
+    "reference_segment_max_distance_svg": 22,
+    "elevation_clamp_m": 1800,
+    "cost": "1 + 2*(1-clamp(height,0,1800)/1800) + .8*(lateral/22)^2",
+    "line_simplification_svg": 1.2,
+    "corridor_radius_svg": 10,
+    "mainland_inset_svg": 2
+  },
+  "path_sha256": "e5216860fead38464ae54f22fbec0b868e164b9d17e9a978db90be76d8dbdcd2",
+  "vertices": 398,
+  "filled_area": 15657.412000000057,
+  "off_mainland_area": 0.0,
+  "source_ridge_elevation_m": {
+    "median": 1033.0892991200942,
+    "min": 51.85902046184444
+  },
+  "authoritative_extent_reference": "https://www.treccani.it/enciclopedia/appennino/",
+  "other44_records": "preserved verbatim; verified independently by QA"
+}

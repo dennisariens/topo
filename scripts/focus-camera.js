@@ -43,7 +43,7 @@
   nav.append(hint);tools.append(nav);
   function updateButtons() {
    const ctx=context(),available=!!ctx.ids?.length && ctx.ids.length < 45 && !!bounds(ctx.ids);
-   chapterButton.disabled=!available;
+   if(chapterButton.disabled!==!available)chapterButton.disabled=!available;
    chapterButton.title=available?'Zoom in op alle plaatsen van dit hoofdstuk':'Kies één hoofdstuk om in te zoomen';
    hint.hidden=available;fullButton.setAttribute('aria-pressed',String(cameraMode==='overview'));
    chapterButton.setAttribute('aria-pressed',String(cameraMode==='chapter'&&available));

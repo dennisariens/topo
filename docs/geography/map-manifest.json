@@ -230,8 +230,8 @@
     "code": "c",
     "px": 490,
     "py": 560,
-    "shape_sha256": "82dc0eb16cd15e888eba9d24c6bb0b7d6d3737c7bb9a6e146e5edd9a166e776e",
-    "reference": "Mainland-constrained educational Apennines corridor; schematic mountain zone, not a surveyed boundary"
+    "shape_sha256": "e5216860fead38464ae54f22fbec0b868e164b9d17e9a978db90be76d8dbdcd2",
+    "reference": "Sourced mountain anchors + pinned Terrarium DEM ridge routing; 10 SVG-unit educational corridor, 2-unit mainland inset. Not a surveyed range boundary."
   },
   {
     "id": "area-d",

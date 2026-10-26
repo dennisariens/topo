@@ -1,3 +1,4 @@
+import{assertPreserved,restoreApprovedArea}from'./ipad-update-source.mjs';
 import assert from 'node:assert/strict';
 import {readFileSync, readdirSync} from 'node:fs';
 import {execFileSync} from 'node:child_process';
@@ -166,7 +167,7 @@ test('canonical engines, geometry, original artwork and print artifacts equal pi
   assert.equal(feedback.replace(discoverPause,''),gitFile('scripts/nino-feedback.js').toString(),'all other feedback, including formal exams, unchanged');
   for (const file of ['scripts/learning-engine.js','scripts/route-engine.js',
     'print.html','output/pdf/print-source.sha256','output/pdf/topo-italie-printboek.pdf']) {
-    assert.deepEqual(read(file),gitFile(file),`${file} unchanged`);
+    assertPreserved(file,read(file),gitFile(file));
   }
   const originals = source => [...source.matchAll(/data:image\/(?:webp|png|jpeg);base64,[A-Za-z0-9+/=]+/g)].map(m => hash(m[0]));
   const current = new Set(originals(html));
@@ -174,14 +175,14 @@ test('canonical engines, geometry, original artwork and print artifacts equal pi
   const a = boot(), b = boot(baseline);
   try {
     for (const expression of ['ITEMS','CONTEXT_LAND','NAME_ANCHORS']) {
-      assert.deepEqual(JSON.parse(a.ev(`JSON.stringify(${expression})`)),JSON.parse(b.ev(`JSON.stringify(${expression})`)),expression);
+      assert.equal(restoreApprovedArea(a.ev(`JSON.stringify(${expression})`)),b.ev(`JSON.stringify(${expression})`),expression);
     }
     assert.equal(a.ev('ITEMS.length'),45);
     // Existing target/context geometry stays exact. Release 1.2 adds only the six
     // separately pinned background polygons covered by geography/lakes.test.mjs.
     const geometry = app => [...app.d.querySelectorAll('#map path, #map circle, #map polygon, #map polyline')]
       .filter(n => !n.closest('#lakeGeometry'))
-      .map(n => [...n.attributes].filter(a => ['d','cx','cy','r','points','viewBox'].includes(a.name)).map(a => [a.name,a.value]));
+      .map(n => [...n.attributes].filter(a => ['d','cx','cy','r','points','viewBox'].includes(a.name)).map(a => [a.name,restoreApprovedArea(a.value)]));
     assert(geometry(a).length > 45, 'map geometry comparison is not empty');
     assert.deepEqual(geometry(a),geometry(b));
   } finally { a.close(); b.close(); }

@@ -1,3 +1,4 @@
+import{assertPreserved,restoreApprovedArea}from'./ipad-update-source.mjs';
 import assert from 'node:assert/strict';
 import {readFileSync, writeFileSync, mkdirSync} from 'node:fs';
 import {execFileSync} from 'node:child_process';
@@ -15,7 +16,7 @@ const original = (sha, file) => execFileSync('git', ['show', `${sha}:${file}`], 
 const hash = b => createHash('sha256').update(b).digest('hex');
 const preserved = {};
 function exact(file, sha) {
-  assert(read(file).equals(original(sha,file)), `${file}: exact source preservation`);
+  assertPreserved(file,read(file),original(sha,file));
   preserved[file] = {source:sha,sha256:hash(read(file))};
 }
 for (const file of ['scripts/learning-engine.js','scripts/route-engine.js','print.html','output/pdf/topo-italie-printboek.pdf','output/pdf/print-source.sha256','output/art/nino-op-de-scooter.webp','output/art/topo-italie-avontuur.webp']) exact(file,base);
@@ -34,7 +35,7 @@ const derived = ['index.html','output/html/topo-italie-interactief.html','output
 const first = derived.map(read);
 execFileSync(process.execPath,['scripts/build.mjs'],{cwd:root,stdio:'pipe'});
 derived.forEach((file,i) => assert(first[i].equals(read(file)),file+' idempotent rebuild'));
-const output = new URL(html.includes('// BEGIN MAP HIT')?'docs/visual/map-hit-hotfix/':html.includes('// BEGIN DISCOVERY MAP')?'docs/visual/discovery-map/':html.includes('// BEGIN SCHOOLBLAD')?'docs/visual/schoolblad/':'docs/visual/release-1-2-integration/',root); mkdirSync(output,{recursive:true});
-const result = {base,art,lakes,masters,preserved,canonicalComposition:'PASS: pinned Hermes app + three lake insertions; isolated schoolblad/Discovery additions and the exact bounded map-hit replacement excluded and checked separately',derivedParity:'PASS: canonical, two downloads, dist',rebuild:'byte-idempotent',masters:'read-only source; no PNGs imported or altered'};
+const output = new URL('docs/visual/ipad-update-47/',root); mkdirSync(output,{recursive:true});
+const result = {base,art,lakes,masters,preserved,canonicalComposition:'PASS: pinned app with isolated schoolblad/Discovery/Focus, bounded map resolver, exact DEM-guided area-c and Kaartstijl exceptions; other44 targets/engines exact',printScope:'Only signed area-c path differs; source SHA fresh,35 pages,PDF generator exact',derivedParity:'PASS: canonical, two downloads, dist',rebuild:'byte-idempotent',masters:'read-only source; no PNGs imported or altered'};
 writeFileSync(new URL('source-preservation.json',output),JSON.stringify(result,null,2)+'\n');
-console.log('Combined source audit: immutable art/geometry, entire Hermes app, engines/print, downloads and idempotent rebuild: PASS');
+console.log('Source audit PASS: immutable engines/art/44 targets, exact approved Apennines/UI exceptions, fresh print and idempotent offline builds');

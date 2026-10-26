@@ -1,36 +1,61 @@
-# Nino — 26 Oct functional iPad test update
+# Functional iPad update — PR #47
 
-**PURPOSE:** unblock today's learner test on the actual iPad, using existing PR #40 without adding new art/pizza/passport scope.
+Baseline: exact PR #40 `71b33fd973c7b650c63e7921af3e7bf6aab5f79f`. Reuses draft PR #47 / `fix/afternoon-ipad-blockers-20261026`. No new artwork, passport, rewards, merge or production deployment.
 
-**Working branch:** `fix/afternoon-ipad-blockers-20261026` (stacked on exact PR #40 `71b33fd`). Both `output/html/topo-italie-duolingo.html` and `output/html/topo-italie-interactief.html` are committed and point to the same byte-identical revised single-file app as `index.html`.
+## Changes
 
-## Changes limited to reported blockers
-1. **Apennijnen:** current SVG `area-c` on-map preview and real 45-ID item list now share a corrected, connected corridor following the mainland peninsula toward Calabria rather than ending in the sea. The coastal constraint was sampled against the existing Italy vector silhouette: **156 polygon vertices and 20 interpolation samples per edge on mapped Italian land**; same ID, kind and school syllabus. Updated `docs/geography/map-manifest.json` geometric source hash. The band remains a *schematic learning zone*, not a geodetic boundary or elevation survey. Physical iPad and educational source QA remain an explicit acceptance gate (#37).
-2. **Kaartstijl:** actual map-style selector now says **Kaartstijl** and uses a simple inline map-layers icon instead of the misaligned `▱` glyph. Align icon/label/dropdown arrow; no externally fetched SVG/font.
-3. **Camera:** `Volledige kaart` → **Heel Italië**, `Hoofdstuk in beeld` → **Zoom op hoofdstuk**; exposes active state. Zoom becomes genuinely disabled with a concise explanation when `Alle 45`, mixed, or no specific chapter context is chosen, instead of silently resetting to overview. Manual +/−/touch pan still work.
-4. **Menu:** study modes stay first; infrequent backup/printing settings move behind **Instellingen en meer**; original accessible buttons, quizzes and single official input unchanged. No added modes, new artwork or reward counters.
+- **Apennijnen / area-c:** connected DEM-guided mainland corridor through18 published pass/peak coordinates, Cadibona→Ligurian/Tuscan/Emilian→central→southern→Pollino/Sila/Serre→Aspromonte near Messina. Only this target shape changes; other44 complete records,27 anchors,6 lakes and original projection remain exact. **Educational zone, not a surveyed mountain boundary.**
+- **Zoom op hoofdstuk** genuinely disabled with explanation for all45/mixed/no specific context. Heel Italië and manual zoom remain available. Guarded `disabled` writes prevent the MutationObserver starvation found during QA.
+- **Heel Italië / Zoom op hoofdstuk / Kaartstijl**, aligned inline layers icon, no external fonts/icons.
+- Original primary study actions first; printing and backups behind **Instellingen en meer**. One canonical quiz/input/check and existing handlers.
+- Print source,35-page PDF and source hash regenerated. Historical guards allow only the exact signed area-c correction and original Kaartstijl module/CSS; no broad geometry/engine exclusions.
 
-## Invariants, tests and review
-- The two output HTML files are pinned to exactly the same Git blob as `index.html`, enabling direct LAN testing **without npm rebuild**.
-- Maintained source modules updated alongside embedded HTML; explicit Focus source protection test was narrowed to accept *only* the specified Apennines + map-style visual changes; the rest of the verified teaching/score source still compared to PR #39.
-- `scripts/validate-map.mjs` now samples the entire visible Apennines polygon boundary on the source Italy vector and rejects offshore crossings.
-- `scripts/qa-focus-mode.mjs` updated for camera button renames. **Automated npm/Chromium suites have NOT been executed through this GitHub-only work session**, so do NOT claim full QA PASS before a real runner executes them; the author performed structural source and GIS-contour checks only.
-- **Mandatory Codex QA:** `npm ci && npm run build && npm run lint && npm test && npm run audit:release-1-2`, then browser iPad Focus tests where Playwright is set up; review resulting diff after build, identical HTML blobs, all 45 ID unchanged, Gold/reward/backup preservation, actual Apennines learning tap and chapter disabling at all-45. Report exact PASS/FAIL; fix failures in this PR only.
-- **Owner physical Safari QA:** iPad landscape/portrait, actual keyboard visibility/draft/submit, Apennines visual and region tapping, Po/Toscane/point picker, Menu/Kaartstijl/Heel Italië/chapter zoom disable; please record any failure and exact version.
-- No merge, production deploy, installation or artwork intake in this PR.
+## Geography proof
 
-## Opened on Mac already serving port 8033
+[Filled-area result](visual/ipad-update-47/apennines-filled-area.json): polygon difference against the largest connected canonical Italy component, **not boundary sampling alone**. Original PR40: **19.6197% outside mainland**; corrected polygon: **0%**, valid and connected. Old quadratic curves flattened at200 segments per curve; corrected398-vertex polygon measured directly. Areas are SVG projected units, not geodesic km².
 
-In the isolated local test clone from the earlier instructions:
+[DEM overlay](visual/ipad-update-47/apennines-dem-overlay.png): red=PR40, blue=corrected; dots=sourced Cadibona/Aspromonte. All63 original Terrarium tile hashes rechecked. [Provenance](geography/apennines-provenance.json) records18 source URLs and recipe: elevation-biased routing near reference segments,10-unit corridor,2-unit mainland inset. Original DEM/raster is unchanged. Signed path SHA256 `e5216860fead38464ae54f22fbec0b868e164b9d17e9a978db90be76d8dbdcd2`.
+
+Extent: [Treccani](https://www.treccani.it/enciclopedia/appennino/) and [Treccani ragazzi](https://www.treccani.it/enciclopedia/appennini_(Enciclopedia-dei-ragazzi)/), conventional Cadibona to the Strait of Messina. Archived Wikipedia coordinate responses locate reference peaks/passes; registered DEM guides intervening ridges. No official perimeter/GIS-survey precision claimed. No submerged ribbon or new Sicily learning target.
+
+## Executed evidence
+
+- `npm ci`:37 packages,0 vulnerabilities. Build/lint/full17-program tests/idempotent source audit pass; final exact-SHA review is recorded separately in PR47 comments.
+- Maintained Focus browser:7 viewports; **simulated** keyboard, rotation/draft/caret, actual canonical submission, zero45-ID style-coordinate drift, Schoolblad, full/context, actual wrong→repair→Point→Write→Gold and3pizzas/1trip; both offline HTMLs.
+- Existing semantic matrix:8 orientation/style/zoom runs,64 deliberate taps for Tuscany/Plain/Po/wrong answers, plus neutral microstates.
+- Additional update matrix:8 orientation/style/zoom runs,32 real Apennines/old-offshore taps. Native disabled/hint at all45 and primary menu tested both iPad orientations. Real UI questions, no expected-answer replacement/direct grading.
+-35-page PDF regenerated with unchanged generator; map page visually inspected. Canonical index, both output HTMLs and dist are identical. Native Safari/OS keyboard approval remains **PENDING**; Chromium simulation is not hardware proof.
+
+Raw JSON/screenshots/logs: [visual/ipad-update-47/](visual/ipad-update-47/).
+
+```sh
+npm ci
+# After intentionally changing print data only (ReportLab/Pillow in isolated Python):
+node scripts/generate-print.mjs
+python scripts/generate-pdf.py
+npm run build && npm run lint && npm test && npm run audit:release-1-2
+PLAYWRIGHT_MODULE=/path/to/playwright/index.mjs QA_FOCUS_DIR=../docs/visual/ipad-update-47/ npm run qa:focus
+PLAYWRIGHT_MODULE=/path/to/playwright/index.mjs node scripts/qa-ipad-update.mjs
+```
+
+Geography development helpers require NumPy/Pillow/Shapely and cached Terrarium tiles; they are not runtime dependencies. `qa-apennines.py` verifies/reconstructs the source DEM; `generate-apennines.py` reads committed coordinate snapshots and that cache. No geography network calls occur in the offline app.
+
+## Owner's existing Mac mini server — port8033
+
+Read-only inspection: running `python3 -m http.server 8033 --bind 0.0.0.0 --directory output/html` from **`~/Topo-iPad-Test`**, clean at PR40. LAN IP **192.168.86.156** on `en1`. QA did not modify server/process/learner data.
+
+Use the exact reviewed SHA in the PR47 final comment/delivered update script, not moving branch HEAD:
 
 ```sh
 cd ~/Topo-iPad-Test
+git status --short # STOP if dirty; preserve changes, do not reset/stash blindly
 git fetch origin fix/afternoon-ipad-blockers-20261026
-git switch --detach origin/fix/afternoon-ipad-blockers-20261026
-# If needed, start the local LAN server:
-python3 -m http.server 8033 --bind 0.0.0.0 --directory output/html
+git switch --detach <EXACT_REVIEWED_SHA>
+cmp index.html output/html/topo-italie-interactief.html
+cmp index.html output/html/topo-italie-duolingo.html
+shasum -a 256 output/html/topo-italie-{interactief,duolingo}.html
 ```
 
-Then in iPad Safari on the same network: `http://192.168.86.156:8033/topo-italie-interactief.html?afternoon=20261026` **only if that is still the Mac's LAN IP**. The local Python server can remain running while the files change; do not start a second server on the same port. Always back up learning progress / use a private Safari tab for test. The URL does not imply a cloud deployment.
+**Leave the existing8033 process running.** It serves changed files on the next request; never start a second server on that port. Safari URL: `http://192.168.86.156:8033/topo-italie-interactief.html?v=<REVIEWED_SHA>`. Query busts the page cache without changing origin/progress. Never clear site data to refresh; back up progress or use a disposable private tab. If LAN changes, verify `ipconfig getifaddr en1`.
 
-**Release status:** functional test candidate, not a QA-certified production GO. Art assets #45 and visual #35 explicitly deferred, as requested.
+Owner acceptance: both orientations, true keyboard/rotation/draft/submit/Next; Apennines north/center/south and wrong coastal tap; all45 zoom disabled; Heel Italië; styles/menu; existing route/Gold/pizza behavior. Record exact SHA and iPadOS/Safari. No merge/production deployment approval implied.

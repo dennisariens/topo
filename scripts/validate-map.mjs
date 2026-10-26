@@ -41,6 +41,17 @@ function contains(ring, [x, y]) {
 }
 const italyLand = polygons(italyPath);
 const onItalianLand = point => italyLand.some(ring => contains(ring, point));
+const apennines = polygons(byId.get('area-c').shape);
+assert.equal(apennines.length,1,'the Apennines zone is one continuous educational land corridor');
+assert.ok(apennines[0].length >= 100,'the restored Apennines corridor is smooth enough to follow the mainland');
+for (let i=0;i<apennines[0].length;i++) {
+ const start=apennines[0][i],end=apennines[0][(i+1)%apennines[0].length];
+ for (let j=0;j<=20;j++) {
+  const t=j/20,p=[start[0]*(1-t)+end[0]*t,start[1]*(1-t)+end[1]*t];
+  assert.ok(onItalianLand(p),'Apennines visible edge must remain on mapped Italian land: '+p);
+ }
+}
+
 for (const item of items.filter(i => i.kind === 'city')) {
   assert.ok(item.reference && Number.isFinite(item.lon) && Number.isFinite(item.lat), `${item.name} has source coordinates; coastal points are never nudged inland`);
 }

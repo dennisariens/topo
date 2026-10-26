@@ -1,8 +1,9 @@
 # TOPO / NINO — Il mio viaggio in Italia
 ## Passport V2 — FIVE SPREADS / TEN INTERIOR PAGES — OWNER DESIGN CONTRACT
 **Date:** 26 October 2026
-**State:** design specification, **NOT implemented**. Art binaries from stamp issue #43 still require upload and alpha QA.
+**State:** design specification, **NOT implemented**. Original stamp/book and Gold/postcard art sources have been verified in Git; source presence does not imply alpha, geography, or app QA approval. 10 of 11 stamps have an inspected safe derivative in Hermes PR #48; ISOLE and the open-book base require rework.
 **Branch:** `art/nino-travel-stamps-v2-20261026`
+**LATEST PRODUCTION DECISION (26 Oct):** [Pages 03/04 layer-based implementation contract](PASSPORT_PAGES_03_04_PRODUCTION_DECISION_2026-10-26.md) is authoritative for stamp-page layout and QA. Recently generated 03/04 full-page illustrations are style references, **not** ship-ready backgrounds. No additional full-page renders required for 05–10 unless a specific missing isolated decorative asset is proven.
 **Companion canonical product contract:** `docs/NINO_JOURNEY_GOLD_STORY_2026-10-26.md` on `docs/nino-gold-journey-roadmap-20261026`. Read it before changing app logic; this document complements rather than replaces that contract. See issues #21 (passport), #41 (stamp imperfection), #20 (optional personalization), #43 (source assets).
 
 ## 0. Outcome and hard boundaries
@@ -37,7 +38,7 @@ The split is deliberate: regular stamps need 4 pages because 11 mixed shapes (ci
 - A trip increments only via genuine existing 3-pizza sequence (8 eligible correct for each Margherita → Salami → Quattro Formaggi; then Vespa). Repeat visits are labelled returns; no invented trip date and no ceiling at seven.
 - ARRIVO is a **separate travel imprint**, not a chapter stamp, Gold stamp or 46th map task.
 - `finalGold` is **derived** from `goldAt > 0` for all 11 canonical chapters. Do not persist a competing boolean. Completing all 11 chapters alone is not final Gold. Before unlock p10 shows honest `X/11 gouden hoofdstukken` without counterfeit golden art.
-- Final gold concept is a one-off sovereign Nino fictional travel-award seal, not a duplicate of 11 small chapter Gold overlays. Gold art is **not yet approved as a source asset**.
+- Final gold concept is a one-off sovereign Nino fictional travel-award seal, not a duplicate of 11 small chapter Gold overlays. **Two owner-selected Gold original source files are now in the art branch**, with independent technical alpha/export and UI QA still required.
 
 ### Personalization & postcard rules
 - First name/nickname, `favoritePizza` (Margherita / Salami / Quattro Formaggi / none) and optional approved cover theme are cosmetic; no reward mutation.
@@ -48,8 +49,8 @@ The split is deliberate: regular stamps need 4 pages because 11 mixed shapes (ci
 ## 2. Visual system — LOCKED
 - Original burgundy leather cover, subtle old-brass travel compass motif and existing vintage cream-page feel remain unchanged. Nino identity: curly dark hair, green pilot cap/goggles, blue shirt, red scarf, brown backpack, red Vespa.
 - Original V2 approved ink stamps **must be used** (not regenerated) in their varied shapes/inks: Firenze terracotta round; Roma red oval; Borghi sepia chamfered; Liguria red postal perforations; Isole terra-red+blue; Dolomiti brown oval; Etna sepia oval; Toscana muted olive oval; Confine Italia burgundy/sepia rounded rectangle with **single border marker and no road signs**; Mari vintage blue postmark; Fiumi warm rust circular.
-- Keep stamp masters pristine; stamps rendered as translucent ink overlays, never opaque white or cream stickers. Source album QA warning: Roma red exterior, Toscana olive gradient, Confine Italia checkerboard, others with pale fill. Provisional WebP alpha previews from package are **QA candidates, not production pass**.
-- Slot layout feels collected, not perfect digital cards. Use #41 deterministic placement: mostly ±1–3° rotation, extremes ≤ ±6°, modest x/y shift within **slot padding**, asymmetrically varied opacity/pressure (target ≈85–98% while retaining legibility). Never randomize on rerender/reopen or apply effects to raw masters.
+- Keep stamp masters pristine; stamps rendered as translucent ink overlays, never opaque white or cream stickers. Source album QA warning: Roma red exterior, Toscana olive gradient, Confine Italia checkerboard, others with pale fill. Hermes PR #48 independently inspected and allowlisted safe exports for **10/11 stamps**, while ISOLE geographic placement is **REWORK**; original full stamp masters are never treated as ready-to-overlay transparent ink by default.
+- Slot layout feels collected, not perfect digital cards. Use #41 deterministic placement: mostly ±1–3° rotation, extremes ≤ ±6°, modest x/y shift within **slot padding**, asymmetrically varied ink pressure (approved Hermes #45 placement proof uses **98–100%**, because protected label masks are not supplied). Never randomize on rerender/reopen or apply effects to raw masters.
 - Chapter Gold: smaller warm brass/gilt mark beside relevant ink. Final Gold: bespoke, separate larger authentic foil embossed award; no excessive neon particles, stars shower, UI casino vibe.
 - Postcards are physical paper souvenirs with corners/holders. Four artwork fronts and one reusable reverse (no generated personal data/text). NO map-edited photo used as an assessed geography source.
 - Page details: subtle borders, worn corners, light thread/paper texture; no illegible dense miniature type. Decorative vignette on p6 is clearly not a reward position.
@@ -90,7 +91,7 @@ The split is deliberate: regular stamps need 4 pages because 11 mixed shapes (ci
 PRs #29 pizza and #40 iPad Focus Mode and #30 atlas are in-flight: do not rework their code, copy or rebase without a focused integration plan.
 
 ## 7. Definition of done (mandatory evidence)
-- [ ] Art source pack issue #43 fully present on verified Git remote commit: 11 original masters, 2 original book masters, 11 QA candidates, manifest.
+- [x] Original art source pack verified in Git: 11 original masters, 2 original book masters, 11 QA candidates, manifest. **Separate alpha/geography QA still open for ISOLE and book base**; do not confuse source presence with ship approval.
 - [ ] Blank folio owner-approved against original cover/open-book identity; 1 source master, high-res export, clean alpha/paper; avoid full-screen generated mockup masquerading as master.
 - [ ] All 5 facing spreads and 10 single-page portrait views tested with zero to eleven earned chapter stamps and 0/11 to 11/11 genuine Gold. No 12th phantom slot.
 - [ ] Three stamps per page can fit red/blue ISOLE and wide LANDEN without clipping/binding intrusion; p6 decorative space clearly non-achievement.

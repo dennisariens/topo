@@ -9,9 +9,12 @@ test('P0 iPad hotfix preserves verified PR39 teaching, rewards and source outsid
  assert.ok(oldArea&&newArea&&oldArea!==newArea,'intentional Apennines geometry correction exists');
  const oldAtlas=execFileSync('git',['show',base+':scripts/discovery-map.js'],{cwd:root,maxBuffer:24e6}).toString();
  const newAtlas=read('scripts/discovery-map.js').toString();
+ const oldAtlasCss=execFileSync('git',['show',base+':scripts/discovery-map.css'],{cwd:root,maxBuffer:24e6}).toString();
+ const newAtlasCss=read('scripts/discovery-map.css').toString();
  let normalized=withoutFocus(html).replaceAll(newArea,oldArea);
  assert.ok(normalized.includes(newAtlas),'new Kaartstijl source is embedded');
- normalized=normalized.replace(newAtlas,oldAtlas);
+ assert.ok(normalized.includes(newAtlasCss),'new Kaartstijl CSS is embedded');
+ normalized=normalized.replace(newAtlas,oldAtlas).replace(newAtlasCss,oldAtlasCss);
  assert.equal(normalized,baseline,'canonical quiz, targets, route and reward engine unchanged outside scoped corrections');
  for(const p of ['scripts/map-hit.js','scripts/schoolblad.js','scripts/schoolblad.css','scripts/learning-engine.js','scripts/route-engine.js','assets/discovery/terrain.webp','geography/lakes/projected-manifest.json','print.html','output/pdf/topo-italie-printboek.pdf','package-lock.json'])assert(read(p).equals(execFileSync('git',['show',base+':'+p],{cwd:root,maxBuffer:24e6})),p);
  for(const p of ['output/html/topo-italie-interactief.html','output/html/topo-italie-duolingo.html'])assert(read(p).equals(read('index.html')),p);

@@ -36,9 +36,18 @@
    const b = document.createElement('button');b.type = 'button';b.textContent = text;
    b.onclick = action;nav.append(b);return b;
   }
-  button('Volledige kaart', () => overview());
-  button('Hoofdstuk in beeld', () => chapter());
-  tools.append(nav);
+  const fullButton = button('Heel Italië', () => overview());
+  const chapterButton = button('Zoom op hoofdstuk', () => chapter());
+  const hint = document.createElement('span');
+  hint.className='focusCameraHint';hint.hidden=true;hint.textContent='Kies één hoofdstuk om in te zoomen';
+  nav.append(hint);tools.append(nav);
+  function updateButtons() {
+   const ctx=context(),available=!!ctx.ids?.length && ctx.ids.length < 45 && !!bounds(ctx.ids);
+   chapterButton.disabled=!available;
+   chapterButton.title=available?'Zoom in op alle plaatsen van dit hoofdstuk':'Kies één hoofdstuk om in te zoomen';
+   hint.hidden=available;fullButton.setAttribute('aria-pressed',String(cameraMode==='overview'));
+   chapterButton.setAttribute('aria-pressed',String(cameraMode==='chapter'&&available));
+  }
   function writeStyle(name, value) {
    if (canvas.style.getPropertyValue(name) !== value) canvas.style.setProperty(name, value);
   }
@@ -62,7 +71,7 @@
     writeStyle('--focus-world-' + name, value + 'px');
    }
    area.scrollLeft = p.scrollLeft;area.scrollTop = p.scrollTop;
-   center = readCenter();outputs();
+   center = readCenter();outputs();updateButtons();
   }
   function resize() {
    if (!active || !area.clientWidth || !area.clientHeight ||
@@ -128,7 +137,7 @@
   function chapter() {
    if (!active) return;
    const b = bounds(context().ids), w = area.clientWidth, h = area.clientHeight;
-   if (!b || b.width <= 0 || b.height <= 0 || !w || !h) { overview();return; }
+   if (!b || b.width <= 0 || b.height <= 0 || !w || !h) { updateButtons();return; }
    const fit = Math.min(w / WORLD.width, h / WORLD.height);
    level = clamp(Math.min(w / b.width, h / b.height) / fit, 1, MAX_ZOOM);
    center = { x: b.x + b.width / 2, y: b.y + b.height / 2 };
@@ -182,7 +191,7 @@
     if (next && !active) { enter();return; }
     if (!next && active) { exit();return; }
     if (!active) return;
-    resize();
+    resize();updateButtons();
     const key = context().key;
     // Entry/chapter only. Grading, Next, typing, theme and repeated observer calls
     // never move the camera. Re-entering exploration permits one fresh context fit.

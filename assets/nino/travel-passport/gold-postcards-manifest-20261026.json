@@ -1,0 +1,133 @@
+{
+  "project": "TOPO / NINO",
+  "release": "2026-10-26 Gold + Cartoline approved design source batch",
+  "branch_target": "art/nino-travel-stamps-v2-20261026",
+  "asset_status": "SOURCE_READY_PRODUCTION_QA_PENDING",
+  "artwork_files": [
+    {
+      "path": "assets/nino/travel-passport/gold/masters/gold-chapter-seal-v2.png",
+      "original_filename": "antieke_gouden_kompaszegel_met_laurierkrans.png",
+      "description": "Chapter Gold Seal V2, owner-approved antique/brushed brass",
+      "kind": "chapter-gold",
+      "width": 1254,
+      "height": 1254,
+      "mode": "RGBA",
+      "alpha_range": [
+        0,
+        255
+      ],
+      "sha256": "60c54e6efbb8239c327b4d7c76660dc816535a1f5431bf7c3cbe9f2927a1adf0",
+      "bytes": 2422442,
+      "approved_visual_direction": true,
+      "production_alpha_approved": false
+    },
+    {
+      "path": "assets/nino/travel-passport/gold/masters/gold-esploratore-doro.png",
+      "original_filename": "a_highly_detailed_photorealistic_illustrative_gol.png",
+      "description": "Final Gold, owner-approved, 11 chapter Gold criteria required",
+      "kind": "final-gold",
+      "width": 1254,
+      "height": 1254,
+      "mode": "RGBA",
+      "alpha_range": [
+        0,
+        255
+      ],
+      "sha256": "e94a76ab4c0220eead56e3f208dc539a71bae2f217ca7756939903bce024e3ca",
+      "bytes": 3473588,
+      "approved_visual_direction": true,
+      "production_alpha_approved": false
+    },
+    {
+      "path": "assets/nino/travel-passport/postcards/masters/postcard-01-sicilia-front.png",
+      "original_filename": "siciliaans_kustdorp_onder_de_etna.png",
+      "description": "Sicilia; first postcard style master",
+      "kind": "postcard-front",
+      "width": 1536,
+      "height": 1024,
+      "mode": "RGBA",
+      "alpha_range": [
+        0,
+        254
+      ],
+      "sha256": "36f1656b44f00c2eec477517d32de0b2067e42507131a110d424cc22d4c3e328",
+      "bytes": 3241106,
+      "approved_visual_direction": true,
+      "production_alpha_approved": false
+    },
+    {
+      "path": "assets/nino/travel-passport/postcards/masters/postcard-02-sardegna-front.png",
+      "original_filename": "wide_postcard_like_landscape_illustration_a_scen.png",
+      "description": "Sardegna; natural coastal bay",
+      "kind": "postcard-front",
+      "width": 1536,
+      "height": 1024,
+      "mode": "RGBA",
+      "alpha_range": [
+        0,
+        254
+      ],
+      "sha256": "b06eb78fb5ad8e0116175317a98ab16ae88b251001adb40763c23d0c274ac4e3",
+      "bytes": 3687999,
+      "approved_visual_direction": true,
+      "production_alpha_approved": false
+    },
+    {
+      "path": "assets/nino/travel-passport/postcards/masters/postcard-03-napoli-vesuvio-front.png",
+      "original_filename": "wide_scenic_postcard_style_illustration_photoreali.png",
+      "description": "Napoli and Vesuvius skyline",
+      "kind": "postcard-front",
+      "width": 1536,
+      "height": 1024,
+      "mode": "RGBA",
+      "alpha_range": [
+        0,
+        253
+      ],
+      "sha256": "822ada426bf732273738bcdb1f9bbc2466beb2bd2d5c8b6c29b5815d807910ab",
+      "bytes": 3284538,
+      "approved_visual_direction": true,
+      "production_alpha_approved": false
+    },
+    {
+      "path": "assets/nino/travel-passport/postcards/masters/postcard-04-venezia-front.png",
+      "original_filename": "wide_postcard_like_illustration_painting_of_venice.png",
+      "description": "Venezia approved V2 after scale/perspective fix; NOT earlier alternatives",
+      "kind": "postcard-front",
+      "width": 1536,
+      "height": 1024,
+      "mode": "RGB",
+      "alpha_range": null,
+      "sha256": "3228aeb85ca52d214378f287ba5fb63be42c40966074bd98a5d2548f858359e6",
+      "bytes": 3192154,
+      "approved_visual_direction": true,
+      "production_alpha_approved": false
+    },
+    {
+      "path": "assets/nino/travel-passport/postcards/masters/postcard-05-universal-reverse.png",
+      "original_filename": "a_clean_high_resolution_flat_lay_vintage_postca.png",
+      "description": "Reusable postcard reverse, no dynamic text baked",
+      "kind": "postcard-back",
+      "width": 1536,
+      "height": 1024,
+      "mode": "RGBA",
+      "alpha_range": [
+        0,
+        254
+      ],
+      "sha256": "67450c16303c2da9d0c7d1e690554b163ce1c8c720a3244abee17c3440a3ed86",
+      "bytes": 3052648,
+      "approved_visual_direction": true,
+      "production_alpha_approved": false
+    }
+  ],
+  "source_rules": [
+    "Keep source masters byte-perfect. Do not overwrite earlier V2 stamps or Nino art.",
+    "Venezia V2 is the chosen final Venice artwork; earlier Venice variants rejected.",
+    "Production alpha requires independent QA, especially Venezia source RGB and postcard off-card margins.",
+    "Validate design at booklet actual sizes and compare postcard perforation/border geometry; never assume generated silhouettes exactly match.",
+    "Chapter Gold only on actual goldAt for the chapter; final Gold only after all 11 chapters goldAt.",
+    "Postcards are cultural souvenirs; no invented learner achievements or dates.",
+    "No separate blank folio art file in this batch. No ARRIVO stamp art yet."
+  ]
+}

@@ -50,3 +50,8 @@ body[data-focus-keyboard="true"][data-focus-answered="false"][data-focus-task="w
 @media(forced-colors:active){.focusAnswerSheet,.focusLearnBar,.focusMenuPanel{background:Canvas;color:CanvasText;backdrop-filter:none;border:2px solid CanvasText}#focusAnswerSheet #prompt,#focusAnswerSheet #message,#focusAnswerSheet #answer{background:Canvas;color:CanvasText}#focusAnswerSheet #check{background:ButtonFace;color:ButtonText;border:2px solid ButtonText}}
 @media(prefers-reduced-motion:reduce){.focusAnswerSheet,.focusAnswerSheet *,.focusLearnBar,#focusMenu *{animation:none!important;transition:none!important;scroll-behavior:auto!important}}
 @media print{#focusMenu,#focusAnswerSheet,#focusLearnBar,#focusLessonStatus{display:none!important}body[data-focus-mode="true"] .mapCard{position:static;height:auto;display:block}body[data-focus-shell="true"]>header{position:static}}
+
+/* Study modes first; printing/backups belong to the less-used settings panel. */
+#focusMenu .focusMenuSettings{margin-top:10px;padding-top:10px;border-top:1px solid #dfd4bd}
+#focusMenu .focusMenuSettings>details>summary{cursor:pointer;min-height:44px;display:flex;align-items:center;font-size:14px;font-weight:650}
+#focusMenu .focusMenuSettingsContents{padding:4px 0 10px}

@@ -1,0 +1,456 @@
+{
+  "baseline": "71b33fd973c7b650c63e7921af3e7bf6aab5f79f",
+  "records": [
+    {
+      "name": "landscape",
+      "theme": "school",
+      "zoom": 1,
+      "all45Disabled": true,
+      "samples": [
+        {
+          "asked": "area-c",
+          "world": [
+            462.3125,
+            481.52
+          ],
+          "client": [
+            599.8748408971207,
+            378.8772875702247
+          ],
+          "correct": true
+        },
+        {
+          "asked": "area-c",
+          "world": [
+            573.2149999999999,
+            646
+          ],
+          "client": [
+            663.1823336551965,
+            472.7689167837078
+          ],
+          "correct": true
+        },
+        {
+          "asked": "area-c",
+          "world": [
+            673.1899999999999,
+            851.6
+          ],
+          "client": [
+            720.2519812148876,
+            590.1334533005618
+          ],
+          "correct": true
+        },
+        {
+          "asked": "area-c",
+          "world": [
+            584,
+            702
+          ],
+          "client": [
+            669.3388342696629,
+            504.73591116573033
+          ],
+          "correct": false
+        }
+      ]
+    },
+    {
+      "name": "landscape",
+      "theme": "school",
+      "zoom": 2,
+      "all45Disabled": true,
+      "samples": [
+        {
+          "asked": "area-c",
+          "world": [
+            462.3125,
+            481.52
+          ],
+          "client": [
+            609.7577982356039,
+            456.7521878511235
+          ],
+          "correct": true
+        },
+        {
+          "asked": "area-c",
+          "world": [
+            573.2149999999999,
+            646
+          ],
+          "client": [
+            736.374730775983,
+            456.5383339185392
+          ],
+          "correct": true
+        },
+        {
+          "asked": "area-c",
+          "world": [
+            673.1899999999999,
+            851.6
+          ],
+          "client": [
+            850.5157810744381,
+            456.27101650280883
+          ],
+          "correct": true
+        },
+        {
+          "asked": "area-c",
+          "world": [
+            584,
+            702
+          ],
+          "client": [
+            748.6879213483146,
+            456.4733058286516
+          ],
+          "correct": false
+        }
+      ]
+    },
+    {
+      "name": "landscape",
+      "theme": "discovery",
+      "zoom": 1,
+      "all45Disabled": true,
+      "samples": [
+        {
+          "asked": "area-c",
+          "world": [
+            462.3125,
+            481.52
+          ],
+          "client": [
+            599.8748408971207,
+            378.8772875702247
+          ],
+          "correct": true
+        },
+        {
+          "asked": "area-c",
+          "world": [
+            573.2149999999999,
+            646
+          ],
+          "client": [
+            663.1823336551965,
+            472.7689167837078
+          ],
+          "correct": true
+        },
+        {
+          "asked": "area-c",
+          "world": [
+            673.1899999999999,
+            851.6
+          ],
+          "client": [
+            720.2519812148876,
+            590.1334533005618
+          ],
+          "correct": true
+        },
+        {
+          "asked": "area-c",
+          "world": [
+            584,
+            702
+          ],
+          "client": [
+            669.3388342696629,
+            504.73591116573033
+          ],
+          "correct": false
+        }
+      ]
+    },
+    {
+      "name": "landscape",
+      "theme": "discovery",
+      "zoom": 2,
+      "all45Disabled": true,
+      "samples": [
+        {
+          "asked": "area-c",
+          "world": [
+            462.3125,
+            481.52
+          ],
+          "client": [
+            609.7577982356039,
+            456.7521878511235
+          ],
+          "correct": true
+        },
+        {
+          "asked": "area-c",
+          "world": [
+            573.2149999999999,
+            646
+          ],
+          "client": [
+            736.374730775983,
+            456.5383339185392
+          ],
+          "correct": true
+        },
+        {
+          "asked": "area-c",
+          "world": [
+            673.1899999999999,
+            851.6
+          ],
+          "client": [
+            850.5157810744381,
+            456.27101650280883
+          ],
+          "correct": true
+        },
+        {
+          "asked": "area-c",
+          "world": [
+            584,
+            702
+          ],
+          "client": [
+            748.6879213483146,
+            456.4733058286516
+          ],
+          "correct": false
+        }
+      ]
+    },
+    {
+      "name": "portrait",
+      "theme": "school",
+      "zoom": 1,
+      "all45Disabled": true,
+      "samples": [
+        {
+          "asked": "area-c",
+          "world": [
+            462.3125,
+            481.52
+          ],
+          "client": [
+            424.9214832777388,
+            519.2387356039326
+          ],
+          "correct": true
+        },
+        {
+          "asked": "area-c",
+          "world": [
+            573.2149999999999,
+            646
+          ],
+          "client": [
+            520.5573663096909,
+            661.0767468398877
+          ],
+          "correct": true
+        },
+        {
+          "asked": "area-c",
+          "world": [
+            673.1899999999999,
+            851.6
+          ],
+          "client": [
+            606.7700071980337,
+            838.3742608848315
+          ],
+          "correct": true
+        },
+        {
+          "asked": "area-c",
+          "world": [
+            584,
+            702
+          ],
+          "client": [
+            529.8577247191012,
+            709.3678985252809
+          ],
+          "correct": false
+        }
+      ]
+    },
+    {
+      "name": "portrait",
+      "theme": "school",
+      "zoom": 2,
+      "all45Disabled": true,
+      "samples": [
+        {
+          "asked": "area-c",
+          "world": [
+            462.3125,
+            481.52
+          ],
+          "client": [
+            410.3429665554776,
+            636.4774712078652
+          ],
+          "correct": true
+        },
+        {
+          "asked": "area-c",
+          "world": [
+            573.2149999999999,
+            646
+          ],
+          "client": [
+            409.6147326193819,
+            636.1534936797755
+          ],
+          "correct": true
+        },
+        {
+          "asked": "area-c",
+          "world": [
+            673.1899999999999,
+            851.6
+          ],
+          "client": [
+            435.04001439606736,
+            636.7485217696631
+          ],
+          "correct": true
+        },
+        {
+          "asked": "area-c",
+          "world": [
+            584,
+            702
+          ],
+          "client": [
+            410.2154494382023,
+            636.7357970505618
+          ],
+          "correct": false
+        }
+      ]
+    },
+    {
+      "name": "portrait",
+      "theme": "discovery",
+      "zoom": 1,
+      "all45Disabled": true,
+      "samples": [
+        {
+          "asked": "area-c",
+          "world": [
+            462.3125,
+            481.52
+          ],
+          "client": [
+            424.9214832777388,
+            519.2387356039326
+          ],
+          "correct": true
+        },
+        {
+          "asked": "area-c",
+          "world": [
+            573.2149999999999,
+            646
+          ],
+          "client": [
+            520.5573663096909,
+            661.0767468398877
+          ],
+          "correct": true
+        },
+        {
+          "asked": "area-c",
+          "world": [
+            673.1899999999999,
+            851.6
+          ],
+          "client": [
+            606.7700071980337,
+            838.3742608848315
+          ],
+          "correct": true
+        },
+        {
+          "asked": "area-c",
+          "world": [
+            584,
+            702
+          ],
+          "client": [
+            529.8577247191012,
+            709.3678985252809
+          ],
+          "correct": false
+        }
+      ]
+    },
+    {
+      "name": "portrait",
+      "theme": "discovery",
+      "zoom": 2,
+      "all45Disabled": true,
+      "samples": [
+        {
+          "asked": "area-c",
+          "world": [
+            462.3125,
+            481.52
+          ],
+          "client": [
+            410.3429665554776,
+            636.4774712078652
+          ],
+          "correct": true
+        },
+        {
+          "asked": "area-c",
+          "world": [
+            573.2149999999999,
+            646
+          ],
+          "client": [
+            409.6147326193819,
+            636.1534936797755
+          ],
+          "correct": true
+        },
+        {
+          "asked": "area-c",
+          "world": [
+            673.1899999999999,
+            851.6
+          ],
+          "client": [
+            435.04001439606736,
+            636.7485217696631
+          ],
+          "correct": true
+        },
+        {
+          "asked": "area-c",
+          "world": [
+            584,
+            702
+          ],
+          "client": [
+            410.2154494382023,
+            636.7357970505618
+          ],
+          "correct": false
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "physicalSafari": "PENDING",
+  "proof": "real UI questions/touch, no current-answer replacement or direct grading"
+}

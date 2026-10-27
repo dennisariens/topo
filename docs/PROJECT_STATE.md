@@ -1,5 +1,9 @@
 # Project state
 
+## P0 issue #50 — downloadable offline computer HTML
+
+Dedicated branch from exact reviewed PR47 `b111ed2abfed15c97106e3d755fcff33c704215f`. Runtime audit found no blocker; canonical `output/html/TOPO-Italie-Computer.html` is byte-identical to the reviewed outputs. Build preserves that name. Actual macOS Chromium file:// offline QA, full tests/lint/build, semantic/Gold/rewards, persistence/reset and Apennines controls pass. Download and precise evidence: [OFFLINE_COMPUTER_50.md](OFFLINE_COMPUTER_50.md). Draft only; no merge/deploy/server mutation; physical Safari and independent Hermes remain pending.
+
 ## Current P0: functional iPad update — PR #47
 
 `fix/afternoon-ipad-blockers-20261026` is stacked on exact PR40 `71b33fd`. Apennines now use18 sourced mountain anchors and the unchanged registered DEM, with a connected mainland educational corridor and0% filled-area leakage (PR40:19.62%). Only area-c.shape changes; other44 items/27 anchors/6 lakes stay exact. All45 disables chapter zoom with an explanation; Heel Italië/Zoom op hoofdstuk/Kaartstijl are clear, settings/printing secondary. Actual gates found/fixed stale print artifacts and an observer-loop in chapter disabling. Both offline HTMLs,35-page PDF,17-program chain,7-viewport Focus browser suite,64 existing semantic taps and32 Apennines/offshore taps are verified. See [AFTERNOON_IPAD_BETA_2026-10-26.md](AFTERNOON_IPAD_BETA_2026-10-26.md) for raw evidence/source limits/server8033 instructions. Final independent exact-SHA verdict belongs in PR47 comments; physical Safari remains PENDING. Existing server/test clone untouched. No art/passport/new rewards, merge or production deployment.

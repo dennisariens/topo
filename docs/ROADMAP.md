@@ -1,12 +1,37 @@
 # Topo / Nino — Roadmap
 
-**Updated 26 October 2026.** Private Italy beta target: **29 October 2026 (conditional, not a completion claim).** GitHub PRs are still draft/unmerged unless their live status changes. This document tracks current shipping gates, product directions, agent ownership and accurate scope.
+**Updated 27 October 2026.** Private Italy beta target: **29 October 2026 (conditional, not a completion claim).** GitHub PRs are still draft/unmerged unless their live status changes. This document tracks current shipping gates, product directions, agent ownership and accurate scope.
 
 For the full accepted story + technical contract, see **[Nino Journey — Gold, Passport and Story](NINO_JOURNEY_GOLD_STORY_2026-10-26.md)**. Read alongside [current project state](PROJECT_STATE.md), [map selection hotfix](MAP_SELECTION_HOTFIX.md) and [Focus Mode](FOCUS_MODE.md). Planned features are not implemented merely because documented here.
 
+## 27 October 2026 — Owner UX review & next build waves (current authority)
+
+**Working computer download NOW:** [issue #50](https://github.com/dennisariens/topo/issues/50) / [draft PR #51](https://github.com/dennisariens/topo/pull/51) at `bd1e57bc48e55a065cbbccb68acea196a64a187c`, with [verified pre-release download](https://github.com/dennisariens/topo/releases/tag/offline-computer-issue-50). It retains the fully offline functional PR #47 runtime byte-for-byte (`b111ed2abfed15c97106e3d755fcff33c704215f`), including corrected Apennines, map semantic hit-testing and all 45 IDs. **Codex file:// and release digest PASS; independent Hermes desktop verification and physical iPad Safari remain pending.** Neither PR #47 nor PR #51 is merged to main. PR #49 is passport **preparation only**, not a newer working app.
+
+**New authoritative design brief:** [TOPO UX & Journey Design V3 (27 October)](TOPO_UX_JOURNEY_V3_2026-10-27.md). Preserve existing [Nino Journey Gold story](NINO_JOURNEY_GOLD_STORY_2026-10-26.md), two interactive map styles [#22](https://github.com/dennisariens/topo/issues/22), and the separate physical iPad acceptance [#33](https://github.com/dennisariens/topo/issues/33). The 29 Oct beta is a conditional objective, not a license to merge incomplete UX.
+
+### Roadmap V3 — delivery gates
+
+| Phase | Priority and feature | Tracked execution, dependencies and evidence |
+| --- | --- | --- |
+| **P0: now** | Keep tested, downloadable offline computer release working; finish 45-object learning integrity audit; actual iPad Safari keyboard/lesson acceptance separately | [#50](https://github.com/dennisariens/topo/issues/50) / [PR #51](https://github.com/dennisariens/topo/pull/51); [#38](https://github.com/dennisariens/topo/issues/38); [#33](https://github.com/dennisariens/topo/issues/33). Independent QA must be exact SHA. |
+| **Phase A — P1, first UX/design** | **Clean desktop learning column**, clearer hierarchy in mode-specific map/answers, move utilities into menu; unobtrusively display **existing** daily goal (do not add new streak engine) | New [#52](https://github.com/dennisariens/topo/issues/52) with [#44](https://github.com/dennisariens/topo/issues/44). Design screenshot comparison first. |
+| **Phase A — P1** | Larger **Nino encouragement event cards** for earned/important moments, routine grading unobstructed | New [#53](https://github.com/dennisariens/topo/issues/53), owner overlay storyboard → Codex implementation → Hermes QA. |
+| **Phase A — P1** | Fix upper-left cropped character with genuine approved **TOPO icon and wordmark**; align small and home-screen assets | Existing [#8](https://github.com/dennisariens/topo/issues/8) and native packaging later [#12](https://github.com/dennisariens/topo/issues/12). Asset owner approval required. |
+| **Phase A — P1** | Bring mostly-green **Ontdekkingskaart** up to benchmark quality; during Test/Gold apply **quiet crème assessment rendering**, not a third interactive map selector | Existing [#35](https://github.com/dennisariens/topo/issues/35), [#22](https://github.com/dennisariens/topo/issues/22); use original map geometry, compare at same camera. |
+| **Phase B — P1** | Redesign child-facing **`Mijn reisboekje`** (book, actual stamps, ARRIVO, Gold), retain factual 45-object **`Mijn kennis`** view inside; integrate verified passport art and **static** accurate journey first | Existing [#21](https://github.com/dennisariens/topo/issues/21), [#20](https://github.com/dennisariens/topo/issues/20), [#41](https://github.com/dennisariens/topo/issues/41), [PR #49](https://github.com/dennisariens/topo/pull/49), [#45](https://github.com/dennisariens/topo/issues/45)/[#46](https://github.com/dennisariens/topo/issues/46). P0 #38 & art production gates before runtime integration. |
+| **Phase B → C — P1 design/P2 motion** | Earned **Vespa route storyboard**, depart → short ride → truthful destination → stamp/postcard → back to exact lesson; replay does not re-award | New [#54](https://github.com/dennisariens/topo/issues/54) after truthful passport trip state. Maintain 8 slices/pizza and every 3 pizzas/trip. |
+| **Phase C — P2** | Optional **Milaan football** only after actual fourth-travel arrival; revisitable from journey book, skippable and cosmetic | New [#55](https://github.com/dennisariens/topo/issues/55). No assessed football object/extra currency/licensed kits. |
+| **Phase C — P2** | Optional **Bologna Vespa pit stop** after actual second-travel arrival; brief and safe, never obligatory | New [#56](https://github.com/dennisariens/topo/issues/56), no fuel/damage/maintenance economy. |
+| **Phase C — P2** | Occasional **gelati** celebration after real already-recorded milestone, not a second point/reward system | New [#57](https://github.com/dennisariens/topo/issues/57), owner artwork/cadence review before code. |
+
+**Delivery rule per phase:** Main owns scope/priority; Hermes creates comparative visual proof and independently verifies exact Codex changes; Codex codes only approved bounded components; no simultaneous editing of the same application source. First pass = 1 design proof + owner GO/ADJUST, second pass = 1 small PR, then precise offline + state QA. No production/main merge without owner approval. Formal Gold/Test must remain low-distraction, no clues/false achievements.
+
+---
+
 ## 0. Current working candidate and release truth
 
-The latest combined functional branch verified when updating this document is **PR #40** at exact commit 71b33fd973c7b650c63e7921af3e7bf6aab5f79f. It stacks on **PR #39** fc8f5be4 (semantic map tap repair), which stacks on **PR #30** f67027d (two map paints with registered DEM), **PR #27** 1c4d00f (fold-out school sheet) and **PR #17** c68ace4 (Nino/lakes). None of these draft branches is an owner-approved merge or verified production deployment.
+The historical 26 October combined functional branch documented in this section was **PR #40** at exact commit 71b33fd973c7b650c63e7921af3e7bf6aab5f79f. It stacks on **PR #39** fc8f5be4 (semantic map tap repair), which stacks on **PR #30** f67027d (two map paints with registered DEM), **PR #27** 1c4d00f (fold-out school sheet) and **PR #17** c68ace4 (Nino/lakes). None of these draft branches is an owner-approved merge or verified production deployment.
 
 | Feature | Evidence/status | Explicit remaining gate |
 | --- | --- | --- |

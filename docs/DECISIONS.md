@@ -147,3 +147,31 @@ Supersedes unconditional nearest-point capture and SVG paint-order selection for
 ## P0 #33 — map-first Focus Mode after PR #39
 
 **Decision** Follow the owner's rejection of the permanent iPad sidebar. Stack one isolated implementation on verified PR #39 `fc8f5be4`, retaining its resolver and every geographic/learning/reward rule. Reparent the one canonical quiz/input/check to a low centered warm parchment sheet; expose existing modes, group/test and backup controls through a compact Menu. Use real visualViewport offsets/bounds and safe areas, without replacing field handlers or creating another grader. Keep full-map/chapter controls over the same SVG; exploration alone may auto-frame a group, never the requested graded answer. Keep explicit collapse/return, opaque input/feedback and accessible contrast/transparency fallbacks. **Status** IMPLEMENTED conditional candidate: Node/source gates and integrated viewport/semantic/route/offline tests pass, but actual Safari/IME/VoiceOver and an approval-blocked inherited browser-harness rerun remain open. **Supersedes** iPad's 290px permanent sidebar; does not supersede exact geography, #39 semantics, schoolblad or reward integrity. See `FOCUS_MODE.md`. No pizza/site/passport/art redesign, merge or deployment.
+
+## 2026-10-27 — Real downloadable computer baseline before delight layers
+
+**Decision** Retain issue #50 / draft PR #51 offline HTML, byte-identical in functionality to reviewed PR #47, as the usable learner-facing computer release while future UX is designed. The actual GitHub release asset is a downloadable ~3.13 MB single file, not a demand to run a local server. **Status** CODEX DELIVERED; independent Hermes desktop QA and physical iPad Safari separately pending. **Preserves** all 45 learning IDs, 11 chapters, corrected Apennines, canonical offline saving/backup and map integrity; no merge/deploy to main.
+
+## 2026-10-27 — Calm map-first learning and truthful existing day goal
+
+**Decision** Simplify the busy desktop right-hand column into a mode-specific compact learner surface with primary question/map/answer/grading/feedback visible; put secondary utilities in Menu. Apply the existing iPad Focus #33 and clear-controls #44 contracts rather than inventing a second layout/answer engine. The app **already records a daily goal**; improve `Vandaag` visibility and copy without creating streak pressure, new score or duplicate reward records. **Status** DESIGN/UX DIRECTION, NOT IMPLEMENTED. **Owner visual review required** before bounded Codex #52. **Reason** Learner focus over feature density.
+
+## 2026-10-27 — Child-facing journey book with factual knowledge inside
+
+**Decision** Prefer label `Mijn reisboekje` for the openable Nino travel/Gold passport and include a clearly distinct factual `Mijn kennis` section for all 45 skills. Do not delete or silently rename existing knowledge-progress storage to match presentation. Show stamps, Gold, arrivals and decorative postcards **only** when supported by canonical completed stages, actual `goldAt` and true trip count. **Status** DESIGN DIRECTION on existing issue #21 / #20 / #41; art/export & independent P0 gates pending; visual book approval still required. **Supersedes** making `Mijn kennispaspoort` the primary child-facing name for the whole travel book, not the factual 45-object skills feature.
+
+## 2026-10-27 — Two chosen map styles, one subdued exam presentation
+
+**Decision** Keep exactly **Schoolkaart** and **Ontdekkingskaart** as selectable interactive map styles (#22). The currently green Discovery rendering is **not** the owner benchmark and needs a source-faithful palette/terrain/art pass (#35). Formal Test/Gold uses a quieter crème/cartographic presentation layer over **the same** source map, projection, interaction/answers and selected-style preference; restore normal paint outside assessment. The original schoolblad remains a separate noninteractive reference. **Status** BENCHMARK ADJUST + QUIET-MODE DESIGN, not a new interactive third map or approved finished art. **Preserves** zero target geometry drift, no hidden exam hints.
+
+## 2026-10-27 — Deliberate TOPO app identity and Nino feedback moments
+
+**Decision** Replace the visibly cropped upper-left Nino avatar with the correctly composed, owner-approved original Nino/Topo brand icon lockup (existing #8), with an embedded favicon fallback for the offline file; no arbitrary image crop. Daily correct/wrong explanation remains permanently legible inline, while **only** significant truthful learner events show a larger, skippable/short-lived original-Nino card (#53), never obscuring active input or map and never falsely granting Gold. **Status** VISUAL BRIEF PENDING OWNER ART/OVERLAY APPROVAL; no icon image selection or runtime implementation in this docs branch.
+
+## 2026-10-27 — Canonical Vespa leg and optional contextual travel activities
+
+**Decision** Animations depict actual third-pizza travel events only (#54), with short skippable depart/ride/arrival, accurate canonical route, focus/session restoration, reduced-motion fallback and replay that earns nothing. **Bologna** pit stop is available after real trip #2 (#56); **Milaan** unbranded calcio is available after real trip #4 (#55); both are entirely optional and revisitable from genuinely reached passport destinations. No motor maintenance economy, Gold shortcut, assessed side quest or additional location IDs. **Status** APPROVED CONCEPT, design boards/art gating first; not implemented.
+
+## 2026-10-27 — Gelati as delight, never competing reward points
+
+**Decision** Explore a small occasional gelato illustration after already-tracked authentic learning milestones (#57). It is not a new currency, tally, streak, loot mechanic or substitute for 8 pizza slices / third-pizza Vespa. An ephemeral card is preferable to storing an unverified historical souvenir, and no animation may obscure Test/Gold or mislead about earned progress. **Status** DESIGN PROPOSAL requiring owner visual/cadence approval before any implementation.

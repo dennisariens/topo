@@ -1,0 +1,69 @@
+{
+  "all": 799,
+  "physicalPassEntries": 657,
+  "uniqueIDSetsAll": 159,
+  "uniqueIDSetsPhysical": 154,
+  "sourceBorderEntries": 120,
+  "pointOccludedEntries": 22,
+  "occludedIDSets": [
+    [
+      "area-f",
+      "city-15"
+    ],
+    [
+      "area-f",
+      "city-15",
+      "city-16",
+      "city-19"
+    ],
+    [
+      "area-f",
+      "city-15",
+      "city-19"
+    ],
+    [
+      "area-f",
+      "city-15",
+      "city-19",
+      "city-7"
+    ],
+    [
+      "area-f",
+      "city-15",
+      "city-7"
+    ],
+    [
+      "area-f",
+      "city-16",
+      "city-19"
+    ],
+    [
+      "area-f",
+      "city-19",
+      "city-7"
+    ],
+    [
+      "area-f",
+      "city-7"
+    ],
+    [
+      "city-15",
+      "city-19"
+    ],
+    [
+      "city-15",
+      "city-7"
+    ],
+    [
+      "city-16",
+      "city-19"
+    ]
+  ],
+  "occludedStyles": {
+    "school": 11,
+    "discovery": 11
+  },
+  "occludedCameras": {
+    "overview": 22
+  }
+}

@@ -1,0 +1,492 @@
+{
+  "sha": "d55e9deb2adfa7985bc33a3251402860f95a0b46",
+  "browser": "156.0.8078.4",
+  "transport": "actual SHA-downloaded file:// offline:true",
+  "records": [
+    {
+      "name": "desktop",
+      "label": "actual Point correct Rome",
+      "style": "school",
+      "expected": "city-9",
+      "chosen": "city-9",
+      "rng": 0,
+      "order": [
+        "area-o",
+        "city-9"
+      ],
+      "exactXY": [
+        605,
+        596
+      ],
+      "correct": true,
+      "rewardDelta": 1,
+      "noPrematureGold": true,
+      "noRepeatCredit": true
+    },
+    {
+      "name": "desktop",
+      "label": "actual Point wrong for Vatican",
+      "style": "school",
+      "expected": "area-o",
+      "chosen": "city-9",
+      "rng": 0,
+      "order": [
+        "area-o",
+        "city-9"
+      ],
+      "exactXY": [
+        605,
+        596
+      ],
+      "correct": false,
+      "rewardDelta": 0,
+      "noPrematureGold": true,
+      "noRepeatCredit": true
+    },
+    {
+      "name": "desktop",
+      "label": "actual Point correct Rome",
+      "style": "school",
+      "expected": "city-9",
+      "chosen": "city-9",
+      "rng": 0.99999,
+      "order": [
+        "city-9",
+        "area-o"
+      ],
+      "exactXY": [
+        605,
+        596
+      ],
+      "correct": true,
+      "rewardDelta": 1,
+      "noPrematureGold": true,
+      "noRepeatCredit": true
+    },
+    {
+      "name": "desktop",
+      "label": "actual Point wrong for Vatican",
+      "style": "school",
+      "expected": "area-o",
+      "chosen": "city-9",
+      "rng": 0.99999,
+      "order": [
+        "city-9",
+        "area-o"
+      ],
+      "exactXY": [
+        605,
+        596
+      ],
+      "correct": false,
+      "rewardDelta": 0,
+      "noPrematureGold": true,
+      "noRepeatCredit": true
+    },
+    {
+      "name": "desktop",
+      "label": "actual Test wrong Vatican",
+      "style": "school",
+      "expected": "city-9",
+      "chosen": "area-o",
+      "rng": 0,
+      "order": [
+        "area-o",
+        "city-9"
+      ],
+      "exactXY": [
+        605,
+        596
+      ],
+      "correct": false,
+      "rewardDelta": 0,
+      "noPrematureGold": true,
+      "noRepeatCredit": true
+    },
+    {
+      "name": "desktop",
+      "label": "Gold prerequisite fixture, actual wrong choice",
+      "style": "school",
+      "expected": "city-9",
+      "chosen": "area-o",
+      "rng": 0.99999,
+      "order": [
+        "city-9",
+        "area-o"
+      ],
+      "exactXY": [
+        605,
+        596
+      ],
+      "correct": false,
+      "rewardDelta": 0,
+      "noPrematureGold": true,
+      "noRepeatCredit": true
+    },
+    {
+      "name": "desktop",
+      "label": "actual Point correct Rome",
+      "style": "discovery",
+      "expected": "city-9",
+      "chosen": "city-9",
+      "rng": 0,
+      "order": [
+        "area-o",
+        "city-9"
+      ],
+      "exactXY": [
+        605,
+        596
+      ],
+      "correct": true,
+      "rewardDelta": 1,
+      "noPrematureGold": true,
+      "noRepeatCredit": true
+    },
+    {
+      "name": "desktop",
+      "label": "actual Point wrong for Vatican",
+      "style": "discovery",
+      "expected": "area-o",
+      "chosen": "city-9",
+      "rng": 0,
+      "order": [
+        "area-o",
+        "city-9"
+      ],
+      "exactXY": [
+        605,
+        596
+      ],
+      "correct": false,
+      "rewardDelta": 0,
+      "noPrematureGold": true,
+      "noRepeatCredit": true
+    },
+    {
+      "name": "desktop",
+      "label": "actual Point correct Rome",
+      "style": "discovery",
+      "expected": "city-9",
+      "chosen": "city-9",
+      "rng": 0.99999,
+      "order": [
+        "city-9",
+        "area-o"
+      ],
+      "exactXY": [
+        605,
+        596
+      ],
+      "correct": true,
+      "rewardDelta": 1,
+      "noPrematureGold": true,
+      "noRepeatCredit": true
+    },
+    {
+      "name": "desktop",
+      "label": "actual Point wrong for Vatican",
+      "style": "discovery",
+      "expected": "area-o",
+      "chosen": "city-9",
+      "rng": 0.99999,
+      "order": [
+        "city-9",
+        "area-o"
+      ],
+      "exactXY": [
+        605,
+        596
+      ],
+      "correct": false,
+      "rewardDelta": 0,
+      "noPrematureGold": true,
+      "noRepeatCredit": true
+    },
+    {
+      "name": "desktop",
+      "label": "actual Test wrong Vatican",
+      "style": "discovery",
+      "expected": "city-9",
+      "chosen": "area-o",
+      "rng": 0,
+      "order": [
+        "area-o",
+        "city-9"
+      ],
+      "exactXY": [
+        605,
+        596
+      ],
+      "correct": false,
+      "rewardDelta": 0,
+      "noPrematureGold": true,
+      "noRepeatCredit": true
+    },
+    {
+      "name": "desktop",
+      "label": "Gold prerequisite fixture, actual wrong choice",
+      "style": "discovery",
+      "expected": "city-9",
+      "chosen": "area-o",
+      "rng": 0.99999,
+      "order": [
+        "city-9",
+        "area-o"
+      ],
+      "exactXY": [
+        605,
+        596
+      ],
+      "correct": false,
+      "rewardDelta": 0,
+      "noPrematureGold": true,
+      "noRepeatCredit": true
+    },
+    {
+      "name": "landscape",
+      "label": "actual Point correct Rome",
+      "style": "school",
+      "expected": "city-9",
+      "chosen": "city-9",
+      "rng": 0,
+      "order": [
+        "area-o",
+        "city-9"
+      ],
+      "exactXY": [
+        599,
+        449
+      ],
+      "correct": true,
+      "rewardDelta": 1,
+      "noPrematureGold": true,
+      "noRepeatCredit": true
+    },
+    {
+      "name": "landscape",
+      "label": "actual Point wrong for Vatican",
+      "style": "school",
+      "expected": "area-o",
+      "chosen": "city-9",
+      "rng": 0,
+      "order": [
+        "area-o",
+        "city-9"
+      ],
+      "exactXY": [
+        599,
+        449
+      ],
+      "correct": false,
+      "rewardDelta": 0,
+      "noPrematureGold": true,
+      "noRepeatCredit": true
+    },
+    {
+      "name": "landscape",
+      "label": "actual Point correct Rome",
+      "style": "school",
+      "expected": "city-9",
+      "chosen": "city-9",
+      "rng": 0.99999,
+      "order": [
+        "city-9",
+        "area-o"
+      ],
+      "exactXY": [
+        599,
+        449
+      ],
+      "correct": true,
+      "rewardDelta": 1,
+      "noPrematureGold": true,
+      "noRepeatCredit": true
+    },
+    {
+      "name": "landscape",
+      "label": "actual Point wrong for Vatican",
+      "style": "school",
+      "expected": "area-o",
+      "chosen": "city-9",
+      "rng": 0.99999,
+      "order": [
+        "city-9",
+        "area-o"
+      ],
+      "exactXY": [
+        599,
+        449
+      ],
+      "correct": false,
+      "rewardDelta": 0,
+      "noPrematureGold": true,
+      "noRepeatCredit": true
+    },
+    {
+      "name": "landscape",
+      "label": "actual Test wrong Vatican",
+      "style": "school",
+      "expected": "city-9",
+      "chosen": "area-o",
+      "rng": 0,
+      "order": [
+        "area-o",
+        "city-9"
+      ],
+      "exactXY": [
+        599,
+        449
+      ],
+      "correct": false,
+      "rewardDelta": 0,
+      "noPrematureGold": true,
+      "noRepeatCredit": true
+    },
+    {
+      "name": "landscape",
+      "label": "Gold prerequisite fixture, actual wrong choice",
+      "style": "school",
+      "expected": "city-9",
+      "chosen": "area-o",
+      "rng": 0.99999,
+      "order": [
+        "city-9",
+        "area-o"
+      ],
+      "exactXY": [
+        599,
+        449
+      ],
+      "correct": false,
+      "rewardDelta": 0,
+      "noPrematureGold": true,
+      "noRepeatCredit": true
+    },
+    {
+      "name": "landscape",
+      "label": "actual Point correct Rome",
+      "style": "discovery",
+      "expected": "city-9",
+      "chosen": "city-9",
+      "rng": 0,
+      "order": [
+        "area-o",
+        "city-9"
+      ],
+      "exactXY": [
+        599,
+        449
+      ],
+      "correct": true,
+      "rewardDelta": 1,
+      "noPrematureGold": true,
+      "noRepeatCredit": true
+    },
+    {
+      "name": "landscape",
+      "label": "actual Point wrong for Vatican",
+      "style": "discovery",
+      "expected": "area-o",
+      "chosen": "city-9",
+      "rng": 0,
+      "order": [
+        "area-o",
+        "city-9"
+      ],
+      "exactXY": [
+        599,
+        449
+      ],
+      "correct": false,
+      "rewardDelta": 0,
+      "noPrematureGold": true,
+      "noRepeatCredit": true
+    },
+    {
+      "name": "landscape",
+      "label": "actual Point correct Rome",
+      "style": "discovery",
+      "expected": "city-9",
+      "chosen": "city-9",
+      "rng": 0.99999,
+      "order": [
+        "city-9",
+        "area-o"
+      ],
+      "exactXY": [
+        599,
+        449
+      ],
+      "correct": true,
+      "rewardDelta": 1,
+      "noPrematureGold": true,
+      "noRepeatCredit": true
+    },
+    {
+      "name": "landscape",
+      "label": "actual Point wrong for Vatican",
+      "style": "discovery",
+      "expected": "area-o",
+      "chosen": "city-9",
+      "rng": 0.99999,
+      "order": [
+        "city-9",
+        "area-o"
+      ],
+      "exactXY": [
+        599,
+        449
+      ],
+      "correct": false,
+      "rewardDelta": 0,
+      "noPrematureGold": true,
+      "noRepeatCredit": true
+    },
+    {
+      "name": "landscape",
+      "label": "actual Test wrong Vatican",
+      "style": "discovery",
+      "expected": "city-9",
+      "chosen": "area-o",
+      "rng": 0,
+      "order": [
+        "area-o",
+        "city-9"
+      ],
+      "exactXY": [
+        599,
+        449
+      ],
+      "correct": false,
+      "rewardDelta": 0,
+      "noPrematureGold": true,
+      "noRepeatCredit": true
+    },
+    {
+      "name": "landscape",
+      "label": "Gold prerequisite fixture, actual wrong choice",
+      "style": "discovery",
+      "expected": "city-9",
+      "chosen": "area-o",
+      "rng": 0.99999,
+      "order": [
+        "city-9",
+        "area-o"
+      ],
+      "exactXY": [
+        599,
+        449
+      ],
+      "correct": false,
+      "rewardDelta": 0,
+      "noPrematureGold": true,
+      "noRepeatCredit": true
+    }
+  ],
+  "errors": [],
+  "external": [],
+  "fixtures": "Only chooser RNG and chapter-unlocked backup prerequisite for Gold; Point/Test questions reached through real UI and keyboard progression; no current-answer replacement, no direct grading",
+  "gold": "No full earned-Gold completion claimed",
+  "nativeSafari": "PENDING"
+}

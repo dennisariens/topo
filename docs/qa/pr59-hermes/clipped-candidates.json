@@ -1,0 +1,104 @@
+{
+  "records": [
+    {
+      "label": "etna-catania",
+      "group": "volcanoes",
+      "realQuestion": "area-f",
+      "physicalXY": [
+        676,
+        781
+      ],
+      "metrics": {
+        "clip": {
+          "x": 529,
+          "y": 218.09375,
+          "width": 442,
+          "height": 520,
+          "top": 218.09375,
+          "right": 971,
+          "bottom": 738.09375,
+          "left": 529
+        },
+        "endpoints": [
+          {
+            "id": "area-f",
+            "client": [
+              710.3910251438188,
+              490.91832561728313
+            ],
+            "visible": true
+          },
+          {
+            "id": "city-15",
+            "client": [
+              774.6089748561828,
+              766.5504243827152
+            ],
+            "visible": false
+          }
+        ],
+        "buttons": [
+          {
+            "id": "area-f",
+            "visible": true
+          },
+          {
+            "id": "city-15",
+            "visible": true
+          }
+        ]
+      },
+      "source": "actual UI navigation and native mouse; no requested-answer fixture"
+    },
+    {
+      "label": "varese-milan",
+      "group": "city3",
+      "realQuestion": "city-13",
+      "physicalXY": [
+        500,
+        436
+      ],
+      "metrics": {
+        "clip": {
+          "x": 529,
+          "y": 218.09375,
+          "width": 442,
+          "height": 520,
+          "top": 218.09375,
+          "right": 971,
+          "bottom": 738.09375,
+          "left": 529
+        },
+        "endpoints": [
+          {
+            "id": "city-13",
+            "client": [
+              635.7490437158474,
+              490.9183256172837
+            ],
+            "visible": true
+          },
+          {
+            "id": "city-5",
+            "client": [
+              849.2509562841533,
+              766.5504243827158
+            ],
+            "visible": false
+          }
+        ],
+        "buttons": [
+          {
+            "id": "city-5",
+            "visible": true
+          },
+          {
+            "id": "city-13",
+            "visible": true
+          }
+        ]
+      },
+      "source": "actual UI navigation and native mouse; no requested-answer fixture"
+    }
+  ]
+}

@@ -1,0 +1,548 @@
+{
+  "records": [
+    {
+      "ids": [
+        "area-f",
+        "city-7"
+      ],
+      "style": "school",
+      "world": [
+        540.6279039752194,
+        879.3998451213217
+      ],
+      "nominalClient": [
+        186,
+        460
+      ],
+      "matchingIntegerPixelsIn49pxWindow": 63,
+      "reachableMapPixels": 63,
+      "firstReachable": [
+        190,
+        454
+      ],
+      "blockingExamples": [],
+      "coverage": "Explicit requested-question fixture ONLY for addressability; actual pointer activation after layout settles recorded separately, not normal-route acceptance",
+      "settledPhysicalTapOpensPicker": true
+    },
+    {
+      "ids": [
+        "area-f",
+        "city-15"
+      ],
+      "style": "school",
+      "world": [
+        577.385776974703,
+        978.646102219928
+      ],
+      "nominalClient": [
+        196,
+        487.0000000000001
+      ],
+      "matchingIntegerPixelsIn49pxWindow": 310,
+      "reachableMapPixels": 310,
+      "firstReachable": [
+        194,
+        479
+      ],
+      "blockingExamples": [],
+      "coverage": "Explicit requested-question fixture ONLY for addressability; actual pointer activation after layout settles recorded separately, not normal-route acceptance",
+      "settledPhysicalTapOpensPicker": true
+    },
+    {
+      "ids": [
+        "city-15",
+        "city-7"
+      ],
+      "style": "school",
+      "world": [
+        529.6005420753743,
+        971.2945276200312
+      ],
+      "nominalClient": [
+        183,
+        485.0000000000001
+      ],
+      "matchingIntegerPixelsIn49pxWindow": 5,
+      "reachableMapPixels": 5,
+      "firstReachable": [
+        182,
+        482
+      ],
+      "blockingExamples": [],
+      "coverage": "Explicit requested-question fixture ONLY for addressability; actual pointer activation after layout settles recorded separately, not normal-route acceptance",
+      "settledPhysicalTapOpensPicker": true
+    },
+    {
+      "ids": [
+        "city-16",
+        "city-19"
+      ],
+      "style": "school",
+      "world": [
+        658.2530975735674,
+        838.9661848218898
+      ],
+      "nominalClient": [
+        218.00000000000003,
+        449.00000000000006
+      ],
+      "matchingIntegerPixelsIn49pxWindow": 428,
+      "reachableMapPixels": 428,
+      "firstReachable": [
+        207,
+        441
+      ],
+      "blockingExamples": [],
+      "coverage": "Explicit requested-question fixture ONLY for addressability; actual pointer activation after layout settles recorded separately, not normal-route acceptance",
+      "settledPhysicalTapOpensPicker": true
+    },
+    {
+      "ids": [
+        "city-15",
+        "city-19"
+      ],
+      "style": "school",
+      "world": [
+        680.3078213732576,
+        945.5640165203927
+      ],
+      "nominalClient": [
+        224.00000000000003,
+        478.0000000000001
+      ],
+      "matchingIntegerPixelsIn49pxWindow": 15,
+      "reachableMapPixels": 15,
+      "firstReachable": [
+        224,
+        471
+      ],
+      "blockingExamples": [],
+      "coverage": "Explicit requested-question fixture ONLY for addressability; actual pointer activation after layout settles recorded separately, not normal-route acceptance",
+      "settledPhysicalTapOpensPicker": true
+    },
+    {
+      "ids": [
+        "area-f",
+        "city-19",
+        "city-7"
+      ],
+      "style": "school",
+      "world": [
+        566.3584150748579,
+        861.02090862158
+      ],
+      "nominalClient": [
+        193,
+        455.00000000000006
+      ],
+      "matchingIntegerPixelsIn49pxWindow": 43,
+      "reachableMapPixels": 43,
+      "firstReachable": [
+        194,
+        452
+      ],
+      "blockingExamples": [],
+      "coverage": "Explicit requested-question fixture ONLY for addressability; actual pointer activation after layout settles recorded separately, not normal-route acceptance",
+      "settledPhysicalTapOpensPicker": true
+    },
+    {
+      "ids": [
+        "area-f",
+        "city-15",
+        "city-19"
+      ],
+      "style": "school",
+      "world": [
+        625.171011874032,
+        934.5366546205473
+      ],
+      "nominalClient": [
+        209.00000000000003,
+        475
+      ],
+      "matchingIntegerPixelsIn49pxWindow": 526,
+      "reachableMapPixels": 526,
+      "firstReachable": [
+        198,
+        456
+      ],
+      "blockingExamples": [],
+      "coverage": "Explicit requested-question fixture ONLY for addressability; actual pointer activation after layout settles recorded separately, not normal-route acceptance",
+      "settledPhysicalTapOpensPicker": true
+    },
+    {
+      "ids": [
+        "area-f",
+        "city-15",
+        "city-7"
+      ],
+      "style": "school",
+      "world": [
+        544.3036912751677,
+        941.8882292204441
+      ],
+      "nominalClient": [
+        187,
+        477
+      ],
+      "matchingIntegerPixelsIn49pxWindow": 169,
+      "reachableMapPixels": 169,
+      "firstReachable": [
+        188,
+        462
+      ],
+      "blockingExamples": [],
+      "coverage": "Explicit requested-question fixture ONLY for addressability; actual pointer activation after layout settles recorded separately, not normal-route acceptance",
+      "settledPhysicalTapOpensPicker": true
+    },
+    {
+      "ids": [
+        "area-f",
+        "city-16",
+        "city-19"
+      ],
+      "style": "school",
+      "world": [
+        617.8194372741352,
+        853.6693340216832
+      ],
+      "nominalClient": [
+        207,
+        453.00000000000006
+      ],
+      "matchingIntegerPixelsIn49pxWindow": 77,
+      "reachableMapPixels": 77,
+      "firstReachable": [
+        205,
+        451
+      ],
+      "blockingExamples": [],
+      "coverage": "Explicit requested-question fixture ONLY for addressability; actual pointer activation after layout settles recorded separately, not normal-route acceptance",
+      "settledPhysicalTapOpensPicker": true
+    },
+    {
+      "ids": [
+        "area-f",
+        "city-15",
+        "city-19",
+        "city-7"
+      ],
+      "style": "school",
+      "world": [
+        570.0342023748065,
+        894.1029943211154
+      ],
+      "nominalClient": [
+        194.00000000000003,
+        464.00000000000006
+      ],
+      "matchingIntegerPixelsIn49pxWindow": 169,
+      "reachableMapPixels": 169,
+      "firstReachable": [
+        195,
+        457
+      ],
+      "blockingExamples": [],
+      "coverage": "Explicit requested-question fixture ONLY for addressability; actual pointer activation after layout settles recorded separately, not normal-route acceptance",
+      "settledPhysicalTapOpensPicker": true
+    },
+    {
+      "ids": [
+        "area-f",
+        "city-15",
+        "city-16",
+        "city-19"
+      ],
+      "style": "school",
+      "world": [
+        647.2257356737223,
+        890.4272070211669
+      ],
+      "nominalClient": [
+        215.00000000000003,
+        463
+      ],
+      "matchingIntegerPixelsIn49pxWindow": 111,
+      "reachableMapPixels": 111,
+      "firstReachable": [
+        206,
+        456
+      ],
+      "blockingExamples": [],
+      "coverage": "Explicit requested-question fixture ONLY for addressability; actual pointer activation after layout settles recorded separately, not normal-route acceptance",
+      "settledPhysicalTapOpensPicker": true
+    },
+    {
+      "ids": [
+        "area-f",
+        "city-7"
+      ],
+      "style": "discovery",
+      "world": [
+        540.6279039752194,
+        879.3998451213217
+      ],
+      "nominalClient": [
+        186,
+        460
+      ],
+      "matchingIntegerPixelsIn49pxWindow": 63,
+      "reachableMapPixels": 63,
+      "firstReachable": [
+        190,
+        454
+      ],
+      "blockingExamples": [],
+      "coverage": "Explicit requested-question fixture ONLY for addressability; actual pointer activation after layout settles recorded separately, not normal-route acceptance",
+      "settledPhysicalTapOpensPicker": true
+    },
+    {
+      "ids": [
+        "area-f",
+        "city-15"
+      ],
+      "style": "discovery",
+      "world": [
+        577.385776974703,
+        978.646102219928
+      ],
+      "nominalClient": [
+        196,
+        487.0000000000001
+      ],
+      "matchingIntegerPixelsIn49pxWindow": 310,
+      "reachableMapPixels": 310,
+      "firstReachable": [
+        194,
+        479
+      ],
+      "blockingExamples": [],
+      "coverage": "Explicit requested-question fixture ONLY for addressability; actual pointer activation after layout settles recorded separately, not normal-route acceptance",
+      "settledPhysicalTapOpensPicker": true
+    },
+    {
+      "ids": [
+        "city-15",
+        "city-7"
+      ],
+      "style": "discovery",
+      "world": [
+        529.6005420753743,
+        971.2945276200312
+      ],
+      "nominalClient": [
+        183,
+        485.0000000000001
+      ],
+      "matchingIntegerPixelsIn49pxWindow": 5,
+      "reachableMapPixels": 5,
+      "firstReachable": [
+        182,
+        482
+      ],
+      "blockingExamples": [],
+      "coverage": "Explicit requested-question fixture ONLY for addressability; actual pointer activation after layout settles recorded separately, not normal-route acceptance",
+      "settledPhysicalTapOpensPicker": true
+    },
+    {
+      "ids": [
+        "city-16",
+        "city-19"
+      ],
+      "style": "discovery",
+      "world": [
+        658.2530975735674,
+        838.9661848218898
+      ],
+      "nominalClient": [
+        218.00000000000003,
+        449.00000000000006
+      ],
+      "matchingIntegerPixelsIn49pxWindow": 428,
+      "reachableMapPixels": 428,
+      "firstReachable": [
+        207,
+        441
+      ],
+      "blockingExamples": [],
+      "coverage": "Explicit requested-question fixture ONLY for addressability; actual pointer activation after layout settles recorded separately, not normal-route acceptance",
+      "settledPhysicalTapOpensPicker": true
+    },
+    {
+      "ids": [
+        "city-15",
+        "city-19"
+      ],
+      "style": "discovery",
+      "world": [
+        680.3078213732576,
+        945.5640165203927
+      ],
+      "nominalClient": [
+        224.00000000000003,
+        478.0000000000001
+      ],
+      "matchingIntegerPixelsIn49pxWindow": 15,
+      "reachableMapPixels": 15,
+      "firstReachable": [
+        224,
+        471
+      ],
+      "blockingExamples": [],
+      "coverage": "Explicit requested-question fixture ONLY for addressability; actual pointer activation after layout settles recorded separately, not normal-route acceptance",
+      "settledPhysicalTapOpensPicker": true
+    },
+    {
+      "ids": [
+        "area-f",
+        "city-19",
+        "city-7"
+      ],
+      "style": "discovery",
+      "world": [
+        566.3584150748579,
+        861.02090862158
+      ],
+      "nominalClient": [
+        193,
+        455.00000000000006
+      ],
+      "matchingIntegerPixelsIn49pxWindow": 43,
+      "reachableMapPixels": 43,
+      "firstReachable": [
+        194,
+        452
+      ],
+      "blockingExamples": [],
+      "coverage": "Explicit requested-question fixture ONLY for addressability; actual pointer activation after layout settles recorded separately, not normal-route acceptance",
+      "settledPhysicalTapOpensPicker": true
+    },
+    {
+      "ids": [
+        "area-f",
+        "city-15",
+        "city-19"
+      ],
+      "style": "discovery",
+      "world": [
+        625.171011874032,
+        934.5366546205473
+      ],
+      "nominalClient": [
+        209.00000000000003,
+        475
+      ],
+      "matchingIntegerPixelsIn49pxWindow": 526,
+      "reachableMapPixels": 526,
+      "firstReachable": [
+        198,
+        456
+      ],
+      "blockingExamples": [],
+      "coverage": "Explicit requested-question fixture ONLY for addressability; actual pointer activation after layout settles recorded separately, not normal-route acceptance",
+      "settledPhysicalTapOpensPicker": true
+    },
+    {
+      "ids": [
+        "area-f",
+        "city-15",
+        "city-7"
+      ],
+      "style": "discovery",
+      "world": [
+        544.3036912751677,
+        941.8882292204441
+      ],
+      "nominalClient": [
+        187,
+        477
+      ],
+      "matchingIntegerPixelsIn49pxWindow": 169,
+      "reachableMapPixels": 169,
+      "firstReachable": [
+        188,
+        462
+      ],
+      "blockingExamples": [],
+      "coverage": "Explicit requested-question fixture ONLY for addressability; actual pointer activation after layout settles recorded separately, not normal-route acceptance",
+      "settledPhysicalTapOpensPicker": true
+    },
+    {
+      "ids": [
+        "area-f",
+        "city-16",
+        "city-19"
+      ],
+      "style": "discovery",
+      "world": [
+        617.8194372741352,
+        853.6693340216832
+      ],
+      "nominalClient": [
+        207,
+        453.00000000000006
+      ],
+      "matchingIntegerPixelsIn49pxWindow": 77,
+      "reachableMapPixels": 77,
+      "firstReachable": [
+        205,
+        451
+      ],
+      "blockingExamples": [],
+      "coverage": "Explicit requested-question fixture ONLY for addressability; actual pointer activation after layout settles recorded separately, not normal-route acceptance",
+      "settledPhysicalTapOpensPicker": true
+    },
+    {
+      "ids": [
+        "area-f",
+        "city-15",
+        "city-19",
+        "city-7"
+      ],
+      "style": "discovery",
+      "world": [
+        570.0342023748065,
+        894.1029943211154
+      ],
+      "nominalClient": [
+        194.00000000000003,
+        464.00000000000006
+      ],
+      "matchingIntegerPixelsIn49pxWindow": 169,
+      "reachableMapPixels": 169,
+      "firstReachable": [
+        195,
+        457
+      ],
+      "blockingExamples": [],
+      "coverage": "Explicit requested-question fixture ONLY for addressability; actual pointer activation after layout settles recorded separately, not normal-route acceptance",
+      "settledPhysicalTapOpensPicker": true
+    },
+    {
+      "ids": [
+        "area-f",
+        "city-15",
+        "city-16",
+        "city-19"
+      ],
+      "style": "discovery",
+      "world": [
+        647.2257356737223,
+        890.4272070211669
+      ],
+      "nominalClient": [
+        215.00000000000003,
+        463
+      ],
+      "matchingIntegerPixelsIn49pxWindow": 111,
+      "reachableMapPixels": 111,
+      "firstReachable": [
+        206,
+        456
+      ],
+      "blockingExamples": [],
+      "coverage": "Explicit requested-question fixture ONLY for addressability; actual pointer activation after layout settles recorded separately, not normal-route acceptance",
+      "settledPhysicalTapOpensPicker": true
+    }
+  ]
+}

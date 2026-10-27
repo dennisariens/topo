@@ -1,0 +1,1 @@
+PASS 24 independent real picker grading checks, 2views/2styles, both orders, Escape/focus, no repeat/Gold reward; prerequisite Gold fixture clearly labelled.

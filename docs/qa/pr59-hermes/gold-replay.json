@@ -1,0 +1,54 @@
+{
+  "sha": "d55e9deb2adfa7985bc33a3251402860f95a0b46",
+  "fixture": "Chapter-unlocked prerequisite imported via real backup UI; unlocked stages are NOT claimed genuinely earned. Both subsequent12-question Gold sessions actually played via UI, including real Rome chooser.",
+  "first": {
+    "steps": 13,
+    "actualRomePickerChoices": 1
+  },
+  "again": {
+    "steps": 13,
+    "actualRomePickerChoices": 1
+  },
+  "before": {
+    "good": 0,
+    "pizzas": 0,
+    "slices": 0,
+    "trips": 0,
+    "record": {
+      "stage": 3,
+      "completedAt": 1793110418086,
+      "goldAt": 0,
+      "nextReviewAt": 1793196818086,
+      "reviews": 0
+    }
+  },
+  "earned": {
+    "good": 12,
+    "pizzas": 1,
+    "slices": 4,
+    "trips": 0,
+    "record": {
+      "stage": 3,
+      "completedAt": 1793110418086,
+      "goldAt": 1793110420085,
+      "nextReviewAt": 1793196820085,
+      "reviews": 0
+    }
+  },
+  "replay": {
+    "good": 12,
+    "pizzas": 1,
+    "slices": 4,
+    "trips": 0,
+    "record": {
+      "stage": 3,
+      "completedAt": 1793110418086,
+      "goldAt": 1793110420085,
+      "nextReviewAt": 1793196821997,
+      "reviews": 0
+    }
+  },
+  "persistedAfterReload": true,
+  "noReplayCurrencyCredit": true,
+  "errors": []
+}

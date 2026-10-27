@@ -1,0 +1,15 @@
+{
+  "candidateSHA": "d55e9deb2adfa7985bc33a3251402860f95a0b46",
+  "candidateBytes": 3143245,
+  "candidateSHA256": "84bf071e52f917832f0dfa67a1e33e0b394a037378cf3cbfaceef2ef02f434d5",
+  "oldReleaseUnchanged": true,
+  "unchangedSources": {
+    "scripts/learning-engine.js": "e6d1992865892d3eefd661abae74cac300d0659ab1827c41a8b057b4dc7ef6e0",
+    "scripts/route-engine.js": "484fb91f8458cc38834edf45ae898f78ecea00342e6c405ae8dfd68078333043",
+    "scripts/discovery-map.js": "77f8d6b7063f4a717699d114712b3b9d518d1ec07139539928e9557b52105ae4",
+    "scripts/focus-mode.js": "461519fec362aea2530c69aee4a2237b4a49db122bfd7a4b77b9dc853f08e690",
+    "scripts/focus-camera.js": "d6c0b3367abd828d32b89be6b7735ef037751a07e9b65bdad6d9decd0e37a55e",
+    "geography/lakes/projected-manifest.json": "1062a6dec6ec69193f23557131d2ff4debf90d83bd43e02d53933a3581284865",
+    "print.html": "f892b7656c91e443c937f550c103e5f50ca6f924518d4fff29b0e63aaba60bd3"
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "sha": "bd1e57bc48e55a065cbbccb68acea196a64a187c",
+  "bytes": 3133692,
+  "sha256": "89464c6686ff90eeaa9cd1274cb39f5881a1905b1b49211427a8f352c5d96c31",
+  "identical": [
+    "index.html",
+    "output/html/TOPO-Italie-Computer.html",
+    "output/html/topo-italie-interactief.html",
+    "output/html/topo-italie-duolingo.html",
+    "dist/index.html"
+  ],
+  "anonymousDownload": true,
+  "exactPR47Runtime": true
+}

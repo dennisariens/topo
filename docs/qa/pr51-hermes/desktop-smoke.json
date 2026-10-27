@@ -1,0 +1,135 @@
+{
+  "platform": "darwin",
+  "browser": "156.0.8078.4",
+  "file": "file:///Users/dennisariens/.hermes/outputs/topo-pr51-hermes-qa/TOPO-Italie-Computer.html",
+  "transport": "file://",
+  "offline": true,
+  "bytes": 3133692,
+  "sha256": "89464c6686ff90eeaa9cd1274cb39f5881a1905b1b49211427a8f352c5d96c31",
+  "inventory": {
+    "items": 45,
+    "chapters": [
+      {
+        "id": "city1",
+        "items": [
+          "city-1",
+          "city-2",
+          "city-3",
+          "city-4",
+          "city-5",
+          "city-6"
+        ]
+      },
+      {
+        "id": "city2",
+        "items": [
+          "city-7",
+          "city-8",
+          "city-9",
+          "city-10",
+          "city-11",
+          "city-12"
+        ]
+      },
+      {
+        "id": "city3",
+        "items": [
+          "city-13",
+          "city-14",
+          "city-15",
+          "city-16",
+          "city-17",
+          "city-18"
+        ]
+      },
+      {
+        "id": "city4",
+        "items": [
+          "city-19",
+          "city-20",
+          "city-21",
+          "city-22",
+          "city-23"
+        ]
+      },
+      {
+        "id": "islands",
+        "items": [
+          "area-a",
+          "area-b"
+        ]
+      },
+      {
+        "id": "mountains",
+        "items": [
+          "area-c",
+          "area-d"
+        ]
+      },
+      {
+        "id": "volcanoes",
+        "items": [
+          "area-e",
+          "area-f"
+        ]
+      },
+      {
+        "id": "regions",
+        "items": [
+          "area-g",
+          "area-h"
+        ]
+      },
+      {
+        "id": "countries",
+        "items": [
+          "area-i",
+          "area-j",
+          "area-k",
+          "area-l",
+          "area-m",
+          "area-n",
+          "area-o"
+        ]
+      },
+      {
+        "id": "seas",
+        "items": [
+          "water-A",
+          "water-B",
+          "water-C",
+          "water-D",
+          "water-E"
+        ]
+      },
+      {
+        "id": "rivers",
+        "items": [
+          "water-F",
+          "water-G"
+        ]
+      }
+    ],
+    "images": [
+      {
+        "ok": true,
+        "src": "data:image/webp;base64,UklGRn6mAgBX"
+      },
+      {
+        "ok": true,
+        "src": "data:image/webp;base64,UklGRmbIAwBX"
+      },
+      {
+        "ok": true,
+        "src": "data:image/jpeg;base64,/9j/4AAQSkZJ"
+      }
+    ]
+  },
+  "correctWrongGrading": true,
+  "persistedAcrossReload": true,
+  "resets": true,
+  "errors": [],
+  "consoleErrors": [],
+  "external": [],
+  "physicalIPad": "not tested"
+}

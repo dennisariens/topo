@@ -1,0 +1,16 @@
+{
+  "artifact": "file:///Users/dennisariens/.hermes/outputs/topo-pr51-hermes-qa/TOPO-Italie-Computer.html",
+  "offline": true,
+  "browser": "156.0.8078.4",
+  "desktopStyleDraftCaretQuestionInvariant": true,
+  "realWrongCorrectGrading": true,
+  "actualJSONExport": true,
+  "invalidNestedImportPreservesMemoryAndDisk": true,
+  "canceledImportPreservesMemoryAndDisk": true,
+  "samePathReload": true,
+  "realBackupTransferToFreshContext": true,
+  "errors": [],
+  "external": [],
+  "webkitInstalled": false,
+  "nativeSafari": "NOT TESTED"
+}

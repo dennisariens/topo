@@ -1,0 +1,558 @@
+{
+  "records": [
+    {
+      "name": "desktop",
+      "ids": [
+        "area-o",
+        "city-9"
+      ],
+      "random": 0,
+      "exactClientXY": [
+        604,
+        596
+      ],
+      "orders": [
+        [
+          "area-o",
+          "city-9"
+        ],
+        [
+          "area-o",
+          "city-9"
+        ]
+      ],
+      "correctThenWrong": true
+    },
+    {
+      "name": "desktop",
+      "ids": [
+        "area-o",
+        "city-9"
+      ],
+      "random": 0.99999,
+      "exactClientXY": [
+        604,
+        596
+      ],
+      "orders": [
+        [
+          "city-9",
+          "area-o"
+        ],
+        [
+          "city-9",
+          "area-o"
+        ]
+      ],
+      "correctThenWrong": true
+    },
+    {
+      "name": "desktop",
+      "ids": [
+        "city-2",
+        "city-20"
+      ],
+      "random": 0,
+      "exactClientXY": [
+        563,
+        481
+      ],
+      "orders": [
+        [
+          "city-20",
+          "city-2"
+        ],
+        [
+          "city-20",
+          "city-2"
+        ]
+      ],
+      "correctThenWrong": true
+    },
+    {
+      "name": "desktop",
+      "ids": [
+        "city-2",
+        "city-20"
+      ],
+      "random": 0.99999,
+      "exactClientXY": [
+        563,
+        481
+      ],
+      "orders": [
+        [
+          "city-2",
+          "city-20"
+        ],
+        [
+          "city-2",
+          "city-20"
+        ]
+      ],
+      "correctThenWrong": true
+    },
+    {
+      "name": "desktop",
+      "ids": [
+        "water-C",
+        "water-D"
+      ],
+      "random": 0,
+      "exactClientXY": [
+        539,
+        564
+      ],
+      "orders": [
+        [
+          "water-D",
+          "water-C"
+        ],
+        [
+          "water-D",
+          "water-C"
+        ]
+      ],
+      "correctThenWrong": true
+    },
+    {
+      "name": "desktop",
+      "ids": [
+        "water-C",
+        "water-D"
+      ],
+      "random": 0.99999,
+      "exactClientXY": [
+        539,
+        564
+      ],
+      "orders": [
+        [
+          "water-C",
+          "water-D"
+        ],
+        [
+          "water-C",
+          "water-D"
+        ]
+      ],
+      "correctThenWrong": true
+    },
+    {
+      "name": "landscape",
+      "ids": [
+        "area-o",
+        "city-9"
+      ],
+      "random": 0,
+      "exactClientXY": [
+        599,
+        449
+      ],
+      "orders": [
+        [
+          "area-o",
+          "city-9"
+        ],
+        [
+          "area-o",
+          "city-9"
+        ]
+      ],
+      "correctThenWrong": true
+    },
+    {
+      "name": "landscape",
+      "ids": [
+        "area-o",
+        "city-9"
+      ],
+      "random": 0.99999,
+      "exactClientXY": [
+        599,
+        449
+      ],
+      "orders": [
+        [
+          "city-9",
+          "area-o"
+        ],
+        [
+          "city-9",
+          "area-o"
+        ]
+      ],
+      "correctThenWrong": true
+    },
+    {
+      "name": "landscape",
+      "ids": [
+        "city-2",
+        "city-20"
+      ],
+      "random": 0,
+      "exactClientXY": [
+        557,
+        330
+      ],
+      "orders": [
+        [
+          "city-20",
+          "city-2"
+        ],
+        [
+          "city-20",
+          "city-2"
+        ]
+      ],
+      "correctThenWrong": true
+    },
+    {
+      "name": "landscape",
+      "ids": [
+        "city-2",
+        "city-20"
+      ],
+      "random": 0.99999,
+      "exactClientXY": [
+        557,
+        330
+      ],
+      "orders": [
+        [
+          "city-2",
+          "city-20"
+        ],
+        [
+          "city-2",
+          "city-20"
+        ]
+      ],
+      "correctThenWrong": true
+    },
+    {
+      "name": "landscape",
+      "ids": [
+        "water-C",
+        "water-D"
+      ],
+      "random": 0,
+      "exactClientXY": [
+        531,
+        416
+      ],
+      "orders": [
+        [
+          "water-D",
+          "water-C"
+        ],
+        [
+          "water-D",
+          "water-C"
+        ]
+      ],
+      "correctThenWrong": true
+    },
+    {
+      "name": "landscape",
+      "ids": [
+        "water-C",
+        "water-D"
+      ],
+      "random": 0.99999,
+      "exactClientXY": [
+        531,
+        416
+      ],
+      "orders": [
+        [
+          "water-C",
+          "water-D"
+        ],
+        [
+          "water-C",
+          "water-D"
+        ]
+      ],
+      "correctThenWrong": true
+    },
+    {
+      "name": "portrait",
+      "ids": [
+        "area-o",
+        "city-9"
+      ],
+      "random": 0,
+      "exactClientXY": [
+        423,
+        625
+      ],
+      "orders": [
+        [
+          "area-o",
+          "city-9"
+        ],
+        [
+          "area-o",
+          "city-9"
+        ]
+      ],
+      "correctThenWrong": true
+    },
+    {
+      "name": "portrait",
+      "ids": [
+        "area-o",
+        "city-9"
+      ],
+      "random": 0.99999,
+      "exactClientXY": [
+        423,
+        625
+      ],
+      "orders": [
+        [
+          "city-9",
+          "area-o"
+        ],
+        [
+          "city-9",
+          "area-o"
+        ]
+      ],
+      "correctThenWrong": true
+    },
+    {
+      "name": "portrait",
+      "ids": [
+        "city-2",
+        "city-20"
+      ],
+      "random": 0,
+      "exactClientXY": [
+        360,
+        447
+      ],
+      "orders": [
+        [
+          "city-20",
+          "city-2"
+        ],
+        [
+          "city-20",
+          "city-2"
+        ]
+      ],
+      "correctThenWrong": true
+    },
+    {
+      "name": "portrait",
+      "ids": [
+        "city-2",
+        "city-20"
+      ],
+      "random": 0.99999,
+      "exactClientXY": [
+        360,
+        447
+      ],
+      "orders": [
+        [
+          "city-2",
+          "city-20"
+        ],
+        [
+          "city-2",
+          "city-20"
+        ]
+      ],
+      "correctThenWrong": true
+    },
+    {
+      "name": "portrait",
+      "ids": [
+        "water-C",
+        "water-D"
+      ],
+      "random": 0,
+      "exactClientXY": [
+        319,
+        584
+      ],
+      "orders": [
+        [
+          "water-D",
+          "water-C"
+        ],
+        [
+          "water-D",
+          "water-C"
+        ]
+      ],
+      "correctThenWrong": true
+    },
+    {
+      "name": "portrait",
+      "ids": [
+        "water-C",
+        "water-D"
+      ],
+      "random": 0.99999,
+      "exactClientXY": [
+        319,
+        584
+      ],
+      "orders": [
+        [
+          "water-C",
+          "water-D"
+        ],
+        [
+          "water-C",
+          "water-D"
+        ]
+      ],
+      "correctThenWrong": true
+    },
+    {
+      "name": "phone",
+      "ids": [
+        "area-o",
+        "city-9"
+      ],
+      "random": 0,
+      "exactClientXY": [
+        201,
+        497
+      ],
+      "orders": [
+        [
+          "area-o",
+          "city-9"
+        ],
+        [
+          "area-o",
+          "city-9"
+        ]
+      ],
+      "correctThenWrong": true
+    },
+    {
+      "name": "phone",
+      "ids": [
+        "area-o",
+        "city-9"
+      ],
+      "random": 0.99999,
+      "exactClientXY": [
+        201,
+        497
+      ],
+      "orders": [
+        [
+          "city-9",
+          "area-o"
+        ],
+        [
+          "city-9",
+          "area-o"
+        ]
+      ],
+      "correctThenWrong": true
+    },
+    {
+      "name": "phone",
+      "ids": [
+        "city-2",
+        "city-20"
+      ],
+      "random": 0,
+      "exactClientXY": [
+        181,
+        409
+      ],
+      "orders": [
+        [
+          "city-20",
+          "city-2"
+        ],
+        [
+          "city-20",
+          "city-2"
+        ]
+      ],
+      "correctThenWrong": true
+    },
+    {
+      "name": "phone",
+      "ids": [
+        "city-2",
+        "city-20"
+      ],
+      "random": 0.99999,
+      "exactClientXY": [
+        181,
+        409
+      ],
+      "orders": [
+        [
+          "city-2",
+          "city-20"
+        ],
+        [
+          "city-2",
+          "city-20"
+        ]
+      ],
+      "correctThenWrong": true
+    },
+    {
+      "name": "phone",
+      "ids": [
+        "water-C",
+        "water-D"
+      ],
+      "random": 0,
+      "exactClientXY": [
+        152,
+        472
+      ],
+      "orders": [
+        [
+          "water-D",
+          "water-C"
+        ],
+        [
+          "water-D",
+          "water-C"
+        ]
+      ],
+      "correctThenWrong": true
+    },
+    {
+      "name": "phone",
+      "ids": [
+        "water-C",
+        "water-D"
+      ],
+      "random": 0.99999,
+      "exactClientXY": [
+        152,
+        472
+      ],
+      "orders": [
+        [
+          "water-C",
+          "water-D"
+        ],
+        [
+          "water-C",
+          "water-D"
+        ]
+      ],
+      "correctThenWrong": true
+    }
+  ],
+  "errors": [],
+  "physicalTaps": 48
+}

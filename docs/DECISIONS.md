@@ -155,3 +155,7 @@ Supersedes unconditional nearest-point capture and SVG paint-order selection for
 ## 2026-10-27 — Issue #50 computer download
 
 Preserve exact PR47 runtime after actual offline file audit; add one byte-identical learner filename through the existing packager. Deliver it as a QA prerelease HTML attachment because GitHub raw URLs display text/plain, with a separate draft PR for review. This is a download artifact, not a production deployment. Preserve original filenames and local save/backup behavior. No rebuild-driven runtime rewrite, merge, iPad server update or artwork change. See OFFLINE_COMPUTER_50.md.
+
+## 2026-10-27 — Issue #58 legible neutral map chooser
+
+Replace tiny coincident-looking chooser endpoints with annotated geographic crops of the exact source anchors, constant-size markers, numbered external badges and collision-aware layout. Split broad clusters only when spacing/connector checks require it. Do not invent local boundaries or relocate learning targets. Show source outlines individually at a shared extent for non-point overlaps, masking sea overlays by existing land. Preserve the resolver, unbiased shuffle, grading, learning/rewards and saves. Owner visual GO/ADJUST and independent Hermes geographic/design QA remain release gates; keep the implementation as a draft candidate and leave the existing child download unchanged until approval. This supersedes treating fair numbering plus the old 80-unit crop as sufficient visual assessment quality.

@@ -1,5 +1,9 @@
 # Project state
 
+## P0 issue #58 — neutral chooser legibility (draft)
+
+Dedicated branch from reviewed PR51 `bd1e57bc48e55a065cbbccb68acea196a64a187c`. Replace visually coincident callouts with exact-anchor geographic crops, constant-size markers, separate badges and noncrossing leaders; non-point options use same-scale outline maps. The resolver, geometry, grading/rewards, saves and artwork remain unchanged. Full tests/lint/build, Focus, Point/Test/Gold and rendered collision QA pass within the recorded matrix. Existing small-phone Focus occlusion is explicitly recorded rather than hidden; physical Safari and owner GO/ADJUST/Hermes review remain pending. [Implementation/evidence/release gate](MAP_PICKER_58.md). Existing child download remains unchanged; no merge/deploy/server mutation.
+
 ## P0 issue #50 — downloadable offline computer HTML
 
 Dedicated branch from exact reviewed PR47 `b111ed2abfed15c97106e3d755fcff33c704215f`. Runtime audit found no blocker; canonical `output/html/TOPO-Italie-Computer.html` is byte-identical to the reviewed outputs. Build preserves that name. Actual macOS Chromium file:// offline QA, full tests/lint/build, semantic/Gold/rewards, persistence/reset and Apennines controls pass. Download and precise evidence: [OFFLINE_COMPUTER_50.md](OFFLINE_COMPUTER_50.md). Draft only; no merge/deploy/server mutation; physical Safari and independent Hermes remain pending.

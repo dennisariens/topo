@@ -34,3 +34,12 @@ test('real Rome/Vatican keyboard chooser grades stable IDs with both first/secon
   assert.deepEqual([...positions].sort(),[0,1]);assert.deepEqual(a.errors,[]);
  }finally{a.close()}
 });
+test('every pair and broad point cluster retains exact anchors, >=32px endpoint spacing and noncrossing connectors',()=>{
+ const a=boot();try{
+  const report=a.ev(`(()=>{const points=ITEMS.filter(i=>mapFeatureClass(i)==='point'),failures=[];const sets=[];for(let a=0;a<points.length;a++)for(let b=a+1;b<points.length;b++)sets.push([points[a],points[b]]);sets.push(points);for(const width of[160,220,280,420])for(const set of sets){const panels=mapPickerPointPanels(set,width);if(panels.flatMap(p=>p.items).length!==set.length)failures.push('missing item');for(const p of panels){for(const m of p.marks){const i=byId[m.id];if(Math.abs(p.x+m.x*p.side/width-i.px)>1e-8||Math.abs(p.y+m.y*p.side/width-i.py)>1e-8)failures.push('moved anchor');}for(let a=0;a<p.marks.length;a++)for(let b=a+1;b<p.marks.length;b++){const u=p.marks[a],v=p.marks[b];if(Math.hypot(u.x-v.x,u.y-v.y)<32)failures.push('indistinguishable endpoints');}}}return failures})()`);
+  assert.deepEqual(JSON.parse(JSON.stringify(report)),[]);
+ }finally{a.close()}
+});
+test('picker rendering does not read expected answer and names containment only in Discover',()=>{
+ const source=read('scripts/map-hit.js').toString();const renderer=source.slice(source.indexOf('function mapPickerPointPanels'),source.indexOf("$('#map').addEventListener('click'"));assert(!/state\.current|state\.route|activeTarget'\)/.test(renderer.replace("n.classList.remove('activeTarget')",'')));assert(renderer.includes("state.mode==='learn'&&hits.some"));assert(renderer.includes('cancel.autofocus=true'));assert(renderer.includes("pick.addEventListener('close'"));
+});

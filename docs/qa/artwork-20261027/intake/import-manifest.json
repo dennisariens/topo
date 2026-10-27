@@ -1,0 +1,280 @@
+{
+  "packageFileCount": 34,
+  "artworkFileCount": 18,
+  "suppliedEvidenceImages": 4,
+  "packageTextFiles": 12,
+  "entries": [
+    {
+      "archive": "TOPO-NINO-ART-PART-01-01-blank-folio-originals.zip",
+      "member": "assets/nino/travel-passport/book/masters/passport-blank-folio-left-master.png",
+      "path": "assets/nino/travel-passport/book/masters/passport-blank-folio-left-master.png",
+      "bytes": 3175156,
+      "sha256": "b64802b9ea775b487660bebf57302848ee32b9f5f6934139e4ec7c02d488e4a4",
+      "gitBlob": "c69c4a60d7e9210784fd65cb60d6a57c8781f4ca"
+    },
+    {
+      "archive": "TOPO-NINO-ART-PART-01-01-blank-folio-originals.zip",
+      "member": "assets/nino/travel-passport/book/masters/passport-blank-folio-right-master.png",
+      "path": "assets/nino/travel-passport/book/masters/passport-blank-folio-right-master.png",
+      "bytes": 3323276,
+      "sha256": "70e22b4ae4a6a2e63c542906bcd78d3be196e031a2b94c97a172c0bf71d59a40",
+      "gitBlob": "200a008ef7d695da595e50ae430e7bd1cf37e2b0"
+    },
+    {
+      "archive": "TOPO-NINO-ART-PART-01-01-blank-folio-originals.zip",
+      "member": "PUSH_TO_GITHUB.sh",
+      "path": "docs/qa/artwork-20261027/intake/source-package/PUSH_TO_GITHUB.sh",
+      "bytes": 1405,
+      "sha256": "bb142971a2e265bf6a9e5461776340d29d5724c82226b12925992964b3048ae6",
+      "gitBlob": "6c6cf5a1700c862d744aba277751a466ad1cdae2"
+    },
+    {
+      "archive": "TOPO-NINO-ART-PART-01-01-blank-folio-originals.zip",
+      "member": "README_FIRST.md",
+      "path": "docs/qa/artwork-20261027/intake/source-package/README_FIRST.md",
+      "bytes": 4364,
+      "sha256": "c7c0cfba7c43336d38c85f64626a08e7b12cd4c0a9b4c9202135ab922eb2ca7b",
+      "gitBlob": "682792c04f4fb0fcee418b15a95ab71541b67a33"
+    },
+    {
+      "archive": "TOPO-NINO-ART-PART-01-01-blank-folio-originals.zip",
+      "member": "SHA256SUMS.txt",
+      "path": "docs/qa/artwork-20261027/intake/source-package/SHA256SUMS.txt",
+      "bytes": 3333,
+      "sha256": "208688fa9bfbe808c95b931a64a769416f530468b3e162017d22d699aab9ba30",
+      "gitBlob": "06c37d238b62282b4d4a33680e369aaec5c5be42"
+    },
+    {
+      "archive": "TOPO-NINO-ART-PART-01-01-blank-folio-originals.zip",
+      "member": "parts/PART-01-CONTENTS.txt",
+      "path": "docs/qa/artwork-20261027/intake/source-package/parts/PART-01-CONTENTS.txt",
+      "bytes": 559,
+      "sha256": "277ce650d99e80972d2ca352b4c2911a269fed3246592822fe6d77a1706a66ea",
+      "gitBlob": "1e18b433dfbb8d6944937c89d21f100f49e4d4b1"
+    },
+    {
+      "archive": "TOPO-NINO-ART-PART-02-02-folio-exports-QA.zip",
+      "member": "assets/nino/travel-passport/book/qa-candidates/passport-blank-folio-left-alpha-normalized.webp",
+      "path": "assets/nino/travel-passport/book/qa-candidates/passport-blank-folio-left-alpha-normalized.webp",
+      "bytes": 1909020,
+      "sha256": "d4862f0f5e34631c4e483761f933baa92bd85dee05b7ea0d581a7eb29be668a2",
+      "gitBlob": "04c92abdaaad370a68426d9d03db31d282182287"
+    },
+    {
+      "archive": "TOPO-NINO-ART-PART-02-02-folio-exports-QA.zip",
+      "member": "assets/nino/travel-passport/book/qa-candidates/passport-blank-folio-right-alpha-normalized.webp",
+      "path": "assets/nino/travel-passport/book/qa-candidates/passport-blank-folio-right-alpha-normalized.webp",
+      "bytes": 2099822,
+      "sha256": "3ce3133d483bec940e961a5a920a30bbb00e16da3ebb2445966fc83e3f210b16",
+      "gitBlob": "5095c72a85801c3aa7393844710d7eec386ec38b"
+    },
+    {
+      "archive": "TOPO-NINO-ART-PART-02-02-folio-exports-QA.zip",
+      "member": "docs/qa/artwork-20261027/alpha-composite-checker.jpg",
+      "path": "docs/qa/artwork-20261027/alpha-composite-checker.jpg",
+      "bytes": 464328,
+      "sha256": "6a8caa4332a4a34e4684bbe8c9880db3ee1ca81ae3024234fdf10126de62473f",
+      "gitBlob": "4eb0a49648674699a03537ab8d86de681c350f46"
+    },
+    {
+      "archive": "TOPO-NINO-ART-PART-02-02-folio-exports-QA.zip",
+      "member": "docs/qa/artwork-20261027/alpha-composite-cream.jpg",
+      "path": "docs/qa/artwork-20261027/alpha-composite-cream.jpg",
+      "bytes": 386153,
+      "sha256": "badb9679aaa46375403ac186605949afa53497e44643b72fb5fca6ddf462cf67",
+      "gitBlob": "4623162329bdad0601f07af41afb90b5ce3ec65e"
+    },
+    {
+      "archive": "TOPO-NINO-ART-PART-02-02-folio-exports-QA.zip",
+      "member": "docs/qa/artwork-20261027/alpha-composite-dark.jpg",
+      "path": "docs/qa/artwork-20261027/alpha-composite-dark.jpg",
+      "bytes": 361864,
+      "sha256": "2c90cae5443ee6ae534cc540a99b4208516648346a7be88d0c2c21dd92ff7226",
+      "gitBlob": "da41a011401396d57d74db4aade11e672016c56a"
+    },
+    {
+      "archive": "TOPO-NINO-ART-PART-02-02-folio-exports-QA.zip",
+      "member": "docs/qa/artwork-20261027/asset-catalog.jpg",
+      "path": "docs/qa/artwork-20261027/asset-catalog.jpg",
+      "bytes": 732454,
+      "sha256": "7fb928d9ba8d0e3c739a1310ff255c1822fec80488cbce300a202c1146347b8a",
+      "gitBlob": "d01bc547003c4944987a493855ea453d57d16c34"
+    },
+    {
+      "archive": "TOPO-NINO-ART-PART-02-02-folio-exports-QA.zip",
+      "member": "docs/qa/artwork-20261027/manifest.json",
+      "path": "docs/qa/artwork-20261027/manifest.json",
+      "bytes": 13685,
+      "sha256": "f5442e4c23c30052ba22669dbf0676d8091a4cd4af1eb83a0fb0d7ef533c9495",
+      "gitBlob": "2eee5a358a6bfea1a10a25d487c3f78fe475aef0"
+    },
+    {
+      "archive": "TOPO-NINO-ART-PART-02-02-folio-exports-QA.zip",
+      "member": "parts/PART-02-CONTENTS.txt",
+      "path": "docs/qa/artwork-20261027/intake/source-package/parts/PART-02-CONTENTS.txt",
+      "bytes": 824,
+      "sha256": "f028f295aac6664ad54bb37a41122e490c898865cc08055cd41e0f0d0675a148",
+      "gitBlob": "89030870d9e4f543f26f98cafb94a27ffad27bc7"
+    },
+    {
+      "archive": "TOPO-NINO-ART-PART-03-03-page-01-02-concepts.zip",
+      "member": "assets/nino/travel-passport/book/concepts/passport-page-01-profile-v2.png",
+      "path": "assets/nino/travel-passport/book/concepts/passport-page-01-profile-v2.png",
+      "bytes": 3304133,
+      "sha256": "9c8cbdd7f5b3aa612e9a1e4d95934234ffa48f52fa9e9004d2dba2a5db3dae21",
+      "gitBlob": "57ce2c04a8dbd11105920aa02937664de24a552f"
+    },
+    {
+      "archive": "TOPO-NINO-ART-PART-03-03-page-01-02-concepts.zip",
+      "member": "assets/nino/travel-passport/book/concepts/passport-page-02-progress-v2.png",
+      "path": "assets/nino/travel-passport/book/concepts/passport-page-02-progress-v2.png",
+      "bytes": 3552714,
+      "sha256": "36baee4ab69698ced3a15f607f24741f8c6633ef9d22623c4d6f78a23c3ddfba",
+      "gitBlob": "70726bd1d271097ed71a767846baa41eda92328c"
+    },
+    {
+      "archive": "TOPO-NINO-ART-PART-03-03-page-01-02-concepts.zip",
+      "member": "parts/PART-03-CONTENTS.txt",
+      "path": "docs/qa/artwork-20261027/intake/source-package/parts/PART-03-CONTENTS.txt",
+      "bytes": 549,
+      "sha256": "8b6f6ea94d0ada1bf9e7968cf396b775694cb7c99ab6fd8d68e91684de7d83e2",
+      "gitBlob": "192447f3ede00ab806029bdc417b3251efc05f85"
+    },
+    {
+      "archive": "TOPO-NINO-ART-PART-04-04-page-05-06-concepts.zip",
+      "member": "assets/nino/travel-passport/book/concepts/passport-page-05-scoperte-iii.png",
+      "path": "assets/nino/travel-passport/book/concepts/passport-page-05-scoperte-iii.png",
+      "bytes": 2803405,
+      "sha256": "059547fd501d6997bd8548c2cb71cd0d0e8db4a63387ed39a50305fabf3dad3c",
+      "gitBlob": "35961d3c71b4bad09a1e87119d26cae141c1bd1f"
+    },
+    {
+      "archive": "TOPO-NINO-ART-PART-04-04-page-05-06-concepts.zip",
+      "member": "assets/nino/travel-passport/book/concepts/passport-page-06-scoperte-iv.png",
+      "path": "assets/nino/travel-passport/book/concepts/passport-page-06-scoperte-iv.png",
+      "bytes": 2957288,
+      "sha256": "78e0698dcde42775ee48a111bed3ef0cf0af53d00ba3cf873240c64802618a6d",
+      "gitBlob": "ff36d9a26dae1076e2fb88f35265273bad76b58c"
+    },
+    {
+      "archive": "TOPO-NINO-ART-PART-04-04-page-05-06-concepts.zip",
+      "member": "parts/PART-04-CONTENTS.txt",
+      "path": "docs/qa/artwork-20261027/intake/source-package/parts/PART-04-CONTENTS.txt",
+      "bytes": 551,
+      "sha256": "86a13be754359283fc614c92a2876b99a61c0b09bcd8485792b0053f1657c5f0",
+      "gitBlob": "f0219170897761f5e457b181c23e95298bcd9c36"
+    },
+    {
+      "archive": "TOPO-NINO-ART-PART-05-05-page-07-08-09-concepts.zip",
+      "member": "assets/nino/travel-passport/book/concepts/passport-page-07-cartoline-i.png",
+      "path": "assets/nino/travel-passport/book/concepts/passport-page-07-cartoline-i.png",
+      "bytes": 1415325,
+      "sha256": "0ce654e69ed9f6f413558a83f2e59f578f4e5822f6e9b0b05a8042be2a172a4b",
+      "gitBlob": "2f646f9b581191e67212cfd659e9c601ead11da9"
+    },
+    {
+      "archive": "TOPO-NINO-ART-PART-05-05-page-07-08-09-concepts.zip",
+      "member": "assets/nino/travel-passport/book/concepts/passport-page-08-cartoline-ii.png",
+      "path": "assets/nino/travel-passport/book/concepts/passport-page-08-cartoline-ii.png",
+      "bytes": 1368381,
+      "sha256": "1eb64903c56823eaf0ef26166dfd34e22f3a4f26d90c5ad242d21c5ea77b69fb",
+      "gitBlob": "81e283634039d0e86ac7995669c420fb11b8b780"
+    },
+    {
+      "archive": "TOPO-NINO-ART-PART-05-05-page-07-08-09-concepts.zip",
+      "member": "assets/nino/travel-passport/book/concepts/passport-page-09-avventura-vespa.png",
+      "path": "assets/nino/travel-passport/book/concepts/passport-page-09-avventura-vespa.png",
+      "bytes": 3459103,
+      "sha256": "31a42fc6f89bd92f7868cf2bca7abf2997d1f9767129fb9e55a7c782f849eaa7",
+      "gitBlob": "5668326f5fc5927810bf4ba8b5a2d22493d3ae98"
+    },
+    {
+      "archive": "TOPO-NINO-ART-PART-05-05-page-07-08-09-concepts.zip",
+      "member": "parts/PART-05-CONTENTS.txt",
+      "path": "docs/qa/artwork-20261027/intake/source-package/parts/PART-05-CONTENTS.txt",
+      "bytes": 633,
+      "sha256": "1b4087ce36d8ac51a2316251000847c55f45c3ac054002db4f22ffa817cb947d",
+      "gitBlob": "7992ed8c9851c0d9b0bdab5c8c71464a9c3ae6dc"
+    },
+    {
+      "archive": "TOPO-NINO-ART-PART-06-06-page-10-endpaper-concepts.zip",
+      "member": "assets/nino/travel-passport/book/concepts/passport-page-10-gold-finale-v2.png",
+      "path": "assets/nino/travel-passport/book/concepts/passport-page-10-gold-finale-v2.png",
+      "bytes": 3328736,
+      "sha256": "76db51b8d6046222caedce2c3eb4685a7b6fa8c1b23e8bab901caf094adcbfb8",
+      "gitBlob": "703a2715c42c7bd61b00fae8521c470c0f24afb6"
+    },
+    {
+      "archive": "TOPO-NINO-ART-PART-06-06-page-10-endpaper-concepts.zip",
+      "member": "assets/nino/travel-passport/book/concepts/passport-back-endpaper.png",
+      "path": "assets/nino/travel-passport/book/concepts/passport-back-endpaper.png",
+      "bytes": 3088140,
+      "sha256": "d6d03a960d9a213e775622de2a38495de5a6734bb381042478fb9c13033f87ce",
+      "gitBlob": "8b606199b9aec32c5eb872549591e87b79b53078"
+    },
+    {
+      "archive": "TOPO-NINO-ART-PART-06-06-page-10-endpaper-concepts.zip",
+      "member": "parts/PART-06-CONTENTS.txt",
+      "path": "docs/qa/artwork-20261027/intake/source-package/parts/PART-06-CONTENTS.txt",
+      "bytes": 553,
+      "sha256": "2839720d7a61dc0fe308a4823f020c420dbd8445a5485a5e6619fa2fd3498d87",
+      "gitBlob": "27023ec2ecf5188d0055280c6ed5e9254455e5ac"
+    },
+    {
+      "archive": "TOPO-NINO-ART-PART-07-07-extra-postcards.zip",
+      "member": "assets/nino/travel-passport/postcards/concepts/postcard-05-bologna-front.png",
+      "path": "assets/nino/travel-passport/postcards/concepts/postcard-05-bologna-front.png",
+      "bytes": 3183567,
+      "sha256": "f58f20edb4199739f9b643a6c6b62f65051b4e61930c7d087ce6e77f3657b9e8",
+      "gitBlob": "32b8906b04a93f9541e0950d7e34b47edd762e74"
+    },
+    {
+      "archive": "TOPO-NINO-ART-PART-07-07-extra-postcards.zip",
+      "member": "assets/nino/travel-passport/postcards/concepts/postcard-06-milano-front.png",
+      "path": "assets/nino/travel-passport/postcards/concepts/postcard-06-milano-front.png",
+      "bytes": 3676361,
+      "sha256": "1347e3f71ced9aa9a0f899f1a53914f7883b1cae92c4fa807e16f235c27d6e12",
+      "gitBlob": "d0eb18be03ae2766e33a75dbb3e64afa891e57f7"
+    },
+    {
+      "archive": "TOPO-NINO-ART-PART-07-07-extra-postcards.zip",
+      "member": "parts/PART-07-CONTENTS.txt",
+      "path": "docs/qa/artwork-20261027/intake/source-package/parts/PART-07-CONTENTS.txt",
+      "bytes": 549,
+      "sha256": "7667b2672793f21ff6ff4c159c1d5e9689065b704e2dba539f669f644ff62ca3",
+      "gitBlob": "a216a8a16e6f918eddcdc4456f7455cb968b54c2"
+    },
+    {
+      "archive": "TOPO-NINO-ART-PART-08-08-gold-arrivo-isole-QA.zip",
+      "member": "assets/nino/travel-passport/gold/concepts/gold-finale-ornament-overlay.png",
+      "path": "assets/nino/travel-passport/gold/concepts/gold-finale-ornament-overlay.png",
+      "bytes": 1917134,
+      "sha256": "f58e3077c57740345ed48632d3917baba32a451bf8bb1e917753e3ff91e62947",
+      "gitBlob": "4e756ef1593db37869fc36d8174cde90128d4b51"
+    },
+    {
+      "archive": "TOPO-NINO-ART-PART-08-08-gold-arrivo-isole-QA.zip",
+      "member": "assets/nino/travel-passport/arrivo/qa-candidates/arrivo-travel-ink-preview.png",
+      "path": "assets/nino/travel-passport/arrivo/qa-candidates/arrivo-travel-ink-preview.png",
+      "bytes": 2007944,
+      "sha256": "6a1ced67a6c25d8a995cb29fd12f0c4be2dfd12be0b49a2d06e4434f62540bef",
+      "gitBlob": "95a4293c044daf9bb1bde0dbfffde4e66e922598"
+    },
+    {
+      "archive": "TOPO-NINO-ART-PART-08-08-gold-arrivo-isole-QA.zip",
+      "member": "assets/nino/travel-passport/stamps/rework/stamp-05-isole-geography-candidate.png",
+      "path": "assets/nino/travel-passport/stamps/rework/stamp-05-isole-geography-candidate.png",
+      "bytes": 1050851,
+      "sha256": "1fd8360be1eb6cb8ee01f981651d03e2dbeec7cb5ca8af293752ff3c9357d8f4",
+      "gitBlob": "8ecf8c28f6d9ae711c16e8fad7238db00ab38a77"
+    },
+    {
+      "archive": "TOPO-NINO-ART-PART-08-08-gold-arrivo-isole-QA.zip",
+      "member": "parts/PART-08-CONTENTS.txt",
+      "path": "docs/qa/artwork-20261027/intake/source-package/parts/PART-08-CONTENTS.txt",
+      "bytes": 636,
+      "sha256": "66e0eaaeba9af242e34c63e4d1384316cd40888e274d53f413521e99be166494",
+      "gitBlob": "b5563fc75aba2637466bc04e014e010c94d00931"
+    }
+  ]
+}

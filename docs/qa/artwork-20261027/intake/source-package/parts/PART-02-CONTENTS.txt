@@ -1,0 +1,14 @@
+PART 2/8 — 02-folio-exports-QA
+Combine all 8 zip archives by extracting them into the SAME folder.
+Existing repository-relative paths are preserved. No asset files are overwritten by other parts.
+PART 01 has the README, SHA256SUMS and optional import script; use the import script only AFTER all eight parts are combined.
+This package does not imply QA production approval.
+
+Files in this part:
+assets/nino/travel-passport/book/qa-candidates/passport-blank-folio-left-alpha-normalized.webp
+assets/nino/travel-passport/book/qa-candidates/passport-blank-folio-right-alpha-normalized.webp
+docs/qa/artwork-20261027/alpha-composite-checker.jpg
+docs/qa/artwork-20261027/alpha-composite-cream.jpg
+docs/qa/artwork-20261027/alpha-composite-dark.jpg
+docs/qa/artwork-20261027/asset-catalog.jpg
+docs/qa/artwork-20261027/manifest.json

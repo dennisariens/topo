@@ -1,5 +1,9 @@
 # Project state
 
+## 27 October 2026 — art-only final passport intake
+
+Eight owner ZIPs delivered18 new artwork files plus supplied QA/package records, added on the existing art branch from `fab2bbae943d507fcd103887012f790c144f43a5`. All20 pre-existing passport masters and all legacy runtime files are unchanged. [Source/alpha/native-resolution audit, statuses and exact-commit Hermes handoff](qa/artwork-20261027/intake/README.md). New sources are not new runtime approvals; ornament remains REWORK and corrected ISOLE still needs geographic acceptance. No new passport UI, grading/reward/save/map change, application merge or deployment. The legacy runtime notes below are historical for this art branch, not the current P0 app baseline.
+
 **Last verified against repository: 2026-09-28.** Canonical repository: `dennisariens/topo`, branch `main`. Recovered from standalone `topo-italie-v6.html`; older HTML and recovery ZIP are historical.
 
 ## Purpose and implementation

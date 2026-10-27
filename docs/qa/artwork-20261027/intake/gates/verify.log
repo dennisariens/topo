@@ -1,0 +1,76 @@
+{
+  "hashChecks": 25,
+  "oldChecks": 18,
+  "newManifestMatches": 18,
+  "decoded": 49,
+  "suppliedBoards": 4,
+  "folioAlignment": {
+    "leftNative": [
+      1086,
+      1448
+    ],
+    "rightNative": [
+      1086,
+      1448
+    ],
+    "sameNativeCanvas": true,
+    "topOpaqueEdgeDelta": 8,
+    "bottomOpaqueEdgeDelta": 3,
+    "leftBounds": {
+      "left": 12,
+      "top": 0,
+      "right": 1085,
+      "bottom": 1437
+    },
+    "rightBounds": {
+      "left": 7,
+      "top": 8,
+      "right": 1076,
+      "bottom": 1434
+    },
+    "centralRGBMeanDifference": [
+      -2.6596,
+      -2.2024,
+      -2.8111
+    ],
+    "pairBase64Bytes": 5345124,
+    "native2xCssWidth": 543,
+    "visualSeamApproval": "QA REQUIRED: no crop/flip/registration invented"
+  },
+  "islandRelation": {
+    "method": "connected blue-ink components alpha>24; two largest; identity checked visually",
+    "northUp": true,
+    "sardinia": {
+      "pixels": 28673,
+      "centroid": [
+        378.5529592299376,
+        614.7887559725177
+      ],
+      "bounds": [
+        294,
+        473,
+        456,
+        752
+      ]
+    },
+    "sicily": {
+      "pixels": 30074,
+      "centroid": [
+        724.6816186739376,
+        759.040666356321
+      ],
+      "bounds": [
+        566,
+        666,
+        860,
+        866
+      ]
+    },
+    "sardiniaNorthWestOfSicily": true,
+    "mainComponentVerticalOverlapPixels": 86,
+    "interpretation": "NW centroid direction only; vertical overlap still needs independent geography review",
+    "fullGeographicShapeCertification": false
+  }
+}
+2026-10-27 17:48:17.750 node[31413:482456] XType: Using static font registry.
+Wrote deterministic diagnostic composites. All originals untouched.

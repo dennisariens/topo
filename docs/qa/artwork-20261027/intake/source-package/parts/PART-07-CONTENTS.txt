@@ -1,0 +1,9 @@
+PART 7/8 — 07-extra-postcards
+Combine all 8 zip archives by extracting them into the SAME folder.
+Existing repository-relative paths are preserved. No asset files are overwritten by other parts.
+PART 01 has the README, SHA256SUMS and optional import script; use the import script only AFTER all eight parts are combined.
+This package does not imply QA production approval.
+
+Files in this part:
+assets/nino/travel-passport/postcards/concepts/postcard-05-bologna-front.png
+assets/nino/travel-passport/postcards/concepts/postcard-06-milano-front.png

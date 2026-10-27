@@ -1,0 +1,13 @@
+
+> topo-italie-baseline@0.1.0 test
+> node scripts/validate-map.mjs && node scripts/validate-print.mjs && node scripts/learning-engine.test.mjs && node scripts/route-engine.test.mjs && node scripts/exam-flow.test.mjs && node scripts/ui-smoke.test.mjs && node scripts/route-dom.test.mjs
+
+45 content entries, anchors, coastal markers, microstates, selected land checks: OK
+Limit: drawn Italy polygon is not an independent geographic ground truth
+Printable A4 groups, school photo and all 45 worksheet mappings: OK
+Shuffle, coverage, spaced mistake review, legacy migration and Vespa cadence: OK
+Route locks, stages, repair spacing, gold, persistence, rewards and scheduled review: OK
+Finite worksheet test, both directions, scoring, restart and letter case: OK
+Full standalone boot and learn/point/write/exam/reset button flow: OK
+All 11 route chapters and gold tests, dock controls, mode switch, resume and reset: OK
+Real HTML DOM: controls, SVG events, reload, atomic rewards, unique IDs, enclave and storage failure: OK

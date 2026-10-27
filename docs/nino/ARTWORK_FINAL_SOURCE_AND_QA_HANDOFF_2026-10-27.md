@@ -1,5 +1,7 @@
 # TOPO / NINO — Passport artwork production handoff (27 October 2026)
 
+> **Git delivery update — 27 October:** The eight owner-provided split ZIPs have now been physically received, verified and additively imported into this art branch. See the [intake report, source hashes, native measurements and single Hermes handoff](../qa/artwork-20261027/intake/README.md). The earlier “NOT YET PUSHED” wording below is the historical design-package snapshot, superseded for source availability by this intake commit, not for production approval. All20 existing passport masters remain byte-identical. No new asset is activated in the app.
+
 **State:** ART DIRECTION LOCKED. New source candidate package assembled and verified in the design conversation. **Physical ZIP binaries NOT YET PUSHED TO GITHUB**; production release / user acceptance / independent QA remain pending. Do not confuse design approval, source availability or checksums with production-ready alpha.
 
 ## Package and provenance

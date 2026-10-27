@@ -1,0 +1,2220 @@
+{
+  "statusScope": "Source-file disposition. PASS on existing candidate files records exact-byte equivalence to PR48 accepted exports, not runtime permission for the qa-candidates path.",
+  "assets": [
+    {
+      "path": "assets/nino/travel-passport/arrivo/qa-candidates/arrivo-travel-ink-preview.png",
+      "source": "new-package",
+      "sha256": "6a1ced67a6c25d8a995cb29fd12f0c4be2dfd12be0b49a2d06e4434f62540bef",
+      "bytes": 2007944,
+      "format": "png",
+      "width": 1536,
+      "height": 1536,
+      "mode": "RGBA",
+      "hasAlphaChannel": true,
+      "actualTransparency": true,
+      "alphaMin": 0,
+      "alphaMax": 254,
+      "alphaZeroFraction": 0.7228580050998263,
+      "opaqueFraction": 0,
+      "partialAlphaFraction": 0.27714199490017366,
+      "centerAlpha": 11,
+      "opaque128Bounds": {
+        "left": 17,
+        "top": 325,
+        "right": 1519,
+        "bottom": 1221
+      },
+      "nonzeroCanvasEdgePixels": 5,
+      "semiTransparentRedYellowPixels": 576693,
+      "centralRGBMean": [
+        105.3613,
+        35.7195,
+        31.0985
+      ],
+      "embeddedICC": false,
+      "pngColorChunks": [],
+      "webpChunks": [],
+      "decodedRGBAsha256": "17da7666d539085452842f96e40155a0cc1c111104aa19a4419275912be60c30",
+      "maxCssWidthAt2x": 768,
+      "productionStatus": "QA REQUIRED",
+      "sourceIntegrityStatus": "PASS",
+      "strictDecodeStatus": "PASS",
+      "productionUseApproved": false,
+      "notes": [
+        "Actual alpha 0..254; 5 nonzero canvas-edge pixels. Readability/edge clipping needs independent acceptance. Genuine canonical Vespa arrivals only; dynamic city/date text, no invented history."
+      ]
+    },
+    {
+      "path": "assets/nino/travel-passport/book/concepts/passport-back-endpaper.png",
+      "source": "new-package",
+      "sha256": "d6d03a960d9a213e775622de2a38495de5a6734bb381042478fb9c13033f87ce",
+      "bytes": 3088140,
+      "format": "png",
+      "width": 1086,
+      "height": 1448,
+      "mode": "RGBA",
+      "hasAlphaChannel": true,
+      "actualTransparency": true,
+      "alphaMin": 0,
+      "alphaMax": 255,
+      "alphaZeroFraction": 0.11480240733392347,
+      "opaqueFraction": 0.0007058697841946217,
+      "partialAlphaFraction": 0.8844917228818819,
+      "centerAlpha": 253,
+      "opaque128Bounds": {
+        "left": 37,
+        "top": 38,
+        "right": 1049,
+        "bottom": 1400
+      },
+      "nonzeroCanvasEdgePixels": 0,
+      "semiTransparentRedYellowPixels": 217880,
+      "centralRGBMean": [
+        243.5816,
+        221.9072,
+        185.7181
+      ],
+      "embeddedICC": false,
+      "pngColorChunks": [],
+      "webpChunks": [],
+      "decodedRGBAsha256": "ff3ac5397b76555002097c22bd120703dfe4a219c632f6195501aa13730c657a",
+      "maxCssWidthAt2x": 543,
+      "productionStatus": "CONCEPT ONLY",
+      "sourceIntegrityStatus": "PASS",
+      "strictDecodeStatus": "PASS",
+      "productionUseApproved": false,
+      "notes": [
+        "Full-page design reference with baked framing/decorative content, not a finished interactive screen or production page background."
+      ]
+    },
+    {
+      "path": "assets/nino/travel-passport/book/concepts/passport-page-01-profile-v2.png",
+      "source": "new-package",
+      "sha256": "9c8cbdd7f5b3aa612e9a1e4d95934234ffa48f52fa9e9004d2dba2a5db3dae21",
+      "bytes": 3304133,
+      "format": "png",
+      "width": 1086,
+      "height": 1448,
+      "mode": "RGBA",
+      "hasAlphaChannel": true,
+      "actualTransparency": true,
+      "alphaMin": 0,
+      "alphaMax": 255,
+      "alphaZeroFraction": 0.08615935614500982,
+      "opaqueFraction": 0.00036819694148530264,
+      "partialAlphaFraction": 0.9134724469135049,
+      "centerAlpha": 252,
+      "opaque128Bounds": {
+        "left": 40,
+        "top": 38,
+        "right": 1079,
+        "bottom": 1410
+      },
+      "nonzeroCanvasEdgePixels": 284,
+      "semiTransparentRedYellowPixels": 274342,
+      "centralRGBMean": [
+        228.5414,
+        199.4546,
+        157.2653
+      ],
+      "embeddedICC": false,
+      "pngColorChunks": [],
+      "webpChunks": [],
+      "decodedRGBAsha256": "41b6f3fb50a0da0d9d946cb86b8d076e1bd5924cf2b89e853ebd573eeb773c8e",
+      "maxCssWidthAt2x": 543,
+      "productionStatus": "CONCEPT ONLY",
+      "sourceIntegrityStatus": "PASS",
+      "strictDecodeStatus": "PASS",
+      "productionUseApproved": false,
+      "notes": [
+        "Full-page design reference with baked framing/decorative content, not a finished interactive screen or production page background."
+      ]
+    },
+    {
+      "path": "assets/nino/travel-passport/book/concepts/passport-page-02-progress-v2.png",
+      "source": "new-package",
+      "sha256": "36baee4ab69698ced3a15f607f24741f8c6633ef9d22623c4d6f78a23c3ddfba",
+      "bytes": 3552714,
+      "format": "png",
+      "width": 1086,
+      "height": 1448,
+      "mode": "RGBA",
+      "hasAlphaChannel": true,
+      "actualTransparency": true,
+      "alphaMin": 5,
+      "alphaMax": 250,
+      "alphaZeroFraction": 0,
+      "opaqueFraction": 0,
+      "partialAlphaFraction": 1,
+      "centerAlpha": 247,
+      "opaque128Bounds": {
+        "left": 0,
+        "top": 2,
+        "right": 1082,
+        "bottom": 1447
+      },
+      "nonzeroCanvasEdgePixels": 5064,
+      "semiTransparentRedYellowPixels": 308699,
+      "centralRGBMean": [
+        239.622,
+        212.215,
+        171.0183
+      ],
+      "embeddedICC": false,
+      "pngColorChunks": [],
+      "webpChunks": [],
+      "decodedRGBAsha256": "ba92c8bcd5b1cd87efba7c8a35d31647b0ac72b013923326026ff58194a16c46",
+      "maxCssWidthAt2x": 543,
+      "productionStatus": "CONCEPT ONLY",
+      "sourceIntegrityStatus": "PASS",
+      "strictDecodeStatus": "PASS",
+      "productionUseApproved": false,
+      "notes": [
+        "Full-page design reference with baked framing/decorative content, not a finished interactive screen or production page background."
+      ]
+    },
+    {
+      "path": "assets/nino/travel-passport/book/concepts/passport-page-05-scoperte-iii.png",
+      "source": "new-package",
+      "sha256": "059547fd501d6997bd8548c2cb71cd0d0e8db4a63387ed39a50305fabf3dad3c",
+      "bytes": 2803405,
+      "format": "png",
+      "width": 1086,
+      "height": 1448,
+      "mode": "RGBA",
+      "hasAlphaChannel": true,
+      "actualTransparency": true,
+      "alphaMin": 0,
+      "alphaMax": 255,
+      "alphaZeroFraction": 0.11011123490328949,
+      "opaqueFraction": 0.0007961702430735732,
+      "partialAlphaFraction": 0.889092594853637,
+      "centerAlpha": 253,
+      "opaque128Bounds": {
+        "left": 37,
+        "top": 41,
+        "right": 1047,
+        "bottom": 1408
+      },
+      "nonzeroCanvasEdgePixels": 19,
+      "semiTransparentRedYellowPixels": 109465,
+      "centralRGBMean": [
+        226.649,
+        209.4657,
+        175.3249
+      ],
+      "embeddedICC": false,
+      "pngColorChunks": [],
+      "webpChunks": [],
+      "decodedRGBAsha256": "e13439e04260e25f9e2303d19c5f839c3ba6b787979d8eead8830f2137d7b934",
+      "maxCssWidthAt2x": 543,
+      "productionStatus": "CONCEPT ONLY",
+      "sourceIntegrityStatus": "PASS",
+      "strictDecodeStatus": "PASS",
+      "productionUseApproved": false,
+      "notes": [
+        "Full-page design reference with baked framing/decorative content, not a finished interactive screen or production page background."
+      ]
+    },
+    {
+      "path": "assets/nino/travel-passport/book/concepts/passport-page-06-scoperte-iv.png",
+      "source": "new-package",
+      "sha256": "78e0698dcde42775ee48a111bed3ef0cf0af53d00ba3cf873240c64802618a6d",
+      "bytes": 2957288,
+      "format": "png",
+      "width": 1086,
+      "height": 1448,
+      "mode": "RGBA",
+      "hasAlphaChannel": true,
+      "actualTransparency": true,
+      "alphaMin": 0,
+      "alphaMax": 255,
+      "alphaZeroFraction": 0.10457174689417295,
+      "opaqueFraction": 0.0010308242524139474,
+      "partialAlphaFraction": 0.8943974288534131,
+      "centerAlpha": 253,
+      "opaque128Bounds": {
+        "left": 29,
+        "top": 46,
+        "right": 1053,
+        "bottom": 1408
+      },
+      "nonzeroCanvasEdgePixels": 0,
+      "semiTransparentRedYellowPixels": 196317,
+      "centralRGBMean": [
+        219.3929,
+        204.0214,
+        175.2436
+      ],
+      "embeddedICC": false,
+      "pngColorChunks": [],
+      "webpChunks": [],
+      "decodedRGBAsha256": "ceaf93f07bc5fcaf0d5e380d3135bb2f7df46162897b103e06254baaafe6649c",
+      "maxCssWidthAt2x": 543,
+      "productionStatus": "CONCEPT ONLY",
+      "sourceIntegrityStatus": "PASS",
+      "strictDecodeStatus": "PASS",
+      "productionUseApproved": false,
+      "notes": [
+        "Full-page design reference with baked framing/decorative content, not a finished interactive screen or production page background."
+      ]
+    },
+    {
+      "path": "assets/nino/travel-passport/book/concepts/passport-page-07-cartoline-i.png",
+      "source": "new-package",
+      "sha256": "0ce654e69ed9f6f413558a83f2e59f578f4e5822f6e9b0b05a8042be2a172a4b",
+      "bytes": 1415325,
+      "format": "png",
+      "width": 768,
+      "height": 1024,
+      "mode": "RGB",
+      "hasAlphaChannel": false,
+      "actualTransparency": false,
+      "alphaMin": 255,
+      "alphaMax": 255,
+      "alphaZeroFraction": 0,
+      "opaqueFraction": 1,
+      "partialAlphaFraction": 0,
+      "centerAlpha": 255,
+      "opaque128Bounds": {
+        "left": 0,
+        "top": 0,
+        "right": 767,
+        "bottom": 1023
+      },
+      "nonzeroCanvasEdgePixels": 3580,
+      "semiTransparentRedYellowPixels": 0,
+      "centralRGBMean": [
+        238.4907,
+        212.3168,
+        173.5114
+      ],
+      "embeddedICC": false,
+      "pngColorChunks": [],
+      "webpChunks": [],
+      "decodedRGBAsha256": "eed668632610c2129426ef6a382cc803d89717e5a06acad56301400a6fb75a1c",
+      "maxCssWidthAt2x": 384,
+      "productionStatus": "CONCEPT ONLY",
+      "sourceIntegrityStatus": "PASS",
+      "strictDecodeStatus": "PASS",
+      "productionUseApproved": false,
+      "notes": [
+        "Full-page design reference with baked framing/decorative content, not a finished interactive screen or production page background."
+      ]
+    },
+    {
+      "path": "assets/nino/travel-passport/book/concepts/passport-page-08-cartoline-ii.png",
+      "source": "new-package",
+      "sha256": "1eb64903c56823eaf0ef26166dfd34e22f3a4f26d90c5ad242d21c5ea77b69fb",
+      "bytes": 1368381,
+      "format": "png",
+      "width": 768,
+      "height": 1024,
+      "mode": "RGB",
+      "hasAlphaChannel": false,
+      "actualTransparency": false,
+      "alphaMin": 255,
+      "alphaMax": 255,
+      "alphaZeroFraction": 0,
+      "opaqueFraction": 1,
+      "partialAlphaFraction": 0,
+      "centerAlpha": 255,
+      "opaque128Bounds": {
+        "left": 0,
+        "top": 0,
+        "right": 767,
+        "bottom": 1023
+      },
+      "nonzeroCanvasEdgePixels": 3580,
+      "semiTransparentRedYellowPixels": 0,
+      "centralRGBMean": [
+        239.2344,
+        213.5746,
+        175.6004
+      ],
+      "embeddedICC": false,
+      "pngColorChunks": [],
+      "webpChunks": [],
+      "decodedRGBAsha256": "8cc69d6b2ef4599aefa192c0a12114d1cae0a450d4152e643eae3df3bc293e15",
+      "maxCssWidthAt2x": 384,
+      "productionStatus": "CONCEPT ONLY",
+      "sourceIntegrityStatus": "PASS",
+      "strictDecodeStatus": "PASS",
+      "productionUseApproved": false,
+      "notes": [
+        "Full-page design reference with baked framing/decorative content, not a finished interactive screen or production page background."
+      ]
+    },
+    {
+      "path": "assets/nino/travel-passport/book/concepts/passport-page-09-avventura-vespa.png",
+      "source": "new-package",
+      "sha256": "31a42fc6f89bd92f7868cf2bca7abf2997d1f9767129fb9e55a7c782f849eaa7",
+      "bytes": 3459103,
+      "format": "png",
+      "width": 1086,
+      "height": 1448,
+      "mode": "RGBA",
+      "hasAlphaChannel": true,
+      "actualTransparency": true,
+      "alphaMin": 10,
+      "alphaMax": 251,
+      "alphaZeroFraction": 0,
+      "opaqueFraction": 0,
+      "partialAlphaFraction": 1,
+      "centerAlpha": 248,
+      "opaque128Bounds": {
+        "left": 0,
+        "top": 0,
+        "right": 1085,
+        "bottom": 1447
+      },
+      "nonzeroCanvasEdgePixels": 5064,
+      "semiTransparentRedYellowPixels": 211699,
+      "centralRGBMean": [
+        237.0829,
+        215.0708,
+        181.7723
+      ],
+      "embeddedICC": false,
+      "pngColorChunks": [],
+      "webpChunks": [],
+      "decodedRGBAsha256": "1ee70a7172afb64117f7eca115e603f6a2b59c5c3632c79de1988d833cf95830",
+      "maxCssWidthAt2x": 543,
+      "productionStatus": "CONCEPT ONLY",
+      "sourceIntegrityStatus": "PASS",
+      "strictDecodeStatus": "PASS",
+      "productionUseApproved": false,
+      "notes": [
+        "Full-page design reference with baked framing/decorative content, not a finished interactive screen or production page background."
+      ]
+    },
+    {
+      "path": "assets/nino/travel-passport/book/concepts/passport-page-10-gold-finale-v2.png",
+      "source": "new-package",
+      "sha256": "76db51b8d6046222caedce2c3eb4685a7b6fa8c1b23e8bab901caf094adcbfb8",
+      "bytes": 3328736,
+      "format": "png",
+      "width": 1086,
+      "height": 1448,
+      "mode": "RGB",
+      "hasAlphaChannel": false,
+      "actualTransparency": false,
+      "alphaMin": 255,
+      "alphaMax": 255,
+      "alphaZeroFraction": 0,
+      "opaqueFraction": 1,
+      "partialAlphaFraction": 0,
+      "centerAlpha": 255,
+      "opaque128Bounds": {
+        "left": 0,
+        "top": 0,
+        "right": 1085,
+        "bottom": 1447
+      },
+      "nonzeroCanvasEdgePixels": 5064,
+      "semiTransparentRedYellowPixels": 0,
+      "centralRGBMean": [
+        236.2468,
+        215.5445,
+        181.5831
+      ],
+      "embeddedICC": false,
+      "pngColorChunks": [],
+      "webpChunks": [],
+      "decodedRGBAsha256": "5cd2b26021922e19a15b3cbdf96170162059718cebb01ca541121ab71e830885",
+      "maxCssWidthAt2x": 543,
+      "productionStatus": "CONCEPT ONLY",
+      "sourceIntegrityStatus": "PASS",
+      "strictDecodeStatus": "PASS",
+      "productionUseApproved": false,
+      "notes": [
+        "Full-page design reference with baked framing/decorative content, not a finished interactive screen or production page background."
+      ]
+    },
+    {
+      "path": "assets/nino/travel-passport/book/masters/passport-blank-folio-left-master.png",
+      "source": "new-package",
+      "sha256": "b64802b9ea775b487660bebf57302848ee32b9f5f6934139e4ec7c02d488e4a4",
+      "bytes": 3175156,
+      "format": "png",
+      "width": 1086,
+      "height": 1448,
+      "mode": "RGBA",
+      "hasAlphaChannel": true,
+      "actualTransparency": true,
+      "alphaMin": 0,
+      "alphaMax": 255,
+      "alphaZeroFraction": 0.015534858520802173,
+      "opaqueFraction": 0.00014053803811442468,
+      "partialAlphaFraction": 0.9843246034410834,
+      "centerAlpha": 251,
+      "opaque128Bounds": {
+        "left": 12,
+        "top": 0,
+        "right": 1085,
+        "bottom": 1437
+      },
+      "nonzeroCanvasEdgePixels": 3620,
+      "semiTransparentRedYellowPixels": 189337,
+      "centralRGBMean": [
+        236.1898,
+        214.3364,
+        177.9169
+      ],
+      "embeddedICC": false,
+      "pngColorChunks": [],
+      "webpChunks": [],
+      "decodedRGBAsha256": "c4ea19b28ace85d6f4fc6e3bd0c7de4a54e8a20dd07c465172928859e480c21b",
+      "maxCssWidthAt2x": 543,
+      "productionStatus": "QA REQUIRED",
+      "sourceIntegrityStatus": "PASS",
+      "strictDecodeStatus": "PASS",
+      "productionUseApproved": false,
+      "notes": [
+        "Native 1086x1448; no upscale or Retina certification. Alpha-normalized WebP candidates preserve every source RGB channel. Pair seam/device acceptance pending."
+      ]
+    },
+    {
+      "path": "assets/nino/travel-passport/book/masters/passport-blank-folio-right-master.png",
+      "source": "new-package",
+      "sha256": "70e22b4ae4a6a2e63c542906bcd78d3be196e031a2b94c97a172c0bf71d59a40",
+      "bytes": 3323276,
+      "format": "png",
+      "width": 1086,
+      "height": 1448,
+      "mode": "RGBA",
+      "hasAlphaChannel": true,
+      "actualTransparency": true,
+      "alphaMin": 0,
+      "alphaMax": 252,
+      "alphaZeroFraction": 0.00018314459265590183,
+      "opaqueFraction": 0,
+      "partialAlphaFraction": 0.9998168554073441,
+      "centerAlpha": 250,
+      "opaque128Bounds": {
+        "left": 7,
+        "top": 8,
+        "right": 1077,
+        "bottom": 1435
+      },
+      "nonzeroCanvasEdgePixels": 5016,
+      "semiTransparentRedYellowPixels": 265734,
+      "centralRGBMean": [
+        238.8494,
+        216.5388,
+        180.728
+      ],
+      "embeddedICC": false,
+      "pngColorChunks": [],
+      "webpChunks": [],
+      "decodedRGBAsha256": "2783b3fda9290997c552a41ef02351822b5953125707b3fc316d094fbf026105",
+      "maxCssWidthAt2x": 543,
+      "productionStatus": "QA REQUIRED",
+      "sourceIntegrityStatus": "PASS",
+      "strictDecodeStatus": "PASS",
+      "productionUseApproved": false,
+      "notes": [
+        "Native 1086x1448; no upscale or Retina certification. Alpha-normalized WebP candidates preserve every source RGB channel. Pair seam/device acceptance pending."
+      ]
+    },
+    {
+      "path": "assets/nino/travel-passport/book/masters/passport-closed-cover.png",
+      "source": "existing-baseline",
+      "sha256": "3d1c0e1978373d2a21b0072baa3f342375641341635fc7f9f06e5721ff58f1b9",
+      "bytes": 2235471,
+      "format": "png",
+      "width": 1254,
+      "height": 1254,
+      "mode": "RGBA",
+      "hasAlphaChannel": true,
+      "actualTransparency": true,
+      "alphaMin": 0,
+      "alphaMax": 255,
+      "alphaZeroFraction": 0.44074782068990076,
+      "opaqueFraction": 0.0002104907040691478,
+      "partialAlphaFraction": 0.5590416886060301,
+      "centerAlpha": 253,
+      "opaque128Bounds": {
+        "left": 212,
+        "top": 36,
+        "right": 1078,
+        "bottom": 1226
+      },
+      "nonzeroCanvasEdgePixels": 728,
+      "semiTransparentRedYellowPixels": 682030,
+      "centralRGBMean": [
+        148.6352,
+        50.6395,
+        33.6126
+      ],
+      "embeddedICC": false,
+      "pngColorChunks": [],
+      "webpChunks": [],
+      "decodedRGBAsha256": "003df96d54219309e605adb3074d9a9805d83cee171ea6a7fadf3e9f00c7e597",
+      "maxCssWidthAt2x": 627,
+      "productionStatus": "QA REQUIRED",
+      "sourceIntegrityStatus": "PASS",
+      "strictDecodeStatus": "PASS",
+      "productionUseApproved": false,
+      "notes": [
+        "Preserved original source. Gold/postcard alpha, small-size readability and production export acceptance remain separate."
+      ]
+    },
+    {
+      "path": "assets/nino/travel-passport/book/masters/passport-open-book.png",
+      "source": "existing-baseline",
+      "sha256": "94f5d286e502b81ee156ae0923132f22dc8475f474f44709087e83662e032b8d",
+      "bytes": 2674616,
+      "format": "png",
+      "width": 1586,
+      "height": 992,
+      "mode": "RGBA",
+      "hasAlphaChannel": true,
+      "actualTransparency": true,
+      "alphaMin": 0,
+      "alphaMax": 255,
+      "alphaZeroFraction": 0.20308050787129317,
+      "opaqueFraction": 5.275495260952691e-05,
+      "partialAlphaFraction": 0.7968667371760974,
+      "centerAlpha": 253,
+      "opaque128Bounds": {
+        "left": 44,
+        "top": 24,
+        "right": 1542,
+        "bottom": 985
+      },
+      "nonzeroCanvasEdgePixels": 32,
+      "semiTransparentRedYellowPixels": 193514,
+      "centralRGBMean": [
+        232.1607,
+        204.1507,
+        161.1623
+      ],
+      "embeddedICC": false,
+      "pngColorChunks": [],
+      "webpChunks": [],
+      "decodedRGBAsha256": "d125644669c38615d76a4f283ad0d1f54f22c386b2817901b2aa8410dadcdee1",
+      "maxCssWidthAt2x": 793,
+      "productionStatus": "REWORK",
+      "sourceIntegrityStatus": "PASS",
+      "strictDecodeStatus": "PASS",
+      "productionUseApproved": false,
+      "notes": [
+        "Original baked illegible postmark; do not use as blank live page."
+      ]
+    },
+    {
+      "path": "assets/nino/travel-passport/book/qa-candidates/passport-blank-folio-left-alpha-normalized.webp",
+      "source": "new-package",
+      "sha256": "d4862f0f5e34631c4e483761f933baa92bd85dee05b7ea0d581a7eb29be668a2",
+      "bytes": 1909020,
+      "format": "webp",
+      "width": 1086,
+      "height": 1448,
+      "mode": "RGBA",
+      "hasAlphaChannel": true,
+      "actualTransparency": true,
+      "alphaMin": 0,
+      "alphaMax": 255,
+      "alphaZeroFraction": 0.032509437033871574,
+      "opaqueFraction": 0.9624941495477346,
+      "partialAlphaFraction": 0.0049964134183938524,
+      "centerAlpha": 255,
+      "opaque128Bounds": {
+        "left": 12,
+        "top": 0,
+        "right": 1085,
+        "bottom": 1437
+      },
+      "nonzeroCanvasEdgePixels": 1417,
+      "semiTransparentRedYellowPixels": 5688,
+      "centralRGBMean": [
+        236.1898,
+        214.3364,
+        177.9169
+      ],
+      "embeddedICC": false,
+      "pngColorChunks": [],
+      "webpChunks": [
+        "VP8L"
+      ],
+      "decodedRGBAsha256": "d3696e2e8630f764fd5b56bd32bce07b928980469c0830a57f3c54a742e31ab1",
+      "maxCssWidthAt2x": 543,
+      "productionStatus": "QA REQUIRED",
+      "sourceIntegrityStatus": "PASS",
+      "strictDecodeStatus": "PASS",
+      "productionUseApproved": false,
+      "notes": [
+        "Native 1086x1448; no upscale or Retina certification. Alpha-normalized WebP candidates preserve every source RGB channel. Pair seam/device acceptance pending."
+      ]
+    },
+    {
+      "path": "assets/nino/travel-passport/book/qa-candidates/passport-blank-folio-right-alpha-normalized.webp",
+      "source": "new-package",
+      "sha256": "3ce3133d483bec940e961a5a920a30bbb00e16da3ebb2445966fc83e3f210b16",
+      "bytes": 2099822,
+      "format": "webp",
+      "width": 1086,
+      "height": 1448,
+      "mode": "RGBA",
+      "hasAlphaChannel": true,
+      "actualTransparency": true,
+      "alphaMin": 0,
+      "alphaMax": 255,
+      "alphaZeroFraction": 0.028206810943906882,
+      "opaqueFraction": 0.9651872653459906,
+      "partialAlphaFraction": 0.00660592371010249,
+      "centerAlpha": 255,
+      "opaque128Bounds": {
+        "left": 7,
+        "top": 8,
+        "right": 1076,
+        "bottom": 1434
+      },
+      "nonzeroCanvasEdgePixels": 0,
+      "semiTransparentRedYellowPixels": 9302,
+      "centralRGBMean": [
+        238.8494,
+        216.5388,
+        180.728
+      ],
+      "embeddedICC": false,
+      "pngColorChunks": [],
+      "webpChunks": [
+        "VP8L"
+      ],
+      "decodedRGBAsha256": "e4033a155043e29e2aad404641ef83a94c0c7712d8bb63e5f6ccfbd8ef447e94",
+      "maxCssWidthAt2x": 543,
+      "productionStatus": "QA REQUIRED",
+      "sourceIntegrityStatus": "PASS",
+      "strictDecodeStatus": "PASS",
+      "productionUseApproved": false,
+      "notes": [
+        "Native 1086x1448; no upscale or Retina certification. Alpha-normalized WebP candidates preserve every source RGB channel. Pair seam/device acceptance pending."
+      ]
+    },
+    {
+      "path": "assets/nino/travel-passport/gold/concepts/gold-finale-ornament-overlay.png",
+      "source": "new-package",
+      "sha256": "f58e3077c57740345ed48632d3917baba32a451bf8bb1e917753e3ff91e62947",
+      "bytes": 1917134,
+      "format": "png",
+      "width": 1086,
+      "height": 1448,
+      "mode": "RGBA",
+      "hasAlphaChannel": true,
+      "actualTransparency": true,
+      "alphaMin": 0,
+      "alphaMax": 255,
+      "alphaZeroFraction": 0.5041818015323097,
+      "opaqueFraction": 0.0001755135679619059,
+      "partialAlphaFraction": 0.49564268489972835,
+      "centerAlpha": 0,
+      "opaque128Bounds": {
+        "left": 11,
+        "top": 28,
+        "right": 1072,
+        "bottom": 1362
+      },
+      "nonzeroCanvasEdgePixels": 527,
+      "semiTransparentRedYellowPixels": 364927,
+      "centralRGBMean": [
+        6.5219,
+        3.9894,
+        2.7745
+      ],
+      "embeddedICC": false,
+      "pngColorChunks": [],
+      "webpChunks": [],
+      "decodedRGBAsha256": "ac0ae0cd77c4adbb9f5d82cc86211cb672eb2b7b880c9c82cb5d4c76d62b2f1b",
+      "maxCssWidthAt2x": 543,
+      "productionStatus": "REWORK",
+      "sourceIntegrityStatus": "PASS",
+      "strictDecodeStatus": "PASS",
+      "productionUseApproved": false,
+      "notes": [
+        "Known red/yellow semi-alpha halos/flecks and stray marks. Explicit production exclusion; optional, not a dependency."
+      ]
+    },
+    {
+      "path": "assets/nino/travel-passport/gold/masters/gold-chapter-seal-v2.png",
+      "source": "existing-baseline",
+      "sha256": "60c54e6efbb8239c327b4d7c76660dc816535a1f5431bf7c3cbe9f2927a1adf0",
+      "bytes": 2422442,
+      "format": "png",
+      "width": 1254,
+      "height": 1254,
+      "mode": "RGBA",
+      "hasAlphaChannel": true,
+      "actualTransparency": true,
+      "alphaMin": 0,
+      "alphaMax": 255,
+      "alphaZeroFraction": 0.4300827463758715,
+      "opaqueFraction": 0.00028044229756644766,
+      "partialAlphaFraction": 0.5696368113265621,
+      "centerAlpha": 253,
+      "opaque128Bounds": {
+        "left": 83,
+        "top": 72,
+        "right": 1179,
+        "bottom": 1157
+      },
+      "nonzeroCanvasEdgePixels": 18,
+      "semiTransparentRedYellowPixels": 558075,
+      "centralRGBMean": [
+        152.0189,
+        108.2447,
+        47.2042
+      ],
+      "embeddedICC": false,
+      "pngColorChunks": [],
+      "webpChunks": [],
+      "decodedRGBAsha256": "3f056904c57f78023426806875e7bca049d7a29d0e722bd631754394877e0fb3",
+      "maxCssWidthAt2x": 627,
+      "productionStatus": "QA REQUIRED",
+      "sourceIntegrityStatus": "PASS",
+      "strictDecodeStatus": "PASS",
+      "productionUseApproved": false,
+      "notes": [
+        "Preserved original source. Gold/postcard alpha, small-size readability and production export acceptance remain separate."
+      ]
+    },
+    {
+      "path": "assets/nino/travel-passport/gold/masters/gold-esploratore-doro.png",
+      "source": "existing-baseline",
+      "sha256": "e94a76ab4c0220eead56e3f208dc539a71bae2f217ca7756939903bce024e3ca",
+      "bytes": 3473588,
+      "format": "png",
+      "width": 1254,
+      "height": 1254,
+      "mode": "RGBA",
+      "hasAlphaChannel": true,
+      "actualTransparency": true,
+      "alphaMin": 0,
+      "alphaMax": 255,
+      "alphaZeroFraction": 0.2596336062717327,
+      "opaqueFraction": 0.00030142777561563763,
+      "partialAlphaFraction": 0.7400649659526517,
+      "centerAlpha": 253,
+      "opaque128Bounds": {
+        "left": 15,
+        "top": 15,
+        "right": 1236,
+        "bottom": 1238
+      },
+      "nonzeroCanvasEdgePixels": 13,
+      "semiTransparentRedYellowPixels": 625918,
+      "centralRGBMean": [
+        170.0053,
+        122.6196,
+        61.5869
+      ],
+      "embeddedICC": false,
+      "pngColorChunks": [],
+      "webpChunks": [],
+      "decodedRGBAsha256": "e5d1d5b58d518b6550d2283ae43982de9db3eee4082f4b01525f1b181dcf82af",
+      "maxCssWidthAt2x": 627,
+      "productionStatus": "QA REQUIRED",
+      "sourceIntegrityStatus": "PASS",
+      "strictDecodeStatus": "PASS",
+      "productionUseApproved": false,
+      "notes": [
+        "Preserved original source. Gold/postcard alpha, small-size readability and production export acceptance remain separate."
+      ]
+    },
+    {
+      "path": "assets/nino/travel-passport/postcards/concepts/postcard-05-bologna-front.png",
+      "source": "new-package",
+      "sha256": "f58f20edb4199739f9b643a6c6b62f65051b4e61930c7d087ce6e77f3657b9e8",
+      "bytes": 3183567,
+      "format": "png",
+      "width": 1536,
+      "height": 1024,
+      "mode": "RGB",
+      "hasAlphaChannel": false,
+      "actualTransparency": false,
+      "alphaMin": 255,
+      "alphaMax": 255,
+      "alphaZeroFraction": 0,
+      "opaqueFraction": 1,
+      "partialAlphaFraction": 0,
+      "centerAlpha": 255,
+      "opaque128Bounds": {
+        "left": 0,
+        "top": 0,
+        "right": 1535,
+        "bottom": 1023
+      },
+      "nonzeroCanvasEdgePixels": 5116,
+      "semiTransparentRedYellowPixels": 0,
+      "centralRGBMean": [
+        179.4985,
+        137.9001,
+        102.0041
+      ],
+      "embeddedICC": false,
+      "pngColorChunks": [],
+      "webpChunks": [],
+      "decodedRGBAsha256": "441b85f5914bd3783f18e3be4e07761134d338e3dd7adbfdfe24708a2ce1d5ac",
+      "maxCssWidthAt2x": 768,
+      "productionStatus": "CONCEPT ONLY",
+      "sourceIntegrityStatus": "PASS",
+      "strictDecodeStatus": "PASS",
+      "productionUseApproved": false,
+      "notes": [
+        "Optional opaque RGB postcard concept, not an alpha cutout. No reward rule, activation or production approval added."
+      ]
+    },
+    {
+      "path": "assets/nino/travel-passport/postcards/concepts/postcard-06-milano-front.png",
+      "source": "new-package",
+      "sha256": "1347e3f71ced9aa9a0f899f1a53914f7883b1cae92c4fa807e16f235c27d6e12",
+      "bytes": 3676361,
+      "format": "png",
+      "width": 1536,
+      "height": 1024,
+      "mode": "RGB",
+      "hasAlphaChannel": false,
+      "actualTransparency": false,
+      "alphaMin": 255,
+      "alphaMax": 255,
+      "alphaZeroFraction": 0,
+      "opaqueFraction": 1,
+      "partialAlphaFraction": 0,
+      "centerAlpha": 255,
+      "opaque128Bounds": {
+        "left": 0,
+        "top": 0,
+        "right": 1535,
+        "bottom": 1023
+      },
+      "nonzeroCanvasEdgePixels": 5116,
+      "semiTransparentRedYellowPixels": 0,
+      "centralRGBMean": [
+        189.9161,
+        159.0906,
+        120.7501
+      ],
+      "embeddedICC": false,
+      "pngColorChunks": [],
+      "webpChunks": [],
+      "decodedRGBAsha256": "b2c56974730b74d3c4d98d4f20b534e28b576877cee2aab44a2aa06af9ba9c90",
+      "maxCssWidthAt2x": 768,
+      "productionStatus": "CONCEPT ONLY",
+      "sourceIntegrityStatus": "PASS",
+      "strictDecodeStatus": "PASS",
+      "productionUseApproved": false,
+      "notes": [
+        "Optional opaque RGB postcard concept, not an alpha cutout. No reward rule, activation or production approval added."
+      ]
+    },
+    {
+      "path": "assets/nino/travel-passport/postcards/masters/postcard-01-sicilia-front.png",
+      "source": "existing-baseline",
+      "sha256": "36f1656b44f00c2eec477517d32de0b2067e42507131a110d424cc22d4c3e328",
+      "bytes": 3241106,
+      "format": "png",
+      "width": 1536,
+      "height": 1024,
+      "mode": "RGBA",
+      "hasAlphaChannel": true,
+      "actualTransparency": true,
+      "alphaMin": 0,
+      "alphaMax": 254,
+      "alphaZeroFraction": 0.13375218709309897,
+      "opaqueFraction": 0,
+      "partialAlphaFraction": 0.866247812906901,
+      "centerAlpha": 251,
+      "opaque128Bounds": {
+        "left": 31,
+        "top": 73,
+        "right": 1504,
+        "bottom": 946
+      },
+      "nonzeroCanvasEdgePixels": 865,
+      "semiTransparentRedYellowPixels": 246179,
+      "centralRGBMean": [
+        128.365,
+        142.7197,
+        126.4157
+      ],
+      "embeddedICC": false,
+      "pngColorChunks": [],
+      "webpChunks": [],
+      "decodedRGBAsha256": "311879e0306e5af2698d1f2c7a94de77af3310bcb5b2458a5f8f68ed627a23ce",
+      "maxCssWidthAt2x": 768,
+      "productionStatus": "QA REQUIRED",
+      "sourceIntegrityStatus": "PASS",
+      "strictDecodeStatus": "PASS",
+      "productionUseApproved": false,
+      "notes": [
+        "Preserved original source. Gold/postcard alpha, small-size readability and production export acceptance remain separate."
+      ]
+    },
+    {
+      "path": "assets/nino/travel-passport/postcards/masters/postcard-02-sardegna-front.png",
+      "source": "existing-baseline",
+      "sha256": "b06eb78fb5ad8e0116175317a98ab16ae88b251001adb40763c23d0c274ac4e3",
+      "bytes": 3687999,
+      "format": "png",
+      "width": 1536,
+      "height": 1024,
+      "mode": "RGBA",
+      "hasAlphaChannel": true,
+      "actualTransparency": true,
+      "alphaMin": 0,
+      "alphaMax": 254,
+      "alphaZeroFraction": 0.09346516927083333,
+      "opaqueFraction": 0,
+      "partialAlphaFraction": 0.9065348307291666,
+      "centerAlpha": 251,
+      "opaque128Bounds": {
+        "left": 27,
+        "top": 29,
+        "right": 1511,
+        "bottom": 995
+      },
+      "nonzeroCanvasEdgePixels": 981,
+      "semiTransparentRedYellowPixels": 171785,
+      "centralRGBMean": [
+        75.4562,
+        127.415,
+        134.1625
+      ],
+      "embeddedICC": false,
+      "pngColorChunks": [],
+      "webpChunks": [],
+      "decodedRGBAsha256": "93c6c45a88ca64c720f51833ed5fed1cb857263f076c952dcd153b97880390aa",
+      "maxCssWidthAt2x": 768,
+      "productionStatus": "QA REQUIRED",
+      "sourceIntegrityStatus": "PASS",
+      "strictDecodeStatus": "PASS",
+      "productionUseApproved": false,
+      "notes": [
+        "Preserved original source. Gold/postcard alpha, small-size readability and production export acceptance remain separate."
+      ]
+    },
+    {
+      "path": "assets/nino/travel-passport/postcards/masters/postcard-03-napoli-vesuvio-front.png",
+      "source": "existing-baseline",
+      "sha256": "822ada426bf732273738bcdb1f9bbc2466beb2bd2d5c8b6c29b5815d807910ab",
+      "bytes": 3284538,
+      "format": "png",
+      "width": 1536,
+      "height": 1024,
+      "mode": "RGBA",
+      "hasAlphaChannel": true,
+      "actualTransparency": true,
+      "alphaMin": 0,
+      "alphaMax": 253,
+      "alphaZeroFraction": 4.76837158203125e-05,
+      "opaqueFraction": 0,
+      "partialAlphaFraction": 0.9999523162841797,
+      "centerAlpha": 250,
+      "opaque128Bounds": {
+        "left": 28,
+        "top": 30,
+        "right": 1512,
+        "bottom": 994
+      },
+      "nonzeroCanvasEdgePixels": 5111,
+      "semiTransparentRedYellowPixels": 343152,
+      "centralRGBMean": [
+        147.1131,
+        141.9938,
+        138.6558
+      ],
+      "embeddedICC": false,
+      "pngColorChunks": [],
+      "webpChunks": [],
+      "decodedRGBAsha256": "00548caecb8dec05c8ef66e24c411dfdf21f1a6095aabd19539c8fe74f8b4462",
+      "maxCssWidthAt2x": 768,
+      "productionStatus": "QA REQUIRED",
+      "sourceIntegrityStatus": "PASS",
+      "strictDecodeStatus": "PASS",
+      "productionUseApproved": false,
+      "notes": [
+        "Preserved original source. Gold/postcard alpha, small-size readability and production export acceptance remain separate."
+      ]
+    },
+    {
+      "path": "assets/nino/travel-passport/postcards/masters/postcard-04-venezia-front.png",
+      "source": "existing-baseline",
+      "sha256": "3228aeb85ca52d214378f287ba5fb63be42c40966074bd98a5d2548f858359e6",
+      "bytes": 3192154,
+      "format": "png",
+      "width": 1536,
+      "height": 1024,
+      "mode": "RGB",
+      "hasAlphaChannel": false,
+      "actualTransparency": false,
+      "alphaMin": 255,
+      "alphaMax": 255,
+      "alphaZeroFraction": 0,
+      "opaqueFraction": 1,
+      "partialAlphaFraction": 0,
+      "centerAlpha": 255,
+      "opaque128Bounds": {
+        "left": 0,
+        "top": 0,
+        "right": 1535,
+        "bottom": 1023
+      },
+      "nonzeroCanvasEdgePixels": 5116,
+      "semiTransparentRedYellowPixels": 0,
+      "centralRGBMean": [
+        151.5124,
+        142.7831,
+        130.0018
+      ],
+      "embeddedICC": false,
+      "pngColorChunks": [],
+      "webpChunks": [],
+      "decodedRGBAsha256": "8822e26ea2f5554e63a326845b70f817afdc37abf8f120d2f5d2504a77341d1f",
+      "maxCssWidthAt2x": 768,
+      "productionStatus": "QA REQUIRED",
+      "sourceIntegrityStatus": "PASS",
+      "strictDecodeStatus": "PASS",
+      "productionUseApproved": false,
+      "notes": [
+        "Preserved original source. Gold/postcard alpha, small-size readability and production export acceptance remain separate."
+      ]
+    },
+    {
+      "path": "assets/nino/travel-passport/postcards/masters/postcard-05-universal-reverse.png",
+      "source": "existing-baseline",
+      "sha256": "67450c16303c2da9d0c7d1e690554b163ce1c8c720a3244abee17c3440a3ed86",
+      "bytes": 3052648,
+      "format": "png",
+      "width": 1536,
+      "height": 1024,
+      "mode": "RGBA",
+      "hasAlphaChannel": true,
+      "actualTransparency": true,
+      "alphaMin": 0,
+      "alphaMax": 254,
+      "alphaZeroFraction": 0.1290747324625651,
+      "opaqueFraction": 0,
+      "partialAlphaFraction": 0.8709252675374349,
+      "centerAlpha": 252,
+      "opaque128Bounds": {
+        "left": 39,
+        "top": 52,
+        "right": 1498,
+        "bottom": 979
+      },
+      "nonzeroCanvasEdgePixels": 58,
+      "semiTransparentRedYellowPixels": 35585,
+      "centralRGBMean": [
+        247.893,
+        222.339,
+        181.0221
+      ],
+      "embeddedICC": false,
+      "pngColorChunks": [],
+      "webpChunks": [],
+      "decodedRGBAsha256": "f3d26de5b861b689c0e35778f354aa50ef65deac7de20cb0eb20f4f7eae86e79",
+      "maxCssWidthAt2x": 768,
+      "productionStatus": "QA REQUIRED",
+      "sourceIntegrityStatus": "PASS",
+      "strictDecodeStatus": "PASS",
+      "productionUseApproved": false,
+      "notes": [
+        "Preserved original source. Gold/postcard alpha, small-size readability and production export acceptance remain separate."
+      ]
+    },
+    {
+      "path": "assets/nino/travel-passport/stamps/masters/stamp-01-firenze.png",
+      "source": "existing-baseline",
+      "sha256": "cb1bd16d983ac570c727eeab31f6dbce2392af2a6dc55c14418908835ad5ae56",
+      "bytes": 2733306,
+      "format": "png",
+      "width": 1254,
+      "height": 1254,
+      "mode": "RGBA",
+      "hasAlphaChannel": true,
+      "actualTransparency": true,
+      "alphaMin": 0,
+      "alphaMax": 255,
+      "alphaZeroFraction": 0.3607200181111035,
+      "opaqueFraction": 0.00012082547967715432,
+      "partialAlphaFraction": 0.6391591564092194,
+      "centerAlpha": 252,
+      "opaque128Bounds": {
+        "left": 45,
+        "top": 69,
+        "right": 1236,
+        "bottom": 1180
+      },
+      "nonzeroCanvasEdgePixels": 72,
+      "semiTransparentRedYellowPixels": 561464,
+      "centralRGBMean": [
+        208.4655,
+        147.9537,
+        126.2737
+      ],
+      "embeddedICC": false,
+      "pngColorChunks": [],
+      "webpChunks": [],
+      "decodedRGBAsha256": "e8d3f56476173a5902955d199fc02394612bf15a95b787de8d49c9bfc4a6e99e",
+      "maxCssWidthAt2x": 627,
+      "productionStatus": "QA REQUIRED",
+      "sourceIntegrityStatus": "PASS",
+      "strictDecodeStatus": "PASS",
+      "productionUseApproved": false,
+      "notes": [
+        "Original design master retained byte-for-byte. Consume only separately approved derivatives. Existing PR48 findings remain authoritative."
+      ]
+    },
+    {
+      "path": "assets/nino/travel-passport/stamps/masters/stamp-02-roma.png",
+      "source": "existing-baseline",
+      "sha256": "19c8e75708e6fbfbf0ff8fffcd6d172008a7069610a235f843f6985db9628a27",
+      "bytes": 3068773,
+      "format": "png",
+      "width": 1536,
+      "height": 1024,
+      "mode": "RGBA",
+      "hasAlphaChannel": true,
+      "actualTransparency": true,
+      "alphaMin": 0,
+      "alphaMax": 254,
+      "alphaZeroFraction": 0.34496180216471356,
+      "opaqueFraction": 0,
+      "partialAlphaFraction": 0.6550381978352864,
+      "centerAlpha": 252,
+      "opaque128Bounds": {
+        "left": 43,
+        "top": 75,
+        "right": 1501,
+        "bottom": 957
+      },
+      "nonzeroCanvasEdgePixels": 118,
+      "semiTransparentRedYellowPixels": 507693,
+      "centralRGBMean": [
+        210.8025,
+        157.1033,
+        135.2463
+      ],
+      "embeddedICC": false,
+      "pngColorChunks": [],
+      "webpChunks": [],
+      "decodedRGBAsha256": "c76c2b2724fe7ff8887b02a53f8c71d74d7c2a851dd5c846fd9a83dbc8484e77",
+      "maxCssWidthAt2x": 768,
+      "productionStatus": "REWORK",
+      "sourceIntegrityStatus": "PASS",
+      "strictDecodeStatus": "PASS",
+      "productionUseApproved": false,
+      "notes": [
+        "Original design master retained byte-for-byte. Consume only separately approved derivatives. Existing PR48 findings remain authoritative."
+      ]
+    },
+    {
+      "path": "assets/nino/travel-passport/stamps/masters/stamp-03-borghi.png",
+      "source": "existing-baseline",
+      "sha256": "d00d7e3fd8aa88dac971c204959a1d21b8986a15b14b8247da7c4a8bb36b6ab1",
+      "bytes": 3001278,
+      "format": "png",
+      "width": 1254,
+      "height": 1254,
+      "mode": "RGBA",
+      "hasAlphaChannel": true,
+      "actualTransparency": true,
+      "alphaMin": 0,
+      "alphaMax": 255,
+      "alphaZeroFraction": 0.279618140610334,
+      "opaqueFraction": 0.0004883893073266027,
+      "partialAlphaFraction": 0.7198934700823394,
+      "centerAlpha": 253,
+      "opaque128Bounds": {
+        "left": 79,
+        "top": 103,
+        "right": 1176,
+        "bottom": 1177
+      },
+      "nonzeroCanvasEdgePixels": 37,
+      "semiTransparentRedYellowPixels": 519296,
+      "centralRGBMean": [
+        210.1562,
+        150.2634,
+        128.9331
+      ],
+      "embeddedICC": false,
+      "pngColorChunks": [],
+      "webpChunks": [],
+      "decodedRGBAsha256": "c336e44064b70d66c0d4ac92f7f4ae586c9aeb12902cf633f7cd95d0b7a77f1e",
+      "maxCssWidthAt2x": 627,
+      "productionStatus": "QA REQUIRED",
+      "sourceIntegrityStatus": "PASS",
+      "strictDecodeStatus": "PASS",
+      "productionUseApproved": false,
+      "notes": [
+        "Original design master retained byte-for-byte. Consume only separately approved derivatives. Existing PR48 findings remain authoritative."
+      ]
+    },
+    {
+      "path": "assets/nino/travel-passport/stamps/masters/stamp-04-liguria.png",
+      "source": "existing-baseline",
+      "sha256": "ddcb8076932f0259ccfa61af8b4ca7836b407fa49973560f4a89b0833ee8fdf4",
+      "bytes": 2719320,
+      "format": "png",
+      "width": 1254,
+      "height": 1254,
+      "mode": "RGBA",
+      "hasAlphaChannel": true,
+      "actualTransparency": true,
+      "alphaMin": 0,
+      "alphaMax": 255,
+      "alphaZeroFraction": 0.39095246089705926,
+      "opaqueFraction": 0.00038536968781239747,
+      "partialAlphaFraction": 0.6086621694151283,
+      "centerAlpha": 252,
+      "opaque128Bounds": {
+        "left": 156,
+        "top": 112,
+        "right": 1192,
+        "bottom": 1161
+      },
+      "nonzeroCanvasEdgePixels": 3,
+      "semiTransparentRedYellowPixels": 574891,
+      "centralRGBMean": [
+        218.0052,
+        120.689,
+        113.2053
+      ],
+      "embeddedICC": false,
+      "pngColorChunks": [],
+      "webpChunks": [],
+      "decodedRGBAsha256": "1e6664302e45c5eb280bbb8acf4a67f02f4b7662b600d3b512d7e875072ffae3",
+      "maxCssWidthAt2x": 627,
+      "productionStatus": "QA REQUIRED",
+      "sourceIntegrityStatus": "PASS",
+      "strictDecodeStatus": "PASS",
+      "productionUseApproved": false,
+      "notes": [
+        "Original design master retained byte-for-byte. Consume only separately approved derivatives. Existing PR48 findings remain authoritative."
+      ]
+    },
+    {
+      "path": "assets/nino/travel-passport/stamps/masters/stamp-05-isole.png",
+      "source": "existing-baseline",
+      "sha256": "91b9ed25d5255b784d447080df16f2e644937f05b37bb94d08235312ee54fb50",
+      "bytes": 1063717,
+      "format": "png",
+      "width": 1254,
+      "height": 1254,
+      "mode": "RGBA",
+      "hasAlphaChannel": true,
+      "actualTransparency": true,
+      "alphaMin": 0,
+      "alphaMax": 255,
+      "alphaZeroFraction": 0.7287983079345457,
+      "opaqueFraction": 0.0011624682992096742,
+      "partialAlphaFraction": 0.2700392237662446,
+      "centerAlpha": 5,
+      "opaque128Bounds": {
+        "left": 39,
+        "top": 191,
+        "right": 1242,
+        "bottom": 1080
+      },
+      "nonzeroCanvasEdgePixels": 140,
+      "semiTransparentRedYellowPixels": 302768,
+      "centralRGBMean": [
+        40.7086,
+        20.9282,
+        33.8205
+      ],
+      "embeddedICC": false,
+      "pngColorChunks": [],
+      "webpChunks": [],
+      "decodedRGBAsha256": "0ab4e408cdc3da2260c7bd2bb83fe092225b3089101c5cf7c9cc5254f11bfeb6",
+      "maxCssWidthAt2x": 627,
+      "productionStatus": "REWORK",
+      "sourceIntegrityStatus": "PASS",
+      "strictDecodeStatus": "PASS",
+      "productionUseApproved": false,
+      "notes": [
+        "Original design master retained byte-for-byte. Consume only separately approved derivatives. Existing PR48 findings remain authoritative."
+      ]
+    },
+    {
+      "path": "assets/nino/travel-passport/stamps/masters/stamp-06-dolomiti.png",
+      "source": "existing-baseline",
+      "sha256": "aad87d7b6c7eddfcd9b1996301f714da19421e6005c449b847b7fa9a957a16cf",
+      "bytes": 2678060,
+      "format": "png",
+      "width": 1254,
+      "height": 1254,
+      "mode": "RGBA",
+      "hasAlphaChannel": true,
+      "actualTransparency": true,
+      "alphaMin": 0,
+      "alphaMax": 255,
+      "alphaZeroFraction": 0.4476653973632065,
+      "opaqueFraction": 0.0003491220439092512,
+      "partialAlphaFraction": 0.5519854805928842,
+      "centerAlpha": 252,
+      "opaque128Bounds": {
+        "left": 129,
+        "top": 17,
+        "right": 1123,
+        "bottom": 1226
+      },
+      "nonzeroCanvasEdgePixels": 363,
+      "semiTransparentRedYellowPixels": 531849,
+      "centralRGBMean": [
+        177.6717,
+        117.8295,
+        101.3834
+      ],
+      "embeddedICC": false,
+      "pngColorChunks": [],
+      "webpChunks": [],
+      "decodedRGBAsha256": "89bd8e44b6c69c02c57e5716a902962fd0d12c6fcbb52d540c47fedd78beaef3",
+      "maxCssWidthAt2x": 627,
+      "productionStatus": "QA REQUIRED",
+      "sourceIntegrityStatus": "PASS",
+      "strictDecodeStatus": "PASS",
+      "productionUseApproved": false,
+      "notes": [
+        "Original design master retained byte-for-byte. Consume only separately approved derivatives. Existing PR48 findings remain authoritative."
+      ]
+    },
+    {
+      "path": "assets/nino/travel-passport/stamps/masters/stamp-07-etna.png",
+      "source": "existing-baseline",
+      "sha256": "443d97af3411e56c139e6e6397ba9a474748c227e4325006820cc0d6dd0957b4",
+      "bytes": 2482645,
+      "format": "png",
+      "width": 1254,
+      "height": 1254,
+      "mode": "RGBA",
+      "hasAlphaChannel": true,
+      "actualTransparency": true,
+      "alphaMin": 0,
+      "alphaMax": 255,
+      "alphaZeroFraction": 0.4449868872558371,
+      "opaqueFraction": 0.00037519491057642657,
+      "partialAlphaFraction": 0.5546379178335864,
+      "centerAlpha": 253,
+      "opaque128Bounds": {
+        "left": 141,
+        "top": 42,
+        "right": 1113,
+        "bottom": 1213
+      },
+      "nonzeroCanvasEdgePixels": 14,
+      "semiTransparentRedYellowPixels": 429190,
+      "centralRGBMean": [
+        174.7402,
+        130.1256,
+        111.1981
+      ],
+      "embeddedICC": false,
+      "pngColorChunks": [],
+      "webpChunks": [],
+      "decodedRGBAsha256": "cc299d30753e16b9a8a7d39bfd09837c794ff0ae78b2fd5e0b7ca5a51092b3cb",
+      "maxCssWidthAt2x": 627,
+      "productionStatus": "QA REQUIRED",
+      "sourceIntegrityStatus": "PASS",
+      "strictDecodeStatus": "PASS",
+      "productionUseApproved": false,
+      "notes": [
+        "Original design master retained byte-for-byte. Consume only separately approved derivatives. Existing PR48 findings remain authoritative."
+      ]
+    },
+    {
+      "path": "assets/nino/travel-passport/stamps/masters/stamp-08-toscana.png",
+      "source": "existing-baseline",
+      "sha256": "d12eaa8ff6804ccb280e029ee351ac0c435b2c35db141ad8dd85f46c533cb61b",
+      "bytes": 3329280,
+      "format": "png",
+      "width": 1536,
+      "height": 1024,
+      "mode": "RGBA",
+      "hasAlphaChannel": true,
+      "actualTransparency": true,
+      "alphaMin": 0,
+      "alphaMax": 254,
+      "alphaZeroFraction": 0.3380393981933594,
+      "opaqueFraction": 0,
+      "partialAlphaFraction": 0.6619606018066406,
+      "centerAlpha": 252,
+      "opaque128Bounds": {
+        "left": 37,
+        "top": 84,
+        "right": 1496,
+        "bottom": 974
+      },
+      "nonzeroCanvasEdgePixels": 76,
+      "semiTransparentRedYellowPixels": 1,
+      "centralRGBMean": [
+        169.3241,
+        164.924,
+        128.3118
+      ],
+      "embeddedICC": false,
+      "pngColorChunks": [],
+      "webpChunks": [],
+      "decodedRGBAsha256": "4329ca9b0305b3b8eadf09c00c03707deb9c4e377ba507a030971de6849d9a3d",
+      "maxCssWidthAt2x": 768,
+      "productionStatus": "REWORK",
+      "sourceIntegrityStatus": "PASS",
+      "strictDecodeStatus": "PASS",
+      "productionUseApproved": false,
+      "notes": [
+        "Original design master retained byte-for-byte. Consume only separately approved derivatives. Existing PR48 findings remain authoritative."
+      ]
+    },
+    {
+      "path": "assets/nino/travel-passport/stamps/masters/stamp-09-confine-italia.png",
+      "source": "existing-baseline",
+      "sha256": "e884445aeb1c06795bb2fb78f7ba329a71eba922832a6a3e745849eb0d71ae4c",
+      "bytes": 2926582,
+      "format": "png",
+      "width": 1536,
+      "height": 1024,
+      "mode": "RGB",
+      "hasAlphaChannel": false,
+      "actualTransparency": false,
+      "alphaMin": 255,
+      "alphaMax": 255,
+      "alphaZeroFraction": 0,
+      "opaqueFraction": 1,
+      "partialAlphaFraction": 0,
+      "centerAlpha": 255,
+      "opaque128Bounds": {
+        "left": 0,
+        "top": 0,
+        "right": 1535,
+        "bottom": 1023
+      },
+      "nonzeroCanvasEdgePixels": 5116,
+      "semiTransparentRedYellowPixels": 0,
+      "centralRGBMean": [
+        209.4495,
+        167.9954,
+        141.3497
+      ],
+      "embeddedICC": false,
+      "pngColorChunks": [],
+      "webpChunks": [],
+      "decodedRGBAsha256": "10bbe599e1c8d1851bf4f76bbf0fbcc69a57a79cc5d93b47ea7148a3fc8be3fc",
+      "maxCssWidthAt2x": 768,
+      "productionStatus": "REWORK",
+      "sourceIntegrityStatus": "PASS",
+      "strictDecodeStatus": "PASS",
+      "productionUseApproved": false,
+      "notes": [
+        "Original design master retained byte-for-byte. Consume only separately approved derivatives. Existing PR48 findings remain authoritative."
+      ]
+    },
+    {
+      "path": "assets/nino/travel-passport/stamps/masters/stamp-10-mari.png",
+      "source": "existing-baseline",
+      "sha256": "9dc89b2b82a018c830991aeace67d296990397b3bc61793292827cca08ba3249",
+      "bytes": 2517804,
+      "format": "png",
+      "width": 1312,
+      "height": 1199,
+      "mode": "RGBA",
+      "hasAlphaChannel": true,
+      "actualTransparency": true,
+      "alphaMin": 0,
+      "alphaMax": 255,
+      "alphaZeroFraction": 0.35919923106653917,
+      "opaqueFraction": 3.4963078988588054e-05,
+      "partialAlphaFraction": 0.6407658058544723,
+      "centerAlpha": 240,
+      "opaque128Bounds": {
+        "left": 52,
+        "top": 71,
+        "right": 1290,
+        "bottom": 1154
+      },
+      "nonzeroCanvasEdgePixels": 562,
+      "semiTransparentRedYellowPixels": 3,
+      "centralRGBMean": [
+        168.2894,
+        177.8208,
+        197.4245
+      ],
+      "embeddedICC": false,
+      "pngColorChunks": [],
+      "webpChunks": [],
+      "decodedRGBAsha256": "774c9cc5343a4e48c8bafccce86acb97e7fef7ae7a8ff3aa8f5fd1f925179624",
+      "maxCssWidthAt2x": 656,
+      "productionStatus": "QA REQUIRED",
+      "sourceIntegrityStatus": "PASS",
+      "strictDecodeStatus": "PASS",
+      "productionUseApproved": false,
+      "notes": [
+        "Original design master retained byte-for-byte. Consume only separately approved derivatives. Existing PR48 findings remain authoritative."
+      ]
+    },
+    {
+      "path": "assets/nino/travel-passport/stamps/masters/stamp-11-fiumi.png",
+      "source": "existing-baseline",
+      "sha256": "d79bc297171fabbf426968d36d7c1193b9adde65033a1b26fe84ccae158df06e",
+      "bytes": 2891112,
+      "format": "png",
+      "width": 1254,
+      "height": 1254,
+      "mode": "RGBA",
+      "hasAlphaChannel": true,
+      "actualTransparency": true,
+      "alphaMin": 0,
+      "alphaMax": 255,
+      "alphaZeroFraction": 0.339392413177354,
+      "opaqueFraction": 0.0001577090471575488,
+      "partialAlphaFraction": 0.6604498777754885,
+      "centerAlpha": 253,
+      "opaque128Bounds": {
+        "left": 33,
+        "top": 61,
+        "right": 1244,
+        "bottom": 1195
+      },
+      "nonzeroCanvasEdgePixels": 32,
+      "semiTransparentRedYellowPixels": 518589,
+      "centralRGBMean": [
+        210.1741,
+        162.2873,
+        140.3343
+      ],
+      "embeddedICC": false,
+      "pngColorChunks": [],
+      "webpChunks": [],
+      "decodedRGBAsha256": "d01e523521221b59a889ee407e180311255fbac9ac0829b16df377a3a4994a09",
+      "maxCssWidthAt2x": 627,
+      "productionStatus": "QA REQUIRED",
+      "sourceIntegrityStatus": "PASS",
+      "strictDecodeStatus": "PASS",
+      "productionUseApproved": false,
+      "notes": [
+        "Original design master retained byte-for-byte. Consume only separately approved derivatives. Existing PR48 findings remain authoritative."
+      ]
+    },
+    {
+      "path": "assets/nino/travel-passport/stamps/qa-candidates/stamp-01-firenze-ink-preview.webp",
+      "source": "existing-baseline",
+      "sha256": "de4d32cf277a806fad8fc343451f574ef7a9d0a482cc2b8bb7e5c24c3fc47125",
+      "bytes": 358350,
+      "format": "webp",
+      "width": 768,
+      "height": 768,
+      "mode": "RGBA",
+      "hasAlphaChannel": true,
+      "actualTransparency": true,
+      "alphaMin": 0,
+      "alphaMax": 255,
+      "alphaZeroFraction": 0.5412139892578125,
+      "opaqueFraction": 0.04131910536024305,
+      "partialAlphaFraction": 0.4174669053819444,
+      "centerAlpha": 255,
+      "opaque128Bounds": {
+        "left": 27,
+        "top": 42,
+        "right": 754,
+        "bottom": 722
+      },
+      "nonzeroCanvasEdgePixels": 0,
+      "semiTransparentRedYellowPixels": 239600,
+      "centralRGBMean": [
+        125.9712,
+        46.598,
+        28.0895
+      ],
+      "embeddedICC": false,
+      "pngColorChunks": [],
+      "webpChunks": [
+        "VP8X",
+        "ALPH",
+        "VP8 "
+      ],
+      "decodedRGBAsha256": "58c0c536c667357d53e0ed413ee4d20c89ff550ff2c8539364faecf30cbdfda4",
+      "maxCssWidthAt2x": 384,
+      "productionStatus": "PASS",
+      "sourceIntegrityStatus": "PASS",
+      "strictDecodeStatus": "PASS",
+      "productionUseApproved": false,
+      "notes": [
+        "Existing candidate bytes match the independently accepted PR48 export; warm paper, live chapter labels, detail at >=160px. No new acceptance granted.",
+        "PASS records exact-byte equivalence; this qa-candidates path is not itself a runtime allowlist entry. Use the approved export path/commit in a later authorised integration."
+      ],
+      "acceptedEquivalentExport": {
+        "commit": "4eb9a5ae33550d789c56d5c01393145a148565aa",
+        "path": "assets/nino/travel-passport/stamps/exports/stamp-01-firenze.webp",
+        "sha256": "de4d32cf277a806fad8fc343451f574ef7a9d0a482cc2b8bb7e5c24c3fc47125"
+      }
+    },
+    {
+      "path": "assets/nino/travel-passport/stamps/qa-candidates/stamp-02-roma-ink-preview.webp",
+      "source": "existing-baseline",
+      "sha256": "b34ff0780ebd442080f53d79c13d63bb89d45cb4ad961ec582a902758fec8628",
+      "bytes": 242356,
+      "format": "webp",
+      "width": 768,
+      "height": 512,
+      "mode": "RGBA",
+      "hasAlphaChannel": true,
+      "actualTransparency": true,
+      "alphaMin": 0,
+      "alphaMax": 255,
+      "alphaZeroFraction": 0.541412353515625,
+      "opaqueFraction": 0.037343343098958336,
+      "partialAlphaFraction": 0.4212443033854167,
+      "centerAlpha": 0,
+      "opaque128Bounds": {
+        "left": 23,
+        "top": 38,
+        "right": 740,
+        "bottom": 478
+      },
+      "nonzeroCanvasEdgePixels": 0,
+      "semiTransparentRedYellowPixels": 161277,
+      "centralRGBMean": [
+        120.6841,
+        44.8836,
+        26.9893
+      ],
+      "embeddedICC": false,
+      "pngColorChunks": [],
+      "webpChunks": [
+        "VP8X",
+        "ALPH",
+        "VP8 "
+      ],
+      "decodedRGBAsha256": "becca958945f294794efb4b4b19a5441bcc5763aedcd264592bd1feaaed9d25a",
+      "maxCssWidthAt2x": 384,
+      "productionStatus": "PASS",
+      "sourceIntegrityStatus": "PASS",
+      "strictDecodeStatus": "PASS",
+      "productionUseApproved": false,
+      "notes": [
+        "Existing candidate bytes match the independently accepted PR48 export; warm paper, live chapter labels, detail at >=160px. No new acceptance granted.",
+        "PASS records exact-byte equivalence; this qa-candidates path is not itself a runtime allowlist entry. Use the approved export path/commit in a later authorised integration."
+      ],
+      "acceptedEquivalentExport": {
+        "commit": "4eb9a5ae33550d789c56d5c01393145a148565aa",
+        "path": "assets/nino/travel-passport/stamps/exports/stamp-02-roma.webp",
+        "sha256": "b34ff0780ebd442080f53d79c13d63bb89d45cb4ad961ec582a902758fec8628"
+      }
+    },
+    {
+      "path": "assets/nino/travel-passport/stamps/qa-candidates/stamp-03-borghi-ink-preview.webp",
+      "source": "existing-baseline",
+      "sha256": "b00fb30fc5ebfedcdec8970fa78bbba48b6d1b52288d5aa440a85dd6b9dfcae5",
+      "bytes": 392392,
+      "format": "webp",
+      "width": 768,
+      "height": 768,
+      "mode": "RGBA",
+      "hasAlphaChannel": true,
+      "actualTransparency": true,
+      "alphaMin": 0,
+      "alphaMax": 255,
+      "alphaZeroFraction": 0.5219472249348959,
+      "opaqueFraction": 0.05253940158420139,
+      "partialAlphaFraction": 0.42551337348090273,
+      "centerAlpha": 108,
+      "opaque128Bounds": {
+        "left": 48,
+        "top": 63,
+        "right": 720,
+        "bottom": 720
+      },
+      "nonzeroCanvasEdgePixels": 0,
+      "semiTransparentRedYellowPixels": 242404,
+      "centralRGBMean": [
+        139.0854,
+        47.4631,
+        25.5712
+      ],
+      "embeddedICC": false,
+      "pngColorChunks": [],
+      "webpChunks": [
+        "VP8X",
+        "ALPH",
+        "VP8 "
+      ],
+      "decodedRGBAsha256": "6e17cd48dc1090d90fdc445ce1f54009958cd9b6101676077f1e239d1272c4e8",
+      "maxCssWidthAt2x": 384,
+      "productionStatus": "PASS",
+      "sourceIntegrityStatus": "PASS",
+      "strictDecodeStatus": "PASS",
+      "productionUseApproved": false,
+      "notes": [
+        "Existing candidate bytes match the independently accepted PR48 export; warm paper, live chapter labels, detail at >=160px. No new acceptance granted.",
+        "PASS records exact-byte equivalence; this qa-candidates path is not itself a runtime allowlist entry. Use the approved export path/commit in a later authorised integration."
+      ],
+      "acceptedEquivalentExport": {
+        "commit": "4eb9a5ae33550d789c56d5c01393145a148565aa",
+        "path": "assets/nino/travel-passport/stamps/exports/stamp-03-borghi.webp",
+        "sha256": "b00fb30fc5ebfedcdec8970fa78bbba48b6d1b52288d5aa440a85dd6b9dfcae5"
+      }
+    },
+    {
+      "path": "assets/nino/travel-passport/stamps/qa-candidates/stamp-04-liguria-ink-preview.webp",
+      "source": "existing-baseline",
+      "sha256": "b7cf9eeb47dd88028ce8da8789fd6f042c0998df182b43bd4996453148dc4fac",
+      "bytes": 338984,
+      "format": "webp",
+      "width": 768,
+      "height": 768,
+      "mode": "RGBA",
+      "hasAlphaChannel": true,
+      "actualTransparency": true,
+      "alphaMin": 0,
+      "alphaMax": 255,
+      "alphaZeroFraction": 0.5189446343315972,
+      "opaqueFraction": 0.07309807671440972,
+      "partialAlphaFraction": 0.4079572889539931,
+      "centerAlpha": 0,
+      "opaque128Bounds": {
+        "left": 96,
+        "top": 68,
+        "right": 730,
+        "bottom": 711
+      },
+      "nonzeroCanvasEdgePixels": 0,
+      "semiTransparentRedYellowPixels": 234782,
+      "centralRGBMean": [
+        146.0556,
+        50.3682,
+        27.2122
+      ],
+      "embeddedICC": false,
+      "pngColorChunks": [],
+      "webpChunks": [
+        "VP8X",
+        "ALPH",
+        "VP8 "
+      ],
+      "decodedRGBAsha256": "ab3a81b6bbf51a8889b8218469bd5b76da7589f70e3214744b001bcd9ee2e421",
+      "maxCssWidthAt2x": 384,
+      "productionStatus": "PASS",
+      "sourceIntegrityStatus": "PASS",
+      "strictDecodeStatus": "PASS",
+      "productionUseApproved": false,
+      "notes": [
+        "Existing candidate bytes match the independently accepted PR48 export; warm paper, live chapter labels, detail at >=160px. No new acceptance granted.",
+        "PASS records exact-byte equivalence; this qa-candidates path is not itself a runtime allowlist entry. Use the approved export path/commit in a later authorised integration."
+      ],
+      "acceptedEquivalentExport": {
+        "commit": "4eb9a5ae33550d789c56d5c01393145a148565aa",
+        "path": "assets/nino/travel-passport/stamps/exports/stamp-04-liguria.webp",
+        "sha256": "b7cf9eeb47dd88028ce8da8789fd6f042c0998df182b43bd4996453148dc4fac"
+      }
+    },
+    {
+      "path": "assets/nino/travel-passport/stamps/qa-candidates/stamp-05-isole-ink-preview.webp",
+      "source": "existing-baseline",
+      "sha256": "4e72f649edbb50570f66006e02723d6b048bc2fabaab940cf5cea723a12aafd3",
+      "bytes": 177126,
+      "format": "webp",
+      "width": 768,
+      "height": 768,
+      "mode": "RGBA",
+      "hasAlphaChannel": true,
+      "actualTransparency": true,
+      "alphaMin": 0,
+      "alphaMax": 255,
+      "alphaZeroFraction": 0.7774234347873263,
+      "opaqueFraction": 0.005164252387152778,
+      "partialAlphaFraction": 0.21741231282552087,
+      "centerAlpha": 3,
+      "opaque128Bounds": {
+        "left": 24,
+        "top": 117,
+        "right": 760,
+        "bottom": 661
+      },
+      "nonzeroCanvasEdgePixels": 0,
+      "semiTransparentRedYellowPixels": 86941,
+      "centralRGBMean": [
+        44.6036,
+        28.2947,
+        40.2584
+      ],
+      "embeddedICC": false,
+      "pngColorChunks": [],
+      "webpChunks": [
+        "VP8X",
+        "ALPH",
+        "VP8 "
+      ],
+      "decodedRGBAsha256": "9f308ba2b57303661069a043bd689fdaa58199f860b181a37d0060dde9e893d5",
+      "maxCssWidthAt2x": 384,
+      "productionStatus": "REWORK",
+      "sourceIntegrityStatus": "PASS",
+      "strictDecodeStatus": "PASS",
+      "productionUseApproved": false,
+      "notes": [
+        "Original geographic REWORK remains; received correction is a different, separately named candidate."
+      ]
+    },
+    {
+      "path": "assets/nino/travel-passport/stamps/qa-candidates/stamp-06-dolomiti-ink-preview.webp",
+      "source": "existing-baseline",
+      "sha256": "4d989d4b6147acd3b43ff11ee068123eea643ec5d2cc530d7fa3826dd4430c98",
+      "bytes": 363386,
+      "format": "webp",
+      "width": 768,
+      "height": 768,
+      "mode": "RGBA",
+      "hasAlphaChannel": true,
+      "actualTransparency": true,
+      "alphaMin": 0,
+      "alphaMax": 255,
+      "alphaZeroFraction": 0.5568678114149306,
+      "opaqueFraction": 0.028082953559027776,
+      "partialAlphaFraction": 0.41504923502604163,
+      "centerAlpha": 67,
+      "opaque128Bounds": {
+        "left": 79,
+        "top": 10,
+        "right": 687,
+        "bottom": 750
+      },
+      "nonzeroCanvasEdgePixels": 0,
+      "semiTransparentRedYellowPixels": 238069,
+      "centralRGBMean": [
+        138.9719,
+        46.895,
+        25.9314
+      ],
+      "embeddedICC": false,
+      "pngColorChunks": [],
+      "webpChunks": [
+        "VP8X",
+        "ALPH",
+        "VP8 "
+      ],
+      "decodedRGBAsha256": "96a056013da0de1aea9fe64d03896110e021c0d892b6a9e04df187e0a30f5300",
+      "maxCssWidthAt2x": 384,
+      "productionStatus": "PASS",
+      "sourceIntegrityStatus": "PASS",
+      "strictDecodeStatus": "PASS",
+      "productionUseApproved": false,
+      "notes": [
+        "Existing candidate bytes match the independently accepted PR48 export; warm paper, live chapter labels, detail at >=160px. No new acceptance granted.",
+        "PASS records exact-byte equivalence; this qa-candidates path is not itself a runtime allowlist entry. Use the approved export path/commit in a later authorised integration."
+      ],
+      "acceptedEquivalentExport": {
+        "commit": "4eb9a5ae33550d789c56d5c01393145a148565aa",
+        "path": "assets/nino/travel-passport/stamps/exports/stamp-06-dolomiti.webp",
+        "sha256": "4d989d4b6147acd3b43ff11ee068123eea643ec5d2cc530d7fa3826dd4430c98"
+      }
+    },
+    {
+      "path": "assets/nino/travel-passport/stamps/qa-candidates/stamp-07-etna-ink-preview.webp",
+      "source": "existing-baseline",
+      "sha256": "1794a3ee574294278b5147aefd069d0904d6d356c3e350cac56f302c497c1a6f",
+      "bytes": 314476,
+      "format": "webp",
+      "width": 768,
+      "height": 768,
+      "mode": "RGBA",
+      "hasAlphaChannel": true,
+      "actualTransparency": true,
+      "alphaMin": 0,
+      "alphaMax": 255,
+      "alphaZeroFraction": 0.6383565266927084,
+      "opaqueFraction": 0.003211127387152778,
+      "partialAlphaFraction": 0.35843234592013884,
+      "centerAlpha": 229,
+      "opaque128Bounds": {
+        "left": 86,
+        "top": 26,
+        "right": 681,
+        "bottom": 743
+      },
+      "nonzeroCanvasEdgePixels": 0,
+      "semiTransparentRedYellowPixels": 204972,
+      "centralRGBMean": [
+        109.9465,
+        38.2393,
+        22.4084
+      ],
+      "embeddedICC": false,
+      "pngColorChunks": [],
+      "webpChunks": [
+        "VP8X",
+        "ALPH",
+        "VP8 "
+      ],
+      "decodedRGBAsha256": "a5ab367ea12aa5c490ea411e2b95dfb78b0665711122d5d9004ba6a7969bbe59",
+      "maxCssWidthAt2x": 384,
+      "productionStatus": "PASS",
+      "sourceIntegrityStatus": "PASS",
+      "strictDecodeStatus": "PASS",
+      "productionUseApproved": false,
+      "notes": [
+        "Existing candidate bytes match the independently accepted PR48 export; warm paper, live chapter labels, detail at >=160px. No new acceptance granted.",
+        "PASS records exact-byte equivalence; this qa-candidates path is not itself a runtime allowlist entry. Use the approved export path/commit in a later authorised integration."
+      ],
+      "acceptedEquivalentExport": {
+        "commit": "4eb9a5ae33550d789c56d5c01393145a148565aa",
+        "path": "assets/nino/travel-passport/stamps/exports/stamp-07-etna.webp",
+        "sha256": "1794a3ee574294278b5147aefd069d0904d6d356c3e350cac56f302c497c1a6f"
+      }
+    },
+    {
+      "path": "assets/nino/travel-passport/stamps/qa-candidates/stamp-08-toscana-ink-preview.webp",
+      "source": "existing-baseline",
+      "sha256": "042bd1d301006582b6d91b98ae3132b81a8fb40cbc7a69aaac936fee62f82403",
+      "bytes": 257492,
+      "format": "webp",
+      "width": 768,
+      "height": 512,
+      "mode": "RGBA",
+      "hasAlphaChannel": true,
+      "actualTransparency": true,
+      "alphaMin": 0,
+      "alphaMax": 255,
+      "alphaZeroFraction": 0.5356953938802084,
+      "opaqueFraction": 0.044871012369791664,
+      "partialAlphaFraction": 0.41943359374999994,
+      "centerAlpha": 205,
+      "opaque128Bounds": {
+        "left": 24,
+        "top": 42,
+        "right": 743,
+        "bottom": 481
+      },
+      "nonzeroCanvasEdgePixels": 0,
+      "semiTransparentRedYellowPixels": 20,
+      "centralRGBMean": [
+        58.2861,
+        64.4738,
+        25.1778
+      ],
+      "embeddedICC": false,
+      "pngColorChunks": [],
+      "webpChunks": [
+        "VP8X",
+        "ALPH",
+        "VP8 "
+      ],
+      "decodedRGBAsha256": "2e1cd6a6184391a8a298a78253173658dc772011f1a63f888921021bb7e23a0d",
+      "maxCssWidthAt2x": 384,
+      "productionStatus": "PASS",
+      "sourceIntegrityStatus": "PASS",
+      "strictDecodeStatus": "PASS",
+      "productionUseApproved": false,
+      "notes": [
+        "Existing candidate bytes match the independently accepted PR48 export; warm paper, live chapter labels, detail at >=160px. No new acceptance granted.",
+        "PASS records exact-byte equivalence; this qa-candidates path is not itself a runtime allowlist entry. Use the approved export path/commit in a later authorised integration."
+      ],
+      "acceptedEquivalentExport": {
+        "commit": "4eb9a5ae33550d789c56d5c01393145a148565aa",
+        "path": "assets/nino/travel-passport/stamps/exports/stamp-08-toscana.webp",
+        "sha256": "042bd1d301006582b6d91b98ae3132b81a8fb40cbc7a69aaac936fee62f82403"
+      }
+    },
+    {
+      "path": "assets/nino/travel-passport/stamps/qa-candidates/stamp-09-confine-italia-ink-preview.webp",
+      "source": "existing-baseline",
+      "sha256": "9032c4ff1ec9083b8ddf4a5dc4107e448d9578675fec4ab62221dc13310d38cf",
+      "bytes": 233276,
+      "format": "webp",
+      "width": 768,
+      "height": 512,
+      "mode": "RGBA",
+      "hasAlphaChannel": true,
+      "actualTransparency": true,
+      "alphaMin": 0,
+      "alphaMax": 255,
+      "alphaZeroFraction": 0.6098531087239584,
+      "opaqueFraction": 0.044247945149739586,
+      "partialAlphaFraction": 0.34589894612630206,
+      "centerAlpha": 5,
+      "opaque128Bounds": {
+        "left": 57,
+        "top": 82,
+        "right": 717,
+        "bottom": 463
+      },
+      "nonzeroCanvasEdgePixels": 0,
+      "semiTransparentRedYellowPixels": 128855,
+      "centralRGBMean": [
+        130.9799,
+        53.2055,
+        30.8601
+      ],
+      "embeddedICC": false,
+      "pngColorChunks": [],
+      "webpChunks": [
+        "VP8X",
+        "ALPH",
+        "VP8 "
+      ],
+      "decodedRGBAsha256": "a732288d0d772b844d7400627e783d1d539e5b8366f1cb4ad640f93e9e567b91",
+      "maxCssWidthAt2x": 384,
+      "productionStatus": "PASS",
+      "sourceIntegrityStatus": "PASS",
+      "strictDecodeStatus": "PASS",
+      "productionUseApproved": false,
+      "notes": [
+        "Existing candidate bytes match the independently accepted PR48 export; warm paper, live chapter labels, detail at >=160px. No new acceptance granted.",
+        "PASS records exact-byte equivalence; this qa-candidates path is not itself a runtime allowlist entry. Use the approved export path/commit in a later authorised integration."
+      ],
+      "acceptedEquivalentExport": {
+        "commit": "4eb9a5ae33550d789c56d5c01393145a148565aa",
+        "path": "assets/nino/travel-passport/stamps/exports/stamp-09-confine-italia.webp",
+        "sha256": "9032c4ff1ec9083b8ddf4a5dc4107e448d9578675fec4ab62221dc13310d38cf"
+      }
+    },
+    {
+      "path": "assets/nino/travel-passport/stamps/qa-candidates/stamp-10-mari-ink-preview.webp",
+      "source": "existing-baseline",
+      "sha256": "686b3f091f933dcec54a9710405af24236bf8921cdeca316cd7403c806a0e34f",
+      "bytes": 246464,
+      "format": "webp",
+      "width": 768,
+      "height": 702,
+      "mode": "RGBA",
+      "hasAlphaChannel": true,
+      "actualTransparency": true,
+      "alphaMin": 0,
+      "alphaMax": 255,
+      "alphaZeroFraction": 0.38046800807217473,
+      "opaqueFraction": 0.020590351970560306,
+      "partialAlphaFraction": 0.5989416399572649,
+      "centerAlpha": 243,
+      "opaque128Bounds": {
+        "left": 30,
+        "top": 42,
+        "right": 755,
+        "bottom": 675
+      },
+      "nonzeroCanvasEdgePixels": 0,
+      "semiTransparentRedYellowPixels": 0,
+      "centralRGBMean": [
+        15.5409,
+        54.7474,
+        117.0192
+      ],
+      "embeddedICC": false,
+      "pngColorChunks": [],
+      "webpChunks": [
+        "VP8X",
+        "ALPH",
+        "VP8 "
+      ],
+      "decodedRGBAsha256": "27de2b8ab098e126d13a55d0b8a7637931c732d09af733a4ee7a7e4379a7c72b",
+      "maxCssWidthAt2x": 384,
+      "productionStatus": "PASS",
+      "sourceIntegrityStatus": "PASS",
+      "strictDecodeStatus": "PASS",
+      "productionUseApproved": false,
+      "notes": [
+        "Existing candidate bytes match the independently accepted PR48 export; warm paper, live chapter labels, detail at >=160px. No new acceptance granted.",
+        "PASS records exact-byte equivalence; this qa-candidates path is not itself a runtime allowlist entry. Use the approved export path/commit in a later authorised integration."
+      ],
+      "acceptedEquivalentExport": {
+        "commit": "4eb9a5ae33550d789c56d5c01393145a148565aa",
+        "path": "assets/nino/travel-passport/stamps/exports/stamp-10-mari.webp",
+        "sha256": "686b3f091f933dcec54a9710405af24236bf8921cdeca316cd7403c806a0e34f"
+      }
+    },
+    {
+      "path": "assets/nino/travel-passport/stamps/qa-candidates/stamp-11-fiumi-ink-preview.webp",
+      "source": "existing-baseline",
+      "sha256": "063a643d0d16436e0be7fdacd39316d0bf1bd99427137bf284c027b0610b63b7",
+      "bytes": 375622,
+      "format": "webp",
+      "width": 768,
+      "height": 768,
+      "mode": "RGBA",
+      "hasAlphaChannel": true,
+      "actualTransparency": true,
+      "alphaMin": 0,
+      "alphaMax": 255,
+      "alphaZeroFraction": 0.5238477918836806,
+      "opaqueFraction": 0.040352715386284724,
+      "partialAlphaFraction": 0.4357994927300347,
+      "centerAlpha": 239,
+      "opaque128Bounds": {
+        "left": 20,
+        "top": 37,
+        "right": 761,
+        "bottom": 731
+      },
+      "nonzeroCanvasEdgePixels": 0,
+      "semiTransparentRedYellowPixels": 250763,
+      "centralRGBMean": [
+        125.5246,
+        44.3263,
+        25.5846
+      ],
+      "embeddedICC": false,
+      "pngColorChunks": [],
+      "webpChunks": [
+        "VP8X",
+        "ALPH",
+        "VP8 "
+      ],
+      "decodedRGBAsha256": "e06c55944c34572e85d06d13c75ee7ab9c4fbbc9ba8990ba13f2588e2581f079",
+      "maxCssWidthAt2x": 384,
+      "productionStatus": "PASS",
+      "sourceIntegrityStatus": "PASS",
+      "strictDecodeStatus": "PASS",
+      "productionUseApproved": false,
+      "notes": [
+        "Existing candidate bytes match the independently accepted PR48 export; warm paper, live chapter labels, detail at >=160px. No new acceptance granted.",
+        "PASS records exact-byte equivalence; this qa-candidates path is not itself a runtime allowlist entry. Use the approved export path/commit in a later authorised integration."
+      ],
+      "acceptedEquivalentExport": {
+        "commit": "4eb9a5ae33550d789c56d5c01393145a148565aa",
+        "path": "assets/nino/travel-passport/stamps/exports/stamp-11-fiumi.webp",
+        "sha256": "063a643d0d16436e0be7fdacd39316d0bf1bd99427137bf284c027b0610b63b7"
+      }
+    },
+    {
+      "path": "assets/nino/travel-passport/stamps/rework/stamp-05-isole-geography-candidate.png",
+      "source": "new-package",
+      "sha256": "1fd8360be1eb6cb8ee01f981651d03e2dbeec7cb5ca8af293752ff3c9357d8f4",
+      "bytes": 1050851,
+      "format": "png",
+      "width": 1254,
+      "height": 1254,
+      "mode": "RGBA",
+      "hasAlphaChannel": true,
+      "actualTransparency": true,
+      "alphaMin": 0,
+      "alphaMax": 255,
+      "alphaZeroFraction": 0.7565748138651689,
+      "opaqueFraction": 0.0012788423138460911,
+      "partialAlphaFraction": 0.24214634382098502,
+      "centerAlpha": 0,
+      "opaque128Bounds": {
+        "left": 39,
+        "top": 191,
+        "right": 1242,
+        "bottom": 1080
+      },
+      "nonzeroCanvasEdgePixels": 140,
+      "semiTransparentRedYellowPixels": 302721,
+      "centralRGBMean": [
+        42.3764,
+        25.9279,
+        43.0195
+      ],
+      "embeddedICC": false,
+      "pngColorChunks": [],
+      "webpChunks": [],
+      "decodedRGBAsha256": "e10cae987f6e523e1277434a253e7fc5f9905c4eb3b1672fa902a3a16c3dbba3",
+      "maxCssWidthAt2x": 627,
+      "productionStatus": "QA REQUIRED",
+      "sourceIntegrityStatus": "PASS",
+      "strictDecodeStatus": "PASS",
+      "productionUseApproved": false,
+      "notes": [
+        "NW centroid direction verified; major blue silhouettes still overlap vertically by 86 native pixels, versus a 47.26 source-unit north/south gap in canonical map. Independent geographic acceptance remains required; do not claim full correction."
+      ]
+    }
+  ]
+}

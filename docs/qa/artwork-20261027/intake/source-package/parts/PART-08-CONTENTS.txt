@@ -1,0 +1,10 @@
+PART 8/8 — 08-gold-arrivo-isole-QA
+Combine all 8 zip archives by extracting them into the SAME folder.
+Existing repository-relative paths are preserved. No asset files are overwritten by other parts.
+PART 01 has the README, SHA256SUMS and optional import script; use the import script only AFTER all eight parts are combined.
+This package does not imply QA production approval.
+
+Files in this part:
+assets/nino/travel-passport/gold/concepts/gold-finale-ornament-overlay.png
+assets/nino/travel-passport/arrivo/qa-candidates/arrivo-travel-ink-preview.png
+assets/nino/travel-passport/stamps/rework/stamp-05-isole-geography-candidate.png

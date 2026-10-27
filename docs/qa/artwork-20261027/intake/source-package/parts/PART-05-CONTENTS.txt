@@ -1,0 +1,10 @@
+PART 5/8 — 05-page-07-08-09-concepts
+Combine all 8 zip archives by extracting them into the SAME folder.
+Existing repository-relative paths are preserved. No asset files are overwritten by other parts.
+PART 01 has the README, SHA256SUMS and optional import script; use the import script only AFTER all eight parts are combined.
+This package does not imply QA production approval.
+
+Files in this part:
+assets/nino/travel-passport/book/concepts/passport-page-07-cartoline-i.png
+assets/nino/travel-passport/book/concepts/passport-page-08-cartoline-ii.png
+assets/nino/travel-passport/book/concepts/passport-page-09-avventura-vespa.png

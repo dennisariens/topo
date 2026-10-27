@@ -1,0 +1,700 @@
+{
+  "scope": "asset-only diagnostic page; NOT implemented passport, dynamic state or physical iPad acceptance",
+  "transport": "file:// offline:true; embedded data URLs",
+  "browser": "145.0.7632.6",
+  "sourceHashes": {
+    "assets/nino/travel-passport/book/qa-candidates/passport-blank-folio-left-alpha-normalized.webp": "d4862f0f5e34631c4e483761f933baa92bd85dee05b7ea0d581a7eb29be668a2",
+    "assets/nino/travel-passport/book/qa-candidates/passport-blank-folio-right-alpha-normalized.webp": "3ce3133d483bec940e961a5a920a30bbb00e16da3ebb2445966fc83e3f210b16",
+    "assets/nino/travel-passport/stamps/rework/stamp-05-isole-geography-candidate.png": "1fd8360be1eb6cb8ee01f981651d03e2dbeec7cb5ca8af293752ff3c9357d8f4",
+    "assets/nino/travel-passport/arrivo/qa-candidates/arrivo-travel-ink-preview.png": "6a1ced67a6c25d8a995cb29fd12f0c4be2dfd12be0b49a2d06e4434f62540bef",
+    "assets/nino/travel-passport/gold/masters/gold-chapter-seal-v2.png": "60c54e6efbb8239c327b4d7c76660dc816535a1f5431bf7c3cbe9f2927a1adf0",
+    "assets/nino/travel-passport/gold/masters/gold-esploratore-doro.png": "e94a76ab4c0220eead56e3f208dc539a71bae2f217ca7756939903bce024e3ca",
+    "assets/nino/travel-passport/postcards/concepts/postcard-05-bologna-front.png": "f58f20edb4199739f9b643a6c6b62f65051b4e61930c7d087ce6e77f3657b9e8",
+    "assets/nino/travel-passport/postcards/concepts/postcard-06-milano-front.png": "1347e3f71ced9aa9a0f899f1a53914f7883b1cae92c4fa807e16f235c27d6e12",
+    "assets/nino/travel-passport/gold/concepts/gold-finale-ornament-overlay.png": "f58e3077c57740345ed48632d3917baba32a451bf8bb1e917753e3ff91e62947"
+  },
+  "records": [
+    {
+      "name": "desktop",
+      "width": 1500,
+      "height": 1000,
+      "dpr": 1,
+      "columns": "550px 550px",
+      "sizes": [
+        {
+          "path": "assets/nino/travel-passport/book/qa-candidates/passport-blank-folio-left-alpha-normalized.webp",
+          "native": [
+            1086,
+            1448
+          ],
+          "css": [
+            540,
+            720
+          ],
+          "fullyDecoded": true,
+          "withinWidth": true,
+          "sourcePixelsSufficient": true
+        },
+        {
+          "path": "assets/nino/travel-passport/book/qa-candidates/passport-blank-folio-right-alpha-normalized.webp",
+          "native": [
+            1086,
+            1448
+          ],
+          "css": [
+            540,
+            720
+          ],
+          "fullyDecoded": true,
+          "withinWidth": true,
+          "sourcePixelsSufficient": true
+        },
+        {
+          "path": "assets/nino/travel-passport/stamps/rework/stamp-05-isole-geography-candidate.png",
+          "native": [
+            1254,
+            1254
+          ],
+          "css": [
+            160,
+            160
+          ],
+          "fullyDecoded": true,
+          "withinWidth": true,
+          "sourcePixelsSufficient": true
+        },
+        {
+          "path": "assets/nino/travel-passport/arrivo/qa-candidates/arrivo-travel-ink-preview.png",
+          "native": [
+            1536,
+            1536
+          ],
+          "css": [
+            160,
+            160
+          ],
+          "fullyDecoded": true,
+          "withinWidth": true,
+          "sourcePixelsSufficient": true
+        },
+        {
+          "path": "assets/nino/travel-passport/gold/masters/gold-chapter-seal-v2.png",
+          "native": [
+            1254,
+            1254
+          ],
+          "css": [
+            160,
+            160
+          ],
+          "fullyDecoded": true,
+          "withinWidth": true,
+          "sourcePixelsSufficient": true
+        },
+        {
+          "path": "assets/nino/travel-passport/gold/masters/gold-esploratore-doro.png",
+          "native": [
+            1254,
+            1254
+          ],
+          "css": [
+            160,
+            160
+          ],
+          "fullyDecoded": true,
+          "withinWidth": true,
+          "sourcePixelsSufficient": true
+        },
+        {
+          "path": "assets/nino/travel-passport/postcards/concepts/postcard-05-bologna-front.png",
+          "native": [
+            1536,
+            1024
+          ],
+          "css": [
+            160,
+            106.65625
+          ],
+          "fullyDecoded": true,
+          "withinWidth": true,
+          "sourcePixelsSufficient": true
+        },
+        {
+          "path": "assets/nino/travel-passport/postcards/concepts/postcard-06-milano-front.png",
+          "native": [
+            1536,
+            1024
+          ],
+          "css": [
+            160,
+            106.65625
+          ],
+          "fullyDecoded": true,
+          "withinWidth": true,
+          "sourcePixelsSufficient": true
+        },
+        {
+          "path": "assets/nino/travel-passport/gold/concepts/gold-finale-ornament-overlay.png",
+          "native": [
+            1086,
+            1448
+          ],
+          "css": [
+            160,
+            213.328125
+          ],
+          "fullyDecoded": true,
+          "withinWidth": true,
+          "sourcePixelsSufficient": true
+        }
+      ],
+      "overflow": false
+    },
+    {
+      "name": "ipad-landscape",
+      "width": 1180,
+      "height": 820,
+      "dpr": 2,
+      "columns": "550px 550px",
+      "sizes": [
+        {
+          "path": "assets/nino/travel-passport/book/qa-candidates/passport-blank-folio-left-alpha-normalized.webp",
+          "native": [
+            1086,
+            1448
+          ],
+          "css": [
+            495,
+            660
+          ],
+          "fullyDecoded": true,
+          "withinWidth": true,
+          "sourcePixelsSufficient": true
+        },
+        {
+          "path": "assets/nino/travel-passport/book/qa-candidates/passport-blank-folio-right-alpha-normalized.webp",
+          "native": [
+            1086,
+            1448
+          ],
+          "css": [
+            495,
+            660
+          ],
+          "fullyDecoded": true,
+          "withinWidth": true,
+          "sourcePixelsSufficient": true
+        },
+        {
+          "path": "assets/nino/travel-passport/stamps/rework/stamp-05-isole-geography-candidate.png",
+          "native": [
+            1254,
+            1254
+          ],
+          "css": [
+            160,
+            160
+          ],
+          "fullyDecoded": true,
+          "withinWidth": true,
+          "sourcePixelsSufficient": true
+        },
+        {
+          "path": "assets/nino/travel-passport/arrivo/qa-candidates/arrivo-travel-ink-preview.png",
+          "native": [
+            1536,
+            1536
+          ],
+          "css": [
+            160,
+            160
+          ],
+          "fullyDecoded": true,
+          "withinWidth": true,
+          "sourcePixelsSufficient": true
+        },
+        {
+          "path": "assets/nino/travel-passport/gold/masters/gold-chapter-seal-v2.png",
+          "native": [
+            1254,
+            1254
+          ],
+          "css": [
+            160,
+            160
+          ],
+          "fullyDecoded": true,
+          "withinWidth": true,
+          "sourcePixelsSufficient": true
+        },
+        {
+          "path": "assets/nino/travel-passport/gold/masters/gold-esploratore-doro.png",
+          "native": [
+            1254,
+            1254
+          ],
+          "css": [
+            160,
+            160
+          ],
+          "fullyDecoded": true,
+          "withinWidth": true,
+          "sourcePixelsSufficient": true
+        },
+        {
+          "path": "assets/nino/travel-passport/postcards/concepts/postcard-05-bologna-front.png",
+          "native": [
+            1536,
+            1024
+          ],
+          "css": [
+            160,
+            106.65625
+          ],
+          "fullyDecoded": true,
+          "withinWidth": true,
+          "sourcePixelsSufficient": true
+        },
+        {
+          "path": "assets/nino/travel-passport/postcards/concepts/postcard-06-milano-front.png",
+          "native": [
+            1536,
+            1024
+          ],
+          "css": [
+            160,
+            106.65625
+          ],
+          "fullyDecoded": true,
+          "withinWidth": true,
+          "sourcePixelsSufficient": true
+        },
+        {
+          "path": "assets/nino/travel-passport/gold/concepts/gold-finale-ornament-overlay.png",
+          "native": [
+            1086,
+            1448
+          ],
+          "css": [
+            160,
+            213.328125
+          ],
+          "fullyDecoded": true,
+          "withinWidth": true,
+          "sourcePixelsSufficient": true
+        }
+      ],
+      "overflow": false
+    },
+    {
+      "name": "ipad-portrait",
+      "width": 820,
+      "height": 1180,
+      "dpr": 2,
+      "columns": "788px",
+      "sizes": [
+        {
+          "path": "assets/nino/travel-passport/book/qa-candidates/passport-blank-folio-left-alpha-normalized.webp",
+          "native": [
+            1086,
+            1448
+          ],
+          "css": [
+            540,
+            720
+          ],
+          "fullyDecoded": true,
+          "withinWidth": true,
+          "sourcePixelsSufficient": true
+        },
+        {
+          "path": "assets/nino/travel-passport/book/qa-candidates/passport-blank-folio-right-alpha-normalized.webp",
+          "native": [
+            1086,
+            1448
+          ],
+          "css": [
+            540,
+            720
+          ],
+          "fullyDecoded": true,
+          "withinWidth": true,
+          "sourcePixelsSufficient": true
+        },
+        {
+          "path": "assets/nino/travel-passport/stamps/rework/stamp-05-isole-geography-candidate.png",
+          "native": [
+            1254,
+            1254
+          ],
+          "css": [
+            160,
+            160
+          ],
+          "fullyDecoded": true,
+          "withinWidth": true,
+          "sourcePixelsSufficient": true
+        },
+        {
+          "path": "assets/nino/travel-passport/arrivo/qa-candidates/arrivo-travel-ink-preview.png",
+          "native": [
+            1536,
+            1536
+          ],
+          "css": [
+            160,
+            160
+          ],
+          "fullyDecoded": true,
+          "withinWidth": true,
+          "sourcePixelsSufficient": true
+        },
+        {
+          "path": "assets/nino/travel-passport/gold/masters/gold-chapter-seal-v2.png",
+          "native": [
+            1254,
+            1254
+          ],
+          "css": [
+            160,
+            160
+          ],
+          "fullyDecoded": true,
+          "withinWidth": true,
+          "sourcePixelsSufficient": true
+        },
+        {
+          "path": "assets/nino/travel-passport/gold/masters/gold-esploratore-doro.png",
+          "native": [
+            1254,
+            1254
+          ],
+          "css": [
+            160,
+            160
+          ],
+          "fullyDecoded": true,
+          "withinWidth": true,
+          "sourcePixelsSufficient": true
+        },
+        {
+          "path": "assets/nino/travel-passport/postcards/concepts/postcard-05-bologna-front.png",
+          "native": [
+            1536,
+            1024
+          ],
+          "css": [
+            160,
+            106.65625
+          ],
+          "fullyDecoded": true,
+          "withinWidth": true,
+          "sourcePixelsSufficient": true
+        },
+        {
+          "path": "assets/nino/travel-passport/postcards/concepts/postcard-06-milano-front.png",
+          "native": [
+            1536,
+            1024
+          ],
+          "css": [
+            160,
+            106.65625
+          ],
+          "fullyDecoded": true,
+          "withinWidth": true,
+          "sourcePixelsSufficient": true
+        },
+        {
+          "path": "assets/nino/travel-passport/gold/concepts/gold-finale-ornament-overlay.png",
+          "native": [
+            1086,
+            1448
+          ],
+          "css": [
+            160,
+            213.328125
+          ],
+          "fullyDecoded": true,
+          "withinWidth": true,
+          "sourcePixelsSufficient": true
+        }
+      ],
+      "overflow": false
+    },
+    {
+      "name": "phone",
+      "width": 390,
+      "height": 844,
+      "dpr": 2,
+      "columns": "358px",
+      "sizes": [
+        {
+          "path": "assets/nino/travel-passport/book/qa-candidates/passport-blank-folio-left-alpha-normalized.webp",
+          "native": [
+            1086,
+            1448
+          ],
+          "css": [
+            357.984375,
+            477.328125
+          ],
+          "fullyDecoded": true,
+          "withinWidth": true,
+          "sourcePixelsSufficient": true
+        },
+        {
+          "path": "assets/nino/travel-passport/book/qa-candidates/passport-blank-folio-right-alpha-normalized.webp",
+          "native": [
+            1086,
+            1448
+          ],
+          "css": [
+            357.984375,
+            477.328125
+          ],
+          "fullyDecoded": true,
+          "withinWidth": true,
+          "sourcePixelsSufficient": true
+        },
+        {
+          "path": "assets/nino/travel-passport/stamps/rework/stamp-05-isole-geography-candidate.png",
+          "native": [
+            1254,
+            1254
+          ],
+          "css": [
+            160,
+            160
+          ],
+          "fullyDecoded": true,
+          "withinWidth": true,
+          "sourcePixelsSufficient": true
+        },
+        {
+          "path": "assets/nino/travel-passport/arrivo/qa-candidates/arrivo-travel-ink-preview.png",
+          "native": [
+            1536,
+            1536
+          ],
+          "css": [
+            160,
+            160
+          ],
+          "fullyDecoded": true,
+          "withinWidth": true,
+          "sourcePixelsSufficient": true
+        },
+        {
+          "path": "assets/nino/travel-passport/gold/masters/gold-chapter-seal-v2.png",
+          "native": [
+            1254,
+            1254
+          ],
+          "css": [
+            160,
+            160
+          ],
+          "fullyDecoded": true,
+          "withinWidth": true,
+          "sourcePixelsSufficient": true
+        },
+        {
+          "path": "assets/nino/travel-passport/gold/masters/gold-esploratore-doro.png",
+          "native": [
+            1254,
+            1254
+          ],
+          "css": [
+            160,
+            160
+          ],
+          "fullyDecoded": true,
+          "withinWidth": true,
+          "sourcePixelsSufficient": true
+        },
+        {
+          "path": "assets/nino/travel-passport/postcards/concepts/postcard-05-bologna-front.png",
+          "native": [
+            1536,
+            1024
+          ],
+          "css": [
+            160,
+            106.65625
+          ],
+          "fullyDecoded": true,
+          "withinWidth": true,
+          "sourcePixelsSufficient": true
+        },
+        {
+          "path": "assets/nino/travel-passport/postcards/concepts/postcard-06-milano-front.png",
+          "native": [
+            1536,
+            1024
+          ],
+          "css": [
+            160,
+            106.65625
+          ],
+          "fullyDecoded": true,
+          "withinWidth": true,
+          "sourcePixelsSufficient": true
+        },
+        {
+          "path": "assets/nino/travel-passport/gold/concepts/gold-finale-ornament-overlay.png",
+          "native": [
+            1086,
+            1448
+          ],
+          "css": [
+            160,
+            213.328125
+          ],
+          "fullyDecoded": true,
+          "withinWidth": true,
+          "sourcePixelsSufficient": true
+        }
+      ],
+      "overflow": false
+    },
+    {
+      "name": "small-phone",
+      "width": 320,
+      "height": 568,
+      "dpr": 2,
+      "columns": "288px",
+      "sizes": [
+        {
+          "path": "assets/nino/travel-passport/book/qa-candidates/passport-blank-folio-left-alpha-normalized.webp",
+          "native": [
+            1086,
+            1448
+          ],
+          "css": [
+            288,
+            384
+          ],
+          "fullyDecoded": true,
+          "withinWidth": true,
+          "sourcePixelsSufficient": true
+        },
+        {
+          "path": "assets/nino/travel-passport/book/qa-candidates/passport-blank-folio-right-alpha-normalized.webp",
+          "native": [
+            1086,
+            1448
+          ],
+          "css": [
+            288,
+            384
+          ],
+          "fullyDecoded": true,
+          "withinWidth": true,
+          "sourcePixelsSufficient": true
+        },
+        {
+          "path": "assets/nino/travel-passport/stamps/rework/stamp-05-isole-geography-candidate.png",
+          "native": [
+            1254,
+            1254
+          ],
+          "css": [
+            160,
+            160
+          ],
+          "fullyDecoded": true,
+          "withinWidth": true,
+          "sourcePixelsSufficient": true
+        },
+        {
+          "path": "assets/nino/travel-passport/arrivo/qa-candidates/arrivo-travel-ink-preview.png",
+          "native": [
+            1536,
+            1536
+          ],
+          "css": [
+            160,
+            160
+          ],
+          "fullyDecoded": true,
+          "withinWidth": true,
+          "sourcePixelsSufficient": true
+        },
+        {
+          "path": "assets/nino/travel-passport/gold/masters/gold-chapter-seal-v2.png",
+          "native": [
+            1254,
+            1254
+          ],
+          "css": [
+            160,
+            160
+          ],
+          "fullyDecoded": true,
+          "withinWidth": true,
+          "sourcePixelsSufficient": true
+        },
+        {
+          "path": "assets/nino/travel-passport/gold/masters/gold-esploratore-doro.png",
+          "native": [
+            1254,
+            1254
+          ],
+          "css": [
+            160,
+            160
+          ],
+          "fullyDecoded": true,
+          "withinWidth": true,
+          "sourcePixelsSufficient": true
+        },
+        {
+          "path": "assets/nino/travel-passport/postcards/concepts/postcard-05-bologna-front.png",
+          "native": [
+            1536,
+            1024
+          ],
+          "css": [
+            160,
+            106.65625
+          ],
+          "fullyDecoded": true,
+          "withinWidth": true,
+          "sourcePixelsSufficient": true
+        },
+        {
+          "path": "assets/nino/travel-passport/postcards/concepts/postcard-06-milano-front.png",
+          "native": [
+            1536,
+            1024
+          ],
+          "css": [
+            160,
+            106.65625
+          ],
+          "fullyDecoded": true,
+          "withinWidth": true,
+          "sourcePixelsSufficient": true
+        },
+        {
+          "path": "assets/nino/travel-passport/gold/concepts/gold-finale-ornament-overlay.png",
+          "native": [
+            1086,
+            1448
+          ],
+          "css": [
+            160,
+            213.328125
+          ],
+          "fullyDecoded": true,
+          "withinWidth": true,
+          "sourcePixelsSufficient": true
+        }
+      ],
+      "overflow": false
+    }
+  ],
+  "errors": [],
+  "external": []
+}

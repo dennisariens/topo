@@ -1,0 +1,5 @@
+
+> topo-italie-baseline@0.1.0 lint
+> node scripts/check-syntax.mjs
+
+App, print page, standalone bundle and learning engine JavaScript syntax: OK

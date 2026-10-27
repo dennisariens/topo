@@ -1,0 +1,236 @@
+[
+  {
+    "archive": "TOPO-NINO-ART-PART-01-01-blank-folio-originals.zip",
+    "bytes": 6389436,
+    "sha256": "1c0cc4d4f291601cd3d42656f71a4dbbf532900cc12f4b985526afec02acd94f",
+    "crc": "PASS",
+    "entries": [
+      {
+        "path": "assets/nino/travel-passport/book/masters/passport-blank-folio-left-master.png",
+        "bytes": 3175156,
+        "sha256": "b64802b9ea775b487660bebf57302848ee32b9f5f6934139e4ec7c02d488e4a4"
+      },
+      {
+        "path": "assets/nino/travel-passport/book/masters/passport-blank-folio-right-master.png",
+        "bytes": 3323276,
+        "sha256": "70e22b4ae4a6a2e63c542906bcd78d3be196e031a2b94c97a172c0bf71d59a40"
+      },
+      {
+        "path": "PUSH_TO_GITHUB.sh",
+        "bytes": 1405,
+        "sha256": "bb142971a2e265bf6a9e5461776340d29d5724c82226b12925992964b3048ae6"
+      },
+      {
+        "path": "README_FIRST.md",
+        "bytes": 4364,
+        "sha256": "c7c0cfba7c43336d38c85f64626a08e7b12cd4c0a9b4c9202135ab922eb2ca7b"
+      },
+      {
+        "path": "SHA256SUMS.txt",
+        "bytes": 3333,
+        "sha256": "208688fa9bfbe808c95b931a64a769416f530468b3e162017d22d699aab9ba30"
+      },
+      {
+        "path": "parts/PART-01-CONTENTS.txt",
+        "bytes": 559,
+        "sha256": "277ce650d99e80972d2ca352b4c2911a269fed3246592822fe6d77a1706a66ea"
+      }
+    ]
+  },
+  {
+    "archive": "TOPO-NINO-ART-PART-02-02-folio-exports-QA.zip",
+    "bytes": 5861772,
+    "sha256": "44983c70c5f589a6aa40e00a0273cbd94c1e023e3567539ce37f7e718072670d",
+    "crc": "PASS",
+    "entries": [
+      {
+        "path": "assets/nino/travel-passport/book/qa-candidates/passport-blank-folio-left-alpha-normalized.webp",
+        "bytes": 1909020,
+        "sha256": "d4862f0f5e34631c4e483761f933baa92bd85dee05b7ea0d581a7eb29be668a2"
+      },
+      {
+        "path": "assets/nino/travel-passport/book/qa-candidates/passport-blank-folio-right-alpha-normalized.webp",
+        "bytes": 2099822,
+        "sha256": "3ce3133d483bec940e961a5a920a30bbb00e16da3ebb2445966fc83e3f210b16"
+      },
+      {
+        "path": "docs/qa/artwork-20261027/alpha-composite-checker.jpg",
+        "bytes": 464328,
+        "sha256": "6a8caa4332a4a34e4684bbe8c9880db3ee1ca81ae3024234fdf10126de62473f"
+      },
+      {
+        "path": "docs/qa/artwork-20261027/alpha-composite-cream.jpg",
+        "bytes": 386153,
+        "sha256": "badb9679aaa46375403ac186605949afa53497e44643b72fb5fca6ddf462cf67"
+      },
+      {
+        "path": "docs/qa/artwork-20261027/alpha-composite-dark.jpg",
+        "bytes": 361864,
+        "sha256": "2c90cae5443ee6ae534cc540a99b4208516648346a7be88d0c2c21dd92ff7226"
+      },
+      {
+        "path": "docs/qa/artwork-20261027/asset-catalog.jpg",
+        "bytes": 732454,
+        "sha256": "7fb928d9ba8d0e3c739a1310ff255c1822fec80488cbce300a202c1146347b8a"
+      },
+      {
+        "path": "docs/qa/artwork-20261027/manifest.json",
+        "bytes": 13685,
+        "sha256": "f5442e4c23c30052ba22669dbf0676d8091a4cd4af1eb83a0fb0d7ef533c9495"
+      },
+      {
+        "path": "parts/PART-02-CONTENTS.txt",
+        "bytes": 824,
+        "sha256": "f028f295aac6664ad54bb37a41122e490c898865cc08055cd41e0f0d0675a148"
+      }
+    ]
+  },
+  {
+    "archive": "TOPO-NINO-ART-PART-03-03-page-01-02-concepts.zip",
+    "bytes": 6791068,
+    "sha256": "3ebc0d7c349c1f63af56d01bcb6aca5da7c3a48d32dfb21d863cd349983756d8",
+    "crc": "PASS",
+    "entries": [
+      {
+        "path": "assets/nino/travel-passport/book/concepts/passport-page-01-profile-v2.png",
+        "bytes": 3304133,
+        "sha256": "9c8cbdd7f5b3aa612e9a1e4d95934234ffa48f52fa9e9004d2dba2a5db3dae21"
+      },
+      {
+        "path": "assets/nino/travel-passport/book/concepts/passport-page-02-progress-v2.png",
+        "bytes": 3552714,
+        "sha256": "36baee4ab69698ced3a15f607f24741f8c6633ef9d22623c4d6f78a23c3ddfba"
+      },
+      {
+        "path": "parts/PART-03-CONTENTS.txt",
+        "bytes": 549,
+        "sha256": "8b6f6ea94d0ada1bf9e7968cf396b775694cb7c99ab6fd8d68e91684de7d83e2"
+      }
+    ]
+  },
+  {
+    "archive": "TOPO-NINO-ART-PART-04-04-page-05-06-concepts.zip",
+    "bytes": 5650264,
+    "sha256": "3a796373b8d05e3c02e0b0c6cf83f23ccb0f286f172c483cd26495da56bee861",
+    "crc": "PASS",
+    "entries": [
+      {
+        "path": "assets/nino/travel-passport/book/concepts/passport-page-05-scoperte-iii.png",
+        "bytes": 2803405,
+        "sha256": "059547fd501d6997bd8548c2cb71cd0d0e8db4a63387ed39a50305fabf3dad3c"
+      },
+      {
+        "path": "assets/nino/travel-passport/book/concepts/passport-page-06-scoperte-iv.png",
+        "bytes": 2957288,
+        "sha256": "78e0698dcde42775ee48a111bed3ef0cf0af53d00ba3cf873240c64802618a6d"
+      },
+      {
+        "path": "parts/PART-04-CONTENTS.txt",
+        "bytes": 551,
+        "sha256": "86a13be754359283fc614c92a2876b99a61c0b09bcd8485792b0053f1657c5f0"
+      }
+    ]
+  },
+  {
+    "archive": "TOPO-NINO-ART-PART-05-05-page-07-08-09-concepts.zip",
+    "bytes": 6205290,
+    "sha256": "538b02b4ddc7656779f9a6ccd3cf3e30a73e5c0a4936b92048b75b55afe1fd26",
+    "crc": "PASS",
+    "entries": [
+      {
+        "path": "assets/nino/travel-passport/book/concepts/passport-page-07-cartoline-i.png",
+        "bytes": 1415325,
+        "sha256": "0ce654e69ed9f6f413558a83f2e59f578f4e5822f6e9b0b05a8042be2a172a4b"
+      },
+      {
+        "path": "assets/nino/travel-passport/book/concepts/passport-page-08-cartoline-ii.png",
+        "bytes": 1368381,
+        "sha256": "1eb64903c56823eaf0ef26166dfd34e22f3a4f26d90c5ad242d21c5ea77b69fb"
+      },
+      {
+        "path": "assets/nino/travel-passport/book/concepts/passport-page-09-avventura-vespa.png",
+        "bytes": 3459103,
+        "sha256": "31a42fc6f89bd92f7868cf2bca7abf2997d1f9767129fb9e55a7c782f849eaa7"
+      },
+      {
+        "path": "parts/PART-05-CONTENTS.txt",
+        "bytes": 633,
+        "sha256": "1b4087ce36d8ac51a2316251000847c55f45c3ac054002db4f22ffa817cb947d"
+      }
+    ]
+  },
+  {
+    "archive": "TOPO-NINO-ART-PART-06-06-page-10-endpaper-concepts.zip",
+    "bytes": 6317173,
+    "sha256": "4d37503dd56dc684f7ef4e70452abd752b3f714d92b4fd3e3d1ba8adbe73a724",
+    "crc": "PASS",
+    "entries": [
+      {
+        "path": "assets/nino/travel-passport/book/concepts/passport-page-10-gold-finale-v2.png",
+        "bytes": 3328736,
+        "sha256": "76db51b8d6046222caedce2c3eb4685a7b6fa8c1b23e8bab901caf094adcbfb8"
+      },
+      {
+        "path": "assets/nino/travel-passport/book/concepts/passport-back-endpaper.png",
+        "bytes": 3088140,
+        "sha256": "d6d03a960d9a213e775622de2a38495de5a6734bb381042478fb9c13033f87ce"
+      },
+      {
+        "path": "parts/PART-06-CONTENTS.txt",
+        "bytes": 553,
+        "sha256": "2839720d7a61dc0fe308a4823f020c420dbd8445a5485a5e6619fa2fd3498d87"
+      }
+    ]
+  },
+  {
+    "archive": "TOPO-NINO-ART-PART-07-07-extra-postcards.zip",
+    "bytes": 6731074,
+    "sha256": "91f2221f99ad3dc85f5ba4aacc945ed54a0410e0bb5cd5fed0759dd387829428",
+    "crc": "PASS",
+    "entries": [
+      {
+        "path": "assets/nino/travel-passport/postcards/concepts/postcard-05-bologna-front.png",
+        "bytes": 3183567,
+        "sha256": "f58f20edb4199739f9b643a6c6b62f65051b4e61930c7d087ce6e77f3657b9e8"
+      },
+      {
+        "path": "assets/nino/travel-passport/postcards/concepts/postcard-06-milano-front.png",
+        "bytes": 3676361,
+        "sha256": "1347e3f71ced9aa9a0f899f1a53914f7883b1cae92c4fa807e16f235c27d6e12"
+      },
+      {
+        "path": "parts/PART-07-CONTENTS.txt",
+        "bytes": 549,
+        "sha256": "7667b2672793f21ff6ff4c159c1d5e9689065b704e2dba539f669f644ff62ca3"
+      }
+    ]
+  },
+  {
+    "archive": "TOPO-NINO-ART-PART-08-08-gold-arrivo-isole-QA.zip",
+    "bytes": 4794640,
+    "sha256": "bb8d342a451c5ad7531f384aaa973dc47acdddcb40a8ded04eb99cf0271a4009",
+    "crc": "PASS",
+    "entries": [
+      {
+        "path": "assets/nino/travel-passport/gold/concepts/gold-finale-ornament-overlay.png",
+        "bytes": 1917134,
+        "sha256": "f58e3077c57740345ed48632d3917baba32a451bf8bb1e917753e3ff91e62947"
+      },
+      {
+        "path": "assets/nino/travel-passport/arrivo/qa-candidates/arrivo-travel-ink-preview.png",
+        "bytes": 2007944,
+        "sha256": "6a1ced67a6c25d8a995cb29fd12f0c4be2dfd12be0b49a2d06e4434f62540bef"
+      },
+      {
+        "path": "assets/nino/travel-passport/stamps/rework/stamp-05-isole-geography-candidate.png",
+        "bytes": 1050851,
+        "sha256": "1fd8360be1eb6cb8ee01f981651d03e2dbeec7cb5ca8af293752ff3c9357d8f4"
+      },
+      {
+        "path": "parts/PART-08-CONTENTS.txt",
+        "bytes": 636,
+        "sha256": "66e0eaaeba9af242e34c63e4d1384316cd40888e274d53f413521e99be166494"
+      }
+    ]
+  }
+]

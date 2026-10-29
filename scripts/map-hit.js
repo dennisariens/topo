@@ -91,7 +91,7 @@ function mapPickerFrame(box,width){
 // The large circle is a city symbol, NOT a claimed administrative boundary.
 function mapPickerRomeVaticanFigure(numbers){
  const figure=document.createElement('figure');figure.className='pickerRomeVatican';
- const caption=document.createElement('figcaption');caption.textContent='Rome en Vaticaanstad · schematische vergroting';figure.append(caption);
+ const caption=document.createElement('figcaption');caption.textContent='Grote stad en kleine enclave · schematische vergroting';figure.append(caption);
  const svg=el('svg',{viewBox:'0 0 340 212',class:'pickerRomeVaticanDiagram',role:'img','aria-label':'Grote stadscirkel met kleinere enclave daarbinnen. Twee afzonderlijke aanwijslijnen. Geen geografische schaal.'},figure);
  el('rect',{x:0,y:0,width:340,height:212,rx:12,fill:'#f0d4a0'},svg);
  el('circle',{cx:204,cy:108,r:82,fill:'#e9c58d',stroke:'#895c3a','stroke-width':3},svg);

@@ -1,3 +1,8 @@
+> Historical rejected candidate below: `d55e9de` was ADJUST / NO-GO.
+> The owner-required implementation and fresh evidence supersede its point-crop
+> design and visual-pass claims: [29 October revision](visual/map-picker-58-revision/README.md).
+> Automated passes do not establish owner/Hermes GO.
+
 # Issue #58 — legible neutral map selection (draft review candidate)
 
 ## Baseline and bounded change

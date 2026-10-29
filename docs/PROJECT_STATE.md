@@ -94,3 +94,24 @@ All 14 test programs, lint/build, source-preservation audit and five-viewport of
 ## P0 #36 / #34 — semantic map tap hotfix
 
 Isolated patch on PR #30 `f67027d`, with all Discovery/terrain and schoolblad module bytes preserved. The single tap resolver uses existing geometry plus task feature class: 27 point halos, real region/country/island/sea/mountain fills and river corridors. Point capture and Po's invisible stroke no longer steal valid Tuscany/Po Plain selections. Genuine ambiguity uses one neutral stable-ID picker with answer-independent shuffled order and shape wording for areas. Actual wrong→Next→repair→completed region stages are tested; no engine/reward/save/geometry change. Four viewports × two themes × fit/zoom, all anchors/polygons, Gold/replay and both offline downloads have automated evidence. PR #29 remains separate/untouched; #37 mountain geometry and Hermes Focus Mode are outside this interaction patch. See [MAP_SELECTION_HOTFIX.md](MAP_SELECTION_HOTFIX.md) for measured root causes, evidence, reproduction and remaining physical-iPad steps. Draft review only; no merge/deployment.
+
+
+## PR #59 owner revision — 29 October 2026
+
+Replaces rejected `d55e9de` on the same `codex/issue-58-legible-map-picker`
+branch. One regional source map restores coastlines, islands, six lakes, rivers,
+neighbouring places and distinct city/volcano/microstate glyphs. Rome has an
+explicitly illustrative city circle containing a tiny Vatican symbol at its
+source-relative WNW position, with two separately capped neutral callouts;
+broader sets retain this in a local inset. These are symbols, never surveyed
+municipal/state boundaries. All candidate endpoints, badges, orientation and
+>=44px controls fit on first opening. Area/sea outlines retain a common complete
+extent/scale, now fitted together rather than scrolled. No answer-dependent
+camera/paint/name. PR51 resolver/shuffle/grading, all 45 item records, 27 anchors,
+six lakes, 11 chapters, engines/rewards/saves, Focus, art and print remain exact.
+All generated standalone candidate HTMLs are byte-identical.
+
+Full lint/test/build and real offline browser evidence:
+[visual/map-picker-58-revision/README.md](visual/map-picker-58-revision/README.md).
+This is a new owner preview, not owner/Hermes acceptance or physical Safari/child
+proof. Existing learner release, iPad server, main and deployments are unchanged.

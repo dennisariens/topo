@@ -1,0 +1,33 @@
+[
+  {
+    "ids": [
+      "area-e",
+      "area-o",
+      "city-21",
+      "city-6",
+      "city-9"
+    ],
+    "filename": "revised-small-phone-multi-area-e_area-o_city-21_city-6_city-9.png"
+  },
+  {
+    "ids": [
+      "city-12",
+      "city-18",
+      "city-2",
+      "city-20",
+      "city-4",
+      "city-5",
+      "city-8"
+    ],
+    "filename": "revised-small-phone-multi-city-12_city-18_city-2_city-20_city-4_city-5_city-8.png"
+  },
+  {
+    "ids": [
+      "area-e",
+      "city-1",
+      "city-17",
+      "city-6"
+    ],
+    "filename": "revised-small-phone-multi-area-e_city-1_city-17_city-6.png"
+  }
+]

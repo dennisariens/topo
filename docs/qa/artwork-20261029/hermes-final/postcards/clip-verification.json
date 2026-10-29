@@ -1,0 +1,15 @@
+{
+  "crop_box_xyxy_exclusive": [
+    58,
+    66,
+    1478,
+    958
+  ],
+  "size": [
+    1420,
+    892
+  ],
+  "source_rgb_identical": true,
+  "crop_sha256": "35e7bd02929954043f6345620c6ea5cc49730d5a9e85e6a3b19ccf4c1d0cd8ef",
+  "note": "Straight rectangle trims scalloped paper, preserves painting; not recovered original alpha or production approval."
+}

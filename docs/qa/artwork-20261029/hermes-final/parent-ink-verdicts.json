@@ -1,0 +1,29 @@
+{
+  "reviewed_commit": "8a704cb23da97baf7197635df7fa12f06b864a24",
+  "scope": "Independent artwork QA; not runtime integration or earned-state acceptance",
+  "assets": [
+    {
+      "path": "assets/nino/travel-passport/stamps/rework/stamp-05-isole-geography-candidate.png",
+      "sha256": "1fd8360be1eb6cb8ee01f981651d03e2dbeec7cb5ca8af293752ff3c9357d8f4",
+      "verdict": "PASS",
+      "approval_scope": "Decorative chapter-completion stamp on warm paper, never assessed map geometry or a scale-accurate reference",
+      "geography": "Actual alpha composites clearly put the recognisable Sardinia silhouette northwest and Sicily southeast at64/96/160 CSSpx. Remaining vertical bounding-box overlap is acceptable illustrative compression here, not an inversion or near-level southern-end relationship of the rejected original. Canonical reference independently extracted from exact PR51 Git source with shared unmodified island projection.",
+      "measurement_attribution": "86-native-pixel blue-component vertical overlap is Codex's recorded measurement; independent decision is visual/source comparison, not an assertion of zero overlap or new GIS certification.",
+      "alpha": "No opaque rectangular matte/objectionable fringe observed in real cream/dark/checker composites.140 nonzero canvas-edge pixels have maximum alpha2/255, not substantial ink clipping.",
+      "sizes": "64/96 thumbnail requires live chapter caption and accessible label; >=160 CSSpx detailed view.1x/2x raster proofs inspected without native upscaling.",
+      "required_export": "Promote only this exact source to a native1254x1254 lossless-alpha WebP under a production exports path. Preserve both inks, alpha, geometry and aspect; verify decoded visible RGBA/composite parity. No regeneration/repainting/repositioning required. No such production export is claimed to exist yet at intake.",
+      "historical_original": "Old stamp05 master and old QA preview remain excluded; this approval does not rehabilitate those bytes."
+    },
+    {
+      "path": "assets/nino/travel-passport/arrivo/qa-candidates/arrivo-travel-ink-preview.png",
+      "sha256": "6a1ced67a6c25d8a995cb29fd12f0c4be2dfd12be0b49a2d06e4434f62540bef",
+      "verdict": "PASS",
+      "approval_scope": "Heritage travel-ink overlay on warm paper with live accessible ARRIVO/destination information",
+      "alpha": "Real alpha0..254;5 nonzero edge pixels all alpha1/255. No visible important-ink clipping, white rectangle or unwanted coloured fringe in true-alpha composites. Low red contrast on dark is a theme limitation, not a request to recolour the art.",
+      "sizes": "64/96 are thumbnails only with live caption; >=160 CSSpx detail,240 preferred for scooter/architectural fine detail. Blank lower cartouche is retained for dynamic interface content.",
+      "required_export": "Exact PNG is a valid source; for integration use source-faithful lossless-alpha WebP/PNG with verified render parity, no alpha threshold/hue remap/flattening. No regeneration needed.",
+      "event_rules": "Only genuine canonical Vespa arrivals from existing pizza/trip counters. Departure Rome is not an arrival. Destination, return count and any real recorded date remain dynamic. Never fabricate historical dates or award events. No event was created by this QA."
+    }
+  ],
+  "evidence": ["ink-sizes-cream-1x.png", "ink-sizes-cream-2x.png", "ink-sizes-dark-1x.png", "ink-sizes-dark-2x.png", "ink-sizes-checker-1x.png", "ink-sizes-checker-2x.png", "isole-native-cream.png", "arrivo-native-cream.png", "canonical-islands-verified.png", "canonical-islands-source.json"]
+}

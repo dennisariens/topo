@@ -1,0 +1,18 @@
+{
+  "source": "assets/nino/travel-passport/postcards/masters/postcard-04-venezia-front.png",
+  "source_sha256": "3228aeb85ca52d214378f287ba5fb63be42c40966074bd98a5d2548f858359e6",
+  "half_open_crop": [
+    58,
+    66,
+    1478,
+    958
+  ],
+  "result_size": [
+    1420,
+    892
+  ],
+  "decodedRGBExactlyEqualsSourceRegion": true,
+  "diagnosticPNGsha256": "35e7bd02929954043f6345620c6ea5cc49730d5a9e85e6a3b19ccf4c1d0cd8ef",
+  "edge_treatment": "straight rectangular trim, decorative scalloped perimeter removed; not exact scalloped alpha recovery",
+  "production_status": "CONDITIONAL on owner acceptance of edge treatment; diagnostic is not a shipped export"
+}

@@ -1,0 +1,458 @@
+{
+  "reviewed_commit": "8a704cb23da97baf7197635df7fa12f06b864a24",
+  "prior_reference_commit": "4eb9a5ae33550d789c56d5c01393145a148565aa",
+  "prior_allowlist_count": 22,
+  "prior_allowlist_entries": [
+    {
+      "category": "chapter-stamp",
+      "chapter": 1,
+      "path": "assets/nino/travel-passport/stamps/exports/stamp-01-firenze.webp",
+      "sha256": "de4d32cf277a806fad8fc343451f574ef7a9d0a482cc2b8bb7e5c24c3fc47125",
+      "source": "assets/nino/travel-passport/stamps/qa-candidates/stamp-01-firenze-ink-preview.webp",
+      "transform": "byte-identical copy of visually accepted QA candidate",
+      "dimensions": [
+        768,
+        768
+      ]
+    },
+    {
+      "category": "chapter-stamp",
+      "chapter": 2,
+      "path": "assets/nino/travel-passport/stamps/exports/stamp-02-roma.webp",
+      "sha256": "b34ff0780ebd442080f53d79c13d63bb89d45cb4ad961ec582a902758fec8628",
+      "source": "assets/nino/travel-passport/stamps/qa-candidates/stamp-02-roma-ink-preview.webp",
+      "transform": "byte-identical copy of visually accepted QA candidate",
+      "dimensions": [
+        768,
+        512
+      ]
+    },
+    {
+      "category": "chapter-stamp",
+      "chapter": 3,
+      "path": "assets/nino/travel-passport/stamps/exports/stamp-03-borghi.webp",
+      "sha256": "b00fb30fc5ebfedcdec8970fa78bbba48b6d1b52288d5aa440a85dd6b9dfcae5",
+      "source": "assets/nino/travel-passport/stamps/qa-candidates/stamp-03-borghi-ink-preview.webp",
+      "transform": "byte-identical copy of visually accepted QA candidate",
+      "dimensions": [
+        768,
+        768
+      ]
+    },
+    {
+      "category": "chapter-stamp",
+      "chapter": 4,
+      "path": "assets/nino/travel-passport/stamps/exports/stamp-04-liguria.webp",
+      "sha256": "b7cf9eeb47dd88028ce8da8789fd6f042c0998df182b43bd4996453148dc4fac",
+      "source": "assets/nino/travel-passport/stamps/qa-candidates/stamp-04-liguria-ink-preview.webp",
+      "transform": "byte-identical copy of visually accepted QA candidate",
+      "dimensions": [
+        768,
+        768
+      ]
+    },
+    {
+      "category": "chapter-stamp",
+      "chapter": 6,
+      "path": "assets/nino/travel-passport/stamps/exports/stamp-06-dolomiti.webp",
+      "sha256": "4d989d4b6147acd3b43ff11ee068123eea643ec5d2cc530d7fa3826dd4430c98",
+      "source": "assets/nino/travel-passport/stamps/qa-candidates/stamp-06-dolomiti-ink-preview.webp",
+      "transform": "byte-identical copy of visually accepted QA candidate",
+      "dimensions": [
+        768,
+        768
+      ]
+    },
+    {
+      "category": "chapter-stamp",
+      "chapter": 7,
+      "path": "assets/nino/travel-passport/stamps/exports/stamp-07-etna.webp",
+      "sha256": "1794a3ee574294278b5147aefd069d0904d6d356c3e350cac56f302c497c1a6f",
+      "source": "assets/nino/travel-passport/stamps/qa-candidates/stamp-07-etna-ink-preview.webp",
+      "transform": "byte-identical copy of visually accepted QA candidate",
+      "dimensions": [
+        768,
+        768
+      ]
+    },
+    {
+      "category": "chapter-stamp",
+      "chapter": 8,
+      "path": "assets/nino/travel-passport/stamps/exports/stamp-08-toscana.webp",
+      "sha256": "042bd1d301006582b6d91b98ae3132b81a8fb40cbc7a69aaac936fee62f82403",
+      "source": "assets/nino/travel-passport/stamps/qa-candidates/stamp-08-toscana-ink-preview.webp",
+      "transform": "byte-identical copy of visually accepted QA candidate",
+      "dimensions": [
+        768,
+        512
+      ]
+    },
+    {
+      "category": "chapter-stamp",
+      "chapter": 9,
+      "path": "assets/nino/travel-passport/stamps/exports/stamp-09-confine-italia.webp",
+      "sha256": "9032c4ff1ec9083b8ddf4a5dc4107e448d9578675fec4ab62221dc13310d38cf",
+      "source": "assets/nino/travel-passport/stamps/qa-candidates/stamp-09-confine-italia-ink-preview.webp",
+      "transform": "byte-identical copy of visually accepted QA candidate",
+      "dimensions": [
+        768,
+        512
+      ]
+    },
+    {
+      "category": "chapter-stamp",
+      "chapter": 10,
+      "path": "assets/nino/travel-passport/stamps/exports/stamp-10-mari.webp",
+      "sha256": "686b3f091f933dcec54a9710405af24236bf8921cdeca316cd7403c806a0e34f",
+      "source": "assets/nino/travel-passport/stamps/qa-candidates/stamp-10-mari-ink-preview.webp",
+      "transform": "byte-identical copy of visually accepted QA candidate",
+      "dimensions": [
+        768,
+        702
+      ]
+    },
+    {
+      "category": "chapter-stamp",
+      "chapter": 11,
+      "path": "assets/nino/travel-passport/stamps/exports/stamp-11-fiumi.webp",
+      "sha256": "063a643d0d16436e0be7fdacd39316d0bf1bd99427137bf284c027b0610b63b7",
+      "source": "assets/nino/travel-passport/stamps/qa-candidates/stamp-11-fiumi-ink-preview.webp",
+      "transform": "byte-identical copy of visually accepted QA candidate",
+      "dimensions": [
+        768,
+        768
+      ]
+    },
+    {
+      "category": "book-cover",
+      "path": "assets/nino/travel-passport/book/exports/passport-closed-cover.webp",
+      "sha256": "8901f57c74feb6d81fea23cb7b216ef403b982e8bdf66f1c89ea83eca15add44",
+      "source": "assets/nino/travel-passport/book/masters/passport-closed-cover.png",
+      "transform": "native-size lossless WebP; decoded RGBA exact",
+      "dimensions": [
+        1254,
+        1254
+      ]
+    },
+    {
+      "category": "chapter-icon",
+      "id": "01-steden-1-6",
+      "path": "assets/nino/chapter-icons/exports/chapter-01-steden-1-6.webp",
+      "sha256": "337e02ba2c1ecb909d9e1f9921070492e575c64e6f255733b5837c817fa42c11",
+      "source": "assets/nino/chapter-icons/masters/chapter-01-steden-1-6.png",
+      "dimensions": [
+        512,
+        512
+      ],
+      "scope": "labelled route UI; prefer48-96px; not geography or baked-text teaching source"
+    },
+    {
+      "category": "chapter-icon",
+      "id": "02-steden-7-12",
+      "path": "assets/nino/chapter-icons/exports/chapter-02-steden-7-12.webp",
+      "sha256": "f9c76c2c0926d31838abc82063a4e866546e0c5b49c4c75cf68ac3d1fb739589",
+      "source": "assets/nino/chapter-icons/masters/chapter-02-steden-7-12.png",
+      "dimensions": [
+        512,
+        512
+      ],
+      "scope": "labelled route UI; prefer48-96px; not geography or baked-text teaching source"
+    },
+    {
+      "category": "chapter-icon",
+      "id": "03-extra-steden-13-18",
+      "path": "assets/nino/chapter-icons/exports/chapter-03-extra-steden-13-18.webp",
+      "sha256": "1801146a77b15f4e7b57b3e8a543244b55e37f828b57f02bf83dd1636f034b63",
+      "source": "assets/nino/chapter-icons/masters/chapter-03-extra-steden-13-18.png",
+      "dimensions": [
+        512,
+        512
+      ],
+      "scope": "labelled route UI; prefer48-96px; not geography or baked-text teaching source"
+    },
+    {
+      "category": "chapter-icon",
+      "id": "04-extra-steden-19-23",
+      "path": "assets/nino/chapter-icons/exports/chapter-04-extra-steden-19-23.webp",
+      "sha256": "125a496d4c65e3008c5b25606048b087a8d1678dfe551f3d7b2d256a33de1526",
+      "source": "assets/nino/chapter-icons/masters/chapter-04-extra-steden-19-23.png",
+      "dimensions": [
+        512,
+        512
+      ],
+      "scope": "labelled route UI; prefer48-96px; not geography or baked-text teaching source"
+    },
+    {
+      "category": "chapter-icon",
+      "id": "05-eilanden",
+      "path": "assets/nino/chapter-icons/exports/chapter-05-eilanden.webp",
+      "sha256": "f1ca42b2a08c2586ef601a1d4e6174a1996bdeb95a64c0b8fadabafbcb2fe9f0",
+      "source": "assets/nino/chapter-icons/masters/chapter-05-eilanden.png",
+      "dimensions": [
+        512,
+        512
+      ],
+      "scope": "labelled route UI; prefer48-96px; not geography or baked-text teaching source"
+    },
+    {
+      "category": "chapter-icon",
+      "id": "06-bergen",
+      "path": "assets/nino/chapter-icons/exports/chapter-06-bergen.webp",
+      "sha256": "a6b8def0c138109385f96de64c02026d11dd19bea9ffa9ad6e31fca5fab0b7c3",
+      "source": "assets/nino/chapter-icons/masters/chapter-06-bergen.png",
+      "dimensions": [
+        512,
+        512
+      ],
+      "scope": "labelled route UI; prefer48-96px; not geography or baked-text teaching source"
+    },
+    {
+      "category": "chapter-icon",
+      "id": "07-vulkanen",
+      "path": "assets/nino/chapter-icons/exports/chapter-07-vulkanen.webp",
+      "sha256": "52efca255b21936d51c7c86868d438005393b2fac66a7ae8c2f05daaa593c232",
+      "source": "assets/nino/chapter-icons/masters/chapter-07-vulkanen.png",
+      "dimensions": [
+        512,
+        512
+      ],
+      "scope": "labelled route UI; prefer48-96px; not geography or baked-text teaching source"
+    },
+    {
+      "category": "chapter-icon",
+      "id": "08-streken",
+      "path": "assets/nino/chapter-icons/exports/chapter-08-streken.webp",
+      "sha256": "2885eeb2d2b4d2479895761457968768d7046e65958ed6df0fd1ee056ee88a14",
+      "source": "assets/nino/chapter-icons/masters/chapter-08-streken.png",
+      "dimensions": [
+        512,
+        512
+      ],
+      "scope": "labelled route UI; prefer48-96px; not geography or baked-text teaching source"
+    },
+    {
+      "category": "chapter-icon",
+      "id": "09-landen",
+      "path": "assets/nino/chapter-icons/exports/chapter-09-landen.webp",
+      "sha256": "c616f7524a546ed77e59347cbf8335be9013e687483fa689e00b1c26ab7a0f79",
+      "source": "assets/nino/chapter-icons/masters/chapter-09-landen.png",
+      "dimensions": [
+        512,
+        512
+      ],
+      "scope": "labelled route UI; prefer48-96px; not geography or baked-text teaching source"
+    },
+    {
+      "category": "chapter-icon",
+      "id": "10-zeeen",
+      "path": "assets/nino/chapter-icons/exports/chapter-10-zeeen.webp",
+      "sha256": "66139c1119925b9584aaa0de0be9472ff2c0272235ac019bf5316be7c2325f0f",
+      "source": "assets/nino/chapter-icons/masters/chapter-10-zeeen.png",
+      "dimensions": [
+        512,
+        512
+      ],
+      "scope": "labelled route UI; prefer48-96px; not geography or baked-text teaching source"
+    },
+    {
+      "category": "chapter-icon",
+      "id": "11-rivieren",
+      "path": "assets/nino/chapter-icons/exports/chapter-11-rivieren.webp",
+      "sha256": "c08a48c15a9e64abe11e6f839b160c0d24961a09ea2d627dd43277575b368ff2",
+      "source": "assets/nino/chapter-icons/masters/chapter-11-rivieren.png",
+      "dimensions": [
+        512,
+        512
+      ],
+      "scope": "labelled route UI; prefer48-96px; not geography or baked-text teaching source"
+    }
+  ],
+  "current_review_source_count": 11,
+  "current_review_source_decisions": [
+    {
+      "path": "assets/nino/travel-passport/arrivo/qa-candidates/arrivo-travel-ink-preview.png",
+      "source_commit": "8a704cb23da97baf7197635df7fa12f06b864a24",
+      "sha256": "6a1ced67a6c25d8a995cb29fd12f0c4be2dfd12be0b49a2d06e4434f62540bef",
+      "native_size": [
+        1536,
+        1536
+      ],
+      "role": "arrival-ink",
+      "artwork_verdict": "PASS",
+      "production_promotion": "PASS",
+      "conditions": [
+        "PASS warm-paper ink; >=160CSS detail/240preferred, live labels at thumbnails. Only actual canonical Vespa trips; city/date/count dynamic and truthful. No alpha normalization or fictitious visit."
+      ]
+    },
+    {
+      "path": "assets/nino/travel-passport/book/qa-candidates/passport-blank-folio-left-alpha-normalized.webp",
+      "source_commit": "8a704cb23da97baf7197635df7fa12f06b864a24",
+      "sha256": "d4862f0f5e34631c4e483761f933baa92bd85dee05b7ea0d581a7eb29be668a2",
+      "native_size": [
+        1086,
+        1448
+      ],
+      "role": "blank-folio",
+      "artwork_verdict": "PASS",
+      "production_promotion": "CONDITIONAL",
+      "conditions": [
+        "Use exact normalized lossless WebP, shared full-canvas contain scale, no flip/crop/stretch. <=543CSSpx/page atDPR2; owner must accept native-resolution exception to1536x2048 spec. Seam/edge differences acceptable at that scope."
+      ]
+    },
+    {
+      "path": "assets/nino/travel-passport/book/qa-candidates/passport-blank-folio-right-alpha-normalized.webp",
+      "source_commit": "8a704cb23da97baf7197635df7fa12f06b864a24",
+      "sha256": "3ce3133d483bec940e961a5a920a30bbb00e16da3ebb2445966fc83e3f210b16",
+      "native_size": [
+        1086,
+        1448
+      ],
+      "role": "blank-folio",
+      "artwork_verdict": "PASS",
+      "production_promotion": "CONDITIONAL",
+      "conditions": [
+        "Use exact normalized lossless WebP, shared full-canvas contain scale, no flip/crop/stretch. <=543CSSpx/page atDPR2; owner must accept native-resolution exception to1536x2048 spec. Seam/edge differences acceptable at that scope."
+      ]
+    },
+    {
+      "path": "assets/nino/travel-passport/gold/masters/gold-chapter-seal-v2.png",
+      "source_commit": "8a704cb23da97baf7197635df7fa12f06b864a24",
+      "sha256": "60c54e6efbb8239c327b4d7c76660dc816535a1f5431bf7c3cbe9f2927a1adf0",
+      "native_size": [
+        1254,
+        1254
+      ],
+      "role": "chapter-gold",
+      "artwork_verdict": "PASS",
+      "production_promotion": "CONDITIONAL",
+      "conditions": [
+        "Artwork PASS. Source1254-square; alpha1 canvas specks not substantial clipping. Verified source-preserving runtime derivative/live labels required. Chapter48minimum/64preferred/160detail; final240minimum main presentation/320preferred. Exact chapter goldAt>0 vs all11positive; no new reward states."
+      ]
+    },
+    {
+      "path": "assets/nino/travel-passport/gold/masters/gold-esploratore-doro.png",
+      "source_commit": "8a704cb23da97baf7197635df7fa12f06b864a24",
+      "sha256": "e94a76ab4c0220eead56e3f208dc539a71bae2f217ca7756939903bce024e3ca",
+      "native_size": [
+        1254,
+        1254
+      ],
+      "role": "final-gold",
+      "artwork_verdict": "PASS",
+      "production_promotion": "CONDITIONAL",
+      "conditions": [
+        "Artwork PASS. Source1254-square; alpha1 canvas specks not substantial clipping. Verified source-preserving runtime derivative/live labels required. Chapter48minimum/64preferred/160detail; final240minimum main presentation/320preferred. Exact chapter goldAt>0 vs all11positive; no new reward states."
+      ]
+    },
+    {
+      "path": "assets/nino/travel-passport/postcards/masters/postcard-01-sicilia-front.png",
+      "source_commit": "8a704cb23da97baf7197635df7fa12f06b864a24",
+      "sha256": "36f1656b44f00c2eec477517d32de0b2067e42507131a110d424cc22d4c3e328",
+      "native_size": [
+        1536,
+        1024
+      ],
+      "role": "postcard",
+      "artwork_verdict": "PASS",
+      "production_promotion": "PASS",
+      "conditions": [
+        "PASS original design/cream-holder scope. Contain with preserved ratio, >=240x160CSS preview with live caption, >=480wide detail; corners and source-alpha edges preserved. Actual holder/app QA separate."
+      ]
+    },
+    {
+      "path": "assets/nino/travel-passport/postcards/masters/postcard-02-sardegna-front.png",
+      "source_commit": "8a704cb23da97baf7197635df7fa12f06b864a24",
+      "sha256": "b06eb78fb5ad8e0116175317a98ab16ae88b251001adb40763c23d0c274ac4e3",
+      "native_size": [
+        1536,
+        1024
+      ],
+      "role": "postcard",
+      "artwork_verdict": "PASS",
+      "production_promotion": "PASS",
+      "conditions": [
+        "PASS original design/cream-holder scope. Contain with preserved ratio, >=240x160CSS preview with live caption, >=480wide detail; corners and source-alpha edges preserved. Actual holder/app QA separate."
+      ]
+    },
+    {
+      "path": "assets/nino/travel-passport/postcards/masters/postcard-03-napoli-vesuvio-front.png",
+      "source_commit": "8a704cb23da97baf7197635df7fa12f06b864a24",
+      "sha256": "822ada426bf732273738bcdb1f9bbc2466beb2bd2d5c8b6c29b5815d807910ab",
+      "native_size": [
+        1536,
+        1024
+      ],
+      "role": "postcard",
+      "artwork_verdict": "PASS",
+      "production_promotion": "PASS",
+      "conditions": [
+        "PASS original design/cream-holder scope. Contain with preserved ratio, >=240x160CSS preview with live caption, >=480wide detail; corners and source-alpha edges preserved. Actual holder/app QA separate."
+      ]
+    },
+    {
+      "path": "assets/nino/travel-passport/postcards/masters/postcard-04-venezia-front.png",
+      "source_commit": "8a704cb23da97baf7197635df7fa12f06b864a24",
+      "sha256": "3228aeb85ca52d214378f287ba5fb63be42c40966074bd98a5d2548f858359e6",
+      "native_size": [
+        1536,
+        1024
+      ],
+      "role": "postcard-venezia",
+      "artwork_verdict": "PASS",
+      "production_promotion": "CONDITIONAL",
+      "conditions": [
+        "Painting PASS, original full RGB exterior not approved as transparent overlay. Parent-verified rectangle(58,66,1478,958),1420x892 preserves source RGB but trims scalloped perimeter. Owner edge-treatment acceptance required; otherwise verified contour mask remains technical work. No regeneration needed."
+      ]
+    },
+    {
+      "path": "assets/nino/travel-passport/postcards/masters/postcard-05-universal-reverse.png",
+      "source_commit": "8a704cb23da97baf7197635df7fa12f06b864a24",
+      "sha256": "67450c16303c2da9d0c7d1e690554b163ce1c8c720a3244abee17c3440a3ed86",
+      "native_size": [
+        1536,
+        1024
+      ],
+      "role": "postcard",
+      "artwork_verdict": "PASS",
+      "production_promotion": "PASS",
+      "conditions": [
+        "PASS original design/cream-holder scope. Contain with preserved ratio, >=240x160CSS preview with live caption, >=480wide detail; corners and source-alpha edges preserved. Actual holder/app QA separate."
+      ]
+    },
+    {
+      "path": "assets/nino/travel-passport/stamps/rework/stamp-05-isole-geography-candidate.png",
+      "source_commit": "8a704cb23da97baf7197635df7fa12f06b864a24",
+      "sha256": "1fd8360be1eb6cb8ee01f981651d03e2dbeec7cb5ca8af293752ff3c9357d8f4",
+      "native_size": [
+        1254,
+        1254
+      ],
+      "role": "corrected-islands-stamp",
+      "artwork_verdict": "PASS",
+      "production_promotion": "PASS",
+      "conditions": [
+        "PASS for decorative Eilanden chapter stamp on warm paper. Sardinia clearly NW of Sicily; remaining vertical bbox overlap is acceptable stylized compression, not a scale-accurate map. Native1254 lossless-alpha export required; no redraw. Live thumbnail label, >=160CSS detailed view."
+      ]
+    }
+  ],
+  "production_exports_created": false,
+  "app_integration_or_release_approved": false,
+  "legacy_art_application_must_not_be_merged": true,
+  "genuine_core_art_redraw_blockers": [],
+  "open_owner_conditions": [
+    "Folio native1086x1448 resolution exception: <=543CSS per page atDPR2 rather than declared1536x2048-or-better source requirement.",
+    "Venezia straight-trim alternative acceptance; full decorative scalloped alpha not verified."
+  ],
+  "technical_closeout": [
+    "Copy exact normalized folio WebPs to runtime export paths with same hashes.",
+    "Derive source-faithful lossless ISOLE/ARRIVO/Gold/card exports and verify decoded RGBA or documented alpha0-RGB exception plus composite parity.",
+    "Apply only the owner-accepted Venezia edge option."
+  ],
+  "runtime_rules": [
+    "chapter stamp only exact canonical stage===3",
+    "one chapter Gold design reused only beside exact chapter goldAt>0",
+    "final Gold only all11 canonical goldAt>0, derived not shadow ledger",
+    "ARRIVO only actual existing Pizza-to-Vespa trips; no invented history/dates",
+    "postcards use existing/source-approved eligibility, no new currency"
+  ]
+}

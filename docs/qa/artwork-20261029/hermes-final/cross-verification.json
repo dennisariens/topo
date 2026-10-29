@@ -1,0 +1,25 @@
+{
+  "oldPR48AllowlistBlobsVerified": 22,
+  "currentStampCandidatesEqualAcceptedExports": 10,
+  "decodedRGBAHashDifferencePaths": [],
+  "folioAlphaOnlyChanges": [
+    {
+      "side": "left",
+      "RGBidentical": true,
+      "candidateCenterAlpha": 255,
+      "native": [
+        1086,
+        1448
+      ]
+    },
+    {
+      "side": "right",
+      "RGBidentical": true,
+      "candidateCenterAlpha": 255,
+      "native": [
+        1086,
+        1448
+      ]
+    }
+  ]
+}

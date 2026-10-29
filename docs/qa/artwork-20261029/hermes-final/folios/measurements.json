@@ -1,0 +1,89 @@
+{
+  "left": {
+    "size": [
+      1086,
+      1448
+    ],
+    "png": "assets/nino/travel-passport/book/masters/passport-blank-folio-left-master.png",
+    "webp": "assets/nino/travel-passport/book/qa-candidates/passport-blank-folio-left-alpha-normalized.webp",
+    "png_sha256": "b64802b9ea775b487660bebf57302848ee32b9f5f6934139e4ec7c02d488e4a4",
+    "webp_sha256": "d4862f0f5e34631c4e483761f933baa92bd85dee05b7ea0d581a7eb29be668a2",
+    "rgb_channels_different": 0,
+    "alpha_channels_different": 1547811,
+    "png_alpha_range": [
+      0,
+      255
+    ],
+    "webp_alpha_range": [
+      0,
+      255
+    ],
+    "bbox_ge128": [
+      12,
+      0,
+      1086,
+      1438
+    ],
+    "edge_nonzero_unique": 1417,
+    "edge_nonzero_each": {
+      "top": 6,
+      "bottom": 0,
+      "left": 0,
+      "right": 1411
+    },
+    "center_rgb_mean": [
+      236.2609,
+      214.3140625,
+      177.7647375
+    ]
+  },
+  "right": {
+    "size": [
+      1086,
+      1448
+    ],
+    "png": "assets/nino/travel-passport/book/masters/passport-blank-folio-right-master.png",
+    "webp": "assets/nino/travel-passport/book/qa-candidates/passport-blank-folio-right-alpha-normalized.webp",
+    "png_sha256": "70e22b4ae4a6a2e63c542906bcd78d3be196e031a2b94c97a172c0bf71d59a40",
+    "webp_sha256": "3ce3133d483bec940e961a5a920a30bbb00e16da3ebb2445966fc83e3f210b16",
+    "rgb_channels_different": 0,
+    "alpha_channels_different": 1572175,
+    "png_alpha_range": [
+      0,
+      252
+    ],
+    "webp_alpha_range": [
+      0,
+      255
+    ],
+    "bbox_ge128": [
+      7,
+      8,
+      1077,
+      1435
+    ],
+    "edge_nonzero_unique": 0,
+    "edge_nonzero_each": {
+      "top": 0,
+      "bottom": 0,
+      "left": 0,
+      "right": 0
+    },
+    "center_rgb_mean": [
+      238.99835,
+      216.7868625,
+      180.98154166666666
+    ]
+  },
+  "cover": {
+    "path": "assets/nino/travel-passport/book/masters/passport-closed-cover.png",
+    "sha256": "3d1c0e1978373d2a21b0072baa3f342375641341635fc7f9f06e5721ff58f1b9"
+  },
+  "commit": "8a704cb23da97baf7197635df7fa12f06b864a24",
+  "css_budget": {
+    "DPR2_max_width": 543.0,
+    "DPR1_max_width": 1086,
+    "top_offset_css_at543": 4.0,
+    "bottom_offset_css_at543": 1.5
+  }
+}

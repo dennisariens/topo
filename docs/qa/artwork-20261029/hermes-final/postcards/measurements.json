@@ -1,0 +1,207 @@
+[
+  {
+    "path": "/Users/dennisariens/projects/topo-passport-final-art-qa/assets/nino/travel-passport/postcards/masters/postcard-01-sicilia-front.png",
+    "sha256": "36f1656b44f00c2eec477517d32de0b2067e42507131a110d424cc22d4c3e328",
+    "mode": "RGBA",
+    "size": [
+      1536,
+      1024
+    ],
+    "alpha_bbox": [
+      0,
+      0,
+      1535,
+      1024
+    ],
+    "corner_rgba": [
+      [
+        163,
+        148,
+        115,
+        0
+      ],
+      [
+        167,
+        156,
+        129,
+        0
+      ],
+      [
+        143,
+        127,
+        109,
+        1
+      ],
+      [
+        145,
+        130,
+        112,
+        0
+      ]
+    ]
+  },
+  {
+    "path": "/Users/dennisariens/projects/topo-passport-final-art-qa/assets/nino/travel-passport/postcards/masters/postcard-02-sardegna-front.png",
+    "sha256": "b06eb78fb5ad8e0116175317a98ab16ae88b251001adb40763c23d0c274ac4e3",
+    "mode": "RGBA",
+    "size": [
+      1536,
+      1024
+    ],
+    "alpha_bbox": [
+      0,
+      0,
+      1536,
+      1024
+    ],
+    "corner_rgba": [
+      [
+        192,
+        166,
+        118,
+        0
+      ],
+      [
+        208,
+        182,
+        134,
+        0
+      ],
+      [
+        197,
+        168,
+        126,
+        1
+      ],
+      [
+        204,
+        171,
+        123,
+        0
+      ]
+    ]
+  },
+  {
+    "path": "/Users/dennisariens/projects/topo-passport-final-art-qa/assets/nino/travel-passport/postcards/masters/postcard-03-napoli-vesuvio-front.png",
+    "sha256": "822ada426bf732273738bcdb1f9bbc2466beb2bd2d5c8b6c29b5815d807910ab",
+    "mode": "RGBA",
+    "size": [
+      1536,
+      1024
+    ],
+    "alpha_bbox": [
+      0,
+      0,
+      1536,
+      1024
+    ],
+    "corner_rgba": [
+      [
+        196,
+        163,
+        113,
+        2
+      ],
+      [
+        204,
+        174,
+        124,
+        2
+      ],
+      [
+        198,
+        164,
+        119,
+        2
+      ],
+      [
+        199,
+        160,
+        107,
+        1
+      ]
+    ]
+  },
+  {
+    "path": "/Users/dennisariens/projects/topo-passport-final-art-qa/assets/nino/travel-passport/postcards/masters/postcard-04-venezia-front.png",
+    "sha256": "3228aeb85ca52d214378f287ba5fb63be42c40966074bd98a5d2548f858359e6",
+    "mode": "RGB",
+    "size": [
+      1536,
+      1024
+    ],
+    "alpha_bbox": [
+      0,
+      0,
+      1536,
+      1024
+    ],
+    "corner_rgba": [
+      [
+        206,
+        172,
+        117,
+        255
+      ],
+      [
+        211,
+        176,
+        121,
+        255
+      ],
+      [
+        206,
+        168,
+        119,
+        255
+      ],
+      [
+        209,
+        170,
+        115,
+        255
+      ]
+    ]
+  },
+  {
+    "path": "/Users/dennisariens/projects/topo-passport-final-art-qa/assets/nino/travel-passport/postcards/masters/postcard-05-universal-reverse.png",
+    "sha256": "67450c16303c2da9d0c7d1e690554b163ce1c8c720a3244abee17c3440a3ed86",
+    "mode": "RGBA",
+    "size": [
+      1536,
+      1024
+    ],
+    "alpha_bbox": [
+      0,
+      0,
+      1520,
+      1024
+    ],
+    "corner_rgba": [
+      [
+        189,
+        158,
+        108,
+        0
+      ],
+      [
+        191,
+        163,
+        116,
+        0
+      ],
+      [
+        191,
+        159,
+        118,
+        0
+      ],
+      [
+        190,
+        160,
+        115,
+        0
+      ]
+    ]
+  }
+]

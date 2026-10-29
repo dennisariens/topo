@@ -1,0 +1,15 @@
+{
+  "reviewedSHA": "8a704cb23da97baf7197635df7fa12f06b864a24",
+  "baseline": "fab2bbae943d507fcd103887012f790c144f43a5",
+  "decodedImages": 49,
+  "newAssets": 18,
+  "manifestMatches": 18,
+  "existingMastersUnchanged": 20,
+  "suppliedChecksumEntriesVerified": 25,
+  "onlyModifiedExistingFiles": [
+    "docs/PROJECT_STATE.md",
+    "docs/nino/ARTWORK_FINAL_SOURCE_AND_QA_HANDOFF_2026-10-27.md"
+  ],
+  "allRuntimeAndOtherExistingFilesUnchanged": true,
+  "scope": "integrity/decode only; visual approval separate; original ZIP bytes not independently provided/re-CRC-tested"
+}

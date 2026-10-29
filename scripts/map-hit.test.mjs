@@ -43,3 +43,29 @@ test('every pair and broad point cluster retains exact anchors, >=32px endpoint 
 test('picker rendering does not read expected answer and names containment only in Discover',()=>{
  const source=read('scripts/map-hit.js').toString();const renderer=source.slice(source.indexOf('function mapPickerPointPanels'),source.indexOf("$('#map').addEventListener('click'"));assert(!/state\.current|state\.route|activeTarget'\)/.test(renderer.replace("n.classList.remove('activeTarget')",'')));assert(renderer.includes("state.mode==='learn'&&hits.some"));assert(renderer.includes('cancel.autofocus=true'));assert(renderer.includes("pick.addEventListener('close'"));
 });
+
+test('Rome/Vatican symbolic view keeps the city and enclave nested, with leaders ending inside their subjects',()=>{
+ const a=boot();try{
+  for(const random of[0,.99999]){
+   a.ev("mode('point');state.current=byId['area-o'];state.questionMode='point';state.answered=false;mapChoiceRandom=()=>"+random);
+   a.ev("openMapPicker([byId['city-9'],byId['area-o']])");
+   const picker=a.d.querySelector('#mapPicker'),graphic=picker.querySelector('svg.pickerRomeVaticanDiagram');
+   assert(graphic,'special nested view rendered');
+   assert(!/Rome|Vaticaan/i.test(picker.textContent),'no named answer leakage in assessment');
+   const cityLine=graphic.querySelector('path[d="M 70 48 H 119 L 226 90"]');
+   const enclaveLine=graphic.querySelector('path[d="M 70 168 H 111 L 170 94"]');
+   assert(cityLine&&enclaveLine,'independent noncrossing leaders');
+   assert(Math.hypot(226-204,90-108)<75-7,'Rome line ends well inside the dashed circle');
+   assert(graphic.querySelector('path[d^="M 152 90"]'),'small enclave is drawn inside city');
+   const marks=[...graphic.querySelectorAll('text')].filter(t=>t.getAttribute('x')==='54');
+   assert.equal(marks.length,2);
+   assert.equal(marks[0].textContent,random===0?'2':'1','Rome number follows neutral shuffle');
+   assert.equal(marks[1].textContent,random===0?'1':'2','Vatican number follows neutral shuffle');
+   assert.deepEqual([...picker.querySelectorAll('[data-map-choice]')].map(b=>b.dataset.mapChoice),random===0?['area-o','city-9']:['city-9','area-o']);
+   picker.close();
+  }
+  a.ev("openMapPicker([byId['city-2'],byId['city-20']])");
+  assert(!a.d.querySelector('.pickerRomeVaticanDiagram'),'all other collisions keep true-anchor generic chooser');
+  assert.deepEqual(a.errors,[]);
+ }finally{a.close()}
+});

@@ -1367,6 +1367,32 @@ function mapPickerFrame(box,width){
  const svg=el('svg',{viewBox:`0 0 ${width} ${width}`,class:'pickerMap','aria-hidden':'true'},document.createDocumentFragment());svg.append(mapPickerContext(box,width));
  const north=el('text',{x:width-18,y:20,'text-anchor':'middle','font-size':13,'font-weight':800,fill:'#173c36',stroke:'#fffefa','stroke-width':4,'paint-order':'stroke'},svg);north.textContent='N ↑';return svg;
 }
+// Rome/Vatican is ONE geographic relationship, not two cities on opposite sides of a blank crop.
+// This symbolic enlargement never changes source anchors, resolver IDs or answer order.
+// The large circle is a city symbol, NOT a claimed administrative boundary.
+function mapPickerRomeVaticanFigure(numbers){
+ const figure=document.createElement('figure');figure.className='pickerRomeVatican';
+ const caption=document.createElement('figcaption');caption.textContent='Grote stad en kleine enclave · schematische vergroting';figure.append(caption);
+ const svg=el('svg',{viewBox:'0 0 340 212',class:'pickerRomeVaticanDiagram',role:'img','aria-label':'Grote stadscirkel met kleinere enclave daarbinnen. Twee afzonderlijke aanwijslijnen. Geen geografische schaal.'},figure);
+ el('rect',{x:0,y:0,width:340,height:212,rx:12,fill:'#f0d4a0'},svg);
+ el('circle',{cx:204,cy:108,r:82,fill:'#e9c58d',stroke:'#895c3a','stroke-width':3},svg);
+ el('circle',{cx:204,cy:108,r:75,fill:'none',stroke:'#ab8760','stroke-width':1.4,'stroke-dasharray':'4 6'},svg);
+ // A small enclave northwest of the city centre, fully inside the city symbol.
+ el('path',{d:'M 152 90 L 163 79 L 177 82 L 186 94 L 179 105 L 162 109 L 151 100 Z',fill:'#8d5248',stroke:'#622d2c','stroke-width':1.6},svg);
+ // Rome leader deliberately EXTENDS WELL INSIDE the city, past the dashed ornament.
+ el('path',{d:'M 70 48 H 119 L 226 90',fill:'none',stroke:'#254c46','stroke-width':2.5,'stroke-linecap':'round','stroke-linejoin':'round'},svg);
+ el('circle',{cx:226,cy:90,r:4.5,fill:'#254c46',stroke:'#fffefa','stroke-width':1.5},svg);
+ // Vatican leader terminates at the distinct small enclave, without crossing Rome's leader.
+ el('path',{d:'M 70 168 H 111 L 170 94',fill:'none',stroke:'#254c46','stroke-width':2.5,'stroke-linecap':'round','stroke-linejoin':'round'},svg);
+ el('circle',{cx:170,cy:94,r:4.5,fill:'#fffefa',stroke:'#254c46','stroke-width':1.5},svg);
+ for(const marker of[{id:'city-9',x:54,y:48},{id:'area-o',x:54,y:168}]){
+  el('circle',{cx:marker.x,cy:marker.y,r:16,fill:'#254c46',stroke:'#fffefa','stroke-width':2},svg);
+  const txt=el('text',{x:marker.x,y:marker.y+6,'text-anchor':'middle','font-size':17,'font-weight':800,fill:'#fffefa'},svg);
+  txt.textContent=String(numbers.get(marker.id));
+ }
+ const note=document.createElement('p');note.className='pickerNote';note.textContent='De grote cirkel staat voor de stad; het kleine vlakje ligt daarbinnen. Schematisch, niet op schaal en geen stadsgrens.';figure.append(note);
+ return figure;
+}
 function mapPickerBounds(items,padding=1.3){
  const boxes=items.map(i=>mapFeatureClass(i)==='point'?{x:i.px,y:i.py,width:0,height:0}:elements[i.id].getBBox());
  const left=Math.min(...boxes.map(b=>b.x)),right=Math.max(...boxes.map(b=>b.x+b.width)),top=Math.min(...boxes.map(b=>b.y)),bottom=Math.max(...boxes.map(b=>b.y+b.height));
@@ -1374,6 +1400,7 @@ function mapPickerBounds(items,padding=1.3){
 }
 const pickerStyle=document.createElement('style');pickerStyle.textContent=`
 .mapPicker{box-sizing:border-box;width:min(480px,94vw);max-height:92dvh;overflow:auto;padding:18px}.mapPicker[open]{display:flex;flex-direction:column}.mapPicker>h2,.mapPicker>p,.mapPicker .pickerActions,.mapPicker .pickerCancel{flex:none}.mapPicker .pickerMap{display:block;width:100%;aspect-ratio:1;max-height:none;height:auto;margin:8px 0;border:1px solid #9eafa2;border-radius:10px;background:#d7eaf0}.mapPicker .pickerContext{max-width:112px;margin:8px auto}.mapPicker .pickerViewport{flex:1;min-height:80px;max-height:52dvh;overflow:auto;scrollbar-gutter:stable;overscroll-behavior:contain}.mapPicker figure{margin:12px 0;padding:10px;border:1px solid #b4c5b7;border-radius:12px;background:#fffefa}.mapPicker figcaption{font-weight:750;font-size:14px}.mapPicker .pickerActions{display:grid;grid-template-columns:repeat(auto-fit,minmax(110px,1fr));gap:8px}.mapPicker .pickerActions button{min-height:48px;min-width:44px}.mapPicker .pickerCancel{width:100%;min-height:48px}.mapPicker p{line-height:1.45}.mapPicker .pickerNote{font-size:13px;color:#365b52}.mapPicker button:focus-visible{outline:3px solid #087887;outline-offset:3px}
+.mapPicker .pickerRomeVatican{margin:12px 0}.mapPicker .pickerRomeVaticanDiagram{display:block;width:100%;height:auto;max-height:none;aspect-ratio:340/212;border-radius:10px;background:#f0d4a0}.mapPicker .pickerRomeVatican .pickerNote{margin:8px 2px 3px}
 `;document.head.append(pickerStyle);
 let mapPickerReturnFocus=null,mapPickerMaskSerial=0;
 pick.addEventListener('close',()=>{const n=mapPickerReturnFocus;mapPickerReturnFocus=null;if(n?.isConnected&&n!==document.body)n.focus({preventScroll:true});else{$('#map').setAttribute('tabindex','-1');$('#map').focus({preventScroll:true})}});
@@ -1392,7 +1419,14 @@ function openMapPicker(hits){
   content.replaceChildren();const width=Math.max(160,content.clientWidth-22),numbers=new Map(candidates.map((i,n)=>[i.id,n+1]));
   const overview=mapPickerBounds(candidates);const orientation=mapPickerFrame(overview,width);orientation.classList.add('pickerContext');
   const contextCaption=document.createElement('p');contextCaption.className='pickerNote';contextCaption.textContent='Overzicht · noord is boven';content.append(contextCaption,orientation);
-  if(pointOnly){
+  if(pointOnly&&candidates.length===2&&candidates.some(i=>i.id==='city-9')&&candidates.some(i=>i.id==='area-o')){
+   // Keep randomized neutral digits mapped to actual IDs; never use the requested answer.
+   content.append(mapPickerRomeVaticanFigure(numbers));
+   for(const candidate of candidates){
+    const n=numbers.get(candidate.id),position=candidate.id==='city-9'?'grote stadscirkel':'kleine enclave binnen de stad';
+    choices.querySelector('[data-map-choice="'+candidate.id+'"]').setAttribute('aria-label',noun+' '+n+', '+position);
+   }
+  }else if(pointOnly){
    const panels=mapPickerPointPanels(candidates,width);
    panels.forEach((panel,index)=>{
     const key=String.fromCharCode(65+index),figure=document.createElement('figure'),caption=document.createElement('figcaption');caption.textContent='Uitsnede '+key+' · uitvergrote plaatsmarkeringen';figure.append(caption);

@@ -4,7 +4,7 @@ import {metrics,check} from './map-picker-visibility.mjs';
 const{chromium}=await import(process.env.PLAYWRIGHT_MODULE||'playwright');
 const root=new URL('../',import.meta.url),out=new URL(process.env.QA_OUTPUT||'../docs/visual/map-picker-58-revision/',import.meta.url);
 const rows=JSON.parse(readFileSync(new URL('docs/visual/map-picker-58/collision-results.json',root),'utf8')).records;
-const b=await chromium.launch(),records=process.env.QA_REVISION_RESUME?JSON.parse(readFileSync(new URL('physical-checkpoint.json',out),'utf8')).records:[],errors=[],external=[];
+const b=await chromium.launch(process.env.CHROME_PATH?{executablePath:process.env.CHROME_PATH}:{}),records=process.env.QA_REVISION_RESUME?JSON.parse(readFileSync(new URL('physical-checkpoint.json',out),'utf8')).records:[],errors=[],external=[];
 const settle=p=>p.evaluate(()=>new Promise(resolve=>requestAnimationFrame(()=>requestAnimationFrame(resolve))));
 try{for(const name of ['desktop','landscape','portrait','phone','small-phone']){
  if(process.env.QA_REVISION_RESUME&&records.filter(r=>r.name===name).length===rows.filter(r=>r.name===name).length)continue;

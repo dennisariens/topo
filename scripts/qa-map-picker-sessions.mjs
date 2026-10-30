@@ -1,7 +1,7 @@
 import assert from 'node:assert/strict';import{writeFileSync,mkdirSync}from'node:fs';
 const{chromium}=await import(process.env.PLAYWRIGHT_MODULE||'playwright');
 const root=new URL('../',import.meta.url),out=new URL(process.env.QA_OUTPUT||'../docs/visual/map-picker-58/',import.meta.url);mkdirSync(out,{recursive:true});
-const browser=await chromium.launch(),records=[],errors=[],external=[];
+const browser=await chromium.launch(process.env.CHROME_PATH?{executablePath:process.env.CHROME_PATH}:{}),records=[],errors=[],external=[];
 try{for(const mode of['point','exam','gold'])for(const random of[0,.99999])for(const correct of[true,false]){
  const c=await browser.newContext({viewport:{width:1180,height:820},offline:true}),p=await c.newPage();p.on('pageerror',e=>errors.push(e.message));p.on('request',r=>{if(!/^(file:|data:)/.test(r.url()))external.push(r.url())});p.on('dialog',d=>d.accept());await p.goto(new URL('output/html/TOPO-Italie-Computer.html',root).href);
  if(mode==='gold'){

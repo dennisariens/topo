@@ -6,7 +6,7 @@ const {chromium}=await import(process.env.PLAYWRIGHT_MODULE||'playwright');
 const url=process.env.TOPO_DOWNLOAD_URL;assert(url,'TOPO_DOWNLOAD_URL is required');
 const root=new URL('../',import.meta.url),source=readFileSync(new URL('output/html/TOPO-NINO-Computer-Release.html',root));
 const sha=b=>createHash('sha256').update(b).digest('hex'),dir=process.env.QA_DOWNLOAD_DIR||'/private/tmp/topo-nino-computer-download';mkdirSync(dir,{recursive:true});
-const browser=await chromium.launch();
+const browser=await chromium.launch(process.env.CHROME_PATH?{executablePath:process.env.CHROME_PATH}:{});
 try{
  const online=await browser.newContext({acceptDownloads:true}),p=await online.newPage();
  const waiting=p.waitForEvent('download');await p.goto(url).catch(e=>{if(!e.message.includes('Download is starting'))throw e});

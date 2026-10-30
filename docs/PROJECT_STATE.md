@@ -1,5 +1,9 @@
 # Project state
 
+## Owner-supplied refined SVG — current PR61 candidate
+
+The exact `TOPO-Rome-Vaticaanstad-approved-refined.svg` is now bundled by the shared selector for neutral Point/Test/Gold/multi-way choices and the existing Discover explanation. Rome’s tip is inside the dotted city rim; Vatican remains within the city. Other approved compositions retain their geography and share the approved pointer ink. Full implementation, exact-asset provenance, current evidence and independent/Safari gates: [APPROVED_ARTWORK_COMPUTER_RELEASE.md](APPROVED_ARTWORK_COMPUTER_RELEASE.md). This supersedes the prior candidate’s choice to retain the older schematic. Same PR #61; no merge or final release.
+
 ## 30 October — owner-approved integrated computer candidate
 
 `codex/topo-nino-computer-release-20261030` reconciles PR59/60 on the PR51 functional lineage, retaining approved PR59 source-relative Rome/Vatican presentation (owner accepts this alternative) and all its later context/viewport corrections. No engine, geometry, art, progress or reward rewrite. Build generates `TOPO-NINO-Computer-Release.html`; candidate verification, limitations and independent acceptance gate are in [COMPUTER_RELEASE_2026-10-30.md](COMPUTER_RELEASE_2026-10-30.md). Candidate prerelease only; Hermes exact-artifact acceptance and Safari remain open. No upstream merge, final publication, production/server mutation or replacement of the issue-50 download.

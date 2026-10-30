@@ -7,7 +7,7 @@ const root=new URL('../',import.meta.url),out=new URL(process.env.QA_OUTPUT||'..
 const cases=[['rome',['city-9','area-o']],['naples',['city-6','area-e']],['etna',['city-15','area-f']],['bologna',['city-2','city-20']],['milan',['city-5','city-13']],['san-marino',['city-3','area-n']],['sea',['water-C','water-D']]];
 const sizes=[['desktop',1500,1000],['landscape',1180,820],['portrait',820,1180],['phone',390,844],['small-phone',320,568]];
 const inventory=JSON.parse(readFileSync(new URL('docs/visual/map-picker-58/collision-results.json',root),'utf8')).records;
-const b=await chromium.launch(),records=[],layoutRecords=[],errors=[],external=[];
+const b=await chromium.launch(process.env.CHROME_PATH?{executablePath:process.env.CHROME_PATH}:{}),records=[],layoutRecords=[],errors=[],external=[];
 function watch(p){p.on('pageerror',e=>errors.push(e.message));p.on('request',r=>{if(!/^(file:|data:)/.test(r.url()))external.push(r.url())});p.on('dialog',d=>d.accept())}
 async function fixture(p,ids,random=0,requested=ids[0]){await p.evaluate(({ids,random,requested})=>{mode('point');state.current=byId[requested];state.questionMode='point';state.answered=false;clearActive();hideLens();$('#prompt').textContent='Waar ligt '+state.current.name+'?';message('Klik op de plek of de vorm op de kaart.');mapChoiceRandom=()=>random;openMapPicker(ids.map(id=>byId[id]));},{ids,random,requested})}
 import {metrics,check} from './map-picker-visibility.mjs';

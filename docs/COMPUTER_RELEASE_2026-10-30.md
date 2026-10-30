@@ -1,5 +1,7 @@
 # TOPO / NINO — integrated computer release candidate
 
+**Historical candidate:** the current owner-supplied refined-artwork integration supersedes this candidate’s renderer choice and checksum. See [APPROVED_ARTWORK_COMPUTER_RELEASE.md](APPROVED_ARTWORK_COMPUTER_RELEASE.md). Evidence below remains tied to the prior commit/artifact.
+
 Owner DESIGN GO: 30 October 2026. **Candidate for independent acceptance, not a final release.**
 
 ## Delivery and integration decision

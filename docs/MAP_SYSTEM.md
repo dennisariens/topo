@@ -81,3 +81,7 @@ Complete area/sea outlines retain the shared extent/scale and original land mask
 all comparison maps fit together. Original-pixel before/rejected/revised captures,
 finite-matrix limits and release gate:
 [visual/map-picker-58-revision/README.md](visual/map-picker-58-revision/README.md).
+
+## Owner-refined SVG in the shared selector — 30 October 2026
+
+The Rome/Vatican schematic now imports the exact owner SVG documented in `assets/map-selection/README.md`, including the interior Rome endpoint. It is symbolic, not a source-bearing map; the independent source-context locator remains north-oriented. Assessment digits shuffle with the unchanged neutral order, and Discover reuses the same importer with named teaching controls. Other geographic scenes keep their positions/outlines and adopt the same pointer ink. See `APPROVED_ARTWORK_COMPUTER_RELEASE.md` for source fidelity, browser evidence and pending independent/Safari gates.

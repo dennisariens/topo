@@ -3,6 +3,7 @@ import test from 'node:test';
 import assert from 'node:assert/strict';
 import{readFileSync}from'node:fs';
 import{execFileSync}from'node:child_process';
+import{createHash}from'node:crypto';
 import{JSDOM,VirtualConsole}from'jsdom';
 import{restoreLegacyMapHit}from'./map-hit-source.mjs';
 const root=new URL('../',import.meta.url),read=p=>readFileSync(new URL(p,root));
@@ -56,10 +57,27 @@ test('Vatican is illustrated inside Rome with two different noncrossing endpoint
   const x=n=>+n.getAttribute('cx'),y=n=>+n.getAttribute('cy');
   assert(Math.hypot(x(city)-x(vatican),y(city)-y(vatican))+5<+area.getAttribute('r'));
   assert(Math.hypot(x(city)-x(vatican),y(city)-y(vatican))>24);
-  for(const endpoint of[city,vatican]){const line=svg.querySelector('[data-picker-leader="'+endpoint.dataset.pickerEndpoint+'"]');assert.equal(+line.getAttribute('x1'),x(endpoint));assert.equal(+line.getAttribute('y1'),y(endpoint));}
+  for(const endpoint of[city,vatican]){const line=svg.querySelector('[data-picker-leader="'+endpoint.dataset.pickerEndpoint+'"]');const end=line.getAttribute('d').match(/L\s*([\d.]+)\s+([\d.]+)\s*$/);assert(end);assert.equal(+end[1],x(endpoint));assert.equal(+end[2],y(endpoint));}
   assert.equal(svg.querySelector('[data-picker-symbol="area-o"]').dataset.symbolKind,'microstate');assert(svg.querySelector('[data-picker-locator]'));
   assert(!/Rome|Vaticaan/.test(a.d.querySelector('#mapPicker').textContent));
  }}finally{a.close()}
+});
+test('approved owner SVG is embedded exactly; shuffled numbers cannot change its drawing',()=>{
+ const a=boot();try{
+  const source=read('assets/map-selection/TOPO-Rome-Vaticaanstad-approved-refined.svg').toString();assert.equal(createHash('sha256').update(source).digest('hex'),'c2d66a994879ecc125e2bb3d01accbc8a10730d990b85ee13eb5b050e797c70c','exact supplied owner asset');assert.equal(a.ev('mapPickerApprovedRomeSvg'),source);
+  const original=new a.w.DOMParser().parseFromString(source,'image/svg+xml').documentElement;
+  for(const random of[0,.99999]){
+   a.ev(`mode('point');mapChoiceRandom=()=>${random};openMapPicker([byId['city-9'],byId['area-o']])`);
+   const art=a.d.querySelector('#mapPicker [data-approved-artwork]');assert(art);
+   for(const attribute of['viewBox','font-family','font-weight'])assert.equal(art.getAttribute(attribute),original.getAttribute(attribute));
+   assert.deepEqual([...art.querySelectorAll('path,circle,rect')].map(n=>[n.tagName,...['d','cx','cy','r','fill','stroke','stroke-width','stroke-dasharray','opacity'].map(k=>n.getAttribute(k))]),[...original.querySelectorAll('path,circle,rect')].map(n=>[n.tagName,...['d','cx','cy','r','fill','stroke','stroke-width','stroke-dasharray','opacity'].map(k=>n.getAttribute(k))]));
+   assert.deepEqual([...art.querySelectorAll('text')].map(n=>n.textContent),random===0?['2','1']:['1','2']);
+   const city=art.querySelector('[data-picker-endpoint="city-9"]'),enclave=art.querySelector('[data-picker-endpoint="area-o"]');assert.equal(city.getAttribute('cx'),'221');assert.equal(city.getAttribute('cy'),'88');assert.equal(enclave.getAttribute('cx'),'170');assert.equal(enclave.getAttribute('cy'),'128');
+   assert(77-Math.hypot(221-204,88-110)>45,'Rome pointer ends visibly inside dotted rim');
+  }
+  assert(a.d.querySelector('#romeLens [data-approved-artwork]'),'Discover uses the same approved importer');
+  assert.match(a.d.querySelector('#romeLens [data-choice="city-9"]').textContent,/1.*Rome/);
+ }finally{a.close()}
 });
 test('regional choosers retain distinct volcano/city/state glyphs and source context',()=>{
  const a=boot();try{for(const ids of[['city-6','area-e'],['city-15','area-f'],['city-2','city-20'],['city-5','city-13'],['city-3','area-n']]){

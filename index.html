@@ -1327,6 +1327,42 @@ function chooseMapPlace(item){
 }
 // Layout uses only candidates and available space, never the requested answer.
 // One regional scene retains coasts, islands, lakes, rivers and mountain zones.
+// BEGIN APPROVED ROME SVG
+const mapPickerApprovedRomeSvg = "<svg font-family=\"-apple-system-body, ui-sans-serif, -apple-system, system-ui, &quot;Segoe UI&quot;, Helvetica, &quot;Apple Color Emoji&quot;, Arial, sans-serif, &quot;Segoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;\" font-weight=\"400\" data-d-component=\"svg\" fill=\"currentColor\" style=\"color:rgb(13, 13, 13)\" viewBox=\"0 0 340 212\" width=\"100%\" xmlns=\"http://www.w3.org/2000/svg\"><rect width=\"340\" height=\"212\" rx=\"12\" fill=\"#f0d4a0\"/><circle cx=\"204\" cy=\"110\" r=\"83\" fill=\"#e6c28b\" stroke=\"#895c3a\" stroke-width=\"3\"/><circle cx=\"204\" cy=\"110\" r=\"77\" fill=\"none\" stroke=\"#478079\" stroke-width=\"1.3\" stroke-dasharray=\"4 4\"/><path d=\"M152 100 L172 86 L194 99 L200 118 L181 135 L157 125Z\" fill=\"#bd8b51\" opacity=\".33\"/><path d=\"M158 126 L171 114 L183 125 L178 143 L161 140 Z\" fill=\"#8d5248\" stroke=\"#622d2c\" stroke-width=\"1.6\"/><circle cx=\"170\" cy=\"128\" r=\"4\" fill=\"#fff\"/><path d=\"M67 52 H114 L171 66 L221 88\" fill=\"none\" stroke=\"#254c46\" stroke-width=\"2.5\"/><circle cx=\"221\" cy=\"88\" r=\"4\" fill=\"#254c46\" stroke=\"white\" stroke-width=\"1.5\"/><circle cx=\"53\" cy=\"52\" r=\"16\" fill=\"#254c46\"/><text x=\"53\" y=\"58\" font-size=\"16\" font-weight=\"bold\" text-anchor=\"middle\" fill=\"white\">1</text><path d=\"M67 164 H112 L170 128\" fill=\"none\" stroke=\"#254c46\" stroke-width=\"2.5\"/><circle cx=\"53\" cy=\"164\" r=\"16\" fill=\"#254c46\"/><text x=\"53\" y=\"170\" font-size=\"16\" font-weight=\"bold\" text-anchor=\"middle\" fill=\"white\">2</text></svg>";
+// END APPROVED ROME SVG
+// The owner's schematic artwork is immutable; only shuffled digits and neutral
+// QA/accessibility metadata are applied to an imported copy, never source geometry.
+function mapPickerApprovedRomeArtwork(numbers){
+ const art=document.importNode(new DOMParser().parseFromString(mapPickerApprovedRomeSvg,'image/svg+xml').documentElement,true);
+ art.dataset.approvedArtwork='rome-vatican';art.setAttribute('aria-hidden','true');
+ const circles=art.querySelectorAll('circle'),paths=art.querySelectorAll('path'),labels=art.querySelectorAll('text');
+ circles[0].dataset.pickerCityArea='illustrative';circles[0].dataset.pickerSymbol='city-9';circles[0].dataset.symbolKind='city';
+ paths[1].dataset.pickerSymbol='area-o';paths[1].dataset.symbolKind='microstate';
+ for(const [id,endpoint,badge,leader,label]of[['city-9',circles[3],circles[4],paths[2],labels[0]],['area-o',circles[2],circles[5],paths[3],labels[1]]]){
+  // Indices are locked to the supplied SVG by the source-fidelity regression.
+  if(!numbers.has(id)){badge.remove();leader.remove();label.remove();continue}
+  endpoint.dataset.pickerEndpoint=id;badge.dataset.pickerBadge=id;leader.dataset.pickerLeader=id;label.textContent=String(numbers.get(id));
+ }
+ return art;
+}
+function mapPickerApprovedRomeScene(panel,size,numbers){
+ const svg=mapPickerFrame(panel,size);svg.dataset.pickerPanel='geography';svg.querySelector('svg').remove();svg.querySelector('[data-picker-north]').remove();svg.style.background='#f0d4a0';
+ const art=mapPickerApprovedRomeArtwork(numbers);art.setAttribute('x',0);art.setAttribute('y',(size-size*212/340)/2);art.setAttribute('width',size);art.setAttribute('height',size*212/340);art.style.cssText=`width:${size}px;height:${size*212/340}px;pointer-events:none`;
+ mapPickerFitApprovedNumbers(art,size);svg.append(art);
+ const locator=mapPickerFrame(mapPickerBounds(panel.items,2.6),size);locator.setAttribute('x',6);locator.setAttribute('y',6);locator.setAttribute('width',size*.26);locator.setAttribute('height',size*.26);locator.classList.add('pickerLocator');locator.dataset.pickerLocator='';svg.append(locator);
+ return svg;
+}
+function mapPickerFitApprovedNumbers(art,width){
+ // Preserve the source drawing and badge centres. Keep neutral digits readable
+ // in an existing compact inset without enlarging or moving geographic targets.
+ const scale=Math.max(1,Math.min(3.2,12*340/(16*width)));
+ for(const badge of art.querySelectorAll('[data-picker-badge]')){
+  const x=+badge.getAttribute('cx'),y=+badge.getAttribute('cy'),transform=`translate(${x} ${y}) scale(${scale}) translate(${-x} ${-y})`;
+  badge.setAttribute('transform',transform);
+  const label=[...art.querySelectorAll('text')].find(n=>+n.getAttribute('x')===x&&Math.abs(+n.getAttribute('y')-y)<10);if(label)label.setAttribute('transform',transform);
+ }
+ for(const leader of art.querySelectorAll('[data-picker-leader]'))leader.setAttribute('vector-effect','non-scaling-stroke');
+}
 function mapPickerPointPanels(items,width){
  const sorted=items.slice().sort((a,b)=>a.px-b.px||a.py-b.py||a.id.localeCompare(b.id));
  const rome=sorted.length===2&&sorted.some(i=>i.id==='city-9')&&sorted.some(i=>i.id==='area-o');
@@ -1371,7 +1407,7 @@ function mapPickerContext(box,width){
 }
 function mapPickerFrame(box,width){
  const svg=el('svg',{viewBox:`0 0 ${width} ${width}`,class:'pickerMap','aria-hidden':'true'},document.createDocumentFragment());svg.append(mapPickerContext(box,width));
- const north=el('text',{x:width-24,y:18,'text-anchor':'middle','font-size':13,'font-weight':800,fill:'#173c36',stroke:'#fffefa','stroke-width':4,'paint-order':'stroke','data-picker-north':''},svg);north.textContent='N ↑';return svg;
+ const north=el('text',{x:width-24,y:18,'text-anchor':'middle','font-size':13,'font-weight':800,fill:'#254c46',stroke:'#fffefa','stroke-width':4,'paint-order':'stroke','data-picker-north':''},svg);north.textContent='N ↑';return svg;
 }
 function mapPickerBounds(items,padding=1.3){
  const boxes=items.map(i=>mapFeatureClass(i)==='point'?{x:i.px,y:i.py,width:0,height:0}:elements[i.id].getBBox());
@@ -1380,7 +1416,7 @@ function mapPickerBounds(items,padding=1.3){
 }
 function mapPickerSymbol(svg,item,x,y,attributes={}){
  const kind=['area-e','area-f'].includes(item.id)?'volcano':['area-n','area-o'].includes(item.id)?'microstate':'city';
- const common={fill:kind==='volcano'?'#705342':kind==='microstate'?'#c8a650':'#fffefa',stroke:'#173c36','stroke-width':1.8,'data-picker-symbol':item.id,'data-symbol-kind':kind,...attributes};
+ const common={fill:kind==='volcano'?'#705342':kind==='microstate'?'#c8a650':'#fffefa',stroke:'#254c46','stroke-width':1.8,'data-picker-symbol':item.id,'data-symbol-kind':kind,...attributes};
  if(kind==='volcano'){
   // Summit is at the original GVP anchor. The glyph extends down from it.
   el('path',{d:`M ${x} ${y} l -8 12 h 16 Z`,...common},svg);
@@ -1401,7 +1437,7 @@ function mapPickerRomeInset(svg,panel,size,numbers){
  detail.setAttribute('x',x);detail.setAttribute('y',y);detail.setAttribute('width',detailSize);detail.setAttribute('height',detailSize);
  el('rect',{x:x-2,y:y-2,width:detailSize+4,height:detailSize+4,rx:6,fill:'#f6f2e5',stroke:'#6f7767','stroke-width':1.5,'data-picker-inset-frame':''},svg);
  // A regional locator remains exactly at the original source positions.
- const city=byId['city-9'];el('circle',{cx:(city.px-panel.x)*size/panel.side,cy:(city.py-panel.y)*size/panel.side,r:7,fill:'none',stroke:'#173c36','stroke-width':1.4,'stroke-dasharray':'2 2'},svg);
+ const city=byId['city-9'];el('circle',{cx:(city.px-panel.x)*size/panel.side,cy:(city.py-panel.y)*size/panel.side,r:7,fill:'none',stroke:'#254c46','stroke-width':1.4,'stroke-dasharray':'2 2'},svg);
  svg.append(detail);
  // A reference city is not an extra answer when only the microstate is a candidate.
  detail.querySelectorAll('[data-picker-badge],[data-picker-leader],[data-picker-endpoint]').forEach(n=>{const id=n.dataset.pickerBadge||n.dataset.pickerLeader||n.dataset.pickerEndpoint;if(!numbers.has(id))n.remove()});
@@ -1409,14 +1445,7 @@ function mapPickerRomeInset(svg,panel,size,numbers){
 }
 function mapPickerPointScene(panel,size,numbers){
  const svg=mapPickerFrame(panel,size);svg.dataset.pickerPanel='geography';
- if(panel.rome){
-  // The familiar containment illustration is a symbol, NOT a municipal survey.
-  // Both centres retain the exact relative bearing/distance of the source anchors.
-  svg.querySelector('svg').remove();svg.style.background='#f6f2e5';
-  const city=panel.marks.find(m=>m.id==='city-9'),vatican=panel.marks.find(m=>m.id==='area-o');
-  const radius=Math.hypot(city.x-vatican.x,city.y-vatican.y)*1.65;
-  el('circle',{cx:city.x,cy:city.y,r:radius,fill:'#e6dfc9',stroke:'#6f7767','stroke-width':2,'stroke-dasharray':'5 3','data-picker-city-area':'illustrative'},svg);
- }
+ if(panel.rome)return mapPickerApprovedRomeScene(panel,size,numbers);
  // Show neutral neighbouring city/state/volcano symbols too, as in the original map.
  // Candidate callouts are the ONLY numbered symbols; no active-answer paint is cloned.
  if(!panel.rome)for(const item of ITEMS.filter(i=>mapFeatureClass(i)==='point'&&!panel.items.includes(i))){
@@ -1429,26 +1458,27 @@ function mapPickerPointScene(panel,size,numbers){
  visibleMarks.forEach(m=>{
   if(!numbers.has(m.id))return;
   el('line',{x1:m.x,y1:m.y,x2:m.lx,y2:m.ly,stroke:'#fffefa','stroke-width':5},svg);
-  el('line',{x1:m.x,y1:m.y,x2:m.lx,y2:m.ly,stroke:'#173c36','stroke-width':1.8,'data-picker-leader':m.id},svg);
+  el('line',{x1:m.x,y1:m.y,x2:m.lx,y2:m.ly,stroke:'#254c46','stroke-width':1.8,'data-picker-leader':m.id},svg);
  });
  visibleMarks.forEach(m=>{
   const item=panel.items.find(i=>i.id===m.id);mapPickerSymbol(svg,item,m.x,m.y);
   if(!numbers.has(m.id))return;
-  el('circle',{cx:m.x,cy:m.y,r:2,fill:'#173c36',stroke:'#fffefa','stroke-width':.7,'data-picker-endpoint':m.id},svg);
-  el('circle',{cx:m.lx,cy:m.ly,r:16,fill:'#173c36',stroke:'#fffefa','stroke-width':2,'data-picker-badge':m.id},svg);
+  el('circle',{cx:m.x,cy:m.y,r:2,fill:'#254c46',stroke:'#fffefa','stroke-width':.7,'data-picker-endpoint':m.id},svg);
+  el('circle',{cx:m.lx,cy:m.ly,r:16,fill:'#254c46',stroke:'#fffefa','stroke-width':2,'data-picker-badge':m.id},svg);
   const label=el('text',{x:m.lx,y:m.ly+6,'text-anchor':'middle','font-size':18,'font-weight':800,fill:'#fffefa'},svg);label.textContent=numbers.get(m.id);
  });
- if(panel.rome){
-  // Persistent regional locator supplies the coastline without implying local streets.
-  const locator=mapPickerFrame(mapPickerBounds(panel.items,2.6),size);
-  locator.setAttribute('x',6);locator.setAttribute('y',6);locator.setAttribute('width',size*.26);locator.setAttribute('height',size*.26);locator.classList.add('pickerLocator');locator.dataset.pickerLocator='';
-  const box=mapPickerBounds(panel.items,2.6),city=panel.items.find(i=>i.id==='city-9');
-  el('circle',{cx:(city.px-box.x)*size/box.side,cy:(city.py-box.y)*size/box.side,r:7,fill:'#173c36',stroke:'#fffefa','stroke-width':2},locator);svg.append(locator);
- }
  if(needsInset)mapPickerRomeInset(svg,panel,size,numbers);
  return svg;
 }
+// Discover's explanatory lens uses the same approved artwork importer. It remains
+// unavailable in assessments; named buttons here are teaching, not answer hints.
+const approvedLearnSketch=lens.querySelector('.lensSketch');
+approvedLearnSketch.replaceChildren(mapPickerApprovedRomeArtwork(new Map([['city-9',1],['area-o',2]])));
+approvedLearnSketch.classList.add('approvedRomeSketch');
+if(window.ResizeObserver)new ResizeObserver(entries=>{for(const entry of entries)if(entry.contentRect.width>0)mapPickerFitApprovedNumbers(entry.target,entry.contentRect.width)}).observe(approvedLearnSketch.querySelector('svg'));
+for(const button of lens.querySelectorAll('[data-choice]'))button.textContent=(button.dataset.choice==='city-9'?'1 · ':'2 · ')+button.textContent;
 const pickerStyle=document.createElement('style');pickerStyle.textContent=`
+.lensSketch.approvedRomeSketch{height:auto;background:#f0d4a0}.lensSketch.approvedRomeSketch::before,.lensSketch.approvedRomeSketch::after{content:none}.approvedRomeSketch>svg{display:block;width:100%;height:auto}
 .mapPicker{box-sizing:border-box;width:min(620px,96vw);max-height:96dvh;padding:12px;overflow:hidden}.mapPicker[open]{display:flex;flex-direction:column;gap:8px}.mapPicker>h2{font-size:20px;line-height:1.15;margin:0}.mapPicker>p{font-size:14px;line-height:1.25;margin:0}.mapPicker .pickerViewport{flex:none;min-height:0;overflow:hidden;display:grid;gap:6px;justify-items:center}.mapPicker .pickerMap{display:block;flex:none;max-height:none;margin:0;border:1px solid #9eafa2;border-radius:8px;background:#d7eaf0;box-sizing:border-box}.mapPicker .pickerMap .pickerLocator{border-radius:0}.mapPicker figure{margin:0;min-width:0;display:flex;flex-direction:column;align-items:center;gap:3px}.mapPicker figcaption{font-weight:750;font-size:13px}.mapPicker .pickerActions{display:grid;grid-template-columns:repeat(auto-fit,minmax(72px,1fr));gap:6px;flex:none;margin:0}.mapPicker .pickerActions button,.mapPicker .pickerCancel{min-height:44px;min-width:44px;padding:6px;font-size:15px;margin:0}.mapPicker .pickerCancel{width:100%;flex:none}.mapPicker .pickerNote{font-size:12px;line-height:1.25;margin:0;color:#365b52;flex:none}.mapPicker button:focus-visible{outline:3px solid #087887;outline-offset:2px}
 `;document.head.append(pickerStyle);
 let mapPickerReturnFocus=null,mapPickerMaskSerial=0;
@@ -1461,7 +1491,7 @@ function openMapPicker(hits){
  pick.replaceChildren();const title=document.createElement('h2');title.id='mapPickerTitle';title.textContent=pointOnly?'Welke plek bedoel je?':noun==='Rivier'?'Welke rivier bedoel je?':noun==='Gebied'?'Welk gebied bedoel je?':'Welke plek bedoel je?';pick.append(title);
  const hint=document.createElement('p');hint.textContent=pointOnly?'Volg de lijn van het nummer naar de plek.':'Vergelijk de omlijnde vormen op dezelfde schaal.';pick.append(hint);
  const content=document.createElement('div');content.className='pickerViewport';pick.append(content);
- const note=document.createElement('p');note.className='pickerNote';note.textContent=pointOnly?'○ stad · ▲ vulkaan · ◆ kleine staat. Symbolen, geen grenzen.':'De volledige vormen, op dezelfde schaal. Noord is boven.';
+ const note=document.createElement('p');note.className='pickerNote';note.textContent=pointOnly?'○ stad · ▲ vulkaan · ◆ kleine staat. Symbolen, geen grenzen; vergrotingen zijn schematisch.':'De volledige vormen, op dezelfde schaal. Noord is boven.';
  if(state.mode==='learn'&&hits.some(i=>i.id==='city-9')&&hits.some(i=>i.id==='area-o'))note.textContent+=' Vaticaanstad ligt binnen Rome, ten westnoordwesten van de aangegeven stadsplek.';
  pick.append(note);
  const choices=document.createElement('div');choices.className='pickerActions';
@@ -1478,7 +1508,11 @@ function openMapPicker(hits){
    content.style.gridTemplateColumns='1fr';
    const size=Math.floor(Math.min(width,available)),panel=mapPickerPointPanels(candidates,size)[0];
    const svg=mapPickerPointScene(panel,size,numbers);svg.style.width=svg.style.height=size+'px';content.append(svg);
-   panel.marks.forEach(m=>choices.querySelector('[data-map-choice="'+m.id+'"]').setAttribute('aria-label',`${noun} ${numbers.get(m.id)}, ${m.x<size/2?'links':'rechts'}, ${m.y<size/2?'boven':'onder'}`));
+   panel.marks.forEach(m=>{
+    const symbolic=(panel.rome||panel.items.some(i=>i.id==='area-o'))&&['city-9','area-o'].includes(m.id);
+    const location=symbolic?(m.id==='city-9'?'grote stadscirkel':'klein vlak binnen de stadscirkel'):`${m.x<size/2?'links':'rechts'}, ${m.y<size/2?'boven':'onder'}`;
+    choices.querySelector('[data-map-choice="'+m.id+'"]').setAttribute('aria-label',`${noun} ${numbers.get(m.id)}, ${location}`);
+   });
   }else{
    const columns=candidates.length<=3?candidates.length:Math.ceil(Math.sqrt(candidates.length)),rows=Math.ceil(candidates.length/columns);
    content.style.gridTemplateColumns=`repeat(${columns},1fr)`;
@@ -1493,7 +1527,7 @@ function openMapPicker(hits){
      el('rect',{x:overview.x,y:overview.y,width:overview.side,height:overview.side,fill:'white'},mask);
      for(const land of $('#landLayer').querySelectorAll('path'))el('path',{d:land.getAttribute('d'),fill:'black',stroke:'none'},mask);path.setAttribute('mask','url(#'+id+')');
     }
-    const outline=el('path',{d:item.shape,fill:'none',stroke:'#173c36','stroke-width':3,'vector-effect':'non-scaling-stroke','data-picker-outline':item.id},context);outline.style.strokeWidth='3px';if(path.hasAttribute('mask'))outline.setAttribute('mask',path.getAttribute('mask'));
+    const outline=el('path',{d:item.shape,fill:'none',stroke:'#254c46','stroke-width':3,'vector-effect':'non-scaling-stroke','data-picker-outline':item.id},context);outline.style.strokeWidth='3px';if(path.hasAttribute('mask'))outline.setAttribute('mask',path.getAttribute('mask'));
     if(mapFeatureClass(item)==='point')mapPickerSymbol(svg,item,(item.px-overview.x)*size/overview.side,(item.py-overview.y)*size/overview.side);
     figure.append(svg);content.append(figure);choices.children[n].setAttribute('aria-label',noun+' '+(n+1)+', omlijnde vorm in kaart '+(n+1));
    });

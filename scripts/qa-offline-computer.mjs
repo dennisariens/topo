@@ -3,7 +3,7 @@ import {mkdirSync,writeFileSync,readFileSync} from 'node:fs';
 import {createHash} from 'node:crypto';
 const {chromium}=await import(process.env.PLAYWRIGHT_MODULE||'playwright');
 const file=new URL(process.env.TOPO_OFFLINE_FILE||'../output/html/TOPO-Italie-Computer.html',import.meta.url);
-const out=new URL('../docs/visual/offline-computer/',import.meta.url);mkdirSync(out,{recursive:true});
+const out=new URL(process.env.QA_OUTPUT||'../docs/visual/offline-computer/',import.meta.url);mkdirSync(out,{recursive:true});
 const browser=await chromium.launch();const context=await browser.newContext({offline:true,viewport:{width:1500,height:1000}});
 const page=await context.newPage(),errors=[],external=[],consoleErrors=[];
 page.on('pageerror',e=>errors.push(e.message));page.on('console',m=>{if(m.type()==='error')consoleErrors.push(m.text())});page.on('request',r=>{if(!/^(file:|data:)/.test(r.url()))external.push(r.url())});page.on('dialog',d=>d.accept());

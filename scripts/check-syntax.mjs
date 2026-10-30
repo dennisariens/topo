@@ -55,3 +55,5 @@ for(const f of ['focus-camera.js','focus-mode.js','focus-camera.css','focus-mode
 const mapHit=readFileSync(new URL('./map-hit.js',import.meta.url),'utf8');
 if(!html.includes('// BEGIN MAP HIT\n'+mapHit+'// END MAP HIT'))throw Error('Stale embedded map hit resolver; rebuild');
 console.log('Semantic map hit resolver source/standalone parity: OK');
+if(readFileSync(new URL('../output/html/TOPO-NINO-Computer-Release.html',import.meta.url),'utf8')!==html)throw Error('Computer release must be byte-identical to canonical app');
+console.log('TOPO-NINO Computer release filename and canonical bytes: OK');

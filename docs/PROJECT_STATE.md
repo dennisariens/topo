@@ -1,5 +1,9 @@
 # Project state
 
+## 30 October — owner-approved integrated computer candidate
+
+`codex/topo-nino-computer-release-20261030` reconciles PR59/60 on the PR51 functional lineage, retaining approved PR59 source-relative Rome/Vatican presentation (owner accepts this alternative) and all its later context/viewport corrections. No engine, geometry, art, progress or reward rewrite. Build generates `TOPO-NINO-Computer-Release.html`; candidate verification, limitations and independent acceptance gate are in [COMPUTER_RELEASE_2026-10-30.md](COMPUTER_RELEASE_2026-10-30.md). Candidate prerelease only; Hermes exact-artifact acceptance and Safari remain open. No upstream merge, final publication, production/server mutation or replacement of the issue-50 download.
+
 ## P0 issue #58 — neutral chooser legibility (draft)
 
 Dedicated branch from reviewed PR51 `bd1e57bc48e55a065cbbccb68acea196a64a187c`. Replace visually coincident callouts with exact-anchor geographic crops, constant-size markers, separate badges and noncrossing leaders; non-point options use same-scale outline maps. The resolver, geometry, grading/rewards, saves and artwork remain unchanged. Full tests/lint/build, Focus, Point/Test/Gold and rendered collision QA pass within the recorded matrix. Existing small-phone Focus occlusion is explicitly recorded rather than hidden; physical Safari and owner GO/ADJUST/Hermes review remain pending. [Implementation/evidence/release gate](MAP_PICKER_58.md). Existing child download remains unchanged; no merge/deploy/server mutation.
@@ -94,3 +98,24 @@ All 14 test programs, lint/build, source-preservation audit and five-viewport of
 ## P0 #36 / #34 — semantic map tap hotfix
 
 Isolated patch on PR #30 `f67027d`, with all Discovery/terrain and schoolblad module bytes preserved. The single tap resolver uses existing geometry plus task feature class: 27 point halos, real region/country/island/sea/mountain fills and river corridors. Point capture and Po's invisible stroke no longer steal valid Tuscany/Po Plain selections. Genuine ambiguity uses one neutral stable-ID picker with answer-independent shuffled order and shape wording for areas. Actual wrong→Next→repair→completed region stages are tested; no engine/reward/save/geometry change. Four viewports × two themes × fit/zoom, all anchors/polygons, Gold/replay and both offline downloads have automated evidence. PR #29 remains separate/untouched; #37 mountain geometry and Hermes Focus Mode are outside this interaction patch. See [MAP_SELECTION_HOTFIX.md](MAP_SELECTION_HOTFIX.md) for measured root causes, evidence, reproduction and remaining physical-iPad steps. Draft review only; no merge/deployment.
+
+
+## PR #59 owner revision — 29 October 2026
+
+Replaces rejected `d55e9de` on the same `codex/issue-58-legible-map-picker`
+branch. One regional source map restores coastlines, islands, six lakes, rivers,
+neighbouring places and distinct city/volcano/microstate glyphs. Rome has an
+explicitly illustrative city circle containing a tiny Vatican symbol at its
+source-relative WNW position, with two separately capped neutral callouts;
+broader sets retain this in a local inset. These are symbols, never surveyed
+municipal/state boundaries. All candidate endpoints, badges, orientation and
+>=44px controls fit on first opening. Area/sea outlines retain a common complete
+extent/scale, now fitted together rather than scrolled. No answer-dependent
+camera/paint/name. PR51 resolver/shuffle/grading, all 45 item records, 27 anchors,
+six lakes, 11 chapters, engines/rewards/saves, Focus, art and print remain exact.
+All generated standalone candidate HTMLs are byte-identical.
+
+Full lint/test/build and real offline browser evidence:
+[visual/map-picker-58-revision/README.md](visual/map-picker-58-revision/README.md).
+This is a new owner preview, not owner/Hermes acceptance or physical Safari/child
+proof. Existing learner release, iPad server, main and deployments are unchanged.

@@ -34,38 +34,40 @@ test('real Rome/Vatican keyboard chooser grades stable IDs with both first/secon
   assert.deepEqual([...positions].sort(),[0,1]);assert.deepEqual(a.errors,[]);
  }finally{a.close()}
 });
-test('every pair and broad point cluster retains exact anchors, >=32px endpoint spacing and noncrossing connectors',()=>{
+test('every point pair keeps its exact source anchors and answer-independent regional framing',()=>{
  const a=boot();try{
-  const report=a.ev(`(()=>{const points=ITEMS.filter(i=>mapFeatureClass(i)==='point'),failures=[];const sets=[];for(let a=0;a<points.length;a++)for(let b=a+1;b<points.length;b++)sets.push([points[a],points[b]]);sets.push(points);for(const width of[160,220,280,420])for(const set of sets){const panels=mapPickerPointPanels(set,width);if(panels.flatMap(p=>p.items).length!==set.length)failures.push('missing item');for(const p of panels){for(const m of p.marks){const i=byId[m.id];if(Math.abs(p.x+m.x*p.side/width-i.px)>1e-8||Math.abs(p.y+m.y*p.side/width-i.py)>1e-8)failures.push('moved anchor');}for(let a=0;a<p.marks.length;a++)for(let b=a+1;b<p.marks.length;b++){const u=p.marks[a],v=p.marks[b];if(Math.hypot(u.x-v.x,u.y-v.y)<32)failures.push('indistinguishable endpoints');}}}return failures})()`);
+  const report=a.ev(`(()=>{const points=ITEMS.filter(i=>mapFeatureClass(i)==='point'),failures=[];const sets=[];for(let a=0;a<points.length;a++)for(let b=a+1;b<points.length;b++)sets.push([points[a],points[b]]);sets.push(points);for(const width of[160,220,280,420])for(const set of sets){const panels=mapPickerPointPanels(set,width);if(panels.flatMap(p=>p.items).length!==set.length)failures.push('missing item');if(JSON.stringify(panels)!==JSON.stringify(mapPickerPointPanels(set.slice().reverse(),width)))failures.push('answer-order framing');for(const p of panels)for(const m of p.marks){const i=byId[m.id];if(Math.abs(p.x+m.x*p.side/width-i.px)>1e-8||Math.abs(p.y+m.y*p.side/width-i.py)>1e-8)failures.push('moved anchor');}}return failures})()`);
   assert.deepEqual(JSON.parse(JSON.stringify(report)),[]);
  }finally{a.close()}
 });
+test('all recorded point collision sets keep noncrossing leaders at compact and wide sizes',()=>{
+ const a=boot();try{
+  const rows=JSON.parse(read('docs/visual/map-picker-58/collision-results.json')).records.filter(r=>r.kind==='point');
+  const sets=[...new Map(rows.map(r=>[r.ids.join(','),r.ids])).values()];a.w.__sets=sets;
+  const failures=a.ev(`(()=>{const out=[],turn=(a,b,c)=>(b.x-a.x)*(c.y-a.y)-(b.y-a.y)*(c.x-a.x);for(const ids of window.__sets)for(const width of[136,180,220,280,420,594]){const p=mapPickerPointPanels(ids.map(id=>byId[id]),width)[0];for(let a=0;a<p.marks.length;a++)for(let b=a+1;b<p.marks.length;b++){const x=p.marks[a],y=p.marks[b],u={x:x.lx,y:x.ly},v={x:y.lx,y:y.ly};if(turn(x,u,y)*turn(x,u,v)<0&&turn(y,v,x)*turn(y,v,u)<0)out.push({ids,width});}}return out})()`);
+  assert.deepEqual(JSON.parse(JSON.stringify(failures)),[]);
+ }finally{a.close()}
+});
+test('Vatican is illustrated inside Rome with two different noncrossing endpoint targets',()=>{
+ const a=boot();try{Object.defineProperty(a.d.querySelector('#mapPicker'),'clientWidth',{value:304});for(const random of[0,.99999]){
+  a.ev(`mode('point');mapChoiceRandom=()=>${random};openMapPicker([byId['city-9'],byId['area-o']])`);
+  const svg=a.d.querySelector('[data-picker-panel]'),area=svg.querySelector('[data-picker-city-area]');assert(area);
+  const city=svg.querySelector('[data-picker-endpoint="city-9"]'),vatican=svg.querySelector('[data-picker-endpoint="area-o"]');
+  const x=n=>+n.getAttribute('cx'),y=n=>+n.getAttribute('cy');
+  assert(Math.hypot(x(city)-x(vatican),y(city)-y(vatican))+5<+area.getAttribute('r'));
+  assert(Math.hypot(x(city)-x(vatican),y(city)-y(vatican))>24);
+  for(const endpoint of[city,vatican]){const line=svg.querySelector('[data-picker-leader="'+endpoint.dataset.pickerEndpoint+'"]');assert.equal(+line.getAttribute('x1'),x(endpoint));assert.equal(+line.getAttribute('y1'),y(endpoint));}
+  assert.equal(svg.querySelector('[data-picker-symbol="area-o"]').dataset.symbolKind,'microstate');assert(svg.querySelector('[data-picker-locator]'));
+  assert(!/Rome|Vaticaan/.test(a.d.querySelector('#mapPicker').textContent));
+ }}finally{a.close()}
+});
+test('regional choosers retain distinct volcano/city/state glyphs and source context',()=>{
+ const a=boot();try{for(const ids of[['city-6','area-e'],['city-15','area-f'],['city-2','city-20'],['city-5','city-13'],['city-3','area-n']]){
+  a.ev(`mode('point');openMapPicker(${JSON.stringify(ids)}.map(id=>byId[id]))`);
+  const svg=a.d.querySelector('[data-picker-panel]');assert(svg.querySelector('svg path'));assert(svg.querySelector('[data-picker-north]'));
+  for(const id of ids){const symbol=svg.querySelector('[data-picker-symbol="'+id+'"]');assert.equal(symbol.dataset.symbolKind,id==='area-e'||id==='area-f'?'volcano':id==='area-n'?'microstate':'city');assert(svg.querySelector('[data-picker-badge="'+id+'"]'));}
+ }}finally{a.close()}
+});
 test('picker rendering does not read expected answer and names containment only in Discover',()=>{
  const source=read('scripts/map-hit.js').toString();const renderer=source.slice(source.indexOf('function mapPickerPointPanels'),source.indexOf("$('#map').addEventListener('click'"));assert(!/state\.current|state\.route|activeTarget'\)/.test(renderer.replace("n.classList.remove('activeTarget')",'')));assert(renderer.includes("state.mode==='learn'&&hits.some"));assert(renderer.includes('cancel.autofocus=true'));assert(renderer.includes("pick.addEventListener('close'"));
-});
-
-test('Rome/Vatican symbolic view keeps the city and enclave nested, with leaders ending inside their subjects',()=>{
- const a=boot();try{
-  for(const random of[0,.99999]){
-   a.ev("mode('point');state.current=byId['area-o'];state.questionMode='point';state.answered=false;mapChoiceRandom=()=>"+random);
-   a.ev("openMapPicker([byId['city-9'],byId['area-o']])");
-   const picker=a.d.querySelector('#mapPicker'),graphic=picker.querySelector('svg.pickerRomeVaticanDiagram');
-   assert(graphic,'special nested view rendered');
-   assert(!/Rome|Vaticaan/i.test(picker.textContent),'no named answer leakage in assessment');
-   const cityLine=graphic.querySelector('path[d="M 70 48 H 119 L 226 90"]');
-   const enclaveLine=graphic.querySelector('path[d="M 70 168 H 111 L 170 94"]');
-   assert(cityLine&&enclaveLine,'independent noncrossing leaders');
-   assert(Math.hypot(226-204,90-108)<75-7,'Rome line ends well inside the dashed circle');
-   assert(graphic.querySelector('path[d^="M 152 90"]'),'small enclave is drawn inside city');
-   const marks=[...graphic.querySelectorAll('text')].filter(t=>t.getAttribute('x')==='54');
-   assert.equal(marks.length,2);
-   assert.equal(marks[0].textContent,random===0?'2':'1','Rome number follows neutral shuffle');
-   assert.equal(marks[1].textContent,random===0?'1':'2','Vatican number follows neutral shuffle');
-   assert.deepEqual([...picker.querySelectorAll('[data-map-choice]')].map(b=>b.dataset.mapChoice),random===0?['area-o','city-9']:['city-9','area-o']);
-   picker.close();
-  }
-  a.ev("openMapPicker([byId['city-2'],byId['city-20']])");
-  assert(!a.d.querySelector('.pickerRomeVaticanDiagram'),'all other collisions keep true-anchor generic chooser');
-  assert.deepEqual(a.errors,[]);
- }finally{a.close()}
 });

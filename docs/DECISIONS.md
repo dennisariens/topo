@@ -159,3 +159,25 @@ Preserve exact PR47 runtime after actual offline file audit; add one byte-identi
 ## 2026-10-27 — Issue #58 legible neutral map chooser
 
 Replace tiny coincident-looking chooser endpoints with annotated geographic crops of the exact source anchors, constant-size markers, numbered external badges and collision-aware layout. Split broad clusters only when spacing/connector checks require it. Do not invent local boundaries or relocate learning targets. Show source outlines individually at a shared extent for non-point overlaps, masking sea overlays by existing land. Preserve the resolver, unbiased shuffle, grading, learning/rewards and saves. Owner visual GO/ADJUST and independent Hermes geographic/design QA remain release gates; keep the implementation as a draft candidate and leave the existing child download unchanged until approval. This supersedes treating fair numbering plus the old 80-unit crop as sufficient visual assessment quality.
+
+
+## 2026-10-29 — PR #59 owner-required geographic chooser revision
+
+**Supersedes** The 2026-10-27 choice to use generic extreme point crops and scrollable
+point panels. Owner comments 6448336596 and 6490005107 reject that design; passing
+pixel-distance/grading tests did not demonstrate geographic recognisability.
+Restore one geographic scene and city/volcano/state semantics. Use the existing
+illustrative Rome containment convention with source-relative centres, a larger
+city circle and tiny nested Vatican marker, distinct neutral tips, north and a
+regional locator. In broad candidate sets only this tiny relationship needs an
+inset; no canonical anchor changes. Retain complete shared-scale area outlines.
+Fit every candidate/control on first open, checking painted bounds against all
+clipping ancestors and inset occlusion. Rendering/layout depend on candidates
+and space, never the asked answer. Preserve exact resolver/grader/engines/saves/
+rewards and offline packaging. **Status** IMPLEMENTED for the same draft PR59,
+pending owner screenshot review before independent Hermes exact-SHA QA.
+No release replacement, merge or deployment.
+
+## 2026-10-30 — Approved computer candidate and map-selection design lock
+
+**Decision** Integrate PR59 current `6f8bd232` with PR60 history `d7a99213` on their PR51/Release1.2 functional lineage, retaining PR59 approved source-relative nested Rome/Vatican rendering. PR60 is based on older `d55e9de`; its alternative diagram is not required because the owner accepts the previous depiction. Preserve PR59 later geographic cues and first-open viewport fitting rather than reverting them. Generate byte-identical `TOPO-NINO-Computer-Release.html` and a separate candidate prerelease for exact-artifact Hermes PASS/CONDITIONAL/FAIL. **Status** IMPLEMENTED candidate; independent final acceptance pending. **Supersedes** Earlier pending visual-design-GO statements for this approved map selection. **Preserves** Engine/45 IDs/11 chapters/saves/rewards, all existing art and both map themes. No redesign without reproducible functional/geographic defect; no final release or upstream merge before independent acceptance.

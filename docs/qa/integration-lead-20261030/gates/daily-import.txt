@@ -1,0 +1,2 @@
+QA-1 Chrome: 6 → 12 stage replay; 30 → 42 gold replay; unchanged pizza rewards; reload/resubmit PASS
+QA-2 Chrome: six malformed file imports preserve memory/storage before confirmation; schema 1/2 imports PASS

@@ -1,0 +1,73 @@
+{
+  "baseCommit": "bd4daceed08e2d86c5940c858e08fd93983f190c",
+  "reviewPR": 61,
+  "tag": "topo-nino-computer-approved-artwork-rc-20261030",
+  "sourceAsset": {
+    "path": "assets/map-selection/TOPO-Rome-Vaticaanstad-approved-refined.svg",
+    "bytes": 1413,
+    "sha256": "c2d66a994879ecc125e2bb3d01accbc8a10730d990b85ee13eb5b050e797c70c",
+    "source": "owner-supplied Downloads file; exact bytes"
+  },
+  "artifact": {
+    "filename": "TOPO-NINO-Computer-Release.html",
+    "bytes": 3152649,
+    "sha256": "422f39dd06cb2ea2d6524ce07e4524738aa425aef5c5e54d63b55d90b54143a9"
+  },
+  "browser": "Chrome 156.0.8078.74 on macOS",
+  "gates": {
+    "releaseCheck": "PASS: build/lint/full 17-program regression/source audits",
+    "ownerAssetLock": "PASS: 10 map-selector tests including exact source hash/drawing/font/endpoints",
+    "fidelity": "PASS: 8 mode/order fixtures + shared Discover lens + desktop/small-phone multi-way screenshots",
+    "all45": {
+      "status": "PASS",
+      "correctPointerTrials": 180,
+      "wrongPointerTrials": 90,
+      "writingTrials": 180,
+      "completedWrongGoldRejected": true,
+      "parsedProgressReloadEqual": true
+    },
+    "selection": {
+      "status": "PASS",
+      "gradingRenderCases": 280,
+      "candidateLayouts": 280
+    },
+    "sessions": {
+      "status": "PASS",
+      "cases": 12
+    },
+    "focus": {
+      "status": "PASS",
+      "viewports": 7,
+      "keyboard": "SIMULATED, not native iPad IME",
+      "semanticProbes": 64
+    },
+    "offline": "PASS: actual file:// offline, requested HTML, assets/grading/reload/reset; zero errors/external requests",
+    "physicalMatrix": {
+      "status": "PASS for addressable cells only",
+      "recordedCells": 799,
+      "addressablePasses": 679,
+      "actualMouseTaps": 1358,
+      "unaddressableNotPassed": 120,
+      "scope": "finite prior inventory, not every continuous camera position or physical iPad"
+    }
+  },
+  "unchanged": [
+    "45 IDs/coordinates/geometry",
+    "11 chapters",
+    "learning and route engines",
+    "School/Discovery geometry and six lakes",
+    "Nino guidance and current startup behavior",
+    "progress/reward schemas, ledger and cadence",
+    "backups/import/resets",
+    "print/PDF",
+    "dependencies"
+  ],
+  "limits": [
+    "Native Safari session rejected: Allow Remote Automation disabled; NOT TESTED",
+    "Physical iPad/IME/VoiceOver NOT TESTED",
+    "Geography matches pinned source/schematic baselines; no fresh independent GIS certification",
+    "Owner SVG is schematic, not north-aligned or surveyed",
+    "Hermes independent verdict and owner final acceptance PENDING"
+  ],
+  "release": "QA PRERELEASE ONLY; no merge or final publication"
+}

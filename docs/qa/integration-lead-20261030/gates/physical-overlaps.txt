@@ -1,0 +1,22 @@
+desktop 0/100
+desktop 50/100
+desktop complete
+landscape 0/86
+landscape 50/86
+landscape complete
+portrait 0/58
+portrait complete
+phone 0/168
+phone 50/168
+phone 100/168
+phone 150/168
+phone complete
+small-phone 0/387
+small-phone 50/387
+small-phone 100/387
+small-phone 150/387
+small-phone 200/387
+small-phone 250/387
+small-phone 300/387
+small-phone complete
+PASS physical matrix 679/799

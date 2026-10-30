@@ -1,0 +1,19 @@
+{
+  "artifact": "file:///Users/dennisariens/projects/topo-nino-computer-release/output/html/TOPO-NINO-Computer-Release.html",
+  "bytes": 3147987,
+  "sha256": "4bf23df02ff7426b38a54bf4bff20ff795ca58ffc560a3d6b531ca3ff5548a28",
+  "browser": "145.0.7632.6",
+  "transport": "file:// offline:true",
+  "objects": 45,
+  "styles": 2,
+  "correctPointerTrials": 180,
+  "wrongPointerTrials": 90,
+  "writingTrials": 180,
+  "coverage": "Explicit per-item current-question fixtures with actual mouse/buttons and writing; not a full natural-route all-45 playthrough. Existing DOM suite covers all eleven route chapters. Geography compares pinned source baselines, not a fresh independent survey.",
+  "goldWrongCannotPass": true,
+  "reloadExact": true,
+  "errors": [],
+  "consoleErrors": [],
+  "external": [],
+  "physicalSafari": "NOT TESTED"
+}

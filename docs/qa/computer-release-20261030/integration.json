@@ -1,0 +1,43 @@
+{
+  "tag": "topo-nino-computer-rc-20261030",
+  "parents": {
+    "PR60": "d7a99213b9c32db223f2b9ede8b1b256bc69ffe4",
+    "PR59": "6f8bd2321a627aaf89bde63a7b161d9763b4a72a",
+    "functionalPR51": "bd1e57bc48e55a065cbbccb68acea196a64a187c",
+    "integratedPR17": "c68ace4e44a6e797f536ec1a8d6b517d29167320"
+  },
+  "resolution": "Retain complete approved PR59 source-relative rendering; PR60 alternative depiction not substituted. Owner explicitly accepts prior Rome/Vatican.",
+  "runtimeEqualsApprovedPR59": true,
+  "artifact": {
+    "filename": "TOPO-NINO-Computer-Release.html",
+    "bytes": 3147987,
+    "sha256": "4bf23df02ff7426b38a54bf4bff20ff795ca58ffc560a3d6b531ca3ff5548a28"
+  },
+  "independentHermesAcceptance": "PENDING",
+  "finalRelease": "NOT AUTHORIZED UNTIL INDEPENDENT ACCEPTANCE",
+  "nativeSafari": "NOT TESTED: remote automation disabled",
+  "executed": {
+    "releaseCheck": "PASS (exit 0)",
+    "all45": {
+      "objects": 45,
+      "correctPointer": 180,
+      "wrongPointer": 90,
+      "writing": 180,
+      "wrongGold": "PASS",
+      "persistedDataReload": "PASS"
+    },
+    "selection": {
+      "gradingCases": 280,
+      "candidateLayouts": 280
+    },
+    "sessions": 12,
+    "physicalCells": {
+      "pass": 679,
+      "unaddressableNotPassed": 120,
+      "actualMouseTaps": 1358
+    },
+    "focusViewports": 7,
+    "semanticFocusProbes": 64,
+    "independentVerdict": "PENDING"
+  }
+}

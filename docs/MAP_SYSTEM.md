@@ -56,3 +56,32 @@ This document supersedes the September unprovenanced-map and registered-photo-ov
 ## P0 semantic hit correction — 25 October 2026
 
 The nearest-point capture/paint-order selection described above is superseded for pointer grading by [MAP_SELECTION_HOTFIX.md](MAP_SELECTION_HOTFIX.md). One tap resolves all features of the task's semantic class against original SVG geometry, independently of the expected feature ID. True point overlaps retain the same 22 CSS px tolerance; areas use fill containment, rivers the original non-scaling 44 CSS px corridor. Every conversion uses the current screen CTM, including map zoom and pan. Genuine ambiguous areas/rivers use outlines rather than dot-only wording; display order is shuffled once per dialog without reading the answer or mutating candidate geometry. Sea selection excludes the same source land silhouettes that occlude sea paint; hidden inland sea-fill portions are not selectable. Learn can inspect genuine mixed overlaps using neutral wording. Focused SVG keyboard selection and the Rome/Vatican keyboard trigger remain. No source position, boundary, projection or hit-width was moved or expanded; schematic mountain extent accuracy remains issue #37.
+
+## P0 #58 — visually distinguishable neutral choices
+
+Supersedes the shared 80-unit-minimum chooser crop and 1.5-unit centre dots. The hit resolver, its 22 CSS-pixel disks, class filters and sea/land exclusion are unchanged. Only chooser presentation changes: true source-anchor close-ups use constant-size endpoint marks, separate numbered badges and noncrossing connectors. Layout targets at least 32 CSS pixels of endpoint separation in its coordinate plan; rendered QA enforces 24 pixels. Broad sets split into linked geographic crops when needed, without moving a single source anchor. Crop frames are locators, never invented borders. Extreme close-ups omit coarse river/zone context below 30 source units; they are explicitly enlarged place-marker maps, not municipal/street maps. Rome/Vatican containment copy appears only in Learn.
+
+Non-point overlaps use individual same-extent/same-scale maps of the complete candidate outlines/centrelines; sea outline overlays mask the unchanged land geometry. No expected answer is read by the renderer. Number order is shuffled once, retained through window resize, and independent of layout, distance, requested answer or grading. Answer controls remain at least 44px, cancellation has initial focus, Escape leaves the session intact and closing restores focus. JSON save/backup schemas are unchanged. Evidence, source limits and owner release gate: [MAP_PICKER_58.md](MAP_PICKER_58.md).
+
+
+## PR #59 owner revision — supersedes generic #58 point crops above
+
+The chooser uses one regional source map with city circles, summit-anchored
+volcano glyphs, symbolic microstate diamonds, neutral neighbouring places and
+original lakes/rivers/coasts. Rome/Vatican use the illustrative containment
+convention: large city circle (not surveyed boundary), tiny nested Vatican,
+distinct noncrossing tips at exact source-relative centres, north and a persistent
+coastline locator. Broader candidate sets retain this relation in a corner inset.
+No coordinates, source geometry, grading or candidate detection change.
+
+All numbered endpoints/badges, orientation and >=44px controls fit available width
+AND height on first open/resize. The old scrollable crop list and 24px-only gate
+are superseded by painted-bound visibility/occlusion and semantic/context checks.
+Complete area/sea outlines retain the shared extent/scale and original land mask;
+all comparison maps fit together. Original-pixel before/rejected/revised captures,
+finite-matrix limits and release gate:
+[visual/map-picker-58-revision/README.md](visual/map-picker-58-revision/README.md).
+
+## Owner-refined SVG in the shared selector — 30 October 2026
+
+The Rome/Vatican schematic now imports the exact owner SVG documented in `assets/map-selection/README.md`, including the interior Rome endpoint. It is symbolic, not a source-bearing map; the independent source-context locator remains north-oriented. Assessment digits shuffle with the unchanged neutral order, and Discover reuses the same importer with named teaching controls. Other geographic scenes keep their positions/outlines and adopt the same pointer ink. See `APPROVED_ARTWORK_COMPUTER_RELEASE.md` for source fidelity, browser evidence and pending independent/Safari gates.

@@ -1,0 +1,6 @@
+desktop PASS 31 unique candidate layouts
+landscape PASS 25 unique candidate layouts
+portrait PASS 14 unique candidate layouts
+phone PASS 60 unique candidate layouts
+small-phone PASS 150 unique candidate layouts
+PASS 280 grading/answer-independent cases; 280 candidate layouts

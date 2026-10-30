@@ -11,3 +11,4 @@ writeFileSync(new URL('output/html/topo-italie-duolingo.html', root), html);
 console.log('Standalone interactive HTML: output/html/topo-italie-interactief.html');
 
 writeFileSync(new URL('output/html/TOPO-Italie-Computer.html', root), html);
+writeFileSync(new URL('output/html/TOPO-NINO-Computer-Release.html', root), html);

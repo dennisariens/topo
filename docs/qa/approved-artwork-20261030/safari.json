@@ -1,0 +1,1 @@
+{"value":{"error":"session not created","message":"Could not create a session: You must enable the 'Allow Remote Automation' option in Safari's Develop menu to control Safari via WebDriver.","stacktrace":""}}

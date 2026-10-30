@@ -1,0 +1,9 @@
+{
+  "browser": "native Safari via safaridriver",
+  "status": "BLOCKED",
+  "settingsChanged": false,
+  "testProfile": "WebDriver automation session only",
+  "physicalIPad": "NOT TESTED",
+  "reason": "{\"value\":{\"error\":\"session not created\",\"message\":\"Could not create a session: You must enable 'Allow remote automation' in the Developer section of Safari Settings to control Safari via WebDriver.\",\"stacktrace\":\"\"}}",
+  "requiredAction": "Owner must enable Safari Allow Remote Automation if disabled; no setting enabled by this script"
+}

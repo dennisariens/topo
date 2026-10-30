@@ -1,0 +1,6 @@
+{
+  "status": "NOT TESTED",
+  "attempt": "native safaridriver new Safari session",
+  "result": "session not created: Allow Remote Automation must be enabled in Safari Develop menu",
+  "physicalIPadSafari": "NOT TESTED"
+}

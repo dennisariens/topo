@@ -1,0 +1,137 @@
+{
+  "app": "topo-italie",
+  "version": 1,
+  "savedAt": "2026-10-30T15:42:57.850Z",
+  "progress": {
+    "schema": 3,
+    "good": 1,
+    "pizzas": 0,
+    "slices": 1,
+    "trips": 0,
+    "mistakes": [
+      "city-5"
+    ],
+    "route": {
+      "schema": 2,
+      "chapters": {
+        "city1": {
+          "stage": 0,
+          "completedAt": 0,
+          "goldAt": 0,
+          "nextReviewAt": 0,
+          "reviews": 0
+        },
+        "city2": {
+          "stage": 0,
+          "completedAt": 0,
+          "goldAt": 0,
+          "nextReviewAt": 0,
+          "reviews": 0
+        },
+        "city3": {
+          "stage": 0,
+          "completedAt": 0,
+          "goldAt": 0,
+          "nextReviewAt": 0,
+          "reviews": 0
+        },
+        "city4": {
+          "stage": 0,
+          "completedAt": 0,
+          "goldAt": 0,
+          "nextReviewAt": 0,
+          "reviews": 0
+        },
+        "islands": {
+          "stage": 0,
+          "completedAt": 0,
+          "goldAt": 0,
+          "nextReviewAt": 0,
+          "reviews": 0
+        },
+        "mountains": {
+          "stage": 0,
+          "completedAt": 0,
+          "goldAt": 0,
+          "nextReviewAt": 0,
+          "reviews": 0
+        },
+        "volcanoes": {
+          "stage": 0,
+          "completedAt": 0,
+          "goldAt": 0,
+          "nextReviewAt": 0,
+          "reviews": 0
+        },
+        "regions": {
+          "stage": 0,
+          "completedAt": 0,
+          "goldAt": 0,
+          "nextReviewAt": 0,
+          "reviews": 0
+        },
+        "countries": {
+          "stage": 0,
+          "completedAt": 0,
+          "goldAt": 0,
+          "nextReviewAt": 0,
+          "reviews": 0
+        },
+        "seas": {
+          "stage": 0,
+          "completedAt": 0,
+          "goldAt": 0,
+          "nextReviewAt": 0,
+          "reviews": 0
+        },
+        "rivers": {
+          "stage": 0,
+          "completedAt": 0,
+          "goldAt": 0,
+          "nextReviewAt": 0,
+          "reviews": 0
+        }
+      },
+      "items": {
+        "city-5": {
+          "correct": 0,
+          "wrong": 0,
+          "streak": 0,
+          "lastSeen": 0,
+          "lastWrong": 0,
+          "skills": {
+            "write": {
+              "correct": 0,
+              "wrong": 1,
+              "streak": 0,
+              "lastSeen": 1793374977732,
+              "due": 1793374977732
+            }
+          }
+        },
+        "city-3": {
+          "correct": 0,
+          "wrong": 0,
+          "streak": 0,
+          "lastSeen": 0,
+          "lastWrong": 0,
+          "skills": {
+            "write": {
+              "correct": 1,
+              "wrong": 0,
+              "streak": 1,
+              "lastSeen": 1793374977810,
+              "due": 1793461377810
+            }
+          }
+        }
+      },
+      "rewardTokens": [],
+      "active": null
+    },
+    "daily": {
+      "date": "2026-10-30",
+      "correct": 1
+    }
+  }
+}

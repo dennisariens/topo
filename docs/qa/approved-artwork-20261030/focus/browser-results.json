@@ -1,0 +1,1119 @@
+{
+  "base": "fc8f5be4dc77c8b1adb71aae3931a1c134389cf5",
+  "browser": "156.0.8078.74",
+  "runs": [
+    {
+      "name": "ipad-landscape",
+      "w": 1180,
+      "h": 820,
+      "before": {
+        "viewport": [
+          253.921875,
+          260.6875,
+          364.140625,
+          505.28125
+        ],
+        "map": [
+          253.921875,
+          260.6875,
+          364.140625,
+          505.28125
+        ],
+        "area": 183993.43017578125,
+        "usableArea": 183993.43017578125,
+        "overlayArea": 0,
+        "overflow": false
+      },
+      "after": {
+        "viewport": [
+          11,
+          104,
+          1158,
+          705
+        ],
+        "map": [
+          335.96875,
+          104,
+          508.046875,
+          705
+        ],
+        "area": 816390,
+        "usableArea": 721750,
+        "overlayArea": 94640,
+        "focus": "true",
+        "overflow": false,
+        "camera": {
+          "active": true,
+          "zoom": 1,
+          "mode": "overview",
+          "center": {
+            "x": 445,
+            "y": 617.5
+          },
+          "worldScale": 0.5708502024291497,
+          "viewport": [
+            1158,
+            705
+          ]
+        }
+      },
+      "keyboard": {
+        "viewport": {
+          "left": 0,
+          "top": 12,
+          "width": 1180,
+          "height": 470,
+          "scale": 1
+        },
+        "fields": [
+          {
+            "id": "prompt",
+            "x": 324,
+            "y": 138,
+            "width": 532,
+            "height": 30,
+            "visible": true
+          },
+          {
+            "id": "answer",
+            "x": 324,
+            "y": 178,
+            "width": 418.75,
+            "height": 46,
+            "visible": true
+          },
+          {
+            "id": "check",
+            "x": 750.75,
+            "y": 173,
+            "width": 105.25,
+            "height": 60,
+            "visible": true
+          }
+        ],
+        "focus": "answer",
+        "caret": [
+          2,
+          6,
+          "backward"
+        ],
+        "value": "Mijn concept"
+      },
+      "full": {
+        "viewport": [
+          11,
+          104,
+          1158,
+          705
+        ],
+        "map": [
+          335.96875,
+          104,
+          508.046875,
+          705
+        ],
+        "area": 816390,
+        "usableArea": 701283.75,
+        "overlayArea": 115106.25,
+        "focus": "true",
+        "overflow": false,
+        "camera": {
+          "active": true,
+          "zoom": 1,
+          "mode": "overview",
+          "center": {
+            "x": 445,
+            "y": 617.5
+          },
+          "worldScale": 0.5708502024291497,
+          "viewport": [
+            1158,
+            705
+          ]
+        }
+      },
+      "chapter": {
+        "viewport": [
+          11,
+          104,
+          1158,
+          705
+        ],
+        "map": [
+          -125,
+          -293,
+          1314.09375,
+          1823.5
+        ],
+        "area": 816390,
+        "usableArea": 701283.75,
+        "overlayArea": 115106.25,
+        "focus": "true",
+        "overflow": false,
+        "camera": {
+          "active": true,
+          "zoom": 2.58652837617683,
+          "mode": "chapter",
+          "center": {
+            "x": 484.2466612903785,
+            "y": 507.61240928271144
+          },
+          "worldScale": 1.4765202471292833,
+          "viewport": [
+            1158,
+            705
+          ]
+        }
+      },
+      "caretFocusDraftState": true,
+      "submission": true,
+      "themeDriftPx": 0,
+      "schoolblad": true
+    },
+    {
+      "name": "ipad-portrait",
+      "w": 820,
+      "h": 1180,
+      "before": {
+        "viewport": [
+          17,
+          256.6875,
+          529,
+          734.046875
+        ],
+        "map": [
+          17,
+          256.6875,
+          529,
+          734.046875
+        ],
+        "area": 388310.796875,
+        "usableArea": 388310.796875,
+        "overlayArea": 0,
+        "overflow": false
+      },
+      "after": {
+        "viewport": [
+          11,
+          104,
+          798,
+          1065
+        ],
+        "map": [
+          26.25,
+          104,
+          767.484375,
+          1065
+        ],
+        "area": 849870,
+        "usableArea": 755230,
+        "overlayArea": 94640,
+        "focus": "true",
+        "overflow": false,
+        "camera": {
+          "active": true,
+          "zoom": 1,
+          "mode": "overview",
+          "center": {
+            "x": 445,
+            "y": 617.5
+          },
+          "worldScale": 0.8623481781376519,
+          "viewport": [
+            798,
+            1065
+          ]
+        }
+      },
+      "keyboard": {
+        "viewport": {
+          "left": 0,
+          "top": 12,
+          "width": 820,
+          "height": 680,
+          "scale": 1
+        },
+        "fields": [
+          {
+            "id": "prompt",
+            "x": 144,
+            "y": 573,
+            "width": 532,
+            "height": 30,
+            "visible": true
+          },
+          {
+            "id": "answer",
+            "x": 144,
+            "y": 613,
+            "width": 418.75,
+            "height": 46,
+            "visible": true
+          },
+          {
+            "id": "check",
+            "x": 570.75,
+            "y": 608,
+            "width": 105.25,
+            "height": 60,
+            "visible": true
+          }
+        ],
+        "focus": "answer",
+        "caret": [
+          2,
+          6,
+          "backward"
+        ],
+        "value": "Mijn concept"
+      },
+      "full": {
+        "viewport": [
+          11,
+          104,
+          798,
+          1065
+        ],
+        "map": [
+          26.25,
+          104,
+          767.484375,
+          1065
+        ],
+        "area": 849870,
+        "usableArea": 734763.75,
+        "overlayArea": 115106.25,
+        "focus": "true",
+        "overflow": false,
+        "camera": {
+          "active": true,
+          "zoom": 1,
+          "mode": "overview",
+          "center": {
+            "x": 445,
+            "y": 617.5
+          },
+          "worldScale": 0.8623481781376519,
+          "viewport": [
+            798,
+            1065
+          ]
+        }
+      },
+      "chapter": {
+        "viewport": [
+          11,
+          104,
+          798,
+          1065
+        ],
+        "map": [
+          -283,
+          -90,
+          1273.21875,
+          1766.765625
+        ],
+        "area": 849870,
+        "usableArea": 734763.75,
+        "overlayArea": 115106.25,
+        "focus": "true",
+        "overflow": false,
+        "camera": {
+          "active": true,
+          "zoom": 1.6589405592808402,
+          "mode": "chapter",
+          "center": {
+            "x": 484.4174276251542,
+            "y": 507.834431702272
+          },
+          "worldScale": 1.4305843689344897,
+          "viewport": [
+            798,
+            1065
+          ]
+        }
+      },
+      "caretFocusDraftState": true,
+      "submission": true,
+      "themeDriftPx": 0,
+      "schoolblad": true
+    },
+    {
+      "name": "ipad-pro",
+      "w": 1366,
+      "h": 1024,
+      "before": {
+        "viewport": [
+          273.421875,
+          260.6875,
+          511.15625,
+          709.296875
+        ],
+        "map": [
+          273.421875,
+          260.6875,
+          511.15625,
+          709.296875
+        ],
+        "area": 362561.53076171875,
+        "usableArea": 362561.53076171875,
+        "overlayArea": 0,
+        "overflow": false
+      },
+      "after": {
+        "viewport": [
+          11,
+          104,
+          1344,
+          909
+        ],
+        "map": [
+          355.453125,
+          104,
+          655.0625,
+          909
+        ],
+        "area": 1221696,
+        "usableArea": 1127056,
+        "overlayArea": 94640,
+        "focus": "true",
+        "overflow": false,
+        "camera": {
+          "active": true,
+          "zoom": 1,
+          "mode": "overview",
+          "center": {
+            "x": 445.00000000000006,
+            "y": 617.5
+          },
+          "worldScale": 0.7360323886639676,
+          "viewport": [
+            1344,
+            909
+          ]
+        }
+      },
+      "keyboard": {
+        "viewport": {
+          "left": 0,
+          "top": 12,
+          "width": 1366,
+          "height": 470,
+          "scale": 1
+        },
+        "fields": [
+          {
+            "id": "prompt",
+            "x": 417,
+            "y": 363,
+            "width": 532,
+            "height": 30,
+            "visible": true
+          },
+          {
+            "id": "answer",
+            "x": 417,
+            "y": 403,
+            "width": 418.75,
+            "height": 46,
+            "visible": true
+          },
+          {
+            "id": "check",
+            "x": 843.75,
+            "y": 398,
+            "width": 105.25,
+            "height": 60,
+            "visible": true
+          }
+        ],
+        "focus": "answer",
+        "caret": [
+          2,
+          6,
+          "backward"
+        ],
+        "value": "Mijn concept"
+      },
+      "full": {
+        "viewport": [
+          11,
+          104,
+          1344,
+          909
+        ],
+        "map": [
+          355.453125,
+          104,
+          655.0625,
+          909
+        ],
+        "area": 1221696,
+        "usableArea": 1106589.75,
+        "overlayArea": 115106.25,
+        "focus": "true",
+        "overflow": false,
+        "camera": {
+          "active": true,
+          "zoom": 1,
+          "mode": "overview",
+          "center": {
+            "x": 445.00000000000006,
+            "y": 617.5
+          },
+          "worldScale": 0.7360323886639676,
+          "viewport": [
+            1344,
+            909
+          ]
+        }
+      },
+      "chapter": {
+        "viewport": [
+          11,
+          104,
+          1344,
+          909
+        ],
+        "map": [
+          -239,
+          -408,
+          1694.34375,
+          2351.140625
+        ],
+        "area": 1221696,
+        "usableArea": 1106589.75,
+        "overlayArea": 115106.25,
+        "focus": "true",
+        "overflow": false,
+        "camera": {
+          "active": true,
+          "zoom": 2.5865283761768305,
+          "mode": "chapter",
+          "center": {
+            "x": 484.3025414931629,
+            "y": 507.67723031794134
+          },
+          "worldScale": 1.903768659064566,
+          "viewport": [
+            1344,
+            909
+          ]
+        }
+      },
+      "caretFocusDraftState": true,
+      "submission": true,
+      "themeDriftPx": 0,
+      "schoolblad": true
+    },
+    {
+      "name": "split-700",
+      "w": 700,
+      "h": 1000,
+      "before": null,
+      "after": {
+        "viewport": [
+          11,
+          154,
+          678,
+          835
+        ],
+        "map": [
+          49.125,
+          154,
+          601.734375,
+          835
+        ],
+        "area": 566130,
+        "usableArea": 471490,
+        "overlayArea": 94640,
+        "focus": "true",
+        "overflow": false,
+        "camera": {
+          "active": true,
+          "zoom": 1,
+          "mode": "overview",
+          "center": {
+            "x": 445,
+            "y": 617.5
+          },
+          "worldScale": 0.6761133603238867,
+          "viewport": [
+            678,
+            835
+          ]
+        }
+      },
+      "keyboard": {
+        "viewport": {
+          "left": 0,
+          "top": 12,
+          "width": 700,
+          "height": 550,
+          "scale": 1
+        },
+        "fields": [
+          {
+            "id": "prompt",
+            "x": 84,
+            "y": 188,
+            "width": 532,
+            "height": 30,
+            "visible": true
+          },
+          {
+            "id": "answer",
+            "x": 84,
+            "y": 228,
+            "width": 418.75,
+            "height": 46,
+            "visible": true
+          },
+          {
+            "id": "check",
+            "x": 510.75,
+            "y": 223,
+            "width": 105.25,
+            "height": 60,
+            "visible": true
+          }
+        ],
+        "focus": "answer",
+        "caret": [
+          2,
+          6,
+          "backward"
+        ],
+        "value": "Mijn concept"
+      },
+      "full": {
+        "viewport": [
+          11,
+          154,
+          678,
+          835
+        ],
+        "map": [
+          49.125,
+          154,
+          601.734375,
+          835
+        ],
+        "area": 566130,
+        "usableArea": 451023.75,
+        "overlayArea": 115106.25,
+        "focus": "true",
+        "overflow": false,
+        "camera": {
+          "active": true,
+          "zoom": 1,
+          "mode": "overview",
+          "center": {
+            "x": 445,
+            "y": 617.5
+          },
+          "worldScale": 0.6761133603238867,
+          "viewport": [
+            678,
+            835
+          ]
+        }
+      },
+      "chapter": {
+        "viewport": [
+          11,
+          154,
+          678,
+          835
+        ],
+        "map": [
+          -238,
+          -46,
+          1081.75,
+          1501.078125
+        ],
+        "area": 566130,
+        "usableArea": 451023.75,
+        "overlayArea": 115106.25,
+        "focus": "true",
+        "overflow": false,
+        "camera": {
+          "active": true,
+          "zoom": 1.7977146603633578,
+          "mode": "chapter",
+          "center": {
+            "x": 483.76790036901957,
+            "y": 508.03856883991426
+          },
+          "worldScale": 1.2154588999217846,
+          "viewport": [
+            678,
+            835
+          ]
+        }
+      },
+      "caretFocusDraftState": true,
+      "submission": true,
+      "themeDriftPx": 0,
+      "schoolblad": true
+    },
+    {
+      "name": "split-500",
+      "w": 500,
+      "h": 1000,
+      "before": null,
+      "after": {
+        "viewport": [
+          11,
+          171.75,
+          478,
+          817.25
+        ],
+        "map": [
+          11,
+          248.59375,
+          478,
+          663.28125
+        ],
+        "area": 390645.5,
+        "usableArea": 310201.5,
+        "overlayArea": 80444,
+        "focus": "true",
+        "overflow": false,
+        "camera": {
+          "active": true,
+          "zoom": 1,
+          "mode": "overview",
+          "center": {
+            "x": 445,
+            "y": 617.5
+          },
+          "worldScale": 0.5370786516853933,
+          "viewport": [
+            478,
+            817
+          ]
+        }
+      },
+      "keyboard": {
+        "viewport": {
+          "left": 0,
+          "top": 12,
+          "width": 500,
+          "height": 550,
+          "scale": 1
+        },
+        "fields": [
+          {
+            "id": "prompt",
+            "x": 26,
+            "y": 205.75,
+            "width": 448,
+            "height": 30,
+            "visible": true
+          },
+          {
+            "id": "answer",
+            "x": 26,
+            "y": 245.75,
+            "width": 339.34375,
+            "height": 46,
+            "visible": true
+          },
+          {
+            "id": "check",
+            "x": 373.34375,
+            "y": 240.75,
+            "width": 100.65625,
+            "height": 60,
+            "visible": true
+          }
+        ],
+        "focus": "answer",
+        "caret": [
+          2,
+          6,
+          "backward"
+        ],
+        "value": "Mijn concept"
+      },
+      "full": {
+        "viewport": [
+          11,
+          171.75,
+          478,
+          817.25
+        ],
+        "map": [
+          11,
+          248.59375,
+          478,
+          663.28125
+        ],
+        "area": 390645.5,
+        "usableArea": 292805.1875,
+        "overlayArea": 97840.3125,
+        "focus": "true",
+        "overflow": false,
+        "camera": {
+          "active": true,
+          "zoom": 1,
+          "mode": "overview",
+          "center": {
+            "x": 445,
+            "y": 617.5
+          },
+          "worldScale": 0.5370786516853933,
+          "viewport": [
+            478,
+            817
+          ]
+        }
+      },
+      "chapter": {
+        "viewport": [
+          11,
+          171.75,
+          478,
+          817.25
+        ],
+        "map": [
+          -165,
+          144.75,
+          762.640625,
+          1058.28125
+        ],
+        "area": 390645.5,
+        "usableArea": 292805.1875,
+        "overlayArea": 97840.3125,
+        "focus": "true",
+        "overflow": false,
+        "camera": {
+          "active": true,
+          "zoom": 1.5955138951775638,
+          "mode": "chapter",
+          "center": {
+            "x": 484.29458816081404,
+            "y": 508.21757384104706
+          },
+          "worldScale": 0.8569164515672758,
+          "viewport": [
+            478,
+            817
+          ]
+        }
+      },
+      "caretFocusDraftState": true,
+      "submission": true,
+      "themeDriftPx": 0,
+      "schoolblad": true
+    },
+    {
+      "name": "phone",
+      "w": 390,
+      "h": 844,
+      "before": null,
+      "after": {
+        "viewport": [
+          11,
+          171.75,
+          368,
+          661.25
+        ],
+        "map": [
+          11,
+          246.921875,
+          368,
+          510.640625
+        ],
+        "area": 243340,
+        "usableArea": 181486,
+        "overlayArea": 61854,
+        "focus": "true",
+        "overflow": false,
+        "camera": {
+          "active": true,
+          "zoom": 1,
+          "mode": "overview",
+          "center": {
+            "x": 445,
+            "y": 617.5
+          },
+          "worldScale": 0.4134831460674157,
+          "viewport": [
+            368,
+            661
+          ]
+        }
+      },
+      "keyboard": {
+        "viewport": {
+          "left": 0,
+          "top": 12,
+          "width": 390,
+          "height": 550,
+          "scale": 1
+        },
+        "fields": [
+          {
+            "id": "prompt",
+            "x": 26,
+            "y": 205.75,
+            "width": 338,
+            "height": 30,
+            "visible": true
+          },
+          {
+            "id": "answer",
+            "x": 26,
+            "y": 245.75,
+            "width": 229.34375,
+            "height": 46,
+            "visible": true
+          },
+          {
+            "id": "check",
+            "x": 263.34375,
+            "y": 240.75,
+            "width": 100.65625,
+            "height": 60,
+            "visible": true
+          }
+        ],
+        "focus": "answer",
+        "caret": [
+          2,
+          6,
+          "backward"
+        ],
+        "value": "Mijn concept"
+      },
+      "full": {
+        "viewport": [
+          11,
+          171.75,
+          368,
+          661.25
+        ],
+        "map": [
+          11,
+          246.921875,
+          368,
+          510.640625
+        ],
+        "area": 243340,
+        "usableArea": 168109.84375,
+        "overlayArea": 75230.15625,
+        "focus": "true",
+        "overflow": false,
+        "camera": {
+          "active": true,
+          "zoom": 1,
+          "mode": "overview",
+          "center": {
+            "x": 445,
+            "y": 617.5
+          },
+          "worldScale": 0.4134831460674157,
+          "viewport": [
+            368,
+            661
+          ]
+        }
+      },
+      "chapter": {
+        "viewport": [
+          11,
+          171.75,
+          368,
+          661.25
+        ],
+        "map": [
+          -124,
+          167.75,
+          587.140625,
+          814.75
+        ],
+        "area": 243340,
+        "usableArea": 168109.84375,
+        "overlayArea": 75230.15625,
+        "focus": "true",
+        "overflow": false,
+        "camera": {
+          "active": true,
+          "zoom": 1.5955138951775638,
+          "mode": "chapter",
+          "center": {
+            "x": 483.53985982148544,
+            "y": 507.03474329243534
+          },
+          "worldScale": 0.659718104972296,
+          "viewport": [
+            368,
+            661
+          ]
+        }
+      },
+      "caretFocusDraftState": true,
+      "submission": true,
+      "themeDriftPx": 0,
+      "schoolblad": true
+    },
+    {
+      "name": "small-phone",
+      "w": 320,
+      "h": 568,
+      "before": null,
+      "after": {
+        "viewport": [
+          11,
+          220.75,
+          298,
+          336.25
+        ],
+        "map": [
+          38.921875,
+          220.75,
+          242.125,
+          336
+        ],
+        "area": 100202.5,
+        "usableArea": 45738.5,
+        "overlayArea": 54464,
+        "focus": "true",
+        "overflow": false,
+        "camera": {
+          "active": true,
+          "zoom": 1,
+          "mode": "overview",
+          "center": {
+            "x": 445,
+            "y": 617.5
+          },
+          "worldScale": 0.2720647773279352,
+          "viewport": [
+            298,
+            336
+          ]
+        }
+      },
+      "keyboard": {
+        "viewport": {
+          "left": 0,
+          "top": 12,
+          "width": 320,
+          "height": 310,
+          "scale": 1
+        },
+        "fields": [
+          {
+            "id": "prompt",
+            "x": 26,
+            "y": 188,
+            "width": 268,
+            "height": 45,
+            "visible": true
+          },
+          {
+            "id": "answer",
+            "x": 26,
+            "y": 243,
+            "width": 159.34375,
+            "height": 46,
+            "visible": true
+          },
+          {
+            "id": "check",
+            "x": 193.34375,
+            "y": 238,
+            "width": 100.65625,
+            "height": 60,
+            "visible": true
+          }
+        ],
+        "focus": "answer",
+        "caret": [
+          2,
+          6,
+          "backward"
+        ],
+        "value": "Mijn concept"
+      },
+      "full": {
+        "viewport": [
+          11,
+          220.75,
+          298,
+          336.25
+        ],
+        "map": [
+          38.921875,
+          220.75,
+          242.125,
+          336
+        ],
+        "area": 100202.5,
+        "usableArea": 34920.625,
+        "overlayArea": 65281.875,
+        "focus": "true",
+        "overflow": false,
+        "camera": {
+          "active": true,
+          "zoom": 1,
+          "mode": "overview",
+          "center": {
+            "x": 445,
+            "y": 617.5
+          },
+          "worldScale": 0.2720647773279352,
+          "viewport": [
+            298,
+            336
+          ]
+        }
+      },
+      "chapter": {
+        "viewport": [
+          11,
+          220.75,
+          298,
+          336.25
+        ],
+        "map": [
+          -99,
+          117.75,
+          475.453125,
+          659.765625
+        ],
+        "area": 100202.5,
+        "usableArea": 34920.625,
+        "overlayArea": 65281.875,
+        "focus": "true",
+        "overflow": false,
+        "camera": {
+          "active": true,
+          "zoom": 1.9636068045819919,
+          "mode": "chapter",
+          "center": {
+            "x": 484.8115032221646,
+            "y": 507.273812251763
+          },
+          "worldScale": 0.534228248048218,
+          "viewport": [
+            298,
+            336
+          ]
+        }
+      },
+      "caretFocusDraftState": true,
+      "submission": true,
+      "themeDriftPx": 0,
+      "schoolblad": true
+    }
+  ],
+  "errors": [],
+  "network": [],
+  "transport": "file:// offline:true",
+  "keyboardEvidence": "SIMULATED visualViewport occlusion; not OS keyboard",
+  "physicalIPadSafari": "PENDING"
+}

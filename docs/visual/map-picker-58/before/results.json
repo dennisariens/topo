@@ -1,0 +1,39 @@
+{
+  "source": "bd1e57bc48e55a065cbbccb68acea196a64a187c",
+  "transport": "file:// offline:true",
+  "browser": "145.0.7632.6",
+  "records": [
+    {
+      "name": "desktop",
+      "width": 1500,
+      "height": 1000,
+      "distancePx": 7.682314267198545,
+      "viewBox": "420.20500000000004 564.405 80 80",
+      "labels": "Welke stip bedoel je?Dezelfde kaart, van dichtbij. Kies het nummer bij jouw plek.\n\n  \n  \n  \n  \n  \n  \n\n12Stip 1Stip 2Terug naar de kaart"
+    },
+    {
+      "name": "landscape",
+      "width": 1180,
+      "height": 820,
+      "distancePx": 7.682314267198545,
+      "viewBox": "420.20500000000004 564.405 80 80",
+      "labels": "Welke stip bedoel je?Dezelfde kaart, van dichtbij. Kies het nummer bij jouw plek.\n\n  \n  \n  \n  \n  \n  \n\n12Stip 1Stip 2Terug naar de kaart"
+    },
+    {
+      "name": "portrait",
+      "width": 820,
+      "height": 1180,
+      "distancePx": 7.682314267198545,
+      "viewBox": "420.20500000000004 564.405 80 80",
+      "labels": "Welke stip bedoel je?Dezelfde kaart, van dichtbij. Kies het nummer bij jouw plek.\n\n  \n  \n  \n  \n  \n  \n\n12Stip 1Stip 2Terug naar de kaart"
+    },
+    {
+      "name": "phone",
+      "width": 390,
+      "height": 844,
+      "distancePx": 6.118131723103935,
+      "viewBox": "420.20500000000004 564.405 80 80",
+      "labels": "Welke stip bedoel je?Dezelfde kaart, van dichtbij. Kies het nummer bij jouw plek.\n\n  \n  \n  \n  \n  \n  \n\n12Stip 1Stip 2Terug naar de kaart"
+    }
+  ]
+}

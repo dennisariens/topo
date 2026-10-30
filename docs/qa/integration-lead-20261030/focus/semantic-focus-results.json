@@ -1,0 +1,570 @@
+[
+  {
+    "name": "landscape",
+    "theme": "school",
+    "z": 1,
+    "checks": [
+      {
+        "asked": "area-h",
+        "xy": [
+          350,
+          450
+        ],
+        "ok": true
+      },
+      {
+        "asked": "area-h",
+        "xy": [
+          410,
+          495
+        ],
+        "ok": true
+      },
+      {
+        "asked": "area-h",
+        "xy": [
+          420,
+          500
+        ],
+        "ok": true
+      },
+      {
+        "asked": "area-g",
+        "xy": [
+          335,
+          375
+        ],
+        "ok": true
+      },
+      {
+        "asked": "area-g",
+        "xy": [
+          335,
+          340
+        ],
+        "ok": true
+      },
+      {
+        "asked": "water-G",
+        "xy": [
+          291.50421142578125,
+          357.9700012207031
+        ],
+        "ok": true
+      },
+      {
+        "asked": "area-g",
+        "xy": [
+          410,
+          495
+        ],
+        "ok": false
+      },
+      {
+        "asked": "water-F",
+        "xy": [
+          291.50421142578125,
+          357.9700012207031
+        ],
+        "ok": false
+      }
+    ]
+  },
+  {
+    "name": "landscape",
+    "theme": "school",
+    "z": 2,
+    "checks": [
+      {
+        "asked": "area-h",
+        "xy": [
+          350,
+          450
+        ],
+        "ok": true
+      },
+      {
+        "asked": "area-h",
+        "xy": [
+          410,
+          495
+        ],
+        "ok": true
+      },
+      {
+        "asked": "area-h",
+        "xy": [
+          420,
+          500
+        ],
+        "ok": true
+      },
+      {
+        "asked": "area-g",
+        "xy": [
+          335,
+          375
+        ],
+        "ok": true
+      },
+      {
+        "asked": "area-g",
+        "xy": [
+          335,
+          340
+        ],
+        "ok": true
+      },
+      {
+        "asked": "water-G",
+        "xy": [
+          291.50421142578125,
+          357.9700012207031
+        ],
+        "ok": true
+      },
+      {
+        "asked": "area-g",
+        "xy": [
+          410,
+          495
+        ],
+        "ok": false
+      },
+      {
+        "asked": "water-F",
+        "xy": [
+          291.50421142578125,
+          357.9700012207031
+        ],
+        "ok": false
+      }
+    ]
+  },
+  {
+    "name": "landscape",
+    "theme": "discovery",
+    "z": 1,
+    "checks": [
+      {
+        "asked": "area-h",
+        "xy": [
+          350,
+          450
+        ],
+        "ok": true
+      },
+      {
+        "asked": "area-h",
+        "xy": [
+          410,
+          495
+        ],
+        "ok": true
+      },
+      {
+        "asked": "area-h",
+        "xy": [
+          420,
+          500
+        ],
+        "ok": true
+      },
+      {
+        "asked": "area-g",
+        "xy": [
+          335,
+          375
+        ],
+        "ok": true
+      },
+      {
+        "asked": "area-g",
+        "xy": [
+          335,
+          340
+        ],
+        "ok": true
+      },
+      {
+        "asked": "water-G",
+        "xy": [
+          291.50421142578125,
+          357.9700012207031
+        ],
+        "ok": true
+      },
+      {
+        "asked": "area-g",
+        "xy": [
+          410,
+          495
+        ],
+        "ok": false
+      },
+      {
+        "asked": "water-F",
+        "xy": [
+          291.50421142578125,
+          357.9700012207031
+        ],
+        "ok": false
+      }
+    ]
+  },
+  {
+    "name": "landscape",
+    "theme": "discovery",
+    "z": 2,
+    "checks": [
+      {
+        "asked": "area-h",
+        "xy": [
+          350,
+          450
+        ],
+        "ok": true
+      },
+      {
+        "asked": "area-h",
+        "xy": [
+          410,
+          495
+        ],
+        "ok": true
+      },
+      {
+        "asked": "area-h",
+        "xy": [
+          420,
+          500
+        ],
+        "ok": true
+      },
+      {
+        "asked": "area-g",
+        "xy": [
+          335,
+          375
+        ],
+        "ok": true
+      },
+      {
+        "asked": "area-g",
+        "xy": [
+          335,
+          340
+        ],
+        "ok": true
+      },
+      {
+        "asked": "water-G",
+        "xy": [
+          291.50421142578125,
+          357.9700012207031
+        ],
+        "ok": true
+      },
+      {
+        "asked": "area-g",
+        "xy": [
+          410,
+          495
+        ],
+        "ok": false
+      },
+      {
+        "asked": "water-F",
+        "xy": [
+          291.50421142578125,
+          357.9700012207031
+        ],
+        "ok": false
+      }
+    ]
+  },
+  {
+    "name": "portrait",
+    "theme": "school",
+    "z": 1,
+    "checks": [
+      {
+        "asked": "area-h",
+        "xy": [
+          350,
+          450
+        ],
+        "ok": true
+      },
+      {
+        "asked": "area-h",
+        "xy": [
+          410,
+          495
+        ],
+        "ok": true
+      },
+      {
+        "asked": "area-h",
+        "xy": [
+          420,
+          500
+        ],
+        "ok": true
+      },
+      {
+        "asked": "area-g",
+        "xy": [
+          335,
+          375
+        ],
+        "ok": true
+      },
+      {
+        "asked": "area-g",
+        "xy": [
+          335,
+          340
+        ],
+        "ok": true
+      },
+      {
+        "asked": "water-G",
+        "xy": [
+          291.50421142578125,
+          357.9700012207031
+        ],
+        "ok": true
+      },
+      {
+        "asked": "area-g",
+        "xy": [
+          410,
+          495
+        ],
+        "ok": false
+      },
+      {
+        "asked": "water-F",
+        "xy": [
+          291.50421142578125,
+          357.9700012207031
+        ],
+        "ok": false
+      }
+    ]
+  },
+  {
+    "name": "portrait",
+    "theme": "school",
+    "z": 2,
+    "checks": [
+      {
+        "asked": "area-h",
+        "xy": [
+          350,
+          450
+        ],
+        "ok": true
+      },
+      {
+        "asked": "area-h",
+        "xy": [
+          410,
+          495
+        ],
+        "ok": true
+      },
+      {
+        "asked": "area-h",
+        "xy": [
+          420,
+          500
+        ],
+        "ok": true
+      },
+      {
+        "asked": "area-g",
+        "xy": [
+          335,
+          375
+        ],
+        "ok": true
+      },
+      {
+        "asked": "area-g",
+        "xy": [
+          335,
+          340
+        ],
+        "ok": true
+      },
+      {
+        "asked": "water-G",
+        "xy": [
+          291.50421142578125,
+          357.9700012207031
+        ],
+        "ok": true
+      },
+      {
+        "asked": "area-g",
+        "xy": [
+          410,
+          495
+        ],
+        "ok": false
+      },
+      {
+        "asked": "water-F",
+        "xy": [
+          291.50421142578125,
+          357.9700012207031
+        ],
+        "ok": false
+      }
+    ]
+  },
+  {
+    "name": "portrait",
+    "theme": "discovery",
+    "z": 1,
+    "checks": [
+      {
+        "asked": "area-h",
+        "xy": [
+          350,
+          450
+        ],
+        "ok": true
+      },
+      {
+        "asked": "area-h",
+        "xy": [
+          410,
+          495
+        ],
+        "ok": true
+      },
+      {
+        "asked": "area-h",
+        "xy": [
+          420,
+          500
+        ],
+        "ok": true
+      },
+      {
+        "asked": "area-g",
+        "xy": [
+          335,
+          375
+        ],
+        "ok": true
+      },
+      {
+        "asked": "area-g",
+        "xy": [
+          335,
+          340
+        ],
+        "ok": true
+      },
+      {
+        "asked": "water-G",
+        "xy": [
+          291.50421142578125,
+          357.9700012207031
+        ],
+        "ok": true
+      },
+      {
+        "asked": "area-g",
+        "xy": [
+          410,
+          495
+        ],
+        "ok": false
+      },
+      {
+        "asked": "water-F",
+        "xy": [
+          291.50421142578125,
+          357.9700012207031
+        ],
+        "ok": false
+      }
+    ]
+  },
+  {
+    "name": "portrait",
+    "theme": "discovery",
+    "z": 2,
+    "checks": [
+      {
+        "asked": "area-h",
+        "xy": [
+          350,
+          450
+        ],
+        "ok": true
+      },
+      {
+        "asked": "area-h",
+        "xy": [
+          410,
+          495
+        ],
+        "ok": true
+      },
+      {
+        "asked": "area-h",
+        "xy": [
+          420,
+          500
+        ],
+        "ok": true
+      },
+      {
+        "asked": "area-g",
+        "xy": [
+          335,
+          375
+        ],
+        "ok": true
+      },
+      {
+        "asked": "area-g",
+        "xy": [
+          335,
+          340
+        ],
+        "ok": true
+      },
+      {
+        "asked": "water-G",
+        "xy": [
+          291.50421142578125,
+          357.9700012207031
+        ],
+        "ok": true
+      },
+      {
+        "asked": "area-g",
+        "xy": [
+          410,
+          495
+        ],
+        "ok": false
+      },
+      {
+        "asked": "water-F",
+        "xy": [
+          291.50421142578125,
+          357.9700012207031
+        ],
+        "ok": false
+      }
+    ]
+  }
+]

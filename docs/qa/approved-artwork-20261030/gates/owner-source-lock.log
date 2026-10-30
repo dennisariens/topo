@@ -1,0 +1,18 @@
+✔ the only canonical app delta is the bounded resolver; engines, geography, schoolblad and atlas remain exact (572.003336ms)
+✔ all 45 stable IDs have semantic classes: 27 points and independent polygons/river corridors (1640.773423ms)
+✔ neutral display order is not distance or expected-answer order, and never mutates candidates (717.530004ms)
+✔ real Rome/Vatican keyboard chooser grades stable IDs with both first/second correct and wrong cases (848.385308ms)
+✔ every point pair keeps its exact source anchors and answer-independent regional framing (657.364853ms)
+✔ all recorded point collision sets keep noncrossing leaders at compact and wide sizes (780.67599ms)
+✔ Vatican is illustrated inside Rome with two different noncrossing endpoint targets (695.384591ms)
+✔ approved owner SVG is embedded exactly; shuffled numbers cannot change its drawing (631.096753ms)
+✔ regional choosers retain distinct volcano/city/state glyphs and source context (709.822395ms)
+✔ picker rendering does not read expected answer and names containment only in Discover (0.662145ms)
+ℹ tests 10
+ℹ suites 0
+ℹ pass 10
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 8995.052132

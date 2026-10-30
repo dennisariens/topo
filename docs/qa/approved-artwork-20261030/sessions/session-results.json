@@ -1,0 +1,200 @@
+{
+  "browser": "156.0.8078.74",
+  "transport": "file:// offline:true",
+  "records": [
+    {
+      "mode": "point",
+      "random": 0,
+      "order": [
+        "area-o",
+        "city-9"
+      ],
+      "correct": true,
+      "goodBefore": 0,
+      "goodAfter": 1,
+      "cancelPreservesSession": true,
+      "resizePreservesOrderAndFocus": true,
+      "focusRestored": true,
+      "noDuplicateCredit": true,
+      "reload": false
+    },
+    {
+      "mode": "point",
+      "random": 0,
+      "order": [
+        "area-o",
+        "city-9"
+      ],
+      "correct": false,
+      "goodBefore": 0,
+      "goodAfter": 0,
+      "cancelPreservesSession": true,
+      "resizePreservesOrderAndFocus": true,
+      "focusRestored": true,
+      "noDuplicateCredit": true,
+      "reload": false
+    },
+    {
+      "mode": "point",
+      "random": 0.99999,
+      "order": [
+        "city-9",
+        "area-o"
+      ],
+      "correct": true,
+      "goodBefore": 0,
+      "goodAfter": 1,
+      "cancelPreservesSession": true,
+      "resizePreservesOrderAndFocus": true,
+      "focusRestored": true,
+      "noDuplicateCredit": true,
+      "reload": false
+    },
+    {
+      "mode": "point",
+      "random": 0.99999,
+      "order": [
+        "city-9",
+        "area-o"
+      ],
+      "correct": false,
+      "goodBefore": 0,
+      "goodAfter": 0,
+      "cancelPreservesSession": true,
+      "resizePreservesOrderAndFocus": true,
+      "focusRestored": true,
+      "noDuplicateCredit": true,
+      "reload": false
+    },
+    {
+      "mode": "exam",
+      "random": 0,
+      "order": [
+        "area-o",
+        "city-9"
+      ],
+      "correct": true,
+      "goodBefore": 0,
+      "goodAfter": 1,
+      "cancelPreservesSession": true,
+      "resizePreservesOrderAndFocus": true,
+      "focusRestored": true,
+      "noDuplicateCredit": true,
+      "reload": false
+    },
+    {
+      "mode": "exam",
+      "random": 0,
+      "order": [
+        "area-o",
+        "city-9"
+      ],
+      "correct": false,
+      "goodBefore": 0,
+      "goodAfter": 0,
+      "cancelPreservesSession": true,
+      "resizePreservesOrderAndFocus": true,
+      "focusRestored": true,
+      "noDuplicateCredit": true,
+      "reload": false
+    },
+    {
+      "mode": "exam",
+      "random": 0.99999,
+      "order": [
+        "city-9",
+        "area-o"
+      ],
+      "correct": true,
+      "goodBefore": 0,
+      "goodAfter": 1,
+      "cancelPreservesSession": true,
+      "resizePreservesOrderAndFocus": true,
+      "focusRestored": true,
+      "noDuplicateCredit": true,
+      "reload": false
+    },
+    {
+      "mode": "exam",
+      "random": 0.99999,
+      "order": [
+        "city-9",
+        "area-o"
+      ],
+      "correct": false,
+      "goodBefore": 0,
+      "goodAfter": 0,
+      "cancelPreservesSession": true,
+      "resizePreservesOrderAndFocus": true,
+      "focusRestored": true,
+      "noDuplicateCredit": true,
+      "reload": false
+    },
+    {
+      "mode": "gold",
+      "random": 0,
+      "order": [
+        "area-o",
+        "city-9"
+      ],
+      "correct": true,
+      "goodBefore": 0,
+      "goodAfter": 1,
+      "cancelPreservesSession": true,
+      "resizePreservesOrderAndFocus": true,
+      "focusRestored": true,
+      "noDuplicateCredit": true,
+      "reload": true
+    },
+    {
+      "mode": "gold",
+      "random": 0,
+      "order": [
+        "area-o",
+        "city-9"
+      ],
+      "correct": false,
+      "goodBefore": 1,
+      "goodAfter": 1,
+      "cancelPreservesSession": true,
+      "resizePreservesOrderAndFocus": true,
+      "focusRestored": true,
+      "noDuplicateCredit": true,
+      "reload": true
+    },
+    {
+      "mode": "gold",
+      "random": 0.99999,
+      "order": [
+        "city-9",
+        "area-o"
+      ],
+      "correct": true,
+      "goodBefore": 1,
+      "goodAfter": 2,
+      "cancelPreservesSession": true,
+      "resizePreservesOrderAndFocus": true,
+      "focusRestored": true,
+      "noDuplicateCredit": true,
+      "reload": true
+    },
+    {
+      "mode": "gold",
+      "random": 0.99999,
+      "order": [
+        "city-9",
+        "area-o"
+      ],
+      "correct": false,
+      "goodBefore": 1,
+      "goodAfter": 1,
+      "cancelPreservesSession": true,
+      "resizePreservesOrderAndFocus": true,
+      "focusRestored": true,
+      "noDuplicateCredit": true,
+      "reload": true
+    }
+  ],
+  "errors": [],
+  "external": []
+}

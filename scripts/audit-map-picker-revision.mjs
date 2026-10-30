@@ -1,0 +1,11 @@
+import assert from 'node:assert/strict';
+import {readFileSync,writeFileSync} from 'node:fs';
+import {execFileSync} from 'node:child_process';
+import {createHash} from 'node:crypto';
+const root=new URL('../',import.meta.url),read=p=>readFileSync(new URL(p,root));
+const baseline='bd1e57bc48e55a065cbbccb68acea196a64a187c',old=p=>execFileSync('git',['show',baseline+':'+p],{cwd:root,maxBuffer:32e6}),hash=b=>createHash('sha256').update(b).digest('hex');
+const files=['scripts/learning-engine.js','scripts/route-engine.js','scripts/schoolblad.js','scripts/schoolblad.css','scripts/discovery-map.js','scripts/discovery-map.css','scripts/focus-mode.js','scripts/focus-mode.css','docs/geography/map-manifest.json','docs/geography/points.json','geography/lakes/projected-manifest.json','print.html','output/pdf/topo-italie-printboek.pdf','package-lock.json'].map(path=>{const bytes=read(path);assert(bytes.equals(old(path)),path);return{path,unchangedFromPR51:true,sha256:hash(bytes)}});
+const hit=read('scripts/map-hit.js').toString(),previous=old('scripts/map-hit.js').toString();assert(hit.startsWith(previous.slice(0,previous.indexOf('function openMapPicker'))));const marker="$('#map').addEventListener('click'";assert.equal(hit.slice(hit.indexOf(marker)),previous.slice(previous.indexOf(marker)));
+const html=read('index.html'),strip=s=>s.toString().replace(/\/\/ BEGIN MAP HIT\n[\s\S]*?\/\/ END MAP HIT/,'// PICKER');assert.equal(strip(html),strip(old('index.html')));
+for(const path of['output/html/TOPO-Italie-Computer.html','output/html/topo-italie-interactief.html','output/html/topo-italie-duolingo.html','dist/index.html'])assert(read(path).equals(html),path);
+writeFileSync(new URL(process.env.QA_PRESERVATION_FILE||'docs/visual/map-picker-58-revision/preservation.json',root),JSON.stringify({baseline,canonicalHtmlOnlyChooserChanged:true,resolverShuffleGradingPrefixExact:true,geographicClickHandlerExact:true,standaloneFilesByteIdentical:true,htmlBytes:html.length,htmlSha256:hash(html),files},null,2)+'\n');console.log('PASS exact source, engine, geometry, resolver/grading and standalone preservation; '+html.length+' bytes; SHA256 '+hash(html));

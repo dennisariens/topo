@@ -155,3 +155,37 @@ Supersedes unconditional nearest-point capture and SVG paint-order selection for
 ## 2026-10-27 — Issue #50 computer download
 
 Preserve exact PR47 runtime after actual offline file audit; add one byte-identical learner filename through the existing packager. Deliver it as a QA prerelease HTML attachment because GitHub raw URLs display text/plain, with a separate draft PR for review. This is a download artifact, not a production deployment. Preserve original filenames and local save/backup behavior. No rebuild-driven runtime rewrite, merge, iPad server update or artwork change. See OFFLINE_COMPUTER_50.md.
+
+## 2026-10-27 — Issue #58 legible neutral map chooser
+
+Replace tiny coincident-looking chooser endpoints with annotated geographic crops of the exact source anchors, constant-size markers, numbered external badges and collision-aware layout. Split broad clusters only when spacing/connector checks require it. Do not invent local boundaries or relocate learning targets. Show source outlines individually at a shared extent for non-point overlaps, masking sea overlays by existing land. Preserve the resolver, unbiased shuffle, grading, learning/rewards and saves. Owner visual GO/ADJUST and independent Hermes geographic/design QA remain release gates; keep the implementation as a draft candidate and leave the existing child download unchanged until approval. This supersedes treating fair numbering plus the old 80-unit crop as sufficient visual assessment quality.
+
+
+## 2026-10-29 — PR #59 owner-required geographic chooser revision
+
+**Supersedes** The 2026-10-27 choice to use generic extreme point crops and scrollable
+point panels. Owner comments 6448336596 and 6490005107 reject that design; passing
+pixel-distance/grading tests did not demonstrate geographic recognisability.
+Restore one geographic scene and city/volcano/state semantics. Use the existing
+illustrative Rome containment convention with source-relative centres, a larger
+city circle and tiny nested Vatican marker, distinct neutral tips, north and a
+regional locator. In broad candidate sets only this tiny relationship needs an
+inset; no canonical anchor changes. Retain complete shared-scale area outlines.
+Fit every candidate/control on first open, checking painted bounds against all
+clipping ancestors and inset occlusion. Rendering/layout depend on candidates
+and space, never the asked answer. Preserve exact resolver/grader/engines/saves/
+rewards and offline packaging. **Status** IMPLEMENTED for the same draft PR59,
+pending owner screenshot review before independent Hermes exact-SHA QA.
+No release replacement, merge or deployment.
+
+## 2026-10-30 — Approved computer candidate and map-selection design lock
+
+**Decision** Integrate PR59 current `6f8bd232` with PR60 history `d7a99213` on their PR51/Release1.2 functional lineage, retaining PR59 approved source-relative nested Rome/Vatican rendering. PR60 is based on older `d55e9de`; its alternative diagram is not required because the owner accepts the previous depiction. Preserve PR59 later geographic cues and first-open viewport fitting rather than reverting them. Generate byte-identical `TOPO-NINO-Computer-Release.html` and a separate candidate prerelease for exact-artifact Hermes PASS/CONDITIONAL/FAIL. **Status** IMPLEMENTED candidate; independent final acceptance pending. **Supersedes** Earlier pending visual-design-GO statements for this approved map selection. **Preserves** Engine/45 IDs/11 chapters/saves/rewards, all existing art and both map themes. No redesign without reproducible functional/geographic defect; no final release or upstream merge before independent acceptance.
+
+## 2026-10-30 — Exact owner-refined SVG supersedes prior Rome illustration
+
+**Decision** Integrate the supplied 1,413-byte refined SVG (SHA256 `c2d66a994879ecc125e2bb3d01accbc8a10730d990b85ee13eb5b050e797c70c`) through one shared importer in existing PR61. Keep source paths/fills/font and Rome/Vatican endpoints, shuffle only assessment numbers, adapt neutral badge readability and reuse the importer in Discover. The diagram is schematic; only the real-map locator carries north. Other locations retain approved source geography/compositions and share pointer ink. **Status** IMPLEMENTED candidate; exact-artifact Hermes QA and owner release acceptance pending. **Supersedes** The earlier PR61 decision that the prior Rome/Vatican rendering was sufficient for the final owner-artwork task. No engine, IDs, coordinates, rewards, saves, dependencies, new art generation, onboarding or passport changes.
+
+## 2026-10-30 — Lead integration evidence and Codex independent handoff
+
+**Decision** Reuse existing draft PR61 and its exact approved-SVG implementation payload `b3540f72b2e21ede842bd38051e6a7015eaa0aa6`; do not create a competing implementation or change runtime bytes merely to repeat completed integration. Add reproducible lead validation, separate Chrome/WebKit all45 ledgers, actual published-download and backup/import evidence, a corrected element-scoped reference capture and an exact-commit Codex handoff. Preserve historical author evidence. **Responsibility** Hermes owns integration; Codex owns fresh independent technical QA, per the current owner mission. **Supersedes** Earlier instructions assigning independent PR61 acceptance to Hermes; lead verification is not independent approval. **Status** Lead gates pass; native Safari is BLOCKED by disabled Remote Automation, not approved by the passing WebKit engine run. Final immutable review SHA is pinned in the PR61 handoff after commit. Independent Codex verdict and owner approval remain required. No merge, final release publication, production/server change, or new design iteration.

@@ -1,0 +1,41 @@
+{
+  "date": "2026-10-30",
+  "owner_approved": true,
+  "scope": "artwork only, no application integration",
+  "rule": "16px Italy silhouette only; 24px to 64px red scooter plus Italy",
+  "svg_masters": [
+    "topo-nino-italy-only-master.svg",
+    "topo-nino-scooter-italy-master.svg"
+  ],
+  "files": {
+    "favicon.ico": {
+      "bytes": 1454,
+      "sha256": "d61343a127d7cae32c86a61f0b41c571b281de8126bea4869d010db0d2d99240"
+    },
+    "topo-nino-italy-only-16.png": {
+      "bytes": 518,
+      "sha256": "ca4d68e3f5c65b0ef8a1b311f4c5c80caafc8f90d3a2f816dda8beb0a5916d75"
+    },
+    "topo-nino-scooter-italy-24.png": {
+      "bytes": 724,
+      "sha256": "17383c4b0af743cca5c275ec3ca9795d2e321e01b0e322f1ad3525dd6d2c4295"
+    },
+    "topo-nino-scooter-italy-32.png": {
+      "bytes": 898,
+      "sha256": "37c261684da5734eb56f3f3e6ed86a1a5c696c47f62b43c2899caa6a99072a0a"
+    },
+    "topo-nino-scooter-italy-48.png": {
+      "bytes": 1292,
+      "sha256": "16ecffe9ed1191078d29432f42c837d619f8d2b4c43cedf9c8b40a8853687074"
+    },
+    "topo-nino-scooter-italy-64.png": {
+      "bytes": 1669,
+      "sha256": "41ffaa25b59513974f0d5b665f36ac06355fc203f0051c6fc2c03304d6b32604"
+    }
+  },
+  "notes": [
+    "SVG icon is symbolic, not exam cartography",
+    "Browser and iPad integration belongs to Hermes",
+    "Original large Nino hero icon unchanged"
+  ]
+}

@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" role="img" aria-label="TOPO Nino: rode scooter met Italië silhouet">
+<defs>
+  <linearGradient id="sky" x2="0" y2="1"><stop stop-color="#118ADB"/><stop offset="1" stop-color="#56BBF1"/></linearGradient>
+</defs>
+<!-- A clean small-icon graphic, purposefully not a downscaled photograph. -->
+<rect width="128" height="128" rx="23" fill="url(#sky)"/>
+<!-- recognizable simplified boot of Italy; decorative, not a geographic assessment shape -->
+<path d="M81 11 L94 7 L107 13 L104 23 L112 30 L107 39 L113 47 L107 54 L109 62 L121 71 L124 85 L115 88 L104 79 L98 77 L99 88 L111 99 L121 105 L115 114 L104 111 L94 104 L86 95 L80 94 L76 105 L68 109 L63 100 L70 87 L82 82 L81 74 L74 67 L75 57 L72 48 L64 41 L67 33 L77 30 L73 21 Z" fill="#247C37" stroke="#FFF1C3" stroke-width="5" stroke-linejoin="round"/>
+<!-- seat and simplified headlight-forward red scooter -->
+<circle cx="29" cy="101" r="14" fill="#25353B"/>
+<circle cx="28" cy="101" r="6" fill="#EDE4D2"/>
+<circle cx="67" cy="103" r="16" fill="#24333A"/>
+<circle cx="67" cy="103" r="7" fill="#EDE4D2"/>
+<path d="M14 89 L14 80 Q19 70 31 71 L42 70 L50 79 L59 81 L67 99 L43 101 L33 95 L22 100 Z" fill="#D42C20" stroke="#86211C" stroke-width="4" stroke-linejoin="round"/>
+<path d="M21 71 Q23 60 37 60 L43 64 L44 70 Z" fill="#6C372A"/>
+<!-- wide red leg-shield creates a distinctive scooter frontal silhouette -->
+<path d="M41 54 Q49 47 60 49 Q71 50 77 63 L78 78 L83 97 Q82 104 73 103 L60 101 L54 88 L51 70 L42 63 Z" fill="#F13C24" stroke="#9C231D" stroke-width="4" stroke-linejoin="round"/>
+<path d="M62 65 Q70 64 72 73 L76 95 L69 95 L65 79 Z" fill="#FF7450"/>
+<!-- gold headlight and clean handlebar are crucial cues at 16 px -->
+<path d="M31 48 L78 48" stroke="#26363D" stroke-width="7" stroke-linecap="round"/>
+<circle cx="58" cy="42" r="18" fill="#FFF3CA" stroke="#9D4B26" stroke-width="5"/>
+<circle cx="58" cy="42" r="11" fill="#FFD96F"/>
+<path d="M52 37 L48 41" stroke="#FFF8D3" stroke-width="5" stroke-linecap="round"/>
+</svg>

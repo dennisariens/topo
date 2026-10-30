@@ -16,6 +16,18 @@ Current large fine-pointer desktop still uses the original right-hand full panel
 - Existing route status appears in `#routeLessonCount`; Test/Gold in `#testStatus`; Learn in `#learnPrompt` and `#learnNext`. These and correct/wrong explanations remain legible.
 - Today/daily-answer credit is **already present** in the current app. Locate canonical actual data and rollover rules before placing a UI display. Do NOT add a second daily ledger, a manufactured threshold or a stressful streak.
 
+
+## Owner visual feedback — iteration 2, 30 October 2026
+**Owner:** "ziet er goed uit maar denk niet dat de knoppen ontdekken, aanwijzen, schrijven en gold toets beneden moeten". Agreed: these are **primary chapter learning navigation**, not footer utilities.
+
+**Approved design direction (placement change, not full implementation GO):**
+- Put a **single compact learning-step strip directly BELOW the top TOPO header and ABOVE the map/task split**, with the chapter context on its left. The sequence runs `01 Ontdekken → 02 Aanwijzen → 03 Schrijven` from left to right.
+- Place `★ Gold-toets` as a visually separate, optional assessment entry at the right end of the same strip (only enabled in runtime when legitimately available); don't present it as a required next stage or allow unauthorized exam unlock. Number styles need no hidden answer hints.
+- Remove the bottom/footer mode buttons entirely. The bottom region can contain only quiet design/support copy; the real learning workspace has no permanent mode navigation below the map.
+- Keep Menu for secondary/advanced controls; don't bury the three learning stages inside Menu on desktop. Compact/iPad Focus Mode retains its tested existing behavior; the strip's eventual responsive integration must be tested rather than forcing two separate mode-nav systems onto the same screen.
+- Fit the strip in one row on desktop; responsive small screens can simplify/stack it without horizontal scroll or hidden Gold. Keep 44 CSS-px hit targets. Preserve the canonical tab handlers and existing stage/unlock logic.
+- Interactive example v2 was exported in the TOPO conversation as `TOPO_NINO_52_Desktop_UX_Preview_v2.html` and was screenshot-checked at 1440×900 and 390×844; all four mode buttons switched example state, and page horizontal overflow was zero. **This is a placeholder-only concept preview, not the actual live TOPO app or QA proof.**
+
 ## Visual direction — before/after proof required
 **North star:** like a premium Italian field notebook, warm ivory paper, restrained green/terracotta ink and one clear task at a time. Calm, legible, 11-year-old friendly, not corporate dashboard or Duolingo control carnival.
 

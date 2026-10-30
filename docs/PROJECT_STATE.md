@@ -1,5 +1,9 @@
 # Project state
 
+## Current: lead-integration delivery — PR61, Codex independent gate
+
+Hermes reused the existing PR61 candidate, integrated around the exact owner SVG, and finalized reproducible lead evidence without a competing branch or runtime rewrite. Installed Chrome156 and WebKit27.2 both pass all45 per-item offline pointer/writing checks; build/lint/17-program regression, selection/session/focus/overlap, actual published-download and real backup/daily/import checks pass. Runtime and released HTML remain byte-identical to `b3540f72b2e21ede842bd38051e6a7015eaa0aa6`. **This is lead validation, not independent QA.** The current owner mission assigns independent technical QA to **Codex**, superseding older text assigning it to Hermes. Native Safari is BLOCKED by disabled Remote Automation; WebKit is not native Safari approval. Physical iPad/OS keyboard/IME/VoiceOver remain untested. [Current delivery, exact artifact and evidence](INTEGRATED_RELEASE_CANDIDATE.md) · [Codex handoff](CODEX_INTEGRATION_QA_HANDOFF.md). Final immutable review SHA is pinned in the PR61 lead handoff comment. Same draft PR, no merge/deploy/server mutation.
+
 ## Owner-supplied refined SVG — current PR61 candidate
 
 The exact `TOPO-Rome-Vaticaanstad-approved-refined.svg` is now bundled by the shared selector for neutral Point/Test/Gold/multi-way choices and the existing Discover explanation. Rome’s tip is inside the dotted city rim; Vatican remains within the city. Other approved compositions retain their geography and share the approved pointer ink. Full implementation, exact-asset provenance, current evidence and independent/Safari gates: [APPROVED_ARTWORK_COMPUTER_RELEASE.md](APPROVED_ARTWORK_COMPUTER_RELEASE.md). This supersedes the prior candidate’s choice to retain the older schematic. Same PR #61; no merge or final release.

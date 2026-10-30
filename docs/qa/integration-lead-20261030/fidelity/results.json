@@ -1,0 +1,86 @@
+{
+  "assetSha256": "c2d66a994879ecc125e2bb3d01accbc8a10730d990b85ee13eb5b050e797c70c",
+  "artifactSha256": "422f39dd06cb2ea2d6524ce07e4524738aa425aef5c5e54d63b55d90b54143a9",
+  "browser": "156.0.8078.74",
+  "transport": "file:// offline:true",
+  "records": [
+    {
+      "mode": "learn",
+      "random": 0,
+      "drawingAndTypographyExact": true,
+      "digits": [
+        "2",
+        "1"
+      ]
+    },
+    {
+      "mode": "learn",
+      "random": 0.99999,
+      "drawingAndTypographyExact": true,
+      "digits": [
+        "1",
+        "2"
+      ]
+    },
+    {
+      "mode": "point",
+      "random": 0,
+      "drawingAndTypographyExact": true,
+      "digits": [
+        "2",
+        "1"
+      ]
+    },
+    {
+      "mode": "point",
+      "random": 0.99999,
+      "drawingAndTypographyExact": true,
+      "digits": [
+        "1",
+        "2"
+      ]
+    },
+    {
+      "mode": "exam",
+      "random": 0,
+      "drawingAndTypographyExact": true,
+      "digits": [
+        "2",
+        "1"
+      ]
+    },
+    {
+      "mode": "exam",
+      "random": 0.99999,
+      "drawingAndTypographyExact": true,
+      "digits": [
+        "1",
+        "2"
+      ]
+    },
+    {
+      "mode": "gold",
+      "random": 0,
+      "drawingAndTypographyExact": true,
+      "digits": [
+        "2",
+        "1"
+      ]
+    },
+    {
+      "mode": "gold",
+      "random": 0.99999,
+      "drawingAndTypographyExact": true,
+      "digits": [
+        "1",
+        "2"
+      ]
+    }
+  ],
+  "discoverLensUsesSameArtwork": true,
+  "writingHasNoNamedLens": true,
+  "coverage": "Shared-component mode fixtures; Gold scoring separately tested through route queues",
+  "errors": [],
+  "consoleErrors": [],
+  "external": []
+}

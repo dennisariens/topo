@@ -1,0 +1,131 @@
+
+> topo-italie-baseline@0.1.0 release:check
+> npm run build && npm run lint && npm test && npm run audit:release-1-2 && node scripts/audit-map-picker-revision.mjs
+
+
+> topo-italie-baseline@0.1.0 build
+> node scripts/build.mjs
+
+Semantic map tap resolver embedded; original SVG geometry and engines retained
+Original schoolblad overlay embedded; no external assets
+Embedded six byte-verified owner WebPs; no external runtime assets
+Six background lakes generated from pinned Natural Earth polygons (no simplification)
+Discovery atlas embedded: pinned DEM, live two-choice utility, no external runtime dependency
+Focus Mode embedded: original input, visual viewport sheet, one unchanged map; fully offline
+Static preview generated from canonical 45 places
+Generated print.html from 45 current worksheet items and 12 groups
+Standalone interactive HTML: output/html/topo-italie-interactief.html
+App, print page, standalone bundle and learning engine JavaScript syntax: OK
+Pinned Nino art, reusable slots and all offline image bytes: OK
+Discovery atlas code, original geometry references and embedded DEM bytes: OK
+Semantic map hit resolver source/standalone parity: OK
+TOPO-NINO Computer release filename and canonical bytes: OK
+45 content entries, anchors, coastal markers, microstates, selected land checks: OK
+Limit: drawn Italy polygon is not an independent geographic ground truth
+Static build: dist/index.html, dist/print.html, dist/printboek.pdf
+
+> topo-italie-baseline@0.1.0 lint
+> node scripts/check-syntax.mjs
+
+App, print page, standalone bundle and learning engine JavaScript syntax: OK
+Pinned Nino art, reusable slots and all offline image bytes: OK
+Discovery atlas code, original geometry references and embedded DEM bytes: OK
+Semantic map hit resolver source/standalone parity: OK
+TOPO-NINO Computer release filename and canonical bytes: OK
+
+> topo-italie-baseline@0.1.0 test
+> node scripts/validate-map.mjs && node scripts/validate-print.mjs && node scripts/learning-engine.test.mjs && node scripts/route-engine.test.mjs && node scripts/exam-flow.test.mjs && node scripts/ui-smoke.test.mjs && node scripts/route-dom.test.mjs && node scripts/work-regression.cjs && node scripts/release-1-dom.test.mjs && node scripts/qa-findings.test.mjs && node scripts/polish.test.mjs && node --test scripts/nino-art.test.mjs && node scripts/geography/lakes.test.mjs && node --test scripts/schoolblad.test.mjs && node --test scripts/discovery-map.test.mjs && node --test scripts/map-hit.test.mjs && node --test scripts/focus-mode.test.mjs
+
+45 content entries, anchors, coastal markers, microstates, selected land checks: OK
+Limit: drawn Italy polygon is not an independent geographic ground truth
+Printable A4 groups, school photo and all 45 worksheet mappings: OK
+Shuffle, coverage, spaced mistake review, legacy migration and Vespa cadence: OK
+Route locks, stages, repair spacing, gold, persistence, rewards and scheduled review: OK
+Finite geography test, point/write grading, scoring, skips and restart: OK
+Full standalone boot and learn/point/write/exam/reset button flow: OK
+All 11 route chapters and gold tests, dock controls, mode switch, resume and reset: OK
+Real HTML DOM: controls, SVG events, reload, atomic rewards, unique IDs, enclave and storage failure: OK
+PASS: JavaScript syntax; 168 correct answers → 21 pizzas / 7 trips; every 8/24 rollover; reload preserves rewards; duplicate answer cannot earn twice.
+PASS: six-question breaks retain full gold coverage; halfway save/restore; daily goal resets independently of lifetime rewards.
+PASS: adaptive six-task session, skill isolation, restore and legacy migration; 27 source-projected locations; 45 geometry/code baselines; fallback matches live coordinates.
+PASS: three-stage migration preserves writing completion; code sessions removed; tests and adaptive rounds use pointing/writing only.
+Legacy saves, skill isolation, round/lifetime scores, neutral keyboard picker, microstate highlights, river tolerance and daily reset: OK
+QA-1: stage/gold replay daily credit, reload/resubmit idempotence and pizza ledger: PASS
+QA-2: 19 malformed imports preserve exact memory/storage before confirmation; valid schemas 1/2 and interrupted/code migrations: PASS
+Release 1.1: eleven icon references/fallback, route disclosures, eight-slice copy, NOW gating and truthful Nino outcomes: PASS
+✔ pure role policy: strict Gold, real success, exam suppression and genuine trip only (0.922542ms)
+✔ all six local exports equal manifest hashes and canonical embedded WebP bytes (730.90125ms)
+✔ pending scenes/postcards stay locked or empty; missing and failed art falls back safely (442.640125ms)
+✔ canonical engines, geometry, original artwork and print artifacts equal pinned base (776.145792ms)
+✔ DOM grade/resubmit/reload, chapter completion, Gold/replay/miss preserve base progress and rewards (2637.384542ms)
+✔ free practice wrong-only art, exam suppression, and arrival only at real reward threshold (528.951458ms)
+ℹ tests 6
+ℹ suites 0
+ℹ pass 6
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 5683.466333
+Six pinned lake polygons, exact projection/envelopes/hashes, Como forks, live/static/offline parity and noninteractive background contract: OK
+✔ one unchanged photograph; pre-existing code exact except the bounded map resolver hotfix (462.791458ms)
+✔ Learn, Point, Write, exam and route reference opening never mutates a task or progress (730.594292ms)
+✔ answered/unanswered route and Gold remain exact across cancel; draft answer/caret recover (469.275875ms)
+✔ modal semantics, keyboard containment and progressive legacy fallback (933.92425ms)
+ℹ tests 4
+ℹ suites 0
+ℹ pass 4
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 3075.386917
+✔ verified PR27 app retained except isolated atlas and bounded semantic resolver replacement (477.864166ms)
+✔ pinned DEM bytes embedded, original frame and source land references, no new geographic paths (704.094416ms)
+✔ activity defaults, explicit persistent choice and exact active-question continuity (920.62625ms)
+✔ exactly two styles per utility, separate original schoolblad and safe zoom (422.817667ms)
+ℹ tests 4
+ℹ suites 0
+ℹ pass 4
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 2996.077542
+✔ the only canonical app delta is the bounded resolver; engines, geography, schoolblad and atlas remain exact (394.095459ms)
+✔ all 45 stable IDs have semantic classes: 27 points and independent polygons/river corridors (705.992459ms)
+✔ neutral display order is not distance or expected-answer order, and never mutates candidates (445.205667ms)
+✔ real Rome/Vatican keyboard chooser grades stable IDs with both first/second correct and wrong cases (498.134541ms)
+✔ every point pair keeps its exact source anchors and answer-independent regional framing (419.33075ms)
+✔ all recorded point collision sets keep noncrossing leaders at compact and wide sizes (439.825833ms)
+✔ Vatican is illustrated inside Rome with two different noncrossing endpoint targets (466.755917ms)
+✔ approved owner SVG is embedded exactly; shuffled numbers cannot change its drawing (444.15775ms)
+✔ regional choosers retain distinct volcano/city/state glyphs and source context (487.828208ms)
+✔ picker rendering does not read expected answer and names containment only in Discover (0.493208ms)
+ℹ tests 10
+ℹ suites 0
+ℹ pass 10
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 4829.472583
+✔ P0 iPad hotfix preserves verified PR39 teaching, rewards and source outside explicit changes (360.826958ms)
+✔ one canonical input/submit; responsive reparenting retains draft, caret, task and saved progress (762.011875ms)
+✔ visual viewport adapter reads real offsets without editing learner state or field selection (476.21225ms)
+✔ chapter availability writes are idempotent: no MutationObserver disabled loop (441.385375ms)
+✔ Frosted Parchment keeps children opaque and exposes reduced-transparency/contrast fallbacks (1.364708ms)
+ℹ tests 5
+ℹ suites 0
+ℹ pass 5
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 2504.865333
+
+> topo-italie-baseline@0.1.0 audit:release-1-2
+> node scripts/audit-release-1-2.mjs
+
+Source audit PASS: immutable engines/art/44 targets, exact approved Apennines/UI exceptions, fresh print and idempotent offline builds
+PASS exact source, engine, geometry, resolver/grading and standalone preservation; 3152649 bytes; SHA256 422f39dd06cb2ea2d6524ce07e4524738aa425aef5c5e54d63b55d90b54143a9

@@ -2,14 +2,14 @@ import assert from 'node:assert/strict';
 import {readFileSync,writeFileSync,mkdirSync} from 'node:fs';
 import {createHash} from 'node:crypto';
 const {chromium}=await import(process.env.PLAYWRIGHT_MODULE||'playwright');
-const root=new URL('../',import.meta.url),out=new URL('docs/qa/approved-artwork-20261030/fidelity/',root);mkdirSync(out,{recursive:true});
+const root=new URL('../',import.meta.url),out=new URL(process.env.QA_FIDELITY_DIR||'docs/qa/approved-artwork-20261030/fidelity/',root);mkdirSync(out,{recursive:true});
 const artifact=new URL('output/html/TOPO-NINO-Computer-Release.html',root),asset=new URL('assets/map-selection/TOPO-Rome-Vaticaanstad-approved-refined.svg',root);
 const hash=b=>createHash('sha256').update(b).digest('hex'),browser=await chromium.launch(process.env.CHROME_PATH?{executablePath:process.env.CHROME_PATH}:{}),errors=[],external=[],consoleErrors=[],records=[];
 try{
  const c=await browser.newContext({offline:true,viewport:{width:1500,height:1000}}),p=await c.newPage();p.on('pageerror',e=>errors.push(e.message));p.on('console',m=>{if(m.type()==='error')consoleErrors.push(m.text())});p.on('request',r=>{if(!/^(file:|data:)/.test(r.url()))external.push(r.url())});p.on('dialog',d=>d.accept());
- await p.setViewportSize({width:340,height:212});await p.setContent('<!doctype html><html><head><style>body{margin:0}svg{display:block;width:340px;height:212px}</style></head><body>'+readFileSync(asset,'utf8')+'</body></html>');const original=await p.evaluate(()=>{
+ await p.setViewportSize({width:1500,height:1000});await p.setContent('<!doctype html><html><head><style>body{margin:0}svg{display:block;width:340px;height:212px}</style></head><body>'+readFileSync(asset,'utf8')+'</body></html>');const original=await p.evaluate(()=>{
   const svg=document.querySelector('svg');return {drawing:[...svg.querySelectorAll('rect,circle,path')].map(n=>[n.tagName,...['d','cx','cy','r','fill','stroke','stroke-width','opacity'].map(k=>n.getAttribute(k))]),font:svg.getAttribute('font-family')};
- });await p.screenshot({path:new URL('owner-original.png',out).pathname});await p.setViewportSize({width:1500,height:1000});await p.goto(artifact.href);
+ });await p.locator('svg').screenshot({path:new URL('owner-original.png',out).pathname});await p.setViewportSize({width:1500,height:1000});await p.goto(artifact.href);
  for(const modeName of ['learn','point','exam','gold'])for(const random of[0,.99999]){
   await p.evaluate(({modeName,random})=>{if(pick.open)pick.close();if(modeName==='gold'){mode('route');state.route=TopoRoute.fresh();for(const chapter of ROUTE_CHAPTERS)TopoRoute.record(state.route,chapter.id).stage=3;state.route=TopoRoute.restore(state.route,ROUTE_CHAPTERS);startRouteLesson('city2','gold')}else mode(modeName);state.current=byId['city-9'];state.questionMode='point';state.answered=false;mapChoiceRandom=()=>random;openMapPicker([byId['city-9'],byId['area-o']]);},{modeName,random});
   const actual=await p.locator('#mapPicker [data-approved-artwork]').evaluate(svg=>({drawing:[...svg.querySelectorAll('rect,circle,path')].map(n=>[n.tagName,...['d','cx','cy','r','fill','stroke','stroke-width','opacity'].map(k=>n.getAttribute(k))]),font:svg.getAttribute('font-family'),digits:[...svg.querySelectorAll('text')].map(n=>n.textContent)}));

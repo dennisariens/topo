@@ -1,13 +1,15 @@
 import assert from 'node:assert/strict';
 import {readFileSync,writeFileSync,mkdirSync} from 'node:fs';
 import {createHash} from 'node:crypto';
-const {chromium}=await import(process.env.PLAYWRIGHT_MODULE||'playwright');
+const {chromium,webkit}=await import(process.env.PLAYWRIGHT_MODULE||'playwright');
+assert(!process.env.QA_BROWSER||['chromium','webkit'].includes(process.env.QA_BROWSER),'QA_BROWSER must be chromium or webkit');
+const browserType=process.env.QA_BROWSER==='webkit'?webkit:chromium;
 const root=new URL('../',import.meta.url),file=new URL(process.env.TOPO_RELEASE_FILE||'output/html/TOPO-NINO-Computer-Release.html',root);
 const out=new URL(process.env.QA_INTEGRITY_DIR||'docs/qa/computer-release-20261030/integrity/',root);mkdirSync(out,{recursive:true});
 const sha=b=>createHash('sha256').update(b).digest('hex'),bytes=readFileSync(file);
 const manifest=JSON.parse(readFileSync(new URL('docs/geography/map-manifest.json',root)));
 const points=JSON.parse(readFileSync(new URL('docs/geography/points.json',root)));
-const browser=await chromium.launch(process.env.CHROME_PATH?{executablePath:process.env.CHROME_PATH}:{}),errors=[],consoleErrors=[],external=[],ledger=[];
+const browser=await browserType.launch(browserType===chromium&&process.env.CHROME_PATH?{executablePath:process.env.CHROME_PATH}:{}),errors=[],consoleErrors=[],external=[],ledger=[];
 const context=await browser.newContext({offline:true,viewport:{width:1500,height:1100},reducedMotion:'reduce'}),p=await context.newPage();
 p.on('pageerror',e=>errors.push(e.message));p.on('console',m=>{if(m.type()==='error')consoleErrors.push(m.text())});p.on('request',r=>{if(!/^(file:|data:)/.test(r.url()))external.push(r.url())});p.on('dialog',d=>d.accept());p.setDefaultTimeout(10000);
 async function fixture(id,mode='point'){

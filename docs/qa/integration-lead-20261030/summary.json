@@ -1,0 +1,210 @@
+{
+  "role": "Hermes lead-integration verification; NOT independent Codex acceptance",
+  "implementationCommit": "b3540f72b2e21ede842bd38051e6a7015eaa0aa6",
+  "reviewTarget": "Exact final SHA in PR61 lead-integration handoff comment; do not use a moving branch",
+  "artifact": {
+    "path": "output/html/TOPO-NINO-Computer-Release.html",
+    "bytes": 3152649,
+    "sha256": "422f39dd06cb2ea2d6524ce07e4524738aa425aef5c5e54d63b55d90b54143a9",
+    "url": "https://github.com/dennisariens/topo/releases/download/topo-nino-computer-approved-artwork-rc-20261030/TOPO-NINO-Computer-Release.html"
+  },
+  "ownerSVG": {
+    "sha256": "c2d66a994879ecc125e2bb3d01accbc8a10730d990b85ee13eb5b050e797c70c",
+    "sourceBytesUnchanged": true
+  },
+  "engines": {
+    "Google Chrome": {
+      "artifact": "file:///Users/dennisariens/projects/topo-integrated-release/output/html/TOPO-NINO-Computer-Release.html",
+      "bytes": 3152649,
+      "sha256": "422f39dd06cb2ea2d6524ce07e4524738aa425aef5c5e54d63b55d90b54143a9",
+      "browser": "156.0.8078.74",
+      "transport": "file:// offline:true",
+      "objects": 45,
+      "styles": 2,
+      "correctPointerTrials": 180,
+      "wrongPointerTrials": 90,
+      "writingTrials": 180,
+      "coverage": "Explicit per-item current-question fixtures with actual mouse/buttons and writing; not a full natural-route all-45 playthrough. Existing DOM suite covers all eleven route chapters. Geography compares pinned source baselines, not a fresh independent survey.",
+      "goldWrongCannotPass": true,
+      "reloadExact": true,
+      "errors": [],
+      "consoleErrors": [],
+      "external": [],
+      "physicalSafari": "NOT TESTED"
+    },
+    "Playwright WebKit, NOT native Safari": {
+      "artifact": "file:///Users/dennisariens/projects/topo-integrated-release/output/html/TOPO-NINO-Computer-Release.html",
+      "bytes": 3152649,
+      "sha256": "422f39dd06cb2ea2d6524ce07e4524738aa425aef5c5e54d63b55d90b54143a9",
+      "browser": "27.2",
+      "transport": "file:// offline:true",
+      "objects": 45,
+      "styles": 2,
+      "correctPointerTrials": 180,
+      "wrongPointerTrials": 90,
+      "writingTrials": 180,
+      "coverage": "Explicit per-item current-question fixtures with actual mouse/buttons and writing; not a full natural-route all-45 playthrough. Existing DOM suite covers all eleven route chapters. Geography compares pinned source baselines, not a fresh independent survey.",
+      "goldWrongCannotPass": true,
+      "reloadExact": true,
+      "errors": [],
+      "consoleErrors": [],
+      "external": [],
+      "physicalSafari": "NOT TESTED"
+    }
+  },
+  "objectIDs": [
+    "area-a",
+    "area-b",
+    "area-c",
+    "area-d",
+    "area-e",
+    "area-f",
+    "area-g",
+    "area-h",
+    "area-i",
+    "area-j",
+    "area-k",
+    "area-l",
+    "area-m",
+    "area-n",
+    "area-o",
+    "city-1",
+    "city-10",
+    "city-11",
+    "city-12",
+    "city-13",
+    "city-14",
+    "city-15",
+    "city-16",
+    "city-17",
+    "city-18",
+    "city-19",
+    "city-2",
+    "city-20",
+    "city-21",
+    "city-22",
+    "city-23",
+    "city-3",
+    "city-4",
+    "city-5",
+    "city-6",
+    "city-7",
+    "city-8",
+    "city-9",
+    "water-A",
+    "water-B",
+    "water-C",
+    "water-D",
+    "water-E",
+    "water-F",
+    "water-G"
+  ],
+  "testPrograms": 17,
+  "selectionCases": 280,
+  "selectionLayouts": 280,
+  "sessionCases": 12,
+  "physical": {
+    "enumeratedCells": 799,
+    "passed": 679,
+    "excludedNotPass": 120,
+    "actualMouseTaps": 1358,
+    "method": "Retest all 799 previously enumerated resolver cells after double animation-frame layout/pan settling. NOT a new enumeration of continuous space. Two identical physical taps per addressable cell with different requested targets."
+  },
+  "fidelityCases": 8,
+  "focusViewports": 7,
+  "download": {
+    "url": "https://github.com/dennisariens/topo/releases/download/topo-nino-computer-approved-artwork-rc-20261030/TOPO-NINO-Computer-Release.html",
+    "filename": "TOPO-NINO-Computer-Release.html",
+    "bytes": 3152649,
+    "sha256": "422f39dd06cb2ea2d6524ce07e4524738aa425aef5c5e54d63b55d90b54143a9",
+    "browser": "156.0.8078.74",
+    "file": "file:///Users/dennisariens/.hermes/cache/scratch/topo-integrated-release-download/TOPO-NINO-Computer-Release.html",
+    "offline": true,
+    "writingCorrect": true,
+    "vaticanChooserCorrect": true,
+    "errors": [],
+    "consoleErrors": [],
+    "external": []
+  },
+  "backup": {
+    "role": "Lead integration validation, not independent QA",
+    "consoleErrors": [],
+    "artifact": "file:///Users/dennisariens/projects/topo-integrated-release/output/html/TOPO-NINO-Computer-Release.html",
+    "offline": true,
+    "browser": "156.0.8078.74",
+    "desktopStyleDraftCaretQuestionInvariant": true,
+    "realWrongCorrectGrading": true,
+    "actualJSONExport": true,
+    "invalidNestedImportPreservesMemoryAndDisk": true,
+    "canceledImportPreservesMemoryAndDisk": true,
+    "samePathReload": true,
+    "realBackupTransferToFreshContext": true,
+    "errors": [],
+    "external": [],
+    "webkitInstalled": true,
+    "nativeSafari": "NOT TESTED"
+  },
+  "daily": {
+    "browser": "156.0.8078.74",
+    "url": "file:///Users/dennisariens/projects/topo-integrated-release/output/html/TOPO-NINO-Computer-Release.html",
+    "QA1": {
+      "initialDaily": 6,
+      "stageReplayDaily": 12,
+      "initialRewards": [
+        6,
+        0,
+        6,
+        0
+      ],
+      "stageReplayRewards": [
+        6,
+        0,
+        6,
+        0
+      ],
+      "goldDaily": 30,
+      "goldReplayDaily": 42,
+      "goldRewards": [
+        24,
+        3,
+        0,
+        1
+      ],
+      "goldReplayRewards": [
+        24,
+        3,
+        0,
+        1
+      ],
+      "reloadAndResubmission": "PASS"
+    },
+    "QA2": {
+      "negativeImports": 6,
+      "memoryAndStorageByteEquivalent": true,
+      "rejectedBeforeConfirmation": true,
+      "validSchemas": [
+        1,
+        2
+      ]
+    },
+    "errors": [],
+    "physicalIPadSafari": "not tested"
+  },
+  "nativeSafari": {
+    "browser": "native Safari via safaridriver",
+    "status": "BLOCKED",
+    "settingsChanged": false,
+    "testProfile": "WebDriver automation session only",
+    "physicalIPad": "NOT TESTED",
+    "reason": "{\"value\":{\"error\":\"session not created\",\"message\":\"Could not create a session: You must enable 'Allow remote automation' in the Developer section of Safari Settings to control Safari via WebDriver.\",\"stacktrace\":\"\"}}",
+    "requiredAction": "Owner must enable Safari Allow Remote Automation if disabled; no setting enabled by this script"
+  },
+  "limits": [
+    "Per-item question fixtures are not a full natural-route all45 playthrough; DOM regression separately covers all eleven chapters.",
+    "Geography compares pinned source/projection baselines; eight schematic extents are not independently GIS-certified.",
+    "679/799 finite overlap cells pass; 120 unaddressable integer-pixel border samples excluded, not passes. Not continuous-space coverage.",
+    "Native Safari blocked by Allow Remote Automation being disabled; WebKit is NOT a native Safari approval.",
+    "Physical iPad, OS keyboard, IME and VoiceOver not tested.",
+    "Independent Codex review and owner approval remain required. No merge or deployment."
+  ]
+}

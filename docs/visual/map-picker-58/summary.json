@@ -1,0 +1,15 @@
+{
+  "entries": 799,
+  "physicalRenderEntries": 657,
+  "uniquePhysicalCandidateSets": 154,
+  "physicalClasses": {
+    "point": 627,
+    "sea": 30
+  },
+  "sourceBorderEntries": 120,
+  "occludedPointEntries": 22,
+  "minimumRenderedEndpointPx": 32.02264422544305,
+  "maximumCandidates": 7,
+  "htmlBytes": 3143245,
+  "htmlSha256": "84bf071e52f917832f0dfa67a1e33e0b394a037378cf3cbfaceef2ef02f434d5"
+}

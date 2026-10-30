@@ -12,12 +12,17 @@ test('P0 iPad hotfix preserves verified PR39 teaching, rewards and source outsid
  const newAtlas=read('scripts/discovery-map.js').toString();
  const oldAtlasCss=execFileSync('git',['show',base+':scripts/discovery-map.css'],{cwd:root,maxBuffer:24e6}).toString();
  const newAtlasCss=read('scripts/discovery-map.css').toString();
- let normalized=withoutFocus(html).replaceAll(newArea,oldArea);
+ const oldHit=execFileSync('git',['show',base+':scripts/map-hit.js'],{cwd:root,maxBuffer:24e6}).toString(),newHit=read('scripts/map-hit.js').toString();
+ // #58 changes only chooser presentation; preserve resolver, selection and grading verbatim.
+ assert.equal(newHit.slice(0,newHit.indexOf('// Layout uses only')),oldHit.slice(0,oldHit.indexOf('function openMapPicker')));
+ const handler="$('#map').addEventListener('click'";assert.equal(newHit.slice(newHit.indexOf(handler)),oldHit.slice(oldHit.indexOf(handler)));
+ assert(html.includes(newHit),'exact reviewed chooser source embedded');
+ let normalized=withoutFocus(html.replace(newHit,oldHit)).replaceAll(newArea,oldArea);
  assert.ok(normalized.includes(newAtlas),'new Kaartstijl source is embedded');
  assert.ok(normalized.includes(newAtlasCss),'new Kaartstijl CSS is embedded');
  normalized=normalized.replace(newAtlas,oldAtlas).replace(newAtlasCss,oldAtlasCss);
  assert.equal(normalized,baseline,'canonical quiz, targets, route and reward engine unchanged outside scoped corrections');
- for(const p of ['scripts/map-hit.js','scripts/schoolblad.js','scripts/schoolblad.css','scripts/learning-engine.js','scripts/route-engine.js','assets/discovery/terrain.webp','geography/lakes/projected-manifest.json','print.html','output/pdf/topo-italie-printboek.pdf','package-lock.json'])assertPreserved(p,read(p),execFileSync('git',['show',base+':'+p],{cwd:root,maxBuffer:24e6}));
+ for(const p of ['scripts/schoolblad.js','scripts/schoolblad.css','scripts/learning-engine.js','scripts/route-engine.js','assets/discovery/terrain.webp','geography/lakes/projected-manifest.json','print.html','output/pdf/topo-italie-printboek.pdf','package-lock.json'])assertPreserved(p,read(p),execFileSync('git',['show',base+':'+p],{cwd:root,maxBuffer:24e6}));
  for(const p of ['output/html/topo-italie-interactief.html','output/html/topo-italie-duolingo.html'])assert(read(p).equals(read('index.html')),p);
  assert.match(read('scripts/focus-camera.js').toString(),/chapterButton\.disabled=!available/,'all-45 chapter camera really disabled');
  assert.match(read('scripts/discovery-map.js').toString(),/Kaartstijl/);

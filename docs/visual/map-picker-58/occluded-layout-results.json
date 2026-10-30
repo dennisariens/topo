@@ -1,0 +1,416 @@
+{
+  "records": [
+    {
+      "name": "small-phone",
+      "camera": "overview",
+      "style": "school",
+      "ids": [
+        "area-f",
+        "city-7"
+      ],
+      "metrics": [
+        {
+          "minEndpointPx": 82.17660421156414
+        }
+      ],
+      "coverage": "recorded resolver-candidate→chooser fixture; physical tap occluded by inherited Focus controls",
+      "correctChoice": true
+    },
+    {
+      "name": "small-phone",
+      "camera": "overview",
+      "style": "school",
+      "ids": [
+        "area-f",
+        "city-15"
+      ],
+      "metrics": [
+        {
+          "minEndpointPx": 80.33206611939508
+        }
+      ],
+      "coverage": "recorded resolver-candidate→chooser fixture; physical tap occluded by inherited Focus controls",
+      "correctChoice": true
+    },
+    {
+      "name": "small-phone",
+      "camera": "overview",
+      "style": "school",
+      "ids": [
+        "city-15",
+        "city-7"
+      ],
+      "metrics": [
+        {
+          "minEndpointPx": 87.71134794060258
+        }
+      ],
+      "coverage": "recorded resolver-candidate→chooser fixture; physical tap occluded by inherited Focus controls",
+      "correctChoice": true
+    },
+    {
+      "name": "small-phone",
+      "camera": "overview",
+      "style": "school",
+      "ids": [
+        "city-16",
+        "city-19"
+      ],
+      "metrics": [
+        {
+          "minEndpointPx": 107.00963532760055
+        }
+      ],
+      "coverage": "recorded resolver-candidate→chooser fixture; physical tap occluded by inherited Focus controls",
+      "correctChoice": true
+    },
+    {
+      "name": "small-phone",
+      "camera": "overview",
+      "style": "school",
+      "ids": [
+        "city-15",
+        "city-19"
+      ],
+      "metrics": [
+        {
+          "minEndpointPx": 86.75697947973008
+        }
+      ],
+      "coverage": "recorded resolver-candidate→chooser fixture; physical tap occluded by inherited Focus controls",
+      "correctChoice": true
+    },
+    {
+      "name": "small-phone",
+      "camera": "overview",
+      "style": "school",
+      "ids": [
+        "area-f",
+        "city-19",
+        "city-7"
+      ],
+      "metrics": [
+        {
+          "minEndpointPx": null
+        },
+        {
+          "minEndpointPx": 103.68536582579611
+        }
+      ],
+      "coverage": "recorded resolver-candidate→chooser fixture; physical tap occluded by inherited Focus controls",
+      "correctChoice": true
+    },
+    {
+      "name": "small-phone",
+      "camera": "overview",
+      "style": "school",
+      "ids": [
+        "area-f",
+        "city-15",
+        "city-19"
+      ],
+      "metrics": [
+        {
+          "minEndpointPx": null
+        },
+        {
+          "minEndpointPx": 80.33206611939508
+        }
+      ],
+      "coverage": "recorded resolver-candidate→chooser fixture; physical tap occluded by inherited Focus controls",
+      "correctChoice": true
+    },
+    {
+      "name": "small-phone",
+      "camera": "overview",
+      "style": "school",
+      "ids": [
+        "area-f",
+        "city-15",
+        "city-7"
+      ],
+      "metrics": [
+        {
+          "minEndpointPx": null
+        },
+        {
+          "minEndpointPx": 80.33206611939508
+        }
+      ],
+      "coverage": "recorded resolver-candidate→chooser fixture; physical tap occluded by inherited Focus controls",
+      "correctChoice": true
+    },
+    {
+      "name": "small-phone",
+      "camera": "overview",
+      "style": "school",
+      "ids": [
+        "area-f",
+        "city-16",
+        "city-19"
+      ],
+      "metrics": [
+        {
+          "minEndpointPx": 40.712252286382686
+        }
+      ],
+      "coverage": "recorded resolver-candidate→chooser fixture; physical tap occluded by inherited Focus controls",
+      "correctChoice": true
+    },
+    {
+      "name": "small-phone",
+      "camera": "overview",
+      "style": "school",
+      "ids": [
+        "area-f",
+        "city-15",
+        "city-19",
+        "city-7"
+      ],
+      "metrics": [
+        {
+          "minEndpointPx": null
+        },
+        {
+          "minEndpointPx": null
+        },
+        {
+          "minEndpointPx": 80.33206611939508
+        }
+      ],
+      "coverage": "recorded resolver-candidate→chooser fixture; physical tap occluded by inherited Focus controls",
+      "correctChoice": true
+    },
+    {
+      "name": "small-phone",
+      "camera": "overview",
+      "style": "school",
+      "ids": [
+        "area-f",
+        "city-15",
+        "city-16",
+        "city-19"
+      ],
+      "metrics": [
+        {
+          "minEndpointPx": null
+        },
+        {
+          "minEndpointPx": null
+        },
+        {
+          "minEndpointPx": 80.33206611939508
+        }
+      ],
+      "coverage": "recorded resolver-candidate→chooser fixture; physical tap occluded by inherited Focus controls",
+      "correctChoice": true
+    },
+    {
+      "name": "small-phone",
+      "camera": "overview",
+      "style": "discovery",
+      "ids": [
+        "area-f",
+        "city-7"
+      ],
+      "metrics": [
+        {
+          "minEndpointPx": 82.17660421156414
+        }
+      ],
+      "coverage": "recorded resolver-candidate→chooser fixture; physical tap occluded by inherited Focus controls",
+      "correctChoice": true
+    },
+    {
+      "name": "small-phone",
+      "camera": "overview",
+      "style": "discovery",
+      "ids": [
+        "area-f",
+        "city-15"
+      ],
+      "metrics": [
+        {
+          "minEndpointPx": 80.33206611939508
+        }
+      ],
+      "coverage": "recorded resolver-candidate→chooser fixture; physical tap occluded by inherited Focus controls",
+      "correctChoice": true
+    },
+    {
+      "name": "small-phone",
+      "camera": "overview",
+      "style": "discovery",
+      "ids": [
+        "city-15",
+        "city-7"
+      ],
+      "metrics": [
+        {
+          "minEndpointPx": 87.71134794060258
+        }
+      ],
+      "coverage": "recorded resolver-candidate→chooser fixture; physical tap occluded by inherited Focus controls",
+      "correctChoice": true
+    },
+    {
+      "name": "small-phone",
+      "camera": "overview",
+      "style": "discovery",
+      "ids": [
+        "city-16",
+        "city-19"
+      ],
+      "metrics": [
+        {
+          "minEndpointPx": 107.00963532760055
+        }
+      ],
+      "coverage": "recorded resolver-candidate→chooser fixture; physical tap occluded by inherited Focus controls",
+      "correctChoice": true
+    },
+    {
+      "name": "small-phone",
+      "camera": "overview",
+      "style": "discovery",
+      "ids": [
+        "city-15",
+        "city-19"
+      ],
+      "metrics": [
+        {
+          "minEndpointPx": 86.75697947973008
+        }
+      ],
+      "coverage": "recorded resolver-candidate→chooser fixture; physical tap occluded by inherited Focus controls",
+      "correctChoice": true
+    },
+    {
+      "name": "small-phone",
+      "camera": "overview",
+      "style": "discovery",
+      "ids": [
+        "area-f",
+        "city-19",
+        "city-7"
+      ],
+      "metrics": [
+        {
+          "minEndpointPx": null
+        },
+        {
+          "minEndpointPx": 103.68536582579611
+        }
+      ],
+      "coverage": "recorded resolver-candidate→chooser fixture; physical tap occluded by inherited Focus controls",
+      "correctChoice": true
+    },
+    {
+      "name": "small-phone",
+      "camera": "overview",
+      "style": "discovery",
+      "ids": [
+        "area-f",
+        "city-15",
+        "city-19"
+      ],
+      "metrics": [
+        {
+          "minEndpointPx": null
+        },
+        {
+          "minEndpointPx": 80.33206611939508
+        }
+      ],
+      "coverage": "recorded resolver-candidate→chooser fixture; physical tap occluded by inherited Focus controls",
+      "correctChoice": true
+    },
+    {
+      "name": "small-phone",
+      "camera": "overview",
+      "style": "discovery",
+      "ids": [
+        "area-f",
+        "city-15",
+        "city-7"
+      ],
+      "metrics": [
+        {
+          "minEndpointPx": null
+        },
+        {
+          "minEndpointPx": 80.33206611939508
+        }
+      ],
+      "coverage": "recorded resolver-candidate→chooser fixture; physical tap occluded by inherited Focus controls",
+      "correctChoice": true
+    },
+    {
+      "name": "small-phone",
+      "camera": "overview",
+      "style": "discovery",
+      "ids": [
+        "area-f",
+        "city-16",
+        "city-19"
+      ],
+      "metrics": [
+        {
+          "minEndpointPx": 40.712252286382686
+        }
+      ],
+      "coverage": "recorded resolver-candidate→chooser fixture; physical tap occluded by inherited Focus controls",
+      "correctChoice": true
+    },
+    {
+      "name": "small-phone",
+      "camera": "overview",
+      "style": "discovery",
+      "ids": [
+        "area-f",
+        "city-15",
+        "city-19",
+        "city-7"
+      ],
+      "metrics": [
+        {
+          "minEndpointPx": null
+        },
+        {
+          "minEndpointPx": null
+        },
+        {
+          "minEndpointPx": 80.33206611939508
+        }
+      ],
+      "coverage": "recorded resolver-candidate→chooser fixture; physical tap occluded by inherited Focus controls",
+      "correctChoice": true
+    },
+    {
+      "name": "small-phone",
+      "camera": "overview",
+      "style": "discovery",
+      "ids": [
+        "area-f",
+        "city-15",
+        "city-16",
+        "city-19"
+      ],
+      "metrics": [
+        {
+          "minEndpointPx": null
+        },
+        {
+          "minEndpointPx": null
+        },
+        {
+          "minEndpointPx": 80.33206611939508
+        }
+      ],
+      "coverage": "recorded resolver-candidate→chooser fixture; physical tap occluded by inherited Focus controls",
+      "correctChoice": true
+    }
+  ],
+  "errors": [],
+  "physicalTap": "NOT TESTED for these occluded cells"
+}

@@ -138,8 +138,8 @@
         "city-9"
       ],
       "correct": true,
-      "goodBefore": 1,
-      "goodAfter": 2,
+      "goodBefore": 5,
+      "goodAfter": 6,
       "cancelPreservesSession": true,
       "resizePreservesOrderAndFocus": true,
       "focusRestored": true,
@@ -154,8 +154,8 @@
         "city-9"
       ],
       "correct": false,
-      "goodBefore": 5,
-      "goodAfter": 5,
+      "goodBefore": 2,
+      "goodAfter": 2,
       "cancelPreservesSession": true,
       "resizePreservesOrderAndFocus": true,
       "focusRestored": true,
@@ -170,8 +170,8 @@
         "area-o"
       ],
       "correct": true,
-      "goodBefore": 4,
-      "goodAfter": 5,
+      "goodBefore": 5,
+      "goodAfter": 6,
       "cancelPreservesSession": true,
       "resizePreservesOrderAndFocus": true,
       "focusRestored": true,
@@ -186,8 +186,8 @@
         "area-o"
       ],
       "correct": false,
-      "goodBefore": 4,
-      "goodAfter": 4,
+      "goodBefore": 5,
+      "goodAfter": 5,
       "cancelPreservesSession": true,
       "resizePreservesOrderAndFocus": true,
       "focusRestored": true,

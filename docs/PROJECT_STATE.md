@@ -1,5 +1,9 @@
 # Project state
 
+## PR #59 follow-up — 30 October 2026
+
+Verified the existing geography restoration commit 6f8bd23 on the remote PR branch. Added crater/plume volcano glyphs at unchanged summit anchors and neutral “Plek” controls for mixed city/state/volcano choices. Regenerated standalone HTML; full tests, lint, build and exact PR51 preservation audit pass. Fresh offline browser evidence is in docs/visual/map-picker-58-revision/. Owner visual review remains pending.
+
 ## P0 issue #58 — neutral chooser legibility (draft)
 
 Dedicated branch from reviewed PR51 `bd1e57bc48e55a065cbbccb68acea196a64a187c`. Replace visually coincident callouts with exact-anchor geographic crops, constant-size markers, separate badges and noncrossing leaders; non-point options use same-scale outline maps. The resolver, geometry, grading/rewards, saves and artwork remain unchanged. Full tests/lint/build, Focus, Point/Test/Gold and rendered collision QA pass within the recorded matrix. Existing small-phone Focus occlusion is explicitly recorded rather than hidden; physical Safari and owner GO/ADJUST/Hermes review remain pending. [Implementation/evidence/release gate](MAP_PICKER_58.md). Existing child download remains unchanged; no merge/deploy/server mutation.

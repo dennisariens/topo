@@ -177,3 +177,7 @@ and space, never the asked answer. Preserve exact resolver/grader/engines/saves/
 rewards and offline packaging. **Status** IMPLEMENTED for the same draft PR59,
 pending owner screenshot review before independent Hermes exact-SHA QA.
 No release replacement, merge or deployment.
+
+## 2026-10-30 — PR59 symbol legibility follow-up
+
+Retain the geography restoration on the existing PR, with craters and plumes to distinguish volcanoes at compact sizes. Use neutral “Plek” buttons because the selectable symbols include cities, volcanoes and small states. Original source anchors and answer-independent numbering remain unchanged.

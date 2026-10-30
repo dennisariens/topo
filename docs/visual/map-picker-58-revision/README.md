@@ -169,3 +169,7 @@ node scripts/qa-map-picker-sessions.mjs
 
 The historical session runner writes to `map-picker-58/session-results.json`;
 this run's output is copied here and the historical rejected evidence retained.
+
+## 30 October follow-up verification
+
+Fresh captures and browser-results.json identify the rebuilt HTML (SHA256 `23e3c87740deb249d451ceb0d74a76fcbb799ec378dd1904f542a92d8fe25f6c`). Volcano symbols now include craters and plumes; neutral controls read Plek. Build, lint, full 17-program suite and exact PR51 preservation audit passed again. The offline browser matrix reran 280 correct/wrong, both-order checks and 280 candidate layouts across five sizes and both styles. Plume bounds are included in visibility assertions. Twelve Point/Test/Gold interaction sessions passed again; fresh results are in session-results.json. The earlier physical-results.json and gate log files remain historical evidence from 6f8bd23, not new physical tap results for this follow-up. Owner visual approval, independent Hermes QA and physical Safari/child review remain pending.

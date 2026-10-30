@@ -65,6 +65,8 @@ test('regional choosers retain distinct volcano/city/state glyphs and source con
  const a=boot();try{for(const ids of[['city-6','area-e'],['city-15','area-f'],['city-2','city-20'],['city-5','city-13'],['city-3','area-n']]){
   a.ev(`mode('point');openMapPicker(${JSON.stringify(ids)}.map(id=>byId[id]))`);
   const svg=a.d.querySelector('[data-picker-panel]');assert(svg.querySelector('svg path'));assert(svg.querySelector('[data-picker-north]'));
+  for(const id of ids.filter(id=>['area-e','area-f'].includes(id)))assert(svg.querySelector('[data-picker-volcano-plume="'+id+'"]'),'volcano retains a visible plume');
+  assert([...a.d.querySelectorAll('[data-map-choice]')].every(n=>n.textContent.startsWith('Plek ')));
   for(const id of ids){const symbol=svg.querySelector('[data-picker-symbol="'+id+'"]');assert.equal(symbol.dataset.symbolKind,id==='area-e'||id==='area-f'?'volcano':id==='area-n'?'microstate':'city');assert(svg.querySelector('[data-picker-badge="'+id+'"]'));}
  }}finally{a.close()}
 });

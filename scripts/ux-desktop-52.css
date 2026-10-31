@@ -1,0 +1,190 @@
+/* TOPO / NINO #52 — Quiet Italian field notebook desktop.
+   Presentation only. Original geography and Focus/iPad shell are untouched. */
+.ux52Context,.ux52Gold,.ux52Menu,.ux52Today{display:none}
+@media print{body .ux52Context,body .ux52Gold,body .ux52Menu,body .ux52Today{display:none!important}}
+body[data-ux52-desktop="true"]{
+ --ux52-forest:#20584d;--ux52-ink:#203e36;--ux52-rust:#ae6144;
+ --ux52-cream:#fbf8f0;--ux52-paper:#f7f2e7;--ux52-line:#e4ddce;
+ --ux52-muted:#657a70;
+ background:#edeae1;color:var(--ux52-ink);
+}
+body[data-ux52-desktop="true"]>header{
+ max-width:1640px;padding:20px 24px 17px;margin:20px auto 0;
+ border:1px solid var(--ux52-line);border-bottom:0;border-radius:20px 20px 0 0;
+ background:var(--ux52-cream);min-height:78px;
+}
+body[data-ux52-desktop="true"] header .brandWrap{gap:12px}
+body[data-ux52-desktop="true"] header .brand{font-size:clamp(24px,2.4vw,32px);letter-spacing:-.045em;color:var(--ux52-ink)}
+body[data-ux52-desktop="true"] header .brand small{font-size:10px;letter-spacing:.17em;margin-bottom:4px;color:var(--ux52-rust)}
+body[data-ux52-desktop="true"] header .brandMark{border-radius:13px}
+body[data-ux52-desktop="true"] header .stats{display:none}
+body[data-ux52-desktop="true"] .ux52Today{
+ display:inline-flex;align-items:center;justify-content:center;margin-left:auto;padding:9px 14px;
+ border-radius:12px;border:1px solid #e5e0d2;background:#f1efe6;color:#536a5d;
+ font-size:13px;font-weight:650;white-space:nowrap;
+}
+body[data-ux52-desktop="true"] .ux52Menu{display:block;position:relative;z-index:32}
+body[data-ux52-desktop="true"] .ux52MenuToggle{
+ display:flex;align-items:center;justify-content:center;min-height:44px;min-width:100px;
+ list-style:none;cursor:pointer;border:1px solid #b8cfc3;border-radius:12px;
+ padding:9px 15px;background:#fffef9;color:var(--ux52-forest);font-weight:800;font-size:14px;
+}
+body[data-ux52-desktop="true"] .ux52MenuToggle::-webkit-details-marker{display:none}
+body[data-ux52-desktop="true"] .ux52Menu[open] .ux52MenuToggle{background:#e9f1ea}
+body[data-ux52-desktop="true"] .ux52MenuPanel{
+ position:absolute;top:54px;right:0;width:min(360px,calc(100vw - 40px));
+ max-height:min(720px,calc(100svh - 120px));overflow-y:auto;overscroll-behavior:contain;
+ background:#fffdf7;border:1px solid #d9d1bf;border-radius:17px;
+ padding:16px;box-shadow:0 24px 45px #21362b2a;
+}
+body[data-ux52-desktop="true"] .ux52MenuGroup+.ux52MenuGroup{
+ border-top:1px solid #e9e3d7;margin-top:13px;padding-top:11px;
+}
+body[data-ux52-desktop="true"] .ux52MenuGroup h2{
+ font-size:11px;text-transform:uppercase;letter-spacing:.13em;color:#937965;
+ margin:1px 2px 8px;font-weight:800;
+}
+body[data-ux52-desktop="true"] .ux52MenuItem{
+ display:block;width:100%;min-height:44px;padding:10px 12px;text-align:left;
+ background:transparent;border:0;border-radius:10px;color:#24493c;font-size:14px;font-weight:620;
+}
+body[data-ux52-desktop="true"] .ux52MenuItem:hover,
+body[data-ux52-desktop="true"] .ux52MenuItem:focus-visible{background:#edf2e9}
+body[data-ux52-desktop="true"]>nav.tabs{
+ max-width:1640px;min-height:76px;margin:0 auto;padding:12px 23px;gap:8px;
+ border:1px solid var(--ux52-line);border-bottom:0;
+ background:#faf7f0;display:grid;
+ grid-template-columns:minmax(160px,1.35fr) repeat(3,minmax(120px,1fr)) minmax(132px,.8fr);
+ align-items:center;
+}
+body[data-ux52-desktop="true"] .ux52Context{display:flex;min-width:0;flex-direction:column;gap:4px;padding-right:10px}
+body[data-ux52-desktop="true"] .ux52ContextKicker{
+ font-size:10px;letter-spacing:.13em;font-weight:850;color:#b06a4f;
+}
+body[data-ux52-desktop="true"] .ux52ContextChapter{
+ font-size:14px;line-height:1.2;color:#235246;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;
+}
+body[data-ux52-desktop="true"]>nav.tabs .tab[data-mode="route"],
+body[data-ux52-desktop="true"]>nav.tabs .tab[data-mode="exam"]{display:none}
+body[data-ux52-desktop="true"]>nav.tabs .tab[data-mode="learn"],
+body[data-ux52-desktop="true"]>nav.tabs .tab[data-mode="point"],
+body[data-ux52-desktop="true"]>nav.tabs .tab[data-mode="write"]{
+ display:inline-flex;align-items:center;justify-content:center;gap:9px;min-width:0;
+ height:48px;border:1px solid transparent;background:transparent;box-shadow:none;
+ color:#547064;font-weight:780;border-radius:12px;padding:8px 10px;
+}
+body[data-ux52-desktop="true"]>nav.tabs .tab .ux52StepNumber{font-size:11px;opacity:.65;font-weight:780}
+body[data-ux52-desktop="true"]>nav.tabs .tab .ux52StepText{font-size:14px;white-space:nowrap}
+body[data-ux52-desktop="true"]>nav.tabs .tab:is(.active,.ux52StepCurrent){
+ background:#fffef9;border-color:#bdcbbf;color:#235247;
+ box-shadow:0 2px 7px #183e3021;
+}
+body[data-ux52-desktop="true"]>nav.tabs .tab[aria-disabled="true"]{opacity:.54;cursor:not-allowed}
+body[data-ux52-desktop="true"] .ux52Gold{
+ display:inline-flex;align-items:center;justify-content:center;min-height:46px;min-width:0;
+ border:1px solid #e6c58c;border-radius:11px;background:#fffaf0;color:#926032;
+ font-size:13px;font-weight:800;padding:8px 10px;white-space:nowrap;
+}
+body[data-ux52-desktop="true"] .ux52Gold:not(:disabled):hover{background:#fff2d5}
+body[data-ux52-desktop="true"] .ux52Gold:disabled{opacity:.6;cursor:not-allowed}
+body[data-ux52-desktop="true"] .ux52GoldEarned{border-color:#ccab62;background:#fff3d9}
+body[data-ux52-desktop="true"] .layout:not(.routeHomeLayout):not(.finishLayout){
+ max-width:1640px;margin:0 auto 32px;padding:0;
+ grid-template-columns:minmax(0,69fr) minmax(324px,31fr);gap:0;
+ background:var(--ux52-cream);border:1px solid var(--ux52-line);
+ border-radius:0 0 20px 20px;overflow:hidden;
+ box-shadow:0 20px 40px #223c3018;align-items:stretch;
+}
+body[data-ux52-desktop="true"] .layout:not(.routeHomeLayout):not(.finishLayout)>.mapCard{
+ border:0;border-right:1px solid var(--ux52-line);border-radius:0;box-shadow:none;
+ min-width:0;background:#faf7ec;align-self:stretch;
+}
+body[data-ux52-desktop="true"] .layout:not(.routeHomeLayout):not(.finishLayout)>.panel{
+ border:0;border-radius:0;box-shadow:none;
+ padding:24px clamp(18px,2vw,33px) 34px;background:#fffdf8;min-width:0;
+ min-height:570px;align-self:stretch;
+}
+body[data-ux52-desktop="true"] .mapTools{min-height:62px;padding:11px 18px;background:#fcf9f0;border-bottom:1px solid var(--ux52-line)}
+body[data-ux52-desktop="true"] .mapTools>strong{color:#26574b;font-size:14px}
+body[data-ux52-desktop="true"] .mapSwitches{gap:7px}
+body[data-ux52-desktop="true"] .mapSwitches label{font-size:12px}
+body[data-ux52-desktop="true"] .mapTools button,body[data-ux52-desktop="true"] .mapTools summary{
+ border-color:#e2ded3;background:#fffcf5;color:#3a6457;
+}
+body[data-ux52-desktop="true"] .mapArea{max-height:calc(100svh - 300px);min-height:430px;overflow:auto;overscroll-behavior:contain;background:#e9eee3}
+body[data-ux52-desktop="true"] .mapCaption{padding:13px 18px;font-size:12px;color:#7b8879}
+body[data-ux52-desktop="true"] .panel #groupPicker{
+ display:flex;flex-direction:column;gap:4px;padding:2px 0 15px;margin-bottom:18px;
+ border-bottom:1px solid var(--ux52-line);
+}
+body[data-ux52-desktop="true"] .panel #groupPicker.hidden{display:none!important}
+body[data-ux52-desktop="true"] .panel #groupPicker label{font-size:11px;font-weight:800;letter-spacing:.09em;text-transform:uppercase;color:#ac7050}
+body[data-ux52-desktop="true"] .panel #groupPicker select{
+ width:100%;min-height:46px;border:1px solid #d9d8c9;border-radius:10px;
+ background:#fffefb;color:#254d42;padding:8px 10px;font-weight:650;font-size:14px;
+}
+body[data-ux52-desktop="true"] .panel #quiz>.eyebrow{font-size:11px;letter-spacing:.11em;color:#a55f40}
+body[data-ux52-desktop="true"] .panel #prompt,
+body[data-ux52-desktop="true"] .panel #learnPrompt{
+ font-size:clamp(23px,2.3vw,32px);line-height:1.16;letter-spacing:-.038em;
+ color:#214940;margin:12px 0;
+}
+body[data-ux52-desktop="true"] .panel #help{font-size:14px;line-height:1.6;color:#637a6e}
+body[data-ux52-desktop="true"] .panel #message{background:#f0f3ea;border-radius:13px;padding:12px 14px;font-size:14px;font-weight:600;line-height:1.5;min-height:0}
+body[data-ux52-desktop="true"] .panel #message.good{background:#e8f5e9;color:#246a48}
+body[data-ux52-desktop="true"] .panel #message.bad{background:#fff0e8;color:#974d3f}
+body[data-ux52-desktop="true"] .panel #answer{font-size:16px;min-height:48px;background:#fffefa}
+body[data-ux52-desktop="true"] .panel #check,
+body[data-ux52-desktop="true"] .panel #next,
+body[data-ux52-desktop="true"] .panel #learnNext{
+ min-height:48px;background:#205b4d;border-color:#205b4d;color:#fff;
+ border-radius:12px;font-size:15px;font-weight:800;
+}
+body[data-ux52-desktop="true"] .panel #testStatus{font-size:13px;color:#516f61}
+body[data-ux52-desktop="true"] .panel #routeLessonBar{
+ border-bottom:1px solid var(--ux52-line);margin-bottom:20px;
+ padding:0 0 17px;
+}
+body[data-ux52-desktop="true"] .panel #routeLessonBar .ninoLesson{display:none}
+body[data-ux52-desktop="true"] .panel #routeLessonBar #routeLessonTitle{font-size:14px}
+body[data-ux52-desktop="true"] .panel #routeLessonBar .progress{height:5px;background:#ebe7db}
+body[data-ux52-desktop="true"] .panel #routeLessonBar .progress i{background:#205b4d}
+body[data-ux52-desktop="true"] .panel #freeCoach,
+body[data-ux52-desktop="true"] .panel #pizzaRow,
+body[data-ux52-desktop="true"] .panel #pizzaProgress,
+body[data-ux52-desktop="true"] .panel #pizzaCaption,
+body[data-ux52-desktop="true"] .panel #sliceCount,
+body[data-ux52-desktop="true"] .panel .rewardDetails,
+body[data-ux52-desktop="true"] .panel #routeExtra,
+body[data-ux52-desktop="true"] .panel #resetAll,
+body[data-ux52-desktop="true"] .panel #resetPizza,
+body[data-ux52-desktop="true"] .panel #reveal,
+body[data-ux52-desktop="true"] .panel #mistakes,
+body[data-ux52-desktop="true"] .mapTools #printMap,
+body[data-ux52-desktop="true"]>footer.backupTools{display:none!important}
+body[data-ux52-desktop="true"] .layout.routeHomeLayout,
+body[data-ux52-desktop="true"] .layout.finishLayout{margin:18px auto 34px}
+body[data-ux52-desktop="true"] .layout.routeHomeLayout .journeyScreen{
+ background:#fffcf5;border-color:#e1d9c8;
+}
+body[data-ux52-desktop="true"] :is(.ux52MenuToggle,.ux52MenuItem,.ux52Gold,nav.tabs .tab):focus-visible{
+ outline:3px solid #087887;outline-offset:3px;
+}
+@media (max-width:1320px){
+ body[data-ux52-desktop="true"]>header{margin:0 8px}
+ body[data-ux52-desktop="true"]>nav.tabs{margin:0 8px;padding:11px 14px;grid-template-columns:minmax(136px,1fr) repeat(3,minmax(105px,1fr)) 125px}
+ body[data-ux52-desktop="true"] .layout:not(.routeHomeLayout):not(.finishLayout){
+  margin-left:8px;margin-right:8px;grid-template-columns:minmax(0,64fr) minmax(325px,36fr)
+ }
+ body[data-ux52-desktop="true"] .ux52Today{font-size:12px;padding:8px}
+ body[data-ux52-desktop="true"]>nav.tabs .tab .ux52StepText{font-size:13px}
+}
+@media (prefers-reduced-motion:reduce){body[data-ux52-desktop="true"] .ux52Menu *{transition:none!important}}
+@media (prefers-contrast:more){
+ body[data-ux52-desktop="true"]{--ux52-line:#928b7b}
+ body[data-ux52-desktop="true"] .ux52MenuPanel{border-width:2px}
+}
+@media (forced-colors:active){
+ body[data-ux52-desktop="true"] .ux52Gold,
+ body[data-ux52-desktop="true"] .ux52MenuToggle{forced-color-adjust:auto;border:1px solid ButtonText}
+}

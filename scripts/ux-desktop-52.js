@@ -29,7 +29,8 @@ function setupCalmDesktop52(){
  };
  shortcut(learning,'Mijn leerroute','nav.tabs .tab[data-mode="route"]');
  shortcut(learning,'Vrije toets','nav.tabs .tab[data-mode="exam"]');
- shortcut(learning,'Lastige namen oefenen','#mistakes');
+ const trouble=make('button','ux52MenuItem','Lastige namen oefenen');trouble.type='button';
+ trouble.addEventListener('click',()=>{menu.open=false;if(state.mode==='route'||state.mode==='exam')mode('point');$('#mistakes')?.click();});learning.append(trouble);
  shortcut(tools,'Print leerkaart','#printMap');
  shortcut(tools,'Reservekopie opslaan','#exportProgress');
  shortcut(tools,'Reservekopie terugzetten','#importProgress');

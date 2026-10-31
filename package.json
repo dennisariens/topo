@@ -17,7 +17,8 @@
     "qa:schoolblad": "node scripts/qa-schoolblad.mjs",
     "qa:discovery": "node scripts/qa-discovery-map.mjs",
     "qa:map-hit": "node scripts/qa-map-hit.mjs",
-    "qa:focus": "node scripts/qa-focus-mode.mjs"
+    "qa:focus": "node scripts/qa-focus-mode.mjs",
+    "qa:ux52": "node scripts/qa-ux52-browser.mjs"
   },
   "devDependencies": {
     "jsdom": "^30.1.1"

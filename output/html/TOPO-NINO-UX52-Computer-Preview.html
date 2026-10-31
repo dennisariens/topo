@@ -2248,7 +2248,10 @@ function setupCalmDesktop52(){
  let currentDesktop=null;
  const isDesktop=()=>window.innerWidth>1180&&!(window.innerWidth<=1440&&window.matchMedia?.('(pointer:coarse)').matches);
  const chapterId=()=>{
-  if(state.mode==='route'&&state.route?.active?.chapterId&&state.route.active.chapterId!=='smart')return state.route.active.chapterId;
+  if(state.mode==='route'){
+   if(state.route?.active?.chapterId&&state.route.active.chapterId!=='smart')return state.route.active.chapterId;
+   return ROUTE_CHAPTERS.find(ch=>TopoRoute.record(state.route,ch.id).stage<3)?.id||ROUTE_CHAPTERS.at(-1)?.id;
+  }
   const candidate=$('#groupSelect')?.value;
   if(candidate&&ROUTE_CHAPTERS.some(ch=>ch.id===candidate))return candidate;
   return ROUTE_CHAPTERS.find(ch=>TopoRoute.record(state.route,ch.id).stage<3)?.id || ROUTE_CHAPTERS.at(-1)?.id;

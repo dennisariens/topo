@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="128" height="128" viewBox="0 0 128 128" role="img" aria-label="TOPO Italië silhouet, kleine favicon">
+<defs><linearGradient id="sky" x1="0" x2="0" y1="0" y2="1"><stop stop-color="#118ADB"/><stop offset="1" stop-color="#56BBF1"/></linearGradient></defs>
+<rect width="128" height="128" rx="24" fill="url(#sky)"/>
+<g transform="translate(-47 3) scale(1.16 .96)">
+<path d="M81 11 L94 7 L107 13 L104 23 L112 30 L107 39 L113 47 L107 54 L109 62 L121 71 L124 85 L115 88 L104 79 L98 77 L99 88 L111 99 L121 105 L115 114 L104 111 L94 104 L86 95 L80 94 L76 105 L68 109 L63 100 L70 87 L82 82 L81 74 L74 67 L75 57 L72 48 L64 41 L67 33 L77 30 L73 21 Z" fill="#237B3B" stroke="#FFF2D0" stroke-width="6" stroke-linejoin="round" stroke-linecap="round"/>
+</g>
+<path d="M18 86 Q20 81 24 84 L26 97 L23 107 L17 103 Z" fill="#237B3B" stroke="#FFF2D0" stroke-width="4" stroke-linejoin="round"/>
+<path d="M35 115 L56 111 L65 115 L58 120 L40 122 Z" fill="#237B3B" stroke="#FFF2D0" stroke-width="3.5" stroke-linejoin="round"/>
+</svg>

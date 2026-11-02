@@ -189,3 +189,15 @@ No release replacement, merge or deployment.
 ## 2026-10-30 — Lead integration evidence and Codex independent handoff
 
 **Decision** Reuse existing draft PR61 and its exact approved-SVG implementation payload `b3540f72b2e21ede842bd38051e6a7015eaa0aa6`; do not create a competing implementation or change runtime bytes merely to repeat completed integration. Add reproducible lead validation, separate Chrome/WebKit all45 ledgers, actual published-download and backup/import evidence, a corrected element-scoped reference capture and an exact-commit Codex handoff. Preserve historical author evidence. **Responsibility** Hermes owns integration; Codex owns fresh independent technical QA, per the current owner mission. **Supersedes** Earlier instructions assigning independent PR61 acceptance to Hermes; lead verification is not independent approval. **Status** Lead gates pass; native Safari is BLOCKED by disabled Remote Automation, not approved by the passing WebKit engine run. Final immutable review SHA is pinned in the PR61 handoff after commit. Independent Codex verdict and owner approval remain required. No merge, final release publication, production/server change, or new design iteration.
+
+## 2026-11-02 — Issue67 bounded artwork closure
+
+Owner authorized technical exports from frozen masters and narrow PR61-lineage
+integration. Produce PR66 reconstruction, source-faithful Gold/ink/cards and exact
+folio copies; preserve originals in their pinned art history. Embed only approved
+micro favicons into existing standalone HTML. Do not invent a passport component,
+unlock mapping or animated hinge to close an artwork ledger. Static Pisa files
+remain available; hinge stays optional under issue31/PR63. Source availability,
+technical export, runtime integration and independent acceptance remain distinct.
+Evidence and remaining conditions: [closure ledger](qa/nino-v2-closure-67/README.md).
+This does not supersede PR61's independent functional review or owner release gate.

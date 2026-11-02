@@ -11,6 +11,7 @@ execFileSync(process.execPath, [resolve(root, 'scripts/embed-nino-art.mjs')], { 
 execFileSync(process.execPath, [resolve(root, 'scripts/geography/generate-lakes.mjs')], { stdio: 'inherit' });
 execFileSync(process.execPath, [resolve(root, 'scripts/embed-discovery-map.mjs')], { stdio: 'inherit' });
 execFileSync(process.execPath, [resolve(root, 'scripts/embed-focus-mode.mjs')], { stdio: 'inherit' });
+execFileSync(process.execPath, [resolve(root, 'scripts/embed-nino-micro-icons.mjs')], { stdio: 'inherit' });
 execFileSync(process.execPath, [resolve(root, 'scripts/generate-preview.mjs')], { stdio: 'inherit' });
 execFileSync(process.execPath, [resolve(root, 'scripts/generate-print.mjs')], { stdio: 'inherit' });
 execFileSync(process.execPath, [resolve(root, 'scripts/package-standalone.mjs')], { stdio: 'inherit' });

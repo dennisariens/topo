@@ -1,0 +1,7 @@
+{
+  "onlyChange": "exact pinned PR65 micro favicon links",
+  "allOtherHTMLBytesIdentical": true,
+  "beforeSHA256": "422f39dd06cb2ea2d6524ce07e4524738aa425aef5c5e54d63b55d90b54143a9",
+  "afterSHA256": "422f39dd06cb2ea2d6524ce07e4524738aa425aef5c5e54d63b55d90b54143a9",
+  "afterBytes": 3152649
+}

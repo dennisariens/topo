@@ -1,0 +1,31 @@
+{
+  "source_git_blob": "47b7c616d0a2ca8956a3d302c0c1a270f2320bf0",
+  "contour_points": 572,
+  "status": "Source RGB exact; owner-approved 50%-alpha border approximated within contour tolerance (not byte-identical to owner's manually reviewed matte)",
+  "files": {
+    "postcard-04-venezia-scalloped-full.png": {
+      "bytes": 3357374,
+      "sha256": "e1dfd387744ae2990a9fe7ae59e3d98592df3834fbe14fac1f26d0258fd81885",
+      "width": 1536,
+      "height": 1024
+    },
+    "postcard-04-venezia-scalloped-full.webp": {
+      "bytes": 2337844,
+      "sha256": "78e4b4c2bae998a75995c9746ca427a9a2569b3458cdd6fd9728d89be28f1dc4",
+      "width": 1536,
+      "height": 1024
+    },
+    "postcard-04-venezia-scalloped-tight.png": {
+      "bytes": 3265353,
+      "sha256": "2a221a6b32bf5df7e154b840bfd7b9107827f66472839df61d6999959ab027bf",
+      "width": 1497,
+      "height": 973
+    },
+    "postcard-04-venezia-scalloped-tight.webp": {
+      "bytes": 2341994,
+      "sha256": "45902f75dcb6e5c8185190a707ab03d9e422aed45639a711ccc14618647e2e03",
+      "width": 1497,
+      "height": 973
+    }
+  }
+}

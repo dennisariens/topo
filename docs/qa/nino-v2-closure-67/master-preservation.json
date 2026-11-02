@@ -1,0 +1,108 @@
+{
+  "baseline": "fab2bbae943d507fcd103887012f790c144f43a5",
+  "source": "cec9fd26ac858bdbcbdf03b5ee6b0ea246e3e02f",
+  "count": 20,
+  "masters": [
+    {
+      "path": "assets/nino/travel-passport/book/masters/passport-closed-cover.png",
+      "sha256": "3d1c0e1978373d2a21b0072baa3f342375641341635fc7f9f06e5721ff58f1b9",
+      "unchanged": true
+    },
+    {
+      "path": "assets/nino/travel-passport/book/masters/passport-open-book.png",
+      "sha256": "94f5d286e502b81ee156ae0923132f22dc8475f474f44709087e83662e032b8d",
+      "unchanged": true
+    },
+    {
+      "path": "assets/nino/travel-passport/gold/masters/gold-chapter-seal-v2.png",
+      "sha256": "60c54e6efbb8239c327b4d7c76660dc816535a1f5431bf7c3cbe9f2927a1adf0",
+      "unchanged": true
+    },
+    {
+      "path": "assets/nino/travel-passport/gold/masters/gold-esploratore-doro.png",
+      "sha256": "e94a76ab4c0220eead56e3f208dc539a71bae2f217ca7756939903bce024e3ca",
+      "unchanged": true
+    },
+    {
+      "path": "assets/nino/travel-passport/postcards/masters/postcard-01-sicilia-front.png",
+      "sha256": "36f1656b44f00c2eec477517d32de0b2067e42507131a110d424cc22d4c3e328",
+      "unchanged": true
+    },
+    {
+      "path": "assets/nino/travel-passport/postcards/masters/postcard-02-sardegna-front.png",
+      "sha256": "b06eb78fb5ad8e0116175317a98ab16ae88b251001adb40763c23d0c274ac4e3",
+      "unchanged": true
+    },
+    {
+      "path": "assets/nino/travel-passport/postcards/masters/postcard-03-napoli-vesuvio-front.png",
+      "sha256": "822ada426bf732273738bcdb1f9bbc2466beb2bd2d5c8b6c29b5815d807910ab",
+      "unchanged": true
+    },
+    {
+      "path": "assets/nino/travel-passport/postcards/masters/postcard-04-venezia-front.png",
+      "sha256": "3228aeb85ca52d214378f287ba5fb63be42c40966074bd98a5d2548f858359e6",
+      "unchanged": true
+    },
+    {
+      "path": "assets/nino/travel-passport/postcards/masters/postcard-05-universal-reverse.png",
+      "sha256": "67450c16303c2da9d0c7d1e690554b163ce1c8c720a3244abee17c3440a3ed86",
+      "unchanged": true
+    },
+    {
+      "path": "assets/nino/travel-passport/stamps/masters/stamp-01-firenze.png",
+      "sha256": "cb1bd16d983ac570c727eeab31f6dbce2392af2a6dc55c14418908835ad5ae56",
+      "unchanged": true
+    },
+    {
+      "path": "assets/nino/travel-passport/stamps/masters/stamp-02-roma.png",
+      "sha256": "19c8e75708e6fbfbf0ff8fffcd6d172008a7069610a235f843f6985db9628a27",
+      "unchanged": true
+    },
+    {
+      "path": "assets/nino/travel-passport/stamps/masters/stamp-03-borghi.png",
+      "sha256": "d00d7e3fd8aa88dac971c204959a1d21b8986a15b14b8247da7c4a8bb36b6ab1",
+      "unchanged": true
+    },
+    {
+      "path": "assets/nino/travel-passport/stamps/masters/stamp-04-liguria.png",
+      "sha256": "ddcb8076932f0259ccfa61af8b4ca7836b407fa49973560f4a89b0833ee8fdf4",
+      "unchanged": true
+    },
+    {
+      "path": "assets/nino/travel-passport/stamps/masters/stamp-05-isole.png",
+      "sha256": "91b9ed25d5255b784d447080df16f2e644937f05b37bb94d08235312ee54fb50",
+      "unchanged": true
+    },
+    {
+      "path": "assets/nino/travel-passport/stamps/masters/stamp-06-dolomiti.png",
+      "sha256": "aad87d7b6c7eddfcd9b1996301f714da19421e6005c449b847b7fa9a957a16cf",
+      "unchanged": true
+    },
+    {
+      "path": "assets/nino/travel-passport/stamps/masters/stamp-07-etna.png",
+      "sha256": "443d97af3411e56c139e6e6397ba9a474748c227e4325006820cc0d6dd0957b4",
+      "unchanged": true
+    },
+    {
+      "path": "assets/nino/travel-passport/stamps/masters/stamp-08-toscana.png",
+      "sha256": "d12eaa8ff6804ccb280e029ee351ac0c435b2c35db141ad8dd85f46c533cb61b",
+      "unchanged": true
+    },
+    {
+      "path": "assets/nino/travel-passport/stamps/masters/stamp-09-confine-italia.png",
+      "sha256": "e884445aeb1c06795bb2fb78f7ba329a71eba922832a6a3e745849eb0d71ae4c",
+      "unchanged": true
+    },
+    {
+      "path": "assets/nino/travel-passport/stamps/masters/stamp-10-mari.png",
+      "sha256": "9dc89b2b82a018c830991aeace67d296990397b3bc61793292827cca08ba3249",
+      "unchanged": true
+    },
+    {
+      "path": "assets/nino/travel-passport/stamps/masters/stamp-11-fiumi.png",
+      "sha256": "d79bc297171fabbf426968d36d7c1193b9adde65033a1b26fe84ccae158df06e",
+      "unchanged": true
+    }
+  ],
+  "veneziaFullPNGAllOriginalRGBExact": true
+}

@@ -1,0 +1,42 @@
+[
+  {
+    "pr": 61,
+    "url": "https://github.com/dennisariens/topo/pull/61",
+    "head": "codex/topo-nino-computer-release-20261030",
+    "head_sha": "1bf86b3e1c69319bed8ef877243070a64d97a12e",
+    "base": "codex/issue-50-offline-computer",
+    "base_sha": "bd1e57bc48e55a065cbbccb68acea196a64a187c",
+    "draft": true,
+    "state": "open"
+  },
+  {
+    "pr": 63,
+    "url": "https://github.com/dennisariens/topo/pull/63",
+    "head": "art/nino-pisa-hinge-qa-20261030",
+    "head_sha": "92893ae91a177e4272807d662e2b101ff934017d",
+    "base": "art/nino-pizza-rewards-20261024",
+    "base_sha": "bf91fb3fa6ac553f78b33169efa9f2bf60e215ca",
+    "draft": true,
+    "state": "open"
+  },
+  {
+    "pr": 65,
+    "url": "https://github.com/dennisariens/topo/pull/65",
+    "head": "art/nino-micro-icons-v2-20261030",
+    "head_sha": "5cfcbc37eb6b0266d76d2c05404d993908611410",
+    "base": "art/nino-travel-stamps-v2-20261026",
+    "base_sha": "8a704cb23da97baf7197635df7fa12f06b864a24",
+    "draft": true,
+    "state": "open"
+  },
+  {
+    "pr": 66,
+    "url": "https://github.com/dennisariens/topo/pull/66",
+    "head": "art/nino-venezia-scalloped-20261031",
+    "head_sha": "cec9fd26ac858bdbcbdf03b5ee6b0ea246e3e02f",
+    "base": "art/nino-travel-stamps-v2-20261026",
+    "base_sha": "8a704cb23da97baf7197635df7fa12f06b864a24",
+    "draft": true,
+    "state": "open"
+  }
+]

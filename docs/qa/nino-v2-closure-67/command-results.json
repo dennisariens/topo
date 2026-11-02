@@ -1,0 +1,36 @@
+[
+  {
+    "command": [
+      "npm",
+      "run",
+      "lint"
+    ],
+    "exit_code": 0,
+    "log": "lint-delivery.log"
+  },
+  {
+    "command": [
+      "npm",
+      "test"
+    ],
+    "exit_code": 0,
+    "log": "test-delivery.log"
+  },
+  {
+    "command": [
+      "npm",
+      "run",
+      "audit:release-1-2"
+    ],
+    "exit_code": 0,
+    "log": "release-audit-delivery.log"
+  },
+  {
+    "command": [
+      "node",
+      "scripts/audit-map-picker-revision.mjs"
+    ],
+    "exit_code": 0,
+    "log": "map-audit-delivery.log"
+  }
+]

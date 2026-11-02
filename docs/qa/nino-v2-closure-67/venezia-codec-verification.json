@@ -1,0 +1,22 @@
+[
+  {
+    "variant": "full",
+    "size": [
+      1536,
+      1024
+    ],
+    "visible_RGBA_differences": 0,
+    "invisible_RGB_differences": 213487,
+    "alpha_equal": true
+  },
+  {
+    "variant": "tight",
+    "size": [
+      1497,
+      973
+    ],
+    "visible_RGBA_differences": 0,
+    "invisible_RGB_differences": 97198,
+    "alpha_equal": true
+  }
+]

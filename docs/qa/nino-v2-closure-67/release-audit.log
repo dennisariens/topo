@@ -1,0 +1,24 @@
+
+> topo-italie-baseline@0.1.0 audit:release-1-2
+> node scripts/audit-release-1-2.mjs
+
+node:internal/modules/run_main:107
+    triggerUncaughtException(
+    ^
+
+AssertionError [ERR_ASSERTION]: scripts/embed-nino-art.mjs unchanged
+    at assertPreserved (file:///Users/dennisariens/projects/topo-nino-artwork-closure/scripts/ipad-update-source.mjs:13:2)
+    at exact (file:///Users/dennisariens/projects/topo-nino-artwork-closure/scripts/audit-release-1-2.mjs:19:3)
+    at file:///Users/dennisariens/projects/topo-nino-artwork-closure/scripts/audit-release-1-2.mjs:23:230
+    at ModuleJob.run (node:internal/modules/esm/module_job:430:25)
+    at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:661:26)
+    at async asyncRunEntryPointWithESMLoader (node:internal/modules/run_main:101:5) {
+  generatedMessage: false,
+  code: 'ERR_ASSERTION',
+  actual: false,
+  expected: true,
+  operator: '==',
+  diff: 'simple'
+}
+
+Node.js v24.13.1

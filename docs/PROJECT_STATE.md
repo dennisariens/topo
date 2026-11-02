@@ -1,5 +1,15 @@
 # Project state
 
+## NINO V2 artwork closeout — issue67, 2 November 2026
+
+Bounded export/favicons candidate stacked on PR61 `1bf86b3e1c69319bed8ef877243070a64d97a12e`.
+Actual source/provenance inventory, approved technical derivatives, runtime usage,
+offline evidence, limitations and single Hermes handoff are in
+[the artwork closure ledger](qa/nino-v2-closure-67/README.md).
+GO FOR INDEPENDENT QA of this delivery; not final acceptance or package DONE.
+Passport integration and owner folio/edge conditions remain pending; no new
+passport implementation, reward/save/geography change, merge or deployment.
+
 ## Current: lead-integration delivery — PR61, Codex independent gate
 
 Hermes reused the existing PR61 candidate, integrated around the exact owner SVG, and finalized reproducible lead evidence without a competing branch or runtime rewrite. Installed Chrome156 and WebKit27.2 both pass all45 per-item offline pointer/writing checks; build/lint/17-program regression, selection/session/focus/overlap, actual published-download and real backup/daily/import checks pass. Runtime and released HTML remain byte-identical to `b3540f72b2e21ede842bd38051e6a7015eaa0aa6`. **This is lead validation, not independent QA.** The current owner mission assigns independent technical QA to **Codex**, superseding older text assigning it to Hermes. Native Safari is BLOCKED by disabled Remote Automation; WebKit is not native Safari approval. Physical iPad/OS keyboard/IME/VoiceOver remain untested. [Current delivery, exact artifact and evidence](INTEGRATED_RELEASE_CANDIDATE.md) · [Codex handoff](CODEX_INTEGRATION_QA_HANDOFF.md). Final immutable review SHA is pinned in the PR61 lead handoff comment. Same draft PR, no merge/deploy/server mutation.

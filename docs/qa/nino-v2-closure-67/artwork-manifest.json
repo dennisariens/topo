@@ -8,7 +8,7 @@
     "cec9fd26ac858bdbcbdf03b5ee6b0ea246e3e02f": "art/nino-venezia-scalloped-20261031 / PR66"
   },
   "reviewCommit": "9e58e756f124ff37d47b4ebcfd274684125d8aeb",
-  "count": 237,
+  "count": 239,
   "note": "READY on a master means preserved source availability, not unrestricted runtime approval; statuses do not self-approve QA.",
   "assets": [
     {
@@ -13195,6 +13195,128 @@
       "intended_runtime_placement": "Future passport: exact completed chapter with live caption",
       "decoded_RGBA_sha256": "e10cae987f6e523e1277434a253e7fc5f9905c4eb3b1672fa902a3a16c3dbba3",
       "status": "EXPORT PENDING"
+    },
+    {
+      "path": "output/art/nino-op-de-scooter.webp",
+      "delivery_present": true,
+      "bytes": 67658,
+      "sha256": "0b83332392b90193eff04979fbc592df5bbc3e0ef3f19a16801d1d7dc822b2a1",
+      "git_blob": "3c8ef1f81d06d45d866057144271a7cd00115718",
+      "provenance": [
+        {
+          "commit": "1bf86b3e1c69319bed8ef877243070a64d97a12e",
+          "branch": "codex/topo-nino-computer-release-20261030 / PR61",
+          "blob": "3c8ef1f81d06d45d866057144271a7cd00115718"
+        },
+        {
+          "commit": "8a704cb23da97baf7197635df7fa12f06b864a24",
+          "branch": "art/nino-travel-stamps-v2-20261026",
+          "blob": "3c8ef1f81d06d45d866057144271a7cd00115718"
+        },
+        {
+          "commit": "bf91fb3fa6ac553f78b33169efa9f2bf60e215ca",
+          "branch": "art/nino-pizza-rewards-20261024 / PR63 base",
+          "blob": "3c8ef1f81d06d45d866057144271a7cd00115718"
+        },
+        {
+          "commit": "5cfcbc37eb6b0266d76d2c05404d993908611410",
+          "branch": "art/nino-micro-icons-v2-20261030 / PR65",
+          "blob": "3c8ef1f81d06d45d866057144271a7cd00115718"
+        },
+        {
+          "commit": "cec9fd26ac858bdbcbdf03b5ee6b0ea246e3e02f",
+          "branch": "art/nino-venezia-scalloped-20261031 / PR66",
+          "blob": "3c8ef1f81d06d45d866057144271a7cd00115718"
+        }
+      ],
+      "dimensions": [
+        514,
+        650
+      ],
+      "format": "WEBP",
+      "mode": "RGBA",
+      "alpha": {
+        "range": [
+          0,
+          255
+        ],
+        "transparent_pixels": 166767,
+        "partial_pixels": 13729,
+        "opaque_pixels": 153604
+      },
+      "color_profile": {
+        "icc": false,
+        "gamma": null,
+        "srgb": null
+      },
+      "visual_approval": "Owner-approved package per issue67; exact derivative independent QA pending",
+      "export_readiness": "existing verified runtime bytes",
+      "runtime_usage": "embedded data URI: original scooter portrait/CSS",
+      "missing_dependencies": [],
+      "intended_runtime_placement": "Preserved source/reference; no new placement authorized",
+      "decoded_RGBA_sha256": "3376a61b71b13d75e10ecb6c580b8afbba04dcaa7732146b34c1531eb6d2170e",
+      "status": "READY"
+    },
+    {
+      "path": "output/art/topo-italie-avontuur.webp",
+      "delivery_present": true,
+      "bytes": 173702,
+      "sha256": "18befedac70a95876f5a620c78bd0a210920ff1de4b40d084190eb371ed8acb9",
+      "git_blob": "af6f30c740e77ad77e60e9a8598467d6dda93dff",
+      "provenance": [
+        {
+          "commit": "1bf86b3e1c69319bed8ef877243070a64d97a12e",
+          "branch": "codex/topo-nino-computer-release-20261030 / PR61",
+          "blob": "af6f30c740e77ad77e60e9a8598467d6dda93dff"
+        },
+        {
+          "commit": "8a704cb23da97baf7197635df7fa12f06b864a24",
+          "branch": "art/nino-travel-stamps-v2-20261026",
+          "blob": "af6f30c740e77ad77e60e9a8598467d6dda93dff"
+        },
+        {
+          "commit": "bf91fb3fa6ac553f78b33169efa9f2bf60e215ca",
+          "branch": "art/nino-pizza-rewards-20261024 / PR63 base",
+          "blob": "af6f30c740e77ad77e60e9a8598467d6dda93dff"
+        },
+        {
+          "commit": "5cfcbc37eb6b0266d76d2c05404d993908611410",
+          "branch": "art/nino-micro-icons-v2-20261030 / PR65",
+          "blob": "af6f30c740e77ad77e60e9a8598467d6dda93dff"
+        },
+        {
+          "commit": "cec9fd26ac858bdbcbdf03b5ee6b0ea246e3e02f",
+          "branch": "art/nino-venezia-scalloped-20261031 / PR66",
+          "blob": "af6f30c740e77ad77e60e9a8598467d6dda93dff"
+        }
+      ],
+      "dimensions": [
+        1680,
+        560
+      ],
+      "format": "WEBP",
+      "mode": "RGB",
+      "alpha": {
+        "range": [
+          255,
+          255
+        ],
+        "transparent_pixels": 0,
+        "partial_pixels": 0,
+        "opaque_pixels": 940800
+      },
+      "color_profile": {
+        "icc": false,
+        "gamma": null,
+        "srgb": null
+      },
+      "visual_approval": "Owner-approved package per issue67; exact derivative independent QA pending",
+      "export_readiness": "existing verified runtime bytes",
+      "runtime_usage": "embedded data URI: original route panorama",
+      "missing_dependencies": [],
+      "intended_runtime_placement": "Preserved source/reference; no new placement authorized",
+      "decoded_RGBA_sha256": "b1572ab66526bad6dd5ad8c40026a9c64e115e30e464fa18d486986053934af9",
+      "status": "READY"
     }
   ]
 }

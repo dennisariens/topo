@@ -23,7 +23,7 @@ refs = {
  'cec9fd26ac858bdbcbdf03b5ee6b0ea246e3e02f':'art/nino-venezia-scalloped-20261031 / PR66'}
 sources = {}
 for commit,branch in refs.items():
-    for line in git('ls-tree','-r',commit,'assets/nino').decode().splitlines():
+    for line in git('ls-tree','-r',commit,'assets/nino','output/art').decode().splitlines():
         meta,path=line.split('\t'); blob=meta.split()[2]
         sources.setdefault(path,[]).append(dict(commit=commit,branch=branch,blob=blob))
 review=json.loads(git('show','9e58e756f124:docs/qa/artwork-20261029/hermes-final/final-asset-ledger.json'))
@@ -33,6 +33,8 @@ derived={r['path']:r for r in exports}
 html=(ROOT/'index.html').read_text()
 runtime=json.loads((ROOT/'assets/nino/runtime-manifest.json').read_text())
 used={a['path']:role for role,a in runtime['assets'].items()}
+used.update({'output/art/nino-op-de-scooter.webp':'original scooter portrait/CSS',
+             'output/art/topo-italie-avontuur.webp':'original route panorama'})
 rows=[]
 paths=set(sources)|{f.relative_to(ROOT).as_posix() for f in (ROOT/'assets/nino').rglob('*') if f.is_file()}
 for path in sorted(paths):

@@ -55,8 +55,8 @@ b9dbc0d44b4a69fdd3ce3bdafbcdee761d059203c9b73013a535087138c2f93a  assets/nino/tr
 35b057733138e349abcda0739e8fa116184d5121b88e5d68c3b176b0926e2f53  docs/qa/nino-v2-closure-67/README.md
 7f957dba23f8fcece61cf6f61dc9765b210baf9afb2c868e978dbf2b5effb494  docs/qa/nino-v2-closure-67/after-compact.png
 28996aa1f09658c9813a6341d6b84b372934e4f556555bb618b32c87aeda313e  docs/qa/nino-v2-closure-67/after-desktop.png
-4eb7c9f95ec1fda8a9d6d8b7073458c67e3913f36e3d04efbee47ec7eddfca58  docs/qa/nino-v2-closure-67/artwork-manifest.csv
-747d804988eac864fa546633a4c5445c21ef192d6286a081505d8d52152ca4e1  docs/qa/nino-v2-closure-67/artwork-manifest.json
+ece6005dcf378e37b4244187a79c5d15b9c4c0f44cb6785b326a67b1462ee3d5  docs/qa/nino-v2-closure-67/artwork-manifest.csv
+3f20e0c6855c19988ab1d7265690c67d8eb70ab14d1233b9a898958739433807  docs/qa/nino-v2-closure-67/artwork-manifest.json
 7f957dba23f8fcece61cf6f61dc9765b210baf9afb2c868e978dbf2b5effb494  docs/qa/nino-v2-closure-67/before-compact.png
 6f0119e04b7ea110ed1a9bf455b962c99a6af863c391a873502a677bd0092ee0  docs/qa/nino-v2-closure-67/before-desktop.png
 240571957d019db579e48cd003b58064e76f66f14fd76613e06b2b1db569d85f  docs/qa/nino-v2-closure-67/browser-escalated.log
@@ -90,7 +90,7 @@ cb64a3cea6756ed8faf28037d74c487e64b12817f812393154f7d8a53bd06c60  docs/qa/nino-v
 1104c43e5294848da8c7b6010dc7eed530cb9a35f1ae3061fb242112f4671258  docs/qa/nino-v2-closure-67/release-audit.log
 cbd0a87dbcfd815e4bda13cf09d7f4bca36c974d99a7ebd947e32d622cd3612c  docs/qa/nino-v2-closure-67/release-audit/source-preservation.json
 0f35f6c881df680fce0686800f7405681c93a6822a5bef0f9df1fbfd92ea4b5a  docs/qa/nino-v2-closure-67/static-pisa-fallback.png
-ef4ee8d222749998b3ae654088182cadf1b65bba173dc3f5012d434b30c9c6ac  docs/qa/nino-v2-closure-67/summary.json
+9c16af30ea8f545fba2f9b0d2eeb4587cc457686cb36b5141d83eac14e9a20bd  docs/qa/nino-v2-closure-67/summary.json
 fb17e517101624b8931c50c5ab3bd8196d8daebf848b5a136ab9e84a129810c8  docs/qa/nino-v2-closure-67/test-delivery.log
 f3db2cdffa9464168faaae68dc7a912848949dd256825df7b03cf50e1be552df  docs/qa/nino-v2-closure-67/test-final.log.gz
 dc212fe591e1efd1b84a7f1cb94bf2ce39f6f9d9dbeea67d5503b96ccfd78390  docs/qa/nino-v2-closure-67/test-verified.log
@@ -110,5 +110,5 @@ b45b06652a170f742ddc9ad20f3e6dafe57a909728491394d7226a7c018d6bf0  scripts/build.
 3b215e030e10338c675d85e25cfcd2631702a99534d32a0a6b799fd1bbe94256  scripts/close-nino-artwork-67.py
 a17255154c0846e20b91b887076275321331c7d04a91e29029aa7ab5169532e9  scripts/embed-nino-micro-icons.mjs
 31a3ed7a2ebc0f8e2f0f289205a0895bcec066b6e5180ae6da202cdafd61a26f  scripts/focus-source.mjs
-5f8ca7efeacbf1f321af70787947573084d915c118cb9dbc07535346e281fd5a  scripts/inventory-nino-artwork-67.py
+34e2546b2b6e7fbe76b6e430b270506d1d332e78bd2a0bacbd58d73576942aad  scripts/inventory-nino-artwork-67.py
 cca577178209ef4b791d85dd4bae8ba554bfbab407aa3c75a2d6e3db0a2fe66f  scripts/qa-nino-artwork-67.mjs

@@ -1,8 +1,8 @@
 {
   "verdict": "GO FOR INDEPENDENT QA \u2014 bounded export and favicon delivery, not final approval",
   "base": "1bf86b3e1c69319bed8ef877243070a64d97a12e",
-  "inventoryRows": 237,
-  "deliveryArtworkFiles": 54,
+  "inventoryRows": 239,
+  "deliveryArtworkFiles": 56,
   "sourcePreservingExports": 30,
   "veneziaAdditionalFiles": 4,
   "candidate": {
@@ -87,5 +87,9 @@
     "No new essential illustration",
     "No save/reward/learning/geography change",
     "No merge/deployment/published-download replacement"
+  ],
+  "originalRuntimeArtIncluded": [
+    "output/art/nino-op-de-scooter.webp",
+    "output/art/topo-italie-avontuur.webp"
   ]
 }

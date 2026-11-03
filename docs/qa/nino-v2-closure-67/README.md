@@ -1,3 +1,5 @@
+> Integration correction (3 Nov): D1 retired open-book master is archival / OPTIONAL DEFERRED. D2 current inventory totals separately report source availability, delivery and runtime integration in `artwork-manifest.json`. The original execution report below describes PR70, not completion of the later integration.
+
 # NINO V2 artwork closure — issue #67
 
 **Exporter/integrator verdict: GO FOR INDEPENDENT QA of this bounded delivery.**

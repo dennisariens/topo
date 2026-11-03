@@ -65,7 +65,8 @@ for path in sorted(paths):
     if '/chapter-icons/' in path:
         row['visual_approval']='Owner design GO; PR48 exact exports previously accepted; warm-paper/live-label scope retained'
     if '/micro-v2/' in path:row['visual_approval']='Owner approved PR65; runtime/browser acceptance pending'
-    if '/concepts/' in path or '/qa/' in path or ('stamp-05-isole' in path and '/rework/' not in path and '/exports/' not in path):
+    archival = path.endswith('/book/masters/passport-open-book.png') or (isinstance(row['visual_approval'],dict) and row['visual_approval'].get('artwork') in ['ARCHIVAL REFERENCE','REWORK','REJECTED'])
+    if archival or '/concepts/' in path or '/qa/' in path or ('stamp-05-isole' in path and '/rework/' not in path and '/exports/' not in path):
         row['status']='OPTIONAL DEFERRED';row['export_readiness']='concept/rejected/diagnostic; never activate from this ledger'
     elif path in used:
         assert base64.b64encode(data).decode() in html,path
@@ -79,15 +80,22 @@ for path in sorted(paths):
         row.update(status='READY',runtime_usage='embedded favicon data URI; independent browser/owner acceptance pending',export_readiness='exact PR65 binary')
     if not present:
         row['export_readiness']+='; audited at pinned source Git blob, intentionally not duplicated into integration tree'
-    if '/book/' in path:
+    if archival:
+        row['intended_runtime_placement']='ARCHIVAL / REWORK reference only; baked historical content; excluded from production passport'
+        row['missing_dependencies']=['Not a blank folio; no production integration authorized']
+    elif '/book/' in path:
         row['missing_dependencies'].append('owner folio resolution exception; native1086x1448, <=543 CSS px/page at DPR2; no passport UI in PR61')
     if '/gold/' in path or '/stamps/' in path or '/postcards/' in path or '/arrivo/' in path:
         row['missing_dependencies'].append('Existing PR61 has no earned passport presentation; no new unlock/save/reward implementation authorized')
     if 'venezia-scalloped' in path:
         row['missing_dependencies'].append('exact owner-reviewed raster matte/ZIP unavailable at a documented repository path; PR66 572-point reconstruction requires independent edge acceptance')
+    row['source_availability']='pinned Git blob' if provenance else 'delivery derivative'
+    row['delivery_state']='export/file present' if present else 'source only; not delivered'
+    row['runtime_state']='integrated' if row['runtime_usage'].startswith('embedded') else 'not integrated'
     rows.append(row)
 result=dict(baseCommit=next(iter(refs)),sourceRefs=refs,reviewCommit='9e58e756f124ff37d47b4ebcfd274684125d8aeb',count=len(rows),
-            note='READY on a master means preserved source availability, not unrestricted runtime approval; statuses do not self-approve QA.',assets=rows)
+            note='Status is scoped per row. Source availability, delivery and runtime totals are separate; none self-approve independent QA.',
+            availability_totals={field:{value:sum(r[field]==value for r in rows) for value in sorted(set(r[field] for r in rows))} for field in ['source_availability','delivery_state','runtime_state']},assets=rows)
 (OUT/'artwork-manifest.json').write_text(json.dumps(result,indent=2)+'\n')
 with (OUT/'artwork-manifest.csv').open('w') as f:
     writer=csv.DictWriter(f,fieldnames=list(rows[0]));writer.writeheader()

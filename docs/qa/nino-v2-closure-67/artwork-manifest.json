@@ -9,7 +9,21 @@
   },
   "reviewCommit": "9e58e756f124ff37d47b4ebcfd274684125d8aeb",
   "count": 239,
-  "note": "READY on a master means preserved source availability, not unrestricted runtime approval; statuses do not self-approve QA.",
+  "note": "Status is scoped per row. Source availability, delivery and runtime totals are separate; none self-approve independent QA.",
+  "availability_totals": {
+    "source_availability": {
+      "delivery derivative": 34,
+      "pinned Git blob": 205
+    },
+    "delivery_state": {
+      "export/file present": 56,
+      "source only; not delivered": 183
+    },
+    "runtime_state": {
+      "integrated": 11,
+      "not integrated": 228
+    }
+  },
   "assets": [
     {
       "path": "assets/nino/app-icon/micro-v2/favicon.ico",
@@ -60,7 +74,10 @@
           32
         ]
       ],
-      "status": "READY"
+      "status": "READY",
+      "source_availability": "pinned Git blob",
+      "delivery_state": "export/file present",
+      "runtime_state": "integrated"
     },
     {
       "path": "assets/nino/app-icon/micro-v2/topo-nino-italy-only-16.png",
@@ -101,7 +118,10 @@
       "missing_dependencies": [],
       "intended_runtime_placement": "Small favicon; preserve separately approved large icon",
       "decoded_RGBA_sha256": "fb6117e2cfe537bee4ea6de1cc68754619b0e3af4338e6156422ac29a003a18e",
-      "status": "READY"
+      "status": "READY",
+      "source_availability": "pinned Git blob",
+      "delivery_state": "export/file present",
+      "runtime_state": "integrated"
     },
     {
       "path": "assets/nino/app-icon/micro-v2/topo-nino-italy-only-master.svg",
@@ -126,7 +146,10 @@
       "runtime_usage": "NOT INTEGRATED",
       "missing_dependencies": [],
       "intended_runtime_placement": "Small favicon; preserve separately approved large icon",
-      "status": "INTEGRATION PENDING"
+      "status": "INTEGRATION PENDING",
+      "source_availability": "pinned Git blob",
+      "delivery_state": "export/file present",
+      "runtime_state": "not integrated"
     },
     {
       "path": "assets/nino/app-icon/micro-v2/topo-nino-scooter-italy-24.png",
@@ -167,7 +190,10 @@
       "missing_dependencies": [],
       "intended_runtime_placement": "Small favicon; preserve separately approved large icon",
       "decoded_RGBA_sha256": "2f00e34b4da772f9f3950c34704b6b2e01fb192b505aac35f436817c482455fb",
-      "status": "INTEGRATION PENDING"
+      "status": "INTEGRATION PENDING",
+      "source_availability": "pinned Git blob",
+      "delivery_state": "export/file present",
+      "runtime_state": "not integrated"
     },
     {
       "path": "assets/nino/app-icon/micro-v2/topo-nino-scooter-italy-32.png",
@@ -208,7 +234,10 @@
       "missing_dependencies": [],
       "intended_runtime_placement": "Small favicon; preserve separately approved large icon",
       "decoded_RGBA_sha256": "8829db9cdd3fd9fb5000f82fdc0c9045c5d540fda7fe46c02aaef78fb7aa489a",
-      "status": "READY"
+      "status": "READY",
+      "source_availability": "pinned Git blob",
+      "delivery_state": "export/file present",
+      "runtime_state": "integrated"
     },
     {
       "path": "assets/nino/app-icon/micro-v2/topo-nino-scooter-italy-48.png",
@@ -249,7 +278,10 @@
       "missing_dependencies": [],
       "intended_runtime_placement": "Small favicon; preserve separately approved large icon",
       "decoded_RGBA_sha256": "9e96baedd75e29a19515081127a4744749dc973347ca18e39d8807fd4dbd4aa7",
-      "status": "INTEGRATION PENDING"
+      "status": "INTEGRATION PENDING",
+      "source_availability": "pinned Git blob",
+      "delivery_state": "export/file present",
+      "runtime_state": "not integrated"
     },
     {
       "path": "assets/nino/app-icon/micro-v2/topo-nino-scooter-italy-64.png",
@@ -290,7 +322,10 @@
       "missing_dependencies": [],
       "intended_runtime_placement": "Small favicon; preserve separately approved large icon",
       "decoded_RGBA_sha256": "ae0965bf9ecfb016c011b6b685491c5313aee94e900c5e6883ccbef4bcbc640b",
-      "status": "INTEGRATION PENDING"
+      "status": "INTEGRATION PENDING",
+      "source_availability": "pinned Git blob",
+      "delivery_state": "export/file present",
+      "runtime_state": "not integrated"
     },
     {
       "path": "assets/nino/app-icon/micro-v2/topo-nino-scooter-italy-master.svg",
@@ -315,7 +350,10 @@
       "runtime_usage": "NOT INTEGRATED",
       "missing_dependencies": [],
       "intended_runtime_placement": "Small favicon; preserve separately approved large icon",
-      "status": "INTEGRATION PENDING"
+      "status": "INTEGRATION PENDING",
+      "source_availability": "pinned Git blob",
+      "delivery_state": "export/file present",
+      "runtime_state": "not integrated"
     },
     {
       "path": "assets/nino/chapter-icons/exports/chapter-01-steden-1-6.webp",
@@ -371,7 +409,10 @@
       "missing_dependencies": [],
       "intended_runtime_placement": "Existing chapter scene slot; exact canonical chapter only",
       "decoded_RGBA_sha256": "feb16b694729f69e0dbe3e0e9bb00b1be23fe8a3c4b589ea0830db1d4880c2eb",
-      "status": "INTEGRATION PENDING"
+      "status": "INTEGRATION PENDING",
+      "source_availability": "pinned Git blob",
+      "delivery_state": "source only; not delivered",
+      "runtime_state": "not integrated"
     },
     {
       "path": "assets/nino/chapter-icons/exports/chapter-02-steden-7-12.webp",
@@ -427,7 +468,10 @@
       "missing_dependencies": [],
       "intended_runtime_placement": "Existing chapter scene slot; exact canonical chapter only",
       "decoded_RGBA_sha256": "d0b72686440f680da946bd54483190424ceb22d5601c97aaec7db6d1971db379",
-      "status": "INTEGRATION PENDING"
+      "status": "INTEGRATION PENDING",
+      "source_availability": "pinned Git blob",
+      "delivery_state": "source only; not delivered",
+      "runtime_state": "not integrated"
     },
     {
       "path": "assets/nino/chapter-icons/exports/chapter-03-extra-steden-13-18.webp",
@@ -483,7 +527,10 @@
       "missing_dependencies": [],
       "intended_runtime_placement": "Existing chapter scene slot; exact canonical chapter only",
       "decoded_RGBA_sha256": "7c7263364078b2af7a1b97a788e12cadd4746c33040ad8685e6c72dbd85f6d61",
-      "status": "INTEGRATION PENDING"
+      "status": "INTEGRATION PENDING",
+      "source_availability": "pinned Git blob",
+      "delivery_state": "source only; not delivered",
+      "runtime_state": "not integrated"
     },
     {
       "path": "assets/nino/chapter-icons/exports/chapter-04-extra-steden-19-23.webp",
@@ -539,7 +586,10 @@
       "missing_dependencies": [],
       "intended_runtime_placement": "Existing chapter scene slot; exact canonical chapter only",
       "decoded_RGBA_sha256": "0755fca9743ddee984c03f4f13902fea2c9e8a099a46fcef521594ecc042b062",
-      "status": "INTEGRATION PENDING"
+      "status": "INTEGRATION PENDING",
+      "source_availability": "pinned Git blob",
+      "delivery_state": "source only; not delivered",
+      "runtime_state": "not integrated"
     },
     {
       "path": "assets/nino/chapter-icons/exports/chapter-05-eilanden.webp",
@@ -595,7 +645,10 @@
       "missing_dependencies": [],
       "intended_runtime_placement": "Existing chapter scene slot; exact canonical chapter only",
       "decoded_RGBA_sha256": "12bd3576e4a35d304dad5bbbcabe5642e8356847a980ffc3f64720f3b501f939",
-      "status": "INTEGRATION PENDING"
+      "status": "INTEGRATION PENDING",
+      "source_availability": "pinned Git blob",
+      "delivery_state": "source only; not delivered",
+      "runtime_state": "not integrated"
     },
     {
       "path": "assets/nino/chapter-icons/exports/chapter-06-bergen.webp",
@@ -651,7 +704,10 @@
       "missing_dependencies": [],
       "intended_runtime_placement": "Existing chapter scene slot; exact canonical chapter only",
       "decoded_RGBA_sha256": "9d12e0a5d8e4b87b7579005a5837d7509fb6755971811b13b39d316b2634d347",
-      "status": "INTEGRATION PENDING"
+      "status": "INTEGRATION PENDING",
+      "source_availability": "pinned Git blob",
+      "delivery_state": "source only; not delivered",
+      "runtime_state": "not integrated"
     },
     {
       "path": "assets/nino/chapter-icons/exports/chapter-07-vulkanen.webp",
@@ -707,7 +763,10 @@
       "missing_dependencies": [],
       "intended_runtime_placement": "Existing chapter scene slot; exact canonical chapter only",
       "decoded_RGBA_sha256": "aeb86ac0ab4f9140bde4cc58e93ec32aa1e17e45399ac817657af650342be293",
-      "status": "INTEGRATION PENDING"
+      "status": "INTEGRATION PENDING",
+      "source_availability": "pinned Git blob",
+      "delivery_state": "source only; not delivered",
+      "runtime_state": "not integrated"
     },
     {
       "path": "assets/nino/chapter-icons/exports/chapter-08-streken.webp",
@@ -763,7 +822,10 @@
       "missing_dependencies": [],
       "intended_runtime_placement": "Existing chapter scene slot; exact canonical chapter only",
       "decoded_RGBA_sha256": "a5c0a9bbff5fe453d6465916208258648bd5e69ca04078e58740e5aba702ec0c",
-      "status": "INTEGRATION PENDING"
+      "status": "INTEGRATION PENDING",
+      "source_availability": "pinned Git blob",
+      "delivery_state": "source only; not delivered",
+      "runtime_state": "not integrated"
     },
     {
       "path": "assets/nino/chapter-icons/exports/chapter-09-landen.webp",
@@ -819,7 +881,10 @@
       "missing_dependencies": [],
       "intended_runtime_placement": "Existing chapter scene slot; exact canonical chapter only",
       "decoded_RGBA_sha256": "40d54714e0709ddb64a9addec99d54cca7c9ca1021f3d317c4be5e8ca1357432",
-      "status": "INTEGRATION PENDING"
+      "status": "INTEGRATION PENDING",
+      "source_availability": "pinned Git blob",
+      "delivery_state": "source only; not delivered",
+      "runtime_state": "not integrated"
     },
     {
       "path": "assets/nino/chapter-icons/exports/chapter-10-zeeen.webp",
@@ -875,7 +940,10 @@
       "missing_dependencies": [],
       "intended_runtime_placement": "Existing chapter scene slot; exact canonical chapter only",
       "decoded_RGBA_sha256": "5bb25a5d4fda0e73e60c082ffc8da3acd2f9d04d37799c00b9649273db3aa5ad",
-      "status": "INTEGRATION PENDING"
+      "status": "INTEGRATION PENDING",
+      "source_availability": "pinned Git blob",
+      "delivery_state": "source only; not delivered",
+      "runtime_state": "not integrated"
     },
     {
       "path": "assets/nino/chapter-icons/exports/chapter-11-rivieren.webp",
@@ -931,7 +999,10 @@
       "missing_dependencies": [],
       "intended_runtime_placement": "Existing chapter scene slot; exact canonical chapter only",
       "decoded_RGBA_sha256": "686384a42db010290cd9999459cfea1071abf9bd0101af793e96b40e3025c4bb",
-      "status": "INTEGRATION PENDING"
+      "status": "INTEGRATION PENDING",
+      "source_availability": "pinned Git blob",
+      "delivery_state": "source only; not delivered",
+      "runtime_state": "not integrated"
     },
     {
       "path": "assets/nino/chapter-icons/masters/chapter-01-steden-1-6.png",
@@ -987,7 +1058,10 @@
       "missing_dependencies": [],
       "intended_runtime_placement": "Existing chapter scene slot; exact canonical chapter only",
       "decoded_RGBA_sha256": "c1475597626be94c8ffcffaae466af3dac4956e24de11ca6c12cfa30368a53ae",
-      "status": "READY"
+      "status": "READY",
+      "source_availability": "pinned Git blob",
+      "delivery_state": "source only; not delivered",
+      "runtime_state": "not integrated"
     },
     {
       "path": "assets/nino/chapter-icons/masters/chapter-02-steden-7-12.png",
@@ -1043,7 +1117,10 @@
       "missing_dependencies": [],
       "intended_runtime_placement": "Existing chapter scene slot; exact canonical chapter only",
       "decoded_RGBA_sha256": "5871638d490c68c93a2d39881f846f1eb131be9e2b25d81de08170cec2dfd7d8",
-      "status": "READY"
+      "status": "READY",
+      "source_availability": "pinned Git blob",
+      "delivery_state": "source only; not delivered",
+      "runtime_state": "not integrated"
     },
     {
       "path": "assets/nino/chapter-icons/masters/chapter-03-extra-steden-13-18.png",
@@ -1099,7 +1176,10 @@
       "missing_dependencies": [],
       "intended_runtime_placement": "Existing chapter scene slot; exact canonical chapter only",
       "decoded_RGBA_sha256": "ecae77a729a5ae581490d2664ac2ba8cd96ba826f6602ff8dbb97e32f71d7ee8",
-      "status": "READY"
+      "status": "READY",
+      "source_availability": "pinned Git blob",
+      "delivery_state": "source only; not delivered",
+      "runtime_state": "not integrated"
     },
     {
       "path": "assets/nino/chapter-icons/masters/chapter-04-extra-steden-19-23.png",
@@ -1155,7 +1235,10 @@
       "missing_dependencies": [],
       "intended_runtime_placement": "Existing chapter scene slot; exact canonical chapter only",
       "decoded_RGBA_sha256": "9071259ac253001fb4b1dac8454309e23f61c259a0b9d193144b9ed436da480a",
-      "status": "READY"
+      "status": "READY",
+      "source_availability": "pinned Git blob",
+      "delivery_state": "source only; not delivered",
+      "runtime_state": "not integrated"
     },
     {
       "path": "assets/nino/chapter-icons/masters/chapter-05-eilanden.png",
@@ -1211,7 +1294,10 @@
       "missing_dependencies": [],
       "intended_runtime_placement": "Existing chapter scene slot; exact canonical chapter only",
       "decoded_RGBA_sha256": "d99d85f53f9d6c006b155476e3618fa091eeac5bf27c308de642e96a7c512a9f",
-      "status": "READY"
+      "status": "READY",
+      "source_availability": "pinned Git blob",
+      "delivery_state": "source only; not delivered",
+      "runtime_state": "not integrated"
     },
     {
       "path": "assets/nino/chapter-icons/masters/chapter-06-bergen.png",
@@ -1267,7 +1353,10 @@
       "missing_dependencies": [],
       "intended_runtime_placement": "Existing chapter scene slot; exact canonical chapter only",
       "decoded_RGBA_sha256": "30bd0109a1ae972e81aabd43621eccf2169628fec22094578a5cbd236d9b6d86",
-      "status": "READY"
+      "status": "READY",
+      "source_availability": "pinned Git blob",
+      "delivery_state": "source only; not delivered",
+      "runtime_state": "not integrated"
     },
     {
       "path": "assets/nino/chapter-icons/masters/chapter-07-vulkanen.png",
@@ -1323,7 +1412,10 @@
       "missing_dependencies": [],
       "intended_runtime_placement": "Existing chapter scene slot; exact canonical chapter only",
       "decoded_RGBA_sha256": "e3232c63c7edfffa8dcfd22e836b83140708920e1bb57b9a9841e426607dbae0",
-      "status": "READY"
+      "status": "READY",
+      "source_availability": "pinned Git blob",
+      "delivery_state": "source only; not delivered",
+      "runtime_state": "not integrated"
     },
     {
       "path": "assets/nino/chapter-icons/masters/chapter-08-streken.png",
@@ -1379,7 +1471,10 @@
       "missing_dependencies": [],
       "intended_runtime_placement": "Existing chapter scene slot; exact canonical chapter only",
       "decoded_RGBA_sha256": "c64fd76ed8db422a3bc1f3247956875cfcce8ee676db0fe96bf31af74630f206",
-      "status": "READY"
+      "status": "READY",
+      "source_availability": "pinned Git blob",
+      "delivery_state": "source only; not delivered",
+      "runtime_state": "not integrated"
     },
     {
       "path": "assets/nino/chapter-icons/masters/chapter-09-landen.png",
@@ -1435,7 +1530,10 @@
       "missing_dependencies": [],
       "intended_runtime_placement": "Existing chapter scene slot; exact canonical chapter only",
       "decoded_RGBA_sha256": "4fa6792b131058ac107f3c6971565938bb403a293b73abf6e25551b982ad2774",
-      "status": "READY"
+      "status": "READY",
+      "source_availability": "pinned Git blob",
+      "delivery_state": "source only; not delivered",
+      "runtime_state": "not integrated"
     },
     {
       "path": "assets/nino/chapter-icons/masters/chapter-10-zeeen.png",
@@ -1491,7 +1589,10 @@
       "missing_dependencies": [],
       "intended_runtime_placement": "Existing chapter scene slot; exact canonical chapter only",
       "decoded_RGBA_sha256": "e0cdff2ee432b92a7d7714fe1917d41bc7be11cca42fecdde50d63c031723bc3",
-      "status": "READY"
+      "status": "READY",
+      "source_availability": "pinned Git blob",
+      "delivery_state": "source only; not delivered",
+      "runtime_state": "not integrated"
     },
     {
       "path": "assets/nino/chapter-icons/masters/chapter-11-rivieren.png",
@@ -1547,7 +1648,10 @@
       "missing_dependencies": [],
       "intended_runtime_placement": "Existing chapter scene slot; exact canonical chapter only",
       "decoded_RGBA_sha256": "fa6965c7c36f0b1650f4d4a049bf358f65bc7b8e7061bb732904b9000564876f",
-      "status": "READY"
+      "status": "READY",
+      "source_availability": "pinned Git blob",
+      "delivery_state": "source only; not delivered",
+      "runtime_state": "not integrated"
     },
     {
       "path": "assets/nino/chapter-icons/qa/small-size-audit.png",
@@ -1603,7 +1707,10 @@
       "missing_dependencies": [],
       "intended_runtime_placement": "Existing chapter scene slot; exact canonical chapter only",
       "decoded_RGBA_sha256": "589f5138b6678a7db58b2b673ccd201ed08ade3f3ed88c50114faab8ccfd287c",
-      "status": "OPTIONAL DEFERRED"
+      "status": "OPTIONAL DEFERRED",
+      "source_availability": "pinned Git blob",
+      "delivery_state": "source only; not delivered",
+      "runtime_state": "not integrated"
     },
     {
       "path": "assets/nino/chapter-icons/qa/visual-audit-11.png",
@@ -1659,7 +1766,10 @@
       "missing_dependencies": [],
       "intended_runtime_placement": "Existing chapter scene slot; exact canonical chapter only",
       "decoded_RGBA_sha256": "d90fddf8385b109ef728153ee0c68edbf0bc4d70f8f64382980f8f050ee9ce9e",
-      "status": "OPTIONAL DEFERRED"
+      "status": "OPTIONAL DEFERRED",
+      "source_availability": "pinned Git blob",
+      "delivery_state": "source only; not delivered",
+      "runtime_state": "not integrated"
     },
     {
       "path": "assets/nino/characters/nino-encourage.png",
@@ -1715,7 +1825,10 @@
       "missing_dependencies": [],
       "intended_runtime_placement": "Existing Nino pose policy only",
       "decoded_RGBA_sha256": "eaec3032e6a455f465935c4522b4661c8457bfdba9bdc592c167a95854a32f0c",
-      "status": "READY"
+      "status": "READY",
+      "source_availability": "pinned Git blob",
+      "delivery_state": "source only; not delivered",
+      "runtime_state": "not integrated"
     },
     {
       "path": "assets/nino/characters/nino-gold.png",
@@ -1771,7 +1884,10 @@
       "missing_dependencies": [],
       "intended_runtime_placement": "Existing Nino pose policy only",
       "decoded_RGBA_sha256": "6dd5f01d3d60529f0daf65f3138bebae70c4cf2441b6571879f3db293e23b87a",
-      "status": "READY"
+      "status": "READY",
+      "source_availability": "pinned Git blob",
+      "delivery_state": "source only; not delivered",
+      "runtime_state": "not integrated"
     },
     {
       "path": "assets/nino/characters/nino-guide.png",
@@ -1827,7 +1943,10 @@
       "missing_dependencies": [],
       "intended_runtime_placement": "Existing Nino pose policy only",
       "decoded_RGBA_sha256": "7bd54a537ba87e9c8824213c7b77ca72be275a42c49bb6f06a93bc2642b6ae01",
-      "status": "READY"
+      "status": "READY",
+      "source_availability": "pinned Git blob",
+      "delivery_state": "source only; not delivered",
+      "runtime_state": "not integrated"
     },
     {
       "path": "assets/nino/characters/nino-reflect.png",
@@ -1883,7 +2002,10 @@
       "missing_dependencies": [],
       "intended_runtime_placement": "Existing Nino pose policy only",
       "decoded_RGBA_sha256": "c9843f782b8ef4e13ba1a5e1e7265a084c8a158f9f5465620a8b73e2fa36f624",
-      "status": "READY"
+      "status": "READY",
+      "source_availability": "pinned Git blob",
+      "delivery_state": "source only; not delivered",
+      "runtime_state": "not integrated"
     },
     {
       "path": "assets/nino/characters/nino-success.png",
@@ -1939,7 +2061,10 @@
       "missing_dependencies": [],
       "intended_runtime_placement": "Existing Nino pose policy only",
       "decoded_RGBA_sha256": "8368ddd9ea9f6b92ad0733d2705002c125920eaeb8d679a40920c68f12d569d3",
-      "status": "READY"
+      "status": "READY",
+      "source_availability": "pinned Git blob",
+      "delivery_state": "source only; not delivered",
+      "runtime_state": "not integrated"
     },
     {
       "path": "assets/nino/characters/nino-travel.png",
@@ -1995,7 +2120,10 @@
       "missing_dependencies": [],
       "intended_runtime_placement": "Existing Nino pose policy only",
       "decoded_RGBA_sha256": "c707c3352aecb0597fd8bf81473dbaa3b268519a47555c61cde36ca8bbf7ef0e",
-      "status": "READY"
+      "status": "READY",
+      "source_availability": "pinned Git blob",
+      "delivery_state": "source only; not delivered",
+      "runtime_state": "not integrated"
     },
     {
       "path": "assets/nino/characters/nino-welcome.png",
@@ -2051,7 +2179,10 @@
       "missing_dependencies": [],
       "intended_runtime_placement": "Existing Nino pose policy only",
       "decoded_RGBA_sha256": "44253ed303070080b5628c0023bc08f7e21ecc1bf7cb085d2b6c9b53eea1afe9",
-      "status": "READY"
+      "status": "READY",
+      "source_availability": "pinned Git blob",
+      "delivery_state": "source only; not delivered",
+      "runtime_state": "not integrated"
     },
     {
       "path": "assets/nino/concepts/nino-art-direction-board.png",
@@ -2107,7 +2238,10 @@
       "missing_dependencies": [],
       "intended_runtime_placement": "Preserved source/reference; no new placement authorized",
       "decoded_RGBA_sha256": "1df3b0eac8f3817a5b6df9f6bc45d759c76f729f761ea39cfb8ee0301f228877",
-      "status": "OPTIONAL DEFERRED"
+      "status": "OPTIONAL DEFERRED",
+      "source_availability": "pinned Git blob",
+      "delivery_state": "source only; not delivered",
+      "runtime_state": "not integrated"
     },
     {
       "path": "assets/nino/concepts/nino-football-torino.png",
@@ -2163,7 +2297,10 @@
       "missing_dependencies": [],
       "intended_runtime_placement": "Preserved source/reference; no new placement authorized",
       "decoded_RGBA_sha256": "9105c1f78a3b078140f4588b35f2b654c0ee31a7d3cb638aac9a9d890afb1aa2",
-      "status": "OPTIONAL DEFERRED"
+      "status": "OPTIONAL DEFERRED",
+      "source_availability": "pinned Git blob",
+      "delivery_state": "source only; not delivered",
+      "runtime_state": "not integrated"
     },
     {
       "path": "assets/nino/concepts/topo-eilanden-v1.png",
@@ -2219,7 +2356,10 @@
       "missing_dependencies": [],
       "intended_runtime_placement": "Preserved source/reference; no new placement authorized",
       "decoded_RGBA_sha256": "f7ec2520237bceb62392875a2ea40b80efa123bae45be9462f92c0e52720590a",
-      "status": "OPTIONAL DEFERRED"
+      "status": "OPTIONAL DEFERRED",
+      "source_availability": "pinned Git blob",
+      "delivery_state": "source only; not delivered",
+      "runtime_state": "not integrated"
     },
     {
       "path": "assets/nino/exports/nino-arrival.webp",
@@ -2280,7 +2420,10 @@
       "missing_dependencies": [],
       "intended_runtime_placement": "Preserved source/reference; no new placement authorized",
       "decoded_RGBA_sha256": "226033c293940b5ffd4923a3f79000b20d08abb3f7eb64eb5f0875a6bf2d44e9",
-      "status": "READY"
+      "status": "READY",
+      "source_availability": "pinned Git blob",
+      "delivery_state": "export/file present",
+      "runtime_state": "integrated"
     },
     {
       "path": "assets/nino/exports/nino-encourage.webp",
@@ -2341,7 +2484,10 @@
       "missing_dependencies": [],
       "intended_runtime_placement": "Preserved source/reference; no new placement authorized",
       "decoded_RGBA_sha256": "a9a6d44eece869d566610c75a8eedc6901a42e6fc0bdfd59b847f05e84cc591b",
-      "status": "READY"
+      "status": "READY",
+      "source_availability": "pinned Git blob",
+      "delivery_state": "export/file present",
+      "runtime_state": "integrated"
     },
     {
       "path": "assets/nino/exports/nino-gold.webp",
@@ -2402,7 +2548,10 @@
       "missing_dependencies": [],
       "intended_runtime_placement": "Preserved source/reference; no new placement authorized",
       "decoded_RGBA_sha256": "772d8130756c9d100805a3e0ab880878223243bd94980d78bbaaf08527c21d4f",
-      "status": "READY"
+      "status": "READY",
+      "source_availability": "pinned Git blob",
+      "delivery_state": "export/file present",
+      "runtime_state": "integrated"
     },
     {
       "path": "assets/nino/exports/nino-guide.webp",
@@ -2463,7 +2612,10 @@
       "missing_dependencies": [],
       "intended_runtime_placement": "Preserved source/reference; no new placement authorized",
       "decoded_RGBA_sha256": "5f8fc763720908e93e50b4e42a08623a81c5ec58f0a035d7c94c26d341f0263e",
-      "status": "READY"
+      "status": "READY",
+      "source_availability": "pinned Git blob",
+      "delivery_state": "export/file present",
+      "runtime_state": "integrated"
     },
     {
       "path": "assets/nino/exports/nino-reflect.webp",
@@ -2519,7 +2671,10 @@
       "missing_dependencies": [],
       "intended_runtime_placement": "Preserved source/reference; no new placement authorized",
       "decoded_RGBA_sha256": "3e886db00a549c98a6e50b21c72421e2494a478a0b0a6c3e33c3db8e91b2a9ca",
-      "status": "INTEGRATION PENDING"
+      "status": "INTEGRATION PENDING",
+      "source_availability": "pinned Git blob",
+      "delivery_state": "source only; not delivered",
+      "runtime_state": "not integrated"
     },
     {
       "path": "assets/nino/exports/nino-success.webp",
@@ -2580,7 +2735,10 @@
       "missing_dependencies": [],
       "intended_runtime_placement": "Preserved source/reference; no new placement authorized",
       "decoded_RGBA_sha256": "738656f145963c52113a6609302d11504f4716ccba9d61474e22f378cb5e3478",
-      "status": "READY"
+      "status": "READY",
+      "source_availability": "pinned Git blob",
+      "delivery_state": "export/file present",
+      "runtime_state": "integrated"
     },
     {
       "path": "assets/nino/exports/nino-travel.webp",
@@ -2636,7 +2794,10 @@
       "missing_dependencies": [],
       "intended_runtime_placement": "Preserved source/reference; no new placement authorized",
       "decoded_RGBA_sha256": "a04cadc13f4f1bd2eeda769ebf8c7235b061e20a7878631a1da65f045d89990d",
-      "status": "INTEGRATION PENDING"
+      "status": "INTEGRATION PENDING",
+      "source_availability": "pinned Git blob",
+      "delivery_state": "source only; not delivered",
+      "runtime_state": "not integrated"
     },
     {
       "path": "assets/nino/exports/nino-welcome.webp",
@@ -2697,7 +2858,10 @@
       "missing_dependencies": [],
       "intended_runtime_placement": "Preserved source/reference; no new placement authorized",
       "decoded_RGBA_sha256": "cf87c6524ca40725a50ccb1a24ba38e156d7f0978acba0fdb840838efcec34b5",
-      "status": "READY"
+      "status": "READY",
+      "source_availability": "pinned Git blob",
+      "delivery_state": "export/file present",
+      "runtime_state": "integrated"
     },
     {
       "path": "assets/nino/exports/topo-bergen-dolomieten.webp",
@@ -2753,7 +2917,10 @@
       "missing_dependencies": [],
       "intended_runtime_placement": "Preserved source/reference; no new placement authorized",
       "decoded_RGBA_sha256": "df8550c5ba22291ff42fd60e2c80bbbc1b7d5d5f688e14e9d93f25324c1f3303",
-      "status": "INTEGRATION PENDING"
+      "status": "INTEGRATION PENDING",
+      "source_availability": "pinned Git blob",
+      "delivery_state": "source only; not delivered",
+      "runtime_state": "not integrated"
     },
     {
       "path": "assets/nino/exports/topo-eilanden-v2.webp",
@@ -2809,7 +2976,10 @@
       "missing_dependencies": [],
       "intended_runtime_placement": "Preserved source/reference; no new placement authorized",
       "decoded_RGBA_sha256": "ac508bc345a940fb0d73e4747fef42cf7f56a775b8f933f3d6093644d5100577",
-      "status": "INTEGRATION PENDING"
+      "status": "INTEGRATION PENDING",
+      "source_availability": "pinned Git blob",
+      "delivery_state": "source only; not delivered",
+      "runtime_state": "not integrated"
     },
     {
       "path": "assets/nino/exports/topo-landen-italie-slovenie.webp",
@@ -2865,7 +3035,10 @@
       "missing_dependencies": [],
       "intended_runtime_placement": "Preserved source/reference; no new placement authorized",
       "decoded_RGBA_sha256": "494cfc25115e9f5b8376d8b70d009bd308e735513829c4facbc649d37296e4d5",
-      "status": "INTEGRATION PENDING"
+      "status": "INTEGRATION PENDING",
+      "source_availability": "pinned Git blob",
+      "delivery_state": "source only; not delivered",
+      "runtime_state": "not integrated"
     },
     {
       "path": "assets/nino/exports/topo-rivieren-po.webp",
@@ -2921,7 +3094,10 @@
       "missing_dependencies": [],
       "intended_runtime_placement": "Preserved source/reference; no new placement authorized",
       "decoded_RGBA_sha256": "b18621ebbf949eaf3790c56b17dd99e06bf8ab73f5336c3be7bd0e5879bc98a4",
-      "status": "INTEGRATION PENDING"
+      "status": "INTEGRATION PENDING",
+      "source_availability": "pinned Git blob",
+      "delivery_state": "source only; not delivered",
+      "runtime_state": "not integrated"
     },
     {
       "path": "assets/nino/exports/topo-steden-firenze.webp",
@@ -2977,7 +3153,10 @@
       "missing_dependencies": [],
       "intended_runtime_placement": "Preserved source/reference; no new placement authorized",
       "decoded_RGBA_sha256": "43add037d523f53c965fb3555081138383e34b6722be52f95909b23873ed7a76",
-      "status": "INTEGRATION PENDING"
+      "status": "INTEGRATION PENDING",
+      "source_availability": "pinned Git blob",
+      "delivery_state": "source only; not delivered",
+      "runtime_state": "not integrated"
     },
     {
       "path": "assets/nino/exports/topo-streken-toscana.webp",
@@ -3033,7 +3212,10 @@
       "missing_dependencies": [],
       "intended_runtime_placement": "Preserved source/reference; no new placement authorized",
       "decoded_RGBA_sha256": "7355bc099a6529edfb93040eb66505dfdb1a2e97dcf6b26fcade7230e468a36b",
-      "status": "INTEGRATION PENDING"
+      "status": "INTEGRATION PENDING",
+      "source_availability": "pinned Git blob",
+      "delivery_state": "source only; not delivered",
+      "runtime_state": "not integrated"
     },
     {
       "path": "assets/nino/exports/topo-vulkanen-etna.webp",
@@ -3089,7 +3271,10 @@
       "missing_dependencies": [],
       "intended_runtime_placement": "Preserved source/reference; no new placement authorized",
       "decoded_RGBA_sha256": "10eb884eabdcfcafef612886e8abe661f7461d9297b6da71c23d44f7d21de4fb",
-      "status": "INTEGRATION PENDING"
+      "status": "INTEGRATION PENDING",
+      "source_availability": "pinned Git blob",
+      "delivery_state": "source only; not delivered",
+      "runtime_state": "not integrated"
     },
     {
       "path": "assets/nino/exports/topo-zeeen-amalfi.webp",
@@ -3145,7 +3330,10 @@
       "missing_dependencies": [],
       "intended_runtime_placement": "Preserved source/reference; no new placement authorized",
       "decoded_RGBA_sha256": "e8d86d5a806f4c26c943d720be88400cab63453f04fa0b522706d337912ee0c5",
-      "status": "INTEGRATION PENDING"
+      "status": "INTEGRATION PENDING",
+      "source_availability": "pinned Git blob",
+      "delivery_state": "source only; not delivered",
+      "runtime_state": "not integrated"
     },
     {
       "path": "assets/nino/references/nino-original-italian-coast.png",
@@ -3201,7 +3389,10 @@
       "missing_dependencies": [],
       "intended_runtime_placement": "Preserved source/reference; no new placement authorized",
       "decoded_RGBA_sha256": "c34dcb95da057dd5d2adc780eecddd81a96ea23b11637301d8e61d6f165ba462",
-      "status": "EXPORT PENDING"
+      "status": "EXPORT PENDING",
+      "source_availability": "pinned Git blob",
+      "delivery_state": "source only; not delivered",
+      "runtime_state": "not integrated"
     },
     {
       "path": "assets/nino/references/nino-original-scooter.png",
@@ -3257,7 +3448,10 @@
       "missing_dependencies": [],
       "intended_runtime_placement": "Preserved source/reference; no new placement authorized",
       "decoded_RGBA_sha256": "b1610fc75b623d7c2b42bf0fb2c70f473e1c2080f5c9e9146f5c64bf6f202c2d",
-      "status": "EXPORT PENDING"
+      "status": "EXPORT PENDING",
+      "source_availability": "pinned Git blob",
+      "delivery_state": "source only; not delivered",
+      "runtime_state": "not integrated"
     },
     {
       "path": "assets/nino/rewards/pizza/board/pizza-board-wood.png",
@@ -3313,7 +3507,10 @@
       "missing_dependencies": [],
       "intended_runtime_placement": "Approved static open-box fallback; no hinged-lid frames",
       "decoded_RGBA_sha256": "2198eabf3a1c90475876c0503e831e592e59e02f7e1d4a16536e4b157e06c577",
-      "status": "EXPORT PENDING"
+      "status": "EXPORT PENDING",
+      "source_availability": "pinned Git blob",
+      "delivery_state": "source only; not delivered",
+      "runtime_state": "not integrated"
     },
     {
       "path": "assets/nino/rewards/pizza/boxes/pizza-box-closed-pisa.png",
@@ -3369,7 +3566,10 @@
       "missing_dependencies": [],
       "intended_runtime_placement": "Approved static open-box fallback; no hinged-lid frames",
       "decoded_RGBA_sha256": "fbf9a9446d3180217d5c44e4f4c82d6c983b68e53a3a4a3302545adf1d8bb7db",
-      "status": "EXPORT PENDING"
+      "status": "EXPORT PENDING",
+      "source_availability": "pinned Git blob",
+      "delivery_state": "source only; not delivered",
+      "runtime_state": "not integrated"
     },
     {
       "path": "assets/nino/rewards/pizza/boxes/pizza-box-open-pisa-margherita.png",
@@ -3425,7 +3625,10 @@
       "missing_dependencies": [],
       "intended_runtime_placement": "Approved static open-box fallback; no hinged-lid frames",
       "decoded_RGBA_sha256": "451f09024017b63990aa3dbb34cc7b29583dc4633ed0447f92078cdf6368ba8e",
-      "status": "EXPORT PENDING"
+      "status": "EXPORT PENDING",
+      "source_availability": "pinned Git blob",
+      "delivery_state": "source only; not delivered",
+      "runtime_state": "not integrated"
     },
     {
       "path": "assets/nino/rewards/pizza/boxes/pizza-box-open-pisa-quattro-formaggi.png",
@@ -3481,7 +3684,10 @@
       "missing_dependencies": [],
       "intended_runtime_placement": "Approved static open-box fallback; no hinged-lid frames",
       "decoded_RGBA_sha256": "4180c83ebf8e50b5be14d9be1cb0416f07eae2fcee83a998c297cf21fcebbe21",
-      "status": "EXPORT PENDING"
+      "status": "EXPORT PENDING",
+      "source_availability": "pinned Git blob",
+      "delivery_state": "source only; not delivered",
+      "runtime_state": "not integrated"
     },
     {
       "path": "assets/nino/rewards/pizza/boxes/pizza-box-open-pisa-salami.png",
@@ -3537,7 +3743,10 @@
       "missing_dependencies": [],
       "intended_runtime_placement": "Approved static open-box fallback; no hinged-lid frames",
       "decoded_RGBA_sha256": "daad6d3c0d61712ffe69170821e7499c27990596f051ad16894ebbaab3aabca3",
-      "status": "EXPORT PENDING"
+      "status": "EXPORT PENDING",
+      "source_availability": "pinned Git blob",
+      "delivery_state": "source only; not delivered",
+      "runtime_state": "not integrated"
     },
     {
       "path": "assets/nino/rewards/pizza/exports/pizza-board-wood.webp",
@@ -3593,7 +3802,10 @@
       "missing_dependencies": [],
       "intended_runtime_placement": "Approved static open-box fallback; no hinged-lid frames",
       "decoded_RGBA_sha256": "2aef782eed494ed5f7a163ce06c17b98132a4e4b367865c39218595d8fe2688b",
-      "status": "INTEGRATION PENDING"
+      "status": "INTEGRATION PENDING",
+      "source_availability": "pinned Git blob",
+      "delivery_state": "source only; not delivered",
+      "runtime_state": "not integrated"
     },
     {
       "path": "assets/nino/rewards/pizza/exports/pizza-box-closed-pisa.webp",
@@ -3649,7 +3861,10 @@
       "missing_dependencies": [],
       "intended_runtime_placement": "Approved static open-box fallback; no hinged-lid frames",
       "decoded_RGBA_sha256": "defcd6c373fa10e50196691dbf0f41e58dcaa5a2f15c3e704c0c0cc082c5f7e9",
-      "status": "INTEGRATION PENDING"
+      "status": "INTEGRATION PENDING",
+      "source_availability": "pinned Git blob",
+      "delivery_state": "export/file present",
+      "runtime_state": "not integrated"
     },
     {
       "path": "assets/nino/rewards/pizza/exports/pizza-box-open-pisa-margherita.webp",
@@ -3705,7 +3920,10 @@
       "missing_dependencies": [],
       "intended_runtime_placement": "Approved static open-box fallback; no hinged-lid frames",
       "decoded_RGBA_sha256": "9fd0d839413ec52cec8eb56779c1847f551c64f321f8d056c4a88f570fdd9d44",
-      "status": "INTEGRATION PENDING"
+      "status": "INTEGRATION PENDING",
+      "source_availability": "pinned Git blob",
+      "delivery_state": "export/file present",
+      "runtime_state": "not integrated"
     },
     {
       "path": "assets/nino/rewards/pizza/exports/pizza-box-open-pisa-quattro-formaggi.webp",
@@ -3761,7 +3979,10 @@
       "missing_dependencies": [],
       "intended_runtime_placement": "Approved static open-box fallback; no hinged-lid frames",
       "decoded_RGBA_sha256": "38d9ec1908aee24a37f49760a366a16e586b3565c0ee53cad6b0b739d9534a6f",
-      "status": "INTEGRATION PENDING"
+      "status": "INTEGRATION PENDING",
+      "source_availability": "pinned Git blob",
+      "delivery_state": "export/file present",
+      "runtime_state": "not integrated"
     },
     {
       "path": "assets/nino/rewards/pizza/exports/pizza-box-open-pisa-salami.webp",
@@ -3817,7 +4038,10 @@
       "missing_dependencies": [],
       "intended_runtime_placement": "Approved static open-box fallback; no hinged-lid frames",
       "decoded_RGBA_sha256": "4299d00f5852cb5b563ab03107b766c44ce7b8945449ba493ebc77e60d676ec4",
-      "status": "INTEGRATION PENDING"
+      "status": "INTEGRATION PENDING",
+      "source_availability": "pinned Git blob",
+      "delivery_state": "export/file present",
+      "runtime_state": "not integrated"
     },
     {
       "path": "assets/nino/rewards/pizza/exports/pizza-margherita-slice-icon.webp",
@@ -3873,7 +4097,10 @@
       "missing_dependencies": [],
       "intended_runtime_placement": "Approved static open-box fallback; no hinged-lid frames",
       "decoded_RGBA_sha256": "9825b7d88263bf3565cb96fcd3bdda3348596f54cbb5aa031a043ab4b58229a6",
-      "status": "INTEGRATION PENDING"
+      "status": "INTEGRATION PENDING",
+      "source_availability": "pinned Git blob",
+      "delivery_state": "source only; not delivered",
+      "runtime_state": "not integrated"
     },
     {
       "path": "assets/nino/rewards/pizza/exports/pizza-margherita.webp",
@@ -3929,7 +4156,10 @@
       "missing_dependencies": [],
       "intended_runtime_placement": "Approved static open-box fallback; no hinged-lid frames",
       "decoded_RGBA_sha256": "08a7c8197572a984867246fa7ec6e40cf8aeba5bd5efed285dfd4900120b4348",
-      "status": "INTEGRATION PENDING"
+      "status": "INTEGRATION PENDING",
+      "source_availability": "pinned Git blob",
+      "delivery_state": "source only; not delivered",
+      "runtime_state": "not integrated"
     },
     {
       "path": "assets/nino/rewards/pizza/exports/pizza-quattro-formaggi-slice-icon.webp",
@@ -3985,7 +4215,10 @@
       "missing_dependencies": [],
       "intended_runtime_placement": "Approved static open-box fallback; no hinged-lid frames",
       "decoded_RGBA_sha256": "f28249b752f88ffc576658e56c268519f005a766ea969fb9eebdc56ae9d21f32",
-      "status": "INTEGRATION PENDING"
+      "status": "INTEGRATION PENDING",
+      "source_availability": "pinned Git blob",
+      "delivery_state": "source only; not delivered",
+      "runtime_state": "not integrated"
     },
     {
       "path": "assets/nino/rewards/pizza/exports/pizza-quattro-formaggi.webp",
@@ -4041,7 +4274,10 @@
       "missing_dependencies": [],
       "intended_runtime_placement": "Approved static open-box fallback; no hinged-lid frames",
       "decoded_RGBA_sha256": "6d5fa68fa7724917e077ee8c1e46626e5164718bae5cea699552201b0796ee19",
-      "status": "INTEGRATION PENDING"
+      "status": "INTEGRATION PENDING",
+      "source_availability": "pinned Git blob",
+      "delivery_state": "source only; not delivered",
+      "runtime_state": "not integrated"
     },
     {
       "path": "assets/nino/rewards/pizza/exports/pizza-salami-slice-icon.webp",
@@ -4097,7 +4333,10 @@
       "missing_dependencies": [],
       "intended_runtime_placement": "Approved static open-box fallback; no hinged-lid frames",
       "decoded_RGBA_sha256": "77f59c176534e4663fcc839df4589f71b1ee439d20f6c9c50e9b66cc808ddac5",
-      "status": "INTEGRATION PENDING"
+      "status": "INTEGRATION PENDING",
+      "source_availability": "pinned Git blob",
+      "delivery_state": "source only; not delivered",
+      "runtime_state": "not integrated"
     },
     {
       "path": "assets/nino/rewards/pizza/exports/pizza-salami.webp",
@@ -4153,7 +4392,10 @@
       "missing_dependencies": [],
       "intended_runtime_placement": "Approved static open-box fallback; no hinged-lid frames",
       "decoded_RGBA_sha256": "ae286204b8567f7f58785626c89eb7a97e91b4936068f61bd7000463f456de34",
-      "status": "INTEGRATION PENDING"
+      "status": "INTEGRATION PENDING",
+      "source_availability": "pinned Git blob",
+      "delivery_state": "source only; not delivered",
+      "runtime_state": "not integrated"
     },
     {
       "path": "assets/nino/rewards/pizza/masters/pizza-margherita.png",
@@ -4209,7 +4451,10 @@
       "missing_dependencies": [],
       "intended_runtime_placement": "Approved static open-box fallback; no hinged-lid frames",
       "decoded_RGBA_sha256": "baab40e1763b8cb8a9df3bdb57a21e2dfd0aeb5aed1ea829867bbc289939fa54",
-      "status": "READY"
+      "status": "READY",
+      "source_availability": "pinned Git blob",
+      "delivery_state": "source only; not delivered",
+      "runtime_state": "not integrated"
     },
     {
       "path": "assets/nino/rewards/pizza/masters/pizza-quattro-formaggi.png",
@@ -4265,7 +4510,10 @@
       "missing_dependencies": [],
       "intended_runtime_placement": "Approved static open-box fallback; no hinged-lid frames",
       "decoded_RGBA_sha256": "8de989bf240e5abb2c40e35395c8df8e7b0ff90b6a6da0b6937bbb86bae087ea",
-      "status": "READY"
+      "status": "READY",
+      "source_availability": "pinned Git blob",
+      "delivery_state": "source only; not delivered",
+      "runtime_state": "not integrated"
     },
     {
       "path": "assets/nino/rewards/pizza/masters/pizza-salami.png",
@@ -4321,7 +4569,10 @@
       "missing_dependencies": [],
       "intended_runtime_placement": "Approved static open-box fallback; no hinged-lid frames",
       "decoded_RGBA_sha256": "9c7b67bfcad6e0a09edcadb4ddf825a51ea49b53b548e66e80cde272d734ba30",
-      "status": "READY"
+      "status": "READY",
+      "source_availability": "pinned Git blob",
+      "delivery_state": "source only; not delivered",
+      "runtime_state": "not integrated"
     },
     {
       "path": "assets/nino/rewards/pizza/slices/margherita/aligned_full_canvas/pizza-margherita-slice-01-aligned.png",
@@ -4377,7 +4628,10 @@
       "missing_dependencies": [],
       "intended_runtime_placement": "Approved static open-box fallback; no hinged-lid frames",
       "decoded_RGBA_sha256": "2fec47834bf2dfb1d189aff31263984abafbd2f532620349eb68deb4bcc3c2b4",
-      "status": "EXPORT PENDING"
+      "status": "EXPORT PENDING",
+      "source_availability": "pinned Git blob",
+      "delivery_state": "source only; not delivered",
+      "runtime_state": "not integrated"
     },
     {
       "path": "assets/nino/rewards/pizza/slices/margherita/aligned_full_canvas/pizza-margherita-slice-02-aligned.png",
@@ -4433,7 +4687,10 @@
       "missing_dependencies": [],
       "intended_runtime_placement": "Approved static open-box fallback; no hinged-lid frames",
       "decoded_RGBA_sha256": "dc0af09abb53786e1141270d67d1fe682321129a9fc6b9c9fdef3cbcc22a2093",
-      "status": "EXPORT PENDING"
+      "status": "EXPORT PENDING",
+      "source_availability": "pinned Git blob",
+      "delivery_state": "source only; not delivered",
+      "runtime_state": "not integrated"
     },
     {
       "path": "assets/nino/rewards/pizza/slices/margherita/aligned_full_canvas/pizza-margherita-slice-03-aligned.png",
@@ -4489,7 +4746,10 @@
       "missing_dependencies": [],
       "intended_runtime_placement": "Approved static open-box fallback; no hinged-lid frames",
       "decoded_RGBA_sha256": "c2c0f3bd0886bc22d09ca34ec176d84132e7bb90997b2df5181896c900b28740",
-      "status": "EXPORT PENDING"
+      "status": "EXPORT PENDING",
+      "source_availability": "pinned Git blob",
+      "delivery_state": "source only; not delivered",
+      "runtime_state": "not integrated"
     },
     {
       "path": "assets/nino/rewards/pizza/slices/margherita/aligned_full_canvas/pizza-margherita-slice-04-aligned.png",
@@ -4545,7 +4805,10 @@
       "missing_dependencies": [],
       "intended_runtime_placement": "Approved static open-box fallback; no hinged-lid frames",
       "decoded_RGBA_sha256": "96015a2d8ea80f214e971ca4a426d5b081471a005e77417336371d178e9dff73",
-      "status": "EXPORT PENDING"
+      "status": "EXPORT PENDING",
+      "source_availability": "pinned Git blob",
+      "delivery_state": "source only; not delivered",
+      "runtime_state": "not integrated"
     },
     {
       "path": "assets/nino/rewards/pizza/slices/margherita/aligned_full_canvas/pizza-margherita-slice-05-aligned.png",
@@ -4601,7 +4864,10 @@
       "missing_dependencies": [],
       "intended_runtime_placement": "Approved static open-box fallback; no hinged-lid frames",
       "decoded_RGBA_sha256": "cfca76f057af6fae3ff0f7ad1ba06d40689c576b26c56e4cb6e0905646d8b56a",
-      "status": "EXPORT PENDING"
+      "status": "EXPORT PENDING",
+      "source_availability": "pinned Git blob",
+      "delivery_state": "source only; not delivered",
+      "runtime_state": "not integrated"
     },
     {
       "path": "assets/nino/rewards/pizza/slices/margherita/aligned_full_canvas/pizza-margherita-slice-06-aligned.png",
@@ -4657,7 +4923,10 @@
       "missing_dependencies": [],
       "intended_runtime_placement": "Approved static open-box fallback; no hinged-lid frames",
       "decoded_RGBA_sha256": "5f2978c5ac179742efce05869eb02280ccd89f59f40c17bcdff91db93634dddd",
-      "status": "EXPORT PENDING"
+      "status": "EXPORT PENDING",
+      "source_availability": "pinned Git blob",
+      "delivery_state": "source only; not delivered",
+      "runtime_state": "not integrated"
     },
     {
       "path": "assets/nino/rewards/pizza/slices/margherita/aligned_full_canvas/pizza-margherita-slice-07-aligned.png",
@@ -4713,7 +4982,10 @@
       "missing_dependencies": [],
       "intended_runtime_placement": "Approved static open-box fallback; no hinged-lid frames",
       "decoded_RGBA_sha256": "a98bf5b12cd84cedbc61b240bbc05cfde50084bd5aa806b31050b78d4a2ebcba",
-      "status": "EXPORT PENDING"
+      "status": "EXPORT PENDING",
+      "source_availability": "pinned Git blob",
+      "delivery_state": "source only; not delivered",
+      "runtime_state": "not integrated"
     },
     {
       "path": "assets/nino/rewards/pizza/slices/margherita/aligned_full_canvas/pizza-margherita-slice-08-aligned.png",
@@ -4769,7 +5041,10 @@
       "missing_dependencies": [],
       "intended_runtime_placement": "Approved static open-box fallback; no hinged-lid frames",
       "decoded_RGBA_sha256": "418f3eebfded734025ec90a97e548e4ab74288044bee90b96ae255f5d728c768",
-      "status": "EXPORT PENDING"
+      "status": "EXPORT PENDING",
+      "source_availability": "pinned Git blob",
+      "delivery_state": "source only; not delivered",
+      "runtime_state": "not integrated"
     },
     {
       "path": "assets/nino/rewards/pizza/slices/margherita/individual_slices/pizza-margherita-slice-01.png",
@@ -4825,7 +5100,10 @@
       "missing_dependencies": [],
       "intended_runtime_placement": "Approved static open-box fallback; no hinged-lid frames",
       "decoded_RGBA_sha256": "5b21a4036b989aa868b5b50811ed37a3427bfe3e4d941859c88659d6a73cc26c",
-      "status": "EXPORT PENDING"
+      "status": "EXPORT PENDING",
+      "source_availability": "pinned Git blob",
+      "delivery_state": "source only; not delivered",
+      "runtime_state": "not integrated"
     },
     {
       "path": "assets/nino/rewards/pizza/slices/margherita/individual_slices/pizza-margherita-slice-02.png",
@@ -4881,7 +5159,10 @@
       "missing_dependencies": [],
       "intended_runtime_placement": "Approved static open-box fallback; no hinged-lid frames",
       "decoded_RGBA_sha256": "c7b4d9051127f0dbbc3542bd287125373d4448c97468427b624461df3d39cbdf",
-      "status": "EXPORT PENDING"
+      "status": "EXPORT PENDING",
+      "source_availability": "pinned Git blob",
+      "delivery_state": "source only; not delivered",
+      "runtime_state": "not integrated"
     },
     {
       "path": "assets/nino/rewards/pizza/slices/margherita/individual_slices/pizza-margherita-slice-03.png",
@@ -4937,7 +5218,10 @@
       "missing_dependencies": [],
       "intended_runtime_placement": "Approved static open-box fallback; no hinged-lid frames",
       "decoded_RGBA_sha256": "46448cc087a42ceebfe00db666ab6c3adf527b87c55fe5ba76e92a516685da72",
-      "status": "EXPORT PENDING"
+      "status": "EXPORT PENDING",
+      "source_availability": "pinned Git blob",
+      "delivery_state": "source only; not delivered",
+      "runtime_state": "not integrated"
     },
     {
       "path": "assets/nino/rewards/pizza/slices/margherita/individual_slices/pizza-margherita-slice-04.png",
@@ -4993,7 +5277,10 @@
       "missing_dependencies": [],
       "intended_runtime_placement": "Approved static open-box fallback; no hinged-lid frames",
       "decoded_RGBA_sha256": "b567963196e1f391718111bcbc2bb253a9495c7cb56a7e86704a90eabd459e04",
-      "status": "EXPORT PENDING"
+      "status": "EXPORT PENDING",
+      "source_availability": "pinned Git blob",
+      "delivery_state": "source only; not delivered",
+      "runtime_state": "not integrated"
     },
     {
       "path": "assets/nino/rewards/pizza/slices/margherita/individual_slices/pizza-margherita-slice-05.png",
@@ -5049,7 +5336,10 @@
       "missing_dependencies": [],
       "intended_runtime_placement": "Approved static open-box fallback; no hinged-lid frames",
       "decoded_RGBA_sha256": "b2ad6c51853cf41797161f2a2b533c54bdd2781a1ebb5eb9776f047308301604",
-      "status": "EXPORT PENDING"
+      "status": "EXPORT PENDING",
+      "source_availability": "pinned Git blob",
+      "delivery_state": "source only; not delivered",
+      "runtime_state": "not integrated"
     },
     {
       "path": "assets/nino/rewards/pizza/slices/margherita/individual_slices/pizza-margherita-slice-06.png",
@@ -5105,7 +5395,10 @@
       "missing_dependencies": [],
       "intended_runtime_placement": "Approved static open-box fallback; no hinged-lid frames",
       "decoded_RGBA_sha256": "afd18258f1e7063f08de2438da70b78a4a33491118106b5a165d0b45c783bff0",
-      "status": "EXPORT PENDING"
+      "status": "EXPORT PENDING",
+      "source_availability": "pinned Git blob",
+      "delivery_state": "source only; not delivered",
+      "runtime_state": "not integrated"
     },
     {
       "path": "assets/nino/rewards/pizza/slices/margherita/individual_slices/pizza-margherita-slice-07.png",
@@ -5161,7 +5454,10 @@
       "missing_dependencies": [],
       "intended_runtime_placement": "Approved static open-box fallback; no hinged-lid frames",
       "decoded_RGBA_sha256": "9f3ec545d19285498b73bb0b4f1fa2ce53e450904fdbb7e09e5552b20bddbded",
-      "status": "EXPORT PENDING"
+      "status": "EXPORT PENDING",
+      "source_availability": "pinned Git blob",
+      "delivery_state": "source only; not delivered",
+      "runtime_state": "not integrated"
     },
     {
       "path": "assets/nino/rewards/pizza/slices/margherita/individual_slices/pizza-margherita-slice-08.png",
@@ -5217,7 +5513,10 @@
       "missing_dependencies": [],
       "intended_runtime_placement": "Approved static open-box fallback; no hinged-lid frames",
       "decoded_RGBA_sha256": "c17c28b69c12f5baa2e581347bb7e292d3b39a6c17691a1d7a8b107b18a832c8",
-      "status": "EXPORT PENDING"
+      "status": "EXPORT PENDING",
+      "source_availability": "pinned Git blob",
+      "delivery_state": "source only; not delivered",
+      "runtime_state": "not integrated"
     },
     {
       "path": "assets/nino/rewards/pizza/slices/margherita/pizza-margherita-slice-icon.png",
@@ -5273,7 +5572,10 @@
       "missing_dependencies": [],
       "intended_runtime_placement": "Approved static open-box fallback; no hinged-lid frames",
       "decoded_RGBA_sha256": "524a5e1dab47ea1d16d06472c067b0f036ba9fbb1b8a93e286af07f4823cf8f0",
-      "status": "EXPORT PENDING"
+      "status": "EXPORT PENDING",
+      "source_availability": "pinned Git blob",
+      "delivery_state": "source only; not delivered",
+      "runtime_state": "not integrated"
     },
     {
       "path": "assets/nino/rewards/pizza/slices/margherita/qa/MARGHERITA_0-8_QUALITY_PREVIEW.jpg",
@@ -5329,7 +5631,10 @@
       "missing_dependencies": [],
       "intended_runtime_placement": "Approved static open-box fallback; no hinged-lid frames",
       "decoded_RGBA_sha256": "c5814c332f9d4c1e9ec72e5e6897b5ed72282c9aa56f977e0601205cd73df7b5",
-      "status": "OPTIONAL DEFERRED"
+      "status": "OPTIONAL DEFERRED",
+      "source_availability": "pinned Git blob",
+      "delivery_state": "source only; not delivered",
+      "runtime_state": "not integrated"
     },
     {
       "path": "assets/nino/rewards/pizza/slices/margherita/qa/pizza-margherita-icon-120px.png",
@@ -5385,7 +5690,10 @@
       "missing_dependencies": [],
       "intended_runtime_placement": "Approved static open-box fallback; no hinged-lid frames",
       "decoded_RGBA_sha256": "2b3ca536ed105e2aea4479ced07e4596775a4a0ee68f31067b62efcd7925ca92",
-      "status": "OPTIONAL DEFERRED"
+      "status": "OPTIONAL DEFERRED",
+      "source_availability": "pinned Git blob",
+      "delivery_state": "source only; not delivered",
+      "runtime_state": "not integrated"
     },
     {
       "path": "assets/nino/rewards/pizza/slices/margherita/qa/pizza-margherita-icon-48px.png",
@@ -5441,7 +5749,10 @@
       "missing_dependencies": [],
       "intended_runtime_placement": "Approved static open-box fallback; no hinged-lid frames",
       "decoded_RGBA_sha256": "12606eac0ab95d3c7fe690a714526a49dfc62389eca300722680df4d4bea7d7a",
-      "status": "OPTIONAL DEFERRED"
+      "status": "OPTIONAL DEFERRED",
+      "source_availability": "pinned Git blob",
+      "delivery_state": "source only; not delivered",
+      "runtime_state": "not integrated"
     },
     {
       "path": "assets/nino/rewards/pizza/slices/margherita/qa/pizza-margherita-icon-64px.png",
@@ -5497,7 +5808,10 @@
       "missing_dependencies": [],
       "intended_runtime_placement": "Approved static open-box fallback; no hinged-lid frames",
       "decoded_RGBA_sha256": "0fbbd04a2a16cb6b2a26ef9bf92c5b846161f8c56d41f046c00f0a6a6450a845",
-      "status": "OPTIONAL DEFERRED"
+      "status": "OPTIONAL DEFERRED",
+      "source_availability": "pinned Git blob",
+      "delivery_state": "source only; not delivered",
+      "runtime_state": "not integrated"
     },
     {
       "path": "assets/nino/rewards/pizza/slices/quattro-formaggi/aligned_full_canvas/pizza-quattro-formaggi-slice-01-aligned.png",
@@ -5553,7 +5867,10 @@
       "missing_dependencies": [],
       "intended_runtime_placement": "Approved static open-box fallback; no hinged-lid frames",
       "decoded_RGBA_sha256": "f501d7611b114beb68e9f65d2e7eca707fbcd6912d01b66334eb0abce634f3a2",
-      "status": "EXPORT PENDING"
+      "status": "EXPORT PENDING",
+      "source_availability": "pinned Git blob",
+      "delivery_state": "source only; not delivered",
+      "runtime_state": "not integrated"
     },
     {
       "path": "assets/nino/rewards/pizza/slices/quattro-formaggi/aligned_full_canvas/pizza-quattro-formaggi-slice-02-aligned.png",
@@ -5609,7 +5926,10 @@
       "missing_dependencies": [],
       "intended_runtime_placement": "Approved static open-box fallback; no hinged-lid frames",
       "decoded_RGBA_sha256": "a610daccc19531b3b8dee03d7b9d16257b5800387eaf4732697b878d364c9a05",
-      "status": "EXPORT PENDING"
+      "status": "EXPORT PENDING",
+      "source_availability": "pinned Git blob",
+      "delivery_state": "source only; not delivered",
+      "runtime_state": "not integrated"
     },
     {
       "path": "assets/nino/rewards/pizza/slices/quattro-formaggi/aligned_full_canvas/pizza-quattro-formaggi-slice-03-aligned.png",
@@ -5665,7 +5985,10 @@
       "missing_dependencies": [],
       "intended_runtime_placement": "Approved static open-box fallback; no hinged-lid frames",
       "decoded_RGBA_sha256": "c89fafca8c822d392f7698697f27e7a1f8964acb7d7979530f3bd50621bef11f",
-      "status": "EXPORT PENDING"
+      "status": "EXPORT PENDING",
+      "source_availability": "pinned Git blob",
+      "delivery_state": "source only; not delivered",
+      "runtime_state": "not integrated"
     },
     {
       "path": "assets/nino/rewards/pizza/slices/quattro-formaggi/aligned_full_canvas/pizza-quattro-formaggi-slice-04-aligned.png",
@@ -5721,7 +6044,10 @@
       "missing_dependencies": [],
       "intended_runtime_placement": "Approved static open-box fallback; no hinged-lid frames",
       "decoded_RGBA_sha256": "73e2418c298739dd8c91832849863ebbae587514d40d0aa8e4659dcad084fd8b",
-      "status": "EXPORT PENDING"
+      "status": "EXPORT PENDING",
+      "source_availability": "pinned Git blob",
+      "delivery_state": "source only; not delivered",
+      "runtime_state": "not integrated"
     },
     {
       "path": "assets/nino/rewards/pizza/slices/quattro-formaggi/aligned_full_canvas/pizza-quattro-formaggi-slice-05-aligned.png",
@@ -5777,7 +6103,10 @@
       "missing_dependencies": [],
       "intended_runtime_placement": "Approved static open-box fallback; no hinged-lid frames",
       "decoded_RGBA_sha256": "1b1d47d813c97bab1b3442feeea2e21f79cea0c53fc18be9a65884e03f090d0c",
-      "status": "EXPORT PENDING"
+      "status": "EXPORT PENDING",
+      "source_availability": "pinned Git blob",
+      "delivery_state": "source only; not delivered",
+      "runtime_state": "not integrated"
     },
     {
       "path": "assets/nino/rewards/pizza/slices/quattro-formaggi/aligned_full_canvas/pizza-quattro-formaggi-slice-06-aligned.png",
@@ -5833,7 +6162,10 @@
       "missing_dependencies": [],
       "intended_runtime_placement": "Approved static open-box fallback; no hinged-lid frames",
       "decoded_RGBA_sha256": "5142bda1e7de2d578fa164209d35a1696e0293151d1603eaacd2277fe3928fd8",
-      "status": "EXPORT PENDING"
+      "status": "EXPORT PENDING",
+      "source_availability": "pinned Git blob",
+      "delivery_state": "source only; not delivered",
+      "runtime_state": "not integrated"
     },
     {
       "path": "assets/nino/rewards/pizza/slices/quattro-formaggi/aligned_full_canvas/pizza-quattro-formaggi-slice-07-aligned.png",
@@ -5889,7 +6221,10 @@
       "missing_dependencies": [],
       "intended_runtime_placement": "Approved static open-box fallback; no hinged-lid frames",
       "decoded_RGBA_sha256": "dc4b269d7d58c54cf9263d338158d662ee0f40771a7c94c9057f9f201a5d267c",
-      "status": "EXPORT PENDING"
+      "status": "EXPORT PENDING",
+      "source_availability": "pinned Git blob",
+      "delivery_state": "source only; not delivered",
+      "runtime_state": "not integrated"
     },
     {
       "path": "assets/nino/rewards/pizza/slices/quattro-formaggi/aligned_full_canvas/pizza-quattro-formaggi-slice-08-aligned.png",
@@ -5945,7 +6280,10 @@
       "missing_dependencies": [],
       "intended_runtime_placement": "Approved static open-box fallback; no hinged-lid frames",
       "decoded_RGBA_sha256": "eee2725b386564a6d789ad38c71cb94980daac99afd4783c76e7765bae9dbe69",
-      "status": "EXPORT PENDING"
+      "status": "EXPORT PENDING",
+      "source_availability": "pinned Git blob",
+      "delivery_state": "source only; not delivered",
+      "runtime_state": "not integrated"
     },
     {
       "path": "assets/nino/rewards/pizza/slices/quattro-formaggi/individual_slices/pizza-quattro-formaggi-slice-01.png",
@@ -6001,7 +6339,10 @@
       "missing_dependencies": [],
       "intended_runtime_placement": "Approved static open-box fallback; no hinged-lid frames",
       "decoded_RGBA_sha256": "0a709b7c16b548c95a920290d65c5cd40b3149be7d1f2aaac146ec9ae6cfaec2",
-      "status": "EXPORT PENDING"
+      "status": "EXPORT PENDING",
+      "source_availability": "pinned Git blob",
+      "delivery_state": "source only; not delivered",
+      "runtime_state": "not integrated"
     },
     {
       "path": "assets/nino/rewards/pizza/slices/quattro-formaggi/individual_slices/pizza-quattro-formaggi-slice-02.png",
@@ -6057,7 +6398,10 @@
       "missing_dependencies": [],
       "intended_runtime_placement": "Approved static open-box fallback; no hinged-lid frames",
       "decoded_RGBA_sha256": "b9576f6717a85ddfd29a91cabe56b7854e04cb92ab44cb39507b71f17a4a4b12",
-      "status": "EXPORT PENDING"
+      "status": "EXPORT PENDING",
+      "source_availability": "pinned Git blob",
+      "delivery_state": "source only; not delivered",
+      "runtime_state": "not integrated"
     },
     {
       "path": "assets/nino/rewards/pizza/slices/quattro-formaggi/individual_slices/pizza-quattro-formaggi-slice-03.png",
@@ -6113,7 +6457,10 @@
       "missing_dependencies": [],
       "intended_runtime_placement": "Approved static open-box fallback; no hinged-lid frames",
       "decoded_RGBA_sha256": "899073d69857a2316087271ef2d76fa33724182eecd7b59dd94a5b51f462e0de",
-      "status": "EXPORT PENDING"
+      "status": "EXPORT PENDING",
+      "source_availability": "pinned Git blob",
+      "delivery_state": "source only; not delivered",
+      "runtime_state": "not integrated"
     },
     {
       "path": "assets/nino/rewards/pizza/slices/quattro-formaggi/individual_slices/pizza-quattro-formaggi-slice-04.png",
@@ -6169,7 +6516,10 @@
       "missing_dependencies": [],
       "intended_runtime_placement": "Approved static open-box fallback; no hinged-lid frames",
       "decoded_RGBA_sha256": "9804fa4e73df388c2d31d0d488e35dd8c6d1d9bd8fe6ee3069ff0bed7745ccd8",
-      "status": "EXPORT PENDING"
+      "status": "EXPORT PENDING",
+      "source_availability": "pinned Git blob",
+      "delivery_state": "source only; not delivered",
+      "runtime_state": "not integrated"
     },
     {
       "path": "assets/nino/rewards/pizza/slices/quattro-formaggi/individual_slices/pizza-quattro-formaggi-slice-05.png",
@@ -6225,7 +6575,10 @@
       "missing_dependencies": [],
       "intended_runtime_placement": "Approved static open-box fallback; no hinged-lid frames",
       "decoded_RGBA_sha256": "cbb8526ac66b7697b66fabe89e74e000f7698c1deb83637b201e00cc305da03b",
-      "status": "EXPORT PENDING"
+      "status": "EXPORT PENDING",
+      "source_availability": "pinned Git blob",
+      "delivery_state": "source only; not delivered",
+      "runtime_state": "not integrated"
     },
     {
       "path": "assets/nino/rewards/pizza/slices/quattro-formaggi/individual_slices/pizza-quattro-formaggi-slice-06.png",
@@ -6281,7 +6634,10 @@
       "missing_dependencies": [],
       "intended_runtime_placement": "Approved static open-box fallback; no hinged-lid frames",
       "decoded_RGBA_sha256": "a345060fbb1642282f84dc030a63021b44224dfa26255a129d5a8ce1003eca46",
-      "status": "EXPORT PENDING"
+      "status": "EXPORT PENDING",
+      "source_availability": "pinned Git blob",
+      "delivery_state": "source only; not delivered",
+      "runtime_state": "not integrated"
     },
     {
       "path": "assets/nino/rewards/pizza/slices/quattro-formaggi/individual_slices/pizza-quattro-formaggi-slice-07.png",
@@ -6337,7 +6693,10 @@
       "missing_dependencies": [],
       "intended_runtime_placement": "Approved static open-box fallback; no hinged-lid frames",
       "decoded_RGBA_sha256": "f8269b445bfddc6fb6473540d413f0eecca4d38e827e2535e005344e48f4ce73",
-      "status": "EXPORT PENDING"
+      "status": "EXPORT PENDING",
+      "source_availability": "pinned Git blob",
+      "delivery_state": "source only; not delivered",
+      "runtime_state": "not integrated"
     },
     {
       "path": "assets/nino/rewards/pizza/slices/quattro-formaggi/individual_slices/pizza-quattro-formaggi-slice-08.png",
@@ -6393,7 +6752,10 @@
       "missing_dependencies": [],
       "intended_runtime_placement": "Approved static open-box fallback; no hinged-lid frames",
       "decoded_RGBA_sha256": "c73cbd25109a8cefecd0dabbefb11d7f313eb64b0f6316716d5b016753792cd7",
-      "status": "EXPORT PENDING"
+      "status": "EXPORT PENDING",
+      "source_availability": "pinned Git blob",
+      "delivery_state": "source only; not delivered",
+      "runtime_state": "not integrated"
     },
     {
       "path": "assets/nino/rewards/pizza/slices/quattro-formaggi/pizza-quattro-formaggi-slice-icon.png",
@@ -6449,7 +6811,10 @@
       "missing_dependencies": [],
       "intended_runtime_placement": "Approved static open-box fallback; no hinged-lid frames",
       "decoded_RGBA_sha256": "907224be7e3bd577a3c62d123f4a525cba09774de7252b71d7c5fcaa067303f2",
-      "status": "EXPORT PENDING"
+      "status": "EXPORT PENDING",
+      "source_availability": "pinned Git blob",
+      "delivery_state": "source only; not delivered",
+      "runtime_state": "not integrated"
     },
     {
       "path": "assets/nino/rewards/pizza/slices/quattro-formaggi/qa/QUATTRO_FORMAGGI_0-8_QUALITY_PREVIEW.jpg",
@@ -6505,7 +6870,10 @@
       "missing_dependencies": [],
       "intended_runtime_placement": "Approved static open-box fallback; no hinged-lid frames",
       "decoded_RGBA_sha256": "73df086e9ceea6843955e0b08cbbb2b69d59960126affebb3e81e531067fbed3",
-      "status": "OPTIONAL DEFERRED"
+      "status": "OPTIONAL DEFERRED",
+      "source_availability": "pinned Git blob",
+      "delivery_state": "source only; not delivered",
+      "runtime_state": "not integrated"
     },
     {
       "path": "assets/nino/rewards/pizza/slices/quattro-formaggi/qa/pizza-quattro-formaggi-icon-120px.png",
@@ -6561,7 +6929,10 @@
       "missing_dependencies": [],
       "intended_runtime_placement": "Approved static open-box fallback; no hinged-lid frames",
       "decoded_RGBA_sha256": "3986d11c292e36f05bbae5c16bd4bd797c56e88982fc84e3802f9a6e7a9b688e",
-      "status": "OPTIONAL DEFERRED"
+      "status": "OPTIONAL DEFERRED",
+      "source_availability": "pinned Git blob",
+      "delivery_state": "source only; not delivered",
+      "runtime_state": "not integrated"
     },
     {
       "path": "assets/nino/rewards/pizza/slices/quattro-formaggi/qa/pizza-quattro-formaggi-icon-48px.png",
@@ -6617,7 +6988,10 @@
       "missing_dependencies": [],
       "intended_runtime_placement": "Approved static open-box fallback; no hinged-lid frames",
       "decoded_RGBA_sha256": "233a472f68370931ac112e6f4eea017896d2776e7211336a82b83bd5cde8efad",
-      "status": "OPTIONAL DEFERRED"
+      "status": "OPTIONAL DEFERRED",
+      "source_availability": "pinned Git blob",
+      "delivery_state": "source only; not delivered",
+      "runtime_state": "not integrated"
     },
     {
       "path": "assets/nino/rewards/pizza/slices/quattro-formaggi/qa/pizza-quattro-formaggi-icon-64px.png",
@@ -6673,7 +7047,10 @@
       "missing_dependencies": [],
       "intended_runtime_placement": "Approved static open-box fallback; no hinged-lid frames",
       "decoded_RGBA_sha256": "10e7dba42b72e2f0f5846084c1c04f69a0a0a86c9058a22ce40ffae09c2f7ece",
-      "status": "OPTIONAL DEFERRED"
+      "status": "OPTIONAL DEFERRED",
+      "source_availability": "pinned Git blob",
+      "delivery_state": "source only; not delivered",
+      "runtime_state": "not integrated"
     },
     {
       "path": "assets/nino/rewards/pizza/slices/salami/aligned_full_canvas/pizza-salami-slice-01-aligned.png",
@@ -6729,7 +7106,10 @@
       "missing_dependencies": [],
       "intended_runtime_placement": "Approved static open-box fallback; no hinged-lid frames",
       "decoded_RGBA_sha256": "74a39f1a04f5af3525ca365417928f8fdcb7b36d7fcefb82410369a0bb8ea7ef",
-      "status": "EXPORT PENDING"
+      "status": "EXPORT PENDING",
+      "source_availability": "pinned Git blob",
+      "delivery_state": "source only; not delivered",
+      "runtime_state": "not integrated"
     },
     {
       "path": "assets/nino/rewards/pizza/slices/salami/aligned_full_canvas/pizza-salami-slice-02-aligned.png",
@@ -6785,7 +7165,10 @@
       "missing_dependencies": [],
       "intended_runtime_placement": "Approved static open-box fallback; no hinged-lid frames",
       "decoded_RGBA_sha256": "be4b124f6400c6b5970e86cd18dd07f3381cbfcc6d2c880298eb7860dfa4746a",
-      "status": "EXPORT PENDING"
+      "status": "EXPORT PENDING",
+      "source_availability": "pinned Git blob",
+      "delivery_state": "source only; not delivered",
+      "runtime_state": "not integrated"
     },
     {
       "path": "assets/nino/rewards/pizza/slices/salami/aligned_full_canvas/pizza-salami-slice-03-aligned.png",
@@ -6841,7 +7224,10 @@
       "missing_dependencies": [],
       "intended_runtime_placement": "Approved static open-box fallback; no hinged-lid frames",
       "decoded_RGBA_sha256": "7e29ccfeac88e434a922e030e9a3fcd74da7598f01ff44ec74f577f41b1f74ac",
-      "status": "EXPORT PENDING"
+      "status": "EXPORT PENDING",
+      "source_availability": "pinned Git blob",
+      "delivery_state": "source only; not delivered",
+      "runtime_state": "not integrated"
     },
     {
       "path": "assets/nino/rewards/pizza/slices/salami/aligned_full_canvas/pizza-salami-slice-04-aligned.png",
@@ -6897,7 +7283,10 @@
       "missing_dependencies": [],
       "intended_runtime_placement": "Approved static open-box fallback; no hinged-lid frames",
       "decoded_RGBA_sha256": "5cc388cc4e79924624aa33dc932c9c5dd34017e1c482a1554c5129e332cf9b68",
-      "status": "EXPORT PENDING"
+      "status": "EXPORT PENDING",
+      "source_availability": "pinned Git blob",
+      "delivery_state": "source only; not delivered",
+      "runtime_state": "not integrated"
     },
     {
       "path": "assets/nino/rewards/pizza/slices/salami/aligned_full_canvas/pizza-salami-slice-05-aligned.png",
@@ -6953,7 +7342,10 @@
       "missing_dependencies": [],
       "intended_runtime_placement": "Approved static open-box fallback; no hinged-lid frames",
       "decoded_RGBA_sha256": "e43752d2e95e6e148499b9f45d4c93907d4a7373225269ccffc38dd29f49d37b",
-      "status": "EXPORT PENDING"
+      "status": "EXPORT PENDING",
+      "source_availability": "pinned Git blob",
+      "delivery_state": "source only; not delivered",
+      "runtime_state": "not integrated"
     },
     {
       "path": "assets/nino/rewards/pizza/slices/salami/aligned_full_canvas/pizza-salami-slice-06-aligned.png",
@@ -7009,7 +7401,10 @@
       "missing_dependencies": [],
       "intended_runtime_placement": "Approved static open-box fallback; no hinged-lid frames",
       "decoded_RGBA_sha256": "6e3aa44b31170d81c72e75026109a40e268f5bf4032c80f79cf5f1ad99780ab8",
-      "status": "EXPORT PENDING"
+      "status": "EXPORT PENDING",
+      "source_availability": "pinned Git blob",
+      "delivery_state": "source only; not delivered",
+      "runtime_state": "not integrated"
     },
     {
       "path": "assets/nino/rewards/pizza/slices/salami/aligned_full_canvas/pizza-salami-slice-07-aligned.png",
@@ -7065,7 +7460,10 @@
       "missing_dependencies": [],
       "intended_runtime_placement": "Approved static open-box fallback; no hinged-lid frames",
       "decoded_RGBA_sha256": "04444e2ad64d0f1f6fbca4739fa9d03ebf7f769ed98282b6be9c26426e2a5d65",
-      "status": "EXPORT PENDING"
+      "status": "EXPORT PENDING",
+      "source_availability": "pinned Git blob",
+      "delivery_state": "source only; not delivered",
+      "runtime_state": "not integrated"
     },
     {
       "path": "assets/nino/rewards/pizza/slices/salami/aligned_full_canvas/pizza-salami-slice-08-aligned.png",
@@ -7121,7 +7519,10 @@
       "missing_dependencies": [],
       "intended_runtime_placement": "Approved static open-box fallback; no hinged-lid frames",
       "decoded_RGBA_sha256": "bc7c49a176dce3354be2092214d3698ad9ec40efb6096df6096489d501b48a90",
-      "status": "EXPORT PENDING"
+      "status": "EXPORT PENDING",
+      "source_availability": "pinned Git blob",
+      "delivery_state": "source only; not delivered",
+      "runtime_state": "not integrated"
     },
     {
       "path": "assets/nino/rewards/pizza/slices/salami/individual_slices/pizza-salami-slice-01.png",
@@ -7177,7 +7578,10 @@
       "missing_dependencies": [],
       "intended_runtime_placement": "Approved static open-box fallback; no hinged-lid frames",
       "decoded_RGBA_sha256": "b6fd4d98fbdbe675cc6c07accf5a2b6d3ff7f109121a780cbd59f2f4e02d3831",
-      "status": "EXPORT PENDING"
+      "status": "EXPORT PENDING",
+      "source_availability": "pinned Git blob",
+      "delivery_state": "source only; not delivered",
+      "runtime_state": "not integrated"
     },
     {
       "path": "assets/nino/rewards/pizza/slices/salami/individual_slices/pizza-salami-slice-02.png",
@@ -7233,7 +7637,10 @@
       "missing_dependencies": [],
       "intended_runtime_placement": "Approved static open-box fallback; no hinged-lid frames",
       "decoded_RGBA_sha256": "e0c183208b5a58a63e7bf464e8985f1b31b9912abc6946ac794f12a48763bd67",
-      "status": "EXPORT PENDING"
+      "status": "EXPORT PENDING",
+      "source_availability": "pinned Git blob",
+      "delivery_state": "source only; not delivered",
+      "runtime_state": "not integrated"
     },
     {
       "path": "assets/nino/rewards/pizza/slices/salami/individual_slices/pizza-salami-slice-03.png",
@@ -7289,7 +7696,10 @@
       "missing_dependencies": [],
       "intended_runtime_placement": "Approved static open-box fallback; no hinged-lid frames",
       "decoded_RGBA_sha256": "7da69a58f6d2da9ad682610aeb0bf4fb861e736d8b6f2d80f34aeb7eff125bd2",
-      "status": "EXPORT PENDING"
+      "status": "EXPORT PENDING",
+      "source_availability": "pinned Git blob",
+      "delivery_state": "source only; not delivered",
+      "runtime_state": "not integrated"
     },
     {
       "path": "assets/nino/rewards/pizza/slices/salami/individual_slices/pizza-salami-slice-04.png",
@@ -7345,7 +7755,10 @@
       "missing_dependencies": [],
       "intended_runtime_placement": "Approved static open-box fallback; no hinged-lid frames",
       "decoded_RGBA_sha256": "19aa886979245a7b6fa35f9929b7343d5f73f244267822f100e4f6279fff097c",
-      "status": "EXPORT PENDING"
+      "status": "EXPORT PENDING",
+      "source_availability": "pinned Git blob",
+      "delivery_state": "source only; not delivered",
+      "runtime_state": "not integrated"
     },
     {
       "path": "assets/nino/rewards/pizza/slices/salami/individual_slices/pizza-salami-slice-05.png",
@@ -7401,7 +7814,10 @@
       "missing_dependencies": [],
       "intended_runtime_placement": "Approved static open-box fallback; no hinged-lid frames",
       "decoded_RGBA_sha256": "1dc346f2b1419daa16bb3cda9cc33545e4ffdbaef76aaa87aae0610e07ab2fe3",
-      "status": "EXPORT PENDING"
+      "status": "EXPORT PENDING",
+      "source_availability": "pinned Git blob",
+      "delivery_state": "source only; not delivered",
+      "runtime_state": "not integrated"
     },
     {
       "path": "assets/nino/rewards/pizza/slices/salami/individual_slices/pizza-salami-slice-06.png",
@@ -7457,7 +7873,10 @@
       "missing_dependencies": [],
       "intended_runtime_placement": "Approved static open-box fallback; no hinged-lid frames",
       "decoded_RGBA_sha256": "c6cbedcddb6a95ac08065eac2e46c1ecdfa974aa9475adc1226056f9ad095bd6",
-      "status": "EXPORT PENDING"
+      "status": "EXPORT PENDING",
+      "source_availability": "pinned Git blob",
+      "delivery_state": "source only; not delivered",
+      "runtime_state": "not integrated"
     },
     {
       "path": "assets/nino/rewards/pizza/slices/salami/individual_slices/pizza-salami-slice-07.png",
@@ -7513,7 +7932,10 @@
       "missing_dependencies": [],
       "intended_runtime_placement": "Approved static open-box fallback; no hinged-lid frames",
       "decoded_RGBA_sha256": "9cd89e53237bbd68711a3b250bd96139326b0978079e3741cddab6264e893a09",
-      "status": "EXPORT PENDING"
+      "status": "EXPORT PENDING",
+      "source_availability": "pinned Git blob",
+      "delivery_state": "source only; not delivered",
+      "runtime_state": "not integrated"
     },
     {
       "path": "assets/nino/rewards/pizza/slices/salami/individual_slices/pizza-salami-slice-08.png",
@@ -7569,7 +7991,10 @@
       "missing_dependencies": [],
       "intended_runtime_placement": "Approved static open-box fallback; no hinged-lid frames",
       "decoded_RGBA_sha256": "087ad71c6e3a23af3d40dec066e8d730042cf2e6e66da4af63aea20160d158ea",
-      "status": "EXPORT PENDING"
+      "status": "EXPORT PENDING",
+      "source_availability": "pinned Git blob",
+      "delivery_state": "source only; not delivered",
+      "runtime_state": "not integrated"
     },
     {
       "path": "assets/nino/rewards/pizza/slices/salami/pizza-salami-slice-icon.png",
@@ -7625,7 +8050,10 @@
       "missing_dependencies": [],
       "intended_runtime_placement": "Approved static open-box fallback; no hinged-lid frames",
       "decoded_RGBA_sha256": "07ed436ee91692bee3cac76f5801645e4a5fe86c9ff04e7eaa8e2a4448017b64",
-      "status": "EXPORT PENDING"
+      "status": "EXPORT PENDING",
+      "source_availability": "pinned Git blob",
+      "delivery_state": "source only; not delivered",
+      "runtime_state": "not integrated"
     },
     {
       "path": "assets/nino/rewards/pizza/slices/salami/qa/SALAMI_0-8_QUALITY_PREVIEW.jpg",
@@ -7681,7 +8109,10 @@
       "missing_dependencies": [],
       "intended_runtime_placement": "Approved static open-box fallback; no hinged-lid frames",
       "decoded_RGBA_sha256": "5d372cf2415daa88b4d66517ddf0003c5a510ce2557d0dd184ee7662e428a2ac",
-      "status": "OPTIONAL DEFERRED"
+      "status": "OPTIONAL DEFERRED",
+      "source_availability": "pinned Git blob",
+      "delivery_state": "source only; not delivered",
+      "runtime_state": "not integrated"
     },
     {
       "path": "assets/nino/rewards/pizza/slices/salami/qa/pizza-salami-icon-120px.png",
@@ -7737,7 +8168,10 @@
       "missing_dependencies": [],
       "intended_runtime_placement": "Approved static open-box fallback; no hinged-lid frames",
       "decoded_RGBA_sha256": "d2ec3299541664ebb61f2c7f0bb77f1a38af37f4ad3a34494bf9743717234528",
-      "status": "OPTIONAL DEFERRED"
+      "status": "OPTIONAL DEFERRED",
+      "source_availability": "pinned Git blob",
+      "delivery_state": "source only; not delivered",
+      "runtime_state": "not integrated"
     },
     {
       "path": "assets/nino/rewards/pizza/slices/salami/qa/pizza-salami-icon-48px.png",
@@ -7793,7 +8227,10 @@
       "missing_dependencies": [],
       "intended_runtime_placement": "Approved static open-box fallback; no hinged-lid frames",
       "decoded_RGBA_sha256": "da5222cae6d1f38e5f0a7de449c1357c1ba787aa84dcc2eb1d67c92263cb7960",
-      "status": "OPTIONAL DEFERRED"
+      "status": "OPTIONAL DEFERRED",
+      "source_availability": "pinned Git blob",
+      "delivery_state": "source only; not delivered",
+      "runtime_state": "not integrated"
     },
     {
       "path": "assets/nino/rewards/pizza/slices/salami/qa/pizza-salami-icon-64px.png",
@@ -7849,7 +8286,10 @@
       "missing_dependencies": [],
       "intended_runtime_placement": "Approved static open-box fallback; no hinged-lid frames",
       "decoded_RGBA_sha256": "cd3bea3458d568c69cbb8434f200c30f53175dcd1666bf4f2443fd19dadc5484",
-      "status": "OPTIONAL DEFERRED"
+      "status": "OPTIONAL DEFERRED",
+      "source_availability": "pinned Git blob",
+      "delivery_state": "source only; not delivered",
+      "runtime_state": "not integrated"
     },
     {
       "path": "assets/nino/scenes/nino-arrival.png",
@@ -7905,7 +8345,10 @@
       "missing_dependencies": [],
       "intended_runtime_placement": "Preserved source/reference; no new placement authorized",
       "decoded_RGBA_sha256": "3999d3fad279e60a656eb7acb51622e218d4dcafe30280401fd64a61b902a283",
-      "status": "EXPORT PENDING"
+      "status": "EXPORT PENDING",
+      "source_availability": "pinned Git blob",
+      "delivery_state": "source only; not delivered",
+      "runtime_state": "not integrated"
     },
     {
       "path": "assets/nino/scenes/topo-bergen-dolomieten.png",
@@ -7961,7 +8404,10 @@
       "missing_dependencies": [],
       "intended_runtime_placement": "Preserved source/reference; no new placement authorized",
       "decoded_RGBA_sha256": "a23ea0eac4f4d9fdc104789f27e8470ccc9f3580defa080e7ff87d2660671f11",
-      "status": "EXPORT PENDING"
+      "status": "EXPORT PENDING",
+      "source_availability": "pinned Git blob",
+      "delivery_state": "source only; not delivered",
+      "runtime_state": "not integrated"
     },
     {
       "path": "assets/nino/scenes/topo-eilanden-v2.png",
@@ -8017,7 +8463,10 @@
       "missing_dependencies": [],
       "intended_runtime_placement": "Preserved source/reference; no new placement authorized",
       "decoded_RGBA_sha256": "f3a9240d639ee7664a07723779589a2a4b3f31dbb4479ed7b03a0539f4cc0203",
-      "status": "EXPORT PENDING"
+      "status": "EXPORT PENDING",
+      "source_availability": "pinned Git blob",
+      "delivery_state": "source only; not delivered",
+      "runtime_state": "not integrated"
     },
     {
       "path": "assets/nino/scenes/topo-landen-italie-slovenie.png",
@@ -8073,7 +8522,10 @@
       "missing_dependencies": [],
       "intended_runtime_placement": "Preserved source/reference; no new placement authorized",
       "decoded_RGBA_sha256": "8a885919620ee9be0226d4c3f226881c6d8180c50cfbcbf717b08c6cbaae1812",
-      "status": "EXPORT PENDING"
+      "status": "EXPORT PENDING",
+      "source_availability": "pinned Git blob",
+      "delivery_state": "source only; not delivered",
+      "runtime_state": "not integrated"
     },
     {
       "path": "assets/nino/scenes/topo-rivieren-po.png",
@@ -8129,7 +8581,10 @@
       "missing_dependencies": [],
       "intended_runtime_placement": "Preserved source/reference; no new placement authorized",
       "decoded_RGBA_sha256": "0968cc5a0430de3d84da8786bebb2326556a435165010065cacbc7ee8376140b",
-      "status": "EXPORT PENDING"
+      "status": "EXPORT PENDING",
+      "source_availability": "pinned Git blob",
+      "delivery_state": "source only; not delivered",
+      "runtime_state": "not integrated"
     },
     {
       "path": "assets/nino/scenes/topo-steden-firenze.png",
@@ -8185,7 +8640,10 @@
       "missing_dependencies": [],
       "intended_runtime_placement": "Preserved source/reference; no new placement authorized",
       "decoded_RGBA_sha256": "247e84089cde143b3f70a721d6cdd7d05a71a369a212174bf1522061ed1605a9",
-      "status": "EXPORT PENDING"
+      "status": "EXPORT PENDING",
+      "source_availability": "pinned Git blob",
+      "delivery_state": "source only; not delivered",
+      "runtime_state": "not integrated"
     },
     {
       "path": "assets/nino/scenes/topo-streken-toscana.png",
@@ -8241,7 +8699,10 @@
       "missing_dependencies": [],
       "intended_runtime_placement": "Preserved source/reference; no new placement authorized",
       "decoded_RGBA_sha256": "c43e61cd0d11a41f9b710dee56470ddbfd7f0dab3c36a9d4ee338da5515ab496",
-      "status": "EXPORT PENDING"
+      "status": "EXPORT PENDING",
+      "source_availability": "pinned Git blob",
+      "delivery_state": "source only; not delivered",
+      "runtime_state": "not integrated"
     },
     {
       "path": "assets/nino/scenes/topo-vulkanen-etna.png",
@@ -8297,7 +8758,10 @@
       "missing_dependencies": [],
       "intended_runtime_placement": "Preserved source/reference; no new placement authorized",
       "decoded_RGBA_sha256": "2d786a94e68895a2eb5d0f41c59a31ff05ecf7f8ea43ad2a518ff0ed478d5b23",
-      "status": "EXPORT PENDING"
+      "status": "EXPORT PENDING",
+      "source_availability": "pinned Git blob",
+      "delivery_state": "source only; not delivered",
+      "runtime_state": "not integrated"
     },
     {
       "path": "assets/nino/scenes/topo-zeeen-amalfi.png",
@@ -8353,7 +8817,10 @@
       "missing_dependencies": [],
       "intended_runtime_placement": "Preserved source/reference; no new placement authorized",
       "decoded_RGBA_sha256": "4e57efe516abf40df0cfa50f2c21e065c4bf5f79f8435799f84e4c574872f537",
-      "status": "EXPORT PENDING"
+      "status": "EXPORT PENDING",
+      "source_availability": "pinned Git blob",
+      "delivery_state": "source only; not delivered",
+      "runtime_state": "not integrated"
     },
     {
       "path": "assets/nino/sources/nino-encourage-native-1024.png",
@@ -8409,7 +8876,10 @@
       "missing_dependencies": [],
       "intended_runtime_placement": "Preserved source/reference; no new placement authorized",
       "decoded_RGBA_sha256": "f5ae6a009a06240d1d26f3aebf804474720d18de956637a712ac935ed4a3b8d3",
-      "status": "EXPORT PENDING"
+      "status": "EXPORT PENDING",
+      "source_availability": "pinned Git blob",
+      "delivery_state": "source only; not delivered",
+      "runtime_state": "not integrated"
     },
     {
       "path": "assets/nino/sources/nino-success-native-1024.png",
@@ -8465,7 +8935,10 @@
       "missing_dependencies": [],
       "intended_runtime_placement": "Preserved source/reference; no new placement authorized",
       "decoded_RGBA_sha256": "c15f0e8e27debc8920568213c27a66906c13780086f925822a6a1ee95e7731db",
-      "status": "EXPORT PENDING"
+      "status": "EXPORT PENDING",
+      "source_availability": "pinned Git blob",
+      "delivery_state": "source only; not delivered",
+      "runtime_state": "not integrated"
     },
     {
       "path": "assets/nino/travel-passport/arrivo/exports/arrivo-travel.webp",
@@ -8521,7 +8994,10 @@
       ],
       "intended_runtime_placement": "Future passport: actual Vespa journey only",
       "decoded_RGBA_sha256": "17da7666d539085452842f96e40155a0cc1c111104aa19a4419275912be60c30",
-      "status": "INTEGRATION PENDING"
+      "status": "INTEGRATION PENDING",
+      "source_availability": "delivery derivative",
+      "delivery_state": "export/file present",
+      "runtime_state": "not integrated"
     },
     {
       "path": "assets/nino/travel-passport/arrivo/qa-candidates/arrivo-travel-ink-preview.png",
@@ -8581,7 +9057,10 @@
       ],
       "intended_runtime_placement": "Future passport: actual Vespa journey only",
       "decoded_RGBA_sha256": "17da7666d539085452842f96e40155a0cc1c111104aa19a4419275912be60c30",
-      "status": "EXPORT PENDING"
+      "status": "EXPORT PENDING",
+      "source_availability": "pinned Git blob",
+      "delivery_state": "source only; not delivered",
+      "runtime_state": "not integrated"
     },
     {
       "path": "assets/nino/travel-passport/book/concepts/passport-back-endpaper.png",
@@ -8641,7 +9120,10 @@
       ],
       "intended_runtime_placement": "Future shared passport folio shell; no fixed concept-page backgrounds",
       "decoded_RGBA_sha256": "ff3ac5397b76555002097c22bd120703dfe4a219c632f6195501aa13730c657a",
-      "status": "OPTIONAL DEFERRED"
+      "status": "OPTIONAL DEFERRED",
+      "source_availability": "pinned Git blob",
+      "delivery_state": "source only; not delivered",
+      "runtime_state": "not integrated"
     },
     {
       "path": "assets/nino/travel-passport/book/concepts/passport-page-01-profile-v2.png",
@@ -8701,7 +9183,10 @@
       ],
       "intended_runtime_placement": "Future shared passport folio shell; no fixed concept-page backgrounds",
       "decoded_RGBA_sha256": "41b6f3fb50a0da0d9d946cb86b8d076e1bd5924cf2b89e853ebd573eeb773c8e",
-      "status": "OPTIONAL DEFERRED"
+      "status": "OPTIONAL DEFERRED",
+      "source_availability": "pinned Git blob",
+      "delivery_state": "source only; not delivered",
+      "runtime_state": "not integrated"
     },
     {
       "path": "assets/nino/travel-passport/book/concepts/passport-page-02-progress-v2.png",
@@ -8761,7 +9246,10 @@
       ],
       "intended_runtime_placement": "Future shared passport folio shell; no fixed concept-page backgrounds",
       "decoded_RGBA_sha256": "ba92c8bcd5b1cd87efba7c8a35d31647b0ac72b013923326026ff58194a16c46",
-      "status": "OPTIONAL DEFERRED"
+      "status": "OPTIONAL DEFERRED",
+      "source_availability": "pinned Git blob",
+      "delivery_state": "source only; not delivered",
+      "runtime_state": "not integrated"
     },
     {
       "path": "assets/nino/travel-passport/book/concepts/passport-page-05-scoperte-iii.png",
@@ -8821,7 +9309,10 @@
       ],
       "intended_runtime_placement": "Future shared passport folio shell; no fixed concept-page backgrounds",
       "decoded_RGBA_sha256": "e13439e04260e25f9e2303d19c5f839c3ba6b787979d8eead8830f2137d7b934",
-      "status": "OPTIONAL DEFERRED"
+      "status": "OPTIONAL DEFERRED",
+      "source_availability": "pinned Git blob",
+      "delivery_state": "source only; not delivered",
+      "runtime_state": "not integrated"
     },
     {
       "path": "assets/nino/travel-passport/book/concepts/passport-page-06-scoperte-iv.png",
@@ -8881,7 +9372,10 @@
       ],
       "intended_runtime_placement": "Future shared passport folio shell; no fixed concept-page backgrounds",
       "decoded_RGBA_sha256": "ceaf93f07bc5fcaf0d5e380d3135bb2f7df46162897b103e06254baaafe6649c",
-      "status": "OPTIONAL DEFERRED"
+      "status": "OPTIONAL DEFERRED",
+      "source_availability": "pinned Git blob",
+      "delivery_state": "source only; not delivered",
+      "runtime_state": "not integrated"
     },
     {
       "path": "assets/nino/travel-passport/book/concepts/passport-page-07-cartoline-i.png",
@@ -8941,7 +9435,10 @@
       ],
       "intended_runtime_placement": "Future shared passport folio shell; no fixed concept-page backgrounds",
       "decoded_RGBA_sha256": "eed668632610c2129426ef6a382cc803d89717e5a06acad56301400a6fb75a1c",
-      "status": "OPTIONAL DEFERRED"
+      "status": "OPTIONAL DEFERRED",
+      "source_availability": "pinned Git blob",
+      "delivery_state": "source only; not delivered",
+      "runtime_state": "not integrated"
     },
     {
       "path": "assets/nino/travel-passport/book/concepts/passport-page-08-cartoline-ii.png",
@@ -9001,7 +9498,10 @@
       ],
       "intended_runtime_placement": "Future shared passport folio shell; no fixed concept-page backgrounds",
       "decoded_RGBA_sha256": "8cc69d6b2ef4599aefa192c0a12114d1cae0a450d4152e643eae3df3bc293e15",
-      "status": "OPTIONAL DEFERRED"
+      "status": "OPTIONAL DEFERRED",
+      "source_availability": "pinned Git blob",
+      "delivery_state": "source only; not delivered",
+      "runtime_state": "not integrated"
     },
     {
       "path": "assets/nino/travel-passport/book/concepts/passport-page-09-avventura-vespa.png",
@@ -9061,7 +9561,10 @@
       ],
       "intended_runtime_placement": "Future shared passport folio shell; no fixed concept-page backgrounds",
       "decoded_RGBA_sha256": "1ee70a7172afb64117f7eca115e603f6a2b59c5c3632c79de1988d833cf95830",
-      "status": "OPTIONAL DEFERRED"
+      "status": "OPTIONAL DEFERRED",
+      "source_availability": "pinned Git blob",
+      "delivery_state": "source only; not delivered",
+      "runtime_state": "not integrated"
     },
     {
       "path": "assets/nino/travel-passport/book/concepts/passport-page-10-gold-finale-v2.png",
@@ -9121,7 +9624,10 @@
       ],
       "intended_runtime_placement": "Future shared passport folio shell; no fixed concept-page backgrounds",
       "decoded_RGBA_sha256": "5cd2b26021922e19a15b3cbdf96170162059718cebb01ca541121ab71e830885",
-      "status": "OPTIONAL DEFERRED"
+      "status": "OPTIONAL DEFERRED",
+      "source_availability": "pinned Git blob",
+      "delivery_state": "source only; not delivered",
+      "runtime_state": "not integrated"
     },
     {
       "path": "assets/nino/travel-passport/book/exports/passport-blank-folio-left-alpha-normalized.webp",
@@ -9170,7 +9676,10 @@
       ],
       "intended_runtime_placement": "Future shared passport folio shell; no fixed concept-page backgrounds",
       "decoded_RGBA_sha256": "d3696e2e8630f764fd5b56bd32bce07b928980469c0830a57f3c54a742e31ab1",
-      "status": "INTEGRATION PENDING"
+      "status": "INTEGRATION PENDING",
+      "source_availability": "delivery derivative",
+      "delivery_state": "export/file present",
+      "runtime_state": "not integrated"
     },
     {
       "path": "assets/nino/travel-passport/book/exports/passport-blank-folio-right-alpha-normalized.webp",
@@ -9219,7 +9728,10 @@
       ],
       "intended_runtime_placement": "Future shared passport folio shell; no fixed concept-page backgrounds",
       "decoded_RGBA_sha256": "e4033a155043e29e2aad404641ef83a94c0c7712d8bb63e5f6ccfbd8ef447e94",
-      "status": "INTEGRATION PENDING"
+      "status": "INTEGRATION PENDING",
+      "source_availability": "delivery derivative",
+      "delivery_state": "export/file present",
+      "runtime_state": "not integrated"
     },
     {
       "path": "assets/nino/travel-passport/book/masters/passport-blank-folio-left-master.png",
@@ -9279,7 +9791,10 @@
       ],
       "intended_runtime_placement": "Future shared passport folio shell; no fixed concept-page backgrounds",
       "decoded_RGBA_sha256": "c4ea19b28ace85d6f4fc6e3bd0c7de4a54e8a20dd07c465172928859e480c21b",
-      "status": "READY"
+      "status": "READY",
+      "source_availability": "pinned Git blob",
+      "delivery_state": "source only; not delivered",
+      "runtime_state": "not integrated"
     },
     {
       "path": "assets/nino/travel-passport/book/masters/passport-blank-folio-right-master.png",
@@ -9339,7 +9854,10 @@
       ],
       "intended_runtime_placement": "Future shared passport folio shell; no fixed concept-page backgrounds",
       "decoded_RGBA_sha256": "2783b3fda9290997c552a41ef02351822b5953125707b3fc316d094fbf026105",
-      "status": "READY"
+      "status": "READY",
+      "source_availability": "pinned Git blob",
+      "delivery_state": "source only; not delivered",
+      "runtime_state": "not integrated"
     },
     {
       "path": "assets/nino/travel-passport/book/masters/passport-closed-cover.png",
@@ -9399,7 +9917,10 @@
       ],
       "intended_runtime_placement": "Future shared passport folio shell; no fixed concept-page backgrounds",
       "decoded_RGBA_sha256": "003df96d54219309e605adb3074d9a9805d83cee171ea6a7fadf3e9f00c7e597",
-      "status": "READY"
+      "status": "READY",
+      "source_availability": "pinned Git blob",
+      "delivery_state": "source only; not delivered",
+      "runtime_state": "not integrated"
     },
     {
       "path": "assets/nino/travel-passport/book/masters/passport-open-book.png",
@@ -9452,14 +9973,17 @@
           "Not a blank runtime base: old baked postmark/content. New folios replace this need; no new full-book repaint required."
         ]
       },
-      "export_readiness": "source only; audited at pinned source Git blob, intentionally not duplicated into integration tree",
+      "export_readiness": "concept/rejected/diagnostic; never activate from this ledger; audited at pinned source Git blob, intentionally not duplicated into integration tree",
       "runtime_usage": "NOT INTEGRATED",
       "missing_dependencies": [
-        "owner folio resolution exception; native1086x1448, <=543 CSS px/page at DPR2; no passport UI in PR61"
+        "Not a blank folio; no production integration authorized"
       ],
-      "intended_runtime_placement": "Future shared passport folio shell; no fixed concept-page backgrounds",
+      "intended_runtime_placement": "ARCHIVAL / REWORK reference only; baked historical content; excluded from production passport",
       "decoded_RGBA_sha256": "d125644669c38615d76a4f283ad0d1f54f22c386b2817901b2aa8410dadcdee1",
-      "status": "READY"
+      "status": "OPTIONAL DEFERRED",
+      "source_availability": "pinned Git blob",
+      "delivery_state": "source only; not delivered",
+      "runtime_state": "not integrated"
     },
     {
       "path": "assets/nino/travel-passport/book/qa-candidates/passport-blank-folio-left-alpha-normalized.webp",
@@ -9519,7 +10043,10 @@
       ],
       "intended_runtime_placement": "Future shared passport folio shell; no fixed concept-page backgrounds",
       "decoded_RGBA_sha256": "d3696e2e8630f764fd5b56bd32bce07b928980469c0830a57f3c54a742e31ab1",
-      "status": "EXPORT PENDING"
+      "status": "EXPORT PENDING",
+      "source_availability": "pinned Git blob",
+      "delivery_state": "source only; not delivered",
+      "runtime_state": "not integrated"
     },
     {
       "path": "assets/nino/travel-passport/book/qa-candidates/passport-blank-folio-right-alpha-normalized.webp",
@@ -9579,7 +10106,10 @@
       ],
       "intended_runtime_placement": "Future shared passport folio shell; no fixed concept-page backgrounds",
       "decoded_RGBA_sha256": "e4033a155043e29e2aad404641ef83a94c0c7712d8bb63e5f6ccfbd8ef447e94",
-      "status": "EXPORT PENDING"
+      "status": "EXPORT PENDING",
+      "source_availability": "pinned Git blob",
+      "delivery_state": "source only; not delivered",
+      "runtime_state": "not integrated"
     },
     {
       "path": "assets/nino/travel-passport/gold/concepts/gold-finale-ornament-overlay.png",
@@ -9635,11 +10165,15 @@
       "export_readiness": "concept/rejected/diagnostic; never activate from this ledger; audited at pinned source Git blob, intentionally not duplicated into integration tree",
       "runtime_usage": "NOT INTEGRATED",
       "missing_dependencies": [
+        "Not a blank folio; no production integration authorized",
         "Existing PR61 has no earned passport presentation; no new unlock/save/reward implementation authorized"
       ],
-      "intended_runtime_placement": "Future passport: chapter goldAt>0; final only all11 goldAt>0; live labels",
+      "intended_runtime_placement": "ARCHIVAL / REWORK reference only; baked historical content; excluded from production passport",
       "decoded_RGBA_sha256": "ac0ae0cd77c4adbb9f5d82cc86211cb672eb2b7b880c9c82cb5d4c76d62b2f1b",
-      "status": "OPTIONAL DEFERRED"
+      "status": "OPTIONAL DEFERRED",
+      "source_availability": "pinned Git blob",
+      "delivery_state": "source only; not delivered",
+      "runtime_state": "not integrated"
     },
     {
       "path": "assets/nino/travel-passport/gold/exports/gold-chapter-seal-v2-128.png",
@@ -9695,7 +10229,10 @@
       ],
       "intended_runtime_placement": "Future passport: chapter goldAt>0; final only all11 goldAt>0; live labels",
       "decoded_RGBA_sha256": "b9ff66abb3d33691642f91f18f37fb9048e2c322c1cafdc963098745c5dc1103",
-      "status": "INTEGRATION PENDING"
+      "status": "INTEGRATION PENDING",
+      "source_availability": "delivery derivative",
+      "delivery_state": "export/file present",
+      "runtime_state": "not integrated"
     },
     {
       "path": "assets/nino/travel-passport/gold/exports/gold-chapter-seal-v2-128.webp",
@@ -9751,7 +10288,10 @@
       ],
       "intended_runtime_placement": "Future passport: chapter goldAt>0; final only all11 goldAt>0; live labels",
       "decoded_RGBA_sha256": "b9ff66abb3d33691642f91f18f37fb9048e2c322c1cafdc963098745c5dc1103",
-      "status": "INTEGRATION PENDING"
+      "status": "INTEGRATION PENDING",
+      "source_availability": "delivery derivative",
+      "delivery_state": "export/file present",
+      "runtime_state": "not integrated"
     },
     {
       "path": "assets/nino/travel-passport/gold/exports/gold-chapter-seal-v2-64.png",
@@ -9807,7 +10347,10 @@
       ],
       "intended_runtime_placement": "Future passport: chapter goldAt>0; final only all11 goldAt>0; live labels",
       "decoded_RGBA_sha256": "0dcce9525c81f3afd6be07d27ca514b9bd2fbaf3d40966705c10cf48f413de3c",
-      "status": "INTEGRATION PENDING"
+      "status": "INTEGRATION PENDING",
+      "source_availability": "delivery derivative",
+      "delivery_state": "export/file present",
+      "runtime_state": "not integrated"
     },
     {
       "path": "assets/nino/travel-passport/gold/exports/gold-chapter-seal-v2-64.webp",
@@ -9863,7 +10406,10 @@
       ],
       "intended_runtime_placement": "Future passport: chapter goldAt>0; final only all11 goldAt>0; live labels",
       "decoded_RGBA_sha256": "0dcce9525c81f3afd6be07d27ca514b9bd2fbaf3d40966705c10cf48f413de3c",
-      "status": "INTEGRATION PENDING"
+      "status": "INTEGRATION PENDING",
+      "source_availability": "delivery derivative",
+      "delivery_state": "export/file present",
+      "runtime_state": "not integrated"
     },
     {
       "path": "assets/nino/travel-passport/gold/exports/gold-chapter-seal-v2-native.png",
@@ -9919,7 +10465,10 @@
       ],
       "intended_runtime_placement": "Future passport: chapter goldAt>0; final only all11 goldAt>0; live labels",
       "decoded_RGBA_sha256": "3f056904c57f78023426806875e7bca049d7a29d0e722bd631754394877e0fb3",
-      "status": "INTEGRATION PENDING"
+      "status": "INTEGRATION PENDING",
+      "source_availability": "delivery derivative",
+      "delivery_state": "export/file present",
+      "runtime_state": "not integrated"
     },
     {
       "path": "assets/nino/travel-passport/gold/exports/gold-chapter-seal-v2-native.webp",
@@ -9975,7 +10524,10 @@
       ],
       "intended_runtime_placement": "Future passport: chapter goldAt>0; final only all11 goldAt>0; live labels",
       "decoded_RGBA_sha256": "3f056904c57f78023426806875e7bca049d7a29d0e722bd631754394877e0fb3",
-      "status": "INTEGRATION PENDING"
+      "status": "INTEGRATION PENDING",
+      "source_availability": "delivery derivative",
+      "delivery_state": "export/file present",
+      "runtime_state": "not integrated"
     },
     {
       "path": "assets/nino/travel-passport/gold/exports/gold-esploratore-doro-240.png",
@@ -10031,7 +10583,10 @@
       ],
       "intended_runtime_placement": "Future passport: chapter goldAt>0; final only all11 goldAt>0; live labels",
       "decoded_RGBA_sha256": "61611656ce6e9f7f01e9c1373a26bb3eeeb1b6923c22e7ad8c78220152ada674",
-      "status": "INTEGRATION PENDING"
+      "status": "INTEGRATION PENDING",
+      "source_availability": "delivery derivative",
+      "delivery_state": "export/file present",
+      "runtime_state": "not integrated"
     },
     {
       "path": "assets/nino/travel-passport/gold/exports/gold-esploratore-doro-240.webp",
@@ -10087,7 +10642,10 @@
       ],
       "intended_runtime_placement": "Future passport: chapter goldAt>0; final only all11 goldAt>0; live labels",
       "decoded_RGBA_sha256": "61611656ce6e9f7f01e9c1373a26bb3eeeb1b6923c22e7ad8c78220152ada674",
-      "status": "INTEGRATION PENDING"
+      "status": "INTEGRATION PENDING",
+      "source_availability": "delivery derivative",
+      "delivery_state": "export/file present",
+      "runtime_state": "not integrated"
     },
     {
       "path": "assets/nino/travel-passport/gold/exports/gold-esploratore-doro-480.png",
@@ -10143,7 +10701,10 @@
       ],
       "intended_runtime_placement": "Future passport: chapter goldAt>0; final only all11 goldAt>0; live labels",
       "decoded_RGBA_sha256": "47935ca63859712f37f451dd8bbb1a6e4b515f8ed6a6d2d3c2c89246065f6171",
-      "status": "INTEGRATION PENDING"
+      "status": "INTEGRATION PENDING",
+      "source_availability": "delivery derivative",
+      "delivery_state": "export/file present",
+      "runtime_state": "not integrated"
     },
     {
       "path": "assets/nino/travel-passport/gold/exports/gold-esploratore-doro-480.webp",
@@ -10199,7 +10760,10 @@
       ],
       "intended_runtime_placement": "Future passport: chapter goldAt>0; final only all11 goldAt>0; live labels",
       "decoded_RGBA_sha256": "47935ca63859712f37f451dd8bbb1a6e4b515f8ed6a6d2d3c2c89246065f6171",
-      "status": "INTEGRATION PENDING"
+      "status": "INTEGRATION PENDING",
+      "source_availability": "delivery derivative",
+      "delivery_state": "export/file present",
+      "runtime_state": "not integrated"
     },
     {
       "path": "assets/nino/travel-passport/gold/exports/gold-esploratore-doro-native.png",
@@ -10255,7 +10819,10 @@
       ],
       "intended_runtime_placement": "Future passport: chapter goldAt>0; final only all11 goldAt>0; live labels",
       "decoded_RGBA_sha256": "e5d1d5b58d518b6550d2283ae43982de9db3eee4082f4b01525f1b181dcf82af",
-      "status": "INTEGRATION PENDING"
+      "status": "INTEGRATION PENDING",
+      "source_availability": "delivery derivative",
+      "delivery_state": "export/file present",
+      "runtime_state": "not integrated"
     },
     {
       "path": "assets/nino/travel-passport/gold/exports/gold-esploratore-doro-native.webp",
@@ -10311,7 +10878,10 @@
       ],
       "intended_runtime_placement": "Future passport: chapter goldAt>0; final only all11 goldAt>0; live labels",
       "decoded_RGBA_sha256": "e5d1d5b58d518b6550d2283ae43982de9db3eee4082f4b01525f1b181dcf82af",
-      "status": "INTEGRATION PENDING"
+      "status": "INTEGRATION PENDING",
+      "source_availability": "delivery derivative",
+      "delivery_state": "export/file present",
+      "runtime_state": "not integrated"
     },
     {
       "path": "assets/nino/travel-passport/gold/masters/gold-chapter-seal-v2.png",
@@ -10371,7 +10941,10 @@
       ],
       "intended_runtime_placement": "Future passport: chapter goldAt>0; final only all11 goldAt>0; live labels",
       "decoded_RGBA_sha256": "3f056904c57f78023426806875e7bca049d7a29d0e722bd631754394877e0fb3",
-      "status": "READY"
+      "status": "READY",
+      "source_availability": "pinned Git blob",
+      "delivery_state": "source only; not delivered",
+      "runtime_state": "not integrated"
     },
     {
       "path": "assets/nino/travel-passport/gold/masters/gold-esploratore-doro.png",
@@ -10431,7 +11004,10 @@
       ],
       "intended_runtime_placement": "Future passport: chapter goldAt>0; final only all11 goldAt>0; live labels",
       "decoded_RGBA_sha256": "e5d1d5b58d518b6550d2283ae43982de9db3eee4082f4b01525f1b181dcf82af",
-      "status": "READY"
+      "status": "READY",
+      "source_availability": "pinned Git blob",
+      "delivery_state": "source only; not delivered",
+      "runtime_state": "not integrated"
     },
     {
       "path": "assets/nino/travel-passport/postcards/concepts/postcard-05-bologna-front.png",
@@ -10491,7 +11067,10 @@
       ],
       "intended_runtime_placement": "Future earned cultural souvenir holder; no ownership invented",
       "decoded_RGBA_sha256": "441b85f5914bd3783f18e3be4e07761134d338e3dd7adbfdfe24708a2ce1d5ac",
-      "status": "OPTIONAL DEFERRED"
+      "status": "OPTIONAL DEFERRED",
+      "source_availability": "pinned Git blob",
+      "delivery_state": "source only; not delivered",
+      "runtime_state": "not integrated"
     },
     {
       "path": "assets/nino/travel-passport/postcards/concepts/postcard-06-milano-front.png",
@@ -10551,7 +11130,10 @@
       ],
       "intended_runtime_placement": "Future earned cultural souvenir holder; no ownership invented",
       "decoded_RGBA_sha256": "b2c56974730b74d3c4d98d4f20b534e28b576877cee2aab44a2aa06af9ba9c90",
-      "status": "OPTIONAL DEFERRED"
+      "status": "OPTIONAL DEFERRED",
+      "source_availability": "pinned Git blob",
+      "delivery_state": "source only; not delivered",
+      "runtime_state": "not integrated"
     },
     {
       "path": "assets/nino/travel-passport/postcards/exports/postcard-01-sicilia-front.webp",
@@ -10607,7 +11189,10 @@
       ],
       "intended_runtime_placement": "Future earned cultural souvenir holder; no ownership invented",
       "decoded_RGBA_sha256": "311879e0306e5af2698d1f2c7a94de77af3310bcb5b2458a5f8f68ed627a23ce",
-      "status": "INTEGRATION PENDING"
+      "status": "INTEGRATION PENDING",
+      "source_availability": "delivery derivative",
+      "delivery_state": "export/file present",
+      "runtime_state": "not integrated"
     },
     {
       "path": "assets/nino/travel-passport/postcards/exports/postcard-02-sardegna-front.webp",
@@ -10663,7 +11248,10 @@
       ],
       "intended_runtime_placement": "Future earned cultural souvenir holder; no ownership invented",
       "decoded_RGBA_sha256": "93c6c45a88ca64c720f51833ed5fed1cb857263f076c952dcd153b97880390aa",
-      "status": "INTEGRATION PENDING"
+      "status": "INTEGRATION PENDING",
+      "source_availability": "delivery derivative",
+      "delivery_state": "export/file present",
+      "runtime_state": "not integrated"
     },
     {
       "path": "assets/nino/travel-passport/postcards/exports/postcard-03-napoli-vesuvio-front.webp",
@@ -10719,7 +11307,10 @@
       ],
       "intended_runtime_placement": "Future earned cultural souvenir holder; no ownership invented",
       "decoded_RGBA_sha256": "00548caecb8dec05c8ef66e24c411dfdf21f1a6095aabd19539c8fe74f8b4462",
-      "status": "INTEGRATION PENDING"
+      "status": "INTEGRATION PENDING",
+      "source_availability": "delivery derivative",
+      "delivery_state": "export/file present",
+      "runtime_state": "not integrated"
     },
     {
       "path": "assets/nino/travel-passport/postcards/exports/postcard-04-venezia-approved-contour.svg",
@@ -10746,7 +11337,10 @@
         "Existing PR61 has no earned passport presentation; no new unlock/save/reward implementation authorized"
       ],
       "intended_runtime_placement": "Future earned cultural souvenir holder; no ownership invented",
-      "status": "INTEGRATION PENDING"
+      "status": "INTEGRATION PENDING",
+      "source_availability": "pinned Git blob",
+      "delivery_state": "export/file present",
+      "runtime_state": "not integrated"
     },
     {
       "path": "assets/nino/travel-passport/postcards/exports/postcard-04-venezia-scalloped-full.png",
@@ -10790,7 +11384,10 @@
       ],
       "intended_runtime_placement": "Future earned cultural souvenir holder; no ownership invented",
       "decoded_RGBA_sha256": "71c1563d81a485c991dfa74c1ac81ceabfd00fba3f6fc80e9936fb95d7056add",
-      "status": "INTEGRATION PENDING"
+      "status": "INTEGRATION PENDING",
+      "source_availability": "delivery derivative",
+      "delivery_state": "export/file present",
+      "runtime_state": "not integrated"
     },
     {
       "path": "assets/nino/travel-passport/postcards/exports/postcard-04-venezia-scalloped-full.webp",
@@ -10834,7 +11431,10 @@
       ],
       "intended_runtime_placement": "Future earned cultural souvenir holder; no ownership invented",
       "decoded_RGBA_sha256": "7d04aac790da9d2756a7742722f736b6a002ca2722fc5e008e75fc0f1567c878",
-      "status": "INTEGRATION PENDING"
+      "status": "INTEGRATION PENDING",
+      "source_availability": "delivery derivative",
+      "delivery_state": "export/file present",
+      "runtime_state": "not integrated"
     },
     {
       "path": "assets/nino/travel-passport/postcards/exports/postcard-04-venezia-scalloped-tight.png",
@@ -10878,7 +11478,10 @@
       ],
       "intended_runtime_placement": "Future earned cultural souvenir holder; no ownership invented",
       "decoded_RGBA_sha256": "bcbc74044277de45081f6103dc9cc503cdc39ab25f91eef65ead8d4f438d6afd",
-      "status": "INTEGRATION PENDING"
+      "status": "INTEGRATION PENDING",
+      "source_availability": "delivery derivative",
+      "delivery_state": "export/file present",
+      "runtime_state": "not integrated"
     },
     {
       "path": "assets/nino/travel-passport/postcards/exports/postcard-04-venezia-scalloped-tight.webp",
@@ -10922,7 +11525,10 @@
       ],
       "intended_runtime_placement": "Future earned cultural souvenir holder; no ownership invented",
       "decoded_RGBA_sha256": "180952690c03cda290dcaa2ff36fe39926f97bca9b3d4149a4de2374cdd9c9af",
-      "status": "INTEGRATION PENDING"
+      "status": "INTEGRATION PENDING",
+      "source_availability": "delivery derivative",
+      "delivery_state": "export/file present",
+      "runtime_state": "not integrated"
     },
     {
       "path": "assets/nino/travel-passport/postcards/exports/postcard-05-universal-reverse.webp",
@@ -10978,7 +11584,10 @@
       ],
       "intended_runtime_placement": "Future earned cultural souvenir holder; no ownership invented",
       "decoded_RGBA_sha256": "f3d26de5b861b689c0e35778f354aa50ef65deac7de20cb0eb20f4f7eae86e79",
-      "status": "INTEGRATION PENDING"
+      "status": "INTEGRATION PENDING",
+      "source_availability": "delivery derivative",
+      "delivery_state": "export/file present",
+      "runtime_state": "not integrated"
     },
     {
       "path": "assets/nino/travel-passport/postcards/masters/postcard-01-sicilia-front.png",
@@ -11038,7 +11647,10 @@
       ],
       "intended_runtime_placement": "Future earned cultural souvenir holder; no ownership invented",
       "decoded_RGBA_sha256": "311879e0306e5af2698d1f2c7a94de77af3310bcb5b2458a5f8f68ed627a23ce",
-      "status": "READY"
+      "status": "READY",
+      "source_availability": "pinned Git blob",
+      "delivery_state": "source only; not delivered",
+      "runtime_state": "not integrated"
     },
     {
       "path": "assets/nino/travel-passport/postcards/masters/postcard-02-sardegna-front.png",
@@ -11098,7 +11710,10 @@
       ],
       "intended_runtime_placement": "Future earned cultural souvenir holder; no ownership invented",
       "decoded_RGBA_sha256": "93c6c45a88ca64c720f51833ed5fed1cb857263f076c952dcd153b97880390aa",
-      "status": "READY"
+      "status": "READY",
+      "source_availability": "pinned Git blob",
+      "delivery_state": "source only; not delivered",
+      "runtime_state": "not integrated"
     },
     {
       "path": "assets/nino/travel-passport/postcards/masters/postcard-03-napoli-vesuvio-front.png",
@@ -11158,7 +11773,10 @@
       ],
       "intended_runtime_placement": "Future earned cultural souvenir holder; no ownership invented",
       "decoded_RGBA_sha256": "00548caecb8dec05c8ef66e24c411dfdf21f1a6095aabd19539c8fe74f8b4462",
-      "status": "READY"
+      "status": "READY",
+      "source_availability": "pinned Git blob",
+      "delivery_state": "source only; not delivered",
+      "runtime_state": "not integrated"
     },
     {
       "path": "assets/nino/travel-passport/postcards/masters/postcard-04-venezia-front.png",
@@ -11218,7 +11836,10 @@
       ],
       "intended_runtime_placement": "Future earned cultural souvenir holder; no ownership invented",
       "decoded_RGBA_sha256": "8822e26ea2f5554e63a326845b70f817afdc37abf8f120d2f5d2504a77341d1f",
-      "status": "READY"
+      "status": "READY",
+      "source_availability": "pinned Git blob",
+      "delivery_state": "export/file present",
+      "runtime_state": "not integrated"
     },
     {
       "path": "assets/nino/travel-passport/postcards/masters/postcard-05-universal-reverse.png",
@@ -11278,7 +11899,10 @@
       ],
       "intended_runtime_placement": "Future earned cultural souvenir holder; no ownership invented",
       "decoded_RGBA_sha256": "f3d26de5b861b689c0e35778f354aa50ef65deac7de20cb0eb20f4f7eae86e79",
-      "status": "READY"
+      "status": "READY",
+      "source_availability": "pinned Git blob",
+      "delivery_state": "source only; not delivered",
+      "runtime_state": "not integrated"
     },
     {
       "path": "assets/nino/travel-passport/stamps/exports/stamp-01-firenze.webp",
@@ -11326,7 +11950,10 @@
       ],
       "intended_runtime_placement": "Future passport: exact completed chapter with live caption",
       "decoded_RGBA_sha256": "58c0c536c667357d53e0ed413ee4d20c89ff550ff2c8539364faecf30cbdfda4",
-      "status": "INTEGRATION PENDING"
+      "status": "INTEGRATION PENDING",
+      "source_availability": "delivery derivative",
+      "delivery_state": "export/file present",
+      "runtime_state": "not integrated"
     },
     {
       "path": "assets/nino/travel-passport/stamps/exports/stamp-02-roma.webp",
@@ -11374,7 +12001,10 @@
       ],
       "intended_runtime_placement": "Future passport: exact completed chapter with live caption",
       "decoded_RGBA_sha256": "becca958945f294794efb4b4b19a5441bcc5763aedcd264592bd1feaaed9d25a",
-      "status": "INTEGRATION PENDING"
+      "status": "INTEGRATION PENDING",
+      "source_availability": "delivery derivative",
+      "delivery_state": "export/file present",
+      "runtime_state": "not integrated"
     },
     {
       "path": "assets/nino/travel-passport/stamps/exports/stamp-03-borghi.webp",
@@ -11422,7 +12052,10 @@
       ],
       "intended_runtime_placement": "Future passport: exact completed chapter with live caption",
       "decoded_RGBA_sha256": "6e17cd48dc1090d90fdc445ce1f54009958cd9b6101676077f1e239d1272c4e8",
-      "status": "INTEGRATION PENDING"
+      "status": "INTEGRATION PENDING",
+      "source_availability": "delivery derivative",
+      "delivery_state": "export/file present",
+      "runtime_state": "not integrated"
     },
     {
       "path": "assets/nino/travel-passport/stamps/exports/stamp-04-liguria.webp",
@@ -11470,7 +12103,10 @@
       ],
       "intended_runtime_placement": "Future passport: exact completed chapter with live caption",
       "decoded_RGBA_sha256": "ab3a81b6bbf51a8889b8218469bd5b76da7589f70e3214744b001bcd9ee2e421",
-      "status": "INTEGRATION PENDING"
+      "status": "INTEGRATION PENDING",
+      "source_availability": "delivery derivative",
+      "delivery_state": "export/file present",
+      "runtime_state": "not integrated"
     },
     {
       "path": "assets/nino/travel-passport/stamps/exports/stamp-05-isole.webp",
@@ -11526,7 +12162,10 @@
       ],
       "intended_runtime_placement": "Future passport: exact completed chapter with live caption",
       "decoded_RGBA_sha256": "e10cae987f6e523e1277434a253e7fc5f9905c4eb3b1672fa902a3a16c3dbba3",
-      "status": "INTEGRATION PENDING"
+      "status": "INTEGRATION PENDING",
+      "source_availability": "delivery derivative",
+      "delivery_state": "export/file present",
+      "runtime_state": "not integrated"
     },
     {
       "path": "assets/nino/travel-passport/stamps/exports/stamp-06-dolomiti.webp",
@@ -11574,7 +12213,10 @@
       ],
       "intended_runtime_placement": "Future passport: exact completed chapter with live caption",
       "decoded_RGBA_sha256": "96a056013da0de1aea9fe64d03896110e021c0d892b6a9e04df187e0a30f5300",
-      "status": "INTEGRATION PENDING"
+      "status": "INTEGRATION PENDING",
+      "source_availability": "delivery derivative",
+      "delivery_state": "export/file present",
+      "runtime_state": "not integrated"
     },
     {
       "path": "assets/nino/travel-passport/stamps/exports/stamp-07-etna.webp",
@@ -11622,7 +12264,10 @@
       ],
       "intended_runtime_placement": "Future passport: exact completed chapter with live caption",
       "decoded_RGBA_sha256": "a5ab367ea12aa5c490ea411e2b95dfb78b0665711122d5d9004ba6a7969bbe59",
-      "status": "INTEGRATION PENDING"
+      "status": "INTEGRATION PENDING",
+      "source_availability": "delivery derivative",
+      "delivery_state": "export/file present",
+      "runtime_state": "not integrated"
     },
     {
       "path": "assets/nino/travel-passport/stamps/exports/stamp-08-toscana.webp",
@@ -11670,7 +12315,10 @@
       ],
       "intended_runtime_placement": "Future passport: exact completed chapter with live caption",
       "decoded_RGBA_sha256": "2e1cd6a6184391a8a298a78253173658dc772011f1a63f888921021bb7e23a0d",
-      "status": "INTEGRATION PENDING"
+      "status": "INTEGRATION PENDING",
+      "source_availability": "delivery derivative",
+      "delivery_state": "export/file present",
+      "runtime_state": "not integrated"
     },
     {
       "path": "assets/nino/travel-passport/stamps/exports/stamp-09-confine-italia.webp",
@@ -11718,7 +12366,10 @@
       ],
       "intended_runtime_placement": "Future passport: exact completed chapter with live caption",
       "decoded_RGBA_sha256": "a732288d0d772b844d7400627e783d1d539e5b8366f1cb4ad640f93e9e567b91",
-      "status": "INTEGRATION PENDING"
+      "status": "INTEGRATION PENDING",
+      "source_availability": "delivery derivative",
+      "delivery_state": "export/file present",
+      "runtime_state": "not integrated"
     },
     {
       "path": "assets/nino/travel-passport/stamps/exports/stamp-10-mari.webp",
@@ -11766,7 +12417,10 @@
       ],
       "intended_runtime_placement": "Future passport: exact completed chapter with live caption",
       "decoded_RGBA_sha256": "27de2b8ab098e126d13a55d0b8a7637931c732d09af733a4ee7a7e4379a7c72b",
-      "status": "INTEGRATION PENDING"
+      "status": "INTEGRATION PENDING",
+      "source_availability": "delivery derivative",
+      "delivery_state": "export/file present",
+      "runtime_state": "not integrated"
     },
     {
       "path": "assets/nino/travel-passport/stamps/exports/stamp-11-fiumi.webp",
@@ -11814,7 +12468,10 @@
       ],
       "intended_runtime_placement": "Future passport: exact completed chapter with live caption",
       "decoded_RGBA_sha256": "e06c55944c34572e85d06d13c75ee7ab9c4fbbc9ba8990ba13f2588e2581f079",
-      "status": "INTEGRATION PENDING"
+      "status": "INTEGRATION PENDING",
+      "source_availability": "delivery derivative",
+      "delivery_state": "export/file present",
+      "runtime_state": "not integrated"
     },
     {
       "path": "assets/nino/travel-passport/stamps/masters/stamp-01-firenze.png",
@@ -11874,7 +12531,10 @@
       ],
       "intended_runtime_placement": "Future passport: exact completed chapter with live caption",
       "decoded_RGBA_sha256": "e8d3f56476173a5902955d199fc02394612bf15a95b787de8d49c9bfc4a6e99e",
-      "status": "READY"
+      "status": "READY",
+      "source_availability": "pinned Git blob",
+      "delivery_state": "source only; not delivered",
+      "runtime_state": "not integrated"
     },
     {
       "path": "assets/nino/travel-passport/stamps/masters/stamp-02-roma.png",
@@ -11934,7 +12594,10 @@
       ],
       "intended_runtime_placement": "Future passport: exact completed chapter with live caption",
       "decoded_RGBA_sha256": "c76c2b2724fe7ff8887b02a53f8c71d74d7c2a851dd5c846fd9a83dbc8484e77",
-      "status": "READY"
+      "status": "READY",
+      "source_availability": "pinned Git blob",
+      "delivery_state": "source only; not delivered",
+      "runtime_state": "not integrated"
     },
     {
       "path": "assets/nino/travel-passport/stamps/masters/stamp-03-borghi.png",
@@ -11994,7 +12657,10 @@
       ],
       "intended_runtime_placement": "Future passport: exact completed chapter with live caption",
       "decoded_RGBA_sha256": "c336e44064b70d66c0d4ac92f7f4ae586c9aeb12902cf633f7cd95d0b7a77f1e",
-      "status": "READY"
+      "status": "READY",
+      "source_availability": "pinned Git blob",
+      "delivery_state": "source only; not delivered",
+      "runtime_state": "not integrated"
     },
     {
       "path": "assets/nino/travel-passport/stamps/masters/stamp-04-liguria.png",
@@ -12054,7 +12720,10 @@
       ],
       "intended_runtime_placement": "Future passport: exact completed chapter with live caption",
       "decoded_RGBA_sha256": "1e6664302e45c5eb280bbb8acf4a67f02f4b7662b600d3b512d7e875072ffae3",
-      "status": "READY"
+      "status": "READY",
+      "source_availability": "pinned Git blob",
+      "delivery_state": "source only; not delivered",
+      "runtime_state": "not integrated"
     },
     {
       "path": "assets/nino/travel-passport/stamps/masters/stamp-05-isole.png",
@@ -12114,7 +12783,10 @@
       ],
       "intended_runtime_placement": "Future passport: exact completed chapter with live caption",
       "decoded_RGBA_sha256": "0ab4e408cdc3da2260c7bd2bb83fe092225b3089101c5cf7c9cc5254f11bfeb6",
-      "status": "OPTIONAL DEFERRED"
+      "status": "OPTIONAL DEFERRED",
+      "source_availability": "pinned Git blob",
+      "delivery_state": "source only; not delivered",
+      "runtime_state": "not integrated"
     },
     {
       "path": "assets/nino/travel-passport/stamps/masters/stamp-06-dolomiti.png",
@@ -12174,7 +12846,10 @@
       ],
       "intended_runtime_placement": "Future passport: exact completed chapter with live caption",
       "decoded_RGBA_sha256": "89bd8e44b6c69c02c57e5716a902962fd0d12c6fcbb52d540c47fedd78beaef3",
-      "status": "READY"
+      "status": "READY",
+      "source_availability": "pinned Git blob",
+      "delivery_state": "source only; not delivered",
+      "runtime_state": "not integrated"
     },
     {
       "path": "assets/nino/travel-passport/stamps/masters/stamp-07-etna.png",
@@ -12234,7 +12909,10 @@
       ],
       "intended_runtime_placement": "Future passport: exact completed chapter with live caption",
       "decoded_RGBA_sha256": "cc299d30753e16b9a8a7d39bfd09837c794ff0ae78b2fd5e0b7ca5a51092b3cb",
-      "status": "READY"
+      "status": "READY",
+      "source_availability": "pinned Git blob",
+      "delivery_state": "source only; not delivered",
+      "runtime_state": "not integrated"
     },
     {
       "path": "assets/nino/travel-passport/stamps/masters/stamp-08-toscana.png",
@@ -12294,7 +12972,10 @@
       ],
       "intended_runtime_placement": "Future passport: exact completed chapter with live caption",
       "decoded_RGBA_sha256": "4329ca9b0305b3b8eadf09c00c03707deb9c4e377ba507a030971de6849d9a3d",
-      "status": "READY"
+      "status": "READY",
+      "source_availability": "pinned Git blob",
+      "delivery_state": "source only; not delivered",
+      "runtime_state": "not integrated"
     },
     {
       "path": "assets/nino/travel-passport/stamps/masters/stamp-09-confine-italia.png",
@@ -12354,7 +13035,10 @@
       ],
       "intended_runtime_placement": "Future passport: exact completed chapter with live caption",
       "decoded_RGBA_sha256": "10bbe599e1c8d1851bf4f76bbf0fbcc69a57a79cc5d93b47ea7148a3fc8be3fc",
-      "status": "READY"
+      "status": "READY",
+      "source_availability": "pinned Git blob",
+      "delivery_state": "source only; not delivered",
+      "runtime_state": "not integrated"
     },
     {
       "path": "assets/nino/travel-passport/stamps/masters/stamp-10-mari.png",
@@ -12414,7 +13098,10 @@
       ],
       "intended_runtime_placement": "Future passport: exact completed chapter with live caption",
       "decoded_RGBA_sha256": "774c9cc5343a4e48c8bafccce86acb97e7fef7ae7a8ff3aa8f5fd1f925179624",
-      "status": "READY"
+      "status": "READY",
+      "source_availability": "pinned Git blob",
+      "delivery_state": "source only; not delivered",
+      "runtime_state": "not integrated"
     },
     {
       "path": "assets/nino/travel-passport/stamps/masters/stamp-11-fiumi.png",
@@ -12474,7 +13161,10 @@
       ],
       "intended_runtime_placement": "Future passport: exact completed chapter with live caption",
       "decoded_RGBA_sha256": "d01e523521221b59a889ee407e180311255fbac9ac0829b16df377a3a4994a09",
-      "status": "READY"
+      "status": "READY",
+      "source_availability": "pinned Git blob",
+      "delivery_state": "source only; not delivered",
+      "runtime_state": "not integrated"
     },
     {
       "path": "assets/nino/travel-passport/stamps/qa-candidates/stamp-01-firenze-ink-preview.webp",
@@ -12534,7 +13224,10 @@
       ],
       "intended_runtime_placement": "Future passport: exact completed chapter with live caption",
       "decoded_RGBA_sha256": "58c0c536c667357d53e0ed413ee4d20c89ff550ff2c8539364faecf30cbdfda4",
-      "status": "EXPORT PENDING"
+      "status": "EXPORT PENDING",
+      "source_availability": "pinned Git blob",
+      "delivery_state": "source only; not delivered",
+      "runtime_state": "not integrated"
     },
     {
       "path": "assets/nino/travel-passport/stamps/qa-candidates/stamp-02-roma-ink-preview.webp",
@@ -12594,7 +13287,10 @@
       ],
       "intended_runtime_placement": "Future passport: exact completed chapter with live caption",
       "decoded_RGBA_sha256": "becca958945f294794efb4b4b19a5441bcc5763aedcd264592bd1feaaed9d25a",
-      "status": "EXPORT PENDING"
+      "status": "EXPORT PENDING",
+      "source_availability": "pinned Git blob",
+      "delivery_state": "source only; not delivered",
+      "runtime_state": "not integrated"
     },
     {
       "path": "assets/nino/travel-passport/stamps/qa-candidates/stamp-03-borghi-ink-preview.webp",
@@ -12654,7 +13350,10 @@
       ],
       "intended_runtime_placement": "Future passport: exact completed chapter with live caption",
       "decoded_RGBA_sha256": "6e17cd48dc1090d90fdc445ce1f54009958cd9b6101676077f1e239d1272c4e8",
-      "status": "EXPORT PENDING"
+      "status": "EXPORT PENDING",
+      "source_availability": "pinned Git blob",
+      "delivery_state": "source only; not delivered",
+      "runtime_state": "not integrated"
     },
     {
       "path": "assets/nino/travel-passport/stamps/qa-candidates/stamp-04-liguria-ink-preview.webp",
@@ -12714,7 +13413,10 @@
       ],
       "intended_runtime_placement": "Future passport: exact completed chapter with live caption",
       "decoded_RGBA_sha256": "ab3a81b6bbf51a8889b8218469bd5b76da7589f70e3214744b001bcd9ee2e421",
-      "status": "EXPORT PENDING"
+      "status": "EXPORT PENDING",
+      "source_availability": "pinned Git blob",
+      "delivery_state": "source only; not delivered",
+      "runtime_state": "not integrated"
     },
     {
       "path": "assets/nino/travel-passport/stamps/qa-candidates/stamp-05-isole-ink-preview.webp",
@@ -12774,7 +13476,10 @@
       ],
       "intended_runtime_placement": "Future passport: exact completed chapter with live caption",
       "decoded_RGBA_sha256": "9f308ba2b57303661069a043bd689fdaa58199f860b181a37d0060dde9e893d5",
-      "status": "OPTIONAL DEFERRED"
+      "status": "OPTIONAL DEFERRED",
+      "source_availability": "pinned Git blob",
+      "delivery_state": "source only; not delivered",
+      "runtime_state": "not integrated"
     },
     {
       "path": "assets/nino/travel-passport/stamps/qa-candidates/stamp-06-dolomiti-ink-preview.webp",
@@ -12834,7 +13539,10 @@
       ],
       "intended_runtime_placement": "Future passport: exact completed chapter with live caption",
       "decoded_RGBA_sha256": "96a056013da0de1aea9fe64d03896110e021c0d892b6a9e04df187e0a30f5300",
-      "status": "EXPORT PENDING"
+      "status": "EXPORT PENDING",
+      "source_availability": "pinned Git blob",
+      "delivery_state": "source only; not delivered",
+      "runtime_state": "not integrated"
     },
     {
       "path": "assets/nino/travel-passport/stamps/qa-candidates/stamp-07-etna-ink-preview.webp",
@@ -12894,7 +13602,10 @@
       ],
       "intended_runtime_placement": "Future passport: exact completed chapter with live caption",
       "decoded_RGBA_sha256": "a5ab367ea12aa5c490ea411e2b95dfb78b0665711122d5d9004ba6a7969bbe59",
-      "status": "EXPORT PENDING"
+      "status": "EXPORT PENDING",
+      "source_availability": "pinned Git blob",
+      "delivery_state": "source only; not delivered",
+      "runtime_state": "not integrated"
     },
     {
       "path": "assets/nino/travel-passport/stamps/qa-candidates/stamp-08-toscana-ink-preview.webp",
@@ -12954,7 +13665,10 @@
       ],
       "intended_runtime_placement": "Future passport: exact completed chapter with live caption",
       "decoded_RGBA_sha256": "2e1cd6a6184391a8a298a78253173658dc772011f1a63f888921021bb7e23a0d",
-      "status": "EXPORT PENDING"
+      "status": "EXPORT PENDING",
+      "source_availability": "pinned Git blob",
+      "delivery_state": "source only; not delivered",
+      "runtime_state": "not integrated"
     },
     {
       "path": "assets/nino/travel-passport/stamps/qa-candidates/stamp-09-confine-italia-ink-preview.webp",
@@ -13014,7 +13728,10 @@
       ],
       "intended_runtime_placement": "Future passport: exact completed chapter with live caption",
       "decoded_RGBA_sha256": "a732288d0d772b844d7400627e783d1d539e5b8366f1cb4ad640f93e9e567b91",
-      "status": "EXPORT PENDING"
+      "status": "EXPORT PENDING",
+      "source_availability": "pinned Git blob",
+      "delivery_state": "source only; not delivered",
+      "runtime_state": "not integrated"
     },
     {
       "path": "assets/nino/travel-passport/stamps/qa-candidates/stamp-10-mari-ink-preview.webp",
@@ -13074,7 +13791,10 @@
       ],
       "intended_runtime_placement": "Future passport: exact completed chapter with live caption",
       "decoded_RGBA_sha256": "27de2b8ab098e126d13a55d0b8a7637931c732d09af733a4ee7a7e4379a7c72b",
-      "status": "EXPORT PENDING"
+      "status": "EXPORT PENDING",
+      "source_availability": "pinned Git blob",
+      "delivery_state": "source only; not delivered",
+      "runtime_state": "not integrated"
     },
     {
       "path": "assets/nino/travel-passport/stamps/qa-candidates/stamp-11-fiumi-ink-preview.webp",
@@ -13134,7 +13854,10 @@
       ],
       "intended_runtime_placement": "Future passport: exact completed chapter with live caption",
       "decoded_RGBA_sha256": "e06c55944c34572e85d06d13c75ee7ab9c4fbbc9ba8990ba13f2588e2581f079",
-      "status": "EXPORT PENDING"
+      "status": "EXPORT PENDING",
+      "source_availability": "pinned Git blob",
+      "delivery_state": "source only; not delivered",
+      "runtime_state": "not integrated"
     },
     {
       "path": "assets/nino/travel-passport/stamps/rework/stamp-05-isole-geography-candidate.png",
@@ -13194,7 +13917,10 @@
       ],
       "intended_runtime_placement": "Future passport: exact completed chapter with live caption",
       "decoded_RGBA_sha256": "e10cae987f6e523e1277434a253e7fc5f9905c4eb3b1672fa902a3a16c3dbba3",
-      "status": "EXPORT PENDING"
+      "status": "EXPORT PENDING",
+      "source_availability": "pinned Git blob",
+      "delivery_state": "source only; not delivered",
+      "runtime_state": "not integrated"
     },
     {
       "path": "output/art/nino-op-de-scooter.webp",
@@ -13255,7 +13981,10 @@
       "missing_dependencies": [],
       "intended_runtime_placement": "Preserved source/reference; no new placement authorized",
       "decoded_RGBA_sha256": "3376a61b71b13d75e10ecb6c580b8afbba04dcaa7732146b34c1531eb6d2170e",
-      "status": "READY"
+      "status": "READY",
+      "source_availability": "pinned Git blob",
+      "delivery_state": "export/file present",
+      "runtime_state": "integrated"
     },
     {
       "path": "output/art/topo-italie-avontuur.webp",
@@ -13316,7 +14045,10 @@
       "missing_dependencies": [],
       "intended_runtime_placement": "Preserved source/reference; no new placement authorized",
       "decoded_RGBA_sha256": "b1572ab66526bad6dd5ad8c40026a9c64e115e30e464fa18d486986053934af9",
-      "status": "READY"
+      "status": "READY",
+      "source_availability": "pinned Git blob",
+      "delivery_state": "export/file present",
+      "runtime_state": "integrated"
     }
   ]
 }

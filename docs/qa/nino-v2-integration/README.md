@@ -1,3 +1,7 @@
+# Supplemental QA completion — 3 November 2026
+
+[Fresh Chrome/WebKit evidence and exact-artifact Hermes handoff](../nino-v2-qa-refresh/README.md). This supplements the integrator evidence below. WebKit27.2 responsive checks PASS on five viewports; native Safari and physical iPad remain NOT TESTED. Application bytes remain identical to df775042cbb24884d675ba0b70607813aa5e9090. The final evidence SHA is pinned in PR71; independent Hermes acceptance remains OPEN.
+
 # NINO 2.0 integration candidate / Hermes handoff
 
 Codex implementation and internal verification. **No independent PASS or owner release GO is claimed.** Review the exact full PR-head SHA pinned in the integration PR description, rather than main or another candidate. Runtime implementation commit: `df775042cbb24884d675ba0b70607813aa5e9090`; subsequent evidence changes must retain the artifact hash below.

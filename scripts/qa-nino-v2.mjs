@@ -40,7 +40,7 @@ try{
   }
   if(width===1500){
    // Explicit projection fixtures: these are not claims of naturally earned play.
-   for(const fixture of [{completed:0,gold:0,trips:0},{completed:1,gold:0,trips:1},{completed:11,gold:1,trips:3},{completed:11,gold:11,trips:8}]){
+   for(const fixture of [{completed:0,gold:0,trips:0},{completed:1,gold:0,trips:1},{completed:11,gold:1,trips:2},{completed:11,gold:1,trips:3},{completed:11,gold:11,trips:8}]){
     await p.evaluate(f=>{state.route=TopoRoute.fresh();ROUTE_CHAPTERS.forEach((c,i)=>{state.route.chapters[c.id]={stage:i<f.completed?3:0,completedAt:i<f.completed?1:0,goldAt:i<f.gold?1:0,nextReviewAt:0,reviews:0}});state.trips=f.trips;state.pizzas=f.trips*3;state.slices=0;},fixture);
     const before=await p.evaluate(()=>JSON.stringify({route:state.route,pizzas:state.pizzas,trips:state.trips}));
     await p.getByRole('button',{name:'Reisboekje',exact:true}).click();

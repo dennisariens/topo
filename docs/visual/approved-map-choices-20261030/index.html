@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="nl">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>TOPO / NINO — Zes goedgekeurde kaartkeuze-concepten</title>
+<style>
+:root{--paper:#faf3e4;--ink:#20473d;--land:#f0d09b;--brown:#ae8050}
+*{box-sizing:border-box}body{margin:0;background:#eae3d5;font:15px system-ui,-apple-system,sans-serif;color:#253c35}
+header{background:#1b4036;color:#fff;padding:25px max(25px,calc((100vw - 1200px)/2))}
+h1{font:700 clamp(25px,3.5vw,40px) Georgia,serif;margin:7px 0}header p{color:#d9e4d9;line-height:1.5;max-width:950px}
+main{max-width:1250px;margin:auto;padding:20px 24px 55px}.toolbar{background:#fff8eb;border:1px solid #d4c29f;border-radius:12px;padding:15px;display:flex;gap:14px;align-items:center;flex-wrap:wrap;margin-bottom:18px}
+button,select{border:1px solid #a6bbb0;background:#fff;border-radius:8px;padding:12px;font:700 14px system-ui;color:#234b40;cursor:pointer;min-height:46px}button:focus-visible,select:focus-visible{outline:3px solid #197c68;outline-offset:2px}
+.grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:17px}.card{background:#fffaf0;border:1px solid #d4c29f;border-radius:15px;overflow:hidden}.card h2{font:700 23px Georgia,serif;margin:6px 15px;color:#23483f}.card .desc{font-size:12px;color:#756b58;margin:0 15px 12px}.card .tag{padding:12px 15px 0;text-transform:uppercase;letter-spacing:.15em;color:#997447;font-weight:800;font-size:11px}
+svg{width:100%;display:block;background:#efd29e}.lead{fill:none;stroke:#18493e;stroke-width:3;stroke-linejoin:round;stroke-linecap:round}.dot{fill:#19483f;stroke:#fff9eb;stroke-width:2}.number{fill:#fff;font-size:20px;text-anchor:middle;dominant-baseline:middle;font-weight:800}.numdisc{fill:#19483f;stroke:#fff9eb;stroke-width:2}.city{fill:#b36b4c;stroke:#684531;stroke-width:2}.detail{fill:#fff4d5}.circ{fill:#e5be85;stroke:#8e6a4b;stroke-width:2.5}.dash{fill:none;stroke:#b68e5a;stroke-width:1.5;stroke-dasharray:4 4}
+.explain{font-size:13px;color:#5c655a;line-height:1.5;padding:12px 15px;min-height:96px}.choices{display:flex;gap:8px;padding:0 13px}.choices button{flex:1}.result{padding:12px 15px;min-height:43px;font-size:12px;color:#365e52}.note{background:#fff8eb;border:1px solid #d4c29f;border-radius:13px;padding:17px 22px;margin-top:22px;line-height:1.5}.note strong{color:#24473d}
+@media(max-width:1040px){.grid{grid-template-columns:repeat(2,1fr)}}@media(max-width:660px){.grid{grid-template-columns:1fr}main{padding:15px}}
+</style>
+</head><body>
+<header><small style="letter-spacing:.15em;color:#dbbb7d">TOPO / NINO · KAARTKEUZE — ONTWERPREFERENTIE · 30 OKTOBER 2026</small>
+<h1>Duidelijk kiezen. Niets verschuiven.</h1>
+<p>Zes interactieve geometrische schetsen voor de echte Schoolkaart en Ontdekkingskaart. Gegevens zijn ontleend aan <code>docs/geography/points.json</code>. Dit zijn <b>schematische markeringen</b>, geen nieuwe kaart of gewijzigde leerobjecten.</p></header>
+<main>
+<div class="toolbar"><label for="mode">Modus</label><select id="mode"><option value="learn">Ontdekken</option><option value="test">Aanwijzen / Toets</option></select>
+<button id="flip">Wissel nummers 1 en 2</button><small>Alle plaatsrichtingen blijven vast. Nummers zijn niet verbonden aan het juiste antwoord.</small></div>
+<div id="gallery" class="grid"></div>
+<div class="note"><strong>Implementatiecontract</strong><p>De daadwerkelijke kaartkeuze zit in PR #59 en PR #61. Dit bestand is een referentie voor vormgeving en aanwijslijnen, niet de app of een GIS-laag. Het grote Rome-symbool bevat de kleine Vaticaan-markering; lijn naar Rome eindigt binnen de cirkel, voorbij de gestippelde binnenrand. Andere punten behouden de onderlinge richting van de echte projectie. Toets/Gold tonen geen plaatsnamen of inhoudelijke hints. Voor zeeën moeten de bronvlakken gebruikt worden; Po is een rivierlijn en de Povlakte een gebied. Geen leerlingdata, rewards, kaartcoördinaten of hitdetectie veranderen.</p><p>De rijkere schilderachtige stijl voor L'Atlante di Nino is een afzonderlijke toekomstige visuele verbetering. Dit voorbeeld bewijst geen geografische grensvormen of physical iPad Safari acceptance.</p></div>
+</main><script>
+const cases=[
+{id:'rome',name:'Rome / Vaticaanstad',desc:'Grote stad en kleine enclave daarbinnen',a:{id:'city-9',name:'Rome',px:460.97,py:604.61,type:'city'},b:{id:'area-o',name:'Vaticaanstad',px:459.44,py:604.2,type:'enclave'},tip:'De grote Rome-cirkel omvat het kleine Vaticaanse gebied. Elke aanwijslijn eindigt op een ander herkenbaar onderdeel.'},
+{id:'naples',name:'Napels / Vesuvius',desc:'Stad aan de kust en vulkaan oostelijk',a:{id:'city-6',name:'Napels',px:557.87,py:685.92,type:'city'},b:{id:'area-e',name:'Vesuvius',px:567.93,py:687.53,type:'volcano'},tip:'Napels is een stad. Vesuvius is een vulkaan, ten oosten en iets ten zuiden van Napels.'},
+{id:'etna',name:'Catania / Etna',desc:'Etna noordwestelijk van Catania',a:{id:'city-15',name:'Catania',px:603.9,py:943.25,type:'city'},b:{id:'area-f',name:'Etna',px:599.45,py:924.15,type:'volcano'},tip:'De vulkaan ligt noordwestelijk van de stad. Geen twee verwisselbare stadspunten.'},
+{id:'bologna',name:'Bologna / Modena',desc:'Twee afzonderlijke stadspunten',a:{id:'city-2',name:'Bologna',px:398.2,py:404.22,type:'city'},b:{id:'city-20',name:'Modena',px:375.1,py:392.7,type:'city'},tip:'Modena ligt noordwestelijk van Bologna. Beide steden hebben evenwaardige markeringen.'},
+{id:'milan',name:'Milaan / Varese',desc:'Twee afzonderlijke stadspunten',a:{id:'city-5',name:'Milaan',px:280.67,py:329.41,type:'city'},b:{id:'city-13',name:'Varese',px:259.88,py:302.57,type:'city'},tip:'Varese ligt noordwestelijk van Milaan, zonder dat de lijnen elkaar raken.'},
+{id:'marino',name:'San Marino / Firenze',desc:'Onafhankelijke staat en stad',a:{id:'area-n',name:'San Marino',px:458.8,py:447.67,type:'state'},b:{id:'city-3',name:'Firenze',px:393.25,py:459.69,type:'city'},tip:'San Marino ligt oostelijk en iets noordelijk van Firenze. De cirkel is een symbool, geen landsgrens.'}
+];
+let swapped=false;
+function pos(c){if(c.id==='rome')return [[256,143],[232,127]];
+const dx=c.b.px-c.a.px,dy=c.b.py-c.a.py,l=Math.hypot(dx,dy)||1,space=c.id==='marino'?170:126;
+return [[244-dx/l*space/2,146-dy/l*space/2],[244+dx/l*space/2,146+dy/l*space/2]];}
+function icon(p,x,y){if(p.type==='enclave')return '<path d="M'+(x-12)+' '+(y-6)+'l9-5 12 6 -2 13 -10 5 -10-8z" fill="#a4584e" stroke="#694338" stroke-width="2"/><circle cx="'+x+'" cy="'+y+'" r="4" fill="#fff"/>';
+if(p.type==='volcano')return '<path d="M'+(x-34)+' '+(y+27)+'L'+(x-9)+' '+(y-24)+'L'+(x+8)+' '+(y-24)+'L'+(x+35)+' '+(y+27)+'Z" fill="#987257" stroke="#684d3d" stroke-width="2"/><path d="M'+x+' '+(y-28)+'q-7-11 2-15q7-5 0-12" fill="none" stroke="#fffaf0" stroke-width="2.5"/>';
+if(p.type==='state')return '<circle cx="'+x+'" cy="'+y+'" r="22" fill="#e6c391" stroke="#ae8961" stroke-dasharray="4 4" stroke-width="2"/><path d="M'+x+' '+(y-14)+'l14 14 -14 14 -14-14Z" fill="#b36b4c" stroke="#694d3d" stroke-width="2"/>';
+return '<circle class="city" cx="'+x+'" cy="'+y+'" r="16"/><circle class="detail" cx="'+x+'" cy="'+y+'" r="5"/>';}
+function draw(c,i){const mode=document.querySelector('#mode').value,P=pos(c),n=swapped?[2,1]:[1,2];let art='<rect width="440" height="274" fill="#f0d4a1"/><text x="414" y="25" font-size="15" font-weight="700" fill="#1a4b3d">N ↑</text>';
+if(c.id==='rome')art+='<circle class="circ" cx="256" cy="143" r="92"/><circle class="dash" cx="256" cy="143" r="84"/>';
+if(c.id==='naples')art+='<path d="M90 214Q145 243 222 247T446 202" fill="none" stroke="#a8c9d5" stroke-width="21" opacity=".6"/>';
+if(c.id==='etna')art+='<path d="M363 0Q341 91 387 152T374 290" fill="none" stroke="#9fc6d3" stroke-width="22" opacity=".6"/>';
+for(let j=0;j<2;j++){const p=j===0?c.a:c.b,x=P[j][0],y=P[j][1],end=c.id==='rome'&&j===0?[206,94]:p.type==='volcano'?[x,y-5]:[x,y],labelY=c.id==='rome'?(j===0?74:218):(y<=P[1-j][1]?74:218);
+art+=icon(p,x,y)+'<path class="lead" d="M62 '+labelY+'H118L'+end[0]+' '+end[1]+'"/><circle class="dot" cx="'+end[0]+'" cy="'+end[1]+'" r="5.5"/><circle class="numdisc" cx="44" cy="'+labelY+'" r="22"/><text class="number" x="44" y="'+(labelY+2)+'">'+n[j]+'</text>';}
+const title=mode==='test'?'Welke stip bedoel je?':c.name,description=mode==='test'?'Neutrale keuze zonder plaatsnamen':c.desc,tip=mode==='test'?'Volg de lijnen en kies de juiste stip. Geen naamhint tijdens de toets.':c.tip;
+return '<article class="card"><div class="tag">Kaartkeuze '+(i+1)+'</div><h2>'+title+'</h2><div class="desc">'+description+'</div><svg viewBox="0 0 440 274" role="img" aria-label="Schematische vergroting; noord is boven">'+art+'</svg><p class="explain">'+tip+'</p><div class="choices"><button data-case="'+i+'" data-which="0">Stip '+n[0]+'</button><button data-case="'+i+'" data-which="1">Stip '+n[1]+'</button></div><div class="result" id="answer-'+i+'">Kies een stip om de interactie te testen.</div></article>';}
+const gallery=document.getElementById('gallery');
+function render(){gallery.innerHTML=cases.map(draw).join('');}
+document.getElementById('mode').onchange=render;
+document.getElementById('flip').onclick=function(){swapped=!swapped;render();};
+gallery.onclick=function(e){const b=e.target.closest('button[data-case]');if(!b)return;const c=cases[Number(b.dataset.case)],p=b.dataset.which==='0'?c.a:c.b;document.getElementById('answer-'+b.dataset.case).textContent=document.getElementById('mode').value==='learn'?'Aangewezen: '+p.name:'Keuze vastgelegd. De echte app beoordeelt op canonical ID.';};
+render();
+</script></body></html>

@@ -1,0 +1,30 @@
+{
+  "status": "FAIL",
+  "version": "156.0.8078.74",
+  "cases": 6,
+  "failure": "AssertionError [ERR_ASSERTION]: {\"q\":\"city-5\",\"mode\":\"point\",\"answered\":false,\"message\":\"Jij bent aan zet.\",\"paused\":false,\"dialog\":false,\"atTarget\":{\"xy\":[504.88716978744947,-2.077287449392685]}}\n+ actual - expected\n\n+ undefined\n- true\n\n    at stage (file:///Users/dennisariens/projects/topo-nino-v2-independent-qa/docs/qa/nino-v2-hermes-67/browser-qa.mjs:20:855)\n    at async file:///Users/dennisariens/projects/topo-nino-v2-independent-qa/docs/qa/nino-v2-hermes-67/browser-qa.mjs:28:214",
+  "network": [],
+  "errors": [],
+  "unexpectedConsoleErrors": []
+}
+node:internal/modules/run_main:107
+    triggerUncaughtException(
+    ^
+
+AssertionError [ERR_ASSERTION]: {"q":"city-5","mode":"point","answered":false,"message":"Jij bent aan zet.","paused":false,"dialog":false,"atTarget":{"xy":[504.88716978744947,-2.077287449392685]}}
++ actual - expected
+
++ undefined
+- true
+
+    at stage (file:///Users/dennisariens/projects/topo-nino-v2-independent-qa/docs/qa/nino-v2-hermes-67/browser-qa.mjs:20:855)
+    at async file:///Users/dennisariens/projects/topo-nino-v2-independent-qa/docs/qa/nino-v2-hermes-67/browser-qa.mjs:28:214 {
+  generatedMessage: false,
+  code: 'ERR_ASSERTION',
+  actual: undefined,
+  expected: true,
+  operator: 'strictEqual',
+  diff: 'simple'
+}
+
+Node.js v24.15.0

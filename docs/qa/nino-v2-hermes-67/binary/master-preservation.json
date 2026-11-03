@@ -1,0 +1,607 @@
+{
+  "baseline": "fab2bbae943d507fcd103887012f790c144f43a5",
+  "count": 20,
+  "masters": [
+    {
+      "baseline_blob": "165b054643f438e8d07c9be2b2c944b8d82a02d6",
+      "baseline_sha256": "3d1c0e1978373d2a21b0072baa3f342375641341635fc7f9f06e5721ff58f1b9",
+      "inventory_blob": "165b054643f438e8d07c9be2b2c944b8d82a02d6",
+      "inventory_equals_baseline": true,
+      "path": "assets/nino/travel-passport/book/masters/passport-closed-cover.png",
+      "versions": [
+        {
+          "blob": "165b054643f438e8d07c9be2b2c944b8d82a02d6",
+          "commit": "8a704cb23da97baf7197635df7fa12f06b864a24",
+          "note": null,
+          "present": true,
+          "unchanged": true
+        },
+        {
+          "blob": "165b054643f438e8d07c9be2b2c944b8d82a02d6",
+          "commit": "cec9fd26ac858bdbcbdf03b5ee6b0ea246e3e02f",
+          "note": null,
+          "present": true,
+          "unchanged": true
+        },
+        {
+          "blob": null,
+          "commit": "2a9dda3d3d8ec567687bc3b61bf9cbde645c752c",
+          "note": "Source-only master intentionally absent from target delivery",
+          "present": false,
+          "unchanged": null
+        }
+      ]
+    },
+    {
+      "baseline_blob": "883625438e29019a89cb3b372d31012f4edd4ef8",
+      "baseline_sha256": "94f5d286e502b81ee156ae0923132f22dc8475f474f44709087e83662e032b8d",
+      "inventory_blob": "883625438e29019a89cb3b372d31012f4edd4ef8",
+      "inventory_equals_baseline": true,
+      "path": "assets/nino/travel-passport/book/masters/passport-open-book.png",
+      "versions": [
+        {
+          "blob": "883625438e29019a89cb3b372d31012f4edd4ef8",
+          "commit": "8a704cb23da97baf7197635df7fa12f06b864a24",
+          "note": null,
+          "present": true,
+          "unchanged": true
+        },
+        {
+          "blob": "883625438e29019a89cb3b372d31012f4edd4ef8",
+          "commit": "cec9fd26ac858bdbcbdf03b5ee6b0ea246e3e02f",
+          "note": null,
+          "present": true,
+          "unchanged": true
+        },
+        {
+          "blob": null,
+          "commit": "2a9dda3d3d8ec567687bc3b61bf9cbde645c752c",
+          "note": "Source-only master intentionally absent from target delivery",
+          "present": false,
+          "unchanged": null
+        }
+      ]
+    },
+    {
+      "baseline_blob": "abcce67dd581023f3c62ddc820cf096bec1faf98",
+      "baseline_sha256": "60c54e6efbb8239c327b4d7c76660dc816535a1f5431bf7c3cbe9f2927a1adf0",
+      "inventory_blob": "abcce67dd581023f3c62ddc820cf096bec1faf98",
+      "inventory_equals_baseline": true,
+      "path": "assets/nino/travel-passport/gold/masters/gold-chapter-seal-v2.png",
+      "versions": [
+        {
+          "blob": "abcce67dd581023f3c62ddc820cf096bec1faf98",
+          "commit": "8a704cb23da97baf7197635df7fa12f06b864a24",
+          "note": null,
+          "present": true,
+          "unchanged": true
+        },
+        {
+          "blob": "abcce67dd581023f3c62ddc820cf096bec1faf98",
+          "commit": "cec9fd26ac858bdbcbdf03b5ee6b0ea246e3e02f",
+          "note": null,
+          "present": true,
+          "unchanged": true
+        },
+        {
+          "blob": null,
+          "commit": "2a9dda3d3d8ec567687bc3b61bf9cbde645c752c",
+          "note": "Source-only master intentionally absent from target delivery",
+          "present": false,
+          "unchanged": null
+        }
+      ]
+    },
+    {
+      "baseline_blob": "a5d90c6144388defca3153a37898147a26af54ee",
+      "baseline_sha256": "e94a76ab4c0220eead56e3f208dc539a71bae2f217ca7756939903bce024e3ca",
+      "inventory_blob": "a5d90c6144388defca3153a37898147a26af54ee",
+      "inventory_equals_baseline": true,
+      "path": "assets/nino/travel-passport/gold/masters/gold-esploratore-doro.png",
+      "versions": [
+        {
+          "blob": "a5d90c6144388defca3153a37898147a26af54ee",
+          "commit": "8a704cb23da97baf7197635df7fa12f06b864a24",
+          "note": null,
+          "present": true,
+          "unchanged": true
+        },
+        {
+          "blob": "a5d90c6144388defca3153a37898147a26af54ee",
+          "commit": "cec9fd26ac858bdbcbdf03b5ee6b0ea246e3e02f",
+          "note": null,
+          "present": true,
+          "unchanged": true
+        },
+        {
+          "blob": null,
+          "commit": "2a9dda3d3d8ec567687bc3b61bf9cbde645c752c",
+          "note": "Source-only master intentionally absent from target delivery",
+          "present": false,
+          "unchanged": null
+        }
+      ]
+    },
+    {
+      "baseline_blob": "67ad8e138db0ee7065088631dc24a64e8df80ab3",
+      "baseline_sha256": "36f1656b44f00c2eec477517d32de0b2067e42507131a110d424cc22d4c3e328",
+      "inventory_blob": "67ad8e138db0ee7065088631dc24a64e8df80ab3",
+      "inventory_equals_baseline": true,
+      "path": "assets/nino/travel-passport/postcards/masters/postcard-01-sicilia-front.png",
+      "versions": [
+        {
+          "blob": "67ad8e138db0ee7065088631dc24a64e8df80ab3",
+          "commit": "8a704cb23da97baf7197635df7fa12f06b864a24",
+          "note": null,
+          "present": true,
+          "unchanged": true
+        },
+        {
+          "blob": "67ad8e138db0ee7065088631dc24a64e8df80ab3",
+          "commit": "cec9fd26ac858bdbcbdf03b5ee6b0ea246e3e02f",
+          "note": null,
+          "present": true,
+          "unchanged": true
+        },
+        {
+          "blob": null,
+          "commit": "2a9dda3d3d8ec567687bc3b61bf9cbde645c752c",
+          "note": "Source-only master intentionally absent from target delivery",
+          "present": false,
+          "unchanged": null
+        }
+      ]
+    },
+    {
+      "baseline_blob": "6a1d40321949102eeb22f351a7c71a15c64019f0",
+      "baseline_sha256": "b06eb78fb5ad8e0116175317a98ab16ae88b251001adb40763c23d0c274ac4e3",
+      "inventory_blob": "6a1d40321949102eeb22f351a7c71a15c64019f0",
+      "inventory_equals_baseline": true,
+      "path": "assets/nino/travel-passport/postcards/masters/postcard-02-sardegna-front.png",
+      "versions": [
+        {
+          "blob": "6a1d40321949102eeb22f351a7c71a15c64019f0",
+          "commit": "8a704cb23da97baf7197635df7fa12f06b864a24",
+          "note": null,
+          "present": true,
+          "unchanged": true
+        },
+        {
+          "blob": "6a1d40321949102eeb22f351a7c71a15c64019f0",
+          "commit": "cec9fd26ac858bdbcbdf03b5ee6b0ea246e3e02f",
+          "note": null,
+          "present": true,
+          "unchanged": true
+        },
+        {
+          "blob": null,
+          "commit": "2a9dda3d3d8ec567687bc3b61bf9cbde645c752c",
+          "note": "Source-only master intentionally absent from target delivery",
+          "present": false,
+          "unchanged": null
+        }
+      ]
+    },
+    {
+      "baseline_blob": "6c316add1077d22f2c7512895188c38684a84a63",
+      "baseline_sha256": "822ada426bf732273738bcdb1f9bbc2466beb2bd2d5c8b6c29b5815d807910ab",
+      "inventory_blob": "6c316add1077d22f2c7512895188c38684a84a63",
+      "inventory_equals_baseline": true,
+      "path": "assets/nino/travel-passport/postcards/masters/postcard-03-napoli-vesuvio-front.png",
+      "versions": [
+        {
+          "blob": "6c316add1077d22f2c7512895188c38684a84a63",
+          "commit": "8a704cb23da97baf7197635df7fa12f06b864a24",
+          "note": null,
+          "present": true,
+          "unchanged": true
+        },
+        {
+          "blob": "6c316add1077d22f2c7512895188c38684a84a63",
+          "commit": "cec9fd26ac858bdbcbdf03b5ee6b0ea246e3e02f",
+          "note": null,
+          "present": true,
+          "unchanged": true
+        },
+        {
+          "blob": null,
+          "commit": "2a9dda3d3d8ec567687bc3b61bf9cbde645c752c",
+          "note": "Source-only master intentionally absent from target delivery",
+          "present": false,
+          "unchanged": null
+        }
+      ]
+    },
+    {
+      "baseline_blob": "47b7c616d0a2ca8956a3d302c0c1a270f2320bf0",
+      "baseline_sha256": "3228aeb85ca52d214378f287ba5fb63be42c40966074bd98a5d2548f858359e6",
+      "inventory_blob": "47b7c616d0a2ca8956a3d302c0c1a270f2320bf0",
+      "inventory_equals_baseline": true,
+      "path": "assets/nino/travel-passport/postcards/masters/postcard-04-venezia-front.png",
+      "versions": [
+        {
+          "blob": "47b7c616d0a2ca8956a3d302c0c1a270f2320bf0",
+          "commit": "8a704cb23da97baf7197635df7fa12f06b864a24",
+          "note": null,
+          "present": true,
+          "unchanged": true
+        },
+        {
+          "blob": "47b7c616d0a2ca8956a3d302c0c1a270f2320bf0",
+          "commit": "cec9fd26ac858bdbcbdf03b5ee6b0ea246e3e02f",
+          "note": null,
+          "present": true,
+          "unchanged": true
+        },
+        {
+          "blob": "47b7c616d0a2ca8956a3d302c0c1a270f2320bf0",
+          "commit": "2a9dda3d3d8ec567687bc3b61bf9cbde645c752c",
+          "note": null,
+          "present": true,
+          "unchanged": true
+        }
+      ]
+    },
+    {
+      "baseline_blob": "457f51b79d6f2139b5eec96163fe0ee07b136c26",
+      "baseline_sha256": "67450c16303c2da9d0c7d1e690554b163ce1c8c720a3244abee17c3440a3ed86",
+      "inventory_blob": "457f51b79d6f2139b5eec96163fe0ee07b136c26",
+      "inventory_equals_baseline": true,
+      "path": "assets/nino/travel-passport/postcards/masters/postcard-05-universal-reverse.png",
+      "versions": [
+        {
+          "blob": "457f51b79d6f2139b5eec96163fe0ee07b136c26",
+          "commit": "8a704cb23da97baf7197635df7fa12f06b864a24",
+          "note": null,
+          "present": true,
+          "unchanged": true
+        },
+        {
+          "blob": "457f51b79d6f2139b5eec96163fe0ee07b136c26",
+          "commit": "cec9fd26ac858bdbcbdf03b5ee6b0ea246e3e02f",
+          "note": null,
+          "present": true,
+          "unchanged": true
+        },
+        {
+          "blob": null,
+          "commit": "2a9dda3d3d8ec567687bc3b61bf9cbde645c752c",
+          "note": "Source-only master intentionally absent from target delivery",
+          "present": false,
+          "unchanged": null
+        }
+      ]
+    },
+    {
+      "baseline_blob": "af0838cf82f55fe02b4e7cd1853af0d106cde400",
+      "baseline_sha256": "cb1bd16d983ac570c727eeab31f6dbce2392af2a6dc55c14418908835ad5ae56",
+      "inventory_blob": "af0838cf82f55fe02b4e7cd1853af0d106cde400",
+      "inventory_equals_baseline": true,
+      "path": "assets/nino/travel-passport/stamps/masters/stamp-01-firenze.png",
+      "versions": [
+        {
+          "blob": "af0838cf82f55fe02b4e7cd1853af0d106cde400",
+          "commit": "8a704cb23da97baf7197635df7fa12f06b864a24",
+          "note": null,
+          "present": true,
+          "unchanged": true
+        },
+        {
+          "blob": "af0838cf82f55fe02b4e7cd1853af0d106cde400",
+          "commit": "cec9fd26ac858bdbcbdf03b5ee6b0ea246e3e02f",
+          "note": null,
+          "present": true,
+          "unchanged": true
+        },
+        {
+          "blob": null,
+          "commit": "2a9dda3d3d8ec567687bc3b61bf9cbde645c752c",
+          "note": "Source-only master intentionally absent from target delivery",
+          "present": false,
+          "unchanged": null
+        }
+      ]
+    },
+    {
+      "baseline_blob": "bbd4c47cca9c2b7004dd3a84f11ab410f3c56d32",
+      "baseline_sha256": "19c8e75708e6fbfbf0ff8fffcd6d172008a7069610a235f843f6985db9628a27",
+      "inventory_blob": "bbd4c47cca9c2b7004dd3a84f11ab410f3c56d32",
+      "inventory_equals_baseline": true,
+      "path": "assets/nino/travel-passport/stamps/masters/stamp-02-roma.png",
+      "versions": [
+        {
+          "blob": "bbd4c47cca9c2b7004dd3a84f11ab410f3c56d32",
+          "commit": "8a704cb23da97baf7197635df7fa12f06b864a24",
+          "note": null,
+          "present": true,
+          "unchanged": true
+        },
+        {
+          "blob": "bbd4c47cca9c2b7004dd3a84f11ab410f3c56d32",
+          "commit": "cec9fd26ac858bdbcbdf03b5ee6b0ea246e3e02f",
+          "note": null,
+          "present": true,
+          "unchanged": true
+        },
+        {
+          "blob": null,
+          "commit": "2a9dda3d3d8ec567687bc3b61bf9cbde645c752c",
+          "note": "Source-only master intentionally absent from target delivery",
+          "present": false,
+          "unchanged": null
+        }
+      ]
+    },
+    {
+      "baseline_blob": "1a1ab1125b275ea2c72af8d965e9eb213507b082",
+      "baseline_sha256": "d00d7e3fd8aa88dac971c204959a1d21b8986a15b14b8247da7c4a8bb36b6ab1",
+      "inventory_blob": "1a1ab1125b275ea2c72af8d965e9eb213507b082",
+      "inventory_equals_baseline": true,
+      "path": "assets/nino/travel-passport/stamps/masters/stamp-03-borghi.png",
+      "versions": [
+        {
+          "blob": "1a1ab1125b275ea2c72af8d965e9eb213507b082",
+          "commit": "8a704cb23da97baf7197635df7fa12f06b864a24",
+          "note": null,
+          "present": true,
+          "unchanged": true
+        },
+        {
+          "blob": "1a1ab1125b275ea2c72af8d965e9eb213507b082",
+          "commit": "cec9fd26ac858bdbcbdf03b5ee6b0ea246e3e02f",
+          "note": null,
+          "present": true,
+          "unchanged": true
+        },
+        {
+          "blob": null,
+          "commit": "2a9dda3d3d8ec567687bc3b61bf9cbde645c752c",
+          "note": "Source-only master intentionally absent from target delivery",
+          "present": false,
+          "unchanged": null
+        }
+      ]
+    },
+    {
+      "baseline_blob": "eae8cd16592752af702c6207fc3d91e554d1f1ed",
+      "baseline_sha256": "ddcb8076932f0259ccfa61af8b4ca7836b407fa49973560f4a89b0833ee8fdf4",
+      "inventory_blob": "eae8cd16592752af702c6207fc3d91e554d1f1ed",
+      "inventory_equals_baseline": true,
+      "path": "assets/nino/travel-passport/stamps/masters/stamp-04-liguria.png",
+      "versions": [
+        {
+          "blob": "eae8cd16592752af702c6207fc3d91e554d1f1ed",
+          "commit": "8a704cb23da97baf7197635df7fa12f06b864a24",
+          "note": null,
+          "present": true,
+          "unchanged": true
+        },
+        {
+          "blob": "eae8cd16592752af702c6207fc3d91e554d1f1ed",
+          "commit": "cec9fd26ac858bdbcbdf03b5ee6b0ea246e3e02f",
+          "note": null,
+          "present": true,
+          "unchanged": true
+        },
+        {
+          "blob": null,
+          "commit": "2a9dda3d3d8ec567687bc3b61bf9cbde645c752c",
+          "note": "Source-only master intentionally absent from target delivery",
+          "present": false,
+          "unchanged": null
+        }
+      ]
+    },
+    {
+      "baseline_blob": "d3409e8f9c2c3ae919c6bb6cfd11d5b23b27e54b",
+      "baseline_sha256": "91b9ed25d5255b784d447080df16f2e644937f05b37bb94d08235312ee54fb50",
+      "inventory_blob": "d3409e8f9c2c3ae919c6bb6cfd11d5b23b27e54b",
+      "inventory_equals_baseline": true,
+      "path": "assets/nino/travel-passport/stamps/masters/stamp-05-isole.png",
+      "versions": [
+        {
+          "blob": "d3409e8f9c2c3ae919c6bb6cfd11d5b23b27e54b",
+          "commit": "8a704cb23da97baf7197635df7fa12f06b864a24",
+          "note": null,
+          "present": true,
+          "unchanged": true
+        },
+        {
+          "blob": "d3409e8f9c2c3ae919c6bb6cfd11d5b23b27e54b",
+          "commit": "cec9fd26ac858bdbcbdf03b5ee6b0ea246e3e02f",
+          "note": null,
+          "present": true,
+          "unchanged": true
+        },
+        {
+          "blob": null,
+          "commit": "2a9dda3d3d8ec567687bc3b61bf9cbde645c752c",
+          "note": "Source-only master intentionally absent from target delivery",
+          "present": false,
+          "unchanged": null
+        }
+      ]
+    },
+    {
+      "baseline_blob": "b405bee2557eddaee9f419f797934174aa5dec4e",
+      "baseline_sha256": "aad87d7b6c7eddfcd9b1996301f714da19421e6005c449b847b7fa9a957a16cf",
+      "inventory_blob": "b405bee2557eddaee9f419f797934174aa5dec4e",
+      "inventory_equals_baseline": true,
+      "path": "assets/nino/travel-passport/stamps/masters/stamp-06-dolomiti.png",
+      "versions": [
+        {
+          "blob": "b405bee2557eddaee9f419f797934174aa5dec4e",
+          "commit": "8a704cb23da97baf7197635df7fa12f06b864a24",
+          "note": null,
+          "present": true,
+          "unchanged": true
+        },
+        {
+          "blob": "b405bee2557eddaee9f419f797934174aa5dec4e",
+          "commit": "cec9fd26ac858bdbcbdf03b5ee6b0ea246e3e02f",
+          "note": null,
+          "present": true,
+          "unchanged": true
+        },
+        {
+          "blob": null,
+          "commit": "2a9dda3d3d8ec567687bc3b61bf9cbde645c752c",
+          "note": "Source-only master intentionally absent from target delivery",
+          "present": false,
+          "unchanged": null
+        }
+      ]
+    },
+    {
+      "baseline_blob": "c9b7169812f88d7d6a3bbf61e467eb4b16fa8e74",
+      "baseline_sha256": "443d97af3411e56c139e6e6397ba9a474748c227e4325006820cc0d6dd0957b4",
+      "inventory_blob": "c9b7169812f88d7d6a3bbf61e467eb4b16fa8e74",
+      "inventory_equals_baseline": true,
+      "path": "assets/nino/travel-passport/stamps/masters/stamp-07-etna.png",
+      "versions": [
+        {
+          "blob": "c9b7169812f88d7d6a3bbf61e467eb4b16fa8e74",
+          "commit": "8a704cb23da97baf7197635df7fa12f06b864a24",
+          "note": null,
+          "present": true,
+          "unchanged": true
+        },
+        {
+          "blob": "c9b7169812f88d7d6a3bbf61e467eb4b16fa8e74",
+          "commit": "cec9fd26ac858bdbcbdf03b5ee6b0ea246e3e02f",
+          "note": null,
+          "present": true,
+          "unchanged": true
+        },
+        {
+          "blob": null,
+          "commit": "2a9dda3d3d8ec567687bc3b61bf9cbde645c752c",
+          "note": "Source-only master intentionally absent from target delivery",
+          "present": false,
+          "unchanged": null
+        }
+      ]
+    },
+    {
+      "baseline_blob": "f56a2efd70befb6e98db89f6d4e50b568d02b06e",
+      "baseline_sha256": "d12eaa8ff6804ccb280e029ee351ac0c435b2c35db141ad8dd85f46c533cb61b",
+      "inventory_blob": "f56a2efd70befb6e98db89f6d4e50b568d02b06e",
+      "inventory_equals_baseline": true,
+      "path": "assets/nino/travel-passport/stamps/masters/stamp-08-toscana.png",
+      "versions": [
+        {
+          "blob": "f56a2efd70befb6e98db89f6d4e50b568d02b06e",
+          "commit": "8a704cb23da97baf7197635df7fa12f06b864a24",
+          "note": null,
+          "present": true,
+          "unchanged": true
+        },
+        {
+          "blob": "f56a2efd70befb6e98db89f6d4e50b568d02b06e",
+          "commit": "cec9fd26ac858bdbcbdf03b5ee6b0ea246e3e02f",
+          "note": null,
+          "present": true,
+          "unchanged": true
+        },
+        {
+          "blob": null,
+          "commit": "2a9dda3d3d8ec567687bc3b61bf9cbde645c752c",
+          "note": "Source-only master intentionally absent from target delivery",
+          "present": false,
+          "unchanged": null
+        }
+      ]
+    },
+    {
+      "baseline_blob": "646bfdea8afffaaaee43767ee18d007ee5a6d347",
+      "baseline_sha256": "e884445aeb1c06795bb2fb78f7ba329a71eba922832a6a3e745849eb0d71ae4c",
+      "inventory_blob": "646bfdea8afffaaaee43767ee18d007ee5a6d347",
+      "inventory_equals_baseline": true,
+      "path": "assets/nino/travel-passport/stamps/masters/stamp-09-confine-italia.png",
+      "versions": [
+        {
+          "blob": "646bfdea8afffaaaee43767ee18d007ee5a6d347",
+          "commit": "8a704cb23da97baf7197635df7fa12f06b864a24",
+          "note": null,
+          "present": true,
+          "unchanged": true
+        },
+        {
+          "blob": "646bfdea8afffaaaee43767ee18d007ee5a6d347",
+          "commit": "cec9fd26ac858bdbcbdf03b5ee6b0ea246e3e02f",
+          "note": null,
+          "present": true,
+          "unchanged": true
+        },
+        {
+          "blob": null,
+          "commit": "2a9dda3d3d8ec567687bc3b61bf9cbde645c752c",
+          "note": "Source-only master intentionally absent from target delivery",
+          "present": false,
+          "unchanged": null
+        }
+      ]
+    },
+    {
+      "baseline_blob": "f2f3a3e0b4585a218734423e66a6fa5fd97ad873",
+      "baseline_sha256": "9dc89b2b82a018c830991aeace67d296990397b3bc61793292827cca08ba3249",
+      "inventory_blob": "f2f3a3e0b4585a218734423e66a6fa5fd97ad873",
+      "inventory_equals_baseline": true,
+      "path": "assets/nino/travel-passport/stamps/masters/stamp-10-mari.png",
+      "versions": [
+        {
+          "blob": "f2f3a3e0b4585a218734423e66a6fa5fd97ad873",
+          "commit": "8a704cb23da97baf7197635df7fa12f06b864a24",
+          "note": null,
+          "present": true,
+          "unchanged": true
+        },
+        {
+          "blob": "f2f3a3e0b4585a218734423e66a6fa5fd97ad873",
+          "commit": "cec9fd26ac858bdbcbdf03b5ee6b0ea246e3e02f",
+          "note": null,
+          "present": true,
+          "unchanged": true
+        },
+        {
+          "blob": null,
+          "commit": "2a9dda3d3d8ec567687bc3b61bf9cbde645c752c",
+          "note": "Source-only master intentionally absent from target delivery",
+          "present": false,
+          "unchanged": null
+        }
+      ]
+    },
+    {
+      "baseline_blob": "0a7507873502a52bb9ec42d7dfbc36ba8418cd1b",
+      "baseline_sha256": "d79bc297171fabbf426968d36d7c1193b9adde65033a1b26fe84ccae158df06e",
+      "inventory_blob": "0a7507873502a52bb9ec42d7dfbc36ba8418cd1b",
+      "inventory_equals_baseline": true,
+      "path": "assets/nino/travel-passport/stamps/masters/stamp-11-fiumi.png",
+      "versions": [
+        {
+          "blob": "0a7507873502a52bb9ec42d7dfbc36ba8418cd1b",
+          "commit": "8a704cb23da97baf7197635df7fa12f06b864a24",
+          "note": null,
+          "present": true,
+          "unchanged": true
+        },
+        {
+          "blob": "0a7507873502a52bb9ec42d7dfbc36ba8418cd1b",
+          "commit": "cec9fd26ac858bdbcbdf03b5ee6b0ea246e3e02f",
+          "note": null,
+          "present": true,
+          "unchanged": true
+        },
+        {
+          "blob": null,
+          "commit": "2a9dda3d3d8ec567687bc3b61bf9cbde645c752c",
+          "note": "Source-only master intentionally absent from target delivery",
+          "present": false,
+          "unchanged": null
+        }
+      ]
+    }
+  ],
+  "note": "Absent target source-only masters are not a claim that the target contains twenty files. ART/PR66 plus inventory preserve all twenty."
+}

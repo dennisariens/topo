@@ -1,0 +1,8 @@
+{
+  "status": "PASS",
+  "version": "27.2",
+  "cases": 7,
+  "network": [],
+  "errors": [],
+  "unexpectedConsoleErrors": []
+}

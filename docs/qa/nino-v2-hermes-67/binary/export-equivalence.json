@@ -1,0 +1,576 @@
+{
+  "comparisons": [
+    {
+      "alpha_equal": true,
+      "bytes_equal": true,
+      "changed_RGBA_pixels": 0,
+      "changed_RGB_pixels": 0,
+      "changed_alpha_pixels": 0,
+      "changed_visible_RGBA_pixels": 0,
+      "decoded_RGBA_equal": true,
+      "destination": "assets/nino/travel-passport/gold/exports/gold-chapter-seal-v2-native.png",
+      "invisible_RGB_only_changed_pixels": 0,
+      "pass": true,
+      "reference": "native source",
+      "size": [
+        1254,
+        1254
+      ],
+      "source": "assets/nino/travel-passport/gold/masters/gold-chapter-seal-v2.png",
+      "visible_RGBA_equal": true
+    },
+    {
+      "alpha_equal": true,
+      "bytes_equal": false,
+      "changed_RGBA_pixels": 0,
+      "changed_RGB_pixels": 0,
+      "changed_alpha_pixels": 0,
+      "changed_visible_RGBA_pixels": 0,
+      "decoded_RGBA_equal": true,
+      "destination": "assets/nino/travel-passport/gold/exports/gold-chapter-seal-v2-native.webp",
+      "invisible_RGB_only_changed_pixels": 0,
+      "pass": true,
+      "reference": "native source",
+      "size": [
+        1254,
+        1254
+      ],
+      "source": "assets/nino/travel-passport/gold/masters/gold-chapter-seal-v2.png",
+      "visible_RGBA_equal": true
+    },
+    {
+      "alpha_equal": true,
+      "bytes_equal": false,
+      "changed_RGBA_pixels": 0,
+      "changed_RGB_pixels": 0,
+      "changed_alpha_pixels": 0,
+      "changed_visible_RGBA_pixels": 0,
+      "decoded_RGBA_equal": true,
+      "destination": "assets/nino/travel-passport/gold/exports/gold-chapter-seal-v2-64.png",
+      "invisible_RGB_only_changed_pixels": 0,
+      "pass": true,
+      "reference": "independent Pillow RGBA LANCZOS directly from master",
+      "size": [
+        64,
+        64
+      ],
+      "source": "assets/nino/travel-passport/gold/masters/gold-chapter-seal-v2.png",
+      "visible_RGBA_equal": true
+    },
+    {
+      "alpha_equal": true,
+      "bytes_equal": false,
+      "changed_RGBA_pixels": 0,
+      "changed_RGB_pixels": 0,
+      "changed_alpha_pixels": 0,
+      "changed_visible_RGBA_pixels": 0,
+      "decoded_RGBA_equal": true,
+      "destination": "assets/nino/travel-passport/gold/exports/gold-chapter-seal-v2-64.webp",
+      "invisible_RGB_only_changed_pixels": 0,
+      "pass": true,
+      "reference": "independent Pillow RGBA LANCZOS directly from master",
+      "size": [
+        64,
+        64
+      ],
+      "source": "assets/nino/travel-passport/gold/masters/gold-chapter-seal-v2.png",
+      "visible_RGBA_equal": true
+    },
+    {
+      "alpha_equal": true,
+      "bytes_equal": false,
+      "changed_RGBA_pixels": 0,
+      "changed_RGB_pixels": 0,
+      "changed_alpha_pixels": 0,
+      "changed_visible_RGBA_pixels": 0,
+      "decoded_RGBA_equal": true,
+      "destination": "assets/nino/travel-passport/gold/exports/gold-chapter-seal-v2-128.png",
+      "invisible_RGB_only_changed_pixels": 0,
+      "pass": true,
+      "reference": "independent Pillow RGBA LANCZOS directly from master",
+      "size": [
+        128,
+        128
+      ],
+      "source": "assets/nino/travel-passport/gold/masters/gold-chapter-seal-v2.png",
+      "visible_RGBA_equal": true
+    },
+    {
+      "alpha_equal": true,
+      "bytes_equal": false,
+      "changed_RGBA_pixels": 0,
+      "changed_RGB_pixels": 0,
+      "changed_alpha_pixels": 0,
+      "changed_visible_RGBA_pixels": 0,
+      "decoded_RGBA_equal": true,
+      "destination": "assets/nino/travel-passport/gold/exports/gold-chapter-seal-v2-128.webp",
+      "invisible_RGB_only_changed_pixels": 0,
+      "pass": true,
+      "reference": "independent Pillow RGBA LANCZOS directly from master",
+      "size": [
+        128,
+        128
+      ],
+      "source": "assets/nino/travel-passport/gold/masters/gold-chapter-seal-v2.png",
+      "visible_RGBA_equal": true
+    },
+    {
+      "alpha_equal": true,
+      "bytes_equal": true,
+      "changed_RGBA_pixels": 0,
+      "changed_RGB_pixels": 0,
+      "changed_alpha_pixels": 0,
+      "changed_visible_RGBA_pixels": 0,
+      "decoded_RGBA_equal": true,
+      "destination": "assets/nino/travel-passport/gold/exports/gold-esploratore-doro-native.png",
+      "invisible_RGB_only_changed_pixels": 0,
+      "pass": true,
+      "reference": "native source",
+      "size": [
+        1254,
+        1254
+      ],
+      "source": "assets/nino/travel-passport/gold/masters/gold-esploratore-doro.png",
+      "visible_RGBA_equal": true
+    },
+    {
+      "alpha_equal": true,
+      "bytes_equal": false,
+      "changed_RGBA_pixels": 0,
+      "changed_RGB_pixels": 0,
+      "changed_alpha_pixels": 0,
+      "changed_visible_RGBA_pixels": 0,
+      "decoded_RGBA_equal": true,
+      "destination": "assets/nino/travel-passport/gold/exports/gold-esploratore-doro-native.webp",
+      "invisible_RGB_only_changed_pixels": 0,
+      "pass": true,
+      "reference": "native source",
+      "size": [
+        1254,
+        1254
+      ],
+      "source": "assets/nino/travel-passport/gold/masters/gold-esploratore-doro.png",
+      "visible_RGBA_equal": true
+    },
+    {
+      "alpha_equal": true,
+      "bytes_equal": false,
+      "changed_RGBA_pixels": 0,
+      "changed_RGB_pixels": 0,
+      "changed_alpha_pixels": 0,
+      "changed_visible_RGBA_pixels": 0,
+      "decoded_RGBA_equal": true,
+      "destination": "assets/nino/travel-passport/gold/exports/gold-esploratore-doro-240.png",
+      "invisible_RGB_only_changed_pixels": 0,
+      "pass": true,
+      "reference": "independent Pillow RGBA LANCZOS directly from master",
+      "size": [
+        240,
+        240
+      ],
+      "source": "assets/nino/travel-passport/gold/masters/gold-esploratore-doro.png",
+      "visible_RGBA_equal": true
+    },
+    {
+      "alpha_equal": true,
+      "bytes_equal": false,
+      "changed_RGBA_pixels": 0,
+      "changed_RGB_pixels": 0,
+      "changed_alpha_pixels": 0,
+      "changed_visible_RGBA_pixels": 0,
+      "decoded_RGBA_equal": true,
+      "destination": "assets/nino/travel-passport/gold/exports/gold-esploratore-doro-240.webp",
+      "invisible_RGB_only_changed_pixels": 0,
+      "pass": true,
+      "reference": "independent Pillow RGBA LANCZOS directly from master",
+      "size": [
+        240,
+        240
+      ],
+      "source": "assets/nino/travel-passport/gold/masters/gold-esploratore-doro.png",
+      "visible_RGBA_equal": true
+    },
+    {
+      "alpha_equal": true,
+      "bytes_equal": false,
+      "changed_RGBA_pixels": 0,
+      "changed_RGB_pixels": 0,
+      "changed_alpha_pixels": 0,
+      "changed_visible_RGBA_pixels": 0,
+      "decoded_RGBA_equal": true,
+      "destination": "assets/nino/travel-passport/gold/exports/gold-esploratore-doro-480.png",
+      "invisible_RGB_only_changed_pixels": 0,
+      "pass": true,
+      "reference": "independent Pillow RGBA LANCZOS directly from master",
+      "size": [
+        480,
+        480
+      ],
+      "source": "assets/nino/travel-passport/gold/masters/gold-esploratore-doro.png",
+      "visible_RGBA_equal": true
+    },
+    {
+      "alpha_equal": true,
+      "bytes_equal": false,
+      "changed_RGBA_pixels": 0,
+      "changed_RGB_pixels": 0,
+      "changed_alpha_pixels": 0,
+      "changed_visible_RGBA_pixels": 0,
+      "decoded_RGBA_equal": true,
+      "destination": "assets/nino/travel-passport/gold/exports/gold-esploratore-doro-480.webp",
+      "invisible_RGB_only_changed_pixels": 0,
+      "pass": true,
+      "reference": "independent Pillow RGBA LANCZOS directly from master",
+      "size": [
+        480,
+        480
+      ],
+      "source": "assets/nino/travel-passport/gold/masters/gold-esploratore-doro.png",
+      "visible_RGBA_equal": true
+    },
+    {
+      "alpha_equal": true,
+      "bytes_equal": false,
+      "changed_RGBA_pixels": 0,
+      "changed_RGB_pixels": 0,
+      "changed_alpha_pixels": 0,
+      "changed_visible_RGBA_pixels": 0,
+      "decoded_RGBA_equal": true,
+      "destination": "assets/nino/travel-passport/stamps/exports/stamp-05-isole.webp",
+      "invisible_RGB_only_changed_pixels": 0,
+      "pass": true,
+      "reference": "native source",
+      "size": [
+        1254,
+        1254
+      ],
+      "source": "assets/nino/travel-passport/stamps/rework/stamp-05-isole-geography-candidate.png",
+      "visible_RGBA_equal": true
+    },
+    {
+      "alpha_equal": true,
+      "bytes_equal": false,
+      "changed_RGBA_pixels": 0,
+      "changed_RGB_pixels": 0,
+      "changed_alpha_pixels": 0,
+      "changed_visible_RGBA_pixels": 0,
+      "decoded_RGBA_equal": true,
+      "destination": "assets/nino/travel-passport/arrivo/exports/arrivo-travel.webp",
+      "invisible_RGB_only_changed_pixels": 0,
+      "pass": true,
+      "reference": "native source",
+      "size": [
+        1536,
+        1536
+      ],
+      "source": "assets/nino/travel-passport/arrivo/qa-candidates/arrivo-travel-ink-preview.png",
+      "visible_RGBA_equal": true
+    },
+    {
+      "alpha_equal": true,
+      "bytes_equal": true,
+      "changed_RGBA_pixels": 0,
+      "changed_RGB_pixels": 0,
+      "changed_alpha_pixels": 0,
+      "changed_visible_RGBA_pixels": 0,
+      "decoded_RGBA_equal": true,
+      "destination": "assets/nino/travel-passport/book/exports/passport-blank-folio-left-alpha-normalized.webp",
+      "invisible_RGB_only_changed_pixels": 0,
+      "pass": true,
+      "reference": "native source",
+      "size": [
+        1086,
+        1448
+      ],
+      "source": "assets/nino/travel-passport/book/qa-candidates/passport-blank-folio-left-alpha-normalized.webp",
+      "visible_RGBA_equal": true
+    },
+    {
+      "alpha_equal": true,
+      "bytes_equal": true,
+      "changed_RGBA_pixels": 0,
+      "changed_RGB_pixels": 0,
+      "changed_alpha_pixels": 0,
+      "changed_visible_RGBA_pixels": 0,
+      "decoded_RGBA_equal": true,
+      "destination": "assets/nino/travel-passport/book/exports/passport-blank-folio-right-alpha-normalized.webp",
+      "invisible_RGB_only_changed_pixels": 0,
+      "pass": true,
+      "reference": "native source",
+      "size": [
+        1086,
+        1448
+      ],
+      "source": "assets/nino/travel-passport/book/qa-candidates/passport-blank-folio-right-alpha-normalized.webp",
+      "visible_RGBA_equal": true
+    },
+    {
+      "alpha_equal": true,
+      "bytes_equal": false,
+      "changed_RGBA_pixels": 0,
+      "changed_RGB_pixels": 0,
+      "changed_alpha_pixels": 0,
+      "changed_visible_RGBA_pixels": 0,
+      "decoded_RGBA_equal": true,
+      "destination": "assets/nino/travel-passport/postcards/exports/postcard-01-sicilia-front.webp",
+      "invisible_RGB_only_changed_pixels": 0,
+      "pass": true,
+      "reference": "native source",
+      "size": [
+        1536,
+        1024
+      ],
+      "source": "assets/nino/travel-passport/postcards/masters/postcard-01-sicilia-front.png",
+      "visible_RGBA_equal": true
+    },
+    {
+      "alpha_equal": true,
+      "bytes_equal": false,
+      "changed_RGBA_pixels": 0,
+      "changed_RGB_pixels": 0,
+      "changed_alpha_pixels": 0,
+      "changed_visible_RGBA_pixels": 0,
+      "decoded_RGBA_equal": true,
+      "destination": "assets/nino/travel-passport/postcards/exports/postcard-02-sardegna-front.webp",
+      "invisible_RGB_only_changed_pixels": 0,
+      "pass": true,
+      "reference": "native source",
+      "size": [
+        1536,
+        1024
+      ],
+      "source": "assets/nino/travel-passport/postcards/masters/postcard-02-sardegna-front.png",
+      "visible_RGBA_equal": true
+    },
+    {
+      "alpha_equal": true,
+      "bytes_equal": false,
+      "changed_RGBA_pixels": 0,
+      "changed_RGB_pixels": 0,
+      "changed_alpha_pixels": 0,
+      "changed_visible_RGBA_pixels": 0,
+      "decoded_RGBA_equal": true,
+      "destination": "assets/nino/travel-passport/postcards/exports/postcard-03-napoli-vesuvio-front.webp",
+      "invisible_RGB_only_changed_pixels": 0,
+      "pass": true,
+      "reference": "native source",
+      "size": [
+        1536,
+        1024
+      ],
+      "source": "assets/nino/travel-passport/postcards/masters/postcard-03-napoli-vesuvio-front.png",
+      "visible_RGBA_equal": true
+    },
+    {
+      "alpha_equal": true,
+      "bytes_equal": false,
+      "changed_RGBA_pixels": 0,
+      "changed_RGB_pixels": 0,
+      "changed_alpha_pixels": 0,
+      "changed_visible_RGBA_pixels": 0,
+      "decoded_RGBA_equal": true,
+      "destination": "assets/nino/travel-passport/postcards/exports/postcard-05-universal-reverse.webp",
+      "invisible_RGB_only_changed_pixels": 0,
+      "pass": true,
+      "reference": "native source",
+      "size": [
+        1536,
+        1024
+      ],
+      "source": "assets/nino/travel-passport/postcards/masters/postcard-05-universal-reverse.png",
+      "visible_RGBA_equal": true
+    },
+    {
+      "alpha_equal": true,
+      "bytes_equal": true,
+      "changed_RGBA_pixels": 0,
+      "changed_RGB_pixels": 0,
+      "changed_alpha_pixels": 0,
+      "changed_visible_RGBA_pixels": 0,
+      "decoded_RGBA_equal": true,
+      "destination": "assets/nino/travel-passport/stamps/exports/stamp-01-firenze.webp",
+      "invisible_RGB_only_changed_pixels": 0,
+      "pass": true,
+      "reference": "native source",
+      "size": [
+        768,
+        768
+      ],
+      "source": "assets/nino/travel-passport/stamps/qa-candidates/stamp-01-firenze-ink-preview.webp",
+      "visible_RGBA_equal": true
+    },
+    {
+      "alpha_equal": true,
+      "bytes_equal": true,
+      "changed_RGBA_pixels": 0,
+      "changed_RGB_pixels": 0,
+      "changed_alpha_pixels": 0,
+      "changed_visible_RGBA_pixels": 0,
+      "decoded_RGBA_equal": true,
+      "destination": "assets/nino/travel-passport/stamps/exports/stamp-02-roma.webp",
+      "invisible_RGB_only_changed_pixels": 0,
+      "pass": true,
+      "reference": "native source",
+      "size": [
+        768,
+        512
+      ],
+      "source": "assets/nino/travel-passport/stamps/qa-candidates/stamp-02-roma-ink-preview.webp",
+      "visible_RGBA_equal": true
+    },
+    {
+      "alpha_equal": true,
+      "bytes_equal": true,
+      "changed_RGBA_pixels": 0,
+      "changed_RGB_pixels": 0,
+      "changed_alpha_pixels": 0,
+      "changed_visible_RGBA_pixels": 0,
+      "decoded_RGBA_equal": true,
+      "destination": "assets/nino/travel-passport/stamps/exports/stamp-03-borghi.webp",
+      "invisible_RGB_only_changed_pixels": 0,
+      "pass": true,
+      "reference": "native source",
+      "size": [
+        768,
+        768
+      ],
+      "source": "assets/nino/travel-passport/stamps/qa-candidates/stamp-03-borghi-ink-preview.webp",
+      "visible_RGBA_equal": true
+    },
+    {
+      "alpha_equal": true,
+      "bytes_equal": true,
+      "changed_RGBA_pixels": 0,
+      "changed_RGB_pixels": 0,
+      "changed_alpha_pixels": 0,
+      "changed_visible_RGBA_pixels": 0,
+      "decoded_RGBA_equal": true,
+      "destination": "assets/nino/travel-passport/stamps/exports/stamp-04-liguria.webp",
+      "invisible_RGB_only_changed_pixels": 0,
+      "pass": true,
+      "reference": "native source",
+      "size": [
+        768,
+        768
+      ],
+      "source": "assets/nino/travel-passport/stamps/qa-candidates/stamp-04-liguria-ink-preview.webp",
+      "visible_RGBA_equal": true
+    },
+    {
+      "alpha_equal": true,
+      "bytes_equal": true,
+      "changed_RGBA_pixels": 0,
+      "changed_RGB_pixels": 0,
+      "changed_alpha_pixels": 0,
+      "changed_visible_RGBA_pixels": 0,
+      "decoded_RGBA_equal": true,
+      "destination": "assets/nino/travel-passport/stamps/exports/stamp-06-dolomiti.webp",
+      "invisible_RGB_only_changed_pixels": 0,
+      "pass": true,
+      "reference": "native source",
+      "size": [
+        768,
+        768
+      ],
+      "source": "assets/nino/travel-passport/stamps/qa-candidates/stamp-06-dolomiti-ink-preview.webp",
+      "visible_RGBA_equal": true
+    },
+    {
+      "alpha_equal": true,
+      "bytes_equal": true,
+      "changed_RGBA_pixels": 0,
+      "changed_RGB_pixels": 0,
+      "changed_alpha_pixels": 0,
+      "changed_visible_RGBA_pixels": 0,
+      "decoded_RGBA_equal": true,
+      "destination": "assets/nino/travel-passport/stamps/exports/stamp-07-etna.webp",
+      "invisible_RGB_only_changed_pixels": 0,
+      "pass": true,
+      "reference": "native source",
+      "size": [
+        768,
+        768
+      ],
+      "source": "assets/nino/travel-passport/stamps/qa-candidates/stamp-07-etna-ink-preview.webp",
+      "visible_RGBA_equal": true
+    },
+    {
+      "alpha_equal": true,
+      "bytes_equal": true,
+      "changed_RGBA_pixels": 0,
+      "changed_RGB_pixels": 0,
+      "changed_alpha_pixels": 0,
+      "changed_visible_RGBA_pixels": 0,
+      "decoded_RGBA_equal": true,
+      "destination": "assets/nino/travel-passport/stamps/exports/stamp-08-toscana.webp",
+      "invisible_RGB_only_changed_pixels": 0,
+      "pass": true,
+      "reference": "native source",
+      "size": [
+        768,
+        512
+      ],
+      "source": "assets/nino/travel-passport/stamps/qa-candidates/stamp-08-toscana-ink-preview.webp",
+      "visible_RGBA_equal": true
+    },
+    {
+      "alpha_equal": true,
+      "bytes_equal": true,
+      "changed_RGBA_pixels": 0,
+      "changed_RGB_pixels": 0,
+      "changed_alpha_pixels": 0,
+      "changed_visible_RGBA_pixels": 0,
+      "decoded_RGBA_equal": true,
+      "destination": "assets/nino/travel-passport/stamps/exports/stamp-09-confine-italia.webp",
+      "invisible_RGB_only_changed_pixels": 0,
+      "pass": true,
+      "reference": "native source",
+      "size": [
+        768,
+        512
+      ],
+      "source": "assets/nino/travel-passport/stamps/qa-candidates/stamp-09-confine-italia-ink-preview.webp",
+      "visible_RGBA_equal": true
+    },
+    {
+      "alpha_equal": true,
+      "bytes_equal": true,
+      "changed_RGBA_pixels": 0,
+      "changed_RGB_pixels": 0,
+      "changed_alpha_pixels": 0,
+      "changed_visible_RGBA_pixels": 0,
+      "decoded_RGBA_equal": true,
+      "destination": "assets/nino/travel-passport/stamps/exports/stamp-10-mari.webp",
+      "invisible_RGB_only_changed_pixels": 0,
+      "pass": true,
+      "reference": "native source",
+      "size": [
+        768,
+        702
+      ],
+      "source": "assets/nino/travel-passport/stamps/qa-candidates/stamp-10-mari-ink-preview.webp",
+      "visible_RGBA_equal": true
+    },
+    {
+      "alpha_equal": true,
+      "bytes_equal": true,
+      "changed_RGBA_pixels": 0,
+      "changed_RGB_pixels": 0,
+      "changed_alpha_pixels": 0,
+      "changed_visible_RGBA_pixels": 0,
+      "decoded_RGBA_equal": true,
+      "destination": "assets/nino/travel-passport/stamps/exports/stamp-11-fiumi.webp",
+      "invisible_RGB_only_changed_pixels": 0,
+      "pass": true,
+      "reference": "native source",
+      "size": [
+        768,
+        768
+      ],
+      "source": "assets/nino/travel-passport/stamps/qa-candidates/stamp-11-fiumi-ink-preview.webp",
+      "visible_RGBA_equal": true
+    }
+  ],
+  "failures": [],
+  "target": "2a9dda3d3d8ec567687bc3b61bf9cbde645c752c"
+}

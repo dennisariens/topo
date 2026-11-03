@@ -1,0 +1,258 @@
+{
+  "delivered_raster_count": 53,
+  "note": "Visual review aids only; not owner visual acceptance. SVG sources byte/XML-validated, not rasterized.",
+  "sheets": [
+    {
+      "assets": [
+        "assets/nino/travel-passport/arrivo/exports/arrivo-travel.webp"
+      ],
+      "native": false,
+      "path": "contacts-arrivo.png"
+    },
+    {
+      "assets": [
+        "assets/nino/travel-passport/book/exports/passport-blank-folio-left-alpha-normalized.webp",
+        "assets/nino/travel-passport/book/exports/passport-blank-folio-right-alpha-normalized.webp"
+      ],
+      "native": false,
+      "path": "contacts-book.png"
+    },
+    {
+      "assets": [
+        "assets/nino/exports/nino-arrival.webp",
+        "assets/nino/exports/nino-encourage.webp",
+        "assets/nino/exports/nino-gold.webp",
+        "assets/nino/exports/nino-guide.webp",
+        "assets/nino/exports/nino-success.webp",
+        "assets/nino/exports/nino-welcome.webp",
+        "output/art/nino-op-de-scooter.webp",
+        "output/art/topo-italie-avontuur.webp"
+      ],
+      "native": false,
+      "path": "contacts-characters-and-runtime-art.png"
+    },
+    {
+      "assets": [
+        "assets/nino/travel-passport/gold/exports/gold-chapter-seal-v2-128.png",
+        "assets/nino/travel-passport/gold/exports/gold-chapter-seal-v2-128.webp",
+        "assets/nino/travel-passport/gold/exports/gold-chapter-seal-v2-64.png",
+        "assets/nino/travel-passport/gold/exports/gold-chapter-seal-v2-64.webp",
+        "assets/nino/travel-passport/gold/exports/gold-chapter-seal-v2-native.png",
+        "assets/nino/travel-passport/gold/exports/gold-chapter-seal-v2-native.webp",
+        "assets/nino/travel-passport/gold/exports/gold-esploratore-doro-240.png",
+        "assets/nino/travel-passport/gold/exports/gold-esploratore-doro-240.webp",
+        "assets/nino/travel-passport/gold/exports/gold-esploratore-doro-480.png",
+        "assets/nino/travel-passport/gold/exports/gold-esploratore-doro-480.webp",
+        "assets/nino/travel-passport/gold/exports/gold-esploratore-doro-native.png",
+        "assets/nino/travel-passport/gold/exports/gold-esploratore-doro-native.webp"
+      ],
+      "native": false,
+      "path": "contacts-gold.png"
+    },
+    {
+      "assets": [
+        "assets/nino/app-icon/micro-v2/favicon.ico",
+        "assets/nino/app-icon/micro-v2/topo-nino-italy-only-16.png",
+        "assets/nino/app-icon/micro-v2/topo-nino-scooter-italy-24.png",
+        "assets/nino/app-icon/micro-v2/topo-nino-scooter-italy-32.png",
+        "assets/nino/app-icon/micro-v2/topo-nino-scooter-italy-48.png",
+        "assets/nino/app-icon/micro-v2/topo-nino-scooter-italy-64.png"
+      ],
+      "native": false,
+      "path": "contacts-micro.png"
+    },
+    {
+      "assets": [
+        "assets/nino/rewards/pizza/exports/pizza-box-closed-pisa.webp",
+        "assets/nino/rewards/pizza/exports/pizza-box-open-pisa-margherita.webp",
+        "assets/nino/rewards/pizza/exports/pizza-box-open-pisa-quattro-formaggi.webp",
+        "assets/nino/rewards/pizza/exports/pizza-box-open-pisa-salami.webp"
+      ],
+      "native": false,
+      "path": "contacts-pizza.png"
+    },
+    {
+      "assets": [
+        "assets/nino/travel-passport/postcards/exports/postcard-01-sicilia-front.webp",
+        "assets/nino/travel-passport/postcards/exports/postcard-02-sardegna-front.webp",
+        "assets/nino/travel-passport/postcards/exports/postcard-03-napoli-vesuvio-front.webp",
+        "assets/nino/travel-passport/postcards/exports/postcard-04-venezia-scalloped-full.png",
+        "assets/nino/travel-passport/postcards/exports/postcard-04-venezia-scalloped-full.webp",
+        "assets/nino/travel-passport/postcards/exports/postcard-04-venezia-scalloped-tight.png",
+        "assets/nino/travel-passport/postcards/exports/postcard-04-venezia-scalloped-tight.webp",
+        "assets/nino/travel-passport/postcards/exports/postcard-05-universal-reverse.webp",
+        "assets/nino/travel-passport/postcards/masters/postcard-04-venezia-front.png"
+      ],
+      "native": false,
+      "path": "contacts-postcards.png"
+    },
+    {
+      "assets": [
+        "assets/nino/travel-passport/stamps/exports/stamp-01-firenze.webp",
+        "assets/nino/travel-passport/stamps/exports/stamp-02-roma.webp",
+        "assets/nino/travel-passport/stamps/exports/stamp-03-borghi.webp",
+        "assets/nino/travel-passport/stamps/exports/stamp-04-liguria.webp",
+        "assets/nino/travel-passport/stamps/exports/stamp-05-isole.webp",
+        "assets/nino/travel-passport/stamps/exports/stamp-06-dolomiti.webp",
+        "assets/nino/travel-passport/stamps/exports/stamp-07-etna.webp",
+        "assets/nino/travel-passport/stamps/exports/stamp-08-toscana.webp",
+        "assets/nino/travel-passport/stamps/exports/stamp-09-confine-italia.webp",
+        "assets/nino/travel-passport/stamps/exports/stamp-10-mari.webp",
+        "assets/nino/travel-passport/stamps/exports/stamp-11-fiumi.webp"
+      ],
+      "native": false,
+      "path": "contacts-stamps.png"
+    },
+    {
+      "assets": [
+        "assets/nino/chapter-icons/exports/chapter-01-steden-1-6.webp",
+        "assets/nino/chapter-icons/exports/chapter-02-steden-7-12.webp",
+        "assets/nino/chapter-icons/exports/chapter-03-extra-steden-13-18.webp",
+        "assets/nino/chapter-icons/exports/chapter-04-extra-steden-19-23.webp",
+        "assets/nino/chapter-icons/exports/chapter-05-eilanden.webp",
+        "assets/nino/chapter-icons/exports/chapter-06-bergen.webp",
+        "assets/nino/chapter-icons/exports/chapter-07-vulkanen.webp",
+        "assets/nino/chapter-icons/exports/chapter-08-streken.webp",
+        "assets/nino/chapter-icons/exports/chapter-09-landen.webp",
+        "assets/nino/chapter-icons/exports/chapter-10-zeeen.webp",
+        "assets/nino/chapter-icons/exports/chapter-11-rivieren.webp"
+      ],
+      "native": false,
+      "path": "contacts-source-chapter-icons.png"
+    },
+    {
+      "assets": [
+        "assets/nino/travel-passport/arrivo/exports/arrivo-travel.webp"
+      ],
+      "native": true,
+      "painted_pixels": [
+        1536,
+        1536
+      ],
+      "path": "native-arrivo-travel.webp.png"
+    },
+    {
+      "assets": [
+        "assets/nino/travel-passport/book/exports/passport-blank-folio-left-alpha-normalized.webp"
+      ],
+      "native": true,
+      "painted_pixels": [
+        1086,
+        1448
+      ],
+      "path": "native-passport-blank-folio-left-alpha-normalized.webp.png"
+    },
+    {
+      "assets": [
+        "assets/nino/travel-passport/book/exports/passport-blank-folio-right-alpha-normalized.webp"
+      ],
+      "native": true,
+      "painted_pixels": [
+        1086,
+        1448
+      ],
+      "path": "native-passport-blank-folio-right-alpha-normalized.webp.png"
+    },
+    {
+      "assets": [
+        "assets/nino/travel-passport/gold/exports/gold-chapter-seal-v2-128.png"
+      ],
+      "native": true,
+      "painted_pixels": [
+        128,
+        128
+      ],
+      "path": "native-gold-chapter-seal-v2-128.png.png"
+    },
+    {
+      "assets": [
+        "assets/nino/travel-passport/gold/exports/gold-chapter-seal-v2-64.png"
+      ],
+      "native": true,
+      "painted_pixels": [
+        64,
+        64
+      ],
+      "path": "native-gold-chapter-seal-v2-64.png.png"
+    },
+    {
+      "assets": [
+        "assets/nino/travel-passport/gold/exports/gold-chapter-seal-v2-native.png"
+      ],
+      "native": true,
+      "painted_pixels": [
+        1254,
+        1254
+      ],
+      "path": "native-gold-chapter-seal-v2-native.png.png"
+    },
+    {
+      "assets": [
+        "assets/nino/travel-passport/gold/exports/gold-esploratore-doro-240.png"
+      ],
+      "native": true,
+      "painted_pixels": [
+        240,
+        240
+      ],
+      "path": "native-gold-esploratore-doro-240.png.png"
+    },
+    {
+      "assets": [
+        "assets/nino/travel-passport/gold/exports/gold-esploratore-doro-480.png"
+      ],
+      "native": true,
+      "painted_pixels": [
+        480,
+        480
+      ],
+      "path": "native-gold-esploratore-doro-480.png.png"
+    },
+    {
+      "assets": [
+        "assets/nino/travel-passport/gold/exports/gold-esploratore-doro-native.png"
+      ],
+      "native": true,
+      "painted_pixels": [
+        1254,
+        1254
+      ],
+      "path": "native-gold-esploratore-doro-native.png.png"
+    },
+    {
+      "assets": [
+        "assets/nino/travel-passport/postcards/exports/postcard-04-venezia-scalloped-full.png"
+      ],
+      "native": true,
+      "painted_pixels": [
+        1536,
+        1024
+      ],
+      "path": "native-postcard-04-venezia-scalloped-full.png.png"
+    },
+    {
+      "assets": [
+        "assets/nino/travel-passport/postcards/exports/postcard-04-venezia-scalloped-tight.png"
+      ],
+      "native": true,
+      "painted_pixels": [
+        1497,
+        973
+      ],
+      "path": "native-postcard-04-venezia-scalloped-tight.png.png"
+    },
+    {
+      "assets": [
+        "assets/nino/travel-passport/stamps/exports/stamp-05-isole.webp"
+      ],
+      "native": true,
+      "painted_pixels": [
+        1254,
+        1254
+      ],
+      "path": "native-stamp-05-isole.webp.png"
+    }
+  ],
+  "source_chapter_icon_count": 11,
+  "tiny": "tiny-native-and-8x-nearest.png"
+}

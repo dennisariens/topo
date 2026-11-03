@@ -1,0 +1,324 @@
+{
+  "app": "topo-italie",
+  "version": 1,
+  "savedAt": "2026-11-02T22:46:40.732Z",
+  "progress": {
+    "schema": 3,
+    "good": 12,
+    "pizzas": 1,
+    "slices": 4,
+    "trips": 0,
+    "mistakes": [],
+    "route": {
+      "schema": 2,
+      "chapters": {
+        "city1": {
+          "stage": 3,
+          "completedAt": 1793659600440,
+          "goldAt": 0,
+          "nextReviewAt": 1793746000440,
+          "reviews": 0
+        },
+        "city2": {
+          "stage": 0,
+          "completedAt": 0,
+          "goldAt": 0,
+          "nextReviewAt": 0,
+          "reviews": 0
+        },
+        "city3": {
+          "stage": 0,
+          "completedAt": 0,
+          "goldAt": 0,
+          "nextReviewAt": 0,
+          "reviews": 0
+        },
+        "city4": {
+          "stage": 0,
+          "completedAt": 0,
+          "goldAt": 0,
+          "nextReviewAt": 0,
+          "reviews": 0
+        },
+        "islands": {
+          "stage": 0,
+          "completedAt": 0,
+          "goldAt": 0,
+          "nextReviewAt": 0,
+          "reviews": 0
+        },
+        "mountains": {
+          "stage": 0,
+          "completedAt": 0,
+          "goldAt": 0,
+          "nextReviewAt": 0,
+          "reviews": 0
+        },
+        "volcanoes": {
+          "stage": 0,
+          "completedAt": 0,
+          "goldAt": 0,
+          "nextReviewAt": 0,
+          "reviews": 0
+        },
+        "regions": {
+          "stage": 0,
+          "completedAt": 0,
+          "goldAt": 0,
+          "nextReviewAt": 0,
+          "reviews": 0
+        },
+        "countries": {
+          "stage": 0,
+          "completedAt": 0,
+          "goldAt": 0,
+          "nextReviewAt": 0,
+          "reviews": 0
+        },
+        "seas": {
+          "stage": 0,
+          "completedAt": 0,
+          "goldAt": 0,
+          "nextReviewAt": 0,
+          "reviews": 0
+        },
+        "rivers": {
+          "stage": 0,
+          "completedAt": 0,
+          "goldAt": 0,
+          "nextReviewAt": 0,
+          "reviews": 0
+        }
+      },
+      "items": {
+        "city-2": {
+          "correct": 2,
+          "wrong": 0,
+          "streak": 2,
+          "lastSeen": 1793659600339,
+          "lastWrong": 0,
+          "skills": {
+            "point": {
+              "correct": 1,
+              "wrong": 0,
+              "streak": 1,
+              "lastSeen": 1793659595566,
+              "due": 1793745995566
+            },
+            "write": {
+              "correct": 1,
+              "wrong": 0,
+              "streak": 1,
+              "lastSeen": 1793659600339,
+              "due": 1793746000339
+            }
+          }
+        },
+        "city-4": {
+          "correct": 2,
+          "wrong": 0,
+          "streak": 2,
+          "lastSeen": 1793659599522,
+          "lastWrong": 0,
+          "skills": {
+            "point": {
+              "correct": 1,
+              "wrong": 0,
+              "streak": 1,
+              "lastSeen": 1793659596023,
+              "due": 1793745996023
+            },
+            "write": {
+              "correct": 1,
+              "wrong": 0,
+              "streak": 1,
+              "lastSeen": 1793659599522,
+              "due": 1793745999522
+            }
+          }
+        },
+        "city-3": {
+          "correct": 2,
+          "wrong": 0,
+          "streak": 2,
+          "lastSeen": 1793659599158,
+          "lastWrong": 0,
+          "skills": {
+            "point": {
+              "correct": 1,
+              "wrong": 0,
+              "streak": 1,
+              "lastSeen": 1793659596568,
+              "due": 1793745996568
+            },
+            "write": {
+              "correct": 1,
+              "wrong": 0,
+              "streak": 1,
+              "lastSeen": 1793659599158,
+              "due": 1793745999158
+            }
+          }
+        },
+        "city-5": {
+          "correct": 2,
+          "wrong": 0,
+          "streak": 2,
+          "lastSeen": 1793659599644,
+          "lastWrong": 0,
+          "skills": {
+            "point": {
+              "correct": 1,
+              "wrong": 0,
+              "streak": 1,
+              "lastSeen": 1793659597090,
+              "due": 1793745997090
+            },
+            "write": {
+              "correct": 1,
+              "wrong": 0,
+              "streak": 1,
+              "lastSeen": 1793659599644,
+              "due": 1793745999644
+            }
+          }
+        },
+        "city-6": {
+          "correct": 2,
+          "wrong": 0,
+          "streak": 2,
+          "lastSeen": 1793659598825,
+          "lastWrong": 0,
+          "skills": {
+            "point": {
+              "correct": 1,
+              "wrong": 0,
+              "streak": 1,
+              "lastSeen": 1793659597750,
+              "due": 1793745997750
+            },
+            "write": {
+              "correct": 1,
+              "wrong": 0,
+              "streak": 1,
+              "lastSeen": 1793659598825,
+              "due": 1793745998825
+            }
+          }
+        },
+        "city-1": {
+          "correct": 2,
+          "wrong": 0,
+          "streak": 2,
+          "lastSeen": 1793659599877,
+          "lastWrong": 0,
+          "skills": {
+            "point": {
+              "correct": 1,
+              "wrong": 0,
+              "streak": 1,
+              "lastSeen": 1793659598293,
+              "due": 1793745998293
+            },
+            "write": {
+              "correct": 1,
+              "wrong": 0,
+              "streak": 1,
+              "lastSeen": 1793659599877,
+              "due": 1793745999877
+            }
+          }
+        }
+      },
+      "rewardTokens": [
+        "city1:point:city-2:point",
+        "city1:point:city-4:point",
+        "city1:point:city-3:point",
+        "city1:point:city-5:point",
+        "city1:point:city-6:point",
+        "city1:point:city-1:point",
+        "city1:write:city-6:write",
+        "city1:write:city-3:write",
+        "city1:write:city-4:write",
+        "city1:write:city-5:write",
+        "city1:write:city-1:write",
+        "city1:write:city-2:write"
+      ],
+      "active": {
+        "chapterId": "city1",
+        "kind": "write",
+        "queue": [
+          {
+            "id": "city-6",
+            "mode": "write"
+          },
+          {
+            "id": "city-3",
+            "mode": "write"
+          },
+          {
+            "id": "city-4",
+            "mode": "write"
+          },
+          {
+            "id": "city-5",
+            "mode": "write"
+          },
+          {
+            "id": "city-1",
+            "mode": "write"
+          },
+          {
+            "id": "city-2",
+            "mode": "write"
+          }
+        ],
+        "index": 6,
+        "answered": true,
+        "done": true,
+        "originalTotal": 6,
+        "answers": [
+          {
+            "ok": true
+          },
+          {
+            "ok": true
+          },
+          {
+            "ok": true
+          },
+          {
+            "ok": true
+          },
+          {
+            "ok": true
+          },
+          {
+            "ok": true
+          }
+        ],
+        "correct": 6,
+        "wrong": 0,
+        "pending": [],
+        "awarded": [
+          "city-6:write",
+          "city-3:write",
+          "city-4:write",
+          "city-5:write",
+          "city-1:write",
+          "city-2:write"
+        ],
+        "lastAnswer": null,
+        "result": {
+          "passed": true,
+          "goldEarned": false,
+          "newlyCompleted": true
+        }
+      }
+    },
+    "daily": {
+      "date": "2026-11-02",
+      "correct": 12
+    }
+  }
+}

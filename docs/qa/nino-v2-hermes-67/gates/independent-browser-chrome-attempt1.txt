@@ -1,0 +1,24 @@
+{
+  "status": "FAIL",
+  "version": "156.0.8078.74",
+  "cases": 5,
+  "failure": "locator.getAttribute: Timeout 10000ms exceeded.\nCall log:\n  - waiting for locator('#finishArt')\n\n    at stage (/Users/dennisariens/projects/topo-nino-v2-independent-qa/docs/qa/nino-v2-hermes-67/browser-qa.mjs:19:221)\n    at async file:///Users/dennisariens/projects/topo-nino-v2-independent-qa/docs/qa/nino-v2-hermes-67/browser-qa.mjs:26:21",
+  "network": [],
+  "errors": [],
+  "unexpectedConsoleErrors": []
+}
+node:internal/modules/run_main:107
+    triggerUncaughtException(
+    ^
+
+locator.getAttribute: Timeout 10000ms exceeded.
+Call log:
+  - waiting for locator('#finishArt')
+
+    at stage (/Users/dennisariens/projects/topo-nino-v2-independent-qa/docs/qa/nino-v2-hermes-67/browser-qa.mjs:19:221)
+    at async file:///Users/dennisariens/projects/topo-nino-v2-independent-qa/docs/qa/nino-v2-hermes-67/browser-qa.mjs:26:21 {
+  log: [ "  - waiting for locator('#finishArt')" ],
+  name: 'TimeoutError'
+}
+
+Node.js v24.15.0

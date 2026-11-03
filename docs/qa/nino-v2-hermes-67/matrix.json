@@ -1,0 +1,133 @@
+{
+  "testedSHA": "2a9dda3d3d8ec567687bc3b61bf9cbde645c752c",
+  "verdict": "REWORK",
+  "meaning": "Package closure not established; technical binary/current-runtime checks pass; source availability is not integration approval.",
+  "rows": [
+    {
+      "category": "current-nino-poses",
+      "sourceExport": "PASS",
+      "runtime": "PASS",
+      "releaseClassification": "READY",
+      "notes": "Six existing poses; startup/genuine lesson/Gold/arrival/fallback."
+    },
+    {
+      "category": "chapter-icons-11",
+      "sourceExport": "PASS",
+      "runtime": "NOT TESTED",
+      "releaseClassification": "INTEGRATION PENDING",
+      "notes": "11 pinned source exports; no populated runtime chapter mapping."
+    },
+    {
+      "category": "chapter-ink-stamps-11",
+      "sourceExport": "PASS",
+      "runtime": "NOT TESTED",
+      "releaseClassification": "INTEGRATION PENDING",
+      "notes": "Corrected ISOLE only; no earned stamp holder."
+    },
+    {
+      "category": "arrivo",
+      "sourceExport": "PASS",
+      "runtime": "NOT TESTED",
+      "releaseClassification": "INTEGRATION PENDING",
+      "notes": "No actual ARRIVO placement/recorded destination UI."
+    },
+    {
+      "category": "gold-seals-2",
+      "sourceExport": "PASS",
+      "runtime": "NOT TESTED",
+      "releaseClassification": "INTEGRATION PENDING",
+      "notes": "Two distinct seal families and native/scaled exports; current earned Gold uses old Nino pose."
+    },
+    {
+      "category": "blank-folio-art",
+      "sourceExport": "PASS",
+      "runtime": "NOT TESTED",
+      "releaseClassification": "INTEGRATION PENDING",
+      "notes": "No earned overlays in blank inputs; baked scenery/ornaments are not recorded travel."
+    },
+    {
+      "category": "folio-resolution-spec",
+      "sourceExport": "FAIL",
+      "runtime": "NOT TESTED",
+      "releaseClassification": "INTEGRATION PENDING",
+      "notes": "1086x1448 versus1536x2048; owner exception/DPR2 width<=543CSS required."
+    },
+    {
+      "category": "retired-open-book-classification",
+      "sourceExport": "FAIL",
+      "runtime": "NOT TESTED",
+      "releaseClassification": "OPTIONAL DEFERRED",
+      "notes": "Codex row incorrectly READY despite REWORK/ARCHIVAL;1586x992 source is not a blank folio."
+    },
+    {
+      "category": "postcard-fronts-reverse",
+      "sourceExport": "PASS",
+      "runtime": "NOT TESTED",
+      "releaseClassification": "INTEGRATION PENDING",
+      "notes": "Source/derivative art only; no collection ownership/front-back implementation."
+    },
+    {
+      "category": "venezia-painting-export-files",
+      "sourceExport": "PASS",
+      "runtime": "NOT TESTED",
+      "releaseClassification": "INTEGRATION PENDING",
+      "notes": "Full/tight real Git binaries; unchanged full RGB, exact crop and visible RGBA/alpha parity."
+    },
+    {
+      "category": "venezia-original-owner-matte",
+      "sourceExport": "NOT TESTED",
+      "runtime": "NOT TESTED",
+      "releaseClassification": "EXPORT PENDING",
+      "notes": "No reference at checked PR66 handles; reconstructed-edge owner decision needed."
+    },
+    {
+      "category": "micro-favicon-html",
+      "sourceExport": "PASS",
+      "runtime": "PASS",
+      "releaseClassification": "READY",
+      "notes": "Exact3 inline data URIs decoded offline in Chrome/WebKit; OS cache/native selection NOT TESTED."
+    },
+    {
+      "category": "static-pisa-boxes",
+      "sourceExport": "PASS",
+      "runtime": "NOT TESTED",
+      "releaseClassification": "READY",
+      "notes": "READY as assets only; existing runtime8-wedge pizza unchanged, no integrated box view."
+    },
+    {
+      "category": "45-objects-11-chapters-geometry",
+      "sourceExport": "PASS",
+      "runtime": "PASS",
+      "releaseClassification": "READY",
+      "notes": "Immutable source comparison +17 programs +maintainedall45 fixtures; no new GIS survey."
+    },
+    {
+      "category": "gold-reward-save-safety",
+      "sourceExport": "PASS",
+      "runtime": "PASS",
+      "releaseClassification": "READY",
+      "notes": "Natural first-stop Gold, wrong-Gold rejection, actual backup,8correct/pizza and3pizzas/trip."
+    },
+    {
+      "category": "hinged-pisa-animation",
+      "sourceExport": "NOT TESTED",
+      "runtime": "NOT TESTED",
+      "releaseClassification": "OPTIONAL DEFERRED",
+      "notes": "Existing separate REWORK rig not activated; not a required redesign."
+    },
+    {
+      "category": "milan-bologna-gelati",
+      "sourceExport": "NOT TESTED",
+      "runtime": "NOT TESTED",
+      "releaseClassification": "OPTIONAL DEFERRED",
+      "notes": "Optional future scope, not hidden blockers."
+    }
+  ],
+  "ownerDecisions": [
+    "Folio native-resolution exception/display cap",
+    "Original Venezia matte supplied or reconstructed edge explicitly accepted",
+    "Asset-only closeout versus separately authorized required-category runtime integration",
+    "Final visual/device/release acceptance"
+  ],
+  "noImplementationMergeDeploy": true
+}

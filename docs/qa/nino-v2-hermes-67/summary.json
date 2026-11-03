@@ -1,0 +1,125 @@
+{
+  "testedSHA": "2a9dda3d3d8ec567687bc3b61bf9cbde645c752c",
+  "verdict": "REWORK",
+  "basis": "Ledger defect and unresolved owner/scope gates; not a binary-export or existing-runtime regression",
+  "binary": {
+    "decoded_rasters": 236,
+    "delivered": 56,
+    "export_comparison_count": 30,
+    "export_failures": 0,
+    "manifest_count": 239,
+    "manifest_mismatch_rows": 0,
+    "old_master_count": 20,
+    "old_master_present_in_target": 1,
+    "old_masters_changed_in_ART_or_PR66": 0,
+    "old_masters_inventory_unchanged": 20,
+    "pillow": "10.4.0",
+    "python": "3.8.2",
+    "scope": "Independent binary measurements, not final visual/runtime approval. Owner matte comparison BLOCKED.",
+    "script_sha256": "66999717b9b70c0791169b5e95d205dd6314232d32c4d7167be7ec8273ad1e80",
+    "source_only": 183,
+    "svg_count": 3,
+    "target": "2a9dda3d3d8ec567687bc3b61bf9cbde645c752c",
+    "unique_blobs": 225,
+    "unique_paths": 239,
+    "venezia": {
+      "approved_owner_matte_comparison": {
+        "reason": "No exact owner-reviewed raster matte binary/path/blob supplied; reconstructed export inspection cannot establish equality or independently reproduce historical 0.1264% tolerance.",
+        "status": "BLOCKED"
+      },
+      "full_RGB_source_exact": true,
+      "full_alpha_values": [
+        0,
+        255
+      ],
+      "full_nonzero_alpha_bbox": [
+        32,
+        35,
+        1511,
+        990
+      ],
+      "full_png_webp": {
+        "alpha_equal": true,
+        "changed_RGBA_pixels": 213487,
+        "changed_RGB_pixels": 213487,
+        "changed_alpha_pixels": 0,
+        "changed_visible_RGBA_pixels": 0,
+        "decoded_RGBA_equal": false,
+        "invisible_RGB_only_changed_pixels": 213487,
+        "size": [
+          1536,
+          1024
+        ],
+        "visible_RGBA_equal": true
+      },
+      "tight_crop_half_open": [
+        23,
+        26,
+        1520,
+        999
+      ],
+      "tight_equals_full_crop": {
+        "alpha_equal": true,
+        "changed_RGBA_pixels": 0,
+        "changed_RGB_pixels": 0,
+        "changed_alpha_pixels": 0,
+        "changed_visible_RGBA_pixels": 0,
+        "decoded_RGBA_equal": true,
+        "invisible_RGB_only_changed_pixels": 0,
+        "size": [
+          1497,
+          973
+        ],
+        "visible_RGBA_equal": true
+      },
+      "tight_png_webp": {
+        "alpha_equal": true,
+        "changed_RGBA_pixels": 97198,
+        "changed_RGB_pixels": 97198,
+        "changed_alpha_pixels": 0,
+        "changed_visible_RGBA_pixels": 0,
+        "decoded_RGBA_equal": false,
+        "invisible_RGB_only_changed_pixels": 97198,
+        "size": [
+          1497,
+          973
+        ],
+        "visible_RGBA_equal": true
+      }
+    }
+  },
+  "browser": {
+    "Chrome": {
+      "version": "156.0.8078.74",
+      "cases": 7,
+      "status": "PASS"
+    },
+    "WebKitNotNativeSafari": {
+      "version": "27.2",
+      "cases": 7,
+      "status": "PASS"
+    }
+  },
+  "maintainedAll45": {
+    "artifact": "file:///Users/dennisariens/projects/topo-nino-v2-independent-qa/output/html/TOPO-NINO-Computer-Release.html",
+    "bytes": 3156792,
+    "sha256": "3203f1b4cd9b72b60ed5301fdeafc9fd59988d1b12fb75ce22902b130b50b635",
+    "browser": "156.0.8078.74",
+    "transport": "file:// offline:true",
+    "objects": 45,
+    "styles": 2,
+    "correctPointerTrials": 180,
+    "wrongPointerTrials": 90,
+    "writingTrials": 180,
+    "coverage": "Explicit per-item current-question fixtures with actual mouse/buttons and writing; not a full natural-route all-45 playthrough. Existing DOM suite covers all eleven route chapters. Geography compares pinned source baselines, not a fresh independent survey.",
+    "goldWrongCannotPass": true,
+    "reloadExact": true,
+    "errors": [],
+    "consoleErrors": [],
+    "external": [],
+    "physicalSafari": "NOT TESTED"
+  },
+  "artifactSHA256": "3203f1b4cd9b72b60ed5301fdeafc9fd59988d1b12fb75ce22902b130b50b635",
+  "productionChanges": false,
+  "nativeSafariPhysicalDeviceOSFavicon": "NOT TESTED"
+}

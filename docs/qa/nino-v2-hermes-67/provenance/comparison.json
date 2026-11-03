@@ -1,0 +1,489 @@
+{
+  "reviewed_commit": "2a9dda3d3d8ec567687bc3b61bf9cbde645c752c",
+  "base_commit": "1bf86b3e1c69319bed8ef877243070a64d97a12e",
+  "historical_review": "9e58e756f124ff37d47b4ebcfd274684125d8aeb",
+  "head_verified": true,
+  "changed_paths": [
+    "assets/nino/app-icon/micro-v2/README.md",
+    "assets/nino/app-icon/micro-v2/favicon.ico",
+    "assets/nino/app-icon/micro-v2/manifest.json",
+    "assets/nino/app-icon/micro-v2/topo-nino-italy-only-16.png",
+    "assets/nino/app-icon/micro-v2/topo-nino-italy-only-master.svg",
+    "assets/nino/app-icon/micro-v2/topo-nino-scooter-italy-24.png",
+    "assets/nino/app-icon/micro-v2/topo-nino-scooter-italy-32.png",
+    "assets/nino/app-icon/micro-v2/topo-nino-scooter-italy-48.png",
+    "assets/nino/app-icon/micro-v2/topo-nino-scooter-italy-64.png",
+    "assets/nino/app-icon/micro-v2/topo-nino-scooter-italy-master.svg",
+    "assets/nino/rewards/pizza/exports/pizza-box-closed-pisa.webp",
+    "assets/nino/rewards/pizza/exports/pizza-box-open-pisa-margherita.webp",
+    "assets/nino/rewards/pizza/exports/pizza-box-open-pisa-quattro-formaggi.webp",
+    "assets/nino/rewards/pizza/exports/pizza-box-open-pisa-salami.webp",
+    "assets/nino/travel-passport/arrivo/exports/arrivo-travel.webp",
+    "assets/nino/travel-passport/book/exports/passport-blank-folio-left-alpha-normalized.webp",
+    "assets/nino/travel-passport/book/exports/passport-blank-folio-right-alpha-normalized.webp",
+    "assets/nino/travel-passport/gold/exports/gold-chapter-seal-v2-128.png",
+    "assets/nino/travel-passport/gold/exports/gold-chapter-seal-v2-128.webp",
+    "assets/nino/travel-passport/gold/exports/gold-chapter-seal-v2-64.png",
+    "assets/nino/travel-passport/gold/exports/gold-chapter-seal-v2-64.webp",
+    "assets/nino/travel-passport/gold/exports/gold-chapter-seal-v2-native.png",
+    "assets/nino/travel-passport/gold/exports/gold-chapter-seal-v2-native.webp",
+    "assets/nino/travel-passport/gold/exports/gold-esploratore-doro-240.png",
+    "assets/nino/travel-passport/gold/exports/gold-esploratore-doro-240.webp",
+    "assets/nino/travel-passport/gold/exports/gold-esploratore-doro-480.png",
+    "assets/nino/travel-passport/gold/exports/gold-esploratore-doro-480.webp",
+    "assets/nino/travel-passport/gold/exports/gold-esploratore-doro-native.png",
+    "assets/nino/travel-passport/gold/exports/gold-esploratore-doro-native.webp",
+    "assets/nino/travel-passport/postcards/exports/README.md",
+    "assets/nino/travel-passport/postcards/exports/manifest.json",
+    "assets/nino/travel-passport/postcards/exports/postcard-01-sicilia-front.webp",
+    "assets/nino/travel-passport/postcards/exports/postcard-02-sardegna-front.webp",
+    "assets/nino/travel-passport/postcards/exports/postcard-03-napoli-vesuvio-front.webp",
+    "assets/nino/travel-passport/postcards/exports/postcard-04-venezia-approved-contour.svg",
+    "assets/nino/travel-passport/postcards/exports/postcard-04-venezia-scalloped-full.png",
+    "assets/nino/travel-passport/postcards/exports/postcard-04-venezia-scalloped-full.webp",
+    "assets/nino/travel-passport/postcards/exports/postcard-04-venezia-scalloped-tight.png",
+    "assets/nino/travel-passport/postcards/exports/postcard-04-venezia-scalloped-tight.webp",
+    "assets/nino/travel-passport/postcards/exports/postcard-05-universal-reverse.webp",
+    "assets/nino/travel-passport/postcards/masters/postcard-04-venezia-front.png",
+    "assets/nino/travel-passport/stamps/exports/stamp-01-firenze.webp",
+    "assets/nino/travel-passport/stamps/exports/stamp-02-roma.webp",
+    "assets/nino/travel-passport/stamps/exports/stamp-03-borghi.webp",
+    "assets/nino/travel-passport/stamps/exports/stamp-04-liguria.webp",
+    "assets/nino/travel-passport/stamps/exports/stamp-05-isole.webp",
+    "assets/nino/travel-passport/stamps/exports/stamp-06-dolomiti.webp",
+    "assets/nino/travel-passport/stamps/exports/stamp-07-etna.webp",
+    "assets/nino/travel-passport/stamps/exports/stamp-08-toscana.webp",
+    "assets/nino/travel-passport/stamps/exports/stamp-09-confine-italia.webp",
+    "assets/nino/travel-passport/stamps/exports/stamp-10-mari.webp",
+    "assets/nino/travel-passport/stamps/exports/stamp-11-fiumi.webp",
+    "docs/DECISIONS.md",
+    "docs/PROJECT_STATE.md",
+    "docs/qa/nino-v2-closure-67/README.md",
+    "docs/qa/nino-v2-closure-67/SHA256SUMS.txt",
+    "docs/qa/nino-v2-closure-67/after-compact.png",
+    "docs/qa/nino-v2-closure-67/after-desktop.png",
+    "docs/qa/nino-v2-closure-67/artwork-manifest.csv",
+    "docs/qa/nino-v2-closure-67/artwork-manifest.json",
+    "docs/qa/nino-v2-closure-67/before-compact.png",
+    "docs/qa/nino-v2-closure-67/before-desktop.png",
+    "docs/qa/nino-v2-closure-67/browser-escalated.log",
+    "docs/qa/nino-v2-closure-67/browser-final.log.gz",
+    "docs/qa/nino-v2-closure-67/browser-results.json",
+    "docs/qa/nino-v2-closure-67/browser-verified.log",
+    "docs/qa/nino-v2-closure-67/browser.log",
+    "docs/qa/nino-v2-closure-67/build-complete.log",
+    "docs/qa/nino-v2-closure-67/build-delivery.log",
+    "docs/qa/nino-v2-closure-67/build-final.log",
+    "docs/qa/nino-v2-closure-67/build.log",
+    "docs/qa/nino-v2-closure-67/command-results.json",
+    "docs/qa/nino-v2-closure-67/export-verification.json",
+    "docs/qa/nino-v2-closure-67/exports-reproduction.log",
+    "docs/qa/nino-v2-closure-67/gold-and-venezia-size-proof.png",
+    "docs/qa/nino-v2-closure-67/gold-chapter-native.png",
+    "docs/qa/nino-v2-closure-67/gold-final-native.png",
+    "docs/qa/nino-v2-closure-67/html-preservation.json",
+    "docs/qa/nino-v2-closure-67/lint-delivery.log",
+    "docs/qa/nino-v2-closure-67/lint-final.log",
+    "docs/qa/nino-v2-closure-67/lint.log",
+    "docs/qa/nino-v2-closure-67/map-audit-delivery.log",
+    "docs/qa/nino-v2-closure-67/map-preservation-final.log",
+    "docs/qa/nino-v2-closure-67/map-preservation.json",
+    "docs/qa/nino-v2-closure-67/map-preservation.log",
+    "docs/qa/nino-v2-closure-67/master-preservation.json",
+    "docs/qa/nino-v2-closure-67/one-pizza.png",
+    "docs/qa/nino-v2-closure-67/pr-snapshot.json",
+    "docs/qa/nino-v2-closure-67/preservation.json",
+    "docs/qa/nino-v2-closure-67/release-audit-delivery.log",
+    "docs/qa/nino-v2-closure-67/release-audit.log",
+    "docs/qa/nino-v2-closure-67/release-audit/source-preservation.json",
+    "docs/qa/nino-v2-closure-67/static-pisa-fallback.png",
+    "docs/qa/nino-v2-closure-67/summary.json",
+    "docs/qa/nino-v2-closure-67/test-delivery.log",
+    "docs/qa/nino-v2-closure-67/test-final.log.gz",
+    "docs/qa/nino-v2-closure-67/test-verified.log",
+    "docs/qa/nino-v2-closure-67/test.log",
+    "docs/qa/nino-v2-closure-67/three-pizzas-one-trip.png",
+    "docs/qa/nino-v2-closure-67/venezia-codec-verification.json",
+    "docs/qa/nino-v2-closure-67/venezia-native.png",
+    "index.html",
+    "output/html/TOPO-Italie-Computer.html",
+    "output/html/TOPO-NINO-Computer-Release.html",
+    "output/html/topo-italie-duolingo.html",
+    "output/html/topo-italie-interactief.html",
+    "scripts/audit-map-picker-revision.mjs",
+    "scripts/audit-release-1-2.mjs",
+    "scripts/build.mjs",
+    "scripts/build_venezia_postcard.py",
+    "scripts/close-nino-artwork-67.py",
+    "scripts/embed-nino-micro-icons.mjs",
+    "scripts/focus-source.mjs",
+    "scripts/inventory-nino-artwork-67.py",
+    "scripts/qa-nino-artwork-67.mjs"
+  ],
+  "html": [
+    {
+      "path": "index.html",
+      "base_sha256": "422f39dd06cb2ea2d6524ce07e4524738aa425aef5c5e54d63b55d90b54143a9",
+      "candidate_sha256": "3203f1b4cd9b72b60ed5301fdeafc9fd59988d1b12fb75ce22902b130b50b635",
+      "bytes": 3156792,
+      "blocks": 1,
+      "only_icon_block": true,
+      "all_candidate_html_equal": true
+    },
+    {
+      "path": "output/html/TOPO-Italie-Computer.html",
+      "base_sha256": "422f39dd06cb2ea2d6524ce07e4524738aa425aef5c5e54d63b55d90b54143a9",
+      "candidate_sha256": "3203f1b4cd9b72b60ed5301fdeafc9fd59988d1b12fb75ce22902b130b50b635",
+      "bytes": 3156792,
+      "blocks": 1,
+      "only_icon_block": true,
+      "all_candidate_html_equal": true
+    },
+    {
+      "path": "output/html/TOPO-NINO-Computer-Release.html",
+      "base_sha256": "422f39dd06cb2ea2d6524ce07e4524738aa425aef5c5e54d63b55d90b54143a9",
+      "candidate_sha256": "3203f1b4cd9b72b60ed5301fdeafc9fd59988d1b12fb75ce22902b130b50b635",
+      "bytes": 3156792,
+      "blocks": 1,
+      "only_icon_block": true,
+      "all_candidate_html_equal": true
+    },
+    {
+      "path": "output/html/topo-italie-duolingo.html",
+      "base_sha256": "422f39dd06cb2ea2d6524ce07e4524738aa425aef5c5e54d63b55d90b54143a9",
+      "candidate_sha256": "3203f1b4cd9b72b60ed5301fdeafc9fd59988d1b12fb75ce22902b130b50b635",
+      "bytes": 3156792,
+      "blocks": 1,
+      "only_icon_block": true,
+      "all_candidate_html_equal": true
+    },
+    {
+      "path": "output/html/topo-italie-interactief.html",
+      "base_sha256": "422f39dd06cb2ea2d6524ce07e4524738aa425aef5c5e54d63b55d90b54143a9",
+      "candidate_sha256": "3203f1b4cd9b72b60ed5301fdeafc9fd59988d1b12fb75ce22902b130b50b635",
+      "bytes": 3156792,
+      "blocks": 1,
+      "only_icon_block": true,
+      "all_candidate_html_equal": true
+    }
+  ],
+  "protected_files": [
+    {
+      "path": "assets/nino/runtime-manifest.json",
+      "blob": "f23eb8ef9521f1766c825ae185229025abe227ea",
+      "unchanged": true
+    },
+    {
+      "path": "docs/geography/LAKES.md",
+      "blob": "2c254c212b3391d9154060977376b0bab6c82862",
+      "unchanged": true
+    },
+    {
+      "path": "docs/geography/README.md",
+      "blob": "c68564b3a96a58f512612372782f969ab88877dc",
+      "unchanged": true
+    },
+    {
+      "path": "docs/geography/apennines-anchor-source-en.json",
+      "blob": "77a4c65dbaa93bcc9450f8b0573b7155d9413433",
+      "unchanged": true
+    },
+    {
+      "path": "docs/geography/apennines-anchor-source-it.json",
+      "blob": "92fc7e5e76169312dedd91dbc0b1861d1ef1d3d0",
+      "unchanged": true
+    },
+    {
+      "path": "docs/geography/apennines-provenance.json",
+      "blob": "ff71f74354c8497df9d051068904fbd79e378850",
+      "unchanged": true
+    },
+    {
+      "path": "docs/geography/map-manifest.json",
+      "blob": "d6ea62d1e9e629a08323f16c094c04b047bcafc8",
+      "unchanged": true
+    },
+    {
+      "path": "docs/geography/original-points.json",
+      "blob": "21e9c4dd6b6a67385fd1a47d2e9f3716b2effdb0",
+      "unchanged": true
+    },
+    {
+      "path": "docs/geography/points.json",
+      "blob": "e8c9d27bd8a01029f5b57597e5c5dfb15869d8d2",
+      "unchanged": true
+    },
+    {
+      "path": "geography/lakes/projected-manifest.json",
+      "blob": "bf0c4b7a3654acbec97782d9e32b4eaab6aefac5",
+      "unchanged": true
+    },
+    {
+      "path": "geography/lakes/source.geojson",
+      "blob": "88eabf1dd11fe62472b74c40d175559165a6eb85",
+      "unchanged": true
+    },
+    {
+      "path": "geography/lakes/sources.json",
+      "blob": "0a1448454890ff02f336ff324cb63a689fb3310d",
+      "unchanged": true
+    },
+    {
+      "path": "output/pdf/print-source.sha256",
+      "blob": "0bff1b34035347bac6c2c5bd49b68fef7425a4db",
+      "unchanged": true
+    },
+    {
+      "path": "output/pdf/topo-italie-printboek.pdf",
+      "blob": "8169fbfa20c36eb0275a2876cc5e4796e23c42dc",
+      "unchanged": true
+    },
+    {
+      "path": "package-lock.json",
+      "blob": "ee169a30269a8cdf12720fb5064e57c44fb749e0",
+      "unchanged": true
+    },
+    {
+      "path": "package.json",
+      "blob": "f562d08076cbe1cb6ef4b9bb9ae275d5d55189a0",
+      "unchanged": true
+    },
+    {
+      "path": "print.html",
+      "blob": "22e3bd14b3043972a262e342b3f1ab92f37fb72f",
+      "unchanged": true
+    },
+    {
+      "path": "scripts/discovery-map.css",
+      "blob": "1da71e69406361f5f14eeb278d9c85799f90d504",
+      "unchanged": true
+    },
+    {
+      "path": "scripts/discovery-map.js",
+      "blob": "bf4461c3c5655fe787afcfc91185aa6d0b4af2a0",
+      "unchanged": true
+    },
+    {
+      "path": "scripts/discovery-map.test.mjs",
+      "blob": "8a905ee3ff82d2e26f9b5d16fe2704bf1ccfcdd8",
+      "unchanged": true
+    },
+    {
+      "path": "scripts/embed-nino-art.mjs",
+      "blob": "62d4aa26424d82df4b55a457ab7f37b29afe3cce",
+      "unchanged": true
+    },
+    {
+      "path": "scripts/exam-flow.test.mjs",
+      "blob": "ab4babe32b5175d2ca0ae96a08bf60045842660a",
+      "unchanged": true
+    },
+    {
+      "path": "scripts/focus-mode.css",
+      "blob": "ad8b678347eff0269b323b1e27d31391df85bc06",
+      "unchanged": true
+    },
+    {
+      "path": "scripts/focus-mode.js",
+      "blob": "bd830afdffdd7cec61671c85b8eaed35d7d3cda7",
+      "unchanged": true
+    },
+    {
+      "path": "scripts/focus-mode.test.mjs",
+      "blob": "47d7cc230187545be66a48295be9c319a4ffb9bc",
+      "unchanged": true
+    },
+    {
+      "path": "scripts/geography/lakes.test.mjs",
+      "blob": "b280b1723cec0cd2ee1fc6dbfb4275044d047ea6",
+      "unchanged": true
+    },
+    {
+      "path": "scripts/learning-engine.js",
+      "blob": "cf8ed64b557d9dadb9c0ec6f095c5a4eb534491c",
+      "unchanged": true
+    },
+    {
+      "path": "scripts/learning-engine.test.mjs",
+      "blob": "61b6695b995f968fcd572bfe23cf35d9db821d65",
+      "unchanged": true
+    },
+    {
+      "path": "scripts/map-hit.js",
+      "blob": "a7a3686b1ba36b80eeb271af0933e09db4d02aad",
+      "unchanged": true
+    },
+    {
+      "path": "scripts/map-hit.test.mjs",
+      "blob": "cff19211c4d61ab2a2958629619eaa9aa047c786",
+      "unchanged": true
+    },
+    {
+      "path": "scripts/nino-art.test.mjs",
+      "blob": "71bb80aceaf4d77bffdc370c927cb1cd7727f26c",
+      "unchanged": true
+    },
+    {
+      "path": "scripts/polish.test.mjs",
+      "blob": "8708b6027b292efb25393c639e55278e5dc9c4fb",
+      "unchanged": true
+    },
+    {
+      "path": "scripts/qa-findings.test.mjs",
+      "blob": "7311b4cc86fa0948edf2cea769fdaab184937915",
+      "unchanged": true
+    },
+    {
+      "path": "scripts/release-1-dom.test.mjs",
+      "blob": "6106d5d543f6a1de7f6ae71c4218d010b6f1cef2",
+      "unchanged": true
+    },
+    {
+      "path": "scripts/route-dom.test.mjs",
+      "blob": "a4319279b397012fae8c42fcb57bcb2c471d0963",
+      "unchanged": true
+    },
+    {
+      "path": "scripts/route-engine.js",
+      "blob": "c0a27baddb5ca360325508daa7819ca12f9ee62a",
+      "unchanged": true
+    },
+    {
+      "path": "scripts/route-engine.test.mjs",
+      "blob": "2064abaf26840420e7c75438839821b44da2ce15",
+      "unchanged": true
+    },
+    {
+      "path": "scripts/schoolblad.css",
+      "blob": "1dafe02c2c371e386dadb1c742fca46f7667da71",
+      "unchanged": true
+    },
+    {
+      "path": "scripts/schoolblad.js",
+      "blob": "3634f46838bb5e1ac707b5a7009c09368fef74c2",
+      "unchanged": true
+    },
+    {
+      "path": "scripts/schoolblad.test.mjs",
+      "blob": "b9874d57dc799a249155e310d3d43519ba5cbedd",
+      "unchanged": true
+    },
+    {
+      "path": "scripts/ui-smoke.test.mjs",
+      "blob": "297a033111d8bf4322df6c0fe6140e24eb08cbd1",
+      "unchanged": true
+    }
+  ],
+  "adapter_negative_probes": [
+    {
+      "name": "exact candidate block",
+      "rejected": false,
+      "error": null,
+      "expected": "accept"
+    },
+    {
+      "name": "script inserted within block",
+      "rejected": true,
+      "error": "Unexpected content in bounded micro favicon block",
+      "expected": "reject"
+    },
+    {
+      "name": "favicon bytes changed within href",
+      "rejected": true,
+      "error": "Unexpected content in bounded micro favicon block",
+      "expected": "reject"
+    },
+    {
+      "name": "duplicate bounded blocks",
+      "rejected": false,
+      "error": null,
+      "expected": "accept"
+    },
+    {
+      "name": "duplicate leaves second block for whole-source equality audit",
+      "pass": true
+    },
+    {
+      "name": "arbitrary outside block retained for whole-source equality audit",
+      "pass": true
+    }
+  ],
+  "pr_heads_match_pinned": {
+    "61": true,
+    "63": true,
+    "65": true,
+    "66": true
+  },
+  "manifest_count": 239,
+  "manifest_status_counts": {
+    "READY": 53,
+    "INTEGRATION PENDING": 72,
+    "OPTIONAL DEFERRED": 31,
+    "EXPORT PENDING": 83
+  },
+  "source_only_ready_count": 41,
+  "source_only_integration_pending_count": 28,
+  "historical_rework_now_ready": [
+    {
+      "path": "assets/nino/travel-passport/book/masters/passport-open-book.png",
+      "delivery_present": false,
+      "bytes": 2674616,
+      "sha256": "94f5d286e502b81ee156ae0923132f22dc8475f474f44709087e83662e032b8d",
+      "git_blob": "883625438e29019a89cb3b372d31012f4edd4ef8",
+      "provenance": [
+        {
+          "commit": "8a704cb23da97baf7197635df7fa12f06b864a24",
+          "branch": "art/nino-travel-stamps-v2-20261026",
+          "blob": "883625438e29019a89cb3b372d31012f4edd4ef8"
+        },
+        {
+          "commit": "5cfcbc37eb6b0266d76d2c05404d993908611410",
+          "branch": "art/nino-micro-icons-v2-20261030 / PR65",
+          "blob": "883625438e29019a89cb3b372d31012f4edd4ef8"
+        },
+        {
+          "commit": "cec9fd26ac858bdbcbdf03b5ee6b0ea246e3e02f",
+          "branch": "art/nino-venezia-scalloped-20261031 / PR66",
+          "blob": "883625438e29019a89cb3b372d31012f4edd4ef8"
+        }
+      ],
+      "dimensions": [
+        1586,
+        992
+      ],
+      "format": "PNG",
+      "mode": "RGBA",
+      "alpha": {
+        "range": [
+          0,
+          255
+        ],
+        "transparent_pixels": 319509,
+        "partial_pixels": 1253720,
+        "opaque_pixels": 83
+      },
+      "color_profile": {
+        "icc": false,
+        "gamma": null,
+        "srgb": null
+      },
+      "visual_approval": {
+        "review": "9e58e756f124ff37d47b4ebcfd274684125d8aeb",
+        "artwork": "ARCHIVAL REFERENCE",
+        "qa": "REWORK",
+        "notes": [
+          "Not a blank runtime base: old baked postmark/content. New folios replace this need; no new full-book repaint required."
+        ]
+      },
+      "export_readiness": "source only; audited at pinned source Git blob, intentionally not duplicated into integration tree",
+      "runtime_usage": "NOT INTEGRATED",
+      "missing_dependencies": [
+        "owner folio resolution exception; native1086x1448, <=543 CSS px/page at DPR2; no passport UI in PR61"
+      ],
+      "intended_runtime_placement": "Future shared passport folio shell; no fixed concept-page backgrounds",
+      "decoded_RGBA_sha256": "d125644669c38615d76a4f283ad0d1f54f22c386b2817901b2aa8410dadcdee1",
+      "status": "READY"
+    }
+  ],
+  "scope": "Source/provenance only: no image decode, npm/build or browser execution; no current derivative visual acceptance."
+}

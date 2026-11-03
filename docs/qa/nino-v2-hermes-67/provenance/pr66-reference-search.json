@@ -1,0 +1,40 @@
+{
+  "body": "**31 Oct 2026 \u2014 Owner visually approved the original Venezia postcard with the authentic transparent scalloped edge.** Original painting is unchanged; Rialto Bridge feels a little oversized to the owner but is explicitly a later optional redesign, not a release blocker. This scoped art branch commits the 572-point approved-stamp contour and a tested Pillow-based exporter to generate full and tight transparent 1536\u00d71024 PNG + lossless WebP from the existing repository master. It keeps original RGB pixels unchanged; rebuilt SVG-derived edge alpha is a close approximation (a measured 0.1264% of pixels deviate by >64 alpha from owner-reviewed raster matte), so not byte-identical to the original reviewed export. Exact owner-reviewed large PNG/WebP binaries were generated locally but **not pushed** due to connector binary transfer limit; do not claim them as Git files. See `assets/nino/travel-passport/postcards/exports/README.md`. Local generation and lossless WebP vs PNG pixel equality were executed. No app/integration/award logic changed; Hermes integration remains separate, no merge/deploy requested.",
+  "comments": [],
+  "files": [
+    {
+      "path": "assets/nino/travel-passport/postcards/exports/README.md",
+      "additions": 30,
+      "deletions": 0,
+      "changeType": "ADDED"
+    },
+    {
+      "path": "assets/nino/travel-passport/postcards/exports/postcard-04-venezia-approved-contour.svg",
+      "additions": 4,
+      "deletions": 0,
+      "changeType": "ADDED"
+    },
+    {
+      "path": "scripts/build_venezia_postcard.py",
+      "additions": 71,
+      "deletions": 0,
+      "changeType": "ADDED"
+    }
+  ],
+  "number": 66,
+  "reviews": [],
+  "url": "https://github.com/dennisariens/topo/pull/66",
+  "inline_review_comments": [],
+  "checked_api_handles": [
+    "https://api.github.com/repos/dennisariens/topo/issues/66/comments",
+    "https://api.github.com/repos/dennisariens/topo/pulls/66/reviews",
+    "https://api.github.com/repos/dennisariens/topo/pulls/66/comments",
+    "https://api.github.com/repos/dennisariens/topo/git/trees/cec9fd26ac858bdbcbdf03b5ee6b0ea246e3e02f?recursive=1"
+  ],
+  "attachment_urls_in_body_comments_reviews": [],
+  "pinned_tree_venezia_or_zip_paths": [
+    "assets/nino/travel-passport/postcards/exports/postcard-04-venezia-approved-contour.svg",
+    "assets/nino/travel-passport/postcards/masters/postcard-04-venezia-front.png",
+    "scripts/build_venezia_postcard.py"
+  ]
+}

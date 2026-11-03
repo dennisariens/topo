@@ -1,0 +1,23 @@
+{
+  "status": "FAIL",
+  "version": "156.0.8078.74",
+  "cases": 5,
+  "failure": "page.evaluate: TypeError: Cannot read properties of null (reading 'ok')\n    at eval (eval at evaluate (:370:30), <anonymous>:1:35)\n    at UtilityScript.evaluate (<anonymous>:372:16)\n    at UtilityScript.<anonymous> (<anonymous>:1:44)\n    at stage (/Users/dennisariens/projects/topo-nino-v2-independent-qa/docs/qa/nino-v2-hermes-67/browser-qa.mjs:20:869)\n    at async file:///Users/dennisariens/projects/topo-nino-v2-independent-qa/docs/qa/nino-v2-hermes-67/browser-qa.mjs:27:21",
+  "network": [],
+  "errors": [],
+  "unexpectedConsoleErrors": []
+}
+node:internal/modules/run_main:107
+    triggerUncaughtException(
+    ^
+
+page.evaluate: TypeError: Cannot read properties of null (reading 'ok')
+    at eval (eval at evaluate (:370:30), <anonymous>:1:35)
+    at UtilityScript.evaluate (<anonymous>:372:16)
+    at UtilityScript.<anonymous> (<anonymous>:1:44)
+    at stage (/Users/dennisariens/projects/topo-nino-v2-independent-qa/docs/qa/nino-v2-hermes-67/browser-qa.mjs:20:869)
+    at async file:///Users/dennisariens/projects/topo-nino-v2-independent-qa/docs/qa/nino-v2-hermes-67/browser-qa.mjs:27:21 {
+  log: []
+}
+
+Node.js v24.15.0

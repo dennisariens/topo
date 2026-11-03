@@ -1,0 +1,65 @@
+{
+  "approved_owner_matte_comparison": {
+    "reason": "No exact owner-reviewed raster matte binary/path/blob supplied; reconstructed export inspection cannot establish equality or independently reproduce historical 0.1264% tolerance.",
+    "status": "BLOCKED"
+  },
+  "full_RGB_source_exact": true,
+  "full_alpha_values": [
+    0,
+    255
+  ],
+  "full_nonzero_alpha_bbox": [
+    32,
+    35,
+    1511,
+    990
+  ],
+  "full_png_webp": {
+    "alpha_equal": true,
+    "changed_RGBA_pixels": 213487,
+    "changed_RGB_pixels": 213487,
+    "changed_alpha_pixels": 0,
+    "changed_visible_RGBA_pixels": 0,
+    "decoded_RGBA_equal": false,
+    "invisible_RGB_only_changed_pixels": 213487,
+    "size": [
+      1536,
+      1024
+    ],
+    "visible_RGBA_equal": true
+  },
+  "tight_crop_half_open": [
+    23,
+    26,
+    1520,
+    999
+  ],
+  "tight_equals_full_crop": {
+    "alpha_equal": true,
+    "changed_RGBA_pixels": 0,
+    "changed_RGB_pixels": 0,
+    "changed_alpha_pixels": 0,
+    "changed_visible_RGBA_pixels": 0,
+    "decoded_RGBA_equal": true,
+    "invisible_RGB_only_changed_pixels": 0,
+    "size": [
+      1497,
+      973
+    ],
+    "visible_RGBA_equal": true
+  },
+  "tight_png_webp": {
+    "alpha_equal": true,
+    "changed_RGBA_pixels": 97198,
+    "changed_RGB_pixels": 97198,
+    "changed_alpha_pixels": 0,
+    "changed_visible_RGBA_pixels": 0,
+    "decoded_RGBA_equal": false,
+    "invisible_RGB_only_changed_pixels": 97198,
+    "size": [
+      1497,
+      973
+    ],
+    "visible_RGBA_equal": true
+  }
+}

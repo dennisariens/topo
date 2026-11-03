@@ -1,0 +1,26 @@
+{
+  "browser": "156.0.8078.80",
+  "cases": [
+    {
+      "reducedMotion": "no-preference",
+      "distinct": {
+        "margherita": 2,
+        "salami": 2,
+        "quattro-formaggi": 2
+      },
+      "errors": [],
+      "external": []
+    },
+    {
+      "reducedMotion": "reduce",
+      "distinct": {
+        "margherita": 2,
+        "salami": 2,
+        "quattro-formaggi": 2
+      },
+      "errors": [],
+      "external": []
+    }
+  ],
+  "reducedMotion": "Animated WebPs still move with prefers-reduced-motion:reduce. Consumer must select an approved static fallback; no automatic asset-level suppression or runtime implementation was verified."
+}

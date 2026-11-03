@@ -1,0 +1,116 @@
+{
+  "target": "8414319186c834cad091231d6c9beed6068b5876",
+  "package": "Pinned CI source-preserving ZIP, NOT Reviewv2",
+  "browser": "156.0.8078.80",
+  "transport": "actual file:// offline:true",
+  "scope": "Diagnostic playback page, not app integration, not physical iPad",
+  "movies": {
+    "margherita": {
+      "bytes": 1396396,
+      "sha256": "6142c5dddd210034bd398300883e07ea1440f18f075c61796fea1d87445c0040"
+    },
+    "salami": {
+      "bytes": 1418170,
+      "sha256": "5af3ab458cd11c523a0083888ed90f83a3ff562c1c4e045d47f2f4d12ebaf133"
+    },
+    "quattro-formaggi": {
+      "bytes": 1362620,
+      "sha256": "a8b09680f7459b550f9b65804c63137dff01a49f7c3221c01b562eed17c9af23"
+    }
+  },
+  "records": [
+    {
+      "reducedMotion": "no-preference",
+      "distinctDecodedSamples": {
+        "margherita": 2,
+        "salami": 2,
+        "quattro-formaggi": 2
+      },
+      "prefersReduced": false,
+      "images": [
+        {
+          "id": "margherita",
+          "natural": [
+            1254,
+            1254
+          ],
+          "painted": [
+            362,
+            362
+          ]
+        },
+        {
+          "id": "salami",
+          "natural": [
+            1254,
+            1254
+          ],
+          "painted": [
+            362,
+            362
+          ]
+        },
+        {
+          "id": "quattro-formaggi",
+          "natural": [
+            1254,
+            1254
+          ],
+          "painted": [
+            362,
+            362
+          ]
+        }
+      ],
+      "errors": [],
+      "external": []
+    },
+    {
+      "reducedMotion": "reduce",
+      "distinctDecodedSamples": {
+        "margherita": 2,
+        "salami": 2,
+        "quattro-formaggi": 2
+      },
+      "prefersReduced": true,
+      "images": [
+        {
+          "id": "margherita",
+          "natural": [
+            1254,
+            1254
+          ],
+          "painted": [
+            362,
+            362
+          ]
+        },
+        {
+          "id": "salami",
+          "natural": [
+            1254,
+            1254
+          ],
+          "painted": [
+            362,
+            362
+          ]
+        },
+        {
+          "id": "quattro-formaggi",
+          "natural": [
+            1254,
+            1254
+          ],
+          "painted": [
+            362,
+            362
+          ]
+        }
+      ],
+      "errors": [],
+      "external": []
+    }
+  ],
+  "reducedMotionConclusion": "Animated WebPs still move with prefers-reduced-motion:reduce. Consumer must select an approved static fallback; no automatic asset-level suppression or runtime implementation was verified."
+}

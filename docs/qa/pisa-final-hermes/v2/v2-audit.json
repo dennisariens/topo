@@ -1,0 +1,1597 @@
+{
+  "reviewV2Zip": {
+    "filename": "NINO_PISA_FINAL_ARTWORK_REVIEW_v2.zip",
+    "sha256": "b314beb412d9eb5fb4cd33cb1b3fe297343121869f1cfd16659887cc3b78442d",
+    "bytes": 20357014,
+    "files": 32
+  },
+  "manifestRows": [
+    {
+      "path": "QA-REPORT.md",
+      "sha256": "025d9beb7331380b3e2402695a3680e2a13240bccc9178369f90e71e6969cb44",
+      "bytes": 1509,
+      "manifestMatches": true
+    },
+    {
+      "path": "README.md",
+      "sha256": "d8b7f2486684ba41d3690952969ae18bf5fa0c7039fa70308de411c44fd494b1",
+      "bytes": 1296,
+      "manifestMatches": true
+    },
+    {
+      "path": "layers/front-rim-occlusion.png",
+      "sha256": "9b080bf067c4be3c5ceb84e2129ab2e1c49e2fe7a42de437fc19de2c563234cf",
+      "bytes": 150291,
+      "manifestMatches": true
+    },
+    {
+      "path": "layers/lid-exterior-closed-registered.png",
+      "sha256": "10cc9dc803d36dd7fb6edc65051ab4042b53f50c310cb277ef0c688685b72368",
+      "bytes": 686905,
+      "manifestMatches": true
+    },
+    {
+      "path": "layers/lid-interior-open-registered.png",
+      "sha256": "e27978b5d710b86e8086c9accbe355254a7b0973d67ebb638b5adf05c536c3d2",
+      "bytes": 285321,
+      "manifestMatches": true
+    },
+    {
+      "path": "layers/pizza-margherita.png",
+      "sha256": "b043b9bbcdcefa0a594cc25bfe54bb68e7f1a94b4d9f4b7747bf72ba015d4739",
+      "bytes": 486100,
+      "manifestMatches": true
+    },
+    {
+      "path": "layers/pizza-quattro-formaggi.png",
+      "sha256": "24b7c27fb3c1f83063ef220a4d52ff23c8c3f66a081ef32bbeb0e4c40c21b470",
+      "bytes": 475260,
+      "manifestMatches": true
+    },
+    {
+      "path": "layers/pizza-salami.png",
+      "sha256": "f84aa759fc85f0af7af41ceefdfcec92fa59058b4d015310d4498cc70d465646",
+      "bytes": 522767,
+      "manifestMatches": true
+    },
+    {
+      "path": "layers/tray-empty-corrected.png",
+      "sha256": "c4506f273d58f8ec0d6d92429cb55c56173fcd00ee41b22c9602f6991c1ba24d",
+      "bytes": 299592,
+      "manifestMatches": true
+    },
+    {
+      "path": "motion/pisa-open-margherita.webp",
+      "sha256": "d4c512d47da095e9772ae4676a7aca20bc5300ec9e3e4e376a828f8a1950a6d4",
+      "bytes": 1442840,
+      "manifestMatches": true
+    },
+    {
+      "path": "motion/pisa-open-quattro-formaggi.webp",
+      "sha256": "e4e63341f1d1d4b9d264edee277d5d0a79c2940e91730511b592d15176498e0e",
+      "bytes": 1411670,
+      "manifestMatches": true
+    },
+    {
+      "path": "motion/pisa-open-salami.webp",
+      "sha256": "d72fbfc64ae87f5825dc72ff6d013e7adfb93f43aba2a8a3e9889856c9e68a20",
+      "bytes": 1468902,
+      "manifestMatches": true
+    },
+    {
+      "path": "proof/contact-sheet.png",
+      "sha256": "f985a47effa619d49798664218f6420d38561972c0f77724cd6d125bb416c950",
+      "bytes": 206533,
+      "manifestMatches": true
+    },
+    {
+      "path": "proof/margherita-00-0deg.png",
+      "sha256": "3714580832eb0973b2280ea76b24e1fd97eb40aa6d3ca0cf58049ecedd7eeb9a",
+      "bytes": 718951,
+      "manifestMatches": true
+    },
+    {
+      "path": "proof/margherita-01-18deg.png",
+      "sha256": "981a3fbb68640a4478d3bf44bb33aa88673d954ba4e2b810ec26009d4138deaf",
+      "bytes": 675057,
+      "manifestMatches": true
+    },
+    {
+      "path": "proof/margherita-02-35deg.png",
+      "sha256": "2126a9d3b17174483258da9f8c0f07d77313358ec5c6783e62788740c73c8a25",
+      "bytes": 656083,
+      "manifestMatches": true
+    },
+    {
+      "path": "proof/margherita-03-53deg.png",
+      "sha256": "c92e80bdf03cbf5acb5095911a227eeff5548561eb443e71ecb4aff1d64421c9",
+      "bytes": 799398,
+      "manifestMatches": true
+    },
+    {
+      "path": "proof/margherita-04-70deg.png",
+      "sha256": "9830c2406ada01c0bdfa470025b8ca01b1e7f49cc4349800cc66223cfda89dca",
+      "bytes": 904293,
+      "manifestMatches": true
+    },
+    {
+      "path": "proof/quattro-formaggi-00-0deg.png",
+      "sha256": "63044ba477ccd0ccfcd3fa9f0177de378b51675c3fe0e84cb95ba4226cafa75b",
+      "bytes": 718981,
+      "manifestMatches": true
+    },
+    {
+      "path": "proof/quattro-formaggi-01-18deg.png",
+      "sha256": "adfb51c9510bd00b245cf334097711430433424abf8128bd01f1a2c036b8ba9f",
+      "bytes": 674211,
+      "manifestMatches": true
+    },
+    {
+      "path": "proof/quattro-formaggi-02-35deg.png",
+      "sha256": "e66bde1ce07fbd89623ce174b6588e7a81babce3de3de1947129c19581946ea5",
+      "bytes": 644986,
+      "manifestMatches": true
+    },
+    {
+      "path": "proof/quattro-formaggi-03-53deg.png",
+      "sha256": "3aa0a29e8430dfb93e4a9cdf59a9b3673bdb0b0193878b32075a6091ed8eedc9",
+      "bytes": 788871,
+      "manifestMatches": true
+    },
+    {
+      "path": "proof/quattro-formaggi-04-70deg.png",
+      "sha256": "6da64e490cfedc7bdaa325f0a30d8270be45598b5fac4f077d08ed1b3dfdd6e0",
+      "bytes": 894107,
+      "manifestMatches": true
+    },
+    {
+      "path": "proof/salami-00-0deg.png",
+      "sha256": "4f1d6fe2c5655866a6f868b92e75aa3c211abe1452292808d06222c9d7cd0d73",
+      "bytes": 718962,
+      "manifestMatches": true
+    },
+    {
+      "path": "proof/salami-01-18deg.png",
+      "sha256": "bb53bea6900d09b1a197edfe4d599356dd4cbcced39a861b7ce027afcb852bf6",
+      "bytes": 677012,
+      "manifestMatches": true
+    },
+    {
+      "path": "proof/salami-02-35deg.png",
+      "sha256": "ae9f0a74498ddda73e49691cac38366887818a66db38bc5a759960a486abd0e8",
+      "bytes": 670427,
+      "manifestMatches": true
+    },
+    {
+      "path": "proof/salami-03-53deg.png",
+      "sha256": "028403309b510a7ef0fbdeabb5416e852bf67b0a9664d24fac496ee3a4af5165",
+      "bytes": 816764,
+      "manifestMatches": true
+    },
+    {
+      "path": "proof/salami-04-70deg.png",
+      "sha256": "8b2ce618cf1be32cce90d7d78a50f9da0828a7ab987d1919535059f0f23e67c5",
+      "bytes": 920859,
+      "manifestMatches": true
+    },
+    {
+      "path": "review.html",
+      "sha256": "d8fa7c9b9b4a7cc308741a383432849b64700700e0b44e0789d6a1e7ee17c466",
+      "bytes": 2086,
+      "manifestMatches": true
+    },
+    {
+      "path": "textures/lid-exterior-original-uv.png",
+      "sha256": "9a785da32b3fba94a96a9008af60743c7ff549ae7a12372a4d566515ff7974dc",
+      "bytes": 1372108,
+      "manifestMatches": true
+    },
+    {
+      "path": "textures/lid-interior-kraft-uv.png",
+      "sha256": "eab98f96114b563747c48baad990d389d939e5059c7db3fd453ee705fd1692e5",
+      "bytes": 445759,
+      "manifestMatches": true
+    }
+  ],
+  "images": [
+    {
+      "path": "proof/quattro-formaggi-03-53deg.png",
+      "bytes": 788871,
+      "sha256": "3aa0a29e8430dfb93e4a9cdf59a9b3673bdb0b0193878b32075a6091ed8eedc9",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "frames": 1,
+      "durationMs": 0,
+      "durations": [
+        0
+      ],
+      "loop": null,
+      "alphaRange": [
+        0,
+        255
+      ],
+      "firstAlphaBBox": [
+        172,
+        199,
+        958,
+        1133
+      ],
+      "edgeAlphaContact": false,
+      "ciPath": "proof/quattro-formaggi-3-angle53.png",
+      "bytesEqualCI": false,
+      "rgbaCompareFirst": {
+        "sameDimensions": true,
+        "decodedEqual": false,
+        "changedRGBPixels": 59236,
+        "changedAlphaPixels": 3116,
+        "changedVisibleRGBA": 59287,
+        "differenceBBox": [
+          172,
+          199,
+          958,
+          1049
+        ]
+      },
+      "allDecodedFramesEqualCI": false,
+      "durationsEqualCI": true
+    },
+    {
+      "path": "proof/margherita-01-18deg.png",
+      "bytes": 675057,
+      "sha256": "981a3fbb68640a4478d3bf44bb33aa88673d954ba4e2b810ec26009d4138deaf",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "frames": 1,
+      "durationMs": 0,
+      "durations": [
+        0
+      ],
+      "loop": null,
+      "alphaRange": [
+        0,
+        255
+      ],
+      "firstAlphaBBox": [
+        54,
+        568,
+        926,
+        1133
+      ],
+      "edgeAlphaContact": false,
+      "ciPath": "proof/margherita-1-angle18.png",
+      "bytesEqualCI": false,
+      "rgbaCompareFirst": {
+        "sameDimensions": true,
+        "decodedEqual": false,
+        "changedRGBPixels": 58768,
+        "changedAlphaPixels": 1440,
+        "changedVisibleRGBA": 58778,
+        "differenceBBox": [
+          54,
+          576,
+          908,
+          1049
+        ]
+      },
+      "allDecodedFramesEqualCI": false,
+      "durationsEqualCI": true
+    },
+    {
+      "path": "proof/margherita-02-35deg.png",
+      "bytes": 656083,
+      "sha256": "2126a9d3b17174483258da9f8c0f07d77313358ec5c6783e62788740c73c8a25",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "frames": 1,
+      "durationMs": 0,
+      "durations": [
+        0
+      ],
+      "loop": null,
+      "alphaRange": [
+        0,
+        255
+      ],
+      "firstAlphaBBox": [
+        76,
+        463,
+        926,
+        1133
+      ],
+      "edgeAlphaContact": false,
+      "ciPath": "proof/margherita-2-angle35.png",
+      "bytesEqualCI": false,
+      "rgbaCompareFirst": {
+        "sameDimensions": true,
+        "decodedEqual": false,
+        "changedRGBPixels": 34537,
+        "changedAlphaPixels": 1809,
+        "changedVisibleRGBA": 34539,
+        "differenceBBox": [
+          76,
+          463,
+          908,
+          1049
+        ]
+      },
+      "allDecodedFramesEqualCI": false,
+      "durationsEqualCI": true
+    },
+    {
+      "path": "proof/margherita-04-70deg.png",
+      "bytes": 904293,
+      "sha256": "9830c2406ada01c0bdfa470025b8ca01b1e7f49cc4349800cc66223cfda89dca",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "frames": 1,
+      "durationMs": 0,
+      "durations": [
+        0
+      ],
+      "loop": null,
+      "alphaRange": [
+        0,
+        255
+      ],
+      "firstAlphaBBox": [
+        180,
+        19,
+        1074,
+        1133
+      ],
+      "edgeAlphaContact": false,
+      "ciPath": "proof/margherita-4-angle70.png",
+      "bytesEqualCI": false,
+      "rgbaCompareFirst": {
+        "sameDimensions": true,
+        "decodedEqual": false,
+        "changedRGBPixels": 81446,
+        "changedAlphaPixels": 3520,
+        "changedVisibleRGBA": 81528,
+        "differenceBBox": [
+          287,
+          19,
+          1074,
+          1049
+        ]
+      },
+      "allDecodedFramesEqualCI": false,
+      "durationsEqualCI": true
+    },
+    {
+      "path": "proof/salami-03-53deg.png",
+      "bytes": 816764,
+      "sha256": "028403309b510a7ef0fbdeabb5416e852bf67b0a9664d24fac496ee3a4af5165",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "frames": 1,
+      "durationMs": 0,
+      "durations": [
+        0
+      ],
+      "loop": null,
+      "alphaRange": [
+        0,
+        255
+      ],
+      "firstAlphaBBox": [
+        172,
+        199,
+        958,
+        1133
+      ],
+      "edgeAlphaContact": false,
+      "ciPath": "proof/salami-3-angle53.png",
+      "bytesEqualCI": false,
+      "rgbaCompareFirst": {
+        "sameDimensions": true,
+        "decodedEqual": false,
+        "changedRGBPixels": 62793,
+        "changedAlphaPixels": 3116,
+        "changedVisibleRGBA": 62844,
+        "differenceBBox": [
+          172,
+          199,
+          958,
+          1049
+        ]
+      },
+      "allDecodedFramesEqualCI": false,
+      "durationsEqualCI": true
+    },
+    {
+      "path": "proof/salami-00-0deg.png",
+      "bytes": 718962,
+      "sha256": "4f1d6fe2c5655866a6f868b92e75aa3c211abe1452292808d06222c9d7cd0d73",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "frames": 1,
+      "durationMs": 0,
+      "durations": [
+        0
+      ],
+      "loop": null,
+      "alphaRange": [
+        0,
+        255
+      ],
+      "firstAlphaBBox": [
+        92,
+        568,
+        926,
+        1212
+      ],
+      "edgeAlphaContact": false,
+      "ciPath": "proof/salami-0-angle0.png",
+      "bytesEqualCI": false,
+      "rgbaCompareFirst": {
+        "sameDimensions": true,
+        "decodedEqual": false,
+        "changedRGBPixels": 65963,
+        "changedAlphaPixels": 2771,
+        "changedVisibleRGBA": 66115,
+        "differenceBBox": [
+          92,
+          576,
+          908,
+          1212
+        ]
+      },
+      "allDecodedFramesEqualCI": false,
+      "durationsEqualCI": true
+    },
+    {
+      "path": "proof/quattro-formaggi-01-18deg.png",
+      "bytes": 674211,
+      "sha256": "adfb51c9510bd00b245cf334097711430433424abf8128bd01f1a2c036b8ba9f",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "frames": 1,
+      "durationMs": 0,
+      "durations": [
+        0
+      ],
+      "loop": null,
+      "alphaRange": [
+        0,
+        255
+      ],
+      "firstAlphaBBox": [
+        54,
+        568,
+        926,
+        1133
+      ],
+      "edgeAlphaContact": false,
+      "ciPath": "proof/quattro-formaggi-1-angle18.png",
+      "bytesEqualCI": false,
+      "rgbaCompareFirst": {
+        "sameDimensions": true,
+        "decodedEqual": false,
+        "changedRGBPixels": 58621,
+        "changedAlphaPixels": 1440,
+        "changedVisibleRGBA": 58631,
+        "differenceBBox": [
+          54,
+          576,
+          908,
+          1049
+        ]
+      },
+      "allDecodedFramesEqualCI": false,
+      "durationsEqualCI": true
+    },
+    {
+      "path": "proof/margherita-03-53deg.png",
+      "bytes": 799398,
+      "sha256": "c92e80bdf03cbf5acb5095911a227eeff5548561eb443e71ecb4aff1d64421c9",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "frames": 1,
+      "durationMs": 0,
+      "durations": [
+        0
+      ],
+      "loop": null,
+      "alphaRange": [
+        0,
+        255
+      ],
+      "firstAlphaBBox": [
+        172,
+        199,
+        958,
+        1133
+      ],
+      "edgeAlphaContact": false,
+      "ciPath": "proof/margherita-3-angle53.png",
+      "bytesEqualCI": false,
+      "rgbaCompareFirst": {
+        "sameDimensions": true,
+        "decodedEqual": false,
+        "changedRGBPixels": 60135,
+        "changedAlphaPixels": 3116,
+        "changedVisibleRGBA": 60186,
+        "differenceBBox": [
+          172,
+          199,
+          958,
+          1049
+        ]
+      },
+      "allDecodedFramesEqualCI": false,
+      "durationsEqualCI": true
+    },
+    {
+      "path": "proof/quattro-formaggi-00-0deg.png",
+      "bytes": 718981,
+      "sha256": "63044ba477ccd0ccfcd3fa9f0177de378b51675c3fe0e84cb95ba4226cafa75b",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "frames": 1,
+      "durationMs": 0,
+      "durations": [
+        0
+      ],
+      "loop": null,
+      "alphaRange": [
+        0,
+        255
+      ],
+      "firstAlphaBBox": [
+        92,
+        568,
+        926,
+        1212
+      ],
+      "edgeAlphaContact": false,
+      "ciPath": "proof/quattro-formaggi-0-angle0.png",
+      "bytesEqualCI": false,
+      "rgbaCompareFirst": {
+        "sameDimensions": true,
+        "decodedEqual": false,
+        "changedRGBPixels": 65962,
+        "changedAlphaPixels": 2769,
+        "changedVisibleRGBA": 66114,
+        "differenceBBox": [
+          92,
+          576,
+          908,
+          1212
+        ]
+      },
+      "allDecodedFramesEqualCI": false,
+      "durationsEqualCI": true
+    },
+    {
+      "path": "proof/quattro-formaggi-02-35deg.png",
+      "bytes": 644986,
+      "sha256": "e66bde1ce07fbd89623ce174b6588e7a81babce3de3de1947129c19581946ea5",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "frames": 1,
+      "durationMs": 0,
+      "durations": [
+        0
+      ],
+      "loop": null,
+      "alphaRange": [
+        0,
+        255
+      ],
+      "firstAlphaBBox": [
+        76,
+        463,
+        926,
+        1133
+      ],
+      "edgeAlphaContact": false,
+      "ciPath": "proof/quattro-formaggi-2-angle35.png",
+      "bytesEqualCI": false,
+      "rgbaCompareFirst": {
+        "sameDimensions": true,
+        "decodedEqual": false,
+        "changedRGBPixels": 33794,
+        "changedAlphaPixels": 1809,
+        "changedVisibleRGBA": 33796,
+        "differenceBBox": [
+          76,
+          463,
+          908,
+          1049
+        ]
+      },
+      "allDecodedFramesEqualCI": false,
+      "durationsEqualCI": true
+    },
+    {
+      "path": "proof/quattro-formaggi-04-70deg.png",
+      "bytes": 894107,
+      "sha256": "6da64e490cfedc7bdaa325f0a30d8270be45598b5fac4f077d08ed1b3dfdd6e0",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "frames": 1,
+      "durationMs": 0,
+      "durations": [
+        0
+      ],
+      "loop": null,
+      "alphaRange": [
+        0,
+        255
+      ],
+      "firstAlphaBBox": [
+        180,
+        19,
+        1074,
+        1133
+      ],
+      "edgeAlphaContact": false,
+      "ciPath": "proof/quattro-formaggi-4-angle70.png",
+      "bytesEqualCI": false,
+      "rgbaCompareFirst": {
+        "sameDimensions": true,
+        "decodedEqual": false,
+        "changedRGBPixels": 80547,
+        "changedAlphaPixels": 3520,
+        "changedVisibleRGBA": 80629,
+        "differenceBBox": [
+          287,
+          19,
+          1074,
+          1049
+        ]
+      },
+      "allDecodedFramesEqualCI": false,
+      "durationsEqualCI": true
+    },
+    {
+      "path": "proof/contact-sheet.png",
+      "bytes": 206533,
+      "sha256": "f985a47effa619d49798664218f6420d38561972c0f77724cd6d125bb416c950",
+      "dimensions": [
+        1800,
+        905
+      ],
+      "frames": 1,
+      "durationMs": 0,
+      "durations": [
+        0
+      ],
+      "loop": null,
+      "alphaRange": [
+        255,
+        255
+      ],
+      "firstAlphaBBox": [
+        0,
+        0,
+        1800,
+        905
+      ],
+      "edgeAlphaContact": true,
+      "ciPath": "proof/contact-sheet.png",
+      "bytesEqualCI": false,
+      "rgbaCompareFirst": {
+        "sameDimensions": false
+      },
+      "allDecodedFramesEqualCI": false,
+      "durationsEqualCI": true
+    },
+    {
+      "path": "proof/salami-01-18deg.png",
+      "bytes": 677012,
+      "sha256": "bb53bea6900d09b1a197edfe4d599356dd4cbcced39a861b7ce027afcb852bf6",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "frames": 1,
+      "durationMs": 0,
+      "durations": [
+        0
+      ],
+      "loop": null,
+      "alphaRange": [
+        0,
+        255
+      ],
+      "firstAlphaBBox": [
+        54,
+        568,
+        926,
+        1133
+      ],
+      "edgeAlphaContact": false,
+      "ciPath": "proof/salami-1-angle18.png",
+      "bytesEqualCI": false,
+      "rgbaCompareFirst": {
+        "sameDimensions": true,
+        "decodedEqual": false,
+        "changedRGBPixels": 58995,
+        "changedAlphaPixels": 1442,
+        "changedVisibleRGBA": 59005,
+        "differenceBBox": [
+          54,
+          576,
+          908,
+          1049
+        ]
+      },
+      "allDecodedFramesEqualCI": false,
+      "durationsEqualCI": true
+    },
+    {
+      "path": "proof/salami-02-35deg.png",
+      "bytes": 670427,
+      "sha256": "ae9f0a74498ddda73e49691cac38366887818a66db38bc5a759960a486abd0e8",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "frames": 1,
+      "durationMs": 0,
+      "durations": [
+        0
+      ],
+      "loop": null,
+      "alphaRange": [
+        0,
+        255
+      ],
+      "firstAlphaBBox": [
+        76,
+        463,
+        926,
+        1133
+      ],
+      "edgeAlphaContact": false,
+      "ciPath": "proof/salami-2-angle35.png",
+      "bytesEqualCI": false,
+      "rgbaCompareFirst": {
+        "sameDimensions": true,
+        "decodedEqual": false,
+        "changedRGBPixels": 37133,
+        "changedAlphaPixels": 1811,
+        "changedVisibleRGBA": 37135,
+        "differenceBBox": [
+          76,
+          463,
+          908,
+          1049
+        ]
+      },
+      "allDecodedFramesEqualCI": false,
+      "durationsEqualCI": true
+    },
+    {
+      "path": "proof/margherita-00-0deg.png",
+      "bytes": 718951,
+      "sha256": "3714580832eb0973b2280ea76b24e1fd97eb40aa6d3ca0cf58049ecedd7eeb9a",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "frames": 1,
+      "durationMs": 0,
+      "durations": [
+        0
+      ],
+      "loop": null,
+      "alphaRange": [
+        0,
+        255
+      ],
+      "firstAlphaBBox": [
+        92,
+        568,
+        926,
+        1212
+      ],
+      "edgeAlphaContact": false,
+      "ciPath": "proof/margherita-0-angle0.png",
+      "bytesEqualCI": false,
+      "rgbaCompareFirst": {
+        "sameDimensions": true,
+        "decodedEqual": false,
+        "changedRGBPixels": 65963,
+        "changedAlphaPixels": 2769,
+        "changedVisibleRGBA": 66115,
+        "differenceBBox": [
+          92,
+          576,
+          908,
+          1212
+        ]
+      },
+      "allDecodedFramesEqualCI": false,
+      "durationsEqualCI": true
+    },
+    {
+      "path": "proof/salami-04-70deg.png",
+      "bytes": 920859,
+      "sha256": "8b2ce618cf1be32cce90d7d78a50f9da0828a7ab987d1919535059f0f23e67c5",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "frames": 1,
+      "durationMs": 0,
+      "durations": [
+        0
+      ],
+      "loop": null,
+      "alphaRange": [
+        0,
+        255
+      ],
+      "firstAlphaBBox": [
+        180,
+        19,
+        1074,
+        1133
+      ],
+      "edgeAlphaContact": false,
+      "ciPath": "proof/salami-4-angle70.png",
+      "bytesEqualCI": false,
+      "rgbaCompareFirst": {
+        "sameDimensions": true,
+        "decodedEqual": false,
+        "changedRGBPixels": 84104,
+        "changedAlphaPixels": 3520,
+        "changedVisibleRGBA": 84186,
+        "differenceBBox": [
+          287,
+          19,
+          1074,
+          1049
+        ]
+      },
+      "allDecodedFramesEqualCI": false,
+      "durationsEqualCI": true
+    },
+    {
+      "path": "textures/lid-exterior-original-uv.png",
+      "bytes": 1372108,
+      "sha256": "9a785da32b3fba94a96a9008af60743c7ff549ae7a12372a4d566515ff7974dc",
+      "dimensions": [
+        800,
+        800
+      ],
+      "frames": 1,
+      "durationMs": 0,
+      "durations": [
+        0
+      ],
+      "loop": null,
+      "alphaRange": [
+        255,
+        255
+      ],
+      "firstAlphaBBox": [
+        0,
+        0,
+        800,
+        800
+      ],
+      "edgeAlphaContact": true,
+      "ciPath": "textures/lid-exterior-original-uv.png",
+      "bytesEqualCI": false,
+      "rgbaCompareFirst": {
+        "sameDimensions": true,
+        "decodedEqual": true,
+        "changedRGBPixels": 0,
+        "changedAlphaPixels": 0,
+        "changedVisibleRGBA": 0,
+        "differenceBBox": null
+      },
+      "allDecodedFramesEqualCI": true,
+      "durationsEqualCI": true
+    },
+    {
+      "path": "textures/lid-interior-kraft-uv.png",
+      "bytes": 445759,
+      "sha256": "eab98f96114b563747c48baad990d389d939e5059c7db3fd453ee705fd1692e5",
+      "dimensions": [
+        800,
+        800
+      ],
+      "frames": 1,
+      "durationMs": 0,
+      "durations": [
+        0
+      ],
+      "loop": null,
+      "alphaRange": [
+        255,
+        255
+      ],
+      "firstAlphaBBox": [
+        0,
+        0,
+        800,
+        800
+      ],
+      "edgeAlphaContact": true,
+      "ciPath": "textures/lid-interior-kraft-uv.png",
+      "bytesEqualCI": false,
+      "rgbaCompareFirst": {
+        "sameDimensions": true,
+        "decodedEqual": false,
+        "changedRGBPixels": 54419,
+        "changedAlphaPixels": 0,
+        "changedVisibleRGBA": 54419,
+        "differenceBBox": [
+          8,
+          8,
+          792,
+          792
+        ]
+      },
+      "allDecodedFramesEqualCI": false,
+      "durationsEqualCI": true
+    },
+    {
+      "path": "layers/tray-empty-corrected.png",
+      "bytes": 299592,
+      "sha256": "c4506f273d58f8ec0d6d92429cb55c56173fcd00ee41b22c9602f6991c1ba24d",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "frames": 1,
+      "durationMs": 0,
+      "durations": [
+        0
+      ],
+      "loop": null,
+      "alphaRange": [
+        0,
+        255
+      ],
+      "firstAlphaBBox": [
+        180,
+        568,
+        926,
+        1133
+      ],
+      "edgeAlphaContact": false,
+      "ciPath": "layers/tray.png",
+      "bytesEqualCI": false,
+      "rgbaCompareFirst": {
+        "sameDimensions": true,
+        "decodedEqual": false,
+        "changedRGBPixels": 176058,
+        "changedAlphaPixels": 0,
+        "changedVisibleRGBA": 165300,
+        "differenceBBox": [
+          287,
+          610,
+          855,
+          1056
+        ]
+      },
+      "allDecodedFramesEqualCI": false,
+      "durationsEqualCI": true
+    },
+    {
+      "path": "layers/pizza-margherita.png",
+      "bytes": 486100,
+      "sha256": "b043b9bbcdcefa0a594cc25bfe54bb68e7f1a94b4d9f4b7747bf72ba015d4739",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "frames": 1,
+      "durationMs": 0,
+      "durations": [
+        0
+      ],
+      "loop": null,
+      "alphaRange": [
+        0,
+        255
+      ],
+      "firstAlphaBBox": [
+        296,
+        622,
+        844,
+        1045
+      ],
+      "edgeAlphaContact": false,
+      "ciPath": "layers/pizza-margherita.png",
+      "bytesEqualCI": false,
+      "rgbaCompareFirst": {
+        "sameDimensions": true,
+        "decodedEqual": true,
+        "changedRGBPixels": 0,
+        "changedAlphaPixels": 0,
+        "changedVisibleRGBA": 0,
+        "differenceBBox": null
+      },
+      "allDecodedFramesEqualCI": true,
+      "durationsEqualCI": true
+    },
+    {
+      "path": "layers/lid-interior-open-registered.png",
+      "bytes": 285321,
+      "sha256": "e27978b5d710b86e8086c9accbe355254a7b0973d67ebb638b5adf05c536c3d2",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "frames": 1,
+      "durationMs": 0,
+      "durations": [
+        0
+      ],
+      "loop": null,
+      "alphaRange": [
+        0,
+        255
+      ],
+      "firstAlphaBBox": [
+        305,
+        19,
+        1074,
+        723
+      ],
+      "edgeAlphaContact": false,
+      "ciPath": "layers/lid-interior-open-registered.png",
+      "bytesEqualCI": false,
+      "rgbaCompareFirst": {
+        "sameDimensions": true,
+        "decodedEqual": false,
+        "changedRGBPixels": 58367,
+        "changedAlphaPixels": 3677,
+        "changedVisibleRGBA": 58449,
+        "differenceBBox": [
+          305,
+          19,
+          1074,
+          723
+        ]
+      },
+      "allDecodedFramesEqualCI": false,
+      "durationsEqualCI": true
+    },
+    {
+      "path": "layers/lid-exterior-closed-registered.png",
+      "bytes": 686905,
+      "sha256": "10cc9dc803d36dd7fb6edc65051ab4042b53f50c310cb277ef0c688685b72368",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "frames": 1,
+      "durationMs": 0,
+      "durations": [
+        0
+      ],
+      "loop": null,
+      "alphaRange": [
+        0,
+        255
+      ],
+      "firstAlphaBBox": [
+        92,
+        576,
+        908,
+        1212
+      ],
+      "edgeAlphaContact": false,
+      "ciPath": "layers/lid-exterior-closed-registered.png",
+      "bytesEqualCI": false,
+      "rgbaCompareFirst": {
+        "sameDimensions": true,
+        "decodedEqual": false,
+        "changedRGBPixels": 77555,
+        "changedAlphaPixels": 4139,
+        "changedVisibleRGBA": 77712,
+        "differenceBBox": [
+          92,
+          576,
+          908,
+          1212
+        ]
+      },
+      "allDecodedFramesEqualCI": false,
+      "durationsEqualCI": true
+    },
+    {
+      "path": "layers/pizza-quattro-formaggi.png",
+      "bytes": 475260,
+      "sha256": "24b7c27fb3c1f83063ef220a4d52ff23c8c3f66a081ef32bbeb0e4c40c21b470",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "frames": 1,
+      "durationMs": 0,
+      "durations": [
+        0
+      ],
+      "loop": null,
+      "alphaRange": [
+        0,
+        254
+      ],
+      "firstAlphaBBox": [
+        296,
+        622,
+        844,
+        1045
+      ],
+      "edgeAlphaContact": false,
+      "ciPath": "layers/pizza-quattro-formaggi.png",
+      "bytesEqualCI": false,
+      "rgbaCompareFirst": {
+        "sameDimensions": true,
+        "decodedEqual": true,
+        "changedRGBPixels": 0,
+        "changedAlphaPixels": 0,
+        "changedVisibleRGBA": 0,
+        "differenceBBox": null
+      },
+      "allDecodedFramesEqualCI": true,
+      "durationsEqualCI": true
+    },
+    {
+      "path": "layers/pizza-salami.png",
+      "bytes": 522767,
+      "sha256": "f84aa759fc85f0af7af41ceefdfcec92fa59058b4d015310d4498cc70d465646",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "frames": 1,
+      "durationMs": 0,
+      "durations": [
+        0
+      ],
+      "loop": null,
+      "alphaRange": [
+        0,
+        255
+      ],
+      "firstAlphaBBox": [
+        296,
+        622,
+        845,
+        1045
+      ],
+      "edgeAlphaContact": false,
+      "ciPath": "layers/pizza-salami.png",
+      "bytesEqualCI": false,
+      "rgbaCompareFirst": {
+        "sameDimensions": true,
+        "decodedEqual": true,
+        "changedRGBPixels": 0,
+        "changedAlphaPixels": 0,
+        "changedVisibleRGBA": 0,
+        "differenceBBox": null
+      },
+      "allDecodedFramesEqualCI": true,
+      "durationsEqualCI": true
+    },
+    {
+      "path": "layers/front-rim-occlusion.png",
+      "bytes": 150291,
+      "sha256": "9b080bf067c4be3c5ceb84e2129ab2e1c49e2fe7a42de437fc19de2c563234cf",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "frames": 1,
+      "durationMs": 0,
+      "durations": [
+        0
+      ],
+      "loop": null,
+      "alphaRange": [
+        0,
+        255
+      ],
+      "firstAlphaBBox": [
+        182,
+        723,
+        925,
+        1132
+      ],
+      "edgeAlphaContact": false,
+      "ciPath": "layers/front-rim.png",
+      "bytesEqualCI": false,
+      "rgbaCompareFirst": {
+        "sameDimensions": true,
+        "decodedEqual": true,
+        "changedRGBPixels": 0,
+        "changedAlphaPixels": 0,
+        "changedVisibleRGBA": 0,
+        "differenceBBox": null
+      },
+      "allDecodedFramesEqualCI": true,
+      "durationsEqualCI": true
+    },
+    {
+      "path": "motion/pisa-open-quattro-formaggi.webp",
+      "bytes": 1411670,
+      "sha256": "e4e63341f1d1d4b9d264edee277d5d0a79c2940e91730511b592d15176498e0e",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "frames": 24,
+      "durationMs": 1296,
+      "durations": [
+        54,
+        54,
+        54,
+        54,
+        54,
+        54,
+        54,
+        54,
+        54,
+        54,
+        54,
+        54,
+        54,
+        54,
+        54,
+        54,
+        54,
+        54,
+        54,
+        54,
+        54,
+        54,
+        54,
+        54
+      ],
+      "loop": 1,
+      "alphaRange": [
+        0,
+        255
+      ],
+      "firstAlphaBBox": [
+        92,
+        568,
+        926,
+        1212
+      ],
+      "edgeAlphaContact": false,
+      "ciPath": "motion/pisa-quattro-formaggi.webp",
+      "bytesEqualCI": false,
+      "rgbaCompareFirst": {
+        "sameDimensions": true,
+        "decodedEqual": false,
+        "changedRGBPixels": 285361,
+        "changedAlphaPixels": 2769,
+        "changedVisibleRGBA": 269255,
+        "differenceBBox": [
+          92,
+          568,
+          926,
+          1212
+        ]
+      },
+      "allDecodedFramesEqualCI": false,
+      "durationsEqualCI": true
+    },
+    {
+      "path": "motion/pisa-open-salami.webp",
+      "bytes": 1468902,
+      "sha256": "d72fbfc64ae87f5825dc72ff6d013e7adfb93f43aba2a8a3e9889856c9e68a20",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "frames": 24,
+      "durationMs": 1296,
+      "durations": [
+        54,
+        54,
+        54,
+        54,
+        54,
+        54,
+        54,
+        54,
+        54,
+        54,
+        54,
+        54,
+        54,
+        54,
+        54,
+        54,
+        54,
+        54,
+        54,
+        54,
+        54,
+        54,
+        54,
+        54
+      ],
+      "loop": 1,
+      "alphaRange": [
+        0,
+        255
+      ],
+      "firstAlphaBBox": [
+        92,
+        568,
+        926,
+        1212
+      ],
+      "edgeAlphaContact": false,
+      "ciPath": "motion/pisa-salami.webp",
+      "bytesEqualCI": false,
+      "rgbaCompareFirst": {
+        "sameDimensions": true,
+        "decodedEqual": false,
+        "changedRGBPixels": 284250,
+        "changedAlphaPixels": 2771,
+        "changedVisibleRGBA": 268335,
+        "differenceBBox": [
+          92,
+          568,
+          926,
+          1212
+        ]
+      },
+      "allDecodedFramesEqualCI": false,
+      "durationsEqualCI": true
+    },
+    {
+      "path": "motion/pisa-open-margherita.webp",
+      "bytes": 1442840,
+      "sha256": "d4c512d47da095e9772ae4676a7aca20bc5300ec9e3e4e376a828f8a1950a6d4",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "frames": 24,
+      "durationMs": 1296,
+      "durations": [
+        54,
+        54,
+        54,
+        54,
+        54,
+        54,
+        54,
+        54,
+        54,
+        54,
+        54,
+        54,
+        54,
+        54,
+        54,
+        54,
+        54,
+        54,
+        54,
+        54,
+        54,
+        54,
+        54,
+        54
+      ],
+      "loop": 1,
+      "alphaRange": [
+        0,
+        255
+      ],
+      "firstAlphaBBox": [
+        92,
+        568,
+        926,
+        1212
+      ],
+      "edgeAlphaContact": false,
+      "ciPath": "motion/pisa-margherita.webp",
+      "bytesEqualCI": false,
+      "rgbaCompareFirst": {
+        "sameDimensions": true,
+        "decodedEqual": false,
+        "changedRGBPixels": 284542,
+        "changedAlphaPixels": 2769,
+        "changedVisibleRGBA": 269204,
+        "differenceBBox": [
+          92,
+          568,
+          926,
+          1212
+        ]
+      },
+      "allDecodedFramesEqualCI": false,
+      "durationsEqualCI": true
+    }
+  ],
+  "actualPlayback": [
+    {
+      "flavor": "margherita",
+      "frames": 24,
+      "durationMs": 1296,
+      "loop": 1,
+      "sampleIndexes": [
+        0,
+        6,
+        12,
+        18,
+        23
+      ],
+      "sampleTimes": [
+        [
+          0,
+          54
+        ],
+        [
+          324,
+          378
+        ],
+        [
+          648,
+          702
+        ],
+        [
+          972,
+          1026
+        ],
+        [
+          1242,
+          1296
+        ]
+      ]
+    },
+    {
+      "flavor": "salami",
+      "frames": 24,
+      "durationMs": 1296,
+      "loop": 1,
+      "sampleIndexes": [
+        0,
+        6,
+        12,
+        18,
+        23
+      ],
+      "sampleTimes": [
+        [
+          0,
+          54
+        ],
+        [
+          324,
+          378
+        ],
+        [
+          648,
+          702
+        ],
+        [
+          972,
+          1026
+        ],
+        [
+          1242,
+          1296
+        ]
+      ]
+    },
+    {
+      "flavor": "quattro-formaggi",
+      "frames": 24,
+      "durationMs": 1296,
+      "loop": 1,
+      "sampleIndexes": [
+        0,
+        6,
+        12,
+        18,
+        23
+      ],
+      "sampleTimes": [
+        [
+          0,
+          54
+        ],
+        [
+          324,
+          378
+        ],
+        [
+          648,
+          702
+        ],
+        [
+          972,
+          1026
+        ],
+        [
+          1242,
+          1296
+        ]
+      ]
+    }
+  ],
+  "closedOcclusion": [
+    {
+      "flavor": "margherita",
+      "opaqueRimPizzaClosedLidOverlap": 17067,
+      "bbox": [
+        315,
+        822,
+        839,
+        1041
+      ],
+      "rimVsFlavorRGBgt30": 0,
+      "mismatchBBox": null
+    },
+    {
+      "flavor": "salami",
+      "opaqueRimPizzaClosedLidOverlap": 16480,
+      "bbox": [
+        315,
+        822,
+        839,
+        1041
+      ],
+      "rimVsFlavorRGBgt30": 12125,
+      "mismatchBBox": [
+        321,
+        822,
+        839,
+        1036
+      ]
+    },
+    {
+      "flavor": "quattro-formaggi",
+      "opaqueRimPizzaClosedLidOverlap": 17068,
+      "bbox": [
+        315,
+        822,
+        839,
+        1041
+      ],
+      "rimVsFlavorRGBgt30": 4414,
+      "mismatchBBox": [
+        318,
+        834,
+        834,
+        1041
+      ]
+    }
+  ],
+  "readmeAngleConflict": {
+    "README": 105,
+    "manifestAndProof": 70
+  },
+  "sourceCodeInZip": false,
+  "note": "Actual v2 compared independently to pinned CI bytes. Matching source hash declarations alone do not prove v2 regenerated from that Git commit."
+}

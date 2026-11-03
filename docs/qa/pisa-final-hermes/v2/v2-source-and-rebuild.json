@@ -1,0 +1,846 @@
+{
+  "targetPR72": "8414319186c834cad091231d6c9beed6068b5876",
+  "approvedSourceBase": "bf91fb3fa6ac553f78b33169efa9f2bf60e215ca",
+  "PR29": "dcc474e8a9d1bc97559a3207b0a330423e128558",
+  "currentSourceImageCount": 79,
+  "sources": [
+    {
+      "path": "assets/nino/rewards/pizza/board/pizza-board-wood.png",
+      "blob": "8580f7be053e4ab9ca266108089f46280c6ae38b",
+      "approvedBaseBlob": "8580f7be053e4ab9ca266108089f46280c6ae38b",
+      "PR29Blob": "8580f7be053e4ab9ca266108089f46280c6ae38b",
+      "equalBase": true,
+      "equalPR29": true
+    },
+    {
+      "path": "assets/nino/rewards/pizza/boxes/pizza-box-closed-pisa.png",
+      "blob": "65e9f6cf528b94d2f14262c8e5c1372f7cabef93",
+      "approvedBaseBlob": "65e9f6cf528b94d2f14262c8e5c1372f7cabef93",
+      "PR29Blob": "65e9f6cf528b94d2f14262c8e5c1372f7cabef93",
+      "equalBase": true,
+      "equalPR29": true
+    },
+    {
+      "path": "assets/nino/rewards/pizza/boxes/pizza-box-open-pisa-margherita.png",
+      "blob": "beff5efdaa074aaaaf8ae83c76e83650dc0eedb5",
+      "approvedBaseBlob": "beff5efdaa074aaaaf8ae83c76e83650dc0eedb5",
+      "PR29Blob": "beff5efdaa074aaaaf8ae83c76e83650dc0eedb5",
+      "equalBase": true,
+      "equalPR29": true
+    },
+    {
+      "path": "assets/nino/rewards/pizza/boxes/pizza-box-open-pisa-quattro-formaggi.png",
+      "blob": "31cc63ab2ba1b2a02be62c52cecb7ee6eecfa71f",
+      "approvedBaseBlob": "31cc63ab2ba1b2a02be62c52cecb7ee6eecfa71f",
+      "PR29Blob": "31cc63ab2ba1b2a02be62c52cecb7ee6eecfa71f",
+      "equalBase": true,
+      "equalPR29": true
+    },
+    {
+      "path": "assets/nino/rewards/pizza/boxes/pizza-box-open-pisa-salami.png",
+      "blob": "7a0bd63a5388c6f4ac1755ef65530007386c6a53",
+      "approvedBaseBlob": "7a0bd63a5388c6f4ac1755ef65530007386c6a53",
+      "PR29Blob": "7a0bd63a5388c6f4ac1755ef65530007386c6a53",
+      "equalBase": true,
+      "equalPR29": true
+    },
+    {
+      "path": "assets/nino/rewards/pizza/exports/pizza-board-wood.webp",
+      "blob": "ee2411b9bb0405d53ecf75669799d8f2bb67b3c5",
+      "approvedBaseBlob": "ee2411b9bb0405d53ecf75669799d8f2bb67b3c5",
+      "PR29Blob": "ee2411b9bb0405d53ecf75669799d8f2bb67b3c5",
+      "equalBase": true,
+      "equalPR29": true
+    },
+    {
+      "path": "assets/nino/rewards/pizza/exports/pizza-box-closed-pisa.webp",
+      "blob": "d0b87262b806d336425d513a3ffac86a29b78a40",
+      "approvedBaseBlob": "d0b87262b806d336425d513a3ffac86a29b78a40",
+      "PR29Blob": "d0b87262b806d336425d513a3ffac86a29b78a40",
+      "equalBase": true,
+      "equalPR29": true
+    },
+    {
+      "path": "assets/nino/rewards/pizza/exports/pizza-box-open-pisa-margherita.webp",
+      "blob": "3a17e19f7175cdab503b96d0c8131c58118f6e2f",
+      "approvedBaseBlob": "3a17e19f7175cdab503b96d0c8131c58118f6e2f",
+      "PR29Blob": "3a17e19f7175cdab503b96d0c8131c58118f6e2f",
+      "equalBase": true,
+      "equalPR29": true
+    },
+    {
+      "path": "assets/nino/rewards/pizza/exports/pizza-box-open-pisa-quattro-formaggi.webp",
+      "blob": "97e00646fb56751b614675a6f08eab57916f6d35",
+      "approvedBaseBlob": "97e00646fb56751b614675a6f08eab57916f6d35",
+      "PR29Blob": "97e00646fb56751b614675a6f08eab57916f6d35",
+      "equalBase": true,
+      "equalPR29": true
+    },
+    {
+      "path": "assets/nino/rewards/pizza/exports/pizza-box-open-pisa-salami.webp",
+      "blob": "9b9bfffc80c8c1aa5ec613b215bb16671f344de5",
+      "approvedBaseBlob": "9b9bfffc80c8c1aa5ec613b215bb16671f344de5",
+      "PR29Blob": "9b9bfffc80c8c1aa5ec613b215bb16671f344de5",
+      "equalBase": true,
+      "equalPR29": true
+    },
+    {
+      "path": "assets/nino/rewards/pizza/exports/pizza-margherita-slice-icon.webp",
+      "blob": "934e42bbc70023547628f1cdac63e7087f8053f6",
+      "approvedBaseBlob": "934e42bbc70023547628f1cdac63e7087f8053f6",
+      "PR29Blob": "934e42bbc70023547628f1cdac63e7087f8053f6",
+      "equalBase": true,
+      "equalPR29": true
+    },
+    {
+      "path": "assets/nino/rewards/pizza/exports/pizza-margherita.webp",
+      "blob": "53303c0b5ca6b5ae44ea24e5dd1b8e6ae5196840",
+      "approvedBaseBlob": "53303c0b5ca6b5ae44ea24e5dd1b8e6ae5196840",
+      "PR29Blob": "53303c0b5ca6b5ae44ea24e5dd1b8e6ae5196840",
+      "equalBase": true,
+      "equalPR29": true
+    },
+    {
+      "path": "assets/nino/rewards/pizza/exports/pizza-quattro-formaggi-slice-icon.webp",
+      "blob": "a77b7198699061a57162f5fc4055aaff2571bcd1",
+      "approvedBaseBlob": "a77b7198699061a57162f5fc4055aaff2571bcd1",
+      "PR29Blob": "a77b7198699061a57162f5fc4055aaff2571bcd1",
+      "equalBase": true,
+      "equalPR29": true
+    },
+    {
+      "path": "assets/nino/rewards/pizza/exports/pizza-quattro-formaggi.webp",
+      "blob": "f19223e7deceda14bff4628ed2803cdf032cf074",
+      "approvedBaseBlob": "f19223e7deceda14bff4628ed2803cdf032cf074",
+      "PR29Blob": "f19223e7deceda14bff4628ed2803cdf032cf074",
+      "equalBase": true,
+      "equalPR29": true
+    },
+    {
+      "path": "assets/nino/rewards/pizza/exports/pizza-salami-slice-icon.webp",
+      "blob": "97ef0421659c170e01e251f7f789536966b9b992",
+      "approvedBaseBlob": "97ef0421659c170e01e251f7f789536966b9b992",
+      "PR29Blob": "97ef0421659c170e01e251f7f789536966b9b992",
+      "equalBase": true,
+      "equalPR29": true
+    },
+    {
+      "path": "assets/nino/rewards/pizza/exports/pizza-salami.webp",
+      "blob": "eea2d3d8fbbe025c9dcc68d81c894e10039ebe70",
+      "approvedBaseBlob": "eea2d3d8fbbe025c9dcc68d81c894e10039ebe70",
+      "PR29Blob": "eea2d3d8fbbe025c9dcc68d81c894e10039ebe70",
+      "equalBase": true,
+      "equalPR29": true
+    },
+    {
+      "path": "assets/nino/rewards/pizza/masters/pizza-margherita.png",
+      "blob": "459cbecf45b3f26c37a85bd9596c990664eb95e0",
+      "approvedBaseBlob": "459cbecf45b3f26c37a85bd9596c990664eb95e0",
+      "PR29Blob": "459cbecf45b3f26c37a85bd9596c990664eb95e0",
+      "equalBase": true,
+      "equalPR29": true
+    },
+    {
+      "path": "assets/nino/rewards/pizza/masters/pizza-quattro-formaggi.png",
+      "blob": "03ad188bf52a693efa29072069f6d9345a1efe52",
+      "approvedBaseBlob": "03ad188bf52a693efa29072069f6d9345a1efe52",
+      "PR29Blob": "03ad188bf52a693efa29072069f6d9345a1efe52",
+      "equalBase": true,
+      "equalPR29": true
+    },
+    {
+      "path": "assets/nino/rewards/pizza/masters/pizza-salami.png",
+      "blob": "1d6fda372305dd0229498fccc09c335c91c45f4e",
+      "approvedBaseBlob": "1d6fda372305dd0229498fccc09c335c91c45f4e",
+      "PR29Blob": "1d6fda372305dd0229498fccc09c335c91c45f4e",
+      "equalBase": true,
+      "equalPR29": true
+    },
+    {
+      "path": "assets/nino/rewards/pizza/slices/margherita/aligned_full_canvas/pizza-margherita-slice-01-aligned.png",
+      "blob": "8a9542d1580d2edaf322b68f4204c7983ab63c40",
+      "approvedBaseBlob": "8a9542d1580d2edaf322b68f4204c7983ab63c40",
+      "PR29Blob": "8a9542d1580d2edaf322b68f4204c7983ab63c40",
+      "equalBase": true,
+      "equalPR29": true
+    },
+    {
+      "path": "assets/nino/rewards/pizza/slices/margherita/aligned_full_canvas/pizza-margherita-slice-02-aligned.png",
+      "blob": "3a7e99153adb84e5a95365c3edee05cb6e1530c6",
+      "approvedBaseBlob": "3a7e99153adb84e5a95365c3edee05cb6e1530c6",
+      "PR29Blob": "3a7e99153adb84e5a95365c3edee05cb6e1530c6",
+      "equalBase": true,
+      "equalPR29": true
+    },
+    {
+      "path": "assets/nino/rewards/pizza/slices/margherita/aligned_full_canvas/pizza-margherita-slice-03-aligned.png",
+      "blob": "c33309a74b9b85a9de2f6efcb782fa9eea20cc92",
+      "approvedBaseBlob": "c33309a74b9b85a9de2f6efcb782fa9eea20cc92",
+      "PR29Blob": "c33309a74b9b85a9de2f6efcb782fa9eea20cc92",
+      "equalBase": true,
+      "equalPR29": true
+    },
+    {
+      "path": "assets/nino/rewards/pizza/slices/margherita/aligned_full_canvas/pizza-margherita-slice-04-aligned.png",
+      "blob": "9e1843c29afa35f079ffcdfa714ce864825208ba",
+      "approvedBaseBlob": "9e1843c29afa35f079ffcdfa714ce864825208ba",
+      "PR29Blob": "9e1843c29afa35f079ffcdfa714ce864825208ba",
+      "equalBase": true,
+      "equalPR29": true
+    },
+    {
+      "path": "assets/nino/rewards/pizza/slices/margherita/aligned_full_canvas/pizza-margherita-slice-05-aligned.png",
+      "blob": "09036309d603b23eac80901cf8d2ae52f58c0853",
+      "approvedBaseBlob": "09036309d603b23eac80901cf8d2ae52f58c0853",
+      "PR29Blob": "09036309d603b23eac80901cf8d2ae52f58c0853",
+      "equalBase": true,
+      "equalPR29": true
+    },
+    {
+      "path": "assets/nino/rewards/pizza/slices/margherita/aligned_full_canvas/pizza-margherita-slice-06-aligned.png",
+      "blob": "b74bbda64858922ab25c2cfaec0bd2507f0a7bbc",
+      "approvedBaseBlob": "b74bbda64858922ab25c2cfaec0bd2507f0a7bbc",
+      "PR29Blob": "b74bbda64858922ab25c2cfaec0bd2507f0a7bbc",
+      "equalBase": true,
+      "equalPR29": true
+    },
+    {
+      "path": "assets/nino/rewards/pizza/slices/margherita/aligned_full_canvas/pizza-margherita-slice-07-aligned.png",
+      "blob": "7561eca204a151eedce03469b4c3a23c83fe54fe",
+      "approvedBaseBlob": "7561eca204a151eedce03469b4c3a23c83fe54fe",
+      "PR29Blob": "7561eca204a151eedce03469b4c3a23c83fe54fe",
+      "equalBase": true,
+      "equalPR29": true
+    },
+    {
+      "path": "assets/nino/rewards/pizza/slices/margherita/aligned_full_canvas/pizza-margherita-slice-08-aligned.png",
+      "blob": "47d6af8e4b9228ed92ac5751a3c3ae0c361d937a",
+      "approvedBaseBlob": "47d6af8e4b9228ed92ac5751a3c3ae0c361d937a",
+      "PR29Blob": "47d6af8e4b9228ed92ac5751a3c3ae0c361d937a",
+      "equalBase": true,
+      "equalPR29": true
+    },
+    {
+      "path": "assets/nino/rewards/pizza/slices/margherita/individual_slices/pizza-margherita-slice-01.png",
+      "blob": "0c9b8379b26de8dc164b1388111a366f533ae331",
+      "approvedBaseBlob": "0c9b8379b26de8dc164b1388111a366f533ae331",
+      "PR29Blob": "0c9b8379b26de8dc164b1388111a366f533ae331",
+      "equalBase": true,
+      "equalPR29": true
+    },
+    {
+      "path": "assets/nino/rewards/pizza/slices/margherita/individual_slices/pizza-margherita-slice-02.png",
+      "blob": "343fc0aabaf1f3d4ae55835d87671a5f52ed568b",
+      "approvedBaseBlob": "343fc0aabaf1f3d4ae55835d87671a5f52ed568b",
+      "PR29Blob": "343fc0aabaf1f3d4ae55835d87671a5f52ed568b",
+      "equalBase": true,
+      "equalPR29": true
+    },
+    {
+      "path": "assets/nino/rewards/pizza/slices/margherita/individual_slices/pizza-margherita-slice-03.png",
+      "blob": "93cc2e0fa662d4ee223cdb60fe9671a5ebb9b7a9",
+      "approvedBaseBlob": "93cc2e0fa662d4ee223cdb60fe9671a5ebb9b7a9",
+      "PR29Blob": "93cc2e0fa662d4ee223cdb60fe9671a5ebb9b7a9",
+      "equalBase": true,
+      "equalPR29": true
+    },
+    {
+      "path": "assets/nino/rewards/pizza/slices/margherita/individual_slices/pizza-margherita-slice-04.png",
+      "blob": "fd353e321eba8af9c554d380203c3218d2b9039c",
+      "approvedBaseBlob": "fd353e321eba8af9c554d380203c3218d2b9039c",
+      "PR29Blob": "fd353e321eba8af9c554d380203c3218d2b9039c",
+      "equalBase": true,
+      "equalPR29": true
+    },
+    {
+      "path": "assets/nino/rewards/pizza/slices/margherita/individual_slices/pizza-margherita-slice-05.png",
+      "blob": "f74f1a3a7ba55cf242fc917bd2bd5b4cd65bbaba",
+      "approvedBaseBlob": "f74f1a3a7ba55cf242fc917bd2bd5b4cd65bbaba",
+      "PR29Blob": "f74f1a3a7ba55cf242fc917bd2bd5b4cd65bbaba",
+      "equalBase": true,
+      "equalPR29": true
+    },
+    {
+      "path": "assets/nino/rewards/pizza/slices/margherita/individual_slices/pizza-margherita-slice-06.png",
+      "blob": "4cdfdeafa36577483dca953d07813195534d6d20",
+      "approvedBaseBlob": "4cdfdeafa36577483dca953d07813195534d6d20",
+      "PR29Blob": "4cdfdeafa36577483dca953d07813195534d6d20",
+      "equalBase": true,
+      "equalPR29": true
+    },
+    {
+      "path": "assets/nino/rewards/pizza/slices/margherita/individual_slices/pizza-margherita-slice-07.png",
+      "blob": "09f2988dfa27f213fb9b986fc771caeb8eb6e81a",
+      "approvedBaseBlob": "09f2988dfa27f213fb9b986fc771caeb8eb6e81a",
+      "PR29Blob": "09f2988dfa27f213fb9b986fc771caeb8eb6e81a",
+      "equalBase": true,
+      "equalPR29": true
+    },
+    {
+      "path": "assets/nino/rewards/pizza/slices/margherita/individual_slices/pizza-margherita-slice-08.png",
+      "blob": "2f93aadeea0f297e675d8e5380baaacbb6618f07",
+      "approvedBaseBlob": "2f93aadeea0f297e675d8e5380baaacbb6618f07",
+      "PR29Blob": "2f93aadeea0f297e675d8e5380baaacbb6618f07",
+      "equalBase": true,
+      "equalPR29": true
+    },
+    {
+      "path": "assets/nino/rewards/pizza/slices/margherita/pizza-margherita-slice-icon.png",
+      "blob": "fcb782ab63b8e2f6ce802d607ecc313e796922d0",
+      "approvedBaseBlob": "fcb782ab63b8e2f6ce802d607ecc313e796922d0",
+      "PR29Blob": "fcb782ab63b8e2f6ce802d607ecc313e796922d0",
+      "equalBase": true,
+      "equalPR29": true
+    },
+    {
+      "path": "assets/nino/rewards/pizza/slices/margherita/qa/pizza-margherita-icon-120px.png",
+      "blob": "37757a8b2cb9a75ee3f724dbb8d3f2f2bdf63f75",
+      "approvedBaseBlob": "37757a8b2cb9a75ee3f724dbb8d3f2f2bdf63f75",
+      "PR29Blob": "37757a8b2cb9a75ee3f724dbb8d3f2f2bdf63f75",
+      "equalBase": true,
+      "equalPR29": true
+    },
+    {
+      "path": "assets/nino/rewards/pizza/slices/margherita/qa/pizza-margherita-icon-48px.png",
+      "blob": "3cda6a5084552f682da6cbbab0098ee5a7c4a70e",
+      "approvedBaseBlob": "3cda6a5084552f682da6cbbab0098ee5a7c4a70e",
+      "PR29Blob": "3cda6a5084552f682da6cbbab0098ee5a7c4a70e",
+      "equalBase": true,
+      "equalPR29": true
+    },
+    {
+      "path": "assets/nino/rewards/pizza/slices/margherita/qa/pizza-margherita-icon-64px.png",
+      "blob": "50979e27f8197ba44936b618ad887e41fa914a3c",
+      "approvedBaseBlob": "50979e27f8197ba44936b618ad887e41fa914a3c",
+      "PR29Blob": "50979e27f8197ba44936b618ad887e41fa914a3c",
+      "equalBase": true,
+      "equalPR29": true
+    },
+    {
+      "path": "assets/nino/rewards/pizza/slices/quattro-formaggi/aligned_full_canvas/pizza-quattro-formaggi-slice-01-aligned.png",
+      "blob": "a32915c4fb072ec15663236a68457442bc6643a8",
+      "approvedBaseBlob": "a32915c4fb072ec15663236a68457442bc6643a8",
+      "PR29Blob": "a32915c4fb072ec15663236a68457442bc6643a8",
+      "equalBase": true,
+      "equalPR29": true
+    },
+    {
+      "path": "assets/nino/rewards/pizza/slices/quattro-formaggi/aligned_full_canvas/pizza-quattro-formaggi-slice-02-aligned.png",
+      "blob": "689ba37dab61ff52604e336f7cbdb257df3daaec",
+      "approvedBaseBlob": "689ba37dab61ff52604e336f7cbdb257df3daaec",
+      "PR29Blob": "689ba37dab61ff52604e336f7cbdb257df3daaec",
+      "equalBase": true,
+      "equalPR29": true
+    },
+    {
+      "path": "assets/nino/rewards/pizza/slices/quattro-formaggi/aligned_full_canvas/pizza-quattro-formaggi-slice-03-aligned.png",
+      "blob": "6396becff8b0e7b6fec148775c4b61bd2af93729",
+      "approvedBaseBlob": "6396becff8b0e7b6fec148775c4b61bd2af93729",
+      "PR29Blob": "6396becff8b0e7b6fec148775c4b61bd2af93729",
+      "equalBase": true,
+      "equalPR29": true
+    },
+    {
+      "path": "assets/nino/rewards/pizza/slices/quattro-formaggi/aligned_full_canvas/pizza-quattro-formaggi-slice-04-aligned.png",
+      "blob": "92fb587800b765b4bbf23b0ea865cdabaf3e0a30",
+      "approvedBaseBlob": "92fb587800b765b4bbf23b0ea865cdabaf3e0a30",
+      "PR29Blob": "92fb587800b765b4bbf23b0ea865cdabaf3e0a30",
+      "equalBase": true,
+      "equalPR29": true
+    },
+    {
+      "path": "assets/nino/rewards/pizza/slices/quattro-formaggi/aligned_full_canvas/pizza-quattro-formaggi-slice-05-aligned.png",
+      "blob": "f7a785104fa6ede467cfe61c490fb280efcce21e",
+      "approvedBaseBlob": "f7a785104fa6ede467cfe61c490fb280efcce21e",
+      "PR29Blob": "f7a785104fa6ede467cfe61c490fb280efcce21e",
+      "equalBase": true,
+      "equalPR29": true
+    },
+    {
+      "path": "assets/nino/rewards/pizza/slices/quattro-formaggi/aligned_full_canvas/pizza-quattro-formaggi-slice-06-aligned.png",
+      "blob": "ee0bc2c60c93b91eeb8816dc5ead465865858d4c",
+      "approvedBaseBlob": "ee0bc2c60c93b91eeb8816dc5ead465865858d4c",
+      "PR29Blob": "ee0bc2c60c93b91eeb8816dc5ead465865858d4c",
+      "equalBase": true,
+      "equalPR29": true
+    },
+    {
+      "path": "assets/nino/rewards/pizza/slices/quattro-formaggi/aligned_full_canvas/pizza-quattro-formaggi-slice-07-aligned.png",
+      "blob": "8bebdc34d4a541451da9ef9ea6118429c4262a23",
+      "approvedBaseBlob": "8bebdc34d4a541451da9ef9ea6118429c4262a23",
+      "PR29Blob": "8bebdc34d4a541451da9ef9ea6118429c4262a23",
+      "equalBase": true,
+      "equalPR29": true
+    },
+    {
+      "path": "assets/nino/rewards/pizza/slices/quattro-formaggi/aligned_full_canvas/pizza-quattro-formaggi-slice-08-aligned.png",
+      "blob": "bbbc95de810b6859e0a04803412bd7df697e3f1f",
+      "approvedBaseBlob": "bbbc95de810b6859e0a04803412bd7df697e3f1f",
+      "PR29Blob": "bbbc95de810b6859e0a04803412bd7df697e3f1f",
+      "equalBase": true,
+      "equalPR29": true
+    },
+    {
+      "path": "assets/nino/rewards/pizza/slices/quattro-formaggi/individual_slices/pizza-quattro-formaggi-slice-01.png",
+      "blob": "48576fe82209225929614b0c2fbb12c903886553",
+      "approvedBaseBlob": "48576fe82209225929614b0c2fbb12c903886553",
+      "PR29Blob": "48576fe82209225929614b0c2fbb12c903886553",
+      "equalBase": true,
+      "equalPR29": true
+    },
+    {
+      "path": "assets/nino/rewards/pizza/slices/quattro-formaggi/individual_slices/pizza-quattro-formaggi-slice-02.png",
+      "blob": "d66c1390423c8a5fc85a7d9a99fdf357100b5fcb",
+      "approvedBaseBlob": "d66c1390423c8a5fc85a7d9a99fdf357100b5fcb",
+      "PR29Blob": "d66c1390423c8a5fc85a7d9a99fdf357100b5fcb",
+      "equalBase": true,
+      "equalPR29": true
+    },
+    {
+      "path": "assets/nino/rewards/pizza/slices/quattro-formaggi/individual_slices/pizza-quattro-formaggi-slice-03.png",
+      "blob": "365a33226a0d2087030091a835ef5e0d7cf9ae51",
+      "approvedBaseBlob": "365a33226a0d2087030091a835ef5e0d7cf9ae51",
+      "PR29Blob": "365a33226a0d2087030091a835ef5e0d7cf9ae51",
+      "equalBase": true,
+      "equalPR29": true
+    },
+    {
+      "path": "assets/nino/rewards/pizza/slices/quattro-formaggi/individual_slices/pizza-quattro-formaggi-slice-04.png",
+      "blob": "f8f6e0adf4431a9d8329109da8f194efcab8efa2",
+      "approvedBaseBlob": "f8f6e0adf4431a9d8329109da8f194efcab8efa2",
+      "PR29Blob": "f8f6e0adf4431a9d8329109da8f194efcab8efa2",
+      "equalBase": true,
+      "equalPR29": true
+    },
+    {
+      "path": "assets/nino/rewards/pizza/slices/quattro-formaggi/individual_slices/pizza-quattro-formaggi-slice-05.png",
+      "blob": "a7f923f46c4479c306e8eb394b7d62a7401bda4a",
+      "approvedBaseBlob": "a7f923f46c4479c306e8eb394b7d62a7401bda4a",
+      "PR29Blob": "a7f923f46c4479c306e8eb394b7d62a7401bda4a",
+      "equalBase": true,
+      "equalPR29": true
+    },
+    {
+      "path": "assets/nino/rewards/pizza/slices/quattro-formaggi/individual_slices/pizza-quattro-formaggi-slice-06.png",
+      "blob": "4543c5e5e78e4c8651d57099da3f078ad8f475fe",
+      "approvedBaseBlob": "4543c5e5e78e4c8651d57099da3f078ad8f475fe",
+      "PR29Blob": "4543c5e5e78e4c8651d57099da3f078ad8f475fe",
+      "equalBase": true,
+      "equalPR29": true
+    },
+    {
+      "path": "assets/nino/rewards/pizza/slices/quattro-formaggi/individual_slices/pizza-quattro-formaggi-slice-07.png",
+      "blob": "4348d7b3b3193d597d40d338739671089ae1a54b",
+      "approvedBaseBlob": "4348d7b3b3193d597d40d338739671089ae1a54b",
+      "PR29Blob": "4348d7b3b3193d597d40d338739671089ae1a54b",
+      "equalBase": true,
+      "equalPR29": true
+    },
+    {
+      "path": "assets/nino/rewards/pizza/slices/quattro-formaggi/individual_slices/pizza-quattro-formaggi-slice-08.png",
+      "blob": "2b5d0230422b31c350c7751a6b2320085a9d10e9",
+      "approvedBaseBlob": "2b5d0230422b31c350c7751a6b2320085a9d10e9",
+      "PR29Blob": "2b5d0230422b31c350c7751a6b2320085a9d10e9",
+      "equalBase": true,
+      "equalPR29": true
+    },
+    {
+      "path": "assets/nino/rewards/pizza/slices/quattro-formaggi/pizza-quattro-formaggi-slice-icon.png",
+      "blob": "2db15d4151c5d3d04fe06ae4154c5b4e503a9dfa",
+      "approvedBaseBlob": "2db15d4151c5d3d04fe06ae4154c5b4e503a9dfa",
+      "PR29Blob": "2db15d4151c5d3d04fe06ae4154c5b4e503a9dfa",
+      "equalBase": true,
+      "equalPR29": true
+    },
+    {
+      "path": "assets/nino/rewards/pizza/slices/quattro-formaggi/qa/pizza-quattro-formaggi-icon-120px.png",
+      "blob": "45a1567a66231dae71204e1da7b8be164f5c3629",
+      "approvedBaseBlob": "45a1567a66231dae71204e1da7b8be164f5c3629",
+      "PR29Blob": "45a1567a66231dae71204e1da7b8be164f5c3629",
+      "equalBase": true,
+      "equalPR29": true
+    },
+    {
+      "path": "assets/nino/rewards/pizza/slices/quattro-formaggi/qa/pizza-quattro-formaggi-icon-48px.png",
+      "blob": "47e1d23e3dcb36da3a5de4fccdd54f22732cdbc0",
+      "approvedBaseBlob": "47e1d23e3dcb36da3a5de4fccdd54f22732cdbc0",
+      "PR29Blob": "47e1d23e3dcb36da3a5de4fccdd54f22732cdbc0",
+      "equalBase": true,
+      "equalPR29": true
+    },
+    {
+      "path": "assets/nino/rewards/pizza/slices/quattro-formaggi/qa/pizza-quattro-formaggi-icon-64px.png",
+      "blob": "2b4b908967ec411a807a3abe57c2a6d20fb9f303",
+      "approvedBaseBlob": "2b4b908967ec411a807a3abe57c2a6d20fb9f303",
+      "PR29Blob": "2b4b908967ec411a807a3abe57c2a6d20fb9f303",
+      "equalBase": true,
+      "equalPR29": true
+    },
+    {
+      "path": "assets/nino/rewards/pizza/slices/salami/aligned_full_canvas/pizza-salami-slice-01-aligned.png",
+      "blob": "8527b8dd5cbbb12edf60f4a364232ceb69775439",
+      "approvedBaseBlob": "8527b8dd5cbbb12edf60f4a364232ceb69775439",
+      "PR29Blob": "8527b8dd5cbbb12edf60f4a364232ceb69775439",
+      "equalBase": true,
+      "equalPR29": true
+    },
+    {
+      "path": "assets/nino/rewards/pizza/slices/salami/aligned_full_canvas/pizza-salami-slice-02-aligned.png",
+      "blob": "95cb98acb4b86b1136dd78ba0f988d3b1b1c7055",
+      "approvedBaseBlob": "95cb98acb4b86b1136dd78ba0f988d3b1b1c7055",
+      "PR29Blob": "95cb98acb4b86b1136dd78ba0f988d3b1b1c7055",
+      "equalBase": true,
+      "equalPR29": true
+    },
+    {
+      "path": "assets/nino/rewards/pizza/slices/salami/aligned_full_canvas/pizza-salami-slice-03-aligned.png",
+      "blob": "896d6778e81e8be681f985a841879b2de80c670a",
+      "approvedBaseBlob": "896d6778e81e8be681f985a841879b2de80c670a",
+      "PR29Blob": "896d6778e81e8be681f985a841879b2de80c670a",
+      "equalBase": true,
+      "equalPR29": true
+    },
+    {
+      "path": "assets/nino/rewards/pizza/slices/salami/aligned_full_canvas/pizza-salami-slice-04-aligned.png",
+      "blob": "2bafb5e8a6ad1c3565578edcd01bcb060482c784",
+      "approvedBaseBlob": "2bafb5e8a6ad1c3565578edcd01bcb060482c784",
+      "PR29Blob": "2bafb5e8a6ad1c3565578edcd01bcb060482c784",
+      "equalBase": true,
+      "equalPR29": true
+    },
+    {
+      "path": "assets/nino/rewards/pizza/slices/salami/aligned_full_canvas/pizza-salami-slice-05-aligned.png",
+      "blob": "556bb4d4efbd9a70a9ec05a4175eacf2bede6527",
+      "approvedBaseBlob": "556bb4d4efbd9a70a9ec05a4175eacf2bede6527",
+      "PR29Blob": "556bb4d4efbd9a70a9ec05a4175eacf2bede6527",
+      "equalBase": true,
+      "equalPR29": true
+    },
+    {
+      "path": "assets/nino/rewards/pizza/slices/salami/aligned_full_canvas/pizza-salami-slice-06-aligned.png",
+      "blob": "786555528354f7252b504bc5f64769545ba57be3",
+      "approvedBaseBlob": "786555528354f7252b504bc5f64769545ba57be3",
+      "PR29Blob": "786555528354f7252b504bc5f64769545ba57be3",
+      "equalBase": true,
+      "equalPR29": true
+    },
+    {
+      "path": "assets/nino/rewards/pizza/slices/salami/aligned_full_canvas/pizza-salami-slice-07-aligned.png",
+      "blob": "330a43c3885e4d2af8cf4144b80c918434f57d01",
+      "approvedBaseBlob": "330a43c3885e4d2af8cf4144b80c918434f57d01",
+      "PR29Blob": "330a43c3885e4d2af8cf4144b80c918434f57d01",
+      "equalBase": true,
+      "equalPR29": true
+    },
+    {
+      "path": "assets/nino/rewards/pizza/slices/salami/aligned_full_canvas/pizza-salami-slice-08-aligned.png",
+      "blob": "fe2bdd638bc65822cf1c49e234ae50303076522b",
+      "approvedBaseBlob": "fe2bdd638bc65822cf1c49e234ae50303076522b",
+      "PR29Blob": "fe2bdd638bc65822cf1c49e234ae50303076522b",
+      "equalBase": true,
+      "equalPR29": true
+    },
+    {
+      "path": "assets/nino/rewards/pizza/slices/salami/individual_slices/pizza-salami-slice-01.png",
+      "blob": "7c2cd482e10f905200e69247638942664a5b3ad2",
+      "approvedBaseBlob": "7c2cd482e10f905200e69247638942664a5b3ad2",
+      "PR29Blob": "7c2cd482e10f905200e69247638942664a5b3ad2",
+      "equalBase": true,
+      "equalPR29": true
+    },
+    {
+      "path": "assets/nino/rewards/pizza/slices/salami/individual_slices/pizza-salami-slice-02.png",
+      "blob": "0557002a0fac3dd951e84faf54bb118b42b55cfa",
+      "approvedBaseBlob": "0557002a0fac3dd951e84faf54bb118b42b55cfa",
+      "PR29Blob": "0557002a0fac3dd951e84faf54bb118b42b55cfa",
+      "equalBase": true,
+      "equalPR29": true
+    },
+    {
+      "path": "assets/nino/rewards/pizza/slices/salami/individual_slices/pizza-salami-slice-03.png",
+      "blob": "0ee1d4de693affcceea9e98aae8443903b5b7284",
+      "approvedBaseBlob": "0ee1d4de693affcceea9e98aae8443903b5b7284",
+      "PR29Blob": "0ee1d4de693affcceea9e98aae8443903b5b7284",
+      "equalBase": true,
+      "equalPR29": true
+    },
+    {
+      "path": "assets/nino/rewards/pizza/slices/salami/individual_slices/pizza-salami-slice-04.png",
+      "blob": "834fcb5573fe522357e7122936409b98359782e1",
+      "approvedBaseBlob": "834fcb5573fe522357e7122936409b98359782e1",
+      "PR29Blob": "834fcb5573fe522357e7122936409b98359782e1",
+      "equalBase": true,
+      "equalPR29": true
+    },
+    {
+      "path": "assets/nino/rewards/pizza/slices/salami/individual_slices/pizza-salami-slice-05.png",
+      "blob": "b105f86301e26b80585ebffb6d1f825bb1f31581",
+      "approvedBaseBlob": "b105f86301e26b80585ebffb6d1f825bb1f31581",
+      "PR29Blob": "b105f86301e26b80585ebffb6d1f825bb1f31581",
+      "equalBase": true,
+      "equalPR29": true
+    },
+    {
+      "path": "assets/nino/rewards/pizza/slices/salami/individual_slices/pizza-salami-slice-06.png",
+      "blob": "702c78b9078a6415fc91487c5d098891ca96122b",
+      "approvedBaseBlob": "702c78b9078a6415fc91487c5d098891ca96122b",
+      "PR29Blob": "702c78b9078a6415fc91487c5d098891ca96122b",
+      "equalBase": true,
+      "equalPR29": true
+    },
+    {
+      "path": "assets/nino/rewards/pizza/slices/salami/individual_slices/pizza-salami-slice-07.png",
+      "blob": "ceda9262b71bd7974b70ad24af13d9f5196059a1",
+      "approvedBaseBlob": "ceda9262b71bd7974b70ad24af13d9f5196059a1",
+      "PR29Blob": "ceda9262b71bd7974b70ad24af13d9f5196059a1",
+      "equalBase": true,
+      "equalPR29": true
+    },
+    {
+      "path": "assets/nino/rewards/pizza/slices/salami/individual_slices/pizza-salami-slice-08.png",
+      "blob": "db52366626ac1009051860673b2c83a181e09797",
+      "approvedBaseBlob": "db52366626ac1009051860673b2c83a181e09797",
+      "PR29Blob": "db52366626ac1009051860673b2c83a181e09797",
+      "equalBase": true,
+      "equalPR29": true
+    },
+    {
+      "path": "assets/nino/rewards/pizza/slices/salami/pizza-salami-slice-icon.png",
+      "blob": "72c16d3d2d51984ff4619991731c6f4caf7957b1",
+      "approvedBaseBlob": "72c16d3d2d51984ff4619991731c6f4caf7957b1",
+      "PR29Blob": "72c16d3d2d51984ff4619991731c6f4caf7957b1",
+      "equalBase": true,
+      "equalPR29": true
+    },
+    {
+      "path": "assets/nino/rewards/pizza/slices/salami/qa/pizza-salami-icon-120px.png",
+      "blob": "2683d5c9e6a059a14015076bc3286979f9b2269a",
+      "approvedBaseBlob": "2683d5c9e6a059a14015076bc3286979f9b2269a",
+      "PR29Blob": "2683d5c9e6a059a14015076bc3286979f9b2269a",
+      "equalBase": true,
+      "equalPR29": true
+    },
+    {
+      "path": "assets/nino/rewards/pizza/slices/salami/qa/pizza-salami-icon-48px.png",
+      "blob": "2563a357305465f88beb27d1654dfa8e2fc80f05",
+      "approvedBaseBlob": "2563a357305465f88beb27d1654dfa8e2fc80f05",
+      "PR29Blob": "2563a357305465f88beb27d1654dfa8e2fc80f05",
+      "equalBase": true,
+      "equalPR29": true
+    },
+    {
+      "path": "assets/nino/rewards/pizza/slices/salami/qa/pizza-salami-icon-64px.png",
+      "blob": "8d4ef4fa282bc225323053177ed8bf36257e72dd",
+      "approvedBaseBlob": "8d4ef4fa282bc225323053177ed8bf36257e72dd",
+      "PR29Blob": "8d4ef4fa282bc225323053177ed8bf36257e72dd",
+      "equalBase": true,
+      "equalPR29": true
+    }
+  ],
+  "fourDeclaredSourceHashes": [
+    {
+      "path": "pizza-box-closed-pisa.webp",
+      "sha256": "6e47559c8eea4932fa4516fea324ee85fbe386ab7c3df26034f820a8c4860d3c",
+      "matchesV2Declaration": true
+    },
+    {
+      "path": "pizza-box-open-pisa-margherita.webp",
+      "sha256": "742a5d39843dc84b6a8b781678edcb3ce6643a60bde1c8ae67c1e0567125f7d7",
+      "matchesV2Declaration": true
+    },
+    {
+      "path": "pizza-box-open-pisa-salami.webp",
+      "sha256": "9f3795b47f6b60a975f3f83af6edb07981739cc2a55c0d4de1b7cb66f2b184aa",
+      "matchesV2Declaration": true
+    },
+    {
+      "path": "pizza-box-open-pisa-quattro-formaggi.webp",
+      "sha256": "1b317d38980873756276ffaedeca3843a30c386233e83ecf846a1563f99903b2",
+      "matchesV2Declaration": true
+    }
+  ],
+  "sourcePreservingGeneratorUnchanged": true,
+  "localBuildCommandExit": 0,
+  "localBuildEnvironment": {
+    "python": "3.12.13",
+    "Pillow": "13.0.0",
+    "numpy": "2.5.4",
+    "opencv": "5.0.0",
+    "platform": "macOS arm64"
+  },
+  "v2VsLocalRebuild": [
+    {
+      "v2": "proof/quattro-formaggi-03-53deg.png",
+      "localRebuild": "proof/quattro-formaggi-3-angle53.png",
+      "bytesEqual": false,
+      "allFramesRGBAEqual": false
+    },
+    {
+      "v2": "proof/margherita-01-18deg.png",
+      "localRebuild": "proof/margherita-1-angle18.png",
+      "bytesEqual": false,
+      "allFramesRGBAEqual": false
+    },
+    {
+      "v2": "proof/margherita-02-35deg.png",
+      "localRebuild": "proof/margherita-2-angle35.png",
+      "bytesEqual": false,
+      "allFramesRGBAEqual": false
+    },
+    {
+      "v2": "proof/margherita-04-70deg.png",
+      "localRebuild": "proof/margherita-4-angle70.png",
+      "bytesEqual": false,
+      "allFramesRGBAEqual": false
+    },
+    {
+      "v2": "proof/salami-03-53deg.png",
+      "localRebuild": "proof/salami-3-angle53.png",
+      "bytesEqual": false,
+      "allFramesRGBAEqual": false
+    },
+    {
+      "v2": "proof/salami-00-0deg.png",
+      "localRebuild": "proof/salami-0-angle0.png",
+      "bytesEqual": false,
+      "allFramesRGBAEqual": false
+    },
+    {
+      "v2": "proof/quattro-formaggi-01-18deg.png",
+      "localRebuild": "proof/quattro-formaggi-1-angle18.png",
+      "bytesEqual": false,
+      "allFramesRGBAEqual": false
+    },
+    {
+      "v2": "proof/margherita-03-53deg.png",
+      "localRebuild": "proof/margherita-3-angle53.png",
+      "bytesEqual": false,
+      "allFramesRGBAEqual": false
+    },
+    {
+      "v2": "proof/quattro-formaggi-00-0deg.png",
+      "localRebuild": "proof/quattro-formaggi-0-angle0.png",
+      "bytesEqual": false,
+      "allFramesRGBAEqual": false
+    },
+    {
+      "v2": "proof/quattro-formaggi-02-35deg.png",
+      "localRebuild": "proof/quattro-formaggi-2-angle35.png",
+      "bytesEqual": false,
+      "allFramesRGBAEqual": false
+    },
+    {
+      "v2": "proof/quattro-formaggi-04-70deg.png",
+      "localRebuild": "proof/quattro-formaggi-4-angle70.png",
+      "bytesEqual": false,
+      "allFramesRGBAEqual": false
+    },
+    {
+      "v2": "proof/contact-sheet.png",
+      "localRebuild": "proof/contact-sheet.png",
+      "bytesEqual": false,
+      "allFramesRGBAEqual": false
+    },
+    {
+      "v2": "proof/salami-01-18deg.png",
+      "localRebuild": "proof/salami-1-angle18.png",
+      "bytesEqual": false,
+      "allFramesRGBAEqual": false
+    },
+    {
+      "v2": "proof/salami-02-35deg.png",
+      "localRebuild": "proof/salami-2-angle35.png",
+      "bytesEqual": false,
+      "allFramesRGBAEqual": false
+    },
+    {
+      "v2": "proof/margherita-00-0deg.png",
+      "localRebuild": "proof/margherita-0-angle0.png",
+      "bytesEqual": false,
+      "allFramesRGBAEqual": false
+    },
+    {
+      "v2": "proof/salami-04-70deg.png",
+      "localRebuild": "proof/salami-4-angle70.png",
+      "bytesEqual": false,
+      "allFramesRGBAEqual": false
+    },
+    {
+      "v2": "textures/lid-exterior-original-uv.png",
+      "localRebuild": "textures/lid-exterior-original-uv.png",
+      "bytesEqual": false,
+      "allFramesRGBAEqual": false
+    },
+    {
+      "v2": "textures/lid-interior-kraft-uv.png",
+      "localRebuild": "textures/lid-interior-kraft-uv.png",
+      "bytesEqual": false,
+      "allFramesRGBAEqual": false
+    },
+    {
+      "v2": "layers/tray-empty-corrected.png",
+      "localRebuild": "layers/tray.png",
+      "bytesEqual": false,
+      "allFramesRGBAEqual": false
+    },
+    {
+      "v2": "layers/pizza-margherita.png",
+      "localRebuild": "layers/pizza-margherita.png",
+      "bytesEqual": false,
+      "allFramesRGBAEqual": true
+    },
+    {
+      "v2": "layers/lid-interior-open-registered.png",
+      "localRebuild": "layers/lid-interior-open-registered.png",
+      "bytesEqual": false,
+      "allFramesRGBAEqual": false
+    },
+    {
+      "v2": "layers/lid-exterior-closed-registered.png",
+      "localRebuild": "layers/lid-exterior-closed-registered.png",
+      "bytesEqual": false,
+      "allFramesRGBAEqual": false
+    },
+    {
+      "v2": "layers/pizza-quattro-formaggi.png",
+      "localRebuild": "layers/pizza-quattro-formaggi.png",
+      "bytesEqual": false,
+      "allFramesRGBAEqual": true
+    },
+    {
+      "v2": "layers/pizza-salami.png",
+      "localRebuild": "layers/pizza-salami.png",
+      "bytesEqual": false,
+      "allFramesRGBAEqual": true
+    },
+    {
+      "v2": "layers/front-rim-occlusion.png",
+      "localRebuild": "layers/front-rim.png",
+      "bytesEqual": false,
+      "allFramesRGBAEqual": true
+    },
+    {
+      "v2": "motion/pisa-open-quattro-formaggi.webp",
+      "localRebuild": "motion/pisa-quattro-formaggi.webp",
+      "bytesEqual": false,
+      "allFramesRGBAEqual": false
+    },
+    {
+      "v2": "motion/pisa-open-salami.webp",
+      "localRebuild": "motion/pisa-salami.webp",
+      "bytesEqual": false,
+      "allFramesRGBAEqual": false
+    },
+    {
+      "v2": "motion/pisa-open-margherita.webp",
+      "localRebuild": "motion/pisa-margherita.webp",
+      "bytesEqual": false,
+      "allFramesRGBAEqual": false
+    }
+  ],
+  "sameByteImages": 0,
+  "sameDecodedImages": 4,
+  "allV2CompositingImagesAndMotionFramesEdgeContacts": [],
+  "v2SourceGeneratorInArchive": false,
+  "limits": "Local reproducibility only; platform-dependent codec/numeric differences are not themselves proof of redesign. No exact v2 source commit/generator was supplied. Source integrity does not repair closed-lid geometry."
+}

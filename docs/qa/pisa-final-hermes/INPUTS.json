@@ -1,0 +1,28 @@
+{
+  "reviewedGitCommit": "8414319186c834cad091231d6c9beed6068b5876",
+  "reviewPR": "https://github.com/dennisariens/topo/pull/72",
+  "branch": "art/pisa-hinge-source-preserving-final-20261103",
+  "ciRun": "https://github.com/dennisariens/topo/actions/runs/41644779256",
+  "ciArtifactId": 13234956425,
+  "ciOuterArtifactSha256": "dbb6e0ddd9b5947e27fb002e565399b4e304b1f710cfadb5275ea37b64076991",
+  "reviewedZipFilename": "NINO_PISA_SOURCE_PRESERVING_QA.zip",
+  "reviewedZipSha256": "d87c9d50f2a29b16d4d42ab24d73020478b5a0dff4e2edd17010347b6f58df82",
+  "separateRequestedReviewV2": {
+    "filename": "NINO_PISA_FINAL_ARTWORK_REVIEW_v2.zip",
+    "suppliedPath": "/Users/dennisariens/Downloads/NINO_PISA_FINAL_ARTWORK_REVIEW_v2.zip",
+    "status": "REVIEWED — REWORK",
+    "sha256": "b314beb412d9eb5fb4cd33cb1b3fe297343121869f1cfd16659887cc3b78442d",
+    "bytes": 20357014,
+    "files": 32,
+    "declaredManifestEntriesVerified": 31,
+    "imagesComparedToCI": 28,
+    "byteIdenticalImages": 0,
+    "decodedIdenticalImages": 5,
+    "decodedDifferentImages": 23,
+    "producingGitCommit": null,
+    "previousState": "Not located in initial local metadata search; user subsequently supplied exact ZIP. Earlier BLOCKED/missing-input checkpoint is historical and superseded.",
+    "comparison": "Performed on actual ZIP bytes; no approval inferred from CI. See PISA_PR72_VS_REVIEW_V2.md and v2/v2-audit.json."
+  },
+  "finalVerdict": "REWORK",
+  "noMergeDeployLiveAppEdits": true
+}

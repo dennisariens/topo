@@ -1,0 +1,71 @@
+{
+  "verdict": "REWORK",
+  "PR72": "8414319186c834cad091231d6c9beed6068b5876",
+  "ciZIP": "d87c9d50f2a29b16d4d42ab24d73020478b5a0dff4e2edd17010347b6f58df82",
+  "reviewV2ZIP": {
+    "filename": "NINO_PISA_FINAL_ARTWORK_REVIEW_v2.zip",
+    "sha256": "b314beb412d9eb5fb4cd33cb1b3fe297343121869f1cfd16659887cc3b78442d",
+    "bytes": 20357014,
+    "files": 32
+  },
+  "sourceImagesPreserved": 79,
+  "manifestEntriesVerified": 31,
+  "CIdecodedIdenticalImages": 5,
+  "localRebuildDecodedIdenticalImages": 4,
+  "closedOcclusion": [
+    {
+      "flavor": "margherita",
+      "opaqueRimPizzaClosedLidOverlap": 17067,
+      "bbox": [
+        315,
+        822,
+        839,
+        1041
+      ],
+      "rimVsFlavorRGBgt30": 0,
+      "mismatchBBox": null
+    },
+    {
+      "flavor": "salami",
+      "opaqueRimPizzaClosedLidOverlap": 16480,
+      "bbox": [
+        315,
+        822,
+        839,
+        1041
+      ],
+      "rimVsFlavorRGBgt30": 12125,
+      "mismatchBBox": [
+        321,
+        822,
+        839,
+        1036
+      ]
+    },
+    {
+      "flavor": "quattro-formaggi",
+      "opaqueRimPizzaClosedLidOverlap": 17068,
+      "bbox": [
+        315,
+        822,
+        839,
+        1041
+      ],
+      "rimVsFlavorRGBgt30": 4414,
+      "mismatchBBox": [
+        318,
+        834,
+        834,
+        1041
+      ]
+    }
+  ],
+  "browser": {
+    "version": "156.0.8078.80",
+    "actualSuppliedReviewHTML": true,
+    "offline": true,
+    "reducedMotionStaticPASS": true
+  },
+  "implementationHandoff": "WITHHELD: P1s F1-F3",
+  "noMergeDeployAppChanges": true
+}

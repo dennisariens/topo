@@ -1,0 +1,171 @@
+{
+  "zipSha256": "b314beb412d9eb5fb4cd33cb1b3fe297343121869f1cfd16659887cc3b78442d",
+  "scope": "Actual supplied review.html via file://, offline. Diagnostic review UI, NOT learning-app integration or physical iPad.",
+  "browser": "156.0.8078.80",
+  "runs": [
+    {
+      "reducedMotion": "no-preference",
+      "inventory": [
+        {
+          "title": "Margherita",
+          "images": [
+            {
+              "src": "motion/pisa-open-margherita.webp",
+              "natural": [
+                1254,
+                1254
+              ],
+              "visible": true,
+              "alt": "Openende Pisa pizzadoos met margherita"
+            },
+            {
+              "src": "proof/margherita-04-70deg.png",
+              "natural": [
+                1254,
+                1254
+              ],
+              "visible": false,
+              "alt": "Geopende Pisa pizzadoos met margherita"
+            }
+          ]
+        },
+        {
+          "title": "Salami",
+          "images": [
+            {
+              "src": "motion/pisa-open-salami.webp",
+              "natural": [
+                1254,
+                1254
+              ],
+              "visible": true,
+              "alt": "Openende Pisa pizzadoos met salami"
+            },
+            {
+              "src": "proof/salami-04-70deg.png",
+              "natural": [
+                1254,
+                1254
+              ],
+              "visible": false,
+              "alt": "Geopende Pisa pizzadoos met salami"
+            }
+          ]
+        },
+        {
+          "title": "Quattro Formaggi",
+          "images": [
+            {
+              "src": "motion/pisa-open-quattro-formaggi.webp",
+              "natural": [
+                1254,
+                1254
+              ],
+              "visible": true,
+              "alt": "Openende Pisa pizzadoos met quattro-formaggi"
+            },
+            {
+              "src": "proof/quattro-formaggi-04-70deg.png",
+              "natural": [
+                1254,
+                1254
+              ],
+              "visible": false,
+              "alt": "Geopende Pisa pizzadoos met quattro-formaggi"
+            }
+          ]
+        }
+      ],
+      "changedEarlyFinal": [
+        true,
+        true,
+        true
+      ],
+      "replayKeyboardWorks": true,
+      "errors": [],
+      "network": []
+    },
+    {
+      "reducedMotion": "reduce",
+      "inventory": [
+        {
+          "title": "Margherita",
+          "images": [
+            {
+              "src": "motion/pisa-open-margherita.webp",
+              "natural": [
+                1254,
+                1254
+              ],
+              "visible": false,
+              "alt": "Openende Pisa pizzadoos met margherita"
+            },
+            {
+              "src": "proof/margherita-04-70deg.png",
+              "natural": [
+                1254,
+                1254
+              ],
+              "visible": true,
+              "alt": "Geopende Pisa pizzadoos met margherita"
+            }
+          ]
+        },
+        {
+          "title": "Salami",
+          "images": [
+            {
+              "src": "motion/pisa-open-salami.webp",
+              "natural": [
+                1254,
+                1254
+              ],
+              "visible": false,
+              "alt": "Openende Pisa pizzadoos met salami"
+            },
+            {
+              "src": "proof/salami-04-70deg.png",
+              "natural": [
+                1254,
+                1254
+              ],
+              "visible": true,
+              "alt": "Geopende Pisa pizzadoos met salami"
+            }
+          ]
+        },
+        {
+          "title": "Quattro Formaggi",
+          "images": [
+            {
+              "src": "motion/pisa-open-quattro-formaggi.webp",
+              "natural": [
+                1254,
+                1254
+              ],
+              "visible": false,
+              "alt": "Openende Pisa pizzadoos met quattro-formaggi"
+            },
+            {
+              "src": "proof/quattro-formaggi-04-70deg.png",
+              "natural": [
+                1254,
+                1254
+              ],
+              "visible": true,
+              "alt": "Geopende Pisa pizzadoos met quattro-formaggi"
+            }
+          ]
+        }
+      ],
+      "changedEarlyFinal": [
+        false,
+        false,
+        false
+      ],
+      "replayKeyboardWorks": true,
+      "errors": [],
+      "network": []
+    }
+  ]
+}

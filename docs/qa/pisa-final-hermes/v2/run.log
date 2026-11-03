@@ -1,0 +1,168 @@
+{
+  "zip": {
+    "filename": "NINO_PISA_FINAL_ARTWORK_REVIEW_v2.zip",
+    "sha256": "b314beb412d9eb5fb4cd33cb1b3fe297343121869f1cfd16659887cc3b78442d",
+    "bytes": 20357014,
+    "files": 32
+  },
+  "manifestRowsVerified": 31,
+  "images": 28,
+  "sameByteImages": 0,
+  "sameDecodedImages": 5,
+  "closed": [
+    {
+      "flavor": "margherita",
+      "opaqueRimPizzaClosedLidOverlap": 17067,
+      "bbox": [
+        315,
+        822,
+        839,
+        1041
+      ],
+      "rimVsFlavorRGBgt30": 0,
+      "mismatchBBox": null
+    },
+    {
+      "flavor": "salami",
+      "opaqueRimPizzaClosedLidOverlap": 16480,
+      "bbox": [
+        315,
+        822,
+        839,
+        1041
+      ],
+      "rimVsFlavorRGBgt30": 12125,
+      "mismatchBBox": [
+        321,
+        822,
+        839,
+        1036
+      ]
+    },
+    {
+      "flavor": "quattro-formaggi",
+      "opaqueRimPizzaClosedLidOverlap": 17068,
+      "bbox": [
+        315,
+        822,
+        839,
+        1041
+      ],
+      "rimVsFlavorRGBgt30": 4414,
+      "mismatchBBox": [
+        318,
+        834,
+        834,
+        1041
+      ]
+    }
+  ],
+  "playback": [
+    {
+      "flavor": "margherita",
+      "frames": 24,
+      "durationMs": 1296,
+      "loop": 1,
+      "sampleIndexes": [
+        0,
+        6,
+        12,
+        18,
+        23
+      ],
+      "sampleTimes": [
+        [
+          0,
+          54
+        ],
+        [
+          324,
+          378
+        ],
+        [
+          648,
+          702
+        ],
+        [
+          972,
+          1026
+        ],
+        [
+          1242,
+          1296
+        ]
+      ]
+    },
+    {
+      "flavor": "salami",
+      "frames": 24,
+      "durationMs": 1296,
+      "loop": 1,
+      "sampleIndexes": [
+        0,
+        6,
+        12,
+        18,
+        23
+      ],
+      "sampleTimes": [
+        [
+          0,
+          54
+        ],
+        [
+          324,
+          378
+        ],
+        [
+          648,
+          702
+        ],
+        [
+          972,
+          1026
+        ],
+        [
+          1242,
+          1296
+        ]
+      ]
+    },
+    {
+      "flavor": "quattro-formaggi",
+      "frames": 24,
+      "durationMs": 1296,
+      "loop": 1,
+      "sampleIndexes": [
+        0,
+        6,
+        12,
+        18,
+        23
+      ],
+      "sampleTimes": [
+        [
+          0,
+          54
+        ],
+        [
+          324,
+          378
+        ],
+        [
+          648,
+          702
+        ],
+        [
+          972,
+          1026
+        ],
+        [
+          1242,
+          1296
+        ]
+      ]
+    }
+  ],
+  "sourceCodeInZip": false
+}

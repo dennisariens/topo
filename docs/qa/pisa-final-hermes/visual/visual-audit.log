@@ -1,0 +1,209 @@
+{
+  "records": [
+    {
+      "flavor": "margherita",
+      "actualFrames": 24,
+      "duration_ms": 1296,
+      "loop": 1,
+      "sampleIndexes": [
+        0,
+        6,
+        12,
+        18,
+        23
+      ],
+      "sampleTimes": [
+        [
+          0,
+          54
+        ],
+        [
+          324,
+          378
+        ],
+        [
+          648,
+          702
+        ],
+        [
+          972,
+          1026
+        ],
+        [
+          1242,
+          1296
+        ]
+      ],
+      "frameHashes": [
+        "de35d05beb8762b42c5bb0bcf670ba8918f462b28703a5150c6d798d356194d8",
+        "b8306e46421a21adf76fe2ca04f4f1894765b0102a33daf5c2a8543fa2fa5833",
+        "67c1d336090f43f5773749039f4d13a94dcaff6199dedccc48409033d67a3cfa",
+        "53667632917aa9744c3d7f444750a8293bb77cf21753f4b84a092a67a3a8f696",
+        "0a9140a27f25aae9ff00b89e240b564faa40b2cd5d0e4cd6baa643301b5a2ce6",
+        "3abc7781a864c8649dc2ae2c8d072827f2ad632c27d5836205dc8fca333e1693",
+        "f6782b9b1f8d70d93cbde28eb3158441609e1e2cda8615026f6cfe0bdd7b7886",
+        "fd9dedd05a01a8b7cd338f405ff53402193f9aa5894a14616d3b7a12b32d6026",
+        "556d83c89db5b65f7daf109d88ce5375dcc79d36224aaf4957288e3404a9c7b6",
+        "c718a3be893470960acfaa1d0ee923dce6f9cbce8d9cf002ae117b32428efd77",
+        "3a8003764678079c1faf16ea827a21916e166bce22ee000e631a31d09ba0ab75",
+        "0fd66887b8022ee6e7d97b014f73c8cd4aab1662ae37489d80de02372f07c13a",
+        "0e20fe319a9516f7d00ea5d4e11735b02ac42a9d91a86d2d7eeaeacd32153969",
+        "9b21f9b507067975c7274ca45c5f3281833d0442193682f4910cfa9f4fdba581",
+        "19c8570766a4f3ece7191611fe3890e485b614f69c5289063b7abff7393f7bc6",
+        "055df12db72e26b501444fc39f55534c6232d91419e21a7871c557cb731868bd",
+        "32a19467c381cce20e6d42580c980671571aa45042fede0cbf93cdf8719dadf5",
+        "e19fd66c27145132eee8e2b70609f3c3a6ea0b2c9de2275ebcfee4957440933d",
+        "171187ddf93baa7ed538199a5a9b928d6374c1161ca548670b3109c9456fa13e",
+        "7066f4250902d73bbe0c9ced3294a55fc581cdf88d151e93af52a10f0013dbac",
+        "1726b8012f05404ced211ced8bdcfc6a39de0ce4042bdf6fcae3655aaf06f473",
+        "b0a9e6713a0cc679c174a1f43d32e170f8e00060fd0f6fa639d84724f01dd49e",
+        "c0117b8071aa5fc205c9e43c378eec666e793a7549aceb1e3a87d193e88033bd",
+        "5198e9cfa0d38e8e4d81648b4ef9f2d0b5e15dc82f2ef4eff7845f6a0122bccc"
+      ]
+    },
+    {
+      "flavor": "salami",
+      "actualFrames": 24,
+      "duration_ms": 1296,
+      "loop": 1,
+      "sampleIndexes": [
+        0,
+        6,
+        12,
+        18,
+        23
+      ],
+      "sampleTimes": [
+        [
+          0,
+          54
+        ],
+        [
+          324,
+          378
+        ],
+        [
+          648,
+          702
+        ],
+        [
+          972,
+          1026
+        ],
+        [
+          1242,
+          1296
+        ]
+      ],
+      "frameHashes": [
+        "2bf0e6ee413d0862b35d3551c3d2bd7dc734b84da133044e28c487a508b1e70f",
+        "b148c6a6a7fa5c90f704f33cd31855b307c60e45d158924efce8b97d33ce7a55",
+        "fabf006325ae8bc70ae3eb584dd6f08d4e1bd639f435c9b10fd719c768b5705a",
+        "20bfcf7060bc295e5fd278f2b0b6d798cdd63d4294bb6ce96dd80b4fc7f45876",
+        "6eae132cb9ddf204973a4a7084382b3267b8c45fa9d4dfe978505e0e689b1b98",
+        "eed7a2db24dbb34cac51ca9e4a8d657cc79dd02deb15d814f153d1b3cc031463",
+        "6fc17ff8380003e940aed9873e83969ff448661f4023f5c53a39abdb7cd0b7ed",
+        "6d0febf8e6b466e64a8a7b8151e85fecf5db90091f76dfce57bac30adfa0b7a0",
+        "124e78d1ad39a824f9ede04f3d7f7742a6a64076fbb54060c9e5c75d7db9aece",
+        "6b050690fd89f1fc1c43efe454188ad90c67f9cae169e039ca52b7a0b9889d74",
+        "111b354188d5b625f23ff99863678de75fa851f7f1058567450fb39fd7019757",
+        "d989ece392747c6c95f2da50661b115f3a424bd46af3fd4c1522ca89cb1af012",
+        "23d01c3063b2daf6e93856649a8c224693e714790fd9f81ce95dbae0d8faa3e0",
+        "01173b5b368f818177fd2fa3bfd2c658548fa2aa91f0540d7b835ee9b31da961",
+        "57e978ec1011e9b84252701bc487d462cca2c41899acf3793292cae416d6ab14",
+        "cad8d3a025f5582e62c6526e4f384d9b5ccb83dbff32f81da1679fbe3da5d7e3",
+        "2e799071238d07e3ec540bc0fe771f2ef2984e609bc65413661e89730a8f8a68",
+        "bb38418afa890cd4fc321b2d34d45078b5b6d51aa73a98ccf8a19e93fe952498",
+        "6c9a49bca286b5ecb4dd8a3c1a35fff308b48f16c8e2f80c424a45efcce8530a",
+        "69ee9a384670f9ab91b88c3e376179af69867d17524e34a65e08d3287c982dc9",
+        "d03b57e93f2fea54f4b54d2a83be14704795d797607fc7575ac24a4fcff1f829",
+        "0d0526f9fd702e090ef6dce075e394e71904b031c3c7aaf078af8ffb046990fa",
+        "bad99b26659aaf80e7b071c630e419e38810cc56d89db668bea3b3e13690adcb",
+        "855de53eecd2b0f7601d5e0b2c5e10c13cf3c07ce30f3e2aed6109ec27f2d6ac"
+      ]
+    },
+    {
+      "flavor": "quattro-formaggi",
+      "actualFrames": 24,
+      "duration_ms": 1296,
+      "loop": 1,
+      "sampleIndexes": [
+        0,
+        6,
+        12,
+        18,
+        23
+      ],
+      "sampleTimes": [
+        [
+          0,
+          54
+        ],
+        [
+          324,
+          378
+        ],
+        [
+          648,
+          702
+        ],
+        [
+          972,
+          1026
+        ],
+        [
+          1242,
+          1296
+        ]
+      ],
+      "frameHashes": [
+        "baa98a911025da92d9da1bd9928b66a672fd25794f70da1a73f513827d5ae02e",
+        "91303050f415be7de50162d06064d31b06f05c90ced008f19a6d5a949435856c",
+        "b5655c615007788a602e30560685b5bec91db608c256f606b44710b37982b2ab",
+        "74f282672c703260d1e0178818ae796b34bd4fdae0893118fd4a9c2ed2c71167",
+        "47a6d4a9d2913cc797871529b3fa08d694e089ec267f5e5334354c978c67cf26",
+        "e6fcae4ddc3ded9d72828e86e0e38b13846e3d8048a53d1cc9ea8c26b70c60cc",
+        "7874ba1c007f110b93f3cf422482e7a0509e5207dde0c88ca5e81e428a449070",
+        "feedab9966906dda5f58d43fe1b59194de2f7eee5f815f9d60610fff29da64c9",
+        "7e34789462a15172c056e071cebdf7806229a8c38dd9eab1b60287107fe3bd65",
+        "8a9529d4a219c31c4e3d5e0f5d31997cc813b731ee8fc8ad7c88744d6296f6e7",
+        "4a3199c7d9c31dcf2b9ad7e111c2e5ded5b153657c2d16456868b71ef6b6e3d3",
+        "da3f679bf7f8994c4b11ce9f91c2c787f024fbad4a7470af0545bc571c5063e3",
+        "bc1826a8d72ccedc91f380f38dc3319d7ab461c8cffa4acaa2178d1d321f1f38",
+        "496ceea9595b7ed92c3ae74a24fdd8f2f29089659ba12b9fd6b34721e4edc5fe",
+        "c0e942b91b70cebc28587ea79c89053911abe72cbdc247d8d74ac6ab088ea884",
+        "3505e933cdaadd20328208a6822f775a457a3bd013f662325826c32ed221d23b",
+        "89be1aabbfbfbd275eb800aa528ab3871328837481143d1a1d29765af2f8ebc5",
+        "5a1c3af008cd0d6b3ea704f771d6630c08f02606801235e915e4ea5f60b06157",
+        "7d450c56338999388713a0a69ce036e6a540d67adf7eb7ba649bfcf7290f1049",
+        "e8d9620eb1d2a16544480f8e54b19d2c5f4aad3c2f7395a6ae963330d27c36bb",
+        "0fc7fa1fed2e693413b4d172ae2456585269c219c373682e266df0c5a346a7cc",
+        "0b2361cd7693b962a951938d4ed8d0009b00facfc2c924980ee993538e88c0e5",
+        "3b624e7d6f0217df0d40e33bf439569ced5aae49bb9da4f4adfc5334c7bf96e9",
+        "a3491b3af402275019aa070e77570729d08e02777e34735345db74cc853aac3b"
+      ]
+    }
+  ],
+  "closedFlavorDifferences": [
+    {
+      "versus": "salami",
+      "visibleDifferentPixelsRGBgt12AlphaGT8": 9,
+      "bbox": [
+        650,
+        630,
+        730,
+        661
+      ]
+    },
+    {
+      "versus": "quattro-formaggi",
+      "visibleDifferentPixelsRGBgt12AlphaGT8": 7,
+      "bbox": [
+        637,
+        629,
+        730,
+        661
+      ]
+    }
+  ]
+}

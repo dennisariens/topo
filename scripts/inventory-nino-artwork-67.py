@@ -4,6 +4,7 @@ import base64
 import csv
 import hashlib
 import io
+import re
 import json
 import subprocess
 from pathlib import Path
@@ -35,6 +36,9 @@ runtime=json.loads((ROOT/'assets/nino/runtime-manifest.json').read_text())
 used={a['path']:role for role,a in runtime['assets'].items()}
 used.update({'output/art/nino-op-de-scooter.webp':'original scooter portrait/CSS',
              'output/art/topo-italie-avontuur.webp':'original route panorama'})
+v2=re.search(r'const NINO_V2_ART=(\{[^\n]+\});',html)
+if v2:
+    used.update({a['path']:'NINO V2 '+key+'; read-only earned-state presentation' for key,a in json.loads(v2.group(1)).items()})
 rows=[]
 paths=set(sources)|{f.relative_to(ROOT).as_posix() for f in (ROOT/'assets/nino').rglob('*') if f.is_file()}
 for path in sorted(paths):
@@ -85,8 +89,8 @@ for path in sorted(paths):
         row['missing_dependencies']=['Not a blank folio; no production integration authorized']
     elif '/book/' in path:
         row['missing_dependencies'].append('owner folio resolution exception; native1086x1448, <=543 CSS px/page at DPR2; no passport UI in PR61')
-    if '/gold/' in path or '/stamps/' in path or '/postcards/' in path or '/arrivo/' in path:
-        row['missing_dependencies'].append('Existing PR61 has no earned passport presentation; no new unlock/save/reward implementation authorized')
+    if path not in used and ('/gold/' in path or '/stamps/' in path or '/postcards/' in path or '/arrivo/' in path):
+        row['missing_dependencies'].append('Export available; not wired into NINO V2 runtime presentation')
     if 'venezia-scalloped' in path:
         row['missing_dependencies'].append('exact owner-reviewed raster matte/ZIP unavailable at a documented repository path; PR66 572-point reconstruction requires independent edge acceptance')
     row['source_availability']='pinned Git blob' if provenance else 'delivery derivative'
@@ -98,6 +102,6 @@ result=dict(baseCommit=next(iter(refs)),sourceRefs=refs,reviewCommit='9e58e756f1
             availability_totals={field:{value:sum(r[field]==value for r in rows) for value in sorted(set(r[field] for r in rows))} for field in ['source_availability','delivery_state','runtime_state']},assets=rows)
 (OUT/'artwork-manifest.json').write_text(json.dumps(result,indent=2)+'\n')
 with (OUT/'artwork-manifest.csv').open('w') as f:
-    writer=csv.DictWriter(f,fieldnames=list(rows[0]));writer.writeheader()
+    writer=csv.DictWriter(f,fieldnames=list(rows[0]),lineterminator='\n');writer.writeheader()
     for row in rows:writer.writerow({k:json.dumps(v) if isinstance(v,(list,dict)) else v for k,v in row.items()})
 print('Measured and provenance-checked',len(rows),'actual artwork files')

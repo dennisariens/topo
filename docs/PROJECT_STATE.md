@@ -1,3 +1,7 @@
+# NINO 2 integration candidate — 3 November 2026
+
+Current integration branch: `codex/nino-v2-integration-20261103`, isolated from existing edits. See [candidate evidence and remaining gates](qa/nino-v2-integration/README.md). This supersedes the earlier current-scope exclusions of passport/design work only for this explicitly authorized integration. Historical release/QA records below retain their original scope. No merge, deployment or approved-download replacement is authorized.
+
 # Project state
 
 ## NINO V2 artwork closeout — issue67, 2 November 2026

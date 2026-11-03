@@ -16,12 +16,12 @@
       "pinned Git blob": 205
     },
     "delivery_state": {
-      "export/file present": 56,
-      "source only; not delivered": 183
+      "export/file present": 67,
+      "source only; not delivered": 172
     },
     "runtime_state": {
-      "integrated": 11,
-      "not integrated": 228
+      "integrated": 43,
+      "not integrated": 196
     }
   },
   "assets": [
@@ -357,7 +357,7 @@
     },
     {
       "path": "assets/nino/chapter-icons/exports/chapter-01-steden-1-6.webp",
-      "delivery_present": false,
+      "delivery_present": true,
       "bytes": 108690,
       "sha256": "337e02ba2c1ecb909d9e1f9921070492e575c64e6f255733b5837c817fa42c11",
       "git_blob": "dfe931352e138f5068a5b34f151956ccb3bfce02",
@@ -404,19 +404,19 @@
         "srgb": null
       },
       "visual_approval": "Owner design GO; PR48 exact exports previously accepted; warm-paper/live-label scope retained",
-      "export_readiness": "actual export present; independent delivery QA pending; audited at pinned source Git blob, intentionally not duplicated into integration tree",
-      "runtime_usage": "NOT INTEGRATED",
+      "export_readiness": "existing verified runtime bytes",
+      "runtime_usage": "embedded data URI: NINO V2 chapter0; read-only earned-state presentation",
       "missing_dependencies": [],
       "intended_runtime_placement": "Existing chapter scene slot; exact canonical chapter only",
       "decoded_RGBA_sha256": "feb16b694729f69e0dbe3e0e9bb00b1be23fe8a3c4b589ea0830db1d4880c2eb",
-      "status": "INTEGRATION PENDING",
+      "status": "READY",
       "source_availability": "pinned Git blob",
-      "delivery_state": "source only; not delivered",
-      "runtime_state": "not integrated"
+      "delivery_state": "export/file present",
+      "runtime_state": "integrated"
     },
     {
       "path": "assets/nino/chapter-icons/exports/chapter-02-steden-7-12.webp",
-      "delivery_present": false,
+      "delivery_present": true,
       "bytes": 104694,
       "sha256": "f9c76c2c0926d31838abc82063a4e866546e0c5b49c4c75cf68ac3d1fb739589",
       "git_blob": "dbfb12f150211611aa46a93fce6fb9d98b49cdaf",
@@ -463,19 +463,19 @@
         "srgb": null
       },
       "visual_approval": "Owner design GO; PR48 exact exports previously accepted; warm-paper/live-label scope retained",
-      "export_readiness": "actual export present; independent delivery QA pending; audited at pinned source Git blob, intentionally not duplicated into integration tree",
-      "runtime_usage": "NOT INTEGRATED",
+      "export_readiness": "existing verified runtime bytes",
+      "runtime_usage": "embedded data URI: NINO V2 chapter1; read-only earned-state presentation",
       "missing_dependencies": [],
       "intended_runtime_placement": "Existing chapter scene slot; exact canonical chapter only",
       "decoded_RGBA_sha256": "d0b72686440f680da946bd54483190424ceb22d5601c97aaec7db6d1971db379",
-      "status": "INTEGRATION PENDING",
+      "status": "READY",
       "source_availability": "pinned Git blob",
-      "delivery_state": "source only; not delivered",
-      "runtime_state": "not integrated"
+      "delivery_state": "export/file present",
+      "runtime_state": "integrated"
     },
     {
       "path": "assets/nino/chapter-icons/exports/chapter-03-extra-steden-13-18.webp",
-      "delivery_present": false,
+      "delivery_present": true,
       "bytes": 109932,
       "sha256": "1801146a77b15f4e7b57b3e8a543244b55e37f828b57f02bf83dd1636f034b63",
       "git_blob": "737800e08046032b45e7fab1c3f957a9b86043a1",
@@ -522,19 +522,19 @@
         "srgb": null
       },
       "visual_approval": "Owner design GO; PR48 exact exports previously accepted; warm-paper/live-label scope retained",
-      "export_readiness": "actual export present; independent delivery QA pending; audited at pinned source Git blob, intentionally not duplicated into integration tree",
-      "runtime_usage": "NOT INTEGRATED",
+      "export_readiness": "existing verified runtime bytes",
+      "runtime_usage": "embedded data URI: NINO V2 chapter2; read-only earned-state presentation",
       "missing_dependencies": [],
       "intended_runtime_placement": "Existing chapter scene slot; exact canonical chapter only",
       "decoded_RGBA_sha256": "7c7263364078b2af7a1b97a788e12cadd4746c33040ad8685e6c72dbd85f6d61",
-      "status": "INTEGRATION PENDING",
+      "status": "READY",
       "source_availability": "pinned Git blob",
-      "delivery_state": "source only; not delivered",
-      "runtime_state": "not integrated"
+      "delivery_state": "export/file present",
+      "runtime_state": "integrated"
     },
     {
       "path": "assets/nino/chapter-icons/exports/chapter-04-extra-steden-19-23.webp",
-      "delivery_present": false,
+      "delivery_present": true,
       "bytes": 124022,
       "sha256": "125a496d4c65e3008c5b25606048b087a8d1678dfe551f3d7b2d256a33de1526",
       "git_blob": "a3fc3ce8b62f4f36bae99e77e4f99b5a63f451d7",
@@ -581,19 +581,19 @@
         "srgb": null
       },
       "visual_approval": "Owner design GO; PR48 exact exports previously accepted; warm-paper/live-label scope retained",
-      "export_readiness": "actual export present; independent delivery QA pending; audited at pinned source Git blob, intentionally not duplicated into integration tree",
-      "runtime_usage": "NOT INTEGRATED",
+      "export_readiness": "existing verified runtime bytes",
+      "runtime_usage": "embedded data URI: NINO V2 chapter3; read-only earned-state presentation",
       "missing_dependencies": [],
       "intended_runtime_placement": "Existing chapter scene slot; exact canonical chapter only",
       "decoded_RGBA_sha256": "0755fca9743ddee984c03f4f13902fea2c9e8a099a46fcef521594ecc042b062",
-      "status": "INTEGRATION PENDING",
+      "status": "READY",
       "source_availability": "pinned Git blob",
-      "delivery_state": "source only; not delivered",
-      "runtime_state": "not integrated"
+      "delivery_state": "export/file present",
+      "runtime_state": "integrated"
     },
     {
       "path": "assets/nino/chapter-icons/exports/chapter-05-eilanden.webp",
-      "delivery_present": false,
+      "delivery_present": true,
       "bytes": 127238,
       "sha256": "f1ca42b2a08c2586ef601a1d4e6174a1996bdeb95a64c0b8fadabafbcb2fe9f0",
       "git_blob": "c0d95602f8bd3c3754953bd2883441ef8d1b8ff0",
@@ -640,19 +640,19 @@
         "srgb": null
       },
       "visual_approval": "Owner design GO; PR48 exact exports previously accepted; warm-paper/live-label scope retained",
-      "export_readiness": "actual export present; independent delivery QA pending; audited at pinned source Git blob, intentionally not duplicated into integration tree",
-      "runtime_usage": "NOT INTEGRATED",
+      "export_readiness": "existing verified runtime bytes",
+      "runtime_usage": "embedded data URI: NINO V2 chapter4; read-only earned-state presentation",
       "missing_dependencies": [],
       "intended_runtime_placement": "Existing chapter scene slot; exact canonical chapter only",
       "decoded_RGBA_sha256": "12bd3576e4a35d304dad5bbbcabe5642e8356847a980ffc3f64720f3b501f939",
-      "status": "INTEGRATION PENDING",
+      "status": "READY",
       "source_availability": "pinned Git blob",
-      "delivery_state": "source only; not delivered",
-      "runtime_state": "not integrated"
+      "delivery_state": "export/file present",
+      "runtime_state": "integrated"
     },
     {
       "path": "assets/nino/chapter-icons/exports/chapter-06-bergen.webp",
-      "delivery_present": false,
+      "delivery_present": true,
       "bytes": 121680,
       "sha256": "a6b8def0c138109385f96de64c02026d11dd19bea9ffa9ad6e31fca5fab0b7c3",
       "git_blob": "77bd329ef833c12d4ba37526f26ab091e5b3ab80",
@@ -699,19 +699,19 @@
         "srgb": null
       },
       "visual_approval": "Owner design GO; PR48 exact exports previously accepted; warm-paper/live-label scope retained",
-      "export_readiness": "actual export present; independent delivery QA pending; audited at pinned source Git blob, intentionally not duplicated into integration tree",
-      "runtime_usage": "NOT INTEGRATED",
+      "export_readiness": "existing verified runtime bytes",
+      "runtime_usage": "embedded data URI: NINO V2 chapter5; read-only earned-state presentation",
       "missing_dependencies": [],
       "intended_runtime_placement": "Existing chapter scene slot; exact canonical chapter only",
       "decoded_RGBA_sha256": "9d12e0a5d8e4b87b7579005a5837d7509fb6755971811b13b39d316b2634d347",
-      "status": "INTEGRATION PENDING",
+      "status": "READY",
       "source_availability": "pinned Git blob",
-      "delivery_state": "source only; not delivered",
-      "runtime_state": "not integrated"
+      "delivery_state": "export/file present",
+      "runtime_state": "integrated"
     },
     {
       "path": "assets/nino/chapter-icons/exports/chapter-07-vulkanen.webp",
-      "delivery_present": false,
+      "delivery_present": true,
       "bytes": 119992,
       "sha256": "52efca255b21936d51c7c86868d438005393b2fac66a7ae8c2f05daaa593c232",
       "git_blob": "10d5a68b111d6c508458c413258ae3e978c2be80",
@@ -758,19 +758,19 @@
         "srgb": null
       },
       "visual_approval": "Owner design GO; PR48 exact exports previously accepted; warm-paper/live-label scope retained",
-      "export_readiness": "actual export present; independent delivery QA pending; audited at pinned source Git blob, intentionally not duplicated into integration tree",
-      "runtime_usage": "NOT INTEGRATED",
+      "export_readiness": "existing verified runtime bytes",
+      "runtime_usage": "embedded data URI: NINO V2 chapter6; read-only earned-state presentation",
       "missing_dependencies": [],
       "intended_runtime_placement": "Existing chapter scene slot; exact canonical chapter only",
       "decoded_RGBA_sha256": "aeb86ac0ab4f9140bde4cc58e93ec32aa1e17e45399ac817657af650342be293",
-      "status": "INTEGRATION PENDING",
+      "status": "READY",
       "source_availability": "pinned Git blob",
-      "delivery_state": "source only; not delivered",
-      "runtime_state": "not integrated"
+      "delivery_state": "export/file present",
+      "runtime_state": "integrated"
     },
     {
       "path": "assets/nino/chapter-icons/exports/chapter-08-streken.webp",
-      "delivery_present": false,
+      "delivery_present": true,
       "bytes": 127734,
       "sha256": "2885eeb2d2b4d2479895761457968768d7046e65958ed6df0fd1ee056ee88a14",
       "git_blob": "ca54e64c93d8e7d04f04a445c334b84ffa0c9f0a",
@@ -817,19 +817,19 @@
         "srgb": null
       },
       "visual_approval": "Owner design GO; PR48 exact exports previously accepted; warm-paper/live-label scope retained",
-      "export_readiness": "actual export present; independent delivery QA pending; audited at pinned source Git blob, intentionally not duplicated into integration tree",
-      "runtime_usage": "NOT INTEGRATED",
+      "export_readiness": "existing verified runtime bytes",
+      "runtime_usage": "embedded data URI: NINO V2 chapter7; read-only earned-state presentation",
       "missing_dependencies": [],
       "intended_runtime_placement": "Existing chapter scene slot; exact canonical chapter only",
       "decoded_RGBA_sha256": "a5c0a9bbff5fe453d6465916208258648bd5e69ca04078e58740e5aba702ec0c",
-      "status": "INTEGRATION PENDING",
+      "status": "READY",
       "source_availability": "pinned Git blob",
-      "delivery_state": "source only; not delivered",
-      "runtime_state": "not integrated"
+      "delivery_state": "export/file present",
+      "runtime_state": "integrated"
     },
     {
       "path": "assets/nino/chapter-icons/exports/chapter-09-landen.webp",
-      "delivery_present": false,
+      "delivery_present": true,
       "bytes": 101332,
       "sha256": "c616f7524a546ed77e59347cbf8335be9013e687483fa689e00b1c26ab7a0f79",
       "git_blob": "4c385852a3784449f3f5d7b946a659cae97a5861",
@@ -876,19 +876,19 @@
         "srgb": null
       },
       "visual_approval": "Owner design GO; PR48 exact exports previously accepted; warm-paper/live-label scope retained",
-      "export_readiness": "actual export present; independent delivery QA pending; audited at pinned source Git blob, intentionally not duplicated into integration tree",
-      "runtime_usage": "NOT INTEGRATED",
+      "export_readiness": "existing verified runtime bytes",
+      "runtime_usage": "embedded data URI: NINO V2 chapter8; read-only earned-state presentation",
       "missing_dependencies": [],
       "intended_runtime_placement": "Existing chapter scene slot; exact canonical chapter only",
       "decoded_RGBA_sha256": "40d54714e0709ddb64a9addec99d54cca7c9ca1021f3d317c4be5e8ca1357432",
-      "status": "INTEGRATION PENDING",
+      "status": "READY",
       "source_availability": "pinned Git blob",
-      "delivery_state": "source only; not delivered",
-      "runtime_state": "not integrated"
+      "delivery_state": "export/file present",
+      "runtime_state": "integrated"
     },
     {
       "path": "assets/nino/chapter-icons/exports/chapter-10-zeeen.webp",
-      "delivery_present": false,
+      "delivery_present": true,
       "bytes": 117930,
       "sha256": "66139c1119925b9584aaa0de0be9472ff2c0272235ac019bf5316be7c2325f0f",
       "git_blob": "aee38041a7f6eb30ae6fe7f2df1413df43e24206",
@@ -935,19 +935,19 @@
         "srgb": null
       },
       "visual_approval": "Owner design GO; PR48 exact exports previously accepted; warm-paper/live-label scope retained",
-      "export_readiness": "actual export present; independent delivery QA pending; audited at pinned source Git blob, intentionally not duplicated into integration tree",
-      "runtime_usage": "NOT INTEGRATED",
+      "export_readiness": "existing verified runtime bytes",
+      "runtime_usage": "embedded data URI: NINO V2 chapter9; read-only earned-state presentation",
       "missing_dependencies": [],
       "intended_runtime_placement": "Existing chapter scene slot; exact canonical chapter only",
       "decoded_RGBA_sha256": "5bb25a5d4fda0e73e60c082ffc8da3acd2f9d04d37799c00b9649273db3aa5ad",
-      "status": "INTEGRATION PENDING",
+      "status": "READY",
       "source_availability": "pinned Git blob",
-      "delivery_state": "source only; not delivered",
-      "runtime_state": "not integrated"
+      "delivery_state": "export/file present",
+      "runtime_state": "integrated"
     },
     {
       "path": "assets/nino/chapter-icons/exports/chapter-11-rivieren.webp",
-      "delivery_present": false,
+      "delivery_present": true,
       "bytes": 136506,
       "sha256": "c08a48c15a9e64abe11e6f839b160c0d24961a09ea2d627dd43277575b368ff2",
       "git_blob": "aa87aef77c82eb3cd7f83c6292d58fc5e7a4e684",
@@ -994,15 +994,15 @@
         "srgb": null
       },
       "visual_approval": "Owner design GO; PR48 exact exports previously accepted; warm-paper/live-label scope retained",
-      "export_readiness": "actual export present; independent delivery QA pending; audited at pinned source Git blob, intentionally not duplicated into integration tree",
-      "runtime_usage": "NOT INTEGRATED",
+      "export_readiness": "existing verified runtime bytes",
+      "runtime_usage": "embedded data URI: NINO V2 chapter10; read-only earned-state presentation",
       "missing_dependencies": [],
       "intended_runtime_placement": "Existing chapter scene slot; exact canonical chapter only",
       "decoded_RGBA_sha256": "686384a42db010290cd9999459cfea1071abf9bd0101af793e96b40e3025c4bb",
-      "status": "INTEGRATION PENDING",
+      "status": "READY",
       "source_availability": "pinned Git blob",
-      "delivery_state": "source only; not delivered",
-      "runtime_state": "not integrated"
+      "delivery_state": "export/file present",
+      "runtime_state": "integrated"
     },
     {
       "path": "assets/nino/chapter-icons/masters/chapter-01-steden-1-6.png",
@@ -2854,7 +2854,7 @@
       },
       "visual_approval": "Owner-approved package per issue67; exact derivative independent QA pending",
       "export_readiness": "existing verified runtime bytes",
-      "runtime_usage": "embedded data URI: welcome",
+      "runtime_usage": "embedded data URI: NINO V2 welcome; read-only earned-state presentation",
       "missing_dependencies": [],
       "intended_runtime_placement": "Preserved source/reference; no new placement authorized",
       "decoded_RGBA_sha256": "cf87c6524ca40725a50ccb1a24ba38e156d7f0978acba0fdb840838efcec34b5",
@@ -3915,15 +3915,15 @@
         "srgb": null
       },
       "visual_approval": "Owner-approved package per issue67; exact derivative independent QA pending",
-      "export_readiness": "actual export present; independent delivery QA pending",
-      "runtime_usage": "NOT INTEGRATED",
+      "export_readiness": "existing verified runtime bytes",
+      "runtime_usage": "embedded data URI: NINO V2 pizza0; read-only earned-state presentation",
       "missing_dependencies": [],
       "intended_runtime_placement": "Approved static open-box fallback; no hinged-lid frames",
       "decoded_RGBA_sha256": "9fd0d839413ec52cec8eb56779c1847f551c64f321f8d056c4a88f570fdd9d44",
-      "status": "INTEGRATION PENDING",
+      "status": "READY",
       "source_availability": "pinned Git blob",
       "delivery_state": "export/file present",
-      "runtime_state": "not integrated"
+      "runtime_state": "integrated"
     },
     {
       "path": "assets/nino/rewards/pizza/exports/pizza-box-open-pisa-quattro-formaggi.webp",
@@ -3974,15 +3974,15 @@
         "srgb": null
       },
       "visual_approval": "Owner-approved package per issue67; exact derivative independent QA pending",
-      "export_readiness": "actual export present; independent delivery QA pending",
-      "runtime_usage": "NOT INTEGRATED",
+      "export_readiness": "existing verified runtime bytes",
+      "runtime_usage": "embedded data URI: NINO V2 pizza2; read-only earned-state presentation",
       "missing_dependencies": [],
       "intended_runtime_placement": "Approved static open-box fallback; no hinged-lid frames",
       "decoded_RGBA_sha256": "38d9ec1908aee24a37f49760a366a16e586b3565c0ee53cad6b0b739d9534a6f",
-      "status": "INTEGRATION PENDING",
+      "status": "READY",
       "source_availability": "pinned Git blob",
       "delivery_state": "export/file present",
-      "runtime_state": "not integrated"
+      "runtime_state": "integrated"
     },
     {
       "path": "assets/nino/rewards/pizza/exports/pizza-box-open-pisa-salami.webp",
@@ -4033,15 +4033,15 @@
         "srgb": null
       },
       "visual_approval": "Owner-approved package per issue67; exact derivative independent QA pending",
-      "export_readiness": "actual export present; independent delivery QA pending",
-      "runtime_usage": "NOT INTEGRATED",
+      "export_readiness": "existing verified runtime bytes",
+      "runtime_usage": "embedded data URI: NINO V2 pizza1; read-only earned-state presentation",
       "missing_dependencies": [],
       "intended_runtime_placement": "Approved static open-box fallback; no hinged-lid frames",
       "decoded_RGBA_sha256": "4299d00f5852cb5b563ab03107b766c44ce7b8945449ba493ebc77e60d676ec4",
-      "status": "INTEGRATION PENDING",
+      "status": "READY",
       "source_availability": "pinned Git blob",
       "delivery_state": "export/file present",
-      "runtime_state": "not integrated"
+      "runtime_state": "integrated"
     },
     {
       "path": "assets/nino/rewards/pizza/exports/pizza-margherita-slice-icon.webp",
@@ -8987,17 +8987,15 @@
         "srgb": null
       },
       "visual_approval": "Owner-approved package per issue67; exact derivative independent QA pending",
-      "export_readiness": "actual export present; independent delivery QA pending",
-      "runtime_usage": "NOT INTEGRATED",
-      "missing_dependencies": [
-        "Existing PR61 has no earned passport presentation; no new unlock/save/reward implementation authorized"
-      ],
+      "export_readiness": "existing verified runtime bytes",
+      "runtime_usage": "embedded data URI: NINO V2 arrival; read-only earned-state presentation",
+      "missing_dependencies": [],
       "intended_runtime_placement": "Future passport: actual Vespa journey only",
       "decoded_RGBA_sha256": "17da7666d539085452842f96e40155a0cc1c111104aa19a4419275912be60c30",
-      "status": "INTEGRATION PENDING",
+      "status": "READY",
       "source_availability": "delivery derivative",
       "delivery_state": "export/file present",
-      "runtime_state": "not integrated"
+      "runtime_state": "integrated"
     },
     {
       "path": "assets/nino/travel-passport/arrivo/qa-candidates/arrivo-travel-ink-preview.png",
@@ -9053,7 +9051,7 @@
       "export_readiness": "source only; audited at pinned source Git blob, intentionally not duplicated into integration tree",
       "runtime_usage": "NOT INTEGRATED",
       "missing_dependencies": [
-        "Existing PR61 has no earned passport presentation; no new unlock/save/reward implementation authorized"
+        "Export available; not wired into NINO V2 runtime presentation"
       ],
       "intended_runtime_placement": "Future passport: actual Vespa journey only",
       "decoded_RGBA_sha256": "17da7666d539085452842f96e40155a0cc1c111104aa19a4419275912be60c30",
@@ -10166,7 +10164,7 @@
       "runtime_usage": "NOT INTEGRATED",
       "missing_dependencies": [
         "Not a blank folio; no production integration authorized",
-        "Existing PR61 has no earned passport presentation; no new unlock/save/reward implementation authorized"
+        "Export available; not wired into NINO V2 runtime presentation"
       ],
       "intended_runtime_placement": "ARCHIVAL / REWORK reference only; baked historical content; excluded from production passport",
       "decoded_RGBA_sha256": "ac0ae0cd77c4adbb9f5d82cc86211cb672eb2b7b880c9c82cb5d4c76d62b2f1b",
@@ -10225,7 +10223,7 @@
       "export_readiness": "actual export present; independent delivery QA pending",
       "runtime_usage": "NOT INTEGRATED",
       "missing_dependencies": [
-        "Existing PR61 has no earned passport presentation; no new unlock/save/reward implementation authorized"
+        "Export available; not wired into NINO V2 runtime presentation"
       ],
       "intended_runtime_placement": "Future passport: chapter goldAt>0; final only all11 goldAt>0; live labels",
       "decoded_RGBA_sha256": "b9ff66abb3d33691642f91f18f37fb9048e2c322c1cafdc963098745c5dc1103",
@@ -10284,7 +10282,7 @@
       "export_readiness": "actual export present; independent delivery QA pending",
       "runtime_usage": "NOT INTEGRATED",
       "missing_dependencies": [
-        "Existing PR61 has no earned passport presentation; no new unlock/save/reward implementation authorized"
+        "Export available; not wired into NINO V2 runtime presentation"
       ],
       "intended_runtime_placement": "Future passport: chapter goldAt>0; final only all11 goldAt>0; live labels",
       "decoded_RGBA_sha256": "b9ff66abb3d33691642f91f18f37fb9048e2c322c1cafdc963098745c5dc1103",
@@ -10343,7 +10341,7 @@
       "export_readiness": "actual export present; independent delivery QA pending",
       "runtime_usage": "NOT INTEGRATED",
       "missing_dependencies": [
-        "Existing PR61 has no earned passport presentation; no new unlock/save/reward implementation authorized"
+        "Export available; not wired into NINO V2 runtime presentation"
       ],
       "intended_runtime_placement": "Future passport: chapter goldAt>0; final only all11 goldAt>0; live labels",
       "decoded_RGBA_sha256": "0dcce9525c81f3afd6be07d27ca514b9bd2fbaf3d40966705c10cf48f413de3c",
@@ -10399,17 +10397,15 @@
         "srgb": null
       },
       "visual_approval": "Owner-approved package per issue67; exact derivative independent QA pending",
-      "export_readiness": "actual export present; independent delivery QA pending",
-      "runtime_usage": "NOT INTEGRATED",
-      "missing_dependencies": [
-        "Existing PR61 has no earned passport presentation; no new unlock/save/reward implementation authorized"
-      ],
+      "export_readiness": "existing verified runtime bytes",
+      "runtime_usage": "embedded data URI: NINO V2 chapterGold; read-only earned-state presentation",
+      "missing_dependencies": [],
       "intended_runtime_placement": "Future passport: chapter goldAt>0; final only all11 goldAt>0; live labels",
       "decoded_RGBA_sha256": "0dcce9525c81f3afd6be07d27ca514b9bd2fbaf3d40966705c10cf48f413de3c",
-      "status": "INTEGRATION PENDING",
+      "status": "READY",
       "source_availability": "delivery derivative",
       "delivery_state": "export/file present",
-      "runtime_state": "not integrated"
+      "runtime_state": "integrated"
     },
     {
       "path": "assets/nino/travel-passport/gold/exports/gold-chapter-seal-v2-native.png",
@@ -10461,7 +10457,7 @@
       "export_readiness": "actual export present; independent delivery QA pending",
       "runtime_usage": "NOT INTEGRATED",
       "missing_dependencies": [
-        "Existing PR61 has no earned passport presentation; no new unlock/save/reward implementation authorized"
+        "Export available; not wired into NINO V2 runtime presentation"
       ],
       "intended_runtime_placement": "Future passport: chapter goldAt>0; final only all11 goldAt>0; live labels",
       "decoded_RGBA_sha256": "3f056904c57f78023426806875e7bca049d7a29d0e722bd631754394877e0fb3",
@@ -10520,7 +10516,7 @@
       "export_readiness": "actual export present; independent delivery QA pending",
       "runtime_usage": "NOT INTEGRATED",
       "missing_dependencies": [
-        "Existing PR61 has no earned passport presentation; no new unlock/save/reward implementation authorized"
+        "Export available; not wired into NINO V2 runtime presentation"
       ],
       "intended_runtime_placement": "Future passport: chapter goldAt>0; final only all11 goldAt>0; live labels",
       "decoded_RGBA_sha256": "3f056904c57f78023426806875e7bca049d7a29d0e722bd631754394877e0fb3",
@@ -10579,7 +10575,7 @@
       "export_readiness": "actual export present; independent delivery QA pending",
       "runtime_usage": "NOT INTEGRATED",
       "missing_dependencies": [
-        "Existing PR61 has no earned passport presentation; no new unlock/save/reward implementation authorized"
+        "Export available; not wired into NINO V2 runtime presentation"
       ],
       "intended_runtime_placement": "Future passport: chapter goldAt>0; final only all11 goldAt>0; live labels",
       "decoded_RGBA_sha256": "61611656ce6e9f7f01e9c1373a26bb3eeeb1b6923c22e7ad8c78220152ada674",
@@ -10638,7 +10634,7 @@
       "export_readiness": "actual export present; independent delivery QA pending",
       "runtime_usage": "NOT INTEGRATED",
       "missing_dependencies": [
-        "Existing PR61 has no earned passport presentation; no new unlock/save/reward implementation authorized"
+        "Export available; not wired into NINO V2 runtime presentation"
       ],
       "intended_runtime_placement": "Future passport: chapter goldAt>0; final only all11 goldAt>0; live labels",
       "decoded_RGBA_sha256": "61611656ce6e9f7f01e9c1373a26bb3eeeb1b6923c22e7ad8c78220152ada674",
@@ -10697,7 +10693,7 @@
       "export_readiness": "actual export present; independent delivery QA pending",
       "runtime_usage": "NOT INTEGRATED",
       "missing_dependencies": [
-        "Existing PR61 has no earned passport presentation; no new unlock/save/reward implementation authorized"
+        "Export available; not wired into NINO V2 runtime presentation"
       ],
       "intended_runtime_placement": "Future passport: chapter goldAt>0; final only all11 goldAt>0; live labels",
       "decoded_RGBA_sha256": "47935ca63859712f37f451dd8bbb1a6e4b515f8ed6a6d2d3c2c89246065f6171",
@@ -10753,17 +10749,15 @@
         "srgb": null
       },
       "visual_approval": "Owner-approved package per issue67; exact derivative independent QA pending",
-      "export_readiness": "actual export present; independent delivery QA pending",
-      "runtime_usage": "NOT INTEGRATED",
-      "missing_dependencies": [
-        "Existing PR61 has no earned passport presentation; no new unlock/save/reward implementation authorized"
-      ],
+      "export_readiness": "existing verified runtime bytes",
+      "runtime_usage": "embedded data URI: NINO V2 finalGold; read-only earned-state presentation",
+      "missing_dependencies": [],
       "intended_runtime_placement": "Future passport: chapter goldAt>0; final only all11 goldAt>0; live labels",
       "decoded_RGBA_sha256": "47935ca63859712f37f451dd8bbb1a6e4b515f8ed6a6d2d3c2c89246065f6171",
-      "status": "INTEGRATION PENDING",
+      "status": "READY",
       "source_availability": "delivery derivative",
       "delivery_state": "export/file present",
-      "runtime_state": "not integrated"
+      "runtime_state": "integrated"
     },
     {
       "path": "assets/nino/travel-passport/gold/exports/gold-esploratore-doro-native.png",
@@ -10815,7 +10809,7 @@
       "export_readiness": "actual export present; independent delivery QA pending",
       "runtime_usage": "NOT INTEGRATED",
       "missing_dependencies": [
-        "Existing PR61 has no earned passport presentation; no new unlock/save/reward implementation authorized"
+        "Export available; not wired into NINO V2 runtime presentation"
       ],
       "intended_runtime_placement": "Future passport: chapter goldAt>0; final only all11 goldAt>0; live labels",
       "decoded_RGBA_sha256": "e5d1d5b58d518b6550d2283ae43982de9db3eee4082f4b01525f1b181dcf82af",
@@ -10874,7 +10868,7 @@
       "export_readiness": "actual export present; independent delivery QA pending",
       "runtime_usage": "NOT INTEGRATED",
       "missing_dependencies": [
-        "Existing PR61 has no earned passport presentation; no new unlock/save/reward implementation authorized"
+        "Export available; not wired into NINO V2 runtime presentation"
       ],
       "intended_runtime_placement": "Future passport: chapter goldAt>0; final only all11 goldAt>0; live labels",
       "decoded_RGBA_sha256": "e5d1d5b58d518b6550d2283ae43982de9db3eee4082f4b01525f1b181dcf82af",
@@ -10937,7 +10931,7 @@
       "export_readiness": "source only; audited at pinned source Git blob, intentionally not duplicated into integration tree",
       "runtime_usage": "NOT INTEGRATED",
       "missing_dependencies": [
-        "Existing PR61 has no earned passport presentation; no new unlock/save/reward implementation authorized"
+        "Export available; not wired into NINO V2 runtime presentation"
       ],
       "intended_runtime_placement": "Future passport: chapter goldAt>0; final only all11 goldAt>0; live labels",
       "decoded_RGBA_sha256": "3f056904c57f78023426806875e7bca049d7a29d0e722bd631754394877e0fb3",
@@ -11000,7 +10994,7 @@
       "export_readiness": "source only; audited at pinned source Git blob, intentionally not duplicated into integration tree",
       "runtime_usage": "NOT INTEGRATED",
       "missing_dependencies": [
-        "Existing PR61 has no earned passport presentation; no new unlock/save/reward implementation authorized"
+        "Export available; not wired into NINO V2 runtime presentation"
       ],
       "intended_runtime_placement": "Future passport: chapter goldAt>0; final only all11 goldAt>0; live labels",
       "decoded_RGBA_sha256": "e5d1d5b58d518b6550d2283ae43982de9db3eee4082f4b01525f1b181dcf82af",
@@ -11063,7 +11057,7 @@
       "export_readiness": "concept/rejected/diagnostic; never activate from this ledger; audited at pinned source Git blob, intentionally not duplicated into integration tree",
       "runtime_usage": "NOT INTEGRATED",
       "missing_dependencies": [
-        "Existing PR61 has no earned passport presentation; no new unlock/save/reward implementation authorized"
+        "Export available; not wired into NINO V2 runtime presentation"
       ],
       "intended_runtime_placement": "Future earned cultural souvenir holder; no ownership invented",
       "decoded_RGBA_sha256": "441b85f5914bd3783f18e3be4e07761134d338e3dd7adbfdfe24708a2ce1d5ac",
@@ -11126,7 +11120,7 @@
       "export_readiness": "concept/rejected/diagnostic; never activate from this ledger; audited at pinned source Git blob, intentionally not duplicated into integration tree",
       "runtime_usage": "NOT INTEGRATED",
       "missing_dependencies": [
-        "Existing PR61 has no earned passport presentation; no new unlock/save/reward implementation authorized"
+        "Export available; not wired into NINO V2 runtime presentation"
       ],
       "intended_runtime_placement": "Future earned cultural souvenir holder; no ownership invented",
       "decoded_RGBA_sha256": "b2c56974730b74d3c4d98d4f20b534e28b576877cee2aab44a2aa06af9ba9c90",
@@ -11182,17 +11176,15 @@
         "srgb": null
       },
       "visual_approval": "Owner-approved package per issue67; exact derivative independent QA pending",
-      "export_readiness": "actual export present; independent delivery QA pending",
-      "runtime_usage": "NOT INTEGRATED",
-      "missing_dependencies": [
-        "Existing PR61 has no earned passport presentation; no new unlock/save/reward implementation authorized"
-      ],
+      "export_readiness": "existing verified runtime bytes",
+      "runtime_usage": "embedded data URI: NINO V2 sicilia; read-only earned-state presentation",
+      "missing_dependencies": [],
       "intended_runtime_placement": "Future earned cultural souvenir holder; no ownership invented",
       "decoded_RGBA_sha256": "311879e0306e5af2698d1f2c7a94de77af3310bcb5b2458a5f8f68ed627a23ce",
-      "status": "INTEGRATION PENDING",
+      "status": "READY",
       "source_availability": "delivery derivative",
       "delivery_state": "export/file present",
-      "runtime_state": "not integrated"
+      "runtime_state": "integrated"
     },
     {
       "path": "assets/nino/travel-passport/postcards/exports/postcard-02-sardegna-front.webp",
@@ -11241,17 +11233,15 @@
         "srgb": null
       },
       "visual_approval": "Owner-approved package per issue67; exact derivative independent QA pending",
-      "export_readiness": "actual export present; independent delivery QA pending",
-      "runtime_usage": "NOT INTEGRATED",
-      "missing_dependencies": [
-        "Existing PR61 has no earned passport presentation; no new unlock/save/reward implementation authorized"
-      ],
+      "export_readiness": "existing verified runtime bytes",
+      "runtime_usage": "embedded data URI: NINO V2 sardegna; read-only earned-state presentation",
+      "missing_dependencies": [],
       "intended_runtime_placement": "Future earned cultural souvenir holder; no ownership invented",
       "decoded_RGBA_sha256": "93c6c45a88ca64c720f51833ed5fed1cb857263f076c952dcd153b97880390aa",
-      "status": "INTEGRATION PENDING",
+      "status": "READY",
       "source_availability": "delivery derivative",
       "delivery_state": "export/file present",
-      "runtime_state": "not integrated"
+      "runtime_state": "integrated"
     },
     {
       "path": "assets/nino/travel-passport/postcards/exports/postcard-03-napoli-vesuvio-front.webp",
@@ -11300,17 +11290,15 @@
         "srgb": null
       },
       "visual_approval": "Owner-approved package per issue67; exact derivative independent QA pending",
-      "export_readiness": "actual export present; independent delivery QA pending",
-      "runtime_usage": "NOT INTEGRATED",
-      "missing_dependencies": [
-        "Existing PR61 has no earned passport presentation; no new unlock/save/reward implementation authorized"
-      ],
+      "export_readiness": "existing verified runtime bytes",
+      "runtime_usage": "embedded data URI: NINO V2 napoli; read-only earned-state presentation",
+      "missing_dependencies": [],
       "intended_runtime_placement": "Future earned cultural souvenir holder; no ownership invented",
       "decoded_RGBA_sha256": "00548caecb8dec05c8ef66e24c411dfdf21f1a6095aabd19539c8fe74f8b4462",
-      "status": "INTEGRATION PENDING",
+      "status": "READY",
       "source_availability": "delivery derivative",
       "delivery_state": "export/file present",
-      "runtime_state": "not integrated"
+      "runtime_state": "integrated"
     },
     {
       "path": "assets/nino/travel-passport/postcards/exports/postcard-04-venezia-approved-contour.svg",
@@ -11334,7 +11322,7 @@
       "export_readiness": "actual export present; independent delivery QA pending",
       "runtime_usage": "NOT INTEGRATED",
       "missing_dependencies": [
-        "Existing PR61 has no earned passport presentation; no new unlock/save/reward implementation authorized"
+        "Export available; not wired into NINO V2 runtime presentation"
       ],
       "intended_runtime_placement": "Future earned cultural souvenir holder; no ownership invented",
       "status": "INTEGRATION PENDING",
@@ -11379,7 +11367,7 @@
       "export_readiness": "actual export present; independent delivery QA pending",
       "runtime_usage": "NOT INTEGRATED",
       "missing_dependencies": [
-        "Existing PR61 has no earned passport presentation; no new unlock/save/reward implementation authorized",
+        "Export available; not wired into NINO V2 runtime presentation",
         "exact owner-reviewed raster matte/ZIP unavailable at a documented repository path; PR66 572-point reconstruction requires independent edge acceptance"
       ],
       "intended_runtime_placement": "Future earned cultural souvenir holder; no ownership invented",
@@ -11426,7 +11414,7 @@
       "export_readiness": "actual export present; independent delivery QA pending",
       "runtime_usage": "NOT INTEGRATED",
       "missing_dependencies": [
-        "Existing PR61 has no earned passport presentation; no new unlock/save/reward implementation authorized",
+        "Export available; not wired into NINO V2 runtime presentation",
         "exact owner-reviewed raster matte/ZIP unavailable at a documented repository path; PR66 572-point reconstruction requires independent edge acceptance"
       ],
       "intended_runtime_placement": "Future earned cultural souvenir holder; no ownership invented",
@@ -11473,7 +11461,7 @@
       "export_readiness": "actual export present; independent delivery QA pending",
       "runtime_usage": "NOT INTEGRATED",
       "missing_dependencies": [
-        "Existing PR61 has no earned passport presentation; no new unlock/save/reward implementation authorized",
+        "Export available; not wired into NINO V2 runtime presentation",
         "exact owner-reviewed raster matte/ZIP unavailable at a documented repository path; PR66 572-point reconstruction requires independent edge acceptance"
       ],
       "intended_runtime_placement": "Future earned cultural souvenir holder; no ownership invented",
@@ -11520,7 +11508,7 @@
       "export_readiness": "actual export present; independent delivery QA pending",
       "runtime_usage": "NOT INTEGRATED",
       "missing_dependencies": [
-        "Existing PR61 has no earned passport presentation; no new unlock/save/reward implementation authorized",
+        "Export available; not wired into NINO V2 runtime presentation",
         "exact owner-reviewed raster matte/ZIP unavailable at a documented repository path; PR66 572-point reconstruction requires independent edge acceptance"
       ],
       "intended_runtime_placement": "Future earned cultural souvenir holder; no ownership invented",
@@ -11577,17 +11565,15 @@
         "srgb": null
       },
       "visual_approval": "Owner-approved package per issue67; exact derivative independent QA pending",
-      "export_readiness": "actual export present; independent delivery QA pending",
-      "runtime_usage": "NOT INTEGRATED",
-      "missing_dependencies": [
-        "Existing PR61 has no earned passport presentation; no new unlock/save/reward implementation authorized"
-      ],
+      "export_readiness": "existing verified runtime bytes",
+      "runtime_usage": "embedded data URI: NINO V2 reverse; read-only earned-state presentation",
+      "missing_dependencies": [],
       "intended_runtime_placement": "Future earned cultural souvenir holder; no ownership invented",
       "decoded_RGBA_sha256": "f3d26de5b861b689c0e35778f354aa50ef65deac7de20cb0eb20f4f7eae86e79",
-      "status": "INTEGRATION PENDING",
+      "status": "READY",
       "source_availability": "delivery derivative",
       "delivery_state": "export/file present",
-      "runtime_state": "not integrated"
+      "runtime_state": "integrated"
     },
     {
       "path": "assets/nino/travel-passport/postcards/masters/postcard-01-sicilia-front.png",
@@ -11643,7 +11629,7 @@
       "export_readiness": "source only; audited at pinned source Git blob, intentionally not duplicated into integration tree",
       "runtime_usage": "NOT INTEGRATED",
       "missing_dependencies": [
-        "Existing PR61 has no earned passport presentation; no new unlock/save/reward implementation authorized"
+        "Export available; not wired into NINO V2 runtime presentation"
       ],
       "intended_runtime_placement": "Future earned cultural souvenir holder; no ownership invented",
       "decoded_RGBA_sha256": "311879e0306e5af2698d1f2c7a94de77af3310bcb5b2458a5f8f68ed627a23ce",
@@ -11706,7 +11692,7 @@
       "export_readiness": "source only; audited at pinned source Git blob, intentionally not duplicated into integration tree",
       "runtime_usage": "NOT INTEGRATED",
       "missing_dependencies": [
-        "Existing PR61 has no earned passport presentation; no new unlock/save/reward implementation authorized"
+        "Export available; not wired into NINO V2 runtime presentation"
       ],
       "intended_runtime_placement": "Future earned cultural souvenir holder; no ownership invented",
       "decoded_RGBA_sha256": "93c6c45a88ca64c720f51833ed5fed1cb857263f076c952dcd153b97880390aa",
@@ -11769,7 +11755,7 @@
       "export_readiness": "source only; audited at pinned source Git blob, intentionally not duplicated into integration tree",
       "runtime_usage": "NOT INTEGRATED",
       "missing_dependencies": [
-        "Existing PR61 has no earned passport presentation; no new unlock/save/reward implementation authorized"
+        "Export available; not wired into NINO V2 runtime presentation"
       ],
       "intended_runtime_placement": "Future earned cultural souvenir holder; no ownership invented",
       "decoded_RGBA_sha256": "00548caecb8dec05c8ef66e24c411dfdf21f1a6095aabd19539c8fe74f8b4462",
@@ -11832,7 +11818,7 @@
       "export_readiness": "source only",
       "runtime_usage": "NOT INTEGRATED",
       "missing_dependencies": [
-        "Existing PR61 has no earned passport presentation; no new unlock/save/reward implementation authorized"
+        "Export available; not wired into NINO V2 runtime presentation"
       ],
       "intended_runtime_placement": "Future earned cultural souvenir holder; no ownership invented",
       "decoded_RGBA_sha256": "8822e26ea2f5554e63a326845b70f817afdc37abf8f120d2f5d2504a77341d1f",
@@ -11895,7 +11881,7 @@
       "export_readiness": "source only; audited at pinned source Git blob, intentionally not duplicated into integration tree",
       "runtime_usage": "NOT INTEGRATED",
       "missing_dependencies": [
-        "Existing PR61 has no earned passport presentation; no new unlock/save/reward implementation authorized"
+        "Export available; not wired into NINO V2 runtime presentation"
       ],
       "intended_runtime_placement": "Future earned cultural souvenir holder; no ownership invented",
       "decoded_RGBA_sha256": "f3d26de5b861b689c0e35778f354aa50ef65deac7de20cb0eb20f4f7eae86e79",
@@ -11943,17 +11929,15 @@
         "srgb": null
       },
       "visual_approval": "Owner-approved package per issue67; exact derivative independent QA pending",
-      "export_readiness": "actual export present; independent delivery QA pending",
-      "runtime_usage": "NOT INTEGRATED",
-      "missing_dependencies": [
-        "Existing PR61 has no earned passport presentation; no new unlock/save/reward implementation authorized"
-      ],
+      "export_readiness": "existing verified runtime bytes",
+      "runtime_usage": "embedded data URI: NINO V2 stamp0; read-only earned-state presentation",
+      "missing_dependencies": [],
       "intended_runtime_placement": "Future passport: exact completed chapter with live caption",
       "decoded_RGBA_sha256": "58c0c536c667357d53e0ed413ee4d20c89ff550ff2c8539364faecf30cbdfda4",
-      "status": "INTEGRATION PENDING",
+      "status": "READY",
       "source_availability": "delivery derivative",
       "delivery_state": "export/file present",
-      "runtime_state": "not integrated"
+      "runtime_state": "integrated"
     },
     {
       "path": "assets/nino/travel-passport/stamps/exports/stamp-02-roma.webp",
@@ -11994,17 +11978,15 @@
         "srgb": null
       },
       "visual_approval": "Owner-approved package per issue67; exact derivative independent QA pending",
-      "export_readiness": "actual export present; independent delivery QA pending",
-      "runtime_usage": "NOT INTEGRATED",
-      "missing_dependencies": [
-        "Existing PR61 has no earned passport presentation; no new unlock/save/reward implementation authorized"
-      ],
+      "export_readiness": "existing verified runtime bytes",
+      "runtime_usage": "embedded data URI: NINO V2 stamp1; read-only earned-state presentation",
+      "missing_dependencies": [],
       "intended_runtime_placement": "Future passport: exact completed chapter with live caption",
       "decoded_RGBA_sha256": "becca958945f294794efb4b4b19a5441bcc5763aedcd264592bd1feaaed9d25a",
-      "status": "INTEGRATION PENDING",
+      "status": "READY",
       "source_availability": "delivery derivative",
       "delivery_state": "export/file present",
-      "runtime_state": "not integrated"
+      "runtime_state": "integrated"
     },
     {
       "path": "assets/nino/travel-passport/stamps/exports/stamp-03-borghi.webp",
@@ -12045,17 +12027,15 @@
         "srgb": null
       },
       "visual_approval": "Owner-approved package per issue67; exact derivative independent QA pending",
-      "export_readiness": "actual export present; independent delivery QA pending",
-      "runtime_usage": "NOT INTEGRATED",
-      "missing_dependencies": [
-        "Existing PR61 has no earned passport presentation; no new unlock/save/reward implementation authorized"
-      ],
+      "export_readiness": "existing verified runtime bytes",
+      "runtime_usage": "embedded data URI: NINO V2 stamp2; read-only earned-state presentation",
+      "missing_dependencies": [],
       "intended_runtime_placement": "Future passport: exact completed chapter with live caption",
       "decoded_RGBA_sha256": "6e17cd48dc1090d90fdc445ce1f54009958cd9b6101676077f1e239d1272c4e8",
-      "status": "INTEGRATION PENDING",
+      "status": "READY",
       "source_availability": "delivery derivative",
       "delivery_state": "export/file present",
-      "runtime_state": "not integrated"
+      "runtime_state": "integrated"
     },
     {
       "path": "assets/nino/travel-passport/stamps/exports/stamp-04-liguria.webp",
@@ -12096,17 +12076,15 @@
         "srgb": null
       },
       "visual_approval": "Owner-approved package per issue67; exact derivative independent QA pending",
-      "export_readiness": "actual export present; independent delivery QA pending",
-      "runtime_usage": "NOT INTEGRATED",
-      "missing_dependencies": [
-        "Existing PR61 has no earned passport presentation; no new unlock/save/reward implementation authorized"
-      ],
+      "export_readiness": "existing verified runtime bytes",
+      "runtime_usage": "embedded data URI: NINO V2 stamp3; read-only earned-state presentation",
+      "missing_dependencies": [],
       "intended_runtime_placement": "Future passport: exact completed chapter with live caption",
       "decoded_RGBA_sha256": "ab3a81b6bbf51a8889b8218469bd5b76da7589f70e3214744b001bcd9ee2e421",
-      "status": "INTEGRATION PENDING",
+      "status": "READY",
       "source_availability": "delivery derivative",
       "delivery_state": "export/file present",
-      "runtime_state": "not integrated"
+      "runtime_state": "integrated"
     },
     {
       "path": "assets/nino/travel-passport/stamps/exports/stamp-05-isole.webp",
@@ -12155,17 +12133,15 @@
         "srgb": null
       },
       "visual_approval": "Owner-approved package per issue67; exact derivative independent QA pending",
-      "export_readiness": "actual export present; independent delivery QA pending",
-      "runtime_usage": "NOT INTEGRATED",
-      "missing_dependencies": [
-        "Existing PR61 has no earned passport presentation; no new unlock/save/reward implementation authorized"
-      ],
+      "export_readiness": "existing verified runtime bytes",
+      "runtime_usage": "embedded data URI: NINO V2 stamp4; read-only earned-state presentation",
+      "missing_dependencies": [],
       "intended_runtime_placement": "Future passport: exact completed chapter with live caption",
       "decoded_RGBA_sha256": "e10cae987f6e523e1277434a253e7fc5f9905c4eb3b1672fa902a3a16c3dbba3",
-      "status": "INTEGRATION PENDING",
+      "status": "READY",
       "source_availability": "delivery derivative",
       "delivery_state": "export/file present",
-      "runtime_state": "not integrated"
+      "runtime_state": "integrated"
     },
     {
       "path": "assets/nino/travel-passport/stamps/exports/stamp-06-dolomiti.webp",
@@ -12206,17 +12182,15 @@
         "srgb": null
       },
       "visual_approval": "Owner-approved package per issue67; exact derivative independent QA pending",
-      "export_readiness": "actual export present; independent delivery QA pending",
-      "runtime_usage": "NOT INTEGRATED",
-      "missing_dependencies": [
-        "Existing PR61 has no earned passport presentation; no new unlock/save/reward implementation authorized"
-      ],
+      "export_readiness": "existing verified runtime bytes",
+      "runtime_usage": "embedded data URI: NINO V2 stamp5; read-only earned-state presentation",
+      "missing_dependencies": [],
       "intended_runtime_placement": "Future passport: exact completed chapter with live caption",
       "decoded_RGBA_sha256": "96a056013da0de1aea9fe64d03896110e021c0d892b6a9e04df187e0a30f5300",
-      "status": "INTEGRATION PENDING",
+      "status": "READY",
       "source_availability": "delivery derivative",
       "delivery_state": "export/file present",
-      "runtime_state": "not integrated"
+      "runtime_state": "integrated"
     },
     {
       "path": "assets/nino/travel-passport/stamps/exports/stamp-07-etna.webp",
@@ -12257,17 +12231,15 @@
         "srgb": null
       },
       "visual_approval": "Owner-approved package per issue67; exact derivative independent QA pending",
-      "export_readiness": "actual export present; independent delivery QA pending",
-      "runtime_usage": "NOT INTEGRATED",
-      "missing_dependencies": [
-        "Existing PR61 has no earned passport presentation; no new unlock/save/reward implementation authorized"
-      ],
+      "export_readiness": "existing verified runtime bytes",
+      "runtime_usage": "embedded data URI: NINO V2 stamp6; read-only earned-state presentation",
+      "missing_dependencies": [],
       "intended_runtime_placement": "Future passport: exact completed chapter with live caption",
       "decoded_RGBA_sha256": "a5ab367ea12aa5c490ea411e2b95dfb78b0665711122d5d9004ba6a7969bbe59",
-      "status": "INTEGRATION PENDING",
+      "status": "READY",
       "source_availability": "delivery derivative",
       "delivery_state": "export/file present",
-      "runtime_state": "not integrated"
+      "runtime_state": "integrated"
     },
     {
       "path": "assets/nino/travel-passport/stamps/exports/stamp-08-toscana.webp",
@@ -12308,17 +12280,15 @@
         "srgb": null
       },
       "visual_approval": "Owner-approved package per issue67; exact derivative independent QA pending",
-      "export_readiness": "actual export present; independent delivery QA pending",
-      "runtime_usage": "NOT INTEGRATED",
-      "missing_dependencies": [
-        "Existing PR61 has no earned passport presentation; no new unlock/save/reward implementation authorized"
-      ],
+      "export_readiness": "existing verified runtime bytes",
+      "runtime_usage": "embedded data URI: NINO V2 stamp7; read-only earned-state presentation",
+      "missing_dependencies": [],
       "intended_runtime_placement": "Future passport: exact completed chapter with live caption",
       "decoded_RGBA_sha256": "2e1cd6a6184391a8a298a78253173658dc772011f1a63f888921021bb7e23a0d",
-      "status": "INTEGRATION PENDING",
+      "status": "READY",
       "source_availability": "delivery derivative",
       "delivery_state": "export/file present",
-      "runtime_state": "not integrated"
+      "runtime_state": "integrated"
     },
     {
       "path": "assets/nino/travel-passport/stamps/exports/stamp-09-confine-italia.webp",
@@ -12359,17 +12329,15 @@
         "srgb": null
       },
       "visual_approval": "Owner-approved package per issue67; exact derivative independent QA pending",
-      "export_readiness": "actual export present; independent delivery QA pending",
-      "runtime_usage": "NOT INTEGRATED",
-      "missing_dependencies": [
-        "Existing PR61 has no earned passport presentation; no new unlock/save/reward implementation authorized"
-      ],
+      "export_readiness": "existing verified runtime bytes",
+      "runtime_usage": "embedded data URI: NINO V2 stamp8; read-only earned-state presentation",
+      "missing_dependencies": [],
       "intended_runtime_placement": "Future passport: exact completed chapter with live caption",
       "decoded_RGBA_sha256": "a732288d0d772b844d7400627e783d1d539e5b8366f1cb4ad640f93e9e567b91",
-      "status": "INTEGRATION PENDING",
+      "status": "READY",
       "source_availability": "delivery derivative",
       "delivery_state": "export/file present",
-      "runtime_state": "not integrated"
+      "runtime_state": "integrated"
     },
     {
       "path": "assets/nino/travel-passport/stamps/exports/stamp-10-mari.webp",
@@ -12410,17 +12378,15 @@
         "srgb": null
       },
       "visual_approval": "Owner-approved package per issue67; exact derivative independent QA pending",
-      "export_readiness": "actual export present; independent delivery QA pending",
-      "runtime_usage": "NOT INTEGRATED",
-      "missing_dependencies": [
-        "Existing PR61 has no earned passport presentation; no new unlock/save/reward implementation authorized"
-      ],
+      "export_readiness": "existing verified runtime bytes",
+      "runtime_usage": "embedded data URI: NINO V2 stamp9; read-only earned-state presentation",
+      "missing_dependencies": [],
       "intended_runtime_placement": "Future passport: exact completed chapter with live caption",
       "decoded_RGBA_sha256": "27de2b8ab098e126d13a55d0b8a7637931c732d09af733a4ee7a7e4379a7c72b",
-      "status": "INTEGRATION PENDING",
+      "status": "READY",
       "source_availability": "delivery derivative",
       "delivery_state": "export/file present",
-      "runtime_state": "not integrated"
+      "runtime_state": "integrated"
     },
     {
       "path": "assets/nino/travel-passport/stamps/exports/stamp-11-fiumi.webp",
@@ -12461,17 +12427,15 @@
         "srgb": null
       },
       "visual_approval": "Owner-approved package per issue67; exact derivative independent QA pending",
-      "export_readiness": "actual export present; independent delivery QA pending",
-      "runtime_usage": "NOT INTEGRATED",
-      "missing_dependencies": [
-        "Existing PR61 has no earned passport presentation; no new unlock/save/reward implementation authorized"
-      ],
+      "export_readiness": "existing verified runtime bytes",
+      "runtime_usage": "embedded data URI: NINO V2 stamp10; read-only earned-state presentation",
+      "missing_dependencies": [],
       "intended_runtime_placement": "Future passport: exact completed chapter with live caption",
       "decoded_RGBA_sha256": "e06c55944c34572e85d06d13c75ee7ab9c4fbbc9ba8990ba13f2588e2581f079",
-      "status": "INTEGRATION PENDING",
+      "status": "READY",
       "source_availability": "delivery derivative",
       "delivery_state": "export/file present",
-      "runtime_state": "not integrated"
+      "runtime_state": "integrated"
     },
     {
       "path": "assets/nino/travel-passport/stamps/masters/stamp-01-firenze.png",
@@ -12527,7 +12491,7 @@
       "export_readiness": "source only; audited at pinned source Git blob, intentionally not duplicated into integration tree",
       "runtime_usage": "NOT INTEGRATED",
       "missing_dependencies": [
-        "Existing PR61 has no earned passport presentation; no new unlock/save/reward implementation authorized"
+        "Export available; not wired into NINO V2 runtime presentation"
       ],
       "intended_runtime_placement": "Future passport: exact completed chapter with live caption",
       "decoded_RGBA_sha256": "e8d3f56476173a5902955d199fc02394612bf15a95b787de8d49c9bfc4a6e99e",
@@ -12590,7 +12554,7 @@
       "export_readiness": "source only; audited at pinned source Git blob, intentionally not duplicated into integration tree",
       "runtime_usage": "NOT INTEGRATED",
       "missing_dependencies": [
-        "Existing PR61 has no earned passport presentation; no new unlock/save/reward implementation authorized"
+        "Export available; not wired into NINO V2 runtime presentation"
       ],
       "intended_runtime_placement": "Future passport: exact completed chapter with live caption",
       "decoded_RGBA_sha256": "c76c2b2724fe7ff8887b02a53f8c71d74d7c2a851dd5c846fd9a83dbc8484e77",
@@ -12653,7 +12617,7 @@
       "export_readiness": "source only; audited at pinned source Git blob, intentionally not duplicated into integration tree",
       "runtime_usage": "NOT INTEGRATED",
       "missing_dependencies": [
-        "Existing PR61 has no earned passport presentation; no new unlock/save/reward implementation authorized"
+        "Export available; not wired into NINO V2 runtime presentation"
       ],
       "intended_runtime_placement": "Future passport: exact completed chapter with live caption",
       "decoded_RGBA_sha256": "c336e44064b70d66c0d4ac92f7f4ae586c9aeb12902cf633f7cd95d0b7a77f1e",
@@ -12716,7 +12680,7 @@
       "export_readiness": "source only; audited at pinned source Git blob, intentionally not duplicated into integration tree",
       "runtime_usage": "NOT INTEGRATED",
       "missing_dependencies": [
-        "Existing PR61 has no earned passport presentation; no new unlock/save/reward implementation authorized"
+        "Export available; not wired into NINO V2 runtime presentation"
       ],
       "intended_runtime_placement": "Future passport: exact completed chapter with live caption",
       "decoded_RGBA_sha256": "1e6664302e45c5eb280bbb8acf4a67f02f4b7662b600d3b512d7e875072ffae3",
@@ -12779,7 +12743,7 @@
       "export_readiness": "concept/rejected/diagnostic; never activate from this ledger; audited at pinned source Git blob, intentionally not duplicated into integration tree",
       "runtime_usage": "NOT INTEGRATED",
       "missing_dependencies": [
-        "Existing PR61 has no earned passport presentation; no new unlock/save/reward implementation authorized"
+        "Export available; not wired into NINO V2 runtime presentation"
       ],
       "intended_runtime_placement": "Future passport: exact completed chapter with live caption",
       "decoded_RGBA_sha256": "0ab4e408cdc3da2260c7bd2bb83fe092225b3089101c5cf7c9cc5254f11bfeb6",
@@ -12842,7 +12806,7 @@
       "export_readiness": "source only; audited at pinned source Git blob, intentionally not duplicated into integration tree",
       "runtime_usage": "NOT INTEGRATED",
       "missing_dependencies": [
-        "Existing PR61 has no earned passport presentation; no new unlock/save/reward implementation authorized"
+        "Export available; not wired into NINO V2 runtime presentation"
       ],
       "intended_runtime_placement": "Future passport: exact completed chapter with live caption",
       "decoded_RGBA_sha256": "89bd8e44b6c69c02c57e5716a902962fd0d12c6fcbb52d540c47fedd78beaef3",
@@ -12905,7 +12869,7 @@
       "export_readiness": "source only; audited at pinned source Git blob, intentionally not duplicated into integration tree",
       "runtime_usage": "NOT INTEGRATED",
       "missing_dependencies": [
-        "Existing PR61 has no earned passport presentation; no new unlock/save/reward implementation authorized"
+        "Export available; not wired into NINO V2 runtime presentation"
       ],
       "intended_runtime_placement": "Future passport: exact completed chapter with live caption",
       "decoded_RGBA_sha256": "cc299d30753e16b9a8a7d39bfd09837c794ff0ae78b2fd5e0b7ca5a51092b3cb",
@@ -12968,7 +12932,7 @@
       "export_readiness": "source only; audited at pinned source Git blob, intentionally not duplicated into integration tree",
       "runtime_usage": "NOT INTEGRATED",
       "missing_dependencies": [
-        "Existing PR61 has no earned passport presentation; no new unlock/save/reward implementation authorized"
+        "Export available; not wired into NINO V2 runtime presentation"
       ],
       "intended_runtime_placement": "Future passport: exact completed chapter with live caption",
       "decoded_RGBA_sha256": "4329ca9b0305b3b8eadf09c00c03707deb9c4e377ba507a030971de6849d9a3d",
@@ -13031,7 +12995,7 @@
       "export_readiness": "source only; audited at pinned source Git blob, intentionally not duplicated into integration tree",
       "runtime_usage": "NOT INTEGRATED",
       "missing_dependencies": [
-        "Existing PR61 has no earned passport presentation; no new unlock/save/reward implementation authorized"
+        "Export available; not wired into NINO V2 runtime presentation"
       ],
       "intended_runtime_placement": "Future passport: exact completed chapter with live caption",
       "decoded_RGBA_sha256": "10bbe599e1c8d1851bf4f76bbf0fbcc69a57a79cc5d93b47ea7148a3fc8be3fc",
@@ -13094,7 +13058,7 @@
       "export_readiness": "source only; audited at pinned source Git blob, intentionally not duplicated into integration tree",
       "runtime_usage": "NOT INTEGRATED",
       "missing_dependencies": [
-        "Existing PR61 has no earned passport presentation; no new unlock/save/reward implementation authorized"
+        "Export available; not wired into NINO V2 runtime presentation"
       ],
       "intended_runtime_placement": "Future passport: exact completed chapter with live caption",
       "decoded_RGBA_sha256": "774c9cc5343a4e48c8bafccce86acb97e7fef7ae7a8ff3aa8f5fd1f925179624",
@@ -13157,7 +13121,7 @@
       "export_readiness": "source only; audited at pinned source Git blob, intentionally not duplicated into integration tree",
       "runtime_usage": "NOT INTEGRATED",
       "missing_dependencies": [
-        "Existing PR61 has no earned passport presentation; no new unlock/save/reward implementation authorized"
+        "Export available; not wired into NINO V2 runtime presentation"
       ],
       "intended_runtime_placement": "Future passport: exact completed chapter with live caption",
       "decoded_RGBA_sha256": "d01e523521221b59a889ee407e180311255fbac9ac0829b16df377a3a4994a09",
@@ -13220,7 +13184,7 @@
       "export_readiness": "source only; audited at pinned source Git blob, intentionally not duplicated into integration tree",
       "runtime_usage": "NOT INTEGRATED",
       "missing_dependencies": [
-        "Existing PR61 has no earned passport presentation; no new unlock/save/reward implementation authorized"
+        "Export available; not wired into NINO V2 runtime presentation"
       ],
       "intended_runtime_placement": "Future passport: exact completed chapter with live caption",
       "decoded_RGBA_sha256": "58c0c536c667357d53e0ed413ee4d20c89ff550ff2c8539364faecf30cbdfda4",
@@ -13283,7 +13247,7 @@
       "export_readiness": "source only; audited at pinned source Git blob, intentionally not duplicated into integration tree",
       "runtime_usage": "NOT INTEGRATED",
       "missing_dependencies": [
-        "Existing PR61 has no earned passport presentation; no new unlock/save/reward implementation authorized"
+        "Export available; not wired into NINO V2 runtime presentation"
       ],
       "intended_runtime_placement": "Future passport: exact completed chapter with live caption",
       "decoded_RGBA_sha256": "becca958945f294794efb4b4b19a5441bcc5763aedcd264592bd1feaaed9d25a",
@@ -13346,7 +13310,7 @@
       "export_readiness": "source only; audited at pinned source Git blob, intentionally not duplicated into integration tree",
       "runtime_usage": "NOT INTEGRATED",
       "missing_dependencies": [
-        "Existing PR61 has no earned passport presentation; no new unlock/save/reward implementation authorized"
+        "Export available; not wired into NINO V2 runtime presentation"
       ],
       "intended_runtime_placement": "Future passport: exact completed chapter with live caption",
       "decoded_RGBA_sha256": "6e17cd48dc1090d90fdc445ce1f54009958cd9b6101676077f1e239d1272c4e8",
@@ -13409,7 +13373,7 @@
       "export_readiness": "source only; audited at pinned source Git blob, intentionally not duplicated into integration tree",
       "runtime_usage": "NOT INTEGRATED",
       "missing_dependencies": [
-        "Existing PR61 has no earned passport presentation; no new unlock/save/reward implementation authorized"
+        "Export available; not wired into NINO V2 runtime presentation"
       ],
       "intended_runtime_placement": "Future passport: exact completed chapter with live caption",
       "decoded_RGBA_sha256": "ab3a81b6bbf51a8889b8218469bd5b76da7589f70e3214744b001bcd9ee2e421",
@@ -13472,7 +13436,7 @@
       "export_readiness": "concept/rejected/diagnostic; never activate from this ledger; audited at pinned source Git blob, intentionally not duplicated into integration tree",
       "runtime_usage": "NOT INTEGRATED",
       "missing_dependencies": [
-        "Existing PR61 has no earned passport presentation; no new unlock/save/reward implementation authorized"
+        "Export available; not wired into NINO V2 runtime presentation"
       ],
       "intended_runtime_placement": "Future passport: exact completed chapter with live caption",
       "decoded_RGBA_sha256": "9f308ba2b57303661069a043bd689fdaa58199f860b181a37d0060dde9e893d5",
@@ -13535,7 +13499,7 @@
       "export_readiness": "source only; audited at pinned source Git blob, intentionally not duplicated into integration tree",
       "runtime_usage": "NOT INTEGRATED",
       "missing_dependencies": [
-        "Existing PR61 has no earned passport presentation; no new unlock/save/reward implementation authorized"
+        "Export available; not wired into NINO V2 runtime presentation"
       ],
       "intended_runtime_placement": "Future passport: exact completed chapter with live caption",
       "decoded_RGBA_sha256": "96a056013da0de1aea9fe64d03896110e021c0d892b6a9e04df187e0a30f5300",
@@ -13598,7 +13562,7 @@
       "export_readiness": "source only; audited at pinned source Git blob, intentionally not duplicated into integration tree",
       "runtime_usage": "NOT INTEGRATED",
       "missing_dependencies": [
-        "Existing PR61 has no earned passport presentation; no new unlock/save/reward implementation authorized"
+        "Export available; not wired into NINO V2 runtime presentation"
       ],
       "intended_runtime_placement": "Future passport: exact completed chapter with live caption",
       "decoded_RGBA_sha256": "a5ab367ea12aa5c490ea411e2b95dfb78b0665711122d5d9004ba6a7969bbe59",
@@ -13661,7 +13625,7 @@
       "export_readiness": "source only; audited at pinned source Git blob, intentionally not duplicated into integration tree",
       "runtime_usage": "NOT INTEGRATED",
       "missing_dependencies": [
-        "Existing PR61 has no earned passport presentation; no new unlock/save/reward implementation authorized"
+        "Export available; not wired into NINO V2 runtime presentation"
       ],
       "intended_runtime_placement": "Future passport: exact completed chapter with live caption",
       "decoded_RGBA_sha256": "2e1cd6a6184391a8a298a78253173658dc772011f1a63f888921021bb7e23a0d",
@@ -13724,7 +13688,7 @@
       "export_readiness": "source only; audited at pinned source Git blob, intentionally not duplicated into integration tree",
       "runtime_usage": "NOT INTEGRATED",
       "missing_dependencies": [
-        "Existing PR61 has no earned passport presentation; no new unlock/save/reward implementation authorized"
+        "Export available; not wired into NINO V2 runtime presentation"
       ],
       "intended_runtime_placement": "Future passport: exact completed chapter with live caption",
       "decoded_RGBA_sha256": "a732288d0d772b844d7400627e783d1d539e5b8366f1cb4ad640f93e9e567b91",
@@ -13787,7 +13751,7 @@
       "export_readiness": "source only; audited at pinned source Git blob, intentionally not duplicated into integration tree",
       "runtime_usage": "NOT INTEGRATED",
       "missing_dependencies": [
-        "Existing PR61 has no earned passport presentation; no new unlock/save/reward implementation authorized"
+        "Export available; not wired into NINO V2 runtime presentation"
       ],
       "intended_runtime_placement": "Future passport: exact completed chapter with live caption",
       "decoded_RGBA_sha256": "27de2b8ab098e126d13a55d0b8a7637931c732d09af733a4ee7a7e4379a7c72b",
@@ -13850,7 +13814,7 @@
       "export_readiness": "source only; audited at pinned source Git blob, intentionally not duplicated into integration tree",
       "runtime_usage": "NOT INTEGRATED",
       "missing_dependencies": [
-        "Existing PR61 has no earned passport presentation; no new unlock/save/reward implementation authorized"
+        "Export available; not wired into NINO V2 runtime presentation"
       ],
       "intended_runtime_placement": "Future passport: exact completed chapter with live caption",
       "decoded_RGBA_sha256": "e06c55944c34572e85d06d13c75ee7ab9c4fbbc9ba8990ba13f2588e2581f079",
@@ -13913,7 +13877,7 @@
       "export_readiness": "source only; audited at pinned source Git blob, intentionally not duplicated into integration tree",
       "runtime_usage": "NOT INTEGRATED",
       "missing_dependencies": [
-        "Existing PR61 has no earned passport presentation; no new unlock/save/reward implementation authorized"
+        "Export available; not wired into NINO V2 runtime presentation"
       ],
       "intended_runtime_placement": "Future passport: exact completed chapter with live caption",
       "decoded_RGBA_sha256": "e10cae987f6e523e1277434a253e7fc5f9905c4eb3b1672fa902a3a16c3dbba3",

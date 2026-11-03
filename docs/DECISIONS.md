@@ -201,3 +201,7 @@ remain available; hinge stays optional under issue31/PR63. Source availability,
 technical export, runtime integration and independent acceptance remain distinct.
 Evidence and remaining conditions: [closure ledger](qa/nino-v2-closure-67/README.md).
 This does not supersede PR61's independent functional review or owner release gate.
+
+## 2026-11-03 — NINO 2 production integration (#68 / #21 / #67 / #58)
+
+The owner mission authorizes one integration on exact PR61 lineage with PR70 exports and only PR69 presentation ported. Supersedes earlier no-passport/no-new-navigation scope for this branch. Preserve canonical engines, geometry and saves; passport remains a read-only projection of existing completion, goldAt and reward counts. Use exact approved chapter/stamp/seal/static-box/card bytes, with live captions and earned-only visibility. Folio backgrounds and Venezia runtime remain held for the explicit Hermes C1/C2 owner decisions; use code-native paper without claiming folio approval. Pisa hinge remains deferred. Independent Hermes exact-SHA QA and owner release GO remain separate; no merge/deploy/download replacement. See candidate evidence for execution and limitations.

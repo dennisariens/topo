@@ -4,7 +4,7 @@
  const image=(key,cls='')=>{const a=art[key],i=make('img',cls);i.src=a.src;i.width=a.width;i.height=a.height;i.alt='';i.setAttribute('aria-hidden','true');i.decoding='async';return i;};
  const action=(text,fn,cls='button')=>{const b=make('button',cls,text);b.type='button';b.onclick=fn;return b;};
  const nav=make('nav','ninoNav');nav.setAttribute('aria-label','Hoofdnavigatie');
- const reis=action('Reis',()=>{mode('route');renderRouteHome();}),practice=action('Oefenen',()=>{if(state.mode==='route'&&state.route.active&&!state.route.active.done)renderRouteTask();else if(state.mode==='route')mode('learn');else document.querySelector('nav.tabs')?.scrollIntoView({block:'nearest'});}),bookButton=action('Reisboekje',()=>openBook(bookButton));
+ const reis=action('Reis',()=>{mode('route');renderRouteHome();}),practice=action('Oefenen',()=>{if(!document.querySelector('.layout').classList.contains('routeHomeLayout'))return;if(state.mode==='route'&&state.route.active&&!state.route.active.done)renderRouteTask();else if(state.mode==='route')mode('learn');else document.querySelector('nav.tabs')?.scrollIntoView({block:'nearest'});}),bookButton=action('Reisboekje',()=>openBook(bookButton));
  nav.append(reis,practice,bookButton);document.querySelector('header').after(nav);
  const brand=document.querySelector('.brand');brand.lastChild.textContent='NINO';brand.querySelector('small').textContent='La Grande Avventura';
  const legacy=document.querySelector('nav.tabs');legacy.setAttribute('aria-label','Oefenvorm');legacy.classList.add('practiceModes');
@@ -38,7 +38,7 @@
     const copy=make('div');copy.append(make('h4',null,c.title),make('p','micro',earned?(r.goldAt>0?'Afgerond · goud verdiend':'Afgerond · stempel verdiend'):'Nog te verdienen'));row.append(copy);(index<6?left:right).append(row);
    });
   }else{
-   left.append(make('h3',null,'Met de Vespa door Italië'),make('p',null,state.trips+' Vespa-reizen verdiend met leren.'));
+   left.append(make('h3',null,'Met de Vespa door Italië'),make('p',null,state.trips+' Vespa-'+(state.trips===1?'reis':'reizen')+' verdiend met leren.'));
    // Saves contain a count, not event history. Reconstruct only deterministic destinations.
    if(!state.trips)left.append(make('p','bookEmpty','Je eerste rit gaat van Rome naar Florence. Verdien drie pizza’s om te vertrekken.'));
    else{left.append(image('arrival','arrivalStamp'));const list=make('ol','destinationList');TopoLearning.STOPS.forEach((_,i)=>{const first=i+1;if(state.trips<first)return;const visits=Math.floor((state.trips-first)/TopoLearning.STOPS.length)+1,j=TopoLearning.journey(first);list.append(make('li',null,j.to+' · '+visits+'× bereikt'));});left.append(list);}
@@ -47,6 +47,7 @@
    if(!cards.length)right.append(make('p','bookEmpty','Je postkaarten verschijnen hier na de bijbehorende les of Vespa-rit.'));
    for(const [key,label]of cards){const card=make('figure','earnedPostcard'),flip=action('Bekijk achterkant',()=>{const reverse=flip.dataset.reverse!=='true';picture.replaceWith(picture=image(reverse?'reverse':key,'postcardArt'));flip.dataset.reverse=String(reverse);flip.textContent=reverse?'Bekijk voorkant':'Bekijk achterkant';});let picture=image(key,'postcardArt');card.append(picture,make('figcaption',null,label),flip);right.append(card);}
   }
+  if(page===0){for(const [folio,section]of [['left',left],['right',right]]){section.classList.add('illustratedFolio');const content=make('div','folioWriting');content.append(...section.childNodes);section.append(image('folio'+folio,'folioPaper'),content);}}
  }
  function openBook(button){if(dialog.open)return;origin=button;scroll=[window.scrollX,window.scrollY];renderBook();dialog.showModal();close.focus();}
  dialog.addEventListener('close',()=>{origin?.focus({preventScroll:true});if(scroll)window.scrollTo(...scroll);});

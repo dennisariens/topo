@@ -11,7 +11,9 @@ if(!process.argv.includes('--remove')){
  add('welcome','assets/nino/exports/nino-welcome.webp');add('chapterGold',prefix+'gold/exports/gold-chapter-seal-v2-64.webp');add('finalGold',prefix+'gold/exports/gold-esploratore-doro-480.webp');add('arrival',prefix+'arrivo/exports/arrivo-travel.webp');
  ['margherita','salami','quattro-formaggi'].forEach((name,i)=>add('pizza'+i,'assets/nino/rewards/pizza/exports/pizza-box-open-pisa-'+name+'.webp'));
  for(const [key,name]of [['sicilia','01-sicilia-front'],['sardegna','02-sardegna-front'],['napoli','03-napoli-vesuvio-front'],['reverse','05-universal-reverse']])add(key,prefix+'postcards/exports/postcard-'+name+'.webp');
- // Venezia contour and folio native-resolution owner decisions remain explicit gates.
+ add('venezia',prefix+'postcards/exports/postcard-04-venezia-scalloped-tight.webp');
+ for(const side of ['left','right'])add('folio'+side,prefix+'book/exports/passport-blank-folio-'+side+'-alpha-normalized.webp');
+ // Bounded native folios and the verified PR70 reconstructed contour; final owner acceptance remains separate.
  html=html.replace('</head>','<style>/* BEGIN NINO V2 CSS */'+read('scripts/nino-v2.css')+'/* END NINO V2 CSS */</style></head>');
  const end=html.lastIndexOf('</script>');html=html.slice(0,end)+'// BEGIN NINO V2\nconst NINO_V2_ART='+JSON.stringify(assets)+';\n'+read('scripts/nino-v2.js')+'// END NINO V2\n'+html.slice(end);
 }

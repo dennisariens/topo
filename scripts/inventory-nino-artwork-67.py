@@ -88,7 +88,7 @@ for path in sorted(paths):
         row['intended_runtime_placement']='ARCHIVAL / REWORK reference only; baked historical content; excluded from production passport'
         row['missing_dependencies']=['Not a blank folio; no production integration authorized']
     elif '/book/' in path:
-        row['missing_dependencies'].append('owner folio resolution exception; native1086x1448, <=543 CSS px/page at DPR2; no passport UI in PR61')
+        row['missing_dependencies'].append('Native1086x1448; runtime <=543 CSS px/page at DPR2; final owner visual acceptance pending; no higher-native-resolution approval')
     if path not in used and ('/gold/' in path or '/stamps/' in path or '/postcards/' in path or '/arrivo/' in path):
         row['missing_dependencies'].append('Export available; not wired into NINO V2 runtime presentation')
     if 'venezia-scalloped' in path:

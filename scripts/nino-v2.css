@@ -5,3 +5,6 @@ body[data-focus-shell="true"] .ninoNav{position:fixed;z-index:31;top:calc(44px +
 @media print{.ninoNav,.travelBook{display:none!important}}
 
 .stampInspect{padding:0;border:0;background:transparent;border-radius:8px;flex-shrink:0}.stampZoom{width:min(400px,calc(100vw - 32px));border:1px solid #cfbd95;border-radius:18px;background:#fffaed;color:#183b3a;padding:24px;text-align:center}.stampZoom::backdrop{background:#123c3f80}.stampLarge{width:240px;max-width:100%;height:auto}.stampZoom h3{margin:0 0 12px}.bookPage[hidden]{display:none!important}
+
+/* Exact1086x1448 folios: preserve aspect ratio; max543 CSS px/page at DPR2. */
+.bookSpread{grid-template-columns:repeat(2,minmax(0,543px));justify-content:center}.bookPage{width:100%}.illustratedFolio{position:relative;background:#f5e7c9;aspect-ratio:3/4;min-height:0;padding:48px 30px}.folioPaper{position:absolute;top:0;left:0;width:100%;height:auto;pointer-events:none}.folioWriting{position:relative;background:#fffaedf5;padding:18px;border-radius:3px}.illustratedFolio .bookNino{height:200px}@media(max-width:650px){.bookSpread{display:block}.bookPage{max-width:543px;margin:auto}.illustratedFolio{padding:28px 18px;min-height:0}.folioWriting{padding:14px}.illustratedFolio .bookNino{height:160px}}

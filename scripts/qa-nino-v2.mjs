@@ -7,7 +7,7 @@ const engine=process.env.QA_BROWSER==='webkit'?webkit:chromium;
 const browser=await engine.launch(engine===chromium?{executablePath:process.env.CHROME_PATH||'/Applications/Google Chrome.app/Contents/MacOS/Google Chrome'}:{}),results=[];
 try{
  for(const [width,height]of [[1500,1000],[1024,768],[768,1024],[390,844],[320,740]]){
-  const context=await browser.newContext({offline:true,viewport:{width,height},reducedMotion:'reduce',hasTouch:width<1100}),p=await context.newPage(),errors=[],external=[];
+  const context=await browser.newContext({offline:true,viewport:{width,height},reducedMotion:'reduce',deviceScaleFactor:2,hasTouch:width<1100}),p=await context.newPage(),errors=[],external=[];
   p.on('pageerror',e=>errors.push(e.message));p.on('console',m=>{if(m.type()==='error')errors.push(m.text())});p.on('request',r=>{if(!/^(file:|data:)/.test(r.url()))external.push(r.url())});
   await p.goto(new URL('output/html/TOPO-NINO-Computer-Release.html',root).href);await p.evaluate(async()=>{await Promise.all([...document.images].map(i=>i.decode()))});
   assert.equal(await p.evaluate(()=>ITEMS.length),45);assert.equal(await p.evaluate(()=>ROUTE_CHAPTERS.length),11);
@@ -32,18 +32,21 @@ try{
     const before=await p.evaluate(()=>JSON.stringify({route:state.route,pizzas:state.pizzas,trips:state.trips}));
     await p.getByRole('button',{name:'Reisboekje',exact:true}).click();
     while(!await p.getByRole('button',{name:'Vorige',exact:true}).isDisabled())await p.getByRole('button',{name:'Vorige',exact:true}).click();
+    for(const n of await p.locator('.illustratedFolio').all()){const bounds=await n.boundingBox();assert(bounds.width<=543);assert.equal(await n.locator('.folioPaper').evaluate(async i=>{await i.decode();return i.naturalWidth}),1086);assert((await n.locator('.folioPaper').boundingBox()).width<=543);}
+    if(fixture.trips===0)await p.screenshot({path:new URL('chrome-native-folio-spread.png',out).pathname});
     assert.equal(await p.locator('.bookFinalGold').count(),fixture.gold===11?1:0);
     await p.getByRole('button',{name:'Volgende',exact:true}).click();
     assert.equal(await p.locator('.stampArt').count(),fixture.completed);if(fixture.completed){await p.locator('.stampInspect').first().click();assert(await p.locator('.stampZoom').evaluate(n=>n.open));assert((await p.locator('.stampLarge').boundingBox()).width>=160);await p.getByRole('button',{name:'Sluit stempel',exact:true}).click();}assert.equal(await p.locator('.chapterSeal').count(),fixture.gold);
     await p.getByRole('button',{name:'Volgende',exact:true}).click();
     assert.equal(await p.locator('.destinationList li').count(),Math.min(7,fixture.trips));
-    assert.equal(await p.locator('.earnedPostcard').count(),(fixture.completed>=5?2:0)+(fixture.trips>=6?1:0));
+    assert.equal(await p.locator('.earnedPostcard').count(),(fixture.completed>=5?2:0)+(fixture.trips>=3?1:0)+(fixture.trips>=6?1:0));
+    if(fixture.trips===3){await p.locator('.earnedPostcard img').last().evaluate(i=>i.decode());await p.locator('.earnedPostcard').last().scrollIntoViewIfNeeded();await p.screenshot({path:new URL('chrome-earned-venezia-fixture.png',out).pathname});}
     if(fixture.trips===8){assert((await p.locator('.destinationList').innerText()).includes('Florence · 2×'));await p.locator('.earnedPostcard button').first().click();assert.equal(await p.locator('.earnedPostcard button').first().textContent(),'Bekijk voorkant');}
     assert.equal(await p.evaluate(()=>JSON.stringify({route:state.route,pizzas:state.pizzas,trips:state.trips})),before);
     await p.getByRole('button',{name:'Sluit boekje',exact:true}).click();
    }
   }
-  assert.deepEqual(errors,[]);assert.deepEqual(external,[]);results.push({width,height,errors,external,passportPreservesQuestionAndSave:true,unearnedArtworkHidden:true});await context.close();
+  assert.deepEqual(errors,[]);assert.deepEqual(external,[]);results.push({width,height,deviceScaleFactor:2,errors,external,passportPreservesQuestionAndSave:true,unearnedArtworkHidden:true});await context.close();
  }
  writeFileSync(new URL((engine===webkit?'webkit':'chrome')+'-results.json',out),JSON.stringify({browser:await browser.version(),physicalSafari:false,sha256:createHash('sha256').update(readFileSync(new URL('index.html',root))).digest('hex'),results},null,2)+'\n');
 }finally{await browser.close()}

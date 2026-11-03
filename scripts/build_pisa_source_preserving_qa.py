@@ -12,7 +12,7 @@ FLAVORS=("margherita","salami","quattro-formaggi")
 EXPECTED={
 "pizza-box-closed-pisa.webp":"6e47559c8eea4932fa4516fea324ee85fbe386ab7c3df26034f820a8c4860d3c",
 "pizza-box-open-pisa-margherita.webp":"742a5d39843dc84b6a8b781678edcb3ce6643a60bde1c8ae67c1e0567125f7d7",
-"pizza-box-open-pisa-salami.webp":"9f3795b47f6b60a975f3f83af6edb07981739cc2",
+"pizza-box-open-pisa-salami.webp":"9f3795b47f6b60a975f3f83af6edb07981739cc2a55c0d4de1b7cb66f2b184aa",
 "pizza-box-open-pisa-quattro-formaggi.webp":"1b317d38980873756276ffaedeca3843a30c386233e83ecf846a1563f99903b2"}
 def digest(p): return hashlib.sha256(p.read_bytes()).hexdigest()
 for fn,hash_expected in EXPECTED.items():

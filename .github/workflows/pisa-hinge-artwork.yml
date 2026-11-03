@@ -1,0 +1,33 @@
+name: Pisa Edition artwork QA package
+on:
+  push:
+    branches:
+      - art/pisa-hinge-source-preserving-final-20261103
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  source-preserving-artwork:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install build-only image libraries
+        run: python -m pip install pillow numpy opencv-python-headless
+      - name: Validate approved source hashes and build artwork QA package
+        run: python scripts/build_pisa_source_preserving_qa.py
+      - name: Upload artwork package
+        uses: actions/upload-artifact@v4
+        with:
+          name: NINO-PISA-SOURCE-PRESERVING-QA
+          path: |
+            NINO_PISA_SOURCE_PRESERVING_QA.zip
+            out/pisa-hinge-original-art/manifest.json
+            out/pisa-hinge-original-art/proof/contact-sheet.png
+          if-no-files-found: error
+          retention-days: 60

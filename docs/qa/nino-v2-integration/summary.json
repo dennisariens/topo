@@ -32,7 +32,10 @@
   "genuinePlayCases": 7,
   "webKit": "NOT TESTED: Playwright does not support webkit on mac13",
   "physicalSafariIPad": "NOT TESTED",
-  "ownerArtworkDecisionsPending": [],
+  "ownerArtworkDecisionsPending": [
+    "Final visual acceptance of bounded native folios; no higher-native-resolution approval claimed",
+    "Final visual acceptance of the reconstructed Venezia contour; exact original matte identity unverified"
+  ],
   "noMergeDeployOrApprovedDownloadReplacement": true,
   "all45Ledger": "delivery-integrity/ledger.json",
   "ownerVisualAcceptance": "Pending; bounded PR70 integration authorized by current mission; no higher-native-resolution or original-matte identity approval claimed",
@@ -62,5 +65,6 @@
     }
   },
   "genuinePlayReport": "played/chrome-internal-playthrough.json",
-  "serialPlayLog": "delivery-played-serial.log"
+  "serialPlayLog": "delivery-played-serial.log",
+  "implementationBlockers": []
 }

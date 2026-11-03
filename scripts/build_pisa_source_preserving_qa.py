@@ -7,7 +7,7 @@ import cv2, math, json, hashlib, zipfile
 
 SRC=Path("assets/nino/rewards/pizza/exports")
 OUT=Path("out/pisa-hinge-original-art")
-for p in ("layers","motion","proof"): (OUT/p).mkdir(parents=True,exist_ok=True)
+for p in ("layers","textures","motion","proof"): (OUT/p).mkdir(parents=True,exist_ok=True)
 FLAVORS=("margherita","salami","quattro-formaggi")
 EXPECTED={
 "pizza-box-closed-pisa.webp":"6e47559c8eea4932fa4516fea324ee85fbe386ab7c3df26034f820a8c4860d3c",
@@ -64,7 +64,7 @@ dst=np.array([[0,0],[799,0],[799,799],[0,799]],np.float32)
 print_art=cv2.warpPerspective(np.array(closed),cv2.getPerspectiveTransform(src,dst),(800,800),flags=cv2.INTER_CUBIC)
 print_art[:,:,3]=255
 exterior=Image.fromarray(print_art,"RGBA")
-saved(exterior,OUT/"layers/lid-exterior-original.png")
+saved(exterior,OUT/"textures/lid-exterior-original-uv.png")
 # Kraft underside, derived only from approved package texture; new hidden face.
 rng=np.random.default_rng(24)
 yy,xx=np.mgrid[:800,:800]
@@ -78,7 +78,7 @@ pen.rectangle((12,12,787,787),outline=(125,81,44),width=8)
 pen.line((25,65,775,65),fill=(192,145,99),width=6)
 pen.line((25,730,775,730),fill=(123,84,54),width=7)
 underside=underside.convert("RGBA")
-saved(underside,OUT/"layers/lid-interior-kraft.png")
+saved(underside,OUT/"textures/lid-interior-kraft-uv.png")
 K=np.array([[1300,0,480],[0,1300,480],[0,0,1]],float)
 obj=np.array([[-.5,-.5,0],[.5,-.5,0],[.5,.5,0],[-.5,.5,0]],np.float32)
 screen=np.array([[10,590],[637,938],[920,446],[332,262]],np.float32)
@@ -107,6 +107,8 @@ def lid(angle):
     d.line((coords[3],coords[2]),fill=(201,158,109,226),width=5)
     out.alpha_composite(line)
     return out
+saved(lid(0),OUT/"layers/lid-exterior-closed-registered.png")
+saved(lid(105),OUT/"layers/lid-interior-open-registered.png")
 def frame(flavor,degrees):
     f=Image.new("RGBA",(W,H))
     f.alpha_composite(tray);f.alpha_composite(pizzas[flavor])
@@ -136,6 +138,7 @@ for i,angle in enumerate(proof_angles):
 contact.save(OUT/"proof/contact-sheet.png")
 manifest={"source":"dennisariens/topo:art/nino-pizza-rewards-20261024","source_hashes":EXPECTED,
           "original_runtime_resolution":[960,960],"output_canvas":[W,H],
+          "layer_contract":{"compositing_canvas":[W,H],"uv_texture_size":[800,800]},
           "source_to_canvas_scale":SCALE,"source_offset":[TX,TY],
           "lid_hinge_endpoints_px":lid_corners(0)[:2].tolist(),"lid_open_degrees":105,
           "motion_frames":24,"duration_ms":1296,"flavors":list(FLAVORS),

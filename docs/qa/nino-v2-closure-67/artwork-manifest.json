@@ -20,8 +20,8 @@
       "source only; not delivered": 172
     },
     "runtime_state": {
-      "integrated": 43,
-      "not integrated": 196
+      "integrated": 46,
+      "not integrated": 193
     }
   },
   "assets": [
@@ -9114,7 +9114,7 @@
       "export_readiness": "concept/rejected/diagnostic; never activate from this ledger; audited at pinned source Git blob, intentionally not duplicated into integration tree",
       "runtime_usage": "NOT INTEGRATED",
       "missing_dependencies": [
-        "owner folio resolution exception; native1086x1448, <=543 CSS px/page at DPR2; no passport UI in PR61"
+        "Native1086x1448; runtime <=543 CSS px/page at DPR2; final owner visual acceptance pending; no higher-native-resolution approval"
       ],
       "intended_runtime_placement": "Future shared passport folio shell; no fixed concept-page backgrounds",
       "decoded_RGBA_sha256": "ff3ac5397b76555002097c22bd120703dfe4a219c632f6195501aa13730c657a",
@@ -9177,7 +9177,7 @@
       "export_readiness": "concept/rejected/diagnostic; never activate from this ledger; audited at pinned source Git blob, intentionally not duplicated into integration tree",
       "runtime_usage": "NOT INTEGRATED",
       "missing_dependencies": [
-        "owner folio resolution exception; native1086x1448, <=543 CSS px/page at DPR2; no passport UI in PR61"
+        "Native1086x1448; runtime <=543 CSS px/page at DPR2; final owner visual acceptance pending; no higher-native-resolution approval"
       ],
       "intended_runtime_placement": "Future shared passport folio shell; no fixed concept-page backgrounds",
       "decoded_RGBA_sha256": "41b6f3fb50a0da0d9d946cb86b8d076e1bd5924cf2b89e853ebd573eeb773c8e",
@@ -9240,7 +9240,7 @@
       "export_readiness": "concept/rejected/diagnostic; never activate from this ledger; audited at pinned source Git blob, intentionally not duplicated into integration tree",
       "runtime_usage": "NOT INTEGRATED",
       "missing_dependencies": [
-        "owner folio resolution exception; native1086x1448, <=543 CSS px/page at DPR2; no passport UI in PR61"
+        "Native1086x1448; runtime <=543 CSS px/page at DPR2; final owner visual acceptance pending; no higher-native-resolution approval"
       ],
       "intended_runtime_placement": "Future shared passport folio shell; no fixed concept-page backgrounds",
       "decoded_RGBA_sha256": "ba92c8bcd5b1cd87efba7c8a35d31647b0ac72b013923326026ff58194a16c46",
@@ -9303,7 +9303,7 @@
       "export_readiness": "concept/rejected/diagnostic; never activate from this ledger; audited at pinned source Git blob, intentionally not duplicated into integration tree",
       "runtime_usage": "NOT INTEGRATED",
       "missing_dependencies": [
-        "owner folio resolution exception; native1086x1448, <=543 CSS px/page at DPR2; no passport UI in PR61"
+        "Native1086x1448; runtime <=543 CSS px/page at DPR2; final owner visual acceptance pending; no higher-native-resolution approval"
       ],
       "intended_runtime_placement": "Future shared passport folio shell; no fixed concept-page backgrounds",
       "decoded_RGBA_sha256": "e13439e04260e25f9e2303d19c5f839c3ba6b787979d8eead8830f2137d7b934",
@@ -9366,7 +9366,7 @@
       "export_readiness": "concept/rejected/diagnostic; never activate from this ledger; audited at pinned source Git blob, intentionally not duplicated into integration tree",
       "runtime_usage": "NOT INTEGRATED",
       "missing_dependencies": [
-        "owner folio resolution exception; native1086x1448, <=543 CSS px/page at DPR2; no passport UI in PR61"
+        "Native1086x1448; runtime <=543 CSS px/page at DPR2; final owner visual acceptance pending; no higher-native-resolution approval"
       ],
       "intended_runtime_placement": "Future shared passport folio shell; no fixed concept-page backgrounds",
       "decoded_RGBA_sha256": "ceaf93f07bc5fcaf0d5e380d3135bb2f7df46162897b103e06254baaafe6649c",
@@ -9429,7 +9429,7 @@
       "export_readiness": "concept/rejected/diagnostic; never activate from this ledger; audited at pinned source Git blob, intentionally not duplicated into integration tree",
       "runtime_usage": "NOT INTEGRATED",
       "missing_dependencies": [
-        "owner folio resolution exception; native1086x1448, <=543 CSS px/page at DPR2; no passport UI in PR61"
+        "Native1086x1448; runtime <=543 CSS px/page at DPR2; final owner visual acceptance pending; no higher-native-resolution approval"
       ],
       "intended_runtime_placement": "Future shared passport folio shell; no fixed concept-page backgrounds",
       "decoded_RGBA_sha256": "eed668632610c2129426ef6a382cc803d89717e5a06acad56301400a6fb75a1c",
@@ -9492,7 +9492,7 @@
       "export_readiness": "concept/rejected/diagnostic; never activate from this ledger; audited at pinned source Git blob, intentionally not duplicated into integration tree",
       "runtime_usage": "NOT INTEGRATED",
       "missing_dependencies": [
-        "owner folio resolution exception; native1086x1448, <=543 CSS px/page at DPR2; no passport UI in PR61"
+        "Native1086x1448; runtime <=543 CSS px/page at DPR2; final owner visual acceptance pending; no higher-native-resolution approval"
       ],
       "intended_runtime_placement": "Future shared passport folio shell; no fixed concept-page backgrounds",
       "decoded_RGBA_sha256": "8cc69d6b2ef4599aefa192c0a12114d1cae0a450d4152e643eae3df3bc293e15",
@@ -9555,7 +9555,7 @@
       "export_readiness": "concept/rejected/diagnostic; never activate from this ledger; audited at pinned source Git blob, intentionally not duplicated into integration tree",
       "runtime_usage": "NOT INTEGRATED",
       "missing_dependencies": [
-        "owner folio resolution exception; native1086x1448, <=543 CSS px/page at DPR2; no passport UI in PR61"
+        "Native1086x1448; runtime <=543 CSS px/page at DPR2; final owner visual acceptance pending; no higher-native-resolution approval"
       ],
       "intended_runtime_placement": "Future shared passport folio shell; no fixed concept-page backgrounds",
       "decoded_RGBA_sha256": "1ee70a7172afb64117f7eca115e603f6a2b59c5c3632c79de1988d833cf95830",
@@ -9618,7 +9618,7 @@
       "export_readiness": "concept/rejected/diagnostic; never activate from this ledger; audited at pinned source Git blob, intentionally not duplicated into integration tree",
       "runtime_usage": "NOT INTEGRATED",
       "missing_dependencies": [
-        "owner folio resolution exception; native1086x1448, <=543 CSS px/page at DPR2; no passport UI in PR61"
+        "Native1086x1448; runtime <=543 CSS px/page at DPR2; final owner visual acceptance pending; no higher-native-resolution approval"
       ],
       "intended_runtime_placement": "Future shared passport folio shell; no fixed concept-page backgrounds",
       "decoded_RGBA_sha256": "5cd2b26021922e19a15b3cbdf96170162059718cebb01ca541121ab71e830885",
@@ -9667,17 +9667,17 @@
         "srgb": null
       },
       "visual_approval": "Owner-approved package per issue67; exact derivative independent QA pending",
-      "export_readiness": "actual export present; independent delivery QA pending",
-      "runtime_usage": "NOT INTEGRATED",
+      "export_readiness": "existing verified runtime bytes",
+      "runtime_usage": "embedded data URI: NINO V2 folioleft; read-only earned-state presentation",
       "missing_dependencies": [
-        "owner folio resolution exception; native1086x1448, <=543 CSS px/page at DPR2; no passport UI in PR61"
+        "Native1086x1448; runtime <=543 CSS px/page at DPR2; final owner visual acceptance pending; no higher-native-resolution approval"
       ],
       "intended_runtime_placement": "Future shared passport folio shell; no fixed concept-page backgrounds",
       "decoded_RGBA_sha256": "d3696e2e8630f764fd5b56bd32bce07b928980469c0830a57f3c54a742e31ab1",
-      "status": "INTEGRATION PENDING",
+      "status": "READY",
       "source_availability": "delivery derivative",
       "delivery_state": "export/file present",
-      "runtime_state": "not integrated"
+      "runtime_state": "integrated"
     },
     {
       "path": "assets/nino/travel-passport/book/exports/passport-blank-folio-right-alpha-normalized.webp",
@@ -9719,17 +9719,17 @@
         "srgb": null
       },
       "visual_approval": "Owner-approved package per issue67; exact derivative independent QA pending",
-      "export_readiness": "actual export present; independent delivery QA pending",
-      "runtime_usage": "NOT INTEGRATED",
+      "export_readiness": "existing verified runtime bytes",
+      "runtime_usage": "embedded data URI: NINO V2 folioright; read-only earned-state presentation",
       "missing_dependencies": [
-        "owner folio resolution exception; native1086x1448, <=543 CSS px/page at DPR2; no passport UI in PR61"
+        "Native1086x1448; runtime <=543 CSS px/page at DPR2; final owner visual acceptance pending; no higher-native-resolution approval"
       ],
       "intended_runtime_placement": "Future shared passport folio shell; no fixed concept-page backgrounds",
       "decoded_RGBA_sha256": "e4033a155043e29e2aad404641ef83a94c0c7712d8bb63e5f6ccfbd8ef447e94",
-      "status": "INTEGRATION PENDING",
+      "status": "READY",
       "source_availability": "delivery derivative",
       "delivery_state": "export/file present",
-      "runtime_state": "not integrated"
+      "runtime_state": "integrated"
     },
     {
       "path": "assets/nino/travel-passport/book/masters/passport-blank-folio-left-master.png",
@@ -9785,7 +9785,7 @@
       "export_readiness": "source only; audited at pinned source Git blob, intentionally not duplicated into integration tree",
       "runtime_usage": "NOT INTEGRATED",
       "missing_dependencies": [
-        "owner folio resolution exception; native1086x1448, <=543 CSS px/page at DPR2; no passport UI in PR61"
+        "Native1086x1448; runtime <=543 CSS px/page at DPR2; final owner visual acceptance pending; no higher-native-resolution approval"
       ],
       "intended_runtime_placement": "Future shared passport folio shell; no fixed concept-page backgrounds",
       "decoded_RGBA_sha256": "c4ea19b28ace85d6f4fc6e3bd0c7de4a54e8a20dd07c465172928859e480c21b",
@@ -9848,7 +9848,7 @@
       "export_readiness": "source only; audited at pinned source Git blob, intentionally not duplicated into integration tree",
       "runtime_usage": "NOT INTEGRATED",
       "missing_dependencies": [
-        "owner folio resolution exception; native1086x1448, <=543 CSS px/page at DPR2; no passport UI in PR61"
+        "Native1086x1448; runtime <=543 CSS px/page at DPR2; final owner visual acceptance pending; no higher-native-resolution approval"
       ],
       "intended_runtime_placement": "Future shared passport folio shell; no fixed concept-page backgrounds",
       "decoded_RGBA_sha256": "2783b3fda9290997c552a41ef02351822b5953125707b3fc316d094fbf026105",
@@ -9911,7 +9911,7 @@
       "export_readiness": "source only; audited at pinned source Git blob, intentionally not duplicated into integration tree",
       "runtime_usage": "NOT INTEGRATED",
       "missing_dependencies": [
-        "owner folio resolution exception; native1086x1448, <=543 CSS px/page at DPR2; no passport UI in PR61"
+        "Native1086x1448; runtime <=543 CSS px/page at DPR2; final owner visual acceptance pending; no higher-native-resolution approval"
       ],
       "intended_runtime_placement": "Future shared passport folio shell; no fixed concept-page backgrounds",
       "decoded_RGBA_sha256": "003df96d54219309e605adb3074d9a9805d83cee171ea6a7fadf3e9f00c7e597",
@@ -10037,7 +10037,7 @@
       "export_readiness": "source only; audited at pinned source Git blob, intentionally not duplicated into integration tree",
       "runtime_usage": "NOT INTEGRATED",
       "missing_dependencies": [
-        "owner folio resolution exception; native1086x1448, <=543 CSS px/page at DPR2; no passport UI in PR61"
+        "Native1086x1448; runtime <=543 CSS px/page at DPR2; final owner visual acceptance pending; no higher-native-resolution approval"
       ],
       "intended_runtime_placement": "Future shared passport folio shell; no fixed concept-page backgrounds",
       "decoded_RGBA_sha256": "d3696e2e8630f764fd5b56bd32bce07b928980469c0830a57f3c54a742e31ab1",
@@ -10100,7 +10100,7 @@
       "export_readiness": "source only; audited at pinned source Git blob, intentionally not duplicated into integration tree",
       "runtime_usage": "NOT INTEGRATED",
       "missing_dependencies": [
-        "owner folio resolution exception; native1086x1448, <=543 CSS px/page at DPR2; no passport UI in PR61"
+        "Native1086x1448; runtime <=543 CSS px/page at DPR2; final owner visual acceptance pending; no higher-native-resolution approval"
       ],
       "intended_runtime_placement": "Future shared passport folio shell; no fixed concept-page backgrounds",
       "decoded_RGBA_sha256": "e4033a155043e29e2aad404641ef83a94c0c7712d8bb63e5f6ccfbd8ef447e94",
@@ -11505,18 +11505,17 @@
         "srgb": null
       },
       "visual_approval": "Owner-approved package per issue67; exact derivative independent QA pending",
-      "export_readiness": "actual export present; independent delivery QA pending",
-      "runtime_usage": "NOT INTEGRATED",
+      "export_readiness": "existing verified runtime bytes",
+      "runtime_usage": "embedded data URI: NINO V2 venezia; read-only earned-state presentation",
       "missing_dependencies": [
-        "Export available; not wired into NINO V2 runtime presentation",
         "exact owner-reviewed raster matte/ZIP unavailable at a documented repository path; PR66 572-point reconstruction requires independent edge acceptance"
       ],
       "intended_runtime_placement": "Future earned cultural souvenir holder; no ownership invented",
       "decoded_RGBA_sha256": "180952690c03cda290dcaa2ff36fe39926f97bca9b3d4149a4de2374cdd9c9af",
-      "status": "INTEGRATION PENDING",
+      "status": "READY",
       "source_availability": "delivery derivative",
       "delivery_state": "export/file present",
-      "runtime_state": "not integrated"
+      "runtime_state": "integrated"
     },
     {
       "path": "assets/nino/travel-passport/postcards/exports/postcard-05-universal-reverse.webp",

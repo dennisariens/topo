@@ -1,0 +1,51 @@
+{
+  "target": "integration-working-tree",
+  "role": "Codex internal regression; reused Hermes QA driver, not independent acceptance",
+  "engine": "installed Chrome",
+  "version": "156.0.8078.80",
+  "artifactSha256": "352ddd742436ac4f5a5a8a82374f742788952219e42b47d87d83536319183d53",
+  "records": [
+    {
+      "case": "fresh/inline favicon decode/decorative alt/no unearned Gold/layout/draft",
+      "w": 1500,
+      "h": 1000,
+      "info": {
+        "items": 45,
+        "chapters": 11,
+        "gold": false,
+        "art": [
+          {
+            "alt": "",
+            "decorative": "true"
+          }
+        ],
+        "overflow": false,
+        "icons": [
+          {
+            "sizes": "16x16 32x32",
+            "w": 32,
+            "h": 32,
+            "inline": true
+          },
+          {
+            "sizes": "16x16",
+            "w": 16,
+            "h": 16,
+            "inline": true
+          },
+          {
+            "sizes": "32x32",
+            "w": 32,
+            "h": 32,
+            "inline": true
+          }
+        ]
+      }
+    }
+  ],
+  "errors": [],
+  "network": [],
+  "intentional": [],
+  "status": "FAIL",
+  "failure": "page.evaluate: ReferenceError: ITEMS is not defined\n    at eval (eval at evaluate (:290:30), <anonymous>:1:18)\n    at UtilityScript.evaluate (<anonymous>:292:16)\n    at UtilityScript.<anonymous> (<anonymous>:1:44)\n    at /Users/dennisariens/projects/nino-v2-integration/scripts/qa-nino-v2-played.mjs:24:100"
+}

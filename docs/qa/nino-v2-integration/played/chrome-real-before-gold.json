@@ -1,7 +1,7 @@
 {
   "app": "topo-italie",
   "version": 1,
-  "savedAt": "2026-11-03T12:22:14.061Z",
+  "savedAt": "2026-11-03T12:55:37.165Z",
   "progress": {
     "schema": 3,
     "good": 12,
@@ -14,9 +14,9 @@
       "chapters": {
         "city1": {
           "stage": 3,
-          "completedAt": 1793708533111,
+          "completedAt": 1793710536228,
           "goldAt": 0,
-          "nextReviewAt": 1793794933111,
+          "nextReviewAt": 1793796936228,
           "reviews": 0
         },
         "city2": {
@@ -91,118 +91,26 @@
         }
       },
       "items": {
-        "city-2": {
-          "correct": 2,
-          "wrong": 0,
-          "streak": 2,
-          "lastSeen": 1793708532564,
-          "lastWrong": 0,
-          "skills": {
-            "point": {
-              "correct": 1,
-              "wrong": 0,
-              "streak": 1,
-              "lastSeen": 1793708530417,
-              "due": 1793794930417
-            },
-            "write": {
-              "correct": 1,
-              "wrong": 0,
-              "streak": 1,
-              "lastSeen": 1793708532564,
-              "due": 1793794932564
-            }
-          }
-        },
-        "city-3": {
-          "correct": 2,
-          "wrong": 0,
-          "streak": 2,
-          "lastSeen": 1793708532762,
-          "lastWrong": 0,
-          "skills": {
-            "point": {
-              "correct": 1,
-              "wrong": 0,
-              "streak": 1,
-              "lastSeen": 1793708530744,
-              "due": 1793794930744
-            },
-            "write": {
-              "correct": 1,
-              "wrong": 0,
-              "streak": 1,
-              "lastSeen": 1793708532762,
-              "due": 1793794932762
-            }
-          }
-        },
-        "city-4": {
-          "correct": 2,
-          "wrong": 0,
-          "streak": 2,
-          "lastSeen": 1793708532478,
-          "lastWrong": 0,
-          "skills": {
-            "point": {
-              "correct": 1,
-              "wrong": 0,
-              "streak": 1,
-              "lastSeen": 1793708530877,
-              "due": 1793794930877
-            },
-            "write": {
-              "correct": 1,
-              "wrong": 0,
-              "streak": 1,
-              "lastSeen": 1793708532478,
-              "due": 1793794932478
-            }
-          }
-        },
-        "city-1": {
-          "correct": 2,
-          "wrong": 0,
-          "streak": 2,
-          "lastSeen": 1793708533045,
-          "lastWrong": 0,
-          "skills": {
-            "point": {
-              "correct": 1,
-              "wrong": 0,
-              "streak": 1,
-              "lastSeen": 1793708530995,
-              "due": 1793794930995
-            },
-            "write": {
-              "correct": 1,
-              "wrong": 0,
-              "streak": 1,
-              "lastSeen": 1793708533045,
-              "due": 1793794933045
-            }
-          }
-        },
         "city-6": {
           "correct": 2,
           "wrong": 0,
           "streak": 2,
-          "lastSeen": 1793708532961,
+          "lastSeen": 1793710535729,
           "lastWrong": 0,
           "skills": {
             "point": {
               "correct": 1,
               "wrong": 0,
               "streak": 1,
-              "lastSeen": 1793708531365,
-              "due": 1793794931365
+              "lastSeen": 1793710533668,
+              "due": 1793796933668
             },
             "write": {
               "correct": 1,
               "wrong": 0,
               "streak": 1,
-              "lastSeen": 1793708532961,
-              "due": 1793794932961
+              "lastSeen": 1793710535729,
+              "due": 1793796935729
             }
           }
         },
@@ -210,56 +118,136 @@
           "correct": 2,
           "wrong": 0,
           "streak": 2,
-          "lastSeen": 1793708532861,
+          "lastSeen": 1793710535629,
           "lastWrong": 0,
           "skills": {
             "point": {
               "correct": 1,
               "wrong": 0,
               "streak": 1,
-              "lastSeen": 1793708531948,
-              "due": 1793794931948
+              "lastSeen": 1793710534199,
+              "due": 1793796934199
             },
             "write": {
               "correct": 1,
               "wrong": 0,
               "streak": 1,
-              "lastSeen": 1793708532861,
-              "due": 1793794932861
+              "lastSeen": 1793710535629,
+              "due": 1793796935629
+            }
+          }
+        },
+        "city-2": {
+          "correct": 2,
+          "wrong": 0,
+          "streak": 2,
+          "lastSeen": 1793710536096,
+          "lastWrong": 0,
+          "skills": {
+            "point": {
+              "correct": 1,
+              "wrong": 0,
+              "streak": 1,
+              "lastSeen": 1793710534715,
+              "due": 1793796934715
+            },
+            "write": {
+              "correct": 1,
+              "wrong": 0,
+              "streak": 1,
+              "lastSeen": 1793710536096,
+              "due": 1793796936096
+            }
+          }
+        },
+        "city-1": {
+          "correct": 2,
+          "wrong": 0,
+          "streak": 2,
+          "lastSeen": 1793710535929,
+          "lastWrong": 0,
+          "skills": {
+            "point": {
+              "correct": 1,
+              "wrong": 0,
+              "streak": 1,
+              "lastSeen": 1793710534996,
+              "due": 1793796934996
+            },
+            "write": {
+              "correct": 1,
+              "wrong": 0,
+              "streak": 1,
+              "lastSeen": 1793710535929,
+              "due": 1793796935929
+            }
+          }
+        },
+        "city-4": {
+          "correct": 2,
+          "wrong": 0,
+          "streak": 2,
+          "lastSeen": 1793710536196,
+          "lastWrong": 0,
+          "skills": {
+            "point": {
+              "correct": 1,
+              "wrong": 0,
+              "streak": 1,
+              "lastSeen": 1793710535112,
+              "due": 1793796935112
+            },
+            "write": {
+              "correct": 1,
+              "wrong": 0,
+              "streak": 1,
+              "lastSeen": 1793710536196,
+              "due": 1793796936196
+            }
+          }
+        },
+        "city-3": {
+          "correct": 2,
+          "wrong": 0,
+          "streak": 2,
+          "lastSeen": 1793710535996,
+          "lastWrong": 0,
+          "skills": {
+            "point": {
+              "correct": 1,
+              "wrong": 0,
+              "streak": 1,
+              "lastSeen": 1793710535229,
+              "due": 1793796935229
+            },
+            "write": {
+              "correct": 1,
+              "wrong": 0,
+              "streak": 1,
+              "lastSeen": 1793710535996,
+              "due": 1793796935996
             }
           }
         }
       },
       "rewardTokens": [
-        "city1:point:city-2:point",
-        "city1:point:city-3:point",
-        "city1:point:city-4:point",
-        "city1:point:city-1:point",
         "city1:point:city-6:point",
         "city1:point:city-5:point",
-        "city1:write:city-4:write",
-        "city1:write:city-2:write",
-        "city1:write:city-3:write",
+        "city1:point:city-2:point",
+        "city1:point:city-1:point",
+        "city1:point:city-4:point",
+        "city1:point:city-3:point",
         "city1:write:city-5:write",
         "city1:write:city-6:write",
-        "city1:write:city-1:write"
+        "city1:write:city-1:write",
+        "city1:write:city-3:write",
+        "city1:write:city-2:write",
+        "city1:write:city-4:write"
       ],
       "active": {
         "chapterId": "city1",
         "kind": "write",
         "queue": [
-          {
-            "id": "city-4",
-            "mode": "write"
-          },
-          {
-            "id": "city-2",
-            "mode": "write"
-          },
-          {
-            "id": "city-3",
-            "mode": "write"
-          },
           {
             "id": "city-5",
             "mode": "write"
@@ -270,6 +258,18 @@
           },
           {
             "id": "city-1",
+            "mode": "write"
+          },
+          {
+            "id": "city-3",
+            "mode": "write"
+          },
+          {
+            "id": "city-2",
+            "mode": "write"
+          },
+          {
+            "id": "city-4",
             "mode": "write"
           }
         ],
@@ -301,12 +301,12 @@
         "wrong": 0,
         "pending": [],
         "awarded": [
-          "city-4:write",
-          "city-2:write",
-          "city-3:write",
           "city-5:write",
           "city-6:write",
-          "city-1:write"
+          "city-1:write",
+          "city-3:write",
+          "city-2:write",
+          "city-4:write"
         ],
         "lastAnswer": null,
         "result": {

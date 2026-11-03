@@ -1,0 +1,40 @@
+{
+  "implementationCommit": "158bdcd6c0520fc29d6355d4680ec4d797f742e2",
+  "htmlBytes": 27239577,
+  "htmlSha256": "55866c663e9b7e5c02e88c75bbab62560b7b4a48344ff062a28cd2ac18b77d14",
+  "internalVerification": "PASS within executed scope; independent Hermes and owner acceptance pending",
+  "releaseCheckLog": "final-release-check.log",
+  "wholeFilePreservation": "preservation.json",
+  "responsiveViewports": [
+    [
+      1500,
+      1000
+    ],
+    [
+      1024,
+      768
+    ],
+    [
+      768,
+      1024
+    ],
+    [
+      390,
+      844
+    ],
+    [
+      320,
+      740
+    ]
+  ],
+  "all45LedgerRows": 45,
+  "all45Scope": "per-question pointer/writing/wrong fixtures in both map styles; not full natural route",
+  "genuinePlayCases": 7,
+  "webKit": "NOT TESTED: Playwright does not support webkit on mac13",
+  "physicalSafariIPad": "NOT TESTED",
+  "ownerArtworkDecisionsPending": [
+    "C1 native folio exception/display cap",
+    "C2 Venezia reconstructed contour or exact reviewed matte"
+  ],
+  "noMergeDeployOrApprovedDownloadReplacement": true
+}

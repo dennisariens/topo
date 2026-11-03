@@ -1,0 +1,1269 @@
+{
+  "target": "integration-working-tree",
+  "role": "Codex internal regression; reused Hermes QA driver, not independent acceptance",
+  "engine": "installed Chrome",
+  "version": "156.0.8078.80",
+  "artifactSha256": "daa122ab01da54cb0b3a0faf1597f3083a45b6fe0189a3a2638e6cc71a030466",
+  "records": [
+    {
+      "case": "fresh/inline favicon decode/decorative alt/no unearned Gold/layout/draft",
+      "w": 1500,
+      "h": 1000,
+      "info": {
+        "items": 45,
+        "chapters": 11,
+        "gold": false,
+        "art": [
+          {
+            "alt": "",
+            "decorative": "true"
+          }
+        ],
+        "overflow": false,
+        "icons": [
+          {
+            "sizes": "16x16 32x32",
+            "w": 32,
+            "h": 32,
+            "inline": true
+          },
+          {
+            "sizes": "16x16",
+            "w": 16,
+            "h": 16,
+            "inline": true
+          },
+          {
+            "sizes": "32x32",
+            "w": 32,
+            "h": 32,
+            "inline": true
+          }
+        ]
+      }
+    },
+    {
+      "case": "fresh/inline favicon decode/decorative alt/no unearned Gold/layout/draft",
+      "w": 800,
+      "h": 900,
+      "info": {
+        "items": 45,
+        "chapters": 11,
+        "gold": false,
+        "art": [
+          {
+            "alt": "",
+            "decorative": "true"
+          }
+        ],
+        "overflow": false,
+        "icons": [
+          {
+            "sizes": "16x16 32x32",
+            "w": 32,
+            "h": 32,
+            "inline": true
+          },
+          {
+            "sizes": "16x16",
+            "w": 16,
+            "h": 16,
+            "inline": true
+          },
+          {
+            "sizes": "32x32",
+            "w": 32,
+            "h": 32,
+            "inline": true
+          }
+        ]
+      }
+    },
+    {
+      "case": "fresh/inline favicon decode/decorative alt/no unearned Gold/layout/draft",
+      "w": 390,
+      "h": 844,
+      "info": {
+        "items": 45,
+        "chapters": 11,
+        "gold": false,
+        "art": [
+          {
+            "alt": "",
+            "decorative": "true"
+          }
+        ],
+        "overflow": false,
+        "icons": [
+          {
+            "sizes": "16x16 32x32",
+            "w": 32,
+            "h": 32,
+            "inline": true
+          },
+          {
+            "sizes": "16x16",
+            "w": 16,
+            "h": 16,
+            "inline": true
+          },
+          {
+            "sizes": "32x32",
+            "w": 32,
+            "h": 32,
+            "inline": true
+          }
+        ]
+      }
+    },
+    {
+      "case": "actual invalid data image invokes original-Nino fallback without save mutation",
+      "status": "PASS",
+      "intentionalConsoleErrors": [
+        "Failed to load resource: net::ERR_INVALID_URL"
+      ]
+    },
+    {
+      "case": "actual played Discover/Point/Write first chapter, no Gold before earned",
+      "snapshot": {
+        "good": 12,
+        "pizzas": 1,
+        "slices": 4,
+        "trips": 0,
+        "gold": 0,
+        "progress": {
+          "schema": 3,
+          "good": 12,
+          "pizzas": 1,
+          "slices": 4,
+          "trips": 0,
+          "mistakes": [],
+          "route": {
+            "schema": 2,
+            "chapters": {
+              "city1": {
+                "stage": 3,
+                "completedAt": 1793697421911,
+                "goldAt": 0,
+                "nextReviewAt": 1793783821911,
+                "reviews": 0
+              },
+              "city2": {
+                "stage": 0,
+                "completedAt": 0,
+                "goldAt": 0,
+                "nextReviewAt": 0,
+                "reviews": 0
+              },
+              "city3": {
+                "stage": 0,
+                "completedAt": 0,
+                "goldAt": 0,
+                "nextReviewAt": 0,
+                "reviews": 0
+              },
+              "city4": {
+                "stage": 0,
+                "completedAt": 0,
+                "goldAt": 0,
+                "nextReviewAt": 0,
+                "reviews": 0
+              },
+              "islands": {
+                "stage": 0,
+                "completedAt": 0,
+                "goldAt": 0,
+                "nextReviewAt": 0,
+                "reviews": 0
+              },
+              "mountains": {
+                "stage": 0,
+                "completedAt": 0,
+                "goldAt": 0,
+                "nextReviewAt": 0,
+                "reviews": 0
+              },
+              "volcanoes": {
+                "stage": 0,
+                "completedAt": 0,
+                "goldAt": 0,
+                "nextReviewAt": 0,
+                "reviews": 0
+              },
+              "regions": {
+                "stage": 0,
+                "completedAt": 0,
+                "goldAt": 0,
+                "nextReviewAt": 0,
+                "reviews": 0
+              },
+              "countries": {
+                "stage": 0,
+                "completedAt": 0,
+                "goldAt": 0,
+                "nextReviewAt": 0,
+                "reviews": 0
+              },
+              "seas": {
+                "stage": 0,
+                "completedAt": 0,
+                "goldAt": 0,
+                "nextReviewAt": 0,
+                "reviews": 0
+              },
+              "rivers": {
+                "stage": 0,
+                "completedAt": 0,
+                "goldAt": 0,
+                "nextReviewAt": 0,
+                "reviews": 0
+              }
+            },
+            "items": {
+              "city-6": {
+                "correct": 2,
+                "wrong": 0,
+                "streak": 2,
+                "lastSeen": 1793697421778,
+                "lastWrong": 0,
+                "skills": {
+                  "point": {
+                    "correct": 1,
+                    "wrong": 0,
+                    "streak": 1,
+                    "lastSeen": 1793697418717,
+                    "due": 1793783818717
+                  },
+                  "write": {
+                    "correct": 1,
+                    "wrong": 0,
+                    "streak": 1,
+                    "lastSeen": 1793697421778,
+                    "due": 1793783821778
+                  }
+                }
+              },
+              "city-5": {
+                "correct": 2,
+                "wrong": 0,
+                "streak": 2,
+                "lastSeen": 1793697421670,
+                "lastWrong": 0,
+                "skills": {
+                  "point": {
+                    "correct": 1,
+                    "wrong": 0,
+                    "streak": 1,
+                    "lastSeen": 1793697419649,
+                    "due": 1793783819649
+                  },
+                  "write": {
+                    "correct": 1,
+                    "wrong": 0,
+                    "streak": 1,
+                    "lastSeen": 1793697421670,
+                    "due": 1793783821670
+                  }
+                }
+              },
+              "city-4": {
+                "correct": 2,
+                "wrong": 0,
+                "streak": 2,
+                "lastSeen": 1793697421877,
+                "lastWrong": 0,
+                "skills": {
+                  "point": {
+                    "correct": 1,
+                    "wrong": 0,
+                    "streak": 1,
+                    "lastSeen": 1793697420011,
+                    "due": 1793783820011
+                  },
+                  "write": {
+                    "correct": 1,
+                    "wrong": 0,
+                    "streak": 1,
+                    "lastSeen": 1793697421877,
+                    "due": 1793783821877
+                  }
+                }
+              },
+              "city-2": {
+                "correct": 2,
+                "wrong": 0,
+                "streak": 2,
+                "lastSeen": 1793697421238,
+                "lastWrong": 0,
+                "skills": {
+                  "point": {
+                    "correct": 1,
+                    "wrong": 0,
+                    "streak": 1,
+                    "lastSeen": 1793697420393,
+                    "due": 1793783820393
+                  },
+                  "write": {
+                    "correct": 1,
+                    "wrong": 0,
+                    "streak": 1,
+                    "lastSeen": 1793697421238,
+                    "due": 1793783821238
+                  }
+                }
+              },
+              "city-1": {
+                "correct": 2,
+                "wrong": 0,
+                "streak": 2,
+                "lastSeen": 1793697421561,
+                "lastWrong": 0,
+                "skills": {
+                  "point": {
+                    "correct": 1,
+                    "wrong": 0,
+                    "streak": 1,
+                    "lastSeen": 1793697420712,
+                    "due": 1793783820712
+                  },
+                  "write": {
+                    "correct": 1,
+                    "wrong": 0,
+                    "streak": 1,
+                    "lastSeen": 1793697421561,
+                    "due": 1793783821561
+                  }
+                }
+              },
+              "city-3": {
+                "correct": 2,
+                "wrong": 0,
+                "streak": 2,
+                "lastSeen": 1793697421345,
+                "lastWrong": 0,
+                "skills": {
+                  "point": {
+                    "correct": 1,
+                    "wrong": 0,
+                    "streak": 1,
+                    "lastSeen": 1793697420843,
+                    "due": 1793783820843
+                  },
+                  "write": {
+                    "correct": 1,
+                    "wrong": 0,
+                    "streak": 1,
+                    "lastSeen": 1793697421345,
+                    "due": 1793783821345
+                  }
+                }
+              }
+            },
+            "rewardTokens": [
+              "city1:point:city-6:point",
+              "city1:point:city-5:point",
+              "city1:point:city-4:point",
+              "city1:point:city-2:point",
+              "city1:point:city-1:point",
+              "city1:point:city-3:point",
+              "city1:write:city-2:write",
+              "city1:write:city-3:write",
+              "city1:write:city-1:write",
+              "city1:write:city-5:write",
+              "city1:write:city-6:write",
+              "city1:write:city-4:write"
+            ],
+            "active": {
+              "chapterId": "city1",
+              "kind": "write",
+              "queue": [
+                {
+                  "id": "city-2",
+                  "mode": "write"
+                },
+                {
+                  "id": "city-3",
+                  "mode": "write"
+                },
+                {
+                  "id": "city-1",
+                  "mode": "write"
+                },
+                {
+                  "id": "city-5",
+                  "mode": "write"
+                },
+                {
+                  "id": "city-6",
+                  "mode": "write"
+                },
+                {
+                  "id": "city-4",
+                  "mode": "write"
+                }
+              ],
+              "index": 6,
+              "answered": true,
+              "done": true,
+              "originalTotal": 6,
+              "answers": [
+                {
+                  "ok": true
+                },
+                {
+                  "ok": true
+                },
+                {
+                  "ok": true
+                },
+                {
+                  "ok": true
+                },
+                {
+                  "ok": true
+                },
+                {
+                  "ok": true
+                }
+              ],
+              "correct": 6,
+              "wrong": 0,
+              "pending": [],
+              "awarded": [
+                "city-2:write",
+                "city-3:write",
+                "city-1:write",
+                "city-5:write",
+                "city-6:write",
+                "city-4:write"
+              ],
+              "lastAnswer": null,
+              "result": {
+                "passed": true,
+                "goldEarned": false,
+                "newlyCompleted": true
+              }
+            }
+          },
+          "daily": {
+            "date": "2026-11-03",
+            "correct": 12
+          }
+        },
+        "roles": []
+      },
+      "backup": "chrome-real-before-gold.json"
+    },
+    {
+      "case": "genuinely played Gold; 24 correct = 3 pizzas = 1 trip; parsed reload equal after canonical token-set ordering",
+      "snapshot": {
+        "good": 24,
+        "pizzas": 3,
+        "slices": 0,
+        "trips": 1,
+        "gold": 1793697426293,
+        "progress": {
+          "schema": 3,
+          "good": 24,
+          "pizzas": 3,
+          "slices": 0,
+          "trips": 1,
+          "mistakes": [],
+          "route": {
+            "schema": 2,
+            "chapters": {
+              "city1": {
+                "stage": 3,
+                "completedAt": 1793697421911,
+                "goldAt": 1793697426293,
+                "nextReviewAt": 1793783826293,
+                "reviews": 0
+              },
+              "city2": {
+                "stage": 0,
+                "completedAt": 0,
+                "goldAt": 0,
+                "nextReviewAt": 0,
+                "reviews": 0
+              },
+              "city3": {
+                "stage": 0,
+                "completedAt": 0,
+                "goldAt": 0,
+                "nextReviewAt": 0,
+                "reviews": 0
+              },
+              "city4": {
+                "stage": 0,
+                "completedAt": 0,
+                "goldAt": 0,
+                "nextReviewAt": 0,
+                "reviews": 0
+              },
+              "islands": {
+                "stage": 0,
+                "completedAt": 0,
+                "goldAt": 0,
+                "nextReviewAt": 0,
+                "reviews": 0
+              },
+              "mountains": {
+                "stage": 0,
+                "completedAt": 0,
+                "goldAt": 0,
+                "nextReviewAt": 0,
+                "reviews": 0
+              },
+              "volcanoes": {
+                "stage": 0,
+                "completedAt": 0,
+                "goldAt": 0,
+                "nextReviewAt": 0,
+                "reviews": 0
+              },
+              "regions": {
+                "stage": 0,
+                "completedAt": 0,
+                "goldAt": 0,
+                "nextReviewAt": 0,
+                "reviews": 0
+              },
+              "countries": {
+                "stage": 0,
+                "completedAt": 0,
+                "goldAt": 0,
+                "nextReviewAt": 0,
+                "reviews": 0
+              },
+              "seas": {
+                "stage": 0,
+                "completedAt": 0,
+                "goldAt": 0,
+                "nextReviewAt": 0,
+                "reviews": 0
+              },
+              "rivers": {
+                "stage": 0,
+                "completedAt": 0,
+                "goldAt": 0,
+                "nextReviewAt": 0,
+                "reviews": 0
+              }
+            },
+            "items": {
+              "city-6": {
+                "correct": 4,
+                "wrong": 0,
+                "streak": 4,
+                "lastSeen": 1793697426081,
+                "lastWrong": 0,
+                "skills": {
+                  "point": {
+                    "correct": 2,
+                    "wrong": 0,
+                    "streak": 2,
+                    "lastSeen": 1793697425100,
+                    "due": 1793956625100
+                  },
+                  "write": {
+                    "correct": 2,
+                    "wrong": 0,
+                    "streak": 2,
+                    "lastSeen": 1793697426081,
+                    "due": 1793956626081
+                  }
+                }
+              },
+              "city-5": {
+                "correct": 4,
+                "wrong": 0,
+                "streak": 4,
+                "lastSeen": 1793697425744,
+                "lastWrong": 0,
+                "skills": {
+                  "point": {
+                    "correct": 2,
+                    "wrong": 0,
+                    "streak": 2,
+                    "lastSeen": 1793697424394,
+                    "due": 1793956624394
+                  },
+                  "write": {
+                    "correct": 2,
+                    "wrong": 0,
+                    "streak": 2,
+                    "lastSeen": 1793697425744,
+                    "due": 1793956625744
+                  }
+                }
+              },
+              "city-4": {
+                "correct": 4,
+                "wrong": 0,
+                "streak": 4,
+                "lastSeen": 1793697425660,
+                "lastWrong": 0,
+                "skills": {
+                  "point": {
+                    "correct": 2,
+                    "wrong": 0,
+                    "streak": 2,
+                    "lastSeen": 1793697423779,
+                    "due": 1793956623779
+                  },
+                  "write": {
+                    "correct": 2,
+                    "wrong": 0,
+                    "streak": 2,
+                    "lastSeen": 1793697425660,
+                    "due": 1793956625660
+                  }
+                }
+              },
+              "city-2": {
+                "correct": 4,
+                "wrong": 0,
+                "streak": 4,
+                "lastSeen": 1793697426212,
+                "lastWrong": 0,
+                "skills": {
+                  "point": {
+                    "correct": 2,
+                    "wrong": 0,
+                    "streak": 2,
+                    "lastSeen": 1793697423449,
+                    "due": 1793956623449
+                  },
+                  "write": {
+                    "correct": 2,
+                    "wrong": 0,
+                    "streak": 2,
+                    "lastSeen": 1793697426212,
+                    "due": 1793956626212
+                  }
+                }
+              },
+              "city-1": {
+                "correct": 4,
+                "wrong": 0,
+                "streak": 4,
+                "lastSeen": 1793697425960,
+                "lastWrong": 0,
+                "skills": {
+                  "point": {
+                    "correct": 2,
+                    "wrong": 0,
+                    "streak": 2,
+                    "lastSeen": 1793697423901,
+                    "due": 1793956623901
+                  },
+                  "write": {
+                    "correct": 2,
+                    "wrong": 0,
+                    "streak": 2,
+                    "lastSeen": 1793697425960,
+                    "due": 1793956625960
+                  }
+                }
+              },
+              "city-3": {
+                "correct": 4,
+                "wrong": 0,
+                "streak": 4,
+                "lastSeen": 1793697425845,
+                "lastWrong": 0,
+                "skills": {
+                  "point": {
+                    "correct": 2,
+                    "wrong": 0,
+                    "streak": 2,
+                    "lastSeen": 1793697424730,
+                    "due": 1793956624730
+                  },
+                  "write": {
+                    "correct": 2,
+                    "wrong": 0,
+                    "streak": 2,
+                    "lastSeen": 1793697425845,
+                    "due": 1793956625845
+                  }
+                }
+              }
+            },
+            "rewardTokens": [
+              "city1:point:city-6:point",
+              "city1:point:city-5:point",
+              "city1:point:city-4:point",
+              "city1:point:city-2:point",
+              "city1:point:city-1:point",
+              "city1:point:city-3:point",
+              "city1:write:city-2:write",
+              "city1:write:city-3:write",
+              "city1:write:city-1:write",
+              "city1:write:city-5:write",
+              "city1:write:city-6:write",
+              "city1:write:city-4:write",
+              "city1:gold:city-2:point",
+              "city1:gold:city-4:point",
+              "city1:gold:city-1:point",
+              "city1:gold:city-5:point",
+              "city1:gold:city-3:point",
+              "city1:gold:city-6:point",
+              "city1:gold:city-4:write",
+              "city1:gold:city-5:write",
+              "city1:gold:city-3:write",
+              "city1:gold:city-1:write",
+              "city1:gold:city-6:write",
+              "city1:gold:city-2:write"
+            ],
+            "active": {
+              "chapterId": "city1",
+              "kind": "gold",
+              "queue": [
+                {
+                  "id": "city-2",
+                  "mode": "point"
+                },
+                {
+                  "id": "city-4",
+                  "mode": "point"
+                },
+                {
+                  "id": "city-1",
+                  "mode": "point"
+                },
+                {
+                  "id": "city-5",
+                  "mode": "point"
+                },
+                {
+                  "id": "city-3",
+                  "mode": "point"
+                },
+                {
+                  "id": "city-6",
+                  "mode": "point"
+                },
+                {
+                  "id": "city-4",
+                  "mode": "write"
+                },
+                {
+                  "id": "city-5",
+                  "mode": "write"
+                },
+                {
+                  "id": "city-3",
+                  "mode": "write"
+                },
+                {
+                  "id": "city-1",
+                  "mode": "write"
+                },
+                {
+                  "id": "city-6",
+                  "mode": "write"
+                },
+                {
+                  "id": "city-2",
+                  "mode": "write"
+                }
+              ],
+              "index": 12,
+              "answered": true,
+              "done": true,
+              "originalTotal": 12,
+              "answers": [
+                {
+                  "ok": true
+                },
+                {
+                  "ok": true
+                },
+                {
+                  "ok": true
+                },
+                {
+                  "ok": true
+                },
+                {
+                  "ok": true
+                },
+                {
+                  "ok": true
+                },
+                {
+                  "ok": true
+                },
+                {
+                  "ok": true
+                },
+                {
+                  "ok": true
+                },
+                {
+                  "ok": true
+                },
+                {
+                  "ok": true
+                },
+                {
+                  "ok": true
+                }
+              ],
+              "correct": 12,
+              "wrong": 0,
+              "pending": [],
+              "awarded": [
+                "city-2:point",
+                "city-4:point",
+                "city-1:point",
+                "city-5:point",
+                "city-3:point",
+                "city-6:point",
+                "city-4:write",
+                "city-5:write",
+                "city-3:write",
+                "city-1:write",
+                "city-6:write",
+                "city-2:write"
+              ],
+              "lastAnswer": null,
+              "result": {
+                "passed": true,
+                "goldEarned": true,
+                "newlyCompleted": false
+              }
+            }
+          },
+          "daily": {
+            "date": "2026-11-03",
+            "correct": 24
+          }
+        },
+        "roles": [
+          {
+            "id": "arrivalArt",
+            "role": "arrival",
+            "visible": true
+          },
+          {
+            "id": "",
+            "role": "gold",
+            "visible": true
+          }
+        ]
+      }
+    },
+    {
+      "case": "actual exported pre-Gold progress restored; completed mixed/wrong Gold cannot earn Gold",
+      "snapshot": {
+        "good": 23,
+        "pizzas": 2,
+        "slices": 7,
+        "trips": 0,
+        "gold": 0,
+        "progress": {
+          "schema": 3,
+          "good": 23,
+          "pizzas": 2,
+          "slices": 7,
+          "trips": 0,
+          "mistakes": [
+            "city-6"
+          ],
+          "route": {
+            "schema": 2,
+            "chapters": {
+              "city1": {
+                "stage": 3,
+                "completedAt": 1793697421911,
+                "goldAt": 0,
+                "nextReviewAt": 1793783821911,
+                "reviews": 0
+              },
+              "city2": {
+                "stage": 0,
+                "completedAt": 0,
+                "goldAt": 0,
+                "nextReviewAt": 0,
+                "reviews": 0
+              },
+              "city3": {
+                "stage": 0,
+                "completedAt": 0,
+                "goldAt": 0,
+                "nextReviewAt": 0,
+                "reviews": 0
+              },
+              "city4": {
+                "stage": 0,
+                "completedAt": 0,
+                "goldAt": 0,
+                "nextReviewAt": 0,
+                "reviews": 0
+              },
+              "islands": {
+                "stage": 0,
+                "completedAt": 0,
+                "goldAt": 0,
+                "nextReviewAt": 0,
+                "reviews": 0
+              },
+              "mountains": {
+                "stage": 0,
+                "completedAt": 0,
+                "goldAt": 0,
+                "nextReviewAt": 0,
+                "reviews": 0
+              },
+              "volcanoes": {
+                "stage": 0,
+                "completedAt": 0,
+                "goldAt": 0,
+                "nextReviewAt": 0,
+                "reviews": 0
+              },
+              "regions": {
+                "stage": 0,
+                "completedAt": 0,
+                "goldAt": 0,
+                "nextReviewAt": 0,
+                "reviews": 0
+              },
+              "countries": {
+                "stage": 0,
+                "completedAt": 0,
+                "goldAt": 0,
+                "nextReviewAt": 0,
+                "reviews": 0
+              },
+              "seas": {
+                "stage": 0,
+                "completedAt": 0,
+                "goldAt": 0,
+                "nextReviewAt": 0,
+                "reviews": 0
+              },
+              "rivers": {
+                "stage": 0,
+                "completedAt": 0,
+                "goldAt": 0,
+                "nextReviewAt": 0,
+                "reviews": 0
+              }
+            },
+            "items": {
+              "city-1": {
+                "correct": 4,
+                "wrong": 0,
+                "streak": 4,
+                "lastSeen": 1793697432512,
+                "lastWrong": 0,
+                "skills": {
+                  "point": {
+                    "correct": 2,
+                    "wrong": 0,
+                    "streak": 2,
+                    "lastSeen": 1793697430061,
+                    "due": 1793956630061
+                  },
+                  "write": {
+                    "correct": 2,
+                    "wrong": 0,
+                    "streak": 2,
+                    "lastSeen": 1793697432512,
+                    "due": 1793956632512
+                  }
+                }
+              },
+              "city-2": {
+                "correct": 4,
+                "wrong": 0,
+                "streak": 4,
+                "lastSeen": 1793697432611,
+                "lastWrong": 0,
+                "skills": {
+                  "point": {
+                    "correct": 2,
+                    "wrong": 0,
+                    "streak": 2,
+                    "lastSeen": 1793697431751,
+                    "due": 1793956631751
+                  },
+                  "write": {
+                    "correct": 2,
+                    "wrong": 0,
+                    "streak": 2,
+                    "lastSeen": 1793697432611,
+                    "due": 1793956632611
+                  }
+                }
+              },
+              "city-3": {
+                "correct": 4,
+                "wrong": 0,
+                "streak": 4,
+                "lastSeen": 1793697432862,
+                "lastWrong": 0,
+                "skills": {
+                  "point": {
+                    "correct": 2,
+                    "wrong": 0,
+                    "streak": 2,
+                    "lastSeen": 1793697429747,
+                    "due": 1793956629747
+                  },
+                  "write": {
+                    "correct": 2,
+                    "wrong": 0,
+                    "streak": 2,
+                    "lastSeen": 1793697432862,
+                    "due": 1793956632862
+                  }
+                }
+              },
+              "city-4": {
+                "correct": 4,
+                "wrong": 0,
+                "streak": 4,
+                "lastSeen": 1793697432412,
+                "lastWrong": 0,
+                "skills": {
+                  "point": {
+                    "correct": 2,
+                    "wrong": 0,
+                    "streak": 2,
+                    "lastSeen": 1793697429927,
+                    "due": 1793956629927
+                  },
+                  "write": {
+                    "correct": 2,
+                    "wrong": 0,
+                    "streak": 2,
+                    "lastSeen": 1793697432412,
+                    "due": 1793956632412
+                  }
+                }
+              },
+              "city-5": {
+                "correct": 4,
+                "wrong": 0,
+                "streak": 4,
+                "lastSeen": 1793697432695,
+                "lastWrong": 0,
+                "skills": {
+                  "point": {
+                    "correct": 2,
+                    "wrong": 0,
+                    "streak": 2,
+                    "lastSeen": 1793697430466,
+                    "due": 1793956630466
+                  },
+                  "write": {
+                    "correct": 2,
+                    "wrong": 0,
+                    "streak": 2,
+                    "lastSeen": 1793697432695,
+                    "due": 1793956632695
+                  }
+                }
+              },
+              "city-6": {
+                "correct": 3,
+                "wrong": 1,
+                "streak": 0,
+                "lastSeen": 1793697432329,
+                "lastWrong": 1793697432329,
+                "skills": {
+                  "point": {
+                    "correct": 2,
+                    "wrong": 0,
+                    "streak": 2,
+                    "lastSeen": 1793697431015,
+                    "due": 1793956631015
+                  },
+                  "write": {
+                    "correct": 1,
+                    "wrong": 1,
+                    "streak": 0,
+                    "lastSeen": 1793697432329,
+                    "due": 1793697432329
+                  }
+                }
+              }
+            },
+            "rewardTokens": [
+              "city1:point:city-1:point",
+              "city1:point:city-2:point",
+              "city1:point:city-3:point",
+              "city1:point:city-4:point",
+              "city1:point:city-5:point",
+              "city1:point:city-6:point",
+              "city1:write:city-1:write",
+              "city1:write:city-2:write",
+              "city1:write:city-3:write",
+              "city1:write:city-4:write",
+              "city1:write:city-5:write",
+              "city1:write:city-6:write",
+              "city1:gold:city-3:point",
+              "city1:gold:city-4:point",
+              "city1:gold:city-1:point",
+              "city1:gold:city-5:point",
+              "city1:gold:city-6:point",
+              "city1:gold:city-2:point",
+              "city1:gold:city-4:write",
+              "city1:gold:city-1:write",
+              "city1:gold:city-2:write",
+              "city1:gold:city-5:write",
+              "city1:gold:city-3:write"
+            ],
+            "active": {
+              "chapterId": "city1",
+              "kind": "gold",
+              "queue": [
+                {
+                  "id": "city-3",
+                  "mode": "point"
+                },
+                {
+                  "id": "city-4",
+                  "mode": "point"
+                },
+                {
+                  "id": "city-1",
+                  "mode": "point"
+                },
+                {
+                  "id": "city-5",
+                  "mode": "point"
+                },
+                {
+                  "id": "city-6",
+                  "mode": "point"
+                },
+                {
+                  "id": "city-2",
+                  "mode": "point"
+                },
+                {
+                  "id": "city-6",
+                  "mode": "write"
+                },
+                {
+                  "id": "city-4",
+                  "mode": "write"
+                },
+                {
+                  "id": "city-1",
+                  "mode": "write"
+                },
+                {
+                  "id": "city-2",
+                  "mode": "write"
+                },
+                {
+                  "id": "city-5",
+                  "mode": "write"
+                },
+                {
+                  "id": "city-3",
+                  "mode": "write"
+                }
+              ],
+              "index": 12,
+              "answered": true,
+              "done": true,
+              "originalTotal": 12,
+              "answers": [
+                {
+                  "ok": true
+                },
+                {
+                  "ok": true
+                },
+                {
+                  "ok": true
+                },
+                {
+                  "ok": true
+                },
+                {
+                  "ok": true
+                },
+                {
+                  "ok": true
+                },
+                {
+                  "ok": false
+                },
+                {
+                  "ok": true
+                },
+                {
+                  "ok": true
+                },
+                {
+                  "ok": true
+                },
+                {
+                  "ok": true
+                },
+                {
+                  "ok": true
+                }
+              ],
+              "correct": 11,
+              "wrong": 1,
+              "pending": [
+                "city-6:write"
+              ],
+              "awarded": [
+                "city-3:point",
+                "city-4:point",
+                "city-1:point",
+                "city-5:point",
+                "city-6:point",
+                "city-2:point",
+                "city-4:write",
+                "city-1:write",
+                "city-2:write",
+                "city-5:write",
+                "city-3:write"
+              ],
+              "lastAnswer": null,
+              "result": {
+                "passed": false,
+                "goldEarned": false,
+                "newlyCompleted": false
+              }
+            }
+          },
+          "daily": {
+            "date": "2026-11-03",
+            "correct": 23
+          }
+        },
+        "roles": [
+          {
+            "id": "",
+            "role": "encourage",
+            "visible": true
+          }
+        ]
+      }
+    }
+  ],
+  "errors": [],
+  "network": [],
+  "intentional": [
+    "Failed to load resource: net::ERR_INVALID_URL"
+  ],
+  "unexpectedConsoleErrors": [],
+  "status": "PASS",
+  "limits": [
+    "Gold seals, chapter pictures/ink stamps, folio passport and collectible postcards are not integrated; no runtime acceptance asserted for them.",
+    "Actual Nino Gold is old pose, not new seal.",
+    "No native Safari, OS favicon cache, device, VoiceOver or calibrated-color approval."
+  ]
+}

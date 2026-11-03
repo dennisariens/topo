@@ -4,8 +4,8 @@
   "resolverShuffleGradingPrefixExact": true,
   "geographicClickHandlerExact": true,
   "standaloneFilesByteIdentical": true,
-  "htmlBytes": 3163775,
-  "htmlSha256": "72c706661b45ff80eb3969e911047b61d1a2cfe8d3d191c1680ccc4e6dd9d159",
+  "htmlBytes": 27239577,
+  "htmlSha256": "55866c663e9b7e5c02e88c75bbab62560b7b4a48344ff062a28cd2ac18b77d14",
   "files": [
     {
       "path": "scripts/learning-engine.js",

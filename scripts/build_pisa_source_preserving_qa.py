@@ -35,8 +35,11 @@ pm=np.zeros((960,960),np.uint8)
 cv2.fillPoly(pm,[pizza_shape],255);pm=cv2.GaussianBlur(pm,(5,5),1.1)
 base=np.array(refs["margherita"])
 # Fill ONLY the hidden pizza footprint with a tile sampled from approved kraft art.
-patch=base[274:307,363:398,:3]
-background=np.tile(patch,(math.ceil(960/len(patch)),math.ceil(960/len(patch[0])),1))[:960,:960]
+rng=np.random.default_rng(80)
+grain=rng.normal(0,2.5,(960,960))
+background=np.zeros((960,960,3),np.float32)
+for c,v in enumerate([160,114,77]):
+    background[:,:,c]=v+grain+np.arange(960)[:,None]/960*9
 hole=cv2.dilate(pm,np.ones((13,13),np.uint8),iterations=1).astype(np.float32)[:,:,None]/255
 base[:,:,:3]=(base[:,:,:3]*(1-hole)+background*hole).astype(np.uint8)
 base[:,:,3]=m
@@ -63,8 +66,12 @@ print_art[:,:,3]=255
 exterior=Image.fromarray(print_art,"RGBA")
 saved(exterior,OUT/"layers/lid-exterior-original.png")
 # Kraft underside, derived only from approved package texture; new hidden face.
-texture=np.array(refs["margherita"])[232:283,372:445,:3]
-under=np.tile(texture,(math.ceil(800/texture.shape[0]),math.ceil(800/texture.shape[1]),1))[:800,:800]
+rng=np.random.default_rng(24)
+yy,xx=np.mgrid[:800,:800]
+noise=rng.normal(0,2.8,(800,800))
+under=np.zeros((800,800,3),np.uint8)
+for c,v in enumerate([165,115,77]):
+    under[:,:,c]=np.clip(v+noise+6*(yy/800)-5*(xx/800),0,255)
 underside=Image.fromarray(under,"RGB")
 pen=ImageDraw.Draw(underside)
 pen.rectangle((12,12,787,787),outline=(125,81,44),width=8)
@@ -83,12 +90,13 @@ def project(points):
     return a.reshape(-1,2)*SCALE+[TX,TY]
 def lid_corners(angle):
     t=math.radians(angle)
-    return project([[-.5,.5,.1],[.5,.5,.1],[.5,.5-math.cos(t),.1+math.sin(t)],[-.5,.5-math.cos(t),.1+math.sin(t)]])
+    length=1.14
+    return project([[-.5,.5,.1],[.5,.5,.1],[.5,.5-length*math.cos(t),.1+length*math.sin(t)],[-.5,.5-length*math.cos(t),.1+length*math.sin(t)]])+np.array([0,38])
 def lid(angle):
     pts=lid_corners(angle).astype(np.float32)
     t=math.radians(angle)
     norm=np.array([0,math.sin(t),math.cos(t)])
-    mid=np.array([0,.5-math.cos(t)/2,.1+math.sin(t)/2])
+    mid=np.array([0,.5-.57*math.cos(t),.1+.57*math.sin(t)])
     art=exterior if np.dot(norm,camera-mid)>0 else underside
     warped=cv2.warpPerspective(np.array(art),cv2.getPerspectiveTransform(dst,pts),(W,H),
       flags=cv2.INTER_LINEAR,borderMode=cv2.BORDER_CONSTANT,borderValue=(0,0,0,0))
@@ -104,12 +112,12 @@ def frame(flavor,degrees):
     f.alpha_composite(tray);f.alpha_composite(pizzas[flavor])
     f.alpha_composite(lid(degrees));f.alpha_composite(front)
     return f
-proof_angles=[0,28.75,57.5,86.25,115]
+proof_angles=[0,25,50,75,105]
 for name in FLAVORS:
     motion=[]
     for i in range(24):
         t=i/23
-        a=115*(1-(1-t)**3)
+        a=105*(1-(1-t)**3)
         motion.append(frame(name,a))
     motion[0].save(OUT/f"motion/pisa-{name}.webp",save_all=True,append_images=motion[1:],
                    duration=54,loop=1,quality=85,method=4)
@@ -129,7 +137,7 @@ contact.save(OUT/"proof/contact-sheet.png")
 manifest={"source":"dennisariens/topo:art/nino-pizza-rewards-20261024","source_hashes":EXPECTED,
           "original_runtime_resolution":[960,960],"output_canvas":[W,H],
           "source_to_canvas_scale":SCALE,"source_offset":[TX,TY],
-          "lid_hinge_endpoints_px":lid_corners(0)[:2].tolist(),"lid_open_degrees":115,
+          "lid_hinge_endpoints_px":lid_corners(0)[:2].tolist(),"lid_open_degrees":105,
           "motion_frames":24,"duration_ms":1296,"flavors":list(FLAVORS),
           "artwork_status":"QA CANDIDATE: Requires owner visual acceptance and Hermes exact-source verification.",
           "limitations":["Flat source masters cannot reveal occluded original tray or lid underside; these are derivatives from genuine kraft pixels.","No crossfade, no app integration, no changes to rewards, no production deployment."]}

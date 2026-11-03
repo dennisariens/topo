@@ -14,6 +14,10 @@ try{
   assert(await p.locator('.ninoNav').isVisible());assert.equal(await p.evaluate(()=>document.documentElement.scrollWidth<=innerWidth),true);
   await p.screenshot({path:new URL((engine===webkit?'webkit':'chrome')+'-'+width+'-journey.png',out).pathname});
   if(width<1100)await p.getByRole('button',{name:'Reisboekje',exact:true}).tap();else await p.getByRole('button',{name:'Reisboekje',exact:true}).click();assert(await p.locator('#travelBook').evaluate(n=>n.open));
+  for(const paper of await p.locator('.folioPaper').all()){await paper.evaluate(i=>i.decode());if(await paper.isVisible()){const r=await paper.boundingBox();assert(r.width<=543);assert(Math.abs(r.width/r.height-1086/1448)<.001);}}
+  assert(await p.locator('#travelBook').evaluate(d=>d.scrollWidth<=d.clientWidth));
+  const firstLabel=await p.locator('.bookFooter span').textContent();await p.keyboard.press('ArrowRight');assert.notEqual(await p.locator('.bookFooter span').textContent(),firstLabel);await p.keyboard.press('ArrowLeft');assert.equal(await p.locator('.bookFooter span').textContent(),firstLabel);
+  await p.screenshot({path:new URL((engine===webkit?'webkit':'chrome')+'-'+width+'-folio.png',out).pathname});
   assert.equal(await p.locator('#travelBook .stampArt').count(),0);await p.getByRole('button',{name:'Volgende',exact:true}).click();if(width<=650)await p.getByRole('button',{name:'Volgende',exact:true}).click();assert.equal(await p.locator('.bookStamp').count(),11);assert.equal(await p.locator('#travelBook .stampArt').count(),0);assert.equal(await p.locator('#travelBook .chapterSeal').count(),0);
   await p.screenshot({path:new URL((engine===webkit?'webkit':'chrome')+'-'+width+'-passport.png',out).pathname});
   await p.keyboard.press('Escape');assert.equal(await p.locator('#travelBook').evaluate(n=>n.open),false);assert.equal(await p.evaluate(()=>document.activeElement.textContent),'Reisboekje');
@@ -25,6 +29,15 @@ try{
   await p.getByRole('button',{name:'Reisboekje',exact:true}).click();await p.getByRole('button',{name:'Sluit boekje',exact:true}).click();
   assert.deepEqual(await p.evaluate(()=>({save:localStorage.getItem('topo-italie-v3'),current:state.current.id,mode:state.mode,draft:document.querySelector('#answer').value,caret:[document.querySelector('#answer').selectionStart,document.querySelector('#answer').selectionEnd],route:JSON.stringify(state.route)})),snapshot);
   await p.screenshot({path:new URL((engine===webkit?'webkit':'chrome')+'-'+width+'-practice.png',out).pathname});
+  if(width===320){
+   await p.evaluate(()=>{ROUTE_CHAPTERS.forEach(c=>{state.route.chapters[c.id]={stage:3,completedAt:1,goldAt:1,nextReviewAt:0,reviews:0}})});
+   await p.getByRole('button',{name:'Reisboekje',exact:true}).click();
+   while(!await p.getByRole('button',{name:'Vorige',exact:true}).isDisabled())await p.getByRole('button',{name:'Vorige',exact:true}).click();
+   await p.getByRole('button',{name:'Volgende',exact:true}).click();
+   assert((await p.locator('.bookFinalGold').boundingBox()).width>=240);
+   assert(await p.locator('#travelBook').evaluate(d=>d.scrollWidth<=d.clientWidth));
+   await p.getByRole('button',{name:'Sluit boekje',exact:true}).click();
+  }
   if(width===1500){
    // Explicit projection fixtures: these are not claims of naturally earned play.
    for(const fixture of [{completed:0,gold:0,trips:0},{completed:1,gold:0,trips:1},{completed:11,gold:1,trips:3},{completed:11,gold:11,trips:8}]){

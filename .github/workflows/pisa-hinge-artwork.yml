@@ -3,6 +3,9 @@ on:
   push:
     branches:
       - art/pisa-hinge-source-preserving-final-20261103
+  pull_request:
+    branches:
+      - art/nino-pizza-rewards-20261024
   workflow_dispatch:
 
 permissions:

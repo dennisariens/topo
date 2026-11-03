@@ -1,0 +1,32 @@
+[
+  {
+    "name": "unaltered",
+    "adapterRejected": false,
+    "error": null,
+    "fullBaselineEquality": true
+  },
+  {
+    "name": "injected V2 script",
+    "adapterRejected": true,
+    "error": "Unexpected V2 script contents",
+    "fullBaselineEquality": false
+  },
+  {
+    "name": "outside V2 edit",
+    "adapterRejected": false,
+    "error": null,
+    "fullBaselineEquality": false
+  },
+  {
+    "name": "art role stamp0/stamp1 swap",
+    "adapterRejected": false,
+    "error": null,
+    "fullBaselineEquality": true
+  },
+  {
+    "name": "folio metadata width changed",
+    "adapterRejected": false,
+    "error": null,
+    "fullBaselineEquality": true
+  }
+]

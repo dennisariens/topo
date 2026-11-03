@@ -1,0 +1,10 @@
+{
+  "status": "PASS",
+  "browser": "27.2",
+  "records": 6,
+  "acceptedAnswers": 83,
+  "failure": null,
+  "errors": [],
+  "network": [],
+  "consoleErrors": []
+}

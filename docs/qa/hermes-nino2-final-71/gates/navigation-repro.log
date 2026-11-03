@@ -1,0 +1,83 @@
+[
+  {
+    "w": 1500,
+    "before": {
+      "question": "city-2",
+      "mode": "write",
+      "draft": "Navigatieconcept",
+      "caret": [
+        3,
+        10,
+        "backward"
+      ]
+    },
+    "afterReturn": {
+      "mode": "learn",
+      "draft": "Navigatieconcept"
+    },
+    "afterWriting": {
+      "question": "city-4",
+      "mode": "write",
+      "draft": "",
+      "caret": [
+        0,
+        0,
+        "none"
+      ]
+    }
+  },
+  {
+    "w": 768,
+    "before": {
+      "question": "city-4",
+      "mode": "write",
+      "draft": "Navigatieconcept",
+      "caret": [
+        3,
+        10,
+        "backward"
+      ]
+    },
+    "afterReturn": {
+      "mode": "learn",
+      "draft": "Navigatieconcept"
+    },
+    "afterWriting": {
+      "question": "city-5",
+      "mode": "write",
+      "draft": "",
+      "caret": [
+        0,
+        0,
+        "none"
+      ]
+    }
+  },
+  {
+    "w": 320,
+    "before": {
+      "question": "city-6",
+      "mode": "write",
+      "draft": "Navigatieconcept",
+      "caret": [
+        3,
+        10,
+        "backward"
+      ]
+    },
+    "afterReturn": {
+      "mode": "learn",
+      "draft": "Navigatieconcept"
+    },
+    "afterWriting": {
+      "question": "city-1",
+      "mode": "write",
+      "draft": "",
+      "caret": [
+        0,
+        0,
+        "none"
+      ]
+    }
+  }
+]

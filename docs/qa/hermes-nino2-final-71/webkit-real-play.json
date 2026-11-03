@@ -1,0 +1,873 @@
+{
+  "target": "2c52f121b853d1d8a46555d725ef79c97e0bf85b",
+  "htmlSHA256": "352ddd742436ac4f5a5a8a82374f742788952219e42b47d87d83536319183d53",
+  "browser": "27.2",
+  "engine": "webkit",
+  "role": "Independent Hermes real play. No injected progress/counter/chapter fixture. Exported saves come from actual UI.",
+  "records": [
+    {
+      "label": "REAL PLAY, no progress fixture",
+      "name": "genuine-chapter-no-gold",
+      "stamps": 1,
+      "gold": 0,
+      "trips": 0,
+      "venezia": 0
+    },
+    {
+      "label": "REAL PLAY, no progress fixture",
+      "name": "genuine-gold-first-trip",
+      "stamps": 1,
+      "gold": 1,
+      "trips": 1,
+      "venezia": 0
+    },
+    {
+      "label": "REAL PLAY, no progress fixture",
+      "name": "genuine-two-trips-hidden-venezia",
+      "stamps": 1,
+      "gold": 1,
+      "trips": 2,
+      "venezia": 0
+    },
+    {
+      "label": "REAL PLAY, no progress fixture",
+      "name": "genuine-third-trip-visible-venezia",
+      "stamps": 1,
+      "gold": 1,
+      "trips": 3,
+      "venezia": 1
+    },
+    {
+      "label": "REAL UI JSON download/reset/import/reload",
+      "suggestedFilename": "topo-voortgang-2026-11-03.json",
+      "good": 72,
+      "trips": 3,
+      "restoredExactlyExceptTokenOrder": true
+    },
+    {
+      "label": "REAL PLAY, no progress fixture",
+      "name": "genuine-wrong-gold-no-seal",
+      "stamps": 1,
+      "gold": 0,
+      "trips": 0,
+      "venezia": 0
+    }
+  ],
+  "trace": [
+    {
+      "id": "city-1",
+      "name": "Bari",
+      "kind": "point",
+      "good": 0,
+      "wrong": false,
+      "xy": [
+        718.3680414979757,
+        649.8786725708502
+      ],
+      "afterGood": 1
+    },
+    {
+      "id": "city-4",
+      "name": "Genua",
+      "kind": "point",
+      "good": 1,
+      "wrong": false,
+      "xy": [
+        509.0735602226721,
+        528.2928800607287
+      ],
+      "afterGood": 2
+    },
+    {
+      "id": "city-5",
+      "name": "Milaan",
+      "kind": "point",
+      "good": 2,
+      "wrong": false,
+      "xy": [
+        516.2696300607288,
+        489.1169392712551
+      ],
+      "afterGood": 3
+    },
+    {
+      "id": "city-3",
+      "name": "Florence",
+      "kind": "point",
+      "good": 3,
+      "wrong": false,
+      "xy": [
+        570.206616902834,
+        551.5339817813765
+      ],
+      "afterGood": 4
+    },
+    {
+      "id": "city-2",
+      "name": "Bologna",
+      "kind": "point",
+      "good": 4,
+      "wrong": false,
+      "xy": [
+        572.5781578947368,
+        524.9583496963563
+      ],
+      "afterGood": 5
+    },
+    {
+      "id": "city-6",
+      "name": "Napels",
+      "kind": "point",
+      "good": 5,
+      "wrong": false,
+      "xy": [
+        649.0759256072874,
+        659.9205915991903
+      ],
+      "afterGood": 6
+    },
+    {
+      "id": "city-3",
+      "name": "Florence",
+      "kind": "write",
+      "good": 6,
+      "wrong": false,
+      "xy": null,
+      "afterGood": 7
+    },
+    {
+      "id": "city-4",
+      "name": "Genua",
+      "kind": "write",
+      "good": 7,
+      "wrong": false,
+      "xy": null,
+      "afterGood": 8
+    },
+    {
+      "id": "city-6",
+      "name": "Napels",
+      "kind": "write",
+      "good": 8,
+      "wrong": false,
+      "xy": null,
+      "afterGood": 9
+    },
+    {
+      "id": "city-5",
+      "name": "Milaan",
+      "kind": "write",
+      "good": 9,
+      "wrong": false,
+      "xy": null,
+      "afterGood": 10
+    },
+    {
+      "id": "city-1",
+      "name": "Bari",
+      "kind": "write",
+      "good": 10,
+      "wrong": false,
+      "xy": null,
+      "afterGood": 11
+    },
+    {
+      "id": "city-2",
+      "name": "Bologna",
+      "kind": "write",
+      "good": 11,
+      "wrong": false,
+      "xy": null,
+      "afterGood": 12
+    },
+    {
+      "id": "city-6",
+      "name": "Napels",
+      "kind": "point",
+      "good": 12,
+      "wrong": false,
+      "xy": [
+        656.1053519736843,
+        252.68645394736842
+      ],
+      "afterGood": 13
+    },
+    {
+      "id": "city-5",
+      "name": "Milaan",
+      "kind": "point",
+      "good": 13,
+      "wrong": false,
+      "xy": [
+        516.2696300607288,
+        39.11693927125506
+      ],
+      "afterGood": 14
+    },
+    {
+      "id": "city-3",
+      "name": "Florence",
+      "kind": "point",
+      "good": 14,
+      "wrong": false,
+      "xy": [
+        570.206616902834,
+        101.53398178137653
+      ],
+      "afterGood": 15
+    },
+    {
+      "id": "city-4",
+      "name": "Genua",
+      "kind": "point",
+      "good": 15,
+      "wrong": false,
+      "xy": [
+        509.0735602226721,
+        78.29288006072875
+      ],
+      "afterGood": 16
+    },
+    {
+      "id": "city-2",
+      "name": "Bologna",
+      "kind": "point",
+      "good": 16,
+      "wrong": false,
+      "xy": [
+        572.5781578947368,
+        74.9583496963563
+      ],
+      "afterGood": 17
+    },
+    {
+      "id": "city-1",
+      "name": "Bari",
+      "kind": "point",
+      "good": 17,
+      "wrong": false,
+      "xy": [
+        718.3680414979757,
+        199.8786725708502
+      ],
+      "afterGood": 18
+    },
+    {
+      "id": "city-6",
+      "name": "Napels",
+      "kind": "write",
+      "good": 18,
+      "wrong": false,
+      "xy": null,
+      "afterGood": 19
+    },
+    {
+      "id": "city-5",
+      "name": "Milaan",
+      "kind": "write",
+      "good": 19,
+      "wrong": false,
+      "xy": null,
+      "afterGood": 20
+    },
+    {
+      "id": "city-3",
+      "name": "Florence",
+      "kind": "write",
+      "good": 20,
+      "wrong": false,
+      "xy": null,
+      "afterGood": 21
+    },
+    {
+      "id": "city-1",
+      "name": "Bari",
+      "kind": "write",
+      "good": 21,
+      "wrong": false,
+      "xy": null,
+      "afterGood": 22
+    },
+    {
+      "id": "city-4",
+      "name": "Genua",
+      "kind": "write",
+      "good": 22,
+      "wrong": false,
+      "xy": null,
+      "afterGood": 23
+    },
+    {
+      "id": "city-2",
+      "name": "Bologna",
+      "kind": "write",
+      "good": 23,
+      "wrong": false,
+      "xy": null,
+      "afterGood": 24
+    },
+    {
+      "id": "city-5",
+      "name": "Milaan",
+      "kind": "write",
+      "good": 24,
+      "wrong": false,
+      "xy": null,
+      "afterGood": 25
+    },
+    {
+      "id": "city-2",
+      "name": "Bologna",
+      "kind": "write",
+      "good": 25,
+      "wrong": false,
+      "xy": null,
+      "afterGood": 26
+    },
+    {
+      "id": "city-6",
+      "name": "Napels",
+      "kind": "write",
+      "good": 26,
+      "wrong": false,
+      "xy": null,
+      "afterGood": 27
+    },
+    {
+      "id": "city-4",
+      "name": "Genua",
+      "kind": "write",
+      "good": 27,
+      "wrong": false,
+      "xy": null,
+      "afterGood": 28
+    },
+    {
+      "id": "city-1",
+      "name": "Bari",
+      "kind": "write",
+      "good": 28,
+      "wrong": false,
+      "xy": null,
+      "afterGood": 29
+    },
+    {
+      "id": "city-3",
+      "name": "Florence",
+      "kind": "write",
+      "good": 29,
+      "wrong": false,
+      "xy": null,
+      "afterGood": 30
+    },
+    {
+      "id": "city-5",
+      "name": "Milaan",
+      "kind": "write",
+      "good": 30,
+      "wrong": false,
+      "xy": null,
+      "afterGood": 31
+    },
+    {
+      "id": "city-2",
+      "name": "Bologna",
+      "kind": "write",
+      "good": 31,
+      "wrong": false,
+      "xy": null,
+      "afterGood": 32
+    },
+    {
+      "id": "city-4",
+      "name": "Genua",
+      "kind": "write",
+      "good": 32,
+      "wrong": false,
+      "xy": null,
+      "afterGood": 33
+    },
+    {
+      "id": "city-3",
+      "name": "Florence",
+      "kind": "write",
+      "good": 33,
+      "wrong": false,
+      "xy": null,
+      "afterGood": 34
+    },
+    {
+      "id": "city-6",
+      "name": "Napels",
+      "kind": "write",
+      "good": 34,
+      "wrong": false,
+      "xy": null,
+      "afterGood": 35
+    },
+    {
+      "id": "city-1",
+      "name": "Bari",
+      "kind": "write",
+      "good": 35,
+      "wrong": false,
+      "xy": null,
+      "afterGood": 36
+    },
+    {
+      "id": "city-3",
+      "name": "Florence",
+      "kind": "write",
+      "good": 36,
+      "wrong": false,
+      "xy": null,
+      "afterGood": 37
+    },
+    {
+      "id": "city-1",
+      "name": "Bari",
+      "kind": "write",
+      "good": 37,
+      "wrong": false,
+      "xy": null,
+      "afterGood": 38
+    },
+    {
+      "id": "city-2",
+      "name": "Bologna",
+      "kind": "write",
+      "good": 38,
+      "wrong": false,
+      "xy": null,
+      "afterGood": 39
+    },
+    {
+      "id": "city-6",
+      "name": "Napels",
+      "kind": "write",
+      "good": 39,
+      "wrong": false,
+      "xy": null,
+      "afterGood": 40
+    },
+    {
+      "id": "city-5",
+      "name": "Milaan",
+      "kind": "write",
+      "good": 40,
+      "wrong": false,
+      "xy": null,
+      "afterGood": 41
+    },
+    {
+      "id": "city-4",
+      "name": "Genua",
+      "kind": "write",
+      "good": 41,
+      "wrong": false,
+      "xy": null,
+      "afterGood": 42
+    },
+    {
+      "id": "city-2",
+      "name": "Bologna",
+      "kind": "write",
+      "good": 42,
+      "wrong": false,
+      "xy": null,
+      "afterGood": 43
+    },
+    {
+      "id": "city-5",
+      "name": "Milaan",
+      "kind": "write",
+      "good": 43,
+      "wrong": false,
+      "xy": null,
+      "afterGood": 44
+    },
+    {
+      "id": "city-6",
+      "name": "Napels",
+      "kind": "write",
+      "good": 44,
+      "wrong": false,
+      "xy": null,
+      "afterGood": 45
+    },
+    {
+      "id": "city-3",
+      "name": "Florence",
+      "kind": "write",
+      "good": 45,
+      "wrong": false,
+      "xy": null,
+      "afterGood": 46
+    },
+    {
+      "id": "city-1",
+      "name": "Bari",
+      "kind": "write",
+      "good": 46,
+      "wrong": false,
+      "xy": null,
+      "afterGood": 47
+    },
+    {
+      "id": "city-4",
+      "name": "Genua",
+      "kind": "write",
+      "good": 47,
+      "wrong": false,
+      "xy": null,
+      "afterGood": 48
+    },
+    {
+      "id": "city-1",
+      "name": "Bari",
+      "kind": "write",
+      "good": 48,
+      "wrong": false,
+      "xy": null,
+      "afterGood": 49
+    },
+    {
+      "id": "city-3",
+      "name": "Florence",
+      "kind": "write",
+      "good": 49,
+      "wrong": false,
+      "xy": null,
+      "afterGood": 50
+    },
+    {
+      "id": "city-5",
+      "name": "Milaan",
+      "kind": "write",
+      "good": 50,
+      "wrong": false,
+      "xy": null,
+      "afterGood": 51
+    },
+    {
+      "id": "city-2",
+      "name": "Bologna",
+      "kind": "write",
+      "good": 51,
+      "wrong": false,
+      "xy": null,
+      "afterGood": 52
+    },
+    {
+      "id": "city-4",
+      "name": "Genua",
+      "kind": "write",
+      "good": 52,
+      "wrong": false,
+      "xy": null,
+      "afterGood": 53
+    },
+    {
+      "id": "city-6",
+      "name": "Napels",
+      "kind": "write",
+      "good": 53,
+      "wrong": false,
+      "xy": null,
+      "afterGood": 54
+    },
+    {
+      "id": "city-1",
+      "name": "Bari",
+      "kind": "write",
+      "good": 54,
+      "wrong": false,
+      "xy": null,
+      "afterGood": 55
+    },
+    {
+      "id": "city-5",
+      "name": "Milaan",
+      "kind": "write",
+      "good": 55,
+      "wrong": false,
+      "xy": null,
+      "afterGood": 56
+    },
+    {
+      "id": "city-3",
+      "name": "Florence",
+      "kind": "write",
+      "good": 56,
+      "wrong": false,
+      "xy": null,
+      "afterGood": 57
+    },
+    {
+      "id": "city-4",
+      "name": "Genua",
+      "kind": "write",
+      "good": 57,
+      "wrong": false,
+      "xy": null,
+      "afterGood": 58
+    },
+    {
+      "id": "city-6",
+      "name": "Napels",
+      "kind": "write",
+      "good": 58,
+      "wrong": false,
+      "xy": null,
+      "afterGood": 59
+    },
+    {
+      "id": "city-2",
+      "name": "Bologna",
+      "kind": "write",
+      "good": 59,
+      "wrong": false,
+      "xy": null,
+      "afterGood": 60
+    },
+    {
+      "id": "city-5",
+      "name": "Milaan",
+      "kind": "write",
+      "good": 60,
+      "wrong": false,
+      "xy": null,
+      "afterGood": 61
+    },
+    {
+      "id": "city-4",
+      "name": "Genua",
+      "kind": "write",
+      "good": 61,
+      "wrong": false,
+      "xy": null,
+      "afterGood": 62
+    },
+    {
+      "id": "city-3",
+      "name": "Florence",
+      "kind": "write",
+      "good": 62,
+      "wrong": false,
+      "xy": null,
+      "afterGood": 63
+    },
+    {
+      "id": "city-6",
+      "name": "Napels",
+      "kind": "write",
+      "good": 63,
+      "wrong": false,
+      "xy": null,
+      "afterGood": 64
+    },
+    {
+      "id": "city-1",
+      "name": "Bari",
+      "kind": "write",
+      "good": 64,
+      "wrong": false,
+      "xy": null,
+      "afterGood": 65
+    },
+    {
+      "id": "city-2",
+      "name": "Bologna",
+      "kind": "write",
+      "good": 65,
+      "wrong": false,
+      "xy": null,
+      "afterGood": 66
+    },
+    {
+      "id": "city-5",
+      "name": "Milaan",
+      "kind": "write",
+      "good": 66,
+      "wrong": false,
+      "xy": null,
+      "afterGood": 67
+    },
+    {
+      "id": "city-1",
+      "name": "Bari",
+      "kind": "write",
+      "good": 67,
+      "wrong": false,
+      "xy": null,
+      "afterGood": 68
+    },
+    {
+      "id": "city-6",
+      "name": "Napels",
+      "kind": "write",
+      "good": 68,
+      "wrong": false,
+      "xy": null,
+      "afterGood": 69
+    },
+    {
+      "id": "city-2",
+      "name": "Bologna",
+      "kind": "write",
+      "good": 69,
+      "wrong": false,
+      "xy": null,
+      "afterGood": 70
+    },
+    {
+      "id": "city-3",
+      "name": "Florence",
+      "kind": "write",
+      "good": 70,
+      "wrong": false,
+      "xy": null,
+      "afterGood": 71
+    },
+    {
+      "id": "city-4",
+      "name": "Genua",
+      "kind": "write",
+      "good": 71,
+      "wrong": false,
+      "xy": null,
+      "afterGood": 72
+    },
+    {
+      "id": "city-1",
+      "name": "Bari",
+      "kind": "point",
+      "good": 12,
+      "wrong": false,
+      "xy": [
+        734.414884868421,
+        164.3377171052632
+      ],
+      "afterGood": 13
+    },
+    {
+      "id": "city-2",
+      "name": "Bologna",
+      "kind": "point",
+      "good": 13,
+      "wrong": false,
+      "xy": [
+        572.5781578947368,
+        23.958349696356294
+      ],
+      "afterGood": 14
+    },
+    {
+      "id": "city-5",
+      "name": "Milaan",
+      "kind": "point",
+      "good": 14,
+      "wrong": false,
+      "xy": [
+        516.2696300607288,
+        500.1169392712551
+      ],
+      "afterGood": 15
+    },
+    {
+      "id": "city-6",
+      "name": "Napels",
+      "kind": "point",
+      "good": 15,
+      "wrong": false,
+      "xy": [
+        649.0759256072874,
+        670.9205915991903
+      ],
+      "afterGood": 16
+    },
+    {
+      "id": "city-4",
+      "name": "Genua",
+      "kind": "point",
+      "good": 16,
+      "wrong": false,
+      "xy": [
+        509.0735602226721,
+        539.2928800607287
+      ],
+      "afterGood": 17
+    },
+    {
+      "id": "city-3",
+      "name": "Florence",
+      "kind": "point",
+      "good": 17,
+      "wrong": false,
+      "xy": [
+        570.206616902834,
+        562.5339817813765
+      ],
+      "afterGood": 18
+    },
+    {
+      "id": "city-2",
+      "name": "Bologna",
+      "kind": "write",
+      "good": 18,
+      "wrong": true,
+      "xy": null,
+      "afterGood": 18
+    },
+    {
+      "id": "city-1",
+      "name": "Bari",
+      "kind": "write",
+      "good": 18,
+      "wrong": false,
+      "xy": null,
+      "afterGood": 19
+    },
+    {
+      "id": "city-4",
+      "name": "Genua",
+      "kind": "write",
+      "good": 19,
+      "wrong": false,
+      "xy": null,
+      "afterGood": 20
+    },
+    {
+      "id": "city-6",
+      "name": "Napels",
+      "kind": "write",
+      "good": 20,
+      "wrong": false,
+      "xy": null,
+      "afterGood": 21
+    },
+    {
+      "id": "city-3",
+      "name": "Florence",
+      "kind": "write",
+      "good": 21,
+      "wrong": false,
+      "xy": null,
+      "afterGood": 22
+    },
+    {
+      "id": "city-5",
+      "name": "Milaan",
+      "kind": "write",
+      "good": 22,
+      "wrong": false,
+      "xy": null,
+      "afterGood": 23
+    }
+  ],
+  "errors": [],
+  "network": [],
+  "consoleErrors": [],
+  "status": "PASS",
+  "failure": null
+}

@@ -1,0 +1,23 @@
+{
+  "status": "REWORK",
+  "browser": "156.0.8078.80",
+  "widths": [
+    1500,
+    768,
+    320
+  ],
+  "defects": [
+    {
+      "id": "NAV-CONTINUITY",
+      "width": 1500
+    },
+    {
+      "id": "NAV-CONTINUITY",
+      "width": 768
+    },
+    {
+      "id": "NAV-CONTINUITY",
+      "width": 320
+    }
+  ]
+}

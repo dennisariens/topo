@@ -1,0 +1,70 @@
+{
+  "target": "2c52f121b853d1d8a46555d725ef79c97e0bf85b",
+  "htmlSHA256": "352ddd742436ac4f5a5a8a82374f742788952219e42b47d87d83536319183d53",
+  "browser": "27.2",
+  "records": [
+    {
+      "w": 1500,
+      "fixture": "Injected all11 stage3/goldAt1 for presentation only; not naturally earned play",
+      "bounds": {
+        "x": 798.5,
+        "y": 553.71875,
+        "width": 320,
+        "height": 320
+      },
+      "image": {
+        "natural": [
+          480,
+          480
+        ],
+        "rect": [
+          320,
+          320
+        ],
+        "dpr": 2
+      }
+    },
+    {
+      "w": 768,
+      "fixture": "Injected all11 stage3/goldAt1 for presentation only; not naturally earned play",
+      "bounds": {
+        "x": 432.5,
+        "y": 548.78125,
+        "width": 270.5,
+        "height": 270.5
+      },
+      "image": {
+        "natural": [
+          480,
+          480
+        ],
+        "rect": [
+          270.5,
+          270.5
+        ],
+        "dpr": 2
+      }
+    },
+    {
+      "w": 320,
+      "fixture": "Injected all11 stage3/goldAt1 for presentation only; not naturally earned play",
+      "bounds": {
+        "x": 39,
+        "y": 383.578125,
+        "width": 242,
+        "height": 242
+      },
+      "image": {
+        "natural": [
+          480,
+          480
+        ],
+        "rect": [
+          242,
+          242
+        ],
+        "dpr": 2
+      }
+    }
+  ]
+}

@@ -1,0 +1,1002 @@
+{
+  "target": "2c52f121b853d1d8a46555d725ef79c97e0bf85b",
+  "htmlSHA256": "352ddd742436ac4f5a5a8a82374f742788952219e42b47d87d83536319183d53",
+  "role": "Independent Hermes actual file:// execution; fixture rows explicitly labelled",
+  "browser": "27.2",
+  "engine": "webkit",
+  "results": [
+    {
+      "w": 1500,
+      "h": 1000,
+      "initial": {
+        "items": 45,
+        "chapters": 11,
+        "gold": 0,
+        "overflow": false
+      },
+      "folios": [
+        {
+          "natural": [
+            1086,
+            1448
+          ],
+          "paper": [
+            543,
+            724
+          ],
+          "page": [
+            543,
+            724
+          ],
+          "dpr": 2
+        },
+        {
+          "natural": [
+            1086,
+            1448
+          ],
+          "paper": [
+            543,
+            724
+          ],
+          "page": [
+            543,
+            724
+          ],
+          "dpr": 2
+        },
+        {
+          "natural": [
+            1086,
+            1448
+          ],
+          "paper": [
+            543,
+            724
+          ],
+          "page": [
+            543,
+            724
+          ],
+          "dpr": 2
+        },
+        {
+          "natural": [
+            1086,
+            1448
+          ],
+          "paper": [
+            543,
+            724
+          ],
+          "page": [
+            543,
+            724
+          ],
+          "dpr": 2
+        }
+      ],
+      "DPR2": true,
+      "bookPreservesDraftCaretQuestionSave": true,
+      "mapStyleContinuity": true,
+      "fixtures": [
+        {
+          "label": "Injected canonical projection fixture, NOT real play",
+          "stage": 2,
+          "gold": 0,
+          "trips": 0,
+          "all": false,
+          "stamps": 0,
+          "venice": 0
+        },
+        {
+          "label": "Injected canonical projection fixture, NOT real play",
+          "stage": 3,
+          "gold": 0,
+          "trips": 2,
+          "all": false,
+          "stamps": 1,
+          "venice": 0
+        },
+        {
+          "label": "Injected canonical projection fixture, NOT real play",
+          "stage": 3,
+          "gold": 1,
+          "trips": 3,
+          "all": false,
+          "stamps": 1,
+          "venice": 1
+        },
+        {
+          "label": "Injected canonical projection fixture, NOT real play",
+          "stage": 3,
+          "gold": 11,
+          "trips": 3,
+          "all": true,
+          "stamps": 11,
+          "venice": 1,
+          "finalGoldCSS": 320
+        }
+      ],
+      "primaryNavigationPreserves": false
+    },
+    {
+      "w": 768,
+      "h": 1024,
+      "initial": {
+        "items": 45,
+        "chapters": 11,
+        "gold": 0,
+        "overflow": false
+      },
+      "folios": [
+        {
+          "natural": [
+            1086,
+            1448
+          ],
+          "paper": [
+            366.5,
+            488.65625
+          ],
+          "page": [
+            366.5,
+            488.65625
+          ],
+          "dpr": 2
+        },
+        {
+          "natural": [
+            1086,
+            1448
+          ],
+          "paper": [
+            366.5,
+            488.65625
+          ],
+          "page": [
+            366.5,
+            488.65625
+          ],
+          "dpr": 2
+        },
+        {
+          "natural": [
+            1086,
+            1448
+          ],
+          "paper": [
+            366.5,
+            488.65625
+          ],
+          "page": [
+            366.5,
+            488.65625
+          ],
+          "dpr": 2
+        },
+        {
+          "natural": [
+            1086,
+            1448
+          ],
+          "paper": [
+            366.5,
+            488.65625
+          ],
+          "page": [
+            366.5,
+            488.65625
+          ],
+          "dpr": 2
+        }
+      ],
+      "DPR2": true,
+      "bookPreservesDraftCaretQuestionSave": true,
+      "mapStyleContinuity": true,
+      "fixtures": [
+        {
+          "label": "Injected canonical projection fixture, NOT real play",
+          "stage": 2,
+          "gold": 0,
+          "trips": 0,
+          "all": false,
+          "stamps": 0,
+          "venice": 0
+        },
+        {
+          "label": "Injected canonical projection fixture, NOT real play",
+          "stage": 3,
+          "gold": 0,
+          "trips": 2,
+          "all": false,
+          "stamps": 1,
+          "venice": 0
+        },
+        {
+          "label": "Injected canonical projection fixture, NOT real play",
+          "stage": 3,
+          "gold": 1,
+          "trips": 3,
+          "all": false,
+          "stamps": 1,
+          "venice": 1
+        },
+        {
+          "label": "Injected canonical projection fixture, NOT real play",
+          "stage": 3,
+          "gold": 11,
+          "trips": 3,
+          "all": true,
+          "stamps": 11,
+          "venice": 1,
+          "finalGoldCSS": 270.5
+        }
+      ],
+      "primaryNavigationPreserves": false
+    },
+    {
+      "w": 320,
+      "h": 740,
+      "initial": {
+        "items": 45,
+        "chapters": 11,
+        "gold": 0,
+        "overflow": false
+      },
+      "folios": [
+        {
+          "natural": [
+            1086,
+            1448
+          ],
+          "paper": [
+            302,
+            402.65625
+          ],
+          "page": [
+            302,
+            402.65625
+          ],
+          "dpr": 2
+        },
+        {
+          "natural": [
+            1086,
+            1448
+          ],
+          "paper": [
+            302,
+            402.65625
+          ],
+          "page": [
+            302,
+            402.65625
+          ],
+          "dpr": 2
+        }
+      ],
+      "DPR2": true,
+      "bookPreservesDraftCaretQuestionSave": true,
+      "mapStyleContinuity": true,
+      "fixtures": [
+        {
+          "label": "Injected canonical projection fixture, NOT real play",
+          "stage": 2,
+          "gold": 0,
+          "trips": 0,
+          "all": false,
+          "stamps": 0,
+          "venice": 0
+        },
+        {
+          "label": "Injected canonical projection fixture, NOT real play",
+          "stage": 3,
+          "gold": 0,
+          "trips": 2,
+          "all": false,
+          "stamps": 1,
+          "venice": 0
+        },
+        {
+          "label": "Injected canonical projection fixture, NOT real play",
+          "stage": 3,
+          "gold": 1,
+          "trips": 3,
+          "all": false,
+          "stamps": 1,
+          "venice": 1
+        },
+        {
+          "label": "Injected canonical projection fixture, NOT real play",
+          "stage": 3,
+          "gold": 11,
+          "trips": 3,
+          "all": true,
+          "stamps": 11,
+          "venice": 1,
+          "finalGoldCSS": 242
+        }
+      ],
+      "primaryNavigationPreserves": false
+    }
+  ],
+  "defects": [
+    {
+      "id": "NAV-CONTINUITY",
+      "width": 1500,
+      "reproduction": "Fresh Oefenen→Namen schrijven; type Navigatieconcept and select3..10 backward; click Reis then Oefenen",
+      "before": {
+        "question": "city-3",
+        "mode": "write",
+        "questionMode": "write",
+        "answered": false,
+        "progress": {
+          "schema": 3,
+          "good": 0,
+          "pizzas": 0,
+          "slices": 0,
+          "trips": 0,
+          "mistakes": [],
+          "route": {
+            "schema": 2,
+            "chapters": {
+              "city1": {
+                "stage": 0,
+                "completedAt": 0,
+                "goldAt": 0,
+                "nextReviewAt": 0,
+                "reviews": 0
+              },
+              "city2": {
+                "stage": 0,
+                "completedAt": 0,
+                "goldAt": 0,
+                "nextReviewAt": 0,
+                "reviews": 0
+              },
+              "city3": {
+                "stage": 0,
+                "completedAt": 0,
+                "goldAt": 0,
+                "nextReviewAt": 0,
+                "reviews": 0
+              },
+              "city4": {
+                "stage": 0,
+                "completedAt": 0,
+                "goldAt": 0,
+                "nextReviewAt": 0,
+                "reviews": 0
+              },
+              "islands": {
+                "stage": 0,
+                "completedAt": 0,
+                "goldAt": 0,
+                "nextReviewAt": 0,
+                "reviews": 0
+              },
+              "mountains": {
+                "stage": 0,
+                "completedAt": 0,
+                "goldAt": 0,
+                "nextReviewAt": 0,
+                "reviews": 0
+              },
+              "volcanoes": {
+                "stage": 0,
+                "completedAt": 0,
+                "goldAt": 0,
+                "nextReviewAt": 0,
+                "reviews": 0
+              },
+              "regions": {
+                "stage": 0,
+                "completedAt": 0,
+                "goldAt": 0,
+                "nextReviewAt": 0,
+                "reviews": 0
+              },
+              "countries": {
+                "stage": 0,
+                "completedAt": 0,
+                "goldAt": 0,
+                "nextReviewAt": 0,
+                "reviews": 0
+              },
+              "seas": {
+                "stage": 0,
+                "completedAt": 0,
+                "goldAt": 0,
+                "nextReviewAt": 0,
+                "reviews": 0
+              },
+              "rivers": {
+                "stage": 0,
+                "completedAt": 0,
+                "goldAt": 0,
+                "nextReviewAt": 0,
+                "reviews": 0
+              }
+            },
+            "items": {},
+            "rewardTokens": [],
+            "active": null
+          },
+          "daily": {
+            "date": "2026-11-03",
+            "correct": 0
+          }
+        },
+        "disk": "{\"schema\":3,\"mistakes\":[],\"good\":0,\"pizzas\":0,\"slices\":0,\"trips\":0,\"route\":{\"schema\":2,\"chapters\":{\"city1\":{\"stage\":0,\"completedAt\":0,\"goldAt\":0,\"nextReviewAt\":0,\"reviews\":0},\"city2\":{\"stage\":0,\"completedAt\":0,\"goldAt\":0,\"nextReviewAt\":0,\"reviews\":0},\"city3\":{\"stage\":0,\"completedAt\":0,\"goldAt\":0,\"nextReviewAt\":0,\"reviews\":0},\"city4\":{\"stage\":0,\"completedAt\":0,\"goldAt\":0,\"nextReviewAt\":0,\"reviews\":0},\"islands\":{\"stage\":0,\"completedAt\":0,\"goldAt\":0,\"nextReviewAt\":0,\"reviews\":0},\"mountains\":{\"stage\":0,\"completedAt\":0,\"goldAt\":0,\"nextReviewAt\":0,\"reviews\":0},\"volcanoes\":{\"stage\":0,\"completedAt\":0,\"goldAt\":0,\"nextReviewAt\":0,\"reviews\":0},\"regions\":{\"stage\":0,\"completedAt\":0,\"goldAt\":0,\"nextReviewAt\":0,\"reviews\":0},\"countries\":{\"stage\":0,\"completedAt\":0,\"goldAt\":0,\"nextReviewAt\":0,\"reviews\":0},\"seas\":{\"stage\":0,\"completedAt\":0,\"goldAt\":0,\"nextReviewAt\":0,\"reviews\":0},\"rivers\":{\"stage\":0,\"completedAt\":0,\"goldAt\":0,\"nextReviewAt\":0,\"reviews\":0}},\"items\":{},\"rewardTokens\":[],\"active\":null},\"daily\":{\"date\":\"2026-11-03\",\"correct\":0}}",
+        "draft": "Navigatieconcept",
+        "caret": [
+          3,
+          10,
+          "backward"
+        ]
+      },
+      "after": {
+        "mode": "learn",
+        "questionMode": "write",
+        "answered": true,
+        "progress": {
+          "schema": 3,
+          "good": 0,
+          "pizzas": 0,
+          "slices": 0,
+          "trips": 0,
+          "mistakes": [],
+          "route": {
+            "schema": 2,
+            "chapters": {
+              "city1": {
+                "stage": 0,
+                "completedAt": 0,
+                "goldAt": 0,
+                "nextReviewAt": 0,
+                "reviews": 0
+              },
+              "city2": {
+                "stage": 0,
+                "completedAt": 0,
+                "goldAt": 0,
+                "nextReviewAt": 0,
+                "reviews": 0
+              },
+              "city3": {
+                "stage": 0,
+                "completedAt": 0,
+                "goldAt": 0,
+                "nextReviewAt": 0,
+                "reviews": 0
+              },
+              "city4": {
+                "stage": 0,
+                "completedAt": 0,
+                "goldAt": 0,
+                "nextReviewAt": 0,
+                "reviews": 0
+              },
+              "islands": {
+                "stage": 0,
+                "completedAt": 0,
+                "goldAt": 0,
+                "nextReviewAt": 0,
+                "reviews": 0
+              },
+              "mountains": {
+                "stage": 0,
+                "completedAt": 0,
+                "goldAt": 0,
+                "nextReviewAt": 0,
+                "reviews": 0
+              },
+              "volcanoes": {
+                "stage": 0,
+                "completedAt": 0,
+                "goldAt": 0,
+                "nextReviewAt": 0,
+                "reviews": 0
+              },
+              "regions": {
+                "stage": 0,
+                "completedAt": 0,
+                "goldAt": 0,
+                "nextReviewAt": 0,
+                "reviews": 0
+              },
+              "countries": {
+                "stage": 0,
+                "completedAt": 0,
+                "goldAt": 0,
+                "nextReviewAt": 0,
+                "reviews": 0
+              },
+              "seas": {
+                "stage": 0,
+                "completedAt": 0,
+                "goldAt": 0,
+                "nextReviewAt": 0,
+                "reviews": 0
+              },
+              "rivers": {
+                "stage": 0,
+                "completedAt": 0,
+                "goldAt": 0,
+                "nextReviewAt": 0,
+                "reviews": 0
+              }
+            },
+            "items": {},
+            "rewardTokens": [],
+            "active": null
+          },
+          "daily": {
+            "date": "2026-11-03",
+            "correct": 0
+          }
+        },
+        "disk": "{\"schema\":3,\"mistakes\":[],\"good\":0,\"pizzas\":0,\"slices\":0,\"trips\":0,\"route\":{\"schema\":2,\"chapters\":{\"city1\":{\"stage\":0,\"completedAt\":0,\"goldAt\":0,\"nextReviewAt\":0,\"reviews\":0},\"city2\":{\"stage\":0,\"completedAt\":0,\"goldAt\":0,\"nextReviewAt\":0,\"reviews\":0},\"city3\":{\"stage\":0,\"completedAt\":0,\"goldAt\":0,\"nextReviewAt\":0,\"reviews\":0},\"city4\":{\"stage\":0,\"completedAt\":0,\"goldAt\":0,\"nextReviewAt\":0,\"reviews\":0},\"islands\":{\"stage\":0,\"completedAt\":0,\"goldAt\":0,\"nextReviewAt\":0,\"reviews\":0},\"mountains\":{\"stage\":0,\"completedAt\":0,\"goldAt\":0,\"nextReviewAt\":0,\"reviews\":0},\"volcanoes\":{\"stage\":0,\"completedAt\":0,\"goldAt\":0,\"nextReviewAt\":0,\"reviews\":0},\"regions\":{\"stage\":0,\"completedAt\":0,\"goldAt\":0,\"nextReviewAt\":0,\"reviews\":0},\"countries\":{\"stage\":0,\"completedAt\":0,\"goldAt\":0,\"nextReviewAt\":0,\"reviews\":0},\"seas\":{\"stage\":0,\"completedAt\":0,\"goldAt\":0,\"nextReviewAt\":0,\"reviews\":0},\"rivers\":{\"stage\":0,\"completedAt\":0,\"goldAt\":0,\"nextReviewAt\":0,\"reviews\":0}},\"items\":{},\"rewardTokens\":[],\"active\":null},\"daily\":{\"date\":\"2026-11-03\",\"correct\":0}}",
+        "draft": "Navigatieconcept",
+        "caret": [
+          3,
+          10,
+          "backward"
+        ]
+      }
+    },
+    {
+      "id": "NAV-CONTINUITY",
+      "width": 768,
+      "reproduction": "Fresh Oefenen→Namen schrijven; type Navigatieconcept and select3..10 backward; click Reis then Oefenen",
+      "before": {
+        "question": "city-6",
+        "mode": "write",
+        "questionMode": "write",
+        "answered": false,
+        "progress": {
+          "schema": 3,
+          "good": 0,
+          "pizzas": 0,
+          "slices": 0,
+          "trips": 0,
+          "mistakes": [],
+          "route": {
+            "schema": 2,
+            "chapters": {
+              "city1": {
+                "stage": 0,
+                "completedAt": 0,
+                "goldAt": 0,
+                "nextReviewAt": 0,
+                "reviews": 0
+              },
+              "city2": {
+                "stage": 0,
+                "completedAt": 0,
+                "goldAt": 0,
+                "nextReviewAt": 0,
+                "reviews": 0
+              },
+              "city3": {
+                "stage": 0,
+                "completedAt": 0,
+                "goldAt": 0,
+                "nextReviewAt": 0,
+                "reviews": 0
+              },
+              "city4": {
+                "stage": 0,
+                "completedAt": 0,
+                "goldAt": 0,
+                "nextReviewAt": 0,
+                "reviews": 0
+              },
+              "islands": {
+                "stage": 0,
+                "completedAt": 0,
+                "goldAt": 0,
+                "nextReviewAt": 0,
+                "reviews": 0
+              },
+              "mountains": {
+                "stage": 0,
+                "completedAt": 0,
+                "goldAt": 0,
+                "nextReviewAt": 0,
+                "reviews": 0
+              },
+              "volcanoes": {
+                "stage": 0,
+                "completedAt": 0,
+                "goldAt": 0,
+                "nextReviewAt": 0,
+                "reviews": 0
+              },
+              "regions": {
+                "stage": 0,
+                "completedAt": 0,
+                "goldAt": 0,
+                "nextReviewAt": 0,
+                "reviews": 0
+              },
+              "countries": {
+                "stage": 0,
+                "completedAt": 0,
+                "goldAt": 0,
+                "nextReviewAt": 0,
+                "reviews": 0
+              },
+              "seas": {
+                "stage": 0,
+                "completedAt": 0,
+                "goldAt": 0,
+                "nextReviewAt": 0,
+                "reviews": 0
+              },
+              "rivers": {
+                "stage": 0,
+                "completedAt": 0,
+                "goldAt": 0,
+                "nextReviewAt": 0,
+                "reviews": 0
+              }
+            },
+            "items": {},
+            "rewardTokens": [],
+            "active": null
+          },
+          "daily": {
+            "date": "2026-11-03",
+            "correct": 0
+          }
+        },
+        "disk": "{\"schema\":3,\"mistakes\":[],\"good\":0,\"pizzas\":0,\"slices\":0,\"trips\":0,\"route\":{\"schema\":2,\"chapters\":{\"city1\":{\"stage\":0,\"completedAt\":0,\"goldAt\":0,\"nextReviewAt\":0,\"reviews\":0},\"city2\":{\"stage\":0,\"completedAt\":0,\"goldAt\":0,\"nextReviewAt\":0,\"reviews\":0},\"city3\":{\"stage\":0,\"completedAt\":0,\"goldAt\":0,\"nextReviewAt\":0,\"reviews\":0},\"city4\":{\"stage\":0,\"completedAt\":0,\"goldAt\":0,\"nextReviewAt\":0,\"reviews\":0},\"islands\":{\"stage\":0,\"completedAt\":0,\"goldAt\":0,\"nextReviewAt\":0,\"reviews\":0},\"mountains\":{\"stage\":0,\"completedAt\":0,\"goldAt\":0,\"nextReviewAt\":0,\"reviews\":0},\"volcanoes\":{\"stage\":0,\"completedAt\":0,\"goldAt\":0,\"nextReviewAt\":0,\"reviews\":0},\"regions\":{\"stage\":0,\"completedAt\":0,\"goldAt\":0,\"nextReviewAt\":0,\"reviews\":0},\"countries\":{\"stage\":0,\"completedAt\":0,\"goldAt\":0,\"nextReviewAt\":0,\"reviews\":0},\"seas\":{\"stage\":0,\"completedAt\":0,\"goldAt\":0,\"nextReviewAt\":0,\"reviews\":0},\"rivers\":{\"stage\":0,\"completedAt\":0,\"goldAt\":0,\"nextReviewAt\":0,\"reviews\":0}},\"items\":{},\"rewardTokens\":[],\"active\":null},\"daily\":{\"date\":\"2026-11-03\",\"correct\":0}}",
+        "draft": "Navigatieconcept",
+        "caret": [
+          3,
+          10,
+          "backward"
+        ]
+      },
+      "after": {
+        "mode": "learn",
+        "questionMode": "write",
+        "answered": true,
+        "progress": {
+          "schema": 3,
+          "good": 0,
+          "pizzas": 0,
+          "slices": 0,
+          "trips": 0,
+          "mistakes": [],
+          "route": {
+            "schema": 2,
+            "chapters": {
+              "city1": {
+                "stage": 0,
+                "completedAt": 0,
+                "goldAt": 0,
+                "nextReviewAt": 0,
+                "reviews": 0
+              },
+              "city2": {
+                "stage": 0,
+                "completedAt": 0,
+                "goldAt": 0,
+                "nextReviewAt": 0,
+                "reviews": 0
+              },
+              "city3": {
+                "stage": 0,
+                "completedAt": 0,
+                "goldAt": 0,
+                "nextReviewAt": 0,
+                "reviews": 0
+              },
+              "city4": {
+                "stage": 0,
+                "completedAt": 0,
+                "goldAt": 0,
+                "nextReviewAt": 0,
+                "reviews": 0
+              },
+              "islands": {
+                "stage": 0,
+                "completedAt": 0,
+                "goldAt": 0,
+                "nextReviewAt": 0,
+                "reviews": 0
+              },
+              "mountains": {
+                "stage": 0,
+                "completedAt": 0,
+                "goldAt": 0,
+                "nextReviewAt": 0,
+                "reviews": 0
+              },
+              "volcanoes": {
+                "stage": 0,
+                "completedAt": 0,
+                "goldAt": 0,
+                "nextReviewAt": 0,
+                "reviews": 0
+              },
+              "regions": {
+                "stage": 0,
+                "completedAt": 0,
+                "goldAt": 0,
+                "nextReviewAt": 0,
+                "reviews": 0
+              },
+              "countries": {
+                "stage": 0,
+                "completedAt": 0,
+                "goldAt": 0,
+                "nextReviewAt": 0,
+                "reviews": 0
+              },
+              "seas": {
+                "stage": 0,
+                "completedAt": 0,
+                "goldAt": 0,
+                "nextReviewAt": 0,
+                "reviews": 0
+              },
+              "rivers": {
+                "stage": 0,
+                "completedAt": 0,
+                "goldAt": 0,
+                "nextReviewAt": 0,
+                "reviews": 0
+              }
+            },
+            "items": {},
+            "rewardTokens": [],
+            "active": null
+          },
+          "daily": {
+            "date": "2026-11-03",
+            "correct": 0
+          }
+        },
+        "disk": "{\"schema\":3,\"mistakes\":[],\"good\":0,\"pizzas\":0,\"slices\":0,\"trips\":0,\"route\":{\"schema\":2,\"chapters\":{\"city1\":{\"stage\":0,\"completedAt\":0,\"goldAt\":0,\"nextReviewAt\":0,\"reviews\":0},\"city2\":{\"stage\":0,\"completedAt\":0,\"goldAt\":0,\"nextReviewAt\":0,\"reviews\":0},\"city3\":{\"stage\":0,\"completedAt\":0,\"goldAt\":0,\"nextReviewAt\":0,\"reviews\":0},\"city4\":{\"stage\":0,\"completedAt\":0,\"goldAt\":0,\"nextReviewAt\":0,\"reviews\":0},\"islands\":{\"stage\":0,\"completedAt\":0,\"goldAt\":0,\"nextReviewAt\":0,\"reviews\":0},\"mountains\":{\"stage\":0,\"completedAt\":0,\"goldAt\":0,\"nextReviewAt\":0,\"reviews\":0},\"volcanoes\":{\"stage\":0,\"completedAt\":0,\"goldAt\":0,\"nextReviewAt\":0,\"reviews\":0},\"regions\":{\"stage\":0,\"completedAt\":0,\"goldAt\":0,\"nextReviewAt\":0,\"reviews\":0},\"countries\":{\"stage\":0,\"completedAt\":0,\"goldAt\":0,\"nextReviewAt\":0,\"reviews\":0},\"seas\":{\"stage\":0,\"completedAt\":0,\"goldAt\":0,\"nextReviewAt\":0,\"reviews\":0},\"rivers\":{\"stage\":0,\"completedAt\":0,\"goldAt\":0,\"nextReviewAt\":0,\"reviews\":0}},\"items\":{},\"rewardTokens\":[],\"active\":null},\"daily\":{\"date\":\"2026-11-03\",\"correct\":0}}",
+        "draft": "Navigatieconcept",
+        "caret": [
+          3,
+          10,
+          "backward"
+        ]
+      }
+    },
+    {
+      "id": "NAV-CONTINUITY",
+      "width": 320,
+      "reproduction": "Fresh Oefenen→Namen schrijven; type Navigatieconcept and select3..10 backward; click Reis then Oefenen",
+      "before": {
+        "question": "city-5",
+        "mode": "write",
+        "questionMode": "write",
+        "answered": false,
+        "progress": {
+          "schema": 3,
+          "good": 0,
+          "pizzas": 0,
+          "slices": 0,
+          "trips": 0,
+          "mistakes": [],
+          "route": {
+            "schema": 2,
+            "chapters": {
+              "city1": {
+                "stage": 0,
+                "completedAt": 0,
+                "goldAt": 0,
+                "nextReviewAt": 0,
+                "reviews": 0
+              },
+              "city2": {
+                "stage": 0,
+                "completedAt": 0,
+                "goldAt": 0,
+                "nextReviewAt": 0,
+                "reviews": 0
+              },
+              "city3": {
+                "stage": 0,
+                "completedAt": 0,
+                "goldAt": 0,
+                "nextReviewAt": 0,
+                "reviews": 0
+              },
+              "city4": {
+                "stage": 0,
+                "completedAt": 0,
+                "goldAt": 0,
+                "nextReviewAt": 0,
+                "reviews": 0
+              },
+              "islands": {
+                "stage": 0,
+                "completedAt": 0,
+                "goldAt": 0,
+                "nextReviewAt": 0,
+                "reviews": 0
+              },
+              "mountains": {
+                "stage": 0,
+                "completedAt": 0,
+                "goldAt": 0,
+                "nextReviewAt": 0,
+                "reviews": 0
+              },
+              "volcanoes": {
+                "stage": 0,
+                "completedAt": 0,
+                "goldAt": 0,
+                "nextReviewAt": 0,
+                "reviews": 0
+              },
+              "regions": {
+                "stage": 0,
+                "completedAt": 0,
+                "goldAt": 0,
+                "nextReviewAt": 0,
+                "reviews": 0
+              },
+              "countries": {
+                "stage": 0,
+                "completedAt": 0,
+                "goldAt": 0,
+                "nextReviewAt": 0,
+                "reviews": 0
+              },
+              "seas": {
+                "stage": 0,
+                "completedAt": 0,
+                "goldAt": 0,
+                "nextReviewAt": 0,
+                "reviews": 0
+              },
+              "rivers": {
+                "stage": 0,
+                "completedAt": 0,
+                "goldAt": 0,
+                "nextReviewAt": 0,
+                "reviews": 0
+              }
+            },
+            "items": {},
+            "rewardTokens": [],
+            "active": null
+          },
+          "daily": {
+            "date": "2026-11-03",
+            "correct": 0
+          }
+        },
+        "disk": "{\"schema\":3,\"mistakes\":[],\"good\":0,\"pizzas\":0,\"slices\":0,\"trips\":0,\"route\":{\"schema\":2,\"chapters\":{\"city1\":{\"stage\":0,\"completedAt\":0,\"goldAt\":0,\"nextReviewAt\":0,\"reviews\":0},\"city2\":{\"stage\":0,\"completedAt\":0,\"goldAt\":0,\"nextReviewAt\":0,\"reviews\":0},\"city3\":{\"stage\":0,\"completedAt\":0,\"goldAt\":0,\"nextReviewAt\":0,\"reviews\":0},\"city4\":{\"stage\":0,\"completedAt\":0,\"goldAt\":0,\"nextReviewAt\":0,\"reviews\":0},\"islands\":{\"stage\":0,\"completedAt\":0,\"goldAt\":0,\"nextReviewAt\":0,\"reviews\":0},\"mountains\":{\"stage\":0,\"completedAt\":0,\"goldAt\":0,\"nextReviewAt\":0,\"reviews\":0},\"volcanoes\":{\"stage\":0,\"completedAt\":0,\"goldAt\":0,\"nextReviewAt\":0,\"reviews\":0},\"regions\":{\"stage\":0,\"completedAt\":0,\"goldAt\":0,\"nextReviewAt\":0,\"reviews\":0},\"countries\":{\"stage\":0,\"completedAt\":0,\"goldAt\":0,\"nextReviewAt\":0,\"reviews\":0},\"seas\":{\"stage\":0,\"completedAt\":0,\"goldAt\":0,\"nextReviewAt\":0,\"reviews\":0},\"rivers\":{\"stage\":0,\"completedAt\":0,\"goldAt\":0,\"nextReviewAt\":0,\"reviews\":0}},\"items\":{},\"rewardTokens\":[],\"active\":null},\"daily\":{\"date\":\"2026-11-03\",\"correct\":0}}",
+        "draft": "Navigatieconcept",
+        "caret": [
+          3,
+          10,
+          "backward"
+        ]
+      },
+      "after": {
+        "mode": "learn",
+        "questionMode": "write",
+        "answered": true,
+        "progress": {
+          "schema": 3,
+          "good": 0,
+          "pizzas": 0,
+          "slices": 0,
+          "trips": 0,
+          "mistakes": [],
+          "route": {
+            "schema": 2,
+            "chapters": {
+              "city1": {
+                "stage": 0,
+                "completedAt": 0,
+                "goldAt": 0,
+                "nextReviewAt": 0,
+                "reviews": 0
+              },
+              "city2": {
+                "stage": 0,
+                "completedAt": 0,
+                "goldAt": 0,
+                "nextReviewAt": 0,
+                "reviews": 0
+              },
+              "city3": {
+                "stage": 0,
+                "completedAt": 0,
+                "goldAt": 0,
+                "nextReviewAt": 0,
+                "reviews": 0
+              },
+              "city4": {
+                "stage": 0,
+                "completedAt": 0,
+                "goldAt": 0,
+                "nextReviewAt": 0,
+                "reviews": 0
+              },
+              "islands": {
+                "stage": 0,
+                "completedAt": 0,
+                "goldAt": 0,
+                "nextReviewAt": 0,
+                "reviews": 0
+              },
+              "mountains": {
+                "stage": 0,
+                "completedAt": 0,
+                "goldAt": 0,
+                "nextReviewAt": 0,
+                "reviews": 0
+              },
+              "volcanoes": {
+                "stage": 0,
+                "completedAt": 0,
+                "goldAt": 0,
+                "nextReviewAt": 0,
+                "reviews": 0
+              },
+              "regions": {
+                "stage": 0,
+                "completedAt": 0,
+                "goldAt": 0,
+                "nextReviewAt": 0,
+                "reviews": 0
+              },
+              "countries": {
+                "stage": 0,
+                "completedAt": 0,
+                "goldAt": 0,
+                "nextReviewAt": 0,
+                "reviews": 0
+              },
+              "seas": {
+                "stage": 0,
+                "completedAt": 0,
+                "goldAt": 0,
+                "nextReviewAt": 0,
+                "reviews": 0
+              },
+              "rivers": {
+                "stage": 0,
+                "completedAt": 0,
+                "goldAt": 0,
+                "nextReviewAt": 0,
+                "reviews": 0
+              }
+            },
+            "items": {},
+            "rewardTokens": [],
+            "active": null
+          },
+          "daily": {
+            "date": "2026-11-03",
+            "correct": 0
+          }
+        },
+        "disk": "{\"schema\":3,\"mistakes\":[],\"good\":0,\"pizzas\":0,\"slices\":0,\"trips\":0,\"route\":{\"schema\":2,\"chapters\":{\"city1\":{\"stage\":0,\"completedAt\":0,\"goldAt\":0,\"nextReviewAt\":0,\"reviews\":0},\"city2\":{\"stage\":0,\"completedAt\":0,\"goldAt\":0,\"nextReviewAt\":0,\"reviews\":0},\"city3\":{\"stage\":0,\"completedAt\":0,\"goldAt\":0,\"nextReviewAt\":0,\"reviews\":0},\"city4\":{\"stage\":0,\"completedAt\":0,\"goldAt\":0,\"nextReviewAt\":0,\"reviews\":0},\"islands\":{\"stage\":0,\"completedAt\":0,\"goldAt\":0,\"nextReviewAt\":0,\"reviews\":0},\"mountains\":{\"stage\":0,\"completedAt\":0,\"goldAt\":0,\"nextReviewAt\":0,\"reviews\":0},\"volcanoes\":{\"stage\":0,\"completedAt\":0,\"goldAt\":0,\"nextReviewAt\":0,\"reviews\":0},\"regions\":{\"stage\":0,\"completedAt\":0,\"goldAt\":0,\"nextReviewAt\":0,\"reviews\":0},\"countries\":{\"stage\":0,\"completedAt\":0,\"goldAt\":0,\"nextReviewAt\":0,\"reviews\":0},\"seas\":{\"stage\":0,\"completedAt\":0,\"goldAt\":0,\"nextReviewAt\":0,\"reviews\":0},\"rivers\":{\"stage\":0,\"completedAt\":0,\"goldAt\":0,\"nextReviewAt\":0,\"reviews\":0}},\"items\":{},\"rewardTokens\":[],\"active\":null},\"daily\":{\"date\":\"2026-11-03\",\"correct\":0}}",
+        "draft": "Navigatieconcept",
+        "caret": [
+          3,
+          10,
+          "backward"
+        ]
+      }
+    }
+  ],
+  "errors": [],
+  "network": [],
+  "consoleErrors": [],
+  "status": "REWORK"
+}

@@ -1,0 +1,54 @@
+{
+  "status": "FAIL",
+  "browser": "156.0.8078.80",
+  "records": 4,
+  "acceptedAnswers": 72,
+  "failure": "locator.click: Timeout 12000ms exceeded.\nCall log:\n  - waiting for locator('#resetAll')\n    - locator resolved to <button id=\"resetAll\" class=\"reset\">Reset alle voortgang en fouten</button>\n  - attempting click action\n    2 × waiting for element to be visible, enabled and stable\n      - element is not visible\n    - retrying click action\n    - waiting 20ms\n    2 × waiting for element to be visible, enabled and stable\n      - element is not visible\n    - retrying click action\n      - waiting 100ms\n    22 × waiting for element to be visible, enabled and stable\n       - element is not visible\n     - retrying click action\n       - waiting 500ms\n\n    at /Users/dennisariens/projects/topo-nino2-final-qa-71/docs/qa/hermes-nino2-final-71/real-play.mjs:16:31",
+  "errors": [],
+  "network": [],
+  "consoleErrors": []
+}
+node:internal/modules/run_main:107
+    triggerUncaughtException(
+    ^
+
+locator.click: Timeout 12000ms exceeded.
+Call log:
+  - waiting for locator('#resetAll')
+    - locator resolved to <button id="resetAll" class="reset">Reset alle voortgang en fouten</button>
+  - attempting click action
+    2 × waiting for element to be visible, enabled and stable
+      - element is not visible
+    - retrying click action
+    - waiting 20ms
+    2 × waiting for element to be visible, enabled and stable
+      - element is not visible
+    - retrying click action
+      - waiting 100ms
+    22 × waiting for element to be visible, enabled and stable
+       - element is not visible
+     - retrying click action
+       - waiting 500ms
+
+    at /Users/dennisariens/projects/topo-nino2-final-qa-71/docs/qa/hermes-nino2-final-71/real-play.mjs:16:31 {
+  log: [
+    "  - waiting for locator('#resetAll')",
+    '    - locator resolved to <button id="resetAll" class="reset">Reset alle voortgang en fouten</button>',
+    '  - attempting click action',
+    '    2 × waiting for element to be visible, enabled and stable',
+    '      - element is not visible',
+    '    - retrying click action',
+    '    - waiting 20ms',
+    '    2 × waiting for element to be visible, enabled and stable',
+    '      - element is not visible',
+    '    - retrying click action',
+    '      - waiting 100ms',
+    '    22 × waiting for element to be visible, enabled and stable',
+    '       - element is not visible',
+    '     - retrying click action',
+    '       - waiting 500ms'
+  ],
+  name: 'TimeoutError'
+}
+
+Node.js v24.15.0

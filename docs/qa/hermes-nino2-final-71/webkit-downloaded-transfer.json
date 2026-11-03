@@ -1,0 +1,16 @@
+{
+  "target": "2c52f121b853d1d8a46555d725ef79c97e0bf85b",
+  "htmlSHA256": "352ddd742436ac4f5a5a8a82374f742788952219e42b47d87d83536319183d53",
+  "bytes": 35709206,
+  "anonymousPinnedRawDownload": true,
+  "url": "https://raw.githubusercontent.com/dennisariens/topo/2c52f121b853d1d8a46555d725ef79c97e0bf85b/output/html/TOPO-NINO-Computer-Release.html",
+  "transfer": "Actual UI JSON exported by real72-correct/3-trip session imported into a fresh browser context on separately downloaded file:// path, then reloaded",
+  "restoredGood": 72,
+  "restoredTrips": 3,
+  "mutationRecordsPer400ms": 0,
+  "errors": [],
+  "external": [],
+  "browser": "27.2",
+  "status": "PASS",
+  "failure": null
+}

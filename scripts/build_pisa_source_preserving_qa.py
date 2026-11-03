@@ -108,18 +108,18 @@ def lid(angle):
     out.alpha_composite(line)
     return out
 saved(lid(0),OUT/"layers/lid-exterior-closed-registered.png")
-saved(lid(105),OUT/"layers/lid-interior-open-registered.png")
+saved(lid(70),OUT/"layers/lid-interior-open-registered.png")
 def frame(flavor,degrees):
     f=Image.new("RGBA",(W,H))
     f.alpha_composite(tray);f.alpha_composite(pizzas[flavor])
     f.alpha_composite(lid(degrees));f.alpha_composite(front)
     return f
-proof_angles=[0,25,50,75,105]
+proof_angles=[0,18,35,53,70]
 for name in FLAVORS:
     motion=[]
     for i in range(24):
         t=i/23
-        a=105*(1-(1-t)**3)
+        a=70*(1-(1-t)**3)
         motion.append(frame(name,a))
     motion[0].save(OUT/f"motion/pisa-{name}.webp",save_all=True,append_images=motion[1:],
                    duration=54,loop=1,quality=85,method=4)
@@ -140,7 +140,7 @@ manifest={"source":"dennisariens/topo:art/nino-pizza-rewards-20261024","source_h
           "original_runtime_resolution":[960,960],"output_canvas":[W,H],
           "layer_contract":{"compositing_canvas":[W,H],"uv_texture_size":[800,800]},
           "source_to_canvas_scale":SCALE,"source_offset":[TX,TY],
-          "lid_hinge_endpoints_px":lid_corners(0)[:2].tolist(),"lid_open_degrees":105,
+          "lid_hinge_endpoints_px":lid_corners(0)[:2].tolist(),"lid_open_degrees":70,
           "motion_frames":24,"duration_ms":1296,"flavors":list(FLAVORS),
           "artwork_status":"QA CANDIDATE: Requires owner visual acceptance and Hermes exact-source verification.",
           "limitations":["Flat source masters cannot reveal occluded original tray or lid underside; these are derivatives from genuine kraft pixels.","No crossfade, no app integration, no changes to rewards, no production deployment."]}

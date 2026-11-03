@@ -5,6 +5,7 @@ import { fileURLToPath } from 'node:url';
 import { dirname, resolve } from 'node:path';
 
 const root = resolve(dirname(fileURLToPath(import.meta.url)), '..');
+execFileSync(process.execPath, [resolve(root, 'scripts/embed-nino-cplus.mjs'), '--remove'], { stdio: 'inherit' });
 execFileSync(process.execPath, [resolve(root, 'scripts/embed-map-hit.mjs')], { stdio: 'inherit' });
 execFileSync(process.execPath, [resolve(root, 'scripts/embed-schoolblad.mjs')], { stdio: 'inherit' });
 execFileSync(process.execPath, [resolve(root, 'scripts/embed-nino-art.mjs')], { stdio: 'inherit' });
@@ -14,6 +15,7 @@ execFileSync(process.execPath, [resolve(root, 'scripts/embed-focus-mode.mjs')], 
 execFileSync(process.execPath, [resolve(root, 'scripts/embed-nino-micro-icons.mjs')], { stdio: 'inherit' });
 execFileSync(process.execPath, [resolve(root, 'scripts/generate-preview.mjs')], { stdio: 'inherit' });
 execFileSync(process.execPath, [resolve(root, 'scripts/generate-print.mjs')], { stdio: 'inherit' });
+execFileSync(process.execPath, [resolve(root, 'scripts/embed-nino-cplus.mjs')], { stdio: 'inherit' });
 execFileSync(process.execPath, [resolve(root, 'scripts/package-standalone.mjs')], { stdio: 'inherit' });
 execFileSync(process.execPath, [resolve(root, 'scripts/check-syntax.mjs')], { stdio: 'inherit' });
 execFileSync(process.execPath, [resolve(root, 'scripts/validate-map.mjs')], { stdio: 'inherit' });

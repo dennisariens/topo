@@ -4,7 +4,7 @@ Independent Hermes re-review: **OPEN**. Internal verification is not independent
 
 Starting PR head was checked through GitHub before work: `92f441e52c6b38550d5920dfbfc9a22310aec8f6`, unchanged from the owner’s last check. Independent source: [Hermes report at64216f6](https://github.com/dennisariens/topo/blob/64216f605e27bfef5cefd7bfbb7ab4b491c71595/docs/qa/hermes-nino2-final-71/README.md). That report remains unmodified.
 
-The immutable candidate SHA is pinned in the PR #71 F1 handoff. This file is included in the tested implementation commit; a following documentation-only pin may name that implementation SHA without a self-referential commit hash.
+Tested implementation and evidence commit: **`41701bcb659825796a319f9571a15e74daf2d0b4`**. The final PR-head SHA is pinned in the PR #71 F1 handoff; the following pin commit changes documentation only, with identical runtime/HTML bytes. Hermes should review that final pinned head. This avoids a self-referential commit hash in its own tree.
 
 Generated offline HTML: `output/html/TOPO-NINO-Computer-Release.html`, **35,710,604 bytes**, SHA256 **`8822e92e097d32bdc6b1588bee0d11ffc204020229def49709317a267e9afdc9`**.
 

@@ -38,5 +38,6 @@
   },
   "independentHermesReview": "OPEN",
   "artworkAuditWarning": "OPEN \u2014 outside F1",
-  "ownerDecisions": "OPEN \u2014 folio resolution, reconstructed Venezia edge, final visual/release acceptance"
+  "ownerDecisions": "OPEN \u2014 folio resolution, reconstructed Venezia edge, final visual/release acceptance",
+  "testedImplementationSha": "41701bcb659825796a319f9571a15e74daf2d0b4"
 }

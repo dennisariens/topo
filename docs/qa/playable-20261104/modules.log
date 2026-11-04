@@ -1,0 +1,18 @@
+Profile validation, Unicode, safe rendering, skip/cancel, reload, legacy, preference isolation and storage failure passed
+Bounded backup inverse audit, whitespace editing and failed-import rollback passed
+Immediate cosmetic favorite feedback and first-run CTA passed
+✔ scripts/nino-profile.test.mjs (2313.78825ms)
+✔ every flavor has all nine atlas cells and eight distinct sector selectors; no reward writes (105.343875ms)
+✔ zero rollover retains just-earned flavor; queue orders pizza, static box, trip once (23.065ms)
+✔ reset cancels pending trip and replay-invalid events cannot fabricate rewards (8.398292ms)
+✔ PR29 approved source and runtime checksums, unique assembly proof (62.852583ms)
+✔ integration applies exactly once and reverse restores untouched baseline (1272.889916ms)
+✔ authoritative engine earns 8 answers per pizza and 3 pizzas per trip regardless of favorite (38.904792ms)
+ℹ tests 7
+ℹ suites 0
+ℹ pass 7
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 2322.578042

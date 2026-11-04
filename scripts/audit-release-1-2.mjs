@@ -36,6 +36,6 @@ const first = derived.map(read);
 execFileSync(process.execPath,['scripts/build.mjs'],{cwd:root,stdio:'pipe'});
 derived.forEach((file,i) => assert(first[i].equals(read(file)),file+' idempotent rebuild'));
 const output = new URL(process.env.QA_RELEASE_AUDIT_DIR||'docs/visual/ipad-update-47/',root); mkdirSync(output,{recursive:true});
-const result = {base,art,lakes,masters,preserved,canonicalComposition:'PASS: pinned app with isolated schoolblad/Discovery/Focus, bounded map resolver, exact DEM-guided area-c and Kaartstijl exceptions; other44 targets/engines exact',printScope:'Only signed area-c path differs; source SHA fresh,35 pages,PDF generator exact',derivedParity:'PASS: canonical, two downloads, dist',rebuild:'byte-idempotent',masters:'read-only source; no PNGs imported or altered'};
+const result = {base,art,lakes,masters,preserved,canonicalComposition:'PASS: pinned app with isolated schoolblad/Discovery/Focus, bounded map resolver, exact DEM-guided area-c and Kaartstijl exceptions; other44 targets/engines exact',printScope:'Only signed area-c path differs; source SHA fresh,35 pages,PDF generator exact',derivedParity:'PASS: canonical, two downloads, dist',rebuild:'byte-idempotent',masters:'existing masters unchanged; approved PR29 sources copied byte-identically; PNG masters are not embedded in runtime'};
 writeFileSync(new URL('source-preservation.json',output),JSON.stringify(result,null,2)+'\n');
 console.log('Source audit PASS: immutable engines/art/44 targets, exact approved Apennines/UI exceptions, fresh print and idempotent offline builds');

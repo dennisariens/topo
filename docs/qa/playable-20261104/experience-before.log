@@ -1,0 +1,43 @@
+✖ playable journey exposes all eleven ordered stops, and every book interior uses real folios (3819.1355ms)
+✖ iPad portrait reads a single page; stamps and Gold are projections of real completion state (4179.243666ms)
+ℹ tests 2
+ℹ suites 0
+ℹ pass 0
+ℹ fail 2
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 8800.012833
+
+✖ failing tests:
+
+test at scripts/nino-experience.test.mjs:5:1
+✖ playable journey exposes all eleven ordered stops, and every book interior uses real folios (3819.1355ms)
+  AssertionError [ERR_ASSERTION]: eleven stops visible along one continuous journey
+      at TestContext.<anonymous> (file:///Users/dennisariens/projects/topo-f1-71/scripts/nino-experience.test.mjs:5:226)
+      at async Test.run (node:internal/test_runner/test:1208:7)
+      at async startSubtestAfterBootstrap (node:internal/test_runner/harness:385:3) {
+    generatedMessage: false,
+    code: 'ERR_ASSERTION',
+    actual: false,
+    expected: true,
+    operator: '==',
+    diff: 'simple'
+  }
+
+test at scripts/nino-experience.test.mjs:10:1
+✖ iPad portrait reads a single page; stamps and Gold are projections of real completion state (4179.243666ms)
+  AssertionError [ERR_ASSERTION]: The expression evaluated to a falsy value:
+  
+    assert(a.d.querySelector('#travelBook').classList.contains('bookSingle'))
+  
+      at TestContext.<anonymous> (file:///Users/dennisariens/projects/topo-f1-71/scripts/nino-experience.test.mjs:10:243)
+      at async Test.run (node:internal/test_runner/test:1208:7)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:831:7) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: false,
+    expected: true,
+    operator: '==',
+    diff: 'simple'
+  }

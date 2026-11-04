@@ -1,3 +1,5 @@
+> **Actuele proefkandidaat:** zie [NINO 2.0 speelbare ronde](../playable-20261104/README.md). De F1-reparatie en vier regressies blijven behouden en zijn op die nieuwe HTML opnieuw gecontroleerd. Onderstaande SHA/hash beschrijven de eerdere F1-only kandidaat.
+
 # PR #71 — Hermes F1 navigation repair
 
 Independent Hermes re-review: **OPEN**. Internal verification is not independent acceptance.

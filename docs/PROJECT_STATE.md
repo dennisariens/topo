@@ -1,3 +1,7 @@
+# NINO 2.0 — speelbare kandidaat, 4 november 2026
+
+Onboarding/profiel, doorlopende11-stoproute, alle folio-/stempel-/bestemmingspagina’s en PR29 Pizza Reward V2 zijn samengebracht. F1 blijft behouden. [Actuele proeflink, bewijs, demo en bronbeperking](qa/playable-20261104/README.md). Groot appicoonbron ontbreekt: huidige volledige Travel-cutout is tijdelijk. Eigenaar visueel GO en onafhankelijke Hermes-review OPEN. Geen merge/deploy of bestaande-downloadvervanging.
+
 # PR71 — Hermes F1 repair, 4 November 2026
 
 Reis/Oefenen now preserves the existing exercise mode/question, draft and native selection direction; book continuity and saved scores/rewards remain unchanged. [F1 evidence and exact-artifact Hermes handoff](qa/f1-71/README.md). Independent re-review **OPEN**; the separate artwork-audit warning and owner folio/Venezia/final visual decisions remain open. No merge/deploy/release or approved-download replacement.

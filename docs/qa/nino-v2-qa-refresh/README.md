@@ -1,3 +1,5 @@
+> **Nieuwe actuele handoff:** [speelbare NINO 2.0-kandidaat van4 november](../playable-20261104/README.md), met nieuwe HTML-hash en aparte demo. Alle oudere targets hieronder zijn historisch.
+
 # Current handoff superseded by Hermes F1 repair — 4 November 2026
 
 Use [the F1 handoff and current HTML checksum](../f1-71/README.md). Tested implementation/evidence SHA: `41701bcb659825796a319f9571a15e74daf2d0b4`; final evidence-only PR head is pinned in PR #71. Independent Hermes re-review **OPEN**. The old target/checksum and runtime-byte-identity statements below are historical only. Artwork-audit warning and owner folio/Venezia/final visual decisions remain OPEN.

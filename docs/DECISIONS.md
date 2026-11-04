@@ -209,3 +209,10 @@ The owner mission authorizes one integration on exact PR61 lineage with PR70 exp
 ## 2026-11-03 — Complete artwork integration under the current mission
 
 Supersedes the integration record’s implementation hold on folios and Venezia: the current owner mission explicitly authorizes PR70 exports with bounded folio use and Venezia B. Use exact1086×1448 folios at <=543CSS pixels/page (testedDPR2) and the verified PR70 reconstructed contour after the real third Vespa trip. Preserve source bytes/aspect ratio. This is implementation authority, not higher-native-resolution approval, exact original-matte identity, independent artwork closure or final owner visual/release acceptance. Hermes C1/C2 technical caveats remain in the handoff for review.
+
+
+## 2026-11-04 — Eén speelbare NINO 2.0-proef in bestaande PR71
+
+De huidige eigenaaropdracht autoriseert onboarding20, doorlopende Design C-route68, volledige passport21/67-presentatie en hergebruik van PR29-pizza’s samen. Dit supersedeert eerdere scope-uitsluitingen voor die onderdelen, zonder geografische/leer-/beloningseconomiewijziging. Profiel schema1 blijft apart en optioneel in lokale opslag en backups; favoritePizza kiest nooit een verdiende smaak. Stempel/Gold/postkaart blijven canonieke projecties, demo is uitsluitend een apart expliciet te importeren bestand.
+
+Goedgekeurde rode omslagpixels blijven exact; gekozen kleur is een persoonlijk omslagaccent. Huidige folio’s behouden native verhouding/cap en Venezia behoudt de bestaande contour, voor eigenaarbeoordeling. De grote appicoonbron uit topo-nino-app-icon-v1.zip is niet in onderzochte Git/lokale bronnen gevonden; volledige goedgekeurde Travel-cutout is tijdelijk, geen vervangende icoongoedkeuring. Echte hinge/uitgebreide Vespa uit scope. Eigenaarreview en onafhankelijke Hermes-GO blijven OPEN. Geen merge/deploy/release of bestaande-downloadvervanging.

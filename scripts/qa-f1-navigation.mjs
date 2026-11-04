@@ -17,7 +17,7 @@ try{
  for(const width of [1500,768,320]){
   const context=await browser.newContext({offline:true,viewport:{width,height:width===1500?1000:width===768?1024:740},deviceScaleFactor:2,hasTouch:width!==1500,reducedMotion:'reduce'}),p=await context.newPage();
   p.setDefaultTimeout(12000);p.on('pageerror',e=>errors.push(e.message));p.on('console',m=>{if(m.type()==='error')errors.push(m.text())});p.on('request',r=>{if(!/^(file:|data:|blob:)/.test(r.url()))network.push(r.url())});
-  await p.goto(file.href);assert.match(await p.title(),/NINO/);await nav(p,'Oefenen');await choose(p,'write');
+  await p.goto(file.href);if(await p.locator('.ninoProfile[open]').count())await p.getByRole('button',{name:'Begin zonder invullen',exact:true}).click();assert.match(await p.title(),/NINO/);await nav(p,'Oefenen');await choose(p,'write');
   // Exact Hermes reproduction first, with no played or injected progress.
   for(const [start,end,direction]of [[3,10,'backward'],[5,5,'none'],[2,8,'forward']]){
    await selection(p,start,end,direction);const before=await snapshot(p);assert.deepEqual(before.caret,[start,end,direction]);

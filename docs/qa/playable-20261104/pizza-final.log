@@ -1,0 +1,15 @@
+✔ every flavor has all nine atlas cells and eight distinct sector selectors; no reward writes (101.897541ms)
+✔ zero rollover retains just-earned flavor; queue orders pizza, static box, trip once (28.296084ms)
+✔ reset cancels pending trip and replay-invalid events cannot fabricate rewards (9.166875ms)
+✔ PR29 approved source and runtime checksums, unique assembly proof (65.409917ms)
+✔ integration applies exactly once and reverse restores untouched baseline (728.250167ms)
+✔ authoritative engine earns 8 answers per pizza and 3 pizzas per trip regardless of favorite (22.113291ms)
+✔ bounded art-slot audit rejects unexpected code and altered hooks (11.36075ms)
+ℹ tests 7
+ℹ suites 0
+ℹ pass 7
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 1447.246459

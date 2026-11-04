@@ -28,7 +28,7 @@ async function tap(point,selectedId,ok){
  return{sourcePoint:point,screenPoint:xy,candidates,order,selectedId,correct:ok};
 }
 try{
- await p.goto(file.href);await p.locator('.routeCard').last().waitFor({state:'attached'});
+ await p.goto(file.href);if(await p.locator('.ninoProfile[open]').count())await p.getByRole('button',{name:'Begin zonder invullen',exact:true}).click();await p.locator('.routeCard').last().waitFor({state:'attached'});
  const items=await p.evaluate(()=>ITEMS.map(i=>({...i,featureClass:mapFeatureClass(i),chapter:groupForItem(i)})));
  assert.equal(items.length,45);assert.equal(await p.evaluate(()=>ROUTE_CHAPTERS.length),11);
  await fixture(items[0].id);await p.evaluate(()=>TopoAtlas.zoom(1));

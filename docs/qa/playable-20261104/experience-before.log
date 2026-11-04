@@ -28,9 +28,9 @@ test at scripts/nino-experience.test.mjs:5:1
 test at scripts/nino-experience.test.mjs:10:1
 ✖ iPad portrait reads a single page; stamps and Gold are projections of real completion state (4179.243666ms)
   AssertionError [ERR_ASSERTION]: The expression evaluated to a falsy value:
-  
+
     assert(a.d.querySelector('#travelBook').classList.contains('bookSingle'))
-  
+
       at TestContext.<anonymous> (file:///Users/dennisariens/projects/topo-f1-71/scripts/nino-experience.test.mjs:10:243)
       at async Test.run (node:internal/test_runner/test:1208:7)
       at async Test.processPendingSubtests (node:internal/test_runner/test:831:7) {

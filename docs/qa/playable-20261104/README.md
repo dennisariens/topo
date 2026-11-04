@@ -2,7 +2,7 @@
 
 **Eigenaarbeoordeling / onafhankelijke Hermes-herbeoordeling: OPEN. Geen release-GO.**
 
-Basis: actuele PR71-head gecontroleerd vóór de bouw: `8c25b7a4592dafdc0003c0021c2a9fe375d68a34`. Werk blijft in dezelfde PR. De exacte nieuwe kandidaat-SHA wordt in de PR-handoff vastgepind; een documentatiepin kan de geteste implementatie-SHA noemen zonder een zelfreferentiële hash.
+Basis: actuele PR71-head gecontroleerd vóór de bouw: `8c25b7a4592dafdc0003c0021c2a9fe375d68a34`. Werk blijft in dezelfde PR. Geteste implementatie-/bewijs-SHA: **`fd28019ba6f2a737d1ce4dc584780ec79d56427f`**. De finale PR-head staat exact in de PR-handoff; de volgende pin wijzigt alleen documentatie/bewijsformattering en heeft byte-identieke runtime, scripts, assets en HTML.
 
 **Zelfstandige HTML:** `output/html/NINO-2-Proefversie-2026-11-04.html`,40.999.720bytes. SHA256 **`933931eb67a347948a270da7aa912bfc48ee3cba420c72fbe7d02e34c93d4a35`**. Byte-identiek aan de geteste canonieke HTML en de andere kandidaat-aliassen.
 

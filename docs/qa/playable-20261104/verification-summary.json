@@ -51,5 +51,6 @@
   },
   "missingApprovedSource": "1024x1024 PNG from topo-nino-app-icon-v1.zip; full header app icon unresolved",
   "ownerVisualAcceptance": "OPEN",
-  "independentHermesReview": "OPEN"
+  "independentHermesReview": "OPEN",
+  "testedImplementationSha": "fd28019ba6f2a737d1ce4dc584780ec79d56427f"
 }

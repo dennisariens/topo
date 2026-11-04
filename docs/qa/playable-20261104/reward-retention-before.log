@@ -14,14 +14,14 @@ test at scripts/nino-experience.test.mjs:13:1
 ✖ reward presentation survives result-screen removal and cannot become detached from the active lesson (4262.811792ms)
   AssertionError [ERR_ASSERTION]: same reward UI remains in the next lesson
   + actual - expected
-  
+
   + null
   - HTMLDivElement {
   -   Symbol(SameObject caches): [Object: null prototype] {
   -     classList: DOMTokenList {}
   -   }
   - }
-  
+
       at TestContext.<anonymous> (file:///Users/dennisariens/projects/topo-f1-71/scripts/nino-experience.test.mjs:13:509)
       at async Test.run (node:internal/test_runner/test:1208:7)
       at async startSubtestAfterBootstrap (node:internal/test_runner/harness:385:3) {

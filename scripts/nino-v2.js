@@ -4,7 +4,30 @@
  const image=(key,cls='')=>{const a=art[key],i=make('img',cls);i.src=a.src;i.width=a.width;i.height=a.height;i.alt='';i.setAttribute('aria-hidden','true');i.decoding='async';return i;};
  const action=(text,fn,cls='button')=>{const b=make('button',cls,text);b.type='button';b.onclick=fn;return b;};
  const nav=make('nav','ninoNav');nav.setAttribute('aria-label','Hoofdnavigatie');
- const reis=action('Reis',()=>{mode('route');renderRouteHome();}),practice=action('Oefenen',()=>{if(!document.querySelector('.layout').classList.contains('routeHomeLayout'))return;if(state.mode==='route'&&state.route.active&&!state.route.active.done)renderRouteTask();else if(state.mode==='route')mode('learn');else document.querySelector('nav.tabs')?.scrollIntoView({block:'nearest'});}),bookButton=action('Reisboekje',()=>openBook(bookButton));
+ // Reis is a temporary view of the existing exercise, not a mode change.
+ const layout=document.querySelector('.layout');let practiceView=null;
+ const viewNodes=['#quiz','#routeHome','#routeLessonBar','#routeMapDock','#journeyScreen','#finishScreen'];
+ const reis=action('Reis',()=>{
+  if(layout.classList.contains('routeHomeLayout'))return;
+  practiceView={current:state.current,route:state.route,layout:layout.className,lesson:document.body.classList.contains('lessonFocus'),nodes:viewNodes.map(s=>document.querySelector(s)).filter(Boolean).map(node=>[node,node.className])};
+  layout.classList.remove('finishLayout');document.querySelector('#finishScreen')?.classList.add('hidden');
+  renderRouteHome(true);
+ }),practice=action('Oefenen',()=>{
+  if(!layout.classList.contains('routeHomeLayout'))return;
+  if(practiceView){
+   layout.className=practiceView.layout;document.body.classList.toggle('lessonFocus',practiceView.lesson);
+   for(const [node,cls]of practiceView.nodes)node.className=cls;
+   practiceView=null;
+  }else if(state.mode==='route'&&state.route.active&&!state.route.active.done)renderRouteTask();
+  else if(state.mode==='route')mode('learn');
+ }),bookButton=action('Reisboekje',()=>openBook(bookButton));
+ // Leave the suspended view only after a journey action actually proceeds (confirm may cancel).
+ document.querySelector('#journeyScreen').addEventListener('click',e=>{
+  if(!practiceView||!e.target.closest('button:not(:disabled)'))return;
+  const opened=!layout.classList.contains('routeHomeLayout');
+  if(!opened&&state.current===practiceView.current&&state.route===practiceView.route)return;
+  practiceView=null;if(state.mode!=='route'){mode('route');if(opened)renderRouteTask();}
+ });
  nav.append(reis,practice,bookButton);document.querySelector('header').after(nav);
  const brand=document.querySelector('.brand');brand.lastChild.textContent='NINO';brand.querySelector('small').textContent='La Grande Avventura';
  const legacy=document.querySelector('nav.tabs');legacy.setAttribute('aria-label','Oefenvorm');legacy.classList.add('practiceModes');

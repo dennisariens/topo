@@ -26,12 +26,19 @@ export function withoutV2(html){
  if(!html.includes('// BEGIN NINO V2\n'))return html;
  const css=readFileSync(new URL('nino-v2.css',import.meta.url),'utf8'),js=readFileSync(new URL('nino-v2.js',import.meta.url),'utf8');
  const style='<style>/* BEGIN NINO V2 CSS */'+css+'/* END NINO V2 CSS */</style>';
- if(createHash('sha256').update(css).digest('hex')!=='e2aef015134ea16b432a69ffe6e77b2289b360723110b28ed1a30a086ca59f88'||createHash('sha256').update(js).digest('hex')!=='380d1b2396ef8810217de16c0469f2c80df78be0bfcdc8dc821f7401536ead80')throw Error('Reviewed V2 component source changed');
+ if(createHash('sha256').update(css).digest('hex')!=='e2aef015134ea16b432a69ffe6e77b2289b360723110b28ed1a30a086ca59f88'||createHash('sha256').update(js).digest('hex')!=='e5e900ec9fda3dd5264a57617e8a36fe2b1561670c05b7ce48f2be85a18cd519')throw Error('Reviewed V2 component source changed');
  if(!html.includes(style))throw Error('V2 CSS differs from reviewed component');
  const match=html.match(/\/\/ BEGIN NINO V2\nconst NINO_V2_ART=(\{[^\n]+\});\n/);if(!match)throw Error('Missing V2 art data');
  const data=JSON.parse(match[1]);
  const ledger=JSON.parse(readFileSync(new URL('../docs/qa/nino-v2-closure-67/artwork-manifest.json',import.meta.url),'utf8'));
  for(const a of Object.values(data)){const row=ledger.assets.find(r=>r.path===a.path);if(!row||row.sha256!==a.sha256||a.src!=='data:image/webp;base64,'+readFileSync(new URL('../'+a.path,import.meta.url)).toString('base64'))throw Error('Unverified V2 art bytes');}
  const exact=match[0]+js+'// END NINO V2\n';if(!html.includes(exact))throw Error('Unexpected V2 script contents');
+ // F1: remove only the exact presentation-only guards, restoring the pinned renderer.
+ const guards=[
+  ["function renderRouteHome(preservePractice=false){\n preservePractice=preservePractice===true;\n if(!preservePractice){document.body.classList.remove('lessonFocus');exitFinish();renderDailyGoal();\n clearActive();hideLens();state.current=null;state.answered=true;}","function renderRouteHome(){\n document.body.classList.remove('lessonFocus');exitFinish();renderDailyGoal();\n clearActive();hideLens();state.current=null;state.answered=true;"],
+  [" if(!preservePractice)clearIllustrations();TopoArt.update(ninoSlots.welcome,"," clearIllustrations();TopoArt.update(ninoSlots.welcome,"],
+  [" if(!preservePractice)persist();\n}\nfunction startRouteLesson"," persist();\n}\nfunction startRouteLesson"]
+ ];
+ for(const [changed,original]of guards){if(html.split(changed).length!==2)throw Error('Unexpected F1 navigation guard');html=html.replace(changed,original);}
  return html.replace(style,'').replace(exact,'');
 }

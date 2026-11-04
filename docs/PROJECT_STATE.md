@@ -1,3 +1,7 @@
+# PR71 — Hermes F1 repair, 4 November 2026
+
+Reis/Oefenen now preserves the existing exercise mode/question, draft and native selection direction; book continuity and saved scores/rewards remain unchanged. [F1 evidence and exact-artifact Hermes handoff](qa/f1-71/README.md). Independent re-review **OPEN**; the separate artwork-audit warning and owner folio/Venezia/final visual decisions remain open. No merge/deploy/release or approved-download replacement.
+
 # NINO 2 integration candidate — 3 November 2026
 
 Current integration branch: `codex/nino-v2-integration-20261103`, isolated from existing edits. See [candidate evidence and remaining gates](qa/nino-v2-integration/README.md). This supersedes the earlier current-scope exclusions of passport/design work only for this explicitly authorized integration. Historical release/QA records below retain their original scope. No merge, deployment or approved-download replacement is authorized.

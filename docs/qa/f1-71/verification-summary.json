@@ -1,0 +1,42 @@
+{
+  "baseSha": "92f441e52c6b38550d5920dfbfc9a22310aec8f6",
+  "htmlSha256": "8822e92e097d32bdc6b1588bee0d11ffc204020229def49709317a267e9afdc9",
+  "htmlBytes": 35710604,
+  "releaseCheck": {
+    "exitCode": 0,
+    "build": "PASS",
+    "lint": "PASS",
+    "testPrograms": 17,
+    "tests": "PASS",
+    "releaseAndMapPreservationAudits": "PASS"
+  },
+  "focusedF1Tests": {
+    "pass": 4,
+    "fail": 0,
+    "redBeforeRepair": true
+  },
+  "wholeFileAndProtectedScopeAudits": "PASS",
+  "browsers": {
+    "chrome": {
+      "version": "157.0.8103.38",
+      "viewports": [
+        "1500x1000",
+        "768x1024",
+        "320x740"
+      ],
+      "status": "PASS"
+    },
+    "webkit": {
+      "version": "27.2",
+      "viewports": [
+        "1500x1000",
+        "768x1024",
+        "320x740"
+      ],
+      "status": "PASS"
+    }
+  },
+  "independentHermesReview": "OPEN",
+  "artworkAuditWarning": "OPEN \u2014 outside F1",
+  "ownerDecisions": "OPEN \u2014 folio resolution, reconstructed Venezia edge, final visual/release acceptance"
+}

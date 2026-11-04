@@ -1173,9 +1173,10 @@ const ROUTE_ICONS={city1:'city',city2:'city',city3:'city',city4:'city',islands:'
 function chapterGlyph(id){const icon=routeGlyph(ROUTE_ICONS[id]);icon.classList.add('chapterIcon');icon.dataset.chapter=id;return icon}
 function routeGlyph(name){const svg=document.createElementNS('http://www.w3.org/2000/svg','svg');svg.setAttribute('viewBox',name==='vespa'?'0 0 72 48':'0 0 32 32');svg.setAttribute('aria-hidden','true');svg.classList.add('routeGlyph');const use=document.createElementNS('http://www.w3.org/2000/svg','use');use.setAttribute('href',document.getElementById('topo-'+name)?'#topo-'+name:'#topo-point');svg.append(use);return svg}
 function routeButton(label,action,klass='button'){const b=document.createElement('button');b.type='button';b.className=klass;b.textContent=label;b.onclick=action;return b}
-function renderRouteHome(){
- document.body.classList.remove('lessonFocus');exitFinish();renderDailyGoal();
- clearActive();hideLens();state.current=null;state.answered=true;
+function renderRouteHome(preservePractice=false){
+ preservePractice=preservePractice===true;
+ if(!preservePractice){document.body.classList.remove('lessonFocus');exitFinish();renderDailyGoal();
+ clearActive();hideLens();state.current=null;state.answered=true;}
  $('.layout').classList.remove('routeLessonLayout');$('.layout').classList.add('routeHomeLayout');$('#journeyScreen').classList.remove('hidden');$('#routeMapDock').classList.add('hidden');$('#routeHome').classList.remove('hidden');$('#quiz').classList.add('hidden');$('#routeLessonBar').classList.add('hidden');
  const completed=ROUTE_CHAPTERS.filter(c=>TopoRoute.record(state.route,c.id).stage===3).length;
  const gold=ROUTE_CHAPTERS.filter(c=>TopoRoute.record(state.route,c.id).goldAt>0).length;
@@ -1185,7 +1186,7 @@ function renderRouteHome(){
  const returning=!!active||completed>0||state.good>0||state.pizzas>0||state.slices>0||state.trips>0||Object.values(state.route.chapters).some(r=>r.stage>0)||Object.keys(state.route.items).length>0;
  const entry=active&&!active.done?'ENTRY.RESUME':completed===11?'ENTRY.COMPLETE':returning?'ENTRY.RETURN':'ENTRY.FIRST';
  $('#routeIntro').textContent=TopoNino.resolve(entry);$('#routeIntro').dataset.event=entry;
- clearIllustrations();TopoArt.update(ninoSlots.welcome,{role:TopoArt.roleFor({phase:'entry',event:entry})});
+ if(!preservePractice)clearIllustrations();TopoArt.update(ninoSlots.welcome,{role:TopoArt.roleFor({phase:'entry',event:entry})});
  $('#routeSummary').textContent=completed+' / 11 haltes afgerond · '+gold+' goud';
  $('#routeProgress').style.width=(completed/11*100)+'%';
  $('#routeReview').classList.toggle('hidden',!due.length);
@@ -1230,7 +1231,7 @@ function renderRouteHome(){
  group('futureStops','Verderop · '+future.length+' halte'+(future.length===1?'':'s')+' bekijken',future);
  group('completedStops','Afgerond · '+finished.length+' halte'+(finished.length===1?'':'s')+' · herhalen en goud',finished);
  $('#routeReward').textContent=state.slices+' / 8 punten tot een pizza · '+state.pizzas+' pizza’s gespaard · '+state.trips+' Vespa-ritten gemaakt';$('#journeyDestination').textContent=TopoLearning.journey(state.trips+1).to;drawPizza($('#journeyWheel'),state.slices);$('#journeyPizzaCount').textContent=state.pizzas;$('#journeyTripDots').textContent=(state.pizzas%3)+' / 3 pizza’s voor de volgende rit';
- persist();
+ if(!preservePractice)persist();
 }
 function startRouteLesson(chapterId,kind){
  const active=state.route.active;
@@ -2154,7 +2155,30 @@ const NINO_V2_ART={"chapter0":{"path":"assets/nino/chapter-icons/exports/chapter
  const image=(key,cls='')=>{const a=art[key],i=make('img',cls);i.src=a.src;i.width=a.width;i.height=a.height;i.alt='';i.setAttribute('aria-hidden','true');i.decoding='async';return i;};
  const action=(text,fn,cls='button')=>{const b=make('button',cls,text);b.type='button';b.onclick=fn;return b;};
  const nav=make('nav','ninoNav');nav.setAttribute('aria-label','Hoofdnavigatie');
- const reis=action('Reis',()=>{mode('route');renderRouteHome();}),practice=action('Oefenen',()=>{if(!document.querySelector('.layout').classList.contains('routeHomeLayout'))return;if(state.mode==='route'&&state.route.active&&!state.route.active.done)renderRouteTask();else if(state.mode==='route')mode('learn');else document.querySelector('nav.tabs')?.scrollIntoView({block:'nearest'});}),bookButton=action('Reisboekje',()=>openBook(bookButton));
+ // Reis is a temporary view of the existing exercise, not a mode change.
+ const layout=document.querySelector('.layout');let practiceView=null;
+ const viewNodes=['#quiz','#routeHome','#routeLessonBar','#routeMapDock','#journeyScreen','#finishScreen'];
+ const reis=action('Reis',()=>{
+  if(layout.classList.contains('routeHomeLayout'))return;
+  practiceView={current:state.current,route:state.route,layout:layout.className,lesson:document.body.classList.contains('lessonFocus'),nodes:viewNodes.map(s=>document.querySelector(s)).filter(Boolean).map(node=>[node,node.className])};
+  layout.classList.remove('finishLayout');document.querySelector('#finishScreen')?.classList.add('hidden');
+  renderRouteHome(true);
+ }),practice=action('Oefenen',()=>{
+  if(!layout.classList.contains('routeHomeLayout'))return;
+  if(practiceView){
+   layout.className=practiceView.layout;document.body.classList.toggle('lessonFocus',practiceView.lesson);
+   for(const [node,cls]of practiceView.nodes)node.className=cls;
+   practiceView=null;
+  }else if(state.mode==='route'&&state.route.active&&!state.route.active.done)renderRouteTask();
+  else if(state.mode==='route')mode('learn');
+ }),bookButton=action('Reisboekje',()=>openBook(bookButton));
+ // Leave the suspended view only after a journey action actually proceeds (confirm may cancel).
+ document.querySelector('#journeyScreen').addEventListener('click',e=>{
+  if(!practiceView||!e.target.closest('button:not(:disabled)'))return;
+  const opened=!layout.classList.contains('routeHomeLayout');
+  if(!opened&&state.current===practiceView.current&&state.route===practiceView.route)return;
+  practiceView=null;if(state.mode!=='route'){mode('route');if(opened)renderRouteTask();}
+ });
  nav.append(reis,practice,bookButton);document.querySelector('header').after(nav);
  const brand=document.querySelector('.brand');brand.lastChild.textContent='NINO';brand.querySelector('small').textContent='La Grande Avventura';
  const legacy=document.querySelector('nav.tabs');legacy.setAttribute('aria-label','Oefenvorm');legacy.classList.add('practiceModes');

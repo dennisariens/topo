@@ -1,0 +1,52 @@
+{
+  "status": "FAIL",
+  "requiredEngines": [
+    "chromium",
+    "webkit"
+  ],
+  "widths": [
+    1500,
+    768,
+    320
+  ],
+  "transport": "file:// offline:true",
+  "runs": [
+    {
+      "engine": "chromium",
+      "status": "FAIL",
+      "contexts": [
+        {
+          "width": 1500,
+          "status": "FAIL",
+          "errors": [],
+          "external": [],
+          "error": "AssertionError [ERR_ASSERTION]: Expected values to be strictly deep-equal:\n+ actual - expected\n\n  [\n    'discovery',\n+   'discovery',\n    'school',\n+   'school'\n  ]\n\n    at runBrowserChecks (file:///Users/dennisariens/projects/topo-harness-v1/scripts/harness/browser.mjs:28:260)\n    at async file:///Users/dennisariens/projects/topo-harness-v1/scripts/harness/browser.mjs:54:272"
+        }
+      ],
+      "version": "156.0.8078.4",
+      "error": "AssertionError [ERR_ASSERTION]: Expected values to be strictly deep-equal:\n+ actual - expected\n\n  [\n    'discovery',\n+   'discovery',\n    'school',\n+   'school'\n  ]\n\n    at runBrowserChecks (file:///Users/dennisariens/projects/topo-harness-v1/scripts/harness/browser.mjs:28:260)\n    at async file:///Users/dennisariens/projects/topo-harness-v1/scripts/harness/browser.mjs:54:272"
+    },
+    {
+      "engine": "webkit",
+      "status": "FAIL",
+      "contexts": [
+        {
+          "width": 1500,
+          "status": "FAIL",
+          "errors": [],
+          "external": [],
+          "error": "AssertionError [ERR_ASSERTION]: Expected values to be strictly deep-equal:\n+ actual - expected\n\n  [\n    'discovery',\n+   'discovery',\n    'school',\n+   'school'\n  ]\n\n    at runBrowserChecks (file:///Users/dennisariens/projects/topo-harness-v1/scripts/harness/browser.mjs:28:260)\n    at async file:///Users/dennisariens/projects/topo-harness-v1/scripts/harness/browser.mjs:54:272"
+        }
+      ],
+      "version": "27.2",
+      "error": "AssertionError [ERR_ASSERTION]: Expected values to be strictly deep-equal:\n+ actual - expected\n\n  [\n    'discovery',\n+   'discovery',\n    'school',\n+   'school'\n  ]\n\n    at runBrowserChecks (file:///Users/dennisariens/projects/topo-harness-v1/scripts/harness/browser.mjs:28:260)\n    at async file:///Users/dennisariens/projects/topo-harness-v1/scripts/harness/browser.mjs:54:272"
+    }
+  ],
+  "limitations": [
+    "Development Chromium/WebKit; physical Safari not tested.",
+    "One genuine writing answer per fresh context; no full natural route playthrough."
+  ],
+  "playwright": "1.64.1",
+  "artifactSha256": "933931eb67a347948a270da7aa912bfc48ee3cba420c72fbe7d02e34c93d4a35",
+  "error": "AssertionError [ERR_ASSERTION]: all required browser engines must pass\n    at runBrowserChecks (file:///Users/dennisariens/projects/topo-harness-v1/scripts/harness/browser.mjs:49:3)\n    at async file:///Users/dennisariens/projects/topo-harness-v1/scripts/harness/browser.mjs:54:272"
+}

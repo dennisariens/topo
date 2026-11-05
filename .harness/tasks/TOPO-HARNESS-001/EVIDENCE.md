@@ -89,3 +89,9 @@ A previous read-only SSH probe from mac-mini.lan to imac-van-dennis.lan failed a
 
 ## Delivery status
 Only these persistent contract/state/evidence files have been added. check.sh, enforcement, CI, deliberate-failure test and full quality gate are NOT IMPLEMENTED/NOT EXECUTED. No GATE: PASS or completion claim. No app/art/test changes and no PR61/64 edits.
+
+
+## Implementation progress and stop (5 November2026)
+Owner selected PR71; branch rebased onto b06b130 with no application merge or changes. Unit evidence: policy/process6PASS, artifacts6PASS, browser fail-closed testPASS. Browser development attempts are retained verbatim in evidence/browser-development*, summarized in DEVELOPMENT-ATTEMPTS.json. Attempt3 achieved Chromium desktopPASS, but responsive/WebKit driver errors remained; fixes are prepared and not executed after cap. Overall check.sh/CI/negative-gate proof remain unverified/incomplete. No GATE:PASS claim.
+
+No iMac stopping cause has been confirmed; SSH access was denied earlier. The current stop is the mission's explicit maximum-three-attempt rule, not an assumed platform limitation.

@@ -1,0 +1,14 @@
+✔ commands and write scope deny deploy, production paths, traversal and shell injection (2.169125ms)
+✔ child environment never inherits credentials, injection or npm configuration (0.152375ms)
+✔ verdict rejects missing, skipped, duplicate and failed required checks (0.26525ms)
+✔ two identical failures persistently stop the step; changed error does not grant a fourth attempt (0.616459ms)
+✔ documented jsdom engine range excludes unsupported odd Node versions (0.139542ms)
+✔ real child failure and timeout cannot be reported as success; complete log retained (157.419833ms)
+ℹ tests 6
+ℹ suites 0
+ℹ pass 6
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 233.934375

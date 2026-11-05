@@ -1,0 +1,30 @@
+{
+  "engine": "webkit",
+  "status": "FAIL",
+  "contexts": [
+    {
+      "width": 1500,
+      "status": "FAIL",
+      "errors": [],
+      "external": [],
+      "invariants": {
+        "objects": 45,
+        "chapters": 11,
+        "stages": [
+          "discover",
+          "point",
+          "write"
+        ],
+        "codeMode": false,
+        "styles": [
+          "discovery",
+          "school"
+        ],
+        "codes": 45
+      },
+      "error": "AssertionError [ERR_ASSERTION]: Expected values to be strictly deep-equal:\n+ actual - expected\n\n  [\n+   9,\n+   16,\n-   3,\n-   10,\n    'backward'\n  ]\n\n    at runBrowserChecks (file:///Users/dennisariens/projects/topo-harness-v1/scripts/harness/browser.mjs:34:108)\n    at runNextTicks (node:internal/process/task_queues:65:5)\n    at process.processImmediate (node:internal/timers:472:9)\n    at async file:///Users/dennisariens/projects/topo-harness-v1/scripts/harness/browser.mjs:56:272"
+    }
+  ],
+  "version": "27.2",
+  "error": "AssertionError [ERR_ASSERTION]: Expected values to be strictly deep-equal:\n+ actual - expected\n\n  [\n+   9,\n+   16,\n-   3,\n-   10,\n    'backward'\n  ]\n\n    at runBrowserChecks (file:///Users/dennisariens/projects/topo-harness-v1/scripts/harness/browser.mjs:34:108)\n    at runNextTicks (node:internal/process/task_queues:65:5)\n    at process.processImmediate (node:internal/timers:472:9)\n    at async file:///Users/dennisariens/projects/topo-harness-v1/scripts/harness/browser.mjs:56:272"
+}

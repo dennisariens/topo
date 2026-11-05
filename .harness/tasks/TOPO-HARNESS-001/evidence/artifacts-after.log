@@ -1,0 +1,14 @@
+✔ approved generated standalone set satisfies artifact contract (724.627667ms)
+✔ one broken generated alias is rejected (631.993917ms)
+✔ an external runtime asset fails even when its document digest is explicitly accepted (660.142667ms)
+✔ post-build dist is mandatory (582.175042ms)
+✔ default pinned digest cannot silently follow edited canonical HTML (613.172833ms)
+✔ external stylesheet and image references fail the standalone policy (686.241875ms)
+ℹ tests 6
+ℹ suites 0
+ℹ pass 6
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 4050.32825

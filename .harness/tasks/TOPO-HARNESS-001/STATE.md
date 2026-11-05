@@ -18,3 +18,14 @@ Original failures and exception retained in DEVELOPMENT-ATTEMPTS.json and eviden
 
 ## Next
 Commit candidate, run ./check.sh using supported Node24, preserve complete logs and rejection proof. Stop on two identical failures or three failed attempts for any gate step. Then prepare one draft PR/Hermes exact-SHA handoff; never merge/deploy/publish.
+
+<!-- HARNESS-RUNTIME -->
+## Harness runtime status
+
+Status: **BLOCKED**
+Source SHA: `b8ed18d84b0e6fa5462a78fb6d7d9338d64ee31a`
+Run: `.harness/tasks/TOPO-HARNESS-001/runs/2026-11-05T21-33-01-962Z-xHxKIp`
+Current step: negative-proof
+Required step failed: negative-proof (exit 1); see /Users/dennisariens/projects/topo-harness-v1/.harness/tasks/TOPO-HARNESS-001/runs/2026-11-05T21-33-01-962Z-xHxKIp/negative-proof.log
+No required step was skipped into a PASS. Check attempts.json before retrying.
+Independent Hermes: OPEN. No merge/release authorization.

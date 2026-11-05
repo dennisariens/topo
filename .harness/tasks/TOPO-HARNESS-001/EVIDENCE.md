@@ -95,3 +95,7 @@ Only these persistent contract/state/evidence files have been added. check.sh, e
 Owner selected PR71; branch rebased onto b06b130 with no application merge or changes. Unit evidence: policy/process6PASS, artifacts6PASS, browser fail-closed testPASS. Browser development attempts are retained verbatim in evidence/browser-development*, summarized in DEVELOPMENT-ATTEMPTS.json. Attempt3 achieved Chromium desktopPASS, but responsive/WebKit driver errors remained; fixes are prepared and not executed after cap. Overall check.sh/CI/negative-gate proof remain unverified/incomplete. No GATE:PASS claim.
 
 No iMac stopping cause has been confirmed; SSH access was denied earlier. The current stop is the mission's explicit maximum-three-attempt rule, not an assumed platform limitation.
+
+
+## Authorized continuation and implemented candidate
+Owner explicitly authorized one additional browser check; attempt4 passed both engines/three widths. DEVELOPMENT-ATTEMPTS.json retains every prior failure and the exception. App and existing tests remain byte-unchanged relative to PR71. Added unit evidence covers policy/process/artifacts/missing-browser/contracts/disposable identity, source cap/credential removal, repeated-error normalization and actual npm startup. CI is reviewable configuration; remote execution is not claimed until observed. Next action is actual complete check.sh on a committed candidate, including deliberate rejection through real entrypoint.

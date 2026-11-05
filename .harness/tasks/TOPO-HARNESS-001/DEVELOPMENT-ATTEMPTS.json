@@ -92,6 +92,41 @@
     }
   ],
   "maximumAttempts": 3,
-  "status": "BLOCKED_ATTEMPT_LIMIT",
-  "latestFixesExecuted": false
+  "status": "RESOLVED_BY_EXPLICIT_OWNER_EXCEPTION",
+  "latestFixesExecuted": true,
+  "ownerAuthorizedFourthAttempt": {
+    "authorization": "Owner replied yes to one additional browser verification",
+    "status": "PASS",
+    "engines": {
+      "chromium": [
+        {
+          "width": 1500,
+          "status": "PASS"
+        },
+        {
+          "width": 768,
+          "status": "PASS"
+        },
+        {
+          "width": 320,
+          "status": "PASS"
+        }
+      ],
+      "webkit": [
+        {
+          "width": 1500,
+          "status": "PASS"
+        },
+        {
+          "width": 768,
+          "status": "PASS"
+        },
+        {
+          "width": 320,
+          "status": "PASS"
+        }
+      ]
+    },
+    "evidence": "evidence/browser-authorized-4/summary.json"
+  }
 }

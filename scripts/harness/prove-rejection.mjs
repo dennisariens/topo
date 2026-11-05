@@ -1,7 +1,7 @@
 // Called only inside the disposable verification clone, never mutates original application files.
-import{readFileSync,writeFileSync}from'node:fs';import{spawnSync,execFileSync}from'node:child_process';import{resolve}from'node:path';
+import{readFileSync,writeFileSync}from'node:fs';import{spawnSync,execFileSync}from'node:child_process';import{resolve}from'node:path';import{assertDisposable}from'./workspace.mjs';
 const args=process.argv.slice(2);if(args.length!==4||args[0]!=='--root'||args[2]!=='--out')throw Error('Expected --root DIRECTORY --out FILE');
 const root=resolve(args[1]),out=resolve(args[3]);
-if(!root.includes('topo-harness-')||!execFileSync('git',['rev-parse','--git-common-dir'],{cwd:root,encoding:'utf8'}).trim())throw Error('Negative proof requires disposable verification repository');
+assertDisposable(root,process.env.HARNESS_WORKSPACE_NONCE);
 const file=resolve(root,'output/html/TOPO-NINO-Computer-Release.html'),original=readFileSync(file);let result;
 try{writeFileSync(file,Buffer.concat([original,Buffer.from('\n<!-- deliberate harness rejection probe -->\n')]));const r=spawnSync('bash',[resolve(root,'check.sh'),'TOPO-HARNESS-001'],{cwd:root,env:process.env,encoding:'utf8',timeout:60000,maxBuffer:4e6});const output=(r.stdout||'')+(r.stderr||'');result={deliberateMutation:'standalone HTML alias in disposable clone only',exitCode:r.status,output,expected:'GATE: FAIL; protected-file rejection; no GATE: PASS',passed:r.status!==0&&r.status!==null&&output.includes('GATE: FAIL')&&output.includes('DENIED source modification: output/html/TOPO-NINO-Computer-Release.html')&&!/^GATE: PASS\s*$/m.test(output)};if(!result.passed)throw Error('Real gate did not reject deliberate broken artifact as required');console.log('PASS: real check.sh rejected deliberate broken standalone artifact (exit '+r.status+').');}finally{writeFileSync(file,original);if(result)writeFileSync(out,JSON.stringify(result,null,2)+'\n');}

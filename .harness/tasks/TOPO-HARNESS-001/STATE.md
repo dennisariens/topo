@@ -1,30 +1,20 @@
 # TOPO-HARNESS-001 — persistent state
 
-Status: **BLOCKED_ATTEMPT_LIMIT**
+Status: **READY_FOR_FULL_GATE**
 Branch: agent/topo-harness-v1
 Base: PR71 b06b13059ff5e2ef7278c2d0c55597cf8a9435cf (owner-authorized)
-Independent Hermes: OPEN. Overall gate: NOT EXECUTED/PASS NOT CLAIMED.
+Independent Hermes: OPEN. No merge/release authorization.
 
-## Completed
-- Accepted PR71 base and committed task contract/plan before implementation.
-- Root/dev dependencies installed without changing app package/lock. Supported Node24.22.1 identified; host Node25.8.2 is outside jsdom's documented engine range.
-- Fixed-action/path policy and cleaned environment implemented;6 policy/process tests pass (including timeout/failure/credential stripping/two-error stop).
-- Artifact verifier and6 directed tests pass; missing dist correctly fails before build.
-- Browser verifier and fail-closed test implemented. Chromium desktop verified full workflow.
-- Initial check.sh/orchestrator and deliberate-rejection utility written, NOT yet integration-verified.
+## Progress
+- Accepted contract/initial state committed before implementation; original main mismatch resolved by owner selecting PR71.
+- Three browser development attempts failed on driver assumptions. Stopped and asked; owner explicitly authorized one additional attempt.
+- Authorized attempt4 **PASS**: Chromium/WebKit at1500/768/320,45/11/3stages/two styles/referencecodes, F1/backward selection/book, one actual correct answer/reward guard,reload, real backup/reset/import. Exact evidence: evidence/browser-authorized-4/summary.json.
+- AGENTS36lines, templates/verifier, technically enforced runner policy, isolated workspace identity, attempt/fingerprint handling, dev-only lock-pinned browser tooling and least-privilege reviewable CI are implemented.
+- Internal review identified disposable-guard/fingerprint issues; fixes have directed tests and read-only re-review with no further concrete finding.
+- Full check.sh and actual rejection proof are next; no overall GATE:PASS claimed yet.
 
-## Required stop — actual browser attempts
-1. Both engines1500 failed a driver assertion that counted duplicated canonical/focus map-style controls. Adapted to unique metadata/visible controls.
-2. Both engines1500 failed because map options are in a closed details menu. Adapted to real visible disclosure interaction.
-3. Chromium1500 passed all checks; Chromium768 failed because mode tabs are inside closed Focus Menu. WebKit1500 failed backward selection because Home does not move the caret equivalently. Source fixes prepared: open Focus Menu and select with actual arrow keys. **No fourth execution.**
+## Retry history
+Original failures and exception retained in DEVELOPMENT-ATTEMPTS.json and evidence/browser-development*/. No unauthorized fourth retry occurred. Additional unit development corrected a noncanonical macOS temp path in clone-identity fixture and distinct npm config paths; current unit results are retained separately. Gate subprocess failure ledger is local attempts.json; CI starts fresh checkout and never claims cross-machine agent enforcement.
 
-Exact engine/context failures: DEVELOPMENT-ATTEMPTS.json and evidence/browser-development*/. These are harness-driver failures, not proven app defects. Different errors occurred; no blind repeated retry, but maximum3 attempts for this step is reached.
-
-## Still incomplete
-- Latest browser fixes unverified. Full check.sh quality gate and real deliberate-rejection proof NOT EXECUTED.
-- AGENTS refactor, task template/verifier and CI workflow NOT completed.
-- No draft PR, push, merge, deployment, release or production action.
-- Existing app/art/tests/lockfile/PR61/64/71 implementations unchanged.
-
-## Resume requirement
-Owner must explicitly authorize a fresh verification attempt after the three-attempt cap, or redirect this step. Preserve all failure evidence; do not mark browser or overall gate PASS from prepared code. On authorized resume finish remaining harness/CI pieces, execute gate and negative proof, then create one draft PR with exact evidence/Hermes handoff.
+## Next
+Commit candidate, run ./check.sh using supported Node24, preserve complete logs and rejection proof. Stop on two identical failures or three failed attempts for any gate step. Then prepare one draft PR/Hermes exact-SHA handoff; never merge/deploy/publish.

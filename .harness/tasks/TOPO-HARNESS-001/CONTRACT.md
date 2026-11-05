@@ -1,20 +1,17 @@
-# TOPO-HARNESS-001 — initial task contract
+# TOPO-HARNESS-001 — accepted implementation contract
 
-Status: pre-implementation; base decision BLOCKED.
+Status: IMPLEMENTING. Owner clarification: **PR71** (5 November2026) supersedes the original main-only base requirement. Branch agent/topo-harness-v1 is rebased onto exact PR71 b06b13059ff5e2ef7278c2d0c55597cf8a9435cf; PR61/64/71 application branches remain unchanged.
 
-## Requested outcome
-A lightweight reproducible/recoverable TOPO agent harness, one draft PR, Codex implements/Hermes independently verifies/FARIS coordinates/owner approves merges and releases. No application redesign, merge, deployment, release publication or production changes.
+Deliver: concise <=40-line AGENTS, task template/verifier/permissions, executable root check.sh, minimal scripts/harness utilities, persistent attempts/state/evidence, least-privilege PR CI, one draft PR stacked on PR71. No app/art/test/package/runtime changes, merge/deploy/release or production actions. School codes stay reference data; three-stage Discover/Point/Write and Gold,45 objects/11 chapters, two maps, Nino/pizza/Vespa, saves/resets/backups and file:// stay intact.
 
-## Required work
-Concise <=40-line operational AGENTS.md preserving project rules by reference; .harness/task-template.md, verifier.md, permissions.yaml and task CONTRACT/STATE/EVIDENCE; executable check.sh and minimal scripts/harness verification; least-privilege pull-request CI without deployment.
+## Gate obligations
+1. Enforced path/command allowlist, cleaned child environment without inherited credentials, immutable application comparison to pinned base.
+2. Disposable shared Git clone; copy installed dev dependencies, run build/lint/full npm tests and existing release/map/V2 preservation audits there. Never modify the source app with build outputs.
+3. Required standalone byte parity/inlining/invariants and Chromium+WebKit file:// checks, including320px/tablet/desktop, F1 and real save/reward interactions. A missing browser/tool/dependency is failure, not skip.
+4. Harness unit tests must exercise denied commands/paths, missing/failed steps, timeouts and persistent two-identical-failure stop. No automatic retries; maximum3 per step and stop at same error twice.
+5. Deliberately corrupt a standalone alias only in disposable workspace and invoke real check.sh; expect nonzero,GATE: FAIL,specific protected-file rejection and no GATE: PASS. Restore only the disposable copy afterward.
+6. Record exact source SHA, code digest, artifact SHA256, all step exits/durations, logs, environment and known limits. Typecheck remains explicitly no-op, never type-safety evidence.
 
-Required gate: existing lint/tests/build, standalone integrity and actual relevant offline browser verification. Skipped/unavailable/failed required checks cannot yield GATE: PASS. Typecheck is a documented no-op, not type safety. Prove deliberate failure rejection. Permissions must have technical enforcement, not YAML-only claims. State/evidence must persist exact source and executed results.
+Permissions are enforced within the harness through fixed operations, path validation, pre/post source checks, clean environment and read-only CI credentials. This is not a host-level jail for an independently running agent/admin; no YAML-only sandbox claim. CI has no deploy step/secrets and never uses pull_request_target.
 
-## Baseline and scope
-User explicitly requires isolated branch agent/topo-harness-v1 from main. Created from main7e38160cb2f1f1c159c907e0150464b78c761f38; no PR61/PR64 implementation is checked out for editing, merged, overwritten or cherry-picked. Preserve45 items/11 chapters, teaching/Gold/maps/school codes, Nino/art/rewards, saves/resets/backups and offline file://. Never alter existing tests merely for green.
-
-## Retry/stop rule
-Maximum3 attempts per failed step; stop after the same error occurs twice. No retry of a deterministic baseline contradiction. Record actual attempts and blockers. An attempt to inspect iMac in the preceding diagnostic turn failed SSH authentication; it was not retried or bypassed.
-
-## Blocking question
-main has discover/point/write/codes and no Discovery map module; PR61 has discover/point/write plus both map styles, and PR64 is based on61. Implementing the requested modern invariants on main would require application changes/importing an unmerged implementation, expressly prohibited. Silently skipping those required invariants would permit false acceptance. Owner must clarify whether the harness guards actual old main (with modern requirements deferred), or authorize a modern baseline. No implementation/gate PASS is claimed.
+Codex/internal reviewers implement/check; Hermes independently verifies exact candidate afterward; FARIS/Main coordinates; owner controls merge/release. Independent Hermes remains OPEN until actual response.

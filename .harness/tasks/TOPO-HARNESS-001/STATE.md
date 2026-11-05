@@ -1,26 +1,19 @@
 # TOPO-HARNESS-001 — persistent state
 
-Status: **BLOCKED_BASELINE_DECISION**
+Status: **IMPLEMENTING**
 Branch: agent/topo-harness-v1
-Workspace: /Users/dennisariens/projects/topo-harness-v1
-Base: main7e38160cb2f1f1c159c907e0150464b78c761f38
+Base: PR71 b06b13059ff5e2ef7278c2d0c55597cf8a9435cf
+Owner decision: "pr #71" resolves baseline blocker; no app merge is authorized.
+Independent Hermes: OPEN. Owner merge/release approval: NOT REQUESTED/NOT GIVEN.
 
-## Completed preflight
-- Inspected repository, local clean worktree, open PR list, scripts/tests, AGENTS.md, PROJECT_STATE.md, DECISIONS.md and learning/route documentation.
-- Confirmed no existing remote agent/topo-harness-v1 or other harness-named branch/open PR.
-- Compared pinned main/PR61/PR64 source and package scripts; exact observations in EVIDENCE.md.
-- Created requested isolated branch from main and wrote contract/state before implementation.
-- Application, art, existing tests, package files and production configuration unchanged.
+## Initial state and history
+Original main preflight/three persistent documents were committed before code. main7e38160 had7 programs/four phases/no Discovery style; PR61/64 had17/three phases/two styles. Original blocker recorded in EVIDENCE. No remote harness branch/PR existed. This local branch was rebased with its documentation onto PR71 after explicit owner direction.
 
-## Attempts
-| Step | Attempts | Result |
-| --- | --- | --- |
-| Fetch/inspect main and PR61/64 | 1 | PASS |
-| Find remote harness branch/PR | 1 | PASS: none exists remotely |
-| Resolve required invariant baseline | 1 | BLOCKED: source contradicts requested modern invariant coverage |
-| Implement/run quality gate | 0 | NOT STARTED; must not fabricate PASS |
+## Attempt ledger
+- Baseline inspection:1 PASS.
+- Original baseline contradiction:1 BLOCKED, resolved by owner PR71 selection.
+- No automatic retries. A deliberately broken-work probe is expected rejection, not a failed implementation attempt.
+- Implementation/real gate evidence pending; no PASS claim yet.
 
-No repeated failing step or automatic retry occurred. Prior iMac read-only SSH probe returned Permission denied(publickey,password,keyboard-interactive); no second authentication attempt. This does not prove why the iMac agent stopped.
-
-## Next permitted action
-Wait for owner clarification: keep old main's actual behavior and explicitly defer modern-map/three-stage checks, or authorize a different modern baseline. Then finish contract before implementation. Do not infer permission to merge61/64 or weaken acceptance. No draft implementation PR has been created; no push/merge/deploy/release occurred.
+## Next
+Implement .harness/PLAN.md, execute gate, record proof and draft PR. If same failure occurs twice, stop and record blocker; no guessing/skipping required checks.

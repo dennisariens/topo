@@ -1,0 +1,47 @@
+✔ repair continues on a new commit, clears stale verification and never resets retry counters (1.531ms)
+✔ repaired rejects an unchanged commit and invalidates accepted verification evidence (0.280041ms)
+✔ two consecutive interruptions are the same error and stop automatic recovery (0.18875ms)
+✔ controller errors can be resumed but external blockers cannot be resumed away (0.157292ms)
+✔ CLI failures that never touched the task cannot block it (0.231833ms)
+✔ every stopped phase names exactly who acts next (0.234583ms)
+✔ recovery terminates the exact orphaned action tree of a killed controller (166.53575ms)
+✔ recorded action with a reused PID is never signalled (109.541084ms)
+✔ run supervises one interruption, then stops at the retry budget without another attempt (41.120458ms)
+✔ FIXTURE: signed QA reaches REVIEW_READY through package guards; replay needs no key for status (333.487166ms)
+✔ FIXTURE: forged QA event with a valid hash chain cannot package; replaced manifest is refused (540.516667ms)
+✔ handoff round trip: Claude Code to Codex and back with exclusive ownership (896.349833ms)
+✔ REGRESSION: handoff refuses unpushed commits, dirty work and local-only evidence (687.989917ms)
+✔ accept refuses code drift, stale remote, tampered records, unknown agents and secrets (1176.38225ms)
+✔ handoff, metric and proposal records are metadata and never change the implementation digest (0.261208ms)
+✔ discovery finds relevant host design skills, excludes unsuitable stacks, promotes nothing (5.326125ms)
+✔ required skill resolves on either host through reviewed alternates and stays blocked when none exist (2.880125ms)
+✔ registry resolves every required design skill for both Codex and Claude Code hosts by declaration (0.351125ms)
+✔ brain check detects source drift and refuses a fact without committed evidence (470.956583ms)
+✔ evolution collects real controller history and repeated failures into evidence-cited proposals only (48.978ms)
+✔ FIXTURE: a receipt for a different bundle manifest is refused; the verifier needs only public data (239.466959ms)
+✔ failure ledger clears only after a complete PASS and survives every other outcome (0.781958ms)
+✔ imported Codex pilot history stays a valid chain and its gate hash matches the retained summary (0.310291ms)
+✔ REGRESSION: the real CLI leaves a task untouched on bad arguments and on a live action lock (112.739833ms)
+✔ V2 additions cannot modify V1, product, policy, arbitrary workflows or traverse paths (1.159041ms)
+✔ original V1 verdict requires all12 steps, exact baseline and no skipped browser (0.406583ms)
+✔ store survives a killed real writer, replays committed events and rejects truncated/tampered history (58.169208ms)
+✔ live single-writer lock rejects a second writer without deleting its lock (6.134166ms)
+✔ phase guards forbid stale success, forged ready, silent recovery and repeated failures (0.4515ms)
+✔ signed QA binds exact SHA/hash/task/reviewer; local unsigned records cannot grant approval (2.536875ms)
+✔ evidence-only deltas cannot hide executable code or artifact replacements (0.173208ms)
+✔ controller rejects missing checks, stale source, changed executable digest and unavailable independent QA (1.332917ms)
+✔ interrupted actual controller is recovered in a second process; no verification success is invented (118.843209ms)
+✔ a second controller cannot acquire the same action lease while an async action is active (1.136125ms)
+✔ skill routing is standalone-specific, required files must exist and use needs unchanged read plus action evidence (6.64175ms)
+✔ brain reconciliation accepts verified typed facts only, rejects stale/unapproved/private claims (0.476375ms)
+✔ evolution produces evidence-backed proposals; cannot self-promote policy with local approval flags (0.216916ms)
+✔ review package has an explicit allowlist and excludes browser backups, storage, arbitrary JSON and links (9.329292ms)
+✔ PASS label alone is not a verified brain result when required gate checks are absent (0.231792ms)
+ℹ tests 39
+ℹ suites 0
+ℹ pass 39
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 4905.974917

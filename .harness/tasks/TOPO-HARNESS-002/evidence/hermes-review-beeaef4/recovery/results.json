@@ -1,0 +1,74 @@
+{
+  "reviewedSha": "beeaef406dc5338a4b43e2403a7d9b0519d1adc7",
+  "node": "v24.15.0",
+  "fixtureRoot": "/Users/dennisariens/.hermes/cache/scratch/hermes-harness-v2-review/recovery/fixtures-Teydpg",
+  "results": [
+    {
+      "id": "live-runner-recover",
+      "cliStatus": 0,
+      "lockOwnerStillAlive": true,
+      "actionSignal": "SIGKILL",
+      "phase": "BLOCKED",
+      "reason": "INTERRUPTED",
+      "attempts": 1
+    },
+    {
+      "id": "orphan-after-root-close",
+      "rootExitCode": 0,
+      "afterDeadlineDescendantAlive": true,
+      "actionIdentityExists": false,
+      "recovery": {
+        "terminated": false,
+        "pids": []
+      }
+    },
+    {
+      "id": "success-does-not-break-consecutive-failures",
+      "afterSuccess": {
+        "attempts": 1,
+        "same": 1
+      },
+      "laterFirstFailure": {
+        "phase": "BLOCKED",
+        "attempts": 2,
+        "same": 2
+      },
+      "historyRows": 12
+    },
+    {
+      "id": "passing-controls",
+      "snapshotIgnored": true,
+      "truncatedLogRejected": true,
+      "freshVerificationCalls": 1,
+      "secondInterruptionPhase": "BLOCKED",
+      "same": 2
+    },
+    {
+      "id": "brain-dirty-code-still-pass",
+      "before": {
+        "status": "PASS",
+        "sourceSha": "f0c0e029d385dcff6c00c77275e075e8bc121c3a",
+        "facts": 1
+      },
+      "after": {
+        "status": "PASS",
+        "sourceSha": "f0c0e029d385dcff6c00c77275e075e8bc121c3a",
+        "facts": 1
+      },
+      "dirtyStatus": "M scripts/harness/v2/check.mjs",
+      "evidenceIsSyntheticFixture": true
+    },
+    {
+      "id": "passing-pid-identity-control",
+      "mismatchedStartNotSignalled": true
+    },
+    {
+      "id": "passing-skills-controls",
+      "selectionNotUsage": true,
+      "readNotUsage": true,
+      "missingRequiredBlocks": true,
+      "changedInstructionsRejected": true,
+      "missingUseEvidenceRejected": true
+    }
+  ]
+}

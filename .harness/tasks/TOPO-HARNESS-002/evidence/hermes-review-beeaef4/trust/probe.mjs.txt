@@ -1,0 +1,55 @@
+// TEST-ONLY FIXTURES: ephemeral keys, synthetic gates, sandbox repositories and local bare remotes.
+// No real acceptance, real receipt, production signing or network remote is used.
+import {mkdirSync,readFileSync,writeFileSync,copyFileSync,symlinkSync,unlinkSync,existsSync,readdirSync} from 'node:fs';
+import {join,resolve} from 'node:path';
+import {generateKeyPairSync,sign} from 'node:crypto';
+import {execFileSync} from 'node:child_process';
+const src='/Users/dennisariens/projects/topo-harness-v2-independent-qa';
+const base='/Users/dennisariens/.hermes/cache/scratch/hermes-harness-v2-review/trust';
+const {digest,implementationDigest,APP_HASH}=await import(src+'/scripts/harness/v2/scope.mjs');
+const {qaMessage,verifyQa}=await import(src+'/scripts/harness/v2/machine.mjs');
+const {createTask,transact,openTask}=await import(src+'/scripts/harness/v2/store.mjs');
+const {advance,run}=await import(src+'/scripts/harness/v2/controller.mjs');
+const {verifyReceipt}=await import(src+'/scripts/harness/v2/receipt.mjs');
+const {emitHandoff,acceptHandoff}=await import(src+'/scripts/harness/v2/handoff.mjs');
+const {createPackage}=await import(src+'/scripts/harness/v2/package.mjs');
+const log=(name,data)=>console.log(name+' '+JSON.stringify(data));
+const put=(p,s)=>{mkdirSync(resolve(p,'..'),{recursive:true});writeFileSync(p,s);};
+const fixtureRoot=join(base,'fixtures-'+Date.now());mkdirSync(fixtureRoot,{recursive:true});
+function repo(name,remote=false){const root=join(fixtureRoot,name);mkdirSync(root);const g=(...a)=>execFileSync('git',a,{cwd:root,encoding:'utf8',stdio:['ignore','pipe','pipe']}).trim();g('init','-q','-b','fixture/review');g('config','user.name','TEST ONLY Fixture');g('config','user.email','fixture@invalid');put(join(root,'.gitignore'),'.harness/tasks/TOPO-HARNESS-002/runs/\n');put(join(root,'.harness/tasks/TOPO-HARNESS-002/CONTRACT.md'),'TEST ONLY synthetic contract\n');put(join(root,'scripts/harness/v2/fixture.mjs'),'// TEST ONLY implementation\n');g('add','.');g('commit','-qm','TEST ONLY fixture base');if(remote){const r=join(fixtureRoot,name+'-remote.git');execFileSync('git',['init','-q','--bare',r]);g('remote','add','origin',r);g('push','-qu','origin','HEAD');}return {root,g};}
+function receipt(s,type='ed25519',reviewer='Fixture Reviewer'){const opts=type==='rsa'?{modulusLength:2048}:undefined;const {publicKey,privateKey}=generateKeyPairSync(type,opts);const trust={'fixture-only':{reviewer,publicKey:publicKey.export({type:'spki',format:'pem'})}};const r={taskId:s.taskId,sourceSha:s.sourceSha,artifactSha256:s.artifactSha256,manifestSha256:s.provisionalManifest,verdict:'PASS',reviewer,role:'independent',keyId:'fixture-only'};r.signature=sign(null,Buffer.from(qaMessage(r)),privateKey).toString('base64');return {r,trust};}
+function setup(name,manifestEdit){const h=repo(name);const dir=join(h.root,'.harness/tasks/TOPO-HARNESS-002/runs/current'),gate=join(dir,'synthetic-gate'),bundle=join(dir,'bundle');mkdirSync(bundle,{recursive:true});const head=h.g('rev-parse','HEAD');const html=readFileSync(join(src,'output/html/TOPO-NINO-Computer-Release.html'));put(join(bundle,'TOPO-NINO-provisional-review.html'),html);put(join(bundle,'tests.log'),'TEST ONLY evidence A\n');let manifest={schema:1,status:'PROVISIONAL_AWAITING_INDEPENDENT_QA',sourceSha:head,artifactSha256:APP_HASH,files:['TOPO-NINO-provisional-review.html','tests.log'].map(path=>({path,sha256:digest(readFileSync(join(bundle,path)))})),learnerDataIncluded:false};if(manifestEdit)manifest=manifestEdit(manifest,{bundle,dir,root:h.root});put(join(bundle,'manifest.json'),JSON.stringify(manifest));const g={status:'PASS',sourceSha:head,implementationDigest:implementationDigest(h.root),checks:['scope','v2-tests','v1-gate','source-unchanged'].map(id=>({id,status:'PASS',exitCode:0})),fixture:'TEST ONLY synthetic gate, not executed verification'};put(join(gate,'summary.json'),JSON.stringify(g));createTask(dir,{taskId:'TOPO-HARNESS-002',kind:'candidate-review',sourceSha:head,contractSha:digest(readFileSync(join(h.root,'.harness/tasks/TOPO-HARNESS-002/CONTRACT.md'))),approvalReference:'TEST ONLY fixture'});const ev=(kind,payload)=>transact(dir,()=>({kind,payload}));ev('plan',{planSha:digest('TEST ONLY')});ev('implemented',{sourceSha:head});ev('verify-start',{sourceSha:head});ev('verified',{sourceSha:head,gatePath:gate,gateHash:digest(readFileSync(join(gate,'summary.json'))),artifactSha256:APP_HASH});ev('bundled',{manifestHash:digest(readFileSync(join(bundle,'manifest.json')))});const {r,trust}=receipt(openTask(dir));const trustPath=join(fixtureRoot,name+'-PUBLIC-fixture-trust.json');put(trustPath,JSON.stringify(trust));process.env.TOPO_HARNESS_QA_TRUST=trustPath;ev('qa',r);put(join(dir,'bundle.json'),JSON.stringify({path:bundle}));return {...h,dir,bundle,r,trust,trustPath};}
+console.log('ALL RESULTS BELOW ARE TEST-ONLY SYNTHETIC FIXTURES; NO REAL PASS/QA/REMOTE ACCEPTANCE.');
+// Mutations after the fixture approval leave the signed manifest completely unchanged.
+{
+const f=setup('post-sign-extra');put(join(f.bundle,'browser-backup.json'),'TEST ONLY unreviewed storage-shaped bytes');const s=await advance(f.root,f.dir);log('UNLISTED_EXTRA_AFTER_FIXTURE_SIGNATURE',{phase:s.phase,extraExists:existsSync(join(f.bundle,'browser-backup.json')),manifestListsExtra:JSON.parse(readFileSync(join(f.bundle,'manifest.json'))).files.some(v=>v.path==='browser-backup.json')});
+// REVIEW_READY is returned by run without checking head or any package files.
+put(join(f.root,'scripts/harness/v2/fixture.mjs'),'// TEST ONLY implementation changed after acceptance\n');f.g('add','.');f.g('commit','-qm','TEST ONLY post-review implementation change');put(join(f.bundle,'TOPO-NINO-provisional-review.html'),'TEST ONLY changed HTML after ready');const after=await run(f.root,f.dir);log('RUN_AFTER_NEW_COMMIT_AND_CHANGED_HTML',{phase:after.phase,headDiffers:f.g('rev-parse','HEAD')!==after.sourceSha,artifactDiffers:digest(readFileSync(join(f.bundle,'TOPO-NINO-provisional-review.html')))!==APP_HASH,publicVerifier:verifyReceipt(f.r,f.trust,after).status});
+}
+{
+const f=setup('post-sign-symlink');const target=join(fixtureRoot,'external-fixture-log.txt');put(target,readFileSync(join(f.bundle,'tests.log')));unlinkSync(join(f.bundle,'tests.log'));symlinkSync(target,join(f.bundle,'tests.log'));const s=await advance(f.root,f.dir);log('SYMLINK_AFTER_FIXTURE_SIGNATURE',{phase:s.phase,targetOutsideBundle:!target.startsWith(f.bundle+'/')});
+}
+{
+const f=setup('signed-traversal-manifest',(m,{bundle})=>{put(join(bundle,'../outside-fixture.txt'),'TEST ONLY outside bytes');m.files=[{path:'../outside-fixture.txt',sha256:digest('TEST ONLY outside bytes')}];return m;});const s=await advance(f.root,f.dir);log('FIXTURE_REVIEWER_SIGNED_TRAVERSAL_AND_OMITTED_HTML',{phase:s.phase,manifestFiles:JSON.parse(readFileSync(join(f.bundle,'manifest.json'))).files});
+}
+{
+const s={taskId:'TOPO-HARNESS-002',sourceSha:'a'.repeat(40),artifactSha256:'b'.repeat(64),provisionalManifest:'c'.repeat(64)};const {r,trust}=receipt(s,'rsa');log('RSA_NOT_ED25519',{accepted:verifyQa(r,trust,s)});
+for(const field of ['taskId','sourceSha','artifactSha256','manifestSha256','reviewer','role']){let rejected=false;try{verifyQa({...r,[field]:'mismatch'},trust,s);}catch{rejected=true;}log('RECEIPT_BINDING_CONTROL',{field,rejected});}
+}
+// All handoffs below use a local bare fixture remote, never GitHub or the real checkout.
+{
+const h=repo('handoff-evidence-deleted',true),taskId='TOPO-HARNESS-002';const evidence=join(h.root,'.harness/tasks',taskId,'evidence/final/summary.json');put(evidence,'{"fixture":"TEST ONLY committed synthetic gate"}');h.g('add','.');h.g('commit','-qm','TEST ONLY evidence');h.g('push','-q');const handoff=emitHandoff(h.root,{taskId,from:'codex',to:'hermes',next:'TEST ONLY fixture review',controller:{gateHash:digest(readFileSync(evidence)),sourceSha:h.g('rev-parse','HEAD')}});h.g('add','.');h.g('commit','-qm','TEST ONLY emitted handoff');h.g('push','-q');unlinkSync(evidence);h.g('add','-A');h.g('commit','-qm','TEST ONLY delete referenced evidence');h.g('push','-q');const a=acceptHandoff(h.root,{taskId,as:'hermes'});log('HANDOFF_ACCEPTS_DELETED_REFERENCED_EVIDENCE',{kind:a.kind,evidenceExists:existsSync(evidence),referencedGateHash:handoff.controller.gateHash});
+}
+{
+const h=repo('handoff-controls',true);const args={taskId:'TOPO-HARNESS-002',from:'codex',to:'hermes',next:'TEST ONLY controls'};put(join(h.root,'dirty.txt'),'TEST ONLY');try{emitHandoff(h.root,args);log('DIRTY_CONTROL',{rejected:false});}catch(e){log('DIRTY_CONTROL',{rejected:true,error:e.message});}h.g('add','.');h.g('commit','-qm','TEST ONLY unpushed');try{emitHandoff(h.root,args);log('UNPUSHED_CONTROL',{rejected:false});}catch(e){log('UNPUSHED_CONTROL',{rejected:true,error:e.message});}h.g('push','-q');try{emitHandoff(h.root,{...args,controller:{gateHash:'d'.repeat(64)}});log('LOCAL_ONLY_GATE_CONTROL',{rejected:false});}catch(e){log('LOCAL_ONLY_GATE_CONTROL',{rejected:true,error:e.message});}
+}
+{
+const h=repo('handoff-stale-gate',true),taskId='TOPO-HARNESS-002';const verifiedHead=h.g('rev-parse','HEAD');const evidence=join(h.root,'.harness/tasks',taskId,'evidence/summary.json');put(evidence,JSON.stringify({fixture:'TEST ONLY old gate',sourceSha:verifiedHead,implementationDigest:implementationDigest(h.root)}));h.g('add','.');h.g('commit','-qm','TEST ONLY durable old gate');put(join(h.root,'scripts/harness/v2/fixture.mjs'),'// TEST ONLY unverified new implementation\n');h.g('add','.');h.g('commit','-qm','TEST ONLY implementation after old gate');h.g('push','-q');const handoff=emitHandoff(h.root,{taskId,from:'codex',to:'hermes',next:'TEST ONLY stale gate fixture',controller:{gateHash:digest(readFileSync(evidence)),sourceSha:verifiedHead,phase:'BLOCKED'}});h.g('add','.');h.g('commit','-qm','TEST ONLY stale-gate handoff');h.g('push','-q');const a=acceptHandoff(h.root,{taskId,as:'hermes'});log('HANDOFF_ACCEPTS_STALE_GATE_IMPLEMENTATION',{kind:a.kind,gateSource:handoff.controller.sourceSha,handoffSource:handoff.headSha,implementationChangedSinceGate:true});
+}
+{
+const s={taskId:'TOPO-HARNESS-002',sourceSha:'a'.repeat(40),artifactSha256:'b'.repeat(64),provisionalManifest:'c'.repeat(64)};const a=receipt(s),b=receipt(s);let rejected=false;try{verifyQa(a.r,b.trust,s);}catch{rejected=true;}log('WRONG_SIGNER_CONTROL',{rejected});let tamperedRejected=false;try{verifyQa({...a.r,signature:'Zm9yZ2Vk'},a.trust,s);}catch{tamperedRejected=true;}log('FORGED_SIGNATURE_CONTROL',{rejected:tamperedRejected});
+}
+{
+const f=setup('listed-byte-control');put(join(f.bundle,'tests.log'),'TEST ONLY modified signed evidence');try{await advance(f.root,f.dir);log('LISTED_BYTE_MUTATION_CONTROL',{rejected:false});}catch(e){log('LISTED_BYTE_MUTATION_CONTROL',{rejected:true,error:e.message});}
+}
+log('FIXTURE_ROOT',{path:fixtureRoot});

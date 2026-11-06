@@ -1,0 +1,21 @@
+ALL RESULTS BELOW ARE TEST-ONLY SYNTHETIC FIXTURES; NO REAL PASS/QA/REMOTE ACCEPTANCE.
+UNLISTED_EXTRA_AFTER_FIXTURE_SIGNATURE {"phase":"REVIEW_READY","extraExists":true,"manifestListsExtra":false}
+RUN_AFTER_NEW_COMMIT_AND_CHANGED_HTML {"phase":"REVIEW_READY","headDiffers":true,"artifactDiffers":true,"publicVerifier":"VALID"}
+SYMLINK_AFTER_FIXTURE_SIGNATURE {"phase":"REVIEW_READY","targetOutsideBundle":true}
+FIXTURE_REVIEWER_SIGNED_TRAVERSAL_AND_OMITTED_HTML {"phase":"REVIEW_READY","manifestFiles":[{"path":"../outside-fixture.txt","sha256":"5986023d67673a3150a822289f91b6af26ac8b79703e82abd502e42c613a372b"}]}
+RSA_NOT_ED25519 {"accepted":true}
+RECEIPT_BINDING_CONTROL {"field":"taskId","rejected":true}
+RECEIPT_BINDING_CONTROL {"field":"sourceSha","rejected":true}
+RECEIPT_BINDING_CONTROL {"field":"artifactSha256","rejected":true}
+RECEIPT_BINDING_CONTROL {"field":"manifestSha256","rejected":true}
+RECEIPT_BINDING_CONTROL {"field":"reviewer","rejected":true}
+RECEIPT_BINDING_CONTROL {"field":"role","rejected":true}
+HANDOFF_ACCEPTS_DELETED_REFERENCED_EVIDENCE {"kind":"accept","evidenceExists":false,"referencedGateHash":"84aeb3ad2b67e4b00283e89c23de77f069a7d03d18f394c894b6a09c5627aa4a"}
+DIRTY_CONTROL {"rejected":true,"error":"Refusing handoff with uncommitted work: dirty.txt"}
+UNPUSHED_CONTROL {"rejected":true,"error":"Head not pushed: fixture/review local af3f2008eb9df4ede223343c712e2d78550a11a1 remote 9c9707838efe31e8dfdfc89a8d01cf668a1dfbd2"}
+LOCAL_ONLY_GATE_CONTROL {"rejected":true,"error":"Refusing local-only evidence: gate summary dddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd is not committed"}
+HANDOFF_ACCEPTS_STALE_GATE_IMPLEMENTATION {"kind":"accept","gateSource":"9c9707838efe31e8dfdfc89a8d01cf668a1dfbd2","handoffSource":"0044356f9537e9e66bc328a1cb7347cf5ea201c1","implementationChangedSinceGate":true}
+WRONG_SIGNER_CONTROL {"rejected":true}
+FORGED_SIGNATURE_CONTROL {"rejected":true}
+LISTED_BYTE_MUTATION_CONTROL {"rejected":true,"error":"Package bytes changed"}
+FIXTURE_ROOT {"path":"/Users/dennisariens/.hermes/cache/scratch/hermes-harness-v2-review/trust/fixtures-1793975746318"}

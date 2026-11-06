@@ -1,0 +1,95 @@
+{
+  "schema": 1,
+  "status": "PROVISIONAL_AWAITING_INDEPENDENT_QA",
+  "sourceSha": "beeaef406dc5338a4b43e2403a7d9b0519d1adc7",
+  "artifactSha256": "933931eb67a347948a270da7aa912bfc48ee3cba420c72fbe7d02e34c93d4a35",
+  "files": [
+    {
+      "path": "TOPO-NINO-provisional-review.html",
+      "sha256": "933931eb67a347948a270da7aa912bfc48ee3cba420c72fbe7d02e34c93d4a35",
+      "bytes": 40999720
+    },
+    {
+      "path": "artifacts.log",
+      "sha256": "493ab03ebeca33a82f6beef81a87d7c1c0493cae3657cc789a9ed0923fe64ade",
+      "bytes": 1766
+    },
+    {
+      "path": "browser/chromium-1500.png",
+      "sha256": "aba32ff191b62271709ddde4c28b500fd8dc2051e3bedf26b701aaec6b7c0ca2",
+      "bytes": 914205
+    },
+    {
+      "path": "browser/chromium-320.png",
+      "sha256": "6238415e1815a0a0ac61c48f399ce4d16b1aa6ea117a66881fb85523cf0c5834",
+      "bytes": 296500
+    },
+    {
+      "path": "browser/chromium-768.png",
+      "sha256": "2b08c7439e9b77cd250066ad5b4b7ff8e2409670a7a5d09c5b3ae2d4f0476ed5",
+      "bytes": 617644
+    },
+    {
+      "path": "browser/webkit-1500.png",
+      "sha256": "d77784b40d886646128983996c4c9728667e6b1285b223a33c64061e241c28b2",
+      "bytes": 1817608
+    },
+    {
+      "path": "browser/webkit-320.png",
+      "sha256": "7d5f5e8494f3135f0b2f2ba3a6cc4c4f217e15199c54a952f4de46fcab2750cd",
+      "bytes": 485073
+    },
+    {
+      "path": "browser/webkit-768.png",
+      "sha256": "24d0791067002fe36f149523ce3d3f94d8efb827733c6c371f2fc0ccaded78c4",
+      "bytes": 1032625
+    },
+    {
+      "path": "browser.log",
+      "sha256": "69f6733181eb72142400679a4f421210959a89242ef7487ed1f5f4c12e42a76d",
+      "bytes": 204
+    },
+    {
+      "path": "build.log",
+      "sha256": "4101ebaed3810f4bcba5854e6b2f0cadcba280683ccf9747e2eabcd3b960463a",
+      "bytes": 1451
+    },
+    {
+      "path": "harness-tests.log",
+      "sha256": "7d5084797c829ad7bc0f7ffbf51bf826161d483349220cfcbab63cd5515eb263",
+      "bytes": 1757
+    },
+    {
+      "path": "lint.log",
+      "sha256": "f3ce7a5b7c20fce5a7bb566196df9378b6431cc0846af365cde11e3c80994c43",
+      "bytes": 402
+    },
+    {
+      "path": "map-audit.log",
+      "sha256": "1e7fc5401acb97697e47b89398918f449fe94f18f9c56eeedd21a7db2076d170",
+      "bytes": 171
+    },
+    {
+      "path": "negative-proof.log",
+      "sha256": "65f136a8ab94ea5b8cd79588162609ddd3caada9aece368fd6320e5004c770b0",
+      "bytes": 77
+    },
+    {
+      "path": "release-audit.log",
+      "sha256": "1e5084ea60e5b30cb4c2388981c00813de7708b54dda8305cc38da58e3d7eeb5",
+      "bytes": 221
+    },
+    {
+      "path": "tests.log",
+      "sha256": "325984a11d45c91387bc6de69528c6947df35d6163b8437ab04c446f47832592",
+      "bytes": 8386
+    },
+    {
+      "path": "v2-audit.log",
+      "sha256": "4d7d429361d3943374297fc7f2959e5183a61e50d4305d761dc395e9dc955f14",
+      "bytes": 668
+    }
+  ],
+  "independentQa": "OPEN",
+  "learnerDataIncluded": false
+}

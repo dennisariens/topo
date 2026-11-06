@@ -1,0 +1,53 @@
+{
+  "ok": true,
+  "root": "/Users/dennisariens/.hermes/cache/scratch/topo-harness-EePsVj/work",
+  "expectedHtmlSha256": "933931eb67a347948a270da7aa912bfc48ee3cba420c72fbe7d02e34c93d4a35",
+  "files": {
+    "index.html": {
+      "bytes": 40999720,
+      "sha256": "933931eb67a347948a270da7aa912bfc48ee3cba420c72fbe7d02e34c93d4a35"
+    },
+    "output/html/TOPO-NINO-Computer-Release.html": {
+      "bytes": 40999720,
+      "sha256": "933931eb67a347948a270da7aa912bfc48ee3cba420c72fbe7d02e34c93d4a35"
+    },
+    "output/html/TOPO-Italie-Computer.html": {
+      "bytes": 40999720,
+      "sha256": "933931eb67a347948a270da7aa912bfc48ee3cba420c72fbe7d02e34c93d4a35"
+    },
+    "output/html/topo-italie-interactief.html": {
+      "bytes": 40999720,
+      "sha256": "933931eb67a347948a270da7aa912bfc48ee3cba420c72fbe7d02e34c93d4a35"
+    },
+    "output/html/topo-italie-duolingo.html": {
+      "bytes": 40999720,
+      "sha256": "933931eb67a347948a270da7aa912bfc48ee3cba420c72fbe7d02e34c93d4a35"
+    },
+    "output/html/NINO-2-Proefversie-2026-11-04.html": {
+      "bytes": 40999720,
+      "sha256": "933931eb67a347948a270da7aa912bfc48ee3cba420c72fbe7d02e34c93d4a35"
+    },
+    "dist/index.html": {
+      "bytes": 40999720,
+      "sha256": "933931eb67a347948a270da7aa912bfc48ee3cba420c72fbe7d02e34c93d4a35"
+    }
+  },
+  "checks": {
+    "pinned SHA256": true,
+    "inline runtime assets": true,
+    "embedded learning and route sources": true,
+    "learning metadata": {
+      "items": 45,
+      "chapters": 11,
+      "stages": [
+        "discover",
+        "point",
+        "write"
+      ],
+      "schoolCodes": "reference data retained"
+    },
+    "both map presentations": "presence only; no new GIS accuracy claim",
+    "approved artwork bytes": true
+  },
+  "errors": []
+}

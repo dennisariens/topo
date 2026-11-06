@@ -1,0 +1,94 @@
+// Independent adversarial probes; fixture evidence is NOT a real delivery gate.
+import assert from 'node:assert/strict';
+import {mkdirSync,writeFileSync,readFileSync,existsSync,mkdtempSync,cpSync} from 'node:fs';
+import {join,dirname} from 'node:path';
+import {fileURLToPath,pathToFileURL} from 'node:url';
+import {spawn,spawnSync,execFileSync} from 'node:child_process';
+const base=dirname(fileURLToPath(import.meta.url));
+const repo='/Users/dennisariens/projects/topo-harness-v2-independent-qa';
+const sha='beeaef406dc5338a4b43e2403a7d9b0519d1adc7';
+assert.equal(execFileSync('git',['rev-parse','HEAD'],{cwd:repo,encoding:'utf8'}).trim(),sha);
+const load=n=>import(pathToFileURL(join(repo,'scripts/harness/v2',n+'.mjs')));
+const {createTask,transact,openTask,withRunLock}=await load('store');
+const {nextState}=await load('machine');
+const {recoverAction,run}=await load('controller');
+const {runTracked,processAlive,terminateAction}=await load('action');
+const {digest,implementationDigest}=await load('scope');
+const {updateBrain,checkBrain}=await load('brain');
+const {routeSkills,readSkill,instructions,recordUse}=await load('skills');
+assert.equal(process.env.TMPDIR,'/Users/dennisariens/.hermes/cache/scratch','explicit scratch TMPDIR required');
+const root=mkdtempSync(join(base,'fixtures-')),results=[];
+const sleep=ms=>new Promise(r=>setTimeout(r,ms));
+async function until(fn){for(let i=0;i<200;i++){if(fn())return;await sleep(20);}throw Error('fixture readiness timeout');}
+const intake={taskId:'TOPO-PILOT-001',kind:'candidate-review',sourceSha:sha,contractSha:'b'.repeat(64),approvalReference:'independent-fixture-only'};
+function task(name){const dir=join(root,name);createTask(dir,intake);for(const event of [{kind:'plan',payload:{planSha:'b'.repeat(64)}},{kind:'implemented',payload:{sourceSha:sha}},{kind:'verify-start',payload:{sourceSha:sha}}])transact(dir,()=>event);return dir;}
+function record(id,data){results.push({id,...data});console.log(JSON.stringify(results.at(-1)));}
+// Copy scripts only so real CLI's import.meta-derived root is sandboxed.
+const cliRoot=join(root,'cli-copy');mkdirSync(cliRoot,{recursive:true});cpSync(join(repo,'scripts/harness'),join(cliRoot,'scripts/harness'),{recursive:true});
+// A recover CLI can terminate a live runner's fixture action despite its runner.lock.
+{
+ const dir=join(cliRoot,'.harness/tasks/TOPO-PILOT-001/runs/current');mkdirSync(dirname(dir),{recursive:true});
+ createTask(dir,intake);for(const e of [{kind:'plan',payload:{planSha:'b'.repeat(64)}},{kind:'implemented',payload:{sourceSha:sha}},{kind:'verify-start',payload:{sourceSha:sha}}])transact(dir,()=>e);
+ await withRunLock(dir,async()=>{
+  const actionFile=join(dir,'action.json');
+  const pending=runTracked(process.execPath,['-e','setInterval(()=>{},1000)'],{cwd:root,env:process.env,log:join(dir,'action.log'),timeoutMs:10000,actionFile});
+  await until(()=>existsSync(actionFile));const action=JSON.parse(readFileSync(actionFile));
+  const cli=spawnSync(process.execPath,[join(cliRoot,'scripts/harness/v2/controller.mjs'),'recover','TOPO-PILOT-001'],{encoding:'utf8'});
+  const ended=await pending,s=openTask(dir);
+  assert.equal(cli.status,0);assert.equal(processAlive(action),false);assert.equal(s.reason,'INTERRUPTED');assert(existsSync(join(dir,'runner.lock')));
+  record('live-runner-recover',{cliStatus:cli.status,lockOwnerStillAlive:true,actionSignal:ended.signal,phase:s.phase,reason:s.reason,attempts:s.attempts});
+ });
+}
+// runTracked loses the only persisted identity when the root exits first.
+{
+ const dir=join(root,'root-exits');mkdirSync(dir);const pidFile=join(dir,'descendant.pid'),file=join(dir,'action.json');
+ const code=`const {spawn}=require('node:child_process');const c=spawn(process.execPath,['-e','setInterval(()=>{},1000)'],{detached:true,stdio:'ignore'});c.unref();require('node:fs').writeFileSync(${JSON.stringify(pidFile)},String(c.pid));setTimeout(()=>process.exit(0),400);`;
+ let pid;
+ try{const ended=await runTracked(process.execPath,['-e',code],{cwd:root,env:process.env,log:join(dir,'action.log'),timeoutMs:800,actionFile:file});pid=Number(readFileSync(pidFile,'utf8'));await sleep(1000);
+ const alive=processAlive({pid});const recovery=await terminateAction(file);assert(alive);assert.equal(existsSync(file),false);assert.equal(recovery.terminated,false);
+ record('orphan-after-root-close',{rootExitCode:ended.exitCode,afterDeadlineDescendantAlive:alive,actionIdentityExists:false,recovery});
+ }finally{if(pid)try{process.kill(pid,'SIGKILL');}catch{}}
+}
+// Successful verification doesn't clear controller counts, so pre-success failures
+// become 'consecutive' on a later exact-head repair.
+{
+ const dir=task('successful-validation-ledger');
+ const failure={kind:'failure',payload:{code:'GATE_FAILED',fingerprint:'f'.repeat(64)}};
+ transact(dir,()=>failure);transact(dir,()=>({kind:'repaired',payload:{sourceSha:'c'.repeat(40),contractSha:'b'.repeat(64)}}));transact(dir,()=>({kind:'verify-start',payload:{sourceSha:'c'.repeat(40)}}));
+ const passed=transact(dir,()=>({kind:'verified',payload:{sourceSha:'c'.repeat(40),gatePath:'FIXTURE-ONLY',gateHash:'b'.repeat(64),artifactSha256:'b'.repeat(64)}}));
+ transact(dir,()=>({kind:'block',payload:{reason:'AUTHENTICATED_HERMES_RESPONSE_REQUIRED'}}));transact(dir,()=>({kind:'repaired',payload:{sourceSha:'d'.repeat(40),contractSha:'b'.repeat(64)}}));transact(dir,()=>({kind:'verify-start',payload:{sourceSha:'d'.repeat(40)}}));const final=transact(dir,()=>failure);
+ assert.equal(passed.attempts,1);assert.equal(passed.same,1);assert.equal(final.phase,'BLOCKED');
+ record('success-does-not-break-consecutive-failures',{afterSuccess:{attempts:passed.attempts,same:passed.same},laterFirstFailure:{phase:final.phase,attempts:final.attempts,same:final.same},historyRows:readFileSync(join(dir,'events.jsonl'),'utf8').trim().split('\n').length});
+}
+// Cache is not authoritative, and a hash-chain corruption fails closed.
+{
+ const dir=task('cache-and-replay');writeFileSync(join(dir,'snapshot.json'),'{"phase":"REVIEW_READY"}');assert.equal(openTask(dir).phase,'VERIFY');
+ const p=join(dir,'events.jsonl'),history=readFileSync(p,'utf8');writeFileSync(p,history.slice(0,-5));assert.throws(()=>openTask(dir),/Invalid\/truncated/);writeFileSync(p,history);
+ let calls=0;const s=await run(repo,dir,{advanceFn:async(_,d)=>{calls++;transact(d,()=>({kind:'verify-start',payload:{sourceSha:sha}}));return transact(d,()=>({kind:'interrupted',payload:{}}));}});assert.equal(calls,1);assert.equal(s.same,2);
+ record('passing-controls',{snapshotIgnored:true,truncatedLogRejected:true,freshVerificationCalls:calls,secondInterruptionPhase:s.phase,same:s.same});
+}
+// Minimal local Git fixture: brain check ignores dirty verification inputs.
+{
+ const dir=join(root,'brain');mkdirSync(dir);const git=(...a)=>execFileSync('git',['-c','user.name=Fixture','-c','user.email=fixture@example.invalid',...a],{cwd:dir,encoding:'utf8'});
+ git('init','-q');mkdirSync(join(dir,'scripts/harness/v2'),{recursive:true});writeFileSync(join(dir,'scripts/harness/v2/check.mjs'),'export const safe=true;\n');mkdirSync(join(dir,'docs/brain'),{recursive:true});
+ for(const n of ['PROJECT_STATE','DECISIONS','DESIGN_SYSTEM','LEERROUTE_DESIGN'])writeFileSync(join(dir,'docs',n+'.md'),'fixture '+n);
+ writeFileSync(join(dir,'docs/brain/current-state.md'),'<!-- generated:start -->\n<!-- generated:end -->');git('add','.');git('commit','-qm','fixture source');const sourceSha=git('rev-parse','HEAD').trim();
+ const evidence='.harness/tasks/TOPO-HARNESS-002/evidence/fixture/summary.json',gatePath=join(dir,evidence);mkdirSync(dirname(gatePath),{recursive:true});
+ writeFileSync(gatePath,JSON.stringify({status:'PASS',sourceSha,implementationDigest:implementationDigest(dir),checks:['scope','v2-tests','v1-gate','source-unchanged'].map(id=>({id,status:'PASS',exitCode:0}))}));
+ updateBrain(dir,{gatePath,evidence});git('add','.');git('commit','-qm','fixture evidence');const before=checkBrain(dir);
+ writeFileSync(join(dir,'scripts/harness/v2/check.mjs'),'export const safe=false;\n');const after=checkBrain(dir);assert.equal(after.status,'PASS');assert.notEqual(JSON.parse(readFileSync(gatePath)).implementationDigest,implementationDigest(dir));
+ record('brain-dirty-code-still-pass',{before,after,dirtyStatus:git('status','--porcelain').trim(),evidenceIsSyntheticFixture:true});
+}
+// Identity mismatch must never signal a real, test-owned live process.
+{
+ const child=spawn(process.execPath,['-e','setInterval(()=>{},1000)'],{stdio:'ignore'}),file=join(root,'wrong-start-action.json');
+ try{await sleep(100);writeFileSync(file,JSON.stringify({pid:child.pid,startedAt:'Mon Jan  1 00:00:00 2001'}));const r=await terminateAction(file);assert.equal(r.terminated,false);assert(processAlive({pid:child.pid}));record('passing-pid-identity-control',{mismatchedStartNotSignalled:true});}
+ finally{child.kill('SIGKILL');await new Promise(r=>child.once('close',r));}
+}
+// Required skill absence blocks; selection/read alone never promotes used.
+{
+ const file=join(root,'SKILL.md');writeFileSync(file,'# Fixture skill instructions');
+ const registry={version:1,skills:[{id:'fixture',required:true,kinds:['qa'],path:file}]};const selected=routeSkills(registry,'qa',{root})[0],read=readSkill(selected);assert.equal(selected.used,false);assert.equal(read.used,false);instructions(read);assert.throws(()=>recordUse(read,{path:join(root,'missing'),action:'fixture'}),/concrete/);writeFileSync(file,'# Modified fixture skill');assert.throws(()=>instructions(read),/changed/);assert.throws(()=>routeSkills({...registry,skills:[{...registry.skills[0],path:join(root,'missing')}]},'qa',{root}),/missing/);record('passing-skills-controls',{selectionNotUsage:true,readNotUsage:true,missingRequiredBlocks:true,changedInstructionsRejected:true,missingUseEvidenceRejected:true});
+}
+writeFileSync(join(base,'results.json'),JSON.stringify({reviewedSha:sha,node:process.version,fixtureRoot:root,results},null,2)+'\n');
+console.log('ALL ADVERSARIAL ASSERTIONS SATISFIED; fixture files retained at '+root);

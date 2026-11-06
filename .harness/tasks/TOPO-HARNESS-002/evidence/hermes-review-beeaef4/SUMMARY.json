@@ -1,0 +1,24 @@
+{
+  "verdict":"REWORK",
+  "testedSHA":"beeaef406dc5338a4b43e2403a7d9b0519d1adc7",
+  "frozenV1":"a86975272ee700d79ab04fe5429ab91165f2029d",
+  "runtime":{"node":"24.15.0","git":"2.53.0","scratchTMPDIRExplicit":true},
+  "v2Tests":{"tests":39,"pass":39,"fail":0,"skipped":0},
+  "fullV2Gate":{"status":"PASS","sourceSha":"beeaef406dc5338a4b43e2403a7d9b0519d1adc7","implementationDigest":"c62a5f339ccc165f620c913ad7e989657b4393c18755fa7045fb2c9e6f33e671","requiredChecks":4,"frozenV1RequiredSteps":12,"frozenV1Gate":"PASS","browserWidths":[1500,768,320],"engines":["chromium","webkit"],"actualBrokenArtifactRejection":"PASS"},
+  "scope":{"changedPathsAgainstV1":84,"preexistingChangedFiles":[".github/workflows/harness.yml"],"appArtV1TestsPolicyDependenciesUnchanged":true},
+  "htmlSHA256":"933931eb67a347948a270da7aa912bfc48ee3cba420c72fbe7d02e34c93d4a35",
+  "provisionalBundle":{"actualOwnFullGateInput":true,"files":17,"allListedBytesVerified":true,"status":"PROVISIONAL_AWAITING_INDEPENDENT_QA","independentQa":"OPEN","duplicateHTMLInProofCommit":false},
+  "findings":[
+    {"id":"H1","priority":"P1","title":"Recovery ignores a live runner lease","proof":"Real sandbox recover CLI exits0, SIGKILLs healthy tracked action and appends INTERRUPTED while lease owner still alive","source":"controller.mjs:12,40-41"},
+    {"id":"H2","priority":"P1","title":"Terminal run preserves readiness after HEAD and bundle changed","proof":"Synthetic fixture initially validly packaged; new commit and edited HTML; actual run returns REVIEW_READY","historicalSignatureValidityNotCryptographicBreak":true,"source":"controller.mjs:15,18-19"},
+    {"id":"H3","priority":"P1","title":"Finalization does not validate closed package inventory or regular-file types","proof":"Unlisted backup-shaped test file and identical-byte symlink accepted after fixture signing","notDeferredInitiallyNonemptyP001":true,"source":"controller.mjs:31"},
+    {"id":"H4","priority":"P2","title":"Successful full verification does not break controller failure epoch","proof":"Legal state-machine fixture failure/repair/verified/repair/first failure reaches same2 BLOCKED; history preserved","source":"machine.mjs:18-19,23"},
+    {"id":"H5","priority":"P2","title":"Brain freshness PASS ignores dirty verification code","proof":"Actual local Git fixture implementation digest changes in working tree; checkBrain still PASS","notFullDeliveryGateBypass":true,"source":"brain.mjs:8;scope.mjs:13"}
+  ],
+  "qualifiedNotes":["Root-dead descendant escape reproduced but explicitly documented external-supervisor boundary; not an extra new blocker","Already-trusted RSA key accepted despite Ed25519-only wording; no untrusted-signer substitution","Deleted or stale handoff evidence remains historical Git proof, not QA acceptance","Malformed reviewer-signed manifest requires fixture reviewer to sign that malformed structure; not an unsigned-signature bypass","P001 standalone nonempty-output behavior excluded"],
+  "probes":{"parentRecoveryRerun":"PASS all adversarial assertions","parentTrustRerun":"Executed independently with expected observed outcomes","keys":"Ephemeral TEST-ONLY fixtures, no private owner key or real acceptance","remotes":"Local bare TEST-ONLY fixtures, no real handoff acceptance","realControllerSignedPilot":"NOT RUN"},
+  "noRealReceipt":true,
+  "noHandoffOwnershipAcceptance":true,
+  "noMergeDeployPolicyPromotion":true,
+  "nextAction":"Implementer repairs recovery lease and current ready/package invariants, failure epochs and Brain freshness with regressions; resubmit exact new SHA"
+}

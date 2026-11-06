@@ -1,0 +1,8 @@
+BROWSER chromium: START
+BROWSER chromium 1500: PASS
+BROWSER chromium 768: PASS
+BROWSER chromium 320: PASS
+BROWSER webkit: START
+BROWSER webkit 1500: PASS
+BROWSER webkit 768: PASS
+BROWSER webkit 320: PASS

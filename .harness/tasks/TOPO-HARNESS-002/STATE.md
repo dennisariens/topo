@@ -13,3 +13,6 @@ Preflight: read existing AGENTS/project state/decisions/V1 policy/tests and PR64
 Attempts: native worktree creation1 failure, Git fallback1 success; no implementation/gate attempts yet. Retry limits remain3 failed attempts per step / same error twice. No overrides.
 
 Builder review completed: three routine corrections incorporated (CI retains both tasks; every new commit invalidates independent QA; package file allowlist excludes backup/storage payloads). No owner-only ambiguity found. Owner approved plan. Implementation now has15 directed passing tests and isolated locked dev dependencies. Next: commit candidate, prove actual scope rejection, execute real interrupted/resumed pilot and full frozen-V1/additive gate. No merge/deployment/publication/download or master replacement authorized.
+
+## Internal review / corrected candidate
+Initial real pilot4f71f699 completed V1+V2 PASS and accurately blocked at independent QA; preserved. Internal review found7 Important gaps; single fix pass directed27/27 PASS. See evidence/REVIEW.md for exact changes, rulings and one deferred ledger crash-window limit. Corrected candidate will get fresh actual pilot/gate. No V1/product changes, no independent acceptance or policy promotion.

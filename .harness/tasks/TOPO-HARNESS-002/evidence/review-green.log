@@ -1,0 +1,48 @@
+✔ V2 additions cannot modify V1, product, policy, arbitrary workflows or traverse paths (2.388125ms)
+✔ original V1 verdict requires all12 steps, exact baseline and no skipped browser (0.807917ms)
+✔ store survives a killed real writer, replays committed events and rejects truncated/tampered history (110.1935ms)
+✔ live single-writer lock rejects a second writer without deleting its lock (15.834625ms)
+✔ phase guards forbid stale success, forged ready, silent recovery and repeated failures (0.475083ms)
+✔ signed QA binds exact SHA/hash/task/reviewer; local unsigned records cannot grant approval (23.934708ms)
+✔ evidence-only deltas cannot hide executable code or artifact replacements (0.1995ms)
+✔ controller rejects missing checks, stale source, changed executable digest and unavailable independent QA (0.751ms)
+✔ interrupted actual controller is recovered in a second process; no verification success is invented (219.991667ms)
+✔ a second controller cannot acquire the same action lease while an async action is active (24.8205ms)
+✔ skill routing is standalone-specific, required files must exist and use needs unchanged read plus action evidence (19.792375ms)
+✔ brain reconciliation accepts verified typed facts only, rejects stale/unapproved/private claims (0.54125ms)
+✔ evolution produces evidence-backed proposals; cannot self-promote policy with local approval flags (0.230583ms)
+✔ review package has an explicit allowlist and excludes browser backups, storage, arbitrary JSON and links (27.14475ms)
+✔ PASS label alone is not a verified brain result when required gate checks are absent (0.690208ms)
+✔ review observed: repeated identical interruptions stop after two across resume (1.305583ms)
+✔ review observed: recovery refuses active owner without changing history (118.403ms)
+✔ review observed: dead PID cannot be unlinked automatically by a new action owner (3.878708ms)
+✔ review observed: unrelated implementation digest cannot be published as verified (0.341083ms)
+✔ review: identical interruption twice remains blocked after resume and replay (1.587625ms)
+✔ review: abandoned action lock fails closed; live recovery cannot mutate another controller (122.312334ms)
+✔ review: durable manifest and exact HTML cannot be bypassed by empty files, changed bytes or extra saves (1.343416ms)
+✖ review: final skill guard requires both phase receipts and unchanged actual instructions (0.986917ms)
+✔ review: brain compares current independent digest and actual repository PR identity (0.575625ms)
+✔ review: final input guard rejects an actual dirty app edit without changing HEAD (122.402667ms)
+✔ review: real package positive path rejects inventory/HTML mutation and changed durable manifest (174.374041ms)
+ℹ tests 26
+ℹ suites 0
+ℹ pass 25
+ℹ fail 1
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 504.575792
+
+✖ failing tests:
+
+test at scripts/harness/v2/review.test.mjs:8:1
+✖ review: final skill guard requires both phase receipts and unchanged actual instructions (0.986917ms)
+  Error: Required skill instructions changed
+      at validateSkillLedger (file:///Users/dennisariens/projects/topo-harness-v2/scripts/harness/v2/skills.mjs:10:556)
+      at TestContext.<anonymous> (file:///Users/dennisariens/projects/topo-harness-v2/scripts/harness/v2/review.test.mjs:8:571)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1402:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:974:18)
+      at Test.postRun (node:internal/test_runner/test:1542:19)
+      at Test.run (node:internal/test_runner/test:1467:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:974:7)

@@ -1,0 +1,81 @@
+✖ review observed: repeated identical interruptions stop after two across resume (2.304292ms)
+✖ review observed: recovery refuses active owner without changing history (72.863959ms)
+✖ review observed: dead PID cannot be unlinked automatically by a new action owner (0.947458ms)
+✖ review observed: unrelated implementation digest cannot be published as verified (0.349542ms)
+ℹ tests 4
+ℹ suites 0
+ℹ pass 0
+ℹ fail 4
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 156.412167
+
+✖ failing tests:
+
+test at scripts/harness/v2/review-existing.test.mjs:3:1
+✖ review observed: repeated identical interruptions stop after two across resume (2.304292ms)
+  AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
+  
+  1 !== 2
+  
+      at TestContext.<anonymous> (file:///Users/dennisariens/projects/topo-harness-v2/scripts/harness/v2/review-existing.test.mjs:3:395)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1402:25)
+      at Test.start (node:internal/test_runner/test:1262:17)
+      at startSubtestAfterBootstrap (node:internal/test_runner/harness:387:17) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: 1,
+    expected: 2,
+    operator: 'strictEqual',
+    diff: 'simple'
+  }
+
+test at scripts/harness/v2/review-existing.test.mjs:4:1
+✖ review observed: recovery refuses active owner without changing history (72.863959ms)
+  AssertionError [ERR_ASSERTION]: Missing expected rejection.
+      at async file:///Users/dennisariens/projects/topo-harness-v2/scripts/harness/v2/review-existing.test.mjs:4:418
+      at async withRunLock (file:///Users/dennisariens/projects/topo-harness-v2/scripts/harness/v2/store.mjs:12:508)
+      at async TestContext.<anonymous> (file:///Users/dennisariens/projects/topo-harness-v2/scripts/harness/v2/review-existing.test.mjs:4:327)
+      at async Test.run (node:internal/test_runner/test:1409:7)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:974:7) {
+    generatedMessage: false,
+    code: 'ERR_ASSERTION',
+    actual: undefined,
+    expected: /locked/i,
+    operator: 'rejects',
+    diff: 'simple'
+  }
+
+test at scripts/harness/v2/review-existing.test.mjs:5:1
+✖ review observed: dead PID cannot be unlinked automatically by a new action owner (0.947458ms)
+  AssertionError [ERR_ASSERTION]: Missing expected rejection.
+      at async TestContext.<anonymous> (file:///Users/dennisariens/projects/topo-harness-v2/scripts/harness/v2/review-existing.test.mjs:5:230)
+      at async Test.run (node:internal/test_runner/test:1409:7)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:974:7) {
+    generatedMessage: false,
+    code: 'ERR_ASSERTION',
+    actual: undefined,
+    expected: /locked|review/i,
+    operator: 'rejects',
+    diff: 'simple'
+  }
+
+test at scripts/harness/v2/review-existing.test.mjs:6:1
+✖ review observed: unrelated implementation digest cannot be published as verified (0.349542ms)
+  AssertionError [ERR_ASSERTION]: Missing expected exception.
+      at TestContext.<anonymous> (file:///Users/dennisariens/projects/topo-harness-v2/scripts/harness/v2/review-existing.test.mjs:6:371)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1402:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:974:18)
+      at Test.postRun (node:internal/test_runner/test:1542:19)
+      at Test.run (node:internal/test_runner/test:1467:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:974:7) {
+    generatedMessage: false,
+    code: 'ERR_ASSERTION',
+    actual: undefined,
+    expected: /digest|Stale/,
+    operator: 'throws',
+    diff: 'simple'
+  }

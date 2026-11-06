@@ -1,0 +1,321 @@
+✔ V2 additions cannot modify V1, product, policy, arbitrary workflows or traverse paths (1.072041ms)
+✔ original V1 verdict requires all12 steps, exact baseline and no skipped browser (0.427583ms)
+✔ store survives a killed real writer, replays committed events and rejects truncated/tampered history (64.782791ms)
+✔ live single-writer lock rejects a second writer without deleting its lock (5.814875ms)
+✔ phase guards forbid stale success, forged ready, silent recovery and repeated failures (0.435667ms)
+✔ signed QA binds exact SHA/hash/task/reviewer; local unsigned records cannot grant approval (2.410166ms)
+✔ evidence-only deltas cannot hide executable code or artifact replacements (0.151459ms)
+✔ controller rejects missing checks, stale source, changed executable digest and unavailable independent QA (0.773667ms)
+✔ interrupted actual controller is recovered in a second process; no verification success is invented (123.578292ms)
+✔ a second controller cannot acquire the same action lease while an async action is active (1.155709ms)
+✔ skill routing is standalone-specific, required files must exist and use needs unchanged read plus action evidence (6.308125ms)
+✔ brain reconciliation accepts verified typed facts only, rejects stale/unapproved/private claims (0.572459ms)
+✔ evolution produces evidence-backed proposals; cannot self-promote policy with local approval flags (0.248625ms)
+✔ review package has an explicit allowlist and excludes browser backups, storage, arbitrary JSON and links (10.432083ms)
+✔ PASS label alone is not a verified brain result when required gate checks are absent (0.241792ms)
+ℹ tests 15
+ℹ suites 0
+ℹ pass 15
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 190.914333
+
+STEP: harness-tests
+✔ approved generated standalone set satisfies artifact contract (555.062916ms)
+✔ one broken generated alias is rejected (594.12625ms)
+✔ an external runtime asset fails even when its document digest is explicitly accepted (631.578458ms)
+✔ post-build dist is mandatory (529.675959ms)
+✔ default pinned digest cannot silently follow edited canonical HTML (583.876125ms)
+✔ external stylesheet and image references fail the standalone policy (633.2685ms)
+✔ missing pinned tooling fails closed and still writes summary (6.780959ms)
+✔ operational instructions are concise and every required task artifact exists (2.500542ms)
+✔ PR workflow is exact-candidate, least-privilege, pinned and contains no production action (1.162708ms)
+✔ commands and write scope deny deploy, production paths, traversal and shell injection (1.291375ms)
+✔ child environment never inherits credentials, injection or npm configuration (0.218542ms)
+✔ verdict rejects missing, skipped, duplicate and failed required checks (0.308375ms)
+✔ two identical failures persistently stop the step; changed error does not grant a fourth attempt (1.369209ms)
+✔ documented jsdom engine range excludes unsupported odd Node versions (0.160792ms)
+✔ same failure in different evidence/workspace paths has one persistent identity (0.629667ms)
+✔ real child failure and timeout cannot be reported as success; complete log retained (149.41025ms)
+✔ clean environment starts the real installed npm CLI without reading duplicate/private configs (99.276833ms)
+✔ negative proof refuses original repository and requires matching marked clone identity (136.150958ms)
+ℹ tests 18
+ℹ suites 0
+ℹ pass 18
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 3607.936958
+
+STEP: build
+
+> topo-italie-baseline@0.1.0 build
+> node scripts/build.mjs
+
+Semantic map tap resolver embedded; original SVG geometry and engines retained
+Original schoolblad overlay embedded; no external assets
+Embedded six byte-verified owner WebPs; no external runtime assets
+Pizza: 85 source assets checksum-verified; inline runtime atlases + board + boxes + approved Nino Travel
+Six background lakes generated from pinned Natural Earth polygons (no simplification)
+Discovery atlas embedded: pinned DEM, live two-choice utility, no external runtime dependency
+Focus Mode embedded: original input, visual viewport sheet, one unchanged map; fully offline
+Embedded pinned PR65 micro favicons; no external icon requests
+Static preview generated from canonical 45 places
+Generated print.html from 45 current worksheet items and 12 groups
+Standalone interactive HTML: output/html/topo-italie-interactief.html
+App, print page, standalone bundle and learning engine JavaScript syntax: OK
+Pinned Nino art, reusable slots and all offline image bytes: OK
+Discovery atlas code, original geometry references and embedded DEM bytes: OK
+Semantic map hit resolver source/standalone parity: OK
+TOPO-NINO Computer release filename and canonical bytes: OK
+45 content entries, anchors, coastal markers, microstates, selected land checks: OK
+Limit: drawn Italy polygon is not an independent geographic ground truth
+Static build: dist/index.html, dist/print.html, dist/printboek.pdf
+
+STEP: lint
+
+> topo-italie-baseline@0.1.0 lint
+> node scripts/check-syntax.mjs
+
+App, print page, standalone bundle and learning engine JavaScript syntax: OK
+Pinned Nino art, reusable slots and all offline image bytes: OK
+Discovery atlas code, original geometry references and embedded DEM bytes: OK
+Semantic map hit resolver source/standalone parity: OK
+TOPO-NINO Computer release filename and canonical bytes: OK
+
+STEP: tests
+
+> topo-italie-baseline@0.1.0 test
+> node scripts/validate-map.mjs && node scripts/validate-print.mjs && node scripts/learning-engine.test.mjs && node scripts/route-engine.test.mjs && node scripts/exam-flow.test.mjs && node scripts/ui-smoke.test.mjs && node scripts/route-dom.test.mjs && node scripts/work-regression.cjs && node scripts/release-1-dom.test.mjs && node scripts/qa-findings.test.mjs && node scripts/polish.test.mjs && node --test scripts/nino-art.test.mjs && node scripts/geography/lakes.test.mjs && node --test scripts/schoolblad.test.mjs && node --test scripts/discovery-map.test.mjs && node --test scripts/map-hit.test.mjs && node --test scripts/focus-mode.test.mjs && node --test scripts/pizza-reward.test.mjs scripts/nino-profile.test.mjs scripts/nino-experience.test.mjs
+
+45 content entries, anchors, coastal markers, microstates, selected land checks: OK
+Limit: drawn Italy polygon is not an independent geographic ground truth
+Printable A4 groups, school photo and all 45 worksheet mappings: OK
+Shuffle, coverage, spaced mistake review, legacy migration and Vespa cadence: OK
+Route locks, stages, repair spacing, gold, persistence, rewards and scheduled review: OK
+Finite geography test, point/write grading, scoring, skips and restart: OK
+Full standalone boot and learn/point/write/exam/reset button flow: OK
+All 11 route chapters and gold tests, dock controls, mode switch, resume and reset: OK
+Real HTML DOM: controls, SVG events, reload, atomic rewards, unique IDs, enclave and storage failure: OK
+PASS: JavaScript syntax; 168 correct answers → 21 pizzas / 7 trips; every 8/24 rollover; reload preserves rewards; duplicate answer cannot earn twice.
+PASS: six-question breaks retain full gold coverage; halfway save/restore; daily goal resets independently of lifetime rewards.
+PASS: adaptive six-task session, skill isolation, restore and legacy migration; 27 source-projected locations; 45 geometry/code baselines; fallback matches live coordinates.
+PASS: three-stage migration preserves writing completion; code sessions removed; tests and adaptive rounds use pointing/writing only.
+Legacy saves, skill isolation, round/lifetime scores, neutral keyboard picker, microstate highlights, river tolerance and daily reset: OK
+QA-1: stage/gold replay daily credit, reload/resubmit idempotence and pizza ledger: PASS
+QA-2: 19 malformed imports preserve exact memory/storage before confirmation; valid schemas 1/2 and interrupted/code migrations: PASS
+Release 1.1: eleven icon references/fallback, continuous route and locked/replay stages, eight-slice copy, NOW gating and truthful Nino outcomes: PASS
+✔ pure role policy: strict Gold, real success, exam suppression and genuine trip only (0.866209ms)
+✔ all six local exports equal manifest hashes and canonical embedded WebP bytes (5433.565875ms)
+✔ pending scenes/postcards stay locked or empty; missing and failed art falls back safely (5493.201125ms)
+✔ canonical engines, geometry, original artwork and print artifacts equal pinned base (5094.825416ms)
+✔ DOM grade/resubmit/reload, chapter completion, Gold/replay/miss preserve base progress and rewards (21006.779833ms)
+✔ free practice wrong-only art, exam suppression, and arrival only at real reward threshold (5371.954166ms)
+ℹ tests 6
+ℹ suites 0
+ℹ pass 6
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 43277.65075
+Six pinned lake polygons, exact projection/envelopes/hashes, Como forks, live/static/offline parity and noninteractive background contract: OK
+✔ one unchanged photograph; pre-existing code exact except the bounded map resolver hotfix (721.824583ms)
+✔ Learn, Point, Write, exam and route reference opening never mutates a task or progress (5636.078042ms)
+✔ answered/unanswered route and Gold remain exact across cancel; draft answer/caret recover (4806.594ms)
+✔ modal semantics, keyboard containment and progressive legacy fallback (11274.708209ms)
+ℹ tests 4
+ℹ suites 0
+ℹ pass 4
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 23260.566
+✔ verified PR27 app retained except isolated atlas and bounded semantic resolver replacement (670.07175ms)
+✔ pinned DEM bytes embedded, original frame and source land references, no new geographic paths (5474.955041ms)
+✔ activity defaults, explicit persistent choice and exact active-question continuity (10279.430584ms)
+✔ exactly two styles per utility, separate original schoolblad and safe zoom (4784.348333ms)
+ℹ tests 4
+ℹ suites 0
+ℹ pass 4
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 22097.750875
+✔ the only canonical app delta is the bounded resolver; engines, geography, schoolblad and atlas remain exact (670.922292ms)
+✔ all 45 stable IDs have semantic classes: 27 points and independent polygons/river corridors (5663.366375ms)
+✔ neutral display order is not distance or expected-answer order, and never mutates candidates (4812.455625ms)
+✔ real Rome/Vatican keyboard chooser grades stable IDs with both first/second correct and wrong cases (5854.016333ms)
+✔ every point pair keeps its exact source anchors and answer-independent regional framing (5314.203542ms)
+✔ all recorded point collision sets keep noncrossing leaders at compact and wide sizes (4795.153875ms)
+✔ Vatican is illustrated inside Rome with two different noncrossing endpoint targets (4999.455ms)
+✔ approved owner SVG is embedded exactly; shuffled numbers cannot change its drawing (4853.869041ms)
+✔ regional choosers retain distinct volcano/city/state glyphs and source context (5031.290167ms)
+✔ picker rendering does not read expected answer and names containment only in Discover (1.65025ms)
+ℹ tests 10
+ℹ suites 0
+ℹ pass 10
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 43016.368833
+✔ P0 iPad hotfix preserves verified PR39 teaching, rewards and source outside explicit changes (636.466375ms)
+✔ one canonical input/submit; responsive reparenting retains draft, caret, task and saved progress (5763.066041ms)
+✔ visual viewport adapter reads real offsets without editing learner state or field selection (4780.31425ms)
+✔ chapter availability writes are idempotent: no MutationObserver disabled loop (5799.562208ms)
+✔ Frosted Parchment keeps children opaque and exposes reduced-transparency/contrast fallbacks (1.973208ms)
+✔ F1 Reis/Oefenen resumes the visible writing question, draft and backward selection without progress changes (4832.379958ms)
+✔ F1 navigation preserves every practice mode and route tasks; explicit route start replaces suspended free practice (5059.177958ms)
+✔ F1 Reis can display the journey from a completed round and resume the same result screen (4834.814292ms)
+✔ F1 canceled journey reset or lesson change keeps the suspended exercise (4810.286375ms)
+ℹ tests 9
+ℹ suites 0
+ℹ pass 9
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 37458.827625
+✔ playable journey exposes all eleven ordered stops, and every book interior uses real folios (5554.55175ms)
+✔ iPad portrait reads a single page; stamps and Gold are projections of real completion state (5696.082333ms)
+✔ reward presentation survives result-screen removal and cannot become detached from the active lesson (5398.410708ms)
+Profile validation, Unicode, safe rendering, skip/cancel, reload, legacy, preference isolation and storage failure passed
+Bounded backup inverse audit, whitespace editing and failed-import rollback passed
+Immediate cosmetic favorite feedback and first-run CTA passed
+✔ scripts/nino-profile.test.mjs (1677.274208ms)
+✔ every flavor has all nine atlas cells and eight distinct sector selectors; no reward writes (91.811834ms)
+✔ zero rollover retains just-earned flavor; queue orders pizza, static box, trip once (26.170667ms)
+✔ reset cancels pending trip and replay-invalid events cannot fabricate rewards (9.180958ms)
+✔ PR29 approved source and runtime checksums, unique assembly proof (62.733792ms)
+✔ integration applies exactly once and reverse restores untouched baseline (773.390792ms)
+✔ authoritative engine earns 8 answers per pizza and 3 pizzas per trip regardless of favorite (25.693083ms)
+✔ bounded art-slot audit rejects unexpected code and altered hooks (17.7605ms)
+ℹ tests 11
+ℹ suites 0
+ℹ pass 11
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 17506.27675
+
+STEP: release-audit
+
+> topo-italie-baseline@0.1.0 audit:release-1-2
+> node scripts/audit-release-1-2.mjs
+
+Source audit PASS: immutable engines/art/44 targets, exact approved Apennines/UI exceptions, fresh print and idempotent offline builds
+
+STEP: map-audit
+PASS exact source, engine, geometry, resolver/grading and standalone preservation; 40999720 bytes; SHA256 933931eb67a347948a270da7aa912bfc48ee3cba420c72fbe7d02e34c93d4a35
+
+STEP: v2-audit
+{
+  "base": "2a9dda3d3d8ec567687bc3b61bf9cbde645c752c",
+  "entireBaselineHtmlPreservedOutsideVerifiedPresentation": true,
+  "engineAndGeographyChanges": 0,
+  "downloadParity": true,
+  "bytes": 40999720,
+  "sha256": "933931eb67a347948a270da7aa912bfc48ee3cba420c72fbe7d02e34c93d4a35",
+  "D1": "archival excluded; real1586x992 dimensions retained; no folio dependencies",
+  "D2": {
+    "source_availability": {
+      "delivery derivative": 34,
+      "pinned Git blob": 205
+    },
+    "delivery_state": {
+      "export/file present": 67,
+      "source only; not delivered": 172
+    },
+    "runtime_state": {
+      "integrated": 46,
+      "not integrated": 193
+    }
+  }
+}
+
+STEP: artifacts
+{
+  "ok": true,
+  "root": "/var/folders/cx/qvczylqn4k3gr6dn9f6hl3n80000gn/T/topo-harness-VsXS9j/work",
+  "expectedHtmlSha256": "933931eb67a347948a270da7aa912bfc48ee3cba420c72fbe7d02e34c93d4a35",
+  "files": {
+    "index.html": {
+      "bytes": 40999720,
+      "sha256": "933931eb67a347948a270da7aa912bfc48ee3cba420c72fbe7d02e34c93d4a35"
+    },
+    "output/html/TOPO-NINO-Computer-Release.html": {
+      "bytes": 40999720,
+      "sha256": "933931eb67a347948a270da7aa912bfc48ee3cba420c72fbe7d02e34c93d4a35"
+    },
+    "output/html/TOPO-Italie-Computer.html": {
+      "bytes": 40999720,
+      "sha256": "933931eb67a347948a270da7aa912bfc48ee3cba420c72fbe7d02e34c93d4a35"
+    },
+    "output/html/topo-italie-interactief.html": {
+      "bytes": 40999720,
+      "sha256": "933931eb67a347948a270da7aa912bfc48ee3cba420c72fbe7d02e34c93d4a35"
+    },
+    "output/html/topo-italie-duolingo.html": {
+      "bytes": 40999720,
+      "sha256": "933931eb67a347948a270da7aa912bfc48ee3cba420c72fbe7d02e34c93d4a35"
+    },
+    "output/html/NINO-2-Proefversie-2026-11-04.html": {
+      "bytes": 40999720,
+      "sha256": "933931eb67a347948a270da7aa912bfc48ee3cba420c72fbe7d02e34c93d4a35"
+    },
+    "dist/index.html": {
+      "bytes": 40999720,
+      "sha256": "933931eb67a347948a270da7aa912bfc48ee3cba420c72fbe7d02e34c93d4a35"
+    }
+  },
+  "checks": {
+    "pinned SHA256": true,
+    "inline runtime assets": true,
+    "embedded learning and route sources": true,
+    "learning metadata": {
+      "items": 45,
+      "chapters": 11,
+      "stages": [
+        "discover",
+        "point",
+        "write"
+      ],
+      "schoolCodes": "reference data retained"
+    },
+    "both map presentations": "presence only; no new GIS accuracy claim",
+    "approved artwork bytes": true
+  },
+  "errors": []
+}
+
+STEP: browser
+BROWSER chromium: START
+BROWSER chromium 1500: PASS
+BROWSER chromium 768: PASS
+BROWSER chromium 320: PASS
+BROWSER webkit: START
+BROWSER webkit 1500: PASS
+BROWSER webkit 768: PASS
+BROWSER webkit 320: PASS
+
+STEP: negative-proof
+PASS: real check.sh rejected deliberate broken standalone artifact (exit 1).
+
+Evidence: /private/var/folders/cx/qvczylqn4k3gr6dn9f6hl3n80000gn/T/topo-v2-gate-bTAdxV/v1/.harness/tasks/TOPO-HARNESS-001/runs/2026-11-06T08-24-40-680Z-ZYDe04
+GATE: PASS
+V2 GATE: PASS
+Evidence: /Users/dennisariens/projects/topo-harness-v2/.harness/tasks/TOPO-HARNESS-002/runs/pilot-gate-1793953475443
+{
+  "sourceSha": "4f71f699ee82c6be9ab7f18609ba502097f8877f",
+  "phase": "BLOCKED",
+  "blockedFrom": "INDEPENDENT_QA",
+  "reason": "AUTHENTICATED_HERMES_RESPONSE_REQUIRED",
+  "provisionalBundle": "/Users/dennisariens/projects/topo-harness-v2/.harness/tasks/TOPO-PILOT-001/runs/current/review-package"
+}

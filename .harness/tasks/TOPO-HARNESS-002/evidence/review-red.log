@@ -1,0 +1,25 @@
+file:///Users/dennisariens/projects/topo-harness-v2/scripts/harness/v2/review.test.mjs:2
+import {nextState} from './machine.mjs';import {createTask,transact,openTask,withRunLock} from './store.mjs';import {recover} from './controller.mjs';import {validatePackage} from './package.mjs';import {validateSkillLedger} from './skills.mjs';import {reconcile} from './brain.mjs';import {APP_HASH,digest} from './scope.mjs';
+                                                                                                                                                              ^^^^^^^^^^^^^^^
+SyntaxError: The requested module './package.mjs' does not provide an export named 'validatePackage'
+    at #asyncInstantiate (node:internal/modules/esm/module_job:455:21)
+    at async ModuleJob.run (node:internal/modules/esm/module_job:553:5)
+    at async node:internal/modules/esm/loader:647:26
+    at async asyncRunEntryPointWithESMLoader (node:internal/modules/run_main:101:5)
+
+Node.js v24.22.1
+✖ scripts/harness/v2/review.test.mjs (65.004042ms)
+ℹ tests 1
+ℹ suites 0
+ℹ pass 0
+ℹ fail 1
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 76.312
+
+✖ failing tests:
+
+test at scripts/harness/v2/review.test.mjs:1:1
+✖ scripts/harness/v2/review.test.mjs (65.004042ms)
+  'test failed'

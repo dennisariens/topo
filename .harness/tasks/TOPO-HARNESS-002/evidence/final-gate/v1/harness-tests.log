@@ -1,0 +1,26 @@
+✔ approved generated standalone set satisfies artifact contract (599.779375ms)
+✔ one broken generated alias is rejected (562.267333ms)
+✔ an external runtime asset fails even when its document digest is explicitly accepted (628.287042ms)
+✔ post-build dist is mandatory (523.513458ms)
+✔ default pinned digest cannot silently follow edited canonical HTML (604.988334ms)
+✔ external stylesheet and image references fail the standalone policy (630.1195ms)
+✔ missing pinned tooling fails closed and still writes summary (8.4305ms)
+✔ operational instructions are concise and every required task artifact exists (3.071125ms)
+✔ PR workflow is exact-candidate, least-privilege, pinned and contains no production action (2.219833ms)
+✔ commands and write scope deny deploy, production paths, traversal and shell injection (1.382875ms)
+✔ child environment never inherits credentials, injection or npm configuration (0.262875ms)
+✔ verdict rejects missing, skipped, duplicate and failed required checks (0.319041ms)
+✔ two identical failures persistently stop the step; changed error does not grant a fourth attempt (0.996459ms)
+✔ documented jsdom engine range excludes unsupported odd Node versions (0.248833ms)
+✔ same failure in different evidence/workspace paths has one persistent identity (0.811458ms)
+✔ real child failure and timeout cannot be reported as success; complete log retained (148.498291ms)
+✔ clean environment starts the real installed npm CLI without reading duplicate/private configs (132.980375ms)
+✔ negative proof refuses original repository and requires matching marked clone identity (141.411334ms)
+ℹ tests 18
+ℹ suites 0
+ℹ pass 18
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 3638.232917

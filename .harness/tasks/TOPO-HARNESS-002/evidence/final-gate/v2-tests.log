@@ -1,0 +1,35 @@
+✔ V2 additions cannot modify V1, product, policy, arbitrary workflows or traverse paths (1.062417ms)
+✔ original V1 verdict requires all12 steps, exact baseline and no skipped browser (0.621541ms)
+✔ store survives a killed real writer, replays committed events and rejects truncated/tampered history (112.734042ms)
+✔ live single-writer lock rejects a second writer without deleting its lock (22.82975ms)
+✔ phase guards forbid stale success, forged ready, silent recovery and repeated failures (0.497375ms)
+✔ signed QA binds exact SHA/hash/task/reviewer; local unsigned records cannot grant approval (2.41475ms)
+✔ evidence-only deltas cannot hide executable code or artifact replacements (0.166542ms)
+✔ controller rejects missing checks, stale source, changed executable digest and unavailable independent QA (0.775375ms)
+✔ interrupted actual controller is recovered in a second process; no verification success is invented (244.528417ms)
+✔ a second controller cannot acquire the same action lease while an async action is active (6.12375ms)
+✔ skill routing is standalone-specific, required files must exist and use needs unchanged read plus action evidence (21.624541ms)
+✔ brain reconciliation accepts verified typed facts only, rejects stale/unapproved/private claims (0.584625ms)
+✔ evolution produces evidence-backed proposals; cannot self-promote policy with local approval flags (0.243917ms)
+✔ review package has an explicit allowlist and excludes browser backups, storage, arbitrary JSON and links (23.133458ms)
+✔ PASS label alone is not a verified brain result when required gate checks are absent (0.269084ms)
+✔ fixture whole flow: signed exact-source QA finalizes only an intact source, skill ledger and bound package (4898.882959ms)
+✔ review observed: repeated identical interruptions stop after two across resume (1.419458ms)
+✔ review observed: recovery refuses active owner without changing history (122.937333ms)
+✔ review observed: dead PID cannot be unlinked automatically by a new action owner (4.425792ms)
+✔ review observed: unrelated implementation digest cannot be published as verified (0.3995ms)
+✔ review: identical interruption twice remains blocked after resume and replay (1.588ms)
+✔ review: abandoned action lock fails closed; live recovery cannot mutate another controller (128.395917ms)
+✔ review: durable manifest and exact HTML cannot be bypassed by empty files, changed bytes or extra saves (1.539917ms)
+✔ review: final skill guard requires both phase receipts and unchanged actual instructions (1.703541ms)
+✔ review: brain compares current independent digest and actual repository PR identity (0.4265ms)
+✔ review: final input guard rejects an actual dirty app edit without changing HEAD (98.852ms)
+✔ review: real package positive path rejects inventory/HTML mutation and changed durable manifest (131.781ms)
+ℹ tests 27
+ℹ suites 0
+ℹ pass 27
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 4977.758041

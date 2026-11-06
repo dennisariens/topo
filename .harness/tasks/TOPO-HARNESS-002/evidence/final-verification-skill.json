@@ -1,0 +1,21 @@
+{
+  "id": "verification-before-completion",
+  "required": true,
+  "path": "/Users/dennisariens/.codex/plugins/cache/claude-plugins-official/superpowers/7.0.0/skills/verification-before-completion/SKILL.md",
+  "references": [],
+  "selected": true,
+  "available": true,
+  "read": true,
+  "used": true,
+  "reads": [
+    {
+      "path": "/Users/dennisariens/.codex/plugins/cache/claude-plugins-official/superpowers/7.0.0/skills/verification-before-completion/SKILL.md",
+      "sha256": "2befe7fc55bcadaa3d97dd9e8efeb633d2561c0ebe74c5a8b17c4d9e7e4520b3"
+    }
+  ],
+  "usage": {
+    "action": "read complete executed V1/V2 gate output and independently validated final bundle hashes before completion claim",
+    "evidence": "/Users/dennisariens/projects/topo-harness-v2/.harness/tasks/TOPO-HARNESS-002/evidence/full-quality-gate.log",
+    "evidenceSha256": "f869fc5c816492152b793d12ff977803f7cbda04f648d4949f5cd4ff9bf781f1"
+  }
+}

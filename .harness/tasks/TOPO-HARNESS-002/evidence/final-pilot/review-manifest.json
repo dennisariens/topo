@@ -1,0 +1,120 @@
+{
+  "schema": 1,
+  "status": "PROVISIONAL_AWAITING_INDEPENDENT_QA",
+  "sourceSha": "866a8b6fc1c19cc733acf19e550385fb3ae13ecf",
+  "artifactSha256": "933931eb67a347948a270da7aa912bfc48ee3cba420c72fbe7d02e34c93d4a35",
+  "files": [
+    {
+      "path": "TOPO-NINO-provisional-review.html",
+      "sha256": "933931eb67a347948a270da7aa912bfc48ee3cba420c72fbe7d02e34c93d4a35",
+      "bytes": 40999720
+    },
+    {
+      "path": "artifacts.log",
+      "sha256": "f455751bb2254b322f19b4087cd19e45ed76d1b6ac6befb379622a56bc19ce26",
+      "bytes": 1773
+    },
+    {
+      "path": "brain-index.json",
+      "sha256": "933e6a667edfc31cf5eb6215cb24bb50fa19ebbae9f5f2089c735fb99fe9565f",
+      "bytes": 1093
+    },
+    {
+      "path": "browser/chromium-1500.png",
+      "sha256": "45d287183b57abbcbb584273c88381337023b1cd9ed3d86c58dc08e94dedb8ae",
+      "bytes": 841984
+    },
+    {
+      "path": "browser/chromium-320.png",
+      "sha256": "5ef7b5a300e8d6abbfdb5b95954ba1d546c2cb6bd13ecb625d0c3b4bb787db78",
+      "bytes": 289256
+    },
+    {
+      "path": "browser/chromium-768.png",
+      "sha256": "4d0be554ae8cf6552958936dff8023896417bdf850642fe3f624bcfde4caf5d4",
+      "bytes": 516025
+    },
+    {
+      "path": "browser/webkit-1500.png",
+      "sha256": "d77784b40d886646128983996c4c9728667e6b1285b223a33c64061e241c28b2",
+      "bytes": 1817608
+    },
+    {
+      "path": "browser/webkit-320.png",
+      "sha256": "7d5f5e8494f3135f0b2f2ba3a6cc4c4f217e15199c54a952f4de46fcab2750cd",
+      "bytes": 485073
+    },
+    {
+      "path": "browser/webkit-768.png",
+      "sha256": "24d0791067002fe36f149523ce3d3f94d8efb827733c6c371f2fc0ccaded78c4",
+      "bytes": 1032625
+    },
+    {
+      "path": "browser.log",
+      "sha256": "69f6733181eb72142400679a4f421210959a89242ef7487ed1f5f4c12e42a76d",
+      "bytes": 204
+    },
+    {
+      "path": "build.log",
+      "sha256": "4101ebaed3810f4bcba5854e6b2f0cadcba280683ccf9747e2eabcd3b960463a",
+      "bytes": 1451
+    },
+    {
+      "path": "gate-summary.json",
+      "sha256": "1f0be3ffcef30c09de7e5429cb7adb2e360281f704fb0edf71a9834cf4895d25",
+      "bytes": 16412
+    },
+    {
+      "path": "handoff.md",
+      "sha256": "7edbfca3b211147145e7ae2013921ad8f7a9ebbe503d8cddb8f54a4eff188b8b",
+      "bytes": 327
+    },
+    {
+      "path": "harness-tests.log",
+      "sha256": "dc7d9f587fe75658c9b8ed3b99f073fb78adf7b63ac44632f4df25c9dd94601f",
+      "bytes": 1760
+    },
+    {
+      "path": "lint.log",
+      "sha256": "f3ce7a5b7c20fce5a7bb566196df9378b6431cc0846af365cde11e3c80994c43",
+      "bytes": 402
+    },
+    {
+      "path": "map-audit.log",
+      "sha256": "1e7fc5401acb97697e47b89398918f449fe94f18f9c56eeedd21a7db2076d170",
+      "bytes": 171
+    },
+    {
+      "path": "negative-proof.log",
+      "sha256": "65f136a8ab94ea5b8cd79588162609ddd3caada9aece368fd6320e5004c770b0",
+      "bytes": 77
+    },
+    {
+      "path": "release-audit.log",
+      "sha256": "1e5084ea60e5b30cb4c2388981c00813de7708b54dda8305cc38da58e3d7eeb5",
+      "bytes": 221
+    },
+    {
+      "path": "skills.json",
+      "sha256": "7424b2c556c036db2bcbf8e7f8bd4482e2943a482a1f7fc84f2b06babd62807b",
+      "bytes": 2726
+    },
+    {
+      "path": "tests.log",
+      "sha256": "cdcbffbc9546e24db831898066d0206ed21a91bee2462a051eb6146b3909b0de",
+      "bytes": 8387
+    },
+    {
+      "path": "v1-summary.json",
+      "sha256": "f66c0fc2283e649c106021ce45f18d8d46f01bc734d0f708fd052df178880bea",
+      "bytes": 15130
+    },
+    {
+      "path": "v2-audit.log",
+      "sha256": "4d7d429361d3943374297fc7f2959e5183a61e50d4305d761dc395e9dc955f14",
+      "bytes": 668
+    }
+  ],
+  "independentQa": "OPEN",
+  "learnerDataIncluded": false
+}

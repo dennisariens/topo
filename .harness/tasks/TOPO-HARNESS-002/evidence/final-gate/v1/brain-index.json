@@ -1,0 +1,35 @@
+{
+  "schema": 1,
+  "sourceSha": "866a8b6fc1c19cc733acf19e550385fb3ae13ecf",
+  "facts": [
+    {
+      "type": "verification",
+      "sourceSha": "866a8b6fc1c19cc733acf19e550385fb3ae13ecf",
+      "status": "PASS",
+      "evidence": ".harness/tasks/TOPO-HARNESS-002/runs/pilot-gate-1793972427598/summary.json",
+      "evidenceSha256": "1f0be3ffcef30c09de7e5429cb7adb2e360281f704fb0edf71a9834cf4895d25",
+      "classification": "verified-implementation"
+    }
+  ],
+  "proposals": [],
+  "independentQa": "OPEN",
+  "ownerApproval": "OPEN",
+  "sources": [
+    {
+      "path": "docs/PROJECT_STATE.md",
+      "sha256": "8e7f42987291600289a31de04b7adbf4d46db08388a751da3c5cf6e206f08e6c"
+    },
+    {
+      "path": "docs/DECISIONS.md",
+      "sha256": "1b5a3abc34ae4c72be7e87eb743589897febe01b8a9ea16a7ef5e45de1dbc466"
+    },
+    {
+      "path": "docs/DESIGN_SYSTEM.md",
+      "sha256": "26c06526ea2664b48b8529ecbc1cfb80024e0795b9d14f45475e12912b68d8ef"
+    },
+    {
+      "path": "docs/LEERROUTE_DESIGN.md",
+      "sha256": "86e1e23fa9ad8934886b105e99b62a49b51ab5c64dfba907cc0d4ea90256ef10"
+    }
+  ]
+}

@@ -1,18 +1,15 @@
-# TOPO-HARNESS-002 — initial persistent state
+# TOPO-HARNESS-002 — persistent delivery state
 
-Status: IMPLEMENT
-Implementation: owner approved plan; core/knowledge/controller tests RED→GREEN; additive gate and pilot implementation in progress. No app changes.
-Owner outcome: supplied V2 mission. Design/plan: proposed in CONTRACT.md and PLAN.md.
-Branch: agent/topo-harness-v2; exact start a86975272ee700d79ab04fe5429ab91165f2029d.
-V1 PR73: untouched; remote exact head confirmed; GitHub verify SUCCESS (run42181119560).
-PR71: frozen V1 underlying baseline b06b13059ff5e2ef7278c2d0c55597cf8a9435cf.
-Independent Hermes: OPEN. No approval or invocation claimed.
+Status: **BLOCKED — UPSTREAM_DIVERGENCE_OWNER_DECISION**
+Local tested implementation:866a8b6fc1c19cc733acf19e550385fb3ae13ecf.
+Original exact baseline: V1a86975272ee700d79ab04fe5429ab91165f2029d, PR73 untouched; PR71b06b130 unchanged.
 
-Preflight: read existing AGENTS/project state/decisions/V1 policy/tests and PR64 skill. Installed Codex and Hermes skill paths inspected; hermes CLI exists but authenticated execution/independent response unverified. Native worktree creation failed before creating a checkout (not a Git repository in tool host context); isolated git worktree fallback succeeded at exact authorized SHA. No V1 files changed.
+Implemented approved plan; local full V1+V2 gate PASS,27 V2 tests plus unchanged V1/app suite and six offline browser contexts. Original pilot4f71f699 retained; corrected pilot866a8b6 durably interrupted/resumed, fresh actual gate PASS, then correctly BLOCKED at INDEPENDENT_QA awaiting authenticated Hermes response. No real REVIEW_READY or independent approval claim. Current brain and full evidence recorded in EVIDENCE.md.
 
-Attempts: native worktree creation1 failure, Git fallback1 success; no implementation/gate attempts yet. Retry limits remain3 failed attempts per step / same error twice. No overrides.
+Internal fresh review found7 Important issues; single RED→GREEN fix pass,27/27. Stale locks now require external exclusive owner recovery; no racy PID unlink. One deferred ledger crash-window limit is explicit in evidence/REVIEW.md. P001 stays separate at94d1390, unpromoted. Failure histories/counters retained; deliberate scope-rejection count1 was not reset. No unplanned full-gate failures.
 
-Builder review completed: three routine corrections incorporated (CI retains both tasks; every new commit invalidates independent QA; package file allowlist excludes backup/storage payloads). No owner-only ambiguity found. Owner approved plan. Implementation now has15 directed passing tests and isolated locked dev dependencies. Next: commit candidate, prove actual scope rejection, execute real interrupted/resumed pilot and full frozen-V1/additive gate. No merge/deployment/publication/download or master replacement authorized.
+Final upstream discovery: draft PR74 already exists atbeeaef406dc5338a4b43e2403a7d9b0519d1adc7 on remote agent/topo-harness-v2 with a parallel Claude continuation and revised P0/P1 contract. Local866a8b6 diverges; validation is not for that head. Owner asked whether to integrate the reviewed fixes into current PR74 preserving Claude work, or keep the candidates separate. Dependent integration is stopped until answer; no silent rebase/overwrite/force-push/duplicate PR.
 
-## Internal review / corrected candidate
-Initial real pilot4f71f699 completed V1+V2 PASS and accurately blocked at independent QA; preserved. Internal review found7 Important gaps; single fix pass directed27/27 PASS. See evidence/REVIEW.md for exact changes, rulings and one deferred ledger crash-window limit. Corrected candidate will get fresh actual pilot/gate. No V1/product changes, no independent acceptance or policy promotion.
+Concrete runnable provisional HTML and34MB review archive retained under .harness/tasks/TOPO-PILOT-001/runs/current/. Final evidence-only preservation commit can pin these records without transferring exact-head QA. No merge/deploy/release, download/master replacement, external agent launch or schedule. Independent Hermes OPEN; owner merge/policy promotion OPEN.
+
+Preservation branch: agent/topo-harness-v2-codex-reviewed; no second PR. Tested implementation remains866a8b6; preservation commit adds metadata/evidence only, verified against the original code digest. Remote PR74 is untouched.

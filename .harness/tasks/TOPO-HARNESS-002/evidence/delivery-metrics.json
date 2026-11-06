@@ -1,0 +1,15 @@
+{
+  "events": 3,
+  "failures": 0,
+  "humanInterventions": 1,
+  "durationMs": 332904,
+  "repeatedFailures": 0,
+  "tokenCost": null,
+  "currencyCost": null,
+  "sourceSha": "866a8b6fc1c19cc733acf19e550385fb3ae13ecf",
+  "automaticResumptions": 1,
+  "expectedFaultInjections": 1,
+  "reviewDefectsFixed": 7,
+  "humanInterventionMeaning": "one owner design approval; automatic pilot resume is not a human intervention",
+  "independentQa": "OPEN"
+}

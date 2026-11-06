@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "status": "PROPOSED",
+  "metrics": {
+    "events": 1,
+    "failures": 1,
+    "humanInterventions": 0,
+    "durationMs": 150.0305,
+    "repeatedFailures": 0,
+    "tokenCost": null,
+    "currencyCost": null
+  },
+  "source": {
+    "evidence": ".harness/tasks/TOPO-HARNESS-002/evidence/P001-red.log",
+    "evidenceSha256": "9b1c8ae42e2a9189bafb4af5d3dc5dacb1d4cc828abe9bcc8c25a3dd76602d66"
+  },
+  "independentQa": "OPEN",
+  "ownerApproval": "OPEN",
+  "promotion": "separate reviewed branch only; no automatic application",
+  "branch": "agent/topo-harness-v2-improvement-fresh-package",
+  "commit": "94d13908693fa408bc066ee0ca0bcb1fc1f68f28"
+}

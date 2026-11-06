@@ -1,0 +1,67 @@
+{
+  "target": "b06b13059ff5e2ef7278c2d0c55597cf8a9435cf",
+  "engine": "chrome",
+  "version": "157.0.8103.38",
+  "scope": "Actual native dialogs and real buttons/keyboard; no modal shims or state fixtures",
+  "results": [
+    {
+      "choice": "cancel",
+      "fixture": false,
+      "initial": "1–2 / 8",
+      "afterEditFocus": {
+        "tag": "BODY",
+        "id": "",
+        "cls": "",
+        "label": "BODY",
+        "dialog": null
+      },
+      "beforeArrow": "1–2 / 8",
+      "afterArrow": "1–2 / 8",
+      "lostPaging": true,
+      "afterTabFocus": {
+        "tag": "BUTTON",
+        "id": "",
+        "cls": "button",
+        "label": "Pas mijn boekje aan",
+        "dialog": "travelBook"
+      },
+      "afterRecoveryArrow": "3–4 / 8",
+      "profile": {
+        "schema": 1,
+        "name": "",
+        "coverColor": "riviera",
+        "favoritePizza": null
+      }
+    },
+    {
+      "choice": "save",
+      "fixture": false,
+      "initial": "1–2 / 8",
+      "afterEditFocus": {
+        "tag": "BODY",
+        "id": "",
+        "cls": "",
+        "label": "BODY",
+        "dialog": null
+      },
+      "beforeArrow": "1–2 / 8",
+      "afterArrow": "1–2 / 8",
+      "lostPaging": true,
+      "afterTabFocus": {
+        "tag": "BUTTON",
+        "id": "",
+        "cls": "button",
+        "label": "Pas mijn boekje aan",
+        "dialog": "travelBook"
+      },
+      "afterRecoveryArrow": "3–4 / 8",
+      "profile": {
+        "schema": 1,
+        "name": "Focuscontrole",
+        "coverColor": "riviera",
+        "favoritePizza": null
+      }
+    }
+  ],
+  "errors": []
+}

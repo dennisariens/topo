@@ -1,0 +1,67 @@
+{
+  "target": "b06b13059ff5e2ef7278c2d0c55597cf8a9435cf",
+  "engine": "webkit",
+  "version": "27.2",
+  "scope": "Actual native dialogs and real buttons/keyboard; no modal shims or state fixtures",
+  "results": [
+    {
+      "choice": "cancel",
+      "fixture": false,
+      "initial": "1–2 / 8",
+      "afterEditFocus": {
+        "tag": "DIALOG",
+        "id": "travelBook",
+        "cls": "travelBook",
+        "label": "Il mio viaggio in ItaliaSluit boekjeMijn reisboekjeJouw herinneringen aan leren ",
+        "dialog": "travelBook"
+      },
+      "beforeArrow": "1–2 / 8",
+      "afterArrow": "3–4 / 8",
+      "lostPaging": false,
+      "afterTabFocus": {
+        "tag": "BODY",
+        "id": "",
+        "cls": "",
+        "label": "BODY",
+        "dialog": null
+      },
+      "afterRecoveryArrow": "3–4 / 8",
+      "profile": {
+        "schema": 1,
+        "name": "",
+        "coverColor": "riviera",
+        "favoritePizza": null
+      }
+    },
+    {
+      "choice": "save",
+      "fixture": false,
+      "initial": "1–2 / 8",
+      "afterEditFocus": {
+        "tag": "DIALOG",
+        "id": "travelBook",
+        "cls": "travelBook",
+        "label": "Il mio viaggio in ItaliaSluit boekjeFocuscontrole · mijn reisboekjeJouw herinner",
+        "dialog": "travelBook"
+      },
+      "beforeArrow": "1–2 / 8",
+      "afterArrow": "3–4 / 8",
+      "lostPaging": false,
+      "afterTabFocus": {
+        "tag": "BODY",
+        "id": "",
+        "cls": "",
+        "label": "BODY",
+        "dialog": null
+      },
+      "afterRecoveryArrow": "3–4 / 8",
+      "profile": {
+        "schema": 1,
+        "name": "Focuscontrole",
+        "coverColor": "riviera",
+        "favoritePizza": null
+      }
+    }
+  ],
+  "errors": []
+}

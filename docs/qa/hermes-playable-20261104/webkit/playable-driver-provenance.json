@@ -1,0 +1,11 @@
+{
+  "source": "/Users/dennisariens/projects/topo-playable-independent-qa/scripts/qa-nino-playable.mjs",
+  "sourceSHA256": "3d0ae7f7cea010b972b39851296f6c9a7929389ebd12ff14776bd2404a9f15a3",
+  "modifiedSHA256": "eba3c25602bec2fa9f9f5be94ee5e69a3c53238be0cf8e30d2ebb70b511dc7c4",
+  "scope": "Only root/output/demo-path relocation into own evidence. All assertions and browser actions unchanged.",
+  "relocations": [
+    "root=new URL('../',import.meta.url)",
+    "out=new URL('docs/qa/playable-20261104/',root)",
+    "new URL('../../../output/demo/NINO-2-DEMO-niet-echt-gespeeld.json',out)"
+  ]
+}

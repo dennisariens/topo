@@ -1,0 +1,335 @@
+{
+  "target": "b06b13059ff5e2ef7278c2d0c55597cf8a9435cf",
+  "sha256": "933931eb67a347948a270da7aa912bfc48ee3cba420c72fbe7d02e34c93d4a35",
+  "engine": "webkit",
+  "browser": "27.2",
+  "scope": "Independent additional browser design; genuine first chapter+Gold, all3 real flavor rollovers and explicit fault-injection import rollback",
+  "trace": [
+    {
+      "id": "city-2",
+      "name": "Bologna",
+      "kind": "point",
+      "xy": [
+        572.5781578947368,
+        524.9583496963563
+      ],
+      "good": 1,
+      "pizzas": 0,
+      "slices": 1,
+      "trips": 0
+    },
+    {
+      "id": "city-3",
+      "name": "Florence",
+      "kind": "point",
+      "xy": [
+        570.206616902834,
+        551.5339817813765
+      ],
+      "good": 2,
+      "pizzas": 0,
+      "slices": 2,
+      "trips": 0
+    },
+    {
+      "id": "city-6",
+      "name": "Napels",
+      "kind": "point",
+      "xy": [
+        649.0759256072874,
+        659.9205915991903
+      ],
+      "good": 3,
+      "pizzas": 0,
+      "slices": 3,
+      "trips": 0
+    },
+    {
+      "id": "city-1",
+      "name": "Bari",
+      "kind": "point",
+      "xy": [
+        718.3680414979757,
+        649.8786725708502
+      ],
+      "good": 4,
+      "pizzas": 0,
+      "slices": 4,
+      "trips": 0
+    },
+    {
+      "id": "city-4",
+      "name": "Genua",
+      "kind": "point",
+      "xy": [
+        509.0735602226721,
+        528.2928800607287
+      ],
+      "good": 5,
+      "pizzas": 0,
+      "slices": 5,
+      "trips": 0
+    },
+    {
+      "id": "city-5",
+      "name": "Milaan",
+      "kind": "point",
+      "xy": [
+        516.2696300607288,
+        489.1169392712551
+      ],
+      "good": 6,
+      "pizzas": 0,
+      "slices": 6,
+      "trips": 0
+    },
+    {
+      "id": "city-2",
+      "name": "Bologna",
+      "kind": "write",
+      "xy": null,
+      "good": 7,
+      "pizzas": 0,
+      "slices": 7,
+      "trips": 0
+    },
+    {
+      "id": "city-5",
+      "name": "Milaan",
+      "kind": "write",
+      "xy": null,
+      "good": 8,
+      "pizzas": 1,
+      "slices": 0,
+      "trips": 0
+    },
+    {
+      "id": "city-1",
+      "name": "Bari",
+      "kind": "write",
+      "xy": null,
+      "good": 9,
+      "pizzas": 1,
+      "slices": 1,
+      "trips": 0
+    },
+    {
+      "id": "city-6",
+      "name": "Napels",
+      "kind": "write",
+      "xy": null,
+      "good": 10,
+      "pizzas": 1,
+      "slices": 2,
+      "trips": 0
+    },
+    {
+      "id": "city-3",
+      "name": "Florence",
+      "kind": "write",
+      "xy": null,
+      "good": 11,
+      "pizzas": 1,
+      "slices": 3,
+      "trips": 0
+    },
+    {
+      "id": "city-4",
+      "name": "Genua",
+      "kind": "write",
+      "xy": null,
+      "good": 12,
+      "pizzas": 1,
+      "slices": 4,
+      "trips": 0
+    },
+    {
+      "id": "city-6",
+      "name": "Napels",
+      "kind": "point",
+      "xy": [
+        649.0759256072874,
+        156.9205915991903
+      ],
+      "good": 13,
+      "pizzas": 1,
+      "slices": 5,
+      "trips": 0
+    },
+    {
+      "id": "city-4",
+      "name": "Genua",
+      "kind": "point",
+      "xy": [
+        509.0735602226721,
+        25.29288006072875
+      ],
+      "good": 14,
+      "pizzas": 1,
+      "slices": 6,
+      "trips": 0
+    },
+    {
+      "id": "city-1",
+      "name": "Bari",
+      "kind": "point",
+      "xy": [
+        718.3680414979757,
+        146.8786725708502
+      ],
+      "good": 15,
+      "pizzas": 1,
+      "slices": 7,
+      "trips": 0
+    },
+    {
+      "id": "city-5",
+      "name": "Milaan",
+      "kind": "point",
+      "xy": [
+        516.2696300607288,
+        500.1169392712551
+      ],
+      "good": 16,
+      "pizzas": 2,
+      "slices": 0,
+      "trips": 0
+    },
+    {
+      "id": "city-2",
+      "name": "Bologna",
+      "kind": "point",
+      "xy": [
+        572.5781578947368,
+        506.9583496963563
+      ],
+      "good": 17,
+      "pizzas": 2,
+      "slices": 1,
+      "trips": 0
+    },
+    {
+      "id": "city-3",
+      "name": "Florence",
+      "kind": "point",
+      "xy": [
+        570.206616902834,
+        533.5339817813765
+      ],
+      "good": 18,
+      "pizzas": 2,
+      "slices": 2,
+      "trips": 0
+    },
+    {
+      "id": "city-1",
+      "name": "Bari",
+      "kind": "write",
+      "xy": null,
+      "good": 19,
+      "pizzas": 2,
+      "slices": 3,
+      "trips": 0
+    },
+    {
+      "id": "city-4",
+      "name": "Genua",
+      "kind": "write",
+      "xy": null,
+      "good": 20,
+      "pizzas": 2,
+      "slices": 4,
+      "trips": 0
+    },
+    {
+      "id": "city-3",
+      "name": "Florence",
+      "kind": "write",
+      "xy": null,
+      "good": 21,
+      "pizzas": 2,
+      "slices": 5,
+      "trips": 0
+    },
+    {
+      "id": "city-5",
+      "name": "Milaan",
+      "kind": "write",
+      "xy": null,
+      "good": 22,
+      "pizzas": 2,
+      "slices": 6,
+      "trips": 0
+    },
+    {
+      "id": "city-6",
+      "name": "Napels",
+      "kind": "write",
+      "xy": null,
+      "good": 23,
+      "pizzas": 2,
+      "slices": 7,
+      "trips": 0
+    },
+    {
+      "id": "city-2",
+      "name": "Bologna",
+      "kind": "write",
+      "xy": null,
+      "good": 24,
+      "pizzas": 3,
+      "slices": 0,
+      "trips": 1
+    }
+  ],
+  "milestones": [
+    {
+      "good": 8,
+      "pizzas": 1,
+      "slices": 0,
+      "trips": 0,
+      "flavor": "margherita",
+      "preference": "salami",
+      "fixture": false
+    },
+    {
+      "good": 16,
+      "pizzas": 2,
+      "slices": 0,
+      "trips": 0,
+      "flavor": "salami",
+      "preference": "salami",
+      "fixture": false
+    },
+    {
+      "good": 24,
+      "pizzas": 3,
+      "slices": 0,
+      "trips": 1,
+      "flavor": "quattro-formaggi",
+      "preference": "salami",
+      "fixture": false
+    }
+  ],
+  "checks": [
+    {
+      "case": "Three actual earned flavors + Gold/first trip, despite favorite Salami",
+      "status": "PASS",
+      "fixture": false
+    },
+    {
+      "case": "Actual UI import of genuine24 save with deliberate progress-store failure; cosmetic profile rollback",
+      "status": "PASS",
+      "fixture": "Explicit storage fault injection only; exported progress is genuinely played"
+    },
+    {
+      "case": "Reimport after restored storage succeeds; nickname is literal text not markup",
+      "status": "PASS",
+      "fixture": false
+    }
+  ],
+  "errors": [],
+  "network": [],
+  "status": "PASS",
+  "failure": null
+}

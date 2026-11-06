@@ -1,0 +1,143 @@
+{
+  "head": "b06b13059ff5e2ef7278c2d0c55597cf8a9435cf",
+  "artifact": {
+    "bytes": 40999720,
+    "sha256": "933931eb67a347948a270da7aa912bfc48ee3cba420c72fbe7d02e34c93d4a35"
+  },
+  "pizzaSourceCount": 85,
+  "newArtwork": [
+    {
+      "role": "cover",
+      "pin": "4eb9a5ae33550d789c56d5c01393145a148565aa",
+      "path": "assets/nino/travel-passport/book/exports/passport-closed-cover.webp",
+      "bytes": 1528760,
+      "sha256": "8901f57c74feb6d81fea23cb7b216ef403b982e8bdf66f1c89ea83eca15add44",
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "role": "travel",
+      "pin": "8a704cb23da97baf7197635df7fa12f06b864a24",
+      "path": "assets/nino/exports/nino-travel.webp",
+      "bytes": 236836,
+      "sha256": "d12e2738fbbbfd05f174ab5af8d555f22fc4505a4c57fb72f28020096dc7a424",
+      "width": 1254,
+      "height": 1254
+    }
+  ],
+  "wholeFile": {
+    "baselineNormalizedSha256": "72c706661b45ff80eb3969e911047b61d1a2cfe8d3d191c1680ccc4e6dd9d159",
+    "candidateNormalizedSha256": "72c706661b45ff80eb3969e911047b61d1a2cfe8d3d191c1680ccc4e6dd9d159",
+    "equal": true
+  },
+  "defects": {
+    "oversizedNameBackup": {
+      "graphemes": 1,
+      "nameCodeUnits": 500002,
+      "utf8Bytes": 1000235,
+      "validatorAccepted": true,
+      "importGuardRejects": true,
+      "qualification": "Pathological pasted Unicode; no natural learner input claim. Uses exact export structure with minimal progress, so real progress only increases size."
+    },
+    "profileEditorFocus": {
+      "afterCancel": "BODY",
+      "oldTriggerConnected": false,
+      "bookOpen": true,
+      "qualification": "Actual full HTML in jsdom; showModal/close shimmed. Deterministic focused-node removal proven; native modal focus recovery requires parent browser verification."
+    }
+  },
+  "risks": {
+    "historicalSemanticBlindspot": {
+      "stampRoleSwapPasses": true,
+      "fictionalDimensionPasses": true,
+      "status": "Known separately OPEN; no new closure claim"
+    },
+    "doubleStorageFailure": {
+      "memoryName": "Ada",
+      "diskName": "New",
+      "diskProgress": "old-progress",
+      "qualification": "Fault-injected changing storage availability; no real browser storage scenario established"
+    }
+  },
+  "cadence": {
+    "answers": 72,
+    "events": [
+      {
+        "answer": 8,
+        "total": 1,
+        "next": "salami",
+        "completed": "margherita"
+      },
+      {
+        "answer": 16,
+        "total": 2,
+        "next": "quattro-formaggi",
+        "completed": "salami"
+      },
+      {
+        "answer": 24,
+        "total": 3,
+        "next": "margherita",
+        "completed": "quattro-formaggi"
+      },
+      {
+        "answer": 32,
+        "total": 4,
+        "next": "salami",
+        "completed": "margherita"
+      },
+      {
+        "answer": 40,
+        "total": 5,
+        "next": "quattro-formaggi",
+        "completed": "salami"
+      },
+      {
+        "answer": 48,
+        "total": 6,
+        "next": "margherita",
+        "completed": "quattro-formaggi"
+      },
+      {
+        "answer": 56,
+        "total": 7,
+        "next": "salami",
+        "completed": "margherita"
+      },
+      {
+        "answer": 64,
+        "total": 8,
+        "next": "quattro-formaggi",
+        "completed": "salami"
+      },
+      {
+        "answer": 72,
+        "total": 9,
+        "next": "margherita",
+        "completed": "quattro-formaggi"
+      }
+    ],
+    "trips": [
+      {
+        "clock": 3660,
+        "to": "Florence"
+      },
+      {
+        "clock": 8820,
+        "to": "Bologna"
+      },
+      {
+        "clock": 13980,
+        "to": "Venetië"
+      }
+    ],
+    "final": {
+      "good": 72,
+      "pizzas": 9,
+      "slices": 0,
+      "trips": 3
+    },
+    "noPresentationStateMutation": true
+  },
+  "allAssertionsPassed": true
+}

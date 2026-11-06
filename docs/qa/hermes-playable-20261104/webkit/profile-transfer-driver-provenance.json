@@ -1,0 +1,10 @@
+{
+  "source": "/Users/dennisariens/projects/topo-playable-independent-qa/scripts/qa-nino-profile-transfer.mjs",
+  "sourceSHA256": "22c5bd81864028c7cca0321369a1268c001737124d75c1fffb186dfc1f927371",
+  "modifiedSHA256": "46bafdf51379e668cf5277a7bdefed1702fc76d4de5c89e37da215647716b0e3",
+  "scope": "Only root/output/demo-path relocation into own evidence. All assertions and browser actions unchanged.",
+  "relocations": [
+    "root=new URL('../',import.meta.url)",
+    "out=new URL('docs/qa/playable-20261104/',root)"
+  ]
+}

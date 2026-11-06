@@ -1,0 +1,22 @@
+{
+  "verdict": "REWORK",
+  "testedSHA": "b06b13059ff5e2ef7278c2d0c55597cf8a9435cf",
+  "html": {"path": "output/html/NINO-2-Proefversie-2026-11-04.html", "bytes": 40999720, "sha256": "933931eb67a347948a270da7aa912bfc48ee3cba420c72fbe7d02e34c93d4a35"},
+  "engines": {"chrome": "157.0.8103.38", "webkit": "27.2"},
+  "viewportsCSS": [[1500,1000],[1180,820],[768,1024],[390,844],[320,740]],
+  "DPR": 2,
+  "releaseCheck": {"status":"PASS","node":"24.15.0","existingTestPrograms":17,"newTestFiles":3,"newTestsReportedInLog":11,"buildLintPreservation":"PASS"},
+  "maintainedPlayableOwnExecution": "PASS, both engines; root/output/demo path relocation only; provenance retained",
+  "all45OwnExecution": {"status":"PASS","perEngine":true,"objects":45,"styles":2,"correctPointerTrials":180,"wrongPointerTrials":90,"writingTrials":180,"currentQuestionFixtures":true,"naturalAll45Playthrough":false},
+  "realGameplay": {"maintainedSessionPerEngine":{"good":12,"pizzas":1,"slices":4,"chapter1Stamp":true,"gold":false},"separateIndependentSessionPerEngine":{"good":24,"pizzas":3,"slices":0,"trips":1,"chapter1Gold":true,"actualFlavorOrder":["margherita","salami","quattro-formaggi"],"favorite":"salami"}},
+  "F1": "PASS; same mode/question/draft/backward selection after Reis/Oefenen",
+  "profileBackup": "PASS actual download/import, legacy without profile, invalid-profile rejection, single blocked progress-write rollback; double-changing-failure risk not certified",
+  "findings": [{"id":"F2","severity":"P2","status":"Native Chrome REPRODUCED","reproduction":"Book→Pas mijn boekje aan→Save or Cancel→ArrowRight","actual":"BODY focused, page stays1–2/8; Tab then ArrowRight recovers3–4/8","webkit":"Direct ArrowRight works, original defect not reproduced","proof":"chrome-profile-focus.json"},{"id":"F3","severity":"P3","status":"Actual validator/export in-memory REPRODUCED","case":"One grapheme with500001 combining accents accepted; backup1000235UTF8bytes exceeds1000000import ceiling","normalLearnerFailureClaimed":false,"proof":"static/measurements.json"}],
+  "sourceChecks": {"pizzaSourceFilesMatchedPR29":85,"preexistingV2RolesUnchanged":36,"enginePrintLockfileUnchanged":true,"historicalSemanticNormalizerGap":"OPEN"},
+  "demoLateStates": "Explicit imported fixture, never naturally earned/default-loaded claim",
+  "ownerGates": ["Missing approved1024PNG appicon source; Travel temporary", "Original-red-cover accent", "1086x1448 folio exception at<=543CSS/page,DPR2", "Reconstructed Venezia edge vs missing original matte", "Final visual/release acceptance"],
+  "notTested": ["Native Safari", "Physical iPad", "OS keyboard/IME/VoiceOver", "OS favicon cache", "Actual printing", "200percent OS text/hardware", "Natural all11/all45 full route"],
+  "nextAction": "Codex restores connected book focus after profile rerender and adds native Chrome Save/Cancel→ArrowRight regressions; submits new SHA",
+  "productionModified": false,
+  "mergeDeployDownloadReplacement": false
+}

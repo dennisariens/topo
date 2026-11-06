@@ -1,0 +1,19 @@
+{
+  "artifact": "file:///Users/dennisariens/projects/topo-playable-independent-qa/output/html/TOPO-NINO-Computer-Release.html",
+  "bytes": 40999720,
+  "sha256": "933931eb67a347948a270da7aa912bfc48ee3cba420c72fbe7d02e34c93d4a35",
+  "browser": "157.0.8103.38",
+  "transport": "file:// offline:true",
+  "objects": 45,
+  "styles": 2,
+  "correctPointerTrials": 180,
+  "wrongPointerTrials": 90,
+  "writingTrials": 180,
+  "coverage": "Explicit per-item current-question fixtures with actual mouse/buttons and writing; not a full natural-route all-45 playthrough. Existing DOM suite covers all eleven route chapters. Geography compares pinned source baselines, not a fresh independent survey.",
+  "goldWrongCannotPass": true,
+  "reloadExact": true,
+  "errors": [],
+  "consoleErrors": [],
+  "external": [],
+  "physicalSafari": "NOT TESTED"
+}

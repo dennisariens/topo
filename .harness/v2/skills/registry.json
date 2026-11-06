@@ -107,7 +107,7 @@
       "~/.claude/plugins/cache",
       "~/.codex/plugins/cache"
     ],
-    "include": "design|\\bui\\b|\\bux\\b|accessib|typograph|visual|layout|interface",
-    "exclude": "react|next\\.?js|shadcn|vue|angular|svelte|tailwind|figma|swiftui|\\bios\\b|android"
+    "include": "frontend|front-end|\\bui\\b|\\bux\\b|web design|visual design|interface design|design system|accessib|typograph",
+    "exclude": "react|next\\.?js|shadcn|vue|angular|svelte|tailwind|figma|swiftui|\\bios\\b|android|database|postgres|observability|\\bagents?\\b|\\bsdk\\b|spreadsheet|\\bpdf\\b|benchmark|research|template|imagegen|touchdesigner|debugging"
   }
 }

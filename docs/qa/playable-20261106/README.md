@@ -11,8 +11,8 @@
 ## Zo speel je het
 
 1. Open de HTML. Eerste start toont de onboarding.
-2. Voor de derde pizza: Menu → Instellingen en meer → Zet reservekopie terug → kies de demosave. Dit vervangt de lokale voortgang.
-3. Kies **Verder met Steden 1–6** en geef het juiste antwoord op de open schrijfvraag.
+2. Voor de derde pizza: kies onderaan het Reis-scherm **Zet reservekopie terug** en daarna de demosave. Dit vervangt de lokale voortgang.
+3. Kies **Ga verder · Steden 1–6** en geef het juiste antwoord op de open schrijfvraag.
 
 ### Wat uit de demosave komt
 

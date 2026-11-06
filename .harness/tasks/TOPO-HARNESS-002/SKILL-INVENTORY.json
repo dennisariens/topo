@@ -1,0 +1,1335 @@
+{
+  "status": "preflight discovery only; not execution receipts",
+  "entries": [
+    {
+      "engine": "codex",
+      "id": "alchemy",
+      "available": true,
+      "read": false,
+      "used": false
+    },
+    {
+      "engine": "codex",
+      "id": "alchemy-orchestrate",
+      "available": true,
+      "read": false,
+      "used": false
+    },
+    {
+      "engine": "codex",
+      "id": "architecture-as-code",
+      "available": true,
+      "read": false,
+      "used": false
+    },
+    {
+      "engine": "codex",
+      "id": "architecture-as-code-javascript",
+      "available": true,
+      "read": false,
+      "used": false
+    },
+    {
+      "engine": "codex",
+      "id": "architecture-as-code-python",
+      "available": true,
+      "read": false,
+      "used": false
+    },
+    {
+      "engine": "codex",
+      "id": "architecture-guidelines",
+      "available": true,
+      "read": false,
+      "used": false
+    },
+    {
+      "engine": "codex",
+      "id": "babysit",
+      "available": true,
+      "read": false,
+      "used": false
+    },
+    {
+      "engine": "codex",
+      "id": "bring-down",
+      "available": true,
+      "read": false,
+      "used": false
+    },
+    {
+      "engine": "codex",
+      "id": "canvas",
+      "available": true,
+      "read": false,
+      "used": false
+    },
+    {
+      "engine": "codex",
+      "id": "ci-cd-reliability-architecture",
+      "available": true,
+      "read": false,
+      "used": false
+    },
+    {
+      "engine": "codex",
+      "id": "continuous-improvement",
+      "available": true,
+      "read": false,
+      "used": false
+    },
+    {
+      "engine": "codex",
+      "id": "create-hook",
+      "available": true,
+      "read": false,
+      "used": false
+    },
+    {
+      "engine": "codex",
+      "id": "create-rule",
+      "available": true,
+      "read": false,
+      "used": false
+    },
+    {
+      "engine": "codex",
+      "id": "create-skill",
+      "available": true,
+      "read": false,
+      "used": false
+    },
+    {
+      "engine": "codex",
+      "id": "create-subagent",
+      "available": true,
+      "read": false,
+      "used": false
+    },
+    {
+      "engine": "codex",
+      "id": "defect-shift-left",
+      "available": true,
+      "read": false,
+      "used": false
+    },
+    {
+      "engine": "codex",
+      "id": "dependency-lifecycle",
+      "available": true,
+      "read": false,
+      "used": false
+    },
+    {
+      "engine": "codex",
+      "id": "evolutionary-database-design",
+      "available": true,
+      "read": false,
+      "used": false
+    },
+    {
+      "engine": "codex",
+      "id": "frontend-design",
+      "available": true,
+      "read": false,
+      "used": false
+    },
+    {
+      "engine": "codex",
+      "id": "functionality-complexity-tradeoff",
+      "available": true,
+      "read": false,
+      "used": false
+    },
+    {
+      "engine": "codex",
+      "id": "implementation-readiness",
+      "available": true,
+      "read": false,
+      "used": false
+    },
+    {
+      "engine": "codex",
+      "id": "infrastructure-fit",
+      "available": true,
+      "read": false,
+      "used": false
+    },
+    {
+      "engine": "codex",
+      "id": "migrate-to-skills",
+      "available": true,
+      "read": false,
+      "used": false
+    },
+    {
+      "engine": "codex",
+      "id": "morphogenetic-architecture",
+      "available": true,
+      "read": false,
+      "used": false
+    },
+    {
+      "engine": "codex",
+      "id": "observability-design",
+      "available": true,
+      "read": false,
+      "used": false
+    },
+    {
+      "engine": "codex",
+      "id": "push-out",
+      "available": true,
+      "read": false,
+      "used": false
+    },
+    {
+      "engine": "codex",
+      "id": "requirements-grounding",
+      "available": true,
+      "read": false,
+      "used": false
+    },
+    {
+      "engine": "codex",
+      "id": "requirements-topology",
+      "available": true,
+      "read": false,
+      "used": false
+    },
+    {
+      "engine": "codex",
+      "id": "requirements-traceability",
+      "available": true,
+      "read": false,
+      "used": false
+    },
+    {
+      "engine": "codex",
+      "id": "sdk",
+      "available": true,
+      "read": false,
+      "used": false
+    },
+    {
+      "engine": "codex",
+      "id": "shell",
+      "available": true,
+      "read": false,
+      "used": false
+    },
+    {
+      "engine": "codex",
+      "id": "split-to-prs",
+      "available": true,
+      "read": false,
+      "used": false
+    },
+    {
+      "engine": "codex",
+      "id": "ss",
+      "available": true,
+      "read": false,
+      "used": false
+    },
+    {
+      "engine": "codex",
+      "id": "statusline",
+      "available": true,
+      "read": false,
+      "used": false
+    },
+    {
+      "engine": "codex",
+      "id": "structural-simplification",
+      "available": true,
+      "read": false,
+      "used": false
+    },
+    {
+      "engine": "codex",
+      "id": "system-optimization",
+      "available": true,
+      "read": false,
+      "used": false
+    },
+    {
+      "engine": "codex",
+      "id": "test-strategy",
+      "available": true,
+      "read": false,
+      "used": false
+    },
+    {
+      "engine": "codex",
+      "id": "ui-ux-pro-max",
+      "available": true,
+      "read": false,
+      "used": false
+    },
+    {
+      "engine": "codex",
+      "id": "update-cli-config",
+      "available": true,
+      "read": false,
+      "used": false
+    },
+    {
+      "engine": "codex",
+      "id": "update-cursor-settings",
+      "available": true,
+      "read": false,
+      "used": false
+    },
+    {
+      "engine": "codex",
+      "id": "vercel-react-best-practices",
+      "available": true,
+      "read": false,
+      "used": false
+    },
+    {
+      "engine": "codex",
+      "id": "web-design-guidelines",
+      "available": true,
+      "read": false,
+      "used": false
+    },
+    {
+      "engine": "codex",
+      "id": "zero-copy-requirements",
+      "available": true,
+      "read": false,
+      "used": false
+    },
+    {
+      "engine": "hermes",
+      "id": ".archive/aerion-product-ui-polish",
+      "available": true,
+      "read": false,
+      "used": false
+    },
+    {
+      "engine": "hermes",
+      "id": ".archive/airtable",
+      "available": true,
+      "read": false,
+      "used": false
+    },
+    {
+      "engine": "hermes",
+      "id": ".archive/apple-notes",
+      "available": true,
+      "read": false,
+      "used": false
+    },
+    {
+      "engine": "hermes",
+      "id": ".archive/apple-reminders",
+      "available": true,
+      "read": false,
+      "used": false
+    },
+    {
+      "engine": "hermes",
+      "id": ".archive/architecture-diagram",
+      "available": true,
+      "read": false,
+      "used": false
+    },
+    {
+      "engine": "hermes",
+      "id": ".archive/arxiv",
+      "available": true,
+      "read": false,
+      "used": false
+    },
+    {
+      "engine": "hermes",
+      "id": ".archive/ascii-art",
+      "available": true,
+      "read": false,
+      "used": false
+    },
+    {
+      "engine": "hermes",
+      "id": ".archive/ascii-video",
+      "available": true,
+      "read": false,
+      "used": false
+    },
+    {
+      "engine": "hermes",
+      "id": ".archive/audiocraft",
+      "available": true,
+      "read": false,
+      "used": false
+    },
+    {
+      "engine": "hermes",
+      "id": ".archive/baoyu-infographic",
+      "available": true,
+      "read": false,
+      "used": false
+    },
+    {
+      "engine": "hermes",
+      "id": ".archive/blogwatcher",
+      "available": true,
+      "read": false,
+      "used": false
+    },
+    {
+      "engine": "hermes",
+      "id": ".archive/claude-code",
+      "available": true,
+      "read": false,
+      "used": false
+    },
+    {
+      "engine": "hermes",
+      "id": ".archive/claude-design",
+      "available": true,
+      "read": false,
+      "used": false
+    },
+    {
+      "engine": "hermes",
+      "id": ".archive/codebase-inspection",
+      "available": true,
+      "read": false,
+      "used": false
+    },
+    {
+      "engine": "hermes",
+      "id": ".archive/codex",
+      "available": true,
+      "read": false,
+      "used": false
+    },
+    {
+      "engine": "hermes",
+      "id": ".archive/comfyui",
+      "available": true,
+      "read": false,
+      "used": false
+    },
+    {
+      "engine": "hermes",
+      "id": ".archive/computer-use",
+      "available": true,
+      "read": false,
+      "used": false
+    },
+    {
+      "engine": "hermes",
+      "id": ".archive/design-md",
+      "available": true,
+      "read": false,
+      "used": false
+    },
+    {
+      "engine": "hermes",
+      "id": ".archive/dogfood",
+      "available": true,
+      "read": false,
+      "used": false
+    },
+    {
+      "engine": "hermes",
+      "id": ".archive/endurance-control-systems",
+      "available": true,
+      "read": false,
+      "used": false
+    },
+    {
+      "engine": "hermes",
+      "id": ".archive/excalidraw",
+      "available": true,
+      "read": false,
+      "used": false
+    },
+    {
+      "engine": "hermes",
+      "id": ".archive/findmy",
+      "available": true,
+      "read": false,
+      "used": false
+    },
+    {
+      "engine": "hermes",
+      "id": ".archive/gif-search",
+      "available": true,
+      "read": false,
+      "used": false
+    },
+    {
+      "engine": "hermes",
+      "id": ".archive/github-auth",
+      "available": true,
+      "read": false,
+      "used": false
+    },
+    {
+      "engine": "hermes",
+      "id": ".archive/github-code-review",
+      "available": true,
+      "read": false,
+      "used": false
+    },
+    {
+      "engine": "hermes",
+      "id": ".archive/github-issues",
+      "available": true,
+      "read": false,
+      "used": false
+    },
+    {
+      "engine": "hermes",
+      "id": ".archive/github-pr-workflow",
+      "available": true,
+      "read": false,
+      "used": false
+    },
+    {
+      "engine": "hermes",
+      "id": ".archive/github-repo-management",
+      "available": true,
+      "read": false,
+      "used": false
+    },
+    {
+      "engine": "hermes",
+      "id": ".archive/google-workspace",
+      "available": true,
+      "read": false,
+      "used": false
+    },
+    {
+      "engine": "hermes",
+      "id": ".archive/heartmula",
+      "available": true,
+      "read": false,
+      "used": false
+    },
+    {
+      "engine": "hermes",
+      "id": ".archive/hermes-agent-skill-authoring",
+      "available": true,
+      "read": false,
+      "used": false
+    },
+    {
+      "engine": "hermes",
+      "id": ".archive/himalaya",
+      "available": true,
+      "read": false,
+      "used": false
+    },
+    {
+      "engine": "hermes",
+      "id": ".archive/huggingface-hub",
+      "available": true,
+      "read": false,
+      "used": false
+    },
+    {
+      "engine": "hermes",
+      "id": ".archive/humanizer",
+      "available": true,
+      "read": false,
+      "used": false
+    },
+    {
+      "engine": "hermes",
+      "id": ".archive/imessage",
+      "available": true,
+      "read": false,
+      "used": false
+    },
+    {
+      "engine": "hermes",
+      "id": ".archive/kanban-orchestrator",
+      "available": true,
+      "read": false,
+      "used": false
+    },
+    {
+      "engine": "hermes",
+      "id": ".archive/kanban-worker",
+      "available": true,
+      "read": false,
+      "used": false
+    },
+    {
+      "engine": "hermes",
+      "id": ".archive/llama-cpp",
+      "available": true,
+      "read": false,
+      "used": false
+    },
+    {
+      "engine": "hermes",
+      "id": ".archive/llm-wiki",
+      "available": true,
+      "read": false,
+      "used": false
+    },
+    {
+      "engine": "hermes",
+      "id": ".archive/lm-evaluation-harness",
+      "available": true,
+      "read": false,
+      "used": false
+    },
+    {
+      "engine": "hermes",
+      "id": ".archive/macos-computer-use",
+      "available": true,
+      "read": false,
+      "used": false
+    },
+    {
+      "engine": "hermes",
+      "id": ".archive/manim-video",
+      "available": true,
+      "read": false,
+      "used": false
+    },
+    {
+      "engine": "hermes",
+      "id": ".archive/maps",
+      "available": true,
+      "read": false,
+      "used": false
+    },
+    {
+      "engine": "hermes",
+      "id": ".archive/ml-paper-writing",
+      "available": true,
+      "read": false,
+      "used": false
+    },
+    {
+      "engine": "hermes",
+      "id": ".archive/nano-pdf",
+      "available": true,
+      "read": false,
+      "used": false
+    },
+    {
+      "engine": "hermes",
+      "id": ".archive/node-inspect-debugger",
+      "available": true,
+      "read": false,
+      "used": false
+    },
+    {
+      "engine": "hermes",
+      "id": ".archive/notion",
+      "available": true,
+      "read": false,
+      "used": false
+    },
+    {
+      "engine": "hermes",
+      "id": ".archive/obsidian",
+      "available": true,
+      "read": false,
+      "used": false
+    },
+    {
+      "engine": "hermes",
+      "id": ".archive/ocr-and-documents",
+      "available": true,
+      "read": false,
+      "used": false
+    },
+    {
+      "engine": "hermes",
+      "id": ".archive/opencode",
+      "available": true,
+      "read": false,
+      "used": false
+    },
+    {
+      "engine": "hermes",
+      "id": ".archive/openhue",
+      "available": true,
+      "read": false,
+      "used": false
+    },
+    {
+      "engine": "hermes",
+      "id": ".archive/p5js",
+      "available": true,
+      "read": false,
+      "used": false
+    },
+    {
+      "engine": "hermes",
+      "id": ".archive/polymarket",
+      "available": true,
+      "read": false,
+      "used": false
+    },
+    {
+      "engine": "hermes",
+      "id": ".archive/popular-web-designs",
+      "available": true,
+      "read": false,
+      "used": false
+    },
+    {
+      "engine": "hermes",
+      "id": ".archive/powerpoint",
+      "available": true,
+      "read": false,
+      "used": false
+    },
+    {
+      "engine": "hermes",
+      "id": ".archive/pretext",
+      "available": true,
+      "read": false,
+      "used": false
+    },
+    {
+      "engine": "hermes",
+      "id": ".archive/python-debugpy",
+      "available": true,
+      "read": false,
+      "used": false
+    },
+    {
+      "engine": "hermes",
+      "id": ".archive/requesting-code-review",
+      "available": true,
+      "read": false,
+      "used": false
+    },
+    {
+      "engine": "hermes",
+      "id": ".archive/research-paper-writing",
+      "available": true,
+      "read": false,
+      "used": false
+    },
+    {
+      "engine": "hermes",
+      "id": ".archive/segment-anything",
+      "available": true,
+      "read": false,
+      "used": false
+    },
+    {
+      "engine": "hermes",
+      "id": ".archive/simplify-code",
+      "available": true,
+      "read": false,
+      "used": false
+    },
+    {
+      "engine": "hermes",
+      "id": ".archive/sketch",
+      "available": true,
+      "read": false,
+      "used": false
+    },
+    {
+      "engine": "hermes",
+      "id": ".archive/songsee",
+      "available": true,
+      "read": false,
+      "used": false
+    },
+    {
+      "engine": "hermes",
+      "id": ".archive/songwriting-and-ai-music",
+      "available": true,
+      "read": false,
+      "used": false
+    },
+    {
+      "engine": "hermes",
+      "id": ".archive/spike",
+      "available": true,
+      "read": false,
+      "used": false
+    },
+    {
+      "engine": "hermes",
+      "id": ".archive/systematic-debugging",
+      "available": true,
+      "read": false,
+      "used": false
+    },
+    {
+      "engine": "hermes",
+      "id": ".archive/teams-meeting-pipeline",
+      "available": true,
+      "read": false,
+      "used": false
+    },
+    {
+      "engine": "hermes",
+      "id": ".archive/test-driven-development",
+      "available": true,
+      "read": false,
+      "used": false
+    },
+    {
+      "engine": "hermes",
+      "id": ".archive/touchdesigner-mcp",
+      "available": true,
+      "read": false,
+      "used": false
+    },
+    {
+      "engine": "hermes",
+      "id": ".archive/vllm",
+      "available": true,
+      "read": false,
+      "used": false
+    },
+    {
+      "engine": "hermes",
+      "id": ".archive/weights-and-biases",
+      "available": true,
+      "read": false,
+      "used": false
+    },
+    {
+      "engine": "hermes",
+      "id": ".archive/xitter",
+      "available": true,
+      "read": false,
+      "used": false
+    },
+    {
+      "engine": "hermes",
+      "id": ".archive/xurl",
+      "available": true,
+      "read": false,
+      "used": false
+    },
+    {
+      "engine": "hermes",
+      "id": ".archive/xurl-20260917094126",
+      "available": true,
+      "read": false,
+      "used": false
+    },
+    {
+      "engine": "hermes",
+      "id": ".archive/youtube-content",
+      "available": true,
+      "read": false,
+      "used": false
+    },
+    {
+      "engine": "hermes",
+      "id": "apple/apple-automation",
+      "available": true,
+      "read": false,
+      "used": false
+    },
+    {
+      "engine": "hermes",
+      "id": "autonomous-ai-agents/ai-coding-agents",
+      "available": true,
+      "read": false,
+      "used": false
+    },
+    {
+      "engine": "hermes",
+      "id": "autonomous-ai-agents/hermes-agent",
+      "available": true,
+      "read": false,
+      "used": false
+    },
+    {
+      "engine": "hermes",
+      "id": "creative/baoyu-comic",
+      "available": true,
+      "read": false,
+      "used": false
+    },
+    {
+      "engine": "hermes",
+      "id": "creative/creative-artifact-workflows",
+      "available": true,
+      "read": false,
+      "used": false
+    },
+    {
+      "engine": "hermes",
+      "id": "creative/creative-ideation",
+      "available": true,
+      "read": false,
+      "used": false
+    },
+    {
+      "engine": "hermes",
+      "id": "creative/pixel-art",
+      "available": true,
+      "read": false,
+      "used": false
+    },
+    {
+      "engine": "hermes",
+      "id": "data-science/jupyter-live-kernel",
+      "available": true,
+      "read": false,
+      "used": false
+    },
+    {
+      "engine": "hermes",
+      "id": "devops/hermes-agent-operations",
+      "available": true,
+      "read": false,
+      "used": false
+    },
+    {
+      "engine": "hermes",
+      "id": "devops/kanban-workflows",
+      "available": true,
+      "read": false,
+      "used": false
+    },
+    {
+      "engine": "hermes",
+      "id": "devops/paperclip-operations",
+      "available": true,
+      "read": false,
+      "used": false
+    },
+    {
+      "engine": "hermes",
+      "id": "devops/sdlc-review",
+      "available": true,
+      "read": false,
+      "used": false
+    },
+    {
+      "engine": "hermes",
+      "id": "devops/webhook-subscriptions",
+      "available": true,
+      "read": false,
+      "used": false
+    },
+    {
+      "engine": "hermes",
+      "id": "email/email-inbox-triage",
+      "available": true,
+      "read": false,
+      "used": false
+    },
+    {
+      "engine": "hermes",
+      "id": "gaming/minecraft-modpack-server",
+      "available": true,
+      "read": false,
+      "used": false
+    },
+    {
+      "engine": "hermes",
+      "id": "gaming/pokemon-player",
+      "available": true,
+      "read": false,
+      "used": false
+    },
+    {
+      "engine": "hermes",
+      "id": "github/github-workflows",
+      "available": true,
+      "read": false,
+      "used": false
+    },
+    {
+      "engine": "hermes",
+      "id": "inference-sh/cli",
+      "available": true,
+      "read": false,
+      "used": false
+    },
+    {
+      "engine": "hermes",
+      "id": "mcp/mcporter",
+      "available": true,
+      "read": false,
+      "used": false
+    },
+    {
+      "engine": "hermes",
+      "id": "mcp/native-mcp",
+      "available": true,
+      "read": false,
+      "used": false
+    },
+    {
+      "engine": "hermes",
+      "id": "media/media-content-workflows",
+      "available": true,
+      "read": false,
+      "used": false
+    },
+    {
+      "engine": "hermes",
+      "id": "media/spotify",
+      "available": true,
+      "read": false,
+      "used": false
+    },
+    {
+      "engine": "hermes",
+      "id": "migration/openclaw-migration",
+      "available": true,
+      "read": false,
+      "used": false
+    },
+    {
+      "engine": "hermes",
+      "id": "mlops/gpu-cloud-compute",
+      "available": true,
+      "read": false,
+      "used": false
+    },
+    {
+      "engine": "hermes",
+      "id": "mlops/inference/obliteratus",
+      "available": true,
+      "read": false,
+      "used": false
+    },
+    {
+      "engine": "hermes",
+      "id": "mlops/inference/outlines",
+      "available": true,
+      "read": false,
+      "used": false
+    },
+    {
+      "engine": "hermes",
+      "id": "mlops/llm-data-evaluation-curation",
+      "available": true,
+      "read": false,
+      "used": false
+    },
+    {
+      "engine": "hermes",
+      "id": "mlops/llm-inference-structured-serving",
+      "available": true,
+      "read": false,
+      "used": false
+    },
+    {
+      "engine": "hermes",
+      "id": "mlops/llm-training-ops",
+      "available": true,
+      "read": false,
+      "used": false
+    },
+    {
+      "engine": "hermes",
+      "id": "mlops/mlops-model-toolchain",
+      "available": true,
+      "read": false,
+      "used": false
+    },
+    {
+      "engine": "hermes",
+      "id": "mlops/multimodal-model-ops",
+      "available": true,
+      "read": false,
+      "used": false
+    },
+    {
+      "engine": "hermes",
+      "id": "mlops/research/dspy",
+      "available": true,
+      "read": false,
+      "used": false
+    },
+    {
+      "engine": "hermes",
+      "id": "mlops/training/axolotl",
+      "available": true,
+      "read": false,
+      "used": false
+    },
+    {
+      "engine": "hermes",
+      "id": "mlops/training/trl-fine-tuning",
+      "available": true,
+      "read": false,
+      "used": false
+    },
+    {
+      "engine": "hermes",
+      "id": "mlops/training/unsloth",
+      "available": true,
+      "read": false,
+      "used": false
+    },
+    {
+      "engine": "hermes",
+      "id": "mlops/vector-database-rag-ops",
+      "available": true,
+      "read": false,
+      "used": false
+    },
+    {
+      "engine": "hermes",
+      "id": "note-taking/agent-knowledge-ops",
+      "available": true,
+      "read": false,
+      "used": false
+    },
+    {
+      "engine": "hermes",
+      "id": "note-taking/bonjour-ami-content-cycle",
+      "available": true,
+      "read": false,
+      "used": false
+    },
+    {
+      "engine": "hermes",
+      "id": "productivity/box",
+      "available": true,
+      "read": false,
+      "used": false
+    },
+    {
+      "engine": "hermes",
+      "id": "productivity/document-to-action-items",
+      "available": true,
+      "read": false,
+      "used": false
+    },
+    {
+      "engine": "hermes",
+      "id": "productivity/docx",
+      "available": true,
+      "read": false,
+      "used": false
+    },
+    {
+      "engine": "hermes",
+      "id": "productivity/linear",
+      "available": true,
+      "read": false,
+      "used": false
+    },
+    {
+      "engine": "hermes",
+      "id": "productivity/meeting-action-items",
+      "available": true,
+      "read": false,
+      "used": false
+    },
+    {
+      "engine": "hermes",
+      "id": "productivity/pdf",
+      "available": true,
+      "read": false,
+      "used": false
+    },
+    {
+      "engine": "hermes",
+      "id": "productivity/petdex",
+      "available": true,
+      "read": false,
+      "used": false
+    },
+    {
+      "engine": "hermes",
+      "id": "productivity/product-price-monitor",
+      "available": true,
+      "read": false,
+      "used": false
+    },
+    {
+      "engine": "hermes",
+      "id": "productivity/productivity-integrations",
+      "available": true,
+      "read": false,
+      "used": false
+    },
+    {
+      "engine": "hermes",
+      "id": "productivity/weekly-review-planning",
+      "available": true,
+      "read": false,
+      "used": false
+    },
+    {
+      "engine": "hermes",
+      "id": "productivity/xlsx",
+      "available": true,
+      "read": false,
+      "used": false
+    },
+    {
+      "engine": "hermes",
+      "id": "red-teaming/godmode",
+      "available": true,
+      "read": false,
+      "used": false
+    },
+    {
+      "engine": "hermes",
+      "id": "research/competitor-news-monitor",
+      "available": true,
+      "read": false,
+      "used": false
+    },
+    {
+      "engine": "hermes",
+      "id": "research/grounded-citations",
+      "available": true,
+      "read": false,
+      "used": false
+    },
+    {
+      "engine": "hermes",
+      "id": "research/ml-paper-writing",
+      "available": true,
+      "read": false,
+      "used": false
+    },
+    {
+      "engine": "hermes",
+      "id": "research/open-source-intelligence-search",
+      "available": true,
+      "read": false,
+      "used": false
+    },
+    {
+      "engine": "hermes",
+      "id": "research/product-design-benchmark-research",
+      "available": true,
+      "read": false,
+      "used": false
+    },
+    {
+      "engine": "hermes",
+      "id": "research/research-discovery-workflows",
+      "available": true,
+      "read": false,
+      "used": false
+    },
+    {
+      "engine": "hermes",
+      "id": "skill-creator",
+      "available": true,
+      "read": false,
+      "used": false
+    },
+    {
+      "engine": "hermes",
+      "id": "social-media/social-platform-automation",
+      "available": true,
+      "read": false,
+      "used": false
+    },
+    {
+      "engine": "hermes",
+      "id": "software-development/aerion-foundation-refactors",
+      "available": true,
+      "read": false,
+      "used": false
+    },
+    {
+      "engine": "hermes",
+      "id": "software-development/aerion-product-delivery",
+      "available": true,
+      "read": false,
+      "used": false
+    },
+    {
+      "engine": "hermes",
+      "id": "software-development/debugger-workflows",
+      "available": true,
+      "read": false,
+      "used": false
+    },
+    {
+      "engine": "hermes",
+      "id": "software-development/debugging-hermes-tui-commands",
+      "available": true,
+      "read": false,
+      "used": false
+    },
+    {
+      "engine": "hermes",
+      "id": "software-development/github",
+      "available": true,
+      "read": false,
+      "used": false
+    },
+    {
+      "engine": "hermes",
+      "id": "software-development/hermes-extension-authoring",
+      "available": true,
+      "read": false,
+      "used": false
+    },
+    {
+      "engine": "hermes",
+      "id": "software-development/inspecting-hermes-desktop-dom",
+      "available": true,
+      "read": false,
+      "used": false
+    },
+    {
+      "engine": "hermes",
+      "id": "software-development/plan",
+      "available": true,
+      "read": false,
+      "used": false
+    },
+    {
+      "engine": "hermes",
+      "id": "software-development/software-delivery-methods",
+      "available": true,
+      "read": false,
+      "used": false
+    },
+    {
+      "engine": "hermes",
+      "id": "software-development/software-project-delivery",
+      "available": true,
+      "read": false,
+      "used": false
+    },
+    {
+      "engine": "hermes",
+      "id": "software-development/subagent-driven-development",
+      "available": true,
+      "read": false,
+      "used": false
+    },
+    {
+      "engine": "hermes",
+      "id": "software-development/writing-plans",
+      "available": true,
+      "read": false,
+      "used": false
+    },
+    {
+      "engine": "hermes",
+      "id": "web/blocked-page-recovery",
+      "available": true,
+      "read": false,
+      "used": false
+    },
+    {
+      "engine": "hermes",
+      "id": "yuanbao",
+      "available": true,
+      "read": false,
+      "used": false
+    }
+  ]
+}

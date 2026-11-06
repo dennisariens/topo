@@ -1,0 +1,113 @@
+{
+  "version": 1,
+  "skills": [
+    {
+      "id": "topo-ui-design",
+      "kinds": [
+        "ui",
+        "visual-qa"
+      ],
+      "required": true,
+      "path": ".harness/v2/skills/topo-ui-design/SKILL.md",
+      "references": [
+        ".harness/v2/skills/sources/topo-ui-design-PR64.md"
+      ]
+    },
+    {
+      "id": "frontend-design",
+      "kinds": [
+        "ui"
+      ],
+      "required": true,
+      "path": "~/.agents/skills/frontend-design/SKILL.md",
+      "alternates": [
+        "~/.claude/plugins/cache/claude-plugins-official/frontend-design/1.1.1/skills/frontend-design/SKILL.md"
+      ]
+    },
+    {
+      "id": "ui-ux-pro-max",
+      "kinds": [
+        "ui"
+      ],
+      "required": true,
+      "path": "~/.agents/skills/ui-ux-pro-max/SKILL.md"
+    },
+    {
+      "id": "web-design-guidelines",
+      "kinds": [
+        "ui",
+        "visual-qa"
+      ],
+      "required": true,
+      "path": "~/.agents/skills/web-design-guidelines/SKILL.md"
+    },
+    {
+      "id": "frontend-testing-debugging",
+      "kinds": [
+        "visual-qa"
+      ],
+      "required": true,
+      "path": "~/.codex/plugins/cache/openai-curated-remote/build-web-apps/0.1.2/skills/frontend-testing-debugging/SKILL.md"
+    },
+    {
+      "id": "hermes-sdlc-review",
+      "kinds": [
+        "independent-qa"
+      ],
+      "required": true,
+      "path": "~/.hermes/skills/devops/sdlc-review/SKILL.md"
+    },
+    {
+      "id": "test-driven-development",
+      "kinds": [
+        "harness-implementation"
+      ],
+      "required": true,
+      "path": "~/.codex/plugins/cache/claude-plugins-official/superpowers/7.0.0/skills/test-driven-development/SKILL.md",
+      "alternates": [
+        "~/.claude/plugins/cache/claude-plugins-official/superpowers/7.0.0/skills/test-driven-development/SKILL.md"
+      ]
+    },
+    {
+      "id": "executing-plans",
+      "kinds": [
+        "harness-implementation"
+      ],
+      "required": true,
+      "path": "~/.codex/plugins/cache/claude-plugins-official/superpowers/7.0.0/skills/executing-plans/SKILL.md",
+      "alternates": [
+        "~/.claude/plugins/cache/claude-plugins-official/superpowers/7.0.0/skills/executing-plans/SKILL.md"
+      ]
+    },
+    {
+      "id": "verification-before-completion",
+      "kinds": [
+        "harness-implementation"
+      ],
+      "required": true,
+      "path": "~/.codex/plugins/cache/claude-plugins-official/superpowers/7.0.0/skills/verification-before-completion/SKILL.md",
+      "alternates": [
+        "~/.claude/plugins/cache/claude-plugins-official/superpowers/7.0.0/skills/verification-before-completion/SKILL.md"
+      ]
+    }
+  ],
+  "rules": {
+    "standaloneOnly": true,
+    "react": false,
+    "missingRequired": "BLOCKED",
+    "readDoesNotMeanUsed": true
+  },
+  "discovery": {
+    "roots": [
+      ".harness/v2/skills",
+      "~/.agents/skills",
+      "~/.claude/skills",
+      "~/.codex/skills",
+      "~/.hermes/skills",
+      "~/.claude/plugins/cache",
+      "~/.codex/plugins/cache"
+    ],
+    "include": "frontend|front-end|\\bui\\b|\\bux\\b|web design|visual design|interface design|design system|accessib|typograph",
+    "exclude": "react|next\\.?js|shadcn|vue|angular|svelte|tailwind|figma|swiftui|\\bios\\b|android|database|postgres|observability|\\bagents?\\b|\\bsdk\\b|spreadsheet|\\bpdf\\b|benchmark|research|template|imagegen|touchdesigner|debugging"
+  }
+}

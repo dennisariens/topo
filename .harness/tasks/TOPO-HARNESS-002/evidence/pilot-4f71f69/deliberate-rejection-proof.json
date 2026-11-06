@@ -1,0 +1,6 @@
+{
+  "exitCode": 1,
+  "deliberateMutation": "index.html comment, restored in finally",
+  "output": "Evidence: .harness/tasks/TOPO-HARNESS-002/runs/deliberate-rejection\nV2 GATE: FAIL — DENIED V2 modification: index.html\n",
+  "passed": true
+}

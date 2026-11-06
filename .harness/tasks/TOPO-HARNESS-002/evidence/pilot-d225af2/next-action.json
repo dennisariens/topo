@@ -1,0 +1,5 @@
+{
+  "actor": "hermes",
+  "action": "Review the exact head and supply a signed receipt.",
+  "command": "node scripts/harness/v2/controller.mjs accept-qa TOPO-PILOT-001"
+}

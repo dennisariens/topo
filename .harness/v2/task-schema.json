@@ -1,0 +1,14 @@
+{
+  "$schema":"https://json-schema.org/draft/2020-12/schema",
+  "title":"Approved bounded candidate-review intake",
+  "type":"object","additionalProperties":false,
+  "required":["taskId","kind","sourceSha","contractSha","approvalReference"],
+  "properties":{
+    "taskId":{"type":"string","pattern":"^TOPO-[A-Z]+-[0-9]+$"},
+    "kind":{"const":"candidate-review"},
+    "sourceSha":{"type":"string","pattern":"^[a-f0-9]{40}$"},
+    "contractSha":{"type":"string","pattern":"^[a-f0-9]{64}$"},
+    "approvalReference":{"type":"string","maxLength":200}
+  },
+  "$comment":"Executable validation is in machine.mjs; unsupported coding tasks require an external agent adapter, not arbitrary shell input."
+}

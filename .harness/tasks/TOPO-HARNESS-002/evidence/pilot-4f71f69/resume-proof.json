@@ -1,0 +1,53 @@
+{
+  "sourceSha": "4f71f699ee82c6be9ab7f18609ba502097f8877f",
+  "actualChildSignal": "SIGKILL",
+  "interruptedAt": "verification intent persisted; no verification subprocess had started",
+  "before": {
+    "taskId": "TOPO-PILOT-001",
+    "kind": "candidate-review",
+    "sourceSha": "4f71f699ee82c6be9ab7f18609ba502097f8877f",
+    "contractSha": "161596d5dcafe483546461143cf650b0b5eb7b3bd4ac434d6d46fe64f1d5d8ae",
+    "approvalReference": "owner approved V2 plan; unchanged existing review candidate",
+    "phase": "VERIFY",
+    "attempts": 0,
+    "same": 0,
+    "interventions": 0,
+    "inFlight": true,
+    "tokenCost": null,
+    "currencyCost": null,
+    "planSha": "9701c491ad1622f4aed523f5fef6f27ce000ff81af0dd66edf3b526b4523197a"
+  },
+  "recovered": {
+    "taskId": "TOPO-PILOT-001",
+    "kind": "candidate-review",
+    "sourceSha": "4f71f699ee82c6be9ab7f18609ba502097f8877f",
+    "contractSha": "161596d5dcafe483546461143cf650b0b5eb7b3bd4ac434d6d46fe64f1d5d8ae",
+    "approvalReference": "owner approved V2 plan; unchanged existing review candidate",
+    "phase": "BLOCKED",
+    "attempts": 1,
+    "same": 1,
+    "interventions": 0,
+    "inFlight": false,
+    "tokenCost": null,
+    "currencyCost": null,
+    "planSha": "9701c491ad1622f4aed523f5fef6f27ce000ff81af0dd66edf3b526b4523197a",
+    "reason": "INTERRUPTED",
+    "blockedFrom": "VERIFY"
+  },
+  "resumed": {
+    "taskId": "TOPO-PILOT-001",
+    "kind": "candidate-review",
+    "sourceSha": "4f71f699ee82c6be9ab7f18609ba502097f8877f",
+    "contractSha": "161596d5dcafe483546461143cf650b0b5eb7b3bd4ac434d6d46fe64f1d5d8ae",
+    "approvalReference": "owner approved V2 plan; unchanged existing review candidate",
+    "phase": "IMPLEMENT",
+    "attempts": 1,
+    "same": 1,
+    "interventions": 1,
+    "inFlight": false,
+    "tokenCost": null,
+    "currencyCost": null,
+    "planSha": "9701c491ad1622f4aed523f5fef6f27ce000ff81af0dd66edf3b526b4523197a",
+    "blockedFrom": "VERIFY"
+  }
+}

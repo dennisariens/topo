@@ -45,7 +45,7 @@
         },
         {
           "name": "Execute required quality gate",
-          "run": "./check.sh TOPO-HARNESS-001",
+          "run": "if [ -f scripts/harness/v2/gate.mjs ]; then node scripts/harness/v2/gate.mjs; else ./check.sh TOPO-HARNESS-001; fi",
           "timeout-minutes": 25
         },
         {
@@ -54,7 +54,7 @@
           "uses": "actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02",
           "with": {
             "name": "topo-harness-${{ github.run_id }}-${{ github.run_attempt }}",
-            "path": ".harness/tasks/TOPO-HARNESS-001/",
+            "path": ".harness/tasks/TOPO-HARNESS-001/\n.harness/tasks/TOPO-HARNESS-002/\n.harness/tasks/TOPO-PILOT-001/",
             "include-hidden-files": true,
             "if-no-files-found": "error",
             "retention-days": 14

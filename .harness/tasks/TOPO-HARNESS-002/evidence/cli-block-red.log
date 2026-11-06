@@ -1,0 +1,12 @@
+# RED at 4f71f69 in a disposable clone: one mistyped command against a healthy task
+$ controller.mjs init
+  "phase": "INTAKE",
+$ controller.mjs status extra-argument
+CONTROLLER BLOCKED: No arbitrary arguments accepted
+exit 1
+$ controller.mjs status
+  "phase": "BLOCKED",
+  "reason": "INPUT_OR_CONTROLLER_ERROR"
+$ controller.mjs resume
+CONTROLLER BLOCKED: Blocked phase requires external resolution
+exit 1

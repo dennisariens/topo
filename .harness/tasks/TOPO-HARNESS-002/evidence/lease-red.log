@@ -1,0 +1,20 @@
+✔ controller rejects missing checks, stale source, changed executable digest and unavailable independent QA (0.790708ms)
+✔ interrupted actual controller is recovered in a second process; no verification success is invented (139.489291ms)
+✖ a second controller cannot acquire the same action lease while an async action is active (0.643208ms)
+ℹ tests 3
+ℹ suites 0
+ℹ pass 2
+ℹ fail 1
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 209.010792
+
+✖ failing tests:
+
+test at scripts/harness/v2/delivery.test.mjs:6:1
+✖ a second controller cannot acquire the same action lease while an async action is active (0.643208ms)
+  TypeError [Error]: withRunLock is not a function
+      at TestContext.<anonymous> (file:///Users/dennisariens/projects/topo-harness-v2/scripts/harness/v2/delivery.test.mjs:6:220)
+      at async Test.run (node:internal/test_runner/test:1409:7)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:974:7)

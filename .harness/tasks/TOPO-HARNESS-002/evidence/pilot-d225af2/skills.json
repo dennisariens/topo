@@ -1,0 +1,243 @@
+{
+  "kind": "visual-qa",
+  "rows": [
+    {
+      "id": "topo-ui-design",
+      "required": true,
+      "path": "/Users/dennisariens/topo-claude/.harness/v2/skills/topo-ui-design/SKILL.md",
+      "references": [
+        "/Users/dennisariens/topo-claude/.harness/v2/skills/sources/topo-ui-design-PR64.md"
+      ],
+      "selected": true,
+      "available": true,
+      "read": true,
+      "used": false,
+      "reads": [
+        {
+          "path": "/Users/dennisariens/topo-claude/.harness/v2/skills/topo-ui-design/SKILL.md",
+          "sha256": "5e9101db9227352983bba9ad16c4d2ed8182f4fad85a4d64142fcf43207ac0dc"
+        },
+        {
+          "path": "/Users/dennisariens/topo-claude/.harness/v2/skills/sources/topo-ui-design-PR64.md",
+          "sha256": "c88ffb87e7a256f7148d209140547ddc78fe901ce1e2fd31541a9607b5a02500"
+        }
+      ]
+    },
+    {
+      "id": "web-design-guidelines",
+      "required": true,
+      "path": "/Users/dennisariens/.agents/skills/web-design-guidelines/SKILL.md",
+      "references": [],
+      "selected": true,
+      "available": true,
+      "read": true,
+      "used": false,
+      "reads": [
+        {
+          "path": "/Users/dennisariens/.agents/skills/web-design-guidelines/SKILL.md",
+          "sha256": "f4647ca866a3accf763777f83e7682954f0187cd6bea7eea0399796652414e8f"
+        }
+      ]
+    },
+    {
+      "id": "frontend-testing-debugging",
+      "required": true,
+      "path": "/Users/dennisariens/.codex/plugins/cache/openai-curated-remote/build-web-apps/0.1.2/skills/frontend-testing-debugging/SKILL.md",
+      "references": [],
+      "selected": true,
+      "available": true,
+      "read": true,
+      "used": false,
+      "reads": [
+        {
+          "path": "/Users/dennisariens/.codex/plugins/cache/openai-curated-remote/build-web-apps/0.1.2/skills/frontend-testing-debugging/SKILL.md",
+          "sha256": "03724620cf7e7de425b607a5492f572d867b1cf5d9c92c74bf50d057d7415e0b"
+        }
+      ]
+    }
+  ],
+  "discovered": [
+    {
+      "id": "topo-ui-design",
+      "path": "/Users/dennisariens/topo-claude/.harness/v2/skills/topo-ui-design/SKILL.md",
+      "description": "",
+      "sha256": "5e9101db9227352983bba9ad16c4d2ed8182f4fad85a4d64142fcf43207ac0dc",
+      "registered": true,
+      "required": true,
+      "selected": false,
+      "available": true,
+      "read": false,
+      "used": false
+    },
+    {
+      "id": "frontend-design",
+      "path": "/Users/dennisariens/.agents/skills/frontend-design/SKILL.md",
+      "description": "Guidance for distinctive, intentional visual design when building new UI or reshaping an existing one. Helps with aesthetic direction, typography, and making choices that don't read as templated defau",
+      "sha256": "d91970639e9f5c37682ac7ab60094d35f1c7c1f38d731bd56396563aee10c1d3",
+      "registered": true,
+      "required": true,
+      "selected": false,
+      "available": true,
+      "read": false,
+      "used": false
+    },
+    {
+      "id": "ui-ux-pro-max",
+      "path": "/Users/dennisariens/.agents/skills/ui-ux-pro-max/SKILL.md",
+      "description": "UI/UX design intelligence for web, mobile, and desktop. This skill should be used when designing, building, reviewing, or fixing interfaces, including pages, components, design systems, accessibility,",
+      "sha256": "ea087c341bfb5b23195c7302027268ede86da802554c18a5c4896a6017b439f9",
+      "registered": true,
+      "required": true,
+      "selected": false,
+      "available": true,
+      "read": false,
+      "used": false
+    },
+    {
+      "id": "web-design-guidelines",
+      "path": "/Users/dennisariens/.agents/skills/web-design-guidelines/SKILL.md",
+      "description": "Review UI code for Web Interface Guidelines compliance. Use when asked to \"review my UI\", \"check accessibility\", \"audit design\", \"review UX\", or \"check my site against best practices\".",
+      "sha256": "f4647ca866a3accf763777f83e7682954f0187cd6bea7eea0399796652414e8f",
+      "registered": true,
+      "required": true,
+      "selected": false,
+      "available": true,
+      "read": false,
+      "used": false
+    },
+    {
+      "id": "aerion-product-ui-polish",
+      "path": "/Users/dennisariens/.hermes/skills/.archive/aerion-product-ui-polish/SKILL.md",
+      "description": "Use when polishing AERION premium UI without logic changes.",
+      "sha256": "7c07f544ad80efe0ab42e12c850fcc3fac4fc592e5955b6718c575d390364461",
+      "registered": false,
+      "required": false,
+      "selected": false,
+      "available": true,
+      "read": false,
+      "used": false
+    },
+    {
+      "id": "pretext",
+      "path": "/Users/dennisariens/.hermes/skills/.archive/pretext/SKILL.md",
+      "description": "Use when building creative browser demos with @chenglou/pretext — DOM-free text layout for ASCII art, typographic flow around obstacles, text-as-geometry games, kinetic typography, and text-powered ge",
+      "sha256": "532570c95d1a0bf671a5565fa3c2a6131d3579f4378dd852012b39335a7668e3",
+      "registered": false,
+      "required": false,
+      "selected": false,
+      "available": true,
+      "read": false,
+      "used": false
+    },
+    {
+      "id": "test-driven-development",
+      "path": "/Users/dennisariens/.hermes/skills/.archive/test-driven-development/SKILL.md",
+      "description": "TDD: enforce RED-GREEN-REFACTOR, tests before code.",
+      "sha256": "f4e04cd62580322e491edb78f2e6ee7e4593e85844e1afd79a3edbbf74fce851",
+      "registered": true,
+      "required": true,
+      "selected": false,
+      "available": true,
+      "read": false,
+      "used": false
+    },
+    {
+      "id": "aerion-product-delivery",
+      "path": "/Users/dennisariens/.hermes/skills/software-development/aerion-product-delivery/SKILL.md",
+      "description": "Use when delivering AERION app UI, MCP, or desktop work.",
+      "sha256": "69456b099d0fbecffea2884aa793672df5618403ebe7afb4d97d047816773459",
+      "registered": false,
+      "required": false,
+      "selected": false,
+      "available": true,
+      "read": false,
+      "used": false
+    },
+    {
+      "id": "executing-plans",
+      "path": "/Users/dennisariens/.claude/plugins/cache/claude-plugins-official/superpowers/5.0.7/skills/executing-plans/SKILL.md",
+      "description": "Use when you have a written implementation plan to execute in a separate session with review checkpoints",
+      "sha256": "a711f83fb762e2ea0fa151f598893da9911a408895c91cc7a7e0770dd59a27b3",
+      "registered": true,
+      "required": true,
+      "selected": false,
+      "available": true,
+      "read": false,
+      "used": false
+    },
+    {
+      "id": "verification-before-completion",
+      "path": "/Users/dennisariens/.claude/plugins/cache/claude-plugins-official/superpowers/5.0.7/skills/verification-before-completion/SKILL.md",
+      "description": "Use when about to claim work is complete, fixed, or passing, before committing or creating PRs - requires running verification commands and confirming output before making any success claims; evidence",
+      "sha256": "ea52d15aabaf72bc6b558efe2c126f161b53961090ddcd712000273bfe8c7b6c",
+      "registered": true,
+      "required": true,
+      "selected": false,
+      "available": true,
+      "read": false,
+      "used": false
+    },
+    {
+      "id": "frontend-skill",
+      "path": "/Users/dennisariens/.codex/plugins/cache/openai-curated/build-web-apps/f78e3ad4/skills/frontend-skill/SKILL.md",
+      "description": "Use when the task asks for a visually strong landing page, website, app, prototype, demo, or game UI. This skill enforces restrained composition, image-led hierarchy, cohesive content structure, and t",
+      "sha256": "d367b2d22825d74c169475507e7ff109b81c1e9c20b2de3421fb19fcfbe3329b",
+      "registered": false,
+      "required": false,
+      "selected": false,
+      "available": true,
+      "read": false,
+      "used": false
+    },
+    {
+      "id": "frontend-app-builder",
+      "path": "/Users/dennisariens/.codex/plugins/cache/openai-curated-remote/build-web-apps/0.1.2/skills/frontend-app-builder/SKILL.md",
+      "description": "Use for new frontend applications, dashboards, games, creative websites, hero sections, and visually driven UI from scratch, or when the user explicitly asks for a redesign/restyle/modernization. Buil",
+      "sha256": "9273de02827b29534be28fb2b37154c1571ac38b4e20d3ef5482b7e22af67394",
+      "registered": false,
+      "required": false,
+      "selected": false,
+      "available": true,
+      "read": false,
+      "used": false
+    },
+    {
+      "id": "frontend-testing-debugging",
+      "path": "/Users/dennisariens/.codex/plugins/cache/openai-curated-remote/build-web-apps/0.1.2/skills/frontend-testing-debugging/SKILL.md",
+      "description": "Use when testing, debugging, or making targeted improvements to rendered frontend apps through the Build Web Apps or web dev plugin: local dev servers, UI regressions, interaction bugs, console errors",
+      "sha256": "03724620cf7e7de425b607a5492f572d867b1cf5d9c92c74bf50d057d7415e0b",
+      "registered": true,
+      "required": true,
+      "selected": false,
+      "available": true,
+      "read": false,
+      "used": false
+    },
+    {
+      "id": "microfrontends",
+      "path": "/Users/dennisariens/.codex/plugins/cache/openai-curated-remote/vercel/0.54.1/skills/microfrontends/SKILL.md",
+      "description": "Guide for building, configuring, and deploying microfrontends on Vercel. Use this skill when the user mentions microfrontends, multi-zones, splitting an app across teams, independent deployments, cros",
+      "sha256": "9dbe1a3db8bfa3441b1412b019f518e3b6af341564a3e84a7b1d0073af8eba05",
+      "registered": false,
+      "required": false,
+      "selected": false,
+      "available": true,
+      "read": false,
+      "used": false
+    },
+    {
+      "id": "vercel-services",
+      "path": "/Users/dennisariens/.codex/plugins/cache/openai-curated-remote/vercel/0.54.1/skills/vercel-services/SKILL.md",
+      "description": "Configure and troubleshoot Vercel Services for multiple frontends and backends in one project. Use when composing a polyglot or multi-service application on one Vercel deployment; defining the `servic",
+      "sha256": "eb82b6a1aef40230c6a24ba58d7a4377e34c274aa83f910ba326992c93b7c384",
+      "registered": false,
+      "required": false,
+      "selected": false,
+      "available": true,
+      "read": false,
+      "used": false
+    }
+  ],
+  "used": false,
+  "reason": "instructions read for routing audit; V1 browser action does not prove skill-guided design execution"
+}

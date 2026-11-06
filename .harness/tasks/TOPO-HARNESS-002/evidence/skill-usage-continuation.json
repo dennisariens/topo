@@ -1,0 +1,29 @@
+[
+  {
+    "id": "topo-ui-design",
+    "required": true,
+    "path": "/Users/dennisariens/topo-claude/.harness/v2/skills/topo-ui-design/SKILL.md",
+    "references": [
+      "/Users/dennisariens/topo-claude/.harness/v2/skills/sources/topo-ui-design-PR64.md"
+    ],
+    "selected": true,
+    "available": true,
+    "read": true,
+    "used": true,
+    "reads": [
+      {
+        "path": "/Users/dennisariens/topo-claude/.harness/v2/skills/topo-ui-design/SKILL.md",
+        "sha256": "5e9101db9227352983bba9ad16c4d2ed8182f4fad85a4d64142fcf43207ac0dc"
+      },
+      {
+        "path": "/Users/dennisariens/topo-claude/.harness/v2/skills/sources/topo-ui-design-PR64.md",
+        "sha256": "c88ffb87e7a256f7148d209140547ddc78fe901ce1e2fd31541a9607b5a02500"
+      }
+    ],
+    "usage": {
+      "action": "Reviewed pilot journey screenshots against topo-ui-design and tested one anomaly on the real file:// HTML",
+      "evidence": "/Users/dennisariens/topo-claude/.harness/tasks/TOPO-HARNESS-002/evidence/design-review.md",
+      "evidenceSha256": "cc9fe43b56e48ff9378939fefd53a2e949ffd7bbe4c82e7a470377c5897be8db"
+    }
+  }
+]

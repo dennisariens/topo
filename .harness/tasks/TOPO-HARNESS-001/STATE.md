@@ -10,7 +10,7 @@ All12 required local gate checks passed; full logs/results and real rejection pr
 
 Initial baseline conflict was resolved by owner selecting PR71. Three browser development failures caused an explicit stop; owner authorized continuation. Full-gate failures1–3 are retained; browser step had two distinct failures before its final allowed successful attempt. Negative proof had one failure before successful fix. Active local ledger reset only after complete PASS. No failure history erased.
 
-Next: one draft PR stacked on PR71; record exact final head in PR; Hermes independent rerun and owner review. Remote CI remains unclaimed until observed. Do not merge/deploy/publish or replace downloads/masters.
+Delivery: draft PR #73 is open, stacked on PR71: https://github.com/dennisariens/topo/pull/73 . Its description records the immutable final head and tested implementation. GitHub CI was observed queued on the evidence candidate; no remote PASS is claimed. This final state update is documentation only. Next: Hermes independent rerun and owner review. Do not merge/deploy/publish or replace downloads/masters.
 
 <!-- HARNESS-RUNTIME -->
 ## Harness runtime status

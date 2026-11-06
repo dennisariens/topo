@@ -12,3 +12,4 @@ console.log('Standalone interactive HTML: output/html/topo-italie-interactief.ht
 
 writeFileSync(new URL('output/html/TOPO-Italie-Computer.html', root), html);
 writeFileSync(new URL('output/html/TOPO-NINO-Computer-Release.html', root), html);
+writeFileSync(new URL('output/html/NINO-2-Proefversie-2026-11-06.html', root), html);

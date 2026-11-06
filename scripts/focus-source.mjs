@@ -25,9 +25,9 @@ export function withoutFocus(html){return withoutMicroIcons(html).replace(/\/\* 
 
 export function withoutV2(html){
  if(!html.includes('// BEGIN NINO V2\n'))return html;
- const css=readFileSync(new URL('nino-v2.css',import.meta.url),'utf8')+readFileSync(new URL('nino-profile.css',import.meta.url),'utf8'),js=readFileSync(new URL('nino-profile.js',import.meta.url),'utf8')+readFileSync(new URL('nino-v2.js',import.meta.url),'utf8');
+ const css=['nino-v2.css','nino-profile.css','nino-moments.css'].map(f=>readFileSync(new URL(f,import.meta.url),'utf8')).join(''),js=['nino-profile.js','nino-v2.js','nino-moments.js'].map(f=>readFileSync(new URL(f,import.meta.url),'utf8')).join('');
  const style='<style>/* BEGIN NINO V2 CSS */'+css+'/* END NINO V2 CSS */</style>';
- if(createHash('sha256').update(css).digest('hex')!=='be075f03099aa15648072f5a349c85a7ae651849c6740f33f8e67cc08db5c29c'||createHash('sha256').update(js).digest('hex')!=='206ef5e0753134fb4a03aa297947217a7690990528d9f7e9afb6741f7a3401f9')throw Error('Reviewed V2 component source changed');
+ if(createHash('sha256').update(css).digest('hex')!=='e5e43e3ad4994aa4bde8f3189c074b964d22bcd1781109b9b938418fbe18fd3e'||createHash('sha256').update(js).digest('hex')!=='0c48da6c73b5e5931db51e65469df732c6eb324ba9c760f80e374daeb693bee0')throw Error('Reviewed V2 component source changed');
  if(!html.includes(style))throw Error('V2 CSS differs from reviewed component');
  const match=html.match(/\/\/ BEGIN NINO V2\nconst NINO_V2_ART=(\{[^\n]+\});\n/);if(!match)throw Error('Missing V2 art data');
  const data=JSON.parse(match[1]);

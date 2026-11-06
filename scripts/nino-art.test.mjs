@@ -36,6 +36,8 @@ function boot(source = html, saved) {
       let seed = 20261024;
       w.Math.random = () => ((seed = (seed * 16807) % 2147483647) / 2147483647);
       // Deterministic PR29 pizza/box/trip phases and existing 1500ms dismissal.
+      w.HTMLDialogElement.prototype.showModal = function(){this.setAttribute('open','')};
+      w.HTMLDialogElement.prototype.close = function(){this.removeAttribute('open')};
       w.setTimeout = (fn, delay) => { timers.push({fn, delay, ran:false, cancelled:false}); return timers.length; };
       w.clearTimeout = id => { if(timers[id-1])timers[id-1].cancelled=true; };
       w.confirm = () => true;
@@ -264,8 +266,9 @@ test('free practice wrong-only art, exam suppression, and arrival only at real r
     assert.equal(app.ev('state.pizzas'),1);
     assert.equal(role(app,'#arrivalArt'),null,'pizza without trip earns no arrival');
     assert(app.q('vespaTripToast').classList.contains('hidden'));
-    app.tick(320);assert.equal(app.q('pizzaCelebration').dataset.phase,'open-box');
-    app.tick(900);assert(app.q('pizzaCelebration').hidden,'non-trip pizza ends without arrival');
+    app.tick(700);assert.equal(app.q('pizzaCelebration').dataset.phase,'open-box');
+    assert(!app.q('pizzaCelebration').hidden,'the earned box waits for Verder');
+    app.q('pizzaCelebration').querySelector('.button').click();assert(app.q('pizzaCelebration').hidden,'non-trip pizza ends without arrival');
     both(a=>a.ev("mode('exam')"));
     both(a=>a.ev('grade(false,null,true)')); assert.equal(role(app,'#practiceArt'),null);
     assert.deepEqual(snapshot(app),snapshot(old),'exam wrong grading matches base');
@@ -281,12 +284,11 @@ test('free practice wrong-only art, exam suppression, and arrival only at real r
     assert(app.q('vespaTripToast').classList.contains('hidden'));
     assert.equal(app.q('pizzaCelebration').dataset.phase,'full-pizza');
     assert.equal(app.q('pizzaCelebration').dataset.flavor,'quattro-formaggi');
-    app.tick(320);assert.equal(app.q('pizzaCelebration').dataset.phase,'open-box');
+    app.tick(700);assert.equal(app.q('pizzaCelebration').dataset.phase,'open-box');
     assert(app.q('vespaTripToast').classList.contains('hidden'),'box precedes trip');
-    app.tick(900);assert.equal(role(app,'#arrivalArt'),'arrival');
-    assert(!app.q('vespaTripToast').classList.contains('hidden'));
+    app.q('pizzaCelebration').querySelector('.button').click();assert.equal(role(app,'#arrivalArt'),'arrival');
+    assert(app.d.querySelector('.vespaRide').open,'the earned ride replaces the short toast');assert(app.q('vespaTripToast').classList.contains('hidden'));
     assert.deepEqual(snapshot(app),snapshot(old),'trip threshold does not change reward rules');
-    app.tick(1500); assert(app.q('vespaTripToast').classList.contains('hidden'));
     assert.deepEqual(app.errors,[]); assert.deepEqual(old.errors,[]);
   } finally {app.close();old.close();}
 });

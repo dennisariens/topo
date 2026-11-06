@@ -2,7 +2,7 @@
   "base": "a481317b33f5f6f55c179ee0fbfe6b211663be7b",
   "art": "4f15b610479358b4bf64a7de8be6c5875039b086",
   "lakes": "35ff21b639e4672b7ed221b540b2c48dcd582285",
-  "masters": "read-only source; no PNGs imported or altered",
+  "masters": "existing masters unchanged; approved PR29 sources copied byte-identically; PNG masters are not embedded in runtime",
   "preserved": {
     "scripts/learning-engine.js": {
       "source": "a481317b33f5f6f55c179ee0fbfe6b211663be7b",
@@ -46,7 +46,7 @@
     },
     "scripts/nino-art-ui.js": {
       "source": "4f15b610479358b4bf64a7de8be6c5875039b086",
-      "sha256": "c65c6746db7386ca4ea897e942e466042a51b97324b5aa3f8086c03c6229472f"
+      "sha256": "6bac079f30c77656e82f3ea7da7f15b966a7ca654f63b80dafb60e4a2a0c9bd4"
     },
     "scripts/nino-art.css": {
       "source": "4f15b610479358b4bf64a7de8be6c5875039b086",

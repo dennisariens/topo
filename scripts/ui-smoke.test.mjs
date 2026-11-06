@@ -45,8 +45,11 @@ inspect('state.slices=7;state.pizzas=2;state.trips=0;next()');
 inspect('elements[state.current.id].dispatchEvent(new MouseEvent("click",{bubbles:true}))');
 assert.equal(inspect('state.pizzas'), 3, 'eight slices form another pizza');
 assert.equal(inspect('state.trips'), 1, 'three pizzas advance the Vespa');
-for(const delay of [320,900]){const timer=presentationTimers.find(t=>t.delay===delay&&!t.ran&&!t.cancelled);assert(timer,'pending pizza presentation timer '+delay);timer.ran=true;timer.fn();}
-assert.match(get('#vespaTripText').textContent,/Nino rijdt naar /,'the earned milestone names the character and destination');
+{const timer=presentationTimers.find(t=>t.delay===700&&!t.ran&&!t.cancelled);assert(timer,'pending pizza presentation timer 700');timer.ran=true;timer.fn();}
+get('#pizzaCelebration .button').click();
+assert.match(get('.vespaRide').textContent,/Florence/,'the earned milestone names the destination');
+assert.match(get('#vespaRideTitle').textContent,/Nino/,'the earned milestone names the character');
+inspect('clearRewardCelebrations()');
 get('#next').click();
 const skipped = inspect('state.current.id');
 get('#next').click();

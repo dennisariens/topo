@@ -31,7 +31,7 @@ export async function runBrowserChecks({root,out,modulePath=process.env.PLAYWRIG
       await page.getByRole('button',{name:'Oefenen',exact:true}).click();
       // Test map styles in Discover before opening the responsive writing sheet.
       // Its intentional overlay can cover map options on narrow WebKit viewports.
-      for(const style of ['discovery','school']) {await page.locator('.atlasOptions summary:visible').click();await page.locator(`.atlasOptions input[value="${style}"]:visible`).check();assert(await page.locator(`.atlasOptions input[value="${style}"]`).first().isChecked());}
+      for(const style of ['school','discovery']) {const option=page.locator(`.atlasOptions input[value="${style}"]:visible`);if(!await option.isVisible())await page.locator('.atlasOptions summary:visible').click();await option.check();assert(await page.locator(`.atlasOptions input[value="${style}"]`).first().isChecked());}
       if(!await page.locator('[data-mode="write"]').isVisible())await page.locator('#focusMenu > summary').click();await page.locator('[data-mode="write"]').click();
       const input=page.locator('#answer');await input.fill('Navigatieconcept');for(let i=0;i<20;i++)await input.press('ArrowLeft');for(let i=0;i<10;i++)await input.press('ArrowRight');for(let i=0;i<7;i++)await input.press('Shift+ArrowLeft');
       const selection=()=>input.evaluate(n=>[n.selectionStart,n.selectionEnd,n.selectionDirection]);assert.deepEqual(await selection(),[3,10,'backward']);

@@ -1,0 +1,17 @@
+{
+  "seededFailure": {
+    "sourceSha": "3b8dfb92a7b36a113496691991cd59d6ee582460",
+    "status": "FAIL",
+    "error": "DENIED uncommitted verification inputs",
+    "ledgerAfter": {
+      "scope": {
+        "attempts": 1,
+        "same": 1
+      }
+    }
+  },
+  "afterCompletePass": {
+    "sourceSha": "3b8dfb92a7b36a113496691991cd59d6ee582460",
+    "ledger": {}
+  }
+}

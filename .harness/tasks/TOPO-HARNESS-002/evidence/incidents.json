@@ -25,5 +25,14 @@
     "evidence": ".harness/tasks/TOPO-HARNESS-002/evidence/pilot-4f71f69/attempts-after-rejection.json",
     "evidenceSha256": "f8cbdda4dbac122159f0ef96ef37205fe64cde5013b7c97ce5a4c79b872250c4",
     "status": "FIXED_PENDING_REVIEW"
+  },
+  {
+    "id": "I-004",
+    "kind": "screenshot-under-reports",
+    "fingerprint": "b2b711a020c0be979c282d509a5755642df51d3d890cfe3893792635249c4a92",
+    "summary": "V1 full-page screenshot can omit decoded artwork, so wait for image decode before capture",
+    "evidence": ".harness/tasks/TOPO-HARNESS-002/evidence/design-review.md",
+    "evidenceSha256": "cc9fe43b56e48ff9378939fefd53a2e949ffd7bbe4c82e7a470377c5897be8db",
+    "status": "OPEN"
   }
 ]

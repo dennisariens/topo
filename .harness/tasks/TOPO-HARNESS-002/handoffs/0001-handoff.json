@@ -1,0 +1,37 @@
+{
+  "schema": 1,
+  "kind": "handoff",
+  "seq": 1,
+  "prev": "0000000000000000000000000000000000000000000000000000000000000000",
+  "taskId": "TOPO-HARNESS-002",
+  "from": "claude-code",
+  "to": "hermes",
+  "branch": "agent/topo-harness-v2",
+  "headSha": "ab461f4d14debaeff6d37b018679963da3d82886",
+  "contractSha": "c05e0fd0ee0c46b54ad3e0d71f8dc6d457064a67c934359be18c2aea0138bbb3",
+  "implementationDigest": "c62a5f339ccc165f620c913ad7e989657b4393c18755fa7045fb2c9e6f33e671",
+  "controller": {
+    "taskId": "TOPO-PILOT-001",
+    "phase": "BLOCKED",
+    "reason": "AUTHENTICATED_HERMES_RESPONSE_REQUIRED",
+    "blockedFrom": "INDEPENDENT_QA",
+    "attempts": 1,
+    "same": 1,
+    "sourceSha": "d225af2ff2ce551fc9cd73fc7f0c970e208f70e9",
+    "gateHash": "e565b76ec540bf12cf292ad810d3c8bd0f156619437aafe7b3102c3bff6d1ccb",
+    "manifestHash": "783edc95a5d6bafc48e57ab2c32a28c232e22a4bccf6b70b171c885ddee40cfe",
+    "next": {
+      "actor": "hermes",
+      "action": "Review the exact head and supply a signed receipt.",
+      "command": "node scripts/harness/v2/controller.mjs accept-qa TOPO-PILOT-001"
+    }
+  },
+  "next": "Follow evidence/HERMES-HANDOFF.md: accept, run the gate on the resulting exact head, review, and sign only a real PASS.",
+  "open": [
+    "Independent Hermes review OPEN",
+    "Owner decision on P001 OPEN",
+    "No merge, deploy or production change authorized"
+  ],
+  "createdAt": "2026-11-06T09:44:19.601Z",
+  "hash": "cd376a63e4dcf614716e352d8d4ffc6355ea6a8c561906f05b156b0508a5067c"
+}

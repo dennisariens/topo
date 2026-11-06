@@ -1,7 +1,7 @@
 # TOPO-HARNESS-002 — initial persistent state
 
-Status: INTAKE / DESIGN_REVIEW_PENDING
-Implementation: NOT STARTED. No scaffolding/dependency installation/app changes.
+Status: IMPLEMENT
+Implementation: owner approved plan; core/knowledge/controller tests RED→GREEN; additive gate and pilot implementation in progress. No app changes.
 Owner outcome: supplied V2 mission. Design/plan: proposed in CONTRACT.md and PLAN.md.
 Branch: agent/topo-harness-v2; exact start a86975272ee700d79ab04fe5429ab91165f2029d.
 V1 PR73: untouched; remote exact head confirmed; GitHub verify SUCCESS (run42181119560).
@@ -12,4 +12,4 @@ Preflight: read existing AGENTS/project state/decisions/V1 policy/tests and PR64
 
 Attempts: native worktree creation1 failure, Git fallback1 success; no implementation/gate attempts yet. Retry limits remain3 failed attempts per step / same error twice. No overrides.
 
-Builder review completed: three routine corrections incorporated (CI retains both tasks; every new commit invalidates independent QA; package file allowlist excludes backup/storage payloads). No owner-only ambiguity found. Next: owner review of concrete contract/plan, then targeted tests and implementation. No merge/deployment/publication/download or master replacement authorized.
+Builder review completed: three routine corrections incorporated (CI retains both tasks; every new commit invalidates independent QA; package file allowlist excludes backup/storage payloads). No owner-only ambiguity found. Owner approved plan. Implementation now has15 directed passing tests and isolated locked dev dependencies. Next: commit candidate, prove actual scope rejection, execute real interrupted/resumed pilot and full frozen-V1/additive gate. No merge/deployment/publication/download or master replacement authorized.

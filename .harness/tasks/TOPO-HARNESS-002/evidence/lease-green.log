@@ -1,0 +1,23 @@
+✔ V2 additions cannot modify V1, product, policy, arbitrary workflows or traverse paths (0.982833ms)
+✔ original V1 verdict requires all12 steps, exact baseline and no skipped browser (0.400291ms)
+✔ store survives a killed real writer, replays committed events and rejects truncated/tampered history (70.839709ms)
+✔ live single-writer lock rejects a second writer without deleting its lock (8.411584ms)
+✔ phase guards forbid stale success, forged ready, silent recovery and repeated failures (0.415042ms)
+✔ signed QA binds exact SHA/hash/task/reviewer; local unsigned records cannot grant approval (2.317375ms)
+✔ evidence-only deltas cannot hide executable code or artifact replacements (0.149083ms)
+✔ controller rejects missing checks, stale source, changed executable digest and unavailable independent QA (0.767417ms)
+✔ interrupted actual controller is recovered in a second process; no verification success is invented (132.061458ms)
+✔ a second controller cannot acquire the same action lease while an async action is active (1.146416ms)
+✔ skill routing is standalone-specific, required files must exist and use needs unchanged read plus action evidence (15.007959ms)
+✔ brain reconciliation accepts verified typed facts only, rejects stale/unapproved/private claims (0.490584ms)
+✔ evolution produces evidence-backed proposals; cannot self-promote policy with local approval flags (0.228334ms)
+✔ review package has an explicit allowlist and excludes browser backups, storage, arbitrary JSON and links (8.131833ms)
+✔ PASS label alone is not a verified brain result when required gate checks are absent (0.220625ms)
+ℹ tests 15
+ℹ suites 0
+ℹ pass 15
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 200.816917

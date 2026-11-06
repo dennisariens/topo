@@ -1,0 +1,12 @@
+✔ skill routing is standalone-specific, required files must exist and use needs unchanged read plus action evidence (2.552416ms)
+✔ brain reconciliation accepts verified typed facts only, rejects stale/unapproved/private claims (0.38475ms)
+✔ evolution produces evidence-backed proposals; cannot self-promote policy with local approval flags (0.211583ms)
+✔ review package has an explicit allowlist and excludes browser backups, storage, arbitrary JSON and links (2.50775ms)
+ℹ tests 4
+ℹ suites 0
+ℹ pass 4
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 69.59675

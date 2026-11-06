@@ -1,6 +1,6 @@
 # TOPO-HARNESS-002 — outcome contract / proposed V2 design
 
-Status: outcome authorized by owner mission; implementation design awaiting review. Created before implementation.
+Status: outcome and implementation plan approved by owner (conversation: approved). Created before implementation.
 
 ## Outcome and immutable baseline
 Deliver one stacked V2 draft PR from exact V1 `a86975272ee700d79ab04fe5429ab91165f2029d`, branch `agent/topo-harness-v2`, base PR73/agent/topo-harness-v1. PR73 remains untouched while Hermes is pending. Upstream heads are rechecked before delivery. No main rebase or application redesign.

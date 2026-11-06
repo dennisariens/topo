@@ -1,0 +1,14 @@
+✔ V2 additions cannot modify V1, product, policy, arbitrary workflows or traverse paths (1.443958ms)
+✔ original V1 verdict requires all12 steps, exact baseline and no skipped browser (0.436625ms)
+✔ store survives a killed real writer, replays committed events and rejects truncated/tampered history (64.2095ms)
+✔ live single-writer lock rejects a second writer without deleting its lock (6.579ms)
+✔ phase guards forbid stale success, forged ready, silent recovery and repeated failures (0.410875ms)
+✔ signed QA binds exact SHA/hash/task/reviewer; local unsigned records cannot grant approval (4.066833ms)
+ℹ tests 6
+ℹ suites 0
+ℹ pass 6
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 149.527958

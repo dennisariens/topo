@@ -1,0 +1,63 @@
+✔ V2 additions cannot modify V1, product, policy, arbitrary workflows or traverse paths (0.979541ms)
+✔ original V1 verdict requires all12 steps, exact baseline and no skipped browser (0.402083ms)
+✔ store survives a killed real writer, replays committed events and rejects truncated/tampered history (65.549083ms)
+✔ live single-writer lock rejects a second writer without deleting its lock (7.10375ms)
+✔ phase guards forbid stale success, forged ready, silent recovery and repeated failures (0.426ms)
+✔ signed QA binds exact SHA/hash/task/reviewer; local unsigned records cannot grant approval (2.389291ms)
+✖ evidence-only deltas cannot hide executable code or artifact replacements (0.671916ms)
+✔ controller rejects missing checks, stale source, changed executable digest and unavailable independent QA (0.752875ms)
+✔ interrupted actual controller is recovered in a second process; no verification success is invented (133.490375ms)
+✔ skill routing is standalone-specific, required files must exist and use needs unchanged read plus action evidence (5.093625ms)
+✔ brain reconciliation accepts verified typed facts only, rejects stale/unapproved/private claims (0.41725ms)
+✔ evolution produces evidence-backed proposals; cannot self-promote policy with local approval flags (0.215ms)
+✔ review package has an explicit allowlist and excludes browser backups, storage, arbitrary JSON and links (10.722541ms)
+✖ PASS label alone is not a verified brain result when required gate checks are absent (0.555542ms)
+ℹ tests 14
+ℹ suites 0
+ℹ pass 12
+ℹ fail 2
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 201.614875
+
+✖ failing tests:
+
+test at scripts/harness/v2/core.test.mjs:43:1
+✖ evidence-only deltas cannot hide executable code or artifact replacements (0.671916ms)
+  AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
+  
+  true !== false
+  
+      at TestContext.<anonymous> (file:///Users/dennisariens/projects/topo-harness-v2/scripts/harness/v2/core.test.mjs:43:94)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1402:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:974:18)
+      at Test.postRun (node:internal/test_runner/test:1542:19)
+      at Test.run (node:internal/test_runner/test:1467:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:974:7) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: true,
+    expected: false,
+    operator: 'strictEqual',
+    diff: 'simple'
+  }
+
+test at scripts/harness/v2/knowledge.test.mjs:8:1
+✖ PASS label alone is not a verified brain result when required gate checks are absent (0.555542ms)
+  AssertionError [ERR_ASSERTION]: Missing expected exception.
+      at TestContext.<anonymous> (file:///Users/dennisariens/projects/topo-harness-v2/scripts/harness/v2/knowledge.test.mjs:8:207)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1402:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:974:18)
+      at Test.postRun (node:internal/test_runner/test:1542:19)
+      at Test.run (node:internal/test_runner/test:1467:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:974:7) {
+    generatedMessage: false,
+    code: 'ERR_ASSERTION',
+    actual: undefined,
+    expected: /required|gate|digest/i,
+    operator: 'throws',
+    diff: 'simple'
+  }

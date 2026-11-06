@@ -89,7 +89,9 @@
   leaf=Math.min(Math.max(0,leaf),pages.length-1);if(!isNarrow())leaf-=leaf%2;
   dialog.classList.toggle('bookSingle',isNarrow());body.replaceChildren();
   const visible=isNarrow()?[leaf]:[leaf,leaf+1];
-  for(const index of visible){const info=pages[index],side=index%2?'right':'left',section=make('section','bookPage illustratedFolio folio-'+side),content=make('div','folioWriting');section.setAttribute('aria-label',info.heading);info.fill(content);section.append(image('folio'+side,'folioPaper'),content);body.append(section);}
+  for(const index of visible){const info=pages[index],side=index%2?'right':'left',section=make('section','bookPage illustratedFolio folio-'+side),content=make('div','folioWriting');section.setAttribute('aria-label',info.heading);info.fill(content);
+   // Stamp rows need clear paper down to the page foot; the right folio's painted village sits there.
+   const quiet=side==='right'&&content.classList.contains('stampFolio');section.append(image(quiet?'folioleft':'folio'+side,'folioPaper'+(quiet?' folioMirrored':'')),content);body.append(section);}
   previous.disabled=leaf===0;next.disabled=leaf+(isNarrow()?1:2)>=pages.length;pageLabel.textContent=(leaf+1)+(isNarrow()?'':'–'+(leaf+2))+' / '+pages.length;
  }
  function openBook(button,target){if(dialog.open)return;origin=button;scroll=[window.scrollX,window.scrollY];renderBook(target);dialog.showModal();const stamp=typeof target==='string'&&target.includes(':')?body.querySelector('[data-chapter="'+target.split(':')[1]+'"] .stampInspect'):null;(stamp||close).focus();}

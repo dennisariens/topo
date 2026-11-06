@@ -13,7 +13,7 @@
 .bookSingle .bookSpread{grid-template-columns:var(--page)}
 .travelBook:not(.bookSingle) .bookSpread::after{content:'';position:absolute;z-index:1;top:0;bottom:0;left:50%;width:64px;margin-left:-32px;pointer-events:none;background:linear-gradient(90deg,transparent,#4a2c1433 38%,#2a170c80 50%,#4a2c1433 62%,transparent)}
 .bookPage{position:relative;width:var(--page);aspect-ratio:3/4;min-width:0;max-width:none;background:none;container-type:inline-size}
-.folioPaper{position:absolute;top:0;left:0;width:100%;height:auto;pointer-events:none}
+.folioPaper{position:absolute;top:0;left:0;width:100%;height:auto;pointer-events:none}.folioMirrored{transform:scaleX(-1)}
 .folioWriting{position:absolute;z-index:2;inset:14% 12% 12.5% 15.5%;overflow:auto;overscroll-behavior:contain;background:none;padding:0;scrollbar-width:thin;color:var(--ink);font-family:"Iowan Old Style","Palatino Linotype",Palatino,Georgia,serif}
 .bookPage h3,.bookPage h4{font-family:inherit;color:var(--ink)}
 .bookScript{margin:0 0 3cqw;font-family:"Bradley Hand","Segoe Print","Snell Roundhand",cursive!important;font-size:clamp(23px,7.4cqw,38px)!important;font-weight:700;line-height:1.08;letter-spacing:0;text-wrap:balance}
@@ -82,3 +82,6 @@ body[data-map-theme="discovery"] #lakeGeometry{fill:#2f8fbd;stroke:#0f5e86}
 body[data-map-theme="discovery"] .atlasWaterTexture{opacity:.34}
 #atlasSea stop:first-child{stop-color:#4fb3d0}#atlasSea stop:last-child{stop-color:#12659a}
 body[data-map-assessment="true"][data-map-theme="discovery"] :is(#map,.mapPicker svg,.microZoom svg) .italy{stroke:#897344;stroke-width:1px}
+body[data-map-theme="discovery"] :is(#map,.mapPicker svg,.microZoom svg) :is(.water,.zone,.country).activeTarget{fill-opacity:.68}
+/* iPad width: the fixed navigation sits under a 44px header, so the brand and counters stay visible. */
+body[data-focus-shell="true"]>header{height:44px;min-height:44px}

@@ -583,7 +583,7 @@ body[data-focus-mode="true"] .mapCard{top:calc(100px + var(--focus-safe-top,0px)
 .bookSingle .bookSpread{grid-template-columns:var(--page)}
 .travelBook:not(.bookSingle) .bookSpread::after{content:'';position:absolute;z-index:1;top:0;bottom:0;left:50%;width:64px;margin-left:-32px;pointer-events:none;background:linear-gradient(90deg,transparent,#4a2c1433 38%,#2a170c80 50%,#4a2c1433 62%,transparent)}
 .bookPage{position:relative;width:var(--page);aspect-ratio:3/4;min-width:0;max-width:none;background:none;container-type:inline-size}
-.folioPaper{position:absolute;top:0;left:0;width:100%;height:auto;pointer-events:none}
+.folioPaper{position:absolute;top:0;left:0;width:100%;height:auto;pointer-events:none}.folioMirrored{transform:scaleX(-1)}
 .folioWriting{position:absolute;z-index:2;inset:14% 12% 12.5% 15.5%;overflow:auto;overscroll-behavior:contain;background:none;padding:0;scrollbar-width:thin;color:var(--ink);font-family:"Iowan Old Style","Palatino Linotype",Palatino,Georgia,serif}
 .bookPage h3,.bookPage h4{font-family:inherit;color:var(--ink)}
 .bookScript{margin:0 0 3cqw;font-family:"Bradley Hand","Segoe Print","Snell Roundhand",cursive!important;font-size:clamp(23px,7.4cqw,38px)!important;font-weight:700;line-height:1.08;letter-spacing:0;text-wrap:balance}
@@ -652,6 +652,9 @@ body[data-map-theme="discovery"] #lakeGeometry{fill:#2f8fbd;stroke:#0f5e86}
 body[data-map-theme="discovery"] .atlasWaterTexture{opacity:.34}
 #atlasSea stop:first-child{stop-color:#4fb3d0}#atlasSea stop:last-child{stop-color:#12659a}
 body[data-map-assessment="true"][data-map-theme="discovery"] :is(#map,.mapPicker svg,.microZoom svg) .italy{stroke:#897344;stroke-width:1px}
+body[data-map-theme="discovery"] :is(#map,.mapPicker svg,.microZoom svg) :is(.water,.zone,.country).activeTarget{fill-opacity:.68}
+/* iPad width: the fixed navigation sits under a 44px header, so the brand and counters stay visible. */
+body[data-focus-shell="true"]>header{height:44px;min-height:44px}
 /* END NINO V2 CSS */</style></head><body>
 <header><div class="brandWrap"><div class="brandMark" aria-hidden="true"></div><div class="brand"><small>Ontdek · onthoud · herhaal</small>TOPO / ITALIË</div></div><div class="stats"><div class="stat">Goed<strong id="good">0</strong></div><div class="stat">Reeks<strong id="streak">0</strong></div><div class="stat">Pizza's<strong id="pizzas">0</strong></div></div></header><div id="vespaTripToast" class="vespaTripToast hidden" aria-hidden="true"><div class="ninoTrip" aria-hidden="true"></div><strong id="vespaTripText"></strong></div>
 <svg id="topoIconSprite" aria-hidden="true" focusable="false" width="0" height="0" style="position:absolute;overflow:hidden"><defs>
@@ -2508,7 +2511,9 @@ const NINO_V2_ART={"cover":{"path":"assets/nino/travel-passport/book/exports/pas
   leaf=Math.min(Math.max(0,leaf),pages.length-1);if(!isNarrow())leaf-=leaf%2;
   dialog.classList.toggle('bookSingle',isNarrow());body.replaceChildren();
   const visible=isNarrow()?[leaf]:[leaf,leaf+1];
-  for(const index of visible){const info=pages[index],side=index%2?'right':'left',section=make('section','bookPage illustratedFolio folio-'+side),content=make('div','folioWriting');section.setAttribute('aria-label',info.heading);info.fill(content);section.append(image('folio'+side,'folioPaper'),content);body.append(section);}
+  for(const index of visible){const info=pages[index],side=index%2?'right':'left',section=make('section','bookPage illustratedFolio folio-'+side),content=make('div','folioWriting');section.setAttribute('aria-label',info.heading);info.fill(content);
+   // Stamp rows need clear paper down to the page foot; the right folio's painted village sits there.
+   const quiet=side==='right'&&content.classList.contains('stampFolio');section.append(image(quiet?'folioleft':'folio'+side,'folioPaper'+(quiet?' folioMirrored':'')),content);body.append(section);}
   previous.disabled=leaf===0;next.disabled=leaf+(isNarrow()?1:2)>=pages.length;pageLabel.textContent=(leaf+1)+(isNarrow()?'':'–'+(leaf+2))+' / '+pages.length;
  }
  function openBook(button,target){if(dialog.open)return;origin=button;scroll=[window.scrollX,window.scrollY];renderBook(target);dialog.showModal();const stamp=typeof target==='string'&&target.includes(':')?body.querySelector('[data-chapter="'+target.split(':')[1]+'"] .stampInspect'):null;(stamp||close).focus();}
@@ -2591,7 +2596,7 @@ const NINO_V2_ART={"cover":{"path":"assets/nino/travel-passport/book/exports/pas
  }
  const savePersist=persist,saveSync=sync,saveClear=clearRewardCelebrations;
  persist=function(){savePersist();watch();};
- function savedRows(){for(const host of document.querySelectorAll('.journeyReward,#lessonReward')){let row=host.querySelector(':scope>.pizzaSavedRow');if(!row){row=make('div','pizzaSavedRow');host.append(row);}TopoPizza.saved(row,state.pizzas);}}
+ function savedRows(){const count=document.querySelector('#journeyPizzaCount');if(count?.nextSibling)count.nextSibling.textContent=state.pizzas===1?' pizza':' pizza’s';for(const host of document.querySelectorAll('.journeyReward,#lessonReward')){let row=host.querySelector(':scope>.pizzaSavedRow');if(!row){row=make('div','pizzaSavedRow');host.append(row);}TopoPizza.saved(row,state.pizzas);}}
  sync=function(){saveSync();savedRows();};
  // Import and reset replace progress: rebase quietly instead of celebrating restored stamps.
  clearRewardCelebrations=function(){saveClear();timers.forEach(clearTimeout);timers=[];if(ride.open)ride.close();current=null;pending.length=0;card?.remove();card=null;known=null;};

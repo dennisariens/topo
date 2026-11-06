@@ -57,7 +57,7 @@
  }
  const savePersist=persist,saveSync=sync,saveClear=clearRewardCelebrations;
  persist=function(){savePersist();watch();};
- function savedRows(){for(const host of document.querySelectorAll('.journeyReward,#lessonReward')){let row=host.querySelector(':scope>.pizzaSavedRow');if(!row){row=make('div','pizzaSavedRow');host.append(row);}TopoPizza.saved(row,state.pizzas);}}
+ function savedRows(){const count=document.querySelector('#journeyPizzaCount');if(count?.nextSibling)count.nextSibling.textContent=state.pizzas===1?' pizza':' pizza’s';for(const host of document.querySelectorAll('.journeyReward,#lessonReward')){let row=host.querySelector(':scope>.pizzaSavedRow');if(!row){row=make('div','pizzaSavedRow');host.append(row);}TopoPizza.saved(row,state.pizzas);}}
  sync=function(){saveSync();savedRows();};
  // Import and reset replace progress: rebase quietly instead of celebrating restored stamps.
  clearRewardCelebrations=function(){saveClear();timers.forEach(clearTimeout);timers=[];if(ride.open)ride.close();current=null;pending.length=0;card?.remove();card=null;known=null;};

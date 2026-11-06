@@ -1,0 +1,9 @@
+{
+  "node": "v24.22.1",
+  "npmCli": "/opt/homebrew/lib/node_modules/npm/bin/npm-cli.js",
+  "playwright": "1.64.1",
+  "browserCache": "/Users/dennisariens/Library/Caches/ms-playwright",
+  "verificationWorkspace": "disposable shared clone",
+  "childCredentialsInherited": false,
+  "hostSandbox": false
+}

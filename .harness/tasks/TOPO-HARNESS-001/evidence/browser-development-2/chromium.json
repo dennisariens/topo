@@ -1,0 +1,30 @@
+{
+  "engine": "chromium",
+  "status": "FAIL",
+  "contexts": [
+    {
+      "width": 1500,
+      "status": "FAIL",
+      "errors": [],
+      "external": [],
+      "invariants": {
+        "objects": 45,
+        "chapters": 11,
+        "stages": [
+          "discover",
+          "point",
+          "write"
+        ],
+        "codeMode": false,
+        "styles": [
+          "discovery",
+          "school"
+        ],
+        "codes": 45
+      },
+      "error": "locator.check: Timeout 12000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('.atlasOptions input[value=\"discovery\"]:visible')\u001b[22m\n\n    at runBrowserChecks (/Users/dennisariens/projects/topo-harness-v1/scripts/harness/browser.mjs:30:119)\n    at async file:///Users/dennisariens/projects/topo-harness-v1/scripts/harness/browser.mjs:54:272"
+    }
+  ],
+  "version": "156.0.8078.4",
+  "error": "locator.check: Timeout 12000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('.atlasOptions input[value=\"discovery\"]:visible')\u001b[22m\n\n    at runBrowserChecks (/Users/dennisariens/projects/topo-harness-v1/scripts/harness/browser.mjs:30:119)\n    at async file:///Users/dennisariens/projects/topo-harness-v1/scripts/harness/browser.mjs:54:272"
+}

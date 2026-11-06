@@ -1,3 +1,7 @@
+# TOPO harness V1 — infrastructure candidate
+
+Owner selected PR71 `b06b13059ff5e2ef7278c2d0c55597cf8a9435cf` as the harness baseline. The isolated `agent/topo-harness-v1` branch adds operational instructions, fail-closed verification and read-only PR CI without application changes. See [.harness/README.md](../.harness/README.md) and [task state](../.harness/tasks/TOPO-HARNESS-001/STATE.md). Actual full-gate evidence and independent Hermes review determine readiness; no merge/deploy/release authorized.
+
 # NINO 2.0 — speelbare kandidaat, 4 november 2026
 
 Onboarding/profiel, doorlopende11-stoproute, alle folio-/stempel-/bestemmingspagina’s en PR29 Pizza Reward V2 zijn samengebracht. F1 blijft behouden. [Actuele proeflink, bewijs, demo en bronbeperking](qa/playable-20261104/README.md). Groot appicoonbron ontbreekt: huidige volledige Travel-cutout is tijdelijk. Eigenaar visueel GO en onafhankelijke Hermes-review OPEN. Geen merge/deploy of bestaande-downloadvervanging.

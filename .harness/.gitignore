@@ -1,0 +1,3 @@
+tasks/*/runs/
+tasks/*/attempts.json
+tooling/node_modules/

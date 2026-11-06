@@ -1,0 +1,15 @@
+BROWSER chromium: START
+BROWSER chromium: FAIL locator.check: Timeout 12000ms exceeded.
+Call log:
+  - waiting for locator('.atlasOptions input[value="school"]:visible')
+
+BROWSER webkit: START
+BROWSER webkit: FAIL locator.check: Timeout 12000ms exceeded.
+Call log:
+  - waiting for locator('.atlasOptions input[value="school"]:visible')
+
+Error: Browser checks failed: AssertionError [ERR_ASSERTION]: all required browser engines must pass
+    at runBrowserChecks (file:///private/var/folders/cx/qvczylqn4k3gr6dn9f6hl3n80000gn/T/topo-harness-fF15Bm/work/scripts/harness/browser.mjs:58:3)
+    at async file:///private/var/folders/cx/qvczylqn4k3gr6dn9f6hl3n80000gn/T/topo-harness-fF15Bm/work/scripts/harness/browser.mjs:63:272; evidence: /Users/dennisariens/projects/topo-harness-v1/.harness/tasks/TOPO-HARNESS-001/runs/2026-11-06T07-16-13-709Z-CroXT5/browser
+    at runBrowserChecks (file:///private/var/folders/cx/qvczylqn4k3gr6dn9f6hl3n80000gn/T/topo-harness-fF15Bm/work/scripts/harness/browser.mjs:60:34)
+    at async file:///private/var/folders/cx/qvczylqn4k3gr6dn9f6hl3n80000gn/T/topo-harness-fF15Bm/work/scripts/harness/browser.mjs:63:272

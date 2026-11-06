@@ -1,12 +1,36 @@
-# Instructions for coding agents
+# TOPO / NINO agent operations
 
-1. Read `docs/PROJECT_STATE.md` first; read `docs/MAP_SYSTEM.md` before map or geography changes and `docs/DECISIONS.md` before product decisions.
-2. Inspect the embedded `ITEMS`, `CONTEXT_LAND`, `italy`, `NAME_ANCHORS`, and worksheet image in `index.html` before adding or moving coordinates. Projection, source excerpts and geometry hashes are documented in docs/geography/ and docs/MAP_SYSTEM.md. Raw upstream GeoJSON is not bundled; fetch and pin reliable source data before changing geography. Do not treat chat screenshots as source data.
-3. Never approximate a feature when reliable geographic geometry is available. Preserve geographic positions across styling changes; distinguish visible geographic shape from touch tolerance. Never silently replace a shape with a box or move a feature into sea to make it easier to tap.
-4. Keep the 45 learning items, three-stage point/write route (no schoolcode recall), city grouping, quiz, feedback, saved mistakes, and reset working unless the assigned change explicitly modifies them. Preserve corrected positions including San Marino, Bologna, Sicily label, Etna, the Po endpoint, and the Dolomites zone. Run the geographic validation after map edits.
-5. Treat the self-contained `index.html` as the v6-derived map/content source. `scripts/learning-engine.js` and `scripts/route-engine.js` exactly match its first and second inline scripts (`npm run lint` enforces it). No external runtime scripts: breaking that makes direct downloads inert. Do not maintain a second independent copy of geographic coordinates. Preserve the eleven-stop route, stage replay, locks, gold, review scheduling, reset scopes, and the availability of free modes. Historical HTML versions are superseded.
-6. Add targeted regression coverage for geography and quiz changes. Run `npm run lint`, `npm test`, and `npm run build`; `npm run typecheck` is a documented no-op until TypeScript or a type checker is added. Record any unavailable browser check explicitly.
-7. Update `docs/PROJECT_STATE.md` after meaningful implementation work. Append decisions to `docs/DECISIONS.md`; mark superseded decisions explicitly without erasing history. Intended behavior belongs in the other docs, not in undocumented agent memory.
-8. `npm run dev` serves the root at port 8000. Run `npm install` for the real DOM test dependency. For changes that affect printing, run `node scripts/generate-print.mjs`, then `python3 scripts/generate-pdf.py`, then `npm run build`. The build rejects a PDF whose `output/pdf/print-source.sha256` does not match the newly generated `print.html`; never edit generated files manually. `npm run build` also creates identical downloadable HTML files (`topo-italie-interactief.html` and `topo-italie-duolingo.html`) and `dist/index.html`, `dist/print.html`, `dist/printboek.pdf`. `npm test` runs geography, learning, real DOM and full button flow checks. `vercel.json` configures static deployment; no framework or CI.
+- Start with `docs/PROJECT_STATE.md`, `docs/DECISIONS.md`, and the assigned task contract.
+- Read `docs/MAP_SYSTEM.md` and `docs/geography/README.md` before any map/geography work.
+- Use an isolated task branch/worktree from the explicitly approved base; never assume main is the current learner.
+- Codex implements; Hermes independently verifies; FARIS/Main coordinates; owner approves merges/releases.
+- Before coding, create/update `.harness/tasks/<ID>/{CONTRACT,STATE,EVIDENCE}.md` from `.harness/task-template.md`.
+- Keep task-specific state and exact-SHA evidence current; distinguish fixtures, natural play and untested obligations.
+- Run `./check.sh <ID>`; follow `.harness/verifier.md` and `.harness/README.md` for setup and interpretation.
+- Maximum three failed attempts per failed step; stop on the same error twice. No blind automatic retries.
+- Record a blocker in STATE.md and stop; an explicit owner continuation must be recorded before exceeding a cap.
+- Never claim PASS/completion from skipped, unavailable, stale or failed required checks.
+- `typecheck` is a documented no-op, not genuine type safety.
 
-Priority: geographic correctness → educational effectiveness → clarity → usability → consistency → engagement. See `docs/ROADMAP.md` for the single recommended next package.
+## Application invariants
+- `index.html` is the canonical self-contained learner; no external runtime scripts/assets/fonts/network dependencies.
+- Embedded learning/route engines must exactly match `scripts/learning-engine.js` and `scripts/route-engine.js`.
+- Preserve45 learning IDs/reference school codes,11 chapters, city groups, Discover→Point→Write, Gold and free modes.
+- School codes are reference metadata; do not reintroduce schoolcode recall into current learner tests.
+- Preserve both map styles, separate schoolblad, Rome/Vatican distinction, grading/feedback and saved mistakes.
+- Preserve Nino/approved art, pizza/Vespa economy, anti-replay, due/review scheduling and save migrations.
+- Preserve reset scopes, backups/import rejection, current questions/drafts/selections and F1 navigation continuity.
+- Never approximate sourced geography, move a target to enlarge its hit area, or derive coordinates from chat images.
+- Inspect embedded ITEMS/CONTEXT_LAND/italy/NAME_ANCHORS/worksheet before coordinate changes; source and pin reliable data.
+- Keep visual geometry separate from touch tolerance; no second independent coordinate source.
+- Retain corrected San Marino, Bologna, Sicily label, Etna, Po endpoint and Dolomites positions.
+- Geographic correctness → educational effectiveness → clarity → usability → consistency → engagement.
+
+## Verification and delivery
+- Reuse existing tests; never weaken them merely to obtain green. Add targeted evidence for actual changes.
+- Existing npm lint/test/build and geographic/print checks remain authoritative; browser checks must exercise actual file:// HTML.
+- For print changes: generate-print.mjs → generate-pdf.py → npm build; preserve source-hash freshness and booklet scope.
+- Never manually edit generated HTML/PDF masters; build/package them and verify canonical/download/dist byte parity.
+- Update PROJECT_STATE after meaningful work; append product decisions without erasing history in DECISIONS.
+- See `.harness/permissions.yaml` for enforced runner scope and its limits; it is not a whole-host sandbox.
+- No merge, production deploy, release publication, existing-download replacement or source-master overwrite without owner approval.

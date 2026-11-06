@@ -1,0 +1,132 @@
+{
+  "step": "browser-driver-integration",
+  "attempts": [
+    {
+      "attempt": 1,
+      "status": "FAIL",
+      "engines": [
+        {
+          "engine": "chromium",
+          "status": "FAIL",
+          "contexts": [
+            {
+              "width": 1500,
+              "status": "FAIL",
+              "error": "AssertionError [ERR_ASSERTION]: Expected values to be strictly deep-equal:\n+ actual - expected\n\n  [\n    'discovery',\n+   'discovery',\n    'school',\n+   'school'\n  ]\n\n    at runBrowserChecks (file:///Users/dennisariens/projects/topo-harness-v1/scripts/harness/browser.mjs:28:260)\n    at async file:///Users/dennisariens/projects/topo-harness-v1/scripts/harness/browser.mjs:54:272"
+            }
+          ]
+        },
+        {
+          "engine": "webkit",
+          "status": "FAIL",
+          "contexts": [
+            {
+              "width": 1500,
+              "status": "FAIL",
+              "error": "AssertionError [ERR_ASSERTION]: Expected values to be strictly deep-equal:\n+ actual - expected\n\n  [\n    'discovery',\n+   'discovery',\n    'school',\n+   'school'\n  ]\n\n    at runBrowserChecks (file:///Users/dennisariens/projects/topo-harness-v1/scripts/harness/browser.mjs:28:260)\n    at async file:///Users/dennisariens/projects/topo-harness-v1/scripts/harness/browser.mjs:54:272"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "attempt": 2,
+      "status": "FAIL",
+      "engines": [
+        {
+          "engine": "chromium",
+          "status": "FAIL",
+          "contexts": [
+            {
+              "width": 1500,
+              "status": "FAIL",
+              "error": "locator.check: Timeout 12000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('.atlasOptions input[value=\"discovery\"]:visible')\u001b[22m\n\n    at runBrowserChecks (/Users/dennisariens/projects/topo-harness-v1/scripts/harness/browser.mjs:30:119)\n    at async file:///Users/dennisariens/projects/topo-harness-v1/scripts/harness/browser.mjs:54:272"
+            }
+          ]
+        },
+        {
+          "engine": "webkit",
+          "status": "FAIL",
+          "contexts": [
+            {
+              "width": 1500,
+              "status": "FAIL",
+              "error": "locator.check: Timeout 12000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('.atlasOptions input[value=\"discovery\"]:visible')\u001b[22m\n\n    at runBrowserChecks (/Users/dennisariens/projects/topo-harness-v1/scripts/harness/browser.mjs:30:119)\n    at async file:///Users/dennisariens/projects/topo-harness-v1/scripts/harness/browser.mjs:54:272"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "attempt": 3,
+      "status": "FAIL",
+      "engines": [
+        {
+          "engine": "chromium",
+          "status": "FAIL",
+          "contexts": [
+            {
+              "width": 1500,
+              "status": "PASS",
+              "error": null
+            },
+            {
+              "width": 768,
+              "status": "FAIL",
+              "error": "locator.click: Timeout 12000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('[data-mode=\"write\"]')\u001b[22m\n\u001b[2m    - locator resolved to <button class=\"tab\" data-mode=\"write\" aria-pressed=\"false\">Namen schrijven</button>\u001b[22m\n\u001b[2m  - attempting click action\u001b[22m\n\u001b[2m    2 \u00d7 waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is not visible\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m    - waiting 20ms\u001b[22m\n\u001b[2m    2 \u00d7 waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is not visible\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m      - waiting 100ms\u001b[22m\n\u001b[2m    23 \u00d7 waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m       - element is not visible\u001b[22m\n\u001b[2m     - retrying click action\u001b[22m\n\u001b[2m       - waiting 500ms\u001b[22m\n\n    at runBrowserChecks (/Users/dennisariens/projects/topo-harness-v1/scripts/harness/browser.mjs:31:116)\n    at async file:///Users/dennisariens/projects/topo-harness-v1/scripts/harness/browser.mjs:56:272"
+            }
+          ]
+        },
+        {
+          "engine": "webkit",
+          "status": "FAIL",
+          "contexts": [
+            {
+              "width": 1500,
+              "status": "FAIL",
+              "error": "AssertionError [ERR_ASSERTION]: Expected values to be strictly deep-equal:\n+ actual - expected\n\n  [\n+   9,\n+   16,\n-   3,\n-   10,\n    'backward'\n  ]\n\n    at runBrowserChecks (file:///Users/dennisariens/projects/topo-harness-v1/scripts/harness/browser.mjs:34:108)\n    at runNextTicks (node:internal/process/task_queues:65:5)\n    at process.processImmediate (node:internal/timers:472:9)\n    at async file:///Users/dennisariens/projects/topo-harness-v1/scripts/harness/browser.mjs:56:272"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "maximumAttempts": 3,
+  "status": "RESOLVED_BY_EXPLICIT_OWNER_EXCEPTION",
+  "latestFixesExecuted": true,
+  "ownerAuthorizedFourthAttempt": {
+    "authorization": "Owner replied yes to one additional browser verification",
+    "status": "PASS",
+    "engines": {
+      "chromium": [
+        {
+          "width": 1500,
+          "status": "PASS"
+        },
+        {
+          "width": 768,
+          "status": "PASS"
+        },
+        {
+          "width": 320,
+          "status": "PASS"
+        }
+      ],
+      "webkit": [
+        {
+          "width": 1500,
+          "status": "PASS"
+        },
+        {
+          "width": 768,
+          "status": "PASS"
+        },
+        {
+          "width": 320,
+          "status": "PASS"
+        }
+      ]
+    },
+    "evidence": "evidence/browser-authorized-4/summary.json"
+  }
+}

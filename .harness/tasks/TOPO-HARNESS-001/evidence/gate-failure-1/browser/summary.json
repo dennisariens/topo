@@ -1,0 +1,191 @@
+{
+  "status": "PASS",
+  "requiredEngines": [
+    "chromium",
+    "webkit"
+  ],
+  "widths": [
+    1500,
+    768,
+    320
+  ],
+  "transport": "file:// offline:true",
+  "runs": [
+    {
+      "engine": "chromium",
+      "status": "PASS",
+      "contexts": [
+        {
+          "width": 1500,
+          "status": "PASS",
+          "errors": [],
+          "external": [],
+          "invariants": {
+            "objects": 45,
+            "chapters": 11,
+            "stages": [
+              "discover",
+              "point",
+              "write"
+            ],
+            "codeMode": false,
+            "styles": [
+              "discovery",
+              "school"
+            ],
+            "codes": 45
+          },
+          "navigation": true,
+          "book": true,
+          "genuineAnswer": true,
+          "reload": true,
+          "transfer": true
+        },
+        {
+          "width": 768,
+          "status": "PASS",
+          "errors": [],
+          "external": [],
+          "invariants": {
+            "objects": 45,
+            "chapters": 11,
+            "stages": [
+              "discover",
+              "point",
+              "write"
+            ],
+            "codeMode": false,
+            "styles": [
+              "discovery",
+              "school"
+            ],
+            "codes": 45
+          },
+          "navigation": true,
+          "book": true,
+          "genuineAnswer": true,
+          "reload": true,
+          "transfer": true
+        },
+        {
+          "width": 320,
+          "status": "PASS",
+          "errors": [],
+          "external": [],
+          "invariants": {
+            "objects": 45,
+            "chapters": 11,
+            "stages": [
+              "discover",
+              "point",
+              "write"
+            ],
+            "codeMode": false,
+            "styles": [
+              "discovery",
+              "school"
+            ],
+            "codes": 45
+          },
+          "navigation": true,
+          "book": true,
+          "genuineAnswer": true,
+          "reload": true,
+          "transfer": true
+        }
+      ],
+      "version": "156.0.8078.4"
+    },
+    {
+      "engine": "webkit",
+      "status": "PASS",
+      "contexts": [
+        {
+          "width": 1500,
+          "status": "PASS",
+          "errors": [],
+          "external": [],
+          "invariants": {
+            "objects": 45,
+            "chapters": 11,
+            "stages": [
+              "discover",
+              "point",
+              "write"
+            ],
+            "codeMode": false,
+            "styles": [
+              "discovery",
+              "school"
+            ],
+            "codes": 45
+          },
+          "navigation": true,
+          "book": true,
+          "genuineAnswer": true,
+          "reload": true,
+          "transfer": true
+        },
+        {
+          "width": 768,
+          "status": "PASS",
+          "errors": [],
+          "external": [],
+          "invariants": {
+            "objects": 45,
+            "chapters": 11,
+            "stages": [
+              "discover",
+              "point",
+              "write"
+            ],
+            "codeMode": false,
+            "styles": [
+              "discovery",
+              "school"
+            ],
+            "codes": 45
+          },
+          "navigation": true,
+          "book": true,
+          "genuineAnswer": true,
+          "reload": true,
+          "transfer": true
+        },
+        {
+          "width": 320,
+          "status": "PASS",
+          "errors": [],
+          "external": [],
+          "invariants": {
+            "objects": 45,
+            "chapters": 11,
+            "stages": [
+              "discover",
+              "point",
+              "write"
+            ],
+            "codeMode": false,
+            "styles": [
+              "discovery",
+              "school"
+            ],
+            "codes": 45
+          },
+          "navigation": true,
+          "book": true,
+          "genuineAnswer": true,
+          "reload": true,
+          "transfer": true
+        }
+      ],
+      "version": "27.2"
+    }
+  ],
+  "limitations": [
+    "Development Chromium/WebKit; physical Safari not tested.",
+    "One genuine writing answer per fresh context; no full natural route playthrough."
+  ],
+  "playwright": "1.64.1",
+  "artifactSha256": "933931eb67a347948a270da7aa912bfc48ee3cba420c72fbe7d02e34c93d4a35"
+}

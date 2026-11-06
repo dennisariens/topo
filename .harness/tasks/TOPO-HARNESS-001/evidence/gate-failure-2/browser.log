@@ -1,0 +1,38 @@
+BROWSER chromium: START
+BROWSER chromium 1500: PASS
+BROWSER chromium 768: PASS
+BROWSER chromium 320: PASS
+BROWSER webkit: START
+BROWSER webkit 1500: PASS
+BROWSER webkit: FAIL locator.check: Timeout 12000ms exceeded.
+Call log:
+  - waiting for locator('.atlasOptions input[value="discovery"]:visible')
+    - locator resolved to <input type="radio" value="discovery" name="atlas-style-0"/>
+  - attempting click action
+    2 × waiting for element to be visible, enabled and stable
+      - element is visible, enabled and stable
+      - scrolling into view if needed
+      - done scrolling
+      - <div class="" id="quiz">…</div> from <section id="focusAnswerSheet" data-collapsed="false" class="focusAnswerSheet" aria-label="Huidige opdracht">…</section> subtree intercepts pointer events
+    - retrying click action
+    - waiting 20ms
+    2 × waiting for element to be visible, enabled and stable
+      - element is visible, enabled and stable
+      - scrolling into view if needed
+      - done scrolling
+      - <div class="" id="quiz">…</div> from <section id="focusAnswerSheet" data-collapsed="false" class="focusAnswerSheet" aria-label="Huidige opdracht">…</section> subtree intercepts pointer events
+    - retrying click action
+      - waiting 100ms
+    22 × waiting for element to be visible, enabled and stable
+       - element is visible, enabled and stable
+       - scrolling into view if needed
+       - done scrolling
+       - <div class="" id="quiz">…</div> from <section id="focusAnswerSheet" data-collapsed="false" class="focusAnswerSheet" aria-label="Huidige opdracht">…</section> subtree intercepts pointer events
+     - retrying click action
+       - waiting 500ms
+
+Error: Browser checks failed: AssertionError [ERR_ASSERTION]: all required browser engines must pass
+    at runBrowserChecks (file:///private/var/folders/cx/qvczylqn4k3gr6dn9f6hl3n80000gn/T/topo-harness-lugJPv/work/scripts/harness/browser.mjs:55:3)
+    at async file:///private/var/folders/cx/qvczylqn4k3gr6dn9f6hl3n80000gn/T/topo-harness-lugJPv/work/scripts/harness/browser.mjs:60:272; evidence: /Users/dennisariens/projects/topo-harness-v1/.harness/tasks/TOPO-HARNESS-001/runs/2026-11-05T21-41-53-241Z-JLVoPH/browser
+    at runBrowserChecks (file:///private/var/folders/cx/qvczylqn4k3gr6dn9f6hl3n80000gn/T/topo-harness-lugJPv/work/scripts/harness/browser.mjs:57:34)
+    at async file:///private/var/folders/cx/qvczylqn4k3gr6dn9f6hl3n80000gn/T/topo-harness-lugJPv/work/scripts/harness/browser.mjs:60:272

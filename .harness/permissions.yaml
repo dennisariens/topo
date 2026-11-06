@@ -1,0 +1,12 @@
+{
+  "schema": 1,
+  "base": "b06b13059ff5e2ef7278c2d0c55597cf8a9435cf",
+  "allowedFiles": ["AGENTS.md", "check.sh", "docs/PROJECT_STATE.md", "docs/DECISIONS.md", ".github/workflows/harness.yml"],
+  "allowedPrefixes": [".harness/", "scripts/harness/"],
+  "actions": ["harness-tests", "build", "lint", "tests", "release-audit", "map-audit", "v2-audit", "artifacts", "browser", "negative-proof"],
+  "network": {"browser": "offline; external requests fail", "setup": "lock-pinned npm/browser installation outside the gate"},
+  "credentials": "clean child environment; private HOME; CI contents:read; no secrets",
+  "filesystem": "verification in disposable clone; original application immutable; only task evidence/state written to source workspace",
+  "hostSandbox": false,
+  "limits": "Does not constrain an independent host agent/admin or third-party Git-provider deployment settings. Fixed runner operations and CI permissions are enforced, not a whole-host jail."
+}

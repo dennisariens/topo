@@ -1,0 +1,15 @@
+{
+  "engine": "chromium",
+  "status": "FAIL",
+  "contexts": [
+    {
+      "width": 1500,
+      "status": "FAIL",
+      "errors": [],
+      "external": [],
+      "error": "AssertionError [ERR_ASSERTION]: Expected values to be strictly deep-equal:\n+ actual - expected\n\n  [\n    'discovery',\n+   'discovery',\n    'school',\n+   'school'\n  ]\n\n    at runBrowserChecks (file:///Users/dennisariens/projects/topo-harness-v1/scripts/harness/browser.mjs:28:260)\n    at async file:///Users/dennisariens/projects/topo-harness-v1/scripts/harness/browser.mjs:54:272"
+    }
+  ],
+  "version": "156.0.8078.4",
+  "error": "AssertionError [ERR_ASSERTION]: Expected values to be strictly deep-equal:\n+ actual - expected\n\n  [\n    'discovery',\n+   'discovery',\n    'school',\n+   'school'\n  ]\n\n    at runBrowserChecks (file:///Users/dennisariens/projects/topo-harness-v1/scripts/harness/browser.mjs:28:260)\n    at async file:///Users/dennisariens/projects/topo-harness-v1/scripts/harness/browser.mjs:54:272"
+}

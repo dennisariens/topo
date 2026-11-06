@@ -1,0 +1,82 @@
+{
+  "status": "FAIL",
+  "requiredEngines": [
+    "chromium",
+    "webkit"
+  ],
+  "widths": [
+    1500,
+    768,
+    320
+  ],
+  "transport": "file:// offline:true",
+  "runs": [
+    {
+      "engine": "chromium",
+      "status": "FAIL",
+      "contexts": [
+        {
+          "width": 1500,
+          "status": "FAIL",
+          "errors": [],
+          "external": [],
+          "invariants": {
+            "objects": 45,
+            "chapters": 11,
+            "stages": [
+              "discover",
+              "point",
+              "write"
+            ],
+            "codeMode": false,
+            "styles": [
+              "discovery",
+              "school"
+            ],
+            "codes": 45
+          },
+          "error": "locator.check: Timeout 12000ms exceeded.\nCall log:\n  - waiting for locator('.atlasOptions input[value=\"school\"]:visible')\n\n    at runBrowserChecks (/private/var/folders/cx/qvczylqn4k3gr6dn9f6hl3n80000gn/T/topo-harness-fF15Bm/work/scripts/harness/browser.mjs:34:179)\n    at async file:///private/var/folders/cx/qvczylqn4k3gr6dn9f6hl3n80000gn/T/topo-harness-fF15Bm/work/scripts/harness/browser.mjs:63:272"
+        }
+      ],
+      "version": "156.0.8078.4",
+      "error": "locator.check: Timeout 12000ms exceeded.\nCall log:\n  - waiting for locator('.atlasOptions input[value=\"school\"]:visible')\n\n    at runBrowserChecks (/private/var/folders/cx/qvczylqn4k3gr6dn9f6hl3n80000gn/T/topo-harness-fF15Bm/work/scripts/harness/browser.mjs:34:179)\n    at async file:///private/var/folders/cx/qvczylqn4k3gr6dn9f6hl3n80000gn/T/topo-harness-fF15Bm/work/scripts/harness/browser.mjs:63:272"
+    },
+    {
+      "engine": "webkit",
+      "status": "FAIL",
+      "contexts": [
+        {
+          "width": 1500,
+          "status": "FAIL",
+          "errors": [],
+          "external": [],
+          "invariants": {
+            "objects": 45,
+            "chapters": 11,
+            "stages": [
+              "discover",
+              "point",
+              "write"
+            ],
+            "codeMode": false,
+            "styles": [
+              "discovery",
+              "school"
+            ],
+            "codes": 45
+          },
+          "error": "locator.check: Timeout 12000ms exceeded.\nCall log:\n  - waiting for locator('.atlasOptions input[value=\"school\"]:visible')\n\n    at runBrowserChecks (/private/var/folders/cx/qvczylqn4k3gr6dn9f6hl3n80000gn/T/topo-harness-fF15Bm/work/scripts/harness/browser.mjs:34:179)\n    at async file:///private/var/folders/cx/qvczylqn4k3gr6dn9f6hl3n80000gn/T/topo-harness-fF15Bm/work/scripts/harness/browser.mjs:63:272"
+        }
+      ],
+      "version": "27.2",
+      "error": "locator.check: Timeout 12000ms exceeded.\nCall log:\n  - waiting for locator('.atlasOptions input[value=\"school\"]:visible')\n\n    at runBrowserChecks (/private/var/folders/cx/qvczylqn4k3gr6dn9f6hl3n80000gn/T/topo-harness-fF15Bm/work/scripts/harness/browser.mjs:34:179)\n    at async file:///private/var/folders/cx/qvczylqn4k3gr6dn9f6hl3n80000gn/T/topo-harness-fF15Bm/work/scripts/harness/browser.mjs:63:272"
+    }
+  ],
+  "limitations": [
+    "Development Chromium/WebKit; physical Safari not tested.",
+    "One genuine writing answer per fresh context; no full natural route playthrough."
+  ],
+  "playwright": "1.64.1",
+  "artifactSha256": "933931eb67a347948a270da7aa912bfc48ee3cba420c72fbe7d02e34c93d4a35",
+  "error": "AssertionError [ERR_ASSERTION]: all required browser engines must pass\n    at runBrowserChecks (file:///private/var/folders/cx/qvczylqn4k3gr6dn9f6hl3n80000gn/T/topo-harness-fF15Bm/work/scripts/harness/browser.mjs:58:3)\n    at async file:///private/var/folders/cx/qvczylqn4k3gr6dn9f6hl3n80000gn/T/topo-harness-fF15Bm/work/scripts/harness/browser.mjs:63:272"
+}

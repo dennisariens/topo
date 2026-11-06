@@ -13,14 +13,14 @@ const browser=await browserType.launch(browserType===chromium&&process.env.CHROM
 const context=await browser.newContext({offline:true,viewport:{width:1500,height:1100},reducedMotion:'reduce'}),p=await context.newPage();
 p.on('pageerror',e=>errors.push(e.message));p.on('console',m=>{if(m.type()==='error')consoleErrors.push(m.text())});p.on('request',r=>{if(!/^(file:|data:)/.test(r.url()))external.push(r.url())});p.on('dialog',d=>d.accept());p.setDefaultTimeout(10000);
 async function fixture(id,mode='point'){
- await p.evaluate(({id,modeName})=>{if(pick.open)pick.close();mode(modeName);state.current=byId[id];state.questionMode=modeName==='write'?'write':'point';state.answered=false;clearActive();hideLens();}, {id,modeName:mode});
+ await p.evaluate(({id,modeName})=>{clearRewardCelebrations();if(pick.open)pick.close();mode(modeName);state.current=byId[id];state.questionMode=modeName==='write'?'write':'point';state.answered=false;clearActive();hideLens();}, {id,modeName:mode});
 }
 const rewards=()=>p.evaluate(()=>[state.good,state.pizzas,state.slices,state.trips]);
 async function screen(point){
  return p.evaluate(([x,y])=>{const map=$('#map'),area=map.closest('.atlasViewport');let q=new DOMPoint(x,y).matrixTransform(map.getScreenCTM()),r=area.getBoundingClientRect();area.scrollLeft+=q.x-r.left-r.width/2;area.scrollTop+=q.y-r.top-r.height/2;q=new DOMPoint(x,y).matrixTransform(map.getScreenCTM());return[q.x,q.y]},point);
 }
 async function tap(point,selectedId,ok){
- const xy=await screen(point);assert(await p.evaluate(([x,y])=>!!document.elementFromPoint(x,y)?.closest('.atlasViewport'),xy),'pointer must actually reach map');
+ await p.evaluate(()=>clearRewardCelebrations());const xy=await screen(point);assert(await p.evaluate(([x,y])=>!!document.elementFromPoint(x,y)?.closest('.atlasViewport'),xy),'pointer must actually reach map');
  const candidates=await p.evaluate(([x,y])=>mapTapCandidates(x,y,mapFeatureClass(state.current)).map(i=>i.id),xy);
  await p.mouse.click(...xy);let order=[];
  if(await p.locator('#mapPicker').evaluate(n=>n.open)){order=await p.locator('[data-map-choice]').evaluateAll(ns=>ns.map(n=>n.dataset.mapChoice));assert(order.includes(selectedId));await p.locator(`[data-map-choice="${selectedId}"]`).click()}
@@ -28,7 +28,7 @@ async function tap(point,selectedId,ok){
  return{sourcePoint:point,screenPoint:xy,candidates,order,selectedId,correct:ok};
 }
 try{
- await p.goto(file.href);if(await p.locator('.ninoProfile[open]').count())await p.getByRole('button',{name:'Begin zonder invullen',exact:true}).click();await p.locator('.routeCard').last().waitFor({state:'attached'});
+ await p.goto(file.href);if(await p.locator('.ninoProfile[open]').count())await p.getByRole('button',{name:'Overslaan',exact:true}).click();await p.locator('.routeCard').last().waitFor({state:'attached'});
  const items=await p.evaluate(()=>ITEMS.map(i=>({...i,featureClass:mapFeatureClass(i),chapter:groupForItem(i)})));
  assert.equal(items.length,45);assert.equal(await p.evaluate(()=>ROUTE_CHAPTERS.length),11);
  await fixture(items[0].id);await p.evaluate(()=>TopoAtlas.zoom(1));
@@ -71,7 +71,7 @@ try{
    if(!wrongInjected){const candidate=items.find(i=>i.featureClass==='point'&&Math.hypot(i.px-items.find(t=>t.id===task.id).px,i.py-items.find(t=>t.id===task.id).py)>100);await tap(samples[candidate.id][0],candidate.id,false);wrongInjected=true}
    else await tap(samples[task.id][0],task.id,true);
   }else{await p.locator('#answer').fill(task.name);await p.locator('#check').click()}
-  await p.locator('#next:visible,#routeDockNext:visible').first().click();
+  await p.evaluate(()=>clearRewardCelebrations());await p.locator('#next:visible,#routeDockNext:visible').first().click();
  }
  assert(wrongInjected);assert.equal(await p.evaluate(()=>state.route.active.result.passed),false);assert.equal(await p.evaluate(()=>state.route.chapters.city1.goldAt),0);
  const saved=JSON.parse(await p.evaluate(()=>localStorage.getItem('topo-italie-v3')));await p.reload();assert.deepEqual(JSON.parse(await p.evaluate(()=>localStorage.getItem('topo-italie-v3'))),saved,'reload preserves all data; object key order is not state');

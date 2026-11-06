@@ -1,6 +1,6 @@
 # TOPO-HARNESS-002 — persistent state
 
-Status: IMPLEMENT (continuation in progress; see Owner continuation below)
+Status: BLOCKED at INDEPENDENT_QA, awaiting Hermes (see Owner continuation below)
 Implementation: owner approved plan; core/knowledge/controller tests RED→GREEN; additive gate and pilot implementation in progress. No app changes.
 Owner outcome: supplied V2 mission. Design/plan: proposed in CONTRACT.md and PLAN.md.
 Branch: agent/topo-harness-v2; exact start a86975272ee700d79ab04fe5429ab91165f2029d.
@@ -20,3 +20,12 @@ Audit: Codex's `agent/topo-harness-v2` existed only locally; no commits were los
 Done: full SHA and ancestry verified; branch published without force; V1 `a869752` and improvement `94d1390` unchanged. Codex pilot evidence imported to `evidence/pilot-4f71f69/` with provenance. Codex executed it; it is not evidence for later commits. P001 remains excluded from V2.
 
 Claude Code continues on this branch against the P0/P1 list in CONTRACT.md. Hermes: OPEN. No merge/deploy/release authorized.
+
+## Current — Claude Code, 2026-11-06
+Implementation complete for the owner's P0/P1 list. Verified commit `d225af2ff2ce551fc9cd73fc7f0c970e208f70e9`: full V1+V2 gate PASS locally through the controller. GitHub CI `verify` passed for `3b8dfb92a7b36a113496691991cd59d6ee582460`, run 42195513660; CI for the final head is recorded on PR #74, not here, because a commit cannot contain its own result.
+
+Pilot TOPO-PILOT-001: BLOCKED at INDEPENDENT_QA, AUTHENTICATED_HERMES_RESPONSE_REQUIRED. This is the correct stop. REVIEW_READY has not been reached, and no agent here can reach it.
+
+Next actor: Hermes, using `evidence/HERMES-HANDOFF.md`. Draft PR #74 stays unmerged. Attempts: V2 gate had one deliberate seeded failure, cleared by a complete PASS; no unplanned gate failures. One test harness hang (leaked child in a RED test) fixed in the test, not a gate failure.
+
+Owner decisions still open: P001 promotion; whether docs/PROJECT_STATE.md and docs/DECISIONS.md may be updated at promotion. Hermes key provisioning is external.

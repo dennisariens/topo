@@ -1,11 +1,12 @@
 {
   "histories": [
-    ".harness/tasks/TOPO-HARNESS-002/evidence/pilot-4f71f69/events.jsonl"
+    ".harness/tasks/TOPO-HARNESS-002/evidence/pilot-4f71f69/events.jsonl",
+    ".harness/tasks/TOPO-HARNESS-002/evidence/pilot-d225af2/events.jsonl"
   ],
-  "events": 3,
+  "events": 8,
   "failures": 0,
-  "humanInterventions": 1,
-  "durationMs": 319070,
+  "humanInterventions": 3,
+  "durationMs": 646291,
   "repeatedFailures": 0,
   "tokenCost": null,
   "currencyCost": null

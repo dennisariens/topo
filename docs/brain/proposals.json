@@ -13,5 +13,20 @@
     "independentQa": "OPEN",
     "ownerApproval": "OPEN",
     "promotion": "separate reviewed branch only; no automatic application"
+  },
+  {
+    "id": "G-5ba3941dca2a",
+    "rule": "open-incident",
+    "title": "V1 full-page screenshot can omit decoded artwork, so wait for image decode before capture",
+    "evidence": [
+      {
+        "path": ".harness/tasks/TOPO-HARNESS-002/evidence/design-review.md",
+        "sha256": "cc9fe43b56e48ff9378939fefd53a2e949ffd7bbe4c82e7a470377c5897be8db"
+      }
+    ],
+    "status": "PROPOSED",
+    "independentQa": "OPEN",
+    "ownerApproval": "OPEN",
+    "promotion": "separate reviewed branch only; no automatic application"
   }
 ]

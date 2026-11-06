@@ -7,5 +7,9 @@ Executed facts are generated in index.json with exact-source evidence hashes. In
 ## Latest reconciled state
 
 <!-- generated:start -->
-Awaiting first reconciled gate.
+Verified source: `d225af2ff2ce551fc9cd73fc7f0c970e208f70e9`
+Gate: PASS, evidence `.harness/tasks/TOPO-HARNESS-002/evidence/pilot-d225af2/gate-summary.json`
+Controller: BLOCKED / AUTHENTICATED_HERMES_RESPONSE_REQUIRED
+Proposals open: 2
+Independent QA: OPEN. Owner approval: OPEN.
 <!-- generated:end -->

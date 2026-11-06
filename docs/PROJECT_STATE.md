@@ -1,3 +1,7 @@
+# NINO 2.0 — speelbare kandidaat, 6 november 2026
+
+Eén offline HTML voor eigenaarbeoordeling: sterkere Ontdekkingskaart op dezelfde geometrie, pizza's op het tempo van de leerling met geïllustreerde spaarpizza's, onboarding als één Nino-scène zonder boekkleur, Reisboekje als één compositie op de goedgekeurde folio's, verdiende Vespa-rit en stempel- en Gold-momenten die de juiste pagina openen. [Bewijs, demosave en open punten](qa/playable-20261106/README.md). Geen release-GO.
+
 # NINO 2.0 — speelbare kandidaat, 4 november 2026
 
 Onboarding/profiel, doorlopende11-stoproute, alle folio-/stempel-/bestemmingspagina’s en PR29 Pizza Reward V2 zijn samengebracht. F1 blijft behouden. [Actuele proeflink, bewijs, demo en bronbeperking](qa/playable-20261104/README.md). Groot appicoonbron ontbreekt: huidige volledige Travel-cutout is tijdelijk. Eigenaar visueel GO en onafhankelijke Hermes-review OPEN. Geen merge/deploy of bestaande-downloadvervanging.

@@ -1,0 +1,84 @@
+{
+ "engine": "chrome",
+ "version": "157.0.8103.38",
+ "html": {
+  "bytes": 41415295,
+  "sha256": "616cfdc860cef8ad0ea9d113974c5c99b7da2a6f901fa704fd5a51cf226051f1"
+ },
+ "log": [
+  {
+   "step": "fresh profile natural play",
+   "source": "echt gespeeld vanaf leeg profiel",
+   "good": 12,
+   "pizzas": 1,
+   "slices": 4,
+   "stamp": "city1",
+   "pizzaSeen": true,
+   "moment": true
+  },
+  {
+   "step": "demo save third pizza",
+   "fromDemoSave": {
+    "pizzas": 2,
+    "slices": 7,
+    "good": 23,
+    "trips": 0,
+    "stage": 2
+   },
+   "realAnswer": "Bologna",
+   "afterRealAnswer": {
+    "name": "Bologna",
+    "pizzas": 3,
+    "slices": 0,
+    "trips": 1,
+    "good": 24
+   },
+   "ride": "Rome → Florence",
+   "stamp": "city1"
+  },
+  {
+   "step": "reduced motion and skip reach the same arrival"
+  },
+  {
+   "step": "viewport",
+   "width": 1500,
+   "height": 1000,
+   "F1": true,
+   "book": true
+  },
+  {
+   "step": "viewport",
+   "width": 1180,
+   "height": 820,
+   "F1": true,
+   "book": true
+  },
+  {
+   "step": "viewport",
+   "width": 768,
+   "height": 1024,
+   "F1": true,
+   "book": true
+  },
+  {
+   "step": "viewport",
+   "width": 390,
+   "height": 844,
+   "F1": true,
+   "book": true
+  },
+  {
+   "step": "viewport",
+   "width": 320,
+   "height": 740,
+   "F1": true,
+   "book": true
+  },
+  {
+   "step": "recording",
+   "file": "video/nino-kandidaat-doorloop.webm"
+  }
+ ],
+ "errors": [],
+ "network": []
+}

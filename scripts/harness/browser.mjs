@@ -28,8 +28,11 @@ export async function runBrowserChecks({root,out,modulePath=process.env.PLAYWRIG
       await page.getByRole('button',{name:'Begin zonder invullen',exact:true}).click();
       const invariants=await page.evaluate(()=>({objects:ITEMS.length,chapters:ROUTE_CHAPTERS.length,stages:TopoRoute.STAGES,codeMode:!!document.querySelector('[data-mode="codes"]'),styles:[...new Set([...document.querySelectorAll('.atlasOptions input')].map(n=>n.value))],codes:ITEMS.filter(i=>i.code!=null).length}));
       assert.equal(invariants.objects,45);assert.equal(invariants.chapters,11);assert.deepEqual(invariants.stages,['discover','point','write']);assert.equal(invariants.codeMode,false);assert(invariants.codes>0,'school codes remain reference metadata');assert.deepEqual(invariants.styles.sort(),['discovery','school']);row.invariants=invariants;
-      await page.getByRole('button',{name:'Oefenen',exact:true}).click();if(!await page.locator('[data-mode="write"]').isVisible())await page.locator('#focusMenu > summary').click();await page.locator('[data-mode="write"]').click();
+      await page.getByRole('button',{name:'Oefenen',exact:true}).click();
+      // Test map styles in Discover before opening the responsive writing sheet.
+      // Its intentional overlay can cover map options on narrow WebKit viewports.
       for(const style of ['discovery','school']) {await page.locator('.atlasOptions summary:visible').click();await page.locator(`.atlasOptions input[value="${style}"]:visible`).check();assert(await page.locator(`.atlasOptions input[value="${style}"]`).first().isChecked());}
+      if(!await page.locator('[data-mode="write"]').isVisible())await page.locator('#focusMenu > summary').click();await page.locator('[data-mode="write"]').click();
       const input=page.locator('#answer');await input.fill('Navigatieconcept');for(let i=0;i<20;i++)await input.press('ArrowLeft');for(let i=0;i<10;i++)await input.press('ArrowRight');for(let i=0;i<7;i++)await input.press('Shift+ArrowLeft');
       const selection=()=>input.evaluate(n=>[n.selectionStart,n.selectionEnd,n.selectionDirection]);assert.deepEqual(await selection(),[3,10,'backward']);
       const snapshot=()=>page.evaluate(()=>({current:state.current,answered:state.answered,mode:state.mode,questionMode:state.questionMode,progress:progressSnapshot(),disk:Object.fromEntries(Object.entries(localStorage))}));

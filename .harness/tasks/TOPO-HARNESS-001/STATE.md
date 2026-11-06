@@ -23,9 +23,9 @@ Commit candidate, run ./check.sh using supported Node24, preserve complete logs 
 ## Harness runtime status
 
 Status: **BLOCKED**
-Source SHA: `b8ed18d84b0e6fa5462a78fb6d7d9338d64ee31a`
-Run: `.harness/tasks/TOPO-HARNESS-001/runs/2026-11-05T21-33-01-962Z-xHxKIp`
-Current step: negative-proof
-Required step failed: negative-proof (exit 1); see /Users/dennisariens/projects/topo-harness-v1/.harness/tasks/TOPO-HARNESS-001/runs/2026-11-05T21-33-01-962Z-xHxKIp/negative-proof.log
+Source SHA: `1f95f865f5bdfb45c8e5383441b770911765dca9`
+Run: `.harness/tasks/TOPO-HARNESS-001/runs/2026-11-05T21-41-53-241Z-JLVoPH`
+Current step: browser
+Required step failed: browser (exit 1); see /Users/dennisariens/projects/topo-harness-v1/.harness/tasks/TOPO-HARNESS-001/runs/2026-11-05T21-41-53-241Z-JLVoPH/browser.log
 No required step was skipped into a PASS. Check attempts.json before retrying.
 Independent Hermes: OPEN. No merge/release authorization.

@@ -1,31 +1,23 @@
 # TOPO-HARNESS-001 — persistent state
 
-Status: **READY_FOR_FULL_GATE**
+Status: **GATE_PASS_AWAITING_HERMES**
 Branch: agent/topo-harness-v1
-Base: PR71 b06b13059ff5e2ef7278c2d0c55597cf8a9435cf (owner-authorized)
-Independent Hermes: OPEN. No merge/release authorization.
+Base: owner-selected PR71 `b06b13059ff5e2ef7278c2d0c55597cf8a9435cf`
+Tested implementation: `d141caf59d69e4932bf2d426850fab69f10f969f`
+Independent Hermes: **OPEN**. No merge/release authorization.
 
-## Progress
-- Accepted contract/initial state committed before implementation; original main mismatch resolved by owner selecting PR71.
-- Three browser development attempts failed on driver assumptions. Stopped and asked; owner explicitly authorized one additional attempt.
-- Authorized attempt4 **PASS**: Chromium/WebKit at1500/768/320,45/11/3stages/two styles/referencecodes, F1/backward selection/book, one actual correct answer/reward guard,reload, real backup/reset/import. Exact evidence: evidence/browser-authorized-4/summary.json.
-- AGENTS36lines, templates/verifier, technically enforced runner policy, isolated workspace identity, attempt/fingerprint handling, dev-only lock-pinned browser tooling and least-privilege reviewable CI are implemented.
-- Internal review identified disposable-guard/fingerprint issues; fixes have directed tests and read-only re-review with no further concrete finding.
-- Full check.sh and actual rejection proof are next; no overall GATE:PASS claimed yet.
+All12 required local gate checks passed; full logs/results and real rejection proof are versioned in evidence/final-gate and evidence/full-quality-gate.log. Existing app/art/tests/package/lock unchanged. See EVIDENCE.md for exact source/hash, browser coverage, preserved failures and known limits.
 
-## Retry history
-Original failures and exception retained in DEVELOPMENT-ATTEMPTS.json and evidence/browser-development*/. No unauthorized fourth retry occurred. Additional unit development corrected a noncanonical macOS temp path in clone-identity fixture and distinct npm config paths; current unit results are retained separately. Gate subprocess failure ledger is local attempts.json; CI starts fresh checkout and never claims cross-machine agent enforcement.
+Initial baseline conflict was resolved by owner selecting PR71. Three browser development failures caused an explicit stop; owner authorized continuation. Full-gate failures1–3 are retained; browser step had two distinct failures before its final allowed successful attempt. Negative proof had one failure before successful fix. Active local ledger reset only after complete PASS. No failure history erased.
 
-## Next
-Commit candidate, run ./check.sh using supported Node24, preserve complete logs and rejection proof. Stop on two identical failures or three failed attempts for any gate step. Then prepare one draft PR/Hermes exact-SHA handoff; never merge/deploy/publish.
+Next: one draft PR stacked on PR71; record exact final head in PR; Hermes independent rerun and owner review. Remote CI remains unclaimed until observed. Do not merge/deploy/publish or replace downloads/masters.
 
 <!-- HARNESS-RUNTIME -->
 ## Harness runtime status
 
-Status: **BLOCKED**
-Source SHA: `2a3dbc5ea4053aaf68a7d03f57337ca7266cab37`
-Run: `.harness/tasks/TOPO-HARNESS-001/runs/2026-11-06T07-16-13-709Z-CroXT5`
-Current step: browser
-Required step failed: browser (exit 1); see /Users/dennisariens/projects/topo-harness-v1/.harness/tasks/TOPO-HARNESS-001/runs/2026-11-06T07-16-13-709Z-CroXT5/browser.log
-No required step was skipped into a PASS. Check attempts.json before retrying.
+Status: **GATE_PASS_AWAITING_HERMES**
+Source SHA: `d141caf59d69e4932bf2d426850fab69f10f969f`
+Run: `.harness/tasks/TOPO-HARNESS-001/runs/2026-11-06T07-21-45-109Z-CIhfEc`
+Current step: source-unchanged
+All required local checks executed successfully. This is not independent acceptance or a remote CI claim.
 Independent Hermes: OPEN. No merge/release authorization.

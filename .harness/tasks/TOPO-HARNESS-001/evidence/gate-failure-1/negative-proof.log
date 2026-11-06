@@ -1,0 +1,11 @@
+file:///private/var/folders/cx/qvczylqn4k3gr6dn9f6hl3n80000gn/T/topo-harness-q0D3Gv/work/scripts/harness/prove-rejection.mjs:7
+try{writeFileSync(file,Buffer.concat([original,Buffer.from('\n<!-- deliberate harness rejection probe -->\n')]));const r=spawnSync('bash',[resolve(root,'check.sh'),'TOPO-HARNESS-001'],{cwd:root,env:process.env,encoding:'utf8',timeout:60000,maxBuffer:4e6});const output=(r.stdout||'')+(r.stderr||'');result={deliberateMutation:'standalone HTML alias in disposable clone only',exitCode:r.status,output,expected:'GATE: FAIL; protected-file rejection; no GATE: PASS',passed:r.status!==0&&r.status!==null&&output.includes('GATE: FAIL')&&output.includes('DENIED source modification: output/html/TOPO-NINO-Computer-Release.html')&&!/^GATE: PASS\s*$/m.test(output)};if(!result.passed)throw Error('Real gate did not reject deliberate broken artifact as required');console.log('PASS: real check.sh rejected deliberate broken standalone artifact (exit '+r.status+').');}finally{writeFileSync(file,original);if(result)writeFileSync(out,JSON.stringify(result,null,2)+'\n');}
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          ^
+
+Error: Real gate did not reject deliberate broken artifact as required
+    at file:///private/var/folders/cx/qvczylqn4k3gr6dn9f6hl3n80000gn/T/topo-harness-q0D3Gv/work/scripts/harness/prove-rejection.mjs:7:683
+    at ModuleJob.run (node:internal/modules/esm/module_job:561:25)
+    at async node:internal/modules/esm/loader:647:26
+    at async asyncRunEntryPointWithESMLoader (node:internal/modules/run_main:101:5)
+
+Node.js v24.22.1

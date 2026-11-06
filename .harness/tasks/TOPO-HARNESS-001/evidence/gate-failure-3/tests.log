@@ -1,0 +1,117 @@
+
+> topo-italie-baseline@0.1.0 test
+> node scripts/validate-map.mjs && node scripts/validate-print.mjs && node scripts/learning-engine.test.mjs && node scripts/route-engine.test.mjs && node scripts/exam-flow.test.mjs && node scripts/ui-smoke.test.mjs && node scripts/route-dom.test.mjs && node scripts/work-regression.cjs && node scripts/release-1-dom.test.mjs && node scripts/qa-findings.test.mjs && node scripts/polish.test.mjs && node --test scripts/nino-art.test.mjs && node scripts/geography/lakes.test.mjs && node --test scripts/schoolblad.test.mjs && node --test scripts/discovery-map.test.mjs && node --test scripts/map-hit.test.mjs && node --test scripts/focus-mode.test.mjs && node --test scripts/pizza-reward.test.mjs scripts/nino-profile.test.mjs scripts/nino-experience.test.mjs
+
+45 content entries, anchors, coastal markers, microstates, selected land checks: OK
+Limit: drawn Italy polygon is not an independent geographic ground truth
+Printable A4 groups, school photo and all 45 worksheet mappings: OK
+Shuffle, coverage, spaced mistake review, legacy migration and Vespa cadence: OK
+Route locks, stages, repair spacing, gold, persistence, rewards and scheduled review: OK
+Finite geography test, point/write grading, scoring, skips and restart: OK
+Full standalone boot and learn/point/write/exam/reset button flow: OK
+All 11 route chapters and gold tests, dock controls, mode switch, resume and reset: OK
+Real HTML DOM: controls, SVG events, reload, atomic rewards, unique IDs, enclave and storage failure: OK
+PASS: JavaScript syntax; 168 correct answers → 21 pizzas / 7 trips; every 8/24 rollover; reload preserves rewards; duplicate answer cannot earn twice.
+PASS: six-question breaks retain full gold coverage; halfway save/restore; daily goal resets independently of lifetime rewards.
+PASS: adaptive six-task session, skill isolation, restore and legacy migration; 27 source-projected locations; 45 geometry/code baselines; fallback matches live coordinates.
+PASS: three-stage migration preserves writing completion; code sessions removed; tests and adaptive rounds use pointing/writing only.
+Legacy saves, skill isolation, round/lifetime scores, neutral keyboard picker, microstate highlights, river tolerance and daily reset: OK
+QA-1: stage/gold replay daily credit, reload/resubmit idempotence and pizza ledger: PASS
+QA-2: 19 malformed imports preserve exact memory/storage before confirmation; valid schemas 1/2 and interrupted/code migrations: PASS
+Release 1.1: eleven icon references/fallback, continuous route and locked/replay stages, eight-slice copy, NOW gating and truthful Nino outcomes: PASS
+✔ pure role policy: strict Gold, real success, exam suppression and genuine trip only (0.885459ms)
+✔ all six local exports equal manifest hashes and canonical embedded WebP bytes (5428.13425ms)
+✔ pending scenes/postcards stay locked or empty; missing and failed art falls back safely (5494.1265ms)
+✔ canonical engines, geometry, original artwork and print artifacts equal pinned base (5146.157583ms)
+✔ DOM grade/resubmit/reload, chapter completion, Gold/replay/miss preserve base progress and rewards (20521.659583ms)
+✔ free practice wrong-only art, exam suppression, and arrival only at real reward threshold (4972.195625ms)
+ℹ tests 6
+ℹ suites 0
+ℹ pass 6
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 42415.314792
+Six pinned lake polygons, exact projection/envelopes/hashes, Como forks, live/static/offline parity and noninteractive background contract: OK
+✔ one unchanged photograph; pre-existing code exact except the bounded map resolver hotfix (715.755459ms)
+✔ Learn, Point, Write, exam and route reference opening never mutates a task or progress (5648.732667ms)
+✔ answered/unanswered route and Gold remain exact across cancel; draft answer/caret recover (4877.28925ms)
+✔ modal semantics, keyboard containment and progressive legacy fallback (11241.176834ms)
+ℹ tests 4
+ℹ suites 0
+ℹ pass 4
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 23419.639375
+✔ verified PR27 app retained except isolated atlas and bounded semantic resolver replacement (685.24625ms)
+✔ pinned DEM bytes embedded, original frame and source land references, no new geographic paths (5521.773875ms)
+✔ activity defaults, explicit persistent choice and exact active-question continuity (10573.523041ms)
+✔ exactly two styles per utility, separate original schoolblad and safe zoom (5489.137333ms)
+ℹ tests 4
+ℹ suites 0
+ℹ pass 4
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 23186.015333
+✔ the only canonical app delta is the bounded resolver; engines, geography, schoolblad and atlas remain exact (672.543666ms)
+✔ all 45 stable IDs have semantic classes: 27 points and independent polygons/river corridors (5513.229834ms)
+✔ neutral display order is not distance or expected-answer order, and never mutates candidates (4637.549333ms)
+✔ real Rome/Vatican keyboard chooser grades stable IDs with both first/second correct and wrong cases (5566.462292ms)
+✔ every point pair keeps its exact source anchors and answer-independent regional framing (5395.697792ms)
+✔ all recorded point collision sets keep noncrossing leaders at compact and wide sizes (5299.778458ms)
+✔ Vatican is illustrated inside Rome with two different noncrossing endpoint targets (5320.757917ms)
+✔ approved owner SVG is embedded exactly; shuffled numbers cannot change its drawing (5050.91625ms)
+✔ regional choosers retain distinct volcano/city/state glyphs and source context (5080.118417ms)
+✔ picker rendering does not read expected answer and names containment only in Discover (1.792083ms)
+ℹ tests 10
+ℹ suites 0
+ℹ pass 10
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 43501.145
+✔ P0 iPad hotfix preserves verified PR39 teaching, rewards and source outside explicit changes (582.593375ms)
+✔ one canonical input/submit; responsive reparenting retains draft, caret, task and saved progress (5591.965875ms)
+✔ visual viewport adapter reads real offsets without editing learner state or field selection (4857.10225ms)
+✔ chapter availability writes are idempotent: no MutationObserver disabled loop (5684.965ms)
+✔ Frosted Parchment keeps children opaque and exposes reduced-transparency/contrast fallbacks (1.45425ms)
+✔ F1 Reis/Oefenen resumes the visible writing question, draft and backward selection without progress changes (5477.112958ms)
+✔ F1 navigation preserves every practice mode and route tasks; explicit route start replaces suspended free practice (5594.329459ms)
+✔ F1 Reis can display the journey from a completed round and resume the same result screen (5445.345209ms)
+✔ F1 canceled journey reset or lesson change keeps the suspended exercise (5305.286625ms)
+ℹ tests 9
+ℹ suites 0
+ℹ pass 9
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 39471.11825
+✔ playable journey exposes all eleven ordered stops, and every book interior uses real folios (5466.29325ms)
+✔ iPad portrait reads a single page; stamps and Gold are projections of real completion state (5648.311875ms)
+✔ reward presentation survives result-screen removal and cannot become detached from the active lesson (5468.556041ms)
+Profile validation, Unicode, safe rendering, skip/cancel, reload, legacy, preference isolation and storage failure passed
+Bounded backup inverse audit, whitespace editing and failed-import rollback passed
+Immediate cosmetic favorite feedback and first-run CTA passed
+✔ scripts/nino-profile.test.mjs (1507.620375ms)
+✔ every flavor has all nine atlas cells and eight distinct sector selectors; no reward writes (90.523666ms)
+✔ zero rollover retains just-earned flavor; queue orders pizza, static box, trip once (28.266ms)
+✔ reset cancels pending trip and replay-invalid events cannot fabricate rewards (8.706833ms)
+✔ PR29 approved source and runtime checksums, unique assembly proof (62.050667ms)
+✔ integration applies exactly once and reverse restores untouched baseline (699.56875ms)
+✔ authoritative engine earns 8 answers per pizza and 3 pizzas per trip regardless of favorite (22.390125ms)
+✔ bounded art-slot audit rejects unexpected code and altered hooks (17.226583ms)
+ℹ tests 11
+ℹ suites 0
+ℹ pass 11
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 17467.009708

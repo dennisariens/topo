@@ -1,0 +1,7 @@
+{
+  "deliberateMutation": "standalone HTML alias in disposable clone only",
+  "exitCode": 1,
+  "output": "\nGATE: FAIL — DENIED source modification: docs/qa/nino-v2-integration/preservation.json\n",
+  "expected": "GATE: FAIL; protected-file rejection; no GATE: PASS",
+  "passed": false
+}

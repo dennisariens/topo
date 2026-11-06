@@ -1,0 +1,85 @@
+{
+  "engine": "webkit",
+  "status": "PASS",
+  "contexts": [
+    {
+      "width": 1500,
+      "status": "PASS",
+      "errors": [],
+      "external": [],
+      "invariants": {
+        "objects": 45,
+        "chapters": 11,
+        "stages": [
+          "discover",
+          "point",
+          "write"
+        ],
+        "codeMode": false,
+        "styles": [
+          "discovery",
+          "school"
+        ],
+        "codes": 45
+      },
+      "navigation": true,
+      "book": true,
+      "genuineAnswer": true,
+      "reload": true,
+      "transfer": true
+    },
+    {
+      "width": 768,
+      "status": "PASS",
+      "errors": [],
+      "external": [],
+      "invariants": {
+        "objects": 45,
+        "chapters": 11,
+        "stages": [
+          "discover",
+          "point",
+          "write"
+        ],
+        "codeMode": false,
+        "styles": [
+          "discovery",
+          "school"
+        ],
+        "codes": 45
+      },
+      "navigation": true,
+      "book": true,
+      "genuineAnswer": true,
+      "reload": true,
+      "transfer": true
+    },
+    {
+      "width": 320,
+      "status": "PASS",
+      "errors": [],
+      "external": [],
+      "invariants": {
+        "objects": 45,
+        "chapters": 11,
+        "stages": [
+          "discover",
+          "point",
+          "write"
+        ],
+        "codeMode": false,
+        "styles": [
+          "discovery",
+          "school"
+        ],
+        "codes": 45
+      },
+      "navigation": true,
+      "book": true,
+      "genuineAnswer": true,
+      "reload": true,
+      "transfer": true
+    }
+  ],
+  "version": "27.2"
+}

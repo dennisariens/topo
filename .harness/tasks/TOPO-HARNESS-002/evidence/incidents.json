@@ -1,0 +1,29 @@
+[
+  {
+    "id": "I-001",
+    "kind": "handoff-loss",
+    "fingerprint": "9d56a0bfe71c88d9d0b0ae70e325154ec4ef8ba8576ec7a20f3f3fbb271a0285",
+    "summary": "Agent switch found V2 branch unpushed and pilot evidence local-only",
+    "evidence": ".harness/tasks/TOPO-HARNESS-002/evidence/pilot-4f71f69/PROVENANCE.md",
+    "evidenceSha256": "b642dd601d22f09e9279c6dbd1eb63b6ece1bb436cfc48e925097f266b8937eb",
+    "status": "OPEN"
+  },
+  {
+    "id": "I-002",
+    "kind": "task-bricked",
+    "fingerprint": "55bf9d8e595ca5986514a2c98e4775799dcbbbc0fb4c84bed03a41e6a958354e",
+    "summary": "A mistyped controller command permanently blocked a healthy task",
+    "evidence": ".harness/tasks/TOPO-HARNESS-002/evidence/cli-block-red.log",
+    "evidenceSha256": "7a3f54907502f38c750e5091889bcee34bb8e171668bef3ea22d812797bb5f25",
+    "status": "FIXED_PENDING_REVIEW"
+  },
+  {
+    "id": "I-003",
+    "kind": "ledger-not-reset",
+    "fingerprint": "b199fe2ca22d5819327546183eb46c5c7eab3b08a5400567624ada8693e81970",
+    "summary": "V2 failure ledger kept a failure after a complete gate PASS",
+    "evidence": ".harness/tasks/TOPO-HARNESS-002/evidence/pilot-4f71f69/attempts-after-rejection.json",
+    "evidenceSha256": "f8cbdda4dbac122159f0ef96ef37205fe64cde5013b7c97ce5a4c79b872250c4",
+    "status": "FIXED_PENDING_REVIEW"
+  }
+]

@@ -19,7 +19,10 @@
         "ui"
       ],
       "required": true,
-      "path": "~/.agents/skills/frontend-design/SKILL.md"
+      "path": "~/.agents/skills/frontend-design/SKILL.md",
+      "alternates": [
+        "~/.claude/plugins/cache/claude-plugins-official/frontend-design/1.1.1/skills/frontend-design/SKILL.md"
+      ]
     },
     {
       "id": "ui-ux-pro-max",
@@ -60,7 +63,10 @@
         "harness-implementation"
       ],
       "required": true,
-      "path": "~/.codex/plugins/cache/claude-plugins-official/superpowers/7.0.0/skills/test-driven-development/SKILL.md"
+      "path": "~/.codex/plugins/cache/claude-plugins-official/superpowers/7.0.0/skills/test-driven-development/SKILL.md",
+      "alternates": [
+        "~/.claude/plugins/cache/claude-plugins-official/superpowers/7.0.0/skills/test-driven-development/SKILL.md"
+      ]
     },
     {
       "id": "executing-plans",
@@ -68,7 +74,10 @@
         "harness-implementation"
       ],
       "required": true,
-      "path": "~/.codex/plugins/cache/claude-plugins-official/superpowers/7.0.0/skills/executing-plans/SKILL.md"
+      "path": "~/.codex/plugins/cache/claude-plugins-official/superpowers/7.0.0/skills/executing-plans/SKILL.md",
+      "alternates": [
+        "~/.claude/plugins/cache/claude-plugins-official/superpowers/7.0.0/skills/executing-plans/SKILL.md"
+      ]
     },
     {
       "id": "verification-before-completion",
@@ -76,7 +85,10 @@
         "harness-implementation"
       ],
       "required": true,
-      "path": "~/.codex/plugins/cache/claude-plugins-official/superpowers/7.0.0/skills/verification-before-completion/SKILL.md"
+      "path": "~/.codex/plugins/cache/claude-plugins-official/superpowers/7.0.0/skills/verification-before-completion/SKILL.md",
+      "alternates": [
+        "~/.claude/plugins/cache/claude-plugins-official/superpowers/7.0.0/skills/verification-before-completion/SKILL.md"
+      ]
     }
   ],
   "rules": {
@@ -84,5 +96,18 @@
     "react": false,
     "missingRequired": "BLOCKED",
     "readDoesNotMeanUsed": true
+  },
+  "discovery": {
+    "roots": [
+      ".harness/v2/skills",
+      "~/.agents/skills",
+      "~/.claude/skills",
+      "~/.codex/skills",
+      "~/.hermes/skills",
+      "~/.claude/plugins/cache",
+      "~/.codex/plugins/cache"
+    ],
+    "include": "design|\\bui\\b|\\bux\\b|accessib|typograph|visual|layout|interface",
+    "exclude": "react|next\\.?js|shadcn|vue|angular|svelte|tailwind|figma|swiftui|\\bios\\b|android"
   }
 }

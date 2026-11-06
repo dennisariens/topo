@@ -1,0 +1,17 @@
+[
+  {
+    "id": "G-9c5af532ccfa",
+    "rule": "open-incident",
+    "title": "Agent switch found V2 branch unpushed and pilot evidence local-only",
+    "evidence": [
+      {
+        "path": ".harness/tasks/TOPO-HARNESS-002/evidence/pilot-4f71f69/PROVENANCE.md",
+        "sha256": "b642dd601d22f09e9279c6dbd1eb63b6ece1bb436cfc48e925097f266b8937eb"
+      }
+    ],
+    "status": "PROPOSED",
+    "independentQa": "OPEN",
+    "ownerApproval": "OPEN",
+    "promotion": "separate reviewed branch only; no automatic application"
+  }
+]

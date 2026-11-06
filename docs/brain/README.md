@@ -5,3 +5,5 @@ This is a provenance index, not a replacement for existing decisions. Source aut
 Taxonomy: approved-decision (owner authority in canonical docs), proposal (unapproved), verified-implementation (executed exact-source checks), unverified-claim (not promoted), historical-record (past event, not current approval). The reconciler only ingests verified result metadata and repository event metadata with evidence hashes. It does not infer approvals from issue text or overwrite canonical decisions.
 
 No learner names/storage/backups, credentials or arbitrary issue/comment bodies are inputs. Files listed here are project engineering records. Any subsequent commit invalidates exact-head independent QA; a matching implementation digest only explains a metadata-only verification delta.
+
+Run `node scripts/harness/v2/brain.mjs check` before relying on this brain. The block in current-state.md is generated; metrics.json and proposals.json come from `evolution.mjs report`.

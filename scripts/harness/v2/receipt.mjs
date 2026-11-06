@@ -1,0 +1,7 @@
+import {readFileSync} from 'node:fs';import {resolve} from 'node:path';import {fileURLToPath} from 'node:url';
+import {qaMessage,verifyQa,trustedReviewers} from './machine.mjs';import {openTask} from './store.mjs';import {taskDir} from './controller.mjs';
+// Bytes the independent reviewer signs with Ed25519. No key material is created or read here.
+export function signingRequest(s,{reviewer,keyId}){if(!s.provisionalManifest)throw Error('No provisional bundle awaits review');return qaMessage({taskId:s.taskId,sourceSha:s.sourceSha,artifactSha256:s.artifactSha256,manifestSha256:s.provisionalManifest,verdict:'PASS',reviewer,role:'independent',keyId});}
+export function verifyReceipt(r,trust,s){verifyQa(r,trust,s);return {status:'VALID',taskId:r.taskId,reviewer:r.reviewer,sourceSha:r.sourceSha,manifestSha256:r.manifestSha256};}
+const root=resolve(fileURLToPath(new URL('../../../',import.meta.url)));
+if(process.argv[1]&&resolve(process.argv[1])===fileURLToPath(import.meta.url)){try{const [cmd,id,...a]=process.argv.slice(2),s=openTask(taskDir(root,id));if(cmd==='request'&&a.length===4&&a[0]==='--reviewer'&&a[2]==='--key-id')process.stdout.write(signingRequest(s,{reviewer:a[1],keyId:a[3]}));else if(cmd==='verify'&&!a.length)console.log(JSON.stringify(verifyReceipt(JSON.parse(readFileSync(process.env.TOPO_HARNESS_QA_RECEIPT)),trustedReviewers(),s.qa?{...s}:s),null,2));else throw Error('Usage: receipt.mjs request TASK --reviewer NAME --key-id ID | verify TASK');}catch(e){console.error('RECEIPT REFUSED: '+e.message);process.exitCode=1;}}

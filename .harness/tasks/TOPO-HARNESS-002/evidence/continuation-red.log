@@ -1,0 +1,392 @@
+✖ repair continues on a new commit, clears stale verification and never resets retry counters (1.285792ms)
+✖ repaired rejects an unchanged commit and invalidates accepted verification evidence (0.240208ms)
+✖ two consecutive interruptions are the same error and stop automatic recovery (0.678708ms)
+✖ controller errors can be resumed but external blockers cannot be resumed away (0.148291ms)
+✖ CLI failures that never touched the task cannot block it (0.11675ms)
+✖ every stopped phase names exactly who acts next (0.112666ms)
+✖ recovery terminates the exact orphaned action tree of a killed controller (5220.284625ms)
+✖ recorded action with a reused PID is never signalled (103.662334ms)
+✖ run supervises one interruption, then stops at the retry budget without another attempt (23.4755ms)
+✖ FIXTURE: signed QA reaches REVIEW_READY through package guards; replay needs no key for status (161.677959ms)
+✖ FIXTURE: forged QA event with a valid hash chain cannot package; replaced manifest is refused (294.98575ms)
+✖ handoff round trip: Claude Code to Codex and back with exclusive ownership (170.340583ms)
+✖ REGRESSION: handoff refuses unpushed commits, dirty work and local-only evidence (158.505833ms)
+✖ accept refuses code drift, stale remote, tampered records, unknown agents and secrets (160.459333ms)
+✖ handoff, metric and proposal records are metadata and never change the implementation digest (0.63775ms)
+✖ discovery finds relevant host design skills, excludes unsuitable stacks, promotes nothing (3.386959ms)
+✖ required skill resolves on either host through reviewed alternates and stays blocked when none exist (3.322625ms)
+✖ registry resolves every required design skill for both Codex and Claude Code hosts by declaration (0.422834ms)
+✖ brain check detects source drift and refuses a fact without committed evidence (207.765125ms)
+✖ evolution collects real controller history and repeated failures into evidence-cited proposals only (43.873833ms)
+✖ FIXTURE: a receipt for a different bundle manifest is refused; the verifier needs only public data (150.21675ms)
+✖ failure ledger clears only after a complete PASS and survives every other outcome (0.724875ms)
+✔ imported Codex pilot history stays a valid chain and its gate hash matches the retained summary (0.385791ms)
+✔ REGRESSION: the real CLI leaves a task untouched on bad arguments and on a live action lock (110.133584ms)
+ℹ tests 24
+ℹ suites 0
+ℹ pass 2
+ℹ fail 22
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 6892.358542
+
+✖ failing tests:
+
+test at scripts/harness/v2/continuation.test.mjs:21:1
+✖ repair continues on a new commit, clears stale verification and never resets retry counters (1.285792ms)
+  Error: Unknown transition
+      at nextState (file:///Users/dennisariens/topo-claude/scripts/harness/v2/machine.mjs:25:16)
+      at TestContext.<anonymous> (file:///Users/dennisariens/topo-claude/scripts/harness/v2/continuation.test.mjs:24:4)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1402:25)
+      at Test.start (node:internal/test_runner/test:1262:17)
+      at startSubtestAfterBootstrap (node:internal/test_runner/harness:387:17)
+
+test at scripts/harness/v2/continuation.test.mjs:28:1
+✖ repaired rejects an unchanged commit and invalidates accepted verification evidence (0.240208ms)
+  Error: Unknown transition
+      at nextState (file:///Users/dennisariens/topo-claude/scripts/harness/v2/machine.mjs:25:16)
+      at TestContext.<anonymous> (file:///Users/dennisariens/topo-claude/scripts/harness/v2/continuation.test.mjs:29:125)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1402:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:974:18)
+      at Test.postRun (node:internal/test_runner/test:1542:19)
+      at Test.run (node:internal/test_runner/test:1467:12)
+      at async startSubtestAfterBootstrap (node:internal/test_runner/harness:387:3)
+
+test at scripts/harness/v2/continuation.test.mjs:33:1
+✖ two consecutive interruptions are the same error and stop automatic recovery (0.678708ms)
+  AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
+  
+  1 !== 2
+  
+      at TestContext.<anonymous> (file:///Users/dennisariens/topo-claude/scripts/harness/v2/continuation.test.mjs:34:256)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1402:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:974:18)
+      at Test.postRun (node:internal/test_runner/test:1542:19)
+      at Test.run (node:internal/test_runner/test:1467:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:974:7) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: 1,
+    expected: 2,
+    operator: 'strictEqual',
+    diff: 'simple'
+  }
+
+test at scripts/harness/v2/continuation.test.mjs:36:1
+✖ controller errors can be resumed but external blockers cannot be resumed away (0.148291ms)
+  Error: Blocked phase requires external resolution
+      at need (file:///Users/dennisariens/topo-claude/scripts/harness/v2/machine.mjs:4:36)
+      at nextState (file:///Users/dennisariens/topo-claude/scripts/harness/v2/machine.mjs:21:144)
+      at TestContext.<anonymous> (file:///Users/dennisariens/topo-claude/scripts/harness/v2/continuation.test.mjs:37:195)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1402:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:974:18)
+      at Test.postRun (node:internal/test_runner/test:1542:19)
+      at Test.run (node:internal/test_runner/test:1467:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:974:7)
+
+test at scripts/harness/v2/continuation.test.mjs:40:1
+✖ CLI failures that never touched the task cannot block it (0.11675ms)
+  TypeError [Error]: controller.cliBlocks is not a function
+      at cliBlocks (file:///Users/dennisariens/topo-claude/scripts/harness/v2/continuation.test.mjs:9:116)
+      at TestContext.<anonymous> (file:///Users/dennisariens/topo-claude/scripts/harness/v2/continuation.test.mjs:40:249)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1402:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:974:18)
+      at Test.postRun (node:internal/test_runner/test:1542:19)
+      at Test.run (node:internal/test_runner/test:1467:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:974:7)
+
+test at scripts/harness/v2/continuation.test.mjs:41:1
+✖ every stopped phase names exactly who acts next (0.112666ms)
+  TypeError [Error]: controller.nextAction is not a function
+      at nextAction (file:///Users/dennisariens/topo-claude/scripts/harness/v2/continuation.test.mjs:9:70)
+      at a (file:///Users/dennisariens/topo-claude/scripts/harness/v2/continuation.test.mjs:42:13)
+      at TestContext.<anonymous> (file:///Users/dennisariens/topo-claude/scripts/harness/v2/continuation.test.mjs:42:69)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1402:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:974:18)
+      at Test.postRun (node:internal/test_runner/test:1542:19)
+      at Test.run (node:internal/test_runner/test:1467:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:974:7)
+
+test at scripts/harness/v2/continuation.test.mjs:45:1
+✖ recovery terminates the exact orphaned action tree of a killed controller (5220.284625ms)
+  AssertionError [ERR_ASSERTION]: action started
+      at TestContext.<anonymous> (file:///Users/dennisariens/topo-claude/scripts/harness/v2/continuation.test.mjs:48:283)
+      at async Test.run (node:internal/test_runner/test:1409:7)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:974:7) {
+    generatedMessage: false,
+    code: 'ERR_ASSERTION',
+    actual: false,
+    expected: true,
+    operator: '==',
+    diff: 'simple'
+  }
+
+test at scripts/harness/v2/continuation.test.mjs:53:1
+✖ recorded action with a reused PID is never signalled (103.662334ms)
+  TypeError [Error]: action.terminateAction is not a function
+      at terminateAction (file:///Users/dennisariens/topo-claude/scripts/harness/v2/continuation.test.mjs:12:38)
+      at TestContext.<anonymous> (file:///Users/dennisariens/topo-claude/scripts/harness/v2/continuation.test.mjs:53:358)
+      at async Test.run (node:internal/test_runner/test:1409:7)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:974:7)
+
+test at scripts/harness/v2/continuation.test.mjs:54:1
+✖ run supervises one interruption, then stops at the retry budget without another attempt (23.4755ms)
+  TypeError [Error]: controller.run is not a function
+      at run (file:///Users/dennisariens/topo-claude/scripts/harness/v2/continuation.test.mjs:9:30)
+      at TestContext.<anonymous> (file:///Users/dennisariens/topo-claude/scripts/harness/v2/continuation.test.mjs:57:16)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1402:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:974:18)
+      at Test.postRun (node:internal/test_runner/test:1542:19)
+      at Test.run (node:internal/test_runner/test:1467:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:974:7)
+
+test at scripts/harness/v2/continuation.test.mjs:67:1
+✖ FIXTURE: signed QA reaches REVIEW_READY through package guards; replay needs no key for status (161.677959ms)
+  AssertionError [ERR_ASSERTION]: The expression evaluated to a falsy value:
+  
+    assert(s.provisionalManifest)
+  
+      at file:///Users/dennisariens/topo-claude/scripts/harness/v2/continuation.test.mjs:68:228
+      at async withEnv (file:///Users/dennisariens/topo-claude/scripts/harness/v2/continuation.test.mjs:66:170)
+      at async TestContext.<anonymous> (file:///Users/dennisariens/topo-claude/scripts/harness/v2/continuation.test.mjs:68:30)
+      at async Test.run (node:internal/test_runner/test:1409:7)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:974:7) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: undefined,
+    expected: true,
+    operator: '==',
+    diff: 'simple'
+  }
+
+test at scripts/harness/v2/continuation.test.mjs:73:1
+✖ FIXTURE: forged QA event with a valid hash chain cannot package; replaced manifest is refused (294.98575ms)
+  Error: Unknown/private payload field
+      at need (file:///Users/dennisariens/topo-claude/scripts/harness/v2/machine.mjs:4:36)
+      at fields (file:///Users/dennisariens/topo-claude/scripts/harness/v2/machine.mjs:5:98)
+      at verifyQa (file:///Users/dennisariens/topo-claude/scripts/harness/v2/machine.mjs:7:37)
+      at nextState (file:///Users/dennisariens/topo-claude/scripts/harness/v2/machine.mjs:22:12)
+      at append (file:///Users/dennisariens/topo-claude/scripts/harness/v2/store.mjs:8:208)
+      at file:///Users/dennisariens/topo-claude/scripts/harness/v2/store.mjs:10:56
+      at locked (file:///Users/dennisariens/topo-claude/scripts/harness/v2/store.mjs:7:568)
+      at transact (file:///Users/dennisariens/topo-claude/scripts/harness/v2/store.mjs:10:41)
+      at file:///Users/dennisariens/topo-claude/scripts/harness/v2/continuation.test.mjs:78:183
+      at withEnv (file:///Users/dennisariens/topo-claude/scripts/harness/v2/continuation.test.mjs:66:176)
+
+test at scripts/harness/v2/continuation.test.mjs:84:1
+✖ handoff round trip: Claude Code to Codex and back with exclusive ownership (170.340583ms)
+  TypeError [Error]: handoff.emitHandoff is not a function
+      at emitHandoff (file:///Users/dennisariens/topo-claude/scripts/harness/v2/continuation.test.mjs:13:35)
+      at TestContext.<anonymous> (file:///Users/dennisariens/topo-claude/scripts/harness/v2/continuation.test.mjs:85:36)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1402:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:974:18)
+      at Test.postRun (node:internal/test_runner/test:1542:19)
+      at Test.run (node:internal/test_runner/test:1467:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:974:7)
+
+test at scripts/harness/v2/continuation.test.mjs:92:1
+✖ REGRESSION: handoff refuses unpushed commits, dirty work and local-only evidence (158.505833ms)
+  AssertionError [ERR_ASSERTION]: The input did not match the regular expression /uncommitted/i. Input:
+  
+  'TypeError: handoff.emitHandoff is not a function'
+  
+      at TestContext.<anonymous> (file:///Users/dennisariens/topo-claude/scripts/harness/v2/continuation.test.mjs:93:112)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1402:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:974:18)
+      at Test.postRun (node:internal/test_runner/test:1542:19)
+      at Test.run (node:internal/test_runner/test:1467:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:974:7) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: TypeError: handoff.emitHandoff is not a function
+        at emitHandoff (file:///Users/dennisariens/topo-claude/scripts/harness/v2/continuation.test.mjs:13:35)
+        at file:///Users/dennisariens/topo-claude/scripts/harness/v2/continuation.test.mjs:93:123
+        at getActual (node:assert:611:5)
+        at strict.throws (node:assert:759:24)
+        at TestContext.<anonymous> (file:///Users/dennisariens/topo-claude/scripts/harness/v2/continuation.test.mjs:93:112)
+        at Test.runInAsyncScope (node:async_hooks:227:14)
+        at Test.run (node:internal/test_runner/test:1402:25)
+        at Test.processPendingSubtests (node:internal/test_runner/test:974:18)
+        at Test.postRun (node:internal/test_runner/test:1542:19)
+        at Test.run (node:internal/test_runner/test:1467:12),
+    expected: /uncommitted/i,
+    operator: 'throws',
+    diff: 'simple'
+  }
+
+test at scripts/harness/v2/continuation.test.mjs:98:1
+✖ accept refuses code drift, stale remote, tampered records, unknown agents and secrets (160.459333ms)
+  AssertionError [ERR_ASSERTION]: The input did not match the regular expression /distinct/i. Input:
+  
+  'TypeError: handoff.emitHandoff is not a function'
+  
+      at TestContext.<anonymous> (file:///Users/dennisariens/topo-claude/scripts/harness/v2/continuation.test.mjs:99:35)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1402:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:974:18)
+      at Test.postRun (node:internal/test_runner/test:1542:19)
+      at Test.run (node:internal/test_runner/test:1467:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:974:7) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: TypeError: handoff.emitHandoff is not a function
+        at emitHandoff (file:///Users/dennisariens/topo-claude/scripts/harness/v2/continuation.test.mjs:13:35)
+        at file:///Users/dennisariens/topo-claude/scripts/harness/v2/continuation.test.mjs:99:46
+        at getActual (node:assert:611:5)
+        at strict.throws (node:assert:759:24)
+        at TestContext.<anonymous> (file:///Users/dennisariens/topo-claude/scripts/harness/v2/continuation.test.mjs:99:35)
+        at Test.runInAsyncScope (node:async_hooks:227:14)
+        at Test.run (node:internal/test_runner/test:1402:25)
+        at Test.processPendingSubtests (node:internal/test_runner/test:974:18)
+        at Test.postRun (node:internal/test_runner/test:1542:19)
+        at Test.run (node:internal/test_runner/test:1467:12),
+    expected: /distinct/i,
+    operator: 'throws',
+    diff: 'simple'
+  }
+
+test at scripts/harness/v2/continuation.test.mjs:105:1
+✖ handoff, metric and proposal records are metadata and never change the implementation digest (0.63775ms)
+  AssertionError [ERR_ASSERTION]: The expression evaluated to a falsy value:
+  
+    assert(metadataOnly(['.harness/tasks/TOPO-HARNESS-002/handoffs/0001-handoff.json','docs/brain/metrics.json','docs/brain/proposals.json']))
+  
+      at TestContext.<anonymous> (file:///Users/dennisariens/topo-claude/scripts/harness/v2/continuation.test.mjs:105:106)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1402:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:974:18)
+      at Test.postRun (node:internal/test_runner/test:1542:19)
+      at Test.run (node:internal/test_runner/test:1467:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:974:7) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: false,
+    expected: true,
+    operator: '==',
+    diff: 'simple'
+  }
+
+test at scripts/harness/v2/continuation.test.mjs:108:1
+✖ discovery finds relevant host design skills, excludes unsuitable stacks, promotes nothing (3.386959ms)
+  TypeError [Error]: skills.discoverSkills is not a function
+      at discoverSkills (file:///Users/dennisariens/topo-claude/scripts/harness/v2/continuation.test.mjs:10:37)
+      at TestContext.<anonymous> (file:///Users/dennisariens/topo-claude/scripts/harness/v2/continuation.test.mjs:110:14)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1402:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:974:18)
+      at Test.postRun (node:internal/test_runner/test:1542:19)
+      at Test.run (node:internal/test_runner/test:1467:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:974:7)
+
+test at scripts/harness/v2/continuation.test.mjs:113:1
+✖ required skill resolves on either host through reviewed alternates and stays blocked when none exist (3.322625ms)
+  Error: Required skill missing: x
+      at file:///Users/dennisariens/topo-claude/scripts/harness/v2/skills.mjs:4:402
+      at Array.map (<anonymous>)
+      at routeSkills (file:///Users/dennisariens/topo-claude/scripts/harness/v2/skills.mjs:4:195)
+      at TestContext.<anonymous> (file:///Users/dennisariens/topo-claude/scripts/harness/v2/continuation.test.mjs:113:209)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1402:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:974:18)
+      at Test.postRun (node:internal/test_runner/test:1542:19)
+      at Test.run (node:internal/test_runner/test:1467:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:974:7)
+
+test at scripts/harness/v2/continuation.test.mjs:114:1
+✖ registry resolves every required design skill for both Codex and Claude Code hosts by declaration (0.422834ms)
+  AssertionError [ERR_ASSERTION]: The expression evaluated to a falsy value:
+  
+    assert((fd.alternates||[]).some(p=>p.includes('.claude/')))
+  
+      at TestContext.<anonymous> (file:///Users/dennisariens/topo-claude/scripts/harness/v2/continuation.test.mjs:114:260)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1402:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:974:18)
+      at Test.postRun (node:internal/test_runner/test:1542:19)
+      at Test.run (node:internal/test_runner/test:1467:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:974:7) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: false,
+    expected: true,
+    operator: '==',
+    diff: 'simple'
+  }
+
+test at scripts/harness/v2/continuation.test.mjs:116:1
+✖ brain check detects source drift and refuses a fact without committed evidence (207.765125ms)
+  TypeError [ERR_INVALID_ARG_TYPE]: The "path" argument must be of type string or an instance of Buffer or URL. Received an instance of Object
+      at Object.openSync (node:fs:622:5)
+      at readFileSync (node:fs:487:35)
+      at Module.updateBrain (file:///Users/dennisariens/topo-claude/scripts/harness/v2/brain.mjs:4:66)
+      at updateBrain (file:///Users/dennisariens/topo-claude/scripts/harness/v2/continuation.test.mjs:10:126)
+      at TestContext.<anonymous> (file:///Users/dennisariens/topo-claude/scripts/harness/v2/continuation.test.mjs:119:14)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1402:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:974:18)
+      at Test.postRun (node:internal/test_runner/test:1542:19)
+      at Test.run (node:internal/test_runner/test:1467:12) {
+    code: 'ERR_INVALID_ARG_TYPE'
+  }
+
+test at scripts/harness/v2/continuation.test.mjs:124:1
+✖ evolution collects real controller history and repeated failures into evidence-cited proposals only (43.873833ms)
+  TypeError [Error]: evolution.collect is not a function
+      at collect (file:///Users/dennisariens/topo-claude/scripts/harness/v2/continuation.test.mjs:10:170)
+      at TestContext.<anonymous> (file:///Users/dennisariens/topo-claude/scripts/harness/v2/continuation.test.mjs:127:13)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1402:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:974:18)
+      at Test.postRun (node:internal/test_runner/test:1542:19)
+      at Test.run (node:internal/test_runner/test:1467:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:974:7)
+
+test at scripts/harness/v2/continuation.test.mjs:132:1
+✖ FIXTURE: a receipt for a different bundle manifest is refused; the verifier needs only public data (150.21675ms)
+  AssertionError [ERR_ASSERTION]: The input did not match the regular expression /Stale|mismatched/i. Input:
+  
+  'Error: Unknown/private payload field'
+  
+      at file:///Users/dennisariens/topo-claude/scripts/harness/v2/continuation.test.mjs:133:202
+      at withEnv (file:///Users/dennisariens/topo-claude/scripts/harness/v2/continuation.test.mjs:66:176)
+      at TestContext.<anonymous> (file:///Users/dennisariens/topo-claude/scripts/harness/v2/continuation.test.mjs:133:145)
+      at async Test.run (node:internal/test_runner/test:1409:7)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:974:7) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: Error: Unknown/private payload field
+        at need (file:///Users/dennisariens/topo-claude/scripts/harness/v2/machine.mjs:4:36)
+        at fields (file:///Users/dennisariens/topo-claude/scripts/harness/v2/machine.mjs:5:98)
+        at verifyQa (file:///Users/dennisariens/topo-claude/scripts/harness/v2/machine.mjs:7:37)
+        at nextState (file:///Users/dennisariens/topo-claude/scripts/harness/v2/machine.mjs:22:12)
+        at append (file:///Users/dennisariens/topo-claude/scripts/harness/v2/store.mjs:8:208)
+        at file:///Users/dennisariens/topo-claude/scripts/harness/v2/store.mjs:10:56
+        at locked (file:///Users/dennisariens/topo-claude/scripts/harness/v2/store.mjs:7:568)
+        at transact (file:///Users/dennisariens/topo-claude/scripts/harness/v2/store.mjs:10:41)
+        at file:///Users/dennisariens/topo-claude/scripts/harness/v2/continuation.test.mjs:133:213
+        at getActual (node:assert:611:5),
+    expected: /Stale|mismatched/i,
+    operator: 'throws',
+    diff: 'simple'
+  }
+
+test at scripts/harness/v2/continuation.test.mjs:137:1
+✖ failure ledger clears only after a complete PASS and survives every other outcome (0.724875ms)
+  TypeError [Error]: gateModule.settleLedger is not a function
+      at TestContext.<anonymous> (file:///Users/dennisariens/topo-claude/scripts/harness/v2/continuation.test.mjs:139:13)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1402:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:974:18)
+      at Test.postRun (node:internal/test_runner/test:1542:19)
+      at Test.run (node:internal/test_runner/test:1467:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:974:7)

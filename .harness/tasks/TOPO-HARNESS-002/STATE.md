@@ -12,4 +12,4 @@ Preflight: read existing AGENTS/project state/decisions/V1 policy/tests and PR64
 
 Attempts: native worktree creation1 failure, Git fallback1 success; no implementation/gate attempts yet. Retry limits remain3 failed attempts per step / same error twice. No overrides.
 
-Next: design builder review, owner review of concrete contract/plan, then targeted tests and implementation. No merge/deployment/publication/download or master replacement authorized.
+Builder review completed: three routine corrections incorporated (CI retains both tasks; every new commit invalidates independent QA; package file allowlist excludes backup/storage payloads). No owner-only ambiguity found. Next: owner review of concrete contract/plan, then targeted tests and implementation. No merge/deployment/publication/download or master replacement authorized.

@@ -8,3 +8,5 @@
 - V1 policy rejects docs/brain. Proposed additive verification boundary and narrowly scoped CI dispatcher documented in CONTRACT; no V1 gate/policy changes made.
 - Auto-suggested Vercel workflow/verification instructions and official docs inspected. V2 does not adopt Vercel services/SDK or deploy; local Node/persistence suffices for bounded execution. No unsupported claim of durable external infrastructure.
 - No implementation tests or V2 gate run yet. No completion claim.
+
+- Read-only builder check found three routine design gaps, now corrected before implementation: additive CI evidence upload, exact-head QA invalidation after any commit, and strict package file allowlist excluding backups/storage JSON. Reviewer is not independent Hermes.

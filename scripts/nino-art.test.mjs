@@ -35,9 +35,11 @@ function boot(source = html, saved) {
       };
       let seed = 20261024;
       w.Math.random = () => ((seed = (seed * 16807) % 2147483647) / 2147483647);
-      // Deterministic celebration timers: inspect the existing 1500ms dismissal without sleeping.
-      w.setTimeout = (fn, delay) => { timers.push({fn, delay}); return timers.length; };
-      w.clearTimeout = () => {};
+      // Deterministic PR29 pizza/box/trip phases and existing 1500ms dismissal.
+      w.HTMLDialogElement.prototype.showModal = function(){this.setAttribute('open','')};
+      w.HTMLDialogElement.prototype.close = function(){this.removeAttribute('open')};
+      w.setTimeout = (fn, delay) => { timers.push({fn, delay, ran:false, cancelled:false}); return timers.length; };
+      w.clearTimeout = id => { if(timers[id-1])timers[id-1].cancelled=true; };
       w.confirm = () => true;
       w.HTMLElement.prototype.scrollIntoView = () => {};
       if (saved) w.localStorage.setItem('topo-italie-v3', saved);
@@ -46,6 +48,7 @@ function boot(source = html, saved) {
   const w = dom.window;
   assert.deepEqual(errors, [], 'app boots without script errors');
   return {w, d: w.document, errors, timers, ev: code => w.eval(code), q: id => w.document.getElementById(id),
+    tick: delay => {const timer=timers.find(t=>t.delay===delay&&!t.ran&&!t.cancelled);assert(timer,'pending presentation timer '+delay);timer.ran=true;timer.fn();},
     saved: () => w.localStorage.getItem('topo-italie-v3'), close: () => dom.window.close()};
 }
 const normalized = text => {
@@ -102,7 +105,8 @@ test('all six local exports equal manifest hashes and canonical embedded WebP by
     assert.deepEqual(Object.keys(manifest.assets).sort(), roles);
     assert.deepEqual(Object.keys(embedded.assets).sort(), roles);
     assert.deepEqual(readdirSync(new URL('assets/nino/exports/', root)).filter(p => p.endsWith('.webp')).sort(),
-      roles.map(r => `nino-${r}.webp`).sort());
+      [...roles.map(r => `nino-${r}.webp`),'nino-travel.webp'].sort());
+    assert.deepEqual(read('assets/nino/exports/nino-travel.webp'),execFileSync('git',['show','8a704cb23da97baf7197635df7fa12f06b864a24:assets/nino/exports/nino-travel.webp'],{cwd:root,maxBuffer:8e6}),'additional Travel export is exact approved source art');
     for (const name of roles) {
       const expected = manifest.assets[name], bytes = read(expected.path), asset = embedded.assets[name];
       assert.equal(hash(bytes), expected.sha256, `${name}: exported hash`);
@@ -262,6 +266,9 @@ test('free practice wrong-only art, exam suppression, and arrival only at real r
     assert.equal(app.ev('state.pizzas'),1);
     assert.equal(role(app,'#arrivalArt'),null,'pizza without trip earns no arrival');
     assert(app.q('vespaTripToast').classList.contains('hidden'));
+    app.tick(700);assert.equal(app.q('pizzaCelebration').dataset.phase,'open-box');
+    assert(!app.q('pizzaCelebration').hidden,'the earned box waits for Verder');
+    app.q('pizzaCelebration').querySelector('.button').click();assert(app.q('pizzaCelebration').hidden,'non-trip pizza ends without arrival');
     both(a=>a.ev("mode('exam')"));
     both(a=>a.ev('grade(false,null,true)')); assert.equal(role(app,'#practiceArt'),null);
     assert.deepEqual(snapshot(app),snapshot(old),'exam wrong grading matches base');
@@ -271,11 +278,17 @@ test('free practice wrong-only art, exam suppression, and arrival only at real r
     both(a=>a.ev("mode('write');state.pizzas=2;state.slices=7;state.trips=0;sync()"));
     assert.equal(role(app,'#arrivalArt'),null,'no arrival for an almost-earned trip');
     both(a=>{a.q('answer').value=a.ev('state.current.name');a.q('check').click();});
-    assert.equal(app.ev('state.trips'),1); assert.equal(role(app,'#arrivalArt'),'arrival');
-    assert(!app.q('vespaTripToast').classList.contains('hidden'));
+    assert.equal(app.ev('state.trips'),1,'engine trip award remains synchronous');
     assert.deepEqual(snapshot(app),snapshot(old),'trip threshold does not change reward rules');
-    const dismiss=app.timers.find(t=>t.delay===1500); assert(dismiss,'existing 1.5 second trip timer retained');
-    dismiss.fn(); assert(app.q('vespaTripToast').classList.contains('hidden'));
+    assert.equal(role(app,'#arrivalArt'),null,'arrival waits for completed pizza and box');
+    assert(app.q('vespaTripToast').classList.contains('hidden'));
+    assert.equal(app.q('pizzaCelebration').dataset.phase,'full-pizza');
+    assert.equal(app.q('pizzaCelebration').dataset.flavor,'quattro-formaggi');
+    app.tick(700);assert.equal(app.q('pizzaCelebration').dataset.phase,'open-box');
+    assert(app.q('vespaTripToast').classList.contains('hidden'),'box precedes trip');
+    app.q('pizzaCelebration').querySelector('.button').click();assert.equal(role(app,'#arrivalArt'),'arrival');
+    assert(app.d.querySelector('.vespaRide').open,'the earned ride replaces the short toast');assert(app.q('vespaTripToast').classList.contains('hidden'));
+    assert.deepEqual(snapshot(app),snapshot(old),'trip threshold does not change reward rules');
     assert.deepEqual(app.errors,[]); assert.deepEqual(old.errors,[]);
   } finally {app.close();old.close();}
 });

@@ -1,0 +1,52 @@
+{
+  "browser": "156.0.8078.80",
+  "physicalSafari": false,
+  "sha256": "352ddd742436ac4f5a5a8a82374f742788952219e42b47d87d83536319183d53",
+  "results": [
+    {
+      "width": 1500,
+      "height": 1000,
+      "deviceScaleFactor": 2,
+      "errors": [],
+      "external": [],
+      "passportPreservesQuestionAndSave": true,
+      "unearnedArtworkHidden": true
+    },
+    {
+      "width": 1024,
+      "height": 768,
+      "deviceScaleFactor": 2,
+      "errors": [],
+      "external": [],
+      "passportPreservesQuestionAndSave": true,
+      "unearnedArtworkHidden": true
+    },
+    {
+      "width": 768,
+      "height": 1024,
+      "deviceScaleFactor": 2,
+      "errors": [],
+      "external": [],
+      "passportPreservesQuestionAndSave": true,
+      "unearnedArtworkHidden": true
+    },
+    {
+      "width": 390,
+      "height": 844,
+      "deviceScaleFactor": 2,
+      "errors": [],
+      "external": [],
+      "passportPreservesQuestionAndSave": true,
+      "unearnedArtworkHidden": true
+    },
+    {
+      "width": 320,
+      "height": 740,
+      "deviceScaleFactor": 2,
+      "errors": [],
+      "external": [],
+      "passportPreservesQuestionAndSave": true,
+      "unearnedArtworkHidden": true
+    }
+  ]
+}

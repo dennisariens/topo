@@ -1,3 +1,19 @@
+# NINO 2.0 — speelbare kandidaat, 6 november 2026
+
+Eén offline HTML voor eigenaarbeoordeling: sterkere Ontdekkingskaart op dezelfde geometrie, pizza's op het tempo van de leerling met geïllustreerde spaarpizza's, onboarding als één Nino-scène zonder boekkleur, Reisboekje als één compositie op de goedgekeurde folio's, verdiende Vespa-rit en stempel- en Gold-momenten die de juiste pagina openen. [Bewijs, demosave en open punten](qa/playable-20261106/README.md). Geen release-GO.
+
+# NINO 2.0 — speelbare kandidaat, 4 november 2026
+
+Onboarding/profiel, doorlopende11-stoproute, alle folio-/stempel-/bestemmingspagina’s en PR29 Pizza Reward V2 zijn samengebracht. F1 blijft behouden. [Actuele proeflink, bewijs, demo en bronbeperking](qa/playable-20261104/README.md). Groot appicoonbron ontbreekt: huidige volledige Travel-cutout is tijdelijk. Eigenaar visueel GO en onafhankelijke Hermes-review OPEN. Geen merge/deploy of bestaande-downloadvervanging.
+
+# PR71 — Hermes F1 repair, 4 November 2026
+
+Reis/Oefenen now preserves the existing exercise mode/question, draft and native selection direction; book continuity and saved scores/rewards remain unchanged. [F1 evidence and exact-artifact Hermes handoff](qa/f1-71/README.md). Independent re-review **OPEN**; the separate artwork-audit warning and owner folio/Venezia/final visual decisions remain open. No merge/deploy/release or approved-download replacement.
+
+# NINO 2 integration candidate — 3 November 2026
+
+Current integration branch: `codex/nino-v2-integration-20261103`, isolated from existing edits. See [candidate evidence and remaining gates](qa/nino-v2-integration/README.md). This supersedes the earlier current-scope exclusions of passport/design work only for this explicitly authorized integration. Historical release/QA records below retain their original scope. No merge, deployment or approved-download replacement is authorized.
+
 # Project state
 
 ## NINO V2 artwork closeout — issue67, 2 November 2026

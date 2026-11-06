@@ -1,0 +1,87 @@
+/* Reisboekje: one object on a dark table. Paper, ink and stamps share the page; no panels between them. */
+.travelBook{--ink:#3b2716;--ink-soft:#5b4630;--leather:#7c1d1c;--brass:#c49a4a;width:100dvw;max-width:none;height:100dvh;max-height:none;margin:0;padding:8px 12px;box-sizing:border-box;border:0;background:transparent;color:var(--ink);overflow:auto;overscroll-behavior:contain}
+.travelBook[open]{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:6px}
+.travelBook::backdrop,.stampZoom::backdrop{background:#1d2b2bdb}
+.travelBook .bookHeader{position:static;display:flex;align-items:center;justify-content:space-between;gap:8px;width:100%;max-width:1140px;min-height:0;padding:0;background:none;border:0}
+.bookHeader h2{margin:0;font-size:17px;font-weight:700;color:#f6e9cc}
+.travelBook button{min-height:44px;max-width:100%;white-space:normal}.travelBook button:disabled{opacity:.4;cursor:default}
+.bookHeader .button,.bookFooter .button{background:#f6e9cc;color:#3b2716;border-color:transparent}
+.bookShell{--page:min(543px,calc((100dvh - 136px)*.75),calc((100vw - 56px)/2));position:relative;flex:none;padding:10px 12px 12px;border-radius:12px;background:radial-gradient(120% 90% at 30% 20%,#962a26,transparent 60%),repeating-linear-gradient(47deg,#ffffff06 0 2px,#00000008 2px 4px),var(--leather);box-shadow:0 26px 60px #0009,inset 0 0 0 2px #4d0f0f,inset 0 0 0 3px #b4873c66}
+.bookShell::before{content:'';position:absolute;z-index:3;inset:0;border-radius:12px;pointer-events:none;background:linear-gradient(135deg,#dcb968 26px,#0000 27px),linear-gradient(225deg,#dcb968 26px,#0000 27px),linear-gradient(45deg,#c79e4e 26px,#0000 27px),linear-gradient(315deg,#c79e4e 26px,#0000 27px)}
+.bookSingle .bookShell{--page:min(543px,calc(100vw - 48px),calc((100dvh - 136px)*.75));padding:8px}.bookSingle .bookShell::before{background:linear-gradient(135deg,#dcb968 13px,#0000 14px),linear-gradient(225deg,#dcb968 13px,#0000 14px),linear-gradient(45deg,#c79e4e 13px,#0000 14px),linear-gradient(315deg,#c79e4e 13px,#0000 14px)}
+.bookSpread{position:relative;display:grid;grid-template-columns:repeat(2,var(--page));gap:0;background:none}
+.bookSingle .bookSpread{grid-template-columns:var(--page)}
+.travelBook:not(.bookSingle) .bookSpread::after{content:'';position:absolute;z-index:1;top:0;bottom:0;left:50%;width:64px;margin-left:-32px;pointer-events:none;background:linear-gradient(90deg,transparent,#4a2c1433 38%,#2a170c80 50%,#4a2c1433 62%,transparent)}
+.bookPage{position:relative;width:var(--page);aspect-ratio:3/4;min-width:0;max-width:none;background:none;container-type:inline-size}
+.folioPaper{position:absolute;top:0;left:0;width:100%;height:auto;pointer-events:none}.folioMirrored{transform:scaleX(-1)}
+.folioWriting{position:absolute;z-index:2;inset:14% 12% 12.5% 15.5%;overflow:auto;overscroll-behavior:contain;background:none;padding:0;scrollbar-width:thin;color:var(--ink);font-family:"Iowan Old Style","Palatino Linotype",Palatino,Georgia,serif}
+.bookPage h3,.bookPage h4{font-family:inherit;color:var(--ink)}
+.bookScript{margin:0 0 3cqw;font-family:"Bradley Hand","Segoe Print","Snell Roundhand",cursive!important;font-size:clamp(23px,7.4cqw,38px)!important;font-weight:700;line-height:1.08;letter-spacing:0;text-wrap:balance}
+.bookPage p{font-size:clamp(14px,3.1cqw,17px);line-height:1.45;margin:1.6cqw 0;color:var(--ink)}.bookPage .micro{font-size:clamp(13px,2.5cqw,14px);color:var(--ink-soft)}.bookNote{color:var(--ink-soft)!important}
+.bookLink{display:inline-block;padding:9px 2px;border:0;background:none;color:#7c1d1c;font:inherit;font-size:clamp(14px,3cqw,16px);font-weight:700;text-decoration:underline;text-underline-offset:3px;cursor:pointer}
+.folio-right .folioWriting{left:14.5%;right:13%}
+.bookPortrait{position:relative;width:56%;margin:2cqw 0 0 4cqw}.bookCover{display:block;width:100%;height:auto;transform:rotate(-3deg);filter:drop-shadow(0 5px 6px #3b271655)}.bookNino{position:absolute;right:-46%;bottom:-6%;width:72%;height:auto;filter:drop-shadow(0 4px 4px #3b271644)}
+.coverTitle{font-size:clamp(17px,4.2cqw,22px)!important;font-weight:700;margin-top:3cqw!important}.coverFolio{text-align:left}
+.favoriteLabel{display:flex;align-items:center;gap:6px}.favoriteSticker{width:9cqw;min-width:34px;height:auto;transform:rotate(-6deg)}
+.bookFact{display:flex;align-items:center;gap:8px;padding:1.2cqw 0;border-bottom:1px dotted #8b6f4780}.bookFact p{margin:0}.bookFact strong{font-size:clamp(17px,4.2cqw,22px)}.factIcon{width:8cqw;min-width:30px;height:auto}
+.bookPage .pizzaSaved{margin-top:3cqw}
+.bookStamp{position:relative;display:grid;grid-template-columns:27cqw minmax(0,1fr);gap:3cqw;align-items:center;min-height:0;padding:1.4cqw 0;border:0}.bookStamp:nth-of-type(even){grid-template-columns:minmax(0,1fr) 27cqw}.bookStamp:nth-of-type(even)>div{order:-1;text-align:right}
+.bookStamp>div{min-width:0}.bookStamp h4{margin:0;font-size:clamp(14px,3.3cqw,18px);font-weight:700;line-height:1.2}.bookStamp p{margin:2px 0 0}
+.stampInspect{display:block;padding:0;border:0;background:none;width:100%;border-radius:50%;cursor:zoom-in}
+.stampArt{display:block;width:100%;height:auto;transform:rotate(var(--tilt));mix-blend-mode:multiply}
+.stampSlot{display:block;width:80%;aspect-ratio:1;margin:0 auto;border-radius:50%;box-shadow:inset 0 0 0 1.5px #a98d5b80;outline:1px dashed #a98d5b80;outline-offset:-5px}
+.chapterSeal{position:absolute;left:21cqw;bottom:2cqw;width:9cqw;min-width:30px;height:auto;order:0;margin:0}.bookStamp:nth-of-type(even) .chapterSeal{left:auto;right:21cqw}
+.bookStamp::before{display:none}
+.arrivalStamp{display:block;width:62%;height:auto;margin:0 0 2cqw -2cqw;transform:rotate(-4deg);mix-blend-mode:multiply}.destinationList{margin:0;padding-left:20px;font-size:clamp(14px,3.1cqw,17px);line-height:1.6}
+.earnedPostcard{margin:0}.postcardArt{display:block;width:100%;height:auto;max-height:62cqw;object-fit:contain;transform:rotate(-1.5deg);filter:drop-shadow(0 4px 6px #3b271655)}.earnedPostcard figcaption{font-size:clamp(14px,3cqw,16px);margin:3cqw 0 0}
+.bookFinalGold{display:block;width:78%;height:auto;margin:auto}
+.bookFooter{position:static;display:flex;justify-content:space-between;align-items:center;gap:10px;width:100%;max-width:1140px;padding:0;background:none;border:0}.bookFooter .micro{color:#f6e9cc;font-size:14px;font-variant-numeric:tabular-nums}
+.bookSingle .bookHeader,.bookSingle .bookFooter{max-width:calc(var(--book-w,560px))}
+.stampZoom{width:min(420px,calc(100vw - 24px));max-height:calc(100dvh - 24px);overflow:auto;border:0;border-radius:16px;background:#f7ecd2;color:#3b2716;padding:20px;text-align:center}.stampLarge{width:220px;max-width:100%;height:auto;mix-blend-mode:multiply}.stampChapter{display:block;width:120px;max-width:100%;height:auto;margin:10px auto}
+/* Pizza: the earned box waits for the learner. */
+.pizzaCelebration{position:fixed;inset:0;margin:auto;box-sizing:border-box;width:min(400px,calc(100vw - 24px));height:fit-content;max-height:calc(100dvh - 16px);overflow:auto;padding:16px 20px 20px;border:0;border-radius:24px;background:#fff8e8;color:#183b3a;text-align:center;box-shadow:0 24px 80px #132f3a66;pointer-events:auto}
+.pizzaCelebration::backdrop{background:#123c3f99}
+.pizzaCelebration .pizzaCelebrationPicture{display:grid;place-items:center;width:auto;height:min(280px,44dvh)}.pizzaCelebrationPicture .pizzaWheel,.pizzaCelebrationPicture .pizzaOpenBox{width:min(280px,44dvh)!important;height:min(280px,44dvh)!important;object-fit:contain}
+.pizzaCelebration h2{margin:6px 0 2px;font-size:26px;letter-spacing:-.02em}.pizzaCelebrationLabel{margin:0 0 10px;line-height:1.4}.pizzaCelebration .button{width:100%;min-height:48px;margin-top:12px}
+.pizzaCelebration[data-phase="open-box"] .pizzaOpenBox{animation:boxSettle .35s ease-out}@keyframes boxSettle{from{transform:scale(.92);opacity:.4}}
+.pizzaSaved{display:flex;align-items:center;justify-content:center;gap:8px}.pizzaSlot{display:block;flex:none;width:56px;height:56px;border-radius:50%;box-shadow:inset 0 0 0 2px #c9ad7a;background:#f6e7c8}.pizzaSlot:has(.pizzaWheel){box-shadow:none;background:none}.pizzaSaved .pizzaWheel,.pizzaCelebration .pizzaSaved .pizzaWheel,.journeyReward .pizzaSaved .pizzaWheel,#lessonReward .pizzaSaved .pizzaWheel{width:100%;height:100%}
+.pizzaSavedRow,.journeyReward>div.pizzaSavedRow:not(.pizzaWheel):not(.journeyScooter){flex:1 0 100%}.journeyReward .pizzaSaved{justify-content:flex-start}#lessonReward{flex-wrap:wrap}#lessonReward .pizzaSaved{justify-content:flex-start}#lessonReward .pizzaSlot{width:40px;height:40px}.bookPage .pizzaSaved{justify-content:flex-start}.bookPage .pizzaSlot{width:clamp(44px,14cqw,76px);height:clamp(44px,14cqw,76px);background:none}
+/* Vespa ride. */
+.vespaRide{box-sizing:border-box;width:min(860px,calc(100vw - 16px));max-height:calc(100dvh - 12px);overflow:auto;padding:0 0 16px;border:0;border-radius:22px;background:#fff8e8;color:#183b3a;box-shadow:0 28px 90px #132f3a80}.vespaRide::backdrop{background:#123c3fcc}
+.rideStage{position:relative;aspect-ratio:16/9;overflow:hidden;background:#9fcbe0 var(--ride-scene,none) left bottom/auto 100% no-repeat}
+.rideRoad{position:absolute;inset:0;width:100%;height:100%}.rideRoad path{fill:none;stroke-linecap:round}
+.rideLine{stroke:#fff8e8;stroke-width:.5;stroke-dasharray:.016 .02}.rideTrail{stroke:#c4332a;stroke-width:.6;stroke-dasharray:1 1;stroke-dashoffset:1}
+.vespaRide[data-phase="ride"] .rideTrail{stroke-dashoffset:0;transition:stroke-dashoffset 5.4s cubic-bezier(.4,.1,.5,.95)}
+.rideSign{position:absolute;top:calc(90% - 74px);padding:5px 12px;border-radius:9px;background:#fff8e8;color:#183b3a;font-weight:800;font-size:clamp(14px,2.4vw,19px);box-shadow:0 3px 8px #2a1f1455}.rideSign::after{content:'';position:absolute;left:50%;top:100%;width:4px;height:26px;margin-left:-2px;background:#6c4a26}.rideFrom{left:2.5%}.rideTo{right:2.5%;background:#c4332a;color:#fff}
+.rideNino{position:absolute;left:-3%;bottom:0;width:31%;height:auto;filter:drop-shadow(0 8px 6px #2a1f1466);transition:left 5.4s cubic-bezier(.4,.1,.5,.95)}
+.vespaRide[data-phase="depart"] .rideNino{animation:rideIdle .22s linear infinite alternate}.vespaRide[data-phase="ride"] .rideNino{left:72%;animation:rideBob .34s ease-in-out infinite alternate}
+@keyframes rideIdle{to{transform:translateY(-1px)}}@keyframes rideBob{to{transform:translateY(-3px) rotate(-.7deg)}}
+.rideArrival{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;animation:rideFade .5s ease-out}@keyframes rideFade{from{opacity:0}}.rideArrival[hidden],.rideSeal[hidden]{display:none}
+.vespaRide[data-phase="arrived"] :is(.rideNino,.rideRoad,.rideSign){display:none}
+.rideCaption{position:relative;padding:12px 22px 0}.rideCaption h2{margin:0;font-size:clamp(21px,3.4vw,30px);letter-spacing:-.02em}.rideNote{margin:2px 0 0;line-height:1.4}
+.rideSeal{position:absolute;right:16px;top:-58px;width:clamp(96px,17vw,150px);height:auto;transform:rotate(-7deg);filter:drop-shadow(0 2px 1px #fff8)}
+.rideActions{display:flex;flex-wrap:wrap;justify-content:flex-end;gap:8px;padding:10px 22px 0}.rideActions .button{min-height:48px}.rideActions .button[hidden]{display:none}
+/* Stamp and Gold invitation. */
+.earnedMoment{display:flex;align-items:center;gap:14px;margin:10px 0;padding:10px 14px;border-radius:16px;background:#fbf0d6;color:#3b2716;text-align:left}
+.earnedArt{flex:none;width:96px;height:96px;object-fit:contain;mix-blend-mode:multiply;animation:stampDown .5s cubic-bezier(.2,1.4,.4,1)}.earnedGold .earnedArt{mix-blend-mode:normal;animation:goldRise .6s ease-out}
+@keyframes stampDown{from{transform:scale(1.7) rotate(-14deg);opacity:0}}@keyframes goldRise{from{transform:scale(.6);filter:brightness(1.6)}}
+.earnedMoment strong{display:block;font-size:17px;line-height:1.25}.earnedMoment p{margin:2px 0 8px;font-size:14px}.earnedActions{display:flex;flex-wrap:wrap;gap:8px}.earnedActions .button{min-height:44px}
+.earnedFloating{position:fixed;z-index:30;left:50%;bottom:16px;transform:translateX(-50%);width:min(440px,calc(100vw - 24px));margin:0;box-shadow:0 12px 40px #132f3a55}
+@media(max-width:480px){.travelBook{padding:6px}.bookPortrait{width:42%;margin:0 0 0 2cqw}.bookNino{right:-58%}.bookHeader h2{font-size:15px}.bookStamp{grid-template-columns:30cqw minmax(0,1fr);gap:2cqw}.bookStamp:nth-of-type(even){grid-template-columns:minmax(0,1fr) 30cqw}.rideCaption{padding:10px 14px 0}.rideActions{padding:8px 14px 0}.rideActions .button{flex:1 1 130px}.earnedArt{width:72px;height:72px}.pizzaSlot{width:48px;height:48px}}
+@media(prefers-reduced-motion:reduce){.vespaRide *,.earnedArt,.pizzaCelebration *{animation:none!important;transition:none!important}}
+@media print{.vespaRide,.earnedMoment,.pizzaCelebration{display:none!important}}
+/* Ontdekkingskaart: paint over the same shared paths. Neighbours recede to parchment, Italy keeps its DEM relief, seas deepen. */
+body[data-map-theme="discovery"] .atlasTerrain{opacity:1;filter:saturate(1.28) contrast(1.16)}
+body[data-map-theme="discovery"] :is(#map,.mapPicker svg,.microZoom svg) .land{fill:#ecdcb4;fill-opacity:.74;stroke:#9a8558;stroke-width:1.1px}
+body[data-map-theme="discovery"] :is(#map,.mapPicker svg,.microZoom svg) .italy{fill:#d9c94f;fill-opacity:.2;stroke:#5f4a1e;stroke-width:1.9px}
+body[data-map-theme="discovery"] :is(#map,.mapPicker svg,.microZoom svg) .country:not(.activeTarget){fill:#ecdcb4;fill-opacity:.74;stroke:#9a8558}
+body[data-map-theme="discovery"] :is(#map,.mapPicker svg,.microZoom svg) .country:hover:not(.activeTarget){fill-opacity:.9}
+body[data-map-theme="discovery"] :is(#map,.mapPicker svg,.microZoom svg) .water:not(.activeTarget){fill:#1c78a6;fill-opacity:.1;stroke:#d6eef4;stroke-opacity:.3}
+body[data-map-theme="discovery"] :is(#map,.mapPicker svg,.microZoom svg) .lineTarget:not(.activeTarget){stroke:#1f7fae}
+body[data-map-theme="discovery"] #lakeGeometry{fill:#2f8fbd;stroke:#0f5e86}
+body[data-map-theme="discovery"] .atlasWaterTexture{opacity:.34}
+#atlasSea stop:first-child{stop-color:#4fb3d0}#atlasSea stop:last-child{stop-color:#12659a}
+body[data-map-assessment="true"][data-map-theme="discovery"] :is(#map,.mapPicker svg,.microZoom svg) .italy{stroke:#897344;stroke-width:1px}
+body[data-map-theme="discovery"] :is(#map,.mapPicker svg,.microZoom svg) :is(.water,.zone,.country).activeTarget{fill-opacity:.68}
+/* iPad width: the fixed navigation sits under a 44px header, so the brand and counters stay visible. */
+body[data-focus-shell="true"]>header{height:44px;min-height:44px}

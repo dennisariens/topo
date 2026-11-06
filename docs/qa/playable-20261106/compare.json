@@ -1,0 +1,18 @@
+{
+ "benchmark": "367b875:assets/nino/travel-passport/book/masters/passport-open-book.png",
+ "geometry": {
+  "viewBox": "0 0 890 1235",
+  "items": 45,
+  "chapters": 11
+ },
+ "contrast": {
+  "left": {
+   "ink": 7.96,
+   "soft": 5.01
+  },
+  "right": {
+   "ink": 8.64,
+   "soft": 5.44
+  }
+ }
+}

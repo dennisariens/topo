@@ -1,0 +1,26 @@
+/* Approved C+ shell, original passport folios and a continuous eleven-stop learning path. */
+.ninoNav{max-width:1334px;margin:0 auto 16px;display:flex;gap:6px;padding:6px;background:#fff;border:1px solid var(--nino-line);border-radius:18px;box-shadow:0 6px 26px #1348400d}
+.ninoNav button{flex:1;min-width:0;min-height:48px;padding:8px 5px;border:0;border-radius:13px;background:transparent;color:var(--nino-forest);font-family:inherit;font-weight:800;font-size:16px;line-height:1.25;overflow-wrap:normal}
+.ninoNav button[aria-current="page"]{background:var(--nino-forest);color:white}.ninoNav button:hover{background:#e1f3eb;color:#073f3b}
+body[data-nino-home="true"] nav.practiceModes{display:none!important}nav.practiceModes [data-mode="route"]{display:none!important}
+/* One scenic Nino illustration here; no second scooter cutout beside the same welcome. */
+.routeHero #welcomeArt{display:none!important}.ninoWelcomeLine{display:block!important}.ninoWelcomeCopy{min-width:0}
+.journeyScreen .routeHero{padding:22px}.journeyScreen .routeHero>*{margin-left:0!important;margin-right:0!important;max-width:100%}.journeyScreen .routeHero>.button{width:100%}
+.routeScene{height:180px!important}.routeHero h2{font-size:clamp(27px,3vw,36px)}.routeHero .eyebrow{margin-top:16px}.rewardHeading{font-size:17px;margin:20px 0 8px}
+#routeCards{max-width:720px;padding:0 0 16px;isolation:isolate}#routeCards::before{content:'';position:absolute;z-index:-1;top:45px;bottom:55px;left:68px;width:4px;border-radius:3px;background:#c6ded1}
+#routeCards .routeCard{display:grid;grid-template-columns:96px minmax(0,1fr);gap:18px;max-width:none;margin:0 0 22px;transform:none;padding:18px;background:#fff;position:relative}
+.chapterPicture{width:96px;height:96px;object-fit:contain;align-self:start}.routeCard:has(.chapterPicture) .routeBadge{display:none}.routeCardContent{min-width:0}.routeCardTitle{font-size:20px;line-height:1.25;overflow-wrap:anywhere}.routeCardTitle .chapterIcon{display:none}.routeSteps{grid-template-columns:repeat(3,minmax(0,1fr))}.routeStep{min-width:0;display:flex;align-items:center;gap:6px;white-space:normal;overflow-wrap:anywhere}.routeStep svg{flex:0 0 22px;width:22px;height:22px}.routeActions{display:flex;flex-wrap:wrap;gap:8px}.routeActions .button{min-width:0}.routeCard.locked{opacity:1;background:#f4f6f2}.routeCard.locked .chapterPicture{opacity:.5}.routeSectionLabel{font-size:16px;font-weight:800;margin:20px 0 14px}.routeCollection{display:contents}
+/* Full approved Travel cutout until the separately approved large app-icon source is supplied. */
+.brandMark{background-image:none!important;overflow:hidden;padding:2px}.brandMark img{display:block;width:100%;height:100%;object-fit:contain}.ninoWelcomeCopy h2{margin-top:8px}
+body[data-focus-shell="true"] .ninoNav{position:fixed;z-index:31;top:calc(44px + var(--focus-safe-top,0px) + var(--focus-vv-top,0px));left:10px;right:10px;margin:0;padding:3px;border-radius:12px;background:#fffdf8}
+body[data-focus-shell="true"] .ninoNav button{min-height:44px;font-size:13px;border-radius:9px}body[data-focus-shell="true"] .layout.routeHomeLayout,body[data-focus-shell="true"] .layout.finishLayout{margin-top:108px}
+body[data-focus-mode="true"] .mapCard{top:calc(100px + var(--focus-safe-top,0px) + var(--focus-vv-top,0px));height:calc(var(--focus-layout-height,100svh) - 110px - var(--focus-safe-top,0px) - var(--focus-safe-bottom,0px))}
+#focusAnswerSheet .buttons{display:flex!important;flex-wrap:wrap!important;gap:8px}#focusAnswerSheet .buttons>.button{min-width:0;flex:1 1 110px}#focusAnswerSheet #inputWrap{min-width:0;flex-wrap:wrap;gap:8px}#focusAnswerSheet #answer{min-width:0;flex:1 1 150px;width:100%}#focusAnswerSheet #check{flex:0 1 auto;min-width:44px;max-width:100%;white-space:normal}
+@media(max-width:650px){.ninoNav{margin:0 10px 12px}.ninoNav button{font-size:13px}.journeyScreen .routeHero{padding:14px}.routeScene{height:140px!important}#routeCards .routeCard{grid-template-columns:58px minmax(0,1fr);gap:10px;padding:12px;margin-bottom:16px}.chapterPicture{width:58px;height:58px}#routeCards::before{left:40px}.routeCardTitle{font-size:17px}.routeSteps{grid-template-columns:1fr}.routeStep{font-size:13px;padding:10px}.routeActions .button{width:100%}}
+@media(prefers-reduced-motion:reduce){.travelBook,.ninoNav *{animation:none!important;transition:none!important}}
+@media print{.ninoNav,.travelBook{display:none!important}}
+/* Toggle participates in layout: it cannot cover a short one-line writing prompt/input row. */
+#focusAnswerSheet #focusSheetToggle{position:static;display:block;width:max-content;max-width:100%;margin:0 0 8px auto;font-size:12px;min-height:44px}
+#focusAnswerSheet #prompt,body[data-focus-task="point"] #focusAnswerSheet #prompt,body[data-focus-task="discover"] #focusAnswerSheet #prompt{padding-right:0;min-height:0}
+
+.routeLessonLayout .panel #quiz>.buttons{display:flex!important;flex-wrap:wrap;gap:8px}

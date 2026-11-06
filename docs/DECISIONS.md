@@ -201,3 +201,22 @@ remain available; hinge stays optional under issue31/PR63. Source availability,
 technical export, runtime integration and independent acceptance remain distinct.
 Evidence and remaining conditions: [closure ledger](qa/nino-v2-closure-67/README.md).
 This does not supersede PR61's independent functional review or owner release gate.
+
+## 2026-11-03 — NINO 2 production integration (#68 / #21 / #67 / #58)
+
+The owner mission authorizes one integration on exact PR61 lineage with PR70 exports and only PR69 presentation ported. Supersedes earlier no-passport/no-new-navigation scope for this branch. Preserve canonical engines, geometry and saves; passport remains a read-only projection of existing completion, goldAt and reward counts. Use exact approved chapter/stamp/seal/static-box/card bytes, with live captions and earned-only visibility. Folio backgrounds and Venezia runtime remain held for the explicit Hermes C1/C2 owner decisions; use code-native paper without claiming folio approval. Pisa hinge remains deferred. Independent Hermes exact-SHA QA and owner release GO remain separate; no merge/deploy/download replacement. See candidate evidence for execution and limitations.
+
+## 2026-11-03 — Complete artwork integration under the current mission
+
+Supersedes the integration record’s implementation hold on folios and Venezia: the current owner mission explicitly authorizes PR70 exports with bounded folio use and Venezia B. Use exact1086×1448 folios at <=543CSS pixels/page (testedDPR2) and the verified PR70 reconstructed contour after the real third Vespa trip. Preserve source bytes/aspect ratio. This is implementation authority, not higher-native-resolution approval, exact original-matte identity, independent artwork closure or final owner visual/release acceptance. Hermes C1/C2 technical caveats remain in the handoff for review.
+
+
+## 2026-11-04 — Eén speelbare NINO 2.0-proef in bestaande PR71
+
+De huidige eigenaaropdracht autoriseert onboarding20, doorlopende Design C-route68, volledige passport21/67-presentatie en hergebruik van PR29-pizza’s samen. Dit supersedeert eerdere scope-uitsluitingen voor die onderdelen, zonder geografische/leer-/beloningseconomiewijziging. Profiel schema1 blijft apart en optioneel in lokale opslag en backups; favoritePizza kiest nooit een verdiende smaak. Stempel/Gold/postkaart blijven canonieke projecties, demo is uitsluitend een apart expliciet te importeren bestand.
+
+Goedgekeurde rode omslagpixels blijven exact; gekozen kleur is een persoonlijk omslagaccent. Huidige folio’s behouden native verhouding/cap en Venezia behoudt de bestaande contour, voor eigenaarbeoordeling. De grote appicoonbron uit topo-nino-app-icon-v1.zip is niet in onderzochte Git/lokale bronnen gevonden; volledige goedgekeurde Travel-cutout is tijdelijk, geen vervangende icoongoedkeuring. Echte hinge/uitgebreide Vespa uit scope. Eigenaarreview en onafhankelijke Hermes-GO blijven OPEN. Geen merge/deploy/release of bestaande-downloadvervanging.
+
+## 2026-11-06 — NINO-oplevercontract na de speelronde
+
+Eigenaaropdracht op PR71 supersedes de eerdere uitsluiting van de ritpresentatie, de boekkleur in onboarding en profiel, en de getimede pizzapresentatie. Ontdekkingskaart blijft zichtbaar omdat het verschil op gelijke schaal nu duidelijk is; dezelfde paden, doelen en beoordeling, alleen verf in de presentatielaag. Benchmark boek is `367b875:assets/nino/travel-passport/book/masters/passport-open-book.png`, uitsluitend als beeldreferentie omdat QA #45 die als runtime-achtergrond afwees. Stempelpagina's gebruiken de linkerfolio gespiegeld. `coverColor` blijft ongewijzigd in profielschema 1 voor back-upcompatibiliteit, zonder bediening of weergave. Momenten zijn projecties van echte voortgang: geen nieuwe opslag, en herladen of importeren speelt niets opnieuw af. De ritroute is verhalend en geen landkaart, zodat de rit geen ligging verklapt. Echte Pisa-scharnieranimatie blijft buiten scope. Eigenaaracceptatie en Hermes-review zijn OPEN.

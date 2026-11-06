@@ -1,0 +1,25 @@
+✖ F1 Reis can display the journey from a completed round and resume the same result screen (3900.676625ms)
+ℹ tests 1
+ℹ suites 0
+ℹ pass 0
+ℹ fail 1
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 4714.831125
+
+✖ failing tests:
+
+test at scripts/focus-mode.test.mjs:62:1
+✖ F1 Reis can display the journey from a completed round and resume the same result screen (3900.676625ms)
+  AssertionError [ERR_ASSERTION]: journey is not hidden by result layout
+      at TestContext.<anonymous> (file:///Users/dennisariens/projects/topo-f1-71/scripts/focus-mode.test.mjs:67:40)
+      at async Test.run (node:internal/test_runner/test:1208:7)
+      at async startSubtestAfterBootstrap (node:internal/test_runner/harness:385:3) {
+    generatedMessage: false,
+    code: 'ERR_ASSERTION',
+    actual: false,
+    expected: true,
+    operator: '==',
+    diff: 'simple'
+  }

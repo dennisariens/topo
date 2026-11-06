@@ -1,0 +1,89 @@
+✖ every flavor has all nine atlas cells and eight distinct sector selectors; no reward writes (77.155084ms)
+✖ zero rollover retains just-earned flavor; queue orders pizza, static box, trip once (6.181167ms)
+✖ reset cancels pending trip and replay-invalid events cannot fabricate rewards (5.228708ms)
+✖ PR29 approved source and runtime checksums, unique assembly proof (0.170209ms)
+ℹ tests 4
+ℹ suites 0
+ℹ pass 0
+ℹ fail 4
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 774.764291
+
+✖ failing tests:
+
+test at scripts/pizza-reward.test.mjs:8:1
+✖ every flavor has all nine atlas cells and eight distinct sector selectors; no reward writes (77.155084ms)
+  Error: ENOENT: no such file or directory, open '/Users/dennisariens/projects/topo-f1-71/scripts/pizza-reward.js'
+      at Object.openSync (node:fs:556:18)
+      at readFileSync (node:fs:440:35)
+      at read (file:///Users/dennisariens/projects/topo-f1-71/scripts/pizza-reward.test.mjs:6:51)
+      at boot (file:///Users/dennisariens/projects/topo-f1-71/scripts/pizza-reward.test.mjs:7:284)
+      at TestContext.<anonymous> (file:///Users/dennisariens/projects/topo-f1-71/scripts/pizza-reward.test.mjs:8:113)
+      at Test.runInAsyncScope (node:async_hooks:226:14)
+      at Test.run (node:internal/test_runner/test:1201:25)
+      at Test.start (node:internal/test_runner/test:1096:17)
+      at startSubtestAfterBootstrap (node:internal/test_runner/harness:385:17) {
+    errno: -2,
+    code: 'ENOENT',
+    syscall: 'open',
+    path: '/Users/dennisariens/projects/topo-f1-71/scripts/pizza-reward.js'
+  }
+
+test at scripts/pizza-reward.test.mjs:9:1
+✖ zero rollover retains just-earned flavor; queue orders pizza, static box, trip once (6.181167ms)
+  Error: ENOENT: no such file or directory, open '/Users/dennisariens/projects/topo-f1-71/scripts/pizza-reward.js'
+      at Object.openSync (node:fs:556:18)
+      at readFileSync (node:fs:440:35)
+      at read (file:///Users/dennisariens/projects/topo-f1-71/scripts/pizza-reward.test.mjs:6:51)
+      at boot (file:///Users/dennisariens/projects/topo-f1-71/scripts/pizza-reward.test.mjs:7:284)
+      at TestContext.<anonymous> (file:///Users/dennisariens/projects/topo-f1-71/scripts/pizza-reward.test.mjs:9:140)
+      at Test.runInAsyncScope (node:async_hooks:226:14)
+      at Test.run (node:internal/test_runner/test:1201:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:831:18)
+      at Test.postRun (node:internal/test_runner/test:1330:19)
+      at Test.run (node:internal/test_runner/test:1258:12) {
+    errno: -2,
+    code: 'ENOENT',
+    syscall: 'open',
+    path: '/Users/dennisariens/projects/topo-f1-71/scripts/pizza-reward.js'
+  }
+
+test at scripts/pizza-reward.test.mjs:10:1
+✖ reset cancels pending trip and replay-invalid events cannot fabricate rewards (5.228708ms)
+  Error: ENOENT: no such file or directory, open '/Users/dennisariens/projects/topo-f1-71/scripts/pizza-reward.js'
+      at Object.openSync (node:fs:556:18)
+      at readFileSync (node:fs:440:35)
+      at read (file:///Users/dennisariens/projects/topo-f1-71/scripts/pizza-reward.test.mjs:6:51)
+      at boot (file:///Users/dennisariens/projects/topo-f1-71/scripts/pizza-reward.test.mjs:7:284)
+      at TestContext.<anonymous> (file:///Users/dennisariens/projects/topo-f1-71/scripts/pizza-reward.test.mjs:10:99)
+      at Test.runInAsyncScope (node:async_hooks:226:14)
+      at Test.run (node:internal/test_runner/test:1201:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:831:18)
+      at Test.postRun (node:internal/test_runner/test:1330:19)
+      at Test.run (node:internal/test_runner/test:1258:12) {
+    errno: -2,
+    code: 'ENOENT',
+    syscall: 'open',
+    path: '/Users/dennisariens/projects/topo-f1-71/scripts/pizza-reward.js'
+  }
+
+test at scripts/pizza-reward.test.mjs:11:1
+✖ PR29 approved source and runtime checksums, unique assembly proof (0.170209ms)
+  Error: ENOENT: no such file or directory, open '/Users/dennisariens/projects/topo-f1-71/assets/nino/rewards/pizza/manifest.json'
+      at Object.openSync (node:fs:556:18)
+      at readFileSync (node:fs:440:35)
+      at read (file:///Users/dennisariens/projects/topo-f1-71/scripts/pizza-reward.test.mjs:6:51)
+      at TestContext.<anonymous> (file:///Users/dennisariens/projects/topo-f1-71/scripts/pizza-reward.test.mjs:11:137)
+      at Test.runInAsyncScope (node:async_hooks:226:14)
+      at Test.run (node:internal/test_runner/test:1201:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:831:18)
+      at Test.postRun (node:internal/test_runner/test:1330:19)
+      at Test.run (node:internal/test_runner/test:1258:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:831:7) {
+    errno: -2,
+    code: 'ENOENT',
+    syscall: 'open',
+    path: '/Users/dennisariens/projects/topo-f1-71/assets/nino/rewards/pizza/manifest.json'
+  }

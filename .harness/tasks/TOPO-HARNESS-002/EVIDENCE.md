@@ -10,3 +10,8 @@
 - No implementation tests or V2 gate run yet. No completion claim.
 
 - Read-only builder check found three routine design gaps, now corrected before implementation: additive CI evidence upload, exact-head QA invalidation after any commit, and strict package file allowlist excluding backups/storage JSON. Reviewer is not independent Hermes.
+
+## Imported Codex pilot (executed by Codex, imported by Claude Code)
+See `evidence/pilot-4f71f69/PROVENANCE.md`. At `4f71f69`: V2 gate PASS (4 V2 and 12 V1 steps, `gateHash` f2bb4970c312d7265d402bc49e64707f2058d125518c1398c064702ff91aa0ae), pilot BLOCKED at INDEPENDENT_QA. Not evidence for later commits.
+
+Audit note, not V2 evidence: Claude Code ran the full gate at P001 head `94d1390` on Node 24.22.1 and it passed, local only. That commit is outside V2.

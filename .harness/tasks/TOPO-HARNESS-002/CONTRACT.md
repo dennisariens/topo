@@ -23,3 +23,13 @@ No learner code/art/geography/assets/root dependencies/existing tests/download/m
 
 ## Deliverables
 One V2 draft PR; immutable implementation/head SHA; full executed V1+V2 output; runnable unchanged candidate in a separately named provisional review package; hashes/screenshots/skill ledger/brain; pilot state/resume evidence; separate improvement branch; known limitations; independent Hermes handoff OPEN until actual exact-SHA response.
+
+## Owner continuation — 2026-11-06 (Claude Code session)
+Recorded after the audit found `agent/topo-harness-v2` local-only and pilot evidence unpushed. Original scope above stands; where this section is more specific, it applies.
+
+Baseline `4f71f699ee82c6be9ab7f18609ba502097f8877f`, published without force as `agent/topo-harness-v2`. P001 stays on its improvement branch and is excluded from V2. Claude Code may implement on this isolated development branch. No merge, deploy or production change is authorized. Target: one reviewable V2 draft PR, actual verification evidence and a complete Hermes handoff. No claim of independent Hermes acceptance.
+
+P0: repair loop supports new tested commits without violating immutable evidence; recoverable controller errors never permanently block tasks; failure ledger resets after complete successful validation; agent handoffs detect missing remote commits, local-only evidence and dirty worktrees.
+P1: interruption and recovery during verification; REVIEW_READY with an independently verifiable receipt; living brain reconciliation; design-skill discovery, availability checks and usage tracking.
+
+Refinements of section A required by this direction: a repair continues the same event history on a descendant commit, clears prior verification and QA, and keeps retry counters. An interrupted verification may be re-run fresh once by the bounded `run` supervisor because a second consecutive interruption is the same error and stops; this is not a retry of a failed result. Regression tests must show each important defect before and after its fix.

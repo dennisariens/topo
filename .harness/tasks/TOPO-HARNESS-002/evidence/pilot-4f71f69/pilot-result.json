@@ -1,0 +1,20 @@
+{
+  "taskId": "TOPO-PILOT-001",
+  "kind": "candidate-review",
+  "sourceSha": "4f71f699ee82c6be9ab7f18609ba502097f8877f",
+  "contractSha": "161596d5dcafe483546461143cf650b0b5eb7b3bd4ac434d6d46fe64f1d5d8ae",
+  "approvalReference": "owner approved V2 plan; unchanged existing review candidate",
+  "phase": "BLOCKED",
+  "attempts": 1,
+  "same": 1,
+  "interventions": 1,
+  "inFlight": false,
+  "tokenCost": null,
+  "currencyCost": null,
+  "planSha": "9701c491ad1622f4aed523f5fef6f27ce000ff81af0dd66edf3b526b4523197a",
+  "blockedFrom": "INDEPENDENT_QA",
+  "gatePath": "/Users/dennisariens/projects/topo-harness-v2/.harness/tasks/TOPO-HARNESS-002/runs/pilot-gate-1793953475443",
+  "gateHash": "f2bb4970c312d7265d402bc49e64707f2058d125518c1398c064702ff91aa0ae",
+  "artifactSha256": "933931eb67a347948a270da7aa912bfc48ee3cba420c72fbe7d02e34c93d4a35",
+  "reason": "AUTHENTICATED_HERMES_RESPONSE_REQUIRED"
+}

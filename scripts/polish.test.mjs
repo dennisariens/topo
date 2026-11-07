@@ -3,7 +3,7 @@ import {readFileSync} from 'node:fs';
 import {JSDOM,VirtualConsole} from 'jsdom';
 const html=readFileSync(new URL('../index.html',import.meta.url),'utf8');
 const errors=[],vc=new VirtualConsole();vc.on('jsdomError',e=>errors.push(e.message));
-const dom=new JSDOM(html,{url:'https://topo.test/',runScripts:'dangerously',virtualConsole:vc,beforeParse(w){w.confirm=()=>true;w.HTMLElement.prototype.scrollIntoView=()=>{}}});
+const dom=new JSDOM(html,{url:'https://topo.test/',runScripts:'dangerously',virtualConsole:vc,beforeParse(w){w.confirm=()=>true;w.localStorage.setItem('topo-nino-profile-v1',JSON.stringify({schema:1,name:'',coverColor:'riviera',favoritePizza:null}));w.HTMLElement.prototype.scrollIntoView=()=>{}}});
 const w=dom.window,d=w.document,ev=s=>w.eval(s),q=id=>d.getElementById(id);
 assert.equal(d.querySelectorAll('.routeCard').length,11);
 assert.equal(d.querySelectorAll('.chapterIcon').length,11);
@@ -12,7 +12,7 @@ for(const icon of d.querySelectorAll('.chapterIcon')){
  assert(d.querySelector(reference)?.querySelector('path,circle,rect'),'defined nonempty chapter symbol: '+icon.dataset.chapter);
 }
 assert.equal(d.querySelector('[data-chapter="islands"] .chapterIcon use').getAttribute('href'),'#topo-island');
-assert.equal(q('futureStops').open,false,'future stops collapse by default');assert.equal(d.querySelectorAll('.routeCard.nextPreview').length,1);
+assert([...d.querySelectorAll('.routeCard')].every(c=>!c.closest('details:not([open])')),'all eleven stops are visible in the approved continuous journey');assert([...d.querySelectorAll('.routeCard.locked .routeStep')].every(b=>b.disabled),'visible future stops stay locked');assert.equal(d.querySelectorAll('.routeCard.nextPreview').length,1);
 assert.equal(d.querySelector('[aria-current="step"]').dataset.chapter,'city1');
 for(const button of d.querySelectorAll('nav .tab'))assert.equal(button.getAttribute('aria-pressed'),String(button.dataset.mode==='route'));
 assert.equal(q('routeIntro').dataset.event,'ENTRY.FIRST');assert.equal(q('routeContinue').textContent,'Start mijn reis');
@@ -40,8 +40,8 @@ assert.equal(q('message').textContent,'Dat was '+chosen.name+'. Gezocht: '+curre
 const checkpoint=w.localStorage.getItem('topo-italie-v3');q('routeBack').click();assert.equal(q('routeIntro').dataset.event,'ENTRY.RESUME');assert.match(q('routeContinue').textContent,/Ga verder/);
 // Stable current/next grouping moves with the existing chapter state, without unlocking later stops.
 ev("state.route.active=null;TopoRoute.record(state.route,'city1').stage=3;TopoRoute.record(state.route,'city1').goldAt=123;renderRouteHome()");
-assert.equal(d.querySelector('[aria-current="step"]').dataset.chapter,'city2');assert.equal(q('completedStops').open,false);
-assert(q('completedStops').querySelector('.goldButton'),'Gold and stage replay remain reachable');assert.equal(q('completedStops').querySelectorAll('.routeStep').length,3);
+await new Promise(r=>setTimeout(r,0));assert.equal(d.querySelector('[aria-current="step"]').dataset.chapter,'city2');
+const completed=d.querySelector('.routeCard[data-chapter="city1"]');assert(!completed.closest('details:not([open])'));assert(completed.querySelector('.goldButton'),'Gold and stage replay remain reachable');assert.equal(completed.querySelectorAll('.routeStep').length,3);
 assert.equal(d.querySelector('.nextPreview').dataset.chapter,'city3');
 ev("document.getElementById('topo-island').remove();renderRouteHome()");assert.equal(d.querySelector('[data-chapter="islands"] .chapterIcon use').getAttribute('href'),'#topo-point','missing symbols have a visible fallback');
 // True engine outcomes, not six-question pauses, select chapter/gold celebrations.
@@ -60,4 +60,4 @@ assert.equal(q('finishScreen').dataset.event,'CHAPTER.GOLD_REPLAY');assert.equal
 ev("startRouteLesson('countries','gold');routeGrade(false);routeNext()");finishGold();assert.equal(q('finishScreen').dataset.event,'CHAPTER.GOLD_MISSED');
 q('routeBack').click();assert.equal(q('routeIntro').dataset.event,'ENTRY.COMPLETE');assert.equal(d.querySelectorAll('.routeCard').length,11);
 assert.deepEqual(errors,[]);assert(checkpoint);dom.window.close();
-console.log('Release 1.1: eleven icon references/fallback, route disclosures, eight-slice copy, NOW gating and truthful Nino outcomes: PASS');
+console.log('Release 1.1: eleven icon references/fallback, continuous route and locked/replay stages, eight-slice copy, NOW gating and truthful Nino outcomes: PASS');

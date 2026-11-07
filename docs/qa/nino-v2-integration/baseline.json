@@ -1,0 +1,24 @@
+{
+  "functionalBaseline": "1bf86b3e1c69319bed8ef877243070a64d97a12e",
+  "artworkCandidate": "2a9dda3d3d8ec567687bc3b61bf9cbde645c752c",
+  "design": "127d2e0114574998087e7b06538cb8bb938c35e7",
+  "hermesEvidence": "827ebaf313509dde70a2c79ace4cbf3e9cb3ccdc",
+  "commonDesignAncestor": "bd1e57bc48e55a065cbbccb68acea196a64a187c",
+  "baselineHtmlSha256": "3203f1b4cd9b72b60ed5301fdeafc9fd59988d1b12fb75ce22902b130b50b635",
+  "protectedFiles": {
+    "scripts/learning-engine.js": "e6d1992865892d3eefd661abae74cac300d0659ab1827c41a8b057b4dc7ef6e0",
+    "scripts/route-engine.js": "484fb91f8458cc38834edf45ae898f78ecea00342e6c405ae8dfd68078333043",
+    "scripts/map-hit.js": "aec5629df88b397343404a925f3a77189244061aa860f14b9954b8cda08a879e",
+    "docs/geography/map-manifest.json": "637d4dc6c2451219fc8ce20170f351826c31ba0a06c1459de902ceadc7574b9c",
+    "docs/geography/points.json": "d58075823303e364e7522efe56eece8d4d8c25f5e3751ccce12c582f2b067ac0",
+    "print.html": "f892b7656c91e443c937f550c103e5f50ca6f924518d4fff29b0e63aaba60bd3",
+    "output/pdf/topo-italie-printboek.pdf": "80e7e9711c70ed5b1974777636ce43fd0f1f10de6f6d511edc392a18ceaff09d"
+  },
+  "lineage": "PR70 descends from exact PR61; PR69 diverges at bd1e57b and only its presentation block will be ported",
+  "baselineValidation": "release:check passes; initial run Node24.13.1; final run will use compatible Node24.15.0",
+  "ownerConditions": [
+    "Folio native-resolution exception pending",
+    "Venezia reconstructed contour acceptance pending"
+  ],
+  "preservationScope": "45 objects;11 chapters;all canonical engines/geometry, reward rules, saves, exports and migrations unchanged"
+}

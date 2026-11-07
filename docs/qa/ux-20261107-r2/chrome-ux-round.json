@@ -1,0 +1,526 @@
+{
+ "log": [
+  {
+   "step": "candidate",
+   "file": "NINO-2-Proefversie-2026-11-07-r2.html",
+   "sha256": "4e8002705f92bce937484f613bb6763383a278fe2c107dd427d68b40797ca3ba",
+   "engine": "chrome",
+   "version": "157.0.8103.38"
+  },
+  {
+   "step": "A start meteen",
+   "tab": "Reis",
+   "mode": "route/discover",
+   "map": "school"
+  },
+  {
+   "step": "A correct answer",
+   "item": "city-3",
+   "before": "0 van 8 punten voor Margherita",
+   "after": "1 van 8 punten voor Margherita",
+   "goal": "Nog drie pizza’s tot je Vespa-rit",
+   "visible": [
+    "ninoMeter"
+   ],
+   "tab": "Reis",
+   "rewards": {
+    "good": 1,
+    "pizzas": 0,
+    "slices": 1,
+    "trips": 0
+   }
+  },
+  {
+   "step": "A reload",
+   "intro": "offered",
+   "onboarding": 0,
+   "offer": 0,
+   "tab": "Reis",
+   "rewards": {
+    "good": 1,
+    "pizzas": 0,
+    "slices": 1,
+    "trips": 0
+   }
+  },
+  {
+   "step": "A book keys",
+   "keys": {
+    "Bewaar mijn boekje": {
+     "start": "1–2 / 8",
+     "one": "3–4 / 8",
+     "two": "5–6 / 8",
+     "back": "1–2 / 8",
+     "focus": "Volgende"
+    },
+    "Annuleren": {
+     "start": "1–2 / 8",
+     "one": "3–4 / 8",
+     "two": "5–6 / 8",
+     "back": "1–2 / 8",
+     "focus": "Volgende"
+    }
+   },
+   "profile": {
+    "schema": 1,
+    "name": "Mila",
+    "coverColor": "riviera",
+    "favoritePizza": "salami"
+   }
+  },
+  {
+   "step": "B announcement",
+   "visible": [
+    "ninoMeter"
+   ],
+   "points": "7 van 8 punten voor Quattro Formaggi",
+   "goal": "Nog één pizza tot je Vespa-rit",
+   "saved": 2,
+   "rect": [
+    326,
+    706,
+    528,
+    86
+   ],
+   "inView": true,
+   "clipped": false,
+   "minFont": 12.5,
+   "wheel": 74.443359375
+  },
+  {
+   "step": "B ride",
+   "phases": [
+    "depart",
+    "ride",
+    "arrived"
+   ],
+   "after": "0 van 8 punten voor Margherita",
+   "goal": "Nog drie pizza’s tot je Vespa-rit",
+   "rewards": {
+    "good": 24,
+    "pizzas": 3,
+    "slices": 0,
+    "trips": 1
+   },
+   "tab": "Reis"
+  },
+  {
+   "step": "B reload",
+   "rewards": {
+    "good": 24,
+    "pizzas": 3,
+    "slices": 0,
+    "trips": 1
+   }
+  },
+  {
+   "step": "C reduced motion",
+   "phase": "arrived"
+  },
+  {
+   "step": "D skip",
+   "ok": true
+  },
+  {
+   "step": "E sizes",
+   "320x740": {
+    "visible": [
+     "ninoMeter"
+    ],
+    "points": "7 van 8 punten voor Quattro Formaggi",
+    "goal": "Nog één pizza tot je Vespa-rit",
+    "saved": 2,
+    "rect": [
+     28,
+     585,
+     264,
+     127
+    ],
+    "inView": true,
+    "clipped": false,
+    "minFont": 12.5,
+    "wheel": 64.3115234375
+   },
+   "390x844": {
+    "visible": [
+     "ninoMeter"
+    ],
+    "points": "7 van 8 punten voor Quattro Formaggi",
+    "goal": "Nog één pizza tot je Vespa-rit",
+    "saved": 2,
+    "rect": [
+     28,
+     722,
+     334,
+     94
+    ],
+    "inView": true,
+    "clipped": false,
+    "minFont": 12.5,
+    "wheel": 64.31088256835938
+   },
+   "768x1024": {
+    "visible": [
+     "ninoMeter"
+    ],
+    "points": "7 van 8 punten voor Quattro Formaggi",
+    "goal": "Nog één pizza tot je Vespa-rit",
+    "saved": 2,
+    "rect": [
+     120,
+     910,
+     528,
+     86
+    ],
+    "inView": true,
+    "clipped": false,
+    "minFont": 12.5,
+    "wheel": 72.350341796875
+   },
+   "1024x768": {
+    "visible": [
+     "ninoMeter"
+    ],
+    "points": "7 van 8 punten voor Quattro Formaggi",
+    "goal": "Nog één pizza tot je Vespa-rit",
+    "saved": 2,
+    "rect": [
+     248,
+     654,
+     528,
+     86
+    ],
+    "inView": true,
+    "clipped": false,
+    "minFont": 12.5,
+    "wheel": 72.349853515625
+   },
+   "1180x820": {
+    "visible": [
+     "ninoMeter"
+    ],
+    "points": "7 van 8 punten voor Quattro Formaggi",
+    "goal": "Nog één pizza tot je Vespa-rit",
+    "saved": 2,
+    "rect": [
+     326,
+     706,
+     528,
+     86
+    ],
+    "inView": true,
+    "clipped": false,
+    "minFont": 12.5,
+    "wheel": 72.35003662109375
+   },
+   "1500x950": {
+    "visible": [
+     "ninoMeter"
+    ],
+    "points": "7 van 8 punten voor Quattro Formaggi",
+    "goal": "Nog één pizza tot je Vespa-rit",
+    "saved": 2,
+    "rect": [
+     1151,
+     497,
+     242,
+     162
+    ],
+    "inView": true,
+    "clipped": false,
+    "minFont": 14,
+    "wheel": 104.854736328125
+   }
+  },
+  {
+   "step": "F F1",
+   "id": "city-5",
+   "mode": "write",
+   "value": "Navigatieconcept",
+   "sel": [
+    3,
+    10,
+    "backward"
+   ],
+   "tab": "Oefenen"
+  },
+  {
+   "step": "G book fit",
+   "1500x950": {
+    "pages": [
+     "1–2 / 12",
+     "3–4 / 12",
+     "5–6 / 12",
+     "7–8 / 12",
+     "9–10 / 12",
+     "11–12 / 12"
+    ],
+    "backs": [
+     {
+      "label": "Sicilia, souvenir van je eilandenles",
+      "font": "18.6"
+     },
+     {
+      "label": "Sardegna, souvenir van je eilandenles",
+      "font": "17.3"
+     },
+     {
+      "label": "Venetië, je derde Vespa-rit",
+      "font": "18.0"
+     },
+     {
+      "label": "Napels, je zesde Vespa-rit",
+      "font": "19.8"
+     }
+    ]
+   },
+   "1366x768": {
+    "pages": [
+     "1–2 / 12",
+     "3–4 / 12",
+     "5–6 / 12",
+     "7–8 / 12",
+     "9–10 / 12",
+     "11–12 / 12"
+    ],
+    "backs": [
+     {
+      "label": "Sicilia, souvenir van je eilandenles",
+      "font": "16.2"
+     },
+     {
+      "label": "Sardegna, souvenir van je eilandenles",
+      "font": "15.1"
+     },
+     {
+      "label": "Venetië, je derde Vespa-rit",
+      "font": "15.7"
+     },
+     {
+      "label": "Napels, je zesde Vespa-rit",
+      "font": "17.3"
+     }
+    ]
+   },
+   "1180x820": {
+    "pages": [
+     "1–2 / 12",
+     "3–4 / 12",
+     "5–6 / 12",
+     "7–8 / 12",
+     "9–10 / 12",
+     "11–12 / 12"
+    ],
+    "backs": [
+     {
+      "label": "Sicilia, souvenir van je eilandenles",
+      "font": "17.5"
+     },
+     {
+      "label": "Sardegna, souvenir van je eilandenles",
+      "font": "16.4"
+     },
+     {
+      "label": "Venetië, je derde Vespa-rit",
+      "font": "17.0"
+     },
+     {
+      "label": "Napels, je zesde Vespa-rit",
+      "font": "18.8"
+     }
+    ]
+   },
+   "820x1180": {
+    "pages": [
+     "1 / 12",
+     "2 / 12",
+     "3 / 12",
+     "4 / 12",
+     "5 / 12",
+     "6 / 12",
+     "7 / 12",
+     "8 / 12",
+     "9 / 12",
+     "10 / 12",
+     "11 / 12",
+     "12 / 12"
+    ],
+    "backs": [
+     {
+      "label": "Sicilia, souvenir van je eilandenles",
+      "font": "18.6"
+     },
+     {
+      "label": "Sardegna, souvenir van je eilandenles",
+      "font": "17.3"
+     },
+     {
+      "label": "Venetië, je derde Vespa-rit",
+      "font": "18.0"
+     },
+     {
+      "label": "Napels, je zesde Vespa-rit",
+      "font": "19.8"
+     }
+    ]
+   },
+   "768x1024": {
+    "pages": [
+     "1 / 12",
+     "2 / 12",
+     "3 / 12",
+     "4 / 12",
+     "5 / 12",
+     "6 / 12",
+     "7 / 12",
+     "8 / 12",
+     "9 / 12",
+     "10 / 12",
+     "11 / 12",
+     "12 / 12"
+    ],
+    "backs": [
+     {
+      "label": "Sicilia, souvenir van je eilandenles",
+      "font": "18.6"
+     },
+     {
+      "label": "Sardegna, souvenir van je eilandenles",
+      "font": "17.3"
+     },
+     {
+      "label": "Venetië, je derde Vespa-rit",
+      "font": "18.0"
+     },
+     {
+      "label": "Napels, je zesde Vespa-rit",
+      "font": "19.8"
+     }
+    ]
+   },
+   "390x844": {
+    "pages": [
+     "1 / 12",
+     "2 / 12",
+     "3 / 12",
+     "4 / 12",
+     "5 / 12",
+     "6 / 12",
+     "7 / 12",
+     "8 / 12",
+     "9 / 12",
+     "10 / 12",
+     "11 / 12",
+     "12 / 12"
+    ],
+    "backs": [
+     {
+      "label": "Sicilia, souvenir van je eilandenles",
+      "font": "11.7"
+     },
+     {
+      "label": "Sardegna, souvenir van je eilandenles",
+      "font": "11.0"
+     },
+     {
+      "label": "Venetië, je derde Vespa-rit",
+      "font": "11.3"
+     },
+     {
+      "label": "Napels, je zesde Vespa-rit",
+      "font": "12.6"
+     }
+    ]
+   },
+   "375x667": {
+    "pages": [
+     "1 / 12",
+     "2 / 12",
+     "3 / 12",
+     "4 / 12",
+     "5 / 12",
+     "6 / 12",
+     "7 / 12",
+     "8 / 12",
+     "9 / 12",
+     "10 / 12",
+     "11 / 12",
+     "12 / 12"
+    ],
+    "backs": [
+     {
+      "label": "Sicilia, souvenir van je eilandenles",
+      "font": "11.2"
+     },
+     {
+      "label": "Sardegna, souvenir van je eilandenles",
+      "font": "10.5"
+     },
+     {
+      "label": "Venetië, je derde Vespa-rit",
+      "font": "10.8"
+     },
+     {
+      "label": "Napels, je zesde Vespa-rit",
+      "font": "12.0"
+     }
+    ]
+   },
+   "320x568": {
+    "pages": [
+     "1 / 12",
+     "2 / 12",
+     "3 / 12",
+     "4 / 12",
+     "5 / 12",
+     "6 / 12",
+     "7 / 12",
+     "8 / 12",
+     "9 / 12",
+     "10 / 12",
+     "11 / 12",
+     "12 / 12"
+    ],
+    "backs": [
+     {
+      "label": "Sicilia, souvenir van je eilandenles",
+      "font": "9.3"
+     },
+     {
+      "label": "Sardegna, souvenir van je eilandenles",
+      "font": "8.8"
+     },
+     {
+      "label": "Venetië, je derde Vespa-rit",
+      "font": "9.0"
+     },
+     {
+      "label": "Napels, je zesde Vespa-rit",
+      "font": "10.0"
+     }
+    ]
+   }
+  },
+  {
+   "step": "G ride preview",
+   "phases": [
+    "depart",
+    "ride",
+    "arrived"
+   ],
+   "unchanged": true
+  },
+  {
+   "step": "G ride preview reduced",
+   "phase": "arrived",
+   "trips": 7
+  },
+  {
+   "step": "errors",
+   "errors": [],
+   "network": []
+  }
+ ],
+ "errors": [],
+ "network": []
+}

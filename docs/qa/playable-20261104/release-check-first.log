@@ -1,0 +1,67 @@
+
+> topo-italie-baseline@0.1.0 release:check
+> npm run build && npm run lint && npm test && npm run audit:release-1-2 && node scripts/audit-map-picker-revision.mjs
+
+
+> topo-italie-baseline@0.1.0 build
+> node scripts/build.mjs
+
+Semantic map tap resolver embedded; original SVG geometry and engines retained
+Original schoolblad overlay embedded; no external assets
+Embedded six byte-verified owner WebPs; no external runtime assets
+Pizza: 85 source assets checksum-verified; inline runtime atlases + board + boxes + approved Nino Travel
+Six background lakes generated from pinned Natural Earth polygons (no simplification)
+Discovery atlas embedded: pinned DEM, live two-choice utility, no external runtime dependency
+Focus Mode embedded: original input, visual viewport sheet, one unchanged map; fully offline
+Embedded pinned PR65 micro favicons; no external icon requests
+Static preview generated from canonical 45 places
+Generated print.html from 45 current worksheet items and 12 groups
+Standalone interactive HTML: output/html/topo-italie-interactief.html
+App, print page, standalone bundle and learning engine JavaScript syntax: OK
+Pinned Nino art, reusable slots and all offline image bytes: OK
+Discovery atlas code, original geometry references and embedded DEM bytes: OK
+Semantic map hit resolver source/standalone parity: OK
+TOPO-NINO Computer release filename and canonical bytes: OK
+45 content entries, anchors, coastal markers, microstates, selected land checks: OK
+Limit: drawn Italy polygon is not an independent geographic ground truth
+Static build: dist/index.html, dist/print.html, dist/printboek.pdf
+
+> topo-italie-baseline@0.1.0 lint
+> node scripts/check-syntax.mjs
+
+App, print page, standalone bundle and learning engine JavaScript syntax: OK
+Pinned Nino art, reusable slots and all offline image bytes: OK
+Discovery atlas code, original geometry references and embedded DEM bytes: OK
+Semantic map hit resolver source/standalone parity: OK
+TOPO-NINO Computer release filename and canonical bytes: OK
+
+> topo-italie-baseline@0.1.0 test
+> node scripts/validate-map.mjs && node scripts/validate-print.mjs && node scripts/learning-engine.test.mjs && node scripts/route-engine.test.mjs && node scripts/exam-flow.test.mjs && node scripts/ui-smoke.test.mjs && node scripts/route-dom.test.mjs && node scripts/work-regression.cjs && node scripts/release-1-dom.test.mjs && node scripts/qa-findings.test.mjs && node scripts/polish.test.mjs && node --test scripts/nino-art.test.mjs && node scripts/geography/lakes.test.mjs && node --test scripts/schoolblad.test.mjs && node --test scripts/discovery-map.test.mjs && node --test scripts/map-hit.test.mjs && node --test scripts/focus-mode.test.mjs && node --test scripts/pizza-reward.test.mjs scripts/nino-profile.test.mjs scripts/nino-experience.test.mjs
+
+45 content entries, anchors, coastal markers, microstates, selected land checks: OK
+Limit: drawn Italy polygon is not an independent geographic ground truth
+Printable A4 groups, school photo and all 45 worksheet mappings: OK
+Shuffle, coverage, spaced mistake review, legacy migration and Vespa cadence: OK
+Route locks, stages, repair spacing, gold, persistence, rewards and scheduled review: OK
+Finite geography test, point/write grading, scoring, skips and restart: OK
+Full standalone boot and learn/point/write/exam/reset button flow: OK
+All 11 route chapters and gold tests, dock controls, mode switch, resume and reset: OK
+Real HTML DOM: controls, SVG events, reload, atomic rewards, unique IDs, enclave and storage failure: OK
+PASS: JavaScript syntax; 168 correct answers → 21 pizzas / 7 trips; every 8/24 rollover; reload preserves rewards; duplicate answer cannot earn twice.
+PASS: six-question breaks retain full gold coverage; halfway save/restore; daily goal resets independently of lifetime rewards.
+PASS: adaptive six-task session, skill isolation, restore and legacy migration; 27 source-projected locations; 45 geometry/code baselines; fallback matches live coordinates.
+PASS: three-stage migration preserves writing completion; code sessions removed; tests and adaptive rounds use pointing/writing only.
+Legacy saves, skill isolation, round/lifetime scores, neutral keyboard picker, microstate highlights, river tolerance and daily reset: OK
+QA-1: stage/gold replay daily credit, reload/resubmit idempotence and pizza ledger: PASS
+QA-2: 19 malformed imports preserve exact memory/storage before confirmation; valid schemas 1/2 and interrupted/code migrations: PASS
+file:///Users/dennisariens/projects/topo-f1-71/scripts/polish.test.mjs:15
+assert.equal(q('futureStops').open,false,'future stops collapse by default');assert.equal(d.querySelectorAll('.routeCard.nextPreview').length,1);
+                             ^
+
+TypeError: Cannot read properties of null (reading 'open')
+    at file:///Users/dennisariens/projects/topo-f1-71/scripts/polish.test.mjs:15:30
+    at ModuleJob.run (node:internal/modules/esm/module_job:430:25)
+    at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:639:26)
+    at async asyncRunEntryPointWithESMLoader (node:internal/modules/run_main:101:5)
+
+Node.js v25.8.2

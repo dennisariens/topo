@@ -1,0 +1,22 @@
+{
+ "desktop": {
+  "via": "ui",
+  "questions": "point ✓, point ✓, point ✓, point ✓, point ✓, point ✓, write ✓, write ✓, write ✓, write ✓, write ✓, write ✓",
+  "result": "Goud verdiend | 12 van 12 goed. Alle plekken foutloos aangewezen én benoemd.",
+  "normal": {
+   "kind": "review",
+   "label": false
+  },
+  "errs": []
+ },
+ "tel320": {
+  "via": "ui",
+  "questions": "point ✓, point ✓, point ✓, point ✓, point ✓, point ✓, write ✓, write ✓, write ✓, write ✓, write ✓, write ✓",
+  "result": "Goud verdiend | 12 van 12 goed. Alle plekken foutloos aangewezen én benoemd.",
+  "normal": {
+   "kind": "review",
+   "label": false
+  },
+  "errs": []
+ }
+}

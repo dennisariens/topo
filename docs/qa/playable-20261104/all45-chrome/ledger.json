@@ -1,0 +1,5983 @@
+[
+  {
+    "id": "city-1",
+    "name": "Bari",
+    "kind": "city",
+    "featureClass": "point",
+    "chapter": "city1",
+    "source": "Natural Earth populated places 10m",
+    "geometrySha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "geographyStatus": "SOURCE PROJECTION VERIFIED",
+    "runs": [
+      {
+        "style": "school",
+        "wrong": {
+          "sourcePoint": [
+            398.2,
+            404.22
+          ],
+          "screenPoint": [
+            568.7886842105263,
+            580.6887140688259
+          ],
+          "candidates": [
+            "city-2",
+            "city-20"
+          ],
+          "order": [
+            "city-2",
+            "city-20"
+          ],
+          "selectedId": "city-2",
+          "correct": false
+        },
+        "correct": [
+          {
+            "sourcePoint": [
+              702.5,
+              664.96
+            ],
+            "screenPoint": [
+              739.2182439271255,
+              726.7215875506074
+            ],
+            "candidates": [
+              "city-1"
+            ],
+            "order": [],
+            "selectedId": "city-1",
+            "correct": true
+          },
+          {
+            "sourcePoint": [
+              704.5,
+              664.96
+            ],
+            "screenPoint": [
+              740.3383856275304,
+              726.7215875506074
+            ],
+            "candidates": [
+              "city-1"
+            ],
+            "order": [],
+            "selectedId": "city-1",
+            "correct": true
+          }
+        ],
+        "writing": {
+          "wrongRejected": true,
+          "nameAccepted": true,
+          "duplicateCreditBlocked": true
+        }
+      },
+      {
+        "style": "discovery",
+        "wrong": {
+          "sourcePoint": [
+            398.2,
+            404.22
+          ],
+          "screenPoint": [
+            568.7886842105263,
+            580.6887140688259
+          ],
+          "candidates": [
+            "city-2",
+            "city-20"
+          ],
+          "order": [
+            "city-20",
+            "city-2"
+          ],
+          "selectedId": "city-2",
+          "correct": false
+        },
+        "correct": [
+          {
+            "sourcePoint": [
+              702.5,
+              664.96
+            ],
+            "screenPoint": [
+              739.2182439271255,
+              726.7215875506074
+            ],
+            "candidates": [
+              "city-1"
+            ],
+            "order": [],
+            "selectedId": "city-1",
+            "correct": true
+          },
+          {
+            "sourcePoint": [
+              704.5,
+              664.96
+            ],
+            "screenPoint": [
+              740.3383856275304,
+              726.7215875506074
+            ],
+            "candidates": [
+              "city-1"
+            ],
+            "order": [],
+            "selectedId": "city-1",
+            "correct": true
+          }
+        ],
+        "writing": {
+          "wrongRejected": true,
+          "nameAccepted": true,
+          "duplicateCreditBlocked": true
+        }
+      }
+    ],
+    "status": "PASS executed pointer/writing fixtures in both themes"
+  },
+  {
+    "id": "city-2",
+    "name": "Bologna",
+    "kind": "city",
+    "featureClass": "point",
+    "chapter": "city1",
+    "source": "Natural Earth populated places 10m",
+    "geometrySha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "geographyStatus": "SOURCE PROJECTION VERIFIED",
+    "runs": [
+      {
+        "style": "school",
+        "wrong": {
+          "sourcePoint": [
+            702.5,
+            664.96
+          ],
+          "screenPoint": [
+            739.2182439271255,
+            726.7215875506074
+          ],
+          "candidates": [
+            "city-1"
+          ],
+          "order": [],
+          "selectedId": "city-1",
+          "correct": false
+        },
+        "correct": [
+          {
+            "sourcePoint": [
+              398.2,
+              404.22
+            ],
+            "screenPoint": [
+              568.7886842105263,
+              580.6887140688259
+            ],
+            "candidates": [
+              "city-2",
+              "city-20"
+            ],
+            "order": [
+              "city-2",
+              "city-20"
+            ],
+            "selectedId": "city-2",
+            "correct": true
+          },
+          {
+            "sourcePoint": [
+              400.2,
+              404.22
+            ],
+            "screenPoint": [
+              569.9088259109312,
+              580.6887140688259
+            ],
+            "candidates": [
+              "city-2",
+              "city-20"
+            ],
+            "order": [
+              "city-2",
+              "city-20"
+            ],
+            "selectedId": "city-2",
+            "correct": true
+          }
+        ],
+        "writing": {
+          "wrongRejected": true,
+          "nameAccepted": true,
+          "duplicateCreditBlocked": true
+        }
+      },
+      {
+        "style": "discovery",
+        "wrong": {
+          "sourcePoint": [
+            702.5,
+            664.96
+          ],
+          "screenPoint": [
+            739.2182439271255,
+            726.7215875506074
+          ],
+          "candidates": [
+            "city-1"
+          ],
+          "order": [],
+          "selectedId": "city-1",
+          "correct": false
+        },
+        "correct": [
+          {
+            "sourcePoint": [
+              398.2,
+              404.22
+            ],
+            "screenPoint": [
+              568.7886842105263,
+              580.6887140688259
+            ],
+            "candidates": [
+              "city-2",
+              "city-20"
+            ],
+            "order": [
+              "city-2",
+              "city-20"
+            ],
+            "selectedId": "city-2",
+            "correct": true
+          },
+          {
+            "sourcePoint": [
+              400.2,
+              404.22
+            ],
+            "screenPoint": [
+              569.9088259109312,
+              580.6887140688259
+            ],
+            "candidates": [
+              "city-2",
+              "city-20"
+            ],
+            "order": [
+              "city-20",
+              "city-2"
+            ],
+            "selectedId": "city-2",
+            "correct": true
+          }
+        ],
+        "writing": {
+          "wrongRejected": true,
+          "nameAccepted": true,
+          "duplicateCreditBlocked": true
+        }
+      }
+    ],
+    "status": "PASS executed pointer/writing fixtures in both themes"
+  },
+  {
+    "id": "city-3",
+    "name": "Florence",
+    "kind": "city",
+    "featureClass": "point",
+    "chapter": "city1",
+    "source": "Natural Earth populated places 10m",
+    "geometrySha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "geographyStatus": "SOURCE PROJECTION VERIFIED",
+    "runs": [
+      {
+        "style": "school",
+        "wrong": {
+          "sourcePoint": [
+            702.5,
+            664.96
+          ],
+          "screenPoint": [
+            739.2182439271255,
+            726.7215875506074
+          ],
+          "candidates": [
+            "city-1"
+          ],
+          "order": [],
+          "selectedId": "city-1",
+          "correct": false
+        },
+        "correct": [
+          {
+            "sourcePoint": [
+              393.25,
+              459.69
+            ],
+            "screenPoint": [
+              566.0163335020243,
+              611.7558441295547
+            ],
+            "candidates": [
+              "city-3"
+            ],
+            "order": [],
+            "selectedId": "city-3",
+            "correct": true
+          },
+          {
+            "sourcePoint": [
+              395.25,
+              459.69
+            ],
+            "screenPoint": [
+              567.1364752024292,
+              611.7558441295547
+            ],
+            "candidates": [
+              "city-3"
+            ],
+            "order": [],
+            "selectedId": "city-3",
+            "correct": true
+          }
+        ],
+        "writing": {
+          "wrongRejected": true,
+          "nameAccepted": true,
+          "duplicateCreditBlocked": true
+        }
+      },
+      {
+        "style": "discovery",
+        "wrong": {
+          "sourcePoint": [
+            702.5,
+            664.96
+          ],
+          "screenPoint": [
+            739.2182439271255,
+            726.7215875506074
+          ],
+          "candidates": [
+            "city-1"
+          ],
+          "order": [],
+          "selectedId": "city-1",
+          "correct": false
+        },
+        "correct": [
+          {
+            "sourcePoint": [
+              393.25,
+              459.69
+            ],
+            "screenPoint": [
+              566.0163335020243,
+              611.7558441295547
+            ],
+            "candidates": [
+              "city-3"
+            ],
+            "order": [],
+            "selectedId": "city-3",
+            "correct": true
+          },
+          {
+            "sourcePoint": [
+              395.25,
+              459.69
+            ],
+            "screenPoint": [
+              567.1364752024292,
+              611.7558441295547
+            ],
+            "candidates": [
+              "city-3"
+            ],
+            "order": [],
+            "selectedId": "city-3",
+            "correct": true
+          }
+        ],
+        "writing": {
+          "wrongRejected": true,
+          "nameAccepted": true,
+          "duplicateCreditBlocked": true
+        }
+      }
+    ],
+    "status": "PASS executed pointer/writing fixtures in both themes"
+  },
+  {
+    "id": "city-4",
+    "name": "Genua",
+    "kind": "city",
+    "featureClass": "point",
+    "chapter": "city1",
+    "source": "Natural Earth populated places 10m",
+    "geometrySha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "geographyStatus": "SOURCE PROJECTION VERIFIED",
+    "runs": [
+      {
+        "style": "school",
+        "wrong": {
+          "sourcePoint": [
+            702.5,
+            664.96
+          ],
+          "screenPoint": [
+            739.2182439271255,
+            726.7215875506074
+          ],
+          "candidates": [
+            "city-1"
+          ],
+          "order": [],
+          "selectedId": "city-1",
+          "correct": false
+        },
+        "correct": [
+          {
+            "sourcePoint": [
+              265.65,
+              411.18
+            ],
+            "screenPoint": [
+              494.55129301619434,
+              584.5868071862349
+            ],
+            "candidates": [
+              "city-4"
+            ],
+            "order": [],
+            "selectedId": "city-4",
+            "correct": true
+          },
+          {
+            "sourcePoint": [
+              267.65,
+              411.18
+            ],
+            "screenPoint": [
+              495.6714347165992,
+              584.5868071862349
+            ],
+            "candidates": [
+              "city-4"
+            ],
+            "order": [],
+            "selectedId": "city-4",
+            "correct": true
+          }
+        ],
+        "writing": {
+          "wrongRejected": true,
+          "nameAccepted": true,
+          "duplicateCreditBlocked": true
+        }
+      },
+      {
+        "style": "discovery",
+        "wrong": {
+          "sourcePoint": [
+            702.5,
+            664.96
+          ],
+          "screenPoint": [
+            739.2182439271255,
+            726.7215875506074
+          ],
+          "candidates": [
+            "city-1"
+          ],
+          "order": [],
+          "selectedId": "city-1",
+          "correct": false
+        },
+        "correct": [
+          {
+            "sourcePoint": [
+              265.65,
+              411.18
+            ],
+            "screenPoint": [
+              494.55129301619434,
+              584.5868071862349
+            ],
+            "candidates": [
+              "city-4"
+            ],
+            "order": [],
+            "selectedId": "city-4",
+            "correct": true
+          },
+          {
+            "sourcePoint": [
+              267.65,
+              411.18
+            ],
+            "screenPoint": [
+              495.6714347165992,
+              584.5868071862349
+            ],
+            "candidates": [
+              "city-4"
+            ],
+            "order": [],
+            "selectedId": "city-4",
+            "correct": true
+          }
+        ],
+        "writing": {
+          "wrongRejected": true,
+          "nameAccepted": true,
+          "duplicateCreditBlocked": true
+        }
+      }
+    ],
+    "status": "PASS executed pointer/writing fixtures in both themes"
+  },
+  {
+    "id": "city-5",
+    "name": "Milaan",
+    "kind": "city",
+    "featureClass": "point",
+    "chapter": "city1",
+    "source": "Natural Earth populated places 10m",
+    "geometrySha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "geographyStatus": "SOURCE PROJECTION VERIFIED",
+    "runs": [
+      {
+        "style": "school",
+        "wrong": {
+          "sourcePoint": [
+            702.5,
+            664.96
+          ],
+          "screenPoint": [
+            739.2182439271255,
+            726.7215875506074
+          ],
+          "candidates": [
+            "city-1"
+          ],
+          "order": [],
+          "selectedId": "city-1",
+          "correct": false
+        },
+        "correct": [
+          {
+            "sourcePoint": [
+              280.67,
+              329.41
+            ],
+            "screenPoint": [
+              502.9635571862349,
+              538.7898137651822
+            ],
+            "candidates": [
+              "city-5",
+              "city-13"
+            ],
+            "order": [
+              "city-13",
+              "city-5"
+            ],
+            "selectedId": "city-5",
+            "correct": true
+          },
+          {
+            "sourcePoint": [
+              282.67,
+              329.41
+            ],
+            "screenPoint": [
+              504.0836988866397,
+              538.7898137651822
+            ],
+            "candidates": [
+              "city-5",
+              "city-13"
+            ],
+            "order": [
+              "city-13",
+              "city-5"
+            ],
+            "selectedId": "city-5",
+            "correct": true
+          }
+        ],
+        "writing": {
+          "wrongRejected": true,
+          "nameAccepted": true,
+          "duplicateCreditBlocked": true
+        }
+      },
+      {
+        "style": "discovery",
+        "wrong": {
+          "sourcePoint": [
+            702.5,
+            664.96
+          ],
+          "screenPoint": [
+            739.2182439271255,
+            726.7215875506074
+          ],
+          "candidates": [
+            "city-1"
+          ],
+          "order": [],
+          "selectedId": "city-1",
+          "correct": false
+        },
+        "correct": [
+          {
+            "sourcePoint": [
+              280.67,
+              329.41
+            ],
+            "screenPoint": [
+              502.9635571862349,
+              538.7898137651822
+            ],
+            "candidates": [
+              "city-5",
+              "city-13"
+            ],
+            "order": [
+              "city-5",
+              "city-13"
+            ],
+            "selectedId": "city-5",
+            "correct": true
+          },
+          {
+            "sourcePoint": [
+              282.67,
+              329.41
+            ],
+            "screenPoint": [
+              504.0836988866397,
+              538.7898137651822
+            ],
+            "candidates": [
+              "city-5",
+              "city-13"
+            ],
+            "order": [
+              "city-5",
+              "city-13"
+            ],
+            "selectedId": "city-5",
+            "correct": true
+          }
+        ],
+        "writing": {
+          "wrongRejected": true,
+          "nameAccepted": true,
+          "duplicateCreditBlocked": true
+        }
+      }
+    ],
+    "status": "PASS executed pointer/writing fixtures in both themes"
+  },
+  {
+    "id": "city-6",
+    "name": "Napels",
+    "kind": "city",
+    "featureClass": "point",
+    "chapter": "city1",
+    "source": "Natural Earth populated places 10m",
+    "geometrySha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "geographyStatus": "SOURCE PROJECTION VERIFIED",
+    "runs": [
+      {
+        "style": "school",
+        "wrong": {
+          "sourcePoint": [
+            702.5,
+            664.96
+          ],
+          "screenPoint": [
+            739.2182439271255,
+            726.7215875506074
+          ],
+          "candidates": [
+            "city-1"
+          ],
+          "order": [],
+          "selectedId": "city-1",
+          "correct": false
+        },
+        "correct": [
+          {
+            "sourcePoint": [
+              557.87,
+              685.92
+            ],
+            "screenPoint": [
+              658.2151968623482,
+              738.4606725708502
+            ],
+            "candidates": [
+              "city-6",
+              "area-e"
+            ],
+            "order": [
+              "area-e",
+              "city-6"
+            ],
+            "selectedId": "city-6",
+            "correct": true
+          },
+          {
+            "sourcePoint": [
+              559.87,
+              685.92
+            ],
+            "screenPoint": [
+              659.3353385627531,
+              738.4606725708502
+            ],
+            "candidates": [
+              "city-6",
+              "area-e"
+            ],
+            "order": [
+              "area-e",
+              "city-6"
+            ],
+            "selectedId": "city-6",
+            "correct": true
+          }
+        ],
+        "writing": {
+          "wrongRejected": true,
+          "nameAccepted": true,
+          "duplicateCreditBlocked": true
+        }
+      },
+      {
+        "style": "discovery",
+        "wrong": {
+          "sourcePoint": [
+            702.5,
+            664.96
+          ],
+          "screenPoint": [
+            739.2182439271255,
+            726.7215875506074
+          ],
+          "candidates": [
+            "city-1"
+          ],
+          "order": [],
+          "selectedId": "city-1",
+          "correct": false
+        },
+        "correct": [
+          {
+            "sourcePoint": [
+              557.87,
+              685.92
+            ],
+            "screenPoint": [
+              658.2151968623482,
+              738.4606725708502
+            ],
+            "candidates": [
+              "city-6",
+              "area-e"
+            ],
+            "order": [
+              "city-6",
+              "area-e"
+            ],
+            "selectedId": "city-6",
+            "correct": true
+          },
+          {
+            "sourcePoint": [
+              559.87,
+              685.92
+            ],
+            "screenPoint": [
+              659.3353385627531,
+              738.4606725708502
+            ],
+            "candidates": [
+              "city-6",
+              "area-e"
+            ],
+            "order": [
+              "city-6",
+              "area-e"
+            ],
+            "selectedId": "city-6",
+            "correct": true
+          }
+        ],
+        "writing": {
+          "wrongRejected": true,
+          "nameAccepted": true,
+          "duplicateCreditBlocked": true
+        }
+      }
+    ],
+    "status": "PASS executed pointer/writing fixtures in both themes"
+  },
+  {
+    "id": "city-7",
+    "name": "Palermo",
+    "kind": "city",
+    "featureClass": "point",
+    "chapter": "city2",
+    "source": "Natural Earth populated places 10m",
+    "geometrySha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "geographyStatus": "SOURCE PROJECTION VERIFIED",
+    "runs": [
+      {
+        "style": "school",
+        "wrong": {
+          "sourcePoint": [
+            702.5,
+            664.96
+          ],
+          "screenPoint": [
+            739.2182439271255,
+            726.7215875506074
+          ],
+          "candidates": [
+            "city-1"
+          ],
+          "order": [],
+          "selectedId": "city-1",
+          "correct": false
+        },
+        "correct": [
+          {
+            "sourcePoint": [
+              508.64,
+              894.97
+            ],
+            "screenPoint": [
+              630.6429089068827,
+              855.5434838056681
+            ],
+            "candidates": [
+              "city-7"
+            ],
+            "order": [],
+            "selectedId": "city-7",
+            "correct": true
+          },
+          {
+            "sourcePoint": [
+              510.64,
+              894.97
+            ],
+            "screenPoint": [
+              631.7630506072875,
+              855.5434838056681
+            ],
+            "candidates": [
+              "city-7"
+            ],
+            "order": [],
+            "selectedId": "city-7",
+            "correct": true
+          }
+        ],
+        "writing": {
+          "wrongRejected": true,
+          "nameAccepted": true,
+          "duplicateCreditBlocked": true
+        }
+      },
+      {
+        "style": "discovery",
+        "wrong": {
+          "sourcePoint": [
+            702.5,
+            664.96
+          ],
+          "screenPoint": [
+            739.2182439271255,
+            726.7215875506074
+          ],
+          "candidates": [
+            "city-1"
+          ],
+          "order": [],
+          "selectedId": "city-1",
+          "correct": false
+        },
+        "correct": [
+          {
+            "sourcePoint": [
+              508.64,
+              894.97
+            ],
+            "screenPoint": [
+              630.6429089068827,
+              855.5434838056681
+            ],
+            "candidates": [
+              "city-7"
+            ],
+            "order": [],
+            "selectedId": "city-7",
+            "correct": true
+          },
+          {
+            "sourcePoint": [
+              510.64,
+              894.97
+            ],
+            "screenPoint": [
+              631.7630506072875,
+              855.5434838056681
+            ],
+            "candidates": [
+              "city-7"
+            ],
+            "order": [],
+            "selectedId": "city-7",
+            "correct": true
+          }
+        ],
+        "writing": {
+          "wrongRejected": true,
+          "nameAccepted": true,
+          "duplicateCreditBlocked": true
+        }
+      }
+    ],
+    "status": "PASS executed pointer/writing fixtures in both themes"
+  },
+  {
+    "id": "city-8",
+    "name": "Pisa",
+    "kind": "city",
+    "featureClass": "point",
+    "chapter": "city2",
+    "source": "Natural Earth populated places 10m",
+    "geometrySha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "geographyStatus": "SOURCE PROJECTION VERIFIED",
+    "runs": [
+      {
+        "style": "school",
+        "wrong": {
+          "sourcePoint": [
+            702.5,
+            664.96
+          ],
+          "screenPoint": [
+            739.2182439271255,
+            726.7215875506074
+          ],
+          "candidates": [
+            "city-1"
+          ],
+          "order": [],
+          "selectedId": "city-1",
+          "correct": false
+        },
+        "correct": [
+          {
+            "sourcePoint": [
+              346.5,
+              464.27
+            ],
+            "screenPoint": [
+              539.8330212550608,
+              614.3209686234818
+            ],
+            "candidates": [
+              "city-8"
+            ],
+            "order": [],
+            "selectedId": "city-8",
+            "correct": true
+          },
+          {
+            "sourcePoint": [
+              348.5,
+              464.27
+            ],
+            "screenPoint": [
+              540.9531629554656,
+              614.3209686234818
+            ],
+            "candidates": [
+              "city-8"
+            ],
+            "order": [],
+            "selectedId": "city-8",
+            "correct": true
+          }
+        ],
+        "writing": {
+          "wrongRejected": true,
+          "nameAccepted": true,
+          "duplicateCreditBlocked": true
+        }
+      },
+      {
+        "style": "discovery",
+        "wrong": {
+          "sourcePoint": [
+            702.5,
+            664.96
+          ],
+          "screenPoint": [
+            739.2182439271255,
+            726.7215875506074
+          ],
+          "candidates": [
+            "city-1"
+          ],
+          "order": [],
+          "selectedId": "city-1",
+          "correct": false
+        },
+        "correct": [
+          {
+            "sourcePoint": [
+              346.5,
+              464.27
+            ],
+            "screenPoint": [
+              539.8330212550608,
+              614.3209686234818
+            ],
+            "candidates": [
+              "city-8"
+            ],
+            "order": [],
+            "selectedId": "city-8",
+            "correct": true
+          },
+          {
+            "sourcePoint": [
+              348.5,
+              464.27
+            ],
+            "screenPoint": [
+              540.9531629554656,
+              614.3209686234818
+            ],
+            "candidates": [
+              "city-8"
+            ],
+            "order": [],
+            "selectedId": "city-8",
+            "correct": true
+          }
+        ],
+        "writing": {
+          "wrongRejected": true,
+          "nameAccepted": true,
+          "duplicateCreditBlocked": true
+        }
+      }
+    ],
+    "status": "PASS executed pointer/writing fixtures in both themes"
+  },
+  {
+    "id": "city-9",
+    "name": "Rome",
+    "kind": "city",
+    "featureClass": "point",
+    "chapter": "city2",
+    "source": "Natural Earth populated places 10m",
+    "geometrySha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "geographyStatus": "SOURCE PROJECTION VERIFIED",
+    "runs": [
+      {
+        "style": "school",
+        "wrong": {
+          "sourcePoint": [
+            702.5,
+            664.96
+          ],
+          "screenPoint": [
+            739.2182439271255,
+            726.7215875506074
+          ],
+          "candidates": [
+            "city-1"
+          ],
+          "order": [],
+          "selectedId": "city-1",
+          "correct": false
+        },
+        "correct": [
+          {
+            "sourcePoint": [
+              460.97,
+              604.61
+            ],
+            "screenPoint": [
+              603.9443314777328,
+              692.9213117408907
+            ],
+            "candidates": [
+              "city-9",
+              "area-o"
+            ],
+            "order": [
+              "area-o",
+              "city-9"
+            ],
+            "selectedId": "city-9",
+            "correct": true
+          },
+          {
+            "sourcePoint": [
+              462.97,
+              604.61
+            ],
+            "screenPoint": [
+              605.0644731781376,
+              692.9213117408907
+            ],
+            "candidates": [
+              "city-9",
+              "area-o"
+            ],
+            "order": [
+              "area-o",
+              "city-9"
+            ],
+            "selectedId": "city-9",
+            "correct": true
+          }
+        ],
+        "writing": {
+          "wrongRejected": true,
+          "nameAccepted": true,
+          "duplicateCreditBlocked": true
+        }
+      },
+      {
+        "style": "discovery",
+        "wrong": {
+          "sourcePoint": [
+            702.5,
+            664.96
+          ],
+          "screenPoint": [
+            739.2182439271255,
+            726.7215875506074
+          ],
+          "candidates": [
+            "city-1"
+          ],
+          "order": [],
+          "selectedId": "city-1",
+          "correct": false
+        },
+        "correct": [
+          {
+            "sourcePoint": [
+              460.97,
+              604.61
+            ],
+            "screenPoint": [
+              603.9443314777328,
+              692.9213117408907
+            ],
+            "candidates": [
+              "city-9",
+              "area-o"
+            ],
+            "order": [
+              "city-9",
+              "area-o"
+            ],
+            "selectedId": "city-9",
+            "correct": true
+          },
+          {
+            "sourcePoint": [
+              462.97,
+              604.61
+            ],
+            "screenPoint": [
+              605.0644731781376,
+              692.9213117408907
+            ],
+            "candidates": [
+              "city-9",
+              "area-o"
+            ],
+            "order": [
+              "city-9",
+              "area-o"
+            ],
+            "selectedId": "city-9",
+            "correct": true
+          }
+        ],
+        "writing": {
+          "wrongRejected": true,
+          "nameAccepted": true,
+          "duplicateCreditBlocked": true
+        }
+      }
+    ],
+    "status": "PASS executed pointer/writing fixtures in both themes"
+  },
+  {
+    "id": "city-10",
+    "name": "Turijn",
+    "kind": "city",
+    "featureClass": "point",
+    "chapter": "city2",
+    "source": "Natural Earth populated places 10m",
+    "geometrySha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "geographyStatus": "SOURCE PROJECTION VERIFIED",
+    "runs": [
+      {
+        "style": "school",
+        "wrong": {
+          "sourcePoint": [
+            702.5,
+            664.96
+          ],
+          "screenPoint": [
+            739.2182439271255,
+            726.7215875506074
+          ],
+          "candidates": [
+            "city-1"
+          ],
+          "order": [],
+          "selectedId": "city-1",
+          "correct": false
+        },
+        "correct": [
+          {
+            "sourcePoint": [
+              196.24,
+              360.18
+            ],
+            "screenPoint": [
+              455.67677530364375,
+              556.023193825911
+            ],
+            "candidates": [
+              "city-10"
+            ],
+            "order": [],
+            "selectedId": "city-10",
+            "correct": true
+          },
+          {
+            "sourcePoint": [
+              198.24,
+              360.18
+            ],
+            "screenPoint": [
+              456.7969170040486,
+              556.023193825911
+            ],
+            "candidates": [
+              "city-10"
+            ],
+            "order": [],
+            "selectedId": "city-10",
+            "correct": true
+          }
+        ],
+        "writing": {
+          "wrongRejected": true,
+          "nameAccepted": true,
+          "duplicateCreditBlocked": true
+        }
+      },
+      {
+        "style": "discovery",
+        "wrong": {
+          "sourcePoint": [
+            702.5,
+            664.96
+          ],
+          "screenPoint": [
+            739.2182439271255,
+            726.7215875506074
+          ],
+          "candidates": [
+            "city-1"
+          ],
+          "order": [],
+          "selectedId": "city-1",
+          "correct": false
+        },
+        "correct": [
+          {
+            "sourcePoint": [
+              196.24,
+              360.18
+            ],
+            "screenPoint": [
+              455.67677530364375,
+              556.023193825911
+            ],
+            "candidates": [
+              "city-10"
+            ],
+            "order": [],
+            "selectedId": "city-10",
+            "correct": true
+          },
+          {
+            "sourcePoint": [
+              198.24,
+              360.18
+            ],
+            "screenPoint": [
+              456.7969170040486,
+              556.023193825911
+            ],
+            "candidates": [
+              "city-10"
+            ],
+            "order": [],
+            "selectedId": "city-10",
+            "correct": true
+          }
+        ],
+        "writing": {
+          "wrongRejected": true,
+          "nameAccepted": true,
+          "duplicateCreditBlocked": true
+        }
+      }
+    ],
+    "status": "PASS executed pointer/writing fixtures in both themes"
+  },
+  {
+    "id": "city-11",
+    "name": "Venetië",
+    "kind": "city",
+    "featureClass": "point",
+    "chapter": "city2",
+    "source": "Natural Earth populated places 10m",
+    "geometrySha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "geographyStatus": "SOURCE PROJECTION VERIFIED",
+    "runs": [
+      {
+        "style": "school",
+        "wrong": {
+          "sourcePoint": [
+            702.5,
+            664.96
+          ],
+          "screenPoint": [
+            739.2182439271255,
+            726.7215875506074
+          ],
+          "candidates": [
+            "city-1"
+          ],
+          "order": [],
+          "selectedId": "city-1",
+          "correct": false
+        },
+        "correct": [
+          {
+            "sourcePoint": [
+              452.92,
+              331.97
+            ],
+            "screenPoint": [
+              599.4357611336033,
+              540.2235951417005
+            ],
+            "candidates": [
+              "city-11"
+            ],
+            "order": [],
+            "selectedId": "city-11",
+            "correct": true
+          },
+          {
+            "sourcePoint": [
+              454.92,
+              331.97
+            ],
+            "screenPoint": [
+              600.5559028340082,
+              540.2235951417005
+            ],
+            "candidates": [
+              "city-11"
+            ],
+            "order": [],
+            "selectedId": "city-11",
+            "correct": true
+          }
+        ],
+        "writing": {
+          "wrongRejected": true,
+          "nameAccepted": true,
+          "duplicateCreditBlocked": true
+        }
+      },
+      {
+        "style": "discovery",
+        "wrong": {
+          "sourcePoint": [
+            702.5,
+            664.96
+          ],
+          "screenPoint": [
+            739.2182439271255,
+            726.7215875506074
+          ],
+          "candidates": [
+            "city-1"
+          ],
+          "order": [],
+          "selectedId": "city-1",
+          "correct": false
+        },
+        "correct": [
+          {
+            "sourcePoint": [
+              452.92,
+              331.97
+            ],
+            "screenPoint": [
+              599.4357611336033,
+              540.2235951417005
+            ],
+            "candidates": [
+              "city-11"
+            ],
+            "order": [],
+            "selectedId": "city-11",
+            "correct": true
+          },
+          {
+            "sourcePoint": [
+              454.92,
+              331.97
+            ],
+            "screenPoint": [
+              600.5559028340082,
+              540.2235951417005
+            ],
+            "candidates": [
+              "city-11"
+            ],
+            "order": [],
+            "selectedId": "city-11",
+            "correct": true
+          }
+        ],
+        "writing": {
+          "wrongRejected": true,
+          "nameAccepted": true,
+          "duplicateCreditBlocked": true
+        }
+      }
+    ],
+    "status": "PASS executed pointer/writing fixtures in both themes"
+  },
+  {
+    "id": "city-12",
+    "name": "Verona",
+    "kind": "city",
+    "featureClass": "point",
+    "chapter": "city2",
+    "source": "Natural Earth populated places 10m",
+    "geometrySha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "geographyStatus": "SOURCE PROJECTION VERIFIED",
+    "runs": [
+      {
+        "style": "school",
+        "wrong": {
+          "sourcePoint": [
+            702.5,
+            664.96
+          ],
+          "screenPoint": [
+            739.2182439271255,
+            726.7215875506074
+          ],
+          "candidates": [
+            "city-1"
+          ],
+          "order": [],
+          "selectedId": "city-1",
+          "correct": false
+        },
+        "correct": [
+          {
+            "sourcePoint": [
+              378.95,
+              331.84
+            ],
+            "screenPoint": [
+              558.0073203441295,
+              540.1507859311741
+            ],
+            "candidates": [
+              "city-12"
+            ],
+            "order": [],
+            "selectedId": "city-12",
+            "correct": true
+          },
+          {
+            "sourcePoint": [
+              380.95,
+              331.84
+            ],
+            "screenPoint": [
+              559.1274620445345,
+              540.1507859311741
+            ],
+            "candidates": [
+              "city-12"
+            ],
+            "order": [],
+            "selectedId": "city-12",
+            "correct": true
+          }
+        ],
+        "writing": {
+          "wrongRejected": true,
+          "nameAccepted": true,
+          "duplicateCreditBlocked": true
+        }
+      },
+      {
+        "style": "discovery",
+        "wrong": {
+          "sourcePoint": [
+            702.5,
+            664.96
+          ],
+          "screenPoint": [
+            739.2182439271255,
+            726.7215875506074
+          ],
+          "candidates": [
+            "city-1"
+          ],
+          "order": [],
+          "selectedId": "city-1",
+          "correct": false
+        },
+        "correct": [
+          {
+            "sourcePoint": [
+              378.95,
+              331.84
+            ],
+            "screenPoint": [
+              558.0073203441295,
+              540.1507859311741
+            ],
+            "candidates": [
+              "city-12"
+            ],
+            "order": [],
+            "selectedId": "city-12",
+            "correct": true
+          },
+          {
+            "sourcePoint": [
+              380.95,
+              331.84
+            ],
+            "screenPoint": [
+              559.1274620445345,
+              540.1507859311741
+            ],
+            "candidates": [
+              "city-12"
+            ],
+            "order": [],
+            "selectedId": "city-12",
+            "correct": true
+          }
+        ],
+        "writing": {
+          "wrongRejected": true,
+          "nameAccepted": true,
+          "duplicateCreditBlocked": true
+        }
+      }
+    ],
+    "status": "PASS executed pointer/writing fixtures in both themes"
+  },
+  {
+    "id": "city-13",
+    "name": "Varese",
+    "kind": "city",
+    "featureClass": "point",
+    "chapter": "city3",
+    "source": "GeoNames",
+    "geometrySha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "geographyStatus": "SOURCE PROJECTION VERIFIED",
+    "runs": [
+      {
+        "style": "school",
+        "wrong": {
+          "sourcePoint": [
+            702.5,
+            664.96
+          ],
+          "screenPoint": [
+            739.2182439271255,
+            726.7215875506074
+          ],
+          "candidates": [
+            "city-1"
+          ],
+          "order": [],
+          "selectedId": "city-1",
+          "correct": false
+        },
+        "correct": [
+          {
+            "sourcePoint": [
+              259.88,
+              302.57
+            ],
+            "screenPoint": [
+              491.31968421052636,
+              523.7575121457489
+            ],
+            "candidates": [
+              "city-5",
+              "city-13"
+            ],
+            "order": [
+              "city-5",
+              "city-13"
+            ],
+            "selectedId": "city-13",
+            "correct": true
+          },
+          {
+            "sourcePoint": [
+              261.88,
+              302.57
+            ],
+            "screenPoint": [
+              492.4398259109312,
+              523.7575121457489
+            ],
+            "candidates": [
+              "city-5",
+              "city-13"
+            ],
+            "order": [
+              "city-5",
+              "city-13"
+            ],
+            "selectedId": "city-13",
+            "correct": true
+          }
+        ],
+        "writing": {
+          "wrongRejected": true,
+          "nameAccepted": true,
+          "duplicateCreditBlocked": true
+        }
+      },
+      {
+        "style": "discovery",
+        "wrong": {
+          "sourcePoint": [
+            702.5,
+            664.96
+          ],
+          "screenPoint": [
+            739.2182439271255,
+            726.7215875506074
+          ],
+          "candidates": [
+            "city-1"
+          ],
+          "order": [],
+          "selectedId": "city-1",
+          "correct": false
+        },
+        "correct": [
+          {
+            "sourcePoint": [
+              259.88,
+              302.57
+            ],
+            "screenPoint": [
+              491.31968421052636,
+              523.7575121457489
+            ],
+            "candidates": [
+              "city-5",
+              "city-13"
+            ],
+            "order": [
+              "city-5",
+              "city-13"
+            ],
+            "selectedId": "city-13",
+            "correct": true
+          },
+          {
+            "sourcePoint": [
+              261.88,
+              302.57
+            ],
+            "screenPoint": [
+              492.4398259109312,
+              523.7575121457489
+            ],
+            "candidates": [
+              "city-5",
+              "city-13"
+            ],
+            "order": [
+              "city-13",
+              "city-5"
+            ],
+            "selectedId": "city-13",
+            "correct": true
+          }
+        ],
+        "writing": {
+          "wrongRejected": true,
+          "nameAccepted": true,
+          "duplicateCreditBlocked": true
+        }
+      }
+    ],
+    "status": "PASS executed pointer/writing fixtures in both themes"
+  },
+  {
+    "id": "city-14",
+    "name": "Cagliari",
+    "kind": "city",
+    "featureClass": "point",
+    "chapter": "city3",
+    "source": "Natural Earth populated places 10m",
+    "geometrySha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "geographyStatus": "SOURCE PROJECTION VERIFIED",
+    "runs": [
+      {
+        "style": "school",
+        "wrong": {
+          "sourcePoint": [
+            702.5,
+            664.96
+          ],
+          "screenPoint": [
+            739.2182439271255,
+            726.7215875506074
+          ],
+          "candidates": [
+            "city-1"
+          ],
+          "order": [],
+          "selectedId": "city-1",
+          "correct": false
+        },
+        "correct": [
+          {
+            "sourcePoint": [
+              275.22,
+              810.63
+            ],
+            "screenPoint": [
+              499.91117105263163,
+              808.3071082995953
+            ],
+            "candidates": [
+              "city-14"
+            ],
+            "order": [],
+            "selectedId": "city-14",
+            "correct": true
+          },
+          {
+            "sourcePoint": [
+              277.22,
+              810.63
+            ],
+            "screenPoint": [
+              501.03131275303645,
+              808.3071082995953
+            ],
+            "candidates": [
+              "city-14"
+            ],
+            "order": [],
+            "selectedId": "city-14",
+            "correct": true
+          }
+        ],
+        "writing": {
+          "wrongRejected": true,
+          "nameAccepted": true,
+          "duplicateCreditBlocked": true
+        }
+      },
+      {
+        "style": "discovery",
+        "wrong": {
+          "sourcePoint": [
+            702.5,
+            664.96
+          ],
+          "screenPoint": [
+            739.2182439271255,
+            726.7215875506074
+          ],
+          "candidates": [
+            "city-1"
+          ],
+          "order": [],
+          "selectedId": "city-1",
+          "correct": false
+        },
+        "correct": [
+          {
+            "sourcePoint": [
+              275.22,
+              810.63
+            ],
+            "screenPoint": [
+              499.91117105263163,
+              808.3071082995953
+            ],
+            "candidates": [
+              "city-14"
+            ],
+            "order": [],
+            "selectedId": "city-14",
+            "correct": true
+          },
+          {
+            "sourcePoint": [
+              277.22,
+              810.63
+            ],
+            "screenPoint": [
+              501.03131275303645,
+              808.3071082995953
+            ],
+            "candidates": [
+              "city-14"
+            ],
+            "order": [],
+            "selectedId": "city-14",
+            "correct": true
+          }
+        ],
+        "writing": {
+          "wrongRejected": true,
+          "nameAccepted": true,
+          "duplicateCreditBlocked": true
+        }
+      }
+    ],
+    "status": "PASS executed pointer/writing fixtures in both themes"
+  },
+  {
+    "id": "city-15",
+    "name": "Catania",
+    "kind": "city",
+    "featureClass": "point",
+    "chapter": "city3",
+    "source": "Natural Earth populated places 10m",
+    "geometrySha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "geographyStatus": "SOURCE PROJECTION VERIFIED",
+    "runs": [
+      {
+        "style": "school",
+        "wrong": {
+          "sourcePoint": [
+            702.5,
+            664.96
+          ],
+          "screenPoint": [
+            739.2182439271255,
+            726.7215875506074
+          ],
+          "candidates": [
+            "city-1"
+          ],
+          "order": [],
+          "selectedId": "city-1",
+          "correct": false
+        },
+        "correct": [
+          {
+            "sourcePoint": [
+              603.9,
+              943.25
+            ],
+            "screenPoint": [
+              683.995258097166,
+              882.5837044534413
+            ],
+            "candidates": [
+              "city-15",
+              "area-f"
+            ],
+            "order": [
+              "area-f",
+              "city-15"
+            ],
+            "selectedId": "city-15",
+            "correct": true
+          },
+          {
+            "sourcePoint": [
+              605.9,
+              943.25
+            ],
+            "screenPoint": [
+              685.115399797571,
+              882.5837044534413
+            ],
+            "candidates": [
+              "city-15",
+              "area-f"
+            ],
+            "order": [
+              "area-f",
+              "city-15"
+            ],
+            "selectedId": "city-15",
+            "correct": true
+          }
+        ],
+        "writing": {
+          "wrongRejected": true,
+          "nameAccepted": true,
+          "duplicateCreditBlocked": true
+        }
+      },
+      {
+        "style": "discovery",
+        "wrong": {
+          "sourcePoint": [
+            702.5,
+            664.96
+          ],
+          "screenPoint": [
+            739.2182439271255,
+            726.7215875506074
+          ],
+          "candidates": [
+            "city-1"
+          ],
+          "order": [],
+          "selectedId": "city-1",
+          "correct": false
+        },
+        "correct": [
+          {
+            "sourcePoint": [
+              603.9,
+              943.25
+            ],
+            "screenPoint": [
+              683.995258097166,
+              882.5837044534413
+            ],
+            "candidates": [
+              "city-15",
+              "area-f"
+            ],
+            "order": [
+              "city-15",
+              "area-f"
+            ],
+            "selectedId": "city-15",
+            "correct": true
+          },
+          {
+            "sourcePoint": [
+              605.9,
+              943.25
+            ],
+            "screenPoint": [
+              685.115399797571,
+              882.5837044534413
+            ],
+            "candidates": [
+              "city-15",
+              "area-f"
+            ],
+            "order": [
+              "area-f",
+              "city-15"
+            ],
+            "selectedId": "city-15",
+            "correct": true
+          }
+        ],
+        "writing": {
+          "wrongRejected": true,
+          "nameAccepted": true,
+          "duplicateCreditBlocked": true
+        }
+      }
+    ],
+    "status": "PASS executed pointer/writing fixtures in both themes"
+  },
+  {
+    "id": "city-16",
+    "name": "Catanzaro",
+    "kind": "city",
+    "featureClass": "point",
+    "chapter": "city3",
+    "source": "Natural Earth populated places 10m",
+    "geometrySha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "geographyStatus": "SOURCE PROJECTION VERIFIED",
+    "runs": [
+      {
+        "style": "school",
+        "wrong": {
+          "sourcePoint": [
+            702.5,
+            664.96
+          ],
+          "screenPoint": [
+            739.2182439271255,
+            726.7215875506074
+          ],
+          "candidates": [
+            "city-1"
+          ],
+          "order": [],
+          "selectedId": "city-1",
+          "correct": false
+        },
+        "correct": [
+          {
+            "sourcePoint": [
+              687.5,
+              835.42
+            ],
+            "screenPoint": [
+              730.8171811740891,
+              822.1912646761134
+            ],
+            "candidates": [
+              "city-16"
+            ],
+            "order": [],
+            "selectedId": "city-16",
+            "correct": true
+          },
+          {
+            "sourcePoint": [
+              689.5,
+              835.42
+            ],
+            "screenPoint": [
+              731.9373228744939,
+              822.1912646761134
+            ],
+            "candidates": [
+              "city-16"
+            ],
+            "order": [],
+            "selectedId": "city-16",
+            "correct": true
+          }
+        ],
+        "writing": {
+          "wrongRejected": true,
+          "nameAccepted": true,
+          "duplicateCreditBlocked": true
+        }
+      },
+      {
+        "style": "discovery",
+        "wrong": {
+          "sourcePoint": [
+            702.5,
+            664.96
+          ],
+          "screenPoint": [
+            739.2182439271255,
+            726.7215875506074
+          ],
+          "candidates": [
+            "city-1"
+          ],
+          "order": [],
+          "selectedId": "city-1",
+          "correct": false
+        },
+        "correct": [
+          {
+            "sourcePoint": [
+              687.5,
+              835.42
+            ],
+            "screenPoint": [
+              730.8171811740891,
+              822.1912646761134
+            ],
+            "candidates": [
+              "city-16"
+            ],
+            "order": [],
+            "selectedId": "city-16",
+            "correct": true
+          },
+          {
+            "sourcePoint": [
+              689.5,
+              835.42
+            ],
+            "screenPoint": [
+              731.9373228744939,
+              822.1912646761134
+            ],
+            "candidates": [
+              "city-16"
+            ],
+            "order": [],
+            "selectedId": "city-16",
+            "correct": true
+          }
+        ],
+        "writing": {
+          "wrongRejected": true,
+          "nameAccepted": true,
+          "duplicateCreditBlocked": true
+        }
+      }
+    ],
+    "status": "PASS executed pointer/writing fixtures in both themes"
+  },
+  {
+    "id": "city-17",
+    "name": "Foggia",
+    "kind": "city",
+    "featureClass": "point",
+    "chapter": "city3",
+    "source": "Natural Earth populated places 10m",
+    "geometrySha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "geographyStatus": "SOURCE PROJECTION VERIFIED",
+    "runs": [
+      {
+        "style": "school",
+        "wrong": {
+          "sourcePoint": [
+            702.5,
+            664.96
+          ],
+          "screenPoint": [
+            739.2182439271255,
+            726.7215875506074
+          ],
+          "candidates": [
+            "city-1"
+          ],
+          "order": [],
+          "selectedId": "city-1",
+          "correct": false
+        },
+        "correct": [
+          {
+            "sourcePoint": [
+              630.3,
+              638.29
+            ],
+            "screenPoint": [
+              698.7811285425101,
+              711.7844979757085
+            ],
+            "candidates": [
+              "city-17"
+            ],
+            "order": [],
+            "selectedId": "city-17",
+            "correct": true
+          },
+          {
+            "sourcePoint": [
+              632.3,
+              638.29
+            ],
+            "screenPoint": [
+              699.901270242915,
+              711.7844979757085
+            ],
+            "candidates": [
+              "city-17"
+            ],
+            "order": [],
+            "selectedId": "city-17",
+            "correct": true
+          }
+        ],
+        "writing": {
+          "wrongRejected": true,
+          "nameAccepted": true,
+          "duplicateCreditBlocked": true
+        }
+      },
+      {
+        "style": "discovery",
+        "wrong": {
+          "sourcePoint": [
+            702.5,
+            664.96
+          ],
+          "screenPoint": [
+            739.2182439271255,
+            726.7215875506074
+          ],
+          "candidates": [
+            "city-1"
+          ],
+          "order": [],
+          "selectedId": "city-1",
+          "correct": false
+        },
+        "correct": [
+          {
+            "sourcePoint": [
+              630.3,
+              638.29
+            ],
+            "screenPoint": [
+              698.7811285425101,
+              711.7844979757085
+            ],
+            "candidates": [
+              "city-17"
+            ],
+            "order": [],
+            "selectedId": "city-17",
+            "correct": true
+          },
+          {
+            "sourcePoint": [
+              632.3,
+              638.29
+            ],
+            "screenPoint": [
+              699.901270242915,
+              711.7844979757085
+            ],
+            "candidates": [
+              "city-17"
+            ],
+            "order": [],
+            "selectedId": "city-17",
+            "correct": true
+          }
+        ],
+        "writing": {
+          "wrongRejected": true,
+          "nameAccepted": true,
+          "duplicateCreditBlocked": true
+        }
+      }
+    ],
+    "status": "PASS executed pointer/writing fixtures in both themes"
+  },
+  {
+    "id": "city-18",
+    "name": "La Spezia",
+    "kind": "city",
+    "featureClass": "point",
+    "chapter": "city3",
+    "source": "GeoNames",
+    "geometrySha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "geographyStatus": "SOURCE PROJECTION VERIFIED",
+    "runs": [
+      {
+        "style": "school",
+        "wrong": {
+          "sourcePoint": [
+            702.5,
+            664.96
+          ],
+          "screenPoint": [
+            739.2182439271255,
+            726.7215875506074
+          ],
+          "candidates": [
+            "city-1"
+          ],
+          "order": [],
+          "selectedId": "city-1",
+          "correct": false
+        },
+        "correct": [
+          {
+            "sourcePoint": [
+              314.81,
+              434.82
+            ],
+            "screenPoint": [
+              522.0843760121458,
+              597.8268820850203
+            ],
+            "candidates": [
+              "city-18"
+            ],
+            "order": [],
+            "selectedId": "city-18",
+            "correct": true
+          },
+          {
+            "sourcePoint": [
+              316.81,
+              434.82
+            ],
+            "screenPoint": [
+              523.2045177125506,
+              597.8268820850203
+            ],
+            "candidates": [
+              "city-18"
+            ],
+            "order": [],
+            "selectedId": "city-18",
+            "correct": true
+          }
+        ],
+        "writing": {
+          "wrongRejected": true,
+          "nameAccepted": true,
+          "duplicateCreditBlocked": true
+        }
+      },
+      {
+        "style": "discovery",
+        "wrong": {
+          "sourcePoint": [
+            702.5,
+            664.96
+          ],
+          "screenPoint": [
+            739.2182439271255,
+            726.7215875506074
+          ],
+          "candidates": [
+            "city-1"
+          ],
+          "order": [],
+          "selectedId": "city-1",
+          "correct": false
+        },
+        "correct": [
+          {
+            "sourcePoint": [
+              314.81,
+              434.82
+            ],
+            "screenPoint": [
+              522.0843760121458,
+              597.8268820850203
+            ],
+            "candidates": [
+              "city-18"
+            ],
+            "order": [],
+            "selectedId": "city-18",
+            "correct": true
+          },
+          {
+            "sourcePoint": [
+              316.81,
+              434.82
+            ],
+            "screenPoint": [
+              523.2045177125506,
+              597.8268820850203
+            ],
+            "candidates": [
+              "city-18"
+            ],
+            "order": [],
+            "selectedId": "city-18",
+            "correct": true
+          }
+        ],
+        "writing": {
+          "wrongRejected": true,
+          "nameAccepted": true,
+          "duplicateCreditBlocked": true
+        }
+      }
+    ],
+    "status": "PASS executed pointer/writing fixtures in both themes"
+  },
+  {
+    "id": "city-19",
+    "name": "Messina",
+    "kind": "city",
+    "featureClass": "point",
+    "chapter": "city4",
+    "source": "Natural Earth populated places 10m",
+    "geometrySha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "geographyStatus": "SOURCE PROJECTION VERIFIED",
+    "runs": [
+      {
+        "style": "school",
+        "wrong": {
+          "sourcePoint": [
+            702.5,
+            664.96
+          ],
+          "screenPoint": [
+            739.2182439271255,
+            726.7215875506074
+          ],
+          "candidates": [
+            "city-1"
+          ],
+          "order": [],
+          "selectedId": "city-1",
+          "correct": false
+        },
+        "correct": [
+          {
+            "sourcePoint": [
+              629.75,
+              889.31
+            ],
+            "screenPoint": [
+              698.4730895748988,
+              852.3734827935223
+            ],
+            "candidates": [
+              "city-19"
+            ],
+            "order": [],
+            "selectedId": "city-19",
+            "correct": true
+          },
+          {
+            "sourcePoint": [
+              631.75,
+              889.31
+            ],
+            "screenPoint": [
+              699.5932312753037,
+              852.3734827935223
+            ],
+            "candidates": [
+              "city-19"
+            ],
+            "order": [],
+            "selectedId": "city-19",
+            "correct": true
+          }
+        ],
+        "writing": {
+          "wrongRejected": true,
+          "nameAccepted": true,
+          "duplicateCreditBlocked": true
+        }
+      },
+      {
+        "style": "discovery",
+        "wrong": {
+          "sourcePoint": [
+            702.5,
+            664.96
+          ],
+          "screenPoint": [
+            739.2182439271255,
+            726.7215875506074
+          ],
+          "candidates": [
+            "city-1"
+          ],
+          "order": [],
+          "selectedId": "city-1",
+          "correct": false
+        },
+        "correct": [
+          {
+            "sourcePoint": [
+              629.75,
+              889.31
+            ],
+            "screenPoint": [
+              698.4730895748988,
+              852.3734827935223
+            ],
+            "candidates": [
+              "city-19"
+            ],
+            "order": [],
+            "selectedId": "city-19",
+            "correct": true
+          },
+          {
+            "sourcePoint": [
+              631.75,
+              889.31
+            ],
+            "screenPoint": [
+              699.5932312753037,
+              852.3734827935223
+            ],
+            "candidates": [
+              "city-19"
+            ],
+            "order": [],
+            "selectedId": "city-19",
+            "correct": true
+          }
+        ],
+        "writing": {
+          "wrongRejected": true,
+          "nameAccepted": true,
+          "duplicateCreditBlocked": true
+        }
+      }
+    ],
+    "status": "PASS executed pointer/writing fixtures in both themes"
+  },
+  {
+    "id": "city-20",
+    "name": "Modena",
+    "kind": "city",
+    "featureClass": "point",
+    "chapter": "city4",
+    "source": "Natural Earth populated places 10m",
+    "geometrySha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "geographyStatus": "SOURCE PROJECTION VERIFIED",
+    "runs": [
+      {
+        "style": "school",
+        "wrong": {
+          "sourcePoint": [
+            702.5,
+            664.96
+          ],
+          "screenPoint": [
+            739.2182439271255,
+            726.7215875506074
+          ],
+          "candidates": [
+            "city-1"
+          ],
+          "order": [],
+          "selectedId": "city-1",
+          "correct": false
+        },
+        "correct": [
+          {
+            "sourcePoint": [
+              375.1,
+              392.7
+            ],
+            "screenPoint": [
+              555.8510475708503,
+              574.236697874494
+            ],
+            "candidates": [
+              "city-2",
+              "city-20"
+            ],
+            "order": [
+              "city-20",
+              "city-2"
+            ],
+            "selectedId": "city-20",
+            "correct": true
+          },
+          {
+            "sourcePoint": [
+              377.1,
+              392.7
+            ],
+            "screenPoint": [
+              556.9711892712551,
+              574.236697874494
+            ],
+            "candidates": [
+              "city-2",
+              "city-20"
+            ],
+            "order": [
+              "city-20",
+              "city-2"
+            ],
+            "selectedId": "city-20",
+            "correct": true
+          }
+        ],
+        "writing": {
+          "wrongRejected": true,
+          "nameAccepted": true,
+          "duplicateCreditBlocked": true
+        }
+      },
+      {
+        "style": "discovery",
+        "wrong": {
+          "sourcePoint": [
+            702.5,
+            664.96
+          ],
+          "screenPoint": [
+            739.2182439271255,
+            726.7215875506074
+          ],
+          "candidates": [
+            "city-1"
+          ],
+          "order": [],
+          "selectedId": "city-1",
+          "correct": false
+        },
+        "correct": [
+          {
+            "sourcePoint": [
+              375.1,
+              392.7
+            ],
+            "screenPoint": [
+              555.8510475708503,
+              574.236697874494
+            ],
+            "candidates": [
+              "city-2",
+              "city-20"
+            ],
+            "order": [
+              "city-2",
+              "city-20"
+            ],
+            "selectedId": "city-20",
+            "correct": true
+          },
+          {
+            "sourcePoint": [
+              377.1,
+              392.7
+            ],
+            "screenPoint": [
+              556.9711892712551,
+              574.236697874494
+            ],
+            "candidates": [
+              "city-2",
+              "city-20"
+            ],
+            "order": [
+              "city-2",
+              "city-20"
+            ],
+            "selectedId": "city-20",
+            "correct": true
+          }
+        ],
+        "writing": {
+          "wrongRejected": true,
+          "nameAccepted": true,
+          "duplicateCreditBlocked": true
+        }
+      }
+    ],
+    "status": "PASS executed pointer/writing fixtures in both themes"
+  },
+  {
+    "id": "city-21",
+    "name": "Pescara",
+    "kind": "city",
+    "featureClass": "point",
+    "chapter": "city4",
+    "source": "Natural Earth populated places 10m",
+    "geometrySha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "geographyStatus": "SOURCE PROJECTION VERIFIED",
+    "runs": [
+      {
+        "style": "school",
+        "wrong": {
+          "sourcePoint": [
+            702.5,
+            664.96
+          ],
+          "screenPoint": [
+            739.2182439271255,
+            726.7215875506074
+          ],
+          "candidates": [
+            "city-1"
+          ],
+          "order": [],
+          "selectedId": "city-1",
+          "correct": false
+        },
+        "correct": [
+          {
+            "sourcePoint": [
+              556.53,
+              561.68
+            ],
+            "screenPoint": [
+              657.464701923077,
+              668.8774701417004
+            ],
+            "candidates": [
+              "city-21"
+            ],
+            "order": [],
+            "selectedId": "city-21",
+            "correct": true
+          },
+          {
+            "sourcePoint": [
+              558.53,
+              561.68
+            ],
+            "screenPoint": [
+              658.5848436234818,
+              668.8774701417004
+            ],
+            "candidates": [
+              "city-21"
+            ],
+            "order": [],
+            "selectedId": "city-21",
+            "correct": true
+          }
+        ],
+        "writing": {
+          "wrongRejected": true,
+          "nameAccepted": true,
+          "duplicateCreditBlocked": true
+        }
+      },
+      {
+        "style": "discovery",
+        "wrong": {
+          "sourcePoint": [
+            702.5,
+            664.96
+          ],
+          "screenPoint": [
+            739.2182439271255,
+            726.7215875506074
+          ],
+          "candidates": [
+            "city-1"
+          ],
+          "order": [],
+          "selectedId": "city-1",
+          "correct": false
+        },
+        "correct": [
+          {
+            "sourcePoint": [
+              556.53,
+              561.68
+            ],
+            "screenPoint": [
+              657.464701923077,
+              668.8774701417004
+            ],
+            "candidates": [
+              "city-21"
+            ],
+            "order": [],
+            "selectedId": "city-21",
+            "correct": true
+          },
+          {
+            "sourcePoint": [
+              558.53,
+              561.68
+            ],
+            "screenPoint": [
+              658.5848436234818,
+              668.8774701417004
+            ],
+            "candidates": [
+              "city-21"
+            ],
+            "order": [],
+            "selectedId": "city-21",
+            "correct": true
+          }
+        ],
+        "writing": {
+          "wrongRejected": true,
+          "nameAccepted": true,
+          "duplicateCreditBlocked": true
+        }
+      }
+    ],
+    "status": "PASS executed pointer/writing fixtures in both themes"
+  },
+  {
+    "id": "city-22",
+    "name": "Trente",
+    "kind": "city",
+    "featureClass": "point",
+    "chapter": "city4",
+    "source": "Natural Earth populated places 10m",
+    "geometrySha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "geographyStatus": "SOURCE PROJECTION VERIFIED",
+    "runs": [
+      {
+        "style": "school",
+        "wrong": {
+          "sourcePoint": [
+            702.5,
+            664.96
+          ],
+          "screenPoint": [
+            739.2182439271255,
+            726.7215875506074
+          ],
+          "candidates": [
+            "city-1"
+          ],
+          "order": [],
+          "selectedId": "city-1",
+          "correct": false
+        },
+        "correct": [
+          {
+            "sourcePoint": [
+              386.1,
+              282.56
+            ],
+            "screenPoint": [
+              562.011826923077,
+              512.5504944331984
+            ],
+            "candidates": [
+              "city-22"
+            ],
+            "order": [],
+            "selectedId": "city-22",
+            "correct": true
+          },
+          {
+            "sourcePoint": [
+              388.1,
+              282.56
+            ],
+            "screenPoint": [
+              563.1319686234818,
+              512.5504944331984
+            ],
+            "candidates": [
+              "city-22"
+            ],
+            "order": [],
+            "selectedId": "city-22",
+            "correct": true
+          }
+        ],
+        "writing": {
+          "wrongRejected": true,
+          "nameAccepted": true,
+          "duplicateCreditBlocked": true
+        }
+      },
+      {
+        "style": "discovery",
+        "wrong": {
+          "sourcePoint": [
+            702.5,
+            664.96
+          ],
+          "screenPoint": [
+            739.2182439271255,
+            726.7215875506074
+          ],
+          "candidates": [
+            "city-1"
+          ],
+          "order": [],
+          "selectedId": "city-1",
+          "correct": false
+        },
+        "correct": [
+          {
+            "sourcePoint": [
+              386.1,
+              282.56
+            ],
+            "screenPoint": [
+              562.011826923077,
+              512.5504944331984
+            ],
+            "candidates": [
+              "city-22"
+            ],
+            "order": [],
+            "selectedId": "city-22",
+            "correct": true
+          },
+          {
+            "sourcePoint": [
+              388.1,
+              282.56
+            ],
+            "screenPoint": [
+              563.1319686234818,
+              512.5504944331984
+            ],
+            "candidates": [
+              "city-22"
+            ],
+            "order": [],
+            "selectedId": "city-22",
+            "correct": true
+          }
+        ],
+        "writing": {
+          "wrongRejected": true,
+          "nameAccepted": true,
+          "duplicateCreditBlocked": true
+        }
+      }
+    ],
+    "status": "PASS executed pointer/writing fixtures in both themes"
+  },
+  {
+    "id": "city-23",
+    "name": "Triëst",
+    "kind": "city",
+    "featureClass": "point",
+    "chapter": "city4",
+    "source": "Natural Earth populated places 10m",
+    "geometrySha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "geographyStatus": "SOURCE PROJECTION VERIFIED",
+    "runs": [
+      {
+        "style": "school",
+        "wrong": {
+          "sourcePoint": [
+            702.5,
+            664.96
+          ],
+          "screenPoint": [
+            739.2182439271255,
+            726.7215875506074
+          ],
+          "candidates": [
+            "city-1"
+          ],
+          "order": [],
+          "selectedId": "city-1",
+          "correct": false
+        },
+        "correct": [
+          {
+            "sourcePoint": [
+              533.5,
+              315.67
+            ],
+            "screenPoint": [
+              644.566270242915,
+              531.0944402834009
+            ],
+            "candidates": [
+              "city-23"
+            ],
+            "order": [],
+            "selectedId": "city-23",
+            "correct": true
+          },
+          {
+            "sourcePoint": [
+              535.5,
+              315.67
+            ],
+            "screenPoint": [
+              645.6864119433199,
+              531.0944402834009
+            ],
+            "candidates": [
+              "city-23"
+            ],
+            "order": [],
+            "selectedId": "city-23",
+            "correct": true
+          }
+        ],
+        "writing": {
+          "wrongRejected": true,
+          "nameAccepted": true,
+          "duplicateCreditBlocked": true
+        }
+      },
+      {
+        "style": "discovery",
+        "wrong": {
+          "sourcePoint": [
+            702.5,
+            664.96
+          ],
+          "screenPoint": [
+            739.2182439271255,
+            726.7215875506074
+          ],
+          "candidates": [
+            "city-1"
+          ],
+          "order": [],
+          "selectedId": "city-1",
+          "correct": false
+        },
+        "correct": [
+          {
+            "sourcePoint": [
+              533.5,
+              315.67
+            ],
+            "screenPoint": [
+              644.566270242915,
+              531.0944402834009
+            ],
+            "candidates": [
+              "city-23"
+            ],
+            "order": [],
+            "selectedId": "city-23",
+            "correct": true
+          },
+          {
+            "sourcePoint": [
+              535.5,
+              315.67
+            ],
+            "screenPoint": [
+              645.6864119433199,
+              531.0944402834009
+            ],
+            "candidates": [
+              "city-23"
+            ],
+            "order": [],
+            "selectedId": "city-23",
+            "correct": true
+          }
+        ],
+        "writing": {
+          "wrongRejected": true,
+          "nameAccepted": true,
+          "duplicateCreditBlocked": true
+        }
+      }
+    ],
+    "status": "PASS executed pointer/writing fixtures in both themes"
+  },
+  {
+    "id": "area-a",
+    "name": "Sicilië",
+    "kind": "area",
+    "featureClass": "islands",
+    "chapter": "islands",
+    "source": "Natural Earth admin 0 50m",
+    "geometrySha256": "58b1b1e93724fac3339c4f8d2cac067dfaedd60c9c5630a4443d91c380367a5f",
+    "geographyStatus": "SOURCE BASELINE VERIFIED — not fresh GIS certification",
+    "runs": [
+      {
+        "style": "school",
+        "wrong": {
+          "sourcePoint": [
+            282.521004486084,
+            662.9880126953125
+          ],
+          "screenPoint": [
+            504.00025084248443,
+            725.6171349442825
+          ],
+          "candidates": [
+            "area-b"
+          ],
+          "order": [],
+          "selectedId": "area-b",
+          "correct": false
+        },
+        "correct": [
+          {
+            "sourcePoint": [
+              624.2394744873047,
+              888.1609710693359
+            ],
+            "screenPoint": [
+              695.3868048659415,
+              851.7299451834181
+            ],
+            "candidates": [
+              "area-a"
+            ],
+            "order": [],
+            "selectedId": "area-a",
+            "correct": true
+          },
+          {
+            "sourcePoint": [
+              502.19349060058596,
+              894.3519714355468
+            ],
+            "screenPoint": [
+              627.0324069067149,
+              855.1973440221254
+            ],
+            "candidates": [
+              "area-a"
+            ],
+            "order": [],
+            "selectedId": "area-a",
+            "correct": true
+          }
+        ],
+        "writing": {
+          "wrongRejected": true,
+          "nameAccepted": true,
+          "duplicateCreditBlocked": true
+        }
+      },
+      {
+        "style": "discovery",
+        "wrong": {
+          "sourcePoint": [
+            282.521004486084,
+            662.9880126953125
+          ],
+          "screenPoint": [
+            504.00025084248443,
+            725.6171349442825
+          ],
+          "candidates": [
+            "area-b"
+          ],
+          "order": [],
+          "selectedId": "area-b",
+          "correct": false
+        },
+        "correct": [
+          {
+            "sourcePoint": [
+              624.2394744873047,
+              888.1609710693359
+            ],
+            "screenPoint": [
+              695.3868048659415,
+              851.7299451834181
+            ],
+            "candidates": [
+              "area-a"
+            ],
+            "order": [],
+            "selectedId": "area-a",
+            "correct": true
+          },
+          {
+            "sourcePoint": [
+              502.19349060058596,
+              894.3519714355468
+            ],
+            "screenPoint": [
+              627.0324069067149,
+              855.1973440221254
+            ],
+            "candidates": [
+              "area-a"
+            ],
+            "order": [],
+            "selectedId": "area-a",
+            "correct": true
+          }
+        ],
+        "writing": {
+          "wrongRejected": true,
+          "nameAccepted": true,
+          "duplicateCreditBlocked": true
+        }
+      }
+    ],
+    "status": "PASS executed pointer/writing fixtures in both themes"
+  },
+  {
+    "id": "area-b",
+    "name": "Sardinië",
+    "kind": "area",
+    "featureClass": "islands",
+    "chapter": "islands",
+    "source": "Natural Earth admin 0 50m",
+    "geometrySha256": "9012cb0bea87c274ee280c753907d7e0d82561d1a1f34907c70eed67672c10b0",
+    "geographyStatus": "SOURCE BASELINE VERIFIED — not fresh GIS certification",
+    "runs": [
+      {
+        "style": "school",
+        "wrong": {
+          "sourcePoint": [
+            624.2394744873047,
+            888.1609710693359
+          ],
+          "screenPoint": [
+            695.3868048659415,
+            851.7299451834181
+          ],
+          "candidates": [
+            "area-a"
+          ],
+          "order": [],
+          "selectedId": "area-a",
+          "correct": false
+        },
+        "correct": [
+          {
+            "sourcePoint": [
+              282.521004486084,
+              662.9880126953125
+            ],
+            "screenPoint": [
+              504.00025084248443,
+              725.6171349442825
+            ],
+            "candidates": [
+              "area-b"
+            ],
+            "order": [],
+            "selectedId": "area-b",
+            "correct": true
+          },
+          {
+            "sourcePoint": [
+              269.12000274658203,
+              672.0260131835937
+            ],
+            "screenPoint": [
+              496.4947404046773,
+              730.6790555618843
+            ],
+            "candidates": [
+              "area-b"
+            ],
+            "order": [],
+            "selectedId": "area-b",
+            "correct": true
+          }
+        ],
+        "writing": {
+          "wrongRejected": true,
+          "nameAccepted": true,
+          "duplicateCreditBlocked": true
+        }
+      },
+      {
+        "style": "discovery",
+        "wrong": {
+          "sourcePoint": [
+            624.2394744873047,
+            888.1609710693359
+          ],
+          "screenPoint": [
+            695.3868048659415,
+            851.7299451834181
+          ],
+          "candidates": [
+            "area-a"
+          ],
+          "order": [],
+          "selectedId": "area-a",
+          "correct": false
+        },
+        "correct": [
+          {
+            "sourcePoint": [
+              282.521004486084,
+              662.9880126953125
+            ],
+            "screenPoint": [
+              504.00025084248443,
+              725.6171349442825
+            ],
+            "candidates": [
+              "area-b"
+            ],
+            "order": [],
+            "selectedId": "area-b",
+            "correct": true
+          },
+          {
+            "sourcePoint": [
+              269.12000274658203,
+              672.0260131835937
+            ],
+            "screenPoint": [
+              496.4947404046773,
+              730.6790555618843
+            ],
+            "candidates": [
+              "area-b"
+            ],
+            "order": [],
+            "selectedId": "area-b",
+            "correct": true
+          }
+        ],
+        "writing": {
+          "wrongRejected": true,
+          "nameAccepted": true,
+          "duplicateCreditBlocked": true
+        }
+      }
+    ],
+    "status": "PASS executed pointer/writing fixtures in both themes"
+  },
+  {
+    "id": "area-c",
+    "name": "Apennijnen",
+    "kind": "area",
+    "featureClass": "mountains",
+    "chapter": "mountains",
+    "source": "Sourced mountain anchors + pinned Terrarium DEM ridge routing; 10 SVG-unit educational corridor, 2-unit mainland inset. Not a surveyed range boundary.",
+    "geometrySha256": "e5216860fead38464ae54f22fbec0b868e164b9d17e9a978db90be76d8dbdcd2",
+    "geographyStatus": "SOURCE BASELINE VERIFIED — not fresh GIS certification",
+    "runs": [
+      {
+        "style": "school",
+        "wrong": {
+          "sourcePoint": [
+            415.2,
+            243.46841888427736
+          ],
+          "screenPoint": [
+            578.3098886639676,
+            490.6564393619584
+          ],
+          "candidates": [
+            "area-d"
+          ],
+          "order": [],
+          "selectedId": "area-d",
+          "correct": false
+        },
+        "correct": [
+          {
+            "sourcePoint": [
+              340.25,
+              414.7
+            ],
+            "screenPoint": [
+              536.3325784412956,
+              586.5582565789474
+            ],
+            "candidates": [
+              "area-c"
+            ],
+            "order": [],
+            "selectedId": "area-c",
+            "correct": true
+          },
+          {
+            "sourcePoint": [
+              386.75,
+              440.4
+            ],
+            "screenPoint": [
+              562.3758729757085,
+              600.9520774291498
+            ],
+            "candidates": [
+              "area-c"
+            ],
+            "order": [],
+            "selectedId": "area-c",
+            "correct": true
+          }
+        ],
+        "writing": {
+          "wrongRejected": true,
+          "nameAccepted": true,
+          "duplicateCreditBlocked": true
+        }
+      },
+      {
+        "style": "discovery",
+        "wrong": {
+          "sourcePoint": [
+            415.2,
+            243.46841888427736
+          ],
+          "screenPoint": [
+            578.3098886639676,
+            490.6564393619584
+          ],
+          "candidates": [
+            "area-d"
+          ],
+          "order": [],
+          "selectedId": "area-d",
+          "correct": false
+        },
+        "correct": [
+          {
+            "sourcePoint": [
+              340.25,
+              414.7
+            ],
+            "screenPoint": [
+              536.3325784412956,
+              586.5582565789474
+            ],
+            "candidates": [
+              "area-c"
+            ],
+            "order": [],
+            "selectedId": "area-c",
+            "correct": true
+          },
+          {
+            "sourcePoint": [
+              386.75,
+              440.4
+            ],
+            "screenPoint": [
+              562.3758729757085,
+              600.9520774291498
+            ],
+            "candidates": [
+              "area-c"
+            ],
+            "order": [],
+            "selectedId": "area-c",
+            "correct": true
+          }
+        ],
+        "writing": {
+          "wrongRejected": true,
+          "nameAccepted": true,
+          "duplicateCreditBlocked": true
+        }
+      }
+    ],
+    "status": "PASS executed pointer/writing fixtures in both themes"
+  },
+  {
+    "id": "area-d",
+    "name": "Dolomieten",
+    "kind": "area",
+    "featureClass": "mountains",
+    "chapter": "mountains",
+    "source": "Retained schematic practice zone; approximate, not a surveyed boundary",
+    "geometrySha256": "5646706882a943ae84723e52deffb6aae597eb36be58ffd488494c8fc2d4443f",
+    "geographyStatus": "SCHEMATIC — extent not independently certified",
+    "runs": [
+      {
+        "style": "school",
+        "wrong": {
+          "sourcePoint": [
+            340.25,
+            414.7
+          ],
+          "screenPoint": [
+            536.3325784412956,
+            586.5582565789474
+          ],
+          "candidates": [
+            "area-c"
+          ],
+          "order": [],
+          "selectedId": "area-c",
+          "correct": false
+        },
+        "correct": [
+          {
+            "sourcePoint": [
+              415.2,
+              243.46841888427736
+            ],
+            "screenPoint": [
+              578.3098886639676,
+              490.6564393619584
+            ],
+            "candidates": [
+              "area-d"
+            ],
+            "order": [],
+            "selectedId": "area-d",
+            "correct": true
+          },
+          {
+            "sourcePoint": [
+              426,
+              243.46841888427736
+            ],
+            "screenPoint": [
+              584.3586538461539,
+              490.6564393619584
+            ],
+            "candidates": [
+              "area-d"
+            ],
+            "order": [],
+            "selectedId": "area-d",
+            "correct": true
+          }
+        ],
+        "writing": {
+          "wrongRejected": true,
+          "nameAccepted": true,
+          "duplicateCreditBlocked": true
+        }
+      },
+      {
+        "style": "discovery",
+        "wrong": {
+          "sourcePoint": [
+            340.25,
+            414.7
+          ],
+          "screenPoint": [
+            536.3325784412956,
+            586.5582565789474
+          ],
+          "candidates": [
+            "area-c"
+          ],
+          "order": [],
+          "selectedId": "area-c",
+          "correct": false
+        },
+        "correct": [
+          {
+            "sourcePoint": [
+              415.2,
+              243.46841888427736
+            ],
+            "screenPoint": [
+              578.3098886639676,
+              490.6564393619584
+            ],
+            "candidates": [
+              "area-d"
+            ],
+            "order": [],
+            "selectedId": "area-d",
+            "correct": true
+          },
+          {
+            "sourcePoint": [
+              426,
+              243.46841888427736
+            ],
+            "screenPoint": [
+              584.3586538461539,
+              490.6564393619584
+            ],
+            "candidates": [
+              "area-d"
+            ],
+            "order": [],
+            "selectedId": "area-d",
+            "correct": true
+          }
+        ],
+        "writing": {
+          "wrongRejected": true,
+          "nameAccepted": true,
+          "duplicateCreditBlocked": true
+        }
+      }
+    ],
+    "status": "PASS executed pointer/writing fixtures in both themes"
+  },
+  {
+    "id": "area-e",
+    "name": "Vesuvius",
+    "kind": "area",
+    "featureClass": "point",
+    "chapter": "volcanoes",
+    "source": "Smithsonian GVP",
+    "geometrySha256": "8d6d2ae371dcb25d44f84f06b25c9049e11d0ba648ea056fa08ced386042036d",
+    "geographyStatus": "SOURCE PROJECTION VERIFIED",
+    "runs": [
+      {
+        "style": "school",
+        "wrong": {
+          "sourcePoint": [
+            702.5,
+            664.96
+          ],
+          "screenPoint": [
+            739.2182439271255,
+            726.7215875506074
+          ],
+          "candidates": [
+            "city-1"
+          ],
+          "order": [],
+          "selectedId": "city-1",
+          "correct": false
+        },
+        "correct": [
+          {
+            "sourcePoint": [
+              567.93,
+              687.53
+            ],
+            "screenPoint": [
+              663.8495096153847,
+              739.3623866396761
+            ],
+            "candidates": [
+              "city-6",
+              "area-e"
+            ],
+            "order": [
+              "area-e",
+              "city-6"
+            ],
+            "selectedId": "area-e",
+            "correct": true
+          },
+          {
+            "sourcePoint": [
+              569.93,
+              687.53
+            ],
+            "screenPoint": [
+              664.9696513157894,
+              739.3623866396761
+            ],
+            "candidates": [
+              "city-6",
+              "area-e"
+            ],
+            "order": [
+              "area-e",
+              "city-6"
+            ],
+            "selectedId": "area-e",
+            "correct": true
+          }
+        ],
+        "writing": {
+          "wrongRejected": true,
+          "nameAccepted": true,
+          "duplicateCreditBlocked": true
+        }
+      },
+      {
+        "style": "discovery",
+        "wrong": {
+          "sourcePoint": [
+            702.5,
+            664.96
+          ],
+          "screenPoint": [
+            739.2182439271255,
+            726.7215875506074
+          ],
+          "candidates": [
+            "city-1"
+          ],
+          "order": [],
+          "selectedId": "city-1",
+          "correct": false
+        },
+        "correct": [
+          {
+            "sourcePoint": [
+              567.93,
+              687.53
+            ],
+            "screenPoint": [
+              663.8495096153847,
+              739.3623866396761
+            ],
+            "candidates": [
+              "city-6",
+              "area-e"
+            ],
+            "order": [
+              "city-6",
+              "area-e"
+            ],
+            "selectedId": "area-e",
+            "correct": true
+          },
+          {
+            "sourcePoint": [
+              569.93,
+              687.53
+            ],
+            "screenPoint": [
+              664.9696513157894,
+              739.3623866396761
+            ],
+            "candidates": [
+              "city-6",
+              "area-e"
+            ],
+            "order": [
+              "city-6",
+              "area-e"
+            ],
+            "selectedId": "area-e",
+            "correct": true
+          }
+        ],
+        "writing": {
+          "wrongRejected": true,
+          "nameAccepted": true,
+          "duplicateCreditBlocked": true
+        }
+      }
+    ],
+    "status": "PASS executed pointer/writing fixtures in both themes"
+  },
+  {
+    "id": "area-f",
+    "name": "Etna",
+    "kind": "area",
+    "featureClass": "point",
+    "chapter": "volcanoes",
+    "source": "Smithsonian GVP",
+    "geometrySha256": "af4df1b112c06f56a38265a986468e82c8d49b1d3f6266c2b39b3b6e4b12cd9d",
+    "geographyStatus": "SOURCE PROJECTION VERIFIED",
+    "runs": [
+      {
+        "style": "school",
+        "wrong": {
+          "sourcePoint": [
+            702.5,
+            664.96
+          ],
+          "screenPoint": [
+            739.2182439271255,
+            726.7215875506074
+          ],
+          "candidates": [
+            "city-1"
+          ],
+          "order": [],
+          "selectedId": "city-1",
+          "correct": false
+        },
+        "correct": [
+          {
+            "sourcePoint": [
+              599.45,
+              924.15
+            ],
+            "screenPoint": [
+              681.5029428137652,
+              871.8863512145749
+            ],
+            "candidates": [
+              "city-15",
+              "area-f"
+            ],
+            "order": [
+              "area-f",
+              "city-15"
+            ],
+            "selectedId": "area-f",
+            "correct": true
+          },
+          {
+            "sourcePoint": [
+              601.45,
+              924.15
+            ],
+            "screenPoint": [
+              682.6230845141702,
+              871.8863512145749
+            ],
+            "candidates": [
+              "city-15",
+              "area-f"
+            ],
+            "order": [
+              "city-15",
+              "area-f"
+            ],
+            "selectedId": "area-f",
+            "correct": true
+          }
+        ],
+        "writing": {
+          "wrongRejected": true,
+          "nameAccepted": true,
+          "duplicateCreditBlocked": true
+        }
+      },
+      {
+        "style": "discovery",
+        "wrong": {
+          "sourcePoint": [
+            702.5,
+            664.96
+          ],
+          "screenPoint": [
+            739.2182439271255,
+            726.7215875506074
+          ],
+          "candidates": [
+            "city-1"
+          ],
+          "order": [],
+          "selectedId": "city-1",
+          "correct": false
+        },
+        "correct": [
+          {
+            "sourcePoint": [
+              599.45,
+              924.15
+            ],
+            "screenPoint": [
+              681.5029428137652,
+              871.8863512145749
+            ],
+            "candidates": [
+              "city-15",
+              "area-f"
+            ],
+            "order": [
+              "area-f",
+              "city-15"
+            ],
+            "selectedId": "area-f",
+            "correct": true
+          },
+          {
+            "sourcePoint": [
+              601.45,
+              924.15
+            ],
+            "screenPoint": [
+              682.6230845141702,
+              871.8863512145749
+            ],
+            "candidates": [
+              "city-15",
+              "area-f"
+            ],
+            "order": [
+              "city-15",
+              "area-f"
+            ],
+            "selectedId": "area-f",
+            "correct": true
+          }
+        ],
+        "writing": {
+          "wrongRejected": true,
+          "nameAccepted": true,
+          "duplicateCreditBlocked": true
+        }
+      }
+    ],
+    "status": "PASS executed pointer/writing fixtures in both themes"
+  },
+  {
+    "id": "area-g",
+    "name": "de Povlakte",
+    "kind": "area",
+    "featureClass": "regions",
+    "chapter": "regions",
+    "source": "Retained schematic practice zone; approximate, not a surveyed boundary",
+    "geometrySha256": "61472b54bb0bb25c6c4a912d6e1f01fd64b83fd83d3f83487eec861f4bf1c1e9",
+    "geographyStatus": "SCHEMATIC — extent not independently certified",
+    "runs": [
+      {
+        "style": "school",
+        "wrong": {
+          "sourcePoint": [
+            385.7,
+            419.55
+          ],
+          "screenPoint": [
+            561.787798582996,
+            589.2746002024292
+          ],
+          "candidates": [
+            "area-h"
+          ],
+          "order": [],
+          "selectedId": "area-h",
+          "correct": false
+        },
+        "correct": [
+          {
+            "sourcePoint": [
+              335.75,
+              330.42799072265626
+            ],
+            "screenPoint": [
+              533.8122596153846,
+              539.3599606947184
+            ],
+            "candidates": [
+              "area-g"
+            ],
+            "order": [],
+            "selectedId": "area-g",
+            "correct": true
+          },
+          {
+            "sourcePoint": [
+              349,
+              330.42799072265626
+            ],
+            "screenPoint": [
+              541.2331983805668,
+              539.3599606947184
+            ],
+            "candidates": [
+              "area-g"
+            ],
+            "order": [],
+            "selectedId": "area-g",
+            "correct": true
+          }
+        ],
+        "writing": {
+          "wrongRejected": true,
+          "nameAccepted": true,
+          "duplicateCreditBlocked": true
+        }
+      },
+      {
+        "style": "discovery",
+        "wrong": {
+          "sourcePoint": [
+            385.7,
+            419.55
+          ],
+          "screenPoint": [
+            561.787798582996,
+            589.2746002024292
+          ],
+          "candidates": [
+            "area-h"
+          ],
+          "order": [],
+          "selectedId": "area-h",
+          "correct": false
+        },
+        "correct": [
+          {
+            "sourcePoint": [
+              335.75,
+              330.42799072265626
+            ],
+            "screenPoint": [
+              533.8122596153846,
+              539.3599606947184
+            ],
+            "candidates": [
+              "area-g"
+            ],
+            "order": [],
+            "selectedId": "area-g",
+            "correct": true
+          },
+          {
+            "sourcePoint": [
+              349,
+              330.42799072265626
+            ],
+            "screenPoint": [
+              541.2331983805668,
+              539.3599606947184
+            ],
+            "candidates": [
+              "area-g"
+            ],
+            "order": [],
+            "selectedId": "area-g",
+            "correct": true
+          }
+        ],
+        "writing": {
+          "wrongRejected": true,
+          "nameAccepted": true,
+          "duplicateCreditBlocked": true
+        }
+      }
+    ],
+    "status": "PASS executed pointer/writing fixtures in both themes"
+  },
+  {
+    "id": "area-h",
+    "name": "Toscane",
+    "kind": "area",
+    "featureClass": "regions",
+    "chapter": "regions",
+    "source": "Retained schematic practice zone; approximate, not a surveyed boundary",
+    "geometrySha256": "a278f9b7faa61319e19668142dd83ca996f8243d8596f2c01c66bb6ee6f705b9",
+    "geographyStatus": "SCHEMATIC — extent not independently certified",
+    "runs": [
+      {
+        "style": "school",
+        "wrong": {
+          "sourcePoint": [
+            335.75,
+            330.42799072265626
+          ],
+          "screenPoint": [
+            533.8122596153846,
+            539.3599606947184
+          ],
+          "candidates": [
+            "area-g"
+          ],
+          "order": [],
+          "selectedId": "area-g",
+          "correct": false
+        },
+        "correct": [
+          {
+            "sourcePoint": [
+              385.7,
+              419.55
+            ],
+            "screenPoint": [
+              561.787798582996,
+              589.2746002024292
+            ],
+            "candidates": [
+              "area-h"
+            ],
+            "order": [],
+            "selectedId": "area-h",
+            "correct": true
+          },
+          {
+            "sourcePoint": [
+              397.9,
+              419.55
+            ],
+            "screenPoint": [
+              568.6206629554656,
+              589.2746002024292
+            ],
+            "candidates": [
+              "area-h"
+            ],
+            "order": [],
+            "selectedId": "area-h",
+            "correct": true
+          }
+        ],
+        "writing": {
+          "wrongRejected": true,
+          "nameAccepted": true,
+          "duplicateCreditBlocked": true
+        }
+      },
+      {
+        "style": "discovery",
+        "wrong": {
+          "sourcePoint": [
+            335.75,
+            330.42799072265626
+          ],
+          "screenPoint": [
+            533.8122596153846,
+            539.3599606947184
+          ],
+          "candidates": [
+            "area-g"
+          ],
+          "order": [],
+          "selectedId": "area-g",
+          "correct": false
+        },
+        "correct": [
+          {
+            "sourcePoint": [
+              385.7,
+              419.55
+            ],
+            "screenPoint": [
+              561.787798582996,
+              589.2746002024292
+            ],
+            "candidates": [
+              "area-h"
+            ],
+            "order": [],
+            "selectedId": "area-h",
+            "correct": true
+          },
+          {
+            "sourcePoint": [
+              397.9,
+              419.55
+            ],
+            "screenPoint": [
+              568.6206629554656,
+              589.2746002024292
+            ],
+            "candidates": [
+              "area-h"
+            ],
+            "order": [],
+            "selectedId": "area-h",
+            "correct": true
+          }
+        ],
+        "writing": {
+          "wrongRejected": true,
+          "nameAccepted": true,
+          "duplicateCreditBlocked": true
+        }
+      }
+    ],
+    "status": "PASS executed pointer/writing fixtures in both themes"
+  },
+  {
+    "id": "area-i",
+    "name": "Frankrijk",
+    "kind": "area",
+    "featureClass": "countries",
+    "chapter": "countries",
+    "source": "Natural Earth admin 0 50m",
+    "geometrySha256": "0c0710c474c7477c82ac4b5015fe337e2540ab9c4eff7211e4eee6168df8074c",
+    "geographyStatus": "SOURCE BASELINE VERIFIED — not fresh GIS certification",
+    "runs": [
+      {
+        "style": "school",
+        "wrong": {
+          "sourcePoint": [
+            250.83999481201172,
+            159.52049865722657
+          ],
+          "screenPoint": [
+            486.2566408190554,
+            443.63965630766836
+          ],
+          "candidates": [
+            "area-j"
+          ],
+          "order": [],
+          "selectedId": "area-j",
+          "correct": false
+        },
+        "correct": [
+          {
+            "sourcePoint": [
+              39.37700500488281,
+              37.391998291015625
+            ],
+            "screenPoint": [
+              367.8223843314291,
+              375.2390432736169
+            ],
+            "candidates": [
+              "area-i"
+            ],
+            "order": [],
+            "selectedId": "area-i",
+            "correct": true
+          },
+          {
+            "sourcePoint": [
+              78.75401000976562,
+              37.391998291015625
+            ],
+            "screenPoint": [
+              389.8762970029391,
+              375.2390432736169
+            ],
+            "candidates": [
+              "area-i"
+            ],
+            "order": [],
+            "selectedId": "area-i",
+            "correct": true
+          }
+        ],
+        "writing": {
+          "wrongRejected": true,
+          "nameAccepted": true,
+          "duplicateCreditBlocked": true
+        }
+      },
+      {
+        "style": "discovery",
+        "wrong": {
+          "sourcePoint": [
+            250.83999481201172,
+            159.52049865722657
+          ],
+          "screenPoint": [
+            486.2566408190554,
+            443.63965630766836
+          ],
+          "candidates": [
+            "area-j"
+          ],
+          "order": [],
+          "selectedId": "area-j",
+          "correct": false
+        },
+        "correct": [
+          {
+            "sourcePoint": [
+              39.37700500488281,
+              37.391998291015625
+            ],
+            "screenPoint": [
+              367.8223843314291,
+              375.2390432736169
+            ],
+            "candidates": [
+              "area-i"
+            ],
+            "order": [],
+            "selectedId": "area-i",
+            "correct": true
+          },
+          {
+            "sourcePoint": [
+              78.75401000976562,
+              37.391998291015625
+            ],
+            "screenPoint": [
+              389.8762970029391,
+              375.2390432736169
+            ],
+            "candidates": [
+              "area-i"
+            ],
+            "order": [],
+            "selectedId": "area-i",
+            "correct": true
+          }
+        ],
+        "writing": {
+          "wrongRejected": true,
+          "nameAccepted": true,
+          "duplicateCreditBlocked": true
+        }
+      }
+    ],
+    "status": "PASS executed pointer/writing fixtures in both themes"
+  },
+  {
+    "id": "area-j",
+    "name": "Zwitserland",
+    "kind": "area",
+    "featureClass": "countries",
+    "chapter": "countries",
+    "source": "Natural Earth admin 0 50m",
+    "geometrySha256": "2254d8bd01230f8b9382e285ddf2c5a172b6c7158556d7f02279fd2f364cc9cf",
+    "geographyStatus": "SOURCE BASELINE VERIFIED — not fresh GIS certification",
+    "runs": [
+      {
+        "style": "school",
+        "wrong": {
+          "sourcePoint": [
+            39.37700500488281,
+            37.391998291015625
+          ],
+          "screenPoint": [
+            367.8223843314291,
+            375.2390432736169
+          ],
+          "candidates": [
+            "area-i"
+          ],
+          "order": [],
+          "selectedId": "area-i",
+          "correct": false
+        },
+        "correct": [
+          {
+            "sourcePoint": [
+              250.83999481201172,
+              159.52049865722657
+            ],
+            "screenPoint": [
+              486.2566408190554,
+              443.63965630766836
+            ],
+            "candidates": [
+              "area-j"
+            ],
+            "order": [],
+            "selectedId": "area-j",
+            "correct": true
+          },
+          {
+            "sourcePoint": [
+              263.17249450683596,
+              167.01099853515626
+            ],
+            "screenPoint": [
+              493.1637144082568,
+              447.83486694274166
+            ],
+            "candidates": [
+              "area-j"
+            ],
+            "order": [],
+            "selectedId": "area-j",
+            "correct": true
+          }
+        ],
+        "writing": {
+          "wrongRejected": true,
+          "nameAccepted": true,
+          "duplicateCreditBlocked": true
+        }
+      },
+      {
+        "style": "discovery",
+        "wrong": {
+          "sourcePoint": [
+            39.37700500488281,
+            37.391998291015625
+          ],
+          "screenPoint": [
+            367.8223843314291,
+            375.2390432736169
+          ],
+          "candidates": [
+            "area-i"
+          ],
+          "order": [],
+          "selectedId": "area-i",
+          "correct": false
+        },
+        "correct": [
+          {
+            "sourcePoint": [
+              250.83999481201172,
+              159.52049865722657
+            ],
+            "screenPoint": [
+              486.2566408190554,
+              443.63965630766836
+            ],
+            "candidates": [
+              "area-j"
+            ],
+            "order": [],
+            "selectedId": "area-j",
+            "correct": true
+          },
+          {
+            "sourcePoint": [
+              263.17249450683596,
+              167.01099853515626
+            ],
+            "screenPoint": [
+              493.1637144082568,
+              447.83486694274166
+            ],
+            "candidates": [
+              "area-j"
+            ],
+            "order": [],
+            "selectedId": "area-j",
+            "correct": true
+          }
+        ],
+        "writing": {
+          "wrongRejected": true,
+          "nameAccepted": true,
+          "duplicateCreditBlocked": true
+        }
+      }
+    ],
+    "status": "PASS executed pointer/writing fixtures in both themes"
+  },
+  {
+    "id": "area-k",
+    "name": "Oostenrijk",
+    "kind": "area",
+    "featureClass": "countries",
+    "chapter": "countries",
+    "source": "Natural Earth admin 0 50m",
+    "geometrySha256": "f8b46cc7e0d7015bf26a805cad5518da87a69621b80eeff41f454e1038384c48",
+    "geographyStatus": "SOURCE BASELINE VERIFIED — not fresh GIS certification",
+    "runs": [
+      {
+        "style": "school",
+        "wrong": {
+          "sourcePoint": [
+            39.37700500488281,
+            37.391998291015625
+          ],
+          "screenPoint": [
+            367.8223843314291,
+            375.2390432736169
+          ],
+          "candidates": [
+            "area-i"
+          ],
+          "order": [],
+          "selectedId": "area-i",
+          "correct": false
+        },
+        "correct": [
+          {
+            "sourcePoint": [
+              612.7799835205078,
+              67.6754997253418
+            ],
+            "screenPoint": [
+              688.9686780172804,
+              392.1999496690464
+            ],
+            "candidates": [
+              "area-k"
+            ],
+            "order": [],
+            "selectedId": "area-k",
+            "correct": true
+          },
+          {
+            "sourcePoint": [
+              612.7799835205078,
+              77.69099960327148
+            ],
+            "screenPoint": [
+              688.9686780172804,
+              397.80933920088086
+            ],
+            "candidates": [
+              "area-k"
+            ],
+            "order": [],
+            "selectedId": "area-k",
+            "correct": true
+          }
+        ],
+        "writing": {
+          "wrongRejected": true,
+          "nameAccepted": true,
+          "duplicateCreditBlocked": true
+        }
+      },
+      {
+        "style": "discovery",
+        "wrong": {
+          "sourcePoint": [
+            39.37700500488281,
+            37.391998291015625
+          ],
+          "screenPoint": [
+            367.8223843314291,
+            375.2390432736169
+          ],
+          "candidates": [
+            "area-i"
+          ],
+          "order": [],
+          "selectedId": "area-i",
+          "correct": false
+        },
+        "correct": [
+          {
+            "sourcePoint": [
+              612.7799835205078,
+              67.6754997253418
+            ],
+            "screenPoint": [
+              688.9686780172804,
+              392.1999496690464
+            ],
+            "candidates": [
+              "area-k"
+            ],
+            "order": [],
+            "selectedId": "area-k",
+            "correct": true
+          },
+          {
+            "sourcePoint": [
+              612.7799835205078,
+              77.69099960327148
+            ],
+            "screenPoint": [
+              688.9686780172804,
+              397.80933920088086
+            ],
+            "candidates": [
+              "area-k"
+            ],
+            "order": [],
+            "selectedId": "area-k",
+            "correct": true
+          }
+        ],
+        "writing": {
+          "wrongRejected": true,
+          "nameAccepted": true,
+          "duplicateCreditBlocked": true
+        }
+      }
+    ],
+    "status": "PASS executed pointer/writing fixtures in both themes"
+  },
+  {
+    "id": "area-l",
+    "name": "Slovenië",
+    "kind": "area",
+    "featureClass": "countries",
+    "chapter": "countries",
+    "source": "Natural Earth admin 0 50m",
+    "geometrySha256": "65505c7ca54c6e3f31a142ca6edb9510c4cc60887e6f5b82f25508f6a3b04d53",
+    "geographyStatus": "SOURCE BASELINE VERIFIED — not fresh GIS certification",
+    "runs": [
+      {
+        "style": "school",
+        "wrong": {
+          "sourcePoint": [
+            39.37700500488281,
+            37.391998291015625
+          ],
+          "screenPoint": [
+            367.8223843314291,
+            375.2390432736169
+          ],
+          "candidates": [
+            "area-i"
+          ],
+          "order": [],
+          "selectedId": "area-i",
+          "correct": false
+        },
+        "correct": [
+          {
+            "sourcePoint": [
+              657.0015106201172,
+              227.80449829101562
+            ],
+            "screenPoint": [
+              713.7358662972084,
+              481.88353403778694
+            ],
+            "candidates": [
+              "area-l"
+            ],
+            "order": [],
+            "selectedId": "area-l",
+            "correct": true
+          },
+          {
+            "sourcePoint": [
+              665.6310119628906,
+              227.80449829101562
+            ],
+            "screenPoint": [
+              718.5689984510785,
+              481.88353403778694
+            ],
+            "candidates": [
+              "area-l"
+            ],
+            "order": [],
+            "selectedId": "area-l",
+            "correct": true
+          }
+        ],
+        "writing": {
+          "wrongRejected": true,
+          "nameAccepted": true,
+          "duplicateCreditBlocked": true
+        }
+      },
+      {
+        "style": "discovery",
+        "wrong": {
+          "sourcePoint": [
+            39.37700500488281,
+            37.391998291015625
+          ],
+          "screenPoint": [
+            367.8223843314291,
+            375.2390432736169
+          ],
+          "candidates": [
+            "area-i"
+          ],
+          "order": [],
+          "selectedId": "area-i",
+          "correct": false
+        },
+        "correct": [
+          {
+            "sourcePoint": [
+              657.0015106201172,
+              227.80449829101562
+            ],
+            "screenPoint": [
+              713.7358662972084,
+              481.88353403778694
+            ],
+            "candidates": [
+              "area-l"
+            ],
+            "order": [],
+            "selectedId": "area-l",
+            "correct": true
+          },
+          {
+            "sourcePoint": [
+              665.6310119628906,
+              227.80449829101562
+            ],
+            "screenPoint": [
+              718.5689984510785,
+              481.88353403778694
+            ],
+            "candidates": [
+              "area-l"
+            ],
+            "order": [],
+            "selectedId": "area-l",
+            "correct": true
+          }
+        ],
+        "writing": {
+          "wrongRejected": true,
+          "nameAccepted": true,
+          "duplicateCreditBlocked": true
+        }
+      }
+    ],
+    "status": "PASS executed pointer/writing fixtures in both themes"
+  },
+  {
+    "id": "area-m",
+    "name": "Kroatië",
+    "kind": "area",
+    "featureClass": "countries",
+    "chapter": "countries",
+    "source": "Natural Earth admin 0 50m",
+    "geometrySha256": "c1d739f19191b8647d3f4be5dcdefa1a4d23527bec79b1367b4ecda4ff195265",
+    "geographyStatus": "SOURCE BASELINE VERIFIED — not fresh GIS certification",
+    "runs": [
+      {
+        "style": "school",
+        "wrong": {
+          "sourcePoint": [
+            39.37700500488281,
+            37.391998291015625
+          ],
+          "screenPoint": [
+            367.8223843314291,
+            375.2390432736169
+          ],
+          "candidates": [
+            "area-i"
+          ],
+          "order": [],
+          "selectedId": "area-i",
+          "correct": false
+        },
+        "correct": [
+          {
+            "sourcePoint": [
+              663.5700012207031,
+              263.3720001220703
+            ],
+            "screenPoint": [
+              717.4146864124252,
+              501.80385502788215
+            ],
+            "candidates": [
+              "area-m"
+            ],
+            "order": [],
+            "selectedId": "area-m",
+            "correct": true
+          },
+          {
+            "sourcePoint": [
+              679.75,
+              263.3720001220703
+            ],
+            "screenPoint": [
+              726.4766320850204,
+              501.80385502788215
+            ],
+            "candidates": [
+              "area-m"
+            ],
+            "order": [],
+            "selectedId": "area-m",
+            "correct": true
+          }
+        ],
+        "writing": {
+          "wrongRejected": true,
+          "nameAccepted": true,
+          "duplicateCreditBlocked": true
+        }
+      },
+      {
+        "style": "discovery",
+        "wrong": {
+          "sourcePoint": [
+            39.37700500488281,
+            37.391998291015625
+          ],
+          "screenPoint": [
+            367.8223843314291,
+            375.2390432736169
+          ],
+          "candidates": [
+            "area-i"
+          ],
+          "order": [],
+          "selectedId": "area-i",
+          "correct": false
+        },
+        "correct": [
+          {
+            "sourcePoint": [
+              663.5700012207031,
+              263.3720001220703
+            ],
+            "screenPoint": [
+              717.4146864124252,
+              501.80385502788215
+            ],
+            "candidates": [
+              "area-m"
+            ],
+            "order": [],
+            "selectedId": "area-m",
+            "correct": true
+          },
+          {
+            "sourcePoint": [
+              679.75,
+              263.3720001220703
+            ],
+            "screenPoint": [
+              726.4766320850204,
+              501.80385502788215
+            ],
+            "candidates": [
+              "area-m"
+            ],
+            "order": [],
+            "selectedId": "area-m",
+            "correct": true
+          }
+        ],
+        "writing": {
+          "wrongRejected": true,
+          "nameAccepted": true,
+          "duplicateCreditBlocked": true
+        }
+      }
+    ],
+    "status": "PASS executed pointer/writing fixtures in both themes"
+  },
+  {
+    "id": "area-n",
+    "name": "San Marino",
+    "kind": "area",
+    "featureClass": "point",
+    "chapter": "countries",
+    "source": "Natural Earth populated places 10m",
+    "geometrySha256": "4a718ee86b2be92ed677eb675075d9fcd2afdb795fecc033957d8b4c35c9e95f",
+    "geographyStatus": "SOURCE PROJECTION VERIFIED",
+    "runs": [
+      {
+        "style": "school",
+        "wrong": {
+          "sourcePoint": [
+            702.5,
+            664.96
+          ],
+          "screenPoint": [
+            739.2182439271255,
+            726.7215875506074
+          ],
+          "candidates": [
+            "city-1"
+          ],
+          "order": [],
+          "selectedId": "city-1",
+          "correct": false
+        },
+        "correct": [
+          {
+            "sourcePoint": [
+              458.8,
+              447.67
+            ],
+            "screenPoint": [
+              602.7289777327935,
+              605.0237925101214
+            ],
+            "candidates": [
+              "area-n"
+            ],
+            "order": [],
+            "selectedId": "area-n",
+            "correct": true
+          },
+          {
+            "sourcePoint": [
+              460.8,
+              447.67
+            ],
+            "screenPoint": [
+              603.8491194331984,
+              605.0237925101214
+            ],
+            "candidates": [
+              "area-n"
+            ],
+            "order": [],
+            "selectedId": "area-n",
+            "correct": true
+          }
+        ],
+        "writing": {
+          "wrongRejected": true,
+          "nameAccepted": true,
+          "duplicateCreditBlocked": true
+        }
+      },
+      {
+        "style": "discovery",
+        "wrong": {
+          "sourcePoint": [
+            702.5,
+            664.96
+          ],
+          "screenPoint": [
+            739.2182439271255,
+            726.7215875506074
+          ],
+          "candidates": [
+            "city-1"
+          ],
+          "order": [],
+          "selectedId": "city-1",
+          "correct": false
+        },
+        "correct": [
+          {
+            "sourcePoint": [
+              458.8,
+              447.67
+            ],
+            "screenPoint": [
+              602.7289777327935,
+              605.0237925101214
+            ],
+            "candidates": [
+              "area-n"
+            ],
+            "order": [],
+            "selectedId": "area-n",
+            "correct": true
+          },
+          {
+            "sourcePoint": [
+              460.8,
+              447.67
+            ],
+            "screenPoint": [
+              603.8491194331984,
+              605.0237925101214
+            ],
+            "candidates": [
+              "area-n"
+            ],
+            "order": [],
+            "selectedId": "area-n",
+            "correct": true
+          }
+        ],
+        "writing": {
+          "wrongRejected": true,
+          "nameAccepted": true,
+          "duplicateCreditBlocked": true
+        }
+      }
+    ],
+    "status": "PASS executed pointer/writing fixtures in both themes"
+  },
+  {
+    "id": "area-o",
+    "name": "Vaticaanstad",
+    "kind": "area",
+    "featureClass": "point",
+    "chapter": "countries",
+    "source": "Natural Earth populated places 10m",
+    "geometrySha256": "f04381e2cccbaa7e8abf4f0cdaebafd9b2277d03ead8a077a4dc960b5b239bc2",
+    "geographyStatus": "SOURCE PROJECTION VERIFIED",
+    "runs": [
+      {
+        "style": "school",
+        "wrong": {
+          "sourcePoint": [
+            702.5,
+            664.96
+          ],
+          "screenPoint": [
+            739.2182439271255,
+            726.7215875506074
+          ],
+          "candidates": [
+            "city-1"
+          ],
+          "order": [],
+          "selectedId": "city-1",
+          "correct": false
+        },
+        "correct": [
+          {
+            "sourcePoint": [
+              459.44,
+              604.2
+            ],
+            "screenPoint": [
+              603.0874230769232,
+              692.6916826923077
+            ],
+            "candidates": [
+              "city-9",
+              "area-o"
+            ],
+            "order": [
+              "area-o",
+              "city-9"
+            ],
+            "selectedId": "area-o",
+            "correct": true
+          },
+          {
+            "sourcePoint": [
+              461.44,
+              604.2
+            ],
+            "screenPoint": [
+              604.2075647773279,
+              692.6916826923077
+            ],
+            "candidates": [
+              "city-9",
+              "area-o"
+            ],
+            "order": [
+              "area-o",
+              "city-9"
+            ],
+            "selectedId": "area-o",
+            "correct": true
+          }
+        ],
+        "writing": {
+          "wrongRejected": true,
+          "nameAccepted": true,
+          "duplicateCreditBlocked": true
+        }
+      },
+      {
+        "style": "discovery",
+        "wrong": {
+          "sourcePoint": [
+            702.5,
+            664.96
+          ],
+          "screenPoint": [
+            739.2182439271255,
+            726.7215875506074
+          ],
+          "candidates": [
+            "city-1"
+          ],
+          "order": [],
+          "selectedId": "city-1",
+          "correct": false
+        },
+        "correct": [
+          {
+            "sourcePoint": [
+              459.44,
+              604.2
+            ],
+            "screenPoint": [
+              603.0874230769232,
+              692.6916826923077
+            ],
+            "candidates": [
+              "city-9",
+              "area-o"
+            ],
+            "order": [
+              "area-o",
+              "city-9"
+            ],
+            "selectedId": "area-o",
+            "correct": true
+          },
+          {
+            "sourcePoint": [
+              461.44,
+              604.2
+            ],
+            "screenPoint": [
+              604.2075647773279,
+              692.6916826923077
+            ],
+            "candidates": [
+              "city-9",
+              "area-o"
+            ],
+            "order": [
+              "area-o",
+              "city-9"
+            ],
+            "selectedId": "area-o",
+            "correct": true
+          }
+        ],
+        "writing": {
+          "wrongRejected": true,
+          "nameAccepted": true,
+          "duplicateCreditBlocked": true
+        }
+      }
+    ],
+    "status": "PASS executed pointer/writing fixtures in both themes"
+  },
+  {
+    "id": "water-A",
+    "name": "Middellandse Zee",
+    "kind": "water",
+    "featureClass": "sea",
+    "chapter": "seas",
+    "source": "Retained schematic practice zone; approximate, not a surveyed boundary",
+    "geometrySha256": "56b269c7f962eada885714035cb8bbf9a4b76fb5b62de8a46de3267b57e47824",
+    "geographyStatus": "SCHEMATIC — extent not independently certified",
+    "runs": [
+      {
+        "style": "school",
+        "wrong": {
+          "sourcePoint": [
+            484.7178695678711,
+            336.8961471557617
+          ],
+          "screenPoint": [
+            617.2448209771068,
+            542.9825865674502
+          ],
+          "candidates": [
+            "water-B"
+          ],
+          "order": [],
+          "selectedId": "water-B",
+          "correct": false
+        },
+        "correct": [
+          {
+            "sourcePoint": [
+              21.95,
+              759.5
+            ],
+            "screenPoint": [
+              358.0620268218624,
+              779.670685728745
+            ],
+            "candidates": [
+              "water-A"
+            ],
+            "order": [],
+            "selectedId": "water-A",
+            "correct": true
+          },
+          {
+            "sourcePoint": [
+              33.9,
+              759.5
+            ],
+            "screenPoint": [
+              364.7548734817814,
+              779.670685728745
+            ],
+            "candidates": [
+              "water-A"
+            ],
+            "order": [],
+            "selectedId": "water-A",
+            "correct": true
+          }
+        ],
+        "writing": {
+          "wrongRejected": true,
+          "nameAccepted": true,
+          "duplicateCreditBlocked": true
+        }
+      },
+      {
+        "style": "discovery",
+        "wrong": {
+          "sourcePoint": [
+            484.7178695678711,
+            336.8961471557617
+          ],
+          "screenPoint": [
+            617.2448209771068,
+            542.9825865674502
+          ],
+          "candidates": [
+            "water-B"
+          ],
+          "order": [],
+          "selectedId": "water-B",
+          "correct": false
+        },
+        "correct": [
+          {
+            "sourcePoint": [
+              21.95,
+              759.5
+            ],
+            "screenPoint": [
+              358.0620268218624,
+              779.670685728745
+            ],
+            "candidates": [
+              "water-A"
+            ],
+            "order": [],
+            "selectedId": "water-A",
+            "correct": true
+          },
+          {
+            "sourcePoint": [
+              33.9,
+              759.5
+            ],
+            "screenPoint": [
+              364.7548734817814,
+              779.670685728745
+            ],
+            "candidates": [
+              "water-A"
+            ],
+            "order": [],
+            "selectedId": "water-A",
+            "correct": true
+          }
+        ],
+        "writing": {
+          "wrongRejected": true,
+          "nameAccepted": true,
+          "duplicateCreditBlocked": true
+        }
+      }
+    ],
+    "status": "PASS executed pointer/writing fixtures in both themes"
+  },
+  {
+    "id": "water-B",
+    "name": "Adriatische Zee",
+    "kind": "water",
+    "featureClass": "sea",
+    "chapter": "seas",
+    "source": "Retained schematic practice zone; approximate, not a surveyed boundary",
+    "geometrySha256": "f2b336e1a221e5b35cbba8d4fa8b4ef275eb9c8836839432e307b3cfe2893953",
+    "geographyStatus": "SCHEMATIC — extent not independently certified",
+    "runs": [
+      {
+        "style": "school",
+        "wrong": {
+          "sourcePoint": [
+            21.95,
+            759.5
+          ],
+          "screenPoint": [
+            358.0620268218624,
+            779.670685728745
+          ],
+          "candidates": [
+            "water-A"
+          ],
+          "order": [],
+          "selectedId": "water-A",
+          "correct": false
+        },
+        "correct": [
+          {
+            "sourcePoint": [
+              484.7178695678711,
+              336.8961471557617
+            ],
+            "screenPoint": [
+              617.2448209771068,
+              542.9825865674502
+            ],
+            "candidates": [
+              "water-B"
+            ],
+            "order": [],
+            "selectedId": "water-B",
+            "correct": true
+          },
+          {
+            "sourcePoint": [
+              505.3642974853516,
+              336.8961471557617
+            ],
+            "screenPoint": [
+              628.8082834144932,
+              542.9825865674502
+            ],
+            "candidates": [
+              "water-B"
+            ],
+            "order": [],
+            "selectedId": "water-B",
+            "correct": true
+          }
+        ],
+        "writing": {
+          "wrongRejected": true,
+          "nameAccepted": true,
+          "duplicateCreditBlocked": true
+        }
+      },
+      {
+        "style": "discovery",
+        "wrong": {
+          "sourcePoint": [
+            21.95,
+            759.5
+          ],
+          "screenPoint": [
+            358.0620268218624,
+            779.670685728745
+          ],
+          "candidates": [
+            "water-A"
+          ],
+          "order": [],
+          "selectedId": "water-A",
+          "correct": false
+        },
+        "correct": [
+          {
+            "sourcePoint": [
+              484.7178695678711,
+              336.8961471557617
+            ],
+            "screenPoint": [
+              617.2448209771068,
+              542.9825865674502
+            ],
+            "candidates": [
+              "water-B"
+            ],
+            "order": [],
+            "selectedId": "water-B",
+            "correct": true
+          },
+          {
+            "sourcePoint": [
+              505.3642974853516,
+              336.8961471557617
+            ],
+            "screenPoint": [
+              628.8082834144932,
+              542.9825865674502
+            ],
+            "candidates": [
+              "water-B"
+            ],
+            "order": [],
+            "selectedId": "water-B",
+            "correct": true
+          }
+        ],
+        "writing": {
+          "wrongRejected": true,
+          "nameAccepted": true,
+          "duplicateCreditBlocked": true
+        }
+      }
+    ],
+    "status": "PASS executed pointer/writing fixtures in both themes"
+  },
+  {
+    "id": "water-C",
+    "name": "Ligurische Zee",
+    "kind": "water",
+    "featureClass": "sea",
+    "chapter": "seas",
+    "source": "Retained schematic practice zone; approximate, not a surveyed boundary",
+    "geometrySha256": "7073a741166524779554f21c0c26036d2666d7b0c223d7d1c36a34d6c8512db4",
+    "geographyStatus": "SCHEMATIC — extent not independently certified",
+    "runs": [
+      {
+        "style": "school",
+        "wrong": {
+          "sourcePoint": [
+            21.95,
+            759.5
+          ],
+          "screenPoint": [
+            358.0620268218624,
+            779.670685728745
+          ],
+          "candidates": [
+            "water-A"
+          ],
+          "order": [],
+          "selectedId": "water-A",
+          "correct": false
+        },
+        "correct": [
+          {
+            "sourcePoint": [
+              268.2,
+              417.7625
+            ],
+            "screenPoint": [
+              495.9794736842106,
+              588.2734735576923
+            ],
+            "candidates": [
+              "water-C"
+            ],
+            "order": [],
+            "selectedId": "water-C",
+            "correct": true
+          },
+          {
+            "sourcePoint": [
+              268.2,
+              428.775
+            ],
+            "screenPoint": [
+              495.9794736842106,
+              594.4412537955466
+            ],
+            "candidates": [
+              "water-C"
+            ],
+            "order": [],
+            "selectedId": "water-C",
+            "correct": true
+          }
+        ],
+        "writing": {
+          "wrongRejected": true,
+          "nameAccepted": true,
+          "duplicateCreditBlocked": true
+        }
+      },
+      {
+        "style": "discovery",
+        "wrong": {
+          "sourcePoint": [
+            21.95,
+            759.5
+          ],
+          "screenPoint": [
+            358.0620268218624,
+            779.670685728745
+          ],
+          "candidates": [
+            "water-A"
+          ],
+          "order": [],
+          "selectedId": "water-A",
+          "correct": false
+        },
+        "correct": [
+          {
+            "sourcePoint": [
+              268.2,
+              417.7625
+            ],
+            "screenPoint": [
+              495.9794736842106,
+              588.2734735576923
+            ],
+            "candidates": [
+              "water-C"
+            ],
+            "order": [],
+            "selectedId": "water-C",
+            "correct": true
+          },
+          {
+            "sourcePoint": [
+              268.2,
+              428.775
+            ],
+            "screenPoint": [
+              495.9794736842106,
+              594.4412537955466
+            ],
+            "candidates": [
+              "water-C"
+            ],
+            "order": [],
+            "selectedId": "water-C",
+            "correct": true
+          }
+        ],
+        "writing": {
+          "wrongRejected": true,
+          "nameAccepted": true,
+          "duplicateCreditBlocked": true
+        }
+      }
+    ],
+    "status": "PASS executed pointer/writing fixtures in both themes"
+  },
+  {
+    "id": "water-D",
+    "name": "Tyrreense Zee",
+    "kind": "water",
+    "featureClass": "sea",
+    "chapter": "seas",
+    "source": "Retained schematic practice zone; approximate, not a surveyed boundary",
+    "geometrySha256": "c0055f838d3f2f4022a4d2950abfccae66be9d098c3b8caba0665fc9a0f477fc",
+    "geographyStatus": "SCHEMATIC — extent not independently certified",
+    "runs": [
+      {
+        "style": "school",
+        "wrong": {
+          "sourcePoint": [
+            21.95,
+            759.5
+          ],
+          "screenPoint": [
+            358.0620268218624,
+            779.670685728745
+          ],
+          "candidates": [
+            "water-A"
+          ],
+          "order": [],
+          "selectedId": "water-A",
+          "correct": false
+        },
+        "correct": [
+          {
+            "sourcePoint": [
+              343.5,
+              547.05
+            ],
+            "screenPoint": [
+              538.1528087044535,
+              660.6836336032388
+            ],
+            "candidates": [
+              "water-C",
+              "water-D"
+            ],
+            "order": [
+              "water-C",
+              "water-D"
+            ],
+            "selectedId": "water-D",
+            "correct": true
+          },
+          {
+            "sourcePoint": [
+              343.5,
+              569.1
+            ],
+            "screenPoint": [
+              538.1528087044535,
+              673.0331958502024
+            ],
+            "candidates": [
+              "water-D"
+            ],
+            "order": [],
+            "selectedId": "water-D",
+            "correct": true
+          }
+        ],
+        "writing": {
+          "wrongRejected": true,
+          "nameAccepted": true,
+          "duplicateCreditBlocked": true
+        }
+      },
+      {
+        "style": "discovery",
+        "wrong": {
+          "sourcePoint": [
+            21.95,
+            759.5
+          ],
+          "screenPoint": [
+            358.0620268218624,
+            779.670685728745
+          ],
+          "candidates": [
+            "water-A"
+          ],
+          "order": [],
+          "selectedId": "water-A",
+          "correct": false
+        },
+        "correct": [
+          {
+            "sourcePoint": [
+              343.5,
+              547.05
+            ],
+            "screenPoint": [
+              538.1528087044535,
+              660.6836336032388
+            ],
+            "candidates": [
+              "water-C",
+              "water-D"
+            ],
+            "order": [
+              "water-C",
+              "water-D"
+            ],
+            "selectedId": "water-D",
+            "correct": true
+          },
+          {
+            "sourcePoint": [
+              343.5,
+              569.1
+            ],
+            "screenPoint": [
+              538.1528087044535,
+              673.0331958502024
+            ],
+            "candidates": [
+              "water-D"
+            ],
+            "order": [],
+            "selectedId": "water-D",
+            "correct": true
+          }
+        ],
+        "writing": {
+          "wrongRejected": true,
+          "nameAccepted": true,
+          "duplicateCreditBlocked": true
+        }
+      }
+    ],
+    "status": "PASS executed pointer/writing fixtures in both themes"
+  },
+  {
+    "id": "water-E",
+    "name": "Ionische Zee",
+    "kind": "water",
+    "featureClass": "sea",
+    "chapter": "seas",
+    "source": "Retained schematic practice zone; approximate, not a surveyed boundary",
+    "geometrySha256": "c0dfa64c1a0422bee874a1eee137ebe073c80ed89a966c135dcebb8e5a24311b",
+    "geographyStatus": "SCHEMATIC — extent not independently certified",
+    "runs": [
+      {
+        "style": "school",
+        "wrong": {
+          "sourcePoint": [
+            21.95,
+            759.5
+          ],
+          "screenPoint": [
+            358.0620268218624,
+            779.670685728745
+          ],
+          "candidates": [
+            "water-A"
+          ],
+          "order": [],
+          "selectedId": "water-A",
+          "correct": false
+        },
+        "correct": [
+          {
+            "sourcePoint": [
+              791.9,
+              725.8722351074218
+            ],
+            "screenPoint": [
+              789.2885779352227,
+              760.8367548549513
+            ],
+            "candidates": [
+              "water-E"
+            ],
+            "order": [],
+            "selectedId": "water-E",
+            "correct": true
+          },
+          {
+            "sourcePoint": [
+              804.2,
+              725.8722351074218
+            ],
+            "screenPoint": [
+              796.1774493927126,
+              760.8367548549513
+            ],
+            "candidates": [
+              "water-E"
+            ],
+            "order": [],
+            "selectedId": "water-E",
+            "correct": true
+          }
+        ],
+        "writing": {
+          "wrongRejected": true,
+          "nameAccepted": true,
+          "duplicateCreditBlocked": true
+        }
+      },
+      {
+        "style": "discovery",
+        "wrong": {
+          "sourcePoint": [
+            21.95,
+            759.5
+          ],
+          "screenPoint": [
+            358.0620268218624,
+            779.670685728745
+          ],
+          "candidates": [
+            "water-A"
+          ],
+          "order": [],
+          "selectedId": "water-A",
+          "correct": false
+        },
+        "correct": [
+          {
+            "sourcePoint": [
+              791.9,
+              725.8722351074218
+            ],
+            "screenPoint": [
+              789.2885779352227,
+              760.8367548549513
+            ],
+            "candidates": [
+              "water-E"
+            ],
+            "order": [],
+            "selectedId": "water-E",
+            "correct": true
+          },
+          {
+            "sourcePoint": [
+              804.2,
+              725.8722351074218
+            ],
+            "screenPoint": [
+              796.1774493927126,
+              760.8367548549513
+            ],
+            "candidates": [
+              "water-E"
+            ],
+            "order": [],
+            "selectedId": "water-E",
+            "correct": true
+          }
+        ],
+        "writing": {
+          "wrongRejected": true,
+          "nameAccepted": true,
+          "duplicateCreditBlocked": true
+        }
+      }
+    ],
+    "status": "PASS executed pointer/writing fixtures in both themes"
+  },
+  {
+    "id": "water-F",
+    "name": "Tiber",
+    "kind": "river",
+    "featureClass": "river",
+    "chapter": "rivers",
+    "source": "Natural Earth rivers 10m",
+    "geometrySha256": "f12ebe1fb67e8cdfed0b9995cb2c67f4b9992b96298e36441d21b0a09f50125f",
+    "geographyStatus": "SOURCE BASELINE VERIFIED — not fresh GIS certification",
+    "runs": [
+      {
+        "style": "school",
+        "wrong": {
+          "sourcePoint": [
+            262.20074462890625,
+            360.96514892578125
+          ],
+          "screenPoint": [
+            492.6194656279406,
+            556.4629328523088
+          ],
+          "candidates": [
+            "water-G"
+          ],
+          "order": [],
+          "selectedId": "water-G",
+          "correct": false
+        },
+        "correct": [
+          {
+            "sourcePoint": [
+              456.0716552734375,
+              523.44677734375
+            ],
+            "screenPoint": [
+              601.2009113821424,
+              647.4641566226358
+            ],
+            "candidates": [
+              "water-F"
+            ],
+            "order": [],
+            "selectedId": "water-F",
+            "correct": true
+          },
+          {
+            "sourcePoint": [
+              465.4904479980469,
+              575.716796875
+            ],
+            "screenPoint": [
+              606.4761026312948,
+              676.7390709016005
+            ],
+            "candidates": [
+              "water-F"
+            ],
+            "order": [],
+            "selectedId": "water-F",
+            "correct": true
+          }
+        ],
+        "writing": {
+          "wrongRejected": true,
+          "nameAccepted": true,
+          "duplicateCreditBlocked": true
+        }
+      },
+      {
+        "style": "discovery",
+        "wrong": {
+          "sourcePoint": [
+            262.20074462890625,
+            360.96514892578125
+          ],
+          "screenPoint": [
+            492.6194656279406,
+            556.4629328523088
+          ],
+          "candidates": [
+            "water-G"
+          ],
+          "order": [],
+          "selectedId": "water-G",
+          "correct": false
+        },
+        "correct": [
+          {
+            "sourcePoint": [
+              456.0716552734375,
+              523.44677734375
+            ],
+            "screenPoint": [
+              601.2009113821424,
+              647.4641566226358
+            ],
+            "candidates": [
+              "water-F"
+            ],
+            "order": [],
+            "selectedId": "water-F",
+            "correct": true
+          },
+          {
+            "sourcePoint": [
+              465.4904479980469,
+              575.716796875
+            ],
+            "screenPoint": [
+              606.4761026312948,
+              676.7390709016005
+            ],
+            "candidates": [
+              "water-F"
+            ],
+            "order": [],
+            "selectedId": "water-F",
+            "correct": true
+          }
+        ],
+        "writing": {
+          "wrongRejected": true,
+          "nameAccepted": true,
+          "duplicateCreditBlocked": true
+        }
+      }
+    ],
+    "status": "PASS executed pointer/writing fixtures in both themes"
+  },
+  {
+    "id": "water-G",
+    "name": "Po",
+    "kind": "river",
+    "featureClass": "river",
+    "chapter": "rivers",
+    "source": "Natural Earth rivers 10m",
+    "geometrySha256": "832f524a6efcd2a78367b74f7ff6ee909e5c141d116e911a2ae7069dfeca17a9",
+    "geographyStatus": "SOURCE BASELINE VERIFIED — not fresh GIS certification",
+    "runs": [
+      {
+        "style": "school",
+        "wrong": {
+          "sourcePoint": [
+            456.0716552734375,
+            523.44677734375
+          ],
+          "screenPoint": [
+            601.2009113821424,
+            647.4641566226358
+          ],
+          "candidates": [
+            "water-F"
+          ],
+          "order": [],
+          "selectedId": "water-F",
+          "correct": false
+        },
+        "correct": [
+          {
+            "sourcePoint": [
+              262.20074462890625,
+              360.96514892578125
+            ],
+            "screenPoint": [
+              492.6194656279406,
+              556.4629328523088
+            ],
+            "candidates": [
+              "water-G"
+            ],
+            "order": [],
+            "selectedId": "water-G",
+            "correct": true
+          },
+          {
+            "sourcePoint": [
+              361.7978210449219,
+              361.8436279296875
+            ],
+            "screenPoint": [
+              548.4008848939347,
+              556.9549433349115
+            ],
+            "candidates": [
+              "water-G"
+            ],
+            "order": [],
+            "selectedId": "water-G",
+            "correct": true
+          }
+        ],
+        "writing": {
+          "wrongRejected": true,
+          "nameAccepted": true,
+          "duplicateCreditBlocked": true
+        }
+      },
+      {
+        "style": "discovery",
+        "wrong": {
+          "sourcePoint": [
+            456.0716552734375,
+            523.44677734375
+          ],
+          "screenPoint": [
+            601.2009113821424,
+            647.4641566226358
+          ],
+          "candidates": [
+            "water-F"
+          ],
+          "order": [],
+          "selectedId": "water-F",
+          "correct": false
+        },
+        "correct": [
+          {
+            "sourcePoint": [
+              262.20074462890625,
+              360.96514892578125
+            ],
+            "screenPoint": [
+              492.6194656279406,
+              556.4629328523088
+            ],
+            "candidates": [
+              "water-G"
+            ],
+            "order": [],
+            "selectedId": "water-G",
+            "correct": true
+          },
+          {
+            "sourcePoint": [
+              361.7978210449219,
+              361.8436279296875
+            ],
+            "screenPoint": [
+              548.4008848939347,
+              556.9549433349115
+            ],
+            "candidates": [
+              "water-G"
+            ],
+            "order": [],
+            "selectedId": "water-G",
+            "correct": true
+          }
+        ],
+        "writing": {
+          "wrongRejected": true,
+          "nameAccepted": true,
+          "duplicateCreditBlocked": true
+        }
+      }
+    ],
+    "status": "PASS executed pointer/writing fixtures in both themes"
+  }
+]

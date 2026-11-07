@@ -3,9 +3,10 @@ import { readFileSync } from 'node:fs';
 import { createContext, runInContext } from 'node:vm';
 
 import { JSDOM, VirtualConsole } from 'jsdom';
+const presentationTimers=[];
 const errors=[],vc=new VirtualConsole();vc.on('jsdomError',e=>errors.push(e.message));
 const html=readFileSync(new URL('../index.html',import.meta.url),'utf8');
-const dom=new JSDOM(html,{url:'https://topo.test/',runScripts:'dangerously',virtualConsole:vc,beforeParse(w){w.HTMLElement.prototype.scrollIntoView=()=>{};w.HTMLDialogElement.prototype.showModal=function(){this.setAttribute('open','')};w.HTMLDialogElement.prototype.close=function(){this.removeAttribute('open')};w.confirm=()=>true;w.print=()=>{}}});
+const dom=new JSDOM(html,{url:'https://topo.test/',runScripts:'dangerously',virtualConsole:vc,beforeParse(w){w.setTimeout=(fn,delay)=>{presentationTimers.push({fn,delay,ran:false,cancelled:false});return presentationTimers.length};w.clearTimeout=id=>{if(presentationTimers[id-1])presentationTimers[id-1].cancelled=true};w.HTMLElement.prototype.scrollIntoView=()=>{};w.HTMLDialogElement.prototype.showModal=function(){this.setAttribute('open','')};w.HTMLDialogElement.prototype.close=function(){this.removeAttribute('open')};w.confirm=()=>true;w.print=()=>{}}});
 const w=dom.window,document=w.document;
 const get=selector=>document.querySelector(selector);
 const tabs=['learn','point','write','exam','route'].map(m=>get('[data-mode="'+m+'"]'));
@@ -44,7 +45,11 @@ inspect('state.slices=7;state.pizzas=2;state.trips=0;next()');
 inspect('elements[state.current.id].dispatchEvent(new MouseEvent("click",{bubbles:true}))');
 assert.equal(inspect('state.pizzas'), 3, 'eight slices form another pizza');
 assert.equal(inspect('state.trips'), 1, 'three pizzas advance the Vespa');
-assert.match(get('#vespaTripText').textContent,/Nino rijdt naar /,'the earned milestone names the character and destination');
+{const timer=presentationTimers.find(t=>t.delay===700&&!t.ran&&!t.cancelled);assert(timer,'pending pizza presentation timer 700');timer.ran=true;timer.fn();}
+get('#pizzaCelebration .button').click();
+assert.match(get('.vespaRide').textContent,/Florence/,'the earned milestone names the destination');
+assert.match(get('#vespaRideTitle').textContent,/Nino/,'the earned milestone names the character');
+inspect('clearRewardCelebrations()');
 get('#next').click();
 const skipped = inspect('state.current.id');
 get('#next').click();

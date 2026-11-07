@@ -1,0 +1,23 @@
+{
+  "base": "92f441e52c6b38550d5920dfbfc9a22310aec8f6",
+  "protectedScopes": [
+    "assets",
+    "geography",
+    "scripts/learning-engine.js",
+    "scripts/route-engine.js",
+    "scripts/map-hit.js",
+    "scripts/discovery-map.js",
+    "scripts/focus-mode.js",
+    "scripts/focus-camera.js",
+    "scripts/nino-v2.css",
+    "scripts/nino-cplus.css",
+    "print.html",
+    "output/pdf",
+    "package.json",
+    "package-lock.json"
+  ],
+  "changedProtectedFiles": [],
+  "bytes": 35710604,
+  "htmlSHA256": "8822e92e097d32bdc6b1588bee0d11ffc204020229def49709317a267e9afdc9",
+  "wholeFileAudit": "whole-file-preservation.json"
+}

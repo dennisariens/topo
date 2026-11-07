@@ -1,0 +1,133 @@
+{
+  "name": "TOPO PIZZA SLICES — MARGHERITA",
+  "source_file": "top_down_studio_style_isolated_shot_of_a_whole_piz.png",
+  "source_sha256": "e1bb7e1841b2f6ee7c6f4fb2c78bbd5e0f963222ddb37d9fd0cd34b2563d76fd",
+  "original_dimensions": [
+    1254,
+    1254
+  ],
+  "radial_center": [
+    622,
+    600
+  ],
+  "angular_definition": "01 begins at 12 o’clock, then eight clockwise nonoverlapping 45-degree pixel masks",
+  "files": [
+    {
+      "slice": 1,
+      "filename": "pizza-margherita-slice-01.png",
+      "pixel_origin": [
+        610,
+        0
+      ],
+      "full_canvas_filename": "pizza-margherita-slice-01-aligned.png",
+      "crop_size": [
+        488,
+        613
+      ],
+      "sha256": "3bab21c8977acabf33f6544ad1dd7e30f8ea3143d251789770acf38caa18641b"
+    },
+    {
+      "slice": 2,
+      "filename": "pizza-margherita-slice-02.png",
+      "pixel_origin": [
+        611,
+        21
+      ],
+      "full_canvas_filename": "pizza-margherita-slice-02-aligned.png",
+      "crop_size": [
+        641,
+        591
+      ],
+      "sha256": "f2b29113814bf6010f21a8bb2db320453a6de96232f34beb675b24a61cafb0ab"
+    },
+    {
+      "slice": 3,
+      "filename": "pizza-margherita-slice-03.png",
+      "pixel_origin": [
+        611,
+        588
+      ],
+      "full_canvas_filename": "pizza-margherita-slice-03-aligned.png",
+      "crop_size": [
+        643,
+        614
+      ],
+      "sha256": "ae2c169ce13f0eafa62af953a54a58114acf4074e84260b2909e048f641e44e2"
+    },
+    {
+      "slice": 4,
+      "filename": "pizza-margherita-slice-04.png",
+      "pixel_origin": [
+        611,
+        589
+      ],
+      "full_canvas_filename": "pizza-margherita-slice-04-aligned.png",
+      "crop_size": [
+        617,
+        665
+      ],
+      "sha256": "1fd4da03879fbd926f16ab2f46207b0f18ff08fa188b2f5c53c159d6379664b5"
+    },
+    {
+      "slice": 5,
+      "filename": "pizza-margherita-slice-05.png",
+      "pixel_origin": [
+        19,
+        589
+      ],
+      "full_canvas_filename": "pizza-margherita-slice-05-aligned.png",
+      "crop_size": [
+        616,
+        665
+      ],
+      "sha256": "7c2234e9c51f73b83635f7859c9e01dc229877f2fa98f50bca5f0cb064e5ada6"
+    },
+    {
+      "slice": 6,
+      "filename": "pizza-margherita-slice-06.png",
+      "pixel_origin": [
+        0,
+        589
+      ],
+      "full_canvas_filename": "pizza-margherita-slice-06-aligned.png",
+      "crop_size": [
+        634,
+        638
+      ],
+      "sha256": "b82ed0d7a5ea279d27d0b9c1156b62e4b411bcb1583a73d667a3e555d136ec21"
+    },
+    {
+      "slice": 7,
+      "filename": "pizza-margherita-slice-07.png",
+      "pixel_origin": [
+        0,
+        5
+      ],
+      "full_canvas_filename": "pizza-margherita-slice-07-aligned.png",
+      "crop_size": [
+        634,
+        608
+      ],
+      "sha256": "bad8862146dab2d78acf7e5ceb1085ef8112fca764d5049e2b0b211999c8879a"
+    },
+    {
+      "slice": 8,
+      "filename": "pizza-margherita-slice-08.png",
+      "pixel_origin": [
+        27,
+        0
+      ],
+      "full_canvas_filename": "pizza-margherita-slice-08-aligned.png",
+      "crop_size": [
+        607,
+        612
+      ],
+      "sha256": "3ea4908f7e5d4bedab20e9fa941caca11db3fa302244c54a2e791d0b119f34be"
+    }
+  ],
+  "verification": {
+    "source_rgba_reconstruction_exact": true,
+    "maximum_channel_difference": 0,
+    "overlapping_sector_pixels": 0
+  }
+}

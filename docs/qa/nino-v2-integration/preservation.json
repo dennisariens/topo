@@ -1,0 +1,23 @@
+{
+  "base": "2a9dda3d3d8ec567687bc3b61bf9cbde645c752c",
+  "entireBaselineHtmlPreservedOutsideVerifiedPresentation": true,
+  "engineAndGeographyChanges": 0,
+  "downloadParity": true,
+  "bytes": 41436767,
+  "sha256": "e5265ae7118861b98be61b2cdb4bfdd9509a4ea1e864111ac6d52af410093ba0",
+  "D1": "archival excluded; real1586x992 dimensions retained; no folio dependencies",
+  "D2": {
+    "source_availability": {
+      "delivery derivative": 34,
+      "pinned Git blob": 205
+    },
+    "delivery_state": {
+      "export/file present": 67,
+      "source only; not delivered": 172
+    },
+    "runtime_state": {
+      "integrated": 46,
+      "not integrated": 193
+    }
+  }
+}

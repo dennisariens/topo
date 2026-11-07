@@ -1,0 +1,189 @@
+{
+  "source_file": "quattro_formaggi_pizza_in_acht_punten.png",
+  "source_sha256": "b1a00ab136042621d563e84eb45653247143ad35abd7cb79004887adff0f3a2e",
+  "original_dimensions": [
+    1254,
+    1254
+  ],
+  "radial_center": [
+    627,
+    600
+  ],
+  "angular_definition": "8 sectors, 45 degrees, clockwise from north; original RGBA copied into pixel-disjoint masks",
+  "files": [
+    {
+      "slice": 1,
+      "filename": "individual_slices/pizza-quattro-formaggi-slice-01.png",
+      "pixel_origin": [
+        615,
+        0
+      ],
+      "full_canvas_filename": "aligned_full_canvas/pizza-quattro-formaggi-slice-01-aligned.png",
+      "crop_size": [
+        589,
+        613
+      ],
+      "alpha_bbox": [
+        627,
+        3,
+        1192,
+        601
+      ],
+      "sha256": "b3e5450e071ce42f32b3b8de9e06141c44a80bb5c5e6eedf7b1125f67a0f2da1"
+    },
+    {
+      "slice": 2,
+      "filename": "individual_slices/pizza-quattro-formaggi-slice-02.png",
+      "pixel_origin": [
+        616,
+        103
+      ],
+      "full_canvas_filename": "aligned_full_canvas/pizza-quattro-formaggi-slice-02-aligned.png",
+      "crop_size": [
+        632,
+        509
+      ],
+      "alpha_bbox": [
+        628,
+        115,
+        1236,
+        600
+      ],
+      "sha256": "f5ebf6edd6df73d5b401fb6427d5d09c448734bf216dc17f5286804911915d22"
+    },
+    {
+      "slice": 3,
+      "filename": "individual_slices/pizza-quattro-formaggi-slice-03.png",
+      "pixel_origin": [
+        616,
+        588
+      ],
+      "full_canvas_filename": "aligned_full_canvas/pizza-quattro-formaggi-slice-03-aligned.png",
+      "crop_size": [
+        630,
+        590
+      ],
+      "alpha_bbox": [
+        628,
+        600,
+        1234,
+        1166
+      ],
+      "sha256": "c1ac2c60523f67563a0232e5597bf040254d0d59cd1487019cca15f3aab75cf4"
+    },
+    {
+      "slice": 4,
+      "filename": "individual_slices/pizza-quattro-formaggi-slice-04.png",
+      "pixel_origin": [
+        616,
+        589
+      ],
+      "full_canvas_filename": "aligned_full_canvas/pizza-quattro-formaggi-slice-04-aligned.png",
+      "crop_size": [
+        608,
+        665
+      ],
+      "alpha_bbox": [
+        628,
+        601,
+        1212,
+        1254
+      ],
+      "sha256": "8e86e3324afc2fe927c144cd0ee53466c49e9b6f897a6abe73f192f7943f1bda"
+    },
+    {
+      "slice": 5,
+      "filename": "individual_slices/pizza-quattro-formaggi-slice-05.png",
+      "pixel_origin": [
+        150,
+        589
+      ],
+      "full_canvas_filename": "aligned_full_canvas/pizza-quattro-formaggi-slice-05-aligned.png",
+      "crop_size": [
+        490,
+        665
+      ],
+      "alpha_bbox": [
+        162,
+        601,
+        628,
+        1254
+      ],
+      "sha256": "f47aa0cf22d3672288a9cf50a204a5826fe03ddc2844649fbd3c820e97606cd0"
+    },
+    {
+      "slice": 6,
+      "filename": "individual_slices/pizza-quattro-formaggi-slice-06.png",
+      "pixel_origin": [
+        0,
+        589
+      ],
+      "full_canvas_filename": "aligned_full_canvas/pizza-quattro-formaggi-slice-06-aligned.png",
+      "crop_size": [
+        639,
+        638
+      ],
+      "alpha_bbox": [
+        0,
+        601,
+        627,
+        1215
+      ],
+      "sha256": "9e6a0e76fad8795edce8a45139da0315a14d3dccc4d719aa6a4c4dcdf2c72f24"
+    },
+    {
+      "slice": 7,
+      "filename": "individual_slices/pizza-quattro-formaggi-slice-07.png",
+      "pixel_origin": [
+        0,
+        57
+      ],
+      "full_canvas_filename": "aligned_full_canvas/pizza-quattro-formaggi-slice-07-aligned.png",
+      "crop_size": [
+        639,
+        556
+      ],
+      "alpha_bbox": [
+        0,
+        69,
+        627,
+        601
+      ],
+      "sha256": "6903bb04a73fed587a54a7a9adac58ef002eb1606a50b1ea25b21ca8a591a753"
+    },
+    {
+      "slice": 8,
+      "filename": "individual_slices/pizza-quattro-formaggi-slice-08.png",
+      "pixel_origin": [
+        206,
+        37
+      ],
+      "full_canvas_filename": "aligned_full_canvas/pizza-quattro-formaggi-slice-08-aligned.png",
+      "crop_size": [
+        433,
+        575
+      ],
+      "alpha_bbox": [
+        218,
+        49,
+        627,
+        600
+      ],
+      "sha256": "c681682d93e688b1e6b03b2bac59e5d31395ed0be96e605e5427812bd6c93654"
+    }
+  ],
+  "verification": {
+    "all_original_RGBA_pixels_reconstructed_exactly": true,
+    "maximum_channel_difference": 0,
+    "missing_pixels": 0,
+    "overlapping_sector_pixels": 0
+  },
+  "icon": {
+    "filename": "pizza-quattro-formaggi-slice-icon.png",
+    "size": [
+      512,
+      512
+    ],
+    "source": "slice-01 downscaled for icon legibility; no rerender"
+  }
+}

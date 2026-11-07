@@ -1,0 +1,20 @@
+{
+  "cover": {
+    "path": "assets/nino/travel-passport/book/exports/passport-closed-cover.webp",
+    "sha256": "8901f57c74feb6d81fea23cb7b216ef403b982e8bdf66f1c89ea83eca15add44",
+    "dimensions": [
+      1254,
+      1254
+    ],
+    "sourceCommit": "4eb9a5ae33550d789c56d5c01393145a148565aa"
+  },
+  "travel": {
+    "path": "assets/nino/exports/nino-travel.webp",
+    "sha256": "d12e2738fbbbfd05f174ab5af8d555f22fc4505a4c57fb72f28020096dc7a424",
+    "dimensions": [
+      1254,
+      1254
+    ],
+    "sourceCommit": "8a704cb23da97baf7197635df7fa12f06b864a24"
+  }
+}

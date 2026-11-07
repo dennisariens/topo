@@ -201,3 +201,44 @@ remain available; hinge stays optional under issue31/PR63. Source availability,
 technical export, runtime integration and independent acceptance remain distinct.
 Evidence and remaining conditions: [closure ledger](qa/nino-v2-closure-67/README.md).
 This does not supersede PR61's independent functional review or owner release gate.
+
+## 2026-11-03 — NINO 2 production integration (#68 / #21 / #67 / #58)
+
+The owner mission authorizes one integration on exact PR61 lineage with PR70 exports and only PR69 presentation ported. Supersedes earlier no-passport/no-new-navigation scope for this branch. Preserve canonical engines, geometry and saves; passport remains a read-only projection of existing completion, goldAt and reward counts. Use exact approved chapter/stamp/seal/static-box/card bytes, with live captions and earned-only visibility. Folio backgrounds and Venezia runtime remain held for the explicit Hermes C1/C2 owner decisions; use code-native paper without claiming folio approval. Pisa hinge remains deferred. Independent Hermes exact-SHA QA and owner release GO remain separate; no merge/deploy/download replacement. See candidate evidence for execution and limitations.
+
+## 2026-11-03 — Complete artwork integration under the current mission
+
+Supersedes the integration record’s implementation hold on folios and Venezia: the current owner mission explicitly authorizes PR70 exports with bounded folio use and Venezia B. Use exact1086×1448 folios at <=543CSS pixels/page (testedDPR2) and the verified PR70 reconstructed contour after the real third Vespa trip. Preserve source bytes/aspect ratio. This is implementation authority, not higher-native-resolution approval, exact original-matte identity, independent artwork closure or final owner visual/release acceptance. Hermes C1/C2 technical caveats remain in the handoff for review.
+
+
+## 2026-11-04 — Eén speelbare NINO 2.0-proef in bestaande PR71
+
+De huidige eigenaaropdracht autoriseert onboarding20, doorlopende Design C-route68, volledige passport21/67-presentatie en hergebruik van PR29-pizza’s samen. Dit supersedeert eerdere scope-uitsluitingen voor die onderdelen, zonder geografische/leer-/beloningseconomiewijziging. Profiel schema1 blijft apart en optioneel in lokale opslag en backups; favoritePizza kiest nooit een verdiende smaak. Stempel/Gold/postkaart blijven canonieke projecties, demo is uitsluitend een apart expliciet te importeren bestand.
+
+Goedgekeurde rode omslagpixels blijven exact; gekozen kleur is een persoonlijk omslagaccent. Huidige folio’s behouden native verhouding/cap en Venezia behoudt de bestaande contour, voor eigenaarbeoordeling. De grote appicoonbron uit topo-nino-app-icon-v1.zip is niet in onderzochte Git/lokale bronnen gevonden; volledige goedgekeurde Travel-cutout is tijdelijk, geen vervangende icoongoedkeuring. Echte hinge/uitgebreide Vespa uit scope. Eigenaarreview en onafhankelijke Hermes-GO blijven OPEN. Geen merge/deploy/release of bestaande-downloadvervanging.
+
+## 2026-11-06 — NINO-oplevercontract na de speelronde
+
+Eigenaaropdracht op PR71 supersedes de eerdere uitsluiting van de ritpresentatie, de boekkleur in onboarding en profiel, en de getimede pizzapresentatie. Ontdekkingskaart blijft zichtbaar omdat het verschil op gelijke schaal nu duidelijk is; dezelfde paden, doelen en beoordeling, alleen verf in de presentatielaag. Benchmark boek is `367b875:assets/nino/travel-passport/book/masters/passport-open-book.png`, uitsluitend als beeldreferentie omdat QA #45 die als runtime-achtergrond afwees. Stempelpagina's gebruiken de linkerfolio gespiegeld. `coverColor` blijft ongewijzigd in profielschema 1 voor back-upcompatibiliteit, zonder bediening of weergave. Momenten zijn projecties van echte voortgang: geen nieuwe opslag, en herladen of importeren speelt niets opnieuw af. De ritroute is verhalend en geen landkaart, zodat de rit geen ligging verklapt. Echte Pisa-scharnieranimatie blijft buiten scope. Eigenaaracceptatie en Hermes-review zijn OPEN.
+
+## 2026-11-07 — UX-ronde na de speelronde van 6 november
+
+Eigenaaropdracht op PR71. (1) De actieve hoofdtab volgt de gekozen route: lessen uit de reis horen bij **Reis**, vrije oefenvormen bij **Oefenen**. Dit supersedeert het F1-gedrag waarbij **Oefenen** een onderbroken reisles herstelde; een reisles komt nu terug via **Reis → Verder**, met dezelfde vraag, antwoordtekst en selectie. F1 voor vrije oefening blijft. (2) Een overgeslagen kennismaking wordt precies één keer opnieuw aangeboden bij de eerste reisles, met **Maak kennis met Nino** en **Start meteen**; de stand staat apart in `topo-nino-intro-v1`, niet in het profielschema of de back-up. (3) Voor deze proefversie alleen de Schoolkaart. Dit supersedeert de keuze van 6 november om de Ontdekkingskaart zichtbaar te houden. De atlascode en een opgeslagen voorkeur blijven bestaan voor een latere versie met een duidelijke leerfunctie. (4) Eén pizzameter tijdens de les, gebaseerd op de grote illustratie; de compacte lesmeter en de zijpaneelmeter zijn verborgen. (5) De derde pizzadoos zegt **Start de Vespa-rit**. Geen wijziging aan beloningsregels, geografie, leer-engines of opslagschema's. [Bewijs](qa/ux-20261107/README.md).
+
+## 2026-11-07 — UX-ronde 2: boek, postkaarten, knoppen en goudronde
+
+Eigenaaropdrachten op PR71.
+
+1. **Reisboekje.** Het Reisboekje heeft geen interne scrollbalken. De compositie is aangepast, met als vangnet dat een pagina krimpt tot minimaal 0,7.
+2. **Postkaarten.** De achterkant toont Nino's tekst op de bestaande illustratie en draait om binnen dezelfde kaartruimte.
+3. **Ontwerppreview.** De preview is een apart bestand, opgebouwd als de app met een extra laag erbovenop. Toestanden staan alleen in het geheugen, en de ritpreview verandert geen voortgang.
+4. **Knoppen.**
+   - Alle knoppen hebben dezelfde hoogte (44 px voor hulpmiddelen, 48 px voor hoofdacties) en een hoekradius van 12 px.
+   - Hulpmiddelen zijn crème en donkergroen; een gekozen optie wordt donkergroen. Terracotta `#b9502f` is alleen voor de hoofdactie (AA met witte tekst).
+   - **Ik weet het nog niet** en **Overslaan** blijven rustig tot er geantwoord is.
+   - `focus-mode.js/.css` blijven vastgepind. De ontbrekende klasse van de leerbalk wordt daarom in de NINO V2-laag gezet.
+5. **Goudronde.**
+   - Het label **★ Goudronde** hangt alleen af van een lopende sessie met `kind === 'gold'`. De bestaande voortgangsregel verhuist mee, zodat er geen tweede teller ontstaat.
+   - Het resultaat toont één uitkomst: **Goud verdiend**, **Je goud blijft staan** (er was al goud) of **Nog geen goud**. Daarbij staat de score van de hele ronde.
+   - De toetsregels en de motorteksten (`CHAPTER.GOLD*`) zijn niet gewijzigd. De titel wordt in de NINO-laag vervangen.
+6. **Favicon (7 november 2026).** De door de eigenaar aangeleverde N (crème op donkergroen, 16 en 32 px) vervangt de PR65-microiconen als favicon. Alleen twee PNG-links, als data-URI ingebed; geen ICO meer. De PR65-bestanden blijven als geschiedenis. Het grote appicoon blijft ongewijzigd. Hiermee vervalt het PR65-faviconbesluit voor de offline HTML.

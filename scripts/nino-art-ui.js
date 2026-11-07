@@ -14,6 +14,7 @@ function setupNinoIllustrations(){
  return slots;
 }
 const ninoSlots=setupNinoIllustrations();
+const pizzaCelebrations=TopoPizza.createCelebrations({document,reducedMotion:()=>window.matchMedia?.('(prefers-reduced-motion: reduce)').matches||false,onTrip:event=>{TopoArt.update(ninoSlots.arrival,{role:TopoArt.roleFor({phase:'arrival',reward:event})});celebrateTrip(event.from,event.to)}});
 function updateLessonArt(role){
  TopoArt.update(ninoSlots.lesson,{role});$('.ninoLesson').classList.toggle('illustrated',!ninoSlots.lesson.hidden);
 }
@@ -21,7 +22,7 @@ function updatePracticeArt(role){
  TopoArt.update(ninoSlots.practice,{role});$('#freeCoach').classList.toggle('illustrated',!ninoSlots.practice.hidden);
 }
 function clearIllustrations(){
- for(const slot of Object.values(ninoSlots))TopoArt.update(slot,{});
+ for(const slot of Object.values(ninoSlots)){if(slot===ninoSlots.arrival&&pizzaCelebrations.busy)continue;TopoArt.update(slot,{})}
  $('.ninoLesson').classList.remove('illustrated');$('#freeCoach').classList.remove('illustrated');
- $('#vespaTripToast').classList.add('hidden');
+ if(!pizzaCelebrations.busy)$('#vespaTripToast').classList.add('hidden');
 }

@@ -1,3 +1,36 @@
+# NINO 2.0: UX-ronde 7 november 2026, ronde 2
+
+Nieuwe speelbare HTML `output/html/NINO-2-Proefversie-2026-11-07-r2.html` (SHA256 `e5265ae7…093ba0`) en een losse ontwerppreview `output/html/NINO-2-Ontwerppreview-2026-11-07-r2.html`. De preview kiest in het geheugen tussen Steden 7–12, Eilanden en Alles vrijgespeeld, en heeft **Speel Vespa-rit af**. Wat er nieuw is:
+
+- Het Reisboekje past zonder scrollbalken op acht schermformaten.
+- De postkaarten hebben op de achterkant Nino's tekst.
+- De pizzameter is groter.
+- Er is één knoppenstijl: crème en donkergroen voor hulpmiddelen, terracotta voor de hoofdactie. De leerbalk op iPad en telefoon lag onder de tabbalk en is daar weggehaald.
+- Het favicon is nu de N van Nino (crème op donkergroen, 16 en 32 px), ingebed in de offline HTML; het grote appicoon blijft.
+- **★ Goudronde** met vraagnummer staat boven elke goudvraag, met één duidelijke uitkomst op het resultaat.
+
+[Bewijs, voor en na, gespeelde routes en open punten](qa/ux-20261107-r2/README.md). Geen release-GO.
+
+# NINO 2.0 — UX-ronde, 7 november 2026
+
+Eigenaarsbesluiten na het spelen van de HTML van 6 november: een reisles blijft onder **Reis**, een overgeslagen kennismaking wordt bij de eerste reisles één keer opnieuw aangeboden, alleen de Schoolkaart (Ontdekkingskaart-code blijft, achter `NINO_DISCOVERY_MAP`), één pizzameter op een vaste plek, en **Start de Vespa-rit** op de derde doos. Hermes' bevinding over pijltjestoetsen in het Reisboekje na profielbewerking is gereproduceerd en hersteld. Nieuwe HTML `output/html/NINO-2-Proefversie-2026-11-07.html`. [Bewijs, gespeelde routes en open punten](qa/ux-20261107/README.md). Geen release-GO.
+
+# NINO 2.0 — speelbare kandidaat, 6 november 2026
+
+Eén offline HTML voor eigenaarbeoordeling: sterkere Ontdekkingskaart op dezelfde geometrie, pizza's op het tempo van de leerling met geïllustreerde spaarpizza's, onboarding als één Nino-scène zonder boekkleur, Reisboekje als één compositie op de goedgekeurde folio's, verdiende Vespa-rit en stempel- en Gold-momenten die de juiste pagina openen. [Bewijs, demosave en open punten](qa/playable-20261106/README.md). Geen release-GO.
+
+# NINO 2.0 — speelbare kandidaat, 4 november 2026
+
+Onboarding/profiel, doorlopende11-stoproute, alle folio-/stempel-/bestemmingspagina’s en PR29 Pizza Reward V2 zijn samengebracht. F1 blijft behouden. [Actuele proeflink, bewijs, demo en bronbeperking](qa/playable-20261104/README.md). Groot appicoonbron ontbreekt: huidige volledige Travel-cutout is tijdelijk. Eigenaar visueel GO en onafhankelijke Hermes-review OPEN. Geen merge/deploy of bestaande-downloadvervanging.
+
+# PR71 — Hermes F1 repair, 4 November 2026
+
+Reis/Oefenen now preserves the existing exercise mode/question, draft and native selection direction; book continuity and saved scores/rewards remain unchanged. [F1 evidence and exact-artifact Hermes handoff](qa/f1-71/README.md). Independent re-review **OPEN**; the separate artwork-audit warning and owner folio/Venezia/final visual decisions remain open. No merge/deploy/release or approved-download replacement.
+
+# NINO 2 integration candidate — 3 November 2026
+
+Current integration branch: `codex/nino-v2-integration-20261103`, isolated from existing edits. See [candidate evidence and remaining gates](qa/nino-v2-integration/README.md). This supersedes the earlier current-scope exclusions of passport/design work only for this explicitly authorized integration. Historical release/QA records below retain their original scope. No merge, deployment or approved-download replacement is authorized.
+
 # Project state
 
 ## NINO V2 artwork closeout — issue67, 2 November 2026

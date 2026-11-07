@@ -1,0 +1,175 @@
+
+> topo-italie-baseline@0.1.0 release:check
+> npm run build && npm run lint && npm test && npm run audit:release-1-2 && node scripts/audit-map-picker-revision.mjs
+
+
+> topo-italie-baseline@0.1.0 build
+> node scripts/build.mjs
+
+Semantic map tap resolver embedded; original SVG geometry and engines retained
+Original schoolblad overlay embedded; no external assets
+Embedded six byte-verified owner WebPs; no external runtime assets
+Pizza: 85 source assets checksum-verified; inline runtime atlases + board + boxes + approved Nino Travel
+Six background lakes generated from pinned Natural Earth polygons (no simplification)
+Discovery atlas embedded: pinned DEM, live two-choice utility, no external runtime dependency
+Focus Mode embedded: original input, visual viewport sheet, one unchanged map; fully offline
+Embedded pinned PR65 micro favicons; no external icon requests
+Static preview generated from canonical 45 places
+Generated print.html from 45 current worksheet items and 12 groups
+Standalone interactive HTML: output/html/topo-italie-interactief.html
+App, print page, standalone bundle and learning engine JavaScript syntax: OK
+Pinned Nino art, reusable slots and all offline image bytes: OK
+Discovery atlas code, original geometry references and embedded DEM bytes: OK
+Semantic map hit resolver source/standalone parity: OK
+TOPO-NINO Computer release filename and canonical bytes: OK
+45 content entries, anchors, coastal markers, microstates, selected land checks: OK
+Limit: drawn Italy polygon is not an independent geographic ground truth
+Static build: dist/index.html, dist/print.html, dist/printboek.pdf
+
+> topo-italie-baseline@0.1.0 lint
+> node scripts/check-syntax.mjs
+
+App, print page, standalone bundle and learning engine JavaScript syntax: OK
+Pinned Nino art, reusable slots and all offline image bytes: OK
+Discovery atlas code, original geometry references and embedded DEM bytes: OK
+Semantic map hit resolver source/standalone parity: OK
+TOPO-NINO Computer release filename and canonical bytes: OK
+
+> topo-italie-baseline@0.1.0 test
+> node scripts/validate-map.mjs && node scripts/validate-print.mjs && node scripts/learning-engine.test.mjs && node scripts/route-engine.test.mjs && node scripts/exam-flow.test.mjs && node scripts/ui-smoke.test.mjs && node scripts/route-dom.test.mjs && node scripts/work-regression.cjs && node scripts/release-1-dom.test.mjs && node scripts/qa-findings.test.mjs && node scripts/polish.test.mjs && node --test scripts/nino-art.test.mjs && node scripts/geography/lakes.test.mjs && node --test scripts/schoolblad.test.mjs && node --test scripts/discovery-map.test.mjs && node --test scripts/map-hit.test.mjs && node --test scripts/focus-mode.test.mjs && node --test scripts/pizza-reward.test.mjs scripts/nino-profile.test.mjs scripts/nino-experience.test.mjs scripts/nino-moments.test.mjs scripts/nino-ux-round.test.mjs
+
+45 content entries, anchors, coastal markers, microstates, selected land checks: OK
+Limit: drawn Italy polygon is not an independent geographic ground truth
+Printable A4 groups, school photo and all 45 worksheet mappings: OK
+Shuffle, coverage, spaced mistake review, legacy migration and Vespa cadence: OK
+Route locks, stages, repair spacing, gold, persistence, rewards and scheduled review: OK
+Finite geography test, point/write grading, scoring, skips and restart: OK
+Full standalone boot and learn/point/write/exam/reset button flow: OK
+All 11 route chapters and gold tests, dock controls, mode switch, resume and reset: OK
+Real HTML DOM: controls, SVG events, reload, atomic rewards, unique IDs, enclave and storage failure: OK
+PASS: JavaScript syntax; 168 correct answers → 21 pizzas / 7 trips; every 8/24 rollover; reload preserves rewards; duplicate answer cannot earn twice.
+PASS: six-question breaks retain full gold coverage; halfway save/restore; daily goal resets independently of lifetime rewards.
+PASS: adaptive six-task session, skill isolation, restore and legacy migration; 27 source-projected locations; 45 geometry/code baselines; fallback matches live coordinates.
+PASS: three-stage migration preserves writing completion; code sessions removed; tests and adaptive rounds use pointing/writing only.
+Legacy saves, skill isolation, round/lifetime scores, neutral keyboard picker, microstate highlights, river tolerance and daily reset: OK
+QA-1: stage/gold replay daily credit, reload/resubmit idempotence and pizza ledger: PASS
+QA-2: 19 malformed imports preserve exact memory/storage before confirmation; valid schemas 1/2 and interrupted/code migrations: PASS
+Release 1.1: eleven icon references/fallback, continuous route and locked/replay stages, eight-slice copy, NOW gating and truthful Nino outcomes: PASS
+✔ pure role policy: strict Gold, real success, exam suppression and genuine trip only (1.484917ms)
+✔ all six local exports equal manifest hashes and canonical embedded WebP bytes (4911.679833ms)
+✔ pending scenes/postcards stay locked or empty; missing and failed art falls back safely (4968.931292ms)
+✔ canonical engines, geometry, original artwork and print artifacts equal pinned base (5420.926625ms)
+✔ DOM grade/resubmit/reload, chapter completion, Gold/replay/miss preserve base progress and rewards (17459.477167ms)
+✔ free practice wrong-only art, exam suppression, and arrival only at real reward threshold (4144.388541ms)
+ℹ tests 6
+ℹ suites 0
+ℹ pass 6
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 38087.27975
+Six pinned lake polygons, exact projection/envelopes/hashes, Como forks, live/static/offline parity and noninteractive background contract: OK
+✔ one unchanged photograph; pre-existing code exact except the bounded map resolver hotfix (1455.726167ms)
+✔ Learn, Point, Write, exam and route reference opening never mutates a task or progress (5302.663709ms)
+✔ answered/unanswered route and Gold remain exact across cancel; draft answer/caret recover (3976.196334ms)
+✔ modal semantics, keyboard containment and progressive legacy fallback (8187.05825ms)
+ℹ tests 4
+ℹ suites 0
+ℹ pass 4
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 19882.990583
+✔ verified PR27 app retained except isolated atlas and bounded semantic resolver replacement (1256.201958ms)
+✔ pinned DEM bytes embedded, original frame and source land references, no new geographic paths (5013.153834ms)
+✔ activity defaults, explicit persistent choice and exact active-question continuity (8843.190875ms)
+✔ exactly two styles per utility, separate original schoolblad and safe zoom (4303.055125ms)
+ℹ tests 4
+ℹ suites 0
+ℹ pass 4
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 20386.961833
+✔ the only canonical app delta is the bounded resolver; engines, geography, schoolblad and atlas remain exact (1003.900209ms)
+✔ all 45 stable IDs have semantic classes: 27 points and independent polygons/river corridors (5294.486959ms)
+✔ neutral display order is not distance or expected-answer order, and never mutates candidates (4069.230584ms)
+✔ real Rome/Vatican keyboard chooser grades stable IDs with both first/second correct and wrong cases (3837.973ms)
+✔ every point pair keeps its exact source anchors and answer-independent regional framing (4218.236042ms)
+✔ all recorded point collision sets keep noncrossing leaders at compact and wide sizes (4245.682334ms)
+✔ Vatican is illustrated inside Rome with two different noncrossing endpoint targets (4179.296ms)
+✔ approved owner SVG is embedded exactly; shuffled numbers cannot change its drawing (4119.366042ms)
+✔ regional choosers retain distinct volcano/city/state glyphs and source context (4105.741ms)
+✔ picker rendering does not read expected answer and names containment only in Discover (0.526625ms)
+ℹ tests 10
+ℹ suites 0
+ℹ pass 10
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 36207.34275
+✔ P0 iPad hotfix preserves verified PR39 teaching, rewards and source outside explicit changes (1077.256208ms)
+✔ one canonical input/submit; responsive reparenting retains draft, caret, task and saved progress (4371.520833ms)
+✔ visual viewport adapter reads real offsets without editing learner state or field selection (3539.253083ms)
+✔ chapter availability writes are idempotent: no MutationObserver disabled loop (4755.254ms)
+✔ Frosted Parchment keeps children opaque and exposes reduced-transparency/contrast fallbacks (0.446458ms)
+✔ F1 Reis/Oefenen resumes the visible writing question, draft and backward selection without progress changes (4384.572208ms)
+✔ F1 navigation preserves every practice mode; a route lesson stays under Reis and resumes through Verder (4632.697584ms)
+✔ F1 Reis can display the journey from a completed round and Verder resumes the same result screen (4308.2555ms)
+✔ F1 canceled journey reset or lesson change keeps the suspended exercise (4281.81ms)
+ℹ tests 9
+ℹ suites 0
+ℹ pass 9
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 32320.926292
+✔ playable journey exposes all eleven ordered stops, and every book interior uses real folios (5118.650875ms)
+✔ iPad portrait reads a single page; stamps and Gold are projections of real completion state (5637.181625ms)
+✔ reward presentation survives result-screen removal and cannot become detached from the active lesson (4994.130916ms)
+✔ third earned pizza opens the ride once; arrival, book and Verder keep the same exercise and progress (4330.458667ms)
+✔ skip jumps to arrival during motion (5304.832208ms)
+✔ a new stamp invites once and opens its page; reload, reopening and imports never replay it (9719.096375ms)
+✔ restored progress is rebased quietly and legacy colour backups stay valid (4255.428167ms)
+✔ Gold earned in place invites and targets the same chapter page; onboarding and book carry no colour control (4233.291333ms)
+Profile validation, Unicode, safe rendering, skip/cancel, reload, legacy, preference isolation and storage failure passed
+Bounded backup inverse audit, whitespace editing and failed-import rollback passed
+Immediate cosmetic favorite feedback and first-run CTA passed
+✔ scripts/nino-profile.test.mjs (1553.278625ms)
+✔ skipped introduction is offered once at the first route lesson; Start meteen opens it under Reis; never again after reload (9628.61ms)
+✔ Maak kennis met Nino runs the introduction, then the chosen lesson (4578.159833ms)
+✔ completed introduction, legacy saves and existing journey progress go straight to the lesson (12704.917166ms)
+✔ Oefenen marks free practice; route lessons from Reis never mark Oefenen (4303.015959ms)
+✔ only the Schoolkaart is offered; a saved Ontdekkingskaart preference falls back without touching lesson or progress (8053.419583ms)
+✔ one pizza meter in lessons: points, saved pizzas and the last-pizza announcement; legacy meters hidden (4286.189417ms)
+✔ after Bewaar and Annuleren in profile editing, arrow keys page the book again (3780.642667ms)
+✔ a free question on the same place as a suspended route question never restores the route view (4339.042916ms)
+✔ every flavor has all nine atlas cells and eight distinct sector selectors; no reward writes (110.7235ms)
+✔ zero rollover retains just-earned flavor; queue orders pizza, static box, trip once (34.132ms)
+✔ reset cancels pending trip and replay-invalid events cannot fabricate rewards (11.439208ms)
+✔ PR29 approved source and runtime checksums, unique assembly proof (36.740916ms)
+✔ integration applies exactly once and reverse restores untouched baseline (709.609958ms)
+✔ authoritative engine earns 8 answers per pizza and 3 pizzas per trip regardless of favorite (32.118ms)
+✔ bounded art-slot audit rejects unexpected code and altered hooks (12.028541ms)
+✔ Verder first reveals the box, then continues; saved pizzas are illustrated with an accessible count (15.360208ms)
+✔ the third box says Start de Vespa-rit; the first and second keep Verder (22.071625ms)
+ℹ tests 26
+ℹ suites 0
+ℹ pass 26
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 52593.304333
+
+> topo-italie-baseline@0.1.0 audit:release-1-2
+> node scripts/audit-release-1-2.mjs
+
+Source audit PASS: immutable engines/art/44 targets, exact approved Apennines/UI exceptions, fresh print and idempotent offline builds
+PASS exact source, engine, geometry, resolver/grading and standalone preservation; 41425156 bytes; SHA256 14e5a095de69fde1535f132c76af8cde816ae45fa16844b2a098421e56ee0c8f
+release:check exit 0

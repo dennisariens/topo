@@ -27,7 +27,7 @@ try{
   });
   assert.equal(inventory.items.length,45);assert.equal(inventory.chapters.length,11);assert(inventory.images.every(i=>i.ok));
   if(label==='after'){
-   assert.equal(inventory.icons.length,3);assert(inventory.icons.every(i=>i.href.startsWith('data:')));
+   assert.equal(inventory.icons.length,2);assert(inventory.icons.every(i=>i.href.startsWith('data:')));
    assert.deepEqual(inventory.items,result.runs[0].inventory.items);assert.deepEqual(inventory.chapters,result.runs[0].inventory.chapters);
   }
   await p.screenshot({path:new URL(label+'-desktop.png',out).pathname});

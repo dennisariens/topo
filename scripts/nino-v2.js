@@ -79,6 +79,16 @@
  function record(c){return state.route.chapters[c.id]||{stage:0,goldAt:0};}
  function profile(){return window.TopoProfile?.current();}
  const tilt=[-3,2,-1.5,2.5,-2,1.5,-2.5,3,-1,2,-3];
+ const POSTCARD_MESSAGES={
+  sicilia:'Ciao dalla Sicilia!\nVanaf het eiland zie je de Etna, een van de actiefste vulkanen van Europa.\nGroetjes, Nino',
+  sardegna:'Ciao dalla Sardegna!\nLangs de kust vind je baaien met helderblauw water. Welke zou jij willen ontdekken?\nGroetjes, Nino',
+  venezia:'Ciao da Venezia!\nHier varen gondels door de stad. Kijk maar eens hoeveel bruggetjes je kunt tellen.\nGroetjes, Nino',
+  napoli:'Ciao da Napoli!\nDe stad staat bekend om haar pizza. Welke zou jij hier bestellen?\nGroetjes, Nino'
+ };
+ // Largest handwriting size that fits the writing half of the card.
+ function fitMessage(note){if(!note.isConnected||!note.clientHeight)return;let hi=Math.max(10,note.clientWidth/7),lo=8;for(let i=0;i<9;i++){const mid=(hi+lo)/2;note.style.fontSize=mid+'px';if(note.scrollHeight<=note.clientHeight+1&&note.scrollWidth<=note.clientWidth+1)lo=mid;else hi=mid;}note.style.fontSize=lo+'px';}
+ // Safety net after composition: a page that still overflows its paper is scaled down slightly, never scrolled.
+ function fitPage(content){for(const n of content.children)n.style.zoom='';for(let z=1;z>=.7&&content.scrollHeight>content.clientHeight+1;z-=.04)for(const n of content.children)n.style.zoom=String(+z.toFixed(2));content.querySelectorAll('.postcardMessage').forEach(n=>{if(!n.closest('[hidden]'))fitMessage(n);});}
  function renderBook(target){
   const p=profile(),pages=[];
   const page=(heading,fill,keys=[])=>pages.push({heading,fill,keys});
@@ -114,7 +124,11 @@
   },['trips']);
   const cards=[];if(record(ROUTE_CHAPTERS.find(c=>c.id==='islands')).stage===3)cards.push(['sicilia','Sicilia, souvenir van je eilandenles'],['sardegna','Sardegna, souvenir van je eilandenles']);if(state.trips>=3)cards.push(['venezia','Venetië, je derde Vespa-rit']);if(state.trips>=6)cards.push(['napoli','Napels, je zesde Vespa-rit']);
   if(!cards.length)page('Post uit Italië',section=>section.append(make('h3','bookScript','Post uit Italië'),make('p','bookNote','Je postkaarten verschijnen na je eilandenles of een bijbehorende Vespa-rit.')));
-  for(const [key,label]of cards)page(label,section=>{section.append(make('h3','bookScript','Post uit Italië'));const card=make('figure','earnedPostcard');let picture=image(key,'postcardArt');const flip=action('Bekijk achterkant',()=>{const reverse=flip.dataset.reverse!=='true';picture.replaceWith(picture=image(reverse?'reverse':key,'postcardArt'));flip.dataset.reverse=String(reverse);flip.textContent=reverse?'Bekijk voorkant':'Bekijk achterkant';},'bookLink');card.append(picture,make('figcaption',null,label),flip);section.append(card);});
+  // Front and back share one fixed 3:2 card box, so turning the card never moves the page.
+  for(const [key,label]of cards)page(label,section=>{section.append(make('h3','bookScript','Post uit Italië'));const card=make('figure','earnedPostcard'),face=make('div','postcardFace'),front=image(key,'postcardArt postcardFront'),back=make('div','postcardBack'),note=make('p','postcardMessage');
+   note.lang='nl';note.append(...POSTCARD_MESSAGES[key].split('\n').flatMap((line,i)=>i?[make('br'),line]:[line]));back.append(image('reverse','postcardArt'),note);back.hidden=true;face.append(front,back);
+   const flip=action('Bekijk achterkant',()=>{const reverse=back.hidden;back.hidden=!reverse;front.hidden=reverse;flip.textContent=reverse?'Bekijk voorkant':'Bekijk achterkant';flip.setAttribute('aria-pressed',String(reverse));if(reverse)fitMessage(note);},'bookLink');flip.setAttribute('aria-pressed','false');
+   card.append(face,make('figcaption',null,label),flip);section.append(card);});
   if(ROUTE_CHAPTERS.every(c=>record(c).goldAt>0))page('Esploratore d’oro',section=>section.append(make('h3','bookScript','Esploratore d’oro'),image('finalGold','bookFinalGold'),make('p',null,'Alle elf haltes goud. Benissimo!')),['final']);
   if(pages.length%2)page('Jouw volgende herinnering',section=>section.append(make('h3','bookScript','Wordt vervolgd'),make('p','bookNote','Nieuwe herinneringen verschijnen hier als je ze verdient.')));
   if(typeof target==='string'){const found=pages.findIndex(info=>info.keys.includes(target));if(found>=0)leaf=found;}
@@ -124,12 +138,41 @@
   for(const index of visible){const info=pages[index],side=index%2?'right':'left',section=make('section','bookPage illustratedFolio folio-'+side),content=make('div','folioWriting');section.setAttribute('aria-label',info.heading);info.fill(content);
    // Stamp rows need clear paper down to the page foot; the right folio's painted village sits there.
    const quiet=side==='right'&&content.classList.contains('stampFolio');section.append(image(quiet?'folioleft':'folio'+side,'folioPaper'+(quiet?' folioMirrored':'')),content);body.append(section);}
+  if(dialog.open)body.querySelectorAll('.folioWriting').forEach(fitPage);
   previous.disabled=leaf===0;next.disabled=leaf+(isNarrow()?1:2)>=pages.length;pageLabel.textContent=(leaf+1)+(isNarrow()?'':'–'+(leaf+2))+' / '+pages.length;
   // Re-rendering removes a focused page control; keep focus in the book so arrow keys keep paging.
   if(dialog.open&&!dialog.contains(document.activeElement))(next.disabled?previous.disabled?close:previous:next).focus({preventScroll:true});
  }
- function openBook(button,target){if(dialog.open)return;origin=button;scroll=[window.scrollX,window.scrollY];renderBook(target);dialog.showModal();const stamp=typeof target==='string'&&target.includes(':')?body.querySelector('[data-chapter="'+target.split(':')[1]+'"] .stampInspect'):null;(stamp||close).focus();}
+ function openBook(button,target){if(dialog.open)return;origin=button;scroll=[window.scrollX,window.scrollY];renderBook(target);dialog.showModal();body.querySelectorAll('.folioWriting').forEach(fitPage);const stamp=typeof target==='string'&&target.includes(':')?body.querySelector('[data-chapter="'+target.split(':')[1]+'"] .stampInspect'):null;(stamp||close).focus();}
+ // Controls. The learn bar is built without its layout class, so it fell into the page flow under the tab bar.
+ document.querySelector('#focusLearnBar')?.classList.add('focusLearnBar');
+ // Before answering, the map or Controleer is the main action and Ik weet het nog niet/Overslaan is the way out.
+ {const next=document.querySelector('#next'),check=document.querySelector('#check'),mark=()=>next.classList.toggle('ninoQuiet',!state.answered&&state.mode!=='learn'&&!/verder/i.test(next.textContent));
+  if(next){new MutationObserver(mark).observe(next,{childList:true,characterData:true,subtree:true});new MutationObserver(mark).observe(check,{attributes:true,attributeFilter:['disabled','class']});mark();}}
+ // Gold round (Verdien goud / Goud nog eens): marked for the whole active session, directly above the question.
+ // The existing progress line moves along with the label, so there is one counter, on desktop and in the answer sheet.
+ {const head=document.createElement('div'),badge=document.createElement('p'),count=document.getElementById('routeLessonCount'),home=count?.parentNode,after=count?.nextSibling;
+  head.className='ninoGoldHead';head.id='ninoGoldHead';head.hidden=true;badge.className='ninoGoldBadge';badge.textContent='★ Goudronde';head.append(badge);
+  const record=s=>TopoRoute.record(state.route,s.chapterId);
+  const outcome=s=>s.result?.goldEarned?'Goud verdiend':record(s).goldAt>0?'Je goud blijft staan':'Nog geen goud';
+  const score=s=>s.correct+' van '+s.originalTotal+' goed.';
+  const reason=s=>s.result?.goldEarned?' Alle plekken foutloos aangewezen én benoemd.':record(s).goldAt>0?' Je eerder verdiende goud blijft bewaard.':' Voor goud moet alles goed zijn. Je afgeronde halte blijft bewaard.';
+  const mark=()=>{if(!count)return;const s=state.route.active,on=state.mode==='route'&&s?.kind==='gold'&&!s.done&&!!state.current,prompt=document.getElementById('prompt');
+   if(on){if(head.nextElementSibling!==prompt)prompt.before(head);if(count.parentNode!==head)head.append(count);count.textContent='Vraag '+Math.min(s.index+1,s.originalTotal)+' van '+s.originalTotal+' · Alles goed = goud';}
+   else if(count.parentNode===head)home.insertBefore(count,after);
+   head.hidden=!on;document.body.classList.toggle('ninoGoldRound',on);};
+  const wrap=(name,after)=>{const original=window[name];if(typeof original!=='function')return;window[name]=function(...args){const out=original.apply(this,args);after(...args);return out;};};
+  wrap('renderRouteTask',mark);
+  wrap('renderRouteResult',()=>{mark();const s=state.route.active;if(s?.kind!=='gold')return;document.getElementById('prompt').textContent=outcome(s);document.getElementById('help').textContent=score(s)+reason(s);});
+  wrap('renderJourneyFinish',pause=>{mark();const s=state.route.active,screen=document.getElementById('finishScreen');if(s?.kind!=='gold'||!screen)return;
+   if(pause){const b=badge.cloneNode(true);screen.querySelector('#finishTitle')?.before(b);return;}
+   screen.querySelector('#finishTitle').textContent=outcome(s);screen.dataset.goldOutcome=outcome(s);const t=screen.querySelector('#finishTitle+p');if(t)t.textContent=score(s)+reason(s);
+   const items=screen.querySelectorAll('.finishStats>div');if(items.length>=2){items[0].replaceChildren(Object.assign(document.createElement('b'),{textContent:String(s.correct)}),'goed in de goudronde');items[1].replaceChildren(Object.assign(document.createElement('b'),{textContent:String(s.originalTotal-s.correct)}),'oefenmomenten in de goudronde');}});
+  wrap('mode',mark);mark();}
  window.TopoBook={open:openBook,element:dialog};
+ // Decode the book art once while idle, so pages do not pop in image by image when turned.
+ const warm=()=>{for(const [k,a]of Object.entries(art))if(/^(stamp|chapter|folio|cover|welcome|arrival|reverse|sicilia|sardegna|venezia|napoli|finalGold|favorite)/.test(k)){const i=new Image();i.src=a.src;i.decode?.().catch(()=>{});}};
+ (window.requestIdleCallback||((fn)=>setTimeout(fn,1500)))(warm,{timeout:4000});
  dialog.addEventListener('close',()=>{origin?.focus({preventScroll:true});if(scroll)window.scrollTo(...scroll);});
  dialog.addEventListener('keydown',e=>{if(e.target.matches('input,select,textarea'))return;if(e.key==='ArrowRight'&&!next.disabled){e.preventDefault();next.click();}if(e.key==='ArrowLeft'&&!previous.disabled){e.preventDefault();previous.click();}});
  window.addEventListener('resize',()=>{if(dialog.open)renderBook();});

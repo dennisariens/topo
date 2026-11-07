@@ -1,7 +1,7 @@
 /* Owner UX round 7 November 2026: the two requested play routes on the generated offline HTML, plus the book-key check.
    Real Chrome, file://, offline. The only state reads are for assertions and to know where the correct answer is. */
 import assert from 'node:assert/strict';import {mkdirSync,readFileSync,writeFileSync,readdirSync,renameSync,rmSync} from 'node:fs';import {createHash} from 'node:crypto';
-const root=new URL('../',import.meta.url),out=new URL('docs/qa/ux-20261107/',root),file=new URL(process.env.QA_HTML||'output/html/NINO-2-Proefversie-2026-11-07.html',root),demo=new URL('output/demo/NINO-2-DEMO-vlak-voor-derde-pizza.json',root).pathname;
+const root=new URL('../',import.meta.url),previewFile=new URL('output/html/NINO-2-Ontwerppreview-2026-11-07-r2.html',root),out=new URL('docs/qa/ux-20261107-r2/',root),file=new URL(process.env.QA_HTML||'output/html/NINO-2-Proefversie-2026-11-07-r2.html',root),demo=new URL('output/demo/NINO-2-DEMO-vlak-voor-derde-pizza.json',root).pathname;
 mkdirSync(new URL('video/',out),{recursive:true});
 const api=await import(process.env.PLAYWRIGHT_MODULE||'playwright'),engine=process.env.QA_BROWSER||'chrome';
 const browser=await(engine==='webkit'?api.webkit:api.chromium).launch(engine==='webkit'?{}:{executablePath:process.env.CHROME_PATH||'/Applications/Google Chrome.app/Contents/MacOS/Google Chrome'});
@@ -79,6 +79,36 @@ try{
   const m=await meter(p);assert.deepEqual(m.visible,['ninoMeter'],w+': one meter');assert(!m.clipped,w+': no clipped text');assert(m.minFont>=12,w+': font');assert.equal(m.goal,'Nog één pizza tot je Vespa-rit');
   if(w<1300)assert(m.inView,w+': meter visible without scrolling');sizes[w+'x'+h]=m;await shot(p,'E-meter-'+w);await c.close();}
  say('E sizes',sizes);
+
+ // F. F1 in Chrome: Oefenen -> Reis -> Oefenen keeps the same question, draft and backward selection.
+ {const {c,p}=await open({width:1366,height:768,storage:{'topo-nino-intro-v1':'done','topo-nino-profile-v1':JSON.stringify({schema:1,name:'',coverColor:'riviera',favoritePizza:null})}});
+  await p.getByRole('button',{name:'Oefenen',exact:true}).click();await p.locator('nav.practiceModes [data-mode="write"]').click();await p.waitForTimeout(200);
+  const q=await p.evaluate(()=>state.current.id);await p.locator('#answer').fill('Navigatieconcept');await p.locator('#answer').evaluate(n=>{n.focus();n.setSelectionRange(3,10,'backward')});
+  await p.getByRole('button',{name:'Reis',exact:true}).click();assert.equal(await tab(p),'Reis');await shot(p,'F1-reis-from-practice');await p.getByRole('button',{name:'Oefenen',exact:true}).click();await p.waitForTimeout(200);
+  const r=await p.evaluate(()=>({id:state.current.id,mode:state.mode,value:document.querySelector('#answer').value,sel:[document.querySelector('#answer').selectionStart,document.querySelector('#answer').selectionEnd,document.querySelector('#answer').selectionDirection]}));
+  assert.deepEqual(r,{id:q,mode:'write',value:'Navigatieconcept',sel:[3,10,'backward']});assert.equal(await tab(p),'Oefenen');await shot(p,'F2-practice-restored');say('F F1',{...r,tab:await tab(p)});await c.close();}
+
+ // G. Design preview: three direct states, every book page and both sides of all four postcards fit without inner scrollbars.
+ const book={};for(const [w,h] of [[1500,950],[1366,768],[1180,820],[820,1180],[768,1024],[390,844],[375,667],[320,568]]){
+  const c=await browser.newContext({offline:true,viewport:{width:w,height:h},deviceScaleFactor:w<800?2:1,hasTouch:w<1200}),p=await c.newPage();p.on('pageerror',e=>errors.push(e.message));p.on('request',r=>{if(!/^(file:|data:|blob:)/.test(r.url()))network.push(r.url())});
+  await p.goto(previewFile.href+'#volledig');await p.waitForTimeout(2500);await p.getByRole('button',{name:'Reisboekje',exact:true}).click();await p.locator('#travelBook[open]').waitFor();
+  const next=p.locator('#travelBook .bookFooter button',{hasText:'Volgende'}),pages=[],backs=[];
+  const check=()=>p.evaluate(()=>{const d=document.querySelector('#travelBook'),o=[],vh=innerHeight,vw=innerWidth;if(d.scrollHeight>d.clientHeight+1||d.scrollWidth>d.clientWidth+1)o.push('book scrolls');
+   for(const f of d.querySelectorAll('.folioWriting')){if(f.scrollHeight>f.clientHeight+1||f.scrollWidth>f.clientWidth+1)o.push('page overflow '+f.closest('section').getAttribute('aria-label'));const fr=f.getBoundingClientRect();for(const b of f.querySelectorAll('button')){const q=b.getBoundingClientRect();if(q.bottom>fr.bottom+1||q.top<fr.top-1||q.bottom>vh||q.right>vw||q.height<43.5)o.push('button '+b.textContent)}for(const t of f.querySelectorAll('p,h3,h4,li,figcaption')){const q=t.getBoundingClientRect();if(q.height&&(q.bottom>fr.bottom+1||q.right>fr.right+2))o.push('text out '+t.textContent.slice(0,20))}}
+   for(const m of d.querySelectorAll('.postcardMessage'))if(!m.closest('[hidden]')&&(m.scrollHeight>m.clientHeight+1))o.push('message overflow');
+   for(const b of d.querySelectorAll('.bookFooter button,.bookHeader button')){const q=b.getBoundingClientRect();if(q.bottom>vh||q.top<0)o.push('nav out '+b.textContent)}
+   return {label:d.querySelector('.bookFooter .micro').textContent,zoom:[...d.querySelectorAll('.folioWriting>*')].map(n=>n.style.zoom).filter(Boolean)[0]||'1',fonts:[...d.querySelectorAll('.postcardMessage')].filter(m=>!m.closest('[hidden]')).map(m=>parseFloat(m.style.fontSize)),o}});
+  for(let n=0;n<20;n++){const r=await check();assert.deepEqual(r.o,[],w+'x'+h+' '+r.label);pages.push(r.label+(r.zoom!=='1'?' (zoom '+r.zoom+')':''));
+   if([1366,820,390].includes(w))await shot(p,'G-book-'+w+'-'+String(n+1).padStart(2,'0'));
+   for(const flip of await p.locator('#travelBook .earnedPostcard .bookLink').all()){const fig=flip.locator('xpath=ancestor::figure'),box=await fig.boundingBox();await flip.click();const rb=await check();assert.deepEqual(rb.o,[],w+' back '+rb.label);assert.deepEqual(await fig.boundingBox(),box,'same card space');backs.push({label:await fig.locator('figcaption').textContent(),font:rb.fonts.map(f=>f.toFixed(1)).join()});if([1366,820,390].includes(w))await shot(p,'G-back-'+w+'-'+backs.length);await flip.click();}
+   if(await next.isDisabled())break;await next.click();await p.waitForTimeout(80);}
+  assert.equal(backs.length,4,w+': all four postcard backs');book[w+'x'+h]={pages,backs};await c.close();}
+ say('G book fit',book);
+ {const {c,p}=await open({width:1180,height:820});await p.goto(previewFile.href+'#eilanden');await p.waitForTimeout(500);await shot(p,'G-preview-eilanden');await p.goto(previewFile.href+'#steden-7-12');await p.waitForTimeout(500);await shot(p,'G-preview-steden-7-12');
+  const before=await p.evaluate(()=>localStorage.getItem('topo-italie-v3'));await p.getByRole('button',{name:'Speel Vespa-rit af'}).click();const phases=[];for(let t=0;t<8000;t+=100){const ph=await p.locator('.vespaRide').getAttribute('data-phase');if(phases.at(-1)!==ph){phases.push(ph);await shot(p,'G-ride-preview-'+ph);}if(ph==='arrived')break;await p.waitForTimeout(100);}
+  assert.deepEqual(phases,['depart','ride','arrived']);await p.getByRole('button',{name:'Verder',exact:true}).click();assert.equal(await p.evaluate(()=>localStorage.getItem('topo-italie-v3')),before);assert.equal(await p.evaluate(()=>state.trips),0);
+  say('G ride preview',{phases,unchanged:true});await c.close();}
+ {const {c,p}=await open({width:768,height:1024,reducedMotion:'reduce'});await p.goto(previewFile.href+'#volledig');await p.waitForTimeout(500);await p.getByRole('button',{name:'Speel Vespa-rit af'}).click();assert.equal(await p.locator('.vespaRide').getAttribute('data-phase'),'arrived');await shot(p,'G-ride-preview-reduced');say('G ride preview reduced',{phase:'arrived',trips:await p.evaluate(()=>state.trips)});await c.close();}
 }finally{
  await browser.close();
  say('errors',{errors,network});

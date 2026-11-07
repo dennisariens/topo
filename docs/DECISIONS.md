@@ -224,3 +224,20 @@ Eigenaaropdracht op PR71 supersedes de eerdere uitsluiting van de ritpresentatie
 ## 2026-11-07 — UX-ronde na de speelronde van 6 november
 
 Eigenaaropdracht op PR71. (1) De actieve hoofdtab volgt de gekozen route: lessen uit de reis horen bij **Reis**, vrije oefenvormen bij **Oefenen**. Dit supersedeert het F1-gedrag waarbij **Oefenen** een onderbroken reisles herstelde; een reisles komt nu terug via **Reis → Verder**, met dezelfde vraag, antwoordtekst en selectie. F1 voor vrije oefening blijft. (2) Een overgeslagen kennismaking wordt precies één keer opnieuw aangeboden bij de eerste reisles, met **Maak kennis met Nino** en **Start meteen**; de stand staat apart in `topo-nino-intro-v1`, niet in het profielschema of de back-up. (3) Voor deze proefversie alleen de Schoolkaart. Dit supersedeert de keuze van 6 november om de Ontdekkingskaart zichtbaar te houden. De atlascode en een opgeslagen voorkeur blijven bestaan voor een latere versie met een duidelijke leerfunctie. (4) Eén pizzameter tijdens de les, gebaseerd op de grote illustratie; de compacte lesmeter en de zijpaneelmeter zijn verborgen. (5) De derde pizzadoos zegt **Start de Vespa-rit**. Geen wijziging aan beloningsregels, geografie, leer-engines of opslagschema's. [Bewijs](qa/ux-20261107/README.md).
+
+## 2026-11-07 — UX-ronde 2: boek, postkaarten, knoppen en goudronde
+
+Eigenaaropdrachten op PR71.
+
+1. **Reisboekje.** Het Reisboekje heeft geen interne scrollbalken. De compositie is aangepast, met als vangnet dat een pagina krimpt tot minimaal 0,7.
+2. **Postkaarten.** De achterkant toont Nino's tekst op de bestaande illustratie en draait om binnen dezelfde kaartruimte.
+3. **Ontwerppreview.** De preview is een apart bestand, opgebouwd als de app met een extra laag erbovenop. Toestanden staan alleen in het geheugen, en de ritpreview verandert geen voortgang.
+4. **Knoppen.**
+   - Alle knoppen hebben dezelfde hoogte (44 px voor hulpmiddelen, 48 px voor hoofdacties) en een hoekradius van 12 px.
+   - Hulpmiddelen zijn crème en donkergroen; een gekozen optie wordt donkergroen. Terracotta `#b9502f` is alleen voor de hoofdactie (AA met witte tekst).
+   - **Ik weet het nog niet** en **Overslaan** blijven rustig tot er geantwoord is.
+   - `focus-mode.js/.css` blijven vastgepind. De ontbrekende klasse van de leerbalk wordt daarom in de NINO V2-laag gezet.
+5. **Goudronde.**
+   - Het label **★ Goudronde** hangt alleen af van een lopende sessie met `kind === 'gold'`. De bestaande voortgangsregel verhuist mee, zodat er geen tweede teller ontstaat.
+   - Het resultaat toont één uitkomst: **Goud verdiend**, **Je goud blijft staan** (er was al goud) of **Nog geen goud**. Daarbij staat de score van de hele ronde.
+   - De toetsregels en de motorteksten (`CHAPTER.GOLD*`) zijn niet gewijzigd. De titel wordt in de NINO-laag vervangen.

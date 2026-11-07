@@ -561,6 +561,65 @@ body.ninoSchoolMapOnly .atlasOptions{display:none!important}
 .ninoIntroOffer p{margin:0 0 14px;line-height:1.45}
 .ninoIntroOffer .introActions{display:grid;gap:10px}
 .ninoIntroOffer .button{min-height:48px;width:100%;font-size:16px}
+
+/* ── NINO controls: Nino meets iOS, Italian palette ──────────────────────────
+   One control height and corner radius. Tools are cream with forest text; a selected
+   choice is forest; terracotta (AA on white text) is reserved for the main action. */
+:root{--ctl-h:44px;--ctl-main-h:48px;--ctl-r:12px;--ctl-gap:8px;--ctl-cream:#fffaf0;--ctl-line:#d6e0d6;--ctl-forest:#073f3b;--ctl-tint:#e4f0e8;--ctl-terra:#b9502f;--ctl-terra-edge:#93391f}
+/* Tools */
+body :is(.layout,#quiz,#focusMenu,#focusAnswerSheet) .button:not(.primary),body .mapTools button,body .atlasZoom button,body .focusCameraTools button,body .schoolbladButton,body #focusSheetToggle,body #focusMenu>summary,body .focusMenuSettings summary{min-height:var(--ctl-h);border:1px solid var(--ctl-line);border-radius:var(--ctl-r);background:var(--ctl-cream);color:var(--ctl-forest);font-weight:700;box-shadow:none;line-height:1.2}
+body .mapTools button,body .atlasZoom button,body .focusCameraTools button,body .schoolbladButton{font-size:14px;padding:8px 14px}
+body .atlasZoom button{min-width:var(--ctl-h);padding-inline:10px}
+body .mapTools button:hover,body :is(.layout,#quiz,#focusMenu,#focusAnswerSheet) .button:not(.primary):hover{background:var(--ctl-tint)}
+body .focusCameraTools button[aria-pressed="true"],body .focusCameraTools button.active{background:var(--ctl-tint);border-color:#7fa99a}
+body .focusCameraTools button:disabled{background:#efede6;color:#7a7a72;border-color:#dcd8ce}
+/* Selected choice: forest, not the main-action colour */
+body :is(nav.practiceModes,#focusMenu) .tab.active{background:var(--ctl-forest);border-color:var(--ctl-forest);color:#fff;box-shadow:none}
+/* Main action */
+body .button.primary,body .journeyScreen .button.primary,body #focusAnswerSheet #check,body #focusLearnBar #learnNext{min-height:var(--ctl-main-h);background:var(--ctl-terra);border:1px solid var(--ctl-terra-edge);border-radius:var(--ctl-r);color:#fff;font-weight:800;box-shadow:0 2px 0 var(--ctl-terra-edge)}
+body .button.primary:hover,body #focusAnswerSheet #check:hover{background:#a64627}
+body .button.primary:disabled,body #focusAnswerSheet #check:disabled{background:#d9b8ab;border-color:#cfa898;box-shadow:none;color:#fff}
+/* "Ik weet het nog niet" / "Overslaan" are a way out, not the main action: quiet until answered. */
+body #next.ninoQuiet{background:var(--ctl-cream);border:1px solid var(--ctl-line);color:var(--ctl-forest);box-shadow:none;font-weight:700}
+/* Answer row: field and Controleer share one height; the button drops below on narrow panels. */
+body #inputWrap{display:flex;flex-wrap:wrap;align-items:stretch;gap:var(--ctl-gap)}
+body #inputWrap #answer{flex:1 1 170px;min-width:0;min-height:var(--ctl-main-h);border-radius:var(--ctl-r);margin:0}
+body #inputWrap #check{flex:1 0 auto;min-height:var(--ctl-main-h);margin:0;padding:8px 16px}
+body #quiz>.buttons{display:flex;flex-wrap:wrap;gap:var(--ctl-gap);margin-top:10px}
+body #quiz>.buttons>button{flex:1 1 auto;margin:0}
+body .mapSwitches,body .focusCameraTools,body .atlasZoom{display:flex;flex-wrap:wrap;gap:var(--ctl-gap);align-items:center}
+body .mapTools{row-gap:var(--ctl-gap)}
+/* Small text buttons keep a full touch target */
+body button.reset{display:inline-flex;align-items:center;min-height:var(--ctl-h);padding:8px 4px}
+/* Phone and iPad: header, menu and answer sheet */
+body[data-focus-shell="true"] #focusMenu{top:calc(4px + var(--focus-vv-top,0px) + var(--focus-safe-top,0px))}
+body[data-focus-shell="true"] #focusMenu>summary{min-height:40px;padding:6px 14px;font-size:14px}
+body[data-focus-shell="true"] .ninoNav{top:calc(50px + var(--focus-safe-top,0px) + var(--focus-vv-top,0px))}
+body[data-focus-mode="true"] .mapCard{top:calc(106px + var(--focus-safe-top,0px) + var(--focus-vv-top,0px));height:calc(var(--focus-layout-height,100svh) - 116px - var(--focus-safe-top,0px) - var(--focus-safe-bottom,0px))}
+body[data-focus-shell="true"] .layout.routeHomeLayout,body[data-focus-shell="true"] .layout.finishLayout{margin-top:114px}
+body #focusMenu .focusMenuPanel{top:46px;padding:16px;border-radius:16px;border-color:#d8e3d9}
+body #focusMenu .focusMenuPanel>strong{display:block;margin-bottom:8px}
+body #focusMenu nav.practiceModes{display:grid!important;grid-template-columns:repeat(auto-fit,minmax(104px,1fr));gap:var(--ctl-gap);margin:0 0 14px;padding:0;background:none;border:0;box-shadow:none}
+body #focusMenu nav.practiceModes .tab{width:auto;min-width:0;min-height:var(--ctl-h);margin:0;padding:8px 10px;font-size:14px;white-space:normal;overflow-wrap:normal;hyphens:manual}
+body #focusMenu #reveal,body #focusMenu #mistakes{font-size:14px;margin:0 var(--ctl-gap) var(--ctl-gap) 0;width:auto}
+body #focusAnswerSheet{padding:12px 14px 14px;border-radius:18px}
+body #focusAnswerSheet #focusSheetToggle{float:right;position:static;width:auto;min-width:0;margin:0 0 6px 10px;padding:6px 12px;font-size:13px}
+body #focusAnswerSheet #quiz .prompt{margin:4px 0 10px}
+body #focusAnswerSheet #inputWrap,body #focusAnswerSheet #quiz>.buttons{clear:both}
+/* After answering, the field keeps the answer and the spent Controleer steps aside for Volgende. */
+body[data-focus-answered="true"] #focusAnswerSheet #check{display:none}
+body #focusMenu .focusMenuSettings summary{padding:8px 14px}
+body #focusLearnBar{padding:8px 10px 8px 14px;border-radius:18px;gap:12px}
+body #focusLearnBar #learnNext{font-size:14px;padding:8px 14px}
+/* Gold round label: quiet gold accent on cream, always right above the question */
+.ninoGoldHead{display:flex;flex-wrap:wrap;align-items:center;gap:6px 10px;margin:0 0 8px}
+.ninoGoldHead[hidden]{display:none!important}
+.ninoGoldBadge{display:inline-flex;align-items:center;margin:0;padding:4px 12px;border:1px solid #d9b65a;border-radius:999px;background:#fff6dc;color:#6b4c07;font-size:14px;font-weight:800;line-height:1.3;letter-spacing:.01em}
+.ninoGoldHead #routeLessonCount{display:block;margin:0;color:#5a4a1e;font-size:13px;font-weight:700;line-height:1.3}
+.finishScreen>.ninoGoldBadge{margin:0 auto 8px}
+body.ninoGoldRound #focusLessonStatus{display:none!important}
+/* The answer sheet hides extra #quiz children with id-weighted :not() selectors; the gold label must stay. */
+#focusAnswerSheet#focusAnswerSheet #quiz#quiz>#ninoGoldHead#ninoGoldHead:not([hidden]){display:flex!important;margin:0 0 6px}
 .ninoProfile{box-sizing:border-box;width:min(560px,calc(100vw - 24px));max-height:calc(100dvh - 16px);overflow:auto;border:0;border-radius:24px;background:#fff8e8;color:#183b3a;padding:0;box-shadow:0 24px 90px #132f3a66}.ninoProfile::backdrop{background:#123c3fa6}.ninoProfile form{margin:0;padding:18px 22px 20px}.ninoProfile h2{font-size:24px;line-height:1.15;letter-spacing:-.02em;margin:0}.ninoProfile p{line-height:1.45;margin:6px 0 0}
 .profileBubble{position:relative;background:#fffdf6;border-radius:18px;padding:12px 16px;box-shadow:0 4px 16px #33291a33}
 .ninoFirstRun form{padding:0 0 18px}.ninoFirstRun form>*:not(.profileScene){margin-left:22px;margin-right:22px}
@@ -691,10 +750,41 @@ body[data-focus-shell="true"]>header{height:44px;min-height:44px}
 #focusAnswerSheet .ninoMeterSaved{grid-row:1/3;grid-column:2;justify-self:end}
 #focusAnswerSheet .ninoMeter .ninoMeterSaved .pizzaSlot{width:28px;height:28px}
 #focusAnswerSheet .ninoMeterGoal{grid-column:1;font-size:12.5px}
-@media(max-width:420px){#focusAnswerSheet .ninoMeterInfo{grid-template-columns:1fr}#focusAnswerSheet .ninoMeterSaved{grid-row:auto;grid-column:1;justify-self:start}#focusAnswerSheet .ninoMeter .ninoMeterWheel{width:56px;height:56px}#focusAnswerSheet .ninoMeter .ninoMeterSaved .pizzaSlot{width:24px;height:24px}}
 #focusAnswerSheet[data-collapsed="true"] #ninoMeter,body[data-focus-keyboard="true"][data-focus-answered="false"][data-focus-task="write"] #focusAnswerSheet #ninoMeter{display:none!important}
 @media(prefers-reduced-motion:reduce){.ninoMeterBump .ninoMeterWheel{animation:none}}
 @media print{#ninoMeter{display:none!important}}
+
+/* Reisboekje fits every page on its paper (no inner scrollbars), also with all stops, Gold, seven rides and four postcards. */
+.folioWriting{overflow:hidden;inset-block:12.5% 11%}
+.folioWriting .bookScript{font-size:clamp(18px,6.4cqw,34px)!important;margin-block-end:2cqw}
+.folioWriting p,.folioWriting .micro,.earnedPostcard figcaption{font-size:clamp(12px,2.9cqw,16px);line-height:1.32}
+.folioWriting .bookStamp,.folioWriting .bookStamp:nth-of-type(odd){grid-template-columns:25cqw minmax(0,1fr);gap:3cqw;padding:1cqw 0}
+.folioWriting .bookStamp:nth-of-type(even){grid-template-columns:minmax(0,1fr) 25cqw}
+.folioWriting .bookStamp h4{font-size:clamp(13px,3.2cqw,17px)}
+.folioWriting .chapterSeal{left:18cqw;bottom:0;width:7.5cqw;min-width:24px}
+.folioWriting .bookStamp:nth-of-type(even) .chapterSeal{left:auto;right:18cqw}
+.folioWriting .arrivalStamp{width:50%;max-height:34cqw;object-fit:contain;margin-bottom:1cqw}
+.folioWriting .destinationList{columns:2;column-gap:4cqw;font-size:clamp(12px,2.9cqw,16px);line-height:1.45}
+.folioWriting .destinationList li{break-inside:avoid}
+.folioWriting .bookFinalGold{width:64%;max-height:60cqw;object-fit:contain}
+.folioWriting .bookPortrait{width:48%}
+.folioWriting .bookFact{padding:.7cqw 0}
+.folioWriting .bookFact strong{font-size:clamp(15px,4cqw,22px)}
+.folioWriting .pizzaSlot,.bookPage .pizzaSlot{width:clamp(30px,11cqw,60px);height:clamp(30px,11cqw,60px)}
+.folioWriting .bookLink{padding-block:6px;min-height:44px;font-size:clamp(13px,2.9cqw,16px)}
+@media(max-width:480px){.folioWriting .bookStamp,.folioWriting .bookStamp:nth-of-type(odd){grid-template-columns:26cqw minmax(0,1fr)}.folioWriting .bookStamp:nth-of-type(even){grid-template-columns:minmax(0,1fr) 26cqw}}
+/* Postcards: one fixed card box for front and back; Nino's message sits on the back's writing half. */
+.postcardFace{position:relative;aspect-ratio:3/2;transform:rotate(-1.5deg);filter:drop-shadow(0 4px 6px #3b271655)}
+.postcardFace>.postcardArt,.postcardBack,.postcardBack>.postcardArt{position:absolute;inset:0;width:100%;height:100%;max-height:none;object-fit:contain;transform:none;filter:none}
+.postcardFace [hidden]{display:none!important}
+.postcardMessage{position:absolute;left:11%;top:15%;width:40%;height:68%;margin:0!important;overflow:hidden;color:#2f4a7a!important;font-family:"Bradley Hand","Segoe Print","Snell Roundhand",cursive;font-weight:600;line-height:1.22!important;transform:rotate(-1deg);text-wrap:pretty}
+/* One large lesson pizza meter, the size of the former side-panel meter. */
+.ninoMeter .ninoMeterWheel{width:104px;height:104px}
+#focusAnswerSheet .ninoMeter .ninoMeterWheel{width:72px;height:72px}
+@media(max-width:420px){#focusAnswerSheet .ninoMeterInfo{grid-template-columns:1fr}#focusAnswerSheet .ninoMeterSaved{grid-row:auto;grid-column:1;justify-self:start}#focusAnswerSheet .ninoMeter .ninoMeterWheel{width:64px;height:64px}#focusAnswerSheet .ninoMeter .ninoMeterSaved .pizzaSlot{width:24px;height:24px}}
+/* Tilted stamps and cards keep their corners inside the page. */
+.stampArt{width:94%;margin-inline:auto}.postcardFace{margin-inline:3%}
+@media (max-width:360px){.folioWriting .bookPortrait{width:42%}}
 /* END NINO V2 CSS */</style></head><body>
 <header><div class="brandWrap"><div class="brandMark" aria-hidden="true"></div><div class="brand"><small>Ontdek · onthoud · herhaal</small>TOPO / ITALIË</div></div><div class="stats"><div class="stat">Goed<strong id="good">0</strong></div><div class="stat">Reeks<strong id="streak">0</strong></div><div class="stat">Pizza's<strong id="pizzas">0</strong></div></div></header><div id="vespaTripToast" class="vespaTripToast hidden" aria-hidden="true"><div class="ninoTrip" aria-hidden="true"></div><strong id="vespaTripText"></strong></div>
 <svg id="topoIconSprite" aria-hidden="true" focusable="false" width="0" height="0" style="position:absolute;overflow:hidden"><defs>
@@ -2542,6 +2632,16 @@ const NINO_V2_ART={"cover":{"path":"assets/nino/travel-passport/book/exports/pas
  function record(c){return state.route.chapters[c.id]||{stage:0,goldAt:0};}
  function profile(){return window.TopoProfile?.current();}
  const tilt=[-3,2,-1.5,2.5,-2,1.5,-2.5,3,-1,2,-3];
+ const POSTCARD_MESSAGES={
+  sicilia:'Ciao dalla Sicilia!\nVanaf het eiland zie je de Etna, een van de actiefste vulkanen van Europa.\nGroetjes, Nino',
+  sardegna:'Ciao dalla Sardegna!\nLangs de kust vind je baaien met helderblauw water. Welke zou jij willen ontdekken?\nGroetjes, Nino',
+  venezia:'Ciao da Venezia!\nHier varen gondels door de stad. Kijk maar eens hoeveel bruggetjes je kunt tellen.\nGroetjes, Nino',
+  napoli:'Ciao da Napoli!\nDe stad staat bekend om haar pizza. Welke zou jij hier bestellen?\nGroetjes, Nino'
+ };
+ // Largest handwriting size that fits the writing half of the card.
+ function fitMessage(note){if(!note.isConnected||!note.clientHeight)return;let hi=Math.max(10,note.clientWidth/7),lo=8;for(let i=0;i<9;i++){const mid=(hi+lo)/2;note.style.fontSize=mid+'px';if(note.scrollHeight<=note.clientHeight+1&&note.scrollWidth<=note.clientWidth+1)lo=mid;else hi=mid;}note.style.fontSize=lo+'px';}
+ // Safety net after composition: a page that still overflows its paper is scaled down slightly, never scrolled.
+ function fitPage(content){for(const n of content.children)n.style.zoom='';for(let z=1;z>=.7&&content.scrollHeight>content.clientHeight+1;z-=.04)for(const n of content.children)n.style.zoom=String(+z.toFixed(2));content.querySelectorAll('.postcardMessage').forEach(n=>{if(!n.closest('[hidden]'))fitMessage(n);});}
  function renderBook(target){
   const p=profile(),pages=[];
   const page=(heading,fill,keys=[])=>pages.push({heading,fill,keys});
@@ -2577,7 +2677,11 @@ const NINO_V2_ART={"cover":{"path":"assets/nino/travel-passport/book/exports/pas
   },['trips']);
   const cards=[];if(record(ROUTE_CHAPTERS.find(c=>c.id==='islands')).stage===3)cards.push(['sicilia','Sicilia, souvenir van je eilandenles'],['sardegna','Sardegna, souvenir van je eilandenles']);if(state.trips>=3)cards.push(['venezia','Venetië, je derde Vespa-rit']);if(state.trips>=6)cards.push(['napoli','Napels, je zesde Vespa-rit']);
   if(!cards.length)page('Post uit Italië',section=>section.append(make('h3','bookScript','Post uit Italië'),make('p','bookNote','Je postkaarten verschijnen na je eilandenles of een bijbehorende Vespa-rit.')));
-  for(const [key,label]of cards)page(label,section=>{section.append(make('h3','bookScript','Post uit Italië'));const card=make('figure','earnedPostcard');let picture=image(key,'postcardArt');const flip=action('Bekijk achterkant',()=>{const reverse=flip.dataset.reverse!=='true';picture.replaceWith(picture=image(reverse?'reverse':key,'postcardArt'));flip.dataset.reverse=String(reverse);flip.textContent=reverse?'Bekijk voorkant':'Bekijk achterkant';},'bookLink');card.append(picture,make('figcaption',null,label),flip);section.append(card);});
+  // Front and back share one fixed 3:2 card box, so turning the card never moves the page.
+  for(const [key,label]of cards)page(label,section=>{section.append(make('h3','bookScript','Post uit Italië'));const card=make('figure','earnedPostcard'),face=make('div','postcardFace'),front=image(key,'postcardArt postcardFront'),back=make('div','postcardBack'),note=make('p','postcardMessage');
+   note.lang='nl';note.append(...POSTCARD_MESSAGES[key].split('\n').flatMap((line,i)=>i?[make('br'),line]:[line]));back.append(image('reverse','postcardArt'),note);back.hidden=true;face.append(front,back);
+   const flip=action('Bekijk achterkant',()=>{const reverse=back.hidden;back.hidden=!reverse;front.hidden=reverse;flip.textContent=reverse?'Bekijk voorkant':'Bekijk achterkant';flip.setAttribute('aria-pressed',String(reverse));if(reverse)fitMessage(note);},'bookLink');flip.setAttribute('aria-pressed','false');
+   card.append(face,make('figcaption',null,label),flip);section.append(card);});
   if(ROUTE_CHAPTERS.every(c=>record(c).goldAt>0))page('Esploratore d’oro',section=>section.append(make('h3','bookScript','Esploratore d’oro'),image('finalGold','bookFinalGold'),make('p',null,'Alle elf haltes goud. Benissimo!')),['final']);
   if(pages.length%2)page('Jouw volgende herinnering',section=>section.append(make('h3','bookScript','Wordt vervolgd'),make('p','bookNote','Nieuwe herinneringen verschijnen hier als je ze verdient.')));
   if(typeof target==='string'){const found=pages.findIndex(info=>info.keys.includes(target));if(found>=0)leaf=found;}
@@ -2587,12 +2691,41 @@ const NINO_V2_ART={"cover":{"path":"assets/nino/travel-passport/book/exports/pas
   for(const index of visible){const info=pages[index],side=index%2?'right':'left',section=make('section','bookPage illustratedFolio folio-'+side),content=make('div','folioWriting');section.setAttribute('aria-label',info.heading);info.fill(content);
    // Stamp rows need clear paper down to the page foot; the right folio's painted village sits there.
    const quiet=side==='right'&&content.classList.contains('stampFolio');section.append(image(quiet?'folioleft':'folio'+side,'folioPaper'+(quiet?' folioMirrored':'')),content);body.append(section);}
+  if(dialog.open)body.querySelectorAll('.folioWriting').forEach(fitPage);
   previous.disabled=leaf===0;next.disabled=leaf+(isNarrow()?1:2)>=pages.length;pageLabel.textContent=(leaf+1)+(isNarrow()?'':'–'+(leaf+2))+' / '+pages.length;
   // Re-rendering removes a focused page control; keep focus in the book so arrow keys keep paging.
   if(dialog.open&&!dialog.contains(document.activeElement))(next.disabled?previous.disabled?close:previous:next).focus({preventScroll:true});
  }
- function openBook(button,target){if(dialog.open)return;origin=button;scroll=[window.scrollX,window.scrollY];renderBook(target);dialog.showModal();const stamp=typeof target==='string'&&target.includes(':')?body.querySelector('[data-chapter="'+target.split(':')[1]+'"] .stampInspect'):null;(stamp||close).focus();}
+ function openBook(button,target){if(dialog.open)return;origin=button;scroll=[window.scrollX,window.scrollY];renderBook(target);dialog.showModal();body.querySelectorAll('.folioWriting').forEach(fitPage);const stamp=typeof target==='string'&&target.includes(':')?body.querySelector('[data-chapter="'+target.split(':')[1]+'"] .stampInspect'):null;(stamp||close).focus();}
+ // Controls. The learn bar is built without its layout class, so it fell into the page flow under the tab bar.
+ document.querySelector('#focusLearnBar')?.classList.add('focusLearnBar');
+ // Before answering, the map or Controleer is the main action and Ik weet het nog niet/Overslaan is the way out.
+ {const next=document.querySelector('#next'),check=document.querySelector('#check'),mark=()=>next.classList.toggle('ninoQuiet',!state.answered&&state.mode!=='learn'&&!/verder/i.test(next.textContent));
+  if(next){new MutationObserver(mark).observe(next,{childList:true,characterData:true,subtree:true});new MutationObserver(mark).observe(check,{attributes:true,attributeFilter:['disabled','class']});mark();}}
+ // Gold round (Verdien goud / Goud nog eens): marked for the whole active session, directly above the question.
+ // The existing progress line moves along with the label, so there is one counter, on desktop and in the answer sheet.
+ {const head=document.createElement('div'),badge=document.createElement('p'),count=document.getElementById('routeLessonCount'),home=count?.parentNode,after=count?.nextSibling;
+  head.className='ninoGoldHead';head.id='ninoGoldHead';head.hidden=true;badge.className='ninoGoldBadge';badge.textContent='★ Goudronde';head.append(badge);
+  const record=s=>TopoRoute.record(state.route,s.chapterId);
+  const outcome=s=>s.result?.goldEarned?'Goud verdiend':record(s).goldAt>0?'Je goud blijft staan':'Nog geen goud';
+  const score=s=>s.correct+' van '+s.originalTotal+' goed.';
+  const reason=s=>s.result?.goldEarned?' Alle plekken foutloos aangewezen én benoemd.':record(s).goldAt>0?' Je eerder verdiende goud blijft bewaard.':' Voor goud moet alles goed zijn. Je afgeronde halte blijft bewaard.';
+  const mark=()=>{if(!count)return;const s=state.route.active,on=state.mode==='route'&&s?.kind==='gold'&&!s.done&&!!state.current,prompt=document.getElementById('prompt');
+   if(on){if(head.nextElementSibling!==prompt)prompt.before(head);if(count.parentNode!==head)head.append(count);count.textContent='Vraag '+Math.min(s.index+1,s.originalTotal)+' van '+s.originalTotal+' · Alles goed = goud';}
+   else if(count.parentNode===head)home.insertBefore(count,after);
+   head.hidden=!on;document.body.classList.toggle('ninoGoldRound',on);};
+  const wrap=(name,after)=>{const original=window[name];if(typeof original!=='function')return;window[name]=function(...args){const out=original.apply(this,args);after(...args);return out;};};
+  wrap('renderRouteTask',mark);
+  wrap('renderRouteResult',()=>{mark();const s=state.route.active;if(s?.kind!=='gold')return;document.getElementById('prompt').textContent=outcome(s);document.getElementById('help').textContent=score(s)+reason(s);});
+  wrap('renderJourneyFinish',pause=>{mark();const s=state.route.active,screen=document.getElementById('finishScreen');if(s?.kind!=='gold'||!screen)return;
+   if(pause){const b=badge.cloneNode(true);screen.querySelector('#finishTitle')?.before(b);return;}
+   screen.querySelector('#finishTitle').textContent=outcome(s);screen.dataset.goldOutcome=outcome(s);const t=screen.querySelector('#finishTitle+p');if(t)t.textContent=score(s)+reason(s);
+   const items=screen.querySelectorAll('.finishStats>div');if(items.length>=2){items[0].replaceChildren(Object.assign(document.createElement('b'),{textContent:String(s.correct)}),'goed in de goudronde');items[1].replaceChildren(Object.assign(document.createElement('b'),{textContent:String(s.originalTotal-s.correct)}),'oefenmomenten in de goudronde');}});
+  wrap('mode',mark);mark();}
  window.TopoBook={open:openBook,element:dialog};
+ // Decode the book art once while idle, so pages do not pop in image by image when turned.
+ const warm=()=>{for(const [k,a]of Object.entries(art))if(/^(stamp|chapter|folio|cover|welcome|arrival|reverse|sicilia|sardegna|venezia|napoli|finalGold|favorite)/.test(k)){const i=new Image();i.src=a.src;i.decode?.().catch(()=>{});}};
+ (window.requestIdleCallback||((fn)=>setTimeout(fn,1500)))(warm,{timeout:4000});
  dialog.addEventListener('close',()=>{origin?.focus({preventScroll:true});if(scroll)window.scrollTo(...scroll);});
  dialog.addEventListener('keydown',e=>{if(e.target.matches('input,select,textarea'))return;if(e.key==='ArrowRight'&&!next.disabled){e.preventDefault();next.click();}if(e.key==='ArrowLeft'&&!previous.disabled){e.preventDefault();previous.click();}});
  window.addEventListener('resize',()=>{if(dialog.open)renderBook();});

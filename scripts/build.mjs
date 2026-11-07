@@ -20,6 +20,7 @@ execFileSync(process.execPath, [resolve(root, 'scripts/generate-print.mjs')], { 
 execFileSync(process.execPath, [resolve(root, 'scripts/embed-nino-cplus.mjs')], { stdio: 'inherit' });
 execFileSync(process.execPath, [resolve(root, 'scripts/embed-nino-v2.mjs')], { stdio: 'inherit' });
 execFileSync(process.execPath, [resolve(root, 'scripts/package-standalone.mjs')], { stdio: 'inherit' });
+execFileSync(process.execPath, [resolve(root, 'scripts/build-design-preview.mjs')], { stdio: 'inherit' });
 execFileSync(process.execPath, [resolve(root, 'scripts/check-syntax.mjs')], { stdio: 'inherit' });
 execFileSync(process.execPath, [resolve(root, 'scripts/validate-map.mjs')], { stdio: 'inherit' });
 const printSource = readFileSync(resolve(root, 'print.html'));

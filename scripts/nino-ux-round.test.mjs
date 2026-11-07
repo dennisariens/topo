@@ -80,3 +80,59 @@ test('a free question on the same place as a suspended route question never rest
  button(a,'Reis').click();await settle();a.d.getElementById('routeContinue').click();await settle();
  assert.equal(a.ev('state.mode'),'route','route lesson resumes in route mode');assert.equal(tab(a),'Reis');assert(lesson(a));assert.deepEqual(a.errors,[]);
  }finally{a.close()}});
+
+const FULL=()=>{const ids=['city1','city2','city3','city4','islands','mountains','volcanoes','regions','countries','seas','rivers'];return JSON.stringify({schema:3,good:168,pizzas:21,slices:0,trips:7,mistakes:[],route:{schema:2,chapters:Object.fromEntries(ids.map(id=>[id,{stage:3,completedAt:1,goldAt:1,nextReviewAt:0,reviews:0}])),items:{},rewardTokens:[],active:null},daily:{date:'2026-11-06',correct:0}});};
+test('four postcard backs carry Nino’s message on the reverse art and turn within the same card',async()=>{const a=boot({storage:{'topo-nino-intro-v1':'done','topo-italie-v3':FULL()}});try{await settle();
+ const expected={'Sicilia, souvenir van je eilandenles':'Ciao dalla Sicilia!Vanaf het eiland zie je de Etna, een van de actiefste vulkanen van Europa.Groetjes, Nino','Sardegna, souvenir van je eilandenles':'Ciao dalla Sardegna!Langs de kust vind je baaien met helderblauw water. Welke zou jij willen ontdekken?Groetjes, Nino','Venetië, je derde Vespa-rit':'Ciao da Venezia!Hier varen gondels door de stad. Kijk maar eens hoeveel bruggetjes je kunt tellen.Groetjes, Nino','Napels, je zesde Vespa-rit':'Ciao da Napoli!De stad staat bekend om haar pizza. Welke zou jij hier bestellen?Groetjes, Nino'};
+ button(a,'Reisboekje').click();const book=a.d.getElementById('travelBook'),next=button(a,'Volgende',book.querySelector('.bookFooter')),seen={};
+ for(let n=0;n<12;n++){for(const fig of book.querySelectorAll('.earnedPostcard')){const label=fig.querySelector('figcaption').textContent,face=fig.querySelector('.postcardFace'),flip=fig.querySelector('.bookLink'),front=face.querySelector('.postcardFront'),back=face.querySelector('.postcardBack');
+   assert.equal(face.children.length,2,'front and back share one box');assert(!front.hidden&&back.hidden);assert.equal(flip.textContent,'Bekijk achterkant');
+   flip.click();assert(front.hidden&&!back.hidden);assert.equal(flip.textContent,'Bekijk voorkant');assert.equal(flip.getAttribute('aria-pressed'),'true');assert.equal(back.querySelector('img').src,a.ev('NINO_V2_ART.reverse.src'),'existing reverse artwork');
+   seen[label]=back.querySelector('.postcardMessage').textContent;flip.click();assert(!front.hidden&&back.hidden);assert.equal(flip.textContent,'Bekijk achterkant');}
+  if(next.disabled)break;next.click();}
+ assert.deepEqual(seen,expected);assert.deepEqual(a.errors,[]);
+ }finally{a.close()}});
+
+test('design preview is a separate file: in-memory states, direct choices and a ride preview that changes nothing',async()=>{
+ assert(!html.includes('NINO_DESIGN_PREVIEW')&&!html.includes('Speel Vespa-rit af'),'regular app has no demo interface');
+ const preview=readFileSync(new URL('../output/html/NINO-2-Ontwerppreview-2026-11-07-r2.html',import.meta.url),'utf8');
+ assert.equal(preview.replace(/<head>\n<script>\n[\s\S]*?<\/script>\n<style>[^<]*<\/style>/,'<head>').replace('<title>Ontwerppreview · ','<title>'),html,'preview = app + preview layer only');
+ for(const [hash,stops,trips] of [['steden-7-12',1,0],['eilanden',4,0],['volledig',11,7]]){const errors=[],vc=new VirtualConsole();vc.on('jsdomError',e=>errors.push(e.message));const dom=new JSDOM(preview,{url:'https://preview.test/#'+hash,runScripts:'dangerously',virtualConsole:vc,beforeParse(w){w.HTMLElement.prototype.scrollIntoView=()=>{};w.scrollTo=()=>{};w.matchMedia=()=>({matches:true,addEventListener(){}});w.HTMLDialogElement.prototype.showModal=function(){this.open=true};w.HTMLDialogElement.prototype.close=function(){this.open=false;this.dispatchEvent(new w.Event('close'))};w.__real=w.localStorage}});const w=dom.window,d=w.document;
+  try{await settle();const bar=d.querySelector('.ninoPreviewBar');assert.deepEqual([...bar.querySelectorAll('a,button')].map(n=>n.textContent),['Steden 7–12','Eilanden','Alles vrijgespeeld','Speel Vespa-rit af']);
+   assert.equal(w.eval('ROUTE_CHAPTERS.filter(c=>state.route.chapters[c.id]?.stage===3).length'),stops);assert.equal(w.eval('state.trips'),trips);assert(!d.querySelector('.ninoProfile'),'no onboarding in the design preview');
+   const before=w.eval('localStorage.getItem("topo-italie-v3")');[...bar.querySelectorAll('button')].find(b=>b.textContent==='Speel Vespa-rit af').click();const ride=d.querySelector('.vespaRide');assert(ride.open);assert.equal(ride.dataset.phase,'arrived','reduced motion: direct arrival');
+   [...ride.querySelectorAll('button')].find(b=>b.textContent==='Verder').click();assert(!ride.open);assert.equal(w.eval('state.trips'),trips,'no trip awarded');assert.equal(w.eval('localStorage.getItem("topo-italie-v3")'),before,'no progress change');assert.equal(w.__real.length,0,'real browser storage untouched');assert.deepEqual(errors,[]);
+  }finally{w.close()}}});
+
+test('controls: the learn bar carries its layout class; Ik weet het nog niet/Overslaan stay secondary until answered',async()=>{const a=boot({storage:{'topo-nino-intro-v1':'done','topo-nino-profile-v1':JSON.stringify({schema:1,name:'Ada',coverColor:'riviera',favoritePizza:'salami'})}});try{await settle();
+ assert(a.d.getElementById('focusLearnBar').classList.contains('focusLearnBar'),'learn bar is laid out as a fixed bar, not in the page flow');
+ a.ev('mode("write")');await settle();const next=a.d.getElementById('next');
+ assert.equal(a.ev('state.answered'),false);assert(next.classList.contains('ninoQuiet'),'way out is quiet before answering: '+next.textContent);
+ a.d.getElementById('answer').value='Nergensland';a.d.getElementById('check').click();await settle();
+ assert.equal(a.ev('state.answered'),true);assert.match(next.textContent,/Volgende/);assert(!next.classList.contains('ninoQuiet'),'Volgende is the main action');
+ next.click();await settle();assert(next.classList.contains('ninoQuiet'),'quiet again on the next question');
+ assert.deepEqual(a.errors,[]);
+}finally{a.close()}});
+
+test('gold round: ★ Goudronde with the real question count above every gold question, never in a normal lesson; one outcome at the end',async()=>{
+ const at=Date.UTC(2026,10,6),save=(gold=0)=>JSON.stringify({schema:3,good:30,pizzas:0,slices:0,trips:0,mistakes:[],route:{schema:2,chapters:{city1:{stage:3,completedAt:at,goldAt:gold,nextReviewAt:0,reviews:0}},items:{},rewardTokens:[],active:null},daily:{date:'2026-11-06',correct:0}});
+ const base={'topo-nino-intro-v1':'done','topo-nino-profile-v1':JSON.stringify({schema:1,name:'Ada',coverColor:'riviera',favoritePizza:'salami'})};
+ const head=a=>a.d.querySelector('.ninoGoldHead'),shown=a=>!!head(a)&&!head(a).hidden&&!!head(a).closest('#quiz')&&head(a).nextElementSibling===a.d.getElementById('prompt');
+ async function play(a,wrongAt=-1){const seen=new Set();let n=a.ev("state.route.active.index");for(let guard=0;guard<60&&!a.ev('state.route.active?.done');guard++){const f=a.d.querySelector('#finishScreen button.primary');if(f&&a.d.querySelector('#finishScreen')){assert.equal(a.d.querySelector('#finishScreen .ninoGoldBadge')?.textContent,'★ Goudronde','pause screen keeps the label');f.click();await settle();continue;}
+   assert(shown(a),'label above question '+n);const total=a.ev('state.route.active.originalTotal');assert.equal(a.d.getElementById('routeLessonCount').textContent,'Vraag '+(n+1)+' van '+total+' · Alles goed = goud');
+   assert.equal([...a.d.querySelectorAll('*')].filter(e=>e.children.length===0&&/Vraag \d+ (van|\/) \d+/.test(e.textContent)).length,1,'one counter');seen.add(a.ev('state.questionMode'));a.ev('routeGrade('+(n!==wrongAt)+')');n++;await settle();if(!a.ev('state.route.active.done')&&!a.d.querySelector('#finishScreen')){a.d.getElementById('next').click();await settle();}}
+  return seen;}
+ const title=a=>(a.d.querySelector('#finishScreen #finishTitle')||a.d.getElementById('prompt')).textContent,body=a=>(a.d.querySelector('#finishScreen #finishTitle+p')||a.d.getElementById('help')).textContent;
+ let a=boot({storage:{...base,'topo-italie-v3':save()}});try{await settle();
+  a.ev('mode("route")');a.ev('startRouteLesson("city1","gold")');await settle();assert.equal(a.ev('state.route.active.kind'),'gold');
+  const seen=await play(a);assert.deepEqual([...seen].sort(),['point','write'],'Aanwijzen and Namen schrijven');
+  assert.equal(title(a),'Goud verdiend');assert.match(body(a),/^12 van 12 goed\./);assert(!shown(a),'no label on the result');
+  a.ev('startRouteLesson("city1","gold")');await settle();await play(a,3);assert.equal(title(a),'Je goud blijft staan');assert.match(body(a),/^11 van 12 goed\. Je eerder verdiende goud blijft bewaard\./);
+  a.ev('startRouteLesson("city1","review")');await settle();assert.notEqual(a.ev('state.route.active.kind'),'gold');assert(!shown(a)&&!a.d.body.classList.contains('ninoGoldRound'),'a normal lesson on a gold stop has no label');
+  assert(a.d.getElementById('routeLessonCount').closest('#routeLessonBar'),'progress line back in place');assert.deepEqual(a.errors,[]);
+ }finally{a.close()}
+ a=boot({storage:{...base,'topo-italie-v3':save()}});let mid;try{await settle();a.ev('mode("route")');a.ev('startRouteLesson("city1","gold")');await settle();for(const ok of [false,true]){a.ev('routeGrade('+ok+')');await settle();a.d.getElementById('next').click();await settle();}
+  mid=dump(a);await play(a,-1);assert.equal(title(a),'Nog geen goud');assert.match(body(a),/^11 van 12 goed\. Voor goud moet alles goed zijn/);assert.equal(a.ev('state.route.chapters.city1.goldAt'),0);assert.deepEqual(a.errors,[]);
+ }finally{a.close()}
+ a=boot({storage:mid});try{await settle();a.d.getElementById('routeContinue').click();await settle();assert(shown(a),'label returns after resuming');assert.match(a.d.getElementById('routeLessonCount').textContent,/^Vraag 3 van 12 · Alles goed = goud$/);assert.deepEqual(a.errors,[]);}finally{a.close()}
+});

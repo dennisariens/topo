@@ -1,0 +1,214 @@
+{
+  "browserPlugin": "Absent; installed Playwright fallback",
+  "flow": "file preview → all flavors decode → keyboard replay → static reduced-motion fallback",
+  "results": [
+    {
+      "viewport": {
+        "width": 1500,
+        "height": 1000
+      },
+      "reducedMotion": "no-preference",
+      "errors": [],
+      "external": [],
+      "state": {
+        "title": "NINO Pisa — artworkreview",
+        "overflow": false,
+        "images": [
+          {
+            "src": "file:///Users/dennisariens/projects/topo-artwork-final/assets/nino/rewards/pizza/hinge-review/motion/pisa-margherita.webp?replay=1794078367350",
+            "decoded": true,
+            "visible": true
+          },
+          {
+            "src": "proof/margherita-time-100.png",
+            "decoded": true,
+            "visible": false
+          },
+          {
+            "src": "motion/pisa-salami.webp",
+            "decoded": true,
+            "visible": true
+          },
+          {
+            "src": "proof/salami-time-100.png",
+            "decoded": true,
+            "visible": false
+          },
+          {
+            "src": "motion/pisa-quattro-formaggi.webp",
+            "decoded": true,
+            "visible": true
+          },
+          {
+            "src": "proof/quattro-formaggi-time-100.png",
+            "decoded": true,
+            "visible": false
+          },
+          {
+            "src": "proof/contact-sheet.png",
+            "decoded": true,
+            "visible": true
+          }
+        ]
+      },
+      "keyboardReplay": true,
+      "screenshot": "pisa-1500-no-preference.png"
+    },
+    {
+      "viewport": {
+        "width": 1500,
+        "height": 1000
+      },
+      "reducedMotion": "reduce",
+      "errors": [],
+      "external": [],
+      "state": {
+        "title": "NINO Pisa — artworkreview",
+        "overflow": false,
+        "images": [
+          {
+            "src": "file:///Users/dennisariens/projects/topo-artwork-final/assets/nino/rewards/pizza/hinge-review/motion/pisa-margherita.webp?replay=1794078369735",
+            "decoded": true,
+            "visible": false
+          },
+          {
+            "src": "proof/margherita-time-100.png",
+            "decoded": true,
+            "visible": true
+          },
+          {
+            "src": "motion/pisa-salami.webp",
+            "decoded": true,
+            "visible": false
+          },
+          {
+            "src": "proof/salami-time-100.png",
+            "decoded": true,
+            "visible": true
+          },
+          {
+            "src": "motion/pisa-quattro-formaggi.webp",
+            "decoded": true,
+            "visible": false
+          },
+          {
+            "src": "proof/quattro-formaggi-time-100.png",
+            "decoded": true,
+            "visible": true
+          },
+          {
+            "src": "proof/contact-sheet.png",
+            "decoded": true,
+            "visible": true
+          }
+        ]
+      },
+      "keyboardReplay": true,
+      "screenshot": "pisa-1500-reduce.png"
+    },
+    {
+      "viewport": {
+        "width": 820,
+        "height": 1180
+      },
+      "reducedMotion": "no-preference",
+      "errors": [],
+      "external": [],
+      "state": {
+        "title": "NINO Pisa — artworkreview",
+        "overflow": false,
+        "images": [
+          {
+            "src": "file:///Users/dennisariens/projects/topo-artwork-final/assets/nino/rewards/pizza/hinge-review/motion/pisa-margherita.webp?replay=1794078372067",
+            "decoded": true,
+            "visible": true
+          },
+          {
+            "src": "proof/margherita-time-100.png",
+            "decoded": true,
+            "visible": false
+          },
+          {
+            "src": "motion/pisa-salami.webp",
+            "decoded": true,
+            "visible": true
+          },
+          {
+            "src": "proof/salami-time-100.png",
+            "decoded": true,
+            "visible": false
+          },
+          {
+            "src": "motion/pisa-quattro-formaggi.webp",
+            "decoded": true,
+            "visible": true
+          },
+          {
+            "src": "proof/quattro-formaggi-time-100.png",
+            "decoded": true,
+            "visible": false
+          },
+          {
+            "src": "proof/contact-sheet.png",
+            "decoded": true,
+            "visible": true
+          }
+        ]
+      },
+      "keyboardReplay": true,
+      "screenshot": "pisa-820-no-preference.png"
+    },
+    {
+      "viewport": {
+        "width": 820,
+        "height": 1180
+      },
+      "reducedMotion": "reduce",
+      "errors": [],
+      "external": [],
+      "state": {
+        "title": "NINO Pisa — artworkreview",
+        "overflow": false,
+        "images": [
+          {
+            "src": "file:///Users/dennisariens/projects/topo-artwork-final/assets/nino/rewards/pizza/hinge-review/motion/pisa-margherita.webp?replay=1794078374319",
+            "decoded": true,
+            "visible": false
+          },
+          {
+            "src": "proof/margherita-time-100.png",
+            "decoded": true,
+            "visible": true
+          },
+          {
+            "src": "motion/pisa-salami.webp",
+            "decoded": true,
+            "visible": false
+          },
+          {
+            "src": "proof/salami-time-100.png",
+            "decoded": true,
+            "visible": true
+          },
+          {
+            "src": "motion/pisa-quattro-formaggi.webp",
+            "decoded": true,
+            "visible": false
+          },
+          {
+            "src": "proof/quattro-formaggi-time-100.png",
+            "decoded": true,
+            "visible": true
+          },
+          {
+            "src": "proof/contact-sheet.png",
+            "decoded": true,
+            "visible": true
+          }
+        ]
+      },
+      "keyboardReplay": true,
+      "screenshot": "pisa-820-reduce.png"
+    }
+  ]
+}

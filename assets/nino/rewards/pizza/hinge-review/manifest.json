@@ -1,0 +1,233 @@
+{
+  "source_branch": "art/nino-pizza-rewards-20261024",
+  "source_commit": "bf91fb3fa6ac553f78b33169efa9f2bf60e215ca",
+  "source_sha256": {
+    "pizza-box-closed-pisa.webp": "6e47559c8eea4932fa4516fea324ee85fbe386ab7c3df26034f820a8c4860d3c",
+    "pizza-box-open-pisa-margherita.webp": "742a5d39843dc84b6a8b781678edcb3ce6643a60bde1c8ae67c1e0567125f7d7",
+    "pizza-box-open-pisa-salami.webp": "9f3795b47f6b60a975f3f83af6edb07981739cc2a55c0d4de1b7cb66f2b184aa",
+    "pizza-box-open-pisa-quattro-formaggi.webp": "1b317d38980873756276ffaedeca3843a30c386233e83ecf846a1563f99903b2"
+  },
+  "status": "REVIEW REQUIRED; independent Hermes and owner visual acceptance pending",
+  "canvas": [
+    1254,
+    1254
+  ],
+  "source_scale": 0.8,
+  "source_offset": [
+    180,
+    370
+  ],
+  "seat_source": [
+    [
+      326.0,
+      251.0
+    ],
+    [
+      940.0,
+      440.0
+    ],
+    [
+      644.0,
+      914.0
+    ],
+    [
+      12.0,
+      599.0
+    ]
+  ],
+  "ground_homography": [
+    [
+      515.6297050580783,
+      372.1442178587199,
+      456.3940128502041
+    ],
+    [
+      125.2502365482874,
+      -328.15243622207583,
+      522.8592154707085
+    ],
+    [
+      -0.222166151517063,
+      0.13765758621621865,
+      1.0
+    ]
+  ],
+  "vertical_column": [
+    0.0,
+    -650.0,
+    -0.12
+  ],
+  "hinge": [
+    [
+      440.8,
+      570.8000000000001
+    ],
+    [
+      932.0,
+      722.0
+    ]
+  ],
+  "angles": [
+    0.0,
+    8.739212624311655,
+    16.718994000164372,
+    23.973863729760833,
+    30.53834141530369,
+    36.44694665899564,
+    41.73419906303938,
+    46.43461822963755,
+    50.58272376099285,
+    54.21303525930796,
+    57.360072326785556,
+    60.058354565628335,
+    62.34240157803895,
+    64.2467329662201,
+    65.80586833237446,
+    67.0543272787047,
+    68.0266294074135,
+    68.75729432070354,
+    69.28084162077751,
+    69.63179090983809,
+    69.84466179008794,
+    69.95397386372976,
+    69.99424673296622,
+    70.0
+  ],
+  "proof_frame_indices": [
+    0,
+    6,
+    12,
+    18,
+    23
+  ],
+  "duration_ms": 1296,
+  "frame_duration_ms": 54,
+  "compositing_order": [
+    "flavor tray with original pizza",
+    "cardboard-only foreground",
+    "physical lid and edge surfaces"
+  ],
+  "limitations": [
+    "Hidden underside is a tiled approved cardboard patch, not original hidden artwork.",
+    "Common-camera projective reconstruction requires native visual acceptance.",
+    "No live app integration; existing static fallback untouched."
+  ],
+  "files": {
+    "layers/front-cardboard-only.png": {
+      "sha256": "e393c33c55f8812a3cb9fb19ccccfa247a424ab1db1a08f673e436d855960f35",
+      "bytes": 34867
+    },
+    "layers/front-mask.png": {
+      "sha256": "471f8830a0a87d2fc6ac1c8b2d3af4b55de188a7b8c282b7f3fa26547e36203a",
+      "bytes": 13836
+    },
+    "layers/lid-closed-registered.png": {
+      "sha256": "a4fe86e96ae0b9129fdbd20389b2833dfb47ec3140c75a55675c0becb521de5b",
+      "bytes": 570659
+    },
+    "layers/lid-open-registered.png": {
+      "sha256": "0e5fbba313a709a4b5506144b9fd529b154d6334e1c30e45a8e57225df427837",
+      "bytes": 303029
+    },
+    "layers/tray-and-original-pizza-margherita.png": {
+      "sha256": "9befca75ca7ce9f0c9d93dfacb3c7685f12abf5e07cfedfd84b188042a704158",
+      "bytes": 648137
+    },
+    "layers/tray-and-original-pizza-quattro-formaggi.png": {
+      "sha256": "da84a5a0ca4df9bd54913c1373b48bc6442b7424f1c6e1e7736fe4e4a013f196",
+      "bytes": 627894
+    },
+    "layers/tray-and-original-pizza-salami.png": {
+      "sha256": "fb1fb67e0654ac39f654331f6ee70a17954ec51ea75c999dfaf1b0e7fdc2fe86",
+      "bytes": 694479
+    },
+    "motion/pisa-margherita.webp": {
+      "sha256": "ca73bb454f34c0007f2349466f8ecdf2a020c454e993c0ace4b6ffd53bed055f",
+      "bytes": 6782150
+    },
+    "motion/pisa-quattro-formaggi.webp": {
+      "sha256": "bb128b11cb83742cc776d50aa50377a894fd1a0f5749e4c605982be8d8bb3226",
+      "bytes": 6697530
+    },
+    "motion/pisa-salami.webp": {
+      "sha256": "f3ed23dbe7e68be73f715a07da638989110d4d530d37dcb04a94f9943b51449a",
+      "bytes": 6940416
+    },
+    "proof/contact-sheet.png": {
+      "sha256": "6f422f141787f80e0b16e9b5d5dced1c2b94a4b90bccc06bdc028b1dc02ae2e6",
+      "bytes": 534810
+    },
+    "proof/margherita-time-000.png": {
+      "sha256": "677671017c608337e4b1a8a638c3d4643e11eff05d5634358f2c42842ecfe44b",
+      "bytes": 617873
+    },
+    "proof/margherita-time-025.png": {
+      "sha256": "ebcc428702dced57390882165f34b7afd58ddf07a423380972973e0e620e1456",
+      "bytes": 713489
+    },
+    "proof/margherita-time-050.png": {
+      "sha256": "dd6ee6fda032f82e6c0f514b0031e37b55f4ee4807a4603829a40c071f54af6c",
+      "bytes": 894879
+    },
+    "proof/margherita-time-075.png": {
+      "sha256": "68c448084b504b9e1662b0e39de51fa078bef77e395f0b0713c7f3521ccfed24",
+      "bytes": 937288
+    },
+    "proof/margherita-time-100.png": {
+      "sha256": "6ae22fcac219a6a3a13a75b7ce1cf68a00d18e312ed3eccefc5483a5477b1b87",
+      "bytes": 941462
+    },
+    "proof/quattro-formaggi-time-000.png": {
+      "sha256": "6a7e232637bb94d83a4b8b3b7ed022afb5cf60a3b7c2a986918181a10cabb635",
+      "bytes": 617934
+    },
+    "proof/quattro-formaggi-time-025.png": {
+      "sha256": "b0e6530311404dee076da5e3f94859ec78320ca7b811b02481d88568a0f1b5a8",
+      "bytes": 696646
+    },
+    "proof/quattro-formaggi-time-050.png": {
+      "sha256": "a2d63caf572774afe3416176b83350f877b56eee2a30626c03217d834f30eec7",
+      "bytes": 878503
+    },
+    "proof/quattro-formaggi-time-075.png": {
+      "sha256": "bdee3961d106c3295f8dafac66dbf639fee4ed700591504b1b689b7725b2c4af",
+      "bytes": 920753
+    },
+    "proof/quattro-formaggi-time-100.png": {
+      "sha256": "457ca377bd87197bb4b56408aae10bf0e256da068e9b6b42ced2e44abb96547b",
+      "bytes": 924884
+    },
+    "proof/salami-time-000.png": {
+      "sha256": "1b8f5dada71b496502fffa3308afef1acc5151720cd32ef9860aa37b182f7d1e",
+      "bytes": 618014
+    },
+    "proof/salami-time-025.png": {
+      "sha256": "70c07a2b0efb76feea61962d6fd64fef2113dea1a107f93aeb8129924b7ed4a9",
+      "bytes": 759877
+    },
+    "proof/salami-time-050.png": {
+      "sha256": "242a74dd64bb0151acf5509ddcbb8246a73498b2dc517841373da3f841c7f356",
+      "bytes": 941787
+    },
+    "proof/salami-time-075.png": {
+      "sha256": "8c289bca2ab213b7d4f9a9c7546025fe9200ee3ef32501ed6ca9a3417a02529b",
+      "bytes": 984114
+    },
+    "proof/salami-time-100.png": {
+      "sha256": "9b77e7615b5ab05535b3b153e9c8f732436001b34812d2740748280a31649ce5",
+      "bytes": 988223
+    },
+    "review.html": {
+      "sha256": "5f2a2267a469396d49b6aa848dfa6f34746672ecb4eea38d0d56a63fadc93c5e",
+      "bytes": 2576
+    },
+    "textures/lid-exterior-original-uv.png": {
+      "sha256": "8cc8c33dd7ebf262bd2fb3207777b2b16ff61c5c72e72a2350bafbb56cd8e77f",
+      "bytes": 1378660
+    },
+    "textures/lid-interior-derived-uv.png": {
+      "sha256": "d6db3ce60aa1ebc5dffee4e5cd0b83fb44248d25118871919cf078b7f9bd7ebf",
+      "bytes": 33127
+    }
+  }
+}

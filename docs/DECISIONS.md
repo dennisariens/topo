@@ -241,3 +241,4 @@ Eigenaaropdrachten op PR71.
    - Het label **★ Goudronde** hangt alleen af van een lopende sessie met `kind === 'gold'`. De bestaande voortgangsregel verhuist mee, zodat er geen tweede teller ontstaat.
    - Het resultaat toont één uitkomst: **Goud verdiend**, **Je goud blijft staan** (er was al goud) of **Nog geen goud**. Daarbij staat de score van de hele ronde.
    - De toetsregels en de motorteksten (`CHAPTER.GOLD*`) zijn niet gewijzigd. De titel wordt in de NINO-laag vervangen.
+6. **Favicon (7 november 2026).** De door de eigenaar aangeleverde N (crème op donkergroen, 16 en 32 px) vervangt de PR65-microiconen als favicon. Alleen twee PNG-links, als data-URI ingebed; geen ICO meer. De PR65-bestanden blijven als geschiedenis. Het grote appicoon blijft ongewijzigd. Hiermee vervalt het PR65-faviconbesluit voor de offline HTML.

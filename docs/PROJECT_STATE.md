@@ -1,11 +1,12 @@
 # NINO 2.0: UX-ronde 7 november 2026, ronde 2
 
-Nieuwe speelbare HTML `output/html/NINO-2-Proefversie-2026-11-07-r2.html` (SHA256 `4e800270…7ca3ba`) en een losse ontwerppreview `output/html/NINO-2-Ontwerppreview-2026-11-07-r2.html`. De preview kiest in het geheugen tussen Steden 7–12, Eilanden en Alles vrijgespeeld, en heeft **Speel Vespa-rit af**. Wat er nieuw is:
+Nieuwe speelbare HTML `output/html/NINO-2-Proefversie-2026-11-07-r2.html` (SHA256 `e5265ae7…093ba0`) en een losse ontwerppreview `output/html/NINO-2-Ontwerppreview-2026-11-07-r2.html`. De preview kiest in het geheugen tussen Steden 7–12, Eilanden en Alles vrijgespeeld, en heeft **Speel Vespa-rit af**. Wat er nieuw is:
 
 - Het Reisboekje past zonder scrollbalken op acht schermformaten.
 - De postkaarten hebben op de achterkant Nino's tekst.
 - De pizzameter is groter.
 - Er is één knoppenstijl: crème en donkergroen voor hulpmiddelen, terracotta voor de hoofdactie. De leerbalk op iPad en telefoon lag onder de tabbalk en is daar weggehaald.
+- Het favicon is nu de N van Nino (crème op donkergroen, 16 en 32 px), ingebed in de offline HTML; het grote appicoon blijft.
 - **★ Goudronde** met vraagnummer staat boven elke goudvraag, met één duidelijke uitkomst op het resultaat.
 
 [Bewijs, voor en na, gespeelde routes en open punten](qa/ux-20261107-r2/README.md). Geen release-GO.

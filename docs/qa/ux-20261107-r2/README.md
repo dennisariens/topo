@@ -2,8 +2,8 @@
 
 **Status: klaar voor eigenaarbeoordeling. Geen release-GO. Geen merge, deploy, publicatie of vervanging van de bestaande download.**
 
-- Speelbare offline HTML: `output/html/NINO-2-Proefversie-2026-11-07-r2.html`, 41.440.242 bytes, SHA256 `4e8002705f92bce937484f613bb6763383a278fe2c107dd427d68b40797ca3ba`. Byte-identiek aan `index.html` en de kandidaat-aliassen. De HTML's van 6 november en van ronde 1 (`…-2026-11-07.html`, `14e5a095…0c8f`) zijn niet gewijzigd.
-- Aparte ontwerppreview: `output/html/NINO-2-Ontwerppreview-2026-11-07-r2.html`, 41.444.148 bytes, SHA256 `a99aa07683622e0b2c28e863f70363b37d6ef4bdfca8beffd5470758749e7aa6`. Dit is de app met een extra laag erbovenop: knoppen voor **Steden 7–12**, **Eilanden**, **Alles vrijgespeeld** en **Speel Vespa-rit af**. Alles draait in het geheugen, er wordt niets bewaard en je hoeft niets te importeren. De gewone app bevat deze code niet (`build-design-preview.mjs` weigert te bouwen als `index.html` hem wel bevat).
+- Speelbare offline HTML: `output/html/NINO-2-Proefversie-2026-11-07-r2.html`, 41.436.767 bytes, SHA256 `e5265ae7118861b98be61b2cdb4bfdd9509a4ea1e864111ac6d52af410093ba0`. Byte-identiek aan `index.html` en de kandidaat-aliassen. De HTML's van 6 november en van ronde 1 (`…-2026-11-07.html`, `14e5a095…0c8f`) zijn niet gewijzigd.
+- Aparte ontwerppreview: `output/html/NINO-2-Ontwerppreview-2026-11-07-r2.html`, 41.440.673 bytes, SHA256 `2f8efb36609e491c284330ed341f5da633e1c5f3ab796505af7541cd4e2614ca`. Dit is de app met een extra laag erbovenop: knoppen voor **Steden 7–12**, **Eilanden**, **Alles vrijgespeeld** en **Speel Vespa-rit af**. Alles draait in het geheugen, er wordt niets bewaard en je hoeft niets te importeren. De gewone app bevat deze code niet (`build-design-preview.mjs` weigert te bouwen als `index.html` hem wel bevat).
 - Demosave (ongewijzigd): `output/demo/NINO-2-DEMO-vlak-voor-derde-pizza.json`, SHA256 `dfe9f46d2b8711ab65aaaa38d1194296ea1d52989d4661e37c3e459e0ee57b6c`.
 - Opname van de Vespa-rit: [GIF](video/chrome-vespa-overgang.gif), [webm](video/chrome-vespa-overgang.webm).
 
@@ -62,6 +62,15 @@ Voor en na (links de PR71-kandidaat van ronde 1, rechts deze kandidaat):
   De tellers tonen de hele goudronde in plaats van alleen het laatste blok van zes vragen. De toetsregels en de voortgang zijn niet veranderd.
 - Chrome, desktop 1366 en telefoon 320 ([logboek](gold.json)): het label was bij alle 12 vragen zichtbaar, aanklikbaar en stond boven de vraag (6 × Aanwijzen, 6 × Namen schrijven). De uitkomst was **Goud verdiend**, en de opfrisles daarna kreeg geen label. [320 px-overzicht](gold/goudronde-320-overzicht.jpg). De drie uitkomsten en het hervatten zijn ook gecontroleerd in `nino-ux-round.test.mjs`.
 
+## Favicon: de N van Nino
+
+- Bron: de twee door de eigenaar aangeleverde PNG's (16 en 32 px, crème N op donkergroen), vastgelegd in `assets/nino/app-icon/favicon-n/` met bytes en SHA256 in `manifest.json` (`3a3e3208…72143` en `3f737bc4…ba1d9`).
+- `scripts/embed-nino-micro-icons.mjs` embedt beide als `data:image/png` in de offline HTML. De bouw stopt als de bytes afwijken. De oude PR65-verwijzingen (ICO, 16 px Italië en 32 px scooter) zijn vervangen; die bestanden blijven alleen als geschiedenis in `micro-v2/`. `focus-source.mjs` laat in audits alleen precies dit nieuwe blok weg.
+- Het grote geïllustreerde appicoon is niet veranderd.
+- Regressietest in `nino-ux-round.test.mjs`: precies twee iconlinks met exact deze bytes, geen ICO, geen `apple-touch-icon` en geen oude iconbytes meer in de HTML.
+- Op ware grootte gecontroleerd in een nieuw Chrome-tabblad (Chrome 157, scherm 1×): [tabbalk op ware grootte](favicon/chrome-tabbalk-ware-grootte.png), met links nog tabbladen met het oude icoon en rechts het nieuwe. Uitvergroot (nearest neighbour, 4×): [nieuw](favicon/chrome-tab-nieuw-4x.png), [oud](favicon/chrome-tab-oud-4x.png). In de pagina: twee iconen, 16×16 en 32×32 gedecodeerd, 0 externe verzoeken.
+- Niet gecontroleerd: Retina-tabblad (32 px), Safari, iPad-beginscherm.
+
 ## Zelf gespeeld (Chrome 157.0.8103.38, offline `file://`)
 
 `scripts/qa-nino-ux-round.mjs` speelt de routes hieronder: [logboek](chrome-ux-round.json), 0 JS-fouten en 0 externe verzoeken.
@@ -73,9 +82,9 @@ Voor en na (links de PR71-kandidaat van ronde 1, rechts deze kandidaat):
 
 ## Controles
 
-- `release-check.log`: build, lint, alle testcommando's (63 tests, 0 fouten) en de release-audits zijn geslaagd (`release:check exit 0`). `audit-nino-v2.log`: exit 0.
-- `scripts/nino-ux-round.test.mjs` heeft nu 12 tests. Nieuw in ronde 2: achterkanten van de postkaarten, ontwerppreview, knoppen (klasse van de leerbalk en de rustige uitweg tot er geantwoord is) en goudronde.
-- `focus-source.mjs` en `playable-source-pins.json`: de hashpins van de gewijzigde NINO-bronnen zijn bijgewerkt. `preservation.json` legt de nieuwe HTML-hash vast.
+- `release-check.log`: build, lint, alle testcommando's (64 tests, 0 fouten) en de release-audits zijn geslaagd (`release:check exit 0`). `audit-nino-v2.log`: exit 0.
+- `scripts/nino-ux-round.test.mjs` heeft nu 13 tests. Nieuw in ronde 2: achterkanten van de postkaarten, ontwerppreview, knoppen (klasse van de leerbalk en de rustige uitweg tot er geantwoord is), goudronde en favicon.
+- `focus-source.mjs` en `playable-source-pins.json`: de hashpins van de gewijzigde NINO-bronnen zijn bijgewerkt. `preservation.json` legt de nieuwe HTML-hash vast. `audit-nino-v2.mjs` vergelijkt nog steeds de hele app met basis `2a9dda3`, behalve het faviconblok; dat moet aan de kandidaatkant precies het vastgepinde N-blok zijn.
 
 ## Open
 

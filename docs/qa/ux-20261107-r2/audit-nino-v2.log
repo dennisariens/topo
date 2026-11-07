@@ -3,8 +3,8 @@
   "entireBaselineHtmlPreservedOutsideVerifiedPresentation": true,
   "engineAndGeographyChanges": 0,
   "downloadParity": true,
-  "bytes": 41440242,
-  "sha256": "4e8002705f92bce937484f613bb6763383a278fe2c107dd427d68b40797ca3ba",
+  "bytes": 41436767,
+  "sha256": "e5265ae7118861b98be61b2cdb4bfdd9509a4ea1e864111ac6d52af410093ba0",
   "D1": "archival excluded; real1586x992 dimensions retained; no folio dependencies",
   "D2": {
     "source_availability": {
@@ -21,3 +21,4 @@
     }
   }
 }
+audit exit 0

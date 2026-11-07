@@ -2,9 +2,11 @@ import assert from 'node:assert/strict';
 import {readFileSync,writeFileSync} from 'node:fs';
 import {execFileSync} from 'node:child_process';
 import {createHash} from 'node:crypto';
-import {withoutCplus,withoutV2} from './focus-source.mjs';
+import {withoutMicroIcons} from './focus-source.mjs';
+// The favicon block is the only allowed head change since the base: the candidate's must be the exact pinned NINO N block (withoutMicroIcons throws otherwise); the base's PR65 block is dropped.
+const baseWithoutIcons=s=>s.replace(/<!-- BEGIN NINO MICRO ICONS -->\n[\s\S]*?<!-- END NINO MICRO ICONS -->\n/,'');
 const root=new URL('../',import.meta.url),html=readFileSync(new URL('index.html',root)),base='2a9dda3d3d8ec567687bc3b61bf9cbde645c752c';
-assert.equal(withoutCplus(withoutV2(html.toString())),execFileSync('git',['show',base+':index.html'],{cwd:root,maxBuffer:40e6}).toString(),'Entire original learner retained outside exact verified presentation additions');
+assert.equal(withoutMicroIcons(html.toString()),baseWithoutIcons(execFileSync('git',['show',base+':index.html'],{cwd:root,maxBuffer:40e6}).toString()),'Entire original learner retained outside exact verified presentation additions');
 for(const file of ['output/html/TOPO-NINO-Computer-Release.html','output/html/TOPO-Italie-Computer.html','output/html/topo-italie-interactief.html','output/html/topo-italie-duolingo.html','dist/index.html'])assert(html.equals(readFileSync(new URL(file,root))),file+' byte parity');
 const manifest=JSON.parse(readFileSync(new URL('docs/qa/nino-v2-closure-67/artwork-manifest.json',root))),archival=manifest.assets.find(a=>a.path.endsWith('/book/masters/passport-open-book.png'));
 assert.equal(archival.status,'OPTIONAL DEFERRED');assert(!archival.missing_dependencies.some(s=>s.includes('1086')));assert(manifest.availability_totals);

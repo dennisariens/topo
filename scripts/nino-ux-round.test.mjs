@@ -136,3 +136,11 @@ test('gold round: ★ Goudronde with the real question count above every gold qu
  }finally{a.close()}
  a=boot({storage:mid});try{await settle();a.d.getElementById('routeContinue').click();await settle();assert(shown(a),'label returns after resuming');assert.match(a.d.getElementById('routeLessonCount').textContent,/^Vraag 3 van 12 · Alles goed = goud$/);assert.deepEqual(a.errors,[]);}finally{a.close()}
 });
+
+test('favicon: exactly the owner-supplied NINO N at 16 and 32 px, embedded offline; the old PR65 icons are gone',()=>{
+ const links=[...html.matchAll(/<link rel="icon"[^>]*>/g)].map(m=>m[0]);assert.equal(links.length,2);
+ for(const size of [16,32]){const bytes=readFileSync(new URL('../assets/nino/app-icon/favicon-n/NINO-favicon-'+size+'.png',import.meta.url));
+  assert.equal(links.filter(l=>l==='<link rel="icon" type="image/png" sizes="'+size+'x'+size+'" href="data:image/png;base64,'+bytes.toString('base64')+'">').length,1,size+' px');}
+ assert(!/image\/x-icon|apple-touch-icon|rel="shortcut icon"/.test(html),'no other favicon references');
+ for(const old of ['favicon.ico','topo-nino-italy-only-16.png','topo-nino-scooter-italy-32.png'])assert(!html.includes(readFileSync(new URL('../assets/nino/app-icon/micro-v2/'+old,import.meta.url)).toString('base64')),'old icon embedded: '+old);
+});

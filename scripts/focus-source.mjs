@@ -27,7 +27,7 @@ export function withoutV2(html){
  if(!html.includes('// BEGIN NINO V2\n'))return html;
  const css=['nino-v2.css','nino-profile.css','nino-moments.css'].map(f=>readFileSync(new URL(f,import.meta.url),'utf8')).join(''),js=['nino-profile.js','nino-v2.js','nino-moments.js'].map(f=>readFileSync(new URL(f,import.meta.url),'utf8')).join('');
  const style='<style>/* BEGIN NINO V2 CSS */'+css+'/* END NINO V2 CSS */</style>';
- if(createHash('sha256').update(css).digest('hex')!=='7eecf3efa097cac1e2134c8a103f589bd55984b3ccff977cce7addc44bc14914'||createHash('sha256').update(js).digest('hex')!=='d048039bc7f904aa1b67f7247123c2c21dfa124b53bdd0686ec64be4bbdf4458')throw Error('Reviewed V2 component source changed');
+ if(createHash('sha256').update(css).digest('hex')!=='e85c7293e279f2abfe356a789674ebd5eec29181963abbc8c864dbc470825df1'||createHash('sha256').update(js).digest('hex')!=='b2c08759be36ad009a2a8fb688f0f83821f69d6720dd05cf87e41f4177766afa')throw Error('Reviewed V2 component source changed');
  if(!html.includes(style))throw Error('V2 CSS differs from reviewed component');
  const match=html.match(/\/\/ BEGIN NINO V2\nconst NINO_V2_ART=(\{[^\n]+\});\n/);if(!match)throw Error('Missing V2 art data');
  const data=JSON.parse(match[1]);

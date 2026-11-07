@@ -47,7 +47,7 @@ test('F1 Reis/Oefenen resumes the visible writing question, draft and backward s
  }
  assert.deepEqual(a.errors,[]);
  }finally{a.close()}});
-test('F1 navigation preserves every practice mode and route tasks; explicit route start replaces suspended free practice',async()=>{const a=boot();try{
+test('F1 navigation preserves every practice mode; a route lesson stays under Reis and resumes through Verder',async()=>{const a=boot();try{
  const button=text=>[...a.d.querySelectorAll('button')].find(b=>b.textContent===text);
  button('Oefenen').click();
  for(const mode of ['learn','point','write','exam']){
@@ -56,16 +56,20 @@ test('F1 navigation preserves every practice mode and route tasks; explicit rout
  }
  button('Reis').click();a.d.getElementById('routeContinue').click();await settle();
  assert.equal(a.ev('state.mode'),'route');assert(a.ev('state.current!==null'));
- const before=snap(a);button('Reis').click();await settle();button('Oefenen').click();await settle();assert.equal(snap(a),before);
- assert(a.d.querySelector('.layout').classList.contains('routeLessonLayout'));assert.deepEqual(a.errors,[]);
+ const current=()=>[...a.d.querySelectorAll('.ninoNav button')].filter(b=>b.getAttribute('aria-current')==='page').map(b=>b.textContent).join();
+ assert.equal(current(),'Reis','a route lesson started from the journey stays under Reis');
+ const before=snap(a);button('Reis').click();await settle();a.d.getElementById('routeContinue').click();await settle();assert.equal(snap(a),before);
+ assert(a.d.querySelector('.layout').classList.contains('routeLessonLayout'));assert.equal(current(),'Reis');
+ button('Oefenen').click();await settle();assert.equal(current(),'Oefenen','Oefenen opens free practice');assert.notEqual(a.ev('state.mode'),'route');
+ button('Reis').click();await settle();a.d.getElementById('routeContinue').click();await settle();assert.equal(a.ev('state.mode'),'route');assert.equal(current(),'Reis');assert(a.d.querySelector('.layout').classList.contains('routeLessonLayout'));assert.deepEqual(a.errors,[]);
  }finally{a.close()}});
-test('F1 Reis can display the journey from a completed round and resume the same result screen',async()=>{const a=boot();try{
+test('F1 Reis can display the journey from a completed round and Verder resumes the same result screen',async()=>{const a=boot();try{
  const button=text=>[...a.d.querySelectorAll('button')].find(b=>b.textContent===text);
  a.d.getElementById('routeContinue').click();
  for(let n=0;n<30&&!a.d.getElementById('finishScreen');n++)a.d.getElementById('next').click();await settle();
  const finish=a.d.getElementById('finishScreen');assert(finish);const before=snap(a),paused=a.ev('roundPaused');
  button('Reis').click();await settle();assert(!a.d.querySelector('.layout').classList.contains('finishLayout'),'journey is not hidden by result layout');assert(finish.classList.contains('hidden'));
- button('Oefenen').click();await settle();assert.equal(snap(a),before);assert.equal(a.ev('roundPaused'),paused);assert.equal(a.d.getElementById('finishScreen'),finish);assert(!finish.classList.contains('hidden'));assert(a.d.querySelector('.layout').classList.contains('finishLayout'));
+ a.d.getElementById('routeContinue').click();await settle();assert.equal(snap(a),before);assert.equal(a.ev('roundPaused'),paused);assert.equal(a.d.getElementById('finishScreen'),finish);assert(!finish.classList.contains('hidden'));assert(a.d.querySelector('.layout').classList.contains('finishLayout'));
  // Existing direct event handlers must retain destructive/default route-home semantics.
  [...finish.querySelectorAll('button')].find(b=>b.textContent==='Terug naar de route').click();assert.equal(a.ev('state.current'),null);assert(!a.d.getElementById('finishScreen'));
  }finally{a.close()}});
@@ -75,5 +79,5 @@ test('F1 canceled journey reset or lesson change keeps the suspended exercise',a
  const input=a.d.getElementById('answer');input.value='Navigatieconcept';input.setSelectionRange(3,10,'backward');const before=snap(a);
  button('Reis').click();a.d.getElementById('routeReset').click();button('Oefenen').click();await settle();assert.equal(snap(a),before);assert.equal(input.value,'Navigatieconcept');assert.equal(input.selectionDirection,'backward');
  button('Reis').click();a.d.getElementById('routeContinue').click();await settle();input.value='route draft';input.setSelectionRange(1,5,'backward');const route=snap(a);
- button('Reis').click();a.d.getElementById('smartStart').click();button('Oefenen').click();await settle();assert.equal(snap(a),route);assert.equal(input.value,'route draft');assert.deepEqual([input.selectionStart,input.selectionEnd,input.selectionDirection],[1,5,'backward']);
+ button('Reis').click();a.d.getElementById('smartStart').click();a.d.getElementById('routeContinue').click();await settle();assert.equal(snap(a),route);assert.equal(input.value,'route draft');assert.deepEqual([input.selectionStart,input.selectionEnd,input.selectionDirection],[1,5,'backward']);
  }finally{a.close()}});

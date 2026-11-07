@@ -57,9 +57,32 @@
  }
  const savePersist=persist,saveSync=sync,saveClear=clearRewardCelebrations;
  persist=function(){savePersist();watch();};
- function savedRows(){const count=document.querySelector('#journeyPizzaCount');if(count?.nextSibling)count.nextSibling.textContent=state.pizzas===1?' pizza':' pizza’s';for(const host of document.querySelectorAll('.journeyReward,#lessonReward')){let row=host.querySelector(':scope>.pizzaSavedRow');if(!row){row=make('div','pizzaSavedRow');host.append(row);}TopoPizza.saved(row,state.pizzas);}}
- sync=function(){saveSync();savedRows();};
+ function savedRows(){const count=document.querySelector('#journeyPizzaCount');if(count?.nextSibling)count.nextSibling.textContent=state.pizzas===1?' pizza':' pizza’s';for(const host of document.querySelectorAll('.journeyReward')){let row=host.querySelector(':scope>.pizzaSavedRow');if(!row){row=make('div','pizzaSavedRow');host.append(row);}TopoPizza.saved(row,state.pizzas);}}
+ // One pizza meter during every lesson: the large illustrated pizza, its points and the saved pizzas.
+ // It replaces the compact lesson meter and the side-panel meter (kept in the DOM, hidden), and only reads state.
+ const meter=make('section','ninoMeter');meter.id='ninoMeter';meter.setAttribute('role','group');meter.setAttribute('aria-label','Pizzameter');
+ const meterWheel=make('div','pizzaWheel ninoMeterWheel'),meterInfo=make('div','ninoMeterInfo'),meterPoints=make('p','ninoMeterPoints'),meterSaved=make('div','pizzaSavedRow ninoMeterSaved'),meterGoal=make('p','ninoMeterGoal');
+ meterWheel.setAttribute('aria-hidden','true');meterInfo.append(meterPoints,meterSaved,meterGoal);const meterBody=make('div','ninoMeterBody');meterBody.append(meterWheel,meterInfo);meter.append(meterBody);
+ const legacyMeter=[document.querySelector('#lessonReward'),document.querySelector('#pizzaRow'),document.querySelector('#pizzaRow')?.previousElementSibling,document.querySelector('#quiz>.rewardDetails'),document.querySelector('#pizzaProgress')?.parentElement,document.querySelector('#pizzaCaption')].filter(Boolean);
+ legacyMeter.forEach(n=>n.classList.add('ninoLegacyMeter'));
+ const words=['nul','één','twee','drie'];let shown=null;
+ function renderMeter(){
+  const slices=Math.max(0,Math.min(8,state.slices|0)),left=3-state.pizzas%3,key=slices+':'+state.pizzas;
+  TopoPizza.draw(meterWheel,slices,state.pizzas);TopoPizza.saved(meterSaved,state.pizzas);
+  meterPoints.replaceChildren(make('strong',null,slices+' van 8'),' punten voor '+TopoPizza.name(TopoPizza.flavor(state.pizzas)));
+  meterGoal.replaceChildren('Nog '+words[left]+(left===1?' pizza':' pizza’s')+' tot je ',make('span','ninoNoWrap','Vespa-rit'));
+  if(shown!==null&&shown!==key&&!still()){meter.classList.remove('ninoMeterBump');void meter.offsetWidth;meter.classList.add('ninoMeterBump');}
+  shown=key;
+ }
+ function placeMeter(){
+  const sheet=document.querySelector('#focusAnswerSheet'),bar=document.querySelector('#routeLessonBar');
+  // Answer sheet (tablet/phone): one compact row. Side panel (desktop): the announcement gets its own line.
+  if(document.body.dataset.focusMode==='true'&&sheet){if(meter.parentNode!==sheet)sheet.append(meter);if(meterGoal.parentNode!==meterInfo)meterInfo.append(meterGoal);}
+  else{if(bar&&meter.previousElementSibling!==bar)bar.after(meter);if(meterGoal.parentNode!==meter)meter.append(meterGoal);}
+ }
+ new MutationObserver(placeMeter).observe(document.body,{attributes:true,attributeFilter:['data-focus-mode']});
+ sync=function(){saveSync();savedRows();renderMeter();};
  // Import and reset replace progress: rebase quietly instead of celebrating restored stamps.
  clearRewardCelebrations=function(){saveClear();timers.forEach(clearTimeout);timers=[];if(ride.open)ride.close();current=null;pending.length=0;card?.remove();card=null;known=null;};
- savedRows();
+ savedRows();renderMeter();placeMeter();
 })();

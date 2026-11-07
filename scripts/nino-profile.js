@@ -45,11 +45,11 @@
   });
   if(firstRun)input.addEventListener('input',()=>{const name=normalizeName(input.value);heading.textContent=name?'Ciao, '+name+'!':'Ciao! Ik ben Nino.';});
   if(firstRun)dialog.querySelector('[type="submit"]').textContent='Andiamo!';
-  function done(){if(active!==dialog)return;active=null;if(dialog.open&&typeof dialog.close==='function')dialog.close();dialog.remove();if(previous?.isConnected)previous.focus({preventScroll:true});if(typeof onDone==='function')onDone(copy(value));}
-  function skip(){if(firstRun&&value===null){try{importProfile(initial);}catch{value=copy(initial);announce();}}done();}
+  function done(how){if(active!==dialog)return;active=null;if(dialog.open&&typeof dialog.close==='function')dialog.close();dialog.remove();if(previous?.isConnected)previous.focus({preventScroll:true});if(typeof onDone==='function')onDone(copy(value),how);}
+  function skip(){if(firstRun&&value===null){try{importProfile(initial);}catch{value=copy(initial);announce();}}done('skip');}
   dialog.querySelector('[data-profile-cancel]').textContent=firstRun?'Overslaan':'Annuleren';dialog.querySelector('[data-profile-cancel]').onclick=skip;
   dialog.addEventListener('cancel',e=>{e.preventDefault();skip();});
-  dialog.querySelector('form').onsubmit=e=>{e.preventDefault();const form=e.currentTarget,p={schema:1,name:normalizeName(input.value),coverColor:initial.coverColor,favoritePizza:form.querySelector('[name="favoritePizza"]:checked')?.value||null};try{importProfile(p);done();}catch{dialog.querySelector('[data-profile-status]').textContent='Bewaren lukt niet op dit apparaat. Je kunt zonder invullen verdergaan.';}};
+  dialog.querySelector('form').onsubmit=e=>{e.preventDefault();const form=e.currentTarget,p={schema:1,name:normalizeName(input.value),coverColor:initial.coverColor,favoritePizza:form.querySelector('[name="favoritePizza"]:checked')?.value||null};try{importProfile(p);done('save');}catch{dialog.querySelector('[data-profile-status]').textContent='Bewaren lukt niet op dit apparaat. Je kunt zonder invullen verdergaan.';}};
   doc.body.append(dialog);active=dialog;if(typeof dialog.showModal==='function')dialog.showModal();else dialog.setAttribute('open','');return dialog;
  }
  root.TopoProfile={current:()=>copy(value),exportProfile:()=>copy(value),validate,normalizeName,importProfile,commitImport,setup,open};

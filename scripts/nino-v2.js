@@ -4,31 +4,63 @@
  const image=(key,cls='')=>{const a=art[key],i=make('img',cls);i.src=a.src;i.width=a.width;i.height=a.height;i.alt='';i.setAttribute('aria-hidden','true');i.decoding='async';return i;};
  const action=(text,fn,cls='button')=>{const b=make('button',cls,text);b.type='button';b.onclick=fn;return b;};
  const nav=make('nav','ninoNav');nav.setAttribute('aria-label','Hoofdnavigatie');
- // Reis is a temporary view of the existing exercise, not a mode change.
- const layout=document.querySelector('.layout');let practiceView=null;
+ // Reis and Oefenen are two routes through the same lesson screen. The highlighted tab follows the
+ // route the learner chose (route lessons belong to Reis, free modes to Oefenen), never the shared screen.
+ // Leaving a lesson keeps a temporary view of it: canonical state, sessions and the original input node.
+ const root=window,layout=document.querySelector('.layout'),views={reis:null,oefenen:null};let lastFree='learn',bypass=false;
  const viewNodes=['#quiz','#routeHome','#routeLessonBar','#routeMapDock','#journeyScreen','#finishScreen'];
+ const isHome=()=>layout.classList.contains('routeHomeLayout');
+ const snapshot=()=>({current:state.current,route:state.route,active:state.route.active,mode:state.mode,layout:layout.className,lesson:document.body.classList.contains('lessonFocus'),nodes:viewNodes.map(s=>document.querySelector(s)).filter(Boolean).map(node=>[node,node.className])});
+ // Same mode too: a free question can be the very same place object as a suspended route question.
+ const valid=v=>!!v&&state.mode===v.mode&&state.current===v.current&&state.route===v.route;
+ function restore(v){layout.className=v.layout;document.body.classList.toggle('lessonFocus',v.lesson);for(const [node,cls]of v.nodes)node.className=cls;update();}
+ function freePractice(){views.oefenen=null;mode(lastFree);update();}
  const reis=action('Reis',()=>{
-  if(layout.classList.contains('routeHomeLayout'))return;
-  practiceView={current:state.current,route:state.route,layout:layout.className,lesson:document.body.classList.contains('lessonFocus'),nodes:viewNodes.map(s=>document.querySelector(s)).filter(Boolean).map(node=>[node,node.className])};
+  if(isHome())return;
+  views[state.mode==='route'?'reis':'oefenen']=snapshot();
   layout.classList.remove('finishLayout');document.querySelector('#finishScreen')?.classList.add('hidden');
-  renderRouteHome(true);
+  renderRouteHome(true);update();
  }),practice=action('Oefenen',()=>{
-  if(!layout.classList.contains('routeHomeLayout'))return;
-  if(practiceView&&(state.current!==practiceView.current||state.route!==practiceView.route))practiceView=null;
-  if(practiceView){
-   layout.className=practiceView.layout;document.body.classList.toggle('lessonFocus',practiceView.lesson);
-   for(const [node,cls]of practiceView.nodes)node.className=cls;
-   practiceView=null;
-  }else if(state.mode==='route'&&state.route.active&&!state.route.active.done)renderRouteTask();
-  else if(state.mode==='route')mode('learn');
+  if(!isHome()){if(state.mode!=='route')return;views.reis=snapshot();return freePractice();}
+  const v=views.oefenen;
+  if(valid(v)&&v.mode!=='route'){views.oefenen=null;return restore(v);}
+  freePractice();
  }),bookButton=action('Reisboekje',()=>openBook(bookButton));
- // Leave the suspended view only after a journey action actually proceeds (confirm may cancel).
- document.querySelector('#journeyScreen').addEventListener('click',e=>{
-  if(!practiceView||!e.target.closest('button:not(:disabled)'))return;
-  const opened=!layout.classList.contains('routeHomeLayout');
-  if(!opened&&state.current===practiceView.current&&state.route===practiceView.route)return;
-  practiceView=null;if(state.mode!=='route'){mode('route');if(opened)renderRouteTask();}
+ const journey=document.querySelector('#journeyScreen');
+ const routeProgress=()=>!!state.route.active||Object.keys(state.route.items).length>0||Object.values(state.route.chapters).some(r=>r.stage>0||r.goldAt>0);
+ // Before a journey button acts: offer the skipped introduction once, then resume a suspended route lesson as is.
+ journey.addEventListener('click',e=>{
+  const b=e.target.closest('button:not(:disabled)');if(!b||bypass)return;
+  const starts=b.matches('#routeContinue,#smartStart,#routeReview')||!!b.closest('#routeCards');
+  if(starts&&intro()==='skipped'&&!routeProgress()){e.preventDefault();e.stopImmediatePropagation();setIntro('offered');return offerIntro(b);}
+  const v=views.reis;
+  // The same lesson, or its result screen, comes back exactly as it was left: question, draft and selection.
+  if(b.id==='routeContinue'&&valid(v)&&state.route.active===v.active&&(v.layout.includes('finishLayout')||(v.active&&!v.active.done))){e.preventDefault();e.stopImmediatePropagation();views.reis=null;restore(v);}
+ },true);
+ // Leave a suspended free exercise only after a journey action actually proceeds (confirm may cancel).
+ journey.addEventListener('click',e=>{
+  if(!e.target.closest('button:not(:disabled)'))return;
+  const opened=!isHome();if(views.reis&&(opened||state.route.active!==views.reis.active))views.reis=null;
+  if(state.mode==='route')return;
+  const v=views.oefenen;
+  if(v&&!opened&&state.current===v.current&&state.route===v.route)return;
+  views.oefenen=null;mode('route');if(opened)renderRouteTask();update();
  });
+ // One more introduction for a learner who skipped it, before the first route lesson.
+ const INTRO_KEY='topo-nino-intro-v1';let introMemory=null;
+ function intro(){try{return root.localStorage.getItem(INTRO_KEY);}catch{return introMemory;}}
+ function setIntro(v){introMemory=v;try{root.localStorage.setItem(INTRO_KEY,v);}catch{}}
+ function offerIntro(target){
+  const offer=make('dialog','ninoIntroOffer');offer.setAttribute('aria-labelledby','ninoIntroTitle');
+  const heading=make('h2',null,'Eerst kennismaken met Nino?');heading.id='ninoIntroTitle';
+  const go=()=>{bypass=true;try{if(target.isConnected)target.click();}finally{bypass=false;}};
+  const leave=then=>{offer.close();offer.remove();then();};
+  const meet=action('Maak kennis met Nino',()=>leave(()=>TopoProfile.open({firstRun:true,onDone:(p,how)=>{if(how==='save')setIntro('done');go();}})),'button primary'),now=action('Start meteen',()=>leave(go));
+  const row=make('div','introActions');row.append(meet,now);
+  offer.append(image('welcome','introNino'),heading,make('p',null,'Vertel Nino hoe hij je mag noemen en wat je favoriete pizza is. Daarna begint je les.'),row);
+  offer.addEventListener('cancel',e=>{e.preventDefault();leave(go);});
+  document.body.append(offer);offer.showModal();meet.focus();
+ }
  nav.append(reis,practice,bookButton);document.querySelector('header').after(nav);
  const mark=document.querySelector('.brandMark');mark.replaceChildren(image('travel','headerIcon'));
  const reward=document.querySelector('.journeyReward');reward.before(make('h3','rewardHeading','Pizza’s & Vespa-ritten'));reward.setAttribute('aria-label','Verdiende pizzabeloningen');
@@ -56,7 +88,7 @@
    const plate=make('div','bookPortrait');plate.append(image('cover','bookCover'),image('welcome','bookNino'));section.append(plate);
    section.append(make('p','coverTitle',p?.name?p.name+'’s reisboekje':'Mijn reisboekje'));
    if(p?.favoritePizza){const key=p.favoritePizza==='quattro_formaggi'?'quattro-formaggi':p.favoritePizza,sticker=make('p','favoriteLabel');sticker.append(image('favorite'+PIZZA_KEYS.indexOf(key),'favoriteSticker'),'Mijn favoriete pizza: '+TopoPizza.name(key));section.append(sticker);}
-   section.append(action('Pas mijn boekje aan',()=>TopoProfile.open({onDone:()=>renderBook()}),'bookLink'));
+   section.append(action('Pas mijn boekje aan',()=>TopoProfile.open({onDone:()=>{renderBook();(body.querySelector('[data-profile-edit]')||close).focus({preventScroll:true});}}),'bookLink'));section.lastChild.dataset.profileEdit='';
   });
   page(p?.name?'Ciao, '+p.name+'!':'Dit is jouw reis',section=>{
    const completed=ROUTE_CHAPTERS.filter(c=>record(c).stage===3).length,gold=ROUTE_CHAPTERS.filter(c=>record(c).goldAt>0).length;
@@ -93,6 +125,8 @@
    // Stamp rows need clear paper down to the page foot; the right folio's painted village sits there.
    const quiet=side==='right'&&content.classList.contains('stampFolio');section.append(image(quiet?'folioleft':'folio'+side,'folioPaper'+(quiet?' folioMirrored':'')),content);body.append(section);}
   previous.disabled=leaf===0;next.disabled=leaf+(isNarrow()?1:2)>=pages.length;pageLabel.textContent=(leaf+1)+(isNarrow()?'':'–'+(leaf+2))+' / '+pages.length;
+  // Re-rendering removes a focused page control; keep focus in the book so arrow keys keep paging.
+  if(dialog.open&&!dialog.contains(document.activeElement))(next.disabled?previous.disabled?close:previous:next).focus({preventScroll:true});
  }
  function openBook(button,target){if(dialog.open)return;origin=button;scroll=[window.scrollX,window.scrollY];renderBook(target);dialog.showModal();const stamp=typeof target==='string'&&target.includes(':')?body.querySelector('[data-chapter="'+target.split(':')[1]+'"] .stampInspect'):null;(stamp||close).focus();}
  window.TopoBook={open:openBook,element:dialog};
@@ -100,7 +134,7 @@
  dialog.addEventListener('keydown',e=>{if(e.target.matches('input,select,textarea'))return;if(e.key==='ArrowRight'&&!next.disabled){e.preventDefault();next.click();}if(e.key==='ArrowLeft'&&!previous.disabled){e.preventDefault();previous.click();}});
  window.addEventListener('resize',()=>{if(dialog.open)renderBook();});
  function update(){
-  const home=document.querySelector('.layout').classList.contains('routeHomeLayout');reis.setAttribute('aria-current',home?'page':'false');practice.setAttribute('aria-current',home?'false':'page');
+  const home=isHome(),onReis=home||state.mode==='route';if(!home&&state.mode!=='route')lastFree=state.mode;reis.setAttribute('aria-current',onReis?'page':'false');practice.setAttribute('aria-current',onReis?'false':'page');
   document.body.dataset.ninoHome=String(home);legacy.hidden=home;
   const cards=document.querySelector('#routeCards');
   for(const group of cards.querySelectorAll('.routeCollection')){group.before(...group.querySelectorAll('.routeCard'));group.remove();}
@@ -108,10 +142,17 @@
   const actual=[...cards.querySelectorAll('.routeCard')];if(ordered.some((card,i)=>card!==actual[i]))for(const card of ordered)cards.append(card);
   ROUTE_CHAPTERS.forEach((c,i)=>{const card=ordered[i];if(!card||card.querySelector('.chapterPicture'))return;card.prepend(image('chapter'+i,'chapterPicture'));});
  }
+ // Trial version: only the Schoolkaart is offered. The Discovery atlas code, and any saved preference for it,
+ // stay untouched for a later version; window.NINO_DISCOVERY_MAP=true before load re-enables the choice.
+ if(window.NINO_DISCOVERY_MAP!==true){
+  document.body.classList.add('ninoSchoolMapOnly');
+  const school=()=>{if(document.body.dataset.mapTheme!=='school')document.body.dataset.mapTheme='school';};
+  new MutationObserver(school).observe(document.body,{attributes:true,attributeFilter:['data-map-theme']});school();
+ }
  new MutationObserver(update).observe(document.querySelector('.layout'),{attributes:true,attributeFilter:['class']});
  new MutationObserver(update).observe(document.querySelector('#routeCards'),{childList:true});update();
  TopoProfile.setup({art:{welcome:art.welcome.src,scene:document.querySelector('.routeScene>img')?.src,pizzas:{margherita:art.favorite0.src,salami:art.favorite1.src,quattro_formaggi:art.favorite2.src}}});
  // Existing learners keep their lesson/session. Personalization is always available in the book.
  const progressed=state.good>0||state.pizzas>0||state.trips>0||state.route.active||state.slices>0||state.mistakes.length>0||Object.keys(state.route.items).length>0||Object.values(state.route.chapters).some(r=>r.stage>0||r.goldAt>0);
- if(!progressed&&!TopoProfile.current())setTimeout(()=>TopoProfile.open({firstRun:true}),0);
+ if(!progressed&&!TopoProfile.current())setTimeout(()=>TopoProfile.open({firstRun:true,onDone:(p,how)=>setIntro(how==='save'?'done':'skipped')}),0);
 })();

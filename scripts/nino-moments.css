@@ -85,3 +85,32 @@ body[data-map-assessment="true"][data-map-theme="discovery"] :is(#map,.mapPicker
 body[data-map-theme="discovery"] :is(#map,.mapPicker svg,.microZoom svg) :is(.water,.zone,.country).activeTarget{fill-opacity:.68}
 /* iPad width: the fixed navigation sits under a 44px header, so the brand and counters stay visible. */
 body[data-focus-shell="true"]>header{height:44px;min-height:44px}
+
+/* One lesson pizza meter (replaces the compact lesson meter and the side-panel meter). */
+.ninoLegacyMeter,.layout .panel #quiz>.ninoLegacyMeter:not(#ninoMeter):not(#routeLessonBar){display:none!important}
+#ninoMeter{margin:12px 0 14px;padding:10px 12px;border:1px solid #ead3a2;border-radius:16px;background:#fff4dc;color:#183b3a}
+.ninoMeterBody{display:flex;align-items:center;gap:12px}
+.ninoMeter .ninoMeterWheel{flex:none;width:88px;height:88px}
+.ninoMeterInfo{display:grid;gap:5px;min-width:0}
+.ninoMeterPoints{margin:0;font-size:14px;line-height:1.3;color:#3f524b}
+.ninoMeterPoints strong{display:block;font-size:19px;line-height:1.15;color:#183b3a;font-variant-numeric:tabular-nums}
+.ninoMeter .ninoMeterSaved{justify-content:flex-start;gap:6px}
+.ninoMeter .ninoMeterSaved .pizzaSlot{width:32px;height:32px}
+.ninoMeterGoal{margin:0;font-size:13.5px;line-height:1.3;font-weight:700;color:#8b3a17}
+#ninoMeter>.ninoMeterGoal{margin-top:8px;font-size:14px}
+.ninoNoWrap{white-space:nowrap}
+.ninoMeterBump .ninoMeterWheel{animation:ninoMeterBump .45s ease-out}
+@keyframes ninoMeterBump{40%{transform:scale(1.09)}}
+#focusAnswerSheet #ninoMeter{margin:8px 0 0;padding:6px 10px;border-radius:12px}
+#focusAnswerSheet .ninoMeterBody{gap:10px}
+#focusAnswerSheet .ninoMeter .ninoMeterWheel{width:60px;height:60px}
+#focusAnswerSheet .ninoMeterInfo{grid-template-columns:auto 1fr;align-items:center;column-gap:10px;row-gap:2px}
+#focusAnswerSheet .ninoMeterPoints{font-size:13px}
+#focusAnswerSheet .ninoMeterPoints strong{font-size:16px}
+#focusAnswerSheet .ninoMeterSaved{grid-row:1/3;grid-column:2;justify-self:end}
+#focusAnswerSheet .ninoMeter .ninoMeterSaved .pizzaSlot{width:28px;height:28px}
+#focusAnswerSheet .ninoMeterGoal{grid-column:1;font-size:12.5px}
+@media(max-width:420px){#focusAnswerSheet .ninoMeterInfo{grid-template-columns:1fr}#focusAnswerSheet .ninoMeterSaved{grid-row:auto;grid-column:1;justify-self:start}#focusAnswerSheet .ninoMeter .ninoMeterWheel{width:56px;height:56px}#focusAnswerSheet .ninoMeter .ninoMeterSaved .pizzaSlot{width:24px;height:24px}}
+#focusAnswerSheet[data-collapsed="true"] #ninoMeter,body[data-focus-keyboard="true"][data-focus-answered="false"][data-focus-task="write"] #focusAnswerSheet #ninoMeter{display:none!important}
+@media(prefers-reduced-motion:reduce){.ninoMeterBump .ninoMeterWheel{animation:none}}
+@media print{#ninoMeter{display:none!important}}

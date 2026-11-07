@@ -1,3 +1,7 @@
+# NINO 2.0 — UX-ronde, 7 november 2026
+
+Eigenaarsbesluiten na het spelen van de HTML van 6 november: een reisles blijft onder **Reis**, een overgeslagen kennismaking wordt bij de eerste reisles één keer opnieuw aangeboden, alleen de Schoolkaart (Ontdekkingskaart-code blijft, achter `NINO_DISCOVERY_MAP`), één pizzameter op een vaste plek, en **Start de Vespa-rit** op de derde doos. Hermes' bevinding over pijltjestoetsen in het Reisboekje na profielbewerking is gereproduceerd en hersteld. Nieuwe HTML `output/html/NINO-2-Proefversie-2026-11-07.html`. [Bewijs, gespeelde routes en open punten](qa/ux-20261107/README.md). Geen release-GO.
+
 # NINO 2.0 — speelbare kandidaat, 6 november 2026
 
 Eén offline HTML voor eigenaarbeoordeling: sterkere Ontdekkingskaart op dezelfde geometrie, pizza's op het tempo van de leerling met geïllustreerde spaarpizza's, onboarding als één Nino-scène zonder boekkleur, Reisboekje als één compositie op de goedgekeurde folio's, verdiende Vespa-rit en stempel- en Gold-momenten die de juiste pagina openen. [Bewijs, demosave en open punten](qa/playable-20261106/README.md). Geen release-GO.

@@ -24,3 +24,14 @@ body[data-focus-mode="true"] .mapCard{top:calc(100px + var(--focus-safe-top,0px)
 #focusAnswerSheet #prompt,body[data-focus-task="point"] #focusAnswerSheet #prompt,body[data-focus-task="discover"] #focusAnswerSheet #prompt{padding-right:0;min-height:0}
 
 .routeLessonLayout .panel #quiz>.buttons{display:flex!important;flex-wrap:wrap;gap:8px}
+
+/* Trial: one map style. The atlas menu stays in the DOM for a later version. */
+body.ninoSchoolMapOnly .atlasOptions{display:none!important}
+/* Second, single offer of the introduction before the first route lesson. */
+.ninoIntroOffer{box-sizing:border-box;width:min(420px,calc(100vw - 24px));max-height:calc(100dvh - 16px);overflow:auto;padding:18px 20px 20px;border:0;border-radius:24px;background:#fff8e8;color:#183b3a;text-align:center;box-shadow:0 24px 80px #132f3a66}
+.ninoIntroOffer::backdrop{background:#123c3f99}
+.ninoIntroOffer .introNino{display:block;width:min(200px,40vw);height:auto;margin:0 auto 6px}
+.ninoIntroOffer h2{margin:4px 0 6px;font-size:24px;letter-spacing:-.02em}
+.ninoIntroOffer p{margin:0 0 14px;line-height:1.45}
+.ninoIntroOffer .introActions{display:grid;gap:10px}
+.ninoIntroOffer .button{min-height:48px;width:100%;font-size:16px}

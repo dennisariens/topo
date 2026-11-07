@@ -40,13 +40,14 @@
   const row=document.createElement('div');const more=document.createElement('button');more.type='button';more.className='button primary';more.textContent='Verder';
   panel.append(picture,title,label,row,more);document.body.append(panel);
   let timer=null,current=null;const queue=[];
-  function showBox(){if(timer!==null)cancel(timer);timer=null;panel.dataset.phase='open-box';wheel.hidden=true;box.hidden=false}
+  // The third box starts the earned ride; the first and second simply continue.
+  function showBox(){if(timer!==null)cancel(timer);timer=null;panel.dataset.phase='open-box';wheel.hidden=true;box.hidden=false;more.textContent=current?.trip?'Start de Vespa-rit':'Verder'}
   function hide(){if(panel.open&&typeof panel.close==='function')panel.close();panel.hidden=true}
   function finish(){const event=current;hide();current=null;if(event?.trip){panel.dataset.phase='journey';onTrip(event)}next()}
   function next(){
    if(current||!queue.length)return;
    current=queue.shift();const event=current,key=flavor(event.pizzas,true),left=3-event.pizzas%3;
-   panel.dataset.flavor=key;panel.dataset.phase='full-pizza';panel.hidden=false;wheel.hidden=false;box.hidden=true;
+   panel.dataset.flavor=key;panel.dataset.phase='full-pizza';more.textContent='Verder';panel.hidden=false;wheel.hidden=false;box.hidden=true;
    draw(wheel,8,event.pizzas,true);box.src=root.TOPO_PIZZA_ART.assets['box-'+key];
    title.textContent=name(key)+' verdiend!';
    label.textContent=event.trip?'Drie pizza’s! Nino start de Vespa.':'Nog '+left+(left===1?' pizza':' pizza’s')+' tot je volgende Vespa-rit.';

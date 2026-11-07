@@ -1,0 +1,15 @@
+{
+  "verdict":"PASS",
+  "scope":"Only requested final targeted r2 release checks; not owner release authorization",
+  "testedSHA":"bb27e617e0525c9821592525071ecd585c65e6e3",
+  "html":{"path":"output/html/NINO-2-Proefversie-2026-11-07-r2.html","bytes":41436767,"sha256":"e5265ae7118861b98be61b2cdb4bfdd9509a4ea1e864111ac6d52af410093ba0"},
+  "chromeF2":{"version":"157.0.8103.38","save":"PASS","cancel":"PASS","directArrowRightWithoutTabOrClick":true,"pageBefore":"1–2 / 8","pageAfter":"3–4 / 8","focusConnectedInsideBook":true,"progressStorageUnchanged":true},
+  "webkit":{"version":"27.2","fileURL":true,"offline":true,"freshActualCorrect":{"question":"Napels","good":1,"pizzas":0,"slices":1,"trips":0,"tab":"Reis","bookContinuity":"PASS"},"importedDemo":{"good":23,"pizzas":2,"slices":7,"trips":0,"profile":"DEMO-save","pendingWrite":"Bologna","naturallyPlayedByHermes":false,"sha256":"dfe9f46d2b8711ab65aaaa38d1194296ea1d52989d4661e37c3e459e0ee57b6c"},"actualOneAnswerAfterDemo":{"name":"Bologna","good":24,"pizzas":3,"slices":0,"trips":1},"ride":{"startButton":"Start de Vespa-rit","phases":["depart","ride","arrived"],"arrival":"Aangekomen in Florence!","returnedToSameVisibleLessonQuestion":"city-2","tab":"Reis","noAdditionalAwardsDuringRide":true}},
+  "favicon":{"status":"PASS visually inspected","freshHeadedChromeProfileAndTab":true,"ordinaryOfflineHTML":true,"creamNOnDarkGreen":true,"decodedPNGDimensions":[[16,16],[32,32]],"nativeWindowPixels":[1180,880],"nativeScale":1.0,"tabstripCropPixels":[1180,90],"cropResized":false,"screenshot":"chrome-tabbalk-ware-grootte.png","original":"chrome-native-tabbar-window.png","capture":"User-authorized native CuaDriver window capture, not viewport screenshot"},
+  "unexpectedJSErrors":[],
+  "externalRequests":[],
+  "notTested":["Native Safari","Physical iPad","OS keyboard/IME","VoiceOver","Actual printing","Retina/other OS favicon caches","Broad build/lint/all45/all11/Gold/storage suite not rerun","Full UX/artwork review not reopened","Ride reduced-motion/skip not repeated"],
+  "candidateModified":false,
+  "mergeDeployReleaseOrDownloadReplacement":false,
+  "nextAction":"Owner makes explicit release decision; candidate stays unchanged until then"
+}

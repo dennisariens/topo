@@ -1,0 +1,56 @@
+{
+  "target": "bb27e617e0525c9821592525071ecd585c65e6e3",
+  "htmlSHA256": "e5265ae7118861b98be61b2cdb4bfdd9509a4ea1e864111ac6d52af410093ba0",
+  "bytes": 41436767,
+  "kind": "favicon",
+  "version": "157.0.8103.38",
+  "records": [
+    {
+      "freshNativeTab": true,
+      "pid": 97059,
+      "window": {
+        "kCGWindowAlpha": 1,
+        "kCGWindowBounds": {
+          "Height": 880,
+          "Width": 1180,
+          "X": 0,
+          "Y": 31
+        },
+        "kCGWindowIsOnscreen": true,
+        "kCGWindowLayer": 0,
+        "kCGWindowMemoryUsage": 2368,
+        "kCGWindowNumber": 2677,
+        "kCGWindowOwnerName": "Google Chrome",
+        "kCGWindowOwnerPID": 97059,
+        "kCGWindowSharingState": 0,
+        "kCGWindowStoreType": 1
+      },
+      "icons": [
+        {
+          "sizes": "16x16",
+          "type": "image/png",
+          "natural": [
+            16,
+            16
+          ],
+          "inline": true
+        },
+        {
+          "sizes": "32x32",
+          "type": "image/png",
+          "natural": [
+            32,
+            32
+          ],
+          "inline": true
+        }
+      ],
+      "viewportOnlyScreenshot": false,
+      "source": "Unscaled macOS capture of our own Chrome window, native tabstrip included"
+    }
+  ],
+  "errors": [],
+  "network": [],
+  "status": "PASS",
+  "failure": null
+}

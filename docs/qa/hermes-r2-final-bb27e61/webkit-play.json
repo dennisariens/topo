@@ -1,0 +1,74 @@
+{
+  "target": "bb27e617e0525c9821592525071ecd585c65e6e3",
+  "htmlSHA256": "e5265ae7118861b98be61b2cdb4bfdd9509a4ea1e864111ac6d52af410093ba0",
+  "bytes": 41436767,
+  "kind": "webkit-play",
+  "version": "27.2",
+  "records": [
+    {
+      "step": "Fresh genuine lesson",
+      "fixture": false,
+      "before": {
+        "good": 0,
+        "pizzas": 0,
+        "slices": 0,
+        "trips": 0
+      },
+      "after": {
+        "good": 1,
+        "pizzas": 0,
+        "slices": 1,
+        "trips": 0
+      },
+      "question": {
+        "id": "city-6",
+        "name": "Napels"
+      },
+      "mouseXY": [
+        649.114304775281,
+        521.3436235955055
+      ],
+      "tab": "Reis",
+      "meter": "1 van 8 punten voor Margherita",
+      "bookPreserves": true
+    },
+    {
+      "step": "Demo prerequisite + actual one correct writing answer and real ride UI",
+      "demo": {
+        "good": 23,
+        "pizzas": 2,
+        "slices": 7,
+        "trips": 0,
+        "profile": "DEMO-save",
+        "lastWriteQuestion": "Bologna",
+        "origin": "PR demosave, not naturally played by Hermes"
+      },
+      "demoFileSHA256": "dfe9f46d2b8711ab65aaaa38d1194296ea1d52989d4661e37c3e459e0ee57b6c",
+      "actualAnswer": {
+        "id": "city-2",
+        "name": "Bologna",
+        "mode": "write"
+      },
+      "meterBefore": "7 van 8 punten voor Quattro Formaggi",
+      "after": {
+        "good": 24,
+        "pizzas": 3,
+        "slices": 0,
+        "trips": 1
+      },
+      "phases": [
+        "depart",
+        "ride",
+        "arrived"
+      ],
+      "arrival": "Aangekomen in Florence!",
+      "returnedQuestion": "city-2",
+      "quizVisible": true,
+      "tab": "Reis"
+    }
+  ],
+  "errors": [],
+  "network": [],
+  "status": "PASS",
+  "failure": null
+}

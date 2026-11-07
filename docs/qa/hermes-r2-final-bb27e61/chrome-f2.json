@@ -1,0 +1,39 @@
+{
+  "target": "bb27e617e0525c9821592525071ecd585c65e6e3",
+  "htmlSHA256": "e5265ae7118861b98be61b2cdb4bfdd9509a4ea1e864111ac6d52af410093ba0",
+  "bytes": 41436767,
+  "kind": "chrome-f2",
+  "version": "157.0.8103.38",
+  "records": [
+    {
+      "choice": "Bewaar mijn boekje",
+      "beforePage": "1–2 / 8",
+      "afterPage": "3–4 / 8",
+      "focus": {
+        "tag": "BUTTON",
+        "dialog": "travelBook",
+        "text": "Pas mijn boekje aan"
+      },
+      "progressUnchanged": true,
+      "fixture": false,
+      "pass": true
+    },
+    {
+      "choice": "Annuleren",
+      "beforePage": "1–2 / 8",
+      "afterPage": "3–4 / 8",
+      "focus": {
+        "tag": "BUTTON",
+        "dialog": "travelBook",
+        "text": "Pas mijn boekje aan"
+      },
+      "progressUnchanged": true,
+      "fixture": false,
+      "pass": true
+    }
+  ],
+  "errors": [],
+  "network": [],
+  "status": "PASS",
+  "failure": null
+}

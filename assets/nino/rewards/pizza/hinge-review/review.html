@@ -1,0 +1,13 @@
+<!doctype html>
+<html lang="nl"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>NINO Pisa — artworkreview</title>
+<style>
+body{margin:0;padding:24px;background:#f6eede;color:#34291d;font:16px/1.5 system-ui}main{max-width:1200px;margin:auto}h1{font-size:1.6rem}section{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,280px),1fr));gap:16px}article{min-width:0}img{display:block;width:100%;height:auto;background:repeating-conic-gradient(#eee 0% 25%,#fff 0% 50%) 0/24px 24px}button{font:inherit;min-height:44px;padding:8px 16px;cursor:pointer;background:#fff9ed;color:#34291d;border:1px solid #806044;border-radius:6px}button:hover{background:#ebd7b3}button:focus-visible{outline:3px solid #165d84;outline-offset:3px}.static{display:none}@media(prefers-reduced-motion:reduce){.motion{display:none}.static{display:block}}
+</style>
+<main><h1>NINO Pisa — review vereist</h1><p>Goedgekeurde oorspronkelijke illustraties. Technische animatiekandidaat; onafhankelijke Hermes QA en visuele acceptatie staan open. Geen live TOPO-integratie.</p>
+<section>
+<article><h2>Margherita</h2><img class="motion" src="motion/pisa-margherita.webp" width="1254" height="1254" alt="Pisa-doos opent met Margherita"><img class="static" src="proof/margherita-time-100.png" width="1254" height="1254" alt="Geopende Pisa-doos met Margherita"><button type="button">Speel Margherita opnieuw</button></article>
+<article><h2>Salami</h2><img class="motion" src="motion/pisa-salami.webp" width="1254" height="1254" alt="Pisa-doos opent met Salami"><img class="static" src="proof/salami-time-100.png" width="1254" height="1254" alt="Geopende Pisa-doos met Salami"><button type="button">Speel Salami opnieuw</button></article>
+<article><h2>Quattro Formaggi</h2><img class="motion" src="motion/pisa-quattro-formaggi.webp" width="1254" height="1254" alt="Pisa-doos opent met Quattro Formaggi"><img class="static" src="proof/quattro-formaggi-time-100.png" width="1254" height="1254" alt="Geopende Pisa-doos met Quattro Formaggi"><button type="button">Speel Quattro Formaggi opnieuw</button></article>
+</section><h2>Alle tijdstadia</h2><img src="proof/contact-sheet.png" width="1800" height="1140" alt="Alle drie smaken bij vijf tijdstadia" loading="lazy"></main>
+<script>for(const button of document.querySelectorAll('button'))button.addEventListener('click',()=>{const old=button.parentElement.querySelector('.motion');const image=old.cloneNode();image.src=old.src.split('?')[0]+'?replay='+Date.now();old.replaceWith(image)});</script></html>

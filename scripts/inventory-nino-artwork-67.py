@@ -16,6 +16,7 @@ def git(*args):
 def sha(data):
     return hashlib.sha256(data).hexdigest()
 refs = {
+ '4eb9a5ae33550d789c56d5c01393145a148565aa':'hermes/nino-art-intake-45 / PR48',
  '1bf86b3e1c69319bed8ef877243070a64d97a12e':'codex/topo-nino-computer-release-20261030 / PR61',
  '8a704cb23da97baf7197635df7fa12f06b864a24':'art/nino-travel-stamps-v2-20261026',
  'bf91fb3fa6ac553f78b33169efa9f2bf60e215ca':'art/nino-pizza-rewards-20261024 / PR63 base',
@@ -46,7 +47,7 @@ for path in sorted(paths):
     blob=hashlib.sha1(b'blob '+str(len(data)).encode()+b'\0'+data).hexdigest()
     provenance=[s for s in sources.get(path,[]) if s['blob']==blob]
     row=dict(path=path,delivery_present=present,bytes=len(data),sha256=sha(data),git_blob=blob,
-             provenance=provenance or [{'commit':'delivery commit containing this manifest','branch':'codex/nino-v2-artwork-closure-67','recipe':derived.get(path,'PR66 recipe for Venezia')}],
+             provenance=provenance or [{'commit':'delivery commit containing this manifest','branch':'art/nino-final-closeout-20261107','recipe':('scripts/build_pisa_final.py' if '/hinge-review/' in path else derived.get(path,'PR66 recipe for Venezia'))}],
              dimensions=None,format=file.suffix[1:].upper(),mode=None,alpha=None,color_profile=None,
              visual_approval='Owner-approved package per issue67; exact derivative independent QA pending',
              export_readiness='source only',runtime_usage='NOT INTEGRATED',missing_dependencies=[])
@@ -79,17 +80,30 @@ for path in sorted(paths):
         row.update(status='READY',runtime_usage='embedded favicon data URI; independent browser/owner acceptance pending',export_readiness='exact PR65 binary')
     if not present:
         row['export_readiness']+='; audited at pinned source Git blob, intentionally not duplicated into integration tree'
-    if '/book/' in path:
+    archival_book = path.endswith('/book/masters/passport-open-book.png')
+    if archival_book:
+        row.update(status='OPTIONAL DEFERRED', export_readiness='archival excluded; historical REWORK; baked content; not a runtime folio',
+                   intended_runtime_placement='ARCHIVAL REFERENCE ONLY; excluded from production integration',
+                   runtime_usage='NEVER INTEGRATE')
+    if '/hinge-review/' in path:
+        row.update(status='REVIEW REQUIRED',visual_approval='New deterministic derivative; Hermes and owner approval pending',
+                   intended_runtime_placement='Future Pisa reward animation only after independent approval',
+                   export_readiness='actual review asset; not approved for integration')
+    if '/book/' in path and not archival_book:
         row['missing_dependencies'].append('owner folio resolution exception; native1086x1448, <=543 CSS px/page at DPR2; no passport UI in PR61')
     if '/gold/' in path or '/stamps/' in path or '/postcards/' in path or '/arrivo/' in path:
         row['missing_dependencies'].append('Existing PR61 has no earned passport presentation; no new unlock/save/reward implementation authorized')
     if 'venezia-scalloped' in path:
         row['missing_dependencies'].append('exact owner-reviewed raster matte/ZIP unavailable at a documented repository path; PR66 572-point reconstruction requires independent edge acceptance')
+    row['source_availability'] = 'DELIVERED FILE' if present else 'PINNED GIT SOURCE ONLY'
+    row['delivered_export'] = bool(present and ('/exports/' in path or '/micro-v2/' in path or ('/hinge-review/' in path and ('/motion/' in path or '/layers/' in path))))
+    row['integration_status'] = 'EMBEDDED' if row['runtime_usage'].startswith('embedded') else 'NOT INTEGRATED'
+    row['runtime_export_filename'] = file.name if row['delivered_export'] else None
     rows.append(row)
 result=dict(baseCommit=next(iter(refs)),sourceRefs=refs,reviewCommit='9e58e756f124ff37d47b4ebcfd274684125d8aeb',count=len(rows),
-            note='READY on a master means preserved source availability, not unrestricted runtime approval; statuses do not self-approve QA.',assets=rows)
+            note='Legacy status is scoped by separate source_availability, delivered_export and integration_status fields; no source-only row counts as a delivered export. Archived REWORK book is excluded.',assets=rows)
 (OUT/'artwork-manifest.json').write_text(json.dumps(result,indent=2)+'\n')
 with (OUT/'artwork-manifest.csv').open('w') as f:
-    writer=csv.DictWriter(f,fieldnames=list(rows[0]));writer.writeheader()
+    writer=csv.DictWriter(f,fieldnames=list(rows[0]),lineterminator='\n');writer.writeheader()
     for row in rows:writer.writerow({k:json.dumps(v) if isinstance(v,(list,dict)) else v for k,v in row.items()})
 print('Measured and provenance-checked',len(rows),'actual artwork files')

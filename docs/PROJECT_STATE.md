@@ -1,5 +1,19 @@
 # Project state
 
+## 2026-11-07 — artwork closeout review candidate
+
+Art-only follow-up to PR70, branch `art/nino-final-closeout-20261107`.
+Approved exports retained; missing 11 chapter exports and accepted cover copied
+from exact PR48 Git blobs. Inventory separates source/export/integration and
+excludes the historical REWORK open-book master. Reproducible Pisa hinge
+derivative, native proofs, offline preview and immutable review ZIP prepared.
+Build/lint/all tests/preservation audits and offline desktop/iPad-sized preview
+checks pass; app and engines remain byte-identical to PR70. No runtime art
+integration or original-master overwrite. See
+`docs/qa/NINO_ARTWORK_FINAL_CLOSEOUT.md` for classifications, evidence and single
+Hermes handoff. Independent exact-head QA, owner folio/Venezia exceptions and
+final visual acceptance remain open. NOT ARTWORK FINAL / LOCKED.
+
 ## NINO V2 artwork closeout — issue67, 2 November 2026
 
 Bounded export/favicons candidate stacked on PR61 `1bf86b3e1c69319bed8ef877243070a64d97a12e`.

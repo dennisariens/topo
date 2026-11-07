@@ -201,3 +201,15 @@ remain available; hinge stays optional under issue31/PR63. Source availability,
 technical export, runtime integration and independent acceptance remain distinct.
 Evidence and remaining conditions: [closure ledger](qa/nino-v2-closure-67/README.md).
 This does not supersede PR61's independent functional review or owner release gate.
+
+## 2026-11-07 — final artwork closeout mission
+
+The owner now explicitly requires the genuine Pisa hinge review package; this
+supersedes the Issue67 ledger's optional/deferred classification of that work.
+Use locked approved print/pizza sources, deterministic registered surfaces and
+real temporal proofs. Keep PR70 export history and correct Hermes D1/D2 without
+importing a second learner/integration implementation. Technical source/export
+availability remains separate from independent visual approval and runtime use.
+No merge, deployment, issue closure or FINAL/LOCKED claim before exact-delivery
+Hermes and owner approval. Canonical report:
+`docs/qa/NINO_ARTWORK_FINAL_CLOSEOUT.md`.

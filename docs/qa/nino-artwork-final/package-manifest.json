@@ -1,0 +1,531 @@
+{
+  "producing_commit": "52d077dd60bdec83f9e38db1c6d70c1aab3de1eb",
+  "status": "REVIEW REQUIRED; NOT FINAL / LOCKED",
+  "note": "Package commit and exact review SHA are pinned by the draft PR. No archive can contain its own Git SHA or checksum.",
+  "files": {
+    "assets/nino/app-icon/micro-v2/favicon.ico": {
+      "sha256": "d61343a127d7cae32c86a61f0b41c571b281de8126bea4869d010db0d2d99240",
+      "bytes": 1454
+    },
+    "assets/nino/app-icon/micro-v2/topo-nino-italy-only-16.png": {
+      "sha256": "ca4d68e3f5c65b0ef8a1b311f4c5c80caafc8f90d3a2f816dda8beb0a5916d75",
+      "bytes": 518
+    },
+    "assets/nino/app-icon/micro-v2/topo-nino-italy-only-master.svg": {
+      "sha256": "aea401a22730a8a04b4a48e3ec19d6f0eb9275ecbe43a12a2092d387c13b7cf1",
+      "bytes": 1054
+    },
+    "assets/nino/app-icon/micro-v2/topo-nino-scooter-italy-24.png": {
+      "sha256": "17383c4b0af743cca5c275ec3ca9795d2e321e01b0e322f1ad3525dd6d2c4295",
+      "bytes": 724
+    },
+    "assets/nino/app-icon/micro-v2/topo-nino-scooter-italy-32.png": {
+      "sha256": "37c261684da5734eb56f3f3e6ed86a1a5c696c47f62b43c2899caa6a99072a0a",
+      "bytes": 898
+    },
+    "assets/nino/app-icon/micro-v2/topo-nino-scooter-italy-48.png": {
+      "sha256": "16ecffe9ed1191078d29432f42c837d619f8d2b4c43cedf9c8b40a8853687074",
+      "bytes": 1292
+    },
+    "assets/nino/app-icon/micro-v2/topo-nino-scooter-italy-64.png": {
+      "sha256": "41ffaa25b59513974f0d5b665f36ac06355fc203f0051c6fc2c03304d6b32604",
+      "bytes": 1669
+    },
+    "assets/nino/app-icon/micro-v2/topo-nino-scooter-italy-master.svg": {
+      "sha256": "c2d75590987d51ad46f44672c2f082bf46e4660739742a6aed14a4079da6bb3a",
+      "bytes": 2036
+    },
+    "assets/nino/chapter-icons/exports/chapter-01-steden-1-6.webp": {
+      "sha256": "337e02ba2c1ecb909d9e1f9921070492e575c64e6f255733b5837c817fa42c11",
+      "bytes": 108690
+    },
+    "assets/nino/chapter-icons/exports/chapter-02-steden-7-12.webp": {
+      "sha256": "f9c76c2c0926d31838abc82063a4e866546e0c5b49c4c75cf68ac3d1fb739589",
+      "bytes": 104694
+    },
+    "assets/nino/chapter-icons/exports/chapter-03-extra-steden-13-18.webp": {
+      "sha256": "1801146a77b15f4e7b57b3e8a543244b55e37f828b57f02bf83dd1636f034b63",
+      "bytes": 109932
+    },
+    "assets/nino/chapter-icons/exports/chapter-04-extra-steden-19-23.webp": {
+      "sha256": "125a496d4c65e3008c5b25606048b087a8d1678dfe551f3d7b2d256a33de1526",
+      "bytes": 124022
+    },
+    "assets/nino/chapter-icons/exports/chapter-05-eilanden.webp": {
+      "sha256": "f1ca42b2a08c2586ef601a1d4e6174a1996bdeb95a64c0b8fadabafbcb2fe9f0",
+      "bytes": 127238
+    },
+    "assets/nino/chapter-icons/exports/chapter-06-bergen.webp": {
+      "sha256": "a6b8def0c138109385f96de64c02026d11dd19bea9ffa9ad6e31fca5fab0b7c3",
+      "bytes": 121680
+    },
+    "assets/nino/chapter-icons/exports/chapter-07-vulkanen.webp": {
+      "sha256": "52efca255b21936d51c7c86868d438005393b2fac66a7ae8c2f05daaa593c232",
+      "bytes": 119992
+    },
+    "assets/nino/chapter-icons/exports/chapter-08-streken.webp": {
+      "sha256": "2885eeb2d2b4d2479895761457968768d7046e65958ed6df0fd1ee056ee88a14",
+      "bytes": 127734
+    },
+    "assets/nino/chapter-icons/exports/chapter-09-landen.webp": {
+      "sha256": "c616f7524a546ed77e59347cbf8335be9013e687483fa689e00b1c26ab7a0f79",
+      "bytes": 101332
+    },
+    "assets/nino/chapter-icons/exports/chapter-10-zeeen.webp": {
+      "sha256": "66139c1119925b9584aaa0de0be9472ff2c0272235ac019bf5316be7c2325f0f",
+      "bytes": 117930
+    },
+    "assets/nino/chapter-icons/exports/chapter-11-rivieren.webp": {
+      "sha256": "c08a48c15a9e64abe11e6f839b160c0d24961a09ea2d627dd43277575b368ff2",
+      "bytes": 136506
+    },
+    "assets/nino/exports/nino-arrival.webp": {
+      "sha256": "ff1b6908fcbcfd81098232b9e108ad2b32826c5914a2c3414465385b05fcbd78",
+      "bytes": 297324
+    },
+    "assets/nino/exports/nino-encourage.webp": {
+      "sha256": "4ab8b1af4289ffd47dd9d2e8e102dfff68a53da97030741df1db16bc0889d3c5",
+      "bytes": 255360
+    },
+    "assets/nino/exports/nino-gold.webp": {
+      "sha256": "b735c2dd44003c62969adcf4d11b446ec432f86a2f2f27f56aa6281b2ce435f2",
+      "bytes": 229344
+    },
+    "assets/nino/exports/nino-guide.webp": {
+      "sha256": "13cb4bc888d62573dde1cfb6a6645da82c20180547354aab8f3557e99a691a2a",
+      "bytes": 223920
+    },
+    "assets/nino/exports/nino-success.webp": {
+      "sha256": "e43124089abfa0878705c9f4c9389487c16b914c3579cff88d8532f64f6fa518",
+      "bytes": 255022
+    },
+    "assets/nino/exports/nino-welcome.webp": {
+      "sha256": "89966925cb2f277e89bdd53eb22a5a328a26c54c1f52ccf9a91a3b263bd4a568",
+      "bytes": 247918
+    },
+    "assets/nino/rewards/pizza/exports/pizza-box-closed-pisa.webp": {
+      "sha256": "6e47559c8eea4932fa4516fea324ee85fbe386ab7c3df26034f820a8c4860d3c",
+      "bytes": 203044
+    },
+    "assets/nino/rewards/pizza/exports/pizza-box-open-pisa-margherita.webp": {
+      "sha256": "742a5d39843dc84b6a8b781678edcb3ce6643a60bde1c8ae67c1e0567125f7d7",
+      "bytes": 223780
+    },
+    "assets/nino/rewards/pizza/exports/pizza-box-open-pisa-quattro-formaggi.webp": {
+      "sha256": "1b317d38980873756276ffaedeca3843a30c386233e83ecf846a1563f99903b2",
+      "bytes": 209562
+    },
+    "assets/nino/rewards/pizza/exports/pizza-box-open-pisa-salami.webp": {
+      "sha256": "9f3795b47f6b60a975f3f83af6edb07981739cc2a55c0d4de1b7cb66f2b184aa",
+      "bytes": 285172
+    },
+    "assets/nino/rewards/pizza/hinge-review/layers/front-cardboard-only.png": {
+      "sha256": "e393c33c55f8812a3cb9fb19ccccfa247a424ab1db1a08f673e436d855960f35",
+      "bytes": 34867
+    },
+    "assets/nino/rewards/pizza/hinge-review/layers/front-mask.png": {
+      "sha256": "471f8830a0a87d2fc6ac1c8b2d3af4b55de188a7b8c282b7f3fa26547e36203a",
+      "bytes": 13836
+    },
+    "assets/nino/rewards/pizza/hinge-review/layers/lid-closed-registered.png": {
+      "sha256": "a4fe86e96ae0b9129fdbd20389b2833dfb47ec3140c75a55675c0becb521de5b",
+      "bytes": 570659
+    },
+    "assets/nino/rewards/pizza/hinge-review/layers/lid-open-registered.png": {
+      "sha256": "0e5fbba313a709a4b5506144b9fd529b154d6334e1c30e45a8e57225df427837",
+      "bytes": 303029
+    },
+    "assets/nino/rewards/pizza/hinge-review/layers/tray-and-original-pizza-margherita.png": {
+      "sha256": "9befca75ca7ce9f0c9d93dfacb3c7685f12abf5e07cfedfd84b188042a704158",
+      "bytes": 648137
+    },
+    "assets/nino/rewards/pizza/hinge-review/layers/tray-and-original-pizza-quattro-formaggi.png": {
+      "sha256": "da84a5a0ca4df9bd54913c1373b48bc6442b7424f1c6e1e7736fe4e4a013f196",
+      "bytes": 627894
+    },
+    "assets/nino/rewards/pizza/hinge-review/layers/tray-and-original-pizza-salami.png": {
+      "sha256": "fb1fb67e0654ac39f654331f6ee70a17954ec51ea75c999dfaf1b0e7fdc2fe86",
+      "bytes": 694479
+    },
+    "assets/nino/rewards/pizza/hinge-review/manifest.json": {
+      "sha256": "2a33a5382fb05075da6c6dca06851bb55485c08b9be02f3769b51dfda1dc4cdd",
+      "bytes": 6926
+    },
+    "assets/nino/rewards/pizza/hinge-review/motion/pisa-margherita.webp": {
+      "sha256": "ca73bb454f34c0007f2349466f8ecdf2a020c454e993c0ace4b6ffd53bed055f",
+      "bytes": 6782150
+    },
+    "assets/nino/rewards/pizza/hinge-review/motion/pisa-quattro-formaggi.webp": {
+      "sha256": "bb128b11cb83742cc776d50aa50377a894fd1a0f5749e4c605982be8d8bb3226",
+      "bytes": 6697530
+    },
+    "assets/nino/rewards/pizza/hinge-review/motion/pisa-salami.webp": {
+      "sha256": "f3ed23dbe7e68be73f715a07da638989110d4d530d37dcb04a94f9943b51449a",
+      "bytes": 6940416
+    },
+    "assets/nino/rewards/pizza/hinge-review/proof/contact-sheet.png": {
+      "sha256": "6f422f141787f80e0b16e9b5d5dced1c2b94a4b90bccc06bdc028b1dc02ae2e6",
+      "bytes": 534810
+    },
+    "assets/nino/rewards/pizza/hinge-review/proof/margherita-time-000.png": {
+      "sha256": "677671017c608337e4b1a8a638c3d4643e11eff05d5634358f2c42842ecfe44b",
+      "bytes": 617873
+    },
+    "assets/nino/rewards/pizza/hinge-review/proof/margherita-time-025.png": {
+      "sha256": "ebcc428702dced57390882165f34b7afd58ddf07a423380972973e0e620e1456",
+      "bytes": 713489
+    },
+    "assets/nino/rewards/pizza/hinge-review/proof/margherita-time-050.png": {
+      "sha256": "dd6ee6fda032f82e6c0f514b0031e37b55f4ee4807a4603829a40c071f54af6c",
+      "bytes": 894879
+    },
+    "assets/nino/rewards/pizza/hinge-review/proof/margherita-time-075.png": {
+      "sha256": "68c448084b504b9e1662b0e39de51fa078bef77e395f0b0713c7f3521ccfed24",
+      "bytes": 937288
+    },
+    "assets/nino/rewards/pizza/hinge-review/proof/margherita-time-100.png": {
+      "sha256": "6ae22fcac219a6a3a13a75b7ce1cf68a00d18e312ed3eccefc5483a5477b1b87",
+      "bytes": 941462
+    },
+    "assets/nino/rewards/pizza/hinge-review/proof/quattro-formaggi-time-000.png": {
+      "sha256": "6a7e232637bb94d83a4b8b3b7ed022afb5cf60a3b7c2a986918181a10cabb635",
+      "bytes": 617934
+    },
+    "assets/nino/rewards/pizza/hinge-review/proof/quattro-formaggi-time-025.png": {
+      "sha256": "b0e6530311404dee076da5e3f94859ec78320ca7b811b02481d88568a0f1b5a8",
+      "bytes": 696646
+    },
+    "assets/nino/rewards/pizza/hinge-review/proof/quattro-formaggi-time-050.png": {
+      "sha256": "a2d63caf572774afe3416176b83350f877b56eee2a30626c03217d834f30eec7",
+      "bytes": 878503
+    },
+    "assets/nino/rewards/pizza/hinge-review/proof/quattro-formaggi-time-075.png": {
+      "sha256": "bdee3961d106c3295f8dafac66dbf639fee4ed700591504b1b689b7725b2c4af",
+      "bytes": 920753
+    },
+    "assets/nino/rewards/pizza/hinge-review/proof/quattro-formaggi-time-100.png": {
+      "sha256": "457ca377bd87197bb4b56408aae10bf0e256da068e9b6b42ced2e44abb96547b",
+      "bytes": 924884
+    },
+    "assets/nino/rewards/pizza/hinge-review/proof/salami-time-000.png": {
+      "sha256": "1b8f5dada71b496502fffa3308afef1acc5151720cd32ef9860aa37b182f7d1e",
+      "bytes": 618014
+    },
+    "assets/nino/rewards/pizza/hinge-review/proof/salami-time-025.png": {
+      "sha256": "70c07a2b0efb76feea61962d6fd64fef2113dea1a107f93aeb8129924b7ed4a9",
+      "bytes": 759877
+    },
+    "assets/nino/rewards/pizza/hinge-review/proof/salami-time-050.png": {
+      "sha256": "242a74dd64bb0151acf5509ddcbb8246a73498b2dc517841373da3f841c7f356",
+      "bytes": 941787
+    },
+    "assets/nino/rewards/pizza/hinge-review/proof/salami-time-075.png": {
+      "sha256": "8c289bca2ab213b7d4f9a9c7546025fe9200ee3ef32501ed6ca9a3417a02529b",
+      "bytes": 984114
+    },
+    "assets/nino/rewards/pizza/hinge-review/proof/salami-time-100.png": {
+      "sha256": "9b77e7615b5ab05535b3b153e9c8f732436001b34812d2740748280a31649ce5",
+      "bytes": 988223
+    },
+    "assets/nino/rewards/pizza/hinge-review/review.html": {
+      "sha256": "5f2a2267a469396d49b6aa848dfa6f34746672ecb4eea38d0d56a63fadc93c5e",
+      "bytes": 2576
+    },
+    "assets/nino/rewards/pizza/hinge-review/textures/lid-exterior-original-uv.png": {
+      "sha256": "8cc8c33dd7ebf262bd2fb3207777b2b16ff61c5c72e72a2350bafbb56cd8e77f",
+      "bytes": 1378660
+    },
+    "assets/nino/rewards/pizza/hinge-review/textures/lid-interior-derived-uv.png": {
+      "sha256": "d6db3ce60aa1ebc5dffee4e5cd0b83fb44248d25118871919cf078b7f9bd7ebf",
+      "bytes": 33127
+    },
+    "assets/nino/travel-passport/arrivo/exports/arrivo-travel.webp": {
+      "sha256": "cc3cd8efb2075698df1c50c8b82c833d4032585b43ea208d8fa86e0d7b336be4",
+      "bytes": 1599446
+    },
+    "assets/nino/travel-passport/book/exports/passport-blank-folio-left-alpha-normalized.webp": {
+      "sha256": "d4862f0f5e34631c4e483761f933baa92bd85dee05b7ea0d581a7eb29be668a2",
+      "bytes": 1909020
+    },
+    "assets/nino/travel-passport/book/exports/passport-blank-folio-right-alpha-normalized.webp": {
+      "sha256": "3ce3133d483bec940e961a5a920a30bbb00e16da3ebb2445966fc83e3f210b16",
+      "bytes": 2099822
+    },
+    "assets/nino/travel-passport/book/exports/passport-closed-cover.webp": {
+      "sha256": "8901f57c74feb6d81fea23cb7b216ef403b982e8bdf66f1c89ea83eca15add44",
+      "bytes": 1528760
+    },
+    "assets/nino/travel-passport/gold/exports/gold-chapter-seal-v2-128.png": {
+      "sha256": "cc11f2b5c40cec336657664dd211c36cf9c545a88f004128617566cc9e5db5db",
+      "bytes": 31466
+    },
+    "assets/nino/travel-passport/gold/exports/gold-chapter-seal-v2-128.webp": {
+      "sha256": "9c3f652075d02003b2f72ab8c2c35f4b2a4ffd78896e044df0aa7b184d691b76",
+      "bytes": 26482
+    },
+    "assets/nino/travel-passport/gold/exports/gold-chapter-seal-v2-64.png": {
+      "sha256": "bac0d3e178ab74e4e29fa94360ff5519bb1646a3971500541a7a27fab898bebe",
+      "bytes": 8798
+    },
+    "assets/nino/travel-passport/gold/exports/gold-chapter-seal-v2-64.webp": {
+      "sha256": "54224a2edf4e266bf63b374fbb1ecc988c1b6aa08a6904abf045c2a159916772",
+      "bytes": 7074
+    },
+    "assets/nino/travel-passport/gold/exports/gold-chapter-seal-v2-native.png": {
+      "sha256": "60c54e6efbb8239c327b4d7c76660dc816535a1f5431bf7c3cbe9f2927a1adf0",
+      "bytes": 2422442
+    },
+    "assets/nino/travel-passport/gold/exports/gold-chapter-seal-v2-native.webp": {
+      "sha256": "b22cdc3ad0c0d1133bc1690244c50e24d97932db63fb7b2cb7990f67ffaf137b",
+      "bytes": 1608584
+    },
+    "assets/nino/travel-passport/gold/exports/gold-esploratore-doro-240.png": {
+      "sha256": "1bb700dd84eb1476235dcb63dd44396c6e35aa6449a578afb5c049923a23802f",
+      "bytes": 134044
+    },
+    "assets/nino/travel-passport/gold/exports/gold-esploratore-doro-240.webp": {
+      "sha256": "3e8085027c31054137147502838b30219e200dbbfb57640f875c7c179e99e684",
+      "bytes": 94294
+    },
+    "assets/nino/travel-passport/gold/exports/gold-esploratore-doro-480.png": {
+      "sha256": "3749e461ba8763989f542d38e58d3b40c67b8478f080b593d6579b4b40a0f856",
+      "bytes": 505198
+    },
+    "assets/nino/travel-passport/gold/exports/gold-esploratore-doro-480.webp": {
+      "sha256": "63b8e838caff5d32ee1c890f0b03cf2479b4c3d37cb1d1950f255d991fcdfb91",
+      "bytes": 364730
+    },
+    "assets/nino/travel-passport/gold/exports/gold-esploratore-doro-native.png": {
+      "sha256": "e94a76ab4c0220eead56e3f208dc539a71bae2f217ca7756939903bce024e3ca",
+      "bytes": 3473588
+    },
+    "assets/nino/travel-passport/gold/exports/gold-esploratore-doro-native.webp": {
+      "sha256": "537091369901a0224e51d9b5415d5a97511e3be72aaaa45286856a5e444e3ea1",
+      "bytes": 2305786
+    },
+    "assets/nino/travel-passport/postcards/exports/postcard-01-sicilia-front.webp": {
+      "sha256": "8c7e1ef3cd72816e41656eeee5c142413b1259ac211b313b55b50458c35ef6ae",
+      "bytes": 2515504
+    },
+    "assets/nino/travel-passport/postcards/exports/postcard-02-sardegna-front.webp": {
+      "sha256": "9e350e91c1a2f6f172bc0aa12c41a0212f78d6bc661ec4c4905c1105235252b6",
+      "bytes": 2683314
+    },
+    "assets/nino/travel-passport/postcards/exports/postcard-03-napoli-vesuvio-front.webp": {
+      "sha256": "819a3d3d1de50d5fb78d67ef7cbdbe9bafb6620cfa144e57842813a8df70ee94",
+      "bytes": 2449680
+    },
+    "assets/nino/travel-passport/postcards/exports/postcard-04-venezia-approved-contour.svg": {
+      "sha256": "b8bd1343175db7d9f74262ca10f5b270333e224d7081421e3ae46a57d6332c3d",
+      "bytes": 4819
+    },
+    "assets/nino/travel-passport/postcards/exports/postcard-04-venezia-scalloped-full.png": {
+      "sha256": "e1dfd387744ae2990a9fe7ae59e3d98592df3834fbe14fac1f26d0258fd81885",
+      "bytes": 3357374
+    },
+    "assets/nino/travel-passport/postcards/exports/postcard-04-venezia-scalloped-full.webp": {
+      "sha256": "78e4b4c2bae998a75995c9746ca427a9a2569b3458cdd6fd9728d89be28f1dc4",
+      "bytes": 2337844
+    },
+    "assets/nino/travel-passport/postcards/exports/postcard-04-venezia-scalloped-tight.png": {
+      "sha256": "2a221a6b32bf5df7e154b840bfd7b9107827f66472839df61d6999959ab027bf",
+      "bytes": 3265353
+    },
+    "assets/nino/travel-passport/postcards/exports/postcard-04-venezia-scalloped-tight.webp": {
+      "sha256": "45902f75dcb6e5c8185190a707ab03d9e422aed45639a711ccc14618647e2e03",
+      "bytes": 2341994
+    },
+    "assets/nino/travel-passport/postcards/exports/postcard-05-universal-reverse.webp": {
+      "sha256": "a6c9fbb31f92dcfe05ea0297bd77d946af9f14bbd8d13b8b92c34b7f970262df",
+      "bytes": 2180096
+    },
+    "assets/nino/travel-passport/stamps/exports/stamp-01-firenze.webp": {
+      "sha256": "de4d32cf277a806fad8fc343451f574ef7a9d0a482cc2b8bb7e5c24c3fc47125",
+      "bytes": 358350
+    },
+    "assets/nino/travel-passport/stamps/exports/stamp-02-roma.webp": {
+      "sha256": "b34ff0780ebd442080f53d79c13d63bb89d45cb4ad961ec582a902758fec8628",
+      "bytes": 242356
+    },
+    "assets/nino/travel-passport/stamps/exports/stamp-03-borghi.webp": {
+      "sha256": "b00fb30fc5ebfedcdec8970fa78bbba48b6d1b52288d5aa440a85dd6b9dfcae5",
+      "bytes": 392392
+    },
+    "assets/nino/travel-passport/stamps/exports/stamp-04-liguria.webp": {
+      "sha256": "b7cf9eeb47dd88028ce8da8789fd6f042c0998df182b43bd4996453148dc4fac",
+      "bytes": 338984
+    },
+    "assets/nino/travel-passport/stamps/exports/stamp-05-isole.webp": {
+      "sha256": "b9dbc0d44b4a69fdd3ce3bdafbcdee761d059203c9b73013a535087138c2f93a",
+      "bytes": 852496
+    },
+    "assets/nino/travel-passport/stamps/exports/stamp-06-dolomiti.webp": {
+      "sha256": "4d989d4b6147acd3b43ff11ee068123eea643ec5d2cc530d7fa3826dd4430c98",
+      "bytes": 363386
+    },
+    "assets/nino/travel-passport/stamps/exports/stamp-07-etna.webp": {
+      "sha256": "1794a3ee574294278b5147aefd069d0904d6d356c3e350cac56f302c497c1a6f",
+      "bytes": 314476
+    },
+    "assets/nino/travel-passport/stamps/exports/stamp-08-toscana.webp": {
+      "sha256": "042bd1d301006582b6d91b98ae3132b81a8fb40cbc7a69aaac936fee62f82403",
+      "bytes": 257492
+    },
+    "assets/nino/travel-passport/stamps/exports/stamp-09-confine-italia.webp": {
+      "sha256": "9032c4ff1ec9083b8ddf4a5dc4107e448d9578675fec4ab62221dc13310d38cf",
+      "bytes": 233276
+    },
+    "assets/nino/travel-passport/stamps/exports/stamp-10-mari.webp": {
+      "sha256": "686b3f091f933dcec54a9710405af24236bf8921cdeca316cd7403c806a0e34f",
+      "bytes": 246464
+    },
+    "assets/nino/travel-passport/stamps/exports/stamp-11-fiumi.webp": {
+      "sha256": "063a643d0d16436e0be7fdacd39316d0bf1bd99427137bf284c027b0610b63b7",
+      "bytes": 375622
+    },
+    "docs/qa/NINO_ARTWORK_FINAL_CLOSEOUT.md": {
+      "sha256": "96c2322343a2e1963c2c9b40fb4c737cbc7ae7a6e7d0d95a6a86d5d8bce9bf0b",
+      "bytes": 7652
+    },
+    "docs/qa/nino-artwork-final/HERMES_HANDOFF.md": {
+      "sha256": "5a1f3f23dfd8337038b5056773995ffdddf1059bb5da71bf57b7e520fd832503",
+      "bytes": 2041
+    },
+    "docs/qa/nino-artwork-final/REPRODUCE.md": {
+      "sha256": "7fd1e583d6192606263a1e4fc2762c9df464817d4e32639ae419835c54c82da1",
+      "bytes": 2023
+    },
+    "docs/qa/nino-artwork-final/binary-qa.json": {
+      "sha256": "ff3944adaad16eddadbf1f30f020965083a86f422ed3d3d3edcf08a61e748d23",
+      "bytes": 36933
+    },
+    "docs/qa/nino-artwork-final/browser-qa.json": {
+      "sha256": "ec4937c3bb0217f8a8cf2a4573b604d4548564218a5bb15ede1df364efd0a07e",
+      "bytes": 5866
+    },
+    "docs/qa/nino-artwork-final/browser-verified.log": {
+      "sha256": "39011987c14ea34411fbc45c92372230dbadc21204113905b7384aa11cf1ff3d",
+      "bytes": 81
+    },
+    "docs/qa/nino-artwork-final/browser.log": {
+      "sha256": "a8485e6607d2c6de2a1cb2e74558784b84af68cb0e3eb2164d33e754b4837433",
+      "bytes": 4121
+    },
+    "docs/qa/nino-artwork-final/collected-exports.json": {
+      "sha256": "98b12a8ae351012d5874bd7f0f71e2424d577672ed4a0cf6d35cd973edcea9cf",
+      "bytes": 3377
+    },
+    "docs/qa/nino-artwork-final/contact-arrival.png": {
+      "sha256": "43c135af1608e08830dcd171fae35b2a0ed6b3276930b16c0c4bce621584273d",
+      "bytes": 36000
+    },
+    "docs/qa/nino-artwork-final/contact-chapters.png": {
+      "sha256": "7e65424573d56b1e05b7d45949250c224c46ca5fab69d75aabf64a507c110192",
+      "bytes": 657060
+    },
+    "docs/qa/nino-artwork-final/contact-gold.png": {
+      "sha256": "9deddfe62712f5973804c2bc56382e4a3e14a239abbb8fb4de9f97f90c215012",
+      "bytes": 299686
+    },
+    "docs/qa/nino-artwork-final/contact-micro.png": {
+      "sha256": "5de0f71366ec88157a5d76f6434c9a283323fabbe93e6abbc39129fc467023d0",
+      "bytes": 19137
+    },
+    "docs/qa/nino-artwork-final/contact-passport.png": {
+      "sha256": "c0bcf2a6cfd66dcdf2d7789e19a01ade43bd872cecb1b4df83488c0a3a01dfe1",
+      "bytes": 131715
+    },
+    "docs/qa/nino-artwork-final/contact-postcards.png": {
+      "sha256": "068e4f925e59009aa99f483c3a6831e95708d8e26b5ab6fd008c99a2f67db219",
+      "bytes": 513403
+    },
+    "docs/qa/nino-artwork-final/contact-stamps.png": {
+      "sha256": "693cc0b1f740868e0e5eff076f62dbe311b425ba065c941a5405ad8153882761",
+      "bytes": 575276
+    },
+    "docs/qa/nino-artwork-final/map-preservation.json": {
+      "sha256": "54ccd6e5c33b3e55c327c3345731fc7938907bd3b1088eb684bbe66a1f88f540",
+      "bytes": 2776
+    },
+    "docs/qa/nino-artwork-final/pisa-1500-no-preference.png": {
+      "sha256": "7ca21d6c669b868595657e13dcf55aa4184572cdd2d1b64b0f2b9618d3aa434c",
+      "bytes": 553027
+    },
+    "docs/qa/nino-artwork-final/pisa-1500-reduce.png": {
+      "sha256": "c0243cb8c66f7c2ff4acb83492c047ee82dc3172b6794476d541c927f9872d4a",
+      "bytes": 552944
+    },
+    "docs/qa/nino-artwork-final/pisa-820-no-preference.png": {
+      "sha256": "2a0dcdac0364951e6511a9381b42e11adf90ea3abde8c159b0e160300c4143bd",
+      "bytes": 486570
+    },
+    "docs/qa/nino-artwork-final/pisa-820-reduce.png": {
+      "sha256": "25164a46276c5ab84d5137c02a1da3030f10cde204c94d717c5e70bb39cd2895",
+      "bytes": 486501
+    },
+    "docs/qa/nino-artwork-final/pr-snapshot.json": {
+      "sha256": "3eff38f1898d6d32e1798f7ef05ec45b90899b092aa6f8bea78590fef0fe84f7",
+      "bytes": 2295
+    },
+    "docs/qa/nino-artwork-final/release-check.log": {
+      "sha256": "bcfc1781d27419431d4d16b9c5969edaa8959128bd6118c5210c19c3a68357e7",
+      "bytes": 8627
+    },
+    "docs/qa/nino-artwork-final/reproduction-result.json": {
+      "sha256": "f06406818299db4868098779529de15a6671b9b6a3fdf1bb44ef326f2747d622",
+      "bytes": 97
+    },
+    "docs/qa/nino-artwork-final/reproduction.log": {
+      "sha256": "ba1c855e3d4544f9226db076fae42d5006e7f6adcb498f833621547c955f364e",
+      "bytes": 124
+    },
+    "docs/qa/nino-v2-closure-67/artwork-manifest.csv": {
+      "sha256": "4e2b60479e0601d014621faac196dbf82ba03d0c04b8a88c9a3ab1d727ab600e",
+      "bytes": 398206
+    },
+    "docs/qa/nino-v2-closure-67/artwork-manifest.json": {
+      "sha256": "2ec857fc48b56d4a469e0291f88afd0fbcc34a1226bc0f7819322498466b7e1d",
+      "bytes": 619476
+    },
+    "output/art/nino-op-de-scooter.webp": {
+      "sha256": "0b83332392b90193eff04979fbc592df5bbc3e0ef3f19a16801d1d7dc822b2a1",
+      "bytes": 67658
+    },
+    "output/art/topo-italie-avontuur.webp": {
+      "sha256": "18befedac70a95876f5a620c78bd0a210920ff1de4b40d084190eb371ed8acb9",
+      "bytes": 173702
+    },
+    "scripts/build_pisa_final.py": {
+      "sha256": "b19a0d773e8c367f77ebddd71392edc4c075b26d47773c96a328a40c609a56f6",
+      "bytes": 7781
+    },
+    "scripts/build_venezia_postcard.py": {
+      "sha256": "05cd77cb9b5123de8880a926b9a02ade00350167145b396d30822da74fa86fa5",
+      "bytes": 3497
+    },
+    "scripts/close-nino-artwork-67.py": {
+      "sha256": "3b215e030e10338c675d85e25cfcd2631702a99534d32a0a6b799fd1bbe94256",
+      "bytes": 4291
+    },
+    "scripts/collect_nino_final_exports.py": {
+      "sha256": "f49d16d347c1a1ea0a12b5d8f347290c7bdd29c51a6f813797cc4ab4b6dbaacf",
+      "bytes": 1044
+    },
+    "scripts/inventory-nino-artwork-67.py": {
+      "sha256": "118a49f780970c06055908e76b6783d3bdcfa082caa734fc61954d9ba0027655",
+      "bytes": 9003
+    },
+    "scripts/package_nino_final.py": {
+      "sha256": "fff55a125d820deebefd898fffb02ae9ef24d558c52076699cba8db5a58e8fed",
+      "bytes": 3429
+    },
+    "scripts/qa-nino-final-browser.mjs": {
+      "sha256": "75dafd4243c970f1cb8805dc4ecc6a60d3d17e915536c10981c9f8198710e974",
+      "bytes": 2844
+    },
+    "scripts/qa_nino_final.py": {
+      "sha256": "d562edee477255873a3557b851e2fecc6151fde5d1b3cfe37c611452ae1fa1eb",
+      "bytes": 3042
+    }
+  }
+}

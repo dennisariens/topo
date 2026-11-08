@@ -1,0 +1,2716 @@
+{
+  "browser": "27.2",
+  "htmlSHA256": "8822e92e097d32bdc6b1588bee0d11ffc204020229def49709317a267e9afdc9",
+  "file": "file:///Users/dennisariens/projects/topo-f1-71/output/html/TOPO-NINO-Computer-Release.html",
+  "scope": "Offline generated HTML; clean profiles; keyboard direction selection; no injected progress; genuine one-answer score",
+  "runs": [
+    {
+      "width": 1500,
+      "selection": [
+        3,
+        10,
+        "backward"
+      ],
+      "before": {
+        "question": "city-6",
+        "mode": "write",
+        "questionMode": "write",
+        "answered": false,
+        "quizSession": {
+          "deck": [
+            "city-1",
+            "city-4",
+            "city-2",
+            "city-3",
+            "city-5"
+          ],
+          "lastId": "city-6",
+          "turns": 1
+        },
+        "learnSession": null,
+        "progress": {
+          "schema": 3,
+          "good": 0,
+          "pizzas": 0,
+          "slices": 0,
+          "trips": 0,
+          "mistakes": [],
+          "route": {
+            "schema": 2,
+            "chapters": {
+              "city1": {
+                "stage": 0,
+                "completedAt": 0,
+                "goldAt": 0,
+                "nextReviewAt": 0,
+                "reviews": 0
+              },
+              "city2": {
+                "stage": 0,
+                "completedAt": 0,
+                "goldAt": 0,
+                "nextReviewAt": 0,
+                "reviews": 0
+              },
+              "city3": {
+                "stage": 0,
+                "completedAt": 0,
+                "goldAt": 0,
+                "nextReviewAt": 0,
+                "reviews": 0
+              },
+              "city4": {
+                "stage": 0,
+                "completedAt": 0,
+                "goldAt": 0,
+                "nextReviewAt": 0,
+                "reviews": 0
+              },
+              "islands": {
+                "stage": 0,
+                "completedAt": 0,
+                "goldAt": 0,
+                "nextReviewAt": 0,
+                "reviews": 0
+              },
+              "mountains": {
+                "stage": 0,
+                "completedAt": 0,
+                "goldAt": 0,
+                "nextReviewAt": 0,
+                "reviews": 0
+              },
+              "volcanoes": {
+                "stage": 0,
+                "completedAt": 0,
+                "goldAt": 0,
+                "nextReviewAt": 0,
+                "reviews": 0
+              },
+              "regions": {
+                "stage": 0,
+                "completedAt": 0,
+                "goldAt": 0,
+                "nextReviewAt": 0,
+                "reviews": 0
+              },
+              "countries": {
+                "stage": 0,
+                "completedAt": 0,
+                "goldAt": 0,
+                "nextReviewAt": 0,
+                "reviews": 0
+              },
+              "seas": {
+                "stage": 0,
+                "completedAt": 0,
+                "goldAt": 0,
+                "nextReviewAt": 0,
+                "reviews": 0
+              },
+              "rivers": {
+                "stage": 0,
+                "completedAt": 0,
+                "goldAt": 0,
+                "nextReviewAt": 0,
+                "reviews": 0
+              }
+            },
+            "items": {},
+            "rewardTokens": [],
+            "active": null
+          },
+          "daily": {
+            "date": "2026-11-04",
+            "correct": 0
+          }
+        },
+        "disk": {
+          "topo-italie-v3": "{\"schema\":3,\"mistakes\":[],\"good\":0,\"pizzas\":0,\"slices\":0,\"trips\":0,\"route\":{\"schema\":2,\"chapters\":{\"city1\":{\"stage\":0,\"completedAt\":0,\"goldAt\":0,\"nextReviewAt\":0,\"reviews\":0},\"city2\":{\"stage\":0,\"completedAt\":0,\"goldAt\":0,\"nextReviewAt\":0,\"reviews\":0},\"city3\":{\"stage\":0,\"completedAt\":0,\"goldAt\":0,\"nextReviewAt\":0,\"reviews\":0},\"city4\":{\"stage\":0,\"completedAt\":0,\"goldAt\":0,\"nextReviewAt\":0,\"reviews\":0},\"islands\":{\"stage\":0,\"completedAt\":0,\"goldAt\":0,\"nextReviewAt\":0,\"reviews\":0},\"mountains\":{\"stage\":0,\"completedAt\":0,\"goldAt\":0,\"nextReviewAt\":0,\"reviews\":0},\"volcanoes\":{\"stage\":0,\"completedAt\":0,\"goldAt\":0,\"nextReviewAt\":0,\"reviews\":0},\"regions\":{\"stage\":0,\"completedAt\":0,\"goldAt\":0,\"nextReviewAt\":0,\"reviews\":0},\"countries\":{\"stage\":0,\"completedAt\":0,\"goldAt\":0,\"nextReviewAt\":0,\"reviews\":0},\"seas\":{\"stage\":0,\"completedAt\":0,\"goldAt\":0,\"nextReviewAt\":0,\"reviews\":0},\"rivers\":{\"stage\":0,\"completedAt\":0,\"goldAt\":0,\"nextReviewAt\":0,\"reviews\":0}},\"items\":{},\"rewardTokens\":[],\"active\":null},\"daily\":{\"date\":\"2026-11-04\",\"correct\":0}}"
+        },
+        "draft": "Navigatieconcept",
+        "caret": [
+          3,
+          10,
+          "backward"
+        ],
+        "prompt": "Wat is dit op de kaart?"
+      },
+      "after": {
+        "question": "city-6",
+        "mode": "write",
+        "questionMode": "write",
+        "answered": false,
+        "quizSession": {
+          "deck": [
+            "city-1",
+            "city-4",
+            "city-2",
+            "city-3",
+            "city-5"
+          ],
+          "lastId": "city-6",
+          "turns": 1
+        },
+        "learnSession": null,
+        "progress": {
+          "schema": 3,
+          "good": 0,
+          "pizzas": 0,
+          "slices": 0,
+          "trips": 0,
+          "mistakes": [],
+          "route": {
+            "schema": 2,
+            "chapters": {
+              "city1": {
+                "stage": 0,
+                "completedAt": 0,
+                "goldAt": 0,
+                "nextReviewAt": 0,
+                "reviews": 0
+              },
+              "city2": {
+                "stage": 0,
+                "completedAt": 0,
+                "goldAt": 0,
+                "nextReviewAt": 0,
+                "reviews": 0
+              },
+              "city3": {
+                "stage": 0,
+                "completedAt": 0,
+                "goldAt": 0,
+                "nextReviewAt": 0,
+                "reviews": 0
+              },
+              "city4": {
+                "stage": 0,
+                "completedAt": 0,
+                "goldAt": 0,
+                "nextReviewAt": 0,
+                "reviews": 0
+              },
+              "islands": {
+                "stage": 0,
+                "completedAt": 0,
+                "goldAt": 0,
+                "nextReviewAt": 0,
+                "reviews": 0
+              },
+              "mountains": {
+                "stage": 0,
+                "completedAt": 0,
+                "goldAt": 0,
+                "nextReviewAt": 0,
+                "reviews": 0
+              },
+              "volcanoes": {
+                "stage": 0,
+                "completedAt": 0,
+                "goldAt": 0,
+                "nextReviewAt": 0,
+                "reviews": 0
+              },
+              "regions": {
+                "stage": 0,
+                "completedAt": 0,
+                "goldAt": 0,
+                "nextReviewAt": 0,
+                "reviews": 0
+              },
+              "countries": {
+                "stage": 0,
+                "completedAt": 0,
+                "goldAt": 0,
+                "nextReviewAt": 0,
+                "reviews": 0
+              },
+              "seas": {
+                "stage": 0,
+                "completedAt": 0,
+                "goldAt": 0,
+                "nextReviewAt": 0,
+                "reviews": 0
+              },
+              "rivers": {
+                "stage": 0,
+                "completedAt": 0,
+                "goldAt": 0,
+                "nextReviewAt": 0,
+                "reviews": 0
+              }
+            },
+            "items": {},
+            "rewardTokens": [],
+            "active": null
+          },
+          "daily": {
+            "date": "2026-11-04",
+            "correct": 0
+          }
+        },
+        "disk": {
+          "topo-italie-v3": "{\"schema\":3,\"mistakes\":[],\"good\":0,\"pizzas\":0,\"slices\":0,\"trips\":0,\"route\":{\"schema\":2,\"chapters\":{\"city1\":{\"stage\":0,\"completedAt\":0,\"goldAt\":0,\"nextReviewAt\":0,\"reviews\":0},\"city2\":{\"stage\":0,\"completedAt\":0,\"goldAt\":0,\"nextReviewAt\":0,\"reviews\":0},\"city3\":{\"stage\":0,\"completedAt\":0,\"goldAt\":0,\"nextReviewAt\":0,\"reviews\":0},\"city4\":{\"stage\":0,\"completedAt\":0,\"goldAt\":0,\"nextReviewAt\":0,\"reviews\":0},\"islands\":{\"stage\":0,\"completedAt\":0,\"goldAt\":0,\"nextReviewAt\":0,\"reviews\":0},\"mountains\":{\"stage\":0,\"completedAt\":0,\"goldAt\":0,\"nextReviewAt\":0,\"reviews\":0},\"volcanoes\":{\"stage\":0,\"completedAt\":0,\"goldAt\":0,\"nextReviewAt\":0,\"reviews\":0},\"regions\":{\"stage\":0,\"completedAt\":0,\"goldAt\":0,\"nextReviewAt\":0,\"reviews\":0},\"countries\":{\"stage\":0,\"completedAt\":0,\"goldAt\":0,\"nextReviewAt\":0,\"reviews\":0},\"seas\":{\"stage\":0,\"completedAt\":0,\"goldAt\":0,\"nextReviewAt\":0,\"reviews\":0},\"rivers\":{\"stage\":0,\"completedAt\":0,\"goldAt\":0,\"nextReviewAt\":0,\"reviews\":0}},\"items\":{},\"rewardTokens\":[],\"active\":null},\"daily\":{\"date\":\"2026-11-04\",\"correct\":0}}"
+        },
+        "draft": "Navigatieconcept",
+        "caret": [
+          3,
+          10,
+          "backward"
+        ],
+        "prompt": "Wat is dit op de kaart?"
+      },
+      "fixture": false
+    },
+    {
+      "width": 1500,
+      "selection": [
+        5,
+        5,
+        "none"
+      ],
+      "before": {
+        "question": "city-6",
+        "mode": "write",
+        "questionMode": "write",
+        "answered": false,
+        "quizSession": {
+          "deck": [
+            "city-1",
+            "city-4",
+            "city-2",
+            "city-3",
+            "city-5"
+          ],
+          "lastId": "city-6",
+          "turns": 1
+        },
+        "learnSession": null,
+        "progress": {
+          "schema": 3,
+          "good": 0,
+          "pizzas": 0,
+          "slices": 0,
+          "trips": 0,
+          "mistakes": [],
+          "route": {
+            "schema": 2,
+            "chapters": {
+              "city1": {
+                "stage": 0,
+                "completedAt": 0,
+                "goldAt": 0,
+                "nextReviewAt": 0,
+                "reviews": 0
+              },
+              "city2": {
+                "stage": 0,
+                "completedAt": 0,
+                "goldAt": 0,
+                "nextReviewAt": 0,
+                "reviews": 0
+              },
+              "city3": {
+                "stage": 0,
+                "completedAt": 0,
+                "goldAt": 0,
+                "nextReviewAt": 0,
+                "reviews": 0
+              },
+              "city4": {
+                "stage": 0,
+                "completedAt": 0,
+                "goldAt": 0,
+                "nextReviewAt": 0,
+                "reviews": 0
+              },
+              "islands": {
+                "stage": 0,
+                "completedAt": 0,
+                "goldAt": 0,
+                "nextReviewAt": 0,
+                "reviews": 0
+              },
+              "mountains": {
+                "stage": 0,
+                "completedAt": 0,
+                "goldAt": 0,
+                "nextReviewAt": 0,
+                "reviews": 0
+              },
+              "volcanoes": {
+                "stage": 0,
+                "completedAt": 0,
+                "goldAt": 0,
+                "nextReviewAt": 0,
+                "reviews": 0
+              },
+              "regions": {
+                "stage": 0,
+                "completedAt": 0,
+                "goldAt": 0,
+                "nextReviewAt": 0,
+                "reviews": 0
+              },
+              "countries": {
+                "stage": 0,
+                "completedAt": 0,
+                "goldAt": 0,
+                "nextReviewAt": 0,
+                "reviews": 0
+              },
+              "seas": {
+                "stage": 0,
+                "completedAt": 0,
+                "goldAt": 0,
+                "nextReviewAt": 0,
+                "reviews": 0
+              },
+              "rivers": {
+                "stage": 0,
+                "completedAt": 0,
+                "goldAt": 0,
+                "nextReviewAt": 0,
+                "reviews": 0
+              }
+            },
+            "items": {},
+            "rewardTokens": [],
+            "active": null
+          },
+          "daily": {
+            "date": "2026-11-04",
+            "correct": 0
+          }
+        },
+        "disk": {
+          "topo-italie-v3": "{\"schema\":3,\"mistakes\":[],\"good\":0,\"pizzas\":0,\"slices\":0,\"trips\":0,\"route\":{\"schema\":2,\"chapters\":{\"city1\":{\"stage\":0,\"completedAt\":0,\"goldAt\":0,\"nextReviewAt\":0,\"reviews\":0},\"city2\":{\"stage\":0,\"completedAt\":0,\"goldAt\":0,\"nextReviewAt\":0,\"reviews\":0},\"city3\":{\"stage\":0,\"completedAt\":0,\"goldAt\":0,\"nextReviewAt\":0,\"reviews\":0},\"city4\":{\"stage\":0,\"completedAt\":0,\"goldAt\":0,\"nextReviewAt\":0,\"reviews\":0},\"islands\":{\"stage\":0,\"completedAt\":0,\"goldAt\":0,\"nextReviewAt\":0,\"reviews\":0},\"mountains\":{\"stage\":0,\"completedAt\":0,\"goldAt\":0,\"nextReviewAt\":0,\"reviews\":0},\"volcanoes\":{\"stage\":0,\"completedAt\":0,\"goldAt\":0,\"nextReviewAt\":0,\"reviews\":0},\"regions\":{\"stage\":0,\"completedAt\":0,\"goldAt\":0,\"nextReviewAt\":0,\"reviews\":0},\"countries\":{\"stage\":0,\"completedAt\":0,\"goldAt\":0,\"nextReviewAt\":0,\"reviews\":0},\"seas\":{\"stage\":0,\"completedAt\":0,\"goldAt\":0,\"nextReviewAt\":0,\"reviews\":0},\"rivers\":{\"stage\":0,\"completedAt\":0,\"goldAt\":0,\"nextReviewAt\":0,\"reviews\":0}},\"items\":{},\"rewardTokens\":[],\"active\":null},\"daily\":{\"date\":\"2026-11-04\",\"correct\":0}}"
+        },
+        "draft": "Navigatieconcept",
+        "caret": [
+          5,
+          5,
+          "none"
+        ],
+        "prompt": "Wat is dit op de kaart?"
+      },
+      "after": {
+        "question": "city-6",
+        "mode": "write",
+        "questionMode": "write",
+        "answered": false,
+        "quizSession": {
+          "deck": [
+            "city-1",
+            "city-4",
+            "city-2",
+            "city-3",
+            "city-5"
+          ],
+          "lastId": "city-6",
+          "turns": 1
+        },
+        "learnSession": null,
+        "progress": {
+          "schema": 3,
+          "good": 0,
+          "pizzas": 0,
+          "slices": 0,
+          "trips": 0,
+          "mistakes": [],
+          "route": {
+            "schema": 2,
+            "chapters": {
+              "city1": {
+                "stage": 0,
+                "completedAt": 0,
+                "goldAt": 0,
+                "nextReviewAt": 0,
+                "reviews": 0
+              },
+              "city2": {
+                "stage": 0,
+                "completedAt": 0,
+                "goldAt": 0,
+                "nextReviewAt": 0,
+                "reviews": 0
+              },
+              "city3": {
+                "stage": 0,
+                "completedAt": 0,
+                "goldAt": 0,
+                "nextReviewAt": 0,
+                "reviews": 0
+              },
+              "city4": {
+                "stage": 0,
+                "completedAt": 0,
+                "goldAt": 0,
+                "nextReviewAt": 0,
+                "reviews": 0
+              },
+              "islands": {
+                "stage": 0,
+                "completedAt": 0,
+                "goldAt": 0,
+                "nextReviewAt": 0,
+                "reviews": 0
+              },
+              "mountains": {
+                "stage": 0,
+                "completedAt": 0,
+                "goldAt": 0,
+                "nextReviewAt": 0,
+                "reviews": 0
+              },
+              "volcanoes": {
+                "stage": 0,
+                "completedAt": 0,
+                "goldAt": 0,
+                "nextReviewAt": 0,
+                "reviews": 0
+              },
+              "regions": {
+                "stage": 0,
+                "completedAt": 0,
+                "goldAt": 0,
+                "nextReviewAt": 0,
+                "reviews": 0
+              },
+              "countries": {
+                "stage": 0,
+                "completedAt": 0,
+                "goldAt": 0,
+                "nextReviewAt": 0,
+                "reviews": 0
+              },
+              "seas": {
+                "stage": 0,
+                "completedAt": 0,
+                "goldAt": 0,
+                "nextReviewAt": 0,
+                "reviews": 0
+              },
+              "rivers": {
+                "stage": 0,
+                "completedAt": 0,
+                "goldAt": 0,
+                "nextReviewAt": 0,
+                "reviews": 0
+              }
+            },
+            "items": {},
+            "rewardTokens": [],
+            "active": null
+          },
+          "daily": {
+            "date": "2026-11-04",
+            "correct": 0
+          }
+        },
+        "disk": {
+          "topo-italie-v3": "{\"schema\":3,\"mistakes\":[],\"good\":0,\"pizzas\":0,\"slices\":0,\"trips\":0,\"route\":{\"schema\":2,\"chapters\":{\"city1\":{\"stage\":0,\"completedAt\":0,\"goldAt\":0,\"nextReviewAt\":0,\"reviews\":0},\"city2\":{\"stage\":0,\"completedAt\":0,\"goldAt\":0,\"nextReviewAt\":0,\"reviews\":0},\"city3\":{\"stage\":0,\"completedAt\":0,\"goldAt\":0,\"nextReviewAt\":0,\"reviews\":0},\"city4\":{\"stage\":0,\"completedAt\":0,\"goldAt\":0,\"nextReviewAt\":0,\"reviews\":0},\"islands\":{\"stage\":0,\"completedAt\":0,\"goldAt\":0,\"nextReviewAt\":0,\"reviews\":0},\"mountains\":{\"stage\":0,\"completedAt\":0,\"goldAt\":0,\"nextReviewAt\":0,\"reviews\":0},\"volcanoes\":{\"stage\":0,\"completedAt\":0,\"goldAt\":0,\"nextReviewAt\":0,\"reviews\":0},\"regions\":{\"stage\":0,\"completedAt\":0,\"goldAt\":0,\"nextReviewAt\":0,\"reviews\":0},\"countries\":{\"stage\":0,\"completedAt\":0,\"goldAt\":0,\"nextReviewAt\":0,\"reviews\":0},\"seas\":{\"stage\":0,\"completedAt\":0,\"goldAt\":0,\"nextReviewAt\":0,\"reviews\":0},\"rivers\":{\"stage\":0,\"completedAt\":0,\"goldAt\":0,\"nextReviewAt\":0,\"reviews\":0}},\"items\":{},\"rewardTokens\":[],\"active\":null},\"daily\":{\"date\":\"2026-11-04\",\"correct\":0}}"
+        },
+        "draft": "Navigatieconcept",
+        "caret": [
+          5,
+          5,
+          "none"
+        ],
+        "prompt": "Wat is dit op de kaart?"
+      },
+      "fixture": false
+    },
+    {
+      "width": 1500,
+      "selection": [
+        2,
+        8,
+        "forward"
+      ],
+      "before": {
+        "question": "city-6",
+        "mode": "write",
+        "questionMode": "write",
+        "answered": false,
+        "quizSession": {
+          "deck": [
+            "city-1",
+            "city-4",
+            "city-2",
+            "city-3",
+            "city-5"
+          ],
+          "lastId": "city-6",
+          "turns": 1
+        },
+        "learnSession": null,
+        "progress": {
+          "schema": 3,
+          "good": 0,
+          "pizzas": 0,
+          "slices": 0,
+          "trips": 0,
+          "mistakes": [],
+          "route": {
+            "schema": 2,
+            "chapters": {
+              "city1": {
+                "stage": 0,
+                "completedAt": 0,
+                "goldAt": 0,
+                "nextReviewAt": 0,
+                "reviews": 0
+              },
+              "city2": {
+                "stage": 0,
+                "completedAt": 0,
+                "goldAt": 0,
+                "nextReviewAt": 0,
+                "reviews": 0
+              },
+              "city3": {
+                "stage": 0,
+                "completedAt": 0,
+                "goldAt": 0,
+                "nextReviewAt": 0,
+                "reviews": 0
+              },
+              "city4": {
+                "stage": 0,
+                "completedAt": 0,
+                "goldAt": 0,
+                "nextReviewAt": 0,
+                "reviews": 0
+              },
+              "islands": {
+                "stage": 0,
+                "completedAt": 0,
+                "goldAt": 0,
+                "nextReviewAt": 0,
+                "reviews": 0
+              },
+              "mountains": {
+                "stage": 0,
+                "completedAt": 0,
+                "goldAt": 0,
+                "nextReviewAt": 0,
+                "reviews": 0
+              },
+              "volcanoes": {
+                "stage": 0,
+                "completedAt": 0,
+                "goldAt": 0,
+                "nextReviewAt": 0,
+                "reviews": 0
+              },
+              "regions": {
+                "stage": 0,
+                "completedAt": 0,
+                "goldAt": 0,
+                "nextReviewAt": 0,
+                "reviews": 0
+              },
+              "countries": {
+                "stage": 0,
+                "completedAt": 0,
+                "goldAt": 0,
+                "nextReviewAt": 0,
+                "reviews": 0
+              },
+              "seas": {
+                "stage": 0,
+                "completedAt": 0,
+                "goldAt": 0,
+                "nextReviewAt": 0,
+                "reviews": 0
+              },
+              "rivers": {
+                "stage": 0,
+                "completedAt": 0,
+                "goldAt": 0,
+                "nextReviewAt": 0,
+                "reviews": 0
+              }
+            },
+            "items": {},
+            "rewardTokens": [],
+            "active": null
+          },
+          "daily": {
+            "date": "2026-11-04",
+            "correct": 0
+          }
+        },
+        "disk": {
+          "topo-italie-v3": "{\"schema\":3,\"mistakes\":[],\"good\":0,\"pizzas\":0,\"slices\":0,\"trips\":0,\"route\":{\"schema\":2,\"chapters\":{\"city1\":{\"stage\":0,\"completedAt\":0,\"goldAt\":0,\"nextReviewAt\":0,\"reviews\":0},\"city2\":{\"stage\":0,\"completedAt\":0,\"goldAt\":0,\"nextReviewAt\":0,\"reviews\":0},\"city3\":{\"stage\":0,\"completedAt\":0,\"goldAt\":0,\"nextReviewAt\":0,\"reviews\":0},\"city4\":{\"stage\":0,\"completedAt\":0,\"goldAt\":0,\"nextReviewAt\":0,\"reviews\":0},\"islands\":{\"stage\":0,\"completedAt\":0,\"goldAt\":0,\"nextReviewAt\":0,\"reviews\":0},\"mountains\":{\"stage\":0,\"completedAt\":0,\"goldAt\":0,\"nextReviewAt\":0,\"reviews\":0},\"volcanoes\":{\"stage\":0,\"completedAt\":0,\"goldAt\":0,\"nextReviewAt\":0,\"reviews\":0},\"regions\":{\"stage\":0,\"completedAt\":0,\"goldAt\":0,\"nextReviewAt\":0,\"reviews\":0},\"countries\":{\"stage\":0,\"completedAt\":0,\"goldAt\":0,\"nextReviewAt\":0,\"reviews\":0},\"seas\":{\"stage\":0,\"completedAt\":0,\"goldAt\":0,\"nextReviewAt\":0,\"reviews\":0},\"rivers\":{\"stage\":0,\"completedAt\":0,\"goldAt\":0,\"nextReviewAt\":0,\"reviews\":0}},\"items\":{},\"rewardTokens\":[],\"active\":null},\"daily\":{\"date\":\"2026-11-04\",\"correct\":0}}"
+        },
+        "draft": "Navigatieconcept",
+        "caret": [
+          2,
+          8,
+          "forward"
+        ],
+        "prompt": "Wat is dit op de kaart?"
+      },
+      "after": {
+        "question": "city-6",
+        "mode": "write",
+        "questionMode": "write",
+        "answered": false,
+        "quizSession": {
+          "deck": [
+            "city-1",
+            "city-4",
+            "city-2",
+            "city-3",
+            "city-5"
+          ],
+          "lastId": "city-6",
+          "turns": 1
+        },
+        "learnSession": null,
+        "progress": {
+          "schema": 3,
+          "good": 0,
+          "pizzas": 0,
+          "slices": 0,
+          "trips": 0,
+          "mistakes": [],
+          "route": {
+            "schema": 2,
+            "chapters": {
+              "city1": {
+                "stage": 0,
+                "completedAt": 0,
+                "goldAt": 0,
+                "nextReviewAt": 0,
+                "reviews": 0
+              },
+              "city2": {
+                "stage": 0,
+                "completedAt": 0,
+                "goldAt": 0,
+                "nextReviewAt": 0,
+                "reviews": 0
+              },
+              "city3": {
+                "stage": 0,
+                "completedAt": 0,
+                "goldAt": 0,
+                "nextReviewAt": 0,
+                "reviews": 0
+              },
+              "city4": {
+                "stage": 0,
+                "completedAt": 0,
+                "goldAt": 0,
+                "nextReviewAt": 0,
+                "reviews": 0
+              },
+              "islands": {
+                "stage": 0,
+                "completedAt": 0,
+                "goldAt": 0,
+                "nextReviewAt": 0,
+                "reviews": 0
+              },
+              "mountains": {
+                "stage": 0,
+                "completedAt": 0,
+                "goldAt": 0,
+                "nextReviewAt": 0,
+                "reviews": 0
+              },
+              "volcanoes": {
+                "stage": 0,
+                "completedAt": 0,
+                "goldAt": 0,
+                "nextReviewAt": 0,
+                "reviews": 0
+              },
+              "regions": {
+                "stage": 0,
+                "completedAt": 0,
+                "goldAt": 0,
+                "nextReviewAt": 0,
+                "reviews": 0
+              },
+              "countries": {
+                "stage": 0,
+                "completedAt": 0,
+                "goldAt": 0,
+                "nextReviewAt": 0,
+                "reviews": 0
+              },
+              "seas": {
+                "stage": 0,
+                "completedAt": 0,
+                "goldAt": 0,
+                "nextReviewAt": 0,
+                "reviews": 0
+              },
+              "rivers": {
+                "stage": 0,
+                "completedAt": 0,
+                "goldAt": 0,
+                "nextReviewAt": 0,
+                "reviews": 0
+              }
+            },
+            "items": {},
+            "rewardTokens": [],
+            "active": null
+          },
+          "daily": {
+            "date": "2026-11-04",
+            "correct": 0
+          }
+        },
+        "disk": {
+          "topo-italie-v3": "{\"schema\":3,\"mistakes\":[],\"good\":0,\"pizzas\":0,\"slices\":0,\"trips\":0,\"route\":{\"schema\":2,\"chapters\":{\"city1\":{\"stage\":0,\"completedAt\":0,\"goldAt\":0,\"nextReviewAt\":0,\"reviews\":0},\"city2\":{\"stage\":0,\"completedAt\":0,\"goldAt\":0,\"nextReviewAt\":0,\"reviews\":0},\"city3\":{\"stage\":0,\"completedAt\":0,\"goldAt\":0,\"nextReviewAt\":0,\"reviews\":0},\"city4\":{\"stage\":0,\"completedAt\":0,\"goldAt\":0,\"nextReviewAt\":0,\"reviews\":0},\"islands\":{\"stage\":0,\"completedAt\":0,\"goldAt\":0,\"nextReviewAt\":0,\"reviews\":0},\"mountains\":{\"stage\":0,\"completedAt\":0,\"goldAt\":0,\"nextReviewAt\":0,\"reviews\":0},\"volcanoes\":{\"stage\":0,\"completedAt\":0,\"goldAt\":0,\"nextReviewAt\":0,\"reviews\":0},\"regions\":{\"stage\":0,\"completedAt\":0,\"goldAt\":0,\"nextReviewAt\":0,\"reviews\":0},\"countries\":{\"stage\":0,\"completedAt\":0,\"goldAt\":0,\"nextReviewAt\":0,\"reviews\":0},\"seas\":{\"stage\":0,\"completedAt\":0,\"goldAt\":0,\"nextReviewAt\":0,\"reviews\":0},\"rivers\":{\"stage\":0,\"completedAt\":0,\"goldAt\":0,\"nextReviewAt\":0,\"reviews\":0}},\"items\":{},\"rewardTokens\":[],\"active\":null},\"daily\":{\"date\":\"2026-11-04\",\"correct\":0}}"
+        },
+        "draft": "Navigatieconcept",
+        "caret": [
+          2,
+          8,
+          "forward"
+        ],
+        "prompt": "Wat is dit op de kaart?"
+      },
+      "fixture": false
+    },
+    {
+      "width": 1500,
+      "resultScreenResumeAndDefaultExit": "PASS",
+      "earnedProgress": {
+        "schema": 3,
+        "good": 1,
+        "pizzas": 0,
+        "slices": 1,
+        "trips": 0,
+        "mistakes": [],
+        "route": {
+          "schema": 2,
+          "chapters": {
+            "city1": {
+              "stage": 0,
+              "completedAt": 0,
+              "goldAt": 0,
+              "nextReviewAt": 0,
+              "reviews": 0
+            },
+            "city2": {
+              "stage": 0,
+              "completedAt": 0,
+              "goldAt": 0,
+              "nextReviewAt": 0,
+              "reviews": 0
+            },
+            "city3": {
+              "stage": 0,
+              "completedAt": 0,
+              "goldAt": 0,
+              "nextReviewAt": 0,
+              "reviews": 0
+            },
+            "city4": {
+              "stage": 0,
+              "completedAt": 0,
+              "goldAt": 0,
+              "nextReviewAt": 0,
+              "reviews": 0
+            },
+            "islands": {
+              "stage": 0,
+              "completedAt": 0,
+              "goldAt": 0,
+              "nextReviewAt": 0,
+              "reviews": 0
+            },
+            "mountains": {
+              "stage": 0,
+              "completedAt": 0,
+              "goldAt": 0,
+              "nextReviewAt": 0,
+              "reviews": 0
+            },
+            "volcanoes": {
+              "stage": 0,
+              "completedAt": 0,
+              "goldAt": 0,
+              "nextReviewAt": 0,
+              "reviews": 0
+            },
+            "regions": {
+              "stage": 0,
+              "completedAt": 0,
+              "goldAt": 0,
+              "nextReviewAt": 0,
+              "reviews": 0
+            },
+            "countries": {
+              "stage": 0,
+              "completedAt": 0,
+              "goldAt": 0,
+              "nextReviewAt": 0,
+              "reviews": 0
+            },
+            "seas": {
+              "stage": 0,
+              "completedAt": 0,
+              "goldAt": 0,
+              "nextReviewAt": 0,
+              "reviews": 0
+            },
+            "rivers": {
+              "stage": 0,
+              "completedAt": 0,
+              "goldAt": 0,
+              "nextReviewAt": 0,
+              "reviews": 0
+            }
+          },
+          "items": {
+            "city-6": {
+              "correct": 0,
+              "wrong": 0,
+              "streak": 0,
+              "lastSeen": 0,
+              "lastWrong": 0,
+              "skills": {
+                "write": {
+                  "correct": 1,
+                  "wrong": 0,
+                  "streak": 1,
+                  "lastSeen": 1793782925153,
+                  "due": 1793869325153
+                }
+              }
+            }
+          },
+          "rewardTokens": [],
+          "active": null
+        },
+        "daily": {
+          "date": "2026-11-04",
+          "correct": 1
+        }
+      },
+      "modeChecks": [
+        "point",
+        "exam",
+        "learn"
+      ],
+      "explicitRouteStartAndResume": "PASS",
+      "fixture": false
+    },
+    {
+      "width": 768,
+      "selection": [
+        3,
+        10,
+        "backward"
+      ],
+      "before": {
+        "question": "city-4",
+        "mode": "write",
+        "questionMode": "write",
+        "answered": false,
+        "quizSession": {
+          "deck": [
+            "city-3",
+            "city-1",
+            "city-6",
+            "city-2",
+            "city-5"
+          ],
+          "lastId": "city-4",
+          "turns": 1
+        },
+        "learnSession": null,
+        "progress": {
+          "schema": 3,
+          "good": 0,
+          "pizzas": 0,
+          "slices": 0,
+          "trips": 0,
+          "mistakes": [],
+          "route": {
+            "schema": 2,
+            "chapters": {
+              "city1": {
+                "stage": 0,
+                "completedAt": 0,
+                "goldAt": 0,
+                "nextReviewAt": 0,
+                "reviews": 0
+              },
+              "city2": {
+                "stage": 0,
+                "completedAt": 0,
+                "goldAt": 0,
+                "nextReviewAt": 0,
+                "reviews": 0
+              },
+              "city3": {
+                "stage": 0,
+                "completedAt": 0,
+                "goldAt": 0,
+                "nextReviewAt": 0,
+                "reviews": 0
+              },
+              "city4": {
+                "stage": 0,
+                "completedAt": 0,
+                "goldAt": 0,
+                "nextReviewAt": 0,
+                "reviews": 0
+              },
+              "islands": {
+                "stage": 0,
+                "completedAt": 0,
+                "goldAt": 0,
+                "nextReviewAt": 0,
+                "reviews": 0
+              },
+              "mountains": {
+                "stage": 0,
+                "completedAt": 0,
+                "goldAt": 0,
+                "nextReviewAt": 0,
+                "reviews": 0
+              },
+              "volcanoes": {
+                "stage": 0,
+                "completedAt": 0,
+                "goldAt": 0,
+                "nextReviewAt": 0,
+                "reviews": 0
+              },
+              "regions": {
+                "stage": 0,
+                "completedAt": 0,
+                "goldAt": 0,
+                "nextReviewAt": 0,
+                "reviews": 0
+              },
+              "countries": {
+                "stage": 0,
+                "completedAt": 0,
+                "goldAt": 0,
+                "nextReviewAt": 0,
+                "reviews": 0
+              },
+              "seas": {
+                "stage": 0,
+                "completedAt": 0,
+                "goldAt": 0,
+                "nextReviewAt": 0,
+                "reviews": 0
+              },
+              "rivers": {
+                "stage": 0,
+                "completedAt": 0,
+                "goldAt": 0,
+                "nextReviewAt": 0,
+                "reviews": 0
+              }
+            },
+            "items": {},
+            "rewardTokens": [],
+            "active": null
+          },
+          "daily": {
+            "date": "2026-11-04",
+            "correct": 0
+          }
+        },
+        "disk": {
+          "topo-italie-v3": "{\"schema\":3,\"mistakes\":[],\"good\":0,\"pizzas\":0,\"slices\":0,\"trips\":0,\"route\":{\"schema\":2,\"chapters\":{\"city1\":{\"stage\":0,\"completedAt\":0,\"goldAt\":0,\"nextReviewAt\":0,\"reviews\":0},\"city2\":{\"stage\":0,\"completedAt\":0,\"goldAt\":0,\"nextReviewAt\":0,\"reviews\":0},\"city3\":{\"stage\":0,\"completedAt\":0,\"goldAt\":0,\"nextReviewAt\":0,\"reviews\":0},\"city4\":{\"stage\":0,\"completedAt\":0,\"goldAt\":0,\"nextReviewAt\":0,\"reviews\":0},\"islands\":{\"stage\":0,\"completedAt\":0,\"goldAt\":0,\"nextReviewAt\":0,\"reviews\":0},\"mountains\":{\"stage\":0,\"completedAt\":0,\"goldAt\":0,\"nextReviewAt\":0,\"reviews\":0},\"volcanoes\":{\"stage\":0,\"completedAt\":0,\"goldAt\":0,\"nextReviewAt\":0,\"reviews\":0},\"regions\":{\"stage\":0,\"completedAt\":0,\"goldAt\":0,\"nextReviewAt\":0,\"reviews\":0},\"countries\":{\"stage\":0,\"completedAt\":0,\"goldAt\":0,\"nextReviewAt\":0,\"reviews\":0},\"seas\":{\"stage\":0,\"completedAt\":0,\"goldAt\":0,\"nextReviewAt\":0,\"reviews\":0},\"rivers\":{\"stage\":0,\"completedAt\":0,\"goldAt\":0,\"nextReviewAt\":0,\"reviews\":0}},\"items\":{},\"rewardTokens\":[],\"active\":null},\"daily\":{\"date\":\"2026-11-04\",\"correct\":0}}"
+        },
+        "draft": "Navigatieconcept",
+        "caret": [
+          3,
+          10,
+          "backward"
+        ],
+        "prompt": "Wat is dit op de kaart?"
+      },
+      "after": {
+        "question": "city-4",
+        "mode": "write",
+        "questionMode": "write",
+        "answered": false,
+        "quizSession": {
+          "deck": [
+            "city-3",
+            "city-1",
+            "city-6",
+            "city-2",
+            "city-5"
+          ],
+          "lastId": "city-4",
+          "turns": 1
+        },
+        "learnSession": null,
+        "progress": {
+          "schema": 3,
+          "good": 0,
+          "pizzas": 0,
+          "slices": 0,
+          "trips": 0,
+          "mistakes": [],
+          "route": {
+            "schema": 2,
+            "chapters": {
+              "city1": {
+                "stage": 0,
+                "completedAt": 0,
+                "goldAt": 0,
+                "nextReviewAt": 0,
+                "reviews": 0
+              },
+              "city2": {
+                "stage": 0,
+                "completedAt": 0,
+                "goldAt": 0,
+                "nextReviewAt": 0,
+                "reviews": 0
+              },
+              "city3": {
+                "stage": 0,
+                "completedAt": 0,
+                "goldAt": 0,
+                "nextReviewAt": 0,
+                "reviews": 0
+              },
+              "city4": {
+                "stage": 0,
+                "completedAt": 0,
+                "goldAt": 0,
+                "nextReviewAt": 0,
+                "reviews": 0
+              },
+              "islands": {
+                "stage": 0,
+                "completedAt": 0,
+                "goldAt": 0,
+                "nextReviewAt": 0,
+                "reviews": 0
+              },
+              "mountains": {
+                "stage": 0,
+                "completedAt": 0,
+                "goldAt": 0,
+                "nextReviewAt": 0,
+                "reviews": 0
+              },
+              "volcanoes": {
+                "stage": 0,
+                "completedAt": 0,
+                "goldAt": 0,
+                "nextReviewAt": 0,
+                "reviews": 0
+              },
+              "regions": {
+                "stage": 0,
+                "completedAt": 0,
+                "goldAt": 0,
+                "nextReviewAt": 0,
+                "reviews": 0
+              },
+              "countries": {
+                "stage": 0,
+                "completedAt": 0,
+                "goldAt": 0,
+                "nextReviewAt": 0,
+                "reviews": 0
+              },
+              "seas": {
+                "stage": 0,
+                "completedAt": 0,
+                "goldAt": 0,
+                "nextReviewAt": 0,
+                "reviews": 0
+              },
+              "rivers": {
+                "stage": 0,
+                "completedAt": 0,
+                "goldAt": 0,
+                "nextReviewAt": 0,
+                "reviews": 0
+              }
+            },
+            "items": {},
+            "rewardTokens": [],
+            "active": null
+          },
+          "daily": {
+            "date": "2026-11-04",
+            "correct": 0
+          }
+        },
+        "disk": {
+          "topo-italie-v3": "{\"schema\":3,\"mistakes\":[],\"good\":0,\"pizzas\":0,\"slices\":0,\"trips\":0,\"route\":{\"schema\":2,\"chapters\":{\"city1\":{\"stage\":0,\"completedAt\":0,\"goldAt\":0,\"nextReviewAt\":0,\"reviews\":0},\"city2\":{\"stage\":0,\"completedAt\":0,\"goldAt\":0,\"nextReviewAt\":0,\"reviews\":0},\"city3\":{\"stage\":0,\"completedAt\":0,\"goldAt\":0,\"nextReviewAt\":0,\"reviews\":0},\"city4\":{\"stage\":0,\"completedAt\":0,\"goldAt\":0,\"nextReviewAt\":0,\"reviews\":0},\"islands\":{\"stage\":0,\"completedAt\":0,\"goldAt\":0,\"nextReviewAt\":0,\"reviews\":0},\"mountains\":{\"stage\":0,\"completedAt\":0,\"goldAt\":0,\"nextReviewAt\":0,\"reviews\":0},\"volcanoes\":{\"stage\":0,\"completedAt\":0,\"goldAt\":0,\"nextReviewAt\":0,\"reviews\":0},\"regions\":{\"stage\":0,\"completedAt\":0,\"goldAt\":0,\"nextReviewAt\":0,\"reviews\":0},\"countries\":{\"stage\":0,\"completedAt\":0,\"goldAt\":0,\"nextReviewAt\":0,\"reviews\":0},\"seas\":{\"stage\":0,\"completedAt\":0,\"goldAt\":0,\"nextReviewAt\":0,\"reviews\":0},\"rivers\":{\"stage\":0,\"completedAt\":0,\"goldAt\":0,\"nextReviewAt\":0,\"reviews\":0}},\"items\":{},\"rewardTokens\":[],\"active\":null},\"daily\":{\"date\":\"2026-11-04\",\"correct\":0}}"
+        },
+        "draft": "Navigatieconcept",
+        "caret": [
+          3,
+          10,
+          "backward"
+        ],
+        "prompt": "Wat is dit op de kaart?"
+      },
+      "fixture": false
+    },
+    {
+      "width": 768,
+      "selection": [
+        5,
+        5,
+        "none"
+      ],
+      "before": {
+        "question": "city-4",
+        "mode": "write",
+        "questionMode": "write",
+        "answered": false,
+        "quizSession": {
+          "deck": [
+            "city-3",
+            "city-1",
+            "city-6",
+            "city-2",
+            "city-5"
+          ],
+          "lastId": "city-4",
+          "turns": 1
+        },
+        "learnSession": null,
+        "progress": {
+          "schema": 3,
+          "good": 0,
+          "pizzas": 0,
+          "slices": 0,
+          "trips": 0,
+          "mistakes": [],
+          "route": {
+            "schema": 2,
+            "chapters": {
+              "city1": {
+                "stage": 0,
+                "completedAt": 0,
+                "goldAt": 0,
+                "nextReviewAt": 0,
+                "reviews": 0
+              },
+              "city2": {
+                "stage": 0,
+                "completedAt": 0,
+                "goldAt": 0,
+                "nextReviewAt": 0,
+                "reviews": 0
+              },
+              "city3": {
+                "stage": 0,
+                "completedAt": 0,
+                "goldAt": 0,
+                "nextReviewAt": 0,
+                "reviews": 0
+              },
+              "city4": {
+                "stage": 0,
+                "completedAt": 0,
+                "goldAt": 0,
+                "nextReviewAt": 0,
+                "reviews": 0
+              },
+              "islands": {
+                "stage": 0,
+                "completedAt": 0,
+                "goldAt": 0,
+                "nextReviewAt": 0,
+                "reviews": 0
+              },
+              "mountains": {
+                "stage": 0,
+                "completedAt": 0,
+                "goldAt": 0,
+                "nextReviewAt": 0,
+                "reviews": 0
+              },
+              "volcanoes": {
+                "stage": 0,
+                "completedAt": 0,
+                "goldAt": 0,
+                "nextReviewAt": 0,
+                "reviews": 0
+              },
+              "regions": {
+                "stage": 0,
+                "completedAt": 0,
+                "goldAt": 0,
+                "nextReviewAt": 0,
+                "reviews": 0
+              },
+              "countries": {
+                "stage": 0,
+                "completedAt": 0,
+                "goldAt": 0,
+                "nextReviewAt": 0,
+                "reviews": 0
+              },
+              "seas": {
+                "stage": 0,
+                "completedAt": 0,
+                "goldAt": 0,
+                "nextReviewAt": 0,
+                "reviews": 0
+              },
+              "rivers": {
+                "stage": 0,
+                "completedAt": 0,
+                "goldAt": 0,
+                "nextReviewAt": 0,
+                "reviews": 0
+              }
+            },
+            "items": {},
+            "rewardTokens": [],
+            "active": null
+          },
+          "daily": {
+            "date": "2026-11-04",
+            "correct": 0
+          }
+        },
+        "disk": {
+          "topo-italie-v3": "{\"schema\":3,\"mistakes\":[],\"good\":0,\"pizzas\":0,\"slices\":0,\"trips\":0,\"route\":{\"schema\":2,\"chapters\":{\"city1\":{\"stage\":0,\"completedAt\":0,\"goldAt\":0,\"nextReviewAt\":0,\"reviews\":0},\"city2\":{\"stage\":0,\"completedAt\":0,\"goldAt\":0,\"nextReviewAt\":0,\"reviews\":0},\"city3\":{\"stage\":0,\"completedAt\":0,\"goldAt\":0,\"nextReviewAt\":0,\"reviews\":0},\"city4\":{\"stage\":0,\"completedAt\":0,\"goldAt\":0,\"nextReviewAt\":0,\"reviews\":0},\"islands\":{\"stage\":0,\"completedAt\":0,\"goldAt\":0,\"nextReviewAt\":0,\"reviews\":0},\"mountains\":{\"stage\":0,\"completedAt\":0,\"goldAt\":0,\"nextReviewAt\":0,\"reviews\":0},\"volcanoes\":{\"stage\":0,\"completedAt\":0,\"goldAt\":0,\"nextReviewAt\":0,\"reviews\":0},\"regions\":{\"stage\":0,\"completedAt\":0,\"goldAt\":0,\"nextReviewAt\":0,\"reviews\":0},\"countries\":{\"stage\":0,\"completedAt\":0,\"goldAt\":0,\"nextReviewAt\":0,\"reviews\":0},\"seas\":{\"stage\":0,\"completedAt\":0,\"goldAt\":0,\"nextReviewAt\":0,\"reviews\":0},\"rivers\":{\"stage\":0,\"completedAt\":0,\"goldAt\":0,\"nextReviewAt\":0,\"reviews\":0}},\"items\":{},\"rewardTokens\":[],\"active\":null},\"daily\":{\"date\":\"2026-11-04\",\"correct\":0}}"
+        },
+        "draft": "Navigatieconcept",
+        "caret": [
+          5,
+          5,
+          "none"
+        ],
+        "prompt": "Wat is dit op de kaart?"
+      },
+      "after": {
+        "question": "city-4",
+        "mode": "write",
+        "questionMode": "write",
+        "answered": false,
+        "quizSession": {
+          "deck": [
+            "city-3",
+            "city-1",
+            "city-6",
+            "city-2",
+            "city-5"
+          ],
+          "lastId": "city-4",
+          "turns": 1
+        },
+        "learnSession": null,
+        "progress": {
+          "schema": 3,
+          "good": 0,
+          "pizzas": 0,
+          "slices": 0,
+          "trips": 0,
+          "mistakes": [],
+          "route": {
+            "schema": 2,
+            "chapters": {
+              "city1": {
+                "stage": 0,
+                "completedAt": 0,
+                "goldAt": 0,
+                "nextReviewAt": 0,
+                "reviews": 0
+              },
+              "city2": {
+                "stage": 0,
+                "completedAt": 0,
+                "goldAt": 0,
+                "nextReviewAt": 0,
+                "reviews": 0
+              },
+              "city3": {
+                "stage": 0,
+                "completedAt": 0,
+                "goldAt": 0,
+                "nextReviewAt": 0,
+                "reviews": 0
+              },
+              "city4": {
+                "stage": 0,
+                "completedAt": 0,
+                "goldAt": 0,
+                "nextReviewAt": 0,
+                "reviews": 0
+              },
+              "islands": {
+                "stage": 0,
+                "completedAt": 0,
+                "goldAt": 0,
+                "nextReviewAt": 0,
+                "reviews": 0
+              },
+              "mountains": {
+                "stage": 0,
+                "completedAt": 0,
+                "goldAt": 0,
+                "nextReviewAt": 0,
+                "reviews": 0
+              },
+              "volcanoes": {
+                "stage": 0,
+                "completedAt": 0,
+                "goldAt": 0,
+                "nextReviewAt": 0,
+                "reviews": 0
+              },
+              "regions": {
+                "stage": 0,
+                "completedAt": 0,
+                "goldAt": 0,
+                "nextReviewAt": 0,
+                "reviews": 0
+              },
+              "countries": {
+                "stage": 0,
+                "completedAt": 0,
+                "goldAt": 0,
+                "nextReviewAt": 0,
+                "reviews": 0
+              },
+              "seas": {
+                "stage": 0,
+                "completedAt": 0,
+                "goldAt": 0,
+                "nextReviewAt": 0,
+                "reviews": 0
+              },
+              "rivers": {
+                "stage": 0,
+                "completedAt": 0,
+                "goldAt": 0,
+                "nextReviewAt": 0,
+                "reviews": 0
+              }
+            },
+            "items": {},
+            "rewardTokens": [],
+            "active": null
+          },
+          "daily": {
+            "date": "2026-11-04",
+            "correct": 0
+          }
+        },
+        "disk": {
+          "topo-italie-v3": "{\"schema\":3,\"mistakes\":[],\"good\":0,\"pizzas\":0,\"slices\":0,\"trips\":0,\"route\":{\"schema\":2,\"chapters\":{\"city1\":{\"stage\":0,\"completedAt\":0,\"goldAt\":0,\"nextReviewAt\":0,\"reviews\":0},\"city2\":{\"stage\":0,\"completedAt\":0,\"goldAt\":0,\"nextReviewAt\":0,\"reviews\":0},\"city3\":{\"stage\":0,\"completedAt\":0,\"goldAt\":0,\"nextReviewAt\":0,\"reviews\":0},\"city4\":{\"stage\":0,\"completedAt\":0,\"goldAt\":0,\"nextReviewAt\":0,\"reviews\":0},\"islands\":{\"stage\":0,\"completedAt\":0,\"goldAt\":0,\"nextReviewAt\":0,\"reviews\":0},\"mountains\":{\"stage\":0,\"completedAt\":0,\"goldAt\":0,\"nextReviewAt\":0,\"reviews\":0},\"volcanoes\":{\"stage\":0,\"completedAt\":0,\"goldAt\":0,\"nextReviewAt\":0,\"reviews\":0},\"regions\":{\"stage\":0,\"completedAt\":0,\"goldAt\":0,\"nextReviewAt\":0,\"reviews\":0},\"countries\":{\"stage\":0,\"completedAt\":0,\"goldAt\":0,\"nextReviewAt\":0,\"reviews\":0},\"seas\":{\"stage\":0,\"completedAt\":0,\"goldAt\":0,\"nextReviewAt\":0,\"reviews\":0},\"rivers\":{\"stage\":0,\"completedAt\":0,\"goldAt\":0,\"nextReviewAt\":0,\"reviews\":0}},\"items\":{},\"rewardTokens\":[],\"active\":null},\"daily\":{\"date\":\"2026-11-04\",\"correct\":0}}"
+        },
+        "draft": "Navigatieconcept",
+        "caret": [
+          5,
+          5,
+          "none"
+        ],
+        "prompt": "Wat is dit op de kaart?"
+      },
+      "fixture": false
+    },
+    {
+      "width": 768,
+      "selection": [
+        2,
+        8,
+        "forward"
+      ],
+      "before": {
+        "question": "city-4",
+        "mode": "write",
+        "questionMode": "write",
+        "answered": false,
+        "quizSession": {
+          "deck": [
+            "city-3",
+            "city-1",
+            "city-6",
+            "city-2",
+            "city-5"
+          ],
+          "lastId": "city-4",
+          "turns": 1
+        },
+        "learnSession": null,
+        "progress": {
+          "schema": 3,
+          "good": 0,
+          "pizzas": 0,
+          "slices": 0,
+          "trips": 0,
+          "mistakes": [],
+          "route": {
+            "schema": 2,
+            "chapters": {
+              "city1": {
+                "stage": 0,
+                "completedAt": 0,
+                "goldAt": 0,
+                "nextReviewAt": 0,
+                "reviews": 0
+              },
+              "city2": {
+                "stage": 0,
+                "completedAt": 0,
+                "goldAt": 0,
+                "nextReviewAt": 0,
+                "reviews": 0
+              },
+              "city3": {
+                "stage": 0,
+                "completedAt": 0,
+                "goldAt": 0,
+                "nextReviewAt": 0,
+                "reviews": 0
+              },
+              "city4": {
+                "stage": 0,
+                "completedAt": 0,
+                "goldAt": 0,
+                "nextReviewAt": 0,
+                "reviews": 0
+              },
+              "islands": {
+                "stage": 0,
+                "completedAt": 0,
+                "goldAt": 0,
+                "nextReviewAt": 0,
+                "reviews": 0
+              },
+              "mountains": {
+                "stage": 0,
+                "completedAt": 0,
+                "goldAt": 0,
+                "nextReviewAt": 0,
+                "reviews": 0
+              },
+              "volcanoes": {
+                "stage": 0,
+                "completedAt": 0,
+                "goldAt": 0,
+                "nextReviewAt": 0,
+                "reviews": 0
+              },
+              "regions": {
+                "stage": 0,
+                "completedAt": 0,
+                "goldAt": 0,
+                "nextReviewAt": 0,
+                "reviews": 0
+              },
+              "countries": {
+                "stage": 0,
+                "completedAt": 0,
+                "goldAt": 0,
+                "nextReviewAt": 0,
+                "reviews": 0
+              },
+              "seas": {
+                "stage": 0,
+                "completedAt": 0,
+                "goldAt": 0,
+                "nextReviewAt": 0,
+                "reviews": 0
+              },
+              "rivers": {
+                "stage": 0,
+                "completedAt": 0,
+                "goldAt": 0,
+                "nextReviewAt": 0,
+                "reviews": 0
+              }
+            },
+            "items": {},
+            "rewardTokens": [],
+            "active": null
+          },
+          "daily": {
+            "date": "2026-11-04",
+            "correct": 0
+          }
+        },
+        "disk": {
+          "topo-italie-v3": "{\"schema\":3,\"mistakes\":[],\"good\":0,\"pizzas\":0,\"slices\":0,\"trips\":0,\"route\":{\"schema\":2,\"chapters\":{\"city1\":{\"stage\":0,\"completedAt\":0,\"goldAt\":0,\"nextReviewAt\":0,\"reviews\":0},\"city2\":{\"stage\":0,\"completedAt\":0,\"goldAt\":0,\"nextReviewAt\":0,\"reviews\":0},\"city3\":{\"stage\":0,\"completedAt\":0,\"goldAt\":0,\"nextReviewAt\":0,\"reviews\":0},\"city4\":{\"stage\":0,\"completedAt\":0,\"goldAt\":0,\"nextReviewAt\":0,\"reviews\":0},\"islands\":{\"stage\":0,\"completedAt\":0,\"goldAt\":0,\"nextReviewAt\":0,\"reviews\":0},\"mountains\":{\"stage\":0,\"completedAt\":0,\"goldAt\":0,\"nextReviewAt\":0,\"reviews\":0},\"volcanoes\":{\"stage\":0,\"completedAt\":0,\"goldAt\":0,\"nextReviewAt\":0,\"reviews\":0},\"regions\":{\"stage\":0,\"completedAt\":0,\"goldAt\":0,\"nextReviewAt\":0,\"reviews\":0},\"countries\":{\"stage\":0,\"completedAt\":0,\"goldAt\":0,\"nextReviewAt\":0,\"reviews\":0},\"seas\":{\"stage\":0,\"completedAt\":0,\"goldAt\":0,\"nextReviewAt\":0,\"reviews\":0},\"rivers\":{\"stage\":0,\"completedAt\":0,\"goldAt\":0,\"nextReviewAt\":0,\"reviews\":0}},\"items\":{},\"rewardTokens\":[],\"active\":null},\"daily\":{\"date\":\"2026-11-04\",\"correct\":0}}"
+        },
+        "draft": "Navigatieconcept",
+        "caret": [
+          2,
+          8,
+          "forward"
+        ],
+        "prompt": "Wat is dit op de kaart?"
+      },
+      "after": {
+        "question": "city-4",
+        "mode": "write",
+        "questionMode": "write",
+        "answered": false,
+        "quizSession": {
+          "deck": [
+            "city-3",
+            "city-1",
+            "city-6",
+            "city-2",
+            "city-5"
+          ],
+          "lastId": "city-4",
+          "turns": 1
+        },
+        "learnSession": null,
+        "progress": {
+          "schema": 3,
+          "good": 0,
+          "pizzas": 0,
+          "slices": 0,
+          "trips": 0,
+          "mistakes": [],
+          "route": {
+            "schema": 2,
+            "chapters": {
+              "city1": {
+                "stage": 0,
+                "completedAt": 0,
+                "goldAt": 0,
+                "nextReviewAt": 0,
+                "reviews": 0
+              },
+              "city2": {
+                "stage": 0,
+                "completedAt": 0,
+                "goldAt": 0,
+                "nextReviewAt": 0,
+                "reviews": 0
+              },
+              "city3": {
+                "stage": 0,
+                "completedAt": 0,
+                "goldAt": 0,
+                "nextReviewAt": 0,
+                "reviews": 0
+              },
+              "city4": {
+                "stage": 0,
+                "completedAt": 0,
+                "goldAt": 0,
+                "nextReviewAt": 0,
+                "reviews": 0
+              },
+              "islands": {
+                "stage": 0,
+                "completedAt": 0,
+                "goldAt": 0,
+                "nextReviewAt": 0,
+                "reviews": 0
+              },
+              "mountains": {
+                "stage": 0,
+                "completedAt": 0,
+                "goldAt": 0,
+                "nextReviewAt": 0,
+                "reviews": 0
+              },
+              "volcanoes": {
+                "stage": 0,
+                "completedAt": 0,
+                "goldAt": 0,
+                "nextReviewAt": 0,
+                "reviews": 0
+              },
+              "regions": {
+                "stage": 0,
+                "completedAt": 0,
+                "goldAt": 0,
+                "nextReviewAt": 0,
+                "reviews": 0
+              },
+              "countries": {
+                "stage": 0,
+                "completedAt": 0,
+                "goldAt": 0,
+                "nextReviewAt": 0,
+                "reviews": 0
+              },
+              "seas": {
+                "stage": 0,
+                "completedAt": 0,
+                "goldAt": 0,
+                "nextReviewAt": 0,
+                "reviews": 0
+              },
+              "rivers": {
+                "stage": 0,
+                "completedAt": 0,
+                "goldAt": 0,
+                "nextReviewAt": 0,
+                "reviews": 0
+              }
+            },
+            "items": {},
+            "rewardTokens": [],
+            "active": null
+          },
+          "daily": {
+            "date": "2026-11-04",
+            "correct": 0
+          }
+        },
+        "disk": {
+          "topo-italie-v3": "{\"schema\":3,\"mistakes\":[],\"good\":0,\"pizzas\":0,\"slices\":0,\"trips\":0,\"route\":{\"schema\":2,\"chapters\":{\"city1\":{\"stage\":0,\"completedAt\":0,\"goldAt\":0,\"nextReviewAt\":0,\"reviews\":0},\"city2\":{\"stage\":0,\"completedAt\":0,\"goldAt\":0,\"nextReviewAt\":0,\"reviews\":0},\"city3\":{\"stage\":0,\"completedAt\":0,\"goldAt\":0,\"nextReviewAt\":0,\"reviews\":0},\"city4\":{\"stage\":0,\"completedAt\":0,\"goldAt\":0,\"nextReviewAt\":0,\"reviews\":0},\"islands\":{\"stage\":0,\"completedAt\":0,\"goldAt\":0,\"nextReviewAt\":0,\"reviews\":0},\"mountains\":{\"stage\":0,\"completedAt\":0,\"goldAt\":0,\"nextReviewAt\":0,\"reviews\":0},\"volcanoes\":{\"stage\":0,\"completedAt\":0,\"goldAt\":0,\"nextReviewAt\":0,\"reviews\":0},\"regions\":{\"stage\":0,\"completedAt\":0,\"goldAt\":0,\"nextReviewAt\":0,\"reviews\":0},\"countries\":{\"stage\":0,\"completedAt\":0,\"goldAt\":0,\"nextReviewAt\":0,\"reviews\":0},\"seas\":{\"stage\":0,\"completedAt\":0,\"goldAt\":0,\"nextReviewAt\":0,\"reviews\":0},\"rivers\":{\"stage\":0,\"completedAt\":0,\"goldAt\":0,\"nextReviewAt\":0,\"reviews\":0}},\"items\":{},\"rewardTokens\":[],\"active\":null},\"daily\":{\"date\":\"2026-11-04\",\"correct\":0}}"
+        },
+        "draft": "Navigatieconcept",
+        "caret": [
+          2,
+          8,
+          "forward"
+        ],
+        "prompt": "Wat is dit op de kaart?"
+      },
+      "fixture": false
+    },
+    {
+      "width": 768,
+      "resultScreenResumeAndDefaultExit": "PASS",
+      "earnedProgress": {
+        "schema": 3,
+        "good": 1,
+        "pizzas": 0,
+        "slices": 1,
+        "trips": 0,
+        "mistakes": [],
+        "route": {
+          "schema": 2,
+          "chapters": {
+            "city1": {
+              "stage": 0,
+              "completedAt": 0,
+              "goldAt": 0,
+              "nextReviewAt": 0,
+              "reviews": 0
+            },
+            "city2": {
+              "stage": 0,
+              "completedAt": 0,
+              "goldAt": 0,
+              "nextReviewAt": 0,
+              "reviews": 0
+            },
+            "city3": {
+              "stage": 0,
+              "completedAt": 0,
+              "goldAt": 0,
+              "nextReviewAt": 0,
+              "reviews": 0
+            },
+            "city4": {
+              "stage": 0,
+              "completedAt": 0,
+              "goldAt": 0,
+              "nextReviewAt": 0,
+              "reviews": 0
+            },
+            "islands": {
+              "stage": 0,
+              "completedAt": 0,
+              "goldAt": 0,
+              "nextReviewAt": 0,
+              "reviews": 0
+            },
+            "mountains": {
+              "stage": 0,
+              "completedAt": 0,
+              "goldAt": 0,
+              "nextReviewAt": 0,
+              "reviews": 0
+            },
+            "volcanoes": {
+              "stage": 0,
+              "completedAt": 0,
+              "goldAt": 0,
+              "nextReviewAt": 0,
+              "reviews": 0
+            },
+            "regions": {
+              "stage": 0,
+              "completedAt": 0,
+              "goldAt": 0,
+              "nextReviewAt": 0,
+              "reviews": 0
+            },
+            "countries": {
+              "stage": 0,
+              "completedAt": 0,
+              "goldAt": 0,
+              "nextReviewAt": 0,
+              "reviews": 0
+            },
+            "seas": {
+              "stage": 0,
+              "completedAt": 0,
+              "goldAt": 0,
+              "nextReviewAt": 0,
+              "reviews": 0
+            },
+            "rivers": {
+              "stage": 0,
+              "completedAt": 0,
+              "goldAt": 0,
+              "nextReviewAt": 0,
+              "reviews": 0
+            }
+          },
+          "items": {
+            "city-4": {
+              "correct": 0,
+              "wrong": 0,
+              "streak": 0,
+              "lastSeen": 0,
+              "lastWrong": 0,
+              "skills": {
+                "write": {
+                  "correct": 1,
+                  "wrong": 0,
+                  "streak": 1,
+                  "lastSeen": 1793782931420,
+                  "due": 1793869331420
+                }
+              }
+            }
+          },
+          "rewardTokens": [],
+          "active": null
+        },
+        "daily": {
+          "date": "2026-11-04",
+          "correct": 1
+        }
+      },
+      "modeChecks": [
+        "point",
+        "exam",
+        "learn"
+      ],
+      "explicitRouteStartAndResume": "PASS",
+      "fixture": false
+    },
+    {
+      "width": 320,
+      "selection": [
+        3,
+        10,
+        "backward"
+      ],
+      "before": {
+        "question": "city-6",
+        "mode": "write",
+        "questionMode": "write",
+        "answered": false,
+        "quizSession": {
+          "deck": [
+            "city-1",
+            "city-2",
+            "city-4",
+            "city-5",
+            "city-3"
+          ],
+          "lastId": "city-6",
+          "turns": 1
+        },
+        "learnSession": null,
+        "progress": {
+          "schema": 3,
+          "good": 0,
+          "pizzas": 0,
+          "slices": 0,
+          "trips": 0,
+          "mistakes": [],
+          "route": {
+            "schema": 2,
+            "chapters": {
+              "city1": {
+                "stage": 0,
+                "completedAt": 0,
+                "goldAt": 0,
+                "nextReviewAt": 0,
+                "reviews": 0
+              },
+              "city2": {
+                "stage": 0,
+                "completedAt": 0,
+                "goldAt": 0,
+                "nextReviewAt": 0,
+                "reviews": 0
+              },
+              "city3": {
+                "stage": 0,
+                "completedAt": 0,
+                "goldAt": 0,
+                "nextReviewAt": 0,
+                "reviews": 0
+              },
+              "city4": {
+                "stage": 0,
+                "completedAt": 0,
+                "goldAt": 0,
+                "nextReviewAt": 0,
+                "reviews": 0
+              },
+              "islands": {
+                "stage": 0,
+                "completedAt": 0,
+                "goldAt": 0,
+                "nextReviewAt": 0,
+                "reviews": 0
+              },
+              "mountains": {
+                "stage": 0,
+                "completedAt": 0,
+                "goldAt": 0,
+                "nextReviewAt": 0,
+                "reviews": 0
+              },
+              "volcanoes": {
+                "stage": 0,
+                "completedAt": 0,
+                "goldAt": 0,
+                "nextReviewAt": 0,
+                "reviews": 0
+              },
+              "regions": {
+                "stage": 0,
+                "completedAt": 0,
+                "goldAt": 0,
+                "nextReviewAt": 0,
+                "reviews": 0
+              },
+              "countries": {
+                "stage": 0,
+                "completedAt": 0,
+                "goldAt": 0,
+                "nextReviewAt": 0,
+                "reviews": 0
+              },
+              "seas": {
+                "stage": 0,
+                "completedAt": 0,
+                "goldAt": 0,
+                "nextReviewAt": 0,
+                "reviews": 0
+              },
+              "rivers": {
+                "stage": 0,
+                "completedAt": 0,
+                "goldAt": 0,
+                "nextReviewAt": 0,
+                "reviews": 0
+              }
+            },
+            "items": {},
+            "rewardTokens": [],
+            "active": null
+          },
+          "daily": {
+            "date": "2026-11-04",
+            "correct": 0
+          }
+        },
+        "disk": {
+          "topo-italie-v3": "{\"schema\":3,\"mistakes\":[],\"good\":0,\"pizzas\":0,\"slices\":0,\"trips\":0,\"route\":{\"schema\":2,\"chapters\":{\"city1\":{\"stage\":0,\"completedAt\":0,\"goldAt\":0,\"nextReviewAt\":0,\"reviews\":0},\"city2\":{\"stage\":0,\"completedAt\":0,\"goldAt\":0,\"nextReviewAt\":0,\"reviews\":0},\"city3\":{\"stage\":0,\"completedAt\":0,\"goldAt\":0,\"nextReviewAt\":0,\"reviews\":0},\"city4\":{\"stage\":0,\"completedAt\":0,\"goldAt\":0,\"nextReviewAt\":0,\"reviews\":0},\"islands\":{\"stage\":0,\"completedAt\":0,\"goldAt\":0,\"nextReviewAt\":0,\"reviews\":0},\"mountains\":{\"stage\":0,\"completedAt\":0,\"goldAt\":0,\"nextReviewAt\":0,\"reviews\":0},\"volcanoes\":{\"stage\":0,\"completedAt\":0,\"goldAt\":0,\"nextReviewAt\":0,\"reviews\":0},\"regions\":{\"stage\":0,\"completedAt\":0,\"goldAt\":0,\"nextReviewAt\":0,\"reviews\":0},\"countries\":{\"stage\":0,\"completedAt\":0,\"goldAt\":0,\"nextReviewAt\":0,\"reviews\":0},\"seas\":{\"stage\":0,\"completedAt\":0,\"goldAt\":0,\"nextReviewAt\":0,\"reviews\":0},\"rivers\":{\"stage\":0,\"completedAt\":0,\"goldAt\":0,\"nextReviewAt\":0,\"reviews\":0}},\"items\":{},\"rewardTokens\":[],\"active\":null},\"daily\":{\"date\":\"2026-11-04\",\"correct\":0}}"
+        },
+        "draft": "Navigatieconcept",
+        "caret": [
+          3,
+          10,
+          "backward"
+        ],
+        "prompt": "Wat is dit op de kaart?"
+      },
+      "after": {
+        "question": "city-6",
+        "mode": "write",
+        "questionMode": "write",
+        "answered": false,
+        "quizSession": {
+          "deck": [
+            "city-1",
+            "city-2",
+            "city-4",
+            "city-5",
+            "city-3"
+          ],
+          "lastId": "city-6",
+          "turns": 1
+        },
+        "learnSession": null,
+        "progress": {
+          "schema": 3,
+          "good": 0,
+          "pizzas": 0,
+          "slices": 0,
+          "trips": 0,
+          "mistakes": [],
+          "route": {
+            "schema": 2,
+            "chapters": {
+              "city1": {
+                "stage": 0,
+                "completedAt": 0,
+                "goldAt": 0,
+                "nextReviewAt": 0,
+                "reviews": 0
+              },
+              "city2": {
+                "stage": 0,
+                "completedAt": 0,
+                "goldAt": 0,
+                "nextReviewAt": 0,
+                "reviews": 0
+              },
+              "city3": {
+                "stage": 0,
+                "completedAt": 0,
+                "goldAt": 0,
+                "nextReviewAt": 0,
+                "reviews": 0
+              },
+              "city4": {
+                "stage": 0,
+                "completedAt": 0,
+                "goldAt": 0,
+                "nextReviewAt": 0,
+                "reviews": 0
+              },
+              "islands": {
+                "stage": 0,
+                "completedAt": 0,
+                "goldAt": 0,
+                "nextReviewAt": 0,
+                "reviews": 0
+              },
+              "mountains": {
+                "stage": 0,
+                "completedAt": 0,
+                "goldAt": 0,
+                "nextReviewAt": 0,
+                "reviews": 0
+              },
+              "volcanoes": {
+                "stage": 0,
+                "completedAt": 0,
+                "goldAt": 0,
+                "nextReviewAt": 0,
+                "reviews": 0
+              },
+              "regions": {
+                "stage": 0,
+                "completedAt": 0,
+                "goldAt": 0,
+                "nextReviewAt": 0,
+                "reviews": 0
+              },
+              "countries": {
+                "stage": 0,
+                "completedAt": 0,
+                "goldAt": 0,
+                "nextReviewAt": 0,
+                "reviews": 0
+              },
+              "seas": {
+                "stage": 0,
+                "completedAt": 0,
+                "goldAt": 0,
+                "nextReviewAt": 0,
+                "reviews": 0
+              },
+              "rivers": {
+                "stage": 0,
+                "completedAt": 0,
+                "goldAt": 0,
+                "nextReviewAt": 0,
+                "reviews": 0
+              }
+            },
+            "items": {},
+            "rewardTokens": [],
+            "active": null
+          },
+          "daily": {
+            "date": "2026-11-04",
+            "correct": 0
+          }
+        },
+        "disk": {
+          "topo-italie-v3": "{\"schema\":3,\"mistakes\":[],\"good\":0,\"pizzas\":0,\"slices\":0,\"trips\":0,\"route\":{\"schema\":2,\"chapters\":{\"city1\":{\"stage\":0,\"completedAt\":0,\"goldAt\":0,\"nextReviewAt\":0,\"reviews\":0},\"city2\":{\"stage\":0,\"completedAt\":0,\"goldAt\":0,\"nextReviewAt\":0,\"reviews\":0},\"city3\":{\"stage\":0,\"completedAt\":0,\"goldAt\":0,\"nextReviewAt\":0,\"reviews\":0},\"city4\":{\"stage\":0,\"completedAt\":0,\"goldAt\":0,\"nextReviewAt\":0,\"reviews\":0},\"islands\":{\"stage\":0,\"completedAt\":0,\"goldAt\":0,\"nextReviewAt\":0,\"reviews\":0},\"mountains\":{\"stage\":0,\"completedAt\":0,\"goldAt\":0,\"nextReviewAt\":0,\"reviews\":0},\"volcanoes\":{\"stage\":0,\"completedAt\":0,\"goldAt\":0,\"nextReviewAt\":0,\"reviews\":0},\"regions\":{\"stage\":0,\"completedAt\":0,\"goldAt\":0,\"nextReviewAt\":0,\"reviews\":0},\"countries\":{\"stage\":0,\"completedAt\":0,\"goldAt\":0,\"nextReviewAt\":0,\"reviews\":0},\"seas\":{\"stage\":0,\"completedAt\":0,\"goldAt\":0,\"nextReviewAt\":0,\"reviews\":0},\"rivers\":{\"stage\":0,\"completedAt\":0,\"goldAt\":0,\"nextReviewAt\":0,\"reviews\":0}},\"items\":{},\"rewardTokens\":[],\"active\":null},\"daily\":{\"date\":\"2026-11-04\",\"correct\":0}}"
+        },
+        "draft": "Navigatieconcept",
+        "caret": [
+          3,
+          10,
+          "backward"
+        ],
+        "prompt": "Wat is dit op de kaart?"
+      },
+      "fixture": false
+    },
+    {
+      "width": 320,
+      "selection": [
+        5,
+        5,
+        "none"
+      ],
+      "before": {
+        "question": "city-6",
+        "mode": "write",
+        "questionMode": "write",
+        "answered": false,
+        "quizSession": {
+          "deck": [
+            "city-1",
+            "city-2",
+            "city-4",
+            "city-5",
+            "city-3"
+          ],
+          "lastId": "city-6",
+          "turns": 1
+        },
+        "learnSession": null,
+        "progress": {
+          "schema": 3,
+          "good": 0,
+          "pizzas": 0,
+          "slices": 0,
+          "trips": 0,
+          "mistakes": [],
+          "route": {
+            "schema": 2,
+            "chapters": {
+              "city1": {
+                "stage": 0,
+                "completedAt": 0,
+                "goldAt": 0,
+                "nextReviewAt": 0,
+                "reviews": 0
+              },
+              "city2": {
+                "stage": 0,
+                "completedAt": 0,
+                "goldAt": 0,
+                "nextReviewAt": 0,
+                "reviews": 0
+              },
+              "city3": {
+                "stage": 0,
+                "completedAt": 0,
+                "goldAt": 0,
+                "nextReviewAt": 0,
+                "reviews": 0
+              },
+              "city4": {
+                "stage": 0,
+                "completedAt": 0,
+                "goldAt": 0,
+                "nextReviewAt": 0,
+                "reviews": 0
+              },
+              "islands": {
+                "stage": 0,
+                "completedAt": 0,
+                "goldAt": 0,
+                "nextReviewAt": 0,
+                "reviews": 0
+              },
+              "mountains": {
+                "stage": 0,
+                "completedAt": 0,
+                "goldAt": 0,
+                "nextReviewAt": 0,
+                "reviews": 0
+              },
+              "volcanoes": {
+                "stage": 0,
+                "completedAt": 0,
+                "goldAt": 0,
+                "nextReviewAt": 0,
+                "reviews": 0
+              },
+              "regions": {
+                "stage": 0,
+                "completedAt": 0,
+                "goldAt": 0,
+                "nextReviewAt": 0,
+                "reviews": 0
+              },
+              "countries": {
+                "stage": 0,
+                "completedAt": 0,
+                "goldAt": 0,
+                "nextReviewAt": 0,
+                "reviews": 0
+              },
+              "seas": {
+                "stage": 0,
+                "completedAt": 0,
+                "goldAt": 0,
+                "nextReviewAt": 0,
+                "reviews": 0
+              },
+              "rivers": {
+                "stage": 0,
+                "completedAt": 0,
+                "goldAt": 0,
+                "nextReviewAt": 0,
+                "reviews": 0
+              }
+            },
+            "items": {},
+            "rewardTokens": [],
+            "active": null
+          },
+          "daily": {
+            "date": "2026-11-04",
+            "correct": 0
+          }
+        },
+        "disk": {
+          "topo-italie-v3": "{\"schema\":3,\"mistakes\":[],\"good\":0,\"pizzas\":0,\"slices\":0,\"trips\":0,\"route\":{\"schema\":2,\"chapters\":{\"city1\":{\"stage\":0,\"completedAt\":0,\"goldAt\":0,\"nextReviewAt\":0,\"reviews\":0},\"city2\":{\"stage\":0,\"completedAt\":0,\"goldAt\":0,\"nextReviewAt\":0,\"reviews\":0},\"city3\":{\"stage\":0,\"completedAt\":0,\"goldAt\":0,\"nextReviewAt\":0,\"reviews\":0},\"city4\":{\"stage\":0,\"completedAt\":0,\"goldAt\":0,\"nextReviewAt\":0,\"reviews\":0},\"islands\":{\"stage\":0,\"completedAt\":0,\"goldAt\":0,\"nextReviewAt\":0,\"reviews\":0},\"mountains\":{\"stage\":0,\"completedAt\":0,\"goldAt\":0,\"nextReviewAt\":0,\"reviews\":0},\"volcanoes\":{\"stage\":0,\"completedAt\":0,\"goldAt\":0,\"nextReviewAt\":0,\"reviews\":0},\"regions\":{\"stage\":0,\"completedAt\":0,\"goldAt\":0,\"nextReviewAt\":0,\"reviews\":0},\"countries\":{\"stage\":0,\"completedAt\":0,\"goldAt\":0,\"nextReviewAt\":0,\"reviews\":0},\"seas\":{\"stage\":0,\"completedAt\":0,\"goldAt\":0,\"nextReviewAt\":0,\"reviews\":0},\"rivers\":{\"stage\":0,\"completedAt\":0,\"goldAt\":0,\"nextReviewAt\":0,\"reviews\":0}},\"items\":{},\"rewardTokens\":[],\"active\":null},\"daily\":{\"date\":\"2026-11-04\",\"correct\":0}}"
+        },
+        "draft": "Navigatieconcept",
+        "caret": [
+          5,
+          5,
+          "none"
+        ],
+        "prompt": "Wat is dit op de kaart?"
+      },
+      "after": {
+        "question": "city-6",
+        "mode": "write",
+        "questionMode": "write",
+        "answered": false,
+        "quizSession": {
+          "deck": [
+            "city-1",
+            "city-2",
+            "city-4",
+            "city-5",
+            "city-3"
+          ],
+          "lastId": "city-6",
+          "turns": 1
+        },
+        "learnSession": null,
+        "progress": {
+          "schema": 3,
+          "good": 0,
+          "pizzas": 0,
+          "slices": 0,
+          "trips": 0,
+          "mistakes": [],
+          "route": {
+            "schema": 2,
+            "chapters": {
+              "city1": {
+                "stage": 0,
+                "completedAt": 0,
+                "goldAt": 0,
+                "nextReviewAt": 0,
+                "reviews": 0
+              },
+              "city2": {
+                "stage": 0,
+                "completedAt": 0,
+                "goldAt": 0,
+                "nextReviewAt": 0,
+                "reviews": 0
+              },
+              "city3": {
+                "stage": 0,
+                "completedAt": 0,
+                "goldAt": 0,
+                "nextReviewAt": 0,
+                "reviews": 0
+              },
+              "city4": {
+                "stage": 0,
+                "completedAt": 0,
+                "goldAt": 0,
+                "nextReviewAt": 0,
+                "reviews": 0
+              },
+              "islands": {
+                "stage": 0,
+                "completedAt": 0,
+                "goldAt": 0,
+                "nextReviewAt": 0,
+                "reviews": 0
+              },
+              "mountains": {
+                "stage": 0,
+                "completedAt": 0,
+                "goldAt": 0,
+                "nextReviewAt": 0,
+                "reviews": 0
+              },
+              "volcanoes": {
+                "stage": 0,
+                "completedAt": 0,
+                "goldAt": 0,
+                "nextReviewAt": 0,
+                "reviews": 0
+              },
+              "regions": {
+                "stage": 0,
+                "completedAt": 0,
+                "goldAt": 0,
+                "nextReviewAt": 0,
+                "reviews": 0
+              },
+              "countries": {
+                "stage": 0,
+                "completedAt": 0,
+                "goldAt": 0,
+                "nextReviewAt": 0,
+                "reviews": 0
+              },
+              "seas": {
+                "stage": 0,
+                "completedAt": 0,
+                "goldAt": 0,
+                "nextReviewAt": 0,
+                "reviews": 0
+              },
+              "rivers": {
+                "stage": 0,
+                "completedAt": 0,
+                "goldAt": 0,
+                "nextReviewAt": 0,
+                "reviews": 0
+              }
+            },
+            "items": {},
+            "rewardTokens": [],
+            "active": null
+          },
+          "daily": {
+            "date": "2026-11-04",
+            "correct": 0
+          }
+        },
+        "disk": {
+          "topo-italie-v3": "{\"schema\":3,\"mistakes\":[],\"good\":0,\"pizzas\":0,\"slices\":0,\"trips\":0,\"route\":{\"schema\":2,\"chapters\":{\"city1\":{\"stage\":0,\"completedAt\":0,\"goldAt\":0,\"nextReviewAt\":0,\"reviews\":0},\"city2\":{\"stage\":0,\"completedAt\":0,\"goldAt\":0,\"nextReviewAt\":0,\"reviews\":0},\"city3\":{\"stage\":0,\"completedAt\":0,\"goldAt\":0,\"nextReviewAt\":0,\"reviews\":0},\"city4\":{\"stage\":0,\"completedAt\":0,\"goldAt\":0,\"nextReviewAt\":0,\"reviews\":0},\"islands\":{\"stage\":0,\"completedAt\":0,\"goldAt\":0,\"nextReviewAt\":0,\"reviews\":0},\"mountains\":{\"stage\":0,\"completedAt\":0,\"goldAt\":0,\"nextReviewAt\":0,\"reviews\":0},\"volcanoes\":{\"stage\":0,\"completedAt\":0,\"goldAt\":0,\"nextReviewAt\":0,\"reviews\":0},\"regions\":{\"stage\":0,\"completedAt\":0,\"goldAt\":0,\"nextReviewAt\":0,\"reviews\":0},\"countries\":{\"stage\":0,\"completedAt\":0,\"goldAt\":0,\"nextReviewAt\":0,\"reviews\":0},\"seas\":{\"stage\":0,\"completedAt\":0,\"goldAt\":0,\"nextReviewAt\":0,\"reviews\":0},\"rivers\":{\"stage\":0,\"completedAt\":0,\"goldAt\":0,\"nextReviewAt\":0,\"reviews\":0}},\"items\":{},\"rewardTokens\":[],\"active\":null},\"daily\":{\"date\":\"2026-11-04\",\"correct\":0}}"
+        },
+        "draft": "Navigatieconcept",
+        "caret": [
+          5,
+          5,
+          "none"
+        ],
+        "prompt": "Wat is dit op de kaart?"
+      },
+      "fixture": false
+    },
+    {
+      "width": 320,
+      "selection": [
+        2,
+        8,
+        "forward"
+      ],
+      "before": {
+        "question": "city-6",
+        "mode": "write",
+        "questionMode": "write",
+        "answered": false,
+        "quizSession": {
+          "deck": [
+            "city-1",
+            "city-2",
+            "city-4",
+            "city-5",
+            "city-3"
+          ],
+          "lastId": "city-6",
+          "turns": 1
+        },
+        "learnSession": null,
+        "progress": {
+          "schema": 3,
+          "good": 0,
+          "pizzas": 0,
+          "slices": 0,
+          "trips": 0,
+          "mistakes": [],
+          "route": {
+            "schema": 2,
+            "chapters": {
+              "city1": {
+                "stage": 0,
+                "completedAt": 0,
+                "goldAt": 0,
+                "nextReviewAt": 0,
+                "reviews": 0
+              },
+              "city2": {
+                "stage": 0,
+                "completedAt": 0,
+                "goldAt": 0,
+                "nextReviewAt": 0,
+                "reviews": 0
+              },
+              "city3": {
+                "stage": 0,
+                "completedAt": 0,
+                "goldAt": 0,
+                "nextReviewAt": 0,
+                "reviews": 0
+              },
+              "city4": {
+                "stage": 0,
+                "completedAt": 0,
+                "goldAt": 0,
+                "nextReviewAt": 0,
+                "reviews": 0
+              },
+              "islands": {
+                "stage": 0,
+                "completedAt": 0,
+                "goldAt": 0,
+                "nextReviewAt": 0,
+                "reviews": 0
+              },
+              "mountains": {
+                "stage": 0,
+                "completedAt": 0,
+                "goldAt": 0,
+                "nextReviewAt": 0,
+                "reviews": 0
+              },
+              "volcanoes": {
+                "stage": 0,
+                "completedAt": 0,
+                "goldAt": 0,
+                "nextReviewAt": 0,
+                "reviews": 0
+              },
+              "regions": {
+                "stage": 0,
+                "completedAt": 0,
+                "goldAt": 0,
+                "nextReviewAt": 0,
+                "reviews": 0
+              },
+              "countries": {
+                "stage": 0,
+                "completedAt": 0,
+                "goldAt": 0,
+                "nextReviewAt": 0,
+                "reviews": 0
+              },
+              "seas": {
+                "stage": 0,
+                "completedAt": 0,
+                "goldAt": 0,
+                "nextReviewAt": 0,
+                "reviews": 0
+              },
+              "rivers": {
+                "stage": 0,
+                "completedAt": 0,
+                "goldAt": 0,
+                "nextReviewAt": 0,
+                "reviews": 0
+              }
+            },
+            "items": {},
+            "rewardTokens": [],
+            "active": null
+          },
+          "daily": {
+            "date": "2026-11-04",
+            "correct": 0
+          }
+        },
+        "disk": {
+          "topo-italie-v3": "{\"schema\":3,\"mistakes\":[],\"good\":0,\"pizzas\":0,\"slices\":0,\"trips\":0,\"route\":{\"schema\":2,\"chapters\":{\"city1\":{\"stage\":0,\"completedAt\":0,\"goldAt\":0,\"nextReviewAt\":0,\"reviews\":0},\"city2\":{\"stage\":0,\"completedAt\":0,\"goldAt\":0,\"nextReviewAt\":0,\"reviews\":0},\"city3\":{\"stage\":0,\"completedAt\":0,\"goldAt\":0,\"nextReviewAt\":0,\"reviews\":0},\"city4\":{\"stage\":0,\"completedAt\":0,\"goldAt\":0,\"nextReviewAt\":0,\"reviews\":0},\"islands\":{\"stage\":0,\"completedAt\":0,\"goldAt\":0,\"nextReviewAt\":0,\"reviews\":0},\"mountains\":{\"stage\":0,\"completedAt\":0,\"goldAt\":0,\"nextReviewAt\":0,\"reviews\":0},\"volcanoes\":{\"stage\":0,\"completedAt\":0,\"goldAt\":0,\"nextReviewAt\":0,\"reviews\":0},\"regions\":{\"stage\":0,\"completedAt\":0,\"goldAt\":0,\"nextReviewAt\":0,\"reviews\":0},\"countries\":{\"stage\":0,\"completedAt\":0,\"goldAt\":0,\"nextReviewAt\":0,\"reviews\":0},\"seas\":{\"stage\":0,\"completedAt\":0,\"goldAt\":0,\"nextReviewAt\":0,\"reviews\":0},\"rivers\":{\"stage\":0,\"completedAt\":0,\"goldAt\":0,\"nextReviewAt\":0,\"reviews\":0}},\"items\":{},\"rewardTokens\":[],\"active\":null},\"daily\":{\"date\":\"2026-11-04\",\"correct\":0}}"
+        },
+        "draft": "Navigatieconcept",
+        "caret": [
+          2,
+          8,
+          "forward"
+        ],
+        "prompt": "Wat is dit op de kaart?"
+      },
+      "after": {
+        "question": "city-6",
+        "mode": "write",
+        "questionMode": "write",
+        "answered": false,
+        "quizSession": {
+          "deck": [
+            "city-1",
+            "city-2",
+            "city-4",
+            "city-5",
+            "city-3"
+          ],
+          "lastId": "city-6",
+          "turns": 1
+        },
+        "learnSession": null,
+        "progress": {
+          "schema": 3,
+          "good": 0,
+          "pizzas": 0,
+          "slices": 0,
+          "trips": 0,
+          "mistakes": [],
+          "route": {
+            "schema": 2,
+            "chapters": {
+              "city1": {
+                "stage": 0,
+                "completedAt": 0,
+                "goldAt": 0,
+                "nextReviewAt": 0,
+                "reviews": 0
+              },
+              "city2": {
+                "stage": 0,
+                "completedAt": 0,
+                "goldAt": 0,
+                "nextReviewAt": 0,
+                "reviews": 0
+              },
+              "city3": {
+                "stage": 0,
+                "completedAt": 0,
+                "goldAt": 0,
+                "nextReviewAt": 0,
+                "reviews": 0
+              },
+              "city4": {
+                "stage": 0,
+                "completedAt": 0,
+                "goldAt": 0,
+                "nextReviewAt": 0,
+                "reviews": 0
+              },
+              "islands": {
+                "stage": 0,
+                "completedAt": 0,
+                "goldAt": 0,
+                "nextReviewAt": 0,
+                "reviews": 0
+              },
+              "mountains": {
+                "stage": 0,
+                "completedAt": 0,
+                "goldAt": 0,
+                "nextReviewAt": 0,
+                "reviews": 0
+              },
+              "volcanoes": {
+                "stage": 0,
+                "completedAt": 0,
+                "goldAt": 0,
+                "nextReviewAt": 0,
+                "reviews": 0
+              },
+              "regions": {
+                "stage": 0,
+                "completedAt": 0,
+                "goldAt": 0,
+                "nextReviewAt": 0,
+                "reviews": 0
+              },
+              "countries": {
+                "stage": 0,
+                "completedAt": 0,
+                "goldAt": 0,
+                "nextReviewAt": 0,
+                "reviews": 0
+              },
+              "seas": {
+                "stage": 0,
+                "completedAt": 0,
+                "goldAt": 0,
+                "nextReviewAt": 0,
+                "reviews": 0
+              },
+              "rivers": {
+                "stage": 0,
+                "completedAt": 0,
+                "goldAt": 0,
+                "nextReviewAt": 0,
+                "reviews": 0
+              }
+            },
+            "items": {},
+            "rewardTokens": [],
+            "active": null
+          },
+          "daily": {
+            "date": "2026-11-04",
+            "correct": 0
+          }
+        },
+        "disk": {
+          "topo-italie-v3": "{\"schema\":3,\"mistakes\":[],\"good\":0,\"pizzas\":0,\"slices\":0,\"trips\":0,\"route\":{\"schema\":2,\"chapters\":{\"city1\":{\"stage\":0,\"completedAt\":0,\"goldAt\":0,\"nextReviewAt\":0,\"reviews\":0},\"city2\":{\"stage\":0,\"completedAt\":0,\"goldAt\":0,\"nextReviewAt\":0,\"reviews\":0},\"city3\":{\"stage\":0,\"completedAt\":0,\"goldAt\":0,\"nextReviewAt\":0,\"reviews\":0},\"city4\":{\"stage\":0,\"completedAt\":0,\"goldAt\":0,\"nextReviewAt\":0,\"reviews\":0},\"islands\":{\"stage\":0,\"completedAt\":0,\"goldAt\":0,\"nextReviewAt\":0,\"reviews\":0},\"mountains\":{\"stage\":0,\"completedAt\":0,\"goldAt\":0,\"nextReviewAt\":0,\"reviews\":0},\"volcanoes\":{\"stage\":0,\"completedAt\":0,\"goldAt\":0,\"nextReviewAt\":0,\"reviews\":0},\"regions\":{\"stage\":0,\"completedAt\":0,\"goldAt\":0,\"nextReviewAt\":0,\"reviews\":0},\"countries\":{\"stage\":0,\"completedAt\":0,\"goldAt\":0,\"nextReviewAt\":0,\"reviews\":0},\"seas\":{\"stage\":0,\"completedAt\":0,\"goldAt\":0,\"nextReviewAt\":0,\"reviews\":0},\"rivers\":{\"stage\":0,\"completedAt\":0,\"goldAt\":0,\"nextReviewAt\":0,\"reviews\":0}},\"items\":{},\"rewardTokens\":[],\"active\":null},\"daily\":{\"date\":\"2026-11-04\",\"correct\":0}}"
+        },
+        "draft": "Navigatieconcept",
+        "caret": [
+          2,
+          8,
+          "forward"
+        ],
+        "prompt": "Wat is dit op de kaart?"
+      },
+      "fixture": false
+    },
+    {
+      "width": 320,
+      "resultScreenResumeAndDefaultExit": "PASS",
+      "earnedProgress": {
+        "schema": 3,
+        "good": 1,
+        "pizzas": 0,
+        "slices": 1,
+        "trips": 0,
+        "mistakes": [],
+        "route": {
+          "schema": 2,
+          "chapters": {
+            "city1": {
+              "stage": 0,
+              "completedAt": 0,
+              "goldAt": 0,
+              "nextReviewAt": 0,
+              "reviews": 0
+            },
+            "city2": {
+              "stage": 0,
+              "completedAt": 0,
+              "goldAt": 0,
+              "nextReviewAt": 0,
+              "reviews": 0
+            },
+            "city3": {
+              "stage": 0,
+              "completedAt": 0,
+              "goldAt": 0,
+              "nextReviewAt": 0,
+              "reviews": 0
+            },
+            "city4": {
+              "stage": 0,
+              "completedAt": 0,
+              "goldAt": 0,
+              "nextReviewAt": 0,
+              "reviews": 0
+            },
+            "islands": {
+              "stage": 0,
+              "completedAt": 0,
+              "goldAt": 0,
+              "nextReviewAt": 0,
+              "reviews": 0
+            },
+            "mountains": {
+              "stage": 0,
+              "completedAt": 0,
+              "goldAt": 0,
+              "nextReviewAt": 0,
+              "reviews": 0
+            },
+            "volcanoes": {
+              "stage": 0,
+              "completedAt": 0,
+              "goldAt": 0,
+              "nextReviewAt": 0,
+              "reviews": 0
+            },
+            "regions": {
+              "stage": 0,
+              "completedAt": 0,
+              "goldAt": 0,
+              "nextReviewAt": 0,
+              "reviews": 0
+            },
+            "countries": {
+              "stage": 0,
+              "completedAt": 0,
+              "goldAt": 0,
+              "nextReviewAt": 0,
+              "reviews": 0
+            },
+            "seas": {
+              "stage": 0,
+              "completedAt": 0,
+              "goldAt": 0,
+              "nextReviewAt": 0,
+              "reviews": 0
+            },
+            "rivers": {
+              "stage": 0,
+              "completedAt": 0,
+              "goldAt": 0,
+              "nextReviewAt": 0,
+              "reviews": 0
+            }
+          },
+          "items": {
+            "city-6": {
+              "correct": 0,
+              "wrong": 0,
+              "streak": 0,
+              "lastSeen": 0,
+              "lastWrong": 0,
+              "skills": {
+                "write": {
+                  "correct": 1,
+                  "wrong": 0,
+                  "streak": 1,
+                  "lastSeen": 1793782937836,
+                  "due": 1793869337836
+                }
+              }
+            }
+          },
+          "rewardTokens": [],
+          "active": null
+        },
+        "daily": {
+          "date": "2026-11-04",
+          "correct": 1
+        }
+      },
+      "modeChecks": [
+        "point",
+        "exam",
+        "learn"
+      ],
+      "explicitRouteStartAndResume": "PASS",
+      "fixture": false
+    }
+  ],
+  "errors": [],
+  "network": []
+}

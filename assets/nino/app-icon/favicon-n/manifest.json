@@ -1,0 +1,17 @@
+{
+  "date": "2026-11-07",
+  "owner_supplied": true,
+  "design": "cream N on dark green",
+  "replaces": "assets/nino/app-icon/micro-v2 favicons (16px Italy, 32px scooter); micro-v2 stays as history",
+  "large_app_icon": "unchanged",
+  "files": {
+    "NINO-favicon-16.png": {
+      "bytes": 138,
+      "sha256": "3a3e320851dbdd3c87210cba284aade1d95f8efdb0a677f82600c2b372272143"
+    },
+    "NINO-favicon-32.png": {
+      "bytes": 197,
+      "sha256": "3f737bc4f4910f16f7065f73fcfc9dff76b33718ee4f4ad7706b00a006aba1d9"
+    }
+  }
+}

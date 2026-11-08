@@ -1,0 +1,49 @@
+
+> topo-italie-baseline@0.1.0 release:check
+> npm run build && npm run lint && npm test && npm run audit:release-1-2 && node scripts/audit-map-picker-revision.mjs
+
+
+> topo-italie-baseline@0.1.0 build
+> node scripts/build.mjs
+
+Semantic map tap resolver embedded; original SVG geometry and engines retained
+Original schoolblad overlay embedded; no external assets
+Embedded six byte-verified owner WebPs; no external runtime assets
+Six background lakes generated from pinned Natural Earth polygons (no simplification)
+Discovery atlas embedded: pinned DEM, live two-choice utility, no external runtime dependency
+file:///Users/dennisariens/projects/nino-v2-integration/scripts/focus-source.mjs:19
+ if(!html.includes(exact))throw Error('Unexpected content in C+ presentation block');
+                                ^
+
+Error: Unexpected content in C+ presentation block
+    at withoutCplus (file:///Users/dennisariens/projects/nino-v2-integration/scripts/focus-source.mjs:19:33)
+    at withoutMicroIcons (file:///Users/dennisariens/projects/nino-v2-integration/scripts/focus-source.mjs:6:7)
+    at withoutFocus (file:///Users/dennisariens/projects/nino-v2-integration/scripts/focus-source.mjs:23:43)
+    at file:///Users/dennisariens/projects/nino-v2-integration/scripts/embed-focus-mode.mjs:3:10
+    at ModuleJob.run (node:internal/modules/esm/module_job:437:25)
+    at async node:internal/modules/esm/loader:639:26
+    at async asyncRunEntryPointWithESMLoader (node:internal/modules/run_main:101:5)
+
+Node.js v24.15.0
+node:internal/errors:985
+  const err = new Error(message);
+              ^
+
+Error: Command failed: /Users/dennisariens/.npm/_npx/1c56de6e9acc34f8/node_modules/node/bin/node /Users/dennisariens/projects/nino-v2-integration/scripts/embed-focus-mode.mjs
+    at genericNodeError (node:internal/errors:985:15)
+    at wrappedFn (node:internal/errors:539:14)
+    at checkExecSyncError (node:child_process:925:11)
+    at execFileSync (node:child_process:961:15)
+    at file:///Users/dennisariens/projects/nino-v2-integration/scripts/build.mjs:13:1
+    at ModuleJob.run (node:internal/modules/esm/module_job:437:25)
+    at async node:internal/modules/esm/loader:639:26
+    at async asyncRunEntryPointWithESMLoader (node:internal/modules/run_main:101:5) {
+  status: 1,
+  signal: null,
+  output: [ null, null, null ],
+  pid: 22733,
+  stdout: null,
+  stderr: null
+}
+
+Node.js v24.15.0

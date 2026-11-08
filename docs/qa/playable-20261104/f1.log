@@ -1,0 +1,12 @@
+✔ F1 Reis/Oefenen resumes the visible writing question, draft and backward selection without progress changes (5663.232625ms)
+✔ F1 navigation preserves every practice mode and route tasks; explicit route start replaces suspended free practice (5861.286667ms)
+✔ F1 Reis can display the journey from a completed round and resume the same result screen (3877.863ms)
+✔ F1 canceled journey reset or lesson change keeps the suspended exercise (3831.040583ms)
+ℹ tests 4
+ℹ suites 0
+ℹ pass 4
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 20544.913875

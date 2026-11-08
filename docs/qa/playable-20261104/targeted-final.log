@@ -1,0 +1,21 @@
+✔ playable journey exposes all eleven ordered stops, and every book interior uses real folios (4208.100917ms)
+✔ iPad portrait reads a single page; stamps and Gold are projections of real completion state (4693.548875ms)
+✔ reward presentation survives result-screen removal and cannot become detached from the active lesson (4441.323917ms)
+Profile validation, Unicode, safe rendering, skip/cancel, reload, legacy, preference isolation and storage failure passed
+Bounded backup inverse audit, whitespace editing and failed-import rollback passed
+Immediate cosmetic favorite feedback and first-run CTA passed
+✔ scripts/nino-profile.test.mjs (1737.842916ms)
+✔ every flavor has all nine atlas cells and eight distinct sector selectors; no reward writes (105.613209ms)
+✔ zero rollover retains just-earned flavor; queue orders pizza, static box, trip once (22.208584ms)
+✔ reset cancels pending trip and replay-invalid events cannot fabricate rewards (9.480917ms)
+✔ PR29 approved source and runtime checksums, unique assembly proof (67.595084ms)
+✔ integration applies exactly once and reverse restores untouched baseline (747.961541ms)
+✔ authoritative engine earns 8 answers per pizza and 3 pizzas per trip regardless of favorite (22.483125ms)
+ℹ tests 10
+ℹ suites 0
+ℹ pass 10
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 14338.682875

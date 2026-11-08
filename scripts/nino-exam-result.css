@@ -1,0 +1,18 @@
+.ninoExamResult{box-sizing:border-box;width:min(480px,calc(100% - 24px));max-height:calc(100dvh - 24px);overflow:auto;border:1px solid #ded0b5;border-radius:24px;padding:clamp(14px,4vw,28px);background:#fff8e9;color:#193f36;box-shadow:0 18px 64px #153d3455;text-align:center}
+.ninoExamResult::backdrop{background:#153d34b5}
+.ninoExamResult h2{margin:0;font-size:clamp(25px,6vw,33px)}
+.ninoExamResult .examArt{height:min(142px,20dvh);margin:10px auto}
+.ninoExamResult .examArt img{height:100%;width:100%;object-fit:contain}
+.ninoExamResult .examScore{display:block;font-size:clamp(34px,9vw,54px);line-height:1.05;font-weight:800;letter-spacing:-.045em}
+.ninoExamResult p{margin:9px 0;line-height:1.4}
+.ninoExamResult .examActions{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px;margin-top:14px}
+.ninoExamResult .examActions :is(button,a){display:flex;align-items:center;justify-content:center;min-height:44px;padding:8px;border-radius:12px;border:1px solid #d7cbb4;background:#fffcf5;color:#193f36;font:inherit;font-weight:700;text-decoration:none}
+.ninoExamResult .examActions .examDone{grid-column:1/-1;background:#a9432c;border-color:#a9432c;color:white}
+.ninoExamResult [hidden]{display:none!important}
+.ninoExamResult textarea{display:block;width:100%;box-sizing:border-box;min-height:75px;margin-top:8px;font:inherit}
+.ninoExamResult :focus-visible{outline:3px solid #087887;outline-offset:2px}
+/* 2.0.2: the illustration stays inside its own box. TopoArt returns a <figure class="ninoArtSlot"> without a height,
+   so img{height:100%} fell back to its natural height (about 633px) and ran under the score, message and actions. */
+.ninoExamResult .examArt{display:flex;align-items:center;justify-content:center;overflow:hidden;contain:paint}
+.ninoExamResult .examArt>.ninoArtSlot{width:100%;height:100%;max-width:100%;max-height:100%;margin:0}
+.ninoExamResult .examArt img{max-width:100%;max-height:100%;object-fit:contain}

@@ -1,0 +1,70 @@
+{
+  "implementationCommit": "df775042cbb24884d675ba0b70607813aa5e9090",
+  "htmlBytes": 35709206,
+  "htmlSha256": "352ddd742436ac4f5a5a8a82374f742788952219e42b47d87d83536319183d53",
+  "internalVerification": "PASS within executed scope; independent Hermes and owner acceptance pending",
+  "releaseCheckLog": "delivery-release-check.log",
+  "wholeFilePreservation": "preservation.json",
+  "responsiveViewports": [
+    [
+      1500,
+      1000
+    ],
+    [
+      1024,
+      768
+    ],
+    [
+      768,
+      1024
+    ],
+    [
+      390,
+      844
+    ],
+    [
+      320,
+      740
+    ]
+  ],
+  "all45LedgerRows": 45,
+  "all45Scope": "per-question pointer/writing/wrong fixtures in both map styles; not full natural route",
+  "genuinePlayCases": 7,
+  "webKit": "NOT TESTED: Playwright does not support webkit on mac13",
+  "physicalSafariIPad": "NOT TESTED",
+  "ownerArtworkDecisionsPending": [
+    "Final visual acceptance of bounded native folios; no higher-native-resolution approval claimed",
+    "Final visual acceptance of the reconstructed Venezia contour; exact original matte identity unverified"
+  ],
+  "noMergeDeployOrApprovedDownloadReplacement": true,
+  "all45Ledger": "delivery-integrity/ledger.json",
+  "ownerVisualAcceptance": "Pending; bounded PR70 integration authorized by current mission; no higher-native-resolution or original-matte identity approval claimed",
+  "folioRuntime": {
+    "native": [
+      1086,
+      1448
+    ],
+    "maxCssWidth": 543,
+    "testedDPR": 2,
+    "originalAspectRatio": true
+  },
+  "veneziaRuntime": "Exact PR70 tight reconstructed export; displayed only at trips>=3",
+  "completeReleaseCheck": "PASS: build/lint/17-program suite/release/geographic preservation",
+  "artworkInventory": {
+    "source_availability": {
+      "delivery derivative": 34,
+      "pinned Git blob": 205
+    },
+    "delivery_state": {
+      "export/file present": 67,
+      "source only; not delivered": 172
+    },
+    "runtime_state": {
+      "integrated": 46,
+      "not integrated": 193
+    }
+  },
+  "genuinePlayReport": "played/chrome-internal-playthrough.json",
+  "serialPlayLog": "delivery-played-serial.log",
+  "implementationBlockers": []
+}

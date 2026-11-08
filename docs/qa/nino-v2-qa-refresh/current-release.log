@@ -1,0 +1,182 @@
+
+> topo-italie-baseline@0.1.0 release:check
+> npm run build && npm run lint && npm test && npm run audit:release-1-2 && node scripts/audit-map-picker-revision.mjs
+
+
+> topo-italie-baseline@0.1.0 build
+> node scripts/build.mjs
+
+Semantic map tap resolver embedded; original SVG geometry and engines retained
+Original schoolblad overlay embedded; no external assets
+Embedded six byte-verified owner WebPs; no external runtime assets
+Six background lakes generated from pinned Natural Earth polygons (no simplification)
+Discovery atlas embedded: pinned DEM, live two-choice utility, no external runtime dependency
+Focus Mode embedded: original input, visual viewport sheet, one unchanged map; fully offline
+Embedded pinned PR65 micro favicons; no external icon requests
+Static preview generated from canonical 45 places
+Generated print.html from 45 current worksheet items and 12 groups
+Standalone interactive HTML: output/html/topo-italie-interactief.html
+App, print page, standalone bundle and learning engine JavaScript syntax: OK
+Pinned Nino art, reusable slots and all offline image bytes: OK
+Discovery atlas code, original geometry references and embedded DEM bytes: OK
+Semantic map hit resolver source/standalone parity: OK
+TOPO-NINO Computer release filename and canonical bytes: OK
+45 content entries, anchors, coastal markers, microstates, selected land checks: OK
+Limit: drawn Italy polygon is not an independent geographic ground truth
+Static build: dist/index.html, dist/print.html, dist/printboek.pdf
+
+> topo-italie-baseline@0.1.0 lint
+> node scripts/check-syntax.mjs
+
+App, print page, standalone bundle and learning engine JavaScript syntax: OK
+Pinned Nino art, reusable slots and all offline image bytes: OK
+Discovery atlas code, original geometry references and embedded DEM bytes: OK
+Semantic map hit resolver source/standalone parity: OK
+TOPO-NINO Computer release filename and canonical bytes: OK
+
+> topo-italie-baseline@0.1.0 test
+> node scripts/validate-map.mjs && node scripts/validate-print.mjs && node scripts/learning-engine.test.mjs && node scripts/route-engine.test.mjs && node scripts/exam-flow.test.mjs && node scripts/ui-smoke.test.mjs && node scripts/route-dom.test.mjs && node scripts/work-regression.cjs && node scripts/release-1-dom.test.mjs && node scripts/qa-findings.test.mjs && node scripts/polish.test.mjs && node --test scripts/nino-art.test.mjs && node scripts/geography/lakes.test.mjs && node --test scripts/schoolblad.test.mjs && node --test scripts/discovery-map.test.mjs && node --test scripts/map-hit.test.mjs && node --test scripts/focus-mode.test.mjs
+
+45 content entries, anchors, coastal markers, microstates, selected land checks: OK
+Limit: drawn Italy polygon is not an independent geographic ground truth
+Printable A4 groups, school photo and all 45 worksheet mappings: OK
+Shuffle, coverage, spaced mistake review, legacy migration and Vespa cadence: OK
+Route locks, stages, repair spacing, gold, persistence, rewards and scheduled review: OK
+Finite geography test, point/write grading, scoring, skips and restart: OK
+Full standalone boot and learn/point/write/exam/reset button flow: OK
+All 11 route chapters and gold tests, dock controls, mode switch, resume and reset: OK
+Real HTML DOM: controls, SVG events, reload, atomic rewards, unique IDs, enclave and storage failure: OK
+PASS: JavaScript syntax; 168 correct answers → 21 pizzas / 7 trips; every 8/24 rollover; reload preserves rewards; duplicate answer cannot earn twice.
+PASS: six-question breaks retain full gold coverage; halfway save/restore; daily goal resets independently of lifetime rewards.
+PASS: adaptive six-task session, skill isolation, restore and legacy migration; 27 source-projected locations; 45 geometry/code baselines; fallback matches live coordinates.
+PASS: three-stage migration preserves writing completion; code sessions removed; tests and adaptive rounds use pointing/writing only.
+Legacy saves, skill isolation, round/lifetime scores, neutral keyboard picker, microstate highlights, river tolerance and daily reset: OK
+QA-1: stage/gold replay daily credit, reload/resubmit idempotence and pizza ledger: PASS
+QA-2: 19 malformed imports preserve exact memory/storage before confirmation; valid schemas 1/2 and interrupted/code migrations: PASS
+Release 1.1: eleven icon references/fallback, route disclosures, eight-slice copy, NOW gating and truthful Nino outcomes: PASS
+✔ pure role policy: strict Gold, real success, exam suppression and genuine trip only (1.565ms)
+✔ all six local exports equal manifest hashes and canonical embedded WebP bytes (3570.905708ms)
+✔ pending scenes/postcards stay locked or empty; missing and failed art falls back safely (3373.00125ms)
+✔ canonical engines, geometry, original artwork and print artifacts equal pinned base (3983.584542ms)
+✔ DOM grade/resubmit/reload, chapter completion, Gold/replay/miss preserve base progress and rewards (14218.30475ms)
+✔ free practice wrong-only art, exam suppression, and arrival only at real reward threshold (5062.797375ms)
+ℹ tests 6
+ℹ suites 0
+ℹ pass 6
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 31279.683083
+Six pinned lake polygons, exact projection/envelopes/hashes, Como forks, live/static/offline parity and noninteractive background contract: OK
+✔ one unchanged photograph; pre-existing code exact except the bounded map resolver hotfix (559.525125ms)
+✔ Learn, Point, Write, exam and route reference opening never mutates a task or progress (3927.85725ms)
+✔ answered/unanswered route and Gold remain exact across cancel; draft answer/caret recover (3889.524875ms)
+✔ modal semantics, keyboard containment and progressive legacy fallback (6350.567875ms)
+ℹ tests 4
+ℹ suites 0
+ℹ pass 4
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 15744.872375
+✔ verified PR27 app retained except isolated atlas and bounded semantic resolver replacement (480.996083ms)
+✔ pinned DEM bytes embedded, original frame and source land references, no new geographic paths (3716.938042ms)
+✔ activity defaults, explicit persistent choice and exact active-question continuity (6692.028ms)
+✔ exactly two styles per utility, separate original schoolblad and safe zoom (3149.072667ms)
+ℹ tests 4
+ℹ suites 0
+ℹ pass 4
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 15060.145375
+✔ the only canonical app delta is the bounded resolver; engines, geography, schoolblad and atlas remain exact (457.558791ms)
+✔ all 45 stable IDs have semantic classes: 27 points and independent polygons/river corridors (3838.536167ms)
+✔ neutral display order is not distance or expected-answer order, and never mutates candidates (3784.33825ms)
+✔ real Rome/Vatican keyboard chooser grades stable IDs with both first/second correct and wrong cases (3480.682083ms)
+✔ every point pair keeps its exact source anchors and answer-independent regional framing (3127.54375ms)
+✔ all recorded point collision sets keep noncrossing leaders at compact and wide sizes (3700.920541ms)
+✔ Vatican is illustrated inside Rome with two different noncrossing endpoint targets (2963.574166ms)
+✔ approved owner SVG is embedded exactly; shuffled numbers cannot change its drawing (2885.560542ms)
+✔ regional choosers retain distinct volcano/city/state glyphs and source context (3508.63525ms)
+✔ picker rendering does not read expected answer and names containment only in Discover (1.357291ms)
+ℹ tests 10
+ℹ suites 0
+ℹ pass 10
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 28630.966667
+✔ P0 iPad hotfix preserves verified PR39 teaching, rewards and source outside explicit changes (419.353834ms)
+✔ one canonical input/submit; responsive reparenting retains draft, caret, task and saved progress (3878.631833ms)
+✔ visual viewport adapter reads real offsets without editing learner state or field selection (3215.091667ms)
+✔ chapter availability writes are idempotent: no MutationObserver disabled loop (3130.498042ms)
+✔ Frosted Parchment keeps children opaque and exposes reduced-transparency/contrast fallbacks (1.3265ms)
+ℹ tests 5
+ℹ suites 0
+ℹ pass 5
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 11295.010833
+
+> topo-italie-baseline@0.1.0 audit:release-1-2
+> node scripts/audit-release-1-2.mjs
+
+fatal: path 'assets/nino/exports/nino-guide.webp' exists on disk, but not in '047f74390bbb0cc7cfbd1fa3ba4f65fe23e2ec6d'
+node:internal/errors:998
+  const err = new Error(message);
+              ^
+
+Error: Command failed: git show 047f74390bbb0cc7cfbd1fa3ba4f65fe23e2ec6d:assets/nino/exports/nino-guide.webp
+fatal: path 'assets/nino/exports/nino-guide.webp' exists on disk, but not in '047f74390bbb0cc7cfbd1fa3ba4f65fe23e2ec6d'
+
+    at genericNodeError (node:internal/errors:998:15)
+    at wrappedFn (node:internal/errors:543:14)
+    at checkExecSyncError (node:child_process:925:11)
+    at execFileSync (node:child_process:961:15)
+    at original (file:///private/tmp/nino71-qa/scripts/audit-release-1-2.mjs:15:33)
+    at file:///private/tmp/nino71-qa/scripts/audit-release-1-2.mjs:25:108
+    at ModuleJob.run (node:internal/modules/esm/module_job:430:25)
+    at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:639:26)
+    at async asyncRunEntryPointWithESMLoader (node:internal/modules/run_main:101:5) {
+  status: 128,
+  signal: null,
+  output: [
+    null,
+    Buffer(0) [Uint8Array] [],
+    Buffer(120) [Uint8Array] [
+      102,  97, 116,  97, 108,  58,  32, 112,  97, 116, 104,  32,
+       39,  97, 115, 115, 101, 116, 115,  47, 110, 105, 110, 111,
+       47, 101, 120, 112, 111, 114, 116, 115,  47, 110, 105, 110,
+      111,  45, 103, 117, 105, 100, 101,  46, 119, 101,  98, 112,
+       39,  32, 101, 120, 105, 115, 116, 115,  32, 111, 110,  32,
+      100, 105, 115, 107,  44,  32,  98, 117, 116,  32, 110, 111,
+      116,  32, 105, 110,  32,  39,  48,  52,  55, 102,  55,  52,
+       51,  57,  48,  98,  98,  98,  48,  99,  99,  55,  99, 102,
+       98, 100,  49, 102,
+      ... 20 more items
+    ]
+  ],
+  pid: 93084,
+  stdout: Buffer(0) [Uint8Array] [],
+  stderr: Buffer(120) [Uint8Array] [
+    102,  97, 116,  97, 108,  58,  32, 112,  97, 116, 104,  32,
+     39,  97, 115, 115, 101, 116, 115,  47, 110, 105, 110, 111,
+     47, 101, 120, 112, 111, 114, 116, 115,  47, 110, 105, 110,
+    111,  45, 103, 117, 105, 100, 101,  46, 119, 101,  98, 112,
+     39,  32, 101, 120, 105, 115, 116, 115,  32, 111, 110,  32,
+    100, 105, 115, 107,  44,  32,  98, 117, 116,  32, 110, 111,
+    116,  32, 105, 110,  32,  39,  48,  52,  55, 102,  55,  52,
+     51,  57,  48,  98,  98,  98,  48,  99,  99,  55,  99, 102,
+     98, 100,  49, 102,
+    ... 20 more items
+  ]
+}
+
+Node.js v25.8.2

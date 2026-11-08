@@ -1,0 +1,121 @@
+/* NINO C+ DESIGN SYSTEM — 2026-11-02
+   Approved Hybrid C+: premium Apple-like structure, colourful Italian journey.
+   Deliberately presentation-only: all 45 items, map anchors, scores and engine unchanged. */
+:root {
+  --nino-forest:#073f3b;--nino-teal:#007c72;--nino-blue:#69c3db;
+  --nino-sun:#ffcb47;--nino-coral:#f16b4c;--nino-paper:#fffdf8;
+  --nino-cream:#f8f3e8;--nino-ink:#183b3a;--nino-line:#e5e8df;
+  --ink:var(--nino-ink);--muted:#5a7475;--accent:var(--nino-teal);
+  --focus:var(--nino-coral);--good:#167b59;--bad:#b94d3b;
+}
+html {color-scheme:light;scroll-behavior:smooth}
+body {background:linear-gradient(175deg,#fafffd 0%,#f7fbf7 44%,#fdf7e9 100%);
+  color:var(--nino-ink);font-family:ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif;
+  -webkit-font-smoothing:antialiased}
+body>header {max-width:1390px;min-height:100px;padding:19px 28px 15px;
+  background:transparent;border-bottom:0}
+.brand {color:var(--nino-forest);font-size:clamp(27px,3.4vw,45px);font-weight:900;letter-spacing:-.055em}
+.brand small {color:var(--nino-teal);font-size:11px;letter-spacing:.19em;font-weight:850}
+.brandMark {filter:drop-shadow(0 5px 9px #003c3a19)}
+.stat {background:#fff;border:1px solid #e4ebe7;border-radius:16px;
+  padding:8px 14px;box-shadow:0 4px 15px #104a3f0a;color:#526d6c}
+.stat strong {color:var(--nino-forest);font-variant-numeric:tabular-nums}
+body>nav.tabs {max-width:1334px;margin:0 auto 15px;padding:6px;
+  border:1px solid #e2eae4;border-radius:18px;background:#fffffff0;
+  box-shadow:0 6px 26px #1348400d;gap:6px}
+body>nav.tabs .tab {border:1px solid transparent;border-radius:13px;min-height:48px;
+  background:transparent;color:#446160;font-weight:800;transition:background .16s,color .16s,transform .16s}
+body>nav.tabs .tab.active {background:var(--nino-forest);border-color:var(--nino-forest);
+  color:#fff;box-shadow:0 4px 13px #073f3b24}
+body>nav.tabs .tab:not(.active):hover {background:#e6f7f2;color:#074d47}
+.layout {gap:20px}
+.mapCard,.panel,.journeyScreen {border:1px solid var(--nino-line);border-radius:25px;
+  box-shadow:0 14px 38px #073f3b0f;background:#fff;overflow:hidden}
+.mapCard {background:#fff}
+.panel {background:var(--nino-paper);padding:23px}
+.mapTools {background:#fffdf8;border-bottom:1px solid #eee8db}
+.mapCaption {background:#fffdf8;border-top:1px solid #eee8db;color:#5b7575}
+.mapArea {background:#c9eaf1}
+.button,.tab,button,select,input {font-family:inherit}
+.button,.tab,.schoolbladButton,.schoolbladClose {border-radius:13px}
+.button {min-height:46px;border-color:#d6e4df;color:var(--nino-forest);background:#fff}
+.button.primary,.tab.active,.journeyScreen .button.primary {background:var(--nino-coral);
+  border-color:#d95a40;color:#fff;box-shadow:0 4px 0 #c6573c}
+.button.primary:hover,.journeyScreen .button.primary:hover {background:#e65e42;transform:translateY(1px);
+  box-shadow:0 3px 0 #bd4f38}
+.button:focus-visible,.tab:focus-visible,button:focus-visible,
+input:focus-visible,select:focus-visible,summary:focus-visible {outline:3px solid var(--nino-teal);outline-offset:3px}
+.eyebrow {color:var(--nino-teal);letter-spacing:.12em}
+.prompt {color:var(--nino-forest);font-weight:850}
+.message {border-radius:14px;background:#eaf8f5;color:#1a5b55}
+.message.good {background:#e0f6e7;color:#176843}
+.message.bad {background:#ffede7;color:#914737}
+.answer,select,#groupSelect {border-radius:12px;border-color:#bddbd3;background:#fff}
+.progress {height:12px;background:#e7ede8}
+.progress i {background:linear-gradient(90deg,var(--nino-teal),#56bcb1)}
+.badge {background:#fff0c5;color:#715110}
+.rewardDetails {background:#fff5d8;border:1px solid #f7e3a7}
+.ninoCoach {background:#eaf9f4;border-color:#cde8de;color:var(--nino-forest)}
+.learnList button.selected {background:#e4f7f0;box-shadow:inset 4px 0 var(--nino-teal)}
+.routeHero {background:linear-gradient(130deg,#e2f8f3 0%,#fff8e6 70%,#ffecdb 100%);
+  border:1px solid #e4eadc;border-radius:23px;padding:22px;margin-bottom:19px}
+.journeyScreen .routeHero h2 {color:var(--nino-forest);letter-spacing:-.045em}
+.journeyScreen .routeHero p {color:#426a66}
+.routeScene {border-radius:16px;overflow:hidden;box-shadow:0 7px 18px #073f3b12}
+.routeCard,.routeCollection,.dailyGoal,.mastery {border-radius:20px}
+.routeCard {border-color:#e4eae2;background:#fff;box-shadow:0 5px 16px #073f3b09}
+.routeCard.spotlight {border:2px solid #f7bc69;background:linear-gradient(120deg,#fffef8,#fff5df);
+  box-shadow:0 10px 24px #d88c2b1b}
+.routeCard.locked {background:#f8faf7;opacity:.86}
+.routeCardTitle {color:var(--nino-forest);font-weight:850}
+.routeCollection {border:1px solid #e8e9dd;background:#fff}
+.routeSteps .button,.routeCard .button {border-radius:13px;min-height:44px}
+.dailyGoal {background:#e8f7f1;border:1px solid #caebdd}
+.mastery {background:#fffaf0;border-color:#f1e6d4}
+.pizza {filter:drop-shadow(0 2px 2px #7e3d281a)}
+.sceneStamp,.badge {font-weight:850}
+.schoolbladDialog {background:var(--nino-paper);border-color:#e1ddcb;border-radius:22px}
+.schoolbladHeader,.schoolbladToolbar {background:#fffef9}
+.schoolbladButton:hover {background:#e9f8f3}
+#focusMenu .focusMenuPanel,#focusAnswerSheet,.focusAnswerSheet,.focusLearnBar {
+  --accent:var(--nino-teal);--ink:var(--nino-forest)}
+#focusMenu .focusMenuPanel {border-color:#d8e8df}
+#focusAnswerSheet #check {background:var(--nino-coral);border-color:#d95a40;color:#fff}
+#focusAnswerSheet #answer {border-color:#acd5cb}
+#focusLessonStatus {color:var(--nino-forest)}
+/* Leave source geography and grading classes unchanged. Only subtle visual palette adjustments. */
+.mapArea .sea {fill:#bde4ee}
+.mapArea .water {fill:#99d8e1}
+.mapArea .activeTarget.city,.mapArea .activeTarget.feature {fill:#f16b4c}
+.mapArea .activeTarget.country,.mapArea .activeTarget.zone,.mapArea .activeTarget.water {fill:#ffbd65!important}
+@media(max-width:950px){
+ body>header {min-height:0}
+ .layout {gap:12px}
+ .panel {padding:18px}
+}
+@media(max-width:600px){
+ body>header {padding:15px 13px 10px}
+ .brand {font-size:26px}
+ .brand small {font-size:10px}
+ .stat {border-radius:11px;padding:5px 8px}
+ body>nav.tabs {margin:0 10px 11px;padding:5px;border-radius:14px}
+ body>nav.tabs .tab {min-height:46px;font-size:12px;border-radius:10px}
+ .layout {padding:0 10px 18px;gap:10px}
+ .mapCard,.panel,.journeyScreen {border-radius:17px}
+ .routeHero {padding:14px;border-radius:16px}
+ .routeCard {border-radius:15px}
+ .button.primary {box-shadow:0 3px 0 #c6573c}
+}
+@media(prefers-reduced-motion:reduce){
+ html {scroll-behavior:auto}
+ .button,.tab,.routeCard {transition:none!important;animation:none!important}
+}
+@media(forced-colors:active){
+ .button.primary,.tab.active {forced-color-adjust:auto;border:2px solid ButtonText}
+ body>nav.tabs,.routeHero,.routeCard {background:Canvas;color:CanvasText;border:1px solid CanvasText}
+}
+@media print{
+ body {background:white!important}
+ .routeHero {background:white!important}
+ .mapCard {box-shadow:none;border:0}
+}

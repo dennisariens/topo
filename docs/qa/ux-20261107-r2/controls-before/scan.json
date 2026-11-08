@@ -1,0 +1,691 @@
+{
+ "desktop home": [],
+ "desktop reisVerder": [
+  [
+   "tight",
+   "\"Kaart verkleinen\" × \"Kaart vergroten\"",
+   "gap 4"
+  ],
+  [
+   "tight",
+   "\"Kaart vergroten\" × \"Hele kaart\"",
+   "gap 4"
+  ],
+  [
+   "tight",
+   "#next \"Ik weet het nog niet\" × #reveal \"Toon antwoord\"",
+   "gap 0"
+  ]
+ ],
+ "desktop reisVerderAntwoord": [
+  [
+   "tight",
+   "\"Kaart verkleinen\" × \"Kaart vergroten\"",
+   "gap 4"
+  ],
+  [
+   "tight",
+   "\"Kaart vergroten\" × \"Hele kaart\"",
+   "gap 4"
+  ],
+  [
+   "tight",
+   "#next \"Ik weet het nog niet\" × #reveal \"Toon antwoord\"",
+   "gap 0"
+  ]
+ ],
+ "desktop schrijven": [
+  [
+   "tight",
+   "\"Kaart verkleinen\" × \"Kaart vergroten\"",
+   "gap 4"
+  ],
+  [
+   "tight",
+   "\"Kaart vergroten\" × \"Hele kaart\"",
+   "gap 4"
+  ]
+ ],
+ "desktop schrijvenAntwoord": [
+  [
+   "tight",
+   "\"Kaart verkleinen\" × \"Kaart vergroten\"",
+   "gap 4"
+  ],
+  [
+   "tight",
+   "\"Kaart vergroten\" × \"Hele kaart\"",
+   "gap 4"
+  ]
+ ],
+ "desktop menu": [
+  [
+   "tight",
+   "\"Kaart verkleinen\" × \"Kaart vergroten\"",
+   "gap 4"
+  ],
+  [
+   "tight",
+   "\"Kaart vergroten\" × \"Hele kaart\"",
+   "gap 4"
+  ],
+  [
+   "tight",
+   "\"•Bari\" × \"•Bologna\"",
+   "gap 0"
+  ],
+  [
+   "tight",
+   "\"•Bologna\" × \"•Florence\"",
+   "gap 0"
+  ],
+  [
+   "tight",
+   "\"•Florence\" × \"•Genua\"",
+   "gap 0"
+  ],
+  [
+   "tight",
+   "\"•Genua\" × \"•Milaan\"",
+   "gap 0"
+  ],
+  [
+   "tight",
+   "\"•Milaan\" × \"•Napels\"",
+   "gap 0"
+  ]
+ ],
+ "desktop oefenmenu": [
+  [
+   "tight",
+   "\"Kaart verkleinen\" × \"Kaart vergroten\"",
+   "gap 4"
+  ],
+  [
+   "tight",
+   "\"Kaart vergroten\" × \"Hele kaart\"",
+   "gap 4"
+  ],
+  [
+   "tight",
+   "\"•Bari\" × \"•Bologna\"",
+   "gap 0"
+  ],
+  [
+   "tight",
+   "\"•Bologna\" × \"•Florence\"",
+   "gap 0"
+  ],
+  [
+   "tight",
+   "\"•Florence\" × \"•Genua\"",
+   "gap 0"
+  ],
+  [
+   "tight",
+   "\"•Genua\" × \"•Milaan\"",
+   "gap 0"
+  ],
+  [
+   "tight",
+   "\"•Milaan\" × \"•Napels\"",
+   "gap 0"
+  ]
+ ],
+ "desktop reisboekje": [],
+ "ipadStaand home": [
+  [
+   "small",
+   "#routeReset \"Leerroute opnieuw beginnen\"",
+   "27px"
+  ],
+  [
+   "tight",
+   "\"Reisboekje\" × \"☰ Menu\"",
+   "gap 4"
+  ]
+ ],
+ "ipadStaand reisVerder": [
+  [
+   "tight",
+   "\"Reisboekje\" × \"☰ Menu\"",
+   "gap 4"
+  ],
+  [
+   "tight",
+   "\"Schoolblad bekijken\" × \"Kaart verkleinen\"",
+   "gap 5"
+  ],
+  [
+   "tight",
+   "\"Kaart verkleinen\" × \"Kaart vergroten\"",
+   "gap 4"
+  ]
+ ],
+ "ipadStaand reisVerderAntwoord": [
+  [
+   "tight",
+   "\"Reisboekje\" × \"☰ Menu\"",
+   "gap 4"
+  ],
+  [
+   "tight",
+   "\"Schoolblad bekijken\" × \"Kaart verkleinen\"",
+   "gap 5"
+  ],
+  [
+   "tight",
+   "\"Kaart verkleinen\" × \"Kaart vergroten\"",
+   "gap 4"
+  ]
+ ],
+ "ipadStaand schrijven": [
+  [
+   "tight",
+   "\"Reisboekje\" × \"☰ Menu\"",
+   "gap 4"
+  ],
+  [
+   "tight",
+   "\"Schoolblad bekijken\" × \"Kaart verkleinen\"",
+   "gap 5"
+  ],
+  [
+   "tight",
+   "\"Kaart verkleinen\" × \"Kaart vergroten\"",
+   "gap 4"
+  ]
+ ],
+ "ipadStaand schrijvenAntwoord": [
+  [
+   "tight",
+   "\"Reisboekje\" × \"☰ Menu\"",
+   "gap 4"
+  ],
+  [
+   "tight",
+   "\"Schoolblad bekijken\" × \"Kaart verkleinen\"",
+   "gap 5"
+  ],
+  [
+   "tight",
+   "\"Kaart verkleinen\" × \"Kaart vergroten\"",
+   "gap 4"
+  ]
+ ],
+ "ipadStaand menu": [
+  [
+   "tight",
+   "\"Leren\" × \"Aanwijzen\"",
+   "gap 4"
+  ],
+  [
+   "tight",
+   "\"Aanwijzen\" × \"Namen schrijven\"",
+   "gap 4"
+  ],
+  [
+   "tight",
+   "\"Namen schrijven\" × \"Toets\"",
+   "gap 4"
+  ],
+  [
+   "tight",
+   "#reveal \"Toon antwoord\" × #mistakes \"Oefen fouten\"",
+   "gap 4"
+  ]
+ ],
+ "ipadStaand oefenmenu": [
+  [
+   "blocked",
+   "#learnNext \"Volgende plek →\"",
+   "BUTTON.button in learnNext"
+  ],
+  [
+   "overlap",
+   "\"Reis\" × #learnNext \"Volgende plek →\"",
+   "141x38"
+  ],
+  [
+   "tight",
+   "\"Reisboekje\" × \"☰ Menu\"",
+   "gap 4"
+  ],
+  [
+   "tight",
+   "\"Schoolblad bekijken\" × \"Kaart verkleinen\"",
+   "gap 5"
+  ],
+  [
+   "tight",
+   "\"Kaart verkleinen\" × \"Kaart vergroten\"",
+   "gap 4"
+  ]
+ ],
+ "ipadStaand reisboekje": [],
+ "ipadLiggend home": [
+  [
+   "small",
+   "#routeReset \"Leerroute opnieuw beginnen\"",
+   "27px"
+  ],
+  [
+   "tight",
+   "\"Reisboekje\" × \"☰ Menu\"",
+   "gap 4"
+  ]
+ ],
+ "ipadLiggend reisVerder": [
+  [
+   "tight",
+   "\"Reisboekje\" × \"☰ Menu\"",
+   "gap 4"
+  ],
+  [
+   "tight",
+   "\"Schoolblad bekijken\" × \"Kaart verkleinen\"",
+   "gap 5"
+  ],
+  [
+   "tight",
+   "\"Kaart verkleinen\" × \"Kaart vergroten\"",
+   "gap 4"
+  ]
+ ],
+ "ipadLiggend reisVerderAntwoord": [
+  [
+   "tight",
+   "\"Reisboekje\" × \"☰ Menu\"",
+   "gap 4"
+  ],
+  [
+   "tight",
+   "\"Schoolblad bekijken\" × \"Kaart verkleinen\"",
+   "gap 5"
+  ],
+  [
+   "tight",
+   "\"Kaart verkleinen\" × \"Kaart vergroten\"",
+   "gap 4"
+  ]
+ ],
+ "ipadLiggend schrijven": [
+  [
+   "tight",
+   "\"Reisboekje\" × \"☰ Menu\"",
+   "gap 4"
+  ],
+  [
+   "tight",
+   "\"Schoolblad bekijken\" × \"Kaart verkleinen\"",
+   "gap 5"
+  ],
+  [
+   "tight",
+   "\"Kaart verkleinen\" × \"Kaart vergroten\"",
+   "gap 4"
+  ]
+ ],
+ "ipadLiggend schrijvenAntwoord": [
+  [
+   "tight",
+   "\"Reisboekje\" × \"☰ Menu\"",
+   "gap 4"
+  ],
+  [
+   "tight",
+   "\"Schoolblad bekijken\" × \"Kaart verkleinen\"",
+   "gap 5"
+  ],
+  [
+   "tight",
+   "\"Kaart verkleinen\" × \"Kaart vergroten\"",
+   "gap 4"
+  ]
+ ],
+ "ipadLiggend menu": [
+  [
+   "tight",
+   "\"Leren\" × \"Aanwijzen\"",
+   "gap 4"
+  ],
+  [
+   "tight",
+   "\"Aanwijzen\" × \"Namen schrijven\"",
+   "gap 4"
+  ],
+  [
+   "tight",
+   "\"Namen schrijven\" × \"Toets\"",
+   "gap 4"
+  ],
+  [
+   "tight",
+   "#reveal \"Toon antwoord\" × #mistakes \"Oefen fouten\"",
+   "gap 4"
+  ]
+ ],
+ "ipadLiggend oefenmenu": [
+  [
+   "blocked",
+   "#learnNext \"Volgende plek →\"",
+   "BUTTON.button in learnNext"
+  ],
+  [
+   "overlap",
+   "\"Reis\" × #learnNext \"Volgende plek →\"",
+   "141x38"
+  ],
+  [
+   "tight",
+   "\"Reisboekje\" × \"☰ Menu\"",
+   "gap 4"
+  ],
+  [
+   "tight",
+   "\"Schoolblad bekijken\" × \"Kaart verkleinen\"",
+   "gap 5"
+  ],
+  [
+   "tight",
+   "\"Kaart verkleinen\" × \"Kaart vergroten\"",
+   "gap 4"
+  ]
+ ],
+ "ipadLiggend reisboekje": [],
+ "tel390 home": [
+  [
+   "small",
+   "#routeReset \"Leerroute opnieuw beginnen\"",
+   "27px"
+  ],
+  [
+   "tight",
+   "\"Reisboekje\" × \"☰ Menu\"",
+   "gap 4"
+  ],
+  [
+   "tight",
+   "\"Ontdekken\" × \"Aanwijzen\"",
+   "gap 5"
+  ],
+  [
+   "tight",
+   "\"Aanwijzen\" × \"Namen schrijven\"",
+   "gap 5"
+  ]
+ ],
+ "tel390 reisVerder": [
+  [
+   "tight",
+   "\"Reisboekje\" × \"☰ Menu\"",
+   "gap 4"
+  ],
+  [
+   "tight",
+   "\"Schoolblad bekijken\" × \"Kaart verkleinen\"",
+   "gap 5"
+  ],
+  [
+   "tight",
+   "\"Kaart verkleinen\" × \"Kaart vergroten\"",
+   "gap 3"
+  ]
+ ],
+ "tel390 reisVerderAntwoord": [
+  [
+   "tight",
+   "\"Reisboekje\" × \"☰ Menu\"",
+   "gap 4"
+  ],
+  [
+   "tight",
+   "\"Schoolblad bekijken\" × \"Kaart verkleinen\"",
+   "gap 5"
+  ],
+  [
+   "tight",
+   "\"Kaart verkleinen\" × \"Kaart vergroten\"",
+   "gap 3"
+  ]
+ ],
+ "tel390 schrijven": [
+  [
+   "tight",
+   "\"Reisboekje\" × \"☰ Menu\"",
+   "gap 4"
+  ],
+  [
+   "tight",
+   "\"Schoolblad bekijken\" × \"Kaart verkleinen\"",
+   "gap 5"
+  ],
+  [
+   "tight",
+   "\"Kaart verkleinen\" × \"Kaart vergroten\"",
+   "gap 3"
+  ]
+ ],
+ "tel390 schrijvenAntwoord": [
+  [
+   "tight",
+   "\"Reisboekje\" × \"☰ Menu\"",
+   "gap 4"
+  ],
+  [
+   "tight",
+   "\"Schoolblad bekijken\" × \"Kaart verkleinen\"",
+   "gap 5"
+  ],
+  [
+   "tight",
+   "\"Kaart verkleinen\" × \"Kaart vergroten\"",
+   "gap 3"
+  ]
+ ],
+ "tel390 menu": [
+  [
+   "tight",
+   "\"Leren\" × \"Aanwijzen\"",
+   "gap 4"
+  ],
+  [
+   "tight",
+   "\"Aanwijzen\" × \"Namen schrijven\"",
+   "gap 4"
+  ],
+  [
+   "tight",
+   "\"Namen schrijven\" × \"Toets\"",
+   "gap 4"
+  ],
+  [
+   "tight",
+   "#reveal \"Toon antwoord\" × #mistakes \"Oefen fouten\"",
+   "gap 4"
+  ]
+ ],
+ "tel390 oefenmenu": [
+  [
+   "blocked",
+   "#learnNext \"Volgende plek →\"",
+   "BUTTON.button in learnNext"
+  ],
+  [
+   "overlap",
+   "\"Reis\" × #learnNext \"Volgende plek →\"",
+   "117x43"
+  ],
+  [
+   "overlap",
+   "\"Oefenen\" × #learnNext \"Volgende plek →\"",
+   "19x43"
+  ],
+  [
+   "tight",
+   "\"Reisboekje\" × \"☰ Menu\"",
+   "gap 4"
+  ],
+  [
+   "tight",
+   "\"Schoolblad bekijken\" × \"Kaart verkleinen\"",
+   "gap 5"
+  ],
+  [
+   "tight",
+   "\"Kaart verkleinen\" × \"Kaart vergroten\"",
+   "gap 3"
+  ]
+ ],
+ "tel390 reisboekje": [],
+ "tel320 home": [
+  [
+   "small",
+   "#routeReset \"Leerroute opnieuw beginnen\"",
+   "27px"
+  ],
+  [
+   "tight",
+   "\"Reisboekje\" × \"☰ Menu\"",
+   "gap 4"
+  ],
+  [
+   "tight",
+   "\"Ontdekken\" × \"Aanwijzen\"",
+   "gap 5"
+  ],
+  [
+   "tight",
+   "\"Aanwijzen\" × \"Namen schrijven\"",
+   "gap 5"
+  ]
+ ],
+ "tel320 reisVerder": [
+  [
+   "tight",
+   "\"Reisboekje\" × \"☰ Menu\"",
+   "gap 4"
+  ],
+  [
+   "tight",
+   "\"Schoolblad bekijken\" × \"Kaart verkleinen\"",
+   "gap 5"
+  ],
+  [
+   "tight",
+   "\"Kaart verkleinen\" × \"Kaart vergroten\"",
+   "gap 3"
+  ]
+ ],
+ "tel320 reisVerderAntwoord": [
+  [
+   "tight",
+   "\"Reisboekje\" × \"☰ Menu\"",
+   "gap 4"
+  ],
+  [
+   "tight",
+   "\"Schoolblad bekijken\" × \"Kaart verkleinen\"",
+   "gap 5"
+  ],
+  [
+   "tight",
+   "\"Kaart verkleinen\" × \"Kaart vergroten\"",
+   "gap 3"
+  ]
+ ],
+ "tel320 schrijven": [
+  [
+   "tight",
+   "\"Reisboekje\" × \"☰ Menu\"",
+   "gap 4"
+  ],
+  [
+   "tight",
+   "\"Schoolblad bekijken\" × \"Kaart verkleinen\"",
+   "gap 5"
+  ],
+  [
+   "tight",
+   "\"Kaart verkleinen\" × \"Kaart vergroten\"",
+   "gap 3"
+  ]
+ ],
+ "tel320 schrijvenAntwoord": [
+  [
+   "tight",
+   "\"Reisboekje\" × \"☰ Menu\"",
+   "gap 4"
+  ],
+  [
+   "tight",
+   "\"Schoolblad bekijken\" × \"Kaart verkleinen\"",
+   "gap 5"
+  ],
+  [
+   "tight",
+   "\"Kaart verkleinen\" × \"Kaart vergroten\"",
+   "gap 3"
+  ]
+ ],
+ "tel320 menu": [
+  [
+   "text-clipped",
+   "\"Aanwijzen\"",
+   "62/48"
+  ],
+  [
+   "text-clipped",
+   "\"Namen schrijven\"",
+   "56/48"
+  ],
+  [
+   "tight",
+   "\"Leren\" × \"Aanwijzen\"",
+   "gap 4"
+  ],
+  [
+   "tight",
+   "\"Aanwijzen\" × \"Namen schrijven\"",
+   "gap 4"
+  ],
+  [
+   "tight",
+   "\"Namen schrijven\" × \"Toets\"",
+   "gap 4"
+  ]
+ ],
+ "tel320 oefenmenu": [
+  [
+   "blocked",
+   "#learnNext \"Volgende plek →\"",
+   "BUTTON.button in learnNext"
+  ],
+  [
+   "overlap",
+   "\"Reis\" × #learnNext \"Volgende plek →\"",
+   "93x43"
+  ],
+  [
+   "overlap",
+   "\"Oefenen\" × #learnNext \"Volgende plek →\"",
+   "42x43"
+  ],
+  [
+   "tight",
+   "\"Reisboekje\" × \"☰ Menu\"",
+   "gap 4"
+  ],
+  [
+   "tight",
+   "\"Schoolblad bekijken\" × \"Kaart verkleinen\"",
+   "gap 5"
+  ],
+  [
+   "tight",
+   "\"Kaart verkleinen\" × \"Kaart vergroten\"",
+   "gap 3"
+  ]
+ ],
+ "tel320 reisboekje": []
+}

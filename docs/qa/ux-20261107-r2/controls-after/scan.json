@@ -1,0 +1,246 @@
+{
+ "desktop home": [],
+ "desktop reisVerder": [
+  [
+   "tight",
+   "#answer \"Naam\" × #check \"Controleer\"",
+   "gap 0"
+  ],
+  [
+   "tight",
+   "#next \"Ik weet het nog niet\" × #reveal \"Toon antwoord\"",
+   "gap 0"
+  ]
+ ],
+ "desktop reisVerderAntwoord": [
+  [
+   "tight",
+   "#answer \"Naam\" × #check \"Controleer\"",
+   "gap 0"
+  ],
+  [
+   "tight",
+   "#next \"Ik weet het nog niet\" × #reveal \"Toon antwoord\"",
+   "gap 0"
+  ]
+ ],
+ "desktop schrijven": [],
+ "desktop schrijvenAntwoord": [],
+ "desktop menu": [
+  [
+   "tight",
+   "\"•Bari\" × \"•Bologna\"",
+   "gap 0"
+  ],
+  [
+   "tight",
+   "\"•Bologna\" × \"•Florence\"",
+   "gap 0"
+  ],
+  [
+   "tight",
+   "\"•Florence\" × \"•Genua\"",
+   "gap 0"
+  ],
+  [
+   "tight",
+   "\"•Genua\" × \"•Milaan\"",
+   "gap 0"
+  ],
+  [
+   "tight",
+   "\"•Milaan\" × \"•Napels\"",
+   "gap 0"
+  ]
+ ],
+ "desktop oefenmenu": [
+  [
+   "tight",
+   "\"•Bari\" × \"•Bologna\"",
+   "gap 0"
+  ],
+  [
+   "tight",
+   "\"•Bologna\" × \"•Florence\"",
+   "gap 0"
+  ],
+  [
+   "tight",
+   "\"•Florence\" × \"•Genua\"",
+   "gap 0"
+  ],
+  [
+   "tight",
+   "\"•Genua\" × \"•Milaan\"",
+   "gap 0"
+  ],
+  [
+   "tight",
+   "\"•Milaan\" × \"•Napels\"",
+   "gap 0"
+  ]
+ ],
+ "desktop reisboekje": [],
+ "ipadStaand home": [],
+ "ipadStaand reisVerder": [
+  [
+   "tight",
+   "\"Schoolblad bekijken\" × \"Kaart verkleinen\"",
+   "gap 5"
+  ]
+ ],
+ "ipadStaand reisVerderAntwoord": [
+  [
+   "tight",
+   "\"Schoolblad bekijken\" × \"Kaart verkleinen\"",
+   "gap 5"
+  ]
+ ],
+ "ipadStaand schrijven": [
+  [
+   "tight",
+   "\"Schoolblad bekijken\" × \"Kaart verkleinen\"",
+   "gap 5"
+  ]
+ ],
+ "ipadStaand schrijvenAntwoord": [],
+ "ipadStaand menu": [],
+ "ipadStaand oefenmenu": [
+  [
+   "tight",
+   "\"Schoolblad bekijken\" × \"Kaart verkleinen\"",
+   "gap 5"
+  ]
+ ],
+ "ipadStaand reisboekje": [],
+ "ipadLiggend home": [],
+ "ipadLiggend reisVerder": [
+  [
+   "tight",
+   "\"Schoolblad bekijken\" × \"Kaart verkleinen\"",
+   "gap 5"
+  ]
+ ],
+ "ipadLiggend reisVerderAntwoord": [
+  [
+   "tight",
+   "\"Schoolblad bekijken\" × \"Kaart verkleinen\"",
+   "gap 5"
+  ]
+ ],
+ "ipadLiggend schrijven": [
+  [
+   "tight",
+   "\"Schoolblad bekijken\" × \"Kaart verkleinen\"",
+   "gap 5"
+  ]
+ ],
+ "ipadLiggend schrijvenAntwoord": [
+  [
+   "tight",
+   "\"Schoolblad bekijken\" × \"Kaart verkleinen\"",
+   "gap 5"
+  ]
+ ],
+ "ipadLiggend menu": [],
+ "ipadLiggend oefenmenu": [
+  [
+   "tight",
+   "\"Schoolblad bekijken\" × \"Kaart verkleinen\"",
+   "gap 5"
+  ]
+ ],
+ "ipadLiggend reisboekje": [],
+ "tel390 home": [
+  [
+   "tight",
+   "\"Ontdekken\" × \"Aanwijzen\"",
+   "gap 5"
+  ],
+  [
+   "tight",
+   "\"Aanwijzen\" × \"Namen schrijven\"",
+   "gap 5"
+  ]
+ ],
+ "tel390 reisVerder": [
+  [
+   "tight",
+   "\"Schoolblad bekijken\" × \"Kaart verkleinen\"",
+   "gap 5"
+  ]
+ ],
+ "tel390 reisVerderAntwoord": [
+  [
+   "tight",
+   "\"Schoolblad bekijken\" × \"Kaart verkleinen\"",
+   "gap 5"
+  ]
+ ],
+ "tel390 schrijven": [
+  [
+   "tight",
+   "\"Schoolblad bekijken\" × \"Kaart verkleinen\"",
+   "gap 5"
+  ]
+ ],
+ "tel390 schrijvenAntwoord": [
+  [
+   "tight",
+   "\"Schoolblad bekijken\" × \"Kaart verkleinen\"",
+   "gap 5"
+  ]
+ ],
+ "tel390 menu": [],
+ "tel390 oefenmenu": [
+  [
+   "tight",
+   "\"Schoolblad bekijken\" × \"Kaart verkleinen\"",
+   "gap 5"
+  ]
+ ],
+ "tel390 reisboekje": [],
+ "tel320 home": [
+  [
+   "tight",
+   "\"Ontdekken\" × \"Aanwijzen\"",
+   "gap 5"
+  ],
+  [
+   "tight",
+   "\"Aanwijzen\" × \"Namen schrijven\"",
+   "gap 5"
+  ]
+ ],
+ "tel320 reisVerder": [
+  [
+   "tight",
+   "\"Schoolblad bekijken\" × \"Kaart verkleinen\"",
+   "gap 5"
+  ]
+ ],
+ "tel320 reisVerderAntwoord": [
+  [
+   "tight",
+   "\"Schoolblad bekijken\" × \"Kaart verkleinen\"",
+   "gap 5"
+  ]
+ ],
+ "tel320 schrijven": [
+  [
+   "tight",
+   "\"Schoolblad bekijken\" × \"Kaart verkleinen\"",
+   "gap 5"
+  ]
+ ],
+ "tel320 schrijvenAntwoord": [],
+ "tel320 menu": [],
+ "tel320 oefenmenu": [
+  [
+   "tight",
+   "\"Schoolblad bekijken\" × \"Kaart verkleinen\"",
+   "gap 5"
+  ]
+ ],
+ "tel320 reisboekje": []
+}

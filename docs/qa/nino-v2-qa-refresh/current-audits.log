@@ -1,0 +1,6 @@
+
+> topo-italie-baseline@0.1.0 audit:release-1-2
+> node scripts/audit-release-1-2.mjs
+
+Source audit PASS: immutable engines/art/44 targets, exact approved Apennines/UI exceptions, fresh print and idempotent offline builds
+PASS exact source, engine, geometry, resolver/grading and standalone preservation; 35709206 bytes; SHA256 352ddd742436ac4f5a5a8a82374f742788952219e42b47d87d83536319183d53

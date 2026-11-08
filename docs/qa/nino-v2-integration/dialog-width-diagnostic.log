@@ -1,0 +1,22 @@
+[
+  {
+    tag: 'bookFinalGold',
+    width: 242,
+    maxWidth: '100%',
+    padding: '0px'
+  },
+  {
+    tag: 'folioWriting',
+    width: 266,
+    maxWidth: 'none',
+    padding: '12px'
+  },
+  {
+    tag: 'bookPage illustratedFolio',
+    width: 302,
+    maxWidth: '543px',
+    padding: '28px 18px'
+  },
+  { tag: 'bookSpread', width: 302, maxWidth: 'none', padding: '0px' },
+  { tag: 'travelBook', width: 304, maxWidth: '304px', padding: '0px' }
+]

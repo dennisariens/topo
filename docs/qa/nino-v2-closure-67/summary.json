@@ -1,0 +1,95 @@
+{
+  "verdict": "GO FOR INDEPENDENT QA \u2014 bounded export and favicon delivery, not final approval",
+  "base": "1bf86b3e1c69319bed8ef877243070a64d97a12e",
+  "inventoryRows": 239,
+  "deliveryArtworkFiles": 56,
+  "sourcePreservingExports": 30,
+  "veneziaAdditionalFiles": 4,
+  "candidate": {
+    "path": "output/html/TOPO-NINO-Computer-Release.html",
+    "bytes": 3156792,
+    "sha256": "3203f1b4cd9b72b60ed5301fdeafc9fd59988d1b12fb75ce22902b130b50b635"
+  },
+  "commands": [
+    {
+      "command": [
+        "npm",
+        "run",
+        "lint"
+      ],
+      "exit_code": 0,
+      "log": "lint-delivery.log"
+    },
+    {
+      "command": [
+        "npm",
+        "test"
+      ],
+      "exit_code": 0,
+      "log": "test-delivery.log"
+    },
+    {
+      "command": [
+        "npm",
+        "run",
+        "audit:release-1-2"
+      ],
+      "exit_code": 0,
+      "log": "release-audit-delivery.log"
+    },
+    {
+      "command": [
+        "node",
+        "scripts/audit-map-picker-revision.mjs"
+      ],
+      "exit_code": 0,
+      "log": "map-audit-delivery.log"
+    }
+  ],
+  "build": {
+    "command": [
+      "npm",
+      "run",
+      "build"
+    ],
+    "exit_code": 0,
+    "log": "build-complete.log"
+  },
+  "browser": {
+    "command": "PLAYWRIGHT_MODULE=<installed Playwright> CHROME_PATH=<installed Chrome> node scripts/qa-nino-artwork-67.mjs",
+    "exit_code": 0,
+    "version": "156.0.8078.74",
+    "assetChecks": 66,
+    "externalRequests": 0,
+    "pageAndConsoleErrors": 0,
+    "viewports": [
+      [
+        1500,
+        1000
+      ],
+      [
+        800,
+        900
+      ]
+    ],
+    "eightSlicesOnePizza": true,
+    "threePizzasOneTrip": true
+  },
+  "remaining": [
+    "Independent exact-SHA review, not self-approved",
+    "Owner folio resolution exception",
+    "Owner/reference acceptance of reconstructed Venezia edge; original reviewed matte path not provided",
+    "Passport/chapter/postcard runtime integration pending; absent in PR61",
+    "Native Safari/OS favicon cache/device acceptance untested"
+  ],
+  "stopConditionsRespected": [
+    "No approved master overwritten",
+    "No new essential illustration",
+    "No save/reward/learning/geography change",
+    "No merge/deployment/published-download replacement"
+  ],
+  "originalRuntimeArtIncluded": [
+    "output/art/nino-op-de-scooter.webp",
+    "output/art/topo-italie-avontuur.webp"
+  ]
+}

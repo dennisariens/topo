@@ -1,0 +1,11 @@
+✔ playable journey exposes all eleven ordered stops, and every book interior uses real folios (5063.141417ms)
+✔ iPad portrait reads a single page; stamps and Gold are projections of real completion state (4254.86275ms)
+✔ reward presentation survives result-screen removal and cannot become detached from the active lesson (5137.62275ms)
+ℹ tests 3
+ℹ suites 0
+ℹ pass 3
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 15395.337708

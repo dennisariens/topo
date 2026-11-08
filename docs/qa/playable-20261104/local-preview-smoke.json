@@ -1,0 +1,17 @@
+{
+  "url": "http://127.0.0.1:8071/NINO-2-Proefversie-2026-11-04.html",
+  "status": "PASS",
+  "widths": [
+    1500,
+    320
+  ],
+  "errors": [],
+  "requests": [
+    "http://127.0.0.1:8071/NINO-2-Proefversie-2026-11-04.html",
+    "http://127.0.0.1:8071/NINO-2-Proefversie-2026-11-04.html"
+  ],
+  "httpStatus": 200,
+  "contentType": "text/html",
+  "servedBytes": 40999720,
+  "servedSha256": "933931eb67a347948a270da7aa912bfc48ee3cba420c72fbe7d02e34c93d4a35"
+}

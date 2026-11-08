@@ -1,0 +1,49 @@
+
+> topo-italie-baseline@0.1.0 build
+> node scripts/build.mjs
+
+Semantic map tap resolver embedded; original SVG geometry and engines retained
+Original schoolblad overlay embedded; no external assets
+Embedded six byte-verified owner WebPs; no external runtime assets
+Six background lakes generated from pinned Natural Earth polygons (no simplification)
+Discovery atlas embedded: pinned DEM, live two-choice utility, no external runtime dependency
+Focus Mode embedded: original input, visual viewport sheet, one unchanged map; fully offline
+Embedded pinned PR65 micro favicons; no external icon requests
+Static preview generated from canonical 45 places
+Generated print.html from 45 current worksheet items and 12 groups
+file:///Users/dennisariens/projects/nino-v2-integration/scripts/embed-nino-v2.mjs:7
+ function add(key,path){const row=rows.find(r=>r.path===path);if(!row||!row.delivery_present)throw Error('Missing delivered art '+path);const b=read(path);if(createHash('sha256').update(b).digest('hex')!==row.sha256)throw Error('Art changed '+path);assets[key]={path,sha256:row.sha256,width:row.dimensions[0],height:row.dimensions[1],src:'data:image/webp;base64,'+b.toString('base64')};}
+                                                                                                   ^
+
+Error: Missing delivered art assets/nino/chapter-icons/exports/chapter-01-steden-1-6.webp
+    at add (file:///Users/dennisariens/projects/nino-v2-integration/scripts/embed-nino-v2.mjs:7:100)
+    at file:///Users/dennisariens/projects/nino-v2-integration/scripts/embed-nino-v2.mjs:9:144
+    at Array.forEach (<anonymous>)
+    at file:///Users/dennisariens/projects/nino-v2-integration/scripts/embed-nino-v2.mjs:9:129
+    at ModuleJob.run (node:internal/modules/esm/module_job:437:25)
+    at async node:internal/modules/esm/loader:639:26
+    at async asyncRunEntryPointWithESMLoader (node:internal/modules/run_main:101:5)
+
+Node.js v24.15.0
+node:internal/errors:985
+  const err = new Error(message);
+              ^
+
+Error: Command failed: /Users/dennisariens/.npm/_npx/1c56de6e9acc34f8/node_modules/node/bin/node /Users/dennisariens/projects/nino-v2-integration/scripts/embed-nino-v2.mjs
+    at genericNodeError (node:internal/errors:985:15)
+    at wrappedFn (node:internal/errors:539:14)
+    at checkExecSyncError (node:child_process:925:11)
+    at execFileSync (node:child_process:961:15)
+    at file:///Users/dennisariens/projects/nino-v2-integration/scripts/build.mjs:20:1
+    at ModuleJob.run (node:internal/modules/esm/module_job:437:25)
+    at async node:internal/modules/esm/loader:639:26
+    at async asyncRunEntryPointWithESMLoader (node:internal/modules/run_main:101:5) {
+  status: 1,
+  signal: null,
+  output: [ null, null, null ],
+  pid: 25801,
+  stdout: null,
+  stderr: null
+}
+
+Node.js v24.15.0

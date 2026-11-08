@@ -1,0 +1,189 @@
+{
+  "source_file": "top_down_studio_style_isolated_food_product_image.png",
+  "source_sha256": "309ac90d1eaba388ced3dbabcdb18064f8ccd65cc60da340f1dcff6d6ff8a045",
+  "original_dimensions": [
+    1265,
+    1244
+  ],
+  "radial_center": [
+    634,
+    594
+  ],
+  "angular_definition": "Sectors 01..08 begin at 12 o'clock and advance clockwise in 45-degree increments; nonoverlapping integer-pixel masks",
+  "files": [
+    {
+      "slice": 1,
+      "filename": "pizza-salami-slice-01.png",
+      "pixel_origin": [
+        622,
+        3
+      ],
+      "full_canvas_filename": "pizza-salami-slice-01-aligned.png",
+      "crop_size": [
+        553,
+        604
+      ],
+      "alpha_bbox": [
+        634,
+        15,
+        1163,
+        595
+      ],
+      "sha256": "bf317ab4847763b848cb96e5db6afacf4a01d0ebd59724569e866c8536683933"
+    },
+    {
+      "slice": 2,
+      "filename": "pizza-salami-slice-02.png",
+      "pixel_origin": [
+        623,
+        9
+      ],
+      "full_canvas_filename": "pizza-salami-slice-02-aligned.png",
+      "crop_size": [
+        642,
+        597
+      ],
+      "alpha_bbox": [
+        635,
+        21,
+        1264,
+        594
+      ],
+      "sha256": "7daabde8b2aa05dcb4729fe23d112d988f5c4e000141b3e1238a781497f2d8a7"
+    },
+    {
+      "slice": 3,
+      "filename": "pizza-salami-slice-03.png",
+      "pixel_origin": [
+        623,
+        582
+      ],
+      "full_canvas_filename": "pizza-salami-slice-03-aligned.png",
+      "crop_size": [
+        642,
+        599
+      ],
+      "alpha_bbox": [
+        635,
+        594,
+        1264,
+        1169
+      ],
+      "sha256": "7b9ea474f2c42cd31c1efad7363f6e140e74d0aad5513ed70c0c0982cfff50b5"
+    },
+    {
+      "slice": 4,
+      "filename": "pizza-salami-slice-04.png",
+      "pixel_origin": [
+        623,
+        583
+      ],
+      "full_canvas_filename": "pizza-salami-slice-04-aligned.png",
+      "crop_size": [
+        589,
+        661
+      ],
+      "alpha_bbox": [
+        635,
+        595,
+        1200,
+        1244
+      ],
+      "sha256": "0c4f976883d3c1371b29c98e31bbe87375dd6e213f8bbebe62f58db20b75038a"
+    },
+    {
+      "slice": 5,
+      "filename": "pizza-salami-slice-05.png",
+      "pixel_origin": [
+        17,
+        583
+      ],
+      "full_canvas_filename": "pizza-salami-slice-05-aligned.png",
+      "crop_size": [
+        630,
+        661
+      ],
+      "alpha_bbox": [
+        29,
+        595,
+        635,
+        1244
+      ],
+      "sha256": "6fe0e909b7e05b9e0d006ad78983fe63e1180c18e7e2d32d93ed41ba94632f50"
+    },
+    {
+      "slice": 6,
+      "filename": "pizza-salami-slice-06.png",
+      "pixel_origin": [
+        0,
+        583
+      ],
+      "full_canvas_filename": "pizza-salami-slice-06-aligned.png",
+      "crop_size": [
+        646,
+        560
+      ],
+      "alpha_bbox": [
+        0,
+        595,
+        634,
+        1131
+      ],
+      "sha256": "32f0723fd648fb6b4c1ff7a0ac789e66fde11e8334be4d790a55db8fa8d3c5e3"
+    },
+    {
+      "slice": 7,
+      "filename": "pizza-salami-slice-07.png",
+      "pixel_origin": [
+        0,
+        26
+      ],
+      "full_canvas_filename": "pizza-salami-slice-07-aligned.png",
+      "crop_size": [
+        646,
+        581
+      ],
+      "alpha_bbox": [
+        0,
+        38,
+        634,
+        595
+      ],
+      "sha256": "d85070ff2df66d65ef42fc3f4e573f9dae6162868b67fdb57faf9ca31cf2a462"
+    },
+    {
+      "slice": 8,
+      "filename": "pizza-salami-slice-08.png",
+      "pixel_origin": [
+        165,
+        3
+      ],
+      "full_canvas_filename": "pizza-salami-slice-08-aligned.png",
+      "crop_size": [
+        481,
+        603
+      ],
+      "alpha_bbox": [
+        177,
+        15,
+        634,
+        594
+      ],
+      "sha256": "96f9e3a2e2a8f840195ac75cc716b82b86b9a9e3a71f75fc58af78c93117ec3d"
+    }
+  ],
+  "verification": {
+    "all_original_RGBA_pixels_reconstructed_exactly": true,
+    "maximum_channel_difference": 0,
+    "missing_pixels": 0,
+    "overlapping_sector_pixels": 0
+  },
+  "icon": {
+    "filename": "pizza-salami-slice-icon.png",
+    "size": [
+      512,
+      512
+    ],
+    "source": "exact slice 01; scaled for icon legibility (no re-render)"
+  }
+}

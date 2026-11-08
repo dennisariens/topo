@@ -1,0 +1,76 @@
+
+> topo-italie-baseline@0.1.0 test
+> node scripts/validate-map.mjs && node scripts/validate-print.mjs && node scripts/learning-engine.test.mjs && node scripts/route-engine.test.mjs && node scripts/exam-flow.test.mjs && node scripts/ui-smoke.test.mjs && node scripts/route-dom.test.mjs && node scripts/work-regression.cjs && node scripts/release-1-dom.test.mjs && node scripts/qa-findings.test.mjs && node scripts/polish.test.mjs && node --test scripts/nino-art.test.mjs && node scripts/geography/lakes.test.mjs && node --test scripts/schoolblad.test.mjs && node --test scripts/discovery-map.test.mjs && node --test scripts/map-hit.test.mjs && node --test scripts/focus-mode.test.mjs
+
+45 content entries, anchors, coastal markers, microstates, selected land checks: OK
+Limit: drawn Italy polygon is not an independent geographic ground truth
+Printable A4 groups, school photo and all 45 worksheet mappings: OK
+Shuffle, coverage, spaced mistake review, legacy migration and Vespa cadence: OK
+Route locks, stages, repair spacing, gold, persistence, rewards and scheduled review: OK
+Finite geography test, point/write grading, scoring, skips and restart: OK
+Full standalone boot and learn/point/write/exam/reset button flow: OK
+All 11 route chapters and gold tests, dock controls, mode switch, resume and reset: OK
+Real HTML DOM: controls, SVG events, reload, atomic rewards, unique IDs, enclave and storage failure: OK
+PASS: JavaScript syntax; 168 correct answers → 21 pizzas / 7 trips; every 8/24 rollover; reload preserves rewards; duplicate answer cannot earn twice.
+PASS: six-question breaks retain full gold coverage; halfway save/restore; daily goal resets independently of lifetime rewards.
+PASS: adaptive six-task session, skill isolation, restore and legacy migration; 27 source-projected locations; 45 geometry/code baselines; fallback matches live coordinates.
+PASS: three-stage migration preserves writing completion; code sessions removed; tests and adaptive rounds use pointing/writing only.
+Legacy saves, skill isolation, round/lifetime scores, neutral keyboard picker, microstate highlights, river tolerance and daily reset: OK
+QA-1: stage/gold replay daily credit, reload/resubmit idempotence and pizza ledger: PASS
+QA-2: 19 malformed imports preserve exact memory/storage before confirmation; valid schemas 1/2 and interrupted/code migrations: PASS
+Release 1.1: eleven icon references/fallback, route disclosures, eight-slice copy, NOW gating and truthful Nino outcomes: PASS
+✔ pure role policy: strict Gold, real success, exam suppression and genuine trip only (1.345135ms)
+✖ all six local exports equal manifest hashes and canonical embedded WebP bytes (1101.390953ms)
+✔ pending scenes/postcards stay locked or empty; missing and failed art falls back safely (643.101747ms)
+✔ canonical engines, geometry, original artwork and print artifacts equal pinned base (991.162492ms)
+✔ DOM grade/resubmit/reload, chapter completion, Gold/replay/miss preserve base progress and rewards (3605.922743ms)
+✔ free practice wrong-only art, exam suppression, and arrival only at real reward threshold (662.368981ms)
+ℹ tests 6
+ℹ suites 0
+ℹ pass 5
+ℹ fail 1
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 7927.810216
+
+✖ failing tests:
+
+test at scripts/nino-art.test.mjs:94:1
+✖ all six local exports equal manifest hashes and canonical embedded WebP bytes (1101.390953ms)
+  AssertionError [ERR_ASSERTION]: Expected values to be strictly deep-equal:
+  + actual - expected
+  
+    [
+      'nino-arrival.webp',
+      'nino-encourage.webp',
+      'nino-gold.webp',
+      'nino-guide.webp',
+  +   'nino-reflect.webp',
+      'nino-success.webp',
+  +   'nino-travel.webp',
+      'nino-welcome.webp',
+  +   'topo-bergen-dolomieten.webp',
+  +   'topo-eilanden-v2.webp',
+  +   'topo-landen-italie-slovenie.webp',
+  +   'topo-rivieren-po.webp',
+  +   'topo-steden-firenze.webp',
+  +   'topo-streken-toscana.webp',
+  +   'topo-vulkanen-etna.webp',
+  +   'topo-zeeen-amalfi.webp'
+    ]
+  
+      at TestContext.<anonymous> (file:///Users/dennisariens/projects/topo-nino-artwork-closure/scripts/nino-art.test.mjs:104:12)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1201:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:831:18)
+      at Test.postRun (node:internal/test_runner/test:1330:19)
+      at Test.run (node:internal/test_runner/test:1258:12)
+      at async startSubtestAfterBootstrap (node:internal/test_runner/harness:385:3) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: [ 'nino-arrival.webp', 'nino-encourage.webp', 'nino-gold.webp', 'nino-guide.webp', 'nino-reflect.webp', 'nino-success.webp', 'nino-travel.webp', 'nino-welcome.webp', 'topo-bergen-dolomieten.webp', 'topo-eilanden-v2.webp', 'topo-landen-italie-slovenie.webp', 'topo-rivieren-po.webp', 'topo-steden-firenze.webp', 'topo-streken-toscana.webp', 'topo-vulkanen-etna.webp', 'topo-zeeen-amalfi.webp' ],
+    expected: [ 'nino-arrival.webp', 'nino-encourage.webp', 'nino-gold.webp', 'nino-guide.webp', 'nino-success.webp', 'nino-welcome.webp' ],
+    operator: 'deepStrictEqual',
+    diff: 'simple'
+  }

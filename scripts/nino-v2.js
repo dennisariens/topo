@@ -195,6 +195,50 @@
  new MutationObserver(update).observe(document.querySelector('.layout'),{attributes:true,attributeFilter:['class']});
  new MutationObserver(update).observe(document.querySelector('#routeCards'),{childList:true});update();
  TopoProfile.setup({art:{welcome:art.welcome.src,scene:document.querySelector('.routeScene>img')?.src,pizzas:{margherita:art.favorite0.src,salami:art.favorite1.src,quattro_formaggi:art.favorite2.src}}});
+ const settings=make('dialog','ninoSettings');
+ settings.setAttribute('aria-labelledby','ninoSettingsTitle');
+ const settingsTitle=make('h2',null,'Instellingen');settingsTitle.id='ninoSettingsTitle';
+ const settingsNote=make('p','ninoSettingsNote');settingsNote.setAttribute('role','status');
+ const settingsClose=action('Sluiten',()=>settings.close());
+ let settingsOrigin;
+ function openSettings(button){
+  settingsOrigin=button;settingsNote.textContent='';settings.showModal();settingsClose.focus();
+ }
+ const settingsButton=action('⚙',()=>openSettings(settingsButton),'ninoSettingsButton');
+ settingsButton.setAttribute('aria-label','Instellingen');settingsButton.title='Instellingen';
+ nav.append(settingsButton);
+ const bookSettings=action('⚙',()=>openSettings(bookSettings),'button ninoBookSettings');
+ bookSettings.setAttribute('aria-label','Instellingen');bookSettings.title='Instellingen';
+ const bookControls=make('div','ninoBookControls');bookControls.append(bookSettings,close);head.append(bookControls);
+ settings.addEventListener('close',()=>{if(dialog.open)renderBook();settingsOrigin?.focus({preventScroll:true});});
+ const settingsHeading=make('div','ninoSettingsHeading');settingsHeading.append(settingsTitle,settingsClose);
+ const actions=make('div','ninoSettingsActions');
+ const backup=make('section','ninoSettingsGroup');backup.append(make('h3',null,'Reservekopie'));
+ for(const id of ['exportProgress','importProgress','backupFile','backupStatus'])backup.append(document.getElementById(id));
+ const resets=make('section','ninoSettingsGroup');resets.append(make('h3',null,'Opnieuw beginnen'));
+ const reset=document.getElementById('resetAll');reset.textContent='Wis voortgang';reset.className='button';reset.type='button';
+ resets.append(reset,make('p',null,'Wist lessen, punten, pizza’s, ritten en stempels. Je profiel blijft staan.'));
+ const clean=action('Begin helemaal opnieuw',()=>{
+  if(!confirm('Wis je voortgang en je Reisboekje-profiel? Daarna begint de kennismaking opnieuw.'))return;
+  let previousIntro;
+  try{
+   previousIntro=localStorage.getItem(INTRO_KEY);
+   localStorage.removeItem(INTRO_KEY);
+   const progress={...progressSnapshot(),good:0,pizzas:0,slices:0,trips:0,mistakes:[],route:TopoRoute.fresh(),daily:{date:localDay(),correct:0}};
+   TopoProfile.commitImport(JSON.stringify(progress),null);
+  }catch{
+   if(previousIntro!==undefined&&previousIntro!==null)try{localStorage.setItem(INTRO_KEY,previousIntro);}catch{}
+   settingsNote.textContent='Opnieuw beginnen lukt niet. Controleer of je browser lokale opslag toestaat.';
+   return;
+  }
+  location.reload();
+ },'button ninoResetDanger');
+ resets.append(clean,make('p',null,'Wist ook je naam en favoriete pizza en start de kennismaking opnieuw.'));
+ const partial=make('details','ninoSettingsGroup');
+ partial.append(make('summary',null,'Alleen een onderdeel wissen'));
+ for(const id of ['resetPizza','routeReset'])partial.append(document.getElementById(id));
+ actions.append(backup,resets,partial);
+ settings.append(settingsHeading,actions,settingsNote);document.body.append(settings);
  // Existing learners keep their lesson/session. Personalization is always available in the book.
  const progressed=state.good>0||state.pizzas>0||state.trips>0||state.route.active||state.slices>0||state.mistakes.length>0||Object.keys(state.route.items).length>0||Object.values(state.route.chapters).some(r=>r.stage>0||r.goldAt>0);
  if(!progressed&&!TopoProfile.current())setTimeout(()=>TopoProfile.open({firstRun:true,onDone:(p,how)=>setIntro(how==='save'?'done':'skipped')}),0);

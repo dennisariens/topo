@@ -1,5 +1,13 @@
 # V2-afsluiting, 8 november 2026
 
+**V2 afgesloten op v2.0.2.** De [definitieve release](https://github.com/dennisariens/topo/releases/tag/v2.0.2) bevat de offline HTML, Mac-DMG en Windows-ZIP met checksums. [PR #80](https://github.com/dennisariens/topo/pull/80) repareert de Mac-launcher en de illustratie op het toetsresultaat. De artworkinventaris hieronder beschrijft v2.0.1 en geldt ook voor het leerling-artwork in v2.0.2.
+
+Hermes controleerde commit `83ec1ce26681ab2fd4811952fd5d442c8dbd53ce`. Het toetsresultaat slaagde in Chrome en WebKit. Finder-installatie en -start slaagden op Apple Silicon met Rosetta. De launcher bevat arm64 en x86_64. Gatekeeper wees de ad hoc ondertekende DMG af. De Finder-test gebruikte een download zonder quarantainemarkering. Een Mac zonder Rosetta en echte Windows-installatie blijven ongetest. Gebruik bij een Mac-blokkade de losse HTML.
+
+De V2-releaselijn blijft `codex/nino-v2-artwork-closure-67`. Ingehaalde PR’s worden alleen gesloten als hun opname in v2.0.2 is geverifieerd. Hun branches en bewijs blijven behouden. Artwork, Harness en [V3 #76](https://github.com/dennisariens/topo/issues/76) behouden hun eigen traject.
+
+## Historische inventaris v2.0.1
+
 **Release:** v2.0.1 is tag `v2.0.1`, commit `36afafa`, met de release-HTML `TOPO-NINO-Computer-Release.html`. Die HTML is byte-identiek aan `index.html` op de tag.
 **Waar staat het:** `main` staat nog op `7e38160`. De V2-lijn loopt via `codex/nino-v2-artwork-closure-67` (#70), waarin #71 en #77 zijn gemerged.
 **Inventaris:** het manifest uit #75 (`docs/qa/nino-v2-closure-67/artwork-manifest.json` op `5976b83`, 268 regels), naast elkaar gelegd met de tree en de HTML van v2.0.1.

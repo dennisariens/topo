@@ -16,7 +16,7 @@ if(!process.argv.includes('--remove')){
  add('venezia',prefix+'postcards/exports/postcard-04-venezia-scalloped-tight.webp');
  for(const side of ['left','right'])add('folio'+side,prefix+'book/exports/passport-blank-folio-'+side+'-alpha-normalized.webp');
  // Bounded native folios and the verified PR70 reconstructed contour; final owner acceptance remains separate.
- html=html.replace('</head>','<style>/* BEGIN NINO V2 CSS */'+read('scripts/nino-v2.css')+read('scripts/nino-profile.css')+read('scripts/nino-moments.css')+'/* END NINO V2 CSS */</style></head>');
- const end=html.lastIndexOf('</script>');html=html.slice(0,end)+'// BEGIN NINO V2\nconst NINO_V2_ART='+JSON.stringify(assets)+';\n'+read('scripts/nino-profile.js')+read('scripts/nino-v2.js')+read('scripts/nino-moments.js')+'// END NINO V2\n'+html.slice(end);
+ html=html.replace('</head>','<style>/* BEGIN NINO V2 CSS */'+read('scripts/nino-v2.css')+read('scripts/nino-profile.css')+read('scripts/nino-moments.css')+read('scripts/nino-exam-result.css')+'/* END NINO V2 CSS */</style></head>');
+ const end=html.lastIndexOf('</script>');html=html.slice(0,end)+'// BEGIN NINO V2\nconst NINO_V2_ART='+JSON.stringify(assets)+';\n'+read('scripts/nino-profile.js')+read('scripts/nino-v2.js')+read('scripts/nino-moments.js')+read('scripts/nino-exam-result.js')+'// END NINO V2\n'+html.slice(end);
 }
 writeFileSync(file,html);

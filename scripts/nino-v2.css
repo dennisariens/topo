@@ -94,3 +94,19 @@ body #focusLearnBar #learnNext{font-size:14px;padding:8px 14px}
 body.ninoGoldRound #focusLessonStatus{display:none!important}
 /* The answer sheet hides extra #quiz children with id-weighted :not() selectors; the gold label must stay. */
 #focusAnswerSheet#focusAnswerSheet #quiz#quiz>#ninoGoldHead#ninoGoldHead:not([hidden]){display:flex!important;margin:0 0 6px}
+
+/* Global settings, including when the Reisboekje is open. */
+.ninoNav .ninoSettingsButton{flex:0 0 44px;min-width:44px;font-size:22px;background:#f6eedf}
+.ninoBookControls{display:flex;align-items:center;gap:8px}
+.travelBook .ninoBookSettings{min-width:44px;padding-inline:8px;background:#f6e9cc}
+.ninoSettings{box-sizing:border-box;width:min(510px,calc(100% - 24px));max-height:calc(100dvh - 24px);overflow:auto;border:1px solid #ded0b5;border-radius:24px;padding:clamp(14px,4vw,26px);background:#fff8e9;color:#193f36;box-shadow:0 18px 64px #153d3455}
+.ninoSettings::backdrop{background:#153d34b5}
+.ninoSettingsHeading{display:flex;align-items:center;justify-content:space-between;gap:10px}
+.ninoSettingsHeading h2{margin:0;font-size:clamp(23px,5vw,29px)}
+.ninoSettingsGroup{display:grid;gap:8px;margin:16px 0;padding:0}
+.ninoSettingsGroup h3,.ninoSettingsGroup p{margin:0}
+.ninoSettingsGroup p{font-size:14px}
+.ninoSettings button{min-height:44px}
+.ninoSettings #backupFile,.backupTools:has(> strong:only-child){display:none}
+.ninoSettings .ninoResetDanger{color:#8f3020;border-color:#ad624e}
+.ninoSettingsNote:empty{display:none}

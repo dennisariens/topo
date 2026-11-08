@@ -619,6 +619,22 @@ body #focusLearnBar #learnNext{font-size:14px;padding:8px 14px}
 body.ninoGoldRound #focusLessonStatus{display:none!important}
 /* The answer sheet hides extra #quiz children with id-weighted :not() selectors; the gold label must stay. */
 #focusAnswerSheet#focusAnswerSheet #quiz#quiz>#ninoGoldHead#ninoGoldHead:not([hidden]){display:flex!important;margin:0 0 6px}
+
+/* Global settings, including when the Reisboekje is open. */
+.ninoNav .ninoSettingsButton{flex:0 0 44px;min-width:44px;font-size:22px;background:#f6eedf}
+.ninoBookControls{display:flex;align-items:center;gap:8px}
+.travelBook .ninoBookSettings{min-width:44px;padding-inline:8px;background:#f6e9cc}
+.ninoSettings{box-sizing:border-box;width:min(510px,calc(100% - 24px));max-height:calc(100dvh - 24px);overflow:auto;border:1px solid #ded0b5;border-radius:24px;padding:clamp(14px,4vw,26px);background:#fff8e9;color:#193f36;box-shadow:0 18px 64px #153d3455}
+.ninoSettings::backdrop{background:#153d34b5}
+.ninoSettingsHeading{display:flex;align-items:center;justify-content:space-between;gap:10px}
+.ninoSettingsHeading h2{margin:0;font-size:clamp(23px,5vw,29px)}
+.ninoSettingsGroup{display:grid;gap:8px;margin:16px 0;padding:0}
+.ninoSettingsGroup h3,.ninoSettingsGroup p{margin:0}
+.ninoSettingsGroup p{font-size:14px}
+.ninoSettings button{min-height:44px}
+.ninoSettings #backupFile,.backupTools:has(> strong:only-child){display:none}
+.ninoSettings .ninoResetDanger{color:#8f3020;border-color:#ad624e}
+.ninoSettingsNote:empty{display:none}
 .ninoProfile{box-sizing:border-box;width:min(560px,calc(100vw - 24px));max-height:calc(100dvh - 16px);overflow:auto;border:0;border-radius:24px;background:#fff8e8;color:#183b3a;padding:0;box-shadow:0 24px 90px #132f3a66}.ninoProfile::backdrop{background:#123c3fa6}.ninoProfile form{margin:0;padding:18px 22px 20px}.ninoProfile h2{font-size:24px;line-height:1.15;letter-spacing:-.02em;margin:0}.ninoProfile p{line-height:1.45;margin:6px 0 0}
 .profileBubble{position:relative;background:#fffdf6;border-radius:18px;padding:12px 16px;box-shadow:0 4px 16px #33291a33}
 .ninoFirstRun form{padding:0 0 18px}.ninoFirstRun form>*:not(.profileScene){margin-left:22px;margin-right:22px}
@@ -784,6 +800,19 @@ body[data-focus-shell="true"]>header{height:44px;min-height:44px}
 /* Tilted stamps and cards keep their corners inside the page. */
 .stampArt{width:94%;margin-inline:auto}.postcardFace{margin-inline:3%}
 @media (max-width:360px){.folioWriting .bookPortrait{width:42%}}
+.ninoExamResult{box-sizing:border-box;width:min(480px,calc(100% - 24px));max-height:calc(100dvh - 24px);overflow:auto;border:1px solid #ded0b5;border-radius:24px;padding:clamp(14px,4vw,28px);background:#fff8e9;color:#193f36;box-shadow:0 18px 64px #153d3455;text-align:center}
+.ninoExamResult::backdrop{background:#153d34b5}
+.ninoExamResult h2{margin:0;font-size:clamp(25px,6vw,33px)}
+.ninoExamResult .examArt{height:min(142px,20dvh);margin:10px auto}
+.ninoExamResult .examArt img{height:100%;width:100%;object-fit:contain}
+.ninoExamResult .examScore{display:block;font-size:clamp(34px,9vw,54px);line-height:1.05;font-weight:800;letter-spacing:-.045em}
+.ninoExamResult p{margin:9px 0;line-height:1.4}
+.ninoExamResult .examActions{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px;margin-top:14px}
+.ninoExamResult .examActions :is(button,a){display:flex;align-items:center;justify-content:center;min-height:44px;padding:8px;border-radius:12px;border:1px solid #d7cbb4;background:#fffcf5;color:#193f36;font:inherit;font-weight:700;text-decoration:none}
+.ninoExamResult .examActions .examDone{grid-column:1/-1;background:#a9432c;border-color:#a9432c;color:white}
+.ninoExamResult [hidden]{display:none!important}
+.ninoExamResult textarea{display:block;width:100%;box-sizing:border-box;min-height:75px;margin-top:8px;font:inherit}
+.ninoExamResult :focus-visible{outline:3px solid #087887;outline-offset:2px}
 /* END NINO V2 CSS */</style></head><body>
 <header><div class="brandWrap"><div class="brandMark" aria-hidden="true"></div><div class="brand"><small>Ontdek · onthoud · herhaal</small>TOPO / ITALIË</div></div><div class="stats"><div class="stat">Goed<strong id="good">0</strong></div><div class="stat">Reeks<strong id="streak">0</strong></div><div class="stat">Pizza's<strong id="pizzas">0</strong></div></div></header><div id="vespaTripToast" class="vespaTripToast hidden" aria-hidden="true"><div class="ninoTrip" aria-hidden="true"></div><strong id="vespaTripText"></strong></div>
 <svg id="topoIconSprite" aria-hidden="true" focusable="false" width="0" height="0" style="position:absolute;overflow:hidden"><defs>
@@ -2747,6 +2776,47 @@ const NINO_V2_ART={"cover":{"path":"assets/nino/travel-passport/book/exports/pas
  new MutationObserver(update).observe(document.querySelector('.layout'),{attributes:true,attributeFilter:['class']});
  new MutationObserver(update).observe(document.querySelector('#routeCards'),{childList:true});update();
  TopoProfile.setup({art:{welcome:art.welcome.src,scene:document.querySelector('.routeScene>img')?.src,pizzas:{margherita:art.favorite0.src,salami:art.favorite1.src,quattro_formaggi:art.favorite2.src}}});
+ const settings=make('dialog','ninoSettings');
+ settings.setAttribute('aria-labelledby','ninoSettingsTitle');
+ const settingsTitle=make('h2',null,'Instellingen');settingsTitle.id='ninoSettingsTitle';
+ const settingsNote=make('p','ninoSettingsNote');settingsNote.setAttribute('role','status');
+ const settingsClose=action('Sluiten',()=>settings.close());
+ let settingsOrigin;
+ function openSettings(button){
+  settingsOrigin=button;settingsNote.textContent='';settings.showModal();settingsClose.focus();
+ }
+ const settingsButton=action('⚙',()=>openSettings(settingsButton),'ninoSettingsButton');
+ settingsButton.setAttribute('aria-label','Instellingen');settingsButton.title='Instellingen';
+ nav.append(settingsButton);
+ const bookSettings=action('⚙',()=>openSettings(bookSettings),'button ninoBookSettings');
+ bookSettings.setAttribute('aria-label','Instellingen');bookSettings.title='Instellingen';
+ const bookControls=make('div','ninoBookControls');bookControls.append(bookSettings,close);head.append(bookControls);
+ settings.addEventListener('close',()=>{if(dialog.open)renderBook();settingsOrigin?.focus({preventScroll:true});});
+ const settingsHeading=make('div','ninoSettingsHeading');settingsHeading.append(settingsTitle,settingsClose);
+ const actions=make('div','ninoSettingsActions');
+ const backup=make('section','ninoSettingsGroup');backup.append(make('h3',null,'Reservekopie'));
+ for(const id of ['exportProgress','importProgress','backupFile','backupStatus'])backup.append(document.getElementById(id));
+ const resets=make('section','ninoSettingsGroup');resets.append(make('h3',null,'Opnieuw beginnen'));
+ const reset=document.getElementById('resetAll');reset.textContent='Wis voortgang';reset.className='button';reset.type='button';
+ resets.append(reset,make('p',null,'Wist lessen, punten, pizza’s, ritten en stempels. Je profiel blijft staan.'));
+ const clean=action('Begin helemaal opnieuw',()=>{
+  if(!confirm('Wis je voortgang en je Reisboekje-profiel? Daarna begint de kennismaking opnieuw.'))return;
+  let previousIntro;
+  try{
+   previousIntro=localStorage.getItem(INTRO_KEY);
+   localStorage.removeItem(INTRO_KEY);
+   const progress={...progressSnapshot(),good:0,pizzas:0,slices:0,trips:0,mistakes:[],route:TopoRoute.fresh(),daily:{date:localDay(),correct:0}};
+   TopoProfile.commitImport(JSON.stringify(progress),null);
+  }catch{
+   if(previousIntro!==undefined&&previousIntro!==null)try{localStorage.setItem(INTRO_KEY,previousIntro);}catch{}
+   settingsNote.textContent='Opnieuw beginnen lukt niet. Controleer of je browser lokale opslag toestaat.';
+   return;
+  }
+  location.reload();
+ },'button ninoResetDanger');
+ resets.append(clean,make('p',null,'Wist ook je naam en favoriete pizza en start de kennismaking opnieuw.'));
+ actions.append(backup,resets);
+ settings.append(settingsHeading,actions,settingsNote);document.body.append(settings);
  // Existing learners keep their lesson/session. Personalization is always available in the book.
  const progressed=state.good>0||state.pizzas>0||state.trips>0||state.route.active||state.slices>0||state.mistakes.length>0||Object.keys(state.route.items).length>0||Object.values(state.route.chapters).some(r=>r.stage>0||r.goldAt>0);
  if(!progressed&&!TopoProfile.current())setTimeout(()=>TopoProfile.open({firstRun:true,onDone:(p,how)=>setIntro(how==='save'?'done':'skipped')}),0);
@@ -2838,6 +2908,47 @@ const NINO_V2_ART={"cover":{"path":"assets/nino/travel-passport/book/exports/pas
  // Import and reset replace progress: rebase quietly instead of celebrating restored stamps.
  clearRewardCelebrations=function(){saveClear();timers.forEach(clearTimeout);timers=[];if(ride.open)ride.close();current=null;pending.length=0;card?.remove();card=null;known=null;};
  savedRows();renderMeter();placeMeter();
+})();
+(function setupNinoExamResult(){
+ const dialog = document.createElement('dialog');
+ dialog.className = 'ninoExamResult';
+ dialog.setAttribute('aria-labelledby','ninoExamTitle');
+ dialog.innerHTML = '<h2 id="ninoExamTitle">Toets afgerond!</h2><div class="examArt"></div><strong class="examScore"></strong><p class="examGroup"></p><p class="examMessage"></p><div class="examActions"><button type="button" data-share hidden>Deel score</button><a data-email>E-mail score</a><button type="button" data-copy>Kopieer score</button><button type="button" class="examDone">Terug naar resultaat</button></div><p role="status" class="examStatus"></p><textarea readonly hidden aria-label="Scoretekst"></textarea>';
+ document.body.append(dialog);
+ const find = selector => dialog.querySelector(selector);
+ const note = find('.examStatus'), textBox = find('textarea'), share = find('[data-share]');
+ const email = find('[data-email]'), copy = find('[data-copy]'), done = find('.examDone');
+ let shareText = '';
+ done.onclick = () => dialog.close();
+ dialog.addEventListener('close', () => document.querySelector('#next')?.focus({preventScroll:true}));
+ share.hidden = typeof navigator.share !== 'function';
+ share.onclick = async () => {
+  try { await navigator.share({title:'Mijn NINO-toetsscore',text:shareText}); }
+  catch (error) { if(error.name !== 'AbortError') note.textContent = 'Delen lukt hier niet. Kies E-mail score of Kopieer score.'; }
+ };
+ copy.onclick = async () => {
+  try { await navigator.clipboard.writeText(shareText); note.textContent = 'Score gekopieerd.'; }
+  catch { textBox.hidden = false; textBox.focus(); textBox.select(); note.textContent = 'Kopieer de geselecteerde scoretekst.'; }
+ };
+ function show() {
+  const correct = state.examCorrect, total = state.examTotal;
+  if(!total || correct < 0 || correct > total || dialog.open) return;
+  const group = document.querySelector('#groupSelect')?.selectedOptions[0]?.textContent.trim() || 'Italië';
+  const perfect = correct === total, art = find('.examArt');
+  art.replaceChildren(TopoArt.create(document,{role:perfect?'success':'encourage'},'exam-result'));
+  find('.examScore').textContent = correct+' van '+total+' goed';
+  find('.examGroup').textContent = group;
+  find('.examMessage').textContent = perfect ? 'Bravissimo! Alles goed. Bedankt voor het maken van de toets! — Nino' : 'Goed dat je de toets hebt gemaakt! Oefen de lastige plekken nog eens. A presto! — Nino';
+  shareText = 'Ik heb de NINO-toets Topografie Italië gemaakt.\nOnderwerp: '+group+'\nScore: '+correct+' van '+total+' goed.';
+  email.href = 'mailto:?subject='+encodeURIComponent('Mijn NINO-toetsscore')+'&body='+encodeURIComponent(shareText);
+  textBox.value = shareText;
+  textBox.hidden = true;
+  note.textContent = '';
+  dialog.showModal();
+  done.focus();
+ }
+ const originalFinish = finishExam;
+ finishExam = function(){originalFinish();show();};
 })();
 // END NINO V2
 </script></body></html>

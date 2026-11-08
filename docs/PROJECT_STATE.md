@@ -1,3 +1,7 @@
+# NINO — instellingen en toetsresultaat
+
+Het algemene tandwiel is bereikbaar vanuit Reis, Oefenen en het Reisboekje. Reservekopieën en beide resets staan in dat menu. De gewone toets toont het resultaat, Nino-feedback en deelopties in de offline app. Dit is een updatekandidaat naast de gepubliceerde 2.0.0.
+
 # NINO 2.0: UX-ronde 7 november 2026, ronde 2
 
 Nieuwe speelbare HTML `output/html/NINO-2-Proefversie-2026-11-07-r2.html` (SHA256 `e5265ae7…093ba0`) en een losse ontwerppreview `output/html/NINO-2-Ontwerppreview-2026-11-07-r2.html`. De preview kiest in het geheugen tussen Steden 7–12, Eilanden en Alles vrijgespeeld, en heeft **Speel Vespa-rit af**. Wat er nieuw is:

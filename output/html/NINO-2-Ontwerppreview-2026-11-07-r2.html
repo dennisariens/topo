@@ -2847,7 +2847,10 @@ const NINO_V2_ART={"cover":{"path":"assets/nino/travel-passport/book/exports/pas
   location.reload();
  },'button ninoResetDanger');
  resets.append(clean,make('p',null,'Wist ook je naam en favoriete pizza en start de kennismaking opnieuw.'));
- actions.append(backup,resets);
+ const partial=make('details','ninoSettingsGroup');
+ partial.append(make('summary',null,'Alleen een onderdeel wissen'));
+ for(const id of ['resetPizza','routeReset'])partial.append(document.getElementById(id));
+ actions.append(backup,resets,partial);
  settings.append(settingsHeading,actions,settingsNote);document.body.append(settings);
  // Existing learners keep their lesson/session. Personalization is always available in the book.
  const progressed=state.good>0||state.pizzas>0||state.trips>0||state.route.active||state.slices>0||state.mistakes.length>0||Object.keys(state.route.items).length>0||Object.values(state.route.chapters).some(r=>r.stage>0||r.goldAt>0);

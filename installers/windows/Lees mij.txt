@@ -1,0 +1,3 @@
+Pak de volledige ZIP uit. Dubbelklik op Installeer NINO.cmd.
+NINO staat daarna in het Startmenu en opent in je standaardbrowser.
+Neem bestaande voortgang mee via een reservekopie.

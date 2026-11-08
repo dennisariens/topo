@@ -1,0 +1,9 @@
+@echo off
+setlocal
+set "NINO_PAYLOAD=%~dp0"
+powershell.exe -NoLogo -NoProfile -NonInteractive -Command "$ErrorActionPreference='Stop'; $d=Join-Path $env:LOCALAPPDATA 'TOPO\NINO'; [void](New-Item -ItemType Directory -Force -Path $d); $src=Join-Path $env:NINO_PAYLOAD 'NINO.html'; $sha='{{HTML_SHA256}}'; if ((Get-FileHash -Algorithm SHA256 -LiteralPath $src).Hash -ne $sha) { throw 'Ongeldige NINO-download.' }; $html=Join-Path $d 'NINO.html'; $ico=Join-Path $d 'NINO.ico'; Copy-Item -LiteralPath $src -Destination $html -Force; Copy-Item -LiteralPath (Join-Path $env:NINO_PAYLOAD 'NINO.ico') -Destination $ico -Force; $shell=New-Object -ComObject WScript.Shell; $link=$shell.CreateShortcut((Join-Path ([Environment]::GetFolderPath('Programs')) 'NINO.lnk')); $link.TargetPath=$html; $link.IconLocation=$ico+',0'; $link.WorkingDirectory=$d; $link.Description='NINO {{VERSION}} - Topografie Italie'; $link.Save(); Start-Process -FilePath $html"
+if errorlevel 1 (
+ echo NINO kon niet worden geinstalleerd. Pak de volledige ZIP uit en probeer opnieuw.
+ pause
+ exit /b 1
+)

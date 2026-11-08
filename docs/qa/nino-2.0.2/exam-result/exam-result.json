@@ -1,0 +1,857 @@
+{
+  "route": "Oefenen → Steden 1–6 → Toets → Alleen namen schrijven, 1 fout en 5 goed",
+  "runs": [
+    {
+      "label": "voor-2.0.1",
+      "file": "/private/tmp/claude-501/-Users-dennisariens/a626741c-f5a9-4663-b6a0-bc9217d7222f/scratchpad/r201/TOPO-NINO-Computer-Release.html",
+      "engine": "chrome",
+      "version": "157.0.8103.38",
+      "answers": 6,
+      "correct": 5,
+      "errors": [],
+      "external": [],
+      "sizes": [
+        {
+          "viewport": {
+            "width": 1300,
+            "height": 950
+          },
+          "geometry": {
+            "artBox": {
+              "left": 439,
+              "top": 271.484375,
+              "right": 861,
+              "bottom": 413.484375,
+              "width": 422,
+              "height": 142
+            },
+            "imgBox": {
+              "left": 439,
+              "top": 271.484375,
+              "right": 861,
+              "bottom": 904.28125,
+              "width": 422,
+              "height": 632.796875
+            },
+            "drawn": {
+              "left": 439.00179199218746,
+              "top": 271.484375,
+              "width": 421.996416015625,
+              "height": 632.796875,
+              "right": 860.9982080078125,
+              "bottom": 904.28125
+            },
+            "objectFit": "contain",
+            "naturalRatio": 0.666875,
+            "drawnRatio": 0.666875,
+            "text": {
+              "title": {
+                "left": 439,
+                "top": 213.640625,
+                "right": 861,
+                "bottom": 261.484375,
+                "width": 422,
+                "height": 47.84375
+              },
+              "score": {
+                "left": 439,
+                "top": 423.484375,
+                "right": 861,
+                "bottom": 480.171875,
+                "width": 422,
+                "height": 56.6875
+              },
+              "group": {
+                "left": 439,
+                "top": 489.171875,
+                "right": 861,
+                "bottom": 511.5625,
+                "width": 422,
+                "height": 22.390625
+              },
+              "message": {
+                "left": 439,
+                "top": 520.5625,
+                "right": 861,
+                "bottom": 565.34375,
+                "width": 422,
+                "height": 44.78125
+              },
+              "actions": {
+                "left": 439,
+                "top": 579.34375,
+                "right": 861,
+                "bottom": 727.34375,
+                "width": 422,
+                "height": 148
+              }
+            },
+            "score": "5 van 6 goed",
+            "buttons": [
+              "Deel score",
+              "E-mail score",
+              "Kopieer score",
+              "Terug naar resultaat"
+            ],
+            "runningAnimations": 0,
+            "checks": {
+              "drawnInsideArtBox": false,
+              "imgElementInsideArtBox": false,
+              "aspectKept": true,
+              "overlaps": {
+                "title": false,
+                "score": true,
+                "group": true,
+                "message": true,
+                "actions": true
+              },
+              "noRunningAnimations": true
+            },
+            "pass": false
+          },
+          "screenshot": "voor-2.0.1-chrome-1300.png"
+        },
+        {
+          "viewport": {
+            "width": 768,
+            "height": 1024
+          },
+          "geometry": {
+            "artBox": {
+              "left": 173,
+              "top": 308.484375,
+              "right": 595,
+              "bottom": 450.484375,
+              "width": 422,
+              "height": 142
+            },
+            "imgBox": {
+              "left": 173,
+              "top": 308.484375,
+              "right": 595,
+              "bottom": 941.28125,
+              "width": 422,
+              "height": 632.796875
+            },
+            "drawn": {
+              "left": 173.0017919921875,
+              "top": 308.484375,
+              "width": 421.996416015625,
+              "height": 632.796875,
+              "right": 594.9982080078125,
+              "bottom": 941.28125
+            },
+            "objectFit": "contain",
+            "naturalRatio": 0.666875,
+            "drawnRatio": 0.666875,
+            "text": {
+              "title": {
+                "left": 173,
+                "top": 250.640625,
+                "right": 595,
+                "bottom": 298.484375,
+                "width": 422,
+                "height": 47.84375
+              },
+              "score": {
+                "left": 173,
+                "top": 460.484375,
+                "right": 595,
+                "bottom": 517.171875,
+                "width": 422,
+                "height": 56.6875
+              },
+              "group": {
+                "left": 173,
+                "top": 526.171875,
+                "right": 595,
+                "bottom": 548.5625,
+                "width": 422,
+                "height": 22.390625
+              },
+              "message": {
+                "left": 173,
+                "top": 557.5625,
+                "right": 595,
+                "bottom": 602.34375,
+                "width": 422,
+                "height": 44.78125
+              },
+              "actions": {
+                "left": 173,
+                "top": 616.34375,
+                "right": 595,
+                "bottom": 764.34375,
+                "width": 422,
+                "height": 148
+              }
+            },
+            "score": "5 van 6 goed",
+            "buttons": [
+              "Deel score",
+              "E-mail score",
+              "Kopieer score",
+              "Terug naar resultaat"
+            ],
+            "runningAnimations": 0,
+            "checks": {
+              "drawnInsideArtBox": false,
+              "imgElementInsideArtBox": false,
+              "aspectKept": true,
+              "overlaps": {
+                "title": false,
+                "score": true,
+                "group": true,
+                "message": true,
+                "actions": true
+              },
+              "noRunningAnimations": true
+            },
+            "pass": false
+          },
+          "screenshot": "voor-2.0.1-chrome-768.png"
+        }
+      ],
+      "pass": false
+    },
+    {
+      "label": "voor-2.0.1",
+      "file": "/private/tmp/claude-501/-Users-dennisariens/a626741c-f5a9-4663-b6a0-bc9217d7222f/scratchpad/r201/TOPO-NINO-Computer-Release.html",
+      "engine": "webkit",
+      "version": "27.2",
+      "answers": 6,
+      "correct": 5,
+      "errors": [],
+      "external": [],
+      "sizes": [
+        {
+          "viewport": {
+            "width": 1300,
+            "height": 950
+          },
+          "geometry": {
+            "artBox": {
+              "left": 439,
+              "top": 271.484375,
+              "right": 861,
+              "bottom": 413.484375,
+              "width": 422,
+              "height": 142
+            },
+            "imgBox": {
+              "left": 439,
+              "top": 271.484375,
+              "right": 861,
+              "bottom": 904.28125,
+              "width": 422,
+              "height": 632.796875
+            },
+            "drawn": {
+              "left": 439.00179199218746,
+              "top": 271.484375,
+              "width": 421.996416015625,
+              "height": 632.796875,
+              "right": 860.9982080078125,
+              "bottom": 904.28125
+            },
+            "objectFit": "contain",
+            "naturalRatio": 0.666875,
+            "drawnRatio": 0.666875,
+            "text": {
+              "title": {
+                "left": 439,
+                "top": 213.640625,
+                "right": 861,
+                "bottom": 261.484375,
+                "width": 422,
+                "height": 47.84375
+              },
+              "score": {
+                "left": 439,
+                "top": 423.484375,
+                "right": 861,
+                "bottom": 480.171875,
+                "width": 422,
+                "height": 56.6875
+              },
+              "group": {
+                "left": 439,
+                "top": 489.171875,
+                "right": 861,
+                "bottom": 511.5625,
+                "width": 422,
+                "height": 22.390625
+              },
+              "message": {
+                "left": 439,
+                "top": 520.5625,
+                "right": 861,
+                "bottom": 565.34375,
+                "width": 422,
+                "height": 44.78125
+              },
+              "actions": {
+                "left": 439,
+                "top": 579.34375,
+                "right": 861,
+                "bottom": 727.34375,
+                "width": 422,
+                "height": 148
+              }
+            },
+            "score": "5 van 6 goed",
+            "buttons": [
+              "Deel score",
+              "E-mail score",
+              "Kopieer score",
+              "Terug naar resultaat"
+            ],
+            "runningAnimations": 0,
+            "checks": {
+              "drawnInsideArtBox": false,
+              "imgElementInsideArtBox": false,
+              "aspectKept": true,
+              "overlaps": {
+                "title": false,
+                "score": true,
+                "group": true,
+                "message": true,
+                "actions": true
+              },
+              "noRunningAnimations": true
+            },
+            "pass": false
+          },
+          "screenshot": "voor-2.0.1-webkit-1300.png"
+        },
+        {
+          "viewport": {
+            "width": 768,
+            "height": 1024
+          },
+          "geometry": {
+            "artBox": {
+              "left": 173,
+              "top": 308.484375,
+              "right": 595,
+              "bottom": 450.484375,
+              "width": 422,
+              "height": 142
+            },
+            "imgBox": {
+              "left": 173,
+              "top": 308.484375,
+              "right": 595,
+              "bottom": 941.28125,
+              "width": 422,
+              "height": 632.796875
+            },
+            "drawn": {
+              "left": 173.0017919921875,
+              "top": 308.484375,
+              "width": 421.996416015625,
+              "height": 632.796875,
+              "right": 594.9982080078125,
+              "bottom": 941.28125
+            },
+            "objectFit": "contain",
+            "naturalRatio": 0.666875,
+            "drawnRatio": 0.666875,
+            "text": {
+              "title": {
+                "left": 173,
+                "top": 250.640625,
+                "right": 595,
+                "bottom": 298.484375,
+                "width": 422,
+                "height": 47.84375
+              },
+              "score": {
+                "left": 173,
+                "top": 460.484375,
+                "right": 595,
+                "bottom": 517.171875,
+                "width": 422,
+                "height": 56.6875
+              },
+              "group": {
+                "left": 173,
+                "top": 526.171875,
+                "right": 595,
+                "bottom": 548.5625,
+                "width": 422,
+                "height": 22.390625
+              },
+              "message": {
+                "left": 173,
+                "top": 557.5625,
+                "right": 595,
+                "bottom": 602.34375,
+                "width": 422,
+                "height": 44.78125
+              },
+              "actions": {
+                "left": 173,
+                "top": 616.34375,
+                "right": 595,
+                "bottom": 764.34375,
+                "width": 422,
+                "height": 148
+              }
+            },
+            "score": "5 van 6 goed",
+            "buttons": [
+              "Deel score",
+              "E-mail score",
+              "Kopieer score",
+              "Terug naar resultaat"
+            ],
+            "runningAnimations": 0,
+            "checks": {
+              "drawnInsideArtBox": false,
+              "imgElementInsideArtBox": false,
+              "aspectKept": true,
+              "overlaps": {
+                "title": false,
+                "score": true,
+                "group": true,
+                "message": true,
+                "actions": true
+              },
+              "noRunningAnimations": true
+            },
+            "pass": false
+          },
+          "screenshot": "voor-2.0.1-webkit-768.png"
+        }
+      ],
+      "pass": false
+    },
+    {
+      "label": "na-2.0.2",
+      "file": "/Users/dennisariens/topo-nino-71/output/html/TOPO-NINO-Computer-Release.html",
+      "engine": "chrome",
+      "version": "157.0.8103.38",
+      "answers": 6,
+      "correct": 5,
+      "errors": [],
+      "external": [],
+      "sizes": [
+        {
+          "viewport": {
+            "width": 1300,
+            "height": 950
+          },
+          "geometry": {
+            "artBox": {
+              "left": 439,
+              "top": 271.484375,
+              "right": 861,
+              "bottom": 413.484375,
+              "width": 422,
+              "height": 142
+            },
+            "imgBox": {
+              "left": 439,
+              "top": 271.484375,
+              "right": 861,
+              "bottom": 413.484375,
+              "width": 422,
+              "height": 142
+            },
+            "drawn": {
+              "left": 602.651875,
+              "top": 271.484375,
+              "width": 94.69625,
+              "height": 142,
+              "right": 697.348125,
+              "bottom": 413.484375
+            },
+            "objectFit": "contain",
+            "naturalRatio": 0.666875,
+            "drawnRatio": 0.666875,
+            "text": {
+              "title": {
+                "left": 439,
+                "top": 213.640625,
+                "right": 861,
+                "bottom": 261.484375,
+                "width": 422,
+                "height": 47.84375
+              },
+              "score": {
+                "left": 439,
+                "top": 423.484375,
+                "right": 861,
+                "bottom": 480.171875,
+                "width": 422,
+                "height": 56.6875
+              },
+              "group": {
+                "left": 439,
+                "top": 489.171875,
+                "right": 861,
+                "bottom": 511.5625,
+                "width": 422,
+                "height": 22.390625
+              },
+              "message": {
+                "left": 439,
+                "top": 520.5625,
+                "right": 861,
+                "bottom": 565.34375,
+                "width": 422,
+                "height": 44.78125
+              },
+              "actions": {
+                "left": 439,
+                "top": 579.34375,
+                "right": 861,
+                "bottom": 727.34375,
+                "width": 422,
+                "height": 148
+              }
+            },
+            "score": "5 van 6 goed",
+            "buttons": [
+              "Deel score",
+              "E-mail score",
+              "Kopieer score",
+              "Terug naar resultaat"
+            ],
+            "runningAnimations": 0,
+            "checks": {
+              "drawnInsideArtBox": true,
+              "imgElementInsideArtBox": true,
+              "aspectKept": true,
+              "overlaps": {
+                "title": false,
+                "score": false,
+                "group": false,
+                "message": false,
+                "actions": false
+              },
+              "noRunningAnimations": true
+            },
+            "pass": true
+          },
+          "screenshot": "na-2.0.2-chrome-1300.png"
+        },
+        {
+          "viewport": {
+            "width": 768,
+            "height": 1024
+          },
+          "geometry": {
+            "artBox": {
+              "left": 173,
+              "top": 308.484375,
+              "right": 595,
+              "bottom": 450.484375,
+              "width": 422,
+              "height": 142
+            },
+            "imgBox": {
+              "left": 173,
+              "top": 308.484375,
+              "right": 595,
+              "bottom": 450.484375,
+              "width": 422,
+              "height": 142
+            },
+            "drawn": {
+              "left": 336.651875,
+              "top": 308.484375,
+              "width": 94.69625,
+              "height": 142,
+              "right": 431.34812500000004,
+              "bottom": 450.484375
+            },
+            "objectFit": "contain",
+            "naturalRatio": 0.666875,
+            "drawnRatio": 0.666875,
+            "text": {
+              "title": {
+                "left": 173,
+                "top": 250.640625,
+                "right": 595,
+                "bottom": 298.484375,
+                "width": 422,
+                "height": 47.84375
+              },
+              "score": {
+                "left": 173,
+                "top": 460.484375,
+                "right": 595,
+                "bottom": 517.171875,
+                "width": 422,
+                "height": 56.6875
+              },
+              "group": {
+                "left": 173,
+                "top": 526.171875,
+                "right": 595,
+                "bottom": 548.5625,
+                "width": 422,
+                "height": 22.390625
+              },
+              "message": {
+                "left": 173,
+                "top": 557.5625,
+                "right": 595,
+                "bottom": 602.34375,
+                "width": 422,
+                "height": 44.78125
+              },
+              "actions": {
+                "left": 173,
+                "top": 616.34375,
+                "right": 595,
+                "bottom": 764.34375,
+                "width": 422,
+                "height": 148
+              }
+            },
+            "score": "5 van 6 goed",
+            "buttons": [
+              "Deel score",
+              "E-mail score",
+              "Kopieer score",
+              "Terug naar resultaat"
+            ],
+            "runningAnimations": 0,
+            "checks": {
+              "drawnInsideArtBox": true,
+              "imgElementInsideArtBox": true,
+              "aspectKept": true,
+              "overlaps": {
+                "title": false,
+                "score": false,
+                "group": false,
+                "message": false,
+                "actions": false
+              },
+              "noRunningAnimations": true
+            },
+            "pass": true
+          },
+          "screenshot": "na-2.0.2-chrome-768.png"
+        }
+      ],
+      "pass": true
+    },
+    {
+      "label": "na-2.0.2",
+      "file": "/Users/dennisariens/topo-nino-71/output/html/TOPO-NINO-Computer-Release.html",
+      "engine": "webkit",
+      "version": "27.2",
+      "answers": 6,
+      "correct": 5,
+      "errors": [],
+      "external": [],
+      "sizes": [
+        {
+          "viewport": {
+            "width": 1300,
+            "height": 950
+          },
+          "geometry": {
+            "artBox": {
+              "left": 439,
+              "top": 271.484375,
+              "right": 861,
+              "bottom": 413.484375,
+              "width": 422,
+              "height": 142
+            },
+            "imgBox": {
+              "left": 439,
+              "top": 271.484375,
+              "right": 861,
+              "bottom": 413.484375,
+              "width": 422,
+              "height": 142
+            },
+            "drawn": {
+              "left": 602.651875,
+              "top": 271.484375,
+              "width": 94.69625,
+              "height": 142,
+              "right": 697.348125,
+              "bottom": 413.484375
+            },
+            "objectFit": "contain",
+            "naturalRatio": 0.666875,
+            "drawnRatio": 0.666875,
+            "text": {
+              "title": {
+                "left": 439,
+                "top": 213.640625,
+                "right": 861,
+                "bottom": 261.484375,
+                "width": 422,
+                "height": 47.84375
+              },
+              "score": {
+                "left": 439,
+                "top": 423.484375,
+                "right": 861,
+                "bottom": 480.171875,
+                "width": 422,
+                "height": 56.6875
+              },
+              "group": {
+                "left": 439,
+                "top": 489.171875,
+                "right": 861,
+                "bottom": 511.5625,
+                "width": 422,
+                "height": 22.390625
+              },
+              "message": {
+                "left": 439,
+                "top": 520.5625,
+                "right": 861,
+                "bottom": 565.34375,
+                "width": 422,
+                "height": 44.78125
+              },
+              "actions": {
+                "left": 439,
+                "top": 579.34375,
+                "right": 861,
+                "bottom": 727.34375,
+                "width": 422,
+                "height": 148
+              }
+            },
+            "score": "5 van 6 goed",
+            "buttons": [
+              "Deel score",
+              "E-mail score",
+              "Kopieer score",
+              "Terug naar resultaat"
+            ],
+            "runningAnimations": 0,
+            "checks": {
+              "drawnInsideArtBox": true,
+              "imgElementInsideArtBox": true,
+              "aspectKept": true,
+              "overlaps": {
+                "title": false,
+                "score": false,
+                "group": false,
+                "message": false,
+                "actions": false
+              },
+              "noRunningAnimations": true
+            },
+            "pass": true
+          },
+          "screenshot": "na-2.0.2-webkit-1300.png"
+        },
+        {
+          "viewport": {
+            "width": 768,
+            "height": 1024
+          },
+          "geometry": {
+            "artBox": {
+              "left": 173,
+              "top": 308.484375,
+              "right": 595,
+              "bottom": 450.484375,
+              "width": 422,
+              "height": 142
+            },
+            "imgBox": {
+              "left": 173,
+              "top": 308.484375,
+              "right": 595,
+              "bottom": 450.484375,
+              "width": 422,
+              "height": 142
+            },
+            "drawn": {
+              "left": 336.651875,
+              "top": 308.484375,
+              "width": 94.69625,
+              "height": 142,
+              "right": 431.34812500000004,
+              "bottom": 450.484375
+            },
+            "objectFit": "contain",
+            "naturalRatio": 0.666875,
+            "drawnRatio": 0.666875,
+            "text": {
+              "title": {
+                "left": 173,
+                "top": 250.640625,
+                "right": 595,
+                "bottom": 298.484375,
+                "width": 422,
+                "height": 47.84375
+              },
+              "score": {
+                "left": 173,
+                "top": 460.484375,
+                "right": 595,
+                "bottom": 517.171875,
+                "width": 422,
+                "height": 56.6875
+              },
+              "group": {
+                "left": 173,
+                "top": 526.171875,
+                "right": 595,
+                "bottom": 548.5625,
+                "width": 422,
+                "height": 22.390625
+              },
+              "message": {
+                "left": 173,
+                "top": 557.5625,
+                "right": 595,
+                "bottom": 602.34375,
+                "width": 422,
+                "height": 44.78125
+              },
+              "actions": {
+                "left": 173,
+                "top": 616.34375,
+                "right": 595,
+                "bottom": 764.34375,
+                "width": 422,
+                "height": 148
+              }
+            },
+            "score": "5 van 6 goed",
+            "buttons": [
+              "Deel score",
+              "E-mail score",
+              "Kopieer score",
+              "Terug naar resultaat"
+            ],
+            "runningAnimations": 0,
+            "checks": {
+              "drawnInsideArtBox": true,
+              "imgElementInsideArtBox": true,
+              "aspectKept": true,
+              "overlaps": {
+                "title": false,
+                "score": false,
+                "group": false,
+                "message": false,
+                "actions": false
+              },
+              "noRunningAnimations": true
+            },
+            "pass": true
+          },
+          "screenshot": "na-2.0.2-webkit-768.png"
+        }
+      ],
+      "pass": true
+    }
+  ]
+}

@@ -144,3 +144,20 @@ test('favicon: exactly the owner-supplied NINO N at 16 and 32 px, embedded offli
  assert(!/image\/x-icon|apple-touch-icon|rel="shortcut icon"/.test(html),'no other favicon references');
  for(const old of ['favicon.ico','topo-nino-italy-only-16.png','topo-nino-scooter-italy-32.png'])assert(!html.includes(readFileSync(new URL('../assets/nino/app-icon/micro-v2/'+old,import.meta.url)).toString('base64')),'old icon embedded: '+old);
 });
+
+test('2.0.2 exam result: the illustration is bounded by its own box (browser geometry: qa-nino-202-exam-result.mjs)',async()=>{
+ const css=readFileSync(new URL('nino-exam-result.css',import.meta.url),'utf8');
+ assert.match(css,/\.ninoExamResult \.examArt\{[^}]*overflow:hidden/);assert.match(css,/\.ninoExamResult \.examArt>\.ninoArtSlot\{[^}]*height:100%/);assert.match(css,/\.examArt img\{[^}]*object-fit:contain/);
+ assert(html.includes(css),'the embedded HTML carries the fixed exam-result CSS');
+ // The art slot that TopoArt puts in the box is the element the rule above sizes.
+ const a=boot({storage:{'topo-nino-intro-v1':'done'}});try{await settle();const slot=a.w.TopoArt.create(a.d,{role:'encourage'},'exam-result');
+  assert.equal(slot.tagName,'FIGURE');assert(slot.classList.contains('ninoArtSlot'));assert(slot.querySelector('img'));}finally{a.close()}
+});
+
+test('2.0.2 installers: native Mac launcher, unchanged install script, Windows script pinned to the built HTML',()=>{
+ const c=readFileSync(new URL('../installers/macos/launcher.c',import.meta.url),'utf8'),sh=readFileSync(new URL('../installers/macos/launch.sh',import.meta.url),'utf8');
+ assert.match(c,/execv\("\/bin\/sh"/);assert.match(c,/Resources\/launch\.sh/);assert.match(sh,/^#!\/bin\/sh\n/);assert.match(sh,/--install-only/);
+ const cmd=readFileSync(new URL('../installers/windows/Installeer NINO.cmd.template',import.meta.url),'utf8');
+ assert.equal(cmd.match(/\{\{HTML_SHA256\}\}/g).length,1);assert.equal(cmd.match(/\{\{VERSION\}\}/g).length,1);
+ const pkg=readFileSync(new URL('package-installers.mjs',import.meta.url),'utf8');assert.match(pkg,/'-arch','arm64','-arch','x86_64'/);assert.match(pkg,/installers\/macos\/launcher\.c/);
+});

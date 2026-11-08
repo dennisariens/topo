@@ -1,0 +1,48 @@
+# NINO 2.0.1 Mac-start: reproductie en oorzaak — 8 november 2026, macOS 26.2 (arm64), Mac mini
+
+## 1. Reproductie met de publieke DMG (22:55–22:56, nog zonder Rosetta)
+Publieke DMG via `gh release download v2.0.1`, SHA256 5b1300bd24f57bc29374841341ef5687a8a9afa2216bce2175b6c725fd49b075 (gelijk aan het Hermes-rapport).
+App-pakket: CFBundleExecutable NINO = "POSIX shell script text executable", ad hoc gesigneerd, LSUIElement true, 2.0.1 (201).
+  ditto NINO.app → /Applications/NINO.app
+  open -n /Applications/NINO.app            → _LSOpenURLsWithCompletionHandler() failed with error -10669. (exit 1)
+  Finder: open /Applications/NINO.app        → AppleScript exit 0, maar ~/Library/Application Support/TOPO/NINO/NINO.html ontstaat niet
+  codesign --verify --deep --strict          → valid on disk, satisfies its Designated Requirement
+  spctl --assess --type execute              → rejected (aparte Gatekeeper-waarneming)
+Varianten in een tijdelijke map, telkens `open -n`:
+  v1 publiek pakket                          → -10669
+  v2 publiek pakket zonder LSUIElement       → -10669
+  v3 zelfde bundle, Mach-O universal launcher (installers/macos/launcher.c) → exit 0, NINO.html geïnstalleerd en geopend
+
+## 2. Wat er tijdens die poging gebeurde (bron: /var/log/install.log)
+  2026-11-08 22:56:42+01 mac-mini CoreServicesUIAgent[780]: MiniSoftwareUpdate: using pinning policy for swscan.apple.com: MacSoftwareUpdate (included with OS)
+  2026-11-08 22:56:43+01 mac-mini CoreServicesUIAgent[780]: MiniSoftwareUpdate: using pinning policy for swdist.apple.com: MacSoftwareUpdate (included with OS)
+  2026-11-08 22:56:52+01 mac-mini system_installd[1968]: PackageKit: Adding client PKInstallDaemonClient pid=780, uid=501 (/System/Library/CoreServices/CoreServicesUIAgent.app/Contents/MacOS/CoreService
+  2026-11-08 22:56:52+01 mac-mini CoreServicesUIAgent[780]: PackageKit: Enqueuing install with framework-specified quality of service (utility)
+  2026-11-08 22:56:52+01 mac-mini system_installd[1968]: PackageKit: ----- Begin install -----
+  	    "PKLeopardPackage <id=com.apple.pkg.RosettaUpdateAuto, version=1.0.0.0.1763820096, url=file:///Library/Updates/Rosetta/OnDemand/RosettaUpdateAuto.pkg#RosettaUpdateAuto.pkg>"
+  2026-11-08 22:56:53+01 mac-mini system_installd[1968]: Installed "RosettaUpdateAuto" ()
+CoreServicesUIAgent is het systeemonderdeel dat de dialoog "Rosetta installeren?" toont. De installatie volgde 10 seconden later; die vraagt een bevestiging in die dialoog. De testdriver heeft niets aangeklikt.
+→ Rosetta stond vóór 22:56:52 niet op deze Mac en is daarna wel geïnstalleerd (pkgutil: com.apple.pkg.RosettaUpdateAuto, install-time 1794175013).
+
+## 3. Hoe LaunchServices de bundels registreert (lsregister -dump, nl.topo.nino.offline)
+  lsx/v1.app                             build 201 | ui-element  shell-script  in-temp-dir | forged-arch-priority
+  lsx/v2.app                             build 201 | shell-script  in-temp-dir | forged-arch-priority
+  lsx/v3.app                             build 201 | ui-element  in-temp-dir | 
+  m202/NINO.app                          build 202 | ui-element  launch-disabled  in-temp-dir | 
+  Applications/NINO.app                  build 202 | ui-element | 
+  lsx2/A-publiek.app                     build 201 | ui-element  shell-script  in-temp-dir | forged-arch-priority
+  lsx2/B-zonder-LSUIElement.app          build 201 | shell-script  in-temp-dir | forged-arch-priority
+  lsx2/C-machO-launcher.app              build 201 | ui-element  in-temp-dir | 
+  lsx3/A.app                             build 201 | ui-element  shell-script  in-temp-dir | forged-arch-priority
+Alle script-varianten krijgen `shell-script` en `forged-arch-priority`: LaunchServices kent een script-executable zelf een architectuur toe, en die vraagt hier Rosetta (Intel). Alle Mach-O-varianten (v3, C, 2.0.2) hebben die vlaggen niet.
+
+## 4. Na de Rosetta-installatie (23:02)
+Hetzelfde publieke 2.0.1-pakket in een nieuwe tijdelijke map, drie keer: `open -n` exit 0 en NINO.html geïnstalleerd.
+Daarmee is de 2.0.1-fout op deze Mac niet meer te reproduceren; het verschil met 22:56 is uitsluitend de Rosetta-installatie.
+
+## Oorzaak
+De 2.0.1-app heeft een shellscript als hoofdexecutable. LaunchServices behandelt die als Intel-app. Op Apple Silicon zonder Rosetta start NINO dan niet (-10669) en vraagt macOS om Rosetta te installeren. Hermes' testmachine en deze Mac hadden geen Rosetta; veel nieuwe Macs evenmin.
+2.0.2 gebruikt een native universal (arm64 + x86_64) Mach-O-launcher die het ongewijzigde installatiescript uitvoert. Geen Rosetta nodig.
+
+## Grens van dit bewijs
+De 2.0.2-installatietest (install-2.0.2.log) is gedaan nadat Rosetta al op deze Mac stond. Dat 2.0.2 zonder Rosetta start, blijkt hier uit de registratie (geen shell-script/forged-arch, arm64-slice) en uit v3 vóór 22:56:52, niet uit een nieuwe run op een Mac zonder Rosetta. Rosetta is niet verwijderd om dat te forceren.

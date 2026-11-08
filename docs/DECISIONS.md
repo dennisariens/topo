@@ -246,3 +246,10 @@ Eigenaaropdrachten op PR71.
 ## 2026-11-08 — Instellingen en gewone toets
 
 Reservekopieën en reset horen in het algemene instellingenmenu. Wis voortgang behoudt het Reisboekje-profiel. Begin helemaal opnieuw wist ook het profiel en heropent de kennismaking. De gewone toets deelt onderwerp en score als tekst, met e-mailconcept en kopieeroptie, en gebruikt bestaande Nino-illustraties en feedback. Toetsafronding kent geen nieuwe beloning toe.
+
+## 2026-11-08 — NINO 2.0.2: Mac-launcher en toetsresultaat
+
+- **Mac-launcher.** De Mac-app krijgt een native universal Mach-O-launcher. Het installatiescript blijft ongewijzigd en staat in `Resources/`. Een shellscript als bundle-executable vraagt op Apple Silicon om Rosetta en faalt zonder Rosetta met `-10669`.
+- **Installers in de repo.** De installers worden voortaan in de repo gebouwd (`installers/`, `scripts/package-installers.mjs`). Het Windows-script blijft gepind op de hash van de meegeleverde HTML.
+- **Signering.** Signering blijft ad hoc. Developer ID en notarisatie zijn een apart besluit, omdat daar een Apple Developer-account voor nodig is.
+- **Toetsresultaat.** De illustratie in het toetsresultaat wordt begrensd door haar eigen vlak.

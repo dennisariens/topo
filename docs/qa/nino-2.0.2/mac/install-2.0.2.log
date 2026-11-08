@@ -1,0 +1,33 @@
+# NINO 2.0.2 Mac-installatietest — 2026-11-08 23:00 CET — macOS 26.2 (arm64)
+DMG: c9509400d431da3e8e3c397789911d5f8ac35d8e5ce96291b515711bd8649301  output/installers/NINO-2.0.2-macOS.dmg
+
+## Gekopieerd via Finder naar /Applications
+  /Applications/NINO.app/Contents/MacOS:
+  total 328
+  drwxr-xr-x  3 dennisariens  admin      96  8 nov. 22:59 .
+  drwxr-xr-x  6 dennisariens  admin     192  8 nov. 22:59 ..
+  -rwxr-xr-x  1 dennisariens  admin  166656  8 nov. 22:59 NINO
+  
+  /Applications/NINO.app/Contents/Resources:
+  total 84240
+  drwxr-xr-x  5 dennisariens  admin       160  8 nov. 22:59 .
+  drwxr-xr-x  6 dennisariens  admin       192  8 nov. 22:59 ..
+  -rwxr-xr-x  1 dennisariens  admin       480  8 nov. 22:59 launch.sh
+  -rw-r--r--  1 dennisariens  admin  41445845  8 nov. 22:59 NINO.html
+  -rw-r--r--  1 dennisariens  admin   1679166  8 nov. 22:59 Nino.icns
+
+## 1. Normale start via Finder (open)
+  Finder exit 0
+  geïnstalleerde HTML: 3aced3c31259011b0af2947c78f71965cb4beb2e88c69d1663e61792b0304f5a
+
+## 2. LaunchServices: open -n /Applications/NINO.app (zelfde route die in 2.0.1 -10669 gaf)
+  open exit 0
+
+## 3. Handtekening en Gatekeeper (aparte waarneming, niets omzeild)
+  /Applications/NINO.app: valid on disk
+  /Applications/NINO.app: satisfies its Designated Requirement
+  CodeDirectory v=20400 size=333 flags=0x2(adhoc) hashes=4+3 location=embedded
+  Signature=adhoc
+  TeamIdentifier=not set
+  /Applications/NINO.app: rejected
+  Code-signing identiteiten op deze Mac:      0 valid identities found

@@ -11,3 +11,8 @@
 .ninoExamResult [hidden]{display:none!important}
 .ninoExamResult textarea{display:block;width:100%;box-sizing:border-box;min-height:75px;margin-top:8px;font:inherit}
 .ninoExamResult :focus-visible{outline:3px solid #087887;outline-offset:2px}
+/* 2.0.2: the illustration stays inside its own box. TopoArt returns a <figure class="ninoArtSlot"> without a height,
+   so img{height:100%} fell back to its natural height (about 633px) and ran under the score, message and actions. */
+.ninoExamResult .examArt{display:flex;align-items:center;justify-content:center;overflow:hidden;contain:paint}
+.ninoExamResult .examArt>.ninoArtSlot{width:100%;height:100%;max-width:100%;max-height:100%;margin:0}
+.ninoExamResult .examArt img{max-width:100%;max-height:100%;object-fit:contain}

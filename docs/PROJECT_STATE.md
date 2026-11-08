@@ -1,3 +1,14 @@
+# NINO 2.0.2 — kandidaat (niet gepubliceerd)
+
+Patch op v2.0.1 voor twee Hermes-bevindingen.
+
+- **Mac:** de app startte niet zonder Rosetta. Oorzaak: een shellscript als hoofdexecutable. De executable is nu een native universal launcher.
+- **Toetsresultaat:** de illustratie bleef niet in haar vlak. Ze is nu begrensd, met behoud van de beeldverhouding.
+- **Installers:** de DMG en de Windows-ZIP worden nu reproduceerbaar gebouwd met `scripts/package-installers.mjs`.
+- **Distributie:** normale Mac-distributie vraagt nog een Developer ID en notarisatie. De Windows-installatie is niet getest.
+
+[Bewijs en hercheck](qa/nino-2.0.2/README.md). Publicatie volgt pas na de Hermes-hercheck en het releaseakkoord.
+
 # NINO — instellingen en toetsresultaat
 
 Het algemene tandwiel is bereikbaar vanuit Reis, Oefenen en het Reisboekje. Reservekopieën en beide resets staan in dat menu. De gewone toets toont het resultaat, Nino-feedback en deelopties in de offline app. Dit is een updatekandidaat naast de gepubliceerde 2.0.0.

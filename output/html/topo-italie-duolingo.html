@@ -813,6 +813,11 @@ body[data-focus-shell="true"]>header{height:44px;min-height:44px}
 .ninoExamResult [hidden]{display:none!important}
 .ninoExamResult textarea{display:block;width:100%;box-sizing:border-box;min-height:75px;margin-top:8px;font:inherit}
 .ninoExamResult :focus-visible{outline:3px solid #087887;outline-offset:2px}
+/* 2.0.2: the illustration stays inside its own box. TopoArt returns a <figure class="ninoArtSlot"> without a height,
+   so img{height:100%} fell back to its natural height (about 633px) and ran under the score, message and actions. */
+.ninoExamResult .examArt{display:flex;align-items:center;justify-content:center;overflow:hidden;contain:paint}
+.ninoExamResult .examArt>.ninoArtSlot{width:100%;height:100%;max-width:100%;max-height:100%;margin:0}
+.ninoExamResult .examArt img{max-width:100%;max-height:100%;object-fit:contain}
 /* END NINO V2 CSS */</style></head><body>
 <header><div class="brandWrap"><div class="brandMark" aria-hidden="true"></div><div class="brand"><small>Ontdek · onthoud · herhaal</small>TOPO / ITALIË</div></div><div class="stats"><div class="stat">Goed<strong id="good">0</strong></div><div class="stat">Reeks<strong id="streak">0</strong></div><div class="stat">Pizza's<strong id="pizzas">0</strong></div></div></header><div id="vespaTripToast" class="vespaTripToast hidden" aria-hidden="true"><div class="ninoTrip" aria-hidden="true"></div><strong id="vespaTripText"></strong></div>
 <svg id="topoIconSprite" aria-hidden="true" focusable="false" width="0" height="0" style="position:absolute;overflow:hidden"><defs>

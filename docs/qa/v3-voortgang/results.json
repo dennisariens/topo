@@ -1,0 +1,347 @@
+{
+ "html": "output/html/TOPO-V3-Reis-Preview.html",
+ "sha256": "1e758278f3af2e5955610e5c74303e6f684ecc10a46e4a1b969dda872c5588f6",
+ "indexSha256": "3aced3c31259011b0af2947c78f71965cb4beb2e88c69d1663e61792b0304f5a",
+ "runs": {
+  "desktop/bezig": {
+   "first": {
+    "count": "6 / 45",
+    "legend": [
+     "Beheerst · 6",
+     "Bezig · 6",
+     "Nog niet · 33"
+    ],
+    "daily": "0 / 8",
+    "paspoortRows": 45,
+    "empty": "Nog geen toetsen."
+   },
+   "after": {
+    "daily": "3 / 8",
+    "dailyV2": 3,
+    "toetsen": [
+     "9 novSteden 1–6, Steden 7–127 / 10",
+     "2 novSteden 1–6, Steden 7–127 / 10"
+    ]
+   },
+   "pageErrors": []
+  },
+  "desktop/afgerond": {
+   "first": {
+    "count": "23 / 45",
+    "legend": [
+     "Beheerst · 23",
+     "Bezig · 0",
+     "Nog niet · 22"
+    ],
+    "daily": "0 / 8",
+    "paspoortRows": 45,
+    "empty": "Nog geen toetsen."
+   },
+   "after": {
+    "daily": "3 / 8",
+    "dailyV2": 3,
+    "toetsen": [
+     "9 novSteden 1–6, Steden 7–127 / 10",
+     "2 novSteden 1–6, Steden 7–127 / 10"
+    ]
+   },
+   "pageErrors": []
+  },
+  "desktop/alles": {
+   "first": {
+    "count": "45 / 45",
+    "legend": [
+     "Beheerst · 45",
+     "Bezig · 0",
+     "Nog niet · 0"
+    ],
+    "daily": "0 / 8",
+    "paspoortRows": 45,
+    "empty": "Nog geen toetsen."
+   },
+   "after": {
+    "daily": "3 / 8",
+    "dailyV2": 3,
+    "toetsen": [
+     "9 novSteden 1–6, Steden 7–127 / 10",
+     "2 novSteden 1–6, Steden 7–127 / 10"
+    ]
+   },
+   "pageErrors": []
+  },
+  "ipad-liggend/bezig": {
+   "first": {
+    "count": "6 / 45",
+    "legend": [
+     "Beheerst · 6",
+     "Bezig · 6",
+     "Nog niet · 33"
+    ],
+    "daily": "0 / 8",
+    "paspoortRows": 45,
+    "empty": "Nog geen toetsen."
+   },
+   "after": {
+    "daily": "3 / 8",
+    "dailyV2": 3,
+    "toetsen": [
+     "9 novSteden 1–6, Steden 7–127 / 10",
+     "2 novSteden 1–6, Steden 7–127 / 10"
+    ]
+   },
+   "pageErrors": []
+  },
+  "ipad-liggend/afgerond": {
+   "first": {
+    "count": "23 / 45",
+    "legend": [
+     "Beheerst · 23",
+     "Bezig · 0",
+     "Nog niet · 22"
+    ],
+    "daily": "0 / 8",
+    "paspoortRows": 45,
+    "empty": "Nog geen toetsen."
+   },
+   "after": {
+    "daily": "3 / 8",
+    "dailyV2": 3,
+    "toetsen": [
+     "9 novSteden 1–6, Steden 7–127 / 10",
+     "2 novSteden 1–6, Steden 7–127 / 10"
+    ]
+   },
+   "pageErrors": []
+  },
+  "ipad-liggend/alles": {
+   "first": {
+    "count": "45 / 45",
+    "legend": [
+     "Beheerst · 45",
+     "Bezig · 0",
+     "Nog niet · 0"
+    ],
+    "daily": "0 / 8",
+    "paspoortRows": 45,
+    "empty": "Nog geen toetsen."
+   },
+   "after": {
+    "daily": "3 / 8",
+    "dailyV2": 3,
+    "toetsen": [
+     "9 novSteden 1–6, Steden 7–127 / 10",
+     "2 novSteden 1–6, Steden 7–127 / 10"
+    ]
+   },
+   "pageErrors": []
+  },
+  "ipad-staand/bezig": {
+   "first": {
+    "count": "6 / 45",
+    "legend": [
+     "Beheerst · 6",
+     "Bezig · 6",
+     "Nog niet · 33"
+    ],
+    "daily": "0 / 8",
+    "paspoortRows": 45,
+    "empty": "Nog geen toetsen."
+   },
+   "after": {
+    "daily": "3 / 8",
+    "dailyV2": 3,
+    "toetsen": [
+     "9 novSteden 1–6, Steden 7–127 / 10",
+     "2 novSteden 1–6, Steden 7–127 / 10"
+    ]
+   },
+   "pageErrors": []
+  },
+  "ipad-staand/afgerond": {
+   "first": {
+    "count": "23 / 45",
+    "legend": [
+     "Beheerst · 23",
+     "Bezig · 0",
+     "Nog niet · 22"
+    ],
+    "daily": "0 / 8",
+    "paspoortRows": 45,
+    "empty": "Nog geen toetsen."
+   },
+   "after": {
+    "daily": "3 / 8",
+    "dailyV2": 3,
+    "toetsen": [
+     "9 novSteden 1–6, Steden 7–127 / 10",
+     "2 novSteden 1–6, Steden 7–127 / 10"
+    ]
+   },
+   "pageErrors": []
+  },
+  "ipad-staand/alles": {
+   "first": {
+    "count": "45 / 45",
+    "legend": [
+     "Beheerst · 45",
+     "Bezig · 0",
+     "Nog niet · 0"
+    ],
+    "daily": "0 / 8",
+    "paspoortRows": 45,
+    "empty": "Nog geen toetsen."
+   },
+   "after": {
+    "daily": "3 / 8",
+    "dailyV2": 3,
+    "toetsen": [
+     "9 novSteden 1–6, Steden 7–127 / 10",
+     "2 novSteden 1–6, Steden 7–127 / 10"
+    ]
+   },
+   "pageErrors": []
+  },
+  "telefoon/bezig": {
+   "first": {
+    "count": "6 / 45",
+    "legend": [
+     "Beheerst · 6",
+     "Bezig · 6",
+     "Nog niet · 33"
+    ],
+    "daily": "0 / 8",
+    "paspoortRows": 45,
+    "empty": "Nog geen toetsen."
+   },
+   "after": {
+    "daily": "3 / 8",
+    "dailyV2": 3,
+    "toetsen": [
+     "9 novSteden 1–6, Steden 7–127 / 10",
+     "2 novSteden 1–6, Steden 7–127 / 10"
+    ]
+   },
+   "pageErrors": []
+  },
+  "telefoon/afgerond": {
+   "first": {
+    "count": "23 / 45",
+    "legend": [
+     "Beheerst · 23",
+     "Bezig · 0",
+     "Nog niet · 22"
+    ],
+    "daily": "0 / 8",
+    "paspoortRows": 45,
+    "empty": "Nog geen toetsen."
+   },
+   "after": {
+    "daily": "3 / 8",
+    "dailyV2": 3,
+    "toetsen": [
+     "9 novSteden 1–6, Steden 7–127 / 10",
+     "2 novSteden 1–6, Steden 7–127 / 10"
+    ]
+   },
+   "pageErrors": []
+  },
+  "telefoon/alles": {
+   "first": {
+    "count": "45 / 45",
+    "legend": [
+     "Beheerst · 45",
+     "Bezig · 0",
+     "Nog niet · 0"
+    ],
+    "daily": "0 / 8",
+    "paspoortRows": 45,
+    "empty": "Nog geen toetsen."
+   },
+   "after": {
+    "daily": "3 / 8",
+    "dailyV2": 3,
+    "toetsen": [
+     "9 novSteden 1–6, Steden 7–127 / 10",
+     "2 novSteden 1–6, Steden 7–127 / 10"
+    ]
+   },
+   "pageErrors": []
+  },
+  "telefoon-320/bezig": {
+   "first": {
+    "count": "6 / 45",
+    "legend": [
+     "Beheerst · 6",
+     "Bezig · 6",
+     "Nog niet · 33"
+    ],
+    "daily": "0 / 8",
+    "paspoortRows": 45,
+    "empty": "Nog geen toetsen."
+   },
+   "after": {
+    "daily": "3 / 8",
+    "dailyV2": 3,
+    "toetsen": [
+     "9 novSteden 1–6, Steden 7–127 / 10",
+     "2 novSteden 1–6, Steden 7–127 / 10"
+    ]
+   },
+   "pageErrors": []
+  },
+  "telefoon-320/afgerond": {
+   "first": {
+    "count": "23 / 45",
+    "legend": [
+     "Beheerst · 23",
+     "Bezig · 0",
+     "Nog niet · 22"
+    ],
+    "daily": "0 / 8",
+    "paspoortRows": 45,
+    "empty": "Nog geen toetsen."
+   },
+   "after": {
+    "daily": "3 / 8",
+    "dailyV2": 3,
+    "toetsen": [
+     "9 novSteden 1–6, Steden 7–127 / 10",
+     "2 novSteden 1–6, Steden 7–127 / 10"
+    ]
+   },
+   "pageErrors": []
+  },
+  "telefoon-320/alles": {
+   "first": {
+    "count": "45 / 45",
+    "legend": [
+     "Beheerst · 45",
+     "Bezig · 0",
+     "Nog niet · 0"
+    ],
+    "daily": "0 / 8",
+    "paspoortRows": 45,
+    "empty": "Nog geen toetsen."
+   },
+   "after": {
+    "daily": "3 / 8",
+    "dailyV2": 3,
+    "toetsen": [
+     "9 novSteden 1–6, Steden 7–127 / 10",
+     "2 novSteden 1–6, Steden 7–127 / 10"
+    ]
+   },
+   "pageErrors": []
+  }
+ },
+ "errors": [],
+ "summary": {
+  "viewports": 5,
+  "demos": [
+   "bezig",
+   "afgerond",
+   "alles"
+  ],
+  "pass": true
+ }
+}

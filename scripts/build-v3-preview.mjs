@@ -6,12 +6,19 @@ import {createHash} from 'node:crypto';
 const root=new URL('../',import.meta.url),read=p=>readFileSync(new URL(p,root),'utf8');
 const html=read('index.html');
 if(html.includes('NINO_DESIGN_PREVIEW')||html.includes('TOPO_V3'))throw Error('index.html must not contain preview or V3 code');
+// Demo skill history per place (V3.0 Voortgang reads the V2 kennis-paspoort): the item ids per chapter come from
+// index.html (ITEMS, GROUPS) with the V2 chapter rule; completed chapters read "Goed onthouden", started ones "Op weg".
+const CHAPTER_ITEMS=(()=>{const items=eval(html.match(/const ITEMS=(\[[\s\S]*?\]);/)[1]),groups=eval('('+html.match(/const GROUPS=(\{[\s\S]*?\});/)[1]+')');
+ const ids=['city1','city2','city3','city4','islands','mountains','volcanoes','regions','countries','seas','rivers'];
+ return Object.fromEntries(ids.map(id=>[id,items.filter(i=>id.startsWith('city')?i.kind==='city'&&Number(i.code)>(Number(id.slice(-1))-1)*6&&Number(i.code)<=Number(id.slice(-1))*6:(groups[id]||[]).includes(i.id)).map(i=>i.id)]));})();
 const states=`(function(){
  'use strict';
  const IDS=['city1','city2','city3','city4','islands','mountains','volcanoes','regions','countries','seas','rivers'];
  const at=Date.UTC(2026,10,6,14,36);
  const ch=(spec)=>Object.fromEntries(IDS.map((id,i)=>{const s=spec[i]||{};return [id,{stage:s.stage||0,completedAt:s.stage===3?at:0,goldAt:s.gold?at:0,nextReviewAt:s.due?at:0,reviews:0}];}));
- const make=(title,spec,r)=>({title,progress:{schema:3,good:r.good||0,pizzas:r.pizzas||0,slices:r.slices||0,trips:r.trips||0,mistakes:[],route:{schema:2,chapters:ch(spec),items:{},rewardTokens:[],active:null},daily:{date:'2026-11-09',correct:0}},profile:{schema:1,name:'Demo',coverColor:'riviera',favoritePizza:'margherita'}});
+ const CI=${JSON.stringify(CHAPTER_ITEMS)},later=Date.UTC(2030,0,1),sk=(streak)=>({correct:streak,wrong:0,streak,lastSeen:at,due:later});
+ const its=(spec)=>{const out={};IDS.forEach((id,i)=>{const st=spec[i]?.stage||0;if(!st)return;for(const it of CI[id])out[it]={correct:st===3?6:1,wrong:0,streak:st===3?3:1,lastSeen:at,lastWrong:0,skills:st===3?{point:sk(3),write:sk(3)}:{point:sk(1)}};});return out;};
+ const make=(title,spec,r)=>({title,progress:{schema:3,good:r.good||0,pizzas:r.pizzas||0,slices:r.slices||0,trips:r.trips||0,mistakes:[],route:{schema:2,chapters:ch(spec),items:its(spec),rewardTokens:[],active:null},daily:{date:'2026-11-09',correct:0}},profile:{schema:1,name:'Demo',coverColor:'riviera',favoritePizza:'margherita'}});
  const S={
   'nieuw':make('Nieuw profiel',[],{}),
   'bezig':make('Halte bezig',[{stage:3},{stage:1}],{good:14,pizzas:1,slices:6}),
@@ -77,7 +84,7 @@ const head='<head>\n<script>\n'+states+'\n'+sceneJs+'\n</script>\n<style>/* BEGI
 const last=html.lastIndexOf('</body>');if(last<0||html.indexOf('<head>')<0)throw Error('Unexpected index.html shape');
 let out=html.replace('<head>',()=>head);
 const end=out.lastIndexOf('</body>');
-out=out.slice(0,end)+'<script>\n// BEGIN TOPO V3\n'+read('scripts/v3/reis.js')+'\n'+read('scripts/v3/les.js')+'\n'+read('scripts/v3/shell.js')+'\n'+read('scripts/v3/schoolblad.js')+'\n'+read('scripts/v3/toets.js')+'\n// END TOPO V3\n</script>\n'+out.slice(end);
+out=out.slice(0,end)+'<script>\n// BEGIN TOPO V3\n'+read('scripts/v3/reis.js')+'\n'+read('scripts/v3/les.js')+'\n'+read('scripts/v3/shell.js')+'\n'+read('scripts/v3/schoolblad.js')+'\n'+read('scripts/v3/toets.js')+'\n'+read('scripts/v3/voortgang.js')+'\n// END TOPO V3\n</script>\n'+out.slice(end);
 out=out.replace(/<title>([^<]*)<\/title>/,(m,t)=>'<title>V3-preview Reis · '+t+'</title>');
 const file='output/html/TOPO-V3-Reis-Preview.html';
 writeFileSync(new URL(file,root),out);

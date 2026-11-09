@@ -411,3 +411,19 @@ Reservekopieën en reset horen in het algemene instellingenmenu. Wis voortgang b
 - **Opslag:** sleutel `topo-v3-toetsen-v1` met `{schema:1, results:[…]}`, de nieuwste eerst en maximaal 10. Per uitslag worden opgeslagen: datum, hoofdstukken, vorm, lengte, totaal, goed, en per vraag id, vorm, goed/fout en het gegeven antwoord (≤ 80 tekens). Ongeldige data telt als geen uitslagen. Dit staat los van de V2-voortgang; V3.0 kent één profiel, dus één lijst.
 - **Reservekopie:** de V2-export krijgt het veld `v3Toetsen` (V2-import negeert onbekende velden, dus oude en nieuwe kopieën blijven in beide richtingen geldig). Na een geslaagde V2-import vervangt een geldige `v3Toetsen` de opgeslagen uitslagen. Een oude kopie zonder dat veld laat de uitslagen staan. **Begin helemaal opnieuw** wist de uitslagen mee.
 - **Telefoon (fix bij deze test gevonden):** na het typen komen de tabbalk en het antwoordblad pas na 0,4 s terug. Daardoor valt een tik op Controleer of Overslaan nog op de knop waar hij begon.
+
+## 2026-11-09 — V3.0 Voortgang: drempel "beheerst" en wat er staat
+
+- **Bron:** de V2-skill-historie per plek, zoals het V2-kennis-paspoort die labelt (Vinden = aanwijzen, Naam = schrijven). V3 leest het paspoort uit en rekent niets opnieuw. Het paspoort zelf, de V2-tabel, is naar Voortgang verplaatst; de V2-samenvatting en -toelichting zijn daar verborgen.
+- **Drempel:** een plek is **beheerst** als beide labels "Goed onthouden" zijn, dus streak ≥ 3 en nog niet aan de beurt voor opfrissen. Een plek is **bezig** als minstens één label niet "Nog oefenen" is. Anders staat de plek op **nog niet**. Een plek die moet worden opgefrist, telt dus als bezig en niet als beheerst.
+- **Kaart:**
+  - steden zijn gekleurde stippen (donkergroen, lichtgroen of grijs);
+  - beheerste en bezige gebieden en zeeën krijgen een groene tint; "nog niet" houdt bij gebieden de gewone kaartkleur;
+  - rivieren krijgen een groene lijn;
+  - er is een legenda met aantallen.
+- **Verder op het scherm:**
+  - de 11 hoofdstukken met drie lesstaven, ✓ (stage 3) en ★ (goud), uit `TopoRoute.record`;
+  - het dagdoel `n / 8` uit V2 `renderDailyGoal`;
+  - de laatste 10 toetsuitslagen;
+  - geen streak.
+- **Preview:** de demo-staten krijgen een skill-historie. Afgeronde hoofdstukken staan voor beide skills op "Goed onthouden", hoofdstukken die nog bezig zijn op Aanwijzen "Op weg". Daardoor laat Voortgang in `#bezig`, `#afgerond` en `#alles` iets zien. Dit raakt alleen de preview.

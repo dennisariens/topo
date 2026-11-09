@@ -92,9 +92,7 @@
   view.replaceChildren(h,field('Vorm',forms,'v3OefenenVorm'),groupField,start);
  });
 
- /* Toets (§ 2) and Voortgang (§ 3): their views; content follows in toets.js and voortgang.js. */
- const title=(text,id)=>{const h=make('h1',null,text);h.id=id;h.tabIndex=-1;return h;};
- V.addView('voortgang','Voortgang',view=>{if(!view.firstChild)view.append(title('Voortgang','v3VoortgangTitle'));});
+ /* Toets (§ 2) and Voortgang (§ 3): their views live in toets.js and voortgang.js. */
  // Start a free exercise from elsewhere (Toets › Oefen deze fouten): same path as Oefenen › Start.
  function practice(form,group){pick.form=form;pick.group=group;startPractice();}
  V.shell={go,currentTab,atHome,lessonTab,toHome,show,field,chip,groupChips,marks,practice,get suspended(){return suspended;}};

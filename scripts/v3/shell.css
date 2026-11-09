@@ -130,3 +130,47 @@ body.v3Shell .schoolbladButton{display:none!important}
  .v3Print .v3ToetsFouten li{padding:1mm 2mm}
  .v3Print .v3ToetsFouten li{box-shadow:none;border:1px solid #bbb;break-inside:avoid}
 }
+
+/* Voortgang (§ 3). */
+.v3VgHead{display:grid;gap:var(--v3-s2);max-width:560px}
+.v3VgCount{margin:0;font:var(--v3-headline);color:var(--v3-ink2)}
+.v3VgCount strong{font-size:40px;line-height:1.1;color:var(--v3-ink);font-variant-numeric:tabular-nums}
+.v3Bar{height:10px;border-radius:5px;background:var(--v3-surface2);box-shadow:inset 0 0 0 1px var(--v3-line);overflow:hidden}
+.v3Bar i{display:block;height:100%;border-radius:inherit;background:var(--v3-forest,#073f3b)}
+.v3VgGrid{display:grid;grid-template-columns:minmax(0,1.2fr) minmax(280px,1fr);gap:var(--v3-s6);align-items:start}
+.v3VgKaart{margin:0;display:grid;gap:var(--v3-s3);min-width:0}
+.v3VgKaart .v3VgMap{width:100%;height:min(62vh,600px);border-radius:var(--v3-radius)}
+.v3VgMap circle.v3Hit,.v3VgMap .v3Hit circle{stroke:#fff;stroke-width:2}
+.v3VgMap circle.v3St-nog,.v3VgMap .v3St-nog circle{fill:#a39e94}
+.v3VgMap circle.v3St-bezig,.v3VgMap .v3St-bezig circle{fill:#7fbf8c}
+.v3VgMap circle.v3St-beheerst,.v3VgMap .v3St-beheerst circle{fill:#2f7d4f}
+.v3VgMap :is(path,polygon).v3St-bezig:not(.v3StLine),.v3VgMap .v3St-bezig :is(path,polygon){fill:#7fbf8c;fill-opacity:.5}
+.v3VgMap :is(path,polygon).v3St-beheerst:not(.v3StLine),.v3VgMap .v3St-beheerst :is(path,polygon){fill:#2f7d4f;fill-opacity:.55}
+.v3VgMap .v3StLine.v3St-bezig{stroke:#7fbf8c}
+.v3VgMap .v3StLine.v3St-beheerst{stroke:#2f7d4f}
+.v3VgLegend{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;gap:var(--v3-s4);font-weight:600}
+.v3VgLegend li{display:flex;align-items:center;gap:var(--v3-s2)}
+.v3VgLegend i{width:14px;height:14px;border-radius:50%;background:#a39e94}
+.v3VgLegend .v3St-beheerst i{background:#2f7d4f}.v3VgLegend .v3St-bezig i{background:#9fd0a8}
+.v3VgSide{display:grid;gap:var(--v3-s5);align-content:start}
+.v3Card{padding:var(--v3-s4);border-radius:var(--v3-radius);background:var(--v3-surface);box-shadow:inset 0 0 0 1px var(--v3-line)}
+.v3VgChapters{list-style:none;margin:0;padding:0;display:grid;gap:6px}
+.v3VgChapters li{display:grid;grid-template-columns:24px minmax(0,1fr) auto 18px 18px;align-items:center;gap:var(--v3-s2);min-height:32px}
+.v3VgNum{color:var(--v3-ink2);font-variant-numeric:tabular-nums}
+.v3VgName{white-space:nowrap;overflow:hidden;text-overflow:ellipsis;font-weight:500}
+.v3VgSteps{display:flex;gap:3px}.v3VgSteps i{width:22px;height:6px;border-radius:3px;background:var(--v3-surface2);box-shadow:inset 0 0 0 1px var(--v3-line)}.v3VgSteps i.on{background:var(--v3-accent);box-shadow:none}
+.v3VgDone{color:#2f7d4f;font-weight:700}.v3VgGold{color:#c9962b}
+.v3VgDaily{margin:0}.v3VgDaily strong{font-size:28px;font-variant-numeric:tabular-nums}
+.v3VgToetsen{list-style:none;margin:0;padding:0;display:grid;gap:6px}
+.v3VgToetsen li{display:grid;grid-template-columns:64px minmax(0,1fr) auto;gap:var(--v3-s2);align-items:center}
+.v3VgDate{color:var(--v3-ink2)}.v3VgOnderwerp{white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.v3VgToetsen strong{font-variant-numeric:tabular-nums}
+.v3VgEmpty{margin:0;color:var(--v3-ink2)}
+.v3VgPaspoort .mastery{margin:0;padding:0;max-width:none;border:0;background:none}
+.v3VgPaspoort .mastery>summary,.v3VgPaspoort #masteryGrid>p{display:none}
+.v3VgPaspoort #masteryGrid{padding:0}
+.v3VgPaspoort table{width:100%;border-collapse:collapse;font-size:15px}
+.v3VgPaspoort :is(th,td){text-align:left;padding:6px 8px;border-bottom:1px solid var(--v3-line)}
+.v3VgPaspoort thead th{color:var(--v3-ink2);font-weight:600}
+@media (max-width:1023px){.v3VgGrid{grid-template-columns:1fr}.v3VgKaart .v3VgMap{height:440px}}
+@media (max-width:767px){.v3VgKaart .v3VgMap{height:340px}.v3VgPaspoort table{font-size:14px}.v3VgPaspoort :is(th,td){padding:6px 4px}}

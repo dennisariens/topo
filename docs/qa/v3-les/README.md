@@ -1,6 +1,6 @@
 # V3 Golden Experience 01 — beat 3–7 (les → feedback → beloning → Reisboekje)
 
-**Kandidaat:** `output/html/TOPO-V3-Reis-Preview.html` (naam behouden; bevat nu Reis én les), SHA256 `d948643fe8ea732f7689b13fe7f5fd2bff6020bdc48c34c40252bc5da0eab3e9`. Niet in Git; reproduceer met `node scripts/build-v3-preview.mjs`. Basis: ongewijzigde V2.0.2-`index.html` (`3aced3c3…304f5a`) + `scripts/v3/` (`tokens.css`, `reis.*`, `les.*`).
+**Kandidaat:** `output/html/TOPO-V3-Reis-Preview.html` (naam behouden; bevat nu Reis én les), SHA256 `873f91f27311cac893d2e53f682e16b18db06e0f0f515e053dc6f8f047e749ed`. Niet in Git; reproduceer met `node scripts/build-v3-preview.mjs`. Basis: ongewijzigde V2.0.2-`index.html` (`3aced3c3…304f5a`) + `scripts/v3/` (`tokens.css`, `reis.*`, `les.*`).
 **Spec:** [docs/v3/GE01.md](../../v3/GE01.md). **Openen:** `file://…#bezig` → **Aanwijzen** (of **↻ Ontdekken**).
 **Oordeel:** technisch geslaagd · visueel zelf beoordeeld · **eigenaar: open** · Hermes: open. Geen merge, deployment of downloadvervanging.
 
@@ -16,6 +16,7 @@
 | Beat 3 — Ontdekken | Plek als titel, Nino-zin, **Bekeken · verder** | `currentStepPerBeat.discover`; screenshot · [desktop](discover-desktop.png) · [telefoon](discover-phone.png) | ✓ |
 | Beat 4 — Aanwijzen, de kaart is de handeling | Vraag, geen hulpregel; tik op de kaart | `pointByRealTap`: 30/30 via echte tik (deels via V2-kiezer of na Kaart vrijmaken); `tapsBlockedByV3: []` | ✓ |
 | Beat 5 — Namen schrijven | Invoer + **Controleer**; concept blijft bij formaatwissel | `draftSurvivesFormatChange: true` (1440 → 1100 Focus → 1440, focus behouden) | ✓ |
+| Sheet opent na antwoord (eigenaar 9-11) | Na **Kaart vrijmaken** + antwoord gaat de Focus-sheet vanzelf open: feedback en **Volgende** in beeld | `sheetOpensAfterAnswer`: alle gevallen `true` (iPad liggend, telefoon 320); `collapsedSheetAfterAnswer: []` | ✓ |
 | Beat 6 — Feedback | V2-zin: groen ✓ of rustig rood; **Volgende** als enige hoofdactie | `feedbackFromV2`, `wrongAnswersNotRewarded`, `meterMatchesState`, `oneMainAction: {}` | ✓ |
 | Beat 7 — verdiende beloning | Pizza- en Vespa-dialoog alleen bij de echte telling | `rewardMomentsOnRealCount: true`; pizza 1→2, 2→3 en Vespa-rit 0→1 op alle formaten · [pizza](pizza-desktop.png) · [Vespa](vespa-desktop.png) | ✓ |
 | Beat 7 — stempel → Reisboekje | **Deze halte is afgerond!**, stempel met **Bekijk in Reisboekje** als hoofdactie; één terugknop | `finishStampAndBook: true` (`stamp:city2`, boek open); `bookTapLandsOnButton: true` · [afronding](finish-desktop.png) · [boek](reisboekje-desktop.png) | ✓ (fout gevonden en hersteld) |
@@ -35,9 +36,14 @@
 
 WebKit en echte iPad Safari (niet beschikbaar in deze omgeving), VoiceOver, fysieke toetsenborden/IME, SF Pro-weergave.
 
+## Besloten door de eigenaar (9 november)
+
+1. **Sheet na antwoord:** gaat vanzelf open. V3 drukt eenmalig de bestaande V2-knop **Antwoord openen**; Focus Mode en `index.html` blijven ongewijzigd.
+2. **Teller:** telt de V2-wachtrij, dus een herhaalde vraag telt mee (`1 / 6` → `1 / 7`).
+3. **Tekstbudget:** hulpregels en "Samen met Nino" vervallen in een les; oefenmodi alleen via **Oefenen**.
+
 ## Open punten
 
-1. **Ingeklapte sheet na antwoord (V2 Focus Mode).** Wie **Kaart vrijmaken** tikt en daarna antwoordt, ziet feedback en **Volgende** pas na **Antwoord openen**. Zo ook in `afb32d1`; Focus Mode is eigenaar. Voorstel: sheet na een antwoord automatisch openen. Productkeuze eigenaar.
-2. **Teller na een fout.** De strook telt de V2-wachtrij: na een fout komt die vraag terug, dus `1 / 6` wordt `1 / 7` (eerlijk, maar kan verrassen).
-3. **Afrondscherm.** De drie V2-uitslagvakjes ("goed in deze ronde" …) blijven met hun label; een getal zonder label is hier niet duidelijk genoeg. Reisboekje en Vespa-rit blijven V2-composities.
-4. Uit de spec: hulpregels en "Samen met Nino" vervallen in een les; oefenmodi alleen via **Oefenen**.
+1. **Visueel oordeel eigenaar** over de les (preview + screenshots hierboven).
+2. **Volgende stap** (eigenaar kiest): V3-versie van Reisboekje en Vespa-rit, of Oefenen.
+3. **Afrondscherm:** de drie V2-uitslagvakjes blijven met hun label; een getal zonder label is hier niet duidelijk genoeg.

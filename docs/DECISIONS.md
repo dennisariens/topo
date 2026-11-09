@@ -296,3 +296,9 @@ Reservekopieën en reset horen in het algemene instellingenmenu. Wis voortgang b
 - **Reis na een les** kiest het hoofdstuk van de les of het volgende, niet een eerdere rijkeuze.
 - **Les:** een `:focus`-regel die de lettergrootte veranderde, liet op telefoon de tik op **Bekijk in Reisboekje** verloren gaan (knop schoof 59 px). Regel: focus verandert nooit de maat; check `bookTapLandsOnButton`.
 - **Check:** `qa-v3-les.py` speelt hoofdstuk 2 met echte tikken op vijf formaten; bewijs in `docs/qa/v3-les/`.
+
+## 2026-11-09 — GE01: eigenaarskeuzes les
+
+- **Sheet na antwoord:** gaat vanzelf open. V3 drukt bij de overgang naar "beantwoord" eenmalig de V2-knop **Antwoord openen** als het kind de sheet had ingeklapt; geen wijziging in Focus Mode of `index.html`. Check `sheetOpensAfterAnswer`.
+- **Teller** volgt de V2-wachtrij; herhaalde vragen tellen mee.
+- **Les zonder hulpregels en "Samen met Nino"**; oefenmodi alleen via Oefenen.

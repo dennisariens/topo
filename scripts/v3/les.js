@@ -60,14 +60,18 @@
   const [go,home]=buttons;if(go&&home){if(/^Terug naar mijn reis/.test(go.textContent.trim()))home.dataset.v3Aside='';else delete home.dataset.v3Aside;}
  }
 
- let last='';
+ let last='',wasAnswered=false;
  function render(){
   const on=inLesson(),m=on?model():null;
   body.classList.toggle('v3Les',!!m);sideWrap.hidden=bar.hidden=!m;
-  if(!m){last='';for(const k of ['v3Theme','v3Kind','v3Q','v3Answered'])delete body.dataset[k];return;}
+  if(!m){last='';wasAnswered=false;for(const k of ['v3Theme','v3Kind','v3Q','v3Answered'])delete body.dataset[k];return;}
   sideWrap.dataset.theme=bar.dataset.theme=body.dataset.v3Theme=window.TOPO_V3_THEME||'italia';
   body.dataset.v3Kind=m.kind;body.dataset.v3Q=m.done?'result':m.q||'';
-  body.dataset.v3Answered=String(!!state.answered&&!m.done);
+  const answered=!!state.answered&&!m.done;body.dataset.v3Answered=String(answered);
+  // Owner 9-11: after an answer the feedback and Volgende are always in view. When the child collapsed the Focus
+  // sheet ("Kaart vrijmaken") to tap the map, press the V2 toggle ("Antwoord openen") once; Focus Mode does the rest.
+  if(answered&&!wasAnswered){const t=$('#focusSheetToggle');if(t&&$('#focusAnswerSheet')?.dataset.collapsed==='true'&&t.checkVisibility?.()!==false)t.click();}
+  wasAnswered=answered;
   const key=[m.c.id,m.kind,m.r.stage,m.r.goldAt>0,m.n,m.total,m.done,m.paused,m.q].join('|');
   // Back on Reis, the chapter of this lesson (Ga verder) or the next one is chosen, not an earlier pick.
   if(V.ui)V.ui.selected=null;

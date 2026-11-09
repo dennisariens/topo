@@ -105,7 +105,9 @@ async def main():
                     choice = f'[data-map-choice="{item_id}"]'
                     if not await pg.evaluate('state.answered') and await pg.evaluate(f'[...document.querySelectorAll(\'{choice}\')].some(b => b.checkVisibility())'):
                         await pg.locator(choice).filter(visible=True).first.click(); await settle(pg); info['picker'] = True
-                    if await pg.evaluate('state.answered'): return box | info | {'via': 'tap', 'ok': await pg.evaluate('!!state.route.active.lastAnswer?.ok')}
+                    if await pg.evaluate('state.answered'):
+                        if info.get('freedMap'): await settle(pg); info['sheetOpenAfter'] = await pg.evaluate('document.querySelector("#focusSheetToggle")?.getAttribute("aria-expanded") === "true" && !!document.querySelector("#next")?.checkVisibility()')
+                        return box | info | {'via': 'tap', 'ok': await pg.evaluate('!!state.route.active.lastAnswer?.ok')}
                 await pg.locator(f'#map [data-id="{item_id}"][tabindex="0"]').first.press('Enter'); await settle(pg)
                 return (box or {}) | info | {'via': 'keyboard', 'reason': 'no hit' if box and box['onMap'] else 'not reachable'}
 
@@ -213,9 +215,10 @@ async def main():
         'stepsRight': every(lambda r: r['beats']['discover']['currentStep'] == 'discover' and r['beats']['point-q']['currentStep'] == 'point' and r['beats']['write-q']['currentStep'] == 'write'),
         'oneMainAction': {k: v['primaries'] for k, v in lay.items() if len(v['primaries']) > 1 and not k.endswith(('/pizza', '/vespa'))},
         # Point and write questions have no accent action by design (the map or Controleer after typing is the action);
-        # a Focus sheet the child collapsed with "Kaart vrijmaken" stays collapsed after answering (V2 Focus Mode, also in afb32d1).
+        # Owner 9-11: a Focus sheet the child collapsed with "Kaart vrijmaken" opens again after answering (V3 presses the V2 toggle).
         'noMainAction': [k for k, v in lay.items() if not v['primaries'] and not v.get('sheetCollapsed') and not k.endswith(('/vespa', '/point-q', '/write-q'))],
         'collapsedSheetAfterAnswer': [k for k, v in lay.items() if v.get('sheetCollapsed')],
+        'sheetOpensAfterAnswer': {vp: [t.get('sheetOpenAfter') for t in r['checks'].get('pointTaps', []) if t.get('freedMap')] for vp, r in res['runs'].items()},
         'pointByRealTap': {vp: [t.get('via') + ('+kiezer' if t.get('picker') else '') + ('+vrijmaken' if t.get('freedMap') else '') + ('' if t.get('via') != 'tap' or t.get('ok') else ':notOk') for t in r['checks'].get('pointTaps', [])] for vp, r in res['runs'].items()},
         'tapsBlockedByV3': [vp for vp, r in res['runs'].items() if any(t.get('v3') for t in r['checks'].get('pointTaps', []))],
         'wrongAnswersNotRewarded': every(lambda r: r['checks'].get('pointWrongNotOk') and r['checks'].get('writeWrongNotOk')),

@@ -232,43 +232,6 @@
    }
   },
   {
-   "id": "IC-stamp",
-   "status": "ter beoordeling eigenaar",
-   "note": "stempel met Toscaans dorpje",
-   "master": {
-    "path": "assets/v3/render/masters/icons/IC-stamp.png",
-    "bytes": 1370747,
-    "sha256": "e7651d68b476e45ad29fc9cff6441ebe4f3823f5df0210304b07ed92c9fd3ed7",
-    "size": [
-     1250,
-     1250
-    ],
-    "alpha": true
-   },
-   "exports": {
-    "96": {
-     "path": "assets/v3/render/exports/icons/IC-stamp-96.webp",
-     "bytes": 4386,
-     "sha256": "314ed6c84deaf2ff0a2cc1770cf16a45763d8a9655503883bf334474d83b27f1",
-     "size": [
-      96,
-      96
-     ],
-     "alpha": true
-    },
-    "48": {
-     "path": "assets/v3/render/exports/icons/IC-stamp-48.webp",
-     "bytes": 1968,
-     "sha256": "512515c2decf8cad85b27eec6e54d957a3d00a4791fcfa271203f14292984436",
-     "size": [
-      48,
-      48
-     ],
-     "alpha": true
-    }
-   }
-  },
-  {
    "id": "IC-pizza",
    "status": "ter beoordeling eigenaar",
    "note": "hele margherita in plaats van punt (beter voor de pizzameter); iets fotografischer dan de rest",
@@ -477,13 +440,58 @@
      "alpha": true
     }
    }
-  }
- ],
- "pending": [
+  },
   {
    "id": "IC-stamp",
-   "status": "opnieuw gevraagd",
-   "note": "afdruk in plaats van stempelapparaat; huidig apparaat blijft master voor het stempelmoment"
+   "status": "ter beoordeling eigenaar",
+   "note": "tweede versie: afdruk zoals in het Reisboekje",
+   "master": {
+    "path": "assets/v3/render/masters/icons/IC-stamp.png",
+    "bytes": 2473307,
+    "sha256": "c577d992fde854535147558fa4c972da69eb9207c853b864544d1f3baf30906a",
+    "size": [
+     1244,
+     1244
+    ],
+    "alpha": true
+   },
+   "exports": {
+    "96": {
+     "path": "assets/v3/render/exports/icons/IC-stamp-96.webp",
+     "bytes": 7116,
+     "sha256": "a578ddedb395fc9fc97c672923ed6f6f681628016e1c1e4c014019385a14144a",
+     "size": [
+      96,
+      96
+     ],
+     "alpha": true
+    },
+    "48": {
+     "path": "assets/v3/render/exports/icons/IC-stamp-48.webp",
+     "bytes": 2488,
+     "sha256": "50907c9f470defcfe7e5e50e4654025007a87d7943c9cef6b210a3ce526598c7",
+     "size": [
+      48,
+      48
+     ],
+     "alpha": true
+    }
+   }
+  },
+  {
+   "id": "IC-stamp-tool",
+   "status": "bewaard, niet als icoon",
+   "note": "houten stempel; mogelijk voor het moment waarop een stempel in het boek wordt gezet",
+   "master": {
+    "path": "assets/v3/render/masters/icons/IC-stamp-tool.png",
+    "bytes": 1370747,
+    "sha256": "e7651d68b476e45ad29fc9cff6441ebe4f3823f5df0210304b07ed92c9fd3ed7",
+    "size": [
+     1250,
+     1250
+    ],
+    "alpha": true
+   }
   }
  ]
 }

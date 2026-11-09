@@ -253,3 +253,13 @@ Reservekopieën en reset horen in het algemene instellingenmenu. Wis voortgang b
 - **Installers in de repo.** De installers worden voortaan in de repo gebouwd (`installers/`, `scripts/package-installers.mjs`). Het Windows-script blijft gepind op de hash van de meegeleverde HTML.
 - **Signering.** Signering blijft ad hoc. Developer ID en notarisatie zijn een apart besluit, omdat daar een Apple Developer-account voor nodig is.
 - **Toetsresultaat.** De illustratie in het toetsresultaat wordt begrensd door haar eigen vlak.
+
+## 2026-11-09 — V3 start als presentatielaag, Reis eerst
+
+- **Basis:** `codex/topo-v3` vanaf `f53dc0b`. V2.0.2 blijft de afgesloten release; `index.html` verandert niet tot een V3-kandidaat is goedgekeurd.
+- **Bouwwijze:** V3-schermen zijn lagen in `scripts/v3/` die de canonieke staat lezen en nooit schrijven. Acties drukken de bestaande V2-knop in, zodat het gedrag dat in de klikonderschepping van NINO V2 zit (kennismaking, Reis → Verder, bevestiging) behouden blijft. Geen tweede route-, beloning- of opslaglogica.
+- **Reis:** één kaart met de huidige halte en één hoofdactie, boven de vouw op alle geteste formaten; de route als verhalend slingerpad (geen landkaart, zie 2026-11-06); detail van een andere halte in de routekaart, met alleen secundaire acties.
+- **Ontwerpregels:** `docs/v3/DESIGN_RULES.md`, tokens in `scripts/v3/tokens.css`, gescoped tot `.v3`. Voorstel; eigenaarsakkoord open.
+- **Harness:** #74 niet overgenomen (Hermes-REWORK open). Bestaande `npm`-checks plus `scripts/qa-v3-reis.py` op de exacte HTML.
+- **Status:** kandidaat ter beoordeling. Geen merge, deployment of downloadvervanging.
+

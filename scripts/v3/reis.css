@@ -1,0 +1,90 @@
+/* TOPO V3 — Reis / hoofdstukkeuze. Presentation only; actions delegate to the V2 route buttons. */
+body.v3On{min-height:100dvh}
+body.v3On #routeHome>:not(.v3Reis){display:none!important}
+body.v3On .layout.routeHomeLayout{display:block}
+/* Phone/iPad shell: header+nav are fixed (~102 px); V2 reserves 114 px plus card padding. */
+body.v3On[data-focus-shell=true] .layout.routeHomeLayout{margin-top:104px}
+body.v3On .layout.routeHomeLayout>.mapCard,body.v3On .layout.routeHomeLayout>.panel{display:none}
+body.v3On #journeyScreen{background:none;border:0;box-shadow:none;padding:0;max-width:none;margin:0}
+body.v3On #journeyScreen>#routeHome{background:none;border:0;box-shadow:none;padding:0;max-width:none}
+
+.v3Reis{display:grid;gap:var(--v3-s6);max-width:1120px;margin:0 auto;padding:var(--v3-s4) var(--v3-s4) var(--v3-s12);grid-template-columns:minmax(0,1fr);background:none}
+@media (min-width:900px){.v3Reis{grid-template-columns:minmax(340px,420px) minmax(0,1fr);align-items:start;padding:var(--v3-s6) var(--v3-s8) var(--v3-s12)}.v3Now{position:sticky;top:var(--v3-s6)}}
+
+/* Now: the current stop and its one next action. */
+.v3Now{display:grid;gap:var(--v3-s4);padding:var(--v3-s6)}
+.v3NowHead{display:grid;grid-template-columns:auto minmax(0,1fr);gap:var(--v3-s4);align-items:center}
+.v3NowIcon{width:88px;height:88px;border-radius:50%;object-fit:cover;box-shadow:0 0 0 3px var(--v3-surface),0 0 0 5px var(--v3-primary)}
+.v3Now h1{font:var(--v3-large);letter-spacing:-.01em;overflow-wrap:break-word;text-wrap:balance}
+.v3Now h1 .nw{white-space:nowrap}
+@media (max-width:480px){.v3NowIcon{width:64px;height:64px}.v3Now{padding:var(--v3-s5)}.v3Now h1{font-size:30px;line-height:36px}}
+.v3Now h1 small{display:block;font:var(--v3-foot);letter-spacing:.06em;text-transform:uppercase;color:var(--v3-primary);margin-bottom:var(--v3-s1)}
+.v3Nino{display:grid;grid-template-columns:56px minmax(0,1fr);gap:var(--v3-s3);align-items:center}
+.v3Nino img{width:56px;height:56px;object-fit:contain}
+.v3Nino p{font:var(--v3-sub);color:var(--v3-ink2)}
+.v3Stages{list-style:none;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:var(--v3-s2)}
+.v3Stage{display:grid;gap:var(--v3-s1);justify-items:start;padding:var(--v3-s3) var(--v3-s2) var(--v3-s2);border-top:4px solid var(--v3-line);font:var(--v3-foot);color:var(--v3-locked)}
+.v3Stage b{font:var(--v3-headline);font-size:15px;line-height:19px;color:inherit;overflow-wrap:break-word}
+.v3Stage[data-state=done]{border-color:var(--v3-done);color:var(--v3-done)}
+.v3Stage[data-state=now]{border-color:var(--v3-primary);color:var(--v3-ink)}
+.v3Stage[data-state=now] span{color:var(--v3-primary)}
+/* Narrow phones: three columns no longer fit 'Ontdekken'; stack as rows (state left, lesson right). */
+@media (max-width:359px){.v3Stages{grid-template-columns:1fr;gap:0}.v3Stage{grid-template-columns:64px 1fr;align-items:baseline;border-top:0;border-left:4px solid var(--v3-line);padding:var(--v3-s2) var(--v3-s3)}}
+.v3Now .v3Extra{display:flex;flex-wrap:wrap;justify-content:center;gap:var(--v3-s2)}
+
+/* Route: eleven stops as a narrative path, not a geographic map (DECISIONS 2026-11-06). */
+.v3Route{padding:var(--v3-s6) var(--v3-s6) var(--v3-s4)}
+.v3RouteHead{display:flex;flex-wrap:wrap;align-items:baseline;justify-content:space-between;gap:var(--v3-s3);padding:0 var(--v3-s2) var(--v3-s4)}
+.v3RouteHead h2{font:var(--v3-title)}
+.v3Path{position:relative;padding-top:var(--v3-s6);display:grid;grid-template-columns:repeat(var(--cols,3),minmax(0,1fr));row-gap:var(--v3-s8)}
+@media (min-width:560px){.v3Path{--cols:4}}
+@media (min-width:900px){.v3Path{--cols:4}}
+.v3PathLine{position:absolute;inset:0;width:100%;height:100%;pointer-events:none;overflow:visible}
+.v3PathLine path{fill:none;stroke-width:4;stroke-linecap:round}
+.v3PathLine .walked{stroke:var(--v3-done)}
+.v3PathLine .ahead{stroke:var(--v3-line);stroke-dasharray:2 10}
+.v3Stop{position:relative;z-index:1;appearance:none;border:0;background:none;padding:var(--v3-s1) var(--v3-s1) var(--v3-s2);display:grid;justify-items:center;align-content:start;gap:var(--v3-s2);min-height:44px;color:var(--v3-ink);font:var(--v3-foot);text-align:center;cursor:pointer;border-radius:var(--v3-radius-btn);-webkit-tap-highlight-color:transparent}
+.v3Stop .disc{position:relative;width:64px;height:64px;border-radius:50%;background:var(--v3-surface);box-shadow:0 0 0 3px var(--v3-surface),0 0 0 4px var(--v3-line);transition:transform var(--v3-move) var(--v3-ease),box-shadow var(--v3-fast)}
+.v3Stop .disc img{width:100%;height:100%;border-radius:50%;object-fit:cover}
+.v3Stop .name{max-width:12ch;overflow-wrap:break-word;line-height:16px;text-wrap:balance}
+.v3Stop .num{color:var(--v3-ink2);font-weight:500}
+.v3Stop .mark{position:absolute;right:-4px;bottom:-4px;width:24px;height:24px;border-radius:50%;display:grid;place-items:center;font:700 13px/1 var(--v3-font);color:#fff;box-shadow:0 0 0 2px var(--v3-surface)}
+.v3Stop[data-state=done] .disc{box-shadow:0 0 0 3px var(--v3-surface),0 0 0 5px var(--v3-done)}
+.v3Stop[data-state=done] .mark{background:var(--v3-done)}
+.v3Stop[data-state=gold] .disc{box-shadow:0 0 0 3px var(--v3-surface),0 0 0 6px var(--v3-gold)}
+.v3Stop[data-state=gold] .mark{background:var(--v3-gold-bg);box-shadow:0 0 0 2px var(--v3-surface)}
+.v3Stop[data-state=gold] .mark img{width:24px;height:24px}
+.v3Stop[data-state=now] .disc{transform:scale(1.18);box-shadow:0 0 0 3px var(--v3-surface),0 0 0 6px var(--v3-primary)}
+.v3Stop[data-state=now] .name{font-weight:700}
+.v3Stop[data-state=locked] .disc img{filter:grayscale(.85);opacity:.55}
+.v3Stop[data-state=locked]{color:var(--v3-ink2)}
+.v3Stop[data-state=locked] .mark{background:var(--v3-locked)}
+.v3Stop[aria-pressed=true] .disc{transform:scale(1.18)}
+.v3Stop[aria-pressed=true] .name{text-decoration:underline;text-underline-offset:3px}
+.v3Vespa{position:absolute;left:50%;top:-30px;width:40px;height:40px;transform:translateX(-50%);object-fit:contain;filter:drop-shadow(0 2px 2px rgba(7,63,59,.2))}
+
+/* Detail for another stop: secondary actions only. */
+.v3Detail{margin-top:var(--v3-s5);padding:var(--v3-s5);border-radius:var(--v3-radius);background:var(--v3-paper);display:grid;gap:var(--v3-s3);animation:v3Rise var(--v3-move) var(--v3-ease)}
+.v3Detail[hidden]{display:none}
+.v3DetailHead{display:grid;grid-template-columns:auto minmax(0,1fr) auto;gap:var(--v3-s3);align-items:center}
+.v3DetailHead img{width:48px;height:48px;border-radius:50%}
+.v3DetailHead h3{font:var(--v3-headline)}
+.v3DetailActions{display:flex;flex-wrap:wrap;gap:var(--v3-s2)}
+.v3DetailActions .v3Btn{flex:1 1 140px}
+.v3DetailActions .v3Btn.gold{background:var(--v3-gold-bg);color:#6b4d00}
+.v3Close{width:44px;height:44px;padding:0;border-radius:50%;background:transparent;font-size:22px}
+@keyframes v3Rise{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:none}}
+
+/* Rewards: earned state only. */
+.v3Rewards{display:grid;grid-template-columns:auto minmax(0,1fr) auto;gap:var(--v3-s4);align-items:center;padding:var(--v3-s4) var(--v3-s5)}
+@media (min-width:900px){.v3Rewards{grid-column:2}}
+.v3Pizza{position:relative;width:64px;height:64px}
+.v3Pizza img{position:absolute;inset:0;width:64px;height:64px;object-fit:contain}
+.v3Pizza .base{filter:grayscale(1);opacity:.22}
+.v3Pizza .earned{-webkit-mask:conic-gradient(#000 calc(var(--p)*1turn),transparent 0);mask:conic-gradient(#000 calc(var(--p)*1turn),transparent 0)}
+.v3RewardText{display:grid;gap:2px}
+.v3RewardText b{font:var(--v3-headline)}
+.v3Trip{display:flex;gap:4px;margin-top:var(--v3-s1)}
+.v3Trip i{width:18px;height:6px;border-radius:3px;background:var(--v3-line)}
+.v3Trip i.on{background:var(--v3-primary)}
+@media (max-width:420px){.v3Rewards{grid-template-columns:auto minmax(0,1fr)}.v3Rewards .v3Btn{grid-column:1/-1}}

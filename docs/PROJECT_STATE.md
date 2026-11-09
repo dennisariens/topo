@@ -1,3 +1,7 @@
+# TOPO V3 — golden screen 1: Reis (9 november 2026)
+
+Branch `codex/topo-v3` vanaf de V2-afsluiting `f53dc0b` (voorouder `v2.0.2` = `83ec1ce` gecontroleerd). Eerste V3-scherm als presentatielaag over de ongewijzigde V2.0.2-app: `scripts/v3/` (tokens, Reis), gebouwd tot een aparte offline preview `output/html/TOPO-V3-Reis-Preview.html` met demostanden in het geheugen. `index.html` en de downloads zijn niet gewijzigd. Elke V3-actie drukt de bestaande V2-knop in, zodat kennismaking, Reis → Verder en bevestigingen blijven. [Audit](v3/AUDIT.md) · [ontwerpregels](v3/DESIGN_RULES.md) · [bewijs en open punten](qa/v3-reis/README.md). Eigenaarsbeoordeling open; daarna pas de route hoofdstuk → kaartles → feedback → beloning → Reisboekje. Geen merge, deployment of vervanging van downloads.
+
 # NINO 2.0.2 — kandidaat (niet gepubliceerd)
 
 Patch op v2.0.1 voor twee Hermes-bevindingen.

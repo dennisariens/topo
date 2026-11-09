@@ -1,0 +1,110 @@
+[
+ {
+  "key": "chapter0",
+  "path": "assets/nino/chapter-icons/exports/chapter-01-steden-1-6.webp",
+  "sha256_12": "337e02ba2c1e",
+  "embeddedEqualsFile": true
+ },
+ {
+  "key": "chapter1",
+  "path": "assets/nino/chapter-icons/exports/chapter-02-steden-7-12.webp",
+  "sha256_12": "f9c76c2c0926",
+  "embeddedEqualsFile": true
+ },
+ {
+  "key": "chapter2",
+  "path": "assets/nino/chapter-icons/exports/chapter-03-extra-steden-13-18.webp",
+  "sha256_12": "1801146a77b1",
+  "embeddedEqualsFile": true
+ },
+ {
+  "key": "chapter3",
+  "path": "assets/nino/chapter-icons/exports/chapter-04-extra-steden-19-23.webp",
+  "sha256_12": "125a496d4c65",
+  "embeddedEqualsFile": true
+ },
+ {
+  "key": "chapter4",
+  "path": "assets/nino/chapter-icons/exports/chapter-05-eilanden.webp",
+  "sha256_12": "f1ca42b2a08c",
+  "embeddedEqualsFile": true
+ },
+ {
+  "key": "chapter5",
+  "path": "assets/nino/chapter-icons/exports/chapter-06-bergen.webp",
+  "sha256_12": "a6b8def0c138",
+  "embeddedEqualsFile": true
+ },
+ {
+  "key": "chapter6",
+  "path": "assets/nino/chapter-icons/exports/chapter-07-vulkanen.webp",
+  "sha256_12": "52efca255b21",
+  "embeddedEqualsFile": true
+ },
+ {
+  "key": "chapter7",
+  "path": "assets/nino/chapter-icons/exports/chapter-08-streken.webp",
+  "sha256_12": "2885eeb2d2b4",
+  "embeddedEqualsFile": true
+ },
+ {
+  "key": "chapter8",
+  "path": "assets/nino/chapter-icons/exports/chapter-09-landen.webp",
+  "sha256_12": "c616f7524a54",
+  "embeddedEqualsFile": true
+ },
+ {
+  "key": "chapter9",
+  "path": "assets/nino/chapter-icons/exports/chapter-10-zeeen.webp",
+  "sha256_12": "66139c111992",
+  "embeddedEqualsFile": true
+ },
+ {
+  "key": "chapter10",
+  "path": "assets/nino/chapter-icons/exports/chapter-11-rivieren.webp",
+  "sha256_12": "c08a48c15a9e",
+  "embeddedEqualsFile": true
+ },
+ {
+  "key": "welcome",
+  "path": "assets/nino/exports/nino-welcome.webp",
+  "sha256_12": "89966925cb2f",
+  "embeddedEqualsFile": true
+ },
+ {
+  "key": "travel",
+  "path": "assets/nino/exports/nino-travel.webp",
+  "sha256_12": "d12e2738fbbb",
+  "embeddedEqualsFile": true
+ },
+ {
+  "key": "chapterGold",
+  "path": "assets/nino/travel-passport/gold/exports/gold-chapter-seal-v2-64.webp",
+  "sha256_12": "54224a2edf4e",
+  "embeddedEqualsFile": true
+ },
+ {
+  "key": "finalGold",
+  "path": "assets/nino/travel-passport/gold/exports/gold-esploratore-doro-480.webp",
+  "sha256_12": "63b8e838caff",
+  "embeddedEqualsFile": true
+ },
+ {
+  "key": "favorite0",
+  "path": "assets/nino/rewards/pizza/exports/pizza-margherita.webp",
+  "sha256_12": "75b08c68393c",
+  "embeddedEqualsFile": true
+ },
+ {
+  "key": "favorite1",
+  "path": "assets/nino/rewards/pizza/exports/pizza-salami.webp",
+  "sha256_12": "61e86fd6f033",
+  "embeddedEqualsFile": true
+ },
+ {
+  "key": "favorite2",
+  "path": "assets/nino/rewards/pizza/exports/pizza-quattro-formaggi.webp",
+  "sha256_12": "cd5e75889d7c",
+  "embeddedEqualsFile": true
+ }
+]

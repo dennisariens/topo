@@ -1,0 +1,39 @@
+/* TOPO V3 design rules as tokens. Source of truth: docs/v3/DESIGN_RULES.md.
+   Scoped to .v3 so V2 screens keep their own styles until each screen is migrated. */
+.v3{
+ /* Type: the platform font (SF Pro on Apple devices), iOS text styles. */
+ --v3-font:-apple-system,BlinkMacSystemFont,"SF Pro Text","Segoe UI",system-ui,sans-serif;
+ --v3-large:700 34px/41px var(--v3-font);   /* Large Title: one per screen */
+ --v3-title:700 22px/28px var(--v3-font);   /* Title 2: section */
+ --v3-headline:600 17px/22px var(--v3-font);/* Headline: rows, buttons */
+ --v3-body:400 17px/24px var(--v3-font);
+ --v3-sub:400 15px/20px var(--v3-font);     /* Subheadline: status lines */
+ --v3-foot:600 13px/18px var(--v3-font);    /* Footnote/eyebrow */
+ /* Space: 4-point grid. */
+ --v3-s1:4px;--v3-s2:8px;--v3-s3:12px;--v3-s4:16px;--v3-s5:20px;--v3-s6:24px;--v3-s8:32px;--v3-s12:48px;
+ /* Colour: paper and ink from C+, one terracotta for the primary action, gold only for Gold. */
+ --v3-paper:#f8f3e8;--v3-surface:#fffdf8;--v3-ink:#073f3b;--v3-ink2:#4f6a69;--v3-line:rgba(7,63,59,.12);
+ --v3-primary:#b9502f;--v3-primary-press:#9c4126;--v3-tool:#073f3b;--v3-tool-bg:#efe8d8;
+ --v3-done:#167b59;--v3-gold:#b8860b;--v3-gold-bg:#fff4cf;--v3-locked:#8a9997;
+ --v3-focus:#007c72;
+ /* Surfaces. */
+ --v3-radius:16px;--v3-radius-btn:12px;--v3-shadow:0 1px 2px rgba(7,63,59,.06),0 8px 24px rgba(7,63,59,.06);
+ /* Motion: only to explain a change. Disabled for reduced motion below. */
+ --v3-ease:cubic-bezier(.2,.8,.2,1);--v3-fast:160ms;--v3-move:280ms;
+ font:var(--v3-body);color:var(--v3-ink);-webkit-font-smoothing:antialiased;
+}
+.v3 *,.v3 *::before,.v3 *::after{box-sizing:border-box}
+.v3 :is(h1,h2,h3,p,ol,ul){margin:0;padding:0}
+.v3 :focus-visible{outline:3px solid var(--v3-focus);outline-offset:3px}
+/* Buttons: 48 px primary, 44 px tool, 12 px radius (DECISIONS 2026-11-07 r2). */
+.v3 .v3Btn{appearance:none;display:inline-flex;align-items:center;justify-content:center;gap:var(--v3-s2);min-height:44px;padding:0 var(--v3-s4);border:0;border-radius:var(--v3-radius-btn);background:var(--v3-tool-bg);color:var(--v3-tool);font:var(--v3-headline);text-align:center;cursor:pointer;-webkit-tap-highlight-color:transparent;transition:background var(--v3-fast),transform var(--v3-fast)}
+.v3 .v3Btn:active{transform:scale(.98)}
+.v3 .v3Btn:disabled{cursor:default;color:var(--v3-locked);background:transparent;box-shadow:inset 0 0 0 1px var(--v3-line);transform:none}
+.v3 .v3Btn.primary{min-height:52px;width:100%;background:var(--v3-primary);color:#fff;font-size:18px}
+.v3 .v3Btn.primary:active{background:var(--v3-primary-press)}
+.v3 .v3Btn.quiet{background:transparent;color:var(--v3-ink);text-decoration:underline;text-underline-offset:3px;text-decoration-thickness:1px;padding:0 var(--v3-s2)}
+.v3 .v3Card{background:var(--v3-surface);border-radius:var(--v3-radius);box-shadow:var(--v3-shadow)}
+.v3 .v3Eyebrow{font:var(--v3-foot);letter-spacing:.06em;text-transform:uppercase;color:var(--v3-primary)}
+.v3 .v3Muted{font:var(--v3-sub);color:var(--v3-ink2)}
+.v3 img{display:block;max-width:100%}
+@media (prefers-reduced-motion:reduce){.v3{--v3-fast:0ms;--v3-move:0ms}.v3 *{animation:none!important;transition:none!important}}

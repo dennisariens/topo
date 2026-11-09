@@ -64,6 +64,6 @@ Codex-spoor `v3/relief-z8`: dezelfde gemeten hoogtedata met het renderpalet. Gro
 
 ## Volgorde
 
-1. **Stijlbeeld** (Claude Code) met wat er is: de #75-scènes, het V2-panorama als tijdelijke achtergrond en het reliëf in renderkleuren. Italia en Viola naast elkaar. → eigenaar beoordeelt.
-2. Na akkoord: BG-01, 3 nieuwe scènes, het portret, de iconen en VE-01.
+1. **Stijlbeeld** (Claude Code) — gebouwd en door de eigenaar akkoord bevonden op 9-11, accent Italia ([bewijs](../qa/v3-stijlbeeld/README.md)) met wat er is: de #75-scènes, het V2-panorama als tijdelijke achtergrond en het reliëf in renderkleuren. Italia en Viola naast elkaar. → eigenaar beoordeelt.
+2. Na akkoord: eerst Codex `v3/relief-z8` en BG-01 (grootste winst), daarna 3 nieuwe scènes, het portret, de iconen en VE-01.
 3. Hermes: QA van de #75-scènes en alle nieuwe exports (maat, bytes, alfa, modelconsistentie van Nino).

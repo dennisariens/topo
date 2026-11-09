@@ -3,7 +3,7 @@
 **Kandidaat:** `output/html/TOPO-V3-Reis-Preview.html`, SHA256 `c7972188fa9816dddb620b696dd5931c5e9e2b5e7f6c25edb5fd53bec43310db`. Niet in Git; reproduceer met `node scripts/build-v3-preview.mjs`. Basis: ongewijzigde V2.0.2-`index.html` (`3aced3c3…304f5a`) + `scripts/v3/` + `assets/v3/scenes/`.
 **Openen:** `file://…#bezig` (Italia), `#bezig/viola` (Viola), `#thema-bezig` (Italia en Viola naast elkaar, desktop) en `#thema-ipad-bezig` (iPad liggend). In de previewbalk: **Italia + Viola**.
 **Opdracht:** stijlbeeld volgens `docs/v3/ARTWORK_BRIEF.md` › Volgorde 1 en besluit "Renderniveau" (DECISIONS 2026-11-09). Er zijn geen nieuwe beelden gegenereerd.
-**Oordeel:** technisch geslaagd · **eigenaar: open** (stijlbeeld wacht op jouw oordeel) · Hermes: open. Geen merge of deployment.
+**Oordeel:** technisch geslaagd · **eigenaar: richting akkoord, accent Italia (9-11)** · Hermes: open. Geen merge of deployment.
 
 ## Naast de doelbeelden
 
@@ -48,6 +48,6 @@ Browser: Chrome 157, macOS, headless, transparantie geëmuleerd als standaard (`
 
 ## Open punten
 
-1. **Eigenaar:** oordeel over het stijlbeeld en de keuze tussen Italia en Viola (opnieuw te toetsen, DECISIONS "Renderniveau").
+1. **Besloten 9-11:** richting akkoord; accent Italia. Volgorde artwork: `relief-z8` en BG-01 eerst.
 2. **Telefoon:** links van het kaartcanvas heeft de bron geen landgeometrie (Frankrijk stopt bij x = 0), dus daar staat zee. Dat speelde al vóór het stijlbeeld. Telefoon valt buiten deze opdracht; er is geen geometrie toegevoegd.
 3. Na akkoord: BG-01, drie nieuwe scènes, portret, iconen en VE-01 volgens de brief, met Hermes-QA.

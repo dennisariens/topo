@@ -324,3 +324,9 @@ Reservekopieën en reset horen in het algemene instellingenmenu. Wis voortgang b
 - **Kaart:** het reliëf staat standaard aan (**supersedes** Schoolkaart als standaard in Reis v3b; Schoolkaart blijft één tik). Het renderpalet is een SVG-kleurfilter op het bestaande raster tot `v3/relief-z8`, met witte kustrand, kustzone en landschaduw uit kopieën van dezelfde paden. Geometrie gelijk (46/46).
 - **Toegankelijkheid:** bij "Verminder transparantie" of meer contrast wordt het venster ondoorzichtig.
 - **Check:** `scripts/qa-v3-stijlbeeld.py`; bewijs in `docs/qa/v3-stijlbeeld/`. Oordeel eigenaar open; geen nieuwe beelden gegenereerd.
+
+## 2026-11-09 — Stijlbeeld akkoord; accent Italia
+
+- **Besluit eigenaar:** de richting van het stijlbeeld is akkoord (zwevend venster boven landschap, hoofdstukbeelden, reliëf in renderpalet, één hoofdactie). Het verschil met de renders zit in het materiaal, niet in de opbouw.
+- **Accent:** Italia (terracotta) blijft standaard; dit bevestigt de keuze van 9 november na de hertoetsing uit "Renderniveau". Viola blijft alleen ter vergelijking in de preview.
+- **Volgorde artwork:** eerst het reliëf `v3/relief-z8` (Codex) en BG-01, daarna de drie stedenscènes (Roma, Venezia, Napoli), het Nino-portret, de iconen en VE-01. Alles met Hermes-QA volgens `docs/v3/ARTWORK_BRIEF.md`.

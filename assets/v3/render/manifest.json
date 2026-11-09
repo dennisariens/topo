@@ -180,6 +180,31 @@
     ],
     "alpha": false
    }
+  },
+  {
+   "id": "BG-02",
+   "status": "ter beoordeling eigenaar",
+   "note": "Lanczos-upscale naar 2880x1800, geen generatieve upscale",
+   "master": {
+    "path": "assets/v3/render/masters/BG-02-meer.png",
+    "bytes": 2010968,
+    "sha256": "a2c3b48e6a47fe83c1975cba73fbe61fae9a8129c3df204ae0156b3212f1e9de",
+    "size": [
+     1586,
+     992
+    ],
+    "alpha": false
+   },
+   "export": {
+    "path": "assets/v3/render/exports/BG-02-meer-2880.webp",
+    "bytes": 321346,
+    "sha256": "939934b56be3406fa5a48717b900acea521f6f45674cce82b09993ca3630c660",
+    "size": [
+     2880,
+     1800
+    ],
+    "alpha": false
+   }
   }
  ]
 }

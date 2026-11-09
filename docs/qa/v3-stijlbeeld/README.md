@@ -1,6 +1,6 @@
 # V3 stijlbeeld — Reis op renderniveau, met de renderassets
 
-**Kandidaat:** `output/html/TOPO-V3-Reis-Preview.html`, SHA256 `04cd49e797ed0b0014d775780561057895943f732274bcc275d163dbceb6852f`. Niet in Git; reproduceer met `node scripts/build-v3-preview.mjs`. Basis: ongewijzigde V2.0.2-`index.html` (`3aced3c3…304f5a`) + `scripts/v3/` + `assets/v3/scenes/` + `assets/v3/render/` (exports en manifest van `art/v3-render-assets` @ `908b4a4`, byte-gelijk) + de z8-renderlagen (`assets/discovery/terrain-z8-render*`, van `v3/relief-z8` @ `2a7b0cf`).
+**Kandidaat:** `output/html/TOPO-V3-Reis-Preview.html`, SHA256 `23dced34e7d9079cd59195532721f39b1bc6c1f00032ce6c4a41bb4ea619b556`. Niet in Git; reproduceer met `node scripts/build-v3-preview.mjs`. Basis: ongewijzigde V2.0.2-`index.html` (`3aced3c3…304f5a`) + `scripts/v3/` + `assets/v3/scenes/` + `assets/v3/render/` (exports en manifest van `art/v3-render-assets` @ `05ab1d0`, byte-gelijk; portret, Roma en Napoli vernieuwd met het gesloten blauwe werkshirt) + de z8-renderlagen (`assets/discovery/terrain-z8-render*`, van `v3/relief-z8` @ `2a7b0cf`).
 **Openen:** `file://…#bezig` (Italia, BG-01), `#bezig/bg02` en `#bezig/bg03` (alternatieve achtergronden; ook in de previewbalk), `#bezig/viola` (Viola), `#thema-bezig` (Italia en Viola naast elkaar, desktop) en `#thema-ipad-bezig` (iPad liggend). In de previewbalk: **Italia + Viola**.
 **Opdracht:** stijlbeeld volgens `docs/v3/ARTWORK_BRIEF.md` › Volgorde 1 en besluit "Renderniveau" (DECISIONS 2026-11-09). Er zijn geen nieuwe beelden gegenereerd; de renderassets zijn ongewijzigd overgenomen (SHA256 = manifest, gecontroleerd door de build én de QA).
 **Oordeel:** technisch geslaagd · **eigenaar: richting akkoord, accent Italia (9-11)**; renderassets ter beoordeling · Hermes: modelcheck en hertest open. Geen merge of deployment.
@@ -46,19 +46,19 @@ Browser: Chrome 157, macOS, headless, transparantie geëmuleerd als standaard (`
 
 ## Renderassets: HTML-groei
 
-Preview 42.784.186 → 50.222.253 bytes (**+7,44 MB, +17%**); `index.html` (41.445.845 bytes) is byte-gelijk. Ingebed als base64:
+Preview 42.784.186 → 50.199.445 bytes (**+7,42 MB, +17%**; met de assets van `05ab1d0` 22.808 bytes kleiner dan met `908b4a4`); `index.html` (41.445.845 bytes) is byte-gelijk. Ingebed als base64:
 
 | Groep | MB |
 | --- | ---: |
 | Koppen van de 8 #75-scènes (nieuw: kop bij de titel) | 4,21 |
 | BG-01, BG-02, BG-03 (2880 × 1800) | 1,61 |
-| Koppen Roma, Venezia, Napoli (1672 × 941) | 1,25 |
+| Koppen Roma, Venezia, Napoli (1672 × 941) | 1,23 |
 | Miniaturen Roma, Venezia, Napoli | 0,12 |
 | VE-01 | 0,12 |
 | NINO-PORTRET | 0,07 |
 | Zes iconen (96 px) | 0,05 |
 
-De #75-scènes zitten niet in `index.html`; hergebruik is daarom niet mogelijk. Wie de preview kleiner wil: BG-02/BG-03 alleen in de preview, en koppen op ~1200 px breed (beslissing eigenaar; nu niet gedaan, want "geen beelden aanpassen").
+De #75-scènes zitten niet in `index.html`; hergebruik is daarom niet mogelijk. Besluit 9-11: alle drie de achtergronden blijven; kwaliteit gaat voor grootte. Groei oplossen we technisch: eerst meten op een echte iPad, daarna zo nodig AVIF en decoderen wanneer zichtbaar.
 
 ## Gevonden en hersteld tijdens de QA
 
@@ -73,7 +73,6 @@ De #75-scènes zitten niet in `index.html`; hergebruik is daarom niet mogelijk. 
 ## Open punten
 
 1. **Besloten 9-11:** richting akkoord; accent Italia. `relief-z8` en de renderassets zijn ingebouwd.
-2. **Renderassets:** volgens het manifest staan meerdere beelden nog "ter beoordeling eigenaar"; de **modelcheck van Hermes is open**. De kaart en de leerinhoud zijn er niet door veranderd (46/46).
+2. **Renderassets:** BG-01..03 akkoord (uitzondering bronresolutie). Portret, Roma en Napoli zijn vernieuwd (shirt) en wachten op de **Hermes-hertest**; Venezia wacht op de modelcheck; iconen en VE-01 staan "ter beoordeling eigenaar". De kaart en de leerinhoud zijn er niet door veranderd (46/46).
 3. **Postkaarten:** de tegel volgt de regel van het V2-Reisboekje (2 na Eilanden, +1 bij rit 3 en rit 6); de QA telt ze in het boek zelf na.
-4. Keuze eigenaar: BG-01 als standaard bevestigen of BG-02/BG-03.
-5. **Telefoon:** links van het kaartcanvas heeft de bron geen landgeometrie (Frankrijk stopt bij x = 0), dus daar staat zee. Dat speelde al vóór het stijlbeeld. Telefoon valt buiten deze opdracht; er is geen geometrie toegevoegd.
+4. **Telefoon:** links van het kaartcanvas heeft de bron geen landgeometrie (Frankrijk stopt bij x = 0), dus daar staat zee. Dat speelde al vóór het stijlbeeld. Telefoon valt buiten deze opdracht; er is geen geometrie toegevoegd.

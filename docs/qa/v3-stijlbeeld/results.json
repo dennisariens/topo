@@ -1,6 +1,6 @@
 {
  "html": "output/html/TOPO-V3-Reis-Preview.html",
- "htmlSha256": "04cd49e797ed0b0014d775780561057895943f732274bcc275d163dbceb6852f",
+ "htmlSha256": "23dced34e7d9079cd59195532721f39b1bc6c1f00032ce6c4a41bb4ea619b556",
  "indexSha256": "3aced3c31259011b0af2947c78f71965cb4beb2e88c69d1663e61792b0304f5a",
  "runs": {
   "desktop-italia": {
@@ -12,10 +12,10 @@
     "sha256": "c07c938d990250fdcd3a370b90f74c7cb8d9a422f4b720dbeb5e93850309b9c0"
    },
    "art": {
-    "portrait": "b0d5dbfe1f82068b025ca08270b8cc8edfd2a57c41746f68cae9eaeb2921acd0",
+    "portrait": "97fe052f40fea2ec7c07a2935d8bb2f544777b4e3893c1a509ab9bc0c1a492e2",
     "slice": "1b1fa303abc5775133b00d76f9b2d4c6945f759c12caf75d50b492bdb96ad550",
     "vespa": "0a060a0cc77a46487b3eac060653383e7feb883f6e4736b9512cf6086af8e869",
-    "kop": "c9d9412066ebc2a8815ba681142384fa67000b9c439518319376da2a202c8043",
+    "kop": "5a01badbf0f26fe28109e999c592615d882eb704e6bef809d40e70436b4f6465",
     "kopShown": true,
     "kopBeforeTitle": true,
     "selected": "city2"
@@ -61,7 +61,7 @@
      ],
      "nameClipped": false,
      "nameLines": 1,
-     "sha256": "2c6cb3bcca60b075c383448dc10a5a92bf1b56336ea2f5ab0810709586e3f88d"
+     "sha256": "518ab33ebc0b6902850ea46bdf3a57cc7556351ce40be2fc235e9c3eb439c146"
     },
     {
      "chapter": "city3",
@@ -91,7 +91,7 @@
      ],
      "nameClipped": false,
      "nameLines": 1,
-     "sha256": "c4b13d59449065f558b22620661cbb600cd07f94b548ab9a6b853da5b5ef1d30"
+     "sha256": "f62e812526d488d47740ae87ca5b38a04291729360cae764886453336a954778"
     },
     {
      "chapter": "islands",
@@ -259,10 +259,10 @@
     "sha256": "c07c938d990250fdcd3a370b90f74c7cb8d9a422f4b720dbeb5e93850309b9c0"
    },
    "art": {
-    "portrait": "b0d5dbfe1f82068b025ca08270b8cc8edfd2a57c41746f68cae9eaeb2921acd0",
+    "portrait": "97fe052f40fea2ec7c07a2935d8bb2f544777b4e3893c1a509ab9bc0c1a492e2",
     "slice": "1b1fa303abc5775133b00d76f9b2d4c6945f759c12caf75d50b492bdb96ad550",
     "vespa": "0a060a0cc77a46487b3eac060653383e7feb883f6e4736b9512cf6086af8e869",
-    "kop": "c9d9412066ebc2a8815ba681142384fa67000b9c439518319376da2a202c8043",
+    "kop": "5a01badbf0f26fe28109e999c592615d882eb704e6bef809d40e70436b4f6465",
     "kopShown": true,
     "kopBeforeTitle": true,
     "selected": "city2"
@@ -308,7 +308,7 @@
      ],
      "nameClipped": false,
      "nameLines": 1,
-     "sha256": "2c6cb3bcca60b075c383448dc10a5a92bf1b56336ea2f5ab0810709586e3f88d"
+     "sha256": "518ab33ebc0b6902850ea46bdf3a57cc7556351ce40be2fc235e9c3eb439c146"
     },
     {
      "chapter": "city3",
@@ -338,7 +338,7 @@
      ],
      "nameClipped": false,
      "nameLines": 1,
-     "sha256": "c4b13d59449065f558b22620661cbb600cd07f94b548ab9a6b853da5b5ef1d30"
+     "sha256": "f62e812526d488d47740ae87ca5b38a04291729360cae764886453336a954778"
     },
     {
      "chapter": "islands",
@@ -506,10 +506,10 @@
     "sha256": "c07c938d990250fdcd3a370b90f74c7cb8d9a422f4b720dbeb5e93850309b9c0"
    },
    "art": {
-    "portrait": "b0d5dbfe1f82068b025ca08270b8cc8edfd2a57c41746f68cae9eaeb2921acd0",
+    "portrait": "97fe052f40fea2ec7c07a2935d8bb2f544777b4e3893c1a509ab9bc0c1a492e2",
     "slice": "1b1fa303abc5775133b00d76f9b2d4c6945f759c12caf75d50b492bdb96ad550",
     "vespa": "0a060a0cc77a46487b3eac060653383e7feb883f6e4736b9512cf6086af8e869",
-    "kop": "c9d9412066ebc2a8815ba681142384fa67000b9c439518319376da2a202c8043",
+    "kop": "5a01badbf0f26fe28109e999c592615d882eb704e6bef809d40e70436b4f6465",
     "kopShown": true,
     "kopBeforeTitle": true,
     "selected": "city2"
@@ -555,7 +555,7 @@
      ],
      "nameClipped": false,
      "nameLines": 1,
-     "sha256": "2c6cb3bcca60b075c383448dc10a5a92bf1b56336ea2f5ab0810709586e3f88d"
+     "sha256": "518ab33ebc0b6902850ea46bdf3a57cc7556351ce40be2fc235e9c3eb439c146"
     },
     {
      "chapter": "city3",
@@ -585,7 +585,7 @@
      ],
      "nameClipped": false,
      "nameLines": 1,
-     "sha256": "c4b13d59449065f558b22620661cbb600cd07f94b548ab9a6b853da5b5ef1d30"
+     "sha256": "f62e812526d488d47740ae87ca5b38a04291729360cae764886453336a954778"
     },
     {
      "chapter": "islands",
@@ -753,10 +753,10 @@
     "sha256": "c07c938d990250fdcd3a370b90f74c7cb8d9a422f4b720dbeb5e93850309b9c0"
    },
    "art": {
-    "portrait": "b0d5dbfe1f82068b025ca08270b8cc8edfd2a57c41746f68cae9eaeb2921acd0",
+    "portrait": "97fe052f40fea2ec7c07a2935d8bb2f544777b4e3893c1a509ab9bc0c1a492e2",
     "slice": "1b1fa303abc5775133b00d76f9b2d4c6945f759c12caf75d50b492bdb96ad550",
     "vespa": "0a060a0cc77a46487b3eac060653383e7feb883f6e4736b9512cf6086af8e869",
-    "kop": "c9d9412066ebc2a8815ba681142384fa67000b9c439518319376da2a202c8043",
+    "kop": "5a01badbf0f26fe28109e999c592615d882eb704e6bef809d40e70436b4f6465",
     "kopShown": true,
     "kopBeforeTitle": true,
     "selected": "city2"
@@ -802,7 +802,7 @@
      ],
      "nameClipped": false,
      "nameLines": 1,
-     "sha256": "2c6cb3bcca60b075c383448dc10a5a92bf1b56336ea2f5ab0810709586e3f88d"
+     "sha256": "518ab33ebc0b6902850ea46bdf3a57cc7556351ce40be2fc235e9c3eb439c146"
     },
     {
      "chapter": "city3",
@@ -832,7 +832,7 @@
      ],
      "nameClipped": false,
      "nameLines": 1,
-     "sha256": "c4b13d59449065f558b22620661cbb600cd07f94b548ab9a6b853da5b5ef1d30"
+     "sha256": "f62e812526d488d47740ae87ca5b38a04291729360cae764886453336a954778"
     },
     {
      "chapter": "islands",
@@ -1000,10 +1000,10 @@
     "sha256": null
    },
    "art": {
-    "portrait": "b0d5dbfe1f82068b025ca08270b8cc8edfd2a57c41746f68cae9eaeb2921acd0",
+    "portrait": "97fe052f40fea2ec7c07a2935d8bb2f544777b4e3893c1a509ab9bc0c1a492e2",
     "slice": "1b1fa303abc5775133b00d76f9b2d4c6945f759c12caf75d50b492bdb96ad550",
     "vespa": "0a060a0cc77a46487b3eac060653383e7feb883f6e4736b9512cf6086af8e869",
-    "kop": "c9d9412066ebc2a8815ba681142384fa67000b9c439518319376da2a202c8043",
+    "kop": "5a01badbf0f26fe28109e999c592615d882eb704e6bef809d40e70436b4f6465",
     "kopShown": false,
     "kopBeforeTitle": true,
     "selected": "city2"
@@ -1049,7 +1049,7 @@
      ],
      "nameClipped": false,
      "nameLines": 1,
-     "sha256": "2c6cb3bcca60b075c383448dc10a5a92bf1b56336ea2f5ab0810709586e3f88d"
+     "sha256": "518ab33ebc0b6902850ea46bdf3a57cc7556351ce40be2fc235e9c3eb439c146"
     },
     {
      "chapter": "city3",
@@ -1079,7 +1079,7 @@
      ],
      "nameClipped": false,
      "nameLines": 1,
-     "sha256": "c4b13d59449065f558b22620661cbb600cd07f94b548ab9a6b853da5b5ef1d30"
+     "sha256": "f62e812526d488d47740ae87ca5b38a04291729360cae764886453336a954778"
     },
     {
      "chapter": "islands",
@@ -1263,9 +1263,9 @@
  },
  "kops": {
   "city1": "fc30759340d0a54a2b63e29adcb4a4f4b20078021941410faf0f564793baf048",
-  "city2": "c9d9412066ebc2a8815ba681142384fa67000b9c439518319376da2a202c8043",
+  "city2": "5a01badbf0f26fe28109e999c592615d882eb704e6bef809d40e70436b4f6465",
   "city3": "719344db49bfd156f6b22904b1ff31dd2e2899ac133b0c303fdcf85b165dae02",
-  "city4": "ba56ee524dcd170ecefb97e4a7f3d7dd2d2555d0cb29f1e04b92a42512324318",
+  "city4": "d9662509ce537fa8fcfb0485acc5478ff8ddc632b7768dbaf192269148a12668",
   "islands": "8b2d530acee7c727479cf9593e55e1b03bbadbdf85971a631cce2c1097ee9093",
   "mountains": "ea8841762b495239c1ec89a5759c03ec09c002af3a5c550c1370205ea6ef3fce",
   "volcanoes": "80623ad790d3f8c32a39276e84106bda9ccd37d57f79d3268091f0206466b654",

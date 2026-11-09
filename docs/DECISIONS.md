@@ -361,3 +361,8 @@ Reservekopieën en reset horen in het algemene instellingenmenu. Wis voortgang b
 
 - **Besluit eigenaar:** Nino draagt in elk beeld het gesloten blauwe werkshirt uit de canonieke referenties, dichtgeknoopt met kraag, zonder wit shirt eronder. **Supersedes** de regel van vandaag dat de snit per scène mag variëren.
 - **Gevolg:** portret, scène Roma en scène Napoli gaan terug voor het shirt (Hermes 908b4a4); Venezia en de #75-scènes blijven.
+
+## 2026-11-09 — Vernieuwde renderassets (05ab1d0) in V3
+
+- Portret, scène Roma en scène Napoli met het gesloten blauwe werkshirt, van `art/v3-render-assets` @ `05ab1d0`. Byte-gelijk overgenomen, SHA256 volgens het manifest. **Supersedes** dezelfde drie exports van `908b4a4`. De drie achtergronden blijven (besluit 9-11).
+- Preview 50.199.445 bytes (+7,42 MB t.o.v. vóór de renderassets); `index.html` blijft byte-gelijk. Klaar voor de Hermes-hertest op de pin van deze commit.

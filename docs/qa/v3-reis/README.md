@@ -1,6 +1,6 @@
 # V3 golden screen 1 — Reis / hoofdstukkeuze (v3b)
 
-**Kandidaat:** `output/html/TOPO-V3-Reis-Preview.html`, SHA256 `04cd49e797ed0b0014d775780561057895943f732274bcc275d163dbceb6852f` (bevat nu ook de les, zie [v3-les](../v3-les/README.md)). Wordt niet meer in Git gezet (41 MB per iteratie); reproduceer met `node scripts/build-v3-preview.mjs` op deze commit. Basis: ongewijzigde V2.0.2-`index.html` (`3aced3c3…304f5a`) + `scripts/v3/`.
+**Kandidaat:** `output/html/TOPO-V3-Reis-Preview.html`, SHA256 `23dced34e7d9079cd59195532721f39b1bc6c1f00032ce6c4a41bb4ea619b556` (bevat nu ook de les, zie [v3-les](../v3-les/README.md)). Wordt niet meer in Git gezet (41 MB per iteratie); reproduceer met `node scripts/build-v3-preview.mjs` op deze commit. Basis: ongewijzigde V2.0.2-`index.html` (`3aced3c3…304f5a`) + `scripts/v3/`.
 **Openen:** direct via `file://`. Standen: `#nieuw`, `#bezig`, `#afgerond`, `#alles`; thema `…/viola`; naast elkaar `#naast-bezig`. Demostanden staan alleen in het geheugen.
 **Oordeel:** technisch geslaagd · visueel zelf beoordeeld · **eigenaar: open** · Hermes: open. Geen merge, deployment of downloadvervanging.
 

@@ -5,7 +5,7 @@
  "assets": [
   {
    "id": "BG-01",
-   "status": "eigenaar akkoord (2026-11-09); Hermes modelcheck open",
+   "status": "eigenaar akkoord; uitzondering bronresolutie vastgelegd (DECISIONS 9-11)",
    "note": "Lanczos-upscale 1586x992 -> 2880x1800, geen generatieve upscale; iets zacht op DPR 2",
    "master": {
     "path": "assets/v3/render/masters/BG-01-toscane.png",
@@ -30,12 +30,12 @@
   },
   {
    "id": "NINO-PORTRET",
-   "status": "eigenaar akkoord (2026-11-09); Hermes modelcheck open",
-   "note": "tweede versie na correctie (jonger, ronder, blik naar kijker); achtergrond verwijderd (flood fill op wit + 1,2 px zachte rand); lichte rand bij krullen links alleen zichtbaar op donker",
+   "status": "ter beoordeling eigenaar; Hermes hertest",
+   "note": "derde versie: gesloten blauw werkshirt (besluit 9-11); achtergrond verwijderd",
    "master": {
     "path": "assets/v3/render/masters/NINO-PORTRET.png",
-    "bytes": 2199209,
-    "sha256": "e956bea057535cb4150317b14385e971cbe1cafc7276d7958657fcaf3e227dc9",
+    "bytes": 2114016,
+    "sha256": "33a87818f5848dc4c7d6f91e6120742dc755cee7d3eee22e25ff41c8917d93fe",
     "size": [
      1122,
      1402
@@ -44,8 +44,8 @@
    },
    "master_alpha": {
     "path": "assets/v3/render/masters/NINO-PORTRET-alpha.png",
-    "bytes": 2540337,
-    "sha256": "d45c216484b51c00e5071f95b934ace5a2c894530bef0408d4bc204bb7c6be05",
+    "bytes": 2451210,
+    "sha256": "d92f74212e2b97010afff9afc80b20137ebc6eef854547228facdbc5f038e216",
     "size": [
      1122,
      1402
@@ -54,8 +54,8 @@
    },
    "export": {
     "path": "assets/v3/render/exports/NINO-PORTRET-512.webp",
-    "bytes": 52864,
-    "sha256": "b0d5dbfe1f82068b025ca08270b8cc8edfd2a57c41746f68cae9eaeb2921acd0",
+    "bytes": 53086,
+    "sha256": "97fe052f40fea2ec7c07a2935d8bb2f544777b4e3893c1a509ab9bc0c1a492e2",
     "size": [
      512,
      512
@@ -66,12 +66,12 @@
   {
    "id": "SCENE-ROMA",
    "chapter": "city2",
-   "status": "eigenaar akkoord (2026-11-09); Hermes modelcheck open",
-   "note": "tweede versie na correctie (helm, outfit, Vespa zonder vlag); jasje donkerder blauw dan canoniek werkshirt",
+   "status": "ter beoordeling eigenaar; Hermes hertest",
+   "note": "derde versie: gesloten blauw werkshirt (besluit 9-11); Vespa zonder merktekens",
    "master": {
     "path": "assets/v3/render/masters/SCENE-ROMA.png",
-    "bytes": 2732736,
-    "sha256": "0dd39083112266fb4e644f11bc081fc775699b3db49a8eb11829e551434e55ce",
+    "bytes": 2719471,
+    "sha256": "f7478b9cd7288309b1a4348897c124729bd3e260bc531d6747e2301a170560e6",
     "size": [
      1672,
      941
@@ -80,8 +80,8 @@
    },
    "export_kop": {
     "path": "assets/v3/render/exports/SCENE-ROMA-kop-1672.webp",
-    "bytes": 346432,
-    "sha256": "c9d9412066ebc2a8815ba681142384fa67000b9c439518319376da2a202c8043",
+    "bytes": 336364,
+    "sha256": "5a01badbf0f26fe28109e999c592615d882eb704e6bef809d40e70436b4f6465",
     "size": [
      1672,
      941
@@ -90,8 +90,8 @@
    },
    "export_mini": {
     "path": "assets/v3/render/exports/SCENE-ROMA-mini-480.webp",
-    "bytes": 36158,
-    "sha256": "2c6cb3bcca60b075c383448dc10a5a92bf1b56336ea2f5ab0810709586e3f88d",
+    "bytes": 34598,
+    "sha256": "518ab33ebc0b6902850ea46bdf3a57cc7556351ce40be2fc235e9c3eb439c146",
     "size": [
      480,
      270
@@ -148,12 +148,12 @@
   {
    "id": "SCENE-NAPOLI",
    "chapter": "city4",
-   "status": "ter beoordeling eigenaar; Hermes modelcheck open",
-   "note": "tweede versie: emblemen en tekst op de Vespa verwijderd door ChatGPT-bewerking; claxonrooster behouden",
+   "status": "ter beoordeling eigenaar; Hermes hertest",
+   "note": "derde versie: gesloten blauw werkshirt, omgeslagen broek (besluit 9-11); Vespa zonder merktekens",
    "master": {
     "path": "assets/v3/render/masters/SCENE-NAPOLI.png",
-    "bytes": 2477218,
-    "sha256": "e728085e8086ed4a4f45e494c12a03009e818500f3d1555b037d9574c27404ee",
+    "bytes": 2495974,
+    "sha256": "0a361636f52069f517e1bb7387f4b2f34a60d2721b14f09863862fa58628ab72",
     "size": [
      1672,
      941
@@ -162,8 +162,8 @@
    },
    "export_kop": {
     "path": "assets/v3/render/exports/SCENE-NAPOLI-kop-1672.webp",
-    "bytes": 281348,
-    "sha256": "ba56ee524dcd170ecefb97e4a7f3d7dd2d2555d0cb29f1e04b92a42512324318",
+    "bytes": 275572,
+    "sha256": "d9662509ce537fa8fcfb0485acc5478ff8ddc632b7768dbaf192269148a12668",
     "size": [
      1672,
      941
@@ -172,8 +172,8 @@
    },
    "export_mini": {
     "path": "assets/v3/render/exports/SCENE-NAPOLI-mini-480.webp",
-    "bytes": 27908,
-    "sha256": "c4b13d59449065f558b22620661cbb600cd07f94b548ab9a6b853da5b5ef1d30",
+    "bytes": 27984,
+    "sha256": "f62e812526d488d47740ae87ca5b38a04291729360cae764886453336a954778",
     "size": [
      480,
      270
@@ -183,7 +183,7 @@
   },
   {
    "id": "BG-02",
-   "status": "ter beoordeling eigenaar",
+   "status": "eigenaar akkoord; uitzondering bronresolutie vastgelegd (DECISIONS 9-11)",
    "note": "Lanczos-upscale naar 2880x1800, geen generatieve upscale",
    "master": {
     "path": "assets/v3/render/masters/BG-02-meer.png",
@@ -208,7 +208,7 @@
   },
   {
    "id": "BG-03",
-   "status": "ter beoordeling eigenaar",
+   "status": "eigenaar akkoord; uitzondering bronresolutie vastgelegd (DECISIONS 9-11)",
    "note": "Lanczos-upscale naar 2880x1800; midden feller dan BG-01/02 (verzadigde zee)",
    "master": {
     "path": "assets/v3/render/masters/BG-03-kust.png",

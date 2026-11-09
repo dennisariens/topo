@@ -1,6 +1,6 @@
 # V3 Golden Experience 01 — beat 3–7 (les → feedback → beloning → Reisboekje)
 
-**Kandidaat:** `output/html/TOPO-V3-Reis-Preview.html` (naam behouden; bevat nu Reis én les), SHA256 `04cd49e797ed0b0014d775780561057895943f732274bcc275d163dbceb6852f`. Niet in Git; reproduceer met `node scripts/build-v3-preview.mjs`. Basis: ongewijzigde V2.0.2-`index.html` (`3aced3c3…304f5a`) + `scripts/v3/` (`tokens.css`, `reis.*`, `les.*`).
+**Kandidaat:** `output/html/TOPO-V3-Reis-Preview.html` (naam behouden; bevat nu Reis én les), SHA256 `23dced34e7d9079cd59195532721f39b1bc6c1f00032ce6c4a41bb4ea619b556`. Niet in Git; reproduceer met `node scripts/build-v3-preview.mjs`. Basis: ongewijzigde V2.0.2-`index.html` (`3aced3c3…304f5a`) + `scripts/v3/` (`tokens.css`, `reis.*`, `les.*`).
 **Spec:** [docs/v3/GE01.md](../../v3/GE01.md). **Openen:** `file://…#bezig` → **Aanwijzen** (of **↻ Ontdekken**).
 **Oordeel:** technisch geslaagd · visueel zelf beoordeeld · **eigenaar: open** · Hermes: open. Geen merge, deployment of downloadvervanging.
 

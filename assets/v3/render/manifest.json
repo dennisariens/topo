@@ -5,7 +5,7 @@
  "assets": [
   {
    "id": "BG-01",
-   "status": "eigenaar akkoord (2026-11-09); Hermes modelcheck open",
+   "status": "eigenaar akkoord; uitzondering bronresolutie vastgelegd (DECISIONS 9-11)",
    "note": "Lanczos-upscale 1586x992 -> 2880x1800, geen generatieve upscale; iets zacht op DPR 2",
    "master": {
     "path": "assets/v3/render/masters/BG-01-toscane.png",
@@ -148,12 +148,12 @@
   {
    "id": "SCENE-NAPOLI",
    "chapter": "city4",
-   "status": "ter beoordeling eigenaar; Hermes modelcheck open",
-   "note": "tweede versie: emblemen en tekst op de Vespa verwijderd door ChatGPT-bewerking; claxonrooster behouden",
+   "status": "ter beoordeling eigenaar; Hermes hertest",
+   "note": "derde versie: gesloten blauw werkshirt, omgeslagen broek (besluit 9-11); Vespa zonder merktekens",
    "master": {
     "path": "assets/v3/render/masters/SCENE-NAPOLI.png",
-    "bytes": 2477218,
-    "sha256": "e728085e8086ed4a4f45e494c12a03009e818500f3d1555b037d9574c27404ee",
+    "bytes": 2495974,
+    "sha256": "0a361636f52069f517e1bb7387f4b2f34a60d2721b14f09863862fa58628ab72",
     "size": [
      1672,
      941
@@ -162,8 +162,8 @@
    },
    "export_kop": {
     "path": "assets/v3/render/exports/SCENE-NAPOLI-kop-1672.webp",
-    "bytes": 281348,
-    "sha256": "ba56ee524dcd170ecefb97e4a7f3d7dd2d2555d0cb29f1e04b92a42512324318",
+    "bytes": 275572,
+    "sha256": "d9662509ce537fa8fcfb0485acc5478ff8ddc632b7768dbaf192269148a12668",
     "size": [
      1672,
      941
@@ -172,8 +172,8 @@
    },
    "export_mini": {
     "path": "assets/v3/render/exports/SCENE-NAPOLI-mini-480.webp",
-    "bytes": 27908,
-    "sha256": "c4b13d59449065f558b22620661cbb600cd07f94b548ab9a6b853da5b5ef1d30",
+    "bytes": 27984,
+    "sha256": "f62e812526d488d47740ae87ca5b38a04291729360cae764886453336a954778",
     "size": [
      480,
      270
@@ -183,7 +183,7 @@
   },
   {
    "id": "BG-02",
-   "status": "ter beoordeling eigenaar",
+   "status": "eigenaar akkoord; uitzondering bronresolutie vastgelegd (DECISIONS 9-11)",
    "note": "Lanczos-upscale naar 2880x1800, geen generatieve upscale",
    "master": {
     "path": "assets/v3/render/masters/BG-02-meer.png",
@@ -208,7 +208,7 @@
   },
   {
    "id": "BG-03",
-   "status": "ter beoordeling eigenaar",
+   "status": "eigenaar akkoord; uitzondering bronresolutie vastgelegd (DECISIONS 9-11)",
    "note": "Lanczos-upscale naar 2880x1800; midden feller dan BG-01/02 (verzadigde zee)",
    "master": {
     "path": "assets/v3/render/masters/BG-03-kust.png",

@@ -1,0 +1,86 @@
+{
+  "id": "SCENE-ROMA",
+  "verdict": "REWORK",
+  "taal": "nl",
+  "scope": "Onafhankelijke zichtbare Nino-model-QA, geen algemene release-/alpha-/maat-/logo-/geografie-QA",
+  "pin": "908b4a498199ece40a047f19efb2e80fe62812b8",
+  "scene75_pin": "8a704cb23da97baf7197635df7fa12f06b864a24",
+  "traits": {
+    "gezicht": {
+      "status": "PASS",
+      "observatie": "Nino herkenbaar: warme bruine ogen, sproeten, klein rond neusje, brede vriendelijke glimlach, volle wenkbrauwen. Kandidaat iets gladder en ronder dan #75; geen losstaande identiteitsblokkade."
+    },
+    "haar": {
+      "status": "PASS",
+      "observatie": "Donkerbruin, volumineus krullend haar onder de helm. Grovere, sterker gescheiden lokken dan fijne canonieke krullen; kleur en silhouet blijven passend."
+    },
+    "helm_en_bril": {
+      "status": "PASS",
+      "observatie": "Olijfgroene vintage helm met bruine riemen; twee ronde amber/bronskleurige brilglazen bovenop. Geen verkeerde helmsoort of ontbrekende bril."
+    },
+    "rode_sjaal": {
+      "status": "PASS",
+      "observatie": "Rode gewikkelde sjaal met losse wapperende uiteinden; passend. Fijne canonieke stofpatronen minder prominent, geen modelblokkade."
+    },
+    "blauw_shirt": {
+      "status": "REWORK",
+      "observatie": "Donkerblauw open overshirt met centrale lichte/witte ondershirtstrook, zichtbare knopen langs open rand. Canon toont gesloten blauw knoopwerkshirt. Mouwen/knopen zijn aanwezig, maar outfitconstructie is anders; niet alleen kleurgrading."
+    },
+    "rugzak": {
+      "status": "PASS",
+      "observatie": "Bruin leren rugzakje met brede schouderriemen, gespen en opgezette zijvakken; herkenbare materiaal- en kleurconsistentie. Detailindeling varieert, ook binnen referenties."
+    },
+    "cargobroek": {
+      "status": "PASS",
+      "observatie": "Olijfgroene cargobroek met zichtbare klepzak aan bovenbeen en omgeslagen pijp; passend bij referenties."
+    },
+    "schoenen": {
+      "status": "PASS",
+      "observatie": "Bruine hoge vetersneakers met lichte veters, rubber neus/lichte zool; passend. Geen laarzen of ander schoenmodel."
+    },
+    "Vespa": {
+      "status": "PASS",
+      "observatie": "Rode klassieke scooter: rond koplicht, ronde spatborden, gebogen beenschild, zwart zadel, metalen rand/voetplank en zijrooster. Glad, glanzend en minder verweerd dan canoniek, maar zelfde herkenbare voertuigtype. Spiegel-/roostervariatie niet op zichzelf afkeur; #75 heeft perspectiefvariatie."
+    }
+  },
+  "detailed_deviations": [
+    "Blauw shirt is als open overshirt over wit ondershirt getekend. Herstel gesloten canoniek blauw werkshirt; alleen lichter blauw maken lost witte middenstrook niet op.",
+    "Gezicht is iets ronder met grotere oogopeningen, krullen gladder/grover en scooter nieuwer/glanzender. Secundaire stijlvariatie: Nino blijft herkenbaar; geen afzonderlijke afkeur daarop."
+  ],
+  "miniature": {
+    "status": "PASS",
+    "geen_Nino": true,
+    "waarneming": "Volledig 480x270 bekeken: alleen landschap/architectuur/water/lucht. Geen hoofd, helm, sjaal, ledemaat, rugzak of Vespa-rest zichtbaar. Modelkenmerken in mini dus N/A; afwezigheid Nino voldoet aan brief regel 38."
+  },
+  "proof_images": [
+    "/Users/dennisariens/.hermes/cache/scratch/hermes-v3-art-908b4a4/model/SCENE-ROMA-comparison.png"
+  ],
+  "proof_metadata": {
+    "id": "SCENE-ROMA",
+    "proof": "/Users/dennisariens/.hermes/cache/scratch/hermes-v3-art-908b4a4/model/SCENE-ROMA-comparison.png",
+    "candidate_path": "/Users/dennisariens/projects/topo-v3-art-independent-qa/assets/v3/render/exports/SCENE-ROMA-kop-1672.webp",
+    "candidate_sha256": "c9d9412066ebc2a8815ba681142384fa67000b9c439518319376da2a202c8043",
+    "reference_path": "/Users/dennisariens/.hermes/cache/scratch/hermes-v3-art-908b4a4/references/topo-steden-firenze.png",
+    "crop_coordinates_native_halfopen": {
+      "candidate": [
+        255,
+        120,
+        825,
+        920
+      ],
+      "reference": [
+        110,
+        100,
+        690,
+        940
+      ],
+      "face": [
+        350,
+        125,
+        650,
+        570
+      ]
+    }
+  },
+  "blocked_reasons": []
+}

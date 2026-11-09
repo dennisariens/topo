@@ -1,0 +1,306 @@
+{
+  "iconCases": [
+    {
+      "asset": "IC-pizza",
+      "background": "light",
+      "nativePixels": 24,
+      "source": "assets/v3/render/exports/icons/IC-pizza-48.webp"
+    },
+    {
+      "asset": "IC-pizza",
+      "background": "light",
+      "nativePixels": 48,
+      "source": "assets/v3/render/exports/icons/IC-pizza-96.webp"
+    },
+    {
+      "asset": "IC-pizza",
+      "background": "dark",
+      "nativePixels": 24,
+      "source": "assets/v3/render/exports/icons/IC-pizza-48.webp"
+    },
+    {
+      "asset": "IC-pizza",
+      "background": "dark",
+      "nativePixels": 48,
+      "source": "assets/v3/render/exports/icons/IC-pizza-96.webp"
+    },
+    {
+      "asset": "IC-pizza",
+      "background": "checker",
+      "nativePixels": 24,
+      "source": "assets/v3/render/exports/icons/IC-pizza-48.webp"
+    },
+    {
+      "asset": "IC-pizza",
+      "background": "checker",
+      "nativePixels": 48,
+      "source": "assets/v3/render/exports/icons/IC-pizza-96.webp"
+    },
+    {
+      "asset": "IC-vespa",
+      "background": "light",
+      "nativePixels": 24,
+      "source": "assets/v3/render/exports/icons/IC-vespa-48.webp"
+    },
+    {
+      "asset": "IC-vespa",
+      "background": "light",
+      "nativePixels": 48,
+      "source": "assets/v3/render/exports/icons/IC-vespa-96.webp"
+    },
+    {
+      "asset": "IC-vespa",
+      "background": "dark",
+      "nativePixels": 24,
+      "source": "assets/v3/render/exports/icons/IC-vespa-48.webp"
+    },
+    {
+      "asset": "IC-vespa",
+      "background": "dark",
+      "nativePixels": 48,
+      "source": "assets/v3/render/exports/icons/IC-vespa-96.webp"
+    },
+    {
+      "asset": "IC-vespa",
+      "background": "checker",
+      "nativePixels": 24,
+      "source": "assets/v3/render/exports/icons/IC-vespa-48.webp"
+    },
+    {
+      "asset": "IC-vespa",
+      "background": "checker",
+      "nativePixels": 48,
+      "source": "assets/v3/render/exports/icons/IC-vespa-96.webp"
+    },
+    {
+      "asset": "IC-gold",
+      "background": "light",
+      "nativePixels": 24,
+      "source": "assets/v3/render/exports/icons/IC-gold-48.webp"
+    },
+    {
+      "asset": "IC-gold",
+      "background": "light",
+      "nativePixels": 48,
+      "source": "assets/v3/render/exports/icons/IC-gold-96.webp"
+    },
+    {
+      "asset": "IC-gold",
+      "background": "dark",
+      "nativePixels": 24,
+      "source": "assets/v3/render/exports/icons/IC-gold-48.webp"
+    },
+    {
+      "asset": "IC-gold",
+      "background": "dark",
+      "nativePixels": 48,
+      "source": "assets/v3/render/exports/icons/IC-gold-96.webp"
+    },
+    {
+      "asset": "IC-gold",
+      "background": "checker",
+      "nativePixels": 24,
+      "source": "assets/v3/render/exports/icons/IC-gold-48.webp"
+    },
+    {
+      "asset": "IC-gold",
+      "background": "checker",
+      "nativePixels": 48,
+      "source": "assets/v3/render/exports/icons/IC-gold-96.webp"
+    },
+    {
+      "asset": "IC-slice",
+      "background": "light",
+      "nativePixels": 24,
+      "source": "assets/v3/render/exports/icons/IC-slice-48.webp"
+    },
+    {
+      "asset": "IC-slice",
+      "background": "light",
+      "nativePixels": 48,
+      "source": "assets/v3/render/exports/icons/IC-slice-96.webp"
+    },
+    {
+      "asset": "IC-slice",
+      "background": "dark",
+      "nativePixels": 24,
+      "source": "assets/v3/render/exports/icons/IC-slice-48.webp"
+    },
+    {
+      "asset": "IC-slice",
+      "background": "dark",
+      "nativePixels": 48,
+      "source": "assets/v3/render/exports/icons/IC-slice-96.webp"
+    },
+    {
+      "asset": "IC-slice",
+      "background": "checker",
+      "nativePixels": 24,
+      "source": "assets/v3/render/exports/icons/IC-slice-48.webp"
+    },
+    {
+      "asset": "IC-slice",
+      "background": "checker",
+      "nativePixels": 48,
+      "source": "assets/v3/render/exports/icons/IC-slice-96.webp"
+    },
+    {
+      "asset": "IC-postcard",
+      "background": "light",
+      "nativePixels": 24,
+      "source": "assets/v3/render/exports/icons/IC-postcard-48.webp"
+    },
+    {
+      "asset": "IC-postcard",
+      "background": "light",
+      "nativePixels": 48,
+      "source": "assets/v3/render/exports/icons/IC-postcard-96.webp"
+    },
+    {
+      "asset": "IC-postcard",
+      "background": "dark",
+      "nativePixels": 24,
+      "source": "assets/v3/render/exports/icons/IC-postcard-48.webp"
+    },
+    {
+      "asset": "IC-postcard",
+      "background": "dark",
+      "nativePixels": 48,
+      "source": "assets/v3/render/exports/icons/IC-postcard-96.webp"
+    },
+    {
+      "asset": "IC-postcard",
+      "background": "checker",
+      "nativePixels": 24,
+      "source": "assets/v3/render/exports/icons/IC-postcard-48.webp"
+    },
+    {
+      "asset": "IC-postcard",
+      "background": "checker",
+      "nativePixels": 48,
+      "source": "assets/v3/render/exports/icons/IC-postcard-96.webp"
+    },
+    {
+      "asset": "IC-stamp",
+      "background": "light",
+      "nativePixels": 24,
+      "source": "assets/v3/render/exports/icons/IC-stamp-48.webp"
+    },
+    {
+      "asset": "IC-stamp",
+      "background": "light",
+      "nativePixels": 48,
+      "source": "assets/v3/render/exports/icons/IC-stamp-96.webp"
+    },
+    {
+      "asset": "IC-stamp",
+      "background": "dark",
+      "nativePixels": 24,
+      "source": "assets/v3/render/exports/icons/IC-stamp-48.webp"
+    },
+    {
+      "asset": "IC-stamp",
+      "background": "dark",
+      "nativePixels": 48,
+      "source": "assets/v3/render/exports/icons/IC-stamp-96.webp"
+    },
+    {
+      "asset": "IC-stamp",
+      "background": "checker",
+      "nativePixels": 24,
+      "source": "assets/v3/render/exports/icons/IC-stamp-48.webp"
+    },
+    {
+      "asset": "IC-stamp",
+      "background": "checker",
+      "nativePixels": 48,
+      "source": "assets/v3/render/exports/icons/IC-stamp-96.webp"
+    }
+  ],
+  "backgrounds": [
+    {
+      "asset": "BG-01",
+      "exportSize": [
+        2880,
+        1800
+      ],
+      "sourceSize": [
+        1586,
+        992
+      ],
+      "cssAtDPR2": [
+        1440.0,
+        900.0
+      ],
+      "nativeSourceCSSLimitDPR2": [
+        793.0,
+        496.0
+      ],
+      "centralLumaMean": 228.78447243942466,
+      "centralLumaStddev": 9.827731117016796,
+      "cropCoordinates": [
+        1007,
+        630,
+        1727,
+        1110
+      ],
+      "note": "No-resize crop from actual export; full export is Lanczos upscale, not new native detail"
+    },
+    {
+      "asset": "BG-02",
+      "exportSize": [
+        2880,
+        1800
+      ],
+      "sourceSize": [
+        1586,
+        992
+      ],
+      "cssAtDPR2": [
+        1440.0,
+        900.0
+      ],
+      "nativeSourceCSSLimitDPR2": [
+        793.0,
+        496.0
+      ],
+      "centralLumaMean": 220.22744594072788,
+      "centralLumaStddev": 10.168861951133547,
+      "cropCoordinates": [
+        1007,
+        630,
+        1727,
+        1110
+      ],
+      "note": "No-resize crop from actual export; full export is Lanczos upscale, not new native detail"
+    },
+    {
+      "asset": "BG-03",
+      "exportSize": [
+        2880,
+        1800
+      ],
+      "sourceSize": [
+        1586,
+        992
+      ],
+      "cssAtDPR2": [
+        1440.0,
+        900.0
+      ],
+      "nativeSourceCSSLimitDPR2": [
+        793.0,
+        496.0
+      ],
+      "centralLumaMean": 193.0840838884062,
+      "centralLumaStddev": 25.719008655088427,
+      "cropCoordinates": [
+        1007,
+        630,
+        1727,
+        1110
+      ],
+      "note": "No-resize crop from actual export; full export is Lanczos upscale, not new native detail"
+    }
+  ]
+}

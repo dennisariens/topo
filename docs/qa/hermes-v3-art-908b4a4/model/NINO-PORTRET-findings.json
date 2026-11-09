@@ -1,0 +1,84 @@
+{
+  "id": "NINO-PORTRET",
+  "verdict": "REWORK",
+  "taal": "nl",
+  "scope": "Onafhankelijke zichtbare Nino-model-QA, geen algemene release-/alpha-/maat-/logo-/geografie-QA",
+  "pin": "908b4a498199ece40a047f19efb2e80fe62812b8",
+  "scene75_pin": "8a704cb23da97baf7197635df7fa12f06b864a24",
+  "traits": {
+    "gezicht": {
+      "status": "PASS",
+      "observatie": "Sproeten, bruine ogen, brede wenkbrauwen, kleine neus en glimlach herkenbaar. Frontaliteit geeft symmetrischer/rondere indruk met grotere ronde oogopeningen; niet uitsluitend op deze subjectieve proporties afgekeurd."
+    },
+    "haar": {
+      "status": "PASS",
+      "observatie": "Donkerbruin, volumineus krullend haar onder de helm. Grovere, sterker gescheiden lokken dan fijne canonieke krullen; kleur en silhouet blijven passend."
+    },
+    "helm_en_bril": {
+      "status": "PASS",
+      "observatie": "Olijfgroene vintage helm met bruine riemen; twee ronde amber/bronskleurige brilglazen bovenop. Geen verkeerde helmsoort of ontbrekende bril."
+    },
+    "rode_sjaal": {
+      "status": "PASS",
+      "observatie": "Rode gewikkelde sjaal met losse wapperende uiteinden; passend. Fijne canonieke stofpatronen minder prominent, geen modelblokkade."
+    },
+    "blauw_shirt": {
+      "status": "REWORK",
+      "observatie": "Master toont open blauw overshirt met wit/licht ondershirt, anders dan gesloten canoniek blauw werkshirt. In 512-export is alleen een blauwe schouderrand zichtbaar: exacte shirtconstructie daar N/A, niet BLOCKED."
+    },
+    "rugzak": {
+      "status": "PASS",
+      "observatie": "Bruine leren schouderriemen/gespen zichtbaar; de eigenlijke rugzak is achter het bovenlichaam niet te zien (volume en zakken N/A)."
+    },
+    "cargobroek": {
+      "status": "N/A",
+      "observatie": "Buiten de bedoelde portretuitsnede; niet zichtbaar en niet verplicht voor een borstportret. Geen BLOCKED en geen modelafkeur hiervoor."
+    },
+    "schoenen": {
+      "status": "N/A",
+      "observatie": "Buiten de bedoelde portretuitsnede; niet zichtbaar en niet verplicht voor een borstportret. Geen BLOCKED en geen modelafkeur hiervoor."
+    },
+    "Vespa": {
+      "status": "N/A",
+      "observatie": "Buiten de bedoelde portretuitsnede; niet zichtbaar en niet verplicht voor een borstportret. Geen BLOCKED en geen modelafkeur hiervoor."
+    }
+  },
+  "detailed_deviations": [
+    "Brief regel 42 vraagt driekwart naar links: master en export staan zichtbaar frontaal, ogen naar kijker. Dat is geen driekwartpose.",
+    "De master heeft borst/schouders; export snijdt vrijwel alles onder sjaal en schouders af. Hierdoor wordt het gevraagde borstportret een hoofdportret.",
+    "In de master ontbreekt het doorlopende gesloten blauwe voorpand: wit ondershirt zichtbaar. Dit is dezelfde outfitafwijking als Roma/Napoli, niet alleen een donkerder belichting."
+  ],
+  "miniature": null,
+  "proof_images": [
+    "/Users/dennisariens/.hermes/cache/scratch/hermes-v3-art-908b4a4/model/NINO-PORTRET-comparison.png",
+    "/Users/dennisariens/.hermes/cache/scratch/hermes-v3-art-908b4a4/model/NINO-PORTRET-master-export-proof.png"
+  ],
+  "proof_metadata": {
+    "id": "NINO-PORTRET",
+    "proof": "/Users/dennisariens/.hermes/cache/scratch/hermes-v3-art-908b4a4/model/NINO-PORTRET-comparison.png",
+    "candidate_path": "/Users/dennisariens/projects/topo-v3-art-independent-qa/assets/v3/render/exports/NINO-PORTRET-512.webp",
+    "candidate_sha256": "b0d5dbfe1f82068b025ca08270b8cc8edfd2a57c41746f68cae9eaeb2921acd0",
+    "reference_path": "/Users/dennisariens/.hermes/cache/scratch/hermes-v3-art-908b4a4/references/nino-guide.webp",
+    "crop_coordinates_native_halfopen": {
+      "candidate": [
+        0,
+        0,
+        512,
+        512
+      ],
+      "reference": [
+        200,
+        70,
+        660,
+        650
+      ],
+      "face": [
+        40,
+        15,
+        470,
+        440
+      ]
+    }
+  },
+  "blocked_reasons": []
+}

@@ -1,0 +1,32 @@
+[
+  {
+    "source": "BG-01-toscane-2880.webp",
+    "crop": [
+      2160,
+      800,
+      2880,
+      1280
+    ],
+    "nativePixels": true
+  },
+  {
+    "source": "BG-02-meer-2880.webp",
+    "crop": [
+      2160,
+      800,
+      2880,
+      1280
+    ],
+    "nativePixels": true
+  },
+  {
+    "source": "BG-03-kust-2880.webp",
+    "crop": [
+      2160,
+      800,
+      2880,
+      1280
+    ],
+    "nativePixels": true
+  }
+]

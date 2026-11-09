@@ -1,0 +1,92 @@
+[
+  {
+    "source": "assets/nino/exports/nino-arrival.webp",
+    "commit": "908b4a498199ece40a047f19efb2e80fe62812b8",
+    "evidence": "references/nino-arrival.webp",
+    "sha256": "ff1b6908fcbcfd81098232b9e108ad2b32826c5914a2c3414465385b05fcbd78"
+  },
+  {
+    "source": "assets/nino/exports/nino-encourage.webp",
+    "commit": "908b4a498199ece40a047f19efb2e80fe62812b8",
+    "evidence": "references/nino-encourage.webp",
+    "sha256": "4ab8b1af4289ffd47dd9d2e8e102dfff68a53da97030741df1db16bc0889d3c5"
+  },
+  {
+    "source": "assets/nino/exports/nino-gold.webp",
+    "commit": "908b4a498199ece40a047f19efb2e80fe62812b8",
+    "evidence": "references/nino-gold.webp",
+    "sha256": "b735c2dd44003c62969adcf4d11b446ec432f86a2f2f27f56aa6281b2ce435f2"
+  },
+  {
+    "source": "assets/nino/exports/nino-guide.webp",
+    "commit": "908b4a498199ece40a047f19efb2e80fe62812b8",
+    "evidence": "references/nino-guide.webp",
+    "sha256": "13cb4bc888d62573dde1cfb6a6645da82c20180547354aab8f3557e99a691a2a"
+  },
+  {
+    "source": "assets/nino/exports/nino-success.webp",
+    "commit": "908b4a498199ece40a047f19efb2e80fe62812b8",
+    "evidence": "references/nino-success.webp",
+    "sha256": "e43124089abfa0878705c9f4c9389487c16b914c3579cff88d8532f64f6fa518"
+  },
+  {
+    "source": "assets/nino/exports/nino-travel.webp",
+    "commit": "908b4a498199ece40a047f19efb2e80fe62812b8",
+    "evidence": "references/nino-travel.webp",
+    "sha256": "d12e2738fbbbfd05f174ab5af8d555f22fc4505a4c57fb72f28020096dc7a424"
+  },
+  {
+    "source": "assets/nino/exports/nino-welcome.webp",
+    "commit": "908b4a498199ece40a047f19efb2e80fe62812b8",
+    "evidence": "references/nino-welcome.webp",
+    "sha256": "89966925cb2f277e89bdd53eb22a5a328a26c54c1f52ccf9a91a3b263bd4a568"
+  },
+  {
+    "source": "assets/nino/scenes/topo-steden-firenze.png",
+    "commit": "8a704cb23da97baf7197635df7fa12f06b864a24",
+    "evidence": "references/topo-steden-firenze.png",
+    "sha256": "e0dbd1d4486d785d1f112773459d384110e8f3a42b3b2cb87ae61956153e6e40"
+  },
+  {
+    "source": "assets/nino/scenes/topo-eilanden-v2.png",
+    "commit": "8a704cb23da97baf7197635df7fa12f06b864a24",
+    "evidence": "references/topo-eilanden-v2.png",
+    "sha256": "415a7e44a47f6456be71610e7289d31c96887009f8ea30fc91c2112c0bfee15b"
+  },
+  {
+    "source": "assets/nino/scenes/topo-bergen-dolomieten.png",
+    "commit": "8a704cb23da97baf7197635df7fa12f06b864a24",
+    "evidence": "references/topo-bergen-dolomieten.png",
+    "sha256": "401bc0eb1bb430bbcd010ea567154c9a4e177618ba6a6d2de364a119c2a9aeae"
+  },
+  {
+    "source": "assets/nino/scenes/topo-vulkanen-etna.png",
+    "commit": "8a704cb23da97baf7197635df7fa12f06b864a24",
+    "evidence": "references/topo-vulkanen-etna.png",
+    "sha256": "4134398f83e5dfe283734f41c828ecfedf89640fa46b3fc370362d1c5963d54e"
+  },
+  {
+    "source": "assets/nino/scenes/topo-streken-toscana.png",
+    "commit": "8a704cb23da97baf7197635df7fa12f06b864a24",
+    "evidence": "references/topo-streken-toscana.png",
+    "sha256": "1f524666238558c8a5dfa41d2dd5bb957186c127606939ac93e30d44b201d009"
+  },
+  {
+    "source": "assets/nino/scenes/topo-landen-italie-slovenie.png",
+    "commit": "8a704cb23da97baf7197635df7fa12f06b864a24",
+    "evidence": "references/topo-landen-italie-slovenie.png",
+    "sha256": "37041c668d867e25867ced043fde68a8a96f0644ea67064e9d23dacc568a9319"
+  },
+  {
+    "source": "assets/nino/scenes/topo-zeeen-amalfi.png",
+    "commit": "8a704cb23da97baf7197635df7fa12f06b864a24",
+    "evidence": "references/topo-zeeen-amalfi.png",
+    "sha256": "7fa19bd0638d4e6418a3a49515fdb342d5f64b7ed0ac14b99d65bffd8a411320"
+  },
+  {
+    "source": "assets/nino/scenes/topo-rivieren-po.png",
+    "commit": "8a704cb23da97baf7197635df7fa12f06b864a24",
+    "evidence": "references/topo-rivieren-po.png",
+    "sha256": "c9e49d7cc48808508d559aa0414d8f5d86e5b62ba35cda5f94bb68d5fbfe9210"
+  }
+]

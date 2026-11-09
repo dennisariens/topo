@@ -1,0 +1,92 @@
+[
+  {
+    "asset": "SCENE-ROMA",
+    "source": "assets/v3/render/masters/SCENE-ROMA.png",
+    "rect": [
+      520,
+      400,
+      760,
+      690
+    ],
+    "file": "SCENE-ROMA-mark-crop.png",
+    "resized": false
+  },
+  {
+    "asset": "SCENE-VENEZIA",
+    "source": "assets/v3/render/masters/SCENE-VENEZIA.png",
+    "rect": [
+      560,
+      430,
+      820,
+      720
+    ],
+    "file": "SCENE-VENEZIA-mark-crop.png",
+    "resized": false
+  },
+  {
+    "asset": "SCENE-NAPOLI",
+    "source": "assets/v3/render/masters/SCENE-NAPOLI.png",
+    "rect": [
+      600,
+      440,
+      800,
+      690
+    ],
+    "file": "SCENE-NAPOLI-mark-crop.png",
+    "resized": false
+  },
+  {
+    "asset": "IC-postcard",
+    "source": "assets/v3/render/masters/icons/IC-postcard.png",
+    "rect": [
+      0,
+      0,
+      1254,
+      1254
+    ],
+    "file": "IC-postcard-mark-crop.png",
+    "resized": false
+  },
+  {
+    "asset": "IC-stamp",
+    "source": "assets/v3/render/masters/icons/IC-stamp.png",
+    "rect": [
+      0,
+      0,
+      1244,
+      1244
+    ],
+    "file": "IC-stamp-mark-crop.png",
+    "resized": false
+  },
+  {
+    "asset": "SCENE-VENEZIA",
+    "RGBDifferenceBBox": [
+      678,
+      495,
+      706,
+      522
+    ],
+    "comparisonCrop": [
+      628,
+      445,
+      756,
+      572
+    ],
+    "file": "Venezia-inpaint-original-vs-candidate.png",
+    "note": "Archive logo is not the runtime export"
+  },
+  {
+    "asset": "NINO-PORTRET",
+    "source": "assets/v3/render/exports/NINO-PORTRET-512.webp",
+    "rect": [
+      10,
+      230,
+      135,
+      395
+    ],
+    "native": "portrait-hair-native-crop.png",
+    "enlargedDiagnostic": "portrait-hair-4x-diagnostic.png",
+    "scale": 4
+  }
+]

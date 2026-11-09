@@ -1,0 +1,169 @@
+{
+  "target": "908b4a498199ece40a047f19efb2e80fe62812b8",
+  "verdict": "REWORK",
+  "counts": {
+    "REWORK": 6,
+    "PASS": 9
+  },
+  "logicalAssets": 15,
+  "manifestRecords": 40,
+  "uniqueFiles": 39,
+  "manifestFailures": 0,
+  "referenceNinoExports": 7,
+  "referenceScene75Files": 8,
+  "scene75SHA": "8a704cb23da97baf7197635df7fa12f06b864a24",
+  "assets": [
+    {
+      "id": "BG-01",
+      "verdict": "REWORK",
+      "reason": "Required3840x2400 source master missing;1586x992 Lanczos source, not new native DPR2 detail",
+      "manifestIntegrity": "PASS",
+      "noTextLogoRuntime": "PASS",
+      "noGeneratedMap": "PASS"
+    },
+    {
+      "id": "NINO-PORTRET",
+      "verdict": "REWORK",
+      "reason": "Master open blue shirt + white undershirt; export head rather than bust; frontal pose departure; light hair matte fringe on dark",
+      "manifestIntegrity": "PASS",
+      "noTextLogoRuntime": "PASS",
+      "noGeneratedMap": "PASS",
+      "modelEvidence": "model/NINO-PORTRET-comparison.png"
+    },
+    {
+      "id": "SCENE-ROMA",
+      "verdict": "REWORK",
+      "reason": "Open dark blue overshirt with white undershirt instead of canonical closed blue work shirt",
+      "manifestIntegrity": "PASS",
+      "noTextLogoRuntime": "PASS",
+      "noGeneratedMap": "PASS",
+      "modelEvidence": "model/SCENE-ROMA-comparison.png"
+    },
+    {
+      "id": "SCENE-VENEZIA",
+      "verdict": "PASS",
+      "reason": "Pass within recorded intended role; not runtime integration approval",
+      "manifestIntegrity": "PASS",
+      "noTextLogoRuntime": "PASS",
+      "noGeneratedMap": "PASS",
+      "archiveOriginal": "Retained logo-bearing original is not runtime-approved; retouched master/exports pass",
+      "modelEvidence": "model/SCENE-VENEZIA-comparison.png"
+    },
+    {
+      "id": "SCENE-NAPOLI",
+      "verdict": "REWORK",
+      "reason": "Open blue overshirt with large white undershirt; trouser cuffs less canonical",
+      "manifestIntegrity": "PASS",
+      "noTextLogoRuntime": "PASS",
+      "noGeneratedMap": "PASS",
+      "modelEvidence": "model/SCENE-NAPOLI-comparison.png"
+    },
+    {
+      "id": "BG-02",
+      "verdict": "REWORK",
+      "reason": "Same required source master/resolution shortfall",
+      "manifestIntegrity": "PASS",
+      "noTextLogoRuntime": "PASS",
+      "noGeneratedMap": "PASS"
+    },
+    {
+      "id": "BG-03",
+      "verdict": "REWORK",
+      "reason": "Same master shortfall;450000B budget exceeded2702B but within450KiB",
+      "manifestIntegrity": "PASS",
+      "noTextLogoRuntime": "PASS",
+      "noGeneratedMap": "PASS"
+    },
+    {
+      "id": "IC-pizza",
+      "verdict": "PASS",
+      "reason": "Pass within recorded intended role; not runtime integration approval",
+      "manifestIntegrity": "PASS",
+      "noTextLogoRuntime": "PASS",
+      "noGeneratedMap": "PASS"
+    },
+    {
+      "id": "IC-vespa",
+      "verdict": "PASS",
+      "reason": "Pass within recorded intended role; not runtime integration approval",
+      "manifestIntegrity": "PASS",
+      "noTextLogoRuntime": "PASS",
+      "noGeneratedMap": "PASS"
+    },
+    {
+      "id": "IC-gold",
+      "verdict": "PASS",
+      "reason": "Pass within recorded intended role; not runtime integration approval",
+      "manifestIntegrity": "PASS",
+      "noTextLogoRuntime": "PASS",
+      "noGeneratedMap": "PASS"
+    },
+    {
+      "id": "VE-01",
+      "verdict": "PASS",
+      "reason": "Pass within recorded intended role; not runtime integration approval",
+      "manifestIntegrity": "PASS",
+      "noTextLogoRuntime": "PASS",
+      "noGeneratedMap": "PASS"
+    },
+    {
+      "id": "IC-slice",
+      "verdict": "PASS",
+      "reason": "Pass within recorded intended role; not runtime integration approval",
+      "manifestIntegrity": "PASS",
+      "noTextLogoRuntime": "PASS",
+      "noGeneratedMap": "PASS"
+    },
+    {
+      "id": "IC-postcard",
+      "verdict": "PASS",
+      "reason": "Pass within recorded intended role; not runtime integration approval",
+      "manifestIntegrity": "PASS",
+      "noTextLogoRuntime": "PASS",
+      "noGeneratedMap": "PASS"
+    },
+    {
+      "id": "IC-stamp",
+      "verdict": "PASS",
+      "reason": "Pass within recorded intended role; not runtime integration approval",
+      "manifestIntegrity": "PASS",
+      "noTextLogoRuntime": "PASS",
+      "noGeneratedMap": "PASS"
+    },
+    {
+      "id": "IC-stamp-tool",
+      "verdict": "PASS",
+      "reason": "Pass within recorded intended role; not runtime integration approval",
+      "manifestIntegrity": "PASS",
+      "noTextLogoRuntime": "PASS",
+      "noGeneratedMap": "PASS",
+      "scope": "ARCHIVE ONLY; no runtime48/96 exports expected"
+    }
+  ],
+  "budgetNote": "BG03 is452702B: decimal450kB over2702B; binary450KiB passes. Do not pretend units were explicit in manifest.",
+  "displayProof": {
+    "iconsRuntime": 6,
+    "requestedLightDarkNativeCases": 24,
+    "additionalCheckerCases": 12,
+    "browserDPR": [
+      1,
+      2
+    ],
+    "backgroundCSS": [
+      1440,
+      900
+    ],
+    "backgroundPhysicalDPR2": [
+      2880,
+      1800
+    ]
+  },
+  "scopeLimits": [
+    "No live app integration approval",
+    "No physical Retina display certification",
+    "No legal trademark clearance",
+    "Invisible portrait lower body N/A, not BLOCKED"
+  ],
+  "candidateModified": false,
+  "merge": false
+}

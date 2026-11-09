@@ -1,0 +1,71 @@
+{
+  "scope": "QA display plates only, not actual app integration",
+  "browser": "Chromium",
+  "records": [
+    {
+      "type": "icons",
+      "dpr": 1,
+      "cssWidths": [
+        24,
+        48
+      ],
+      "physicalSizes": [
+        24,
+        48
+      ],
+      "path": "browser-icons-dpr1.png"
+    },
+    {
+      "type": "icons",
+      "dpr": 2,
+      "cssWidths": [
+        24,
+        48
+      ],
+      "physicalSizes": [
+        48,
+        96
+      ],
+      "path": "browser-icons-dpr2.png"
+    },
+    {
+      "asset": "BG-01",
+      "dpr": 2,
+      "css": [
+        1440,
+        900
+      ],
+      "pixels": [
+        2880,
+        1800
+      ],
+      "path": "BG-01-browser-dpr2.png"
+    },
+    {
+      "asset": "BG-02",
+      "dpr": 2,
+      "css": [
+        1440,
+        900
+      ],
+      "pixels": [
+        2880,
+        1800
+      ],
+      "path": "BG-02-browser-dpr2.png"
+    },
+    {
+      "asset": "BG-03",
+      "dpr": 2,
+      "css": [
+        1440,
+        900
+      ],
+      "pixels": [
+        2880,
+        1800
+      ],
+      "path": "BG-03-browser-dpr2.png"
+    }
+  ]
+}

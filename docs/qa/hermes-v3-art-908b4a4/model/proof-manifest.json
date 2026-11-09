@@ -1,0 +1,110 @@
+[
+  {
+    "id": "NINO-PORTRET",
+    "proof": "/Users/dennisariens/.hermes/cache/scratch/hermes-v3-art-908b4a4/model/NINO-PORTRET-comparison.png",
+    "candidate_path": "/Users/dennisariens/projects/topo-v3-art-independent-qa/assets/v3/render/exports/NINO-PORTRET-512.webp",
+    "candidate_sha256": "b0d5dbfe1f82068b025ca08270b8cc8edfd2a57c41746f68cae9eaeb2921acd0",
+    "reference_path": "/Users/dennisariens/.hermes/cache/scratch/hermes-v3-art-908b4a4/references/nino-guide.webp",
+    "crop_coordinates_native_halfopen": {
+      "candidate": [
+        0,
+        0,
+        512,
+        512
+      ],
+      "reference": [
+        200,
+        70,
+        660,
+        650
+      ],
+      "face": [
+        40,
+        15,
+        470,
+        440
+      ]
+    }
+  },
+  {
+    "id": "SCENE-ROMA",
+    "proof": "/Users/dennisariens/.hermes/cache/scratch/hermes-v3-art-908b4a4/model/SCENE-ROMA-comparison.png",
+    "candidate_path": "/Users/dennisariens/projects/topo-v3-art-independent-qa/assets/v3/render/exports/SCENE-ROMA-kop-1672.webp",
+    "candidate_sha256": "c9d9412066ebc2a8815ba681142384fa67000b9c439518319376da2a202c8043",
+    "reference_path": "/Users/dennisariens/.hermes/cache/scratch/hermes-v3-art-908b4a4/references/topo-steden-firenze.png",
+    "crop_coordinates_native_halfopen": {
+      "candidate": [
+        255,
+        120,
+        825,
+        920
+      ],
+      "reference": [
+        110,
+        100,
+        690,
+        940
+      ],
+      "face": [
+        350,
+        125,
+        650,
+        570
+      ]
+    }
+  },
+  {
+    "id": "SCENE-VENEZIA",
+    "proof": "/Users/dennisariens/.hermes/cache/scratch/hermes-v3-art-908b4a4/model/SCENE-VENEZIA-comparison.png",
+    "candidate_path": "/Users/dennisariens/projects/topo-v3-art-independent-qa/assets/v3/render/exports/SCENE-VENEZIA-kop-1672.webp",
+    "candidate_sha256": "719344db49bfd156f6b22904b1ff31dd2e2899ac133b0c303fdcf85b165dae02",
+    "reference_path": "/Users/dennisariens/.hermes/cache/scratch/hermes-v3-art-908b4a4/references/topo-steden-firenze.png",
+    "crop_coordinates_native_halfopen": {
+      "candidate": [
+        250,
+        100,
+        865,
+        910
+      ],
+      "reference": [
+        110,
+        100,
+        690,
+        940
+      ],
+      "face": [
+        335,
+        105,
+        685,
+        570
+      ]
+    }
+  },
+  {
+    "id": "SCENE-NAPOLI",
+    "proof": "/Users/dennisariens/.hermes/cache/scratch/hermes-v3-art-908b4a4/model/SCENE-NAPOLI-comparison.png",
+    "candidate_path": "/Users/dennisariens/projects/topo-v3-art-independent-qa/assets/v3/render/exports/SCENE-NAPOLI-kop-1672.webp",
+    "candidate_sha256": "ba56ee524dcd170ecefb97e4a7f3d7dd2d2555d0cb29f1e04b92a42512324318",
+    "reference_path": "/Users/dennisariens/.hermes/cache/scratch/hermes-v3-art-908b4a4/references/topo-steden-firenze.png",
+    "crop_coordinates_native_halfopen": {
+      "candidate": [
+        155,
+        40,
+        850,
+        925
+      ],
+      "reference": [
+        110,
+        100,
+        690,
+        940
+      ],
+      "face": [
+        265,
+        45,
+        590,
+        550
+      ]
+    }
+  }
+]

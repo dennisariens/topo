@@ -17,6 +17,7 @@ Productrichting: een reis door Italië waarin je topografie leert. Rust van Appl
 ## Kaart
 - Altijd de echte geometrie: in Reis een kopie van de live kaart, met gelijke paden (gecontroleerd: 46/46), zonder namen en zonder interactie.
 - De plekken van het gekozen hoofdstuk dragen het accent; de rest treedt terug.
+- **Referentiekader:** het kader toont wat om Italië heen ligt (buurlanden, zeeën, Corsica, Noord-Afrika). Kader = Italië en de hoofdstukplekken + 14% marge, verruimd tot de vorm van het kaartvlak binnen het canvas (890 × 1235). Echte zee, alleen een smalle randfade (4%), geen radiale vervaging. Gecontroleerd door `mapFrameShort`.
 - **Schoolkaart** is de standaard en de lesvorm. **Reliëf** is een schakelaar met een leerfunctie (Bergen, Vulkanen, Apennijnen, Povlakte). Het reliëf komt uit gemeten hoogtedata, geregistreerd op hetzelfde frame (zie DISCOVERY_MAP.md). Nooit AI-beeld als kaart.
 
 ## Tokens (`scripts/v3/tokens.css`, alleen binnen `.v3`)

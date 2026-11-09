@@ -3,7 +3,7 @@
 
 Usage: python3 scripts/qa-v3-reis.py [html] [outdir] [chrome]
 Writes screenshots and results.json to outdir (default docs/qa/v3-reis).
-Checks: next action above the fold, no overlapping/clipped controls, label wrapping,
+Checks: next action above the fold, map reference frame (neighbours, seas, islands; edge fade only), no overlapping/clipped controls, label wrapping,
 chapter selection, map clone geometry == live map, relief switch, real lesson start
 through V2 buttons, Reis -> Verder restore, keyboard order, themes, demo storage
 isolation, console errors.
@@ -14,9 +14,11 @@ from playwright.async_api import async_playwright
 ROOT = pathlib.Path(__file__).resolve().parent.parent
 HTML = pathlib.Path(sys.argv[1] if len(sys.argv) > 1 else ROOT / 'output/html/TOPO-V3-Reis-Preview.html').resolve()
 OUT = pathlib.Path(sys.argv[2] if len(sys.argv) > 2 else ROOT / 'docs/qa/v3-reis').resolve()
-CHROME = sys.argv[3] if len(sys.argv) > 3 else '/usr/bin/google-chrome'
+MAC_CHROME = '/Applications/Google Chrome.app/Contents/MacOS/Google Chrome'
+CHROME = sys.argv[3] if len(sys.argv) > 3 else (MAC_CHROME if pathlib.Path(MAC_CHROME).exists() else '/usr/bin/google-chrome')
 VIEWPORTS = {'desktop': (1440, 900, False), 'ipad-portrait': (820, 1180, True), 'ipad-landscape': (1180, 820, True), 'phone': (390, 844, True), 'phone-small': (320, 640, True)}
 STATES = ['nieuw', 'bezig', 'afgerond', 'alles']
+MUST_SEE = ['Frankrijk', 'Zwitserland', 'Oostenrijk', 'Slovenië', 'Kroatië', 'Sardinië', 'Sicilië', 'Noord-Afrika']
 
 LAYOUT_JS = '''() => {
   const vh = innerHeight, r = e => e.getBoundingClientRect();
@@ -43,10 +45,68 @@ LAYOUT_JS = '''() => {
   const bar = document.querySelector('.v3Side'); let lastRowClear = true;
   if (bar && getComputedStyle(bar).position==='fixed') { const last=[...document.querySelectorAll('.v3Row')].pop(); const doc=document.scrollingElement;
     const bottomAtMaxScroll = last.getBoundingClientRect().bottom - (doc.scrollHeight - innerHeight - doc.scrollTop); lastRowClear = bottomAtMaxScroll <= r(bar).top + 1; }
-  return {lastRowClear, primaryTop: p ? Math.round(p.top) : null, primaryBottom: p ? Math.round(p.bottom) : null, viewport: vh,
+  const map = document.querySelector('.v3Map'), vb = map && map.viewBox.baseVal;
+  const frame = map ? {viewBox: [vb.x, vb.y, vb.width, vb.height].map(Math.round).join(' '), mask: (getComputedStyle(map).maskImage || getComputedStyle(map).webkitMaskImage || '').slice(0, 160)} : null;
+  return {frame, lastRowClear, primaryTop: p ? Math.round(p.top) : null, primaryBottom: p ? Math.round(p.bottom) : null, viewport: vh,
           primaryVisible: p ? p.bottom <= vh && !covered : false, covered, overlaps, small, clipped,
           horizontalOverflow: document.documentElement.scrollWidth > innerWidth + 1};
 }'''
+
+# Map reference frame (owner 9-11): neighbours, seas and islands must stay visible around Italy.
+# For each reference feature pick one on-screen point inside its real fill; the Python side compares the
+# painted pixel with and without the edge mask. A feature is visible when >= 80% of its contrast remains.
+MAP_SAMPLE_JS = '''() => {
+  const map = document.querySelector('.v3Map'); if (!map) return {};
+  const el = map.getBoundingClientRect(), stage = map.parentElement.getBoundingClientRect(), ctm = map.getScreenCTM(), inv = ctm.inverse();
+  const x0 = Math.max(el.left, stage.left) + 2, x1 = Math.min(el.right, stage.right, innerWidth) - 2, y0 = Math.max(el.top, stage.top, 0) + 2, y1 = Math.min(el.bottom, stage.bottom, innerHeight) - 2;
+  const hidden = [...document.querySelectorAll('.v3Switch,.v3PreviewBar,.v3Side')].map(n => n.getBoundingClientRect());
+  const free = (x, y) => !hidden.some(h => x >= h.left - 4 && x <= h.right + 4 && y >= h.top - 4 && y <= h.bottom + 4);
+  const pick = (n, ok) => { // grid over the visible part of the element, nearest to the outer edge last
+    const b = n.getBoundingClientRect(), ax = Math.max(b.left, x0), bx = Math.min(b.right, x1), ay = Math.max(b.top, y0), by = Math.min(b.bottom, y1);
+    if (bx - ax < 4 || by - ay < 4) return null; const cands = [];
+    for (let i = 1; i < 16; i++) for (let j = 1; j < 16; j++) { const x = ax + (bx - ax) * i / 16, y = ay + (by - ay) * j / 16; if (!free(x, y)) continue;
+      const pt = map.createSVGPoint(); pt.x = x; pt.y = y; const u = pt.matrixTransform(inv);
+      if (ok(u, x, y)) cands.push([x, y]); }
+    if (!cands.length) return null; const cx = (ax + bx) / 2, cy = (ay + by) / 2; cands.sort((p, q) => Math.hypot(p[0] - cx, p[1] - cy) - Math.hypot(q[0] - cx, q[1] - cy));
+    return cands[0].map(Math.round); };
+  // The copy has pointer-events:none, so occlusion is tested geometrically: inside this fill, outside any land drawn over it.
+  const lands = [...map.querySelectorAll('[id$="landLayer"]>*')];
+  const fill = (n, over) => (u) => n.isPointInFill(u) && !over.some(o => o !== n && o.isPointInFill(u));
+  const above = n => lands.filter(o => lands.indexOf(o) > lands.indexOf(n));
+  const ids = {Frankrijk: 'area-i', Zwitserland: 'area-j', Oostenrijk: 'area-k', 'Slovenië': 'area-l', 'Kroatië': 'area-m', Sardinië: 'area-b', 'Sicilië': 'area-a'};
+  const out = {};
+  for (const [k, id] of Object.entries(ids)) { const n = map.querySelector('[data-id="' + id + '"]'); out[k] = n ? pick(n, fill(n, above(n))) : null; }
+  for (const t of map.querySelectorAll('[id$="labels"] text')) { const w = t.textContent.trim(); if (/TUNES|DUITS|BOSN|HONGAR/.test(w)) { const b = t.getBoundingClientRect(), x = Math.round(b.left + b.width / 2), y = Math.round(b.top + b.height / 2); out['label ' + w] = x > x0 && x < x1 && y > y0 && y < y1 && free(x, y) ? [x, y] : null; } }
+  const seas = [...map.querySelectorAll('[id$="seaLayer"] .water')]; seas.forEach((n, i) => { out['zee ' + (i + 1)] = pick(n, fill(n, lands)); });
+  const tun = [...map.querySelectorAll('[id$="labels"] text')].find(t => /TUNES/.test(t.textContent)), tb = tun && tun.getBBox();
+  const land = tb && [...map.querySelectorAll('.contextLand')].find(l => { const pt = map.createSVGPoint(); pt.x = tb.x + tb.width / 2; pt.y = tb.y + tb.height / 2; return l.isPointInFill(pt); }); // North Africa (Tunisia), the southern frame edge
+  if (land) out['Noord-Afrika'] = pick(land, fill(land, above(land)));
+  return out;
+}'''
+
+def png_pixel(png):
+    """RGB of a 1x1 PNG screenshot (no image library needed: a single pixel needs no unfiltering)."""
+    import struct, zlib
+    i, data = 8, b''
+    while i < len(png):
+        n, kind = struct.unpack('>I4s', png[i:i + 8]); chunk = png[i + 8:i + 8 + n]; i += 12 + n
+        if kind == b'IHDR': depth, colour = chunk[8], chunk[9]
+        elif kind == b'IDAT': data += chunk
+    raw = zlib.decompress(data); return tuple(raw[1:4])
+
+async def sample_frame(pg):
+    # Phones show the map below the action: bring it into view first (the frame, not the fold, is under test).
+    await pg.evaluate("document.querySelector('.v3Map')?.scrollIntoView({block:'center'})"); await pg.wait_for_timeout(150)
+    pts = await pg.evaluate(MAP_SAMPLE_JS); surface = (255, 253, 249)
+    async def px(x, y): return png_pixel(await pg.screenshot(clip={'x': x, 'y': y, 'width': 1, 'height': 1}))
+    masked = {k: await px(*v) for k, v in pts.items() if v}
+    await pg.evaluate("document.querySelector('.v3Map').style.setProperty('mask','none');document.querySelector('.v3Map').style.setProperty('-webkit-mask','none')")
+    plain = {k: await px(*pts[k]) for k in masked}
+    await pg.evaluate("document.querySelector('.v3Map').style.removeProperty('mask');document.querySelector('.v3Map').style.removeProperty('-webkit-mask')")
+    d = lambda c: sum(abs(a - b) for a, b in zip(c, surface)) or 1
+    kept = {k: round(min(1, d(masked[k]) / d(plain[k])), 2) for k in masked}
+    await pg.evaluate('scrollTo(0,0)')
+    return {'kept': kept, 'outOfFrame': sorted(k for k, v in pts.items() if not v), 'visible': sorted(k for k, v in kept.items() if v >= .8)}
 
 WORDBREAK_JS = '''() => {
   // Detect words split across lines: measure each word as its own inline box via Range rects.
@@ -80,6 +140,7 @@ async def main():
             for st in STATES:
                 await pg.goto(HTML.as_uri() + '#' + st); await settle(pg)
                 lay = await pg.evaluate(LAYOUT_JS); lay['brokenWords'] = await pg.evaluate(WORDBREAK_JS)
+                lay['frame'] = {**(lay['frame'] or {}), **await sample_frame(pg)}
                 res['layout'][vp + '/' + st] = lay
                 await pg.screenshot(path=str(OUT / f'{st}-{vp}.png'))
             await ctx.close()
@@ -156,6 +217,8 @@ async def main():
         'smallTargets': {k: v['small'] for k, v in lay.items() if v['small']},
         'horizontalOverflow': [k for k, v in lay.items() if v['horizontalOverflow']],
         'lastRowHiddenByTabBar': [k for k, v in lay.items() if not v.get('lastRowClear', True)],
+        # Reference frame: Alpine neighbours, Croatia, both big islands, North Africa and at least three seas visible.
+        'mapFrameShort': {k: sorted(set(MUST_SEE) - set(v['frame']['visible'])) for k, v in lay.items() if v.get('frame') and (set(MUST_SEE) - set(v['frame']['visible']) or sum(n.startswith('zee') for n in v['frame']['visible']) < 3)},
         'errors': len(res['errors'])}
     (OUT / 'results.json').write_text(json.dumps(res, indent=1, ensure_ascii=False))
     print(json.dumps(res['summary'], indent=1, ensure_ascii=False)); print(json.dumps(res['flows'], indent=1, ensure_ascii=False)); print(json.dumps(res['keyboard'], ensure_ascii=False)[:700]); print('theme', res['theme'], 'reducedMotion', res['reducedMotion'])

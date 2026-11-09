@@ -281,3 +281,10 @@ Reservekopieën en reset horen in het algemene instellingenmenu. Wis voortgang b
 - **Thema:** Italia is de standaard. Viola blijft alleen als vergelijkingsthema in de preview.
 - **Kaartkader:** de vervaging aan de rand mag het referentiekader niet wegnemen. De leerling moet zien wat eromheen ligt (buurlanden, zeeën, eilanden). Minder fade, ruimer kader.
 - **Werkverdeling:** implementatie gaat naar Claude Code op de Mac mini (of Codex), via een overdracht in Git; dit gesprek blijft voor product- en ontwerpbesluiten.
+
+## 2026-11-09 — Reis: kaartkader verwerkt
+
+- **Kader:** Italië en de plekken van het hoofdstuk met 14% marge, verruimd tot de vorm van het kaartvlak binnen het kaartcanvas; herberekend bij formaatwijziging. **Supersedes** het krappe kader (6%) en de radiale rand-fade van Reis v3b.
+- **Zee en rand:** de echte zeekleur van de kaart vult het vlak; alleen een smalle randfade (4%). Buiten het canvas lopen de echte landvormen door; geen nieuwe geometrie.
+- **Schakelaar** Schoolkaart/Reliëf staat onderaan het kaartvlak (op zee), zodat hij geen buurland afdekt.
+- **Check:** `qa-v3-reis.py` meet per formaat en stand of buurlanden, eilanden, Noord-Afrika en zeeën ≥ 80% van hun contrast houden (`mapFrameShort`).

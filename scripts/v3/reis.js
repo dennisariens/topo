@@ -65,7 +65,9 @@
   return svg;
  }
  function paintMap(c){
-  if(!mapClone){mapClone=cloneMap();if(mapClone)stage.prepend(mapClone);}
+  if(!mapClone){mapClone=cloneMap();if(mapClone){stage.prepend(mapClone);
+   // Outside the 890×1235 canvas the real land continues; the canvas sea colour fills behind it.
+   const sea=mapClone.querySelector('.sea');if(sea)mapClone.style.background=getComputedStyle(sea).fill;}}
   if(!mapClone)return;
   mapClone.dataset.relief=ui.relief?'on':'off';
   const set=new Set(c?c.itemIds:[]);
@@ -73,17 +75,25 @@
   mapClone.dataset.focus=c?(c.itemIds[0]?.startsWith('city')?'points':'areas'):'';
   fit(mapClone);
  }
- // Frame Italy and the chapter's places (neighbouring countries and seas included when they are the lesson).
+ // Frame Italy and the chapter's places with a generous margin, then widen the frame to the stage's shape
+ // inside the map canvas (890×1235), so neighbouring countries, seas and islands stay visible as reference.
+ const CANVAS={w:890,h:1235},MARGIN=.14;
  function fit(svg){
   try{
    const parts=[...svg.querySelectorAll('.italy,.v3Hit')];if(!parts.length)return;
    let x0=Infinity,y0=Infinity,x1=-Infinity,y1=-Infinity;
    for(const p of parts){const b=p.getBBox();if(!b.width&&!b.height&&p.tagName!=='circle')continue;x0=Math.min(x0,b.x);y0=Math.min(y0,b.y);x1=Math.max(x1,b.x+b.width);y1=Math.max(y1,b.y+b.height);}
    if(!isFinite(x0))return;
-   const pad=Math.max(x1-x0,y1-y0)*.06;x0=Math.max(0,x0-pad);y0=Math.max(0,y0-pad);x1=Math.min(890,x1+pad);y1=Math.min(1235,y1+pad);
+   const pad=Math.max(x1-x0,y1-y0)*MARGIN;x0=Math.max(0,x0-pad);y0=Math.max(0,y0-pad);x1=Math.min(CANVAS.w,x1+pad);y1=Math.min(CANVAS.h,y1+pad);
+   // Match the stage aspect ratio by growing the shorter side, centred and clamped to the canvas.
+   const box=svg.getBoundingClientRect(),aspect=box.width>0&&box.height>0?box.width/box.height:0;
+   const grow=(a0,a1,len,max)=>{len=Math.min(len,max);let c=(a0+a1)/2,s=c-len/2;s=Math.max(0,Math.min(max-len,s));return [s,s+len];};
+   if(aspect){const w=x1-x0,h=y1-y0;if(w/h<aspect)[x0,x1]=grow(x0,x1,h*aspect,CANVAS.w);else [y0,y1]=grow(y0,y1,w/aspect,CANVAS.h);}
    svg.setAttribute('viewBox',[x0,y0,x1-x0,y1-y0].map(v=>Math.round(v)).join(' '));
   }catch{}
  }
+ // The stage size changes with the layout (rotation, sidebar width): refit on resize.
+ if('ResizeObserver' in window)new ResizeObserver(()=>{if(mapClone)fit(mapClone);}).observe(stage);
 
  function renderTop(m){
   const bar=make('div','v3Steps');bar.setAttribute('role','img');bar.setAttribute('aria-label',m.done+' van 11 hoofdstukken afgerond');

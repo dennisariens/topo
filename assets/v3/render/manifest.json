@@ -102,7 +102,7 @@
   {
    "id": "SCENE-VENEZIA",
    "chapter": "city3",
-   "status": "ter beoordeling eigenaar; Hermes modelcheck open",
+   "status": "eigenaar akkoord (2026-11-09); Hermes PASS (908b4a4)",
    "note": "Piaggio-achtig schildje op de Vespa lokaal weggeretoucheerd (OpenCV inpaint, 24x23 px); origineel bewaard. Rialto en de koepel van de Salute samen in beeld: illustratieve compositie, geen leergeografie",
    "master": {
     "path": "assets/v3/render/masters/SCENE-VENEZIA.png",
@@ -233,7 +233,7 @@
   },
   {
    "id": "IC-pizza",
-   "status": "ter beoordeling eigenaar",
+   "status": "eigenaar akkoord (2026-11-09); Hermes PASS (908b4a4)",
    "note": "hele margherita in plaats van punt (beter voor de pizzameter); iets fotografischer dan de rest",
    "master": {
     "path": "assets/v3/render/masters/icons/IC-pizza.png",
@@ -270,7 +270,7 @@
   },
   {
    "id": "IC-vespa",
-   "status": "ter beoordeling eigenaar",
+   "status": "eigenaar akkoord (2026-11-09); Hermes PASS (908b4a4)",
    "note": "zonder logo's of tekst; dient ook als VE-01",
    "master": {
     "path": "assets/v3/render/masters/icons/IC-vespa.png",
@@ -307,7 +307,7 @@
   },
   {
    "id": "IC-gold",
-   "status": "ter beoordeling eigenaar",
+   "status": "eigenaar akkoord (2026-11-09); Hermes PASS (908b4a4)",
    "note": "gouden zegel met ster en lauwerkrans",
    "master": {
     "path": "assets/v3/render/masters/icons/IC-gold.png",
@@ -344,7 +344,7 @@
   },
   {
    "id": "VE-01",
-   "status": "ter beoordeling eigenaar",
+   "status": "eigenaar akkoord (2026-11-09); Hermes PASS (908b4a4)",
    "note": "zelfde bron als IC-vespa, 1200x900 transparant",
    "master": {
     "path": "assets/v3/render/masters/icons/IC-vespa.png",
@@ -369,7 +369,7 @@
   },
   {
    "id": "IC-slice",
-   "status": "ter beoordeling eigenaar",
+   "status": "eigenaar akkoord (2026-11-09); Hermes PASS (908b4a4)",
    "note": "pizzapunt voor tellers (eenheid = punt); hele pizza blijft voor meter en Beloningen",
    "master": {
     "path": "assets/v3/render/masters/icons/IC-slice.png",
@@ -406,7 +406,7 @@
   },
   {
    "id": "IC-postcard",
-   "status": "ter beoordeling eigenaar",
+   "status": "eigenaar akkoord (2026-11-09); Hermes PASS (908b4a4)",
    "note": "tweede versie: kustlandschap, geen kaart; getande rand zoals de echte postkaarten",
    "master": {
     "path": "assets/v3/render/masters/icons/IC-postcard.png",
@@ -443,7 +443,7 @@
   },
   {
    "id": "IC-stamp",
-   "status": "ter beoordeling eigenaar",
+   "status": "eigenaar akkoord (2026-11-09); Hermes PASS (908b4a4)",
    "note": "tweede versie: afdruk zoals in het Reisboekje",
    "master": {
     "path": "assets/v3/render/masters/icons/IC-stamp.png",

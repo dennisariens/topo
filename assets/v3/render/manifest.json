@@ -66,12 +66,12 @@
   {
    "id": "SCENE-ROMA",
    "chapter": "city2",
-   "status": "eigenaar akkoord (2026-11-09); Hermes modelcheck open",
-   "note": "tweede versie na correctie (helm, outfit, Vespa zonder vlag); jasje donkerder blauw dan canoniek werkshirt",
+   "status": "ter beoordeling eigenaar; Hermes hertest",
+   "note": "derde versie: gesloten blauw werkshirt (besluit 9-11); Vespa zonder merktekens",
    "master": {
     "path": "assets/v3/render/masters/SCENE-ROMA.png",
-    "bytes": 2732736,
-    "sha256": "0dd39083112266fb4e644f11bc081fc775699b3db49a8eb11829e551434e55ce",
+    "bytes": 2719471,
+    "sha256": "f7478b9cd7288309b1a4348897c124729bd3e260bc531d6747e2301a170560e6",
     "size": [
      1672,
      941
@@ -80,8 +80,8 @@
    },
    "export_kop": {
     "path": "assets/v3/render/exports/SCENE-ROMA-kop-1672.webp",
-    "bytes": 346432,
-    "sha256": "c9d9412066ebc2a8815ba681142384fa67000b9c439518319376da2a202c8043",
+    "bytes": 336364,
+    "sha256": "5a01badbf0f26fe28109e999c592615d882eb704e6bef809d40e70436b4f6465",
     "size": [
      1672,
      941
@@ -90,8 +90,8 @@
    },
    "export_mini": {
     "path": "assets/v3/render/exports/SCENE-ROMA-mini-480.webp",
-    "bytes": 36158,
-    "sha256": "2c6cb3bcca60b075c383448dc10a5a92bf1b56336ea2f5ab0810709586e3f88d",
+    "bytes": 34598,
+    "sha256": "518ab33ebc0b6902850ea46bdf3a57cc7556351ce40be2fc235e9c3eb439c146",
     "size": [
      480,
      270

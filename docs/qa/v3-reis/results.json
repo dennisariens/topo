@@ -1,7 +1,7 @@
 {
  "html": "output/html/TOPO-V3-Reis-Preview.html",
- "sha256": "94b62f8ac30cfc64587ad4c127ef3f4be42ce424da1792f8e30324fb4b0c5464",
- "bytes": 42784186,
+ "sha256": "04cd49e797ed0b0014d775780561057895943f732274bcc275d163dbceb6852f",
+ "bytes": 50222253,
  "layout": {
   "desktop/nieuw": {
    "frame": {
@@ -48,8 +48,8 @@
     ]
    },
    "lastRowClear": true,
-   "primaryTop": 319,
-   "primaryBottom": 371,
+   "primaryTop": 496,
+   "primaryBottom": 548,
    "viewport": 900,
    "primaryVisible": true,
    "covered": false,
@@ -122,8 +122,8 @@
     ]
    },
    "lastRowClear": true,
-   "primaryTop": 319,
-   "primaryBottom": 371,
+   "primaryTop": 496,
+   "primaryBottom": 548,
    "viewport": 900,
    "primaryVisible": true,
    "covered": false,
@@ -196,8 +196,8 @@
     ]
    },
    "lastRowClear": true,
-   "primaryTop": 319,
-   "primaryBottom": 371,
+   "primaryTop": 496,
+   "primaryBottom": 548,
    "viewport": 900,
    "primaryVisible": true,
    "covered": false,
@@ -270,8 +270,8 @@
     ]
    },
    "lastRowClear": true,
-   "primaryTop": 319,
-   "primaryBottom": 371,
+   "primaryTop": 496,
+   "primaryBottom": 548,
    "viewport": 900,
    "primaryVisible": true,
    "covered": false,
@@ -344,8 +344,8 @@
     ]
    },
    "lastRowClear": true,
-   "primaryTop": 247,
-   "primaryBottom": 299,
+   "primaryTop": 459,
+   "primaryBottom": 511,
    "viewport": 1180,
    "primaryVisible": true,
    "covered": false,
@@ -418,8 +418,8 @@
     ]
    },
    "lastRowClear": true,
-   "primaryTop": 247,
-   "primaryBottom": 299,
+   "primaryTop": 459,
+   "primaryBottom": 511,
    "viewport": 1180,
    "primaryVisible": true,
    "covered": false,
@@ -492,8 +492,8 @@
     ]
    },
    "lastRowClear": true,
-   "primaryTop": 247,
-   "primaryBottom": 299,
+   "primaryTop": 459,
+   "primaryBottom": 511,
    "viewport": 1180,
    "primaryVisible": true,
    "covered": false,
@@ -531,7 +531,7 @@
      "Oostenrijk": 1,
      "Slovenië": 1,
      "Kroatië": 1,
-     "Sardinië": 1,
+     "Sardinië": 1.0,
      "Sicilië": 1,
      "label DUITSLAND": 1,
      "label HONGARIJE": 1,
@@ -566,8 +566,8 @@
     ]
    },
    "lastRowClear": true,
-   "primaryTop": 247,
-   "primaryBottom": 299,
+   "primaryTop": 459,
+   "primaryBottom": 511,
    "viewport": 1180,
    "primaryVisible": true,
    "covered": false,
@@ -640,8 +640,8 @@
     ]
    },
    "lastRowClear": true,
-   "primaryTop": 319,
-   "primaryBottom": 371,
+   "primaryTop": 485,
+   "primaryBottom": 537,
    "viewport": 820,
    "primaryVisible": true,
    "covered": false,
@@ -714,8 +714,8 @@
     ]
    },
    "lastRowClear": true,
-   "primaryTop": 319,
-   "primaryBottom": 371,
+   "primaryTop": 485,
+   "primaryBottom": 537,
    "viewport": 820,
    "primaryVisible": true,
    "covered": false,
@@ -788,8 +788,8 @@
     ]
    },
    "lastRowClear": true,
-   "primaryTop": 319,
-   "primaryBottom": 371,
+   "primaryTop": 485,
+   "primaryBottom": 537,
    "viewport": 820,
    "primaryVisible": true,
    "covered": false,
@@ -862,8 +862,8 @@
     ]
    },
    "lastRowClear": true,
-   "primaryTop": 319,
-   "primaryBottom": 371,
+   "primaryTop": 485,
+   "primaryBottom": 537,
    "viewport": 820,
    "primaryVisible": true,
    "covered": false,
@@ -935,8 +935,8 @@
     ]
    },
    "lastRowClear": true,
-   "primaryTop": 210,
-   "primaryBottom": 262,
+   "primaryTop": 216,
+   "primaryBottom": 268,
    "viewport": 844,
    "primaryVisible": true,
    "covered": false,
@@ -1008,8 +1008,8 @@
     ]
    },
    "lastRowClear": true,
-   "primaryTop": 210,
-   "primaryBottom": 262,
+   "primaryTop": 216,
+   "primaryBottom": 268,
    "viewport": 844,
    "primaryVisible": true,
    "covered": false,
@@ -1081,8 +1081,8 @@
     ]
    },
    "lastRowClear": true,
-   "primaryTop": 210,
-   "primaryBottom": 262,
+   "primaryTop": 216,
+   "primaryBottom": 268,
    "viewport": 844,
    "primaryVisible": true,
    "covered": false,
@@ -1154,8 +1154,8 @@
     ]
    },
    "lastRowClear": true,
-   "primaryTop": 210,
-   "primaryBottom": 262,
+   "primaryTop": 216,
+   "primaryBottom": 268,
    "viewport": 844,
    "primaryVisible": true,
    "covered": false,
@@ -1227,8 +1227,8 @@
     ]
    },
    "lastRowClear": true,
-   "primaryTop": 210,
-   "primaryBottom": 262,
+   "primaryTop": 216,
+   "primaryBottom": 268,
    "viewport": 640,
    "primaryVisible": true,
    "covered": false,
@@ -1300,8 +1300,8 @@
     ]
    },
    "lastRowClear": true,
-   "primaryTop": 210,
-   "primaryBottom": 262,
+   "primaryTop": 216,
+   "primaryBottom": 268,
    "viewport": 640,
    "primaryVisible": true,
    "covered": false,
@@ -1373,8 +1373,8 @@
     ]
    },
    "lastRowClear": true,
-   "primaryTop": 210,
-   "primaryBottom": 262,
+   "primaryTop": 216,
+   "primaryBottom": 268,
    "viewport": 640,
    "primaryVisible": true,
    "covered": false,
@@ -1446,8 +1446,8 @@
     ]
    },
    "lastRowClear": true,
-   "primaryTop": 210,
-   "primaryBottom": 262,
+   "primaryTop": 216,
+   "primaryBottom": 268,
    "viewport": 640,
    "primaryVisible": true,
    "covered": false,
@@ -1551,9 +1551,9 @@
    },
    "backVia": "v3Btn v3LesBack",
    "primaryLabelWithActive": "Ga verder · Ontdekken",
-   "questionBefore": "city-7",
+   "questionBefore": "city-12",
    "reisVerderSameQuestion": {
-    "id": "city-7",
+    "id": "city-12",
     "chapter": "city2",
     "kind": "discover"
    },
@@ -1858,6 +1858,9 @@
    "Alles af",
    "Italia",
    "Viola",
+   "BG-01 Toscane",
+   "BG-02 Meer",
+   "BG-03 Kust",
    "Naast elkaar: desktop + ",
    "Italia + Viola",
    "Reis",
@@ -1874,10 +1877,7 @@
    "regions",
    "countries",
    "seas",
-   "rivers",
-   "Schoolkaart",
-   "Reliëf",
-   "Aanwijzen"
+   "rivers"
   ],
   "enterSelects": "true",
   "focusRing": "solid 3px"

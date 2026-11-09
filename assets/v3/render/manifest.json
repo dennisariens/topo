@@ -1,0 +1,497 @@
+{
+ "title": "TOPO V3 renderassets",
+ "brief": "docs/v3/ARTWORK_BRIEF.md",
+ "source": "OpenAI beeldgeneratie (ChatGPT), aangeleverd door de eigenaar op 2026-11-09",
+ "assets": [
+  {
+   "id": "BG-01",
+   "status": "eigenaar akkoord (2026-11-09); Hermes modelcheck open",
+   "note": "Lanczos-upscale 1586x992 -> 2880x1800, geen generatieve upscale; iets zacht op DPR 2",
+   "master": {
+    "path": "assets/v3/render/masters/BG-01-toscane.png",
+    "bytes": 2159222,
+    "sha256": "36fbc4645d07fc60073faf305cdf44701dfdd81bd24f3a9dfc44d5c1c2961c9a",
+    "size": [
+     1586,
+     992
+    ],
+    "alpha": false
+   },
+   "export": {
+    "path": "assets/v3/render/exports/BG-01-toscane-2880.webp",
+    "bytes": 433106,
+    "sha256": "c07c938d990250fdcd3a370b90f74c7cb8d9a422f4b720dbeb5e93850309b9c0",
+    "size": [
+     2880,
+     1800
+    ],
+    "alpha": false
+   }
+  },
+  {
+   "id": "NINO-PORTRET",
+   "status": "eigenaar akkoord (2026-11-09); Hermes modelcheck open",
+   "note": "tweede versie na correctie (jonger, ronder, blik naar kijker); achtergrond verwijderd (flood fill op wit + 1,2 px zachte rand); lichte rand bij krullen links alleen zichtbaar op donker",
+   "master": {
+    "path": "assets/v3/render/masters/NINO-PORTRET.png",
+    "bytes": 2199209,
+    "sha256": "e956bea057535cb4150317b14385e971cbe1cafc7276d7958657fcaf3e227dc9",
+    "size": [
+     1122,
+     1402
+    ],
+    "alpha": false
+   },
+   "master_alpha": {
+    "path": "assets/v3/render/masters/NINO-PORTRET-alpha.png",
+    "bytes": 2540337,
+    "sha256": "d45c216484b51c00e5071f95b934ace5a2c894530bef0408d4bc204bb7c6be05",
+    "size": [
+     1122,
+     1402
+    ],
+    "alpha": true
+   },
+   "export": {
+    "path": "assets/v3/render/exports/NINO-PORTRET-512.webp",
+    "bytes": 52864,
+    "sha256": "b0d5dbfe1f82068b025ca08270b8cc8edfd2a57c41746f68cae9eaeb2921acd0",
+    "size": [
+     512,
+     512
+    ],
+    "alpha": true
+   }
+  },
+  {
+   "id": "SCENE-ROMA",
+   "chapter": "city2",
+   "status": "eigenaar akkoord (2026-11-09); Hermes modelcheck open",
+   "note": "tweede versie na correctie (helm, outfit, Vespa zonder vlag); jasje donkerder blauw dan canoniek werkshirt",
+   "master": {
+    "path": "assets/v3/render/masters/SCENE-ROMA.png",
+    "bytes": 2732736,
+    "sha256": "0dd39083112266fb4e644f11bc081fc775699b3db49a8eb11829e551434e55ce",
+    "size": [
+     1672,
+     941
+    ],
+    "alpha": false
+   },
+   "export_kop": {
+    "path": "assets/v3/render/exports/SCENE-ROMA-kop-1672.webp",
+    "bytes": 346432,
+    "sha256": "c9d9412066ebc2a8815ba681142384fa67000b9c439518319376da2a202c8043",
+    "size": [
+     1672,
+     941
+    ],
+    "alpha": false
+   },
+   "export_mini": {
+    "path": "assets/v3/render/exports/SCENE-ROMA-mini-480.webp",
+    "bytes": 36158,
+    "sha256": "2c6cb3bcca60b075c383448dc10a5a92bf1b56336ea2f5ab0810709586e3f88d",
+    "size": [
+     480,
+     270
+    ],
+    "alpha": false
+   }
+  },
+  {
+   "id": "SCENE-VENEZIA",
+   "chapter": "city3",
+   "status": "ter beoordeling eigenaar; Hermes modelcheck open",
+   "note": "Piaggio-achtig schildje op de Vespa lokaal weggeretoucheerd (OpenCV inpaint, 24x23 px); origineel bewaard. Rialto en de koepel van de Salute samen in beeld: illustratieve compositie, geen leergeografie",
+   "master": {
+    "path": "assets/v3/render/masters/SCENE-VENEZIA.png",
+    "bytes": 2896664,
+    "sha256": "4b12fb1c2ea8b068c2851f45c6c11182b3c5ce7429ac9099d0f3b7d6219d1cb9",
+    "size": [
+     1672,
+     941
+    ],
+    "alpha": false
+   },
+   "master_original": {
+    "path": "assets/v3/render/masters/SCENE-VENEZIA-origineel.png",
+    "bytes": 2598896,
+    "sha256": "539fd4d9c4938bda61b48c1d58b6a5e1730525580439da5bbf4574ade3100f6f",
+    "size": [
+     1672,
+     941
+    ],
+    "alpha": false
+   },
+   "export_kop": {
+    "path": "assets/v3/render/exports/SCENE-VENEZIA-kop-1672.webp",
+    "bytes": 311914,
+    "sha256": "719344db49bfd156f6b22904b1ff31dd2e2899ac133b0c303fdcf85b165dae02",
+    "size": [
+     1672,
+     941
+    ],
+    "alpha": false
+   },
+   "export_mini": {
+    "path": "assets/v3/render/exports/SCENE-VENEZIA-mini-480.webp",
+    "bytes": 28758,
+    "sha256": "927c80380ed1571cdb4cc8bef8704b6a3e6b01e58ad68dc5bc2617ef4f7a8244",
+    "size": [
+     480,
+     270
+    ],
+    "alpha": false
+   }
+  },
+  {
+   "id": "SCENE-NAPOLI",
+   "chapter": "city4",
+   "status": "ter beoordeling eigenaar; Hermes modelcheck open",
+   "note": "tweede versie: emblemen en tekst op de Vespa verwijderd door ChatGPT-bewerking; claxonrooster behouden",
+   "master": {
+    "path": "assets/v3/render/masters/SCENE-NAPOLI.png",
+    "bytes": 2477218,
+    "sha256": "e728085e8086ed4a4f45e494c12a03009e818500f3d1555b037d9574c27404ee",
+    "size": [
+     1672,
+     941
+    ],
+    "alpha": false
+   },
+   "export_kop": {
+    "path": "assets/v3/render/exports/SCENE-NAPOLI-kop-1672.webp",
+    "bytes": 281348,
+    "sha256": "ba56ee524dcd170ecefb97e4a7f3d7dd2d2555d0cb29f1e04b92a42512324318",
+    "size": [
+     1672,
+     941
+    ],
+    "alpha": false
+   },
+   "export_mini": {
+    "path": "assets/v3/render/exports/SCENE-NAPOLI-mini-480.webp",
+    "bytes": 27908,
+    "sha256": "c4b13d59449065f558b22620661cbb600cd07f94b548ab9a6b853da5b5ef1d30",
+    "size": [
+     480,
+     270
+    ],
+    "alpha": false
+   }
+  },
+  {
+   "id": "BG-02",
+   "status": "ter beoordeling eigenaar",
+   "note": "Lanczos-upscale naar 2880x1800, geen generatieve upscale",
+   "master": {
+    "path": "assets/v3/render/masters/BG-02-meer.png",
+    "bytes": 2010968,
+    "sha256": "a2c3b48e6a47fe83c1975cba73fbe61fae9a8129c3df204ae0156b3212f1e9de",
+    "size": [
+     1586,
+     992
+    ],
+    "alpha": false
+   },
+   "export": {
+    "path": "assets/v3/render/exports/BG-02-meer-2880.webp",
+    "bytes": 321346,
+    "sha256": "939934b56be3406fa5a48717b900acea521f6f45674cce82b09993ca3630c660",
+    "size": [
+     2880,
+     1800
+    ],
+    "alpha": false
+   }
+  },
+  {
+   "id": "BG-03",
+   "status": "ter beoordeling eigenaar",
+   "note": "Lanczos-upscale naar 2880x1800; midden feller dan BG-01/02 (verzadigde zee)",
+   "master": {
+    "path": "assets/v3/render/masters/BG-03-kust.png",
+    "bytes": 2463310,
+    "sha256": "ecbc8c14cc6415ed433270adf7096e56921432c90ef1b8ceec8d9d1a4a68e11c",
+    "size": [
+     1586,
+     992
+    ],
+    "alpha": false
+   },
+   "export": {
+    "path": "assets/v3/render/exports/BG-03-kust-2880.webp",
+    "bytes": 452702,
+    "sha256": "b4a423ef64fdb58773aa99659ec23b58283b1cf96763f591d41d09eb6619f20b",
+    "size": [
+     2880,
+     1800
+    ],
+    "alpha": false
+   }
+  },
+  {
+   "id": "IC-pizza",
+   "status": "ter beoordeling eigenaar",
+   "note": "hele margherita in plaats van punt (beter voor de pizzameter); iets fotografischer dan de rest",
+   "master": {
+    "path": "assets/v3/render/masters/icons/IC-pizza.png",
+    "bytes": 1719890,
+    "sha256": "f72fea6e36b66996a71e016cb3f4fb4b69af0c7e63dc4116474a5a9262d8705e",
+    "size": [
+     1254,
+     1254
+    ],
+    "alpha": true
+   },
+   "exports": {
+    "96": {
+     "path": "assets/v3/render/exports/icons/IC-pizza-96.webp",
+     "bytes": 5694,
+     "sha256": "5d3dbef4e73ed6d3f3e3edea75a29ad21100f9f9ccfacaa52715c5eebe6492d9",
+     "size": [
+      96,
+      96
+     ],
+     "alpha": true
+    },
+    "48": {
+     "path": "assets/v3/render/exports/icons/IC-pizza-48.webp",
+     "bytes": 2274,
+     "sha256": "95638a96a526cf81c7d5cad1a6fd9f590e5660cf4f2910402d09cbe11ef5777c",
+     "size": [
+      48,
+      48
+     ],
+     "alpha": true
+    }
+   }
+  },
+  {
+   "id": "IC-vespa",
+   "status": "ter beoordeling eigenaar",
+   "note": "zonder logo's of tekst; dient ook als VE-01",
+   "master": {
+    "path": "assets/v3/render/masters/icons/IC-vespa.png",
+    "bytes": 1155053,
+    "sha256": "ed23e7f6b2ea26b16baae6f0809cac0a8ae839f7976630a4abc7375e47ce2e80",
+    "size": [
+     1253,
+     1253
+    ],
+    "alpha": true
+   },
+   "exports": {
+    "96": {
+     "path": "assets/v3/render/exports/icons/IC-vespa-96.webp",
+     "bytes": 6026,
+     "sha256": "0a060a0cc77a46487b3eac060653383e7feb883f6e4736b9512cf6086af8e869",
+     "size": [
+      96,
+      96
+     ],
+     "alpha": true
+    },
+    "48": {
+     "path": "assets/v3/render/exports/icons/IC-vespa-48.webp",
+     "bytes": 2388,
+     "sha256": "84fc217ccb576d45ec7615b0b9165e229793cb3e2bc1ed2b7305b738683b864d",
+     "size": [
+      48,
+      48
+     ],
+     "alpha": true
+    }
+   }
+  },
+  {
+   "id": "IC-gold",
+   "status": "ter beoordeling eigenaar",
+   "note": "gouden zegel met ster en lauwerkrans",
+   "master": {
+    "path": "assets/v3/render/masters/icons/IC-gold.png",
+    "bytes": 1603708,
+    "sha256": "c33c2f329e42add855e955daf15c40d33d6aed022820812e27e72107af4c1d6e",
+    "size": [
+     1255,
+     1255
+    ],
+    "alpha": true
+   },
+   "exports": {
+    "96": {
+     "path": "assets/v3/render/exports/icons/IC-gold-96.webp",
+     "bytes": 5318,
+     "sha256": "ee806f0938efbe93cf5b41817f81f5b9357acdf049288bde9cd223fcbd18a865",
+     "size": [
+      96,
+      96
+     ],
+     "alpha": true
+    },
+    "48": {
+     "path": "assets/v3/render/exports/icons/IC-gold-48.webp",
+     "bytes": 2258,
+     "sha256": "9bc731086dd8a720ee9c86b7f8609016072aa549ba44393fb4b04ba3f2870bff",
+     "size": [
+      48,
+      48
+     ],
+     "alpha": true
+    }
+   }
+  },
+  {
+   "id": "VE-01",
+   "status": "ter beoordeling eigenaar",
+   "note": "zelfde bron als IC-vespa, 1200x900 transparant",
+   "master": {
+    "path": "assets/v3/render/masters/icons/IC-vespa.png",
+    "bytes": 1155053,
+    "sha256": "ed23e7f6b2ea26b16baae6f0809cac0a8ae839f7976630a4abc7375e47ce2e80",
+    "size": [
+     1253,
+     1253
+    ],
+    "alpha": true
+   },
+   "export": {
+    "path": "assets/v3/render/exports/VE-01-vespa-1200.webp",
+    "bytes": 88680,
+    "sha256": "41b49a4f69162062d0af7df0f31eb775c1defea72eb1448e86e6332bf975c84e",
+    "size": [
+     1200,
+     900
+    ],
+    "alpha": true
+   }
+  },
+  {
+   "id": "IC-slice",
+   "status": "ter beoordeling eigenaar",
+   "note": "pizzapunt voor tellers (eenheid = punt); hele pizza blijft voor meter en Beloningen",
+   "master": {
+    "path": "assets/v3/render/masters/icons/IC-slice.png",
+    "bytes": 1296924,
+    "sha256": "df74a29c367e45e74cb2bac8c30450d6e1e43ad29f3fc6e2afb991f8daa82b8b",
+    "size": [
+     1233,
+     1233
+    ],
+    "alpha": true
+   },
+   "exports": {
+    "96": {
+     "path": "assets/v3/render/exports/icons/IC-slice-96.webp",
+     "bytes": 4658,
+     "sha256": "1b1fa303abc5775133b00d76f9b2d4c6945f759c12caf75d50b492bdb96ad550",
+     "size": [
+      96,
+      96
+     ],
+     "alpha": true
+    },
+    "48": {
+     "path": "assets/v3/render/exports/icons/IC-slice-48.webp",
+     "bytes": 2044,
+     "sha256": "cec6dd44ada6ca6712b8cf20b49f8f93c607fa71f3b3f68ab0695fd95e9e7998",
+     "size": [
+      48,
+      48
+     ],
+     "alpha": true
+    }
+   }
+  },
+  {
+   "id": "IC-postcard",
+   "status": "ter beoordeling eigenaar",
+   "note": "tweede versie: kustlandschap, geen kaart; getande rand zoals de echte postkaarten",
+   "master": {
+    "path": "assets/v3/render/masters/icons/IC-postcard.png",
+    "bytes": 2000791,
+    "sha256": "fe47a2601efe3afbcb303fbf0a0f2104864ca5e8a2975cd624599d16ea8e66a7",
+    "size": [
+     1254,
+     1254
+    ],
+    "alpha": true
+   },
+   "exports": {
+    "96": {
+     "path": "assets/v3/render/exports/icons/IC-postcard-96.webp",
+     "bytes": 6638,
+     "sha256": "b4abe1371d848c583af9a843edaf1b2450e21571a9c8ab576b9a3dd78b2ef158",
+     "size": [
+      96,
+      96
+     ],
+     "alpha": true
+    },
+    "48": {
+     "path": "assets/v3/render/exports/icons/IC-postcard-48.webp",
+     "bytes": 2554,
+     "sha256": "0d3975e248c3751f3e204734e417feb3bb7147e2fed56cb51656c789aa08603d",
+     "size": [
+      48,
+      48
+     ],
+     "alpha": true
+    }
+   }
+  },
+  {
+   "id": "IC-stamp",
+   "status": "ter beoordeling eigenaar",
+   "note": "tweede versie: afdruk zoals in het Reisboekje",
+   "master": {
+    "path": "assets/v3/render/masters/icons/IC-stamp.png",
+    "bytes": 2473307,
+    "sha256": "c577d992fde854535147558fa4c972da69eb9207c853b864544d1f3baf30906a",
+    "size": [
+     1244,
+     1244
+    ],
+    "alpha": true
+   },
+   "exports": {
+    "96": {
+     "path": "assets/v3/render/exports/icons/IC-stamp-96.webp",
+     "bytes": 7116,
+     "sha256": "a578ddedb395fc9fc97c672923ed6f6f681628016e1c1e4c014019385a14144a",
+     "size": [
+      96,
+      96
+     ],
+     "alpha": true
+    },
+    "48": {
+     "path": "assets/v3/render/exports/icons/IC-stamp-48.webp",
+     "bytes": 2488,
+     "sha256": "50907c9f470defcfe7e5e50e4654025007a87d7943c9cef6b210a3ce526598c7",
+     "size": [
+      48,
+      48
+     ],
+     "alpha": true
+    }
+   }
+  },
+  {
+   "id": "IC-stamp-tool",
+   "status": "bewaard, niet als icoon",
+   "note": "houten stempel; mogelijk voor het moment waarop een stempel in het boek wordt gezet",
+   "master": {
+    "path": "assets/v3/render/masters/icons/IC-stamp-tool.png",
+    "bytes": 1370747,
+    "sha256": "e7651d68b476e45ad29fc9cff6441ebe4f3823f5df0210304b07ed92c9fd3ed7",
+    "size": [
+     1250,
+     1250
+    ],
+    "alpha": true
+   }
+  }
+ ]
+}

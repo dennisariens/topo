@@ -19,6 +19,8 @@ body.v3Home #journeyScreen,body.v3Home #journeyScreen>#routeHome{background:none
 .v3Flag{width:44px;height:5px;border-radius:3px;background:var(--v3-flag)}
 .v3Portrait{width:132px;height:132px;margin:0 auto;border-radius:50%;overflow:hidden;background:var(--v3-accent-soft)}
 .v3Portrait img{width:100%;height:100%;object-fit:cover;object-position:50% 4%;transform:scale(1.55);transform-origin:50% 0}
+/* NINO-PORTRET (render asset): bust with transparent background, shown whole in the circle. */
+.v3PortraitArt img{object-fit:cover;object-position:50% 20%;transform:none}
 .v3NavList{display:grid;gap:var(--v3-s1);margin-top:var(--v3-s2)}
 .v3 .v3NavItem{justify-content:flex-start;gap:var(--v3-s3);width:100%;min-height:48px;padding:0 var(--v3-s3);background:transparent;font-weight:500;color:var(--v3-ink)}
 .v3 .v3NavItem[aria-current=page]{background:var(--v3-accent-soft);font-weight:700}
@@ -55,6 +57,31 @@ body.v3Home #journeyScreen,body.v3Home #journeyScreen>#routeHome{background:none
 .v3Frac{font:600 17px/1 var(--v3-font);font-variant-numeric:tabular-nums;margin-right:auto}
 .v3Count{display:inline-flex;align-items:center;gap:var(--v3-s2);font:600 17px/1 var(--v3-font);font-variant-numeric:tabular-nums}
 .v3Mini{width:28px;height:28px;object-fit:contain}
+.v3MiniVespa{width:34px;height:34px}
+/* Chapter header beside the title: the chapter's scene (decorative). */
+.v3Kop{margin:0 0 var(--v3-s1);aspect-ratio:16/9;border-radius:var(--v3-radius);overflow:hidden;box-shadow:0 6px 18px -8px rgba(28,40,44,.35)}
+.v3Kop img{display:block;width:100%;height:100%;object-fit:cover}
+/* Beloningen (richting B): calm frame, the Reisboekje as rich centre; counts are V2 state. */
+.v3Rewards{display:none}
+.v3Reis[data-view=rewards]>:is(.v3List,.v3Main){display:none}
+.v3Reis[data-view=rewards]>.v3Rewards{grid-column:2/-1;display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,1fr);grid-template-rows:auto minmax(0,1fr) auto;gap:var(--v3-s5);padding:var(--v3-s6) var(--v3-s8);min-height:0;overflow:auto;background:color-mix(in srgb,var(--v3-surface) 55%,transparent)}
+.v3Rewards h1{grid-column:1/-1;font:var(--v3-large);letter-spacing:-.015em}
+.v3Rewards h1:focus{outline:0}.v3Rewards h1:focus-visible{outline:3px solid var(--v3-focus,#1d6fd8);outline-offset:4px;border-radius:8px}
+.v3Book{display:grid;justify-items:center;align-content:center;gap:var(--v3-s5);min-height:0;padding:var(--v3-s5);border-radius:var(--v3-radius);background:color-mix(in srgb,var(--v3-surface) 80%,transparent);box-shadow:0 1px 2px rgba(28,40,44,.06)}
+.v3Book{grid-template-rows:minmax(0,1fr) auto}
+.v3 .v3BookCover{display:flex;align-items:center;justify-content:center;padding:0;background:none;box-shadow:none;min-height:0;height:100%;border-radius:12px}
+.v3CoverArt{display:block;max-height:min(100%,420px);width:auto;max-width:100%;filter:drop-shadow(0 14px 22px rgba(60,40,20,.28));transform:rotate(-2deg)}
+.v3Book .v3Btn.primary{min-width:240px}
+.v3Ride{display:grid;grid-template-columns:auto 1fr;grid-template-rows:minmax(0,1fr) auto auto;column-gap:var(--v3-s3);align-content:end;min-height:0;padding:var(--v3-s5);border-radius:var(--v3-radius);background:color-mix(in srgb,var(--v3-surface) 80%,transparent);box-shadow:0 1px 2px rgba(28,40,44,.06)}
+.v3RideArt{grid-column:1/-1;justify-self:center;align-self:center;width:100%;max-width:420px;height:auto;max-height:min(34dvh,300px);object-fit:contain}
+.v3Ride>b{font:700 34px/1 var(--v3-font);font-variant-numeric:tabular-nums}
+.v3Ride>span{align-self:center;font:var(--v3-headline);color:var(--v3-ink2)}
+.v3RideSteps{grid-column:1/-1;max-width:none;margin-top:var(--v3-s3)}
+.v3Tiles{grid-column:1/-1;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:var(--v3-s4)}
+.v3Tile{display:grid;grid-template-columns:48px 1fr;grid-template-rows:auto auto;column-gap:var(--v3-s3);align-items:center;padding:var(--v3-s4);border-radius:var(--v3-radius);background:color-mix(in srgb,var(--v3-surface) 82%,transparent);box-shadow:0 1px 2px rgba(28,40,44,.06)}
+.v3TileIcon{grid-row:1/3;width:48px;height:48px;object-fit:contain}
+.v3Tile b{font:700 22px/1.1 var(--v3-font);font-variant-numeric:tabular-nums}
+.v3Tile span{font:var(--v3-foot);color:var(--v3-ink2)}
 .v3Count .v3Icon{width:34px;height:24px;color:var(--v3-accent);stroke-width:2.4}
 .v3MapStage{position:relative;min-height:0;display:grid;place-items:center;padding:0 var(--v3-s4) var(--v3-s4)}
 /* Real sea and neighbouring land stay visible; only a narrow edge softens into the surface (owner 9-11). */
@@ -103,10 +130,10 @@ body.v3Home #journeyScreen,body.v3Home #journeyScreen>#routeHome{background:none
 .v3Map[data-relief=on] .zone:not(.v3Hit){fill-opacity:.11}
 .v3Map[data-relief=on] .water:not(.v3Hit){fill-opacity:.16}
 
-/* Stijlbeeld (renderniveau, ≥ 768 px): the V2 panorama full-bleed behind the app (temporary, until BG-01);
+/* Renderniveau (≥ 768 px): BG-01 full-bleed behind the app (BG-02/BG-03 switchable in the preview);
    the app window floats above it as soft frosted glass, radius 24, soft shadow. Phone: no backdrop. */
 @media (min-width:768px){
- body.v3Home{background:#e9e4da var(--v3-pano,none) left center/cover no-repeat fixed}
+ body.v3Home{background:#e9e4da var(--v3-pano,none) center/cover no-repeat fixed}
  body.v3Home .layout.routeHomeLayout,body.v3Home #journeyScreen{background:none!important}
  .v3Reis{--v3-glass:color-mix(in srgb,var(--v3-surface) 80%,transparent);grid-template-columns:212px 372px minmax(0,1fr);width:calc(100% - 2*var(--v3-s6));height:calc(100dvh - var(--v3-bar,0px) - 2*var(--v3-s6));max-width:1560px;margin:var(--v3-s6) auto;padding:0;border-radius:var(--v3-radius-shell);overflow:hidden;
   background:var(--v3-glass);-webkit-backdrop-filter:blur(26px) saturate(1.25);backdrop-filter:blur(26px) saturate(1.25);
@@ -162,4 +189,13 @@ body.v3Home #journeyScreen,body.v3Home #journeyScreen>#routeHome{background:none
  .v3 .v3Settings{margin:0}
  .v3Count .v3Icon{width:28px}
 }
-@media (max-width:359px){.v3Steps{display:none}}
+@media (max-width:1279px) and (min-width:768px){.v3Reis[data-view=rewards]>.v3Rewards{padding:var(--v3-s5)}.v3Tiles{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media (max-width:1023px){.v3Reis[data-view=rewards]>.v3Rewards{grid-template-columns:minmax(0,1fr);grid-template-rows:auto}.v3 .v3BookCover{height:auto}.v3CoverArt{max-height:min(30dvh,320px)}.v3RideArt{max-height:min(22dvh,220px)}}
+@media (max-width:767px){
+ .v3Reis[data-view=rewards]>.v3Rewards{order:1;display:flex;flex-direction:column;padding:var(--v3-s4) var(--v3-s5) var(--v3-s6);background:none;overflow:visible}
+ .v3Rewards h1{font-size:30px;line-height:36px}
+ .v3CoverArt{max-height:240px}.v3RideArt{max-height:160px}
+ .v3Tiles{grid-template-columns:repeat(2,minmax(0,1fr));gap:var(--v3-s3)}
+ .v3Kop{display:none}
+}
+@media (max-width:359px){.v3Steps:not(.v3RideSteps){display:none}}

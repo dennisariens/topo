@@ -1,14 +1,24 @@
 {
  "html": "output/html/TOPO-V3-Reis-Preview.html",
- "htmlSha256": "94b62f8ac30cfc64587ad4c127ef3f4be42ce424da1792f8e30324fb4b0c5464",
+ "htmlSha256": "04cd49e797ed0b0014d775780561057895943f732274bcc275d163dbceb6852f",
  "indexSha256": "3aced3c31259011b0af2947c78f71965cb4beb2e88c69d1663e61792b0304f5a",
  "runs": {
   "desktop-italia": {
    "backdrop": {
     "image": true,
-    "isV2Panorama": true,
+    "key": "bg01",
     "size": "cover",
-    "attachment": "fixed"
+    "attachment": "fixed",
+    "sha256": "c07c938d990250fdcd3a370b90f74c7cb8d9a422f4b720dbeb5e93850309b9c0"
+   },
+   "art": {
+    "portrait": "b0d5dbfe1f82068b025ca08270b8cc8edfd2a57c41746f68cae9eaeb2921acd0",
+    "slice": "1b1fa303abc5775133b00d76f9b2d4c6945f759c12caf75d50b492bdb96ad550",
+    "vespa": "0a060a0cc77a46487b3eac060653383e7feb883f6e4736b9512cf6086af8e869",
+    "kop": "c9d9412066ebc2a8815ba681142384fa67000b9c439518319376da2a202c8043",
+    "kopShown": true,
+    "kopBeforeTitle": true,
+    "selected": "city2"
    },
    "window": {
     "radius": "24px",
@@ -36,15 +46,14 @@
      ],
      "nameClipped": false,
      "nameLines": 1,
-     "sha256": "26865876290044697872bb748d2b55e09fc826989a6fc37e190914147bbda03c",
-     "iconIsChapterIcon": false
+     "sha256": "26865876290044697872bb748d2b55e09fc826989a6fc37e190914147bbda03c"
     },
     {
      "chapter": "city2",
-     "icon": true,
+     "icon": false,
      "natural": [
-      512,
-      512
+      480,
+      270
      ],
      "box": [
       60,
@@ -52,14 +61,14 @@
      ],
      "nameClipped": false,
      "nameLines": 1,
-     "iconIsChapterIcon": true
+     "sha256": "2c6cb3bcca60b075c383448dc10a5a92bf1b56336ea2f5ab0810709586e3f88d"
     },
     {
      "chapter": "city3",
-     "icon": true,
+     "icon": false,
      "natural": [
-      512,
-      512
+      480,
+      270
      ],
      "box": [
       60,
@@ -67,14 +76,14 @@
      ],
      "nameClipped": false,
      "nameLines": 1,
-     "iconIsChapterIcon": true
+     "sha256": "927c80380ed1571cdb4cc8bef8704b6a3e6b01e58ad68dc5bc2617ef4f7a8244"
     },
     {
      "chapter": "city4",
-     "icon": true,
+     "icon": false,
      "natural": [
-      512,
-      512
+      480,
+      270
      ],
      "box": [
       60,
@@ -82,7 +91,7 @@
      ],
      "nameClipped": false,
      "nameLines": 1,
-     "iconIsChapterIcon": true
+     "sha256": "c4b13d59449065f558b22620661cbb600cd07f94b548ab9a6b853da5b5ef1d30"
     },
     {
      "chapter": "islands",
@@ -97,8 +106,7 @@
      ],
      "nameClipped": false,
      "nameLines": 1,
-     "sha256": "2b027de93af0155f076f3fc5a68be460807a668496c5dcc2464668718a4a3b9d",
-     "iconIsChapterIcon": false
+     "sha256": "2b027de93af0155f076f3fc5a68be460807a668496c5dcc2464668718a4a3b9d"
     },
     {
      "chapter": "mountains",
@@ -113,8 +121,7 @@
      ],
      "nameClipped": false,
      "nameLines": 1,
-     "sha256": "88d66acc264653b3f4354455b5c2887a0027b0da05a66e73758fc7ddb8f40171",
-     "iconIsChapterIcon": false
+     "sha256": "88d66acc264653b3f4354455b5c2887a0027b0da05a66e73758fc7ddb8f40171"
     },
     {
      "chapter": "volcanoes",
@@ -129,8 +136,7 @@
      ],
      "nameClipped": false,
      "nameLines": 1,
-     "sha256": "21f4566b9d32909526c2f542bc6b0e12a2d4beb47b32ee1c7194644de68b287d",
-     "iconIsChapterIcon": false
+     "sha256": "21f4566b9d32909526c2f542bc6b0e12a2d4beb47b32ee1c7194644de68b287d"
     },
     {
      "chapter": "regions",
@@ -145,8 +151,7 @@
      ],
      "nameClipped": false,
      "nameLines": 1,
-     "sha256": "482349912963d3cf50a775d06ec70c892a42a3cbda29fa066464911d73176b45",
-     "iconIsChapterIcon": false
+     "sha256": "482349912963d3cf50a775d06ec70c892a42a3cbda29fa066464911d73176b45"
     },
     {
      "chapter": "countries",
@@ -161,8 +166,7 @@
      ],
      "nameClipped": false,
      "nameLines": 1,
-     "sha256": "3f4ce7e6caa69edbc7fd9a6ed345c570a4e22bf262bc6750a3fd5065ee64bd89",
-     "iconIsChapterIcon": false
+     "sha256": "3f4ce7e6caa69edbc7fd9a6ed345c570a4e22bf262bc6750a3fd5065ee64bd89"
     },
     {
      "chapter": "seas",
@@ -177,8 +181,7 @@
      ],
      "nameClipped": false,
      "nameLines": 1,
-     "sha256": "c0147c714afc3a07cc744cbbb6b1cb3f816e0c728835dbdb66711bd4e3929a60",
-     "iconIsChapterIcon": false
+     "sha256": "c0147c714afc3a07cc744cbbb6b1cb3f816e0c728835dbdb66711bd4e3929a60"
     },
     {
      "chapter": "rivers",
@@ -193,8 +196,7 @@
      ],
      "nameClipped": false,
      "nameLines": 1,
-     "sha256": "8f1517c7d5a84a598dac8c14d0351c06bd972048d9835602a6df42f7e6357f5b",
-     "iconIsChapterIcon": false
+     "sha256": "8f1517c7d5a84a598dac8c14d0351c06bd972048d9835602a6df42f7e6357f5b"
     }
    ],
    "relief": {
@@ -251,9 +253,19 @@
   "desktop-viola": {
    "backdrop": {
     "image": true,
-    "isV2Panorama": true,
+    "key": "bg01",
     "size": "cover",
-    "attachment": "fixed"
+    "attachment": "fixed",
+    "sha256": "c07c938d990250fdcd3a370b90f74c7cb8d9a422f4b720dbeb5e93850309b9c0"
+   },
+   "art": {
+    "portrait": "b0d5dbfe1f82068b025ca08270b8cc8edfd2a57c41746f68cae9eaeb2921acd0",
+    "slice": "1b1fa303abc5775133b00d76f9b2d4c6945f759c12caf75d50b492bdb96ad550",
+    "vespa": "0a060a0cc77a46487b3eac060653383e7feb883f6e4736b9512cf6086af8e869",
+    "kop": "c9d9412066ebc2a8815ba681142384fa67000b9c439518319376da2a202c8043",
+    "kopShown": true,
+    "kopBeforeTitle": true,
+    "selected": "city2"
    },
    "window": {
     "radius": "24px",
@@ -281,15 +293,14 @@
      ],
      "nameClipped": false,
      "nameLines": 1,
-     "sha256": "26865876290044697872bb748d2b55e09fc826989a6fc37e190914147bbda03c",
-     "iconIsChapterIcon": false
+     "sha256": "26865876290044697872bb748d2b55e09fc826989a6fc37e190914147bbda03c"
     },
     {
      "chapter": "city2",
-     "icon": true,
+     "icon": false,
      "natural": [
-      512,
-      512
+      480,
+      270
      ],
      "box": [
       60,
@@ -297,14 +308,14 @@
      ],
      "nameClipped": false,
      "nameLines": 1,
-     "iconIsChapterIcon": true
+     "sha256": "2c6cb3bcca60b075c383448dc10a5a92bf1b56336ea2f5ab0810709586e3f88d"
     },
     {
      "chapter": "city3",
-     "icon": true,
+     "icon": false,
      "natural": [
-      512,
-      512
+      480,
+      270
      ],
      "box": [
       60,
@@ -312,14 +323,14 @@
      ],
      "nameClipped": false,
      "nameLines": 1,
-     "iconIsChapterIcon": true
+     "sha256": "927c80380ed1571cdb4cc8bef8704b6a3e6b01e58ad68dc5bc2617ef4f7a8244"
     },
     {
      "chapter": "city4",
-     "icon": true,
+     "icon": false,
      "natural": [
-      512,
-      512
+      480,
+      270
      ],
      "box": [
       60,
@@ -327,7 +338,7 @@
      ],
      "nameClipped": false,
      "nameLines": 1,
-     "iconIsChapterIcon": true
+     "sha256": "c4b13d59449065f558b22620661cbb600cd07f94b548ab9a6b853da5b5ef1d30"
     },
     {
      "chapter": "islands",
@@ -342,8 +353,7 @@
      ],
      "nameClipped": false,
      "nameLines": 1,
-     "sha256": "2b027de93af0155f076f3fc5a68be460807a668496c5dcc2464668718a4a3b9d",
-     "iconIsChapterIcon": false
+     "sha256": "2b027de93af0155f076f3fc5a68be460807a668496c5dcc2464668718a4a3b9d"
     },
     {
      "chapter": "mountains",
@@ -358,8 +368,7 @@
      ],
      "nameClipped": false,
      "nameLines": 1,
-     "sha256": "88d66acc264653b3f4354455b5c2887a0027b0da05a66e73758fc7ddb8f40171",
-     "iconIsChapterIcon": false
+     "sha256": "88d66acc264653b3f4354455b5c2887a0027b0da05a66e73758fc7ddb8f40171"
     },
     {
      "chapter": "volcanoes",
@@ -374,8 +383,7 @@
      ],
      "nameClipped": false,
      "nameLines": 1,
-     "sha256": "21f4566b9d32909526c2f542bc6b0e12a2d4beb47b32ee1c7194644de68b287d",
-     "iconIsChapterIcon": false
+     "sha256": "21f4566b9d32909526c2f542bc6b0e12a2d4beb47b32ee1c7194644de68b287d"
     },
     {
      "chapter": "regions",
@@ -390,8 +398,7 @@
      ],
      "nameClipped": false,
      "nameLines": 1,
-     "sha256": "482349912963d3cf50a775d06ec70c892a42a3cbda29fa066464911d73176b45",
-     "iconIsChapterIcon": false
+     "sha256": "482349912963d3cf50a775d06ec70c892a42a3cbda29fa066464911d73176b45"
     },
     {
      "chapter": "countries",
@@ -406,8 +413,7 @@
      ],
      "nameClipped": false,
      "nameLines": 1,
-     "sha256": "3f4ce7e6caa69edbc7fd9a6ed345c570a4e22bf262bc6750a3fd5065ee64bd89",
-     "iconIsChapterIcon": false
+     "sha256": "3f4ce7e6caa69edbc7fd9a6ed345c570a4e22bf262bc6750a3fd5065ee64bd89"
     },
     {
      "chapter": "seas",
@@ -422,8 +428,7 @@
      ],
      "nameClipped": false,
      "nameLines": 1,
-     "sha256": "c0147c714afc3a07cc744cbbb6b1cb3f816e0c728835dbdb66711bd4e3929a60",
-     "iconIsChapterIcon": false
+     "sha256": "c0147c714afc3a07cc744cbbb6b1cb3f816e0c728835dbdb66711bd4e3929a60"
     },
     {
      "chapter": "rivers",
@@ -438,8 +443,7 @@
      ],
      "nameClipped": false,
      "nameLines": 1,
-     "sha256": "8f1517c7d5a84a598dac8c14d0351c06bd972048d9835602a6df42f7e6357f5b",
-     "iconIsChapterIcon": false
+     "sha256": "8f1517c7d5a84a598dac8c14d0351c06bd972048d9835602a6df42f7e6357f5b"
     }
    ],
    "relief": {
@@ -496,9 +500,19 @@
   "ipad-landscape-italia": {
    "backdrop": {
     "image": true,
-    "isV2Panorama": true,
+    "key": "bg01",
     "size": "cover",
-    "attachment": "fixed"
+    "attachment": "fixed",
+    "sha256": "c07c938d990250fdcd3a370b90f74c7cb8d9a422f4b720dbeb5e93850309b9c0"
+   },
+   "art": {
+    "portrait": "b0d5dbfe1f82068b025ca08270b8cc8edfd2a57c41746f68cae9eaeb2921acd0",
+    "slice": "1b1fa303abc5775133b00d76f9b2d4c6945f759c12caf75d50b492bdb96ad550",
+    "vespa": "0a060a0cc77a46487b3eac060653383e7feb883f6e4736b9512cf6086af8e869",
+    "kop": "c9d9412066ebc2a8815ba681142384fa67000b9c439518319376da2a202c8043",
+    "kopShown": true,
+    "kopBeforeTitle": true,
+    "selected": "city2"
    },
    "window": {
     "radius": "24px",
@@ -526,15 +540,14 @@
      ],
      "nameClipped": false,
      "nameLines": 1,
-     "sha256": "26865876290044697872bb748d2b55e09fc826989a6fc37e190914147bbda03c",
-     "iconIsChapterIcon": false
+     "sha256": "26865876290044697872bb748d2b55e09fc826989a6fc37e190914147bbda03c"
     },
     {
      "chapter": "city2",
-     "icon": true,
+     "icon": false,
      "natural": [
-      512,
-      512
+      480,
+      270
      ],
      "box": [
       48,
@@ -542,14 +555,14 @@
      ],
      "nameClipped": false,
      "nameLines": 1,
-     "iconIsChapterIcon": true
+     "sha256": "2c6cb3bcca60b075c383448dc10a5a92bf1b56336ea2f5ab0810709586e3f88d"
     },
     {
      "chapter": "city3",
-     "icon": true,
+     "icon": false,
      "natural": [
-      512,
-      512
+      480,
+      270
      ],
      "box": [
       48,
@@ -557,14 +570,14 @@
      ],
      "nameClipped": false,
      "nameLines": 1,
-     "iconIsChapterIcon": true
+     "sha256": "927c80380ed1571cdb4cc8bef8704b6a3e6b01e58ad68dc5bc2617ef4f7a8244"
     },
     {
      "chapter": "city4",
-     "icon": true,
+     "icon": false,
      "natural": [
-      512,
-      512
+      480,
+      270
      ],
      "box": [
       48,
@@ -572,7 +585,7 @@
      ],
      "nameClipped": false,
      "nameLines": 1,
-     "iconIsChapterIcon": true
+     "sha256": "c4b13d59449065f558b22620661cbb600cd07f94b548ab9a6b853da5b5ef1d30"
     },
     {
      "chapter": "islands",
@@ -587,8 +600,7 @@
      ],
      "nameClipped": false,
      "nameLines": 1,
-     "sha256": "2b027de93af0155f076f3fc5a68be460807a668496c5dcc2464668718a4a3b9d",
-     "iconIsChapterIcon": false
+     "sha256": "2b027de93af0155f076f3fc5a68be460807a668496c5dcc2464668718a4a3b9d"
     },
     {
      "chapter": "mountains",
@@ -603,8 +615,7 @@
      ],
      "nameClipped": false,
      "nameLines": 1,
-     "sha256": "88d66acc264653b3f4354455b5c2887a0027b0da05a66e73758fc7ddb8f40171",
-     "iconIsChapterIcon": false
+     "sha256": "88d66acc264653b3f4354455b5c2887a0027b0da05a66e73758fc7ddb8f40171"
     },
     {
      "chapter": "volcanoes",
@@ -619,8 +630,7 @@
      ],
      "nameClipped": false,
      "nameLines": 1,
-     "sha256": "21f4566b9d32909526c2f542bc6b0e12a2d4beb47b32ee1c7194644de68b287d",
-     "iconIsChapterIcon": false
+     "sha256": "21f4566b9d32909526c2f542bc6b0e12a2d4beb47b32ee1c7194644de68b287d"
     },
     {
      "chapter": "regions",
@@ -635,8 +645,7 @@
      ],
      "nameClipped": false,
      "nameLines": 1,
-     "sha256": "482349912963d3cf50a775d06ec70c892a42a3cbda29fa066464911d73176b45",
-     "iconIsChapterIcon": false
+     "sha256": "482349912963d3cf50a775d06ec70c892a42a3cbda29fa066464911d73176b45"
     },
     {
      "chapter": "countries",
@@ -651,8 +660,7 @@
      ],
      "nameClipped": false,
      "nameLines": 1,
-     "sha256": "3f4ce7e6caa69edbc7fd9a6ed345c570a4e22bf262bc6750a3fd5065ee64bd89",
-     "iconIsChapterIcon": false
+     "sha256": "3f4ce7e6caa69edbc7fd9a6ed345c570a4e22bf262bc6750a3fd5065ee64bd89"
     },
     {
      "chapter": "seas",
@@ -667,8 +675,7 @@
      ],
      "nameClipped": false,
      "nameLines": 1,
-     "sha256": "c0147c714afc3a07cc744cbbb6b1cb3f816e0c728835dbdb66711bd4e3929a60",
-     "iconIsChapterIcon": false
+     "sha256": "c0147c714afc3a07cc744cbbb6b1cb3f816e0c728835dbdb66711bd4e3929a60"
     },
     {
      "chapter": "rivers",
@@ -683,8 +690,7 @@
      ],
      "nameClipped": false,
      "nameLines": 1,
-     "sha256": "8f1517c7d5a84a598dac8c14d0351c06bd972048d9835602a6df42f7e6357f5b",
-     "iconIsChapterIcon": false
+     "sha256": "8f1517c7d5a84a598dac8c14d0351c06bd972048d9835602a6df42f7e6357f5b"
     }
    ],
    "relief": {
@@ -741,9 +747,19 @@
   "ipad-landscape-viola": {
    "backdrop": {
     "image": true,
-    "isV2Panorama": true,
+    "key": "bg01",
     "size": "cover",
-    "attachment": "fixed"
+    "attachment": "fixed",
+    "sha256": "c07c938d990250fdcd3a370b90f74c7cb8d9a422f4b720dbeb5e93850309b9c0"
+   },
+   "art": {
+    "portrait": "b0d5dbfe1f82068b025ca08270b8cc8edfd2a57c41746f68cae9eaeb2921acd0",
+    "slice": "1b1fa303abc5775133b00d76f9b2d4c6945f759c12caf75d50b492bdb96ad550",
+    "vespa": "0a060a0cc77a46487b3eac060653383e7feb883f6e4736b9512cf6086af8e869",
+    "kop": "c9d9412066ebc2a8815ba681142384fa67000b9c439518319376da2a202c8043",
+    "kopShown": true,
+    "kopBeforeTitle": true,
+    "selected": "city2"
    },
    "window": {
     "radius": "24px",
@@ -771,15 +787,14 @@
      ],
      "nameClipped": false,
      "nameLines": 1,
-     "sha256": "26865876290044697872bb748d2b55e09fc826989a6fc37e190914147bbda03c",
-     "iconIsChapterIcon": false
+     "sha256": "26865876290044697872bb748d2b55e09fc826989a6fc37e190914147bbda03c"
     },
     {
      "chapter": "city2",
-     "icon": true,
+     "icon": false,
      "natural": [
-      512,
-      512
+      480,
+      270
      ],
      "box": [
       48,
@@ -787,14 +802,14 @@
      ],
      "nameClipped": false,
      "nameLines": 1,
-     "iconIsChapterIcon": true
+     "sha256": "2c6cb3bcca60b075c383448dc10a5a92bf1b56336ea2f5ab0810709586e3f88d"
     },
     {
      "chapter": "city3",
-     "icon": true,
+     "icon": false,
      "natural": [
-      512,
-      512
+      480,
+      270
      ],
      "box": [
       48,
@@ -802,14 +817,14 @@
      ],
      "nameClipped": false,
      "nameLines": 1,
-     "iconIsChapterIcon": true
+     "sha256": "927c80380ed1571cdb4cc8bef8704b6a3e6b01e58ad68dc5bc2617ef4f7a8244"
     },
     {
      "chapter": "city4",
-     "icon": true,
+     "icon": false,
      "natural": [
-      512,
-      512
+      480,
+      270
      ],
      "box": [
       48,
@@ -817,7 +832,7 @@
      ],
      "nameClipped": false,
      "nameLines": 1,
-     "iconIsChapterIcon": true
+     "sha256": "c4b13d59449065f558b22620661cbb600cd07f94b548ab9a6b853da5b5ef1d30"
     },
     {
      "chapter": "islands",
@@ -832,8 +847,7 @@
      ],
      "nameClipped": false,
      "nameLines": 1,
-     "sha256": "2b027de93af0155f076f3fc5a68be460807a668496c5dcc2464668718a4a3b9d",
-     "iconIsChapterIcon": false
+     "sha256": "2b027de93af0155f076f3fc5a68be460807a668496c5dcc2464668718a4a3b9d"
     },
     {
      "chapter": "mountains",
@@ -848,8 +862,7 @@
      ],
      "nameClipped": false,
      "nameLines": 1,
-     "sha256": "88d66acc264653b3f4354455b5c2887a0027b0da05a66e73758fc7ddb8f40171",
-     "iconIsChapterIcon": false
+     "sha256": "88d66acc264653b3f4354455b5c2887a0027b0da05a66e73758fc7ddb8f40171"
     },
     {
      "chapter": "volcanoes",
@@ -864,8 +877,7 @@
      ],
      "nameClipped": false,
      "nameLines": 1,
-     "sha256": "21f4566b9d32909526c2f542bc6b0e12a2d4beb47b32ee1c7194644de68b287d",
-     "iconIsChapterIcon": false
+     "sha256": "21f4566b9d32909526c2f542bc6b0e12a2d4beb47b32ee1c7194644de68b287d"
     },
     {
      "chapter": "regions",
@@ -880,8 +892,7 @@
      ],
      "nameClipped": false,
      "nameLines": 1,
-     "sha256": "482349912963d3cf50a775d06ec70c892a42a3cbda29fa066464911d73176b45",
-     "iconIsChapterIcon": false
+     "sha256": "482349912963d3cf50a775d06ec70c892a42a3cbda29fa066464911d73176b45"
     },
     {
      "chapter": "countries",
@@ -896,8 +907,7 @@
      ],
      "nameClipped": false,
      "nameLines": 1,
-     "sha256": "3f4ce7e6caa69edbc7fd9a6ed345c570a4e22bf262bc6750a3fd5065ee64bd89",
-     "iconIsChapterIcon": false
+     "sha256": "3f4ce7e6caa69edbc7fd9a6ed345c570a4e22bf262bc6750a3fd5065ee64bd89"
     },
     {
      "chapter": "seas",
@@ -912,8 +922,7 @@
      ],
      "nameClipped": false,
      "nameLines": 1,
-     "sha256": "c0147c714afc3a07cc744cbbb6b1cb3f816e0c728835dbdb66711bd4e3929a60",
-     "iconIsChapterIcon": false
+     "sha256": "c0147c714afc3a07cc744cbbb6b1cb3f816e0c728835dbdb66711bd4e3929a60"
     },
     {
      "chapter": "rivers",
@@ -928,8 +937,7 @@
      ],
      "nameClipped": false,
      "nameLines": 1,
-     "sha256": "8f1517c7d5a84a598dac8c14d0351c06bd972048d9835602a6df42f7e6357f5b",
-     "iconIsChapterIcon": false
+     "sha256": "8f1517c7d5a84a598dac8c14d0351c06bd972048d9835602a6df42f7e6357f5b"
     }
    ],
    "relief": {
@@ -986,9 +994,19 @@
   "phone-italia": {
    "backdrop": {
     "image": false,
-    "isV2Panorama": false,
+    "key": "bg01",
     "size": "auto",
-    "attachment": "scroll"
+    "attachment": "scroll",
+    "sha256": null
+   },
+   "art": {
+    "portrait": "b0d5dbfe1f82068b025ca08270b8cc8edfd2a57c41746f68cae9eaeb2921acd0",
+    "slice": "1b1fa303abc5775133b00d76f9b2d4c6945f759c12caf75d50b492bdb96ad550",
+    "vespa": "0a060a0cc77a46487b3eac060653383e7feb883f6e4736b9512cf6086af8e869",
+    "kop": "c9d9412066ebc2a8815ba681142384fa67000b9c439518319376da2a202c8043",
+    "kopShown": false,
+    "kopBeforeTitle": true,
+    "selected": "city2"
    },
    "window": {
     "radius": "0px",
@@ -999,7 +1017,7 @@
      0,
      0,
      52,
-     -616
+     -622
     ]
    },
    "rows": [
@@ -1016,15 +1034,14 @@
      ],
      "nameClipped": false,
      "nameLines": 1,
-     "sha256": "26865876290044697872bb748d2b55e09fc826989a6fc37e190914147bbda03c",
-     "iconIsChapterIcon": false
+     "sha256": "26865876290044697872bb748d2b55e09fc826989a6fc37e190914147bbda03c"
     },
     {
      "chapter": "city2",
-     "icon": true,
+     "icon": false,
      "natural": [
-      512,
-      512
+      480,
+      270
      ],
      "box": [
       64,
@@ -1032,14 +1049,14 @@
      ],
      "nameClipped": false,
      "nameLines": 1,
-     "iconIsChapterIcon": true
+     "sha256": "2c6cb3bcca60b075c383448dc10a5a92bf1b56336ea2f5ab0810709586e3f88d"
     },
     {
      "chapter": "city3",
-     "icon": true,
+     "icon": false,
      "natural": [
-      512,
-      512
+      480,
+      270
      ],
      "box": [
       64,
@@ -1047,14 +1064,14 @@
      ],
      "nameClipped": false,
      "nameLines": 1,
-     "iconIsChapterIcon": true
+     "sha256": "927c80380ed1571cdb4cc8bef8704b6a3e6b01e58ad68dc5bc2617ef4f7a8244"
     },
     {
      "chapter": "city4",
-     "icon": true,
+     "icon": false,
      "natural": [
-      512,
-      512
+      480,
+      270
      ],
      "box": [
       64,
@@ -1062,7 +1079,7 @@
      ],
      "nameClipped": false,
      "nameLines": 1,
-     "iconIsChapterIcon": true
+     "sha256": "c4b13d59449065f558b22620661cbb600cd07f94b548ab9a6b853da5b5ef1d30"
     },
     {
      "chapter": "islands",
@@ -1077,8 +1094,7 @@
      ],
      "nameClipped": false,
      "nameLines": 1,
-     "sha256": "2b027de93af0155f076f3fc5a68be460807a668496c5dcc2464668718a4a3b9d",
-     "iconIsChapterIcon": false
+     "sha256": "2b027de93af0155f076f3fc5a68be460807a668496c5dcc2464668718a4a3b9d"
     },
     {
      "chapter": "mountains",
@@ -1093,8 +1109,7 @@
      ],
      "nameClipped": false,
      "nameLines": 1,
-     "sha256": "88d66acc264653b3f4354455b5c2887a0027b0da05a66e73758fc7ddb8f40171",
-     "iconIsChapterIcon": false
+     "sha256": "88d66acc264653b3f4354455b5c2887a0027b0da05a66e73758fc7ddb8f40171"
     },
     {
      "chapter": "volcanoes",
@@ -1109,8 +1124,7 @@
      ],
      "nameClipped": false,
      "nameLines": 1,
-     "sha256": "21f4566b9d32909526c2f542bc6b0e12a2d4beb47b32ee1c7194644de68b287d",
-     "iconIsChapterIcon": false
+     "sha256": "21f4566b9d32909526c2f542bc6b0e12a2d4beb47b32ee1c7194644de68b287d"
     },
     {
      "chapter": "regions",
@@ -1125,8 +1139,7 @@
      ],
      "nameClipped": false,
      "nameLines": 1,
-     "sha256": "482349912963d3cf50a775d06ec70c892a42a3cbda29fa066464911d73176b45",
-     "iconIsChapterIcon": false
+     "sha256": "482349912963d3cf50a775d06ec70c892a42a3cbda29fa066464911d73176b45"
     },
     {
      "chapter": "countries",
@@ -1141,8 +1154,7 @@
      ],
      "nameClipped": false,
      "nameLines": 1,
-     "sha256": "3f4ce7e6caa69edbc7fd9a6ed345c570a4e22bf262bc6750a3fd5065ee64bd89",
-     "iconIsChapterIcon": false
+     "sha256": "3f4ce7e6caa69edbc7fd9a6ed345c570a4e22bf262bc6750a3fd5065ee64bd89"
     },
     {
      "chapter": "seas",
@@ -1157,8 +1169,7 @@
      ],
      "nameClipped": false,
      "nameLines": 1,
-     "sha256": "c0147c714afc3a07cc744cbbb6b1cb3f816e0c728835dbdb66711bd4e3929a60",
-     "iconIsChapterIcon": false
+     "sha256": "c0147c714afc3a07cc744cbbb6b1cb3f816e0c728835dbdb66711bd4e3929a60"
     },
     {
      "chapter": "rivers",
@@ -1173,8 +1184,7 @@
      ],
      "nameClipped": false,
      "nameLines": 1,
-     "sha256": "8f1517c7d5a84a598dac8c14d0351c06bd972048d9835602a6df42f7e6357f5b",
-     "iconIsChapterIcon": false
+     "sha256": "8f1517c7d5a84a598dac8c14d0351c06bd972048d9835602a6df42f7e6357f5b"
     }
    ],
    "relief": {
@@ -1231,6 +1241,487 @@
  },
  "errors": [],
  "browser": "157.0.8103.38",
+ "bgAlternatives": {
+  "bg02": {
+   "key": "bg02",
+   "sha256": "939934b56be3406fa5a48717b900acea521f6f45674cce82b09993ca3630c660",
+   "switch": [
+    "bezig",
+    "bezig/bg02",
+    "bezig/bg03"
+   ]
+  },
+  "bg03": {
+   "key": "bg03",
+   "sha256": "b4a423ef64fdb58773aa99659ec23b58283b1cf96763f591d41d09eb6619f20b",
+   "switch": [
+    "bezig",
+    "bezig/bg02",
+    "bezig/bg03"
+   ]
+  }
+ },
+ "kops": {
+  "city1": "fc30759340d0a54a2b63e29adcb4a4f4b20078021941410faf0f564793baf048",
+  "city2": "c9d9412066ebc2a8815ba681142384fa67000b9c439518319376da2a202c8043",
+  "city3": "719344db49bfd156f6b22904b1ff31dd2e2899ac133b0c303fdcf85b165dae02",
+  "city4": "ba56ee524dcd170ecefb97e4a7f3d7dd2d2555d0cb29f1e04b92a42512324318",
+  "islands": "8b2d530acee7c727479cf9593e55e1b03bbadbdf85971a631cce2c1097ee9093",
+  "mountains": "ea8841762b495239c1ec89a5759c03ec09c002af3a5c550c1370205ea6ef3fce",
+  "volcanoes": "80623ad790d3f8c32a39276e84106bda9ccd37d57f79d3268091f0206466b654",
+  "regions": "6bd74e9cdc1388172c119b02d32e512862ae08c40b588f834d53efd98cdcea7b",
+  "countries": "10c798c0e9d679987f4b446e412c05f6b80fc7a57f26ab709ac099414e39421d",
+  "seas": "fb3a1c781a099eebbb078a35d82a9666e69475eb528f3e505037e7e7638454d1",
+  "rivers": "a69ae30fda1271431e5d1ffe7145249f0c25a048074d185a1a81fbad2f3811e1"
+ },
+ "rewards": {
+  "desktop-alles": {
+   "view": "rewards",
+   "shown": true,
+   "reisHidden": true,
+   "focus": "v3RewardsTitle",
+   "current": [
+    "rewards"
+   ],
+   "ride": {
+    "art": "41b49a4f69162062d0af7df0f31eb775c1defea72eb1448e86e6332bf975c84e",
+    "label": "7 Vespa-ritten; 0 van 3 pizza’s tot de volgende rit",
+    "value": "7",
+    "on": 0
+   },
+   "overlap": [],
+   "tiles": [
+    {
+     "label": "0 van 8 stukjes van pizza 22",
+     "icon": "5d3dbef4e73ed6d3f3e3edea75a29ad21100f9f9ccfacaa52715c5eebe6492d9",
+     "value": "0 / 8"
+    },
+    {
+     "label": "11 van 11 stempels",
+     "icon": "a578ddedb395fc9fc97c672923ed6f6f681628016e1c1e4c014019385a14144a",
+     "value": "11 / 11"
+    },
+    {
+     "label": "11 van 11 goudzegels",
+     "icon": "ee806f0938efbe93cf5b41817f81f5b9357acdf049288bde9cd223fcbd18a865",
+     "value": "11 / 11"
+    },
+    {
+     "label": "4 van 4 postkaarten",
+     "icon": "b4abe1371d848c583af9a843edaf1b2450e21571a9c8ab576b9a3dd78b2ef158",
+     "value": "4 / 4"
+    }
+   ],
+   "primaries": 1,
+   "cover": true,
+   "allInView": true,
+   "clipped": [],
+   "state": {
+    "slices": 0,
+    "pizzas": 21,
+    "trips": 7
+   },
+   "horizontalOverflow": false,
+   "book": {
+    "open": true,
+    "postcards": 4,
+    "stamps": 11,
+    "gold": 11
+   },
+   "errors": []
+  },
+  "desktop-bezig": {
+   "view": "rewards",
+   "shown": true,
+   "reisHidden": true,
+   "focus": "v3RewardsTitle",
+   "current": [
+    "rewards"
+   ],
+   "ride": {
+    "art": "41b49a4f69162062d0af7df0f31eb775c1defea72eb1448e86e6332bf975c84e",
+    "label": "0 Vespa-ritten; 1 van 3 pizza’s tot de volgende rit",
+    "value": "0",
+    "on": 1
+   },
+   "overlap": [],
+   "tiles": [
+    {
+     "label": "6 van 8 stukjes van pizza 2",
+     "icon": "5d3dbef4e73ed6d3f3e3edea75a29ad21100f9f9ccfacaa52715c5eebe6492d9",
+     "value": "6 / 8"
+    },
+    {
+     "label": "1 van 11 stempels",
+     "icon": "a578ddedb395fc9fc97c672923ed6f6f681628016e1c1e4c014019385a14144a",
+     "value": "1 / 11"
+    },
+    {
+     "label": "0 van 11 goudzegels",
+     "icon": "ee806f0938efbe93cf5b41817f81f5b9357acdf049288bde9cd223fcbd18a865",
+     "value": "0 / 11"
+    },
+    {
+     "label": "0 van 4 postkaarten",
+     "icon": "b4abe1371d848c583af9a843edaf1b2450e21571a9c8ab576b9a3dd78b2ef158",
+     "value": "0 / 4"
+    }
+   ],
+   "primaries": 1,
+   "cover": true,
+   "allInView": true,
+   "clipped": [],
+   "state": {
+    "slices": 6,
+    "pizzas": 1,
+    "trips": 0
+   },
+   "horizontalOverflow": false,
+   "book": {
+    "open": true,
+    "postcards": 0,
+    "stamps": 1,
+    "gold": 0
+   },
+   "errors": []
+  },
+  "ipad-landscape-alles": {
+   "view": "rewards",
+   "shown": true,
+   "reisHidden": true,
+   "focus": "v3RewardsTitle",
+   "current": [
+    "rewards"
+   ],
+   "ride": {
+    "art": "41b49a4f69162062d0af7df0f31eb775c1defea72eb1448e86e6332bf975c84e",
+    "label": "7 Vespa-ritten; 0 van 3 pizza’s tot de volgende rit",
+    "value": "7",
+    "on": 0
+   },
+   "overlap": [],
+   "tiles": [
+    {
+     "label": "0 van 8 stukjes van pizza 22",
+     "icon": "5d3dbef4e73ed6d3f3e3edea75a29ad21100f9f9ccfacaa52715c5eebe6492d9",
+     "value": "0 / 8"
+    },
+    {
+     "label": "11 van 11 stempels",
+     "icon": "a578ddedb395fc9fc97c672923ed6f6f681628016e1c1e4c014019385a14144a",
+     "value": "11 / 11"
+    },
+    {
+     "label": "11 van 11 goudzegels",
+     "icon": "ee806f0938efbe93cf5b41817f81f5b9357acdf049288bde9cd223fcbd18a865",
+     "value": "11 / 11"
+    },
+    {
+     "label": "4 van 4 postkaarten",
+     "icon": "b4abe1371d848c583af9a843edaf1b2450e21571a9c8ab576b9a3dd78b2ef158",
+     "value": "4 / 4"
+    }
+   ],
+   "primaries": 1,
+   "cover": true,
+   "allInView": true,
+   "clipped": [],
+   "state": {
+    "slices": 0,
+    "pizzas": 21,
+    "trips": 7
+   },
+   "horizontalOverflow": false,
+   "book": {
+    "open": true,
+    "postcards": 4,
+    "stamps": 11,
+    "gold": 11
+   },
+   "errors": []
+  },
+  "ipad-landscape-bezig": {
+   "view": "rewards",
+   "shown": true,
+   "reisHidden": true,
+   "focus": "v3RewardsTitle",
+   "current": [
+    "rewards"
+   ],
+   "ride": {
+    "art": "41b49a4f69162062d0af7df0f31eb775c1defea72eb1448e86e6332bf975c84e",
+    "label": "0 Vespa-ritten; 1 van 3 pizza’s tot de volgende rit",
+    "value": "0",
+    "on": 1
+   },
+   "overlap": [],
+   "tiles": [
+    {
+     "label": "6 van 8 stukjes van pizza 2",
+     "icon": "5d3dbef4e73ed6d3f3e3edea75a29ad21100f9f9ccfacaa52715c5eebe6492d9",
+     "value": "6 / 8"
+    },
+    {
+     "label": "1 van 11 stempels",
+     "icon": "a578ddedb395fc9fc97c672923ed6f6f681628016e1c1e4c014019385a14144a",
+     "value": "1 / 11"
+    },
+    {
+     "label": "0 van 11 goudzegels",
+     "icon": "ee806f0938efbe93cf5b41817f81f5b9357acdf049288bde9cd223fcbd18a865",
+     "value": "0 / 11"
+    },
+    {
+     "label": "0 van 4 postkaarten",
+     "icon": "b4abe1371d848c583af9a843edaf1b2450e21571a9c8ab576b9a3dd78b2ef158",
+     "value": "0 / 4"
+    }
+   ],
+   "primaries": 1,
+   "cover": true,
+   "allInView": true,
+   "clipped": [],
+   "state": {
+    "slices": 6,
+    "pizzas": 1,
+    "trips": 0
+   },
+   "horizontalOverflow": false,
+   "book": {
+    "open": true,
+    "postcards": 0,
+    "stamps": 1,
+    "gold": 0
+   },
+   "errors": []
+  },
+  "phone-alles": {
+   "view": "rewards",
+   "shown": true,
+   "reisHidden": true,
+   "focus": "v3RewardsTitle",
+   "current": [
+    "rewards"
+   ],
+   "ride": {
+    "art": "41b49a4f69162062d0af7df0f31eb775c1defea72eb1448e86e6332bf975c84e",
+    "label": "7 Vespa-ritten; 0 van 3 pizza’s tot de volgende rit",
+    "value": "7",
+    "on": 0
+   },
+   "overlap": [],
+   "tiles": [
+    {
+     "label": "0 van 8 stukjes van pizza 22",
+     "icon": "5d3dbef4e73ed6d3f3e3edea75a29ad21100f9f9ccfacaa52715c5eebe6492d9",
+     "value": "0 / 8"
+    },
+    {
+     "label": "11 van 11 stempels",
+     "icon": "a578ddedb395fc9fc97c672923ed6f6f681628016e1c1e4c014019385a14144a",
+     "value": "11 / 11"
+    },
+    {
+     "label": "11 van 11 goudzegels",
+     "icon": "ee806f0938efbe93cf5b41817f81f5b9357acdf049288bde9cd223fcbd18a865",
+     "value": "11 / 11"
+    },
+    {
+     "label": "4 van 4 postkaarten",
+     "icon": "b4abe1371d848c583af9a843edaf1b2450e21571a9c8ab576b9a3dd78b2ef158",
+     "value": "4 / 4"
+    }
+   ],
+   "primaries": 1,
+   "cover": true,
+   "allInView": true,
+   "clipped": [],
+   "state": {
+    "slices": 0,
+    "pizzas": 21,
+    "trips": 7
+   },
+   "horizontalOverflow": false,
+   "book": {
+    "open": true,
+    "postcards": 4,
+    "stamps": 11,
+    "gold": 11
+   },
+   "errors": []
+  },
+  "phone-bezig": {
+   "view": "rewards",
+   "shown": true,
+   "reisHidden": true,
+   "focus": "v3RewardsTitle",
+   "current": [
+    "rewards"
+   ],
+   "ride": {
+    "art": "41b49a4f69162062d0af7df0f31eb775c1defea72eb1448e86e6332bf975c84e",
+    "label": "0 Vespa-ritten; 1 van 3 pizza’s tot de volgende rit",
+    "value": "0",
+    "on": 1
+   },
+   "overlap": [],
+   "tiles": [
+    {
+     "label": "6 van 8 stukjes van pizza 2",
+     "icon": "5d3dbef4e73ed6d3f3e3edea75a29ad21100f9f9ccfacaa52715c5eebe6492d9",
+     "value": "6 / 8"
+    },
+    {
+     "label": "1 van 11 stempels",
+     "icon": "a578ddedb395fc9fc97c672923ed6f6f681628016e1c1e4c014019385a14144a",
+     "value": "1 / 11"
+    },
+    {
+     "label": "0 van 11 goudzegels",
+     "icon": "ee806f0938efbe93cf5b41817f81f5b9357acdf049288bde9cd223fcbd18a865",
+     "value": "0 / 11"
+    },
+    {
+     "label": "0 van 4 postkaarten",
+     "icon": "b4abe1371d848c583af9a843edaf1b2450e21571a9c8ab576b9a3dd78b2ef158",
+     "value": "0 / 4"
+    }
+   ],
+   "primaries": 1,
+   "cover": true,
+   "allInView": true,
+   "clipped": [],
+   "state": {
+    "slices": 6,
+    "pizzas": 1,
+    "trips": 0
+   },
+   "horizontalOverflow": false,
+   "book": {
+    "open": true,
+    "postcards": 0,
+    "stamps": 1,
+    "gold": 0
+   },
+   "errors": []
+  },
+  "ipad-portrait-alles": {
+   "view": "rewards",
+   "shown": true,
+   "reisHidden": true,
+   "focus": "v3RewardsTitle",
+   "current": [
+    "rewards"
+   ],
+   "ride": {
+    "art": "41b49a4f69162062d0af7df0f31eb775c1defea72eb1448e86e6332bf975c84e",
+    "label": "7 Vespa-ritten; 0 van 3 pizza’s tot de volgende rit",
+    "value": "7",
+    "on": 0
+   },
+   "overlap": [],
+   "tiles": [
+    {
+     "label": "0 van 8 stukjes van pizza 22",
+     "icon": "5d3dbef4e73ed6d3f3e3edea75a29ad21100f9f9ccfacaa52715c5eebe6492d9",
+     "value": "0 / 8"
+    },
+    {
+     "label": "11 van 11 stempels",
+     "icon": "a578ddedb395fc9fc97c672923ed6f6f681628016e1c1e4c014019385a14144a",
+     "value": "11 / 11"
+    },
+    {
+     "label": "11 van 11 goudzegels",
+     "icon": "ee806f0938efbe93cf5b41817f81f5b9357acdf049288bde9cd223fcbd18a865",
+     "value": "11 / 11"
+    },
+    {
+     "label": "4 van 4 postkaarten",
+     "icon": "b4abe1371d848c583af9a843edaf1b2450e21571a9c8ab576b9a3dd78b2ef158",
+     "value": "4 / 4"
+    }
+   ],
+   "primaries": 1,
+   "cover": true,
+   "allInView": true,
+   "clipped": [],
+   "state": {
+    "slices": 0,
+    "pizzas": 21,
+    "trips": 7
+   },
+   "horizontalOverflow": false,
+   "book": {
+    "open": true,
+    "postcards": 4,
+    "stamps": 11,
+    "gold": 11
+   },
+   "errors": []
+  },
+  "ipad-portrait-bezig": {
+   "view": "rewards",
+   "shown": true,
+   "reisHidden": true,
+   "focus": "v3RewardsTitle",
+   "current": [
+    "rewards"
+   ],
+   "ride": {
+    "art": "41b49a4f69162062d0af7df0f31eb775c1defea72eb1448e86e6332bf975c84e",
+    "label": "0 Vespa-ritten; 1 van 3 pizza’s tot de volgende rit",
+    "value": "0",
+    "on": 1
+   },
+   "overlap": [],
+   "tiles": [
+    {
+     "label": "6 van 8 stukjes van pizza 2",
+     "icon": "5d3dbef4e73ed6d3f3e3edea75a29ad21100f9f9ccfacaa52715c5eebe6492d9",
+     "value": "6 / 8"
+    },
+    {
+     "label": "1 van 11 stempels",
+     "icon": "a578ddedb395fc9fc97c672923ed6f6f681628016e1c1e4c014019385a14144a",
+     "value": "1 / 11"
+    },
+    {
+     "label": "0 van 11 goudzegels",
+     "icon": "ee806f0938efbe93cf5b41817f81f5b9357acdf049288bde9cd223fcbd18a865",
+     "value": "0 / 11"
+    },
+    {
+     "label": "0 van 4 postkaarten",
+     "icon": "b4abe1371d848c583af9a843edaf1b2450e21571a9c8ab576b9a3dd78b2ef158",
+     "value": "0 / 4"
+    }
+   ],
+   "primaries": 1,
+   "cover": true,
+   "allInView": true,
+   "clipped": [],
+   "state": {
+    "slices": 6,
+    "pizzas": 1,
+    "trips": 0
+   },
+   "horizontalOverflow": false,
+   "book": {
+    "open": true,
+    "postcards": 0,
+    "stamps": 1,
+    "gold": 0
+   },
+   "errors": []
+  }
+ },
+ "lessonToRewards": {
+  "inLesson": true,
+  "view": "rewards",
+  "focus": "v3RewardsTitle",
+  "les": false
+ },
  "reducedTransparency": {
   "radius": "24px",
   "backdropFilter": "none",
@@ -1255,12 +1746,21 @@
  },
  "summary": {
   "indexUnchanged": true,
-  "backdropIsV2Panorama": true,
+  "backdropIsBG01": true,
+  "bgAlternativesSwitch": true,
   "phoneNoBackdrop": true,
   "floatingGlassWindow": true,
   "reducedTransparencyOpaque": true,
   "miniaturesMatchManifest": true,
-  "missingScenesUseChapterIcon": true,
+  "kopsMatchManifest": true,
+  "phoneNoKop": true,
+  "portraitIsNinoPortret": true,
+  "counterIcons": true,
+  "rewardsArt": true,
+  "rewardsCountsMatchV2Book": true,
+  "rewardsView": true,
+  "rewardsLayout": {},
+  "lessonToRewards": true,
   "reliefDefaultZ8": true,
   "reliefLayersMatchProvenance": true,
   "reliefLayerOrder": true,

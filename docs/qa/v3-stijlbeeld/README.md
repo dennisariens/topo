@@ -1,9 +1,9 @@
-# V3 stijlbeeld — Reis op renderniveau (bestaand materiaal)
+# V3 stijlbeeld — Reis op renderniveau, met de renderassets
 
-**Kandidaat:** `output/html/TOPO-V3-Reis-Preview.html`, SHA256 `94b62f8ac30cfc64587ad4c127ef3f4be42ce424da1792f8e30324fb4b0c5464`. Niet in Git; reproduceer met `node scripts/build-v3-preview.mjs`. Basis: ongewijzigde V2.0.2-`index.html` (`3aced3c3…304f5a`) + `scripts/v3/` + `assets/v3/scenes/` + de z8-renderlagen (`assets/discovery/terrain-z8-render*`, van `v3/relief-z8` @ `2a7b0cf`).
-**Openen:** `file://…#bezig` (Italia), `#bezig/viola` (Viola), `#thema-bezig` (Italia en Viola naast elkaar, desktop) en `#thema-ipad-bezig` (iPad liggend). In de previewbalk: **Italia + Viola**.
-**Opdracht:** stijlbeeld volgens `docs/v3/ARTWORK_BRIEF.md` › Volgorde 1 en besluit "Renderniveau" (DECISIONS 2026-11-09). Er zijn geen nieuwe beelden gegenereerd.
-**Oordeel:** technisch geslaagd · **eigenaar: richting akkoord, accent Italia (9-11)** · Hermes: open. Geen merge of deployment.
+**Kandidaat:** `output/html/TOPO-V3-Reis-Preview.html`, SHA256 `04cd49e797ed0b0014d775780561057895943f732274bcc275d163dbceb6852f`. Niet in Git; reproduceer met `node scripts/build-v3-preview.mjs`. Basis: ongewijzigde V2.0.2-`index.html` (`3aced3c3…304f5a`) + `scripts/v3/` + `assets/v3/scenes/` + `assets/v3/render/` (exports en manifest van `art/v3-render-assets` @ `908b4a4`, byte-gelijk) + de z8-renderlagen (`assets/discovery/terrain-z8-render*`, van `v3/relief-z8` @ `2a7b0cf`).
+**Openen:** `file://…#bezig` (Italia, BG-01), `#bezig/bg02` en `#bezig/bg03` (alternatieve achtergronden; ook in de previewbalk), `#bezig/viola` (Viola), `#thema-bezig` (Italia en Viola naast elkaar, desktop) en `#thema-ipad-bezig` (iPad liggend). In de previewbalk: **Italia + Viola**.
+**Opdracht:** stijlbeeld volgens `docs/v3/ARTWORK_BRIEF.md` › Volgorde 1 en besluit "Renderniveau" (DECISIONS 2026-11-09). Er zijn geen nieuwe beelden gegenereerd; de renderassets zijn ongewijzigd overgenomen (SHA256 = manifest, gecontroleerd door de build én de QA).
+**Oordeel:** technisch geslaagd · **eigenaar: richting akkoord, accent Italia (9-11)**; renderassets ter beoordeling · Hermes: modelcheck en hertest open. Geen merge of deployment.
 
 ## Naast de doelbeelden
 
@@ -14,6 +14,8 @@
 | Hoofdstukbeelden (render 5) | [vergelijking](vergelijking-r5-hoofdstukken-desktop-italia.jpg) |
 | iPad liggend | [vergelijking](vergelijking-r1-kaart-ipad-landscape-italia.jpg) |
 | Italia en Viola naast elkaar | [desktop](italia-viola-desktop.png) · [iPad liggend](italia-viola-ipad.png) |
+| Renderassets | [BG-01 (standaard)](desktop-italia.png) · [BG-02 Meer](desktop-bg02.png) · [BG-03 Kust](desktop-bg03.png) · [kop Roma](desktop-kop-roma.png) |
+| Beloningen | [desktop, alles af](beloningen-desktop-alles.png) · [desktop, halte bezig](beloningen-desktop-bezig.png) · [iPad liggend](beloningen-ipad-landscape-alles.png) · [iPad staand](beloningen-ipad-portrait-alles.png) · [telefoon](beloningen-phone-alles.png) |
 | Losse schermen | [desktop Italia](desktop-italia.png) · [desktop Viola](desktop-viola.png) · [iPad Italia](ipad-landscape-italia.png) · [iPad Viola](ipad-landscape-viola.png) · [telefoon](phone-italia.png) · [Verminder transparantie](desktop-verminder-transparantie.png) |
 
 De renders zelf staan niet in Git (bestanden van de eigenaar, `~/Downloads`). In de vergelijkingen staan ze verkleind naast het stijlbeeld.
@@ -22,10 +24,13 @@ De renders zelf staan niet in Git (bestanden van de eigenaar, `~/Downloads`). In
 
 | Punt | Wat je ziet | Bewijs (`results.json › summary`) | Oordeel |
 | --- | --- | --- | --- |
-| 1. Achtergrond | V2-panorama full-bleed achter de app (tijdelijk, tot BG-01). Uitsnede links, zodat Nino uit het panorama niet achter het venster piept. Telefoon: geen achtergrond | `backdropIsV2Panorama`, `phoneNoBackdrop` | ✓ |
+| 1. Achtergrond | **BG-01** (Toscane) full-bleed achter de app; **BG-02** (meer) en **BG-03** (kust) schakelbaar in de previewbalk (`#…/bg02`, `/bg03`). Telefoon: geen achtergrond. Het V2-panorama is alleen nog terugval | `backdropIsBG01` (SHA256 = manifest), `bgAlternativesSwitch`, `phoneNoBackdrop` | ✓ |
 | 1. Zwevend venster | Zacht matglas (80% oppervlak, blur 26 px), hoeken 24, zachte schaduw, 24 px vrij rondom. Lijst als lichte kaart op het glas | `floatingGlassWindow` (radius 24px, blur, schaduw, alfa < 1, marge ≥ 16) | ✓ |
 | 1. Verminder transparantie | Bij macOS "Verminder transparantie" wordt het venster ondoorzichtig; het landschap blijft | `reducedTransparencyOpaque` | ✓ — **let op:** deze instelling staat aan op de Mac waar dit is gebouwd, dus daar zie je het glas niet |
-| 2. Hoofdstukbeelden | Miniatuur per rij: de 8 #75-scènes, uitgesneden op het landschap zonder Nino. Steden 7–12, 13–18 en 19–23: het bestaande hoofdstukicoon als tijdelijke vervanger | `miniaturesMatchManifest` (SHA256 = manifest, 480×270), `missingScenesUseChapterIcon` (`city2`, `city3`, `city4`) | ✓ |
+| 2. Hoofdstukbeelden | Miniatuur per rij voor alle 11 hoofdstukken: de 8 #75-scènes plus **SCENE-ROMA** (Steden 7–12), **SCENE-VENEZIA** (13–18) en **SCENE-NAPOLI** (19–23). De gekozen scène staat als kop (16:9) boven de titel; op telefoon geen kop (ruimte voor titel en actie) | `miniaturesMatchManifest` (11/11, 480×270, SHA256 = scenes- of rendermanifest), `kopsMatchManifest` (elke rij gekozen, kop-SHA256 = manifest, kop vóór de titel), `phoneNoKop` | ✓ |
+| Zijbalk | **NINO-PORTRET** in plaats van de `guide`-uitsnede (Reis en les) | `portraitIsNinoPortret` | ✓ |
+| Iconen | **IC-slice** bij de pizzateller, **IC-vespa** bij de ritten | `counterIcons` | ✓ |
+| Beloningen | Nieuw V3-scherm (zijbalk → Beloningen, ook vanuit een les): Reisboekje (omslag + **Open Reisboekje**, de enige hoofdactie; opent het V2-Reisboekje) · **VE-01** met het aantal ritten en 3 pizza's tot de volgende rit · tegels **IC-pizza** (stukjes / 8), **IC-stamp**, **IC-gold**, **IC-postcard**. Focus op de titel; `aria-current` in de navigatie | `rewardsArt` (SHA256 per beeld), `rewardsCountsMatchV2Book` (stempels, goud en postkaarten = wat het V2-Reisboekje zelf toont, pagina voor pagina geteld; pizza en ritten = V2-stand), `rewardsView`, `lessonToRewards`, `rewardsLayout: {}` (geen overlap, afkapping of overloop op desktop, iPad liggend/staand en telefoon) | ✓ (fout gevonden en hersteld, zie onder) |
 | 2. Manifest | `assets/v3/scenes/manifest.json`: bron (`8a704cb:assets/nino/exports/…`), SHA256, maat en uitsnede per beeld. Scènes byte-gelijk aan de bron; miniaturen ≤ 37 KB. Reproduceer met `python3 scripts/build-v3-scenes.py` | build controleert de SHA256 | ✓ |
 | 3. Reliëf standaard | Reliëf staat standaard aan; Schoolkaart blijft één tik | `reliefDefaultZ8` | ✓ |
 | 3. Reliëf z8 (Codex) | Gemeten z8-reliëf in het renderpalet (1780×2470, DPR 2) met de vier renderlagen in hun volgorde: zee → landschaduw → reliëf (geclipt op de bestaande landpaden) → witte kustrand → bestaande grenzen en labels. **Supersedes** het SVG-kleurfilter op z7 | `reliefLayersMatchProvenance` (SHA256 per laag = `terrain-z8-render-provenance.json`), `reliefLayerOrder`, `reliefIsDecorationOnly` (geen `data-id`, `aria-hidden`, geen pointer events) | ✓ |
@@ -39,16 +44,36 @@ De renders zelf staan niet in Git (bestanden van de eigenaar, `~/Downloads`). In
 
 Browser: Chrome 157, macOS, headless, transparantie geëmuleerd als standaard (`python3 scripts/qa-v3-stijlbeeld.py`). **Niet getest:** WebKit en echte iPad Safari (matglas en SVG-filters kunnen daar anders renderen), VoiceOver.
 
-## Waar het stijlbeeld nog van de render afwijkt (bewust, bestaand materiaal)
+## Renderassets: HTML-groei
+
+Preview 42.784.186 → 50.222.253 bytes (**+7,44 MB, +17%**); `index.html` (41.445.845 bytes) is byte-gelijk. Ingebed als base64:
+
+| Groep | MB |
+| --- | ---: |
+| Koppen van de 8 #75-scènes (nieuw: kop bij de titel) | 4,21 |
+| BG-01, BG-02, BG-03 (2880 × 1800) | 1,61 |
+| Koppen Roma, Venezia, Napoli (1672 × 941) | 1,25 |
+| Miniaturen Roma, Venezia, Napoli | 0,12 |
+| VE-01 | 0,12 |
+| NINO-PORTRET | 0,07 |
+| Zes iconen (96 px) | 0,05 |
+
+De #75-scènes zitten niet in `index.html`; hergebruik is daarom niet mogelijk. Wie de preview kleiner wil: BG-02/BG-03 alleen in de preview, en koppen op ~1200 px breed (beslissing eigenaar; nu niet gedaan, want "geen beelden aanpassen").
+
+## Gevonden en hersteld tijdens de QA
+
+1. **Omslag over de knop (iPad).** Op iPad liggend en staand liep de omslag van het Reisboekje over **Open Reisboekje**: de boekrij kromp, de afbeelding niet. Nu schaalt de omslag mee met de rij (één kolom: vaste maximale hoogte). De QA meet overlap tussen alle blokken.
+2. **Les → Beloningen zonder focus.** Vanuit de les-zijbalk opende Beloningen wel, maar de focus bleef nergens. Nu gaat de focus naar de titel **Beloningen**.
+
+## Waar het stijlbeeld nog van de render afwijkt (bewust)
 
 1. **Reliëf.** Nu z8 met sterke hillshade (verticale overdrijving 4,5) uit `v3/relief-z8`. De render blijft plastischer. **Open bij Codex:** de DEM-nulhoogtelijn wijkt bij Sicilië en Sardinië tot 2,22 en 2,84 SVG px af van de vectorkust (`docs/qa/relief-z8` op `v3/relief-z8`). De rand en clip volgen de bestaande landpaden; de afwijking is daarmee niet opgelost.
-2. **Achtergrond.** Het panorama is een havenstraat, geen open landschap: onrustig achter het glas. BG-01 (Toscaanse heuvels, rustig midden) lost dat op.
-3. **Hoofdstukbeelden.** Drie stedenhoofdstukken tonen nog een icoon in plaats van een scène (Roma, Venezia, Napoli).
-4. **Nino.** De zijbalk toont het bestaande `guide`-beeld, uitgesneden. Het portret uit de brief (§ 3) volgt na akkoord.
-5. **Niet overgenomen uit de render** (vaste regels): genummerde pins op de kaart, streak, de hoofdstuknamen en -tellingen van de render (de echte elf hoofdstukken blijven).
+2. **Niet overgenomen uit de render** (vaste regels): genummerde pins op de kaart, streak, de hoofdstuknamen en -tellingen van de render (de echte elf hoofdstukken blijven).
 
 ## Open punten
 
-1. **Besloten 9-11:** richting akkoord; accent Italia. `relief-z8` is ingebouwd; daarna BG-01, en het artwork pas na de modelcheck van Hermes.
-2. **Telefoon:** links van het kaartcanvas heeft de bron geen landgeometrie (Frankrijk stopt bij x = 0), dus daar staat zee. Dat speelde al vóór het stijlbeeld. Telefoon valt buiten deze opdracht; er is geen geometrie toegevoegd.
-3. Na akkoord: BG-01, drie nieuwe scènes, portret, iconen en VE-01 volgens de brief, met Hermes-QA.
+1. **Besloten 9-11:** richting akkoord; accent Italia. `relief-z8` en de renderassets zijn ingebouwd.
+2. **Renderassets:** volgens het manifest staan meerdere beelden nog "ter beoordeling eigenaar"; de **modelcheck van Hermes is open**. De kaart en de leerinhoud zijn er niet door veranderd (46/46).
+3. **Postkaarten:** de tegel volgt de regel van het V2-Reisboekje (2 na Eilanden, +1 bij rit 3 en rit 6); de QA telt ze in het boek zelf na.
+4. Keuze eigenaar: BG-01 als standaard bevestigen of BG-02/BG-03.
+5. **Telefoon:** links van het kaartcanvas heeft de bron geen landgeometrie (Frankrijk stopt bij x = 0), dus daar staat zee. Dat speelde al vóór het stijlbeeld. Telefoon valt buiten deze opdracht; er is geen geometrie toegevoegd.

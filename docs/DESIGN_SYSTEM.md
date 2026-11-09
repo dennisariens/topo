@@ -10,7 +10,8 @@ Productrichting: een reis door Italië waarin je topografie leert. Rust van Appl
 - **Eén vaste opbouw** op groot scherm: zijbalk (merk, Nino, navigatie, instellingen) · lijst (hoofdstukken) · inhoud (tellers, kaart, titel, één actie).
 - **iPad liggend en kleine desktop (< 1280 px):** zijbalk met alleen iconen; labels blijven voor schermlezers.
 - **iPad staand (< 1024 px):** titel en actie boven de kaart.
-- **Venster (stijlbeeld, ≥ 768 px):** de app zweeft als matglas (80% oppervlak, blur 26, hoeken 24, zachte schaduw, 24 px rondom) boven een landschap; tijdelijk het V2-panorama. Hoofdstukrijen hebben een miniatuur (scène zonder Nino, anders het hoofdstukicoon). Bij verminderde transparantie is het venster ondoorzichtig.
+- **Venster (stijlbeeld, ≥ 768 px):** de app zweeft als matglas (80% oppervlak, blur 26, hoeken 24, zachte schaduw, 24 px rondom) boven een landschap: BG-01 (Toscane); BG-02/BG-03 alleen als alternatief in de preview. Elke hoofdstukrij heeft een miniatuur (scène zonder Nino); de gekozen scène staat als kop (16:9) boven de titel, niet op telefoon. Bij verminderde transparantie is het venster ondoorzichtig.
+- **Beloningen (V3-laag):** vanuit de zijbalk (Reis en les). Reisboekje (omslag + **Open Reisboekje**, de enige hoofdactie) · Vespa-ritten (VE-01, teller, 3 pizza's tot de volgende rit) · vier tegels: pizza (IC-pizza, stukjes / 8), stempels, goud en postkaarten. Alle getallen komen uit V2; het boek opent het V2-Reisboekje.
 - **Telefoon (< 768 px):** één kolom (tellers, titel, actie, kaart, lijst) met een tabbalk onderaan.
 - **Getallen in plaats van zinnen:** "3 / 11", "14 / 24". Geen taglines, hulpteksten of bijlabels. Uitzondering: een reden die de leerling anders niet ziet ("Opent na Bergen").
 - **Eén duidelijke hoofdactie, waar een handeling nodig is.** Bij Aanwijzen is de kaart zelf de handeling.
@@ -55,7 +56,7 @@ Een nieuw land is een nieuw tokenblok, geen nieuwe component.
 Alleen om een verandering uit te leggen. Bij verminderde beweging gaat decoratieve en overgangsbeweging uit; functionele feedback blijft zichtbaar.
 
 ## Beeld
-Alleen canonieke artwork, per doel gebruikt. Nino in de zijbalk is de `guide`-pose, uitgesneden met CSS. Conceptrenders zijn richting, geen assets.
+Alleen canonieke artwork, per doel gebruikt. Nino in de zijbalk is NINO-PORTRET (render-assets; vroeger de `guide`-uitsnede). Iconen: IC-slice bij de pizzateller, IC-vespa bij de ritten, IC-pizza/stamp/gold/postcard in Beloningen. Elk ingebed beeld wordt bij de build tegen de SHA256 uit zijn manifest gecontroleerd. Conceptrenders zijn richting, geen assets.
 
 ## Anti-patronen (bij elke review)
 Too much · Too little · Boxed · Flat · Bland · Off-model Nino · Invented geography. Toegankelijkheid en pedagogiek zijn aparte toetsen.

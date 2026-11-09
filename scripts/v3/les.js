@@ -10,8 +10,10 @@
  const body=document.body,layout=$('.layout');if(!layout)return;
 
  /* Sidebar (desktop): the Reis component; Reis returns to Reis, where "Ga verder" resumes this exact question. */
- const toReis=press(()=>v2Nav('Reis'));
- const sideWrap=make('div','v3 v3LesSideWrap');sideWrap.append(V.makeSide(toReis));sideWrap.hidden=true;body.append(sideWrap);
+ const toReis=e=>{if(V.ui)V.ui.view='reis';press(()=>v2Nav('Reis'))(e);};
+ // Beloningen from a lesson: back to Reis, on its Beloningen view (progress is kept by V2, as with Reis).
+ const toRewards=e=>{if(V.ui)V.ui.view='rewards';press(()=>v2Nav('Reis'))(e);requestAnimationFrame(()=>requestAnimationFrame(()=>document.getElementById('v3RewardsTitle')?.focus({preventScroll:true})));};
+ const sideWrap=make('div','v3 v3LesSideWrap');sideWrap.append(V.makeSide(toReis,toRewards));sideWrap.hidden=true;body.append(sideWrap);
 
  /* Lesson steps above the map (topo-ui-design, PR #64): 1 Ontdekken · 2 Aanwijzen · 3 Namen schrijven, ★ Goud apart. */
  const bar=make('nav','v3 v3LesBar');bar.setAttribute('aria-label','Lesstappen');bar.hidden=true;

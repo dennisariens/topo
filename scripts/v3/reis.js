@@ -19,9 +19,11 @@
  const icon=name=>{const s=document.createElementNS(SVGNS,'svg');s.setAttribute('viewBox',name==='vespa'?'0 0 72 48':'0 0 32 32');s.setAttribute('aria-hidden','true');s.classList.add('v3Icon');const u=document.createElementNS(SVGNS,'use');u.setAttribute('href','#topo-'+name);s.append(u);return s;};
  const range=t=>{const f=document.createDocumentFragment();t.split(/(\d+–\d+)/).forEach(p=>{if(!p)return;if(/^\d+–\d+$/.test(p))f.append(make('span','nw',p));else f.append(p);});return f;};
  // Stijlbeeld (renderniveau): relief is the default map style; Schoolkaart stays one tap away.
- const ui={selected:null,relief:true};
- // Chapter miniatures (#75 scenes, assets/v3/scenes/manifest.json); chapters without a scene keep their chapter icon.
- const scenes=window.TOPO_V3_SCENES||{};
+ const ui={selected:null,relief:true,view:'reis'};
+ // Chapter scenes {mini, kop}: the 8 #75 scenes (assets/v3/scenes) and Roma, Venezia, Napoli (assets/v3/render);
+ // a chapter without a scene keeps its chapter icon. Render assets: background, portrait, icons, VE-01.
+ const scenes=window.TOPO_V3_SCENES||{},V3ART=window.TOPO_V3_ART||null;
+ const pic=(src,cls,w,h)=>{const i=make('img',cls);i.src=src;i.alt='';i.decoding='async';if(w){i.width=w;i.height=h;}return i;};
  // One extra symbol in the existing sprite: a gear for settings.
  const defs=document.querySelector('#topoIconSprite defs');
  if(defs&&!document.getElementById('topo-v3gear')){const g=document.createElementNS(SVGNS,'symbol');g.id='topo-v3gear';g.setAttribute('viewBox','0 0 32 32');g.innerHTML='<circle cx="16" cy="16" r="4.5"/><path d="M16 3v4m0 18v4M3 16h4m18 0h4M6.8 6.8l2.8 2.8m12.8 12.8 2.8 2.8M6.8 25.2l2.8-2.8m12.8-12.8 2.8-2.8"/>';defs.append(g);}
@@ -37,13 +39,16 @@
  /* Shell (built once) */
  const root=make('div','v3 v3Reis');root.dataset.v3='reis';
  // Sidebar: one component for Reis and the lesson. Inside a lesson, Reis returns to Reis through the V2 nav.
- function makeSide(onReis){
+ function makeSide(onReis,onRewards){
   const side=make('nav','v3Side');side.setAttribute('aria-label','Hoofdnavigatie');
   const brand=make('div','v3Brand');brand.append(make('b',null,'Topo'),make('i','v3Flag'));
-  const portrait=make('div','v3Portrait');if(nino.guide)portrait.append(img(nino.guide));
+  // Nino portrait (render asset NINO-PORTRET); the guide cut-out only when the portrait is missing.
+  const portrait=make('div','v3Portrait');if(V3ART?.portrait){portrait.classList.add('v3PortraitArt');portrait.append(pic(V3ART.portrait,null,512,512));}else if(nino.guide)portrait.append(img(nino.guide));
   const navItem=(label,glyph,fn,current)=>{const b=btn('',fn,'v3Btn v3NavItem');b.append(icon(glyph),make('span',null,label));if(current)b.setAttribute('aria-current','page');return b;};
   const nav=make('div','v3NavList');
-  nav.append(navItem('Reis','vespa',onReis||(e=>e.stopPropagation()),true),navItem('Oefenen','point',press(()=>v2Nav('Oefenen'))),navItem('Beloningen','gold',e=>{e.stopPropagation();window.TopoBook?.open(e.currentTarget);}));
+  const reis=navItem('Reis','vespa',onReis||(e=>{e.stopPropagation();ui.view='reis';render();}),true),rewards=navItem('Beloningen','gold',onRewards||(e=>{e.stopPropagation();ui.view='rewards';render();root.querySelector('#v3RewardsTitle')?.focus({preventScroll:true});}));
+  reis.dataset.nav='reis';rewards.dataset.nav='rewards';
+  nav.append(reis,navItem('Oefenen','point',press(()=>v2Nav('Oefenen'))),rewards);
   const settings=navItem('Instellingen','v3gear',press(()=>$('.ninoSettingsButton')));settings.classList.add('v3Settings');
   side.append(brand,portrait,nav,settings);return side;
  }
@@ -53,7 +58,9 @@
  const main=make('section','v3Main');main.setAttribute('aria-labelledby','v3Title');
  const top=make('div','v3Top'),panel=make('div','v3Panel'),stage=make('div','v3MapStage');
  main.append(top,stage,panel);
- root.append(side,list,main);
+ // Beloningen (richting B): a calm frame around the rich Reisboekje; counts come from the V2 state.
+ const rewardsView=make('section','v3Rewards');rewardsView.setAttribute('aria-labelledby','v3RewardsTitle');
+ root.append(side,list,main,rewardsView);
 
  /* Map: clone of the live map, ids prefixed so references stay valid and nothing duplicates. */
  let mapClone=null;
@@ -124,8 +131,8 @@
   m.chapters.forEach(c=>{const i=make('i');if(c.done)i.className='on';bar.append(i);});
   const cycle=(state.pizzas%3)*8+state.slices,key=TopoPizza.flavor(state.pizzas),n=['margherita','salami','quattro-formaggi'].indexOf(key);
   const pz=make('span','v3Count');pz.setAttribute('aria-label',cycle+' van 24 pizzapunten tot de volgende Vespa-rit');
-  pz.append(img(art['favorite'+Math.max(0,n)],'v3Mini'),make('b',null,cycle+' / 24'));
-  const trip=make('span','v3Count');trip.setAttribute('aria-label',state.trips+' Vespa-ritten');trip.append(icon('vespa'),make('b',null,String(state.trips)));
+  pz.append(V3ART?pic(V3ART.icons.slice,'v3Mini',96,96):img(art['favorite'+Math.max(0,n)],'v3Mini'),make('b',null,cycle+' / 24'));
+  const trip=make('span','v3Count');trip.setAttribute('aria-label',state.trips+' Vespa-ritten');trip.append(V3ART?pic(V3ART.icons.vespa,'v3Mini v3MiniVespa',96,96):icon('vespa'),make('b',null,String(state.trips)));
   top.replaceChildren(bar,make('span','v3Frac',m.done+' / 11'),pz,trip);
  }
 
@@ -134,8 +141,8 @@
    const st=stateOf(c,m),li=make('li'),b=make('button','v3Row');b.type='button';b.dataset.chapter=c.id;b.dataset.state=st;
    b.setAttribute('aria-pressed',String(ui.selected===c.id));if(st==='now')b.setAttribute('aria-current','step');
    const num=make('span','v3Num',String(c.index+1)),name=make('span','v3Name');name.append(range(c.title));
-   const thumb=make('span','v3Thumb'),src=scenes[c.id];
-   if(src){const t=make('img');t.src=src;t.width=480;t.height=270;t.alt='';t.decoding='async';thumb.append(t);}
+   const thumb=make('span','v3Thumb'),src=scenes[c.id]?.mini;
+   if(src)thumb.append(pic(src,null,480,270));
    else if(art['chapter'+c.index]){thumb.classList.add('v3ThumbIcon');thumb.append(img(art['chapter'+c.index]));}
    const end=make('span','v3End');
    if(st==='gold'){end.append(img(art.chapterGold,'v3Seal'));end.setAttribute('aria-label','goud');}
@@ -156,7 +163,10 @@
   panel.replaceChildren();if(!c)return;
   // tabindex -1: on phone, focus moves here after choosing a chapter (Hermes V3-03).
   const st=stateOf(c,m),h=make('h1');h.id='v3Title';h.tabIndex=-1;
-  h.append(make('small',null,'Hoofdstuk '+(c.index+1)),range(c.title));panel.append(h);
+  h.append(make('small',null,'Hoofdstuk '+(c.index+1)),range(c.title));
+  // Chapter header: the scene beside the title (decorative; the title names the chapter).
+  if(scenes[c.id]?.kop){const k=make('figure','v3Kop');k.append(pic(scenes[c.id].kop,null,1672,941));panel.append(k);}
+  panel.append(h);
   const segs=make('div','v3StageBar');segs.setAttribute('role','list');
   TopoRoute.STAGES.forEach((s,n)=>{const d=make('span',n<c.r.stage?'on':n===c.r.stage&&c.open&&!c.done?'now':'');d.setAttribute('role','listitem');d.setAttribute('aria-label',STAGE[s]+(n<c.r.stage?', klaar':n===c.r.stage&&c.open?', nu':''));segs.append(d);});
   panel.append(segs);
@@ -178,6 +188,23 @@
   if(c.r.stage>0){const again=make('div','v3Again');TopoRoute.STAGES.forEach((s,n)=>{if(n<c.r.stage)again.append(btn('↻ '+STAGE[s],press(()=>v2Card(c.id)?.querySelectorAll('.routeStep')[n])));});panel.append(again);}
  }
 
+ function renderRewards(m){
+  const h=make('h1',null,'Beloningen');h.id='v3RewardsTitle';h.tabIndex=-1;
+  const S=state.slices|0,P=state.pizzas|0,T=state.trips|0,isl=m.chapters.find(c=>c.id==='islands');
+  // Postcards as the Reisboekje earns them (V2): two after the islands chapter, one after the 3rd and 6th ride.
+  const cards=(isl?.done?2:0)+(T>=3)+(T>=6),gold=m.chapters.filter(c=>c.gold).length;
+  const tile=(cls,iconSrc,value,label,aria)=>{const t=make('div','v3Tile'+(cls?' '+cls:''));t.setAttribute('role','group');t.setAttribute('aria-label',aria);if(iconSrc)t.append(pic(iconSrc,'v3TileIcon',96,96));const v=make('b',null,value);v.setAttribute('aria-hidden','true');const l=make('span',null,label);l.setAttribute('aria-hidden','true');t.append(v,l);return t;};
+  const openBook=e=>{e.stopPropagation();window.TopoBook?.open(e.currentTarget);};
+  const book=make('div','v3Book'),cover=btn('',openBook,'v3Btn v3BookCover');cover.setAttribute('aria-label','Open het Reisboekje');cover.tabIndex=-1;
+  if(art.cover)cover.append(img(art.cover,'v3CoverArt'));book.append(cover,btn('Open Reisboekje',openBook,'v3Btn primary'));
+  const ride=make('div','v3Ride');ride.setAttribute('role','group');ride.setAttribute('aria-label',T+' Vespa-ritten; '+(P%3)+' van 3 pizza’s tot de volgende rit');
+  if(V3ART?.vespa)ride.append(pic(V3ART.vespa,'v3RideArt',1200,900));
+  const meter=make('div','v3Steps v3RideSteps');meter.setAttribute('aria-hidden','true');for(let i=0;i<3;i++){const s=make('i');if(i<P%3)s.className='on';meter.append(s);}
+  const rv=make('b',null,String(T));rv.setAttribute('aria-hidden','true');const rl=make('span',null,'Vespa-ritten');rl.setAttribute('aria-hidden','true');ride.append(rv,rl,meter);
+  const tiles=make('div','v3Tiles');
+  tiles.append(tile('v3TilePizza',V3ART?.icons.pizza,S+' / 8','Pizza '+(P+1),S+' van 8 stukjes van pizza '+(P+1)),tile('',V3ART?.icons.stamp,m.done+' / 11','Stempels',m.done+' van 11 stempels'),tile('',V3ART?.icons.gold,gold+' / 11','Goud',gold+' van 11 goudzegels'),tile('',V3ART?.icons.postcard,cards+' / 4','Postkaarten',cards+' van 4 postkaarten'));
+  rewardsView.replaceChildren(h,book,ride,tiles);
+ }
  function renderSwitch(){
   let sw=stage.querySelector('.v3Switch');
   if(!sw){sw=make('div','v3Switch');sw.setAttribute('role','group');sw.setAttribute('aria-label','Kaartstijl');
@@ -193,10 +220,12 @@
   const m=model();
   if(!ui.selected||!m.chapters.some(c=>c.id===ui.selected))ui.selected=(m.active&&m.chapters.find(c=>c.id===m.active.chapterId)||m.next||m.chapters.at(-1)).id;
   const c=m.chapters.find(x=>x.id===ui.selected);
-  // Temporary backdrop (stijlbeeld): the V2 panorama already in the page, full-bleed behind the window.
-  const pano=$('.routeScene img')?.currentSrc||$('.routeScene img')?.src;
+  // Backdrop: BG-01 (BG-02/BG-03 in the preview), full-bleed behind the window; the V2 panorama only as fallback.
+  const pano=V3ART?.bg?.[window.TOPO_V3_BG||'bg01']||V3ART?.bg?.bg01||$('.routeScene img')?.currentSrc||$('.routeScene img')?.src;
   if(pano&&!document.body.style.getPropertyValue('--v3-pano'))document.body.style.setProperty('--v3-pano','url("'+pano+'")');
-  renderTop(m);renderRows(m);renderPanel(m,c);renderSwitch();paintMap(c);
+  root.dataset.view=ui.view==='rewards'?'rewards':'reis';
+  root.querySelectorAll('.v3Side [data-nav]').forEach(b=>{if(b.dataset.nav===root.dataset.view)b.setAttribute('aria-current','page');else b.removeAttribute('aria-current');});
+  renderTop(m);renderRows(m);renderPanel(m,c);renderSwitch();paintMap(c);renderRewards(m);
  }
  // V2 chrome steps aside while Reis is shown; lessons and other screens keep V2 as is.
  function chrome(){const on=!$('#journeyScreen')?.classList.contains('hidden')&&!$('#routeHome')?.classList.contains('hidden');document.body.classList.toggle('v3Home',on);}

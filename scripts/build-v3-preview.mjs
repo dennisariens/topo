@@ -18,8 +18,8 @@ const states=`(function(){
   'afgerond':make('Haltes afgerond',[{stage:3,gold:1,due:1},{stage:3,gold:1},{stage:3},{stage:3}],{good:61,pizzas:7,slices:3,trips:2}),
   'alles':make('Alles af',IDS.map(()=>({stage:3,gold:1})),{good:168,pizzas:21,trips:7})
  };
- const [raw0,theme]=location.hash.slice(1).split('/'),raw1=raw0||'',pair=/^thema-(ipad-)?/.exec(raw1),raw=pair?raw1.slice(pair[0].length):raw1,side=raw.startsWith('naast-'),key=side?raw.slice(6):raw,chosen=S[key]||S.bezig,th=theme==='viola'?'viola':'italia';
- window.TOPO_V3_THEME=th;const tail=th==='viola'?'/viola':'';
+ const [raw0,...opts]=location.hash.slice(1).split('/'),theme=opts.includes('viola')?'viola':'italia',bgKey=opts.find(o=>/^bg0[123]$/.test(o))||'bg01',raw1=raw0||'',pair=/^thema-(ipad-)?/.exec(raw1),raw=pair?raw1.slice(pair[0].length):raw1,side=raw.startsWith('naast-'),key=side?raw.slice(6):raw,chosen=S[key]||S.bezig,th=theme==='viola'?'viola':'italia';
+ window.TOPO_V3_THEME=th;window.TOPO_V3_BG=bgKey;const tail=(th==='viola'?'/viola':'')+(bgKey!=='bg01'?'/'+bgKey:'');
  // Theme pair (stijlbeeld): Italia and Viola side by side, desktop 1440×900 or iPad landscape 1180×820, two live frames.
  if(pair){
   window.stop();addEventListener('hashchange',()=>location.reload());
@@ -46,7 +46,9 @@ const states=`(function(){
   const bar=document.createElement('nav');bar.className='v3PreviewBar';bar.setAttribute('aria-label','Demostanden');
   const label=document.createElement('strong');label.textContent='V3-preview · demo · niets wordt bewaard';bar.append(label);
   for(const [id,s] of Object.entries(S)){const a=document.createElement('a');a.href='#'+id+tail;a.textContent=s.title;if(s===chosen)a.setAttribute('aria-current','page');bar.append(a);}
-  for(const t of ['italia','viola']){const a=document.createElement('a');a.href='#'+(S[key]?key:'bezig')+(t==='viola'?'/viola':'');a.textContent=t==='viola'?'Viola':'Italia';if(t===th)a.setAttribute('aria-current','page');a.className='v3Theme';bar.append(a);}
+  for(const t of ['italia','viola']){const a=document.createElement('a');a.href='#'+(S[key]?key:'bezig')+(t==='viola'?'/viola':'')+(bgKey!=='bg01'?'/'+bgKey:'');a.textContent=t==='viola'?'Viola':'Italia';if(t===th)a.setAttribute('aria-current','page');a.className='v3Theme';bar.append(a);}
+  // Background (render assets): BG-01 standard, BG-02 and BG-03 as alternatives.
+  for(const [k,label] of [['bg01','BG-01 Toscane'],['bg02','BG-02 Meer'],['bg03','BG-03 Kust']]){const a=document.createElement('a');a.href='#'+(S[key]?key:'bezig')+(th==='viola'?'/viola':'')+(k!=='bg01'?'/'+k:'');a.textContent=label;if(k===bgKey)a.setAttribute('aria-current','page');a.className='v3Bg';bar.append(a);}
   const side=document.createElement('a');side.href='#naast-'+(S[key]?key:'bezig')+tail;side.textContent='Naast elkaar: desktop + telefoon';bar.append(side);
   const pairA=document.createElement('a');pairA.href='#thema-'+(S[key]?key:'bezig');pairA.textContent='Italia + Viola';bar.append(pairA);
   if(window.top!==window)bar.hidden=true;
@@ -55,13 +57,21 @@ const states=`(function(){
 })();`;
 const barCss='.v3PreviewBar[hidden]{display:none!important}.v3PreviewBar{display:flex;align-items:center;gap:8px;padding:8px 12px;overflow-x:auto;white-space:nowrap;background:#073f3b;color:#f8f3e8;font:600 13px/1.2 -apple-system,system-ui,sans-serif}.v3PreviewBar strong{margin-right:4px}.v3PreviewBar a{display:inline-flex;align-items:center;min-height:36px;padding:0 12px;border-radius:9px;color:#f8f3e8;text-decoration:none;box-shadow:inset 0 0 0 1px #f8f3e855}.v3PreviewBar a[aria-current]{background:#f8f3e8;color:#073f3b}@media print{.v3PreviewBar{display:none}}.v3PreviewBar .v3Theme{margin-left:auto}.v3PreviewBar .v3Theme+.v3Theme{margin-left:0}body:has(.v3PreviewBar:not([hidden])) :is(.v3Reis,.v3LesSideWrap){--v3-bar:52px}body:has(.v3PreviewBar:not([hidden])).v3Les{--v3-bar:52px}body.v3Home .v3PreviewBar{position:static!important}body.v3Home{padding-bottom:0!important}body[data-focus-shell=true] .v3PreviewBar{position:fixed;left:0;right:0;bottom:0;z-index:70;padding-bottom:calc(8px + env(safe-area-inset-bottom,0px))}body[data-focus-shell=true]:has(.v3PreviewBar:not([hidden])){padding-bottom:64px}body[data-focus-mode=true] .v3PreviewBar{display:none}';
 // Chapter miniatures (stijlbeeld): from assets/v3/scenes/manifest.json, checked against their SHA256, embedded as data URIs.
+const uri=(e,what)=>{const b=readFileSync(new URL(e.path,root));if(createHash('sha256').update(b).digest('hex')!==e.sha256)throw Error(what+' differs from manifest: '+e.path);return 'data:image/webp;base64,'+b.toString('base64');};
+// #75 scenes: miniature and full scene as chapter header (assets/v3/scenes/manifest.json).
 const sceneManifest=JSON.parse(read('assets/v3/scenes/manifest.json')),scenes={};
-for(const [id,e] of Object.entries(sceneManifest.chapters)){const b=readFileSync(new URL(e.mini.path,root));if(createHash('sha256').update(b).digest('hex')!==e.mini.sha256)throw Error('Scene miniature differs from manifest: '+e.mini.path);scenes[id]='data:image/webp;base64,'+b.toString('base64');}
+for(const [id,e] of Object.entries(sceneManifest.chapters))scenes[id]={mini:uri(e.mini,'Scene miniature'),kop:uri(e.scene,'Scene')};
+// V3 render assets (art/v3-render-assets @ 908b4a4, assets/v3/render/manifest.json): exports only, byte-checked.
+const render=JSON.parse(read('assets/v3/render/manifest.json')),A=Object.fromEntries(render.assets.map(a=>[a.id,a]));
+for(const id of ['SCENE-ROMA','SCENE-VENEZIA','SCENE-NAPOLI'])scenes[A[id].chapter]={mini:uri(A[id].export_mini,id),kop:uri(A[id].export_kop,id)};
+const v3art={bg:{bg01:uri(A['BG-01'].export,'BG-01'),bg02:uri(A['BG-02'].export,'BG-02'),bg03:uri(A['BG-03'].export,'BG-03')},portrait:uri(A['NINO-PORTRET'].export,'NINO-PORTRET'),vespa:uri(A['VE-01'].export,'VE-01'),
+ icons:Object.fromEntries(['slice','pizza','vespa','gold','stamp','postcard'].map(k=>[k,uri(A['IC-'+k].exports['96'],'IC-'+k)]))};
+if(Object.keys(scenes).length!==11)throw Error('Expected 11 chapter scenes, found '+Object.keys(scenes).length);
 // Relief z8 render layers (v3/relief-z8 @ 2a7b0cf), checked against their provenance SHA256, embedded as data URIs.
 const prov=JSON.parse(read('assets/discovery/terrain-z8-render-provenance.json')),reliefFiles={terrain:prov.output,...Object.fromEntries(prov.pipeline.decorative_layers.map(l=>[l.role,l]))},relief={};
 for(const [role,e] of Object.entries(reliefFiles)){const b=readFileSync(new URL(e.path,root));if(createHash('sha256').update(b).digest('hex')!==e.sha256)throw Error('Relief layer differs from provenance: '+e.path);relief[role]='data:image/webp;base64,'+b.toString('base64');}
 if(Object.keys(relief).sort().join()!=='coast,sea,shadow,terrain')throw Error('Relief layers incomplete');
-const sceneJs='window.TOPO_V3_SCENES='+JSON.stringify(scenes)+';window.TOPO_V3_RELIEF='+JSON.stringify(relief)+';';
+const sceneJs='window.TOPO_V3_SCENES='+JSON.stringify(scenes)+';window.TOPO_V3_RELIEF='+JSON.stringify(relief)+';window.TOPO_V3_ART='+JSON.stringify(v3art)+';';
 const css=read('scripts/v3/tokens.css')+read('scripts/v3/reis.css')+read('scripts/v3/les.css')+barCss;
 const head='<head>\n<script>\n'+states+'\n'+sceneJs+'\n</script>\n<style>/* BEGIN TOPO V3 */'+css+'/* END TOPO V3 */</style>';
 const last=html.lastIndexOf('</body>');if(last<0||html.indexOf('<head>')<0)throw Error('Unexpected index.html shape');

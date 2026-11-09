@@ -342,3 +342,11 @@ Reservekopieën en reset horen in het algemene instellingenmenu. Wis voortgang b
 - **V3-02:** de schakelaar staat op telefoon onder de kaart (sinds `4b2c323`). `switchCoversPlace` meet per hoofdstuk en per kaartstijl of een gekozen plek wordt bedekt. Op `afb32d1` geeft dezelfde meting voor Sicilië 948 px², nu 0.
 - **V3-03:** na het kiezen van een hoofdstuk op telefoon gaat de focus naar de titel (`tabindex=-1`). Focus verandert de maat niet.
 - **Reliëf:** Reis gebruikt de z8-renderlagen van Codex (`v3/relief-z8` @ `2a7b0cf`, SHA256 gecontroleerd tegen de provenance) in de laagvolgorde van Codex. Buurlanden zijn gedempt, de zee loopt zachter (halve sterkte, brede kustgloed). **Supersedes** het SVG-kleurfilter op z7 uit het stijlbeeld. Alleen in de Reis-kopie: de lessen en `index.html` blijven z7. De kustdiscrepantie die Codex meldde (≤ 2,84 SVG px bij de eilanden) blijft open.
+
+## 2026-11-09 — Renderassets ingebouwd in V3 Reis
+
+- **Bron:** `art/v3-render-assets` @ `908b4a4`, alleen `assets/v3/render/exports/` en `manifest.json`, byte-gelijk gekopieerd (23 exports, SHA256 = manifest). Masters blijven op de art-branch. Er zijn geen beelden aangepast.
+- **Gebruik:** BG-01 is de standaardachtergrond (**supersedes** het V2-panorama uit het stijlbeeld). BG-02 en BG-03 zijn alleen in de preview schakelbaar (`#…/bg02`, `/bg03`). NINO-PORTRET staat in de zijbalk (**supersedes** de `guide`-uitsnede). SCENE-ROMA, -VENEZIA en -NAPOLI vullen Steden 7–23 (**supersedes** het hoofdstukicoon als vervanger). Alle 11 hoofdstukken hebben een miniatuur in de lijst en een kop bij de titel (niet op telefoon). IC-slice en IC-vespa staan bij de tellers.
+- **Beloningen:** er is een V3-scherm gebouwd (richting B noemde het nog als te bouwen). Het toont het Reisboekje (opent het V2-boek), VE-01 met de ritten, en tegels voor IC-pizza, IC-stamp, IC-gold en IC-postcard. Alle getallen leest het uit V2 en het schrijft niets. Postkaarten volgen de regel van het V2-boek.
+- **Build:** elk ingebed beeld wordt tegen zijn manifest-SHA256 gecontroleerd. De preview groeit met 7,44 MB (+17%). `index.html` blijft byte-gelijk.
+- **Open:** de Hermes-modelcheck, en voor meerdere assets het oordeel van de eigenaar (status in het manifest). Hermes-hertest op de pin van deze commit.

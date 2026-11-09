@@ -19,7 +19,7 @@ Productrichting: een reis door Italië waarin je topografie leert. Rust van Appl
 - Altijd de echte geometrie: in Reis een kopie van de live kaart, met gelijke paden (gecontroleerd: 46/46), zonder namen en zonder interactie.
 - De plekken van het gekozen hoofdstuk dragen het accent; de rest treedt terug.
 - **Referentiekader:** het kader toont wat om Italië heen ligt (buurlanden, zeeën, Corsica, Noord-Afrika). Kader = Italië en de hoofdstukplekken + 14% marge, verruimd tot de vorm van het kaartvlak binnen het canvas (890 × 1235). Echte zee, alleen een smalle randfade (4%), geen radiale vervaging. Gecontroleerd door `mapFrameShort`.
-- **Stijlbeeld (9 november, eigenaar open):** in Reis staat **Reliëf** standaard aan, in het renderpalet (SVG-filter op de bestaande laag), met een witte kustrand van 1,5 px, een lichte kustzone en een zachte schaduw onder het land. De lessen houden hun eigen kaart.
+- **Stijlbeeld (9 november, eigenaar open):** in Reis staat **Reliëf** standaard aan: het gemeten z8-reliëf in het renderpalet (Codex), met de lagen zee → landschaduw → reliëf → witte kustrand (1,5 px). Buurlanden zijn gedempt, de zee loopt zacht (halve sterkte, brede kustgloed). Kaartlabels zijn alleen contextnamen, nooit een van de 45 leerplek-namen (check). De lessen houden hun eigen kaart.
 - **Schoolkaart** is de lesvorm. **Reliëf** is een schakelaar met een leerfunctie (Bergen, Vulkanen, Apennijnen, Povlakte). Het reliëf komt uit gemeten hoogtedata, geregistreerd op hetzelfde frame (zie DISCOVERY_MAP.md). Nooit AI-beeld als kaart.
 
 ## Les (Golden Experience 01, beat 3–7)

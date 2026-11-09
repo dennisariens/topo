@@ -69,26 +69,24 @@
   svg.querySelectorAll('[tabindex],[role],[aria-label]').forEach(n=>{n.removeAttribute('tabindex');n.removeAttribute('role');n.removeAttribute('aria-label');});
   svg.querySelectorAll('a,button,foreignObject').forEach(n=>n.remove());
   svg.setAttribute('aria-hidden','true');svg.setAttribute('focusable','false');svg.removeAttribute('role');svg.classList.add('v3Map');
-  addRenderPaint(svg);
+  addRelief(svg);
   return svg;
  }
- // Render palette on the existing relief layer (matrix fitted on terrain.webp samples: lowland → green, hills → ochre,
- // mountains → brown, peaks → white; then saturation and contrast) and a coast under the land: copies of the same land paths
- // (no data-id, no classes), so geometry and targets stay exactly the live map's.
- function addRenderPaint(svg){
-  const defs=document.createElementNS(SVGNS,'defs');
-  defs.innerHTML='<filter id="v3-relief-palette" x="0" y="0" width="1" height="1" color-interpolation-filters="sRGB">'
-   +'<feColorMatrix type="matrix" values="1.189 -.692 .73 0 -.145  .013 1.142 .399 0 -.374  .014 -.191 1.913 0 -.47  0 0 0 1 0"/>'
-   +'<feColorMatrix type="saturate" values="1.25"/>'
-   +'<feComponentTransfer><feFuncR type="linear" slope="1.1" intercept="-.05"/><feFuncG type="linear" slope="1.1" intercept="-.05"/><feFuncB type="linear" slope="1.1" intercept="-.05"/></feComponentTransfer></filter>'
-   +'<filter id="v3-coast-glow" x="-10%" y="-10%" width="120%" height="120%"><feGaussianBlur stdDeviation="7"/></filter>'
-   +'<filter id="v3-land-shadow" x="-10%" y="-10%" width="120%" height="120%"><feGaussianBlur stdDeviation="5"/><feOffset dx="2" dy="5"/></filter>';
-  svg.prepend(defs);
+ // Relief z8 in the render palette (Codex, v3/relief-z8 @ 2a7b0cf; measured DEM, same 890×1235 frame), in its layer
+ // order: sea → land shadow → relief clipped to the original land → white coast rim → existing borders and labels.
+ // All layers are decoration (aria-hidden, no pointer events, no data-id): geometry and targets stay the live map's.
+ // V3 adds a soft coastal glow (copies of the same land paths) for a gentler sea gradient, and a land base in the
+ // lowland colour where the raster ends (outside the canvas).
+ const RELIEF=window.TOPO_V3_RELIEF||null;
+ function addRelief(svg){
+  const raster=(cls,href)=>{const i=document.createElementNS(SVGNS,'image');for(const [k,v] of Object.entries({x:0,y:0,width:890,height:1235,preserveAspectRatio:'none','pointer-events':'none','aria-hidden':'true',class:cls,href}))i.setAttribute(k,v);return i;};
+  const defs=document.createElementNS(SVGNS,'defs');defs.innerHTML='<filter id="v3-coast-glow" x="-10%" y="-10%" width="120%" height="120%"><feGaussianBlur stdDeviation="9"/></filter>';svg.prepend(defs);
   const shapes=[...svg.querySelectorAll('.land,.italy')].map(n=>n.getAttribute('d')).filter(Boolean);
-  const layer=(cls)=>{const g=document.createElementNS(SVGNS,'g');g.setAttribute('class',cls);for(const d of shapes){const q=document.createElementNS(SVGNS,'path');q.setAttribute('d',d);g.append(q);}return g;};
-  const under=svg.querySelector('#v3m-seaLayer')||svg.querySelector('.atlasTerrain');if(!under)return;
-  // Land base in the lowland colour: shows only where the relief raster ends (outside the 890×1235 canvas).
-  under.before(layer('v3CoastGlow'),layer('v3LandShadow'),layer('v3LandBase'));
+  const layer=cls=>{const g=document.createElementNS(SVGNS,'g');g.setAttribute('class',cls);g.setAttribute('aria-hidden','true');g.setAttribute('pointer-events','none');for(const d of shapes){const q=document.createElementNS(SVGNS,'path');q.setAttribute('d',d);g.append(q);}return g;};
+  const under=svg.querySelector('#v3m-seaLayer'),terrain=svg.querySelector('.atlasTerrain');if(!under||!terrain)return;
+  const below=[];if(RELIEF)below.push(raster('v3R v3RSea',RELIEF.sea));below.push(layer('v3CoastGlow'));if(RELIEF)below.push(raster('v3R v3RShadow',RELIEF.shadow));below.push(layer('v3LandBase'));
+  under.before(...below);
+  if(RELIEF){terrain.querySelector('image')?.setAttribute('href',RELIEF.terrain);terrain.after(raster('v3R v3RCoast',RELIEF.coast));svg.dataset.relief8='z8';}
  }
  function paintMap(c){
   if(!mapClone){mapClone=cloneMap();if(mapClone){stage.prepend(mapClone);

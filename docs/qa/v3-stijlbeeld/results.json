@@ -1,6 +1,6 @@
 {
  "html": "output/html/TOPO-V3-Reis-Preview.html",
- "htmlSha256": "c7972188fa9816dddb620b696dd5931c5e9e2b5e7f6c25edb5fd53bec43310db",
+ "htmlSha256": "94b62f8ac30cfc64587ad4c127ef3f4be42ce424da1792f8e30324fb4b0c5464",
  "indexSha256": "3aced3c31259011b0af2947c78f71965cb4beb2e88c69d1663e61792b0304f5a",
  "runs": {
   "desktop-italia": {
@@ -200,17 +200,38 @@
    "relief": {
     "mode": "on",
     "terrain": "block",
-    "filter": "url(\"#v3-relief-palette\")",
-    "pressed": "Reliëf"
+    "pressed": "Reliëf",
+    "layers": {
+     "terrain": "440d631c8ff5777b13a2583870339caa8255c10a0ddcaaa3edd087b8fc524ab5",
+     "sea": "daded673fe77a75f631b40251c09ef158b1c541b037f32c8d75ed4141b4409d5",
+     "shadow": "e2fe511cc8c72fb8bf6a1e67e5041e64c99d3f76da665f0e3ee3e5e2428c0aec",
+     "coast": "e685ba188bbe1e434a0071c930f11d1ac7c6394f64300d53dda737ab63b2bcaf"
+    },
+    "shown": [
+     "block",
+     "block",
+     "block"
+    ],
+    "layerOrder": [
+     "v3RSea",
+     "v3CoastGlow",
+     "v3RShadow",
+     "v3LandBase",
+     "v3m-seaLayer",
+     "atlasTerrain",
+     "v3RCoast",
+     "v3m-landLayer"
+    ],
+    "decorationTargets": 0,
+    "pointer": true
    },
-   "coast": {
-    "stroke": "rgb(255, 255, 255)",
-    "width": "1.5px",
+   "dim": {
+    "neighbour": "0.42",
+    "country": "0.42",
+    "italy": "0",
     "glow": "block",
-    "shadow": "block",
     "base": "block",
-    "copies": 57,
-    "copiesWithId": 0,
+    "copies": 38,
     "landShapes": 19
    },
    "targets": {
@@ -424,17 +445,38 @@
    "relief": {
     "mode": "on",
     "terrain": "block",
-    "filter": "url(\"#v3-relief-palette\")",
-    "pressed": "Reliëf"
+    "pressed": "Reliëf",
+    "layers": {
+     "terrain": "440d631c8ff5777b13a2583870339caa8255c10a0ddcaaa3edd087b8fc524ab5",
+     "sea": "daded673fe77a75f631b40251c09ef158b1c541b037f32c8d75ed4141b4409d5",
+     "shadow": "e2fe511cc8c72fb8bf6a1e67e5041e64c99d3f76da665f0e3ee3e5e2428c0aec",
+     "coast": "e685ba188bbe1e434a0071c930f11d1ac7c6394f64300d53dda737ab63b2bcaf"
+    },
+    "shown": [
+     "block",
+     "block",
+     "block"
+    ],
+    "layerOrder": [
+     "v3RSea",
+     "v3CoastGlow",
+     "v3RShadow",
+     "v3LandBase",
+     "v3m-seaLayer",
+     "atlasTerrain",
+     "v3RCoast",
+     "v3m-landLayer"
+    ],
+    "decorationTargets": 0,
+    "pointer": true
    },
-   "coast": {
-    "stroke": "rgb(255, 255, 255)",
-    "width": "1.5px",
+   "dim": {
+    "neighbour": "0.42",
+    "country": "0.42",
+    "italy": "0",
     "glow": "block",
-    "shadow": "block",
     "base": "block",
-    "copies": 57,
-    "copiesWithId": 0,
+    "copies": 38,
     "landShapes": 19
    },
    "targets": {
@@ -648,17 +690,38 @@
    "relief": {
     "mode": "on",
     "terrain": "block",
-    "filter": "url(\"#v3-relief-palette\")",
-    "pressed": "Reliëf"
+    "pressed": "Reliëf",
+    "layers": {
+     "terrain": "440d631c8ff5777b13a2583870339caa8255c10a0ddcaaa3edd087b8fc524ab5",
+     "sea": "daded673fe77a75f631b40251c09ef158b1c541b037f32c8d75ed4141b4409d5",
+     "shadow": "e2fe511cc8c72fb8bf6a1e67e5041e64c99d3f76da665f0e3ee3e5e2428c0aec",
+     "coast": "e685ba188bbe1e434a0071c930f11d1ac7c6394f64300d53dda737ab63b2bcaf"
+    },
+    "shown": [
+     "block",
+     "block",
+     "block"
+    ],
+    "layerOrder": [
+     "v3RSea",
+     "v3CoastGlow",
+     "v3RShadow",
+     "v3LandBase",
+     "v3m-seaLayer",
+     "atlasTerrain",
+     "v3RCoast",
+     "v3m-landLayer"
+    ],
+    "decorationTargets": 0,
+    "pointer": true
    },
-   "coast": {
-    "stroke": "rgb(255, 255, 255)",
-    "width": "1.5px",
+   "dim": {
+    "neighbour": "0.42",
+    "country": "0.42",
+    "italy": "0",
     "glow": "block",
-    "shadow": "block",
     "base": "block",
-    "copies": 57,
-    "copiesWithId": 0,
+    "copies": 38,
     "landShapes": 19
    },
    "targets": {
@@ -872,17 +935,38 @@
    "relief": {
     "mode": "on",
     "terrain": "block",
-    "filter": "url(\"#v3-relief-palette\")",
-    "pressed": "Reliëf"
+    "pressed": "Reliëf",
+    "layers": {
+     "terrain": "440d631c8ff5777b13a2583870339caa8255c10a0ddcaaa3edd087b8fc524ab5",
+     "sea": "daded673fe77a75f631b40251c09ef158b1c541b037f32c8d75ed4141b4409d5",
+     "shadow": "e2fe511cc8c72fb8bf6a1e67e5041e64c99d3f76da665f0e3ee3e5e2428c0aec",
+     "coast": "e685ba188bbe1e434a0071c930f11d1ac7c6394f64300d53dda737ab63b2bcaf"
+    },
+    "shown": [
+     "block",
+     "block",
+     "block"
+    ],
+    "layerOrder": [
+     "v3RSea",
+     "v3CoastGlow",
+     "v3RShadow",
+     "v3LandBase",
+     "v3m-seaLayer",
+     "atlasTerrain",
+     "v3RCoast",
+     "v3m-landLayer"
+    ],
+    "decorationTargets": 0,
+    "pointer": true
    },
-   "coast": {
-    "stroke": "rgb(255, 255, 255)",
-    "width": "1.5px",
+   "dim": {
+    "neighbour": "0.42",
+    "country": "0.42",
+    "italy": "0",
     "glow": "block",
-    "shadow": "block",
     "base": "block",
-    "copies": 57,
-    "copiesWithId": 0,
+    "copies": 38,
     "landShapes": 19
    },
    "targets": {
@@ -1096,17 +1180,38 @@
    "relief": {
     "mode": "on",
     "terrain": "block",
-    "filter": "url(\"#v3-relief-palette\")",
-    "pressed": "Reliëf"
+    "pressed": "Reliëf",
+    "layers": {
+     "terrain": "440d631c8ff5777b13a2583870339caa8255c10a0ddcaaa3edd087b8fc524ab5",
+     "sea": "daded673fe77a75f631b40251c09ef158b1c541b037f32c8d75ed4141b4409d5",
+     "shadow": "e2fe511cc8c72fb8bf6a1e67e5041e64c99d3f76da665f0e3ee3e5e2428c0aec",
+     "coast": "e685ba188bbe1e434a0071c930f11d1ac7c6394f64300d53dda737ab63b2bcaf"
+    },
+    "shown": [
+     "block",
+     "block",
+     "block"
+    ],
+    "layerOrder": [
+     "v3RSea",
+     "v3CoastGlow",
+     "v3RShadow",
+     "v3LandBase",
+     "v3m-seaLayer",
+     "atlasTerrain",
+     "v3RCoast",
+     "v3m-landLayer"
+    ],
+    "decorationTargets": 0,
+    "pointer": true
    },
-   "coast": {
-    "stroke": "rgb(255, 255, 255)",
-    "width": "1.5px",
+   "dim": {
+    "neighbour": "0.42",
+    "country": "0.42",
+    "italy": "0",
     "glow": "block",
-    "shadow": "block",
     "base": "block",
-    "copies": 57,
-    "copiesWithId": 0,
+    "copies": 38,
     "landShapes": 19
    },
    "targets": {
@@ -1156,8 +1261,11 @@
   "reducedTransparencyOpaque": true,
   "miniaturesMatchManifest": true,
   "missingScenesUseChapterIcon": true,
-  "reliefDefaultWithPalette": true,
-  "whiteCoastAndShadow": true,
+  "reliefDefaultZ8": true,
+  "reliefLayersMatchProvenance": true,
+  "reliefLayerOrder": true,
+  "reliefIsDecorationOnly": true,
+  "neighboursDimmed": true,
   "geometrySame": {
    "desktop-italia": "46/46",
    "desktop-viola": "46/46",

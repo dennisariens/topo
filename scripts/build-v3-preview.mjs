@@ -57,7 +57,11 @@ const barCss='.v3PreviewBar[hidden]{display:none!important}.v3PreviewBar{display
 // Chapter miniatures (stijlbeeld): from assets/v3/scenes/manifest.json, checked against their SHA256, embedded as data URIs.
 const sceneManifest=JSON.parse(read('assets/v3/scenes/manifest.json')),scenes={};
 for(const [id,e] of Object.entries(sceneManifest.chapters)){const b=readFileSync(new URL(e.mini.path,root));if(createHash('sha256').update(b).digest('hex')!==e.mini.sha256)throw Error('Scene miniature differs from manifest: '+e.mini.path);scenes[id]='data:image/webp;base64,'+b.toString('base64');}
-const sceneJs='window.TOPO_V3_SCENES='+JSON.stringify(scenes)+';';
+// Relief z8 render layers (v3/relief-z8 @ 2a7b0cf), checked against their provenance SHA256, embedded as data URIs.
+const prov=JSON.parse(read('assets/discovery/terrain-z8-render-provenance.json')),reliefFiles={terrain:prov.output,...Object.fromEntries(prov.pipeline.decorative_layers.map(l=>[l.role,l]))},relief={};
+for(const [role,e] of Object.entries(reliefFiles)){const b=readFileSync(new URL(e.path,root));if(createHash('sha256').update(b).digest('hex')!==e.sha256)throw Error('Relief layer differs from provenance: '+e.path);relief[role]='data:image/webp;base64,'+b.toString('base64');}
+if(Object.keys(relief).sort().join()!=='coast,sea,shadow,terrain')throw Error('Relief layers incomplete');
+const sceneJs='window.TOPO_V3_SCENES='+JSON.stringify(scenes)+';window.TOPO_V3_RELIEF='+JSON.stringify(relief)+';';
 const css=read('scripts/v3/tokens.css')+read('scripts/v3/reis.css')+read('scripts/v3/les.css')+barCss;
 const head='<head>\n<script>\n'+states+'\n'+sceneJs+'\n</script>\n<style>/* BEGIN TOPO V3 */'+css+'/* END TOPO V3 */</style>';
 const last=html.lastIndexOf('</body>');if(last<0||html.indexOf('<head>')<0)throw Error('Unexpected index.html shape');

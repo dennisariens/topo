@@ -3,9 +3,9 @@
 
 Checks the style image against the brief (docs/v3/ARTWORK_BRIEF.md, Volgorde 1): the V2 panorama full-bleed behind
 the app on desktop and iPad (none on phone), the floating frosted-glass window (radius 24, soft shadow), the #75
-miniatures from assets/v3/scenes/manifest.json (byte-checked) with chapter icons where a scene is missing, relief on by
-default with the render palette on the existing layer, a white coast rim and a soft land shadow — while the map
-geometry stays exactly the live map's (46/46). Writes screenshots, side-by-side comparisons with the owner's concept
+miniatures from assets/v3/scenes/manifest.json (byte-checked) with chapter icons where a scene is missing, and the z8
+relief from v3/relief-z8 (render layers sea, shadow, relief, coast; SHA256 against their provenance, in layer order,
+decoration only) with neighbouring countries dimmed and a softer sea — while the map geometry stays exactly the live map's (46/46). Writes screenshots, side-by-side comparisons with the owner's concept
 renders, and results.json to docs/qa/v3-stijlbeeld/.
 
 Needs Playwright (Chromium or Chrome) and Pillow. Concept renders: RENDERS_DIR (default ~/Downloads).
@@ -20,6 +20,8 @@ ROOT = Path(__file__).resolve().parents[1]
 HTML = ROOT / 'output/html/TOPO-V3-Reis-Preview.html'
 OUT = ROOT / 'docs/qa/v3-stijlbeeld'
 MANIFEST = json.loads((ROOT / 'assets/v3/scenes/manifest.json').read_text())
+RELIEF_PROV = json.loads((ROOT / 'assets/discovery/terrain-z8-render-provenance.json').read_text())
+RELIEF_SHA = {'terrain': RELIEF_PROV['output']['sha256'], **{l['role']: l['sha256'] for l in RELIEF_PROV['pipeline']['decorative_layers']}}
 MAC_CHROME = '/Applications/Google Chrome.app/Contents/MacOS/Google Chrome'
 RENDERS_DIR = Path(os.environ.get('RENDERS_DIR', Path.home() / 'Downloads'))
 RENDERS = {  # the owner's five concept renders (9 November 2026), the target images
@@ -37,7 +39,8 @@ PROBE = r'''() => {
   const pano = document.querySelector('.routeScene img')?.src || '';
   const bg = cs(body).backgroundImage, alpha = (c => { const m = c.match(/[\d.]+/g) || []; return c.startsWith('color(') ? (c.includes('/') ? parseFloat(c.split('/')[1]) : 1) : m.length > 3 ? +m[3] : 1; })(w.backgroundColor);
   const map = document.querySelector('.v3Map'), terrain = map.querySelector('.atlasTerrain'), italy = map.querySelector('.italy');
-  const glow = map.querySelector('.v3CoastGlow'), shadow = map.querySelector('.v3LandShadow'), base = map.querySelector('.v3LandBase');
+  const glow = map.querySelector('.v3CoastGlow'), base = map.querySelector('.v3LandBase'), href = n => n?.getAttribute('href') || '';
+  const layerOrder = [...map.children].map(n => (n.getAttribute('class') || n.id || n.tagName).split(' ').pop()).filter(c => /v3RSea|v3CoastGlow|v3RShadow|v3LandBase|seaLayer|atlasTerrain|v3RCoast|landLayer/.test(c));
   const rows = [...document.querySelectorAll('.v3Row')].map(b => { const i = b.querySelector('.v3Thumb img');
     return {chapter: b.dataset.chapter, icon: b.querySelector('.v3Thumb').classList.contains('v3ThumbIcon'), src: i?.getAttribute('src') || '', natural: i ? [i.naturalWidth, i.naturalHeight] : null,
             box: i ? [Math.round(i.getBoundingClientRect().width), Math.round(i.getBoundingClientRect().height)] : null,
@@ -49,10 +52,14 @@ PROBE = r'''() => {
     window: {radius: w.borderTopLeftRadius, backdropFilter: w.backdropFilter, shadow: w.boxShadow !== 'none', bgAlpha: alpha,
              gaps: [Math.round(r.left), Math.round(innerWidth - r.right), Math.round(r.top), Math.round(innerHeight - r.bottom)]},
     rows, icons,
-    relief: {mode: map.dataset.relief, terrain: cs(terrain).display, filter: cs(terrain).filter, pressed: document.querySelector('.v3Switch [aria-pressed=true]')?.textContent},
-    coast: {stroke: cs(italy).stroke, width: cs(italy).strokeWidth, glow: glow ? cs(glow).display : null, shadow: shadow ? cs(shadow).display : null,
-            base: base ? cs(base).display : null, copies: (glow?.children.length || 0) + (shadow?.children.length || 0) + (base?.children.length || 0), copiesWithId: map.querySelectorAll(':is(.v3CoastGlow,.v3LandShadow,.v3LandBase) :is([data-id],[class])').length,
-            landShapes: [...map.querySelectorAll('.land,.italy')].filter(n => n.getAttribute('d')).length},
+    relief: {mode: map.dataset.relief, terrain: cs(terrain).display, pressed: document.querySelector('.v3Switch [aria-pressed=true]')?.textContent,
+             layers: {terrain: href(terrain.querySelector('image')), sea: href(map.querySelector('.v3RSea')), shadow: href(map.querySelector('.v3RShadow')), coast: href(map.querySelector('.v3RCoast'))},
+             shown: ['.v3RSea', '.v3RShadow', '.v3RCoast'].map(q => map.querySelector(q) && cs(map.querySelector(q)).display), layerOrder,
+             decorationTargets: map.querySelectorAll('.v3R[data-id], .v3R[tabindex], :is(.v3CoastGlow,.v3LandBase) :is([data-id],[class])').length,
+             pointer: [...map.querySelectorAll('.v3R')].every(n => n.getAttribute('pointer-events') === 'none' && n.getAttribute('aria-hidden') === 'true')},
+    dim: {neighbour: cs(map.querySelector('.contextLand')).fillOpacity, country: (n => n ? cs(n).fillOpacity : null)(map.querySelector('.country:not(.v3Hit)')), italy: cs(italy).fillOpacity,
+          glow: glow ? cs(glow).display : null, base: base ? cs(base).display : null, copies: (glow?.children.length || 0) + (base?.children.length || 0),
+          landShapes: [...map.querySelectorAll('.land,.italy')].filter(n => n.getAttribute('d')).length},
     targets: {live: document.querySelectorAll('#map [data-id]').length, clone: map.querySelectorAll('[data-id]').length},
     primaryAboveFold: !!primary && primary.bottom <= innerHeight && primary.top >= 0,
     horizontalOverflow: document.documentElement.scrollWidth > innerWidth + 1,
@@ -103,6 +110,8 @@ async def main():
                 run = await pg.evaluate(PROBE); run['geometry'] = await pg.evaluate(GEOMETRY)
                 run['theme'] = await pg.evaluate('getComputedStyle(document.querySelector(".v3Reis")).getPropertyValue("--v3-accent").trim()')
                 # Miniatures: decoded bytes equal the manifest; missing scenes show the chapter icon.
+                for k2, v2 in run['relief']['layers'].items():
+                    run['relief']['layers'][k2] = sha(base64.b64decode(v2.split(',', 1)[1])) if v2.startswith('data:image/webp;base64,') else None
                 for row in run['rows']:
                     if row['src'].startswith('data:image/webp;base64,') and not row['icon']:
                         row['sha256'] = sha(base64.b64decode(row['src'].split(',', 1)[1]))
@@ -131,8 +140,11 @@ async def main():
         'reducedTransparencyOpaque': res['reducedTransparency']['backdropFilter'] == 'none' and res['reducedTransparency']['bgAlpha'] == 1,
         'miniaturesMatchManifest': every(runs, lambda r: all(row.get('sha256') == minis[row['chapter']] and row['natural'] == [480, 270] for row in r['rows'] if row['chapter'] in minis)),
         'missingScenesUseChapterIcon': every(runs, lambda r: [row['chapter'] for row in r['rows'] if row['iconIsChapterIcon']] == ['city2', 'city3', 'city4']),
-        'reliefDefaultWithPalette': every(runs, lambda r: r['relief']['mode'] == 'on' and r['relief']['terrain'] == 'block' and 'v3-relief-palette' in r['relief']['filter'] and r['relief']['pressed'] == 'Reliëf'),
-        'whiteCoastAndShadow': every(runs, lambda r: r['coast']['stroke'] == 'rgb(255, 255, 255)' and r['coast']['width'] == '1.5px' and r['coast']['glow'] == 'block' and r['coast']['shadow'] == 'block' and r['coast']['base'] == 'block' and r['coast']['copiesWithId'] == 0 and r['coast']['copies'] == 3 * r['coast']['landShapes']),
+        'reliefDefaultZ8': every(runs, lambda r: r['relief']['mode'] == 'on' and r['relief']['terrain'] == 'block' and r['relief']['pressed'] == 'Reliëf'),
+        'reliefLayersMatchProvenance': every(runs, lambda r: r['relief']['layers'] == RELIEF_SHA and r['relief']['shown'] == ['block'] * 3),
+        'reliefLayerOrder': every(runs, lambda r: r['relief']['layerOrder'] == ['v3RSea', 'v3CoastGlow', 'v3RShadow', 'v3LandBase', 'v3m-seaLayer', 'atlasTerrain', 'v3RCoast', 'v3m-landLayer']),
+        'reliefIsDecorationOnly': every(runs, lambda r: r['relief']['decorationTargets'] == 0 and r['relief']['pointer'] and r['dim']['copies'] == 2 * r['dim']['landShapes']),
+        'neighboursDimmed': every(runs, lambda r: float(r['dim']['neighbour']) < .6 and float(r['dim']['country']) < .6 and float(r['dim']['italy']) == 0),
         'geometrySame': {k: f"{r['geometry']['same']}/{r['geometry']['total']}" for k, r in runs.items()},
         'geometryAllSame': every(runs, lambda r: r['geometry']['same'] == r['geometry']['total'] == 46 and r['targets']['clone'] == r['targets']['live']),
         'themes': {k: r['theme'] for k, r in runs.items()},
@@ -154,7 +166,7 @@ async def main():
     (OUT / 'results.json').write_text(json.dumps(res, indent=1, ensure_ascii=False) + '\n')
     print(json.dumps(res['summary'], indent=1, ensure_ascii=False))
     bad = [k for k in ('indexUnchanged', 'backdropIsV2Panorama', 'phoneNoBackdrop', 'floatingGlassWindow', 'reducedTransparencyOpaque', 'miniaturesMatchManifest',
-                       'missingScenesUseChapterIcon', 'reliefDefaultWithPalette', 'whiteCoastAndShadow', 'geometryAllSame', 'primaryAboveFold') if not res['summary'][k]]
+                       'missingScenesUseChapterIcon', 'reliefDefaultZ8', 'reliefLayersMatchProvenance', 'reliefLayerOrder', 'reliefIsDecorationOnly', 'neighboursDimmed', 'geometryAllSame', 'primaryAboveFold') if not res['summary'][k]]
     bad += [k for k in ('namesClipped', 'horizontalOverflow') if res['summary'][k]] + (['errors'] if res['summary']['errors'] else [])
     print('problems:', bad or 'none')
     sys.exit(1 if bad else 0)

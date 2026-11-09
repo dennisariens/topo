@@ -335,3 +335,10 @@ Reservekopieën en reset horen in het algemene instellingenmenu. Wis voortgang b
 
 - **Besluit eigenaar:** de contextnamen in de kaartkopie (zoals ITALIË, DUITSLAND, BOSNIË) blijven staan. Ze geven het referentiekader dat de leerling nodig heeft. Voorwaarde: een automatische check faalt zodra een label een van de 45 leerplek-namen toont. Leerplekken zelf blijven naamloos op Reis.
 - **Artwork:** BG-01, het Nino-portret en de scène Roma hebben het akkoord van de eigenaar (`art/v3-render-assets`). De modelcheck van Hermes staat nog open; daarna inbouwen.
+
+## 2026-11-09 — Hermes-REWORK afb32d1 verwerkt; reliëf z8 in V3
+
+- **V3-01:** contextnamen blijven (besluit eigenaar). `qa-v3-reis.py` faalt (`labelsWithLearningName`) zodra een kaartlabel een van de 45 leerplek-namen of hun aliassen bevat, ongeacht accenten en letterafstand. Een negatieve controle bewijst dat de check vangt.
+- **V3-02:** de schakelaar staat op telefoon onder de kaart (sinds `4b2c323`). `switchCoversPlace` meet per hoofdstuk en per kaartstijl of een gekozen plek wordt bedekt. Op `afb32d1` geeft dezelfde meting voor Sicilië 948 px², nu 0.
+- **V3-03:** na het kiezen van een hoofdstuk op telefoon gaat de focus naar de titel (`tabindex=-1`). Focus verandert de maat niet.
+- **Reliëf:** Reis gebruikt de z8-renderlagen van Codex (`v3/relief-z8` @ `2a7b0cf`, SHA256 gecontroleerd tegen de provenance) in de laagvolgorde van Codex. Buurlanden zijn gedempt, de zee loopt zachter (halve sterkte, brede kustgloed). **Supersedes** het SVG-kleurfilter op z7 uit het stijlbeeld. Alleen in de Reis-kopie: de lessen en `index.html` blijven z7. De kustdiscrepantie die Codex meldde (≤ 2,84 SVG px bij de eilanden) blijft open.

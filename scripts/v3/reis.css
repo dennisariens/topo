@@ -84,16 +84,20 @@ body.v3Home #journeyScreen,body.v3Home #journeyScreen>#routeHome{background:none
 .v3Map[data-focus=areas] .v3Hit.lineTarget,.v3Map .v3Hit.river{stroke:var(--v3-accent)!important;stroke-opacity:1!important}
 .v3Map [pointer-events],.v3Map *{pointer-events:none}
 .v3Map{background:var(--v3-sea-school)}
-.v3Map[data-relief=on]{--v3-relief-sea:#a8d8ee;background:var(--v3-relief-sea)}
-.v3Map[data-relief=on] .sea{fill:var(--v3-relief-sea)!important}
+/* Relief z8 render layers (Schoolkaart hides them). Softer sea: the measured sea layer at half strength over a light
+   base, with a wide soft coastal glow; outside the canvas the same blended colour continues. */
+.v3Map :is(.v3R,.v3CoastGlow,.v3LandBase){display:none}
+.v3Map[data-relief=on]{--v3-relief-sea:#7bc5e7;background:var(--v3-relief-sea)}
+.v3Map[data-relief=on] .sea{fill:#dcedf4!important;fill-opacity:1!important}
 .v3Map[data-relief=on] .atlasWaterTexture{display:none!important}
-.v3Map[data-relief=on] .atlasTerrain{display:block!important;opacity:1;filter:url(#v3-relief-palette)}
-/* Coast: a lighter coastal zone in the sea, a soft shadow under the land and a white rim (render palette). */
-.v3Map :is(.v3CoastGlow,.v3LandShadow,.v3LandBase){display:none}
-.v3Map[data-relief=on] .v3LandBase{display:block;fill:#86b553}
-.v3Map[data-relief=on] .v3CoastGlow{display:block;fill:#e4f6fc;stroke:#d6f1fa;stroke-width:22;stroke-linejoin:round;filter:url(#v3-coast-glow);opacity:.95}
-.v3Map[data-relief=on] .v3LandShadow{display:block;fill:#1f5670;opacity:.32;filter:url(#v3-land-shadow)}
-.v3Map[data-relief=on] :is(.land,.italy){stroke:#fff!important;stroke-width:1.5px!important;stroke-opacity:1!important;vector-effect:non-scaling-stroke;paint-order:stroke}
+.v3Map[data-relief=on] :is(.v3R,.v3LandBase){display:block}
+.v3Map[data-relief=on] .v3RSea{opacity:.5}
+.v3Map[data-relief=on] .v3CoastGlow{display:block;fill:none;stroke:#eaf8fc;stroke-width:26;stroke-linejoin:round;filter:url(#v3-coast-glow);opacity:.55}
+.v3Map[data-relief=on] .v3LandBase{fill:#b9d39d}
+.v3Map[data-relief=on] .atlasTerrain{display:block!important;opacity:1}
+/* Neighbouring countries step back (dimmed), Italy and the chapter's places stay full strength. */
+.v3Map[data-relief=on] :is(.land,.italy){fill-opacity:0;stroke:#fff!important;stroke-opacity:.75!important;stroke-width:.9px!important;vector-effect:non-scaling-stroke}
+.v3Map[data-relief=on] :is(.contextLand,.country:not(.v3Hit)){fill:#f6f2e8!important;fill-opacity:.42!important}
 .v3Map[data-relief=on] :is(.land,.italy){fill-opacity:0}
 .v3Map[data-relief=on] .country:not(.v3Hit){fill:#fff;fill-opacity:.06}
 .v3Map[data-relief=on] .zone:not(.v3Hit){fill-opacity:.11}

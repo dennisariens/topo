@@ -3,6 +3,8 @@
 **Doel:** TOPO V3 op het niveau van de conceptrenders van de eigenaar (9 november 2026): een rustige app die zweeft boven een Italiaans landschap, met een levende reliëfkaart, rijke hoofdstukbeelden, Nino als portret en kleine kleurrijke iconen. Besluit: `DECISIONS.md` 2026-11-09 › Renderniveau.
 
 **Vaste regels**
+- Vaste Nino-kenmerken: gezicht, groene helm met bril, rode sjaal, blauw bovenstuk, rugzak, rode Vespa. Snit van shirt of jasje mag per scène variëren; het portret is exact canoniek (gesloten blauw werkshirt).
+- Bronresolutie van de beeldgenerator (±1586 px breed) is geaccepteerd; budgetten in KiB.
 - De kaart blijft echte geografie: reliëf uit gemeten hoogtedata, nooit een gegenereerd beeld als kaart. Geen genummerde pins op de kaart.
 - Nino komt alleen vanaf de canonieke referenties (`assets/nino/exports/nino-*.webp`, `assets/nino/references/`). Elk nieuw Nino-beeld wordt naast de referentie gelegd en apart goedgekeurd: gezicht, haar, helm met bril, rode sjaal, blauw shirt, rugzak.
 - Stijl: de #75-hoofdstukscènes zijn de stijlreferentie (warm, helder, zacht licht, 3D-geschilderd).
@@ -39,7 +41,7 @@ Nieuwe scènes: 1672×941 zoals de #75-scènes, Nino met Vespa in dezelfde stijl
 
 ## 3. Nino-portret (nieuw)
 
-Borstportret, driekwart naar links, vriendelijke glimlach, helm met bril op het hoofd, rode sjaal. Transparante achtergrond. Master 2048×2048, export 512×512 WebP (≤ 120 KB). Varianten later: blij (goed antwoord), denkend (lege staat).
+Hoofd-en-schouderportret (borst mag), kijkt de kijker aan, vriendelijke glimlach, helm met bril op het hoofd, rode sjaal. Transparante achtergrond. Master 2048×2048, export 512×512 WebP (≤ 120 KB). Varianten later: blij (goed antwoord), denkend (lege staat).
 
 ## 4. Iconen (nieuw)
 

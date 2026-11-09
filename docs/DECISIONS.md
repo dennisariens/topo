@@ -350,3 +350,9 @@ Reservekopieën en reset horen in het algemene instellingenmenu. Wis voortgang b
 - **Beloningen:** er is een V3-scherm gebouwd (richting B noemde het nog als te bouwen). Het toont het Reisboekje (opent het V2-boek), VE-01 met de ritten, en tegels voor IC-pizza, IC-stamp, IC-gold en IC-postcard. Alle getallen leest het uit V2 en het schrijft niets. Postkaarten volgen de regel van het V2-boek.
 - **Build:** elk ingebed beeld wordt tegen zijn manifest-SHA256 gecontroleerd. De preview groeit met 7,44 MB (+17%). `index.html` blijft byte-gelijk.
 - **Open:** de Hermes-modelcheck, en voor meerdere assets het oordeel van de eigenaar (status in het manifest). Hermes-hertest op de pin van deze commit.
+
+## 2026-11-09 — Artwork: visuele kwaliteit boven bestandsgrootte; Nino-kenmerken
+
+- **Achtergronden:** BG-01, BG-02 en BG-03 blijven alle drie in de app. Visuele kwaliteit gaat voor; de groei van het bestand (+7,4 MB) lossen we technisch op: eerst meten op een echte iPad, daarna zo nodig AVIF in plaats van WebP en decoderen wanneer zichtbaar. De bronresolutie van 1586×992 (maximum van de beeldgenerator) is een vastgelegde uitzondering op de brief. Budgetten gelden in KiB.
+- **Nino-model:** vast zijn gezicht, groene helm met bril, rode sjaal, blauw bovenstuk, rugzak en rode Vespa. De precieze snit van shirt of jasje mag per scène wat variëren. Uitzondering: het portret (altijd zichtbaar in de zijbalk) moet exact canoniek zijn: gesloten blauw werkshirt.
+- **Gevolg voor Hermes 908b4a4:** BG-01 t/m BG-03 vallen onder de uitzondering. Roma en Napoli zijn binnen de modelregel geaccepteerd. Het portret gaat terug voor het shirt; de uitsnede (hoofd en schouders) en de lichte haarrand op donker zijn geaccepteerd.

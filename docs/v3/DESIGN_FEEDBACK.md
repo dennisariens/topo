@@ -15,3 +15,5 @@ Design Taste-protocol: elke correctie krijgt een categorie (lay-out, identiteit,
 | 2026-11-09 | alle | Renderniveau: app zweeft boven landschap, levend reliëf, rijke hoofdstukbeelden | identiteit, beeld | DECISIONS › Renderniveau; ARTWORK_BRIEF; stijlbeeld `docs/qa/v3-stijlbeeld` (oordeel open) |
 | 2026-11-09 | iconen | Gele scooter? Nee: één rode Vespa (die van Nino); staat via kleur of grijs. Idee: gouden Vespa als eindbeloning bij 11× goud, naast Esploratore d'oro | identiteit | idee, nog niet besloten; brief › Iconen |
 | 2026-11-09 | iconen | Pizzapunt voor tellers (eenheid = punt), hele pizza voor meter en Beloningen | inhoud | ARTWORK_BRIEF › Iconen |
+| 2026-11-09 | artwork | Alle drie de achtergronden houden; visueel top gaat voor grootte | beeld | DECISIONS 9-11 › Artwork kwaliteit |
+| 2026-11-09 | artwork | Shirtvariatie van Nino per scène is acceptabel; portret moet exact | identiteit | ARTWORK_BRIEF › Vaste regels |

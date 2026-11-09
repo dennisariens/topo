@@ -403,6 +403,43 @@
     ],
     "alpha": true
    }
+  },
+  {
+   "id": "IC-slice",
+   "status": "ter beoordeling eigenaar",
+   "note": "pizzapunt voor tellers (eenheid = punt); hele pizza blijft voor meter en Beloningen",
+   "master": {
+    "path": "assets/v3/render/masters/icons/IC-slice.png",
+    "bytes": 1296924,
+    "sha256": "df74a29c367e45e74cb2bac8c30450d6e1e43ad29f3fc6e2afb991f8daa82b8b",
+    "size": [
+     1233,
+     1233
+    ],
+    "alpha": true
+   },
+   "exports": {
+    "96": {
+     "path": "assets/v3/render/exports/icons/IC-slice-96.webp",
+     "bytes": 4658,
+     "sha256": "1b1fa303abc5775133b00d76f9b2d4c6945f759c12caf75d50b492bdb96ad550",
+     "size": [
+      96,
+      96
+     ],
+     "alpha": true
+    },
+    "48": {
+     "path": "assets/v3/render/exports/icons/IC-slice-48.webp",
+     "bytes": 2044,
+     "sha256": "cec6dd44ada6ca6712b8cf20b49f8f93c607fa71f3b3f68ab0695fd95e9e7998",
+     "size": [
+      48,
+      48
+     ],
+     "alpha": true
+    }
+   }
   }
  ],
  "pending": [

@@ -274,3 +274,10 @@ Reservekopieën en reset horen in het algemene instellingenmenu. Wis voortgang b
 - **Preview-HTML** gaat niet meer in Git; buildscript en checksum wel.
 - **Status:** kandidaat ter beoordeling. Geen merge, deployment of downloadvervanging.
 
+
+## 2026-11-09 — Eigenaar: Reis v3b akkoord, Italia, kaartkader
+
+- **Reis v3b** is akkoord als richting; door naar de route hoofdstuk → kaartles → feedback → beloning → Reisboekje.
+- **Thema:** Italia is de standaard. Viola blijft alleen als vergelijkingsthema in de preview.
+- **Kaartkader:** de vervaging aan de rand mag het referentiekader niet wegnemen. De leerling moet zien wat eromheen ligt (buurlanden, zeeën, eilanden). Minder fade, ruimer kader.
+- **Werkverdeling:** implementatie gaat naar Claude Code op de Mac mini (of Codex), via een overdracht in Git; dit gesprek blijft voor product- en ontwerpbesluiten.

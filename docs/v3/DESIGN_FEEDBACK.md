@@ -8,3 +8,4 @@ Design Taste-protocol: elke correctie krijgt een categorie (lay-out, identiteit,
 | 2026-11-09 | alle | Principe: geen taglines, hulpteksten of bijlabels; anders klopt de lay-out niet | inhoud | DESIGN_SYSTEM V3 › Principe; QA-check op nog te bouwen tekstbudget |
 | 2026-11-09 | alle | Kleur per land (Italia nu, later Frankrijk) in plaats van één accent | identiteit | DESIGN_SYSTEM V3 › Landthema's; `data-theme` |
 | 2026-11-09 | Reis | Schoolkaart blijft basis; reliëf als schakelaar gewenst | inhoud, interactie | DESIGN_SYSTEM V3 › Kaart |
+| 2026-11-09 | Reis v3b | Rand-fade niet te sterk: referentiekader (buurlanden, zeeën) is nodig om te leren | lay-out, inhoud | DECISIONS 9-11; te verwerken: mask en kaderpadding |

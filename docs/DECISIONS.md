@@ -372,3 +372,9 @@ Reservekopieën en reset horen in het algemene instellingenmenu. Wis voortgang b
 - **Artwork:** de eigenaar keurt SCENE-VENEZIA, de iconen (pizza, pizzapunt, Vespa, goud, stempelafdruk, postkaart) en VE-01 goed; Hermes gaf al PASS (`908b4a4`). Status in `assets/v3/render/manifest.json` op `art/v3-render-assets`.
 - **Kust reliëf z8:** de afwijking tussen hoogtemodel en vectorkust (≤ 2,84 SVG px, Codex `v3/relief-z8`) is voor V3.0 geaccepteerd. Leergeografie, doelen en aanwijsgebieden komen uit de ongewijzigde vectorkaart; het reliëf is beschildering binnen de kustlijn. Het hoogtemodel op de vectorkust laten passen is een apart klusje voor Codex, vóór de definitieve release.
 - **Nog open:** Hermes-hertest (beelden `05ab1d0`, app op de nieuwe pin); WebKit bij Hermes; echte iPad met Safari en VoiceOver door de eigenaar.
+
+## 2026-11-09 — Hermes GE01-K01: de toets die antwoordt, activeert geen beloningsknop
+
+- **Bevinding (Hermes, `1a42590`):** met verminderde beweging en één Enter op het antwoord dat een pizza vol maakt, klikte dezelfde Enter op **Verder** in de net geopende pizzadialoog. Die ging meteen dicht.
+- **Fix, in de V3-laag (`scripts/v3/les.js`):** zolang Enter of spatie is ingedrukt, telt een echte toetsenbordklik alleen op het element waar de toets begon. Daarna werkt elke nieuwe toets gewoon. Dit geldt voor alle beloningsmomenten (pizza, Vespa-rit, stempel, goud), met en zonder verminderde beweging. De V2-motor en `index.html` zijn ongewijzigd.
+- **Regressie:** `scripts/qa-v3-toets-beloning.py` volgt de reproductie van Hermes (Enter én klik) en speelt daarna alle momenten. Op `1a42590` faalt de test, nu is hij groen. Bewijs: `docs/qa/v3-les/toets-beloning/`. Gerichte Hermes-hertest van alleen GE01 op de pin van deze commit.

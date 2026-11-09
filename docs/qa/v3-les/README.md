@@ -1,6 +1,6 @@
 # V3 Golden Experience 01 — beat 3–7 (les → feedback → beloning → Reisboekje)
 
-**Kandidaat:** `output/html/TOPO-V3-Reis-Preview.html` (naam behouden; bevat nu Reis én les), SHA256 `23dced34e7d9079cd59195532721f39b1bc6c1f00032ce6c4a41bb4ea619b556`. Niet in Git; reproduceer met `node scripts/build-v3-preview.mjs`. Basis: ongewijzigde V2.0.2-`index.html` (`3aced3c3…304f5a`) + `scripts/v3/` (`tokens.css`, `reis.*`, `les.*`).
+**Kandidaat:** `output/html/TOPO-V3-Reis-Preview.html` (naam behouden; bevat nu Reis én les), SHA256 `71c2f49bf65ae04e9a1908bd7661cf8889562c0af4b3f582fd9cacfdfc4131d4`. Niet in Git; reproduceer met `node scripts/build-v3-preview.mjs`. Basis: ongewijzigde V2.0.2-`index.html` (`3aced3c3…304f5a`) + `scripts/v3/` (`tokens.css`, `reis.*`, `les.*`).
 **Spec:** [docs/v3/GE01.md](../../v3/GE01.md). **Openen:** `file://…#bezig` → **Aanwijzen** (of **↻ Ontdekken**).
 **Oordeel:** technisch geslaagd · visueel zelf beoordeeld · **eigenaar: open** · Hermes: open. Geen merge, deployment of downloadvervanging.
 
@@ -19,6 +19,7 @@
 | Sheet opent na antwoord (eigenaar 9-11) | Na **Kaart vrijmaken** + antwoord gaat de Focus-sheet vanzelf open: feedback en **Volgende** in beeld | `sheetOpensAfterAnswer`: alle gevallen `true` (iPad liggend, telefoon 320); `collapsedSheetAfterAnswer: []` | ✓ |
 | Beat 6 — Feedback | V2-zin: groen ✓ of rustig rood; **Volgende** als enige hoofdactie | `feedbackFromV2`, `wrongAnswersNotRewarded`, `meterMatchesState`, `oneMainAction: {}` | ✓ |
 | Beat 7 — verdiende beloning | Pizza- en Vespa-dialoog alleen bij de echte telling | `rewardMomentsOnRealCount: true`; pizza 1→2, 2→3 en Vespa-rit 0→1 op alle formaten · [pizza](pizza-desktop.png) · [Vespa](vespa-desktop.png) | ✓ |
+| Beat 7 — toets sluit geen beloning (Hermes GE01-K01) | De Enter of klik die antwoordt, laat de pizza, Vespa-rit, stempel en goud staan, met en zonder verminderde beweging | `qa-v3-toets-beloning.py`: 12/12 runs groen, 4 doorgelekte toetsklikken genegeerd; op `1a42590` faalt dezelfde test · [bewijs](toets-beloning/README.md) | ✓ (fout gevonden door Hermes, hersteld) |
 | Beat 7 — stempel → Reisboekje | **Deze halte is afgerond!**, stempel met **Bekijk in Reisboekje** als hoofdactie; één terugknop | `finishStampAndBook: true` (`stamp:city2`, boek open); `bookTapLandsOnButton: true` · [afronding](finish-desktop.png) · [boek](reisboekje-desktop.png) | ✓ (fout gevonden en hersteld) |
 | Terug naar Reis | Volgende hoofdstuk is het huidige | `backToReisNextChapter: true` (`city3`) | ✓ (fout gevonden en hersteld) |
 | Tekstbudget | Geen V2-kop, navigatie, oefenmodi, "Samen met Nino", hulpregels | `v2ChromeVisible: {}` | ✓ |

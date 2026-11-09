@@ -1,0 +1,1174 @@
+{
+ "html": "output/html/TOPO-V3-Reis-Preview.html",
+ "sha256": "382e9768045ee9327c4be83aee5fea5576a76af21bfba175c1a873a40c819973",
+ "indexSha256": "3aced3c31259011b0af2947c78f71965cb4beb2e88c69d1663e61792b0304f5a",
+ "runs": {
+  "desktop": {
+   "setup": {
+    "chapters": [
+     "city1",
+     "city2",
+     "city3",
+     "city4"
+    ],
+    "completed": [
+     "city1",
+     "city2",
+     "city3",
+     "city4"
+    ],
+    "form": [
+     "both"
+    ],
+    "length": [
+     "10"
+    ],
+    "start": true,
+    "active": "v3ToetsTitle"
+   },
+   "start": {
+    "mode": "exam",
+    "view": "toets",
+    "tab": "toets",
+    "type": "exam",
+    "count": "1 / 10",
+    "q": "city-4",
+    "qmode": "write",
+    "answered": false,
+    "examTotal": 10,
+    "examAnswered": 0,
+    "examCorrect": 0,
+    "examEnded": false,
+    "slices": 3,
+    "pizzas": 7,
+    "trips": 2,
+    "good": 61,
+    "mistakes": [],
+    "hints": [],
+    "active": "answer",
+    "opened": [],
+    "v2ResultOpen": false
+   },
+   "result": {
+    "score": "7 / 10",
+    "nino": true,
+    "marks": 10,
+    "bad": [
+     {
+      "id": "city-15",
+      "name": "Catania"
+     },
+     {
+      "id": "city-23",
+      "name": "Triëst"
+     },
+     {
+      "id": "city-20",
+      "name": "Modena"
+     }
+    ],
+    "marksOnMap": true,
+    "fouten": [
+     "Cataniajij: Bologna",
+     "Triëstjij: Fout",
+     "Modenaovergeslagen"
+    ],
+    "actions": [
+     "Oefen deze fouten",
+     "Nieuwe toets",
+     "Kopieer",
+     "E-mail",
+     "Print"
+    ],
+    "primary": "Oefen deze fouten",
+    "stored": {
+     "schema": 1,
+     "results": [
+      {
+       "at": "2026-11-09T22:44:43.223Z",
+       "chapters": [
+        "city1",
+        "city2",
+        "city3",
+        "city4"
+       ],
+       "form": "both",
+       "length": 10,
+       "total": 10,
+       "correct": 7,
+       "items": [
+        {
+         "id": "city-4",
+         "mode": "write",
+         "ok": true
+        },
+        {
+         "id": "city-15",
+         "mode": "point",
+         "ok": false,
+         "given": "Bologna"
+        },
+        {
+         "id": "city-5",
+         "mode": "point",
+         "ok": true
+        },
+        {
+         "id": "city-2",
+         "mode": "write",
+         "ok": true
+        },
+        {
+         "id": "city-23",
+         "mode": "write",
+         "ok": false,
+         "given": "Fout"
+        },
+        {
+         "id": "city-19",
+         "mode": "point",
+         "ok": true
+        },
+        {
+         "id": "city-20",
+         "mode": "write",
+         "ok": false,
+         "given": null
+        },
+        {
+         "id": "city-11",
+         "mode": "point",
+         "ok": true
+        },
+        {
+         "id": "city-22",
+         "mode": "point",
+         "ok": true
+        },
+        {
+         "id": "city-16",
+         "mode": "write",
+         "ok": true
+        }
+       ]
+      }
+     ]
+    },
+    "mail": "mailto:?subject=Mijn%20NINO-toetsscore&body=Ik%20heb%20de%20NINO-toets%20Topografie%20Itali%C3%AB%20gemaakt.%0AOnderwerp%3A%20Steden%201%E2%80%936%2C%20Steden%207%E2%80%9312%2C%20Extra%20steden%2013%E2%80%9318%2C%20Extra%20steden%2019%E2%80%9323%0AScore%3A%207%20van%2010%20goed.",
+    "hOverflow": false,
+    "small": []
+   },
+   "after": {
+    "examCorrect": 7,
+    "examTotal": 10,
+    "slices": 3,
+    "pizzas": 7,
+    "trips": 2,
+    "good": 61,
+    "opened": [],
+    "view": "toetsResult",
+    "tab": "toets",
+    "active": "v3ToetsScore",
+    "v2ResultOpen": false
+   },
+   "answers": [
+    [
+     "city-4",
+     "write",
+     "ok"
+    ],
+    [
+     "city-15",
+     "point",
+     "wrong"
+    ],
+    [
+     "city-5",
+     "point",
+     "ok"
+    ],
+    [
+     "city-2",
+     "write",
+     "ok"
+    ],
+    [
+     "city-23",
+     "write",
+     "wrong"
+    ],
+    [
+     "city-19",
+     "point",
+     "ok"
+    ],
+    [
+     "city-20",
+     "write",
+     "skip"
+    ],
+    [
+     "city-11",
+     "point",
+     "ok"
+    ],
+    [
+     "city-22",
+     "point",
+     "ok"
+    ],
+    [
+     "city-16",
+     "write",
+     "ok"
+    ]
+   ],
+   "export": {
+    "keys": [
+     "app",
+     "profile",
+     "progress",
+     "savedAt",
+     "v3Toetsen",
+     "version"
+    ],
+    "v3Toetsen": 1
+   },
+   "import": {
+    "withResults": 2,
+    "oldCopy": 2,
+    "status": [
+     "Je voortgang is teruggezet. Goede reis!",
+     "Je voortgang is teruggezet. Goede reis!"
+    ]
+   },
+   "max10": {
+    "count": 10,
+    "first": [
+     "2026-11-09T22:44:54.004Z",
+     0
+    ]
+   },
+   "print": {
+    "printed": 1,
+    "text": "Toets Topografie ItaliëNaam: Demo9 november 20260 van 10 goedSteden 1–6 · Steden 7–12 · Extra steden 13–18 · Extra steden 19–23\n\n  \n  \n  \n  \n  \n  \n\nI T A L I ËDUITSLANDTSJECHIËSLOWAKIJEHONGARIJEBOSNIËTUNESIË▲▲×Messina×Turijn×Palermo×Varese×Bari×Catanzaro×Triëst×Pisa×Bologna×VenetiëFoutenMessinaovergeslagenTurijnovergeslagenPalermoovergeslagenVareseovergeslagenBariovergeslagenCatanzaroovergeslagenTriëstovergeslagenPisaovergeslagenBolognaovergeslagenVenetiëovergeslagen",
+    "map": true,
+    "marks": 10
+   },
+   "pageErrors": []
+  },
+  "ipad-liggend": {
+   "setup": {
+    "chapters": [
+     "city1",
+     "city2",
+     "city3",
+     "city4"
+    ],
+    "completed": [
+     "city1",
+     "city2",
+     "city3",
+     "city4"
+    ],
+    "form": [
+     "both"
+    ],
+    "length": [
+     "10"
+    ],
+    "start": true,
+    "active": "v3ToetsTitle"
+   },
+   "start": {
+    "mode": "exam",
+    "view": "toets",
+    "tab": "toets",
+    "type": "exam",
+    "count": "1 / 10",
+    "q": "city-6",
+    "qmode": "point",
+    "answered": false,
+    "examTotal": 10,
+    "examAnswered": 0,
+    "examCorrect": 0,
+    "examEnded": false,
+    "slices": 3,
+    "pizzas": 7,
+    "trips": 2,
+    "good": 61,
+    "mistakes": [],
+    "hints": [],
+    "active": "ninoSchoolMapOnly v3On v3Shell v3Les",
+    "opened": [],
+    "v2ResultOpen": false
+   },
+   "result": {
+    "score": "7 / 10",
+    "nino": true,
+    "marks": 10,
+    "bad": [
+     {
+      "id": "city-9",
+      "name": "Rome"
+     },
+     {
+      "id": "city-18",
+      "name": "La Spezia"
+     },
+     {
+      "id": "city-19",
+      "name": "Messina"
+     }
+    ],
+    "marksOnMap": true,
+    "fouten": [
+     "Romejij: Fout",
+     "La Speziajij: Fout",
+     "Messinaovergeslagen"
+    ],
+    "actions": [
+     "Oefen deze fouten",
+     "Nieuwe toets",
+     "Kopieer",
+     "E-mail",
+     "Print"
+    ],
+    "primary": "Oefen deze fouten",
+    "stored": {
+     "schema": 1,
+     "results": [
+      {
+       "at": "2026-11-09T22:45:06.975Z",
+       "chapters": [
+        "city1",
+        "city2",
+        "city3",
+        "city4"
+       ],
+       "form": "both",
+       "length": 10,
+       "total": 10,
+       "correct": 7,
+       "items": [
+        {
+         "id": "city-6",
+         "mode": "point",
+         "ok": true
+        },
+        {
+         "id": "city-9",
+         "mode": "write",
+         "ok": false,
+         "given": "Fout"
+        },
+        {
+         "id": "city-1",
+         "mode": "point",
+         "ok": true
+        },
+        {
+         "id": "city-20",
+         "mode": "write",
+         "ok": true
+        },
+        {
+         "id": "city-18",
+         "mode": "write",
+         "ok": false,
+         "given": "Fout"
+        },
+        {
+         "id": "city-7",
+         "mode": "point",
+         "ok": true
+        },
+        {
+         "id": "city-19",
+         "mode": "point",
+         "ok": false,
+         "given": null
+        },
+        {
+         "id": "city-8",
+         "mode": "write",
+         "ok": true
+        },
+        {
+         "id": "city-3",
+         "mode": "write",
+         "ok": true
+        },
+        {
+         "id": "city-21",
+         "mode": "point",
+         "ok": true
+        }
+       ]
+      }
+     ]
+    },
+    "mail": "mailto:?subject=Mijn%20NINO-toetsscore&body=Ik%20heb%20de%20NINO-toets%20Topografie%20Itali%C3%AB%20gemaakt.%0AOnderwerp%3A%20Steden%201%E2%80%936%2C%20Steden%207%E2%80%9312%2C%20Extra%20steden%2013%E2%80%9318%2C%20Extra%20steden%2019%E2%80%9323%0AScore%3A%207%20van%2010%20goed.",
+    "hOverflow": false,
+    "small": []
+   },
+   "after": {
+    "examCorrect": 7,
+    "examTotal": 10,
+    "slices": 3,
+    "pizzas": 7,
+    "trips": 2,
+    "good": 61,
+    "opened": [],
+    "view": "toetsResult",
+    "tab": "toets",
+    "active": "v3ToetsScore",
+    "v2ResultOpen": false
+   },
+   "answers": [
+    [
+     "city-6",
+     "point",
+     "ok"
+    ],
+    [
+     "city-9",
+     "write",
+     "wrong"
+    ],
+    [
+     "city-1",
+     "point",
+     "ok"
+    ],
+    [
+     "city-20",
+     "write",
+     "ok"
+    ],
+    [
+     "city-18",
+     "write",
+     "wrong"
+    ],
+    [
+     "city-7",
+     "point",
+     "ok"
+    ],
+    [
+     "city-19",
+     "point",
+     "skip"
+    ],
+    [
+     "city-8",
+     "write",
+     "ok"
+    ],
+    [
+     "city-3",
+     "write",
+     "ok"
+    ],
+    [
+     "city-21",
+     "point",
+     "ok"
+    ]
+   ],
+   "oefen": {
+    "mode": "point",
+    "group": "mistakes",
+    "tab": "oefenen"
+   },
+   "pageErrors": []
+  },
+  "ipad-staand": {
+   "setup": {
+    "chapters": [
+     "city1",
+     "city2",
+     "city3",
+     "city4"
+    ],
+    "completed": [
+     "city1",
+     "city2",
+     "city3",
+     "city4"
+    ],
+    "form": [
+     "both"
+    ],
+    "length": [
+     "10"
+    ],
+    "start": true,
+    "active": "v3ToetsTitle"
+   },
+   "start": {
+    "mode": "exam",
+    "view": "toets",
+    "tab": "toets",
+    "type": "exam",
+    "count": "1 / 10",
+    "q": "city-23",
+    "qmode": "write",
+    "answered": false,
+    "examTotal": 10,
+    "examAnswered": 0,
+    "examCorrect": 0,
+    "examEnded": false,
+    "slices": 3,
+    "pizzas": 7,
+    "trips": 2,
+    "good": 61,
+    "mistakes": [],
+    "hints": [],
+    "active": "ninoSchoolMapOnly v3On v3Shell v3Les",
+    "opened": [],
+    "v2ResultOpen": false
+   },
+   "result": {
+    "score": "7 / 10",
+    "nino": true,
+    "marks": 10,
+    "bad": [
+     {
+      "id": "city-6",
+      "name": "Napels"
+     },
+     {
+      "id": "city-7",
+      "name": "Palermo"
+     },
+     {
+      "id": "city-17",
+      "name": "Foggia"
+     }
+    ],
+    "marksOnMap": true,
+    "fouten": [
+     "Napelsjij: Foggia",
+     "Palermojij: Foggia",
+     "Foggiaovergeslagen"
+    ],
+    "actions": [
+     "Oefen deze fouten",
+     "Nieuwe toets",
+     "Kopieer",
+     "E-mail",
+     "Print"
+    ],
+    "primary": "Oefen deze fouten",
+    "stored": {
+     "schema": 1,
+     "results": [
+      {
+       "at": "2026-11-09T22:45:20.259Z",
+       "chapters": [
+        "city1",
+        "city2",
+        "city3",
+        "city4"
+       ],
+       "form": "both",
+       "length": 10,
+       "total": 10,
+       "correct": 7,
+       "items": [
+        {
+         "id": "city-23",
+         "mode": "write",
+         "ok": true
+        },
+        {
+         "id": "city-6",
+         "mode": "point",
+         "ok": false,
+         "given": "Foggia"
+        },
+        {
+         "id": "city-14",
+         "mode": "point",
+         "ok": true
+        },
+        {
+         "id": "city-5",
+         "mode": "write",
+         "ok": true
+        },
+        {
+         "id": "city-7",
+         "mode": "point",
+         "ok": false,
+         "given": "Foggia"
+        },
+        {
+         "id": "city-21",
+         "mode": "write",
+         "ok": true
+        },
+        {
+         "id": "city-17",
+         "mode": "write",
+         "ok": false,
+         "given": null
+        },
+        {
+         "id": "city-20",
+         "mode": "point",
+         "ok": true
+        },
+        {
+         "id": "city-3",
+         "mode": "write",
+         "ok": true
+        },
+        {
+         "id": "city-15",
+         "mode": "point",
+         "ok": true
+        }
+       ]
+      }
+     ]
+    },
+    "mail": "mailto:?subject=Mijn%20NINO-toetsscore&body=Ik%20heb%20de%20NINO-toets%20Topografie%20Itali%C3%AB%20gemaakt.%0AOnderwerp%3A%20Steden%201%E2%80%936%2C%20Steden%207%E2%80%9312%2C%20Extra%20steden%2013%E2%80%9318%2C%20Extra%20steden%2019%E2%80%9323%0AScore%3A%207%20van%2010%20goed.",
+    "hOverflow": false,
+    "small": []
+   },
+   "after": {
+    "examCorrect": 7,
+    "examTotal": 10,
+    "slices": 3,
+    "pizzas": 7,
+    "trips": 2,
+    "good": 61,
+    "opened": [],
+    "view": "toetsResult",
+    "tab": "toets",
+    "active": "v3ToetsScore",
+    "v2ResultOpen": false
+   },
+   "answers": [
+    [
+     "city-23",
+     "write",
+     "ok"
+    ],
+    [
+     "city-6",
+     "point",
+     "wrong"
+    ],
+    [
+     "city-14",
+     "point",
+     "ok"
+    ],
+    [
+     "city-5",
+     "write",
+     "ok"
+    ],
+    [
+     "city-7",
+     "point",
+     "wrong"
+    ],
+    [
+     "city-21",
+     "write",
+     "ok"
+    ],
+    [
+     "city-17",
+     "write",
+     "skip"
+    ],
+    [
+     "city-20",
+     "point",
+     "ok"
+    ],
+    [
+     "city-3",
+     "write",
+     "ok"
+    ],
+    [
+     "city-15",
+     "point",
+     "ok"
+    ]
+   ],
+   "oefen": {
+    "mode": "point",
+    "group": "mistakes",
+    "tab": "oefenen"
+   },
+   "pageErrors": []
+  },
+  "telefoon": {
+   "setup": {
+    "chapters": [
+     "city1",
+     "city2",
+     "city3",
+     "city4"
+    ],
+    "completed": [
+     "city1",
+     "city2",
+     "city3",
+     "city4"
+    ],
+    "form": [
+     "both"
+    ],
+    "length": [
+     "10"
+    ],
+    "start": true,
+    "active": "v3ToetsTitle"
+   },
+   "start": {
+    "mode": "exam",
+    "view": "toets",
+    "tab": "toets",
+    "type": "exam",
+    "count": "1 / 10",
+    "q": "city-12",
+    "qmode": "point",
+    "answered": false,
+    "examTotal": 10,
+    "examAnswered": 0,
+    "examCorrect": 0,
+    "examEnded": false,
+    "slices": 3,
+    "pizzas": 7,
+    "trips": 2,
+    "good": 61,
+    "mistakes": [],
+    "hints": [],
+    "active": "ninoSchoolMapOnly v3On v3Shell v3Les",
+    "opened": [],
+    "v2ResultOpen": false
+   },
+   "result": {
+    "score": "7 / 10",
+    "nino": true,
+    "marks": 10,
+    "bad": [
+     {
+      "id": "city-9",
+      "name": "Rome"
+     },
+     {
+      "id": "city-8",
+      "name": "Pisa"
+     },
+     {
+      "id": "city-18",
+      "name": "La Spezia"
+     }
+    ],
+    "marksOnMap": true,
+    "fouten": [
+     "Romejij: Fout",
+     "Pisajij: Catanzaro",
+     "La Speziaovergeslagen"
+    ],
+    "actions": [
+     "Oefen deze fouten",
+     "Nieuwe toets",
+     "Kopieer",
+     "E-mail",
+     "Print"
+    ],
+    "primary": "Oefen deze fouten",
+    "stored": {
+     "schema": 1,
+     "results": [
+      {
+       "at": "2026-11-09T22:45:33.524Z",
+       "chapters": [
+        "city1",
+        "city2",
+        "city3",
+        "city4"
+       ],
+       "form": "both",
+       "length": 10,
+       "total": 10,
+       "correct": 7,
+       "items": [
+        {
+         "id": "city-12",
+         "mode": "point",
+         "ok": true
+        },
+        {
+         "id": "city-9",
+         "mode": "write",
+         "ok": false,
+         "given": "Fout"
+        },
+        {
+         "id": "city-6",
+         "mode": "write",
+         "ok": true
+        },
+        {
+         "id": "city-17",
+         "mode": "point",
+         "ok": true
+        },
+        {
+         "id": "city-8",
+         "mode": "point",
+         "ok": false,
+         "given": "Catanzaro"
+        },
+        {
+         "id": "city-13",
+         "mode": "write",
+         "ok": true
+        },
+        {
+         "id": "city-18",
+         "mode": "write",
+         "ok": false,
+         "given": null
+        },
+        {
+         "id": "city-5",
+         "mode": "point",
+         "ok": true
+        },
+        {
+         "id": "city-21",
+         "mode": "point",
+         "ok": true
+        },
+        {
+         "id": "city-16",
+         "mode": "write",
+         "ok": true
+        }
+       ]
+      }
+     ]
+    },
+    "mail": "mailto:?subject=Mijn%20NINO-toetsscore&body=Ik%20heb%20de%20NINO-toets%20Topografie%20Itali%C3%AB%20gemaakt.%0AOnderwerp%3A%20Steden%201%E2%80%936%2C%20Steden%207%E2%80%9312%2C%20Extra%20steden%2013%E2%80%9318%2C%20Extra%20steden%2019%E2%80%9323%0AScore%3A%207%20van%2010%20goed.",
+    "hOverflow": false,
+    "small": []
+   },
+   "after": {
+    "examCorrect": 7,
+    "examTotal": 10,
+    "slices": 3,
+    "pizzas": 7,
+    "trips": 2,
+    "good": 61,
+    "opened": [],
+    "view": "toetsResult",
+    "tab": "toets",
+    "active": "v3ToetsScore",
+    "v2ResultOpen": false
+   },
+   "answers": [
+    [
+     "city-12",
+     "point",
+     "ok"
+    ],
+    [
+     "city-9",
+     "write",
+     "wrong"
+    ],
+    [
+     "city-6",
+     "write",
+     "ok"
+    ],
+    [
+     "city-17",
+     "point",
+     "ok"
+    ],
+    [
+     "city-8",
+     "point",
+     "wrong"
+    ],
+    [
+     "city-13",
+     "write",
+     "ok"
+    ],
+    [
+     "city-18",
+     "write",
+     "skip"
+    ],
+    [
+     "city-5",
+     "point",
+     "ok"
+    ],
+    [
+     "city-21",
+     "point",
+     "ok"
+    ],
+    [
+     "city-16",
+     "write",
+     "ok"
+    ]
+   ],
+   "oefen": {
+    "mode": "point",
+    "group": "mistakes",
+    "tab": "oefenen"
+   },
+   "pageErrors": []
+  },
+  "telefoon-320": {
+   "setup": {
+    "chapters": [
+     "city1",
+     "city2",
+     "city3",
+     "city4"
+    ],
+    "completed": [
+     "city1",
+     "city2",
+     "city3",
+     "city4"
+    ],
+    "form": [
+     "both"
+    ],
+    "length": [
+     "10"
+    ],
+    "start": true,
+    "active": "v3ToetsTitle"
+   },
+   "start": {
+    "mode": "exam",
+    "view": "toets",
+    "tab": "toets",
+    "type": "exam",
+    "count": "1 / 10",
+    "q": "city-13",
+    "qmode": "point",
+    "answered": false,
+    "examTotal": 10,
+    "examAnswered": 0,
+    "examCorrect": 0,
+    "examEnded": false,
+    "slices": 3,
+    "pizzas": 7,
+    "trips": 2,
+    "good": 61,
+    "mistakes": [],
+    "hints": [],
+    "active": "ninoSchoolMapOnly v3On v3Shell v3Les",
+    "opened": [],
+    "v2ResultOpen": false
+   },
+   "result": {
+    "score": "7 / 10",
+    "nino": true,
+    "marks": 10,
+    "bad": [
+     {
+      "id": "city-16",
+      "name": "Catanzaro"
+     },
+     {
+      "id": "city-20",
+      "name": "Modena"
+     },
+     {
+      "id": "city-12",
+      "name": "Verona"
+     }
+    ],
+    "marksOnMap": true,
+    "fouten": [
+     "Catanzarojij: Fout",
+     "Modenajij: Fout",
+     "Veronaovergeslagen"
+    ],
+    "actions": [
+     "Oefen deze fouten",
+     "Nieuwe toets",
+     "Kopieer",
+     "E-mail",
+     "Print"
+    ],
+    "primary": "Oefen deze fouten",
+    "stored": {
+     "schema": 1,
+     "results": [
+      {
+       "at": "2026-11-09T22:45:46.674Z",
+       "chapters": [
+        "city1",
+        "city2",
+        "city3",
+        "city4"
+       ],
+       "form": "both",
+       "length": 10,
+       "total": 10,
+       "correct": 7,
+       "items": [
+        {
+         "id": "city-13",
+         "mode": "point",
+         "ok": true
+        },
+        {
+         "id": "city-16",
+         "mode": "write",
+         "ok": false,
+         "given": "Fout"
+        },
+        {
+         "id": "city-4",
+         "mode": "write",
+         "ok": true
+        },
+        {
+         "id": "city-2",
+         "mode": "point",
+         "ok": true
+        },
+        {
+         "id": "city-20",
+         "mode": "write",
+         "ok": false,
+         "given": "Fout"
+        },
+        {
+         "id": "city-1",
+         "mode": "point",
+         "ok": true
+        },
+        {
+         "id": "city-12",
+         "mode": "point",
+         "ok": false,
+         "given": null
+        },
+        {
+         "id": "city-8",
+         "mode": "write",
+         "ok": true
+        },
+        {
+         "id": "city-21",
+         "mode": "write",
+         "ok": true
+        },
+        {
+         "id": "city-11",
+         "mode": "point",
+         "ok": true
+        }
+       ]
+      }
+     ]
+    },
+    "mail": "mailto:?subject=Mijn%20NINO-toetsscore&body=Ik%20heb%20de%20NINO-toets%20Topografie%20Itali%C3%AB%20gemaakt.%0AOnderwerp%3A%20Steden%201%E2%80%936%2C%20Steden%207%E2%80%9312%2C%20Extra%20steden%2013%E2%80%9318%2C%20Extra%20steden%2019%E2%80%9323%0AScore%3A%207%20van%2010%20goed.",
+    "hOverflow": false,
+    "small": []
+   },
+   "after": {
+    "examCorrect": 7,
+    "examTotal": 10,
+    "slices": 3,
+    "pizzas": 7,
+    "trips": 2,
+    "good": 61,
+    "opened": [],
+    "view": "toetsResult",
+    "tab": "toets",
+    "active": "v3ToetsScore",
+    "v2ResultOpen": false
+   },
+   "answers": [
+    [
+     "city-13",
+     "point",
+     "ok"
+    ],
+    [
+     "city-16",
+     "write",
+     "wrong"
+    ],
+    [
+     "city-4",
+     "write",
+     "ok"
+    ],
+    [
+     "city-2",
+     "point",
+     "ok"
+    ],
+    [
+     "city-20",
+     "write",
+     "wrong"
+    ],
+    [
+     "city-1",
+     "point",
+     "ok"
+    ],
+    [
+     "city-12",
+     "point",
+     "skip"
+    ],
+    [
+     "city-8",
+     "write",
+     "ok"
+    ],
+    [
+     "city-21",
+     "write",
+     "ok"
+    ],
+    [
+     "city-11",
+     "point",
+     "ok"
+    ]
+   ],
+   "oefen": {
+    "mode": "point",
+    "group": "mistakes",
+    "tab": "oefenen"
+   },
+   "pageErrors": []
+  }
+ },
+ "errors": [],
+ "summary": {
+  "viewports": 5,
+  "pass": true
+ }
+}

@@ -85,8 +85,8 @@ async def main():
             if back != 'instellingen': fail(f'instellingen: focus back on {back!r}')
             # Oefenen → Start: free practice in the shell; Reis and back restores the same question.
             await tab('oefenen')
-            await pg.locator('.v3Forms [data-form=point]').click(); await pg.locator('.v3Chips [data-group=city1]').click()
-            await pg.locator('.v3Start').click(); await pg.wait_for_timeout(900)
+            await pg.locator('.v3View-oefenen .v3Forms [data-form=point]').click(); await pg.locator('.v3View-oefenen .v3Chips [data-group=city1]').click()
+            await pg.locator('.v3View-oefenen .v3Start').click(); await pg.wait_for_timeout(900)
             s = await nav(); check('vrij', s, 'oefenen', True); q = s['q']
             if s['mode'] != 'point': fail(f'vrij: mode {s["mode"]}')
             await pg.screenshot(path=str(OUT / f'vrij-oefenen-{name}.png'))

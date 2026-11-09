@@ -395,3 +395,19 @@ Reservekopieën en reset horen in het algemene instellingenmenu. Wis voortgang b
 - **Focus:** na het sluiten gaat de focus terug naar het antwoordveld, met concept en selectie, als dat vóór het openen focus had. Anders gaat hij naar de V3-knop die het venster opende.
 - **Tab Oefenen opnieuw tikken** tijdens een oefening gaat terug naar de Oefenen-keuze, net als de terugknop. Tijdens een lopende toets doet een tik op Toets niets, zodat een toets niet per ongeluk stopt.
 - **Nieuwe drempels of opslag:** geen.
+
+## 2026-11-09 — V3.0 Toets: motor, geen beloningen, opslag uitslagen
+
+- **Motor:** de gewone V2-toets (`resetExam`, `next`, `grade`, `finishExam`, `#testFormat`). V3 stelt alleen in. De gekozen hoofdstukken, geschud en ingekort tot de lengte, gaan als pool naar één aanroep van `resetExam` (via `groupItems`). De vorm is `#testFormat` (Aanwijzen, Namen schrijven of Beide). Beoordelen, foutenlijst, skill-historie en dagdoel blijven bij V2.
+- **Standaard bij instellen:** de afgeronde hoofdstukken (stage 3); zijn er geen, dan alle. Lengte 10, 20 of Alle; 10 en 20 staan er alleen als de pool groter is.
+- **Geen beloningen:** zolang de V2-toets loopt, geeft `TopoLearning.award` "geen beloning" terug. Er komt geen pizzapunt, geen pizza, geen rit en geen ophoging van de teller `good` bij; er is geen beloningsdialoog en geen goud. Het dagdoel telt goede toetsantwoorden wel mee (V2-gedrag, ongewijzigd).
+- **Resultaat:** V3 toont het in plaats van de V2-dialoog `.ninoExamResult`, die tijdens een V3-toets niet opent. Het resultaat bestaat uit:
+  - de score (V2 `examCorrect` / `examTotal`) en één Nino-pose (V2 `TopoArt`: `success` bij alles goed, anders `encourage`);
+  - de echte kaart met ✓/× per gevraagde plek, met de naam bij ×;
+  - de foutenlijst met het eigen antwoord of "overgeslagen";
+  - **Oefen deze fouten**, dat de bestaande V2-groep "Mijn fouten" opent;
+  - Kopieer en E-mail, met dezelfde tekst als V2 maar de echte hoofdstukken als onderwerp;
+  - **Print**, een A4-blad met naam, datum, score, kaart en fouten.
+- **Opslag:** sleutel `topo-v3-toetsen-v1` met `{schema:1, results:[…]}`, de nieuwste eerst en maximaal 10. Per uitslag worden opgeslagen: datum, hoofdstukken, vorm, lengte, totaal, goed, en per vraag id, vorm, goed/fout en het gegeven antwoord (≤ 80 tekens). Ongeldige data telt als geen uitslagen. Dit staat los van de V2-voortgang; V3.0 kent één profiel, dus één lijst.
+- **Reservekopie:** de V2-export krijgt het veld `v3Toetsen` (V2-import negeert onbekende velden, dus oude en nieuwe kopieën blijven in beide richtingen geldig). Na een geslaagde V2-import vervangt een geldige `v3Toetsen` de opgeslagen uitslagen. Een oude kopie zonder dat veld laat de uitslagen staan. **Begin helemaal opnieuw** wist de uitslagen mee.
+- **Telefoon (fix bij deze test gevonden):** na het typen komen de tabbalk en het antwoordblad pas na 0,4 s terug. Daardoor valt een tik op Controleer of Overslaan nog op de knop waar hij begon.

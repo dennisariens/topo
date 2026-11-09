@@ -1,14 +1,14 @@
 {
  "html": "output/html/TOPO-V3-Reis-Preview.html",
- "sha256": "48c01e142cb9d1ec0887dd3df6af27a44d4c2c9780e4a57363221991315978b8",
+ "sha256": "382e9768045ee9327c4be83aee5fea5576a76af21bfba175c1a873a40c819973",
  "indexSha256": "3aced3c31259011b0af2947c78f71965cb4beb2e88c69d1663e61792b0304f5a",
  "runs": {
   "desktop": {
    "beats": {
     "discover": {
      "mode": "discover",
-     "id": "city-7",
-     "name": "Palermo",
+     "id": "city-8",
+     "name": "Pisa",
      "answered": false,
      "paused": false,
      "kind": "discover",
@@ -27,7 +27,7 @@
      "dialogs": [],
      "message": "Kijk goed naar de plek en zeg de naam.",
      "messageClass": "message ",
-     "prompt": "Palermo",
+     "prompt": "Pisa",
      "meter": "6 van 8",
      "active": "ninoSchoolMapOnly v3On v3Shell lessonFocus v3Les",
      "layout": {
@@ -44,8 +44,8 @@
     },
     "point-q": {
      "mode": "point",
-     "id": "city-11",
-     "name": "Venetië",
+     "id": "city-10",
+     "name": "Turijn",
      "answered": false,
      "paused": false,
      "kind": "point",
@@ -64,7 +64,7 @@
      "dialogs": [],
      "message": "Jij bent aan zet.",
      "messageClass": "message ",
-     "prompt": "Waar ligt Venetië?",
+     "prompt": "Waar ligt Turijn?",
      "meter": "6 van 8",
      "active": "ninoSchoolMapOnly v3On v3Shell v3Les lessonFocus",
      "layout": {
@@ -79,8 +79,8 @@
     },
     "point-wrong": {
      "mode": "point",
-     "id": "city-11",
-     "name": "Venetië",
+     "id": "city-10",
+     "name": "Turijn",
      "answered": true,
      "paused": false,
      "kind": "point",
@@ -99,9 +99,9 @@
      "currentStep": "point",
      "count": "1 / 7",
      "dialogs": [],
-     "message": "Dat was Bari. Gezocht: Venetië.",
+     "message": "Dat was Bari. Gezocht: Turijn.",
      "messageClass": "message bad",
-     "prompt": "Waar ligt Venetië?",
+     "prompt": "Waar ligt Turijn?",
      "meter": "6 van 8",
      "active": {},
      "layout": {
@@ -118,8 +118,8 @@
     },
     "point-ok": {
      "mode": "point",
-     "id": "city-10",
-     "name": "Turijn",
+     "id": "city-9",
+     "name": "Rome",
      "answered": true,
      "paused": false,
      "kind": "point",
@@ -140,7 +140,7 @@
      "dialogs": [],
      "message": "Goed gevonden!",
      "messageClass": "message good",
-     "prompt": "Waar ligt Turijn?",
+     "prompt": "Waar ligt Rome?",
      "meter": "7 van 8",
      "active": {},
      "layout": {
@@ -157,8 +157,8 @@
     },
     "pizza": {
      "mode": "point",
-     "id": "city-7",
-     "name": "Palermo",
+     "id": "city-8",
+     "name": "Pisa",
      "answered": true,
      "paused": false,
      "kind": "point",
@@ -181,7 +181,7 @@
      ],
      "message": "Perfetto! Een pizza compleet.",
      "messageClass": "message good",
-     "prompt": "Waar ligt Palermo?",
+     "prompt": "Waar ligt Pisa?",
      "meter": "0 van 8",
      "active": "button primary",
      "layout": {
@@ -199,8 +199,8 @@
     },
     "pause": {
      "mode": "point",
-     "id": "city-9",
-     "name": "Rome",
+     "id": "city-11",
+     "name": "Venetië",
      "answered": true,
      "paused": true,
      "kind": "point",
@@ -219,7 +219,7 @@
      "dialogs": [],
      "message": "Goed gevonden!",
      "messageClass": "message good",
-     "prompt": "Waar ligt Rome?",
+     "prompt": "Waar ligt Venetië?",
      "meter": "3 van 8",
      "active": "finishTitle",
      "layout": {
@@ -273,8 +273,8 @@
     },
     "write-q": {
      "mode": "write",
-     "id": "city-10",
-     "name": "Turijn",
+     "id": "city-7",
+     "name": "Palermo",
      "answered": false,
      "paused": false,
      "kind": "write",
@@ -310,8 +310,8 @@
     },
     "write-wrong": {
      "mode": "write",
-     "id": "city-10",
-     "name": "Turijn",
+     "id": "city-7",
+     "name": "Palermo",
      "answered": true,
      "paused": false,
      "kind": "write",
@@ -330,7 +330,7 @@
      "currentStep": "write",
      "count": "1 / 7",
      "dialogs": [],
-     "message": "De juiste naam is Turijn.",
+     "message": "De juiste naam is Palermo.",
      "messageClass": "message bad",
      "prompt": "Hoe heet deze plek?",
      "meter": "4 van 8",
@@ -349,8 +349,8 @@
     },
     "write-ok": {
      "mode": "write",
-     "id": "city-9",
-     "name": "Rome",
+     "id": "city-12",
+     "name": "Verona",
      "answered": true,
      "paused": false,
      "kind": "write",
@@ -388,8 +388,8 @@
     },
     "vespa": {
      "mode": "write",
-     "id": "city-8",
-     "name": "Pisa",
+     "id": "city-10",
+     "name": "Turijn",
      "answered": true,
      "paused": false,
      "kind": "write",
@@ -634,8 +634,17 @@
     "pointWrongNotOk": true,
     "pointTaps": [
      {
-      "x": 507.41485595703125,
-      "y": 393.64630126953125,
+      "x": 654.8886413574219,
+      "y": 529.8115234375,
+      "onMap": true,
+      "v3": false,
+      "picker": true,
+      "via": "tap",
+      "ok": true
+     },
+     {
+      "x": 591.1205444335938,
+      "y": 451.6319885253906,
       "onMap": true,
       "v3": false,
       "via": "tap",
@@ -658,25 +667,16 @@
       "ok": true
      },
      {
-      "x": 591.1205444335938,
-      "y": 451.6319885253906,
-      "onMap": true,
-      "v3": false,
-      "via": "tap",
-      "ok": true
-     },
-     {
-      "x": 654.8886413574219,
-      "y": 529.8115234375,
-      "onMap": true,
-      "v3": false,
-      "picker": true,
-      "via": "tap",
-      "ok": true
-     },
-     {
       "x": 650.4041748046875,
       "y": 377.93133544921875,
+      "onMap": true,
+      "v3": false,
+      "via": "tap",
+      "ok": true
+     },
+     {
+      "x": 507.41485595703125,
+      "y": 393.64630126953125,
       "onMap": true,
       "v3": false,
       "via": "tap",
@@ -689,12 +689,12 @@
     "writeWrongNotOk": true,
     "draft": {
      "mid": {
-      "v": "Rom",
+      "v": "Ver",
       "f": true,
       "shell": "true"
      },
      "end": {
-      "v": "Rom",
+      "v": "Ver",
       "f": true,
       "shell": "false"
      },
@@ -756,1486 +756,6 @@
    }
   },
   "ipad-landscape": {
-   "beats": {
-    "discover": {
-     "mode": "discover",
-     "id": "city-11",
-     "name": "Venetië",
-     "answered": false,
-     "paused": false,
-     "kind": "discover",
-     "done": false,
-     "chapter": "city2",
-     "stage": 1,
-     "last": null,
-     "slices": 6,
-     "pizzas": 1,
-     "trips": 0,
-     "good": 14,
-     "v3": true,
-     "focusShell": true,
-     "currentStep": "discover",
-     "count": "1 / 6",
-     "dialogs": [],
-     "message": "Kijk goed naar de plek en zeg de naam.",
-     "messageClass": "message ",
-     "prompt": "Venetië",
-     "meter": "6 van 8",
-     "active": "ninoSchoolMapOnly v3On v3Shell lessonFocus v3Les",
-     "layout": {
-      "primaries": [
-       "Bekeken · verder →"
-      ],
-      "overlaps": [],
-      "clipped": [],
-      "small": [],
-      "v2Chrome": [],
-      "sheetCollapsed": false,
-      "horizontalOverflow": false
-     }
-    },
-    "point-q": {
-     "mode": "point",
-     "id": "city-7",
-     "name": "Palermo",
-     "answered": false,
-     "paused": false,
-     "kind": "point",
-     "done": false,
-     "chapter": "city2",
-     "stage": 1,
-     "last": null,
-     "slices": 6,
-     "pizzas": 1,
-     "trips": 0,
-     "good": 14,
-     "v3": true,
-     "focusShell": true,
-     "currentStep": "point",
-     "count": "1 / 6",
-     "dialogs": [],
-     "message": "Jij bent aan zet.",
-     "messageClass": "message ",
-     "prompt": "Waar ligt Palermo?",
-     "meter": "6 van 8",
-     "active": "ninoSchoolMapOnly v3On v3Shell v3Les lessonFocus",
-     "layout": {
-      "primaries": [],
-      "overlaps": [],
-      "clipped": [],
-      "small": [],
-      "v2Chrome": [],
-      "sheetCollapsed": false,
-      "horizontalOverflow": false
-     }
-    },
-    "point-wrong": {
-     "mode": "point",
-     "id": "city-7",
-     "name": "Palermo",
-     "answered": true,
-     "paused": false,
-     "kind": "point",
-     "done": false,
-     "chapter": "city2",
-     "stage": 1,
-     "last": {
-      "ok": false
-     },
-     "slices": 6,
-     "pizzas": 1,
-     "trips": 0,
-     "good": 14,
-     "v3": true,
-     "focusShell": true,
-     "currentStep": "point",
-     "count": "1 / 7",
-     "dialogs": [],
-     "message": "Dat was Bari. Gezocht: Palermo.",
-     "messageClass": "message bad",
-     "prompt": "Waar ligt Palermo?",
-     "meter": "6 van 8",
-     "active": {},
-     "layout": {
-      "primaries": [
-       "Volgende →"
-      ],
-      "overlaps": [],
-      "clipped": [],
-      "small": [],
-      "v2Chrome": [],
-      "sheetCollapsed": false,
-      "horizontalOverflow": false
-     }
-    },
-    "point-ok": {
-     "mode": "point",
-     "id": "city-12",
-     "name": "Verona",
-     "answered": true,
-     "paused": false,
-     "kind": "point",
-     "done": false,
-     "chapter": "city2",
-     "stage": 1,
-     "last": {
-      "ok": true
-     },
-     "slices": 7,
-     "pizzas": 1,
-     "trips": 0,
-     "good": 15,
-     "v3": true,
-     "focusShell": true,
-     "currentStep": "point",
-     "count": "2 / 7",
-     "dialogs": [],
-     "message": "Goed gevonden!",
-     "messageClass": "message good",
-     "prompt": "Waar ligt Verona?",
-     "meter": "7 van 8",
-     "active": {},
-     "layout": {
-      "primaries": [
-       "Volgende →"
-      ],
-      "overlaps": [],
-      "clipped": [],
-      "small": [],
-      "v2Chrome": [],
-      "sheetCollapsed": false,
-      "horizontalOverflow": false
-     }
-    },
-    "pizza": {
-     "mode": "point",
-     "id": "city-8",
-     "name": "Pisa",
-     "answered": true,
-     "paused": false,
-     "kind": "point",
-     "done": false,
-     "chapter": "city2",
-     "stage": 1,
-     "last": {
-      "ok": true
-     },
-     "slices": 0,
-     "pizzas": 2,
-     "trips": 0,
-     "good": 16,
-     "v3": true,
-     "focusShell": true,
-     "currentStep": "point",
-     "count": "3 / 7",
-     "dialogs": [
-      "pizzaCelebration"
-     ],
-     "message": "Perfetto! Een pizza compleet.",
-     "messageClass": "message good",
-     "prompt": "Waar ligt Pisa?",
-     "meter": "0 van 8",
-     "active": "button primary",
-     "layout": {
-      "primaries": [
-       "Verder",
-       "Volgende →"
-      ],
-      "overlaps": [],
-      "clipped": [],
-      "small": [],
-      "v2Chrome": [],
-      "sheetCollapsed": false,
-      "horizontalOverflow": false
-     }
-    },
-    "pause": {
-     "mode": "point",
-     "id": "city-10",
-     "name": "Turijn",
-     "answered": true,
-     "paused": true,
-     "kind": "point",
-     "done": false,
-     "chapter": "city2",
-     "stage": 1,
-     "last": null,
-     "slices": 3,
-     "pizzas": 2,
-     "trips": 0,
-     "good": 19,
-     "v3": true,
-     "focusShell": false,
-     "currentStep": "point",
-     "count": "",
-     "dialogs": [],
-     "message": "Goed gevonden!",
-     "messageClass": "message good",
-     "prompt": "Waar ligt Turijn?",
-     "meter": "3 van 8",
-     "active": "finishTitle",
-     "layout": {
-      "primaries": [
-       "Volgende ronde →"
-      ],
-      "overlaps": [],
-      "clipped": [],
-      "small": [],
-      "v2Chrome": [],
-      "sheetCollapsed": false,
-      "horizontalOverflow": false
-     }
-    },
-    "point-done": {
-     "mode": "result",
-     "id": null,
-     "name": null,
-     "answered": true,
-     "paused": false,
-     "kind": "point",
-     "done": true,
-     "chapter": "city2",
-     "stage": 2,
-     "last": null,
-     "slices": 4,
-     "pizzas": 2,
-     "trips": 0,
-     "good": 20,
-     "v3": true,
-     "focusShell": false,
-     "currentStep": null,
-     "count": "",
-     "dialogs": [],
-     "message": "Klaar voor de volgende stap.",
-     "messageClass": "message good",
-     "prompt": "Les afgerond!",
-     "meter": "4 van 8",
-     "active": "finishTitle",
-     "layout": {
-      "primaries": [
-       "Volgende les →"
-      ],
-      "overlaps": [],
-      "clipped": [],
-      "small": [],
-      "v2Chrome": [],
-      "sheetCollapsed": false,
-      "horizontalOverflow": false
-     }
-    },
-    "write-q": {
-     "mode": "write",
-     "id": "city-11",
-     "name": "Venetië",
-     "answered": false,
-     "paused": false,
-     "kind": "write",
-     "done": false,
-     "chapter": "city2",
-     "stage": 2,
-     "last": null,
-     "slices": 4,
-     "pizzas": 2,
-     "trips": 0,
-     "good": 20,
-     "v3": true,
-     "focusShell": true,
-     "currentStep": "write",
-     "count": "1 / 6",
-     "dialogs": [],
-     "message": "Jij bent aan zet.",
-     "messageClass": "message ",
-     "prompt": "Hoe heet deze plek?",
-     "meter": "4 van 8",
-     "active": "ninoSchoolMapOnly v3On v3Shell v3Les lessonFocus",
-     "layout": {
-      "primaries": [
-       "Controleer"
-      ],
-      "overlaps": [],
-      "clipped": [],
-      "small": [],
-      "v2Chrome": [],
-      "sheetCollapsed": false,
-      "horizontalOverflow": false
-     }
-    },
-    "write-wrong": {
-     "mode": "write",
-     "id": "city-11",
-     "name": "Venetië",
-     "answered": true,
-     "paused": false,
-     "kind": "write",
-     "done": false,
-     "chapter": "city2",
-     "stage": 2,
-     "last": {
-      "ok": false
-     },
-     "slices": 4,
-     "pizzas": 2,
-     "trips": 0,
-     "good": 20,
-     "v3": true,
-     "focusShell": true,
-     "currentStep": "write",
-     "count": "1 / 7",
-     "dialogs": [],
-     "message": "De juiste naam is Venetië.",
-     "messageClass": "message bad",
-     "prompt": "Hoe heet deze plek?",
-     "meter": "4 van 8",
-     "active": "ninoSchoolMapOnly v3On v3Shell v3Les lessonFocus",
-     "layout": {
-      "primaries": [
-       "Volgende →"
-      ],
-      "overlaps": [],
-      "clipped": [],
-      "small": [],
-      "v2Chrome": [],
-      "sheetCollapsed": false,
-      "horizontalOverflow": false
-     }
-    },
-    "write-ok": {
-     "mode": "write",
-     "id": "city-7",
-     "name": "Palermo",
-     "answered": true,
-     "paused": false,
-     "kind": "write",
-     "done": false,
-     "chapter": "city2",
-     "stage": 2,
-     "last": {
-      "ok": true
-     },
-     "slices": 5,
-     "pizzas": 2,
-     "trips": 0,
-     "good": 21,
-     "v3": true,
-     "focusShell": true,
-     "currentStep": "write",
-     "count": "2 / 7",
-     "dialogs": [],
-     "message": "Goed geschreven!",
-     "messageClass": "message good",
-     "prompt": "Hoe heet deze plek?",
-     "meter": "5 van 8",
-     "active": "ninoSchoolMapOnly v3On v3Shell v3Les lessonFocus",
-     "layout": {
-      "primaries": [
-       "Volgende →"
-      ],
-      "overlaps": [],
-      "clipped": [],
-      "small": [],
-      "v2Chrome": [],
-      "sheetCollapsed": false,
-      "horizontalOverflow": false
-     }
-    },
-    "vespa": {
-     "mode": "write",
-     "id": "city-9",
-     "name": "Rome",
-     "answered": true,
-     "paused": false,
-     "kind": "write",
-     "done": false,
-     "chapter": "city2",
-     "stage": 2,
-     "last": {
-      "ok": true
-     },
-     "slices": 0,
-     "pizzas": 3,
-     "trips": 1,
-     "good": 24,
-     "v3": true,
-     "focusShell": true,
-     "currentStep": "write",
-     "count": "5 / 7",
-     "dialogs": [
-      "vespaRide"
-     ],
-     "message": "Andiamo! Nino rijdt naar Florence.",
-     "messageClass": "message good",
-     "prompt": "Hoe heet deze plek?",
-     "meter": "0 van 8",
-     "active": "button",
-     "layout": {
-      "primaries": [
-       "Volgende →"
-      ],
-      "overlaps": [],
-      "clipped": [],
-      "small": [],
-      "v2Chrome": [],
-      "sheetCollapsed": false,
-      "horizontalOverflow": false
-     }
-    },
-    "finish": {
-     "mode": "result",
-     "id": null,
-     "name": null,
-     "answered": true,
-     "paused": false,
-     "kind": "write",
-     "done": true,
-     "chapter": "city2",
-     "stage": 3,
-     "last": null,
-     "slices": 2,
-     "pizzas": 3,
-     "trips": 1,
-     "good": 26,
-     "v3": true,
-     "focusShell": false,
-     "currentStep": null,
-     "count": "",
-     "dialogs": [],
-     "message": "Klaar voor de volgende stap.",
-     "messageClass": "message good",
-     "prompt": "Deze halte is afgerond!",
-     "meter": "2 van 8",
-     "active": "finishTitle",
-     "layout": {
-      "primaries": [
-       "Bekijk in Reisboekje"
-      ],
-      "overlaps": [],
-      "clipped": [],
-      "small": [],
-      "v2Chrome": [],
-      "sheetCollapsed": false,
-      "horizontalOverflow": false
-     }
-    }
-   },
-   "layout": {
-    "discover": {
-     "primaries": [
-      "Bekeken · verder →"
-     ],
-     "overlaps": [],
-     "clipped": [],
-     "small": [],
-     "v2Chrome": [],
-     "sheetCollapsed": false,
-     "horizontalOverflow": false
-    },
-    "point-q": {
-     "primaries": [],
-     "overlaps": [],
-     "clipped": [],
-     "small": [],
-     "v2Chrome": [],
-     "sheetCollapsed": false,
-     "horizontalOverflow": false
-    },
-    "point-wrong": {
-     "primaries": [
-      "Volgende →"
-     ],
-     "overlaps": [],
-     "clipped": [],
-     "small": [],
-     "v2Chrome": [],
-     "sheetCollapsed": false,
-     "horizontalOverflow": false
-    },
-    "point-ok": {
-     "primaries": [
-      "Volgende →"
-     ],
-     "overlaps": [],
-     "clipped": [],
-     "small": [],
-     "v2Chrome": [],
-     "sheetCollapsed": false,
-     "horizontalOverflow": false
-    },
-    "pizza": {
-     "primaries": [
-      "Verder",
-      "Volgende →"
-     ],
-     "overlaps": [],
-     "clipped": [],
-     "small": [],
-     "v2Chrome": [],
-     "sheetCollapsed": false,
-     "horizontalOverflow": false
-    },
-    "pause": {
-     "primaries": [
-      "Volgende ronde →"
-     ],
-     "overlaps": [],
-     "clipped": [],
-     "small": [],
-     "v2Chrome": [],
-     "sheetCollapsed": false,
-     "horizontalOverflow": false
-    },
-    "point-done": {
-     "primaries": [
-      "Volgende les →"
-     ],
-     "overlaps": [],
-     "clipped": [],
-     "small": [],
-     "v2Chrome": [],
-     "sheetCollapsed": false,
-     "horizontalOverflow": false
-    },
-    "write-q": {
-     "primaries": [
-      "Controleer"
-     ],
-     "overlaps": [],
-     "clipped": [],
-     "small": [],
-     "v2Chrome": [],
-     "sheetCollapsed": false,
-     "horizontalOverflow": false
-    },
-    "write-wrong": {
-     "primaries": [
-      "Volgende →"
-     ],
-     "overlaps": [],
-     "clipped": [],
-     "small": [],
-     "v2Chrome": [],
-     "sheetCollapsed": false,
-     "horizontalOverflow": false
-    },
-    "write-ok": {
-     "primaries": [
-      "Volgende →"
-     ],
-     "overlaps": [],
-     "clipped": [],
-     "small": [],
-     "v2Chrome": [],
-     "sheetCollapsed": false,
-     "horizontalOverflow": false
-    },
-    "vespa": {
-     "primaries": [
-      "Volgende →"
-     ],
-     "overlaps": [],
-     "clipped": [],
-     "small": [],
-     "v2Chrome": [],
-     "sheetCollapsed": false,
-     "horizontalOverflow": false
-    },
-    "finish": {
-     "primaries": [
-      "Bekijk in Reisboekje"
-     ],
-     "overlaps": [],
-     "clipped": [],
-     "small": [],
-     "v2Chrome": [],
-     "sheetCollapsed": false,
-     "horizontalOverflow": false
-    }
-   },
-   "events": [
-    {
-     "dialog": "pizzaCelebration",
-     "pizzasBefore": 1,
-     "pizzasAfter": 2,
-     "tripsBefore": 0,
-     "tripsAfter": 0
-    },
-    {
-     "dialog": "pizzaCelebration",
-     "pizzasBefore": 2,
-     "pizzasAfter": 3,
-     "tripsBefore": 0,
-     "tripsAfter": 1
-    },
-    {
-     "dialog": "vespaRide",
-     "pizzasBefore": 2,
-     "pizzasAfter": 3,
-     "tripsBefore": 0,
-     "tripsAfter": 1
-    },
-    {
-     "dialog": "vespaRide",
-     "pizzasBefore": 2,
-     "pizzasAfter": 3,
-     "tripsBefore": 0,
-     "tripsAfter": 1
-    }
-   ],
-   "checks": {
-    "discoverTitleIsPlace": true,
-    "discoverDoneScreen": true,
-    "pointWrongNotOk": true,
-    "pointTaps": [
-     {
-      "x": 591.1973876953125,
-      "y": 306.8659210205078,
-      "onMap": true,
-      "v3": false,
-      "via": "tap",
-      "ok": true
-     },
-     {
-      "x": 573.1202697753906,
-      "y": 380.6393585205078,
-      "onMap": true,
-      "v3": false,
-      "via": "tap",
-      "ok": true
-     },
-     {
-      "x": 632.4042358398438,
-      "y": 306.93833923339844,
-      "onMap": true,
-      "v3": false,
-      "via": "tap",
-      "ok": true
-     },
-     {
-      "x": 636.888671875,
-      "y": 458.8192901611328,
-      "onMap": true,
-      "v3": false,
-      "picker": true,
-      "via": "tap",
-      "ok": true
-     },
-     {
-      "x": 489.41416931152344,
-      "y": 322.6534118652344,
-      "onMap": true,
-      "v3": false,
-      "via": "tap",
-      "ok": true
-     },
-     {
-      "x": 663.4444580078125,
-      "y": 620.5716247558594,
-      "onMap": true,
-      "v3": false,
-      "freedMap": true,
-      "sheetOpenAfter": true,
-      "via": "tap",
-      "ok": true
-     }
-    ],
-    "pointOkFeedback": true,
-    "pointMeterMatchesState": true,
-    "pointFocusOnNext": true,
-    "writeWrongNotOk": true,
-    "writeOkFeedback": true,
-    "writeMeterMatchesState": true,
-    "writeFocusOnNext": true,
-    "finish": {
-     "title": "Deze halte is afgerond!",
-     "stamp": "stamp:city2",
-     "stampArt": true,
-     "buttons": [
-      "Bekijk in Reisboekje",
-      "Later",
-      "Terug naar mijn reis →"
-     ]
-    },
-    "bookOpens": {
-     "open": true,
-     "text": "Mijn reisboekje⚙Sluit boekjeMijn stempelsSteden 1–6AfgerondSteden 7–12AfgerondExtra steden 13–18Hier kun je verder lerenMijn stempelsExtra steden 19–23Nog te on",
-     "events": [
-      "pointerdown:btn",
-      "pointerup:btn",
-      "click:btn"
-     ]
-    },
-    "backToReis": {
-     "reis": true,
-     "selected": "city3",
-     "v3Les": false
-    }
-   },
-   "final": {
-    "mode": "result",
-    "id": null,
-    "name": null,
-    "answered": true,
-    "paused": false,
-    "kind": "write",
-    "done": true,
-    "chapter": "city2",
-    "stage": 3,
-    "last": null,
-    "slices": 2,
-    "pizzas": 3,
-    "trips": 1,
-    "good": 26,
-    "v3": false,
-    "focusShell": false,
-    "currentStep": null,
-    "count": "",
-    "dialogs": [],
-    "message": "Klaar voor de volgende stap.",
-    "messageClass": "message good",
-    "prompt": "Deze halte is afgerond!",
-    "meter": "2 van 8",
-    "active": "ninoSchoolMapOnly v3On v3Shell v3Home"
-   }
-  },
-  "ipad-portrait": {
-   "beats": {
-    "discover": {
-     "mode": "discover",
-     "id": "city-8",
-     "name": "Pisa",
-     "answered": false,
-     "paused": false,
-     "kind": "discover",
-     "done": false,
-     "chapter": "city2",
-     "stage": 1,
-     "last": null,
-     "slices": 6,
-     "pizzas": 1,
-     "trips": 0,
-     "good": 14,
-     "v3": true,
-     "focusShell": true,
-     "currentStep": "discover",
-     "count": "1 / 6",
-     "dialogs": [],
-     "message": "Kijk goed naar de plek en zeg de naam.",
-     "messageClass": "message ",
-     "prompt": "Pisa",
-     "meter": "6 van 8",
-     "active": "ninoSchoolMapOnly v3On v3Shell lessonFocus v3Les",
-     "layout": {
-      "primaries": [
-       "Bekeken · verder →"
-      ],
-      "overlaps": [],
-      "clipped": [],
-      "small": [],
-      "v2Chrome": [],
-      "sheetCollapsed": false,
-      "horizontalOverflow": false
-     }
-    },
-    "point-q": {
-     "mode": "point",
-     "id": "city-11",
-     "name": "Venetië",
-     "answered": false,
-     "paused": false,
-     "kind": "point",
-     "done": false,
-     "chapter": "city2",
-     "stage": 1,
-     "last": null,
-     "slices": 6,
-     "pizzas": 1,
-     "trips": 0,
-     "good": 14,
-     "v3": true,
-     "focusShell": true,
-     "currentStep": "point",
-     "count": "1 / 6",
-     "dialogs": [],
-     "message": "Jij bent aan zet.",
-     "messageClass": "message ",
-     "prompt": "Waar ligt Venetië?",
-     "meter": "6 van 8",
-     "active": "ninoSchoolMapOnly v3On v3Shell v3Les lessonFocus",
-     "layout": {
-      "primaries": [],
-      "overlaps": [],
-      "clipped": [],
-      "small": [],
-      "v2Chrome": [],
-      "sheetCollapsed": false,
-      "horizontalOverflow": false
-     }
-    },
-    "point-wrong": {
-     "mode": "point",
-     "id": "city-11",
-     "name": "Venetië",
-     "answered": true,
-     "paused": false,
-     "kind": "point",
-     "done": false,
-     "chapter": "city2",
-     "stage": 1,
-     "last": {
-      "ok": false
-     },
-     "slices": 6,
-     "pizzas": 1,
-     "trips": 0,
-     "good": 14,
-     "v3": true,
-     "focusShell": true,
-     "currentStep": "point",
-     "count": "1 / 7",
-     "dialogs": [],
-     "message": "Dat was Bari. Gezocht: Venetië.",
-     "messageClass": "message bad",
-     "prompt": "Waar ligt Venetië?",
-     "meter": "6 van 8",
-     "active": {},
-     "layout": {
-      "primaries": [
-       "Volgende →"
-      ],
-      "overlaps": [],
-      "clipped": [],
-      "small": [],
-      "v2Chrome": [],
-      "sheetCollapsed": false,
-      "horizontalOverflow": false
-     }
-    },
-    "point-ok": {
-     "mode": "point",
-     "id": "city-7",
-     "name": "Palermo",
-     "answered": true,
-     "paused": false,
-     "kind": "point",
-     "done": false,
-     "chapter": "city2",
-     "stage": 1,
-     "last": {
-      "ok": true
-     },
-     "slices": 7,
-     "pizzas": 1,
-     "trips": 0,
-     "good": 15,
-     "v3": true,
-     "focusShell": true,
-     "currentStep": "point",
-     "count": "2 / 7",
-     "dialogs": [],
-     "message": "Goed gevonden!",
-     "messageClass": "message good",
-     "prompt": "Waar ligt Palermo?",
-     "meter": "7 van 8",
-     "active": {},
-     "layout": {
-      "primaries": [
-       "Volgende →"
-      ],
-      "overlaps": [],
-      "clipped": [],
-      "small": [],
-      "v2Chrome": [],
-      "sheetCollapsed": false,
-      "horizontalOverflow": false
-     }
-    },
-    "pizza": {
-     "mode": "point",
-     "id": "city-9",
-     "name": "Rome",
-     "answered": true,
-     "paused": false,
-     "kind": "point",
-     "done": false,
-     "chapter": "city2",
-     "stage": 1,
-     "last": {
-      "ok": true
-     },
-     "slices": 0,
-     "pizzas": 2,
-     "trips": 0,
-     "good": 16,
-     "v3": true,
-     "focusShell": true,
-     "currentStep": "point",
-     "count": "3 / 7",
-     "dialogs": [
-      "pizzaCelebration"
-     ],
-     "message": "Perfetto! Een pizza compleet.",
-     "messageClass": "message good",
-     "prompt": "Waar ligt Rome?",
-     "meter": "0 van 8",
-     "active": "button primary",
-     "layout": {
-      "primaries": [
-       "Verder",
-       "Volgende →"
-      ],
-      "overlaps": [],
-      "clipped": [],
-      "small": [],
-      "v2Chrome": [],
-      "sheetCollapsed": false,
-      "horizontalOverflow": false
-     }
-    },
-    "pause": {
-     "mode": "point",
-     "id": "city-8",
-     "name": "Pisa",
-     "answered": true,
-     "paused": true,
-     "kind": "point",
-     "done": false,
-     "chapter": "city2",
-     "stage": 1,
-     "last": null,
-     "slices": 3,
-     "pizzas": 2,
-     "trips": 0,
-     "good": 19,
-     "v3": true,
-     "focusShell": false,
-     "currentStep": "point",
-     "count": "",
-     "dialogs": [],
-     "message": "Goed gevonden!",
-     "messageClass": "message good",
-     "prompt": "Waar ligt Pisa?",
-     "meter": "3 van 8",
-     "active": "finishTitle",
-     "layout": {
-      "primaries": [
-       "Volgende ronde →"
-      ],
-      "overlaps": [],
-      "clipped": [],
-      "small": [],
-      "v2Chrome": [],
-      "sheetCollapsed": false,
-      "horizontalOverflow": false
-     }
-    },
-    "point-done": {
-     "mode": "result",
-     "id": null,
-     "name": null,
-     "answered": true,
-     "paused": false,
-     "kind": "point",
-     "done": true,
-     "chapter": "city2",
-     "stage": 2,
-     "last": null,
-     "slices": 4,
-     "pizzas": 2,
-     "trips": 0,
-     "good": 20,
-     "v3": true,
-     "focusShell": false,
-     "currentStep": null,
-     "count": "",
-     "dialogs": [],
-     "message": "Klaar voor de volgende stap.",
-     "messageClass": "message good",
-     "prompt": "Les afgerond!",
-     "meter": "4 van 8",
-     "active": "finishTitle",
-     "layout": {
-      "primaries": [
-       "Volgende les →"
-      ],
-      "overlaps": [],
-      "clipped": [],
-      "small": [],
-      "v2Chrome": [],
-      "sheetCollapsed": false,
-      "horizontalOverflow": false
-     }
-    },
-    "write-q": {
-     "mode": "write",
-     "id": "city-10",
-     "name": "Turijn",
-     "answered": false,
-     "paused": false,
-     "kind": "write",
-     "done": false,
-     "chapter": "city2",
-     "stage": 2,
-     "last": null,
-     "slices": 4,
-     "pizzas": 2,
-     "trips": 0,
-     "good": 20,
-     "v3": true,
-     "focusShell": true,
-     "currentStep": "write",
-     "count": "1 / 6",
-     "dialogs": [],
-     "message": "Jij bent aan zet.",
-     "messageClass": "message ",
-     "prompt": "Hoe heet deze plek?",
-     "meter": "4 van 8",
-     "active": "ninoSchoolMapOnly v3On v3Shell v3Les lessonFocus",
-     "layout": {
-      "primaries": [
-       "Controleer"
-      ],
-      "overlaps": [],
-      "clipped": [],
-      "small": [],
-      "v2Chrome": [],
-      "sheetCollapsed": false,
-      "horizontalOverflow": false
-     }
-    },
-    "write-wrong": {
-     "mode": "write",
-     "id": "city-10",
-     "name": "Turijn",
-     "answered": true,
-     "paused": false,
-     "kind": "write",
-     "done": false,
-     "chapter": "city2",
-     "stage": 2,
-     "last": {
-      "ok": false
-     },
-     "slices": 4,
-     "pizzas": 2,
-     "trips": 0,
-     "good": 20,
-     "v3": true,
-     "focusShell": true,
-     "currentStep": "write",
-     "count": "1 / 7",
-     "dialogs": [],
-     "message": "De juiste naam is Turijn.",
-     "messageClass": "message bad",
-     "prompt": "Hoe heet deze plek?",
-     "meter": "4 van 8",
-     "active": "ninoSchoolMapOnly v3On v3Shell v3Les lessonFocus",
-     "layout": {
-      "primaries": [
-       "Volgende →"
-      ],
-      "overlaps": [],
-      "clipped": [],
-      "small": [],
-      "v2Chrome": [],
-      "sheetCollapsed": false,
-      "horizontalOverflow": false
-     }
-    },
-    "write-ok": {
-     "mode": "write",
-     "id": "city-8",
-     "name": "Pisa",
-     "answered": true,
-     "paused": false,
-     "kind": "write",
-     "done": false,
-     "chapter": "city2",
-     "stage": 2,
-     "last": {
-      "ok": true
-     },
-     "slices": 5,
-     "pizzas": 2,
-     "trips": 0,
-     "good": 21,
-     "v3": true,
-     "focusShell": true,
-     "currentStep": "write",
-     "count": "2 / 7",
-     "dialogs": [],
-     "message": "Goed geschreven!",
-     "messageClass": "message good",
-     "prompt": "Hoe heet deze plek?",
-     "meter": "5 van 8",
-     "active": "ninoSchoolMapOnly v3On v3Shell v3Les lessonFocus",
-     "layout": {
-      "primaries": [
-       "Volgende →"
-      ],
-      "overlaps": [],
-      "clipped": [],
-      "small": [],
-      "v2Chrome": [],
-      "sheetCollapsed": false,
-      "horizontalOverflow": false
-     }
-    },
-    "vespa": {
-     "mode": "write",
-     "id": "city-11",
-     "name": "Venetië",
-     "answered": true,
-     "paused": false,
-     "kind": "write",
-     "done": false,
-     "chapter": "city2",
-     "stage": 2,
-     "last": {
-      "ok": true
-     },
-     "slices": 0,
-     "pizzas": 3,
-     "trips": 1,
-     "good": 24,
-     "v3": true,
-     "focusShell": true,
-     "currentStep": "write",
-     "count": "5 / 7",
-     "dialogs": [
-      "vespaRide"
-     ],
-     "message": "Andiamo! Nino rijdt naar Florence.",
-     "messageClass": "message good",
-     "prompt": "Hoe heet deze plek?",
-     "meter": "0 van 8",
-     "active": "button",
-     "layout": {
-      "primaries": [
-       "Volgende →"
-      ],
-      "overlaps": [],
-      "clipped": [],
-      "small": [],
-      "v2Chrome": [],
-      "sheetCollapsed": false,
-      "horizontalOverflow": false
-     }
-    },
-    "finish": {
-     "mode": "result",
-     "id": null,
-     "name": null,
-     "answered": true,
-     "paused": false,
-     "kind": "write",
-     "done": true,
-     "chapter": "city2",
-     "stage": 3,
-     "last": null,
-     "slices": 2,
-     "pizzas": 3,
-     "trips": 1,
-     "good": 26,
-     "v3": true,
-     "focusShell": false,
-     "currentStep": null,
-     "count": "",
-     "dialogs": [],
-     "message": "Klaar voor de volgende stap.",
-     "messageClass": "message good",
-     "prompt": "Deze halte is afgerond!",
-     "meter": "2 van 8",
-     "active": "finishTitle",
-     "layout": {
-      "primaries": [
-       "Bekijk in Reisboekje"
-      ],
-      "overlaps": [],
-      "clipped": [],
-      "small": [],
-      "v2Chrome": [],
-      "sheetCollapsed": false,
-      "horizontalOverflow": false
-     }
-    }
-   },
-   "layout": {
-    "discover": {
-     "primaries": [
-      "Bekeken · verder →"
-     ],
-     "overlaps": [],
-     "clipped": [],
-     "small": [],
-     "v2Chrome": [],
-     "sheetCollapsed": false,
-     "horizontalOverflow": false
-    },
-    "point-q": {
-     "primaries": [],
-     "overlaps": [],
-     "clipped": [],
-     "small": [],
-     "v2Chrome": [],
-     "sheetCollapsed": false,
-     "horizontalOverflow": false
-    },
-    "point-wrong": {
-     "primaries": [
-      "Volgende →"
-     ],
-     "overlaps": [],
-     "clipped": [],
-     "small": [],
-     "v2Chrome": [],
-     "sheetCollapsed": false,
-     "horizontalOverflow": false
-    },
-    "point-ok": {
-     "primaries": [
-      "Volgende →"
-     ],
-     "overlaps": [],
-     "clipped": [],
-     "small": [],
-     "v2Chrome": [],
-     "sheetCollapsed": false,
-     "horizontalOverflow": false
-    },
-    "pizza": {
-     "primaries": [
-      "Verder",
-      "Volgende →"
-     ],
-     "overlaps": [],
-     "clipped": [],
-     "small": [],
-     "v2Chrome": [],
-     "sheetCollapsed": false,
-     "horizontalOverflow": false
-    },
-    "pause": {
-     "primaries": [
-      "Volgende ronde →"
-     ],
-     "overlaps": [],
-     "clipped": [],
-     "small": [],
-     "v2Chrome": [],
-     "sheetCollapsed": false,
-     "horizontalOverflow": false
-    },
-    "point-done": {
-     "primaries": [
-      "Volgende les →"
-     ],
-     "overlaps": [],
-     "clipped": [],
-     "small": [],
-     "v2Chrome": [],
-     "sheetCollapsed": false,
-     "horizontalOverflow": false
-    },
-    "write-q": {
-     "primaries": [
-      "Controleer"
-     ],
-     "overlaps": [],
-     "clipped": [],
-     "small": [],
-     "v2Chrome": [],
-     "sheetCollapsed": false,
-     "horizontalOverflow": false
-    },
-    "write-wrong": {
-     "primaries": [
-      "Volgende →"
-     ],
-     "overlaps": [],
-     "clipped": [],
-     "small": [],
-     "v2Chrome": [],
-     "sheetCollapsed": false,
-     "horizontalOverflow": false
-    },
-    "write-ok": {
-     "primaries": [
-      "Volgende →"
-     ],
-     "overlaps": [],
-     "clipped": [],
-     "small": [],
-     "v2Chrome": [],
-     "sheetCollapsed": false,
-     "horizontalOverflow": false
-    },
-    "vespa": {
-     "primaries": [
-      "Volgende →"
-     ],
-     "overlaps": [],
-     "clipped": [],
-     "small": [],
-     "v2Chrome": [],
-     "sheetCollapsed": false,
-     "horizontalOverflow": false
-    },
-    "finish": {
-     "primaries": [
-      "Bekijk in Reisboekje"
-     ],
-     "overlaps": [],
-     "clipped": [],
-     "small": [],
-     "v2Chrome": [],
-     "sheetCollapsed": false,
-     "horizontalOverflow": false
-    }
-   },
-   "events": [
-    {
-     "dialog": "pizzaCelebration",
-     "pizzasBefore": 1,
-     "pizzasAfter": 2,
-     "tripsBefore": 0,
-     "tripsAfter": 0
-    },
-    {
-     "dialog": "pizzaCelebration",
-     "pizzasBefore": 2,
-     "pizzasAfter": 3,
-     "tripsBefore": 0,
-     "tripsAfter": 1
-    },
-    {
-     "dialog": "vespaRide",
-     "pizzasBefore": 2,
-     "pizzasAfter": 3,
-     "tripsBefore": 0,
-     "tripsAfter": 1
-    },
-    {
-     "dialog": "vespaRide",
-     "pizzasBefore": 2,
-     "pizzasAfter": 3,
-     "tripsBefore": 0,
-     "tripsAfter": 1
-    }
-   ],
-   "checks": {
-    "discoverTitleIsPlace": true,
-    "discoverDoneScreen": true,
-    "pointWrongNotOk": true,
-    "pointTaps": [
-     {
-      "x": 499.76951599121094,
-      "y": 871.7068481445312,
-      "onMap": true,
-      "v3": false,
-      "via": "tap",
-      "ok": true
-     },
-     {
-      "x": 460.99119567871094,
-      "y": 635.5064697265625,
-      "onMap": true,
-      "v3": false,
-      "picker": true,
-      "via": "tap",
-      "ok": true
-     },
-     {
-      "x": 394.27003479003906,
-      "y": 413.6151580810547,
-      "onMap": true,
-      "v3": false,
-      "via": "tap",
-      "ok": true
-     },
-     {
-      "x": 245.64016723632812,
-      "y": 436.6689910888672,
-      "onMap": true,
-      "v3": false,
-      "via": "tap",
-      "ok": true
-     },
-     {
-      "x": 367.87278747558594,
-      "y": 521.343505859375,
-      "onMap": true,
-      "v3": false,
-      "via": "tap",
-      "ok": true
-     },
-     {
-      "x": 454.44273376464844,
-      "y": 413.7209014892578,
-      "onMap": true,
-      "v3": false,
-      "via": "tap",
-      "ok": true
-     }
-    ],
-    "pointOkFeedback": true,
-    "pointMeterMatchesState": true,
-    "pointFocusOnNext": true,
-    "writeWrongNotOk": true,
-    "writeOkFeedback": true,
-    "writeMeterMatchesState": true,
-    "writeFocusOnNext": true,
-    "finish": {
-     "title": "Deze halte is afgerond!",
-     "stamp": "stamp:city2",
-     "stampArt": true,
-     "buttons": [
-      "Bekijk in Reisboekje",
-      "Later",
-      "Terug naar mijn reis →"
-     ]
-    },
-    "bookOpens": {
-     "open": true,
-     "text": "Mijn reisboekje⚙Sluit boekjeMijn stempelsSteden 1–6AfgerondSteden 7–12AfgerondExtra steden 13–18Hier kun je verder lerenVorige3 / 8Volgende",
-     "events": [
-      "pointerdown:btn",
-      "pointerup:btn",
-      "click:btn"
-     ]
-    },
-    "backToReis": {
-     "reis": true,
-     "selected": "city3",
-     "v3Les": false
-    }
-   },
-   "final": {
-    "mode": "result",
-    "id": null,
-    "name": null,
-    "answered": true,
-    "paused": false,
-    "kind": "write",
-    "done": true,
-    "chapter": "city2",
-    "stage": 3,
-    "last": null,
-    "slices": 2,
-    "pizzas": 3,
-    "trips": 1,
-    "good": 26,
-    "v3": false,
-    "focusShell": false,
-    "currentStep": null,
-    "count": "",
-    "dialogs": [],
-    "message": "Klaar voor de volgende stap.",
-    "messageClass": "message good",
-    "prompt": "Deze halte is afgerond!",
-    "meter": "2 van 8",
-    "active": "ninoSchoolMapOnly v3On v3Shell v3Home"
-   }
-  },
-  "phone": {
    "beats": {
     "discover": {
      "mode": "discover",
@@ -2350,8 +870,8 @@
     },
     "point-ok": {
      "mode": "point",
-     "id": "city-7",
-     "name": "Palermo",
+     "id": "city-10",
+     "name": "Turijn",
      "answered": true,
      "paused": false,
      "kind": "point",
@@ -2372,7 +892,7 @@
      "dialogs": [],
      "message": "Goed gevonden!",
      "messageClass": "message good",
-     "prompt": "Waar ligt Palermo?",
+     "prompt": "Waar ligt Turijn?",
      "meter": "7 van 8",
      "active": {},
      "layout": {
@@ -2389,8 +909,8 @@
     },
     "pizza": {
      "mode": "point",
-     "id": "city-8",
-     "name": "Pisa",
+     "id": "city-7",
+     "name": "Palermo",
      "answered": true,
      "paused": false,
      "kind": "point",
@@ -2413,7 +933,7 @@
      ],
      "message": "Perfetto! Een pizza compleet.",
      "messageClass": "message good",
-     "prompt": "Waar ligt Pisa?",
+     "prompt": "Waar ligt Palermo?",
      "meter": "0 van 8",
      "active": "button primary",
      "layout": {
@@ -2431,8 +951,8 @@
     },
     "pause": {
      "mode": "point",
-     "id": "city-11",
-     "name": "Venetië",
+     "id": "city-9",
+     "name": "Rome",
      "answered": true,
      "paused": true,
      "kind": "point",
@@ -2451,7 +971,7 @@
      "dialogs": [],
      "message": "Goed gevonden!",
      "messageClass": "message good",
-     "prompt": "Waar ligt Venetië?",
+     "prompt": "Waar ligt Rome?",
      "meter": "3 van 8",
      "active": "finishTitle",
      "layout": {
@@ -2581,8 +1101,8 @@
     },
     "write-ok": {
      "mode": "write",
-     "id": "city-10",
-     "name": "Turijn",
+     "id": "city-12",
+     "name": "Verona",
      "answered": true,
      "paused": false,
      "kind": "write",
@@ -2866,8 +1386,16 @@
     "pointWrongNotOk": true,
     "pointTaps": [
      {
-      "x": 221.45682525634766,
-      "y": 561.3437194824219,
+      "x": 489.41416931152344,
+      "y": 322.6534118652344,
+      "onMap": true,
+      "v3": false,
+      "via": "tap",
+      "ok": true
+     },
+     {
+      "x": 663.4444580078125,
+      "y": 620.5716247558594,
       "onMap": true,
       "v3": false,
       "freedMap": true,
@@ -2876,8 +1404,24 @@
       "ok": true
      },
      {
-      "x": 154.05097198486328,
-      "y": 382.29046630859375,
+      "x": 632.4042358398438,
+      "y": 306.93833923339844,
+      "onMap": true,
+      "v3": false,
+      "via": "tap",
+      "ok": true
+     },
+     {
+      "x": 573.1202697753906,
+      "y": 380.6393585205078,
+      "onMap": true,
+      "v3": false,
+      "via": "tap",
+      "ok": true
+     },
+     {
+      "x": 636.888671875,
+      "y": 458.8192901611328,
       "onMap": true,
       "v3": false,
       "picker": true,
@@ -2885,8 +1429,730 @@
       "ok": true
      },
      {
-      "x": 201.63915252685547,
-      "y": 440.6334686279297,
+      "x": 591.1973876953125,
+      "y": 306.8659210205078,
+      "onMap": true,
+      "v3": false,
+      "via": "tap",
+      "ok": true
+     }
+    ],
+    "pointOkFeedback": true,
+    "pointMeterMatchesState": true,
+    "pointFocusOnNext": true,
+    "writeWrongNotOk": true,
+    "writeOkFeedback": true,
+    "writeMeterMatchesState": true,
+    "writeFocusOnNext": true,
+    "finish": {
+     "title": "Deze halte is afgerond!",
+     "stamp": "stamp:city2",
+     "stampArt": true,
+     "buttons": [
+      "Bekijk in Reisboekje",
+      "Later",
+      "Terug naar mijn reis →"
+     ]
+    },
+    "bookOpens": {
+     "open": true,
+     "text": "Mijn reisboekje⚙Sluit boekjeMijn stempelsSteden 1–6AfgerondSteden 7–12AfgerondExtra steden 13–18Hier kun je verder lerenMijn stempelsExtra steden 19–23Nog te on",
+     "events": [
+      "pointerdown:btn",
+      "pointerup:btn",
+      "click:btn"
+     ]
+    },
+    "backToReis": {
+     "reis": true,
+     "selected": "city3",
+     "v3Les": false
+    }
+   },
+   "final": {
+    "mode": "result",
+    "id": null,
+    "name": null,
+    "answered": true,
+    "paused": false,
+    "kind": "write",
+    "done": true,
+    "chapter": "city2",
+    "stage": 3,
+    "last": null,
+    "slices": 2,
+    "pizzas": 3,
+    "trips": 1,
+    "good": 26,
+    "v3": false,
+    "focusShell": false,
+    "currentStep": null,
+    "count": "",
+    "dialogs": [],
+    "message": "Klaar voor de volgende stap.",
+    "messageClass": "message good",
+    "prompt": "Deze halte is afgerond!",
+    "meter": "2 van 8",
+    "active": "ninoSchoolMapOnly v3On v3Shell v3Home"
+   }
+  },
+  "ipad-portrait": {
+   "beats": {
+    "discover": {
+     "mode": "discover",
+     "id": "city-11",
+     "name": "Venetië",
+     "answered": false,
+     "paused": false,
+     "kind": "discover",
+     "done": false,
+     "chapter": "city2",
+     "stage": 1,
+     "last": null,
+     "slices": 6,
+     "pizzas": 1,
+     "trips": 0,
+     "good": 14,
+     "v3": true,
+     "focusShell": true,
+     "currentStep": "discover",
+     "count": "1 / 6",
+     "dialogs": [],
+     "message": "Kijk goed naar de plek en zeg de naam.",
+     "messageClass": "message ",
+     "prompt": "Venetië",
+     "meter": "6 van 8",
+     "active": "ninoSchoolMapOnly v3On v3Shell lessonFocus v3Les",
+     "layout": {
+      "primaries": [
+       "Bekeken · verder →"
+      ],
+      "overlaps": [],
+      "clipped": [],
+      "small": [],
+      "v2Chrome": [],
+      "sheetCollapsed": false,
+      "horizontalOverflow": false
+     }
+    },
+    "point-q": {
+     "mode": "point",
+     "id": "city-11",
+     "name": "Venetië",
+     "answered": false,
+     "paused": false,
+     "kind": "point",
+     "done": false,
+     "chapter": "city2",
+     "stage": 1,
+     "last": null,
+     "slices": 6,
+     "pizzas": 1,
+     "trips": 0,
+     "good": 14,
+     "v3": true,
+     "focusShell": true,
+     "currentStep": "point",
+     "count": "1 / 6",
+     "dialogs": [],
+     "message": "Jij bent aan zet.",
+     "messageClass": "message ",
+     "prompt": "Waar ligt Venetië?",
+     "meter": "6 van 8",
+     "active": "ninoSchoolMapOnly v3On v3Shell v3Les lessonFocus",
+     "layout": {
+      "primaries": [],
+      "overlaps": [],
+      "clipped": [],
+      "small": [],
+      "v2Chrome": [],
+      "sheetCollapsed": false,
+      "horizontalOverflow": false
+     }
+    },
+    "point-wrong": {
+     "mode": "point",
+     "id": "city-11",
+     "name": "Venetië",
+     "answered": true,
+     "paused": false,
+     "kind": "point",
+     "done": false,
+     "chapter": "city2",
+     "stage": 1,
+     "last": {
+      "ok": false
+     },
+     "slices": 6,
+     "pizzas": 1,
+     "trips": 0,
+     "good": 14,
+     "v3": true,
+     "focusShell": true,
+     "currentStep": "point",
+     "count": "1 / 7",
+     "dialogs": [],
+     "message": "Dat was Bari. Gezocht: Venetië.",
+     "messageClass": "message bad",
+     "prompt": "Waar ligt Venetië?",
+     "meter": "6 van 8",
+     "active": {},
+     "layout": {
+      "primaries": [
+       "Volgende →"
+      ],
+      "overlaps": [],
+      "clipped": [],
+      "small": [],
+      "v2Chrome": [],
+      "sheetCollapsed": false,
+      "horizontalOverflow": false
+     }
+    },
+    "point-ok": {
+     "mode": "point",
+     "id": "city-8",
+     "name": "Pisa",
+     "answered": true,
+     "paused": false,
+     "kind": "point",
+     "done": false,
+     "chapter": "city2",
+     "stage": 1,
+     "last": {
+      "ok": true
+     },
+     "slices": 7,
+     "pizzas": 1,
+     "trips": 0,
+     "good": 15,
+     "v3": true,
+     "focusShell": true,
+     "currentStep": "point",
+     "count": "2 / 7",
+     "dialogs": [],
+     "message": "Goed gevonden!",
+     "messageClass": "message good",
+     "prompt": "Waar ligt Pisa?",
+     "meter": "7 van 8",
+     "active": {},
+     "layout": {
+      "primaries": [
+       "Volgende →"
+      ],
+      "overlaps": [],
+      "clipped": [],
+      "small": [],
+      "v2Chrome": [],
+      "sheetCollapsed": false,
+      "horizontalOverflow": false
+     }
+    },
+    "pizza": {
+     "mode": "point",
+     "id": "city-10",
+     "name": "Turijn",
+     "answered": true,
+     "paused": false,
+     "kind": "point",
+     "done": false,
+     "chapter": "city2",
+     "stage": 1,
+     "last": {
+      "ok": true
+     },
+     "slices": 0,
+     "pizzas": 2,
+     "trips": 0,
+     "good": 16,
+     "v3": true,
+     "focusShell": true,
+     "currentStep": "point",
+     "count": "3 / 7",
+     "dialogs": [
+      "pizzaCelebration"
+     ],
+     "message": "Perfetto! Een pizza compleet.",
+     "messageClass": "message good",
+     "prompt": "Waar ligt Turijn?",
+     "meter": "0 van 8",
+     "active": "button primary",
+     "layout": {
+      "primaries": [
+       "Verder",
+       "Volgende →"
+      ],
+      "overlaps": [],
+      "clipped": [],
+      "small": [],
+      "v2Chrome": [],
+      "sheetCollapsed": false,
+      "horizontalOverflow": false
+     }
+    },
+    "pause": {
+     "mode": "point",
+     "id": "city-7",
+     "name": "Palermo",
+     "answered": true,
+     "paused": true,
+     "kind": "point",
+     "done": false,
+     "chapter": "city2",
+     "stage": 1,
+     "last": null,
+     "slices": 3,
+     "pizzas": 2,
+     "trips": 0,
+     "good": 19,
+     "v3": true,
+     "focusShell": false,
+     "currentStep": "point",
+     "count": "",
+     "dialogs": [],
+     "message": "Goed gevonden!",
+     "messageClass": "message good",
+     "prompt": "Waar ligt Palermo?",
+     "meter": "3 van 8",
+     "active": "finishTitle",
+     "layout": {
+      "primaries": [
+       "Volgende ronde →"
+      ],
+      "overlaps": [],
+      "clipped": [],
+      "small": [],
+      "v2Chrome": [],
+      "sheetCollapsed": false,
+      "horizontalOverflow": false
+     }
+    },
+    "point-done": {
+     "mode": "result",
+     "id": null,
+     "name": null,
+     "answered": true,
+     "paused": false,
+     "kind": "point",
+     "done": true,
+     "chapter": "city2",
+     "stage": 2,
+     "last": null,
+     "slices": 4,
+     "pizzas": 2,
+     "trips": 0,
+     "good": 20,
+     "v3": true,
+     "focusShell": false,
+     "currentStep": null,
+     "count": "",
+     "dialogs": [],
+     "message": "Klaar voor de volgende stap.",
+     "messageClass": "message good",
+     "prompt": "Les afgerond!",
+     "meter": "4 van 8",
+     "active": "finishTitle",
+     "layout": {
+      "primaries": [
+       "Volgende les →"
+      ],
+      "overlaps": [],
+      "clipped": [],
+      "small": [],
+      "v2Chrome": [],
+      "sheetCollapsed": false,
+      "horizontalOverflow": false
+     }
+    },
+    "write-q": {
+     "mode": "write",
+     "id": "city-9",
+     "name": "Rome",
+     "answered": false,
+     "paused": false,
+     "kind": "write",
+     "done": false,
+     "chapter": "city2",
+     "stage": 2,
+     "last": null,
+     "slices": 4,
+     "pizzas": 2,
+     "trips": 0,
+     "good": 20,
+     "v3": true,
+     "focusShell": true,
+     "currentStep": "write",
+     "count": "1 / 6",
+     "dialogs": [],
+     "message": "Jij bent aan zet.",
+     "messageClass": "message ",
+     "prompt": "Hoe heet deze plek?",
+     "meter": "4 van 8",
+     "active": "ninoSchoolMapOnly v3On v3Shell v3Les lessonFocus",
+     "layout": {
+      "primaries": [
+       "Controleer"
+      ],
+      "overlaps": [],
+      "clipped": [],
+      "small": [],
+      "v2Chrome": [],
+      "sheetCollapsed": false,
+      "horizontalOverflow": false
+     }
+    },
+    "write-wrong": {
+     "mode": "write",
+     "id": "city-9",
+     "name": "Rome",
+     "answered": true,
+     "paused": false,
+     "kind": "write",
+     "done": false,
+     "chapter": "city2",
+     "stage": 2,
+     "last": {
+      "ok": false
+     },
+     "slices": 4,
+     "pizzas": 2,
+     "trips": 0,
+     "good": 20,
+     "v3": true,
+     "focusShell": true,
+     "currentStep": "write",
+     "count": "1 / 7",
+     "dialogs": [],
+     "message": "De juiste naam is Rome.",
+     "messageClass": "message bad",
+     "prompt": "Hoe heet deze plek?",
+     "meter": "4 van 8",
+     "active": "ninoSchoolMapOnly v3On v3Shell v3Les lessonFocus",
+     "layout": {
+      "primaries": [
+       "Volgende →"
+      ],
+      "overlaps": [],
+      "clipped": [],
+      "small": [],
+      "v2Chrome": [],
+      "sheetCollapsed": false,
+      "horizontalOverflow": false
+     }
+    },
+    "write-ok": {
+     "mode": "write",
+     "id": "city-7",
+     "name": "Palermo",
+     "answered": true,
+     "paused": false,
+     "kind": "write",
+     "done": false,
+     "chapter": "city2",
+     "stage": 2,
+     "last": {
+      "ok": true
+     },
+     "slices": 5,
+     "pizzas": 2,
+     "trips": 0,
+     "good": 21,
+     "v3": true,
+     "focusShell": true,
+     "currentStep": "write",
+     "count": "2 / 7",
+     "dialogs": [],
+     "message": "Goed geschreven!",
+     "messageClass": "message good",
+     "prompt": "Hoe heet deze plek?",
+     "meter": "5 van 8",
+     "active": "ninoSchoolMapOnly v3On v3Shell v3Les lessonFocus",
+     "layout": {
+      "primaries": [
+       "Volgende →"
+      ],
+      "overlaps": [],
+      "clipped": [],
+      "small": [],
+      "v2Chrome": [],
+      "sheetCollapsed": false,
+      "horizontalOverflow": false
+     }
+    },
+    "vespa": {
+     "mode": "write",
+     "id": "city-12",
+     "name": "Verona",
+     "answered": true,
+     "paused": false,
+     "kind": "write",
+     "done": false,
+     "chapter": "city2",
+     "stage": 2,
+     "last": {
+      "ok": true
+     },
+     "slices": 0,
+     "pizzas": 3,
+     "trips": 1,
+     "good": 24,
+     "v3": true,
+     "focusShell": true,
+     "currentStep": "write",
+     "count": "5 / 7",
+     "dialogs": [
+      "vespaRide"
+     ],
+     "message": "Andiamo! Nino rijdt naar Florence.",
+     "messageClass": "message good",
+     "prompt": "Hoe heet deze plek?",
+     "meter": "0 van 8",
+     "active": "button",
+     "layout": {
+      "primaries": [
+       "Volgende →"
+      ],
+      "overlaps": [],
+      "clipped": [],
+      "small": [],
+      "v2Chrome": [],
+      "sheetCollapsed": false,
+      "horizontalOverflow": false
+     }
+    },
+    "finish": {
+     "mode": "result",
+     "id": null,
+     "name": null,
+     "answered": true,
+     "paused": false,
+     "kind": "write",
+     "done": true,
+     "chapter": "city2",
+     "stage": 3,
+     "last": null,
+     "slices": 2,
+     "pizzas": 3,
+     "trips": 1,
+     "good": 26,
+     "v3": true,
+     "focusShell": false,
+     "currentStep": null,
+     "count": "",
+     "dialogs": [],
+     "message": "Klaar voor de volgende stap.",
+     "messageClass": "message good",
+     "prompt": "Deze halte is afgerond!",
+     "meter": "2 van 8",
+     "active": "finishTitle",
+     "layout": {
+      "primaries": [
+       "Bekijk in Reisboekje"
+      ],
+      "overlaps": [],
+      "clipped": [],
+      "small": [],
+      "v2Chrome": [],
+      "sheetCollapsed": false,
+      "horizontalOverflow": false
+     }
+    }
+   },
+   "layout": {
+    "discover": {
+     "primaries": [
+      "Bekeken · verder →"
+     ],
+     "overlaps": [],
+     "clipped": [],
+     "small": [],
+     "v2Chrome": [],
+     "sheetCollapsed": false,
+     "horizontalOverflow": false
+    },
+    "point-q": {
+     "primaries": [],
+     "overlaps": [],
+     "clipped": [],
+     "small": [],
+     "v2Chrome": [],
+     "sheetCollapsed": false,
+     "horizontalOverflow": false
+    },
+    "point-wrong": {
+     "primaries": [
+      "Volgende →"
+     ],
+     "overlaps": [],
+     "clipped": [],
+     "small": [],
+     "v2Chrome": [],
+     "sheetCollapsed": false,
+     "horizontalOverflow": false
+    },
+    "point-ok": {
+     "primaries": [
+      "Volgende →"
+     ],
+     "overlaps": [],
+     "clipped": [],
+     "small": [],
+     "v2Chrome": [],
+     "sheetCollapsed": false,
+     "horizontalOverflow": false
+    },
+    "pizza": {
+     "primaries": [
+      "Verder",
+      "Volgende →"
+     ],
+     "overlaps": [],
+     "clipped": [],
+     "small": [],
+     "v2Chrome": [],
+     "sheetCollapsed": false,
+     "horizontalOverflow": false
+    },
+    "pause": {
+     "primaries": [
+      "Volgende ronde →"
+     ],
+     "overlaps": [],
+     "clipped": [],
+     "small": [],
+     "v2Chrome": [],
+     "sheetCollapsed": false,
+     "horizontalOverflow": false
+    },
+    "point-done": {
+     "primaries": [
+      "Volgende les →"
+     ],
+     "overlaps": [],
+     "clipped": [],
+     "small": [],
+     "v2Chrome": [],
+     "sheetCollapsed": false,
+     "horizontalOverflow": false
+    },
+    "write-q": {
+     "primaries": [
+      "Controleer"
+     ],
+     "overlaps": [],
+     "clipped": [],
+     "small": [],
+     "v2Chrome": [],
+     "sheetCollapsed": false,
+     "horizontalOverflow": false
+    },
+    "write-wrong": {
+     "primaries": [
+      "Volgende →"
+     ],
+     "overlaps": [],
+     "clipped": [],
+     "small": [],
+     "v2Chrome": [],
+     "sheetCollapsed": false,
+     "horizontalOverflow": false
+    },
+    "write-ok": {
+     "primaries": [
+      "Volgende →"
+     ],
+     "overlaps": [],
+     "clipped": [],
+     "small": [],
+     "v2Chrome": [],
+     "sheetCollapsed": false,
+     "horizontalOverflow": false
+    },
+    "vespa": {
+     "primaries": [
+      "Volgende →"
+     ],
+     "overlaps": [],
+     "clipped": [],
+     "small": [],
+     "v2Chrome": [],
+     "sheetCollapsed": false,
+     "horizontalOverflow": false
+    },
+    "finish": {
+     "primaries": [
+      "Bekijk in Reisboekje"
+     ],
+     "overlaps": [],
+     "clipped": [],
+     "small": [],
+     "v2Chrome": [],
+     "sheetCollapsed": false,
+     "horizontalOverflow": false
+    }
+   },
+   "events": [
+    {
+     "dialog": "pizzaCelebration",
+     "pizzasBefore": 1,
+     "pizzasAfter": 2,
+     "tripsBefore": 0,
+     "tripsAfter": 0
+    },
+    {
+     "dialog": "pizzaCelebration",
+     "pizzasBefore": 2,
+     "pizzasAfter": 3,
+     "tripsBefore": 0,
+     "tripsAfter": 1
+    },
+    {
+     "dialog": "vespaRide",
+     "pizzasBefore": 2,
+     "pizzasAfter": 3,
+     "tripsBefore": 0,
+     "tripsAfter": 1
+    },
+    {
+     "dialog": "vespaRide",
+     "pizzasBefore": 2,
+     "pizzasAfter": 3,
+     "tripsBefore": 0,
+     "tripsAfter": 1
+    }
+   ],
+   "checks": {
+    "discoverTitleIsPlace": true,
+    "discoverDoneScreen": true,
+    "pointWrongNotOk": true,
+    "pointTaps": [
+     {
+      "x": 367.87278747558594,
+      "y": 521.343505859375,
+      "onMap": true,
+      "v3": false,
+      "via": "tap",
+      "ok": true
+     },
+     {
+      "x": 245.64016723632812,
+      "y": 436.6689910888672,
+      "onMap": true,
+      "v3": false,
+      "via": "tap",
+      "ok": true
+     },
+     {
+      "x": 394.27003479003906,
+      "y": 413.6151580810547,
+      "onMap": true,
+      "v3": false,
+      "via": "tap",
+      "ok": true
+     },
+     {
+      "x": 460.99119567871094,
+      "y": 635.5064697265625,
       "onMap": true,
       "v3": false,
       "picker": true,
@@ -2894,27 +2160,18 @@
       "ok": true
      },
      {
-      "x": 91.58395004272461,
-      "y": 339.01751708984375,
+      "x": 499.76951599121094,
+      "y": 871.7068481445312,
       "onMap": true,
       "v3": false,
       "via": "tap",
       "ok": true
      },
      {
-      "x": 198.2925567626953,
-      "y": 327.2898712158203,
+      "x": 454.44273376464844,
+      "y": 413.7209014892578,
       "onMap": true,
       "v3": false,
-      "via": "tap",
-      "ok": true
-     },
-     {
-      "x": 167.54129028320312,
-      "y": 327.23583984375,
-      "onMap": true,
-      "v3": false,
-      "picker": true,
       "via": "tap",
       "ok": true
      }
@@ -2978,12 +2235,12 @@
     "active": "ninoSchoolMapOnly v3On v3Shell v3Home"
    }
   },
-  "phone-small": {
+  "phone": {
    "beats": {
     "discover": {
      "mode": "discover",
-     "id": "city-10",
-     "name": "Turijn",
+     "id": "city-9",
+     "name": "Rome",
      "answered": false,
      "paused": false,
      "kind": "discover",
@@ -3002,7 +2259,7 @@
      "dialogs": [],
      "message": "Kijk goed naar de plek en zeg de naam.",
      "messageClass": "message ",
-     "prompt": "Turijn",
+     "prompt": "Rome",
      "meter": "6 van 8",
      "active": "ninoSchoolMapOnly v3On v3Shell lessonFocus v3Les",
      "layout": {
@@ -3093,8 +2350,8 @@
     },
     "point-ok": {
      "mode": "point",
-     "id": "city-9",
-     "name": "Rome",
+     "id": "city-8",
+     "name": "Pisa",
      "answered": true,
      "paused": false,
      "kind": "point",
@@ -3115,7 +2372,7 @@
      "dialogs": [],
      "message": "Goed gevonden!",
      "messageClass": "message good",
-     "prompt": "Waar ligt Rome?",
+     "prompt": "Waar ligt Pisa?",
      "meter": "7 van 8",
      "active": {},
      "layout": {
@@ -3132,8 +2389,8 @@
     },
     "pizza": {
      "mode": "point",
-     "id": "city-12",
-     "name": "Verona",
+     "id": "city-11",
+     "name": "Venetië",
      "answered": true,
      "paused": false,
      "kind": "point",
@@ -3156,7 +2413,7 @@
      ],
      "message": "Perfetto! Een pizza compleet.",
      "messageClass": "message good",
-     "prompt": "Waar ligt Verona?",
+     "prompt": "Waar ligt Venetië?",
      "meter": "0 van 8",
      "active": "button primary",
      "layout": {
@@ -3174,8 +2431,8 @@
     },
     "pause": {
      "mode": "point",
-     "id": "city-7",
-     "name": "Palermo",
+     "id": "city-9",
+     "name": "Rome",
      "answered": true,
      "paused": true,
      "kind": "point",
@@ -3194,7 +2451,7 @@
      "dialogs": [],
      "message": "Goed gevonden!",
      "messageClass": "message good",
-     "prompt": "Waar ligt Palermo?",
+     "prompt": "Waar ligt Rome?",
      "meter": "3 van 8",
      "active": "finishTitle",
      "layout": {
@@ -3248,8 +2505,8 @@
     },
     "write-q": {
      "mode": "write",
-     "id": "city-7",
-     "name": "Palermo",
+     "id": "city-12",
+     "name": "Verona",
      "answered": false,
      "paused": false,
      "kind": "write",
@@ -3285,8 +2542,8 @@
     },
     "write-wrong": {
      "mode": "write",
-     "id": "city-7",
-     "name": "Palermo",
+     "id": "city-12",
+     "name": "Verona",
      "answered": true,
      "paused": false,
      "kind": "write",
@@ -3305,7 +2562,7 @@
      "currentStep": "write",
      "count": "1 / 7",
      "dialogs": [],
-     "message": "De juiste naam is Palermo.",
+     "message": "De juiste naam is Verona.",
      "messageClass": "message bad",
      "prompt": "Hoe heet deze plek?",
      "meter": "4 van 8",
@@ -3363,8 +2620,8 @@
     },
     "vespa": {
      "mode": "write",
-     "id": "city-11",
-     "name": "Venetië",
+     "id": "city-7",
+     "name": "Palermo",
      "answered": true,
      "paused": false,
      "kind": "write",
@@ -3609,25 +2866,748 @@
     "pointWrongNotOk": true,
     "pointTaps": [
      {
-      "x": 165.3830108642578,
-      "y": 339.6395263671875,
+      "x": 154.05097198486328,
+      "y": 382.29046630859375,
+      "onMap": true,
+      "v3": false,
+      "picker": true,
+      "via": "tap",
+      "ok": true
+     },
+     {
+      "x": 198.2925567626953,
+      "y": 327.2898712158203,
+      "onMap": true,
+      "v3": false,
+      "via": "tap",
+      "ok": true
+     },
+     {
+      "x": 221.45682525634766,
+      "y": 561.3437194824219,
       "onMap": true,
       "v3": false,
       "freedMap": true,
-      "picker": true,
       "sheetOpenAfter": true,
       "via": "tap",
       "ok": true
      },
      {
-      "x": 137.73654174804688,
-      "y": 247.6969985961914,
+      "x": 167.54129028320312,
+      "y": 327.23583984375,
       "onMap": true,
       "v3": false,
       "picker": true,
       "via": "tap",
       "ok": true
      },
+     {
+      "x": 201.63915252685547,
+      "y": 440.6334686279297,
+      "onMap": true,
+      "v3": false,
+      "picker": true,
+      "via": "tap",
+      "ok": true
+     },
+     {
+      "x": 91.58395004272461,
+      "y": 339.01751708984375,
+      "onMap": true,
+      "v3": false,
+      "via": "tap",
+      "ok": true
+     }
+    ],
+    "pointOkFeedback": true,
+    "pointMeterMatchesState": true,
+    "pointFocusOnNext": true,
+    "writeWrongNotOk": true,
+    "writeOkFeedback": true,
+    "writeMeterMatchesState": true,
+    "writeFocusOnNext": true,
+    "finish": {
+     "title": "Deze halte is afgerond!",
+     "stamp": "stamp:city2",
+     "stampArt": true,
+     "buttons": [
+      "Bekijk in Reisboekje",
+      "Later",
+      "Terug naar mijn reis →"
+     ]
+    },
+    "bookOpens": {
+     "open": true,
+     "text": "Mijn reisboekje⚙Sluit boekjeMijn stempelsSteden 1–6AfgerondSteden 7–12AfgerondExtra steden 13–18Hier kun je verder lerenVorige3 / 8Volgende",
+     "events": [
+      "pointerdown:btn",
+      "pointerup:btn",
+      "click:btn"
+     ]
+    },
+    "backToReis": {
+     "reis": true,
+     "selected": "city3",
+     "v3Les": false
+    }
+   },
+   "final": {
+    "mode": "result",
+    "id": null,
+    "name": null,
+    "answered": true,
+    "paused": false,
+    "kind": "write",
+    "done": true,
+    "chapter": "city2",
+    "stage": 3,
+    "last": null,
+    "slices": 2,
+    "pizzas": 3,
+    "trips": 1,
+    "good": 26,
+    "v3": false,
+    "focusShell": false,
+    "currentStep": null,
+    "count": "",
+    "dialogs": [],
+    "message": "Klaar voor de volgende stap.",
+    "messageClass": "message good",
+    "prompt": "Deze halte is afgerond!",
+    "meter": "2 van 8",
+    "active": "ninoSchoolMapOnly v3On v3Shell v3Home"
+   }
+  },
+  "phone-small": {
+   "beats": {
+    "discover": {
+     "mode": "discover",
+     "id": "city-7",
+     "name": "Palermo",
+     "answered": false,
+     "paused": false,
+     "kind": "discover",
+     "done": false,
+     "chapter": "city2",
+     "stage": 1,
+     "last": null,
+     "slices": 6,
+     "pizzas": 1,
+     "trips": 0,
+     "good": 14,
+     "v3": true,
+     "focusShell": true,
+     "currentStep": "discover",
+     "count": "1 / 6",
+     "dialogs": [],
+     "message": "Kijk goed naar de plek en zeg de naam.",
+     "messageClass": "message ",
+     "prompt": "Palermo",
+     "meter": "6 van 8",
+     "active": "ninoSchoolMapOnly v3On v3Shell lessonFocus v3Les",
+     "layout": {
+      "primaries": [
+       "Bekeken · verder →"
+      ],
+      "overlaps": [],
+      "clipped": [],
+      "small": [],
+      "v2Chrome": [],
+      "sheetCollapsed": false,
+      "horizontalOverflow": false
+     }
+    },
+    "point-q": {
+     "mode": "point",
+     "id": "city-10",
+     "name": "Turijn",
+     "answered": false,
+     "paused": false,
+     "kind": "point",
+     "done": false,
+     "chapter": "city2",
+     "stage": 1,
+     "last": null,
+     "slices": 6,
+     "pizzas": 1,
+     "trips": 0,
+     "good": 14,
+     "v3": true,
+     "focusShell": true,
+     "currentStep": "point",
+     "count": "1 / 6",
+     "dialogs": [],
+     "message": "Jij bent aan zet.",
+     "messageClass": "message ",
+     "prompt": "Waar ligt Turijn?",
+     "meter": "6 van 8",
+     "active": "ninoSchoolMapOnly v3On v3Shell v3Les lessonFocus",
+     "layout": {
+      "primaries": [],
+      "overlaps": [],
+      "clipped": [],
+      "small": [],
+      "v2Chrome": [],
+      "sheetCollapsed": false,
+      "horizontalOverflow": false
+     }
+    },
+    "point-wrong": {
+     "mode": "point",
+     "id": "city-10",
+     "name": "Turijn",
+     "answered": true,
+     "paused": false,
+     "kind": "point",
+     "done": false,
+     "chapter": "city2",
+     "stage": 1,
+     "last": {
+      "ok": false
+     },
+     "slices": 6,
+     "pizzas": 1,
+     "trips": 0,
+     "good": 14,
+     "v3": true,
+     "focusShell": true,
+     "currentStep": "point",
+     "count": "1 / 7",
+     "dialogs": [],
+     "message": "Dat was Bari. Gezocht: Turijn.",
+     "messageClass": "message bad",
+     "prompt": "Waar ligt Turijn?",
+     "meter": "6 van 8",
+     "active": {},
+     "layout": {
+      "primaries": [
+       "Volgende →"
+      ],
+      "overlaps": [],
+      "clipped": [],
+      "small": [],
+      "v2Chrome": [],
+      "sheetCollapsed": false,
+      "horizontalOverflow": false
+     }
+    },
+    "point-ok": {
+     "mode": "point",
+     "id": "city-11",
+     "name": "Venetië",
+     "answered": true,
+     "paused": false,
+     "kind": "point",
+     "done": false,
+     "chapter": "city2",
+     "stage": 1,
+     "last": {
+      "ok": true
+     },
+     "slices": 7,
+     "pizzas": 1,
+     "trips": 0,
+     "good": 15,
+     "v3": true,
+     "focusShell": true,
+     "currentStep": "point",
+     "count": "2 / 7",
+     "dialogs": [],
+     "message": "Goed gevonden!",
+     "messageClass": "message good",
+     "prompt": "Waar ligt Venetië?",
+     "meter": "7 van 8",
+     "active": {},
+     "layout": {
+      "primaries": [
+       "Volgende →"
+      ],
+      "overlaps": [],
+      "clipped": [],
+      "small": [],
+      "v2Chrome": [],
+      "sheetCollapsed": false,
+      "horizontalOverflow": false
+     }
+    },
+    "pizza": {
+     "mode": "point",
+     "id": "city-8",
+     "name": "Pisa",
+     "answered": true,
+     "paused": false,
+     "kind": "point",
+     "done": false,
+     "chapter": "city2",
+     "stage": 1,
+     "last": {
+      "ok": true
+     },
+     "slices": 0,
+     "pizzas": 2,
+     "trips": 0,
+     "good": 16,
+     "v3": true,
+     "focusShell": true,
+     "currentStep": "point",
+     "count": "3 / 7",
+     "dialogs": [
+      "pizzaCelebration"
+     ],
+     "message": "Perfetto! Een pizza compleet.",
+     "messageClass": "message good",
+     "prompt": "Waar ligt Pisa?",
+     "meter": "0 van 8",
+     "active": "button primary",
+     "layout": {
+      "primaries": [
+       "Verder",
+       "Volgende →"
+      ],
+      "overlaps": [],
+      "clipped": [],
+      "small": [],
+      "v2Chrome": [],
+      "sheetCollapsed": false,
+      "horizontalOverflow": false
+     }
+    },
+    "pause": {
+     "mode": "point",
+     "id": "city-9",
+     "name": "Rome",
+     "answered": true,
+     "paused": true,
+     "kind": "point",
+     "done": false,
+     "chapter": "city2",
+     "stage": 1,
+     "last": null,
+     "slices": 3,
+     "pizzas": 2,
+     "trips": 0,
+     "good": 19,
+     "v3": true,
+     "focusShell": false,
+     "currentStep": "point",
+     "count": "",
+     "dialogs": [],
+     "message": "Goed gevonden!",
+     "messageClass": "message good",
+     "prompt": "Waar ligt Rome?",
+     "meter": "3 van 8",
+     "active": "finishTitle",
+     "layout": {
+      "primaries": [
+       "Volgende ronde →"
+      ],
+      "overlaps": [],
+      "clipped": [],
+      "small": [],
+      "v2Chrome": [],
+      "sheetCollapsed": false,
+      "horizontalOverflow": false
+     }
+    },
+    "point-done": {
+     "mode": "result",
+     "id": null,
+     "name": null,
+     "answered": true,
+     "paused": false,
+     "kind": "point",
+     "done": true,
+     "chapter": "city2",
+     "stage": 2,
+     "last": null,
+     "slices": 4,
+     "pizzas": 2,
+     "trips": 0,
+     "good": 20,
+     "v3": true,
+     "focusShell": false,
+     "currentStep": null,
+     "count": "",
+     "dialogs": [],
+     "message": "Klaar voor de volgende stap.",
+     "messageClass": "message good",
+     "prompt": "Les afgerond!",
+     "meter": "4 van 8",
+     "active": "finishTitle",
+     "layout": {
+      "primaries": [
+       "Volgende les →"
+      ],
+      "overlaps": [],
+      "clipped": [],
+      "small": [],
+      "v2Chrome": [],
+      "sheetCollapsed": false,
+      "horizontalOverflow": false
+     }
+    },
+    "write-q": {
+     "mode": "write",
+     "id": "city-8",
+     "name": "Pisa",
+     "answered": false,
+     "paused": false,
+     "kind": "write",
+     "done": false,
+     "chapter": "city2",
+     "stage": 2,
+     "last": null,
+     "slices": 4,
+     "pizzas": 2,
+     "trips": 0,
+     "good": 20,
+     "v3": true,
+     "focusShell": true,
+     "currentStep": "write",
+     "count": "1 / 6",
+     "dialogs": [],
+     "message": "Jij bent aan zet.",
+     "messageClass": "message ",
+     "prompt": "Hoe heet deze plek?",
+     "meter": "4 van 8",
+     "active": "ninoSchoolMapOnly v3On v3Shell v3Les lessonFocus",
+     "layout": {
+      "primaries": [
+       "Controleer"
+      ],
+      "overlaps": [],
+      "clipped": [],
+      "small": [],
+      "v2Chrome": [],
+      "sheetCollapsed": false,
+      "horizontalOverflow": false
+     }
+    },
+    "write-wrong": {
+     "mode": "write",
+     "id": "city-8",
+     "name": "Pisa",
+     "answered": true,
+     "paused": false,
+     "kind": "write",
+     "done": false,
+     "chapter": "city2",
+     "stage": 2,
+     "last": {
+      "ok": false
+     },
+     "slices": 4,
+     "pizzas": 2,
+     "trips": 0,
+     "good": 20,
+     "v3": true,
+     "focusShell": true,
+     "currentStep": "write",
+     "count": "1 / 7",
+     "dialogs": [],
+     "message": "De juiste naam is Pisa.",
+     "messageClass": "message bad",
+     "prompt": "Hoe heet deze plek?",
+     "meter": "4 van 8",
+     "active": "ninoSchoolMapOnly v3On v3Shell v3Les lessonFocus",
+     "layout": {
+      "primaries": [
+       "Volgende →"
+      ],
+      "overlaps": [],
+      "clipped": [],
+      "small": [],
+      "v2Chrome": [],
+      "sheetCollapsed": false,
+      "horizontalOverflow": false
+     }
+    },
+    "write-ok": {
+     "mode": "write",
+     "id": "city-11",
+     "name": "Venetië",
+     "answered": true,
+     "paused": false,
+     "kind": "write",
+     "done": false,
+     "chapter": "city2",
+     "stage": 2,
+     "last": {
+      "ok": true
+     },
+     "slices": 5,
+     "pizzas": 2,
+     "trips": 0,
+     "good": 21,
+     "v3": true,
+     "focusShell": true,
+     "currentStep": "write",
+     "count": "2 / 7",
+     "dialogs": [],
+     "message": "Goed geschreven!",
+     "messageClass": "message good",
+     "prompt": "Hoe heet deze plek?",
+     "meter": "5 van 8",
+     "active": "ninoSchoolMapOnly v3On v3Shell v3Les lessonFocus",
+     "layout": {
+      "primaries": [
+       "Volgende →"
+      ],
+      "overlaps": [],
+      "clipped": [],
+      "small": [],
+      "v2Chrome": [],
+      "sheetCollapsed": false,
+      "horizontalOverflow": false
+     }
+    },
+    "vespa": {
+     "mode": "write",
+     "id": "city-10",
+     "name": "Turijn",
+     "answered": true,
+     "paused": false,
+     "kind": "write",
+     "done": false,
+     "chapter": "city2",
+     "stage": 2,
+     "last": {
+      "ok": true
+     },
+     "slices": 0,
+     "pizzas": 3,
+     "trips": 1,
+     "good": 24,
+     "v3": true,
+     "focusShell": true,
+     "currentStep": "write",
+     "count": "5 / 7",
+     "dialogs": [
+      "vespaRide"
+     ],
+     "message": "Andiamo! Nino rijdt naar Florence.",
+     "messageClass": "message good",
+     "prompt": "Hoe heet deze plek?",
+     "meter": "0 van 8",
+     "active": "button",
+     "layout": {
+      "primaries": [
+       "Volgende →"
+      ],
+      "overlaps": [],
+      "clipped": [],
+      "small": [],
+      "v2Chrome": [],
+      "sheetCollapsed": false,
+      "horizontalOverflow": false
+     }
+    },
+    "finish": {
+     "mode": "result",
+     "id": null,
+     "name": null,
+     "answered": true,
+     "paused": false,
+     "kind": "write",
+     "done": true,
+     "chapter": "city2",
+     "stage": 3,
+     "last": null,
+     "slices": 2,
+     "pizzas": 3,
+     "trips": 1,
+     "good": 26,
+     "v3": true,
+     "focusShell": false,
+     "currentStep": null,
+     "count": "",
+     "dialogs": [],
+     "message": "Klaar voor de volgende stap.",
+     "messageClass": "message good",
+     "prompt": "Deze halte is afgerond!",
+     "meter": "2 van 8",
+     "active": "finishTitle",
+     "layout": {
+      "primaries": [
+       "Bekijk in Reisboekje"
+      ],
+      "overlaps": [],
+      "clipped": [],
+      "small": [],
+      "v2Chrome": [],
+      "sheetCollapsed": false,
+      "horizontalOverflow": false
+     }
+    }
+   },
+   "layout": {
+    "discover": {
+     "primaries": [
+      "Bekeken · verder →"
+     ],
+     "overlaps": [],
+     "clipped": [],
+     "small": [],
+     "v2Chrome": [],
+     "sheetCollapsed": false,
+     "horizontalOverflow": false
+    },
+    "point-q": {
+     "primaries": [],
+     "overlaps": [],
+     "clipped": [],
+     "small": [],
+     "v2Chrome": [],
+     "sheetCollapsed": false,
+     "horizontalOverflow": false
+    },
+    "point-wrong": {
+     "primaries": [
+      "Volgende →"
+     ],
+     "overlaps": [],
+     "clipped": [],
+     "small": [],
+     "v2Chrome": [],
+     "sheetCollapsed": false,
+     "horizontalOverflow": false
+    },
+    "point-ok": {
+     "primaries": [
+      "Volgende →"
+     ],
+     "overlaps": [],
+     "clipped": [],
+     "small": [],
+     "v2Chrome": [],
+     "sheetCollapsed": false,
+     "horizontalOverflow": false
+    },
+    "pizza": {
+     "primaries": [
+      "Verder",
+      "Volgende →"
+     ],
+     "overlaps": [],
+     "clipped": [],
+     "small": [],
+     "v2Chrome": [],
+     "sheetCollapsed": false,
+     "horizontalOverflow": false
+    },
+    "pause": {
+     "primaries": [
+      "Volgende ronde →"
+     ],
+     "overlaps": [],
+     "clipped": [],
+     "small": [],
+     "v2Chrome": [],
+     "sheetCollapsed": false,
+     "horizontalOverflow": false
+    },
+    "point-done": {
+     "primaries": [
+      "Volgende les →"
+     ],
+     "overlaps": [],
+     "clipped": [],
+     "small": [],
+     "v2Chrome": [],
+     "sheetCollapsed": false,
+     "horizontalOverflow": false
+    },
+    "write-q": {
+     "primaries": [
+      "Controleer"
+     ],
+     "overlaps": [],
+     "clipped": [],
+     "small": [],
+     "v2Chrome": [],
+     "sheetCollapsed": false,
+     "horizontalOverflow": false
+    },
+    "write-wrong": {
+     "primaries": [
+      "Volgende →"
+     ],
+     "overlaps": [],
+     "clipped": [],
+     "small": [],
+     "v2Chrome": [],
+     "sheetCollapsed": false,
+     "horizontalOverflow": false
+    },
+    "write-ok": {
+     "primaries": [
+      "Volgende →"
+     ],
+     "overlaps": [],
+     "clipped": [],
+     "small": [],
+     "v2Chrome": [],
+     "sheetCollapsed": false,
+     "horizontalOverflow": false
+    },
+    "vespa": {
+     "primaries": [
+      "Volgende →"
+     ],
+     "overlaps": [],
+     "clipped": [],
+     "small": [],
+     "v2Chrome": [],
+     "sheetCollapsed": false,
+     "horizontalOverflow": false
+    },
+    "finish": {
+     "primaries": [
+      "Bekijk in Reisboekje"
+     ],
+     "overlaps": [],
+     "clipped": [],
+     "small": [],
+     "v2Chrome": [],
+     "sheetCollapsed": false,
+     "horizontalOverflow": false
+    }
+   },
+   "events": [
+    {
+     "dialog": "pizzaCelebration",
+     "pizzasBefore": 1,
+     "pizzasAfter": 2,
+     "tripsBefore": 0,
+     "tripsAfter": 0
+    },
+    {
+     "dialog": "pizzaCelebration",
+     "pizzasBefore": 2,
+     "pizzasAfter": 3,
+     "tripsBefore": 0,
+     "tripsAfter": 1
+    },
+    {
+     "dialog": "vespaRide",
+     "pizzasBefore": 2,
+     "pizzasAfter": 3,
+     "tripsBefore": 0,
+     "tripsAfter": 1
+    },
+    {
+     "dialog": "vespaRide",
+     "pizzasBefore": 2,
+     "pizzasAfter": 3,
+     "tripsBefore": 0,
+     "tripsAfter": 1
+    }
+   ],
+   "checks": {
+    "discoverTitleIsPlace": true,
+    "discoverDoneScreen": true,
+    "pointWrongNotOk": true,
+    "pointTaps": [
      {
       "x": 162.66959381103516,
       "y": 247.7408218383789,
@@ -3651,6 +3631,26 @@
       "onMap": true,
       "v3": false,
       "freedMap": true,
+      "sheetOpenAfter": true,
+      "via": "tap",
+      "ok": true
+     },
+     {
+      "x": 137.73654174804688,
+      "y": 247.6969985961914,
+      "onMap": true,
+      "v3": false,
+      "picker": true,
+      "via": "tap",
+      "ok": true
+     },
+     {
+      "x": 165.3830108642578,
+      "y": 339.6395263671875,
+      "onMap": true,
+      "v3": false,
+      "freedMap": true,
+      "picker": true,
       "sheetOpenAfter": true,
       "via": "tap",
       "ok": true
@@ -3821,43 +3821,43 @@
   },
   "pointByRealTap": {
    "desktop": [
+    "tap+kiezer",
     "tap",
     "tap",
+    "tap",
+    "tap",
+    "tap"
+   ],
+   "ipad-landscape": [
+    "tap",
+    "tap+vrijmaken",
     "tap",
     "tap",
     "tap+kiezer",
     "tap"
    ],
-   "ipad-landscape": [
-    "tap",
-    "tap",
-    "tap",
-    "tap+kiezer",
-    "tap",
-    "tap+vrijmaken"
-   ],
    "ipad-portrait": [
     "tap",
+    "tap",
+    "tap",
     "tap+kiezer",
-    "tap",
-    "tap",
     "tap",
     "tap"
    ],
    "phone": [
+    "tap+kiezer",
+    "tap",
     "tap+vrijmaken",
     "tap+kiezer",
     "tap+kiezer",
-    "tap",
-    "tap",
-    "tap+kiezer"
+    "tap"
    ],
    "phone-small": [
-    "tap+kiezer+vrijmaken",
-    "tap+kiezer",
     "tap",
     "tap+kiezer",
     "tap+vrijmaken",
+    "tap+kiezer",
+    "tap+kiezer+vrijmaken",
     "tap"
    ]
   },

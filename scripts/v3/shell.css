@@ -56,11 +56,13 @@ body.v3Les .v3LesForm{display:inline-flex;align-items:center;min-height:44px;pad
  body.v3Les .v3ShellNav .v3Settings{margin:0}
  /* Focus Mode positions its sheet itself (top, keyboard); V3 lifts it above the tab bar and gives the map room. */
  body.v3Les[data-focus-mode=true] .mapCard{height:calc(var(--focus-layout-height,100svh) - var(--v3-lesbar) - 18px - var(--focus-safe-top,0px) - var(--v3-tab))!important}
- body.v3Les :is(#focusAnswerSheet,#focusLearnBar){translate:0 calc(-1 * var(--v3-tab))}
+ body.v3Les :is(#focusAnswerSheet,#focusLearnBar){translate:0 calc(-1 * var(--v3-tab));transition:translate 0s .4s}
  body.v3Les:not([data-focus-mode=true]) main.layout{padding-bottom:calc(var(--v3-tab) + 16px)!important}
  /* While typing, the keyboard owns the bottom: the tab bar steps aside and the sheet stays where Focus Mode puts it. */
- body.v3Les:has(#answer:focus) .v3ShellNav{display:none}
- body.v3Les:has(#answer:focus) :is(#focusAnswerSheet,#focusLearnBar){translate:none}
+ /* Coming back is delayed, so a tap that ends the typing (Controleer, Overslaan) lands where it started. */
+ body.v3Les .v3ShellNav{transition:visibility 0s .4s}
+ body.v3Les:has(#answer:focus) .v3ShellNav{visibility:hidden;transition:none}
+ body.v3Les:has(#answer:focus) :is(#focusAnswerSheet,#focusLearnBar){translate:none;transition:none}
 }
 @media (max-width:359px){body.v3Les .v3ShellNav .v3NavItem span{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)}}
 
@@ -85,3 +87,46 @@ body.v3Shell .schoolbladButton{display:none!important}
 @media (max-width:767px){.v3LesBar .v3LesSchool span{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)}.v3LesBar .v3LesSchool{width:44px;padding:0;justify-content:center}}
 
 .v3 .v3School[hidden]{display:none!important}
+
+/* Toets result (§ 2.3) and A4 print. */
+.v3ToetsHead{display:flex;align-items:center;gap:var(--v3-s5)}
+.v3ToetsNino{flex:none;width:120px;height:120px}
+.v3ToetsNino>*{width:100%;height:100%}
+.v3ToetsNino img{width:100%;height:100%;object-fit:contain}
+.v3ToetsHead{margin-bottom:var(--v3-s3)}
+.v3View .v3ToetsScore{font-size:64px;line-height:1;font-variant-numeric:tabular-nums}
+.v3ToetsBody{display:grid;grid-template-columns:minmax(0,1.3fr) minmax(260px,1fr);gap:var(--v3-s6);align-items:start}
+.v3ToetsKaart{margin:0;min-width:0}
+.v3ToetsKaart .v3ToetsMap{width:100%;height:min(62vh,600px);border-radius:var(--v3-radius)}
+.v3Marks .v3Mark circle{stroke:#fff;stroke-width:3}
+.v3Marks .v3Mark text{font:700 17px/1 var(--v3-font,system-ui);fill:#fff;pointer-events:none}
+.v3Marks .v3Mark.ok circle{fill:#2f7d4f}
+.v3Marks .v3Mark.bad circle{fill:#b8382b}
+.v3Marks .v3Mark text.v3MarkName{font:700 15px/1 var(--v3-font,system-ui);fill:#1d2523;paint-order:stroke;stroke:#fff;stroke-width:4px;stroke-linejoin:round}
+.v3ToetsSide{display:grid;gap:var(--v3-s5);align-content:start}
+.v3ToetsFouten{list-style:none;margin:0;padding:0;display:grid;gap:var(--v3-s2)}
+.v3ToetsFouten li{display:flex;justify-content:space-between;gap:var(--v3-s3);padding:var(--v3-s2) var(--v3-s3);border-radius:10px;background:var(--v3-surface);box-shadow:inset 0 0 0 1px var(--v3-line)}
+.v3ToetsFouten li span{color:var(--v3-ink2)}
+.v3ToetsActions{display:flex;flex-wrap:wrap;gap:var(--v3-s2)}
+.v3ToetsActions .v3Btn{min-height:44px;padding:0 var(--v3-s4);text-decoration:none}
+.v3ToetsActions .v3Btn:not(.primary){background:var(--v3-surface);box-shadow:inset 0 0 0 1px var(--v3-line);color:var(--v3-ink)}
+.v3ToetsActions .primary{flex:1 0 100%}
+.v3ToetsStatus:empty{display:none}
+.v3ToetsCopy{width:100%;min-height:90px}
+@media (max-width:1023px){.v3ToetsBody{grid-template-columns:1fr}.v3ToetsKaart .v3ToetsMap{height:420px}}
+@media (max-width:767px){.v3View .v3ToetsScore{font-size:48px}.v3ToetsNino{width:88px;height:88px}.v3ToetsKaart .v3ToetsMap{height:340px}}
+.v3Print{display:none}
+@media print{
+ @page{size:A4 portrait;margin:14mm}
+ body.v3Printing>:not(.v3Print){display:none!important}
+ body.v3Printing{background:#fff!important;padding:0!important;margin:0!important}
+ body.v3Printing .v3Print{display:block;color:#000;font:12pt/1.4 system-ui,sans-serif}
+ .v3Print h1{font-size:20pt;margin:0 0 4mm}
+ .v3PrintMeta{display:flex;justify-content:space-between;margin:0 0 4mm}
+ .v3PrintScore{font-size:28pt;font-weight:700;margin:0}
+ .v3PrintOnderwerp{margin:0 0 4mm}
+ .v3Print .v3PrintMap.v3Map{display:block;width:100%;height:150mm;max-height:none;border:1px solid #999;border-radius:0}
+ .v3Print .v3ToetsFouten{grid-template-columns:1fr 1fr;column-gap:4mm;row-gap:1.5mm}
+ .v3Print .v3ToetsFouten li{padding:1mm 2mm}
+ .v3Print .v3ToetsFouten li{box-shadow:none;border:1px solid #bbb;break-inside:avoid}
+}

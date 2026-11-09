@@ -94,9 +94,10 @@
 
  /* Toets (§ 2) and Voortgang (§ 3): their views; content follows in toets.js and voortgang.js. */
  const title=(text,id)=>{const h=make('h1',null,text);h.id=id;h.tabIndex=-1;return h;};
- V.addView('toets','Toets',view=>{if(!view.firstChild)view.append(title('Toets','v3ToetsTitle'));});
  V.addView('voortgang','Voortgang',view=>{if(!view.firstChild)view.append(title('Voortgang','v3VoortgangTitle'));});
- V.shell={go,currentTab,atHome,lessonTab,toHome,show,field,chip,groupChips,marks,get suspended(){return suspended;}};
+ // Start a free exercise from elsewhere (Toets › Oefen deze fouten): same path as Oefenen › Start.
+ function practice(form,group){pick.form=form;pick.group=group;startPractice();}
+ V.shell={go,currentTab,atHome,lessonTab,toHome,show,field,chip,groupChips,marks,practice,get suspended(){return suspended;}};
  V.go=go;V.currentTab=currentTab;
 
  /* V2 chrome that V3 replaces everywhere: header, the V2 tabs and Focus Mode's menu (all reachable through the

@@ -54,7 +54,7 @@ async def main():
                 await blur(); await wait(150)  # phone: the tab bar steps aside while the answer field has focus
                 await click(f'.v3Side [data-nav={t}]'); await wait()
             async def practice(form, group='city1'):
-                await nav('oefenen'); await click(f'.v3Forms [data-form={form}]'); await click(f'.v3Chips [data-group={group}]'); await click('.v3Start'); await wait(900)
+                await nav('oefenen'); await click(f'.v3View-oefenen .v3Forms [data-form={form}]'); await click(f'.v3View-oefenen .v3Chips [data-group={group}]'); await click('.v3View-oefenen .v3Start'); await wait(900)
 
             await pg.goto(HTML.as_uri() + '#bezig'); await wait(1500)
             # Reis: button, Escape → focus back; key S.

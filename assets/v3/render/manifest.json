@@ -30,7 +30,7 @@
   },
   {
    "id": "NINO-PORTRET",
-   "status": "ter beoordeling eigenaar; Hermes hertest",
+   "status": "eigenaar akkoord op correctie (gesloten werkshirt, 2026-11-09); Hermes PASS (05ab1d0, bewijs qa/v3-art-05ab1d0 @ 6fb8831)",
    "note": "derde versie: gesloten blauw werkshirt (besluit 9-11); achtergrond verwijderd",
    "master": {
     "path": "assets/v3/render/masters/NINO-PORTRET.png",
@@ -66,7 +66,7 @@
   {
    "id": "SCENE-ROMA",
    "chapter": "city2",
-   "status": "ter beoordeling eigenaar; Hermes hertest",
+   "status": "eigenaar akkoord op correctie (gesloten werkshirt, 2026-11-09); Hermes PASS (05ab1d0, bewijs qa/v3-art-05ab1d0 @ 6fb8831)",
    "note": "derde versie: gesloten blauw werkshirt (besluit 9-11); Vespa zonder merktekens",
    "master": {
     "path": "assets/v3/render/masters/SCENE-ROMA.png",
@@ -148,7 +148,7 @@
   {
    "id": "SCENE-NAPOLI",
    "chapter": "city4",
-   "status": "ter beoordeling eigenaar; Hermes hertest",
+   "status": "eigenaar akkoord op correctie (gesloten werkshirt, 2026-11-09); Hermes PASS (05ab1d0, bewijs qa/v3-art-05ab1d0 @ 6fb8831)",
    "note": "derde versie: gesloten blauw werkshirt, omgeslagen broek (besluit 9-11); Vespa zonder merktekens",
    "master": {
     "path": "assets/v3/render/masters/SCENE-NAPOLI.png",

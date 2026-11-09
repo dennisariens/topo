@@ -205,6 +205,31 @@
     ],
     "alpha": false
    }
+  },
+  {
+   "id": "BG-03",
+   "status": "ter beoordeling eigenaar",
+   "note": "Lanczos-upscale naar 2880x1800; midden feller dan BG-01/02 (verzadigde zee)",
+   "master": {
+    "path": "assets/v3/render/masters/BG-03-kust.png",
+    "bytes": 2463310,
+    "sha256": "ecbc8c14cc6415ed433270adf7096e56921432c90ef1b8ceec8d9d1a4a68e11c",
+    "size": [
+     1586,
+     992
+    ],
+    "alpha": false
+   },
+   "export": {
+    "path": "assets/v3/render/exports/BG-03-kust-2880.webp",
+    "bytes": 452702,
+    "sha256": "b4a423ef64fdb58773aa99659ec23b58283b1cf96763f591d41d09eb6619f20b",
+    "size": [
+     2880,
+     1800
+    ],
+    "alpha": false
+   }
   }
  ]
 }

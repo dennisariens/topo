@@ -1,3 +1,7 @@
+# Reliëf z8 — reviewkandidaat (9 november 2026)
+
+Op `v3/relief-z8` staat een afzonderlijke z8-kandidaat (1780×2470, 153.026 bytes). Z9 is op eigenaarsinstructie uitgesteld. Hoogtechecks slagen; numerieke registratie blijft gelijk. DEM-nulhoogtelijn versus bestaande eilandcoast wijkt maximaal 2,22/2,84 SVG px af; na melding van de stop heeft de eigenaar opdracht gegeven door te gaan. De discrepantie blijft open en is geen bewezen affiene fout. [Bewijs en beperkingen](qa/relief-z8/README.md). Geen runtimewijziging of integratie; kandidaat uitsluitend voor review op deze branch.
+
 # TOPO V3 — golden screen 1: Reis (9 november 2026)
 
 Branch `codex/topo-v3` vanaf de V2-afsluiting `f53dc0b` (voorouder `v2.0.2` = `83ec1ce` gecontroleerd). Reis v3b volgt de conceptrichting van de eigenaar: zijbalk · hoofdstukken · echte kaart · één actie, met Schoolkaart/Reliëf en landthema's (Italia, Viola). Presentatielaag `scripts/v3/` over de ongewijzigde V2.0.2-app; acties drukken de bestaande V2-knoppen. Preview: `node scripts/build-v3-preview.mjs` (niet meer in Git). [Audit](v3/AUDIT.md) · [ontwerpsysteem V3](DESIGN_SYSTEM.md) · [feedbacklog](v3/DESIGN_FEEDBACK.md) · [bewijs en open punten](qa/v3-reis/README.md). Eigenaarsbeoordeling open; daarna de route hoofdstuk → kaartles → feedback → beloning → Reisboekje. Geen merge, deployment of downloadvervanging.

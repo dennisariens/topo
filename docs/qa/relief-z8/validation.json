@@ -1,0 +1,123 @@
+{
+  "z9": "deferred by owner",
+  "frame": [
+    890,
+    1235
+  ],
+  "raster": [
+    1780,
+    2470
+  ],
+  "landmark_checks": [
+    {
+      "name": "Mont Blanc / western Alps",
+      "lon_lat": [
+        6.865,
+        45.833
+      ],
+      "svg_xy": [
+        152.075,
+        301.6089999999999
+      ],
+      "nearby_max_elevation_m": 4656.706320663728,
+      "expected_range_m": [
+        2500,
+        4900
+      ],
+      "passed": true
+    },
+    {
+      "name": "Gran Sasso / central Apennines",
+      "lon_lat": [
+        13.565,
+        42.47
+      ],
+      "svg_xy": [
+        520.5749999999999,
+        560.56
+      ],
+      "nearby_max_elevation_m": 2594.255856266558,
+      "expected_range_m": [
+        1400,
+        3100
+      ],
+      "passed": true
+    },
+    {
+      "name": "Etna",
+      "lon_lat": [
+        14.995,
+        37.75
+      ],
+      "svg_xy": [
+        599.2249999999999,
+        924.0
+      ],
+      "nearby_max_elevation_m": 3241.7656168982803,
+      "expected_range_m": [
+        2000,
+        3500
+      ],
+      "passed": true
+    },
+    {
+      "name": "Po plain near Ferrara",
+      "lon_lat": [
+        11.62,
+        44.84
+      ],
+      "svg_xy": [
+        413.5999999999999,
+        378.0699999999997
+      ],
+      "nearby_max_elevation_m": 13.443129719357902,
+      "expected_range_m": [
+        -10,
+        100
+      ],
+      "passed": true
+    }
+  ],
+  "registration": {
+    "canonical_land_vertices": 6373,
+    "max_error_svg_px": 6.915300366811402e-13,
+    "clip": "same canonical land paths; no independent raster coastline"
+  },
+  "coast_dem_zero_contour": {
+    "method": "Nearest interpolated raw DEM zero crossing to canonical island coast, sampled every <=0.5 SVG px. Includes source shoreline/bathymetry differences; not a pure affine transform test. Units are SVG px (DPR2 raster px / 2).",
+    "results": [
+      {
+        "name": "Sicili\u00eb",
+        "samples": 1175,
+        "max_distance_svg_px": 2.222428968847658,
+        "p95_distance_svg_px": 1.2677381258971123,
+        "worst_svg_xy": [
+          604.2915384615385,
+          1005.6815384615385
+        ],
+        "within_1px": false
+      },
+      {
+        "name": "Sardini\u00eb",
+        "samples": 1154,
+        "max_distance_svg_px": 2.840232822489305,
+        "p95_distance_svg_px": 1.5580516403215205,
+        "worst_svg_xy": [
+          297.222,
+          665.9659999999999
+        ],
+        "within_1px": false
+      }
+    ]
+  },
+  "bytes": {
+    "z7": 59152,
+    "z8": 153026,
+    "budget": 1000000,
+    "actual_html_growth": 0,
+    "future_base64_replacement_delta": 125164
+  },
+  "owner_resumption": "Owner instructed continue after the reported shoreline discrepancy; no geometry correction or integration approval implied",
+  "status": "review required: coastline discrepancy >1px",
+  "index_sha256": "3aced3c31259011b0af2947c78f71965cb4beb2e88c69d1663e61792b0304f5a"
+}

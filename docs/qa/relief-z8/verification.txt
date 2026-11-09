@@ -1,0 +1,50 @@
+TOPO relief z8 — verification, 2026-11-09
+Branch: v3/relief-z8; base: afb32d1
+Environment: Node 25.8.2; Python 3.8.2; NumPy 1.24.4; Pillow 10.4.0
+This is a verification summary, not a raw stdout transcript.
+
+PASS (exit 0): npm run lint && npm test && npm run build
+- Full maintained npm test chain completed, no failing stage.
+- Geography/print, learning/route/exam, real DOM/save/reward/import,
+  artwork, lakes, schoolblad, discovery, semantic map hits, focus mode,
+  profile, pizza, moments and UX regression suites passed.
+- Last combined node test group: 33 passed, 0 failed, 0 skipped.
+- Build completed and its embedded syntax/asset/geography checks passed.
+
+PASS (exit 0): python scripts/geography/generate-terrain.py
+  --cache /private/tmp/topo-relief-z8-cache --zoom 8 --dpr 2
+- 208 unique tile URLs, all existing pinned source SHA256 values verified.
+- Documentation hashes verified against existing provenance.
+- 1780 x 2470; 4,396,600 finite elevation samples.
+- All four geographic height-range checks passed.
+- WebP: 153026 bytes; budget 1000000 bytes.
+- WebP SHA256:
+  030190471d196a6ac3b6e21af4156b70c2dbf21fdb5dfeb17c60612b8c5100e8
+- Current generator SHA256 matches committed provenance.
+
+PASS: deliberate corrupted-tile probe
+- Imported generator with fetch returning invalid source bytes.
+- Existing manifest rejected those bytes with Source hash mismatch.
+- Existing output remained byte-for-byte unchanged.
+
+COMPLETED (exit 0): python scripts/geography/qa-relief-z8.py
+  --cache /private/tmp/topo-relief-z8-cache
+- All four side-by-side comparison boards and both coast detail boards rendered.
+- Asset boards visually inspected: Italy, Alps, Apennines and Sicily.
+- Numerical frame/land-vertex mapping: maximum 6.92e-13 SVG px.
+- OPEN, NOT PASS: raw DEM 0m contour versus canonical island shoreline:
+  Sicily max 2.22243 SVG px; Sardinia max 2.84023 SVG px.
+  This includes source shoreline/bathymetry differences and is not proof
+  of an affine-registration error. Full mainland coastline audit not performed.
+- Owner instructed continue after reporting this discrepancy; no correction
+  or integration acceptance is claimed. See validation.json and README.md.
+
+PASS (exit 0): git diff --check
+PASS (exit 0): git diff --exit-code afb32d1 -- index.html
+  assets/discovery/terrain.webp assets/discovery/terrain-provenance.json
+  scripts/learning-engine.js scripts/route-engine.js
+- Protected source files unchanged, including after build.
+- Actual HTML growth 0 bytes. Future base64 replacement delta +125164 bytes.
+
+Not performed: integrated V3 browser/responsive QA (asset not integrated),
+physical iPad/Safari QA, merge, deployment, or z9 generation.

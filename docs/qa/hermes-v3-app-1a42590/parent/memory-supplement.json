@@ -1,0 +1,270 @@
+[
+  {
+    "engine": "chromium",
+    "version": "156.0.8078.4",
+    "records": [
+      {
+        "trial": 0,
+        "loadAndDecodeSettledMs": 2363.20245800016,
+        "candidates": [
+          {
+            "pid": 15712,
+            "ppid": 15710,
+            "rssKiB": 111904,
+            "command": "/Users/dennisariens/Library/Caches/ms-playwright/chromium_headless_shell-1248/chrome-headless-shell-mac-arm64/chrome-headless-shell --disable-field-trial-config --disable-background-networking --disable-background-timer-throttling --disable-backgrounding-occluded-windows --disable-back-forward-cache --disable-breakpad --disable-client-side-phishing-detection --disable-component-extensions-with-background-pages --disable-component-update --no-default-browser-check --disable-default-apps --disable-dev-shm-usage --disable-edgeupdater --disable-extensions --disable-features=AvoidUnnecessaryBeforeUnloadCheckSync,DestroyProfileOnBrowserClose,DialMediaRouteProvider,GlobalMediaControls,HttpsUpgrades,LensOverlay,MediaRouter,PaintHolding,ThirdPartyStoragePartitioning,BlockOriginHeaderModificationOnRedirect,AvoidCorsURLLoaderRestartOnRedirect,Translate,AutoDeElevate,OptimizationHints,NetworkTimeServiceQuerying,AimEnabled,msForceBrowserSignIn,msEdgeUpdateLaunchServicesPreferredVersion --enable-features=CDPScreenshotNewSurface --allow-pre-commit-input --disable-hang-monitor --disable-ipc-flooding-protection --disable-popup-blocking --disable-prompt-on-repost --disable-renderer-backgrounding --disable-updater-scheduler --force-color-profile=srgb --metrics-recording-only --no-first-run --password-store=basic --use-mock-keychain --no-service-autorun --export-tagged-pdf --disable-search-engine-choice-screen --unsafely-disable-devtools-self-xss-warnings --edge-skip-compat-layer-relaunch --disable-infobars --disable-search-engine-choice-screen --disable-sync --enable-unsafe-swiftshader --headless --hide-scrollbars --mute-audio --blink-settings=primaryHoverType=2,availableHoverTypes=2,primaryPointerType=4,availablePointerTypes=4 --no-sandbox --user-data-dir=/Users/dennisariens/.hermes/cache/scratch/playwright_chromiumdev_profile-iZHkfO --remote-debugging-pipe --no-startup-window"
+          },
+          {
+            "pid": 15713,
+            "ppid": 15712,
+            "rssKiB": 81184,
+            "command": "/Users/dennisariens/Library/Caches/ms-playwright/chromium_headless_shell-1248/chrome-headless-shell-mac-arm64/chrome-headless-shell --type=gpu-process --gpu-recent-crash-count=0 --no-sandbox --disable-breakpad --headless --use-angle=swiftshader-webgl --enable-unsafe-swiftshader --gpu-preferences=WAAAAAAAAAAgAAAEAAAAAAAAAAAAAGAAQAAAAAAAAAAAAAAAAAAAADgAAAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAAAAAAKAAAAAAAAAAoAAAAAAAAAAgAAAAAAAAADAAAAAEAAAAAAAAAAAAAAAgAAAAAAAAACAAAAAAAAAA= --shared-files --field-trial-handle=1718379636,r,16246496695740832796,2345426502190426372,262144 --enable-features=CDPScreenshotNewSurface --disable-features=AimEnabled,AutoDeElevate,AvoidCorsURLLoaderRestartOnRedirect,AvoidUnnecessaryBeforeUnloadCheckSync,BlockOriginHeaderModificationOnRedirect,DestroyProfileOnBrowserClose,DialMediaRouteProvider,GlobalMediaControls,HttpsUpgrades,LensOverlay,MediaRouter,NetworkTimeServiceQuerying,OptimizationHints,PaintHolding,ThirdPartyStoragePartitioning,Translate,msEdgeUpdateLaunchServicesPreferredVersion,msForceBrowserSignIn --variations-seed-version --pseudonymization-salt-handle=1935764596,r,14902049266398642805,14604809745424254684,4 --trace-process-track-uuid=3190708988185955192"
+          },
+          {
+            "pid": 15714,
+            "ppid": 15712,
+            "rssKiB": 39040,
+            "command": "/Users/dennisariens/Library/Caches/ms-playwright/chromium_headless_shell-1248/chrome-headless-shell-mac-arm64/chrome-headless-shell --type=utility --utility-sub-type=network.mojom.NetworkService --lang=en-US --service-sandbox-type=none --no-sandbox --use-angle=swiftshader-webgl --use-gl=angle --mute-audio --headless=old --shared-files --field-trial-handle=1718379636,r,16246496695740832796,2345426502190426372,262144 --enable-features=CDPScreenshotNewSurface --disable-features=AimEnabled,AutoDeElevate,AvoidCorsURLLoaderRestartOnRedirect,AvoidUnnecessaryBeforeUnloadCheckSync,BlockOriginHeaderModificationOnRedirect,DestroyProfileOnBrowserClose,DialMediaRouteProvider,GlobalMediaControls,HttpsUpgrades,LensOverlay,MediaRouter,NetworkTimeServiceQuerying,OptimizationHints,PaintHolding,ThirdPartyStoragePartitioning,Translate,msEdgeUpdateLaunchServicesPreferredVersion,msForceBrowserSignIn --variations-seed-version --pseudonymization-salt-handle=1935764596,r,14902049266398642805,14604809745424254684,4 --trace-process-track-uuid=3190708989122997041"
+          },
+          {
+            "pid": 15715,
+            "ppid": 15712,
+            "rssKiB": 741952,
+            "command": "/Users/dennisariens/Library/Caches/ms-playwright/chromium_headless_shell-1248/chrome-headless-shell-mac-arm64/chrome-headless-shell --type=renderer --headless=old --no-sandbox --disable-back-forward-cache --disable-background-timer-throttling --disable-breakpad --force-color-profile=srgb --remote-debugging-pipe --allow-pre-commit-input --blink-settings=primaryHoverType=2,availableHoverTypes=2,primaryPointerType=4,availablePointerTypes=4 --disable-gpu-compositing --lang=en-US --num-raster-threads=4 --enable-zero-copy --enable-gpu-memory-buffer-compositor-resources --enable-main-frame-before-activation --renderer-client-id=4 --launch-time-ticks=41362632177 --shared-files --field-trial-handle=1718379636,r,16246496695740832796,2345426502190426372,262144 --enable-features=CDPScreenshotNewSurface --disable-features=AimEnabled,AutoDeElevate,AvoidCorsURLLoaderRestartOnRedirect,AvoidUnnecessaryBeforeUnloadCheckSync,BlockOriginHeaderModificationOnRedirect,DestroyProfileOnBrowserClose,DialMediaRouteProvider,GlobalMediaControls,HttpsUpgrades,LensOverlay,MediaRouter,NetworkTimeServiceQuerying,OptimizationHints,PaintHolding,ThirdPartyStoragePartitioning,Translate,msEdgeUpdateLaunchServicesPreferredVersion,msForceBrowserSignIn --variations-seed-version --pseudonymization-salt-handle=1935764596,r,14902049266398642805,14604809745424254684,4 --trace-process-track-uuid=3190708990060038890"
+          },
+          {
+            "pid": 15716,
+            "ppid": 15512,
+            "rssKiB": 637072,
+            "command": "/Users/dennisariens/Library/Caches/ms-playwright/chromium_headless_shell-1248/chrome-headless-shell-mac-arm64/chrome-headless-shell --type=renderer --headless=old --no-sandbox --disable-back-forward-cache --disable-background-timer-throttling --disable-breakpad --force-color-profile=srgb --remote-debugging-pipe --allow-pre-commit-input --blink-settings=primaryHoverType=2,availableHoverTypes=2,primaryPointerType=4,availablePointerTypes=4 --disable-gpu-compositing --lang=en-US --num-raster-threads=4 --enable-zero-copy --enable-gpu-memory-buffer-compositor-resources --enable-main-frame-before-activation --renderer-client-id=10 --launch-time-ticks=41363549798 --shared-files --field-trial-handle=1718379636,r,2677258655808308114,6221902721503133403,262144 --enable-features=CDPScreenshotNewSurface --disable-features=AimEnabled,AutoDeElevate,AvoidCorsURLLoaderRestartOnRedirect,AvoidUnnecessaryBeforeUnloadCheckSync,BlockOriginHeaderModificationOnRedirect,DestroyProfileOnBrowserClose,DialMediaRouteProvider,GlobalMediaControls,HttpsUpgrades,LensOverlay,MediaRouter,NetworkTimeServiceQuerying,OptimizationHints,PaintHolding,ThirdPartyStoragePartitioning,Translate,msEdgeUpdateLaunchServicesPreferredVersion,msForceBrowserSignIn --variations-seed-version --pseudonymization-salt-handle=1935764596,r,11828531654770084503,15565307106680931539,4 --trace-process-track-uuid=3190708995682289984"
+          }
+        ],
+        "rssKiBCandidateSum": 1611152,
+        "state": "#bezig fixture, no actual-earned claim; no dataURI hash probes or book traversal before memory sample",
+        "footprintExit": 0,
+        "closedWithBrowserRSSKiBSum": 1611152
+      },
+      {
+        "trial": 1,
+        "loadAndDecodeSettledMs": 2187.1487079988583,
+        "candidates": [
+          {
+            "pid": 15712,
+            "ppid": 15710,
+            "rssKiB": 112992,
+            "command": "/Users/dennisariens/Library/Caches/ms-playwright/chromium_headless_shell-1248/chrome-headless-shell-mac-arm64/chrome-headless-shell --disable-field-trial-config --disable-background-networking --disable-background-timer-throttling --disable-backgrounding-occluded-windows --disable-back-forward-cache --disable-breakpad --disable-client-side-phishing-detection --disable-component-extensions-with-background-pages --disable-component-update --no-default-browser-check --disable-default-apps --disable-dev-shm-usage --disable-edgeupdater --disable-extensions --disable-features=AvoidUnnecessaryBeforeUnloadCheckSync,DestroyProfileOnBrowserClose,DialMediaRouteProvider,GlobalMediaControls,HttpsUpgrades,LensOverlay,MediaRouter,PaintHolding,ThirdPartyStoragePartitioning,BlockOriginHeaderModificationOnRedirect,AvoidCorsURLLoaderRestartOnRedirect,Translate,AutoDeElevate,OptimizationHints,NetworkTimeServiceQuerying,AimEnabled,msForceBrowserSignIn,msEdgeUpdateLaunchServicesPreferredVersion --enable-features=CDPScreenshotNewSurface --allow-pre-commit-input --disable-hang-monitor --disable-ipc-flooding-protection --disable-popup-blocking --disable-prompt-on-repost --disable-renderer-backgrounding --disable-updater-scheduler --force-color-profile=srgb --metrics-recording-only --no-first-run --password-store=basic --use-mock-keychain --no-service-autorun --export-tagged-pdf --disable-search-engine-choice-screen --unsafely-disable-devtools-self-xss-warnings --edge-skip-compat-layer-relaunch --disable-infobars --disable-search-engine-choice-screen --disable-sync --enable-unsafe-swiftshader --headless --hide-scrollbars --mute-audio --blink-settings=primaryHoverType=2,availableHoverTypes=2,primaryPointerType=4,availablePointerTypes=4 --no-sandbox --user-data-dir=/Users/dennisariens/.hermes/cache/scratch/playwright_chromiumdev_profile-iZHkfO --remote-debugging-pipe --no-startup-window"
+          },
+          {
+            "pid": 15713,
+            "ppid": 15712,
+            "rssKiB": 82064,
+            "command": "/Users/dennisariens/Library/Caches/ms-playwright/chromium_headless_shell-1248/chrome-headless-shell-mac-arm64/chrome-headless-shell --type=gpu-process --gpu-recent-crash-count=0 --no-sandbox --disable-breakpad --headless --use-angle=swiftshader-webgl --enable-unsafe-swiftshader --gpu-preferences=WAAAAAAAAAAgAAAEAAAAAAAAAAAAAGAAQAAAAAAAAAAAAAAAAAAAADgAAAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAAAAAAKAAAAAAAAAAoAAAAAAAAAAgAAAAAAAAADAAAAAEAAAAAAAAAAAAAAAgAAAAAAAAACAAAAAAAAAA= --shared-files --field-trial-handle=1718379636,r,16246496695740832796,2345426502190426372,262144 --enable-features=CDPScreenshotNewSurface --disable-features=AimEnabled,AutoDeElevate,AvoidCorsURLLoaderRestartOnRedirect,AvoidUnnecessaryBeforeUnloadCheckSync,BlockOriginHeaderModificationOnRedirect,DestroyProfileOnBrowserClose,DialMediaRouteProvider,GlobalMediaControls,HttpsUpgrades,LensOverlay,MediaRouter,NetworkTimeServiceQuerying,OptimizationHints,PaintHolding,ThirdPartyStoragePartitioning,Translate,msEdgeUpdateLaunchServicesPreferredVersion,msForceBrowserSignIn --variations-seed-version --pseudonymization-salt-handle=1935764596,r,14902049266398642805,14604809745424254684,4 --trace-process-track-uuid=3190708988185955192"
+          },
+          {
+            "pid": 15714,
+            "ppid": 15712,
+            "rssKiB": 39072,
+            "command": "/Users/dennisariens/Library/Caches/ms-playwright/chromium_headless_shell-1248/chrome-headless-shell-mac-arm64/chrome-headless-shell --type=utility --utility-sub-type=network.mojom.NetworkService --lang=en-US --service-sandbox-type=none --no-sandbox --use-angle=swiftshader-webgl --use-gl=angle --mute-audio --headless=old --shared-files --field-trial-handle=1718379636,r,16246496695740832796,2345426502190426372,262144 --enable-features=CDPScreenshotNewSurface --disable-features=AimEnabled,AutoDeElevate,AvoidCorsURLLoaderRestartOnRedirect,AvoidUnnecessaryBeforeUnloadCheckSync,BlockOriginHeaderModificationOnRedirect,DestroyProfileOnBrowserClose,DialMediaRouteProvider,GlobalMediaControls,HttpsUpgrades,LensOverlay,MediaRouter,NetworkTimeServiceQuerying,OptimizationHints,PaintHolding,ThirdPartyStoragePartitioning,Translate,msEdgeUpdateLaunchServicesPreferredVersion,msForceBrowserSignIn --variations-seed-version --pseudonymization-salt-handle=1935764596,r,14902049266398642805,14604809745424254684,4 --trace-process-track-uuid=3190708989122997041"
+          },
+          {
+            "pid": 15715,
+            "ppid": 15712,
+            "rssKiB": 1108096,
+            "command": "/Users/dennisariens/Library/Caches/ms-playwright/chromium_headless_shell-1248/chrome-headless-shell-mac-arm64/chrome-headless-shell --type=renderer --headless=old --no-sandbox --disable-back-forward-cache --disable-background-timer-throttling --disable-breakpad --force-color-profile=srgb --remote-debugging-pipe --allow-pre-commit-input --blink-settings=primaryHoverType=2,availableHoverTypes=2,primaryPointerType=4,availablePointerTypes=4 --disable-gpu-compositing --lang=en-US --num-raster-threads=4 --enable-zero-copy --enable-gpu-memory-buffer-compositor-resources --enable-main-frame-before-activation --renderer-client-id=4 --launch-time-ticks=41362632177 --shared-files --field-trial-handle=1718379636,r,16246496695740832796,2345426502190426372,262144 --enable-features=CDPScreenshotNewSurface --disable-features=AimEnabled,AutoDeElevate,AvoidCorsURLLoaderRestartOnRedirect,AvoidUnnecessaryBeforeUnloadCheckSync,BlockOriginHeaderModificationOnRedirect,DestroyProfileOnBrowserClose,DialMediaRouteProvider,GlobalMediaControls,HttpsUpgrades,LensOverlay,MediaRouter,NetworkTimeServiceQuerying,OptimizationHints,PaintHolding,ThirdPartyStoragePartitioning,Translate,msEdgeUpdateLaunchServicesPreferredVersion,msForceBrowserSignIn --variations-seed-version --pseudonymization-salt-handle=1935764596,r,14902049266398642805,14604809745424254684,4 --trace-process-track-uuid=3190708990060038890"
+          },
+          {
+            "pid": 15716,
+            "ppid": 15512,
+            "rssKiB": 686048,
+            "command": "/Users/dennisariens/Library/Caches/ms-playwright/chromium_headless_shell-1248/chrome-headless-shell-mac-arm64/chrome-headless-shell --type=renderer --headless=old --no-sandbox --disable-back-forward-cache --disable-background-timer-throttling --disable-breakpad --force-color-profile=srgb --remote-debugging-pipe --allow-pre-commit-input --blink-settings=primaryHoverType=2,availableHoverTypes=2,primaryPointerType=4,availablePointerTypes=4 --disable-gpu-compositing --lang=en-US --num-raster-threads=4 --enable-zero-copy --enable-gpu-memory-buffer-compositor-resources --enable-main-frame-before-activation --renderer-client-id=10 --launch-time-ticks=41363549798 --shared-files --field-trial-handle=1718379636,r,2677258655808308114,6221902721503133403,262144 --enable-features=CDPScreenshotNewSurface --disable-features=AimEnabled,AutoDeElevate,AvoidCorsURLLoaderRestartOnRedirect,AvoidUnnecessaryBeforeUnloadCheckSync,BlockOriginHeaderModificationOnRedirect,DestroyProfileOnBrowserClose,DialMediaRouteProvider,GlobalMediaControls,HttpsUpgrades,LensOverlay,MediaRouter,NetworkTimeServiceQuerying,OptimizationHints,PaintHolding,ThirdPartyStoragePartitioning,Translate,msEdgeUpdateLaunchServicesPreferredVersion,msForceBrowserSignIn --variations-seed-version --pseudonymization-salt-handle=1935764596,r,11828531654770084503,15565307106680931539,4 --trace-process-track-uuid=3190708995682289984"
+          }
+        ],
+        "rssKiBCandidateSum": 2028272,
+        "state": "#bezig fixture, no actual-earned claim; no dataURI hash probes or book traversal before memory sample",
+        "closedWithBrowserRSSKiBSum": 2028272
+      },
+      {
+        "trial": 2,
+        "loadAndDecodeSettledMs": 1918.4076250021462,
+        "candidates": [
+          {
+            "pid": 15712,
+            "ppid": 15710,
+            "rssKiB": 113328,
+            "command": "/Users/dennisariens/Library/Caches/ms-playwright/chromium_headless_shell-1248/chrome-headless-shell-mac-arm64/chrome-headless-shell --disable-field-trial-config --disable-background-networking --disable-background-timer-throttling --disable-backgrounding-occluded-windows --disable-back-forward-cache --disable-breakpad --disable-client-side-phishing-detection --disable-component-extensions-with-background-pages --disable-component-update --no-default-browser-check --disable-default-apps --disable-dev-shm-usage --disable-edgeupdater --disable-extensions --disable-features=AvoidUnnecessaryBeforeUnloadCheckSync,DestroyProfileOnBrowserClose,DialMediaRouteProvider,GlobalMediaControls,HttpsUpgrades,LensOverlay,MediaRouter,PaintHolding,ThirdPartyStoragePartitioning,BlockOriginHeaderModificationOnRedirect,AvoidCorsURLLoaderRestartOnRedirect,Translate,AutoDeElevate,OptimizationHints,NetworkTimeServiceQuerying,AimEnabled,msForceBrowserSignIn,msEdgeUpdateLaunchServicesPreferredVersion --enable-features=CDPScreenshotNewSurface --allow-pre-commit-input --disable-hang-monitor --disable-ipc-flooding-protection --disable-popup-blocking --disable-prompt-on-repost --disable-renderer-backgrounding --disable-updater-scheduler --force-color-profile=srgb --metrics-recording-only --no-first-run --password-store=basic --use-mock-keychain --no-service-autorun --export-tagged-pdf --disable-search-engine-choice-screen --unsafely-disable-devtools-self-xss-warnings --edge-skip-compat-layer-relaunch --disable-infobars --disable-search-engine-choice-screen --disable-sync --enable-unsafe-swiftshader --headless --hide-scrollbars --mute-audio --blink-settings=primaryHoverType=2,availableHoverTypes=2,primaryPointerType=4,availablePointerTypes=4 --no-sandbox --user-data-dir=/Users/dennisariens/.hermes/cache/scratch/playwright_chromiumdev_profile-iZHkfO --remote-debugging-pipe --no-startup-window"
+          },
+          {
+            "pid": 15713,
+            "ppid": 15712,
+            "rssKiB": 82064,
+            "command": "/Users/dennisariens/Library/Caches/ms-playwright/chromium_headless_shell-1248/chrome-headless-shell-mac-arm64/chrome-headless-shell --type=gpu-process --gpu-recent-crash-count=0 --no-sandbox --disable-breakpad --headless --use-angle=swiftshader-webgl --enable-unsafe-swiftshader --gpu-preferences=WAAAAAAAAAAgAAAEAAAAAAAAAAAAAGAAQAAAAAAAAAAAAAAAAAAAADgAAAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAAAAAAKAAAAAAAAAAoAAAAAAAAAAgAAAAAAAAADAAAAAEAAAAAAAAAAAAAAAgAAAAAAAAACAAAAAAAAAA= --shared-files --field-trial-handle=1718379636,r,16246496695740832796,2345426502190426372,262144 --enable-features=CDPScreenshotNewSurface --disable-features=AimEnabled,AutoDeElevate,AvoidCorsURLLoaderRestartOnRedirect,AvoidUnnecessaryBeforeUnloadCheckSync,BlockOriginHeaderModificationOnRedirect,DestroyProfileOnBrowserClose,DialMediaRouteProvider,GlobalMediaControls,HttpsUpgrades,LensOverlay,MediaRouter,NetworkTimeServiceQuerying,OptimizationHints,PaintHolding,ThirdPartyStoragePartitioning,Translate,msEdgeUpdateLaunchServicesPreferredVersion,msForceBrowserSignIn --variations-seed-version --pseudonymization-salt-handle=1935764596,r,14902049266398642805,14604809745424254684,4 --trace-process-track-uuid=3190708988185955192"
+          },
+          {
+            "pid": 15714,
+            "ppid": 15712,
+            "rssKiB": 39056,
+            "command": "/Users/dennisariens/Library/Caches/ms-playwright/chromium_headless_shell-1248/chrome-headless-shell-mac-arm64/chrome-headless-shell --type=utility --utility-sub-type=network.mojom.NetworkService --lang=en-US --service-sandbox-type=none --no-sandbox --use-angle=swiftshader-webgl --use-gl=angle --mute-audio --headless=old --shared-files --field-trial-handle=1718379636,r,16246496695740832796,2345426502190426372,262144 --enable-features=CDPScreenshotNewSurface --disable-features=AimEnabled,AutoDeElevate,AvoidCorsURLLoaderRestartOnRedirect,AvoidUnnecessaryBeforeUnloadCheckSync,BlockOriginHeaderModificationOnRedirect,DestroyProfileOnBrowserClose,DialMediaRouteProvider,GlobalMediaControls,HttpsUpgrades,LensOverlay,MediaRouter,NetworkTimeServiceQuerying,OptimizationHints,PaintHolding,ThirdPartyStoragePartitioning,Translate,msEdgeUpdateLaunchServicesPreferredVersion,msForceBrowserSignIn --variations-seed-version --pseudonymization-salt-handle=1935764596,r,14902049266398642805,14604809745424254684,4 --trace-process-track-uuid=3190708989122997041"
+          },
+          {
+            "pid": 15715,
+            "ppid": 15712,
+            "rssKiB": 1057632,
+            "command": "/Users/dennisariens/Library/Caches/ms-playwright/chromium_headless_shell-1248/chrome-headless-shell-mac-arm64/chrome-headless-shell --type=renderer --headless=old --no-sandbox --disable-back-forward-cache --disable-background-timer-throttling --disable-breakpad --force-color-profile=srgb --remote-debugging-pipe --allow-pre-commit-input --blink-settings=primaryHoverType=2,availableHoverTypes=2,primaryPointerType=4,availablePointerTypes=4 --disable-gpu-compositing --lang=en-US --num-raster-threads=4 --enable-zero-copy --enable-gpu-memory-buffer-compositor-resources --enable-main-frame-before-activation --renderer-client-id=4 --launch-time-ticks=41362632177 --shared-files --field-trial-handle=1718379636,r,16246496695740832796,2345426502190426372,262144 --enable-features=CDPScreenshotNewSurface --disable-features=AimEnabled,AutoDeElevate,AvoidCorsURLLoaderRestartOnRedirect,AvoidUnnecessaryBeforeUnloadCheckSync,BlockOriginHeaderModificationOnRedirect,DestroyProfileOnBrowserClose,DialMediaRouteProvider,GlobalMediaControls,HttpsUpgrades,LensOverlay,MediaRouter,NetworkTimeServiceQuerying,OptimizationHints,PaintHolding,ThirdPartyStoragePartitioning,Translate,msEdgeUpdateLaunchServicesPreferredVersion,msForceBrowserSignIn --variations-seed-version --pseudonymization-salt-handle=1935764596,r,14902049266398642805,14604809745424254684,4 --trace-process-track-uuid=3190708990060038890"
+          },
+          {
+            "pid": 15716,
+            "ppid": 15512,
+            "rssKiB": 685744,
+            "command": "/Users/dennisariens/Library/Caches/ms-playwright/chromium_headless_shell-1248/chrome-headless-shell-mac-arm64/chrome-headless-shell --type=renderer --headless=old --no-sandbox --disable-back-forward-cache --disable-background-timer-throttling --disable-breakpad --force-color-profile=srgb --remote-debugging-pipe --allow-pre-commit-input --blink-settings=primaryHoverType=2,availableHoverTypes=2,primaryPointerType=4,availablePointerTypes=4 --disable-gpu-compositing --lang=en-US --num-raster-threads=4 --enable-zero-copy --enable-gpu-memory-buffer-compositor-resources --enable-main-frame-before-activation --renderer-client-id=10 --launch-time-ticks=41363549798 --shared-files --field-trial-handle=1718379636,r,2677258655808308114,6221902721503133403,262144 --enable-features=CDPScreenshotNewSurface --disable-features=AimEnabled,AutoDeElevate,AvoidCorsURLLoaderRestartOnRedirect,AvoidUnnecessaryBeforeUnloadCheckSync,BlockOriginHeaderModificationOnRedirect,DestroyProfileOnBrowserClose,DialMediaRouteProvider,GlobalMediaControls,HttpsUpgrades,LensOverlay,MediaRouter,NetworkTimeServiceQuerying,OptimizationHints,PaintHolding,ThirdPartyStoragePartitioning,Translate,msEdgeUpdateLaunchServicesPreferredVersion,msForceBrowserSignIn --variations-seed-version --pseudonymization-salt-handle=1935764596,r,11828531654770084503,15565307106680931539,4 --trace-process-track-uuid=3190708995682289984"
+          }
+        ],
+        "rssKiBCandidateSum": 1977824,
+        "state": "#bezig fixture, no actual-earned claim; no dataURI hash probes or book traversal before memory sample",
+        "closedWithBrowserRSSKiBSum": 1977824
+      }
+    ],
+    "candidatePIDsGoneAfterOwnClose": [
+      15712,
+      15713,
+      15714,
+      15715,
+      15716
+    ],
+    "candidatePIDsStillAliveExcludedFromClosedSum": [],
+    "attributionLimit": "Launch-window+close-lifecycle association for WebKit launchd XPC, not a privileged coalition audit; exclude surviving candidates. Concurrent QA may contend for resources. RSS sums include shared pages, not unique physical RAM.",
+    "webkitHeap": "N/A unsupported"
+  },
+  {
+    "engine": "webkit",
+    "version": "27.2",
+    "records": [
+      {
+        "trial": 0,
+        "loadAndDecodeSettledMs": 2070.509958000912,
+        "candidates": [
+          {
+            "pid": 15743,
+            "ppid": 15710,
+            "rssKiB": 2048,
+            "command": "bash /Users/dennisariens/Library/Caches/ms-playwright/webkit-2370/pw_run.sh --inspector-pipe --headless --no-startup-window"
+          },
+          {
+            "pid": 15749,
+            "ppid": 15743,
+            "rssKiB": 144352,
+            "command": "/Users/dennisariens/Library/Caches/ms-playwright/webkit-2370/Playwright.app/Contents/MacOS/Playwright --inspector-pipe --headless --no-startup-window"
+          },
+          {
+            "pid": 15750,
+            "ppid": 1,
+            "rssKiB": 53168,
+            "command": "/Users/dennisariens/Library/Caches/ms-playwright/webkit-2370/com.apple.WebKit.Networking.xpc/Contents/MacOS/com.apple.WebKit.Networking.Development"
+          },
+          {
+            "pid": 15751,
+            "ppid": 1,
+            "rssKiB": 395952,
+            "command": "/Users/dennisariens/Library/Caches/ms-playwright/webkit-2370/com.apple.WebKit.GPU.xpc/Contents/MacOS/com.apple.WebKit.GPU.Development"
+          },
+          {
+            "pid": 15752,
+            "ppid": 1,
+            "rssKiB": 1203584,
+            "command": "/Users/dennisariens/Library/Caches/ms-playwright/webkit-2370/com.apple.WebKit.WebContent.xpc/Contents/MacOS/com.apple.WebKit.WebContent.Development"
+          }
+        ],
+        "rssKiBCandidateSum": 1799104,
+        "state": "#bezig fixture, no actual-earned claim; no dataURI hash probes or book traversal before memory sample",
+        "footprintExit": 0,
+        "closedWithBrowserRSSKiBSum": 1799104
+      },
+      {
+        "trial": 1,
+        "loadAndDecodeSettledMs": 1904.2507499980275,
+        "candidates": [
+          {
+            "pid": 15743,
+            "ppid": 15710,
+            "rssKiB": 2048,
+            "command": "bash /Users/dennisariens/Library/Caches/ms-playwright/webkit-2370/pw_run.sh --inspector-pipe --headless --no-startup-window"
+          },
+          {
+            "pid": 15749,
+            "ppid": 15743,
+            "rssKiB": 147360,
+            "command": "/Users/dennisariens/Library/Caches/ms-playwright/webkit-2370/Playwright.app/Contents/MacOS/Playwright --inspector-pipe --headless --no-startup-window"
+          },
+          {
+            "pid": 15750,
+            "ppid": 1,
+            "rssKiB": 53264,
+            "command": "/Users/dennisariens/Library/Caches/ms-playwright/webkit-2370/com.apple.WebKit.Networking.xpc/Contents/MacOS/com.apple.WebKit.Networking.Development"
+          },
+          {
+            "pid": 15751,
+            "ppid": 1,
+            "rssKiB": 412576,
+            "command": "/Users/dennisariens/Library/Caches/ms-playwright/webkit-2370/com.apple.WebKit.GPU.xpc/Contents/MacOS/com.apple.WebKit.GPU.Development"
+          },
+          {
+            "pid": 15752,
+            "ppid": 1,
+            "rssKiB": 1362768,
+            "command": "/Users/dennisariens/Library/Caches/ms-playwright/webkit-2370/com.apple.WebKit.WebContent.xpc/Contents/MacOS/com.apple.WebKit.WebContent.Development"
+          }
+        ],
+        "rssKiBCandidateSum": 1978016,
+        "state": "#bezig fixture, no actual-earned claim; no dataURI hash probes or book traversal before memory sample",
+        "closedWithBrowserRSSKiBSum": 1978016
+      },
+      {
+        "trial": 2,
+        "loadAndDecodeSettledMs": 1856.6002919978928,
+        "candidates": [
+          {
+            "pid": 15743,
+            "ppid": 15710,
+            "rssKiB": 2048,
+            "command": "bash /Users/dennisariens/Library/Caches/ms-playwright/webkit-2370/pw_run.sh --inspector-pipe --headless --no-startup-window"
+          },
+          {
+            "pid": 15749,
+            "ppid": 15743,
+            "rssKiB": 147328,
+            "command": "/Users/dennisariens/Library/Caches/ms-playwright/webkit-2370/Playwright.app/Contents/MacOS/Playwright --inspector-pipe --headless --no-startup-window"
+          },
+          {
+            "pid": 15750,
+            "ppid": 1,
+            "rssKiB": 53344,
+            "command": "/Users/dennisariens/Library/Caches/ms-playwright/webkit-2370/com.apple.WebKit.Networking.xpc/Contents/MacOS/com.apple.WebKit.Networking.Development"
+          },
+          {
+            "pid": 15751,
+            "ppid": 1,
+            "rssKiB": 427536,
+            "command": "/Users/dennisariens/Library/Caches/ms-playwright/webkit-2370/com.apple.WebKit.GPU.xpc/Contents/MacOS/com.apple.WebKit.GPU.Development"
+          },
+          {
+            "pid": 15752,
+            "ppid": 1,
+            "rssKiB": 1501056,
+            "command": "/Users/dennisariens/Library/Caches/ms-playwright/webkit-2370/com.apple.WebKit.WebContent.xpc/Contents/MacOS/com.apple.WebKit.WebContent.Development"
+          }
+        ],
+        "rssKiBCandidateSum": 2131312,
+        "state": "#bezig fixture, no actual-earned claim; no dataURI hash probes or book traversal before memory sample",
+        "closedWithBrowserRSSKiBSum": 2131312
+      }
+    ],
+    "candidatePIDsGoneAfterOwnClose": [
+      15743,
+      15749,
+      15750,
+      15751,
+      15752
+    ],
+    "candidatePIDsStillAliveExcludedFromClosedSum": [],
+    "attributionLimit": "Launch-window+close-lifecycle association for WebKit launchd XPC, not a privileged coalition audit; exclude surviving candidates. Concurrent QA may contend for resources. RSS sums include shared pages, not unique physical RAM.",
+    "webkitHeap": "N/A unsupported"
+  }
+]

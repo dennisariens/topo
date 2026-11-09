@@ -1,0 +1,67 @@
+{
+  "runs": [
+    {
+      "engine": "chromium",
+      "trial": 0,
+      "loadMs": 891.633708,
+      "readyMs": 1642.830042,
+      "rssKiB": 761392,
+      "validation": {
+        "geometry46": true,
+        "layersMatch": true,
+        "decorationOnly": true,
+        "copyCount": true,
+        "offHidden": true
+      }
+    },
+    {
+      "engine": "chromium",
+      "trial": 1,
+      "loadMs": 903.8917080000001,
+      "readyMs": 1041.9503749999994,
+      "rssKiB": 959872
+    },
+    {
+      "engine": "chromium",
+      "trial": 2,
+      "loadMs": 891.4362920000003,
+      "readyMs": 1547.309541999999,
+      "rssKiB": 1047184
+    },
+    {
+      "engine": "webkit",
+      "trial": 0,
+      "loadMs": 1310.5488330000007,
+      "readyMs": 1454.8828330000015,
+      "rssKiB": 148224,
+      "validation": {
+        "geometry46": true,
+        "layersMatch": true,
+        "decorationOnly": true,
+        "copyCount": true,
+        "offHidden": true
+      }
+    },
+    {
+      "engine": "webkit",
+      "trial": 1,
+      "loadMs": 1126.0675409999985,
+      "readyMs": 1242.9804999999997,
+      "rssKiB": 146352
+    },
+    {
+      "engine": "webkit",
+      "trial": 2,
+      "loadMs": 1647.8777499999997,
+      "readyMs": 1667.4355840000026,
+      "rssKiB": 128608
+    }
+  ],
+  "errors": [],
+  "outbound": {
+    "chromium": [],
+    "webkit": []
+  }
+}
+
+PARENT_EXIT=0

@@ -1,0 +1,194 @@
+[
+  {
+    "engine": "chromium",
+    "dom": {
+      "bg": "c07c938d990250fdcd3a370b90f74c7cb8d9a422f4b720dbeb5e93850309b9c0",
+      "portrait": "97fe052f40fea2ec7c07a2935d8bb2f544777b4e3893c1a509ab9bc0c1a492e2",
+      "slice": "1b1fa303abc5775133b00d76f9b2d4c6945f759c12caf75d50b492bdb96ad550",
+      "vespa": "0a060a0cc77a46487b3eac060653383e7feb883f6e4736b9512cf6086af8e869",
+      "kop": "a69ae30fda1271431e5d1ffe7145249f0c25a048074d185a1a81fbad2f3811e1",
+      "minis": [
+        {
+          "chapter": "city1",
+          "sha256": "26865876290044697872bb748d2b55e09fc826989a6fc37e190914147bbda03c"
+        },
+        {
+          "chapter": "city2",
+          "sha256": "518ab33ebc0b6902850ea46bdf3a57cc7556351ce40be2fc235e9c3eb439c146"
+        },
+        {
+          "chapter": "city3",
+          "sha256": "927c80380ed1571cdb4cc8bef8704b6a3e6b01e58ad68dc5bc2617ef4f7a8244"
+        },
+        {
+          "chapter": "city4",
+          "sha256": "f62e812526d488d47740ae87ca5b38a04291729360cae764886453336a954778"
+        },
+        {
+          "chapter": "islands",
+          "sha256": "2b027de93af0155f076f3fc5a68be460807a668496c5dcc2464668718a4a3b9d"
+        },
+        {
+          "chapter": "mountains",
+          "sha256": "88d66acc264653b3f4354455b5c2887a0027b0da05a66e73758fc7ddb8f40171"
+        },
+        {
+          "chapter": "volcanoes",
+          "sha256": "21f4566b9d32909526c2f542bc6b0e12a2d4beb47b32ee1c7194644de68b287d"
+        },
+        {
+          "chapter": "regions",
+          "sha256": "482349912963d3cf50a775d06ec70c892a42a3cbda29fa066464911d73176b45"
+        },
+        {
+          "chapter": "countries",
+          "sha256": "3f4ce7e6caa69edbc7fd9a6ed345c570a4e22bf262bc6750a3fd5065ee64bd89"
+        },
+        {
+          "chapter": "seas",
+          "sha256": "c0147c714afc3a07cc744cbbb6b1cb3f816e0c728835dbdb66711bd4e3929a60"
+        },
+        {
+          "chapter": "rivers",
+          "sha256": "8f1517c7d5a84a598dac8c14d0351c06bd972048d9835602a6df42f7e6357f5b"
+        }
+      ]
+    },
+    "kops": {
+      "city2": "5a01badbf0f26fe28109e999c592615d882eb704e6bef809d40e70436b4f6465",
+      "city3": "719344db49bfd156f6b22904b1ff31dd2e2899ac133b0c303fdcf85b165dae02",
+      "city4": "d9662509ce537fa8fcfb0485acc5478ff8ddc632b7768dbaf192269148a12668"
+    },
+    "rewardArt": {
+      "vespa": "41b49a4f69162062d0af7df0f31eb775c1defea72eb1448e86e6332bf975c84e",
+      "tiles": [
+        "5d3dbef4e73ed6d3f3e3edea75a29ad21100f9f9ccfacaa52715c5eebe6492d9",
+        "a578ddedb395fc9fc97c672923ed6f6f681628016e1c1e4c014019385a14144a",
+        "ee806f0938efbe93cf5b41817f81f5b9357acdf049288bde9cd223fcbd18a865",
+        "b4abe1371d848c583af9a843edaf1b2450e21571a9c8ab576b9a3dd78b2ef158"
+      ]
+    },
+    "freshWebKitProcessCandidates": [],
+    "footprint": null,
+    "processNote": "New WebKit XPC processes may be launchd children and not reliably attributable when parallel QA is active. Controller-only RSS is not total engine memory.",
+    "validation": {
+      "background": true,
+      "portrait": true,
+      "counterIcons": true,
+      "sceneKops": true,
+      "sceneMinis": true,
+      "rewards": true
+    }
+  },
+  {
+    "engine": "webkit",
+    "dom": {
+      "bg": "c07c938d990250fdcd3a370b90f74c7cb8d9a422f4b720dbeb5e93850309b9c0",
+      "portrait": "97fe052f40fea2ec7c07a2935d8bb2f544777b4e3893c1a509ab9bc0c1a492e2",
+      "slice": "1b1fa303abc5775133b00d76f9b2d4c6945f759c12caf75d50b492bdb96ad550",
+      "vespa": "0a060a0cc77a46487b3eac060653383e7feb883f6e4736b9512cf6086af8e869",
+      "kop": "a69ae30fda1271431e5d1ffe7145249f0c25a048074d185a1a81fbad2f3811e1",
+      "minis": [
+        {
+          "chapter": "city1",
+          "sha256": "26865876290044697872bb748d2b55e09fc826989a6fc37e190914147bbda03c"
+        },
+        {
+          "chapter": "city2",
+          "sha256": "518ab33ebc0b6902850ea46bdf3a57cc7556351ce40be2fc235e9c3eb439c146"
+        },
+        {
+          "chapter": "city3",
+          "sha256": "927c80380ed1571cdb4cc8bef8704b6a3e6b01e58ad68dc5bc2617ef4f7a8244"
+        },
+        {
+          "chapter": "city4",
+          "sha256": "f62e812526d488d47740ae87ca5b38a04291729360cae764886453336a954778"
+        },
+        {
+          "chapter": "islands",
+          "sha256": "2b027de93af0155f076f3fc5a68be460807a668496c5dcc2464668718a4a3b9d"
+        },
+        {
+          "chapter": "mountains",
+          "sha256": "88d66acc264653b3f4354455b5c2887a0027b0da05a66e73758fc7ddb8f40171"
+        },
+        {
+          "chapter": "volcanoes",
+          "sha256": "21f4566b9d32909526c2f542bc6b0e12a2d4beb47b32ee1c7194644de68b287d"
+        },
+        {
+          "chapter": "regions",
+          "sha256": "482349912963d3cf50a775d06ec70c892a42a3cbda29fa066464911d73176b45"
+        },
+        {
+          "chapter": "countries",
+          "sha256": "3f4ce7e6caa69edbc7fd9a6ed345c570a4e22bf262bc6750a3fd5065ee64bd89"
+        },
+        {
+          "chapter": "seas",
+          "sha256": "c0147c714afc3a07cc744cbbb6b1cb3f816e0c728835dbdb66711bd4e3929a60"
+        },
+        {
+          "chapter": "rivers",
+          "sha256": "8f1517c7d5a84a598dac8c14d0351c06bd972048d9835602a6df42f7e6357f5b"
+        }
+      ]
+    },
+    "kops": {
+      "city2": "5a01badbf0f26fe28109e999c592615d882eb704e6bef809d40e70436b4f6465",
+      "city3": "719344db49bfd156f6b22904b1ff31dd2e2899ac133b0c303fdcf85b165dae02",
+      "city4": "d9662509ce537fa8fcfb0485acc5478ff8ddc632b7768dbaf192269148a12668"
+    },
+    "rewardArt": {
+      "vespa": "41b49a4f69162062d0af7df0f31eb775c1defea72eb1448e86e6332bf975c84e",
+      "tiles": [
+        "5d3dbef4e73ed6d3f3e3edea75a29ad21100f9f9ccfacaa52715c5eebe6492d9",
+        "a578ddedb395fc9fc97c672923ed6f6f681628016e1c1e4c014019385a14144a",
+        "ee806f0938efbe93cf5b41817f81f5b9357acdf049288bde9cd223fcbd18a865",
+        "b4abe1371d848c583af9a843edaf1b2450e21571a9c8ab576b9a3dd78b2ef158"
+      ]
+    },
+    "freshWebKitProcessCandidates": [
+      {
+        "pid": 14252,
+        "ppid": 14246,
+        "rssKiB": 164560,
+        "command": "/Users/dennisariens/Library/Caches/ms-playwright/webkit-2370/Playwright.app/Contents/MacOS/Playwright --inspector-pipe --headless --no-startup-window"
+      },
+      {
+        "pid": 14253,
+        "ppid": 1,
+        "rssKiB": 53040,
+        "command": "/Users/dennisariens/Library/Caches/ms-playwright/webkit-2370/com.apple.WebKit.Networking.xpc/Contents/MacOS/com.apple.WebKit.Networking.Development"
+      },
+      {
+        "pid": 14254,
+        "ppid": 1,
+        "rssKiB": 426528,
+        "command": "/Users/dennisariens/Library/Caches/ms-playwright/webkit-2370/com.apple.WebKit.GPU.xpc/Contents/MacOS/com.apple.WebKit.GPU.Development"
+      },
+      {
+        "pid": 14255,
+        "ppid": 1,
+        "rssKiB": 1279264,
+        "command": "/Users/dennisariens/Library/Caches/ms-playwright/webkit-2370/com.apple.WebKit.WebContent.xpc/Contents/MacOS/com.apple.WebKit.WebContent.Development"
+      }
+    ],
+    "footprint": {
+      "pid": 14252,
+      "status": 0,
+      "stdout": "======================================================================\nPlaywright [14252]: 64-bit    Footprint: 28705872 B (16384 bytes per page)\n======================================================================\n\nAuxiliary data:\n    phys_footprint: 29066320 B\n    phys_footprint_peak: 95896608 B\n\n",
+      "stderr": ""
+    },
+    "processNote": "New WebKit XPC processes may be launchd children and not reliably attributable when parallel QA is active. Controller-only RSS is not total engine memory.",
+    "validation": {
+      "background": true,
+      "portrait": true,
+      "counterIcons": true,
+      "sceneKops": true,
+      "sceneMinis": true,
+      "rewards": true
+    }
+  }
+]

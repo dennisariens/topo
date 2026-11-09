@@ -1,0 +1,387 @@
+{
+  "chromium": {
+    "top": {
+      "scrollY": 0,
+      "visual": {
+        "offsetTop": 0,
+        "pageTop": 0,
+        "scale": 1
+      },
+      "rect": {
+        "x": 16,
+        "y": 284,
+        "width": 358,
+        "height": 300,
+        "top": 284,
+        "right": 374,
+        "bottom": 584,
+        "left": 16
+      },
+      "ctm": [
+        0.29296875,
+        0,
+        0,
+        0.29296875,
+        64.62890625,
+        256.75390625
+      ],
+      "islandRect": {
+        "x": 190.8984375,
+        "y": 515.1435546875,
+        "width": 59.59275817871094,
+        "height": 36.275390625,
+        "top": 515.1435546875,
+        "right": 250.49119567871094,
+        "bottom": 551.4189453125,
+        "left": 190.8984375
+      },
+      "projectedCenter": {
+        "x": 220.69480895996094,
+        "y": 533.28125
+      },
+      "centerFill": true,
+      "maintainedSamples": {
+        "Frankrijk": [
+          92,
+          372
+        ],
+        "Zwitserland": [
+          131,
+          323
+        ],
+        "Oostenrijk": [
+          213,
+          315
+        ],
+        "Sloveni\u00eb": [
+          239,
+          338
+        ],
+        "Kroati\u00eb": [
+          258,
+          376
+        ],
+        "Sardini\u00eb": [
+          143,
+          475
+        ],
+        "Sicili\u00eb": [
+          221,
+          533
+        ],
+        "label DUITSLAND": null,
+        "label HONGARIJE": [
+          285,
+          321
+        ],
+        "label BOSNI\u00cb": [
+          291,
+          383
+        ],
+        "label TUNESI\u00cb": null,
+        "zee 1": [
+          103,
+          515
+        ],
+        "zee 2": [
+          261,
+          410
+        ],
+        "zee 3": [
+          125,
+          408
+        ],
+        "zee 4": [
+          209,
+          475
+        ],
+        "zee 5": [
+          286,
+          517
+        ],
+        "Noord-Afrika": [
+          152,
+          553
+        ]
+      }
+    },
+    "center": {
+      "scrollY": 12,
+      "visual": {
+        "offsetTop": 0,
+        "pageTop": 12,
+        "scale": 1
+      },
+      "rect": {
+        "x": 16,
+        "y": 272,
+        "width": 358,
+        "height": 300,
+        "top": 272,
+        "right": 374,
+        "bottom": 572,
+        "left": 16
+      },
+      "ctm": [
+        0.29296875,
+        0,
+        0,
+        0.29296875,
+        64.62890625,
+        244.75390625
+      ],
+      "islandRect": {
+        "x": 190.8984375,
+        "y": 503.1435546875,
+        "width": 59.59275817871094,
+        "height": 36.275390625,
+        "top": 503.1435546875,
+        "right": 250.49119567871094,
+        "bottom": 539.4189453125,
+        "left": 190.8984375
+      },
+      "projectedCenter": {
+        "x": 220.69480895996094,
+        "y": 521.28125
+      },
+      "centerFill": true,
+      "maintainedSamples": {
+        "Frankrijk": [
+          92,
+          360
+        ],
+        "Zwitserland": [
+          131,
+          311
+        ],
+        "Oostenrijk": [
+          213,
+          303
+        ],
+        "Sloveni\u00eb": [
+          239,
+          326
+        ],
+        "Kroati\u00eb": [
+          258,
+          364
+        ],
+        "Sardini\u00eb": [
+          143,
+          463
+        ],
+        "Sicili\u00eb": [
+          221,
+          521
+        ],
+        "label DUITSLAND": null,
+        "label HONGARIJE": [
+          285,
+          309
+        ],
+        "label BOSNI\u00cb": [
+          291,
+          371
+        ],
+        "label TUNESI\u00cb": null,
+        "zee 1": [
+          103,
+          503
+        ],
+        "zee 2": [
+          261,
+          398
+        ],
+        "zee 3": [
+          125,
+          396
+        ],
+        "zee 4": [
+          209,
+          463
+        ],
+        "zee 5": [
+          286,
+          505
+        ],
+        "Noord-Afrika": [
+          152,
+          541
+        ]
+      }
+    }
+  },
+  "webkit": {
+    "top": {
+      "scrollY": 0,
+      "visual": {
+        "offsetTop": 0,
+        "pageTop": 0,
+        "scale": 1
+      },
+      "rect": {
+        "x": 16,
+        "y": 284,
+        "width": 358,
+        "height": 300,
+        "top": 284,
+        "right": 374,
+        "bottom": 584,
+        "left": 16
+      },
+      "ctm": [
+        0.29296875,
+        0,
+        0,
+        0.29296875,
+        64.62890625,
+        256.75390625
+      ],
+      "islandRect": {
+        "x": 190.8984375,
+        "y": 515.1435546875,
+        "width": 59.59275817871094,
+        "height": 36.275390625,
+        "top": 515.1435546875,
+        "right": 250.49119567871094,
+        "bottom": 551.4189453125,
+        "left": 190.8984375
+      },
+      "projectedCenter": {
+        "x": 220.69480895996094,
+        "y": 533.28125
+      },
+      "centerFill": true,
+      "maintainedSamples": {
+        "Frankrijk": [
+          92,
+          372
+        ],
+        "Zwitserland": [
+          131,
+          323
+        ],
+        "Oostenrijk": [
+          213,
+          315
+        ],
+        "Sloveni\u00eb": [
+          239,
+          338
+        ],
+        "Kroati\u00eb": [
+          258,
+          376
+        ],
+        "Sardini\u00eb": [
+          143,
+          475
+        ],
+        "Sicili\u00eb": [
+          221,
+          533
+        ],
+        "label DUITSLAND": null,
+        "label HONGARIJE": [
+          285,
+          321
+        ],
+        "label BOSNI\u00cb": [
+          291,
+          383
+        ],
+        "label TUNESI\u00cb": null,
+        "zee 1": [
+          103,
+          515
+        ],
+        "zee 2": [
+          261,
+          410
+        ],
+        "zee 3": [
+          125,
+          408
+        ],
+        "zee 4": [
+          209,
+          475
+        ],
+        "zee 5": [
+          286,
+          517
+        ],
+        "Noord-Afrika": [
+          152,
+          553
+        ]
+      }
+    },
+    "center": {
+      "scrollY": 566,
+      "visual": {
+        "offsetTop": 0,
+        "pageTop": 566,
+        "scale": 1
+      },
+      "rect": {
+        "x": 16,
+        "y": -282,
+        "width": 358,
+        "height": 300,
+        "top": -282,
+        "right": 374,
+        "bottom": 18,
+        "left": 16
+      },
+      "ctm": [
+        0.29296875,
+        0,
+        0,
+        0.29296875,
+        64.62890625,
+        -309.24609375
+      ],
+      "islandRect": {
+        "x": 190.8984375,
+        "y": -50.8564453125,
+        "width": 59.59275817871094,
+        "height": 36.275390625,
+        "top": -50.8564453125,
+        "right": 250.49119567871094,
+        "bottom": -14.5810546875,
+        "left": 190.8984375
+      },
+      "projectedCenter": {
+        "x": 220.69480895996094,
+        "y": -32.71875
+      },
+      "centerFill": true,
+      "maintainedSamples": {
+        "Frankrijk": null,
+        "Zwitserland": null,
+        "Oostenrijk": null,
+        "Sloveni\u00eb": null,
+        "Kroati\u00eb": null,
+        "Sardini\u00eb": null,
+        "Sicili\u00eb": null,
+        "label DUITSLAND": null,
+        "label HONGARIJE": null,
+        "label BOSNI\u00cb": null,
+        "label TUNESI\u00cb": null,
+        "zee 1": null,
+        "zee 2": null,
+        "zee 3": null,
+        "zee 4": null,
+        "zee 5": [
+          286,
+          2
+        ],
+        "Noord-Afrika": [
+          152,
+          2
+        ]
+      }
+    }
+  }
+}

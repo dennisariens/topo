@@ -1,0 +1,196 @@
+{
+ "primaryAboveFoldAll": true,
+ "primaryBelowFold": [],
+ "overlaps": {},
+ "clipped": {},
+ "brokenWords": {},
+ "smallTargets": {},
+ "horizontalOverflow": [],
+ "lastRowHiddenByTabBar": [],
+ "mapFrameShort": {
+  "phone/nieuw": [
+   "Frankrijk",
+   "Kroatië",
+   "Oostenrijk",
+   "Sardinië",
+   "Sicilië",
+   "Slovenië",
+   "Zwitserland"
+  ],
+  "phone/bezig": [
+   "Frankrijk",
+   "Kroatië",
+   "Oostenrijk",
+   "Sardinië",
+   "Sicilië",
+   "Slovenië",
+   "Zwitserland"
+  ],
+  "phone/afgerond": [
+   "Frankrijk",
+   "Kroatië",
+   "Oostenrijk",
+   "Sardinië",
+   "Sicilië",
+   "Slovenië",
+   "Zwitserland"
+  ],
+  "phone/alles": [
+   "Frankrijk",
+   "Kroatië",
+   "Oostenrijk",
+   "Sardinië",
+   "Sicilië",
+   "Slovenië",
+   "Zwitserland"
+  ],
+  "phone-small/nieuw": [
+   "Frankrijk",
+   "Kroatië",
+   "Noord-Afrika",
+   "Oostenrijk",
+   "Sardinië",
+   "Sicilië",
+   "Slovenië",
+   "Zwitserland"
+  ],
+  "phone-small/bezig": [
+   "Frankrijk",
+   "Kroatië",
+   "Noord-Afrika",
+   "Oostenrijk",
+   "Sardinië",
+   "Sicilië",
+   "Slovenië",
+   "Zwitserland"
+  ],
+  "phone-small/afgerond": [
+   "Frankrijk",
+   "Kroatië",
+   "Noord-Afrika",
+   "Oostenrijk",
+   "Sardinië",
+   "Sicilië",
+   "Slovenië",
+   "Zwitserland"
+  ],
+  "phone-small/alles": [
+   "Frankrijk",
+   "Kroatië",
+   "Noord-Afrika",
+   "Oostenrijk",
+   "Sardinië",
+   "Sicilië",
+   "Slovenië",
+   "Zwitserland"
+  ]
+ },
+ "labelsWithLearningName": {},
+ "labelCheckCatchesControl": true,
+ "contextLabels": [
+  "BOSNIË",
+  "DUITSLAND",
+  "HONGARIJE",
+  "I T A L I Ë",
+  "SLOWAKIJE",
+  "TSJECHIË",
+  "TUNESIË",
+  "▲"
+ ],
+ "switchCoversPlace": {},
+ "phoneSelectFocusOnTitle": false,
+ "errors": 0
+}
+{
+ "desktop": {
+  "mapGeometry": {
+   "same": 46,
+   "diff": [],
+   "total": 46
+  },
+  "defaultSelected": "islands",
+  "hitsForCurrent": [
+   "area-a",
+   "area-b"
+  ],
+  "lockedText": "Opent na Bergen",
+  "lockedPrimary": 0,
+  "reliefOn": "block",
+  "reliefOff": "none",
+  "donePrimary": "★ Goud nog eens",
+  "replays": [
+   "↻ Ontdekken",
+   "↻ Aanwijzen",
+   "↻ Namen schrijven"
+  ],
+  "replayStarted": {
+   "chapter": "city2",
+   "kind": "discover",
+   "mode": "route",
+   "v3Hidden": true
+  },
+  "backVia": "v3Btn v3NavItem",
+  "primaryLabelWithActive": "Ga verder · Ontdekken",
+  "questionBefore": "city-8",
+  "reisVerderSameQuestion": {
+   "id": "city-8",
+   "chapter": "city2",
+   "kind": "discover"
+  },
+  "sameQuestion": true,
+  "activeTab": [
+   "Reis:page",
+   "Oefenen:false",
+   "Reisboekje:null",
+   "⚙:null"
+  ],
+  "memoryStorage": true
+ },
+ "phone": {
+  "mapGeometry": {
+   "same": 46,
+   "diff": [],
+   "total": 46
+  },
+  "defaultSelected": "islands",
+  "hitsForCurrent": [
+   "area-a",
+   "area-b"
+  ],
+  "lockedText": "Opent na Bergen",
+  "lockedPrimary": 0,
+  "reliefOn": "block",
+  "reliefOff": "none",
+  "donePrimary": "★ Goud nog eens",
+  "replays": [
+   "↻ Ontdekken",
+   "↻ Aanwijzen",
+   "↻ Namen schrijven"
+  ],
+  "phonePanelInView": true,
+  "replayStarted": {
+   "chapter": "city2",
+   "kind": "discover",
+   "mode": "route",
+   "v3Hidden": true
+  },
+  "backVia": "v3Btn v3LesBack",
+  "primaryLabelWithActive": "Ga verder · Ontdekken",
+  "questionBefore": "city-8",
+  "reisVerderSameQuestion": {
+   "id": "city-8",
+   "chapter": "city2",
+   "kind": "discover"
+  },
+  "sameQuestion": true,
+  "activeTab": [
+   "Reis:page",
+   "Oefenen:false",
+   "Reisboekje:null",
+   "⚙:null"
+  ],
+  "memoryStorage": true
+ }
+}
+{"order": ["V3-preview · demo · niet", "V3-preview · demo · niet", "V3-preview · demo · niet", "V3-preview · demo · niet", "V3-preview · demo · niet", "V3-preview · demo · niet", "V3-preview · demo · niet", "V3-preview · demo · niet", "V3-preview · demo · niet", "V3-preview · demo · niet", "V3-preview · demo · niet", "V3-preview · demo · niet", "V3-preview · demo · niet", "V3-preview · demo · niet", "V3-preview · demo · niet", "V3-preview · demo · niet", "V3-preview · demo · niet", "V3-preview · demo · niet", "V3-preview · demo · niet", "V3-preview · demo · niet", "V3-preview · demo · niet", "V3-preview · demo · niet", "V3-preview · demo · niet", "V3-preview · demo · niet", "V3-preview · dem
+theme {'viola': 'rgb(91, 69, 224)', 'italia': 'rgb(185, 80, 47)'} reducedMotion 0s, 0s

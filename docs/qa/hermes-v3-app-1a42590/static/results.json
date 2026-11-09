@@ -1,0 +1,683 @@
+{
+  "appPin": "1a42590de5525bd4d9fb1bcd02bf384e4437b1c2",
+  "artPin": "05ab1d0808aa20a18b99fea81950a6284539bf03",
+  "reliefPin": "2a7b0cffd952adff8383856579551691280a817b",
+  "manifestEqualToArt": true,
+  "runtimeFiles": [
+    {
+      "id": "BG-01",
+      "role": "export",
+      "path": "assets/v3/render/exports/BG-01-toscane-2880.webp",
+      "actual": {
+        "sha256": "c07c938d990250fdcd3a370b90f74c7cb8d9a422f4b720dbeb5e93850309b9c0",
+        "bytes": 433106,
+        "size": [
+          2880,
+          1800
+        ],
+        "alpha": false
+      },
+      "expected": {
+        "path": "assets/v3/render/exports/BG-01-toscane-2880.webp",
+        "bytes": 433106,
+        "sha256": "c07c938d990250fdcd3a370b90f74c7cb8d9a422f4b720dbeb5e93850309b9c0",
+        "size": [
+          2880,
+          1800
+        ],
+        "alpha": false
+      },
+      "matchesArtGit": true,
+      "matchesManifest": true
+    },
+    {
+      "id": "NINO-PORTRET",
+      "role": "export",
+      "path": "assets/v3/render/exports/NINO-PORTRET-512.webp",
+      "actual": {
+        "sha256": "97fe052f40fea2ec7c07a2935d8bb2f544777b4e3893c1a509ab9bc0c1a492e2",
+        "bytes": 53086,
+        "size": [
+          512,
+          512
+        ],
+        "alpha": true
+      },
+      "expected": {
+        "path": "assets/v3/render/exports/NINO-PORTRET-512.webp",
+        "bytes": 53086,
+        "sha256": "97fe052f40fea2ec7c07a2935d8bb2f544777b4e3893c1a509ab9bc0c1a492e2",
+        "size": [
+          512,
+          512
+        ],
+        "alpha": true
+      },
+      "matchesArtGit": true,
+      "matchesManifest": true
+    },
+    {
+      "id": "SCENE-ROMA",
+      "role": "export_kop",
+      "path": "assets/v3/render/exports/SCENE-ROMA-kop-1672.webp",
+      "actual": {
+        "sha256": "5a01badbf0f26fe28109e999c592615d882eb704e6bef809d40e70436b4f6465",
+        "bytes": 336364,
+        "size": [
+          1672,
+          941
+        ],
+        "alpha": false
+      },
+      "expected": {
+        "path": "assets/v3/render/exports/SCENE-ROMA-kop-1672.webp",
+        "bytes": 336364,
+        "sha256": "5a01badbf0f26fe28109e999c592615d882eb704e6bef809d40e70436b4f6465",
+        "size": [
+          1672,
+          941
+        ],
+        "alpha": false
+      },
+      "matchesArtGit": true,
+      "matchesManifest": true
+    },
+    {
+      "id": "SCENE-ROMA",
+      "role": "export_mini",
+      "path": "assets/v3/render/exports/SCENE-ROMA-mini-480.webp",
+      "actual": {
+        "sha256": "518ab33ebc0b6902850ea46bdf3a57cc7556351ce40be2fc235e9c3eb439c146",
+        "bytes": 34598,
+        "size": [
+          480,
+          270
+        ],
+        "alpha": false
+      },
+      "expected": {
+        "path": "assets/v3/render/exports/SCENE-ROMA-mini-480.webp",
+        "bytes": 34598,
+        "sha256": "518ab33ebc0b6902850ea46bdf3a57cc7556351ce40be2fc235e9c3eb439c146",
+        "size": [
+          480,
+          270
+        ],
+        "alpha": false
+      },
+      "matchesArtGit": true,
+      "matchesManifest": true
+    },
+    {
+      "id": "SCENE-VENEZIA",
+      "role": "export_kop",
+      "path": "assets/v3/render/exports/SCENE-VENEZIA-kop-1672.webp",
+      "actual": {
+        "sha256": "719344db49bfd156f6b22904b1ff31dd2e2899ac133b0c303fdcf85b165dae02",
+        "bytes": 311914,
+        "size": [
+          1672,
+          941
+        ],
+        "alpha": false
+      },
+      "expected": {
+        "path": "assets/v3/render/exports/SCENE-VENEZIA-kop-1672.webp",
+        "bytes": 311914,
+        "sha256": "719344db49bfd156f6b22904b1ff31dd2e2899ac133b0c303fdcf85b165dae02",
+        "size": [
+          1672,
+          941
+        ],
+        "alpha": false
+      },
+      "matchesArtGit": true,
+      "matchesManifest": true
+    },
+    {
+      "id": "SCENE-VENEZIA",
+      "role": "export_mini",
+      "path": "assets/v3/render/exports/SCENE-VENEZIA-mini-480.webp",
+      "actual": {
+        "sha256": "927c80380ed1571cdb4cc8bef8704b6a3e6b01e58ad68dc5bc2617ef4f7a8244",
+        "bytes": 28758,
+        "size": [
+          480,
+          270
+        ],
+        "alpha": false
+      },
+      "expected": {
+        "path": "assets/v3/render/exports/SCENE-VENEZIA-mini-480.webp",
+        "bytes": 28758,
+        "sha256": "927c80380ed1571cdb4cc8bef8704b6a3e6b01e58ad68dc5bc2617ef4f7a8244",
+        "size": [
+          480,
+          270
+        ],
+        "alpha": false
+      },
+      "matchesArtGit": true,
+      "matchesManifest": true
+    },
+    {
+      "id": "SCENE-NAPOLI",
+      "role": "export_kop",
+      "path": "assets/v3/render/exports/SCENE-NAPOLI-kop-1672.webp",
+      "actual": {
+        "sha256": "d9662509ce537fa8fcfb0485acc5478ff8ddc632b7768dbaf192269148a12668",
+        "bytes": 275572,
+        "size": [
+          1672,
+          941
+        ],
+        "alpha": false
+      },
+      "expected": {
+        "path": "assets/v3/render/exports/SCENE-NAPOLI-kop-1672.webp",
+        "bytes": 275572,
+        "sha256": "d9662509ce537fa8fcfb0485acc5478ff8ddc632b7768dbaf192269148a12668",
+        "size": [
+          1672,
+          941
+        ],
+        "alpha": false
+      },
+      "matchesArtGit": true,
+      "matchesManifest": true
+    },
+    {
+      "id": "SCENE-NAPOLI",
+      "role": "export_mini",
+      "path": "assets/v3/render/exports/SCENE-NAPOLI-mini-480.webp",
+      "actual": {
+        "sha256": "f62e812526d488d47740ae87ca5b38a04291729360cae764886453336a954778",
+        "bytes": 27984,
+        "size": [
+          480,
+          270
+        ],
+        "alpha": false
+      },
+      "expected": {
+        "path": "assets/v3/render/exports/SCENE-NAPOLI-mini-480.webp",
+        "bytes": 27984,
+        "sha256": "f62e812526d488d47740ae87ca5b38a04291729360cae764886453336a954778",
+        "size": [
+          480,
+          270
+        ],
+        "alpha": false
+      },
+      "matchesArtGit": true,
+      "matchesManifest": true
+    },
+    {
+      "id": "BG-02",
+      "role": "export",
+      "path": "assets/v3/render/exports/BG-02-meer-2880.webp",
+      "actual": {
+        "sha256": "939934b56be3406fa5a48717b900acea521f6f45674cce82b09993ca3630c660",
+        "bytes": 321346,
+        "size": [
+          2880,
+          1800
+        ],
+        "alpha": false
+      },
+      "expected": {
+        "path": "assets/v3/render/exports/BG-02-meer-2880.webp",
+        "bytes": 321346,
+        "sha256": "939934b56be3406fa5a48717b900acea521f6f45674cce82b09993ca3630c660",
+        "size": [
+          2880,
+          1800
+        ],
+        "alpha": false
+      },
+      "matchesArtGit": true,
+      "matchesManifest": true
+    },
+    {
+      "id": "BG-03",
+      "role": "export",
+      "path": "assets/v3/render/exports/BG-03-kust-2880.webp",
+      "actual": {
+        "sha256": "b4a423ef64fdb58773aa99659ec23b58283b1cf96763f591d41d09eb6619f20b",
+        "bytes": 452702,
+        "size": [
+          2880,
+          1800
+        ],
+        "alpha": false
+      },
+      "expected": {
+        "path": "assets/v3/render/exports/BG-03-kust-2880.webp",
+        "bytes": 452702,
+        "sha256": "b4a423ef64fdb58773aa99659ec23b58283b1cf96763f591d41d09eb6619f20b",
+        "size": [
+          2880,
+          1800
+        ],
+        "alpha": false
+      },
+      "matchesArtGit": true,
+      "matchesManifest": true
+    },
+    {
+      "id": "IC-pizza",
+      "role": "exports.96",
+      "path": "assets/v3/render/exports/icons/IC-pizza-96.webp",
+      "actual": {
+        "sha256": "5d3dbef4e73ed6d3f3e3edea75a29ad21100f9f9ccfacaa52715c5eebe6492d9",
+        "bytes": 5694,
+        "size": [
+          96,
+          96
+        ],
+        "alpha": true
+      },
+      "expected": {
+        "path": "assets/v3/render/exports/icons/IC-pizza-96.webp",
+        "bytes": 5694,
+        "sha256": "5d3dbef4e73ed6d3f3e3edea75a29ad21100f9f9ccfacaa52715c5eebe6492d9",
+        "size": [
+          96,
+          96
+        ],
+        "alpha": true
+      },
+      "matchesArtGit": true,
+      "matchesManifest": true
+    },
+    {
+      "id": "IC-pizza",
+      "role": "exports.48",
+      "path": "assets/v3/render/exports/icons/IC-pizza-48.webp",
+      "actual": {
+        "sha256": "95638a96a526cf81c7d5cad1a6fd9f590e5660cf4f2910402d09cbe11ef5777c",
+        "bytes": 2274,
+        "size": [
+          48,
+          48
+        ],
+        "alpha": true
+      },
+      "expected": {
+        "path": "assets/v3/render/exports/icons/IC-pizza-48.webp",
+        "bytes": 2274,
+        "sha256": "95638a96a526cf81c7d5cad1a6fd9f590e5660cf4f2910402d09cbe11ef5777c",
+        "size": [
+          48,
+          48
+        ],
+        "alpha": true
+      },
+      "matchesArtGit": true,
+      "matchesManifest": true
+    },
+    {
+      "id": "IC-vespa",
+      "role": "exports.96",
+      "path": "assets/v3/render/exports/icons/IC-vespa-96.webp",
+      "actual": {
+        "sha256": "0a060a0cc77a46487b3eac060653383e7feb883f6e4736b9512cf6086af8e869",
+        "bytes": 6026,
+        "size": [
+          96,
+          96
+        ],
+        "alpha": true
+      },
+      "expected": {
+        "path": "assets/v3/render/exports/icons/IC-vespa-96.webp",
+        "bytes": 6026,
+        "sha256": "0a060a0cc77a46487b3eac060653383e7feb883f6e4736b9512cf6086af8e869",
+        "size": [
+          96,
+          96
+        ],
+        "alpha": true
+      },
+      "matchesArtGit": true,
+      "matchesManifest": true
+    },
+    {
+      "id": "IC-vespa",
+      "role": "exports.48",
+      "path": "assets/v3/render/exports/icons/IC-vespa-48.webp",
+      "actual": {
+        "sha256": "84fc217ccb576d45ec7615b0b9165e229793cb3e2bc1ed2b7305b738683b864d",
+        "bytes": 2388,
+        "size": [
+          48,
+          48
+        ],
+        "alpha": true
+      },
+      "expected": {
+        "path": "assets/v3/render/exports/icons/IC-vespa-48.webp",
+        "bytes": 2388,
+        "sha256": "84fc217ccb576d45ec7615b0b9165e229793cb3e2bc1ed2b7305b738683b864d",
+        "size": [
+          48,
+          48
+        ],
+        "alpha": true
+      },
+      "matchesArtGit": true,
+      "matchesManifest": true
+    },
+    {
+      "id": "IC-gold",
+      "role": "exports.96",
+      "path": "assets/v3/render/exports/icons/IC-gold-96.webp",
+      "actual": {
+        "sha256": "ee806f0938efbe93cf5b41817f81f5b9357acdf049288bde9cd223fcbd18a865",
+        "bytes": 5318,
+        "size": [
+          96,
+          96
+        ],
+        "alpha": true
+      },
+      "expected": {
+        "path": "assets/v3/render/exports/icons/IC-gold-96.webp",
+        "bytes": 5318,
+        "sha256": "ee806f0938efbe93cf5b41817f81f5b9357acdf049288bde9cd223fcbd18a865",
+        "size": [
+          96,
+          96
+        ],
+        "alpha": true
+      },
+      "matchesArtGit": true,
+      "matchesManifest": true
+    },
+    {
+      "id": "IC-gold",
+      "role": "exports.48",
+      "path": "assets/v3/render/exports/icons/IC-gold-48.webp",
+      "actual": {
+        "sha256": "9bc731086dd8a720ee9c86b7f8609016072aa549ba44393fb4b04ba3f2870bff",
+        "bytes": 2258,
+        "size": [
+          48,
+          48
+        ],
+        "alpha": true
+      },
+      "expected": {
+        "path": "assets/v3/render/exports/icons/IC-gold-48.webp",
+        "bytes": 2258,
+        "sha256": "9bc731086dd8a720ee9c86b7f8609016072aa549ba44393fb4b04ba3f2870bff",
+        "size": [
+          48,
+          48
+        ],
+        "alpha": true
+      },
+      "matchesArtGit": true,
+      "matchesManifest": true
+    },
+    {
+      "id": "VE-01",
+      "role": "export",
+      "path": "assets/v3/render/exports/VE-01-vespa-1200.webp",
+      "actual": {
+        "sha256": "41b49a4f69162062d0af7df0f31eb775c1defea72eb1448e86e6332bf975c84e",
+        "bytes": 88680,
+        "size": [
+          1200,
+          900
+        ],
+        "alpha": true
+      },
+      "expected": {
+        "path": "assets/v3/render/exports/VE-01-vespa-1200.webp",
+        "bytes": 88680,
+        "sha256": "41b49a4f69162062d0af7df0f31eb775c1defea72eb1448e86e6332bf975c84e",
+        "size": [
+          1200,
+          900
+        ],
+        "alpha": true
+      },
+      "matchesArtGit": true,
+      "matchesManifest": true
+    },
+    {
+      "id": "IC-slice",
+      "role": "exports.96",
+      "path": "assets/v3/render/exports/icons/IC-slice-96.webp",
+      "actual": {
+        "sha256": "1b1fa303abc5775133b00d76f9b2d4c6945f759c12caf75d50b492bdb96ad550",
+        "bytes": 4658,
+        "size": [
+          96,
+          96
+        ],
+        "alpha": true
+      },
+      "expected": {
+        "path": "assets/v3/render/exports/icons/IC-slice-96.webp",
+        "bytes": 4658,
+        "sha256": "1b1fa303abc5775133b00d76f9b2d4c6945f759c12caf75d50b492bdb96ad550",
+        "size": [
+          96,
+          96
+        ],
+        "alpha": true
+      },
+      "matchesArtGit": true,
+      "matchesManifest": true
+    },
+    {
+      "id": "IC-slice",
+      "role": "exports.48",
+      "path": "assets/v3/render/exports/icons/IC-slice-48.webp",
+      "actual": {
+        "sha256": "cec6dd44ada6ca6712b8cf20b49f8f93c607fa71f3b3f68ab0695fd95e9e7998",
+        "bytes": 2044,
+        "size": [
+          48,
+          48
+        ],
+        "alpha": true
+      },
+      "expected": {
+        "path": "assets/v3/render/exports/icons/IC-slice-48.webp",
+        "bytes": 2044,
+        "sha256": "cec6dd44ada6ca6712b8cf20b49f8f93c607fa71f3b3f68ab0695fd95e9e7998",
+        "size": [
+          48,
+          48
+        ],
+        "alpha": true
+      },
+      "matchesArtGit": true,
+      "matchesManifest": true
+    },
+    {
+      "id": "IC-postcard",
+      "role": "exports.96",
+      "path": "assets/v3/render/exports/icons/IC-postcard-96.webp",
+      "actual": {
+        "sha256": "b4abe1371d848c583af9a843edaf1b2450e21571a9c8ab576b9a3dd78b2ef158",
+        "bytes": 6638,
+        "size": [
+          96,
+          96
+        ],
+        "alpha": true
+      },
+      "expected": {
+        "path": "assets/v3/render/exports/icons/IC-postcard-96.webp",
+        "bytes": 6638,
+        "sha256": "b4abe1371d848c583af9a843edaf1b2450e21571a9c8ab576b9a3dd78b2ef158",
+        "size": [
+          96,
+          96
+        ],
+        "alpha": true
+      },
+      "matchesArtGit": true,
+      "matchesManifest": true
+    },
+    {
+      "id": "IC-postcard",
+      "role": "exports.48",
+      "path": "assets/v3/render/exports/icons/IC-postcard-48.webp",
+      "actual": {
+        "sha256": "0d3975e248c3751f3e204734e417feb3bb7147e2fed56cb51656c789aa08603d",
+        "bytes": 2554,
+        "size": [
+          48,
+          48
+        ],
+        "alpha": true
+      },
+      "expected": {
+        "path": "assets/v3/render/exports/icons/IC-postcard-48.webp",
+        "bytes": 2554,
+        "sha256": "0d3975e248c3751f3e204734e417feb3bb7147e2fed56cb51656c789aa08603d",
+        "size": [
+          48,
+          48
+        ],
+        "alpha": true
+      },
+      "matchesArtGit": true,
+      "matchesManifest": true
+    },
+    {
+      "id": "IC-stamp",
+      "role": "exports.96",
+      "path": "assets/v3/render/exports/icons/IC-stamp-96.webp",
+      "actual": {
+        "sha256": "a578ddedb395fc9fc97c672923ed6f6f681628016e1c1e4c014019385a14144a",
+        "bytes": 7116,
+        "size": [
+          96,
+          96
+        ],
+        "alpha": true
+      },
+      "expected": {
+        "path": "assets/v3/render/exports/icons/IC-stamp-96.webp",
+        "bytes": 7116,
+        "sha256": "a578ddedb395fc9fc97c672923ed6f6f681628016e1c1e4c014019385a14144a",
+        "size": [
+          96,
+          96
+        ],
+        "alpha": true
+      },
+      "matchesArtGit": true,
+      "matchesManifest": true
+    },
+    {
+      "id": "IC-stamp",
+      "role": "exports.48",
+      "path": "assets/v3/render/exports/icons/IC-stamp-48.webp",
+      "actual": {
+        "sha256": "50907c9f470defcfe7e5e50e4654025007a87d7943c9cef6b210a3ce526598c7",
+        "bytes": 2488,
+        "size": [
+          48,
+          48
+        ],
+        "alpha": true
+      },
+      "expected": {
+        "path": "assets/v3/render/exports/icons/IC-stamp-48.webp",
+        "bytes": 2488,
+        "sha256": "50907c9f470defcfe7e5e50e4654025007a87d7943c9cef6b210a3ce526598c7",
+        "size": [
+          48,
+          48
+        ],
+        "alpha": true
+      },
+      "matchesArtGit": true,
+      "matchesManifest": true
+    }
+  ],
+  "runtimeFileCount": 23,
+  "embeddedArtFiles": 17,
+  "notEmbedded48pxVariants": [
+    "assets/v3/render/exports/icons/IC-pizza-48.webp",
+    "assets/v3/render/exports/icons/IC-vespa-48.webp",
+    "assets/v3/render/exports/icons/IC-gold-48.webp",
+    "assets/v3/render/exports/icons/IC-slice-48.webp",
+    "assets/v3/render/exports/icons/IC-postcard-48.webp",
+    "assets/v3/render/exports/icons/IC-stamp-48.webp"
+  ],
+  "reliefLayers": [
+    {
+      "role": "terrain",
+      "path": "assets/discovery/terrain-z8-render.webp",
+      "sha256": "440d631c8ff5777b13a2583870339caa8255c10a0ddcaaa3edd087b8fc524ab5",
+      "expected": "440d631c8ff5777b13a2583870339caa8255c10a0ddcaaa3edd087b8fc524ab5",
+      "bytes": 308232,
+      "size": [
+        1780,
+        2470
+      ],
+      "mode": "RGB",
+      "matchesProvenance": true,
+      "matchesPinnedReliefGit": true
+    },
+    {
+      "role": "sea",
+      "path": "assets/discovery/terrain-z8-render-sea.webp",
+      "sha256": "daded673fe77a75f631b40251c09ef158b1c541b037f32c8d75ed4141b4409d5",
+      "expected": "daded673fe77a75f631b40251c09ef158b1c541b037f32c8d75ed4141b4409d5",
+      "bytes": 245696,
+      "size": [
+        1780,
+        2470
+      ],
+      "mode": "RGB",
+      "matchesProvenance": true,
+      "matchesPinnedReliefGit": true
+    },
+    {
+      "role": "coast",
+      "path": "assets/discovery/terrain-z8-render-coast.webp",
+      "sha256": "e685ba188bbe1e434a0071c930f11d1ac7c6394f64300d53dda737ab63b2bcaf",
+      "expected": "e685ba188bbe1e434a0071c930f11d1ac7c6394f64300d53dda737ab63b2bcaf",
+      "bytes": 50682,
+      "size": [
+        1780,
+        2470
+      ],
+      "mode": "RGBA",
+      "matchesProvenance": true,
+      "matchesPinnedReliefGit": true
+    },
+    {
+      "role": "shadow",
+      "path": "assets/discovery/terrain-z8-render-shadow.webp",
+      "sha256": "e2fe511cc8c72fb8bf6a1e67e5041e64c99d3f76da665f0e3ee3e5e2428c0aec",
+      "expected": "e2fe511cc8c72fb8bf6a1e67e5041e64c99d3f76da665f0e3ee3e5e2428c0aec",
+      "bytes": 119588,
+      "size": [
+        1780,
+        2470
+      ],
+      "mode": "RGBA",
+      "matchesProvenance": true,
+      "matchesPinnedReliefGit": true
+    }
+  ],
+  "preview": {
+    "sha256": "23dced34e7d9079cd59195532721f39b1bc6c1f00032ce6c4a41bb4ea619b556",
+    "bytes": 50199445
+  },
+  "indexSHA256": "3aced3c31259011b0af2947c78f71965cb4beb2e88c69d1663e61792b0304f5a",
+  "acceptedCoastDeviation": "<=2.84SVGpx for V3.0, no reopening",
+  "newerHead": "89404f3491854d3c6004ab541079c39bef8bf0ec",
+  "newerHeadTested": false,
+  "upstreamSourceDEMTilesRebuilt": false
+}

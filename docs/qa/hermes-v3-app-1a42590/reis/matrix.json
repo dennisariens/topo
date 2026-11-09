@@ -1,0 +1,6526 @@
+[
+ {
+  "engine": "chromium",
+  "size": [
+   390,
+   844
+  ],
+  "chapter": "city1",
+  "relief": "off",
+  "labels": [
+   "I T A L I Ë",
+   "DUITSLAND",
+   "TSJECHIË",
+   "SLOWAKIJE",
+   "HONGARIJE",
+   "BOSNIË",
+   "TUNESIË",
+   "▲",
+   "▲"
+  ],
+  "labelHits": [],
+  "mapRect": {
+   "x": 16,
+   "y": 272,
+   "width": 358,
+   "height": 300,
+   "top": 272,
+   "right": 374,
+   "bottom": 572,
+   "left": 16
+  },
+  "selected": "city1",
+  "selectedIds": [
+   "city-1",
+   "city-2",
+   "city-3",
+   "city-4",
+   "city-5",
+   "city-6"
+  ],
+  "controls": [],
+  "coveredPaint": [],
+  "screenshot": "/Users/dennisariens/.hermes/cache/scratch/hermes-v3-app-1a42590/reis/independent-chromium/390x844-city1-false.png"
+ },
+ {
+  "engine": "chromium",
+  "size": [
+   390,
+   844
+  ],
+  "chapter": "city1",
+  "relief": "on",
+  "labels": [
+   "I T A L I Ë",
+   "DUITSLAND",
+   "TSJECHIË",
+   "SLOWAKIJE",
+   "HONGARIJE",
+   "BOSNIË",
+   "TUNESIË",
+   "▲",
+   "▲"
+  ],
+  "labelHits": [],
+  "mapRect": {
+   "x": 16,
+   "y": 272,
+   "width": 358,
+   "height": 300,
+   "top": 272,
+   "right": 374,
+   "bottom": 572,
+   "left": 16
+  },
+  "selected": "city1",
+  "selectedIds": [
+   "city-1",
+   "city-2",
+   "city-3",
+   "city-4",
+   "city-5",
+   "city-6"
+  ],
+  "controls": [],
+  "coveredPaint": [],
+  "screenshot": "/Users/dennisariens/.hermes/cache/scratch/hermes-v3-app-1a42590/reis/independent-chromium/390x844-city1-true.png"
+ },
+ {
+  "engine": "chromium",
+  "size": [
+   390,
+   844
+  ],
+  "chapter": "city2",
+  "relief": "off",
+  "labels": [
+   "I T A L I Ë",
+   "DUITSLAND",
+   "TSJECHIË",
+   "SLOWAKIJE",
+   "HONGARIJE",
+   "BOSNIË",
+   "TUNESIË",
+   "▲",
+   "▲"
+  ],
+  "labelHits": [],
+  "mapRect": {
+   "x": 16,
+   "y": 272,
+   "width": 358,
+   "height": 300,
+   "top": 272,
+   "right": 374,
+   "bottom": 572,
+   "left": 16
+  },
+  "selected": "city2",
+  "selectedIds": [
+   "city-7",
+   "city-8",
+   "city-9",
+   "city-10",
+   "city-11",
+   "city-12"
+  ],
+  "controls": [],
+  "coveredPaint": [],
+  "screenshot": "/Users/dennisariens/.hermes/cache/scratch/hermes-v3-app-1a42590/reis/independent-chromium/390x844-city2-false.png"
+ },
+ {
+  "engine": "chromium",
+  "size": [
+   390,
+   844
+  ],
+  "chapter": "city2",
+  "relief": "on",
+  "labels": [
+   "I T A L I Ë",
+   "DUITSLAND",
+   "TSJECHIË",
+   "SLOWAKIJE",
+   "HONGARIJE",
+   "BOSNIË",
+   "TUNESIË",
+   "▲",
+   "▲"
+  ],
+  "labelHits": [],
+  "mapRect": {
+   "x": 16,
+   "y": 272,
+   "width": 358,
+   "height": 300,
+   "top": 272,
+   "right": 374,
+   "bottom": 572,
+   "left": 16
+  },
+  "selected": "city2",
+  "selectedIds": [
+   "city-7",
+   "city-8",
+   "city-9",
+   "city-10",
+   "city-11",
+   "city-12"
+  ],
+  "controls": [],
+  "coveredPaint": [],
+  "screenshot": "/Users/dennisariens/.hermes/cache/scratch/hermes-v3-app-1a42590/reis/independent-chromium/390x844-city2-true.png"
+ },
+ {
+  "engine": "chromium",
+  "size": [
+   390,
+   844
+  ],
+  "chapter": "city3",
+  "relief": "off",
+  "labels": [
+   "I T A L I Ë",
+   "DUITSLAND",
+   "TSJECHIË",
+   "SLOWAKIJE",
+   "HONGARIJE",
+   "BOSNIË",
+   "TUNESIË",
+   "▲",
+   "▲"
+  ],
+  "labelHits": [],
+  "mapRect": {
+   "x": 16,
+   "y": 272,
+   "width": 358,
+   "height": 300,
+   "top": 272,
+   "right": 374,
+   "bottom": 572,
+   "left": 16
+  },
+  "selected": "city3",
+  "selectedIds": [
+   "city-13",
+   "city-14",
+   "city-15",
+   "city-16",
+   "city-17",
+   "city-18"
+  ],
+  "controls": [],
+  "coveredPaint": [],
+  "screenshot": "/Users/dennisariens/.hermes/cache/scratch/hermes-v3-app-1a42590/reis/independent-chromium/390x844-city3-false.png"
+ },
+ {
+  "engine": "chromium",
+  "size": [
+   390,
+   844
+  ],
+  "chapter": "city3",
+  "relief": "on",
+  "labels": [
+   "I T A L I Ë",
+   "DUITSLAND",
+   "TSJECHIË",
+   "SLOWAKIJE",
+   "HONGARIJE",
+   "BOSNIË",
+   "TUNESIË",
+   "▲",
+   "▲"
+  ],
+  "labelHits": [],
+  "mapRect": {
+   "x": 16,
+   "y": 272,
+   "width": 358,
+   "height": 300,
+   "top": 272,
+   "right": 374,
+   "bottom": 572,
+   "left": 16
+  },
+  "selected": "city3",
+  "selectedIds": [
+   "city-13",
+   "city-14",
+   "city-15",
+   "city-16",
+   "city-17",
+   "city-18"
+  ],
+  "controls": [],
+  "coveredPaint": [],
+  "screenshot": "/Users/dennisariens/.hermes/cache/scratch/hermes-v3-app-1a42590/reis/independent-chromium/390x844-city3-true.png"
+ },
+ {
+  "engine": "chromium",
+  "size": [
+   390,
+   844
+  ],
+  "chapter": "city4",
+  "relief": "off",
+  "labels": [
+   "I T A L I Ë",
+   "DUITSLAND",
+   "TSJECHIË",
+   "SLOWAKIJE",
+   "HONGARIJE",
+   "BOSNIË",
+   "TUNESIË",
+   "▲",
+   "▲"
+  ],
+  "labelHits": [],
+  "mapRect": {
+   "x": 16,
+   "y": 272,
+   "width": 358,
+   "height": 300,
+   "top": 272,
+   "right": 374,
+   "bottom": 572,
+   "left": 16
+  },
+  "selected": "city4",
+  "selectedIds": [
+   "city-19",
+   "city-20",
+   "city-21",
+   "city-22",
+   "city-23"
+  ],
+  "controls": [],
+  "coveredPaint": [],
+  "screenshot": "/Users/dennisariens/.hermes/cache/scratch/hermes-v3-app-1a42590/reis/independent-chromium/390x844-city4-false.png"
+ },
+ {
+  "engine": "chromium",
+  "size": [
+   390,
+   844
+  ],
+  "chapter": "city4",
+  "relief": "on",
+  "labels": [
+   "I T A L I Ë",
+   "DUITSLAND",
+   "TSJECHIË",
+   "SLOWAKIJE",
+   "HONGARIJE",
+   "BOSNIË",
+   "TUNESIË",
+   "▲",
+   "▲"
+  ],
+  "labelHits": [],
+  "mapRect": {
+   "x": 16,
+   "y": 272,
+   "width": 358,
+   "height": 300,
+   "top": 272,
+   "right": 374,
+   "bottom": 572,
+   "left": 16
+  },
+  "selected": "city4",
+  "selectedIds": [
+   "city-19",
+   "city-20",
+   "city-21",
+   "city-22",
+   "city-23"
+  ],
+  "controls": [],
+  "coveredPaint": [],
+  "screenshot": "/Users/dennisariens/.hermes/cache/scratch/hermes-v3-app-1a42590/reis/independent-chromium/390x844-city4-true.png"
+ },
+ {
+  "engine": "chromium",
+  "size": [
+   390,
+   844
+  ],
+  "chapter": "islands",
+  "relief": "off",
+  "labels": [
+   "I T A L I Ë",
+   "DUITSLAND",
+   "TSJECHIË",
+   "SLOWAKIJE",
+   "HONGARIJE",
+   "BOSNIË",
+   "TUNESIË",
+   "▲",
+   "▲"
+  ],
+  "labelHits": [],
+  "mapRect": {
+   "x": 16,
+   "y": 272,
+   "width": 358,
+   "height": 300,
+   "top": 272,
+   "right": 374,
+   "bottom": 572,
+   "left": 16
+  },
+  "selected": "islands",
+  "selectedIds": [
+   "area-a",
+   "area-b"
+  ],
+  "controls": [],
+  "coveredPaint": [],
+  "screenshot": "/Users/dennisariens/.hermes/cache/scratch/hermes-v3-app-1a42590/reis/independent-chromium/390x844-islands-false.png"
+ },
+ {
+  "engine": "chromium",
+  "size": [
+   390,
+   844
+  ],
+  "chapter": "islands",
+  "relief": "on",
+  "labels": [
+   "I T A L I Ë",
+   "DUITSLAND",
+   "TSJECHIË",
+   "SLOWAKIJE",
+   "HONGARIJE",
+   "BOSNIË",
+   "TUNESIË",
+   "▲",
+   "▲"
+  ],
+  "labelHits": [],
+  "mapRect": {
+   "x": 16,
+   "y": 272,
+   "width": 358,
+   "height": 300,
+   "top": 272,
+   "right": 374,
+   "bottom": 572,
+   "left": 16
+  },
+  "selected": "islands",
+  "selectedIds": [
+   "area-a",
+   "area-b"
+  ],
+  "controls": [],
+  "coveredPaint": [],
+  "screenshot": "/Users/dennisariens/.hermes/cache/scratch/hermes-v3-app-1a42590/reis/independent-chromium/390x844-islands-true.png"
+ },
+ {
+  "engine": "chromium",
+  "size": [
+   390,
+   844
+  ],
+  "chapter": "mountains",
+  "relief": "off",
+  "labels": [
+   "I T A L I Ë",
+   "DUITSLAND",
+   "TSJECHIË",
+   "SLOWAKIJE",
+   "HONGARIJE",
+   "BOSNIË",
+   "TUNESIË",
+   "▲",
+   "▲"
+  ],
+  "labelHits": [],
+  "mapRect": {
+   "x": 16,
+   "y": 252,
+   "width": 358,
+   "height": 300,
+   "top": 252,
+   "right": 374,
+   "bottom": 552,
+   "left": 16
+  },
+  "selected": "mountains",
+  "selectedIds": [
+   "area-c",
+   "area-d"
+  ],
+  "controls": [],
+  "coveredPaint": [],
+  "screenshot": "/Users/dennisariens/.hermes/cache/scratch/hermes-v3-app-1a42590/reis/independent-chromium/390x844-mountains-false.png"
+ },
+ {
+  "engine": "chromium",
+  "size": [
+   390,
+   844
+  ],
+  "chapter": "mountains",
+  "relief": "on",
+  "labels": [
+   "I T A L I Ë",
+   "DUITSLAND",
+   "TSJECHIË",
+   "SLOWAKIJE",
+   "HONGARIJE",
+   "BOSNIË",
+   "TUNESIË",
+   "▲",
+   "▲"
+  ],
+  "labelHits": [],
+  "mapRect": {
+   "x": 16,
+   "y": 252,
+   "width": 358,
+   "height": 300,
+   "top": 252,
+   "right": 374,
+   "bottom": 552,
+   "left": 16
+  },
+  "selected": "mountains",
+  "selectedIds": [
+   "area-c",
+   "area-d"
+  ],
+  "controls": [],
+  "coveredPaint": [],
+  "screenshot": "/Users/dennisariens/.hermes/cache/scratch/hermes-v3-app-1a42590/reis/independent-chromium/390x844-mountains-true.png"
+ },
+ {
+  "engine": "chromium",
+  "size": [
+   390,
+   844
+  ],
+  "chapter": "volcanoes",
+  "relief": "off",
+  "labels": [
+   "I T A L I Ë",
+   "DUITSLAND",
+   "TSJECHIË",
+   "SLOWAKIJE",
+   "HONGARIJE",
+   "BOSNIË",
+   "TUNESIË",
+   "▲",
+   "▲"
+  ],
+  "labelHits": [],
+  "mapRect": {
+   "x": 16,
+   "y": 252,
+   "width": 358,
+   "height": 300,
+   "top": 252,
+   "right": 374,
+   "bottom": 552,
+   "left": 16
+  },
+  "selected": "volcanoes",
+  "selectedIds": [
+   "area-e",
+   "area-f"
+  ],
+  "controls": [],
+  "coveredPaint": [],
+  "screenshot": "/Users/dennisariens/.hermes/cache/scratch/hermes-v3-app-1a42590/reis/independent-chromium/390x844-volcanoes-false.png"
+ },
+ {
+  "engine": "chromium",
+  "size": [
+   390,
+   844
+  ],
+  "chapter": "volcanoes",
+  "relief": "on",
+  "labels": [
+   "I T A L I Ë",
+   "DUITSLAND",
+   "TSJECHIË",
+   "SLOWAKIJE",
+   "HONGARIJE",
+   "BOSNIË",
+   "TUNESIË",
+   "▲",
+   "▲"
+  ],
+  "labelHits": [],
+  "mapRect": {
+   "x": 16,
+   "y": 252,
+   "width": 358,
+   "height": 300,
+   "top": 252,
+   "right": 374,
+   "bottom": 552,
+   "left": 16
+  },
+  "selected": "volcanoes",
+  "selectedIds": [
+   "area-e",
+   "area-f"
+  ],
+  "controls": [],
+  "coveredPaint": [],
+  "screenshot": "/Users/dennisariens/.hermes/cache/scratch/hermes-v3-app-1a42590/reis/independent-chromium/390x844-volcanoes-true.png"
+ },
+ {
+  "engine": "chromium",
+  "size": [
+   390,
+   844
+  ],
+  "chapter": "regions",
+  "relief": "off",
+  "labels": [
+   "I T A L I Ë",
+   "DUITSLAND",
+   "TSJECHIË",
+   "SLOWAKIJE",
+   "HONGARIJE",
+   "BOSNIË",
+   "TUNESIË",
+   "▲",
+   "▲"
+  ],
+  "labelHits": [],
+  "mapRect": {
+   "x": 16,
+   "y": 252,
+   "width": 358,
+   "height": 300,
+   "top": 252,
+   "right": 374,
+   "bottom": 552,
+   "left": 16
+  },
+  "selected": "regions",
+  "selectedIds": [
+   "area-g",
+   "area-h"
+  ],
+  "controls": [],
+  "coveredPaint": [],
+  "screenshot": "/Users/dennisariens/.hermes/cache/scratch/hermes-v3-app-1a42590/reis/independent-chromium/390x844-regions-false.png"
+ },
+ {
+  "engine": "chromium",
+  "size": [
+   390,
+   844
+  ],
+  "chapter": "regions",
+  "relief": "on",
+  "labels": [
+   "I T A L I Ë",
+   "DUITSLAND",
+   "TSJECHIË",
+   "SLOWAKIJE",
+   "HONGARIJE",
+   "BOSNIË",
+   "TUNESIË",
+   "▲",
+   "▲"
+  ],
+  "labelHits": [],
+  "mapRect": {
+   "x": 16,
+   "y": 252,
+   "width": 358,
+   "height": 300,
+   "top": 252,
+   "right": 374,
+   "bottom": 552,
+   "left": 16
+  },
+  "selected": "regions",
+  "selectedIds": [
+   "area-g",
+   "area-h"
+  ],
+  "controls": [],
+  "coveredPaint": [],
+  "screenshot": "/Users/dennisariens/.hermes/cache/scratch/hermes-v3-app-1a42590/reis/independent-chromium/390x844-regions-true.png"
+ },
+ {
+  "engine": "chromium",
+  "size": [
+   390,
+   844
+  ],
+  "chapter": "countries",
+  "relief": "off",
+  "labels": [
+   "I T A L I Ë",
+   "DUITSLAND",
+   "TSJECHIË",
+   "SLOWAKIJE",
+   "HONGARIJE",
+   "BOSNIË",
+   "TUNESIË",
+   "▲",
+   "▲"
+  ],
+  "labelHits": [],
+  "mapRect": {
+   "x": 16,
+   "y": 252,
+   "width": 358,
+   "height": 300,
+   "top": 252,
+   "right": 374,
+   "bottom": 552,
+   "left": 16
+  },
+  "selected": "countries",
+  "selectedIds": [
+   "area-i",
+   "area-j",
+   "area-k",
+   "area-l",
+   "area-m",
+   "area-n",
+   "area-o"
+  ],
+  "controls": [],
+  "coveredPaint": [],
+  "screenshot": "/Users/dennisariens/.hermes/cache/scratch/hermes-v3-app-1a42590/reis/independent-chromium/390x844-countries-false.png"
+ },
+ {
+  "engine": "chromium",
+  "size": [
+   390,
+   844
+  ],
+  "chapter": "countries",
+  "relief": "on",
+  "labels": [
+   "I T A L I Ë",
+   "DUITSLAND",
+   "TSJECHIË",
+   "SLOWAKIJE",
+   "HONGARIJE",
+   "BOSNIË",
+   "TUNESIË",
+   "▲",
+   "▲"
+  ],
+  "labelHits": [],
+  "mapRect": {
+   "x": 16,
+   "y": 252,
+   "width": 358,
+   "height": 300,
+   "top": 252,
+   "right": 374,
+   "bottom": 552,
+   "left": 16
+  },
+  "selected": "countries",
+  "selectedIds": [
+   "area-i",
+   "area-j",
+   "area-k",
+   "area-l",
+   "area-m",
+   "area-n",
+   "area-o"
+  ],
+  "controls": [],
+  "coveredPaint": [],
+  "screenshot": "/Users/dennisariens/.hermes/cache/scratch/hermes-v3-app-1a42590/reis/independent-chromium/390x844-countries-true.png"
+ },
+ {
+  "engine": "chromium",
+  "size": [
+   390,
+   844
+  ],
+  "chapter": "seas",
+  "relief": "off",
+  "labels": [
+   "I T A L I Ë",
+   "DUITSLAND",
+   "TSJECHIË",
+   "SLOWAKIJE",
+   "HONGARIJE",
+   "BOSNIË",
+   "TUNESIË",
+   "▲",
+   "▲"
+  ],
+  "labelHits": [],
+  "mapRect": {
+   "x": 16,
+   "y": 252,
+   "width": 358,
+   "height": 300,
+   "top": 252,
+   "right": 374,
+   "bottom": 552,
+   "left": 16
+  },
+  "selected": "seas",
+  "selectedIds": [
+   "water-A",
+   "water-B",
+   "water-C",
+   "water-D",
+   "water-E"
+  ],
+  "controls": [],
+  "coveredPaint": [],
+  "screenshot": "/Users/dennisariens/.hermes/cache/scratch/hermes-v3-app-1a42590/reis/independent-chromium/390x844-seas-false.png"
+ },
+ {
+  "engine": "chromium",
+  "size": [
+   390,
+   844
+  ],
+  "chapter": "seas",
+  "relief": "on",
+  "labels": [
+   "I T A L I Ë",
+   "DUITSLAND",
+   "TSJECHIË",
+   "SLOWAKIJE",
+   "HONGARIJE",
+   "BOSNIË",
+   "TUNESIË",
+   "▲",
+   "▲"
+  ],
+  "labelHits": [],
+  "mapRect": {
+   "x": 16,
+   "y": 252,
+   "width": 358,
+   "height": 300,
+   "top": 252,
+   "right": 374,
+   "bottom": 552,
+   "left": 16
+  },
+  "selected": "seas",
+  "selectedIds": [
+   "water-A",
+   "water-B",
+   "water-C",
+   "water-D",
+   "water-E"
+  ],
+  "controls": [],
+  "coveredPaint": [],
+  "screenshot": "/Users/dennisariens/.hermes/cache/scratch/hermes-v3-app-1a42590/reis/independent-chromium/390x844-seas-true.png"
+ },
+ {
+  "engine": "chromium",
+  "size": [
+   390,
+   844
+  ],
+  "chapter": "rivers",
+  "relief": "off",
+  "labels": [
+   "I T A L I Ë",
+   "DUITSLAND",
+   "TSJECHIË",
+   "SLOWAKIJE",
+   "HONGARIJE",
+   "BOSNIË",
+   "TUNESIË",
+   "▲",
+   "▲"
+  ],
+  "labelHits": [],
+  "mapRect": {
+   "x": 16,
+   "y": 252,
+   "width": 358,
+   "height": 300,
+   "top": 252,
+   "right": 374,
+   "bottom": 552,
+   "left": 16
+  },
+  "selected": "rivers",
+  "selectedIds": [
+   "water-F",
+   "water-G"
+  ],
+  "controls": [],
+  "coveredPaint": [],
+  "screenshot": "/Users/dennisariens/.hermes/cache/scratch/hermes-v3-app-1a42590/reis/independent-chromium/390x844-rivers-false.png"
+ },
+ {
+  "engine": "chromium",
+  "size": [
+   390,
+   844
+  ],
+  "chapter": "rivers",
+  "relief": "on",
+  "labels": [
+   "I T A L I Ë",
+   "DUITSLAND",
+   "TSJECHIË",
+   "SLOWAKIJE",
+   "HONGARIJE",
+   "BOSNIË",
+   "TUNESIË",
+   "▲",
+   "▲"
+  ],
+  "labelHits": [],
+  "mapRect": {
+   "x": 16,
+   "y": 252,
+   "width": 358,
+   "height": 300,
+   "top": 252,
+   "right": 374,
+   "bottom": 552,
+   "left": 16
+  },
+  "selected": "rivers",
+  "selectedIds": [
+   "water-F",
+   "water-G"
+  ],
+  "controls": [],
+  "coveredPaint": [],
+  "screenshot": "/Users/dennisariens/.hermes/cache/scratch/hermes-v3-app-1a42590/reis/independent-chromium/390x844-rivers-true.png"
+ },
+ {
+  "engine": "chromium",
+  "size": [
+   320,
+   640
+  ],
+  "chapter": "city1",
+  "relief": "off",
+  "labels": [
+   "I T A L I Ë",
+   "DUITSLAND",
+   "TSJECHIË",
+   "SLOWAKIJE",
+   "HONGARIJE",
+   "BOSNIË",
+   "TUNESIË",
+   "▲",
+   "▲"
+  ],
+  "labelHits": [],
+  "mapRect": {
+   "x": 16,
+   "y": 170,
+   "width": 288,
+   "height": 300,
+   "top": 170,
+   "right": 304,
+   "bottom": 470,
+   "left": 16
+  },
+  "selected": "city1",
+  "selectedIds": [
+   "city-1",
+   "city-2",
+   "city-3",
+   "city-4",
+   "city-5",
+   "city-6"
+  ],
+  "controls": [],
+  "coveredPaint": [],
+  "screenshot": "/Users/dennisariens/.hermes/cache/scratch/hermes-v3-app-1a42590/reis/independent-chromium/320x640-city1-false.png"
+ },
+ {
+  "engine": "chromium",
+  "size": [
+   320,
+   640
+  ],
+  "chapter": "city1",
+  "relief": "on",
+  "labels": [
+   "I T A L I Ë",
+   "DUITSLAND",
+   "TSJECHIË",
+   "SLOWAKIJE",
+   "HONGARIJE",
+   "BOSNIË",
+   "TUNESIË",
+   "▲",
+   "▲"
+  ],
+  "labelHits": [],
+  "mapRect": {
+   "x": 16,
+   "y": 170,
+   "width": 288,
+   "height": 300,
+   "top": 170,
+   "right": 304,
+   "bottom": 470,
+   "left": 16
+  },
+  "selected": "city1",
+  "selectedIds": [
+   "city-1",
+   "city-2",
+   "city-3",
+   "city-4",
+   "city-5",
+   "city-6"
+  ],
+  "controls": [],
+  "coveredPaint": [],
+  "screenshot": "/Users/dennisariens/.hermes/cache/scratch/hermes-v3-app-1a42590/reis/independent-chromium/320x640-city1-true.png"
+ },
+ {
+  "engine": "chromium",
+  "size": [
+   320,
+   640
+  ],
+  "chapter": "city2",
+  "relief": "off",
+  "labels": [
+   "I T A L I Ë",
+   "DUITSLAND",
+   "TSJECHIË",
+   "SLOWAKIJE",
+   "HONGARIJE",
+   "BOSNIË",
+   "TUNESIË",
+   "▲",
+   "▲"
+  ],
+  "labelHits": [],
+  "mapRect": {
+   "x": 16,
+   "y": 170,
+   "width": 288,
+   "height": 300,
+   "top": 170,
+   "right": 304,
+   "bottom": 470,
+   "left": 16
+  },
+  "selected": "city2",
+  "selectedIds": [
+   "city-7",
+   "city-8",
+   "city-9",
+   "city-10",
+   "city-11",
+   "city-12"
+  ],
+  "controls": [],
+  "coveredPaint": [],
+  "screenshot": "/Users/dennisariens/.hermes/cache/scratch/hermes-v3-app-1a42590/reis/independent-chromium/320x640-city2-false.png"
+ },
+ {
+  "engine": "chromium",
+  "size": [
+   320,
+   640
+  ],
+  "chapter": "city2",
+  "relief": "on",
+  "labels": [
+   "I T A L I Ë",
+   "DUITSLAND",
+   "TSJECHIË",
+   "SLOWAKIJE",
+   "HONGARIJE",
+   "BOSNIË",
+   "TUNESIË",
+   "▲",
+   "▲"
+  ],
+  "labelHits": [],
+  "mapRect": {
+   "x": 16,
+   "y": 170,
+   "width": 288,
+   "height": 300,
+   "top": 170,
+   "right": 304,
+   "bottom": 470,
+   "left": 16
+  },
+  "selected": "city2",
+  "selectedIds": [
+   "city-7",
+   "city-8",
+   "city-9",
+   "city-10",
+   "city-11",
+   "city-12"
+  ],
+  "controls": [],
+  "coveredPaint": [],
+  "screenshot": "/Users/dennisariens/.hermes/cache/scratch/hermes-v3-app-1a42590/reis/independent-chromium/320x640-city2-true.png"
+ },
+ {
+  "engine": "chromium",
+  "size": [
+   320,
+   640
+  ],
+  "chapter": "city3",
+  "relief": "off",
+  "labels": [
+   "I T A L I Ë",
+   "DUITSLAND",
+   "TSJECHIË",
+   "SLOWAKIJE",
+   "HONGARIJE",
+   "BOSNIË",
+   "TUNESIË",
+   "▲",
+   "▲"
+  ],
+  "labelHits": [],
+  "mapRect": {
+   "x": 16,
+   "y": 170,
+   "width": 288,
+   "height": 300,
+   "top": 170,
+   "right": 304,
+   "bottom": 470,
+   "left": 16
+  },
+  "selected": "city3",
+  "selectedIds": [
+   "city-13",
+   "city-14",
+   "city-15",
+   "city-16",
+   "city-17",
+   "city-18"
+  ],
+  "controls": [],
+  "coveredPaint": [],
+  "screenshot": "/Users/dennisariens/.hermes/cache/scratch/hermes-v3-app-1a42590/reis/independent-chromium/320x640-city3-false.png"
+ },
+ {
+  "engine": "chromium",
+  "size": [
+   320,
+   640
+  ],
+  "chapter": "city3",
+  "relief": "on",
+  "labels": [
+   "I T A L I Ë",
+   "DUITSLAND",
+   "TSJECHIË",
+   "SLOWAKIJE",
+   "HONGARIJE",
+   "BOSNIË",
+   "TUNESIË",
+   "▲",
+   "▲"
+  ],
+  "labelHits": [],
+  "mapRect": {
+   "x": 16,
+   "y": 170,
+   "width": 288,
+   "height": 300,
+   "top": 170,
+   "right": 304,
+   "bottom": 470,
+   "left": 16
+  },
+  "selected": "city3",
+  "selectedIds": [
+   "city-13",
+   "city-14",
+   "city-15",
+   "city-16",
+   "city-17",
+   "city-18"
+  ],
+  "controls": [],
+  "coveredPaint": [],
+  "screenshot": "/Users/dennisariens/.hermes/cache/scratch/hermes-v3-app-1a42590/reis/independent-chromium/320x640-city3-true.png"
+ },
+ {
+  "engine": "chromium",
+  "size": [
+   320,
+   640
+  ],
+  "chapter": "city4",
+  "relief": "off",
+  "labels": [
+   "I T A L I Ë",
+   "DUITSLAND",
+   "TSJECHIË",
+   "SLOWAKIJE",
+   "HONGARIJE",
+   "BOSNIË",
+   "TUNESIË",
+   "▲",
+   "▲"
+  ],
+  "labelHits": [],
+  "mapRect": {
+   "x": 16,
+   "y": 170,
+   "width": 288,
+   "height": 300,
+   "top": 170,
+   "right": 304,
+   "bottom": 470,
+   "left": 16
+  },
+  "selected": "city4",
+  "selectedIds": [
+   "city-19",
+   "city-20",
+   "city-21",
+   "city-22",
+   "city-23"
+  ],
+  "controls": [],
+  "coveredPaint": [],
+  "screenshot": "/Users/dennisariens/.hermes/cache/scratch/hermes-v3-app-1a42590/reis/independent-chromium/320x640-city4-false.png"
+ },
+ {
+  "engine": "chromium",
+  "size": [
+   320,
+   640
+  ],
+  "chapter": "city4",
+  "relief": "on",
+  "labels": [
+   "I T A L I Ë",
+   "DUITSLAND",
+   "TSJECHIË",
+   "SLOWAKIJE",
+   "HONGARIJE",
+   "BOSNIË",
+   "TUNESIË",
+   "▲",
+   "▲"
+  ],
+  "labelHits": [],
+  "mapRect": {
+   "x": 16,
+   "y": 170,
+   "width": 288,
+   "height": 300,
+   "top": 170,
+   "right": 304,
+   "bottom": 470,
+   "left": 16
+  },
+  "selected": "city4",
+  "selectedIds": [
+   "city-19",
+   "city-20",
+   "city-21",
+   "city-22",
+   "city-23"
+  ],
+  "controls": [],
+  "coveredPaint": [],
+  "screenshot": "/Users/dennisariens/.hermes/cache/scratch/hermes-v3-app-1a42590/reis/independent-chromium/320x640-city4-true.png"
+ },
+ {
+  "engine": "chromium",
+  "size": [
+   320,
+   640
+  ],
+  "chapter": "islands",
+  "relief": "off",
+  "labels": [
+   "I T A L I Ë",
+   "DUITSLAND",
+   "TSJECHIË",
+   "SLOWAKIJE",
+   "HONGARIJE",
+   "BOSNIË",
+   "TUNESIË",
+   "▲",
+   "▲"
+  ],
+  "labelHits": [],
+  "mapRect": {
+   "x": 16,
+   "y": 170,
+   "width": 288,
+   "height": 300,
+   "top": 170,
+   "right": 304,
+   "bottom": 470,
+   "left": 16
+  },
+  "selected": "islands",
+  "selectedIds": [
+   "area-a",
+   "area-b"
+  ],
+  "controls": [],
+  "coveredPaint": [],
+  "screenshot": "/Users/dennisariens/.hermes/cache/scratch/hermes-v3-app-1a42590/reis/independent-chromium/320x640-islands-false.png"
+ },
+ {
+  "engine": "chromium",
+  "size": [
+   320,
+   640
+  ],
+  "chapter": "islands",
+  "relief": "on",
+  "labels": [
+   "I T A L I Ë",
+   "DUITSLAND",
+   "TSJECHIË",
+   "SLOWAKIJE",
+   "HONGARIJE",
+   "BOSNIË",
+   "TUNESIË",
+   "▲",
+   "▲"
+  ],
+  "labelHits": [],
+  "mapRect": {
+   "x": 16,
+   "y": 170,
+   "width": 288,
+   "height": 300,
+   "top": 170,
+   "right": 304,
+   "bottom": 470,
+   "left": 16
+  },
+  "selected": "islands",
+  "selectedIds": [
+   "area-a",
+   "area-b"
+  ],
+  "controls": [],
+  "coveredPaint": [],
+  "screenshot": "/Users/dennisariens/.hermes/cache/scratch/hermes-v3-app-1a42590/reis/independent-chromium/320x640-islands-true.png"
+ },
+ {
+  "engine": "chromium",
+  "size": [
+   320,
+   640
+  ],
+  "chapter": "mountains",
+  "relief": "off",
+  "labels": [
+   "I T A L I Ë",
+   "DUITSLAND",
+   "TSJECHIË",
+   "SLOWAKIJE",
+   "HONGARIJE",
+   "BOSNIË",
+   "TUNESIË",
+   "▲",
+   "▲"
+  ],
+  "labelHits": [],
+  "mapRect": {
+   "x": 16,
+   "y": 170,
+   "width": 288,
+   "height": 300,
+   "top": 170,
+   "right": 304,
+   "bottom": 470,
+   "left": 16
+  },
+  "selected": "mountains",
+  "selectedIds": [
+   "area-c",
+   "area-d"
+  ],
+  "controls": [],
+  "coveredPaint": [],
+  "screenshot": "/Users/dennisariens/.hermes/cache/scratch/hermes-v3-app-1a42590/reis/independent-chromium/320x640-mountains-false.png"
+ },
+ {
+  "engine": "chromium",
+  "size": [
+   320,
+   640
+  ],
+  "chapter": "mountains",
+  "relief": "on",
+  "labels": [
+   "I T A L I Ë",
+   "DUITSLAND",
+   "TSJECHIË",
+   "SLOWAKIJE",
+   "HONGARIJE",
+   "BOSNIË",
+   "TUNESIË",
+   "▲",
+   "▲"
+  ],
+  "labelHits": [],
+  "mapRect": {
+   "x": 16,
+   "y": 170,
+   "width": 288,
+   "height": 300,
+   "top": 170,
+   "right": 304,
+   "bottom": 470,
+   "left": 16
+  },
+  "selected": "mountains",
+  "selectedIds": [
+   "area-c",
+   "area-d"
+  ],
+  "controls": [],
+  "coveredPaint": [],
+  "screenshot": "/Users/dennisariens/.hermes/cache/scratch/hermes-v3-app-1a42590/reis/independent-chromium/320x640-mountains-true.png"
+ },
+ {
+  "engine": "chromium",
+  "size": [
+   320,
+   640
+  ],
+  "chapter": "volcanoes",
+  "relief": "off",
+  "labels": [
+   "I T A L I Ë",
+   "DUITSLAND",
+   "TSJECHIË",
+   "SLOWAKIJE",
+   "HONGARIJE",
+   "BOSNIË",
+   "TUNESIË",
+   "▲",
+   "▲"
+  ],
+  "labelHits": [],
+  "mapRect": {
+   "x": 16,
+   "y": 170,
+   "width": 288,
+   "height": 300,
+   "top": 170,
+   "right": 304,
+   "bottom": 470,
+   "left": 16
+  },
+  "selected": "volcanoes",
+  "selectedIds": [
+   "area-e",
+   "area-f"
+  ],
+  "controls": [],
+  "coveredPaint": [],
+  "screenshot": "/Users/dennisariens/.hermes/cache/scratch/hermes-v3-app-1a42590/reis/independent-chromium/320x640-volcanoes-false.png"
+ },
+ {
+  "engine": "chromium",
+  "size": [
+   320,
+   640
+  ],
+  "chapter": "volcanoes",
+  "relief": "on",
+  "labels": [
+   "I T A L I Ë",
+   "DUITSLAND",
+   "TSJECHIË",
+   "SLOWAKIJE",
+   "HONGARIJE",
+   "BOSNIË",
+   "TUNESIË",
+   "▲",
+   "▲"
+  ],
+  "labelHits": [],
+  "mapRect": {
+   "x": 16,
+   "y": 170,
+   "width": 288,
+   "height": 300,
+   "top": 170,
+   "right": 304,
+   "bottom": 470,
+   "left": 16
+  },
+  "selected": "volcanoes",
+  "selectedIds": [
+   "area-e",
+   "area-f"
+  ],
+  "controls": [],
+  "coveredPaint": [],
+  "screenshot": "/Users/dennisariens/.hermes/cache/scratch/hermes-v3-app-1a42590/reis/independent-chromium/320x640-volcanoes-true.png"
+ },
+ {
+  "engine": "chromium",
+  "size": [
+   320,
+   640
+  ],
+  "chapter": "regions",
+  "relief": "off",
+  "labels": [
+   "I T A L I Ë",
+   "DUITSLAND",
+   "TSJECHIË",
+   "SLOWAKIJE",
+   "HONGARIJE",
+   "BOSNIË",
+   "TUNESIË",
+   "▲",
+   "▲"
+  ],
+  "labelHits": [],
+  "mapRect": {
+   "x": 16,
+   "y": 170,
+   "width": 288,
+   "height": 300,
+   "top": 170,
+   "right": 304,
+   "bottom": 470,
+   "left": 16
+  },
+  "selected": "regions",
+  "selectedIds": [
+   "area-g",
+   "area-h"
+  ],
+  "controls": [],
+  "coveredPaint": [],
+  "screenshot": "/Users/dennisariens/.hermes/cache/scratch/hermes-v3-app-1a42590/reis/independent-chromium/320x640-regions-false.png"
+ },
+ {
+  "engine": "chromium",
+  "size": [
+   320,
+   640
+  ],
+  "chapter": "regions",
+  "relief": "on",
+  "labels": [
+   "I T A L I Ë",
+   "DUITSLAND",
+   "TSJECHIË",
+   "SLOWAKIJE",
+   "HONGARIJE",
+   "BOSNIË",
+   "TUNESIË",
+   "▲",
+   "▲"
+  ],
+  "labelHits": [],
+  "mapRect": {
+   "x": 16,
+   "y": 170,
+   "width": 288,
+   "height": 300,
+   "top": 170,
+   "right": 304,
+   "bottom": 470,
+   "left": 16
+  },
+  "selected": "regions",
+  "selectedIds": [
+   "area-g",
+   "area-h"
+  ],
+  "controls": [],
+  "coveredPaint": [],
+  "screenshot": "/Users/dennisariens/.hermes/cache/scratch/hermes-v3-app-1a42590/reis/independent-chromium/320x640-regions-true.png"
+ },
+ {
+  "engine": "chromium",
+  "size": [
+   320,
+   640
+  ],
+  "chapter": "countries",
+  "relief": "off",
+  "labels": [
+   "I T A L I Ë",
+   "DUITSLAND",
+   "TSJECHIË",
+   "SLOWAKIJE",
+   "HONGARIJE",
+   "BOSNIË",
+   "TUNESIË",
+   "▲",
+   "▲"
+  ],
+  "labelHits": [],
+  "mapRect": {
+   "x": 16,
+   "y": 170,
+   "width": 288,
+   "height": 300,
+   "top": 170,
+   "right": 304,
+   "bottom": 470,
+   "left": 16
+  },
+  "selected": "countries",
+  "selectedIds": [
+   "area-i",
+   "area-j",
+   "area-k",
+   "area-l",
+   "area-m",
+   "area-n",
+   "area-o"
+  ],
+  "controls": [],
+  "coveredPaint": [],
+  "screenshot": "/Users/dennisariens/.hermes/cache/scratch/hermes-v3-app-1a42590/reis/independent-chromium/320x640-countries-false.png"
+ },
+ {
+  "engine": "chromium",
+  "size": [
+   320,
+   640
+  ],
+  "chapter": "countries",
+  "relief": "on",
+  "labels": [
+   "I T A L I Ë",
+   "DUITSLAND",
+   "TSJECHIË",
+   "SLOWAKIJE",
+   "HONGARIJE",
+   "BOSNIË",
+   "TUNESIË",
+   "▲",
+   "▲"
+  ],
+  "labelHits": [],
+  "mapRect": {
+   "x": 16,
+   "y": 170,
+   "width": 288,
+   "height": 300,
+   "top": 170,
+   "right": 304,
+   "bottom": 470,
+   "left": 16
+  },
+  "selected": "countries",
+  "selectedIds": [
+   "area-i",
+   "area-j",
+   "area-k",
+   "area-l",
+   "area-m",
+   "area-n",
+   "area-o"
+  ],
+  "controls": [],
+  "coveredPaint": [],
+  "screenshot": "/Users/dennisariens/.hermes/cache/scratch/hermes-v3-app-1a42590/reis/independent-chromium/320x640-countries-true.png"
+ },
+ {
+  "engine": "chromium",
+  "size": [
+   320,
+   640
+  ],
+  "chapter": "seas",
+  "relief": "off",
+  "labels": [
+   "I T A L I Ë",
+   "DUITSLAND",
+   "TSJECHIË",
+   "SLOWAKIJE",
+   "HONGARIJE",
+   "BOSNIË",
+   "TUNESIË",
+   "▲",
+   "▲"
+  ],
+  "labelHits": [],
+  "mapRect": {
+   "x": 16,
+   "y": 170,
+   "width": 288,
+   "height": 300,
+   "top": 170,
+   "right": 304,
+   "bottom": 470,
+   "left": 16
+  },
+  "selected": "seas",
+  "selectedIds": [
+   "water-A",
+   "water-B",
+   "water-C",
+   "water-D",
+   "water-E"
+  ],
+  "controls": [],
+  "coveredPaint": [],
+  "screenshot": "/Users/dennisariens/.hermes/cache/scratch/hermes-v3-app-1a42590/reis/independent-chromium/320x640-seas-false.png"
+ },
+ {
+  "engine": "chromium",
+  "size": [
+   320,
+   640
+  ],
+  "chapter": "seas",
+  "relief": "on",
+  "labels": [
+   "I T A L I Ë",
+   "DUITSLAND",
+   "TSJECHIË",
+   "SLOWAKIJE",
+   "HONGARIJE",
+   "BOSNIË",
+   "TUNESIË",
+   "▲",
+   "▲"
+  ],
+  "labelHits": [],
+  "mapRect": {
+   "x": 16,
+   "y": 170,
+   "width": 288,
+   "height": 300,
+   "top": 170,
+   "right": 304,
+   "bottom": 470,
+   "left": 16
+  },
+  "selected": "seas",
+  "selectedIds": [
+   "water-A",
+   "water-B",
+   "water-C",
+   "water-D",
+   "water-E"
+  ],
+  "controls": [],
+  "coveredPaint": [],
+  "screenshot": "/Users/dennisariens/.hermes/cache/scratch/hermes-v3-app-1a42590/reis/independent-chromium/320x640-seas-true.png"
+ },
+ {
+  "engine": "chromium",
+  "size": [
+   320,
+   640
+  ],
+  "chapter": "rivers",
+  "relief": "off",
+  "labels": [
+   "I T A L I Ë",
+   "DUITSLAND",
+   "TSJECHIË",
+   "SLOWAKIJE",
+   "HONGARIJE",
+   "BOSNIË",
+   "TUNESIË",
+   "▲",
+   "▲"
+  ],
+  "labelHits": [],
+  "mapRect": {
+   "x": 16,
+   "y": 170,
+   "width": 288,
+   "height": 300,
+   "top": 170,
+   "right": 304,
+   "bottom": 470,
+   "left": 16
+  },
+  "selected": "rivers",
+  "selectedIds": [
+   "water-F",
+   "water-G"
+  ],
+  "controls": [],
+  "coveredPaint": [],
+  "screenshot": "/Users/dennisariens/.hermes/cache/scratch/hermes-v3-app-1a42590/reis/independent-chromium/320x640-rivers-false.png"
+ },
+ {
+  "engine": "chromium",
+  "size": [
+   320,
+   640
+  ],
+  "chapter": "rivers",
+  "relief": "on",
+  "labels": [
+   "I T A L I Ë",
+   "DUITSLAND",
+   "TSJECHIË",
+   "SLOWAKIJE",
+   "HONGARIJE",
+   "BOSNIË",
+   "TUNESIË",
+   "▲",
+   "▲"
+  ],
+  "labelHits": [],
+  "mapRect": {
+   "x": 16,
+   "y": 170,
+   "width": 288,
+   "height": 300,
+   "top": 170,
+   "right": 304,
+   "bottom": 470,
+   "left": 16
+  },
+  "selected": "rivers",
+  "selectedIds": [
+   "water-F",
+   "water-G"
+  ],
+  "controls": [],
+  "coveredPaint": [],
+  "screenshot": "/Users/dennisariens/.hermes/cache/scratch/hermes-v3-app-1a42590/reis/independent-chromium/320x640-rivers-true.png"
+ },
+ {
+  "engine": "chromium",
+  "size": [
+   820,
+   1180
+  ],
+  "chapter": "city1",
+  "relief": "off",
+  "labels": [
+   "I T A L I Ë",
+   "DUITSLAND",
+   "TSJECHIË",
+   "SLOWAKIJE",
+   "HONGARIJE",
+   "BOSNIË",
+   "TUNESIË",
+   "▲",
+   "▲"
+  ],
+  "labelHits": [],
+  "mapRect": {
+   "x": 434,
+   "y": 630.625,
+   "width": 346,
+   "height": 509.375,
+   "top": 630.625,
+   "right": 780,
+   "bottom": 1140,
+   "left": 434
+  },
+  "selected": "city1",
+  "selectedIds": [
+   "city-1",
+   "city-2",
+   "city-3",
+   "city-4",
+   "city-5",
+   "city-6"
+  ],
+  "controls": [
+   {
+    "i": 17,
+    "text": "SchoolkaartReliëf",
+    "x": 594.796875,
+    "y": 1086,
+    "w": 173.203125,
+    "h": 42
+   },
+   {
+    "i": 18,
+    "text": "Schoolkaart",
+    "x": 597.796875,
+    "y": 1089,
+    "w": 104.984375,
+    "h": 36
+   },
+   {
+    "i": 19,
+    "text": "Reliëf",
+    "x": 702.78125,
+    "y": 1089,
+    "w": 62.21875,
+    "h": 36
+   }
+  ],
+  "coveredPaint": [],
+  "screenshot": "/Users/dennisariens/.hermes/cache/scratch/hermes-v3-app-1a42590/reis/independent-chromium/820x1180-city1-false.png"
+ },
+ {
+  "engine": "chromium",
+  "size": [
+   820,
+   1180
+  ],
+  "chapter": "city1",
+  "relief": "on",
+  "labels": [
+   "I T A L I Ë",
+   "DUITSLAND",
+   "TSJECHIË",
+   "SLOWAKIJE",
+   "HONGARIJE",
+   "BOSNIË",
+   "TUNESIË",
+   "▲",
+   "▲"
+  ],
+  "labelHits": [],
+  "mapRect": {
+   "x": 434,
+   "y": 630.625,
+   "width": 346,
+   "height": 509.375,
+   "top": 630.625,
+   "right": 780,
+   "bottom": 1140,
+   "left": 434
+  },
+  "selected": "city1",
+  "selectedIds": [
+   "city-1",
+   "city-2",
+   "city-3",
+   "city-4",
+   "city-5",
+   "city-6"
+  ],
+  "controls": [
+   {
+    "i": 17,
+    "text": "SchoolkaartReliëf",
+    "x": 594.796875,
+    "y": 1086,
+    "w": 173.203125,
+    "h": 42
+   },
+   {
+    "i": 18,
+    "text": "Schoolkaart",
+    "x": 597.796875,
+    "y": 1089,
+    "w": 104.984375,
+    "h": 36
+   },
+   {
+    "i": 19,
+    "text": "Reliëf",
+    "x": 702.78125,
+    "y": 1089,
+    "w": 62.21875,
+    "h": 36
+   }
+  ],
+  "coveredPaint": [],
+  "screenshot": "/Users/dennisariens/.hermes/cache/scratch/hermes-v3-app-1a42590/reis/independent-chromium/820x1180-city1-true.png"
+ },
+ {
+  "engine": "chromium",
+  "size": [
+   820,
+   1180
+  ],
+  "chapter": "city2",
+  "relief": "off",
+  "labels": [
+   "I T A L I Ë",
+   "DUITSLAND",
+   "TSJECHIË",
+   "SLOWAKIJE",
+   "HONGARIJE",
+   "BOSNIË",
+   "TUNESIË",
+   "▲",
+   "▲"
+  ],
+  "labelHits": [],
+  "mapRect": {
+   "x": 434,
+   "y": 630.625,
+   "width": 346,
+   "height": 509.375,
+   "top": 630.625,
+   "right": 780,
+   "bottom": 1140,
+   "left": 434
+  },
+  "selected": "city2",
+  "selectedIds": [
+   "city-7",
+   "city-8",
+   "city-9",
+   "city-10",
+   "city-11",
+   "city-12"
+  ],
+  "controls": [
+   {
+    "i": 17,
+    "text": "SchoolkaartReliëf",
+    "x": 594.796875,
+    "y": 1086,
+    "w": 173.203125,
+    "h": 42
+   },
+   {
+    "i": 18,
+    "text": "Schoolkaart",
+    "x": 597.796875,
+    "y": 1089,
+    "w": 104.984375,
+    "h": 36
+   },
+   {
+    "i": 19,
+    "text": "Reliëf",
+    "x": 702.78125,
+    "y": 1089,
+    "w": 62.21875,
+    "h": 36
+   }
+  ],
+  "coveredPaint": [],
+  "screenshot": "/Users/dennisariens/.hermes/cache/scratch/hermes-v3-app-1a42590/reis/independent-chromium/820x1180-city2-false.png"
+ },
+ {
+  "engine": "chromium",
+  "size": [
+   820,
+   1180
+  ],
+  "chapter": "city2",
+  "relief": "on",
+  "labels": [
+   "I T A L I Ë",
+   "DUITSLAND",
+   "TSJECHIË",
+   "SLOWAKIJE",
+   "HONGARIJE",
+   "BOSNIË",
+   "TUNESIË",
+   "▲",
+   "▲"
+  ],
+  "labelHits": [],
+  "mapRect": {
+   "x": 434,
+   "y": 630.625,
+   "width": 346,
+   "height": 509.375,
+   "top": 630.625,
+   "right": 780,
+   "bottom": 1140,
+   "left": 434
+  },
+  "selected": "city2",
+  "selectedIds": [
+   "city-7",
+   "city-8",
+   "city-9",
+   "city-10",
+   "city-11",
+   "city-12"
+  ],
+  "controls": [
+   {
+    "i": 17,
+    "text": "SchoolkaartReliëf",
+    "x": 594.796875,
+    "y": 1086,
+    "w": 173.203125,
+    "h": 42
+   },
+   {
+    "i": 18,
+    "text": "Schoolkaart",
+    "x": 597.796875,
+    "y": 1089,
+    "w": 104.984375,
+    "h": 36
+   },
+   {
+    "i": 19,
+    "text": "Reliëf",
+    "x": 702.78125,
+    "y": 1089,
+    "w": 62.21875,
+    "h": 36
+   }
+  ],
+  "coveredPaint": [],
+  "screenshot": "/Users/dennisariens/.hermes/cache/scratch/hermes-v3-app-1a42590/reis/independent-chromium/820x1180-city2-true.png"
+ },
+ {
+  "engine": "chromium",
+  "size": [
+   820,
+   1180
+  ],
+  "chapter": "city3",
+  "relief": "off",
+  "labels": [
+   "I T A L I Ë",
+   "DUITSLAND",
+   "TSJECHIË",
+   "SLOWAKIJE",
+   "HONGARIJE",
+   "BOSNIË",
+   "TUNESIË",
+   "▲",
+   "▲"
+  ],
+  "labelHits": [],
+  "mapRect": {
+   "x": 434,
+   "y": 630.625,
+   "width": 346,
+   "height": 509.375,
+   "top": 630.625,
+   "right": 780,
+   "bottom": 1140,
+   "left": 434
+  },
+  "selected": "city3",
+  "selectedIds": [
+   "city-13",
+   "city-14",
+   "city-15",
+   "city-16",
+   "city-17",
+   "city-18"
+  ],
+  "controls": [
+   {
+    "i": 17,
+    "text": "SchoolkaartReliëf",
+    "x": 594.796875,
+    "y": 1086,
+    "w": 173.203125,
+    "h": 42
+   },
+   {
+    "i": 18,
+    "text": "Schoolkaart",
+    "x": 597.796875,
+    "y": 1089,
+    "w": 104.984375,
+    "h": 36
+   },
+   {
+    "i": 19,
+    "text": "Reliëf",
+    "x": 702.78125,
+    "y": 1089,
+    "w": 62.21875,
+    "h": 36
+   }
+  ],
+  "coveredPaint": [],
+  "screenshot": "/Users/dennisariens/.hermes/cache/scratch/hermes-v3-app-1a42590/reis/independent-chromium/820x1180-city3-false.png"
+ },
+ {
+  "engine": "chromium",
+  "size": [
+   820,
+   1180
+  ],
+  "chapter": "city3",
+  "relief": "on",
+  "labels": [
+   "I T A L I Ë",
+   "DUITSLAND",
+   "TSJECHIË",
+   "SLOWAKIJE",
+   "HONGARIJE",
+   "BOSNIË",
+   "TUNESIË",
+   "▲",
+   "▲"
+  ],
+  "labelHits": [],
+  "mapRect": {
+   "x": 434,
+   "y": 630.625,
+   "width": 346,
+   "height": 509.375,
+   "top": 630.625,
+   "right": 780,
+   "bottom": 1140,
+   "left": 434
+  },
+  "selected": "city3",
+  "selectedIds": [
+   "city-13",
+   "city-14",
+   "city-15",
+   "city-16",
+   "city-17",
+   "city-18"
+  ],
+  "controls": [
+   {
+    "i": 17,
+    "text": "SchoolkaartReliëf",
+    "x": 594.796875,
+    "y": 1086,
+    "w": 173.203125,
+    "h": 42
+   },
+   {
+    "i": 18,
+    "text": "Schoolkaart",
+    "x": 597.796875,
+    "y": 1089,
+    "w": 104.984375,
+    "h": 36
+   },
+   {
+    "i": 19,
+    "text": "Reliëf",
+    "x": 702.78125,
+    "y": 1089,
+    "w": 62.21875,
+    "h": 36
+   }
+  ],
+  "coveredPaint": [],
+  "screenshot": "/Users/dennisariens/.hermes/cache/scratch/hermes-v3-app-1a42590/reis/independent-chromium/820x1180-city3-true.png"
+ },
+ {
+  "engine": "chromium",
+  "size": [
+   820,
+   1180
+  ],
+  "chapter": "city4",
+  "relief": "off",
+  "labels": [
+   "I T A L I Ë",
+   "DUITSLAND",
+   "TSJECHIË",
+   "SLOWAKIJE",
+   "HONGARIJE",
+   "BOSNIË",
+   "TUNESIË",
+   "▲",
+   "▲"
+  ],
+  "labelHits": [],
+  "mapRect": {
+   "x": 434,
+   "y": 630.625,
+   "width": 346,
+   "height": 509.375,
+   "top": 630.625,
+   "right": 780,
+   "bottom": 1140,
+   "left": 434
+  },
+  "selected": "city4",
+  "selectedIds": [
+   "city-19",
+   "city-20",
+   "city-21",
+   "city-22",
+   "city-23"
+  ],
+  "controls": [
+   {
+    "i": 17,
+    "text": "SchoolkaartReliëf",
+    "x": 594.796875,
+    "y": 1086,
+    "w": 173.203125,
+    "h": 42
+   },
+   {
+    "i": 18,
+    "text": "Schoolkaart",
+    "x": 597.796875,
+    "y": 1089,
+    "w": 104.984375,
+    "h": 36
+   },
+   {
+    "i": 19,
+    "text": "Reliëf",
+    "x": 702.78125,
+    "y": 1089,
+    "w": 62.21875,
+    "h": 36
+   }
+  ],
+  "coveredPaint": [],
+  "screenshot": "/Users/dennisariens/.hermes/cache/scratch/hermes-v3-app-1a42590/reis/independent-chromium/820x1180-city4-false.png"
+ },
+ {
+  "engine": "chromium",
+  "size": [
+   820,
+   1180
+  ],
+  "chapter": "city4",
+  "relief": "on",
+  "labels": [
+   "I T A L I Ë",
+   "DUITSLAND",
+   "TSJECHIË",
+   "SLOWAKIJE",
+   "HONGARIJE",
+   "BOSNIË",
+   "TUNESIË",
+   "▲",
+   "▲"
+  ],
+  "labelHits": [],
+  "mapRect": {
+   "x": 434,
+   "y": 630.625,
+   "width": 346,
+   "height": 509.375,
+   "top": 630.625,
+   "right": 780,
+   "bottom": 1140,
+   "left": 434
+  },
+  "selected": "city4",
+  "selectedIds": [
+   "city-19",
+   "city-20",
+   "city-21",
+   "city-22",
+   "city-23"
+  ],
+  "controls": [
+   {
+    "i": 17,
+    "text": "SchoolkaartReliëf",
+    "x": 594.796875,
+    "y": 1086,
+    "w": 173.203125,
+    "h": 42
+   },
+   {
+    "i": 18,
+    "text": "Schoolkaart",
+    "x": 597.796875,
+    "y": 1089,
+    "w": 104.984375,
+    "h": 36
+   },
+   {
+    "i": 19,
+    "text": "Reliëf",
+    "x": 702.78125,
+    "y": 1089,
+    "w": 62.21875,
+    "h": 36
+   }
+  ],
+  "coveredPaint": [],
+  "screenshot": "/Users/dennisariens/.hermes/cache/scratch/hermes-v3-app-1a42590/reis/independent-chromium/820x1180-city4-true.png"
+ },
+ {
+  "engine": "chromium",
+  "size": [
+   820,
+   1180
+  ],
+  "chapter": "islands",
+  "relief": "off",
+  "labels": [
+   "I T A L I Ë",
+   "DUITSLAND",
+   "TSJECHIË",
+   "SLOWAKIJE",
+   "HONGARIJE",
+   "BOSNIË",
+   "TUNESIË",
+   "▲",
+   "▲"
+  ],
+  "labelHits": [],
+  "mapRect": {
+   "x": 434,
+   "y": 526.625,
+   "width": 346,
+   "height": 613.375,
+   "top": 526.625,
+   "right": 780,
+   "bottom": 1140,
+   "left": 434
+  },
+  "selected": "islands",
+  "selectedIds": [
+   "area-a",
+   "area-b"
+  ],
+  "controls": [
+   {
+    "i": 17,
+    "text": "SchoolkaartReliëf",
+    "x": 594.796875,
+    "y": 1086,
+    "w": 173.203125,
+    "h": 42
+   },
+   {
+    "i": 18,
+    "text": "Schoolkaart",
+    "x": 597.796875,
+    "y": 1089,
+    "w": 104.984375,
+    "h": 36
+   },
+   {
+    "i": 19,
+    "text": "Reliëf",
+    "x": 702.78125,
+    "y": 1089,
+    "w": 62.21875,
+    "h": 36
+   }
+  ],
+  "coveredPaint": [],
+  "screenshot": "/Users/dennisariens/.hermes/cache/scratch/hermes-v3-app-1a42590/reis/independent-chromium/820x1180-islands-false.png"
+ },
+ {
+  "engine": "chromium",
+  "size": [
+   820,
+   1180
+  ],
+  "chapter": "islands",
+  "relief": "on",
+  "labels": [
+   "I T A L I Ë",
+   "DUITSLAND",
+   "TSJECHIË",
+   "SLOWAKIJE",
+   "HONGARIJE",
+   "BOSNIË",
+   "TUNESIË",
+   "▲",
+   "▲"
+  ],
+  "labelHits": [],
+  "mapRect": {
+   "x": 434,
+   "y": 526.625,
+   "width": 346,
+   "height": 613.375,
+   "top": 526.625,
+   "right": 780,
+   "bottom": 1140,
+   "left": 434
+  },
+  "selected": "islands",
+  "selectedIds": [
+   "area-a",
+   "area-b"
+  ],
+  "controls": [
+   {
+    "i": 17,
+    "text": "SchoolkaartReliëf",
+    "x": 594.796875,
+    "y": 1086,
+    "w": 173.203125,
+    "h": 42
+   },
+   {
+    "i": 18,
+    "text": "Schoolkaart",
+    "x": 597.796875,
+    "y": 1089,
+    "w": 104.984375,
+    "h": 36
+   },
+   {
+    "i": 19,
+    "text": "Reliëf",
+    "x": 702.78125,
+    "y": 1089,
+    "w": 62.21875,
+    "h": 36
+   }
+  ],
+  "coveredPaint": [],
+  "screenshot": "/Users/dennisariens/.hermes/cache/scratch/hermes-v3-app-1a42590/reis/independent-chromium/820x1180-islands-true.png"
+ },
+ {
+  "engine": "chromium",
+  "size": [
+   820,
+   1180
+  ],
+  "chapter": "mountains",
+  "relief": "off",
+  "labels": [
+   "I T A L I Ë",
+   "DUITSLAND",
+   "TSJECHIË",
+   "SLOWAKIJE",
+   "HONGARIJE",
+   "BOSNIË",
+   "TUNESIË",
+   "▲",
+   "▲"
+  ],
+  "labelHits": [],
+  "mapRect": {
+   "x": 434,
+   "y": 494.625,
+   "width": 346,
+   "height": 645.375,
+   "top": 494.625,
+   "right": 780,
+   "bottom": 1140,
+   "left": 434
+  },
+  "selected": "mountains",
+  "selectedIds": [
+   "area-c",
+   "area-d"
+  ],
+  "controls": [
+   {
+    "i": 17,
+    "text": "SchoolkaartReliëf",
+    "x": 594.796875,
+    "y": 1086,
+    "w": 173.203125,
+    "h": 42
+   },
+   {
+    "i": 18,
+    "text": "Schoolkaart",
+    "x": 597.796875,
+    "y": 1089,
+    "w": 104.984375,
+    "h": 36
+   },
+   {
+    "i": 19,
+    "text": "Reliëf",
+    "x": 702.78125,
+    "y": 1089,
+    "w": 62.21875,
+    "h": 36
+   }
+  ],
+  "coveredPaint": [],
+  "screenshot": "/Users/dennisariens/.hermes/cache/scratch/hermes-v3-app-1a42590/reis/independent-chromium/820x1180-mountains-false.png"
+ },
+ {
+  "engine": "chromium",
+  "size": [
+   820,
+   1180
+  ],
+  "chapter": "mountains",
+  "relief": "on",
+  "labels": [
+   "I T A L I Ë",
+   "DUITSLAND",
+   "TSJECHIË",
+   "SLOWAKIJE",
+   "HONGARIJE",
+   "BOSNIË",
+   "TUNESIË",
+   "▲",
+   "▲"
+  ],
+  "labelHits": [],
+  "mapRect": {
+   "x": 434,
+   "y": 494.625,
+   "width": 346,
+   "height": 645.375,
+   "top": 494.625,
+   "right": 780,
+   "bottom": 1140,
+   "left": 434
+  },
+  "selected": "mountains",
+  "selectedIds": [
+   "area-c",
+   "area-d"
+  ],
+  "controls": [
+   {
+    "i": 17,
+    "text": "SchoolkaartReliëf",
+    "x": 594.796875,
+    "y": 1086,
+    "w": 173.203125,
+    "h": 42
+   },
+   {
+    "i": 18,
+    "text": "Schoolkaart",
+    "x": 597.796875,
+    "y": 1089,
+    "w": 104.984375,
+    "h": 36
+   },
+   {
+    "i": 19,
+    "text": "Reliëf",
+    "x": 702.78125,
+    "y": 1089,
+    "w": 62.21875,
+    "h": 36
+   }
+  ],
+  "coveredPaint": [],
+  "screenshot": "/Users/dennisariens/.hermes/cache/scratch/hermes-v3-app-1a42590/reis/independent-chromium/820x1180-mountains-true.png"
+ },
+ {
+  "engine": "chromium",
+  "size": [
+   820,
+   1180
+  ],
+  "chapter": "volcanoes",
+  "relief": "off",
+  "labels": [
+   "I T A L I Ë",
+   "DUITSLAND",
+   "TSJECHIË",
+   "SLOWAKIJE",
+   "HONGARIJE",
+   "BOSNIË",
+   "TUNESIË",
+   "▲",
+   "▲"
+  ],
+  "labelHits": [],
+  "mapRect": {
+   "x": 434,
+   "y": 494.625,
+   "width": 346,
+   "height": 645.375,
+   "top": 494.625,
+   "right": 780,
+   "bottom": 1140,
+   "left": 434
+  },
+  "selected": "volcanoes",
+  "selectedIds": [
+   "area-e",
+   "area-f"
+  ],
+  "controls": [
+   {
+    "i": 17,
+    "text": "SchoolkaartReliëf",
+    "x": 594.796875,
+    "y": 1086,
+    "w": 173.203125,
+    "h": 42
+   },
+   {
+    "i": 18,
+    "text": "Schoolkaart",
+    "x": 597.796875,
+    "y": 1089,
+    "w": 104.984375,
+    "h": 36
+   },
+   {
+    "i": 19,
+    "text": "Reliëf",
+    "x": 702.78125,
+    "y": 1089,
+    "w": 62.21875,
+    "h": 36
+   }
+  ],
+  "coveredPaint": [],
+  "screenshot": "/Users/dennisariens/.hermes/cache/scratch/hermes-v3-app-1a42590/reis/independent-chromium/820x1180-volcanoes-false.png"
+ },
+ {
+  "engine": "chromium",
+  "size": [
+   820,
+   1180
+  ],
+  "chapter": "volcanoes",
+  "relief": "on",
+  "labels": [
+   "I T A L I Ë",
+   "DUITSLAND",
+   "TSJECHIË",
+   "SLOWAKIJE",
+   "HONGARIJE",
+   "BOSNIË",
+   "TUNESIË",
+   "▲",
+   "▲"
+  ],
+  "labelHits": [],
+  "mapRect": {
+   "x": 434,
+   "y": 494.625,
+   "width": 346,
+   "height": 645.375,
+   "top": 494.625,
+   "right": 780,
+   "bottom": 1140,
+   "left": 434
+  },
+  "selected": "volcanoes",
+  "selectedIds": [
+   "area-e",
+   "area-f"
+  ],
+  "controls": [
+   {
+    "i": 17,
+    "text": "SchoolkaartReliëf",
+    "x": 594.796875,
+    "y": 1086,
+    "w": 173.203125,
+    "h": 42
+   },
+   {
+    "i": 18,
+    "text": "Schoolkaart",
+    "x": 597.796875,
+    "y": 1089,
+    "w": 104.984375,
+    "h": 36
+   },
+   {
+    "i": 19,
+    "text": "Reliëf",
+    "x": 702.78125,
+    "y": 1089,
+    "w": 62.21875,
+    "h": 36
+   }
+  ],
+  "coveredPaint": [],
+  "screenshot": "/Users/dennisariens/.hermes/cache/scratch/hermes-v3-app-1a42590/reis/independent-chromium/820x1180-volcanoes-true.png"
+ },
+ {
+  "engine": "chromium",
+  "size": [
+   820,
+   1180
+  ],
+  "chapter": "regions",
+  "relief": "off",
+  "labels": [
+   "I T A L I Ë",
+   "DUITSLAND",
+   "TSJECHIË",
+   "SLOWAKIJE",
+   "HONGARIJE",
+   "BOSNIË",
+   "TUNESIË",
+   "▲",
+   "▲"
+  ],
+  "labelHits": [],
+  "mapRect": {
+   "x": 434,
+   "y": 494.625,
+   "width": 346,
+   "height": 645.375,
+   "top": 494.625,
+   "right": 780,
+   "bottom": 1140,
+   "left": 434
+  },
+  "selected": "regions",
+  "selectedIds": [
+   "area-g",
+   "area-h"
+  ],
+  "controls": [
+   {
+    "i": 17,
+    "text": "SchoolkaartReliëf",
+    "x": 594.796875,
+    "y": 1086,
+    "w": 173.203125,
+    "h": 42
+   },
+   {
+    "i": 18,
+    "text": "Schoolkaart",
+    "x": 597.796875,
+    "y": 1089,
+    "w": 104.984375,
+    "h": 36
+   },
+   {
+    "i": 19,
+    "text": "Reliëf",
+    "x": 702.78125,
+    "y": 1089,
+    "w": 62.21875,
+    "h": 36
+   }
+  ],
+  "coveredPaint": [],
+  "screenshot": "/Users/dennisariens/.hermes/cache/scratch/hermes-v3-app-1a42590/reis/independent-chromium/820x1180-regions-false.png"
+ },
+ {
+  "engine": "chromium",
+  "size": [
+   820,
+   1180
+  ],
+  "chapter": "regions",
+  "relief": "on",
+  "labels": [
+   "I T A L I Ë",
+   "DUITSLAND",
+   "TSJECHIË",
+   "SLOWAKIJE",
+   "HONGARIJE",
+   "BOSNIË",
+   "TUNESIË",
+   "▲",
+   "▲"
+  ],
+  "labelHits": [],
+  "mapRect": {
+   "x": 434,
+   "y": 494.625,
+   "width": 346,
+   "height": 645.375,
+   "top": 494.625,
+   "right": 780,
+   "bottom": 1140,
+   "left": 434
+  },
+  "selected": "regions",
+  "selectedIds": [
+   "area-g",
+   "area-h"
+  ],
+  "controls": [
+   {
+    "i": 17,
+    "text": "SchoolkaartReliëf",
+    "x": 594.796875,
+    "y": 1086,
+    "w": 173.203125,
+    "h": 42
+   },
+   {
+    "i": 18,
+    "text": "Schoolkaart",
+    "x": 597.796875,
+    "y": 1089,
+    "w": 104.984375,
+    "h": 36
+   },
+   {
+    "i": 19,
+    "text": "Reliëf",
+    "x": 702.78125,
+    "y": 1089,
+    "w": 62.21875,
+    "h": 36
+   }
+  ],
+  "coveredPaint": [],
+  "screenshot": "/Users/dennisariens/.hermes/cache/scratch/hermes-v3-app-1a42590/reis/independent-chromium/820x1180-regions-true.png"
+ },
+ {
+  "engine": "chromium",
+  "size": [
+   820,
+   1180
+  ],
+  "chapter": "countries",
+  "relief": "off",
+  "labels": [
+   "I T A L I Ë",
+   "DUITSLAND",
+   "TSJECHIË",
+   "SLOWAKIJE",
+   "HONGARIJE",
+   "BOSNIË",
+   "TUNESIË",
+   "▲",
+   "▲"
+  ],
+  "labelHits": [],
+  "mapRect": {
+   "x": 434,
+   "y": 494.625,
+   "width": 346,
+   "height": 645.375,
+   "top": 494.625,
+   "right": 780,
+   "bottom": 1140,
+   "left": 434
+  },
+  "selected": "countries",
+  "selectedIds": [
+   "area-i",
+   "area-j",
+   "area-k",
+   "area-l",
+   "area-m",
+   "area-n",
+   "area-o"
+  ],
+  "controls": [
+   {
+    "i": 17,
+    "text": "SchoolkaartReliëf",
+    "x": 594.796875,
+    "y": 1086,
+    "w": 173.203125,
+    "h": 42
+   },
+   {
+    "i": 18,
+    "text": "Schoolkaart",
+    "x": 597.796875,
+    "y": 1089,
+    "w": 104.984375,
+    "h": 36
+   },
+   {
+    "i": 19,
+    "text": "Reliëf",
+    "x": 702.78125,
+    "y": 1089,
+    "w": 62.21875,
+    "h": 36
+   }
+  ],
+  "coveredPaint": [],
+  "screenshot": "/Users/dennisariens/.hermes/cache/scratch/hermes-v3-app-1a42590/reis/independent-chromium/820x1180-countries-false.png"
+ },
+ {
+  "engine": "chromium",
+  "size": [
+   820,
+   1180
+  ],
+  "chapter": "countries",
+  "relief": "on",
+  "labels": [
+   "I T A L I Ë",
+   "DUITSLAND",
+   "TSJECHIË",
+   "SLOWAKIJE",
+   "HONGARIJE",
+   "BOSNIË",
+   "TUNESIË",
+   "▲",
+   "▲"
+  ],
+  "labelHits": [],
+  "mapRect": {
+   "x": 434,
+   "y": 494.625,
+   "width": 346,
+   "height": 645.375,
+   "top": 494.625,
+   "right": 780,
+   "bottom": 1140,
+   "left": 434
+  },
+  "selected": "countries",
+  "selectedIds": [
+   "area-i",
+   "area-j",
+   "area-k",
+   "area-l",
+   "area-m",
+   "area-n",
+   "area-o"
+  ],
+  "controls": [
+   {
+    "i": 17,
+    "text": "SchoolkaartReliëf",
+    "x": 594.796875,
+    "y": 1086,
+    "w": 173.203125,
+    "h": 42
+   },
+   {
+    "i": 18,
+    "text": "Schoolkaart",
+    "x": 597.796875,
+    "y": 1089,
+    "w": 104.984375,
+    "h": 36
+   },
+   {
+    "i": 19,
+    "text": "Reliëf",
+    "x": 702.78125,
+    "y": 1089,
+    "w": 62.21875,
+    "h": 36
+   }
+  ],
+  "coveredPaint": [],
+  "screenshot": "/Users/dennisariens/.hermes/cache/scratch/hermes-v3-app-1a42590/reis/independent-chromium/820x1180-countries-true.png"
+ },
+ {
+  "engine": "chromium",
+  "size": [
+   820,
+   1180
+  ],
+  "chapter": "seas",
+  "relief": "off",
+  "labels": [
+   "I T A L I Ë",
+   "DUITSLAND",
+   "TSJECHIË",
+   "SLOWAKIJE",
+   "HONGARIJE",
+   "BOSNIË",
+   "TUNESIË",
+   "▲",
+   "▲"
+  ],
+  "labelHits": [],
+  "mapRect": {
+   "x": 434,
+   "y": 494.625,
+   "width": 346,
+   "height": 645.375,
+   "top": 494.625,
+   "right": 780,
+   "bottom": 1140,
+   "left": 434
+  },
+  "selected": "seas",
+  "selectedIds": [
+   "water-A",
+   "water-B",
+   "water-C",
+   "water-D",
+   "water-E"
+  ],
+  "controls": [
+   {
+    "i": 17,
+    "text": "SchoolkaartReliëf",
+    "x": 594.796875,
+    "y": 1086,
+    "w": 173.203125,
+    "h": 42
+   },
+   {
+    "i": 18,
+    "text": "Schoolkaart",
+    "x": 597.796875,
+    "y": 1089,
+    "w": 104.984375,
+    "h": 36
+   },
+   {
+    "i": 19,
+    "text": "Reliëf",
+    "x": 702.78125,
+    "y": 1089,
+    "w": 62.21875,
+    "h": 36
+   }
+  ],
+  "coveredPaint": [],
+  "screenshot": "/Users/dennisariens/.hermes/cache/scratch/hermes-v3-app-1a42590/reis/independent-chromium/820x1180-seas-false.png"
+ },
+ {
+  "engine": "chromium",
+  "size": [
+   820,
+   1180
+  ],
+  "chapter": "seas",
+  "relief": "on",
+  "labels": [
+   "I T A L I Ë",
+   "DUITSLAND",
+   "TSJECHIË",
+   "SLOWAKIJE",
+   "HONGARIJE",
+   "BOSNIË",
+   "TUNESIË",
+   "▲",
+   "▲"
+  ],
+  "labelHits": [],
+  "mapRect": {
+   "x": 434,
+   "y": 494.625,
+   "width": 346,
+   "height": 645.375,
+   "top": 494.625,
+   "right": 780,
+   "bottom": 1140,
+   "left": 434
+  },
+  "selected": "seas",
+  "selectedIds": [
+   "water-A",
+   "water-B",
+   "water-C",
+   "water-D",
+   "water-E"
+  ],
+  "controls": [
+   {
+    "i": 17,
+    "text": "SchoolkaartReliëf",
+    "x": 594.796875,
+    "y": 1086,
+    "w": 173.203125,
+    "h": 42
+   },
+   {
+    "i": 18,
+    "text": "Schoolkaart",
+    "x": 597.796875,
+    "y": 1089,
+    "w": 104.984375,
+    "h": 36
+   },
+   {
+    "i": 19,
+    "text": "Reliëf",
+    "x": 702.78125,
+    "y": 1089,
+    "w": 62.21875,
+    "h": 36
+   }
+  ],
+  "coveredPaint": [],
+  "screenshot": "/Users/dennisariens/.hermes/cache/scratch/hermes-v3-app-1a42590/reis/independent-chromium/820x1180-seas-true.png"
+ },
+ {
+  "engine": "chromium",
+  "size": [
+   820,
+   1180
+  ],
+  "chapter": "rivers",
+  "relief": "off",
+  "labels": [
+   "I T A L I Ë",
+   "DUITSLAND",
+   "TSJECHIË",
+   "SLOWAKIJE",
+   "HONGARIJE",
+   "BOSNIË",
+   "TUNESIË",
+   "▲",
+   "▲"
+  ],
+  "labelHits": [],
+  "mapRect": {
+   "x": 434,
+   "y": 494.625,
+   "width": 346,
+   "height": 645.375,
+   "top": 494.625,
+   "right": 780,
+   "bottom": 1140,
+   "left": 434
+  },
+  "selected": "rivers",
+  "selectedIds": [
+   "water-F",
+   "water-G"
+  ],
+  "controls": [
+   {
+    "i": 17,
+    "text": "SchoolkaartReliëf",
+    "x": 594.796875,
+    "y": 1086,
+    "w": 173.203125,
+    "h": 42
+   },
+   {
+    "i": 18,
+    "text": "Schoolkaart",
+    "x": 597.796875,
+    "y": 1089,
+    "w": 104.984375,
+    "h": 36
+   },
+   {
+    "i": 19,
+    "text": "Reliëf",
+    "x": 702.78125,
+    "y": 1089,
+    "w": 62.21875,
+    "h": 36
+   }
+  ],
+  "coveredPaint": [],
+  "screenshot": "/Users/dennisariens/.hermes/cache/scratch/hermes-v3-app-1a42590/reis/independent-chromium/820x1180-rivers-false.png"
+ },
+ {
+  "engine": "chromium",
+  "size": [
+   820,
+   1180
+  ],
+  "chapter": "rivers",
+  "relief": "on",
+  "labels": [
+   "I T A L I Ë",
+   "DUITSLAND",
+   "TSJECHIË",
+   "SLOWAKIJE",
+   "HONGARIJE",
+   "BOSNIË",
+   "TUNESIË",
+   "▲",
+   "▲"
+  ],
+  "labelHits": [],
+  "mapRect": {
+   "x": 434,
+   "y": 494.625,
+   "width": 346,
+   "height": 645.375,
+   "top": 494.625,
+   "right": 780,
+   "bottom": 1140,
+   "left": 434
+  },
+  "selected": "rivers",
+  "selectedIds": [
+   "water-F",
+   "water-G"
+  ],
+  "controls": [
+   {
+    "i": 17,
+    "text": "SchoolkaartReliëf",
+    "x": 594.796875,
+    "y": 1086,
+    "w": 173.203125,
+    "h": 42
+   },
+   {
+    "i": 18,
+    "text": "Schoolkaart",
+    "x": 597.796875,
+    "y": 1089,
+    "w": 104.984375,
+    "h": 36
+   },
+   {
+    "i": 19,
+    "text": "Reliëf",
+    "x": 702.78125,
+    "y": 1089,
+    "w": 62.21875,
+    "h": 36
+   }
+  ],
+  "coveredPaint": [],
+  "screenshot": "/Users/dennisariens/.hermes/cache/scratch/hermes-v3-app-1a42590/reis/independent-chromium/820x1180-rivers-true.png"
+ },
+ {
+  "engine": "webkit",
+  "size": [
+   390,
+   844
+  ],
+  "chapter": "city1",
+  "relief": "off",
+  "labels": [
+   "I T A L I Ë",
+   "DUITSLAND",
+   "TSJECHIË",
+   "SLOWAKIJE",
+   "HONGARIJE",
+   "BOSNIË",
+   "TUNESIË",
+   "▲",
+   "▲"
+  ],
+  "labelHits": [],
+  "mapRect": {
+   "x": 16,
+   "y": 272,
+   "width": 358,
+   "height": 300,
+   "top": 272,
+   "right": 374,
+   "bottom": 572,
+   "left": 16
+  },
+  "selected": "city1",
+  "selectedIds": [
+   "city-1",
+   "city-2",
+   "city-3",
+   "city-4",
+   "city-5",
+   "city-6"
+  ],
+  "controls": [],
+  "coveredPaint": [],
+  "screenshot": "/Users/dennisariens/.hermes/cache/scratch/hermes-v3-app-1a42590/reis/independent-webkit/390x844-city1-false.png"
+ },
+ {
+  "engine": "webkit",
+  "size": [
+   390,
+   844
+  ],
+  "chapter": "city1",
+  "relief": "on",
+  "labels": [
+   "I T A L I Ë",
+   "DUITSLAND",
+   "TSJECHIË",
+   "SLOWAKIJE",
+   "HONGARIJE",
+   "BOSNIË",
+   "TUNESIË",
+   "▲",
+   "▲"
+  ],
+  "labelHits": [],
+  "mapRect": {
+   "x": 16,
+   "y": 272,
+   "width": 358,
+   "height": 300,
+   "top": 272,
+   "right": 374,
+   "bottom": 572,
+   "left": 16
+  },
+  "selected": "city1",
+  "selectedIds": [
+   "city-1",
+   "city-2",
+   "city-3",
+   "city-4",
+   "city-5",
+   "city-6"
+  ],
+  "controls": [],
+  "coveredPaint": [],
+  "screenshot": "/Users/dennisariens/.hermes/cache/scratch/hermes-v3-app-1a42590/reis/independent-webkit/390x844-city1-true.png"
+ },
+ {
+  "engine": "webkit",
+  "size": [
+   390,
+   844
+  ],
+  "chapter": "city2",
+  "relief": "off",
+  "labels": [
+   "I T A L I Ë",
+   "DUITSLAND",
+   "TSJECHIË",
+   "SLOWAKIJE",
+   "HONGARIJE",
+   "BOSNIË",
+   "TUNESIË",
+   "▲",
+   "▲"
+  ],
+  "labelHits": [],
+  "mapRect": {
+   "x": 16,
+   "y": 272,
+   "width": 358,
+   "height": 300,
+   "top": 272,
+   "right": 374,
+   "bottom": 572,
+   "left": 16
+  },
+  "selected": "city2",
+  "selectedIds": [
+   "city-7",
+   "city-8",
+   "city-9",
+   "city-10",
+   "city-11",
+   "city-12"
+  ],
+  "controls": [],
+  "coveredPaint": [],
+  "screenshot": "/Users/dennisariens/.hermes/cache/scratch/hermes-v3-app-1a42590/reis/independent-webkit/390x844-city2-false.png"
+ },
+ {
+  "engine": "webkit",
+  "size": [
+   390,
+   844
+  ],
+  "chapter": "city2",
+  "relief": "on",
+  "labels": [
+   "I T A L I Ë",
+   "DUITSLAND",
+   "TSJECHIË",
+   "SLOWAKIJE",
+   "HONGARIJE",
+   "BOSNIË",
+   "TUNESIË",
+   "▲",
+   "▲"
+  ],
+  "labelHits": [],
+  "mapRect": {
+   "x": 16,
+   "y": 272,
+   "width": 358,
+   "height": 300,
+   "top": 272,
+   "right": 374,
+   "bottom": 572,
+   "left": 16
+  },
+  "selected": "city2",
+  "selectedIds": [
+   "city-7",
+   "city-8",
+   "city-9",
+   "city-10",
+   "city-11",
+   "city-12"
+  ],
+  "controls": [],
+  "coveredPaint": [],
+  "screenshot": "/Users/dennisariens/.hermes/cache/scratch/hermes-v3-app-1a42590/reis/independent-webkit/390x844-city2-true.png"
+ },
+ {
+  "engine": "webkit",
+  "size": [
+   390,
+   844
+  ],
+  "chapter": "city3",
+  "relief": "off",
+  "labels": [
+   "I T A L I Ë",
+   "DUITSLAND",
+   "TSJECHIË",
+   "SLOWAKIJE",
+   "HONGARIJE",
+   "BOSNIË",
+   "TUNESIË",
+   "▲",
+   "▲"
+  ],
+  "labelHits": [],
+  "mapRect": {
+   "x": 16,
+   "y": 272,
+   "width": 358,
+   "height": 300,
+   "top": 272,
+   "right": 374,
+   "bottom": 572,
+   "left": 16
+  },
+  "selected": "city3",
+  "selectedIds": [
+   "city-13",
+   "city-14",
+   "city-15",
+   "city-16",
+   "city-17",
+   "city-18"
+  ],
+  "controls": [],
+  "coveredPaint": [],
+  "screenshot": "/Users/dennisariens/.hermes/cache/scratch/hermes-v3-app-1a42590/reis/independent-webkit/390x844-city3-false.png"
+ },
+ {
+  "engine": "webkit",
+  "size": [
+   390,
+   844
+  ],
+  "chapter": "city3",
+  "relief": "on",
+  "labels": [
+   "I T A L I Ë",
+   "DUITSLAND",
+   "TSJECHIË",
+   "SLOWAKIJE",
+   "HONGARIJE",
+   "BOSNIË",
+   "TUNESIË",
+   "▲",
+   "▲"
+  ],
+  "labelHits": [],
+  "mapRect": {
+   "x": 16,
+   "y": 272,
+   "width": 358,
+   "height": 300,
+   "top": 272,
+   "right": 374,
+   "bottom": 572,
+   "left": 16
+  },
+  "selected": "city3",
+  "selectedIds": [
+   "city-13",
+   "city-14",
+   "city-15",
+   "city-16",
+   "city-17",
+   "city-18"
+  ],
+  "controls": [],
+  "coveredPaint": [],
+  "screenshot": "/Users/dennisariens/.hermes/cache/scratch/hermes-v3-app-1a42590/reis/independent-webkit/390x844-city3-true.png"
+ },
+ {
+  "engine": "webkit",
+  "size": [
+   390,
+   844
+  ],
+  "chapter": "city4",
+  "relief": "off",
+  "labels": [
+   "I T A L I Ë",
+   "DUITSLAND",
+   "TSJECHIË",
+   "SLOWAKIJE",
+   "HONGARIJE",
+   "BOSNIË",
+   "TUNESIË",
+   "▲",
+   "▲"
+  ],
+  "labelHits": [],
+  "mapRect": {
+   "x": 16,
+   "y": 272,
+   "width": 358,
+   "height": 300,
+   "top": 272,
+   "right": 374,
+   "bottom": 572,
+   "left": 16
+  },
+  "selected": "city4",
+  "selectedIds": [
+   "city-19",
+   "city-20",
+   "city-21",
+   "city-22",
+   "city-23"
+  ],
+  "controls": [],
+  "coveredPaint": [],
+  "screenshot": "/Users/dennisariens/.hermes/cache/scratch/hermes-v3-app-1a42590/reis/independent-webkit/390x844-city4-false.png"
+ },
+ {
+  "engine": "webkit",
+  "size": [
+   390,
+   844
+  ],
+  "chapter": "city4",
+  "relief": "on",
+  "labels": [
+   "I T A L I Ë",
+   "DUITSLAND",
+   "TSJECHIË",
+   "SLOWAKIJE",
+   "HONGARIJE",
+   "BOSNIË",
+   "TUNESIË",
+   "▲",
+   "▲"
+  ],
+  "labelHits": [],
+  "mapRect": {
+   "x": 16,
+   "y": 272,
+   "width": 358,
+   "height": 300,
+   "top": 272,
+   "right": 374,
+   "bottom": 572,
+   "left": 16
+  },
+  "selected": "city4",
+  "selectedIds": [
+   "city-19",
+   "city-20",
+   "city-21",
+   "city-22",
+   "city-23"
+  ],
+  "controls": [],
+  "coveredPaint": [],
+  "screenshot": "/Users/dennisariens/.hermes/cache/scratch/hermes-v3-app-1a42590/reis/independent-webkit/390x844-city4-true.png"
+ },
+ {
+  "engine": "webkit",
+  "size": [
+   390,
+   844
+  ],
+  "chapter": "islands",
+  "relief": "off",
+  "labels": [
+   "I T A L I Ë",
+   "DUITSLAND",
+   "TSJECHIË",
+   "SLOWAKIJE",
+   "HONGARIJE",
+   "BOSNIË",
+   "TUNESIË",
+   "▲",
+   "▲"
+  ],
+  "labelHits": [],
+  "mapRect": {
+   "x": 16,
+   "y": 272,
+   "width": 358,
+   "height": 300,
+   "top": 272,
+   "right": 374,
+   "bottom": 572,
+   "left": 16
+  },
+  "selected": "islands",
+  "selectedIds": [
+   "area-a",
+   "area-b"
+  ],
+  "controls": [],
+  "coveredPaint": [],
+  "screenshot": "/Users/dennisariens/.hermes/cache/scratch/hermes-v3-app-1a42590/reis/independent-webkit/390x844-islands-false.png"
+ },
+ {
+  "engine": "webkit",
+  "size": [
+   390,
+   844
+  ],
+  "chapter": "islands",
+  "relief": "on",
+  "labels": [
+   "I T A L I Ë",
+   "DUITSLAND",
+   "TSJECHIË",
+   "SLOWAKIJE",
+   "HONGARIJE",
+   "BOSNIË",
+   "TUNESIË",
+   "▲",
+   "▲"
+  ],
+  "labelHits": [],
+  "mapRect": {
+   "x": 16,
+   "y": 272,
+   "width": 358,
+   "height": 300,
+   "top": 272,
+   "right": 374,
+   "bottom": 572,
+   "left": 16
+  },
+  "selected": "islands",
+  "selectedIds": [
+   "area-a",
+   "area-b"
+  ],
+  "controls": [],
+  "coveredPaint": [],
+  "screenshot": "/Users/dennisariens/.hermes/cache/scratch/hermes-v3-app-1a42590/reis/independent-webkit/390x844-islands-true.png"
+ },
+ {
+  "engine": "webkit",
+  "size": [
+   390,
+   844
+  ],
+  "chapter": "mountains",
+  "relief": "off",
+  "labels": [
+   "I T A L I Ë",
+   "DUITSLAND",
+   "TSJECHIË",
+   "SLOWAKIJE",
+   "HONGARIJE",
+   "BOSNIË",
+   "TUNESIË",
+   "▲",
+   "▲"
+  ],
+  "labelHits": [],
+  "mapRect": {
+   "x": 16,
+   "y": 252,
+   "width": 358,
+   "height": 300,
+   "top": 252,
+   "right": 374,
+   "bottom": 552,
+   "left": 16
+  },
+  "selected": "mountains",
+  "selectedIds": [
+   "area-c",
+   "area-d"
+  ],
+  "controls": [],
+  "coveredPaint": [],
+  "screenshot": "/Users/dennisariens/.hermes/cache/scratch/hermes-v3-app-1a42590/reis/independent-webkit/390x844-mountains-false.png"
+ },
+ {
+  "engine": "webkit",
+  "size": [
+   390,
+   844
+  ],
+  "chapter": "mountains",
+  "relief": "on",
+  "labels": [
+   "I T A L I Ë",
+   "DUITSLAND",
+   "TSJECHIË",
+   "SLOWAKIJE",
+   "HONGARIJE",
+   "BOSNIË",
+   "TUNESIË",
+   "▲",
+   "▲"
+  ],
+  "labelHits": [],
+  "mapRect": {
+   "x": 16,
+   "y": 252,
+   "width": 358,
+   "height": 300,
+   "top": 252,
+   "right": 374,
+   "bottom": 552,
+   "left": 16
+  },
+  "selected": "mountains",
+  "selectedIds": [
+   "area-c",
+   "area-d"
+  ],
+  "controls": [],
+  "coveredPaint": [],
+  "screenshot": "/Users/dennisariens/.hermes/cache/scratch/hermes-v3-app-1a42590/reis/independent-webkit/390x844-mountains-true.png"
+ },
+ {
+  "engine": "webkit",
+  "size": [
+   390,
+   844
+  ],
+  "chapter": "volcanoes",
+  "relief": "off",
+  "labels": [
+   "I T A L I Ë",
+   "DUITSLAND",
+   "TSJECHIË",
+   "SLOWAKIJE",
+   "HONGARIJE",
+   "BOSNIË",
+   "TUNESIË",
+   "▲",
+   "▲"
+  ],
+  "labelHits": [],
+  "mapRect": {
+   "x": 16,
+   "y": 252,
+   "width": 358,
+   "height": 300,
+   "top": 252,
+   "right": 374,
+   "bottom": 552,
+   "left": 16
+  },
+  "selected": "volcanoes",
+  "selectedIds": [
+   "area-e",
+   "area-f"
+  ],
+  "controls": [],
+  "coveredPaint": [],
+  "screenshot": "/Users/dennisariens/.hermes/cache/scratch/hermes-v3-app-1a42590/reis/independent-webkit/390x844-volcanoes-false.png"
+ },
+ {
+  "engine": "webkit",
+  "size": [
+   390,
+   844
+  ],
+  "chapter": "volcanoes",
+  "relief": "on",
+  "labels": [
+   "I T A L I Ë",
+   "DUITSLAND",
+   "TSJECHIË",
+   "SLOWAKIJE",
+   "HONGARIJE",
+   "BOSNIË",
+   "TUNESIË",
+   "▲",
+   "▲"
+  ],
+  "labelHits": [],
+  "mapRect": {
+   "x": 16,
+   "y": 252,
+   "width": 358,
+   "height": 300,
+   "top": 252,
+   "right": 374,
+   "bottom": 552,
+   "left": 16
+  },
+  "selected": "volcanoes",
+  "selectedIds": [
+   "area-e",
+   "area-f"
+  ],
+  "controls": [],
+  "coveredPaint": [],
+  "screenshot": "/Users/dennisariens/.hermes/cache/scratch/hermes-v3-app-1a42590/reis/independent-webkit/390x844-volcanoes-true.png"
+ },
+ {
+  "engine": "webkit",
+  "size": [
+   390,
+   844
+  ],
+  "chapter": "regions",
+  "relief": "off",
+  "labels": [
+   "I T A L I Ë",
+   "DUITSLAND",
+   "TSJECHIË",
+   "SLOWAKIJE",
+   "HONGARIJE",
+   "BOSNIË",
+   "TUNESIË",
+   "▲",
+   "▲"
+  ],
+  "labelHits": [],
+  "mapRect": {
+   "x": 16,
+   "y": 252,
+   "width": 358,
+   "height": 300,
+   "top": 252,
+   "right": 374,
+   "bottom": 552,
+   "left": 16
+  },
+  "selected": "regions",
+  "selectedIds": [
+   "area-g",
+   "area-h"
+  ],
+  "controls": [],
+  "coveredPaint": [],
+  "screenshot": "/Users/dennisariens/.hermes/cache/scratch/hermes-v3-app-1a42590/reis/independent-webkit/390x844-regions-false.png"
+ },
+ {
+  "engine": "webkit",
+  "size": [
+   390,
+   844
+  ],
+  "chapter": "regions",
+  "relief": "on",
+  "labels": [
+   "I T A L I Ë",
+   "DUITSLAND",
+   "TSJECHIË",
+   "SLOWAKIJE",
+   "HONGARIJE",
+   "BOSNIË",
+   "TUNESIË",
+   "▲",
+   "▲"
+  ],
+  "labelHits": [],
+  "mapRect": {
+   "x": 16,
+   "y": 252,
+   "width": 358,
+   "height": 300,
+   "top": 252,
+   "right": 374,
+   "bottom": 552,
+   "left": 16
+  },
+  "selected": "regions",
+  "selectedIds": [
+   "area-g",
+   "area-h"
+  ],
+  "controls": [],
+  "coveredPaint": [],
+  "screenshot": "/Users/dennisariens/.hermes/cache/scratch/hermes-v3-app-1a42590/reis/independent-webkit/390x844-regions-true.png"
+ },
+ {
+  "engine": "webkit",
+  "size": [
+   390,
+   844
+  ],
+  "chapter": "countries",
+  "relief": "off",
+  "labels": [
+   "I T A L I Ë",
+   "DUITSLAND",
+   "TSJECHIË",
+   "SLOWAKIJE",
+   "HONGARIJE",
+   "BOSNIË",
+   "TUNESIË",
+   "▲",
+   "▲"
+  ],
+  "labelHits": [],
+  "mapRect": {
+   "x": 16,
+   "y": 252,
+   "width": 358,
+   "height": 300,
+   "top": 252,
+   "right": 374,
+   "bottom": 552,
+   "left": 16
+  },
+  "selected": "countries",
+  "selectedIds": [
+   "area-i",
+   "area-j",
+   "area-k",
+   "area-l",
+   "area-m",
+   "area-n",
+   "area-o"
+  ],
+  "controls": [],
+  "coveredPaint": [],
+  "screenshot": "/Users/dennisariens/.hermes/cache/scratch/hermes-v3-app-1a42590/reis/independent-webkit/390x844-countries-false.png"
+ },
+ {
+  "engine": "webkit",
+  "size": [
+   390,
+   844
+  ],
+  "chapter": "countries",
+  "relief": "on",
+  "labels": [
+   "I T A L I Ë",
+   "DUITSLAND",
+   "TSJECHIË",
+   "SLOWAKIJE",
+   "HONGARIJE",
+   "BOSNIË",
+   "TUNESIË",
+   "▲",
+   "▲"
+  ],
+  "labelHits": [],
+  "mapRect": {
+   "x": 16,
+   "y": 252,
+   "width": 358,
+   "height": 300,
+   "top": 252,
+   "right": 374,
+   "bottom": 552,
+   "left": 16
+  },
+  "selected": "countries",
+  "selectedIds": [
+   "area-i",
+   "area-j",
+   "area-k",
+   "area-l",
+   "area-m",
+   "area-n",
+   "area-o"
+  ],
+  "controls": [],
+  "coveredPaint": [],
+  "screenshot": "/Users/dennisariens/.hermes/cache/scratch/hermes-v3-app-1a42590/reis/independent-webkit/390x844-countries-true.png"
+ },
+ {
+  "engine": "webkit",
+  "size": [
+   390,
+   844
+  ],
+  "chapter": "seas",
+  "relief": "off",
+  "labels": [
+   "I T A L I Ë",
+   "DUITSLAND",
+   "TSJECHIË",
+   "SLOWAKIJE",
+   "HONGARIJE",
+   "BOSNIË",
+   "TUNESIË",
+   "▲",
+   "▲"
+  ],
+  "labelHits": [],
+  "mapRect": {
+   "x": 16,
+   "y": 252,
+   "width": 358,
+   "height": 300,
+   "top": 252,
+   "right": 374,
+   "bottom": 552,
+   "left": 16
+  },
+  "selected": "seas",
+  "selectedIds": [
+   "water-A",
+   "water-B",
+   "water-C",
+   "water-D",
+   "water-E"
+  ],
+  "controls": [],
+  "coveredPaint": [],
+  "screenshot": "/Users/dennisariens/.hermes/cache/scratch/hermes-v3-app-1a42590/reis/independent-webkit/390x844-seas-false.png"
+ },
+ {
+  "engine": "webkit",
+  "size": [
+   390,
+   844
+  ],
+  "chapter": "seas",
+  "relief": "on",
+  "labels": [
+   "I T A L I Ë",
+   "DUITSLAND",
+   "TSJECHIË",
+   "SLOWAKIJE",
+   "HONGARIJE",
+   "BOSNIË",
+   "TUNESIË",
+   "▲",
+   "▲"
+  ],
+  "labelHits": [],
+  "mapRect": {
+   "x": 16,
+   "y": 252,
+   "width": 358,
+   "height": 300,
+   "top": 252,
+   "right": 374,
+   "bottom": 552,
+   "left": 16
+  },
+  "selected": "seas",
+  "selectedIds": [
+   "water-A",
+   "water-B",
+   "water-C",
+   "water-D",
+   "water-E"
+  ],
+  "controls": [],
+  "coveredPaint": [],
+  "screenshot": "/Users/dennisariens/.hermes/cache/scratch/hermes-v3-app-1a42590/reis/independent-webkit/390x844-seas-true.png"
+ },
+ {
+  "engine": "webkit",
+  "size": [
+   390,
+   844
+  ],
+  "chapter": "rivers",
+  "relief": "off",
+  "labels": [
+   "I T A L I Ë",
+   "DUITSLAND",
+   "TSJECHIË",
+   "SLOWAKIJE",
+   "HONGARIJE",
+   "BOSNIË",
+   "TUNESIË",
+   "▲",
+   "▲"
+  ],
+  "labelHits": [],
+  "mapRect": {
+   "x": 16,
+   "y": 252,
+   "width": 358,
+   "height": 300,
+   "top": 252,
+   "right": 374,
+   "bottom": 552,
+   "left": 16
+  },
+  "selected": "rivers",
+  "selectedIds": [
+   "water-F",
+   "water-G"
+  ],
+  "controls": [],
+  "coveredPaint": [],
+  "screenshot": "/Users/dennisariens/.hermes/cache/scratch/hermes-v3-app-1a42590/reis/independent-webkit/390x844-rivers-false.png"
+ },
+ {
+  "engine": "webkit",
+  "size": [
+   390,
+   844
+  ],
+  "chapter": "rivers",
+  "relief": "on",
+  "labels": [
+   "I T A L I Ë",
+   "DUITSLAND",
+   "TSJECHIË",
+   "SLOWAKIJE",
+   "HONGARIJE",
+   "BOSNIË",
+   "TUNESIË",
+   "▲",
+   "▲"
+  ],
+  "labelHits": [],
+  "mapRect": {
+   "x": 16,
+   "y": 252,
+   "width": 358,
+   "height": 300,
+   "top": 252,
+   "right": 374,
+   "bottom": 552,
+   "left": 16
+  },
+  "selected": "rivers",
+  "selectedIds": [
+   "water-F",
+   "water-G"
+  ],
+  "controls": [],
+  "coveredPaint": [],
+  "screenshot": "/Users/dennisariens/.hermes/cache/scratch/hermes-v3-app-1a42590/reis/independent-webkit/390x844-rivers-true.png"
+ },
+ {
+  "engine": "webkit",
+  "size": [
+   320,
+   640
+  ],
+  "chapter": "city1",
+  "relief": "off",
+  "labels": [
+   "I T A L I Ë",
+   "DUITSLAND",
+   "TSJECHIË",
+   "SLOWAKIJE",
+   "HONGARIJE",
+   "BOSNIË",
+   "TUNESIË",
+   "▲",
+   "▲"
+  ],
+  "labelHits": [],
+  "mapRect": {
+   "x": 16,
+   "y": 170,
+   "width": 288,
+   "height": 300,
+   "top": 170,
+   "right": 304,
+   "bottom": 470,
+   "left": 16
+  },
+  "selected": "city1",
+  "selectedIds": [
+   "city-1",
+   "city-2",
+   "city-3",
+   "city-4",
+   "city-5",
+   "city-6"
+  ],
+  "controls": [],
+  "coveredPaint": [],
+  "screenshot": "/Users/dennisariens/.hermes/cache/scratch/hermes-v3-app-1a42590/reis/independent-webkit/320x640-city1-false.png"
+ },
+ {
+  "engine": "webkit",
+  "size": [
+   320,
+   640
+  ],
+  "chapter": "city1",
+  "relief": "on",
+  "labels": [
+   "I T A L I Ë",
+   "DUITSLAND",
+   "TSJECHIË",
+   "SLOWAKIJE",
+   "HONGARIJE",
+   "BOSNIË",
+   "TUNESIË",
+   "▲",
+   "▲"
+  ],
+  "labelHits": [],
+  "mapRect": {
+   "x": 16,
+   "y": 170,
+   "width": 288,
+   "height": 300,
+   "top": 170,
+   "right": 304,
+   "bottom": 470,
+   "left": 16
+  },
+  "selected": "city1",
+  "selectedIds": [
+   "city-1",
+   "city-2",
+   "city-3",
+   "city-4",
+   "city-5",
+   "city-6"
+  ],
+  "controls": [],
+  "coveredPaint": [],
+  "screenshot": "/Users/dennisariens/.hermes/cache/scratch/hermes-v3-app-1a42590/reis/independent-webkit/320x640-city1-true.png"
+ },
+ {
+  "engine": "webkit",
+  "size": [
+   320,
+   640
+  ],
+  "chapter": "city2",
+  "relief": "off",
+  "labels": [
+   "I T A L I Ë",
+   "DUITSLAND",
+   "TSJECHIË",
+   "SLOWAKIJE",
+   "HONGARIJE",
+   "BOSNIË",
+   "TUNESIË",
+   "▲",
+   "▲"
+  ],
+  "labelHits": [],
+  "mapRect": {
+   "x": 16,
+   "y": 170,
+   "width": 288,
+   "height": 300,
+   "top": 170,
+   "right": 304,
+   "bottom": 470,
+   "left": 16
+  },
+  "selected": "city2",
+  "selectedIds": [
+   "city-7",
+   "city-8",
+   "city-9",
+   "city-10",
+   "city-11",
+   "city-12"
+  ],
+  "controls": [],
+  "coveredPaint": [],
+  "screenshot": "/Users/dennisariens/.hermes/cache/scratch/hermes-v3-app-1a42590/reis/independent-webkit/320x640-city2-false.png"
+ },
+ {
+  "engine": "webkit",
+  "size": [
+   320,
+   640
+  ],
+  "chapter": "city2",
+  "relief": "on",
+  "labels": [
+   "I T A L I Ë",
+   "DUITSLAND",
+   "TSJECHIË",
+   "SLOWAKIJE",
+   "HONGARIJE",
+   "BOSNIË",
+   "TUNESIË",
+   "▲",
+   "▲"
+  ],
+  "labelHits": [],
+  "mapRect": {
+   "x": 16,
+   "y": 170,
+   "width": 288,
+   "height": 300,
+   "top": 170,
+   "right": 304,
+   "bottom": 470,
+   "left": 16
+  },
+  "selected": "city2",
+  "selectedIds": [
+   "city-7",
+   "city-8",
+   "city-9",
+   "city-10",
+   "city-11",
+   "city-12"
+  ],
+  "controls": [],
+  "coveredPaint": [],
+  "screenshot": "/Users/dennisariens/.hermes/cache/scratch/hermes-v3-app-1a42590/reis/independent-webkit/320x640-city2-true.png"
+ },
+ {
+  "engine": "webkit",
+  "size": [
+   320,
+   640
+  ],
+  "chapter": "city3",
+  "relief": "off",
+  "labels": [
+   "I T A L I Ë",
+   "DUITSLAND",
+   "TSJECHIË",
+   "SLOWAKIJE",
+   "HONGARIJE",
+   "BOSNIË",
+   "TUNESIË",
+   "▲",
+   "▲"
+  ],
+  "labelHits": [],
+  "mapRect": {
+   "x": 16,
+   "y": 170,
+   "width": 288,
+   "height": 300,
+   "top": 170,
+   "right": 304,
+   "bottom": 470,
+   "left": 16
+  },
+  "selected": "city3",
+  "selectedIds": [
+   "city-13",
+   "city-14",
+   "city-15",
+   "city-16",
+   "city-17",
+   "city-18"
+  ],
+  "controls": [],
+  "coveredPaint": [],
+  "screenshot": "/Users/dennisariens/.hermes/cache/scratch/hermes-v3-app-1a42590/reis/independent-webkit/320x640-city3-false.png"
+ },
+ {
+  "engine": "webkit",
+  "size": [
+   320,
+   640
+  ],
+  "chapter": "city3",
+  "relief": "on",
+  "labels": [
+   "I T A L I Ë",
+   "DUITSLAND",
+   "TSJECHIË",
+   "SLOWAKIJE",
+   "HONGARIJE",
+   "BOSNIË",
+   "TUNESIË",
+   "▲",
+   "▲"
+  ],
+  "labelHits": [],
+  "mapRect": {
+   "x": 16,
+   "y": 170,
+   "width": 288,
+   "height": 300,
+   "top": 170,
+   "right": 304,
+   "bottom": 470,
+   "left": 16
+  },
+  "selected": "city3",
+  "selectedIds": [
+   "city-13",
+   "city-14",
+   "city-15",
+   "city-16",
+   "city-17",
+   "city-18"
+  ],
+  "controls": [],
+  "coveredPaint": [],
+  "screenshot": "/Users/dennisariens/.hermes/cache/scratch/hermes-v3-app-1a42590/reis/independent-webkit/320x640-city3-true.png"
+ },
+ {
+  "engine": "webkit",
+  "size": [
+   320,
+   640
+  ],
+  "chapter": "city4",
+  "relief": "off",
+  "labels": [
+   "I T A L I Ë",
+   "DUITSLAND",
+   "TSJECHIË",
+   "SLOWAKIJE",
+   "HONGARIJE",
+   "BOSNIË",
+   "TUNESIË",
+   "▲",
+   "▲"
+  ],
+  "labelHits": [],
+  "mapRect": {
+   "x": 16,
+   "y": 170,
+   "width": 288,
+   "height": 300,
+   "top": 170,
+   "right": 304,
+   "bottom": 470,
+   "left": 16
+  },
+  "selected": "city4",
+  "selectedIds": [
+   "city-19",
+   "city-20",
+   "city-21",
+   "city-22",
+   "city-23"
+  ],
+  "controls": [],
+  "coveredPaint": [],
+  "screenshot": "/Users/dennisariens/.hermes/cache/scratch/hermes-v3-app-1a42590/reis/independent-webkit/320x640-city4-false.png"
+ },
+ {
+  "engine": "webkit",
+  "size": [
+   320,
+   640
+  ],
+  "chapter": "city4",
+  "relief": "on",
+  "labels": [
+   "I T A L I Ë",
+   "DUITSLAND",
+   "TSJECHIË",
+   "SLOWAKIJE",
+   "HONGARIJE",
+   "BOSNIË",
+   "TUNESIË",
+   "▲",
+   "▲"
+  ],
+  "labelHits": [],
+  "mapRect": {
+   "x": 16,
+   "y": 170,
+   "width": 288,
+   "height": 300,
+   "top": 170,
+   "right": 304,
+   "bottom": 470,
+   "left": 16
+  },
+  "selected": "city4",
+  "selectedIds": [
+   "city-19",
+   "city-20",
+   "city-21",
+   "city-22",
+   "city-23"
+  ],
+  "controls": [],
+  "coveredPaint": [],
+  "screenshot": "/Users/dennisariens/.hermes/cache/scratch/hermes-v3-app-1a42590/reis/independent-webkit/320x640-city4-true.png"
+ },
+ {
+  "engine": "webkit",
+  "size": [
+   320,
+   640
+  ],
+  "chapter": "islands",
+  "relief": "off",
+  "labels": [
+   "I T A L I Ë",
+   "DUITSLAND",
+   "TSJECHIË",
+   "SLOWAKIJE",
+   "HONGARIJE",
+   "BOSNIË",
+   "TUNESIË",
+   "▲",
+   "▲"
+  ],
+  "labelHits": [],
+  "mapRect": {
+   "x": 16,
+   "y": 170,
+   "width": 288,
+   "height": 300,
+   "top": 170,
+   "right": 304,
+   "bottom": 470,
+   "left": 16
+  },
+  "selected": "islands",
+  "selectedIds": [
+   "area-a",
+   "area-b"
+  ],
+  "controls": [],
+  "coveredPaint": [],
+  "screenshot": "/Users/dennisariens/.hermes/cache/scratch/hermes-v3-app-1a42590/reis/independent-webkit/320x640-islands-false.png"
+ },
+ {
+  "engine": "webkit",
+  "size": [
+   320,
+   640
+  ],
+  "chapter": "islands",
+  "relief": "on",
+  "labels": [
+   "I T A L I Ë",
+   "DUITSLAND",
+   "TSJECHIË",
+   "SLOWAKIJE",
+   "HONGARIJE",
+   "BOSNIË",
+   "TUNESIË",
+   "▲",
+   "▲"
+  ],
+  "labelHits": [],
+  "mapRect": {
+   "x": 16,
+   "y": 170,
+   "width": 288,
+   "height": 300,
+   "top": 170,
+   "right": 304,
+   "bottom": 470,
+   "left": 16
+  },
+  "selected": "islands",
+  "selectedIds": [
+   "area-a",
+   "area-b"
+  ],
+  "controls": [],
+  "coveredPaint": [],
+  "screenshot": "/Users/dennisariens/.hermes/cache/scratch/hermes-v3-app-1a42590/reis/independent-webkit/320x640-islands-true.png"
+ },
+ {
+  "engine": "webkit",
+  "size": [
+   320,
+   640
+  ],
+  "chapter": "mountains",
+  "relief": "off",
+  "labels": [
+   "I T A L I Ë",
+   "DUITSLAND",
+   "TSJECHIË",
+   "SLOWAKIJE",
+   "HONGARIJE",
+   "BOSNIË",
+   "TUNESIË",
+   "▲",
+   "▲"
+  ],
+  "labelHits": [],
+  "mapRect": {
+   "x": 16,
+   "y": 170,
+   "width": 288,
+   "height": 300,
+   "top": 170,
+   "right": 304,
+   "bottom": 470,
+   "left": 16
+  },
+  "selected": "mountains",
+  "selectedIds": [
+   "area-c",
+   "area-d"
+  ],
+  "controls": [],
+  "coveredPaint": [],
+  "screenshot": "/Users/dennisariens/.hermes/cache/scratch/hermes-v3-app-1a42590/reis/independent-webkit/320x640-mountains-false.png"
+ },
+ {
+  "engine": "webkit",
+  "size": [
+   320,
+   640
+  ],
+  "chapter": "mountains",
+  "relief": "on",
+  "labels": [
+   "I T A L I Ë",
+   "DUITSLAND",
+   "TSJECHIË",
+   "SLOWAKIJE",
+   "HONGARIJE",
+   "BOSNIË",
+   "TUNESIË",
+   "▲",
+   "▲"
+  ],
+  "labelHits": [],
+  "mapRect": {
+   "x": 16,
+   "y": 170,
+   "width": 288,
+   "height": 300,
+   "top": 170,
+   "right": 304,
+   "bottom": 470,
+   "left": 16
+  },
+  "selected": "mountains",
+  "selectedIds": [
+   "area-c",
+   "area-d"
+  ],
+  "controls": [],
+  "coveredPaint": [],
+  "screenshot": "/Users/dennisariens/.hermes/cache/scratch/hermes-v3-app-1a42590/reis/independent-webkit/320x640-mountains-true.png"
+ },
+ {
+  "engine": "webkit",
+  "size": [
+   320,
+   640
+  ],
+  "chapter": "volcanoes",
+  "relief": "off",
+  "labels": [
+   "I T A L I Ë",
+   "DUITSLAND",
+   "TSJECHIË",
+   "SLOWAKIJE",
+   "HONGARIJE",
+   "BOSNIË",
+   "TUNESIË",
+   "▲",
+   "▲"
+  ],
+  "labelHits": [],
+  "mapRect": {
+   "x": 16,
+   "y": 170,
+   "width": 288,
+   "height": 300,
+   "top": 170,
+   "right": 304,
+   "bottom": 470,
+   "left": 16
+  },
+  "selected": "volcanoes",
+  "selectedIds": [
+   "area-e",
+   "area-f"
+  ],
+  "controls": [],
+  "coveredPaint": [],
+  "screenshot": "/Users/dennisariens/.hermes/cache/scratch/hermes-v3-app-1a42590/reis/independent-webkit/320x640-volcanoes-false.png"
+ },
+ {
+  "engine": "webkit",
+  "size": [
+   320,
+   640
+  ],
+  "chapter": "volcanoes",
+  "relief": "on",
+  "labels": [
+   "I T A L I Ë",
+   "DUITSLAND",
+   "TSJECHIË",
+   "SLOWAKIJE",
+   "HONGARIJE",
+   "BOSNIË",
+   "TUNESIË",
+   "▲",
+   "▲"
+  ],
+  "labelHits": [],
+  "mapRect": {
+   "x": 16,
+   "y": 170,
+   "width": 288,
+   "height": 300,
+   "top": 170,
+   "right": 304,
+   "bottom": 470,
+   "left": 16
+  },
+  "selected": "volcanoes",
+  "selectedIds": [
+   "area-e",
+   "area-f"
+  ],
+  "controls": [],
+  "coveredPaint": [],
+  "screenshot": "/Users/dennisariens/.hermes/cache/scratch/hermes-v3-app-1a42590/reis/independent-webkit/320x640-volcanoes-true.png"
+ },
+ {
+  "engine": "webkit",
+  "size": [
+   320,
+   640
+  ],
+  "chapter": "regions",
+  "relief": "off",
+  "labels": [
+   "I T A L I Ë",
+   "DUITSLAND",
+   "TSJECHIË",
+   "SLOWAKIJE",
+   "HONGARIJE",
+   "BOSNIË",
+   "TUNESIË",
+   "▲",
+   "▲"
+  ],
+  "labelHits": [],
+  "mapRect": {
+   "x": 16,
+   "y": 170,
+   "width": 288,
+   "height": 300,
+   "top": 170,
+   "right": 304,
+   "bottom": 470,
+   "left": 16
+  },
+  "selected": "regions",
+  "selectedIds": [
+   "area-g",
+   "area-h"
+  ],
+  "controls": [],
+  "coveredPaint": [],
+  "screenshot": "/Users/dennisariens/.hermes/cache/scratch/hermes-v3-app-1a42590/reis/independent-webkit/320x640-regions-false.png"
+ },
+ {
+  "engine": "webkit",
+  "size": [
+   320,
+   640
+  ],
+  "chapter": "regions",
+  "relief": "on",
+  "labels": [
+   "I T A L I Ë",
+   "DUITSLAND",
+   "TSJECHIË",
+   "SLOWAKIJE",
+   "HONGARIJE",
+   "BOSNIË",
+   "TUNESIË",
+   "▲",
+   "▲"
+  ],
+  "labelHits": [],
+  "mapRect": {
+   "x": 16,
+   "y": 170,
+   "width": 288,
+   "height": 300,
+   "top": 170,
+   "right": 304,
+   "bottom": 470,
+   "left": 16
+  },
+  "selected": "regions",
+  "selectedIds": [
+   "area-g",
+   "area-h"
+  ],
+  "controls": [],
+  "coveredPaint": [],
+  "screenshot": "/Users/dennisariens/.hermes/cache/scratch/hermes-v3-app-1a42590/reis/independent-webkit/320x640-regions-true.png"
+ },
+ {
+  "engine": "webkit",
+  "size": [
+   320,
+   640
+  ],
+  "chapter": "countries",
+  "relief": "off",
+  "labels": [
+   "I T A L I Ë",
+   "DUITSLAND",
+   "TSJECHIË",
+   "SLOWAKIJE",
+   "HONGARIJE",
+   "BOSNIË",
+   "TUNESIË",
+   "▲",
+   "▲"
+  ],
+  "labelHits": [],
+  "mapRect": {
+   "x": 16,
+   "y": 170,
+   "width": 288,
+   "height": 300,
+   "top": 170,
+   "right": 304,
+   "bottom": 470,
+   "left": 16
+  },
+  "selected": "countries",
+  "selectedIds": [
+   "area-i",
+   "area-j",
+   "area-k",
+   "area-l",
+   "area-m",
+   "area-n",
+   "area-o"
+  ],
+  "controls": [],
+  "coveredPaint": [],
+  "screenshot": "/Users/dennisariens/.hermes/cache/scratch/hermes-v3-app-1a42590/reis/independent-webkit/320x640-countries-false.png"
+ },
+ {
+  "engine": "webkit",
+  "size": [
+   320,
+   640
+  ],
+  "chapter": "countries",
+  "relief": "on",
+  "labels": [
+   "I T A L I Ë",
+   "DUITSLAND",
+   "TSJECHIË",
+   "SLOWAKIJE",
+   "HONGARIJE",
+   "BOSNIË",
+   "TUNESIË",
+   "▲",
+   "▲"
+  ],
+  "labelHits": [],
+  "mapRect": {
+   "x": 16,
+   "y": 170,
+   "width": 288,
+   "height": 300,
+   "top": 170,
+   "right": 304,
+   "bottom": 470,
+   "left": 16
+  },
+  "selected": "countries",
+  "selectedIds": [
+   "area-i",
+   "area-j",
+   "area-k",
+   "area-l",
+   "area-m",
+   "area-n",
+   "area-o"
+  ],
+  "controls": [],
+  "coveredPaint": [],
+  "screenshot": "/Users/dennisariens/.hermes/cache/scratch/hermes-v3-app-1a42590/reis/independent-webkit/320x640-countries-true.png"
+ },
+ {
+  "engine": "webkit",
+  "size": [
+   320,
+   640
+  ],
+  "chapter": "seas",
+  "relief": "off",
+  "labels": [
+   "I T A L I Ë",
+   "DUITSLAND",
+   "TSJECHIË",
+   "SLOWAKIJE",
+   "HONGARIJE",
+   "BOSNIË",
+   "TUNESIË",
+   "▲",
+   "▲"
+  ],
+  "labelHits": [],
+  "mapRect": {
+   "x": 16,
+   "y": 170,
+   "width": 288,
+   "height": 300,
+   "top": 170,
+   "right": 304,
+   "bottom": 470,
+   "left": 16
+  },
+  "selected": "seas",
+  "selectedIds": [
+   "water-A",
+   "water-B",
+   "water-C",
+   "water-D",
+   "water-E"
+  ],
+  "controls": [],
+  "coveredPaint": [],
+  "screenshot": "/Users/dennisariens/.hermes/cache/scratch/hermes-v3-app-1a42590/reis/independent-webkit/320x640-seas-false.png"
+ },
+ {
+  "engine": "webkit",
+  "size": [
+   320,
+   640
+  ],
+  "chapter": "seas",
+  "relief": "on",
+  "labels": [
+   "I T A L I Ë",
+   "DUITSLAND",
+   "TSJECHIË",
+   "SLOWAKIJE",
+   "HONGARIJE",
+   "BOSNIË",
+   "TUNESIË",
+   "▲",
+   "▲"
+  ],
+  "labelHits": [],
+  "mapRect": {
+   "x": 16,
+   "y": 170,
+   "width": 288,
+   "height": 300,
+   "top": 170,
+   "right": 304,
+   "bottom": 470,
+   "left": 16
+  },
+  "selected": "seas",
+  "selectedIds": [
+   "water-A",
+   "water-B",
+   "water-C",
+   "water-D",
+   "water-E"
+  ],
+  "controls": [],
+  "coveredPaint": [],
+  "screenshot": "/Users/dennisariens/.hermes/cache/scratch/hermes-v3-app-1a42590/reis/independent-webkit/320x640-seas-true.png"
+ },
+ {
+  "engine": "webkit",
+  "size": [
+   320,
+   640
+  ],
+  "chapter": "rivers",
+  "relief": "off",
+  "labels": [
+   "I T A L I Ë",
+   "DUITSLAND",
+   "TSJECHIË",
+   "SLOWAKIJE",
+   "HONGARIJE",
+   "BOSNIË",
+   "TUNESIË",
+   "▲",
+   "▲"
+  ],
+  "labelHits": [],
+  "mapRect": {
+   "x": 16,
+   "y": 170,
+   "width": 288,
+   "height": 300,
+   "top": 170,
+   "right": 304,
+   "bottom": 470,
+   "left": 16
+  },
+  "selected": "rivers",
+  "selectedIds": [
+   "water-F",
+   "water-G"
+  ],
+  "controls": [],
+  "coveredPaint": [],
+  "screenshot": "/Users/dennisariens/.hermes/cache/scratch/hermes-v3-app-1a42590/reis/independent-webkit/320x640-rivers-false.png"
+ },
+ {
+  "engine": "webkit",
+  "size": [
+   320,
+   640
+  ],
+  "chapter": "rivers",
+  "relief": "on",
+  "labels": [
+   "I T A L I Ë",
+   "DUITSLAND",
+   "TSJECHIË",
+   "SLOWAKIJE",
+   "HONGARIJE",
+   "BOSNIË",
+   "TUNESIË",
+   "▲",
+   "▲"
+  ],
+  "labelHits": [],
+  "mapRect": {
+   "x": 16,
+   "y": 170,
+   "width": 288,
+   "height": 300,
+   "top": 170,
+   "right": 304,
+   "bottom": 470,
+   "left": 16
+  },
+  "selected": "rivers",
+  "selectedIds": [
+   "water-F",
+   "water-G"
+  ],
+  "controls": [],
+  "coveredPaint": [],
+  "screenshot": "/Users/dennisariens/.hermes/cache/scratch/hermes-v3-app-1a42590/reis/independent-webkit/320x640-rivers-true.png"
+ },
+ {
+  "engine": "webkit",
+  "size": [
+   820,
+   1180
+  ],
+  "chapter": "city1",
+  "relief": "off",
+  "labels": [
+   "I T A L I Ë",
+   "DUITSLAND",
+   "TSJECHIË",
+   "SLOWAKIJE",
+   "HONGARIJE",
+   "BOSNIË",
+   "TUNESIË",
+   "▲",
+   "▲"
+  ],
+  "labelHits": [],
+  "mapRect": {
+   "x": 434,
+   "y": 630.625,
+   "width": 346,
+   "height": 509.375,
+   "top": 630.625,
+   "right": 780,
+   "bottom": 1140,
+   "left": 434
+  },
+  "selected": "city1",
+  "selectedIds": [
+   "city-1",
+   "city-2",
+   "city-3",
+   "city-4",
+   "city-5",
+   "city-6"
+  ],
+  "controls": [
+   {
+    "i": 17,
+    "text": "SchoolkaartReliëf",
+    "x": 594.8125,
+    "y": 1086,
+    "w": 173.1875,
+    "h": 42
+   },
+   {
+    "i": 18,
+    "text": "Schoolkaart",
+    "x": 597.8125,
+    "y": 1089,
+    "w": 104.96875,
+    "h": 36
+   },
+   {
+    "i": 19,
+    "text": "Reliëf",
+    "x": 702.78125,
+    "y": 1089,
+    "w": 62.21875,
+    "h": 36
+   }
+  ],
+  "coveredPaint": [],
+  "screenshot": "/Users/dennisariens/.hermes/cache/scratch/hermes-v3-app-1a42590/reis/independent-webkit/820x1180-city1-false.png"
+ },
+ {
+  "engine": "webkit",
+  "size": [
+   820,
+   1180
+  ],
+  "chapter": "city1",
+  "relief": "on",
+  "labels": [
+   "I T A L I Ë",
+   "DUITSLAND",
+   "TSJECHIË",
+   "SLOWAKIJE",
+   "HONGARIJE",
+   "BOSNIË",
+   "TUNESIË",
+   "▲",
+   "▲"
+  ],
+  "labelHits": [],
+  "mapRect": {
+   "x": 434,
+   "y": 630.625,
+   "width": 346,
+   "height": 509.375,
+   "top": 630.625,
+   "right": 780,
+   "bottom": 1140,
+   "left": 434
+  },
+  "selected": "city1",
+  "selectedIds": [
+   "city-1",
+   "city-2",
+   "city-3",
+   "city-4",
+   "city-5",
+   "city-6"
+  ],
+  "controls": [
+   {
+    "i": 17,
+    "text": "SchoolkaartReliëf",
+    "x": 594.8125,
+    "y": 1086,
+    "w": 173.1875,
+    "h": 42
+   },
+   {
+    "i": 18,
+    "text": "Schoolkaart",
+    "x": 597.8125,
+    "y": 1089,
+    "w": 104.96875,
+    "h": 36
+   },
+   {
+    "i": 19,
+    "text": "Reliëf",
+    "x": 702.78125,
+    "y": 1089,
+    "w": 62.21875,
+    "h": 36
+   }
+  ],
+  "coveredPaint": [],
+  "screenshot": "/Users/dennisariens/.hermes/cache/scratch/hermes-v3-app-1a42590/reis/independent-webkit/820x1180-city1-true.png"
+ },
+ {
+  "engine": "webkit",
+  "size": [
+   820,
+   1180
+  ],
+  "chapter": "city2",
+  "relief": "off",
+  "labels": [
+   "I T A L I Ë",
+   "DUITSLAND",
+   "TSJECHIË",
+   "SLOWAKIJE",
+   "HONGARIJE",
+   "BOSNIË",
+   "TUNESIË",
+   "▲",
+   "▲"
+  ],
+  "labelHits": [],
+  "mapRect": {
+   "x": 434,
+   "y": 630.625,
+   "width": 346,
+   "height": 509.375,
+   "top": 630.625,
+   "right": 780,
+   "bottom": 1140,
+   "left": 434
+  },
+  "selected": "city2",
+  "selectedIds": [
+   "city-7",
+   "city-8",
+   "city-9",
+   "city-10",
+   "city-11",
+   "city-12"
+  ],
+  "controls": [
+   {
+    "i": 17,
+    "text": "SchoolkaartReliëf",
+    "x": 594.8125,
+    "y": 1086,
+    "w": 173.1875,
+    "h": 42
+   },
+   {
+    "i": 18,
+    "text": "Schoolkaart",
+    "x": 597.8125,
+    "y": 1089,
+    "w": 104.96875,
+    "h": 36
+   },
+   {
+    "i": 19,
+    "text": "Reliëf",
+    "x": 702.78125,
+    "y": 1089,
+    "w": 62.21875,
+    "h": 36
+   }
+  ],
+  "coveredPaint": [],
+  "screenshot": "/Users/dennisariens/.hermes/cache/scratch/hermes-v3-app-1a42590/reis/independent-webkit/820x1180-city2-false.png"
+ },
+ {
+  "engine": "webkit",
+  "size": [
+   820,
+   1180
+  ],
+  "chapter": "city2",
+  "relief": "on",
+  "labels": [
+   "I T A L I Ë",
+   "DUITSLAND",
+   "TSJECHIË",
+   "SLOWAKIJE",
+   "HONGARIJE",
+   "BOSNIË",
+   "TUNESIË",
+   "▲",
+   "▲"
+  ],
+  "labelHits": [],
+  "mapRect": {
+   "x": 434,
+   "y": 630.625,
+   "width": 346,
+   "height": 509.375,
+   "top": 630.625,
+   "right": 780,
+   "bottom": 1140,
+   "left": 434
+  },
+  "selected": "city2",
+  "selectedIds": [
+   "city-7",
+   "city-8",
+   "city-9",
+   "city-10",
+   "city-11",
+   "city-12"
+  ],
+  "controls": [
+   {
+    "i": 17,
+    "text": "SchoolkaartReliëf",
+    "x": 594.8125,
+    "y": 1086,
+    "w": 173.1875,
+    "h": 42
+   },
+   {
+    "i": 18,
+    "text": "Schoolkaart",
+    "x": 597.8125,
+    "y": 1089,
+    "w": 104.96875,
+    "h": 36
+   },
+   {
+    "i": 19,
+    "text": "Reliëf",
+    "x": 702.78125,
+    "y": 1089,
+    "w": 62.21875,
+    "h": 36
+   }
+  ],
+  "coveredPaint": [],
+  "screenshot": "/Users/dennisariens/.hermes/cache/scratch/hermes-v3-app-1a42590/reis/independent-webkit/820x1180-city2-true.png"
+ },
+ {
+  "engine": "webkit",
+  "size": [
+   820,
+   1180
+  ],
+  "chapter": "city3",
+  "relief": "off",
+  "labels": [
+   "I T A L I Ë",
+   "DUITSLAND",
+   "TSJECHIË",
+   "SLOWAKIJE",
+   "HONGARIJE",
+   "BOSNIË",
+   "TUNESIË",
+   "▲",
+   "▲"
+  ],
+  "labelHits": [],
+  "mapRect": {
+   "x": 434,
+   "y": 630.625,
+   "width": 346,
+   "height": 509.375,
+   "top": 630.625,
+   "right": 780,
+   "bottom": 1140,
+   "left": 434
+  },
+  "selected": "city3",
+  "selectedIds": [
+   "city-13",
+   "city-14",
+   "city-15",
+   "city-16",
+   "city-17",
+   "city-18"
+  ],
+  "controls": [
+   {
+    "i": 17,
+    "text": "SchoolkaartReliëf",
+    "x": 594.8125,
+    "y": 1086,
+    "w": 173.1875,
+    "h": 42
+   },
+   {
+    "i": 18,
+    "text": "Schoolkaart",
+    "x": 597.8125,
+    "y": 1089,
+    "w": 104.96875,
+    "h": 36
+   },
+   {
+    "i": 19,
+    "text": "Reliëf",
+    "x": 702.78125,
+    "y": 1089,
+    "w": 62.21875,
+    "h": 36
+   }
+  ],
+  "coveredPaint": [],
+  "screenshot": "/Users/dennisariens/.hermes/cache/scratch/hermes-v3-app-1a42590/reis/independent-webkit/820x1180-city3-false.png"
+ },
+ {
+  "engine": "webkit",
+  "size": [
+   820,
+   1180
+  ],
+  "chapter": "city3",
+  "relief": "on",
+  "labels": [
+   "I T A L I Ë",
+   "DUITSLAND",
+   "TSJECHIË",
+   "SLOWAKIJE",
+   "HONGARIJE",
+   "BOSNIË",
+   "TUNESIË",
+   "▲",
+   "▲"
+  ],
+  "labelHits": [],
+  "mapRect": {
+   "x": 434,
+   "y": 630.625,
+   "width": 346,
+   "height": 509.375,
+   "top": 630.625,
+   "right": 780,
+   "bottom": 1140,
+   "left": 434
+  },
+  "selected": "city3",
+  "selectedIds": [
+   "city-13",
+   "city-14",
+   "city-15",
+   "city-16",
+   "city-17",
+   "city-18"
+  ],
+  "controls": [
+   {
+    "i": 17,
+    "text": "SchoolkaartReliëf",
+    "x": 594.8125,
+    "y": 1086,
+    "w": 173.1875,
+    "h": 42
+   },
+   {
+    "i": 18,
+    "text": "Schoolkaart",
+    "x": 597.8125,
+    "y": 1089,
+    "w": 104.96875,
+    "h": 36
+   },
+   {
+    "i": 19,
+    "text": "Reliëf",
+    "x": 702.78125,
+    "y": 1089,
+    "w": 62.21875,
+    "h": 36
+   }
+  ],
+  "coveredPaint": [],
+  "screenshot": "/Users/dennisariens/.hermes/cache/scratch/hermes-v3-app-1a42590/reis/independent-webkit/820x1180-city3-true.png"
+ },
+ {
+  "engine": "webkit",
+  "size": [
+   820,
+   1180
+  ],
+  "chapter": "city4",
+  "relief": "off",
+  "labels": [
+   "I T A L I Ë",
+   "DUITSLAND",
+   "TSJECHIË",
+   "SLOWAKIJE",
+   "HONGARIJE",
+   "BOSNIË",
+   "TUNESIË",
+   "▲",
+   "▲"
+  ],
+  "labelHits": [],
+  "mapRect": {
+   "x": 434,
+   "y": 630.625,
+   "width": 346,
+   "height": 509.375,
+   "top": 630.625,
+   "right": 780,
+   "bottom": 1140,
+   "left": 434
+  },
+  "selected": "city4",
+  "selectedIds": [
+   "city-19",
+   "city-20",
+   "city-21",
+   "city-22",
+   "city-23"
+  ],
+  "controls": [
+   {
+    "i": 17,
+    "text": "SchoolkaartReliëf",
+    "x": 594.8125,
+    "y": 1086,
+    "w": 173.1875,
+    "h": 42
+   },
+   {
+    "i": 18,
+    "text": "Schoolkaart",
+    "x": 597.8125,
+    "y": 1089,
+    "w": 104.96875,
+    "h": 36
+   },
+   {
+    "i": 19,
+    "text": "Reliëf",
+    "x": 702.78125,
+    "y": 1089,
+    "w": 62.21875,
+    "h": 36
+   }
+  ],
+  "coveredPaint": [],
+  "screenshot": "/Users/dennisariens/.hermes/cache/scratch/hermes-v3-app-1a42590/reis/independent-webkit/820x1180-city4-false.png"
+ },
+ {
+  "engine": "webkit",
+  "size": [
+   820,
+   1180
+  ],
+  "chapter": "city4",
+  "relief": "on",
+  "labels": [
+   "I T A L I Ë",
+   "DUITSLAND",
+   "TSJECHIË",
+   "SLOWAKIJE",
+   "HONGARIJE",
+   "BOSNIË",
+   "TUNESIË",
+   "▲",
+   "▲"
+  ],
+  "labelHits": [],
+  "mapRect": {
+   "x": 434,
+   "y": 630.625,
+   "width": 346,
+   "height": 509.375,
+   "top": 630.625,
+   "right": 780,
+   "bottom": 1140,
+   "left": 434
+  },
+  "selected": "city4",
+  "selectedIds": [
+   "city-19",
+   "city-20",
+   "city-21",
+   "city-22",
+   "city-23"
+  ],
+  "controls": [
+   {
+    "i": 17,
+    "text": "SchoolkaartReliëf",
+    "x": 594.8125,
+    "y": 1086,
+    "w": 173.1875,
+    "h": 42
+   },
+   {
+    "i": 18,
+    "text": "Schoolkaart",
+    "x": 597.8125,
+    "y": 1089,
+    "w": 104.96875,
+    "h": 36
+   },
+   {
+    "i": 19,
+    "text": "Reliëf",
+    "x": 702.78125,
+    "y": 1089,
+    "w": 62.21875,
+    "h": 36
+   }
+  ],
+  "coveredPaint": [],
+  "screenshot": "/Users/dennisariens/.hermes/cache/scratch/hermes-v3-app-1a42590/reis/independent-webkit/820x1180-city4-true.png"
+ },
+ {
+  "engine": "webkit",
+  "size": [
+   820,
+   1180
+  ],
+  "chapter": "islands",
+  "relief": "off",
+  "labels": [
+   "I T A L I Ë",
+   "DUITSLAND",
+   "TSJECHIË",
+   "SLOWAKIJE",
+   "HONGARIJE",
+   "BOSNIË",
+   "TUNESIË",
+   "▲",
+   "▲"
+  ],
+  "labelHits": [],
+  "mapRect": {
+   "x": 434,
+   "y": 526.625,
+   "width": 346,
+   "height": 613.375,
+   "top": 526.625,
+   "right": 780,
+   "bottom": 1140,
+   "left": 434
+  },
+  "selected": "islands",
+  "selectedIds": [
+   "area-a",
+   "area-b"
+  ],
+  "controls": [
+   {
+    "i": 17,
+    "text": "SchoolkaartReliëf",
+    "x": 594.8125,
+    "y": 1086,
+    "w": 173.1875,
+    "h": 42
+   },
+   {
+    "i": 18,
+    "text": "Schoolkaart",
+    "x": 597.8125,
+    "y": 1089,
+    "w": 104.96875,
+    "h": 36
+   },
+   {
+    "i": 19,
+    "text": "Reliëf",
+    "x": 702.78125,
+    "y": 1089,
+    "w": 62.21875,
+    "h": 36
+   }
+  ],
+  "coveredPaint": [],
+  "screenshot": "/Users/dennisariens/.hermes/cache/scratch/hermes-v3-app-1a42590/reis/independent-webkit/820x1180-islands-false.png"
+ },
+ {
+  "engine": "webkit",
+  "size": [
+   820,
+   1180
+  ],
+  "chapter": "islands",
+  "relief": "on",
+  "labels": [
+   "I T A L I Ë",
+   "DUITSLAND",
+   "TSJECHIË",
+   "SLOWAKIJE",
+   "HONGARIJE",
+   "BOSNIË",
+   "TUNESIË",
+   "▲",
+   "▲"
+  ],
+  "labelHits": [],
+  "mapRect": {
+   "x": 434,
+   "y": 526.625,
+   "width": 346,
+   "height": 613.375,
+   "top": 526.625,
+   "right": 780,
+   "bottom": 1140,
+   "left": 434
+  },
+  "selected": "islands",
+  "selectedIds": [
+   "area-a",
+   "area-b"
+  ],
+  "controls": [
+   {
+    "i": 17,
+    "text": "SchoolkaartReliëf",
+    "x": 594.8125,
+    "y": 1086,
+    "w": 173.1875,
+    "h": 42
+   },
+   {
+    "i": 18,
+    "text": "Schoolkaart",
+    "x": 597.8125,
+    "y": 1089,
+    "w": 104.96875,
+    "h": 36
+   },
+   {
+    "i": 19,
+    "text": "Reliëf",
+    "x": 702.78125,
+    "y": 1089,
+    "w": 62.21875,
+    "h": 36
+   }
+  ],
+  "coveredPaint": [],
+  "screenshot": "/Users/dennisariens/.hermes/cache/scratch/hermes-v3-app-1a42590/reis/independent-webkit/820x1180-islands-true.png"
+ },
+ {
+  "engine": "webkit",
+  "size": [
+   820,
+   1180
+  ],
+  "chapter": "mountains",
+  "relief": "off",
+  "labels": [
+   "I T A L I Ë",
+   "DUITSLAND",
+   "TSJECHIË",
+   "SLOWAKIJE",
+   "HONGARIJE",
+   "BOSNIË",
+   "TUNESIË",
+   "▲",
+   "▲"
+  ],
+  "labelHits": [],
+  "mapRect": {
+   "x": 434,
+   "y": 494.625,
+   "width": 346,
+   "height": 645.375,
+   "top": 494.625,
+   "right": 780,
+   "bottom": 1140,
+   "left": 434
+  },
+  "selected": "mountains",
+  "selectedIds": [
+   "area-c",
+   "area-d"
+  ],
+  "controls": [
+   {
+    "i": 17,
+    "text": "SchoolkaartReliëf",
+    "x": 594.8125,
+    "y": 1086,
+    "w": 173.1875,
+    "h": 42
+   },
+   {
+    "i": 18,
+    "text": "Schoolkaart",
+    "x": 597.8125,
+    "y": 1089,
+    "w": 104.96875,
+    "h": 36
+   },
+   {
+    "i": 19,
+    "text": "Reliëf",
+    "x": 702.78125,
+    "y": 1089,
+    "w": 62.21875,
+    "h": 36
+   }
+  ],
+  "coveredPaint": [],
+  "screenshot": "/Users/dennisariens/.hermes/cache/scratch/hermes-v3-app-1a42590/reis/independent-webkit/820x1180-mountains-false.png"
+ },
+ {
+  "engine": "webkit",
+  "size": [
+   820,
+   1180
+  ],
+  "chapter": "mountains",
+  "relief": "on",
+  "labels": [
+   "I T A L I Ë",
+   "DUITSLAND",
+   "TSJECHIË",
+   "SLOWAKIJE",
+   "HONGARIJE",
+   "BOSNIË",
+   "TUNESIË",
+   "▲",
+   "▲"
+  ],
+  "labelHits": [],
+  "mapRect": {
+   "x": 434,
+   "y": 494.625,
+   "width": 346,
+   "height": 645.375,
+   "top": 494.625,
+   "right": 780,
+   "bottom": 1140,
+   "left": 434
+  },
+  "selected": "mountains",
+  "selectedIds": [
+   "area-c",
+   "area-d"
+  ],
+  "controls": [
+   {
+    "i": 17,
+    "text": "SchoolkaartReliëf",
+    "x": 594.8125,
+    "y": 1086,
+    "w": 173.1875,
+    "h": 42
+   },
+   {
+    "i": 18,
+    "text": "Schoolkaart",
+    "x": 597.8125,
+    "y": 1089,
+    "w": 104.96875,
+    "h": 36
+   },
+   {
+    "i": 19,
+    "text": "Reliëf",
+    "x": 702.78125,
+    "y": 1089,
+    "w": 62.21875,
+    "h": 36
+   }
+  ],
+  "coveredPaint": [],
+  "screenshot": "/Users/dennisariens/.hermes/cache/scratch/hermes-v3-app-1a42590/reis/independent-webkit/820x1180-mountains-true.png"
+ },
+ {
+  "engine": "webkit",
+  "size": [
+   820,
+   1180
+  ],
+  "chapter": "volcanoes",
+  "relief": "off",
+  "labels": [
+   "I T A L I Ë",
+   "DUITSLAND",
+   "TSJECHIË",
+   "SLOWAKIJE",
+   "HONGARIJE",
+   "BOSNIË",
+   "TUNESIË",
+   "▲",
+   "▲"
+  ],
+  "labelHits": [],
+  "mapRect": {
+   "x": 434,
+   "y": 494.625,
+   "width": 346,
+   "height": 645.375,
+   "top": 494.625,
+   "right": 780,
+   "bottom": 1140,
+   "left": 434
+  },
+  "selected": "volcanoes",
+  "selectedIds": [
+   "area-e",
+   "area-f"
+  ],
+  "controls": [
+   {
+    "i": 17,
+    "text": "SchoolkaartReliëf",
+    "x": 594.8125,
+    "y": 1086,
+    "w": 173.1875,
+    "h": 42
+   },
+   {
+    "i": 18,
+    "text": "Schoolkaart",
+    "x": 597.8125,
+    "y": 1089,
+    "w": 104.96875,
+    "h": 36
+   },
+   {
+    "i": 19,
+    "text": "Reliëf",
+    "x": 702.78125,
+    "y": 1089,
+    "w": 62.21875,
+    "h": 36
+   }
+  ],
+  "coveredPaint": [],
+  "screenshot": "/Users/dennisariens/.hermes/cache/scratch/hermes-v3-app-1a42590/reis/independent-webkit/820x1180-volcanoes-false.png"
+ },
+ {
+  "engine": "webkit",
+  "size": [
+   820,
+   1180
+  ],
+  "chapter": "volcanoes",
+  "relief": "on",
+  "labels": [
+   "I T A L I Ë",
+   "DUITSLAND",
+   "TSJECHIË",
+   "SLOWAKIJE",
+   "HONGARIJE",
+   "BOSNIË",
+   "TUNESIË",
+   "▲",
+   "▲"
+  ],
+  "labelHits": [],
+  "mapRect": {
+   "x": 434,
+   "y": 494.625,
+   "width": 346,
+   "height": 645.375,
+   "top": 494.625,
+   "right": 780,
+   "bottom": 1140,
+   "left": 434
+  },
+  "selected": "volcanoes",
+  "selectedIds": [
+   "area-e",
+   "area-f"
+  ],
+  "controls": [
+   {
+    "i": 17,
+    "text": "SchoolkaartReliëf",
+    "x": 594.8125,
+    "y": 1086,
+    "w": 173.1875,
+    "h": 42
+   },
+   {
+    "i": 18,
+    "text": "Schoolkaart",
+    "x": 597.8125,
+    "y": 1089,
+    "w": 104.96875,
+    "h": 36
+   },
+   {
+    "i": 19,
+    "text": "Reliëf",
+    "x": 702.78125,
+    "y": 1089,
+    "w": 62.21875,
+    "h": 36
+   }
+  ],
+  "coveredPaint": [],
+  "screenshot": "/Users/dennisariens/.hermes/cache/scratch/hermes-v3-app-1a42590/reis/independent-webkit/820x1180-volcanoes-true.png"
+ },
+ {
+  "engine": "webkit",
+  "size": [
+   820,
+   1180
+  ],
+  "chapter": "regions",
+  "relief": "off",
+  "labels": [
+   "I T A L I Ë",
+   "DUITSLAND",
+   "TSJECHIË",
+   "SLOWAKIJE",
+   "HONGARIJE",
+   "BOSNIË",
+   "TUNESIË",
+   "▲",
+   "▲"
+  ],
+  "labelHits": [],
+  "mapRect": {
+   "x": 434,
+   "y": 494.625,
+   "width": 346,
+   "height": 645.375,
+   "top": 494.625,
+   "right": 780,
+   "bottom": 1140,
+   "left": 434
+  },
+  "selected": "regions",
+  "selectedIds": [
+   "area-g",
+   "area-h"
+  ],
+  "controls": [
+   {
+    "i": 17,
+    "text": "SchoolkaartReliëf",
+    "x": 594.8125,
+    "y": 1086,
+    "w": 173.1875,
+    "h": 42
+   },
+   {
+    "i": 18,
+    "text": "Schoolkaart",
+    "x": 597.8125,
+    "y": 1089,
+    "w": 104.96875,
+    "h": 36
+   },
+   {
+    "i": 19,
+    "text": "Reliëf",
+    "x": 702.78125,
+    "y": 1089,
+    "w": 62.21875,
+    "h": 36
+   }
+  ],
+  "coveredPaint": [],
+  "screenshot": "/Users/dennisariens/.hermes/cache/scratch/hermes-v3-app-1a42590/reis/independent-webkit/820x1180-regions-false.png"
+ },
+ {
+  "engine": "webkit",
+  "size": [
+   820,
+   1180
+  ],
+  "chapter": "regions",
+  "relief": "on",
+  "labels": [
+   "I T A L I Ë",
+   "DUITSLAND",
+   "TSJECHIË",
+   "SLOWAKIJE",
+   "HONGARIJE",
+   "BOSNIË",
+   "TUNESIË",
+   "▲",
+   "▲"
+  ],
+  "labelHits": [],
+  "mapRect": {
+   "x": 434,
+   "y": 494.625,
+   "width": 346,
+   "height": 645.375,
+   "top": 494.625,
+   "right": 780,
+   "bottom": 1140,
+   "left": 434
+  },
+  "selected": "regions",
+  "selectedIds": [
+   "area-g",
+   "area-h"
+  ],
+  "controls": [
+   {
+    "i": 17,
+    "text": "SchoolkaartReliëf",
+    "x": 594.8125,
+    "y": 1086,
+    "w": 173.1875,
+    "h": 42
+   },
+   {
+    "i": 18,
+    "text": "Schoolkaart",
+    "x": 597.8125,
+    "y": 1089,
+    "w": 104.96875,
+    "h": 36
+   },
+   {
+    "i": 19,
+    "text": "Reliëf",
+    "x": 702.78125,
+    "y": 1089,
+    "w": 62.21875,
+    "h": 36
+   }
+  ],
+  "coveredPaint": [],
+  "screenshot": "/Users/dennisariens/.hermes/cache/scratch/hermes-v3-app-1a42590/reis/independent-webkit/820x1180-regions-true.png"
+ },
+ {
+  "engine": "webkit",
+  "size": [
+   820,
+   1180
+  ],
+  "chapter": "countries",
+  "relief": "off",
+  "labels": [
+   "I T A L I Ë",
+   "DUITSLAND",
+   "TSJECHIË",
+   "SLOWAKIJE",
+   "HONGARIJE",
+   "BOSNIË",
+   "TUNESIË",
+   "▲",
+   "▲"
+  ],
+  "labelHits": [],
+  "mapRect": {
+   "x": 434,
+   "y": 494.625,
+   "width": 346,
+   "height": 645.375,
+   "top": 494.625,
+   "right": 780,
+   "bottom": 1140,
+   "left": 434
+  },
+  "selected": "countries",
+  "selectedIds": [
+   "area-i",
+   "area-j",
+   "area-k",
+   "area-l",
+   "area-m",
+   "area-n",
+   "area-o"
+  ],
+  "controls": [
+   {
+    "i": 17,
+    "text": "SchoolkaartReliëf",
+    "x": 594.8125,
+    "y": 1086,
+    "w": 173.1875,
+    "h": 42
+   },
+   {
+    "i": 18,
+    "text": "Schoolkaart",
+    "x": 597.8125,
+    "y": 1089,
+    "w": 104.96875,
+    "h": 36
+   },
+   {
+    "i": 19,
+    "text": "Reliëf",
+    "x": 702.78125,
+    "y": 1089,
+    "w": 62.21875,
+    "h": 36
+   }
+  ],
+  "coveredPaint": [],
+  "screenshot": "/Users/dennisariens/.hermes/cache/scratch/hermes-v3-app-1a42590/reis/independent-webkit/820x1180-countries-false.png"
+ },
+ {
+  "engine": "webkit",
+  "size": [
+   820,
+   1180
+  ],
+  "chapter": "countries",
+  "relief": "on",
+  "labels": [
+   "I T A L I Ë",
+   "DUITSLAND",
+   "TSJECHIË",
+   "SLOWAKIJE",
+   "HONGARIJE",
+   "BOSNIË",
+   "TUNESIË",
+   "▲",
+   "▲"
+  ],
+  "labelHits": [],
+  "mapRect": {
+   "x": 434,
+   "y": 494.625,
+   "width": 346,
+   "height": 645.375,
+   "top": 494.625,
+   "right": 780,
+   "bottom": 1140,
+   "left": 434
+  },
+  "selected": "countries",
+  "selectedIds": [
+   "area-i",
+   "area-j",
+   "area-k",
+   "area-l",
+   "area-m",
+   "area-n",
+   "area-o"
+  ],
+  "controls": [
+   {
+    "i": 17,
+    "text": "SchoolkaartReliëf",
+    "x": 594.8125,
+    "y": 1086,
+    "w": 173.1875,
+    "h": 42
+   },
+   {
+    "i": 18,
+    "text": "Schoolkaart",
+    "x": 597.8125,
+    "y": 1089,
+    "w": 104.96875,
+    "h": 36
+   },
+   {
+    "i": 19,
+    "text": "Reliëf",
+    "x": 702.78125,
+    "y": 1089,
+    "w": 62.21875,
+    "h": 36
+   }
+  ],
+  "coveredPaint": [],
+  "screenshot": "/Users/dennisariens/.hermes/cache/scratch/hermes-v3-app-1a42590/reis/independent-webkit/820x1180-countries-true.png"
+ },
+ {
+  "engine": "webkit",
+  "size": [
+   820,
+   1180
+  ],
+  "chapter": "seas",
+  "relief": "off",
+  "labels": [
+   "I T A L I Ë",
+   "DUITSLAND",
+   "TSJECHIË",
+   "SLOWAKIJE",
+   "HONGARIJE",
+   "BOSNIË",
+   "TUNESIË",
+   "▲",
+   "▲"
+  ],
+  "labelHits": [],
+  "mapRect": {
+   "x": 434,
+   "y": 494.625,
+   "width": 346,
+   "height": 645.375,
+   "top": 494.625,
+   "right": 780,
+   "bottom": 1140,
+   "left": 434
+  },
+  "selected": "seas",
+  "selectedIds": [
+   "water-A",
+   "water-B",
+   "water-C",
+   "water-D",
+   "water-E"
+  ],
+  "controls": [
+   {
+    "i": 17,
+    "text": "SchoolkaartReliëf",
+    "x": 594.8125,
+    "y": 1086,
+    "w": 173.1875,
+    "h": 42
+   },
+   {
+    "i": 18,
+    "text": "Schoolkaart",
+    "x": 597.8125,
+    "y": 1089,
+    "w": 104.96875,
+    "h": 36
+   },
+   {
+    "i": 19,
+    "text": "Reliëf",
+    "x": 702.78125,
+    "y": 1089,
+    "w": 62.21875,
+    "h": 36
+   }
+  ],
+  "coveredPaint": [],
+  "screenshot": "/Users/dennisariens/.hermes/cache/scratch/hermes-v3-app-1a42590/reis/independent-webkit/820x1180-seas-false.png"
+ },
+ {
+  "engine": "webkit",
+  "size": [
+   820,
+   1180
+  ],
+  "chapter": "seas",
+  "relief": "on",
+  "labels": [
+   "I T A L I Ë",
+   "DUITSLAND",
+   "TSJECHIË",
+   "SLOWAKIJE",
+   "HONGARIJE",
+   "BOSNIË",
+   "TUNESIË",
+   "▲",
+   "▲"
+  ],
+  "labelHits": [],
+  "mapRect": {
+   "x": 434,
+   "y": 494.625,
+   "width": 346,
+   "height": 645.375,
+   "top": 494.625,
+   "right": 780,
+   "bottom": 1140,
+   "left": 434
+  },
+  "selected": "seas",
+  "selectedIds": [
+   "water-A",
+   "water-B",
+   "water-C",
+   "water-D",
+   "water-E"
+  ],
+  "controls": [
+   {
+    "i": 17,
+    "text": "SchoolkaartReliëf",
+    "x": 594.8125,
+    "y": 1086,
+    "w": 173.1875,
+    "h": 42
+   },
+   {
+    "i": 18,
+    "text": "Schoolkaart",
+    "x": 597.8125,
+    "y": 1089,
+    "w": 104.96875,
+    "h": 36
+   },
+   {
+    "i": 19,
+    "text": "Reliëf",
+    "x": 702.78125,
+    "y": 1089,
+    "w": 62.21875,
+    "h": 36
+   }
+  ],
+  "coveredPaint": [],
+  "screenshot": "/Users/dennisariens/.hermes/cache/scratch/hermes-v3-app-1a42590/reis/independent-webkit/820x1180-seas-true.png"
+ },
+ {
+  "engine": "webkit",
+  "size": [
+   820,
+   1180
+  ],
+  "chapter": "rivers",
+  "relief": "off",
+  "labels": [
+   "I T A L I Ë",
+   "DUITSLAND",
+   "TSJECHIË",
+   "SLOWAKIJE",
+   "HONGARIJE",
+   "BOSNIË",
+   "TUNESIË",
+   "▲",
+   "▲"
+  ],
+  "labelHits": [],
+  "mapRect": {
+   "x": 434,
+   "y": 494.625,
+   "width": 346,
+   "height": 645.375,
+   "top": 494.625,
+   "right": 780,
+   "bottom": 1140,
+   "left": 434
+  },
+  "selected": "rivers",
+  "selectedIds": [
+   "water-F",
+   "water-G"
+  ],
+  "controls": [
+   {
+    "i": 17,
+    "text": "SchoolkaartReliëf",
+    "x": 594.8125,
+    "y": 1086,
+    "w": 173.1875,
+    "h": 42
+   },
+   {
+    "i": 18,
+    "text": "Schoolkaart",
+    "x": 597.8125,
+    "y": 1089,
+    "w": 104.96875,
+    "h": 36
+   },
+   {
+    "i": 19,
+    "text": "Reliëf",
+    "x": 702.78125,
+    "y": 1089,
+    "w": 62.21875,
+    "h": 36
+   }
+  ],
+  "coveredPaint": [],
+  "screenshot": "/Users/dennisariens/.hermes/cache/scratch/hermes-v3-app-1a42590/reis/independent-webkit/820x1180-rivers-false.png"
+ },
+ {
+  "engine": "webkit",
+  "size": [
+   820,
+   1180
+  ],
+  "chapter": "rivers",
+  "relief": "on",
+  "labels": [
+   "I T A L I Ë",
+   "DUITSLAND",
+   "TSJECHIË",
+   "SLOWAKIJE",
+   "HONGARIJE",
+   "BOSNIË",
+   "TUNESIË",
+   "▲",
+   "▲"
+  ],
+  "labelHits": [],
+  "mapRect": {
+   "x": 434,
+   "y": 494.625,
+   "width": 346,
+   "height": 645.375,
+   "top": 494.625,
+   "right": 780,
+   "bottom": 1140,
+   "left": 434
+  },
+  "selected": "rivers",
+  "selectedIds": [
+   "water-F",
+   "water-G"
+  ],
+  "controls": [
+   {
+    "i": 17,
+    "text": "SchoolkaartReliëf",
+    "x": 594.8125,
+    "y": 1086,
+    "w": 173.1875,
+    "h": 42
+   },
+   {
+    "i": 18,
+    "text": "Schoolkaart",
+    "x": 597.8125,
+    "y": 1089,
+    "w": 104.96875,
+    "h": 36
+   },
+   {
+    "i": 19,
+    "text": "Reliëf",
+    "x": 702.78125,
+    "y": 1089,
+    "w": 62.21875,
+    "h": 36
+   }
+  ],
+  "coveredPaint": [],
+  "screenshot": "/Users/dennisariens/.hermes/cache/scratch/hermes-v3-app-1a42590/reis/independent-webkit/820x1180-rivers-true.png"
+ }
+]

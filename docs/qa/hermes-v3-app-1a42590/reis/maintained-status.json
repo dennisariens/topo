@@ -1,0 +1,16 @@
+[
+  {
+    "engine": "chromium",
+    "exit": 0,
+    "source_sha256": "3721e2db0826b0aeb3fbb2b9d95573c5df9e0c342535be0180ae1eabac7d8d65",
+    "adaptation": "engine launch only",
+    "driver": "/Users/dennisariens/.hermes/cache/scratch/hermes-v3-app-1a42590/reis/maintained-chromium.py"
+  },
+  {
+    "engine": "webkit",
+    "exit": 0,
+    "source_sha256": "3721e2db0826b0aeb3fbb2b9d95573c5df9e0c342535be0180ae1eabac7d8d65",
+    "adaptation": "engine launch only",
+    "driver": "/Users/dennisariens/.hermes/cache/scratch/hermes-v3-app-1a42590/reis/maintained-webkit.py"
+  }
+]

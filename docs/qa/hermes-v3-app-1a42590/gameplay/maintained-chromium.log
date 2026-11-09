@@ -1,0 +1,197 @@
+{
+ "indexUnchanged": true,
+ "currentStepPerBeat": {
+  "desktop": {
+   "discover": "discover",
+   "point-q": "point",
+   "point-wrong": "point",
+   "point-ok": "point",
+   "pizza": "point",
+   "pause": "point",
+   "point-done": null,
+   "write-q": "write",
+   "write-wrong": "write",
+   "write-ok": "write",
+   "vespa": "write",
+   "finish": null
+  },
+  "ipad-landscape": {
+   "discover": "discover",
+   "point-q": "point",
+   "point-wrong": "point",
+   "point-ok": "point",
+   "pizza": "point",
+   "pause": "point",
+   "point-done": null,
+   "write-q": "write",
+   "write-wrong": "write",
+   "write-ok": "write",
+   "vespa": "write",
+   "finish": null
+  },
+  "ipad-portrait": {
+   "discover": "discover",
+   "point-q": "point",
+   "point-wrong": "point",
+   "point-ok": "point",
+   "pizza": "point",
+   "pause": "point",
+   "point-done": null,
+   "write-q": "write",
+   "write-wrong": "write",
+   "write-ok": "write",
+   "vespa": "write",
+   "finish": null
+  },
+  "phone": {
+   "discover": "discover",
+   "point-q": "point",
+   "point-wrong": "point",
+   "point-ok": "point",
+   "pizza": "point",
+   "pause": "point",
+   "point-done": null,
+   "write-q": "write",
+   "write-wrong": "write",
+   "write-ok": "write",
+   "vespa": "write",
+   "finish": null
+  },
+  "phone-small": {
+   "discover": "discover",
+   "point-q": "point",
+   "point-wrong": "point",
+   "point-ok": "point",
+   "pizza": "point",
+   "pause": "point",
+   "point-done": null,
+   "write-q": "write",
+   "write-wrong": "write",
+   "write-ok": "write",
+   "vespa": "write",
+   "finish": null
+  }
+ },
+ "stepsRight": true,
+ "oneMainAction": {},
+ "noMainAction": [],
+ "collapsedSheetAfterAnswer": [],
+ "sheetOpensAfterAnswer": {
+  "desktop": [],
+  "ipad-landscape": [
+   true
+  ],
+  "ipad-portrait": [],
+  "phone": [],
+  "phone-small": [
+   true
+  ]
+ },
+ "pointByRealTap": {
+  "desktop": [
+   "tap",
+   "tap+kiezer",
+   "tap",
+   "tap",
+   "tap",
+   "tap"
+  ],
+  "ipad-landscape": [
+   "tap",
+   "tap",
+   "tap",
+   "tap+kiezer",
+   "tap",
+   "tap+vrijmaken"
+  ],
+  "ipad-portrait": [
+   "tap",
+   "tap",
+   "tap",
+   "tap",
+   "tap",
+   "tap+kiezer"
+  ],
+  "phone": [
+   "tap+kiezer",
+   "tap+kiezer",
+   "tap",
+   "tap+kiezer",
+   "tap",
+   "tap"
+  ],
+  "phone-small": [
+   "tap+kiezer",
+   "tap",
+   "tap+vrijmaken",
+   "tap+kiezer",
+   "tap+kiezer",
+   "tap"
+  ]
+ },
+ "tapsBlockedByV3": [],
+ "wrongAnswersNotRewarded": true,
+ "feedbackFromV2": true,
+ "meterMatchesState": true,
+ "rewardMomentsOnRealCount": true,
+ "pizzaAndVespaSeen": {
+  "desktop": [
+   "pizzaCelebration",
+   "vespaRide"
+  ],
+  "ipad-landscape": [
+   "pizzaCelebration",
+   "vespaRide"
+  ],
+  "ipad-portrait": [
+   "pizzaCelebration",
+   "vespaRide"
+  ],
+  "phone": [
+   "pizzaCelebration",
+   "vespaRide"
+  ],
+  "phone-small": [
+   "pizzaCelebration",
+   "vespaRide"
+  ]
+ },
+ "draftSurvivesFormatChange": true,
+ "finishStampAndBook": true,
+ "bookTapLandsOnButton": true,
+ "finishOneBackButton": {
+  "desktop": [
+   "Bekijk in Reisboekje",
+   "Later",
+   "Terug naar mijn reis →"
+  ],
+  "ipad-landscape": [
+   "Bekijk in Reisboekje",
+   "Later",
+   "Terug naar mijn reis →"
+  ],
+  "ipad-portrait": [
+   "Bekijk in Reisboekje",
+   "Later",
+   "Terug naar mijn reis →"
+  ],
+  "phone": [
+   "Bekijk in Reisboekje",
+   "Later",
+   "Terug naar mijn reis →"
+  ],
+  "phone-small": [
+   "Bekijk in Reisboekje",
+   "Later",
+   "Terug naar mijn reis →"
+  ]
+ },
+ "backToReisNextChapter": true,
+ "v2ChromeVisible": {},
+ "barOverlaps": {},
+ "clipped": {},
+ "smallTargets": {},
+ "horizontalOverflow": [],
+ "reducedMotion": "0s",
+ "errors": 0
+}

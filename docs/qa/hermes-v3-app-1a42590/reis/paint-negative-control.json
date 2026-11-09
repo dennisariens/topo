@@ -1,0 +1,31 @@
+{
+  "chromium": {
+    "injected": "style switch moved over Sicily in disposable DOM only",
+    "selectedPaintPixelsDetected": 1735,
+    "rect": {
+      "x": 556.75,
+      "y": 944.15625,
+      "width": 164.671875,
+      "height": 35.1875,
+      "top": 944.15625,
+      "right": 721.421875,
+      "bottom": 979.34375,
+      "left": 556.75
+    }
+  },
+  "webkit": {
+    "injected": "style switch moved over Sicily in disposable DOM only",
+    "selectedPaintPixelsDetected": 1710,
+    "rect": {
+      "x": 556.75,
+      "y": 944.15625,
+      "width": 164.671875,
+      "height": 34.1875,
+      "top": 944.15625,
+      "right": 721.421875,
+      "bottom": 978.34375,
+      "left": 556.75
+    }
+  },
+  "sourceUnchanged": true
+}

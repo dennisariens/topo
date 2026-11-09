@@ -1,0 +1,14 @@
+diff --git a/docs/DECISIONS.md b/docs/DECISIONS.md
+index 4b534e2..cab0b20 100644
+--- a/docs/DECISIONS.md
++++ b/docs/DECISIONS.md
+@@ -366,3 +366,9 @@ Reservekopieën en reset horen in het algemene instellingenmenu. Wis voortgang b
+ 
+ - Portret, scène Roma en scène Napoli met het gesloten blauwe werkshirt, van `art/v3-render-assets` @ `05ab1d0`. Byte-gelijk overgenomen, SHA256 volgens het manifest. **Supersedes** dezelfde drie exports van `908b4a4`. De drie achtergronden blijven (besluit 9-11).
+ - Preview 50.199.445 bytes (+7,42 MB t.o.v. vóór de renderassets); `index.html` blijft byte-gelijk. Klaar voor de Hermes-hertest op de pin van deze commit.
++
++## 2026-11-09 — Akkoord Venezia, iconen en VE-01; kustafwijking reliëf geaccepteerd voor V3.0
++
++- **Artwork:** de eigenaar keurt SCENE-VENEZIA, de iconen (pizza, pizzapunt, Vespa, goud, stempelafdruk, postkaart) en VE-01 goed; Hermes gaf al PASS (`908b4a4`). Status in `assets/v3/render/manifest.json` op `art/v3-render-assets`.
++- **Kust reliëf z8:** de afwijking tussen hoogtemodel en vectorkust (≤ 2,84 SVG px, Codex `v3/relief-z8`) is voor V3.0 geaccepteerd. Leergeografie, doelen en aanwijsgebieden komen uit de ongewijzigde vectorkaart; het reliëf is beschildering binnen de kustlijn. Het hoogtemodel op de vectorkust laten passen is een apart klusje voor Codex, vóór de definitieve release.
++- **Nog open:** Hermes-hertest (beelden `05ab1d0`, app op de nieuwe pin); WebKit bij Hermes; echte iPad met Safari en VoiceOver door de eigenaar.

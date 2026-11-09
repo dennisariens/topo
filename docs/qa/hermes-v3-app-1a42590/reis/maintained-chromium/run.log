@@ -1,0 +1,119 @@
+{
+ "primaryAboveFoldAll": true,
+ "primaryBelowFold": [],
+ "overlaps": {},
+ "clipped": {},
+ "brokenWords": {},
+ "smallTargets": {},
+ "horizontalOverflow": [],
+ "lastRowHiddenByTabBar": [],
+ "mapFrameShort": {},
+ "labelsWithLearningName": {},
+ "labelCheckCatchesControl": true,
+ "contextLabels": [
+  "BOSNIË",
+  "DUITSLAND",
+  "HONGARIJE",
+  "I T A L I Ë",
+  "SLOWAKIJE",
+  "TSJECHIË",
+  "TUNESIË",
+  "▲"
+ ],
+ "switchCoversPlace": {},
+ "phoneSelectFocusOnTitle": true,
+ "errors": 0
+}
+{
+ "desktop": {
+  "mapGeometry": {
+   "same": 46,
+   "diff": [],
+   "total": 46
+  },
+  "defaultSelected": "islands",
+  "hitsForCurrent": [
+   "area-a",
+   "area-b"
+  ],
+  "lockedText": "Opent na Bergen",
+  "lockedPrimary": 0,
+  "reliefOn": "block",
+  "reliefOff": "none",
+  "donePrimary": "★ Goud nog eens",
+  "replays": [
+   "↻ Ontdekken",
+   "↻ Aanwijzen",
+   "↻ Namen schrijven"
+  ],
+  "replayStarted": {
+   "chapter": "city2",
+   "kind": "discover",
+   "mode": "route",
+   "v3Hidden": true
+  },
+  "backVia": "v3Btn v3NavItem",
+  "primaryLabelWithActive": "Ga verder · Ontdekken",
+  "questionBefore": "city-8",
+  "reisVerderSameQuestion": {
+   "id": "city-8",
+   "chapter": "city2",
+   "kind": "discover"
+  },
+  "sameQuestion": true,
+  "activeTab": [
+   "Reis:page",
+   "Oefenen:false",
+   "Reisboekje:null",
+   "⚙:null"
+  ],
+  "memoryStorage": true
+ },
+ "phone": {
+  "mapGeometry": {
+   "same": 46,
+   "diff": [],
+   "total": 46
+  },
+  "defaultSelected": "islands",
+  "hitsForCurrent": [
+   "area-a",
+   "area-b"
+  ],
+  "lockedText": "Opent na Bergen",
+  "lockedPrimary": 0,
+  "reliefOn": "block",
+  "reliefOff": "none",
+  "donePrimary": "★ Goud nog eens",
+  "replays": [
+   "↻ Ontdekken",
+   "↻ Aanwijzen",
+   "↻ Namen schrijven"
+  ],
+  "phonePanelInView": true,
+  "replayStarted": {
+   "chapter": "city2",
+   "kind": "discover",
+   "mode": "route",
+   "v3Hidden": true
+  },
+  "backVia": "v3Btn v3LesBack",
+  "primaryLabelWithActive": "Ga verder · Ontdekken",
+  "questionBefore": "city-11",
+  "reisVerderSameQuestion": {
+   "id": "city-11",
+   "chapter": "city2",
+   "kind": "discover"
+  },
+  "sameQuestion": true,
+  "activeTab": [
+   "Reis:page",
+   "Oefenen:false",
+   "Reisboekje:null",
+   "⚙:null"
+  ],
+  "memoryStorage": true
+ }
+}
+{"order": ["Nieuw profiel", "Halte bezig", "Haltes afgerond", "Alles af", "Italia", "Viola", "BG-01 Toscane", "BG-02 Meer", "BG-03 Kust", "Naast elkaar: desktop + ", "Italia + Viola", "Reis", "Oefenen", "Beloningen", "Instellingen", "city1", "city2", "city3", "city4", "islands", "mountains", "volcanoes", "regions", "countries", "seas", "rivers"], "enterSelects": "true", "focusRing": "solid 3px"}
+theme {'viola': 'rgb(91, 69, 224)', 'italia': 'rgb(185, 80, 47)'} reducedMotion 0s, 0s

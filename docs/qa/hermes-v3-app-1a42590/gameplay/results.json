@@ -1,0 +1,981 @@
+{
+  "commit": "1a42590de5525bd4d9fb1bcd02bf384e4437b1c2",
+  "htmlSha256": "23dced34e7d9079cd59195532721f39b1bc6c1f00032ce6c4a41bb4ea619b556",
+  "htmlBytes": 50199445,
+  "verdicts": {
+    "point2": {
+      "chromium": "REWORK",
+      "webkit": "REWORK"
+    },
+    "point4": {
+      "chromium": "PASS",
+      "webkit": "PASS"
+    }
+  },
+  "engines": {
+    "chromium": {
+      "browser": "156.0.8078.4",
+      "maintainedSummary": {
+        "indexUnchanged": true,
+        "currentStepPerBeat": {
+          "desktop": {
+            "discover": "discover",
+            "point-q": "point",
+            "point-wrong": "point",
+            "point-ok": "point",
+            "pizza": "point",
+            "pause": "point",
+            "point-done": null,
+            "write-q": "write",
+            "write-wrong": "write",
+            "write-ok": "write",
+            "vespa": "write",
+            "finish": null
+          },
+          "ipad-landscape": {
+            "discover": "discover",
+            "point-q": "point",
+            "point-wrong": "point",
+            "point-ok": "point",
+            "pizza": "point",
+            "pause": "point",
+            "point-done": null,
+            "write-q": "write",
+            "write-wrong": "write",
+            "write-ok": "write",
+            "vespa": "write",
+            "finish": null
+          },
+          "ipad-portrait": {
+            "discover": "discover",
+            "point-q": "point",
+            "point-wrong": "point",
+            "point-ok": "point",
+            "pizza": "point",
+            "pause": "point",
+            "point-done": null,
+            "write-q": "write",
+            "write-wrong": "write",
+            "write-ok": "write",
+            "vespa": "write",
+            "finish": null
+          },
+          "phone": {
+            "discover": "discover",
+            "point-q": "point",
+            "point-wrong": "point",
+            "point-ok": "point",
+            "pizza": "point",
+            "pause": "point",
+            "point-done": null,
+            "write-q": "write",
+            "write-wrong": "write",
+            "write-ok": "write",
+            "vespa": "write",
+            "finish": null
+          },
+          "phone-small": {
+            "discover": "discover",
+            "point-q": "point",
+            "point-wrong": "point",
+            "point-ok": "point",
+            "pizza": "point",
+            "pause": "point",
+            "point-done": null,
+            "write-q": "write",
+            "write-wrong": "write",
+            "write-ok": "write",
+            "vespa": "write",
+            "finish": null
+          }
+        },
+        "stepsRight": true,
+        "oneMainAction": {},
+        "noMainAction": [],
+        "collapsedSheetAfterAnswer": [],
+        "sheetOpensAfterAnswer": {
+          "desktop": [],
+          "ipad-landscape": [
+            true
+          ],
+          "ipad-portrait": [],
+          "phone": [],
+          "phone-small": [
+            true
+          ]
+        },
+        "pointByRealTap": {
+          "desktop": [
+            "tap",
+            "tap+kiezer",
+            "tap",
+            "tap",
+            "tap",
+            "tap"
+          ],
+          "ipad-landscape": [
+            "tap",
+            "tap",
+            "tap",
+            "tap+kiezer",
+            "tap",
+            "tap+vrijmaken"
+          ],
+          "ipad-portrait": [
+            "tap",
+            "tap",
+            "tap",
+            "tap",
+            "tap",
+            "tap+kiezer"
+          ],
+          "phone": [
+            "tap+kiezer",
+            "tap+kiezer",
+            "tap",
+            "tap+kiezer",
+            "tap",
+            "tap"
+          ],
+          "phone-small": [
+            "tap+kiezer",
+            "tap",
+            "tap+vrijmaken",
+            "tap+kiezer",
+            "tap+kiezer",
+            "tap"
+          ]
+        },
+        "tapsBlockedByV3": [],
+        "wrongAnswersNotRewarded": true,
+        "feedbackFromV2": true,
+        "meterMatchesState": true,
+        "rewardMomentsOnRealCount": true,
+        "pizzaAndVespaSeen": {
+          "desktop": [
+            "pizzaCelebration",
+            "vespaRide"
+          ],
+          "ipad-landscape": [
+            "pizzaCelebration",
+            "vespaRide"
+          ],
+          "ipad-portrait": [
+            "pizzaCelebration",
+            "vespaRide"
+          ],
+          "phone": [
+            "pizzaCelebration",
+            "vespaRide"
+          ],
+          "phone-small": [
+            "pizzaCelebration",
+            "vespaRide"
+          ]
+        },
+        "draftSurvivesFormatChange": true,
+        "finishStampAndBook": true,
+        "bookTapLandsOnButton": true,
+        "finishOneBackButton": {
+          "desktop": [
+            "Bekijk in Reisboekje",
+            "Later",
+            "Terug naar mijn reis →"
+          ],
+          "ipad-landscape": [
+            "Bekijk in Reisboekje",
+            "Later",
+            "Terug naar mijn reis →"
+          ],
+          "ipad-portrait": [
+            "Bekijk in Reisboekje",
+            "Later",
+            "Terug naar mijn reis →"
+          ],
+          "phone": [
+            "Bekijk in Reisboekje",
+            "Later",
+            "Terug naar mijn reis →"
+          ],
+          "phone-small": [
+            "Bekijk in Reisboekje",
+            "Later",
+            "Terug naar mijn reis →"
+          ]
+        },
+        "backToReisNextChapter": true,
+        "v2ChromeVisible": {},
+        "barOverlaps": {},
+        "clipped": {},
+        "smallTargets": {},
+        "horizontalOverflow": [],
+        "reducedMotion": "0s",
+        "errors": 0
+      },
+      "cleanEarned": {
+        "good": 12,
+        "slices": 4,
+        "pizzas": 1,
+        "trips": 0
+      },
+      "cleanEarnedStampCount": 1,
+      "cleanEarnedInitialBookPages": [
+        "Lesstempels 1 tot 3",
+        "Lesstempels 4 tot 6"
+      ],
+      "resume": {
+        "reisResume": {
+          "before": {
+            "id": "city-1",
+            "mode": "write",
+            "kind": "write",
+            "value": "Rome concept",
+            "start": 9,
+            "end": 12,
+            "direction": "backward",
+            "focus": true
+          },
+          "after": {
+            "id": "city-1",
+            "mode": "write",
+            "kind": "write",
+            "value": "Rome concept",
+            "start": 9,
+            "end": 12,
+            "direction": "backward",
+            "focus": false
+          },
+          "equal": true
+        },
+        "rewardsResume": {
+          "before": {
+            "id": "city-1",
+            "mode": "write",
+            "kind": "write",
+            "value": "Rome concept",
+            "start": 9,
+            "end": 12,
+            "direction": "backward",
+            "focus": true
+          },
+          "after": {
+            "id": "city-1",
+            "mode": "write",
+            "kind": "write",
+            "value": "Rome concept",
+            "start": 9,
+            "end": 12,
+            "direction": "backward",
+            "focus": false
+          },
+          "equal": true,
+          "progressSame": true
+        }
+      },
+      "replay": {
+        "before": [
+          4,
+          1,
+          0
+        ],
+        "after": [
+          4,
+          1,
+          0
+        ],
+        "ok": true
+      },
+      "rewardRows": [
+        {
+          "tiles": [
+            "6 / 8",
+            "0 / 11",
+            "0 / 11",
+            "0 / 4"
+          ],
+          "ride": "0",
+          "countsMatch": true,
+          "keyboardReachesBook": true,
+          "sameV2Book": true,
+          "allReadOnly": true,
+          "storageWrites": []
+        },
+        {
+          "tiles": [
+            "4 / 8",
+            "1 / 11",
+            "0 / 11",
+            "0 / 4"
+          ],
+          "ride": "0",
+          "countsMatch": true,
+          "keyboardReachesBook": true,
+          "sameV2Book": true,
+          "allReadOnly": true,
+          "storageWrites": []
+        },
+        {
+          "tiles": [
+            "4 / 8",
+            "1 / 11",
+            "0 / 11",
+            "0 / 4"
+          ],
+          "ride": "0",
+          "countsMatch": true,
+          "keyboardReachesBook": true,
+          "sameV2Book": true,
+          "allReadOnly": true,
+          "storageWrites": []
+        },
+        {
+          "tiles": [
+            "0 / 8",
+            "0 / 11",
+            "0 / 11",
+            "0 / 4"
+          ],
+          "ride": "0",
+          "countsMatch": true,
+          "keyboardReachesBook": true,
+          "sameV2Book": true,
+          "allReadOnly": true,
+          "storageWrites": []
+        },
+        {
+          "tiles": [
+            "6 / 8",
+            "1 / 11",
+            "0 / 11",
+            "0 / 4"
+          ],
+          "ride": "0",
+          "countsMatch": true,
+          "keyboardReachesBook": true,
+          "sameV2Book": true,
+          "allReadOnly": true,
+          "storageWrites": []
+        },
+        {
+          "tiles": [
+            "3 / 8",
+            "4 / 11",
+            "2 / 11",
+            "0 / 4"
+          ],
+          "ride": "2",
+          "countsMatch": true,
+          "keyboardReachesBook": true,
+          "sameV2Book": true,
+          "allReadOnly": true,
+          "storageWrites": []
+        },
+        {
+          "tiles": [
+            "0 / 8",
+            "11 / 11",
+            "11 / 11",
+            "4 / 4"
+          ],
+          "ride": "7",
+          "countsMatch": true,
+          "keyboardReachesBook": true,
+          "sameV2Book": true,
+          "allReadOnly": true,
+          "storageWrites": []
+        }
+      ],
+      "demoCounts": {
+        "nieuw": {
+          "tiles": [
+            "0 / 8",
+            "0 / 11",
+            "0 / 11",
+            "0 / 4"
+          ],
+          "book": {
+            "stamps": 0,
+            "gold": 0,
+            "postcards": 0
+          },
+          "trips": 0
+        },
+        "bezig": {
+          "tiles": [
+            "6 / 8",
+            "1 / 11",
+            "0 / 11",
+            "0 / 4"
+          ],
+          "book": {
+            "stamps": 1,
+            "gold": 0,
+            "postcards": 0
+          },
+          "trips": 0
+        },
+        "afgerond": {
+          "tiles": [
+            "3 / 8",
+            "4 / 11",
+            "2 / 11",
+            "0 / 4"
+          ],
+          "book": {
+            "stamps": 4,
+            "gold": 2,
+            "postcards": 0
+          },
+          "trips": 2
+        },
+        "alles": {
+          "tiles": [
+            "0 / 8",
+            "11 / 11",
+            "11 / 11",
+            "4 / 4"
+          ],
+          "book": {
+            "stamps": 11,
+            "gold": 11,
+            "postcards": 4
+          },
+          "trips": 7
+        }
+      },
+      "pizzaKeyboardRepro": [
+        {
+          "method": "click",
+          "slices": 0,
+          "pizzas": 1,
+          "dialogs": [
+            "pizzaCelebration"
+          ],
+          "phase": "open-box",
+          "events": [
+            {
+              "type": "click",
+              "key": null,
+              "target": "check"
+            }
+          ],
+          "message": "Perfetto! Een pizza compleet."
+        },
+        {
+          "method": "Enter",
+          "slices": 0,
+          "pizzas": 1,
+          "dialogs": [],
+          "phase": "open-box",
+          "events": [
+            {
+              "type": "keydown",
+              "key": "Enter",
+              "target": "answer"
+            },
+            {
+              "type": "click",
+              "key": null,
+              "target": "Verder"
+            },
+            {
+              "type": "keyup",
+              "key": "Enter",
+              "target": "Verder"
+            },
+            {
+              "type": "close",
+              "key": null,
+              "target": "pizzaCelebration"
+            }
+          ],
+          "message": "Perfetto! Een pizza compleet."
+        }
+      ],
+      "errors": [],
+      "screenshots": 33
+    },
+    "webkit": {
+      "browser": "27.2",
+      "maintainedSummary": {
+        "indexUnchanged": true,
+        "currentStepPerBeat": {
+          "desktop": {
+            "discover": "discover",
+            "point-q": "point",
+            "point-wrong": "point",
+            "point-ok": "point",
+            "pizza": "point",
+            "pause": "point",
+            "point-done": null,
+            "write-q": "write",
+            "write-wrong": "write",
+            "write-ok": "write",
+            "vespa": "write",
+            "finish": null
+          },
+          "ipad-landscape": {
+            "discover": "discover",
+            "point-q": "point",
+            "point-wrong": "point",
+            "point-ok": "point",
+            "pizza": "point",
+            "pause": "point",
+            "point-done": null,
+            "write-q": "write",
+            "write-wrong": "write",
+            "write-ok": "write",
+            "vespa": "write",
+            "finish": null
+          },
+          "ipad-portrait": {
+            "discover": "discover",
+            "point-q": "point",
+            "point-wrong": "point",
+            "point-ok": "point",
+            "pizza": "point",
+            "pause": "point",
+            "point-done": null,
+            "write-q": "write",
+            "write-wrong": "write",
+            "write-ok": "write",
+            "vespa": "write",
+            "finish": null
+          },
+          "phone": {
+            "discover": "discover",
+            "point-q": "point",
+            "point-wrong": "point",
+            "point-ok": "point",
+            "pizza": "point",
+            "pause": "point",
+            "point-done": null,
+            "write-q": "write",
+            "write-wrong": "write",
+            "write-ok": "write",
+            "vespa": "write",
+            "finish": null
+          },
+          "phone-small": {
+            "discover": "discover",
+            "point-q": "point",
+            "point-wrong": "point",
+            "point-ok": "point",
+            "pizza": "point",
+            "pause": "point",
+            "point-done": null,
+            "write-q": "write",
+            "write-wrong": "write",
+            "write-ok": "write",
+            "vespa": "write",
+            "finish": null
+          }
+        },
+        "stepsRight": true,
+        "oneMainAction": {},
+        "noMainAction": [],
+        "collapsedSheetAfterAnswer": [],
+        "sheetOpensAfterAnswer": {
+          "desktop": [],
+          "ipad-landscape": [
+            true
+          ],
+          "ipad-portrait": [],
+          "phone": [],
+          "phone-small": [
+            true
+          ]
+        },
+        "pointByRealTap": {
+          "desktop": [
+            "tap",
+            "tap",
+            "tap",
+            "tap",
+            "tap+kiezer",
+            "tap"
+          ],
+          "ipad-landscape": [
+            "tap",
+            "tap",
+            "tap",
+            "tap+kiezer",
+            "tap+vrijmaken",
+            "tap"
+          ],
+          "ipad-portrait": [
+            "tap+kiezer",
+            "tap",
+            "tap",
+            "tap",
+            "tap",
+            "tap"
+          ],
+          "phone": [
+            "tap+kiezer",
+            "tap",
+            "tap",
+            "tap+kiezer",
+            "tap+kiezer",
+            "tap"
+          ],
+          "phone-small": [
+            "tap",
+            "tap+kiezer",
+            "tap+vrijmaken",
+            "tap+kiezer",
+            "tap",
+            "tap+kiezer"
+          ]
+        },
+        "tapsBlockedByV3": [],
+        "wrongAnswersNotRewarded": true,
+        "feedbackFromV2": true,
+        "meterMatchesState": true,
+        "rewardMomentsOnRealCount": true,
+        "pizzaAndVespaSeen": {
+          "desktop": [
+            "pizzaCelebration",
+            "vespaRide"
+          ],
+          "ipad-landscape": [
+            "pizzaCelebration",
+            "vespaRide"
+          ],
+          "ipad-portrait": [
+            "pizzaCelebration",
+            "vespaRide"
+          ],
+          "phone": [
+            "pizzaCelebration",
+            "vespaRide"
+          ],
+          "phone-small": [
+            "pizzaCelebration",
+            "vespaRide"
+          ]
+        },
+        "draftSurvivesFormatChange": true,
+        "finishStampAndBook": true,
+        "bookTapLandsOnButton": true,
+        "finishOneBackButton": {
+          "desktop": [
+            "Bekijk in Reisboekje",
+            "Later",
+            "Terug naar mijn reis →"
+          ],
+          "ipad-landscape": [
+            "Bekijk in Reisboekje",
+            "Later",
+            "Terug naar mijn reis →"
+          ],
+          "ipad-portrait": [
+            "Bekijk in Reisboekje",
+            "Later",
+            "Terug naar mijn reis →"
+          ],
+          "phone": [
+            "Bekijk in Reisboekje",
+            "Later",
+            "Terug naar mijn reis →"
+          ],
+          "phone-small": [
+            "Bekijk in Reisboekje",
+            "Later",
+            "Terug naar mijn reis →"
+          ]
+        },
+        "backToReisNextChapter": true,
+        "v2ChromeVisible": {},
+        "barOverlaps": {},
+        "clipped": {},
+        "smallTargets": {},
+        "horizontalOverflow": [],
+        "reducedMotion": "0s",
+        "errors": 0
+      },
+      "cleanEarned": {
+        "good": 12,
+        "slices": 4,
+        "pizzas": 1,
+        "trips": 0
+      },
+      "cleanEarnedStampCount": 1,
+      "cleanEarnedInitialBookPages": [
+        "Lesstempels 1 tot 3",
+        "Lesstempels 4 tot 6"
+      ],
+      "resume": {
+        "reisResume": {
+          "before": {
+            "id": "city-1",
+            "mode": "write",
+            "kind": "write",
+            "value": "Rome concept",
+            "start": 9,
+            "end": 12,
+            "direction": "backward",
+            "focus": true
+          },
+          "after": {
+            "id": "city-1",
+            "mode": "write",
+            "kind": "write",
+            "value": "Rome concept",
+            "start": 9,
+            "end": 12,
+            "direction": "backward",
+            "focus": false
+          },
+          "equal": true
+        },
+        "rewardsResume": {
+          "before": {
+            "id": "city-1",
+            "mode": "write",
+            "kind": "write",
+            "value": "Rome concept",
+            "start": 9,
+            "end": 12,
+            "direction": "backward",
+            "focus": true
+          },
+          "after": {
+            "id": "city-1",
+            "mode": "write",
+            "kind": "write",
+            "value": "Rome concept",
+            "start": 9,
+            "end": 12,
+            "direction": "backward",
+            "focus": false
+          },
+          "equal": true,
+          "progressSame": true
+        }
+      },
+      "replay": {
+        "before": [
+          4,
+          1,
+          0
+        ],
+        "after": [
+          4,
+          1,
+          0
+        ],
+        "ok": true
+      },
+      "rewardRows": [
+        {
+          "tiles": [
+            "6 / 8",
+            "0 / 11",
+            "0 / 11",
+            "0 / 4"
+          ],
+          "ride": "0",
+          "countsMatch": true,
+          "keyboardReachesBook": true,
+          "sameV2Book": true,
+          "allReadOnly": true,
+          "storageWrites": []
+        },
+        {
+          "tiles": [
+            "4 / 8",
+            "1 / 11",
+            "0 / 11",
+            "0 / 4"
+          ],
+          "ride": "0",
+          "countsMatch": true,
+          "keyboardReachesBook": true,
+          "sameV2Book": true,
+          "allReadOnly": true,
+          "storageWrites": []
+        },
+        {
+          "tiles": [
+            "4 / 8",
+            "1 / 11",
+            "0 / 11",
+            "0 / 4"
+          ],
+          "ride": "0",
+          "countsMatch": true,
+          "keyboardReachesBook": true,
+          "sameV2Book": true,
+          "allReadOnly": true,
+          "storageWrites": []
+        },
+        {
+          "tiles": [
+            "0 / 8",
+            "0 / 11",
+            "0 / 11",
+            "0 / 4"
+          ],
+          "ride": "0",
+          "countsMatch": true,
+          "keyboardReachesBook": true,
+          "sameV2Book": true,
+          "allReadOnly": true,
+          "storageWrites": []
+        },
+        {
+          "tiles": [
+            "6 / 8",
+            "1 / 11",
+            "0 / 11",
+            "0 / 4"
+          ],
+          "ride": "0",
+          "countsMatch": true,
+          "keyboardReachesBook": true,
+          "sameV2Book": true,
+          "allReadOnly": true,
+          "storageWrites": []
+        },
+        {
+          "tiles": [
+            "3 / 8",
+            "4 / 11",
+            "2 / 11",
+            "0 / 4"
+          ],
+          "ride": "2",
+          "countsMatch": true,
+          "keyboardReachesBook": true,
+          "sameV2Book": true,
+          "allReadOnly": true,
+          "storageWrites": []
+        },
+        {
+          "tiles": [
+            "0 / 8",
+            "11 / 11",
+            "11 / 11",
+            "4 / 4"
+          ],
+          "ride": "7",
+          "countsMatch": true,
+          "keyboardReachesBook": true,
+          "sameV2Book": true,
+          "allReadOnly": true,
+          "storageWrites": []
+        }
+      ],
+      "demoCounts": {
+        "nieuw": {
+          "tiles": [
+            "0 / 8",
+            "0 / 11",
+            "0 / 11",
+            "0 / 4"
+          ],
+          "book": {
+            "stamps": 0,
+            "gold": 0,
+            "postcards": 0
+          },
+          "trips": 0
+        },
+        "bezig": {
+          "tiles": [
+            "6 / 8",
+            "1 / 11",
+            "0 / 11",
+            "0 / 4"
+          ],
+          "book": {
+            "stamps": 1,
+            "gold": 0,
+            "postcards": 0
+          },
+          "trips": 0
+        },
+        "afgerond": {
+          "tiles": [
+            "3 / 8",
+            "4 / 11",
+            "2 / 11",
+            "0 / 4"
+          ],
+          "book": {
+            "stamps": 4,
+            "gold": 2,
+            "postcards": 0
+          },
+          "trips": 2
+        },
+        "alles": {
+          "tiles": [
+            "0 / 8",
+            "11 / 11",
+            "11 / 11",
+            "4 / 4"
+          ],
+          "book": {
+            "stamps": 11,
+            "gold": 11,
+            "postcards": 4
+          },
+          "trips": 7
+        }
+      },
+      "pizzaKeyboardRepro": [
+        {
+          "method": "click",
+          "slices": 0,
+          "pizzas": 1,
+          "dialogs": [
+            "pizzaCelebration"
+          ],
+          "phase": "open-box",
+          "events": [
+            {
+              "type": "click",
+              "key": null,
+              "target": "check"
+            }
+          ],
+          "message": "Perfetto! Een pizza compleet."
+        },
+        {
+          "method": "Enter",
+          "slices": 0,
+          "pizzas": 1,
+          "dialogs": [],
+          "phase": "open-box",
+          "events": [
+            {
+              "type": "keydown",
+              "key": "Enter",
+              "target": "answer"
+            },
+            {
+              "type": "click",
+              "key": null,
+              "target": "Verder"
+            },
+            {
+              "type": "close",
+              "key": null,
+              "target": "pizzaCelebration"
+            },
+            {
+              "type": "keyup",
+              "key": "Enter",
+              "target": "Verder"
+            }
+          ],
+          "message": "Perfetto! Een pizza compleet."
+        }
+      ],
+      "errors": [],
+      "screenshots": 33
+    }
+  }
+}

@@ -1,0 +1,49 @@
+[
+  {
+    "method": "click",
+    "slices": 0,
+    "pizzas": 1,
+    "dialogs": [
+      "pizzaCelebration"
+    ],
+    "phase": "open-box",
+    "events": [
+      {
+        "type": "click",
+        "key": null,
+        "target": "check"
+      }
+    ],
+    "message": "Perfetto! Een pizza compleet."
+  },
+  {
+    "method": "Enter",
+    "slices": 0,
+    "pizzas": 1,
+    "dialogs": [],
+    "phase": "open-box",
+    "events": [
+      {
+        "type": "keydown",
+        "key": "Enter",
+        "target": "answer"
+      },
+      {
+        "type": "click",
+        "key": null,
+        "target": "Verder"
+      },
+      {
+        "type": "close",
+        "key": null,
+        "target": "pizzaCelebration"
+      },
+      {
+        "type": "keyup",
+        "key": "Enter",
+        "target": "Verder"
+      }
+    ],
+    "message": "Perfetto! Een pizza compleet."
+  }
+]

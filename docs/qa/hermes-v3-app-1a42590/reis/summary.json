@@ -1,0 +1,69 @@
+{
+  "verdict": "PASS",
+  "scope": "punt 1 / Reis-kaart V3-01..03; geen release-GO",
+  "commit": "1a42590de5525bd4d9fb1bcd02bf384e4437b1c2",
+  "sha256": "23dced34e7d9079cd59195532721f39b1bc6c1f00032ce6c4a41bb4ea619b556",
+  "bytes": 50199445,
+  "matrixCases": 132,
+  "matrixExpected": 132,
+  "matrixUnique": 132,
+  "perEngineSize": [
+    {
+      "engine": "chromium",
+      "size": [
+        320,
+        640
+      ],
+      "cases": 22
+    },
+    {
+      "engine": "chromium",
+      "size": [
+        390,
+        844
+      ],
+      "cases": 22
+    },
+    {
+      "engine": "chromium",
+      "size": [
+        820,
+        1180
+      ],
+      "cases": 22
+    },
+    {
+      "engine": "webkit",
+      "size": [
+        320,
+        640
+      ],
+      "cases": 22
+    },
+    {
+      "engine": "webkit",
+      "size": [
+        390,
+        844
+      ],
+      "cases": 22
+    },
+    {
+      "engine": "webkit",
+      "size": [
+        820,
+        1180
+      ],
+      "cases": 22
+    }
+  ],
+  "labelFailures": 0,
+  "paintOcclusionFailures": 0,
+  "focusCases": 4,
+  "frameDiagnosticCases": 24,
+  "sourceUnchanged": true,
+  "maintainedLayoutCases": 40,
+  "maintainedSweepCases": 132,
+  "nativeIPadSafari": "NIET GETEST",
+  "VoiceOver": "NIET GETEST"
+}

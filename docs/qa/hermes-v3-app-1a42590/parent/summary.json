@@ -1,0 +1,48 @@
+{
+  "measurements": [
+    {
+      "engine": "chromium",
+      "version": "156.0.8078.4",
+      "loadMsRange": [
+        891.4362920000003,
+        903.8917080000001
+      ],
+      "interactiveMsRange": [
+        1041.9503749999994,
+        1642.830042
+      ],
+      "rssMiBRangeSupplement": [
+        1573.390625,
+        1980.734375
+      ],
+      "freshFootprintBytes": 1263623056,
+      "freshFootprintMiB": 1205.0848541259766,
+      "noOutbound": true,
+      "sampleCount": 3,
+      "memorySupplementSamples": 3
+    },
+    {
+      "engine": "webkit",
+      "version": "27.2",
+      "loadMsRange": [
+        1126.0675409999985,
+        1647.8777499999997
+      ],
+      "interactiveMsRange": [
+        1242.9804999999997,
+        1667.4355840000026
+      ],
+      "rssMiBRangeSupplement": [
+        1756.9375,
+        2081.359375
+      ],
+      "freshFootprintBytes": 741626992,
+      "freshFootprintMiB": 707.2706146240234,
+      "noOutbound": true,
+      "sampleCount": 3,
+      "memorySupplementSamples": 3
+    }
+  ],
+  "correction": "Initial WebKit descendant RSS excluded launchd-owned XPC services; controller-only values in raw results are not total engine memory. Use supplementary OS footprint and launch/close matched process-group data. No dataURI-hash probe before supplementary memory snapshot.",
+  "noIpadAcceptance": true
+}

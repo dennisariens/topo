@@ -1,0 +1,762 @@
+{
+  "sha256": "23dced34e7d9079cd59195532721f39b1bc6c1f00032ce6c4a41bb4ea619b556",
+  "bytes": 50199445,
+  "before": {
+    "/Users/dennisariens/projects/topo-v3-app-1a42590/output/html/TOPO-V3-Reis-Preview.html": "23dced34e7d9079cd59195532721f39b1bc6c1f00032ce6c4a41bb4ea619b556",
+    "/Users/dennisariens/projects/topo-v3-app-1a42590/scripts/v3/reis.js": "ad30e558898771f111226ffca0ac1b816ce977e541ff59706fa8c1eb1ef88770",
+    "/Users/dennisariens/projects/topo-v3-app-1a42590/scripts/v3/reis.css": "f27dcdcff492cd19e7af01648acbb9763110cf540bb0677037e2d733290027a7",
+    "/Users/dennisariens/projects/topo-v3-app-1a42590/scripts/qa-v3-reis.py": "3721e2db0826b0aeb3fbb2b9d95573c5df9e0c342535be0180ae1eabac7d8d65",
+    "/Users/dennisariens/projects/topo-v3-app-1a42590/index.html": "3aced3c31259011b0af2947c78f71965cb4beb2e88c69d1663e61792b0304f5a"
+  },
+  "after": {
+    "/Users/dennisariens/projects/topo-v3-app-1a42590/output/html/TOPO-V3-Reis-Preview.html": "23dced34e7d9079cd59195532721f39b1bc6c1f00032ce6c4a41bb4ea619b556",
+    "/Users/dennisariens/projects/topo-v3-app-1a42590/scripts/v3/reis.js": "ad30e558898771f111226ffca0ac1b816ce977e541ff59706fa8c1eb1ef88770",
+    "/Users/dennisariens/projects/topo-v3-app-1a42590/scripts/v3/reis.css": "f27dcdcff492cd19e7af01648acbb9763110cf540bb0677037e2d733290027a7",
+    "/Users/dennisariens/projects/topo-v3-app-1a42590/scripts/qa-v3-reis.py": "3721e2db0826b0aeb3fbb2b9d95573c5df9e0c342535be0180ae1eabac7d8d65",
+    "/Users/dennisariens/projects/topo-v3-app-1a42590/index.html": "3aced3c31259011b0af2947c78f71965cb4beb2e88c69d1663e61792b0304f5a"
+  },
+  "sourceUnchanged": true,
+  "engines": {
+    "chromium": {
+      "cases": 66,
+      "labelFailures": [],
+      "paintFailures": [],
+      "negativeControl": {
+        "injected": "B Á R I",
+        "hits": [
+          {
+            "label": "B Á R I",
+            "name": "Bari",
+            "id": "city-1"
+          }
+        ]
+      },
+      "focus": [
+        {
+          "mode": "pointer",
+          "navigationKey": "Tab",
+          "beforeEnter": null,
+          "afterChange": {
+            "id": "v3Title",
+            "tag": "H1",
+            "text": "Hoofdstuk 2Steden 7–12",
+            "chapter": null,
+            "tabindex": "-1",
+            "rect": {
+              "x": 20,
+              "y": 66,
+              "width": 350,
+              "height": 58
+            },
+            "inView": true
+          },
+          "nextStep": {
+            "id": "",
+            "tag": "BUTTON",
+            "text": "★ Goud nog eens",
+            "chapter": null,
+            "tabindex": null,
+            "rect": {
+              "x": 20,
+              "y": 164,
+              "width": 350,
+              "height": 52
+            },
+            "inView": true
+          },
+          "trace": [],
+          "selected": "city2",
+          "screenshot": "/Users/dennisariens/.hermes/cache/scratch/hermes-v3-app-1a42590/reis/independent-chromium/focus-pointer.png"
+        },
+        {
+          "mode": "keyboard",
+          "navigationKey": "Tab",
+          "beforeEnter": {
+            "id": "",
+            "tag": "BUTTON",
+            "text": "2Steden 7–12",
+            "chapter": "city2",
+            "tabindex": null,
+            "rect": {
+              "x": 8,
+              "y": 824,
+              "width": 374,
+              "height": 52
+            },
+            "inView": false
+          },
+          "afterChange": {
+            "id": "v3Title",
+            "tag": "H1",
+            "text": "Hoofdstuk 2Steden 7–12",
+            "chapter": null,
+            "tabindex": "-1",
+            "rect": {
+              "x": 20,
+              "y": 34,
+              "width": 350,
+              "height": 58
+            },
+            "inView": true
+          },
+          "nextStep": {
+            "id": "",
+            "tag": "BUTTON",
+            "text": "★ Goud nog eens",
+            "chapter": null,
+            "tabindex": null,
+            "rect": {
+              "x": 20,
+              "y": 132,
+              "width": 350,
+              "height": 52
+            },
+            "inView": true
+          },
+          "trace": [
+            {
+              "id": "",
+              "tag": "BUTTON",
+              "text": "↻ Ontdekken",
+              "chapter": null,
+              "tabindex": null,
+              "rect": {
+                "x": 20,
+                "y": 232,
+                "width": 118.1875,
+                "height": 40
+              },
+              "inView": true
+            },
+            {
+              "id": "",
+              "tag": "BUTTON",
+              "text": "↻ Aanwijzen",
+              "chapter": null,
+              "tabindex": null,
+              "rect": {
+                "x": 146.1875,
+                "y": 232,
+                "width": 112.796875,
+                "height": 40
+              },
+              "inView": true
+            },
+            {
+              "id": "",
+              "tag": "BUTTON",
+              "text": "↻ Namen schrijven",
+              "chapter": null,
+              "tabindex": null,
+              "rect": {
+                "x": 20,
+                "y": 280,
+                "width": 159.203125,
+                "height": 40
+              },
+              "inView": true
+            },
+            {
+              "id": "",
+              "tag": "BODY",
+              "text": "V3-preview · demo · niets wordt bewaardNieuw profielHalte bezigHaltes afgerondAl",
+              "chapter": null,
+              "tabindex": null,
+              "rect": {
+                "x": 0,
+                "y": -52,
+                "width": 390,
+                "height": 1514
+              },
+              "inView": false
+            },
+            {
+              "id": "",
+              "tag": "A",
+              "text": "Nieuw profiel",
+              "chapter": null,
+              "tabindex": null,
+              "rect": {
+                "x": 300.21875,
+                "y": -44,
+                "width": 107.671875,
+                "height": 36
+              },
+              "inView": false
+            },
+            {
+              "id": "",
+              "tag": "A",
+              "text": "Halte bezig",
+              "chapter": null,
+              "tabindex": null,
+              "rect": {
+                "x": 146.890625,
+                "y": -44,
+                "width": 95.578125,
+                "height": 36
+              },
+              "inView": false
+            },
+            {
+              "id": "",
+              "tag": "A",
+              "text": "Haltes afgerond",
+              "chapter": null,
+              "tabindex": null,
+              "rect": {
+                "x": 250.46875,
+                "y": -44,
+                "width": 125.140625,
+                "height": 36
+              },
+              "inView": false
+            },
+            {
+              "id": "",
+              "tag": "A",
+              "text": "Alles af",
+              "chapter": null,
+              "tabindex": null,
+              "rect": {
+                "x": 383.609375,
+                "y": -44,
+                "width": 70.890625,
+                "height": 36
+              },
+              "inView": false
+            },
+            {
+              "id": "",
+              "tag": "A",
+              "text": "Italia",
+              "chapter": null,
+              "tabindex": null,
+              "rect": {
+                "x": 167.5,
+                "y": -44,
+                "width": 54.828125,
+                "height": 36
+              },
+              "inView": false
+            },
+            {
+              "id": "",
+              "tag": "A",
+              "text": "Viola",
+              "chapter": null,
+              "tabindex": null,
+              "rect": {
+                "x": 230.328125,
+                "y": -44,
+                "width": 55.4375,
+                "height": 36
+              },
+              "inView": false
+            },
+            {
+              "id": "",
+              "tag": "A",
+              "text": "BG-01 Toscane",
+              "chapter": null,
+              "tabindex": null,
+              "rect": {
+                "x": 293.765625,
+                "y": -44,
+                "width": 119.515625,
+                "height": 36
+              },
+              "inView": false
+            },
+            {
+              "id": "",
+              "tag": "A",
+              "text": "BG-02 Meer",
+              "chapter": null,
+              "tabindex": null,
+              "rect": {
+                "x": 144.28125,
+                "y": -44,
+                "width": 100.890625,
+                "height": 36
+              },
+              "inView": false
+            },
+            {
+              "id": "",
+              "tag": "A",
+              "text": "BG-03 Kust",
+              "chapter": null,
+              "tabindex": null,
+              "rect": {
+                "x": 253.171875,
+                "y": -44,
+                "width": 97.546875,
+                "height": 36
+              },
+              "inView": false
+            },
+            {
+              "id": "",
+              "tag": "A",
+              "text": "Naast elkaar: desktop + telefoon",
+              "chapter": null,
+              "tabindex": null,
+              "rect": {
+                "x": 358.71875,
+                "y": -44,
+                "width": 229.171875,
+                "height": 36
+              },
+              "inView": false
+            },
+            {
+              "id": "",
+              "tag": "A",
+              "text": "Italia + Viola",
+              "chapter": null,
+              "tabindex": null,
+              "rect": {
+                "x": 276.890625,
+                "y": -44,
+                "width": 101.5,
+                "height": 36
+              },
+              "inView": false
+            },
+            {
+              "id": "",
+              "tag": "BUTTON",
+              "text": "Reis",
+              "chapter": null,
+              "tabindex": null,
+              "rect": {
+                "x": 20.515625,
+                "y": 786,
+                "width": 64,
+                "height": 52
+              },
+              "inView": true
+            },
+            {
+              "id": "",
+              "tag": "BUTTON",
+              "text": "Oefenen",
+              "chapter": null,
+              "tabindex": null,
+              "rect": {
+                "x": 109.578125,
+                "y": 786,
+                "width": 64,
+                "height": 52
+              },
+              "inView": true
+            },
+            {
+              "id": "",
+              "tag": "BUTTON",
+              "text": "Beloningen",
+              "chapter": null,
+              "tabindex": null,
+              "rect": {
+                "x": 198.640625,
+                "y": 786,
+                "width": 71.78125,
+                "height": 52
+              },
+              "inView": true
+            },
+            {
+              "id": "",
+              "tag": "BUTTON",
+              "text": "Instellingen",
+              "chapter": null,
+              "tabindex": null,
+              "rect": {
+                "x": 295.46875,
+                "y": 786,
+                "width": 73.984375,
+                "height": 52
+              },
+              "inView": true
+            },
+            {
+              "id": "",
+              "tag": "BUTTON",
+              "text": "1Steden 1–6",
+              "chapter": "city1",
+              "tabindex": null,
+              "rect": {
+                "x": 8,
+                "y": 770,
+                "width": 374,
+                "height": 52
+              },
+              "inView": true
+            },
+            {
+              "id": "",
+              "tag": "BUTTON",
+              "text": "2Steden 7–12",
+              "chapter": "city2",
+              "tabindex": null,
+              "rect": {
+                "x": 8,
+                "y": 824,
+                "width": 374,
+                "height": 52
+              },
+              "inView": false
+            }
+          ],
+          "selected": "city2",
+          "screenshot": "/Users/dennisariens/.hermes/cache/scratch/hermes-v3-app-1a42590/reis/independent-chromium/focus-keyboard.png"
+        }
+      ],
+      "errors": []
+    },
+    "webkit": {
+      "cases": 66,
+      "labelFailures": [],
+      "paintFailures": [],
+      "negativeControl": {
+        "injected": "B Á R I",
+        "hits": [
+          {
+            "label": "B Á R I",
+            "name": "Bari",
+            "id": "city-1"
+          }
+        ]
+      },
+      "focus": [
+        {
+          "mode": "pointer",
+          "navigationKey": "Alt+Tab",
+          "beforeEnter": null,
+          "afterChange": {
+            "id": "v3Title",
+            "tag": "H1",
+            "text": "Hoofdstuk 2Steden 7–12",
+            "chapter": null,
+            "tabindex": "-1",
+            "rect": {
+              "x": 20,
+              "y": 66,
+              "width": 350,
+              "height": 58
+            },
+            "inView": true
+          },
+          "nextStep": {
+            "id": "",
+            "tag": "BUTTON",
+            "text": "★ Goud nog eens",
+            "chapter": null,
+            "tabindex": null,
+            "rect": {
+              "x": 20,
+              "y": 164,
+              "width": 350,
+              "height": 52
+            },
+            "inView": true
+          },
+          "trace": [],
+          "selected": "city2",
+          "screenshot": "/Users/dennisariens/.hermes/cache/scratch/hermes-v3-app-1a42590/reis/independent-webkit/focus-pointer.png"
+        },
+        {
+          "mode": "keyboard",
+          "navigationKey": "Alt+Tab",
+          "beforeEnter": {
+            "id": "",
+            "tag": "BUTTON",
+            "text": "2Steden 7–12",
+            "chapter": "city2",
+            "tabindex": null,
+            "rect": {
+              "x": 8,
+              "y": 876,
+              "width": 374,
+              "height": 52
+            },
+            "inView": false
+          },
+          "afterChange": {
+            "id": "v3Title",
+            "tag": "H1",
+            "text": "Hoofdstuk 2Steden 7–12",
+            "chapter": null,
+            "tabindex": "-1",
+            "rect": {
+              "x": 20,
+              "y": 66,
+              "width": 350,
+              "height": 58
+            },
+            "inView": true
+          },
+          "nextStep": {
+            "id": "",
+            "tag": "BUTTON",
+            "text": "★ Goud nog eens",
+            "chapter": null,
+            "tabindex": null,
+            "rect": {
+              "x": 20,
+              "y": 164,
+              "width": 350,
+              "height": 52
+            },
+            "inView": true
+          },
+          "trace": [
+            {
+              "id": "",
+              "tag": "A",
+              "text": "Nieuw profiel",
+              "chapter": null,
+              "tabindex": null,
+              "rect": {
+                "x": 300.234375,
+                "y": 8,
+                "width": 107.671875,
+                "height": 36
+              },
+              "inView": true
+            },
+            {
+              "id": "",
+              "tag": "A",
+              "text": "Halte bezig",
+              "chapter": null,
+              "tabindex": null,
+              "rect": {
+                "x": 146.90625,
+                "y": 8,
+                "width": 95.578125,
+                "height": 36
+              },
+              "inView": true
+            },
+            {
+              "id": "",
+              "tag": "A",
+              "text": "Haltes afgerond",
+              "chapter": null,
+              "tabindex": null,
+              "rect": {
+                "x": 250.484375,
+                "y": 8,
+                "width": 125.140625,
+                "height": 36
+              },
+              "inView": true
+            },
+            {
+              "id": "",
+              "tag": "A",
+              "text": "Alles af",
+              "chapter": null,
+              "tabindex": null,
+              "rect": {
+                "x": 318.625,
+                "y": 8,
+                "width": 70.890625,
+                "height": 36
+              },
+              "inView": true
+            },
+            {
+              "id": "",
+              "tag": "A",
+              "text": "Italia",
+              "chapter": null,
+              "tabindex": null,
+              "rect": {
+                "x": 167.515625,
+                "y": 8,
+                "width": 54.828125,
+                "height": 36
+              },
+              "inView": true
+            },
+            {
+              "id": "",
+              "tag": "A",
+              "text": "Viola",
+              "chapter": null,
+              "tabindex": null,
+              "rect": {
+                "x": 230.34375,
+                "y": 8,
+                "width": 55.4375,
+                "height": 36
+              },
+              "inView": true
+            },
+            {
+              "id": "",
+              "tag": "A",
+              "text": "BG-01 Toscane",
+              "chapter": null,
+              "tabindex": null,
+              "rect": {
+                "x": 293.78125,
+                "y": 8,
+                "width": 119.515625,
+                "height": 36
+              },
+              "inView": true
+            },
+            {
+              "id": "",
+              "tag": "A",
+              "text": "BG-02 Meer",
+              "chapter": null,
+              "tabindex": null,
+              "rect": {
+                "x": 144.296875,
+                "y": 8,
+                "width": 100.90625,
+                "height": 36
+              },
+              "inView": true
+            },
+            {
+              "id": "",
+              "tag": "A",
+              "text": "BG-03 Kust",
+              "chapter": null,
+              "tabindex": null,
+              "rect": {
+                "x": 253.203125,
+                "y": 8,
+                "width": 97.546875,
+                "height": 36
+              },
+              "inView": true
+            },
+            {
+              "id": "",
+              "tag": "A",
+              "text": "Naast elkaar: desktop + telefoon",
+              "chapter": null,
+              "tabindex": null,
+              "rect": {
+                "x": 160.75,
+                "y": 8,
+                "width": 229.171875,
+                "height": 36
+              },
+              "inView": true
+            },
+            {
+              "id": "",
+              "tag": "A",
+              "text": "Italia + Viola",
+              "chapter": null,
+              "tabindex": null,
+              "rect": {
+                "x": 276.921875,
+                "y": 8,
+                "width": 101.484375,
+                "height": 36
+              },
+              "inView": true
+            },
+            {
+              "id": "",
+              "tag": "BUTTON",
+              "text": "Reis",
+              "chapter": null,
+              "tabindex": null,
+              "rect": {
+                "x": 20.515625,
+                "y": 786,
+                "width": 64,
+                "height": 52
+              },
+              "inView": true
+            },
+            {
+              "id": "",
+              "tag": "BUTTON",
+              "text": "Oefenen",
+              "chapter": null,
+              "tabindex": null,
+              "rect": {
+                "x": 109.5625,
+                "y": 786,
+                "width": 64,
+                "height": 52
+              },
+              "inView": true
+            },
+            {
+              "id": "",
+              "tag": "BUTTON",
+              "text": "Beloningen",
+              "chapter": null,
+              "tabindex": null,
+              "rect": {
+                "x": 198.609375,
+                "y": 786,
+                "width": 71.78125,
+                "height": 52
+              },
+              "inView": true
+            },
+            {
+              "id": "",
+              "tag": "BUTTON",
+              "text": "Instellingen",
+              "chapter": null,
+              "tabindex": null,
+              "rect": {
+                "x": 295.4375,
+                "y": 786,
+                "width": 73.984375,
+                "height": 52
+              },
+              "inView": true
+            },
+            {
+              "id": "",
+              "tag": "BUTTON",
+              "text": "1Steden 1–6",
+              "chapter": "city1",
+              "tabindex": null,
+              "rect": {
+                "x": 8,
+                "y": 822,
+                "width": 374,
+                "height": 52
+              },
+              "inView": false
+            },
+            {
+              "id": "",
+              "tag": "BUTTON",
+              "text": "2Steden 7–12",
+              "chapter": "city2",
+              "tabindex": null,
+              "rect": {
+                "x": 8,
+                "y": 876,
+                "width": 374,
+                "height": 52
+              },
+              "inView": false
+            }
+          ],
+          "selected": "city2",
+          "screenshot": "/Users/dennisariens/.hermes/cache/scratch/hermes-v3-app-1a42590/reis/independent-webkit/focus-keyboard.png"
+        }
+      ],
+      "errors": []
+    }
+  },
+  "caseCount": 132
+}

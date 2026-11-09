@@ -1,0 +1,1912 @@
+{
+ "html": "/Users/dennisariens/projects/topo-v3-app-1a42590/output/html/TOPO-V3-Reis-Preview.html",
+ "sha256": "23dced34e7d9079cd59195532721f39b1bc6c1f00032ce6c4a41bb4ea619b556",
+ "bytes": 50199445,
+ "layout": {
+  "desktop/nieuw": {
+   "frame": {
+    "viewBox": "27 0 863 1235",
+    "mask": "linear-gradient(90deg, rgba(0, 0, 0, 0), rgb(0, 0, 0) 4%, rgb(0, 0, 0) 96%, rgba(0, 0, 0, 0)), linear-gradient(rgba(0, 0, 0, 0), rgb(0, 0, 0) 4%, rgb(0, 0, 0) 9",
+    "kept": {
+     "Frankrijk": 1,
+     "Zwitserland": 1,
+     "Oostenrijk": 1,
+     "Slovenië": 1,
+     "Kroatië": 1,
+     "Sardinië": 1,
+     "Sicilië": 1,
+     "label DUITSLAND": 1,
+     "label HONGARIJE": 1,
+     "label BOSNIË": 1,
+     "label TUNESIË": 1,
+     "zee 1": 1,
+     "zee 2": 1,
+     "zee 3": 1,
+     "zee 4": 1,
+     "zee 5": 1,
+     "Noord-Afrika": 1
+    },
+    "outOfFrame": [],
+    "visible": [
+     "Frankrijk",
+     "Kroatië",
+     "Noord-Afrika",
+     "Oostenrijk",
+     "Sardinië",
+     "Sicilië",
+     "Slovenië",
+     "Zwitserland",
+     "label BOSNIË",
+     "label DUITSLAND",
+     "label HONGARIJE",
+     "label TUNESIË",
+     "zee 1",
+     "zee 2",
+     "zee 3",
+     "zee 4",
+     "zee 5"
+    ]
+   },
+   "lastRowClear": true,
+   "primaryTop": 496,
+   "primaryBottom": 548,
+   "viewport": 900,
+   "primaryVisible": true,
+   "covered": false,
+   "overlaps": [],
+   "small": [],
+   "clipped": [],
+   "horizontalOverflow": false,
+   "brokenWords": [],
+   "labels": {
+    "labels": [
+     "I T A L I Ë",
+     "DUITSLAND",
+     "TSJECHIË",
+     "SLOWAKIJE",
+     "HONGARIJE",
+     "BOSNIË",
+     "TUNESIË",
+     "▲"
+    ],
+    "hits": [],
+    "names": 56
+   },
+   "switchOcclusion": {
+    "rectOverlap": 7274.53125,
+    "covered": {}
+   }
+  },
+  "desktop/bezig": {
+   "frame": {
+    "viewBox": "27 0 863 1235",
+    "mask": "linear-gradient(90deg, rgba(0, 0, 0, 0), rgb(0, 0, 0) 4%, rgb(0, 0, 0) 96%, rgba(0, 0, 0, 0)), linear-gradient(rgba(0, 0, 0, 0), rgb(0, 0, 0) 4%, rgb(0, 0, 0) 9",
+    "kept": {
+     "Frankrijk": 1,
+     "Zwitserland": 1,
+     "Oostenrijk": 1,
+     "Slovenië": 1,
+     "Kroatië": 1,
+     "Sardinië": 1,
+     "Sicilië": 1,
+     "label DUITSLAND": 1,
+     "label HONGARIJE": 1,
+     "label BOSNIË": 1,
+     "label TUNESIË": 1,
+     "zee 1": 1,
+     "zee 2": 1,
+     "zee 3": 1,
+     "zee 4": 1,
+     "zee 5": 1,
+     "Noord-Afrika": 1
+    },
+    "outOfFrame": [],
+    "visible": [
+     "Frankrijk",
+     "Kroatië",
+     "Noord-Afrika",
+     "Oostenrijk",
+     "Sardinië",
+     "Sicilië",
+     "Slovenië",
+     "Zwitserland",
+     "label BOSNIË",
+     "label DUITSLAND",
+     "label HONGARIJE",
+     "label TUNESIË",
+     "zee 1",
+     "zee 2",
+     "zee 3",
+     "zee 4",
+     "zee 5"
+    ]
+   },
+   "lastRowClear": true,
+   "primaryTop": 496,
+   "primaryBottom": 548,
+   "viewport": 900,
+   "primaryVisible": true,
+   "covered": false,
+   "overlaps": [],
+   "small": [],
+   "clipped": [],
+   "horizontalOverflow": false,
+   "brokenWords": [],
+   "labels": {
+    "labels": [
+     "I T A L I Ë",
+     "DUITSLAND",
+     "TSJECHIË",
+     "SLOWAKIJE",
+     "HONGARIJE",
+     "BOSNIË",
+     "TUNESIË",
+     "▲"
+    ],
+    "hits": [],
+    "names": 56
+   },
+   "switchOcclusion": {
+    "rectOverlap": 7274.53125,
+    "covered": {}
+   }
+  },
+  "desktop/afgerond": {
+   "frame": {
+    "viewBox": "27 0 863 1235",
+    "mask": "linear-gradient(90deg, rgba(0, 0, 0, 0), rgb(0, 0, 0) 4%, rgb(0, 0, 0) 96%, rgba(0, 0, 0, 0)), linear-gradient(rgba(0, 0, 0, 0), rgb(0, 0, 0) 4%, rgb(0, 0, 0) 9",
+    "kept": {
+     "Frankrijk": 1,
+     "Zwitserland": 1,
+     "Oostenrijk": 1,
+     "Slovenië": 1,
+     "Kroatië": 1,
+     "Sardinië": 1,
+     "Sicilië": 1,
+     "label DUITSLAND": 1,
+     "label HONGARIJE": 1,
+     "label BOSNIË": 1,
+     "label TUNESIË": 1,
+     "zee 1": 1,
+     "zee 2": 1,
+     "zee 3": 1,
+     "zee 4": 1,
+     "zee 5": 1,
+     "Noord-Afrika": 1
+    },
+    "outOfFrame": [],
+    "visible": [
+     "Frankrijk",
+     "Kroatië",
+     "Noord-Afrika",
+     "Oostenrijk",
+     "Sardinië",
+     "Sicilië",
+     "Slovenië",
+     "Zwitserland",
+     "label BOSNIË",
+     "label DUITSLAND",
+     "label HONGARIJE",
+     "label TUNESIË",
+     "zee 1",
+     "zee 2",
+     "zee 3",
+     "zee 4",
+     "zee 5"
+    ]
+   },
+   "lastRowClear": true,
+   "primaryTop": 496,
+   "primaryBottom": 548,
+   "viewport": 900,
+   "primaryVisible": true,
+   "covered": false,
+   "overlaps": [],
+   "small": [],
+   "clipped": [],
+   "horizontalOverflow": false,
+   "brokenWords": [],
+   "labels": {
+    "labels": [
+     "I T A L I Ë",
+     "DUITSLAND",
+     "TSJECHIË",
+     "SLOWAKIJE",
+     "HONGARIJE",
+     "BOSNIË",
+     "TUNESIË",
+     "▲"
+    ],
+    "hits": [],
+    "names": 56
+   },
+   "switchOcclusion": {
+    "rectOverlap": 7274.53125,
+    "covered": {}
+   }
+  },
+  "desktop/alles": {
+   "frame": {
+    "viewBox": "27 0 863 1235",
+    "mask": "linear-gradient(90deg, rgba(0, 0, 0, 0), rgb(0, 0, 0) 4%, rgb(0, 0, 0) 96%, rgba(0, 0, 0, 0)), linear-gradient(rgba(0, 0, 0, 0), rgb(0, 0, 0) 4%, rgb(0, 0, 0) 9",
+    "kept": {
+     "Frankrijk": 1,
+     "Zwitserland": 1,
+     "Oostenrijk": 1,
+     "Slovenië": 1,
+     "Kroatië": 1,
+     "Sardinië": 1,
+     "Sicilië": 1,
+     "label DUITSLAND": 1,
+     "label HONGARIJE": 1,
+     "label BOSNIË": 1,
+     "label TUNESIË": 1,
+     "zee 1": 1,
+     "zee 2": 1,
+     "zee 3": 1,
+     "zee 4": 1,
+     "zee 5": 1,
+     "Noord-Afrika": 1
+    },
+    "outOfFrame": [],
+    "visible": [
+     "Frankrijk",
+     "Kroatië",
+     "Noord-Afrika",
+     "Oostenrijk",
+     "Sardinië",
+     "Sicilië",
+     "Slovenië",
+     "Zwitserland",
+     "label BOSNIË",
+     "label DUITSLAND",
+     "label HONGARIJE",
+     "label TUNESIË",
+     "zee 1",
+     "zee 2",
+     "zee 3",
+     "zee 4",
+     "zee 5"
+    ]
+   },
+   "lastRowClear": true,
+   "primaryTop": 496,
+   "primaryBottom": 548,
+   "viewport": 900,
+   "primaryVisible": true,
+   "covered": false,
+   "overlaps": [],
+   "small": [],
+   "clipped": [],
+   "horizontalOverflow": false,
+   "brokenWords": [],
+   "labels": {
+    "labels": [
+     "I T A L I Ë",
+     "DUITSLAND",
+     "TSJECHIË",
+     "SLOWAKIJE",
+     "HONGARIJE",
+     "BOSNIË",
+     "TUNESIË",
+     "▲"
+    ],
+    "hits": [],
+    "names": 56
+   },
+   "switchOcclusion": {
+    "rectOverlap": 7274.53125,
+    "covered": {}
+   }
+  },
+  "ipad-portrait/nieuw": {
+   "frame": {
+    "viewBox": "27 0 863 1235",
+    "mask": "linear-gradient(90deg, rgba(0, 0, 0, 0), rgb(0, 0, 0) 4%, rgb(0, 0, 0) 96%, rgba(0, 0, 0, 0)), linear-gradient(rgba(0, 0, 0, 0), rgb(0, 0, 0) 4%, rgb(0, 0, 0) 9",
+    "kept": {
+     "Frankrijk": 1,
+     "Zwitserland": 1,
+     "Oostenrijk": 1,
+     "Slovenië": 1,
+     "Kroatië": 1,
+     "Sardinië": 1,
+     "Sicilië": 1,
+     "label DUITSLAND": 1,
+     "label HONGARIJE": 1,
+     "label BOSNIË": 1,
+     "label TUNESIË": 1,
+     "zee 1": 1,
+     "zee 2": 1,
+     "zee 3": 1,
+     "zee 4": 1,
+     "zee 5": 1,
+     "Noord-Afrika": 1
+    },
+    "outOfFrame": [],
+    "visible": [
+     "Frankrijk",
+     "Kroatië",
+     "Noord-Afrika",
+     "Oostenrijk",
+     "Sardinië",
+     "Sicilië",
+     "Slovenië",
+     "Zwitserland",
+     "label BOSNIË",
+     "label DUITSLAND",
+     "label HONGARIJE",
+     "label TUNESIË",
+     "zee 1",
+     "zee 2",
+     "zee 3",
+     "zee 4",
+     "zee 5"
+    ]
+   },
+   "lastRowClear": true,
+   "primaryTop": 459,
+   "primaryBottom": 511,
+   "viewport": 1180,
+   "primaryVisible": true,
+   "covered": false,
+   "overlaps": [],
+   "small": [],
+   "clipped": [],
+   "horizontalOverflow": false,
+   "brokenWords": [],
+   "labels": {
+    "labels": [
+     "I T A L I Ë",
+     "DUITSLAND",
+     "TSJECHIË",
+     "SLOWAKIJE",
+     "HONGARIJE",
+     "BOSNIË",
+     "TUNESIË",
+     "▲"
+    ],
+    "hits": [],
+    "names": 56
+   },
+   "switchOcclusion": {
+    "rectOverlap": 7274.53125,
+    "covered": {}
+   }
+  },
+  "ipad-portrait/bezig": {
+   "frame": {
+    "viewBox": "27 0 863 1235",
+    "mask": "linear-gradient(90deg, rgba(0, 0, 0, 0), rgb(0, 0, 0) 4%, rgb(0, 0, 0) 96%, rgba(0, 0, 0, 0)), linear-gradient(rgba(0, 0, 0, 0), rgb(0, 0, 0) 4%, rgb(0, 0, 0) 9",
+    "kept": {
+     "Frankrijk": 1,
+     "Zwitserland": 1,
+     "Oostenrijk": 1,
+     "Slovenië": 1,
+     "Kroatië": 1,
+     "Sardinië": 1,
+     "Sicilië": 1,
+     "label DUITSLAND": 1,
+     "label HONGARIJE": 1,
+     "label BOSNIË": 1,
+     "label TUNESIË": 1,
+     "zee 1": 1,
+     "zee 2": 1,
+     "zee 3": 1,
+     "zee 4": 1,
+     "zee 5": 1,
+     "Noord-Afrika": 1
+    },
+    "outOfFrame": [],
+    "visible": [
+     "Frankrijk",
+     "Kroatië",
+     "Noord-Afrika",
+     "Oostenrijk",
+     "Sardinië",
+     "Sicilië",
+     "Slovenië",
+     "Zwitserland",
+     "label BOSNIË",
+     "label DUITSLAND",
+     "label HONGARIJE",
+     "label TUNESIË",
+     "zee 1",
+     "zee 2",
+     "zee 3",
+     "zee 4",
+     "zee 5"
+    ]
+   },
+   "lastRowClear": true,
+   "primaryTop": 459,
+   "primaryBottom": 511,
+   "viewport": 1180,
+   "primaryVisible": true,
+   "covered": false,
+   "overlaps": [],
+   "small": [],
+   "clipped": [],
+   "horizontalOverflow": false,
+   "brokenWords": [],
+   "labels": {
+    "labels": [
+     "I T A L I Ë",
+     "DUITSLAND",
+     "TSJECHIË",
+     "SLOWAKIJE",
+     "HONGARIJE",
+     "BOSNIË",
+     "TUNESIË",
+     "▲"
+    ],
+    "hits": [],
+    "names": 56
+   },
+   "switchOcclusion": {
+    "rectOverlap": 7274.53125,
+    "covered": {}
+   }
+  },
+  "ipad-portrait/afgerond": {
+   "frame": {
+    "viewBox": "27 0 863 1235",
+    "mask": "linear-gradient(90deg, rgba(0, 0, 0, 0), rgb(0, 0, 0) 4%, rgb(0, 0, 0) 96%, rgba(0, 0, 0, 0)), linear-gradient(rgba(0, 0, 0, 0), rgb(0, 0, 0) 4%, rgb(0, 0, 0) 9",
+    "kept": {
+     "Frankrijk": 1,
+     "Zwitserland": 1,
+     "Oostenrijk": 1,
+     "Slovenië": 1,
+     "Kroatië": 1,
+     "Sardinië": 1,
+     "Sicilië": 1,
+     "label DUITSLAND": 1,
+     "label HONGARIJE": 1,
+     "label BOSNIË": 1,
+     "label TUNESIË": 1,
+     "zee 1": 1,
+     "zee 2": 1,
+     "zee 3": 1,
+     "zee 4": 1,
+     "zee 5": 1,
+     "Noord-Afrika": 1
+    },
+    "outOfFrame": [],
+    "visible": [
+     "Frankrijk",
+     "Kroatië",
+     "Noord-Afrika",
+     "Oostenrijk",
+     "Sardinië",
+     "Sicilië",
+     "Slovenië",
+     "Zwitserland",
+     "label BOSNIË",
+     "label DUITSLAND",
+     "label HONGARIJE",
+     "label TUNESIË",
+     "zee 1",
+     "zee 2",
+     "zee 3",
+     "zee 4",
+     "zee 5"
+    ]
+   },
+   "lastRowClear": true,
+   "primaryTop": 459,
+   "primaryBottom": 511,
+   "viewport": 1180,
+   "primaryVisible": true,
+   "covered": false,
+   "overlaps": [],
+   "small": [],
+   "clipped": [],
+   "horizontalOverflow": false,
+   "brokenWords": [],
+   "labels": {
+    "labels": [
+     "I T A L I Ë",
+     "DUITSLAND",
+     "TSJECHIË",
+     "SLOWAKIJE",
+     "HONGARIJE",
+     "BOSNIË",
+     "TUNESIË",
+     "▲"
+    ],
+    "hits": [],
+    "names": 56
+   },
+   "switchOcclusion": {
+    "rectOverlap": 7274.53125,
+    "covered": {}
+   }
+  },
+  "ipad-portrait/alles": {
+   "frame": {
+    "viewBox": "27 0 863 1235",
+    "mask": "linear-gradient(90deg, rgba(0, 0, 0, 0), rgb(0, 0, 0) 4%, rgb(0, 0, 0) 96%, rgba(0, 0, 0, 0)), linear-gradient(rgba(0, 0, 0, 0), rgb(0, 0, 0) 4%, rgb(0, 0, 0) 9",
+    "kept": {
+     "Frankrijk": 1,
+     "Zwitserland": 1,
+     "Oostenrijk": 1,
+     "Slovenië": 1,
+     "Kroatië": 1,
+     "Sardinië": 1,
+     "Sicilië": 1,
+     "label DUITSLAND": 1,
+     "label HONGARIJE": 1,
+     "label BOSNIË": 1,
+     "label TUNESIË": 1,
+     "zee 1": 1,
+     "zee 2": 1,
+     "zee 3": 1,
+     "zee 4": 1,
+     "zee 5": 1,
+     "Noord-Afrika": 1
+    },
+    "outOfFrame": [],
+    "visible": [
+     "Frankrijk",
+     "Kroatië",
+     "Noord-Afrika",
+     "Oostenrijk",
+     "Sardinië",
+     "Sicilië",
+     "Slovenië",
+     "Zwitserland",
+     "label BOSNIË",
+     "label DUITSLAND",
+     "label HONGARIJE",
+     "label TUNESIË",
+     "zee 1",
+     "zee 2",
+     "zee 3",
+     "zee 4",
+     "zee 5"
+    ]
+   },
+   "lastRowClear": true,
+   "primaryTop": 459,
+   "primaryBottom": 511,
+   "viewport": 1180,
+   "primaryVisible": true,
+   "covered": false,
+   "overlaps": [],
+   "small": [],
+   "clipped": [],
+   "horizontalOverflow": false,
+   "brokenWords": [],
+   "labels": {
+    "labels": [
+     "I T A L I Ë",
+     "DUITSLAND",
+     "TSJECHIË",
+     "SLOWAKIJE",
+     "HONGARIJE",
+     "BOSNIË",
+     "TUNESIË",
+     "▲"
+    ],
+    "hits": [],
+    "names": 56
+   },
+   "switchOcclusion": {
+    "rectOverlap": 7274.53125,
+    "covered": {}
+   }
+  },
+  "ipad-landscape/nieuw": {
+   "frame": {
+    "viewBox": "27 0 863 1235",
+    "mask": "linear-gradient(90deg, rgba(0, 0, 0, 0), rgb(0, 0, 0) 4%, rgb(0, 0, 0) 96%, rgba(0, 0, 0, 0)), linear-gradient(rgba(0, 0, 0, 0), rgb(0, 0, 0) 4%, rgb(0, 0, 0) 9",
+    "kept": {
+     "Frankrijk": 1,
+     "Zwitserland": 1,
+     "Oostenrijk": 1,
+     "Slovenië": 1,
+     "Kroatië": 1,
+     "Sardinië": 1,
+     "Sicilië": 1,
+     "label DUITSLAND": 1,
+     "label HONGARIJE": 1,
+     "label BOSNIË": 1,
+     "label TUNESIË": 1,
+     "zee 1": 1,
+     "zee 2": 1,
+     "zee 3": 1,
+     "zee 4": 1,
+     "zee 5": 1,
+     "Noord-Afrika": 1
+    },
+    "outOfFrame": [],
+    "visible": [
+     "Frankrijk",
+     "Kroatië",
+     "Noord-Afrika",
+     "Oostenrijk",
+     "Sardinië",
+     "Sicilië",
+     "Slovenië",
+     "Zwitserland",
+     "label BOSNIË",
+     "label DUITSLAND",
+     "label HONGARIJE",
+     "label TUNESIË",
+     "zee 1",
+     "zee 2",
+     "zee 3",
+     "zee 4",
+     "zee 5"
+    ]
+   },
+   "lastRowClear": true,
+   "primaryTop": 485,
+   "primaryBottom": 537,
+   "viewport": 820,
+   "primaryVisible": true,
+   "covered": false,
+   "overlaps": [],
+   "small": [],
+   "clipped": [],
+   "horizontalOverflow": false,
+   "brokenWords": [],
+   "labels": {
+    "labels": [
+     "I T A L I Ë",
+     "DUITSLAND",
+     "TSJECHIË",
+     "SLOWAKIJE",
+     "HONGARIJE",
+     "BOSNIË",
+     "TUNESIË",
+     "▲"
+    ],
+    "hits": [],
+    "names": 56
+   },
+   "switchOcclusion": {
+    "rectOverlap": 7274.53125,
+    "covered": {}
+   }
+  },
+  "ipad-landscape/bezig": {
+   "frame": {
+    "viewBox": "27 0 863 1235",
+    "mask": "linear-gradient(90deg, rgba(0, 0, 0, 0), rgb(0, 0, 0) 4%, rgb(0, 0, 0) 96%, rgba(0, 0, 0, 0)), linear-gradient(rgba(0, 0, 0, 0), rgb(0, 0, 0) 4%, rgb(0, 0, 0) 9",
+    "kept": {
+     "Frankrijk": 1,
+     "Zwitserland": 1,
+     "Oostenrijk": 1,
+     "Slovenië": 1,
+     "Kroatië": 1,
+     "Sardinië": 1,
+     "Sicilië": 1,
+     "label DUITSLAND": 1,
+     "label HONGARIJE": 1,
+     "label BOSNIË": 1,
+     "label TUNESIË": 1,
+     "zee 1": 1,
+     "zee 2": 1,
+     "zee 3": 1,
+     "zee 4": 1,
+     "zee 5": 1,
+     "Noord-Afrika": 1
+    },
+    "outOfFrame": [],
+    "visible": [
+     "Frankrijk",
+     "Kroatië",
+     "Noord-Afrika",
+     "Oostenrijk",
+     "Sardinië",
+     "Sicilië",
+     "Slovenië",
+     "Zwitserland",
+     "label BOSNIË",
+     "label DUITSLAND",
+     "label HONGARIJE",
+     "label TUNESIË",
+     "zee 1",
+     "zee 2",
+     "zee 3",
+     "zee 4",
+     "zee 5"
+    ]
+   },
+   "lastRowClear": true,
+   "primaryTop": 485,
+   "primaryBottom": 537,
+   "viewport": 820,
+   "primaryVisible": true,
+   "covered": false,
+   "overlaps": [],
+   "small": [],
+   "clipped": [],
+   "horizontalOverflow": false,
+   "brokenWords": [],
+   "labels": {
+    "labels": [
+     "I T A L I Ë",
+     "DUITSLAND",
+     "TSJECHIË",
+     "SLOWAKIJE",
+     "HONGARIJE",
+     "BOSNIË",
+     "TUNESIË",
+     "▲"
+    ],
+    "hits": [],
+    "names": 56
+   },
+   "switchOcclusion": {
+    "rectOverlap": 7274.53125,
+    "covered": {}
+   }
+  },
+  "ipad-landscape/afgerond": {
+   "frame": {
+    "viewBox": "27 0 863 1235",
+    "mask": "linear-gradient(90deg, rgba(0, 0, 0, 0), rgb(0, 0, 0) 4%, rgb(0, 0, 0) 96%, rgba(0, 0, 0, 0)), linear-gradient(rgba(0, 0, 0, 0), rgb(0, 0, 0) 4%, rgb(0, 0, 0) 9",
+    "kept": {
+     "Frankrijk": 1,
+     "Zwitserland": 1,
+     "Oostenrijk": 1,
+     "Slovenië": 1,
+     "Kroatië": 1,
+     "Sardinië": 1,
+     "Sicilië": 1,
+     "label DUITSLAND": 1,
+     "label HONGARIJE": 1,
+     "label BOSNIË": 1,
+     "label TUNESIË": 1,
+     "zee 1": 1,
+     "zee 2": 1,
+     "zee 3": 1,
+     "zee 4": 1,
+     "zee 5": 1,
+     "Noord-Afrika": 1
+    },
+    "outOfFrame": [],
+    "visible": [
+     "Frankrijk",
+     "Kroatië",
+     "Noord-Afrika",
+     "Oostenrijk",
+     "Sardinië",
+     "Sicilië",
+     "Slovenië",
+     "Zwitserland",
+     "label BOSNIË",
+     "label DUITSLAND",
+     "label HONGARIJE",
+     "label TUNESIË",
+     "zee 1",
+     "zee 2",
+     "zee 3",
+     "zee 4",
+     "zee 5"
+    ]
+   },
+   "lastRowClear": true,
+   "primaryTop": 485,
+   "primaryBottom": 537,
+   "viewport": 820,
+   "primaryVisible": true,
+   "covered": false,
+   "overlaps": [],
+   "small": [],
+   "clipped": [],
+   "horizontalOverflow": false,
+   "brokenWords": [],
+   "labels": {
+    "labels": [
+     "I T A L I Ë",
+     "DUITSLAND",
+     "TSJECHIË",
+     "SLOWAKIJE",
+     "HONGARIJE",
+     "BOSNIË",
+     "TUNESIË",
+     "▲"
+    ],
+    "hits": [],
+    "names": 56
+   },
+   "switchOcclusion": {
+    "rectOverlap": 7274.53125,
+    "covered": {}
+   }
+  },
+  "ipad-landscape/alles": {
+   "frame": {
+    "viewBox": "27 0 863 1235",
+    "mask": "linear-gradient(90deg, rgba(0, 0, 0, 0), rgb(0, 0, 0) 4%, rgb(0, 0, 0) 96%, rgba(0, 0, 0, 0)), linear-gradient(rgba(0, 0, 0, 0), rgb(0, 0, 0) 4%, rgb(0, 0, 0) 9",
+    "kept": {
+     "Frankrijk": 1,
+     "Zwitserland": 1,
+     "Oostenrijk": 1,
+     "Slovenië": 1,
+     "Kroatië": 1,
+     "Sardinië": 1,
+     "Sicilië": 1,
+     "label DUITSLAND": 1,
+     "label HONGARIJE": 1,
+     "label BOSNIË": 1,
+     "label TUNESIË": 1,
+     "zee 1": 1,
+     "zee 2": 1,
+     "zee 3": 1,
+     "zee 4": 1,
+     "zee 5": 1,
+     "Noord-Afrika": 1
+    },
+    "outOfFrame": [],
+    "visible": [
+     "Frankrijk",
+     "Kroatië",
+     "Noord-Afrika",
+     "Oostenrijk",
+     "Sardinië",
+     "Sicilië",
+     "Slovenië",
+     "Zwitserland",
+     "label BOSNIË",
+     "label DUITSLAND",
+     "label HONGARIJE",
+     "label TUNESIË",
+     "zee 1",
+     "zee 2",
+     "zee 3",
+     "zee 4",
+     "zee 5"
+    ]
+   },
+   "lastRowClear": true,
+   "primaryTop": 485,
+   "primaryBottom": 537,
+   "viewport": 820,
+   "primaryVisible": true,
+   "covered": false,
+   "overlaps": [],
+   "small": [],
+   "clipped": [],
+   "horizontalOverflow": false,
+   "brokenWords": [],
+   "labels": {
+    "labels": [
+     "I T A L I Ë",
+     "DUITSLAND",
+     "TSJECHIË",
+     "SLOWAKIJE",
+     "HONGARIJE",
+     "BOSNIË",
+     "TUNESIË",
+     "▲"
+    ],
+    "hits": [],
+    "names": 56
+   },
+   "switchOcclusion": {
+    "rectOverlap": 7274.53125,
+    "covered": {}
+   }
+  },
+  "phone/nieuw": {
+   "frame": {
+    "viewBox": "0 93 890 1024",
+    "mask": "linear-gradient(90deg, rgba(0, 0, 0, 0), rgb(0, 0, 0) 4%, rgb(0, 0, 0) 96%, rgba(0, 0, 0, 0)), linear-gradient(rgba(0, 0, 0, 0), rgb(0, 0, 0) 4%, rgb(0, 0, 0) 9",
+    "kept": {
+     "Frankrijk": 1,
+     "Zwitserland": 1,
+     "Oostenrijk": 1,
+     "Slovenië": 1,
+     "Kroatië": 1,
+     "Sardinië": 1,
+     "Sicilië": 1,
+     "label HONGARIJE": 1,
+     "label BOSNIË": 1,
+     "zee 1": 1,
+     "zee 2": 1,
+     "zee 3": 1,
+     "zee 4": 1,
+     "zee 5": 1,
+     "Noord-Afrika": 1
+    },
+    "outOfFrame": [
+     "label DUITSLAND",
+     "label TUNESIË"
+    ],
+    "visible": [
+     "Frankrijk",
+     "Kroatië",
+     "Noord-Afrika",
+     "Oostenrijk",
+     "Sardinië",
+     "Sicilië",
+     "Slovenië",
+     "Zwitserland",
+     "label BOSNIË",
+     "label HONGARIJE",
+     "zee 1",
+     "zee 2",
+     "zee 3",
+     "zee 4",
+     "zee 5"
+    ]
+   },
+   "lastRowClear": true,
+   "primaryTop": 216,
+   "primaryBottom": 268,
+   "viewport": 844,
+   "primaryVisible": true,
+   "covered": false,
+   "overlaps": [],
+   "small": [],
+   "clipped": [],
+   "horizontalOverflow": false,
+   "brokenWords": [],
+   "labels": {
+    "labels": [
+     "I T A L I Ë",
+     "DUITSLAND",
+     "TSJECHIË",
+     "SLOWAKIJE",
+     "HONGARIJE",
+     "BOSNIË",
+     "TUNESIË",
+     "▲"
+    ],
+    "hits": [],
+    "names": 56
+   },
+   "switchOcclusion": {
+    "rectOverlap": 0,
+    "covered": {}
+   }
+  },
+  "phone/bezig": {
+   "frame": {
+    "viewBox": "0 93 890 1024",
+    "mask": "linear-gradient(90deg, rgba(0, 0, 0, 0), rgb(0, 0, 0) 4%, rgb(0, 0, 0) 96%, rgba(0, 0, 0, 0)), linear-gradient(rgba(0, 0, 0, 0), rgb(0, 0, 0) 4%, rgb(0, 0, 0) 9",
+    "kept": {
+     "Frankrijk": 1,
+     "Zwitserland": 1,
+     "Oostenrijk": 1,
+     "Slovenië": 1,
+     "Kroatië": 1,
+     "Sardinië": 1,
+     "Sicilië": 1,
+     "label HONGARIJE": 1,
+     "label BOSNIË": 1,
+     "zee 1": 1,
+     "zee 2": 1,
+     "zee 3": 1,
+     "zee 4": 1,
+     "zee 5": 1,
+     "Noord-Afrika": 1
+    },
+    "outOfFrame": [
+     "label DUITSLAND",
+     "label TUNESIË"
+    ],
+    "visible": [
+     "Frankrijk",
+     "Kroatië",
+     "Noord-Afrika",
+     "Oostenrijk",
+     "Sardinië",
+     "Sicilië",
+     "Slovenië",
+     "Zwitserland",
+     "label BOSNIË",
+     "label HONGARIJE",
+     "zee 1",
+     "zee 2",
+     "zee 3",
+     "zee 4",
+     "zee 5"
+    ]
+   },
+   "lastRowClear": true,
+   "primaryTop": 216,
+   "primaryBottom": 268,
+   "viewport": 844,
+   "primaryVisible": true,
+   "covered": false,
+   "overlaps": [],
+   "small": [],
+   "clipped": [],
+   "horizontalOverflow": false,
+   "brokenWords": [],
+   "labels": {
+    "labels": [
+     "I T A L I Ë",
+     "DUITSLAND",
+     "TSJECHIË",
+     "SLOWAKIJE",
+     "HONGARIJE",
+     "BOSNIË",
+     "TUNESIË",
+     "▲"
+    ],
+    "hits": [],
+    "names": 56
+   },
+   "switchOcclusion": {
+    "rectOverlap": 0,
+    "covered": {}
+   }
+  },
+  "phone/afgerond": {
+   "frame": {
+    "viewBox": "0 93 890 1024",
+    "mask": "linear-gradient(90deg, rgba(0, 0, 0, 0), rgb(0, 0, 0) 4%, rgb(0, 0, 0) 96%, rgba(0, 0, 0, 0)), linear-gradient(rgba(0, 0, 0, 0), rgb(0, 0, 0) 4%, rgb(0, 0, 0) 9",
+    "kept": {
+     "Frankrijk": 1,
+     "Zwitserland": 1,
+     "Oostenrijk": 1,
+     "Slovenië": 1,
+     "Kroatië": 1,
+     "Sardinië": 1,
+     "Sicilië": 1,
+     "label HONGARIJE": 1,
+     "label BOSNIË": 1,
+     "zee 1": 1,
+     "zee 2": 1,
+     "zee 3": 1,
+     "zee 4": 1,
+     "zee 5": 1,
+     "Noord-Afrika": 1
+    },
+    "outOfFrame": [
+     "label DUITSLAND",
+     "label TUNESIË"
+    ],
+    "visible": [
+     "Frankrijk",
+     "Kroatië",
+     "Noord-Afrika",
+     "Oostenrijk",
+     "Sardinië",
+     "Sicilië",
+     "Slovenië",
+     "Zwitserland",
+     "label BOSNIË",
+     "label HONGARIJE",
+     "zee 1",
+     "zee 2",
+     "zee 3",
+     "zee 4",
+     "zee 5"
+    ]
+   },
+   "lastRowClear": true,
+   "primaryTop": 216,
+   "primaryBottom": 268,
+   "viewport": 844,
+   "primaryVisible": true,
+   "covered": false,
+   "overlaps": [],
+   "small": [],
+   "clipped": [],
+   "horizontalOverflow": false,
+   "brokenWords": [],
+   "labels": {
+    "labels": [
+     "I T A L I Ë",
+     "DUITSLAND",
+     "TSJECHIË",
+     "SLOWAKIJE",
+     "HONGARIJE",
+     "BOSNIË",
+     "TUNESIË",
+     "▲"
+    ],
+    "hits": [],
+    "names": 56
+   },
+   "switchOcclusion": {
+    "rectOverlap": 0,
+    "covered": {}
+   }
+  },
+  "phone/alles": {
+   "frame": {
+    "viewBox": "0 93 890 1024",
+    "mask": "linear-gradient(90deg, rgba(0, 0, 0, 0), rgb(0, 0, 0) 4%, rgb(0, 0, 0) 96%, rgba(0, 0, 0, 0)), linear-gradient(rgba(0, 0, 0, 0), rgb(0, 0, 0) 4%, rgb(0, 0, 0) 9",
+    "kept": {
+     "Frankrijk": 1,
+     "Zwitserland": 1,
+     "Oostenrijk": 1,
+     "Slovenië": 1,
+     "Kroatië": 1,
+     "Sardinië": 1,
+     "Sicilië": 1,
+     "label HONGARIJE": 1,
+     "label BOSNIË": 1,
+     "zee 1": 1,
+     "zee 2": 1,
+     "zee 3": 1,
+     "zee 4": 1,
+     "zee 5": 1,
+     "Noord-Afrika": 1
+    },
+    "outOfFrame": [
+     "label DUITSLAND",
+     "label TUNESIË"
+    ],
+    "visible": [
+     "Frankrijk",
+     "Kroatië",
+     "Noord-Afrika",
+     "Oostenrijk",
+     "Sardinië",
+     "Sicilië",
+     "Slovenië",
+     "Zwitserland",
+     "label BOSNIË",
+     "label HONGARIJE",
+     "zee 1",
+     "zee 2",
+     "zee 3",
+     "zee 4",
+     "zee 5"
+    ]
+   },
+   "lastRowClear": true,
+   "primaryTop": 216,
+   "primaryBottom": 268,
+   "viewport": 844,
+   "primaryVisible": true,
+   "covered": false,
+   "overlaps": [],
+   "small": [],
+   "clipped": [],
+   "horizontalOverflow": false,
+   "brokenWords": [],
+   "labels": {
+    "labels": [
+     "I T A L I Ë",
+     "DUITSLAND",
+     "TSJECHIË",
+     "SLOWAKIJE",
+     "HONGARIJE",
+     "BOSNIË",
+     "TUNESIË",
+     "▲"
+    ],
+    "hits": [],
+    "names": 56
+   },
+   "switchOcclusion": {
+    "rectOverlap": 0,
+    "covered": {}
+   }
+  },
+  "phone-small/nieuw": {
+   "frame": {
+    "viewBox": "0 93 890 1024",
+    "mask": "linear-gradient(90deg, rgba(0, 0, 0, 0), rgb(0, 0, 0) 4%, rgb(0, 0, 0) 96%, rgba(0, 0, 0, 0)), linear-gradient(rgba(0, 0, 0, 0), rgb(0, 0, 0) 4%, rgb(0, 0, 0) 9",
+    "kept": {
+     "Frankrijk": 1,
+     "Zwitserland": 1,
+     "Oostenrijk": 1,
+     "Slovenië": 1,
+     "Kroatië": 1,
+     "Sardinië": 1,
+     "Sicilië": 1,
+     "label HONGARIJE": 1,
+     "label BOSNIË": 1,
+     "zee 1": 1,
+     "zee 2": 1,
+     "zee 3": 1,
+     "zee 4": 1,
+     "zee 5": 1,
+     "Noord-Afrika": 1
+    },
+    "outOfFrame": [
+     "label DUITSLAND",
+     "label TUNESIË"
+    ],
+    "visible": [
+     "Frankrijk",
+     "Kroatië",
+     "Noord-Afrika",
+     "Oostenrijk",
+     "Sardinië",
+     "Sicilië",
+     "Slovenië",
+     "Zwitserland",
+     "label BOSNIË",
+     "label HONGARIJE",
+     "zee 1",
+     "zee 2",
+     "zee 3",
+     "zee 4",
+     "zee 5"
+    ]
+   },
+   "lastRowClear": true,
+   "primaryTop": 216,
+   "primaryBottom": 268,
+   "viewport": 640,
+   "primaryVisible": true,
+   "covered": false,
+   "overlaps": [],
+   "small": [],
+   "clipped": [],
+   "horizontalOverflow": false,
+   "brokenWords": [],
+   "labels": {
+    "labels": [
+     "I T A L I Ë",
+     "DUITSLAND",
+     "TSJECHIË",
+     "SLOWAKIJE",
+     "HONGARIJE",
+     "BOSNIË",
+     "TUNESIË",
+     "▲"
+    ],
+    "hits": [],
+    "names": 56
+   },
+   "switchOcclusion": {
+    "rectOverlap": 0,
+    "covered": {}
+   }
+  },
+  "phone-small/bezig": {
+   "frame": {
+    "viewBox": "0 93 890 1024",
+    "mask": "linear-gradient(90deg, rgba(0, 0, 0, 0), rgb(0, 0, 0) 4%, rgb(0, 0, 0) 96%, rgba(0, 0, 0, 0)), linear-gradient(rgba(0, 0, 0, 0), rgb(0, 0, 0) 4%, rgb(0, 0, 0) 9",
+    "kept": {
+     "Frankrijk": 1,
+     "Zwitserland": 1,
+     "Oostenrijk": 1,
+     "Slovenië": 1,
+     "Kroatië": 1,
+     "Sardinië": 1,
+     "Sicilië": 1,
+     "label HONGARIJE": 1,
+     "label BOSNIË": 1,
+     "zee 1": 1,
+     "zee 2": 1,
+     "zee 3": 1,
+     "zee 4": 1,
+     "zee 5": 1,
+     "Noord-Afrika": 1
+    },
+    "outOfFrame": [
+     "label DUITSLAND",
+     "label TUNESIË"
+    ],
+    "visible": [
+     "Frankrijk",
+     "Kroatië",
+     "Noord-Afrika",
+     "Oostenrijk",
+     "Sardinië",
+     "Sicilië",
+     "Slovenië",
+     "Zwitserland",
+     "label BOSNIË",
+     "label HONGARIJE",
+     "zee 1",
+     "zee 2",
+     "zee 3",
+     "zee 4",
+     "zee 5"
+    ]
+   },
+   "lastRowClear": true,
+   "primaryTop": 216,
+   "primaryBottom": 268,
+   "viewport": 640,
+   "primaryVisible": true,
+   "covered": false,
+   "overlaps": [],
+   "small": [],
+   "clipped": [],
+   "horizontalOverflow": false,
+   "brokenWords": [],
+   "labels": {
+    "labels": [
+     "I T A L I Ë",
+     "DUITSLAND",
+     "TSJECHIË",
+     "SLOWAKIJE",
+     "HONGARIJE",
+     "BOSNIË",
+     "TUNESIË",
+     "▲"
+    ],
+    "hits": [],
+    "names": 56
+   },
+   "switchOcclusion": {
+    "rectOverlap": 0,
+    "covered": {}
+   }
+  },
+  "phone-small/afgerond": {
+   "frame": {
+    "viewBox": "0 93 890 1024",
+    "mask": "linear-gradient(90deg, rgba(0, 0, 0, 0), rgb(0, 0, 0) 4%, rgb(0, 0, 0) 96%, rgba(0, 0, 0, 0)), linear-gradient(rgba(0, 0, 0, 0), rgb(0, 0, 0) 4%, rgb(0, 0, 0) 9",
+    "kept": {
+     "Frankrijk": 1,
+     "Zwitserland": 1,
+     "Oostenrijk": 1,
+     "Slovenië": 1,
+     "Kroatië": 1,
+     "Sardinië": 1,
+     "Sicilië": 1,
+     "label HONGARIJE": 1,
+     "label BOSNIË": 1,
+     "zee 1": 1,
+     "zee 2": 1,
+     "zee 3": 1,
+     "zee 4": 1,
+     "zee 5": 1,
+     "Noord-Afrika": 1
+    },
+    "outOfFrame": [
+     "label DUITSLAND",
+     "label TUNESIË"
+    ],
+    "visible": [
+     "Frankrijk",
+     "Kroatië",
+     "Noord-Afrika",
+     "Oostenrijk",
+     "Sardinië",
+     "Sicilië",
+     "Slovenië",
+     "Zwitserland",
+     "label BOSNIË",
+     "label HONGARIJE",
+     "zee 1",
+     "zee 2",
+     "zee 3",
+     "zee 4",
+     "zee 5"
+    ]
+   },
+   "lastRowClear": true,
+   "primaryTop": 216,
+   "primaryBottom": 268,
+   "viewport": 640,
+   "primaryVisible": true,
+   "covered": false,
+   "overlaps": [],
+   "small": [],
+   "clipped": [],
+   "horizontalOverflow": false,
+   "brokenWords": [],
+   "labels": {
+    "labels": [
+     "I T A L I Ë",
+     "DUITSLAND",
+     "TSJECHIË",
+     "SLOWAKIJE",
+     "HONGARIJE",
+     "BOSNIË",
+     "TUNESIË",
+     "▲"
+    ],
+    "hits": [],
+    "names": 56
+   },
+   "switchOcclusion": {
+    "rectOverlap": 0,
+    "covered": {}
+   }
+  },
+  "phone-small/alles": {
+   "frame": {
+    "viewBox": "0 93 890 1024",
+    "mask": "linear-gradient(90deg, rgba(0, 0, 0, 0), rgb(0, 0, 0) 4%, rgb(0, 0, 0) 96%, rgba(0, 0, 0, 0)), linear-gradient(rgba(0, 0, 0, 0), rgb(0, 0, 0) 4%, rgb(0, 0, 0) 9",
+    "kept": {
+     "Frankrijk": 1,
+     "Zwitserland": 1,
+     "Oostenrijk": 1,
+     "Slovenië": 1,
+     "Kroatië": 1,
+     "Sardinië": 1,
+     "Sicilië": 1,
+     "label HONGARIJE": 1,
+     "label BOSNIË": 1,
+     "zee 1": 1,
+     "zee 2": 1,
+     "zee 3": 1,
+     "zee 4": 1,
+     "zee 5": 1,
+     "Noord-Afrika": 1
+    },
+    "outOfFrame": [
+     "label DUITSLAND",
+     "label TUNESIË"
+    ],
+    "visible": [
+     "Frankrijk",
+     "Kroatië",
+     "Noord-Afrika",
+     "Oostenrijk",
+     "Sardinië",
+     "Sicilië",
+     "Slovenië",
+     "Zwitserland",
+     "label BOSNIË",
+     "label HONGARIJE",
+     "zee 1",
+     "zee 2",
+     "zee 3",
+     "zee 4",
+     "zee 5"
+    ]
+   },
+   "lastRowClear": true,
+   "primaryTop": 216,
+   "primaryBottom": 268,
+   "viewport": 640,
+   "primaryVisible": true,
+   "covered": false,
+   "overlaps": [],
+   "small": [],
+   "clipped": [],
+   "horizontalOverflow": false,
+   "brokenWords": [],
+   "labels": {
+    "labels": [
+     "I T A L I Ë",
+     "DUITSLAND",
+     "TSJECHIË",
+     "SLOWAKIJE",
+     "HONGARIJE",
+     "BOSNIË",
+     "TUNESIË",
+     "▲"
+    ],
+    "hits": [],
+    "names": 56
+   },
+   "switchOcclusion": {
+    "rectOverlap": 0,
+    "covered": {}
+   }
+  }
+ },
+ "flows": {
+  "desktop": {
+   "mapGeometry": {
+    "same": 46,
+    "diff": [],
+    "total": 46
+   },
+   "defaultSelected": "islands",
+   "hitsForCurrent": [
+    "area-a",
+    "area-b"
+   ],
+   "lockedText": "Opent na Bergen",
+   "lockedPrimary": 0,
+   "reliefOn": "block",
+   "reliefOff": "none",
+   "donePrimary": "★ Goud nog eens",
+   "replays": [
+    "↻ Ontdekken",
+    "↻ Aanwijzen",
+    "↻ Namen schrijven"
+   ],
+   "replayStarted": {
+    "chapter": "city2",
+    "kind": "discover",
+    "mode": "route",
+    "v3Hidden": true
+   },
+   "backVia": "v3Btn v3NavItem",
+   "primaryLabelWithActive": "Ga verder · Ontdekken",
+   "questionBefore": "city-8",
+   "reisVerderSameQuestion": {
+    "id": "city-8",
+    "chapter": "city2",
+    "kind": "discover"
+   },
+   "sameQuestion": true,
+   "activeTab": [
+    "Reis:page",
+    "Oefenen:false",
+    "Reisboekje:null",
+    "⚙:null"
+   ],
+   "memoryStorage": true
+  },
+  "phone": {
+   "mapGeometry": {
+    "same": 46,
+    "diff": [],
+    "total": 46
+   },
+   "defaultSelected": "islands",
+   "hitsForCurrent": [
+    "area-a",
+    "area-b"
+   ],
+   "lockedText": "Opent na Bergen",
+   "lockedPrimary": 0,
+   "reliefOn": "block",
+   "reliefOff": "none",
+   "donePrimary": "★ Goud nog eens",
+   "replays": [
+    "↻ Ontdekken",
+    "↻ Aanwijzen",
+    "↻ Namen schrijven"
+   ],
+   "phonePanelInView": true,
+   "replayStarted": {
+    "chapter": "city2",
+    "kind": "discover",
+    "mode": "route",
+    "v3Hidden": true
+   },
+   "backVia": "v3Btn v3LesBack",
+   "primaryLabelWithActive": "Ga verder · Ontdekken",
+   "questionBefore": "city-11",
+   "reisVerderSameQuestion": {
+    "id": "city-11",
+    "chapter": "city2",
+    "kind": "discover"
+   },
+   "sameQuestion": true,
+   "activeTab": [
+    "Reis:page",
+    "Oefenen:false",
+    "Reisboekje:null",
+    "⚙:null"
+   ],
+   "memoryStorage": true
+  }
+ },
+ "errors": [],
+ "browser": "Chrome 156.0.8078.4",
+ "labelCheckControl": [
+  "B A R I ⊃ Bari"
+ ],
+ "switchSweep": {
+  "phone/city1/schoolkaart": {
+   "rectOverlap": 0,
+   "covered": {}
+  },
+  "phone/city1/reliëf": {
+   "rectOverlap": 0,
+   "covered": {}
+  },
+  "phone/city2/schoolkaart": {
+   "rectOverlap": 0,
+   "covered": {}
+  },
+  "phone/city2/reliëf": {
+   "rectOverlap": 0,
+   "covered": {}
+  },
+  "phone/city3/schoolkaart": {
+   "rectOverlap": 0,
+   "covered": {}
+  },
+  "phone/city3/reliëf": {
+   "rectOverlap": 0,
+   "covered": {}
+  },
+  "phone/city4/schoolkaart": {
+   "rectOverlap": 0,
+   "covered": {}
+  },
+  "phone/city4/reliëf": {
+   "rectOverlap": 0,
+   "covered": {}
+  },
+  "phone/islands/schoolkaart": {
+   "rectOverlap": 0,
+   "covered": {}
+  },
+  "phone/islands/reliëf": {
+   "rectOverlap": 0,
+   "covered": {}
+  },
+  "phone/mountains/schoolkaart": {
+   "rectOverlap": 0,
+   "covered": {}
+  },
+  "phone/mountains/reliëf": {
+   "rectOverlap": 0,
+   "covered": {}
+  },
+  "phone/volcanoes/schoolkaart": {
+   "rectOverlap": 0,
+   "covered": {}
+  },
+  "phone/volcanoes/reliëf": {
+   "rectOverlap": 0,
+   "covered": {}
+  },
+  "phone/regions/schoolkaart": {
+   "rectOverlap": 0,
+   "covered": {}
+  },
+  "phone/regions/reliëf": {
+   "rectOverlap": 0,
+   "covered": {}
+  },
+  "phone/countries/schoolkaart": {
+   "rectOverlap": 0,
+   "covered": {}
+  },
+  "phone/countries/reliëf": {
+   "rectOverlap": 0,
+   "covered": {}
+  },
+  "phone/seas/schoolkaart": {
+   "rectOverlap": 0,
+   "covered": {}
+  },
+  "phone/seas/reliëf": {
+   "rectOverlap": 0,
+   "covered": {}
+  },
+  "phone/rivers/schoolkaart": {
+   "rectOverlap": 0,
+   "covered": {}
+  },
+  "phone/rivers/reliëf": {
+   "rectOverlap": 0,
+   "covered": {}
+  },
+  "phone-small/city1/schoolkaart": {
+   "rectOverlap": 0,
+   "covered": {}
+  },
+  "phone-small/city1/reliëf": {
+   "rectOverlap": 0,
+   "covered": {}
+  },
+  "phone-small/city2/schoolkaart": {
+   "rectOverlap": 0,
+   "covered": {}
+  },
+  "phone-small/city2/reliëf": {
+   "rectOverlap": 0,
+   "covered": {}
+  },
+  "phone-small/city3/schoolkaart": {
+   "rectOverlap": 0,
+   "covered": {}
+  },
+  "phone-small/city3/reliëf": {
+   "rectOverlap": 0,
+   "covered": {}
+  },
+  "phone-small/city4/schoolkaart": {
+   "rectOverlap": 0,
+   "covered": {}
+  },
+  "phone-small/city4/reliëf": {
+   "rectOverlap": 0,
+   "covered": {}
+  },
+  "phone-small/islands/schoolkaart": {
+   "rectOverlap": 0,
+   "covered": {}
+  },
+  "phone-small/islands/reliëf": {
+   "rectOverlap": 0,
+   "covered": {}
+  },
+  "phone-small/mountains/schoolkaart": {
+   "rectOverlap": 0,
+   "covered": {}
+  },
+  "phone-small/mountains/reliëf": {
+   "rectOverlap": 0,
+   "covered": {}
+  },
+  "phone-small/volcanoes/schoolkaart": {
+   "rectOverlap": 0,
+   "covered": {}
+  },
+  "phone-small/volcanoes/reliëf": {
+   "rectOverlap": 0,
+   "covered": {}
+  },
+  "phone-small/regions/schoolkaart": {
+   "rectOverlap": 0,
+   "covered": {}
+  },
+  "phone-small/regions/reliëf": {
+   "rectOverlap": 0,
+   "covered": {}
+  },
+  "phone-small/countries/schoolkaart": {
+   "rectOverlap": 0,
+   "covered": {}
+  },
+  "phone-small/countries/reliëf": {
+   "rectOverlap": 0,
+   "covered": {}
+  },
+  "phone-small/seas/schoolkaart": {
+   "rectOverlap": 0,
+   "covered": {}
+  },
+  "phone-small/seas/reliëf": {
+   "rectOverlap": 0,
+   "covered": {}
+  },
+  "phone-small/rivers/schoolkaart": {
+   "rectOverlap": 0,
+   "covered": {}
+  },
+  "phone-small/rivers/reliëf": {
+   "rectOverlap": 0,
+   "covered": {}
+  },
+  "ipad-portrait/city1/schoolkaart": {
+   "rectOverlap": 7274.53125,
+   "covered": {}
+  },
+  "ipad-portrait/city1/reliëf": {
+   "rectOverlap": 7274.53125,
+   "covered": {}
+  },
+  "ipad-portrait/city2/schoolkaart": {
+   "rectOverlap": 7274.53125,
+   "covered": {}
+  },
+  "ipad-portrait/city2/reliëf": {
+   "rectOverlap": 7274.53125,
+   "covered": {}
+  },
+  "ipad-portrait/city3/schoolkaart": {
+   "rectOverlap": 7274.53125,
+   "covered": {}
+  },
+  "ipad-portrait/city3/reliëf": {
+   "rectOverlap": 7274.53125,
+   "covered": {}
+  },
+  "ipad-portrait/city4/schoolkaart": {
+   "rectOverlap": 7274.53125,
+   "covered": {}
+  },
+  "ipad-portrait/city4/reliëf": {
+   "rectOverlap": 7274.53125,
+   "covered": {}
+  },
+  "ipad-portrait/islands/schoolkaart": {
+   "rectOverlap": 7274.53125,
+   "covered": {}
+  },
+  "ipad-portrait/islands/reliëf": {
+   "rectOverlap": 7274.53125,
+   "covered": {}
+  },
+  "ipad-portrait/mountains/schoolkaart": {
+   "rectOverlap": 7274.53125,
+   "covered": {}
+  },
+  "ipad-portrait/mountains/reliëf": {
+   "rectOverlap": 7274.53125,
+   "covered": {}
+  },
+  "ipad-portrait/volcanoes/schoolkaart": {
+   "rectOverlap": 7274.53125,
+   "covered": {}
+  },
+  "ipad-portrait/volcanoes/reliëf": {
+   "rectOverlap": 7274.53125,
+   "covered": {}
+  },
+  "ipad-portrait/regions/schoolkaart": {
+   "rectOverlap": 7274.53125,
+   "covered": {}
+  },
+  "ipad-portrait/regions/reliëf": {
+   "rectOverlap": 7274.53125,
+   "covered": {}
+  },
+  "ipad-portrait/countries/schoolkaart": {
+   "rectOverlap": 7274.53125,
+   "covered": {}
+  },
+  "ipad-portrait/countries/reliëf": {
+   "rectOverlap": 7274.53125,
+   "covered": {}
+  },
+  "ipad-portrait/seas/schoolkaart": {
+   "rectOverlap": 7274.53125,
+   "covered": {}
+  },
+  "ipad-portrait/seas/reliëf": {
+   "rectOverlap": 7274.53125,
+   "covered": {}
+  },
+  "ipad-portrait/rivers/schoolkaart": {
+   "rectOverlap": 7274.53125,
+   "covered": {}
+  },
+  "ipad-portrait/rivers/reliëf": {
+   "rectOverlap": 7274.53125,
+   "covered": {}
+  }
+ },
+ "phoneSelectFocus": {
+  "active": "v3Title",
+  "text": "Hoofdstuk 2Steden 7–12",
+  "selected": "city2",
+  "ring": "solid",
+  "inView": true,
+  "nextTab": "★ Goud nog eens"
+ },
+ "theme": {
+  "viola": "rgb(91, 69, 224)",
+  "italia": "rgb(185, 80, 47)"
+ },
+ "keyboard": {
+  "order": [
+   "Nieuw profiel",
+   "Halte bezig",
+   "Haltes afgerond",
+   "Alles af",
+   "Italia",
+   "Viola",
+   "BG-01 Toscane",
+   "BG-02 Meer",
+   "BG-03 Kust",
+   "Naast elkaar: desktop + ",
+   "Italia + Viola",
+   "Reis",
+   "Oefenen",
+   "Beloningen",
+   "Instellingen",
+   "city1",
+   "city2",
+   "city3",
+   "city4",
+   "islands",
+   "mountains",
+   "volcanoes",
+   "regions",
+   "countries",
+   "seas",
+   "rivers"
+  ],
+  "enterSelects": "true",
+  "focusRing": "solid 3px"
+ },
+ "reducedMotion": "0s, 0s",
+ "summary": {
+  "primaryAboveFoldAll": true,
+  "primaryBelowFold": [],
+  "overlaps": {},
+  "clipped": {},
+  "brokenWords": {},
+  "smallTargets": {},
+  "horizontalOverflow": [],
+  "lastRowHiddenByTabBar": [],
+  "mapFrameShort": {},
+  "labelsWithLearningName": {},
+  "labelCheckCatchesControl": true,
+  "contextLabels": [
+   "BOSNIË",
+   "DUITSLAND",
+   "HONGARIJE",
+   "I T A L I Ë",
+   "SLOWAKIJE",
+   "TSJECHIË",
+   "TUNESIË",
+   "▲"
+  ],
+  "switchCoversPlace": {},
+  "phoneSelectFocusOnTitle": true,
+  "errors": 0
+ }
+}

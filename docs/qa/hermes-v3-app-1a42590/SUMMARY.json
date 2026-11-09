@@ -1,0 +1,95 @@
+{
+  "target": "1a42590de5525bd4d9fb1bcd02bf384e4437b1c2",
+  "previewSHA256": "23dced34e7d9079cd59195532721f39b1bc6c1f00032ce6c4a41bb4ea619b556",
+  "previewBytes": 50199445,
+  "indexSHA256": "3aced3c31259011b0af2947c78f71965cb4beb2e88c69d1663e61792b0304f5a",
+  "verdict": "REWORK",
+  "points": [
+    {
+      "point": 1,
+      "chromium": "PASS",
+      "webkit": "PASS",
+      "scope": "Requested criteria"
+    },
+    {
+      "point": 2,
+      "chromium": "REWORK",
+      "webkit": "REWORK",
+      "scope": "Requested criteria"
+    },
+    {
+      "point": 3,
+      "chromium": "PASS",
+      "webkit": "PASS",
+      "scope": "Requested criteria"
+    },
+    {
+      "point": 4,
+      "chromium": "PASS",
+      "webkit": "PASS",
+      "scope": "Requested criteria"
+    },
+    {
+      "point": 5,
+      "chromium": "PASS",
+      "webkit": "PASS",
+      "scope": "Requested criteria"
+    },
+    {
+      "point": 6,
+      "chromium": "PASS",
+      "webkit": "PASS",
+      "scope": "Mac host measurements only; no physical iPad approval"
+    }
+  ],
+  "finding": {
+    "id": "GE01-K01",
+    "condition": "prefers-reduced-motion:reduce, eighth correct answer submitted with Enter",
+    "actual": "Same Enter synthesizes click on newly focused Verder and closes pizzaCelebration",
+    "control": "Clicking Controleer at same actually earned threshold leaves dialog open",
+    "engines": [
+      "Chromium156.0.8078.4",
+      "WebKit27.2"
+    ],
+    "parentReproduced": true,
+    "currencyLoss": false,
+    "duplicateCurrency": false,
+    "newV3RegressionVsV2Claimed": false
+  },
+  "reisIndependentMatrix": {
+    "cases": 132,
+    "unique": 132,
+    "labelFailures": 0,
+    "paintOcclusionFailures": 0,
+    "negativeLabel": "B \u00c1 R I caught in both engines",
+    "focusCases": 4,
+    "frameFollowup": 24
+  },
+  "gameplay": {
+    "freshFixture": "#nieuw zero initial progress; actual UI earned12good,1pizza4slices,1stamp eachengine",
+    "maintainedFixture": "#bezig imports1pizza6slices; only subsequent UI actions earned",
+    "resume": "Samequestion/mode/draft,selection9-12backward; input autofocus notclaimed",
+    "noDuplicate": "In-session earned replay/reopening/navigation confirmed; persistent actual-save reload not established in memory-only hash preview"
+  },
+  "maintained": {
+    "reisChromium": "Executed exit0; green checks",
+    "reisWebKit": "Executed exit0; original checks include phoneTab and SVGscrollIntoView-frame harness failures, retained unchanged and independently diagnosed",
+    "lesBothEngines": "Executed all5viewports +reducedmotion; original checks green",
+    "stijlbeeldSuite": "Read, not executed as full original suite; parent independent equivalent scoped probes forrelief/assets/performance"
+  },
+  "gates": "npmci+lint+test+build GATE_EXIT0",
+  "artPin": "05ab1d0808aa20a18b99fea81950a6284539bf03",
+  "artExports": 23,
+  "artEmbedded": 17,
+  "reliefLayers": 4,
+  "newerHeadInspected": "89404f3491854d3c6004ab541079c39bef8bf0ec docs-only; not executed",
+  "notTested": [
+    "Physical iPad Safari",
+    "VoiceOver",
+    "OSIME/keyboard",
+    "Long-term memory plateau",
+    "Persistent actual-earned save reload in this memory-only demo"
+  ],
+  "candidateModified": false,
+  "merge": false
+}

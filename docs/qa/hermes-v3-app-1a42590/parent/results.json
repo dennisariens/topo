@@ -1,0 +1,1830 @@
+{
+  "scope": "Independent file:// performance, runtime art and relief probes; demo fixtures explicitly used for repeatable measurement, no earned-progress claim",
+  "host": "17179869184\nMac16,10\nApple M4",
+  "date": "2026-11-09T18:15:43.321Z",
+  "measurementLimits": [
+    "Fresh browser is not cold OS disk cache",
+    "Other independent QA can contend for host resources",
+    "RSS summed across own browser descendants double-counts shared pages; not PSS",
+    "WebKit JS heap API unavailable; use process RSS, not an invented heap value",
+    "No physical iPad/Retina/Safari/VoiceOver performance approval"
+  ],
+  "runs": [
+    {
+      "engine": "chromium",
+      "version": "156.0.8078.4",
+      "trial": 0,
+      "phase": "fresh browser; online with outbound HTTP blocked+observed",
+      "loadWallMs": 891.633708,
+      "readyWallMs": 1642.830042,
+      "settledWallMs": 2551.945625,
+      "baseRSS": {
+        "rssKiBSum": 248400,
+        "processes": [
+          {
+            "pid": 12400,
+            "ppid": 12378,
+            "rssKiB": 79664,
+            "command": "/Users/dennisariens/Library/Caches/ms-playwright/chromium_headless_shell-1248/chrome-headless-shell-mac-arm64/chrome-headless-shell"
+          },
+          {
+            "pid": 12401,
+            "ppid": 12400,
+            "rssKiB": 56896,
+            "command": "/Users/dennisariens/Library/Caches/ms-playwright/chromium_headless_shell-1248/chrome-headless-shell-mac-arm64/chrome-headless-shell"
+          },
+          {
+            "pid": 12402,
+            "ppid": 12400,
+            "rssKiB": 38256,
+            "command": "/Users/dennisariens/Library/Caches/ms-playwright/chromium_headless_shell-1248/chrome-headless-shell-mac-arm64/chrome-headless-shell"
+          },
+          {
+            "pid": 12403,
+            "ppid": 12400,
+            "rssKiB": 71872,
+            "command": "/Users/dennisariens/Library/Caches/ms-playwright/chromium_headless_shell-1248/chrome-headless-shell-mac-arm64/chrome-headless-shell"
+          },
+          {
+            "pid": 12425,
+            "ppid": 12378,
+            "rssKiB": 1712,
+            "command": "ps"
+          }
+        ]
+      },
+      "readyRSS": {
+        "rssKiBSum": 761392,
+        "processes": [
+          {
+            "pid": 12400,
+            "ppid": 12378,
+            "rssKiB": 83968,
+            "command": "/Users/dennisariens/Library/Caches/ms-playwright/chromium_headless_shell-1248/chrome-headless-shell-mac-arm64/chrome-headless-shell"
+          },
+          {
+            "pid": 12401,
+            "ppid": 12400,
+            "rssKiB": 74640,
+            "command": "/Users/dennisariens/Library/Caches/ms-playwright/chromium_headless_shell-1248/chrome-headless-shell-mac-arm64/chrome-headless-shell"
+          },
+          {
+            "pid": 12402,
+            "ppid": 12400,
+            "rssKiB": 36352,
+            "command": "/Users/dennisariens/Library/Caches/ms-playwright/chromium_headless_shell-1248/chrome-headless-shell-mac-arm64/chrome-headless-shell"
+          },
+          {
+            "pid": 12403,
+            "ppid": 12400,
+            "rssKiB": 564704,
+            "command": "/Users/dennisariens/Library/Caches/ms-playwright/chromium_headless_shell-1248/chrome-headless-shell-mac-arm64/chrome-headless-shell"
+          },
+          {
+            "pid": 12568,
+            "ppid": 12378,
+            "rssKiB": 1728,
+            "command": "ps"
+          }
+        ]
+      },
+      "navigation": {
+        "navigation": [
+          {
+            "startTime": 0,
+            "domContentLoadedEventEnd": 875.1000000014901,
+            "loadEventEnd": 888.3999999985099,
+            "duration": 888.3999999985099
+          }
+        ],
+        "paint": [
+          {
+            "name": "first-paint",
+            "startTime": 244
+          },
+          {
+            "name": "first-contentful-paint",
+            "startTime": 244
+          }
+        ],
+        "jsMemory": {
+          "used": 139000000,
+          "total": 139000000,
+          "limit": 3760000000
+        },
+        "online": true,
+        "images": 40,
+        "decodedImages": 39
+      },
+      "chromiumMetrics": [
+        {
+          "name": "Documents",
+          "value": 7
+        },
+        {
+          "name": "Nodes",
+          "value": 3055
+        },
+        {
+          "name": "LayoutDuration",
+          "value": 0.089566
+        },
+        {
+          "name": "ScriptDuration",
+          "value": 0.1473
+        },
+        {
+          "name": "TaskDuration",
+          "value": 1.055352
+        },
+        {
+          "name": "JSHeapUsedSize",
+          "value": 49881944
+        },
+        {
+          "name": "JSHeapTotalSize",
+          "value": 51789824
+        }
+      ],
+      "runtime": {
+        "art": {
+          "art.bg.bg01": {
+            "sha256": "c07c938d990250fdcd3a370b90f74c7cb8d9a422f4b720dbeb5e93850309b9c0",
+            "bytes": 433106
+          },
+          "art.bg.bg02": {
+            "sha256": "939934b56be3406fa5a48717b900acea521f6f45674cce82b09993ca3630c660",
+            "bytes": 321346
+          },
+          "art.bg.bg03": {
+            "sha256": "b4a423ef64fdb58773aa99659ec23b58283b1cf96763f591d41d09eb6619f20b",
+            "bytes": 452702
+          },
+          "art.portrait": {
+            "sha256": "97fe052f40fea2ec7c07a2935d8bb2f544777b4e3893c1a509ab9bc0c1a492e2",
+            "bytes": 53086
+          },
+          "art.vespa": {
+            "sha256": "41b49a4f69162062d0af7df0f31eb775c1defea72eb1448e86e6332bf975c84e",
+            "bytes": 88680
+          },
+          "art.icons.slice": {
+            "sha256": "1b1fa303abc5775133b00d76f9b2d4c6945f759c12caf75d50b492bdb96ad550",
+            "bytes": 4658
+          },
+          "art.icons.pizza": {
+            "sha256": "5d3dbef4e73ed6d3f3e3edea75a29ad21100f9f9ccfacaa52715c5eebe6492d9",
+            "bytes": 5694
+          },
+          "art.icons.vespa": {
+            "sha256": "0a060a0cc77a46487b3eac060653383e7feb883f6e4736b9512cf6086af8e869",
+            "bytes": 6026
+          },
+          "art.icons.gold": {
+            "sha256": "ee806f0938efbe93cf5b41817f81f5b9357acdf049288bde9cd223fcbd18a865",
+            "bytes": 5318
+          },
+          "art.icons.stamp": {
+            "sha256": "a578ddedb395fc9fc97c672923ed6f6f681628016e1c1e4c014019385a14144a",
+            "bytes": 7116
+          },
+          "art.icons.postcard": {
+            "sha256": "b4abe1371d848c583af9a843edaf1b2450e21571a9c8ab576b9a3dd78b2ef158",
+            "bytes": 6638
+          },
+          "scenes.city1.mini": {
+            "sha256": "26865876290044697872bb748d2b55e09fc826989a6fc37e190914147bbda03c",
+            "bytes": 33352
+          },
+          "scenes.city1.kop": {
+            "sha256": "fc30759340d0a54a2b63e29adcb4a4f4b20078021941410faf0f564793baf048",
+            "bytes": 402776
+          },
+          "scenes.islands.mini": {
+            "sha256": "2b027de93af0155f076f3fc5a68be460807a668496c5dcc2464668718a4a3b9d",
+            "bytes": 24694
+          },
+          "scenes.islands.kop": {
+            "sha256": "8b2d530acee7c727479cf9593e55e1b03bbadbdf85971a631cce2c1097ee9093",
+            "bytes": 348408
+          },
+          "scenes.mountains.mini": {
+            "sha256": "88d66acc264653b3f4354455b5c2887a0027b0da05a66e73758fc7ddb8f40171",
+            "bytes": 26542
+          },
+          "scenes.mountains.kop": {
+            "sha256": "ea8841762b495239c1ec89a5759c03ec09c002af3a5c550c1370205ea6ef3fce",
+            "bytes": 423450
+          },
+          "scenes.volcanoes.mini": {
+            "sha256": "21f4566b9d32909526c2f542bc6b0e12a2d4beb47b32ee1c7194644de68b287d",
+            "bytes": 19894
+          },
+          "scenes.volcanoes.kop": {
+            "sha256": "80623ad790d3f8c32a39276e84106bda9ccd37d57f79d3268091f0206466b654",
+            "bytes": 354542
+          },
+          "scenes.regions.mini": {
+            "sha256": "482349912963d3cf50a775d06ec70c892a42a3cbda29fa066464911d73176b45",
+            "bytes": 36784
+          },
+          "scenes.regions.kop": {
+            "sha256": "6bd74e9cdc1388172c119b02d32e512862ae08c40b588f834d53efd98cdcea7b",
+            "bytes": 441230
+          },
+          "scenes.countries.mini": {
+            "sha256": "3f4ce7e6caa69edbc7fd9a6ed345c570a4e22bf262bc6750a3fd5065ee64bd89",
+            "bytes": 28270
+          },
+          "scenes.countries.kop": {
+            "sha256": "10c798c0e9d679987f4b446e412c05f6b80fc7a57f26ab709ac099414e39421d",
+            "bytes": 403120
+          },
+          "scenes.seas.mini": {
+            "sha256": "c0147c714afc3a07cc744cbbb6b1cb3f816e0c728835dbdb66711bd4e3929a60",
+            "bytes": 29672
+          },
+          "scenes.seas.kop": {
+            "sha256": "fb3a1c781a099eebbb078a35d82a9666e69475eb528f3e505037e7e7638454d1",
+            "bytes": 397262
+          },
+          "scenes.rivers.mini": {
+            "sha256": "8f1517c7d5a84a598dac8c14d0351c06bd972048d9835602a6df42f7e6357f5b",
+            "bytes": 32446
+          },
+          "scenes.rivers.kop": {
+            "sha256": "a69ae30fda1271431e5d1ffe7145249f0c25a048074d185a1a81fbad2f3811e1",
+            "bytes": 383964
+          },
+          "scenes.city2.mini": {
+            "sha256": "518ab33ebc0b6902850ea46bdf3a57cc7556351ce40be2fc235e9c3eb439c146",
+            "bytes": 34598
+          },
+          "scenes.city2.kop": {
+            "sha256": "5a01badbf0f26fe28109e999c592615d882eb704e6bef809d40e70436b4f6465",
+            "bytes": 336364
+          },
+          "scenes.city3.mini": {
+            "sha256": "927c80380ed1571cdb4cc8bef8704b6a3e6b01e58ad68dc5bc2617ef4f7a8244",
+            "bytes": 28758
+          },
+          "scenes.city3.kop": {
+            "sha256": "719344db49bfd156f6b22904b1ff31dd2e2899ac133b0c303fdcf85b165dae02",
+            "bytes": 311914
+          },
+          "scenes.city4.mini": {
+            "sha256": "f62e812526d488d47740ae87ca5b38a04291729360cae764886453336a954778",
+            "bytes": 27984
+          },
+          "scenes.city4.kop": {
+            "sha256": "d9662509ce537fa8fcfb0485acc5478ff8ddc632b7768dbaf192269148a12668",
+            "bytes": 275572
+          }
+        },
+        "layers": {
+          "terrain": {
+            "sha256": "440d631c8ff5777b13a2583870339caa8255c10a0ddcaaa3edd087b8fc524ab5",
+            "bytes": 308232,
+            "x": "0",
+            "y": "0",
+            "width": "890",
+            "height": "1235",
+            "display": "block"
+          },
+          "sea": {
+            "sha256": "daded673fe77a75f631b40251c09ef158b1c541b037f32c8d75ed4141b4409d5",
+            "bytes": 245696,
+            "x": "0",
+            "y": "0",
+            "width": "890",
+            "height": "1235",
+            "display": "block"
+          },
+          "shadow": {
+            "sha256": "e2fe511cc8c72fb8bf6a1e67e5041e64c99d3f76da665f0e3ee3e5e2428c0aec",
+            "bytes": 119588,
+            "x": "0",
+            "y": "0",
+            "width": "890",
+            "height": "1235",
+            "display": "block"
+          },
+          "coast": {
+            "sha256": "e685ba188bbe1e434a0071c930f11d1ac7c6394f64300d53dda737ab63b2bcaf",
+            "bytes": 50682,
+            "x": "0",
+            "y": "0",
+            "width": "890",
+            "height": "1235",
+            "display": "block"
+          }
+        },
+        "order": [
+          "v3RSea",
+          "v3CoastGlow",
+          "v3RShadow",
+          "v3LandBase",
+          "v3m-seaLayer",
+          "atlasTerrain",
+          "v3RCoast",
+          "v3m-landLayer"
+        ],
+        "geometry": [
+          {
+            "id": "water-A",
+            "index": 0,
+            "same": true,
+            "sameInternalTransforms": true
+          },
+          {
+            "id": "water-B",
+            "index": 0,
+            "same": true,
+            "sameInternalTransforms": true
+          },
+          {
+            "id": "water-C",
+            "index": 0,
+            "same": true,
+            "sameInternalTransforms": true
+          },
+          {
+            "id": "water-D",
+            "index": 0,
+            "same": true,
+            "sameInternalTransforms": true
+          },
+          {
+            "id": "water-E",
+            "index": 0,
+            "same": true,
+            "sameInternalTransforms": true
+          },
+          {
+            "id": "area-i",
+            "index": 0,
+            "same": true,
+            "sameInternalTransforms": true
+          },
+          {
+            "id": "area-j",
+            "index": 0,
+            "same": true,
+            "sameInternalTransforms": true
+          },
+          {
+            "id": "area-k",
+            "index": 0,
+            "same": true,
+            "sameInternalTransforms": true
+          },
+          {
+            "id": "area-l",
+            "index": 0,
+            "same": true,
+            "sameInternalTransforms": true
+          },
+          {
+            "id": "area-m",
+            "index": 0,
+            "same": true,
+            "sameInternalTransforms": true
+          },
+          {
+            "id": "area-a",
+            "index": 0,
+            "same": true,
+            "sameInternalTransforms": true
+          },
+          {
+            "id": "area-b",
+            "index": 0,
+            "same": true,
+            "sameInternalTransforms": true
+          },
+          {
+            "id": "area-c",
+            "index": 0,
+            "same": true,
+            "sameInternalTransforms": true
+          },
+          {
+            "id": "area-d",
+            "index": 0,
+            "same": true,
+            "sameInternalTransforms": true
+          },
+          {
+            "id": "area-g",
+            "index": 0,
+            "same": true,
+            "sameInternalTransforms": true
+          },
+          {
+            "id": "area-h",
+            "index": 0,
+            "same": true,
+            "sameInternalTransforms": true
+          },
+          {
+            "id": "water-F",
+            "index": 0,
+            "same": true,
+            "sameInternalTransforms": true
+          },
+          {
+            "id": "water-G",
+            "index": 0,
+            "same": true,
+            "sameInternalTransforms": true
+          },
+          {
+            "id": "area-e",
+            "index": 0,
+            "same": true,
+            "sameInternalTransforms": true
+          },
+          {
+            "id": "area-f",
+            "index": 0,
+            "same": true,
+            "sameInternalTransforms": true
+          },
+          {
+            "id": "area-n",
+            "index": 0,
+            "same": true,
+            "sameInternalTransforms": true
+          },
+          {
+            "id": "area-o",
+            "index": 0,
+            "same": true,
+            "sameInternalTransforms": true
+          },
+          {
+            "id": "city-1",
+            "index": 0,
+            "same": true,
+            "sameInternalTransforms": true
+          },
+          {
+            "id": "city-2",
+            "index": 0,
+            "same": true,
+            "sameInternalTransforms": true
+          },
+          {
+            "id": "city-3",
+            "index": 0,
+            "same": true,
+            "sameInternalTransforms": true
+          },
+          {
+            "id": "city-4",
+            "index": 0,
+            "same": true,
+            "sameInternalTransforms": true
+          },
+          {
+            "id": "city-5",
+            "index": 0,
+            "same": true,
+            "sameInternalTransforms": true
+          },
+          {
+            "id": "city-6",
+            "index": 0,
+            "same": true,
+            "sameInternalTransforms": true
+          },
+          {
+            "id": "city-7",
+            "index": 0,
+            "same": true,
+            "sameInternalTransforms": true
+          },
+          {
+            "id": "city-8",
+            "index": 0,
+            "same": true,
+            "sameInternalTransforms": true
+          },
+          {
+            "id": "city-9",
+            "index": 0,
+            "same": true,
+            "sameInternalTransforms": true
+          },
+          {
+            "id": "city-10",
+            "index": 0,
+            "same": true,
+            "sameInternalTransforms": true
+          },
+          {
+            "id": "city-11",
+            "index": 0,
+            "same": true,
+            "sameInternalTransforms": true
+          },
+          {
+            "id": "city-12",
+            "index": 0,
+            "same": true,
+            "sameInternalTransforms": true
+          },
+          {
+            "id": "city-13",
+            "index": 0,
+            "same": true,
+            "sameInternalTransforms": true
+          },
+          {
+            "id": "city-14",
+            "index": 0,
+            "same": true,
+            "sameInternalTransforms": true
+          },
+          {
+            "id": "city-15",
+            "index": 0,
+            "same": true,
+            "sameInternalTransforms": true
+          },
+          {
+            "id": "city-16",
+            "index": 0,
+            "same": true,
+            "sameInternalTransforms": true
+          },
+          {
+            "id": "city-17",
+            "index": 0,
+            "same": true,
+            "sameInternalTransforms": true
+          },
+          {
+            "id": "city-18",
+            "index": 0,
+            "same": true,
+            "sameInternalTransforms": true
+          },
+          {
+            "id": "city-19",
+            "index": 0,
+            "same": true,
+            "sameInternalTransforms": true
+          },
+          {
+            "id": "city-20",
+            "index": 0,
+            "same": true,
+            "sameInternalTransforms": true
+          },
+          {
+            "id": "city-21",
+            "index": 0,
+            "same": true,
+            "sameInternalTransforms": true
+          },
+          {
+            "id": "city-22",
+            "index": 0,
+            "same": true,
+            "sameInternalTransforms": true
+          },
+          {
+            "id": "city-23",
+            "index": 0,
+            "same": true,
+            "sameInternalTransforms": true
+          },
+          {
+            "id": "area-n",
+            "index": 1,
+            "same": true,
+            "sameInternalTransforms": true
+          }
+        ],
+        "decoration": [
+          {
+            "class": "v3R v3RSea",
+            "ariaHidden": "true",
+            "pointer": "none",
+            "targets": 0,
+            "ownTarget": false
+          },
+          {
+            "class": "v3CoastGlow",
+            "ariaHidden": "true",
+            "pointer": "none",
+            "targets": 0,
+            "ownTarget": false
+          },
+          {
+            "class": "v3R v3RShadow",
+            "ariaHidden": "true",
+            "pointer": "none",
+            "targets": 0,
+            "ownTarget": false
+          },
+          {
+            "class": "v3LandBase",
+            "ariaHidden": "true",
+            "pointer": "none",
+            "targets": 0,
+            "ownTarget": false
+          },
+          {
+            "class": "v3R v3RCoast",
+            "ariaHidden": "true",
+            "pointer": "none",
+            "targets": 0,
+            "ownTarget": false
+          }
+        ],
+        "cloneHidden": "true",
+        "cloneFocusable": "false",
+        "cloneTabStops": 0,
+        "layerCopies": 38,
+        "canonicalLandShapes": 19
+      },
+      "reliefOff": {
+        "mode": "off",
+        "layers": [
+          {
+            "class": "v3R v3RSea",
+            "display": "none"
+          },
+          {
+            "class": "v3CoastGlow",
+            "display": "none"
+          },
+          {
+            "class": "v3R v3RShadow",
+            "display": "none"
+          },
+          {
+            "class": "v3LandBase",
+            "display": "none"
+          },
+          {
+            "class": "atlasTerrain",
+            "display": "none"
+          },
+          {
+            "class": "v3R v3RCoast",
+            "display": "none"
+          }
+        ],
+        "targets": 46
+      },
+      "afterProbeRSS": {
+        "rssKiBSum": 443648,
+        "processes": [
+          {
+            "pid": 12400,
+            "ppid": 12378,
+            "rssKiB": 86064,
+            "command": "/Users/dennisariens/Library/Caches/ms-playwright/chromium_headless_shell-1248/chrome-headless-shell-mac-arm64/chrome-headless-shell"
+          },
+          {
+            "pid": 12401,
+            "ppid": 12400,
+            "rssKiB": 70608,
+            "command": "/Users/dennisariens/Library/Caches/ms-playwright/chromium_headless_shell-1248/chrome-headless-shell-mac-arm64/chrome-headless-shell"
+          },
+          {
+            "pid": 12402,
+            "ppid": 12400,
+            "rssKiB": 34224,
+            "command": "/Users/dennisariens/Library/Caches/ms-playwright/chromium_headless_shell-1248/chrome-headless-shell-mac-arm64/chrome-headless-shell"
+          },
+          {
+            "pid": 12403,
+            "ppid": 12400,
+            "rssKiB": 251024,
+            "command": "/Users/dennisariens/Library/Caches/ms-playwright/chromium_headless_shell-1248/chrome-headless-shell-mac-arm64/chrome-headless-shell"
+          },
+          {
+            "pid": 12592,
+            "ppid": 12378,
+            "rssKiB": 1728,
+            "command": "ps"
+          }
+        ]
+      },
+      "validation": {
+        "geometry46": true,
+        "layersMatch": true,
+        "decorationOnly": true,
+        "copyCount": true,
+        "offHidden": true
+      }
+    },
+    {
+      "engine": "chromium",
+      "version": "156.0.8078.4",
+      "trial": 1,
+      "phase": "same-browser offline file reload",
+      "loadWallMs": 903.8917080000001,
+      "readyWallMs": 1041.9503749999994,
+      "settledWallMs": 2461.9574169999996,
+      "baseRSS": {
+        "rssKiBSum": 248400,
+        "processes": [
+          {
+            "pid": 12400,
+            "ppid": 12378,
+            "rssKiB": 79664,
+            "command": "/Users/dennisariens/Library/Caches/ms-playwright/chromium_headless_shell-1248/chrome-headless-shell-mac-arm64/chrome-headless-shell"
+          },
+          {
+            "pid": 12401,
+            "ppid": 12400,
+            "rssKiB": 56896,
+            "command": "/Users/dennisariens/Library/Caches/ms-playwright/chromium_headless_shell-1248/chrome-headless-shell-mac-arm64/chrome-headless-shell"
+          },
+          {
+            "pid": 12402,
+            "ppid": 12400,
+            "rssKiB": 38256,
+            "command": "/Users/dennisariens/Library/Caches/ms-playwright/chromium_headless_shell-1248/chrome-headless-shell-mac-arm64/chrome-headless-shell"
+          },
+          {
+            "pid": 12403,
+            "ppid": 12400,
+            "rssKiB": 71872,
+            "command": "/Users/dennisariens/Library/Caches/ms-playwright/chromium_headless_shell-1248/chrome-headless-shell-mac-arm64/chrome-headless-shell"
+          },
+          {
+            "pid": 12425,
+            "ppid": 12378,
+            "rssKiB": 1712,
+            "command": "ps"
+          }
+        ]
+      },
+      "readyRSS": {
+        "rssKiBSum": 959872,
+        "processes": [
+          {
+            "pid": 12400,
+            "ppid": 12378,
+            "rssKiB": 92128,
+            "command": "/Users/dennisariens/Library/Caches/ms-playwright/chromium_headless_shell-1248/chrome-headless-shell-mac-arm64/chrome-headless-shell"
+          },
+          {
+            "pid": 12401,
+            "ppid": 12400,
+            "rssKiB": 73984,
+            "command": "/Users/dennisariens/Library/Caches/ms-playwright/chromium_headless_shell-1248/chrome-headless-shell-mac-arm64/chrome-headless-shell"
+          },
+          {
+            "pid": 12402,
+            "ppid": 12400,
+            "rssKiB": 35760,
+            "command": "/Users/dennisariens/Library/Caches/ms-playwright/chromium_headless_shell-1248/chrome-headless-shell-mac-arm64/chrome-headless-shell"
+          },
+          {
+            "pid": 12403,
+            "ppid": 12400,
+            "rssKiB": 756288,
+            "command": "/Users/dennisariens/Library/Caches/ms-playwright/chromium_headless_shell-1248/chrome-headless-shell-mac-arm64/chrome-headless-shell"
+          },
+          {
+            "pid": 12614,
+            "ppid": 12378,
+            "rssKiB": 1712,
+            "command": "ps"
+          }
+        ]
+      },
+      "navigation": {
+        "navigation": [
+          {
+            "startTime": 0,
+            "domContentLoadedEventEnd": 852.0999999940395,
+            "loadEventEnd": 901.0999999940395,
+            "duration": 901.0999999940395
+          }
+        ],
+        "paint": [
+          {
+            "name": "first-paint",
+            "startTime": 128
+          },
+          {
+            "name": "first-contentful-paint",
+            "startTime": 128
+          }
+        ],
+        "jsMemory": {
+          "used": 139000000,
+          "total": 139000000,
+          "limit": 3760000000
+        },
+        "online": true,
+        "images": 40,
+        "decodedImages": 39
+      },
+      "chromiumMetrics": [
+        {
+          "name": "Documents",
+          "value": 5
+        },
+        {
+          "name": "Nodes",
+          "value": 2679
+        },
+        {
+          "name": "LayoutDuration",
+          "value": 0.016418
+        },
+        {
+          "name": "ScriptDuration",
+          "value": 0.156059
+        },
+        {
+          "name": "TaskDuration",
+          "value": 1.137319
+        },
+        {
+          "name": "JSHeapUsedSize",
+          "value": 13217680
+        },
+        {
+          "name": "JSHeapTotalSize",
+          "value": 45531136
+        }
+      ]
+    },
+    {
+      "engine": "chromium",
+      "version": "156.0.8078.4",
+      "trial": 2,
+      "phase": "same-browser offline file reload",
+      "loadWallMs": 891.4362920000003,
+      "readyWallMs": 1547.309541999999,
+      "settledWallMs": 2373.7670419999995,
+      "baseRSS": {
+        "rssKiBSum": 248400,
+        "processes": [
+          {
+            "pid": 12400,
+            "ppid": 12378,
+            "rssKiB": 79664,
+            "command": "/Users/dennisariens/Library/Caches/ms-playwright/chromium_headless_shell-1248/chrome-headless-shell-mac-arm64/chrome-headless-shell"
+          },
+          {
+            "pid": 12401,
+            "ppid": 12400,
+            "rssKiB": 56896,
+            "command": "/Users/dennisariens/Library/Caches/ms-playwright/chromium_headless_shell-1248/chrome-headless-shell-mac-arm64/chrome-headless-shell"
+          },
+          {
+            "pid": 12402,
+            "ppid": 12400,
+            "rssKiB": 38256,
+            "command": "/Users/dennisariens/Library/Caches/ms-playwright/chromium_headless_shell-1248/chrome-headless-shell-mac-arm64/chrome-headless-shell"
+          },
+          {
+            "pid": 12403,
+            "ppid": 12400,
+            "rssKiB": 71872,
+            "command": "/Users/dennisariens/Library/Caches/ms-playwright/chromium_headless_shell-1248/chrome-headless-shell-mac-arm64/chrome-headless-shell"
+          },
+          {
+            "pid": 12425,
+            "ppid": 12378,
+            "rssKiB": 1712,
+            "command": "ps"
+          }
+        ]
+      },
+      "readyRSS": {
+        "rssKiBSum": 1047184,
+        "processes": [
+          {
+            "pid": 12400,
+            "ppid": 12378,
+            "rssKiB": 89968,
+            "command": "/Users/dennisariens/Library/Caches/ms-playwright/chromium_headless_shell-1248/chrome-headless-shell-mac-arm64/chrome-headless-shell"
+          },
+          {
+            "pid": 12401,
+            "ppid": 12400,
+            "rssKiB": 74832,
+            "command": "/Users/dennisariens/Library/Caches/ms-playwright/chromium_headless_shell-1248/chrome-headless-shell-mac-arm64/chrome-headless-shell"
+          },
+          {
+            "pid": 12402,
+            "ppid": 12400,
+            "rssKiB": 35632,
+            "command": "/Users/dennisariens/Library/Caches/ms-playwright/chromium_headless_shell-1248/chrome-headless-shell-mac-arm64/chrome-headless-shell"
+          },
+          {
+            "pid": 12403,
+            "ppid": 12400,
+            "rssKiB": 845040,
+            "command": "/Users/dennisariens/Library/Caches/ms-playwright/chromium_headless_shell-1248/chrome-headless-shell-mac-arm64/chrome-headless-shell"
+          },
+          {
+            "pid": 12644,
+            "ppid": 12378,
+            "rssKiB": 1712,
+            "command": "ps"
+          }
+        ]
+      },
+      "navigation": {
+        "navigation": [
+          {
+            "startTime": 0,
+            "domContentLoadedEventEnd": 875.0999999940395,
+            "loadEventEnd": 888.7999999970198,
+            "duration": 888.7999999970198
+          }
+        ],
+        "paint": [
+          {
+            "name": "first-paint",
+            "startTime": 136
+          },
+          {
+            "name": "first-contentful-paint",
+            "startTime": 136
+          }
+        ],
+        "jsMemory": {
+          "used": 139000000,
+          "total": 139000000,
+          "limit": 3760000000
+        },
+        "online": true,
+        "images": 40,
+        "decodedImages": 39
+      },
+      "chromiumMetrics": [
+        {
+          "name": "Documents",
+          "value": 5
+        },
+        {
+          "name": "Nodes",
+          "value": 2662
+        },
+        {
+          "name": "LayoutDuration",
+          "value": 0.012843
+        },
+        {
+          "name": "ScriptDuration",
+          "value": 0.101307
+        },
+        {
+          "name": "TaskDuration",
+          "value": 1.09133
+        },
+        {
+          "name": "JSHeapUsedSize",
+          "value": 13644932
+        },
+        {
+          "name": "JSHeapTotalSize",
+          "value": 44367872
+        }
+      ]
+    },
+    {
+      "engine": "webkit",
+      "version": "27.2",
+      "trial": 0,
+      "phase": "fresh browser; online with outbound HTTP blocked+observed",
+      "loadWallMs": 1310.5488330000007,
+      "readyWallMs": 1454.8828330000015,
+      "settledWallMs": 2005.4310420000002,
+      "baseRSS": {
+        "rssKiBSum": 122032,
+        "processes": [
+          {
+            "pid": 12645,
+            "ppid": 12378,
+            "rssKiB": 2080,
+            "command": "bash"
+          },
+          {
+            "pid": 12651,
+            "ppid": 12645,
+            "rssKiB": 118240,
+            "command": "/Users/dennisariens/Library/Caches/ms-playwright/webkit-2370/Playwright.app/Contents/MacOS/Playwright"
+          },
+          {
+            "pid": 12674,
+            "ppid": 12378,
+            "rssKiB": 1712,
+            "command": "ps"
+          }
+        ]
+      },
+      "readyRSS": {
+        "rssKiBSum": 148224,
+        "processes": [
+          {
+            "pid": 12645,
+            "ppid": 12378,
+            "rssKiB": 2080,
+            "command": "bash"
+          },
+          {
+            "pid": 12651,
+            "ppid": 12645,
+            "rssKiB": 144432,
+            "command": "/Users/dennisariens/Library/Caches/ms-playwright/webkit-2370/Playwright.app/Contents/MacOS/Playwright"
+          },
+          {
+            "pid": 12696,
+            "ppid": 12378,
+            "rssKiB": 1712,
+            "command": "ps"
+          }
+        ]
+      },
+      "navigation": {
+        "navigation": [
+          {
+            "startTime": 0,
+            "domContentLoadedEventEnd": 1208,
+            "loadEventEnd": 1241,
+            "duration": 1241
+          }
+        ],
+        "paint": [
+          {
+            "name": "first-contentful-paint",
+            "startTime": 980
+          }
+        ],
+        "jsMemory": null,
+        "online": true,
+        "images": 40,
+        "decodedImages": 39
+      },
+      "chromiumMetrics": null,
+      "runtime": {
+        "art": {
+          "art.bg.bg01": {
+            "sha256": "c07c938d990250fdcd3a370b90f74c7cb8d9a422f4b720dbeb5e93850309b9c0",
+            "bytes": 433106
+          },
+          "art.bg.bg02": {
+            "sha256": "939934b56be3406fa5a48717b900acea521f6f45674cce82b09993ca3630c660",
+            "bytes": 321346
+          },
+          "art.bg.bg03": {
+            "sha256": "b4a423ef64fdb58773aa99659ec23b58283b1cf96763f591d41d09eb6619f20b",
+            "bytes": 452702
+          },
+          "art.portrait": {
+            "sha256": "97fe052f40fea2ec7c07a2935d8bb2f544777b4e3893c1a509ab9bc0c1a492e2",
+            "bytes": 53086
+          },
+          "art.vespa": {
+            "sha256": "41b49a4f69162062d0af7df0f31eb775c1defea72eb1448e86e6332bf975c84e",
+            "bytes": 88680
+          },
+          "art.icons.slice": {
+            "sha256": "1b1fa303abc5775133b00d76f9b2d4c6945f759c12caf75d50b492bdb96ad550",
+            "bytes": 4658
+          },
+          "art.icons.pizza": {
+            "sha256": "5d3dbef4e73ed6d3f3e3edea75a29ad21100f9f9ccfacaa52715c5eebe6492d9",
+            "bytes": 5694
+          },
+          "art.icons.vespa": {
+            "sha256": "0a060a0cc77a46487b3eac060653383e7feb883f6e4736b9512cf6086af8e869",
+            "bytes": 6026
+          },
+          "art.icons.gold": {
+            "sha256": "ee806f0938efbe93cf5b41817f81f5b9357acdf049288bde9cd223fcbd18a865",
+            "bytes": 5318
+          },
+          "art.icons.stamp": {
+            "sha256": "a578ddedb395fc9fc97c672923ed6f6f681628016e1c1e4c014019385a14144a",
+            "bytes": 7116
+          },
+          "art.icons.postcard": {
+            "sha256": "b4abe1371d848c583af9a843edaf1b2450e21571a9c8ab576b9a3dd78b2ef158",
+            "bytes": 6638
+          },
+          "scenes.city1.mini": {
+            "sha256": "26865876290044697872bb748d2b55e09fc826989a6fc37e190914147bbda03c",
+            "bytes": 33352
+          },
+          "scenes.city1.kop": {
+            "sha256": "fc30759340d0a54a2b63e29adcb4a4f4b20078021941410faf0f564793baf048",
+            "bytes": 402776
+          },
+          "scenes.islands.mini": {
+            "sha256": "2b027de93af0155f076f3fc5a68be460807a668496c5dcc2464668718a4a3b9d",
+            "bytes": 24694
+          },
+          "scenes.islands.kop": {
+            "sha256": "8b2d530acee7c727479cf9593e55e1b03bbadbdf85971a631cce2c1097ee9093",
+            "bytes": 348408
+          },
+          "scenes.mountains.mini": {
+            "sha256": "88d66acc264653b3f4354455b5c2887a0027b0da05a66e73758fc7ddb8f40171",
+            "bytes": 26542
+          },
+          "scenes.mountains.kop": {
+            "sha256": "ea8841762b495239c1ec89a5759c03ec09c002af3a5c550c1370205ea6ef3fce",
+            "bytes": 423450
+          },
+          "scenes.volcanoes.mini": {
+            "sha256": "21f4566b9d32909526c2f542bc6b0e12a2d4beb47b32ee1c7194644de68b287d",
+            "bytes": 19894
+          },
+          "scenes.volcanoes.kop": {
+            "sha256": "80623ad790d3f8c32a39276e84106bda9ccd37d57f79d3268091f0206466b654",
+            "bytes": 354542
+          },
+          "scenes.regions.mini": {
+            "sha256": "482349912963d3cf50a775d06ec70c892a42a3cbda29fa066464911d73176b45",
+            "bytes": 36784
+          },
+          "scenes.regions.kop": {
+            "sha256": "6bd74e9cdc1388172c119b02d32e512862ae08c40b588f834d53efd98cdcea7b",
+            "bytes": 441230
+          },
+          "scenes.countries.mini": {
+            "sha256": "3f4ce7e6caa69edbc7fd9a6ed345c570a4e22bf262bc6750a3fd5065ee64bd89",
+            "bytes": 28270
+          },
+          "scenes.countries.kop": {
+            "sha256": "10c798c0e9d679987f4b446e412c05f6b80fc7a57f26ab709ac099414e39421d",
+            "bytes": 403120
+          },
+          "scenes.seas.mini": {
+            "sha256": "c0147c714afc3a07cc744cbbb6b1cb3f816e0c728835dbdb66711bd4e3929a60",
+            "bytes": 29672
+          },
+          "scenes.seas.kop": {
+            "sha256": "fb3a1c781a099eebbb078a35d82a9666e69475eb528f3e505037e7e7638454d1",
+            "bytes": 397262
+          },
+          "scenes.rivers.mini": {
+            "sha256": "8f1517c7d5a84a598dac8c14d0351c06bd972048d9835602a6df42f7e6357f5b",
+            "bytes": 32446
+          },
+          "scenes.rivers.kop": {
+            "sha256": "a69ae30fda1271431e5d1ffe7145249f0c25a048074d185a1a81fbad2f3811e1",
+            "bytes": 383964
+          },
+          "scenes.city2.mini": {
+            "sha256": "518ab33ebc0b6902850ea46bdf3a57cc7556351ce40be2fc235e9c3eb439c146",
+            "bytes": 34598
+          },
+          "scenes.city2.kop": {
+            "sha256": "5a01badbf0f26fe28109e999c592615d882eb704e6bef809d40e70436b4f6465",
+            "bytes": 336364
+          },
+          "scenes.city3.mini": {
+            "sha256": "927c80380ed1571cdb4cc8bef8704b6a3e6b01e58ad68dc5bc2617ef4f7a8244",
+            "bytes": 28758
+          },
+          "scenes.city3.kop": {
+            "sha256": "719344db49bfd156f6b22904b1ff31dd2e2899ac133b0c303fdcf85b165dae02",
+            "bytes": 311914
+          },
+          "scenes.city4.mini": {
+            "sha256": "f62e812526d488d47740ae87ca5b38a04291729360cae764886453336a954778",
+            "bytes": 27984
+          },
+          "scenes.city4.kop": {
+            "sha256": "d9662509ce537fa8fcfb0485acc5478ff8ddc632b7768dbaf192269148a12668",
+            "bytes": 275572
+          }
+        },
+        "layers": {
+          "terrain": {
+            "sha256": "440d631c8ff5777b13a2583870339caa8255c10a0ddcaaa3edd087b8fc524ab5",
+            "bytes": 308232,
+            "x": "0",
+            "y": "0",
+            "width": "890",
+            "height": "1235",
+            "display": "block"
+          },
+          "sea": {
+            "sha256": "daded673fe77a75f631b40251c09ef158b1c541b037f32c8d75ed4141b4409d5",
+            "bytes": 245696,
+            "x": "0",
+            "y": "0",
+            "width": "890",
+            "height": "1235",
+            "display": "block"
+          },
+          "shadow": {
+            "sha256": "e2fe511cc8c72fb8bf6a1e67e5041e64c99d3f76da665f0e3ee3e5e2428c0aec",
+            "bytes": 119588,
+            "x": "0",
+            "y": "0",
+            "width": "890",
+            "height": "1235",
+            "display": "block"
+          },
+          "coast": {
+            "sha256": "e685ba188bbe1e434a0071c930f11d1ac7c6394f64300d53dda737ab63b2bcaf",
+            "bytes": 50682,
+            "x": "0",
+            "y": "0",
+            "width": "890",
+            "height": "1235",
+            "display": "block"
+          }
+        },
+        "order": [
+          "v3RSea",
+          "v3CoastGlow",
+          "v3RShadow",
+          "v3LandBase",
+          "v3m-seaLayer",
+          "atlasTerrain",
+          "v3RCoast",
+          "v3m-landLayer"
+        ],
+        "geometry": [
+          {
+            "id": "water-A",
+            "index": 0,
+            "same": true,
+            "sameInternalTransforms": true
+          },
+          {
+            "id": "water-B",
+            "index": 0,
+            "same": true,
+            "sameInternalTransforms": true
+          },
+          {
+            "id": "water-C",
+            "index": 0,
+            "same": true,
+            "sameInternalTransforms": true
+          },
+          {
+            "id": "water-D",
+            "index": 0,
+            "same": true,
+            "sameInternalTransforms": true
+          },
+          {
+            "id": "water-E",
+            "index": 0,
+            "same": true,
+            "sameInternalTransforms": true
+          },
+          {
+            "id": "area-i",
+            "index": 0,
+            "same": true,
+            "sameInternalTransforms": true
+          },
+          {
+            "id": "area-j",
+            "index": 0,
+            "same": true,
+            "sameInternalTransforms": true
+          },
+          {
+            "id": "area-k",
+            "index": 0,
+            "same": true,
+            "sameInternalTransforms": true
+          },
+          {
+            "id": "area-l",
+            "index": 0,
+            "same": true,
+            "sameInternalTransforms": true
+          },
+          {
+            "id": "area-m",
+            "index": 0,
+            "same": true,
+            "sameInternalTransforms": true
+          },
+          {
+            "id": "area-a",
+            "index": 0,
+            "same": true,
+            "sameInternalTransforms": true
+          },
+          {
+            "id": "area-b",
+            "index": 0,
+            "same": true,
+            "sameInternalTransforms": true
+          },
+          {
+            "id": "area-c",
+            "index": 0,
+            "same": true,
+            "sameInternalTransforms": true
+          },
+          {
+            "id": "area-d",
+            "index": 0,
+            "same": true,
+            "sameInternalTransforms": true
+          },
+          {
+            "id": "area-g",
+            "index": 0,
+            "same": true,
+            "sameInternalTransforms": true
+          },
+          {
+            "id": "area-h",
+            "index": 0,
+            "same": true,
+            "sameInternalTransforms": true
+          },
+          {
+            "id": "water-F",
+            "index": 0,
+            "same": true,
+            "sameInternalTransforms": true
+          },
+          {
+            "id": "water-G",
+            "index": 0,
+            "same": true,
+            "sameInternalTransforms": true
+          },
+          {
+            "id": "area-e",
+            "index": 0,
+            "same": true,
+            "sameInternalTransforms": true
+          },
+          {
+            "id": "area-f",
+            "index": 0,
+            "same": true,
+            "sameInternalTransforms": true
+          },
+          {
+            "id": "area-n",
+            "index": 0,
+            "same": true,
+            "sameInternalTransforms": true
+          },
+          {
+            "id": "area-o",
+            "index": 0,
+            "same": true,
+            "sameInternalTransforms": true
+          },
+          {
+            "id": "city-1",
+            "index": 0,
+            "same": true,
+            "sameInternalTransforms": true
+          },
+          {
+            "id": "city-2",
+            "index": 0,
+            "same": true,
+            "sameInternalTransforms": true
+          },
+          {
+            "id": "city-3",
+            "index": 0,
+            "same": true,
+            "sameInternalTransforms": true
+          },
+          {
+            "id": "city-4",
+            "index": 0,
+            "same": true,
+            "sameInternalTransforms": true
+          },
+          {
+            "id": "city-5",
+            "index": 0,
+            "same": true,
+            "sameInternalTransforms": true
+          },
+          {
+            "id": "city-6",
+            "index": 0,
+            "same": true,
+            "sameInternalTransforms": true
+          },
+          {
+            "id": "city-7",
+            "index": 0,
+            "same": true,
+            "sameInternalTransforms": true
+          },
+          {
+            "id": "city-8",
+            "index": 0,
+            "same": true,
+            "sameInternalTransforms": true
+          },
+          {
+            "id": "city-9",
+            "index": 0,
+            "same": true,
+            "sameInternalTransforms": true
+          },
+          {
+            "id": "city-10",
+            "index": 0,
+            "same": true,
+            "sameInternalTransforms": true
+          },
+          {
+            "id": "city-11",
+            "index": 0,
+            "same": true,
+            "sameInternalTransforms": true
+          },
+          {
+            "id": "city-12",
+            "index": 0,
+            "same": true,
+            "sameInternalTransforms": true
+          },
+          {
+            "id": "city-13",
+            "index": 0,
+            "same": true,
+            "sameInternalTransforms": true
+          },
+          {
+            "id": "city-14",
+            "index": 0,
+            "same": true,
+            "sameInternalTransforms": true
+          },
+          {
+            "id": "city-15",
+            "index": 0,
+            "same": true,
+            "sameInternalTransforms": true
+          },
+          {
+            "id": "city-16",
+            "index": 0,
+            "same": true,
+            "sameInternalTransforms": true
+          },
+          {
+            "id": "city-17",
+            "index": 0,
+            "same": true,
+            "sameInternalTransforms": true
+          },
+          {
+            "id": "city-18",
+            "index": 0,
+            "same": true,
+            "sameInternalTransforms": true
+          },
+          {
+            "id": "city-19",
+            "index": 0,
+            "same": true,
+            "sameInternalTransforms": true
+          },
+          {
+            "id": "city-20",
+            "index": 0,
+            "same": true,
+            "sameInternalTransforms": true
+          },
+          {
+            "id": "city-21",
+            "index": 0,
+            "same": true,
+            "sameInternalTransforms": true
+          },
+          {
+            "id": "city-22",
+            "index": 0,
+            "same": true,
+            "sameInternalTransforms": true
+          },
+          {
+            "id": "city-23",
+            "index": 0,
+            "same": true,
+            "sameInternalTransforms": true
+          },
+          {
+            "id": "area-n",
+            "index": 1,
+            "same": true,
+            "sameInternalTransforms": true
+          }
+        ],
+        "decoration": [
+          {
+            "class": "v3R v3RSea",
+            "ariaHidden": "true",
+            "pointer": "none",
+            "targets": 0,
+            "ownTarget": false
+          },
+          {
+            "class": "v3CoastGlow",
+            "ariaHidden": "true",
+            "pointer": "none",
+            "targets": 0,
+            "ownTarget": false
+          },
+          {
+            "class": "v3R v3RShadow",
+            "ariaHidden": "true",
+            "pointer": "none",
+            "targets": 0,
+            "ownTarget": false
+          },
+          {
+            "class": "v3LandBase",
+            "ariaHidden": "true",
+            "pointer": "none",
+            "targets": 0,
+            "ownTarget": false
+          },
+          {
+            "class": "v3R v3RCoast",
+            "ariaHidden": "true",
+            "pointer": "none",
+            "targets": 0,
+            "ownTarget": false
+          }
+        ],
+        "cloneHidden": "true",
+        "cloneFocusable": "false",
+        "cloneTabStops": 0,
+        "layerCopies": 38,
+        "canonicalLandShapes": 19
+      },
+      "reliefOff": {
+        "mode": "off",
+        "layers": [
+          {
+            "class": "v3R v3RSea",
+            "display": "none"
+          },
+          {
+            "class": "v3CoastGlow",
+            "display": "none"
+          },
+          {
+            "class": "v3R v3RShadow",
+            "display": "none"
+          },
+          {
+            "class": "v3LandBase",
+            "display": "none"
+          },
+          {
+            "class": "atlasTerrain",
+            "display": "none"
+          },
+          {
+            "class": "v3R v3RCoast",
+            "display": "none"
+          }
+        ],
+        "targets": 46
+      },
+      "afterProbeRSS": {
+        "rssKiBSum": 139760,
+        "processes": [
+          {
+            "pid": 12645,
+            "ppid": 12378,
+            "rssKiB": 1120,
+            "command": "bash"
+          },
+          {
+            "pid": 12651,
+            "ppid": 12645,
+            "rssKiB": 136928,
+            "command": "/Users/dennisariens/Library/Caches/ms-playwright/webkit-2370/Playwright.app/Contents/MacOS/Playwright"
+          },
+          {
+            "pid": 12720,
+            "ppid": 12378,
+            "rssKiB": 1712,
+            "command": "ps"
+          }
+        ]
+      },
+      "validation": {
+        "geometry46": true,
+        "layersMatch": true,
+        "decorationOnly": true,
+        "copyCount": true,
+        "offHidden": true
+      }
+    },
+    {
+      "engine": "webkit",
+      "version": "27.2",
+      "trial": 1,
+      "phase": "same-browser offline file reload",
+      "loadWallMs": 1126.0675409999985,
+      "readyWallMs": 1242.9804999999997,
+      "settledWallMs": 1837.3101660000011,
+      "baseRSS": {
+        "rssKiBSum": 122032,
+        "processes": [
+          {
+            "pid": 12645,
+            "ppid": 12378,
+            "rssKiB": 2080,
+            "command": "bash"
+          },
+          {
+            "pid": 12651,
+            "ppid": 12645,
+            "rssKiB": 118240,
+            "command": "/Users/dennisariens/Library/Caches/ms-playwright/webkit-2370/Playwright.app/Contents/MacOS/Playwright"
+          },
+          {
+            "pid": 12674,
+            "ppid": 12378,
+            "rssKiB": 1712,
+            "command": "ps"
+          }
+        ]
+      },
+      "readyRSS": {
+        "rssKiBSum": 146352,
+        "processes": [
+          {
+            "pid": 12645,
+            "ppid": 12378,
+            "rssKiB": 976,
+            "command": "bash"
+          },
+          {
+            "pid": 12651,
+            "ppid": 12645,
+            "rssKiB": 143664,
+            "command": "/Users/dennisariens/Library/Caches/ms-playwright/webkit-2370/Playwright.app/Contents/MacOS/Playwright"
+          },
+          {
+            "pid": 12743,
+            "ppid": 12378,
+            "rssKiB": 1712,
+            "command": "ps"
+          }
+        ]
+      },
+      "navigation": {
+        "navigation": [
+          {
+            "startTime": 0,
+            "domContentLoadedEventEnd": 1019,
+            "loadEventEnd": 1045,
+            "duration": 1045
+          }
+        ],
+        "paint": [
+          {
+            "name": "first-contentful-paint",
+            "startTime": 910
+          }
+        ],
+        "jsMemory": null,
+        "online": false,
+        "images": 40,
+        "decodedImages": 39
+      },
+      "chromiumMetrics": null
+    },
+    {
+      "engine": "webkit",
+      "version": "27.2",
+      "trial": 2,
+      "phase": "same-browser offline file reload",
+      "loadWallMs": 1647.8777499999997,
+      "readyWallMs": 1667.4355840000026,
+      "settledWallMs": 2236.555542000002,
+      "baseRSS": {
+        "rssKiBSum": 122032,
+        "processes": [
+          {
+            "pid": 12645,
+            "ppid": 12378,
+            "rssKiB": 2080,
+            "command": "bash"
+          },
+          {
+            "pid": 12651,
+            "ppid": 12645,
+            "rssKiB": 118240,
+            "command": "/Users/dennisariens/Library/Caches/ms-playwright/webkit-2370/Playwright.app/Contents/MacOS/Playwright"
+          },
+          {
+            "pid": 12674,
+            "ppid": 12378,
+            "rssKiB": 1712,
+            "command": "ps"
+          }
+        ]
+      },
+      "readyRSS": {
+        "rssKiBSum": 128608,
+        "processes": [
+          {
+            "pid": 12645,
+            "ppid": 12378,
+            "rssKiB": 976,
+            "command": "bash"
+          },
+          {
+            "pid": 12651,
+            "ppid": 12645,
+            "rssKiB": 125920,
+            "command": "/Users/dennisariens/Library/Caches/ms-playwright/webkit-2370/Playwright.app/Contents/MacOS/Playwright"
+          },
+          {
+            "pid": 12767,
+            "ppid": 12378,
+            "rssKiB": 1712,
+            "command": "ps"
+          }
+        ]
+      },
+      "navigation": {
+        "navigation": [
+          {
+            "startTime": 0,
+            "domContentLoadedEventEnd": 1094,
+            "loadEventEnd": 1126,
+            "duration": 1126
+          }
+        ],
+        "paint": [
+          {
+            "name": "first-contentful-paint",
+            "startTime": 927
+          }
+        ],
+        "jsMemory": null,
+        "online": false,
+        "images": 40,
+        "decodedImages": 39
+      },
+      "chromiumMetrics": null
+    }
+  ],
+  "errors": [],
+  "chromiumRequests": [
+    {
+      "type": "document",
+      "scheme": "file",
+      "url": "file:///Users/dennisariens/projects/topo-v3-app-1a42590/output/html/TOPO-V3-Reis-Preview.html"
+    },
+    {
+      "type": "document",
+      "scheme": "file",
+      "url": "file:///Users/dennisariens/projects/topo-v3-app-1a42590/output/html/TOPO-V3-Reis-Preview.html"
+    },
+    {
+      "type": "document",
+      "scheme": "file",
+      "url": "file:///Users/dennisariens/projects/topo-v3-app-1a42590/output/html/TOPO-V3-Reis-Preview.html"
+    }
+  ],
+  "chromiumOutbound": [],
+  "webkitRequests": [
+    {
+      "type": "document",
+      "scheme": "file",
+      "url": "file:///Users/dennisariens/projects/topo-v3-app-1a42590/output/html/TOPO-V3-Reis-Preview.html"
+    },
+    {
+      "type": "document",
+      "scheme": "file",
+      "url": "file:///Users/dennisariens/projects/topo-v3-app-1a42590/output/html/TOPO-V3-Reis-Preview.html"
+    },
+    {
+      "type": "document",
+      "scheme": "file",
+      "url": "file:///Users/dennisariens/projects/topo-v3-app-1a42590/output/html/TOPO-V3-Reis-Preview.html"
+    }
+  ],
+  "webkitOutbound": []
+}

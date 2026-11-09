@@ -1,0 +1,13 @@
+import json,pathlib,hashlib
+D=pathlib.Path(__file__).parent;R=pathlib.Path('/Users/dennisariens/projects/topo-v3-app-1a42590');engines=['chromium','webkit'];res={'commit':'1a42590de5525bd4d9fb1bcd02bf384e4437b1c2','htmlSha256':hashlib.sha256((R/'output/html/TOPO-V3-Reis-Preview.html').read_bytes()).hexdigest(),'htmlBytes':(R/'output/html/TOPO-V3-Reis-Preview.html').stat().st_size,'verdicts':{'point2':{'chromium':'REWORK','webkit':'REWORK'},'point4':{'chromium':'PASS','webkit':'PASS'}},'engines':{}}
+for e in engines:
+ j=json.loads((D/f'independent-{e}/ledger.json').read_text());m=json.loads((D/f'maintained-{e}/results.json').read_text());p=json.loads((D/f'{e}-pizza-probe.json').read_text());assert 'failure'not in j
+ assert len(m['runs'])==5 and m['summary']['errors']==0
+ for k in ['stepsRight','wrongAnswersNotRewarded','feedbackFromV2','meterMatchesState','rewardMomentsOnRealCount','draftSurvivesFormatChange','finishStampAndBook','bookTapLandsOnButton','backToReisNextChapter']:assert m['summary'][k]
+ assert all(j['checks'][k]['equal'] for k in ['reisResume','rewardsResume'])
+ assert j['checks']['replayNoCurrency']['ok'];assert len(j['demos'])==4
+ allreward=[j['checks'][k] for k in ['lessonRewardsContinuity','earnedRewards','reopenAfterReplay']]+list(j['demos'].values())
+ assert all(v['countsMatch'] and v['sameV2Book'] and v['keyboardReachesBook'] and v['allReadOnly'] and len(v['storageWrites'])==0 and v['returnReis'] and v['book']['closed'] for v in allreward)
+ assert p[0]['dialogs']==['pizzaCelebration'] and p[1]['dialogs']==[] and p[0]['pizzas']==p[1]['pizzas']==1
+ res['engines'][e]={'browser':j['version'],'maintainedSummary':m['summary'],'cleanEarned':{k:j['earned'][k] for k in ['good','slices','pizzas','trips']},'cleanEarnedStampCount':j['checks']['earnedRewards']['book']['stamps'],'cleanEarnedInitialBookPages':j['checks']['earnedBook']['initialPages'],'resume':{k:j['checks'][k] for k in ['reisResume','rewardsResume']},'replay':j['checks']['replayNoCurrency'],'rewardRows':[{k:v[k] for k in ['tiles','ride','countsMatch','keyboardReachesBook','sameV2Book','allReadOnly','storageWrites']} for v in allreward],'demoCounts':{k:{'tiles':v['tiles'],'book':{n:v['book'][n] for n in ['stamps','gold','postcards']},'trips':v['trips']} for k,v in j['demos'].items()},'pizzaKeyboardRepro':p,'errors':j['errors'],'screenshots':len(list((D/f'independent-{e}').glob('*.png')))}
+(D/'results.json').write_text(json.dumps(res,indent=2,ensure_ascii=False));print(json.dumps({'verdicts':res['verdicts'],'engines':{k:{'browser':v['browser'],'earned':v['cleanEarned'],'stamps':v['cleanEarnedStampCount'],'screenshots':v['screenshots']} for k,v in res['engines'].items()}},indent=2))

@@ -330,3 +330,8 @@ Reservekopieën en reset horen in het algemene instellingenmenu. Wis voortgang b
 - **Besluit eigenaar:** de richting van het stijlbeeld is akkoord (zwevend venster boven landschap, hoofdstukbeelden, reliëf in renderpalet, één hoofdactie). Het verschil met de renders zit in het materiaal, niet in de opbouw.
 - **Accent:** Italia (terracotta) blijft standaard; dit bevestigt de keuze van 9 november na de hertoetsing uit "Renderniveau". Viola blijft alleen ter vergelijking in de preview.
 - **Volgorde artwork:** eerst het reliëf `v3/relief-z8` (Codex) en BG-01, daarna de drie stedenscènes (Roma, Venezia, Napoli), het Nino-portret, de iconen en VE-01. Alles met Hermes-QA volgens `docs/v3/ARTWORK_BRIEF.md`.
+
+## 2026-11-09 — Hermes V3-01: contextnamen op de Reis-kaart blijven
+
+- **Besluit eigenaar:** de contextnamen in de kaartkopie (zoals ITALIË, DUITSLAND, BOSNIË) blijven staan. Ze geven het referentiekader dat de leerling nodig heeft. Voorwaarde: een automatische check faalt zodra een label een van de 45 leerplek-namen toont. Leerplekken zelf blijven naamloos op Reis.
+- **Artwork:** BG-01, het Nino-portret en de scène Roma hebben het akkoord van de eigenaar (`art/v3-render-assets`). De modelcheck van Hermes staat nog open; daarna inbouwen.

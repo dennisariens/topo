@@ -310,3 +310,10 @@ Reservekopieën en reset horen in het algemene instellingenmenu. Wis voortgang b
 - **Niet:** het boek als donker venster over de app (richting A), of stempels als vlakke tegels zonder perkament (richting C).
 - **Open:** folio's in hogere resolutie (nu maximaal 543 CSS-px per pagina); Venezia-rand; idee: per land een eigen kunsttraditie voor het boek (later).
 - **Status:** richting gekozen; nog te bouwen als V3-laag, na de les (GE01).
+
+## 2026-11-09 — Renderniveau: V3 gaat naar de kwaliteit van de conceptrenders
+
+- **Besluit eigenaar:** V3 moet het visuele niveau van de conceptrenders halen. Nieuw artwork (achtergronden, hoofdstukbeelden, Nino-portret, iconen, losse Vespa) is dat waard. **Supersedes** "geen nieuw artwork" in de opdrachten van vandaag voor Reis en Beloningen; Beloningen richting B blijft gelden.
+- **Wat blijft:** echte geografie (reliëf uit gemeten data in het renderpalet, geen beeld als kaart), de echte elf hoofdstukken, geen streak, en Nino alleen vanaf de canonieke referenties.
+- **Bron:** de 8 hoofdstukscènes uit #75 zijn de stijlreferentie en de eerste hoofdstukbeelden. Specificatie: `docs/v3/ARTWORK_BRIEF.md`.
+- **Volgorde:** eerst één stijlbeeld met bestaand materiaal (accent Italia en Viola naast elkaar opnieuw te toetsen), dan pas artwork produceren, met QA door Hermes.

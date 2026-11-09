@@ -11,3 +11,4 @@ Design Taste-protocol: elke correctie krijgt een categorie (lay-out, identiteit,
 | 2026-11-09 | Reis v3b | Rand-fade niet te sterk: referentiekader (buurlanden, zeeën) is nodig om te leren | lay-out, inhoud | DESIGN_SYSTEM V3 › Kaart (kaderregel); check `mapFrameShort` in `qa-v3-reis.py`; verwerkt 9-11 |
 | 2026-11-09 | Les (GE01) | Lesstappen boven de kaart (topo-ui-design, PR #64) | hiërarchie | DESIGN_SYSTEM V3 › Les; check `stepsRight` in `qa-v3-les.py` |
 | 2026-11-09 | Beloningen | Boek in V3-stijl? Gekozen: B, rustig kader en rijk renaissance-boek; niet het donkere venster (A) of vlak modern (C) | identiteit, lay-out | DECISIONS 9-11 › Beloningen; DESIGN_SYSTEM › Beeld |
+| 2026-11-09 | alle | Het renderniveau is het doel; nieuw artwork is dat waard | identiteit, beeld | DECISIONS 9-11 › Renderniveau; docs/v3/ARTWORK_BRIEF.md |

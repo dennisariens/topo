@@ -1,3 +1,58 @@
+# Design system V3 (voorstel, 9 november 2026)
+
+## Principe (eigenaar, letterlijk)
+
+> I want this to be as perfect as Linear's website or Apple Notes: simple purpose, simple architecture, simple design, simple implementation. Cut taglines, helper text and secondary labels. If a screen needs them to make sense, fix the layout. Every decision should elevate the user experience (UX), developer experience (DX) and agent experience (AX) at once, without breaking anything.
+
+Productrichting: een reis door Italië waarin je topografie leert. Rust van Apple Notes, precisie van Linear, onmiskenbaar Nino's Italië, de kaart eerst. Ook vastgelegd in issue #76 (Product principle).
+
+## Structuur
+- **Eén vaste opbouw** op groot scherm: zijbalk (merk, Nino, navigatie, instellingen) · lijst (hoofdstukken) · inhoud (tellers, kaart, titel, één actie).
+- **iPad liggend en kleine desktop (< 1280 px):** zijbalk met alleen iconen; labels blijven voor schermlezers.
+- **iPad staand (< 1024 px):** titel en actie boven de kaart.
+- **Telefoon (< 768 px):** één kolom (tellers, titel, actie, kaart, lijst) met een tabbalk onderaan.
+- **Getallen in plaats van zinnen:** "3 / 11", "14 / 24". Geen taglines, hulpteksten of bijlabels. Uitzondering: een reden die de leerling anders niet ziet ("Opent na Bergen").
+- **Eén duidelijke hoofdactie, waar een handeling nodig is.** Bij Aanwijzen is de kaart zelf de handeling.
+
+## Kaart
+- Altijd de echte geometrie: in Reis een kopie van de live kaart, met gelijke paden (gecontroleerd: 46/46), zonder namen en zonder interactie.
+- De plekken van het gekozen hoofdstuk dragen het accent; de rest treedt terug.
+- **Schoolkaart** is de standaard en de lesvorm. **Reliëf** is een schakelaar met een leerfunctie (Bergen, Vulkanen, Apennijnen, Povlakte). Het reliëf komt uit gemeten hoogtedata, geregistreerd op hetzelfde frame (zie DISCOVERY_MAP.md). Nooit AI-beeld als kaart.
+
+## Tokens (`scripts/v3/tokens.css`, alleen binnen `.v3`)
+| Groep | Waarde |
+| --- | --- |
+| Type | platformfont; 34/41 · 22/28 · 17/22 · 15/20 · 13/18 |
+| Ruimte | 4 · 8 · 12 · 16 · 20 · 24 · 32 · 48 |
+| Radius | knop 12 (besluit 7 november) · kaart 16 · schil 24 |
+| Neutraal | canvas `#f4f1ea`, oppervlak `#fffdf9`, inkt `#1d2523`, secundair `#66706d`, lijn 9% inkt |
+| Status | klaar `#2f9a5b` met ✓ · goud alleen voor Gold, met zegel · op slot grijs met slot-icoon |
+| Focus | 3 px `#1d6fd8` |
+| Geografie | kaartkleuren blijven buiten de tokens (vergrendeld) |
+
+## Landthema's
+Structuur, type en neutralen zijn voor elk land gelijk. Een thema zet alleen accent, zacht accent en vlagstreep (`data-theme`).
+
+| Thema | Accent | Status |
+| --- | --- | --- |
+| `italia` (standaard) | terracotta `#b9502f`, vlag groen-wit-rood | voorstel |
+| `viola` | paars `#5b45e0` (uit de concepten) | ter vergelijking |
+
+Een nieuw land is een nieuw tokenblok, geen nieuwe component.
+
+## Beweging
+Alleen om een verandering uit te leggen. Bij verminderde beweging gaat decoratieve en overgangsbeweging uit; functionele feedback blijft zichtbaar.
+
+## Beeld
+Alleen canonieke artwork, per doel gebruikt. Nino in de zijbalk is de `guide`-pose, uitgesneden met CSS. Conceptrenders zijn richting, geen assets.
+
+## Anti-patronen (bij elke review)
+Too much · Too little · Boxed · Flat · Bland · Off-model Nino · Invented geography. Toegankelijkheid en pedagogiek zijn aparte toetsen.
+
+---
+
+# Historisch: V1/V2 (hieronder, ongewijzigd)
+
 # Design system: current and target
 
 Current CSS lives inline in `index.html`: system UI font, large compact headings, warm paper background `#f5f2e9`, sea `#c8e2ed`, surrounding land `#dce4cf`, Italy `#efcd93`, rust cities `#a44336`, teal accent `#087887`, white cards. Selected state is orange; feedback green for correct and pale red for wrong. Tabs include five text buttons; the map and learning panel form two columns on desktop and one column below 950 px. The first city group has six names. Progress header shows good/streak/pizzas; reset is text-button plus confirmation. All styles are current implementation, not an approved external brand system.

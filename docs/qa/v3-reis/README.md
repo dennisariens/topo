@@ -1,32 +1,33 @@
-# V3 golden screen 1 — Reis / hoofdstukkeuze
+# V3 golden screen 1 — Reis / hoofdstukkeuze (v3b)
 
-**Kandidaat:** `output/html/TOPO-V3-Reis-Preview.html`, SHA256 `c2a7dd09a6e56f26c89779806eb51d7bf7e900dcb7bdc31656f815e7ecd854dd`. Opgebouwd uit de ongewijzigde V2.0.2-`index.html` (`3aced3c3…304f5a`) plus de V3-laag (`scripts/v3/`) en demostanden: `node scripts/build-v3-preview.mjs`.
-**Openen:** direct via `file://`. Demostanden: `#nieuw`, `#bezig`, `#afgerond`, `#alles`. Naast elkaar (desktop + telefoon): `#naast-bezig` enzovoort. Demostanden staan alleen in het geheugen; echte opslag wordt niet gelezen of geschreven.
-**Oordeel:** technisch geslaagd · visueel zelf beoordeeld (Claude) · **eigenaar: open** · Hermes: open. Geen merge, geen deployment, geen vervanging van downloads.
+**Kandidaat:** `output/html/TOPO-V3-Reis-Preview.html`, SHA256 `35a0c4696f42abe7555bcb4452540598c493812abc783412b78b9d06ac6a610d`. Wordt niet meer in Git gezet (41 MB per iteratie); reproduceer met `node scripts/build-v3-preview.mjs` op deze commit. Basis: ongewijzigde V2.0.2-`index.html` (`3aced3c3…304f5a`) + `scripts/v3/`.
+**Openen:** direct via `file://`. Standen: `#nieuw`, `#bezig`, `#afgerond`, `#alles`; thema `…/viola`; naast elkaar `#naast-bezig`. Demostanden staan alleen in het geheugen.
+**Oordeel:** technisch geslaagd · visueel zelf beoordeeld · **eigenaar: open** · Hermes: open. Geen merge, deployment of downloadvervanging.
 
 ## Spoor per afspraak
 
-| Afspraak | Bron | Zichtbaar gedrag | Bewijs uit deze HTML | Oordeel |
+| Afspraak | Bron | Zichtbaar gedrag | Bewijs (`results.json`) | Oordeel |
 | --- | --- | --- | --- | --- |
-| Huidige halte en volgende actie meteen vindbaar | opdracht, #76 | Kaart "Halte N van 11" met drie lesstappen en één terracotta knop | `results.json` → `primaryAboveFoldAll: true` op 5 viewports × 4 standen. V2 had de knop op ±1000 px ([vergelijking](vergelijking-desktop.png), [telefoon](vergelijking-telefoon.png)) | technisch ✓, visueel ✓, eigenaar open |
-| Echte voortgang | V2-motor | Stand, stappen, slot, goud en pizza komen uit `state.route` / `TopoRoute` | flows: afgeronde halte opent ↻-lessen + goud; vergrendelde halte "Opent als je Bergen afrondt", 0 acties | ✓ |
-| Acties via V2-gedrag | DECISIONS 7-11 | Elke V3-knop drukt de bestaande V2-knop in | `replayStarted: city2/discover, mode route` | ✓ |
-| Reis → Verder geeft dezelfde vraag | DECISIONS 7-11 | Terug naar Reis, dan **Ga verder · Ontdekken** | `questionBefore == reisVerderSameQuestion.id` (`city-10`), tab **Reis** blijft `aria-current=page` (desktop en telefoon) | ✓ |
-| Geen overlappende of afgesneden knoppen, lange labels | opdracht | "Extra steden 13–18" op twee regels, "7–12" onbreekbaar | `overlaps`, `clipped`, `brokenWords`, `smallTargets`, `horizontalOverflow`: alle leeg | ✓ |
-| Toetsenbord | V2-afspraak | Volgorde: hoofdactie → haltes 1–11 → beloningen; Enter opent detail; 3 px ring | `keyboard` in `results.json` | ✓ |
-| Verminderde beweging | V2-afspraak | Geen schaal- of detailanimatie | `reducedMotion: 0s` | ✓ |
-| Route verklapt geen ligging | DECISIONS 6-11 | Slingerpad, volgorde 1→11, geen kaart | screenshots | ✓ |
-| Juiste artwork per doel | opdracht | Iconen, Nino, zegel, pizza | 18/18 ingebedde bytes == repo-bestand ([artwork-used.json](artwork-used.json)) | ✓ |
-| V2 blijft intact | opdracht | — | `index.html` ongewijzigd; `npm run lint`, `npm test`, `npm run build` slagen | ✓ |
+| Huidige hoofdstuk en volgende actie direct zichtbaar | opdracht, GE01 beat 1 | Gekozen hoofdstuk = huidige; titel, lesstaaf, één actie | `primaryAboveFoldAll: true` (5 formaten × 4 standen) | ✓ |
+| Indeling volgens de concepten | eigenaar 9-11 | Zijbalk · hoofdstukken · kaart · één actie | [render naast app](vergelijking-render.png) | eigenaar open |
+| Geen taglines/hulptekst | principe | Alleen getallen, titels en "Opent na …" | screenshots | ✓ |
+| Echte kaart | AGENTS.md, DECISIONS | Kopie van de live kaart, plekken van het hoofdstuk gemarkeerd, geen namen | `mapGeometry: 46/46 gelijk`; `hitsForCurrent` = hoofdstuk-IDs | ✓ |
+| Reliëf als schakelaar | eigenaar 9-11 | Schoolkaart / Reliëf | `reliefOn: block`, `reliefOff: none` | ✓ |
+| Landthema | eigenaar 9-11 | Italia / Viola, alleen accent wisselt | `theme` | ✓ |
+| Echte voortgang en acties via V2 | V2-motor | Slot, ✓, zegel, lesstaaf; acties drukken V2-knoppen | `lockedPrimary: 0`, `replayStarted` | ✓ |
+| Reis → Verder geeft dezelfde vraag | DECISIONS 7-11 | **Ga verder · Ontdekken** | `sameQuestion: true` (desktop en telefoon) | ✓ |
+| Herhalen op elk formaat | V2 | ↻-knoppen ook op iPad staand en telefoon | flows telefoon | ✓ (fout gevonden en hersteld) |
+| Geen overlap, afkapping, woordbreuk; tabbalk dekt niets af | opdracht | — | alle lijsten leeg; `lastRowHiddenByTabBar: []` | ✓ |
+| Toetsenbord | V2 | Zijbalk → hoofdstuk 1–11 → kaartstijl → actie; geen focusvallen in de kaartkopie | `keyboard.order` | ✓ (fout gevonden en hersteld) |
+| Verminderde beweging | V2 | Geen overgangen | `reducedMotion: 0s` | ✓ |
+| Juiste artwork | opdracht | Hoofdstukzegel, pizza, Nino `guide` | bytes == repo | ✓ |
+| V2 intact | opdracht | — | `index.html` ongewijzigd; lint, test, build ✓ | ✓ |
 
-Browser: Chrome 153 (Linux, headless) via Playwright, `python3 scripts/qa-v3-reis.py`. **Niet getest:** echte iPad Safari, VoiceOver, Mac-Safari. Op Linux rendert een ander font dan SF Pro; regelafbreking op Apple-apparaten moet nog met eigen ogen worden gecontroleerd.
+Browser: Chrome 153, Linux, headless (`python3 scripts/qa-v3-reis.py`). **Niet getest:** WebKit (download geblokkeerd in deze omgeving), echte iPad Safari, VoiceOver, SF Pro-weergave.
 
-## Screenshots
-`<stand>-<viewport>.png` voor `nieuw`, `bezig`, `afgerond`, `alles` × `desktop`, `ipad-portrait`, `ipad-landscape`, `phone`, `phone-small`. Flows: `flow-detail-*.png`, `flow-lesson-*.png`.
-
-## Open punten (voor de eigenaar)
-1. **Header-statistieken** (Goed / Reeks / Pizza's) en de V2-navigatie staan er nog. Ze horen bij de navigatiebeslissing (Oefenen / Kaart / Gold / Beloningen / Voortgang), die nog getoetst moet worden.
-2. **Uit Reis verplaatst, niet weg:** dagdoel, kennis-paspoort en de oude resetknop worden op Reis niet meer getoond. Ze staan nog in de DOM. Reset zit al in het instellingenmenu. Dagdoel en kennis-paspoort horen bij **Voortgang**.
-3. **Slim rondje** staat als stille link op Reis. Hoort het bij Oefenen?
-4. **Nino-zin** komt ongewijzigd uit V2 (`ENTRY.*`).
-5. Bij "Alles af" is het beeld Esploratore d'oro; het verdiende goudmoment zelf blijft V2.
+## Open punten
+1. **Levendigheid.** De render oogt rijker door een fijn reliëf en een landschapsachtergrond. Een scherper reliëf vraagt fijnere hoogtetegels: een apart spoor met bron, licentie en een groottelimiet. Achtergrondlandschap alleen met canoniek artwork.
+2. **Navigatie.** De zijbalk toont alleen wat werkt: Reis, Oefenen, Beloningen (Reisboekje), Instellingen. Gold, Kaart en Voortgang volgen per scherm.
+3. **Accent.** Italia of Viola: keuze eigenaar.
+4. **Overgang.** Na Reis zie je nog de V2-schil (lessen, Oefenen). Dat verandert pas in stap 2.
+5. **Dagdoel, kennis-paspoort, slim rondje** staan niet op Reis; voorstel: Voortgang en Oefenen.

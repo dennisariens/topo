@@ -263,3 +263,14 @@ Reservekopieën en reset horen in het algemene instellingenmenu. Wis voortgang b
 - **Harness:** #74 niet overgenomen (Hermes-REWORK open). Bestaande `npm`-checks plus `scripts/qa-v3-reis.py` op de exacte HTML.
 - **Status:** kandidaat ter beoordeling. Geen merge, deployment of downloadvervanging.
 
+## 2026-11-09 — Reis v3b: conceptrichting, landthema's, reliëf
+
+- **Richting:** de conceptrenders van de eigenaar zijn de V3-richting voor structuur en rust (zijbalk · lijst · kaart · één actie), niet voor inhoud: echte elf hoofdstukken, echte kaartgeometrie, canonieke artwork. **Supersedes** de gestapelde kaarten en het verhalende slingerpad van Reis v1 van vandaag.
+- **Principe:** de letterlijke eigenaarstekst (Linear / Apple Notes; geen taglines, hulpteksten of bijlabels; UX, DX en AX tegelijk) staat bovenaan `DESIGN_SYSTEM.md` V3.
+- **Kaart op Reis:** kopie van de live kaart, gelijke geometrie, zonder namen en zonder interactie; plekken van het gekozen hoofdstuk gemarkeerd. Dit is geen ritkaart en verklapt niets wat Ontdekken niet al toont; het besluit van 6 november over de verhalende rit blijft voor de Vespa-rit gelden.
+- **Reliëf:** terug als schakelaar met een leerfunctie (Bergen, Vulkanen, Apennijnen, Povlakte). Schoolkaart blijft standaard en de lesvorm. Een scherper reliëf is een apart spoor met bron en groottelimiet.
+- **Landthema's:** neutrale structuur voor elk land; een thema zet alleen accent en vlag. Italia standaard, Viola ter vergelijking. Keuze accent: eigenaar.
+- **Ontwerpregels:** `docs/v3/DESIGN_RULES.md` is opgegaan in `docs/DESIGN_SYSTEM.md` V3 (**supersedes** de regel daarover van vanochtend). Verminderde beweging: decoratieve en overgangsbeweging uit, functionele feedback blijft.
+- **Preview-HTML** gaat niet meer in Git; buildscript en checksum wel.
+- **Status:** kandidaat ter beoordeling. Geen merge, deployment of downloadvervanging.
+

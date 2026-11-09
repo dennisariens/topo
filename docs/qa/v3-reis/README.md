@@ -22,6 +22,9 @@
 | Toetsenbord | V2 | Zijbalk → hoofdstuk 1–11 → kaartstijl → actie; geen focusvallen in de kaartkopie | `keyboard.order` | ✓ (fout gevonden en hersteld) |
 | Verminderde beweging | V2 | Geen overgangen | `reducedMotion: 0s` | ✓ |
 | Juiste artwork | opdracht | Hoofdstukzegel, pizza, Nino `guide` | bytes == repo | ✓ |
+| Hermes V3-01: geen leerplek-naam in kaartlabels | Hermes #76 (afb32d1), eigenaar: contextnamen blijven | Contextnamen (ITALIË, DUITSLAND, TSJECHIË, SLOWAKIJE, HONGARIJE, BOSNIË, TUNESIË) blijven als referentiekader | `labelsWithLearningName: {}` op 5 formaten × 4 standen, tegen alle 45 namen + aliassen (accent- en spatiebestendig, hele woorden); negatieve controle `B A R I` wordt gevangen (`labelCheckCatchesControl`) | ✓ |
+| Hermes V3-02: schakelaar boven Sicilië | Hermes #76 | Op telefoon staat de schakelaar onder de kaart | `switchCoversPlace: {}`: elk hoofdstuk × Schoolkaart/Reliëf op 390×844, 320×640 en 820×1180, bemonsterd per 2 px met `isPointInFill`. Zelfde meting op afb32d1: Sicilië (`area-a`) 948 px² bedekt · [hertest](v3-02-eilanden-schoolkaart-phone.png) | ✓ hersteld |
+| Hermes V3-03: focus na selectie op telefoon | Hermes #76 | Tab naar Steden 7–12, Enter → focus op de titel van het gekozen hoofdstuk (`tabindex=-1`), zichtbare ring; volgende Tab → de actie | `phoneSelectFocus`: `v3Title`, in beeld, ring; `phoneSelectFocusOnTitle: true` · [screenshot](v3-03-focus-titel-phone.png) | ✓ hersteld |
 | V2 intact | opdracht | — | `index.html` ongewijzigd; lint, test, build ✓ | ✓ |
 
 Browser: Chrome, macOS, headless (`python3 scripts/qa-v3-reis.py`; versie in `results.json`). Kaartkadermeting: pixel met en zonder randmask op een punt binnen elke vorm. **Niet getest:** WebKit (download geblokkeerd in deze omgeving), echte iPad Safari, VoiceOver, SF Pro-weergave.

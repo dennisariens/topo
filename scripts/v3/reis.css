@@ -62,7 +62,9 @@ body.v3Home #journeyScreen,body.v3Home #journeyScreen>#routeHome{background:none
  --v3-edge:linear-gradient(90deg,transparent,#000 4%,#000 96%,transparent),linear-gradient(180deg,transparent,#000 4%,#000 96%,transparent);
  -webkit-mask:var(--v3-edge);-webkit-mask-composite:source-in;mask:var(--v3-edge);mask-composite:intersect}
 .v3Panel{display:flex;flex-direction:column;justify-content:flex-start;padding-top:72px!important;gap:var(--v3-s4);padding:var(--v3-s6) var(--v3-s6) var(--v3-s8) var(--v3-s2)}
-.v3Panel h1{font:var(--v3-large);letter-spacing:-.015em;text-wrap:balance}
+.v3Panel h1{font:var(--v3-large);letter-spacing:-.015em;text-wrap:balance;border-radius:8px}
+/* Focus on the title never changes its size (lesson from the finish screen): ring only. */
+.v3Panel h1:focus{outline:0}.v3Panel h1:focus-visible{outline:3px solid var(--v3-focus,#1d6fd8);outline-offset:4px}
 .v3Panel h1 small{display:block;margin-bottom:var(--v3-s1);font:var(--v3-foot);letter-spacing:.06em;text-transform:uppercase;color:var(--v3-accent)}
 .v3StageBar{display:flex;gap:6px}.v3StageBar span{flex:1;height:8px;border-radius:4px;background:var(--v3-line)}.v3StageBar .on{background:var(--v3-accent)}.v3StageBar .now{background:var(--v3-accent-soft);box-shadow:inset 0 0 0 2px var(--v3-accent)}
 .v3Actions .v3Btn.primary{width:100%}

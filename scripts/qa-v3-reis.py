@@ -127,6 +127,27 @@ WORDBREAK_JS = '''() => {
   return out;
 }'''
 
+# Hermes V3-01: context names stay in the map copy (owner: reference frame), but no label may contain one of the
+# 45 learning names (name or alias; accents and letter-spacing ignored, whole words).
+LABELS_JS = r"""() => { const norm = t => t.normalize('NFD').replace(/[̀-ͯ]/g, '').toLowerCase();
+  const esc = s => s.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+  const names = ITEMS.flatMap(i => [i.name, ...(i.aliases || [])]).filter(Boolean).map(n => ({n, re: new RegExp('(^|[^a-z0-9])' + esc(norm(n)) + '([^a-z0-9]|$)')}));
+  const labels = [...new Set([...document.querySelectorAll('.v3Map text')].map(t => t.textContent.trim()).filter(Boolean))];
+  const hits = []; for (const l of labels) { const a = norm(l), b = a.replace(/\s+/g, ''); for (const {n, re} of names) if (re.test(a) || re.test(b)) hits.push(l + ' ⊃ ' + n); }
+  return {labels, hits, names: names.length}; }"""
+# Hermes V3-02: the style switch may not cover any highlighted place of the chosen chapter (filled shape or point),
+# sampled every 2 CSS px inside the switch with isPointInFill / isPointInStroke on the real SVG elements.
+OCCLUSION_JS = r"""() => { const sw = document.querySelector('.v3Switch'), svg = document.querySelector('.v3Map'); if (!sw || !svg) return null;
+  const a = sw.getBoundingClientRect(), s = svg.getBoundingClientRect(), x0 = Math.max(a.left, s.left), x1 = Math.min(a.right, s.right), y0 = Math.max(a.top, s.top), y1 = Math.min(a.bottom, s.bottom);
+  const out = {rectOverlap: Math.max(0, x1 - x0) * Math.max(0, y1 - y0), covered: {}};
+  if (out.rectOverlap <= 0) return out;
+  const hits = [...svg.querySelectorAll('.v3Hit')];
+  for (const n of hits) { const m = n.getScreenCTM().inverse(), p = svg.createSVGPoint(), id = n.getAttribute('data-id'); let c = 0;
+    for (let x = x0; x <= x1; x += 2) for (let y = y0; y <= y1; y += 2) { p.x = x; p.y = y; const q = p.matrixTransform(m); if (n.isPointInFill(q) || n.isPointInStroke(q)) c++; }
+    if (c) out.covered[id] = c * 4; }
+  return out; }"""
+
+
 async def settle(pg):
     await pg.wait_for_timeout(600)
     await pg.evaluate('Promise.allSettled([...document.images].map(i=>i.decode()))')
@@ -145,10 +166,43 @@ async def main():
             for st in STATES:
                 await pg.goto(HTML.as_uri() + '#' + st); await settle(pg)
                 lay = await pg.evaluate(LAYOUT_JS); lay['brokenWords'] = await pg.evaluate(WORDBREAK_JS)
+                lay['labels'] = await pg.evaluate(LABELS_JS); lay['switchOcclusion'] = await pg.evaluate(OCCLUSION_JS)
                 lay['frame'] = {**(lay['frame'] or {}), **await sample_frame(pg)}
                 res['layout'][vp + '/' + st] = lay
                 await pg.screenshot(path=str(OUT / f'{st}-{vp}.png'))
             await ctx.close()
+
+        # V3-01 negative control: a learning name in a map label must be caught.
+        ctx = await b.new_context(viewport={'width': 1440, 'height': 900}); pg = await ctx.new_page()
+        await pg.goto(HTML.as_uri() + '#bezig'); await settle(pg)
+        await pg.evaluate("(() => { const t = document.createElementNS('http://www.w3.org/2000/svg', 'text'); t.textContent = 'B A R I'; t.id = 'qaProbe'; document.querySelector('.v3Map').append(t); })()")
+        res['labelCheckControl'] = (await pg.evaluate(LABELS_JS))['hits']; await ctx.close()
+
+        # V3-02: every chapter × both map styles on the phone formats (Hermes repro: #afgerond, 390×844, Eilanden → Schoolkaart).
+        res['switchSweep'] = {}
+        for vp in ('phone', 'phone-small', 'ipad-portrait'):
+            w, h, touch = VIEWPORTS[vp]
+            ctx = await b.new_context(viewport={'width': w, 'height': h}, has_touch=touch, is_mobile=vp.startswith('phone')); pg = await ctx.new_page()
+            await pg.goto(HTML.as_uri() + '#afgerond'); await settle(pg)
+            for ch in await pg.eval_on_selector_all('.v3Row', 'bs=>bs.map(b=>b.dataset.chapter)'):
+                await pg.click(f'.v3Row[data-chapter="{ch}"]'); await settle(pg)
+                for relief in ('false', 'true'):
+                    await pg.click(f'.v3Switch button[data-relief="{relief}"]'); await settle(pg)
+                    o = await pg.evaluate(OCCLUSION_JS); res['switchSweep'][f'{vp}/{ch}/{"reliëf" if relief == "true" else "schoolkaart"}'] = o
+                    if vp == 'phone' and ch == 'islands' and relief == 'false': await pg.screenshot(path=str(OUT / 'v3-02-eilanden-schoolkaart-phone.png'))
+            await ctx.close()
+
+        # V3-03: phone keyboard — Tab to Steden 7–12, Enter: focus lands on the chosen chapter's title, next Tab on its action.
+        ctx = await b.new_context(viewport={'width': 390, 'height': 844}, has_touch=True, is_mobile=True); pg = await ctx.new_page()
+        await pg.goto(HTML.as_uri() + '#alles'); await settle(pg)
+        for _ in range(40):
+            await pg.keyboard.press('Tab')
+            if await pg.evaluate('document.activeElement.dataset.chapter') == 'city2': break
+        await pg.keyboard.press('Enter'); await settle(pg)
+        k = await pg.evaluate("({active: document.activeElement.id || document.activeElement.tagName, text: document.activeElement.textContent.trim().slice(0, 40), selected: document.querySelector('.v3Row[aria-pressed=true]')?.dataset.chapter, ring: getComputedStyle(document.activeElement).outlineStyle, inView: (r => r.top >= 0 && r.bottom <= innerHeight)(document.activeElement.getBoundingClientRect())})")
+        await pg.screenshot(path=str(OUT / 'v3-03-focus-titel-phone.png'))
+        await pg.keyboard.press('Tab'); k['nextTab'] = await pg.evaluate('document.activeElement.textContent.trim().slice(0, 40)')
+        res['phoneSelectFocus'] = k; await ctx.close()
 
         # Flows on desktop and phone.
         for vp in ('desktop', 'phone'):
@@ -225,6 +279,11 @@ async def main():
         'lastRowHiddenByTabBar': [k for k, v in lay.items() if not v.get('lastRowClear', True)],
         # Reference frame: Alpine neighbours, Croatia, both big islands, North Africa and at least three seas visible.
         'mapFrameShort': {k: sorted(set(MUST_SEE) - set(v['frame']['visible'])) for k, v in lay.items() if v.get('frame') and (set(MUST_SEE) - set(v['frame']['visible']) or sum(n.startswith('zee') for n in v['frame']['visible']) < 3)},
+        'labelsWithLearningName': {k: v['labels']['hits'] for k, v in lay.items() if v['labels']['hits']},
+        'labelCheckCatchesControl': bool(res['labelCheckControl']),
+        'contextLabels': sorted({l for v in lay.values() for l in v['labels']['labels']}),
+        'switchCoversPlace': {k: v['covered'] for k, v in {**{kk: vv['switchOcclusion'] for kk, vv in lay.items()}, **res['switchSweep']}.items() if v and v['covered']},
+        'phoneSelectFocusOnTitle': res['phoneSelectFocus']['active'] == 'v3Title' and res['phoneSelectFocus']['selected'] == 'city2' and res['phoneSelectFocus']['inView'],
         'errors': len(res['errors'])}
     (OUT / 'results.json').write_text(json.dumps(res, indent=1, ensure_ascii=False))
     print(json.dumps(res['summary'], indent=1, ensure_ascii=False)); print(json.dumps(res['flows'], indent=1, ensure_ascii=False)); print(json.dumps(res['keyboard'], ensure_ascii=False)[:700]); print('theme', res['theme'], 'reducedMotion', res['reducedMotion'])

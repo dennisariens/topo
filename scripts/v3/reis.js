@@ -146,8 +146,9 @@
    else{const segs=make('span','v3Segs');for(let i=0;i<3;i++){const s=make('i');if(i<c.r.stage)s.className='on';segs.append(s);}end.append(segs);end.setAttribute('aria-label',c.r.stage+' van 3 lessen');}
    b.append(num,thumb,name,end);
    b.addEventListener('click',e=>{e.stopPropagation();ui.selected=c.id;render();
-    // Phone: the chosen chapter appears at the top, so bring it into view; elsewhere keep focus on the list.
-    if(matchMedia('(max-width:767px)').matches)main.scrollIntoView({block:'start',behavior:matchMedia('(prefers-reduced-motion:reduce)').matches?'auto':'smooth'});
+    // Phone: the chosen chapter appears at the top: focus its title (keyboard position kept, read by screen readers)
+    // and bring it into view; elsewhere keep focus on the list.
+    if(matchMedia('(max-width:767px)').matches){$('#v3Title')?.focus({preventScroll:true});main.scrollIntoView({block:'start',behavior:matchMedia('(prefers-reduced-motion:reduce)').matches?'auto':'smooth'});}
     else root.querySelector('.v3Row[data-chapter="'+c.id+'"]')?.focus();});
    li.append(b);return li;
   }));
@@ -155,7 +156,8 @@
 
  function renderPanel(m,c){
   panel.replaceChildren();if(!c)return;
-  const st=stateOf(c,m),h=make('h1');h.id='v3Title';
+  // tabindex -1: on phone, focus moves here after choosing a chapter (Hermes V3-03).
+  const st=stateOf(c,m),h=make('h1');h.id='v3Title';h.tabIndex=-1;
   h.append(make('small',null,'Hoofdstuk '+(c.index+1)),range(c.title));panel.append(h);
   const segs=make('div','v3StageBar');segs.setAttribute('role','list');
   TopoRoute.STAGES.forEach((s,n)=>{const d=make('span',n<c.r.stage?'on':n===c.r.stage&&c.open&&!c.done?'now':'');d.setAttribute('role','listitem');d.setAttribute('aria-label',STAGE[s]+(n<c.r.stage?', klaar':n===c.r.stage&&c.open?', nu':''));segs.append(d);});

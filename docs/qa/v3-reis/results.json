@@ -1,7 +1,7 @@
 {
  "html": "output/html/TOPO-V3-Reis-Preview.html",
- "sha256": "c7972188fa9816dddb620b696dd5931c5e9e2b5e7f6c25edb5fd53bec43310db",
- "bytes": 41817596,
+ "sha256": "8a9da16cc57e6bbf158db4f73a83b5548ae5ecc66f1e89164c04cfe194e9f3ba",
+ "bytes": 41818040,
  "layout": {
   "desktop/nieuw": {
    "frame": {
@@ -57,7 +57,25 @@
    "small": [],
    "clipped": [],
    "horizontalOverflow": false,
-   "brokenWords": []
+   "brokenWords": [],
+   "labels": {
+    "labels": [
+     "I T A L I Ë",
+     "DUITSLAND",
+     "TSJECHIË",
+     "SLOWAKIJE",
+     "HONGARIJE",
+     "BOSNIË",
+     "TUNESIË",
+     "▲"
+    ],
+    "hits": [],
+    "names": 56
+   },
+   "switchOcclusion": {
+    "rectOverlap": 7274.53125,
+    "covered": {}
+   }
   },
   "desktop/bezig": {
    "frame": {
@@ -113,7 +131,25 @@
    "small": [],
    "clipped": [],
    "horizontalOverflow": false,
-   "brokenWords": []
+   "brokenWords": [],
+   "labels": {
+    "labels": [
+     "I T A L I Ë",
+     "DUITSLAND",
+     "TSJECHIË",
+     "SLOWAKIJE",
+     "HONGARIJE",
+     "BOSNIË",
+     "TUNESIË",
+     "▲"
+    ],
+    "hits": [],
+    "names": 56
+   },
+   "switchOcclusion": {
+    "rectOverlap": 7274.53125,
+    "covered": {}
+   }
   },
   "desktop/afgerond": {
    "frame": {
@@ -169,7 +205,25 @@
    "small": [],
    "clipped": [],
    "horizontalOverflow": false,
-   "brokenWords": []
+   "brokenWords": [],
+   "labels": {
+    "labels": [
+     "I T A L I Ë",
+     "DUITSLAND",
+     "TSJECHIË",
+     "SLOWAKIJE",
+     "HONGARIJE",
+     "BOSNIË",
+     "TUNESIË",
+     "▲"
+    ],
+    "hits": [],
+    "names": 56
+   },
+   "switchOcclusion": {
+    "rectOverlap": 7274.53125,
+    "covered": {}
+   }
   },
   "desktop/alles": {
    "frame": {
@@ -225,7 +279,25 @@
    "small": [],
    "clipped": [],
    "horizontalOverflow": false,
-   "brokenWords": []
+   "brokenWords": [],
+   "labels": {
+    "labels": [
+     "I T A L I Ë",
+     "DUITSLAND",
+     "TSJECHIË",
+     "SLOWAKIJE",
+     "HONGARIJE",
+     "BOSNIË",
+     "TUNESIË",
+     "▲"
+    ],
+    "hits": [],
+    "names": 56
+   },
+   "switchOcclusion": {
+    "rectOverlap": 7274.53125,
+    "covered": {}
+   }
   },
   "ipad-portrait/nieuw": {
    "frame": {
@@ -281,7 +353,25 @@
    "small": [],
    "clipped": [],
    "horizontalOverflow": false,
-   "brokenWords": []
+   "brokenWords": [],
+   "labels": {
+    "labels": [
+     "I T A L I Ë",
+     "DUITSLAND",
+     "TSJECHIË",
+     "SLOWAKIJE",
+     "HONGARIJE",
+     "BOSNIË",
+     "TUNESIË",
+     "▲"
+    ],
+    "hits": [],
+    "names": 56
+   },
+   "switchOcclusion": {
+    "rectOverlap": 7274.53125,
+    "covered": {}
+   }
   },
   "ipad-portrait/bezig": {
    "frame": {
@@ -337,7 +427,25 @@
    "small": [],
    "clipped": [],
    "horizontalOverflow": false,
-   "brokenWords": []
+   "brokenWords": [],
+   "labels": {
+    "labels": [
+     "I T A L I Ë",
+     "DUITSLAND",
+     "TSJECHIË",
+     "SLOWAKIJE",
+     "HONGARIJE",
+     "BOSNIË",
+     "TUNESIË",
+     "▲"
+    ],
+    "hits": [],
+    "names": 56
+   },
+   "switchOcclusion": {
+    "rectOverlap": 7274.53125,
+    "covered": {}
+   }
   },
   "ipad-portrait/afgerond": {
    "frame": {
@@ -393,7 +501,25 @@
    "small": [],
    "clipped": [],
    "horizontalOverflow": false,
-   "brokenWords": []
+   "brokenWords": [],
+   "labels": {
+    "labels": [
+     "I T A L I Ë",
+     "DUITSLAND",
+     "TSJECHIË",
+     "SLOWAKIJE",
+     "HONGARIJE",
+     "BOSNIË",
+     "TUNESIË",
+     "▲"
+    ],
+    "hits": [],
+    "names": 56
+   },
+   "switchOcclusion": {
+    "rectOverlap": 7274.53125,
+    "covered": {}
+   }
   },
   "ipad-portrait/alles": {
    "frame": {
@@ -449,7 +575,25 @@
    "small": [],
    "clipped": [],
    "horizontalOverflow": false,
-   "brokenWords": []
+   "brokenWords": [],
+   "labels": {
+    "labels": [
+     "I T A L I Ë",
+     "DUITSLAND",
+     "TSJECHIË",
+     "SLOWAKIJE",
+     "HONGARIJE",
+     "BOSNIË",
+     "TUNESIË",
+     "▲"
+    ],
+    "hits": [],
+    "names": 56
+   },
+   "switchOcclusion": {
+    "rectOverlap": 7274.53125,
+    "covered": {}
+   }
   },
   "ipad-landscape/nieuw": {
    "frame": {
@@ -505,7 +649,25 @@
    "small": [],
    "clipped": [],
    "horizontalOverflow": false,
-   "brokenWords": []
+   "brokenWords": [],
+   "labels": {
+    "labels": [
+     "I T A L I Ë",
+     "DUITSLAND",
+     "TSJECHIË",
+     "SLOWAKIJE",
+     "HONGARIJE",
+     "BOSNIË",
+     "TUNESIË",
+     "▲"
+    ],
+    "hits": [],
+    "names": 56
+   },
+   "switchOcclusion": {
+    "rectOverlap": 7274.53125,
+    "covered": {}
+   }
   },
   "ipad-landscape/bezig": {
    "frame": {
@@ -561,7 +723,25 @@
    "small": [],
    "clipped": [],
    "horizontalOverflow": false,
-   "brokenWords": []
+   "brokenWords": [],
+   "labels": {
+    "labels": [
+     "I T A L I Ë",
+     "DUITSLAND",
+     "TSJECHIË",
+     "SLOWAKIJE",
+     "HONGARIJE",
+     "BOSNIË",
+     "TUNESIË",
+     "▲"
+    ],
+    "hits": [],
+    "names": 56
+   },
+   "switchOcclusion": {
+    "rectOverlap": 7274.53125,
+    "covered": {}
+   }
   },
   "ipad-landscape/afgerond": {
    "frame": {
@@ -617,7 +797,25 @@
    "small": [],
    "clipped": [],
    "horizontalOverflow": false,
-   "brokenWords": []
+   "brokenWords": [],
+   "labels": {
+    "labels": [
+     "I T A L I Ë",
+     "DUITSLAND",
+     "TSJECHIË",
+     "SLOWAKIJE",
+     "HONGARIJE",
+     "BOSNIË",
+     "TUNESIË",
+     "▲"
+    ],
+    "hits": [],
+    "names": 56
+   },
+   "switchOcclusion": {
+    "rectOverlap": 7274.53125,
+    "covered": {}
+   }
   },
   "ipad-landscape/alles": {
    "frame": {
@@ -673,7 +871,25 @@
    "small": [],
    "clipped": [],
    "horizontalOverflow": false,
-   "brokenWords": []
+   "brokenWords": [],
+   "labels": {
+    "labels": [
+     "I T A L I Ë",
+     "DUITSLAND",
+     "TSJECHIË",
+     "SLOWAKIJE",
+     "HONGARIJE",
+     "BOSNIË",
+     "TUNESIË",
+     "▲"
+    ],
+    "hits": [],
+    "names": 56
+   },
+   "switchOcclusion": {
+    "rectOverlap": 7274.53125,
+    "covered": {}
+   }
   },
   "phone/nieuw": {
    "frame": {
@@ -728,7 +944,25 @@
    "small": [],
    "clipped": [],
    "horizontalOverflow": false,
-   "brokenWords": []
+   "brokenWords": [],
+   "labels": {
+    "labels": [
+     "I T A L I Ë",
+     "DUITSLAND",
+     "TSJECHIË",
+     "SLOWAKIJE",
+     "HONGARIJE",
+     "BOSNIË",
+     "TUNESIË",
+     "▲"
+    ],
+    "hits": [],
+    "names": 56
+   },
+   "switchOcclusion": {
+    "rectOverlap": 0,
+    "covered": {}
+   }
   },
   "phone/bezig": {
    "frame": {
@@ -783,7 +1017,25 @@
    "small": [],
    "clipped": [],
    "horizontalOverflow": false,
-   "brokenWords": []
+   "brokenWords": [],
+   "labels": {
+    "labels": [
+     "I T A L I Ë",
+     "DUITSLAND",
+     "TSJECHIË",
+     "SLOWAKIJE",
+     "HONGARIJE",
+     "BOSNIË",
+     "TUNESIË",
+     "▲"
+    ],
+    "hits": [],
+    "names": 56
+   },
+   "switchOcclusion": {
+    "rectOverlap": 0,
+    "covered": {}
+   }
   },
   "phone/afgerond": {
    "frame": {
@@ -838,7 +1090,25 @@
    "small": [],
    "clipped": [],
    "horizontalOverflow": false,
-   "brokenWords": []
+   "brokenWords": [],
+   "labels": {
+    "labels": [
+     "I T A L I Ë",
+     "DUITSLAND",
+     "TSJECHIË",
+     "SLOWAKIJE",
+     "HONGARIJE",
+     "BOSNIË",
+     "TUNESIË",
+     "▲"
+    ],
+    "hits": [],
+    "names": 56
+   },
+   "switchOcclusion": {
+    "rectOverlap": 0,
+    "covered": {}
+   }
   },
   "phone/alles": {
    "frame": {
@@ -893,7 +1163,25 @@
    "small": [],
    "clipped": [],
    "horizontalOverflow": false,
-   "brokenWords": []
+   "brokenWords": [],
+   "labels": {
+    "labels": [
+     "I T A L I Ë",
+     "DUITSLAND",
+     "TSJECHIË",
+     "SLOWAKIJE",
+     "HONGARIJE",
+     "BOSNIË",
+     "TUNESIË",
+     "▲"
+    ],
+    "hits": [],
+    "names": 56
+   },
+   "switchOcclusion": {
+    "rectOverlap": 0,
+    "covered": {}
+   }
   },
   "phone-small/nieuw": {
    "frame": {
@@ -948,7 +1236,25 @@
    "small": [],
    "clipped": [],
    "horizontalOverflow": false,
-   "brokenWords": []
+   "brokenWords": [],
+   "labels": {
+    "labels": [
+     "I T A L I Ë",
+     "DUITSLAND",
+     "TSJECHIË",
+     "SLOWAKIJE",
+     "HONGARIJE",
+     "BOSNIË",
+     "TUNESIË",
+     "▲"
+    ],
+    "hits": [],
+    "names": 56
+   },
+   "switchOcclusion": {
+    "rectOverlap": 0,
+    "covered": {}
+   }
   },
   "phone-small/bezig": {
    "frame": {
@@ -1003,7 +1309,25 @@
    "small": [],
    "clipped": [],
    "horizontalOverflow": false,
-   "brokenWords": []
+   "brokenWords": [],
+   "labels": {
+    "labels": [
+     "I T A L I Ë",
+     "DUITSLAND",
+     "TSJECHIË",
+     "SLOWAKIJE",
+     "HONGARIJE",
+     "BOSNIË",
+     "TUNESIË",
+     "▲"
+    ],
+    "hits": [],
+    "names": 56
+   },
+   "switchOcclusion": {
+    "rectOverlap": 0,
+    "covered": {}
+   }
   },
   "phone-small/afgerond": {
    "frame": {
@@ -1058,7 +1382,25 @@
    "small": [],
    "clipped": [],
    "horizontalOverflow": false,
-   "brokenWords": []
+   "brokenWords": [],
+   "labels": {
+    "labels": [
+     "I T A L I Ë",
+     "DUITSLAND",
+     "TSJECHIË",
+     "SLOWAKIJE",
+     "HONGARIJE",
+     "BOSNIË",
+     "TUNESIË",
+     "▲"
+    ],
+    "hits": [],
+    "names": 56
+   },
+   "switchOcclusion": {
+    "rectOverlap": 0,
+    "covered": {}
+   }
   },
   "phone-small/alles": {
    "frame": {
@@ -1113,7 +1455,25 @@
    "small": [],
    "clipped": [],
    "horizontalOverflow": false,
-   "brokenWords": []
+   "brokenWords": [],
+   "labels": {
+    "labels": [
+     "I T A L I Ë",
+     "DUITSLAND",
+     "TSJECHIË",
+     "SLOWAKIJE",
+     "HONGARIJE",
+     "BOSNIË",
+     "TUNESIË",
+     "▲"
+    ],
+    "hits": [],
+    "names": 56
+   },
+   "switchOcclusion": {
+    "rectOverlap": 0,
+    "covered": {}
+   }
   }
  },
  "flows": {
@@ -1191,9 +1551,9 @@
    },
    "backVia": "v3Btn v3LesBack",
    "primaryLabelWithActive": "Ga verder · Ontdekken",
-   "questionBefore": "city-12",
+   "questionBefore": "city-11",
    "reisVerderSameQuestion": {
-    "id": "city-12",
+    "id": "city-11",
     "chapter": "city2",
     "kind": "discover"
    },
@@ -1209,6 +1569,283 @@
  },
  "errors": [],
  "browser": "Chrome 157.0.8103.38",
+ "labelCheckControl": [
+  "B A R I ⊃ Bari"
+ ],
+ "switchSweep": {
+  "phone/city1/schoolkaart": {
+   "rectOverlap": 0,
+   "covered": {}
+  },
+  "phone/city1/reliëf": {
+   "rectOverlap": 0,
+   "covered": {}
+  },
+  "phone/city2/schoolkaart": {
+   "rectOverlap": 0,
+   "covered": {}
+  },
+  "phone/city2/reliëf": {
+   "rectOverlap": 0,
+   "covered": {}
+  },
+  "phone/city3/schoolkaart": {
+   "rectOverlap": 0,
+   "covered": {}
+  },
+  "phone/city3/reliëf": {
+   "rectOverlap": 0,
+   "covered": {}
+  },
+  "phone/city4/schoolkaart": {
+   "rectOverlap": 0,
+   "covered": {}
+  },
+  "phone/city4/reliëf": {
+   "rectOverlap": 0,
+   "covered": {}
+  },
+  "phone/islands/schoolkaart": {
+   "rectOverlap": 0,
+   "covered": {}
+  },
+  "phone/islands/reliëf": {
+   "rectOverlap": 0,
+   "covered": {}
+  },
+  "phone/mountains/schoolkaart": {
+   "rectOverlap": 0,
+   "covered": {}
+  },
+  "phone/mountains/reliëf": {
+   "rectOverlap": 0,
+   "covered": {}
+  },
+  "phone/volcanoes/schoolkaart": {
+   "rectOverlap": 0,
+   "covered": {}
+  },
+  "phone/volcanoes/reliëf": {
+   "rectOverlap": 0,
+   "covered": {}
+  },
+  "phone/regions/schoolkaart": {
+   "rectOverlap": 0,
+   "covered": {}
+  },
+  "phone/regions/reliëf": {
+   "rectOverlap": 0,
+   "covered": {}
+  },
+  "phone/countries/schoolkaart": {
+   "rectOverlap": 0,
+   "covered": {}
+  },
+  "phone/countries/reliëf": {
+   "rectOverlap": 0,
+   "covered": {}
+  },
+  "phone/seas/schoolkaart": {
+   "rectOverlap": 0,
+   "covered": {}
+  },
+  "phone/seas/reliëf": {
+   "rectOverlap": 0,
+   "covered": {}
+  },
+  "phone/rivers/schoolkaart": {
+   "rectOverlap": 0,
+   "covered": {}
+  },
+  "phone/rivers/reliëf": {
+   "rectOverlap": 0,
+   "covered": {}
+  },
+  "phone-small/city1/schoolkaart": {
+   "rectOverlap": 0,
+   "covered": {}
+  },
+  "phone-small/city1/reliëf": {
+   "rectOverlap": 0,
+   "covered": {}
+  },
+  "phone-small/city2/schoolkaart": {
+   "rectOverlap": 0,
+   "covered": {}
+  },
+  "phone-small/city2/reliëf": {
+   "rectOverlap": 0,
+   "covered": {}
+  },
+  "phone-small/city3/schoolkaart": {
+   "rectOverlap": 0,
+   "covered": {}
+  },
+  "phone-small/city3/reliëf": {
+   "rectOverlap": 0,
+   "covered": {}
+  },
+  "phone-small/city4/schoolkaart": {
+   "rectOverlap": 0,
+   "covered": {}
+  },
+  "phone-small/city4/reliëf": {
+   "rectOverlap": 0,
+   "covered": {}
+  },
+  "phone-small/islands/schoolkaart": {
+   "rectOverlap": 0,
+   "covered": {}
+  },
+  "phone-small/islands/reliëf": {
+   "rectOverlap": 0,
+   "covered": {}
+  },
+  "phone-small/mountains/schoolkaart": {
+   "rectOverlap": 0,
+   "covered": {}
+  },
+  "phone-small/mountains/reliëf": {
+   "rectOverlap": 0,
+   "covered": {}
+  },
+  "phone-small/volcanoes/schoolkaart": {
+   "rectOverlap": 0,
+   "covered": {}
+  },
+  "phone-small/volcanoes/reliëf": {
+   "rectOverlap": 0,
+   "covered": {}
+  },
+  "phone-small/regions/schoolkaart": {
+   "rectOverlap": 0,
+   "covered": {}
+  },
+  "phone-small/regions/reliëf": {
+   "rectOverlap": 0,
+   "covered": {}
+  },
+  "phone-small/countries/schoolkaart": {
+   "rectOverlap": 0,
+   "covered": {}
+  },
+  "phone-small/countries/reliëf": {
+   "rectOverlap": 0,
+   "covered": {}
+  },
+  "phone-small/seas/schoolkaart": {
+   "rectOverlap": 0,
+   "covered": {}
+  },
+  "phone-small/seas/reliëf": {
+   "rectOverlap": 0,
+   "covered": {}
+  },
+  "phone-small/rivers/schoolkaart": {
+   "rectOverlap": 0,
+   "covered": {}
+  },
+  "phone-small/rivers/reliëf": {
+   "rectOverlap": 0,
+   "covered": {}
+  },
+  "ipad-portrait/city1/schoolkaart": {
+   "rectOverlap": 7274.53125,
+   "covered": {}
+  },
+  "ipad-portrait/city1/reliëf": {
+   "rectOverlap": 7274.53125,
+   "covered": {}
+  },
+  "ipad-portrait/city2/schoolkaart": {
+   "rectOverlap": 7274.53125,
+   "covered": {}
+  },
+  "ipad-portrait/city2/reliëf": {
+   "rectOverlap": 7274.53125,
+   "covered": {}
+  },
+  "ipad-portrait/city3/schoolkaart": {
+   "rectOverlap": 7274.53125,
+   "covered": {}
+  },
+  "ipad-portrait/city3/reliëf": {
+   "rectOverlap": 7274.53125,
+   "covered": {}
+  },
+  "ipad-portrait/city4/schoolkaart": {
+   "rectOverlap": 7274.53125,
+   "covered": {}
+  },
+  "ipad-portrait/city4/reliëf": {
+   "rectOverlap": 7274.53125,
+   "covered": {}
+  },
+  "ipad-portrait/islands/schoolkaart": {
+   "rectOverlap": 7274.53125,
+   "covered": {}
+  },
+  "ipad-portrait/islands/reliëf": {
+   "rectOverlap": 7274.53125,
+   "covered": {}
+  },
+  "ipad-portrait/mountains/schoolkaart": {
+   "rectOverlap": 7274.53125,
+   "covered": {}
+  },
+  "ipad-portrait/mountains/reliëf": {
+   "rectOverlap": 7274.53125,
+   "covered": {}
+  },
+  "ipad-portrait/volcanoes/schoolkaart": {
+   "rectOverlap": 7274.53125,
+   "covered": {}
+  },
+  "ipad-portrait/volcanoes/reliëf": {
+   "rectOverlap": 7274.53125,
+   "covered": {}
+  },
+  "ipad-portrait/regions/schoolkaart": {
+   "rectOverlap": 7274.53125,
+   "covered": {}
+  },
+  "ipad-portrait/regions/reliëf": {
+   "rectOverlap": 7274.53125,
+   "covered": {}
+  },
+  "ipad-portrait/countries/schoolkaart": {
+   "rectOverlap": 7274.53125,
+   "covered": {}
+  },
+  "ipad-portrait/countries/reliëf": {
+   "rectOverlap": 7274.53125,
+   "covered": {}
+  },
+  "ipad-portrait/seas/schoolkaart": {
+   "rectOverlap": 7274.53125,
+   "covered": {}
+  },
+  "ipad-portrait/seas/reliëf": {
+   "rectOverlap": 7274.53125,
+   "covered": {}
+  },
+  "ipad-portrait/rivers/schoolkaart": {
+   "rectOverlap": 7274.53125,
+   "covered": {}
+  },
+  "ipad-portrait/rivers/reliëf": {
+   "rectOverlap": 7274.53125,
+   "covered": {}
+  }
+ },
+ "phoneSelectFocus": {
+  "active": "v3Title",
+  "text": "Hoofdstuk 2Steden 7–12",
+  "selected": "city2",
+  "ring": "solid",
+  "inView": true,
+  "nextTab": "★ Goud nog eens"
+ },
  "theme": {
   "viola": "rgb(91, 69, 224)",
   "italia": "rgb(185, 80, 47)"
@@ -1256,6 +1893,20 @@
   "horizontalOverflow": [],
   "lastRowHiddenByTabBar": [],
   "mapFrameShort": {},
+  "labelsWithLearningName": {},
+  "labelCheckCatchesControl": true,
+  "contextLabels": [
+   "BOSNIË",
+   "DUITSLAND",
+   "HONGARIJE",
+   "I T A L I Ë",
+   "SLOWAKIJE",
+   "TSJECHIË",
+   "TUNESIË",
+   "▲"
+  ],
+  "switchCoversPlace": {},
+  "phoneSelectFocusOnTitle": true,
   "errors": 0
  }
 }

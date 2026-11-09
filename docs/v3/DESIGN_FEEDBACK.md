@@ -13,3 +13,5 @@ Design Taste-protocol: elke correctie krijgt een categorie (lay-out, identiteit,
 | 2026-11-09 | Beloningen | Boek in V3-stijl? Gekozen: B, rustig kader en rijk renaissance-boek; niet het donkere venster (A) of vlak modern (C) | identiteit, lay-out | DECISIONS 9-11 › Beloningen; DESIGN_SYSTEM › Beeld |
 | 2026-11-09 | alle | Het renderniveau is het doel; nieuw artwork is dat waard | identiteit, beeld | DECISIONS 9-11 › Renderniveau; docs/v3/ARTWORK_BRIEF.md |
 | 2026-11-09 | alle | Renderniveau: app zweeft boven landschap, levend reliëf, rijke hoofdstukbeelden | identiteit, beeld | DECISIONS › Renderniveau; ARTWORK_BRIEF; stijlbeeld `docs/qa/v3-stijlbeeld` (oordeel open) |
+| 2026-11-09 | iconen | Gele scooter? Nee: één rode Vespa (die van Nino); staat via kleur of grijs. Idee: gouden Vespa als eindbeloning bij 11× goud, naast Esploratore d'oro | identiteit | idee, nog niet besloten; brief › Iconen |
+| 2026-11-09 | iconen | Pizzapunt voor tellers (eenheid = punt), hele pizza voor meter en Beloningen | inhoud | ARTWORK_BRIEF › Iconen |

@@ -1,0 +1,406 @@
+{
+ "html": "output/html/TOPO-V3-Reis-Preview.html",
+ "sha256": "35a0c4696f42abe7555bcb4452540598c493812abc783412b78b9d06ac6a610d",
+ "bytes": 41476860,
+ "layout": {
+  "desktop/nieuw": {
+   "lastRowClear": true,
+   "primaryTop": 311,
+   "primaryBottom": 363,
+   "viewport": 900,
+   "primaryVisible": true,
+   "covered": false,
+   "overlaps": [],
+   "small": [],
+   "clipped": [],
+   "horizontalOverflow": false,
+   "brokenWords": []
+  },
+  "desktop/bezig": {
+   "lastRowClear": true,
+   "primaryTop": 311,
+   "primaryBottom": 363,
+   "viewport": 900,
+   "primaryVisible": true,
+   "covered": false,
+   "overlaps": [],
+   "small": [],
+   "clipped": [],
+   "horizontalOverflow": false,
+   "brokenWords": []
+  },
+  "desktop/afgerond": {
+   "lastRowClear": true,
+   "primaryTop": 311,
+   "primaryBottom": 363,
+   "viewport": 900,
+   "primaryVisible": true,
+   "covered": false,
+   "overlaps": [],
+   "small": [],
+   "clipped": [],
+   "horizontalOverflow": false,
+   "brokenWords": []
+  },
+  "desktop/alles": {
+   "lastRowClear": true,
+   "primaryTop": 311,
+   "primaryBottom": 363,
+   "viewport": 900,
+   "primaryVisible": true,
+   "covered": false,
+   "overlaps": [],
+   "small": [],
+   "clipped": [],
+   "horizontalOverflow": false,
+   "brokenWords": []
+  },
+  "ipad-portrait/nieuw": {
+   "lastRowClear": true,
+   "primaryTop": 239,
+   "primaryBottom": 291,
+   "viewport": 1180,
+   "primaryVisible": true,
+   "covered": false,
+   "overlaps": [],
+   "small": [],
+   "clipped": [],
+   "horizontalOverflow": false,
+   "brokenWords": []
+  },
+  "ipad-portrait/bezig": {
+   "lastRowClear": true,
+   "primaryTop": 239,
+   "primaryBottom": 291,
+   "viewport": 1180,
+   "primaryVisible": true,
+   "covered": false,
+   "overlaps": [],
+   "small": [],
+   "clipped": [],
+   "horizontalOverflow": false,
+   "brokenWords": []
+  },
+  "ipad-portrait/afgerond": {
+   "lastRowClear": true,
+   "primaryTop": 239,
+   "primaryBottom": 291,
+   "viewport": 1180,
+   "primaryVisible": true,
+   "covered": false,
+   "overlaps": [],
+   "small": [],
+   "clipped": [],
+   "horizontalOverflow": false,
+   "brokenWords": []
+  },
+  "ipad-portrait/alles": {
+   "lastRowClear": true,
+   "primaryTop": 239,
+   "primaryBottom": 291,
+   "viewport": 1180,
+   "primaryVisible": true,
+   "covered": false,
+   "overlaps": [],
+   "small": [],
+   "clipped": [],
+   "horizontalOverflow": false,
+   "brokenWords": []
+  },
+  "ipad-landscape/nieuw": {
+   "lastRowClear": true,
+   "primaryTop": 311,
+   "primaryBottom": 363,
+   "viewport": 820,
+   "primaryVisible": true,
+   "covered": false,
+   "overlaps": [],
+   "small": [],
+   "clipped": [],
+   "horizontalOverflow": false,
+   "brokenWords": []
+  },
+  "ipad-landscape/bezig": {
+   "lastRowClear": true,
+   "primaryTop": 311,
+   "primaryBottom": 363,
+   "viewport": 820,
+   "primaryVisible": true,
+   "covered": false,
+   "overlaps": [],
+   "small": [],
+   "clipped": [],
+   "horizontalOverflow": false,
+   "brokenWords": []
+  },
+  "ipad-landscape/afgerond": {
+   "lastRowClear": true,
+   "primaryTop": 311,
+   "primaryBottom": 363,
+   "viewport": 820,
+   "primaryVisible": true,
+   "covered": false,
+   "overlaps": [],
+   "small": [],
+   "clipped": [],
+   "horizontalOverflow": false,
+   "brokenWords": []
+  },
+  "ipad-landscape/alles": {
+   "lastRowClear": true,
+   "primaryTop": 311,
+   "primaryBottom": 363,
+   "viewport": 820,
+   "primaryVisible": true,
+   "covered": false,
+   "overlaps": [],
+   "small": [],
+   "clipped": [],
+   "horizontalOverflow": false,
+   "brokenWords": []
+  },
+  "phone/nieuw": {
+   "lastRowClear": true,
+   "primaryTop": 210,
+   "primaryBottom": 262,
+   "viewport": 844,
+   "primaryVisible": true,
+   "covered": false,
+   "overlaps": [],
+   "small": [],
+   "clipped": [],
+   "horizontalOverflow": false,
+   "brokenWords": []
+  },
+  "phone/bezig": {
+   "lastRowClear": true,
+   "primaryTop": 210,
+   "primaryBottom": 262,
+   "viewport": 844,
+   "primaryVisible": true,
+   "covered": false,
+   "overlaps": [],
+   "small": [],
+   "clipped": [],
+   "horizontalOverflow": false,
+   "brokenWords": []
+  },
+  "phone/afgerond": {
+   "lastRowClear": true,
+   "primaryTop": 210,
+   "primaryBottom": 262,
+   "viewport": 844,
+   "primaryVisible": true,
+   "covered": false,
+   "overlaps": [],
+   "small": [],
+   "clipped": [],
+   "horizontalOverflow": false,
+   "brokenWords": []
+  },
+  "phone/alles": {
+   "lastRowClear": true,
+   "primaryTop": 210,
+   "primaryBottom": 262,
+   "viewport": 844,
+   "primaryVisible": true,
+   "covered": false,
+   "overlaps": [],
+   "small": [],
+   "clipped": [],
+   "horizontalOverflow": false,
+   "brokenWords": []
+  },
+  "phone-small/nieuw": {
+   "lastRowClear": true,
+   "primaryTop": 210,
+   "primaryBottom": 262,
+   "viewport": 640,
+   "primaryVisible": true,
+   "covered": false,
+   "overlaps": [],
+   "small": [],
+   "clipped": [],
+   "horizontalOverflow": false,
+   "brokenWords": []
+  },
+  "phone-small/bezig": {
+   "lastRowClear": true,
+   "primaryTop": 210,
+   "primaryBottom": 262,
+   "viewport": 640,
+   "primaryVisible": true,
+   "covered": false,
+   "overlaps": [],
+   "small": [],
+   "clipped": [],
+   "horizontalOverflow": false,
+   "brokenWords": []
+  },
+  "phone-small/afgerond": {
+   "lastRowClear": true,
+   "primaryTop": 210,
+   "primaryBottom": 262,
+   "viewport": 640,
+   "primaryVisible": true,
+   "covered": false,
+   "overlaps": [],
+   "small": [],
+   "clipped": [],
+   "horizontalOverflow": false,
+   "brokenWords": []
+  },
+  "phone-small/alles": {
+   "lastRowClear": true,
+   "primaryTop": 210,
+   "primaryBottom": 262,
+   "viewport": 640,
+   "primaryVisible": true,
+   "covered": false,
+   "overlaps": [],
+   "small": [],
+   "clipped": [],
+   "horizontalOverflow": false,
+   "brokenWords": []
+  }
+ },
+ "flows": {
+  "desktop": {
+   "mapGeometry": {
+    "same": 46,
+    "diff": [],
+    "total": 46
+   },
+   "defaultSelected": "islands",
+   "hitsForCurrent": [
+    "area-a",
+    "area-b"
+   ],
+   "lockedText": "Opent na Bergen",
+   "lockedPrimary": 0,
+   "reliefOn": "block",
+   "reliefOff": "none",
+   "donePrimary": "★ Goud nog eens",
+   "replays": [
+    "↻ Ontdekken",
+    "↻ Aanwijzen",
+    "↻ Namen schrijven"
+   ],
+   "replayStarted": {
+    "chapter": "city2",
+    "kind": "discover",
+    "mode": "route",
+    "v3Hidden": true
+   },
+   "primaryLabelWithActive": "Ga verder · Ontdekken",
+   "questionBefore": "city-10",
+   "reisVerderSameQuestion": {
+    "id": "city-10",
+    "chapter": "city2",
+    "kind": "discover"
+   },
+   "sameQuestion": true,
+   "activeTab": [
+    "Reis:page",
+    "Oefenen:false",
+    "Reisboekje:null",
+    "⚙:null"
+   ],
+   "memoryStorage": true
+  },
+  "phone": {
+   "mapGeometry": {
+    "same": 46,
+    "diff": [],
+    "total": 46
+   },
+   "defaultSelected": "islands",
+   "hitsForCurrent": [
+    "area-a",
+    "area-b"
+   ],
+   "lockedText": "Opent na Bergen",
+   "lockedPrimary": 0,
+   "reliefOn": "block",
+   "reliefOff": "none",
+   "donePrimary": "★ Goud nog eens",
+   "replays": [
+    "↻ Ontdekken",
+    "↻ Aanwijzen",
+    "↻ Namen schrijven"
+   ],
+   "phonePanelInView": true,
+   "replayStarted": {
+    "chapter": "city2",
+    "kind": "discover",
+    "mode": "route",
+    "v3Hidden": true
+   },
+   "primaryLabelWithActive": "Ga verder · Ontdekken",
+   "questionBefore": "city-10",
+   "reisVerderSameQuestion": {
+    "id": "city-10",
+    "chapter": "city2",
+    "kind": "discover"
+   },
+   "sameQuestion": true,
+   "activeTab": [
+    "Reis:page",
+    "Oefenen:false",
+    "Reisboekje:null",
+    "⚙:null"
+   ],
+   "memoryStorage": true
+  }
+ },
+ "errors": [],
+ "browser": "Chrome 156.0.8078.4",
+ "theme": {
+  "viola": "rgb(91, 69, 224)",
+  "italia": "rgb(185, 80, 47)"
+ },
+ "keyboard": {
+  "order": [
+   "Nieuw profiel",
+   "Halte bezig",
+   "Haltes afgerond",
+   "Alles af",
+   "Italia",
+   "Viola",
+   "Naast elkaar: desktop + ",
+   "Reis",
+   "Oefenen",
+   "Beloningen",
+   "Instellingen",
+   "city1",
+   "city2",
+   "city3",
+   "city4",
+   "islands",
+   "mountains",
+   "volcanoes",
+   "regions",
+   "countries",
+   "seas",
+   "rivers",
+   "Schoolkaart",
+   "Reliëf",
+   "Aanwijzen",
+   "↻ Ontdekken"
+  ],
+  "enterSelects": "true",
+  "focusRing": "solid 3px"
+ },
+ "reducedMotion": "0s, 0s",
+ "summary": {
+  "primaryAboveFoldAll": true,
+  "primaryBelowFold": [],
+  "overlaps": {},
+  "clipped": {},
+  "brokenWords": {},
+  "smallTargets": {},
+  "horizontalOverflow": [],
+  "lastRowHiddenByTabBar": [],
+  "errors": 0
+ }
+}

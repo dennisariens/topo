@@ -1,0 +1,334 @@
+{
+  "storage": [
+    {
+      "engine": "chromium",
+      "state": "nieuw",
+      "actualState": "nieuw",
+      "before": {
+        "hermes-canary": "CANARY-hermes-canary",
+        "topo-italie-v3": "CANARY-topo-italie-v3",
+        "topo-nino-intro-v1": "CANARY-topo-nino-intro-v1",
+        "topo-nino-profile-v1": "CANARY-topo-nino-profile-v1"
+      },
+      "after": {
+        "hermes-canary": "CANARY-hermes-canary",
+        "topo-italie-v3": "CANARY-topo-italie-v3",
+        "topo-nino-intro-v1": "CANARY-topo-nino-intro-v1",
+        "topo-nino-profile-v1": "CANARY-topo-nino-profile-v1"
+      },
+      "counts": {
+        "reads": 0,
+        "writes": 0,
+        "removes": 0,
+        "clears": 0
+      },
+      "unchanged": true,
+      "errors": [],
+      "requests": []
+    },
+    {
+      "engine": "chromium",
+      "state": "bezig",
+      "actualState": "bezig",
+      "before": {
+        "hermes-canary": "CANARY-hermes-canary",
+        "topo-italie-v3": "CANARY-topo-italie-v3",
+        "topo-nino-intro-v1": "CANARY-topo-nino-intro-v1",
+        "topo-nino-profile-v1": "CANARY-topo-nino-profile-v1"
+      },
+      "after": {
+        "hermes-canary": "CANARY-hermes-canary",
+        "topo-italie-v3": "CANARY-topo-italie-v3",
+        "topo-nino-intro-v1": "CANARY-topo-nino-intro-v1",
+        "topo-nino-profile-v1": "CANARY-topo-nino-profile-v1"
+      },
+      "counts": {
+        "reads": 0,
+        "writes": 0,
+        "removes": 0,
+        "clears": 0
+      },
+      "unchanged": true,
+      "errors": [],
+      "requests": []
+    },
+    {
+      "engine": "chromium",
+      "state": "afgerond",
+      "actualState": "afgerond",
+      "before": {
+        "hermes-canary": "CANARY-hermes-canary",
+        "topo-italie-v3": "CANARY-topo-italie-v3",
+        "topo-nino-intro-v1": "CANARY-topo-nino-intro-v1",
+        "topo-nino-profile-v1": "CANARY-topo-nino-profile-v1"
+      },
+      "after": {
+        "hermes-canary": "CANARY-hermes-canary",
+        "topo-italie-v3": "CANARY-topo-italie-v3",
+        "topo-nino-intro-v1": "CANARY-topo-nino-intro-v1",
+        "topo-nino-profile-v1": "CANARY-topo-nino-profile-v1"
+      },
+      "counts": {
+        "reads": 0,
+        "writes": 0,
+        "removes": 0,
+        "clears": 0
+      },
+      "unchanged": true,
+      "errors": [],
+      "requests": []
+    },
+    {
+      "engine": "chromium",
+      "state": "alles",
+      "actualState": "alles",
+      "before": {
+        "hermes-canary": "CANARY-hermes-canary",
+        "topo-italie-v3": "CANARY-topo-italie-v3",
+        "topo-nino-intro-v1": "CANARY-topo-nino-intro-v1",
+        "topo-nino-profile-v1": "CANARY-topo-nino-profile-v1"
+      },
+      "after": {
+        "hermes-canary": "CANARY-hermes-canary",
+        "topo-italie-v3": "CANARY-topo-italie-v3",
+        "topo-nino-intro-v1": "CANARY-topo-nino-intro-v1",
+        "topo-nino-profile-v1": "CANARY-topo-nino-profile-v1"
+      },
+      "counts": {
+        "reads": 0,
+        "writes": 0,
+        "removes": 0,
+        "clears": 0
+      },
+      "unchanged": true,
+      "errors": [],
+      "requests": []
+    },
+    {
+      "engine": "chromium",
+      "state": "bezig/viola",
+      "actualState": "bezig",
+      "before": {
+        "hermes-canary": "CANARY-hermes-canary",
+        "topo-italie-v3": "CANARY-topo-italie-v3",
+        "topo-nino-intro-v1": "CANARY-topo-nino-intro-v1",
+        "topo-nino-profile-v1": "CANARY-topo-nino-profile-v1"
+      },
+      "after": {
+        "hermes-canary": "CANARY-hermes-canary",
+        "topo-italie-v3": "CANARY-topo-italie-v3",
+        "topo-nino-intro-v1": "CANARY-topo-nino-intro-v1",
+        "topo-nino-profile-v1": "CANARY-topo-nino-profile-v1"
+      },
+      "counts": {
+        "reads": 0,
+        "writes": 0,
+        "removes": 0,
+        "clears": 0
+      },
+      "unchanged": true,
+      "errors": [],
+      "requests": []
+    },
+    {
+      "engine": "webkit",
+      "state": "nieuw",
+      "actualState": "nieuw",
+      "before": {
+        "topo-nino-profile-v1": "CANARY-topo-nino-profile-v1",
+        "hermes-canary": "CANARY-hermes-canary",
+        "topo-italie-v3": "CANARY-topo-italie-v3",
+        "topo-nino-intro-v1": "CANARY-topo-nino-intro-v1"
+      },
+      "after": {
+        "topo-nino-profile-v1": "CANARY-topo-nino-profile-v1",
+        "hermes-canary": "CANARY-hermes-canary",
+        "topo-italie-v3": "CANARY-topo-italie-v3",
+        "topo-nino-intro-v1": "CANARY-topo-nino-intro-v1"
+      },
+      "counts": {
+        "reads": 0,
+        "writes": 0,
+        "removes": 0,
+        "clears": 0
+      },
+      "unchanged": true,
+      "errors": [],
+      "requests": []
+    },
+    {
+      "engine": "webkit",
+      "state": "bezig",
+      "actualState": "bezig",
+      "before": {
+        "topo-nino-profile-v1": "CANARY-topo-nino-profile-v1",
+        "hermes-canary": "CANARY-hermes-canary",
+        "topo-italie-v3": "CANARY-topo-italie-v3",
+        "topo-nino-intro-v1": "CANARY-topo-nino-intro-v1"
+      },
+      "after": {
+        "topo-nino-profile-v1": "CANARY-topo-nino-profile-v1",
+        "hermes-canary": "CANARY-hermes-canary",
+        "topo-italie-v3": "CANARY-topo-italie-v3",
+        "topo-nino-intro-v1": "CANARY-topo-nino-intro-v1"
+      },
+      "counts": {
+        "reads": 0,
+        "writes": 0,
+        "removes": 0,
+        "clears": 0
+      },
+      "unchanged": true,
+      "errors": [],
+      "requests": []
+    },
+    {
+      "engine": "webkit",
+      "state": "afgerond",
+      "actualState": "afgerond",
+      "before": {
+        "topo-nino-profile-v1": "CANARY-topo-nino-profile-v1",
+        "hermes-canary": "CANARY-hermes-canary",
+        "topo-italie-v3": "CANARY-topo-italie-v3",
+        "topo-nino-intro-v1": "CANARY-topo-nino-intro-v1"
+      },
+      "after": {
+        "topo-nino-profile-v1": "CANARY-topo-nino-profile-v1",
+        "hermes-canary": "CANARY-hermes-canary",
+        "topo-italie-v3": "CANARY-topo-italie-v3",
+        "topo-nino-intro-v1": "CANARY-topo-nino-intro-v1"
+      },
+      "counts": {
+        "reads": 0,
+        "writes": 0,
+        "removes": 0,
+        "clears": 0
+      },
+      "unchanged": true,
+      "errors": [],
+      "requests": []
+    },
+    {
+      "engine": "webkit",
+      "state": "alles",
+      "actualState": "alles",
+      "before": {
+        "topo-nino-profile-v1": "CANARY-topo-nino-profile-v1",
+        "hermes-canary": "CANARY-hermes-canary",
+        "topo-italie-v3": "CANARY-topo-italie-v3",
+        "topo-nino-intro-v1": "CANARY-topo-nino-intro-v1"
+      },
+      "after": {
+        "topo-nino-profile-v1": "CANARY-topo-nino-profile-v1",
+        "hermes-canary": "CANARY-hermes-canary",
+        "topo-italie-v3": "CANARY-topo-italie-v3",
+        "topo-nino-intro-v1": "CANARY-topo-nino-intro-v1"
+      },
+      "counts": {
+        "reads": 0,
+        "writes": 0,
+        "removes": 0,
+        "clears": 0
+      },
+      "unchanged": true,
+      "errors": [],
+      "requests": []
+    },
+    {
+      "engine": "webkit",
+      "state": "bezig/viola",
+      "actualState": "bezig",
+      "before": {
+        "topo-nino-profile-v1": "CANARY-topo-nino-profile-v1",
+        "hermes-canary": "CANARY-hermes-canary",
+        "topo-italie-v3": "CANARY-topo-italie-v3",
+        "topo-nino-intro-v1": "CANARY-topo-nino-intro-v1"
+      },
+      "after": {
+        "topo-nino-profile-v1": "CANARY-topo-nino-profile-v1",
+        "hermes-canary": "CANARY-hermes-canary",
+        "topo-italie-v3": "CANARY-topo-italie-v3",
+        "topo-nino-intro-v1": "CANARY-topo-nino-intro-v1"
+      },
+      "counts": {
+        "reads": 0,
+        "writes": 0,
+        "removes": 0,
+        "clears": 0
+      },
+      "unchanged": true,
+      "errors": [],
+      "requests": []
+    }
+  ],
+  "occlusion": [
+    {
+      "engine": "chromium",
+      "name": "Sicilië",
+      "id": "area-a",
+      "chapter": "islands",
+      "primary": "Ontdekken",
+      "centerInsideActualIslandFill": true,
+      "center": {
+        "x": 216.46006270817344,
+        "y": 527.4128490175519
+      },
+      "coveredByStyleSwitch": true,
+      "overlapCSSpx2": 1486.6319930106401,
+      "switch": {
+        "x": 200.796875,
+        "y": 516,
+        "width": 173.203125,
+        "height": 42,
+        "top": 516,
+        "right": 374,
+        "bottom": 558,
+        "left": 200.796875
+      },
+      "target": {
+        "x": 184.2232208251953,
+        "y": 507.7895812988281,
+        "width": 64.47369384765625,
+        "height": 39.246551513671875,
+        "top": 507.7895812988281,
+        "right": 248.69691467285156,
+        "bottom": 547.0361328125,
+        "left": 184.2232208251953
+      }
+    },
+    {
+      "engine": "webkit",
+      "name": "Sicilië",
+      "id": "area-a",
+      "chapter": "islands",
+      "primary": "Ontdekken",
+      "centerInsideActualIslandFill": true,
+      "center": {
+        "x": 216.46006270817344,
+        "y": 527.4128490175519
+      },
+      "coveredByStyleSwitch": true,
+      "overlapCSSpx2": 1486.1470534354448,
+      "switch": {
+        "x": 200.8125,
+        "y": 516,
+        "width": 173.1875,
+        "height": 42,
+        "top": 516,
+        "right": 374,
+        "bottom": 558,
+        "left": 200.8125
+      },
+      "target": {
+        "x": 184.2232208251953,
+        "y": 507.7895812988281,
+        "width": 64.47369384765625,
+        "height": 39.246551513671875,
+        "top": 507.7895812988281,
+        "right": 248.69691467285156,
+        "bottom": 547.0361328125,
+        "left": 184.2232208251953
+      }
+    }
+  ]
+}

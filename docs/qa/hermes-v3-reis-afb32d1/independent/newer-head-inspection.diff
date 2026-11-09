@@ -1,0 +1,266 @@
+diff --git a/docs/v3/GE01.md b/docs/v3/GE01.md
+new file mode 100644
+index 0000000..c863b48
+--- /dev/null
++++ b/docs/v3/GE01.md
+@@ -0,0 +1,68 @@
++# Golden Experience 01 — beat 3–7 (spec, 9 november 2026)
++
++Eén echte leerroute door een hoofdstuk, van de eerste plek tot het stempel in het Reisboekje. Beat 1–2 (Reis: hoofdstuk kiezen, les starten) staan in [Reis v3b](../qa/v3-reis/README.md). Deze spec dekt:
++
++| Beat | Moment | Hoofdactie |
++| --- | --- | --- |
++| 3 | Ontdekken | **Volgende** (plek bekeken) |
++| 4 | Aanwijzen | de kaart zelf (tik de plek) |
++| 5 | Namen schrijven | **Controleer** |
++| 6 | Feedback | **Volgende** |
++| 7 | Verdiende beloning → Reisboekje | **Bekijk in Reisboekje** |
++
++## Wat vastligt (voor alle beats)
++
++- **Eén bron van waarheid.** De canonieke `#quiz`, `#prompt`, `#answer`, `#check`, `#message`, `#next`, `#reveal`, de kaart `#map` en hun V2-handlers blijven de enige les. V3 leest `state`, `ROUTE_CHAPTERS`, `TopoRoute` en schrijft niets. Geen tweede beoordelaar, geen nieuwe beloningsregels, geen nieuwe opslag.
++- **Responsief eigendom.** Focus Mode (`scripts/focus-mode.js`) blijft eigenaar van iPad en telefoon (≤ 1180 px of grove aanwijzer ≤ 1440 px) en verplaatst de les naar zijn sheet. V3 verplaatst niets; het voegt toe en stijlt.
++- **Lesstappen boven de kaart** (topo-ui-design, PR #64): `1 Ontdekken · 2 Aanwijzen · 3 Namen schrijven`, met **★ Goud** apart rechts zodra het hoofdstuk af is. Klaar = ✓ (herhalen via de V2-knop van die stap), nu = accent, later = grijs en niet klikbaar.
++- **Structuur V3.** Desktop: zijbalk (Reis actief) · kaart met lesstappen · taakpaneel rechts. iPad en telefoon: lesstappen bovenaan, kaart, Focus-sheet onderaan; geen tabbalk tijdens een les (terug via **‹ Reis**).
++- **Tekstbudget.** Alleen: hoofdstuktitel, stapnamen, vraag, feedbackzin, getallen (`2 / 6`, `14 / 24`), knoplabels. Weg tijdens een les: de V2-kop met Goed/Reeks/Pizza's, de V2-navigatie, de oefenmodi (bereikbaar via Oefenen), "Samen met Nino", de lesintro, hulpregels ("Klik of tik op de plek…"), "De kaart van Italië", "Over de kaart".
++- **Kaart.** Dezelfde live kaart met dezelfde treffers. Kaartstijl, Heel Italië, Zoom op hoofdstuk en Schoolblad blijven vindbaar, rustig in de kaarthoek.
++- **Toegankelijkheid.** Focus volgt V2 (na antwoord naar **Volgende**); elke knop ≥ 44 px; zichtbare focusring; lesstappen zijn een lijst met `aria-current="step"`; feedback blijft in de bestaande live-regio. Verminderde beweging: geen overgangen, feedback blijft zichtbaar.
++
++## Beat 3 — Ontdekken
++
++- **Doel:** elke plek van het hoofdstuk één keer zien en hardop noemen.
++- **Ziet:** lesstap 1 actief, teller `plek n / 6`, de plek gemarkeerd op de kaart, als titel de naam van de plek, één zin van Nino uit V2 (`DISCOVER.PLACE`).
++- **Actie:** **Volgende** = de V2-knop `#next`. Na de laatste plek: resultaat met **Volgende les** (= V2).
++- **Randen:** pauze na zes plekken blijft V2 (`ROUND.DISCOVER_PAUSE`); Reis → **Ga verder** geeft dezelfde plek (bestaande V2-garantie).
++- **Check:** lesstap 1 `aria-current`; titel = `state.current.name`; één primaire knop zichtbaar boven de vouw / boven de sheet.
++
++## Beat 4 — Aanwijzen
++
++- **Doel:** de plek zelf op de kaart vinden.
++- **Ziet:** lesstap 2 actief, de vraag (`Waar ligt Turijn?`) en de teller. Geen hulpregel: de kaart is de handeling.
++- **Actie:** tik of klik de plek (V2-resolver, overlapkiezer en toetsenbordbediening ongewijzigd). **Ik weet het nog niet** is stil secundair (V2 `#next` vóór het antwoord), **Toon antwoord** idem.
++- **Check:** echte tik op de juiste plek geeft `lastAnswer.ok === true`; foute tik niet; geen V3-element vangt kaarttikken af.
++
++## Beat 5 — Namen schrijven
++
++- **Doel:** de naam van de gemarkeerde plek uit het hoofd schrijven.
++- **Ziet:** lesstap 3 actief, vraag, invoerveld (V2 `#answer`) en **Controleer** (V2 `#check`) als enige hoofdactie.
++- **Actie:** Enter of **Controleer**. Concept, caret en toetsenbord blijven behouden bij draaien en formaatwissel (Focus Mode-garantie).
++- **Check:** echte invoer van `state.current.name` geeft goed; `Parijs` geeft fout; invoer blijft bij wissel 1440 → 1100 → 1440.
++
++## Beat 6 — Feedback
++
++- **Doel:** direct en eerlijk weten of het goed was, en wat de juiste plek of naam is.
++- **Ziet:** de V2-feedbackzin (`ANSWER.*`) als blok: goed = groen met ✓, fout = rustig neutraal-rood met de juiste plek op de kaart (V2-markering). Daaronder **Volgende** als hoofdactie. Een verdiend pizzapunt telt zichtbaar op in de teller (`14 / 24` → `15 / 24`).
++- **Randen:** opnieuw tikken of herladen telt niet dubbel (bestaande tokens); pauze na zes vragen en de rondeuitslag blijven V2, in V3-stijl.
++- **Check:** feedbacktekst = V2 `#message`; teller = `(pizzas % 3) × 8 + slices` vóór/na; focus naar **Volgende**.
++
++## Beat 7 — Verdiende beloning → Reisboekje
++
++- **Doel:** een beloning voelen die echt verdiend is, en die terugvinden.
++- **Ziet:** de bestaande V2-momenten, alleen als ze echt gebeuren: pizza compleet (dialoog), Vespa-rit bij elke derde pizza, en na de laatste stap **Deze halte is afgerond!** met het hoofdstukstempel. Op het afrondscherm staat het stempel met **Bekijk in Reisboekje** als hoofdactie; **Terug naar Reis** secundair. Uitslaggetallen blijven V2-waarden, zonder bijlabels waar een getal volstaat.
++- **Actie:** **Bekijk in Reisboekje** = V2-knop, opent het boek op de stempelpagina (V2 `TopoBook`). Het Reisboekje zelf verandert niet in deze stap.
++- **Randen:** geen beloning bij een herhaling die al beloond is (V2-tokens); verminderde beweging toont de statische versie (V2).
++- **Check:** pizza- en Vespa-dialoog verschijnen alleen bij de echte telling; afrondscherm toont het stempel van dit hoofdstuk; Reisboekje opent; terug naar Reis toont het volgende hoofdstuk als huidige.
++
++## Bewijs
++
++`python3 scripts/qa-v3-les.py` speelt hoofdstuk 2 echt door (Ontdekken → Aanwijzen → Schrijven, met één fout per fase) op desktop, iPad liggend en staand en telefoon, en legt per beat een screenshot en de gemeten waarden vast in `docs/qa/v3-les/`. Daarnaast blijven `qa-v3-reis.py` en `npm run lint && npm test && npm run build` groen en blijft `index.html` byte-gelijk.
++
++## Open voor de eigenaar
++
++1. Hulpregels en "Samen met Nino" vervallen in een les (volgt het principe). Nino blijft in de zijbalk en in de beloningsmomenten.
++2. Oefenmodi (Leren, Aanwijzen, Namen schrijven, Toets) verdwijnen uit de les en blijven bereikbaar via **Oefenen**.
++3. Het Reisboekje en de Vespa-rit blijven V2-composities; een V3-versie is een volgende stap.
+diff --git a/scripts/qa-v3-reis.py b/scripts/qa-v3-reis.py
+index 998b47a..a6fb775 100644
+--- a/scripts/qa-v3-reis.py
++++ b/scripts/qa-v3-reis.py
+@@ -3,7 +3,7 @@
+ 
+ Usage: python3 scripts/qa-v3-reis.py [html] [outdir] [chrome]
+ Writes screenshots and results.json to outdir (default docs/qa/v3-reis).
+-Checks: next action above the fold, no overlapping/clipped controls, label wrapping,
++Checks: next action above the fold, map reference frame (neighbours, seas, islands; edge fade only), no overlapping/clipped controls, label wrapping,
+ chapter selection, map clone geometry == live map, relief switch, real lesson start
+ through V2 buttons, Reis -> Verder restore, keyboard order, themes, demo storage
+ isolation, console errors.
+@@ -14,9 +14,11 @@ from playwright.async_api import async_playwright
+ ROOT = pathlib.Path(__file__).resolve().parent.parent
+ HTML = pathlib.Path(sys.argv[1] if len(sys.argv) > 1 else ROOT / 'output/html/TOPO-V3-Reis-Preview.html').resolve()
+ OUT = pathlib.Path(sys.argv[2] if len(sys.argv) > 2 else ROOT / 'docs/qa/v3-reis').resolve()
+-CHROME = sys.argv[3] if len(sys.argv) > 3 else '/usr/bin/google-chrome'
++MAC_CHROME = '/Applications/Google Chrome.app/Contents/MacOS/Google Chrome'
++CHROME = sys.argv[3] if len(sys.argv) > 3 else (MAC_CHROME if pathlib.Path(MAC_CHROME).exists() else '/usr/bin/google-chrome')
+ VIEWPORTS = {'desktop': (1440, 900, False), 'ipad-portrait': (820, 1180, True), 'ipad-landscape': (1180, 820, True), 'phone': (390, 844, True), 'phone-small': (320, 640, True)}
+ STATES = ['nieuw', 'bezig', 'afgerond', 'alles']
++MUST_SEE = ['Frankrijk', 'Zwitserland', 'Oostenrijk', 'Slovenië', 'Kroatië', 'Sardinië', 'Sicilië', 'Noord-Afrika']
+ 
+ LAYOUT_JS = '''() => {
+   const vh = innerHeight, r = e => e.getBoundingClientRect();
+@@ -43,11 +45,69 @@ LAYOUT_JS = '''() => {
+   const bar = document.querySelector('.v3Side'); let lastRowClear = true;
+   if (bar && getComputedStyle(bar).position==='fixed') { const last=[...document.querySelectorAll('.v3Row')].pop(); const doc=document.scrollingElement;
+     const bottomAtMaxScroll = last.getBoundingClientRect().bottom - (doc.scrollHeight - innerHeight - doc.scrollTop); lastRowClear = bottomAtMaxScroll <= r(bar).top + 1; }
+-  return {lastRowClear, primaryTop: p ? Math.round(p.top) : null, primaryBottom: p ? Math.round(p.bottom) : null, viewport: vh,
++  const map = document.querySelector('.v3Map'), vb = map && map.viewBox.baseVal;
++  const frame = map ? {viewBox: [vb.x, vb.y, vb.width, vb.height].map(Math.round).join(' '), mask: (getComputedStyle(map).maskImage || getComputedStyle(map).webkitMaskImage || '').slice(0, 160)} : null;
++  return {frame, lastRowClear, primaryTop: p ? Math.round(p.top) : null, primaryBottom: p ? Math.round(p.bottom) : null, viewport: vh,
+           primaryVisible: p ? p.bottom <= vh && !covered : false, covered, overlaps, small, clipped,
+           horizontalOverflow: document.documentElement.scrollWidth > innerWidth + 1};
+ }'''
+ 
++# Map reference frame (owner 9-11): neighbours, seas and islands must stay visible around Italy.
++# For each reference feature pick one on-screen point inside its real fill; the Python side compares the
++# painted pixel with and without the edge mask. A feature is visible when >= 80% of its contrast remains.
++MAP_SAMPLE_JS = '''() => {
++  const map = document.querySelector('.v3Map'); if (!map) return {};
++  const el = map.getBoundingClientRect(), stage = map.parentElement.getBoundingClientRect(), ctm = map.getScreenCTM(), inv = ctm.inverse();
++  const x0 = Math.max(el.left, stage.left) + 2, x1 = Math.min(el.right, stage.right, innerWidth) - 2, y0 = Math.max(el.top, stage.top, 0) + 2, y1 = Math.min(el.bottom, stage.bottom, innerHeight) - 2;
++  const hidden = [...document.querySelectorAll('.v3Switch,.v3PreviewBar,.v3Side')].map(n => n.getBoundingClientRect());
++  const free = (x, y) => !hidden.some(h => x >= h.left - 4 && x <= h.right + 4 && y >= h.top - 4 && y <= h.bottom + 4);
++  const pick = (n, ok) => { // grid over the visible part of the element, nearest to the outer edge last
++    const b = n.getBoundingClientRect(), ax = Math.max(b.left, x0), bx = Math.min(b.right, x1), ay = Math.max(b.top, y0), by = Math.min(b.bottom, y1);
++    if (bx - ax < 4 || by - ay < 4) return null; const cands = [];
++    for (let i = 1; i < 16; i++) for (let j = 1; j < 16; j++) { const x = ax + (bx - ax) * i / 16, y = ay + (by - ay) * j / 16; if (!free(x, y)) continue;
++      const pt = map.createSVGPoint(); pt.x = x; pt.y = y; const u = pt.matrixTransform(inv);
++      if (ok(u, x, y)) cands.push([x, y]); }
++    if (!cands.length) return null; const cx = (ax + bx) / 2, cy = (ay + by) / 2; cands.sort((p, q) => Math.hypot(p[0] - cx, p[1] - cy) - Math.hypot(q[0] - cx, q[1] - cy));
++    return cands[0].map(Math.round); };
++  // The copy has pointer-events:none, so occlusion is tested geometrically: inside this fill, outside any land drawn over it.
++  const lands = [...map.querySelectorAll('[id$="landLayer"]>*')];
++  const fill = (n, over) => (u) => n.isPointInFill(u) && !over.some(o => o !== n && o.isPointInFill(u));
++  const above = n => lands.filter(o => lands.indexOf(o) > lands.indexOf(n));
++  const ids = {Frankrijk: 'area-i', Zwitserland: 'area-j', Oostenrijk: 'area-k', 'Slovenië': 'area-l', 'Kroatië': 'area-m', Sardinië: 'area-b', 'Sicilië': 'area-a'};
++  const out = {};
++  for (const [k, id] of Object.entries(ids)) { const n = map.querySelector('[data-id="' + id + '"]'); out[k] = n ? pick(n, fill(n, above(n))) : null; }
++  for (const t of map.querySelectorAll('[id$="labels"] text')) { const w = t.textContent.trim(); if (/TUNES|DUITS|BOSN|HONGAR/.test(w)) { const b = t.getBoundingClientRect(), x = Math.round(b.left + b.width / 2), y = Math.round(b.top + b.height / 2); out['label ' + w] = x > x0 && x < x1 && y > y0 && y < y1 && free(x, y) ? [x, y] : null; } }
++  const seas = [...map.querySelectorAll('[id$="seaLayer"] .water')]; seas.forEach((n, i) => { out['zee ' + (i + 1)] = pick(n, fill(n, lands)); });
++  const tun = [...map.querySelectorAll('[id$="labels"] text')].find(t => /TUNES/.test(t.textContent)), tb = tun && tun.getBBox();
++  const land = tb && [...map.querySelectorAll('.contextLand')].find(l => { const pt = map.createSVGPoint(); pt.x = tb.x + tb.width / 2; pt.y = tb.y + tb.height / 2; return l.isPointInFill(pt); }); // North Africa (Tunisia), the southern frame edge
++  if (land) out['Noord-Afrika'] = pick(land, fill(land, above(land)));
++  return out;
++}'''
++
++def png_pixel(png):
++    """RGB of a 1x1 PNG screenshot (no image library needed: a single pixel needs no unfiltering)."""
++    import struct, zlib
++    i, data = 8, b''
++    while i < len(png):
++        n, kind = struct.unpack('>I4s', png[i:i + 8]); chunk = png[i + 8:i + 8 + n]; i += 12 + n
++        if kind == b'IHDR': depth, colour = chunk[8], chunk[9]
++        elif kind == b'IDAT': data += chunk
++    raw = zlib.decompress(data); return tuple(raw[1:4])
++
++async def sample_frame(pg):
++    # Phones show the map below the action: bring it into view first (the frame, not the fold, is under test).
++    await pg.evaluate("document.querySelector('.v3Map')?.scrollIntoView({block:'center'})"); await pg.wait_for_timeout(150)
++    pts = await pg.evaluate(MAP_SAMPLE_JS); surface = (255, 253, 249)
++    async def px(x, y): return png_pixel(await pg.screenshot(clip={'x': x, 'y': y, 'width': 1, 'height': 1}))
++    masked = {k: await px(*v) for k, v in pts.items() if v}
++    await pg.evaluate("document.querySelector('.v3Map').style.setProperty('mask','none');document.querySelector('.v3Map').style.setProperty('-webkit-mask','none')")
++    plain = {k: await px(*pts[k]) for k in masked}
++    await pg.evaluate("document.querySelector('.v3Map').style.removeProperty('mask');document.querySelector('.v3Map').style.removeProperty('-webkit-mask')")
++    d = lambda c: sum(abs(a - b) for a, b in zip(c, surface)) or 1
++    kept = {k: round(min(1, d(masked[k]) / d(plain[k])), 2) for k in masked}
++    await pg.evaluate('scrollTo(0,0)')
++    return {'kept': kept, 'outOfFrame': sorted(k for k, v in pts.items() if not v), 'visible': sorted(k for k, v in kept.items() if v >= .8)}
++
+ WORDBREAK_JS = '''() => {
+   // Detect words split across lines: measure each word as its own inline box via Range rects.
+   const out = [];
+@@ -80,6 +140,7 @@ async def main():
+             for st in STATES:
+                 await pg.goto(HTML.as_uri() + '#' + st); await settle(pg)
+                 lay = await pg.evaluate(LAYOUT_JS); lay['brokenWords'] = await pg.evaluate(WORDBREAK_JS)
++                lay['frame'] = {**(lay['frame'] or {}), **await sample_frame(pg)}
+                 res['layout'][vp + '/' + st] = lay
+                 await pg.screenshot(path=str(OUT / f'{st}-{vp}.png'))
+             await ctx.close()
+@@ -156,6 +217,8 @@ async def main():
+         'smallTargets': {k: v['small'] for k, v in lay.items() if v['small']},
+         'horizontalOverflow': [k for k, v in lay.items() if v['horizontalOverflow']],
+         'lastRowHiddenByTabBar': [k for k, v in lay.items() if not v.get('lastRowClear', True)],
++        # Reference frame: Alpine neighbours, Croatia, both big islands, North Africa and at least three seas visible.
++        'mapFrameShort': {k: sorted(set(MUST_SEE) - set(v['frame']['visible'])) for k, v in lay.items() if v.get('frame') and (set(MUST_SEE) - set(v['frame']['visible']) or sum(n.startswith('zee') for n in v['frame']['visible']) < 3)},
+         'errors': len(res['errors'])}
+     (OUT / 'results.json').write_text(json.dumps(res, indent=1, ensure_ascii=False))
+     print(json.dumps(res['summary'], indent=1, ensure_ascii=False)); print(json.dumps(res['flows'], indent=1, ensure_ascii=False)); print(json.dumps(res['keyboard'], ensure_ascii=False)[:700]); print('theme', res['theme'], 'reducedMotion', res['reducedMotion'])
+diff --git a/scripts/v3/reis.css b/scripts/v3/reis.css
+index e6b38d7..ac31137 100644
+--- a/scripts/v3/reis.css
++++ b/scripts/v3/reis.css
+@@ -52,9 +52,10 @@ body.v3Home #journeyScreen,body.v3Home #journeyScreen>#routeHome{background:none
+ .v3Mini{width:28px;height:28px;object-fit:contain}
+ .v3Count .v3Icon{width:34px;height:24px;color:var(--v3-accent);stroke-width:2.4}
+ .v3MapStage{position:relative;min-height:0;display:grid;place-items:center;padding:0 var(--v3-s4) var(--v3-s4)}
+-.v3Map{width:100%;height:100%;max-height:100%;display:block;-webkit-mask:radial-gradient(closest-side,#000 78%,transparent);mask:radial-gradient(closest-side,#000 78%,transparent)}
+-.v3Map .sea,.v3Map .atlasWaterTexture{fill:transparent!important}
+-.v3MapStage{background:radial-gradient(closest-side,#d8ebf2,transparent)}
++/* Real sea and neighbouring land stay visible; only a narrow edge softens into the surface (owner 9-11). */
++.v3Map{width:100%;height:100%;max-height:100%;display:block;border-radius:var(--v3-radius);
++ --v3-edge:linear-gradient(90deg,transparent,#000 4%,#000 96%,transparent),linear-gradient(180deg,transparent,#000 4%,#000 96%,transparent);
++ -webkit-mask:var(--v3-edge);-webkit-mask-composite:source-in;mask:var(--v3-edge);mask-composite:intersect}
+ .v3Panel{display:flex;flex-direction:column;justify-content:flex-start;padding-top:72px!important;gap:var(--v3-s4);padding:var(--v3-s6) var(--v3-s6) var(--v3-s8) var(--v3-s2)}
+ .v3Panel h1{font:var(--v3-large);letter-spacing:-.015em;text-wrap:balance}
+ .v3Panel h1 small{display:block;margin-bottom:var(--v3-s1);font:var(--v3-foot);letter-spacing:.06em;text-transform:uppercase;color:var(--v3-accent)}
+@@ -63,7 +64,7 @@ body.v3Home #journeyScreen,body.v3Home #journeyScreen>#routeHome{background:none
+ .v3Again{display:flex;flex-wrap:wrap;gap:var(--v3-s2)}
+ .v3Again .v3Btn{min-height:40px;padding:0 var(--v3-s3);font-size:15px;color:var(--v3-ink2);background:transparent;box-shadow:inset 0 0 0 1px var(--v3-line)}
+ .v3Locked{display:flex;align-items:center;gap:var(--v3-s2);font:var(--v3-sub);color:var(--v3-ink2)}
+-.v3Switch{position:absolute;right:var(--v3-s4);top:0;display:flex;padding:3px;border-radius:12px;background:var(--v3-surface2);box-shadow:inset 0 0 0 1px var(--v3-line)}
++.v3Switch{position:absolute;right:calc(var(--v3-s4) + var(--v3-s3));bottom:calc(var(--v3-s4) + var(--v3-s3));display:flex;padding:3px;border-radius:12px;background:var(--v3-surface2);box-shadow:inset 0 0 0 1px var(--v3-line)}
+ .v3 .v3Switch .v3Btn{min-height:36px;padding:0 var(--v3-s3);font-size:14px;background:transparent;border-radius:9px}
+ .v3 .v3Switch .v3Btn[aria-pressed=true]{background:var(--v3-surface);box-shadow:0 1px 3px rgba(29,37,35,.12)}
+ 
+@@ -107,7 +108,6 @@ body.v3Home #journeyScreen,body.v3Home #journeyScreen>#routeHome{background:none
+  .v3Panel{order:1;padding:var(--v3-s4) var(--v3-s5)!important}
+  .v3Panel h1{font-size:30px;line-height:36px}
+  .v3MapStage{order:2;height:300px;padding:0 var(--v3-s4) var(--v3-s4)}
+- .v3Switch{top:auto;bottom:var(--v3-s5)}
+  .v3List{order:2;padding:var(--v3-s4) var(--v3-s2) var(--v3-s6);border-top:8px solid var(--v3-canvas)}
+  .v3Rows{overflow:visible}
+  .v3Side{order:3;position:fixed;left:0;right:0;bottom:0;z-index:50;flex-direction:row;justify-content:space-around;gap:0;padding:6px 8px calc(6px + env(safe-area-inset-bottom,0px));border-radius:0;border-top:1px solid var(--v3-line);background:color-mix(in srgb,var(--v3-surface) 92%,transparent);backdrop-filter:blur(14px)}
+diff --git a/scripts/v3/reis.js b/scripts/v3/reis.js
+index e7250ba..2f103cf 100644
+--- a/scripts/v3/reis.js
++++ b/scripts/v3/reis.js
+@@ -65,7 +65,9 @@
+   return svg;
+  }
+  function paintMap(c){
+-  if(!mapClone){mapClone=cloneMap();if(mapClone)stage.prepend(mapClone);}
++  if(!mapClone){mapClone=cloneMap();if(mapClone){stage.prepend(mapClone);
++   // Outside the 890×1235 canvas the real land continues; the canvas sea colour fills behind it.
++   const sea=mapClone.querySelector('.sea');if(sea)mapClone.style.background=getComputedStyle(sea).fill;}}
+   if(!mapClone)return;
+   mapClone.dataset.relief=ui.relief?'on':'off';
+   const set=new Set(c?c.itemIds:[]);
+@@ -73,17 +75,25 @@
+   mapClone.dataset.focus=c?(c.itemIds[0]?.startsWith('city')?'points':'areas'):'';
+   fit(mapClone);
+  }
+- // Frame Italy and the chapter's places (neighbouring countries and seas included when they are the lesson).
++ // Frame Italy and the chapter's places with a generous margin, then widen the frame to the stage's shape
++ // inside the map canvas (890×1235), so neighbouring countries, seas and islands stay visible as reference.
++ const CANVAS={w:890,h:1235},MARGIN=.14;
+  function fit(svg){
+   try{
+    const parts=[...svg.querySelectorAll('.italy,.v3Hit')];if(!parts.length)return;
+    let x0=Infinity,y0=Infinity,x1=-Infinity,y1=-Infinity;
+    for(const p of parts){const b=p.getBBox();if(!b.width&&!b.height&&p.tagName!=='circle')continue;x0=Math.min(x0,b.x);y0=Math.min(y0,b.y);x1=Math.max(x1,b.x+b.width);y1=Math.max(y1,b.y+b.height);}
+    if(!isFinite(x0))return;
+-   const pad=Math.max(x1-x0,y1-y0)*.06;x0=Math.max(0,x0-pad);y0=Math.max(0,y0-pad);x1=Math.min(890,x1+pad);y1=Math.min(1235,y1+pad);
++   const pad=Math.max(x1-x0,y1-y0)*MARGIN;x0=Math.max(0,x0-pad);y0=Math.max(0,y0-pad);x1=Math.min(CANVAS.w,x1+pad);y1=Math.min(CANVAS.h,y1+pad);
++   // Match the stage aspect ratio by growing the shorter side, centred and clamped to the canvas.
++   const box=svg.getBoundingClientRect(),aspect=box.width>0&&box.height>0?box.width/box.height:0;
++   const grow=(a0,a1,len,max)=>{len=Math.min(len,max);let c=(a0+a1)/2,s=c-len/2;s=Math.max(0,Math.min(max-len,s));return [s,s+len];};
++   if(aspect){const w=x1-x0,h=y1-y0;if(w/h<aspect)[x0,x1]=grow(x0,x1,h*aspect,CANVAS.w);else [y0,y1]=grow(y0,y1,w/aspect,CANVAS.h);}
+    svg.setAttribute('viewBox',[x0,y0,x1-x0,y1-y0].map(v=>Math.round(v)).join(' '));
+   }catch{}
+  }
++ // The stage size changes with the layout (rotation, sidebar width): refit on resize.
++ if('ResizeObserver' in window)new ResizeObserver(()=>{if(mapClone)fit(mapClone);}).observe(stage);
+ 
+  function renderTop(m){
+   const bar=make('div','v3Steps');bar.setAttribute('role','img');bar.setAttribute('aria-label',m.done+' van 11 hoofdstukken afgerond');

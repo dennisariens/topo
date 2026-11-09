@@ -1,0 +1,726 @@
+[
+  {
+    "engine": "chromium",
+    "browser": "156.0.8078.4",
+    "visibleSVGTexts": [
+      {
+        "text": "I T A L I Ë",
+        "class": "mapLabel",
+        "display": "block",
+        "visibility": "visible",
+        "opacity": "1",
+        "box": {
+          "x": 554.5231323242188,
+          "y": 685.2567138671875,
+          "width": 63.53125,
+          "height": 13
+        }
+      },
+      {
+        "text": "DUITSLAND",
+        "class": "contextLabel",
+        "display": "block",
+        "visibility": "visible",
+        "opacity": "1",
+        "box": {
+          "x": 495.0746154785156,
+          "y": 428.8957214355469,
+          "width": 49.781219482421875,
+          "height": 9
+        }
+      },
+      {
+        "text": "TSJECHIË",
+        "class": "contextLabel",
+        "display": "block",
+        "visibility": "visible",
+        "opacity": "1",
+        "box": {
+          "x": 646.9520874023438,
+          "y": 410.8074951171875,
+          "width": 42.015625,
+          "height": 9
+        }
+      },
+      {
+        "text": "SLOWAKIJE",
+        "class": "contextLabel",
+        "display": "block",
+        "visibility": "visible",
+        "opacity": "1",
+        "box": {
+          "x": 758.3793334960938,
+          "y": 437.665771484375,
+          "width": 49.375,
+          "height": 9
+        }
+      },
+      {
+        "text": "HONGARIJE",
+        "class": "contextLabel",
+        "display": "block",
+        "visibility": "visible",
+        "opacity": "1",
+        "box": {
+          "x": 715.2581787109375,
+          "y": 511.6630859375,
+          "width": 50.109375,
+          "height": 9
+        }
+      },
+      {
+        "text": "BOSNIË",
+        "class": "contextLabel",
+        "display": "block",
+        "visibility": "visible",
+        "opacity": "1",
+        "box": {
+          "x": 735.721923828125,
+          "y": 628.4144287109375,
+          "width": 32.203125,
+          "height": 9
+        }
+      },
+      {
+        "text": "TUNESIË",
+        "class": "contextLabel",
+        "display": "block",
+        "visibility": "visible",
+        "opacity": "1",
+        "box": {
+          "x": 499.82867431640625,
+          "y": 990.7273559570312,
+          "width": 36.984375,
+          "height": 9
+        }
+      },
+      {
+        "text": "▲",
+        "class": null,
+        "display": "block",
+        "visibility": "visible",
+        "opacity": "1",
+        "box": {
+          "x": 636.2470092773438,
+          "y": 765.833251953125,
+          "width": 6.34375,
+          "height": 10
+        }
+      },
+      {
+        "text": "▲",
+        "class": null,
+        "display": "block",
+        "visibility": "visible",
+        "opacity": "1",
+        "box": {
+          "x": 653.5239868164062,
+          "y": 895.5314331054688,
+          "width": 6.34375,
+          "height": 10
+        }
+      }
+    ],
+    "keyboardModes": [
+      {
+        "key": "Tab",
+        "found": true,
+        "order": [
+          {
+            "tag": "A",
+            "chapter": null,
+            "text": "Nieuw profiel"
+          },
+          {
+            "tag": "A",
+            "chapter": null,
+            "text": "Halte bezig"
+          },
+          {
+            "tag": "A",
+            "chapter": null,
+            "text": "Haltes afgerond"
+          },
+          {
+            "tag": "A",
+            "chapter": null,
+            "text": "Alles af"
+          },
+          {
+            "tag": "A",
+            "chapter": null,
+            "text": "Italia"
+          },
+          {
+            "tag": "A",
+            "chapter": null,
+            "text": "Viola"
+          },
+          {
+            "tag": "A",
+            "chapter": null,
+            "text": "Naast elkaar: desktop + telefoon"
+          },
+          {
+            "tag": "BUTTON",
+            "chapter": null,
+            "text": "Reis"
+          },
+          {
+            "tag": "BUTTON",
+            "chapter": null,
+            "text": "Oefenen"
+          },
+          {
+            "tag": "BUTTON",
+            "chapter": null,
+            "text": "Beloningen"
+          },
+          {
+            "tag": "BUTTON",
+            "chapter": null,
+            "text": "Instellingen"
+          },
+          {
+            "tag": "BUTTON",
+            "chapter": "city1",
+            "text": "1Steden 1–6"
+          },
+          {
+            "tag": "BUTTON",
+            "chapter": "city2",
+            "text": "2Steden 7–12"
+          }
+        ]
+      },
+      {
+        "key": "Alt+Tab",
+        "found": true,
+        "order": [
+          {
+            "tag": "BUTTON",
+            "chapter": "city3",
+            "text": "3Extra steden 13–18"
+          },
+          {
+            "tag": "BUTTON",
+            "chapter": "city4",
+            "text": "4Extra steden 19–23"
+          },
+          {
+            "tag": "BUTTON",
+            "chapter": "islands",
+            "text": "5Eilanden"
+          },
+          {
+            "tag": "BUTTON",
+            "chapter": "mountains",
+            "text": "6Bergen"
+          },
+          {
+            "tag": "BUTTON",
+            "chapter": "volcanoes",
+            "text": "7Vulkanen"
+          },
+          {
+            "tag": "BUTTON",
+            "chapter": "regions",
+            "text": "8Streken"
+          },
+          {
+            "tag": "BUTTON",
+            "chapter": "countries",
+            "text": "9Landen"
+          },
+          {
+            "tag": "BUTTON",
+            "chapter": "seas",
+            "text": "10Zeeën"
+          },
+          {
+            "tag": "BUTTON",
+            "chapter": "rivers",
+            "text": "11Rivieren"
+          },
+          {
+            "tag": "BUTTON",
+            "chapter": null,
+            "text": "Schoolkaart"
+          },
+          {
+            "tag": "BUTTON",
+            "chapter": null,
+            "text": "Reliëf"
+          },
+          {
+            "tag": "BUTTON",
+            "chapter": null,
+            "text": "★ Goud nog eens"
+          },
+          {
+            "tag": "BUTTON",
+            "chapter": null,
+            "text": "↻ Ontdekken"
+          },
+          {
+            "tag": "BUTTON",
+            "chapter": null,
+            "text": "↻ Aanwijzen"
+          },
+          {
+            "tag": "BUTTON",
+            "chapter": null,
+            "text": "↻ Namen schrijven"
+          },
+          {
+            "tag": "BODY",
+            "chapter": null,
+            "text": "V3-preview · demo · niets wordt bewaardN"
+          },
+          {
+            "tag": "A",
+            "chapter": null,
+            "text": "Nieuw profiel"
+          },
+          {
+            "tag": "A",
+            "chapter": null,
+            "text": "Halte bezig"
+          },
+          {
+            "tag": "A",
+            "chapter": null,
+            "text": "Haltes afgerond"
+          },
+          {
+            "tag": "A",
+            "chapter": null,
+            "text": "Alles af"
+          },
+          {
+            "tag": "A",
+            "chapter": null,
+            "text": "Italia"
+          },
+          {
+            "tag": "A",
+            "chapter": null,
+            "text": "Viola"
+          },
+          {
+            "tag": "A",
+            "chapter": null,
+            "text": "Naast elkaar: desktop + telefoon"
+          },
+          {
+            "tag": "BUTTON",
+            "chapter": null,
+            "text": "Reis"
+          },
+          {
+            "tag": "BUTTON",
+            "chapter": null,
+            "text": "Oefenen"
+          },
+          {
+            "tag": "BUTTON",
+            "chapter": null,
+            "text": "Beloningen"
+          },
+          {
+            "tag": "BUTTON",
+            "chapter": null,
+            "text": "Instellingen"
+          },
+          {
+            "tag": "BUTTON",
+            "chapter": "city1",
+            "text": "1Steden 1–6"
+          },
+          {
+            "tag": "BUTTON",
+            "chapter": "city2",
+            "text": "2Steden 7–12"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "engine": "webkit",
+    "browser": "27.2",
+    "visibleSVGTexts": [
+      {
+        "text": "I T A L I Ë",
+        "class": "mapLabel",
+        "display": "block",
+        "visibility": "visible",
+        "opacity": "1",
+        "box": {
+          "x": 552.8529663085938,
+          "y": 685.65380859375,
+          "width": 66.87164306640625,
+          "height": 12.915283203125
+        }
+      },
+      {
+        "text": "DUITSLAND",
+        "class": "contextLabel",
+        "display": "block",
+        "visibility": "visible",
+        "opacity": "1",
+        "box": {
+          "x": 494.2631530761719,
+          "y": 429.00128173828125,
+          "width": 51.404144287109375,
+          "height": 8.40179443359375
+        }
+      },
+      {
+        "text": "TSJECHIË",
+        "class": "contextLabel",
+        "display": "block",
+        "visibility": "visible",
+        "opacity": "1",
+        "box": {
+          "x": 646.2745361328125,
+          "y": 410.9130554199219,
+          "width": 43.37066650390625,
+          "height": 8.40179443359375
+        }
+      },
+      {
+        "text": "SLOWAKIJE",
+        "class": "contextLabel",
+        "display": "block",
+        "visibility": "visible",
+        "opacity": "1",
+        "box": {
+          "x": 757.2106323242188,
+          "y": 437.7713623046875,
+          "width": 51.71246337890625,
+          "height": 8.401763916015625
+        }
+      },
+      {
+        "text": "HONGARIJE",
+        "class": "contextLabel",
+        "display": "block",
+        "visibility": "visible",
+        "opacity": "1",
+        "box": {
+          "x": 714.3880615234375,
+          "y": 511.7686767578125,
+          "width": 51.84954833984375,
+          "height": 8.40179443359375
+        }
+      },
+      {
+        "text": "BOSNIË",
+        "class": "contextLabel",
+        "display": "block",
+        "visibility": "visible",
+        "opacity": "1",
+        "box": {
+          "x": 735.3197021484375,
+          "y": 628.52001953125,
+          "width": 33.00762939453125,
+          "height": 8.40179443359375
+        }
+      },
+      {
+        "text": "TUNESIË",
+        "class": "contextLabel",
+        "display": "block",
+        "visibility": "visible",
+        "opacity": "1",
+        "box": {
+          "x": 499.29052734375,
+          "y": 990.8328247070312,
+          "width": 38.0606689453125,
+          "height": 8.40179443359375
+        }
+      },
+      {
+        "text": "▲",
+        "class": null,
+        "display": "block",
+        "visibility": "visible",
+        "opacity": "1",
+        "box": {
+          "x": 636.0828247070312,
+          "y": 765.8775634765625,
+          "width": 6.6717529296875,
+          "height": 9.69500732421875
+        }
+      },
+      {
+        "text": "▲",
+        "class": null,
+        "display": "block",
+        "visibility": "visible",
+        "opacity": "1",
+        "box": {
+          "x": 653.357421875,
+          "y": 895.5784301757812,
+          "width": 6.6717529296875,
+          "height": 9.69500732421875
+        }
+      }
+    ],
+    "keyboardModes": [
+      {
+        "key": "Tab",
+        "found": false,
+        "order": [
+          {
+            "tag": "BODY",
+            "chapter": null,
+            "text": "V3-preview · demo · niets wordt bewaardN"
+          },
+          {
+            "tag": "BODY",
+            "chapter": null,
+            "text": "V3-preview · demo · niets wordt bewaardN"
+          },
+          {
+            "tag": "BODY",
+            "chapter": null,
+            "text": "V3-preview · demo · niets wordt bewaardN"
+          },
+          {
+            "tag": "BODY",
+            "chapter": null,
+            "text": "V3-preview · demo · niets wordt bewaardN"
+          },
+          {
+            "tag": "BODY",
+            "chapter": null,
+            "text": "V3-preview · demo · niets wordt bewaardN"
+          },
+          {
+            "tag": "BODY",
+            "chapter": null,
+            "text": "V3-preview · demo · niets wordt bewaardN"
+          },
+          {
+            "tag": "BODY",
+            "chapter": null,
+            "text": "V3-preview · demo · niets wordt bewaardN"
+          },
+          {
+            "tag": "BODY",
+            "chapter": null,
+            "text": "V3-preview · demo · niets wordt bewaardN"
+          },
+          {
+            "tag": "BODY",
+            "chapter": null,
+            "text": "V3-preview · demo · niets wordt bewaardN"
+          },
+          {
+            "tag": "BODY",
+            "chapter": null,
+            "text": "V3-preview · demo · niets wordt bewaardN"
+          },
+          {
+            "tag": "BODY",
+            "chapter": null,
+            "text": "V3-preview · demo · niets wordt bewaardN"
+          },
+          {
+            "tag": "BODY",
+            "chapter": null,
+            "text": "V3-preview · demo · niets wordt bewaardN"
+          },
+          {
+            "tag": "BODY",
+            "chapter": null,
+            "text": "V3-preview · demo · niets wordt bewaardN"
+          },
+          {
+            "tag": "BODY",
+            "chapter": null,
+            "text": "V3-preview · demo · niets wordt bewaardN"
+          },
+          {
+            "tag": "BODY",
+            "chapter": null,
+            "text": "V3-preview · demo · niets wordt bewaardN"
+          },
+          {
+            "tag": "BODY",
+            "chapter": null,
+            "text": "V3-preview · demo · niets wordt bewaardN"
+          },
+          {
+            "tag": "BODY",
+            "chapter": null,
+            "text": "V3-preview · demo · niets wordt bewaardN"
+          },
+          {
+            "tag": "BODY",
+            "chapter": null,
+            "text": "V3-preview · demo · niets wordt bewaardN"
+          },
+          {
+            "tag": "BODY",
+            "chapter": null,
+            "text": "V3-preview · demo · niets wordt bewaardN"
+          },
+          {
+            "tag": "BODY",
+            "chapter": null,
+            "text": "V3-preview · demo · niets wordt bewaardN"
+          },
+          {
+            "tag": "BODY",
+            "chapter": null,
+            "text": "V3-preview · demo · niets wordt bewaardN"
+          },
+          {
+            "tag": "BODY",
+            "chapter": null,
+            "text": "V3-preview · demo · niets wordt bewaardN"
+          },
+          {
+            "tag": "BODY",
+            "chapter": null,
+            "text": "V3-preview · demo · niets wordt bewaardN"
+          },
+          {
+            "tag": "BODY",
+            "chapter": null,
+            "text": "V3-preview · demo · niets wordt bewaardN"
+          },
+          {
+            "tag": "BODY",
+            "chapter": null,
+            "text": "V3-preview · demo · niets wordt bewaardN"
+          },
+          {
+            "tag": "BODY",
+            "chapter": null,
+            "text": "V3-preview · demo · niets wordt bewaardN"
+          },
+          {
+            "tag": "BODY",
+            "chapter": null,
+            "text": "V3-preview · demo · niets wordt bewaardN"
+          },
+          {
+            "tag": "BODY",
+            "chapter": null,
+            "text": "V3-preview · demo · niets wordt bewaardN"
+          },
+          {
+            "tag": "BODY",
+            "chapter": null,
+            "text": "V3-preview · demo · niets wordt bewaardN"
+          },
+          {
+            "tag": "BODY",
+            "chapter": null,
+            "text": "V3-preview · demo · niets wordt bewaardN"
+          },
+          {
+            "tag": "BODY",
+            "chapter": null,
+            "text": "V3-preview · demo · niets wordt bewaardN"
+          },
+          {
+            "tag": "BODY",
+            "chapter": null,
+            "text": "V3-preview · demo · niets wordt bewaardN"
+          },
+          {
+            "tag": "BODY",
+            "chapter": null,
+            "text": "V3-preview · demo · niets wordt bewaardN"
+          },
+          {
+            "tag": "BODY",
+            "chapter": null,
+            "text": "V3-preview · demo · niets wordt bewaardN"
+          },
+          {
+            "tag": "BODY",
+            "chapter": null,
+            "text": "V3-preview · demo · niets wordt bewaardN"
+          }
+        ]
+      },
+      {
+        "key": "Alt+Tab",
+        "found": true,
+        "order": [
+          {
+            "tag": "A",
+            "chapter": null,
+            "text": "Nieuw profiel"
+          },
+          {
+            "tag": "A",
+            "chapter": null,
+            "text": "Halte bezig"
+          },
+          {
+            "tag": "A",
+            "chapter": null,
+            "text": "Haltes afgerond"
+          },
+          {
+            "tag": "A",
+            "chapter": null,
+            "text": "Alles af"
+          },
+          {
+            "tag": "A",
+            "chapter": null,
+            "text": "Italia"
+          },
+          {
+            "tag": "A",
+            "chapter": null,
+            "text": "Viola"
+          },
+          {
+            "tag": "A",
+            "chapter": null,
+            "text": "Naast elkaar: desktop + telefoon"
+          },
+          {
+            "tag": "BUTTON",
+            "chapter": null,
+            "text": "Reis"
+          },
+          {
+            "tag": "BUTTON",
+            "chapter": null,
+            "text": "Oefenen"
+          },
+          {
+            "tag": "BUTTON",
+            "chapter": null,
+            "text": "Beloningen"
+          },
+          {
+            "tag": "BUTTON",
+            "chapter": null,
+            "text": "Instellingen"
+          },
+          {
+            "tag": "BUTTON",
+            "chapter": "city1",
+            "text": "1Steden 1–6"
+          },
+          {
+            "tag": "BUTTON",
+            "chapter": "city2",
+            "text": "2Steden 7–12"
+          }
+        ]
+      }
+    ]
+  }
+]

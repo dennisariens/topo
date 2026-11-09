@@ -1,0 +1,47 @@
+{
+  "target": "afb32d17293a4705c5690e985d8cd2ef7c2e6ae7",
+  "preview": {
+    "sha256": "35a0c4696f42abe7555bcb4452540598c493812abc783412b78b9d06ac6a610d",
+    "bytes": 41476860
+  },
+  "indexSHA256": "3aced3c31259011b0af2947c78f71965cb4beb2e88c69d1663e61792b0304f5a",
+  "gate": {
+    "command": "npm run lint && npm test && npm run build",
+    "exit": 0,
+    "source": "proc_ca534d717aaf verified exited0"
+  },
+  "maintained": {
+    "chromium": {
+      "layoutCases": 20,
+      "summary": {
+        "primaryAboveFoldAll": true,
+        "primaryBelowFold": [],
+        "overlaps": {},
+        "clipped": {},
+        "brokenWords": {},
+        "smallTargets": {},
+        "horizontalOverflow": [],
+        "lastRowHiddenByTabBar": [],
+        "errors": 0
+      },
+      "reportedBrowser": "Chrome 156.0.8078.4",
+      "note": "Exact unmodified source with explicit Chromium executable"
+    },
+    "webkit": {
+      "layoutCases": 20,
+      "summary": {
+        "primaryAboveFoldAll": true,
+        "primaryBelowFold": [],
+        "overlaps": {},
+        "clipped": {},
+        "brokenWords": {},
+        "smallTargets": {},
+        "horizontalOverflow": [],
+        "lastRowHiddenByTabBar": [],
+        "errors": 0
+      },
+      "reportedBrowser": "Chrome 27.2",
+      "note": "WebKit launch-line-only adapter; inherited browser label Chrome27.2 is script hardcoding, actual engine is WebKit"
+    }
+  }
+}

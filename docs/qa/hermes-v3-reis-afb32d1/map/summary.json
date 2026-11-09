@@ -1,0 +1,116 @@
+{
+  "count": 132,
+  "expectedCount": 132,
+  "batch": [
+    {
+      "engine": "chromium",
+      "size": "desktop",
+      "count": 22
+    },
+    {
+      "engine": "chromium",
+      "size": "tablet",
+      "count": 22
+    },
+    {
+      "engine": "chromium",
+      "size": "phone",
+      "count": 22
+    },
+    {
+      "engine": "webkit",
+      "size": "desktop",
+      "count": 22
+    },
+    {
+      "engine": "webkit",
+      "size": "tablet",
+      "count": 22
+    },
+    {
+      "engine": "webkit",
+      "size": "phone",
+      "count": 22
+    }
+  ],
+  "highlightFailures": [],
+  "geometryFailures": [],
+  "focusableCounts": [
+    0
+  ],
+  "namedDescendantCounts": [
+    0
+  ],
+  "duplicateIds": [],
+  "texts": [
+    {
+      "tag": "text",
+      "text": "I T A L I Ë",
+      "cls": "mapLabel"
+    },
+    {
+      "tag": "text",
+      "text": "DUITSLAND",
+      "cls": "contextLabel"
+    },
+    {
+      "tag": "text",
+      "text": "TSJECHIË",
+      "cls": "contextLabel"
+    },
+    {
+      "tag": "text",
+      "text": "SLOWAKIJE",
+      "cls": "contextLabel"
+    },
+    {
+      "tag": "text",
+      "text": "HONGARIJE",
+      "cls": "contextLabel"
+    },
+    {
+      "tag": "text",
+      "text": "BOSNIË",
+      "cls": "contextLabel"
+    },
+    {
+      "tag": "text",
+      "text": "TUNESIË",
+      "cls": "contextLabel"
+    },
+    {
+      "tag": "text",
+      "text": "▲",
+      "cls": null
+    },
+    {
+      "tag": "text",
+      "text": "▲",
+      "cls": null
+    }
+  ],
+  "terrain": [
+    {
+      "relief": false,
+      "terrain": [
+        {
+          "display": "none",
+          "opacity": "1"
+        }
+      ]
+    },
+    {
+      "relief": true,
+      "terrain": [
+        {
+          "display": "block",
+          "opacity": "0.96"
+        }
+      ]
+    }
+  ],
+  "brokenRefs": [
+    "8cc9d8",
+    "398ea9"
+  ]
+}

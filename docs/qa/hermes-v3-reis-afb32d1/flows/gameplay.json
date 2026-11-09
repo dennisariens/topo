@@ -1,0 +1,1612 @@
+[
+  {
+    "engine": "chromium",
+    "type": "real-stage-complete",
+    "kind": "discover",
+    "count": 6,
+    "pass": true,
+    "completion": {
+      "active": {
+        "chapterId": "city1",
+        "kind": "discover",
+        "queue": [
+          {
+            "id": "city-5",
+            "mode": "discover"
+          },
+          {
+            "id": "city-3",
+            "mode": "discover"
+          },
+          {
+            "id": "city-6",
+            "mode": "discover"
+          },
+          {
+            "id": "city-1",
+            "mode": "discover"
+          },
+          {
+            "id": "city-2",
+            "mode": "discover"
+          },
+          {
+            "id": "city-4",
+            "mode": "discover"
+          }
+        ],
+        "index": 6,
+        "answered": true,
+        "done": true,
+        "originalTotal": 6,
+        "answers": [
+          {
+            "ok": true
+          },
+          {
+            "ok": true
+          },
+          {
+            "ok": true
+          },
+          {
+            "ok": true
+          },
+          {
+            "ok": true
+          },
+          {
+            "ok": true
+          }
+        ],
+        "correct": 6,
+        "wrong": 0,
+        "pending": [],
+        "awarded": [],
+        "lastAnswer": null,
+        "result": {
+          "passed": true,
+          "goldEarned": false,
+          "newlyCompleted": false
+        }
+      },
+      "record": {
+        "stage": 1,
+        "completedAt": 0,
+        "goldAt": 0,
+        "nextReviewAt": 0,
+        "reviews": 0
+      },
+      "good": 0,
+      "pizzas": 0,
+      "slices": 0,
+      "trips": 0
+    }
+  },
+  {
+    "engine": "chromium",
+    "type": "real-answer",
+    "kind": "point",
+    "id": "city-6",
+    "mode": "point",
+    "index": 0,
+    "pass": true,
+    "answer": {
+      "answered": true,
+      "last": {
+        "ok": true
+      }
+    }
+  },
+  {
+    "engine": "chromium",
+    "type": "real-answer",
+    "kind": "point",
+    "id": "city-4",
+    "mode": "point",
+    "index": 1,
+    "pass": true,
+    "answer": {
+      "answered": true,
+      "last": {
+        "ok": true
+      }
+    }
+  },
+  {
+    "engine": "chromium",
+    "type": "real-answer",
+    "kind": "point",
+    "id": "city-5",
+    "mode": "point",
+    "index": 2,
+    "pass": true,
+    "answer": {
+      "answered": true,
+      "last": {
+        "ok": true
+      }
+    }
+  },
+  {
+    "engine": "chromium",
+    "type": "real-answer",
+    "kind": "point",
+    "id": "city-1",
+    "mode": "point",
+    "index": 3,
+    "pass": true,
+    "answer": {
+      "answered": true,
+      "last": {
+        "ok": true
+      }
+    }
+  },
+  {
+    "engine": "chromium",
+    "type": "real-answer",
+    "kind": "point",
+    "id": "city-3",
+    "mode": "point",
+    "index": 4,
+    "pass": true,
+    "answer": {
+      "answered": true,
+      "last": {
+        "ok": true
+      }
+    }
+  },
+  {
+    "engine": "chromium",
+    "type": "real-answer",
+    "kind": "point",
+    "id": "city-2",
+    "mode": "point",
+    "index": 5,
+    "pass": true,
+    "answer": {
+      "answered": true,
+      "last": {
+        "ok": true
+      }
+    }
+  },
+  {
+    "engine": "chromium",
+    "type": "real-stage-complete",
+    "kind": "point",
+    "count": 6,
+    "pass": true,
+    "completion": {
+      "active": {
+        "chapterId": "city1",
+        "kind": "point",
+        "queue": [
+          {
+            "id": "city-6",
+            "mode": "point"
+          },
+          {
+            "id": "city-4",
+            "mode": "point"
+          },
+          {
+            "id": "city-5",
+            "mode": "point"
+          },
+          {
+            "id": "city-1",
+            "mode": "point"
+          },
+          {
+            "id": "city-3",
+            "mode": "point"
+          },
+          {
+            "id": "city-2",
+            "mode": "point"
+          }
+        ],
+        "index": 6,
+        "answered": true,
+        "done": true,
+        "originalTotal": 6,
+        "answers": [
+          {
+            "ok": true
+          },
+          {
+            "ok": true
+          },
+          {
+            "ok": true
+          },
+          {
+            "ok": true
+          },
+          {
+            "ok": true
+          },
+          {
+            "ok": true
+          }
+        ],
+        "correct": 6,
+        "wrong": 0,
+        "pending": [],
+        "awarded": [
+          "city-6:point",
+          "city-4:point",
+          "city-5:point",
+          "city-1:point",
+          "city-3:point",
+          "city-2:point"
+        ],
+        "lastAnswer": null,
+        "result": {
+          "passed": true,
+          "goldEarned": false,
+          "newlyCompleted": false
+        }
+      },
+      "record": {
+        "stage": 2,
+        "completedAt": 0,
+        "goldAt": 0,
+        "nextReviewAt": 0,
+        "reviews": 0
+      },
+      "good": 6,
+      "pizzas": 0,
+      "slices": 6,
+      "trips": 0
+    }
+  },
+  {
+    "engine": "chromium",
+    "type": "real-continuity",
+    "pass": true,
+    "before": {
+      "id": "city-3",
+      "mode": "route",
+      "task": {
+        "id": "city-3",
+        "mode": "write"
+      },
+      "value": "Florxyzence",
+      "start": 2,
+      "end": 7,
+      "direction": "backward"
+    },
+    "after": {
+      "id": "city-3",
+      "mode": "route",
+      "task": {
+        "id": "city-3",
+        "mode": "write"
+      },
+      "value": "Florxyzence",
+      "start": 2,
+      "end": 7,
+      "direction": "backward"
+    }
+  },
+  {
+    "engine": "chromium",
+    "type": "real-answer",
+    "kind": "write",
+    "id": "city-3",
+    "mode": "write",
+    "index": 0,
+    "pass": true,
+    "answer": {
+      "answered": true,
+      "last": {
+        "ok": true
+      }
+    }
+  },
+  {
+    "engine": "chromium",
+    "type": "real-answer",
+    "kind": "write",
+    "id": "city-5",
+    "mode": "write",
+    "index": 1,
+    "pass": true,
+    "answer": {
+      "answered": true,
+      "last": {
+        "ok": true
+      }
+    }
+  },
+  {
+    "engine": "chromium",
+    "type": "real-answer",
+    "kind": "write",
+    "id": "city-4",
+    "mode": "write",
+    "index": 2,
+    "pass": true,
+    "answer": {
+      "answered": true,
+      "last": {
+        "ok": true
+      }
+    }
+  },
+  {
+    "engine": "chromium",
+    "type": "real-answer",
+    "kind": "write",
+    "id": "city-1",
+    "mode": "write",
+    "index": 3,
+    "pass": true,
+    "answer": {
+      "answered": true,
+      "last": {
+        "ok": true
+      }
+    }
+  },
+  {
+    "engine": "chromium",
+    "type": "real-answer",
+    "kind": "write",
+    "id": "city-2",
+    "mode": "write",
+    "index": 4,
+    "pass": true,
+    "answer": {
+      "answered": true,
+      "last": {
+        "ok": true
+      }
+    }
+  },
+  {
+    "engine": "chromium",
+    "type": "real-answer",
+    "kind": "write",
+    "id": "city-6",
+    "mode": "write",
+    "index": 5,
+    "pass": true,
+    "answer": {
+      "answered": true,
+      "last": {
+        "ok": true
+      }
+    }
+  },
+  {
+    "engine": "chromium",
+    "type": "real-stage-complete",
+    "kind": "write",
+    "count": 6,
+    "pass": true,
+    "completion": {
+      "active": {
+        "chapterId": "city1",
+        "kind": "write",
+        "queue": [
+          {
+            "id": "city-3",
+            "mode": "write"
+          },
+          {
+            "id": "city-5",
+            "mode": "write"
+          },
+          {
+            "id": "city-4",
+            "mode": "write"
+          },
+          {
+            "id": "city-1",
+            "mode": "write"
+          },
+          {
+            "id": "city-2",
+            "mode": "write"
+          },
+          {
+            "id": "city-6",
+            "mode": "write"
+          }
+        ],
+        "index": 6,
+        "answered": true,
+        "done": true,
+        "originalTotal": 6,
+        "answers": [
+          {
+            "ok": true
+          },
+          {
+            "ok": true
+          },
+          {
+            "ok": true
+          },
+          {
+            "ok": true
+          },
+          {
+            "ok": true
+          },
+          {
+            "ok": true
+          }
+        ],
+        "correct": 6,
+        "wrong": 0,
+        "pending": [],
+        "awarded": [
+          "city-3:write",
+          "city-5:write",
+          "city-4:write",
+          "city-1:write",
+          "city-2:write",
+          "city-6:write"
+        ],
+        "lastAnswer": null,
+        "result": {
+          "passed": true,
+          "goldEarned": false,
+          "newlyCompleted": true
+        }
+      },
+      "record": {
+        "stage": 3,
+        "completedAt": 1794221947940,
+        "goldAt": 0,
+        "nextReviewAt": 1794308347940,
+        "reviews": 0
+      },
+      "good": 12,
+      "pizzas": 1,
+      "slices": 4,
+      "trips": 0
+    }
+  },
+  {
+    "engine": "chromium",
+    "type": "real-answer",
+    "kind": "gold",
+    "id": "city-4",
+    "mode": "point",
+    "index": 0,
+    "pass": true,
+    "answer": {
+      "answered": true,
+      "last": {
+        "ok": true
+      }
+    }
+  },
+  {
+    "engine": "chromium",
+    "type": "real-answer",
+    "kind": "gold",
+    "id": "city-1",
+    "mode": "point",
+    "index": 1,
+    "pass": true,
+    "answer": {
+      "answered": true,
+      "last": {
+        "ok": true
+      }
+    }
+  },
+  {
+    "engine": "chromium",
+    "type": "real-answer",
+    "kind": "gold",
+    "id": "city-6",
+    "mode": "point",
+    "index": 2,
+    "pass": true,
+    "answer": {
+      "answered": true,
+      "last": {
+        "ok": true
+      }
+    }
+  },
+  {
+    "engine": "chromium",
+    "type": "real-answer",
+    "kind": "gold",
+    "id": "city-5",
+    "mode": "point",
+    "index": 3,
+    "pass": true,
+    "answer": {
+      "answered": true,
+      "last": {
+        "ok": true
+      }
+    }
+  },
+  {
+    "engine": "chromium",
+    "type": "real-answer",
+    "kind": "gold",
+    "id": "city-3",
+    "mode": "point",
+    "index": 4,
+    "pass": true,
+    "answer": {
+      "answered": true,
+      "last": {
+        "ok": true
+      }
+    }
+  },
+  {
+    "engine": "chromium",
+    "type": "real-answer",
+    "kind": "gold",
+    "id": "city-2",
+    "mode": "point",
+    "index": 5,
+    "pass": true,
+    "answer": {
+      "answered": true,
+      "last": {
+        "ok": true
+      }
+    }
+  },
+  {
+    "engine": "chromium",
+    "type": "real-answer",
+    "kind": "gold",
+    "id": "city-5",
+    "mode": "write",
+    "index": 6,
+    "pass": true,
+    "answer": {
+      "answered": true,
+      "last": {
+        "ok": true
+      }
+    }
+  },
+  {
+    "engine": "chromium",
+    "type": "real-answer",
+    "kind": "gold",
+    "id": "city-4",
+    "mode": "write",
+    "index": 7,
+    "pass": true,
+    "answer": {
+      "answered": true,
+      "last": {
+        "ok": true
+      }
+    }
+  },
+  {
+    "engine": "chromium",
+    "type": "real-answer",
+    "kind": "gold",
+    "id": "city-2",
+    "mode": "write",
+    "index": 8,
+    "pass": true,
+    "answer": {
+      "answered": true,
+      "last": {
+        "ok": true
+      }
+    }
+  },
+  {
+    "engine": "chromium",
+    "type": "real-answer",
+    "kind": "gold",
+    "id": "city-1",
+    "mode": "write",
+    "index": 9,
+    "pass": true,
+    "answer": {
+      "answered": true,
+      "last": {
+        "ok": true
+      }
+    }
+  },
+  {
+    "engine": "chromium",
+    "type": "real-answer",
+    "kind": "gold",
+    "id": "city-6",
+    "mode": "write",
+    "index": 10,
+    "pass": true,
+    "answer": {
+      "answered": true,
+      "last": {
+        "ok": true
+      }
+    }
+  },
+  {
+    "engine": "chromium",
+    "type": "real-answer",
+    "kind": "gold",
+    "id": "city-3",
+    "mode": "write",
+    "index": 11,
+    "pass": true,
+    "answer": {
+      "answered": true,
+      "last": {
+        "ok": true
+      }
+    }
+  },
+  {
+    "engine": "chromium",
+    "type": "real-stage-complete",
+    "kind": "gold",
+    "count": 12,
+    "pass": true,
+    "completion": {
+      "active": {
+        "chapterId": "city1",
+        "kind": "gold",
+        "queue": [
+          {
+            "id": "city-4",
+            "mode": "point"
+          },
+          {
+            "id": "city-1",
+            "mode": "point"
+          },
+          {
+            "id": "city-6",
+            "mode": "point"
+          },
+          {
+            "id": "city-5",
+            "mode": "point"
+          },
+          {
+            "id": "city-3",
+            "mode": "point"
+          },
+          {
+            "id": "city-2",
+            "mode": "point"
+          },
+          {
+            "id": "city-5",
+            "mode": "write"
+          },
+          {
+            "id": "city-4",
+            "mode": "write"
+          },
+          {
+            "id": "city-2",
+            "mode": "write"
+          },
+          {
+            "id": "city-1",
+            "mode": "write"
+          },
+          {
+            "id": "city-6",
+            "mode": "write"
+          },
+          {
+            "id": "city-3",
+            "mode": "write"
+          }
+        ],
+        "index": 12,
+        "answered": true,
+        "done": true,
+        "originalTotal": 12,
+        "answers": [
+          {
+            "ok": true
+          },
+          {
+            "ok": true
+          },
+          {
+            "ok": true
+          },
+          {
+            "ok": true
+          },
+          {
+            "ok": true
+          },
+          {
+            "ok": true
+          },
+          {
+            "ok": true
+          },
+          {
+            "ok": true
+          },
+          {
+            "ok": true
+          },
+          {
+            "ok": true
+          },
+          {
+            "ok": true
+          },
+          {
+            "ok": true
+          }
+        ],
+        "correct": 12,
+        "wrong": 0,
+        "pending": [],
+        "awarded": [
+          "city-4:point",
+          "city-1:point",
+          "city-6:point",
+          "city-5:point",
+          "city-3:point",
+          "city-2:point",
+          "city-5:write",
+          "city-4:write",
+          "city-2:write",
+          "city-1:write",
+          "city-6:write",
+          "city-3:write"
+        ],
+        "lastAnswer": null,
+        "result": {
+          "passed": true,
+          "goldEarned": true,
+          "newlyCompleted": false
+        }
+      },
+      "record": {
+        "stage": 3,
+        "completedAt": 1794221947940,
+        "goldAt": 1794221951494,
+        "nextReviewAt": 1794308351494,
+        "reviews": 0
+      },
+      "good": 24,
+      "pizzas": 3,
+      "slices": 0,
+      "trips": 1
+    }
+  },
+  {
+    "engine": "chromium",
+    "type": "real-final",
+    "pass": true,
+    "final": {
+      "city1": "gold",
+      "city2": "now",
+      "stage": 3,
+      "gold": 1794221951494
+    }
+  },
+  {
+    "engine": "webkit",
+    "type": "real-stage-complete",
+    "kind": "discover",
+    "count": 6,
+    "pass": true,
+    "completion": {
+      "active": {
+        "chapterId": "city1",
+        "kind": "discover",
+        "queue": [
+          {
+            "id": "city-6",
+            "mode": "discover"
+          },
+          {
+            "id": "city-4",
+            "mode": "discover"
+          },
+          {
+            "id": "city-1",
+            "mode": "discover"
+          },
+          {
+            "id": "city-3",
+            "mode": "discover"
+          },
+          {
+            "id": "city-5",
+            "mode": "discover"
+          },
+          {
+            "id": "city-2",
+            "mode": "discover"
+          }
+        ],
+        "index": 6,
+        "answered": true,
+        "done": true,
+        "originalTotal": 6,
+        "answers": [
+          {
+            "ok": true
+          },
+          {
+            "ok": true
+          },
+          {
+            "ok": true
+          },
+          {
+            "ok": true
+          },
+          {
+            "ok": true
+          },
+          {
+            "ok": true
+          }
+        ],
+        "correct": 6,
+        "wrong": 0,
+        "pending": [],
+        "awarded": [],
+        "lastAnswer": null,
+        "result": {
+          "passed": true,
+          "goldEarned": false,
+          "newlyCompleted": false
+        }
+      },
+      "record": {
+        "stage": 1,
+        "completedAt": 0,
+        "goldAt": 0,
+        "nextReviewAt": 0,
+        "reviews": 0
+      },
+      "good": 0,
+      "pizzas": 0,
+      "slices": 0,
+      "trips": 0
+    }
+  },
+  {
+    "engine": "webkit",
+    "type": "real-answer",
+    "kind": "point",
+    "id": "city-4",
+    "mode": "point",
+    "index": 0,
+    "pass": true,
+    "answer": {
+      "answered": true,
+      "last": {
+        "ok": true
+      }
+    }
+  },
+  {
+    "engine": "webkit",
+    "type": "real-answer",
+    "kind": "point",
+    "id": "city-2",
+    "mode": "point",
+    "index": 1,
+    "pass": true,
+    "answer": {
+      "answered": true,
+      "last": {
+        "ok": true
+      }
+    }
+  },
+  {
+    "engine": "webkit",
+    "type": "real-answer",
+    "kind": "point",
+    "id": "city-3",
+    "mode": "point",
+    "index": 2,
+    "pass": true,
+    "answer": {
+      "answered": true,
+      "last": {
+        "ok": true
+      }
+    }
+  },
+  {
+    "engine": "webkit",
+    "type": "real-answer",
+    "kind": "point",
+    "id": "city-1",
+    "mode": "point",
+    "index": 3,
+    "pass": true,
+    "answer": {
+      "answered": true,
+      "last": {
+        "ok": true
+      }
+    }
+  },
+  {
+    "engine": "webkit",
+    "type": "real-answer",
+    "kind": "point",
+    "id": "city-6",
+    "mode": "point",
+    "index": 4,
+    "pass": true,
+    "answer": {
+      "answered": true,
+      "last": {
+        "ok": true
+      }
+    }
+  },
+  {
+    "engine": "webkit",
+    "type": "real-answer",
+    "kind": "point",
+    "id": "city-5",
+    "mode": "point",
+    "index": 5,
+    "pass": true,
+    "answer": {
+      "answered": true,
+      "last": {
+        "ok": true
+      }
+    }
+  },
+  {
+    "engine": "webkit",
+    "type": "real-stage-complete",
+    "kind": "point",
+    "count": 6,
+    "pass": true,
+    "completion": {
+      "active": {
+        "chapterId": "city1",
+        "kind": "point",
+        "queue": [
+          {
+            "id": "city-4",
+            "mode": "point"
+          },
+          {
+            "id": "city-2",
+            "mode": "point"
+          },
+          {
+            "id": "city-3",
+            "mode": "point"
+          },
+          {
+            "id": "city-1",
+            "mode": "point"
+          },
+          {
+            "id": "city-6",
+            "mode": "point"
+          },
+          {
+            "id": "city-5",
+            "mode": "point"
+          }
+        ],
+        "index": 6,
+        "answered": true,
+        "done": true,
+        "originalTotal": 6,
+        "answers": [
+          {
+            "ok": true
+          },
+          {
+            "ok": true
+          },
+          {
+            "ok": true
+          },
+          {
+            "ok": true
+          },
+          {
+            "ok": true
+          },
+          {
+            "ok": true
+          }
+        ],
+        "correct": 6,
+        "wrong": 0,
+        "pending": [],
+        "awarded": [
+          "city-4:point",
+          "city-2:point",
+          "city-3:point",
+          "city-1:point",
+          "city-6:point",
+          "city-5:point"
+        ],
+        "lastAnswer": null,
+        "result": {
+          "passed": true,
+          "goldEarned": false,
+          "newlyCompleted": false
+        }
+      },
+      "record": {
+        "stage": 2,
+        "completedAt": 0,
+        "goldAt": 0,
+        "nextReviewAt": 0,
+        "reviews": 0
+      },
+      "good": 6,
+      "pizzas": 0,
+      "slices": 6,
+      "trips": 0
+    }
+  },
+  {
+    "engine": "webkit",
+    "type": "real-continuity",
+    "pass": true,
+    "before": {
+      "id": "city-4",
+      "mode": "route",
+      "task": {
+        "id": "city-4",
+        "mode": "write"
+      },
+      "value": "Florxyzence",
+      "start": 2,
+      "end": 7,
+      "direction": "backward"
+    },
+    "after": {
+      "id": "city-4",
+      "mode": "route",
+      "task": {
+        "id": "city-4",
+        "mode": "write"
+      },
+      "value": "Florxyzence",
+      "start": 2,
+      "end": 7,
+      "direction": "backward"
+    }
+  },
+  {
+    "engine": "webkit",
+    "type": "real-answer",
+    "kind": "write",
+    "id": "city-4",
+    "mode": "write",
+    "index": 0,
+    "pass": true,
+    "answer": {
+      "answered": true,
+      "last": {
+        "ok": true
+      }
+    }
+  },
+  {
+    "engine": "webkit",
+    "type": "real-answer",
+    "kind": "write",
+    "id": "city-3",
+    "mode": "write",
+    "index": 1,
+    "pass": true,
+    "answer": {
+      "answered": true,
+      "last": {
+        "ok": true
+      }
+    }
+  },
+  {
+    "engine": "webkit",
+    "type": "real-answer",
+    "kind": "write",
+    "id": "city-6",
+    "mode": "write",
+    "index": 2,
+    "pass": true,
+    "answer": {
+      "answered": true,
+      "last": {
+        "ok": true
+      }
+    }
+  },
+  {
+    "engine": "webkit",
+    "type": "real-answer",
+    "kind": "write",
+    "id": "city-2",
+    "mode": "write",
+    "index": 3,
+    "pass": true,
+    "answer": {
+      "answered": true,
+      "last": {
+        "ok": true
+      }
+    }
+  },
+  {
+    "engine": "webkit",
+    "type": "real-answer",
+    "kind": "write",
+    "id": "city-1",
+    "mode": "write",
+    "index": 4,
+    "pass": true,
+    "answer": {
+      "answered": true,
+      "last": {
+        "ok": true
+      }
+    }
+  },
+  {
+    "engine": "webkit",
+    "type": "real-answer",
+    "kind": "write",
+    "id": "city-5",
+    "mode": "write",
+    "index": 5,
+    "pass": true,
+    "answer": {
+      "answered": true,
+      "last": {
+        "ok": true
+      }
+    }
+  },
+  {
+    "engine": "webkit",
+    "type": "real-stage-complete",
+    "kind": "write",
+    "count": 6,
+    "pass": true,
+    "completion": {
+      "active": {
+        "chapterId": "city1",
+        "kind": "write",
+        "queue": [
+          {
+            "id": "city-4",
+            "mode": "write"
+          },
+          {
+            "id": "city-3",
+            "mode": "write"
+          },
+          {
+            "id": "city-6",
+            "mode": "write"
+          },
+          {
+            "id": "city-2",
+            "mode": "write"
+          },
+          {
+            "id": "city-1",
+            "mode": "write"
+          },
+          {
+            "id": "city-5",
+            "mode": "write"
+          }
+        ],
+        "index": 6,
+        "answered": true,
+        "done": true,
+        "originalTotal": 6,
+        "answers": [
+          {
+            "ok": true
+          },
+          {
+            "ok": true
+          },
+          {
+            "ok": true
+          },
+          {
+            "ok": true
+          },
+          {
+            "ok": true
+          },
+          {
+            "ok": true
+          }
+        ],
+        "correct": 6,
+        "wrong": 0,
+        "pending": [],
+        "awarded": [
+          "city-4:write",
+          "city-3:write",
+          "city-6:write",
+          "city-2:write",
+          "city-1:write",
+          "city-5:write"
+        ],
+        "lastAnswer": null,
+        "result": {
+          "passed": true,
+          "goldEarned": false,
+          "newlyCompleted": true
+        }
+      },
+      "record": {
+        "stage": 3,
+        "completedAt": 1794221958026,
+        "goldAt": 0,
+        "nextReviewAt": 1794308358026,
+        "reviews": 0
+      },
+      "good": 12,
+      "pizzas": 1,
+      "slices": 4,
+      "trips": 0
+    }
+  },
+  {
+    "engine": "webkit",
+    "type": "real-answer",
+    "kind": "gold",
+    "id": "city-4",
+    "mode": "point",
+    "index": 0,
+    "pass": true,
+    "answer": {
+      "answered": true,
+      "last": {
+        "ok": true
+      }
+    }
+  },
+  {
+    "engine": "webkit",
+    "type": "real-answer",
+    "kind": "gold",
+    "id": "city-5",
+    "mode": "point",
+    "index": 1,
+    "pass": true,
+    "answer": {
+      "answered": true,
+      "last": {
+        "ok": true
+      }
+    }
+  },
+  {
+    "engine": "webkit",
+    "type": "real-answer",
+    "kind": "gold",
+    "id": "city-2",
+    "mode": "point",
+    "index": 2,
+    "pass": true,
+    "answer": {
+      "answered": true,
+      "last": {
+        "ok": true
+      }
+    }
+  },
+  {
+    "engine": "webkit",
+    "type": "real-answer",
+    "kind": "gold",
+    "id": "city-6",
+    "mode": "point",
+    "index": 3,
+    "pass": true,
+    "answer": {
+      "answered": true,
+      "last": {
+        "ok": true
+      }
+    }
+  },
+  {
+    "engine": "webkit",
+    "type": "real-answer",
+    "kind": "gold",
+    "id": "city-3",
+    "mode": "point",
+    "index": 4,
+    "pass": true,
+    "answer": {
+      "answered": true,
+      "last": {
+        "ok": true
+      }
+    }
+  },
+  {
+    "engine": "webkit",
+    "type": "real-answer",
+    "kind": "gold",
+    "id": "city-1",
+    "mode": "point",
+    "index": 5,
+    "pass": true,
+    "answer": {
+      "answered": true,
+      "last": {
+        "ok": true
+      }
+    }
+  },
+  {
+    "engine": "webkit",
+    "type": "real-answer",
+    "kind": "gold",
+    "id": "city-5",
+    "mode": "write",
+    "index": 6,
+    "pass": true,
+    "answer": {
+      "answered": true,
+      "last": {
+        "ok": true
+      }
+    }
+  },
+  {
+    "engine": "webkit",
+    "type": "real-answer",
+    "kind": "gold",
+    "id": "city-3",
+    "mode": "write",
+    "index": 7,
+    "pass": true,
+    "answer": {
+      "answered": true,
+      "last": {
+        "ok": true
+      }
+    }
+  },
+  {
+    "engine": "webkit",
+    "type": "real-answer",
+    "kind": "gold",
+    "id": "city-4",
+    "mode": "write",
+    "index": 8,
+    "pass": true,
+    "answer": {
+      "answered": true,
+      "last": {
+        "ok": true
+      }
+    }
+  },
+  {
+    "engine": "webkit",
+    "type": "real-answer",
+    "kind": "gold",
+    "id": "city-2",
+    "mode": "write",
+    "index": 9,
+    "pass": true,
+    "answer": {
+      "answered": true,
+      "last": {
+        "ok": true
+      }
+    }
+  },
+  {
+    "engine": "webkit",
+    "type": "real-answer",
+    "kind": "gold",
+    "id": "city-6",
+    "mode": "write",
+    "index": 10,
+    "pass": true,
+    "answer": {
+      "answered": true,
+      "last": {
+        "ok": true
+      }
+    }
+  },
+  {
+    "engine": "webkit",
+    "type": "real-answer",
+    "kind": "gold",
+    "id": "city-1",
+    "mode": "write",
+    "index": 11,
+    "pass": true,
+    "answer": {
+      "answered": true,
+      "last": {
+        "ok": true
+      }
+    }
+  },
+  {
+    "engine": "webkit",
+    "type": "real-stage-complete",
+    "kind": "gold",
+    "count": 12,
+    "pass": true,
+    "completion": {
+      "active": {
+        "chapterId": "city1",
+        "kind": "gold",
+        "queue": [
+          {
+            "id": "city-4",
+            "mode": "point"
+          },
+          {
+            "id": "city-5",
+            "mode": "point"
+          },
+          {
+            "id": "city-2",
+            "mode": "point"
+          },
+          {
+            "id": "city-6",
+            "mode": "point"
+          },
+          {
+            "id": "city-3",
+            "mode": "point"
+          },
+          {
+            "id": "city-1",
+            "mode": "point"
+          },
+          {
+            "id": "city-5",
+            "mode": "write"
+          },
+          {
+            "id": "city-3",
+            "mode": "write"
+          },
+          {
+            "id": "city-4",
+            "mode": "write"
+          },
+          {
+            "id": "city-2",
+            "mode": "write"
+          },
+          {
+            "id": "city-6",
+            "mode": "write"
+          },
+          {
+            "id": "city-1",
+            "mode": "write"
+          }
+        ],
+        "index": 12,
+        "answered": true,
+        "done": true,
+        "originalTotal": 12,
+        "answers": [
+          {
+            "ok": true
+          },
+          {
+            "ok": true
+          },
+          {
+            "ok": true
+          },
+          {
+            "ok": true
+          },
+          {
+            "ok": true
+          },
+          {
+            "ok": true
+          },
+          {
+            "ok": true
+          },
+          {
+            "ok": true
+          },
+          {
+            "ok": true
+          },
+          {
+            "ok": true
+          },
+          {
+            "ok": true
+          },
+          {
+            "ok": true
+          }
+        ],
+        "correct": 12,
+        "wrong": 0,
+        "pending": [],
+        "awarded": [
+          "city-4:point",
+          "city-5:point",
+          "city-2:point",
+          "city-6:point",
+          "city-3:point",
+          "city-1:point",
+          "city-5:write",
+          "city-3:write",
+          "city-4:write",
+          "city-2:write",
+          "city-6:write",
+          "city-1:write"
+        ],
+        "lastAnswer": null,
+        "result": {
+          "passed": true,
+          "goldEarned": true,
+          "newlyCompleted": false
+        }
+      },
+      "record": {
+        "stage": 3,
+        "completedAt": 1794221958026,
+        "goldAt": 1794221960503,
+        "nextReviewAt": 1794308360503,
+        "reviews": 0
+      },
+      "good": 24,
+      "pizzas": 3,
+      "slices": 0,
+      "trips": 1
+    }
+  },
+  {
+    "engine": "webkit",
+    "type": "real-final",
+    "pass": true,
+    "final": {
+      "city1": "gold",
+      "city2": "now",
+      "stage": 3,
+      "gold": 1794221960503
+    }
+  }
+]

@@ -1,0 +1,212 @@
+{
+  "rows": [
+    {
+      "tag": "path",
+      "id": "v3m-atlas-land-19",
+      "class": "country",
+      "text": "",
+      "transition": "fill 0.15s",
+      "animation": "none"
+    },
+    {
+      "tag": "path",
+      "id": "v3m-atlas-land-20",
+      "class": "country",
+      "text": "",
+      "transition": "fill 0.15s",
+      "animation": "none"
+    },
+    {
+      "tag": "path",
+      "id": "v3m-atlas-land-21",
+      "class": "country",
+      "text": "",
+      "transition": "fill 0.15s",
+      "animation": "none"
+    },
+    {
+      "tag": "path",
+      "id": "v3m-atlas-land-22",
+      "class": "country",
+      "text": "",
+      "transition": "fill 0.15s",
+      "animation": "none"
+    },
+    {
+      "tag": "path",
+      "id": "v3m-atlas-land-23",
+      "class": "country",
+      "text": "",
+      "transition": "fill 0.15s",
+      "animation": "none"
+    },
+    {
+      "tag": "path",
+      "id": "v3m-atlas-land-25",
+      "class": "country",
+      "text": "",
+      "transition": "fill 0.15s",
+      "animation": "none"
+    },
+    {
+      "tag": "path",
+      "id": "v3m-atlas-land-26",
+      "class": "country",
+      "text": "",
+      "transition": "fill 0.15s",
+      "animation": "none"
+    }
+  ],
+  "active": [
+    {
+      "playState": "running",
+      "effect": {
+        "delay": 0,
+        "direction": "normal",
+        "duration": 150,
+        "easing": "ease",
+        "endDelay": 0,
+        "fill": "backwards",
+        "iterationStart": 0,
+        "iterations": 1
+      },
+      "target": "country v3Hit",
+      "frames": [
+        {
+          "offset": 0,
+          "easing": "linear",
+          "composite": "auto",
+          "fill": "rgb(238, 226, 199)",
+          "computedOffset": 0
+        },
+        {
+          "offset": 1,
+          "easing": "linear",
+          "composite": "auto",
+          "fill": "rgb(185, 80, 47)",
+          "computedOffset": 1
+        }
+      ]
+    },
+    {
+      "playState": "running",
+      "effect": {
+        "delay": 0,
+        "direction": "normal",
+        "duration": 150,
+        "easing": "ease",
+        "endDelay": 0,
+        "fill": "backwards",
+        "iterationStart": 0,
+        "iterations": 1
+      },
+      "target": "country v3Hit",
+      "frames": [
+        {
+          "offset": 0,
+          "easing": "linear",
+          "composite": "auto",
+          "fill": "rgb(238, 226, 199)",
+          "computedOffset": 0
+        },
+        {
+          "offset": 1,
+          "easing": "linear",
+          "composite": "auto",
+          "fill": "rgb(185, 80, 47)",
+          "computedOffset": 1
+        }
+      ]
+    },
+    {
+      "playState": "running",
+      "effect": {
+        "delay": 0,
+        "direction": "normal",
+        "duration": 150,
+        "easing": "ease",
+        "endDelay": 0,
+        "fill": "backwards",
+        "iterationStart": 0,
+        "iterations": 1
+      },
+      "target": "country v3Hit",
+      "frames": [
+        {
+          "offset": 0,
+          "easing": "linear",
+          "composite": "auto",
+          "fill": "rgb(238, 226, 199)",
+          "computedOffset": 0
+        },
+        {
+          "offset": 1,
+          "easing": "linear",
+          "composite": "auto",
+          "fill": "rgb(185, 80, 47)",
+          "computedOffset": 1
+        }
+      ]
+    },
+    {
+      "playState": "running",
+      "effect": {
+        "delay": 0,
+        "direction": "normal",
+        "duration": 150,
+        "easing": "ease",
+        "endDelay": 0,
+        "fill": "backwards",
+        "iterationStart": 0,
+        "iterations": 1
+      },
+      "target": "country v3Hit",
+      "frames": [
+        {
+          "offset": 0,
+          "easing": "linear",
+          "composite": "auto",
+          "fill": "rgb(238, 226, 199)",
+          "computedOffset": 0
+        },
+        {
+          "offset": 1,
+          "easing": "linear",
+          "composite": "auto",
+          "fill": "rgb(185, 80, 47)",
+          "computedOffset": 1
+        }
+      ]
+    },
+    {
+      "playState": "running",
+      "effect": {
+        "delay": 0,
+        "direction": "normal",
+        "duration": 150,
+        "easing": "ease",
+        "endDelay": 0,
+        "fill": "backwards",
+        "iterationStart": 0,
+        "iterations": 1
+      },
+      "target": "country v3Hit",
+      "frames": [
+        {
+          "offset": 0,
+          "easing": "linear",
+          "composite": "auto",
+          "fill": "rgb(238, 226, 199)",
+          "computedOffset": 0
+        },
+        {
+          "offset": 1,
+          "easing": "linear",
+          "composite": "auto",
+          "fill": "rgb(185, 80, 47)",
+          "computedOffset": 1
+        }
+      ]
+    }
+  ]
+}

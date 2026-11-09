@@ -1,0 +1,10 @@
+{
+  "originalScript": "/Users/dennisariens/projects/topo-v3-independent-qa/scripts/qa-v3-reis.py",
+  "originalSHA256": "0ab92e48af9f5dd39943e6a087bca53ebb98165da7f247db58e3bef7765a20bf",
+  "adaptedSHA256": "1b59866a07eaefc63a99a9447ef489c2023fec3f3bb2c6a85eb831bf90368084",
+  "onlyChange": {
+    "from": "b = await p.chromium.launch(executable_path=CHROME)",
+    "to": "b = await p.webkit.launch()"
+  },
+  "checksWeakened": false
+}

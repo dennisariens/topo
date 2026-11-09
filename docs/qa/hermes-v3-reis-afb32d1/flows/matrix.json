@@ -1,0 +1,5224 @@
+[
+  {
+    "engine": "chromium",
+    "hash": "nieuw",
+    "chapter": "city1",
+    "type": "fixture-status",
+    "fixture": true,
+    "pass": true,
+    "expected": "now",
+    "observed": {
+      "status": "now",
+      "label": "0 van 3 lessen",
+      "segments": [
+        {
+          "class": "now",
+          "label": "Ontdekken, nu"
+        },
+        {
+          "class": "",
+          "label": "Aanwijzen"
+        },
+        {
+          "class": "",
+          "label": "Namen schrijven"
+        }
+      ],
+      "actions": [
+        "Ontdekken"
+      ]
+    }
+  },
+  {
+    "engine": "chromium",
+    "hash": "nieuw",
+    "chapter": "city2",
+    "type": "fixture-status",
+    "fixture": true,
+    "pass": true,
+    "expected": "locked",
+    "observed": {
+      "status": "locked",
+      "label": "op slot",
+      "segments": [
+        {
+          "class": "",
+          "label": "Ontdekken"
+        },
+        {
+          "class": "",
+          "label": "Aanwijzen"
+        },
+        {
+          "class": "",
+          "label": "Namen schrijven"
+        }
+      ],
+      "actions": []
+    }
+  },
+  {
+    "engine": "chromium",
+    "hash": "nieuw",
+    "chapter": "city3",
+    "type": "fixture-status",
+    "fixture": true,
+    "pass": true,
+    "expected": "locked",
+    "observed": {
+      "status": "locked",
+      "label": "op slot",
+      "segments": [
+        {
+          "class": "",
+          "label": "Ontdekken"
+        },
+        {
+          "class": "",
+          "label": "Aanwijzen"
+        },
+        {
+          "class": "",
+          "label": "Namen schrijven"
+        }
+      ],
+      "actions": []
+    }
+  },
+  {
+    "engine": "chromium",
+    "hash": "nieuw",
+    "chapter": "city4",
+    "type": "fixture-status",
+    "fixture": true,
+    "pass": true,
+    "expected": "locked",
+    "observed": {
+      "status": "locked",
+      "label": "op slot",
+      "segments": [
+        {
+          "class": "",
+          "label": "Ontdekken"
+        },
+        {
+          "class": "",
+          "label": "Aanwijzen"
+        },
+        {
+          "class": "",
+          "label": "Namen schrijven"
+        }
+      ],
+      "actions": []
+    }
+  },
+  {
+    "engine": "chromium",
+    "hash": "nieuw",
+    "chapter": "islands",
+    "type": "fixture-status",
+    "fixture": true,
+    "pass": true,
+    "expected": "locked",
+    "observed": {
+      "status": "locked",
+      "label": "op slot",
+      "segments": [
+        {
+          "class": "",
+          "label": "Ontdekken"
+        },
+        {
+          "class": "",
+          "label": "Aanwijzen"
+        },
+        {
+          "class": "",
+          "label": "Namen schrijven"
+        }
+      ],
+      "actions": []
+    }
+  },
+  {
+    "engine": "chromium",
+    "hash": "nieuw",
+    "chapter": "mountains",
+    "type": "fixture-status",
+    "fixture": true,
+    "pass": true,
+    "expected": "locked",
+    "observed": {
+      "status": "locked",
+      "label": "op slot",
+      "segments": [
+        {
+          "class": "",
+          "label": "Ontdekken"
+        },
+        {
+          "class": "",
+          "label": "Aanwijzen"
+        },
+        {
+          "class": "",
+          "label": "Namen schrijven"
+        }
+      ],
+      "actions": []
+    }
+  },
+  {
+    "engine": "chromium",
+    "hash": "nieuw",
+    "chapter": "volcanoes",
+    "type": "fixture-status",
+    "fixture": true,
+    "pass": true,
+    "expected": "locked",
+    "observed": {
+      "status": "locked",
+      "label": "op slot",
+      "segments": [
+        {
+          "class": "",
+          "label": "Ontdekken"
+        },
+        {
+          "class": "",
+          "label": "Aanwijzen"
+        },
+        {
+          "class": "",
+          "label": "Namen schrijven"
+        }
+      ],
+      "actions": []
+    }
+  },
+  {
+    "engine": "chromium",
+    "hash": "nieuw",
+    "chapter": "regions",
+    "type": "fixture-status",
+    "fixture": true,
+    "pass": true,
+    "expected": "locked",
+    "observed": {
+      "status": "locked",
+      "label": "op slot",
+      "segments": [
+        {
+          "class": "",
+          "label": "Ontdekken"
+        },
+        {
+          "class": "",
+          "label": "Aanwijzen"
+        },
+        {
+          "class": "",
+          "label": "Namen schrijven"
+        }
+      ],
+      "actions": []
+    }
+  },
+  {
+    "engine": "chromium",
+    "hash": "nieuw",
+    "chapter": "countries",
+    "type": "fixture-status",
+    "fixture": true,
+    "pass": true,
+    "expected": "locked",
+    "observed": {
+      "status": "locked",
+      "label": "op slot",
+      "segments": [
+        {
+          "class": "",
+          "label": "Ontdekken"
+        },
+        {
+          "class": "",
+          "label": "Aanwijzen"
+        },
+        {
+          "class": "",
+          "label": "Namen schrijven"
+        }
+      ],
+      "actions": []
+    }
+  },
+  {
+    "engine": "chromium",
+    "hash": "nieuw",
+    "chapter": "seas",
+    "type": "fixture-status",
+    "fixture": true,
+    "pass": true,
+    "expected": "locked",
+    "observed": {
+      "status": "locked",
+      "label": "op slot",
+      "segments": [
+        {
+          "class": "",
+          "label": "Ontdekken"
+        },
+        {
+          "class": "",
+          "label": "Aanwijzen"
+        },
+        {
+          "class": "",
+          "label": "Namen schrijven"
+        }
+      ],
+      "actions": []
+    }
+  },
+  {
+    "engine": "chromium",
+    "hash": "nieuw",
+    "chapter": "rivers",
+    "type": "fixture-status",
+    "fixture": true,
+    "pass": true,
+    "expected": "locked",
+    "observed": {
+      "status": "locked",
+      "label": "op slot",
+      "segments": [
+        {
+          "class": "",
+          "label": "Ontdekken"
+        },
+        {
+          "class": "",
+          "label": "Aanwijzen"
+        },
+        {
+          "class": "",
+          "label": "Namen schrijven"
+        }
+      ],
+      "actions": []
+    }
+  },
+  {
+    "engine": "chromium",
+    "hash": "nieuw",
+    "type": "fixture-action",
+    "fixture": true,
+    "chapter": "city1",
+    "kind": "discover",
+    "index": 0,
+    "observed": {
+      "chapter": "city1",
+      "kind": "discover",
+      "question": {
+        "id": "city-6",
+        "mode": "discover"
+      },
+      "visible": true
+    },
+    "pass": true
+  },
+  {
+    "engine": "chromium",
+    "hash": "bezig",
+    "chapter": "city1",
+    "type": "fixture-status",
+    "fixture": true,
+    "pass": true,
+    "expected": "done",
+    "observed": {
+      "status": "done",
+      "label": "afgerond",
+      "segments": [
+        {
+          "class": "on",
+          "label": "Ontdekken, klaar"
+        },
+        {
+          "class": "on",
+          "label": "Aanwijzen, klaar"
+        },
+        {
+          "class": "on",
+          "label": "Namen schrijven, klaar"
+        }
+      ],
+      "actions": [
+        "★ Verdien goud",
+        "↻ Ontdekken",
+        "↻ Aanwijzen",
+        "↻ Namen schrijven"
+      ]
+    }
+  },
+  {
+    "engine": "chromium",
+    "hash": "bezig",
+    "chapter": "city2",
+    "type": "fixture-status",
+    "fixture": true,
+    "pass": true,
+    "expected": "now",
+    "observed": {
+      "status": "now",
+      "label": "1 van 3 lessen",
+      "segments": [
+        {
+          "class": "on",
+          "label": "Ontdekken, klaar"
+        },
+        {
+          "class": "now",
+          "label": "Aanwijzen, nu"
+        },
+        {
+          "class": "",
+          "label": "Namen schrijven"
+        }
+      ],
+      "actions": [
+        "Aanwijzen",
+        "↻ Ontdekken"
+      ]
+    }
+  },
+  {
+    "engine": "chromium",
+    "hash": "bezig",
+    "chapter": "city3",
+    "type": "fixture-status",
+    "fixture": true,
+    "pass": true,
+    "expected": "locked",
+    "observed": {
+      "status": "locked",
+      "label": "op slot",
+      "segments": [
+        {
+          "class": "",
+          "label": "Ontdekken"
+        },
+        {
+          "class": "",
+          "label": "Aanwijzen"
+        },
+        {
+          "class": "",
+          "label": "Namen schrijven"
+        }
+      ],
+      "actions": []
+    }
+  },
+  {
+    "engine": "chromium",
+    "hash": "bezig",
+    "chapter": "city4",
+    "type": "fixture-status",
+    "fixture": true,
+    "pass": true,
+    "expected": "locked",
+    "observed": {
+      "status": "locked",
+      "label": "op slot",
+      "segments": [
+        {
+          "class": "",
+          "label": "Ontdekken"
+        },
+        {
+          "class": "",
+          "label": "Aanwijzen"
+        },
+        {
+          "class": "",
+          "label": "Namen schrijven"
+        }
+      ],
+      "actions": []
+    }
+  },
+  {
+    "engine": "chromium",
+    "hash": "bezig",
+    "chapter": "islands",
+    "type": "fixture-status",
+    "fixture": true,
+    "pass": true,
+    "expected": "locked",
+    "observed": {
+      "status": "locked",
+      "label": "op slot",
+      "segments": [
+        {
+          "class": "",
+          "label": "Ontdekken"
+        },
+        {
+          "class": "",
+          "label": "Aanwijzen"
+        },
+        {
+          "class": "",
+          "label": "Namen schrijven"
+        }
+      ],
+      "actions": []
+    }
+  },
+  {
+    "engine": "chromium",
+    "hash": "bezig",
+    "chapter": "mountains",
+    "type": "fixture-status",
+    "fixture": true,
+    "pass": true,
+    "expected": "locked",
+    "observed": {
+      "status": "locked",
+      "label": "op slot",
+      "segments": [
+        {
+          "class": "",
+          "label": "Ontdekken"
+        },
+        {
+          "class": "",
+          "label": "Aanwijzen"
+        },
+        {
+          "class": "",
+          "label": "Namen schrijven"
+        }
+      ],
+      "actions": []
+    }
+  },
+  {
+    "engine": "chromium",
+    "hash": "bezig",
+    "chapter": "volcanoes",
+    "type": "fixture-status",
+    "fixture": true,
+    "pass": true,
+    "expected": "locked",
+    "observed": {
+      "status": "locked",
+      "label": "op slot",
+      "segments": [
+        {
+          "class": "",
+          "label": "Ontdekken"
+        },
+        {
+          "class": "",
+          "label": "Aanwijzen"
+        },
+        {
+          "class": "",
+          "label": "Namen schrijven"
+        }
+      ],
+      "actions": []
+    }
+  },
+  {
+    "engine": "chromium",
+    "hash": "bezig",
+    "chapter": "regions",
+    "type": "fixture-status",
+    "fixture": true,
+    "pass": true,
+    "expected": "locked",
+    "observed": {
+      "status": "locked",
+      "label": "op slot",
+      "segments": [
+        {
+          "class": "",
+          "label": "Ontdekken"
+        },
+        {
+          "class": "",
+          "label": "Aanwijzen"
+        },
+        {
+          "class": "",
+          "label": "Namen schrijven"
+        }
+      ],
+      "actions": []
+    }
+  },
+  {
+    "engine": "chromium",
+    "hash": "bezig",
+    "chapter": "countries",
+    "type": "fixture-status",
+    "fixture": true,
+    "pass": true,
+    "expected": "locked",
+    "observed": {
+      "status": "locked",
+      "label": "op slot",
+      "segments": [
+        {
+          "class": "",
+          "label": "Ontdekken"
+        },
+        {
+          "class": "",
+          "label": "Aanwijzen"
+        },
+        {
+          "class": "",
+          "label": "Namen schrijven"
+        }
+      ],
+      "actions": []
+    }
+  },
+  {
+    "engine": "chromium",
+    "hash": "bezig",
+    "chapter": "seas",
+    "type": "fixture-status",
+    "fixture": true,
+    "pass": true,
+    "expected": "locked",
+    "observed": {
+      "status": "locked",
+      "label": "op slot",
+      "segments": [
+        {
+          "class": "",
+          "label": "Ontdekken"
+        },
+        {
+          "class": "",
+          "label": "Aanwijzen"
+        },
+        {
+          "class": "",
+          "label": "Namen schrijven"
+        }
+      ],
+      "actions": []
+    }
+  },
+  {
+    "engine": "chromium",
+    "hash": "bezig",
+    "chapter": "rivers",
+    "type": "fixture-status",
+    "fixture": true,
+    "pass": true,
+    "expected": "locked",
+    "observed": {
+      "status": "locked",
+      "label": "op slot",
+      "segments": [
+        {
+          "class": "",
+          "label": "Ontdekken"
+        },
+        {
+          "class": "",
+          "label": "Aanwijzen"
+        },
+        {
+          "class": "",
+          "label": "Namen schrijven"
+        }
+      ],
+      "actions": []
+    }
+  },
+  {
+    "engine": "chromium",
+    "hash": "bezig",
+    "type": "fixture-action",
+    "fixture": true,
+    "chapter": "city1",
+    "kind": "gold",
+    "index": 0,
+    "observed": {
+      "chapter": "city1",
+      "kind": "gold",
+      "question": {
+        "id": "city-5",
+        "mode": "point"
+      },
+      "visible": true
+    },
+    "pass": true
+  },
+  {
+    "engine": "chromium",
+    "hash": "bezig",
+    "type": "fixture-action",
+    "fixture": true,
+    "chapter": "city1",
+    "kind": "discover",
+    "index": 1,
+    "observed": {
+      "chapter": "city1",
+      "kind": "discover",
+      "question": {
+        "id": "city-5",
+        "mode": "discover"
+      },
+      "visible": true
+    },
+    "pass": true
+  },
+  {
+    "engine": "chromium",
+    "hash": "bezig",
+    "type": "fixture-action",
+    "fixture": true,
+    "chapter": "city1",
+    "kind": "point",
+    "index": 2,
+    "observed": {
+      "chapter": "city1",
+      "kind": "point",
+      "question": {
+        "id": "city-1",
+        "mode": "point"
+      },
+      "visible": true
+    },
+    "pass": true
+  },
+  {
+    "engine": "chromium",
+    "hash": "bezig",
+    "type": "fixture-action",
+    "fixture": true,
+    "chapter": "city1",
+    "kind": "write",
+    "index": 3,
+    "observed": {
+      "chapter": "city1",
+      "kind": "write",
+      "question": {
+        "id": "city-5",
+        "mode": "write"
+      },
+      "visible": true
+    },
+    "pass": true
+  },
+  {
+    "engine": "chromium",
+    "hash": "bezig",
+    "type": "fixture-action",
+    "fixture": true,
+    "chapter": "city2",
+    "kind": "point",
+    "index": 0,
+    "observed": {
+      "chapter": "city2",
+      "kind": "point",
+      "question": {
+        "id": "city-11",
+        "mode": "point"
+      },
+      "visible": true
+    },
+    "pass": true
+  },
+  {
+    "engine": "chromium",
+    "hash": "bezig",
+    "type": "fixture-action",
+    "fixture": true,
+    "chapter": "city2",
+    "kind": "discover",
+    "index": 1,
+    "observed": {
+      "chapter": "city2",
+      "kind": "discover",
+      "question": {
+        "id": "city-9",
+        "mode": "discover"
+      },
+      "visible": true
+    },
+    "pass": true
+  },
+  {
+    "engine": "chromium",
+    "hash": "afgerond",
+    "chapter": "city1",
+    "type": "fixture-status",
+    "fixture": true,
+    "pass": true,
+    "expected": "gold",
+    "observed": {
+      "status": "gold",
+      "label": "goud",
+      "segments": [
+        {
+          "class": "on",
+          "label": "Ontdekken, klaar"
+        },
+        {
+          "class": "on",
+          "label": "Aanwijzen, klaar"
+        },
+        {
+          "class": "on",
+          "label": "Namen schrijven, klaar"
+        }
+      ],
+      "actions": [
+        "Opfrissen",
+        "↻ Ontdekken",
+        "↻ Aanwijzen",
+        "↻ Namen schrijven"
+      ]
+    }
+  },
+  {
+    "engine": "chromium",
+    "hash": "afgerond",
+    "chapter": "city2",
+    "type": "fixture-status",
+    "fixture": true,
+    "pass": true,
+    "expected": "gold",
+    "observed": {
+      "status": "gold",
+      "label": "goud",
+      "segments": [
+        {
+          "class": "on",
+          "label": "Ontdekken, klaar"
+        },
+        {
+          "class": "on",
+          "label": "Aanwijzen, klaar"
+        },
+        {
+          "class": "on",
+          "label": "Namen schrijven, klaar"
+        }
+      ],
+      "actions": [
+        "★ Goud nog eens",
+        "↻ Ontdekken",
+        "↻ Aanwijzen",
+        "↻ Namen schrijven"
+      ]
+    }
+  },
+  {
+    "engine": "chromium",
+    "hash": "afgerond",
+    "chapter": "city3",
+    "type": "fixture-status",
+    "fixture": true,
+    "pass": true,
+    "expected": "done",
+    "observed": {
+      "status": "done",
+      "label": "afgerond",
+      "segments": [
+        {
+          "class": "on",
+          "label": "Ontdekken, klaar"
+        },
+        {
+          "class": "on",
+          "label": "Aanwijzen, klaar"
+        },
+        {
+          "class": "on",
+          "label": "Namen schrijven, klaar"
+        }
+      ],
+      "actions": [
+        "★ Verdien goud",
+        "↻ Ontdekken",
+        "↻ Aanwijzen",
+        "↻ Namen schrijven"
+      ]
+    }
+  },
+  {
+    "engine": "chromium",
+    "hash": "afgerond",
+    "chapter": "city4",
+    "type": "fixture-status",
+    "fixture": true,
+    "pass": true,
+    "expected": "done",
+    "observed": {
+      "status": "done",
+      "label": "afgerond",
+      "segments": [
+        {
+          "class": "on",
+          "label": "Ontdekken, klaar"
+        },
+        {
+          "class": "on",
+          "label": "Aanwijzen, klaar"
+        },
+        {
+          "class": "on",
+          "label": "Namen schrijven, klaar"
+        }
+      ],
+      "actions": [
+        "★ Verdien goud",
+        "↻ Ontdekken",
+        "↻ Aanwijzen",
+        "↻ Namen schrijven"
+      ]
+    }
+  },
+  {
+    "engine": "chromium",
+    "hash": "afgerond",
+    "chapter": "islands",
+    "type": "fixture-status",
+    "fixture": true,
+    "pass": true,
+    "expected": "now",
+    "observed": {
+      "status": "now",
+      "label": "0 van 3 lessen",
+      "segments": [
+        {
+          "class": "now",
+          "label": "Ontdekken, nu"
+        },
+        {
+          "class": "",
+          "label": "Aanwijzen"
+        },
+        {
+          "class": "",
+          "label": "Namen schrijven"
+        }
+      ],
+      "actions": [
+        "Ontdekken"
+      ]
+    }
+  },
+  {
+    "engine": "chromium",
+    "hash": "afgerond",
+    "chapter": "mountains",
+    "type": "fixture-status",
+    "fixture": true,
+    "pass": true,
+    "expected": "locked",
+    "observed": {
+      "status": "locked",
+      "label": "op slot",
+      "segments": [
+        {
+          "class": "",
+          "label": "Ontdekken"
+        },
+        {
+          "class": "",
+          "label": "Aanwijzen"
+        },
+        {
+          "class": "",
+          "label": "Namen schrijven"
+        }
+      ],
+      "actions": []
+    }
+  },
+  {
+    "engine": "chromium",
+    "hash": "afgerond",
+    "chapter": "volcanoes",
+    "type": "fixture-status",
+    "fixture": true,
+    "pass": true,
+    "expected": "locked",
+    "observed": {
+      "status": "locked",
+      "label": "op slot",
+      "segments": [
+        {
+          "class": "",
+          "label": "Ontdekken"
+        },
+        {
+          "class": "",
+          "label": "Aanwijzen"
+        },
+        {
+          "class": "",
+          "label": "Namen schrijven"
+        }
+      ],
+      "actions": []
+    }
+  },
+  {
+    "engine": "chromium",
+    "hash": "afgerond",
+    "chapter": "regions",
+    "type": "fixture-status",
+    "fixture": true,
+    "pass": true,
+    "expected": "locked",
+    "observed": {
+      "status": "locked",
+      "label": "op slot",
+      "segments": [
+        {
+          "class": "",
+          "label": "Ontdekken"
+        },
+        {
+          "class": "",
+          "label": "Aanwijzen"
+        },
+        {
+          "class": "",
+          "label": "Namen schrijven"
+        }
+      ],
+      "actions": []
+    }
+  },
+  {
+    "engine": "chromium",
+    "hash": "afgerond",
+    "chapter": "countries",
+    "type": "fixture-status",
+    "fixture": true,
+    "pass": true,
+    "expected": "locked",
+    "observed": {
+      "status": "locked",
+      "label": "op slot",
+      "segments": [
+        {
+          "class": "",
+          "label": "Ontdekken"
+        },
+        {
+          "class": "",
+          "label": "Aanwijzen"
+        },
+        {
+          "class": "",
+          "label": "Namen schrijven"
+        }
+      ],
+      "actions": []
+    }
+  },
+  {
+    "engine": "chromium",
+    "hash": "afgerond",
+    "chapter": "seas",
+    "type": "fixture-status",
+    "fixture": true,
+    "pass": true,
+    "expected": "locked",
+    "observed": {
+      "status": "locked",
+      "label": "op slot",
+      "segments": [
+        {
+          "class": "",
+          "label": "Ontdekken"
+        },
+        {
+          "class": "",
+          "label": "Aanwijzen"
+        },
+        {
+          "class": "",
+          "label": "Namen schrijven"
+        }
+      ],
+      "actions": []
+    }
+  },
+  {
+    "engine": "chromium",
+    "hash": "afgerond",
+    "chapter": "rivers",
+    "type": "fixture-status",
+    "fixture": true,
+    "pass": true,
+    "expected": "locked",
+    "observed": {
+      "status": "locked",
+      "label": "op slot",
+      "segments": [
+        {
+          "class": "",
+          "label": "Ontdekken"
+        },
+        {
+          "class": "",
+          "label": "Aanwijzen"
+        },
+        {
+          "class": "",
+          "label": "Namen schrijven"
+        }
+      ],
+      "actions": []
+    }
+  },
+  {
+    "engine": "chromium",
+    "hash": "afgerond",
+    "type": "fixture-action",
+    "fixture": true,
+    "chapter": "city1",
+    "kind": "review",
+    "index": 0,
+    "observed": {
+      "chapter": "city1",
+      "kind": "review",
+      "question": {
+        "id": "city-1",
+        "mode": "point"
+      },
+      "visible": true
+    },
+    "pass": true
+  },
+  {
+    "engine": "chromium",
+    "hash": "afgerond",
+    "type": "fixture-action",
+    "fixture": true,
+    "chapter": "city1",
+    "kind": "discover",
+    "index": 1,
+    "observed": {
+      "chapter": "city1",
+      "kind": "discover",
+      "question": {
+        "id": "city-1",
+        "mode": "discover"
+      },
+      "visible": true
+    },
+    "pass": true
+  },
+  {
+    "engine": "chromium",
+    "hash": "afgerond",
+    "type": "fixture-action",
+    "fixture": true,
+    "chapter": "city1",
+    "kind": "point",
+    "index": 2,
+    "observed": {
+      "chapter": "city1",
+      "kind": "point",
+      "question": {
+        "id": "city-1",
+        "mode": "point"
+      },
+      "visible": true
+    },
+    "pass": true
+  },
+  {
+    "engine": "chromium",
+    "hash": "afgerond",
+    "type": "fixture-action",
+    "fixture": true,
+    "chapter": "city1",
+    "kind": "write",
+    "index": 3,
+    "observed": {
+      "chapter": "city1",
+      "kind": "write",
+      "question": {
+        "id": "city-2",
+        "mode": "write"
+      },
+      "visible": true
+    },
+    "pass": true
+  },
+  {
+    "engine": "chromium",
+    "hash": "afgerond",
+    "type": "fixture-action",
+    "fixture": true,
+    "chapter": "city2",
+    "kind": "gold",
+    "index": 0,
+    "observed": {
+      "chapter": "city2",
+      "kind": "gold",
+      "question": {
+        "id": "city-7",
+        "mode": "point"
+      },
+      "visible": true
+    },
+    "pass": true
+  },
+  {
+    "engine": "chromium",
+    "hash": "afgerond",
+    "type": "fixture-action",
+    "fixture": true,
+    "chapter": "city2",
+    "kind": "discover",
+    "index": 1,
+    "observed": {
+      "chapter": "city2",
+      "kind": "discover",
+      "question": {
+        "id": "city-10",
+        "mode": "discover"
+      },
+      "visible": true
+    },
+    "pass": true
+  },
+  {
+    "engine": "chromium",
+    "hash": "afgerond",
+    "type": "fixture-action",
+    "fixture": true,
+    "chapter": "city2",
+    "kind": "point",
+    "index": 2,
+    "observed": {
+      "chapter": "city2",
+      "kind": "point",
+      "question": {
+        "id": "city-12",
+        "mode": "point"
+      },
+      "visible": true
+    },
+    "pass": true
+  },
+  {
+    "engine": "chromium",
+    "hash": "afgerond",
+    "type": "fixture-action",
+    "fixture": true,
+    "chapter": "city2",
+    "kind": "write",
+    "index": 3,
+    "observed": {
+      "chapter": "city2",
+      "kind": "write",
+      "question": {
+        "id": "city-9",
+        "mode": "write"
+      },
+      "visible": true
+    },
+    "pass": true
+  },
+  {
+    "engine": "chromium",
+    "hash": "afgerond",
+    "type": "fixture-action",
+    "fixture": true,
+    "chapter": "city3",
+    "kind": "gold",
+    "index": 0,
+    "observed": {
+      "chapter": "city3",
+      "kind": "gold",
+      "question": {
+        "id": "city-17",
+        "mode": "point"
+      },
+      "visible": true
+    },
+    "pass": true
+  },
+  {
+    "engine": "chromium",
+    "hash": "afgerond",
+    "type": "fixture-action",
+    "fixture": true,
+    "chapter": "city3",
+    "kind": "discover",
+    "index": 1,
+    "observed": {
+      "chapter": "city3",
+      "kind": "discover",
+      "question": {
+        "id": "city-18",
+        "mode": "discover"
+      },
+      "visible": true
+    },
+    "pass": true
+  },
+  {
+    "engine": "chromium",
+    "hash": "afgerond",
+    "type": "fixture-action",
+    "fixture": true,
+    "chapter": "city3",
+    "kind": "point",
+    "index": 2,
+    "observed": {
+      "chapter": "city3",
+      "kind": "point",
+      "question": {
+        "id": "city-15",
+        "mode": "point"
+      },
+      "visible": true
+    },
+    "pass": true
+  },
+  {
+    "engine": "chromium",
+    "hash": "afgerond",
+    "type": "fixture-action",
+    "fixture": true,
+    "chapter": "city3",
+    "kind": "write",
+    "index": 3,
+    "observed": {
+      "chapter": "city3",
+      "kind": "write",
+      "question": {
+        "id": "city-17",
+        "mode": "write"
+      },
+      "visible": true
+    },
+    "pass": true
+  },
+  {
+    "engine": "chromium",
+    "hash": "afgerond",
+    "type": "fixture-action",
+    "fixture": true,
+    "chapter": "city4",
+    "kind": "gold",
+    "index": 0,
+    "observed": {
+      "chapter": "city4",
+      "kind": "gold",
+      "question": {
+        "id": "city-19",
+        "mode": "point"
+      },
+      "visible": true
+    },
+    "pass": true
+  },
+  {
+    "engine": "chromium",
+    "hash": "afgerond",
+    "type": "fixture-action",
+    "fixture": true,
+    "chapter": "city4",
+    "kind": "discover",
+    "index": 1,
+    "observed": {
+      "chapter": "city4",
+      "kind": "discover",
+      "question": {
+        "id": "city-23",
+        "mode": "discover"
+      },
+      "visible": true
+    },
+    "pass": true
+  },
+  {
+    "engine": "chromium",
+    "hash": "afgerond",
+    "type": "fixture-action",
+    "fixture": true,
+    "chapter": "city4",
+    "kind": "point",
+    "index": 2,
+    "observed": {
+      "chapter": "city4",
+      "kind": "point",
+      "question": {
+        "id": "city-23",
+        "mode": "point"
+      },
+      "visible": true
+    },
+    "pass": true
+  },
+  {
+    "engine": "chromium",
+    "hash": "afgerond",
+    "type": "fixture-action",
+    "fixture": true,
+    "chapter": "city4",
+    "kind": "write",
+    "index": 3,
+    "observed": {
+      "chapter": "city4",
+      "kind": "write",
+      "question": {
+        "id": "city-19",
+        "mode": "write"
+      },
+      "visible": true
+    },
+    "pass": true
+  },
+  {
+    "engine": "chromium",
+    "hash": "afgerond",
+    "type": "fixture-action",
+    "fixture": true,
+    "chapter": "islands",
+    "kind": "discover",
+    "index": 0,
+    "observed": {
+      "chapter": "islands",
+      "kind": "discover",
+      "question": {
+        "id": "area-a",
+        "mode": "discover"
+      },
+      "visible": true
+    },
+    "pass": true
+  },
+  {
+    "engine": "chromium",
+    "hash": "alles",
+    "chapter": "city1",
+    "type": "fixture-status",
+    "fixture": true,
+    "pass": true,
+    "expected": "gold",
+    "observed": {
+      "status": "gold",
+      "label": "goud",
+      "segments": [
+        {
+          "class": "on",
+          "label": "Ontdekken, klaar"
+        },
+        {
+          "class": "on",
+          "label": "Aanwijzen, klaar"
+        },
+        {
+          "class": "on",
+          "label": "Namen schrijven, klaar"
+        }
+      ],
+      "actions": [
+        "★ Goud nog eens",
+        "↻ Ontdekken",
+        "↻ Aanwijzen",
+        "↻ Namen schrijven"
+      ]
+    }
+  },
+  {
+    "engine": "chromium",
+    "hash": "alles",
+    "chapter": "city2",
+    "type": "fixture-status",
+    "fixture": true,
+    "pass": true,
+    "expected": "gold",
+    "observed": {
+      "status": "gold",
+      "label": "goud",
+      "segments": [
+        {
+          "class": "on",
+          "label": "Ontdekken, klaar"
+        },
+        {
+          "class": "on",
+          "label": "Aanwijzen, klaar"
+        },
+        {
+          "class": "on",
+          "label": "Namen schrijven, klaar"
+        }
+      ],
+      "actions": [
+        "★ Goud nog eens",
+        "↻ Ontdekken",
+        "↻ Aanwijzen",
+        "↻ Namen schrijven"
+      ]
+    }
+  },
+  {
+    "engine": "chromium",
+    "hash": "alles",
+    "chapter": "city3",
+    "type": "fixture-status",
+    "fixture": true,
+    "pass": true,
+    "expected": "gold",
+    "observed": {
+      "status": "gold",
+      "label": "goud",
+      "segments": [
+        {
+          "class": "on",
+          "label": "Ontdekken, klaar"
+        },
+        {
+          "class": "on",
+          "label": "Aanwijzen, klaar"
+        },
+        {
+          "class": "on",
+          "label": "Namen schrijven, klaar"
+        }
+      ],
+      "actions": [
+        "★ Goud nog eens",
+        "↻ Ontdekken",
+        "↻ Aanwijzen",
+        "↻ Namen schrijven"
+      ]
+    }
+  },
+  {
+    "engine": "chromium",
+    "hash": "alles",
+    "chapter": "city4",
+    "type": "fixture-status",
+    "fixture": true,
+    "pass": true,
+    "expected": "gold",
+    "observed": {
+      "status": "gold",
+      "label": "goud",
+      "segments": [
+        {
+          "class": "on",
+          "label": "Ontdekken, klaar"
+        },
+        {
+          "class": "on",
+          "label": "Aanwijzen, klaar"
+        },
+        {
+          "class": "on",
+          "label": "Namen schrijven, klaar"
+        }
+      ],
+      "actions": [
+        "★ Goud nog eens",
+        "↻ Ontdekken",
+        "↻ Aanwijzen",
+        "↻ Namen schrijven"
+      ]
+    }
+  },
+  {
+    "engine": "chromium",
+    "hash": "alles",
+    "chapter": "islands",
+    "type": "fixture-status",
+    "fixture": true,
+    "pass": true,
+    "expected": "gold",
+    "observed": {
+      "status": "gold",
+      "label": "goud",
+      "segments": [
+        {
+          "class": "on",
+          "label": "Ontdekken, klaar"
+        },
+        {
+          "class": "on",
+          "label": "Aanwijzen, klaar"
+        },
+        {
+          "class": "on",
+          "label": "Namen schrijven, klaar"
+        }
+      ],
+      "actions": [
+        "★ Goud nog eens",
+        "↻ Ontdekken",
+        "↻ Aanwijzen",
+        "↻ Namen schrijven"
+      ]
+    }
+  },
+  {
+    "engine": "chromium",
+    "hash": "alles",
+    "chapter": "mountains",
+    "type": "fixture-status",
+    "fixture": true,
+    "pass": true,
+    "expected": "gold",
+    "observed": {
+      "status": "gold",
+      "label": "goud",
+      "segments": [
+        {
+          "class": "on",
+          "label": "Ontdekken, klaar"
+        },
+        {
+          "class": "on",
+          "label": "Aanwijzen, klaar"
+        },
+        {
+          "class": "on",
+          "label": "Namen schrijven, klaar"
+        }
+      ],
+      "actions": [
+        "★ Goud nog eens",
+        "↻ Ontdekken",
+        "↻ Aanwijzen",
+        "↻ Namen schrijven"
+      ]
+    }
+  },
+  {
+    "engine": "chromium",
+    "hash": "alles",
+    "chapter": "volcanoes",
+    "type": "fixture-status",
+    "fixture": true,
+    "pass": true,
+    "expected": "gold",
+    "observed": {
+      "status": "gold",
+      "label": "goud",
+      "segments": [
+        {
+          "class": "on",
+          "label": "Ontdekken, klaar"
+        },
+        {
+          "class": "on",
+          "label": "Aanwijzen, klaar"
+        },
+        {
+          "class": "on",
+          "label": "Namen schrijven, klaar"
+        }
+      ],
+      "actions": [
+        "★ Goud nog eens",
+        "↻ Ontdekken",
+        "↻ Aanwijzen",
+        "↻ Namen schrijven"
+      ]
+    }
+  },
+  {
+    "engine": "chromium",
+    "hash": "alles",
+    "chapter": "regions",
+    "type": "fixture-status",
+    "fixture": true,
+    "pass": true,
+    "expected": "gold",
+    "observed": {
+      "status": "gold",
+      "label": "goud",
+      "segments": [
+        {
+          "class": "on",
+          "label": "Ontdekken, klaar"
+        },
+        {
+          "class": "on",
+          "label": "Aanwijzen, klaar"
+        },
+        {
+          "class": "on",
+          "label": "Namen schrijven, klaar"
+        }
+      ],
+      "actions": [
+        "★ Goud nog eens",
+        "↻ Ontdekken",
+        "↻ Aanwijzen",
+        "↻ Namen schrijven"
+      ]
+    }
+  },
+  {
+    "engine": "chromium",
+    "hash": "alles",
+    "chapter": "countries",
+    "type": "fixture-status",
+    "fixture": true,
+    "pass": true,
+    "expected": "gold",
+    "observed": {
+      "status": "gold",
+      "label": "goud",
+      "segments": [
+        {
+          "class": "on",
+          "label": "Ontdekken, klaar"
+        },
+        {
+          "class": "on",
+          "label": "Aanwijzen, klaar"
+        },
+        {
+          "class": "on",
+          "label": "Namen schrijven, klaar"
+        }
+      ],
+      "actions": [
+        "★ Goud nog eens",
+        "↻ Ontdekken",
+        "↻ Aanwijzen",
+        "↻ Namen schrijven"
+      ]
+    }
+  },
+  {
+    "engine": "chromium",
+    "hash": "alles",
+    "chapter": "seas",
+    "type": "fixture-status",
+    "fixture": true,
+    "pass": true,
+    "expected": "gold",
+    "observed": {
+      "status": "gold",
+      "label": "goud",
+      "segments": [
+        {
+          "class": "on",
+          "label": "Ontdekken, klaar"
+        },
+        {
+          "class": "on",
+          "label": "Aanwijzen, klaar"
+        },
+        {
+          "class": "on",
+          "label": "Namen schrijven, klaar"
+        }
+      ],
+      "actions": [
+        "★ Goud nog eens",
+        "↻ Ontdekken",
+        "↻ Aanwijzen",
+        "↻ Namen schrijven"
+      ]
+    }
+  },
+  {
+    "engine": "chromium",
+    "hash": "alles",
+    "chapter": "rivers",
+    "type": "fixture-status",
+    "fixture": true,
+    "pass": true,
+    "expected": "gold",
+    "observed": {
+      "status": "gold",
+      "label": "goud",
+      "segments": [
+        {
+          "class": "on",
+          "label": "Ontdekken, klaar"
+        },
+        {
+          "class": "on",
+          "label": "Aanwijzen, klaar"
+        },
+        {
+          "class": "on",
+          "label": "Namen schrijven, klaar"
+        }
+      ],
+      "actions": [
+        "★ Goud nog eens",
+        "↻ Ontdekken",
+        "↻ Aanwijzen",
+        "↻ Namen schrijven"
+      ]
+    }
+  },
+  {
+    "engine": "chromium",
+    "hash": "alles",
+    "type": "fixture-action",
+    "fixture": true,
+    "chapter": "city1",
+    "kind": "gold",
+    "index": 0,
+    "observed": {
+      "chapter": "city1",
+      "kind": "gold",
+      "question": {
+        "id": "city-5",
+        "mode": "point"
+      },
+      "visible": true
+    },
+    "pass": true
+  },
+  {
+    "engine": "chromium",
+    "hash": "alles",
+    "type": "fixture-action",
+    "fixture": true,
+    "chapter": "city1",
+    "kind": "discover",
+    "index": 1,
+    "observed": {
+      "chapter": "city1",
+      "kind": "discover",
+      "question": {
+        "id": "city-6",
+        "mode": "discover"
+      },
+      "visible": true
+    },
+    "pass": true
+  },
+  {
+    "engine": "chromium",
+    "hash": "alles",
+    "type": "fixture-action",
+    "fixture": true,
+    "chapter": "city1",
+    "kind": "point",
+    "index": 2,
+    "observed": {
+      "chapter": "city1",
+      "kind": "point",
+      "question": {
+        "id": "city-2",
+        "mode": "point"
+      },
+      "visible": true
+    },
+    "pass": true
+  },
+  {
+    "engine": "chromium",
+    "hash": "alles",
+    "type": "fixture-action",
+    "fixture": true,
+    "chapter": "city1",
+    "kind": "write",
+    "index": 3,
+    "observed": {
+      "chapter": "city1",
+      "kind": "write",
+      "question": {
+        "id": "city-2",
+        "mode": "write"
+      },
+      "visible": true
+    },
+    "pass": true
+  },
+  {
+    "engine": "chromium",
+    "hash": "alles",
+    "type": "fixture-action",
+    "fixture": true,
+    "chapter": "city2",
+    "kind": "gold",
+    "index": 0,
+    "observed": {
+      "chapter": "city2",
+      "kind": "gold",
+      "question": {
+        "id": "city-10",
+        "mode": "point"
+      },
+      "visible": true
+    },
+    "pass": true
+  },
+  {
+    "engine": "chromium",
+    "hash": "alles",
+    "type": "fixture-action",
+    "fixture": true,
+    "chapter": "city2",
+    "kind": "discover",
+    "index": 1,
+    "observed": {
+      "chapter": "city2",
+      "kind": "discover",
+      "question": {
+        "id": "city-8",
+        "mode": "discover"
+      },
+      "visible": true
+    },
+    "pass": true
+  },
+  {
+    "engine": "chromium",
+    "hash": "alles",
+    "type": "fixture-action",
+    "fixture": true,
+    "chapter": "city2",
+    "kind": "point",
+    "index": 2,
+    "observed": {
+      "chapter": "city2",
+      "kind": "point",
+      "question": {
+        "id": "city-12",
+        "mode": "point"
+      },
+      "visible": true
+    },
+    "pass": true
+  },
+  {
+    "engine": "chromium",
+    "hash": "alles",
+    "type": "fixture-action",
+    "fixture": true,
+    "chapter": "city2",
+    "kind": "write",
+    "index": 3,
+    "observed": {
+      "chapter": "city2",
+      "kind": "write",
+      "question": {
+        "id": "city-12",
+        "mode": "write"
+      },
+      "visible": true
+    },
+    "pass": true
+  },
+  {
+    "engine": "chromium",
+    "hash": "alles",
+    "type": "fixture-action",
+    "fixture": true,
+    "chapter": "city3",
+    "kind": "gold",
+    "index": 0,
+    "observed": {
+      "chapter": "city3",
+      "kind": "gold",
+      "question": {
+        "id": "city-14",
+        "mode": "point"
+      },
+      "visible": true
+    },
+    "pass": true
+  },
+  {
+    "engine": "chromium",
+    "hash": "alles",
+    "type": "fixture-action",
+    "fixture": true,
+    "chapter": "city3",
+    "kind": "discover",
+    "index": 1,
+    "observed": {
+      "chapter": "city3",
+      "kind": "discover",
+      "question": {
+        "id": "city-15",
+        "mode": "discover"
+      },
+      "visible": true
+    },
+    "pass": true
+  },
+  {
+    "engine": "chromium",
+    "hash": "alles",
+    "type": "fixture-action",
+    "fixture": true,
+    "chapter": "city3",
+    "kind": "point",
+    "index": 2,
+    "observed": {
+      "chapter": "city3",
+      "kind": "point",
+      "question": {
+        "id": "city-17",
+        "mode": "point"
+      },
+      "visible": true
+    },
+    "pass": true
+  },
+  {
+    "engine": "chromium",
+    "hash": "alles",
+    "type": "fixture-action",
+    "fixture": true,
+    "chapter": "city3",
+    "kind": "write",
+    "index": 3,
+    "observed": {
+      "chapter": "city3",
+      "kind": "write",
+      "question": {
+        "id": "city-13",
+        "mode": "write"
+      },
+      "visible": true
+    },
+    "pass": true
+  },
+  {
+    "engine": "chromium",
+    "hash": "alles",
+    "type": "fixture-action",
+    "fixture": true,
+    "chapter": "city4",
+    "kind": "gold",
+    "index": 0,
+    "observed": {
+      "chapter": "city4",
+      "kind": "gold",
+      "question": {
+        "id": "city-23",
+        "mode": "point"
+      },
+      "visible": true
+    },
+    "pass": true
+  },
+  {
+    "engine": "chromium",
+    "hash": "alles",
+    "type": "fixture-action",
+    "fixture": true,
+    "chapter": "city4",
+    "kind": "discover",
+    "index": 1,
+    "observed": {
+      "chapter": "city4",
+      "kind": "discover",
+      "question": {
+        "id": "city-21",
+        "mode": "discover"
+      },
+      "visible": true
+    },
+    "pass": true
+  },
+  {
+    "engine": "chromium",
+    "hash": "alles",
+    "type": "fixture-action",
+    "fixture": true,
+    "chapter": "city4",
+    "kind": "point",
+    "index": 2,
+    "observed": {
+      "chapter": "city4",
+      "kind": "point",
+      "question": {
+        "id": "city-21",
+        "mode": "point"
+      },
+      "visible": true
+    },
+    "pass": true
+  },
+  {
+    "engine": "chromium",
+    "hash": "alles",
+    "type": "fixture-action",
+    "fixture": true,
+    "chapter": "city4",
+    "kind": "write",
+    "index": 3,
+    "observed": {
+      "chapter": "city4",
+      "kind": "write",
+      "question": {
+        "id": "city-21",
+        "mode": "write"
+      },
+      "visible": true
+    },
+    "pass": true
+  },
+  {
+    "engine": "chromium",
+    "hash": "alles",
+    "type": "fixture-action",
+    "fixture": true,
+    "chapter": "islands",
+    "kind": "gold",
+    "index": 0,
+    "observed": {
+      "chapter": "islands",
+      "kind": "gold",
+      "question": {
+        "id": "area-a",
+        "mode": "point"
+      },
+      "visible": true
+    },
+    "pass": true
+  },
+  {
+    "engine": "chromium",
+    "hash": "alles",
+    "type": "fixture-action",
+    "fixture": true,
+    "chapter": "islands",
+    "kind": "discover",
+    "index": 1,
+    "observed": {
+      "chapter": "islands",
+      "kind": "discover",
+      "question": {
+        "id": "area-a",
+        "mode": "discover"
+      },
+      "visible": true
+    },
+    "pass": true
+  },
+  {
+    "engine": "chromium",
+    "hash": "alles",
+    "type": "fixture-action",
+    "fixture": true,
+    "chapter": "islands",
+    "kind": "point",
+    "index": 2,
+    "observed": {
+      "chapter": "islands",
+      "kind": "point",
+      "question": {
+        "id": "area-b",
+        "mode": "point"
+      },
+      "visible": true
+    },
+    "pass": true
+  },
+  {
+    "engine": "chromium",
+    "hash": "alles",
+    "type": "fixture-action",
+    "fixture": true,
+    "chapter": "islands",
+    "kind": "write",
+    "index": 3,
+    "observed": {
+      "chapter": "islands",
+      "kind": "write",
+      "question": {
+        "id": "area-b",
+        "mode": "write"
+      },
+      "visible": true
+    },
+    "pass": true
+  },
+  {
+    "engine": "chromium",
+    "hash": "alles",
+    "type": "fixture-action",
+    "fixture": true,
+    "chapter": "mountains",
+    "kind": "gold",
+    "index": 0,
+    "observed": {
+      "chapter": "mountains",
+      "kind": "gold",
+      "question": {
+        "id": "area-d",
+        "mode": "point"
+      },
+      "visible": true
+    },
+    "pass": true
+  },
+  {
+    "engine": "chromium",
+    "hash": "alles",
+    "type": "fixture-action",
+    "fixture": true,
+    "chapter": "mountains",
+    "kind": "discover",
+    "index": 1,
+    "observed": {
+      "chapter": "mountains",
+      "kind": "discover",
+      "question": {
+        "id": "area-d",
+        "mode": "discover"
+      },
+      "visible": true
+    },
+    "pass": true
+  },
+  {
+    "engine": "chromium",
+    "hash": "alles",
+    "type": "fixture-action",
+    "fixture": true,
+    "chapter": "mountains",
+    "kind": "point",
+    "index": 2,
+    "observed": {
+      "chapter": "mountains",
+      "kind": "point",
+      "question": {
+        "id": "area-d",
+        "mode": "point"
+      },
+      "visible": true
+    },
+    "pass": true
+  },
+  {
+    "engine": "chromium",
+    "hash": "alles",
+    "type": "fixture-action",
+    "fixture": true,
+    "chapter": "mountains",
+    "kind": "write",
+    "index": 3,
+    "observed": {
+      "chapter": "mountains",
+      "kind": "write",
+      "question": {
+        "id": "area-d",
+        "mode": "write"
+      },
+      "visible": true
+    },
+    "pass": true
+  },
+  {
+    "engine": "chromium",
+    "hash": "alles",
+    "type": "fixture-action",
+    "fixture": true,
+    "chapter": "volcanoes",
+    "kind": "gold",
+    "index": 0,
+    "observed": {
+      "chapter": "volcanoes",
+      "kind": "gold",
+      "question": {
+        "id": "area-e",
+        "mode": "point"
+      },
+      "visible": true
+    },
+    "pass": true
+  },
+  {
+    "engine": "chromium",
+    "hash": "alles",
+    "type": "fixture-action",
+    "fixture": true,
+    "chapter": "volcanoes",
+    "kind": "discover",
+    "index": 1,
+    "observed": {
+      "chapter": "volcanoes",
+      "kind": "discover",
+      "question": {
+        "id": "area-f",
+        "mode": "discover"
+      },
+      "visible": true
+    },
+    "pass": true
+  },
+  {
+    "engine": "chromium",
+    "hash": "alles",
+    "type": "fixture-action",
+    "fixture": true,
+    "chapter": "volcanoes",
+    "kind": "point",
+    "index": 2,
+    "observed": {
+      "chapter": "volcanoes",
+      "kind": "point",
+      "question": {
+        "id": "area-f",
+        "mode": "point"
+      },
+      "visible": true
+    },
+    "pass": true
+  },
+  {
+    "engine": "chromium",
+    "hash": "alles",
+    "type": "fixture-action",
+    "fixture": true,
+    "chapter": "volcanoes",
+    "kind": "write",
+    "index": 3,
+    "observed": {
+      "chapter": "volcanoes",
+      "kind": "write",
+      "question": {
+        "id": "area-f",
+        "mode": "write"
+      },
+      "visible": true
+    },
+    "pass": true
+  },
+  {
+    "engine": "chromium",
+    "hash": "alles",
+    "type": "fixture-action",
+    "fixture": true,
+    "chapter": "regions",
+    "kind": "gold",
+    "index": 0,
+    "observed": {
+      "chapter": "regions",
+      "kind": "gold",
+      "question": {
+        "id": "area-h",
+        "mode": "point"
+      },
+      "visible": true
+    },
+    "pass": true
+  },
+  {
+    "engine": "chromium",
+    "hash": "alles",
+    "type": "fixture-action",
+    "fixture": true,
+    "chapter": "regions",
+    "kind": "discover",
+    "index": 1,
+    "observed": {
+      "chapter": "regions",
+      "kind": "discover",
+      "question": {
+        "id": "area-h",
+        "mode": "discover"
+      },
+      "visible": true
+    },
+    "pass": true
+  },
+  {
+    "engine": "chromium",
+    "hash": "alles",
+    "type": "fixture-action",
+    "fixture": true,
+    "chapter": "regions",
+    "kind": "point",
+    "index": 2,
+    "observed": {
+      "chapter": "regions",
+      "kind": "point",
+      "question": {
+        "id": "area-h",
+        "mode": "point"
+      },
+      "visible": true
+    },
+    "pass": true
+  },
+  {
+    "engine": "chromium",
+    "hash": "alles",
+    "type": "fixture-action",
+    "fixture": true,
+    "chapter": "regions",
+    "kind": "write",
+    "index": 3,
+    "observed": {
+      "chapter": "regions",
+      "kind": "write",
+      "question": {
+        "id": "area-h",
+        "mode": "write"
+      },
+      "visible": true
+    },
+    "pass": true
+  },
+  {
+    "engine": "chromium",
+    "hash": "alles",
+    "type": "fixture-action",
+    "fixture": true,
+    "chapter": "countries",
+    "kind": "gold",
+    "index": 0,
+    "observed": {
+      "chapter": "countries",
+      "kind": "gold",
+      "question": {
+        "id": "area-n",
+        "mode": "point"
+      },
+      "visible": true
+    },
+    "pass": true
+  },
+  {
+    "engine": "chromium",
+    "hash": "alles",
+    "type": "fixture-action",
+    "fixture": true,
+    "chapter": "countries",
+    "kind": "discover",
+    "index": 1,
+    "observed": {
+      "chapter": "countries",
+      "kind": "discover",
+      "question": {
+        "id": "area-j",
+        "mode": "discover"
+      },
+      "visible": true
+    },
+    "pass": true
+  },
+  {
+    "engine": "chromium",
+    "hash": "alles",
+    "type": "fixture-action",
+    "fixture": true,
+    "chapter": "countries",
+    "kind": "point",
+    "index": 2,
+    "observed": {
+      "chapter": "countries",
+      "kind": "point",
+      "question": {
+        "id": "area-l",
+        "mode": "point"
+      },
+      "visible": true
+    },
+    "pass": true
+  },
+  {
+    "engine": "chromium",
+    "hash": "alles",
+    "type": "fixture-action",
+    "fixture": true,
+    "chapter": "countries",
+    "kind": "write",
+    "index": 3,
+    "observed": {
+      "chapter": "countries",
+      "kind": "write",
+      "question": {
+        "id": "area-i",
+        "mode": "write"
+      },
+      "visible": true
+    },
+    "pass": true
+  },
+  {
+    "engine": "chromium",
+    "hash": "alles",
+    "type": "fixture-action",
+    "fixture": true,
+    "chapter": "seas",
+    "kind": "gold",
+    "index": 0,
+    "observed": {
+      "chapter": "seas",
+      "kind": "gold",
+      "question": {
+        "id": "water-D",
+        "mode": "point"
+      },
+      "visible": true
+    },
+    "pass": true
+  },
+  {
+    "engine": "chromium",
+    "hash": "alles",
+    "type": "fixture-action",
+    "fixture": true,
+    "chapter": "seas",
+    "kind": "discover",
+    "index": 1,
+    "observed": {
+      "chapter": "seas",
+      "kind": "discover",
+      "question": {
+        "id": "water-D",
+        "mode": "discover"
+      },
+      "visible": true
+    },
+    "pass": true
+  },
+  {
+    "engine": "chromium",
+    "hash": "alles",
+    "type": "fixture-action",
+    "fixture": true,
+    "chapter": "seas",
+    "kind": "point",
+    "index": 2,
+    "observed": {
+      "chapter": "seas",
+      "kind": "point",
+      "question": {
+        "id": "water-C",
+        "mode": "point"
+      },
+      "visible": true
+    },
+    "pass": true
+  },
+  {
+    "engine": "chromium",
+    "hash": "alles",
+    "type": "fixture-action",
+    "fixture": true,
+    "chapter": "seas",
+    "kind": "write",
+    "index": 3,
+    "observed": {
+      "chapter": "seas",
+      "kind": "write",
+      "question": {
+        "id": "water-A",
+        "mode": "write"
+      },
+      "visible": true
+    },
+    "pass": true
+  },
+  {
+    "engine": "chromium",
+    "hash": "alles",
+    "type": "fixture-action",
+    "fixture": true,
+    "chapter": "rivers",
+    "kind": "gold",
+    "index": 0,
+    "observed": {
+      "chapter": "rivers",
+      "kind": "gold",
+      "question": {
+        "id": "water-G",
+        "mode": "point"
+      },
+      "visible": true
+    },
+    "pass": true
+  },
+  {
+    "engine": "chromium",
+    "hash": "alles",
+    "type": "fixture-action",
+    "fixture": true,
+    "chapter": "rivers",
+    "kind": "discover",
+    "index": 1,
+    "observed": {
+      "chapter": "rivers",
+      "kind": "discover",
+      "question": {
+        "id": "water-G",
+        "mode": "discover"
+      },
+      "visible": true
+    },
+    "pass": true
+  },
+  {
+    "engine": "chromium",
+    "hash": "alles",
+    "type": "fixture-action",
+    "fixture": true,
+    "chapter": "rivers",
+    "kind": "point",
+    "index": 2,
+    "observed": {
+      "chapter": "rivers",
+      "kind": "point",
+      "question": {
+        "id": "water-G",
+        "mode": "point"
+      },
+      "visible": true
+    },
+    "pass": true
+  },
+  {
+    "engine": "chromium",
+    "hash": "alles",
+    "type": "fixture-action",
+    "fixture": true,
+    "chapter": "rivers",
+    "kind": "write",
+    "index": 3,
+    "observed": {
+      "chapter": "rivers",
+      "kind": "write",
+      "question": {
+        "id": "water-F",
+        "mode": "write"
+      },
+      "visible": true
+    },
+    "pass": true
+  },
+  {
+    "engine": "webkit",
+    "hash": "nieuw",
+    "chapter": "city1",
+    "type": "fixture-status",
+    "fixture": true,
+    "pass": true,
+    "expected": "now",
+    "observed": {
+      "status": "now",
+      "label": "0 van 3 lessen",
+      "segments": [
+        {
+          "class": "now",
+          "label": "Ontdekken, nu"
+        },
+        {
+          "class": "",
+          "label": "Aanwijzen"
+        },
+        {
+          "class": "",
+          "label": "Namen schrijven"
+        }
+      ],
+      "actions": [
+        "Ontdekken"
+      ]
+    }
+  },
+  {
+    "engine": "webkit",
+    "hash": "nieuw",
+    "chapter": "city2",
+    "type": "fixture-status",
+    "fixture": true,
+    "pass": true,
+    "expected": "locked",
+    "observed": {
+      "status": "locked",
+      "label": "op slot",
+      "segments": [
+        {
+          "class": "",
+          "label": "Ontdekken"
+        },
+        {
+          "class": "",
+          "label": "Aanwijzen"
+        },
+        {
+          "class": "",
+          "label": "Namen schrijven"
+        }
+      ],
+      "actions": []
+    }
+  },
+  {
+    "engine": "webkit",
+    "hash": "nieuw",
+    "chapter": "city3",
+    "type": "fixture-status",
+    "fixture": true,
+    "pass": true,
+    "expected": "locked",
+    "observed": {
+      "status": "locked",
+      "label": "op slot",
+      "segments": [
+        {
+          "class": "",
+          "label": "Ontdekken"
+        },
+        {
+          "class": "",
+          "label": "Aanwijzen"
+        },
+        {
+          "class": "",
+          "label": "Namen schrijven"
+        }
+      ],
+      "actions": []
+    }
+  },
+  {
+    "engine": "webkit",
+    "hash": "nieuw",
+    "chapter": "city4",
+    "type": "fixture-status",
+    "fixture": true,
+    "pass": true,
+    "expected": "locked",
+    "observed": {
+      "status": "locked",
+      "label": "op slot",
+      "segments": [
+        {
+          "class": "",
+          "label": "Ontdekken"
+        },
+        {
+          "class": "",
+          "label": "Aanwijzen"
+        },
+        {
+          "class": "",
+          "label": "Namen schrijven"
+        }
+      ],
+      "actions": []
+    }
+  },
+  {
+    "engine": "webkit",
+    "hash": "nieuw",
+    "chapter": "islands",
+    "type": "fixture-status",
+    "fixture": true,
+    "pass": true,
+    "expected": "locked",
+    "observed": {
+      "status": "locked",
+      "label": "op slot",
+      "segments": [
+        {
+          "class": "",
+          "label": "Ontdekken"
+        },
+        {
+          "class": "",
+          "label": "Aanwijzen"
+        },
+        {
+          "class": "",
+          "label": "Namen schrijven"
+        }
+      ],
+      "actions": []
+    }
+  },
+  {
+    "engine": "webkit",
+    "hash": "nieuw",
+    "chapter": "mountains",
+    "type": "fixture-status",
+    "fixture": true,
+    "pass": true,
+    "expected": "locked",
+    "observed": {
+      "status": "locked",
+      "label": "op slot",
+      "segments": [
+        {
+          "class": "",
+          "label": "Ontdekken"
+        },
+        {
+          "class": "",
+          "label": "Aanwijzen"
+        },
+        {
+          "class": "",
+          "label": "Namen schrijven"
+        }
+      ],
+      "actions": []
+    }
+  },
+  {
+    "engine": "webkit",
+    "hash": "nieuw",
+    "chapter": "volcanoes",
+    "type": "fixture-status",
+    "fixture": true,
+    "pass": true,
+    "expected": "locked",
+    "observed": {
+      "status": "locked",
+      "label": "op slot",
+      "segments": [
+        {
+          "class": "",
+          "label": "Ontdekken"
+        },
+        {
+          "class": "",
+          "label": "Aanwijzen"
+        },
+        {
+          "class": "",
+          "label": "Namen schrijven"
+        }
+      ],
+      "actions": []
+    }
+  },
+  {
+    "engine": "webkit",
+    "hash": "nieuw",
+    "chapter": "regions",
+    "type": "fixture-status",
+    "fixture": true,
+    "pass": true,
+    "expected": "locked",
+    "observed": {
+      "status": "locked",
+      "label": "op slot",
+      "segments": [
+        {
+          "class": "",
+          "label": "Ontdekken"
+        },
+        {
+          "class": "",
+          "label": "Aanwijzen"
+        },
+        {
+          "class": "",
+          "label": "Namen schrijven"
+        }
+      ],
+      "actions": []
+    }
+  },
+  {
+    "engine": "webkit",
+    "hash": "nieuw",
+    "chapter": "countries",
+    "type": "fixture-status",
+    "fixture": true,
+    "pass": true,
+    "expected": "locked",
+    "observed": {
+      "status": "locked",
+      "label": "op slot",
+      "segments": [
+        {
+          "class": "",
+          "label": "Ontdekken"
+        },
+        {
+          "class": "",
+          "label": "Aanwijzen"
+        },
+        {
+          "class": "",
+          "label": "Namen schrijven"
+        }
+      ],
+      "actions": []
+    }
+  },
+  {
+    "engine": "webkit",
+    "hash": "nieuw",
+    "chapter": "seas",
+    "type": "fixture-status",
+    "fixture": true,
+    "pass": true,
+    "expected": "locked",
+    "observed": {
+      "status": "locked",
+      "label": "op slot",
+      "segments": [
+        {
+          "class": "",
+          "label": "Ontdekken"
+        },
+        {
+          "class": "",
+          "label": "Aanwijzen"
+        },
+        {
+          "class": "",
+          "label": "Namen schrijven"
+        }
+      ],
+      "actions": []
+    }
+  },
+  {
+    "engine": "webkit",
+    "hash": "nieuw",
+    "chapter": "rivers",
+    "type": "fixture-status",
+    "fixture": true,
+    "pass": true,
+    "expected": "locked",
+    "observed": {
+      "status": "locked",
+      "label": "op slot",
+      "segments": [
+        {
+          "class": "",
+          "label": "Ontdekken"
+        },
+        {
+          "class": "",
+          "label": "Aanwijzen"
+        },
+        {
+          "class": "",
+          "label": "Namen schrijven"
+        }
+      ],
+      "actions": []
+    }
+  },
+  {
+    "engine": "webkit",
+    "hash": "nieuw",
+    "type": "fixture-action",
+    "fixture": true,
+    "chapter": "city1",
+    "kind": "discover",
+    "index": 0,
+    "observed": {
+      "chapter": "city1",
+      "kind": "discover",
+      "question": {
+        "id": "city-4",
+        "mode": "discover"
+      },
+      "visible": true
+    },
+    "pass": true
+  },
+  {
+    "engine": "webkit",
+    "hash": "bezig",
+    "chapter": "city1",
+    "type": "fixture-status",
+    "fixture": true,
+    "pass": true,
+    "expected": "done",
+    "observed": {
+      "status": "done",
+      "label": "afgerond",
+      "segments": [
+        {
+          "class": "on",
+          "label": "Ontdekken, klaar"
+        },
+        {
+          "class": "on",
+          "label": "Aanwijzen, klaar"
+        },
+        {
+          "class": "on",
+          "label": "Namen schrijven, klaar"
+        }
+      ],
+      "actions": [
+        "★ Verdien goud",
+        "↻ Ontdekken",
+        "↻ Aanwijzen",
+        "↻ Namen schrijven"
+      ]
+    }
+  },
+  {
+    "engine": "webkit",
+    "hash": "bezig",
+    "chapter": "city2",
+    "type": "fixture-status",
+    "fixture": true,
+    "pass": true,
+    "expected": "now",
+    "observed": {
+      "status": "now",
+      "label": "1 van 3 lessen",
+      "segments": [
+        {
+          "class": "on",
+          "label": "Ontdekken, klaar"
+        },
+        {
+          "class": "now",
+          "label": "Aanwijzen, nu"
+        },
+        {
+          "class": "",
+          "label": "Namen schrijven"
+        }
+      ],
+      "actions": [
+        "Aanwijzen",
+        "↻ Ontdekken"
+      ]
+    }
+  },
+  {
+    "engine": "webkit",
+    "hash": "bezig",
+    "chapter": "city3",
+    "type": "fixture-status",
+    "fixture": true,
+    "pass": true,
+    "expected": "locked",
+    "observed": {
+      "status": "locked",
+      "label": "op slot",
+      "segments": [
+        {
+          "class": "",
+          "label": "Ontdekken"
+        },
+        {
+          "class": "",
+          "label": "Aanwijzen"
+        },
+        {
+          "class": "",
+          "label": "Namen schrijven"
+        }
+      ],
+      "actions": []
+    }
+  },
+  {
+    "engine": "webkit",
+    "hash": "bezig",
+    "chapter": "city4",
+    "type": "fixture-status",
+    "fixture": true,
+    "pass": true,
+    "expected": "locked",
+    "observed": {
+      "status": "locked",
+      "label": "op slot",
+      "segments": [
+        {
+          "class": "",
+          "label": "Ontdekken"
+        },
+        {
+          "class": "",
+          "label": "Aanwijzen"
+        },
+        {
+          "class": "",
+          "label": "Namen schrijven"
+        }
+      ],
+      "actions": []
+    }
+  },
+  {
+    "engine": "webkit",
+    "hash": "bezig",
+    "chapter": "islands",
+    "type": "fixture-status",
+    "fixture": true,
+    "pass": true,
+    "expected": "locked",
+    "observed": {
+      "status": "locked",
+      "label": "op slot",
+      "segments": [
+        {
+          "class": "",
+          "label": "Ontdekken"
+        },
+        {
+          "class": "",
+          "label": "Aanwijzen"
+        },
+        {
+          "class": "",
+          "label": "Namen schrijven"
+        }
+      ],
+      "actions": []
+    }
+  },
+  {
+    "engine": "webkit",
+    "hash": "bezig",
+    "chapter": "mountains",
+    "type": "fixture-status",
+    "fixture": true,
+    "pass": true,
+    "expected": "locked",
+    "observed": {
+      "status": "locked",
+      "label": "op slot",
+      "segments": [
+        {
+          "class": "",
+          "label": "Ontdekken"
+        },
+        {
+          "class": "",
+          "label": "Aanwijzen"
+        },
+        {
+          "class": "",
+          "label": "Namen schrijven"
+        }
+      ],
+      "actions": []
+    }
+  },
+  {
+    "engine": "webkit",
+    "hash": "bezig",
+    "chapter": "volcanoes",
+    "type": "fixture-status",
+    "fixture": true,
+    "pass": true,
+    "expected": "locked",
+    "observed": {
+      "status": "locked",
+      "label": "op slot",
+      "segments": [
+        {
+          "class": "",
+          "label": "Ontdekken"
+        },
+        {
+          "class": "",
+          "label": "Aanwijzen"
+        },
+        {
+          "class": "",
+          "label": "Namen schrijven"
+        }
+      ],
+      "actions": []
+    }
+  },
+  {
+    "engine": "webkit",
+    "hash": "bezig",
+    "chapter": "regions",
+    "type": "fixture-status",
+    "fixture": true,
+    "pass": true,
+    "expected": "locked",
+    "observed": {
+      "status": "locked",
+      "label": "op slot",
+      "segments": [
+        {
+          "class": "",
+          "label": "Ontdekken"
+        },
+        {
+          "class": "",
+          "label": "Aanwijzen"
+        },
+        {
+          "class": "",
+          "label": "Namen schrijven"
+        }
+      ],
+      "actions": []
+    }
+  },
+  {
+    "engine": "webkit",
+    "hash": "bezig",
+    "chapter": "countries",
+    "type": "fixture-status",
+    "fixture": true,
+    "pass": true,
+    "expected": "locked",
+    "observed": {
+      "status": "locked",
+      "label": "op slot",
+      "segments": [
+        {
+          "class": "",
+          "label": "Ontdekken"
+        },
+        {
+          "class": "",
+          "label": "Aanwijzen"
+        },
+        {
+          "class": "",
+          "label": "Namen schrijven"
+        }
+      ],
+      "actions": []
+    }
+  },
+  {
+    "engine": "webkit",
+    "hash": "bezig",
+    "chapter": "seas",
+    "type": "fixture-status",
+    "fixture": true,
+    "pass": true,
+    "expected": "locked",
+    "observed": {
+      "status": "locked",
+      "label": "op slot",
+      "segments": [
+        {
+          "class": "",
+          "label": "Ontdekken"
+        },
+        {
+          "class": "",
+          "label": "Aanwijzen"
+        },
+        {
+          "class": "",
+          "label": "Namen schrijven"
+        }
+      ],
+      "actions": []
+    }
+  },
+  {
+    "engine": "webkit",
+    "hash": "bezig",
+    "chapter": "rivers",
+    "type": "fixture-status",
+    "fixture": true,
+    "pass": true,
+    "expected": "locked",
+    "observed": {
+      "status": "locked",
+      "label": "op slot",
+      "segments": [
+        {
+          "class": "",
+          "label": "Ontdekken"
+        },
+        {
+          "class": "",
+          "label": "Aanwijzen"
+        },
+        {
+          "class": "",
+          "label": "Namen schrijven"
+        }
+      ],
+      "actions": []
+    }
+  },
+  {
+    "engine": "webkit",
+    "hash": "bezig",
+    "type": "fixture-action",
+    "fixture": true,
+    "chapter": "city1",
+    "kind": "gold",
+    "index": 0,
+    "observed": {
+      "chapter": "city1",
+      "kind": "gold",
+      "question": {
+        "id": "city-1",
+        "mode": "point"
+      },
+      "visible": true
+    },
+    "pass": true
+  },
+  {
+    "engine": "webkit",
+    "hash": "bezig",
+    "type": "fixture-action",
+    "fixture": true,
+    "chapter": "city1",
+    "kind": "discover",
+    "index": 1,
+    "observed": {
+      "chapter": "city1",
+      "kind": "discover",
+      "question": {
+        "id": "city-2",
+        "mode": "discover"
+      },
+      "visible": true
+    },
+    "pass": true
+  },
+  {
+    "engine": "webkit",
+    "hash": "bezig",
+    "type": "fixture-action",
+    "fixture": true,
+    "chapter": "city1",
+    "kind": "point",
+    "index": 2,
+    "observed": {
+      "chapter": "city1",
+      "kind": "point",
+      "question": {
+        "id": "city-3",
+        "mode": "point"
+      },
+      "visible": true
+    },
+    "pass": true
+  },
+  {
+    "engine": "webkit",
+    "hash": "bezig",
+    "type": "fixture-action",
+    "fixture": true,
+    "chapter": "city1",
+    "kind": "write",
+    "index": 3,
+    "observed": {
+      "chapter": "city1",
+      "kind": "write",
+      "question": {
+        "id": "city-3",
+        "mode": "write"
+      },
+      "visible": true
+    },
+    "pass": true
+  },
+  {
+    "engine": "webkit",
+    "hash": "bezig",
+    "type": "fixture-action",
+    "fixture": true,
+    "chapter": "city2",
+    "kind": "point",
+    "index": 0,
+    "observed": {
+      "chapter": "city2",
+      "kind": "point",
+      "question": {
+        "id": "city-10",
+        "mode": "point"
+      },
+      "visible": true
+    },
+    "pass": true
+  },
+  {
+    "engine": "webkit",
+    "hash": "bezig",
+    "type": "fixture-action",
+    "fixture": true,
+    "chapter": "city2",
+    "kind": "discover",
+    "index": 1,
+    "observed": {
+      "chapter": "city2",
+      "kind": "discover",
+      "question": {
+        "id": "city-12",
+        "mode": "discover"
+      },
+      "visible": true
+    },
+    "pass": true
+  },
+  {
+    "engine": "webkit",
+    "hash": "afgerond",
+    "chapter": "city1",
+    "type": "fixture-status",
+    "fixture": true,
+    "pass": true,
+    "expected": "gold",
+    "observed": {
+      "status": "gold",
+      "label": "goud",
+      "segments": [
+        {
+          "class": "on",
+          "label": "Ontdekken, klaar"
+        },
+        {
+          "class": "on",
+          "label": "Aanwijzen, klaar"
+        },
+        {
+          "class": "on",
+          "label": "Namen schrijven, klaar"
+        }
+      ],
+      "actions": [
+        "Opfrissen",
+        "↻ Ontdekken",
+        "↻ Aanwijzen",
+        "↻ Namen schrijven"
+      ]
+    }
+  },
+  {
+    "engine": "webkit",
+    "hash": "afgerond",
+    "chapter": "city2",
+    "type": "fixture-status",
+    "fixture": true,
+    "pass": true,
+    "expected": "gold",
+    "observed": {
+      "status": "gold",
+      "label": "goud",
+      "segments": [
+        {
+          "class": "on",
+          "label": "Ontdekken, klaar"
+        },
+        {
+          "class": "on",
+          "label": "Aanwijzen, klaar"
+        },
+        {
+          "class": "on",
+          "label": "Namen schrijven, klaar"
+        }
+      ],
+      "actions": [
+        "★ Goud nog eens",
+        "↻ Ontdekken",
+        "↻ Aanwijzen",
+        "↻ Namen schrijven"
+      ]
+    }
+  },
+  {
+    "engine": "webkit",
+    "hash": "afgerond",
+    "chapter": "city3",
+    "type": "fixture-status",
+    "fixture": true,
+    "pass": true,
+    "expected": "done",
+    "observed": {
+      "status": "done",
+      "label": "afgerond",
+      "segments": [
+        {
+          "class": "on",
+          "label": "Ontdekken, klaar"
+        },
+        {
+          "class": "on",
+          "label": "Aanwijzen, klaar"
+        },
+        {
+          "class": "on",
+          "label": "Namen schrijven, klaar"
+        }
+      ],
+      "actions": [
+        "★ Verdien goud",
+        "↻ Ontdekken",
+        "↻ Aanwijzen",
+        "↻ Namen schrijven"
+      ]
+    }
+  },
+  {
+    "engine": "webkit",
+    "hash": "afgerond",
+    "chapter": "city4",
+    "type": "fixture-status",
+    "fixture": true,
+    "pass": true,
+    "expected": "done",
+    "observed": {
+      "status": "done",
+      "label": "afgerond",
+      "segments": [
+        {
+          "class": "on",
+          "label": "Ontdekken, klaar"
+        },
+        {
+          "class": "on",
+          "label": "Aanwijzen, klaar"
+        },
+        {
+          "class": "on",
+          "label": "Namen schrijven, klaar"
+        }
+      ],
+      "actions": [
+        "★ Verdien goud",
+        "↻ Ontdekken",
+        "↻ Aanwijzen",
+        "↻ Namen schrijven"
+      ]
+    }
+  },
+  {
+    "engine": "webkit",
+    "hash": "afgerond",
+    "chapter": "islands",
+    "type": "fixture-status",
+    "fixture": true,
+    "pass": true,
+    "expected": "now",
+    "observed": {
+      "status": "now",
+      "label": "0 van 3 lessen",
+      "segments": [
+        {
+          "class": "now",
+          "label": "Ontdekken, nu"
+        },
+        {
+          "class": "",
+          "label": "Aanwijzen"
+        },
+        {
+          "class": "",
+          "label": "Namen schrijven"
+        }
+      ],
+      "actions": [
+        "Ontdekken"
+      ]
+    }
+  },
+  {
+    "engine": "webkit",
+    "hash": "afgerond",
+    "chapter": "mountains",
+    "type": "fixture-status",
+    "fixture": true,
+    "pass": true,
+    "expected": "locked",
+    "observed": {
+      "status": "locked",
+      "label": "op slot",
+      "segments": [
+        {
+          "class": "",
+          "label": "Ontdekken"
+        },
+        {
+          "class": "",
+          "label": "Aanwijzen"
+        },
+        {
+          "class": "",
+          "label": "Namen schrijven"
+        }
+      ],
+      "actions": []
+    }
+  },
+  {
+    "engine": "webkit",
+    "hash": "afgerond",
+    "chapter": "volcanoes",
+    "type": "fixture-status",
+    "fixture": true,
+    "pass": true,
+    "expected": "locked",
+    "observed": {
+      "status": "locked",
+      "label": "op slot",
+      "segments": [
+        {
+          "class": "",
+          "label": "Ontdekken"
+        },
+        {
+          "class": "",
+          "label": "Aanwijzen"
+        },
+        {
+          "class": "",
+          "label": "Namen schrijven"
+        }
+      ],
+      "actions": []
+    }
+  },
+  {
+    "engine": "webkit",
+    "hash": "afgerond",
+    "chapter": "regions",
+    "type": "fixture-status",
+    "fixture": true,
+    "pass": true,
+    "expected": "locked",
+    "observed": {
+      "status": "locked",
+      "label": "op slot",
+      "segments": [
+        {
+          "class": "",
+          "label": "Ontdekken"
+        },
+        {
+          "class": "",
+          "label": "Aanwijzen"
+        },
+        {
+          "class": "",
+          "label": "Namen schrijven"
+        }
+      ],
+      "actions": []
+    }
+  },
+  {
+    "engine": "webkit",
+    "hash": "afgerond",
+    "chapter": "countries",
+    "type": "fixture-status",
+    "fixture": true,
+    "pass": true,
+    "expected": "locked",
+    "observed": {
+      "status": "locked",
+      "label": "op slot",
+      "segments": [
+        {
+          "class": "",
+          "label": "Ontdekken"
+        },
+        {
+          "class": "",
+          "label": "Aanwijzen"
+        },
+        {
+          "class": "",
+          "label": "Namen schrijven"
+        }
+      ],
+      "actions": []
+    }
+  },
+  {
+    "engine": "webkit",
+    "hash": "afgerond",
+    "chapter": "seas",
+    "type": "fixture-status",
+    "fixture": true,
+    "pass": true,
+    "expected": "locked",
+    "observed": {
+      "status": "locked",
+      "label": "op slot",
+      "segments": [
+        {
+          "class": "",
+          "label": "Ontdekken"
+        },
+        {
+          "class": "",
+          "label": "Aanwijzen"
+        },
+        {
+          "class": "",
+          "label": "Namen schrijven"
+        }
+      ],
+      "actions": []
+    }
+  },
+  {
+    "engine": "webkit",
+    "hash": "afgerond",
+    "chapter": "rivers",
+    "type": "fixture-status",
+    "fixture": true,
+    "pass": true,
+    "expected": "locked",
+    "observed": {
+      "status": "locked",
+      "label": "op slot",
+      "segments": [
+        {
+          "class": "",
+          "label": "Ontdekken"
+        },
+        {
+          "class": "",
+          "label": "Aanwijzen"
+        },
+        {
+          "class": "",
+          "label": "Namen schrijven"
+        }
+      ],
+      "actions": []
+    }
+  },
+  {
+    "engine": "webkit",
+    "hash": "afgerond",
+    "type": "fixture-action",
+    "fixture": true,
+    "chapter": "city1",
+    "kind": "review",
+    "index": 0,
+    "observed": {
+      "chapter": "city1",
+      "kind": "review",
+      "question": {
+        "id": "city-6",
+        "mode": "point"
+      },
+      "visible": true
+    },
+    "pass": true
+  },
+  {
+    "engine": "webkit",
+    "hash": "afgerond",
+    "type": "fixture-action",
+    "fixture": true,
+    "chapter": "city1",
+    "kind": "discover",
+    "index": 1,
+    "observed": {
+      "chapter": "city1",
+      "kind": "discover",
+      "question": {
+        "id": "city-1",
+        "mode": "discover"
+      },
+      "visible": true
+    },
+    "pass": true
+  },
+  {
+    "engine": "webkit",
+    "hash": "afgerond",
+    "type": "fixture-action",
+    "fixture": true,
+    "chapter": "city1",
+    "kind": "point",
+    "index": 2,
+    "observed": {
+      "chapter": "city1",
+      "kind": "point",
+      "question": {
+        "id": "city-4",
+        "mode": "point"
+      },
+      "visible": true
+    },
+    "pass": true
+  },
+  {
+    "engine": "webkit",
+    "hash": "afgerond",
+    "type": "fixture-action",
+    "fixture": true,
+    "chapter": "city1",
+    "kind": "write",
+    "index": 3,
+    "observed": {
+      "chapter": "city1",
+      "kind": "write",
+      "question": {
+        "id": "city-6",
+        "mode": "write"
+      },
+      "visible": true
+    },
+    "pass": true
+  },
+  {
+    "engine": "webkit",
+    "hash": "afgerond",
+    "type": "fixture-action",
+    "fixture": true,
+    "chapter": "city2",
+    "kind": "gold",
+    "index": 0,
+    "observed": {
+      "chapter": "city2",
+      "kind": "gold",
+      "question": {
+        "id": "city-7",
+        "mode": "point"
+      },
+      "visible": true
+    },
+    "pass": true
+  },
+  {
+    "engine": "webkit",
+    "hash": "afgerond",
+    "type": "fixture-action",
+    "fixture": true,
+    "chapter": "city2",
+    "kind": "discover",
+    "index": 1,
+    "observed": {
+      "chapter": "city2",
+      "kind": "discover",
+      "question": {
+        "id": "city-9",
+        "mode": "discover"
+      },
+      "visible": true
+    },
+    "pass": true
+  },
+  {
+    "engine": "webkit",
+    "hash": "afgerond",
+    "type": "fixture-action",
+    "fixture": true,
+    "chapter": "city2",
+    "kind": "point",
+    "index": 2,
+    "observed": {
+      "chapter": "city2",
+      "kind": "point",
+      "question": {
+        "id": "city-8",
+        "mode": "point"
+      },
+      "visible": true
+    },
+    "pass": true
+  },
+  {
+    "engine": "webkit",
+    "hash": "afgerond",
+    "type": "fixture-action",
+    "fixture": true,
+    "chapter": "city2",
+    "kind": "write",
+    "index": 3,
+    "observed": {
+      "chapter": "city2",
+      "kind": "write",
+      "question": {
+        "id": "city-12",
+        "mode": "write"
+      },
+      "visible": true
+    },
+    "pass": true
+  },
+  {
+    "engine": "webkit",
+    "hash": "afgerond",
+    "type": "fixture-action",
+    "fixture": true,
+    "chapter": "city3",
+    "kind": "gold",
+    "index": 0,
+    "observed": {
+      "chapter": "city3",
+      "kind": "gold",
+      "question": {
+        "id": "city-16",
+        "mode": "point"
+      },
+      "visible": true
+    },
+    "pass": true
+  },
+  {
+    "engine": "webkit",
+    "hash": "afgerond",
+    "type": "fixture-action",
+    "fixture": true,
+    "chapter": "city3",
+    "kind": "discover",
+    "index": 1,
+    "observed": {
+      "chapter": "city3",
+      "kind": "discover",
+      "question": {
+        "id": "city-13",
+        "mode": "discover"
+      },
+      "visible": true
+    },
+    "pass": true
+  },
+  {
+    "engine": "webkit",
+    "hash": "afgerond",
+    "type": "fixture-action",
+    "fixture": true,
+    "chapter": "city3",
+    "kind": "point",
+    "index": 2,
+    "observed": {
+      "chapter": "city3",
+      "kind": "point",
+      "question": {
+        "id": "city-16",
+        "mode": "point"
+      },
+      "visible": true
+    },
+    "pass": true
+  },
+  {
+    "engine": "webkit",
+    "hash": "afgerond",
+    "type": "fixture-action",
+    "fixture": true,
+    "chapter": "city3",
+    "kind": "write",
+    "index": 3,
+    "observed": {
+      "chapter": "city3",
+      "kind": "write",
+      "question": {
+        "id": "city-14",
+        "mode": "write"
+      },
+      "visible": true
+    },
+    "pass": true
+  },
+  {
+    "engine": "webkit",
+    "hash": "afgerond",
+    "type": "fixture-action",
+    "fixture": true,
+    "chapter": "city4",
+    "kind": "gold",
+    "index": 0,
+    "observed": {
+      "chapter": "city4",
+      "kind": "gold",
+      "question": {
+        "id": "city-20",
+        "mode": "point"
+      },
+      "visible": true
+    },
+    "pass": true
+  },
+  {
+    "engine": "webkit",
+    "hash": "afgerond",
+    "type": "fixture-action",
+    "fixture": true,
+    "chapter": "city4",
+    "kind": "discover",
+    "index": 1,
+    "observed": {
+      "chapter": "city4",
+      "kind": "discover",
+      "question": {
+        "id": "city-20",
+        "mode": "discover"
+      },
+      "visible": true
+    },
+    "pass": true
+  },
+  {
+    "engine": "webkit",
+    "hash": "afgerond",
+    "type": "fixture-action",
+    "fixture": true,
+    "chapter": "city4",
+    "kind": "point",
+    "index": 2,
+    "observed": {
+      "chapter": "city4",
+      "kind": "point",
+      "question": {
+        "id": "city-21",
+        "mode": "point"
+      },
+      "visible": true
+    },
+    "pass": true
+  },
+  {
+    "engine": "webkit",
+    "hash": "afgerond",
+    "type": "fixture-action",
+    "fixture": true,
+    "chapter": "city4",
+    "kind": "write",
+    "index": 3,
+    "observed": {
+      "chapter": "city4",
+      "kind": "write",
+      "question": {
+        "id": "city-20",
+        "mode": "write"
+      },
+      "visible": true
+    },
+    "pass": true
+  },
+  {
+    "engine": "webkit",
+    "hash": "afgerond",
+    "type": "fixture-action",
+    "fixture": true,
+    "chapter": "islands",
+    "kind": "discover",
+    "index": 0,
+    "observed": {
+      "chapter": "islands",
+      "kind": "discover",
+      "question": {
+        "id": "area-a",
+        "mode": "discover"
+      },
+      "visible": true
+    },
+    "pass": true
+  },
+  {
+    "engine": "webkit",
+    "hash": "alles",
+    "chapter": "city1",
+    "type": "fixture-status",
+    "fixture": true,
+    "pass": true,
+    "expected": "gold",
+    "observed": {
+      "status": "gold",
+      "label": "goud",
+      "segments": [
+        {
+          "class": "on",
+          "label": "Ontdekken, klaar"
+        },
+        {
+          "class": "on",
+          "label": "Aanwijzen, klaar"
+        },
+        {
+          "class": "on",
+          "label": "Namen schrijven, klaar"
+        }
+      ],
+      "actions": [
+        "★ Goud nog eens",
+        "↻ Ontdekken",
+        "↻ Aanwijzen",
+        "↻ Namen schrijven"
+      ]
+    }
+  },
+  {
+    "engine": "webkit",
+    "hash": "alles",
+    "chapter": "city2",
+    "type": "fixture-status",
+    "fixture": true,
+    "pass": true,
+    "expected": "gold",
+    "observed": {
+      "status": "gold",
+      "label": "goud",
+      "segments": [
+        {
+          "class": "on",
+          "label": "Ontdekken, klaar"
+        },
+        {
+          "class": "on",
+          "label": "Aanwijzen, klaar"
+        },
+        {
+          "class": "on",
+          "label": "Namen schrijven, klaar"
+        }
+      ],
+      "actions": [
+        "★ Goud nog eens",
+        "↻ Ontdekken",
+        "↻ Aanwijzen",
+        "↻ Namen schrijven"
+      ]
+    }
+  },
+  {
+    "engine": "webkit",
+    "hash": "alles",
+    "chapter": "city3",
+    "type": "fixture-status",
+    "fixture": true,
+    "pass": true,
+    "expected": "gold",
+    "observed": {
+      "status": "gold",
+      "label": "goud",
+      "segments": [
+        {
+          "class": "on",
+          "label": "Ontdekken, klaar"
+        },
+        {
+          "class": "on",
+          "label": "Aanwijzen, klaar"
+        },
+        {
+          "class": "on",
+          "label": "Namen schrijven, klaar"
+        }
+      ],
+      "actions": [
+        "★ Goud nog eens",
+        "↻ Ontdekken",
+        "↻ Aanwijzen",
+        "↻ Namen schrijven"
+      ]
+    }
+  },
+  {
+    "engine": "webkit",
+    "hash": "alles",
+    "chapter": "city4",
+    "type": "fixture-status",
+    "fixture": true,
+    "pass": true,
+    "expected": "gold",
+    "observed": {
+      "status": "gold",
+      "label": "goud",
+      "segments": [
+        {
+          "class": "on",
+          "label": "Ontdekken, klaar"
+        },
+        {
+          "class": "on",
+          "label": "Aanwijzen, klaar"
+        },
+        {
+          "class": "on",
+          "label": "Namen schrijven, klaar"
+        }
+      ],
+      "actions": [
+        "★ Goud nog eens",
+        "↻ Ontdekken",
+        "↻ Aanwijzen",
+        "↻ Namen schrijven"
+      ]
+    }
+  },
+  {
+    "engine": "webkit",
+    "hash": "alles",
+    "chapter": "islands",
+    "type": "fixture-status",
+    "fixture": true,
+    "pass": true,
+    "expected": "gold",
+    "observed": {
+      "status": "gold",
+      "label": "goud",
+      "segments": [
+        {
+          "class": "on",
+          "label": "Ontdekken, klaar"
+        },
+        {
+          "class": "on",
+          "label": "Aanwijzen, klaar"
+        },
+        {
+          "class": "on",
+          "label": "Namen schrijven, klaar"
+        }
+      ],
+      "actions": [
+        "★ Goud nog eens",
+        "↻ Ontdekken",
+        "↻ Aanwijzen",
+        "↻ Namen schrijven"
+      ]
+    }
+  },
+  {
+    "engine": "webkit",
+    "hash": "alles",
+    "chapter": "mountains",
+    "type": "fixture-status",
+    "fixture": true,
+    "pass": true,
+    "expected": "gold",
+    "observed": {
+      "status": "gold",
+      "label": "goud",
+      "segments": [
+        {
+          "class": "on",
+          "label": "Ontdekken, klaar"
+        },
+        {
+          "class": "on",
+          "label": "Aanwijzen, klaar"
+        },
+        {
+          "class": "on",
+          "label": "Namen schrijven, klaar"
+        }
+      ],
+      "actions": [
+        "★ Goud nog eens",
+        "↻ Ontdekken",
+        "↻ Aanwijzen",
+        "↻ Namen schrijven"
+      ]
+    }
+  },
+  {
+    "engine": "webkit",
+    "hash": "alles",
+    "chapter": "volcanoes",
+    "type": "fixture-status",
+    "fixture": true,
+    "pass": true,
+    "expected": "gold",
+    "observed": {
+      "status": "gold",
+      "label": "goud",
+      "segments": [
+        {
+          "class": "on",
+          "label": "Ontdekken, klaar"
+        },
+        {
+          "class": "on",
+          "label": "Aanwijzen, klaar"
+        },
+        {
+          "class": "on",
+          "label": "Namen schrijven, klaar"
+        }
+      ],
+      "actions": [
+        "★ Goud nog eens",
+        "↻ Ontdekken",
+        "↻ Aanwijzen",
+        "↻ Namen schrijven"
+      ]
+    }
+  },
+  {
+    "engine": "webkit",
+    "hash": "alles",
+    "chapter": "regions",
+    "type": "fixture-status",
+    "fixture": true,
+    "pass": true,
+    "expected": "gold",
+    "observed": {
+      "status": "gold",
+      "label": "goud",
+      "segments": [
+        {
+          "class": "on",
+          "label": "Ontdekken, klaar"
+        },
+        {
+          "class": "on",
+          "label": "Aanwijzen, klaar"
+        },
+        {
+          "class": "on",
+          "label": "Namen schrijven, klaar"
+        }
+      ],
+      "actions": [
+        "★ Goud nog eens",
+        "↻ Ontdekken",
+        "↻ Aanwijzen",
+        "↻ Namen schrijven"
+      ]
+    }
+  },
+  {
+    "engine": "webkit",
+    "hash": "alles",
+    "chapter": "countries",
+    "type": "fixture-status",
+    "fixture": true,
+    "pass": true,
+    "expected": "gold",
+    "observed": {
+      "status": "gold",
+      "label": "goud",
+      "segments": [
+        {
+          "class": "on",
+          "label": "Ontdekken, klaar"
+        },
+        {
+          "class": "on",
+          "label": "Aanwijzen, klaar"
+        },
+        {
+          "class": "on",
+          "label": "Namen schrijven, klaar"
+        }
+      ],
+      "actions": [
+        "★ Goud nog eens",
+        "↻ Ontdekken",
+        "↻ Aanwijzen",
+        "↻ Namen schrijven"
+      ]
+    }
+  },
+  {
+    "engine": "webkit",
+    "hash": "alles",
+    "chapter": "seas",
+    "type": "fixture-status",
+    "fixture": true,
+    "pass": true,
+    "expected": "gold",
+    "observed": {
+      "status": "gold",
+      "label": "goud",
+      "segments": [
+        {
+          "class": "on",
+          "label": "Ontdekken, klaar"
+        },
+        {
+          "class": "on",
+          "label": "Aanwijzen, klaar"
+        },
+        {
+          "class": "on",
+          "label": "Namen schrijven, klaar"
+        }
+      ],
+      "actions": [
+        "★ Goud nog eens",
+        "↻ Ontdekken",
+        "↻ Aanwijzen",
+        "↻ Namen schrijven"
+      ]
+    }
+  },
+  {
+    "engine": "webkit",
+    "hash": "alles",
+    "chapter": "rivers",
+    "type": "fixture-status",
+    "fixture": true,
+    "pass": true,
+    "expected": "gold",
+    "observed": {
+      "status": "gold",
+      "label": "goud",
+      "segments": [
+        {
+          "class": "on",
+          "label": "Ontdekken, klaar"
+        },
+        {
+          "class": "on",
+          "label": "Aanwijzen, klaar"
+        },
+        {
+          "class": "on",
+          "label": "Namen schrijven, klaar"
+        }
+      ],
+      "actions": [
+        "★ Goud nog eens",
+        "↻ Ontdekken",
+        "↻ Aanwijzen",
+        "↻ Namen schrijven"
+      ]
+    }
+  },
+  {
+    "engine": "webkit",
+    "hash": "alles",
+    "type": "fixture-action",
+    "fixture": true,
+    "chapter": "city1",
+    "kind": "gold",
+    "index": 0,
+    "observed": {
+      "chapter": "city1",
+      "kind": "gold",
+      "question": {
+        "id": "city-2",
+        "mode": "point"
+      },
+      "visible": true
+    },
+    "pass": true
+  },
+  {
+    "engine": "webkit",
+    "hash": "alles",
+    "type": "fixture-action",
+    "fixture": true,
+    "chapter": "city1",
+    "kind": "discover",
+    "index": 1,
+    "observed": {
+      "chapter": "city1",
+      "kind": "discover",
+      "question": {
+        "id": "city-3",
+        "mode": "discover"
+      },
+      "visible": true
+    },
+    "pass": true
+  },
+  {
+    "engine": "webkit",
+    "hash": "alles",
+    "type": "fixture-action",
+    "fixture": true,
+    "chapter": "city1",
+    "kind": "point",
+    "index": 2,
+    "observed": {
+      "chapter": "city1",
+      "kind": "point",
+      "question": {
+        "id": "city-4",
+        "mode": "point"
+      },
+      "visible": true
+    },
+    "pass": true
+  },
+  {
+    "engine": "webkit",
+    "hash": "alles",
+    "type": "fixture-action",
+    "fixture": true,
+    "chapter": "city1",
+    "kind": "write",
+    "index": 3,
+    "observed": {
+      "chapter": "city1",
+      "kind": "write",
+      "question": {
+        "id": "city-2",
+        "mode": "write"
+      },
+      "visible": true
+    },
+    "pass": true
+  },
+  {
+    "engine": "webkit",
+    "hash": "alles",
+    "type": "fixture-action",
+    "fixture": true,
+    "chapter": "city2",
+    "kind": "gold",
+    "index": 0,
+    "observed": {
+      "chapter": "city2",
+      "kind": "gold",
+      "question": {
+        "id": "city-8",
+        "mode": "point"
+      },
+      "visible": true
+    },
+    "pass": true
+  },
+  {
+    "engine": "webkit",
+    "hash": "alles",
+    "type": "fixture-action",
+    "fixture": true,
+    "chapter": "city2",
+    "kind": "discover",
+    "index": 1,
+    "observed": {
+      "chapter": "city2",
+      "kind": "discover",
+      "question": {
+        "id": "city-10",
+        "mode": "discover"
+      },
+      "visible": true
+    },
+    "pass": true
+  },
+  {
+    "engine": "webkit",
+    "hash": "alles",
+    "type": "fixture-action",
+    "fixture": true,
+    "chapter": "city2",
+    "kind": "point",
+    "index": 2,
+    "observed": {
+      "chapter": "city2",
+      "kind": "point",
+      "question": {
+        "id": "city-11",
+        "mode": "point"
+      },
+      "visible": true
+    },
+    "pass": true
+  },
+  {
+    "engine": "webkit",
+    "hash": "alles",
+    "type": "fixture-action",
+    "fixture": true,
+    "chapter": "city2",
+    "kind": "write",
+    "index": 3,
+    "observed": {
+      "chapter": "city2",
+      "kind": "write",
+      "question": {
+        "id": "city-10",
+        "mode": "write"
+      },
+      "visible": true
+    },
+    "pass": true
+  },
+  {
+    "engine": "webkit",
+    "hash": "alles",
+    "type": "fixture-action",
+    "fixture": true,
+    "chapter": "city3",
+    "kind": "gold",
+    "index": 0,
+    "observed": {
+      "chapter": "city3",
+      "kind": "gold",
+      "question": {
+        "id": "city-14",
+        "mode": "point"
+      },
+      "visible": true
+    },
+    "pass": true
+  },
+  {
+    "engine": "webkit",
+    "hash": "alles",
+    "type": "fixture-action",
+    "fixture": true,
+    "chapter": "city3",
+    "kind": "discover",
+    "index": 1,
+    "observed": {
+      "chapter": "city3",
+      "kind": "discover",
+      "question": {
+        "id": "city-18",
+        "mode": "discover"
+      },
+      "visible": true
+    },
+    "pass": true
+  },
+  {
+    "engine": "webkit",
+    "hash": "alles",
+    "type": "fixture-action",
+    "fixture": true,
+    "chapter": "city3",
+    "kind": "point",
+    "index": 2,
+    "observed": {
+      "chapter": "city3",
+      "kind": "point",
+      "question": {
+        "id": "city-17",
+        "mode": "point"
+      },
+      "visible": true
+    },
+    "pass": true
+  },
+  {
+    "engine": "webkit",
+    "hash": "alles",
+    "type": "fixture-action",
+    "fixture": true,
+    "chapter": "city3",
+    "kind": "write",
+    "index": 3,
+    "observed": {
+      "chapter": "city3",
+      "kind": "write",
+      "question": {
+        "id": "city-17",
+        "mode": "write"
+      },
+      "visible": true
+    },
+    "pass": true
+  },
+  {
+    "engine": "webkit",
+    "hash": "alles",
+    "type": "fixture-action",
+    "fixture": true,
+    "chapter": "city4",
+    "kind": "gold",
+    "index": 0,
+    "observed": {
+      "chapter": "city4",
+      "kind": "gold",
+      "question": {
+        "id": "city-20",
+        "mode": "point"
+      },
+      "visible": true
+    },
+    "pass": true
+  },
+  {
+    "engine": "webkit",
+    "hash": "alles",
+    "type": "fixture-action",
+    "fixture": true,
+    "chapter": "city4",
+    "kind": "discover",
+    "index": 1,
+    "observed": {
+      "chapter": "city4",
+      "kind": "discover",
+      "question": {
+        "id": "city-20",
+        "mode": "discover"
+      },
+      "visible": true
+    },
+    "pass": true
+  },
+  {
+    "engine": "webkit",
+    "hash": "alles",
+    "type": "fixture-action",
+    "fixture": true,
+    "chapter": "city4",
+    "kind": "point",
+    "index": 2,
+    "observed": {
+      "chapter": "city4",
+      "kind": "point",
+      "question": {
+        "id": "city-20",
+        "mode": "point"
+      },
+      "visible": true
+    },
+    "pass": true
+  },
+  {
+    "engine": "webkit",
+    "hash": "alles",
+    "type": "fixture-action",
+    "fixture": true,
+    "chapter": "city4",
+    "kind": "write",
+    "index": 3,
+    "observed": {
+      "chapter": "city4",
+      "kind": "write",
+      "question": {
+        "id": "city-20",
+        "mode": "write"
+      },
+      "visible": true
+    },
+    "pass": true
+  },
+  {
+    "engine": "webkit",
+    "hash": "alles",
+    "type": "fixture-action",
+    "fixture": true,
+    "chapter": "islands",
+    "kind": "gold",
+    "index": 0,
+    "observed": {
+      "chapter": "islands",
+      "kind": "gold",
+      "question": {
+        "id": "area-a",
+        "mode": "point"
+      },
+      "visible": true
+    },
+    "pass": true
+  },
+  {
+    "engine": "webkit",
+    "hash": "alles",
+    "type": "fixture-action",
+    "fixture": true,
+    "chapter": "islands",
+    "kind": "discover",
+    "index": 1,
+    "observed": {
+      "chapter": "islands",
+      "kind": "discover",
+      "question": {
+        "id": "area-b",
+        "mode": "discover"
+      },
+      "visible": true
+    },
+    "pass": true
+  },
+  {
+    "engine": "webkit",
+    "hash": "alles",
+    "type": "fixture-action",
+    "fixture": true,
+    "chapter": "islands",
+    "kind": "point",
+    "index": 2,
+    "observed": {
+      "chapter": "islands",
+      "kind": "point",
+      "question": {
+        "id": "area-b",
+        "mode": "point"
+      },
+      "visible": true
+    },
+    "pass": true
+  },
+  {
+    "engine": "webkit",
+    "hash": "alles",
+    "type": "fixture-action",
+    "fixture": true,
+    "chapter": "islands",
+    "kind": "write",
+    "index": 3,
+    "observed": {
+      "chapter": "islands",
+      "kind": "write",
+      "question": {
+        "id": "area-b",
+        "mode": "write"
+      },
+      "visible": true
+    },
+    "pass": true
+  },
+  {
+    "engine": "webkit",
+    "hash": "alles",
+    "type": "fixture-action",
+    "fixture": true,
+    "chapter": "mountains",
+    "kind": "gold",
+    "index": 0,
+    "observed": {
+      "chapter": "mountains",
+      "kind": "gold",
+      "question": {
+        "id": "area-d",
+        "mode": "point"
+      },
+      "visible": true
+    },
+    "pass": true
+  },
+  {
+    "engine": "webkit",
+    "hash": "alles",
+    "type": "fixture-action",
+    "fixture": true,
+    "chapter": "mountains",
+    "kind": "discover",
+    "index": 1,
+    "observed": {
+      "chapter": "mountains",
+      "kind": "discover",
+      "question": {
+        "id": "area-c",
+        "mode": "discover"
+      },
+      "visible": true
+    },
+    "pass": true
+  },
+  {
+    "engine": "webkit",
+    "hash": "alles",
+    "type": "fixture-action",
+    "fixture": true,
+    "chapter": "mountains",
+    "kind": "point",
+    "index": 2,
+    "observed": {
+      "chapter": "mountains",
+      "kind": "point",
+      "question": {
+        "id": "area-c",
+        "mode": "point"
+      },
+      "visible": true
+    },
+    "pass": true
+  },
+  {
+    "engine": "webkit",
+    "hash": "alles",
+    "type": "fixture-action",
+    "fixture": true,
+    "chapter": "mountains",
+    "kind": "write",
+    "index": 3,
+    "observed": {
+      "chapter": "mountains",
+      "kind": "write",
+      "question": {
+        "id": "area-d",
+        "mode": "write"
+      },
+      "visible": true
+    },
+    "pass": true
+  },
+  {
+    "engine": "webkit",
+    "hash": "alles",
+    "type": "fixture-action",
+    "fixture": true,
+    "chapter": "volcanoes",
+    "kind": "gold",
+    "index": 0,
+    "observed": {
+      "chapter": "volcanoes",
+      "kind": "gold",
+      "question": {
+        "id": "area-e",
+        "mode": "point"
+      },
+      "visible": true
+    },
+    "pass": true
+  },
+  {
+    "engine": "webkit",
+    "hash": "alles",
+    "type": "fixture-action",
+    "fixture": true,
+    "chapter": "volcanoes",
+    "kind": "discover",
+    "index": 1,
+    "observed": {
+      "chapter": "volcanoes",
+      "kind": "discover",
+      "question": {
+        "id": "area-f",
+        "mode": "discover"
+      },
+      "visible": true
+    },
+    "pass": true
+  },
+  {
+    "engine": "webkit",
+    "hash": "alles",
+    "type": "fixture-action",
+    "fixture": true,
+    "chapter": "volcanoes",
+    "kind": "point",
+    "index": 2,
+    "observed": {
+      "chapter": "volcanoes",
+      "kind": "point",
+      "question": {
+        "id": "area-f",
+        "mode": "point"
+      },
+      "visible": true
+    },
+    "pass": true
+  },
+  {
+    "engine": "webkit",
+    "hash": "alles",
+    "type": "fixture-action",
+    "fixture": true,
+    "chapter": "volcanoes",
+    "kind": "write",
+    "index": 3,
+    "observed": {
+      "chapter": "volcanoes",
+      "kind": "write",
+      "question": {
+        "id": "area-f",
+        "mode": "write"
+      },
+      "visible": true
+    },
+    "pass": true
+  },
+  {
+    "engine": "webkit",
+    "hash": "alles",
+    "type": "fixture-action",
+    "fixture": true,
+    "chapter": "regions",
+    "kind": "gold",
+    "index": 0,
+    "observed": {
+      "chapter": "regions",
+      "kind": "gold",
+      "question": {
+        "id": "area-g",
+        "mode": "point"
+      },
+      "visible": true
+    },
+    "pass": true
+  },
+  {
+    "engine": "webkit",
+    "hash": "alles",
+    "type": "fixture-action",
+    "fixture": true,
+    "chapter": "regions",
+    "kind": "discover",
+    "index": 1,
+    "observed": {
+      "chapter": "regions",
+      "kind": "discover",
+      "question": {
+        "id": "area-h",
+        "mode": "discover"
+      },
+      "visible": true
+    },
+    "pass": true
+  },
+  {
+    "engine": "webkit",
+    "hash": "alles",
+    "type": "fixture-action",
+    "fixture": true,
+    "chapter": "regions",
+    "kind": "point",
+    "index": 2,
+    "observed": {
+      "chapter": "regions",
+      "kind": "point",
+      "question": {
+        "id": "area-h",
+        "mode": "point"
+      },
+      "visible": true
+    },
+    "pass": true
+  },
+  {
+    "engine": "webkit",
+    "hash": "alles",
+    "type": "fixture-action",
+    "fixture": true,
+    "chapter": "regions",
+    "kind": "write",
+    "index": 3,
+    "observed": {
+      "chapter": "regions",
+      "kind": "write",
+      "question": {
+        "id": "area-g",
+        "mode": "write"
+      },
+      "visible": true
+    },
+    "pass": true
+  },
+  {
+    "engine": "webkit",
+    "hash": "alles",
+    "type": "fixture-action",
+    "fixture": true,
+    "chapter": "countries",
+    "kind": "gold",
+    "index": 0,
+    "observed": {
+      "chapter": "countries",
+      "kind": "gold",
+      "question": {
+        "id": "area-m",
+        "mode": "point"
+      },
+      "visible": true
+    },
+    "pass": true
+  },
+  {
+    "engine": "webkit",
+    "hash": "alles",
+    "type": "fixture-action",
+    "fixture": true,
+    "chapter": "countries",
+    "kind": "discover",
+    "index": 1,
+    "observed": {
+      "chapter": "countries",
+      "kind": "discover",
+      "question": {
+        "id": "area-k",
+        "mode": "discover"
+      },
+      "visible": true
+    },
+    "pass": true
+  },
+  {
+    "engine": "webkit",
+    "hash": "alles",
+    "type": "fixture-action",
+    "fixture": true,
+    "chapter": "countries",
+    "kind": "point",
+    "index": 2,
+    "observed": {
+      "chapter": "countries",
+      "kind": "point",
+      "question": {
+        "id": "area-l",
+        "mode": "point"
+      },
+      "visible": true
+    },
+    "pass": true
+  },
+  {
+    "engine": "webkit",
+    "hash": "alles",
+    "type": "fixture-action",
+    "fixture": true,
+    "chapter": "countries",
+    "kind": "write",
+    "index": 3,
+    "observed": {
+      "chapter": "countries",
+      "kind": "write",
+      "question": {
+        "id": "area-k",
+        "mode": "write"
+      },
+      "visible": true
+    },
+    "pass": true
+  },
+  {
+    "engine": "webkit",
+    "hash": "alles",
+    "type": "fixture-action",
+    "fixture": true,
+    "chapter": "seas",
+    "kind": "gold",
+    "index": 0,
+    "observed": {
+      "chapter": "seas",
+      "kind": "gold",
+      "question": {
+        "id": "water-E",
+        "mode": "point"
+      },
+      "visible": true
+    },
+    "pass": true
+  },
+  {
+    "engine": "webkit",
+    "hash": "alles",
+    "type": "fixture-action",
+    "fixture": true,
+    "chapter": "seas",
+    "kind": "discover",
+    "index": 1,
+    "observed": {
+      "chapter": "seas",
+      "kind": "discover",
+      "question": {
+        "id": "water-D",
+        "mode": "discover"
+      },
+      "visible": true
+    },
+    "pass": true
+  },
+  {
+    "engine": "webkit",
+    "hash": "alles",
+    "type": "fixture-action",
+    "fixture": true,
+    "chapter": "seas",
+    "kind": "point",
+    "index": 2,
+    "observed": {
+      "chapter": "seas",
+      "kind": "point",
+      "question": {
+        "id": "water-B",
+        "mode": "point"
+      },
+      "visible": true
+    },
+    "pass": true
+  },
+  {
+    "engine": "webkit",
+    "hash": "alles",
+    "type": "fixture-action",
+    "fixture": true,
+    "chapter": "seas",
+    "kind": "write",
+    "index": 3,
+    "observed": {
+      "chapter": "seas",
+      "kind": "write",
+      "question": {
+        "id": "water-B",
+        "mode": "write"
+      },
+      "visible": true
+    },
+    "pass": true
+  },
+  {
+    "engine": "webkit",
+    "hash": "alles",
+    "type": "fixture-action",
+    "fixture": true,
+    "chapter": "rivers",
+    "kind": "gold",
+    "index": 0,
+    "observed": {
+      "chapter": "rivers",
+      "kind": "gold",
+      "question": {
+        "id": "water-G",
+        "mode": "point"
+      },
+      "visible": true
+    },
+    "pass": true
+  },
+  {
+    "engine": "webkit",
+    "hash": "alles",
+    "type": "fixture-action",
+    "fixture": true,
+    "chapter": "rivers",
+    "kind": "discover",
+    "index": 1,
+    "observed": {
+      "chapter": "rivers",
+      "kind": "discover",
+      "question": {
+        "id": "water-G",
+        "mode": "discover"
+      },
+      "visible": true
+    },
+    "pass": true
+  },
+  {
+    "engine": "webkit",
+    "hash": "alles",
+    "type": "fixture-action",
+    "fixture": true,
+    "chapter": "rivers",
+    "kind": "point",
+    "index": 2,
+    "observed": {
+      "chapter": "rivers",
+      "kind": "point",
+      "question": {
+        "id": "water-F",
+        "mode": "point"
+      },
+      "visible": true
+    },
+    "pass": true
+  },
+  {
+    "engine": "webkit",
+    "hash": "alles",
+    "type": "fixture-action",
+    "fixture": true,
+    "chapter": "rivers",
+    "kind": "write",
+    "index": 3,
+    "observed": {
+      "chapter": "rivers",
+      "kind": "write",
+      "question": {
+        "id": "water-F",
+        "mode": "write"
+      },
+      "visible": true
+    },
+    "pass": true
+  }
+]

@@ -1,0 +1,54 @@
+{
+  "verdict": "REWORK",
+  "testedSHA": "afb32d17293a4705c5690e985d8cd2ef7c2e6ae7",
+  "inspectedNotTestedNewerHead": "3dbcd1345b360e9f7c9f4e16e8e821ead5550319",
+  "previewSHA256": "35a0c4696f42abe7555bcb4452540598c493812abc783412b78b9d06ac6a610d",
+  "indexSHA256": "3aced3c31259011b0af2947c78f71965cb4beb2e88c69d1663e61792b0304f5a",
+  "points": {
+    "build": "PASS",
+    "1_progress_actions_resume": "PASS",
+    "2_map_clone": "REWORK: context labels remain",
+    "3_landmark_visibility": "REWORK: Sicily occluded on phone; source positions intact",
+    "4_layout": "REWORK: selected island/control collision despite passing shell matrix",
+    "5_keyboard_offline_storage": "REWORK: phone focus removed on Enter; storage/offline pass",
+    "6_antipattern_pedagogy": "PASS direction with known framing/fade risk; concrete failures scored separately"
+  },
+  "findings": [
+    {
+      "id": "V3-01",
+      "issue": "Seven fixed geographic context labels remain; no45-target answer leak proved",
+      "evidence": "independent/names-and-webkit-keyboard.json"
+    },
+    {
+      "id": "V3-02",
+      "issue": "Map switch covers actual Sicily fill center at390x844",
+      "evidence": "independent/storage-and-occlusion.json"
+    },
+    {
+      "id": "V3-03",
+      "issue": "Phone chapter keyboard selection removes focused row, leaves BODY",
+      "evidence": "independent/phone-focus.json"
+    }
+  ],
+  "verifiedCounts": {
+    "fixtureMatrix": 224,
+    "fixtureStatus": 88,
+    "fixtureActions": 136,
+    "actualCorrectAnswers": 48,
+    "mapCases": 132,
+    "geometryNodesPerCase": 131,
+    "layoutCases": 60,
+    "nativeStorageCases": 10
+  },
+  "notTested": [
+    "Newer head3dbcd13",
+    "Physical iPad Safari",
+    "VoiceOver",
+    "Native Safari",
+    "Real touch/OS keyboard/IME",
+    "Fresh external GIS ground truth"
+  ],
+  "knownOwnerDecisionNotNewBug": "Roomier map frame and less edgefade; later source change inspected, not accepted via this old-SHA test",
+  "candidateModified": false,
+  "mergeDeploymentRelease": false
+}

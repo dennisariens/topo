@@ -1,0 +1,106 @@
+[
+  {
+    "engine": "chromium",
+    "key": "Tab",
+    "reached": true,
+    "afterEnter": {
+      "tag": "BODY",
+      "isBody": true,
+      "chapter": null,
+      "text": "V3-preview · demo · niets wordt bewaardNieuw profielHalte bezigHaltes ",
+      "outline": "rgb(24, 59, 58) none 3px",
+      "scrollY": 52,
+      "selected": "city2"
+    },
+    "nextFocusStops": [
+      {
+        "tag": "BUTTON",
+        "isBody": false,
+        "chapter": null,
+        "text": "Schoolkaart",
+        "outline": "rgb(29, 111, 216) solid 3px",
+        "scrollY": 52,
+        "selected": "city2"
+      },
+      {
+        "tag": "BUTTON",
+        "isBody": false,
+        "chapter": null,
+        "text": "Reliëf",
+        "outline": "rgb(29, 111, 216) solid 3px",
+        "scrollY": 52,
+        "selected": "city2"
+      },
+      {
+        "tag": "BUTTON",
+        "isBody": false,
+        "chapter": null,
+        "text": "★ Goud nog eens",
+        "outline": "rgb(29, 111, 216) solid 3px",
+        "scrollY": 52,
+        "selected": "city2"
+      },
+      {
+        "tag": "BUTTON",
+        "isBody": false,
+        "chapter": null,
+        "text": "↻ Ontdekken",
+        "outline": "rgb(29, 111, 216) solid 3px",
+        "scrollY": 52,
+        "selected": "city2"
+      }
+    ]
+  },
+  {
+    "engine": "webkit",
+    "key": "Alt+Tab",
+    "reached": true,
+    "afterEnter": {
+      "tag": "BODY",
+      "isBody": true,
+      "chapter": null,
+      "text": "V3-preview · demo · niets wordt bewaardNieuw profielHalte bezigHaltes ",
+      "outline": "3px none rgb(24, 59, 58)",
+      "scrollY": 52,
+      "selected": "city2"
+    },
+    "nextFocusStops": [
+      {
+        "tag": "BUTTON",
+        "isBody": false,
+        "chapter": "city1",
+        "text": "1Steden 1–6",
+        "outline": "3px solid rgb(29, 111, 216)",
+        "scrollY": 52,
+        "selected": "city2"
+      },
+      {
+        "tag": "BUTTON",
+        "isBody": false,
+        "chapter": "city2",
+        "text": "2Steden 7–12",
+        "outline": "3px solid rgb(29, 111, 216)",
+        "scrollY": 52,
+        "selected": "city2"
+      },
+      {
+        "tag": "BUTTON",
+        "isBody": false,
+        "chapter": "city3",
+        "text": "3Extra steden 13–18",
+        "outline": "3px solid rgb(29, 111, 216)",
+        "scrollY": 52,
+        "selected": "city2"
+      },
+      {
+        "tag": "BUTTON",
+        "isBody": false,
+        "chapter": "city4",
+        "text": "4Extra steden 19–23",
+        "outline": "3px solid rgb(29, 111, 216)",
+        "scrollY": 52,
+        "selected": "city2"
+      }
+    ]
+  }
+]

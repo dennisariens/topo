@@ -9,3 +9,4 @@ Design Taste-protocol: elke correctie krijgt een categorie (lay-out, identiteit,
 | 2026-11-09 | alle | Kleur per land (Italia nu, later Frankrijk) in plaats van één accent | identiteit | DESIGN_SYSTEM V3 › Landthema's; `data-theme` |
 | 2026-11-09 | Reis | Schoolkaart blijft basis; reliëf als schakelaar gewenst | inhoud, interactie | DESIGN_SYSTEM V3 › Kaart |
 | 2026-11-09 | Reis v3b | Rand-fade niet te sterk: referentiekader (buurlanden, zeeën) is nodig om te leren | lay-out, inhoud | DESIGN_SYSTEM V3 › Kaart (kaderregel); check `mapFrameShort` in `qa-v3-reis.py`; verwerkt 9-11 |
+| 2026-11-09 | Les (GE01) | Lesstappen boven de kaart (topo-ui-design, PR #64) | hiërarchie | DESIGN_SYSTEM V3 › Les; check `stepsRight` in `qa-v3-les.py` |

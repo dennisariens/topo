@@ -58,7 +58,9 @@ LAYOUT_JS = '''() => {
 MAP_SAMPLE_JS = '''() => {
   const map = document.querySelector('.v3Map'); if (!map) return {};
   const el = map.getBoundingClientRect(), stage = map.parentElement.getBoundingClientRect(), ctm = map.getScreenCTM(), inv = ctm.inverse();
-  const x0 = Math.max(el.left, stage.left) + 2, x1 = Math.min(el.right, stage.right, innerWidth) - 2, y0 = Math.max(el.top, stage.top, 0) + 2, y1 = Math.min(el.bottom, stage.bottom, innerHeight) - 2;
+  // Sample only outside the 4% edge fade (plus 2 px): a feature counts as reference when it shows beyond the soft edge.
+  const fx = el.width * .04 + 2, fy = el.height * .04 + 2;
+  const x0 = Math.max(el.left + fx, stage.left), x1 = Math.min(el.right - fx, stage.right, innerWidth), y0 = Math.max(el.top + fy, stage.top, 0), y1 = Math.min(el.bottom - fy, stage.bottom, innerHeight);
   const hidden = [...document.querySelectorAll('.v3Switch,.v3PreviewBar,.v3Side')].map(n => n.getBoundingClientRect());
   const free = (x, y) => !hidden.some(h => x >= h.left - 4 && x <= h.right + 4 && y >= h.top - 4 && y <= h.bottom + 4);
   const pick = (n, ok) => { // grid over the visible part of the element, nearest to the outer edge last
@@ -96,7 +98,10 @@ def png_pixel(png):
 
 async def sample_frame(pg):
     # Phones show the map below the action: bring it into view first (the frame, not the fold, is under test).
-    await pg.evaluate("document.querySelector('.v3Map')?.scrollIntoView({block:'center'})"); await pg.wait_for_timeout(150)
+    # Instant scroll, then wait until the position is stable, so the chosen points and the pixels match.
+    await pg.evaluate("document.querySelector('.v3Map')?.scrollIntoView({block:'center',behavior:'instant'})")
+    await pg.wait_for_function("new Promise(r => { const y = scrollY; requestAnimationFrame(() => requestAnimationFrame(() => r(scrollY === y))); })")
+    await pg.wait_for_timeout(100)
     pts = await pg.evaluate(MAP_SAMPLE_JS); surface = (255, 253, 249)
     async def px(x, y): return png_pixel(await pg.screenshot(clip={'x': x, 'y': y, 'width': 1, 'height': 1}))
     masked = {k: await px(*v) for k, v in pts.items() if v}
@@ -105,7 +110,7 @@ async def sample_frame(pg):
     await pg.evaluate("document.querySelector('.v3Map').style.removeProperty('mask');document.querySelector('.v3Map').style.removeProperty('-webkit-mask')")
     d = lambda c: sum(abs(a - b) for a, b in zip(c, surface)) or 1
     kept = {k: round(min(1, d(masked[k]) / d(plain[k])), 2) for k in masked}
-    await pg.evaluate('scrollTo(0,0)')
+    await pg.evaluate("scrollTo({top:0,behavior:'instant'})")
     return {'kept': kept, 'outOfFrame': sorted(k for k, v in pts.items() if not v), 'visible': sorted(k for k, v in kept.items() if v >= .8)}
 
 WORDBREAK_JS = '''() => {
@@ -175,8 +180,9 @@ async def main():
                 await pg.evaluate('document.querySelector(\'#routeCards article[data-chapter="city2"] .routeStep\').click()'); await settle(pg)
             q1 = await pg.evaluate('state.current&&state.current.id')
             f['replayStarted'] = await pg.evaluate('({chapter:state.route.active?.chapterId,kind:state.route.active?.kind,mode:state.mode,v3Hidden:!document.body.classList.contains("v3Home")})')
-            # Back to Reis via the V2 nav, then "Ga verder" returns the same question.
-            await pg.click('.ninoNav button:has-text("Reis")'); await settle(pg)
+            # Back to Reis the way the lesson offers it (V3 sidebar on desktop, ‹ Reis on phone), then "Ga verder" returns the same question.
+            f['backVia'] = await pg.evaluate('''(() => { const b = [document.querySelector('.v3LesBack'), document.querySelector('.v3LesSideWrap .v3NavItem')].find(x => x && x.checkVisibility()); b?.click(); return b?.className || null; })()''')
+            await settle(pg)
             f['primaryLabelWithActive'] = await pg.inner_text('.v3Actions .primary')
             await pg.click('.v3Actions .primary'); await settle(pg)
             q2 = await pg.evaluate('({id:state.current&&state.current.id,chapter:state.route.active?.chapterId,kind:state.route.active?.kind})')

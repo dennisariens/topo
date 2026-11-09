@@ -1,0 +1,161 @@
+/* TOPO V3 — Golden Experience 01, beat 3–7 (docs/v3/GE01.md). Presentation only, active while body.v3Les.
+   Desktop = sidebar · lesson steps + map · task panel. iPad and phone stay Focus Mode (body[data-focus-shell=true]):
+   V3 adds the lesson steps on top and restyles the sheet; nothing moves. */
+.v3LesSideWrap[hidden],.v3LesBar[hidden]{display:none!important}
+body.v3Les{background:var(--v3-canvas,#f4f1ea)}
+
+/* V2 chrome that steps aside during a lesson (navigation lives in the sidebar or behind ‹ Reis). */
+body.v3Les>header,body.v3Les .ninoNav,body.v3Les nav.tabs.practiceModes,body.v3Les #mapAbout,
+body.v3Les .mapTools>strong,body.v3Les .layout .panel #quiz>#routeLessonBar,body.v3Les .layout .panel #quiz>#type{display:none!important}
+body.v3Les:not([data-v3-q=discover]) .layout .panel #quiz>#help{display:none!important}
+
+/* Lesson steps bar */
+.v3LesBar{display:flex;align-items:center;gap:var(--v3-s4);padding:var(--v3-s3) var(--v3-s6);background:var(--v3-surface);border-bottom:1px solid var(--v3-line)}
+.v3 .v3LesBack{min-width:44px;padding:0 var(--v3-s3);gap:4px;background:transparent;font-weight:600}
+.v3 .v3LesBack>span:first-child{font-size:26px;line-height:1;margin-top:-3px}
+.v3LesTitle{font:var(--v3-title);white-space:nowrap;margin-right:var(--v3-s2)}
+.v3LesSteps{display:flex;gap:var(--v3-s2);flex:1;min-width:0}
+.v3LesSteps li{flex:1;min-width:0;max-width:220px}
+.v3 .v3LesStep{width:100%;justify-content:flex-start;gap:var(--v3-s2);padding:0 var(--v3-s3);background:var(--v3-surface2);font:var(--v3-headline);font-weight:500;color:var(--v3-ink2);white-space:nowrap}
+.v3LesStepName{overflow:hidden;text-overflow:ellipsis}
+.v3LesMark{width:24px;height:24px;flex:none;display:grid;place-items:center;border-radius:50%;background:var(--v3-line);font:600 13px/1 var(--v3-font);color:var(--v3-ink2)}
+.v3 .v3LesStep[data-state=now]{background:var(--v3-accent-soft);color:var(--v3-ink);font-weight:700;box-shadow:inset 0 0 0 2px var(--v3-accent);cursor:default}
+.v3LesStep[data-state=now] .v3LesMark{background:var(--v3-accent);color:var(--v3-accent-ink)}
+.v3 .v3LesStep[data-state=done]{color:var(--v3-ink)}
+.v3LesStep[data-state=done] .v3LesMark{background:var(--v3-done);color:#fff}
+.v3 .v3LesStep[data-state=later]{opacity:.6;cursor:default}
+.v3 .v3LesStep[data-state=done]:hover{background:var(--v3-line)}
+.v3LesGold:empty{display:none}
+.v3 .v3LesGoldBtn{width:auto;background:var(--v3-gold-bg);color:#6b4d00;font-weight:600}
+.v3 .v3LesGoldBtn[data-state=now]{box-shadow:inset 0 0 0 2px var(--v3-gold)}
+.v3LesCount{font:600 17px/1 var(--v3-font);font-variant-numeric:tabular-nums;color:var(--v3-ink2);min-width:56px;text-align:right;white-space:nowrap;flex:none}
+.v3LesCount:empty{display:none}
+
+/* Desktop: fixed sidebar + content column. */
+body.v3Les:not([data-focus-shell=true]){--v3-side:232px}
+body.v3Les:not([data-focus-shell=true]) .v3LesSideWrap{position:fixed;z-index:40;left:0;top:var(--v3-bar,0px);bottom:0;width:var(--v3-side);display:flex;background:var(--v3-surface);border-right:1px solid var(--v3-line)}
+body.v3Les:not([data-focus-shell=true]) .v3LesSideWrap .v3Side{flex:1;border:0;border-radius:0;background:transparent}
+body.v3Les:not([data-focus-shell=true]) .v3LesBar,body.v3Les:not([data-focus-shell=true]) main.layout{margin-left:var(--v3-side)}
+body.v3Les:not([data-focus-shell=true]) .v3LesBar{position:sticky;top:0;z-index:30}
+body.v3Les:not([data-focus-shell=true]) main.layout{max-width:none;margin-right:0;padding:var(--v3-s4) var(--v3-s6) var(--v3-s6);grid-template-columns:minmax(0,1fr) 360px;gap:var(--v3-s5);align-items:start}
+@media (max-width:1279px){body.v3Les:not([data-focus-shell=true]){--v3-side:76px}
+ .v3LesSideWrap .v3Side{padding:var(--v3-s5) var(--v3-s2);align-items:center}
+ .v3LesSideWrap .v3Brand b{font-size:20px}.v3LesSideWrap .v3Portrait{width:56px;height:56px}
+ .v3LesSideWrap .v3 .v3NavItem,.v3LesSideWrap .v3NavItem{justify-content:center;padding:0;width:52px}
+ .v3LesSideWrap .v3NavItem span{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)}}
+body.v3Les:not([data-focus-shell=true]) .v3LesBack{display:none}
+body.v3Les[data-focus-shell=true] .v3LesSideWrap{display:none!important}
+
+/* Map card: the map first; tools stay, quiet, in one row. */
+body.v3Les .mapCard{background:transparent;border:0;box-shadow:none;overflow:visible}
+body.v3Les .mapArea{border-radius:var(--v3-radius);overflow:hidden;box-shadow:var(--v3-shadow)}
+body.v3Les .mapTools{background:transparent;border:0;padding:var(--v3-s2) var(--v3-s3)}
+body.v3Les .mapTools .button,body.v3Les .mapTools button{min-height:40px;border-radius:10px;background:transparent;box-shadow:inset 0 0 0 1px var(--v3-line);color:var(--v3-ink2);font:600 14px/1 var(--v3-font)}
+body.v3Les:not([data-focus-shell=true]) .routeLessonLayout .mapArea{width:min(100%,calc((100dvh - var(--v3-bar,0px) - 160px) * 890 / 1235))}
+
+/* Task panel: one question, one answer field, one feedback line, one next action; the pizza meter last. */
+body.v3Les:not([data-focus-shell=true]) aside.panel{position:sticky;top:88px;background:var(--v3-surface);border:0;border-radius:var(--v3-radius);box-shadow:var(--v3-shadow);padding:var(--v3-s6)}
+body.v3Les .layout .panel #quiz:not(.hidden){display:flex!important;flex-direction:column;gap:var(--v3-s4);font-family:var(--v3-font)}
+body.v3Les #quiz>#routeLessonBar{order:0;margin:0;padding:0;border:0;background:none}
+body.v3Les #routeLessonBar .progress{height:6px;border-radius:3px;background:var(--v3-line);margin:0}
+body.v3Les #routeLessonBar .progress>i{background:var(--v3-accent);border-radius:3px}
+body.v3Les #quiz>#prompt{order:1;margin:0;font:var(--v3-large);letter-spacing:-.015em;color:var(--v3-ink);text-wrap:balance}
+body.v3Les #quiz>#help{order:2;margin:0;font:var(--v3-body);color:var(--v3-ink2)}
+body.v3Les #quiz>#inputWrap{order:3}
+body.v3Les #quiz>#message{order:4}
+body.v3Les #quiz>.buttons{order:5}
+body.v3Les #quiz>#ninoMeter{order:9}
+body.v3Les #answer{min-height:52px;border-radius:var(--v3-radius-btn);border:1px solid var(--v3-line);box-shadow:inset 0 0 0 1px var(--v3-line);font:400 19px/1.2 var(--v3-font);padding:0 var(--v3-s4);background:var(--v3-surface)}
+body.v3Les #answer:focus{outline:3px solid var(--v3-focus);outline-offset:2px}
+
+/* Beat 6 — feedback: the V2 sentence, green with ✓ when right, calm red when not; the map shows the right place. */
+body.v3Les #message{margin:0;padding:var(--v3-s3) var(--v3-s4);border-radius:var(--v3-radius-btn);background:var(--v3-surface2);border:0;font:600 17px/24px var(--v3-font);color:var(--v3-ink2)}
+body.v3Les #message.good{background:#e6f4ec;color:#1d6b3f}
+body.v3Les #message.good::before{content:'✓ ';font-weight:700}
+body.v3Les #message.bad{background:#fbeae6;color:#8d2f1d}
+body.v3Les .layout .panel #quiz>#message:not(.good):not(.bad),body.v3Les #focusAnswerSheet #quiz>#message:not(.good):not(.bad){display:none!important}
+
+/* Buttons: V3 shapes on the V2 controls. The quiet V2 "Ik weet het nog niet" stays secondary. */
+body.v3Les #quiz .button,body.v3Les #finishScreen .button,body.v3Les #focusAnswerSheet .button{min-height:48px;border-radius:var(--v3-radius-btn);border:0;box-shadow:inset 0 0 0 1px var(--v3-line);background:var(--v3-surface2);color:var(--v3-ink);font:600 16px/1.2 var(--v3-font)}
+body.v3Les #quiz .button.primary:not(.ninoQuiet),body.v3Les #finishScreen .button.primary:not(.v3Second),body.v3Les #check{min-height:52px;background:var(--v3-accent);color:var(--v3-accent-ink);box-shadow:none;font-size:18px}
+body.v3Les #quiz .button.primary.ninoQuiet,body.v3Les #reveal,body.v3Les #mistakes{background:transparent;color:var(--v3-ink2)}
+body.v3Les #quiz>.buttons{display:flex;flex-wrap:wrap;gap:var(--v3-s2)}
+body.v3Les .layout .panel #quiz>.buttons>#next:not(.ninoQuiet){flex:1 1 100%!important}
+/* One main action: once answered, Volgende leads and Controleer steps back. */
+body.v3Les[data-v3-answered=true] #check{background:var(--v3-surface2)!important;color:var(--v3-ink2)!important;box-shadow:inset 0 0 0 1px var(--v3-line)!important;font-size:16px!important}
+body.v3Les #quiz>.buttons>.button:is(.ninoQuiet,#reveal,#mistakes){min-height:44px;padding:0 var(--v3-s3);font-size:15px;font-weight:500}
+body.v3Les #inputWrap{display:grid;gap:var(--v3-s3)}
+body.v3Les #inputWrap #check{width:100%}
+
+/* Pizza meter: the one V2 meter, compact and quiet at the bottom of the task. */
+body.v3Les #ninoMeter{margin:var(--v3-s2) 0 0;padding:var(--v3-s3);border:0;border-radius:var(--v3-radius-btn);background:var(--v3-surface2);box-shadow:none}
+
+/* Beat 7 — finish: Nino, the title, the stamp with "Bekijk in Reisboekje" first; quiet V2 lines step aside. */
+body.v3Les .layout.finishLayout{display:block}
+body.v3Les #finishScreen{max-width:560px;margin:var(--v3-s6) auto;padding:var(--v3-s8) var(--v3-s6);border:0;border-radius:var(--v3-radius-shell);background:var(--v3-surface);box-shadow:var(--v3-shadow);font-family:var(--v3-font);color:var(--v3-ink)}
+/* The title takes focus for screen readers (V2); it is not interactive, so no ring. */
+body.v3Les #finishScreen h2{font:var(--v3-large);letter-spacing:-.015em;color:var(--v3-ink);border:0}
+/* Focus must never change size: losing focus on tap would move the buttons under the finger. */
+body.v3Les #finishScreen h2:is(:focus,:focus-visible){outline:0;box-shadow:none;border:0}
+body.v3Les #finishScreen>p{font:var(--v3-body);color:var(--v3-ink2)}
+body.v3Les #finishScreen [data-v3-aside]{display:none}
+body.v3Les #finishScreen .finishStats{gap:var(--v3-s2)}
+body.v3Les #finishScreen .finishStats>div{background:var(--v3-surface2);border:0;border-radius:var(--v3-radius-btn);font:var(--v3-foot);color:var(--v3-ink2)}
+body.v3Les #finishScreen .finishStats b{font:700 28px/1.1 var(--v3-font);color:var(--v3-ink)}
+body.v3Les #finishScreen .earnedMoment{border:0;border-radius:var(--v3-radius);background:var(--v3-accent-soft);text-align:left}
+body.v3Les #finishScreen .earnedMoment .button.primary{background:var(--v3-accent);color:var(--v3-accent-ink);box-shadow:none}
+body.v3Les #finishScreen>button{margin:var(--v3-s2) var(--v3-s1) 0}
+/* Phone: a smaller Nino keeps the next action above the fold on pause and finish. */
+@media (max-width:767px){body.v3Les #finishScreen{margin:var(--v3-s3) auto;padding:var(--v3-s5) var(--v3-s4)}body.v3Les #finishScreen>.ninoArtSlot,body.v3Les #finishScreen>.ninoArtSlot img{max-height:120px;width:auto;margin-inline:auto}body.v3Les #finishScreen h2{font-size:28px;line-height:34px}}
+@media (max-width:359px),(max-height:700px) and (max-width:767px){body.v3Les #finishScreen>.ninoArtSlot,body.v3Les #finishScreen>.ninoArtSlot img{max-height:88px}}
+body.v3Les #finishScreen .button.v3Second{background:transparent;color:var(--v3-ink)}
+
+/* iPad and phone (Focus Mode): the steps bar is fixed on top with the Focus menu in it; the map starts below it.
+   Focus Mode keeps its sheet, keyboard and safe-area handling; only offsets and paint change. */
+body.v3Les[data-focus-shell=true]{--v3-lesbar:60px}
+body.v3Les[data-focus-shell=true] .v3LesBar{position:fixed;z-index:32;left:0;right:0;top:calc(var(--focus-safe-top,0px) + var(--focus-vv-top,0px));height:var(--v3-lesbar);padding:0 64px 0 var(--v3-s2);gap:var(--v3-s3)}
+body.v3Les[data-focus-shell=true] #focusMenu{top:calc(10px + var(--focus-safe-top,0px) + var(--focus-vv-top,0px))}
+/* Menu as an icon button in the bar; its text stays in the DOM as the accessible name. */
+body.v3Les[data-focus-shell=true] #focusMenu>summary{width:44px;min-height:40px;padding:0;display:grid;place-items:center;font-size:0;border-radius:var(--v3-radius-btn)}
+body.v3Les[data-focus-shell=true] #focusMenu>summary::before{content:'☰';font:600 20px/1 var(--v3-font);color:var(--v3-ink)}
+body.v3Les[data-focus-mode=true] .mapCard{top:calc(var(--v3-lesbar) + 8px + var(--focus-safe-top,0px) + var(--focus-vv-top,0px));height:calc(var(--focus-layout-height,100svh) - var(--v3-lesbar) - 18px - var(--focus-safe-top,0px) - var(--focus-safe-bottom,0px))}
+/* Pause and finish inside the compact shell: the content starts below the fixed bar. */
+body.v3Les[data-focus-shell=true]:not([data-focus-mode=true]) main.layout{padding-top:calc(var(--v3-lesbar) + 12px + var(--focus-safe-top,0px))!important;margin-top:0!important}
+/* V2 scrolls the finish screen to the top; keep it clear of the fixed bar. */
+body.v3Les[data-focus-shell=true] #finishScreen{scroll-margin-top:calc(var(--v3-lesbar) + 12px + var(--focus-safe-top,0px))}
+/* The V2 status sentence stays for screen readers; the bar shows the count. */
+body.v3Les #focusLessonStatus{position:absolute!important;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+body.v3Les[data-focus-mode=true] .mapTools{display:flex;flex-wrap:nowrap;align-items:center;gap:var(--v3-s2);overflow-x:auto;scrollbar-width:none;padding:0 0 var(--v3-s2)}
+body.v3Les[data-focus-mode=true] .mapTools>*{flex:none;display:flex;gap:var(--v3-s2);margin:0}
+body.v3Les[data-focus-mode=true] .mapTools button{min-height:44px;padding:0 var(--v3-s3);white-space:nowrap;background:var(--v3-surface)}
+body.v3Les #focusAnswerSheet{background:var(--v3-surface);border:0;border-radius:var(--v3-radius-shell);box-shadow:0 -2px 6px rgba(29,37,35,.05),0 12px 40px rgba(29,37,35,.16);font-family:var(--v3-font);color:var(--v3-ink)}
+body.v3Les #focusAnswerSheet #prompt{font:var(--v3-title);color:var(--v3-ink);margin:0;background:none}
+body.v3Les #focusAnswerSheet #message{padding:var(--v3-s2) var(--v3-s3);font-size:16px;line-height:22px}
+body.v3Les #focusAnswerSheet #focusSheetToggle{min-height:44px;border-radius:var(--v3-radius-btn);border:0;box-shadow:inset 0 0 0 1px var(--v3-line);background:transparent;color:var(--v3-ink2);font:600 14px/1 var(--v3-font)}
+body.v3Les #focusLearnBar{background:var(--v3-surface);border:0;border-radius:var(--v3-radius-shell);box-shadow:0 12px 40px rgba(29,37,35,.16);font-family:var(--v3-font)}
+/* Narrow bars: the current step keeps its name; the others become ✓ or a number (names stay for screen readers). */
+@media (max-width:1023px){
+ .v3LesSteps{gap:6px;flex:1 1 auto}
+ .v3LesSteps li{flex:none;max-width:none}
+ .v3LesSteps li[aria-current]{flex:1 1 auto;min-width:0;max-width:240px}
+ .v3LesStep:not([data-state=now]) .v3LesStepName{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)}
+ .v3 .v3LesStep:not([data-state=now]){padding:0 10px}
+}
+@media (max-width:767px){
+ .v3LesTitle,.v3LesGold{display:none}
+ .v3 .v3LesBack .v3LesBackText{display:none}
+ body.v3Les[data-focus-shell=true] .v3LesBar{gap:6px;padding-left:4px}
+ .v3LesSteps{gap:4px}
+ .v3 .v3LesStep[data-state=now]{padding:0 8px;justify-content:center}
+ .v3LesStep[data-state=now] .v3LesMark{display:none}
+ .v3LesStep[data-state=now] .v3LesStepName{font-size:15px}
+ .v3LesCount{min-width:0;font-size:15px}
+}
+@media (max-width:359px){
+ .v3LesStep .v3LesStepName{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)}
+ .v3LesStep[data-state=now] .v3LesMark{display:grid}
+ .v3LesSteps li[aria-current]{flex:none}
+ .v3 .v3LesStep[data-state=now]{padding:0 10px}
+}
+
+@media (prefers-reduced-motion:reduce){body.v3Les .v3LesStep,body.v3Les #message{transition:none!important;animation:none!important}}

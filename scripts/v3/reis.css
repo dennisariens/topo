@@ -107,7 +107,10 @@ body.v3Home #journeyScreen,body.v3Home #journeyScreen>#routeHome{background:none
  .v3Top{order:0;padding:var(--v3-s4) var(--v3-s5) 0;gap:var(--v3-s3)}
  .v3Panel{order:1;padding:var(--v3-s4) var(--v3-s5)!important}
  .v3Panel h1{font-size:30px;line-height:36px}
- .v3MapStage{order:2;height:300px;padding:0 var(--v3-s4) var(--v3-s4)}
+ .v3MapStage{order:2;height:auto;padding:0 var(--v3-s4) var(--v3-s4);gap:var(--v3-s2)}
+ .v3Map{height:300px}
+ /* Phone: the style switch sits under the map, so it never covers the reference frame. */
+ .v3Switch{position:static;justify-self:end}
  .v3List{order:2;padding:var(--v3-s4) var(--v3-s2) var(--v3-s6);border-top:8px solid var(--v3-canvas)}
  .v3Rows{overflow:visible}
  .v3Side{order:3;position:fixed;left:0;right:0;bottom:0;z-index:50;flex-direction:row;justify-content:space-around;gap:0;padding:6px 8px calc(6px + env(safe-area-inset-bottom,0px));border-radius:0;border-top:1px solid var(--v3-line);background:color-mix(in srgb,var(--v3-surface) 92%,transparent);backdrop-filter:blur(14px)}

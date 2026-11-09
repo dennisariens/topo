@@ -20,7 +20,15 @@ Productrichting: een reis door Italië waarin je topografie leert. Rust van Appl
 - **Referentiekader:** het kader toont wat om Italië heen ligt (buurlanden, zeeën, Corsica, Noord-Afrika). Kader = Italië en de hoofdstukplekken + 14% marge, verruimd tot de vorm van het kaartvlak binnen het canvas (890 × 1235). Echte zee, alleen een smalle randfade (4%), geen radiale vervaging. Gecontroleerd door `mapFrameShort`.
 - **Schoolkaart** is de standaard en de lesvorm. **Reliëf** is een schakelaar met een leerfunctie (Bergen, Vulkanen, Apennijnen, Povlakte). Het reliëf komt uit gemeten hoogtedata, geregistreerd op hetzelfde frame (zie DISCOVERY_MAP.md). Nooit AI-beeld als kaart.
 
-## Tokens (`scripts/v3/tokens.css`, alleen binnen `.v3`)
+## Les (Golden Experience 01, beat 3–7)
+- **Opbouw desktop:** zijbalk (Reis actief) · lesstappen boven de kaart · kaart · taakpaneel rechts (vraag, invoer, feedback, één hoofdactie, pizzameter onderaan).
+- **iPad en telefoon:** Focus Mode blijft eigenaar. V3 zet een vaste lesbalk bovenaan (‹ Reis · stappen · teller; Menu als ☰); de kaart en de Focus-sheet schuiven eronder. Geen tabbalk tijdens een les.
+- **Lesstappen** (PR #64): `1 Ontdekken · 2 Aanwijzen · 3 Namen schrijven`, ★ Goud apart. Nu = accent + `aria-current="step"`, klaar = ✓ (herhaalbaar), later = grijs en uit. < 1024 px alleen de naam van de huidige stap; < 768 px geen titel en geen Goud; < 360 px alleen nummers.
+- **Eén hoofdactie per moment:** Volgende · de kaart · Controleer · Volgende · Bekijk in Reisboekje. Na een antwoord wordt Controleer stil.
+- **Feedback** is de V2-zin: goed groen met ✓, fout rustig rood. Beloningen zijn alleen de V2-momenten (pizza, Vespa-rit, stempel); V3 voegt geen teller of regel toe.
+- **Focus verandert nooit de maat.** Een `:focus`-regel mag alleen ring of kleur zetten, geen font, padding of hoogte; anders schuift de knop onder de vinger weg (gevonden op het afrondscherm). Check `bookTapLandsOnButton`.
+
+## Tokens (`scripts/v3/tokens.css`, binnen `.v3` en `body.v3Les`)
 | Groep | Waarde |
 | --- | --- |
 | Type | platformfont; 34/41 · 22/28 · 17/22 · 15/20 · 13/18 |

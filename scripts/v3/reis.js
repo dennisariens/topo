@@ -33,14 +33,18 @@
 
  /* Shell (built once) */
  const root=make('div','v3 v3Reis');root.dataset.v3='reis';
- const side=make('nav','v3Side');side.setAttribute('aria-label','Hoofdnavigatie');
- const brand=make('div','v3Brand');brand.append(make('b',null,'Topo'),make('i','v3Flag'));
- const portrait=make('div','v3Portrait');if(nino.guide)portrait.append(img(nino.guide));
- const navItem=(label,glyph,fn,current)=>{const b=btn('',fn,'v3Btn v3NavItem');b.append(icon(glyph),make('span',null,label));if(current)b.setAttribute('aria-current','page');return b;};
- const nav=make('div','v3NavList');
- nav.append(navItem('Reis','vespa',e=>e.stopPropagation(),true),navItem('Oefenen','point',press(()=>v2Nav('Oefenen'))),navItem('Beloningen','gold',e=>{e.stopPropagation();window.TopoBook?.open(e.currentTarget);}));
- const settings=navItem('Instellingen','v3gear',press(()=>$('.ninoSettingsButton')));settings.classList.add('v3Settings');
- side.append(brand,portrait,nav,settings);
+ // Sidebar: one component for Reis and the lesson. Inside a lesson, Reis returns to Reis through the V2 nav.
+ function makeSide(onReis){
+  const side=make('nav','v3Side');side.setAttribute('aria-label','Hoofdnavigatie');
+  const brand=make('div','v3Brand');brand.append(make('b',null,'Topo'),make('i','v3Flag'));
+  const portrait=make('div','v3Portrait');if(nino.guide)portrait.append(img(nino.guide));
+  const navItem=(label,glyph,fn,current)=>{const b=btn('',fn,'v3Btn v3NavItem');b.append(icon(glyph),make('span',null,label));if(current)b.setAttribute('aria-current','page');return b;};
+  const nav=make('div','v3NavList');
+  nav.append(navItem('Reis','vespa',onReis||(e=>e.stopPropagation()),true),navItem('Oefenen','point',press(()=>v2Nav('Oefenen'))),navItem('Beloningen','gold',e=>{e.stopPropagation();window.TopoBook?.open(e.currentTarget);}));
+  const settings=navItem('Instellingen','v3gear',press(()=>$('.ninoSettingsButton')));settings.classList.add('v3Settings');
+  side.append(brand,portrait,nav,settings);return side;
+ }
+ const side=makeSide();
  const list=make('section','v3List');list.setAttribute('aria-labelledby','v3ListTitle');
  const listTitle=make('h2',null,'Hoofdstukken');listTitle.id='v3ListTitle';const rows=make('ol','v3Rows');list.append(listTitle,rows);
  const main=make('section','v3Main');main.setAttribute('aria-labelledby','v3Title');
@@ -172,6 +176,6 @@
  const base=renderRouteHome;
  renderRouteHome=function(...a){const out=base.apply(this,a);try{render();chrome();}catch(e){console.error('V3 Reis',e);}return out;};
  document.body.classList.add('v3On');
- window.TOPO_V3={render,model,ui};
+ window.TOPO_V3={render,model,ui,makeSide,icon,make,btn,press,v2Card,v2Nav,STAGE,KIND,range};
  if(!$('#journeyScreen')?.classList.contains('hidden')){render();chrome();}
 })();

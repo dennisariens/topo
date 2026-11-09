@@ -1,4 +1,4 @@
-// TOPO V3 owner preview: the V2.0.2 app (index.html, unchanged) + the V3 Reis layer + labelled demo states.
+// TOPO V3 owner preview: the V2.0.2 app (index.html, unchanged) + the V3 layers (Reis, les) + labelled demo states.
 // Demo states live in memory only; the real browser storage is never read or written.
 // index.html itself never contains V3 or preview code.
 import {readFileSync,writeFileSync} from 'node:fs';
@@ -43,13 +43,13 @@ const states=`(function(){
   document.body.prepend(bar);
  });
 })();`;
-const barCss='.v3PreviewBar[hidden]{display:none!important}.v3PreviewBar{display:flex;align-items:center;gap:8px;padding:8px 12px;overflow-x:auto;white-space:nowrap;background:#073f3b;color:#f8f3e8;font:600 13px/1.2 -apple-system,system-ui,sans-serif}.v3PreviewBar strong{margin-right:4px}.v3PreviewBar a{display:inline-flex;align-items:center;min-height:36px;padding:0 12px;border-radius:9px;color:#f8f3e8;text-decoration:none;box-shadow:inset 0 0 0 1px #f8f3e855}.v3PreviewBar a[aria-current]{background:#f8f3e8;color:#073f3b}@media print{.v3PreviewBar{display:none}}.v3PreviewBar .v3Theme{margin-left:auto}.v3PreviewBar .v3Theme+.v3Theme{margin-left:0}body:has(.v3PreviewBar:not([hidden])) .v3Reis{--v3-bar:52px}body.v3Home .v3PreviewBar{position:static!important}body.v3Home{padding-bottom:0!important}body[data-focus-shell=true] .v3PreviewBar{position:fixed;left:0;right:0;bottom:0;z-index:70;padding-bottom:calc(8px + env(safe-area-inset-bottom,0px))}body[data-focus-shell=true]:has(.v3PreviewBar:not([hidden])){padding-bottom:64px}body[data-focus-mode=true] .v3PreviewBar{display:none}';
-const css=read('scripts/v3/tokens.css')+read('scripts/v3/reis.css')+barCss;
+const barCss='.v3PreviewBar[hidden]{display:none!important}.v3PreviewBar{display:flex;align-items:center;gap:8px;padding:8px 12px;overflow-x:auto;white-space:nowrap;background:#073f3b;color:#f8f3e8;font:600 13px/1.2 -apple-system,system-ui,sans-serif}.v3PreviewBar strong{margin-right:4px}.v3PreviewBar a{display:inline-flex;align-items:center;min-height:36px;padding:0 12px;border-radius:9px;color:#f8f3e8;text-decoration:none;box-shadow:inset 0 0 0 1px #f8f3e855}.v3PreviewBar a[aria-current]{background:#f8f3e8;color:#073f3b}@media print{.v3PreviewBar{display:none}}.v3PreviewBar .v3Theme{margin-left:auto}.v3PreviewBar .v3Theme+.v3Theme{margin-left:0}body:has(.v3PreviewBar:not([hidden])) :is(.v3Reis,.v3LesSideWrap){--v3-bar:52px}body:has(.v3PreviewBar:not([hidden])).v3Les{--v3-bar:52px}body.v3Home .v3PreviewBar{position:static!important}body.v3Home{padding-bottom:0!important}body[data-focus-shell=true] .v3PreviewBar{position:fixed;left:0;right:0;bottom:0;z-index:70;padding-bottom:calc(8px + env(safe-area-inset-bottom,0px))}body[data-focus-shell=true]:has(.v3PreviewBar:not([hidden])){padding-bottom:64px}body[data-focus-mode=true] .v3PreviewBar{display:none}';
+const css=read('scripts/v3/tokens.css')+read('scripts/v3/reis.css')+read('scripts/v3/les.css')+barCss;
 const head='<head>\n<script>\n'+states+'\n</script>\n<style>/* BEGIN TOPO V3 */'+css+'/* END TOPO V3 */</style>';
 const last=html.lastIndexOf('</body>');if(last<0||html.indexOf('<head>')<0)throw Error('Unexpected index.html shape');
 let out=html.replace('<head>',()=>head);
 const end=out.lastIndexOf('</body>');
-out=out.slice(0,end)+'<script>\n// BEGIN TOPO V3\n'+read('scripts/v3/reis.js')+'\n// END TOPO V3\n</script>\n'+out.slice(end);
+out=out.slice(0,end)+'<script>\n// BEGIN TOPO V3\n'+read('scripts/v3/reis.js')+'\n'+read('scripts/v3/les.js')+'\n// END TOPO V3\n</script>\n'+out.slice(end);
 out=out.replace(/<title>([^<]*)<\/title>/,(m,t)=>'<title>V3-preview Reis · '+t+'</title>');
 const file='output/html/TOPO-V3-Reis-Preview.html';
 writeFileSync(new URL(file,root),out);

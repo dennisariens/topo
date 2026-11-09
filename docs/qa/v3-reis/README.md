@@ -1,6 +1,6 @@
 # V3 golden screen 1 — Reis / hoofdstukkeuze (v3b)
 
-**Kandidaat:** `output/html/TOPO-V3-Reis-Preview.html`, SHA256 `e15c104961ff3676f344efdc3068e5cbd528a9bcbbff533d2a2ba84894a7b528`. Wordt niet meer in Git gezet (41 MB per iteratie); reproduceer met `node scripts/build-v3-preview.mjs` op deze commit. Basis: ongewijzigde V2.0.2-`index.html` (`3aced3c3…304f5a`) + `scripts/v3/`.
+**Kandidaat:** `output/html/TOPO-V3-Reis-Preview.html`, SHA256 `d948643fe8ea732f7689b13fe7f5fd2bff6020bdc48c34c40252bc5da0eab3e9` (bevat nu ook de les, zie [v3-les](../v3-les/README.md)). Wordt niet meer in Git gezet (41 MB per iteratie); reproduceer met `node scripts/build-v3-preview.mjs` op deze commit. Basis: ongewijzigde V2.0.2-`index.html` (`3aced3c3…304f5a`) + `scripts/v3/`.
 **Openen:** direct via `file://`. Standen: `#nieuw`, `#bezig`, `#afgerond`, `#alles`; thema `…/viola`; naast elkaar `#naast-bezig`. Demostanden staan alleen in het geheugen.
 **Oordeel:** technisch geslaagd · visueel zelf beoordeeld · **eigenaar: open** · Hermes: open. Geen merge, deployment of downloadvervanging.
 
@@ -30,5 +30,5 @@ Browser: Chrome, macOS, headless (`python3 scripts/qa-v3-reis.py`; versie in `re
 1. **Levendigheid.** De render oogt rijker door een fijn reliëf en een landschapsachtergrond. Een scherper reliëf vraagt fijnere hoogtetegels: een apart spoor met bron, licentie en een groottelimiet. Achtergrondlandschap alleen met canoniek artwork.
 2. **Navigatie.** De zijbalk toont alleen wat werkt: Reis, Oefenen, Beloningen (Reisboekje), Instellingen. Gold, Kaart en Voortgang volgen per scherm.
 3. **Accent.** Besloten 9-11: Italia standaard; Viola alleen ter vergelijking in de preview.
-4. **Overgang.** Na Reis zie je nog de V2-schil (lessen, Oefenen). Dat verandert pas in stap 2.
+4. **Overgang.** De les heeft nu een V3-laag ([v3-les](../v3-les/README.md)); terug naar Reis via de zijbalk of **‹ Reis**. Oefenen blijft de V2-schil. Op telefoon staat de kaartschakelaar onder de kaart.
 5. **Dagdoel, kennis-paspoort, slim rondje** staan niet op Reis; voorstel: Voortgang en Oefenen.

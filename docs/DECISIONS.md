@@ -288,3 +288,11 @@ Reservekopieën en reset horen in het algemene instellingenmenu. Wis voortgang b
 - **Zee en rand:** de echte zeekleur van de kaart vult het vlak; alleen een smalle randfade (4%). Buiten het canvas lopen de echte landvormen door; geen nieuwe geometrie.
 - **Schakelaar** Schoolkaart/Reliëf staat onderaan het kaartvlak (op zee), zodat hij geen buurland afdekt.
 - **Check:** `qa-v3-reis.py` meet per formaat en stand of buurlanden, eilanden, Noord-Afrika en zeeën ≥ 80% van hun contrast houden (`mapFrameShort`).
+
+## 2026-11-09 — Golden Experience 01, beat 3–7 als V3-laag
+
+- **Besluit:** de les (Ontdekken → Aanwijzen → Namen schrijven → Feedback → beloning → Reisboekje) krijgt V3 als presentatielaag (`scripts/v3/les.js`, `les.css`) over de ongewijzigde V2-les. De canonieke `#quiz`, `#message`, `#next`, kaart en handlers blijven de enige les; V3 leest `state`, schrijft niets en drukt V2-knoppen. Geen tweede beoordelaar, geen nieuwe beloningsregels. Spec: `docs/v3/GE01.md`.
+- **Focus Mode blijft eigenaar** van iPad en telefoon. V3-regels voor de lesbalk hangen aan `data-focus-shell` (ook bij pauze en afronding), de kaartverschuiving aan `data-focus-mode`.
+- **Reis na een les** kiest het hoofdstuk van de les of het volgende, niet een eerdere rijkeuze.
+- **Les:** een `:focus`-regel die de lettergrootte veranderde, liet op telefoon de tik op **Bekijk in Reisboekje** verloren gaan (knop schoof 59 px). Regel: focus verandert nooit de maat; check `bookTapLandsOnButton`.
+- **Check:** `qa-v3-les.py` speelt hoofdstuk 2 met echte tikken op vijf formaten; bewijs in `docs/qa/v3-les/`.

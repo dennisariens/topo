@@ -1,7 +1,8 @@
 /* TOPO V3 design tokens. Source of truth: docs/DESIGN_SYSTEM.md (V3).
    Neutral, calm structure for every country; the country theme sets accent and flag only.
    Scoped to .v3 so V2 screens keep their own styles until each screen is migrated. */
-.v3{
+/* Variables: inside .v3 screens, and on body.v3Les so the V2 lesson nodes V3 styles in place can use them. */
+.v3,body.v3Les{
  --v3-font:-apple-system,BlinkMacSystemFont,"SF Pro Text","Segoe UI",system-ui,sans-serif;
  --v3-large:700 34px/41px var(--v3-font);
  --v3-title:700 22px/28px var(--v3-font);
@@ -19,9 +20,9 @@
  /* Country theme: Italia (default). */
  --v3-accent:#b9502f;--v3-accent-press:#9c4126;--v3-accent-soft:#f6e6dd;--v3-accent-ink:#fff;
  --v3-flag:linear-gradient(90deg,#1f8a4c 0 33.3%,#f4f1ea 0 66.6%,#c8382c 0);
- font:var(--v3-body);color:var(--v3-ink);-webkit-font-smoothing:antialiased;
 }
-.v3[data-theme=viola]{--v3-accent:#5b45e0;--v3-accent-press:#4834c4;--v3-accent-soft:#ebe7fd}
+.v3{font:var(--v3-body);color:var(--v3-ink);-webkit-font-smoothing:antialiased}
+.v3[data-theme=viola],body.v3Les[data-v3-theme=viola]{--v3-accent:#5b45e0;--v3-accent-press:#4834c4;--v3-accent-soft:#ebe7fd}
 .v3 *,.v3 *::before,.v3 *::after{box-sizing:border-box}
 .v3 :is(h1,h2,h3,p,ol,ul){margin:0;padding:0}
 .v3 :is(ol,ul){list-style:none}

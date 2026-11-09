@@ -1,0 +1,103 @@
+{
+ "title": "TOPO V3 renderassets",
+ "brief": "docs/v3/ARTWORK_BRIEF.md",
+ "source": "OpenAI beeldgeneratie (ChatGPT), aangeleverd door de eigenaar op 2026-11-09",
+ "assets": [
+  {
+   "id": "BG-01",
+   "status": "ter beoordeling eigenaar",
+   "note": "Lanczos-upscale 1586x992 -> 2880x1800, geen generatieve upscale; iets zacht op DPR 2",
+   "master": {
+    "path": "assets/v3/render/masters/BG-01-toscane.png",
+    "bytes": 2159222,
+    "sha256": "36fbc4645d07fc60073faf305cdf44701dfdd81bd24f3a9dfc44d5c1c2961c9a",
+    "size": [
+     1586,
+     992
+    ],
+    "alpha": false
+   },
+   "export": {
+    "path": "assets/v3/render/exports/BG-01-toscane-2880.webp",
+    "bytes": 433106,
+    "sha256": "c07c938d990250fdcd3a370b90f74c7cb8d9a422f4b720dbeb5e93850309b9c0",
+    "size": [
+     2880,
+     1800
+    ],
+    "alpha": false
+   }
+  },
+  {
+   "id": "NINO-PORTRET",
+   "status": "ter beoordeling eigenaar; Hermes modelcheck open",
+   "note": "tweede versie na correctie (jonger, ronder, blik naar kijker); achtergrond verwijderd (flood fill op wit + 1,2 px zachte rand); lichte rand bij krullen links alleen zichtbaar op donker",
+   "master": {
+    "path": "assets/v3/render/masters/NINO-PORTRET.png",
+    "bytes": 2199209,
+    "sha256": "e956bea057535cb4150317b14385e971cbe1cafc7276d7958657fcaf3e227dc9",
+    "size": [
+     1122,
+     1402
+    ],
+    "alpha": false
+   },
+   "master_alpha": {
+    "path": "assets/v3/render/masters/NINO-PORTRET-alpha.png",
+    "bytes": 2540337,
+    "sha256": "d45c216484b51c00e5071f95b934ace5a2c894530bef0408d4bc204bb7c6be05",
+    "size": [
+     1122,
+     1402
+    ],
+    "alpha": true
+   },
+   "export": {
+    "path": "assets/v3/render/exports/NINO-PORTRET-512.webp",
+    "bytes": 52864,
+    "sha256": "b0d5dbfe1f82068b025ca08270b8cc8edfd2a57c41746f68cae9eaeb2921acd0",
+    "size": [
+     512,
+     512
+    ],
+    "alpha": true
+   }
+  },
+  {
+   "id": "SCENE-ROMA",
+   "chapter": "city2",
+   "status": "ter beoordeling eigenaar; Hermes modelcheck open",
+   "note": "tweede versie na correctie (helm, outfit, Vespa zonder vlag); jasje donkerder blauw dan canoniek werkshirt",
+   "master": {
+    "path": "assets/v3/render/masters/SCENE-ROMA.png",
+    "bytes": 2732736,
+    "sha256": "0dd39083112266fb4e644f11bc081fc775699b3db49a8eb11829e551434e55ce",
+    "size": [
+     1672,
+     941
+    ],
+    "alpha": false
+   },
+   "export_kop": {
+    "path": "assets/v3/render/exports/SCENE-ROMA-kop-1672.webp",
+    "bytes": 346432,
+    "sha256": "c9d9412066ebc2a8815ba681142384fa67000b9c439518319376da2a202c8043",
+    "size": [
+     1672,
+     941
+    ],
+    "alpha": false
+   },
+   "export_mini": {
+    "path": "assets/v3/render/exports/SCENE-ROMA-mini-480.webp",
+    "bytes": 36158,
+    "sha256": "2c6cb3bcca60b075c383448dc10a5a92bf1b56336ea2f5ab0810709586e3f88d",
+    "size": [
+     480,
+     270
+    ],
+    "alpha": false
+   }
+  }
+ ]
+}

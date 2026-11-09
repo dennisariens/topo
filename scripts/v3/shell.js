@@ -39,7 +39,8 @@
    case 'rewards':toHome();return show('rewards','v3RewardsTitle');
    case 'voortgang':toHome();return show('voortgang','v3VoortgangTitle');
    case 'oefenen':
-    if(!atHome()&&lessonTab()==='oefenen')return;
+    // Tapping Oefenen again during an exercise goes back to the choice (as the back control does).
+    if(!atHome()&&lessonTab()==='oefenen'){toHome();suspended=null;return show('oefenen','v3OefenenTitle');}
     toHome();
     if(suspended==='oefenen'&&FREE.includes(state.mode)){suspended=null;return V.v2Nav('Oefenen')?.click();}
     if(suspended==='smart'&&state.route?.active?.kind==='smart'&&!state.route.active.done){suspended=null;return $('#routeContinue')?.click();}

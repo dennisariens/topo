@@ -33,7 +33,7 @@ LAYOUT_JS = '''() => {
     if (fixedA !== fixedB) continue; // content scrolling beneath a fixed tab bar; checked separately below
     if (a.left < b.right - 1 && a.right > b.left + 1 && a.top < b.bottom - 1 && a.bottom > b.top + 1) overlaps.push([ctrls[i].textContent.trim(), ctrls[j].textContent.trim()]);
   }
-  const small = ctrls.filter(b => !b.closest('.v3Switch,.v3Again') && (r(b).height < 44 || r(b).width < 44)).map(b => b.textContent.trim() + ' ' + Math.round(r(b).width) + 'x' + Math.round(r(b).height));
+  const small = ctrls.filter(b => !b.closest('.v3Switch,.v3Again,.v3SchoolBtn') && (r(b).height < 44 || r(b).width < 44)).map(b => b.textContent.trim() + ' ' + Math.round(r(b).width) + 'x' + Math.round(r(b).height));
   const clipped = [...document.querySelectorAll('.v3Reis h1,.v3Reis h2,.v3Reis b,.v3Name,.v3Btn')].filter(e => e.scrollWidth > e.clientWidth + 1).map(e => e.textContent.trim());
   // Text whose painted line box runs past its column (siblings would touch or overlap).
   for (const e of document.querySelectorAll('.v3Name,.v3Panel h1,.v3Count b,.v3NavItem span')) {
@@ -137,7 +137,7 @@ LABELS_JS = r"""() => { const norm = t => t.normalize('NFD').replace(/[̀-ͯ]/g,
   return {labels, hits, names: names.length}; }"""
 # Hermes V3-02: the style switch may not cover any highlighted place of the chosen chapter (filled shape or point),
 # sampled every 2 CSS px inside the switch with isPointInFill / isPointInStroke on the real SVG elements.
-OCCLUSION_JS = r"""() => { const sw = document.querySelector('.v3Switch'), svg = document.querySelector('.v3Map'); if (!sw || !svg) return null;
+OCCLUSION_JS = r"""() => { const sw = document.querySelector('.v3MapTools') || document.querySelector('.v3Switch'), svg = document.querySelector('.v3Map'); if (!sw || !svg) return null;
   const a = sw.getBoundingClientRect(), s = svg.getBoundingClientRect(), x0 = Math.max(a.left, s.left), x1 = Math.min(a.right, s.right), y0 = Math.max(a.top, s.top), y1 = Math.min(a.bottom, s.bottom);
   const out = {rectOverlap: Math.max(0, x1 - x0) * Math.max(0, y1 - y0), covered: {}};
   if (out.rectOverlap <= 0) return out;

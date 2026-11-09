@@ -1,0 +1,507 @@
+{
+ "html": "output/html/TOPO-V3-Reis-Preview.html",
+ "sha256": "48c01e142cb9d1ec0887dd3df6af27a44d4c2c9780e4a57363221991315978b8",
+ "indexSha256": "3aced3c31259011b0af2947c78f71965cb4beb2e88c69d1663e61792b0304f5a",
+ "runs": {
+  "desktop": {
+   "reis": {
+    "open": false,
+    "v3Buttons": [
+     "v3SchoolBtn"
+    ],
+    "v2Buttons": 0,
+    "mode": "route",
+    "q": null,
+    "active": "ninoSchoolMapOnly v3On v3Home v3Shell",
+    "answer": "",
+    "sel": null
+   },
+   "reisClose": {
+    "open": false,
+    "v3Buttons": [
+     "v3SchoolBtn"
+    ],
+    "v2Buttons": 0,
+    "mode": "route",
+    "q": null,
+    "active": "v3Btn v3School v3SchoolBtn",
+    "answer": "",
+    "sel": null
+   },
+   "reisS": true,
+   "les": {
+    "open": false,
+    "v3Buttons": [
+     "v3LesSchool"
+    ],
+    "v2Buttons": 0,
+    "mode": "route",
+    "q": "city-7",
+    "active": "ninoSchoolMapOnly v3On v3Shell lessonFocus v3Les",
+    "answer": "",
+    "sel": null
+   },
+   "ontdekken": {
+    "open": false,
+    "v3Buttons": [
+     "v3LesSchool"
+    ],
+    "v2Buttons": 0,
+    "mode": "learn",
+    "q": null,
+    "active": "ninoSchoolMapOnly v3On v3Shell v3Les",
+    "answer": "",
+    "sel": null
+   },
+   "schrijven": {
+    "open": false,
+    "v3Buttons": [
+     "v3LesSchool"
+    ],
+    "v2Buttons": 0,
+    "mode": "write",
+    "q": "city-2",
+    "active": "answer",
+    "answer": "Pisas",
+    "sel": [
+     1,
+     4,
+     "backward"
+    ]
+   },
+   "toetsTab": {
+    "open": false,
+    "v3Buttons": [],
+    "v2Buttons": 0,
+    "mode": "write",
+    "q": "city-2",
+    "active": "ninoSchoolMapOnly v3On v3Shell v3Home",
+    "answer": "Pisas",
+    "sel": null
+   },
+   "toetsRun": {
+    "open": false,
+    "v3Buttons": [],
+    "v2Buttons": 0,
+    "mode": "exam",
+    "q": "city-4",
+    "active": "ninoSchoolMapOnly v3On v3Shell v3Les",
+    "answer": "",
+    "sel": null
+   },
+   "goud": {
+    "open": false,
+    "v3Buttons": [],
+    "v2Buttons": 0,
+    "mode": "route",
+    "q": "city-13",
+    "active": "ninoSchoolMapOnly v3On v3Shell lessonFocus ninoGoldRound v3Les",
+    "answer": "",
+    "sel": null,
+    "kind": "gold"
+   },
+   "pageErrors": []
+  },
+  "ipad-liggend": {
+   "reis": {
+    "open": false,
+    "v3Buttons": [
+     "v3SchoolBtn"
+    ],
+    "v2Buttons": 0,
+    "mode": "route",
+    "q": null,
+    "active": "ninoSchoolMapOnly v3On v3Home v3Shell",
+    "answer": "",
+    "sel": null
+   },
+   "reisClose": {
+    "open": false,
+    "v3Buttons": [
+     "v3SchoolBtn"
+    ],
+    "v2Buttons": 0,
+    "mode": "route",
+    "q": null,
+    "active": "v3Btn v3School v3SchoolBtn",
+    "answer": "",
+    "sel": null
+   },
+   "reisS": true,
+   "les": {
+    "open": false,
+    "v3Buttons": [
+     "v3LesSchool"
+    ],
+    "v2Buttons": 0,
+    "mode": "route",
+    "q": "city-12",
+    "active": "ninoSchoolMapOnly v3On v3Shell lessonFocus v3Les",
+    "answer": "",
+    "sel": null
+   },
+   "ontdekken": {
+    "open": false,
+    "v3Buttons": [
+     "v3LesSchool"
+    ],
+    "v2Buttons": 0,
+    "mode": "learn",
+    "q": null,
+    "active": "ninoSchoolMapOnly v3On v3Shell v3Les",
+    "answer": "",
+    "sel": null
+   },
+   "schrijven": {
+    "open": false,
+    "v3Buttons": [
+     "v3LesSchool"
+    ],
+    "v2Buttons": 0,
+    "mode": "write",
+    "q": "city-3",
+    "active": "answer",
+    "answer": "Pisas",
+    "sel": [
+     1,
+     4,
+     "backward"
+    ]
+   },
+   "toetsTab": {
+    "open": false,
+    "v3Buttons": [],
+    "v2Buttons": 0,
+    "mode": "write",
+    "q": "city-3",
+    "active": "ninoSchoolMapOnly v3On v3Shell v3Home",
+    "answer": "Pisas",
+    "sel": null
+   },
+   "toetsRun": {
+    "open": false,
+    "v3Buttons": [],
+    "v2Buttons": 0,
+    "mode": "exam",
+    "q": "city-6",
+    "active": "ninoSchoolMapOnly v3On v3Shell v3Les",
+    "answer": "",
+    "sel": null
+   },
+   "goud": {
+    "open": false,
+    "v3Buttons": [],
+    "v2Buttons": 0,
+    "mode": "route",
+    "q": "city-18",
+    "active": "ninoSchoolMapOnly v3On v3Shell lessonFocus ninoGoldRound v3Les",
+    "answer": "",
+    "sel": null,
+    "kind": "gold"
+   },
+   "pageErrors": []
+  },
+  "ipad-staand": {
+   "reis": {
+    "open": false,
+    "v3Buttons": [
+     "v3SchoolBtn"
+    ],
+    "v2Buttons": 0,
+    "mode": "route",
+    "q": null,
+    "active": "ninoSchoolMapOnly v3On v3Home v3Shell",
+    "answer": "",
+    "sel": null
+   },
+   "reisClose": {
+    "open": false,
+    "v3Buttons": [
+     "v3SchoolBtn"
+    ],
+    "v2Buttons": 0,
+    "mode": "route",
+    "q": null,
+    "active": "v3Btn v3School v3SchoolBtn",
+    "answer": "",
+    "sel": null
+   },
+   "reisS": true,
+   "les": {
+    "open": false,
+    "v3Buttons": [
+     "v3LesSchool"
+    ],
+    "v2Buttons": 0,
+    "mode": "route",
+    "q": "city-12",
+    "active": "ninoSchoolMapOnly v3On v3Shell lessonFocus v3Les",
+    "answer": "",
+    "sel": null
+   },
+   "ontdekken": {
+    "open": false,
+    "v3Buttons": [
+     "v3LesSchool"
+    ],
+    "v2Buttons": 0,
+    "mode": "learn",
+    "q": null,
+    "active": "ninoSchoolMapOnly v3On v3Shell v3Les",
+    "answer": "",
+    "sel": null
+   },
+   "schrijven": {
+    "open": false,
+    "v3Buttons": [
+     "v3LesSchool"
+    ],
+    "v2Buttons": 0,
+    "mode": "write",
+    "q": "city-5",
+    "active": "answer",
+    "answer": "Pisas",
+    "sel": [
+     1,
+     4,
+     "backward"
+    ]
+   },
+   "toetsTab": {
+    "open": false,
+    "v3Buttons": [],
+    "v2Buttons": 0,
+    "mode": "write",
+    "q": "city-5",
+    "active": "ninoSchoolMapOnly v3On v3Shell v3Home",
+    "answer": "Pisas",
+    "sel": null
+   },
+   "toetsRun": {
+    "open": false,
+    "v3Buttons": [],
+    "v2Buttons": 0,
+    "mode": "exam",
+    "q": "city-1",
+    "active": "ninoSchoolMapOnly v3On v3Shell v3Les",
+    "answer": "",
+    "sel": null
+   },
+   "goud": {
+    "open": false,
+    "v3Buttons": [],
+    "v2Buttons": 0,
+    "mode": "route",
+    "q": "city-13",
+    "active": "ninoSchoolMapOnly v3On v3Shell lessonFocus ninoGoldRound v3Les",
+    "answer": "",
+    "sel": null,
+    "kind": "gold"
+   },
+   "pageErrors": []
+  },
+  "telefoon": {
+   "reis": {
+    "open": false,
+    "v3Buttons": [
+     "v3SchoolBtn"
+    ],
+    "v2Buttons": 0,
+    "mode": "route",
+    "q": null,
+    "active": "ninoSchoolMapOnly v3On v3Home v3Shell",
+    "answer": "",
+    "sel": null
+   },
+   "reisClose": {
+    "open": false,
+    "v3Buttons": [
+     "v3SchoolBtn"
+    ],
+    "v2Buttons": 0,
+    "mode": "route",
+    "q": null,
+    "active": "v3Btn v3School v3SchoolBtn",
+    "answer": "",
+    "sel": null
+   },
+   "reisS": true,
+   "les": {
+    "open": false,
+    "v3Buttons": [
+     "v3LesSchool"
+    ],
+    "v2Buttons": 0,
+    "mode": "route",
+    "q": "city-11",
+    "active": "ninoSchoolMapOnly v3On v3Shell lessonFocus v3Les",
+    "answer": "",
+    "sel": null
+   },
+   "ontdekken": {
+    "open": false,
+    "v3Buttons": [
+     "v3LesSchool"
+    ],
+    "v2Buttons": 0,
+    "mode": "learn",
+    "q": null,
+    "active": "ninoSchoolMapOnly v3On v3Shell v3Les",
+    "answer": "",
+    "sel": null
+   },
+   "schrijven": {
+    "open": false,
+    "v3Buttons": [
+     "v3LesSchool"
+    ],
+    "v2Buttons": 0,
+    "mode": "write",
+    "q": "city-2",
+    "active": "answer",
+    "answer": "Pisas",
+    "sel": [
+     1,
+     4,
+     "backward"
+    ]
+   },
+   "toetsTab": {
+    "open": false,
+    "v3Buttons": [],
+    "v2Buttons": 0,
+    "mode": "write",
+    "q": "city-2",
+    "active": "ninoSchoolMapOnly v3On v3Shell v3Home",
+    "answer": "Pisas",
+    "sel": null
+   },
+   "toetsRun": {
+    "open": false,
+    "v3Buttons": [],
+    "v2Buttons": 0,
+    "mode": "exam",
+    "q": "city-2",
+    "active": "ninoSchoolMapOnly v3On v3Shell v3Les",
+    "answer": "",
+    "sel": null
+   },
+   "goud": {
+    "open": false,
+    "v3Buttons": [],
+    "v2Buttons": 0,
+    "mode": "route",
+    "q": "city-16",
+    "active": "ninoSchoolMapOnly v3On v3Shell lessonFocus ninoGoldRound v3Les",
+    "answer": "",
+    "sel": null,
+    "kind": "gold"
+   },
+   "pageErrors": []
+  },
+  "telefoon-320": {
+   "reis": {
+    "open": false,
+    "v3Buttons": [
+     "v3SchoolBtn"
+    ],
+    "v2Buttons": 0,
+    "mode": "route",
+    "q": null,
+    "active": "ninoSchoolMapOnly v3On v3Home v3Shell",
+    "answer": "",
+    "sel": null
+   },
+   "reisClose": {
+    "open": false,
+    "v3Buttons": [
+     "v3SchoolBtn"
+    ],
+    "v2Buttons": 0,
+    "mode": "route",
+    "q": null,
+    "active": "v3Btn v3School v3SchoolBtn",
+    "answer": "",
+    "sel": null
+   },
+   "reisS": true,
+   "les": {
+    "open": false,
+    "v3Buttons": [
+     "v3LesSchool"
+    ],
+    "v2Buttons": 0,
+    "mode": "route",
+    "q": "city-9",
+    "active": "ninoSchoolMapOnly v3On v3Shell lessonFocus v3Les",
+    "answer": "",
+    "sel": null
+   },
+   "ontdekken": {
+    "open": false,
+    "v3Buttons": [
+     "v3LesSchool"
+    ],
+    "v2Buttons": 0,
+    "mode": "learn",
+    "q": null,
+    "active": "ninoSchoolMapOnly v3On v3Shell v3Les",
+    "answer": "",
+    "sel": null
+   },
+   "schrijven": {
+    "open": false,
+    "v3Buttons": [
+     "v3LesSchool"
+    ],
+    "v2Buttons": 0,
+    "mode": "write",
+    "q": "city-5",
+    "active": "answer",
+    "answer": "Pisas",
+    "sel": [
+     1,
+     4,
+     "backward"
+    ]
+   },
+   "toetsTab": {
+    "open": false,
+    "v3Buttons": [],
+    "v2Buttons": 0,
+    "mode": "write",
+    "q": "city-5",
+    "active": "ninoSchoolMapOnly v3On v3Shell v3Home",
+    "answer": "Pisas",
+    "sel": null
+   },
+   "toetsRun": {
+    "open": false,
+    "v3Buttons": [],
+    "v2Buttons": 0,
+    "mode": "exam",
+    "q": "city-1",
+    "active": "ninoSchoolMapOnly v3On v3Shell v3Les",
+    "answer": "",
+    "sel": null
+   },
+   "goud": {
+    "open": false,
+    "v3Buttons": [],
+    "v2Buttons": 0,
+    "mode": "route",
+    "q": "city-18",
+    "active": "ninoSchoolMapOnly v3On v3Shell lessonFocus ninoGoldRound v3Les",
+    "answer": "",
+    "sel": null,
+    "kind": "gold"
+   },
+   "pageErrors": []
+  }
+ },
+ "errors": [],
+ "summary": {
+  "viewports": 5,
+  "pass": true
+ }
+}

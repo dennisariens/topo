@@ -387,3 +387,11 @@ Reservekopieën en reset horen in het algemene instellingenmenu. Wis voortgang b
 - **Oefenen:** kiest de vorm (Ontdekken, Aanwijzen, Namen schrijven, Slim rondje) en de groep (11 hoofdstukken, Alles, Mijn fouten). Start drukt de bestaande V2-knoppen in: de modus-tab, `#groupSelect` en `#smartStart`.
 - **Terugkeer:** een tab buiten de les drukt V2 "Reis", dat de les bewaart. Oefenen en Toets herstellen een onderbroken oefening of toets via V2 "Oefenen". Een routeles gaat verder via Ga verder. Vraag, concept en selectie blijven gelijk.
 - **Nieuwe drempels of opslag:** geen. De telefoontabbalk staat onder 768 px, de grens die Focus Mode al gebruikt; de rail staat op iPad vanaf 768 px.
+
+## 2026-11-09 — V3.0 Schoolbladknop en toets S
+
+- **Knoppen:** op Reis staat de knop **Schoolblad** naast Schoolkaart/Reliëf. In de leskop staat hij bij Ontdekken, Aanwijzen en Namen schrijven, zowel in routelessen als bij Oefenen; op de telefoon alleen als icoon. De V2-schoolbladknoppen zijn onder de V3-shell verborgen. De V3-knop drukt de gewone V2-opener (die naast de kaartwerkbalk), zodat het V2-venster met zoom, verschuiven, Escape en focusbeheer ongewijzigd blijft. De Reis- en dock-openers van V2 zitten binnen klikhandlers van de route-home en worden niet gebruikt.
+- **Toets S:** opent het schoolblad overal, behalve in Toets (instellen, toets en resultaat) en in de Gouden proef. Daar is ook geen knop. S doet niets tijdens typen (input, textarea, select), met Ctrl/Cmd/Alt, bij herhaling of als er al een dialoog open is.
+- **Focus:** na het sluiten gaat de focus terug naar het antwoordveld, met concept en selectie, als dat vóór het openen focus had. Anders gaat hij naar de V3-knop die het venster opende.
+- **Tab Oefenen opnieuw tikken** tijdens een oefening gaat terug naar de Oefenen-keuze, net als de terugknop. Tijdens een lopende toets doet een tik op Toets niets, zodat een toets niet per ongeluk stopt.
+- **Nieuwe drempels of opslag:** geen.

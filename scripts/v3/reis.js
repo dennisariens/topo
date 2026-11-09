@@ -27,7 +27,7 @@
  // One extra symbol in the existing sprite: a gear for settings.
  const defs=document.querySelector('#topoIconSprite defs');
  if(defs&&!document.getElementById('topo-v3gear')){const g=document.createElementNS(SVGNS,'symbol');g.id='topo-v3gear';g.setAttribute('viewBox','0 0 32 32');g.innerHTML='<circle cx="16" cy="16" r="4.5"/><path d="M16 3v4m0 18v4M3 16h4m18 0h4M6.8 6.8l2.8 2.8m12.8 12.8 2.8 2.8M6.8 25.2l2.8-2.8m12.8-12.8 2.8-2.8"/>';defs.append(g);
-  for(const [id,d] of [['v3test','<rect x="6" y="4" width="20" height="25" rx="3"/><path d="M12 4h8v4h-8zM11 15l3 3 6-6M11 23h10"/>'],['v3progress','<path d="M4 28h24M8 24V16m8 8V8m8 16V12"/>'],['v3smart','<path d="M16 3v7m0 12v7M3 16h7m12 0h7M7 7l4 4m10 10 4 4m0-18-4 4M11 21l-4 4"/>']]){const y=document.createElementNS(SVGNS,'symbol');y.id='topo-'+id;y.setAttribute('viewBox','0 0 32 32');y.innerHTML=d;defs.append(y);}}
+  for(const [id,d] of [['v3test','<rect x="6" y="4" width="20" height="25" rx="3"/><path d="M12 4h8v4h-8zM11 15l3 3 6-6M11 23h10"/>'],['v3progress','<path d="M4 28h24M8 24V16m8 8V8m8 16V12"/>'],['v3sheet','<path d="M8 3h11l6 6v20H8z"/><path d="M19 3v6h6M12 15h9M12 19h9M12 23h6"/>'],['v3smart','<path d="M16 3v7m0 12v7M3 16h7m12 0h7M7 7l4 4m10 10 4 4m0-18-4 4M11 21l-4 4"/>']]){const y=document.createElementNS(SVGNS,'symbol');y.id='topo-'+id;y.setAttribute('viewBox','0 0 32 32');y.innerHTML=d;defs.append(y);}}
 
  function model(){
   const chapters=ROUTE_CHAPTERS.map((c,index)=>{const r=TopoRoute.record(state.route,c.id);return {...c,index,r,open:TopoRoute.unlocked(state.route,ROUTE_CHAPTERS,c.id),done:r.stage===3,gold:r.goldAt>0};});
@@ -216,7 +216,9 @@
   let sw=stage.querySelector('.v3Switch');
   if(!sw){sw=make('div','v3Switch');sw.setAttribute('role','group');sw.setAttribute('aria-label','Kaartstijl');
    for(const [k,label] of [[false,'Schoolkaart'],[true,'Reliëf']]){const b=btn(label,e=>{e.stopPropagation();ui.relief=k;render();});b.dataset.relief=String(k);sw.append(b);}
-   stage.append(sw);}
+   // Map tools: Schoolblad (V3.0 § 5, schoolblad.js) beside the map style switch.
+   const tools=make('div','v3MapTools');tools.append(sw);stage.append(tools);}
+  const tools=sw.parentNode;if(window.TOPO_V3?.schoolblad&&!tools.querySelector('.v3SchoolBtn'))tools.prepend(window.TOPO_V3.schoolblad.button('v3SchoolBtn'));
   sw.querySelectorAll('button').forEach(b=>b.setAttribute('aria-pressed',String(b.dataset.relief===String(ui.relief))));
  }
 

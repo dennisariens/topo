@@ -3,7 +3,7 @@
 **Doel:** TOPO V3 op het niveau van de conceptrenders van de eigenaar (9 november 2026): een rustige app die zweeft boven een Italiaans landschap, met een levende reliëfkaart, rijke hoofdstukbeelden, Nino als portret en kleine kleurrijke iconen. Besluit: `DECISIONS.md` 2026-11-09 › Renderniveau.
 
 **Vaste regels**
-- Vaste Nino-kenmerken: gezicht, groene helm met bril, rode sjaal, blauw bovenstuk, rugzak, rode Vespa. Snit van shirt of jasje mag per scène variëren; het portret is exact canoniek (gesloten blauw werkshirt).
+- Vaste Nino-kenmerken: gezicht, groene helm met bril, rode sjaal, blauw bovenstuk, rugzak, rode Vespa. Overal hetzelfde gesloten blauwe werkshirt met kraag, dichtgeknoopt, zonder wit shirt eronder (besluit 9-11).
 - Bronresolutie van de beeldgenerator (±1586 px breed) is geaccepteerd; budgetten in KiB.
 - De kaart blijft echte geografie: reliëf uit gemeten hoogtedata, nooit een gegenereerd beeld als kaart. Geen genummerde pins op de kaart.
 - Nino komt alleen vanaf de canonieke referenties (`assets/nino/exports/nino-*.webp`, `assets/nino/references/`). Elk nieuw Nino-beeld wordt naast de referentie gelegd en apart goedgekeurd: gezicht, haar, helm met bril, rode sjaal, blauw shirt, rugzak.

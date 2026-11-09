@@ -30,13 +30,18 @@ body.v3Home #journeyScreen,body.v3Home #journeyScreen>#routeHome{background:none
 /* List */
 .v3List h2{font:var(--v3-title);padding:0 var(--v3-s3) var(--v3-s4)}
 .v3Rows{display:grid;gap:2px;overflow:auto;min-height:0;padding:2px}
-.v3Row{appearance:none;width:100%;display:grid;grid-template-columns:32px minmax(0,1fr) auto;align-items:center;gap:var(--v3-s3);min-height:48px;padding:6px var(--v3-s3);border:0;border-radius:var(--v3-radius-btn);background:transparent;color:var(--v3-ink);font:var(--v3-headline);font-weight:500;text-align:left;cursor:pointer;-webkit-tap-highlight-color:transparent}
+.v3Row{appearance:none;width:100%;display:grid;grid-template-columns:32px 64px minmax(0,1fr) auto;align-items:center;gap:var(--v3-s3);min-height:48px;padding:6px var(--v3-s3);border:0;border-radius:var(--v3-radius-btn);background:transparent;color:var(--v3-ink);font:var(--v3-headline);font-weight:500;text-align:left;cursor:pointer;-webkit-tap-highlight-color:transparent}
 .v3Row:hover{background:var(--v3-surface2)}
 .v3Row[aria-pressed=true]{background:var(--v3-accent-soft);font-weight:700}
 .v3Num{width:32px;height:32px;display:grid;place-items:center;border-radius:9px;background:var(--v3-surface2);font:600 15px/1 var(--v3-font);color:var(--v3-ink2)}
 .v3Row[data-state=now] .v3Num{background:var(--v3-accent);color:var(--v3-accent-ink)}
 .v3Row[data-state=locked]{color:var(--v3-ink2)}
 .v3Name{overflow-wrap:break-word}
+/* Chapter miniature: #75 scene, landscape only; chapters without a scene show their chapter icon (temporary). */
+.v3Thumb{display:block;width:64px;height:40px;border-radius:9px;overflow:hidden;background:var(--v3-accent-soft);box-shadow:inset 0 0 0 1px rgba(29,37,35,.06)}
+.v3Thumb img{display:block;width:100%;height:100%;object-fit:cover}
+.v3ThumbIcon img{object-fit:contain;padding:3px;box-sizing:border-box}
+.v3Row[data-state=locked] .v3Thumb img{filter:grayscale(.3);opacity:.72}
 .nw{white-space:nowrap}
 .v3End{display:flex;align-items:center;color:var(--v3-locked)}
 .v3End .v3Icon{width:20px;height:20px}
@@ -76,16 +81,46 @@ body.v3Home #journeyScreen,body.v3Home #journeyScreen>#routeHome{background:none
 .v3Map[data-focus=areas] .v3Hit:not(.lineTarget){fill:var(--v3-accent)!important;fill-opacity:.55!important;stroke:var(--v3-accent)!important;stroke-width:2.5}
 .v3Map[data-focus=areas] .v3Hit.lineTarget,.v3Map .v3Hit.river{stroke:var(--v3-accent)!important;stroke-opacity:1!important}
 .v3Map [pointer-events],.v3Map *{pointer-events:none}
-.v3Map[data-relief=on] .atlasTerrain{display:block!important;opacity:.96}
-.v3Map[data-relief=on] .land{fill:#e9dfbd;fill-opacity:.12}
-.v3Map[data-relief=on] .italy{fill:#f3dfa5;fill-opacity:.12}
-.v3Map[data-relief=on] .country:not(.v3Hit){fill:#e8d7b4;fill-opacity:.23}
+.v3Map{background:var(--v3-sea-school)}
+.v3Map[data-relief=on]{--v3-relief-sea:#a8d8ee;background:var(--v3-relief-sea)}
+.v3Map[data-relief=on] .sea{fill:var(--v3-relief-sea)!important}
+.v3Map[data-relief=on] .atlasWaterTexture{display:none!important}
+.v3Map[data-relief=on] .atlasTerrain{display:block!important;opacity:1;filter:url(#v3-relief-palette)}
+/* Coast: a lighter coastal zone in the sea, a soft shadow under the land and a white rim (render palette). */
+.v3Map :is(.v3CoastGlow,.v3LandShadow,.v3LandBase){display:none}
+.v3Map[data-relief=on] .v3LandBase{display:block;fill:#86b553}
+.v3Map[data-relief=on] .v3CoastGlow{display:block;fill:#e4f6fc;stroke:#d6f1fa;stroke-width:22;stroke-linejoin:round;filter:url(#v3-coast-glow);opacity:.95}
+.v3Map[data-relief=on] .v3LandShadow{display:block;fill:#1f5670;opacity:.32;filter:url(#v3-land-shadow)}
+.v3Map[data-relief=on] :is(.land,.italy){stroke:#fff!important;stroke-width:1.5px!important;stroke-opacity:1!important;vector-effect:non-scaling-stroke;paint-order:stroke}
+.v3Map[data-relief=on] :is(.land,.italy){fill-opacity:0}
+.v3Map[data-relief=on] .country:not(.v3Hit){fill:#fff;fill-opacity:.06}
 .v3Map[data-relief=on] .zone:not(.v3Hit){fill-opacity:.11}
 .v3Map[data-relief=on] .water:not(.v3Hit){fill-opacity:.16}
 
+/* Stijlbeeld (renderniveau, ≥ 768 px): the V2 panorama full-bleed behind the app (temporary, until BG-01);
+   the app window floats above it as soft frosted glass, radius 24, soft shadow. Phone: no backdrop. */
+@media (min-width:768px){
+ body.v3Home{background:#e9e4da var(--v3-pano,none) left center/cover no-repeat fixed}
+ body.v3Home .layout.routeHomeLayout,body.v3Home #journeyScreen{background:none!important}
+ .v3Reis{--v3-glass:color-mix(in srgb,var(--v3-surface) 80%,transparent);grid-template-columns:212px 372px minmax(0,1fr);width:calc(100% - 2*var(--v3-s6));height:calc(100dvh - var(--v3-bar,0px) - 2*var(--v3-s6));max-width:1560px;margin:var(--v3-s6) auto;padding:0;border-radius:var(--v3-radius-shell);overflow:hidden;
+  background:var(--v3-glass);-webkit-backdrop-filter:blur(26px) saturate(1.25);backdrop-filter:blur(26px) saturate(1.25);
+  box-shadow:0 30px 80px -20px rgba(28,40,44,.35),0 4px 14px rgba(28,40,44,.10),inset 0 0 0 1px rgba(255,255,255,.55)}
+ .v3Reis>*{background:transparent}
+ .v3Side{border-radius:0;border-right:1px solid rgba(255,255,255,.5);background:color-mix(in srgb,var(--v3-surface) 28%,transparent)}
+ .v3List{border-right:0;padding-right:var(--v3-s4)}
+ .v3Rows{background:color-mix(in srgb,var(--v3-surface) 82%,transparent);border-radius:var(--v3-radius);padding:var(--v3-s1);box-shadow:0 1px 2px rgba(28,40,44,.06)}
+ .v3Main{border-radius:0;grid-template-columns:minmax(0,1fr) 300px;background:color-mix(in srgb,var(--v3-surface) 55%,transparent)}
+ .v3Row{grid-template-columns:28px 60px minmax(0,1fr) auto;gap:10px;min-height:52px;font-size:16px}
+ .v3Num{width:28px;height:28px;font-size:14px}
+ .v3Thumb{width:60px;height:38px}
+}
+@media (min-width:768px) and (prefers-reduced-transparency:reduce),(min-width:768px) and (prefers-contrast:more){
+ .v3Reis{background:var(--v3-surface);-webkit-backdrop-filter:none;backdrop-filter:none}
+}
 /* iPad landscape / small desktop: icon sidebar. */
 @media (max-width:1279px){
  .v3Reis{grid-template-columns:76px 270px minmax(0,1fr)}
+ @media (min-width:768px){.v3Reis{grid-template-columns:76px 318px minmax(0,1fr)}.v3Main{grid-template-columns:minmax(0,1fr) 260px}.v3Row{grid-template-columns:28px 48px minmax(0,1fr) auto;gap:8px}.v3Thumb{width:48px;height:32px}}
  .v3Side{padding:var(--v3-s5) var(--v3-s2);align-items:center}
  .v3Brand b{font-size:20px}.v3Portrait{width:56px;height:56px}
  .v3 .v3NavItem{justify-content:center;padding:0;width:52px}

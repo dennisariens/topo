@@ -1,0 +1,1198 @@
+{
+ "html": "output/html/TOPO-V3-Reis-Preview.html",
+ "htmlSha256": "c7972188fa9816dddb620b696dd5931c5e9e2b5e7f6c25edb5fd53bec43310db",
+ "indexSha256": "3aced3c31259011b0af2947c78f71965cb4beb2e88c69d1663e61792b0304f5a",
+ "runs": {
+  "desktop-italia": {
+   "backdrop": {
+    "image": true,
+    "isV2Panorama": true,
+    "size": "cover",
+    "attachment": "fixed"
+   },
+   "window": {
+    "radius": "24px",
+    "backdropFilter": "blur(26px) saturate(1.25)",
+    "shadow": true,
+    "bgAlpha": 0.8,
+    "gaps": [
+     24,
+     24,
+     76,
+     24
+    ]
+   },
+   "rows": [
+    {
+     "chapter": "city1",
+     "icon": false,
+     "natural": [
+      480,
+      270
+     ],
+     "box": [
+      60,
+      38
+     ],
+     "nameClipped": false,
+     "nameLines": 1,
+     "sha256": "26865876290044697872bb748d2b55e09fc826989a6fc37e190914147bbda03c",
+     "iconIsChapterIcon": false
+    },
+    {
+     "chapter": "city2",
+     "icon": true,
+     "natural": [
+      512,
+      512
+     ],
+     "box": [
+      60,
+      38
+     ],
+     "nameClipped": false,
+     "nameLines": 1,
+     "iconIsChapterIcon": true
+    },
+    {
+     "chapter": "city3",
+     "icon": true,
+     "natural": [
+      512,
+      512
+     ],
+     "box": [
+      60,
+      38
+     ],
+     "nameClipped": false,
+     "nameLines": 1,
+     "iconIsChapterIcon": true
+    },
+    {
+     "chapter": "city4",
+     "icon": true,
+     "natural": [
+      512,
+      512
+     ],
+     "box": [
+      60,
+      38
+     ],
+     "nameClipped": false,
+     "nameLines": 1,
+     "iconIsChapterIcon": true
+    },
+    {
+     "chapter": "islands",
+     "icon": false,
+     "natural": [
+      480,
+      270
+     ],
+     "box": [
+      60,
+      38
+     ],
+     "nameClipped": false,
+     "nameLines": 1,
+     "sha256": "2b027de93af0155f076f3fc5a68be460807a668496c5dcc2464668718a4a3b9d",
+     "iconIsChapterIcon": false
+    },
+    {
+     "chapter": "mountains",
+     "icon": false,
+     "natural": [
+      480,
+      270
+     ],
+     "box": [
+      60,
+      38
+     ],
+     "nameClipped": false,
+     "nameLines": 1,
+     "sha256": "88d66acc264653b3f4354455b5c2887a0027b0da05a66e73758fc7ddb8f40171",
+     "iconIsChapterIcon": false
+    },
+    {
+     "chapter": "volcanoes",
+     "icon": false,
+     "natural": [
+      480,
+      270
+     ],
+     "box": [
+      60,
+      38
+     ],
+     "nameClipped": false,
+     "nameLines": 1,
+     "sha256": "21f4566b9d32909526c2f542bc6b0e12a2d4beb47b32ee1c7194644de68b287d",
+     "iconIsChapterIcon": false
+    },
+    {
+     "chapter": "regions",
+     "icon": false,
+     "natural": [
+      480,
+      270
+     ],
+     "box": [
+      60,
+      38
+     ],
+     "nameClipped": false,
+     "nameLines": 1,
+     "sha256": "482349912963d3cf50a775d06ec70c892a42a3cbda29fa066464911d73176b45",
+     "iconIsChapterIcon": false
+    },
+    {
+     "chapter": "countries",
+     "icon": false,
+     "natural": [
+      480,
+      270
+     ],
+     "box": [
+      60,
+      38
+     ],
+     "nameClipped": false,
+     "nameLines": 1,
+     "sha256": "3f4ce7e6caa69edbc7fd9a6ed345c570a4e22bf262bc6750a3fd5065ee64bd89",
+     "iconIsChapterIcon": false
+    },
+    {
+     "chapter": "seas",
+     "icon": false,
+     "natural": [
+      480,
+      270
+     ],
+     "box": [
+      60,
+      38
+     ],
+     "nameClipped": false,
+     "nameLines": 1,
+     "sha256": "c0147c714afc3a07cc744cbbb6b1cb3f816e0c728835dbdb66711bd4e3929a60",
+     "iconIsChapterIcon": false
+    },
+    {
+     "chapter": "rivers",
+     "icon": false,
+     "natural": [
+      480,
+      270
+     ],
+     "box": [
+      60,
+      38
+     ],
+     "nameClipped": false,
+     "nameLines": 1,
+     "sha256": "8f1517c7d5a84a598dac8c14d0351c06bd972048d9835602a6df42f7e6357f5b",
+     "iconIsChapterIcon": false
+    }
+   ],
+   "relief": {
+    "mode": "on",
+    "terrain": "block",
+    "filter": "url(\"#v3-relief-palette\")",
+    "pressed": "Reliëf"
+   },
+   "coast": {
+    "stroke": "rgb(255, 255, 255)",
+    "width": "1.5px",
+    "glow": "block",
+    "shadow": "block",
+    "base": "block",
+    "copies": 57,
+    "copiesWithId": 0,
+    "landShapes": 19
+   },
+   "targets": {
+    "live": 46,
+    "clone": 46
+   },
+   "primaryAboveFold": true,
+   "horizontalOverflow": false,
+   "geometry": {
+    "same": 46,
+    "diff": [],
+    "total": 46
+   },
+   "theme": "#b9502f",
+   "errors": []
+  },
+  "desktop-viola": {
+   "backdrop": {
+    "image": true,
+    "isV2Panorama": true,
+    "size": "cover",
+    "attachment": "fixed"
+   },
+   "window": {
+    "radius": "24px",
+    "backdropFilter": "blur(26px) saturate(1.25)",
+    "shadow": true,
+    "bgAlpha": 0.8,
+    "gaps": [
+     24,
+     24,
+     76,
+     24
+    ]
+   },
+   "rows": [
+    {
+     "chapter": "city1",
+     "icon": false,
+     "natural": [
+      480,
+      270
+     ],
+     "box": [
+      60,
+      38
+     ],
+     "nameClipped": false,
+     "nameLines": 1,
+     "sha256": "26865876290044697872bb748d2b55e09fc826989a6fc37e190914147bbda03c",
+     "iconIsChapterIcon": false
+    },
+    {
+     "chapter": "city2",
+     "icon": true,
+     "natural": [
+      512,
+      512
+     ],
+     "box": [
+      60,
+      38
+     ],
+     "nameClipped": false,
+     "nameLines": 1,
+     "iconIsChapterIcon": true
+    },
+    {
+     "chapter": "city3",
+     "icon": true,
+     "natural": [
+      512,
+      512
+     ],
+     "box": [
+      60,
+      38
+     ],
+     "nameClipped": false,
+     "nameLines": 1,
+     "iconIsChapterIcon": true
+    },
+    {
+     "chapter": "city4",
+     "icon": true,
+     "natural": [
+      512,
+      512
+     ],
+     "box": [
+      60,
+      38
+     ],
+     "nameClipped": false,
+     "nameLines": 1,
+     "iconIsChapterIcon": true
+    },
+    {
+     "chapter": "islands",
+     "icon": false,
+     "natural": [
+      480,
+      270
+     ],
+     "box": [
+      60,
+      38
+     ],
+     "nameClipped": false,
+     "nameLines": 1,
+     "sha256": "2b027de93af0155f076f3fc5a68be460807a668496c5dcc2464668718a4a3b9d",
+     "iconIsChapterIcon": false
+    },
+    {
+     "chapter": "mountains",
+     "icon": false,
+     "natural": [
+      480,
+      270
+     ],
+     "box": [
+      60,
+      38
+     ],
+     "nameClipped": false,
+     "nameLines": 1,
+     "sha256": "88d66acc264653b3f4354455b5c2887a0027b0da05a66e73758fc7ddb8f40171",
+     "iconIsChapterIcon": false
+    },
+    {
+     "chapter": "volcanoes",
+     "icon": false,
+     "natural": [
+      480,
+      270
+     ],
+     "box": [
+      60,
+      38
+     ],
+     "nameClipped": false,
+     "nameLines": 1,
+     "sha256": "21f4566b9d32909526c2f542bc6b0e12a2d4beb47b32ee1c7194644de68b287d",
+     "iconIsChapterIcon": false
+    },
+    {
+     "chapter": "regions",
+     "icon": false,
+     "natural": [
+      480,
+      270
+     ],
+     "box": [
+      60,
+      38
+     ],
+     "nameClipped": false,
+     "nameLines": 1,
+     "sha256": "482349912963d3cf50a775d06ec70c892a42a3cbda29fa066464911d73176b45",
+     "iconIsChapterIcon": false
+    },
+    {
+     "chapter": "countries",
+     "icon": false,
+     "natural": [
+      480,
+      270
+     ],
+     "box": [
+      60,
+      38
+     ],
+     "nameClipped": false,
+     "nameLines": 1,
+     "sha256": "3f4ce7e6caa69edbc7fd9a6ed345c570a4e22bf262bc6750a3fd5065ee64bd89",
+     "iconIsChapterIcon": false
+    },
+    {
+     "chapter": "seas",
+     "icon": false,
+     "natural": [
+      480,
+      270
+     ],
+     "box": [
+      60,
+      38
+     ],
+     "nameClipped": false,
+     "nameLines": 1,
+     "sha256": "c0147c714afc3a07cc744cbbb6b1cb3f816e0c728835dbdb66711bd4e3929a60",
+     "iconIsChapterIcon": false
+    },
+    {
+     "chapter": "rivers",
+     "icon": false,
+     "natural": [
+      480,
+      270
+     ],
+     "box": [
+      60,
+      38
+     ],
+     "nameClipped": false,
+     "nameLines": 1,
+     "sha256": "8f1517c7d5a84a598dac8c14d0351c06bd972048d9835602a6df42f7e6357f5b",
+     "iconIsChapterIcon": false
+    }
+   ],
+   "relief": {
+    "mode": "on",
+    "terrain": "block",
+    "filter": "url(\"#v3-relief-palette\")",
+    "pressed": "Reliëf"
+   },
+   "coast": {
+    "stroke": "rgb(255, 255, 255)",
+    "width": "1.5px",
+    "glow": "block",
+    "shadow": "block",
+    "base": "block",
+    "copies": 57,
+    "copiesWithId": 0,
+    "landShapes": 19
+   },
+   "targets": {
+    "live": 46,
+    "clone": 46
+   },
+   "primaryAboveFold": true,
+   "horizontalOverflow": false,
+   "geometry": {
+    "same": 46,
+    "diff": [],
+    "total": 46
+   },
+   "theme": "#5b45e0",
+   "errors": []
+  },
+  "ipad-landscape-italia": {
+   "backdrop": {
+    "image": true,
+    "isV2Panorama": true,
+    "size": "cover",
+    "attachment": "fixed"
+   },
+   "window": {
+    "radius": "24px",
+    "backdropFilter": "blur(26px) saturate(1.25)",
+    "shadow": true,
+    "bgAlpha": 0.8,
+    "gaps": [
+     24,
+     24,
+     76,
+     24
+    ]
+   },
+   "rows": [
+    {
+     "chapter": "city1",
+     "icon": false,
+     "natural": [
+      480,
+      270
+     ],
+     "box": [
+      48,
+      32
+     ],
+     "nameClipped": false,
+     "nameLines": 1,
+     "sha256": "26865876290044697872bb748d2b55e09fc826989a6fc37e190914147bbda03c",
+     "iconIsChapterIcon": false
+    },
+    {
+     "chapter": "city2",
+     "icon": true,
+     "natural": [
+      512,
+      512
+     ],
+     "box": [
+      48,
+      32
+     ],
+     "nameClipped": false,
+     "nameLines": 1,
+     "iconIsChapterIcon": true
+    },
+    {
+     "chapter": "city3",
+     "icon": true,
+     "natural": [
+      512,
+      512
+     ],
+     "box": [
+      48,
+      32
+     ],
+     "nameClipped": false,
+     "nameLines": 1,
+     "iconIsChapterIcon": true
+    },
+    {
+     "chapter": "city4",
+     "icon": true,
+     "natural": [
+      512,
+      512
+     ],
+     "box": [
+      48,
+      32
+     ],
+     "nameClipped": false,
+     "nameLines": 1,
+     "iconIsChapterIcon": true
+    },
+    {
+     "chapter": "islands",
+     "icon": false,
+     "natural": [
+      480,
+      270
+     ],
+     "box": [
+      48,
+      32
+     ],
+     "nameClipped": false,
+     "nameLines": 1,
+     "sha256": "2b027de93af0155f076f3fc5a68be460807a668496c5dcc2464668718a4a3b9d",
+     "iconIsChapterIcon": false
+    },
+    {
+     "chapter": "mountains",
+     "icon": false,
+     "natural": [
+      480,
+      270
+     ],
+     "box": [
+      48,
+      32
+     ],
+     "nameClipped": false,
+     "nameLines": 1,
+     "sha256": "88d66acc264653b3f4354455b5c2887a0027b0da05a66e73758fc7ddb8f40171",
+     "iconIsChapterIcon": false
+    },
+    {
+     "chapter": "volcanoes",
+     "icon": false,
+     "natural": [
+      480,
+      270
+     ],
+     "box": [
+      48,
+      32
+     ],
+     "nameClipped": false,
+     "nameLines": 1,
+     "sha256": "21f4566b9d32909526c2f542bc6b0e12a2d4beb47b32ee1c7194644de68b287d",
+     "iconIsChapterIcon": false
+    },
+    {
+     "chapter": "regions",
+     "icon": false,
+     "natural": [
+      480,
+      270
+     ],
+     "box": [
+      48,
+      32
+     ],
+     "nameClipped": false,
+     "nameLines": 1,
+     "sha256": "482349912963d3cf50a775d06ec70c892a42a3cbda29fa066464911d73176b45",
+     "iconIsChapterIcon": false
+    },
+    {
+     "chapter": "countries",
+     "icon": false,
+     "natural": [
+      480,
+      270
+     ],
+     "box": [
+      48,
+      32
+     ],
+     "nameClipped": false,
+     "nameLines": 1,
+     "sha256": "3f4ce7e6caa69edbc7fd9a6ed345c570a4e22bf262bc6750a3fd5065ee64bd89",
+     "iconIsChapterIcon": false
+    },
+    {
+     "chapter": "seas",
+     "icon": false,
+     "natural": [
+      480,
+      270
+     ],
+     "box": [
+      48,
+      32
+     ],
+     "nameClipped": false,
+     "nameLines": 1,
+     "sha256": "c0147c714afc3a07cc744cbbb6b1cb3f816e0c728835dbdb66711bd4e3929a60",
+     "iconIsChapterIcon": false
+    },
+    {
+     "chapter": "rivers",
+     "icon": false,
+     "natural": [
+      480,
+      270
+     ],
+     "box": [
+      48,
+      32
+     ],
+     "nameClipped": false,
+     "nameLines": 1,
+     "sha256": "8f1517c7d5a84a598dac8c14d0351c06bd972048d9835602a6df42f7e6357f5b",
+     "iconIsChapterIcon": false
+    }
+   ],
+   "relief": {
+    "mode": "on",
+    "terrain": "block",
+    "filter": "url(\"#v3-relief-palette\")",
+    "pressed": "Reliëf"
+   },
+   "coast": {
+    "stroke": "rgb(255, 255, 255)",
+    "width": "1.5px",
+    "glow": "block",
+    "shadow": "block",
+    "base": "block",
+    "copies": 57,
+    "copiesWithId": 0,
+    "landShapes": 19
+   },
+   "targets": {
+    "live": 46,
+    "clone": 46
+   },
+   "primaryAboveFold": true,
+   "horizontalOverflow": false,
+   "geometry": {
+    "same": 46,
+    "diff": [],
+    "total": 46
+   },
+   "theme": "#b9502f",
+   "errors": []
+  },
+  "ipad-landscape-viola": {
+   "backdrop": {
+    "image": true,
+    "isV2Panorama": true,
+    "size": "cover",
+    "attachment": "fixed"
+   },
+   "window": {
+    "radius": "24px",
+    "backdropFilter": "blur(26px) saturate(1.25)",
+    "shadow": true,
+    "bgAlpha": 0.8,
+    "gaps": [
+     24,
+     24,
+     76,
+     24
+    ]
+   },
+   "rows": [
+    {
+     "chapter": "city1",
+     "icon": false,
+     "natural": [
+      480,
+      270
+     ],
+     "box": [
+      48,
+      32
+     ],
+     "nameClipped": false,
+     "nameLines": 1,
+     "sha256": "26865876290044697872bb748d2b55e09fc826989a6fc37e190914147bbda03c",
+     "iconIsChapterIcon": false
+    },
+    {
+     "chapter": "city2",
+     "icon": true,
+     "natural": [
+      512,
+      512
+     ],
+     "box": [
+      48,
+      32
+     ],
+     "nameClipped": false,
+     "nameLines": 1,
+     "iconIsChapterIcon": true
+    },
+    {
+     "chapter": "city3",
+     "icon": true,
+     "natural": [
+      512,
+      512
+     ],
+     "box": [
+      48,
+      32
+     ],
+     "nameClipped": false,
+     "nameLines": 1,
+     "iconIsChapterIcon": true
+    },
+    {
+     "chapter": "city4",
+     "icon": true,
+     "natural": [
+      512,
+      512
+     ],
+     "box": [
+      48,
+      32
+     ],
+     "nameClipped": false,
+     "nameLines": 1,
+     "iconIsChapterIcon": true
+    },
+    {
+     "chapter": "islands",
+     "icon": false,
+     "natural": [
+      480,
+      270
+     ],
+     "box": [
+      48,
+      32
+     ],
+     "nameClipped": false,
+     "nameLines": 1,
+     "sha256": "2b027de93af0155f076f3fc5a68be460807a668496c5dcc2464668718a4a3b9d",
+     "iconIsChapterIcon": false
+    },
+    {
+     "chapter": "mountains",
+     "icon": false,
+     "natural": [
+      480,
+      270
+     ],
+     "box": [
+      48,
+      32
+     ],
+     "nameClipped": false,
+     "nameLines": 1,
+     "sha256": "88d66acc264653b3f4354455b5c2887a0027b0da05a66e73758fc7ddb8f40171",
+     "iconIsChapterIcon": false
+    },
+    {
+     "chapter": "volcanoes",
+     "icon": false,
+     "natural": [
+      480,
+      270
+     ],
+     "box": [
+      48,
+      32
+     ],
+     "nameClipped": false,
+     "nameLines": 1,
+     "sha256": "21f4566b9d32909526c2f542bc6b0e12a2d4beb47b32ee1c7194644de68b287d",
+     "iconIsChapterIcon": false
+    },
+    {
+     "chapter": "regions",
+     "icon": false,
+     "natural": [
+      480,
+      270
+     ],
+     "box": [
+      48,
+      32
+     ],
+     "nameClipped": false,
+     "nameLines": 1,
+     "sha256": "482349912963d3cf50a775d06ec70c892a42a3cbda29fa066464911d73176b45",
+     "iconIsChapterIcon": false
+    },
+    {
+     "chapter": "countries",
+     "icon": false,
+     "natural": [
+      480,
+      270
+     ],
+     "box": [
+      48,
+      32
+     ],
+     "nameClipped": false,
+     "nameLines": 1,
+     "sha256": "3f4ce7e6caa69edbc7fd9a6ed345c570a4e22bf262bc6750a3fd5065ee64bd89",
+     "iconIsChapterIcon": false
+    },
+    {
+     "chapter": "seas",
+     "icon": false,
+     "natural": [
+      480,
+      270
+     ],
+     "box": [
+      48,
+      32
+     ],
+     "nameClipped": false,
+     "nameLines": 1,
+     "sha256": "c0147c714afc3a07cc744cbbb6b1cb3f816e0c728835dbdb66711bd4e3929a60",
+     "iconIsChapterIcon": false
+    },
+    {
+     "chapter": "rivers",
+     "icon": false,
+     "natural": [
+      480,
+      270
+     ],
+     "box": [
+      48,
+      32
+     ],
+     "nameClipped": false,
+     "nameLines": 1,
+     "sha256": "8f1517c7d5a84a598dac8c14d0351c06bd972048d9835602a6df42f7e6357f5b",
+     "iconIsChapterIcon": false
+    }
+   ],
+   "relief": {
+    "mode": "on",
+    "terrain": "block",
+    "filter": "url(\"#v3-relief-palette\")",
+    "pressed": "Reliëf"
+   },
+   "coast": {
+    "stroke": "rgb(255, 255, 255)",
+    "width": "1.5px",
+    "glow": "block",
+    "shadow": "block",
+    "base": "block",
+    "copies": 57,
+    "copiesWithId": 0,
+    "landShapes": 19
+   },
+   "targets": {
+    "live": 46,
+    "clone": 46
+   },
+   "primaryAboveFold": true,
+   "horizontalOverflow": false,
+   "geometry": {
+    "same": 46,
+    "diff": [],
+    "total": 46
+   },
+   "theme": "#5b45e0",
+   "errors": []
+  },
+  "phone-italia": {
+   "backdrop": {
+    "image": false,
+    "isV2Panorama": false,
+    "size": "auto",
+    "attachment": "scroll"
+   },
+   "window": {
+    "radius": "0px",
+    "backdropFilter": "none",
+    "shadow": false,
+    "bgAlpha": 1,
+    "gaps": [
+     0,
+     0,
+     52,
+     -616
+    ]
+   },
+   "rows": [
+    {
+     "chapter": "city1",
+     "icon": false,
+     "natural": [
+      480,
+      270
+     ],
+     "box": [
+      64,
+      40
+     ],
+     "nameClipped": false,
+     "nameLines": 1,
+     "sha256": "26865876290044697872bb748d2b55e09fc826989a6fc37e190914147bbda03c",
+     "iconIsChapterIcon": false
+    },
+    {
+     "chapter": "city2",
+     "icon": true,
+     "natural": [
+      512,
+      512
+     ],
+     "box": [
+      64,
+      40
+     ],
+     "nameClipped": false,
+     "nameLines": 1,
+     "iconIsChapterIcon": true
+    },
+    {
+     "chapter": "city3",
+     "icon": true,
+     "natural": [
+      512,
+      512
+     ],
+     "box": [
+      64,
+      40
+     ],
+     "nameClipped": false,
+     "nameLines": 1,
+     "iconIsChapterIcon": true
+    },
+    {
+     "chapter": "city4",
+     "icon": true,
+     "natural": [
+      512,
+      512
+     ],
+     "box": [
+      64,
+      40
+     ],
+     "nameClipped": false,
+     "nameLines": 1,
+     "iconIsChapterIcon": true
+    },
+    {
+     "chapter": "islands",
+     "icon": false,
+     "natural": [
+      480,
+      270
+     ],
+     "box": [
+      64,
+      40
+     ],
+     "nameClipped": false,
+     "nameLines": 1,
+     "sha256": "2b027de93af0155f076f3fc5a68be460807a668496c5dcc2464668718a4a3b9d",
+     "iconIsChapterIcon": false
+    },
+    {
+     "chapter": "mountains",
+     "icon": false,
+     "natural": [
+      480,
+      270
+     ],
+     "box": [
+      64,
+      40
+     ],
+     "nameClipped": false,
+     "nameLines": 1,
+     "sha256": "88d66acc264653b3f4354455b5c2887a0027b0da05a66e73758fc7ddb8f40171",
+     "iconIsChapterIcon": false
+    },
+    {
+     "chapter": "volcanoes",
+     "icon": false,
+     "natural": [
+      480,
+      270
+     ],
+     "box": [
+      64,
+      40
+     ],
+     "nameClipped": false,
+     "nameLines": 1,
+     "sha256": "21f4566b9d32909526c2f542bc6b0e12a2d4beb47b32ee1c7194644de68b287d",
+     "iconIsChapterIcon": false
+    },
+    {
+     "chapter": "regions",
+     "icon": false,
+     "natural": [
+      480,
+      270
+     ],
+     "box": [
+      64,
+      40
+     ],
+     "nameClipped": false,
+     "nameLines": 1,
+     "sha256": "482349912963d3cf50a775d06ec70c892a42a3cbda29fa066464911d73176b45",
+     "iconIsChapterIcon": false
+    },
+    {
+     "chapter": "countries",
+     "icon": false,
+     "natural": [
+      480,
+      270
+     ],
+     "box": [
+      64,
+      40
+     ],
+     "nameClipped": false,
+     "nameLines": 1,
+     "sha256": "3f4ce7e6caa69edbc7fd9a6ed345c570a4e22bf262bc6750a3fd5065ee64bd89",
+     "iconIsChapterIcon": false
+    },
+    {
+     "chapter": "seas",
+     "icon": false,
+     "natural": [
+      480,
+      270
+     ],
+     "box": [
+      64,
+      40
+     ],
+     "nameClipped": false,
+     "nameLines": 1,
+     "sha256": "c0147c714afc3a07cc744cbbb6b1cb3f816e0c728835dbdb66711bd4e3929a60",
+     "iconIsChapterIcon": false
+    },
+    {
+     "chapter": "rivers",
+     "icon": false,
+     "natural": [
+      480,
+      270
+     ],
+     "box": [
+      64,
+      40
+     ],
+     "nameClipped": false,
+     "nameLines": 1,
+     "sha256": "8f1517c7d5a84a598dac8c14d0351c06bd972048d9835602a6df42f7e6357f5b",
+     "iconIsChapterIcon": false
+    }
+   ],
+   "relief": {
+    "mode": "on",
+    "terrain": "block",
+    "filter": "url(\"#v3-relief-palette\")",
+    "pressed": "Reliëf"
+   },
+   "coast": {
+    "stroke": "rgb(255, 255, 255)",
+    "width": "1.5px",
+    "glow": "block",
+    "shadow": "block",
+    "base": "block",
+    "copies": 57,
+    "copiesWithId": 0,
+    "landShapes": 19
+   },
+   "targets": {
+    "live": 46,
+    "clone": 46
+   },
+   "primaryAboveFold": true,
+   "horizontalOverflow": false,
+   "geometry": {
+    "same": 46,
+    "diff": [],
+    "total": 46
+   },
+   "theme": "#b9502f",
+   "errors": []
+  }
+ },
+ "errors": [],
+ "browser": "157.0.8103.38",
+ "reducedTransparency": {
+  "radius": "24px",
+  "backdropFilter": "none",
+  "shadow": true,
+  "bgAlpha": 1,
+  "gaps": [
+   24,
+   24,
+   76,
+   24
+  ]
+ },
+ "pairs": {
+  "italia-viola-desktop": [
+   "bezig",
+   "bezig/viola"
+  ],
+  "italia-viola-ipad": [
+   "bezig",
+   "bezig/viola"
+  ]
+ },
+ "summary": {
+  "indexUnchanged": true,
+  "backdropIsV2Panorama": true,
+  "phoneNoBackdrop": true,
+  "floatingGlassWindow": true,
+  "reducedTransparencyOpaque": true,
+  "miniaturesMatchManifest": true,
+  "missingScenesUseChapterIcon": true,
+  "reliefDefaultWithPalette": true,
+  "whiteCoastAndShadow": true,
+  "geometrySame": {
+   "desktop-italia": "46/46",
+   "desktop-viola": "46/46",
+   "ipad-landscape-italia": "46/46",
+   "ipad-landscape-viola": "46/46",
+   "phone-italia": "46/46"
+  },
+  "geometryAllSame": true,
+  "themes": {
+   "desktop-italia": "#b9502f",
+   "desktop-viola": "#5b45e0",
+   "ipad-landscape-italia": "#b9502f",
+   "ipad-landscape-viola": "#5b45e0",
+   "phone-italia": "#b9502f"
+  },
+  "themePairs": {
+   "italia-viola-desktop": [
+    "bezig",
+    "bezig/viola"
+   ],
+   "italia-viola-ipad": [
+    "bezig",
+    "bezig/viola"
+   ]
+  },
+  "namesClipped": [],
+  "namesTwoLines": [],
+  "primaryAboveFold": true,
+  "horizontalOverflow": [],
+  "errors": 0
+ },
+ "comparisons": {
+  "r1-kaart+desktop-viola": "vergelijking-r1-kaart-desktop-viola.jpg",
+  "r1-kaart+desktop-italia": "vergelijking-r1-kaart-desktop-italia.jpg",
+  "r5-hoofdstukken+desktop-italia": "vergelijking-r5-hoofdstukken-desktop-italia.jpg",
+  "r1-kaart+ipad-landscape-italia": "vergelijking-r1-kaart-ipad-landscape-italia.jpg"
+ }
+}

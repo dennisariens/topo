@@ -317,3 +317,10 @@ Reservekopieën en reset horen in het algemene instellingenmenu. Wis voortgang b
 - **Wat blijft:** echte geografie (reliëf uit gemeten data in het renderpalet, geen beeld als kaart), de echte elf hoofdstukken, geen streak, en Nino alleen vanaf de canonieke referenties.
 - **Bron:** de 8 hoofdstukscènes uit #75 zijn de stijlreferentie en de eerste hoofdstukbeelden. Specificatie: `docs/v3/ARTWORK_BRIEF.md`.
 - **Volgorde:** eerst één stijlbeeld met bestaand materiaal (accent Italia en Viola naast elkaar opnieuw te toetsen), dan pas artwork produceren, met QA door Hermes.
+
+## 2026-11-09 — Stijlbeeld Reis (renderniveau, bestaand materiaal)
+
+- **Gebouwd ter beoordeling:** het V2-panorama staat tijdelijk full-bleed achter de app (tot BG-01). Op ≥ 768 px zweeft het app-venster erboven: matglas, hoeken 24, zachte schaduw. Telefoon heeft geen achtergrond. De #75-scènes zijn de hoofdstukminiaturen, uitgesneden zonder Nino (`assets/v3/scenes/manifest.json`); ontbrekende scènes tonen het hoofdstukicoon.
+- **Kaart:** het reliëf staat standaard aan (**supersedes** Schoolkaart als standaard in Reis v3b; Schoolkaart blijft één tik). Het renderpalet is een SVG-kleurfilter op het bestaande raster tot `v3/relief-z8`, met witte kustrand, kustzone en landschaduw uit kopieën van dezelfde paden. Geometrie gelijk (46/46).
+- **Toegankelijkheid:** bij "Verminder transparantie" of meer contrast wordt het venster ondoorzichtig.
+- **Check:** `scripts/qa-v3-stijlbeeld.py`; bewijs in `docs/qa/v3-stijlbeeld/`. Oordeel eigenaar open; geen nieuwe beelden gegenereerd.

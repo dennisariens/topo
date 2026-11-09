@@ -1,0 +1,214 @@
+{
+ "title": "TOPO V3 chapter scenes (stijlbeeld)",
+ "status": "stijlbeeld — eigenaar open; Hermes QA open",
+ "sourceCommit": "8a704cb23da97baf7197635df7fa12f06b864a24",
+ "maker": "scenes: #75 (see assets/nino in 8a704cb); miniatures: scripts/build-v3-scenes.py",
+ "date": "2026-11-09",
+ "missing": {
+  "city2": "chapter icon (temporary)",
+  "city3": "chapter icon (temporary)",
+  "city4": "chapter icon (temporary)"
+ },
+ "chapters": {
+  "city1": {
+   "scene": {
+    "path": "assets/v3/scenes/topo-steden-firenze.webp",
+    "sha256": "fc30759340d0a54a2b63e29adcb4a4f4b20078021941410faf0f564793baf048",
+    "bytes": 402776,
+    "width": 1672,
+    "height": 941,
+    "source": "8a704cb:assets/nino/exports/topo-steden-firenze.webp",
+    "note": "#75 chapter scene, byte-identical copy"
+   },
+   "mini": {
+    "path": "assets/v3/scenes/topo-steden-firenze-mini.webp",
+    "sha256": "26865876290044697872bb748d2b55e09fc826989a6fc37e190914147bbda03c",
+    "bytes": 33352,
+    "width": 480,
+    "height": 270,
+    "crop": {
+     "x": 669,
+     "y": 28,
+     "width": 1003,
+     "height": 564
+    },
+    "note": "landscape without Nino, cut from the scene"
+   }
+  },
+  "islands": {
+   "scene": {
+    "path": "assets/v3/scenes/topo-eilanden-v2.webp",
+    "sha256": "8b2d530acee7c727479cf9593e55e1b03bbadbdf85971a631cce2c1097ee9093",
+    "bytes": 348408,
+    "width": 1672,
+    "height": 941,
+    "source": "8a704cb:assets/nino/exports/topo-eilanden-v2.webp",
+    "note": "#75 chapter scene, byte-identical copy"
+   },
+   "mini": {
+    "path": "assets/v3/scenes/topo-eilanden-v2-mini.webp",
+    "sha256": "2b027de93af0155f076f3fc5a68be460807a668496c5dcc2464668718a4a3b9d",
+    "bytes": 24694,
+    "width": 480,
+    "height": 270,
+    "crop": {
+     "x": 334,
+     "y": 75,
+     "width": 669,
+     "height": 376
+    },
+    "note": "landscape without Nino, cut from the scene"
+   }
+  },
+  "mountains": {
+   "scene": {
+    "path": "assets/v3/scenes/topo-bergen-dolomieten.webp",
+    "sha256": "ea8841762b495239c1ec89a5759c03ec09c002af3a5c550c1370205ea6ef3fce",
+    "bytes": 423450,
+    "width": 1672,
+    "height": 941,
+    "source": "8a704cb:assets/nino/exports/topo-bergen-dolomieten.webp",
+    "note": "#75 chapter scene, byte-identical copy"
+   },
+   "mini": {
+    "path": "assets/v3/scenes/topo-bergen-dolomieten-mini.webp",
+    "sha256": "88d66acc264653b3f4354455b5c2887a0027b0da05a66e73758fc7ddb8f40171",
+    "bytes": 26542,
+    "width": 480,
+    "height": 270,
+    "crop": {
+     "x": 67,
+     "y": 0,
+     "width": 936,
+     "height": 526
+    },
+    "note": "landscape without Nino, cut from the scene"
+   }
+  },
+  "volcanoes": {
+   "scene": {
+    "path": "assets/v3/scenes/topo-vulkanen-etna.webp",
+    "sha256": "80623ad790d3f8c32a39276e84106bda9ccd37d57f79d3268091f0206466b654",
+    "bytes": 354542,
+    "width": 1672,
+    "height": 941,
+    "source": "8a704cb:assets/nino/exports/topo-vulkanen-etna.webp",
+    "note": "#75 chapter scene, byte-identical copy"
+   },
+   "mini": {
+    "path": "assets/v3/scenes/topo-vulkanen-etna-mini.webp",
+    "sha256": "21f4566b9d32909526c2f542bc6b0e12a2d4beb47b32ee1c7194644de68b287d",
+    "bytes": 19894,
+    "width": 480,
+    "height": 270,
+    "crop": {
+     "x": 0,
+     "y": 0,
+     "width": 970,
+     "height": 546
+    },
+    "note": "landscape without Nino, cut from the scene"
+   }
+  },
+  "regions": {
+   "scene": {
+    "path": "assets/v3/scenes/topo-streken-toscana.webp",
+    "sha256": "6bd74e9cdc1388172c119b02d32e512862ae08c40b588f834d53efd98cdcea7b",
+    "bytes": 441230,
+    "width": 1672,
+    "height": 941,
+    "source": "8a704cb:assets/nino/exports/topo-streken-toscana.webp",
+    "note": "#75 chapter scene, byte-identical copy"
+   },
+   "mini": {
+    "path": "assets/v3/scenes/topo-streken-toscana-mini.webp",
+    "sha256": "482349912963d3cf50a775d06ec70c892a42a3cbda29fa066464911d73176b45",
+    "bytes": 36784,
+    "width": 480,
+    "height": 270,
+    "crop": {
+     "x": 752,
+     "y": 47,
+     "width": 920,
+     "height": 518
+    },
+    "note": "landscape without Nino, cut from the scene"
+   }
+  },
+  "countries": {
+   "scene": {
+    "path": "assets/v3/scenes/topo-landen-italie-slovenie.webp",
+    "sha256": "10c798c0e9d679987f4b446e412c05f6b80fc7a57f26ab709ac099414e39421d",
+    "bytes": 403120,
+    "width": 1672,
+    "height": 941,
+    "source": "8a704cb:assets/nino/exports/topo-landen-italie-slovenie.webp",
+    "note": "#75 chapter scene, byte-identical copy"
+   },
+   "mini": {
+    "path": "assets/v3/scenes/topo-landen-italie-slovenie-mini.webp",
+    "sha256": "3f4ce7e6caa69edbc7fd9a6ed345c570a4e22bf262bc6750a3fd5065ee64bd89",
+    "bytes": 28270,
+    "width": 480,
+    "height": 270,
+    "crop": {
+     "x": 702,
+     "y": 0,
+     "width": 970,
+     "height": 546
+    },
+    "note": "landscape without Nino, cut from the scene"
+   }
+  },
+  "seas": {
+   "scene": {
+    "path": "assets/v3/scenes/topo-zeeen-amalfi.webp",
+    "sha256": "fb3a1c781a099eebbb078a35d82a9666e69475eb528f3e505037e7e7638454d1",
+    "bytes": 397262,
+    "width": 1672,
+    "height": 941,
+    "source": "8a704cb:assets/nino/exports/topo-zeeen-amalfi.webp",
+    "note": "#75 chapter scene, byte-identical copy"
+   },
+   "mini": {
+    "path": "assets/v3/scenes/topo-zeeen-amalfi-mini.webp",
+    "sha256": "c0147c714afc3a07cc744cbbb6b1cb3f816e0c728835dbdb66711bd4e3929a60",
+    "bytes": 29672,
+    "width": 480,
+    "height": 270,
+    "crop": {
+     "x": 552,
+     "y": 0,
+     "width": 1120,
+     "height": 630
+    },
+    "note": "landscape without Nino, cut from the scene"
+   }
+  },
+  "rivers": {
+   "scene": {
+    "path": "assets/v3/scenes/topo-rivieren-po.webp",
+    "sha256": "a69ae30fda1271431e5d1ffe7145249f0c25a048074d185a1a81fbad2f3811e1",
+    "bytes": 383964,
+    "width": 1672,
+    "height": 941,
+    "source": "8a704cb:assets/nino/exports/topo-rivieren-po.webp",
+    "note": "#75 chapter scene, byte-identical copy"
+   },
+   "mini": {
+    "path": "assets/v3/scenes/topo-rivieren-po-mini.webp",
+    "sha256": "8f1517c7d5a84a598dac8c14d0351c06bd972048d9835602a6df42f7e6357f5b",
+    "bytes": 32446,
+    "width": 480,
+    "height": 270,
+    "crop": {
+     "x": 0,
+     "y": 75,
+     "width": 920,
+     "height": 518
+    },
+    "note": "landscape without Nino, cut from the scene"
+   }
+  }
+ }
+}

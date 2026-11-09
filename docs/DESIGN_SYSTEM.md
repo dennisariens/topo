@@ -10,6 +10,7 @@ Productrichting: een reis door Italië waarin je topografie leert. Rust van Appl
 - **Eén vaste opbouw** op groot scherm: zijbalk (merk, Nino, navigatie, instellingen) · lijst (hoofdstukken) · inhoud (tellers, kaart, titel, één actie).
 - **iPad liggend en kleine desktop (< 1280 px):** zijbalk met alleen iconen; labels blijven voor schermlezers.
 - **iPad staand (< 1024 px):** titel en actie boven de kaart.
+- **Venster (stijlbeeld, ≥ 768 px):** de app zweeft als matglas (80% oppervlak, blur 26, hoeken 24, zachte schaduw, 24 px rondom) boven een landschap; tijdelijk het V2-panorama. Hoofdstukrijen hebben een miniatuur (scène zonder Nino, anders het hoofdstukicoon). Bij verminderde transparantie is het venster ondoorzichtig.
 - **Telefoon (< 768 px):** één kolom (tellers, titel, actie, kaart, lijst) met een tabbalk onderaan.
 - **Getallen in plaats van zinnen:** "3 / 11", "14 / 24". Geen taglines, hulpteksten of bijlabels. Uitzondering: een reden die de leerling anders niet ziet ("Opent na Bergen").
 - **Eén duidelijke hoofdactie, waar een handeling nodig is.** Bij Aanwijzen is de kaart zelf de handeling.
@@ -18,7 +19,8 @@ Productrichting: een reis door Italië waarin je topografie leert. Rust van Appl
 - Altijd de echte geometrie: in Reis een kopie van de live kaart, met gelijke paden (gecontroleerd: 46/46), zonder namen en zonder interactie.
 - De plekken van het gekozen hoofdstuk dragen het accent; de rest treedt terug.
 - **Referentiekader:** het kader toont wat om Italië heen ligt (buurlanden, zeeën, Corsica, Noord-Afrika). Kader = Italië en de hoofdstukplekken + 14% marge, verruimd tot de vorm van het kaartvlak binnen het canvas (890 × 1235). Echte zee, alleen een smalle randfade (4%), geen radiale vervaging. Gecontroleerd door `mapFrameShort`.
-- **Schoolkaart** is de standaard en de lesvorm. **Reliëf** is een schakelaar met een leerfunctie (Bergen, Vulkanen, Apennijnen, Povlakte). Het reliëf komt uit gemeten hoogtedata, geregistreerd op hetzelfde frame (zie DISCOVERY_MAP.md). Nooit AI-beeld als kaart.
+- **Stijlbeeld (9 november, eigenaar open):** in Reis staat **Reliëf** standaard aan, in het renderpalet (SVG-filter op de bestaande laag), met een witte kustrand van 1,5 px, een lichte kustzone en een zachte schaduw onder het land. De lessen houden hun eigen kaart.
+- **Schoolkaart** is de lesvorm. **Reliëf** is een schakelaar met een leerfunctie (Bergen, Vulkanen, Apennijnen, Povlakte). Het reliëf komt uit gemeten hoogtedata, geregistreerd op hetzelfde frame (zie DISCOVERY_MAP.md). Nooit AI-beeld als kaart.
 
 ## Les (Golden Experience 01, beat 3–7)
 - **Opbouw desktop:** zijbalk (Reis actief) · lesstappen boven de kaart · kaart · taakpaneel rechts (vraag, invoer, feedback, één hoofdactie, pizzameter onderaan).

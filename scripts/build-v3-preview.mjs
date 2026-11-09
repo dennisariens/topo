@@ -18,8 +18,17 @@ const states=`(function(){
   'afgerond':make('Haltes afgerond',[{stage:3,gold:1,due:1},{stage:3,gold:1},{stage:3},{stage:3}],{good:61,pizzas:7,slices:3,trips:2}),
   'alles':make('Alles af',IDS.map(()=>({stage:3,gold:1})),{good:168,pizzas:21,trips:7})
  };
- const [raw0,theme]=location.hash.slice(1).split('/'),raw=raw0||'',side=raw.startsWith('naast-'),key=side?raw.slice(6):raw,chosen=S[key]||S.bezig,th=theme==='viola'?'viola':'italia';
+ const [raw0,theme]=location.hash.slice(1).split('/'),raw1=raw0||'',pair=/^thema-(ipad-)?/.exec(raw1),raw=pair?raw1.slice(pair[0].length):raw1,side=raw.startsWith('naast-'),key=side?raw.slice(6):raw,chosen=S[key]||S.bezig,th=theme==='viola'?'viola':'italia';
  window.TOPO_V3_THEME=th;const tail=th==='viola'?'/viola':'';
+ // Theme pair (stijlbeeld): Italia and Viola side by side, desktop 1440×900 or iPad landscape 1180×820, two live frames.
+ if(pair){
+  window.stop();addEventListener('hashchange',()=>location.reload());
+  const page=location.href.split('#')[0],k=S[key]?key:'bezig',ipad=!!pair[1],w=ipad?1180:1440,h=ipad?820:900,sc=ipad?.57:.465;
+  const links=Object.entries(S).map(([id,s])=>'<a href="#'+pair[0]+id+'"'+(id===k?' aria-current="page"':'')+'>'+s.title+'</a>').join('')+'<a href="#thema-'+k+'"'+(ipad?'':' aria-current="page"')+'>Desktop</a><a href="#thema-ipad-'+k+'"'+(ipad?' aria-current="page"':'')+'>iPad liggend</a>';
+  const fr=t=>'<figure><figcaption>'+t[0].toUpperCase()+t.slice(1)+'</figcaption><div class="f" style="width:'+Math.round(w*sc)+'px;height:'+Math.round(h*sc)+'px"><iframe title="'+t+'" style="width:'+w+'px;height:'+h+'px;transform:scale('+sc+')" src="'+page+'#'+k+(t==='viola'?'/viola':'')+'"></iframe></div></figure>';
+  document.documentElement.innerHTML='<head><meta charset="utf-8"><title>V3-preview · Italia en Viola</title><style>body{margin:0;background:#e9e3d6;font:600 13px/1.2 -apple-system,system-ui,sans-serif;color:#073f3b}nav{display:flex;gap:8px;align-items:center;padding:8px 12px;background:#073f3b;color:#f8f3e8;flex-wrap:wrap}nav a{color:#f8f3e8;text-decoration:none;padding:9px 12px;border-radius:9px;box-shadow:inset 0 0 0 1px #f8f3e855}nav a[aria-current]{background:#f8f3e8;color:#073f3b}main{display:flex;gap:24px;justify-content:center;padding:24px;flex-wrap:wrap}figure{margin:0;display:grid;gap:8px}figcaption{font-size:15px}.f{overflow:hidden;border-radius:12px;box-shadow:0 8px 30px #0003}.f iframe{border:0;transform-origin:0 0}</style></head><body><nav><strong>V3-preview · Italia en Viola · demo</strong>'+links+'</nav><main>'+fr('italia')+fr('viola')+'</main></body>';
+  return;
+ }
  // Side-by-side: stop loading this copy and show two live frames of the same file (desktop and phone).
  if(side){
   window.stop();addEventListener('hashchange',()=>location.reload());
@@ -39,13 +48,18 @@ const states=`(function(){
   for(const [id,s] of Object.entries(S)){const a=document.createElement('a');a.href='#'+id+tail;a.textContent=s.title;if(s===chosen)a.setAttribute('aria-current','page');bar.append(a);}
   for(const t of ['italia','viola']){const a=document.createElement('a');a.href='#'+(S[key]?key:'bezig')+(t==='viola'?'/viola':'');a.textContent=t==='viola'?'Viola':'Italia';if(t===th)a.setAttribute('aria-current','page');a.className='v3Theme';bar.append(a);}
   const side=document.createElement('a');side.href='#naast-'+(S[key]?key:'bezig')+tail;side.textContent='Naast elkaar: desktop + telefoon';bar.append(side);
+  const pairA=document.createElement('a');pairA.href='#thema-'+(S[key]?key:'bezig');pairA.textContent='Italia + Viola';bar.append(pairA);
   if(window.top!==window)bar.hidden=true;
   document.body.prepend(bar);
  });
 })();`;
 const barCss='.v3PreviewBar[hidden]{display:none!important}.v3PreviewBar{display:flex;align-items:center;gap:8px;padding:8px 12px;overflow-x:auto;white-space:nowrap;background:#073f3b;color:#f8f3e8;font:600 13px/1.2 -apple-system,system-ui,sans-serif}.v3PreviewBar strong{margin-right:4px}.v3PreviewBar a{display:inline-flex;align-items:center;min-height:36px;padding:0 12px;border-radius:9px;color:#f8f3e8;text-decoration:none;box-shadow:inset 0 0 0 1px #f8f3e855}.v3PreviewBar a[aria-current]{background:#f8f3e8;color:#073f3b}@media print{.v3PreviewBar{display:none}}.v3PreviewBar .v3Theme{margin-left:auto}.v3PreviewBar .v3Theme+.v3Theme{margin-left:0}body:has(.v3PreviewBar:not([hidden])) :is(.v3Reis,.v3LesSideWrap){--v3-bar:52px}body:has(.v3PreviewBar:not([hidden])).v3Les{--v3-bar:52px}body.v3Home .v3PreviewBar{position:static!important}body.v3Home{padding-bottom:0!important}body[data-focus-shell=true] .v3PreviewBar{position:fixed;left:0;right:0;bottom:0;z-index:70;padding-bottom:calc(8px + env(safe-area-inset-bottom,0px))}body[data-focus-shell=true]:has(.v3PreviewBar:not([hidden])){padding-bottom:64px}body[data-focus-mode=true] .v3PreviewBar{display:none}';
+// Chapter miniatures (stijlbeeld): from assets/v3/scenes/manifest.json, checked against their SHA256, embedded as data URIs.
+const sceneManifest=JSON.parse(read('assets/v3/scenes/manifest.json')),scenes={};
+for(const [id,e] of Object.entries(sceneManifest.chapters)){const b=readFileSync(new URL(e.mini.path,root));if(createHash('sha256').update(b).digest('hex')!==e.mini.sha256)throw Error('Scene miniature differs from manifest: '+e.mini.path);scenes[id]='data:image/webp;base64,'+b.toString('base64');}
+const sceneJs='window.TOPO_V3_SCENES='+JSON.stringify(scenes)+';';
 const css=read('scripts/v3/tokens.css')+read('scripts/v3/reis.css')+read('scripts/v3/les.css')+barCss;
-const head='<head>\n<script>\n'+states+'\n</script>\n<style>/* BEGIN TOPO V3 */'+css+'/* END TOPO V3 */</style>';
+const head='<head>\n<script>\n'+states+'\n'+sceneJs+'\n</script>\n<style>/* BEGIN TOPO V3 */'+css+'/* END TOPO V3 */</style>';
 const last=html.lastIndexOf('</body>');if(last<0||html.indexOf('<head>')<0)throw Error('Unexpected index.html shape');
 let out=html.replace('<head>',()=>head);
 const end=out.lastIndexOf('</body>');

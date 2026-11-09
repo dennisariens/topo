@@ -302,3 +302,11 @@ Reservekopieën en reset horen in het algemene instellingenmenu. Wis voortgang b
 - **Sheet na antwoord:** gaat vanzelf open. V3 drukt bij de overgang naar "beantwoord" eenmalig de V2-knop **Antwoord openen** als het kind de sheet had ingeklapt; geen wijziging in Focus Mode of `index.html`. Check `sheetOpensAfterAnswer`.
 - **Teller** volgt de V2-wachtrij; herhaalde vragen tellen mee.
 - **Les zonder hulpregels en "Samen met Nino"**; oefenmodi alleen via Oefenen.
+
+## 2026-11-09 — Beloningen: richting B, rustig kader en rijk boek
+
+- **Besluit eigenaar:** Beloningen volgt richting B uit het ontwerpcanvas (https://claude.ai/artifact/KyM6Dx5UmJ26cPLU4BaqmH). De V3-schil (zijbalk, tellers, typografie) blijft strak. Het Reisboekje staat als rijk middelpunt op een rustig vlak, met de bestaande folio's, stempels, goudzegels en postkaarten.
+- **Principe:** rustig kader, rijke inhoud. Het renaissance-schetsboek is het materiaal van het boek, niet van de interface; lessen, kaart en toets blijven er vrij van. Nino blijft overal Nino.
+- **Niet:** het boek als donker venster over de app (richting A), of stempels als vlakke tegels zonder perkament (richting C).
+- **Open:** folio's in hogere resolutie (nu maximaal 543 CSS-px per pagina); Venezia-rand; idee: per land een eigen kunsttraditie voor het boek (later).
+- **Status:** richting gekozen; nog te bouwen als V3-laag, na de les (GE01).

@@ -1,0 +1,68 @@
+{
+  "verdict": "PASS",
+  "scope": "Maintained GE01-K01, cached Playwright WebKit 27.2 only",
+  "runs": 12,
+  "counts": {
+    "missing": 0,
+    "closedByKey": 0,
+    "leaked": 0,
+    "errors": 0
+  },
+  "droppedForeignKeyClicks": 4,
+  "purposefulEnterDialogControls": [
+    {
+      "scenario": "bezig",
+      "reducedMotion": true,
+      "sequence": [
+        "dialog Verder",
+        "dialog Start de Vespa-rit",
+        "dialog Verder"
+      ],
+      "count": 3,
+      "laterExpectedFinishReached": true
+    },
+    {
+      "scenario": "bezig",
+      "reducedMotion": false,
+      "sequence": [
+        "dialog Verder",
+        "dialog Start de Vespa-rit",
+        "dialog Overslaan",
+        "dialog Verder"
+      ],
+      "count": 4,
+      "laterExpectedFinishReached": true
+    },
+    {
+      "scenario": "goud",
+      "reducedMotion": true,
+      "sequence": [
+        "dialog Verder"
+      ],
+      "count": 1,
+      "laterExpectedFinishReached": true
+    },
+    {
+      "scenario": "goud",
+      "reducedMotion": false,
+      "sequence": [
+        "dialog Verder"
+      ],
+      "count": 1,
+      "laterExpectedFinishReached": true
+    }
+  ],
+  "purposefulEnterDialogControlCount": 9,
+  "purposefulEnterLimit": "Proven by maintained dialog action sequences, no repeated/no-op attempts, Vespa opens, and subsequent stamp/gold reached. Existing-dialog close events are intentionally excluded from maintained closed array. No claim for new-action/book controls outside this harness.",
+  "screenshots": 16,
+  "trackedFilesVerifiedUnchanged": 2384,
+  "changedTrackedFiles": [],
+  "gitStatus": "",
+  "htmlSha256": "71c2f49bf65ae04e9a1908bd7661cf8889562c0af4b3f582fd9cacfdfc4131d4",
+  "htmlBytes": 50200591,
+  "limits": [
+    "Not native Safari or physical iPad/VoiceOver acceptance",
+    "No Space or additional new-action tests; parent owns those",
+    "results.json browser label says Chrome because only launch line was changed; launch-provenance.json records actual WebKit 27.2"
+  ]
+}

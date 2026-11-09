@@ -1,0 +1,17 @@
+chromium-Enter-reduce PASS
+chromium-click-reduce PASS
+chromium-point-Space-reduce PASS
+chromium-Enter-motion PASS
+chromium-click-motion PASS
+chromium-point-Space-motion PASS
+chromium-held-Enter-reduce PASS
+webkit-Enter-reduce PASS
+webkit-click-reduce PASS
+webkit-point-Space-reduce PASS
+webkit-Enter-motion PASS
+webkit-click-motion PASS
+webkit-point-Space-motion PASS
+webkit-held-Enter-reduce PASS
+{'cases': 14, 'passed': 14, 'noCurrencyDuplication': True, 'legitimateNextEnterAndSpaceWork': True}
+
+PARENT_REPRO_EXIT=0

@@ -1,0 +1,206 @@
+{
+  "verdict": "PASS",
+  "scope": "GE01 maintained keyboard/reward regression; cached Chromium only; no publication",
+  "browserLabelFromOriginalScript": "Chrome 156.0.8078.4",
+  "runCount": 12,
+  "counts": {
+    "missing": 0,
+    "closedByKey": 0,
+    "leaked": 0,
+    "errors": 0
+  },
+  "dropped": 4,
+  "checks": {
+    "allTwelveExactlyOnce": true,
+    "zeroMissingClosedByKeyLeakedErrors": true,
+    "originalSummaryPass": true,
+    "trackedSourcePreserved": true,
+    "htmlHashPreserved": true,
+    "purposefulEnterDialogFlowNotBroken": true
+  },
+  "purposefulEnterControls": [
+    {
+      "scenario": "bezig",
+      "reducedMotion": true,
+      "controls": {
+        "dialog Verder": 2,
+        "dialog Start de Vespa-rit": 1
+      },
+      "presses": [
+        {
+          "step": "dialog Verder",
+          "key": "Verder",
+          "opened": [],
+          "closed": [],
+          "foreignKeyClicks": [],
+          "leaked": [],
+          "bookOpenedByKey": false,
+          "pizzas": [
+            2,
+            2
+          ],
+          "trips": [
+            0,
+            0
+          ],
+          "moment": null
+        },
+        {
+          "step": "dialog Start de Vespa-rit",
+          "key": "Start de Vespa-rit",
+          "opened": [
+            "vespaRide"
+          ],
+          "closed": [],
+          "foreignKeyClicks": [],
+          "leaked": [],
+          "bookOpenedByKey": false,
+          "pizzas": [
+            3,
+            3
+          ],
+          "trips": [
+            1,
+            1
+          ],
+          "moment": null
+        },
+        {
+          "step": "dialog Verder",
+          "key": "Verder",
+          "opened": [],
+          "closed": [],
+          "foreignKeyClicks": [],
+          "leaked": [],
+          "bookOpenedByKey": false,
+          "pizzas": [
+            3,
+            3
+          ],
+          "trips": [
+            1,
+            1
+          ],
+          "moment": null
+        }
+      ],
+      "moments": [
+        "pizzaCelebration",
+        "stamp",
+        "vespaRide"
+      ],
+      "progressesToStamp": true,
+      "vespaStartsOnPurposefulEnter": true
+    },
+    {
+      "scenario": "bezig",
+      "reducedMotion": false,
+      "controls": {
+        "dialog Verder": 2,
+        "dialog Start de Vespa-rit": 1,
+        "dialog Overslaan": 1
+      },
+      "presses": [
+        {
+          "step": "dialog Verder",
+          "key": "Verder",
+          "opened": [],
+          "closed": [],
+          "foreignKeyClicks": [],
+          "leaked": [],
+          "bookOpenedByKey": false,
+          "pizzas": [
+            2,
+            2
+          ],
+          "trips": [
+            0,
+            0
+          ],
+          "moment": null
+        },
+        {
+          "step": "dialog Start de Vespa-rit",
+          "key": "Start de Vespa-rit",
+          "opened": [
+            "vespaRide"
+          ],
+          "closed": [],
+          "foreignKeyClicks": [],
+          "leaked": [],
+          "bookOpenedByKey": false,
+          "pizzas": [
+            3,
+            3
+          ],
+          "trips": [
+            1,
+            1
+          ],
+          "moment": null
+        },
+        {
+          "step": "dialog Overslaan",
+          "key": "Overslaan",
+          "opened": [],
+          "closed": [],
+          "foreignKeyClicks": [],
+          "leaked": [],
+          "bookOpenedByKey": false,
+          "pizzas": [
+            3,
+            3
+          ],
+          "trips": [
+            1,
+            1
+          ],
+          "moment": null
+        },
+        {
+          "step": "dialog Verder",
+          "key": "Verder",
+          "opened": [],
+          "closed": [],
+          "foreignKeyClicks": [],
+          "leaked": [],
+          "bookOpenedByKey": false,
+          "pizzas": [
+            3,
+            3
+          ],
+          "trips": [
+            1,
+            1
+          ],
+          "moment": null
+        }
+      ],
+      "moments": [
+        "pizzaCelebration",
+        "stamp",
+        "vespaRide"
+      ],
+      "progressesToStamp": true,
+      "vespaStartsOnPurposefulEnter": true
+    }
+  ],
+  "screenshots": [
+    "bezig-stamp-Enter-motion.png",
+    "bezig-stamp-Enter-reduce.png",
+    "bezig-stamp-click-motion.png",
+    "bezig-stamp-click-reduce.png",
+    "bezig-vespa-Enter-motion.png",
+    "bezig-vespa-Enter-reduce.png",
+    "bezig-vespa-click-motion.png",
+    "bezig-vespa-click-reduce.png",
+    "goud-gold-Enter-motion.png",
+    "goud-gold-Enter-reduce.png",
+    "goud-gold-click-motion.png",
+    "goud-gold-click-reduce.png",
+    "pizza-hermes-Enter-motion.png",
+    "pizza-hermes-Enter-reduce.png",
+    "pizza-hermes-click-motion.png",
+    "pizza-hermes-click-reduce.png"
+  ]
+}

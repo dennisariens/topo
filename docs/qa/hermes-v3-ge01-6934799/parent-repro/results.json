@@ -1,0 +1,5559 @@
+{
+  "target": "6934799454441582b953ed455d54ca3b0e2db722",
+  "sha256": "71c2f49bf65ae04e9a1908bd7661cf8889562c0af4b3f582fd9cacfdfc4131d4",
+  "scope": "Own original reproduction plus fresh-key, Space and held-key controls; actual UI, no grade/state injection",
+  "runs": [
+    {
+      "case": "chromium-Enter-reduce",
+      "engine": "chromium",
+      "motion": "reduce",
+      "trigger": "Enter",
+      "baseline": "#nieuw startszero;8correct answers genuinely earned via UI",
+      "initial": {
+        "good": 0,
+        "pizzas": 0,
+        "slices": 0,
+        "trips": 0,
+        "current": null,
+        "mode": "point",
+        "dialogs": [],
+        "focus": {
+          "id": "",
+          "text": "V3-preview \u00b7 demo \u00b7 niets wordt bewaardNieuw ",
+          "inPizza": false
+        },
+        "events": []
+      },
+      "before": {
+        "good": 7,
+        "pizzas": 0,
+        "slices": 7,
+        "trips": 0,
+        "current": "city-4",
+        "mode": "write",
+        "dialogs": [],
+        "focus": {
+          "id": "next",
+          "text": "Ik weet het nog niet",
+          "inPizza": false
+        },
+        "events": [
+          {
+            "type": "click",
+            "key": null,
+            "repeat": null,
+            "detail": 1,
+            "trusted": true,
+            "target": "Ontdekken",
+            "prevented": false
+          },
+          {
+            "type": "click",
+            "key": null,
+            "repeat": null,
+            "detail": 0,
+            "trusted": false,
+            "target": "routeContinue",
+            "prevented": false
+          },
+          {
+            "type": "click",
+            "key": null,
+            "repeat": null,
+            "detail": 1,
+            "trusted": true,
+            "target": "next",
+            "prevented": false
+          },
+          {
+            "type": "click",
+            "key": null,
+            "repeat": null,
+            "detail": 1,
+            "trusted": true,
+            "target": "next",
+            "prevented": false
+          },
+          {
+            "type": "click",
+            "key": null,
+            "repeat": null,
+            "detail": 1,
+            "trusted": true,
+            "target": "next",
+            "prevented": false
+          },
+          {
+            "type": "click",
+            "key": null,
+            "repeat": null,
+            "detail": 1,
+            "trusted": true,
+            "target": "next",
+            "prevented": false
+          },
+          {
+            "type": "click",
+            "key": null,
+            "repeat": null,
+            "detail": 1,
+            "trusted": true,
+            "target": "next",
+            "prevented": false
+          },
+          {
+            "type": "click",
+            "key": null,
+            "repeat": null,
+            "detail": 1,
+            "trusted": true,
+            "target": "next",
+            "prevented": false
+          },
+          {
+            "type": "click",
+            "key": null,
+            "repeat": null,
+            "detail": 1,
+            "trusted": true,
+            "target": "Volgende les \u2192",
+            "prevented": false
+          },
+          {
+            "type": "keydown",
+            "key": "Enter",
+            "repeat": false,
+            "detail": 0,
+            "trusted": true,
+            "target": "",
+            "prevented": true
+          },
+          {
+            "type": "click",
+            "key": null,
+            "repeat": null,
+            "detail": 0,
+            "trusted": false,
+            "target": "",
+            "prevented": false
+          },
+          {
+            "type": "keyup",
+            "key": "Enter",
+            "repeat": false,
+            "detail": 0,
+            "trusted": true,
+            "target": "",
+            "prevented": false
+          },
+          {
+            "type": "click",
+            "key": null,
+            "repeat": null,
+            "detail": 1,
+            "trusted": true,
+            "target": "next",
+            "prevented": false
+          },
+          {
+            "type": "keydown",
+            "key": "Enter",
+            "repeat": false,
+            "detail": 0,
+            "trusted": true,
+            "target": "",
+            "prevented": true
+          },
+          {
+            "type": "click",
+            "key": null,
+            "repeat": null,
+            "detail": 0,
+            "trusted": false,
+            "target": "",
+            "prevented": false
+          },
+          {
+            "type": "keyup",
+            "key": "Enter",
+            "repeat": false,
+            "detail": 0,
+            "trusted": true,
+            "target": "",
+            "prevented": false
+          },
+          {
+            "type": "click",
+            "key": null,
+            "repeat": null,
+            "detail": 1,
+            "trusted": true,
+            "target": "next",
+            "prevented": false
+          },
+          {
+            "type": "keydown",
+            "key": "Enter",
+            "repeat": false,
+            "detail": 0,
+            "trusted": true,
+            "target": "",
+            "prevented": true
+          },
+          {
+            "type": "click",
+            "key": null,
+            "repeat": null,
+            "detail": 0,
+            "trusted": false,
+            "target": "",
+            "prevented": false
+          },
+          {
+            "type": "keyup",
+            "key": "Enter",
+            "repeat": false,
+            "detail": 0,
+            "trusted": true,
+            "target": "",
+            "prevented": false
+          },
+          {
+            "type": "click",
+            "key": null,
+            "repeat": null,
+            "detail": 1,
+            "trusted": true,
+            "target": "next",
+            "prevented": false
+          },
+          {
+            "type": "keydown",
+            "key": "Enter",
+            "repeat": false,
+            "detail": 0,
+            "trusted": true,
+            "target": "",
+            "prevented": true
+          },
+          {
+            "type": "click",
+            "key": null,
+            "repeat": null,
+            "detail": 0,
+            "trusted": false,
+            "target": "",
+            "prevented": false
+          },
+          {
+            "type": "keyup",
+            "key": "Enter",
+            "repeat": false,
+            "detail": 0,
+            "trusted": true,
+            "target": "",
+            "prevented": false
+          },
+          {
+            "type": "click",
+            "key": null,
+            "repeat": null,
+            "detail": 1,
+            "trusted": true,
+            "target": "next",
+            "prevented": false
+          },
+          {
+            "type": "keydown",
+            "key": "Enter",
+            "repeat": false,
+            "detail": 0,
+            "trusted": true,
+            "target": "",
+            "prevented": true
+          },
+          {
+            "type": "click",
+            "key": null,
+            "repeat": null,
+            "detail": 0,
+            "trusted": false,
+            "target": "",
+            "prevented": false
+          },
+          {
+            "type": "keyup",
+            "key": "Enter",
+            "repeat": false,
+            "detail": 0,
+            "trusted": true,
+            "target": "",
+            "prevented": false
+          },
+          {
+            "type": "click",
+            "key": null,
+            "repeat": null,
+            "detail": 1,
+            "trusted": true,
+            "target": "next",
+            "prevented": false
+          },
+          {
+            "type": "keydown",
+            "key": "Enter",
+            "repeat": false,
+            "detail": 0,
+            "trusted": true,
+            "target": "",
+            "prevented": true
+          },
+          {
+            "type": "click",
+            "key": null,
+            "repeat": null,
+            "detail": 0,
+            "trusted": false,
+            "target": "",
+            "prevented": false
+          },
+          {
+            "type": "keyup",
+            "key": "Enter",
+            "repeat": false,
+            "detail": 0,
+            "trusted": true,
+            "target": "",
+            "prevented": false
+          },
+          {
+            "type": "click",
+            "key": null,
+            "repeat": null,
+            "detail": 1,
+            "trusted": true,
+            "target": "next",
+            "prevented": false
+          },
+          {
+            "type": "click",
+            "key": null,
+            "repeat": null,
+            "detail": 1,
+            "trusted": true,
+            "target": "Volgende les \u2192",
+            "prevented": false
+          },
+          {
+            "type": "click",
+            "key": null,
+            "repeat": null,
+            "detail": 1,
+            "trusted": true,
+            "target": "check",
+            "prevented": false
+          },
+          {
+            "type": "click",
+            "key": null,
+            "repeat": null,
+            "detail": 1,
+            "trusted": true,
+            "target": "next",
+            "prevented": false
+          }
+        ]
+      },
+      "opened": {
+        "good": 8,
+        "pizzas": 1,
+        "slices": 0,
+        "trips": 0,
+        "current": "city-4",
+        "mode": "write",
+        "dialogs": [
+          "pizzaCelebration"
+        ],
+        "focus": {
+          "id": "",
+          "text": "Verder",
+          "inPizza": true
+        },
+        "events": [
+          {
+            "type": "keydown",
+            "key": "Enter",
+            "repeat": false,
+            "detail": 0,
+            "trusted": true,
+            "target": "answer",
+            "prevented": false
+          },
+          {
+            "type": "keyup",
+            "key": "Enter",
+            "repeat": false,
+            "detail": 0,
+            "trusted": true,
+            "target": "Verder",
+            "prevented": false
+          }
+        ]
+      },
+      "intentionalNextKey": "Enter",
+      "after": {
+        "good": 8,
+        "pizzas": 1,
+        "slices": 0,
+        "trips": 0,
+        "current": "city-4",
+        "mode": "write",
+        "dialogs": [],
+        "focus": {
+          "id": "next",
+          "text": "Volgende \u2192",
+          "inPizza": false
+        },
+        "events": [
+          {
+            "type": "keydown",
+            "key": "Enter",
+            "repeat": false,
+            "detail": 0,
+            "trusted": true,
+            "target": "answer",
+            "prevented": false
+          },
+          {
+            "type": "keyup",
+            "key": "Enter",
+            "repeat": false,
+            "detail": 0,
+            "trusted": true,
+            "target": "Verder",
+            "prevented": false
+          },
+          {
+            "type": "keydown",
+            "key": "Enter",
+            "repeat": false,
+            "detail": 0,
+            "trusted": true,
+            "target": "Verder",
+            "prevented": false
+          },
+          {
+            "type": "click",
+            "key": null,
+            "repeat": null,
+            "detail": 0,
+            "trusted": true,
+            "target": "Verder",
+            "prevented": false
+          },
+          {
+            "type": "keyup",
+            "key": "Enter",
+            "repeat": false,
+            "detail": 0,
+            "trusted": true,
+            "target": "Verder",
+            "prevented": false
+          },
+          {
+            "type": "close",
+            "key": null,
+            "repeat": null,
+            "detail": null,
+            "trusted": true,
+            "target": "pizzaCelebration",
+            "prevented": false
+          }
+        ]
+      },
+      "errors": [],
+      "outbound": [],
+      "pass": true
+    },
+    {
+      "case": "chromium-click-reduce",
+      "engine": "chromium",
+      "motion": "reduce",
+      "trigger": "click",
+      "baseline": "#nieuw startszero;8correct answers genuinely earned via UI",
+      "initial": {
+        "good": 0,
+        "pizzas": 0,
+        "slices": 0,
+        "trips": 0,
+        "current": null,
+        "mode": "point",
+        "dialogs": [],
+        "focus": {
+          "id": "",
+          "text": "V3-preview \u00b7 demo \u00b7 niets wordt bewaardNieuw ",
+          "inPizza": false
+        },
+        "events": []
+      },
+      "before": {
+        "good": 7,
+        "pizzas": 0,
+        "slices": 7,
+        "trips": 0,
+        "current": "city-6",
+        "mode": "write",
+        "dialogs": [],
+        "focus": {
+          "id": "next",
+          "text": "Ik weet het nog niet",
+          "inPizza": false
+        },
+        "events": [
+          {
+            "type": "click",
+            "key": null,
+            "repeat": null,
+            "detail": 1,
+            "trusted": true,
+            "target": "Ontdekken",
+            "prevented": false
+          },
+          {
+            "type": "click",
+            "key": null,
+            "repeat": null,
+            "detail": 0,
+            "trusted": false,
+            "target": "routeContinue",
+            "prevented": false
+          },
+          {
+            "type": "click",
+            "key": null,
+            "repeat": null,
+            "detail": 1,
+            "trusted": true,
+            "target": "next",
+            "prevented": false
+          },
+          {
+            "type": "click",
+            "key": null,
+            "repeat": null,
+            "detail": 1,
+            "trusted": true,
+            "target": "next",
+            "prevented": false
+          },
+          {
+            "type": "click",
+            "key": null,
+            "repeat": null,
+            "detail": 1,
+            "trusted": true,
+            "target": "next",
+            "prevented": false
+          },
+          {
+            "type": "click",
+            "key": null,
+            "repeat": null,
+            "detail": 1,
+            "trusted": true,
+            "target": "next",
+            "prevented": false
+          },
+          {
+            "type": "click",
+            "key": null,
+            "repeat": null,
+            "detail": 1,
+            "trusted": true,
+            "target": "next",
+            "prevented": false
+          },
+          {
+            "type": "click",
+            "key": null,
+            "repeat": null,
+            "detail": 1,
+            "trusted": true,
+            "target": "next",
+            "prevented": false
+          },
+          {
+            "type": "click",
+            "key": null,
+            "repeat": null,
+            "detail": 1,
+            "trusted": true,
+            "target": "Volgende les \u2192",
+            "prevented": false
+          },
+          {
+            "type": "keydown",
+            "key": "Enter",
+            "repeat": false,
+            "detail": 0,
+            "trusted": true,
+            "target": "",
+            "prevented": true
+          },
+          {
+            "type": "click",
+            "key": null,
+            "repeat": null,
+            "detail": 0,
+            "trusted": false,
+            "target": "",
+            "prevented": false
+          },
+          {
+            "type": "keyup",
+            "key": "Enter",
+            "repeat": false,
+            "detail": 0,
+            "trusted": true,
+            "target": "",
+            "prevented": false
+          },
+          {
+            "type": "click",
+            "key": null,
+            "repeat": null,
+            "detail": 1,
+            "trusted": true,
+            "target": "next",
+            "prevented": false
+          },
+          {
+            "type": "keydown",
+            "key": "Enter",
+            "repeat": false,
+            "detail": 0,
+            "trusted": true,
+            "target": "",
+            "prevented": true
+          },
+          {
+            "type": "click",
+            "key": null,
+            "repeat": null,
+            "detail": 0,
+            "trusted": false,
+            "target": "",
+            "prevented": false
+          },
+          {
+            "type": "keyup",
+            "key": "Enter",
+            "repeat": false,
+            "detail": 0,
+            "trusted": true,
+            "target": "",
+            "prevented": false
+          },
+          {
+            "type": "click",
+            "key": null,
+            "repeat": null,
+            "detail": 1,
+            "trusted": true,
+            "target": "next",
+            "prevented": false
+          },
+          {
+            "type": "keydown",
+            "key": "Enter",
+            "repeat": false,
+            "detail": 0,
+            "trusted": true,
+            "target": "",
+            "prevented": true
+          },
+          {
+            "type": "click",
+            "key": null,
+            "repeat": null,
+            "detail": 0,
+            "trusted": false,
+            "target": "",
+            "prevented": false
+          },
+          {
+            "type": "keyup",
+            "key": "Enter",
+            "repeat": false,
+            "detail": 0,
+            "trusted": true,
+            "target": "",
+            "prevented": false
+          },
+          {
+            "type": "click",
+            "key": null,
+            "repeat": null,
+            "detail": 1,
+            "trusted": true,
+            "target": "next",
+            "prevented": false
+          },
+          {
+            "type": "keydown",
+            "key": "Enter",
+            "repeat": false,
+            "detail": 0,
+            "trusted": true,
+            "target": "",
+            "prevented": true
+          },
+          {
+            "type": "click",
+            "key": null,
+            "repeat": null,
+            "detail": 0,
+            "trusted": false,
+            "target": "",
+            "prevented": false
+          },
+          {
+            "type": "keyup",
+            "key": "Enter",
+            "repeat": false,
+            "detail": 0,
+            "trusted": true,
+            "target": "",
+            "prevented": false
+          },
+          {
+            "type": "click",
+            "key": null,
+            "repeat": null,
+            "detail": 1,
+            "trusted": true,
+            "target": "next",
+            "prevented": false
+          },
+          {
+            "type": "keydown",
+            "key": "Enter",
+            "repeat": false,
+            "detail": 0,
+            "trusted": true,
+            "target": "",
+            "prevented": true
+          },
+          {
+            "type": "click",
+            "key": null,
+            "repeat": null,
+            "detail": 0,
+            "trusted": false,
+            "target": "",
+            "prevented": false
+          },
+          {
+            "type": "keyup",
+            "key": "Enter",
+            "repeat": false,
+            "detail": 0,
+            "trusted": true,
+            "target": "",
+            "prevented": false
+          },
+          {
+            "type": "click",
+            "key": null,
+            "repeat": null,
+            "detail": 1,
+            "trusted": true,
+            "target": "next",
+            "prevented": false
+          },
+          {
+            "type": "keydown",
+            "key": "Enter",
+            "repeat": false,
+            "detail": 0,
+            "trusted": true,
+            "target": "",
+            "prevented": true
+          },
+          {
+            "type": "click",
+            "key": null,
+            "repeat": null,
+            "detail": 0,
+            "trusted": false,
+            "target": "",
+            "prevented": false
+          },
+          {
+            "type": "keyup",
+            "key": "Enter",
+            "repeat": false,
+            "detail": 0,
+            "trusted": true,
+            "target": "",
+            "prevented": false
+          },
+          {
+            "type": "click",
+            "key": null,
+            "repeat": null,
+            "detail": 1,
+            "trusted": true,
+            "target": "next",
+            "prevented": false
+          },
+          {
+            "type": "click",
+            "key": null,
+            "repeat": null,
+            "detail": 1,
+            "trusted": true,
+            "target": "Volgende les \u2192",
+            "prevented": false
+          },
+          {
+            "type": "click",
+            "key": null,
+            "repeat": null,
+            "detail": 1,
+            "trusted": true,
+            "target": "check",
+            "prevented": false
+          },
+          {
+            "type": "click",
+            "key": null,
+            "repeat": null,
+            "detail": 1,
+            "trusted": true,
+            "target": "next",
+            "prevented": false
+          }
+        ]
+      },
+      "opened": {
+        "good": 8,
+        "pizzas": 1,
+        "slices": 0,
+        "trips": 0,
+        "current": "city-6",
+        "mode": "write",
+        "dialogs": [
+          "pizzaCelebration"
+        ],
+        "focus": {
+          "id": "",
+          "text": "Verder",
+          "inPizza": true
+        },
+        "events": [
+          {
+            "type": "click",
+            "key": null,
+            "repeat": null,
+            "detail": 1,
+            "trusted": true,
+            "target": "check",
+            "prevented": false
+          }
+        ]
+      },
+      "intentionalNextKey": "Space",
+      "after": {
+        "good": 8,
+        "pizzas": 1,
+        "slices": 0,
+        "trips": 0,
+        "current": "city-6",
+        "mode": "write",
+        "dialogs": [],
+        "focus": {
+          "id": "next",
+          "text": "Volgende \u2192",
+          "inPizza": false
+        },
+        "events": [
+          {
+            "type": "click",
+            "key": null,
+            "repeat": null,
+            "detail": 1,
+            "trusted": true,
+            "target": "check",
+            "prevented": false
+          },
+          {
+            "type": "keydown",
+            "key": " ",
+            "repeat": false,
+            "detail": 0,
+            "trusted": true,
+            "target": "Verder",
+            "prevented": false
+          },
+          {
+            "type": "keyup",
+            "key": " ",
+            "repeat": false,
+            "detail": 0,
+            "trusted": true,
+            "target": "Verder",
+            "prevented": false
+          },
+          {
+            "type": "click",
+            "key": null,
+            "repeat": null,
+            "detail": 0,
+            "trusted": true,
+            "target": "Verder",
+            "prevented": false
+          },
+          {
+            "type": "close",
+            "key": null,
+            "repeat": null,
+            "detail": null,
+            "trusted": true,
+            "target": "pizzaCelebration",
+            "prevented": false
+          }
+        ]
+      },
+      "errors": [],
+      "outbound": [],
+      "pass": true
+    },
+    {
+      "case": "chromium-point-Space-reduce",
+      "engine": "chromium",
+      "motion": "reduce",
+      "trigger": "map Space",
+      "baseline": "#bezig fixture imports1pizza6slices; only next2point answers earned",
+      "initial": {
+        "good": 14,
+        "pizzas": 1,
+        "slices": 6,
+        "trips": 0,
+        "current": null,
+        "mode": "point",
+        "dialogs": [],
+        "focus": {
+          "id": "",
+          "text": "V3-preview \u00b7 demo \u00b7 niets wordt bewaardNieuw ",
+          "inPizza": false
+        },
+        "events": []
+      },
+      "before": {
+        "good": 15,
+        "pizzas": 1,
+        "slices": 7,
+        "trips": 0,
+        "current": "city-11",
+        "mode": "point",
+        "dialogs": [],
+        "focus": {
+          "id": "next",
+          "text": "Ik weet het nog niet",
+          "inPizza": false
+        },
+        "events": [
+          {
+            "type": "click",
+            "key": null,
+            "repeat": null,
+            "detail": 1,
+            "trusted": true,
+            "target": "Aanwijzen",
+            "prevented": false
+          },
+          {
+            "type": "click",
+            "key": null,
+            "repeat": null,
+            "detail": 0,
+            "trusted": false,
+            "target": "routeContinue",
+            "prevented": false
+          },
+          {
+            "type": "keydown",
+            "key": "Enter",
+            "repeat": false,
+            "detail": 0,
+            "trusted": true,
+            "target": "",
+            "prevented": true
+          },
+          {
+            "type": "click",
+            "key": null,
+            "repeat": null,
+            "detail": 0,
+            "trusted": false,
+            "target": "",
+            "prevented": false
+          },
+          {
+            "type": "keyup",
+            "key": "Enter",
+            "repeat": false,
+            "detail": 0,
+            "trusted": true,
+            "target": "",
+            "prevented": false
+          },
+          {
+            "type": "click",
+            "key": null,
+            "repeat": null,
+            "detail": 1,
+            "trusted": true,
+            "target": "next",
+            "prevented": false
+          }
+        ]
+      },
+      "opened": {
+        "good": 16,
+        "pizzas": 2,
+        "slices": 0,
+        "trips": 0,
+        "current": "city-11",
+        "mode": "point",
+        "dialogs": [
+          "pizzaCelebration"
+        ],
+        "focus": {
+          "id": "",
+          "text": "Verder",
+          "inPizza": true
+        },
+        "events": [
+          {
+            "type": "keydown",
+            "key": " ",
+            "repeat": false,
+            "detail": 0,
+            "trusted": true,
+            "target": "",
+            "prevented": true
+          },
+          {
+            "type": "click",
+            "key": null,
+            "repeat": null,
+            "detail": 0,
+            "trusted": false,
+            "target": "",
+            "prevented": false
+          },
+          {
+            "type": "keyup",
+            "key": " ",
+            "repeat": false,
+            "detail": 0,
+            "trusted": true,
+            "target": "Verder",
+            "prevented": false
+          }
+        ]
+      },
+      "intentionalNextKey": "Space",
+      "after": {
+        "good": 16,
+        "pizzas": 2,
+        "slices": 0,
+        "trips": 0,
+        "current": "city-11",
+        "mode": "point",
+        "dialogs": [],
+        "focus": {
+          "id": "next",
+          "text": "Volgende \u2192",
+          "inPizza": false
+        },
+        "events": [
+          {
+            "type": "keydown",
+            "key": " ",
+            "repeat": false,
+            "detail": 0,
+            "trusted": true,
+            "target": "",
+            "prevented": true
+          },
+          {
+            "type": "click",
+            "key": null,
+            "repeat": null,
+            "detail": 0,
+            "trusted": false,
+            "target": "",
+            "prevented": false
+          },
+          {
+            "type": "keyup",
+            "key": " ",
+            "repeat": false,
+            "detail": 0,
+            "trusted": true,
+            "target": "Verder",
+            "prevented": false
+          },
+          {
+            "type": "keydown",
+            "key": " ",
+            "repeat": false,
+            "detail": 0,
+            "trusted": true,
+            "target": "Verder",
+            "prevented": false
+          },
+          {
+            "type": "keyup",
+            "key": " ",
+            "repeat": false,
+            "detail": 0,
+            "trusted": true,
+            "target": "Verder",
+            "prevented": false
+          },
+          {
+            "type": "click",
+            "key": null,
+            "repeat": null,
+            "detail": 0,
+            "trusted": true,
+            "target": "Verder",
+            "prevented": false
+          },
+          {
+            "type": "close",
+            "key": null,
+            "repeat": null,
+            "detail": null,
+            "trusted": true,
+            "target": "pizzaCelebration",
+            "prevented": false
+          }
+        ]
+      },
+      "errors": [],
+      "outbound": [],
+      "pass": true
+    },
+    {
+      "case": "chromium-Enter-motion",
+      "engine": "chromium",
+      "motion": "normal",
+      "trigger": "Enter",
+      "baseline": "#nieuw startszero;8correct answers genuinely earned via UI",
+      "initial": {
+        "good": 0,
+        "pizzas": 0,
+        "slices": 0,
+        "trips": 0,
+        "current": null,
+        "mode": "point",
+        "dialogs": [],
+        "focus": {
+          "id": "",
+          "text": "V3-preview \u00b7 demo \u00b7 niets wordt bewaardNieuw ",
+          "inPizza": false
+        },
+        "events": []
+      },
+      "before": {
+        "good": 7,
+        "pizzas": 0,
+        "slices": 7,
+        "trips": 0,
+        "current": "city-3",
+        "mode": "write",
+        "dialogs": [],
+        "focus": {
+          "id": "next",
+          "text": "Ik weet het nog niet",
+          "inPizza": false
+        },
+        "events": [
+          {
+            "type": "click",
+            "key": null,
+            "repeat": null,
+            "detail": 1,
+            "trusted": true,
+            "target": "Ontdekken",
+            "prevented": false
+          },
+          {
+            "type": "click",
+            "key": null,
+            "repeat": null,
+            "detail": 0,
+            "trusted": false,
+            "target": "routeContinue",
+            "prevented": false
+          },
+          {
+            "type": "click",
+            "key": null,
+            "repeat": null,
+            "detail": 1,
+            "trusted": true,
+            "target": "next",
+            "prevented": false
+          },
+          {
+            "type": "click",
+            "key": null,
+            "repeat": null,
+            "detail": 1,
+            "trusted": true,
+            "target": "next",
+            "prevented": false
+          },
+          {
+            "type": "click",
+            "key": null,
+            "repeat": null,
+            "detail": 1,
+            "trusted": true,
+            "target": "next",
+            "prevented": false
+          },
+          {
+            "type": "click",
+            "key": null,
+            "repeat": null,
+            "detail": 1,
+            "trusted": true,
+            "target": "next",
+            "prevented": false
+          },
+          {
+            "type": "click",
+            "key": null,
+            "repeat": null,
+            "detail": 1,
+            "trusted": true,
+            "target": "next",
+            "prevented": false
+          },
+          {
+            "type": "click",
+            "key": null,
+            "repeat": null,
+            "detail": 1,
+            "trusted": true,
+            "target": "next",
+            "prevented": false
+          },
+          {
+            "type": "click",
+            "key": null,
+            "repeat": null,
+            "detail": 1,
+            "trusted": true,
+            "target": "Volgende les \u2192",
+            "prevented": false
+          },
+          {
+            "type": "keydown",
+            "key": "Enter",
+            "repeat": false,
+            "detail": 0,
+            "trusted": true,
+            "target": "",
+            "prevented": true
+          },
+          {
+            "type": "click",
+            "key": null,
+            "repeat": null,
+            "detail": 0,
+            "trusted": false,
+            "target": "",
+            "prevented": false
+          },
+          {
+            "type": "keyup",
+            "key": "Enter",
+            "repeat": false,
+            "detail": 0,
+            "trusted": true,
+            "target": "",
+            "prevented": false
+          },
+          {
+            "type": "click",
+            "key": null,
+            "repeat": null,
+            "detail": 1,
+            "trusted": true,
+            "target": "next",
+            "prevented": false
+          },
+          {
+            "type": "keydown",
+            "key": "Enter",
+            "repeat": false,
+            "detail": 0,
+            "trusted": true,
+            "target": "",
+            "prevented": true
+          },
+          {
+            "type": "click",
+            "key": null,
+            "repeat": null,
+            "detail": 0,
+            "trusted": false,
+            "target": "",
+            "prevented": false
+          },
+          {
+            "type": "keyup",
+            "key": "Enter",
+            "repeat": false,
+            "detail": 0,
+            "trusted": true,
+            "target": "",
+            "prevented": false
+          },
+          {
+            "type": "click",
+            "key": null,
+            "repeat": null,
+            "detail": 1,
+            "trusted": true,
+            "target": "next",
+            "prevented": false
+          },
+          {
+            "type": "keydown",
+            "key": "Enter",
+            "repeat": false,
+            "detail": 0,
+            "trusted": true,
+            "target": "",
+            "prevented": true
+          },
+          {
+            "type": "click",
+            "key": null,
+            "repeat": null,
+            "detail": 0,
+            "trusted": false,
+            "target": "",
+            "prevented": false
+          },
+          {
+            "type": "keyup",
+            "key": "Enter",
+            "repeat": false,
+            "detail": 0,
+            "trusted": true,
+            "target": "",
+            "prevented": false
+          },
+          {
+            "type": "click",
+            "key": null,
+            "repeat": null,
+            "detail": 1,
+            "trusted": true,
+            "target": "next",
+            "prevented": false
+          },
+          {
+            "type": "keydown",
+            "key": "Enter",
+            "repeat": false,
+            "detail": 0,
+            "trusted": true,
+            "target": "",
+            "prevented": true
+          },
+          {
+            "type": "click",
+            "key": null,
+            "repeat": null,
+            "detail": 0,
+            "trusted": false,
+            "target": "",
+            "prevented": false
+          },
+          {
+            "type": "keyup",
+            "key": "Enter",
+            "repeat": false,
+            "detail": 0,
+            "trusted": true,
+            "target": "",
+            "prevented": false
+          },
+          {
+            "type": "click",
+            "key": null,
+            "repeat": null,
+            "detail": 1,
+            "trusted": true,
+            "target": "next",
+            "prevented": false
+          },
+          {
+            "type": "keydown",
+            "key": "Enter",
+            "repeat": false,
+            "detail": 0,
+            "trusted": true,
+            "target": "",
+            "prevented": true
+          },
+          {
+            "type": "click",
+            "key": null,
+            "repeat": null,
+            "detail": 0,
+            "trusted": false,
+            "target": "",
+            "prevented": false
+          },
+          {
+            "type": "keyup",
+            "key": "Enter",
+            "repeat": false,
+            "detail": 0,
+            "trusted": true,
+            "target": "",
+            "prevented": false
+          },
+          {
+            "type": "click",
+            "key": null,
+            "repeat": null,
+            "detail": 1,
+            "trusted": true,
+            "target": "next",
+            "prevented": false
+          },
+          {
+            "type": "keydown",
+            "key": "Enter",
+            "repeat": false,
+            "detail": 0,
+            "trusted": true,
+            "target": "",
+            "prevented": true
+          },
+          {
+            "type": "click",
+            "key": null,
+            "repeat": null,
+            "detail": 0,
+            "trusted": false,
+            "target": "",
+            "prevented": false
+          },
+          {
+            "type": "keyup",
+            "key": "Enter",
+            "repeat": false,
+            "detail": 0,
+            "trusted": true,
+            "target": "",
+            "prevented": false
+          },
+          {
+            "type": "click",
+            "key": null,
+            "repeat": null,
+            "detail": 1,
+            "trusted": true,
+            "target": "next",
+            "prevented": false
+          },
+          {
+            "type": "click",
+            "key": null,
+            "repeat": null,
+            "detail": 1,
+            "trusted": true,
+            "target": "Volgende les \u2192",
+            "prevented": false
+          },
+          {
+            "type": "click",
+            "key": null,
+            "repeat": null,
+            "detail": 1,
+            "trusted": true,
+            "target": "check",
+            "prevented": false
+          },
+          {
+            "type": "click",
+            "key": null,
+            "repeat": null,
+            "detail": 1,
+            "trusted": true,
+            "target": "next",
+            "prevented": false
+          }
+        ]
+      },
+      "opened": {
+        "good": 8,
+        "pizzas": 1,
+        "slices": 0,
+        "trips": 0,
+        "current": "city-3",
+        "mode": "write",
+        "dialogs": [
+          "pizzaCelebration"
+        ],
+        "focus": {
+          "id": "",
+          "text": "Verder",
+          "inPizza": true
+        },
+        "events": [
+          {
+            "type": "keydown",
+            "key": "Enter",
+            "repeat": false,
+            "detail": 0,
+            "trusted": true,
+            "target": "answer",
+            "prevented": false
+          },
+          {
+            "type": "keyup",
+            "key": "Enter",
+            "repeat": false,
+            "detail": 0,
+            "trusted": true,
+            "target": "Verder",
+            "prevented": false
+          }
+        ]
+      },
+      "intentionalNextKey": "Enter",
+      "after": {
+        "good": 8,
+        "pizzas": 1,
+        "slices": 0,
+        "trips": 0,
+        "current": "city-3",
+        "mode": "write",
+        "dialogs": [],
+        "focus": {
+          "id": "next",
+          "text": "Volgende \u2192",
+          "inPizza": false
+        },
+        "events": [
+          {
+            "type": "keydown",
+            "key": "Enter",
+            "repeat": false,
+            "detail": 0,
+            "trusted": true,
+            "target": "answer",
+            "prevented": false
+          },
+          {
+            "type": "keyup",
+            "key": "Enter",
+            "repeat": false,
+            "detail": 0,
+            "trusted": true,
+            "target": "Verder",
+            "prevented": false
+          },
+          {
+            "type": "keydown",
+            "key": "Enter",
+            "repeat": false,
+            "detail": 0,
+            "trusted": true,
+            "target": "Verder",
+            "prevented": false
+          },
+          {
+            "type": "click",
+            "key": null,
+            "repeat": null,
+            "detail": 0,
+            "trusted": true,
+            "target": "Verder",
+            "prevented": false
+          },
+          {
+            "type": "keyup",
+            "key": "Enter",
+            "repeat": false,
+            "detail": 0,
+            "trusted": true,
+            "target": "Verder",
+            "prevented": false
+          },
+          {
+            "type": "close",
+            "key": null,
+            "repeat": null,
+            "detail": null,
+            "trusted": true,
+            "target": "pizzaCelebration",
+            "prevented": false
+          }
+        ]
+      },
+      "errors": [],
+      "outbound": [],
+      "pass": true
+    },
+    {
+      "case": "chromium-click-motion",
+      "engine": "chromium",
+      "motion": "normal",
+      "trigger": "click",
+      "baseline": "#nieuw startszero;8correct answers genuinely earned via UI",
+      "initial": {
+        "good": 0,
+        "pizzas": 0,
+        "slices": 0,
+        "trips": 0,
+        "current": null,
+        "mode": "point",
+        "dialogs": [],
+        "focus": {
+          "id": "",
+          "text": "V3-preview \u00b7 demo \u00b7 niets wordt bewaardNieuw ",
+          "inPizza": false
+        },
+        "events": []
+      },
+      "before": {
+        "good": 7,
+        "pizzas": 0,
+        "slices": 7,
+        "trips": 0,
+        "current": "city-3",
+        "mode": "write",
+        "dialogs": [],
+        "focus": {
+          "id": "next",
+          "text": "Ik weet het nog niet",
+          "inPizza": false
+        },
+        "events": [
+          {
+            "type": "click",
+            "key": null,
+            "repeat": null,
+            "detail": 1,
+            "trusted": true,
+            "target": "Ontdekken",
+            "prevented": false
+          },
+          {
+            "type": "click",
+            "key": null,
+            "repeat": null,
+            "detail": 0,
+            "trusted": false,
+            "target": "routeContinue",
+            "prevented": false
+          },
+          {
+            "type": "click",
+            "key": null,
+            "repeat": null,
+            "detail": 1,
+            "trusted": true,
+            "target": "next",
+            "prevented": false
+          },
+          {
+            "type": "click",
+            "key": null,
+            "repeat": null,
+            "detail": 1,
+            "trusted": true,
+            "target": "next",
+            "prevented": false
+          },
+          {
+            "type": "click",
+            "key": null,
+            "repeat": null,
+            "detail": 1,
+            "trusted": true,
+            "target": "next",
+            "prevented": false
+          },
+          {
+            "type": "click",
+            "key": null,
+            "repeat": null,
+            "detail": 1,
+            "trusted": true,
+            "target": "next",
+            "prevented": false
+          },
+          {
+            "type": "click",
+            "key": null,
+            "repeat": null,
+            "detail": 1,
+            "trusted": true,
+            "target": "next",
+            "prevented": false
+          },
+          {
+            "type": "click",
+            "key": null,
+            "repeat": null,
+            "detail": 1,
+            "trusted": true,
+            "target": "next",
+            "prevented": false
+          },
+          {
+            "type": "click",
+            "key": null,
+            "repeat": null,
+            "detail": 1,
+            "trusted": true,
+            "target": "Volgende les \u2192",
+            "prevented": false
+          },
+          {
+            "type": "keydown",
+            "key": "Enter",
+            "repeat": false,
+            "detail": 0,
+            "trusted": true,
+            "target": "",
+            "prevented": true
+          },
+          {
+            "type": "click",
+            "key": null,
+            "repeat": null,
+            "detail": 0,
+            "trusted": false,
+            "target": "",
+            "prevented": false
+          },
+          {
+            "type": "keyup",
+            "key": "Enter",
+            "repeat": false,
+            "detail": 0,
+            "trusted": true,
+            "target": "",
+            "prevented": false
+          },
+          {
+            "type": "click",
+            "key": null,
+            "repeat": null,
+            "detail": 1,
+            "trusted": true,
+            "target": "next",
+            "prevented": false
+          },
+          {
+            "type": "keydown",
+            "key": "Enter",
+            "repeat": false,
+            "detail": 0,
+            "trusted": true,
+            "target": "",
+            "prevented": true
+          },
+          {
+            "type": "click",
+            "key": null,
+            "repeat": null,
+            "detail": 0,
+            "trusted": false,
+            "target": "",
+            "prevented": false
+          },
+          {
+            "type": "keyup",
+            "key": "Enter",
+            "repeat": false,
+            "detail": 0,
+            "trusted": true,
+            "target": "",
+            "prevented": false
+          },
+          {
+            "type": "click",
+            "key": null,
+            "repeat": null,
+            "detail": 1,
+            "trusted": true,
+            "target": "next",
+            "prevented": false
+          },
+          {
+            "type": "keydown",
+            "key": "Enter",
+            "repeat": false,
+            "detail": 0,
+            "trusted": true,
+            "target": "",
+            "prevented": true
+          },
+          {
+            "type": "click",
+            "key": null,
+            "repeat": null,
+            "detail": 0,
+            "trusted": false,
+            "target": "",
+            "prevented": false
+          },
+          {
+            "type": "keyup",
+            "key": "Enter",
+            "repeat": false,
+            "detail": 0,
+            "trusted": true,
+            "target": "",
+            "prevented": false
+          },
+          {
+            "type": "click",
+            "key": null,
+            "repeat": null,
+            "detail": 1,
+            "trusted": true,
+            "target": "next",
+            "prevented": false
+          },
+          {
+            "type": "keydown",
+            "key": "Enter",
+            "repeat": false,
+            "detail": 0,
+            "trusted": true,
+            "target": "",
+            "prevented": true
+          },
+          {
+            "type": "click",
+            "key": null,
+            "repeat": null,
+            "detail": 0,
+            "trusted": false,
+            "target": "",
+            "prevented": false
+          },
+          {
+            "type": "keyup",
+            "key": "Enter",
+            "repeat": false,
+            "detail": 0,
+            "trusted": true,
+            "target": "",
+            "prevented": false
+          },
+          {
+            "type": "click",
+            "key": null,
+            "repeat": null,
+            "detail": 1,
+            "trusted": true,
+            "target": "next",
+            "prevented": false
+          },
+          {
+            "type": "keydown",
+            "key": "Enter",
+            "repeat": false,
+            "detail": 0,
+            "trusted": true,
+            "target": "",
+            "prevented": true
+          },
+          {
+            "type": "click",
+            "key": null,
+            "repeat": null,
+            "detail": 0,
+            "trusted": false,
+            "target": "",
+            "prevented": false
+          },
+          {
+            "type": "keyup",
+            "key": "Enter",
+            "repeat": false,
+            "detail": 0,
+            "trusted": true,
+            "target": "",
+            "prevented": false
+          },
+          {
+            "type": "click",
+            "key": null,
+            "repeat": null,
+            "detail": 1,
+            "trusted": true,
+            "target": "next",
+            "prevented": false
+          },
+          {
+            "type": "keydown",
+            "key": "Enter",
+            "repeat": false,
+            "detail": 0,
+            "trusted": true,
+            "target": "",
+            "prevented": true
+          },
+          {
+            "type": "click",
+            "key": null,
+            "repeat": null,
+            "detail": 0,
+            "trusted": false,
+            "target": "",
+            "prevented": false
+          },
+          {
+            "type": "keyup",
+            "key": "Enter",
+            "repeat": false,
+            "detail": 0,
+            "trusted": true,
+            "target": "",
+            "prevented": false
+          },
+          {
+            "type": "click",
+            "key": null,
+            "repeat": null,
+            "detail": 1,
+            "trusted": true,
+            "target": "next",
+            "prevented": false
+          },
+          {
+            "type": "click",
+            "key": null,
+            "repeat": null,
+            "detail": 1,
+            "trusted": true,
+            "target": "Volgende les \u2192",
+            "prevented": false
+          },
+          {
+            "type": "click",
+            "key": null,
+            "repeat": null,
+            "detail": 1,
+            "trusted": true,
+            "target": "check",
+            "prevented": false
+          },
+          {
+            "type": "click",
+            "key": null,
+            "repeat": null,
+            "detail": 1,
+            "trusted": true,
+            "target": "next",
+            "prevented": false
+          }
+        ]
+      },
+      "opened": {
+        "good": 8,
+        "pizzas": 1,
+        "slices": 0,
+        "trips": 0,
+        "current": "city-3",
+        "mode": "write",
+        "dialogs": [
+          "pizzaCelebration"
+        ],
+        "focus": {
+          "id": "",
+          "text": "Verder",
+          "inPizza": true
+        },
+        "events": [
+          {
+            "type": "click",
+            "key": null,
+            "repeat": null,
+            "detail": 1,
+            "trusted": true,
+            "target": "check",
+            "prevented": false
+          }
+        ]
+      },
+      "intentionalNextKey": "Space",
+      "after": {
+        "good": 8,
+        "pizzas": 1,
+        "slices": 0,
+        "trips": 0,
+        "current": "city-3",
+        "mode": "write",
+        "dialogs": [],
+        "focus": {
+          "id": "next",
+          "text": "Volgende \u2192",
+          "inPizza": false
+        },
+        "events": [
+          {
+            "type": "click",
+            "key": null,
+            "repeat": null,
+            "detail": 1,
+            "trusted": true,
+            "target": "check",
+            "prevented": false
+          },
+          {
+            "type": "keydown",
+            "key": " ",
+            "repeat": false,
+            "detail": 0,
+            "trusted": true,
+            "target": "Verder",
+            "prevented": false
+          },
+          {
+            "type": "keyup",
+            "key": " ",
+            "repeat": false,
+            "detail": 0,
+            "trusted": true,
+            "target": "Verder",
+            "prevented": false
+          },
+          {
+            "type": "click",
+            "key": null,
+            "repeat": null,
+            "detail": 0,
+            "trusted": true,
+            "target": "Verder",
+            "prevented": false
+          },
+          {
+            "type": "close",
+            "key": null,
+            "repeat": null,
+            "detail": null,
+            "trusted": true,
+            "target": "pizzaCelebration",
+            "prevented": false
+          }
+        ]
+      },
+      "errors": [],
+      "outbound": [],
+      "pass": true
+    },
+    {
+      "case": "chromium-point-Space-motion",
+      "engine": "chromium",
+      "motion": "normal",
+      "trigger": "map Space",
+      "baseline": "#bezig fixture imports1pizza6slices; only next2point answers earned",
+      "initial": {
+        "good": 14,
+        "pizzas": 1,
+        "slices": 6,
+        "trips": 0,
+        "current": null,
+        "mode": "point",
+        "dialogs": [],
+        "focus": {
+          "id": "",
+          "text": "V3-preview \u00b7 demo \u00b7 niets wordt bewaardNieuw ",
+          "inPizza": false
+        },
+        "events": []
+      },
+      "before": {
+        "good": 15,
+        "pizzas": 1,
+        "slices": 7,
+        "trips": 0,
+        "current": "city-8",
+        "mode": "point",
+        "dialogs": [],
+        "focus": {
+          "id": "next",
+          "text": "Ik weet het nog niet",
+          "inPizza": false
+        },
+        "events": [
+          {
+            "type": "click",
+            "key": null,
+            "repeat": null,
+            "detail": 1,
+            "trusted": true,
+            "target": "Aanwijzen",
+            "prevented": false
+          },
+          {
+            "type": "click",
+            "key": null,
+            "repeat": null,
+            "detail": 0,
+            "trusted": false,
+            "target": "routeContinue",
+            "prevented": false
+          },
+          {
+            "type": "keydown",
+            "key": "Enter",
+            "repeat": false,
+            "detail": 0,
+            "trusted": true,
+            "target": "",
+            "prevented": true
+          },
+          {
+            "type": "click",
+            "key": null,
+            "repeat": null,
+            "detail": 0,
+            "trusted": false,
+            "target": "",
+            "prevented": false
+          },
+          {
+            "type": "keyup",
+            "key": "Enter",
+            "repeat": false,
+            "detail": 0,
+            "trusted": true,
+            "target": "",
+            "prevented": false
+          },
+          {
+            "type": "click",
+            "key": null,
+            "repeat": null,
+            "detail": 1,
+            "trusted": true,
+            "target": "next",
+            "prevented": false
+          }
+        ]
+      },
+      "opened": {
+        "good": 16,
+        "pizzas": 2,
+        "slices": 0,
+        "trips": 0,
+        "current": "city-8",
+        "mode": "point",
+        "dialogs": [
+          "pizzaCelebration"
+        ],
+        "focus": {
+          "id": "",
+          "text": "Verder",
+          "inPizza": true
+        },
+        "events": [
+          {
+            "type": "keydown",
+            "key": " ",
+            "repeat": false,
+            "detail": 0,
+            "trusted": true,
+            "target": "",
+            "prevented": true
+          },
+          {
+            "type": "click",
+            "key": null,
+            "repeat": null,
+            "detail": 0,
+            "trusted": false,
+            "target": "",
+            "prevented": false
+          },
+          {
+            "type": "keyup",
+            "key": " ",
+            "repeat": false,
+            "detail": 0,
+            "trusted": true,
+            "target": "Verder",
+            "prevented": false
+          }
+        ]
+      },
+      "intentionalNextKey": "Space",
+      "after": {
+        "good": 16,
+        "pizzas": 2,
+        "slices": 0,
+        "trips": 0,
+        "current": "city-8",
+        "mode": "point",
+        "dialogs": [],
+        "focus": {
+          "id": "next",
+          "text": "Volgende \u2192",
+          "inPizza": false
+        },
+        "events": [
+          {
+            "type": "keydown",
+            "key": " ",
+            "repeat": false,
+            "detail": 0,
+            "trusted": true,
+            "target": "",
+            "prevented": true
+          },
+          {
+            "type": "click",
+            "key": null,
+            "repeat": null,
+            "detail": 0,
+            "trusted": false,
+            "target": "",
+            "prevented": false
+          },
+          {
+            "type": "keyup",
+            "key": " ",
+            "repeat": false,
+            "detail": 0,
+            "trusted": true,
+            "target": "Verder",
+            "prevented": false
+          },
+          {
+            "type": "keydown",
+            "key": " ",
+            "repeat": false,
+            "detail": 0,
+            "trusted": true,
+            "target": "Verder",
+            "prevented": false
+          },
+          {
+            "type": "keyup",
+            "key": " ",
+            "repeat": false,
+            "detail": 0,
+            "trusted": true,
+            "target": "Verder",
+            "prevented": false
+          },
+          {
+            "type": "click",
+            "key": null,
+            "repeat": null,
+            "detail": 0,
+            "trusted": true,
+            "target": "Verder",
+            "prevented": false
+          },
+          {
+            "type": "close",
+            "key": null,
+            "repeat": null,
+            "detail": null,
+            "trusted": true,
+            "target": "pizzaCelebration",
+            "prevented": false
+          }
+        ]
+      },
+      "errors": [],
+      "outbound": [],
+      "pass": true
+    },
+    {
+      "case": "chromium-held-Enter-reduce",
+      "engine": "chromium",
+      "motion": "reduce",
+      "trigger": "held/repeated Enter",
+      "baseline": "#nieuw startszero;8correct answers genuinely earned via UI",
+      "initial": {
+        "good": 0,
+        "pizzas": 0,
+        "slices": 0,
+        "trips": 0,
+        "current": null,
+        "mode": "point",
+        "dialogs": [],
+        "focus": {
+          "id": "",
+          "text": "V3-preview \u00b7 demo \u00b7 niets wordt bewaardNieuw ",
+          "inPizza": false
+        },
+        "events": []
+      },
+      "before": {
+        "good": 7,
+        "pizzas": 0,
+        "slices": 7,
+        "trips": 0,
+        "current": "city-2",
+        "mode": "write",
+        "dialogs": [],
+        "focus": {
+          "id": "next",
+          "text": "Ik weet het nog niet",
+          "inPizza": false
+        },
+        "events": [
+          {
+            "type": "click",
+            "key": null,
+            "repeat": null,
+            "detail": 1,
+            "trusted": true,
+            "target": "Ontdekken",
+            "prevented": false
+          },
+          {
+            "type": "click",
+            "key": null,
+            "repeat": null,
+            "detail": 0,
+            "trusted": false,
+            "target": "routeContinue",
+            "prevented": false
+          },
+          {
+            "type": "click",
+            "key": null,
+            "repeat": null,
+            "detail": 1,
+            "trusted": true,
+            "target": "next",
+            "prevented": false
+          },
+          {
+            "type": "click",
+            "key": null,
+            "repeat": null,
+            "detail": 1,
+            "trusted": true,
+            "target": "next",
+            "prevented": false
+          },
+          {
+            "type": "click",
+            "key": null,
+            "repeat": null,
+            "detail": 1,
+            "trusted": true,
+            "target": "next",
+            "prevented": false
+          },
+          {
+            "type": "click",
+            "key": null,
+            "repeat": null,
+            "detail": 1,
+            "trusted": true,
+            "target": "next",
+            "prevented": false
+          },
+          {
+            "type": "click",
+            "key": null,
+            "repeat": null,
+            "detail": 1,
+            "trusted": true,
+            "target": "next",
+            "prevented": false
+          },
+          {
+            "type": "click",
+            "key": null,
+            "repeat": null,
+            "detail": 1,
+            "trusted": true,
+            "target": "next",
+            "prevented": false
+          },
+          {
+            "type": "click",
+            "key": null,
+            "repeat": null,
+            "detail": 1,
+            "trusted": true,
+            "target": "Volgende les \u2192",
+            "prevented": false
+          },
+          {
+            "type": "keydown",
+            "key": "Enter",
+            "repeat": false,
+            "detail": 0,
+            "trusted": true,
+            "target": "",
+            "prevented": true
+          },
+          {
+            "type": "click",
+            "key": null,
+            "repeat": null,
+            "detail": 0,
+            "trusted": false,
+            "target": "",
+            "prevented": false
+          },
+          {
+            "type": "keyup",
+            "key": "Enter",
+            "repeat": false,
+            "detail": 0,
+            "trusted": true,
+            "target": "",
+            "prevented": false
+          },
+          {
+            "type": "click",
+            "key": null,
+            "repeat": null,
+            "detail": 1,
+            "trusted": true,
+            "target": "next",
+            "prevented": false
+          },
+          {
+            "type": "keydown",
+            "key": "Enter",
+            "repeat": false,
+            "detail": 0,
+            "trusted": true,
+            "target": "",
+            "prevented": true
+          },
+          {
+            "type": "click",
+            "key": null,
+            "repeat": null,
+            "detail": 0,
+            "trusted": false,
+            "target": "",
+            "prevented": false
+          },
+          {
+            "type": "keyup",
+            "key": "Enter",
+            "repeat": false,
+            "detail": 0,
+            "trusted": true,
+            "target": "",
+            "prevented": false
+          },
+          {
+            "type": "click",
+            "key": null,
+            "repeat": null,
+            "detail": 1,
+            "trusted": true,
+            "target": "next",
+            "prevented": false
+          },
+          {
+            "type": "keydown",
+            "key": "Enter",
+            "repeat": false,
+            "detail": 0,
+            "trusted": true,
+            "target": "",
+            "prevented": true
+          },
+          {
+            "type": "click",
+            "key": null,
+            "repeat": null,
+            "detail": 0,
+            "trusted": false,
+            "target": "",
+            "prevented": false
+          },
+          {
+            "type": "keyup",
+            "key": "Enter",
+            "repeat": false,
+            "detail": 0,
+            "trusted": true,
+            "target": "",
+            "prevented": false
+          },
+          {
+            "type": "click",
+            "key": null,
+            "repeat": null,
+            "detail": 1,
+            "trusted": true,
+            "target": "next",
+            "prevented": false
+          },
+          {
+            "type": "keydown",
+            "key": "Enter",
+            "repeat": false,
+            "detail": 0,
+            "trusted": true,
+            "target": "",
+            "prevented": true
+          },
+          {
+            "type": "click",
+            "key": null,
+            "repeat": null,
+            "detail": 0,
+            "trusted": false,
+            "target": "",
+            "prevented": false
+          },
+          {
+            "type": "keyup",
+            "key": "Enter",
+            "repeat": false,
+            "detail": 0,
+            "trusted": true,
+            "target": "",
+            "prevented": false
+          },
+          {
+            "type": "click",
+            "key": null,
+            "repeat": null,
+            "detail": 1,
+            "trusted": true,
+            "target": "next",
+            "prevented": false
+          },
+          {
+            "type": "keydown",
+            "key": "Enter",
+            "repeat": false,
+            "detail": 0,
+            "trusted": true,
+            "target": "",
+            "prevented": true
+          },
+          {
+            "type": "click",
+            "key": null,
+            "repeat": null,
+            "detail": 0,
+            "trusted": false,
+            "target": "",
+            "prevented": false
+          },
+          {
+            "type": "keyup",
+            "key": "Enter",
+            "repeat": false,
+            "detail": 0,
+            "trusted": true,
+            "target": "",
+            "prevented": false
+          },
+          {
+            "type": "click",
+            "key": null,
+            "repeat": null,
+            "detail": 1,
+            "trusted": true,
+            "target": "next",
+            "prevented": false
+          },
+          {
+            "type": "keydown",
+            "key": "Enter",
+            "repeat": false,
+            "detail": 0,
+            "trusted": true,
+            "target": "",
+            "prevented": true
+          },
+          {
+            "type": "click",
+            "key": null,
+            "repeat": null,
+            "detail": 0,
+            "trusted": false,
+            "target": "",
+            "prevented": false
+          },
+          {
+            "type": "keyup",
+            "key": "Enter",
+            "repeat": false,
+            "detail": 0,
+            "trusted": true,
+            "target": "",
+            "prevented": false
+          },
+          {
+            "type": "click",
+            "key": null,
+            "repeat": null,
+            "detail": 1,
+            "trusted": true,
+            "target": "next",
+            "prevented": false
+          },
+          {
+            "type": "click",
+            "key": null,
+            "repeat": null,
+            "detail": 1,
+            "trusted": true,
+            "target": "Volgende les \u2192",
+            "prevented": false
+          },
+          {
+            "type": "click",
+            "key": null,
+            "repeat": null,
+            "detail": 1,
+            "trusted": true,
+            "target": "check",
+            "prevented": false
+          },
+          {
+            "type": "click",
+            "key": null,
+            "repeat": null,
+            "detail": 1,
+            "trusted": true,
+            "target": "next",
+            "prevented": false
+          }
+        ]
+      },
+      "opened": {
+        "good": 8,
+        "pizzas": 1,
+        "slices": 0,
+        "trips": 0,
+        "current": "city-2",
+        "mode": "write",
+        "dialogs": [
+          "pizzaCelebration"
+        ],
+        "focus": {
+          "id": "",
+          "text": "Verder",
+          "inPizza": true
+        },
+        "events": [
+          {
+            "type": "keydown",
+            "key": "Enter",
+            "repeat": false,
+            "detail": 0,
+            "trusted": true,
+            "target": "answer",
+            "prevented": false
+          },
+          {
+            "type": "keydown",
+            "key": "Enter",
+            "repeat": true,
+            "detail": 0,
+            "trusted": true,
+            "target": "Verder",
+            "prevented": false
+          }
+        ]
+      },
+      "intentionalNextKey": "Enter",
+      "after": {
+        "good": 8,
+        "pizzas": 1,
+        "slices": 0,
+        "trips": 0,
+        "current": "city-2",
+        "mode": "write",
+        "dialogs": [],
+        "focus": {
+          "id": "next",
+          "text": "Volgende \u2192",
+          "inPizza": false
+        },
+        "events": [
+          {
+            "type": "keydown",
+            "key": "Enter",
+            "repeat": false,
+            "detail": 0,
+            "trusted": true,
+            "target": "answer",
+            "prevented": false
+          },
+          {
+            "type": "keydown",
+            "key": "Enter",
+            "repeat": true,
+            "detail": 0,
+            "trusted": true,
+            "target": "Verder",
+            "prevented": false
+          },
+          {
+            "type": "keyup",
+            "key": "Enter",
+            "repeat": false,
+            "detail": 0,
+            "trusted": true,
+            "target": "Verder",
+            "prevented": false
+          },
+          {
+            "type": "keydown",
+            "key": "Enter",
+            "repeat": false,
+            "detail": 0,
+            "trusted": true,
+            "target": "Verder",
+            "prevented": false
+          },
+          {
+            "type": "click",
+            "key": null,
+            "repeat": null,
+            "detail": 0,
+            "trusted": true,
+            "target": "Verder",
+            "prevented": false
+          },
+          {
+            "type": "keyup",
+            "key": "Enter",
+            "repeat": false,
+            "detail": 0,
+            "trusted": true,
+            "target": "Verder",
+            "prevented": false
+          },
+          {
+            "type": "close",
+            "key": null,
+            "repeat": null,
+            "detail": null,
+            "trusted": true,
+            "target": "pizzaCelebration",
+            "prevented": false
+          }
+        ]
+      },
+      "errors": [],
+      "outbound": [],
+      "pass": true
+    },
+    {
+      "case": "webkit-Enter-reduce",
+      "engine": "webkit",
+      "motion": "reduce",
+      "trigger": "Enter",
+      "baseline": "#nieuw startszero;8correct answers genuinely earned via UI",
+      "initial": {
+        "good": 0,
+        "pizzas": 0,
+        "slices": 0,
+        "trips": 0,
+        "current": null,
+        "mode": "point",
+        "dialogs": [],
+        "focus": {
+          "id": "",
+          "text": "V3-preview \u00b7 demo \u00b7 niets wordt bewaardNieuw ",
+          "inPizza": false
+        },
+        "events": []
+      },
+      "before": {
+        "good": 7,
+        "pizzas": 0,
+        "slices": 7,
+        "trips": 0,
+        "current": "city-3",
+        "mode": "write",
+        "dialogs": [],
+        "focus": {
+          "id": "",
+          "text": "V3-preview \u00b7 demo \u00b7 niets wordt bewaardNieuw ",
+          "inPizza": false
+        },
+        "events": [
+          {
+            "type": "click",
+            "key": null,
+            "repeat": null,
+            "detail": 1,
+            "trusted": true,
+            "target": "Ontdekken",
+            "prevented": false
+          },
+          {
+            "type": "click",
+            "key": null,
+            "repeat": null,
+            "detail": 0,
+            "trusted": false,
+            "target": "routeContinue",
+            "prevented": false
+          },
+          {
+            "type": "click",
+            "key": null,
+            "repeat": null,
+            "detail": 1,
+            "trusted": true,
+            "target": "next",
+            "prevented": false
+          },
+          {
+            "type": "click",
+            "key": null,
+            "repeat": null,
+            "detail": 1,
+            "trusted": true,
+            "target": "next",
+            "prevented": false
+          },
+          {
+            "type": "click",
+            "key": null,
+            "repeat": null,
+            "detail": 1,
+            "trusted": true,
+            "target": "next",
+            "prevented": false
+          },
+          {
+            "type": "click",
+            "key": null,
+            "repeat": null,
+            "detail": 1,
+            "trusted": true,
+            "target": "next",
+            "prevented": false
+          },
+          {
+            "type": "click",
+            "key": null,
+            "repeat": null,
+            "detail": 1,
+            "trusted": true,
+            "target": "next",
+            "prevented": false
+          },
+          {
+            "type": "click",
+            "key": null,
+            "repeat": null,
+            "detail": 1,
+            "trusted": true,
+            "target": "next",
+            "prevented": false
+          },
+          {
+            "type": "click",
+            "key": null,
+            "repeat": null,
+            "detail": 1,
+            "trusted": true,
+            "target": "Volgende les \u2192",
+            "prevented": false
+          },
+          {
+            "type": "keydown",
+            "key": "Enter",
+            "repeat": false,
+            "detail": 0,
+            "trusted": true,
+            "target": "",
+            "prevented": true
+          },
+          {
+            "type": "click",
+            "key": null,
+            "repeat": null,
+            "detail": 0,
+            "trusted": false,
+            "target": "",
+            "prevented": false
+          },
+          {
+            "type": "keyup",
+            "key": "Enter",
+            "repeat": false,
+            "detail": 0,
+            "trusted": true,
+            "target": "",
+            "prevented": false
+          },
+          {
+            "type": "click",
+            "key": null,
+            "repeat": null,
+            "detail": 1,
+            "trusted": true,
+            "target": "next",
+            "prevented": false
+          },
+          {
+            "type": "keydown",
+            "key": "Enter",
+            "repeat": false,
+            "detail": 0,
+            "trusted": true,
+            "target": "",
+            "prevented": true
+          },
+          {
+            "type": "click",
+            "key": null,
+            "repeat": null,
+            "detail": 0,
+            "trusted": false,
+            "target": "",
+            "prevented": false
+          },
+          {
+            "type": "keyup",
+            "key": "Enter",
+            "repeat": false,
+            "detail": 0,
+            "trusted": true,
+            "target": "",
+            "prevented": false
+          },
+          {
+            "type": "click",
+            "key": null,
+            "repeat": null,
+            "detail": 1,
+            "trusted": true,
+            "target": "next",
+            "prevented": false
+          },
+          {
+            "type": "keydown",
+            "key": "Enter",
+            "repeat": false,
+            "detail": 0,
+            "trusted": true,
+            "target": "",
+            "prevented": true
+          },
+          {
+            "type": "click",
+            "key": null,
+            "repeat": null,
+            "detail": 0,
+            "trusted": false,
+            "target": "",
+            "prevented": false
+          },
+          {
+            "type": "keyup",
+            "key": "Enter",
+            "repeat": false,
+            "detail": 0,
+            "trusted": true,
+            "target": "",
+            "prevented": false
+          },
+          {
+            "type": "click",
+            "key": null,
+            "repeat": null,
+            "detail": 1,
+            "trusted": true,
+            "target": "next",
+            "prevented": false
+          },
+          {
+            "type": "keydown",
+            "key": "Enter",
+            "repeat": false,
+            "detail": 0,
+            "trusted": true,
+            "target": "",
+            "prevented": true
+          },
+          {
+            "type": "click",
+            "key": null,
+            "repeat": null,
+            "detail": 0,
+            "trusted": false,
+            "target": "",
+            "prevented": false
+          },
+          {
+            "type": "keyup",
+            "key": "Enter",
+            "repeat": false,
+            "detail": 0,
+            "trusted": true,
+            "target": "",
+            "prevented": false
+          },
+          {
+            "type": "click",
+            "key": null,
+            "repeat": null,
+            "detail": 1,
+            "trusted": true,
+            "target": "next",
+            "prevented": false
+          },
+          {
+            "type": "keydown",
+            "key": "Enter",
+            "repeat": false,
+            "detail": 0,
+            "trusted": true,
+            "target": "",
+            "prevented": true
+          },
+          {
+            "type": "click",
+            "key": null,
+            "repeat": null,
+            "detail": 0,
+            "trusted": false,
+            "target": "",
+            "prevented": false
+          },
+          {
+            "type": "keyup",
+            "key": "Enter",
+            "repeat": false,
+            "detail": 0,
+            "trusted": true,
+            "target": "",
+            "prevented": false
+          },
+          {
+            "type": "click",
+            "key": null,
+            "repeat": null,
+            "detail": 1,
+            "trusted": true,
+            "target": "next",
+            "prevented": false
+          },
+          {
+            "type": "keydown",
+            "key": "Enter",
+            "repeat": false,
+            "detail": 0,
+            "trusted": true,
+            "target": "",
+            "prevented": true
+          },
+          {
+            "type": "click",
+            "key": null,
+            "repeat": null,
+            "detail": 0,
+            "trusted": false,
+            "target": "",
+            "prevented": false
+          },
+          {
+            "type": "keyup",
+            "key": "Enter",
+            "repeat": false,
+            "detail": 0,
+            "trusted": true,
+            "target": "",
+            "prevented": false
+          },
+          {
+            "type": "click",
+            "key": null,
+            "repeat": null,
+            "detail": 1,
+            "trusted": true,
+            "target": "next",
+            "prevented": false
+          },
+          {
+            "type": "click",
+            "key": null,
+            "repeat": null,
+            "detail": 1,
+            "trusted": true,
+            "target": "Volgende les \u2192",
+            "prevented": false
+          },
+          {
+            "type": "click",
+            "key": null,
+            "repeat": null,
+            "detail": 1,
+            "trusted": true,
+            "target": "check",
+            "prevented": false
+          },
+          {
+            "type": "click",
+            "key": null,
+            "repeat": null,
+            "detail": 1,
+            "trusted": true,
+            "target": "next",
+            "prevented": false
+          }
+        ]
+      },
+      "opened": {
+        "good": 8,
+        "pizzas": 1,
+        "slices": 0,
+        "trips": 0,
+        "current": "city-3",
+        "mode": "write",
+        "dialogs": [
+          "pizzaCelebration"
+        ],
+        "focus": {
+          "id": "",
+          "text": "Verder",
+          "inPizza": true
+        },
+        "events": [
+          {
+            "type": "keydown",
+            "key": "Enter",
+            "repeat": false,
+            "detail": 0,
+            "trusted": true,
+            "target": "answer",
+            "prevented": false
+          },
+          {
+            "type": "keyup",
+            "key": "Enter",
+            "repeat": false,
+            "detail": 0,
+            "trusted": true,
+            "target": "Verder",
+            "prevented": false
+          }
+        ]
+      },
+      "intentionalNextKey": "Enter",
+      "after": {
+        "good": 8,
+        "pizzas": 1,
+        "slices": 0,
+        "trips": 0,
+        "current": "city-3",
+        "mode": "write",
+        "dialogs": [],
+        "focus": {
+          "id": "next",
+          "text": "Volgende \u2192",
+          "inPizza": false
+        },
+        "events": [
+          {
+            "type": "keydown",
+            "key": "Enter",
+            "repeat": false,
+            "detail": 0,
+            "trusted": true,
+            "target": "answer",
+            "prevented": false
+          },
+          {
+            "type": "keyup",
+            "key": "Enter",
+            "repeat": false,
+            "detail": 0,
+            "trusted": true,
+            "target": "Verder",
+            "prevented": false
+          },
+          {
+            "type": "keydown",
+            "key": "Enter",
+            "repeat": false,
+            "detail": 0,
+            "trusted": true,
+            "target": "Verder",
+            "prevented": false
+          },
+          {
+            "type": "click",
+            "key": null,
+            "repeat": null,
+            "detail": 0,
+            "trusted": true,
+            "target": "Verder",
+            "prevented": false
+          },
+          {
+            "type": "close",
+            "key": null,
+            "repeat": null,
+            "detail": null,
+            "trusted": true,
+            "target": "pizzaCelebration",
+            "prevented": false
+          },
+          {
+            "type": "keyup",
+            "key": "Enter",
+            "repeat": false,
+            "detail": 0,
+            "trusted": true,
+            "target": "Verder",
+            "prevented": false
+          }
+        ]
+      },
+      "errors": [],
+      "outbound": [],
+      "pass": true
+    },
+    {
+      "case": "webkit-click-reduce",
+      "engine": "webkit",
+      "motion": "reduce",
+      "trigger": "click",
+      "baseline": "#nieuw startszero;8correct answers genuinely earned via UI",
+      "initial": {
+        "good": 0,
+        "pizzas": 0,
+        "slices": 0,
+        "trips": 0,
+        "current": null,
+        "mode": "point",
+        "dialogs": [],
+        "focus": {
+          "id": "",
+          "text": "V3-preview \u00b7 demo \u00b7 niets wordt bewaardNieuw ",
+          "inPizza": false
+        },
+        "events": []
+      },
+      "before": {
+        "good": 7,
+        "pizzas": 0,
+        "slices": 7,
+        "trips": 0,
+        "current": "city-4",
+        "mode": "write",
+        "dialogs": [],
+        "focus": {
+          "id": "",
+          "text": "V3-preview \u00b7 demo \u00b7 niets wordt bewaardNieuw ",
+          "inPizza": false
+        },
+        "events": [
+          {
+            "type": "click",
+            "key": null,
+            "repeat": null,
+            "detail": 1,
+            "trusted": true,
+            "target": "Ontdekken",
+            "prevented": false
+          },
+          {
+            "type": "click",
+            "key": null,
+            "repeat": null,
+            "detail": 0,
+            "trusted": false,
+            "target": "routeContinue",
+            "prevented": false
+          },
+          {
+            "type": "click",
+            "key": null,
+            "repeat": null,
+            "detail": 1,
+            "trusted": true,
+            "target": "next",
+            "prevented": false
+          },
+          {
+            "type": "click",
+            "key": null,
+            "repeat": null,
+            "detail": 1,
+            "trusted": true,
+            "target": "next",
+            "prevented": false
+          },
+          {
+            "type": "click",
+            "key": null,
+            "repeat": null,
+            "detail": 1,
+            "trusted": true,
+            "target": "next",
+            "prevented": false
+          },
+          {
+            "type": "click",
+            "key": null,
+            "repeat": null,
+            "detail": 1,
+            "trusted": true,
+            "target": "next",
+            "prevented": false
+          },
+          {
+            "type": "click",
+            "key": null,
+            "repeat": null,
+            "detail": 1,
+            "trusted": true,
+            "target": "next",
+            "prevented": false
+          },
+          {
+            "type": "click",
+            "key": null,
+            "repeat": null,
+            "detail": 1,
+            "trusted": true,
+            "target": "next",
+            "prevented": false
+          },
+          {
+            "type": "click",
+            "key": null,
+            "repeat": null,
+            "detail": 1,
+            "trusted": true,
+            "target": "Volgende les \u2192",
+            "prevented": false
+          },
+          {
+            "type": "keydown",
+            "key": "Enter",
+            "repeat": false,
+            "detail": 0,
+            "trusted": true,
+            "target": "",
+            "prevented": true
+          },
+          {
+            "type": "click",
+            "key": null,
+            "repeat": null,
+            "detail": 0,
+            "trusted": false,
+            "target": "",
+            "prevented": false
+          },
+          {
+            "type": "keyup",
+            "key": "Enter",
+            "repeat": false,
+            "detail": 0,
+            "trusted": true,
+            "target": "",
+            "prevented": false
+          },
+          {
+            "type": "click",
+            "key": null,
+            "repeat": null,
+            "detail": 1,
+            "trusted": true,
+            "target": "next",
+            "prevented": false
+          },
+          {
+            "type": "keydown",
+            "key": "Enter",
+            "repeat": false,
+            "detail": 0,
+            "trusted": true,
+            "target": "",
+            "prevented": true
+          },
+          {
+            "type": "click",
+            "key": null,
+            "repeat": null,
+            "detail": 0,
+            "trusted": false,
+            "target": "",
+            "prevented": false
+          },
+          {
+            "type": "keyup",
+            "key": "Enter",
+            "repeat": false,
+            "detail": 0,
+            "trusted": true,
+            "target": "",
+            "prevented": false
+          },
+          {
+            "type": "click",
+            "key": null,
+            "repeat": null,
+            "detail": 1,
+            "trusted": true,
+            "target": "next",
+            "prevented": false
+          },
+          {
+            "type": "keydown",
+            "key": "Enter",
+            "repeat": false,
+            "detail": 0,
+            "trusted": true,
+            "target": "",
+            "prevented": true
+          },
+          {
+            "type": "click",
+            "key": null,
+            "repeat": null,
+            "detail": 0,
+            "trusted": false,
+            "target": "",
+            "prevented": false
+          },
+          {
+            "type": "keyup",
+            "key": "Enter",
+            "repeat": false,
+            "detail": 0,
+            "trusted": true,
+            "target": "",
+            "prevented": false
+          },
+          {
+            "type": "click",
+            "key": null,
+            "repeat": null,
+            "detail": 1,
+            "trusted": true,
+            "target": "next",
+            "prevented": false
+          },
+          {
+            "type": "keydown",
+            "key": "Enter",
+            "repeat": false,
+            "detail": 0,
+            "trusted": true,
+            "target": "",
+            "prevented": true
+          },
+          {
+            "type": "click",
+            "key": null,
+            "repeat": null,
+            "detail": 0,
+            "trusted": false,
+            "target": "",
+            "prevented": false
+          },
+          {
+            "type": "keyup",
+            "key": "Enter",
+            "repeat": false,
+            "detail": 0,
+            "trusted": true,
+            "target": "",
+            "prevented": false
+          },
+          {
+            "type": "click",
+            "key": null,
+            "repeat": null,
+            "detail": 1,
+            "trusted": true,
+            "target": "next",
+            "prevented": false
+          },
+          {
+            "type": "keydown",
+            "key": "Enter",
+            "repeat": false,
+            "detail": 0,
+            "trusted": true,
+            "target": "",
+            "prevented": true
+          },
+          {
+            "type": "click",
+            "key": null,
+            "repeat": null,
+            "detail": 0,
+            "trusted": false,
+            "target": "",
+            "prevented": false
+          },
+          {
+            "type": "keyup",
+            "key": "Enter",
+            "repeat": false,
+            "detail": 0,
+            "trusted": true,
+            "target": "",
+            "prevented": false
+          },
+          {
+            "type": "click",
+            "key": null,
+            "repeat": null,
+            "detail": 1,
+            "trusted": true,
+            "target": "next",
+            "prevented": false
+          },
+          {
+            "type": "keydown",
+            "key": "Enter",
+            "repeat": false,
+            "detail": 0,
+            "trusted": true,
+            "target": "",
+            "prevented": true
+          },
+          {
+            "type": "click",
+            "key": null,
+            "repeat": null,
+            "detail": 0,
+            "trusted": false,
+            "target": "",
+            "prevented": false
+          },
+          {
+            "type": "keyup",
+            "key": "Enter",
+            "repeat": false,
+            "detail": 0,
+            "trusted": true,
+            "target": "",
+            "prevented": false
+          },
+          {
+            "type": "click",
+            "key": null,
+            "repeat": null,
+            "detail": 1,
+            "trusted": true,
+            "target": "next",
+            "prevented": false
+          },
+          {
+            "type": "click",
+            "key": null,
+            "repeat": null,
+            "detail": 1,
+            "trusted": true,
+            "target": "Volgende les \u2192",
+            "prevented": false
+          },
+          {
+            "type": "click",
+            "key": null,
+            "repeat": null,
+            "detail": 1,
+            "trusted": true,
+            "target": "check",
+            "prevented": false
+          },
+          {
+            "type": "click",
+            "key": null,
+            "repeat": null,
+            "detail": 1,
+            "trusted": true,
+            "target": "next",
+            "prevented": false
+          }
+        ]
+      },
+      "opened": {
+        "good": 8,
+        "pizzas": 1,
+        "slices": 0,
+        "trips": 0,
+        "current": "city-4",
+        "mode": "write",
+        "dialogs": [
+          "pizzaCelebration"
+        ],
+        "focus": {
+          "id": "",
+          "text": "Verder",
+          "inPizza": true
+        },
+        "events": [
+          {
+            "type": "click",
+            "key": null,
+            "repeat": null,
+            "detail": 1,
+            "trusted": true,
+            "target": "check",
+            "prevented": false
+          }
+        ]
+      },
+      "intentionalNextKey": "Space",
+      "after": {
+        "good": 8,
+        "pizzas": 1,
+        "slices": 0,
+        "trips": 0,
+        "current": "city-4",
+        "mode": "write",
+        "dialogs": [],
+        "focus": {
+          "id": "next",
+          "text": "Volgende \u2192",
+          "inPizza": false
+        },
+        "events": [
+          {
+            "type": "click",
+            "key": null,
+            "repeat": null,
+            "detail": 1,
+            "trusted": true,
+            "target": "check",
+            "prevented": false
+          },
+          {
+            "type": "keydown",
+            "key": " ",
+            "repeat": false,
+            "detail": 0,
+            "trusted": true,
+            "target": "Verder",
+            "prevented": false
+          },
+          {
+            "type": "keyup",
+            "key": " ",
+            "repeat": false,
+            "detail": 0,
+            "trusted": true,
+            "target": "Verder",
+            "prevented": false
+          },
+          {
+            "type": "click",
+            "key": null,
+            "repeat": null,
+            "detail": 0,
+            "trusted": true,
+            "target": "Verder",
+            "prevented": false
+          },
+          {
+            "type": "close",
+            "key": null,
+            "repeat": null,
+            "detail": null,
+            "trusted": true,
+            "target": "pizzaCelebration",
+            "prevented": false
+          }
+        ]
+      },
+      "errors": [],
+      "outbound": [],
+      "pass": true
+    },
+    {
+      "case": "webkit-point-Space-reduce",
+      "engine": "webkit",
+      "motion": "reduce",
+      "trigger": "map Space",
+      "baseline": "#bezig fixture imports1pizza6slices; only next2point answers earned",
+      "initial": {
+        "good": 14,
+        "pizzas": 1,
+        "slices": 6,
+        "trips": 0,
+        "current": null,
+        "mode": "point",
+        "dialogs": [],
+        "focus": {
+          "id": "",
+          "text": "V3-preview \u00b7 demo \u00b7 niets wordt bewaardNieuw ",
+          "inPizza": false
+        },
+        "events": []
+      },
+      "before": {
+        "good": 15,
+        "pizzas": 1,
+        "slices": 7,
+        "trips": 0,
+        "current": "city-9",
+        "mode": "point",
+        "dialogs": [],
+        "focus": {
+          "id": "",
+          "text": "V3-preview \u00b7 demo \u00b7 niets wordt bewaardNieuw ",
+          "inPizza": false
+        },
+        "events": [
+          {
+            "type": "click",
+            "key": null,
+            "repeat": null,
+            "detail": 1,
+            "trusted": true,
+            "target": "Aanwijzen",
+            "prevented": false
+          },
+          {
+            "type": "click",
+            "key": null,
+            "repeat": null,
+            "detail": 0,
+            "trusted": false,
+            "target": "routeContinue",
+            "prevented": false
+          },
+          {
+            "type": "keydown",
+            "key": "Enter",
+            "repeat": false,
+            "detail": 0,
+            "trusted": true,
+            "target": "",
+            "prevented": true
+          },
+          {
+            "type": "click",
+            "key": null,
+            "repeat": null,
+            "detail": 0,
+            "trusted": false,
+            "target": "",
+            "prevented": false
+          },
+          {
+            "type": "keyup",
+            "key": "Enter",
+            "repeat": false,
+            "detail": 0,
+            "trusted": true,
+            "target": "",
+            "prevented": false
+          },
+          {
+            "type": "click",
+            "key": null,
+            "repeat": null,
+            "detail": 1,
+            "trusted": true,
+            "target": "next",
+            "prevented": false
+          }
+        ]
+      },
+      "opened": {
+        "good": 16,
+        "pizzas": 2,
+        "slices": 0,
+        "trips": 0,
+        "current": "city-9",
+        "mode": "point",
+        "dialogs": [
+          "pizzaCelebration"
+        ],
+        "focus": {
+          "id": "",
+          "text": "Verder",
+          "inPizza": true
+        },
+        "events": [
+          {
+            "type": "keydown",
+            "key": " ",
+            "repeat": false,
+            "detail": 0,
+            "trusted": true,
+            "target": "",
+            "prevented": true
+          },
+          {
+            "type": "click",
+            "key": null,
+            "repeat": null,
+            "detail": 0,
+            "trusted": false,
+            "target": "",
+            "prevented": false
+          },
+          {
+            "type": "keyup",
+            "key": " ",
+            "repeat": false,
+            "detail": 0,
+            "trusted": true,
+            "target": "Verder",
+            "prevented": false
+          }
+        ]
+      },
+      "intentionalNextKey": "Space",
+      "after": {
+        "good": 16,
+        "pizzas": 2,
+        "slices": 0,
+        "trips": 0,
+        "current": "city-9",
+        "mode": "point",
+        "dialogs": [],
+        "focus": {
+          "id": "next",
+          "text": "Volgende \u2192",
+          "inPizza": false
+        },
+        "events": [
+          {
+            "type": "keydown",
+            "key": " ",
+            "repeat": false,
+            "detail": 0,
+            "trusted": true,
+            "target": "",
+            "prevented": true
+          },
+          {
+            "type": "click",
+            "key": null,
+            "repeat": null,
+            "detail": 0,
+            "trusted": false,
+            "target": "",
+            "prevented": false
+          },
+          {
+            "type": "keyup",
+            "key": " ",
+            "repeat": false,
+            "detail": 0,
+            "trusted": true,
+            "target": "Verder",
+            "prevented": false
+          },
+          {
+            "type": "keydown",
+            "key": " ",
+            "repeat": false,
+            "detail": 0,
+            "trusted": true,
+            "target": "Verder",
+            "prevented": false
+          },
+          {
+            "type": "keyup",
+            "key": " ",
+            "repeat": false,
+            "detail": 0,
+            "trusted": true,
+            "target": "Verder",
+            "prevented": false
+          },
+          {
+            "type": "click",
+            "key": null,
+            "repeat": null,
+            "detail": 0,
+            "trusted": true,
+            "target": "Verder",
+            "prevented": false
+          },
+          {
+            "type": "close",
+            "key": null,
+            "repeat": null,
+            "detail": null,
+            "trusted": true,
+            "target": "pizzaCelebration",
+            "prevented": false
+          }
+        ]
+      },
+      "errors": [],
+      "outbound": [],
+      "pass": true
+    },
+    {
+      "case": "webkit-Enter-motion",
+      "engine": "webkit",
+      "motion": "normal",
+      "trigger": "Enter",
+      "baseline": "#nieuw startszero;8correct answers genuinely earned via UI",
+      "initial": {
+        "good": 0,
+        "pizzas": 0,
+        "slices": 0,
+        "trips": 0,
+        "current": null,
+        "mode": "point",
+        "dialogs": [],
+        "focus": {
+          "id": "",
+          "text": "V3-preview \u00b7 demo \u00b7 niets wordt bewaardNieuw ",
+          "inPizza": false
+        },
+        "events": []
+      },
+      "before": {
+        "good": 7,
+        "pizzas": 0,
+        "slices": 7,
+        "trips": 0,
+        "current": "city-5",
+        "mode": "write",
+        "dialogs": [],
+        "focus": {
+          "id": "",
+          "text": "V3-preview \u00b7 demo \u00b7 niets wordt bewaardNieuw ",
+          "inPizza": false
+        },
+        "events": [
+          {
+            "type": "click",
+            "key": null,
+            "repeat": null,
+            "detail": 1,
+            "trusted": true,
+            "target": "Ontdekken",
+            "prevented": false
+          },
+          {
+            "type": "click",
+            "key": null,
+            "repeat": null,
+            "detail": 0,
+            "trusted": false,
+            "target": "routeContinue",
+            "prevented": false
+          },
+          {
+            "type": "click",
+            "key": null,
+            "repeat": null,
+            "detail": 1,
+            "trusted": true,
+            "target": "next",
+            "prevented": false
+          },
+          {
+            "type": "click",
+            "key": null,
+            "repeat": null,
+            "detail": 1,
+            "trusted": true,
+            "target": "next",
+            "prevented": false
+          },
+          {
+            "type": "click",
+            "key": null,
+            "repeat": null,
+            "detail": 1,
+            "trusted": true,
+            "target": "next",
+            "prevented": false
+          },
+          {
+            "type": "click",
+            "key": null,
+            "repeat": null,
+            "detail": 1,
+            "trusted": true,
+            "target": "next",
+            "prevented": false
+          },
+          {
+            "type": "click",
+            "key": null,
+            "repeat": null,
+            "detail": 1,
+            "trusted": true,
+            "target": "next",
+            "prevented": false
+          },
+          {
+            "type": "click",
+            "key": null,
+            "repeat": null,
+            "detail": 1,
+            "trusted": true,
+            "target": "next",
+            "prevented": false
+          },
+          {
+            "type": "click",
+            "key": null,
+            "repeat": null,
+            "detail": 1,
+            "trusted": true,
+            "target": "Volgende les \u2192",
+            "prevented": false
+          },
+          {
+            "type": "keydown",
+            "key": "Enter",
+            "repeat": false,
+            "detail": 0,
+            "trusted": true,
+            "target": "",
+            "prevented": true
+          },
+          {
+            "type": "click",
+            "key": null,
+            "repeat": null,
+            "detail": 0,
+            "trusted": false,
+            "target": "",
+            "prevented": false
+          },
+          {
+            "type": "keyup",
+            "key": "Enter",
+            "repeat": false,
+            "detail": 0,
+            "trusted": true,
+            "target": "",
+            "prevented": false
+          },
+          {
+            "type": "click",
+            "key": null,
+            "repeat": null,
+            "detail": 1,
+            "trusted": true,
+            "target": "next",
+            "prevented": false
+          },
+          {
+            "type": "keydown",
+            "key": "Enter",
+            "repeat": false,
+            "detail": 0,
+            "trusted": true,
+            "target": "",
+            "prevented": true
+          },
+          {
+            "type": "click",
+            "key": null,
+            "repeat": null,
+            "detail": 0,
+            "trusted": false,
+            "target": "",
+            "prevented": false
+          },
+          {
+            "type": "keyup",
+            "key": "Enter",
+            "repeat": false,
+            "detail": 0,
+            "trusted": true,
+            "target": "",
+            "prevented": false
+          },
+          {
+            "type": "click",
+            "key": null,
+            "repeat": null,
+            "detail": 1,
+            "trusted": true,
+            "target": "next",
+            "prevented": false
+          },
+          {
+            "type": "keydown",
+            "key": "Enter",
+            "repeat": false,
+            "detail": 0,
+            "trusted": true,
+            "target": "",
+            "prevented": true
+          },
+          {
+            "type": "click",
+            "key": null,
+            "repeat": null,
+            "detail": 0,
+            "trusted": false,
+            "target": "",
+            "prevented": false
+          },
+          {
+            "type": "keyup",
+            "key": "Enter",
+            "repeat": false,
+            "detail": 0,
+            "trusted": true,
+            "target": "",
+            "prevented": false
+          },
+          {
+            "type": "click",
+            "key": null,
+            "repeat": null,
+            "detail": 1,
+            "trusted": true,
+            "target": "next",
+            "prevented": false
+          },
+          {
+            "type": "keydown",
+            "key": "Enter",
+            "repeat": false,
+            "detail": 0,
+            "trusted": true,
+            "target": "",
+            "prevented": true
+          },
+          {
+            "type": "click",
+            "key": null,
+            "repeat": null,
+            "detail": 0,
+            "trusted": false,
+            "target": "",
+            "prevented": false
+          },
+          {
+            "type": "keyup",
+            "key": "Enter",
+            "repeat": false,
+            "detail": 0,
+            "trusted": true,
+            "target": "",
+            "prevented": false
+          },
+          {
+            "type": "click",
+            "key": null,
+            "repeat": null,
+            "detail": 1,
+            "trusted": true,
+            "target": "next",
+            "prevented": false
+          },
+          {
+            "type": "keydown",
+            "key": "Enter",
+            "repeat": false,
+            "detail": 0,
+            "trusted": true,
+            "target": "",
+            "prevented": true
+          },
+          {
+            "type": "click",
+            "key": null,
+            "repeat": null,
+            "detail": 0,
+            "trusted": false,
+            "target": "",
+            "prevented": false
+          },
+          {
+            "type": "keyup",
+            "key": "Enter",
+            "repeat": false,
+            "detail": 0,
+            "trusted": true,
+            "target": "",
+            "prevented": false
+          },
+          {
+            "type": "click",
+            "key": null,
+            "repeat": null,
+            "detail": 1,
+            "trusted": true,
+            "target": "next",
+            "prevented": false
+          },
+          {
+            "type": "keydown",
+            "key": "Enter",
+            "repeat": false,
+            "detail": 0,
+            "trusted": true,
+            "target": "",
+            "prevented": true
+          },
+          {
+            "type": "click",
+            "key": null,
+            "repeat": null,
+            "detail": 0,
+            "trusted": false,
+            "target": "",
+            "prevented": false
+          },
+          {
+            "type": "keyup",
+            "key": "Enter",
+            "repeat": false,
+            "detail": 0,
+            "trusted": true,
+            "target": "",
+            "prevented": false
+          },
+          {
+            "type": "click",
+            "key": null,
+            "repeat": null,
+            "detail": 1,
+            "trusted": true,
+            "target": "next",
+            "prevented": false
+          },
+          {
+            "type": "click",
+            "key": null,
+            "repeat": null,
+            "detail": 1,
+            "trusted": true,
+            "target": "Volgende les \u2192",
+            "prevented": false
+          },
+          {
+            "type": "click",
+            "key": null,
+            "repeat": null,
+            "detail": 1,
+            "trusted": true,
+            "target": "check",
+            "prevented": false
+          },
+          {
+            "type": "click",
+            "key": null,
+            "repeat": null,
+            "detail": 1,
+            "trusted": true,
+            "target": "next",
+            "prevented": false
+          }
+        ]
+      },
+      "opened": {
+        "good": 8,
+        "pizzas": 1,
+        "slices": 0,
+        "trips": 0,
+        "current": "city-5",
+        "mode": "write",
+        "dialogs": [
+          "pizzaCelebration"
+        ],
+        "focus": {
+          "id": "",
+          "text": "Verder",
+          "inPizza": true
+        },
+        "events": [
+          {
+            "type": "keydown",
+            "key": "Enter",
+            "repeat": false,
+            "detail": 0,
+            "trusted": true,
+            "target": "answer",
+            "prevented": false
+          },
+          {
+            "type": "keyup",
+            "key": "Enter",
+            "repeat": false,
+            "detail": 0,
+            "trusted": true,
+            "target": "Verder",
+            "prevented": false
+          }
+        ]
+      },
+      "intentionalNextKey": "Enter",
+      "after": {
+        "good": 8,
+        "pizzas": 1,
+        "slices": 0,
+        "trips": 0,
+        "current": "city-5",
+        "mode": "write",
+        "dialogs": [],
+        "focus": {
+          "id": "next",
+          "text": "Volgende \u2192",
+          "inPizza": false
+        },
+        "events": [
+          {
+            "type": "keydown",
+            "key": "Enter",
+            "repeat": false,
+            "detail": 0,
+            "trusted": true,
+            "target": "answer",
+            "prevented": false
+          },
+          {
+            "type": "keyup",
+            "key": "Enter",
+            "repeat": false,
+            "detail": 0,
+            "trusted": true,
+            "target": "Verder",
+            "prevented": false
+          },
+          {
+            "type": "keydown",
+            "key": "Enter",
+            "repeat": false,
+            "detail": 0,
+            "trusted": true,
+            "target": "Verder",
+            "prevented": false
+          },
+          {
+            "type": "click",
+            "key": null,
+            "repeat": null,
+            "detail": 0,
+            "trusted": true,
+            "target": "Verder",
+            "prevented": false
+          },
+          {
+            "type": "close",
+            "key": null,
+            "repeat": null,
+            "detail": null,
+            "trusted": true,
+            "target": "pizzaCelebration",
+            "prevented": false
+          },
+          {
+            "type": "keyup",
+            "key": "Enter",
+            "repeat": false,
+            "detail": 0,
+            "trusted": true,
+            "target": "Verder",
+            "prevented": false
+          }
+        ]
+      },
+      "errors": [],
+      "outbound": [],
+      "pass": true
+    },
+    {
+      "case": "webkit-click-motion",
+      "engine": "webkit",
+      "motion": "normal",
+      "trigger": "click",
+      "baseline": "#nieuw startszero;8correct answers genuinely earned via UI",
+      "initial": {
+        "good": 0,
+        "pizzas": 0,
+        "slices": 0,
+        "trips": 0,
+        "current": null,
+        "mode": "point",
+        "dialogs": [],
+        "focus": {
+          "id": "",
+          "text": "V3-preview \u00b7 demo \u00b7 niets wordt bewaardNieuw ",
+          "inPizza": false
+        },
+        "events": []
+      },
+      "before": {
+        "good": 7,
+        "pizzas": 0,
+        "slices": 7,
+        "trips": 0,
+        "current": "city-6",
+        "mode": "write",
+        "dialogs": [],
+        "focus": {
+          "id": "",
+          "text": "V3-preview \u00b7 demo \u00b7 niets wordt bewaardNieuw ",
+          "inPizza": false
+        },
+        "events": [
+          {
+            "type": "click",
+            "key": null,
+            "repeat": null,
+            "detail": 1,
+            "trusted": true,
+            "target": "Ontdekken",
+            "prevented": false
+          },
+          {
+            "type": "click",
+            "key": null,
+            "repeat": null,
+            "detail": 0,
+            "trusted": false,
+            "target": "routeContinue",
+            "prevented": false
+          },
+          {
+            "type": "click",
+            "key": null,
+            "repeat": null,
+            "detail": 1,
+            "trusted": true,
+            "target": "next",
+            "prevented": false
+          },
+          {
+            "type": "click",
+            "key": null,
+            "repeat": null,
+            "detail": 1,
+            "trusted": true,
+            "target": "next",
+            "prevented": false
+          },
+          {
+            "type": "click",
+            "key": null,
+            "repeat": null,
+            "detail": 1,
+            "trusted": true,
+            "target": "next",
+            "prevented": false
+          },
+          {
+            "type": "click",
+            "key": null,
+            "repeat": null,
+            "detail": 1,
+            "trusted": true,
+            "target": "next",
+            "prevented": false
+          },
+          {
+            "type": "click",
+            "key": null,
+            "repeat": null,
+            "detail": 1,
+            "trusted": true,
+            "target": "next",
+            "prevented": false
+          },
+          {
+            "type": "click",
+            "key": null,
+            "repeat": null,
+            "detail": 1,
+            "trusted": true,
+            "target": "next",
+            "prevented": false
+          },
+          {
+            "type": "click",
+            "key": null,
+            "repeat": null,
+            "detail": 1,
+            "trusted": true,
+            "target": "Volgende les \u2192",
+            "prevented": false
+          },
+          {
+            "type": "keydown",
+            "key": "Enter",
+            "repeat": false,
+            "detail": 0,
+            "trusted": true,
+            "target": "",
+            "prevented": true
+          },
+          {
+            "type": "click",
+            "key": null,
+            "repeat": null,
+            "detail": 0,
+            "trusted": false,
+            "target": "",
+            "prevented": false
+          },
+          {
+            "type": "keyup",
+            "key": "Enter",
+            "repeat": false,
+            "detail": 0,
+            "trusted": true,
+            "target": "",
+            "prevented": false
+          },
+          {
+            "type": "click",
+            "key": null,
+            "repeat": null,
+            "detail": 1,
+            "trusted": true,
+            "target": "next",
+            "prevented": false
+          },
+          {
+            "type": "keydown",
+            "key": "Enter",
+            "repeat": false,
+            "detail": 0,
+            "trusted": true,
+            "target": "",
+            "prevented": true
+          },
+          {
+            "type": "click",
+            "key": null,
+            "repeat": null,
+            "detail": 0,
+            "trusted": false,
+            "target": "",
+            "prevented": false
+          },
+          {
+            "type": "keyup",
+            "key": "Enter",
+            "repeat": false,
+            "detail": 0,
+            "trusted": true,
+            "target": "",
+            "prevented": false
+          },
+          {
+            "type": "click",
+            "key": null,
+            "repeat": null,
+            "detail": 1,
+            "trusted": true,
+            "target": "next",
+            "prevented": false
+          },
+          {
+            "type": "keydown",
+            "key": "Enter",
+            "repeat": false,
+            "detail": 0,
+            "trusted": true,
+            "target": "",
+            "prevented": true
+          },
+          {
+            "type": "click",
+            "key": null,
+            "repeat": null,
+            "detail": 0,
+            "trusted": false,
+            "target": "",
+            "prevented": false
+          },
+          {
+            "type": "keyup",
+            "key": "Enter",
+            "repeat": false,
+            "detail": 0,
+            "trusted": true,
+            "target": "",
+            "prevented": false
+          },
+          {
+            "type": "click",
+            "key": null,
+            "repeat": null,
+            "detail": 1,
+            "trusted": true,
+            "target": "next",
+            "prevented": false
+          },
+          {
+            "type": "keydown",
+            "key": "Enter",
+            "repeat": false,
+            "detail": 0,
+            "trusted": true,
+            "target": "",
+            "prevented": true
+          },
+          {
+            "type": "click",
+            "key": null,
+            "repeat": null,
+            "detail": 0,
+            "trusted": false,
+            "target": "",
+            "prevented": false
+          },
+          {
+            "type": "keyup",
+            "key": "Enter",
+            "repeat": false,
+            "detail": 0,
+            "trusted": true,
+            "target": "",
+            "prevented": false
+          },
+          {
+            "type": "click",
+            "key": null,
+            "repeat": null,
+            "detail": 1,
+            "trusted": true,
+            "target": "next",
+            "prevented": false
+          },
+          {
+            "type": "keydown",
+            "key": "Enter",
+            "repeat": false,
+            "detail": 0,
+            "trusted": true,
+            "target": "",
+            "prevented": true
+          },
+          {
+            "type": "click",
+            "key": null,
+            "repeat": null,
+            "detail": 0,
+            "trusted": false,
+            "target": "",
+            "prevented": false
+          },
+          {
+            "type": "keyup",
+            "key": "Enter",
+            "repeat": false,
+            "detail": 0,
+            "trusted": true,
+            "target": "",
+            "prevented": false
+          },
+          {
+            "type": "click",
+            "key": null,
+            "repeat": null,
+            "detail": 1,
+            "trusted": true,
+            "target": "next",
+            "prevented": false
+          },
+          {
+            "type": "keydown",
+            "key": "Enter",
+            "repeat": false,
+            "detail": 0,
+            "trusted": true,
+            "target": "",
+            "prevented": true
+          },
+          {
+            "type": "click",
+            "key": null,
+            "repeat": null,
+            "detail": 0,
+            "trusted": false,
+            "target": "",
+            "prevented": false
+          },
+          {
+            "type": "keyup",
+            "key": "Enter",
+            "repeat": false,
+            "detail": 0,
+            "trusted": true,
+            "target": "",
+            "prevented": false
+          },
+          {
+            "type": "click",
+            "key": null,
+            "repeat": null,
+            "detail": 1,
+            "trusted": true,
+            "target": "next",
+            "prevented": false
+          },
+          {
+            "type": "click",
+            "key": null,
+            "repeat": null,
+            "detail": 1,
+            "trusted": true,
+            "target": "Volgende les \u2192",
+            "prevented": false
+          },
+          {
+            "type": "click",
+            "key": null,
+            "repeat": null,
+            "detail": 1,
+            "trusted": true,
+            "target": "check",
+            "prevented": false
+          },
+          {
+            "type": "click",
+            "key": null,
+            "repeat": null,
+            "detail": 1,
+            "trusted": true,
+            "target": "next",
+            "prevented": false
+          }
+        ]
+      },
+      "opened": {
+        "good": 8,
+        "pizzas": 1,
+        "slices": 0,
+        "trips": 0,
+        "current": "city-6",
+        "mode": "write",
+        "dialogs": [
+          "pizzaCelebration"
+        ],
+        "focus": {
+          "id": "",
+          "text": "Verder",
+          "inPizza": true
+        },
+        "events": [
+          {
+            "type": "click",
+            "key": null,
+            "repeat": null,
+            "detail": 1,
+            "trusted": true,
+            "target": "check",
+            "prevented": false
+          }
+        ]
+      },
+      "intentionalNextKey": "Space",
+      "after": {
+        "good": 8,
+        "pizzas": 1,
+        "slices": 0,
+        "trips": 0,
+        "current": "city-6",
+        "mode": "write",
+        "dialogs": [],
+        "focus": {
+          "id": "next",
+          "text": "Volgende \u2192",
+          "inPizza": false
+        },
+        "events": [
+          {
+            "type": "click",
+            "key": null,
+            "repeat": null,
+            "detail": 1,
+            "trusted": true,
+            "target": "check",
+            "prevented": false
+          },
+          {
+            "type": "keydown",
+            "key": " ",
+            "repeat": false,
+            "detail": 0,
+            "trusted": true,
+            "target": "Verder",
+            "prevented": false
+          },
+          {
+            "type": "keyup",
+            "key": " ",
+            "repeat": false,
+            "detail": 0,
+            "trusted": true,
+            "target": "Verder",
+            "prevented": false
+          },
+          {
+            "type": "click",
+            "key": null,
+            "repeat": null,
+            "detail": 0,
+            "trusted": true,
+            "target": "Verder",
+            "prevented": false
+          },
+          {
+            "type": "close",
+            "key": null,
+            "repeat": null,
+            "detail": null,
+            "trusted": true,
+            "target": "pizzaCelebration",
+            "prevented": false
+          }
+        ]
+      },
+      "errors": [],
+      "outbound": [],
+      "pass": true
+    },
+    {
+      "case": "webkit-point-Space-motion",
+      "engine": "webkit",
+      "motion": "normal",
+      "trigger": "map Space",
+      "baseline": "#bezig fixture imports1pizza6slices; only next2point answers earned",
+      "initial": {
+        "good": 14,
+        "pizzas": 1,
+        "slices": 6,
+        "trips": 0,
+        "current": null,
+        "mode": "point",
+        "dialogs": [],
+        "focus": {
+          "id": "",
+          "text": "V3-preview \u00b7 demo \u00b7 niets wordt bewaardNieuw ",
+          "inPizza": false
+        },
+        "events": []
+      },
+      "before": {
+        "good": 15,
+        "pizzas": 1,
+        "slices": 7,
+        "trips": 0,
+        "current": "city-11",
+        "mode": "point",
+        "dialogs": [],
+        "focus": {
+          "id": "",
+          "text": "V3-preview \u00b7 demo \u00b7 niets wordt bewaardNieuw ",
+          "inPizza": false
+        },
+        "events": [
+          {
+            "type": "click",
+            "key": null,
+            "repeat": null,
+            "detail": 1,
+            "trusted": true,
+            "target": "Aanwijzen",
+            "prevented": false
+          },
+          {
+            "type": "click",
+            "key": null,
+            "repeat": null,
+            "detail": 0,
+            "trusted": false,
+            "target": "routeContinue",
+            "prevented": false
+          },
+          {
+            "type": "keydown",
+            "key": "Enter",
+            "repeat": false,
+            "detail": 0,
+            "trusted": true,
+            "target": "",
+            "prevented": true
+          },
+          {
+            "type": "click",
+            "key": null,
+            "repeat": null,
+            "detail": 0,
+            "trusted": false,
+            "target": "",
+            "prevented": false
+          },
+          {
+            "type": "keyup",
+            "key": "Enter",
+            "repeat": false,
+            "detail": 0,
+            "trusted": true,
+            "target": "",
+            "prevented": false
+          },
+          {
+            "type": "click",
+            "key": null,
+            "repeat": null,
+            "detail": 1,
+            "trusted": true,
+            "target": "next",
+            "prevented": false
+          }
+        ]
+      },
+      "opened": {
+        "good": 16,
+        "pizzas": 2,
+        "slices": 0,
+        "trips": 0,
+        "current": "city-11",
+        "mode": "point",
+        "dialogs": [
+          "pizzaCelebration"
+        ],
+        "focus": {
+          "id": "",
+          "text": "Verder",
+          "inPizza": true
+        },
+        "events": [
+          {
+            "type": "keydown",
+            "key": " ",
+            "repeat": false,
+            "detail": 0,
+            "trusted": true,
+            "target": "",
+            "prevented": true
+          },
+          {
+            "type": "click",
+            "key": null,
+            "repeat": null,
+            "detail": 0,
+            "trusted": false,
+            "target": "",
+            "prevented": false
+          },
+          {
+            "type": "keyup",
+            "key": " ",
+            "repeat": false,
+            "detail": 0,
+            "trusted": true,
+            "target": "Verder",
+            "prevented": false
+          }
+        ]
+      },
+      "intentionalNextKey": "Space",
+      "after": {
+        "good": 16,
+        "pizzas": 2,
+        "slices": 0,
+        "trips": 0,
+        "current": "city-11",
+        "mode": "point",
+        "dialogs": [],
+        "focus": {
+          "id": "next",
+          "text": "Volgende \u2192",
+          "inPizza": false
+        },
+        "events": [
+          {
+            "type": "keydown",
+            "key": " ",
+            "repeat": false,
+            "detail": 0,
+            "trusted": true,
+            "target": "",
+            "prevented": true
+          },
+          {
+            "type": "click",
+            "key": null,
+            "repeat": null,
+            "detail": 0,
+            "trusted": false,
+            "target": "",
+            "prevented": false
+          },
+          {
+            "type": "keyup",
+            "key": " ",
+            "repeat": false,
+            "detail": 0,
+            "trusted": true,
+            "target": "Verder",
+            "prevented": false
+          },
+          {
+            "type": "keydown",
+            "key": " ",
+            "repeat": false,
+            "detail": 0,
+            "trusted": true,
+            "target": "Verder",
+            "prevented": false
+          },
+          {
+            "type": "keyup",
+            "key": " ",
+            "repeat": false,
+            "detail": 0,
+            "trusted": true,
+            "target": "Verder",
+            "prevented": false
+          },
+          {
+            "type": "click",
+            "key": null,
+            "repeat": null,
+            "detail": 0,
+            "trusted": true,
+            "target": "Verder",
+            "prevented": false
+          },
+          {
+            "type": "close",
+            "key": null,
+            "repeat": null,
+            "detail": null,
+            "trusted": true,
+            "target": "pizzaCelebration",
+            "prevented": false
+          }
+        ]
+      },
+      "errors": [],
+      "outbound": [],
+      "pass": true
+    },
+    {
+      "case": "webkit-held-Enter-reduce",
+      "engine": "webkit",
+      "motion": "reduce",
+      "trigger": "held/repeated Enter",
+      "baseline": "#nieuw startszero;8correct answers genuinely earned via UI",
+      "initial": {
+        "good": 0,
+        "pizzas": 0,
+        "slices": 0,
+        "trips": 0,
+        "current": null,
+        "mode": "point",
+        "dialogs": [],
+        "focus": {
+          "id": "",
+          "text": "V3-preview \u00b7 demo \u00b7 niets wordt bewaardNieuw ",
+          "inPizza": false
+        },
+        "events": []
+      },
+      "before": {
+        "good": 7,
+        "pizzas": 0,
+        "slices": 7,
+        "trips": 0,
+        "current": "city-2",
+        "mode": "write",
+        "dialogs": [],
+        "focus": {
+          "id": "",
+          "text": "V3-preview \u00b7 demo \u00b7 niets wordt bewaardNieuw ",
+          "inPizza": false
+        },
+        "events": [
+          {
+            "type": "click",
+            "key": null,
+            "repeat": null,
+            "detail": 1,
+            "trusted": true,
+            "target": "Ontdekken",
+            "prevented": false
+          },
+          {
+            "type": "click",
+            "key": null,
+            "repeat": null,
+            "detail": 0,
+            "trusted": false,
+            "target": "routeContinue",
+            "prevented": false
+          },
+          {
+            "type": "click",
+            "key": null,
+            "repeat": null,
+            "detail": 1,
+            "trusted": true,
+            "target": "next",
+            "prevented": false
+          },
+          {
+            "type": "click",
+            "key": null,
+            "repeat": null,
+            "detail": 1,
+            "trusted": true,
+            "target": "next",
+            "prevented": false
+          },
+          {
+            "type": "click",
+            "key": null,
+            "repeat": null,
+            "detail": 1,
+            "trusted": true,
+            "target": "next",
+            "prevented": false
+          },
+          {
+            "type": "click",
+            "key": null,
+            "repeat": null,
+            "detail": 1,
+            "trusted": true,
+            "target": "next",
+            "prevented": false
+          },
+          {
+            "type": "click",
+            "key": null,
+            "repeat": null,
+            "detail": 1,
+            "trusted": true,
+            "target": "next",
+            "prevented": false
+          },
+          {
+            "type": "click",
+            "key": null,
+            "repeat": null,
+            "detail": 1,
+            "trusted": true,
+            "target": "next",
+            "prevented": false
+          },
+          {
+            "type": "click",
+            "key": null,
+            "repeat": null,
+            "detail": 1,
+            "trusted": true,
+            "target": "Volgende les \u2192",
+            "prevented": false
+          },
+          {
+            "type": "keydown",
+            "key": "Enter",
+            "repeat": false,
+            "detail": 0,
+            "trusted": true,
+            "target": "",
+            "prevented": true
+          },
+          {
+            "type": "click",
+            "key": null,
+            "repeat": null,
+            "detail": 0,
+            "trusted": false,
+            "target": "",
+            "prevented": false
+          },
+          {
+            "type": "keyup",
+            "key": "Enter",
+            "repeat": false,
+            "detail": 0,
+            "trusted": true,
+            "target": "",
+            "prevented": false
+          },
+          {
+            "type": "click",
+            "key": null,
+            "repeat": null,
+            "detail": 1,
+            "trusted": true,
+            "target": "next",
+            "prevented": false
+          },
+          {
+            "type": "keydown",
+            "key": "Enter",
+            "repeat": false,
+            "detail": 0,
+            "trusted": true,
+            "target": "",
+            "prevented": true
+          },
+          {
+            "type": "click",
+            "key": null,
+            "repeat": null,
+            "detail": 0,
+            "trusted": false,
+            "target": "",
+            "prevented": false
+          },
+          {
+            "type": "keyup",
+            "key": "Enter",
+            "repeat": false,
+            "detail": 0,
+            "trusted": true,
+            "target": "",
+            "prevented": false
+          },
+          {
+            "type": "click",
+            "key": null,
+            "repeat": null,
+            "detail": 1,
+            "trusted": true,
+            "target": "next",
+            "prevented": false
+          },
+          {
+            "type": "keydown",
+            "key": "Enter",
+            "repeat": false,
+            "detail": 0,
+            "trusted": true,
+            "target": "",
+            "prevented": true
+          },
+          {
+            "type": "click",
+            "key": null,
+            "repeat": null,
+            "detail": 0,
+            "trusted": false,
+            "target": "",
+            "prevented": false
+          },
+          {
+            "type": "keyup",
+            "key": "Enter",
+            "repeat": false,
+            "detail": 0,
+            "trusted": true,
+            "target": "",
+            "prevented": false
+          },
+          {
+            "type": "click",
+            "key": null,
+            "repeat": null,
+            "detail": 1,
+            "trusted": true,
+            "target": "next",
+            "prevented": false
+          },
+          {
+            "type": "keydown",
+            "key": "Enter",
+            "repeat": false,
+            "detail": 0,
+            "trusted": true,
+            "target": "",
+            "prevented": true
+          },
+          {
+            "type": "click",
+            "key": null,
+            "repeat": null,
+            "detail": 0,
+            "trusted": false,
+            "target": "",
+            "prevented": false
+          },
+          {
+            "type": "keyup",
+            "key": "Enter",
+            "repeat": false,
+            "detail": 0,
+            "trusted": true,
+            "target": "",
+            "prevented": false
+          },
+          {
+            "type": "click",
+            "key": null,
+            "repeat": null,
+            "detail": 1,
+            "trusted": true,
+            "target": "next",
+            "prevented": false
+          },
+          {
+            "type": "keydown",
+            "key": "Enter",
+            "repeat": false,
+            "detail": 0,
+            "trusted": true,
+            "target": "",
+            "prevented": true
+          },
+          {
+            "type": "click",
+            "key": null,
+            "repeat": null,
+            "detail": 0,
+            "trusted": false,
+            "target": "",
+            "prevented": false
+          },
+          {
+            "type": "keyup",
+            "key": "Enter",
+            "repeat": false,
+            "detail": 0,
+            "trusted": true,
+            "target": "",
+            "prevented": false
+          },
+          {
+            "type": "click",
+            "key": null,
+            "repeat": null,
+            "detail": 1,
+            "trusted": true,
+            "target": "next",
+            "prevented": false
+          },
+          {
+            "type": "keydown",
+            "key": "Enter",
+            "repeat": false,
+            "detail": 0,
+            "trusted": true,
+            "target": "",
+            "prevented": true
+          },
+          {
+            "type": "click",
+            "key": null,
+            "repeat": null,
+            "detail": 0,
+            "trusted": false,
+            "target": "",
+            "prevented": false
+          },
+          {
+            "type": "keyup",
+            "key": "Enter",
+            "repeat": false,
+            "detail": 0,
+            "trusted": true,
+            "target": "",
+            "prevented": false
+          },
+          {
+            "type": "click",
+            "key": null,
+            "repeat": null,
+            "detail": 1,
+            "trusted": true,
+            "target": "next",
+            "prevented": false
+          },
+          {
+            "type": "click",
+            "key": null,
+            "repeat": null,
+            "detail": 1,
+            "trusted": true,
+            "target": "Volgende les \u2192",
+            "prevented": false
+          },
+          {
+            "type": "click",
+            "key": null,
+            "repeat": null,
+            "detail": 1,
+            "trusted": true,
+            "target": "check",
+            "prevented": false
+          },
+          {
+            "type": "click",
+            "key": null,
+            "repeat": null,
+            "detail": 1,
+            "trusted": true,
+            "target": "next",
+            "prevented": false
+          }
+        ]
+      },
+      "opened": {
+        "good": 8,
+        "pizzas": 1,
+        "slices": 0,
+        "trips": 0,
+        "current": "city-2",
+        "mode": "write",
+        "dialogs": [
+          "pizzaCelebration"
+        ],
+        "focus": {
+          "id": "",
+          "text": "Verder",
+          "inPizza": true
+        },
+        "events": [
+          {
+            "type": "keydown",
+            "key": "Enter",
+            "repeat": false,
+            "detail": 0,
+            "trusted": true,
+            "target": "answer",
+            "prevented": false
+          },
+          {
+            "type": "keydown",
+            "key": "Enter",
+            "repeat": true,
+            "detail": 0,
+            "trusted": true,
+            "target": "Verder",
+            "prevented": false
+          }
+        ]
+      },
+      "intentionalNextKey": "Enter",
+      "after": {
+        "good": 8,
+        "pizzas": 1,
+        "slices": 0,
+        "trips": 0,
+        "current": "city-2",
+        "mode": "write",
+        "dialogs": [],
+        "focus": {
+          "id": "next",
+          "text": "Volgende \u2192",
+          "inPizza": false
+        },
+        "events": [
+          {
+            "type": "keydown",
+            "key": "Enter",
+            "repeat": false,
+            "detail": 0,
+            "trusted": true,
+            "target": "answer",
+            "prevented": false
+          },
+          {
+            "type": "keydown",
+            "key": "Enter",
+            "repeat": true,
+            "detail": 0,
+            "trusted": true,
+            "target": "Verder",
+            "prevented": false
+          },
+          {
+            "type": "keyup",
+            "key": "Enter",
+            "repeat": false,
+            "detail": 0,
+            "trusted": true,
+            "target": "Verder",
+            "prevented": false
+          },
+          {
+            "type": "keydown",
+            "key": "Enter",
+            "repeat": false,
+            "detail": 0,
+            "trusted": true,
+            "target": "Verder",
+            "prevented": false
+          },
+          {
+            "type": "click",
+            "key": null,
+            "repeat": null,
+            "detail": 0,
+            "trusted": true,
+            "target": "Verder",
+            "prevented": false
+          },
+          {
+            "type": "close",
+            "key": null,
+            "repeat": null,
+            "detail": null,
+            "trusted": true,
+            "target": "pizzaCelebration",
+            "prevented": false
+          },
+          {
+            "type": "keyup",
+            "key": "Enter",
+            "repeat": false,
+            "detail": 0,
+            "trusted": true,
+            "target": "V3-preview \u00b7 demo \u00b7 niets wordt bewaardNieuw ",
+            "prevented": false
+          }
+        ]
+      },
+      "errors": [],
+      "outbound": [],
+      "pass": true
+    }
+  ],
+  "summary": {
+    "cases": 14,
+    "passed": 14,
+    "noCurrencyDuplication": true,
+    "legitimateNextEnterAndSpaceWork": true
+  }
+}

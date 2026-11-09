@@ -1,0 +1,27 @@
+diff --git a/scripts/v3/les.js b/scripts/v3/les.js
+index bbb564f..a5cb93a 100644
+--- a/scripts/v3/les.js
++++ b/scripts/v3/les.js
+@@ -9,6 +9,22 @@
+  const {make,btn,press,icon,v2Card,v2Nav,STAGE}=V,$=s=>document.querySelector(s);
+  const body=document.body,layout=$('.layout');if(!layout)return;
+ 
++ /* GE01-K01 (Hermes, 1a42590): the key that submits an answer never activates a control that appears because of it.
++    V2 grades on keydown (#answer, map targets) and opens a reward dialog with focus on its button; the browser then
++    turns the same Enter/Space into a click on that button, which closed the pizza at once (reduced motion). While the
++    key is held, a trusted keyboard click (detail 0) on another element than where the key went down is dropped; the
++    next real key press or click works as usual. Implicit form submission (same form) stays allowed. */
++ let held=null;
++ addEventListener('keydown',e=>{if((e.key==='Enter'||e.key===' ')&&!held)held={key:e.key,target:e.target};},true);
++ addEventListener('keyup',e=>{if(held&&e.key===held.key){const h=held;setTimeout(()=>{if(held===h)held=null;});}},true);
++ addEventListener('blur',()=>{held=null;});
++ addEventListener('click',e=>{
++  if(!held||!e.isTrusted||e.detail!==0)return;
++  const t=e.target,from=held.target;
++  if(t===from||(from instanceof Node&&from.contains(t))||(from?.form&&t?.form===from.form))return;
++  e.preventDefault();e.stopImmediatePropagation();
++ },true);
++
+  /* Sidebar (desktop): the Reis component; Reis returns to Reis, where "Ga verder" resumes this exact question. */
+  const toReis=e=>{if(V.ui)V.ui.view='reis';press(()=>v2Nav('Reis'))(e);};
+  // Beloningen from a lesson: back to Reis, on its Beloningen view (progress is kept by V2, as with Reis).

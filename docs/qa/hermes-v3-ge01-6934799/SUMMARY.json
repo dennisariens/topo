@@ -1,0 +1,61 @@
+{
+  "pin": "6934799454441582b953ed455d54ca3b0e2db722",
+  "verdict": "PASS",
+  "scope": "GE01 beat3-7 and repair GE01-K01 only",
+  "previewSHA256": "71c2f49bf65ae04e9a1908bd7661cf8889562c0af4b3f582fd9cacfdfc4131d4",
+  "previewBytes": 50200591,
+  "indexSHA256": "3aced3c31259011b0af2947c78f71965cb4beb2e88c69d1663e61792b0304f5a",
+  "engines": {
+    "chromium": {
+      "verdict": "PASS",
+      "maintainedCases": 12,
+      "droppedForeignClicks": 4,
+      "moments": [
+        "pizza",
+        "vespa",
+        "stamp",
+        "gold"
+      ],
+      "version": "156.0.8078.4"
+    },
+    "webkit": {
+      "verdict": "PASS",
+      "maintainedCases": 12,
+      "droppedForeignClicks": 4,
+      "moments": [
+        "pizza",
+        "vespa",
+        "stamp",
+        "gold"
+      ],
+      "version": "27.2"
+    }
+  },
+  "maintainedTotal": 24,
+  "parentOwnCases": 14,
+  "keyboardCasesCombined": 38,
+  "cleanActualLessonPlays": 2,
+  "parentChecks": {
+    "originalReproResolved": true,
+    "freshEnterSpaceWorks": true,
+    "heldRepeatedEnterNoSkip": true,
+    "noDuplicateCurrency": true,
+    "resumeQuestionDraftSelection": true,
+    "earnedStampBook": true
+  },
+  "fixtureSemantics": {
+    "pizzaHermes": "#nieuw zero initial rewards,8correct answers played",
+    "bezig": "Demo1pizza6slices and priorcompletion; later UI answers/rewards actually played",
+    "goud": "Completedchapters in#afgerond prereq; new gold earned by UI",
+    "independentLesson": "#nieuw actual12correct answers,1pizza4slices,1stamp"
+  },
+  "gates": "npmci +lint +targetednino-moments/ux tests +build exit0; not fullnpmtest",
+  "noBroadV3Retest": true,
+  "notTested": [
+    "PhysicaliPadSafari",
+    "VoiceOver",
+    "Persistent actualearned-save reload in memory-only preview"
+  ],
+  "candidateModified": false,
+  "merge": false
+}

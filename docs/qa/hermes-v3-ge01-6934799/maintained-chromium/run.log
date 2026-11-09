@@ -1,0 +1,73 @@
+pizza-hermes Enter reduce missing [] closedByKey 0 leaked 0 dropped 1
+pizza-hermes click reduce missing [] closedByKey 0 leaked 0 dropped 0
+pizza-hermes Enter motion missing [] closedByKey 0 leaked 0 dropped 1
+pizza-hermes click motion missing [] closedByKey 0 leaked 0 dropped 0
+bezig Enter reduce missing [] closedByKey 0 leaked 0 dropped 1
+bezig click reduce missing [] closedByKey 0 leaked 0 dropped 0
+bezig Enter motion missing [] closedByKey 0 leaked 0 dropped 1
+bezig click motion missing [] closedByKey 0 leaked 0 dropped 0
+goud Enter reduce missing [] closedByKey 0 leaked 0 dropped 0
+goud click reduce missing [] closedByKey 0 leaked 0 dropped 0
+goud Enter motion missing [] closedByKey 0 leaked 0 dropped 0
+goud click motion missing [] closedByKey 0 leaked 0 dropped 0
+{
+ "indexUnchanged": true,
+ "hermesReproPizzaStaysOpen": true,
+ "everyMomentSeen": {},
+ "momentsClosedByKey": {},
+ "keyClicksLeaked": {},
+ "keyClicksDropped": 4,
+ "momentsPerRun": {
+  "pizza-hermes/Enter/reduce": [
+   "pizzaCelebration"
+  ],
+  "pizza-hermes/click/reduce": [
+   "pizzaCelebration"
+  ],
+  "pizza-hermes/Enter/motion": [
+   "pizzaCelebration"
+  ],
+  "pizza-hermes/click/motion": [
+   "pizzaCelebration"
+  ],
+  "bezig/Enter/reduce": [
+   "pizzaCelebration",
+   "stamp:city2",
+   "vespaRide"
+  ],
+  "bezig/click/reduce": [
+   "pizzaCelebration",
+   "stamp:city2",
+   "vespaRide"
+  ],
+  "bezig/Enter/motion": [
+   "pizzaCelebration",
+   "stamp:city2",
+   "vespaRide"
+  ],
+  "bezig/click/motion": [
+   "pizzaCelebration",
+   "stamp:city2",
+   "vespaRide"
+  ],
+  "goud/Enter/reduce": [
+   "gold:city3",
+   "pizzaCelebration"
+  ],
+  "goud/click/reduce": [
+   "gold:city3",
+   "pizzaCelebration"
+  ],
+  "goud/Enter/motion": [
+   "gold:city3",
+   "pizzaCelebration"
+  ],
+  "goud/click/motion": [
+   "gold:city3",
+   "pizzaCelebration"
+  ]
+ },
+ "errors": 0
+}
+problems: none
+PRESERVATION {"trackedFiles": 2384, "changedTrackedFiles": [], "gitStatusAfter": "", "htmlSha256After": "71c2f49bf65ae04e9a1908bd7661cf8889562c0af4b3f582fd9cacfdfc4131d4", "htmlBytesAfter": 50200591, "exitCode": 0}

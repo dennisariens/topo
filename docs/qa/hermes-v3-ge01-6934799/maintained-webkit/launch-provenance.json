@@ -1,0 +1,24 @@
+{
+  "engine": "webkit",
+  "version": "27.2",
+  "playwright": "1.64.0",
+  "python": "/Users/dennisariens/.hermes/cache/scratch/hermes-v3-afb32d1/python311/bin/python",
+  "executable": "/Users/dennisariens/Library/Caches/ms-playwright/webkit-2370/pw_run.sh",
+  "executableSha256": "a85baad3d8c07173ac387a59b41500c382b21ed692afe0964d29aac247ccc63b",
+  "source": "/Users/dennisariens/projects/topo-v3-ge01-6934799/scripts/qa-v3-toets-beloning.py",
+  "sourceSha256": "b9fb8151a9bb91d43c026f9533f7ac048887937a0d5434907a591d46940c2738",
+  "executedSourceSha256": "6d3451e6d1ed48a0bd2f28264257c8fb035045927df43747b7fc9d91e3c12b7b",
+  "replacement": {
+    "old": "b = await p.chromium.launch(executable_path=MAC_CHROME) if pathlib.Path(MAC_CHROME).exists() else await p.chromium.launch()",
+    "new": "b = await p.webkit.launch()"
+  },
+  "originalFilePreserved": "/Users/dennisariens/projects/topo-v3-ge01-6934799/scripts/qa-v3-toets-beloning.py",
+  "argv": [
+    "/Users/dennisariens/projects/topo-v3-ge01-6934799/scripts/qa-v3-toets-beloning.py",
+    "/Users/dennisariens/projects/topo-v3-ge01-6934799/output/html/TOPO-V3-Reis-Preview.html",
+    "/Users/dennisariens/.hermes/cache/scratch/hermes-v3-ge01-6934799/maintained-webkit"
+  ],
+  "htmlSha256": "71c2f49bf65ae04e9a1908bd7661cf8889562c0af4b3f582fd9cacfdfc4131d4",
+  "htmlBytes": 50200591,
+  "note": "Maintained results.json browser label is unmodified Chrome; actual launch is WebKit only."
+}

@@ -1,0 +1,22 @@
+{
+  "pin": "6934799454441582b953ed455d54ca3b0e2db722",
+  "html": "/Users/dennisariens/projects/topo-v3-ge01-6934799/output/html/TOPO-V3-Reis-Preview.html",
+  "htmlSha256": "71c2f49bf65ae04e9a1908bd7661cf8889562c0af4b3f582fd9cacfdfc4131d4",
+  "htmlBytes": 50200591,
+  "python": "/Users/dennisariens/.hermes/cache/scratch/hermes-v3-afb32d1/python311/bin/python",
+  "playwright": "1.64.0",
+  "chromiumExecutable": "/Users/dennisariens/Library/Caches/ms-playwright/chromium-1248/chrome-mac-arm64/Google Chrome for Testing.app/Contents/MacOS/Google Chrome for Testing",
+  "chromiumExecutableSha256": "c8509aee32abd6977968e9999769980b7a420dea05402d90042d9e5b41db15ef",
+  "originalScript": "/Users/dennisariens/projects/topo-v3-ge01-6934799/scripts/qa-v3-toets-beloning.py",
+  "originalScriptSha256": "b9fb8151a9bb91d43c026f9533f7ac048887937a0d5434907a591d46940c2738",
+  "onlyModification": {
+    "old": "        b = await p.chromium.launch(executable_path=MAC_CHROME) if pathlib.Path(MAC_CHROME).exists() else await p.chromium.launch()",
+    "new": "        b = await p.chromium.launch(executable_path='/Users/dennisariens/Library/Caches/ms-playwright/chromium-1248/chrome-mac-arm64/Google Chrome for Testing.app/Contents/MacOS/Google Chrome for Testing')"
+  },
+  "__file__": "/Users/dennisariens/projects/topo-v3-ge01-6934799/scripts/qa-v3-toets-beloning.py",
+  "argv": [
+    "/Users/dennisariens/projects/topo-v3-ge01-6934799/output/html/TOPO-V3-Reis-Preview.html",
+    "/Users/dennisariens/.hermes/cache/scratch/hermes-v3-ge01-6934799/maintained-chromium"
+  ],
+  "gitStatusBefore": ""
+}

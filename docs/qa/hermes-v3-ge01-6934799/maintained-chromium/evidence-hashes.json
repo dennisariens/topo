@@ -1,0 +1,114 @@
+{
+  "aggregate.py": {
+    "bytes": 4134,
+    "sha256": "5c4daf1b5a71855172936442fb47705ab61b502088c334abd8ab2b224f58e23b"
+  },
+  "bezig-stamp-click-reduce.png": {
+    "bytes": 149702,
+    "sha256": "4422fcf52177a32d341a240207836634f78cd7d9a671b50d02be6a883f09ddd2"
+  },
+  "launch-provenance.json": {
+    "bytes": 1584,
+    "sha256": "79ffcefee6f489be81701bc457e6ef5d5f04c6280132457f24f72329899ebdf6"
+  },
+  "bezig-stamp-Enter-reduce.png": {
+    "bytes": 149702,
+    "sha256": "4422fcf52177a32d341a240207836634f78cd7d9a671b50d02be6a883f09ddd2"
+  },
+  "aggregate.log": {
+    "bytes": 4699,
+    "sha256": "c45e059b52e9adcd154ebe1a22126fd977c788b48eead74dc8f9e8b5ca4a386c"
+  },
+  "REPORT.md": {
+    "bytes": 1161,
+    "sha256": "d963900be81dbf814c834aa8e60ae432d70c6c58a2ae37a544d98aa9eefb2dc0"
+  },
+  "run.log": {
+    "bytes": 2074,
+    "sha256": "1b161a7bd5e6195d6ab5aaa6f763bc6749b2f875b4d0275816fe70b969561e93"
+  },
+  "goud-gold-click-reduce.png": {
+    "bytes": 156367,
+    "sha256": "ef4a6f0b722b6754c8d84f69dc8cdc32525e3e2fc387f82ae22077a8cbd71ed7"
+  },
+  "bezig-vespa-click-reduce.png": {
+    "bytes": 996189,
+    "sha256": "68f0dbb49a81753675bec7de1a0ecd9c77ff08129a5ceab1fcc317a854bee7ae"
+  },
+  "pizza-hermes-Enter-motion.png": {
+    "bytes": 304388,
+    "sha256": "db5dca2dd46f1ce7579d66b307441400ee71b1e32212bd4ad9fa8ebfae85c7e2"
+  },
+  "hashes-after.json": {
+    "bytes": 310334,
+    "sha256": "0024c0777c808e11d5e52dc2605fa20e7331694f0905b127e247214714a3b278"
+  },
+  "results.json": {
+    "bytes": 67918,
+    "sha256": "b58b02bdf07ef10e87756320a62593ceace7d8a68cde61f44906447acc1f9d3b"
+  },
+  "preservation.json": {
+    "bytes": 216,
+    "sha256": "91ed692149ce17986dd84bfbde20ea78bfb3637516d452d223e3d3bcdae3b0cc"
+  },
+  "executed-maintained-script.py": {
+    "bytes": 13992,
+    "sha256": "cf46298e0fdb147f662eb05f1000fc9194f97fbbcc2994285661787396a01029"
+  },
+  "pizza-hermes-click-motion.png": {
+    "bytes": 303884,
+    "sha256": "01fbc8f6a5ca9e75c93dc8880354c7f166f6482baba4e173aee7077c33c7bdac"
+  },
+  "bezig-vespa-Enter-reduce.png": {
+    "bytes": 997586,
+    "sha256": "c7acf2643b8e76825a4474fabd4d275c60a310c446edc96a35492ba4350db47c"
+  },
+  "goud-gold-Enter-reduce.png": {
+    "bytes": 156367,
+    "sha256": "ef4a6f0b722b6754c8d84f69dc8cdc32525e3e2fc387f82ae22077a8cbd71ed7"
+  },
+  "bezig-stamp-Enter-motion.png": {
+    "bytes": 149795,
+    "sha256": "6d412a9a1c30b064fe5fcc3312cf48d493b441f119efc9f30fb0697eea8891a5"
+  },
+  "hashes-before.json": {
+    "bytes": 310334,
+    "sha256": "0024c0777c808e11d5e52dc2605fa20e7331694f0905b127e247214714a3b278"
+  },
+  "aggregate.json": {
+    "bytes": 4699,
+    "sha256": "c45e059b52e9adcd154ebe1a22126fd977c788b48eead74dc8f9e8b5ca4a386c"
+  },
+  "run-maintained-chromium.py": {
+    "bytes": 3472,
+    "sha256": "ab3fca53957356bc96becb5ebe699d18357dcf4acfc3ae8ab27be4b2c004314f"
+  },
+  "bezig-stamp-click-motion.png": {
+    "bytes": 149795,
+    "sha256": "6d412a9a1c30b064fe5fcc3312cf48d493b441f119efc9f30fb0697eea8891a5"
+  },
+  "bezig-vespa-Enter-motion.png": {
+    "bytes": 997440,
+    "sha256": "5dade7e2f1b5e80809c745bc89e52fadc6dc6fd63bcaed417ecda72932f24393"
+  },
+  "pizza-hermes-click-reduce.png": {
+    "bytes": 299804,
+    "sha256": "b225183cee91d462ef061061a4817f681592693daa098b7a27414dedf5a89432"
+  },
+  "goud-gold-Enter-motion.png": {
+    "bytes": 156371,
+    "sha256": "05a646c24b9df0f0d63a6f1761f00d587abf2074c4df1ee6d9ed3050e02a89ca"
+  },
+  "goud-gold-click-motion.png": {
+    "bytes": 156371,
+    "sha256": "05a646c24b9df0f0d63a6f1761f00d587abf2074c4df1ee6d9ed3050e02a89ca"
+  },
+  "pizza-hermes-Enter-reduce.png": {
+    "bytes": 300643,
+    "sha256": "51bb0146879dd541b4a9d85633969ead1989850d7e7cfc59a4bbb323fea6fd31"
+  },
+  "bezig-vespa-click-motion.png": {
+    "bytes": 996259,
+    "sha256": "7a63c1067b8d28b5ff4896ac1b0d2f3ca2d70648cfaa71f398e432901ae34a21"
+  }
+}

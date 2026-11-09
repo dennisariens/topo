@@ -235,7 +235,7 @@ async def main():
             q1 = await pg.evaluate('state.current&&state.current.id')
             f['replayStarted'] = await pg.evaluate('({chapter:state.route.active?.chapterId,kind:state.route.active?.kind,mode:state.mode,v3Hidden:!document.body.classList.contains("v3Home")})')
             # Back to Reis the way the lesson offers it (V3 sidebar on desktop, ‹ Reis on phone), then "Ga verder" returns the same question.
-            f['backVia'] = await pg.evaluate('''(() => { const b = [document.querySelector('.v3LesBack'), document.querySelector('.v3LesSideWrap .v3NavItem')].find(x => x && x.checkVisibility()); b?.click(); return b?.className || null; })()''')
+            f['backVia'] = await pg.evaluate('''(() => { const b = [document.querySelector('.v3LesBack'), document.querySelector('.v3ShellNav .v3NavItem')].find(x => x && x.checkVisibility()); b?.click(); return b?.className || null; })()''')
             await settle(pg)
             f['primaryLabelWithActive'] = await pg.inner_text('.v3Actions .primary')
             await pg.click('.v3Actions .primary'); await settle(pg)

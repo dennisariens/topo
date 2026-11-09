@@ -1,0 +1,76 @@
+/* TOPO V3.0 — shell (docs/v3/V3_0_REST.md). Presentation only. */
+
+/* V2 chrome that V3 replaces on every screen: header, V2 navigation and tabs, Focus Mode's menu, the V2 group and
+   toets pickers (V3 chooses these on Oefenen and Toets), V2 coach lines. Everything stays reachable through the V3
+   navigation or Instellingen. */
+body.v3Shell>header,body.v3Shell .ninoNav,body.v3Shell nav.tabs,body.v3Shell #focusMenu,body.v3Shell footer.backupTools{display:none!important}
+body.v3Les #groupPicker,body.v3Les #testSetup,body.v3Les #testStatus,body.v3Les #freeCoach,body.v3Les #nameToggleWrap,body.v3Les #printMap,body.v3Les .learnLegacyHelp{display:none!important}
+/* Toets (§ 2): no hints, no schoolblad, no Nino in-between moments, no pizza meter. */
+body.v3Les[data-v3-type=exam] :is(#reveal,#mistakes,#ninoMeter,.schoolbladButton,#help,.lessonReward,#focusSheetToggle+.ninoCoach){display:none!important}
+body.v3Les[data-v3-kind=gold] .schoolbladButton{display:none!important}
+
+/* V3 window views (Reis, Beloningen, Oefenen, Toets, Voortgang). */
+.v3View{display:none}
+.v3Reis:not([data-view=reis])>:is(.v3List,.v3Main){display:none}
+.v3Reis[data-view=oefenen]>.v3View-oefenen,.v3Reis[data-view=toets]>.v3View-toets,.v3Reis[data-view=toetsResult]>.v3View-toetsResult,.v3Reis[data-view=voortgang]>.v3View-voortgang{grid-column:2/-1;display:flex;flex-direction:column;gap:var(--v3-s5);min-height:0;overflow:auto;padding:var(--v3-s6) var(--v3-s8);background:color-mix(in srgb,var(--v3-surface) 55%,transparent)}
+.v3View h1{font:var(--v3-large);letter-spacing:-.015em;margin:0}
+.v3View h1:focus{outline:0}.v3View h1:focus-visible{outline:3px solid var(--v3-focus,#1d6fd8);outline-offset:4px;border-radius:8px}
+.v3Field{display:grid;gap:var(--v3-s3)}
+.v3Field h2{font:var(--v3-headline);font-weight:700;color:var(--v3-ink2);margin:0}
+.v3Field[hidden]{display:none}
+.v3Chips,.v3Forms{display:flex;flex-wrap:wrap;gap:var(--v3-s2)}
+.v3 .v3Chip{min-height:44px;padding:0 var(--v3-s4);background:var(--v3-surface);box-shadow:inset 0 0 0 1px var(--v3-line);font-weight:500;color:var(--v3-ink)}
+.v3 .v3Chip[aria-pressed=true]{background:var(--v3-forest,#073f3b);color:#fff;box-shadow:none;font-weight:600}
+.v3 .v3Chip:disabled{opacity:.45}
+.v3Forms{display:grid;grid-template-columns:repeat(4,minmax(0,1fr))}
+.v3 .v3FormBtn{flex-direction:column;gap:var(--v3-s2);min-height:96px;padding:var(--v3-s3);background:var(--v3-surface);box-shadow:inset 0 0 0 1px var(--v3-line);font-weight:600;color:var(--v3-ink);white-space:normal;text-align:center}
+.v3FormBtn .v3Icon{width:30px;height:30px;color:var(--v3-accent)}
+.v3 .v3FormBtn[aria-pressed=true]{background:var(--v3-accent-soft);box-shadow:inset 0 0 0 2px var(--v3-accent)}
+.v3 .v3Start{align-self:flex-start;min-width:240px;min-height:52px;font-size:18px}
+.v3Reis[data-view]:not([data-view=reis]) .v3Switch{display:none}
+
+/* Lesson shell navigation: desktop sidebar (les.css), iPad rail and phone tab bar in Focus Mode. */
+body.v3Les .v3LesForm{display:inline-flex;align-items:center;min-height:44px;padding:0 var(--v3-s3);border-radius:var(--v3-radius-btn);background:var(--v3-accent-soft);box-shadow:inset 0 0 0 2px var(--v3-accent);font:var(--v3-headline);font-weight:700;color:var(--v3-ink);white-space:nowrap}
+@media (min-width:768px){
+ body.v3Les[data-focus-shell=true]{--v3-rail:76px}
+ body.v3Les[data-focus-shell=true] .v3ShellNav{position:fixed;z-index:40;left:0;top:calc(var(--focus-safe-top,0px) + var(--focus-vv-top,0px));bottom:0;width:var(--v3-rail);display:flex;background:var(--v3-surface);border-right:1px solid var(--v3-line)}
+ body.v3Les[data-focus-shell=true] .v3ShellNav .v3Side{flex:1;padding:var(--v3-s4) var(--v3-s2);align-items:center;border:0;border-radius:0;background:transparent}
+ body.v3Les[data-focus-shell=true] .v3ShellNav .v3Brand b{font-size:20px}
+ body.v3Les[data-focus-shell=true] .v3ShellNav .v3Portrait{width:52px;height:52px}
+ body.v3Les[data-focus-shell=true] .v3ShellNav .v3NavItem{justify-content:center;padding:0;width:52px}
+ body.v3Les[data-focus-shell=true] .v3ShellNav .v3NavItem span{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)}
+ body.v3Les[data-focus-shell=true] .v3LesBar{left:var(--v3-rail)}
+ body.v3Les[data-focus-shell=true] .v3LesBack{display:none}
+ body.v3Les[data-focus-mode=true] .mapCard{left:calc(var(--v3-rail) + 10px)}
+ body.v3Les[data-focus-shell=true] :is(#focusAnswerSheet,#focusLearnBar){margin-left:calc(var(--v3-rail) / 2)}
+ body.v3Les[data-focus-shell=true]:not([data-focus-mode=true]) main.layout{margin-left:var(--v3-rail)!important}
+}
+@media (max-width:767px){
+ body.v3Les{--v3-tab:calc(64px + env(safe-area-inset-bottom,0px))}
+ body.v3Les .v3ShellNav{position:fixed;z-index:50;left:0;right:0;bottom:0;display:block}
+ body.v3Les .v3ShellNav .v3Side{flex-direction:row;justify-content:space-around;gap:0;padding:6px 4px calc(6px + env(safe-area-inset-bottom,0px));border:0;border-top:1px solid var(--v3-line);border-radius:0;background:color-mix(in srgb,var(--v3-surface) 94%,transparent);backdrop-filter:blur(14px)}
+ body.v3Les .v3ShellNav :is(.v3Brand,.v3Portrait){display:none}
+ body.v3Les .v3ShellNav .v3NavList{display:contents}
+ body.v3Les .v3ShellNav .v3NavItem{flex:1 1 0;flex-direction:column;gap:2px;width:auto;min-width:0;min-height:52px;padding:4px 2px;font-size:11px;line-height:13px}
+ body.v3Les .v3ShellNav .v3NavItem span{position:static;width:auto;height:auto;overflow:visible;clip:auto;white-space:nowrap}
+ body.v3Les .v3ShellNav .v3Settings{margin:0}
+ /* Focus Mode positions its sheet itself (top, keyboard); V3 lifts it above the tab bar and gives the map room. */
+ body.v3Les[data-focus-mode=true] .mapCard{height:calc(var(--focus-layout-height,100svh) - var(--v3-lesbar) - 18px - var(--focus-safe-top,0px) - var(--v3-tab))!important}
+ body.v3Les :is(#focusAnswerSheet,#focusLearnBar){translate:0 calc(-1 * var(--v3-tab))}
+ body.v3Les:not([data-focus-mode=true]) main.layout{padding-bottom:calc(var(--v3-tab) + 16px)!important}
+ /* While typing, the keyboard owns the bottom: the tab bar steps aside and the sheet stays where Focus Mode puts it. */
+ body.v3Les:has(#answer:focus) .v3ShellNav{display:none}
+ body.v3Les:has(#answer:focus) :is(#focusAnswerSheet,#focusLearnBar){translate:none}
+}
+@media (max-width:359px){body.v3Les .v3ShellNav .v3NavItem span{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)}}
+
+/* Views on iPad portrait and phone. */
+@media (max-width:1023px){.v3Forms{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media (max-width:767px){
+ .v3Reis[data-view=oefenen]>.v3View-oefenen,.v3Reis[data-view=toets]>.v3View-toets,.v3Reis[data-view=toetsResult]>.v3View-toetsResult,.v3Reis[data-view=voortgang]>.v3View-voortgang{order:1;overflow:visible;padding:var(--v3-s4) var(--v3-s5) var(--v3-s6);background:none}
+ .v3View h1{font-size:30px;line-height:36px}
+ .v3 .v3Start{align-self:stretch;min-width:0}
+ .v3 .v3FormBtn{min-height:80px}
+}
+@media (max-width:359px){.v3View :is(.v3Chip){padding:0 var(--v3-s3)}}
+@media (prefers-reduced-motion:reduce){.v3Shell .v3 *{transition:none!important;animation:none!important}}

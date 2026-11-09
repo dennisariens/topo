@@ -378,3 +378,12 @@ Reservekopieën en reset horen in het algemene instellingenmenu. Wis voortgang b
 - **Bevinding (Hermes, `1a42590`):** met verminderde beweging en één Enter op het antwoord dat een pizza vol maakt, klikte dezelfde Enter op **Verder** in de net geopende pizzadialoog. Die ging meteen dicht.
 - **Fix, in de V3-laag (`scripts/v3/les.js`):** zolang Enter of spatie is ingedrukt, telt een echte toetsenbordklik alleen op het element waar de toets begon. Daarna werkt elke nieuwe toets gewoon. Dit geldt voor alle beloningsmomenten (pizza, Vespa-rit, stempel, goud), met en zonder verminderde beweging. De V2-motor en `index.html` zijn ongewijzigd.
 - **Regressie:** `scripts/qa-v3-toets-beloning.py` volgt de reproductie van Hermes (Enter én klik) en speelt daarna alle momenten. Op `1a42590` faalt de test, nu is hij groen. Bewijs: `docs/qa/v3-les/toets-beloning/`. Gerichte Hermes-hertest van alleen GE01 op de pin van deze commit.
+
+## 2026-11-09 — V3.0 navigatie op alle schermen
+
+- **Shell:** zes tabs (Reis, Oefenen, Toets, Beloningen, Voortgang, Instellingen onderaan). Zichtbaar als zijbalk op desktop, als rail van 76 px op iPad (Focus Mode, lessen) en als tabbalk onderaan onder 768 px. Onder 360 px tonen de tabs alleen iconen, met een toegankelijke naam. Spec: `docs/v3/V3_0_REST.md` § 1.
+- **V2-chrome:** de V2-header, `.ninoNav`, `nav.tabs`, `#focusMenu` en `footer.backupTools` zijn onder `body.v3Shell` verborgen, niet verwijderd. Reservekopie, wissen en profiel blijven bereikbaar via Instellingen, dat het bestaande V2-dialoogvenster opent. Na sluiten gaat de focus terug naar de tab.
+- **Actieve tab:** volgt de route die de leerling koos. Een routeles valt onder Reis. Vrij oefenen en het slim rondje vallen onder Oefenen. De toets valt onder Toets.
+- **Oefenen:** kiest de vorm (Ontdekken, Aanwijzen, Namen schrijven, Slim rondje) en de groep (11 hoofdstukken, Alles, Mijn fouten). Start drukt de bestaande V2-knoppen in: de modus-tab, `#groupSelect` en `#smartStart`.
+- **Terugkeer:** een tab buiten de les drukt V2 "Reis", dat de les bewaart. Oefenen en Toets herstellen een onderbroken oefening of toets via V2 "Oefenen". Een routeles gaat verder via Ga verder. Vraag, concept en selectie blijven gelijk.
+- **Nieuwe drempels of opslag:** geen. De telefoontabbalk staat onder 768 px, de grens die Focus Mode al gebruikt; de rail staat op iPad vanaf 768 px.

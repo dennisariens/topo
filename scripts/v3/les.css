@@ -1,7 +1,7 @@
 /* TOPO V3 — Golden Experience 01, beat 3–7 (docs/v3/GE01.md). Presentation only, active while body.v3Les.
    Desktop = sidebar · lesson steps + map · task panel. iPad and phone stay Focus Mode (body[data-focus-shell=true]):
    V3 adds the lesson steps on top and restyles the sheet; nothing moves. */
-.v3LesSideWrap[hidden],.v3LesBar[hidden]{display:none!important}
+.v3ShellNav[hidden],.v3LesBar[hidden]{display:none!important}
 body.v3Les{background:var(--v3-canvas,#f4f1ea)}
 
 /* V2 chrome that steps aside during a lesson (navigation lives in the sidebar or behind ‹ Reis). */
@@ -33,18 +33,17 @@ body.v3Les:not([data-v3-q=discover]) .layout .panel #quiz>#help{display:none!imp
 
 /* Desktop: fixed sidebar + content column. */
 body.v3Les:not([data-focus-shell=true]){--v3-side:232px}
-body.v3Les:not([data-focus-shell=true]) .v3LesSideWrap{position:fixed;z-index:40;left:0;top:var(--v3-bar,0px);bottom:0;width:var(--v3-side);display:flex;background:var(--v3-surface);border-right:1px solid var(--v3-line)}
-body.v3Les:not([data-focus-shell=true]) .v3LesSideWrap .v3Side{flex:1;border:0;border-radius:0;background:transparent}
+body.v3Les:not([data-focus-shell=true]) .v3ShellNav{position:fixed;z-index:40;left:0;top:var(--v3-bar,0px);bottom:0;width:var(--v3-side);display:flex;background:var(--v3-surface);border-right:1px solid var(--v3-line)}
+body.v3Les:not([data-focus-shell=true]) .v3ShellNav .v3Side{flex:1;border:0;border-radius:0;background:transparent}
 body.v3Les:not([data-focus-shell=true]) .v3LesBar,body.v3Les:not([data-focus-shell=true]) main.layout{margin-left:var(--v3-side)}
 body.v3Les:not([data-focus-shell=true]) .v3LesBar{position:sticky;top:0;z-index:30}
 body.v3Les:not([data-focus-shell=true]) main.layout{max-width:none;margin-right:0;padding:var(--v3-s4) var(--v3-s6) var(--v3-s6);grid-template-columns:minmax(0,1fr) 360px;gap:var(--v3-s5);align-items:start}
 @media (max-width:1279px){body.v3Les:not([data-focus-shell=true]){--v3-side:76px}
- .v3LesSideWrap .v3Side{padding:var(--v3-s5) var(--v3-s2);align-items:center}
- .v3LesSideWrap .v3Brand b{font-size:20px}.v3LesSideWrap .v3Portrait{width:56px;height:56px}
- .v3LesSideWrap .v3 .v3NavItem,.v3LesSideWrap .v3NavItem{justify-content:center;padding:0;width:52px}
- .v3LesSideWrap .v3NavItem span{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)}}
+ .v3ShellNav .v3Side{padding:var(--v3-s5) var(--v3-s2);align-items:center}
+ .v3ShellNav .v3Brand b{font-size:20px}.v3ShellNav .v3Portrait{width:56px;height:56px}
+ .v3ShellNav .v3 .v3NavItem,.v3ShellNav .v3NavItem{justify-content:center;padding:0;width:52px}
+ .v3ShellNav .v3NavItem span{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)}}
 body.v3Les:not([data-focus-shell=true]) .v3LesBack{display:none}
-body.v3Les[data-focus-shell=true] .v3LesSideWrap{display:none!important}
 
 /* Map card: the map first; tools stay, quiet, in one row. */
 body.v3Les .mapCard{background:transparent;border:0;box-shadow:none;overflow:visible}
@@ -110,14 +109,10 @@ body.v3Les #finishScreen>button{margin:var(--v3-s2) var(--v3-s1) 0}
 @media (max-width:359px),(max-height:700px) and (max-width:767px){body.v3Les #finishScreen>.ninoArtSlot,body.v3Les #finishScreen>.ninoArtSlot img{max-height:88px}}
 body.v3Les #finishScreen .button.v3Second{background:transparent;color:var(--v3-ink)}
 
-/* iPad and phone (Focus Mode): the steps bar is fixed on top with the Focus menu in it; the map starts below it.
+/* iPad and phone (Focus Mode): the steps bar is fixed on top; the map starts below it (rail and tab bar: shell.css).
    Focus Mode keeps its sheet, keyboard and safe-area handling; only offsets and paint change. */
 body.v3Les[data-focus-shell=true]{--v3-lesbar:60px}
-body.v3Les[data-focus-shell=true] .v3LesBar{position:fixed;z-index:32;left:0;right:0;top:calc(var(--focus-safe-top,0px) + var(--focus-vv-top,0px));height:var(--v3-lesbar);padding:0 64px 0 var(--v3-s2);gap:var(--v3-s3)}
-body.v3Les[data-focus-shell=true] #focusMenu{top:calc(10px + var(--focus-safe-top,0px) + var(--focus-vv-top,0px))}
-/* Menu as an icon button in the bar; its text stays in the DOM as the accessible name. */
-body.v3Les[data-focus-shell=true] #focusMenu>summary{width:44px;min-height:40px;padding:0;display:grid;place-items:center;font-size:0;border-radius:var(--v3-radius-btn)}
-body.v3Les[data-focus-shell=true] #focusMenu>summary::before{content:'☰';font:600 20px/1 var(--v3-font);color:var(--v3-ink)}
+body.v3Les[data-focus-shell=true] .v3LesBar{position:fixed;z-index:32;left:0;right:0;top:calc(var(--focus-safe-top,0px) + var(--focus-vv-top,0px));height:var(--v3-lesbar);padding:0 var(--v3-s3) 0 var(--v3-s2);gap:var(--v3-s3)}
 body.v3Les[data-focus-mode=true] .mapCard{top:calc(var(--v3-lesbar) + 8px + var(--focus-safe-top,0px) + var(--focus-vv-top,0px));height:calc(var(--focus-layout-height,100svh) - var(--v3-lesbar) - 18px - var(--focus-safe-top,0px) - var(--focus-safe-bottom,0px))}
 /* Pause and finish inside the compact shell: the content starts below the fixed bar. */
 body.v3Les[data-focus-shell=true]:not([data-focus-mode=true]) main.layout{padding-top:calc(var(--v3-lesbar) + 12px + var(--focus-safe-top,0px))!important;margin-top:0!important}

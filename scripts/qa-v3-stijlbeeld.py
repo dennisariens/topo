@@ -187,7 +187,7 @@ async def main():
         pg, errors = await page(b, 1440, 900, 'bezig')
         await pg.click('.v3Actions .primary'); await pg.wait_for_timeout(900)
         inLesson = await pg.evaluate('document.body.classList.contains("v3Les")')
-        await pg.click('.v3LesSideWrap .v3Side [data-nav=rewards]'); await pg.wait_for_timeout(900)
+        await pg.click('.v3ShellNav .v3Side [data-nav=rewards]'); await pg.wait_for_timeout(900)
         res['lessonToRewards'] = {'inLesson': inLesson, **(await pg.evaluate('({view:document.querySelector(".v3Reis")?.dataset.view,focus:document.activeElement?.id,les:document.body.classList.contains("v3Les")})'))}
         res['errors'] += errors; await pg.close()
         # Reduced transparency (macOS "Verminder transparantie"): the window turns opaque, the backdrop stays.

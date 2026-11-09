@@ -25,27 +25,40 @@
   e.preventDefault();e.stopImmediatePropagation();
  },true);
 
- /* Sidebar (desktop): the Reis component; Reis returns to Reis, where "Ga verder" resumes this exact question. */
- const toReis=e=>{if(V.ui)V.ui.view='reis';press(()=>v2Nav('Reis'))(e);};
- // Beloningen from a lesson: back to Reis, on its Beloningen view (progress is kept by V2, as with Reis).
- const toRewards=e=>{if(V.ui)V.ui.view='rewards';press(()=>v2Nav('Reis'))(e);requestAnimationFrame(()=>requestAnimationFrame(()=>document.getElementById('v3RewardsTitle')?.focus({preventScroll:true})));};
- const sideWrap=make('div','v3 v3LesSideWrap');sideWrap.append(V.makeSide(toReis,toRewards));sideWrap.hidden=true;body.append(sideWrap);
+ /* Navigation lives in the shell (shell.js): sidebar, rail or tab bar on every lesson, exercise and toets.
+    The back control returns to where this lesson was chosen: Reis, the Oefenen choice or the Toets set-up. */
+ const FREE=['learn','point','write'];
+ const toBack=e=>{e.stopPropagation();const sh=V.shell;if(!sh)return press(()=>v2Nav('Reis'))(e);const t=sh.lessonTab();sh.toHome();sh.show(t==='reis'?'reis':t,t==='oefenen'?'v3OefenenTitle':t==='toets'?'v3ToetsTitle':null);};
 
  /* Lesson steps above the map (topo-ui-design, PR #64): 1 Ontdekken · 2 Aanwijzen · 3 Namen schrijven, ★ Goud apart. */
  const bar=make('nav','v3 v3LesBar');bar.setAttribute('aria-label','Lesstappen');bar.hidden=true;
- const back=btn('',toReis,'v3Btn v3LesBack');back.setAttribute('aria-label','Terug naar Reis');back.append(make('span',null,'‹'),make('span','v3LesBackText','Reis'));
+ const back=btn('',toBack,'v3Btn v3LesBack');back.append(make('span',null,'‹'),make('span','v3LesBackText','Reis'));
  const title=make('strong','v3LesTitle'),steps=make('ol','v3LesSteps'),gold=make('div','v3LesGold'),count=make('span','v3LesCount');
  bar.append(back,title,steps,gold,count);layout.before(bar);
 
  function model(){
+  if(state.mode==='exam'){const total=state.examTotal|0;return {type:'exam',kind:'exam',title:'Toets',total,n:Math.min(total,(state.examAnswered|0)+(state.answered?0:1)),done:!!state.examEnded,paused:false,q:state.questionMode};}
+  if(FREE.includes(state.mode)){const g=$('#groupSelect');return {type:'free',kind:state.mode==='learn'?'discover':state.mode,title:g?.selectedOptions[0]?.textContent.replace(/ · .*$/,'').trim()||'',group:g?.value,total:0,n:0,done:false,paused:false,q:state.mode==='learn'?'discover':state.questionMode};}
   const s=state.route?.active;if(state.mode!=='route'||!s)return null;
   const c=ROUTE_CHAPTERS.find(x=>x.id===s.chapterId);if(!c)return null;
   const r=TopoRoute.record(state.route,c.id),total=s.queue?.length||0,n=Math.min(total,(s.index|0)+(s.done?0:1));
-  return {s,c,r,index:ROUTE_CHAPTERS.indexOf(c),kind:s.kind,total,n,done:!!s.done,paused:typeof roundPaused!=='undefined'&&!!roundPaused,q:state.questionMode};
+  return {type:s.kind==='smart'?'smart':'route',s,c,r,index:ROUTE_CHAPTERS.indexOf(c),kind:s.kind,total,n,done:!!s.done,paused:typeof roundPaused!=='undefined'&&!!roundPaused,q:state.questionMode};
  }
- const inLesson=()=>state.mode==='route'&&!!state.route?.active&&$('#journeyScreen')?.classList.contains('hidden')&&(layout.classList.contains('routeLessonLayout')||layout.classList.contains('finishLayout'));
+ const offHome=()=>$('#journeyScreen')?.classList.contains('hidden')!==false||$('#routeHome')?.classList.contains('hidden');
+ const inLesson=()=>state.mode==='route'?!!state.route?.active&&$('#journeyScreen')?.classList.contains('hidden')&&(layout.classList.contains('routeLessonLayout')||layout.classList.contains('finishLayout')):(state.mode==='exam'||FREE.includes(state.mode))&&offHome()&&!layout.classList.contains('routeHomeLayout');
 
+ const FORM={discover:'Ontdekken',point:'Aanwijzen',write:'Namen schrijven',exam:'Toets',smart:'Slim rondje'};
  function renderBar(m){
+  back.querySelector('.v3LesBackText').textContent=m.type==='route'?'Reis':m.type==='exam'?'Toets':'Oefenen';
+  back.setAttribute('aria-label','Terug naar '+(m.type==='route'?'Reis':m.type==='exam'?'Toets':'Oefenen'));
+  if(m.type!=='route'){
+   // Free practice, slim rondje and toets: the form as one quiet marker; the toets shows only its count.
+   title.replaceChildren(m.type==='exam'?'Toets':m.type==='smart'?FORM.smart:V.range(m.title));
+   steps.replaceChildren();gold.replaceChildren();
+   if(m.type==='free'){const li=make('li'),b=make('span','v3LesStep v3LesForm');b.dataset.state='now';b.append(make('span','v3LesStepName',FORM[m.kind]));li.setAttribute('aria-current','step');li.append(b);steps.append(li);}
+   const hide=m.done||!m.total;count.textContent=hide?'':m.n+' / '+m.total;count.setAttribute('aria-label',hide?'':'Vraag '+m.n+' van '+m.total);
+   return;
+  }
   title.replaceChildren(V.range(m.c.title));
   steps.replaceChildren(...TopoRoute.STAGES.map((stage,n)=>{
    const li=make('li'),now=m.kind===stage&&!m.done,done=n<m.r.stage,st=now?'now':done?'done':'later';
@@ -81,20 +94,20 @@
  let last='',wasAnswered=false;
  function render(){
   const on=inLesson(),m=on?model():null;
-  body.classList.toggle('v3Les',!!m);sideWrap.hidden=bar.hidden=!m;
-  if(!m){last='';wasAnswered=false;for(const k of ['v3Theme','v3Kind','v3Q','v3Answered'])delete body.dataset[k];return;}
-  sideWrap.dataset.theme=bar.dataset.theme=body.dataset.v3Theme=window.TOPO_V3_THEME||'italia';
-  body.dataset.v3Kind=m.kind;body.dataset.v3Q=m.done?'result':m.q||'';
+  body.classList.toggle('v3Les',!!m);bar.hidden=!m;
+  if(!m){last='';wasAnswered=false;for(const k of ['v3Theme','v3Kind','v3Q','v3Answered','v3Type'])delete body.dataset[k];return;}
+  bar.dataset.theme=body.dataset.v3Theme=window.TOPO_V3_THEME||'italia';
+  body.dataset.v3Kind=m.kind;body.dataset.v3Type=m.type;body.dataset.v3Q=m.done?'result':m.q||'';
   const answered=!!state.answered&&!m.done;body.dataset.v3Answered=String(answered);
   // Owner 9-11: after an answer the feedback and Volgende are always in view. When the child collapsed the Focus
   // sheet ("Kaart vrijmaken") to tap the map, press the V2 toggle ("Antwoord openen") once; Focus Mode does the rest.
   if(answered&&!wasAnswered){const t=$('#focusSheetToggle');if(t&&$('#focusAnswerSheet')?.dataset.collapsed==='true'&&t.checkVisibility?.()!==false)t.click();}
   wasAnswered=answered;
-  const key=[m.c.id,m.kind,m.r.stage,m.r.goldAt>0,m.n,m.total,m.done,m.paused,m.q].join('|');
+  const key=[m.type,m.c?.id||m.title,m.kind,m.r?.stage,m.r?.goldAt>0,m.n,m.total,m.done,m.paused,m.q].join('|');
   // Back on Reis, the chapter of this lesson (Ga verder) or the next one is chosen, not an earlier pick.
-  if(V.ui)V.ui.selected=null;
+  if(V.ui&&m.type==='route')V.ui.selected=null;
   if(key!==last){last=key;renderBar(m);}
-  markFinish();
+  if(m.type!=='exam'&&m.type!=='free')markFinish();
  }
  let queued=0;const schedule=()=>{if(!queued)queued=requestAnimationFrame(()=>{queued=0;try{render();}catch(e){console.error('V3 les',e);}});};
  new MutationObserver(schedule).observe(body,{subtree:true,childList:true,attributes:true,attributeFilter:['class','hidden']});

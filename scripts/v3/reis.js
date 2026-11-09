@@ -26,7 +26,8 @@
  const pic=(src,cls,w,h)=>{const i=make('img',cls);i.src=src;i.alt='';i.decoding='async';if(w){i.width=w;i.height=h;}return i;};
  // One extra symbol in the existing sprite: a gear for settings.
  const defs=document.querySelector('#topoIconSprite defs');
- if(defs&&!document.getElementById('topo-v3gear')){const g=document.createElementNS(SVGNS,'symbol');g.id='topo-v3gear';g.setAttribute('viewBox','0 0 32 32');g.innerHTML='<circle cx="16" cy="16" r="4.5"/><path d="M16 3v4m0 18v4M3 16h4m18 0h4M6.8 6.8l2.8 2.8m12.8 12.8 2.8 2.8M6.8 25.2l2.8-2.8m12.8-12.8 2.8-2.8"/>';defs.append(g);}
+ if(defs&&!document.getElementById('topo-v3gear')){const g=document.createElementNS(SVGNS,'symbol');g.id='topo-v3gear';g.setAttribute('viewBox','0 0 32 32');g.innerHTML='<circle cx="16" cy="16" r="4.5"/><path d="M16 3v4m0 18v4M3 16h4m18 0h4M6.8 6.8l2.8 2.8m12.8 12.8 2.8 2.8M6.8 25.2l2.8-2.8m12.8-12.8 2.8-2.8"/>';defs.append(g);
+  for(const [id,d] of [['v3test','<rect x="6" y="4" width="20" height="25" rx="3"/><path d="M12 4h8v4h-8zM11 15l3 3 6-6M11 23h10"/>'],['v3progress','<path d="M4 28h24M8 24V16m8 8V8m8 16V12"/>'],['v3smart','<path d="M16 3v7m0 12v7M3 16h7m12 0h7M7 7l4 4m10 10 4 4m0-18-4 4M11 21l-4 4"/>']]){const y=document.createElementNS(SVGNS,'symbol');y.id='topo-'+id;y.setAttribute('viewBox','0 0 32 32');y.innerHTML=d;defs.append(y);}}
 
  function model(){
   const chapters=ROUTE_CHAPTERS.map((c,index)=>{const r=TopoRoute.record(state.route,c.id);return {...c,index,r,open:TopoRoute.unlocked(state.route,ROUTE_CHAPTERS,c.id),done:r.stage===3,gold:r.goldAt>0};});
@@ -39,19 +40,22 @@
  /* Shell (built once) */
  const root=make('div','v3 v3Reis');root.dataset.v3='reis';
  // Sidebar: one component for Reis and the lesson. Inside a lesson, Reis returns to Reis through the V2 nav.
- function makeSide(onReis,onRewards){
+ // Navigation (V3.0, docs/v3/V3_0_REST.md § 1): six tabs on every screen. The shell (shell.js) routes each tab;
+ // the current tab follows the route the learner chose (DECISIONS 7-11).
+ const TABS=[['reis','Reis','vespa'],['oefenen','Oefenen','point'],['toets','Toets','v3test'],['rewards','Beloningen','gold'],['voortgang','Voortgang','v3progress']];
+ const go=tab=>e=>{e?.stopPropagation?.();window.TOPO_V3?.go?.(tab,e?.currentTarget);};
+ function makeSide(){
   const side=make('nav','v3Side');side.setAttribute('aria-label','Hoofdnavigatie');
   const brand=make('div','v3Brand');brand.append(make('b',null,'Topo'),make('i','v3Flag'));
   // Nino portrait (render asset NINO-PORTRET); the guide cut-out only when the portrait is missing.
   const portrait=make('div','v3Portrait');if(V3ART?.portrait){portrait.classList.add('v3PortraitArt');portrait.append(pic(V3ART.portrait,null,512,512));}else if(nino.guide)portrait.append(img(nino.guide));
-  const navItem=(label,glyph,fn,current)=>{const b=btn('',fn,'v3Btn v3NavItem');b.append(icon(glyph),make('span',null,label));if(current)b.setAttribute('aria-current','page');return b;};
-  const nav=make('div','v3NavList');
-  const reis=navItem('Reis','vespa',onReis||(e=>{e.stopPropagation();ui.view='reis';render();}),true),rewards=navItem('Beloningen','gold',onRewards||(e=>{e.stopPropagation();ui.view='rewards';render();root.querySelector('#v3RewardsTitle')?.focus({preventScroll:true});}));
-  reis.dataset.nav='reis';rewards.dataset.nav='rewards';
-  nav.append(reis,navItem('Oefenen','point',press(()=>v2Nav('Oefenen'))),rewards);
-  const settings=navItem('Instellingen','v3gear',press(()=>$('.ninoSettingsButton')));settings.classList.add('v3Settings');
-  side.append(brand,portrait,nav,settings);return side;
+  const navItem=(tab,label,glyph)=>{const b=btn('',go(tab),'v3Btn v3NavItem');b.append(icon(glyph),make('span',null,label));b.dataset.nav=tab;return b;};
+  const nav=make('div','v3NavList');nav.append(...TABS.map(t=>navItem(...t)));
+  const settings=navItem('instellingen','Instellingen','v3gear');settings.classList.add('v3Settings');
+  side.append(brand,portrait,nav,settings);markNav(side);return side;
  }
+ // aria-current on every sidebar copy (Reis window and lesson shell).
+ function markNav(scope=document){const cur=window.TOPO_V3?.currentTab?.()||(ui.view==='rewards'?'rewards':'reis');scope.querySelectorAll('.v3Side [data-nav]').forEach(b=>{if(b.dataset.nav===cur)b.setAttribute('aria-current','page');else b.removeAttribute('aria-current');});}
  const side=makeSide();
  const list=make('section','v3List');list.setAttribute('aria-labelledby','v3ListTitle');
  const listTitle=make('h2',null,'Hoofdstukken');listTitle.id='v3ListTitle';const rows=make('ol','v3Rows');list.append(listTitle,rows);
@@ -60,23 +64,26 @@
  main.append(top,stage,panel);
  // Beloningen (richting B): a calm frame around the rich Reisboekje; counts come from the V2 state.
  const rewardsView=make('section','v3Rewards');rewardsView.setAttribute('aria-labelledby','v3RewardsTitle');
+ // Further V3 views (Oefenen, Toets, Voortgang) share this window; shell.js fills them.
+ const views={rewards:rewardsView},renderers={};
+ function addView(name,label,fn){const v=make('section','v3View v3View-'+name);v.setAttribute('aria-label',label);views[name]=v;renderers[name]=fn;root.append(v);return v;}
  root.append(side,list,main,rewardsView);
 
  /* Map: clone of the live map, ids prefixed so references stay valid and nothing duplicates. */
  let mapClone=null;
- function cloneMap(){
+ function cloneMap(prefix='v3m-',cls='v3Map'){
   const live=$('#map');if(!live||!live.querySelector('[data-id]'))return null;
   const svg=live.cloneNode(true),ids=new Map();
-  svg.querySelectorAll('[id]').forEach(n=>{ids.set(n.id,'v3m-'+n.id);n.id='v3m-'+n.id;});
+  svg.querySelectorAll('[id]').forEach(n=>{ids.set(n.id,prefix+n.id);n.id=prefix+n.id;});
   svg.removeAttribute('id');
   svg.querySelectorAll('*').forEach(n=>{for(const a of [...n.attributes]){if(a.value.includes('#')){const v=a.value.replace(/url\(#([^)]+)\)/g,(m,k)=>ids.has(k)?'url(#'+ids.get(k)+')':m).replace(/^#(.+)$/,(m,k)=>ids.has(k)?'#'+ids.get(k):m);if(v!==a.value)n.setAttribute(a.name,v);}}});
   svg.querySelectorAll('[class]').forEach(n=>n.classList.remove('activeTarget','selected','correct','wrong','highlight'));
-  svg.querySelectorAll('#v3m-nameLayer>*,.nameLabel').forEach(n=>n.remove());
+  svg.querySelectorAll('#'+prefix+'nameLayer>*,.nameLabel').forEach(n=>n.remove());
   // Decorative copy: no focus stops, no accessible duplicates of the live targets.
   svg.querySelectorAll('[tabindex],[role],[aria-label]').forEach(n=>{n.removeAttribute('tabindex');n.removeAttribute('role');n.removeAttribute('aria-label');});
   svg.querySelectorAll('a,button,foreignObject').forEach(n=>n.remove());
-  svg.setAttribute('aria-hidden','true');svg.setAttribute('focusable','false');svg.removeAttribute('role');svg.classList.add('v3Map');
-  addRelief(svg);
+  svg.setAttribute('aria-hidden','true');svg.setAttribute('focusable','false');svg.removeAttribute('role');svg.classList.add(cls);
+  addRelief(svg,prefix);
   return svg;
  }
  // Relief z8 in the render palette (Codex, v3/relief-z8 @ 2a7b0cf; measured DEM, same 890×1235 frame), in its layer
@@ -85,12 +92,12 @@
  // V3 adds a soft coastal glow (copies of the same land paths) for a gentler sea gradient, and a land base in the
  // lowland colour where the raster ends (outside the canvas).
  const RELIEF=window.TOPO_V3_RELIEF||null;
- function addRelief(svg){
+ function addRelief(svg,prefix='v3m-'){
   const raster=(cls,href)=>{const i=document.createElementNS(SVGNS,'image');for(const [k,v] of Object.entries({x:0,y:0,width:890,height:1235,preserveAspectRatio:'none','pointer-events':'none','aria-hidden':'true',class:cls,href}))i.setAttribute(k,v);return i;};
   const defs=document.createElementNS(SVGNS,'defs');defs.innerHTML='<filter id="v3-coast-glow" x="-10%" y="-10%" width="120%" height="120%"><feGaussianBlur stdDeviation="9"/></filter>';svg.prepend(defs);
   const shapes=[...svg.querySelectorAll('.land,.italy')].map(n=>n.getAttribute('d')).filter(Boolean);
   const layer=cls=>{const g=document.createElementNS(SVGNS,'g');g.setAttribute('class',cls);g.setAttribute('aria-hidden','true');g.setAttribute('pointer-events','none');for(const d of shapes){const q=document.createElementNS(SVGNS,'path');q.setAttribute('d',d);g.append(q);}return g;};
-  const under=svg.querySelector('#v3m-seaLayer'),terrain=svg.querySelector('.atlasTerrain');if(!under||!terrain)return;
+  const under=svg.querySelector('#'+prefix+'seaLayer'),terrain=svg.querySelector('.atlasTerrain');if(!under||!terrain)return;
   const below=[];if(RELIEF)below.push(raster('v3R v3RSea',RELIEF.sea));below.push(layer('v3CoastGlow'));if(RELIEF)below.push(raster('v3R v3RShadow',RELIEF.shadow));below.push(layer('v3LandBase'));
   under.before(...below);
   if(RELIEF){terrain.querySelector('image')?.setAttribute('href',RELIEF.terrain);terrain.after(raster('v3R v3RCoast',RELIEF.coast));svg.dataset.relief8='z8';}
@@ -223,9 +230,10 @@
   // Backdrop: BG-01 (BG-02/BG-03 in the preview), full-bleed behind the window; the V2 panorama only as fallback.
   const pano=V3ART?.bg?.[window.TOPO_V3_BG||'bg01']||V3ART?.bg?.bg01||$('.routeScene img')?.currentSrc||$('.routeScene img')?.src;
   if(pano&&!document.body.style.getPropertyValue('--v3-pano'))document.body.style.setProperty('--v3-pano','url("'+pano+'")');
-  root.dataset.view=ui.view==='rewards'?'rewards':'reis';
-  root.querySelectorAll('.v3Side [data-nav]').forEach(b=>{if(b.dataset.nav===root.dataset.view)b.setAttribute('aria-current','page');else b.removeAttribute('aria-current');});
+  root.dataset.view=views[ui.view]?ui.view:'reis';
+  markNav(root);
   renderTop(m);renderRows(m);renderPanel(m,c);renderSwitch();paintMap(c);renderRewards(m);
+  if(renderers[root.dataset.view])try{renderers[root.dataset.view](views[root.dataset.view],m);}catch(e){console.error('V3 view',e);}
  }
  // V2 chrome steps aside while Reis is shown; lessons and other screens keep V2 as is.
  function chrome(){const on=!$('#journeyScreen')?.classList.contains('hidden')&&!$('#routeHome')?.classList.contains('hidden');document.body.classList.toggle('v3Home',on);}
@@ -233,6 +241,6 @@
  const base=renderRouteHome;
  renderRouteHome=function(...a){const out=base.apply(this,a);try{render();chrome();}catch(e){console.error('V3 Reis',e);}return out;};
  document.body.classList.add('v3On');
- window.TOPO_V3={render,model,ui,makeSide,icon,make,btn,press,v2Card,v2Nav,STAGE,KIND,range};
+ window.TOPO_V3={render,model,ui,makeSide,markNav,addView,cloneMap,fit,icon,make,btn,pic,img,press,v2Card,v2Nav,STAGE,KIND,range,scenes,art:V3ART,nino,root};
  if(!$('#journeyScreen')?.classList.contains('hidden')){render();chrome();}
 })();

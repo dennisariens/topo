@@ -38,7 +38,7 @@ STATE_JS = '''() => { const s = state.route.active, b = document.body;
 LAYOUT_JS = '''() => { const r = e => e.getBoundingClientRect(), vis = e => { const q = r(e); return q.width > 1 && q.height > 1 && e.checkVisibility({contentVisibilityAuto: true, visibilityProperty: true, opacityProperty: true}) && q.bottom > 0 && q.top < innerHeight; };
   const accent = getComputedStyle(document.body).getPropertyValue('--v3-accent').trim();
   const toRgb = h => { const n = parseInt(h.slice(1), 16); return `rgb(${n >> 16 & 255}, ${n >> 8 & 255}, ${n & 255})`; };
-  const scope = [...document.querySelectorAll('.v3LesBar, .layout, #focusAnswerSheet, #focusLearnBar, .v3LesSideWrap, dialog[open]')];
+  const scope = [...document.querySelectorAll('.v3LesBar, .layout, #focusAnswerSheet, #focusLearnBar, .v3ShellNav, dialog[open]')];
   const buttons = [...new Set(scope.flatMap(s => [...s.querySelectorAll('button')]))].filter(vis);
   const primaries = buttons.filter(b => getComputedStyle(b).backgroundColor === toRgb(accent)).map(b => b.textContent.trim());
   const bar = [...document.querySelectorAll('.v3LesBar button, .v3LesBar .v3LesCount, #focusMenu>summary')].filter(vis), overlaps = [];

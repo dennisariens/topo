@@ -440,13 +440,50 @@
      "alpha": true
     }
    }
+  },
+  {
+   "id": "IC-postcard",
+   "status": "ter beoordeling eigenaar",
+   "note": "tweede versie: kustlandschap, geen kaart; getande rand zoals de echte postkaarten",
+   "master": {
+    "path": "assets/v3/render/masters/icons/IC-postcard.png",
+    "bytes": 2000791,
+    "sha256": "fe47a2601efe3afbcb303fbf0a0f2104864ca5e8a2975cd624599d16ea8e66a7",
+    "size": [
+     1254,
+     1254
+    ],
+    "alpha": true
+   },
+   "exports": {
+    "96": {
+     "path": "assets/v3/render/exports/icons/IC-postcard-96.webp",
+     "bytes": 6638,
+     "sha256": "b4abe1371d848c583af9a843edaf1b2450e21571a9c8ab576b9a3dd78b2ef158",
+     "size": [
+      96,
+      96
+     ],
+     "alpha": true
+    },
+    "48": {
+     "path": "assets/v3/render/exports/icons/IC-postcard-48.webp",
+     "bytes": 2554,
+     "sha256": "0d3975e248c3751f3e204734e417feb3bb7147e2fed56cb51656c789aa08603d",
+     "size": [
+      48,
+      48
+     ],
+     "alpha": true
+    }
+   }
   }
  ],
  "pending": [
   {
-   "id": "IC-postcard",
-   "status": "opnieuw",
-   "note": "getekende kaart van Italië met verkeerde vorm; postkaart met landschap in plaats van kaart"
+   "id": "IC-stamp",
+   "status": "opnieuw gevraagd",
+   "note": "afdruk in plaats van stempelapparaat; huidig apparaat blijft master voor het stempelmoment"
   }
  ]
 }

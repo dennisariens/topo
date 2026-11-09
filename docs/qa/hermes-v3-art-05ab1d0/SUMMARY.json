@@ -1,0 +1,48 @@
+{
+  "target": "05ab1d0808aa20a18b99fea81950a6284539bf03",
+  "baseline": "908b4a498199ece40a047f19efb2e80fe62812b8",
+  "verdict": "PASS",
+  "scope": "Targeted retest only; three modified character assets",
+  "assetCount": 3,
+  "fileRecords": 9,
+  "manifestFailures": 0,
+  "assets": [
+    {
+      "id": "NINO-PORTRET",
+      "verdict": "PASS",
+      "integrity": "PASS",
+      "shirt": "PASS: closed blue collared buttoned work shirt; no visible white undershirt",
+      "otherModelTraits": "PASS for visible traits; lower body/vehicle N/A for portrait",
+      "vespaMarks": "N/A: no vehicle in portrait",
+      "miniWithoutNino": "N/A: no landscape miniature for portrait"
+    },
+    {
+      "id": "SCENE-ROMA",
+      "verdict": "PASS",
+      "integrity": "PASS",
+      "shirt": "PASS: closed blue collared buttoned work shirt; no visible white undershirt",
+      "otherModelTraits": "PASS for visible traits; lower body/vehicle N/A for portrait",
+      "vespaMarks": "PASS: no visible logo or text in actual runtime export native crops",
+      "miniWithoutNino": "PASS: actual480x270 runtime miniature inspected, no Nino or Vespa fragments"
+    },
+    {
+      "id": "SCENE-NAPOLI",
+      "verdict": "PASS",
+      "integrity": "PASS",
+      "shirt": "PASS: closed blue collared buttoned work shirt; no visible white undershirt",
+      "otherModelTraits": "PASS for visible traits; lower body/vehicle N/A for portrait",
+      "vespaMarks": "PASS: no visible logo or text in actual runtime export native crops",
+      "miniWithoutNino": "PASS: actual480x270 runtime miniature inspected, no Nino or Vespa fragments"
+    }
+  ],
+  "exceptionsApplied": [
+    "BG01..03 owner source-resolution exception; not re-tested",
+    "Budget units KiB; visual quality priority; no background budget rework reopened",
+    "Portrait head/shoulders crop and light hair fringe accepted"
+  ],
+  "decisionsSource": "cdcf30dbf7caef2da5ab989f12b5055bdc250727:docs/DECISIONS.md",
+  "decisionsMissingAtArtPin": true,
+  "candidateModified": false,
+  "merge": false,
+  "runtimeIntegrationTested": false
+}

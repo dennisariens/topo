@@ -1,0 +1,59 @@
+[
+  {
+    "asset": "NINO-PORTRET",
+    "masterPath": "assets/v3/render/masters/NINO-PORTRET.png",
+    "shirtCrop": [
+      210,
+      1040,
+      940,
+      1402
+    ],
+    "referenceCommit": "8a704cb23da97baf7197635df7fa12f06b864a24",
+    "referencePath": "assets/nino/scenes/topo-steden-firenze.png",
+    "referenceCrop": [
+      290,
+      300,
+      520,
+      525
+    ],
+    "boardTransforms": "Crop + fit; old/new proof only, no source edits"
+  },
+  {
+    "asset": "SCENE-ROMA",
+    "masterPath": "assets/v3/render/masters/SCENE-ROMA.png",
+    "shirtCrop": [
+      370,
+      335,
+      625,
+      540
+    ],
+    "referenceCommit": "8a704cb23da97baf7197635df7fa12f06b864a24",
+    "referencePath": "assets/nino/scenes/topo-steden-firenze.png",
+    "referenceCrop": [
+      290,
+      300,
+      520,
+      525
+    ],
+    "boardTransforms": "Crop + fit; old/new proof only, no source edits"
+  },
+  {
+    "asset": "SCENE-NAPOLI",
+    "masterPath": "assets/v3/render/masters/SCENE-NAPOLI.png",
+    "shirtCrop": [
+      300,
+      260,
+      570,
+      490
+    ],
+    "referenceCommit": "8a704cb23da97baf7197635df7fa12f06b864a24",
+    "referencePath": "assets/nino/scenes/topo-steden-firenze.png",
+    "referenceCrop": [
+      290,
+      300,
+      520,
+      525
+    ],
+    "boardTransforms": "Crop + fit; old/new proof only, no source edits"
+  }
+]

@@ -1,0 +1,12 @@
+{
+  "sourceCommit": "cdcf30dbf7caef2da5ab989f12b5055bdc250727",
+  "path": "docs/DECISIONS.md",
+  "wholeFileSHA256": "214f6af2a17efbb9f7063872250314d229aa10ca59f13102d70d13f4953f92ec",
+  "candidateContainsNamedSections": false,
+  "currentUserExplicitExceptions": [
+    "BG01..03 no retest",
+    "portrait head/shoulder crop accepted",
+    "portrait light hair fringe accepted"
+  ],
+  "shirtRule": "Second decision supersedes cut-variation allowance: closed blue collared buttoned work shirt without white undershirt everywhere"
+}

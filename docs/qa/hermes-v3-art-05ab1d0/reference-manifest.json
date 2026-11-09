@@ -1,0 +1,14 @@
+[
+  {
+    "source": "assets/nino/exports/nino-guide.webp",
+    "commit": "908b4a498199ece40a047f19efb2e80fe62812b8",
+    "evidence": "references/nino-guide.webp",
+    "sha256": "13cb4bc888d62573dde1cfb6a6645da82c20180547354aab8f3557e99a691a2a"
+  },
+  {
+    "source": "assets/nino/scenes/topo-steden-firenze.png",
+    "commit": "8a704cb23da97baf7197635df7fa12f06b864a24",
+    "evidence": "references/topo-steden-firenze.png",
+    "sha256": "e0dbd1d4486d785d1f112773459d384110e8f3a42b3b2cb87ae61956153e6e40"
+  }
+]

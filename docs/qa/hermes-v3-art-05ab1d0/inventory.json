@@ -1,0 +1,621 @@
+{
+  "target": "05ab1d0808aa20a18b99fea81950a6284539bf03",
+  "baseline": "908b4a498199ece40a047f19efb2e80fe62812b8",
+  "assets": [
+    "NINO-PORTRET",
+    "SCENE-NAPOLI",
+    "SCENE-ROMA"
+  ],
+  "records": [
+    {
+      "id": {
+        "id": "NINO-PORTRET",
+        "status": "ter beoordeling eigenaar; Hermes hertest",
+        "note": "derde versie: gesloten blauw werkshirt (besluit 9-11); achtergrond verwijderd",
+        "master": {
+          "path": "assets/v3/render/masters/NINO-PORTRET.png",
+          "bytes": 2114016,
+          "sha256": "33a87818f5848dc4c7d6f91e6120742dc755cee7d3eee22e25ff41c8917d93fe",
+          "size": [
+            1122,
+            1402
+          ],
+          "alpha": false
+        },
+        "master_alpha": {
+          "path": "assets/v3/render/masters/NINO-PORTRET-alpha.png",
+          "bytes": 2451210,
+          "sha256": "d92f74212e2b97010afff9afc80b20137ebc6eef854547228facdbc5f038e216",
+          "size": [
+            1122,
+            1402
+          ],
+          "alpha": true
+        },
+        "export": {
+          "path": "assets/v3/render/exports/NINO-PORTRET-512.webp",
+          "bytes": 53086,
+          "sha256": "97fe052f40fea2ec7c07a2935d8bb2f544777b4e3893c1a509ab9bc0c1a492e2",
+          "size": [
+            512,
+            512
+          ],
+          "alpha": true
+        }
+      },
+      "role": "master",
+      "path": "assets/v3/render/masters/NINO-PORTRET.png",
+      "expected": {
+        "path": "assets/v3/render/masters/NINO-PORTRET.png",
+        "bytes": 2114016,
+        "sha256": "33a87818f5848dc4c7d6f91e6120742dc755cee7d3eee22e25ff41c8917d93fe",
+        "size": [
+          1122,
+          1402
+        ],
+        "alpha": false
+      },
+      "actual": {
+        "sha256": "33a87818f5848dc4c7d6f91e6120742dc755cee7d3eee22e25ff41c8917d93fe",
+        "bytes": 2114016,
+        "size": [
+          1122,
+          1402
+        ],
+        "alpha": false
+      },
+      "checks": {
+        "sha256": true,
+        "bytes": true,
+        "size": true,
+        "alpha": true
+      }
+    },
+    {
+      "id": {
+        "id": "NINO-PORTRET",
+        "status": "ter beoordeling eigenaar; Hermes hertest",
+        "note": "derde versie: gesloten blauw werkshirt (besluit 9-11); achtergrond verwijderd",
+        "master": {
+          "path": "assets/v3/render/masters/NINO-PORTRET.png",
+          "bytes": 2114016,
+          "sha256": "33a87818f5848dc4c7d6f91e6120742dc755cee7d3eee22e25ff41c8917d93fe",
+          "size": [
+            1122,
+            1402
+          ],
+          "alpha": false
+        },
+        "master_alpha": {
+          "path": "assets/v3/render/masters/NINO-PORTRET-alpha.png",
+          "bytes": 2451210,
+          "sha256": "d92f74212e2b97010afff9afc80b20137ebc6eef854547228facdbc5f038e216",
+          "size": [
+            1122,
+            1402
+          ],
+          "alpha": true
+        },
+        "export": {
+          "path": "assets/v3/render/exports/NINO-PORTRET-512.webp",
+          "bytes": 53086,
+          "sha256": "97fe052f40fea2ec7c07a2935d8bb2f544777b4e3893c1a509ab9bc0c1a492e2",
+          "size": [
+            512,
+            512
+          ],
+          "alpha": true
+        }
+      },
+      "role": "master_alpha",
+      "path": "assets/v3/render/masters/NINO-PORTRET-alpha.png",
+      "expected": {
+        "path": "assets/v3/render/masters/NINO-PORTRET-alpha.png",
+        "bytes": 2451210,
+        "sha256": "d92f74212e2b97010afff9afc80b20137ebc6eef854547228facdbc5f038e216",
+        "size": [
+          1122,
+          1402
+        ],
+        "alpha": true
+      },
+      "actual": {
+        "sha256": "d92f74212e2b97010afff9afc80b20137ebc6eef854547228facdbc5f038e216",
+        "bytes": 2451210,
+        "size": [
+          1122,
+          1402
+        ],
+        "alpha": true
+      },
+      "checks": {
+        "sha256": true,
+        "bytes": true,
+        "size": true,
+        "alpha": true
+      }
+    },
+    {
+      "id": {
+        "id": "NINO-PORTRET",
+        "status": "ter beoordeling eigenaar; Hermes hertest",
+        "note": "derde versie: gesloten blauw werkshirt (besluit 9-11); achtergrond verwijderd",
+        "master": {
+          "path": "assets/v3/render/masters/NINO-PORTRET.png",
+          "bytes": 2114016,
+          "sha256": "33a87818f5848dc4c7d6f91e6120742dc755cee7d3eee22e25ff41c8917d93fe",
+          "size": [
+            1122,
+            1402
+          ],
+          "alpha": false
+        },
+        "master_alpha": {
+          "path": "assets/v3/render/masters/NINO-PORTRET-alpha.png",
+          "bytes": 2451210,
+          "sha256": "d92f74212e2b97010afff9afc80b20137ebc6eef854547228facdbc5f038e216",
+          "size": [
+            1122,
+            1402
+          ],
+          "alpha": true
+        },
+        "export": {
+          "path": "assets/v3/render/exports/NINO-PORTRET-512.webp",
+          "bytes": 53086,
+          "sha256": "97fe052f40fea2ec7c07a2935d8bb2f544777b4e3893c1a509ab9bc0c1a492e2",
+          "size": [
+            512,
+            512
+          ],
+          "alpha": true
+        }
+      },
+      "role": "export",
+      "path": "assets/v3/render/exports/NINO-PORTRET-512.webp",
+      "expected": {
+        "path": "assets/v3/render/exports/NINO-PORTRET-512.webp",
+        "bytes": 53086,
+        "sha256": "97fe052f40fea2ec7c07a2935d8bb2f544777b4e3893c1a509ab9bc0c1a492e2",
+        "size": [
+          512,
+          512
+        ],
+        "alpha": true
+      },
+      "actual": {
+        "sha256": "97fe052f40fea2ec7c07a2935d8bb2f544777b4e3893c1a509ab9bc0c1a492e2",
+        "bytes": 53086,
+        "size": [
+          512,
+          512
+        ],
+        "alpha": true
+      },
+      "checks": {
+        "sha256": true,
+        "bytes": true,
+        "size": true,
+        "alpha": true
+      }
+    },
+    {
+      "id": {
+        "id": "SCENE-ROMA",
+        "chapter": "city2",
+        "status": "ter beoordeling eigenaar; Hermes hertest",
+        "note": "derde versie: gesloten blauw werkshirt (besluit 9-11); Vespa zonder merktekens",
+        "master": {
+          "path": "assets/v3/render/masters/SCENE-ROMA.png",
+          "bytes": 2719471,
+          "sha256": "f7478b9cd7288309b1a4348897c124729bd3e260bc531d6747e2301a170560e6",
+          "size": [
+            1672,
+            941
+          ],
+          "alpha": false
+        },
+        "export_kop": {
+          "path": "assets/v3/render/exports/SCENE-ROMA-kop-1672.webp",
+          "bytes": 336364,
+          "sha256": "5a01badbf0f26fe28109e999c592615d882eb704e6bef809d40e70436b4f6465",
+          "size": [
+            1672,
+            941
+          ],
+          "alpha": false
+        },
+        "export_mini": {
+          "path": "assets/v3/render/exports/SCENE-ROMA-mini-480.webp",
+          "bytes": 34598,
+          "sha256": "518ab33ebc0b6902850ea46bdf3a57cc7556351ce40be2fc235e9c3eb439c146",
+          "size": [
+            480,
+            270
+          ],
+          "alpha": false
+        }
+      },
+      "role": "master",
+      "path": "assets/v3/render/masters/SCENE-ROMA.png",
+      "expected": {
+        "path": "assets/v3/render/masters/SCENE-ROMA.png",
+        "bytes": 2719471,
+        "sha256": "f7478b9cd7288309b1a4348897c124729bd3e260bc531d6747e2301a170560e6",
+        "size": [
+          1672,
+          941
+        ],
+        "alpha": false
+      },
+      "actual": {
+        "sha256": "f7478b9cd7288309b1a4348897c124729bd3e260bc531d6747e2301a170560e6",
+        "bytes": 2719471,
+        "size": [
+          1672,
+          941
+        ],
+        "alpha": false
+      },
+      "checks": {
+        "sha256": true,
+        "bytes": true,
+        "size": true,
+        "alpha": true
+      }
+    },
+    {
+      "id": {
+        "id": "SCENE-ROMA",
+        "chapter": "city2",
+        "status": "ter beoordeling eigenaar; Hermes hertest",
+        "note": "derde versie: gesloten blauw werkshirt (besluit 9-11); Vespa zonder merktekens",
+        "master": {
+          "path": "assets/v3/render/masters/SCENE-ROMA.png",
+          "bytes": 2719471,
+          "sha256": "f7478b9cd7288309b1a4348897c124729bd3e260bc531d6747e2301a170560e6",
+          "size": [
+            1672,
+            941
+          ],
+          "alpha": false
+        },
+        "export_kop": {
+          "path": "assets/v3/render/exports/SCENE-ROMA-kop-1672.webp",
+          "bytes": 336364,
+          "sha256": "5a01badbf0f26fe28109e999c592615d882eb704e6bef809d40e70436b4f6465",
+          "size": [
+            1672,
+            941
+          ],
+          "alpha": false
+        },
+        "export_mini": {
+          "path": "assets/v3/render/exports/SCENE-ROMA-mini-480.webp",
+          "bytes": 34598,
+          "sha256": "518ab33ebc0b6902850ea46bdf3a57cc7556351ce40be2fc235e9c3eb439c146",
+          "size": [
+            480,
+            270
+          ],
+          "alpha": false
+        }
+      },
+      "role": "export_kop",
+      "path": "assets/v3/render/exports/SCENE-ROMA-kop-1672.webp",
+      "expected": {
+        "path": "assets/v3/render/exports/SCENE-ROMA-kop-1672.webp",
+        "bytes": 336364,
+        "sha256": "5a01badbf0f26fe28109e999c592615d882eb704e6bef809d40e70436b4f6465",
+        "size": [
+          1672,
+          941
+        ],
+        "alpha": false
+      },
+      "actual": {
+        "sha256": "5a01badbf0f26fe28109e999c592615d882eb704e6bef809d40e70436b4f6465",
+        "bytes": 336364,
+        "size": [
+          1672,
+          941
+        ],
+        "alpha": false
+      },
+      "checks": {
+        "sha256": true,
+        "bytes": true,
+        "size": true,
+        "alpha": true
+      }
+    },
+    {
+      "id": {
+        "id": "SCENE-ROMA",
+        "chapter": "city2",
+        "status": "ter beoordeling eigenaar; Hermes hertest",
+        "note": "derde versie: gesloten blauw werkshirt (besluit 9-11); Vespa zonder merktekens",
+        "master": {
+          "path": "assets/v3/render/masters/SCENE-ROMA.png",
+          "bytes": 2719471,
+          "sha256": "f7478b9cd7288309b1a4348897c124729bd3e260bc531d6747e2301a170560e6",
+          "size": [
+            1672,
+            941
+          ],
+          "alpha": false
+        },
+        "export_kop": {
+          "path": "assets/v3/render/exports/SCENE-ROMA-kop-1672.webp",
+          "bytes": 336364,
+          "sha256": "5a01badbf0f26fe28109e999c592615d882eb704e6bef809d40e70436b4f6465",
+          "size": [
+            1672,
+            941
+          ],
+          "alpha": false
+        },
+        "export_mini": {
+          "path": "assets/v3/render/exports/SCENE-ROMA-mini-480.webp",
+          "bytes": 34598,
+          "sha256": "518ab33ebc0b6902850ea46bdf3a57cc7556351ce40be2fc235e9c3eb439c146",
+          "size": [
+            480,
+            270
+          ],
+          "alpha": false
+        }
+      },
+      "role": "export_mini",
+      "path": "assets/v3/render/exports/SCENE-ROMA-mini-480.webp",
+      "expected": {
+        "path": "assets/v3/render/exports/SCENE-ROMA-mini-480.webp",
+        "bytes": 34598,
+        "sha256": "518ab33ebc0b6902850ea46bdf3a57cc7556351ce40be2fc235e9c3eb439c146",
+        "size": [
+          480,
+          270
+        ],
+        "alpha": false
+      },
+      "actual": {
+        "sha256": "518ab33ebc0b6902850ea46bdf3a57cc7556351ce40be2fc235e9c3eb439c146",
+        "bytes": 34598,
+        "size": [
+          480,
+          270
+        ],
+        "alpha": false
+      },
+      "checks": {
+        "sha256": true,
+        "bytes": true,
+        "size": true,
+        "alpha": true
+      }
+    },
+    {
+      "id": {
+        "id": "SCENE-NAPOLI",
+        "chapter": "city4",
+        "status": "ter beoordeling eigenaar; Hermes hertest",
+        "note": "derde versie: gesloten blauw werkshirt, omgeslagen broek (besluit 9-11); Vespa zonder merktekens",
+        "master": {
+          "path": "assets/v3/render/masters/SCENE-NAPOLI.png",
+          "bytes": 2495974,
+          "sha256": "0a361636f52069f517e1bb7387f4b2f34a60d2721b14f09863862fa58628ab72",
+          "size": [
+            1672,
+            941
+          ],
+          "alpha": false
+        },
+        "export_kop": {
+          "path": "assets/v3/render/exports/SCENE-NAPOLI-kop-1672.webp",
+          "bytes": 275572,
+          "sha256": "d9662509ce537fa8fcfb0485acc5478ff8ddc632b7768dbaf192269148a12668",
+          "size": [
+            1672,
+            941
+          ],
+          "alpha": false
+        },
+        "export_mini": {
+          "path": "assets/v3/render/exports/SCENE-NAPOLI-mini-480.webp",
+          "bytes": 27984,
+          "sha256": "f62e812526d488d47740ae87ca5b38a04291729360cae764886453336a954778",
+          "size": [
+            480,
+            270
+          ],
+          "alpha": false
+        }
+      },
+      "role": "master",
+      "path": "assets/v3/render/masters/SCENE-NAPOLI.png",
+      "expected": {
+        "path": "assets/v3/render/masters/SCENE-NAPOLI.png",
+        "bytes": 2495974,
+        "sha256": "0a361636f52069f517e1bb7387f4b2f34a60d2721b14f09863862fa58628ab72",
+        "size": [
+          1672,
+          941
+        ],
+        "alpha": false
+      },
+      "actual": {
+        "sha256": "0a361636f52069f517e1bb7387f4b2f34a60d2721b14f09863862fa58628ab72",
+        "bytes": 2495974,
+        "size": [
+          1672,
+          941
+        ],
+        "alpha": false
+      },
+      "checks": {
+        "sha256": true,
+        "bytes": true,
+        "size": true,
+        "alpha": true
+      }
+    },
+    {
+      "id": {
+        "id": "SCENE-NAPOLI",
+        "chapter": "city4",
+        "status": "ter beoordeling eigenaar; Hermes hertest",
+        "note": "derde versie: gesloten blauw werkshirt, omgeslagen broek (besluit 9-11); Vespa zonder merktekens",
+        "master": {
+          "path": "assets/v3/render/masters/SCENE-NAPOLI.png",
+          "bytes": 2495974,
+          "sha256": "0a361636f52069f517e1bb7387f4b2f34a60d2721b14f09863862fa58628ab72",
+          "size": [
+            1672,
+            941
+          ],
+          "alpha": false
+        },
+        "export_kop": {
+          "path": "assets/v3/render/exports/SCENE-NAPOLI-kop-1672.webp",
+          "bytes": 275572,
+          "sha256": "d9662509ce537fa8fcfb0485acc5478ff8ddc632b7768dbaf192269148a12668",
+          "size": [
+            1672,
+            941
+          ],
+          "alpha": false
+        },
+        "export_mini": {
+          "path": "assets/v3/render/exports/SCENE-NAPOLI-mini-480.webp",
+          "bytes": 27984,
+          "sha256": "f62e812526d488d47740ae87ca5b38a04291729360cae764886453336a954778",
+          "size": [
+            480,
+            270
+          ],
+          "alpha": false
+        }
+      },
+      "role": "export_kop",
+      "path": "assets/v3/render/exports/SCENE-NAPOLI-kop-1672.webp",
+      "expected": {
+        "path": "assets/v3/render/exports/SCENE-NAPOLI-kop-1672.webp",
+        "bytes": 275572,
+        "sha256": "d9662509ce537fa8fcfb0485acc5478ff8ddc632b7768dbaf192269148a12668",
+        "size": [
+          1672,
+          941
+        ],
+        "alpha": false
+      },
+      "actual": {
+        "sha256": "d9662509ce537fa8fcfb0485acc5478ff8ddc632b7768dbaf192269148a12668",
+        "bytes": 275572,
+        "size": [
+          1672,
+          941
+        ],
+        "alpha": false
+      },
+      "checks": {
+        "sha256": true,
+        "bytes": true,
+        "size": true,
+        "alpha": true
+      }
+    },
+    {
+      "id": {
+        "id": "SCENE-NAPOLI",
+        "chapter": "city4",
+        "status": "ter beoordeling eigenaar; Hermes hertest",
+        "note": "derde versie: gesloten blauw werkshirt, omgeslagen broek (besluit 9-11); Vespa zonder merktekens",
+        "master": {
+          "path": "assets/v3/render/masters/SCENE-NAPOLI.png",
+          "bytes": 2495974,
+          "sha256": "0a361636f52069f517e1bb7387f4b2f34a60d2721b14f09863862fa58628ab72",
+          "size": [
+            1672,
+            941
+          ],
+          "alpha": false
+        },
+        "export_kop": {
+          "path": "assets/v3/render/exports/SCENE-NAPOLI-kop-1672.webp",
+          "bytes": 275572,
+          "sha256": "d9662509ce537fa8fcfb0485acc5478ff8ddc632b7768dbaf192269148a12668",
+          "size": [
+            1672,
+            941
+          ],
+          "alpha": false
+        },
+        "export_mini": {
+          "path": "assets/v3/render/exports/SCENE-NAPOLI-mini-480.webp",
+          "bytes": 27984,
+          "sha256": "f62e812526d488d47740ae87ca5b38a04291729360cae764886453336a954778",
+          "size": [
+            480,
+            270
+          ],
+          "alpha": false
+        }
+      },
+      "role": "export_mini",
+      "path": "assets/v3/render/exports/SCENE-NAPOLI-mini-480.webp",
+      "expected": {
+        "path": "assets/v3/render/exports/SCENE-NAPOLI-mini-480.webp",
+        "bytes": 27984,
+        "sha256": "f62e812526d488d47740ae87ca5b38a04291729360cae764886453336a954778",
+        "size": [
+          480,
+          270
+        ],
+        "alpha": false
+      },
+      "actual": {
+        "sha256": "f62e812526d488d47740ae87ca5b38a04291729360cae764886453336a954778",
+        "bytes": 27984,
+        "size": [
+          480,
+          270
+        ],
+        "alpha": false
+      },
+      "checks": {
+        "sha256": true,
+        "bytes": true,
+        "size": true,
+        "alpha": true
+      }
+    }
+  ],
+  "recordsCount": 9,
+  "changedPaths": [
+    "assets/v3/render/exports/NINO-PORTRET-512.webp",
+    "assets/v3/render/exports/SCENE-NAPOLI-kop-1672.webp",
+    "assets/v3/render/exports/SCENE-NAPOLI-mini-480.webp",
+    "assets/v3/render/exports/SCENE-ROMA-kop-1672.webp",
+    "assets/v3/render/exports/SCENE-ROMA-mini-480.webp",
+    "assets/v3/render/manifest.json",
+    "assets/v3/render/masters/NINO-PORTRET-alpha.png",
+    "assets/v3/render/masters/NINO-PORTRET.png",
+    "assets/v3/render/masters/SCENE-NAPOLI.png",
+    "assets/v3/render/masters/SCENE-ROMA.png"
+  ],
+  "outOfScopeNotRetested": [
+    "BG-01",
+    "SCENE-VENEZIA",
+    "BG-02",
+    "BG-03",
+    "IC-pizza",
+    "IC-vespa",
+    "IC-gold",
+    "VE-01",
+    "IC-slice",
+    "IC-postcard",
+    "IC-stamp",
+    "IC-stamp-tool"
+  ],
+  "changedOnlyScopedFiles": true
+}

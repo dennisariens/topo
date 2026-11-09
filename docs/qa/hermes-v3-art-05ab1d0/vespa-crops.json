@@ -1,0 +1,24 @@
+[
+  {
+    "id": "SCENE-ROMA",
+    "source": "assets/v3/render/exports/SCENE-ROMA-kop-1672.webp",
+    "rect": [
+      280,
+      390,
+      840,
+      900
+    ],
+    "transform": "native crop, no resizing"
+  },
+  {
+    "id": "SCENE-NAPOLI",
+    "source": "assets/v3/render/exports/SCENE-NAPOLI-kop-1672.webp",
+    "rect": [
+      150,
+      340,
+      840,
+      900
+    ],
+    "transform": "native crop, no resizing"
+  }
+]

@@ -144,14 +144,42 @@
     ],
     "alpha": false
    }
-  }
- ],
- "pending": [
+  },
   {
    "id": "SCENE-NAPOLI",
    "chapter": "city4",
-   "status": "correctie gevraagd",
-   "note": "embleem en neptekst op de Vespa; lokale retouche niet schoon genoeg"
+   "status": "ter beoordeling eigenaar; Hermes modelcheck open",
+   "note": "tweede versie: emblemen en tekst op de Vespa verwijderd door ChatGPT-bewerking; claxonrooster behouden",
+   "master": {
+    "path": "assets/v3/render/masters/SCENE-NAPOLI.png",
+    "bytes": 2477218,
+    "sha256": "e728085e8086ed4a4f45e494c12a03009e818500f3d1555b037d9574c27404ee",
+    "size": [
+     1672,
+     941
+    ],
+    "alpha": false
+   },
+   "export_kop": {
+    "path": "assets/v3/render/exports/SCENE-NAPOLI-kop-1672.webp",
+    "bytes": 281348,
+    "sha256": "ba56ee524dcd170ecefb97e4a7f3d7dd2d2555d0cb29f1e04b92a42512324318",
+    "size": [
+     1672,
+     941
+    ],
+    "alpha": false
+   },
+   "export_mini": {
+    "path": "assets/v3/render/exports/SCENE-NAPOLI-mini-480.webp",
+    "bytes": 27908,
+    "sha256": "c4b13d59449065f558b22620661cbb600cd07f94b548ab9a6b853da5b5ef1d30",
+    "size": [
+     480,
+     270
+    ],
+    "alpha": false
+   }
   }
  ]
 }

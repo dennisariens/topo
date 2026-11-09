@@ -1,3 +1,7 @@
+# Reliëf z8 — renderpalet als aparte kandidaat (9 november 2026)
+
+Eigenaarbrief `ARTWORK_BRIEF.md` §5 vanaf `8af18a8` is uitgevoerd naast de bestaande z8-kleuring: groen/oker/bruin/wit, sterkere hillshade en afzonderlijke zee-, kustrand- en schaduwlagen. Reliëf 308.232 bytes; renderpakket 724.198 bytes. Dezelfde gemeten DEM, registratie, bronhashes en hoogtechecks; eerdere kustdiscrepantie blijft open. [Vergelijkingen, provenance en laaginstructies](qa/relief-z8/README.md). Alleen op `v3/relief-z8`; geen appintegratie of wijziging aan `codex/topo-v3`.
+
 # Reliëf z8 — reviewkandidaat (9 november 2026)
 
 Op `v3/relief-z8` staat een afzonderlijke z8-kandidaat (1780×2470, 153.026 bytes). Z9 is op eigenaarsinstructie uitgesteld. Hoogtechecks slagen; numerieke registratie blijft gelijk. DEM-nulhoogtelijn versus bestaande eilandcoast wijkt maximaal 2,22/2,84 SVG px af; na melding van de stop heeft de eigenaar opdracht gegeven door te gaan. De discrepantie blijft open en is geen bewezen affiene fout. [Bewijs en beperkingen](qa/relief-z8/README.md). Geen runtimewijziging of integratie; kandidaat uitsluitend voor review op deze branch.

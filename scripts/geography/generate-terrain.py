@@ -20,6 +20,8 @@ import urllib.request
 import numpy as np
 from PIL import Image, __version__ as pillow_version
 
+from terrain_layers import canonical_land, make_layers
+
 W, H, Z, TILE = 890, 1235, 7, 256
 ROOT = Path(__file__).resolve().parents[2]
 BASE = 'https://s3.amazonaws.com/elevation-tiles-prod/terrarium'
@@ -30,6 +32,10 @@ DOCS = {
 STOPS = [0, 100, 250, 500, 800, 1200, 1700, 2200, 2800, 3400, 4200, 5000]
 COLORS = ['#c7cb88', '#bdc77c', '#aeb96f', '#a7ad6d', '#b3ac77', '#b7a17a',
           '#c0aa89', '#c9b598', '#d6c6ac', '#e6dcc5', '#f5efdc', '#fff7e7']
+
+RENDER_STOPS = [0, 100, 250, 500, 800, 1200, 1700, 2200, 2500, 3400, 5000]
+RENDER_COLORS = ['#63ad62', '#78b56b', '#a5bd61', '#d8bf60', '#c9a34e',
+                 '#ae854a', '#926644', '#b39b7c', '#f7f8f6', '#ffffff', '#ffffff']
 
 
 def sha(data):
@@ -90,15 +96,24 @@ def main():
     parser.add_argument('--cache', required=True, type=Path, help='Scratch download directory, outside the repository')
     parser.add_argument('--zoom', type=int, choices=[7, 8], default=7)
     parser.add_argument('--dpr', type=int, choices=[1, 2], default=1)
+    parser.add_argument('--style', choices=['original','render'], default='original')
     args = parser.parse_args()
+    render = args.style == 'render'
+    if render and (args.zoom,args.dpr) != (8,2):
+        parser.error('Render requires --zoom 8 --dpr 2')
     Z = args.zoom
     scale = args.dpr
     W, H = 890 * scale, 1235 * scale
     budget = 1000000 if Z == 8 else 220000
     args.cache.mkdir(parents=True, exist_ok=True)
     output = ROOT / ('assets/discovery/terrain-z8.webp' if Z == 8 else 'assets/discovery/terrain.webp')
+    if render:
+        output = ROOT / 'assets/discovery/terrain-z8-render.webp'
     manifest_path = output.with_name(output.stem + '-provenance.json')
-    pinned = json.loads(manifest_path.read_text()) if manifest_path.exists() else None
+    source_manifest = manifest_path
+    if render and not source_manifest.exists():
+        source_manifest = ROOT / 'assets/discovery/terrain-z8-provenance.json'
+    pinned = json.loads(source_manifest.read_text()) if source_manifest.exists() else None
     if pinned:
         assert pinned['data']['zoom'] == Z
         assert (pinned['output']['width'], pinned['output']['height']) == (W, H), 'Existing output has different DPR'
@@ -145,7 +160,7 @@ def main():
     radius = 6371008.8
     dx /= radius * np.cos(np.radians(lat)) * np.radians(1 / (55 * scale))
     dy /= radius * np.radians(1 / (77 * scale))
-    exaggeration = 3.0
+    exaggeration = 4.5 if render else 3.0
     nx, ny = -dx * exaggeration, dy * exaggeration  # north is negative image y
     norm = np.sqrt(nx * nx + ny * ny + 1)
     shade = np.zeros_like(height)
@@ -153,12 +168,14 @@ def main():
         az, alt = np.radians(azimuth), np.radians(40)
         shade += weight * np.clip((nx * np.sin(az) * np.cos(alt) +
                                   ny * np.cos(az) * np.cos(alt) + np.sin(alt)) / norm, 0, 1)
-    rgb_stops = np.array([[int(c[i:i + 2], 16) for i in (1, 3, 5)] for c in COLORS])
-    color = np.stack([np.interp(height, STOPS, rgb_stops[:, c]) for c in range(3)], axis=-1)
+    stops, colors = (RENDER_STOPS,RENDER_COLORS) if render else (STOPS,COLORS)
+    rgb_stops = np.array([[int(c[i:i + 2], 16) for i in (1, 3, 5)] for c in colors])
+    color = np.stack([np.interp(height, stops, rgb_stops[:, c]) for c in range(3)], axis=-1)
     # Broad washes + restrained fine texture, both derived solely from the DEM.
     local_relief = height - smooth(height, 3.0 * scale)
     texture = np.clip(local_relief / 1500, -.035, .035)
-    lighting = np.clip(.76 + .37 * shade + texture, .64, 1.12)
+    ambient, diffuse, minimum = (.62,.62,.48) if render else (.76,.37,.64)
+    lighting = np.clip(ambient + diffuse * shade + texture, minimum, 1.12)
     color *= lighting[..., None]
     color += (1 - lighting[..., None]) * np.array([13, 5, -3])
     image = Image.fromarray(np.uint8(np.clip(color, 0, 255)), mode='RGB')
@@ -170,7 +187,8 @@ def main():
         if len(encoded) < budget:
             break
     assert len(encoded) < budget, 'WebP budget exceeded'
-    np.save(args.cache / f'dem-z{Z}-dpr{scale}.npy', dem)
+    dem_name = f'dem-z{Z}-dpr{scale}' + ('-render' if render else '') + '.npy'
+    np.save(args.cache / dem_name, dem)
     output.write_bytes(encoded)
     with Image.open(output) as verify:
         assert verify.size == (W, H) and verify.format == 'WEBP'
@@ -198,8 +216,35 @@ def main():
             expected_doc = next(d for d in pinned['data']['documentation'] if d['url'] == url)
             assert sha(data) == expected_doc['sha256'], f'Document hash mismatch: {url}'
         documents.append({'url': url, 'sha256': sha(data), 'bytes': len(data)})
+    layers = []
+    layer_settings = None
+    if render:
+        html = (ROOT / 'index.html').read_text()
+        rings, paths = canonical_land(html)
+        for name, layer in make_layers(rings, scale).items():
+            path = output.with_name(f'terrain-z8-render-{name}.webp')
+            layer.save(path,format='WEBP',lossless=True,method=6,exact=True)
+            data = path.read_bytes()
+            with Image.open(path) as decoded:
+                decoded.load()
+                assert decoded.size == (W,H) and decoded.mode == layer.mode
+            layers.append({'role':name,'path':str(path.relative_to(ROOT)),
+                           'width':W,'height':H,'mode':layer.mode,
+                           'bytes':len(data),'sha256':sha(data),'lossless':True})
+        assert len(encoded)+sum(layer['bytes'] for layer in layers) <= budget, 'Combined render layer budget exceeded'
+        layer_settings = {'canonical_geometry':'index.html: CONTEXT_LAND, italy, land items; union before styling; no copied coordinates',
+                          'canonical_paths_sha256':sha('\n'.join(paths).encode()),
+                          'source_html_sha256':sha(html.encode()),
+                          'generator_sha256':sha(Path(__file__).with_name('terrain_layers.py').read_bytes()),
+                          'white_rim_width_svg_px':1.5,'white_rim_alignment':'centered on land union; circular dilation/erosion kernel',
+                          'shadow':{'color':'#153f50','opacity':.28,'dy_svg_px':2,'blur_svg_px':3,'outside_land_only':True},
+                          'sea':{'open_water':'#199cd9','coastal_water':'#8cdef1','halo_blur_svg_px':6,'measured_bathymetry':False},
+                          'rasterization':'4 samples per SVG pixel, then Lanczos to DPR2; coordinate quantization <=0.25 SVG px per axis; nominal circular rim width 1.5 SVG px',
+                          'stack_bottom_to_top':['sea','shadow','terrain clipped to canonical land','coast','existing borders and labels'],
+                          'frame':[0,0,890,1235],'independently_switchable':True}
     metadata = {
         'title': 'Topo Discovery geographically registered shaded relief',
+        'style':args.style,
         'generated_utc': datetime.now(timezone.utc).isoformat(),
         'output': {'path': str(output.relative_to(ROOT)), 'dpr': scale, 'width': W, 'height': H,
                    'bytes': len(encoded), 'sha256': sha(encoded), 'webp_quality': quality, 'mode': 'RGB'},
@@ -220,20 +265,28 @@ def main():
         'pipeline': {'resampling': 'Decode to metre DEM before bilinear source pixel-centre sampling; seamless mosaic, no per-tile shade seams.',
                      'hillshade': {'azimuths_degrees_clockwise_from_north': [315, 270, 45], 'weights': [.65, .20, .15], 'altitude_degrees': 40,
                                    'vertical_exaggeration': exaggeration, 'gradient_spacing': 'latitude-aware metres on spherical earth R=6371008.8m'},
-                     'palette': [{'elevation_m': e, 'color': c} for e, c in zip(STOPS, COLORS)],
+                     'palette': [{'elevation_m': e, 'color': c} for e, c in zip(stops, colors)],
+                     'lighting':{'ambient':ambient,'diffuse':diffuse,'minimum':minimum,'maximum':1.12},
+                     'raw_dem_float64_le_sha256':sha(dem.astype('<f8').tobytes()),
+                     'decorative_layers':layers,'decorative_layer_settings':layer_settings,
                      'texture': 'Only actual elevation residual from radius-3px low-pass; no noise, hand-drawn/invented strokes, or external imagery.',
                      'smoothing': '0.55 SVG px Gaussian and 3 SVG px texture low-pass, scaled by DPR; bathymetry clamped to 0m before styling; raw source DEM retained for checks',
                      'runtime_network_requests': False,
-                     'reproduce': f'python3 -m pip install numpy==1.24.4 Pillow==10.4.0 && python3 scripts/geography/generate-terrain.py --cache /path/to/scratch/terrain --zoom {Z} --dpr {scale}',
+                     'reproduce': f'python3 -m pip install numpy==1.24.4 Pillow==10.4.0 && python3 scripts/geography/generate-terrain.py --cache /path/to/scratch/terrain --zoom {Z} --dpr {scale} --style {args.style}',
                      'dependencies': {'python': platform.python_version(), 'numpy': np.__version__, 'Pillow': pillow_version},
                      'generator_sha256': sha(Path(__file__).read_bytes())},
         'validation': {'all_samples_finite': True, 'sample_count': int(dem.size), 'source_tile_count': len(sources),
                        'dem_elevation_range_m': [float(dem.min()), float(dem.max())],
                        'webp_decoded_dimensions_verified': True, 'budget_bytes': budget, 'within_budget': True,
+                       'combined_runtime_bytes':len(encoded)+sum(layer['bytes'] for layer in layers),
                        'landmark_checks': checks,
                        'registration_roundtrip_max_error_px': float(max(np.max(np.abs((55 * lon - 225.5) - ((np.arange(W)[None, :] + .5) / scale))),
                                                                       np.max(np.abs((3830.75 - 77 * lat) - ((np.arange(H)[:, None] + .5) / scale)))))},
     }
+    if render:
+        metadata['creator'] = 'Codex; deterministic NumPy/Pillow rendering of measured terrain'
+        metadata['owner_brief'] = {'path':'docs/v3/ARTWORK_BRIEF.md','commit':'8af18a8','section':5}
+        metadata['palette_note'] = 'White from approximately 2500m is an elevation color, not observed snow cover.'
     output.with_name(output.stem + '-provenance.json').write_text(json.dumps(metadata, indent=2) + '\n')
     print(json.dumps({'output': str(output), 'bytes': len(encoded), 'tiles': len(sources), 'validation': metadata['validation']}, indent=2))
 

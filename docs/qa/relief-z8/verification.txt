@@ -20,7 +20,8 @@ PASS (exit 0): python scripts/geography/generate-terrain.py
 - WebP: 153026 bytes; budget 1000000 bytes.
 - WebP SHA256:
   030190471d196a6ac3b6e21af4156b70c2dbf21fdb5dfeb17c60612b8c5100e8
-- Current generator SHA256 matches committed provenance.
+- Generator at original delivery d9b78fa matches that provenance.
+  The later render-style extension has separate provenance.
 
 PASS: deliberate corrupted-tile probe
 - Imported generator with fetch returning invalid source bytes.

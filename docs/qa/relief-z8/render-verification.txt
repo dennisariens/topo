@@ -1,0 +1,57 @@
+TOPO relief z8 render — verification, 2026-11-09
+Branch: v3/relief-z8, extending d9b78fa
+Owner reference: docs/v3/ARTWORK_BRIEF.md section 5 at 8af18a8
+This is a verification summary, not a raw stdout transcript.
+
+PASS (exit 0): npm run lint && npm test && npm run build
+- Complete maintained regression chain passed; no failing stage.
+- Last combined node test group: 33 passed, 0 failed, 0 skipped.
+- Static build and its source/art/geography/parity checks passed.
+
+PASS (exit 0): python scripts/geography/terrain-render.test.py
+- 5 focused layer tests passed.
+- Touching country polygons do not gain a white rim or shadow at their border.
+- RGB sea and independent full-frame RGBA coast/shadow layers.
+- Coastal sea is lighter than open water; shadow has nonzero alpha.
+- Nominal 1.5 SVG px rim: measured opacity coverage is 1.50 on a straight edge.
+- A 45-degree coastline measures about 1.417 SVG px normal coverage at DPR2,
+  within 0.2 SVG px rasterization tolerance. The initial square filter measured
+  2.12 SVG px and failed this test; a circular kernel fixes that widening.
+
+PASS (exit 0): python scripts/geography/generate-terrain.py
+  --cache /private/tmp/topo-relief-z8-cache --zoom 8 --dpr 2 --style render
+- Same 208 hash-pinned tiles and provider documents verified.
+- Output terrain 1780 x 2470, RGB, 308232 bytes, WebP quality 86.
+- Independent sea 245696 bytes, coast 50682 bytes, shadow 119588 bytes.
+- Full render runtime package 724198 bytes, within 1000000-byte budget.
+- All four height-range landmark checks passed.
+- Numerical registration max error 4.55e-13 SVG px.
+- Same rendering inputs were rebuilt with pinned sources; output terrain hash
+  remained 440d631c8ff5777b13a2583870339caa8255c10a0ddcaaa3edd087b8fc524ab5.
+
+PASS (exit 0): python scripts/geography/qa-relief-z8.py
+  --cache /private/tmp/topo-relief-z8-cache --render
+- Direct array equality: original and render z8 raw DEM are identical.
+- Raw DEM SHA256 b831aff53b152259c12b2b67b12dfb9b910fa5a6525d5db858dc9dee865a9fe3.
+- Source attribution/tiles, frame registration and landmark results identical.
+- Decorative layer geometry hash matches the same canonical land paths.
+- All four exports decode at 1780 x 2470 in the recorded RGB/RGBA modes.
+- File SHA256 values match provenance; generator/module hashes verified.
+- z7 / z8 / z8-render boards: Italy, Alps, Apennines and Sicily generated
+  and visually inspected; final coast adjustment inspected in Sicily detail.
+- OPEN: existing island DEM-zero-contour/vector differences remain 2.22/2.84
+  SVG px. White rim is decorative; it does not correct or validate that mismatch.
+  Full mainland coastline audit remains unperformed.
+
+PASS (exit 0): git diff --check
+PASS (exit 0): git diff --exit-code d9b78fa -- index.html
+  assets/discovery/terrain.webp assets/discovery/terrain-provenance.json
+  assets/discovery/terrain-z8.webp assets/discovery/terrain-z8-provenance.json
+  scripts/learning-engine.js scripts/route-engine.js
+- Original z7/z8 terrain and app files remain unchanged, including after build.
+- Actual HTML growth 0 bytes; future full-render base64 replacement delta
+  +886728 bytes, excluding integration markup. No integration performed.
+
+No changes to codex/topo-v3, no merge/deployment, no new elevation sources,
+no z9, no generated map geography. Owner style acceptance and independent
+integration/browser/responsive/device QA remain open.

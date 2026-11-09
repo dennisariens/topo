@@ -281,3 +281,8 @@ Reservekopieën en reset horen in het algemene instellingenmenu. Wis voortgang b
 - **Thema:** Italia is de standaard. Viola blijft alleen als vergelijkingsthema in de preview.
 - **Kaartkader:** de vervaging aan de rand mag het referentiekader niet wegnemen. De leerling moet zien wat eromheen ligt (buurlanden, zeeën, eilanden). Minder fade, ruimer kader.
 - **Werkverdeling:** implementatie gaat naar Claude Code op de Mac mini (of Codex), via een overdracht in Git; dit gesprek blijft voor product- en ontwerpbesluiten.
+
+
+## 2026-11-09 — Reliëf-renderstijl als aparte kandidaat
+
+Op eigenaarinstructie en `docs/v3/ARTWORK_BRIEF.md` §5 vanaf `8af18a8` krijgt `v3/relief-z8` naast de bestaande kleuring een tweede, gemeten renderstijl. Zee, witte kustrand en landschaduw zijn afzonderlijke lagen op het bestaande frame. De eerdere kustdiscrepantie blijft een open reviewpunt. Dit wijzigt geen kaartgeometrie, runtime, leer- of beloningsmotor en houdt geen integratie- of mergebesluit voor `codex/topo-v3` in. Details en exacte uitvoerparameters: `docs/qa/relief-z8/README.md` en de render-provenance.

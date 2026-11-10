@@ -74,6 +74,14 @@ body.v3Les .v3LesForm{display:inline-flex;align-items:center;min-height:44px;pad
  .v3 .v3Start{align-self:stretch;min-width:0}
  .v3 .v3FormBtn{min-height:80px}
 }
+/* Phone: every screen outside lessons ends above the fixed tab bar and the safe area. --v3-tabbar is the measured tab
+   bar height (shell.js, includes its safe-area padding); the fallback is its CSS height. Keyboard focus and
+   scrollIntoView keep the same clearance (scroll-padding). */
+@media (max-width:767px){
+ :root{--v3-tabclear:calc(var(--v3-tabbar,calc(65px + env(safe-area-inset-bottom,0px))) + 16px)}
+ body:not(.v3Les) .v3Reis{padding-bottom:var(--v3-tabclear)}
+ html:has(body:not(.v3Les) .v3Reis){scroll-padding-bottom:var(--v3-tabclear)}
+}
 @media (max-width:359px){.v3View :is(.v3Chip){padding:0 var(--v3-s3)}}
 @media (prefers-reduced-motion:reduce){.v3Shell .v3 *{transition:none!important;animation:none!important}}
 

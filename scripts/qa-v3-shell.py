@@ -47,6 +47,22 @@ NAV_JS = '''() => { const vis = e => { const r = e.getBoundingClientRect(); retu
     sheetCovered: (() => { const s = ['#focusAnswerSheet', '#focusLearnBar'].map(q => document.querySelector(q)).find(x => x && vis(x)), t = document.querySelector('.v3ShellNav');
       if (!s || !t || !vis(t)) return false; const a = r(s), b = r(t); return a.bottom > b.top + 1 && a.top < b.bottom - 1 && a.right > b.left + 1 && a.left < b.right - 1; })()}; }'''
 
+# Phone: scrolled to the end, the last content of the screen (view, Beloningen) ends at least 8 px above the fixed tab
+# bar; the screen's bottom padding is the measured tab bar height (incl. safe area) plus room; every button that gets
+# keyboard focus is scrolled clear of the bar (scroll-padding) and is the element at its own centre.
+CLEAR_JS = '''(async () => { const bar = [...document.querySelectorAll('.v3Side')].find(e => e.checkVisibility() && getComputedStyle(e).position === 'fixed' && e.getBoundingClientRect().bottom >= innerHeight - 1 && e.getBoundingClientRect().width >= innerWidth - 1); if (!bar) return null;
+  const root = document.querySelector('.v3Reis'), v = document.querySelector('.v3Reis > .v3View-' + root.dataset.view) || document.querySelector('.v3Reis > .v3Rewards');
+  scrollTo({top: document.documentElement.scrollHeight, behavior: 'instant'}); await new Promise(r => requestAnimationFrame(r));
+  const leaves = [...v.querySelectorAll('*')].filter(e => !e.closest('.v3Side') && e.children.length === 0 && e.checkVisibility() && e.getBoundingClientRect().height > 0);
+  const last = Math.max(...leaves.map(e => e.getBoundingClientRect().bottom)), top = bar.getBoundingClientRect().top, covered = [];
+  for (const btn of [...v.querySelectorAll('button:not(:disabled), a[href], [tabindex="0"]')].filter(e => e.checkVisibility() && e.getBoundingClientRect().height > 0)) {
+    scrollTo({top: 0, behavior: 'instant'}); btn.focus(); await new Promise(r => requestAnimationFrame(r));
+    const r = btn.getBoundingClientRect(), at = document.elementFromPoint(r.x + r.width / 2, r.y + r.height / 2);
+    if (r.bottom > bar.getBoundingClientRect().top || !(at === btn || btn.contains(at))) covered.push(btn.textContent.trim().slice(0, 24)); }
+  document.activeElement?.blur?.(); scrollTo({top: 0, behavior: 'instant'});
+  return {gap: Math.round(top - last), bar: Math.round(bar.getBoundingClientRect().height), pad: parseFloat(getComputedStyle(root).paddingBottom),
+    tabbarVar: getComputedStyle(document.documentElement).getPropertyValue('--v3-tabbar').trim(), covered}; })()'''
+
 async def main():
     OUT.mkdir(parents=True, exist_ok=True)
     data = HTML.read_bytes()
@@ -85,11 +101,8 @@ async def main():
                 await tab(t); s = await nav(); check(t, s, t, False)
                 if s['view'] != t: fail(f'{t}: view {s["view"]}')
                 # The end of the view can scroll clear of a fixed tab bar.
-                hidden = await pg.evaluate('''(() => { scrollTo({top: document.documentElement.scrollHeight, behavior: 'instant'}); const v = document.querySelector('.v3Reis > .v3View-' + document.querySelector('.v3Reis').dataset.view);
-                  const bar = [...document.querySelectorAll('.v3Side')].find(e => e.checkVisibility() && getComputedStyle(e).position === 'fixed'); if (!v || !bar) return false;
-                  const last = [...v.querySelectorAll('button, li, p, table')].filter(e => e.checkVisibility() && e.getBoundingClientRect().height > 0).at(-1);
-                  const hit = last && last.getBoundingClientRect().bottom > bar.getBoundingClientRect().top + 1; scrollTo({top: 0, behavior: 'instant'}); return hit ? last.textContent.trim().slice(0, 30) : false; })()''')
-                if hidden: fail(f'{t}: last item under the tab bar: {hidden}')
+                clear = await pg.evaluate(CLEAR_JS); run[t + '-clear'] = clear
+                if clear and (clear['gap'] < 8 or clear['pad'] < clear['bar'] + 8 or clear['covered']): fail(f'{t}: tab bar clearance {clear}')
                 if s['active'] != title: fail(f'{t}: focus on {s["active"]}')
                 await pg.screenshot(path=str(OUT / f'{t}-{name}.png'))
             # Instellingen: V2 dialog, focus back on the opener.

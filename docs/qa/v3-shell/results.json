@@ -1,6 +1,6 @@
 {
  "html": "output/html/TOPO-V3-Reis-Preview.html",
- "sha256": "6f6f94c924a7fe211b18893dff20933795b6a393846121c0117c88a21fcf42e8",
+ "sha256": "1dcd0840f773237d3af422ef565129e9cb0af269dd3c195c21a2eea21c409f6d",
  "indexSha256": "3aced3c31259011b0af2947c78f71965cb4beb2e88c69d1663e61792b0304f5a",
  "runs": {
   "desktop": {
@@ -76,6 +76,7 @@
     "moving": [],
     "sheetCovered": false
    },
+   "oefenen-clear": null,
    "toets": {
     "navCount": 1,
     "inShell": false,
@@ -112,6 +113,7 @@
     "moving": [],
     "sheetCovered": false
    },
+   "toets-clear": null,
    "rewards": {
     "navCount": 1,
     "inShell": false,
@@ -148,6 +150,7 @@
     "moving": [],
     "sheetCovered": false
    },
+   "rewards-clear": null,
    "voortgang": {
     "navCount": 1,
     "inShell": false,
@@ -184,6 +187,7 @@
     "moving": [],
     "sheetCovered": false
    },
+   "voortgang-clear": null,
    "instellingen": {
     "opened": true,
     "focusBack": "instellingen"
@@ -217,7 +221,7 @@
     "lesson": true,
     "active": "ninoSchoolMapOnly v3On v3Shell v3Les",
     "mode": "point",
-    "q": "city-6",
+    "q": "city-2",
     "hOverflow": false,
     "clipped": [],
     "overlaps": [],
@@ -253,7 +257,7 @@
     "lesson": false,
     "active": "ninoSchoolMapOnly v3On v3Shell v3Home",
     "mode": "point",
-    "q": "city-6",
+    "q": "city-2",
     "hOverflow": false,
     "clipped": [],
     "overlaps": [],
@@ -289,7 +293,7 @@
     "lesson": true,
     "active": "ninoSchoolMapOnly v3On v3Shell v3Les",
     "mode": "point",
-    "q": "city-6",
+    "q": "city-2",
     "hOverflow": false,
     "clipped": [],
     "overlaps": [],
@@ -325,7 +329,7 @@
     "lesson": true,
     "active": "ninoSchoolMapOnly v3On v3Shell lessonFocus v3Les",
     "mode": "route",
-    "q": "city-7",
+    "q": "city-12",
     "hOverflow": false,
     "clipped": [],
     "overlaps": [],
@@ -361,7 +365,7 @@
     "lesson": false,
     "active": "v3RewardsTitle",
     "mode": "route",
-    "q": "city-7",
+    "q": "city-12",
     "hOverflow": false,
     "clipped": [],
     "overlaps": [],
@@ -397,7 +401,7 @@
     "lesson": true,
     "active": "ninoSchoolMapOnly v3On v3Shell lessonFocus v3Les",
     "mode": "route",
-    "q": "city-7",
+    "q": "city-12",
     "hOverflow": false,
     "clipped": [],
     "overlaps": [],
@@ -479,6 +483,7 @@
     "moving": [],
     "sheetCovered": false
    },
+   "oefenen-clear": null,
    "toets": {
     "navCount": 1,
     "inShell": false,
@@ -515,6 +520,7 @@
     "moving": [],
     "sheetCovered": false
    },
+   "toets-clear": null,
    "rewards": {
     "navCount": 1,
     "inShell": false,
@@ -551,6 +557,7 @@
     "moving": [],
     "sheetCovered": false
    },
+   "rewards-clear": null,
    "voortgang": {
     "navCount": 1,
     "inShell": false,
@@ -587,6 +594,7 @@
     "moving": [],
     "sheetCovered": false
    },
+   "voortgang-clear": null,
    "instellingen": {
     "opened": true,
     "focusBack": "instellingen"
@@ -728,7 +736,7 @@
     "lesson": true,
     "active": "ninoSchoolMapOnly v3On v3Shell lessonFocus v3Les",
     "mode": "route",
-    "q": "city-10",
+    "q": "city-11",
     "hOverflow": false,
     "clipped": [],
     "overlaps": [],
@@ -764,7 +772,7 @@
     "lesson": false,
     "active": "v3RewardsTitle",
     "mode": "route",
-    "q": "city-10",
+    "q": "city-11",
     "hOverflow": false,
     "clipped": [],
     "overlaps": [],
@@ -800,7 +808,7 @@
     "lesson": true,
     "active": "ninoSchoolMapOnly v3On v3Shell lessonFocus v3Les",
     "mode": "route",
-    "q": "city-10",
+    "q": "city-11",
     "hOverflow": false,
     "clipped": [],
     "overlaps": [],
@@ -882,6 +890,7 @@
     "moving": [],
     "sheetCovered": false
    },
+   "oefenen-clear": null,
    "toets": {
     "navCount": 1,
     "inShell": false,
@@ -918,6 +927,7 @@
     "moving": [],
     "sheetCovered": false
    },
+   "toets-clear": null,
    "rewards": {
     "navCount": 1,
     "inShell": false,
@@ -954,6 +964,7 @@
     "moving": [],
     "sheetCovered": false
    },
+   "rewards-clear": null,
    "voortgang": {
     "navCount": 1,
     "inShell": false,
@@ -990,6 +1001,7 @@
     "moving": [],
     "sheetCovered": false
    },
+   "voortgang-clear": null,
    "instellingen": {
     "opened": true,
     "focusBack": "instellingen"
@@ -1023,7 +1035,7 @@
     "lesson": true,
     "active": "ninoSchoolMapOnly v3On v3Shell v3Les",
     "mode": "point",
-    "q": "city-4",
+    "q": "city-1",
     "hOverflow": false,
     "clipped": [],
     "overlaps": [],
@@ -1059,7 +1071,7 @@
     "lesson": false,
     "active": "ninoSchoolMapOnly v3On v3Shell v3Home",
     "mode": "point",
-    "q": "city-4",
+    "q": "city-1",
     "hOverflow": false,
     "clipped": [],
     "overlaps": [],
@@ -1095,7 +1107,7 @@
     "lesson": true,
     "active": "ninoSchoolMapOnly v3On v3Shell v3Les",
     "mode": "point",
-    "q": "city-4",
+    "q": "city-1",
     "hOverflow": false,
     "clipped": [],
     "overlaps": [],
@@ -1131,7 +1143,7 @@
     "lesson": true,
     "active": "ninoSchoolMapOnly v3On v3Shell lessonFocus v3Les",
     "mode": "route",
-    "q": "city-9",
+    "q": "city-12",
     "hOverflow": false,
     "clipped": [],
     "overlaps": [],
@@ -1167,7 +1179,7 @@
     "lesson": false,
     "active": "v3RewardsTitle",
     "mode": "route",
-    "q": "city-9",
+    "q": "city-12",
     "hOverflow": false,
     "clipped": [],
     "overlaps": [],
@@ -1203,7 +1215,7 @@
     "lesson": true,
     "active": "ninoSchoolMapOnly v3On v3Shell lessonFocus v3Les",
     "mode": "route",
-    "q": "city-9",
+    "q": "city-12",
     "hOverflow": false,
     "clipped": [],
     "overlaps": [],
@@ -1285,6 +1297,13 @@
     "moving": [],
     "sheetCovered": false
    },
+   "oefenen-clear": {
+    "gap": 67,
+    "bar": 65,
+    "pad": 81,
+    "tabbarVar": "65px",
+    "covered": []
+   },
    "toets": {
     "navCount": 1,
     "inShell": false,
@@ -1320,6 +1339,13 @@
     "overlaps": [],
     "moving": [],
     "sheetCovered": false
+   },
+   "toets-clear": {
+    "gap": 49,
+    "bar": 65,
+    "pad": 81,
+    "tabbarVar": "65px",
+    "covered": []
    },
    "rewards": {
     "navCount": 1,
@@ -1357,6 +1383,13 @@
     "moving": [],
     "sheetCovered": false
    },
+   "rewards-clear": {
+    "gap": 56,
+    "bar": 65,
+    "pad": 81,
+    "tabbarVar": "65px",
+    "covered": []
+   },
    "voortgang": {
     "navCount": 1,
     "inShell": false,
@@ -1393,6 +1426,13 @@
     "moving": [],
     "sheetCovered": false
    },
+   "voortgang-clear": {
+    "gap": 57,
+    "bar": 65,
+    "pad": 81,
+    "tabbarVar": "65px",
+    "covered": []
+   },
    "instellingen": {
     "opened": true,
     "focusBack": "instellingen"
@@ -1426,7 +1466,7 @@
     "lesson": true,
     "active": "ninoSchoolMapOnly v3On v3Shell v3Les",
     "mode": "point",
-    "q": "city-2",
+    "q": "city-5",
     "hOverflow": false,
     "clipped": [],
     "overlaps": [],
@@ -1462,7 +1502,7 @@
     "lesson": false,
     "active": "ninoSchoolMapOnly v3On v3Shell v3Home",
     "mode": "point",
-    "q": "city-2",
+    "q": "city-5",
     "hOverflow": false,
     "clipped": [],
     "overlaps": [],
@@ -1498,7 +1538,7 @@
     "lesson": true,
     "active": "ninoSchoolMapOnly v3On v3Shell v3Les",
     "mode": "point",
-    "q": "city-2",
+    "q": "city-5",
     "hOverflow": false,
     "clipped": [],
     "overlaps": [],
@@ -1534,7 +1574,7 @@
     "lesson": true,
     "active": "ninoSchoolMapOnly v3On v3Shell lessonFocus v3Les",
     "mode": "route",
-    "q": "city-12",
+    "q": "city-11",
     "hOverflow": false,
     "clipped": [],
     "overlaps": [],
@@ -1570,7 +1610,7 @@
     "lesson": false,
     "active": "v3RewardsTitle",
     "mode": "route",
-    "q": "city-12",
+    "q": "city-11",
     "hOverflow": false,
     "clipped": [],
     "overlaps": [],
@@ -1606,7 +1646,7 @@
     "lesson": true,
     "active": "ninoSchoolMapOnly v3On v3Shell lessonFocus v3Les",
     "mode": "route",
-    "q": "city-12",
+    "q": "city-11",
     "hOverflow": false,
     "clipped": [],
     "overlaps": [],
@@ -1688,6 +1728,13 @@
     "moving": [],
     "sheetCovered": false
    },
+   "oefenen-clear": {
+    "gap": 40,
+    "bar": 65,
+    "pad": 81,
+    "tabbarVar": "65px",
+    "covered": []
+   },
    "toets": {
     "navCount": 1,
     "inShell": false,
@@ -1723,6 +1770,13 @@
     "overlaps": [],
     "moving": [],
     "sheetCovered": false
+   },
+   "toets-clear": {
+    "gap": 40,
+    "bar": 65,
+    "pad": 81,
+    "tabbarVar": "65px",
+    "covered": []
    },
    "rewards": {
     "navCount": 1,
@@ -1760,6 +1814,13 @@
     "moving": [],
     "sheetCovered": false
    },
+   "rewards-clear": {
+    "gap": 56,
+    "bar": 65,
+    "pad": 81,
+    "tabbarVar": "65px",
+    "covered": []
+   },
    "voortgang": {
     "navCount": 1,
     "inShell": false,
@@ -1796,6 +1857,13 @@
     "moving": [],
     "sheetCovered": false
    },
+   "voortgang-clear": {
+    "gap": 57,
+    "bar": 65,
+    "pad": 81,
+    "tabbarVar": "65px",
+    "covered": []
+   },
    "instellingen": {
     "opened": true,
     "focusBack": "instellingen"
@@ -1829,7 +1897,7 @@
     "lesson": true,
     "active": "ninoSchoolMapOnly v3On v3Shell v3Les",
     "mode": "point",
-    "q": "city-3",
+    "q": "city-5",
     "hOverflow": false,
     "clipped": [],
     "overlaps": [],
@@ -1865,7 +1933,7 @@
     "lesson": false,
     "active": "ninoSchoolMapOnly v3On v3Shell v3Home",
     "mode": "point",
-    "q": "city-3",
+    "q": "city-5",
     "hOverflow": false,
     "clipped": [],
     "overlaps": [],
@@ -1901,7 +1969,7 @@
     "lesson": true,
     "active": "ninoSchoolMapOnly v3On v3Shell v3Les",
     "mode": "point",
-    "q": "city-3",
+    "q": "city-5",
     "hOverflow": false,
     "clipped": [],
     "overlaps": [],
@@ -1937,7 +2005,7 @@
     "lesson": true,
     "active": "ninoSchoolMapOnly v3On v3Shell lessonFocus v3Les",
     "mode": "route",
-    "q": "city-7",
+    "q": "city-9",
     "hOverflow": false,
     "clipped": [],
     "overlaps": [],
@@ -1973,7 +2041,7 @@
     "lesson": false,
     "active": "v3RewardsTitle",
     "mode": "route",
-    "q": "city-7",
+    "q": "city-9",
     "hOverflow": false,
     "clipped": [],
     "overlaps": [],
@@ -2009,7 +2077,7 @@
     "lesson": true,
     "active": "ninoSchoolMapOnly v3On v3Shell lessonFocus v3Les",
     "mode": "route",
-    "q": "city-7",
+    "q": "city-9",
     "hOverflow": false,
     "clipped": [],
     "overlaps": [],
@@ -2091,6 +2159,13 @@
     "moving": [],
     "sheetCovered": false
    },
+   "oefenen-clear": {
+    "gap": 67,
+    "bar": 65,
+    "pad": 81,
+    "tabbarVar": "65px",
+    "covered": []
+   },
    "toets": {
     "navCount": 1,
     "inShell": false,
@@ -2126,6 +2201,13 @@
     "overlaps": [],
     "moving": [],
     "sheetCovered": false
+   },
+   "toets-clear": {
+    "gap": 49,
+    "bar": 65,
+    "pad": 81,
+    "tabbarVar": "65px",
+    "covered": []
    },
    "rewards": {
     "navCount": 1,
@@ -2163,6 +2245,13 @@
     "moving": [],
     "sheetCovered": false
    },
+   "rewards-clear": {
+    "gap": 56,
+    "bar": 65,
+    "pad": 81,
+    "tabbarVar": "65px",
+    "covered": []
+   },
    "voortgang": {
     "navCount": 1,
     "inShell": false,
@@ -2199,6 +2288,13 @@
     "moving": [],
     "sheetCovered": false
    },
+   "voortgang-clear": {
+    "gap": 57,
+    "bar": 65,
+    "pad": 81,
+    "tabbarVar": "65px",
+    "covered": []
+   },
    "instellingen": {
     "opened": true,
     "focusBack": "instellingen"
@@ -2232,7 +2328,7 @@
     "lesson": true,
     "active": "ninoSchoolMapOnly v3On v3Shell v3Les",
     "mode": "point",
-    "q": "city-3",
+    "q": "city-1",
     "hOverflow": false,
     "clipped": [],
     "overlaps": [],
@@ -2268,7 +2364,7 @@
     "lesson": false,
     "active": "ninoSchoolMapOnly v3On v3Shell v3Home",
     "mode": "point",
-    "q": "city-3",
+    "q": "city-1",
     "hOverflow": false,
     "clipped": [],
     "overlaps": [],
@@ -2304,7 +2400,7 @@
     "lesson": true,
     "active": "ninoSchoolMapOnly v3On v3Shell v3Les",
     "mode": "point",
-    "q": "city-3",
+    "q": "city-1",
     "hOverflow": false,
     "clipped": [],
     "overlaps": [],
@@ -2340,7 +2436,7 @@
     "lesson": true,
     "active": "ninoSchoolMapOnly v3On v3Shell lessonFocus v3Les",
     "mode": "route",
-    "q": "city-10",
+    "q": "city-8",
     "hOverflow": false,
     "clipped": [],
     "overlaps": [],
@@ -2376,7 +2472,7 @@
     "lesson": false,
     "active": "v3RewardsTitle",
     "mode": "route",
-    "q": "city-10",
+    "q": "city-8",
     "hOverflow": false,
     "clipped": [],
     "overlaps": [],
@@ -2412,7 +2508,7 @@
     "lesson": true,
     "active": "ninoSchoolMapOnly v3On v3Shell lessonFocus v3Les",
     "mode": "route",
-    "q": "city-10",
+    "q": "city-8",
     "hOverflow": false,
     "clipped": [],
     "overlaps": [],

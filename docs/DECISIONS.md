@@ -449,3 +449,11 @@ Reservekopieën en reset horen in het algemene instellingenmenu. Wis voortgang b
   - Daarna een gedeelde visuele laag: canvas, glas, typografie, pilknop, zwevende kaart en reliëf zonder waas.
   - Daarna scherm voor scherm, met render en build naast elkaar als bewijs.
 - **Fix 4 van de review vervalt** (de V2-zoombalk in de les). De les wordt opnieuw ontworpen.
+
+## 2026-11-10 — V3.0 review-fix: ruimte voor de tabbalk op de telefoon
+
+Review-fix 2. Op de telefoon (≤ 767 px) eindigt elk V3-scherm buiten lessen boven de vaste tabbalk: Reis, Oefenen, Toets instellen, het toetsresultaat, Voortgang en Beloningen.
+- **Onderruimte:** de gemeten hoogte van de tabbalk plus 16 px. De meting gebeurt in `shell.js` (ResizeObserver, `--v3-tabbar`) en bevat de safe-area-padding van de balk. Zonder meting geldt `65px + env(safe-area-inset-bottom)`.
+- **Toetsenbord:** `scroll-padding-bottom` gebruikt dezelfde waarde. Een knop die focus krijgt en achter de balk valt, scrolt vrij.
+- **Lessen:** die houden de bestaande V2-padding. De lopende toets is een les.
+- **Drempel in de QA:** het einde van de inhoud ligt minstens 8 px boven de balk.

@@ -138,6 +138,25 @@ async def main():
             if len(stored) != 1 or stored[0]['correct'] != 7 or stored[0]['total'] != 10 or len(stored[0]['items']) != 10 or [x['id'] for x in stored[0]['items']] != [a[0] for a in answers]: fail(f'stored {stored[:1]}')
             elif [x['ok'] for x in stored[0]['items']] != [a[2] == 'ok' for a in answers]: fail('stored ok/× differs from answers')
             await pg.screenshot(path=str(OUT / f'resultaat-{name}.png'), full_page=name.startswith('telefoon'))
+            if name.startswith('telefoon'):
+                # Phone/320: Kopieer, E-mail and Print are reachable and not covered by the tab bar — by keyboard focus
+                # (scrolls clear) and at the end of the page (padding = measured tab bar incl. safe area + room).
+                reach = await pg.evaluate('''(async () => { const bar = document.querySelector('.v3Reis > .v3Side'), raf = () => new Promise(r => requestAnimationFrame(r)), out = {};
+                  for (const sel of ['.v3ToetsKopieer', '.v3ToetsMail', '.v3ToetsPrint']) { const b = document.querySelector(sel); scrollTo({top: 0, behavior: 'instant'}); b.focus(); await raf();
+                    const r = b.getBoundingClientRect(), at = document.elementFromPoint(r.x + r.width / 2, r.y + r.height / 2);
+                    out[b.textContent.trim()] = {focus: document.activeElement === b, clear: Math.round(bar.getBoundingClientRect().top - r.bottom), top: at === b || b.contains(at)}; }
+                  document.activeElement.blur(); scrollTo({top: document.documentElement.scrollHeight, behavior: 'instant'}); await raf();
+                  const last = Math.max(...[...document.querySelectorAll('.v3ToetsActions .v3Btn, .v3ToetsStatus')].map(e => e.getBoundingClientRect().bottom));
+                  out.endGap = Math.round(bar.getBoundingClientRect().top - last); out.fixed = getComputedStyle(bar).position;
+                  out.pad = parseFloat(getComputedStyle(document.querySelector('.v3Reis')).paddingBottom); out.bar = Math.round(bar.getBoundingClientRect().height); return out; })()''')
+                run['reach'] = reach
+                for k in ('Kopieer', 'E-mail', 'Print'):
+                    x = reach.get(k) or {}
+                    if not x.get('focus') or x.get('clear', -1) < 0 or not x.get('top'): fail(f'{k} covered or unreachable {x}')
+                if reach['fixed'] != 'fixed' or reach['endGap'] < 8 or reach['pad'] < reach['bar'] + 8: fail(f'result end clearance {reach}')
+                await pg.evaluate("scrollTo({top: document.documentElement.scrollHeight, behavior: 'instant'})")
+                await pg.screenshot(path=str(OUT / f'resultaat-einde-{name}.png'))
+                await pg.evaluate("scrollTo({top: 0, behavior: 'instant'})")
 
             if name == 'desktop':
                 # Reservekopie: export contains the results.

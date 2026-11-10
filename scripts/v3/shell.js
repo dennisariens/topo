@@ -111,4 +111,13 @@
  }
  new MutationObserver(()=>{if(!queued)queued=requestAnimationFrame(update);}).observe(body,{subtree:true,attributes:true,attributeFilter:['class','hidden']});
  update();
+ // Phone: the real height of the fixed tab bar (with safe area), so screens outside lessons clear it (shell.css).
+ const tabbar=()=>{const bar=[...document.querySelectorAll('.v3Side')].find(e=>e.checkVisibility?.()&&getComputedStyle(e).position==='fixed'&&e.getBoundingClientRect().bottom>=innerHeight-1);
+  if(bar)document.documentElement.style.setProperty('--v3-tabbar',Math.ceil(bar.getBoundingClientRect().height)+'px');};
+ if('ResizeObserver' in window){const ro=new ResizeObserver(tabbar);document.querySelectorAll('.v3Side').forEach(e=>ro.observe(e));}
+ addEventListener('resize',tabbar);tabbar();
+ // Keyboard focus outside lessons: a control that lands behind the tab bar scrolls clear of it (scroll-padding).
+ document.addEventListener('focusin',e=>{const t=e.target;if(body.classList.contains('v3Les')||!t?.closest?.('.v3Reis')||t.closest('.v3Side'))return;
+  const bar=[...document.querySelectorAll('.v3Reis>.v3Side')].find(x=>getComputedStyle(x).position==='fixed');if(!bar)return;
+  if(t.getBoundingClientRect().bottom>bar.getBoundingClientRect().top)t.scrollIntoView({block:'nearest',behavior:'instant'});});
 })();

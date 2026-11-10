@@ -498,3 +498,15 @@ Review-fix 3 (ook in `DESIGN_AUDIT_V3_0.md`: "het dubbele label weg"). In de ken
   - het eindigt als postkaart in het Reisboekje.
 - **Artwork:** Nino in zijn uniform (geen clubtenue, geen tekst in beeld). De Turijn-scène (Piazza San Carlo, bal, Vespa) is de eerste kandidaat.
 - **Planning:** na V3.0, eerst één prototype (Turijn) en daarna besluit de eigenaar.
+
+## 2026-11-10 — Na TOPO Italië volgt Frankrijk
+
+- **Richting (eigenaar):** zodra TOPO Italië af is (V3.0 en de runtime-migratie), volgt Frankrijk.
+- **Gevolgen voor het ontwerp (lead designer):**
+  - een **landpakket** per land: geometrie en projectie, plekken en hoofdstukken, namen en uitspraak, artwork (achtergronden, scènes, hoofdstukbeelden), uitstapjes en de inhoud van het reisboekje;
+  - **app, leerlogica, beloningen, opslag en UI** zijn landonafhankelijk;
+  - **één UI-palet** (violet glas); het land komt terug in het artwork, de driekleur en de stempels (DECISIONS 10-11, "Twee werelden");
+  - **Nino reist mee**, in hetzelfde uniform;
+  - **voortgang per land**, met één profiel;
+  - het **Reisboekje** wordt een paspoort met een hoofdstuk per land.
+- **Gevolg voor de architectuur:** `docs/v3/ARCHITECTUUR.md` (Codex, `arch/v3-runtime`) beschrijft de grens tussen landpakket en app, en het opslagschema per land met migratie van de bestaande Italië-saves.

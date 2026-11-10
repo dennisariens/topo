@@ -44,3 +44,23 @@ Een antwoord levert één expliciete uitkomst: beoordeling, vaardigheids-/dagdoe
 | iPad-geheugen | DOM-nodes/kaartkopieën en geschatte gedecodeerde RGBA-bytes tellen; piekgeheugen en herhaald scherm-/boekwisselen op fysieke iPad/Safari meten. Geen heapwinst claimen op basis van bestandsgrootte of jsdom. Limiet vaststellen op het ondersteunde apparaat vóór integratie. |
 | Opslagverlies | Oude/nieuwe back-ups in beide richtingen, cancel, corrupte data, quota en rollback; snapshots vóór/na en reload. Geen ongeautoriseerde of gedeeltelijke vervanging. |
 | Gedrags-/UI-regressie | Karakterisering groen op referentie én kandidaat; vaste klok/seed. Daarnaast echte SVG-fill/stroke, touch/IME/selectie, offline downloaden en responsive/focus/contrast naast de goedgekeurde renders. Deze DOM-tests bewijzen geen browserlayout. |
+
+## 3 · Landpakket en kern (na Italië volgt Frankrijk)
+
+Besluit van 10 november 2026: na Italië volgt Frankrijk. De migratie legt daarom meteen één grens vast.
+
+| Landpakket (`src/lands/<id>/`, per land) | Kern (landonafhankelijk) |
+| --- | --- |
+| Projectie, geometrie, context en ankers met hashes en provenance; plekken en IDs; hoofdstukken en groepen; namen en aliassen; schoolblad; artwork (achtergronden, scènes, hoofdstukbeelden, stempels, postkaarten); uitstapjes; reisboekje-inhoud | `src/learning`, `src/rewards`, `src/storage` en `src/ui`, inclusief tokens, frame en componenten. Één UI-palet; het land komt alleen binnen via artwork en data. |
+
+- **Contract:** de kern kent geen land-ID's, geen namen en geen coördinaten. Een landpakket is pure data plus assets, met één manifest dat de kern valideert (aantallen, IDs uniek, hashes, verwijzingen compleet).
+- **Build:** één HTML per land: kern plus één pakket. Een bundel met meerdere landen is een latere keuze.
+- **Opslag:**
+  - één profiel (naam, pizza, introstatus);
+  - voortgang, route, toetsuitslagen en beloningen per land, onder `lands.<id>`;
+  - het Reisboekje is een paspoort met per land een hoofdstuk.
+- **Migratie Italië:**
+  - `topo-italie-v3` schema 3 en `topo-v3-toetsen-v1` worden 1-op-1 `lands.it`; het profiel blijft;
+  - oude saves en reservekopieën blijven inleesbaar (oud → nieuw), en een nieuwe kopie bevat het Italië-deel in de oude vorm zolang de V2-referentie bestaat;
+  - geen gegevensverlies; de migratie is idempotent en draait pas na een geslaagde validatie.
+- **Tests:** de karakterisering blijft op Italië. Een tweede pakket hoeft alleen de manifestcontrole en de gedeelde gedragstests te doorstaan.

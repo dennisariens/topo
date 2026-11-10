@@ -89,6 +89,30 @@ De eigenaar vond `R-voortgang-doel.webp` het sterkst; ter vergelijking staan `R-
 
 De QA-check "geen paneel breder dan 70%" geldt alleen voor Landschap. Voor Werkblad geldt: het artwork blijft zichtbaar op ≥ 12% van de viewport.
 
+## Raster en uitlijning (eigenaar, 10-11, naar `R-voortgang-doel`)
+
+De kracht van het doelbeeld is de uitlijning. Die geldt voor alle schermen:
+
+- **Eén frame:**
+  - op elk scherm is het buitenframe identiek: dezelfde marge tot de viewport (desktop 28 px, iPad 20 px) en dezelfde buitenradius (28 px);
+  - wisselen van tab laat niets verspringen.
+- **De zijbalk is de linkerkolom van dat frame** (vaste breedte, 240 px op desktop): transparant glas, waardoor het artwork onderaan doorschijnt. Het is geen los eiland meer; dat vervangt de zwevende zijbalk uit `R-oefenen-ijk`.
+- **Het inhoudsvlak** rechts van de zijbalk:
+  - Werkblad: een lichte plaat (±92%);
+  - Landschap: transparant, zodat het artwork zichtbaar is, met de panelen zwevend binnen dezelfde randen.
+- **Raster:**
+  - 12 kolommen binnen het inhoudsvlak, met één vaste goot (24 px desktop, 16 px iPad) en een binnenmarge gelijk aan de goot plus 8;
+  - elk blok begint en eindigt op een kolomlijn.
+- **Gedeelde lijnen:**
+  - de bovenkant van de titel, het eerste blok links en het eerste blok rechts liggen op één lijn;
+  - de onderkanten van de blokken in dezelfde rij ook;
+  - de onderste rij tegels overspant exact dezelfde breedte als de blokken erboven, en de tegels zijn even breed en even hoog;
+  - de onderste rand van de laatste rij ligt op de binnenmarge van het frame.
+- **Verdeling:**
+  - links ±7/12 (de kaart), rechts ±5/12 (de lijst en daaronder een kaart);
+  - onderaan 3 gelijke tegels over 12 kolommen.
+- **QA-check:** blokken in dezelfde rij hebben gelijke boven- en onderkanten (±1 px), de goten zijn overal gelijk (±1 px) en het frame is op alle tabs identiek (±1 px).
+
 ## Per render: overnemen en afwijken
 
 | Render | Overnemen | Niet overnemen / afwijken |

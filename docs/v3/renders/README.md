@@ -58,6 +58,37 @@ Na de ingetogenheidsronde staat **`R-oefenen-ijk.webp`** voor de stijl van alle 
 
 `R-oefenen.webp` (eerste ronde) is daarmee voor Oefenen vervangen. Voor de andere schermen blijven de renders van de eerste ronde gelden voor de opbouw, en `R-oefenen-ijk` met de ingetogenheidsregels voor de stijl.
 
+## Voortgang: doelbeeld `R-voortgang-doel` (eigenaar, 10-11)
+
+De eigenaar vond `R-voortgang-doel.webp` het sterkst; ter vergelijking staan `R-voortgang-ijk.webp` en de benchmark `B-voortgang-benchmark.webp` erbij. Daarmee vervalt `R-voortgang.webp`.
+
+**Waarom het werkt:**
+- de kaart en het getal (32/45) staan samen in één kaart en vormen het enige luide element;
+- veel lucht, kleine en heldere typografie;
+- violet alleen als data;
+- het artwork alleen aan de randen.
+
+**Overnemen:**
+- een grote kaartkaart met "Italië", het getal, een balk en de legenda;
+- rechts een rustige lijst met hoofdstukken (nummer, naam, status of balk; geen foto's, die horen bij Reis);
+- onderaan een rij tegels met lijnicoon, label en getal.
+
+**Corrigeren:**
+- **geen begroeting** ("Buongiorno Nino": Nino is de gids, niet de leerling, en het is een tagline);
+- **geen offline-badge**;
+- **geen streak** (eerder afgewezen); daar komt **Dagdoel 3/8**;
+- **alle 11 hoofdstukken** met echte namen; past dat niet, dan compacte rijen of een eigen scroll;
+- **"Recent geoefend" wordt "Toetsen":** de laatste uitslagen (datum, hoofdstukken, score), en een tik opent de lijst van 10;
+- **onderste tegels:** Dagdoel · Pizza's · Vespa's, met de echte data (3 pizza's per rit);
+- **legenda:** Beheerst · Bezig · Nog niet, met de drempel uit DECISIONS;
+- **de kaart kleurt de 45 plekken** (steden als stip, rivieren als lijn, eilanden, zeeën, bergen, en regio's alleen voor het hoofdstuk Streken), niet alle regio's.
+
+**Nuance op de regel "geen witte plaat":** het doelbeeld en de benchmark-lijst gebruiken wel een rustige, lichte plaat. Het probleem van V3.0 was de plaat *zonder* artwork, lucht en hiërarchie. Daarom twee oppervlakken:
+- **Landschap** (Reis, Oefenen, Les, Toets resultaat, Beloningen): het artwork als canvas, met zwevende glaspanelen.
+- **Werkblad** (Voortgang, Toets instellen, Instellingen): één lichte plaat met ±92% dekking, het artwork zichtbaar langs de randen en onder de zijbalk, en kaarten met veel lucht.
+
+De QA-check "geen paneel breder dan 70%" geldt alleen voor Landschap. Voor Werkblad geldt: het artwork blijft zichtbaar op ≥ 12% van de viewport.
+
 ## Per render: overnemen en afwijken
 
 | Render | Overnemen | Niet overnemen / afwijken |

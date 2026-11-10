@@ -461,3 +461,13 @@ Review-fix 2. Op de telefoon (≤ 767 px) eindigt elk V3-scherm buiten lessen bo
 ## 2026-11-10 — V3.0 review-fix: label "Jouw naam" alleen voor schermlezers
 
 Review-fix 3 (ook in `DESIGN_AUDIT_V3_0.md`: "het dubbele label weg"). In de kennismaking is "Jouw naam" niet meer zichtbaar, omdat Nino's vraag "Hoe mag ik je noemen?" het veld al draagt. Het label blijft de toegankelijke naam van het veld: de tekst staat visueel verborgen in het V2-label. Het V2-formulier en profielschema 1 blijven ongewijzigd.
+
+## 2026-11-10 — Nino: vast portret, poses in de inhoud
+
+- **Portret:** het portret in de zijbalk blijft op alle tabs hetzelfde (`NINO-PORTRET`); het is het vaste anker van de navigatie.
+- **Poses:** Nino varieert alleen in de inhoud, waar hij iets betekent:
+  - klembord bij Toets instellen;
+  - duim omhoog of aanmoediging bij het toetsresultaat;
+  - welkom bij de kennismaking;
+  - eventueel bij lege staten.
+- **Assets:** zie `docs/v3/renders/README.md` › Nieuw artwork.

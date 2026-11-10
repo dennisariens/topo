@@ -3,7 +3,7 @@
 
 Per viewport (desktop, iPad landscape, iPad portrait, phone, 320 px), on #welkom (first visit: no profile, no intro):
   * the V2 first-run dialog opens as the V3 scene: welcome pose, name, three pizzas, Andiamo! and Start meteen;
-    no help lines; focus inside; the scene fits the screen without horizontal scroll;
+    no help lines; the label "Jouw naam" is not visible but is the field's accessible name; focus inside; the scene fits the screen without horizontal scroll;
   * Andiamo! (keyboard: type, choose with arrow keys, Enter): profile schema 1 exactly {schema,name,coverColor,
     favoritePizza} under topo-nino-profile-v1, intro "done"; then Reis with chapter 1 selected;
   * Start meteen: profile schema 1 (empty name, no pizza), intro "skipped"; Reis with chapter 1; the first lesson
@@ -28,6 +28,8 @@ DIALOG_JS = '''() => { const d = document.querySelector('dialog.ninoProfile[open
     name: vis(d.querySelector('[name=name]')), pizzas: [...d.querySelectorAll('[name=favoritePizza]')].map(i => i.value),
     buttons: [...d.querySelectorAll('button')].filter(vis).map(b => b.textContent.trim()),
     help: ['(mag leeg blijven)', 'Maximaal 24 tekens.'].filter(t => [...d.querySelectorAll('*')].some(n => vis(n) && n.children.length === 0 && n.textContent.trim() === t)),
+    nameLabelVisible: [...d.querySelectorAll('label.profileName *, label.profileName')].some(n => vis(n) && [...n.childNodes].some(c => c.nodeType === 3 && c.textContent.trim() === 'Jouw naam')),
+    nameAccessible: (() => { const i = d.querySelector('[name=name]'); return i?.labels?.[0] ? [...i.labels[0].childNodes].filter(c => c.nodeType === 3 || (c.nodeType === 1 && !c.hidden && c.tagName !== 'INPUT')).map(c => c.textContent).join('').trim() : null; })(),
     focusInside: d.contains(document.activeElement), fits: r.left >= 0 && r.right <= innerWidth && r.top >= 0 && r.bottom <= innerHeight + 1,
     hOverflow: document.documentElement.scrollWidth > innerWidth + 1}; }'''
 AFTER_JS = '''() => { const s = window.TOPO_V3_PREVIEW.storage;
@@ -55,6 +57,10 @@ async def main():
                 if not d['open'] or not d['v3'] or not d['firstRun'] or not d['pose'] or not d['name']: fail(f'dialog {d}')
                 elif d['pizzas'] != ['margherita', 'salami', 'quattro_formaggi'] or d['buttons'] != ['Start meteen', 'Andiamo!'] and sorted(d['buttons']) != ['Andiamo!', 'Start meteen']: fail(f'content {d["pizzas"]} {d["buttons"]}')
                 if d.get('help'): fail(f'help texts {d["help"]}')
+                if d.get('open') and (d['nameLabelVisible'] or d['nameAccessible'] != 'Jouw naam'): fail(f'name label visible={d["nameLabelVisible"]} accessible={d["nameAccessible"]!r}')
+                if flow == 'andiamo':
+                    tb = await pg.get_by_role('textbox', name='Jouw naam', exact=True).count(); run['nameRole'] = tb
+                    if tb != 1: fail(f'textbox "Jouw naam" by accessible name: {tb}')
                 if d.get('open') and (not d['focusInside'] or not d['fits'] or d['hOverflow']): fail(f'focus={d["focusInside"]} fits={d["fits"]} overflow={d["hOverflow"]}')
                 if flow == 'andiamo':
                     await pg.screenshot(path=str(OUT / f'kennismaking-{name}.png'))

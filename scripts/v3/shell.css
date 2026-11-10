@@ -191,6 +191,7 @@ dialog.v3Welkom::backdrop{background:rgba(18,40,38,.55);backdrop-filter:blur(6px
 .v3Welkom .profileBubble h2{font:var(--v3-title);margin:0 0 4px}
 .v3Welkom .profileBubble p{margin:0}
 .v3Welkom .profileName{font:var(--v3-headline);margin-top:var(--v3-s5)}
+.v3Welkom .v3SrOnly{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);clip-path:inset(50%);white-space:nowrap}
 .v3Welkom .profileName input{min-height:52px;border:0;border-radius:14px;background:var(--v3-surface2);box-shadow:inset 0 0 0 1.5px var(--v3-line);font:var(--v3-body)}
 .v3Welkom legend{font:var(--v3-headline)}
 .v3Welkom .profileChoice{border-radius:16px;background:var(--v3-surface2);box-shadow:inset 0 0 0 1px var(--v3-line)}

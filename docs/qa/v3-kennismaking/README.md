@@ -20,3 +20,5 @@ Gecontroleerd op vijf formaten × drie flows, met de demo `#welkom` (eerste bezo
 Screenshots: `kennismaking-<formaat>.png`, `kennismaking-ingevuld-desktop.png`, `reis-na-kennismaking-<formaat>.png` en `aanbod-desktop.png` / `aanbod-telefoon.png`.
 
 **Niet in de preview te testen:** Begin helemaal opnieuw herlaadt de pagina, en de preview zet bij herladen de demo terug. Het V2-pad is ongewijzigd: het wist profiel, voortgang en de introductiesleutel, waarna V2 bij het opstarten de kennismaking opent. Dat is gedekt door de V2-tests in `npm test`.
+
+**Label "Jouw naam" (review-fix 10 november).** Het label is op alle vijf formaten niet zichtbaar. Het veld is wel te vinden als tekstvak met de toegankelijke naam "Jouw naam" (`get_by_role('textbox', name='Jouw naam')`).

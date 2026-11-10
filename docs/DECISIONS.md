@@ -457,3 +457,7 @@ Review-fix 2. Op de telefoon (≤ 767 px) eindigt elk V3-scherm buiten lessen bo
 - **Toetsenbord:** `scroll-padding-bottom` gebruikt dezelfde waarde. Een knop die focus krijgt en achter de balk valt, scrolt vrij.
 - **Lessen:** die houden de bestaande V2-padding. De lopende toets is een les.
 - **Drempel in de QA:** het einde van de inhoud ligt minstens 8 px boven de balk.
+
+## 2026-11-10 — V3.0 review-fix: label "Jouw naam" alleen voor schermlezers
+
+Review-fix 3 (ook in `DESIGN_AUDIT_V3_0.md`: "het dubbele label weg"). In de kennismaking is "Jouw naam" niet meer zichtbaar, omdat Nino's vraag "Hoe mag ik je noemen?" het veld al draagt. Het label blijft de toegankelijke naam van het veld: de tekst staat visueel verborgen in het V2-label. Het V2-formulier en profielschema 1 blijven ongewijzigd.

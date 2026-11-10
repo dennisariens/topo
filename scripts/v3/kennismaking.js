@@ -13,6 +13,9 @@
   // Help lines of the V2 form (V3 principle: no help texts).
   for(const n of d.querySelectorAll('.profileName>span,#profileNameHelp'))n.hidden=true;
   const input=d.querySelector('[name=name]');input?.removeAttribute('aria-describedby');
+  // The label "Jouw naam" is not shown (Nino's question carries it) but stays the field's accessible name.
+  const label=d.querySelector('label.profileName');
+  if(label)for(const n of [...label.childNodes])if(n.nodeType===3&&n.textContent.trim()){const sr=document.createElement('span');sr.className='v3SrOnly';sr.textContent=n.textContent.trim();n.replaceWith(sr);}
  }
  function offer(d){if(d.dataset.v3)return;d.dataset.v3='aanbod';d.classList.add('v3','v3Aanbod');for(const p of d.querySelectorAll(':scope>p'))p.hidden=true;d.querySelectorAll('.introActions .button').forEach(b=>b.classList.add('v3Btn'));d.querySelector('.introActions .primary')?.classList.add('primary');}
  // After the kennismaking, on Reis: chapter 1 is the selected chapter (a lesson that the offer started stays).

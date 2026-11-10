@@ -55,3 +55,21 @@ Claude Code heeft tot donderdag geen ruimte meer. Codex neemt de bouw op `codex/
 - Offline, toetsenbord, focus, verminderde beweging en contrast AA.
 - Lint, test, build en alle QA-scripts groen.
 - Eén commit per stap, push na elke stap; de preview niet committen.
+
+## Ronde 2 (lead designer, 10-11, 22:15, na `bc05cc6`)
+
+Stap 3b–5 zijn akkoord: de typeschaal is gemeten en doorgevoerd, de master-assets zitten in de pijplijn, Nino op de Vespa staat bij het toetsresultaat, en de QA is groen. Op ware grootte (1440×900, BG-03) komt het dicht bij de doelbeelden. Nog te doen, met één commit per punt:
+
+1. **Standaardachtergrond BG-03 Kust** in plaats van BG-01. Kust ligt het dichtst bij de doelbeelden: de zee draagt de zwevende kaart. BG-01 en BG-02 blijven kiesbaar.
+2. **Zijbalk:**
+   - wit 70% met `saturate(.6)` achter de zijbalk, zodat het artwork daar geen kleurvlek (roze bloemen) meer geeft;
+   - check: de tint van de zijbalk wijkt op alle drie de achtergronden maximaal ΔE 8 af van neutraal wit.
+3. **Voortgang past in 1440×900:**
+   - de kaart, de lijst (11 rijen) en de drie tegels Dagdoel · Pizza's · Vespa-ritten staan **volledig** in beeld zonder te scrollen;
+   - Toetsen en het kennis-paspoort volgen onder de vouw, met een duidelijke rand, en nooit half afgesneden in de eerste weergave;
+   - check: geen element van de eerste rij snijdt de onderrand van het frame.
+4. **Reliëfkleur** zoals in de doelbeelden:
+   - laagland warm geelgroen (richtwaarde `#A8C25A`), heuvels olijf, bergen bruin (`#8A5A3A`), sneeuw wit;
+   - contrast 1,3; niet khaki, niet neon.
+5. **Beloningen:** de iconen in de tegels 72 px en de cijfers 40/700; nu ogen ze nog klein.
+6. Daarna: de vergelijkingen opnieuw, en de vergelijking van BG-03 erbij voor alle schermen. Push, en vraag in het afsluitende bericht een hertest door Hermes aan op de eindpin.

@@ -178,7 +178,8 @@ Na fase B klopt de opbouw op alle schermen, maar de build oogt melkig, dun en kl
    - de lavendelwitte gradiënt alleen achter de zijbalk (max. 35%), niet over het hele scherm;
    - het artwork aan de randen helder, zoals in de doelbeelden.
 2. **Glas:**
-   - panelen wit 80% (was 58%), blur 24, een binnenrand van 1 px wit 70% en de schaduw `0 12px 32px rgba(42,36,64,.12)`;
+   - panelen wit **72%** (was 58%; 80% voelde te dicht, de eigenaar wil het artwork zien doorschemeren), `backdrop-filter: blur(28px) saturate(1.4)` (vibrancy zoals bij Apple: de kleur schemert door, de details vervagen), een binnenrand van 1 px wit 70% en de schaduw `0 12px 32px rgba(42,36,64,.12)`;
+   - **leesbaarheid gaat voor:** het contrast is AA, gemeten tegen de lichtste én de donkerste plek van het artwork achter het paneel (op alle drie de achtergronden); haalt een paneel dat niet, dan gaat alleen dat paneel naar 80%;
    - de zijbalk wit 55%;
    - panelen moeten tegen het artwork duidelijk loskomen.
 3. **Typografie:**

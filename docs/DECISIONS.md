@@ -771,3 +771,7 @@ Beide schermen volgen hun render, met de regels van Ingetogenheid, Raster en Ver
 
 **Bewijs:** `scripts/qa-v3-faseb-beloningen.py` en de vergelijkingen `docs/qa/v3-stijlbeeld/beloningen-ijk-{desktop,ipad-liggend}.jpg`.
 
+## 2026-11-10 — QA fase B: vergelijkingen met het glas zoals ontworpen
+
+Gevonden bij fase B, stap 6. Deze Mac staat op "verminderde transparantie", en headless Chrome neemt dat over. De screenshots en vergelijkingen van stap 2–5 toonden daardoor dichte panelen: de terechte variant uit `glas.css`, maar niet het ontwerp. `qa-v3-faseb.py`, `-oefenen`, `-les` en `-toets` emuleren nu `prefers-reduced-transparency: no-preference`, net als `qa-v3-glas.py`, `qa-v3-stijlbeeld.py` en `-beloningen`. De dichte variant blijft gedekt door `qa-v3-glas.py`. De checks zelf zijn ongewijzigd en groen; het bewijs van stap 2–5 is opnieuw gemaakt.
+

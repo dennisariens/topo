@@ -19,6 +19,8 @@ On #bezig, desktop 1440×900, iPad landscape 1180×820 and iPad portrait 820×11
 Writes screenshots, the comparisons beside R-oefenen-ijk (docs/qa/v3-stijlbeeld/oefenen-ijk-<variant>-<viewport>.jpg)
 and results-oefenen.json to docs/qa/v3-faseb/.
 
+Runs with prefers-reduced-transparency: no-preference (the reduced variant is covered by qa-v3-glas.py).
+
 Usage: node scripts/build-v3-preview.mjs && python3 scripts/qa-v3-faseb-oefenen.py
 """
 import asyncio, json, pathlib, sys
@@ -131,6 +133,8 @@ async def main():
             for variant, tail in VARIANTS.items():
                 ctx = await b.new_context(viewport={'width': w, 'height': h}, has_touch=vp != 'desktop', is_mobile=vp == 'telefoon')
                 pg = await ctx.new_page(); errs = []
+                # The glass as designed (the QA machine may prefer reduced transparency; that variant is qa-v3-glas.py).
+                await (await ctx.new_cdp_session(pg)).send('Emulation.setEmulatedMedia', {'features': [{'name': 'prefers-reduced-transparency', 'value': 'no-preference'}]})
                 pg.on('pageerror', lambda e: errs.append(str(e)))
                 await pg.goto(HTML.as_uri() + '#bezig' + tail); await pg.wait_for_timeout(1500)
                 await pg.evaluate('TOPO_V3.shell.go("oefenen")'); await pg.wait_for_timeout(400)

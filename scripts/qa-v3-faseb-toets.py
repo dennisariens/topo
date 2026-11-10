@@ -23,6 +23,8 @@ Writes screenshots, the comparisons beside R-toets-instellen and R-toets-resulta
 (docs/qa/v3-stijlbeeld/toets-instellen-<viewport>.jpg, toets-resultaat-<variant>-<viewport>.jpg)
 and results-toets.json to docs/qa/v3-faseb/.
 
+Runs with prefers-reduced-transparency: no-preference (the reduced variant is covered by qa-v3-glas.py).
+
 Usage: node scripts/build-v3-preview.mjs && python3 scripts/qa-v3-faseb-toets.py
 """
 import asyncio, json, pathlib, sys
@@ -156,6 +158,8 @@ async def main():
         for vp, (w, h) in VIEWPORTS.items():
             ctx = await b.new_context(viewport={'width': w, 'height': h}, has_touch=vp != 'desktop', is_mobile=vp == 'telefoon')
             pg = await ctx.new_page(); errs = []
+            # The glass as designed (the QA machine may prefer reduced transparency; that variant is qa-v3-glas.py).
+            await (await ctx.new_cdp_session(pg)).send('Emulation.setEmulatedMedia', {'features': [{'name': 'prefers-reduced-transparency', 'value': 'no-preference'}]})
             pg.on('pageerror', lambda e: errs.append(str(e)))
             await pg.goto(HTML.as_uri() + '#bezig'); await pg.wait_for_timeout(1500)
             await pg.evaluate('TOPO_V3.shell.go("toets")'); await pg.wait_for_timeout(500)
@@ -176,6 +180,8 @@ async def main():
             w, h = VIEWPORTS[vp]
             ctx = await b.new_context(viewport={'width': w, 'height': h}, has_touch=vp != 'desktop')
             pg = await ctx.new_page(); errs = []
+            # The glass as designed (the QA machine may prefer reduced transparency; that variant is qa-v3-glas.py).
+            await (await ctx.new_cdp_session(pg)).send('Emulation.setEmulatedMedia', {'features': [{'name': 'prefers-reduced-transparency', 'value': 'no-preference'}]})
             pg.on('pageerror', lambda e: errs.append(str(e)))
             await pg.goto(HTML.as_uri() + '#bezig' + ('/kaart' if variant == 'kaart' else '')); await pg.wait_for_timeout(1500)
             await play_toets(pg)

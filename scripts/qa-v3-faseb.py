@@ -22,6 +22,8 @@ On #bezig (and #afgerond for the gold and done rows), desktop 1440×900, iPad la
 Writes screenshots and the comparisons beside R-reis-ijk (docs/qa/v3-stijlbeeld/reis-ijk-<variant>-<viewport>.jpg)
 and results.json to docs/qa/v3-faseb/.
 
+Runs with prefers-reduced-transparency: no-preference (the reduced variant is covered by qa-v3-glas.py).
+
 Usage: node scripts/build-v3-preview.mjs && python3 scripts/qa-v3-faseb.py
 """
 import asyncio, json, pathlib, sys
@@ -148,6 +150,8 @@ async def main():
                 for demo in ('bezig', 'afgerond'):
                     ctx = await b.new_context(viewport={'width': w, 'height': h}, has_touch=vp != 'desktop')
                     pg = await ctx.new_page(); errs = []
+                    # The glass as designed (the QA machine may prefer reduced transparency; that variant is qa-v3-glas.py).
+                    await (await ctx.new_cdp_session(pg)).send('Emulation.setEmulatedMedia', {'features': [{'name': 'prefers-reduced-transparency', 'value': 'no-preference'}]})
                     pg.on('pageerror', lambda e: errs.append(str(e)))
                     await pg.goto(HTML.as_uri() + '#' + demo + tail); await pg.wait_for_timeout(1500)
                     p = await pg.evaluate(PROBE)

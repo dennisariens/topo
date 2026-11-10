@@ -1,5 +1,7 @@
 # V3.0 fase B: bewijs
 
+Alle fase B-scripts draaien met `prefers-reduced-transparency: no-preference`, het glas zoals ontworpen. De dichte variant zit in `qa-v3-glas.py` (DECISIONS 10-11, "QA fase B: vergelijkingen met het glas zoals ontworpen").
+
 ## Stap 2: Reis volgens `R-reis-ijk`, met twee kaartvarianten
 
 Opdracht: fase B (`docs/v3/renders/README.md` § Reis, § Raster en uitlijning, § Verfijning) en de review van fase A: lever twee kaartvarianten naast `R-reis-ijk` en bouw Reis af in variant (a) tot de eigenaar kiest. Script: `scripts/qa-v3-faseb.py`. Resultaat: [`results.json`](results.json).
@@ -110,7 +112,7 @@ Alle checks zijn groen. In `qa-v3-faseb.py` en `qa-v3-glas.py` meten de checks v
 
 Script: `scripts/qa-v3-faseb-beloningen.py`. Resultaat: [`results-beloningen.json`](results-beloningen.json).
 
-Gemeten op `#bezig` op desktop, iPad liggend, iPad staand en telefoon, en op `#alles` op desktop. Het script draait met `prefers-reduced-transparency: no-preference`, het glas zoals ontworpen. Vergelijking: [desktop](../v3-stijlbeeld/beloningen-ijk-desktop.jpg) · [iPad liggend](../v3-stijlbeeld/beloningen-ijk-ipad-liggend.jpg). De tellingen tegen het V2-Reisboekje blijven gedekt door `qa-v3-stijlbeeld.py`.
+Gemeten op `#bezig` op desktop, iPad liggend, iPad staand en telefoon, en op `#alles` op desktop. Vergelijking: [desktop](../v3-stijlbeeld/beloningen-ijk-desktop.jpg) · [iPad liggend](../v3-stijlbeeld/beloningen-ijk-ipad-liggend.jpg). De tellingen tegen het V2-Reisboekje blijven gedekt door `qa-v3-stijlbeeld.py`.
 
 | Check | Drempel |
 | --- | --- |

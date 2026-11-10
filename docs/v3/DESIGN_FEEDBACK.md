@@ -17,3 +17,10 @@ Design Taste-protocol: elke correctie krijgt een categorie (lay-out, identiteit,
 | 2026-11-09 | iconen | Pizzapunt voor tellers (eenheid = punt), hele pizza voor meter en Beloningen | inhoud | ARTWORK_BRIEF › Iconen |
 | 2026-11-09 | artwork | Alle drie de achtergronden houden; visueel top gaat voor grootte | beeld | DECISIONS 9-11 › Artwork kwaliteit |
 | 2026-11-09 | artwork | Shirtvariatie van Nino per scène is acceptabel; portret moet exact | identiteit | ARTWORK_BRIEF › Vaste regels |
+| 2026-11-10 | alle (V3.0) | **Incident, tweede keer:** schermen ogen niet als de render; geen artwork, ondoorzichtige plaat, saaie formulieren, zwakke typografie en knoppen | identiteit, lay-out, beeld | docs/v3/DESIGN_AUDIT_V3_0.md; eerst een render per scherm plus een vergelijkingscheck; nieuwe QA-checks (achtergrond, plaatbreedte, kaartrand) |
+| 2026-11-10 | Les | Les moet zijn: kaart op de voorgrond boven het artwork, niet de beige focusmodus | lay-out, beeld | DESIGN_AUDIT › Les |
+| 2026-11-10 | Schoolkaart | Buurlanden horen in landkleur, niet in zeekleur | inhoud | DESIGN_AUDIT; geometrie- of stijlcheck op fill van buurlanden |
+| 2026-11-10 | Reliëf | Witte waas over het reliëf; moet volle kracht en een scherpe kust hebben | beeld | DESIGN_AUDIT › Reliëf; check op kaartrand-opacity |
+| 2026-11-10 | Beloningen | Losse knop Open Reisboekje dubbel (het boek is de knop); pizza's boven de Vespa; uitlijning artwork op de eerste pagina | interactie, lay-out | DESIGN_AUDIT › Beloningen |
+| 2026-11-10 | Voortgang | Hoofdstukken met ✓ en ★ ogen goedkoop; graag zoals de rijen in de render | beeld | DESIGN_AUDIT › Voortgang |
+| 2026-11-10 | alle | Twijfel terracotta tegenover paars; advies: violet als basis, land als accent | identiteit | besluit eigenaar open |

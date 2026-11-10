@@ -1,6 +1,6 @@
 {
  "html": "/Users/dennisariens/projects/topo-v3/output/html/TOPO-V3-Reis-Preview.html",
- "sha256": "bb96703006276dc8e6f4443ebb435c84d034d6bb246b002e5a54c42538b35862",
+ "sha256": "ecb9787961deba241e37ef4f039575d7e1354b1d1ce27951558c120d275ba6b1",
  "indexSha256": "3aced3c31259011b0af2947c78f71965cb4beb2e88c69d1663e61792b0304f5a",
  "label": "na",
  "runs": {
@@ -12,26 +12,28 @@
     844,
     "28px"
    ],
-   "free": 0.669,
+   "free": 0.691,
    "wide": [],
    "edge": {
     "selector": ".v3Map",
-    "masks": [
-     "v3Map"
-    ],
+    "masks": [],
     "opacity": 1,
+    "overlays": [],
+    "school": false,
+    "letterbox": false,
+    "seeThrough": [],
     "box": [
      696,
-     194,
+     260,
      360,
-     646
+     515
     ]
    },
    "theme": "#5b45e0",
    "les": false,
    "view": "reis",
    "hOverflow": false,
-   "freePct": 66.9,
+   "freePct": 69.1,
    "lowContrast": [],
    "backdropFilters": [
     "blur(24px) saturate(1.15)",
@@ -48,28 +50,68 @@
     844,
     "28px"
    ],
-   "free": 0.319,
+   "free": 0.341,
    "wide": [],
    "edge": {
     "selector": ".v3Map",
-    "masks": [
-     "v3Map"
-    ],
+    "masks": [],
     "opacity": 1,
+    "overlays": [],
+    "school": false,
+    "letterbox": false,
+    "seeThrough": [],
     "box": [
      696,
-     194,
+     260,
      360,
-     646
+     515
     ]
    },
    "theme": "#5b45e0",
    "les": false,
    "view": "reis",
    "hOverflow": false,
-   "freePct": 31.9,
+   "freePct": 34.1,
    "lowContrast": [],
    "backdropFilters": [
+    "none"
+   ],
+   "pageErrors": [],
+   "surface": "landschap"
+  },
+  "reis-schoolkaart-desktop": {
+   "frame": [
+    28,
+    28,
+    1384,
+    844,
+    "28px"
+   ],
+   "free": 0.691,
+   "wide": [],
+   "edge": {
+    "selector": ".v3Map",
+    "masks": [],
+    "opacity": 1,
+    "overlays": [],
+    "school": true,
+    "letterbox": false,
+    "seeThrough": [],
+    "box": [
+     696,
+     260,
+     360,
+     515
+    ]
+   },
+   "theme": "#5b45e0",
+   "les": false,
+   "view": "reis",
+   "hOverflow": false,
+   "freePct": 69.1,
+   "lowContrast": [],
+   "backdropFilters": [
+    "blur(24px) saturate(1.15)",
     "none"
    ],
    "pageErrors": [],
@@ -89,6 +131,10 @@
     "selector": "#map",
     "masks": [],
     "opacity": 1,
+    "overlays": [],
+    "school": true,
+    "letterbox": false,
+    "seeThrough": [],
     "box": [
      443,
      260,
@@ -125,6 +171,10 @@
     "selector": "#map",
     "masks": [],
     "opacity": 1,
+    "overlays": [],
+    "school": true,
+    "letterbox": false,
+    "seeThrough": [],
     "box": [
      443,
      260,
@@ -207,14 +257,16 @@
    ],
    "edge": {
     "selector": ".v3Map",
-    "masks": [
-     "v3VgMap v3Map"
-    ],
+    "masks": [],
     "opacity": 1,
+    "overlays": [],
+    "school": true,
+    "letterbox": false,
+    "seeThrough": [],
     "box": [
-     308,
+     391,
      255,
-     567,
+     402,
      558
     ]
    },
@@ -239,26 +291,28 @@
     780,
     "28px"
    ],
-   "free": 0.555,
+   "free": 0.583,
    "wide": [],
    "edge": {
     "selector": ".v3Map",
-    "masks": [
-     "v3Map"
-    ],
+    "masks": [],
     "opacity": 1,
+    "overlays": [],
+    "school": false,
+    "letterbox": false,
+    "seeThrough": [],
     "box": [
      454,
-     170,
+     183,
      406,
-     606
+     581
     ]
    },
    "theme": "#5b45e0",
    "les": false,
    "view": "reis",
    "hOverflow": false,
-   "freePct": 55.5,
+   "freePct": 58.3,
    "lowContrast": [],
    "backdropFilters": [
     "blur(24px) saturate(1.15)",
@@ -275,28 +329,68 @@
     780,
     "28px"
    ],
-   "free": 0.229,
+   "free": 0.257,
    "wide": [],
    "edge": {
     "selector": ".v3Map",
-    "masks": [
-     "v3Map"
-    ],
+    "masks": [],
     "opacity": 1,
+    "overlays": [],
+    "school": false,
+    "letterbox": false,
+    "seeThrough": [],
     "box": [
      454,
-     170,
+     183,
      406,
-     606
+     581
     ]
    },
    "theme": "#5b45e0",
    "les": false,
    "view": "reis",
    "hOverflow": false,
-   "freePct": 22.9,
+   "freePct": 25.7,
    "lowContrast": [],
    "backdropFilters": [
+    "none"
+   ],
+   "pageErrors": [],
+   "surface": "landschap"
+  },
+  "reis-schoolkaart-ipad-liggend": {
+   "frame": [
+    20,
+    20,
+    1140,
+    780,
+    "28px"
+   ],
+   "free": 0.583,
+   "wide": [],
+   "edge": {
+    "selector": ".v3Map",
+    "masks": [],
+    "opacity": 1,
+    "overlays": [],
+    "school": true,
+    "letterbox": false,
+    "seeThrough": [],
+    "box": [
+     454,
+     183,
+     406,
+     581
+    ]
+   },
+   "theme": "#5b45e0",
+   "les": false,
+   "view": "reis",
+   "hOverflow": false,
+   "freePct": 58.3,
+   "lowContrast": [],
+   "backdropFilters": [
+    "blur(24px) saturate(1.15)",
     "none"
    ],
    "pageErrors": [],
@@ -310,12 +404,16 @@
     780,
     "28px"
    ],
-   "free": 0.73,
+   "free": 0.731,
    "wide": [],
    "edge": {
     "selector": "#map",
     "masks": [],
     "opacity": 1,
+    "overlays": [],
+    "school": true,
+    "letterbox": false,
+    "seeThrough": [],
     "box": [
      411,
      174,
@@ -327,7 +425,7 @@
    "les": true,
    "view": "reis",
    "hOverflow": false,
-   "freePct": 73.0,
+   "freePct": 73.1,
    "lowContrast": [],
    "backdropFilters": [
     "blur(24px) saturate(1.15)",
@@ -344,7 +442,7 @@
     780,
     "28px"
    ],
-   "free": 0.561,
+   "free": 0.562,
    "wide": [
     "nav.v3.v3LesBar 1016"
    ],
@@ -352,6 +450,10 @@
     "selector": "#map",
     "masks": [],
     "opacity": 1,
+    "overlays": [],
+    "school": true,
+    "letterbox": false,
+    "seeThrough": [],
     "box": [
      411,
      174,
@@ -363,7 +465,7 @@
    "les": true,
    "view": "reis",
    "hOverflow": false,
-   "freePct": 56.1,
+   "freePct": 56.2,
    "lowContrast": [],
    "backdropFilters": [
     "none"
@@ -434,14 +536,16 @@
    ],
    "edge": {
     "selector": ".v3Map",
-    "masks": [
-     "v3VgMap v3Map"
-    ],
+    "masks": [],
     "opacity": 1,
+    "overlays": [],
+    "school": true,
+    "letterbox": false,
+    "seeThrough": [],
     "box": [
-     128,
+     211,
      239,
-     532,
+     366,
      508
     ]
    },
@@ -475,17 +579,19 @@
  "summary": {
   "label": "na",
   "free": {
-   "reis-desktop": 66.9,
-   "reis-desktop-verminderd": 31.9,
+   "reis-desktop": 69.1,
+   "reis-desktop-verminderd": 34.1,
+   "reis-schoolkaart-desktop": 69.1,
    "les-desktop": 66.4,
    "les-desktop-verminderd": 45.7,
    "oefenen-desktop": 81.5,
    "toets-desktop": 23.8,
    "voortgang-desktop": 23.8,
-   "reis-ipad-liggend": 55.5,
-   "reis-ipad-liggend-verminderd": 22.9,
-   "les-ipad-liggend": 73.0,
-   "les-ipad-liggend-verminderd": 56.1,
+   "reis-ipad-liggend": 58.3,
+   "reis-ipad-liggend-verminderd": 25.7,
+   "reis-schoolkaart-ipad-liggend": 58.3,
+   "les-ipad-liggend": 73.1,
+   "les-ipad-liggend-verminderd": 56.2,
    "oefenen-ipad-liggend": 79.2,
    "toets-ipad-liggend": 12.2,
    "voortgang-ipad-liggend": 12.2

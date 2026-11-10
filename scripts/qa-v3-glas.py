@@ -8,8 +8,11 @@ Per screen (Reis, Les, Oefenen, Toets, Voortgang) at desktop 1440×900 and iPad 
   * Landschap — no opaque panel (background alpha ≥ .9) wider than 70% of the viewport;
   * Werkblad (Toets instellen, Voortgang) — the artwork visible on at least 12% of the viewport;
   * the theme is Viola by default (accent #5b45e0);
-  * the map edge: no edge mask or fade — within 24 px of the map edge the map's opacity (mask, opacity, filter)
-    is at least .85 (reported as edgeOpacity) and there is no CSS mask;
+  * no haze at the map edge: no CSS mask, opacity ≥ .85 on the map and its ancestors, and nothing but the map (or
+    its tools) inside the 24 px edge band;
+  * schoolkaart (Reis on Schoolkaart, Les, Voortgang): neighbours always in land colour — the map element shows exactly
+    its viewBox (no letterbox beyond the drawn data, which the sea colour would fill) and no country or context land
+    is see-through (effective opacity × fill-opacity ≥ .9);
   * contrast AA for every visible V3 text: the text colour against the rendered pixels behind it (text hidden for a
     second screenshot; 5th percentile of the per-pixel contrast), ≥ 4.5, or ≥ 3 for large text (≥ 24 px, or ≥ 18.66 px bold);
   * with reduced transparency the glass turns opaque (no backdrop blur).
@@ -26,12 +29,12 @@ HTML = pathlib.Path(sys.argv[1] if len(sys.argv) > 1 else ROOT / 'output/html/TO
 OUT = pathlib.Path(sys.argv[2] if len(sys.argv) > 2 else ROOT / 'docs/qa/v3-glas').resolve()
 LABEL = sys.argv[3] if len(sys.argv) > 3 else 'na'
 STRICT = LABEL == 'na'  # the "voor" run only records
-EDGE_CHECK = False  # map edge: phase A step 2
+EDGE_CHECK = True  # map edge and schoolkaart neighbours: phase A step 2
 VOOR = os.environ.get('VOOR_DIR')  # screenshots of the 'voor' build → side-by-side comparisons in docs/qa/v3-stijlbeeld/
 STIJL = ROOT / 'docs/qa/v3-stijlbeeld'
 MAC_CHROME = '/Applications/Google Chrome.app/Contents/MacOS/Google Chrome'
 VIEWPORTS = {'desktop': (1440, 900), 'ipad-liggend': (1180, 820)}
-SCREENS = ['reis', 'les', 'oefenen', 'toets', 'voortgang']
+SCREENS = ['reis', 'reis-schoolkaart', 'les', 'oefenen', 'toets', 'voortgang']
 WERKBLAD = {'toets', 'voortgang'}  # renders/README § Voortgang: Werkblad = Voortgang, Toets instellen, Instellingen
 
 MEASURE = r'''() => {
@@ -59,7 +62,22 @@ MEASURE = r'''() => {
   let edge = null;
   if (map) { let op = 1, masks = []; for (let e = map; e && e !== document.documentElement; e = e.parentElement) { const s = cs(e); op *= parseFloat(s.opacity);
       const m = s.maskImage || s.webkitMaskImage; if (m && m !== 'none') masks.push((e.id || e.className.baseVal || e.className || e.tagName).toString().slice(0, 30)); }
-    const r = map.getBoundingClientRect(); edge = {selector: map.id ? '#map' : '.v3Map', masks, opacity: op, box: [Math.round(r.left), Math.round(r.top), Math.round(r.width), Math.round(r.height)]}; }
+    const r = map.getBoundingClientRect();
+    // Haze: anything but the map itself (and its tools) inside the 24 px edge band.
+    const over = new Set(); for (let k = 0; k < 60; k++) { const t = k / 60, pts = [[r.left + 12, r.top + t * r.height], [r.right - 12, r.top + t * r.height], [r.left + t * r.width, r.top + 12], [r.left + t * r.width, r.bottom - 12]];
+      for (const [x, y] of pts) { if (x < 0 || y < 0 || x >= W || y >= H) continue;
+        // Rounded corners (radius 28) are cut out by design: skip the corner squares.
+        if ((x - r.left < 36 || r.right - x < 36) && (y - r.top < 36 || r.bottom - y < 36)) continue; const e = document.elementFromPoint(x, y);
+        if (e && !map.contains(e) && e !== map && !e.closest('button, .v3MapTools, .mapTools, #focusAnswerSheet, #focusLearnBar, .v3Panel, .v3LesBar, .v3ShellNav, .v3Side') && !(e.closest('.atlasCanvas, .mapArea') && map.closest('.atlasCanvas, .mapArea')))
+          over.add((e.id || e.getAttribute('class') || e.tagName).toString().slice(0, 30)); } }
+    // Schoolkaart: neighbours always in land colour — the element shows only the viewBox (no letterbox beyond the data)
+    // and no country or context land is see-through.
+    const school = map.dataset.relief !== 'on' || map.id === 'map';
+    const vb = (map.getAttribute('viewBox') || '').split(/[ ,]+/).map(Number), vba = vb[2] / vb[3], ea = r.width / r.height;
+    const seeThrough = school ? [...map.querySelectorAll('.country, .contextLand')].filter(n => { let o = 1; for (let e = n; e && e !== map; e = e.parentNode) o *= parseFloat(cs(e).opacity);
+      return o * parseFloat(cs(n).fillOpacity) < .9 && cs(n).display !== 'none'; }).map(n => n.dataset.id || n.dataset.country) : [];
+    edge = {selector: map.id ? '#map' : '.v3Map', masks, opacity: op, overlays: [...over], school, letterbox: school && map.id !== 'map' ? Math.abs(vba - ea) > .015 : false, seeThrough,
+      box: [Math.round(r.left), Math.round(r.top), Math.round(r.width), Math.round(r.height)]}; }
   // 4. Visible V3 texts for the contrast check.
   const scope = document.body.classList.contains('v3Les') ? 'body.v3Les :is(.v3, main.layout, #focusAnswerSheet, #focusLearnBar)' : '.v3Reis';
   const texts = [...document.querySelectorAll(scope + ' *')].filter(n => [...n.childNodes].some(c => c.nodeType === 3 && c.textContent.trim()) && !n.closest('svg, button[disabled], .v3PreviewBar, dialog')
@@ -110,7 +128,8 @@ def side(a, b, out, la, lb):
 
 async def goto_screen(pg, screen):
     click = lambda sel: pg.locator(sel).filter(visible=True).first.click()
-    if screen == 'les': await click('.v3Main .v3Btn.primary'); await pg.wait_for_timeout(1200)
+    if screen == 'reis-schoolkaart': await pg.locator('.v3Switch .v3Btn', has_text='Schoolkaart').click(); await pg.wait_for_timeout(700)
+    elif screen == 'les': await click('.v3Main .v3Btn.primary'); await pg.wait_for_timeout(1200)
     elif screen != 'reis': await click(f'.v3Side [data-nav={screen}]'); await pg.wait_for_timeout(900)
     await pg.evaluate('document.activeElement?.blur?.()'); await pg.mouse.move(1, 1); await pg.wait_for_timeout(400)
 
@@ -150,7 +169,9 @@ async def main():
                             if run['freePct'] < 30: f(f'background visible {run["freePct"]}% < 30%')
                             if run['wide']: f(f'opaque panels > 70%: {run["wide"][:4]}')
                         elif run['freePct'] < 12: f(f'werkblad: artwork visible {run["freePct"]}% < 12%')
-                    if EDGE_CHECK and run['edge'] and (run['edge']['masks'] or run['edge']['opacity'] < .85): f(f'map edge {run["edge"]}')
+                    e = run['edge']
+                    if EDGE_CHECK and e and (e['masks'] or e['opacity'] < .85 or e['overlays']): f(f'map edge haze {e}')
+                    if EDGE_CHECK and e and e['school'] and (e['letterbox'] or e['seeThrough']): f(f'schoolkaart: neighbours not in land colour (letterbox={e["letterbox"]}, see-through={e["seeThrough"][:6]})')
                     if low: f(f'contrast < AA: {low[:4]}')
                     if run['theme'].lower() != '#5b45e0': f(f'theme {run["theme"]}')
                     if reduce and any('blur' in g for g in glass): f('reduced transparency still blurs')

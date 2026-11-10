@@ -79,7 +79,7 @@ De #75-scènes zitten niet in `index.html`; hergebruik is daarom niet mogelijk. 
 
 ## Fase A voor en na
 
-Voor = pin `43e56d1`, na = de huidige stap van fase A. Links staat de oude build, rechts de nieuwe, op hetzelfde formaat. Gemaakt door `scripts/qa-v3-glas.py` (met `VOOR_DIR`); de metingen staan in [`../v3-glas/`](../v3-glas/README.md).
+Voor = pin `43e56d1`, na = fase A tot en met stap 2: canvas en glas, plus de kaart zonder waas, zwevend en met de buurlanden in landkleur. Links staat de oude build, rechts de nieuwe, op hetzelfde formaat. Gemaakt door `scripts/qa-v3-glas.py` (met `VOOR_DIR`); de metingen staan in [`../v3-glas/`](../v3-glas/README.md).
 
 | Scherm | Desktop 1440×900 | iPad liggend 1180×820 |
 | --- | --- | --- |

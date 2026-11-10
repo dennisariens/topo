@@ -124,10 +124,16 @@
    if(!isFinite(x0))return;
    const pad=Math.max(x1-x0,y1-y0)*MARGIN;x0=Math.max(0,x0-pad);y0=Math.max(0,y0-pad);x1=Math.min(CANVAS.w,x1+pad);y1=Math.min(CANVAS.h,y1+pad);
    // Match the stage aspect ratio by growing the shorter side, centred and clamped to the canvas.
+   // Measure the free stage (any size set by an earlier fit is released first).
+   svg.style.width=svg.style.height='';
    const box=svg.getBoundingClientRect(),aspect=box.width>0&&box.height>0?box.width/box.height:0;
    const grow=(a0,a1,len,max)=>{len=Math.min(len,max);let c=(a0+a1)/2,s=c-len/2;s=Math.max(0,Math.min(max-len,s));return [s,s+len];};
    if(aspect){const w=x1-x0,h=y1-y0;if(w/h<aspect)[x0,x1]=grow(x0,x1,h*aspect,CANVAS.w);else [y0,y1]=grow(y0,y1,w/aspect,CANVAS.h);}
    svg.setAttribute('viewBox',[x0,y0,x1-x0,y1-y0].map(v=>Math.round(v)).join(' '));
+   // Clamped to the canvas: the element takes the viewBox's own proportions, so nothing outside the drawn data
+   // (where neighbouring land is not part of the map) shows as sea; the map floats as one object (phase A, 10-11).
+   const vb=(x1-x0)/(y1-y0);
+   if(aspect&&Math.abs(vb-aspect)>.01){if(vb<aspect)svg.style.width=Math.round(box.height*vb)+'px';else svg.style.height=Math.round(box.width/vb)+'px';}
   }catch{}
  }
  // The stage size changes with the layout (rotation, sidebar width): refit on resize.

@@ -54,12 +54,13 @@ LAYOUT_JS = '''() => {
 
 # Map reference frame (owner 9-11): neighbours, seas and islands must stay visible around Italy.
 # For each reference feature pick one on-screen point inside its real fill; the Python side compares the
-# painted pixel with and without the edge mask. A feature is visible when >= 80% of its contrast remains.
+# painted pixel with and without any edge mask (none since phase A step 2, 10-11: the map floats without a fade).
+# A feature is visible when >= 80% of its contrast remains.
 MAP_SAMPLE_JS = '''() => {
   const map = document.querySelector('.v3Map'); if (!map) return {};
   const el = map.getBoundingClientRect(), stage = map.parentElement.getBoundingClientRect(), ctm = map.getScreenCTM(), inv = ctm.inverse();
-  // Sample only outside the 4% edge fade (plus 2 px): a feature counts as reference when it shows beyond the soft edge.
-  const fx = el.width * .04 + 2, fy = el.height * .04 + 2;
+  // Sample 2 px inside the element edge (rounded corners aside): a feature counts as reference when it shows on the map.
+  const fx = 2 + 28, fy = 2 + 28;
   const x0 = Math.max(el.left + fx, stage.left), x1 = Math.min(el.right - fx, stage.right, innerWidth), y0 = Math.max(el.top + fy, stage.top, 0), y1 = Math.min(el.bottom - fy, stage.bottom, innerHeight);
   const hidden = [...document.querySelectorAll('.v3Switch,.v3PreviewBar,.v3Side')].map(n => n.getBoundingClientRect());
   const free = (x, y) => !hidden.some(h => x >= h.left - 4 && x <= h.right + 4 && y >= h.top - 4 && y <= h.bottom + 4);

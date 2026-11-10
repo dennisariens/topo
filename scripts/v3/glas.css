@@ -89,6 +89,11 @@
  body.v3Les[data-focus-shell=true]:not([data-focus-mode=true]) main.layout{margin-left:calc(var(--v3-frame-m) + var(--v3-rail) + var(--v3-inner))!important;margin-right:calc(var(--v3-frame-m) + var(--v3-inner))!important}
  body.v3Les[data-focus-shell=true] :is(#focusAnswerSheet,#focusLearnBar){margin-left:calc((var(--v3-frame-m) + var(--v3-rail)) / 2);background:var(--v3-glass-strong);-webkit-backdrop-filter:var(--v3-glass-filter);backdrop-filter:var(--v3-glass-filter);box-shadow:var(--v3-glass-shadow),0 12px 40px rgba(29,37,35,.16)}
  body.v3Les .mapArea.atlasViewport{background:transparent}
+ /* Step 2 (10-11): the lesson map floats too — no frame line, radius 28, a soft drop shadow (desktop: the map area;
+    Focus Mode: the map itself inside the pan/zoom viewport). */
+ body.v3Les:not([data-focus-mode=true]) .mapArea.atlasViewport{border-radius:var(--v3-radius-glass);box-shadow:0 2px 6px rgba(28,40,44,.10),0 22px 48px -22px rgba(28,40,44,.45)}
+ body.v3Les[data-focus-mode=true] .mapArea.atlasViewport{box-shadow:none}
+ body.v3Les[data-focus-mode=true] #map{border-radius:var(--v3-radius-glass);box-shadow:0 2px 6px rgba(28,40,44,.10),0 22px 48px -22px rgba(28,40,44,.45)}
  body.v3Les .mapTools :is(.button,button){background:var(--v3-glass-strong);color:var(--v3-ink)}
  body.v3Les .mapTools button:disabled{color:var(--v3-ink2)}
 }

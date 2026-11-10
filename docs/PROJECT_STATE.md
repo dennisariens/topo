@@ -12,6 +12,13 @@ Branch `codex/topo-v3` vanaf de V2-afsluiting `f53dc0b` (voorouder `v2.0.2` = `8
 - een lichte wash en desaturatie achter de UI, nooit op de kaart;
 - verminderde transparantie maakt alles ondoorzichtig.
 
+**Stap 2, kaart** (10 november):
+- de waas is weg; de oorzaak is gemeten en vastgelegd in DECISIONS (halve zee, buurlandsluier, randmasker, kustgloed);
+- het reliëf staat op volle kracht, met een scherpe kust;
+- de kaart zweeft zonder kader, met een zachte schaduw;
+- op de schoolkaart staan de buurlanden overal in landkleur;
+- de geometrie is onveranderd (46/46).
+
 Typografie, knoppen, iconen en het raster volgen in fase B. [Bewijs](qa/v3-glas/README.md) · [voor/na](qa/v3-stijlbeeld/README.md#fase-a-voor-en-na).
 
 **V3.0 review-fixes** (10 november, één commit per punt): (1) toetsfouten zonder "jij:", bij Aanwijzen alleen de plek. [Bewijs](qa/v3-toets/README.md). (2) Telefoon en 320 px: elk scherm buiten lessen krijgt onderaan ruimte voor de tabbalk en de safe area, ook bij toetsenbordfocus. [Bewijs](qa/v3-shell/README.md). (3) Kennismaking: label "Jouw naam" visueel weg, toegankelijke naam blijft. [Bewijs](qa/v3-kennismaking/README.md). Fix 4 (zoombalk in de les) vervalt volgens het eigenaarsbesluit van 10 november (herontwerp van de les).

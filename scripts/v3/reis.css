@@ -84,10 +84,10 @@ body.v3Home #journeyScreen,body.v3Home #journeyScreen>#routeHome{background:none
 .v3Tile span{font:var(--v3-foot);color:var(--v3-ink2)}
 .v3Count .v3Icon{width:34px;height:24px;color:var(--v3-accent);stroke-width:2.4}
 .v3MapStage{position:relative;min-height:0;display:grid;place-items:center;padding:0 var(--v3-s4) var(--v3-s4)}
-/* Real sea and neighbouring land stay visible; only a narrow edge softens into the surface (owner 9-11). */
-.v3Map{width:100%;height:100%;max-height:100%;display:block;border-radius:var(--v3-radius);
- --v3-edge:linear-gradient(90deg,transparent,#000 4%,#000 96%,transparent),linear-gradient(180deg,transparent,#000 4%,#000 96%,transparent);
- -webkit-mask:var(--v3-edge);-webkit-mask-composite:source-in;mask:var(--v3-edge);mask-composite:intersect}
+/* The map floats as one object: real sea and neighbouring land up to a sharp edge, no frame, no edge fade, a soft
+   drop shadow (phase A step 2, 10-11; replaces the 4% edge mask of 9-11, one of the causes of the haze). */
+.v3Map{width:100%;height:100%;max-height:100%;display:block;margin:auto;border-radius:var(--v3-radius-glass,28px);overflow:hidden;
+ box-shadow:0 2px 6px rgba(28,40,44,.10),0 22px 48px -22px rgba(28,40,44,.45)}
 .v3Panel{display:flex;flex-direction:column;justify-content:flex-start;padding-top:72px!important;gap:var(--v3-s4);padding:var(--v3-s6) var(--v3-s6) var(--v3-s8) var(--v3-s2)}
 .v3Panel h1{font:var(--v3-large);letter-spacing:-.015em;text-wrap:balance;border-radius:8px}
 /* Focus on the title never changes its size (lesson from the finish screen): ring only. */
@@ -106,6 +106,8 @@ body.v3Home #journeyScreen,body.v3Home #journeyScreen>#routeHome{background:none
 /* Map paint: same geometry; chapter places carry the accent, everything else steps back. */
 .v3Map .v3Hit{opacity:1}
 .v3Map[data-focus] [data-id]:not(.v3Hit){opacity:.28}
+/* Neighbouring countries are learning items too; dimming them let the sea show through. They stay land (10-11). */
+.v3Map[data-focus] .country:not(.v3Hit){opacity:1}
 .v3Map[data-focus] .v3Hit:is(.city,circle){fill:var(--v3-accent)!important;stroke:#fff;stroke-width:2.5;r:8px}
 .v3Map[data-focus] .city:not(.v3Hit){r:3px}
 .v3Map[data-focus=areas] .v3Hit:not(.lineTarget){fill:var(--v3-accent)!important;fill-opacity:.55!important;stroke:var(--v3-accent)!important;stroke-width:2.5}
@@ -119,13 +121,15 @@ body.v3Home #journeyScreen,body.v3Home #journeyScreen>#routeHome{background:none
 .v3Map[data-relief=on] .sea{fill:#dcedf4!important;fill-opacity:1!important}
 .v3Map[data-relief=on] .atlasWaterTexture{display:none!important}
 .v3Map[data-relief=on] :is(.v3R,.v3LandBase){display:block}
-.v3Map[data-relief=on] .v3RSea{opacity:.5}
-.v3Map[data-relief=on] .v3CoastGlow{display:block;fill:none;stroke:#eaf8fc;stroke-width:26;stroke-linejoin:round;filter:url(#v3-coast-glow);opacity:.55}
+/* Relief at full strength with a sharp coast (10-11): the sea layer at full opacity, no white coast glow. */
+.v3Map[data-relief=on] .v3RSea{opacity:1}
+.v3Map[data-relief=on] .v3CoastGlow{display:none}
 .v3Map[data-relief=on] .v3LandBase{fill:#b9d39d}
 .v3Map[data-relief=on] .atlasTerrain{display:block!important;opacity:1}
 /* Neighbouring countries step back (dimmed), Italy and the chapter's places stay full strength. */
 .v3Map[data-relief=on] :is(.land,.italy){fill-opacity:0;stroke:#fff!important;stroke-opacity:.75!important;stroke-width:.9px!important;vector-effect:non-scaling-stroke}
-.v3Map[data-relief=on] :is(.contextLand,.country:not(.v3Hit)){fill:#f6f2e8!important;fill-opacity:.42!important}
+/* No cream veil over the neighbours (it was the white layer above .atlasTerrain); the relief shows through. */
+.v3Map[data-relief=on] :is(.contextLand,.country:not(.v3Hit)){fill:#f6f2e8!important;fill-opacity:0!important}
 .v3Map[data-relief=on] :is(.land,.italy){fill-opacity:0}
 .v3Map[data-relief=on] .country:not(.v3Hit){fill:#fff;fill-opacity:.06}
 .v3Map[data-relief=on] .zone:not(.v3Hit){fill-opacity:.11}

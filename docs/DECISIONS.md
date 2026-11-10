@@ -541,3 +541,22 @@ Nieuw bestand: `scripts/v3/glas.css`, geladen na `shell.css`.
   - **Werkblad:** artwork zichtbaar op ≥ 12%;
   - **contrast AA:** per tekst tegen de werkelijk gerenderde pixels.
 - **Bekende uitzondering:** met verminderde transparantie is de stappenbalk van de les ondoorzichtig en breder dan 70%. De QA rapporteert het, zonder af te keuren.
+
+## 2026-11-10 — V3.0 fase A, stap 2: kaart
+
+- **Oorzaak van de waas (gemeten in de DOM, Reis-reliëf, desktop).** Gemeten is de verzadiging van de hele kaart en van de randband van 24 px. Het reliëf zelf staat op opacity 1 zonder filter. De waas kwam uit vier lagen erboven:
+  1. `.v3RSea` stond op halve sterkte boven de lichte V2-zee `#dcedf4`. Zonder die halve sterkte stijgt de verzadiging van 0,324 naar 0,451; dit is de grootste bron.
+  2. Over de buurlanden (`.contextLand`, `.country`) lag een crèmekleurige sluier (`#f6f2e8`, fill-opacity 0,42). Zonder sluier: 0,380.
+  3. Het randmasker (`--v3-edge`, een vervaging van 4%) gaf de melkrand. In de randband stijgt de verzadiging van 0,204 naar 0,294.
+  4. `.v3CoastGlow` was een witte streek van 26 breed met blur op 0,55. Die maakte de kust zacht.
+- **Weg:** alle vier. Het reliëf staat op volle kracht: zee op volle sterkte, buurlanden ongedempt, geen kustgloed, dus een scherpe kust.
+  - **Supersedes:** de smalle randfade (9-11, "Reis: kaartkader verwerkt") en het dempen van de buurlanden en de zachte zee (z8-besluit).
+- **Zweven:** de kaart heeft geen kader. Ze krijgt radius 28 en een zachte slagschaduw: op Reis `.v3Map`, in de les het kaartvlak (desktop) of `#map` (Focus Mode).
+- **Schoolkaart: buurlanden altijd in landkleur.** Er waren twee oorzaken.
+  1. De focus van Reis dimde elk element dat geen hit was naar opacity 0,28. Ook leerlanden als FRA, CHE, AUT, SVN en HRV (`.country`) werden zo dun dat de zee erdoor scheen. Nu blijven `.country`-elementen op 1; alleen plekken dimmen.
+  2. `fit()` klemt de viewBox aan het canvas (890×1235). Was het element breder, dan toonde het ruimte buiten de getekende data, en die werd zeekleur. Daar ontbreken buurlanden in de data: Kosovo, Bulgarije (een leeg pad) en Oekraïne.
+  - **Fix:** het element neemt de verhouding van de viewBox aan. De geometrie is onveranderd; de geometriecheck blijft 46/46. De datagaten (Kosovo, BGR) zijn niet getekend en zijn nu ook niet meer zichtbaar.
+- **QA (`qa-v3-glas.py`):** twee nieuwe checks.
+  - *Randwaas:* geen CSS-masker, opacity ≥ 0,85, en binnen 24 px van de rand niets anders dan de kaart of haar knoppen. De afgeronde hoeken tellen niet mee.
+  - *Schoolkaart:* geen letterbox, en geen land met een effectieve dekking < 0,9. Gemeten op Reis Schoolkaart, Reis Reliëf en Les.
+  - `qa-v3-reis.py` meet het referentiekader nu zonder fade-marge.

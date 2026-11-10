@@ -1,12 +1,12 @@
 {
  "html": "output/html/TOPO-V3-Reis-Preview.html",
- "sha256": "bb96703006276dc8e6f4443ebb435c84d034d6bb246b002e5a54c42538b35862",
- "bytes": 50266163,
+ "sha256": "ecb9787961deba241e37ef4f039575d7e1354b1d1ce27951558c120d275ba6b1",
+ "bytes": 50267587,
  "layout": {
   "desktop/nieuw": {
    "frame": {
     "viewBox": "27 0 863 1235",
-    "mask": "linear-gradient(90deg, rgba(0, 0, 0, 0), rgb(0, 0, 0) 4%, rgb(0, 0, 0) 96%, rgba(0, 0, 0, 0)), linear-gradient(rgba(0, 0, 0, 0), rgb(0, 0, 0) 4%, rgb(0, 0, 0) 9",
+    "mask": "none",
     "kept": {
      "Frankrijk": 1,
      "Zwitserland": 1,
@@ -15,7 +15,6 @@
      "Kroatië": 1,
      "Sardinië": 1,
      "Sicilië": 1,
-     "label DUITSLAND": 1,
      "label HONGARIJE": 1,
      "label BOSNIË": 1,
      "label TUNESIË": 1,
@@ -26,7 +25,9 @@
      "zee 5": 1,
      "Noord-Afrika": 1
     },
-    "outOfFrame": [],
+    "outOfFrame": [
+     "label DUITSLAND"
+    ],
     "visible": [
      "Frankrijk",
      "Kroatië",
@@ -37,7 +38,6 @@
      "Slovenië",
      "Zwitserland",
      "label BOSNIË",
-     "label DUITSLAND",
      "label HONGARIJE",
      "label TUNESIË",
      "zee 1",
@@ -73,14 +73,14 @@
     "names": 56
    },
    "switchOcclusion": {
-    "rectOverlap": 12962.90625,
+    "rectOverlap": 1388.8828125,
     "covered": {}
    }
   },
   "desktop/bezig": {
    "frame": {
     "viewBox": "27 0 863 1235",
-    "mask": "linear-gradient(90deg, rgba(0, 0, 0, 0), rgb(0, 0, 0) 4%, rgb(0, 0, 0) 96%, rgba(0, 0, 0, 0)), linear-gradient(rgba(0, 0, 0, 0), rgb(0, 0, 0) 4%, rgb(0, 0, 0) 9",
+    "mask": "none",
     "kept": {
      "Frankrijk": 1,
      "Zwitserland": 1,
@@ -89,7 +89,6 @@
      "Kroatië": 1,
      "Sardinië": 1,
      "Sicilië": 1,
-     "label DUITSLAND": 1,
      "label HONGARIJE": 1,
      "label BOSNIË": 1,
      "label TUNESIË": 1,
@@ -100,7 +99,9 @@
      "zee 5": 1,
      "Noord-Afrika": 1
     },
-    "outOfFrame": [],
+    "outOfFrame": [
+     "label DUITSLAND"
+    ],
     "visible": [
      "Frankrijk",
      "Kroatië",
@@ -111,7 +112,6 @@
      "Slovenië",
      "Zwitserland",
      "label BOSNIË",
-     "label DUITSLAND",
      "label HONGARIJE",
      "label TUNESIË",
      "zee 1",
@@ -147,14 +147,14 @@
     "names": 56
    },
    "switchOcclusion": {
-    "rectOverlap": 12962.90625,
+    "rectOverlap": 1388.8828125,
     "covered": {}
    }
   },
   "desktop/afgerond": {
    "frame": {
     "viewBox": "27 0 863 1235",
-    "mask": "linear-gradient(90deg, rgba(0, 0, 0, 0), rgb(0, 0, 0) 4%, rgb(0, 0, 0) 96%, rgba(0, 0, 0, 0)), linear-gradient(rgba(0, 0, 0, 0), rgb(0, 0, 0) 4%, rgb(0, 0, 0) 9",
+    "mask": "none",
     "kept": {
      "Frankrijk": 1,
      "Zwitserland": 1,
@@ -163,7 +163,6 @@
      "Kroatië": 1,
      "Sardinië": 1,
      "Sicilië": 1,
-     "label DUITSLAND": 1,
      "label HONGARIJE": 1,
      "label BOSNIË": 1,
      "label TUNESIË": 1,
@@ -174,7 +173,9 @@
      "zee 5": 1,
      "Noord-Afrika": 1
     },
-    "outOfFrame": [],
+    "outOfFrame": [
+     "label DUITSLAND"
+    ],
     "visible": [
      "Frankrijk",
      "Kroatië",
@@ -185,7 +186,6 @@
      "Slovenië",
      "Zwitserland",
      "label BOSNIË",
-     "label DUITSLAND",
      "label HONGARIJE",
      "label TUNESIË",
      "zee 1",
@@ -221,14 +221,14 @@
     "names": 56
    },
    "switchOcclusion": {
-    "rectOverlap": 12962.90625,
+    "rectOverlap": 1388.8828125,
     "covered": {}
    }
   },
   "desktop/alles": {
    "frame": {
     "viewBox": "27 0 863 1235",
-    "mask": "linear-gradient(90deg, rgba(0, 0, 0, 0), rgb(0, 0, 0) 4%, rgb(0, 0, 0) 96%, rgba(0, 0, 0, 0)), linear-gradient(rgba(0, 0, 0, 0), rgb(0, 0, 0) 4%, rgb(0, 0, 0) 9",
+    "mask": "none",
     "kept": {
      "Frankrijk": 1,
      "Zwitserland": 1,
@@ -237,7 +237,6 @@
      "Kroatië": 1,
      "Sardinië": 1,
      "Sicilië": 1,
-     "label DUITSLAND": 1,
      "label HONGARIJE": 1,
      "label BOSNIË": 1,
      "label TUNESIË": 1,
@@ -248,7 +247,9 @@
      "zee 5": 1,
      "Noord-Afrika": 1
     },
-    "outOfFrame": [],
+    "outOfFrame": [
+     "label DUITSLAND"
+    ],
     "visible": [
      "Frankrijk",
      "Kroatië",
@@ -259,7 +260,6 @@
      "Slovenië",
      "Zwitserland",
      "label BOSNIË",
-     "label DUITSLAND",
      "label HONGARIJE",
      "label TUNESIË",
      "zee 1",
@@ -295,14 +295,14 @@
     "names": 56
    },
    "switchOcclusion": {
-    "rectOverlap": 12962.90625,
+    "rectOverlap": 1388.8828125,
     "covered": {}
    }
   },
   "ipad-portrait/nieuw": {
    "frame": {
     "viewBox": "27 0 863 1235",
-    "mask": "linear-gradient(90deg, rgba(0, 0, 0, 0), rgb(0, 0, 0) 4%, rgb(0, 0, 0) 96%, rgba(0, 0, 0, 0)), linear-gradient(rgba(0, 0, 0, 0), rgb(0, 0, 0) 4%, rgb(0, 0, 0) 9",
+    "mask": "none",
     "kept": {
      "Frankrijk": 1,
      "Zwitserland": 1,
@@ -311,7 +311,6 @@
      "Kroatië": 1,
      "Sardinië": 1,
      "Sicilië": 1,
-     "label DUITSLAND": 1,
      "label HONGARIJE": 1,
      "label BOSNIË": 1,
      "label TUNESIË": 1,
@@ -322,7 +321,9 @@
      "zee 5": 1,
      "Noord-Afrika": 1
     },
-    "outOfFrame": [],
+    "outOfFrame": [
+     "label DUITSLAND"
+    ],
     "visible": [
      "Frankrijk",
      "Kroatië",
@@ -333,7 +334,6 @@
      "Slovenië",
      "Zwitserland",
      "label BOSNIË",
-     "label DUITSLAND",
      "label HONGARIJE",
      "label TUNESIË",
      "zee 1",
@@ -369,14 +369,14 @@
     "names": 56
    },
    "switchOcclusion": {
-    "rectOverlap": 12348,
+    "rectOverlap": 4134.375,
     "covered": {}
    }
   },
   "ipad-portrait/bezig": {
    "frame": {
     "viewBox": "27 0 863 1235",
-    "mask": "linear-gradient(90deg, rgba(0, 0, 0, 0), rgb(0, 0, 0) 4%, rgb(0, 0, 0) 96%, rgba(0, 0, 0, 0)), linear-gradient(rgba(0, 0, 0, 0), rgb(0, 0, 0) 4%, rgb(0, 0, 0) 9",
+    "mask": "none",
     "kept": {
      "Frankrijk": 1,
      "Zwitserland": 1,
@@ -385,7 +385,6 @@
      "Kroatië": 1,
      "Sardinië": 1,
      "Sicilië": 1,
-     "label DUITSLAND": 1,
      "label HONGARIJE": 1,
      "label BOSNIË": 1,
      "label TUNESIË": 1,
@@ -396,7 +395,9 @@
      "zee 5": 1,
      "Noord-Afrika": 1
     },
-    "outOfFrame": [],
+    "outOfFrame": [
+     "label DUITSLAND"
+    ],
     "visible": [
      "Frankrijk",
      "Kroatië",
@@ -407,7 +408,6 @@
      "Slovenië",
      "Zwitserland",
      "label BOSNIË",
-     "label DUITSLAND",
      "label HONGARIJE",
      "label TUNESIË",
      "zee 1",
@@ -453,7 +453,7 @@
   "ipad-portrait/afgerond": {
    "frame": {
     "viewBox": "27 0 863 1235",
-    "mask": "linear-gradient(90deg, rgba(0, 0, 0, 0), rgb(0, 0, 0) 4%, rgb(0, 0, 0) 96%, rgba(0, 0, 0, 0)), linear-gradient(rgba(0, 0, 0, 0), rgb(0, 0, 0) 4%, rgb(0, 0, 0) 9",
+    "mask": "none",
     "kept": {
      "Frankrijk": 1,
      "Zwitserland": 1,
@@ -462,7 +462,6 @@
      "Kroatië": 1,
      "Sardinië": 1,
      "Sicilië": 1,
-     "label DUITSLAND": 1,
      "label HONGARIJE": 1,
      "label BOSNIË": 1,
      "label TUNESIË": 1,
@@ -473,7 +472,9 @@
      "zee 5": 1,
      "Noord-Afrika": 1
     },
-    "outOfFrame": [],
+    "outOfFrame": [
+     "label DUITSLAND"
+    ],
     "visible": [
      "Frankrijk",
      "Kroatië",
@@ -484,7 +485,6 @@
      "Slovenië",
      "Zwitserland",
      "label BOSNIË",
-     "label DUITSLAND",
      "label HONGARIJE",
      "label TUNESIË",
      "zee 1",
@@ -523,14 +523,14 @@
     "names": 56
    },
    "switchOcclusion": {
-    "rectOverlap": 12348,
+    "rectOverlap": 4134.375,
     "covered": {}
    }
   },
   "ipad-portrait/alles": {
    "frame": {
     "viewBox": "27 0 863 1235",
-    "mask": "linear-gradient(90deg, rgba(0, 0, 0, 0), rgb(0, 0, 0) 4%, rgb(0, 0, 0) 96%, rgba(0, 0, 0, 0)), linear-gradient(rgba(0, 0, 0, 0), rgb(0, 0, 0) 4%, rgb(0, 0, 0) 9",
+    "mask": "none",
     "kept": {
      "Frankrijk": 1,
      "Zwitserland": 1,
@@ -539,7 +539,6 @@
      "Kroatië": 1,
      "Sardinië": 1,
      "Sicilië": 1,
-     "label DUITSLAND": 1,
      "label HONGARIJE": 1,
      "label BOSNIË": 1,
      "zee 1": 1,
@@ -550,6 +549,7 @@
      "Noord-Afrika": 1
     },
     "outOfFrame": [
+     "label DUITSLAND",
      "label TUNESIË"
     ],
     "visible": [
@@ -562,7 +562,6 @@
      "Slovenië",
      "Zwitserland",
      "label BOSNIË",
-     "label DUITSLAND",
      "label HONGARIJE",
      "zee 1",
      "zee 2",
@@ -607,7 +606,7 @@
   "ipad-landscape/nieuw": {
    "frame": {
     "viewBox": "27 0 863 1235",
-    "mask": "linear-gradient(90deg, rgba(0, 0, 0, 0), rgb(0, 0, 0) 4%, rgb(0, 0, 0) 96%, rgba(0, 0, 0, 0)), linear-gradient(rgba(0, 0, 0, 0), rgb(0, 0, 0) 4%, rgb(0, 0, 0) 9",
+    "mask": "none",
     "kept": {
      "Frankrijk": 1,
      "Zwitserland": 1,
@@ -681,7 +680,7 @@
   "ipad-landscape/bezig": {
    "frame": {
     "viewBox": "27 0 863 1235",
-    "mask": "linear-gradient(90deg, rgba(0, 0, 0, 0), rgb(0, 0, 0) 4%, rgb(0, 0, 0) 96%, rgba(0, 0, 0, 0)), linear-gradient(rgba(0, 0, 0, 0), rgb(0, 0, 0) 4%, rgb(0, 0, 0) 9",
+    "mask": "none",
     "kept": {
      "Frankrijk": 1,
      "Zwitserland": 1,
@@ -755,7 +754,7 @@
   "ipad-landscape/afgerond": {
    "frame": {
     "viewBox": "27 0 863 1235",
-    "mask": "linear-gradient(90deg, rgba(0, 0, 0, 0), rgb(0, 0, 0) 4%, rgb(0, 0, 0) 96%, rgba(0, 0, 0, 0)), linear-gradient(rgba(0, 0, 0, 0), rgb(0, 0, 0) 4%, rgb(0, 0, 0) 9",
+    "mask": "none",
     "kept": {
      "Frankrijk": 1,
      "Zwitserland": 1,
@@ -829,7 +828,7 @@
   "ipad-landscape/alles": {
    "frame": {
     "viewBox": "27 0 863 1235",
-    "mask": "linear-gradient(90deg, rgba(0, 0, 0, 0), rgb(0, 0, 0) 4%, rgb(0, 0, 0) 96%, rgba(0, 0, 0, 0)), linear-gradient(rgba(0, 0, 0, 0), rgb(0, 0, 0) 4%, rgb(0, 0, 0) 9",
+    "mask": "none",
     "kept": {
      "Frankrijk": 1,
      "Zwitserland": 1,
@@ -903,7 +902,7 @@
   "phone/nieuw": {
    "frame": {
     "viewBox": "0 93 890 1024",
-    "mask": "linear-gradient(90deg, rgba(0, 0, 0, 0), rgb(0, 0, 0) 4%, rgb(0, 0, 0) 96%, rgba(0, 0, 0, 0)), linear-gradient(rgba(0, 0, 0, 0), rgb(0, 0, 0) 4%, rgb(0, 0, 0) 9",
+    "mask": "none",
     "kept": {
      "Frankrijk": 1,
      "Zwitserland": 1,
@@ -976,7 +975,7 @@
   "phone/bezig": {
    "frame": {
     "viewBox": "0 93 890 1024",
-    "mask": "linear-gradient(90deg, rgba(0, 0, 0, 0), rgb(0, 0, 0) 4%, rgb(0, 0, 0) 96%, rgba(0, 0, 0, 0)), linear-gradient(rgba(0, 0, 0, 0), rgb(0, 0, 0) 4%, rgb(0, 0, 0) 9",
+    "mask": "none",
     "kept": {
      "Frankrijk": 1,
      "Zwitserland": 1,
@@ -1049,7 +1048,7 @@
   "phone/afgerond": {
    "frame": {
     "viewBox": "0 93 890 1024",
-    "mask": "linear-gradient(90deg, rgba(0, 0, 0, 0), rgb(0, 0, 0) 4%, rgb(0, 0, 0) 96%, rgba(0, 0, 0, 0)), linear-gradient(rgba(0, 0, 0, 0), rgb(0, 0, 0) 4%, rgb(0, 0, 0) 9",
+    "mask": "none",
     "kept": {
      "Frankrijk": 1,
      "Zwitserland": 1,
@@ -1122,7 +1121,7 @@
   "phone/alles": {
    "frame": {
     "viewBox": "0 93 890 1024",
-    "mask": "linear-gradient(90deg, rgba(0, 0, 0, 0), rgb(0, 0, 0) 4%, rgb(0, 0, 0) 96%, rgba(0, 0, 0, 0)), linear-gradient(rgba(0, 0, 0, 0), rgb(0, 0, 0) 4%, rgb(0, 0, 0) 9",
+    "mask": "none",
     "kept": {
      "Frankrijk": 1,
      "Zwitserland": 1,
@@ -1195,7 +1194,7 @@
   "phone-small/nieuw": {
    "frame": {
     "viewBox": "0 93 890 1024",
-    "mask": "linear-gradient(90deg, rgba(0, 0, 0, 0), rgb(0, 0, 0) 4%, rgb(0, 0, 0) 96%, rgba(0, 0, 0, 0)), linear-gradient(rgba(0, 0, 0, 0), rgb(0, 0, 0) 4%, rgb(0, 0, 0) 9",
+    "mask": "none",
     "kept": {
      "Frankrijk": 1,
      "Zwitserland": 1,
@@ -1268,7 +1267,7 @@
   "phone-small/bezig": {
    "frame": {
     "viewBox": "0 93 890 1024",
-    "mask": "linear-gradient(90deg, rgba(0, 0, 0, 0), rgb(0, 0, 0) 4%, rgb(0, 0, 0) 96%, rgba(0, 0, 0, 0)), linear-gradient(rgba(0, 0, 0, 0), rgb(0, 0, 0) 4%, rgb(0, 0, 0) 9",
+    "mask": "none",
     "kept": {
      "Frankrijk": 1,
      "Zwitserland": 1,
@@ -1341,7 +1340,7 @@
   "phone-small/afgerond": {
    "frame": {
     "viewBox": "0 93 890 1024",
-    "mask": "linear-gradient(90deg, rgba(0, 0, 0, 0), rgb(0, 0, 0) 4%, rgb(0, 0, 0) 96%, rgba(0, 0, 0, 0)), linear-gradient(rgba(0, 0, 0, 0), rgb(0, 0, 0) 4%, rgb(0, 0, 0) 9",
+    "mask": "none",
     "kept": {
      "Frankrijk": 1,
      "Zwitserland": 1,
@@ -1414,7 +1413,7 @@
   "phone-small/alles": {
    "frame": {
     "viewBox": "0 93 890 1024",
-    "mask": "linear-gradient(90deg, rgba(0, 0, 0, 0), rgb(0, 0, 0) 4%, rgb(0, 0, 0) 96%, rgba(0, 0, 0, 0)), linear-gradient(rgba(0, 0, 0, 0), rgb(0, 0, 0) 4%, rgb(0, 0, 0) 9",
+    "mask": "none",
     "kept": {
      "Frankrijk": 1,
      "Zwitserland": 1,
@@ -1515,9 +1514,9 @@
    },
    "backVia": "v3Btn v3NavItem",
    "primaryLabelWithActive": "Ga verder · Ontdekken",
-   "questionBefore": "city-12",
+   "questionBefore": "city-11",
    "reisVerderSameQuestion": {
-    "id": "city-12",
+    "id": "city-11",
     "chapter": "city2",
     "kind": "discover"
    },
@@ -1791,59 +1790,59 @@
    "covered": {}
   },
   "ipad-portrait/islands/schoolkaart": {
-   "rectOverlap": 12348,
+   "rectOverlap": 4134.375,
    "covered": {}
   },
   "ipad-portrait/islands/reliëf": {
-   "rectOverlap": 12348,
+   "rectOverlap": 4134.375,
    "covered": {}
   },
   "ipad-portrait/mountains/schoolkaart": {
-   "rectOverlap": 12348,
+   "rectOverlap": 0,
    "covered": {}
   },
   "ipad-portrait/mountains/reliëf": {
-   "rectOverlap": 12348,
+   "rectOverlap": 0,
    "covered": {}
   },
   "ipad-portrait/volcanoes/schoolkaart": {
-   "rectOverlap": 12348,
+   "rectOverlap": 0,
    "covered": {}
   },
   "ipad-portrait/volcanoes/reliëf": {
-   "rectOverlap": 12348,
+   "rectOverlap": 0,
    "covered": {}
   },
   "ipad-portrait/regions/schoolkaart": {
-   "rectOverlap": 12348,
+   "rectOverlap": 0,
    "covered": {}
   },
   "ipad-portrait/regions/reliëf": {
-   "rectOverlap": 12348,
+   "rectOverlap": 0,
    "covered": {}
   },
   "ipad-portrait/countries/schoolkaart": {
-   "rectOverlap": 12348,
+   "rectOverlap": 0,
    "covered": {}
   },
   "ipad-portrait/countries/reliëf": {
-   "rectOverlap": 12348,
+   "rectOverlap": 0,
    "covered": {}
   },
   "ipad-portrait/seas/schoolkaart": {
-   "rectOverlap": 12348,
+   "rectOverlap": 0,
    "covered": {}
   },
   "ipad-portrait/seas/reliëf": {
-   "rectOverlap": 12348,
+   "rectOverlap": 0,
    "covered": {}
   },
   "ipad-portrait/rivers/schoolkaart": {
-   "rectOverlap": 12348,
+   "rectOverlap": 0,
    "covered": {}
   },
   "ipad-portrait/rivers/reliëf": {
-   "rectOverlap": 12348,
+   "rectOverlap": 0,
    "covered": {}
   }
  },

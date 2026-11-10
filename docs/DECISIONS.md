@@ -471,3 +471,16 @@ Review-fix 3 (ook in `DESIGN_AUDIT_V3_0.md`: "het dubbele label weg"). In de ken
   - welkom bij de kennismaking;
   - eventueel bij lege staten.
 - **Assets:** zie `docs/v3/renders/README.md` › Nieuw artwork.
+
+## 2026-11-10 — Twee werelden: app in violet glas, Reisboekje als papierwereld (lead designer)
+
+- **App** (alle schermen, het frame en de lessen): violet glas volgens `docs/v3/renders/README.md`. Violet primair, de inkt als tekstkleur, het artwork als kleurbron. Geen terracotta in de UI.
+- **Reisboekje** (het opengeklapte boek, stempels, postkaarten, het omslag B): een papierwereld met perkament en crème, aardetinten (oker, olijf, terracotta, diepgroen), een schreeftype of handschriftaccent voor titels, en een getekende of gegraveerde stijl in de geest van Da Vinci.
+- **Waarom:**
+  - een kleur werkt alleen binnen haar systeem: terracotta is een accent op papier, en wordt baksteen- of waarschuwingsrood op glas;
+  - het contrast maakt het boek tot een beloning: wie het opent, stapt in een warmere wereld;
+  - de app blijft rustig en gericht op het leren.
+- **Grens:**
+  - in de appwereld gebruiken we alleen de echte objecten (het omslag, het stempel-icoon, de postkaart) als artwork;
+  - in de papierwereld verschijnen geen glas en geen violet, behalve de sluitknop en de focusring, die in de app-stijl blijven omdat ze bij de bediening horen.
+- **Herkomst:** de vergelijking met het eerdere concept "Vernieuwde interface" (atlas, perkament, diepgroen primair, terracotta accent). Daarvan nemen we de warmte over in het boek, niet de drukte (tagline, hulpteksten, veel blokken).

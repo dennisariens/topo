@@ -89,6 +89,23 @@ De eigenaar vond `R-voortgang-doel.webp` het sterkst; ter vergelijking staan `R-
 
 De QA-check "geen paneel breder dan 70%" geldt alleen voor Landschap. Voor Werkblad geldt: het artwork blijft zichtbaar op ≥ 12% van de viewport.
 
+### Voortgang, bijstelling (eigenaar, 10-11, na fase A)
+
+Fase A gaf alleen frame, glas en kleur; Voortgang oogt daardoor nog kaal. Het doel wordt een **mix**:
+- **uit `R-voortgang-doel`:** het raster, de lucht, de kaartkaart met het getal, de rustige inkt;
+- **uit `R-voortgang`:** de levendigheid.
+
+Uit `R-voortgang` nemen we over:
+- **hoofdstukrijen met de echte hoofdstukfoto** (dit vervangt "geen foto's"), een dikke ronde voortgangsbalk en een **status-illustratie**: de gouden lauwerkrans (IC-gold) voor goud, het groene vinkje voor klaar, de pizzapunt (IC-slice) voor bezig, het slotje voor nog dicht;
+- **de kaart groot** en de beheersingskleuren verzadigd: diep violet, lavendel en crème. Gekleurd worden de 45 plekken, niet de regio's;
+- **Dagdoel als stippenrij** (3 van 8 gevuld) met een lijnicoon;
+- **de titelbalk:** "Voortgang" en "23 / 45" groot op één lijn, met een brede balk.
+
+Wat **niet** meekomt:
+- de violette display-tekst (de inkt blijft);
+- de decoratieve streepjes;
+- de 3D-zwaarte in de nav.
+
 ## Raster en uitlijning (eigenaar, 10-11, naar `R-voortgang-doel`)
 
 De kracht van het doelbeeld is de uitlijning. Die geldt voor alle schermen:

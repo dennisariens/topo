@@ -118,7 +118,10 @@
  const shareText=r=>'Ik heb de NINO-toets Topografie Italië gemaakt.\nOnderwerp: '+(r.chapters.length===chapterIds.length?'Alles':r.chapters.map(title).join(', '))+'\nScore: '+r.correct+' van '+r.total+' goed.';
  function mistakeList(r){
   const ul=make('ul','v3ToetsFouten');
-  for(const x of r.items.filter(x=>!x.ok)){const li=make('li');li.append(make('strong',null,byId[x.id].name),make('span',null,x.given?'jij: '+x.given:'overgeslagen'));ul.append(li);}
+  for(const x of r.items.filter(x=>!x.ok)){const li=make('li');li.append(make('strong',null,byId[x.id].name));
+   // Aanwijzen: nothing after the place; Namen schrijven: only what was typed; no answer: "overgeslagen".
+   if(!x.given)li.append(make('span',null,'overgeslagen'));else if(x.mode==='write')li.append(make('span',null,x.given));
+   ul.append(li);}
   return ul;
  }
  let mapSvg=null;

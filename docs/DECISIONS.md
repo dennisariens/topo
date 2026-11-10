@@ -404,7 +404,7 @@ Reservekopieën en reset horen in het algemene instellingenmenu. Wis voortgang b
 - **Resultaat:** V3 toont het in plaats van de V2-dialoog `.ninoExamResult`, die tijdens een V3-toets niet opent. Het resultaat bestaat uit:
   - de score (V2 `examCorrect` / `examTotal`) en één Nino-pose (V2 `TopoArt`: `success` bij alles goed, anders `encourage`);
   - de echte kaart met ✓/× per gevraagde plek, met de naam bij ×;
-  - de foutenlijst met het eigen antwoord of "overgeslagen";
+  - de foutenlijst: bij Aanwijzen alleen de plek, bij Namen schrijven de plek met het getypte antwoord, zonder antwoord "overgeslagen" (review-fix 10 november; geldt ook voor het printblad);
   - **Oefen deze fouten**, dat de bestaande V2-groep "Mijn fouten" opent;
   - Kopieer en E-mail, met dezelfde tekst als V2 maar de echte hoofdstukken als onderwerp;
   - **Print**, een A4-blad met naam, datum, score, kaart en fouten.

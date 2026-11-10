@@ -12,6 +12,7 @@ Gecontroleerd op vijf formaten, met de demo `#afgerond`:
   - Bovenaan staat alleen `n / 10`.
   - Er zijn geen hints, geen Oefen fouten, geen pizzameter en geen schoolblad.
   - Er wordt met echte toetsen en klikken geantwoord: 7 goed, 2 fout (aanwijzen of typen) en 1 overgeslagen.
+  - Foutenlijst (review-fix 10 november): bij Aanwijzen alleen de plek, bij Namen schrijven de plek met het getypte antwoord (geen "jij:"), zonder antwoord "overgeslagen". Over de vijf viewports komen alle drie de soorten voor; het printblad bevat geen "jij".
 - **Geen beloningen.**
   - Pizzapunten, pizza's, ritten en de V2-teller `good` blijven gelijk.
   - Er opent geen beloningsdialoog en ook niet de V2-resultaatdialoog.

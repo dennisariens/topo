@@ -4,6 +4,8 @@ Branch `codex/topo-v3` vanaf de V2-afsluiting `f53dc0b` (voorouder `v2.0.2` = `8
 
 **V3.0 deel 5 — Kennismaking** (9 november): de V2-eerste-keerdialoog is één V3-scène met welkomstpose, naam, favoriete pizza, Andiamo! en Start meteen; de hulpteksten zijn weg. Daarna opent Reis met hoofdstuk 1. Profielschema 1 en de V2-regel voor het eenmalig opnieuw aanbieden blijven gelijk. Preview-demo `#welkom`. [Bewijs](qa/v3-kennismaking/README.md).
 
+**V3.0 review-fixes** (10 november, één commit per punt): (1) toetsfouten zonder "jij:", bij Aanwijzen alleen de plek. [Bewijs](qa/v3-toets/README.md).
+
 **V3.0 compleet op `codex/topo-v3`** (5 commits, één per onderdeel). Klaar voor de Hermes-hertest op #76. Geen merge of deployment.
 
 **V3.0 deel 4 — Voortgang** (9 november): toont `n / 45 plekken` met een balk en de echte kaart, gekleurd naar beheersing (beheerst, bezig, nog niet; drempel in DECISIONS). Daaronder staan de 11 hoofdstukken met lesstaven, ✓ en ★, het dagdoel, het V2-kennis-paspoort (verplaatst) en de laatste 10 toetsuitslagen; er is geen streak. [Bewijs](qa/v3-voortgang/README.md).

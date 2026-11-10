@@ -1,6 +1,6 @@
 {
  "html": "output/html/TOPO-V3-Reis-Preview.html",
- "sha256": "6f6f94c924a7fe211b18893dff20933795b6a393846121c0117c88a21fcf42e8",
+ "sha256": "c53674b4f97be270d2a7eb939657bb68adecd128d698727a19a7c3ba14b959ff",
  "indexSha256": "3aced3c31259011b0af2947c78f71965cb4beb2e88c69d1663e61792b0304f5a",
  "runs": {
   "desktop": {
@@ -32,7 +32,7 @@
     "tab": "toets",
     "type": "exam",
     "count": "1 / 10",
-    "q": "city-11",
+    "q": "city-18",
     "qmode": "point",
     "answered": false,
     "examTotal": 10,
@@ -55,23 +55,31 @@
     "marks": 10,
     "bad": [
      {
+      "id": "city-9",
+      "name": "Rome"
+     },
+     {
       "id": "city-17",
       "name": "Foggia"
      },
      {
-      "id": "city-16",
-      "name": "Catanzaro"
-     },
-     {
-      "id": "city-23",
-      "name": "Triëst"
+      "id": "city-4",
+      "name": "Genua"
      }
     ],
     "marksOnMap": true,
     "fouten": [
-     "Foggiajij: Fout",
-     "Catanzarojij: Fout",
-     "Triëstovergeslagen"
+     [
+      "Rome",
+      "Fout"
+     ],
+     [
+      "Foggia"
+     ],
+     [
+      "Genua",
+      "overgeslagen"
+     ]
     ],
     "actions": [
      "Oefen deze fouten",
@@ -85,7 +93,7 @@
      "schema": 1,
      "results": [
       {
-       "at": "2026-11-10T00:21:02.656Z",
+       "at": "2026-11-10T05:23:08.483Z",
        "chapters": [
         "city1",
         "city2",
@@ -98,15 +106,42 @@
        "correct": 7,
        "items": [
         {
-         "id": "city-11",
+         "id": "city-18",
          "mode": "point",
          "ok": true
         },
         {
-         "id": "city-17",
+         "id": "city-9",
          "mode": "write",
          "ok": false,
          "given": "Fout"
+        },
+        {
+         "id": "city-20",
+         "mode": "point",
+         "ok": true
+        },
+        {
+         "id": "city-22",
+         "mode": "write",
+         "ok": true
+        },
+        {
+         "id": "city-17",
+         "mode": "point",
+         "ok": false,
+         "given": "Turijn"
+        },
+        {
+         "id": "city-3",
+         "mode": "write",
+         "ok": true
+        },
+        {
+         "id": "city-4",
+         "mode": "write",
+         "ok": false,
+         "given": null
         },
         {
          "id": "city-2",
@@ -114,39 +149,12 @@
          "ok": true
         },
         {
-         "id": "city-12",
-         "mode": "write",
-         "ok": true
-        },
-        {
-         "id": "city-16",
-         "mode": "write",
-         "ok": false,
-         "given": "Fout"
-        },
-        {
-         "id": "city-18",
+         "id": "city-7",
          "mode": "point",
          "ok": true
         },
         {
-         "id": "city-23",
-         "mode": "point",
-         "ok": false,
-         "given": null
-        },
-        {
-         "id": "city-20",
-         "mode": "write",
-         "ok": true
-        },
-        {
-         "id": "city-19",
-         "mode": "point",
-         "ok": true
-        },
-        {
-         "id": "city-13",
+         "id": "city-10",
          "mode": "write",
          "ok": true
         }
@@ -173,14 +181,39 @@
    },
    "answers": [
     [
-     "city-11",
+     "city-18",
      "point",
      "ok"
     ],
     [
-     "city-17",
+     "city-9",
      "write",
      "wrong"
+    ],
+    [
+     "city-20",
+     "point",
+     "ok"
+    ],
+    [
+     "city-22",
+     "write",
+     "ok"
+    ],
+    [
+     "city-17",
+     "point",
+     "wrong"
+    ],
+    [
+     "city-3",
+     "write",
+     "ok"
+    ],
+    [
+     "city-4",
+     "write",
+     "skip"
     ],
     [
      "city-2",
@@ -188,40 +221,33 @@
      "ok"
     ],
     [
-     "city-12",
-     "write",
-     "ok"
-    ],
-    [
-     "city-16",
-     "write",
-     "wrong"
-    ],
-    [
-     "city-18",
+     "city-7",
      "point",
      "ok"
     ],
     [
-     "city-23",
-     "point",
-     "skip"
-    ],
-    [
-     "city-20",
-     "write",
-     "ok"
-    ],
-    [
-     "city-19",
-     "point",
-     "ok"
-    ],
-    [
-     "city-13",
+     "city-10",
      "write",
      "ok"
     ]
+   ],
+   "foutenExpect": [
+    [
+     "Rome",
+     "Fout"
+    ],
+    [
+     "Foggia"
+    ],
+    [
+     "Genua",
+     "overgeslagen"
+    ]
+   ],
+   "foutenKinds": [
+    "point",
+    "skip",
+    "write"
    ],
    "export": {
     "keys": [
@@ -245,13 +271,13 @@
    "max10": {
     "count": 10,
     "first": [
-     "2026-11-10T00:21:13.336Z",
+     "2026-11-10T05:23:19.065Z",
      0
     ]
    },
    "print": {
     "printed": 1,
-    "text": "Toets Topografie ItaliëNaam: Demo10 november 20260 van 10 goedSteden 1–6 · Steden 7–12 · Extra steden 13–18 · Extra steden 19–23\n\n  \n  \n  \n  \n  \n  \n\nI T A L I ËDUITSLANDTSJECHIËSLOWAKIJEHONGARIJEBOSNIËTUNESIË▲▲×Venetië×Catanzaro×Verona×Varese×Genua×Modena×La Spezia×Bologna×Messina×CagliariFoutenVenetiëovergeslagenCatanzaroovergeslagenVeronaovergeslagenVareseovergeslagenGenuaovergeslagenModenaovergeslagenLa SpeziaovergeslagenBolognaovergeslagenMessinaovergeslagenCagliariovergeslagen",
+    "text": "Toets Topografie ItaliëNaam: Demo10 november 20260 van 10 goedSteden 1–6 · Steden 7–12 · Extra steden 13–18 · Extra steden 19–23\n\n  \n  \n  \n  \n  \n  \n\nI T A L I ËDUITSLANDTSJECHIËSLOWAKIJEHONGARIJEBOSNIËTUNESIË▲▲×Bari×Palermo×Cagliari×Bologna×Foggia×Napels×Verona×La Spezia×Messina×GenuaFoutenBariovergeslagenPalermoovergeslagenCagliariovergeslagenBolognaovergeslagenFoggiaovergeslagenNapelsovergeslagenVeronaovergeslagenLa SpeziaovergeslagenMessinaovergeslagenGenuaovergeslagen",
     "map": true,
     "marks": 10
    },
@@ -309,23 +335,31 @@
     "marks": 10,
     "bad": [
      {
-      "id": "city-2",
-      "name": "Bologna"
+      "id": "city-19",
+      "name": "Messina"
      },
      {
-      "id": "city-8",
-      "name": "Pisa"
+      "id": "city-16",
+      "name": "Catanzaro"
      },
      {
-      "id": "city-14",
-      "name": "Cagliari"
+      "id": "city-1",
+      "name": "Bari"
      }
     ],
     "marksOnMap": true,
     "fouten": [
-     "Bolognajij: Triëst",
-     "Pisajij: Triëst",
-     "Cagliariovergeslagen"
+     [
+      "Messina"
+     ],
+     [
+      "Catanzaro",
+      "Fout"
+     ],
+     [
+      "Bari",
+      "overgeslagen"
+     ]
     ],
     "actions": [
      "Oefen deze fouten",
@@ -339,7 +373,7 @@
      "schema": 1,
      "results": [
       {
-       "at": "2026-11-10T00:21:26.251Z",
+       "at": "2026-11-10T05:23:32.063Z",
        "chapters": [
         "city1",
         "city2",
@@ -357,50 +391,50 @@
          "ok": true
         },
         {
-         "id": "city-2",
+         "id": "city-19",
          "mode": "point",
          "ok": false,
-         "given": "Triëst"
-        },
-        {
-         "id": "city-1",
-         "mode": "write",
-         "ok": true
-        },
-        {
-         "id": "city-7",
-         "mode": "point",
-         "ok": true
-        },
-        {
-         "id": "city-8",
-         "mode": "point",
-         "ok": false,
-         "given": "Triëst"
-        },
-        {
-         "id": "city-23",
-         "mode": "write",
-         "ok": true
+         "given": "Varese"
         },
         {
          "id": "city-14",
          "mode": "write",
+         "ok": true
+        },
+        {
+         "id": "city-9",
+         "mode": "point",
+         "ok": true
+        },
+        {
+         "id": "city-16",
+         "mode": "write",
+         "ok": false,
+         "given": "Fout"
+        },
+        {
+         "id": "city-8",
+         "mode": "point",
+         "ok": true
+        },
+        {
+         "id": "city-1",
+         "mode": "point",
          "ok": false,
          "given": null
         },
         {
-         "id": "city-22",
+         "id": "city-2",
+         "mode": "write",
+         "ok": true
+        },
+        {
+         "id": "city-13",
          "mode": "point",
          "ok": true
         },
         {
-         "id": "city-19",
-         "mode": "point",
-         "ok": true
-        },
-        {
-         "id": "city-3",
+         "id": "city-7",
          "mode": "write",
          "ok": true
         }
@@ -432,50 +466,68 @@
      "ok"
     ],
     [
-     "city-2",
+     "city-19",
      "point",
      "wrong"
-    ],
-    [
-     "city-1",
-     "write",
-     "ok"
-    ],
-    [
-     "city-7",
-     "point",
-     "ok"
-    ],
-    [
-     "city-8",
-     "point",
-     "wrong"
-    ],
-    [
-     "city-23",
-     "write",
-     "ok"
     ],
     [
      "city-14",
      "write",
+     "ok"
+    ],
+    [
+     "city-9",
+     "point",
+     "ok"
+    ],
+    [
+     "city-16",
+     "write",
+     "wrong"
+    ],
+    [
+     "city-8",
+     "point",
+     "ok"
+    ],
+    [
+     "city-1",
+     "point",
      "skip"
     ],
     [
-     "city-22",
+     "city-2",
+     "write",
+     "ok"
+    ],
+    [
+     "city-13",
      "point",
      "ok"
     ],
     [
-     "city-19",
-     "point",
-     "ok"
-    ],
-    [
-     "city-3",
+     "city-7",
      "write",
      "ok"
     ]
+   ],
+   "foutenExpect": [
+    [
+     "Messina"
+    ],
+    [
+     "Catanzaro",
+     "Fout"
+    ],
+    [
+     "Bari",
+     "overgeslagen"
+    ]
+   ],
+   "foutenKinds": [
+    "point",
+    "skip",
+    "write"
    ],
    "oefen": {
     "mode": "point",
@@ -513,7 +565,7 @@
     "tab": "toets",
     "type": "exam",
     "count": "1 / 10",
-    "q": "city-19",
+    "q": "city-15",
     "qmode": "point",
     "answered": false,
     "examTotal": 10,
@@ -536,23 +588,32 @@
     "marks": 10,
     "bad": [
      {
-      "id": "city-2",
-      "name": "Bologna"
+      "id": "city-12",
+      "name": "Verona"
      },
      {
-      "id": "city-9",
-      "name": "Rome"
+      "id": "city-22",
+      "name": "Trente"
      },
      {
-      "id": "city-4",
-      "name": "Genua"
+      "id": "city-17",
+      "name": "Foggia"
      }
     ],
     "marksOnMap": true,
     "fouten": [
-     "Bolognajij: Fout",
-     "Romejij: Fout",
-     "Genuaovergeslagen"
+     [
+      "Verona",
+      "Fout"
+     ],
+     [
+      "Trente",
+      "Fout"
+     ],
+     [
+      "Foggia",
+      "overgeslagen"
+     ]
     ],
     "actions": [
      "Oefen deze fouten",
@@ -566,7 +627,7 @@
      "schema": 1,
      "results": [
       {
-       "at": "2026-11-10T00:21:39.541Z",
+       "at": "2026-11-10T05:23:45.351Z",
        "chapters": [
         "city1",
         "city2",
@@ -579,55 +640,55 @@
        "correct": 7,
        "items": [
         {
-         "id": "city-19",
+         "id": "city-15",
          "mode": "point",
          "ok": true
         },
         {
-         "id": "city-2",
+         "id": "city-12",
          "mode": "write",
          "ok": false,
          "given": "Fout"
         },
         {
-         "id": "city-11",
+         "id": "city-13",
          "mode": "point",
-         "ok": true
-        },
-        {
-         "id": "city-8",
-         "mode": "write",
          "ok": true
         },
         {
          "id": "city-9",
          "mode": "write",
+         "ok": true
+        },
+        {
+         "id": "city-22",
+         "mode": "write",
          "ok": false,
          "given": "Fout"
         },
         {
-         "id": "city-17",
+         "id": "city-21",
          "mode": "point",
          "ok": true
         },
         {
-         "id": "city-4",
+         "id": "city-17",
          "mode": "point",
          "ok": false,
          "given": null
         },
         {
-         "id": "city-5",
+         "id": "city-10",
          "mode": "write",
          "ok": true
         },
         {
-         "id": "city-7",
+         "id": "city-5",
          "mode": "point",
          "ok": true
         },
         {
-         "id": "city-6",
+         "id": "city-18",
          "mode": "write",
          "ok": true
         }
@@ -654,55 +715,73 @@
    },
    "answers": [
     [
-     "city-19",
+     "city-15",
      "point",
      "ok"
     ],
     [
-     "city-2",
+     "city-12",
      "write",
      "wrong"
     ],
     [
-     "city-11",
+     "city-13",
      "point",
-     "ok"
-    ],
-    [
-     "city-8",
-     "write",
      "ok"
     ],
     [
      "city-9",
      "write",
+     "ok"
+    ],
+    [
+     "city-22",
+     "write",
      "wrong"
+    ],
+    [
+     "city-21",
+     "point",
+     "ok"
     ],
     [
      "city-17",
      "point",
-     "ok"
-    ],
-    [
-     "city-4",
-     "point",
      "skip"
     ],
     [
-     "city-5",
+     "city-10",
      "write",
      "ok"
     ],
     [
-     "city-7",
+     "city-5",
      "point",
      "ok"
     ],
     [
-     "city-6",
+     "city-18",
      "write",
      "ok"
     ]
+   ],
+   "foutenExpect": [
+    [
+     "Verona",
+     "Fout"
+    ],
+    [
+     "Trente",
+     "Fout"
+    ],
+    [
+     "Foggia",
+     "overgeslagen"
+    ]
+   ],
+   "foutenKinds": [
+    "skip",
+    "write"
    ],
    "oefen": {
     "mode": "point",
@@ -740,8 +819,8 @@
     "tab": "toets",
     "type": "exam",
     "count": "1 / 10",
-    "q": "city-4",
-    "qmode": "point",
+    "q": "city-9",
+    "qmode": "write",
     "answered": false,
     "examTotal": 10,
     "examAnswered": 0,
@@ -763,23 +842,31 @@
     "marks": 10,
     "bad": [
      {
-      "id": "city-19",
-      "name": "Messina"
+      "id": "city-7",
+      "name": "Palermo"
      },
      {
-      "id": "city-6",
-      "name": "Napels"
+      "id": "city-12",
+      "name": "Verona"
      },
      {
-      "id": "city-20",
-      "name": "Modena"
+      "id": "city-3",
+      "name": "Florence"
      }
     ],
     "marksOnMap": true,
     "fouten": [
-     "Messinajij: Fout",
-     "Napelsjij: Fout",
-     "Modenaovergeslagen"
+     [
+      "Palermo"
+     ],
+     [
+      "Verona",
+      "Fout"
+     ],
+     [
+      "Florence",
+      "overgeslagen"
+     ]
     ],
     "actions": [
      "Oefen deze fouten",
@@ -793,7 +880,7 @@
      "schema": 1,
      "results": [
       {
-       "at": "2026-11-10T00:21:52.733Z",
+       "at": "2026-11-10T05:23:58.597Z",
        "chapters": [
         "city1",
         "city2",
@@ -806,15 +893,42 @@
        "correct": 7,
        "items": [
         {
-         "id": "city-4",
+         "id": "city-9",
+         "mode": "write",
+         "ok": true
+        },
+        {
+         "id": "city-7",
+         "mode": "point",
+         "ok": false,
+         "given": "Triëst"
+        },
+        {
+         "id": "city-13",
          "mode": "point",
          "ok": true
         },
         {
-         "id": "city-19",
+         "id": "city-6",
+         "mode": "write",
+         "ok": true
+        },
+        {
+         "id": "city-12",
          "mode": "write",
          "ok": false,
          "given": "Fout"
+        },
+        {
+         "id": "city-22",
+         "mode": "point",
+         "ok": true
+        },
+        {
+         "id": "city-3",
+         "mode": "point",
+         "ok": false,
+         "given": null
         },
         {
          "id": "city-23",
@@ -822,40 +936,13 @@
          "ok": true
         },
         {
-         "id": "city-14",
-         "mode": "point",
-         "ok": true
-        },
-        {
-         "id": "city-6",
-         "mode": "write",
-         "ok": false,
-         "given": "Fout"
-        },
-        {
-         "id": "city-1",
-         "mode": "point",
-         "ok": true
-        },
-        {
          "id": "city-20",
          "mode": "point",
-         "ok": false,
-         "given": null
-        },
-        {
-         "id": "city-22",
-         "mode": "write",
          "ok": true
         },
         {
-         "id": "city-18",
+         "id": "city-16",
          "mode": "write",
-         "ok": true
-        },
-        {
-         "id": "city-10",
-         "mode": "point",
          "ok": true
         }
        ]
@@ -881,14 +968,39 @@
    },
    "answers": [
     [
-     "city-4",
+     "city-9",
+     "write",
+     "ok"
+    ],
+    [
+     "city-7",
+     "point",
+     "wrong"
+    ],
+    [
+     "city-13",
      "point",
      "ok"
     ],
     [
-     "city-19",
+     "city-6",
+     "write",
+     "ok"
+    ],
+    [
+     "city-12",
      "write",
      "wrong"
+    ],
+    [
+     "city-22",
+     "point",
+     "ok"
+    ],
+    [
+     "city-3",
+     "point",
+     "skip"
     ],
     [
      "city-23",
@@ -896,40 +1008,33 @@
      "ok"
     ],
     [
-     "city-14",
-     "point",
-     "ok"
-    ],
-    [
-     "city-6",
-     "write",
-     "wrong"
-    ],
-    [
-     "city-1",
-     "point",
-     "ok"
-    ],
-    [
      "city-20",
      "point",
-     "skip"
-    ],
-    [
-     "city-22",
-     "write",
      "ok"
     ],
     [
-     "city-18",
+     "city-16",
      "write",
-     "ok"
-    ],
-    [
-     "city-10",
-     "point",
      "ok"
     ]
+   ],
+   "foutenExpect": [
+    [
+     "Palermo"
+    ],
+    [
+     "Verona",
+     "Fout"
+    ],
+    [
+     "Florence",
+     "overgeslagen"
+    ]
+   ],
+   "foutenKinds": [
+    "point",
+    "skip",
+    "write"
    ],
    "oefen": {
     "mode": "point",
@@ -967,8 +1072,8 @@
     "tab": "toets",
     "type": "exam",
     "count": "1 / 10",
-    "q": "city-1",
-    "qmode": "write",
+    "q": "city-7",
+    "qmode": "point",
     "answered": false,
     "examTotal": 10,
     "examAnswered": 0,
@@ -990,23 +1095,32 @@
     "marks": 10,
     "bad": [
      {
-      "id": "city-10",
-      "name": "Turijn"
+      "id": "city-22",
+      "name": "Trente"
      },
      {
       "id": "city-16",
       "name": "Catanzaro"
      },
      {
-      "id": "city-8",
-      "name": "Pisa"
+      "id": "city-12",
+      "name": "Verona"
      }
     ],
     "marksOnMap": true,
     "fouten": [
-     "Turijnjij: Modena",
-     "Catanzarojij: Fout",
-     "Pisaovergeslagen"
+     [
+      "Trente",
+      "Fout"
+     ],
+     [
+      "Catanzaro",
+      "Fout"
+     ],
+     [
+      "Verona",
+      "overgeslagen"
+     ]
     ],
     "actions": [
      "Oefen deze fouten",
@@ -1020,7 +1134,7 @@
      "schema": 1,
      "results": [
       {
-       "at": "2026-11-10T00:22:05.859Z",
+       "at": "2026-11-10T05:24:11.711Z",
        "chapters": [
         "city1",
         "city2",
@@ -1033,24 +1147,24 @@
        "correct": 7,
        "items": [
         {
-         "id": "city-1",
-         "mode": "write",
+         "id": "city-7",
+         "mode": "point",
          "ok": true
         },
         {
-         "id": "city-10",
-         "mode": "point",
+         "id": "city-22",
+         "mode": "write",
          "ok": false,
-         "given": "Modena"
+         "given": "Fout"
         },
         {
-         "id": "city-21",
-         "mode": "write",
+         "id": "city-9",
+         "mode": "point",
          "ok": true
         },
         {
-         "id": "city-20",
-         "mode": "point",
+         "id": "city-3",
+         "mode": "write",
          "ok": true
         },
         {
@@ -1060,28 +1174,28 @@
          "given": "Fout"
         },
         {
-         "id": "city-19",
+         "id": "city-14",
          "mode": "point",
          "ok": true
         },
         {
-         "id": "city-8",
+         "id": "city-12",
          "mode": "write",
          "ok": false,
          "given": null
         },
         {
-         "id": "city-22",
+         "id": "city-5",
          "mode": "point",
          "ok": true
         },
         {
-         "id": "city-14",
+         "id": "city-4",
          "mode": "write",
          "ok": true
         },
         {
-         "id": "city-9",
+         "id": "city-1",
          "mode": "point",
          "ok": true
         }
@@ -1108,23 +1222,23 @@
    },
    "answers": [
     [
-     "city-1",
-     "write",
+     "city-7",
+     "point",
      "ok"
     ],
     [
-     "city-10",
-     "point",
+     "city-22",
+     "write",
      "wrong"
     ],
     [
-     "city-21",
-     "write",
+     "city-9",
+     "point",
      "ok"
     ],
     [
-     "city-20",
-     "point",
+     "city-3",
+     "write",
      "ok"
     ],
     [
@@ -1133,30 +1247,48 @@
      "wrong"
     ],
     [
-     "city-19",
+     "city-14",
      "point",
      "ok"
     ],
     [
-     "city-8",
+     "city-12",
      "write",
      "skip"
     ],
     [
-     "city-22",
+     "city-5",
      "point",
      "ok"
     ],
     [
-     "city-14",
+     "city-4",
      "write",
      "ok"
     ],
     [
-     "city-9",
+     "city-1",
      "point",
      "ok"
     ]
+   ],
+   "foutenExpect": [
+    [
+     "Trente",
+     "Fout"
+    ],
+    [
+     "Catanzaro",
+     "Fout"
+    ],
+    [
+     "Verona",
+     "overgeslagen"
+    ]
+   ],
+   "foutenKinds": [
+    "skip",
+    "write"
    ],
    "oefen": {
     "mode": "point",
@@ -1169,6 +1301,11 @@
  "errors": [],
  "summary": {
   "viewports": 5,
+  "mistakeKinds": [
+   "point",
+   "skip",
+   "write"
+  ],
   "pass": true
  }
 }

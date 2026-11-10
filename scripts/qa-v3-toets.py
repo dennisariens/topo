@@ -24,6 +24,7 @@ OUT = pathlib.Path(sys.argv[2] if len(sys.argv) > 2 else ROOT / 'docs/qa/v3-toet
 MAC_CHROME = '/Applications/Google Chrome.app/Contents/MacOS/Google Chrome'
 VIEWPORTS = {'desktop': (1440, 900), 'ipad-liggend': (1180, 820), 'ipad-staand': (820, 1180), 'telefoon': (390, 844), 'telefoon-320': (320, 640)}
 KEY = 'topo-v3-toetsen-v1'
+stored_items = lambda r: ((r['stored'] or {}).get('results') or [{}])[0].get('items', [])
 WRONG, SKIP = {2, 5}, {7}
 
 # Every dialog that opens, by name (reward moments must never appear in a toets).
@@ -52,7 +53,7 @@ RESULT_JS = '''() => { const v = document.querySelector('.v3View-toetsResult'), 
   return {score: v?.querySelector('#v3ToetsScore')?.textContent, nino: !!v?.querySelector('.v3ToetsNino *'), marks: v?.querySelectorAll('.v3Mark').length || 0,
     bad: [...(v?.querySelectorAll('.v3Mark.bad') || [])].map(m => ({id: m.dataset.id, name: m.querySelector('.v3MarkName')?.textContent})),
     marksOnMap: (() => { const svg = v?.querySelector('.v3ToetsMap'); if (!svg) return false; const b = r(svg); return [...svg.querySelectorAll('.v3Mark circle')].every(c => { const q = r(c); return q.width > 4 && q.left >= b.left - 2 && q.right <= b.right + 2 && q.top >= b.top - 2 && q.bottom <= b.bottom + 2; }); })(),
-    fouten: [...(v?.querySelectorAll('.v3ToetsFouten li') || [])].map(li => li.textContent), actions: [...(v?.querySelectorAll('.v3ToetsActions .v3Btn') || [])].filter(vis).map(b => b.textContent.trim()),
+    fouten: [...(v?.querySelectorAll('.v3ToetsFouten li') || [])].map(li => [...li.children].map(c => c.textContent)), actions: [...(v?.querySelectorAll('.v3ToetsActions .v3Btn') || [])].filter(vis).map(b => b.textContent.trim()),
     primary: v?.querySelector('.v3ToetsActions .primary')?.textContent, stored, mail: v?.querySelector('.v3ToetsMail')?.getAttribute('href') || '',
     hOverflow: document.documentElement.scrollWidth > innerWidth + 1,
     small: [...(v?.querySelectorAll('.v3Btn') || [])].filter(b => vis(b) && (r(b).height < 44 || r(b).width < 44)).map(b => b.textContent.trim())}; }''' % KEY
@@ -121,6 +122,15 @@ async def main():
             if r['score'] != '7 / 10' or not r['nino'] or r['marks'] != 10 or len(r['bad']) != 3 or not r['marksOnMap']: fail(f'result {r["score"]} nino={r["nino"]} marks={r["marks"]} bad={len(r["bad"])} onMap={r["marksOnMap"]}')
             if any(not x['name'] for x in r['bad']): fail('× without name')
             if len(r['fouten']) != 3 or r['primary'] != 'Oefen deze fouten': fail(f'fouten {r["fouten"]} primary {r["primary"]}')
+            # Per mistake: Aanwijzen → only the place; Namen schrijven → place + the typed answer (no "jij:"); no answer → "overgeslagen".
+            names = await pg.evaluate('Object.fromEntries(ITEMS.map(i => [i.id, i.name]))')
+            expect = [[names[x['id']]] + (['overgeslagen'] if not x.get('given') else [x['given']] if x['mode'] == 'write' else [])
+                      for x in ((r['stored'] or {}).get('results') or [{}])[0].get('items', []) if not x['ok']]
+            run['foutenExpect'] = expect
+            if r['fouten'] != expect: fail(f'fouten text {r["fouten"]} ≠ {expect}')
+            if any('jij' in t for li in r['fouten'] for t in li): fail('"jij:" in mistakes')
+            kinds = {('skip' if not x.get('given') else x['mode']) for x in stored_items(r) if not x['ok']}
+            run['foutenKinds'] = sorted(kinds)
             if not {'Kopieer', 'E-mail', 'Print', 'Nieuwe toets'} <= set(r['actions']): fail(f'actions {r["actions"]}')
             if 'Score%3A%207%20van%2010%20goed' not in r['mail']: fail('mail text')
             if r['hOverflow'] or r['small']: fail(f'layout overflow={r["hOverflow"]} small={r["small"]}')
@@ -162,7 +172,7 @@ async def main():
                 await click('.v3ToetsPrint'); await wait(300)
                 sheet = await pg.evaluate("(() => { const s = document.querySelector('.v3Print'); return s && {printed: window.__printed || 0, text: s.innerText, map: !!s.querySelector('svg .v3Marks'), marks: s.querySelectorAll('.v3Mark').length}; })()")
                 run['print'] = sheet
-                if not sheet or sheet['printed'] != 1 or not sheet['map'] or sheet['marks'] != 10 or '0 van 10 goed' not in sheet['text']: fail(f'print {sheet}')
+                if not sheet or sheet['printed'] != 1 or not sheet['map'] or sheet['marks'] != 10 or '0 van 10 goed' not in sheet['text'] or 'jij' in sheet['text']: fail(f'print {sheet}')
                 await pg.emulate_media(media='print'); await pg.pdf(path=str(OUT / 'print-a4.pdf'), format='A4', print_background=True)
                 await pg.emulate_media(media='screen')
                 await pg.evaluate("dispatchEvent(new Event('afterprint'))"); await wait(200)
@@ -179,8 +189,10 @@ async def main():
             res['runs'][name] = run
             await ctx.close()
         await b.close()
+    kinds = sorted({k for r in res['runs'].values() for k in r.get('foutenKinds', [])})
+    if kinds != ['point', 'skip', 'write']: fails.append(f'mistake kinds covered {kinds} (need point, write and skip)')
     res['errors'] = fails
-    res['summary'] = {'viewports': len(VIEWPORTS), 'pass': not fails}
+    res['summary'] = {'viewports': len(VIEWPORTS), 'mistakeKinds': kinds, 'pass': not fails}
     (OUT / 'results.json').write_text(json.dumps(res, indent=1, ensure_ascii=False) + '\n')
     print(json.dumps(res['summary']), *fails, sep='\n')
     sys.exit(1 if fails else 0)

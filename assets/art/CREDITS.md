@@ -7,3 +7,4 @@ Alle beelden zijn origineel gegenereerd voor TOPO; geen bestaande films, persona
 | --- | --- | --- | --- | --- |
 | `output/art/nino-op-de-scooter.webp` | — | Gegenereerd (Italië V2) | 2026-09-28 | In gebruik, referentie voor Nino |
 | `output/art/topo-italie-avontuur.webp` | — | Gegenereerd (Italië V2) | 2026-09-28 | In gebruik, stijlreferentie |
+| `assets/art/universal/nino/nino-welkom.webp` | 1a | ChatGPT (gegenereerd) | 2026-11-10 | Goedgekeurd |

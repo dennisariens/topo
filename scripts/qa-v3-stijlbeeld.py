@@ -29,7 +29,7 @@ for _id in ('SCENE-ROMA', 'SCENE-VENEZIA', 'SCENE-NAPOLI'):
 BG_SHA = {f'bg0{i}': RENDER[f'BG-0{i}']['export']['sha256'] for i in (1, 2, 3)}
 ICON_SHA = {k: RENDER['IC-' + k]['exports']['96']['sha256'] for k in ('slice', 'pizza', 'vespa', 'gold', 'stamp', 'postcard')}
 RELIEF_PROV = json.loads((ROOT / 'assets/discovery/terrain-z8-render-provenance.json').read_text())
-RELIEF_SHA = {'terrain': RELIEF_PROV['output']['sha256'], **{l['role']: l['sha256'] for l in RELIEF_PROV['pipeline']['decorative_layers']}}
+RELIEF_SHA = {'terrain': json.loads((ROOT / 'assets/v3/relief-r2-provenance.json').read_text())['output']['sha256'], **{l['role']: l['sha256'] for l in RELIEF_PROV['pipeline']['decorative_layers']}}
 MAC_CHROME = '/Applications/Google Chrome.app/Contents/MacOS/Google Chrome'
 RENDERS_DIR = Path(os.environ.get('RENDERS_DIR', Path.home() / 'Downloads'))
 RENDERS = {  # the owner's five concept renders (9 November 2026), the target images

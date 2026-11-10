@@ -128,7 +128,7 @@
   defs.innerHTML='<clipPath id="'+prefix+'italyClip"><path d="'+d+'"/></clipPath>'
    +'<filter id="'+prefix+'isleShadow" x="-20%" y="-20%" width="140%" height="150%"><feDropShadow dx="0" dy="18" stdDeviation="12" flood-color="#2a2440" flood-opacity=".28"/></filter>'
    // Relief depth (afwerking 10-11): saturation 1.15 and a stronger hillshade (contrast around the mid tone).
-   +'<filter id="'+prefix+'reliefDepth" color-interpolation-filters="sRGB"><feColorMatrix type="matrix" values=".65 .45 -.10 0 0 .25 .70 .05 0 0 .15 .15 .70 0 0 0 0 0 1 0"/><feColorMatrix type="saturate" values="1.15"/><feComponentTransfer><feFuncR type="linear" slope="1.3" intercept="-.15"/><feFuncG type="linear" slope="1.3" intercept="-.15"/><feFuncB type="linear" slope="1.3" intercept="-.15"/></feComponentTransfer></filter>'
+   +'<filter id="'+prefix+'reliefDepth" color-interpolation-filters="sRGB"><feComponentTransfer><feFuncR type="linear" slope="1.3" intercept="-.15"/><feFuncG type="linear" slope="1.3" intercept="-.15"/><feFuncB type="linear" slope="1.3" intercept="-.15"/></feComponentTransfer></filter>'
    +'<radialGradient id="'+prefix+'nbGrad" cx=".5" cy=".5" r=".5"><stop offset=".62" stop-color="#fff"/><stop offset="1" stop-color="#000"/></radialGradient>'
    +'<mask id="'+prefix+'nbFade" maskUnits="userSpaceOnUse"><rect class="v3FadeRect" x="0" y="0" width="890" height="1235" fill="url(#'+prefix+'nbGrad)"/></mask>';
   svg.prepend(defs);

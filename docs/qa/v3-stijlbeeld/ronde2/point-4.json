@@ -1,0 +1,135 @@
+{
+  "point": 4,
+  "previewSha256": "a3e898db135f4d4520bf7f23c1393bc1f070b63bb6005d0eb29fea08009d1db1",
+  "runs": {
+    "default": {
+      "bg": "bg03",
+      "links": [
+        "#bezig/bg01",
+        "#bezig/bg02",
+        "#bezig"
+      ],
+      "active": "BG-03 Kust",
+      "relief": {
+        "matrix": 0,
+        "contrast": [
+          1.3,
+          1.3,
+          1.3
+        ],
+        "palette": {
+          "0": "#A8C25A",
+          "100": "#A8C25A",
+          "250": "#A3B85B",
+          "500": "#9AAA52",
+          "800": "#929B4A",
+          "1200": "#9A7A46",
+          "1700": "#8A5A3A",
+          "2200": "#B6A386",
+          "2500": "#F7F8F6",
+          "3400": "#FFFFFF",
+          "5000": "#FFFFFF"
+        },
+        "sourceDemSha256": "b831aff53b152259c12b2b67b12dfb9b910fa5a6525d5db858dc9dee865a9fe3",
+        "rasterSha256": "596e2f1e19d925435e082bc06c9f0558f021838b5f2748c8fcaa87ef7eb5543e"
+      }
+    },
+    "bg01": {
+      "bg": "bg01",
+      "links": [
+        "#bezig/bg01",
+        "#bezig/bg02",
+        "#bezig"
+      ],
+      "active": "BG-01 Toscane",
+      "relief": {
+        "matrix": 0,
+        "contrast": [
+          1.3,
+          1.3,
+          1.3
+        ],
+        "palette": {
+          "0": "#A8C25A",
+          "100": "#A8C25A",
+          "250": "#A3B85B",
+          "500": "#9AAA52",
+          "800": "#929B4A",
+          "1200": "#9A7A46",
+          "1700": "#8A5A3A",
+          "2200": "#B6A386",
+          "2500": "#F7F8F6",
+          "3400": "#FFFFFF",
+          "5000": "#FFFFFF"
+        },
+        "sourceDemSha256": "b831aff53b152259c12b2b67b12dfb9b910fa5a6525d5db858dc9dee865a9fe3",
+        "rasterSha256": "596e2f1e19d925435e082bc06c9f0558f021838b5f2748c8fcaa87ef7eb5543e"
+      }
+    },
+    "bg02": {
+      "bg": "bg02",
+      "links": [
+        "#bezig/bg01",
+        "#bezig/bg02",
+        "#bezig"
+      ],
+      "active": "BG-02 Meer",
+      "relief": {
+        "matrix": 0,
+        "contrast": [
+          1.3,
+          1.3,
+          1.3
+        ],
+        "palette": {
+          "0": "#A8C25A",
+          "100": "#A8C25A",
+          "250": "#A3B85B",
+          "500": "#9AAA52",
+          "800": "#929B4A",
+          "1200": "#9A7A46",
+          "1700": "#8A5A3A",
+          "2200": "#B6A386",
+          "2500": "#F7F8F6",
+          "3400": "#FFFFFF",
+          "5000": "#FFFFFF"
+        },
+        "sourceDemSha256": "b831aff53b152259c12b2b67b12dfb9b910fa5a6525d5db858dc9dee865a9fe3",
+        "rasterSha256": "596e2f1e19d925435e082bc06c9f0558f021838b5f2748c8fcaa87ef7eb5543e"
+      }
+    },
+    "bg03": {
+      "bg": "bg03",
+      "links": [
+        "#bezig/bg01",
+        "#bezig/bg02",
+        "#bezig"
+      ],
+      "active": "BG-03 Kust",
+      "relief": {
+        "matrix": 0,
+        "contrast": [
+          1.3,
+          1.3,
+          1.3
+        ],
+        "palette": {
+          "0": "#A8C25A",
+          "100": "#A8C25A",
+          "250": "#A3B85B",
+          "500": "#9AAA52",
+          "800": "#929B4A",
+          "1200": "#9A7A46",
+          "1700": "#8A5A3A",
+          "2200": "#B6A386",
+          "2500": "#F7F8F6",
+          "3400": "#FFFFFF",
+          "5000": "#FFFFFF"
+        },
+        "sourceDemSha256": "b831aff53b152259c12b2b67b12dfb9b910fa5a6525d5db858dc9dee865a9fe3",
+        "rasterSha256": "596e2f1e19d925435e082bc06c9f0558f021838b5f2748c8fcaa87ef7eb5543e"
+      }
+    }
+  },
+  "pass": true
+}

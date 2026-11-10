@@ -925,3 +925,9 @@ De tintcheck meet CIE76 ΔE tegen D65-wit over een dicht raster van de getekende
 ## 2026-11-10 — Ronde 2, punt 3: Voortgang in één eerste frame
 
 Op desktop vanaf 1280 px vormt `v3VgOverview` één viewporthoog raster: titel, kaart plus elf rijen van 40 px, en drie tegels van 104 px. De balken blijven 10 px. Geen element in dit overzicht raakt de onderste framerand; de inhoud van de tegels blijft binnen de tegel. Toetsen en het kennis-paspoort beginnen volledig onder het eerste frame, gescheiden door witruimte en een rand; het werkblad blijft als geheel scrollen. iPad/telefoon behouden hun goedgekeurde scrollindeling. Gerichte framecheck en bestaande vijf Voortgang-cases groen; kaartgeometrie en lees-/beoordelingslogica ongewijzigd.
+
+## 2026-11-10 — Ronde 2, punt 4: reliëfpalet uit hetzelfde DEM
+
+Het nieuwe raster `assets/v3/relief-r2.webp` gebruikt exact het bestaande z8-DPR2-hoogtemodel (ruwe float64-SHA256 `b831aff5…`), dezelfde registratie, smoothing en hillshade. Alleen het hoogtepalet verandert: laagland `#A8C25A`, olijfkleurige heuvels, bergen `#8A5A3A`, wit vanaf de bestaande sneeuwhoogte. De basisverf is teruggerekend voor de afsluitende SVG-contrastfactor 1,3; de oude khaki kleurmatrix en extra saturatie zijn weg. Sneeuw is een hoogteklasse, geen gemeten sneeuwdek.
+
+Het reproduceerbare script controleert de hash van het aangeleverde DEM. Bronmanifest, output-SHA256, doel- en basiskleuren, encoder en lichtinstellingen staan in `relief-r2-provenance.json`. Het raster heeft dezelfde 1780×2470 pixels en geen kustmasker; de oorspronkelijke SVG-geometrie blijft de clip. De preview controleert de nieuwe rasterhash; geometrievalidatie en de gerichte palet-/filtercheck zijn groen.

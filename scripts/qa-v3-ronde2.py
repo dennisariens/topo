@@ -41,6 +41,19 @@ async def progress(p,bg):
  await p.screenshot(path=str(OUT/f'voortgang-fit-{bg}.png'))
  return data
 
+
+async def relief(p,bg):
+ meta=json.loads((ROOT/'assets/v3/relief-r2-provenance.json').read_text());old=ROOT/meta['source'];assert hashlib.sha256(old.read_bytes()).hexdigest()==meta['sourceSha256']
+ image=(ROOT/meta['output']['path']).read_bytes();assert hashlib.sha256(image).hexdigest()==meta['output']['sha256']
+ assert meta['contrast']==1.3 and meta['rawDemSha256']==json.loads(old.read_text())['pipeline']['raw_dem_float64_le_sha256']
+ palette={x['elevation_m']:x['color'] for x in meta['displayPalette']};assert palette[0]=='#A8C25A' and palette[1700]=='#8A5A3A' and palette[3400]=='#FFFFFF'
+ data=await p.evaluate("""()=>{const s=document.querySelector('.v3Map'),f=s.querySelector('filter[id$=reliefDepth]');return {matrix:f.querySelectorAll('feColorMatrix').length,contrast:[...f.querySelectorAll('feFuncR,feFuncG,feFuncB')].map(n=>+n.getAttribute('slope')),image:s.querySelector('.atlasTerrain image').getAttribute('href')};}""")
+ import base64
+ assert data['matrix']==0 and data['contrast']==[1.3]*3
+ assert hashlib.sha256(base64.b64decode(data.pop('image').split(',')[1])).hexdigest()==meta['output']['sha256']
+ await p.screenshot(path=str(OUT/f'relief-{bg}.png'))
+ return {**data,'palette':palette,'sourceDemSha256':meta['rawDemSha256'],'rasterSha256':meta['output']['sha256']}
+
 async def main(point):
  OUT.mkdir(parents=True,exist_ok=True);runs={}
  async with async_playwright() as pw:
@@ -52,6 +65,7 @@ async def main(point):
    data=await p.evaluate('''()=>({bg:window.TOPO_V3_BG,links:[...document.querySelectorAll('.v3Bg')].map(n=>n.hash),active:document.querySelector('.v3Bg[aria-current]')?.textContent})''')
    assert data['bg']==('bg03' if bg=='default' else bg),data
    assert data['links']==['#bezig/bg01','#bezig/bg02','#bezig'],data
+   if point==4:data['relief']=await relief(p,bg)
    if point==3:data['progress']=await progress(p,bg)
    if point==2:
     data['sidebar']=await sidebar(p,bg)

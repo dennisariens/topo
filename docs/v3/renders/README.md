@@ -113,6 +113,28 @@ De kracht van het doelbeeld is de uitlijning. Die geldt voor alle schermen:
   - onderaan 3 gelijke tegels over 12 kolommen.
 - **QA-check:** blokken in dezelfde rij hebben gelijke boven- en onderkanten (±1 px), de goten zijn overal gelijk (±1 px) en het frame is op alle tabs identiek (±1 px).
 
+## Reis: doelbeeld `R-reis-ijk` (eigenaar, 10-11)
+
+Dit doelbeeld is het ijkpunt voor het frame met de geïntegreerde zijbalk op een Landschap-scherm, en vervangt voor Reis de benchmark als doel.
+
+**Overnemen:**
+- het frame, de transparante zijbalk en het artwork in het inhoudsvlak;
+- links een glaspaneel met de 11 hoofdstukken (foto, naam, status);
+- rechts de grote reliëfkaart met de pins van het actieve hoofdstuk;
+- onderaan rechts één kaart met de titel, drie stapstippen en de pil Aanwijzen;
+- tellers rechtsboven met lijniconen;
+- de onderkant van de lijst en die van de hoofdstukkaart op één lijn.
+
+**Corrigeren:**
+- **één titel:** de schermtitel "Reis" blijft; het paneelkopje "Hoofdstukken" vervalt;
+- **status per rij:**
+  - afgerond: alleen een vinkje, zonder balk;
+  - goud: een medaille;
+  - bezig: een dunne balk;
+  - op slot: alleen een slotje, zonder lege balk;
+- **foto's:** de echte hoofdstukbeelden uit de app;
+- **kaart:** de pins vallen nooit onder de hoofdstukkaart; de kaart past in het vlak boven en naast die kaart.
+
 ## Per render: overnemen en afwijken
 
 | Render | Overnemen | Niet overnemen / afwijken |

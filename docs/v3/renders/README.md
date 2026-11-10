@@ -37,6 +37,27 @@ De zes renders zijn een grote stap, maar halen het niveau van de benchmark nog n
 
 **Toets:** zet een scherm in grijstinten naast de benchmark. Klopt de hiërarchie (één luid element, de rest rustig), dan klopt het ontwerp.
 
+## IJkpunt stijl: `R-oefenen-ijk` (eigenaar, 10-11)
+
+Na de ingetogenheidsronde staat **`R-oefenen-ijk.webp`** voor de stijl van alle schermen. Wat erin vastligt:
+
+- **Opbouw:** een smal glaspaneel met de nav, één hoofdpaneel en de kaart als enige luide element.
+- **Achtergrond:** de wash en het pastel van `R-oefenen-ijk-rust.webp` (de rustigste variant).
+- **Woordmerk TOPO** in donkere inkt met de driekleur. De titel is het enige display-element, in inkt (niet violet).
+- **Selectie:** een lavendel vulling met violette rand en violette tekst, voor tegels, chips en de nav. **Massief violet alleen voor de primaire actie** (Start).
+- **Vormtegels:**
+  - vier op één rij, met een lijnicoon en een label;
+  - de iconen: Ontdekken = verrekijker, Aanwijzen = vizier, Namen schrijven = potlood, Slim rondje = shuffle;
+  - het boek-icoon niet gebruiken, want dat botst met Schoolblad en Reisboekje.
+- **Scheiding:** een dunne lijn tussen vorm en groep; geen extra paneel.
+- **Chips:**
+  - drie kolommen, op één regel, altijd met de volledige namen (nooit afkortingen als "Extra 13–18");
+  - de breedte van het paneel volgt de langste chip.
+- **Startknop:** een pil met een open play-icoon en een pijl, zonder glow.
+- **Pins:** alleen de plekken van de gekozen groep, als violette pins op het reliëf.
+
+`R-oefenen.webp` (eerste ronde) is daarmee voor Oefenen vervangen. Voor de andere schermen blijven de renders van de eerste ronde gelden voor de opbouw, en `R-oefenen-ijk` met de ingetogenheidsregels voor de stijl.
+
 ## Per render: overnemen en afwijken
 
 | Render | Overnemen | Niet overnemen / afwijken |

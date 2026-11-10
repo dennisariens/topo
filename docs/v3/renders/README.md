@@ -205,6 +205,18 @@ Na fase B klopt de opbouw op alle schermen, maar de build oogt melkig, dun en kl
   - het blok Toetsen past binnen het frame, of het Werkblad scrolt als geheel, nooit half afgesneden.
 - **Check:** de vergelijkingen opnieuw, plus een check "tekst ≥ 13 px" en "kaart ≥ 45% van het inhoudsvlak" (Landschap).
 
+### Bijstelling eigenaar (10-11, middag)
+
+- **Kaart links, bediening rechts, op alle Landschap-schermen** (Reis, Oefenen, Les, Toets resultaat) en op Voortgang.
+  - De kaart staat naast de zijbalk, op het rustige deel van het artwork. Panelen en lijsten staan rechts, over het drukke deel (dorp, gebouwen).
+  - Zo is de kaart overal op dezelfde plek, en wisselen van tab laat haar niet verspringen.
+  - **Reis:** de kaart ±7/12 links, met de hoofdstukkaart (titel, stappen, Aanwijzen) onderaan op het kaartvlak. De hoofdstukkenlijst rechts, ±5/12.
+  - **Oefenen:** het keuzepaneel naar rechts (dit wijkt af van `R-oefenen-ijk`).
+- **Toets resultaat:**
+  - de score in violet (data en voortgang), op gewicht 600, zonder kader;
+  - Nino staat vrij in een eigen rastervlak en wordt nooit door een paneel bedekt (check: geen overlap tussen het Nino-vlak en een paneel).
+- **Artwork (komt van de eigenaar):** voor het toetsresultaat komt **NINO-ONDERWEG**, Nino op de Vespa die vertrekt ("toets gemaakt, op weg naar de volgende bestemming"). Dat vervangt NINO-DUIM en NINO-AANMOEDIGING. Tot het er is: de huidige pose, vrij geplaatst.
+
 ## Per render: overnemen en afwijken
 
 | Render | Overnemen | Niet overnemen / afwijken |

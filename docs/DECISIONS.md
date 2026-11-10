@@ -670,3 +670,22 @@ Bron: `docs/v3/renders/README.md` (Reis, Raster en uitlijning, Verfijning) en de
   - Vergelijkingen naast `R-reis-ijk`: `docs/qa/v3-stijlbeeld/reis-ijk-{eiland,kaart}-{desktop,ipad-liggend}.jpg`.
   - **Bestaande checks bijgesteld:** `qa-v3-stijlbeeld` (lijst- en kaartpanelen, geen kop, lijniconen bij de tellers, zee- en schaduwlaag uit in variant (a)) en `qa-v3-reis`/`qa-v3-kennismaking` (de titel is `#v3Title`).
 - **Open voor de eigenaar:** de keuze tussen (a) en (b). Bij Les blijft de volledige schoolkaart met zeeën staan (besluit 10-11).
+
+## 2026-11-10 — V3.0 fase B, stap 3: Oefenen volgens R-oefenen-ijk
+
+Oefenen volgt nu het ijkpunt `R-oefenen-ijk`, binnen het frame en het raster van Reis. Het gedrag is ongewijzigd: dezelfde vormen, dezelfde groepen en hetzelfde startpad naar V2.
+
+**Opbouw:**
+- één glaspaneel met de titel "Oefenen" (het enige display-element), vier vormtegels (lijnicoon en label), een dunne lijn, de groepen als chips in drie kolommen en de pil Start (open play-icoon en pijl, over de volle breedte);
+- de kopjes "Vorm" en "Groep" zijn alleen nog voor schermlezers;
+- rechts de kaart als het enige luide element, met alleen de gekozen groep: steden als violette pins, andere groepen als vlakken; bij Alles en Slim rondje geen markering.
+
+**Raster:** het paneel begint op de binnenmarge en eindigt op de eerste kolomlijn na de langste chip, zodat de namen altijd voluit op één regel staan ("de breedte volgt de langste chip"). Dat zijn minimaal 5 en maximaal 8 van de 12 kolommen: op desktop 6, op iPad liggend 8. De kaart vult de rest tot de binnenmarge. De bovenkant van het paneel en die van de kaart liggen op één lijn. De breedte wordt gemeten met de groepen zichtbaar, zodat het paneel niet verspringt bij Slim rondje. Op iPad staand staat de kaart onder het paneel, op de telefoon ook, met de chips in twee kolommen.
+
+**Kaart:** dezelfde variant als Reis, dus (a) Eiland als standaard en (b) Kaart via `#…/kaart`. De keuze van de eigenaar geldt dus voor beide schermen. Elke kloon heeft een eigen clip en vervaging (`v3m-` Reis, `v3o-` Oefenen); de CSS leest ze uit `--v3-isle-clip` en `--v3-isle-fade`.
+
+**Afwijking van de render:** het boek-icoon voor Ontdekken is volgens de ijkpuntregel de verrekijker.
+
+**QA-bijstelling:** in `qa-v3-shell.py` telt een kaartkloon (svg) bij de tabbalkcheck als één element. Zijn paden mogen buiten het eigen vak lopen; op de telefoon wordt de Oefenen-kaart daar afgekapt.
+
+**Bewijs:** `scripts/qa-v3-faseb-oefenen.py` (24 runs, groen) en de vergelijkingen `docs/qa/v3-stijlbeeld/oefenen-ijk-{eiland,kaart}-{desktop,ipad-liggend}.jpg`.

@@ -1,6 +1,6 @@
 {
  "html": "/Users/dennisariens/projects/topo-v3/output/html/TOPO-V3-Reis-Preview.html",
- "sha256": "d06f6ea23f8b8a49054f53dbb283666a4c0c94b14075ad3ca6e83572b909a34b",
+ "sha256": "76a2289d4cf23f09199ad394bbc102d034c6fd8e262e83290249d85982827272",
  "indexSha256": "3aced3c31259011b0af2947c78f71965cb4beb2e88c69d1663e61792b0304f5a",
  "label": "na",
  "runs": {
@@ -217,17 +217,35 @@
     844,
     "28px"
    ],
-   "free": 0.849,
+   "free": 0.567,
    "wide": [],
-   "edge": null,
+   "edge": {
+    "selector": ".v3Map",
+    "masks": [],
+    "opacity": 1,
+    "overlays": [],
+    "school": false,
+    "island": true,
+    "seaShown": false,
+    "islandFaint": [],
+    "letterbox": false,
+    "seeThrough": [],
+    "box": [
+     852,
+     112,
+     528,
+     728
+    ]
+   },
    "theme": "#5b45e0",
    "les": false,
    "view": "oefenen",
    "hOverflow": false,
-   "freePct": 84.9,
+   "freePct": 56.7,
    "lowContrast": [],
    "backdropFilters": [
-    "blur(24px) saturate(1.15)"
+    "blur(24px) saturate(1.15)",
+    "none"
    ],
    "pageErrors": [],
    "surface": "landschap"
@@ -514,17 +532,35 @@
     780,
     "28px"
    ],
-   "free": 0.781,
+   "free": 0.531,
    "wide": [],
-   "edge": null,
+   "edge": {
+    "selector": ".v3Map",
+    "masks": [],
+    "opacity": 1,
+    "overlays": [],
+    "school": false,
+    "island": true,
+    "seaShown": false,
+    "islandFaint": [],
+    "letterbox": false,
+    "seeThrough": [],
+    "box": [
+     849,
+     96,
+     287,
+     680
+    ]
+   },
    "theme": "#5b45e0",
    "les": false,
    "view": "oefenen",
    "hOverflow": false,
-   "freePct": 78.1,
+   "freePct": 53.1,
    "lowContrast": [],
    "backdropFilters": [
-    "blur(24px) saturate(1.15)"
+    "blur(24px) saturate(1.15)",
+    "none"
    ],
    "pageErrors": [],
    "surface": "landschap"
@@ -608,7 +644,7 @@
    "reis-schoolkaart-desktop": 65.3,
    "les-desktop": 66.5,
    "les-desktop-verminderd": 45.7,
-   "oefenen-desktop": 84.9,
+   "oefenen-desktop": 56.7,
    "toets-desktop": 24.2,
    "voortgang-desktop": 24.2,
    "reis-ipad-liggend": 60.0,
@@ -616,7 +652,7 @@
    "reis-schoolkaart-ipad-liggend": 60.0,
    "les-ipad-liggend": 73.1,
    "les-ipad-liggend-verminderd": 56.2,
-   "oefenen-ipad-liggend": 78.1,
+   "oefenen-ipad-liggend": 53.1,
    "toets-ipad-liggend": 20.0,
    "voortgang-ipad-liggend": 19.3
   },

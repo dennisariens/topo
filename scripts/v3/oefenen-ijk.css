@@ -1,0 +1,49 @@
+/* TOPO V3.0 fase B, stap 3 — Oefenen volgens R-oefenen-ijk (docs/v3/renders/README.md § IJkpunt stijl, § Raster en
+   uitlijning, § Verfijning). Presentation only; loaded after reis-ijk.css.
+   * One glass panel: the title "Oefenen", four form tiles (line icon + label), a thin line, the groups as chips in
+     three columns on one line each (full names), and the Start pill (open play icon, arrow) — no field headings.
+   * The panel starts on the first column line and ends on the column line after its longest chip (shell.js snaps it:
+     at least 5, at most 8 of 12 columns); the map takes the remaining columns. Tops share one line.
+   * The map: variant (a) Eiland like Reis (or (b) Kaart through #…/kaart), the chosen group as violet pins. */
+.v3OefPanel{display:flex;flex-direction:column;gap:var(--v3-s5);min-width:0}
+.v3OefPanel .v3Field{gap:0}
+.v3OefPanel .v3Forms{grid-template-columns:repeat(4,minmax(0,1fr));gap:10px}
+.v3OefPanel .v3FormBtn{min-height:112px;padding:14px 8px;gap:10px;line-height:20px;text-wrap:balance}
+.v3OefPanel .v3OefGroep{padding-top:var(--v3-s5);border-top:1px solid var(--v3-line)}
+.v3OefPanel .v3Chips{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px}
+.v3OefPanel .v3Chip{min-height:44px;padding:0 8px;font-size:15px;white-space:nowrap;justify-content:center}
+.v3OefPanel .v3Start{align-self:stretch;width:100%;min-width:0}
+.v3OefStage{position:relative;min-width:0;min-height:0}
+
+@media (min-width:768px){
+ /* The view is the content area itself (12 columns wide), so 100% here is the content width. */
+ .v3Reis[data-view=oefenen]>.v3View-oefenen{--v3-col:calc((100% - 11*var(--v3-gut)) / 12);position:relative;display:grid;grid-template-columns:var(--v3-oef-w,calc(5*var(--v3-col) + 4*var(--v3-gut))) minmax(0,1fr);gap:var(--v3-gut);
+  align-items:start;justify-self:stretch;align-self:stretch;width:auto;max-height:none;padding:0;overflow:visible;
+  background:none!important;-webkit-backdrop-filter:none!important;backdrop-filter:none!important;box-shadow:none!important;border-radius:0}
+ /* The chips measure at max-content (equal columns, as wide as the longest name); shell.js snaps the panel to that. */
+ .v3OefPanel{padding:24px;max-height:100%;overflow:auto;
+  background:var(--v3-glass);-webkit-backdrop-filter:var(--v3-glass-filter);backdrop-filter:var(--v3-glass-filter);box-shadow:var(--v3-glass-shadow);border-radius:var(--v3-radius-glass)}
+ .v3OefPanel .v3Chips{grid-template-columns:repeat(3,minmax(max-content,1fr))}
+ .v3OefStage{align-self:stretch;height:100%}
+ .v3OefStage .v3Map{position:absolute;inset:0;margin:auto;max-width:100%;max-height:100%}
+ .v3Reis[data-kaart=kaart] .v3OefStage{border-radius:var(--v3-radius-glass);background:var(--v3-glass);-webkit-backdrop-filter:var(--v3-glass-filter);backdrop-filter:var(--v3-glass-filter);box-shadow:var(--v3-glass-shadow)}
+ .v3Reis[data-kaart=kaart] .v3OefStage .v3Map{inset:10px;max-width:calc(100% - 20px);max-height:calc(100% - 20px)}
+}
+@media (min-width:768px) and (max-width:1279px){
+ .v3OefPanel{padding:22px 20px}
+ .v3OefPanel .v3FormBtn{min-height:100px;font-size:15px}
+}
+/* iPad portrait: the panel takes the full width above the map. */
+@media (min-width:768px) and (max-width:1023px){
+ .v3Reis[data-view=oefenen]>.v3View-oefenen{grid-template-columns:minmax(0,1fr);grid-template-rows:auto minmax(0,1fr)}
+ .v3OefPanel .v3Chips{grid-template-columns:repeat(3,minmax(0,1fr))}
+ .v3OefStage{min-height:280px}
+}
+/* Phone: the panel, then the map; chips in two columns. */
+@media (max-width:767px){
+ .v3OefPanel .v3Forms{grid-template-columns:repeat(2,minmax(0,1fr))}
+ .v3OefPanel .v3Chips{grid-template-columns:repeat(2,minmax(0,1fr))}
+ .v3OefPanel .v3Chip{padding:0 10px;font-size:15px}
+ /* The map is clipped to its own box here, so it ends above the tab bar. */
+ .v3OefStage .v3Map[data-kaart]{width:100%;height:300px;overflow:hidden!important}
+}

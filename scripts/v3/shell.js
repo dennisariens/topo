@@ -81,15 +81,44 @@
   const sel=$('#groupSelect');if(sel){sel.value=pick.group;sel.dispatchEvent(new Event('change',{bubbles:true}));}
   suspended=null;
  }
+ /* Oefenen volgens R-oefenen-ijk (fase B, stap 3): one glass panel (title, four form tiles, a thin line, the groups in
+    three columns, the Start pill) and the map as the one loud element, with only the chosen group as pins. The map is
+    a decorative clone in variant (a) Eiland, like Reis (DECISIONS 10-11, fase B stap 2), until the owner chooses. */
+ let oefMap=null;const oefStage=make('div','v3OefStage');oefStage.setAttribute('aria-hidden','true');
+ function groupIds(g){if(g==='mistakes')return state.mistakes||[];if(g==='all')return [];return ROUTE_CHAPTERS.find(c=>c.id===g)?.itemIds||[];}
+ function paintOef(){
+  if(!oefMap){oefMap=V.cloneMap('v3o-','v3Map');if(!oefMap)return;oefMap.classList.add('v3OefMap');oefStage.append(oefMap);V.addIsland(oefMap,'v3o-');}
+  oefMap.dataset.relief='on';oefMap.dataset.kaart=V.ui.kaart||'eiland';
+  const ids=pick.form==='smart'?[]:groupIds(pick.group),set=new Set(ids);
+  oefMap.querySelectorAll('[data-id]').forEach(n=>n.classList.toggle('v3Hit',set.has(n.getAttribute('data-id'))));
+  oefMap.dataset.focus=ids.length?(ids.every(id=>id.startsWith('city'))?'points':'areas'):'';
+  requestAnimationFrame(()=>V.fit(oefMap));
+ }
+ if('ResizeObserver' in window)new ResizeObserver(()=>{if(oefMap)V.fit(oefMap);}).observe(oefStage);
+ // Raster: the panel ends on the first column line after its content (the longest chip sets it), 5–8 of 12 columns.
+ function snapOef(){
+  const view=document.querySelector('.v3View-oefenen'),panel=view?.querySelector('.v3OefPanel');if(!panel||!matchMedia('(min-width:1024px)').matches){view?.style.removeProperty('--v3-oef-w');return;}
+  const gut=parseFloat(getComputedStyle(view).columnGap)||0,col=(view.getBoundingClientRect().width-11*gut)/12;if(!(col>0))return;
+  // Measured with the group shown (also for Slim rondje), so switching the form never moves the panel's edge.
+  const g=panel.querySelector('.v3OefGroep'),was=g.hidden,chips=g.querySelector('.v3Chips'),cs=getComputedStyle(panel);g.hidden=false;chips.style.width='max-content';const w=chips.getBoundingClientRect().width+parseFloat(cs.paddingLeft)+parseFloat(cs.paddingRight);chips.style.width='';g.hidden=was;
+  const n=Math.max(5,Math.min(8,Math.ceil((w+gut-.5)/(col+gut))));
+  view.style.setProperty('--v3-oef-w','calc('+n+' * var(--v3-col) + '+(n-1)+' * var(--v3-gut))');view.dataset.cols=n;
+ }
+ addEventListener('resize',()=>{if(ui.view==='oefenen')snapOef();});
  V.addView('oefenen','Oefenen',view=>{
-  const h=make('h1',null,'Oefenen');h.id='v3OefenenTitle';h.tabIndex=-1;
+  const h=make('h1','v3ScreenTitle','Oefenen');h.id='v3OefenenTitle';h.tabIndex=-1;
   const forms=make('div','v3Forms');forms.setAttribute('role','group');
   for(const [id,label,glyph] of FORMS){const b=chip('',pick.form===id,()=>{pick.form=id;V.render();},'v3FormBtn');b.append(V.icon(glyph),make('span',null,label));b.dataset.form=id;forms.append(b);}
   const mistakes=state.mistakes?.length||0;
   const groups=groupChips(id=>pick.group===id,id=>{pick.group=id;V.render();},{extra:[['all','Alles'],['mistakes','Mijn fouten'+(mistakes?' · '+mistakes:''),!mistakes]]});
-  const groupField=field('Groep',groups,'v3OefenenGroep');if(pick.form==='smart')groupField.hidden=true;
-  const start=btn('Start',e=>{e.stopPropagation();startPractice();},'v3Btn primary v3Start');
-  view.replaceChildren(h,field('Vorm',forms,'v3OefenenVorm'),groupField,start);
+  const vorm=field('Vorm',forms,'v3OefenenVorm'),groupField=field('Groep',groups,'v3OefenenGroep');
+  // One title per screen: the field headings stay for screen readers; a thin line separates form and group.
+  vorm.querySelector('h2').className=groupField.querySelector('h2').className='v3SrOnly';groupField.classList.add('v3OefGroep');
+  if(pick.form==='smart')groupField.hidden=true;
+  const start=btn('',e=>{e.stopPropagation();startPractice();},'v3Btn primary v3Start');start.append(V.icon('v3play'),make('span',null,'Start'));
+  const panel=make('div','v3OefPanel');panel.append(h,vorm,groupField,start);
+  view.replaceChildren(panel,oefStage);
+  paintOef();requestAnimationFrame(snapOef);
  });
 
  /* Toets (§ 2) and Voortgang (§ 3): their views live in toets.js and voortgang.js. */

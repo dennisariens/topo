@@ -130,6 +130,8 @@
    +'<radialGradient id="'+prefix+'nbGrad" cx=".5" cy=".5" r=".5"><stop offset=".62" stop-color="#fff"/><stop offset="1" stop-color="#000"/></radialGradient>'
    +'<mask id="'+prefix+'nbFade" maskUnits="userSpaceOnUse"><rect class="v3FadeRect" x="0" y="0" width="890" height="1235" fill="url(#'+prefix+'nbGrad)"/></mask>';
   svg.prepend(defs);
+  // Each clone references its own clip and fade (Reis v3m-, Oefenen v3o-); the CSS reads them from these properties.
+  svg.style.setProperty('--v3-isle-clip','url(#'+prefix+'italyClip)');svg.style.setProperty('--v3-isle-fade','url(#'+prefix+'nbFade)');
   const base=document.createElementNS(SVGNS,'path');base.setAttribute('d',d);base.setAttribute('class','v3IsleBase');base.setAttribute('aria-hidden','true');base.setAttribute('pointer-events','none');base.setAttribute('filter','url(#'+prefix+'isleShadow)');
   terrain.before(base);
   const pins=document.createElementNS(SVGNS,'g');pins.setAttribute('class','v3Pins');pins.setAttribute('aria-hidden','true');pins.setAttribute('pointer-events','none');svg.append(pins);
@@ -295,6 +297,6 @@
  const base=renderRouteHome;
  renderRouteHome=function(...a){const out=base.apply(this,a);try{render();chrome();}catch(e){console.error('V3 Reis',e);}return out;};
  document.body.classList.add('v3On');
- window.TOPO_V3={render,model,ui,makeSide,markNav,addView,cloneMap,fit,icon,make,btn,pic,img,press,v2Card,v2Nav,STAGE,KIND,range,scenes,art:V3ART,nino,root};
+ window.TOPO_V3={render,model,ui,makeSide,markNav,addView,cloneMap,fit,addIsland,icon,make,btn,pic,img,press,v2Card,v2Nav,STAGE,KIND,range,scenes,art:V3ART,nino,root};
  if(!$('#journeyScreen')?.classList.contains('hidden')){render();chrome();}
 })();

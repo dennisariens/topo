@@ -1,7 +1,7 @@
 {
  "html": "output/html/TOPO-V3-Reis-Preview.html",
- "sha256": "d06f6ea23f8b8a49054f53dbb283666a4c0c94b14075ad3ca6e83572b909a34b",
- "bytes": 50341067,
+ "sha256": "76a2289d4cf23f09199ad394bbc102d034c6fd8e262e83290249d85982827272",
+ "bytes": 50347969,
  "layout": {
   "desktop/nieuw": {
    "frame": {
@@ -1296,7 +1296,7 @@
     "kept": {
      "Frankrijk": 1,
      "Zwitserland": 1,
-     "Slovenië": 1,
+     "Slovenië": 0.98,
      "Kroatië": 1,
      "Sardinië": 1,
      "Sicilië": 1,
@@ -1462,9 +1462,9 @@
    },
    "backVia": "v3Btn v3NavItem",
    "primaryLabelWithActive": "Ga verder · Ontdekken",
-   "questionBefore": "city-10",
+   "questionBefore": "city-11",
    "reisVerderSameQuestion": {
-    "id": "city-10",
+    "id": "city-11",
     "chapter": "city2",
     "kind": "discover"
    },
@@ -1507,9 +1507,9 @@
    },
    "backVia": "v3Btn v3LesBack",
    "primaryLabelWithActive": "Ga verder · Ontdekken",
-   "questionBefore": "city-11",
+   "questionBefore": "city-9",
    "reisVerderSameQuestion": {
-    "id": "city-11",
+    "id": "city-9",
     "chapter": "city2",
     "kind": "discover"
    },

@@ -33,3 +33,35 @@ Losse screenshots: `reis-<variant>-<demo>-<formaat>.png`.
 Alle checks zijn groen. Ook de bestaande V3-QA is groen, met bijgestelde checks in `qa-v3-stijlbeeld` (zie DECISIONS 10-11, fase B stap 2). Lint, test en build zijn groen, `index.html` is byte-gelijk en de geometrie is 46/46.
 
 **Open:** de eigenaar kiest tussen (a) en (b).
+
+## Stap 3: Oefenen volgens `R-oefenen-ijk`
+
+Script: `scripts/qa-v3-faseb-oefenen.py`. Resultaat: [`results-oefenen.json`](results-oefenen.json).
+
+Gemeten op `#bezig`, voor beide kaartvarianten, op desktop, iPad liggend, iPad staand en telefoon 390×844. Per run zijn drie keuzes getest: Steden 7–12, Eilanden en Slim rondje.
+
+**Naast het doelbeeld:**
+
+| Variant | Desktop | iPad liggend |
+| --- | --- | --- |
+| (a) Eiland, standaard | [vergelijking](../v3-stijlbeeld/oefenen-ijk-eiland-desktop.jpg) | [vergelijking](../v3-stijlbeeld/oefenen-ijk-eiland-ipad-liggend.jpg) |
+| (b) Kaart, `#…/kaart` | [vergelijking](../v3-stijlbeeld/oefenen-ijk-kaart-desktop.jpg) | [vergelijking](../v3-stijlbeeld/oefenen-ijk-kaart-ipad-liggend.jpg) |
+
+Losse screenshots: `oefenen-<variant>-<formaat>.png`.
+
+| Check | Drempel |
+| --- | --- |
+| Raster (≥ 1024) | Het paneel begint op de binnenmarge en spant een heel aantal kolommen (5–8); één goot naar de kaart; de kaart eindigt op de binnenmarge (±1,5 px) |
+| Gedeelde lijn | Bovenkant van het paneel = bovenkant van de kaart (±1 px) |
+| Vaste rand | Het paneel houdt zijn breedte bij Slim rondje (±1 px) |
+| Eén titel | Precies één display-tekst: "Oefenen"; geen zichtbare veldkopjes |
+| Vormtegels | Vier, elk met een lijnicoon en een label (geen illustratie) |
+| Lijn | 1 px tussen vorm en groep |
+| Chips | Drie kolommen (telefoon: twee), elk op één regel, alle namen voluit, binnen het paneel |
+| Start | Eén primaire pil, met het play-icoon, over de volle breedte van het paneel |
+| Pins | Steden 7–12: 6 pins in het kaartvlak; Eilanden: vlakken zonder pins; Slim rondje: geen groep en geen pins |
+| (a) Eiland | Reliëf geclipt op Italië met de eigen clip (`v3o-italyClip`); geen zeekleur |
+| (b) Kaart | De kaart in een glaskaart (radius 28) |
+| Zijbalk, violet, overflow | Portret 112/88/56; geen violette tekst buiten betekenis; geen horizontale scroll |
+
+Alle checks zijn groen.

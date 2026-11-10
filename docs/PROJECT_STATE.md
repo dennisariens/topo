@@ -4,6 +4,13 @@ Branch `codex/topo-v3` vanaf de V2-afsluiting `f53dc0b` (voorouder `v2.0.2` = `8
 
 **V3.0 deel 5 — Kennismaking** (9 november): de V2-eerste-keerdialoog is één V3-scène met welkomstpose, naam, favoriete pizza, Andiamo! en Start meteen; de hulpteksten zijn weg. Daarna opent Reis met hoofdstuk 1. Profielschema 1 en de V2-regel voor het eenmalig opnieuw aanbieden blijven gelijk. Preview-demo `#welkom`. [Bewijs](qa/v3-kennismaking/README.md).
 
+**V3.0 fase B — stap 3, Oefenen volgens `R-oefenen-ijk`** (10 november):
+- één glaspaneel met de titel, vier vormtegels, een dunne lijn, de groepen in drie kolommen (voluit op één regel) en de pil Start;
+- het paneel staat op kolomlijnen (desktop 6, iPad liggend 8 van de 12 kolommen);
+- de kaart in dezelfde variant als Reis, met alleen de gekozen groep als pins.
+
+[Bewijs](qa/v3-faseb/README.md).
+
 **V3.0 fase B — stap 2, Reis volgens `R-reis-ijk`** (10 november):
 - 12-koloms raster: titel en lijst op 5 kolommen, kaart op 7, met gedeelde lijnen boven en onder;
 - één titel "Reis"; rijen met de status als vinkje, medaille, dunne balk of slot;

@@ -50,10 +50,11 @@ NAV_JS = '''() => { const vis = e => { const r = e.getBoundingClientRect(); retu
 # Phone: scrolled to the end, the last content of the screen (view, Beloningen) ends at least 8 px above the fixed tab
 # bar; the screen's bottom padding is the measured tab bar height (incl. safe area) plus room; every button that gets
 # keyboard focus is scrolled clear of the bar (scroll-padding) and is the element at its own centre.
+# An svg (a map clone) counts as one leaf: its paths may run past its box, where they are clipped.
 CLEAR_JS = '''(async () => { const bar = [...document.querySelectorAll('.v3Side')].find(e => e.checkVisibility() && getComputedStyle(e).position === 'fixed' && e.getBoundingClientRect().bottom >= innerHeight - 1 && e.getBoundingClientRect().width >= innerWidth - 1); if (!bar) return null;
   const root = document.querySelector('.v3Reis'), v = document.querySelector('.v3Reis > .v3View-' + root.dataset.view) || document.querySelector('.v3Reis > .v3Rewards');
   scrollTo({top: document.documentElement.scrollHeight, behavior: 'instant'}); await new Promise(r => requestAnimationFrame(r));
-  const leaves = [...v.querySelectorAll('*')].filter(e => !e.closest('.v3Side') && e.children.length === 0 && e.checkVisibility() && e.getBoundingClientRect().height > 0);
+  const leaves = [...v.querySelectorAll('*')].filter(e => !e.closest('.v3Side') && !e.parentElement.closest('svg') && (e.children.length === 0 || e.tagName === 'svg') && e.checkVisibility() && e.getBoundingClientRect().height > 0);
   const last = Math.max(...leaves.map(e => e.getBoundingClientRect().bottom)), top = bar.getBoundingClientRect().top, covered = [];
   for (const btn of [...v.querySelectorAll('button:not(:disabled), a[href], [tabindex="0"]')].filter(e => e.checkVisibility() && e.getBoundingClientRect().height > 0)) {
     scrollTo({top: 0, behavior: 'instant'}); btn.focus(); await new Promise(r => requestAnimationFrame(r));

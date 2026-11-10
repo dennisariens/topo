@@ -1,3 +1,8 @@
 dist/
 node_modules/
 .DS_Store
+
+# Bronbestanden artwork (alleen web-klare WebP in git)
+assets/inbox/
+assets/art/**/*.psd
+assets/art/**/*.procreate

@@ -12,6 +12,8 @@ Claude Code heeft tot donderdag geen ruimte meer. Codex neemt de bouw op `codex/
 - Importfix en resetbeleid (`636ba53`).
 - Afwerking stap 1 (`0dc0193`): wash, glas en typeschaal, plus de check tekst ≥ 13 px.
 
+**Stand 10-11, 20:30:** Claude Code pushte vóór de limiet nog `5d73aac`: kaart links, reliëf, Eiland, Toets, Beloningen en Voortgang. Daarmee zijn de stappen 1–3 hieronder grotendeels gedaan. Codex begint bij **stap 3b**.
+
 ## Nog te doen, in deze volgorde
 
 1. **Afwerking stap 2, kaart:**
@@ -25,6 +27,13 @@ Claude Code heeft tot donderdag geen ruimte meer. Codex neemt de bouw op `codex/
    - **Beloningen:** het boek is de knop (geen cirkel, geen "Open Reisboekje"); "Pizza 2" wordt "Pizza";
    - **Voortgang:** een grote kaart links; rijen op slot zonder balk; Toetsen binnen het frame;
    - **Les:** de kaart groter.
+3b. **Kalibratie** (`renders/README.md` › "Kalibratie typografie en beeld"):
+   - de gemeten typeschaal;
+   - geen wash over het inhoudsvlak;
+   - een warmer en dieper reliëf;
+   - Voortgang met Eiland en alle 11 rijen;
+   - het label "Toets" vrij, en de score in een glaskaart;
+   - de checks op minimumgroottes.
 4. **Master-assets:** `origin/art/master` `339c420` → de pijplijn `art/v3-render-assets` (manifest met SHA256, bron en status "eigenaar akkoord, Hermes open"; WebP op de maat van het gebruik). Daarna integreren volgens DECISIONS 2026-11-10 ("Master-assets"). **`art/master` niet mergen.** NINO-ONDERWEG is `vespa-rijdend` of `vespa-bagage`. De paspoortbeelden niet gebruiken.
 5. **Bewijs:**
    - vergelijkingen in `docs/qa/v3-stijlbeeld/` (desktop 1440×900, iPad liggend, telefoon);

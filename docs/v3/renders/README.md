@@ -218,6 +218,36 @@ Na fase B klopt de opbouw op alle schermen, maar de build oogt melkig, dun en kl
   - Nino staat vrij in een eigen rastervlak en wordt nooit door een paneel bedekt (check: geen overlap tussen het Nino-vlak en een paneel).
 - **Artwork (komt van de eigenaar):** voor het toetsresultaat komt **NINO-ONDERWEG**, Nino op de Vespa die vertrekt ("toets gemaakt, op weg naar de volgende bestemming"). Dat vervangt NINO-DUIM en NINO-AANMOEDIGING. Tot het er is: de huidige pose, vrij geplaatst.
 
+## Kalibratie typografie en beeld (lead designer, 10-11 avond, na `5d73aac`)
+
+De vergelijkingen naast elkaar (gelijke breedte) laten zien dat de build nog steeds **te klein, te dun en te melkig** is. De schaal uit "Verfijning" en "Afwerking" was te voorzichtig. Deze waarden zijn **gemeten in de doelbeelden** en teruggerekend naar 1440×900. Ze gaan voor alle eerdere typografische waarden:
+
+| Element | Grootte/gewicht (desktop 1440) | iPad liggend |
+| --- | --- | --- |
+| Schermtitel (Reis, Voortgang …) | 44/700 | 36/700 |
+| Kaarttitel (Steden 7–12 in de hoofdstukkaart) | 32/700 | 28/700 |
+| Nav-items | 18/600, icoon 22 | 16/600 |
+| Rijen (hoofdstukken, fouten, chips, tegels) | 17/600 | 16/600 |
+| Tellers rechtsboven (14 / 24) | 20/600 | 18/600 |
+| Kerncijfers in tegels (6 / 8, 1 / 11) | 40/700 | 32/700 |
+| Toetsscore | 64/600, violet | 52/600 |
+| Secundair (overgeslagen, legenda) | 14/500, inkt 62% | 13/500 |
+| Primaire pil | hoogte 52, tekst 18/600 | 48, 17/600 |
+
+**Beeld:**
+- **Wash:** geen gradiënt meer over het inhoudsvlak en verzadiging 1,0. Alleen achter de zijbalk mag een lichte wash staan. Het artwork moet even helder zijn als het bronbestand.
+- **Reliëf:** warmer en dieper, zoals in de doelbeelden: hillshade sterker (contrast ±1,3), groen naar olijf en geel en minder neon, en sneeuw op de Alpen zoals in de render-laag. Slagschaduw zoals afgesproken.
+- **Illustraties in de tegels van Beloningen:** 72 px, de Vespa en de pizza's 140 px.
+
+**Per scherm:**
+- **Voortgang:**
+  - de kaart wordt ook hier Eiland (Italië zwevend, plekken gekleurd), niet de schoolkaart in een kader;
+  - de lijst toont **alle 11** hoofdstukken zonder afsnijding (de rijhoogte past zich aan, minimaal 40 px);
+  - check: geen afgesneden rij.
+- **Toets resultaat:** het label "Toets" boven de score wordt nergens bedekt (door het blad van het artwork of een rand); de score staat in een glaskaart, zoals in het doelbeeld.
+
+**Check:** in `qa-v3-afwerking.py` komen minimumgroottes per elementtype erbij (rij ≥ 17 px, titel ≥ 44 px, nav ≥ 18 px op desktop).
+
 ## Per render: overnemen en afwijken
 
 | Render | Overnemen | Niet overnemen / afwijken |

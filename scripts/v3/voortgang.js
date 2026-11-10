@@ -87,7 +87,8 @@
   const side=make('div','v3VgSide');side.append(section('Hoofdstukken','v3VgHoofdstukken',list));
   const grid2=make('div','v3VgGrid');grid2.append(fig,side);
   const row=make('div','v3VgRow');row.append(dagdoel,pizzas,rides);
-  view.replaceChildren(titleBar,grid2,row,section('Toetsen','v3VgToetsTitel',toetsen),section('Kennis-paspoort','v3VgPaspoortTitel',pass));
+  const overview=make('div','v3VgOverview');overview.append(titleBar,grid2,row);
+  view.replaceChildren(overview,section('Toetsen','v3VgToetsTitel',toetsen),section('Kennis-paspoort','v3VgPaspoortTitel',pass));
  });
  V.voortgang={passport};
 })();

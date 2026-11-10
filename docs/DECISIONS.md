@@ -921,3 +921,7 @@ BG-03 Kust is de standaardachtergrond; BG-01 Toscane en BG-02 Meer blijven kiesb
 De zijbalk is wit 70% met blur 28 en saturatie .6, ook in de les. Een witte wash staat uitsluitend onder de zijbalk; het inhoudsvlak blijft vrij. Op Home staat die wash op het frame zelf, omdat de body daar de framevariabelen niet erft. De regel voor de les heeft dezelfde specificiteit als de bestaande Focus Mode-regel. Verminderde transparantie/meer contrast houdt de ondoorzichtige variant.
 
 De tintcheck meet CIE76 ΔE tegen D65-wit over een dicht raster van de getekende binnenzijde, met tekst, iconen en portret tijdelijk verborgen. Op BG-01/02/03, Home én Les, is de maximale ΔE ≤8; achtergrondkleur en saturatie worden ook uit de berekende CSS gecontroleerd. Bewijs: `docs/qa/v3-stijlbeeld/ronde2/point-2.json` en `sidebar-*.png`.
+
+## 2026-11-10 — Ronde 2, punt 3: Voortgang in één eerste frame
+
+Op desktop vanaf 1280 px vormt `v3VgOverview` één viewporthoog raster: titel, kaart plus elf rijen van 40 px, en drie tegels van 104 px. De balken blijven 10 px. Geen element in dit overzicht raakt de onderste framerand; de inhoud van de tegels blijft binnen de tegel. Toetsen en het kennis-paspoort beginnen volledig onder het eerste frame, gescheiden door witruimte en een rand; het werkblad blijft als geheel scrollen. iPad/telefoon behouden hun goedgekeurde scrollindeling. Gerichte framecheck en bestaande vijf Voortgang-cases groen; kaartgeometrie en lees-/beoordelingslogica ongewijzigd.

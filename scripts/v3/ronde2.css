@@ -8,3 +8,23 @@
 @media (min-width:768px) and (prefers-reduced-transparency:reduce),(min-width:768px) and (prefers-contrast:more){
  .v3,body.v3Les{--v3-glass-side:var(--v3-surface);--v3-side-filter:none}
 }
+
+.v3VgOverview{display:contents}
+.v3VgOverview>.v3VgTitleBar{grid-column:1/-1}
+@media (min-width:1280px){
+ .v3Reis[data-view=voortgang]>.v3View-voortgang{display:block}
+ .v3View-voortgang .v3VgOverview{display:grid;grid-template-columns:minmax(0,7fr) minmax(0,5fr);grid-template-rows:auto minmax(0,1fr) 104px;gap:var(--v3-gut);height:calc(100dvh - var(--v3-bar,0px) - 2*var(--v3-frame-m) - 2*var(--v3-inner))}
+ .v3VgOverview>.v3VgTitleBar{grid-column:1/-1;grid-row:1}
+ .v3VgOverview .v3VgKaart{grid-column:1;grid-row:2;min-height:0}
+ .v3VgOverview .v3VgSide{grid-column:2;grid-row:2;min-height:0}
+ .v3View-voortgang .v3VgSide .v3Card{padding:12px}
+ .v3View-voortgang .v3VgSide .v3VgChapters{gap:1px}
+ .v3View-voortgang .v3VgSide .v3VgChapters li{height:40px;min-height:40px;grid-template-rows:24px 10px;row-gap:2px}
+ .v3View-voortgang .v3VgSide .v3VgChapters .v3VgSteps{height:10px}
+ .v3VgOverview .v3VgRow{grid-column:1/-1;grid-row:3;height:104px;grid-template-rows:104px}
+ .v3View-voortgang .v3VgRow>.v3VgTile{grid-template-columns:48px minmax(0,1fr) auto;gap:12px;padding:12px 16px}
+ .v3View-voortgang .v3VgRow>.v3VgTile .v3VgTileIcon{grid-row:1}
+ .v3View-voortgang .v3VgRow>.v3VgTile .v3VgDots{grid-column:3;grid-row:1;justify-self:end;gap:4px}
+ .v3View-voortgang .v3VgRow>.v3VgTile .v3VgDots i{width:10px;height:10px}
+ .v3View-voortgang>.v3Card{margin-top:calc(var(--v3-inner) + 8px);border-top:1px solid var(--v3-line)}
+}

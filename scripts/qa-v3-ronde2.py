@@ -27,6 +27,20 @@ async def sidebar(p,bg):
  assert values[-1]<=8,result
  return result
 
+
+async def progress(p,bg):
+ await q.goto(p,'voortgang')
+ data=await p.evaluate("""()=>{const R=n=>{const r=n.getBoundingClientRect();return {l:r.left,t:r.top,r:r.right,b:r.bottom,w:r.width,h:r.height}};
+ const frame=R(document.querySelector('.v3Reis')),items=[...document.querySelectorAll('.v3VgKaart,.v3VgSide,.v3VgTile')].map(R),rows=[...document.querySelectorAll('.v3VgChapters li')].map(R),card=R(document.querySelector('.v3VgSide .v3Card')),following=[...document.querySelectorAll('.v3View-voortgang>.v3Card')].map(R);
+ const contentCuts=[...document.querySelectorAll('.v3VgTileText,.v3VgTile .v3VgDots')].filter(n=>{const r=R(n),p=R(n.closest('.v3VgTile'));return r.t<p.t||r.b>p.b||r.l<p.l||r.r>p.r}).length;
+ return {frame,items,rows,card,following,contentCuts,scrollTop:document.querySelector('.v3View-voortgang').scrollTop};}""")
+ assert data['scrollTop']==0 and data['contentCuts']==0,data
+ assert len(data['rows'])==11 and all(r['h']>=40 and r['t']>=data['card']['t'] and r['b']<=data['card']['b'] for r in data['rows']),data
+ assert all(r['b']<=data['frame']['b']-1 and r['t']>=data['frame']['t'] for r in data['items']),data
+ assert all(r['t']>=data['frame']['b'] for r in data['following']),data
+ await p.screenshot(path=str(OUT/f'voortgang-fit-{bg}.png'))
+ return data
+
 async def main(point):
  OUT.mkdir(parents=True,exist_ok=True);runs={}
  async with async_playwright() as pw:
@@ -38,6 +52,7 @@ async def main(point):
    data=await p.evaluate('''()=>({bg:window.TOPO_V3_BG,links:[...document.querySelectorAll('.v3Bg')].map(n=>n.hash),active:document.querySelector('.v3Bg[aria-current]')?.textContent})''')
    assert data['bg']==('bg03' if bg=='default' else bg),data
    assert data['links']==['#bezig/bg01','#bezig/bg02','#bezig'],data
+   if point==3:data['progress']=await progress(p,bg)
    if point==2:
     data['sidebar']=await sidebar(p,bg)
     await q.goto(p,'les');data['lessonSidebar']=await sidebar(p,bg+'-les')

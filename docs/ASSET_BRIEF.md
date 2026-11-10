@@ -167,5 +167,5 @@ assets/art/
 ```
 
 - WebP, uitsneden op ware grootte (Nino ~600 px hoog, baksels 256 px, stempels 512 px, hero 1680×560), plus een lijst met bron en prompt per asset (`assets/art/CREDITS.md`).
-- Originele PNG's niet in git.
+- Originele PNG's (ongeschaald, met alfa) als master in `assets/art/masters/`, zelfde naam als de WebP.
 - Bestaande Italië-art blijft in `output/art/` totdat het platform de nieuwe map gebruikt.

@@ -440,3 +440,12 @@ Reservekopieën en reset horen in het algemene instellingenmenu. Wis voortgang b
 - **Daarna:** Reis met hoofdstuk 1 (Steden 1–6) geselecteerd. Start het aanbod een les, dan blijft die les staan.
 - **Preview:** de demo `#welkom` is een eerste bezoek, zonder profiel en zonder introductie.
 - **Fix bij deze ronde:** op 320 px werden de hoofdstuknamen in Voortgang met "…" afgekapt. Ze breken nu af over twee regels.
+
+## 2026-11-10 — V3 basiskleur violet; visuele herziening V3.0
+
+- **Kleur:** violet (`viola`) wordt het standaardthema van V3 (besluit eigenaar). Dit vervangt "Italia (terracotta) als standaard" van 9 november. Het land komt terug in artwork, driekleur, stempels en scènes, niet in de primaire knopkleur. Terracotta blijft hooguit als artworkkleur. De landthema's voor Frankrijk en volgende landen volgen dezelfde regel: één UI-palet, het land zit in het beeld.
+- **Visuele herziening:** zie `docs/v3/DESIGN_AUDIT_V3_0.md`.
+  - Eerst een conceptrender per scherm: Les, Oefenen, Toets instellen, Toets resultaat, Beloningen, Voortgang. De eigenaar keurt die goed.
+  - Daarna een gedeelde visuele laag: canvas, glas, typografie, pilknop, zwevende kaart en reliëf zonder waas.
+  - Daarna scherm voor scherm, met render en build naast elkaar als bewijs.
+- **Fix 4 van de review vervalt** (de V2-zoombalk in de les). De les wordt opnieuw ontworpen.

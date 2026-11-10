@@ -1,0 +1,10 @@
+/* Lead designer, Ronde 2: local material and calibrated first-viewport refinements. */
+@media (min-width:768px){
+ .v3,body.v3Les{--v3-glass-side:rgba(255,255,255,.70);--v3-side-filter:blur(28px) saturate(.6)}
+ .v3Reis{background:linear-gradient(rgba(255,255,255,.72),rgba(255,255,255,.72)) left top/var(--v3-side-w) 100% no-repeat}
+ .v3Reis>.v3Side,body.v3Les .v3ShellNav.v3{-webkit-backdrop-filter:var(--v3-side-filter);backdrop-filter:var(--v3-side-filter)}
+ body:is(.v3Home,.v3Les)::before{background:rgba(255,255,255,.72)}
+}
+@media (min-width:768px) and (prefers-reduced-transparency:reduce),(min-width:768px) and (prefers-contrast:more){
+ .v3,body.v3Les{--v3-glass-side:var(--v3-surface);--v3-side-filter:none}
+}

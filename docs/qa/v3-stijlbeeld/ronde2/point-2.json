@@ -1,0 +1,107 @@
+{
+  "point": 2,
+  "previewSha256": "6e478313e2cd8a1d825425ed98712e9def35aa5891933d1dedef0a6d92f33215",
+  "runs": {
+    "default": {
+      "bg": "bg03",
+      "links": [
+        "#bezig/bg01",
+        "#bezig/bg02",
+        "#bezig"
+      ],
+      "active": "BG-03 Kust",
+      "sidebar": {
+        "background": "rgba(255, 255, 255, 0.7)",
+        "filter": "blur(28px) saturate(0.6)",
+        "metric": "CIE76 / D65 / sRGB",
+        "samples": 9880,
+        "maxDeltaE": 6.118,
+        "p95DeltaE": 5.473
+      },
+      "lessonSidebar": {
+        "background": "rgba(255, 255, 255, 0.7)",
+        "filter": "blur(28px) saturate(0.6)",
+        "metric": "CIE76 / D65 / sRGB",
+        "samples": 9880,
+        "maxDeltaE": 5.85,
+        "p95DeltaE": 5.473
+      }
+    },
+    "bg01": {
+      "bg": "bg01",
+      "links": [
+        "#bezig/bg01",
+        "#bezig/bg02",
+        "#bezig"
+      ],
+      "active": "BG-01 Toscane",
+      "sidebar": {
+        "background": "rgba(255, 255, 255, 0.7)",
+        "filter": "blur(28px) saturate(0.6)",
+        "metric": "CIE76 / D65 / sRGB",
+        "samples": 9880,
+        "maxDeltaE": 6.04,
+        "p95DeltaE": 5.192
+      },
+      "lessonSidebar": {
+        "background": "rgba(255, 255, 255, 0.7)",
+        "filter": "blur(28px) saturate(0.6)",
+        "metric": "CIE76 / D65 / sRGB",
+        "samples": 9880,
+        "maxDeltaE": 5.852,
+        "p95DeltaE": 5.144
+      }
+    },
+    "bg02": {
+      "bg": "bg02",
+      "links": [
+        "#bezig/bg01",
+        "#bezig/bg02",
+        "#bezig"
+      ],
+      "active": "BG-02 Meer",
+      "sidebar": {
+        "background": "rgba(255, 255, 255, 0.7)",
+        "filter": "blur(28px) saturate(0.6)",
+        "metric": "CIE76 / D65 / sRGB",
+        "samples": 9880,
+        "maxDeltaE": 5.722,
+        "p95DeltaE": 4.468
+      },
+      "lessonSidebar": {
+        "background": "rgba(255, 255, 255, 0.7)",
+        "filter": "blur(28px) saturate(0.6)",
+        "metric": "CIE76 / D65 / sRGB",
+        "samples": 9880,
+        "maxDeltaE": 5.192,
+        "p95DeltaE": 4.419
+      }
+    },
+    "bg03": {
+      "bg": "bg03",
+      "links": [
+        "#bezig/bg01",
+        "#bezig/bg02",
+        "#bezig"
+      ],
+      "active": "BG-03 Kust",
+      "sidebar": {
+        "background": "rgba(255, 255, 255, 0.7)",
+        "filter": "blur(28px) saturate(0.6)",
+        "metric": "CIE76 / D65 / sRGB",
+        "samples": 9880,
+        "maxDeltaE": 6.118,
+        "p95DeltaE": 5.473
+      },
+      "lessonSidebar": {
+        "background": "rgba(255, 255, 255, 0.7)",
+        "filter": "blur(28px) saturate(0.6)",
+        "metric": "CIE76 / D65 / sRGB",
+        "samples": 9880,
+        "maxDeltaE": 5.85,
+        "p95DeltaE": 5.473
+      }
+    }
+  },
+  "pass": true
+}

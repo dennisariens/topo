@@ -915,3 +915,9 @@ Volgens renders/README § "Afwerking na fase B" en § "Bijstelling eigenaar (10-
 ## 2026-11-10 — Ronde 2, punt 1: Kust als standaard
 
 BG-03 Kust is de standaardachtergrond; BG-01 Toscane en BG-02 Meer blijven kiesbaar. De previewlinks bewaren de achtergrond bij wisselen van thema of demosituatie. De QA kiest BG-01/02/03 nu expliciet en verwacht Kust zonder achtergrondoptie. Gerichte check: `qa-v3-ronde2.py --point 1` (standaard plus alle drie keuzes), lint groen. Geen wijziging van `index.html` of gedrag.
+
+## 2026-11-10 — Ronde 2, punt 2: neutrale zijbalk
+
+De zijbalk is wit 70% met blur 28 en saturatie .6, ook in de les. Een witte wash staat uitsluitend onder de zijbalk; het inhoudsvlak blijft vrij. Op Home staat die wash op het frame zelf, omdat de body daar de framevariabelen niet erft. De regel voor de les heeft dezelfde specificiteit als de bestaande Focus Mode-regel. Verminderde transparantie/meer contrast houdt de ondoorzichtige variant.
+
+De tintcheck meet CIE76 ΔE tegen D65-wit over een dicht raster van de getekende binnenzijde, met tekst, iconen en portret tijdelijk verborgen. Op BG-01/02/03, Home én Les, is de maximale ΔE ≤8; achtergrondkleur en saturatie worden ook uit de berekende CSS gecontroleerd. Bewijs: `docs/qa/v3-stijlbeeld/ronde2/point-2.json` en `sidebar-*.png`.

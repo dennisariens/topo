@@ -4,6 +4,8 @@ Branch `codex/topo-v3` vanaf de V2-afsluiting `f53dc0b` (voorouder `v2.0.2` = `8
 
 **V3.0 deel 5 — Kennismaking** (9 november): de V2-eerste-keerdialoog is één V3-scène met welkomstpose, naam, favoriete pizza, Andiamo! en Start meteen; de hulpteksten zijn weg. Daarna opent Reis met hoofdstuk 1. Profielschema 1 en de V2-regel voor het eenmalig opnieuw aanbieden blijven gelijk. Preview-demo `#welkom`. [Bewijs](qa/v3-kennismaking/README.md).
 
+**Fix (10 november):** Toets instellen toont de hoofdstukkeuze meteen; eerder pas na een volgende tik (DECISIONS 10-11).
+
 **V3.0 fase B — stap 4, Les volgens `R-les`** (10 november):
 - de stappenbalk als twee glaspillen, met lijniconen in de stappen;
 - de vraag als het enige display-element, de antwoordknoppen als pillen met icoon, een compacte pizzameter;

@@ -41,3 +41,5 @@ Screenshots: `instellen-`, `resultaat-<formaat>.png` en `toets-desktop.png` / `t
 **Open punt:** de echte printdialoog en het papier zijn niet getest. Het PDF komt van Chromium.
 
 **Ruimte voor de tabbalk (review-fix 10 november).** Op de telefoon en op 320 px krijgen Kopieer, E-mail en Print elk toetsenbordfocus; ze staan dan minstens 16 px boven de tabbalk en zijn op hun middelpunt het bovenste element. Aan het einde van de pagina blijft minstens 8 px over (padding = gemeten tabbalk + 16 px). Screenshot: `resultaat-einde-telefoon.png` en `resultaat-einde-telefoon-320.png`. De lopende toets zit in de lesshell (V2-padding); daar klikt de QA elke vraag door met echte klikken.
+
+**Fix 10-11:** een gekozen hoofdstuk is direct zichtbaar gekozen; uitzetten werkt ook direct (`run.toggle` in `results.json`). Op de oude code faalt deze check.

@@ -714,3 +714,13 @@ De les volgt nu de opbouw van `R-les`, met de stijl van `R-oefenen-ijk` en de Ve
 **Niet overgenomen:** de render toont alleen − en +. De knoppen 100%, Heel Italië en Zoom op hoofdstuk zijn bestaand gedrag en blijven staan.
 
 **Bewijs:** `scripts/qa-v3-faseb-les.py` en `docs/qa/v3-stijlbeeld/les-ijk-{desktop,ipad-liggend}.jpg`. De lesflow zelf blijft gedekt door `qa-v3-les.py`.
+
+## 2026-11-10 — Fix: Toets instellen toont de hoofdstukkeuze meteen
+
+Gevonden bij fase B, stap 5. Het fout zat er al in sinds V3.0 deel 3.
+
+**Wat er misging:** een tik op een hoofdstukchip in Toets instellen veranderde de keuze wel, maar het scherm toonde die pas na een volgende tik op Vorm of Lengte. Ook de lengtechips, die van de pool afhangen, liepen daardoor achter. Het startpad en de toets zelf waren in orde: die lazen de keuze correct.
+
+**Fix:** de hoofdstukkeuze rendert nu direct, net als Vorm en Lengte. Er is geen andere wijziging.
+
+**Test:** `qa-v3-toets.py` kiest een extra hoofdstuk, controleert dat het direct gekozen is en zet het weer uit. Op de oude code faalt die check (desktop en iPad).

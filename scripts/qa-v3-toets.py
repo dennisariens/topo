@@ -2,7 +2,7 @@
 """TOPO V3.0 — Toets: set-up, toets, result (docs/v3/V3_0_REST.md § 2).
 
 Per viewport (desktop, iPad landscape, iPad portrait, phone, 320 px), on #afgerond:
-  * set-up: default chapters are the completed ones, form Beide, length 10; Start toets;
+  * set-up: default chapters are the completed ones, form Beide, length 10; a chosen chapter shows at once; Start toets;
   * the toets runs in the V2 engine inside the lesson shell (tab Toets): only the count `n / 10` in the bar; no hints,
     no Oefen fouten, no pizza meter, no schoolblad; answers by real clicks/keys: 7 right, 2 wrong, 1 skipped;
   * no rewards: slices, pizzas, trips and the V2 good-counter unchanged, no reward dialog ever opened;
@@ -89,6 +89,15 @@ async def main():
             if s['form'] != ['both'] or s['length'] != ['10'] or not s['start']: fail(f'setup defaults {s["form"]} {s["length"]} {s["start"]}')
             if s['active'] != 'v3ToetsTitle': fail(f'setup focus {s["active"]}')
             await pg.screenshot(path=str(OUT / f'instellen-{name}.png'))
+            # A chosen chapter shows at once (DECISIONS 10-11: fix, the set-up showed the choice only after another tap).
+            extra = next((c for c in await pg.evaluate('ROUTE_CHAPTERS.map(c => c.id)') if c not in s['chapters']), None)
+            if extra:
+                await click(f'[aria-labelledby=v3ToetsHoofdstukken] [data-group="{extra}"]'); await wait(200)
+                on = (await pg.evaluate(SETUP_JS))['chapters']
+                await click(f'[aria-labelledby=v3ToetsHoofdstukken] [data-group="{extra}"]'); await wait(200)
+                off = (await pg.evaluate(SETUP_JS))['chapters']
+                run['toggle'] = {'chapter': extra, 'on': extra in on, 'off': extra not in off}
+                if extra not in on or extra in off: fail(f'chapter choice not shown at once ({extra}: on={extra in on}, off={extra not in off})')
 
             await click('.v3View-toets .v3Start'); await wait(900)
             s = await st(); run['start'] = s

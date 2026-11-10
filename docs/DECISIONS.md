@@ -827,7 +827,9 @@ De data blijft gelijk: plekken uit het V2-paspoort, hoofdstukken uit `TopoRoute`
 - **Resolutie:** de WebP's zijn 600 px hoog (poses) en 800 px breed (Vespa). Dat is genoeg tot ±300 CSS-px. Voor het toetsresultaat en de kennismaking zijn de bron-PNG's nodig, met ≥ 1200 px hoog (2× voor iPad); die staan niet in Git. De eigenaar levert ze aan, of de 600 px-versie wordt daar kleiner getoond.
 - **Branchhygiëne:** `art/master` wordt **niet** gemerged, want de basis is oud en DECISIONS en docs zouden botsen. De assets gaan via de V3-artworkpijplijn (`art/v3-render-assets`: masters, WebP, `manifest.json` met SHA256 en status, Hermes-QA). Claude Code integreert daarna.
 - **Afstemming met de `art/master`-briefing:**
-  - **3a/3b paspoort (teal omslag):** vervalt. Het paspoort ís het Reisboekje met omslag B (rood leer, kompasroos, DECISIONS 10-11).
+  - **3a/3b paspoort (teal omslag):** niet in V3.0; daar is het Reisboekje met omslag B het boek. De beelden bestaan al (masters `paspoort-cover`, `paspoort-binnen`). Bij het landpakket (Frankrijk) kijken we opnieuw: wordt het teal paspoort het overkoepelende boek met een stempel per land, en blijft elk Reisboekje van het land? Beslissing van de eigenaar.
   - **6 Hero Frankrijk:** zonder tekst in beeld; het bord blijft leeg (regel: geen tekst in artwork).
   - **Uniform:** het blauwe shirt dicht geknoopt, zoals in deze poses. Korte of opgerolde mouwen mogen; het portret blijft leidend.
   - **Bakkerijbeloningen Frankrijk:** past in het landpakket als landeigen beloningsartwork. De regel (8 punten, 3 per rit) blijft in de kern.
+
+- **Masters ontvangen** (`art/master` `339c420`, `assets/art/masters/universal/`): Nino-poses 1024×1536 en Vespa's 1536×1024 (icoon 1254²), RGBA met echte alfa en schone uitsnede. Genoeg voor het toetsresultaat en de kennismaking (tot ±600 CSS-px hoog op 2×). De grens van 300 CSS-px vervalt.

@@ -1,0 +1,43 @@
+{
+  "point": 1,
+  "previewSha256": "d0bdf80e36c2309b061f5be683ecf20ec39ebd0c79ae2570984139f0c933cc52",
+  "runs": {
+    "default": {
+      "bg": "bg03",
+      "links": [
+        "#bezig/bg01",
+        "#bezig/bg02",
+        "#bezig"
+      ],
+      "active": "BG-03 Kust"
+    },
+    "bg01": {
+      "bg": "bg01",
+      "links": [
+        "#bezig/bg01",
+        "#bezig/bg02",
+        "#bezig"
+      ],
+      "active": "BG-01 Toscane"
+    },
+    "bg02": {
+      "bg": "bg02",
+      "links": [
+        "#bezig/bg01",
+        "#bezig/bg02",
+        "#bezig"
+      ],
+      "active": "BG-02 Meer"
+    },
+    "bg03": {
+      "bg": "bg03",
+      "links": [
+        "#bezig/bg01",
+        "#bezig/bg02",
+        "#bezig"
+      ],
+      "active": "BG-03 Kust"
+    }
+  },
+  "pass": true
+}

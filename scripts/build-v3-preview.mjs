@@ -26,8 +26,8 @@ const states=`(function(){
   'afgerond':make('Haltes afgerond',[{stage:3,gold:1,due:1},{stage:3,gold:1},{stage:3},{stage:3}],{good:61,pizzas:7,slices:3,trips:2}),
   'alles':make('Alles af',IDS.map(()=>({stage:3,gold:1})),{good:168,pizzas:21,trips:7})
  };
- const [raw0,...opts]=location.hash.slice(1).split('/'),theme=opts.includes('italia')?'italia':'viola',bgKey=opts.find(o=>/^bg0[123]$/.test(o))||'bg01',raw1=raw0||'',pair=/^thema-(ipad-)?/.exec(raw1),raw=pair?raw1.slice(pair[0].length):raw1,side=raw.startsWith('naast-'),key=side?raw.slice(6):raw,chosen=S[key]||S.bezig,th=theme==='viola'?'viola':'italia';
- window.TOPO_V3_THEME=th;window.TOPO_V3_BG=bgKey;const tail=(th==='italia'?'/italia':'')+(bgKey!=='bg01'?'/'+bgKey:'');
+ const [raw0,...opts]=location.hash.slice(1).split('/'),theme=opts.includes('italia')?'italia':'viola',bgKey=opts.find(o=>/^bg0[123]$/.test(o))||'bg03',raw1=raw0||'',pair=/^thema-(ipad-)?/.exec(raw1),raw=pair?raw1.slice(pair[0].length):raw1,side=raw.startsWith('naast-'),key=side?raw.slice(6):raw,chosen=S[key]||S.bezig,th=theme==='viola'?'viola':'italia';
+ window.TOPO_V3_THEME=th;window.TOPO_V3_BG=bgKey;const tail=(th==='italia'?'/italia':'')+(bgKey!=='bg03'?'/'+bgKey:'');
  // Theme pair (stijlbeeld): Italia and Viola side by side, desktop 1440×900 or iPad landscape 1180×820, two live frames.
  if(pair){
   window.stop();addEventListener('hashchange',()=>location.reload());
@@ -55,9 +55,9 @@ const entries=new Map([['topo-italie-v3',JSON.stringify(chosen.progress)],...(ch
   const bar=document.createElement('nav');bar.className='v3PreviewBar';bar.setAttribute('aria-label','Demostanden');
   const label=document.createElement('strong');label.textContent='V3-preview · demo · niets wordt bewaard';bar.append(label);
   for(const [id,s] of Object.entries(S)){const a=document.createElement('a');a.href='#'+id+tail;a.textContent=s.title;if(s===chosen)a.setAttribute('aria-current','page');bar.append(a);}
-  for(const t of ['italia','viola']){const a=document.createElement('a');a.href='#'+(S[key]?key:'bezig')+(t==='italia'?'/italia':'')+(bgKey!=='bg01'?'/'+bgKey:'');a.textContent=t==='viola'?'Viola':'Italia';if(t===th)a.setAttribute('aria-current','page');a.className='v3Theme';bar.append(a);}
-  // Background (render assets): BG-01 standard, BG-02 and BG-03 as alternatives.
-  for(const [k,label] of [['bg01','BG-01 Toscane'],['bg02','BG-02 Meer'],['bg03','BG-03 Kust']]){const a=document.createElement('a');a.href='#'+(S[key]?key:'bezig')+(th==='italia'?'/italia':'')+(k!=='bg01'?'/'+k:'');a.textContent=label;if(k===bgKey)a.setAttribute('aria-current','page');a.className='v3Bg';bar.append(a);}
+  for(const t of ['italia','viola']){const a=document.createElement('a');a.href='#'+(S[key]?key:'bezig')+(t==='italia'?'/italia':'')+(bgKey!=='bg03'?'/'+bgKey:'');a.textContent=t==='viola'?'Viola':'Italia';if(t===th)a.setAttribute('aria-current','page');a.className='v3Theme';bar.append(a);}
+  // Background (render assets): BG-03 standard, BG-01 and BG-02 as alternatives.
+  for(const [k,label] of [['bg01','BG-01 Toscane'],['bg02','BG-02 Meer'],['bg03','BG-03 Kust']]){const a=document.createElement('a');a.href='#'+(S[key]?key:'bezig')+(th==='italia'?'/italia':'')+(k!=='bg03'?'/'+k:'');a.textContent=label;if(k===bgKey)a.setAttribute('aria-current','page');a.className='v3Bg';bar.append(a);}
   const side=document.createElement('a');side.href='#naast-'+(S[key]?key:'bezig')+tail;side.textContent='Naast elkaar: desktop + telefoon';bar.append(side);
   const pairA=document.createElement('a');pairA.href='#thema-'+(S[key]?key:'bezig');pairA.textContent='Italia + Viola';bar.append(pairA);
   if(window.top!==window)bar.hidden=true;

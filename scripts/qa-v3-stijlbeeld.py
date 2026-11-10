@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
 """TOPO V3 — stijlbeeld (renderniveau) QA for Reis.
 
-Checks the style image against the brief (docs/v3/ARTWORK_BRIEF.md): BG-01 full-bleed behind the app on desktop and
-iPad (BG-02/BG-03 via #…/bg02 and /bg03; none on phone), separate glass panels on one level (radius 28, blur, 1 px inner edge, soft shadow; phase A 10-11),
+Checks the style image against the brief (docs/v3/ARTWORK_BRIEF.md): BG-03 full-bleed behind the app on desktop and
+iPad (BG-01/BG-02 via #…/bg01 and /bg02; none on phone), separate glass panels on one level (radius 28, blur, 1 px inner edge, soft shadow; phase A 10-11),
 the render assets from assets/v3/render/manifest.json (NINO-PORTRET, IC-slice/IC-vespa at the counters, kop per
 chapter, the Beloningen view with VE-01 and IC-pizza/stamp/gold/postcard, counts checked against the V2 Reisboekje),
 the 11 chapter miniatures (8 #75 scenes from assets/v3/scenes/manifest.json + Roma/Venezia/Napoli; byte-checked), and the z8
@@ -170,8 +170,8 @@ async def main():
                 run['art'] = {k: (dsha(v) if isinstance(v, str) and v.startswith('data:') else v) for k, v in run['art'].items()}
                 await pg.screenshot(path=str(OUT / f'{key}.png'))
                 run['errors'] = errors; res['runs'][key] = run; await pg.close()
-        # Background alternatives BG-02 and BG-03 (preview switch).
-        for bg in ('bg02', 'bg03'):
+        # Background alternatives BG-01 and BG-02 (preview switch).
+        for bg in ('bg01', 'bg02'):
             pg, errors = await page(b, 1440, 900, 'bezig/' + bg)
             res.setdefault('bgAlternatives', {})[bg] = {'key': await pg.evaluate('window.TOPO_V3_BG'), 'sha256': dsha((await pg.evaluate(PROBE))['backdrop']['uri']),
                                                         'switch': await pg.evaluate('[...document.querySelectorAll(".v3Bg")].map(a=>a.getAttribute("href").split("#")[1])')}
@@ -208,8 +208,8 @@ async def main():
     every = lambda d, f: all(f(v) for v in d.values())
     res['summary'] = {
         'indexUnchanged': res['indexSha256'].startswith('3aced3c3'),
-        'backdropIsBG01': every(big, lambda r: r['backdrop']['sha256'] == BG_SHA['bg01'] and r['backdrop']['size'] == 'cover'),
-        'bgAlternativesSwitch': all(v['key'] == k and v['sha256'] == BG_SHA[k] and v['switch'] == ['bezig', 'bezig/bg02', 'bezig/bg03'] for k, v in res['bgAlternatives'].items()),
+        'backdropIsBG03': every(big, lambda r: r['backdrop']['sha256'] == BG_SHA['bg03'] and r['backdrop']['size'] == 'cover'),
+        'bgAlternativesSwitch': all(v['key'] == k and v['sha256'] == BG_SHA[k] and v['switch'] == ['bezig/bg01', 'bezig/bg02', 'bezig'] for k, v in res['bgAlternatives'].items()),
         'phoneNoBackdrop': every({k: v for k, v in runs.items() if k.startswith('phone')}, lambda r: not r['backdrop']['image']),
         # One frame (radius 28, no plate); the sidebar is its glass left column; list and panel float as glass with a shadow.
         'glassPanels': every(big, lambda r: r['window']['bgAlpha'] == 0 and r['window']['backdropFilter'] == 'none' and r['window']['radius'] == '28px' and min(r['window']['gaps']) >= 16
@@ -253,7 +253,7 @@ async def main():
     res['comparisons'] = comps
     (OUT / 'results.json').write_text(json.dumps(res, indent=1, ensure_ascii=False) + '\n')
     print(json.dumps(res['summary'], indent=1, ensure_ascii=False))
-    bad = [k for k in ('indexUnchanged', 'backdropIsBG01', 'bgAlternativesSwitch', 'phoneNoBackdrop', 'glassPanels', 'reducedTransparencyOpaque', 'miniaturesMatchManifest',
+    bad = [k for k in ('indexUnchanged', 'backdropIsBG03', 'bgAlternativesSwitch', 'phoneNoBackdrop', 'glassPanels', 'reducedTransparencyOpaque', 'miniaturesMatchManifest',
                        'cardWithoutKop', 'portraitIsNinoPortret', 'counterIcons', 'rewardsArt', 'rewardsCountsMatchV2Book', 'rewardsView', 'lessonToRewards', 'reliefDefaultZ8', 'reliefLayersMatchProvenance', 'reliefLayerOrder', 'reliefIsDecorationOnly', 'neighboursDimmed', 'geometryAllSame', 'primaryAboveFold') if not res['summary'][k]]
     bad += [k for k in ('namesClipped', 'horizontalOverflow', 'rewardsLayout') if res['summary'][k]] + (['errors'] if res['summary']['errors'] else [])
     print('problems:', bad or 'none')

@@ -160,7 +160,7 @@ async def main():
                     ctx = await b.new_context(viewport={'width': w, 'height': h}, device_scale_factor=1, has_touch=vp != 'desktop')
                     pg = await ctx.new_page(); errs = []; pg.on('pageerror', lambda e: errs.append(str(e)))
                     await (await ctx.new_cdp_session(pg)).send('Emulation.setEmulatedMedia', {'features': [{'name': 'prefers-reduced-transparency', 'value': 'no-preference'}]})
-                    await pg.goto(HTML.as_uri() + '#bezig' + ('' if bg == 'bg01' else '/' + bg)); await pg.wait_for_timeout(2000)
+                    await pg.goto(HTML.as_uri() + '#bezig' + '/' + bg); await pg.wait_for_timeout(2000)
                     await goto(pg, screen)
                     lay = await pg.evaluate(LAYOUT, screen); sc = await pg.evaluate(SCREEN, screen)
                     if screen == 'les' and await pg.evaluate("document.body.dataset.focusShell === 'true'"): lay = None

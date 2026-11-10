@@ -911,3 +911,7 @@ Volgens renders/README § "Afwerking na fase B" en § "Bijstelling eigenaar (10-
 - De minimumtitelcheck meet echte schermtitels, niet de vraagkop van de V2-focusles. De tabelkolom iPad betreft liggend; de bestaande staande Reis-titel blijft 30 px. De actuele controles volgen de kalibratie, zonder de functionele controles uit eerdere fasen te verwijderen.
 - De interne codereview vervangt geen onafhankelijke Hermes-review. Het gevonden risico van oude groene QA-uitslagen is hersteld. De iPad Focus Mode-uitzondering en de twee chipkolommen op desktop Oefenen staan zichtbaar in het reviewpakket.
 - **Volgorde na bouw:** stoppen na stap 5, eerst de lead designer; die vraagt daarna de Hermes-hertest aan. Dit volgt de directe eigenaarsopdracht en gaat voor het onmiddellijke hertestverzoek in de oudere overdracht. Geen verzoek verstuurd, geen merge, deploy, publicatie of downloadvervanging.
+
+## 2026-11-10 — Ronde 2, punt 1: Kust als standaard
+
+BG-03 Kust is de standaardachtergrond; BG-01 Toscane en BG-02 Meer blijven kiesbaar. De previewlinks bewaren de achtergrond bij wisselen van thema of demosituatie. De QA kiest BG-01/02/03 nu expliciet en verwacht Kust zonder achtergrondoptie. Gerichte check: `qa-v3-ronde2.py --point 1` (standaard plus alle drie keuzes), lint groen. Geen wijziging van `index.html` of gedrag.

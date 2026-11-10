@@ -307,8 +307,8 @@
   const m=model();
   if(!ui.selected||!m.chapters.some(c=>c.id===ui.selected))ui.selected=(m.active&&m.chapters.find(c=>c.id===m.active.chapterId)||m.next||m.chapters.at(-1)).id;
   const c=m.chapters.find(x=>x.id===ui.selected);
-  // Backdrop: BG-01 (BG-02/BG-03 in the preview), full-bleed behind the window; the V2 panorama only as fallback.
-  const pano=V3ART?.bg?.[window.TOPO_V3_BG||'bg01']||V3ART?.bg?.bg01||$('.routeScene img')?.currentSrc||$('.routeScene img')?.src;
+  // Backdrop: BG-03 (BG-01/BG-02 in the preview), full-bleed behind the window; the V2 panorama only as fallback.
+  const pano=V3ART?.bg?.[window.TOPO_V3_BG||'bg03']||V3ART?.bg?.bg03||$('.routeScene img')?.currentSrc||$('.routeScene img')?.src;
   if(pano&&!document.body.style.getPropertyValue('--v3-pano'))document.body.style.setProperty('--v3-pano','url("'+pano+'")');
   root.dataset.view=views[ui.view]?ui.view:'reis';root.dataset.kaart=ui.kaart;
   markNav(root);

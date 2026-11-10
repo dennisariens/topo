@@ -1,45 +1,40 @@
 {
  "html": "output/html/TOPO-V3-Reis-Preview.html",
- "sha256": "12d974a95402f2c44ff3afd91d85265587e88dce90f4203d58ef431507e5d6db",
- "bytes": 50323521,
+ "sha256": "d06f6ea23f8b8a49054f53dbb283666a4c0c94b14075ad3ca6e83572b909a34b",
+ "bytes": 50341067,
  "layout": {
   "desktop/nieuw": {
    "frame": {
-    "viewBox": "27 0 863 1235",
+    "viewBox": "107 173 716 864",
     "mask": "none",
     "kept": {
-     "Frankrijk": 1,
+     "Frankrijk": 0.97,
      "Zwitserland": 1,
      "Oostenrijk": 1,
      "Slovenië": 1,
      "Kroatië": 1,
      "Sardinië": 1,
      "Sicilië": 1,
-     "label HONGARIJE": 1,
-     "label BOSNIË": 1,
-     "label TUNESIË": 1,
      "zee 1": 1,
      "zee 2": 1,
      "zee 3": 1,
      "zee 4": 1,
-     "zee 5": 1,
-     "Noord-Afrika": 1
+     "zee 5": 1
     },
     "outOfFrame": [
-     "label DUITSLAND"
+     "label BOSNIË",
+     "label DUITSLAND",
+     "label HONGARIJE",
+     "label TUNESIË"
     ],
     "visible": [
      "Frankrijk",
      "Kroatië",
-     "Noord-Afrika",
      "Oostenrijk",
      "Sardinië",
      "Sicilië",
      "Slovenië",
      "Zwitserland",
-     "label BOSNIË",
-     "label HONGARIJE",
-     "label TUNESIË",
      "zee 1",
      "zee 2",
      "zee 3",
@@ -48,15 +43,16 @@
     ]
    },
    "lastRowClear": true,
-   "primaryTop": 486,
-   "primaryBottom": 538,
+   "primaryTop": 768,
+   "primaryBottom": 820,
    "viewport": 900,
    "primaryVisible": true,
    "covered": false,
    "overlaps": [],
    "small": [],
    "clipped": [
-    "Instellingen"
+    "Instellingen",
+    "Hoofdstukken"
    ],
    "horizontalOverflow": false,
    "brokenWords": [],
@@ -75,13 +71,13 @@
     "names": 56
    },
    "switchOcclusion": {
-    "rectOverlap": 1447.3125,
+    "rectOverlap": 0,
     "covered": {}
    }
   },
   "desktop/bezig": {
    "frame": {
-    "viewBox": "27 0 863 1235",
+    "viewBox": "107 173 716 864",
     "mask": "none",
     "kept": {
      "Frankrijk": 1,
@@ -91,31 +87,26 @@
      "Kroatië": 1,
      "Sardinië": 1,
      "Sicilië": 1,
-     "label HONGARIJE": 1,
-     "label BOSNIË": 1,
-     "label TUNESIË": 1,
      "zee 1": 1,
      "zee 2": 1,
      "zee 3": 1,
      "zee 4": 1,
-     "zee 5": 1,
-     "Noord-Afrika": 1
+     "zee 5": 1
     },
     "outOfFrame": [
-     "label DUITSLAND"
+     "label BOSNIË",
+     "label DUITSLAND",
+     "label HONGARIJE",
+     "label TUNESIË"
     ],
     "visible": [
      "Frankrijk",
      "Kroatië",
-     "Noord-Afrika",
      "Oostenrijk",
      "Sardinië",
      "Sicilië",
      "Slovenië",
      "Zwitserland",
-     "label BOSNIË",
-     "label HONGARIJE",
-     "label TUNESIË",
      "zee 1",
      "zee 2",
      "zee 3",
@@ -124,15 +115,16 @@
     ]
    },
    "lastRowClear": true,
-   "primaryTop": 486,
-   "primaryBottom": 538,
+   "primaryTop": 720,
+   "primaryBottom": 772,
    "viewport": 900,
    "primaryVisible": true,
    "covered": false,
    "overlaps": [],
    "small": [],
    "clipped": [
-    "Instellingen"
+    "Instellingen",
+    "Hoofdstukken"
    ],
    "horizontalOverflow": false,
    "brokenWords": [],
@@ -151,47 +143,42 @@
     "names": 56
    },
    "switchOcclusion": {
-    "rectOverlap": 1447.3125,
+    "rectOverlap": 0,
     "covered": {}
    }
   },
   "desktop/afgerond": {
    "frame": {
-    "viewBox": "27 0 863 1235",
+    "viewBox": "107 173 716 864",
     "mask": "none",
     "kept": {
-     "Frankrijk": 1,
+     "Frankrijk": 0.97,
      "Zwitserland": 1,
      "Oostenrijk": 1,
      "Slovenië": 1,
      "Kroatië": 1,
      "Sardinië": 1,
      "Sicilië": 1,
-     "label HONGARIJE": 1,
-     "label BOSNIË": 1,
-     "label TUNESIË": 1,
      "zee 1": 1,
      "zee 2": 1,
      "zee 3": 1,
      "zee 4": 1,
-     "zee 5": 1,
-     "Noord-Afrika": 1
+     "zee 5": 1
     },
     "outOfFrame": [
-     "label DUITSLAND"
+     "label BOSNIË",
+     "label DUITSLAND",
+     "label HONGARIJE",
+     "label TUNESIË"
     ],
     "visible": [
      "Frankrijk",
      "Kroatië",
-     "Noord-Afrika",
      "Oostenrijk",
      "Sardinië",
      "Sicilië",
      "Slovenië",
      "Zwitserland",
-     "label BOSNIË",
-     "label HONGARIJE",
-     "label TUNESIË",
      "zee 1",
      "zee 2",
      "zee 3",
@@ -200,15 +187,16 @@
     ]
    },
    "lastRowClear": true,
-   "primaryTop": 486,
-   "primaryBottom": 538,
+   "primaryTop": 768,
+   "primaryBottom": 820,
    "viewport": 900,
    "primaryVisible": true,
    "covered": false,
    "overlaps": [],
    "small": [],
    "clipped": [
-    "Instellingen"
+    "Instellingen",
+    "Hoofdstukken"
    ],
    "horizontalOverflow": false,
    "brokenWords": [],
@@ -227,13 +215,13 @@
     "names": 56
    },
    "switchOcclusion": {
-    "rectOverlap": 1447.3125,
+    "rectOverlap": 0,
     "covered": {}
    }
   },
   "desktop/alles": {
    "frame": {
-    "viewBox": "27 0 863 1235",
+    "viewBox": "107 173 716 864",
     "mask": "none",
     "kept": {
      "Frankrijk": 1,
@@ -243,31 +231,26 @@
      "Kroatië": 1,
      "Sardinië": 1,
      "Sicilië": 1,
-     "label HONGARIJE": 1,
-     "label BOSNIË": 1,
-     "label TUNESIË": 1,
      "zee 1": 1,
      "zee 2": 1,
      "zee 3": 1,
      "zee 4": 1,
-     "zee 5": 1,
-     "Noord-Afrika": 1
+     "zee 5": 1
     },
     "outOfFrame": [
-     "label DUITSLAND"
+     "label BOSNIË",
+     "label DUITSLAND",
+     "label HONGARIJE",
+     "label TUNESIË"
     ],
     "visible": [
      "Frankrijk",
      "Kroatië",
-     "Noord-Afrika",
      "Oostenrijk",
      "Sardinië",
      "Sicilië",
      "Slovenië",
      "Zwitserland",
-     "label BOSNIË",
-     "label HONGARIJE",
-     "label TUNESIË",
      "zee 1",
      "zee 2",
      "zee 3",
@@ -276,15 +259,16 @@
     ]
    },
    "lastRowClear": true,
-   "primaryTop": 486,
-   "primaryBottom": 538,
+   "primaryTop": 720,
+   "primaryBottom": 772,
    "viewport": 900,
    "primaryVisible": true,
    "covered": false,
    "overlaps": [],
    "small": [],
    "clipped": [
-    "Instellingen"
+    "Instellingen",
+    "Hoofdstukken"
    ],
    "horizontalOverflow": false,
    "brokenWords": [],
@@ -303,13 +287,13 @@
     "names": 56
    },
    "switchOcclusion": {
-    "rectOverlap": 1447.3125,
+    "rectOverlap": 0,
     "covered": {}
    }
   },
   "ipad-portrait/nieuw": {
    "frame": {
-    "viewBox": "27 0 863 1235",
+    "viewBox": "107 173 716 864",
     "mask": "none",
     "kept": {
      "Frankrijk": 1,
@@ -319,31 +303,26 @@
      "Kroatië": 1,
      "Sardinië": 1,
      "Sicilië": 1,
-     "label HONGARIJE": 1,
-     "label BOSNIË": 1,
-     "label TUNESIË": 1,
      "zee 1": 1,
      "zee 2": 1,
      "zee 3": 1,
      "zee 4": 1,
-     "zee 5": 1,
-     "Noord-Afrika": 1
+     "zee 5": 1
     },
     "outOfFrame": [
-     "label DUITSLAND"
+     "label BOSNIË",
+     "label DUITSLAND",
+     "label HONGARIJE",
+     "label TUNESIË"
     ],
     "visible": [
      "Frankrijk",
      "Kroatië",
-     "Noord-Afrika",
      "Oostenrijk",
      "Sardinië",
      "Sicilië",
      "Slovenië",
      "Zwitserland",
-     "label BOSNIË",
-     "label HONGARIJE",
-     "label TUNESIË",
      "zee 1",
      "zee 2",
      "zee 3",
@@ -352,14 +331,16 @@
     ]
    },
    "lastRowClear": true,
-   "primaryTop": 474,
-   "primaryBottom": 526,
+   "primaryTop": 1064,
+   "primaryBottom": 1116,
    "viewport": 1180,
    "primaryVisible": true,
    "covered": false,
    "overlaps": [],
    "small": [],
-   "clipped": [],
+   "clipped": [
+    "Hoofdstukken"
+   ],
    "horizontalOverflow": false,
    "brokenWords": [],
    "labels": {
@@ -377,13 +358,13 @@
     "names": 56
    },
    "switchOcclusion": {
-    "rectOverlap": 4575.375,
+    "rectOverlap": 0,
     "covered": {}
    }
   },
   "ipad-portrait/bezig": {
    "frame": {
-    "viewBox": "27 0 863 1235",
+    "viewBox": "107 173 716 864",
     "mask": "none",
     "kept": {
      "Frankrijk": 1,
@@ -393,31 +374,26 @@
      "Kroatië": 1,
      "Sardinië": 1,
      "Sicilië": 1,
-     "label HONGARIJE": 1,
-     "label BOSNIË": 1,
-     "label TUNESIË": 1,
      "zee 1": 1,
      "zee 2": 1,
      "zee 3": 1,
      "zee 4": 1,
-     "zee 5": 1,
-     "Noord-Afrika": 1
+     "zee 5": 1
     },
     "outOfFrame": [
-     "label DUITSLAND"
+     "label BOSNIË",
+     "label DUITSLAND",
+     "label HONGARIJE",
+     "label TUNESIË"
     ],
     "visible": [
      "Frankrijk",
      "Kroatië",
-     "Noord-Afrika",
      "Oostenrijk",
      "Sardinië",
      "Sicilië",
      "Slovenië",
      "Zwitserland",
-     "label BOSNIË",
-     "label HONGARIJE",
-     "label TUNESIË",
      "zee 1",
      "zee 2",
      "zee 3",
@@ -426,16 +402,15 @@
     ]
    },
    "lastRowClear": true,
-   "primaryTop": 474,
-   "primaryBottom": 526,
+   "primaryTop": 1016,
+   "primaryBottom": 1068,
    "viewport": 1180,
    "primaryVisible": true,
    "covered": false,
    "overlaps": [],
    "small": [],
    "clipped": [
-    "overflow:14 / 24",
-    "overflow:0"
+    "Hoofdstukken"
    ],
    "horizontalOverflow": false,
    "brokenWords": [],
@@ -454,13 +429,13 @@
     "names": 56
    },
    "switchOcclusion": {
-    "rectOverlap": 12348,
+    "rectOverlap": 0,
     "covered": {}
    }
   },
   "ipad-portrait/afgerond": {
    "frame": {
-    "viewBox": "27 0 863 1235",
+    "viewBox": "107 173 716 864",
     "mask": "none",
     "kept": {
      "Frankrijk": 1,
@@ -470,31 +445,26 @@
      "Kroatië": 1,
      "Sardinië": 1,
      "Sicilië": 1,
-     "label HONGARIJE": 1,
-     "label BOSNIË": 1,
-     "label TUNESIË": 1,
      "zee 1": 1,
      "zee 2": 1,
      "zee 3": 1,
      "zee 4": 1,
-     "zee 5": 1,
-     "Noord-Afrika": 1
+     "zee 5": 1
     },
     "outOfFrame": [
-     "label DUITSLAND"
+     "label BOSNIË",
+     "label DUITSLAND",
+     "label HONGARIJE",
+     "label TUNESIË"
     ],
     "visible": [
      "Frankrijk",
      "Kroatië",
-     "Noord-Afrika",
      "Oostenrijk",
      "Sardinië",
      "Sicilië",
      "Slovenië",
      "Zwitserland",
-     "label BOSNIË",
-     "label HONGARIJE",
-     "label TUNESIË",
      "zee 1",
      "zee 2",
      "zee 3",
@@ -503,16 +473,15 @@
     ]
    },
    "lastRowClear": true,
-   "primaryTop": 474,
-   "primaryBottom": 526,
+   "primaryTop": 1064,
+   "primaryBottom": 1116,
    "viewport": 1180,
    "primaryVisible": true,
    "covered": false,
    "overlaps": [],
    "small": [],
    "clipped": [
-    "overflow:11 / 24",
-    "overflow:2"
+    "Hoofdstukken"
    ],
    "horizontalOverflow": false,
    "brokenWords": [],
@@ -531,13 +500,13 @@
     "names": 56
    },
    "switchOcclusion": {
-    "rectOverlap": 4575.375,
+    "rectOverlap": 0,
     "covered": {}
    }
   },
   "ipad-portrait/alles": {
    "frame": {
-    "viewBox": "27 0 863 1235",
+    "viewBox": "107 173 716 864",
     "mask": "none",
     "kept": {
      "Frankrijk": 1,
@@ -547,30 +516,26 @@
      "Kroatië": 1,
      "Sardinië": 1,
      "Sicilië": 1,
-     "label HONGARIJE": 1,
-     "label BOSNIË": 1,
      "zee 1": 1,
      "zee 2": 1,
      "zee 3": 1,
      "zee 4": 1,
-     "zee 5": 1,
-     "Noord-Afrika": 1
+     "zee 5": 1
     },
     "outOfFrame": [
+     "label BOSNIË",
      "label DUITSLAND",
+     "label HONGARIJE",
      "label TUNESIË"
     ],
     "visible": [
      "Frankrijk",
      "Kroatië",
-     "Noord-Afrika",
      "Oostenrijk",
      "Sardinië",
      "Sicilië",
      "Slovenië",
      "Zwitserland",
-     "label BOSNIË",
-     "label HONGARIJE",
      "zee 1",
      "zee 2",
      "zee 3",
@@ -579,16 +544,15 @@
     ]
    },
    "lastRowClear": true,
-   "primaryTop": 474,
-   "primaryBottom": 526,
+   "primaryTop": 972,
+   "primaryBottom": 1024,
    "viewport": 1180,
    "primaryVisible": true,
    "covered": false,
    "overlaps": [],
    "small": [],
    "clipped": [
-    "overflow:0 / 24",
-    "overflow:7"
+    "Hoofdstukken"
    ],
    "horizontalOverflow": false,
    "brokenWords": [],
@@ -607,13 +571,13 @@
     "names": 56
    },
    "switchOcclusion": {
-    "rectOverlap": 12348,
+    "rectOverlap": 0,
     "covered": {}
    }
   },
   "ipad-landscape/nieuw": {
    "frame": {
-    "viewBox": "27 0 863 1235",
+    "viewBox": "107 173 716 864",
     "mask": "none",
     "kept": {
      "Frankrijk": 1,
@@ -623,326 +587,26 @@
      "Kroatië": 1,
      "Sardinië": 1,
      "Sicilië": 1,
-     "label DUITSLAND": 1,
-     "label HONGARIJE": 1,
-     "label BOSNIË": 1,
-     "label TUNESIË": 1,
      "zee 1": 1,
      "zee 2": 1,
      "zee 3": 1,
      "zee 4": 1,
-     "zee 5": 1,
-     "Noord-Afrika": 1
-    },
-    "outOfFrame": [],
-    "visible": [
-     "Frankrijk",
-     "Kroatië",
-     "Noord-Afrika",
-     "Oostenrijk",
-     "Sardinië",
-     "Sicilië",
-     "Slovenië",
-     "Zwitserland",
-     "label BOSNIË",
-     "label DUITSLAND",
-     "label HONGARIJE",
-     "label TUNESIË",
-     "zee 1",
-     "zee 2",
-     "zee 3",
-     "zee 4",
-     "zee 5"
-    ]
-   },
-   "lastRowClear": true,
-   "primaryTop": 439,
-   "primaryBottom": 491,
-   "viewport": 820,
-   "primaryVisible": true,
-   "covered": false,
-   "overlaps": [],
-   "small": [],
-   "clipped": [],
-   "horizontalOverflow": false,
-   "brokenWords": [],
-   "labels": {
-    "labels": [
-     "I T A L I Ë",
-     "DUITSLAND",
-     "TSJECHIË",
-     "SLOWAKIJE",
-     "HONGARIJE",
-     "BOSNIË",
-     "TUNESIË",
-     "▲"
-    ],
-    "hits": [],
-    "names": 56
-   },
-   "switchOcclusion": {
-    "rectOverlap": 13508.25,
-    "covered": {}
-   }
-  },
-  "ipad-landscape/bezig": {
-   "frame": {
-    "viewBox": "27 0 863 1235",
-    "mask": "none",
-    "kept": {
-     "Frankrijk": 1,
-     "Zwitserland": 1,
-     "Oostenrijk": 1,
-     "Slovenië": 1,
-     "Kroatië": 1,
-     "Sardinië": 1,
-     "Sicilië": 1,
-     "label DUITSLAND": 1,
-     "label HONGARIJE": 1,
-     "label BOSNIË": 1,
-     "label TUNESIË": 1,
-     "zee 1": 1,
-     "zee 2": 1,
-     "zee 3": 1,
-     "zee 4": 1,
-     "zee 5": 1,
-     "Noord-Afrika": 1
-    },
-    "outOfFrame": [],
-    "visible": [
-     "Frankrijk",
-     "Kroatië",
-     "Noord-Afrika",
-     "Oostenrijk",
-     "Sardinië",
-     "Sicilië",
-     "Slovenië",
-     "Zwitserland",
-     "label BOSNIË",
-     "label DUITSLAND",
-     "label HONGARIJE",
-     "label TUNESIË",
-     "zee 1",
-     "zee 2",
-     "zee 3",
-     "zee 4",
-     "zee 5"
-    ]
-   },
-   "lastRowClear": true,
-   "primaryTop": 439,
-   "primaryBottom": 491,
-   "viewport": 820,
-   "primaryVisible": true,
-   "covered": false,
-   "overlaps": [],
-   "small": [],
-   "clipped": [],
-   "horizontalOverflow": false,
-   "brokenWords": [],
-   "labels": {
-    "labels": [
-     "I T A L I Ë",
-     "DUITSLAND",
-     "TSJECHIË",
-     "SLOWAKIJE",
-     "HONGARIJE",
-     "BOSNIË",
-     "TUNESIË",
-     "▲"
-    ],
-    "hits": [],
-    "names": 56
-   },
-   "switchOcclusion": {
-    "rectOverlap": 13508.25,
-    "covered": {}
-   }
-  },
-  "ipad-landscape/afgerond": {
-   "frame": {
-    "viewBox": "27 0 863 1235",
-    "mask": "none",
-    "kept": {
-     "Frankrijk": 1,
-     "Zwitserland": 1,
-     "Oostenrijk": 1,
-     "Slovenië": 1,
-     "Kroatië": 1,
-     "Sardinië": 1,
-     "Sicilië": 1,
-     "label DUITSLAND": 1,
-     "label HONGARIJE": 1,
-     "label BOSNIË": 1,
-     "label TUNESIË": 1,
-     "zee 1": 1,
-     "zee 2": 1,
-     "zee 3": 1,
-     "zee 4": 1,
-     "zee 5": 1,
-     "Noord-Afrika": 1
-    },
-    "outOfFrame": [],
-    "visible": [
-     "Frankrijk",
-     "Kroatië",
-     "Noord-Afrika",
-     "Oostenrijk",
-     "Sardinië",
-     "Sicilië",
-     "Slovenië",
-     "Zwitserland",
-     "label BOSNIË",
-     "label DUITSLAND",
-     "label HONGARIJE",
-     "label TUNESIË",
-     "zee 1",
-     "zee 2",
-     "zee 3",
-     "zee 4",
-     "zee 5"
-    ]
-   },
-   "lastRowClear": true,
-   "primaryTop": 439,
-   "primaryBottom": 491,
-   "viewport": 820,
-   "primaryVisible": true,
-   "covered": false,
-   "overlaps": [],
-   "small": [],
-   "clipped": [],
-   "horizontalOverflow": false,
-   "brokenWords": [],
-   "labels": {
-    "labels": [
-     "I T A L I Ë",
-     "DUITSLAND",
-     "TSJECHIË",
-     "SLOWAKIJE",
-     "HONGARIJE",
-     "BOSNIË",
-     "TUNESIË",
-     "▲"
-    ],
-    "hits": [],
-    "names": 56
-   },
-   "switchOcclusion": {
-    "rectOverlap": 13508.25,
-    "covered": {}
-   }
-  },
-  "ipad-landscape/alles": {
-   "frame": {
-    "viewBox": "27 0 863 1235",
-    "mask": "none",
-    "kept": {
-     "Frankrijk": 1,
-     "Zwitserland": 1,
-     "Oostenrijk": 1,
-     "Slovenië": 1,
-     "Kroatië": 1,
-     "Sardinië": 1,
-     "Sicilië": 1,
-     "label DUITSLAND": 1,
-     "label HONGARIJE": 1,
-     "label BOSNIË": 1,
-     "label TUNESIË": 1,
-     "zee 1": 1,
-     "zee 2": 1,
-     "zee 3": 1,
-     "zee 4": 1,
-     "zee 5": 1,
-     "Noord-Afrika": 1
-    },
-    "outOfFrame": [],
-    "visible": [
-     "Frankrijk",
-     "Kroatië",
-     "Noord-Afrika",
-     "Oostenrijk",
-     "Sardinië",
-     "Sicilië",
-     "Slovenië",
-     "Zwitserland",
-     "label BOSNIË",
-     "label DUITSLAND",
-     "label HONGARIJE",
-     "label TUNESIË",
-     "zee 1",
-     "zee 2",
-     "zee 3",
-     "zee 4",
-     "zee 5"
-    ]
-   },
-   "lastRowClear": true,
-   "primaryTop": 439,
-   "primaryBottom": 491,
-   "viewport": 820,
-   "primaryVisible": true,
-   "covered": false,
-   "overlaps": [],
-   "small": [],
-   "clipped": [],
-   "horizontalOverflow": false,
-   "brokenWords": [],
-   "labels": {
-    "labels": [
-     "I T A L I Ë",
-     "DUITSLAND",
-     "TSJECHIË",
-     "SLOWAKIJE",
-     "HONGARIJE",
-     "BOSNIË",
-     "TUNESIË",
-     "▲"
-    ],
-    "hits": [],
-    "names": 56
-   },
-   "switchOcclusion": {
-    "rectOverlap": 13508.25,
-    "covered": {}
-   }
-  },
-  "phone/nieuw": {
-   "frame": {
-    "viewBox": "0 93 890 1024",
-    "mask": "none",
-    "kept": {
-     "Frankrijk": 1,
-     "Zwitserland": 1,
-     "Oostenrijk": 1,
-     "Slovenië": 1,
-     "Kroatië": 1,
-     "Sardinië": 1,
-     "Sicilië": 1,
-     "label HONGARIJE": 1,
-     "label BOSNIË": 1,
-     "zee 1": 1,
-     "zee 2": 1,
-     "zee 3": 1,
-     "zee 4": 1,
-     "zee 5": 1,
-     "Noord-Afrika": 1
+     "zee 5": 1
     },
     "outOfFrame": [
+     "label BOSNIË",
      "label DUITSLAND",
+     "label HONGARIJE",
      "label TUNESIË"
     ],
     "visible": [
      "Frankrijk",
      "Kroatië",
-     "Noord-Afrika",
      "Oostenrijk",
      "Sardinië",
      "Sicilië",
      "Slovenië",
      "Zwitserland",
-     "label BOSNIË",
-     "label HONGARIJE",
      "zee 1",
      "zee 2",
      "zee 3",
@@ -951,14 +615,304 @@
     ]
    },
    "lastRowClear": true,
-   "primaryTop": 224,
-   "primaryBottom": 276,
+   "primaryTop": 704,
+   "primaryBottom": 756,
+   "viewport": 820,
+   "primaryVisible": true,
+   "covered": false,
+   "overlaps": [],
+   "small": [],
+   "clipped": [
+    "Instellingen",
+    "Hoofdstukken"
+   ],
+   "horizontalOverflow": false,
+   "brokenWords": [],
+   "labels": {
+    "labels": [
+     "I T A L I Ë",
+     "DUITSLAND",
+     "TSJECHIË",
+     "SLOWAKIJE",
+     "HONGARIJE",
+     "BOSNIË",
+     "TUNESIË",
+     "▲"
+    ],
+    "hits": [],
+    "names": 56
+   },
+   "switchOcclusion": {
+    "rectOverlap": 0,
+    "covered": {}
+   }
+  },
+  "ipad-landscape/bezig": {
+   "frame": {
+    "viewBox": "107 173 716 864",
+    "mask": "none",
+    "kept": {
+     "Frankrijk": 1,
+     "Zwitserland": 1,
+     "Oostenrijk": 1,
+     "Slovenië": 1,
+     "Kroatië": 1,
+     "Sardinië": 1,
+     "Sicilië": 1,
+     "zee 1": 1,
+     "zee 2": 1,
+     "zee 3": 1,
+     "zee 4": 1,
+     "zee 5": 1
+    },
+    "outOfFrame": [
+     "label BOSNIË",
+     "label DUITSLAND",
+     "label HONGARIJE",
+     "label TUNESIË"
+    ],
+    "visible": [
+     "Frankrijk",
+     "Kroatië",
+     "Oostenrijk",
+     "Sardinië",
+     "Sicilië",
+     "Slovenië",
+     "Zwitserland",
+     "zee 1",
+     "zee 2",
+     "zee 3",
+     "zee 4",
+     "zee 5"
+    ]
+   },
+   "lastRowClear": true,
+   "primaryTop": 656,
+   "primaryBottom": 708,
+   "viewport": 820,
+   "primaryVisible": true,
+   "covered": false,
+   "overlaps": [],
+   "small": [],
+   "clipped": [
+    "Instellingen",
+    "Hoofdstukken"
+   ],
+   "horizontalOverflow": false,
+   "brokenWords": [],
+   "labels": {
+    "labels": [
+     "I T A L I Ë",
+     "DUITSLAND",
+     "TSJECHIË",
+     "SLOWAKIJE",
+     "HONGARIJE",
+     "BOSNIË",
+     "TUNESIË",
+     "▲"
+    ],
+    "hits": [],
+    "names": 56
+   },
+   "switchOcclusion": {
+    "rectOverlap": 0,
+    "covered": {}
+   }
+  },
+  "ipad-landscape/afgerond": {
+   "frame": {
+    "viewBox": "107 173 716 864",
+    "mask": "none",
+    "kept": {
+     "Frankrijk": 1,
+     "Zwitserland": 1,
+     "Oostenrijk": 1,
+     "Slovenië": 1,
+     "Kroatië": 1,
+     "Sardinië": 1,
+     "Sicilië": 1,
+     "zee 1": 1,
+     "zee 2": 1,
+     "zee 3": 1,
+     "zee 4": 1,
+     "zee 5": 1
+    },
+    "outOfFrame": [
+     "label BOSNIË",
+     "label DUITSLAND",
+     "label HONGARIJE",
+     "label TUNESIË"
+    ],
+    "visible": [
+     "Frankrijk",
+     "Kroatië",
+     "Oostenrijk",
+     "Sardinië",
+     "Sicilië",
+     "Slovenië",
+     "Zwitserland",
+     "zee 1",
+     "zee 2",
+     "zee 3",
+     "zee 4",
+     "zee 5"
+    ]
+   },
+   "lastRowClear": true,
+   "primaryTop": 704,
+   "primaryBottom": 756,
+   "viewport": 820,
+   "primaryVisible": true,
+   "covered": false,
+   "overlaps": [],
+   "small": [],
+   "clipped": [
+    "Instellingen",
+    "Hoofdstukken"
+   ],
+   "horizontalOverflow": false,
+   "brokenWords": [],
+   "labels": {
+    "labels": [
+     "I T A L I Ë",
+     "DUITSLAND",
+     "TSJECHIË",
+     "SLOWAKIJE",
+     "HONGARIJE",
+     "BOSNIË",
+     "TUNESIË",
+     "▲"
+    ],
+    "hits": [],
+    "names": 56
+   },
+   "switchOcclusion": {
+    "rectOverlap": 0,
+    "covered": {}
+   }
+  },
+  "ipad-landscape/alles": {
+   "frame": {
+    "viewBox": "107 173 716 864",
+    "mask": "none",
+    "kept": {
+     "Frankrijk": 1,
+     "Zwitserland": 1,
+     "Oostenrijk": 1,
+     "Slovenië": 1,
+     "Kroatië": 1,
+     "Sardinië": 1,
+     "Sicilië": 1,
+     "zee 1": 1,
+     "zee 2": 1,
+     "zee 3": 1,
+     "zee 4": 1,
+     "zee 5": 1
+    },
+    "outOfFrame": [
+     "label BOSNIË",
+     "label DUITSLAND",
+     "label HONGARIJE",
+     "label TUNESIË"
+    ],
+    "visible": [
+     "Frankrijk",
+     "Kroatië",
+     "Oostenrijk",
+     "Sardinië",
+     "Sicilië",
+     "Slovenië",
+     "Zwitserland",
+     "zee 1",
+     "zee 2",
+     "zee 3",
+     "zee 4",
+     "zee 5"
+    ]
+   },
+   "lastRowClear": true,
+   "primaryTop": 645,
+   "primaryBottom": 697,
+   "viewport": 820,
+   "primaryVisible": true,
+   "covered": false,
+   "overlaps": [],
+   "small": [],
+   "clipped": [
+    "Instellingen",
+    "Hoofdstukken"
+   ],
+   "horizontalOverflow": false,
+   "brokenWords": [],
+   "labels": {
+    "labels": [
+     "I T A L I Ë",
+     "DUITSLAND",
+     "TSJECHIË",
+     "SLOWAKIJE",
+     "HONGARIJE",
+     "BOSNIË",
+     "TUNESIË",
+     "▲"
+    ],
+    "hits": [],
+    "names": 56
+   },
+   "switchOcclusion": {
+    "rectOverlap": 0,
+    "covered": {}
+   }
+  },
+  "phone/nieuw": {
+   "frame": {
+    "viewBox": "107 173 716 864",
+    "mask": "none",
+    "kept": {
+     "Frankrijk": 1,
+     "Zwitserland": 1,
+     "Slovenië": 1,
+     "Kroatië": 1,
+     "Sardinië": 1,
+     "Sicilië": 1,
+     "zee 1": 1,
+     "zee 2": 1,
+     "zee 3": 1,
+     "zee 4": 1,
+     "zee 5": 1
+    },
+    "outOfFrame": [
+     "Oostenrijk",
+     "label BOSNIË",
+     "label DUITSLAND",
+     "label HONGARIJE",
+     "label TUNESIË"
+    ],
+    "visible": [
+     "Frankrijk",
+     "Kroatië",
+     "Sardinië",
+     "Sicilië",
+     "Slovenië",
+     "Zwitserland",
+     "zee 1",
+     "zee 2",
+     "zee 3",
+     "zee 4",
+     "zee 5"
+    ]
+   },
+   "lastRowClear": true,
+   "primaryTop": 228,
+   "primaryBottom": 280,
    "viewport": 844,
    "primaryVisible": true,
    "covered": false,
    "overlaps": [],
    "small": [],
-   "clipped": [],
+   "clipped": [
+    "Reis",
+    "Hoofdstukken"
+   ],
    "horizontalOverflow": false,
    "brokenWords": [],
    "labels": {
@@ -982,40 +936,35 @@
   },
   "phone/bezig": {
    "frame": {
-    "viewBox": "0 93 890 1024",
+    "viewBox": "107 173 716 864",
     "mask": "none",
     "kept": {
      "Frankrijk": 1,
      "Zwitserland": 1,
-     "Oostenrijk": 1,
      "Slovenië": 1,
      "Kroatië": 1,
      "Sardinië": 1,
      "Sicilië": 1,
-     "label HONGARIJE": 1,
-     "label BOSNIË": 1,
      "zee 1": 1,
      "zee 2": 1,
      "zee 3": 1,
      "zee 4": 1,
-     "zee 5": 1,
-     "Noord-Afrika": 1
+     "zee 5": 1
     },
     "outOfFrame": [
+     "Oostenrijk",
+     "label BOSNIË",
      "label DUITSLAND",
+     "label HONGARIJE",
      "label TUNESIË"
     ],
     "visible": [
      "Frankrijk",
      "Kroatië",
-     "Noord-Afrika",
-     "Oostenrijk",
      "Sardinië",
      "Sicilië",
      "Slovenië",
      "Zwitserland",
-     "label BOSNIË",
-     "label HONGARIJE",
      "zee 1",
      "zee 2",
      "zee 3",
@@ -1024,14 +973,17 @@
     ]
    },
    "lastRowClear": true,
-   "primaryTop": 224,
-   "primaryBottom": 276,
+   "primaryTop": 228,
+   "primaryBottom": 280,
    "viewport": 844,
    "primaryVisible": true,
    "covered": false,
    "overlaps": [],
    "small": [],
-   "clipped": [],
+   "clipped": [
+    "Reis",
+    "Hoofdstukken"
+   ],
    "horizontalOverflow": false,
    "brokenWords": [],
    "labels": {
@@ -1055,40 +1007,35 @@
   },
   "phone/afgerond": {
    "frame": {
-    "viewBox": "0 93 890 1024",
+    "viewBox": "107 173 716 864",
     "mask": "none",
     "kept": {
      "Frankrijk": 1,
      "Zwitserland": 1,
-     "Oostenrijk": 1,
      "Slovenië": 1,
      "Kroatië": 1,
      "Sardinië": 1,
      "Sicilië": 1,
-     "label HONGARIJE": 1,
-     "label BOSNIË": 1,
      "zee 1": 1,
      "zee 2": 1,
      "zee 3": 1,
      "zee 4": 1,
-     "zee 5": 1,
-     "Noord-Afrika": 1
+     "zee 5": 1
     },
     "outOfFrame": [
+     "Oostenrijk",
+     "label BOSNIË",
      "label DUITSLAND",
+     "label HONGARIJE",
      "label TUNESIË"
     ],
     "visible": [
      "Frankrijk",
      "Kroatië",
-     "Noord-Afrika",
-     "Oostenrijk",
      "Sardinië",
      "Sicilië",
      "Slovenië",
      "Zwitserland",
-     "label BOSNIË",
-     "label HONGARIJE",
      "zee 1",
      "zee 2",
      "zee 3",
@@ -1097,14 +1044,17 @@
     ]
    },
    "lastRowClear": true,
-   "primaryTop": 224,
-   "primaryBottom": 276,
+   "primaryTop": 228,
+   "primaryBottom": 280,
    "viewport": 844,
    "primaryVisible": true,
    "covered": false,
    "overlaps": [],
    "small": [],
-   "clipped": [],
+   "clipped": [
+    "Reis",
+    "Hoofdstukken"
+   ],
    "horizontalOverflow": false,
    "brokenWords": [],
    "labels": {
@@ -1128,40 +1078,35 @@
   },
   "phone/alles": {
    "frame": {
-    "viewBox": "0 93 890 1024",
+    "viewBox": "107 173 716 864",
     "mask": "none",
     "kept": {
      "Frankrijk": 1,
      "Zwitserland": 1,
-     "Oostenrijk": 1,
      "Slovenië": 1,
      "Kroatië": 1,
      "Sardinië": 1,
      "Sicilië": 1,
-     "label HONGARIJE": 1,
-     "label BOSNIË": 1,
      "zee 1": 1,
      "zee 2": 1,
      "zee 3": 1,
      "zee 4": 1,
-     "zee 5": 1,
-     "Noord-Afrika": 1
+     "zee 5": 1
     },
     "outOfFrame": [
+     "Oostenrijk",
+     "label BOSNIË",
      "label DUITSLAND",
+     "label HONGARIJE",
      "label TUNESIË"
     ],
     "visible": [
      "Frankrijk",
      "Kroatië",
-     "Noord-Afrika",
-     "Oostenrijk",
      "Sardinië",
      "Sicilië",
      "Slovenië",
      "Zwitserland",
-     "label BOSNIË",
-     "label HONGARIJE",
      "zee 1",
      "zee 2",
      "zee 3",
@@ -1170,14 +1115,17 @@
     ]
    },
    "lastRowClear": true,
-   "primaryTop": 224,
-   "primaryBottom": 276,
+   "primaryTop": 228,
+   "primaryBottom": 280,
    "viewport": 844,
    "primaryVisible": true,
    "covered": false,
    "overlaps": [],
    "small": [],
-   "clipped": [],
+   "clipped": [
+    "Reis",
+    "Hoofdstukken"
+   ],
    "horizontalOverflow": false,
    "brokenWords": [],
    "labels": {
@@ -1201,40 +1149,35 @@
   },
   "phone-small/nieuw": {
    "frame": {
-    "viewBox": "0 93 890 1024",
+    "viewBox": "107 173 716 864",
     "mask": "none",
     "kept": {
      "Frankrijk": 1,
      "Zwitserland": 1,
-     "Oostenrijk": 1,
      "Slovenië": 1,
      "Kroatië": 1,
      "Sardinië": 1,
      "Sicilië": 1,
-     "label HONGARIJE": 1,
-     "label BOSNIË": 1,
      "zee 1": 1,
      "zee 2": 1,
      "zee 3": 1,
      "zee 4": 1,
-     "zee 5": 1,
-     "Noord-Afrika": 1
+     "zee 5": 1
     },
     "outOfFrame": [
+     "Oostenrijk",
+     "label BOSNIË",
      "label DUITSLAND",
+     "label HONGARIJE",
      "label TUNESIË"
     ],
     "visible": [
      "Frankrijk",
      "Kroatië",
-     "Noord-Afrika",
-     "Oostenrijk",
      "Sardinië",
      "Sicilië",
      "Slovenië",
      "Zwitserland",
-     "label BOSNIË",
-     "label HONGARIJE",
      "zee 1",
      "zee 2",
      "zee 3",
@@ -1243,14 +1186,17 @@
     ]
    },
    "lastRowClear": true,
-   "primaryTop": 224,
-   "primaryBottom": 276,
+   "primaryTop": 274,
+   "primaryBottom": 326,
    "viewport": 640,
    "primaryVisible": true,
    "covered": false,
    "overlaps": [],
    "small": [],
-   "clipped": [],
+   "clipped": [
+    "Reis",
+    "Hoofdstukken"
+   ],
    "horizontalOverflow": false,
    "brokenWords": [],
    "labels": {
@@ -1274,40 +1220,35 @@
   },
   "phone-small/bezig": {
    "frame": {
-    "viewBox": "0 93 890 1024",
+    "viewBox": "107 173 716 864",
     "mask": "none",
     "kept": {
      "Frankrijk": 1,
      "Zwitserland": 1,
-     "Oostenrijk": 1,
      "Slovenië": 1,
      "Kroatië": 1,
      "Sardinië": 1,
      "Sicilië": 1,
-     "label HONGARIJE": 1,
-     "label BOSNIË": 1,
      "zee 1": 1,
      "zee 2": 1,
      "zee 3": 1,
      "zee 4": 1,
-     "zee 5": 1,
-     "Noord-Afrika": 1
+     "zee 5": 1
     },
     "outOfFrame": [
+     "Oostenrijk",
+     "label BOSNIË",
      "label DUITSLAND",
+     "label HONGARIJE",
      "label TUNESIË"
     ],
     "visible": [
      "Frankrijk",
      "Kroatië",
-     "Noord-Afrika",
-     "Oostenrijk",
      "Sardinië",
      "Sicilië",
      "Slovenië",
      "Zwitserland",
-     "label BOSNIË",
-     "label HONGARIJE",
      "zee 1",
      "zee 2",
      "zee 3",
@@ -1316,14 +1257,17 @@
     ]
    },
    "lastRowClear": true,
-   "primaryTop": 224,
-   "primaryBottom": 276,
+   "primaryTop": 274,
+   "primaryBottom": 326,
    "viewport": 640,
    "primaryVisible": true,
    "covered": false,
    "overlaps": [],
    "small": [],
-   "clipped": [],
+   "clipped": [
+    "Reis",
+    "Hoofdstukken"
+   ],
    "horizontalOverflow": false,
    "brokenWords": [],
    "labels": {
@@ -1347,40 +1291,35 @@
   },
   "phone-small/afgerond": {
    "frame": {
-    "viewBox": "0 93 890 1024",
+    "viewBox": "107 173 716 864",
     "mask": "none",
     "kept": {
      "Frankrijk": 1,
      "Zwitserland": 1,
-     "Oostenrijk": 1,
      "Slovenië": 1,
      "Kroatië": 1,
      "Sardinië": 1,
      "Sicilië": 1,
-     "label HONGARIJE": 1,
-     "label BOSNIË": 1,
      "zee 1": 1,
      "zee 2": 1,
      "zee 3": 1,
      "zee 4": 1,
-     "zee 5": 1,
-     "Noord-Afrika": 1
+     "zee 5": 1
     },
     "outOfFrame": [
+     "Oostenrijk",
+     "label BOSNIË",
      "label DUITSLAND",
+     "label HONGARIJE",
      "label TUNESIË"
     ],
     "visible": [
      "Frankrijk",
      "Kroatië",
-     "Noord-Afrika",
-     "Oostenrijk",
      "Sardinië",
      "Sicilië",
      "Slovenië",
      "Zwitserland",
-     "label BOSNIË",
-     "label HONGARIJE",
      "zee 1",
      "zee 2",
      "zee 3",
@@ -1389,14 +1328,17 @@
     ]
    },
    "lastRowClear": true,
-   "primaryTop": 224,
-   "primaryBottom": 276,
+   "primaryTop": 228,
+   "primaryBottom": 280,
    "viewport": 640,
    "primaryVisible": true,
    "covered": false,
    "overlaps": [],
    "small": [],
-   "clipped": [],
+   "clipped": [
+    "Reis",
+    "Hoofdstukken"
+   ],
    "horizontalOverflow": false,
    "brokenWords": [],
    "labels": {
@@ -1420,40 +1362,35 @@
   },
   "phone-small/alles": {
    "frame": {
-    "viewBox": "0 93 890 1024",
+    "viewBox": "107 173 716 864",
     "mask": "none",
     "kept": {
      "Frankrijk": 1,
      "Zwitserland": 1,
-     "Oostenrijk": 1,
      "Slovenië": 1,
      "Kroatië": 1,
      "Sardinië": 1,
      "Sicilië": 1,
-     "label HONGARIJE": 1,
-     "label BOSNIË": 1,
      "zee 1": 1,
      "zee 2": 1,
      "zee 3": 1,
      "zee 4": 1,
-     "zee 5": 1,
-     "Noord-Afrika": 1
+     "zee 5": 1
     },
     "outOfFrame": [
+     "Oostenrijk",
+     "label BOSNIË",
      "label DUITSLAND",
+     "label HONGARIJE",
      "label TUNESIË"
     ],
     "visible": [
      "Frankrijk",
      "Kroatië",
-     "Noord-Afrika",
-     "Oostenrijk",
      "Sardinië",
      "Sicilië",
      "Slovenië",
      "Zwitserland",
-     "label BOSNIË",
-     "label HONGARIJE",
      "zee 1",
      "zee 2",
      "zee 3",
@@ -1462,14 +1399,17 @@
     ]
    },
    "lastRowClear": true,
-   "primaryTop": 224,
-   "primaryBottom": 276,
+   "primaryTop": 228,
+   "primaryBottom": 280,
    "viewport": 640,
    "primaryVisible": true,
    "covered": false,
    "overlaps": [],
    "small": [],
-   "clipped": [],
+   "clipped": [
+    "Reis",
+    "Hoofdstukken"
+   ],
    "horizontalOverflow": false,
    "brokenWords": [],
    "labels": {
@@ -1508,11 +1448,11 @@
    "lockedPrimary": 0,
    "reliefOn": "block",
    "reliefOff": "none",
-   "donePrimary": "★ Goud nog eens",
+   "donePrimary": "Goud nog eens",
    "replays": [
-    "↻ Ontdekken",
-    "↻ Aanwijzen",
-    "↻ Namen schrijven"
+    "Ontdekken",
+    "Aanwijzen",
+    "Namen schrijven"
    ],
    "replayStarted": {
     "chapter": "city2",
@@ -1522,9 +1462,9 @@
    },
    "backVia": "v3Btn v3NavItem",
    "primaryLabelWithActive": "Ga verder · Ontdekken",
-   "questionBefore": "city-8",
+   "questionBefore": "city-10",
    "reisVerderSameQuestion": {
-    "id": "city-8",
+    "id": "city-10",
     "chapter": "city2",
     "kind": "discover"
    },
@@ -1552,11 +1492,11 @@
    "lockedPrimary": 0,
    "reliefOn": "block",
    "reliefOff": "none",
-   "donePrimary": "★ Goud nog eens",
+   "donePrimary": "Goud nog eens",
    "replays": [
-    "↻ Ontdekken",
-    "↻ Aanwijzen",
-    "↻ Namen schrijven"
+    "Ontdekken",
+    "Aanwijzen",
+    "Namen schrijven"
    ],
    "phonePanelInView": true,
    "replayStarted": {
@@ -1567,9 +1507,9 @@
    },
    "backVia": "v3Btn v3LesBack",
    "primaryLabelWithActive": "Ga verder · Ontdekken",
-   "questionBefore": "city-9",
+   "questionBefore": "city-11",
    "reisVerderSameQuestion": {
-    "id": "city-9",
+    "id": "city-11",
     "chapter": "city2",
     "kind": "discover"
    },
@@ -1766,43 +1706,43 @@
    "covered": {}
   },
   "ipad-portrait/city1/schoolkaart": {
-   "rectOverlap": 12348,
+   "rectOverlap": 0,
    "covered": {}
   },
   "ipad-portrait/city1/reliëf": {
-   "rectOverlap": 12348,
+   "rectOverlap": 0,
    "covered": {}
   },
   "ipad-portrait/city2/schoolkaart": {
-   "rectOverlap": 12348,
+   "rectOverlap": 0,
    "covered": {}
   },
   "ipad-portrait/city2/reliëf": {
-   "rectOverlap": 12348,
+   "rectOverlap": 0,
    "covered": {}
   },
   "ipad-portrait/city3/schoolkaart": {
-   "rectOverlap": 12348,
+   "rectOverlap": 0,
    "covered": {}
   },
   "ipad-portrait/city3/reliëf": {
-   "rectOverlap": 12348,
+   "rectOverlap": 0,
    "covered": {}
   },
   "ipad-portrait/city4/schoolkaart": {
-   "rectOverlap": 12348,
+   "rectOverlap": 0,
    "covered": {}
   },
   "ipad-portrait/city4/reliëf": {
-   "rectOverlap": 12348,
+   "rectOverlap": 0,
    "covered": {}
   },
   "ipad-portrait/islands/schoolkaart": {
-   "rectOverlap": 4575.375,
+   "rectOverlap": 0,
    "covered": {}
   },
   "ipad-portrait/islands/reliëf": {
-   "rectOverlap": 4575.375,
+   "rectOverlap": 0,
    "covered": {}
   },
   "ipad-portrait/mountains/schoolkaart": {
@@ -1856,11 +1796,11 @@
  },
  "phoneSelectFocus": {
   "active": "v3Title",
-  "text": "Hoofdstuk 2Steden 7–12",
+  "text": "Hoofdstuk 2: Steden 7–12",
   "selected": "city2",
   "ring": "solid",
   "inView": true,
-  "nextTab": "★ Goud nog eens"
+  "nextTab": "Goud nog eens"
  },
  "theme": {
   "viola": "rgba(0, 0, 0, 0)",
@@ -1905,35 +1845,156 @@
   "overlaps": {},
   "clipped": {
    "desktop/nieuw": [
-    "Instellingen"
+    "Instellingen",
+    "Hoofdstukken"
    ],
    "desktop/bezig": [
-    "Instellingen"
+    "Instellingen",
+    "Hoofdstukken"
    ],
    "desktop/afgerond": [
-    "Instellingen"
+    "Instellingen",
+    "Hoofdstukken"
    ],
    "desktop/alles": [
-    "Instellingen"
+    "Instellingen",
+    "Hoofdstukken"
+   ],
+   "ipad-portrait/nieuw": [
+    "Hoofdstukken"
    ],
    "ipad-portrait/bezig": [
-    "overflow:14 / 24",
-    "overflow:0"
+    "Hoofdstukken"
    ],
    "ipad-portrait/afgerond": [
-    "overflow:11 / 24",
-    "overflow:2"
+    "Hoofdstukken"
    ],
    "ipad-portrait/alles": [
-    "overflow:0 / 24",
-    "overflow:7"
+    "Hoofdstukken"
+   ],
+   "ipad-landscape/nieuw": [
+    "Instellingen",
+    "Hoofdstukken"
+   ],
+   "ipad-landscape/bezig": [
+    "Instellingen",
+    "Hoofdstukken"
+   ],
+   "ipad-landscape/afgerond": [
+    "Instellingen",
+    "Hoofdstukken"
+   ],
+   "ipad-landscape/alles": [
+    "Instellingen",
+    "Hoofdstukken"
+   ],
+   "phone/nieuw": [
+    "Reis",
+    "Hoofdstukken"
+   ],
+   "phone/bezig": [
+    "Reis",
+    "Hoofdstukken"
+   ],
+   "phone/afgerond": [
+    "Reis",
+    "Hoofdstukken"
+   ],
+   "phone/alles": [
+    "Reis",
+    "Hoofdstukken"
+   ],
+   "phone-small/nieuw": [
+    "Reis",
+    "Hoofdstukken"
+   ],
+   "phone-small/bezig": [
+    "Reis",
+    "Hoofdstukken"
+   ],
+   "phone-small/afgerond": [
+    "Reis",
+    "Hoofdstukken"
+   ],
+   "phone-small/alles": [
+    "Reis",
+    "Hoofdstukken"
    ]
   },
   "brokenWords": {},
   "smallTargets": {},
   "horizontalOverflow": [],
   "lastRowHiddenByTabBar": [],
-  "mapFrameShort": {},
+  "mapFrameShort": {
+   "desktop/nieuw": [
+    "Noord-Afrika"
+   ],
+   "desktop/bezig": [
+    "Noord-Afrika"
+   ],
+   "desktop/afgerond": [
+    "Noord-Afrika"
+   ],
+   "desktop/alles": [
+    "Noord-Afrika"
+   ],
+   "ipad-portrait/nieuw": [
+    "Noord-Afrika"
+   ],
+   "ipad-portrait/bezig": [
+    "Noord-Afrika"
+   ],
+   "ipad-portrait/afgerond": [
+    "Noord-Afrika"
+   ],
+   "ipad-portrait/alles": [
+    "Noord-Afrika"
+   ],
+   "ipad-landscape/nieuw": [
+    "Noord-Afrika"
+   ],
+   "ipad-landscape/bezig": [
+    "Noord-Afrika"
+   ],
+   "ipad-landscape/afgerond": [
+    "Noord-Afrika"
+   ],
+   "ipad-landscape/alles": [
+    "Noord-Afrika"
+   ],
+   "phone/nieuw": [
+    "Noord-Afrika",
+    "Oostenrijk"
+   ],
+   "phone/bezig": [
+    "Noord-Afrika",
+    "Oostenrijk"
+   ],
+   "phone/afgerond": [
+    "Noord-Afrika",
+    "Oostenrijk"
+   ],
+   "phone/alles": [
+    "Noord-Afrika",
+    "Oostenrijk"
+   ],
+   "phone-small/nieuw": [
+    "Noord-Afrika",
+    "Oostenrijk"
+   ],
+   "phone-small/bezig": [
+    "Noord-Afrika",
+    "Oostenrijk"
+   ],
+   "phone-small/afgerond": [
+    "Noord-Afrika",
+    "Oostenrijk"
+   ],
+   "phone-small/alles": [
+    "Noord-Afrika",
+    "Oostenrijk"
+   ]
+  },
   "labelsWithLearningName": {},
   "labelCheckCatchesControl": true,
   "contextLabels": [

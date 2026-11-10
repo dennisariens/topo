@@ -13,6 +13,8 @@ Per screen (Reis, Les, Oefenen, Toets, Voortgang) at desktop 1440×900 and iPad 
   * schoolkaart (Reis on Schoolkaart, Les, Voortgang): neighbours always in land colour — the map element shows exactly
     its viewBox (no letterbox beyond the drawn data, which the sea colour would fill) and no country or context land
     is see-through (effective opacity × fill-opacity ≥ .9);
+  * fase B variant (a) Eiland (Reis): no sea colour at all (sea layers hidden, transparent) and every neighbour a
+    visible silhouette (alpha ≥ .3) — the schoolkaart letterbox/see-through rule applies to variant (b) and the lessons;
   * contrast AA for every visible V3 text: the text colour against the rendered pixels behind it (text hidden for a
     second screenshot; 5th percentile of the per-pixel contrast), ≥ 4.5, or ≥ 3 for large text (≥ 24 px, or ≥ 18.66 px bold);
   * with reduced transparency the glass turns opaque (no backdrop blur).
@@ -76,7 +78,14 @@ MEASURE = r'''() => {
     const vb = (map.getAttribute('viewBox') || '').split(/[ ,]+/).map(Number), vba = vb[2] / vb[3], ea = r.width / r.height;
     const seeThrough = school ? [...map.querySelectorAll('.country, .contextLand')].filter(n => { let o = 1; for (let e = n; e && e !== map; e = e.parentNode) o *= parseFloat(cs(e).opacity);
       return o * parseFloat(cs(n).fillOpacity) < .9 && cs(n).display !== 'none'; }).map(n => n.dataset.id || n.dataset.country) : [];
-    edge = {selector: map.id ? '#map' : '.v3Map', masks, opacity: op, overlays: [...over], school, letterbox: school && map.id !== 'map' ? Math.abs(vba - ea) > .015 : false, seeThrough,
+    // Fase B variant (a) Eiland (owner 10-11): the sea is transparent on the wash and neighbours are soft silhouettes —
+    // never sea colour: no sea layer, a transparent background, every neighbour visible (alpha ≥ .3).
+    const island = map.dataset.kaart === 'eiland';
+    const seaShown = island && [...map.querySelectorAll('.sea,.v3RSea,.atlasWaterTexture')].some(n => cs(n).display !== 'none');
+    const islandFaint = island ? [...map.querySelectorAll('.contextLand,.country:not(.v3Isle)')].filter(n => { let o = 1; for (let e = n; e && e !== map; e = e.parentNode) o *= parseFloat(cs(e).opacity);
+      return o * parseFloat(cs(n).fillOpacity) < .3; }).map(n => n.dataset.id || n.dataset.country) : [];
+    edge = {selector: map.id ? '#map' : '.v3Map', masks, opacity: op, overlays: [...over], school, island, seaShown, islandFaint,
+      letterbox: school && !island && map.id !== 'map' ? Math.abs(vba - ea) > .015 : false, seeThrough: island ? [] : seeThrough,
       box: [Math.round(r.left), Math.round(r.top), Math.round(r.width), Math.round(r.height)]}; }
   // 4. Visible V3 texts for the contrast check.
   const scope = document.body.classList.contains('v3Les') ? 'body.v3Les :is(.v3, main.layout, #focusAnswerSheet, #focusLearnBar)' : '.v3Reis';
@@ -172,6 +181,7 @@ async def main():
                     e = run['edge']
                     if EDGE_CHECK and e and (e['masks'] or e['opacity'] < .85 or e['overlays']): f(f'map edge haze {e}')
                     if EDGE_CHECK and e and e['school'] and (e['letterbox'] or e['seeThrough']): f(f'schoolkaart: neighbours not in land colour (letterbox={e["letterbox"]}, see-through={e["seeThrough"][:6]})')
+                    if EDGE_CHECK and e and e['island'] and (e['seaShown'] or e['islandFaint']): f(f'eiland: sea colour or invisible neighbours (sea={e["seaShown"]}, faint={e["islandFaint"][:6]})')
                     if low: f(f'contrast < AA: {low[:4]}')
                     if run['theme'].lower() != '#5b45e0': f(f'theme {run["theme"]}')
                     if reduce and any('blur' in g for g in glass): f('reduced transparency still blurs')

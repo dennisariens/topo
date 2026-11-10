@@ -1,0 +1,147 @@
+/* TOPO V3.0 fase B, stap 2 — Reis volgens R-reis-ijk (docs/v3/renders/README.md § Reis, § Raster en uitlijning,
+   § Verfijning; DECISIONS 10-11 "Review fase A"). Presentation only; loaded after stijl.css.
+   * One frame; the sidebar is its left column (240 desktop, 200 on iPad landscape with portrait 88, rail 76 below).
+   * 12 columns inside the content area, gutter 24 (iPad 16), inner margin gutter + 8: the title and the chapter list
+     span 5 columns, the map column 7. The list's bottom and the chapter card's bottom share one line (the inner margin).
+   * One title ("Reis"); the list is one glass panel; rows: scene, name, status (check · medal · thin bar · lock).
+   * The map column: tools left and counters (line icons) right on top, the map, and one chapter card at the bottom with
+     the title, three step dots and the pill. Pins never fall under the card: the map has its own row.
+   * Map variants: (a) data-kaart=eiland (default): Italy floats as land, neighbours soft silhouettes that fade out,
+     the sea transparent on the wash; (b) data-kaart=kaart: the map in a rounded glass card that fills its grid cell. */
+.v3 .v3SrOnly{position:absolute!important;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap;border:0}
+.v3ScreenTitle{font:var(--v3-display);letter-spacing:-.01em;color:var(--v3-ink);margin:0}
+.v3ScreenTitle:focus{outline:0}.v3ScreenTitle:focus-visible{outline:3px solid var(--v3-focus);outline-offset:4px;border-radius:8px}
+.v3Reis:not([data-view=reis]) .v3ScreenTitle{display:none}
+
+/* Rows. */
+.v3Reis .v3Row{grid-template-columns:72px minmax(0,1fr) 28px;gap:14px;min-height:54px;padding:5px 10px;border-radius:18px;font:var(--v3-body);color:var(--v3-ink)}
+.v3Reis .v3Row:hover{background:rgba(255,255,255,.55)}
+.v3Reis .v3Row[aria-pressed=true]{background:var(--v3-select-bg);box-shadow:inset 0 0 0 1.5px var(--v3-select-edge);color:var(--v3-ink);font-weight:600}
+.v3Reis .v3Row[data-state=locked]{color:var(--v3-ink2)}
+.v3Reis .v3Thumb{width:68px;height:42px;border-radius:12px}
+.v3RowMid{display:grid;gap:7px;min-width:0}
+.v3RowBar{display:block;height:4px;border-radius:2px;background:rgba(42,36,64,.10);overflow:hidden;max-width:180px}
+.v3RowBar::before{content:"";display:block;height:100%;width:calc(var(--v3-on,0) * 100%);min-width:0;border-radius:2px;background:var(--v3-accent)}
+.v3Reis .v3End{justify-content:center;color:var(--v3-ink3)}
+.v3Reis .v3End .v3Icon{width:24px;height:24px;color:var(--v3-ink3)}
+.v3Reis .v3EndDone .v3Icon{color:var(--v3-done);stroke-width:1.9}
+.v3Reis .v3EndGold .v3Icon{color:#a8780a;stroke-width:1.9}
+
+/* Counters and tools (top of the map column). */
+.v3Reis .v3Top{display:flex;align-items:center;justify-content:space-between;gap:var(--v3-s4)}
+.v3Counts{display:flex;align-items:center;gap:var(--v3-s4);margin-left:auto}
+.v3Reis .v3Count{white-space:nowrap;gap:10px;font:600 18px/1 var(--v3-font);font-variant-numeric:tabular-nums;color:var(--v3-ink)}
+.v3Reis .v3Count .v3Icon{width:28px;height:28px;color:var(--v3-ink2);stroke-width:1.7}
+.v3CountSep{width:1px;height:28px;background:var(--v3-line)}
+.v3Reis .v3MapTools{position:static;display:flex;align-items:center;gap:var(--v3-s2)}
+.v3Reis .v3MapTools .v3Btn{min-height:40px}
+
+/* The chapter card. */
+.v3Reis .v3Panel{display:grid;grid-template-columns:minmax(0,1fr) auto;align-items:center;column-gap:var(--v3-s5);row-gap:var(--v3-s3)}
+.v3CardHead{display:flex;align-items:center;gap:var(--v3-s5);min-width:0;flex-wrap:wrap}
+.v3CardTitle{font:600 26px/32px var(--v3-font);letter-spacing:-.01em;color:var(--v3-ink);margin:0;text-wrap:balance}
+.v3CardTitle:focus{outline:0}.v3CardTitle:focus-visible{outline:3px solid var(--v3-focus);outline-offset:4px;border-radius:8px}
+.v3Reis .v3StageBar{position:relative;display:flex;align-items:center;gap:22px;flex:none}
+.v3Reis .v3StageBar::before{content:"";position:absolute;left:12px;right:12px;top:50%;height:2px;margin-top:-1px;background:rgba(42,36,64,.14)}
+.v3Reis .v3StageBar span{position:relative;flex:none;width:26px;height:26px;border-radius:50%;background:#fff;box-shadow:inset 0 0 0 2px rgba(42,36,64,.18);display:grid;place-items:center}
+.v3Reis .v3StageBar span.on{background:var(--v3-accent);box-shadow:none}
+.v3Reis .v3StageBar span.on .v3Icon{width:18px;height:18px;color:#fff;stroke-width:2.6}
+.v3Reis .v3StageBar span.now{background:#fff;box-shadow:inset 0 0 0 2.5px var(--v3-accent)}
+.v3Reis .v3StageBar span.now::after{content:"";width:10px;height:10px;border-radius:50%;background:var(--v3-accent)}
+.v3Reis .v3Actions{display:flex}
+.v3Reis .v3Actions .v3Btn.primary{width:auto;min-width:200px}
+.v3Reis .v3Again{grid-column:1/-1;display:flex;flex-wrap:wrap;gap:var(--v3-s2)}
+.v3Reis .v3Again .v3Btn{min-height:36px;padding:0 14px;gap:6px}
+.v3Reis .v3Locked{grid-column:2;display:flex;align-items:center;gap:var(--v3-s2);font:var(--v3-sub);color:var(--v3-ink2)}
+.v3Reis .v3Locked .v3Icon{width:20px;height:20px;color:var(--v3-ink3)}
+
+/* Map paint shared by both variants: the chapter's cities as pins (the hit circle steps aside). */
+.v3Map .v3Pins{display:none}
+.v3Map[data-focus=points] .v3Pins{display:block}
+.v3Pin path{fill:var(--v3-accent);stroke:#fff;stroke-width:1.6}
+.v3Pin circle{fill:#fff}
+.v3Map[data-focus=points] circle.v3Hit{opacity:0}
+.v3Map .v3IsleBase{display:none}
+
+/* (a) Eiland. */
+.v3Map[data-kaart=eiland]{background:transparent!important;box-shadow:none!important;border-radius:0!important;overflow:visible!important}
+.v3Map[data-kaart=eiland] :is(.sea,.atlasWaterTexture,.v3RSea,.v3RShadow,.v3CoastGlow,.v3LandBase){display:none!important}
+.v3Map[data-kaart=eiland] .water:not(.v3Hit){fill-opacity:0!important;stroke-opacity:0!important}
+.v3Map[data-kaart=eiland] .v3IsleBase{display:block;fill:#c5d6a2}
+.v3Map[data-kaart=eiland][data-relief=off] .v3IsleBase{fill:#f1e3c0}
+.v3Map[data-kaart=eiland] :is(.atlasTerrain,.v3RCoast){clip-path:url(#v3m-italyClip)}
+.v3Map[data-kaart=eiland] :is(.contextLand,.country:not(.v3Hit):not(.v3Isle)){fill:#cdc7da!important;fill-opacity:.55!important;stroke:#fff!important;stroke-opacity:.45!important;stroke-width:.8px!important;mask:url(#v3m-nbFade)}
+.v3Map[data-kaart=eiland] :is(.contextLabel,.mapLabel){display:none}
+.v3Map[data-kaart=eiland] .v3Pins{filter:drop-shadow(0 2px 2px rgba(42,36,64,.30))}
+/* (b) Kaart: a rounded glass card around the map. */
+.v3Reis[data-kaart=kaart] .v3MapStage{border-radius:var(--v3-radius-glass);padding:10px;background:var(--v3-glass);-webkit-backdrop-filter:var(--v3-glass-filter);backdrop-filter:var(--v3-glass-filter);box-shadow:var(--v3-glass-shadow)}
+.v3Map[data-kaart=kaart]{border-radius:20px;box-shadow:none}
+
+/* Islands of Italy on the eiland: land like the mainland (relief through the clip; schoolkaart in Italy's colour). */
+.v3Map[data-kaart=eiland][data-relief=on] .v3Isle:not(.v3Hit){fill-opacity:0!important;stroke:#fff!important;stroke-opacity:.75!important}
+/* ≥ 768: the map fills its row exactly (absolute in the stage, so the row, not the drawing, sets the size). */
+@media (min-width:768px){
+ .v3Reis[data-view=reis] .v3MapStage{position:relative;display:block}
+ .v3Reis[data-view=reis] .v3Map{position:absolute;inset:0;margin:auto;max-width:100%;max-height:100%}
+ .v3Reis[data-view=reis][data-kaart=kaart] .v3Map{inset:10px;max-width:calc(100% - 20px);max-height:calc(100% - 20px)}
+}
+
+/* Layout ≥ 768 (desktop and iPad): the 12-column grid. */
+@media (min-width:768px){
+ .v3Reis[data-view=reis]{--v3-content:calc(100% - var(--v3-side-w) - 2*var(--v3-inner));--v3-col:calc((var(--v3-content) - 11*var(--v3-gut)) / 12);
+  grid-template-columns:var(--v3-side-w) calc(5*var(--v3-col) + 4*var(--v3-gut) + 8px) minmax(0,1fr);column-gap:var(--v3-gut)}
+ .v3Reis[data-view=reis]>.v3List{display:flex;flex-direction:column;gap:var(--v3-gut);margin:var(--v3-inner) 0 var(--v3-inner) 8px;padding:0;background:none!important;-webkit-backdrop-filter:none!important;backdrop-filter:none!important;box-shadow:none!important;border-radius:0}
+ .v3Reis[data-view=reis] .v3ScreenTitle{flex:none;padding-left:4px}
+ .v3Reis[data-view=reis] .v3Rows{flex:1 1 auto;min-height:0;overflow:auto;display:grid;align-content:start;gap:2px;padding:12px;
+  background:var(--v3-glass);-webkit-backdrop-filter:var(--v3-glass-filter);backdrop-filter:var(--v3-glass-filter);box-shadow:var(--v3-glass-shadow);border-radius:var(--v3-radius-glass)}
+ .v3Reis[data-view=reis]>.v3Main{display:grid;grid-template-columns:minmax(0,1fr);grid-template-rows:42px minmax(0,1fr) auto;gap:var(--v3-gut);margin:var(--v3-inner) var(--v3-inner) var(--v3-inner) 0;overflow:visible}
+ .v3Reis[data-view=reis] .v3Main>.v3Top{grid-row:1;padding:0;background:none!important;-webkit-backdrop-filter:none!important;backdrop-filter:none!important;box-shadow:none!important;border-radius:0}
+ .v3Reis[data-view=reis] .v3Main>.v3MapStage{grid-row:2;grid-column:1;min-height:0;padding:0}
+ .v3Reis[data-view=reis][data-kaart=kaart] .v3Main>.v3MapStage{padding:10px}
+ .v3Reis[data-view=reis] .v3Main>.v3Panel{grid-row:3;grid-column:1;align-self:end;padding:20px 24px!important}
+}
+/* iPad landscape (1024–1279): the labelled sidebar, 200 px, portrait 88 (Verfijning). */
+@media (min-width:1024px) and (max-width:1279px){
+ .v3Reis{--v3-side-w:200px}
+ .v3Reis .v3Side{padding:var(--v3-s5) var(--v3-s3);align-items:stretch}
+ .v3Reis .v3Brand b{font-size:26px;letter-spacing:.01em}
+ .v3Reis .v3Portrait{width:88px;height:88px}
+ .v3Reis .v3 .v3NavItem,.v3Reis .v3NavItem{justify-content:flex-start;gap:10px;width:100%;padding:0 var(--v3-s3);font-size:16px}
+ .v3Reis .v3NavItem span{position:static;width:auto;height:auto;overflow:visible;clip:auto}
+ .v3Reis .v3Side .v3Settings{align-self:flex-start;width:48px;padding:0;justify-content:center}
+ .v3Reis .v3Side .v3Settings span{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)}
+ .v3Reis .v3Side .v3Settings::before{left:0;transform:none;width:calc(var(--v3-side-w) - 2*var(--v3-s3))}
+ .v3Reis .v3Row{grid-template-columns:60px minmax(0,1fr) 24px;gap:12px;min-height:52px}
+ .v3Reis .v3Thumb{width:60px;height:38px}
+ .v3CardTitle{font-size:22px;line-height:28px}
+ .v3Reis .v3Actions .v3Btn.primary{min-width:170px}
+ .v3Reis .v3MapTools .v3SchoolBtn{width:40px;padding:0}
+ .v3Reis .v3MapTools .v3SchoolBtn span{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)}
+}
+/* iPad portrait (768–1023): the rail; the card wraps (title over dots and pill). */
+@media (min-width:768px) and (max-width:1023px){
+ .v3Reis .v3Panel{grid-template-columns:minmax(0,1fr)}
+ .v3Reis .v3Actions .v3Btn.primary{width:100%}
+ .v3Reis .v3Row{grid-template-columns:52px minmax(0,1fr) 22px;gap:10px;min-height:50px;padding:6px 8px}
+ .v3Reis .v3Thumb{width:52px;height:34px}
+ .v3CardTitle{font-size:22px;line-height:28px}
+ .v3Reis[data-view=reis] .v3ScreenTitle{font-size:30px;line-height:42px}
+ .v3Reis .v3MapTools .v3SchoolBtn span{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)}
+ .v3Reis .v3MapTools .v3SchoolBtn{width:40px;padding:0}
+ /* The top row may wrap: tools on the first line, the counters under them (right). */
+ .v3Reis[data-view=reis]>.v3Main{grid-template-rows:auto minmax(0,1fr) auto}
+ .v3Reis .v3Top{flex-wrap:wrap;row-gap:var(--v3-s2)}
+}
+/* Phone: one column — title, counters and tools, the card, the map, the list. */
+@media (max-width:767px){
+ .v3Reis[data-view=reis]>.v3List{padding-top:var(--v3-s2)}
+ .v3Reis[data-view=reis] .v3ScreenTitle{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+ .v3Reis .v3Top{flex-wrap:wrap;padding:var(--v3-s4) var(--v3-s5) 0}
+ .v3Reis .v3Panel{grid-template-columns:minmax(0,1fr);margin:var(--v3-s3) var(--v3-s4) 0;padding:var(--v3-s4) var(--v3-s5)!important;border-radius:22px;background:var(--v3-surface);box-shadow:var(--v3-glass-shadow)}
+ .v3Reis .v3Actions .v3Btn.primary{width:100%}
+ .v3CardTitle{font-size:24px;line-height:30px}
+ .v3Reis .v3Rows{padding:0 var(--v3-s2)}
+ .v3Map[data-kaart=eiland]{height:320px}
+}
+/* Reduced transparency: the card and the list are opaque already through the tokens; the eiland sea stays transparent
+   (it is the wash, not a panel). */

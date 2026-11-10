@@ -4,6 +4,15 @@ Branch `codex/topo-v3` vanaf de V2-afsluiting `f53dc0b` (voorouder `v2.0.2` = `8
 
 **V3.0 deel 5 — Kennismaking** (9 november): de V2-eerste-keerdialoog is één V3-scène met welkomstpose, naam, favoriete pizza, Andiamo! en Start meteen; de hulpteksten zijn weg. Daarna opent Reis met hoofdstuk 1. Profielschema 1 en de V2-regel voor het eenmalig opnieuw aanbieden blijven gelijk. Preview-demo `#welkom`. [Bewijs](qa/v3-kennismaking/README.md).
 
+**V3.0 fase B — stap 2, Reis volgens `R-reis-ijk`** (10 november):
+- 12-koloms raster: titel en lijst op 5 kolommen, kaart op 7, met gedeelde lijnen boven en onder;
+- één titel "Reis"; rijen met de status als vinkje, medaille, dunne balk of slot;
+- de hoofdstukkaart met drie stapstippen en één pil;
+- pins op de kaart, tellers met lijniconen;
+- iPad liggend: een gelabelde zijbalk van 200 px met portret 88.
+
+De kaart is er in twee varianten: **(a) Eiland** (standaard) en **(b) Kaart** als glaskaart (`#…/kaart`). **De eigenaar kiest.** [Bewijs en vergelijkingen](qa/v3-faseb/README.md).
+
 **V3.0 fase B — stap 1, de gedeelde visuele laag** (10 november), volgens Ingetogenheid en Verfijning:
 - één ronde letter: SF Pro Rounded waar die er is, anders de ingebedde Nunito ("Topo Rounded", OFL, 33 KB);
 - inkt `#2A2440`, secundair `#5E5872`; titel op 700, rijen op 500, selectie op 600;

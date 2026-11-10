@@ -1,6 +1,6 @@
 {
  "html": "output/html/TOPO-V3-Reis-Preview.html",
- "sha256": "12d974a95402f2c44ff3afd91d85265587e88dce90f4203d58ef431507e5d6db",
+ "sha256": "d06f6ea23f8b8a49054f53dbb283666a4c0c94b14075ad3ca6e83572b909a34b",
  "indexSha256": "3aced3c31259011b0af2947c78f71965cb4beb2e88c69d1663e61792b0304f5a",
  "runs": {
   "desktop": {
@@ -32,7 +32,7 @@
     "tab": "toets",
     "type": "exam",
     "count": "1 / 10",
-    "q": "city-20",
+    "q": "city-19",
     "qmode": "write",
     "answered": false,
     "examTotal": 10,
@@ -55,29 +55,29 @@
     "marks": 10,
     "bad": [
      {
-      "id": "city-22",
-      "name": "Trente"
+      "id": "city-12",
+      "name": "Verona"
      },
      {
-      "id": "city-1",
-      "name": "Bari"
+      "id": "city-6",
+      "name": "Napels"
      },
      {
-      "id": "city-21",
-      "name": "Pescara"
+      "id": "city-17",
+      "name": "Foggia"
      }
     ],
     "marksOnMap": true,
     "fouten": [
      [
-      "Trente"
+      "Verona"
      ],
      [
-      "Bari",
+      "Napels",
       "Fout"
      ],
      [
-      "Pescara",
+      "Foggia",
       "overgeslagen"
      ]
     ],
@@ -93,7 +93,7 @@
      "schema": 1,
      "results": [
       {
-       "at": "2026-11-10T08:35:31.164Z",
+       "at": "2026-11-10T09:04:50.902Z",
        "chapters": [
         "city1",
         "city2",
@@ -106,28 +106,28 @@
        "correct": 7,
        "items": [
         {
-         "id": "city-20",
+         "id": "city-19",
          "mode": "write",
          "ok": true
         },
         {
-         "id": "city-22",
+         "id": "city-12",
          "mode": "point",
          "ok": false,
-         "given": "Bologna"
+         "given": "Venetië"
+        },
+        {
+         "id": "city-21",
+         "mode": "point",
+         "ok": true
+        },
+        {
+         "id": "city-11",
+         "mode": "write",
+         "ok": true
         },
         {
          "id": "city-6",
-         "mode": "write",
-         "ok": true
-        },
-        {
-         "id": "city-9",
-         "mode": "point",
-         "ok": true
-        },
-        {
-         "id": "city-1",
          "mode": "write",
          "ok": false,
          "given": "Fout"
@@ -138,15 +138,10 @@
          "ok": true
         },
         {
-         "id": "city-21",
+         "id": "city-17",
          "mode": "write",
          "ok": false,
          "given": null
-        },
-        {
-         "id": "city-7",
-         "mode": "point",
-         "ok": true
         },
         {
          "id": "city-15",
@@ -154,8 +149,13 @@
          "ok": true
         },
         {
-         "id": "city-11",
+         "id": "city-14",
          "mode": "write",
+         "ok": true
+        },
+        {
+         "id": "city-9",
+         "mode": "point",
          "ok": true
         }
        ]
@@ -181,27 +181,27 @@
    },
    "answers": [
     [
-     "city-20",
+     "city-19",
      "write",
      "ok"
     ],
     [
-     "city-22",
+     "city-12",
      "point",
      "wrong"
     ],
     [
-     "city-6",
-     "write",
-     "ok"
-    ],
-    [
-     "city-9",
+     "city-21",
      "point",
      "ok"
     ],
     [
-     "city-1",
+     "city-11",
+     "write",
+     "ok"
+    ],
+    [
+     "city-6",
      "write",
      "wrong"
     ],
@@ -211,14 +211,9 @@
      "ok"
     ],
     [
-     "city-21",
+     "city-17",
      "write",
      "skip"
-    ],
-    [
-     "city-7",
-     "point",
-     "ok"
     ],
     [
      "city-15",
@@ -226,21 +221,26 @@
      "ok"
     ],
     [
-     "city-11",
+     "city-14",
      "write",
+     "ok"
+    ],
+    [
+     "city-9",
+     "point",
      "ok"
     ]
    ],
    "foutenExpect": [
     [
-     "Trente"
+     "Verona"
     ],
     [
-     "Bari",
+     "Napels",
      "Fout"
     ],
     [
-     "Pescara",
+     "Foggia",
      "overgeslagen"
     ]
    ],
@@ -274,13 +274,13 @@
    "max10": {
     "count": 10,
     "first": [
-     "2026-11-10T08:35:44.411Z",
+     "2026-11-10T09:05:04.154Z",
      0
     ]
    },
    "print": {
     "printed": 1,
-    "text": "Toets Topografie ItaliëNaam: Demo10 november 20260 van 10 goedSteden 1–6 · Steden 7–12 · Extra steden 13–18 · Extra steden 19–23\n\n  \n  \n  \n  \n  \n  \n\nI T A L I ËDUITSLANDTSJECHIËSLOWAKIJEHONGARIJEBOSNIËTUNESIË▲▲×Foggia×Catania×Palermo×Varese×Messina×Triëst×Venetië×Verona×Napels×CatanzaroFoutenFoggiaovergeslagenCataniaovergeslagenPalermoovergeslagenVareseovergeslagenMessinaovergeslagenTriëstovergeslagenVenetiëovergeslagenVeronaovergeslagenNapelsovergeslagenCatanzaroovergeslagen",
+    "text": "Toets Topografie ItaliëNaam: Demo10 november 20260 van 10 goedSteden 1–6 · Steden 7–12 · Extra steden 13–18 · Extra steden 19–23\n\n  \n  \n  \n  \n  \n  \n\nI T A L I ËDUITSLANDTSJECHIËSLOWAKIJEHONGARIJEBOSNIËTUNESIË▲▲×Pisa×Genua×Venetië×Milaan×La Spezia×Catanzaro×Messina×Catania×Verona×FlorenceFoutenPisaovergeslagenGenuaovergeslagenVenetiëovergeslagenMilaanovergeslagenLa SpeziaovergeslagenCatanzaroovergeslagenMessinaovergeslagenCataniaovergeslagenVeronaovergeslagenFlorenceovergeslagen",
     "map": true,
     "marks": 10
    },
@@ -333,8 +333,8 @@
     "tab": "toets",
     "type": "exam",
     "count": "1 / 10",
-    "q": "city-14",
-    "qmode": "point",
+    "q": "city-21",
+    "qmode": "write",
     "answered": false,
     "examTotal": 10,
     "examAnswered": 0,
@@ -356,30 +356,29 @@
     "marks": 10,
     "bad": [
      {
-      "id": "city-21",
-      "name": "Pescara"
-     },
-     {
-      "id": "city-20",
-      "name": "Modena"
-     },
-     {
       "id": "city-10",
       "name": "Turijn"
+     },
+     {
+      "id": "city-3",
+      "name": "Florence"
+     },
+     {
+      "id": "city-19",
+      "name": "Messina"
      }
     ],
     "marksOnMap": true,
     "fouten": [
      [
-      "Pescara",
+      "Turijn"
+     ],
+     [
+      "Florence",
       "Fout"
      ],
      [
-      "Modena",
-      "Fout"
-     ],
-     [
-      "Turijn",
+      "Messina",
       "overgeslagen"
      ]
     ],
@@ -395,7 +394,7 @@
      "schema": 1,
      "results": [
       {
-       "at": "2026-11-10T08:35:58.548Z",
+       "at": "2026-11-10T09:05:18.254Z",
        "chapters": [
         "city1",
         "city2",
@@ -408,56 +407,56 @@
        "correct": 7,
        "items": [
         {
-         "id": "city-14",
-         "mode": "point",
-         "ok": true
-        },
-        {
          "id": "city-21",
          "mode": "write",
-         "ok": false,
-         "given": "Fout"
-        },
-        {
-         "id": "city-11",
-         "mode": "point",
-         "ok": true
-        },
-        {
-         "id": "city-6",
-         "mode": "write",
-         "ok": true
-        },
-        {
-         "id": "city-20",
-         "mode": "write",
-         "ok": false,
-         "given": "Fout"
-        },
-        {
-         "id": "city-22",
-         "mode": "point",
          "ok": true
         },
         {
          "id": "city-10",
          "mode": "point",
          "ok": false,
-         "given": null
+         "given": "Catania"
+        },
+        {
+         "id": "city-16",
+         "mode": "point",
+         "ok": true
+        },
+        {
+         "id": "city-15",
+         "mode": "write",
+         "ok": true
+        },
+        {
+         "id": "city-3",
+         "mode": "write",
+         "ok": false,
+         "given": "Fout"
+        },
+        {
+         "id": "city-13",
+         "mode": "point",
+         "ok": true
         },
         {
          "id": "city-19",
-         "mode": "write",
-         "ok": true
-        },
-        {
-         "id": "city-18",
-         "mode": "write",
-         "ok": true
-        },
-        {
-         "id": "city-9",
          "mode": "point",
+         "ok": false,
+         "given": null
+        },
+        {
+         "id": "city-7",
+         "mode": "write",
+         "ok": true
+        },
+        {
+         "id": "city-6",
+         "mode": "point",
+         "ok": true
+        },
+        {
+         "id": "city-11",
+         "mode": "write",
          "ok": true
         }
        ]
@@ -483,71 +482,71 @@
    },
    "answers": [
     [
-     "city-14",
-     "point",
-     "ok"
-    ],
-    [
      "city-21",
      "write",
-     "wrong"
-    ],
-    [
-     "city-11",
-     "point",
-     "ok"
-    ],
-    [
-     "city-6",
-     "write",
-     "ok"
-    ],
-    [
-     "city-20",
-     "write",
-     "wrong"
-    ],
-    [
-     "city-22",
-     "point",
      "ok"
     ],
     [
      "city-10",
      "point",
-     "skip"
+     "wrong"
+    ],
+    [
+     "city-16",
+     "point",
+     "ok"
+    ],
+    [
+     "city-15",
+     "write",
+     "ok"
+    ],
+    [
+     "city-3",
+     "write",
+     "wrong"
+    ],
+    [
+     "city-13",
+     "point",
+     "ok"
     ],
     [
      "city-19",
-     "write",
-     "ok"
-    ],
-    [
-     "city-18",
-     "write",
-     "ok"
-    ],
-    [
-     "city-9",
      "point",
+     "skip"
+    ],
+    [
+     "city-7",
+     "write",
+     "ok"
+    ],
+    [
+     "city-6",
+     "point",
+     "ok"
+    ],
+    [
+     "city-11",
+     "write",
      "ok"
     ]
    ],
    "foutenExpect": [
     [
-     "Pescara",
+     "Turijn"
+    ],
+    [
+     "Florence",
      "Fout"
     ],
     [
-     "Modena",
-     "Fout"
-    ],
-    [
-     "Turijn",
+     "Messina",
      "overgeslagen"
     ]
    ],
    "foutenKinds": [
+    "point",
     "skip",
     "write"
    ],
@@ -587,8 +586,8 @@
     "tab": "toets",
     "type": "exam",
     "count": "1 / 10",
-    "q": "city-18",
-    "qmode": "point",
+    "q": "city-6",
+    "qmode": "write",
     "answered": false,
     "examTotal": 10,
     "examAnswered": 0,
@@ -610,29 +609,28 @@
     "marks": 10,
     "bad": [
      {
-      "id": "city-6",
-      "name": "Napels"
-     },
-     {
-      "id": "city-3",
-      "name": "Florence"
-     },
-     {
       "id": "city-10",
       "name": "Turijn"
+     },
+     {
+      "id": "city-11",
+      "name": "Venetië"
+     },
+     {
+      "id": "city-21",
+      "name": "Pescara"
      }
     ],
     "marksOnMap": true,
     "fouten": [
      [
-      "Napels",
-      "Fout"
+      "Turijn"
      ],
      [
-      "Florence"
+      "Venetië"
      ],
      [
-      "Turijn",
+      "Pescara",
       "overgeslagen"
      ]
     ],
@@ -648,7 +646,7 @@
      "schema": 1,
      "results": [
       {
-       "at": "2026-11-10T08:36:12.790Z",
+       "at": "2026-11-10T09:05:32.486Z",
        "chapters": [
         "city1",
         "city2",
@@ -661,34 +659,7 @@
        "correct": 7,
        "items": [
         {
-         "id": "city-18",
-         "mode": "point",
-         "ok": true
-        },
-        {
          "id": "city-6",
-         "mode": "write",
-         "ok": false,
-         "given": "Fout"
-        },
-        {
-         "id": "city-1",
-         "mode": "point",
-         "ok": true
-        },
-        {
-         "id": "city-23",
-         "mode": "write",
-         "ok": true
-        },
-        {
-         "id": "city-3",
-         "mode": "point",
-         "ok": false,
-         "given": "Bari"
-        },
-        {
-         "id": "city-5",
          "mode": "write",
          "ok": true
         },
@@ -696,20 +667,47 @@
          "id": "city-10",
          "mode": "point",
          "ok": false,
-         "given": null
+         "given": "Catanzaro"
         },
         {
-         "id": "city-20",
+         "id": "city-18",
          "mode": "write",
          "ok": true
         },
         {
-         "id": "city-4",
+         "id": "city-7",
          "mode": "point",
          "ok": true
         },
         {
-         "id": "city-7",
+         "id": "city-11",
+         "mode": "point",
+         "ok": false,
+         "given": "Catanzaro"
+        },
+        {
+         "id": "city-1",
+         "mode": "write",
+         "ok": true
+        },
+        {
+         "id": "city-21",
+         "mode": "write",
+         "ok": false,
+         "given": null
+        },
+        {
+         "id": "city-16",
+         "mode": "point",
+         "ok": true
+        },
+        {
+         "id": "city-9",
+         "mode": "point",
+         "ok": true
+        },
+        {
+         "id": "city-17",
          "mode": "write",
          "ok": true
         }
@@ -736,73 +734,71 @@
    },
    "answers": [
     [
-     "city-18",
-     "point",
-     "ok"
-    ],
-    [
      "city-6",
-     "write",
-     "wrong"
-    ],
-    [
-     "city-1",
-     "point",
-     "ok"
-    ],
-    [
-     "city-23",
-     "write",
-     "ok"
-    ],
-    [
-     "city-3",
-     "point",
-     "wrong"
-    ],
-    [
-     "city-5",
      "write",
      "ok"
     ],
     [
      "city-10",
      "point",
-     "skip"
+     "wrong"
     ],
     [
-     "city-20",
+     "city-18",
      "write",
      "ok"
     ],
     [
-     "city-4",
+     "city-7",
      "point",
      "ok"
     ],
     [
-     "city-7",
+     "city-11",
+     "point",
+     "wrong"
+    ],
+    [
+     "city-1",
+     "write",
+     "ok"
+    ],
+    [
+     "city-21",
+     "write",
+     "skip"
+    ],
+    [
+     "city-16",
+     "point",
+     "ok"
+    ],
+    [
+     "city-9",
+     "point",
+     "ok"
+    ],
+    [
+     "city-17",
      "write",
      "ok"
     ]
    ],
    "foutenExpect": [
     [
-     "Napels",
-     "Fout"
+     "Turijn"
     ],
     [
-     "Florence"
+     "Venetië"
     ],
     [
-     "Turijn",
+     "Pescara",
      "overgeslagen"
     ]
    ],
    "foutenKinds": [
     "point",
-    "skip",
-    "write"
+    "skip"
    ],
    "oefen": {
     "mode": "point",
@@ -840,8 +836,8 @@
     "tab": "toets",
     "type": "exam",
     "count": "1 / 10",
-    "q": "city-16",
-    "qmode": "write",
+    "q": "city-10",
+    "qmode": "point",
     "answered": false,
     "examTotal": 10,
     "examAnswered": 0,
@@ -863,29 +859,30 @@
     "marks": 10,
     "bad": [
      {
-      "id": "city-10",
-      "name": "Turijn"
-     },
-     {
-      "id": "city-14",
-      "name": "Cagliari"
-     },
-     {
       "id": "city-6",
       "name": "Napels"
+     },
+     {
+      "id": "city-3",
+      "name": "Florence"
+     },
+     {
+      "id": "city-7",
+      "name": "Palermo"
      }
     ],
     "marksOnMap": true,
     "fouten": [
      [
-      "Turijn"
-     ],
-     [
-      "Cagliari",
+      "Napels",
       "Fout"
      ],
      [
-      "Napels",
+      "Florence",
+      "Fout"
+     ],
+     [
+      "Palermo",
       "overgeslagen"
      ]
     ],
@@ -901,7 +898,7 @@
      "schema": 1,
      "results": [
       {
-       "at": "2026-11-10T08:36:26.532Z",
+       "at": "2026-11-10T09:05:46.230Z",
        "chapters": [
         "city1",
         "city2",
@@ -914,34 +911,7 @@
        "correct": 7,
        "items": [
         {
-         "id": "city-16",
-         "mode": "write",
-         "ok": true
-        },
-        {
          "id": "city-10",
-         "mode": "point",
-         "ok": false,
-         "given": "Rome"
-        },
-        {
-         "id": "city-9",
-         "mode": "write",
-         "ok": true
-        },
-        {
-         "id": "city-17",
-         "mode": "point",
-         "ok": true
-        },
-        {
-         "id": "city-14",
-         "mode": "write",
-         "ok": false,
-         "given": "Fout"
-        },
-        {
-         "id": "city-1",
          "mode": "point",
          "ok": true
         },
@@ -949,21 +919,48 @@
          "id": "city-6",
          "mode": "write",
          "ok": false,
+         "given": "Fout"
+        },
+        {
+         "id": "city-14",
+         "mode": "write",
+         "ok": true
+        },
+        {
+         "id": "city-16",
+         "mode": "point",
+         "ok": true
+        },
+        {
+         "id": "city-3",
+         "mode": "write",
+         "ok": false,
+         "given": "Fout"
+        },
+        {
+         "id": "city-8",
+         "mode": "point",
+         "ok": true
+        },
+        {
+         "id": "city-7",
+         "mode": "write",
+         "ok": false,
          "given": null
         },
         {
-         "id": "city-21",
+         "id": "city-13",
          "mode": "point",
          "ok": true
         },
         {
-         "id": "city-23",
-         "mode": "point",
-         "ok": true
-        },
-        {
-         "id": "city-11",
+         "id": "city-2",
          "mode": "write",
+         "ok": true
+        },
+        {
+         "id": "city-18",
+         "mode": "point",
          "ok": true
         }
        ]
@@ -989,71 +986,71 @@
    },
    "answers": [
     [
-     "city-16",
-     "write",
-     "ok"
-    ],
-    [
      "city-10",
-     "point",
-     "wrong"
-    ],
-    [
-     "city-9",
-     "write",
-     "ok"
-    ],
-    [
-     "city-17",
-     "point",
-     "ok"
-    ],
-    [
-     "city-14",
-     "write",
-     "wrong"
-    ],
-    [
-     "city-1",
      "point",
      "ok"
     ],
     [
      "city-6",
      "write",
+     "wrong"
+    ],
+    [
+     "city-14",
+     "write",
+     "ok"
+    ],
+    [
+     "city-16",
+     "point",
+     "ok"
+    ],
+    [
+     "city-3",
+     "write",
+     "wrong"
+    ],
+    [
+     "city-8",
+     "point",
+     "ok"
+    ],
+    [
+     "city-7",
+     "write",
      "skip"
     ],
     [
-     "city-21",
+     "city-13",
      "point",
      "ok"
     ],
     [
-     "city-23",
-     "point",
-     "ok"
-    ],
-    [
-     "city-11",
+     "city-2",
      "write",
+     "ok"
+    ],
+    [
+     "city-18",
+     "point",
      "ok"
     ]
    ],
    "foutenExpect": [
     [
-     "Turijn"
-    ],
-    [
-     "Cagliari",
+     "Napels",
      "Fout"
     ],
     [
-     "Napels",
+     "Florence",
+     "Fout"
+    ],
+    [
+     "Palermo",
      "overgeslagen"
     ]
    ],
    "foutenKinds": [
-    "point",
     "skip",
     "write"
    ],
@@ -1114,7 +1111,7 @@
     "tab": "toets",
     "type": "exam",
     "count": "1 / 10",
-    "q": "city-14",
+    "q": "city-12",
     "qmode": "write",
     "answered": false,
     "examTotal": 10,
@@ -1137,28 +1134,29 @@
     "marks": 10,
     "bad": [
      {
-      "id": "city-8",
-      "name": "Pisa"
+      "id": "city-15",
+      "name": "Catania"
      },
      {
-      "id": "city-2",
-      "name": "Bologna"
+      "id": "city-22",
+      "name": "Trente"
      },
      {
-      "id": "city-5",
-      "name": "Milaan"
+      "id": "city-19",
+      "name": "Messina"
      }
     ],
     "marksOnMap": true,
     "fouten": [
      [
-      "Pisa"
+      "Catania"
      ],
      [
-      "Bologna"
+      "Trente",
+      "Fout"
      ],
      [
-      "Milaan",
+      "Messina",
       "overgeslagen"
      ]
     ],
@@ -1174,7 +1172,7 @@
      "schema": 1,
      "results": [
       {
-       "at": "2026-11-10T08:36:40.063Z",
+       "at": "2026-11-10T09:05:59.771Z",
        "chapters": [
         "city1",
         "city2",
@@ -1187,39 +1185,39 @@
        "correct": 7,
        "items": [
         {
-         "id": "city-14",
+         "id": "city-12",
          "mode": "write",
          "ok": true
         },
         {
-         "id": "city-8",
+         "id": "city-15",
          "mode": "point",
          "ok": false,
-         "given": "Triëst"
+         "given": "Verona"
         },
         {
-         "id": "city-17",
-         "mode": "point",
-         "ok": true
-        },
-        {
-         "id": "city-4",
+         "id": "city-3",
          "mode": "write",
          "ok": true
         },
         {
-         "id": "city-2",
+         "id": "city-6",
          "mode": "point",
+         "ok": true
+        },
+        {
+         "id": "city-22",
+         "mode": "write",
          "ok": false,
-         "given": "Triëst"
+         "given": "Fout"
         },
         {
-         "id": "city-23",
-         "mode": "write",
+         "id": "city-10",
+         "mode": "point",
          "ok": true
         },
         {
-         "id": "city-5",
+         "id": "city-19",
          "mode": "write",
          "ok": false,
          "given": null
@@ -1230,12 +1228,12 @@
          "ok": true
         },
         {
-         "id": "city-7",
+         "id": "city-17",
          "mode": "point",
          "ok": true
         },
         {
-         "id": "city-16",
+         "id": "city-20",
          "mode": "write",
          "ok": true
         }
@@ -1262,37 +1260,37 @@
    },
    "answers": [
     [
-     "city-14",
+     "city-12",
      "write",
      "ok"
     ],
     [
-     "city-8",
+     "city-15",
      "point",
      "wrong"
     ],
     [
-     "city-17",
-     "point",
-     "ok"
-    ],
-    [
-     "city-4",
+     "city-3",
      "write",
      "ok"
     ],
     [
-     "city-2",
+     "city-6",
      "point",
+     "ok"
+    ],
+    [
+     "city-22",
+     "write",
      "wrong"
     ],
     [
-     "city-23",
-     "write",
+     "city-10",
+     "point",
      "ok"
     ],
     [
-     "city-5",
+     "city-19",
      "write",
      "skip"
     ],
@@ -1302,31 +1300,33 @@
      "ok"
     ],
     [
-     "city-7",
+     "city-17",
      "point",
      "ok"
     ],
     [
-     "city-16",
+     "city-20",
      "write",
      "ok"
     ]
    ],
    "foutenExpect": [
     [
-     "Pisa"
+     "Catania"
     ],
     [
-     "Bologna"
+     "Trente",
+     "Fout"
     ],
     [
-     "Milaan",
+     "Messina",
      "overgeslagen"
     ]
    ],
    "foutenKinds": [
     "point",
-    "skip"
+    "skip",
+    "write"
    ],
    "reach": {
     "Kopieer": {

@@ -34,7 +34,7 @@ DIALOG_JS = '''() => { const d = document.querySelector('dialog.ninoProfile[open
     hOverflow: document.documentElement.scrollWidth > innerWidth + 1}; }'''
 AFTER_JS = '''() => { const s = window.TOPO_V3_PREVIEW.storage;
   return {open: !!document.querySelector('dialog.ninoProfile[open]'), profile: s.get('topo-nino-profile-v1') ?? null, intro: s.get('topo-nino-intro-v1') ?? null,
-    view: document.querySelector('.v3Reis')?.dataset.view, selected: window.TOPO_V3.ui.selected, title: document.querySelector('.v3Panel h1')?.textContent || '',
+    view: document.querySelector('.v3Reis')?.dataset.view, selected: window.TOPO_V3.ui.selected, title: document.querySelector('.v3Panel #v3Title')?.textContent || '',
     lesson: document.body.classList.contains('v3Les')}; }'''
 
 async def main():

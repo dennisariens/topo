@@ -622,3 +622,51 @@ Bron: `docs/v3/renders/README.md` (Gedeelde stijl, Ingetogenheid, IJkpunt `R-oef
 - **Nog niet in deze stap:**
   - het 12-koloms raster en de schermen volgens de renders (vanaf stap 2, Reis eerst);
   - ★ en ↻ in labels; die gaan per scherm mee.
+
+## 2026-11-10 — V3.0 fase B, stap 2: Reis volgens `R-reis-ijk`, twee kaartvarianten
+
+Bron: `docs/v3/renders/README.md` (Reis, Raster en uitlijning, Verfijning) en de review van fase A (twee kaartvarianten). Alleen presentatie: elke actie drukt nog steeds de bestaande V2-knop, en de geometrie is ongewijzigd (46/46). Bestand: `scripts/v3/reis-ijk.css`, na `stijl.css`.
+
+- **Raster (≥ 768 px):**
+  - het inhoudsvlak heeft 12 kolommen, met een goot van 24 (iPad 16) en een binnenmarge van goot + 8;
+  - de titel "Reis" en de lijst beslaan 5 kolommen, de kaartkolom 7;
+  - **gedeelde lijnen:** de bovenkant van de titel = de bovenkant van de eerste rij in de kaartkolom; de onderkant van de lijst = de onderkant van de hoofdstukkaart = de binnenmarge.
+- **Eén titel:** de schermtitel "Reis" is een `h1`. Het kopje "Hoofdstukken" is alleen nog voor schermlezers. De hoofdstuktitel in de kaart is een `h2` (`#v3Title`; de focus op de telefoon blijft daar).
+- **Rijen:**
+  - een rij toont de scène, de naam en de status;
+  - **afgerond:** alleen een vinkje; **goud:** een medaille; **bezig:** een dunne balk onder de naam; **op slot:** alleen een slotje;
+  - de nummers vervallen;
+  - de gekozen rij heeft de selectiestijl.
+- **Kaartkolom:**
+  - bovenaan links de kaartknoppen (Schoolblad, Schoolkaart/Reliëf), naast de kaart en nooit erop; rechts de tellers met lijniconen (pizzapunt, scooter);
+  - de stappenbalk van 11 hoofdstukken en "1 / 11" vervallen hier; die informatie staat in Voortgang;
+  - de kaart heeft een eigen rij, dus pins vallen nooit onder de hoofdstukkaart.
+- **Hoofdstukkaart:**
+  - de titel, drie stapstippen (klaar: violet met vinkje; nu: een ring; later: leeg) en één pil met pijl;
+  - eronder stil de herhalingen (opnieuw-icoon + les);
+  - de scènekop vervalt, want de rijen dragen de scènes;
+  - ★ en ↻ in labels zijn lijniconen geworden (medaille, opnieuw).
+- **Pins:** de steden van het gekozen hoofdstuk zijn violette pins op de kaart, op een vaste schermgrootte. Ze zijn decoratie bovenop de kloon; het treffervlak van de stad blijft eronder.
+- **Variant (a) Eiland** (standaard tot de eigenaar kiest):
+  - Italië en de eilanden van het hoofdstuk Eilanden (Sicilië en Sardinië, `.country`-items) zweven als land met een zachte slagschaduw;
+  - het reliëf is op hun omtrek geclipt;
+  - de zee is transparant op de wash, zonder zeelaag en zonder landschaduw;
+  - de buurlanden zijn zachte, onverzadigde silhouetten (lavendelgrijs, 55%). Ze vervagen met een radiaal masker dat binnen de getekende data naar nul loopt, dus er is geen harde snijlijn en geen waas op Italië;
+  - de kaart is strak gekaderd (4%) en vult haar rij.
+- **Variant (b) Kaart:** de kaart van fase A in een afgeronde glaskaart (radius 28) die haar rasterrij vult; de kaart zelf heeft radius 20. Preview: `#…/kaart`.
+- **Zijbalk:**
+  - op iPad liggend (1024–1279) is de zijbalk gelabeld, 200 px breed, met een portret van 88 px (Verfijning);
+  - op iPad staand blijft de rail van 76 px;
+  - in lessen blijft de rail van 76 px onder 1280, zodat de kaart de ruimte krijgt.
+- **QA (`scripts/qa-v3-faseb.py`):**
+  - raster en gedeelde lijnen (±1 px);
+  - één display-tekst;
+  - portretmaat en status per rij;
+  - pins binnen de kaartrij;
+  - lijniconen bij de tellers;
+  - variant (a): geen zeekleur, buurlanden als vervaagde silhouetten, het reliëf op Italië geclipt;
+  - variant (b): de glaskaart;
+  - geen violette tekst buiten de betekenis.
+  - Vergelijkingen naast `R-reis-ijk`: `docs/qa/v3-stijlbeeld/reis-ijk-{eiland,kaart}-{desktop,ipad-liggend}.jpg`.
+  - **Bestaande checks bijgesteld:** `qa-v3-stijlbeeld` (lijst- en kaartpanelen, geen kop, lijniconen bij de tellers, zee- en schaduwlaag uit in variant (a)) en `qa-v3-reis`/`qa-v3-kennismaking` (de titel is `#v3Title`).
+- **Open voor de eigenaar:** de keuze tussen (a) en (b). Bij Les blijft de volledige schoolkaart met zeeën staan (besluit 10-11).

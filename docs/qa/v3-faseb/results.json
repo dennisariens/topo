@@ -1,0 +1,849 @@
+{
+ "runs": {
+  "desktop/eiland/bezig": {
+   "gut": 24,
+   "inner": 32,
+   "col": 68,
+   "big": [
+    "Reis"
+   ],
+   "portrait": 112,
+   "kaart": "eiland",
+   "dots": 3,
+   "primaries": 1,
+   "rowInfo": [
+    {
+     "state": "done",
+     "bar": false,
+     "icon": "v3check"
+    },
+    {
+     "state": "now",
+     "bar": true,
+     "icon": ""
+    },
+    {
+     "state": "locked",
+     "bar": false,
+     "icon": "v3lock"
+    },
+    {
+     "state": "locked",
+     "bar": false,
+     "icon": "v3lock"
+    },
+    {
+     "state": "locked",
+     "bar": false,
+     "icon": "v3lock"
+    },
+    {
+     "state": "locked",
+     "bar": false,
+     "icon": "v3lock"
+    },
+    {
+     "state": "locked",
+     "bar": false,
+     "icon": "v3lock"
+    },
+    {
+     "state": "locked",
+     "bar": false,
+     "icon": "v3lock"
+    },
+    {
+     "state": "locked",
+     "bar": false,
+     "icon": "v3lock"
+    },
+    {
+     "state": "locked",
+     "bar": false,
+     "icon": "v3lock"
+    },
+    {
+     "state": "locked",
+     "bar": false,
+     "icon": "v3lock"
+    }
+   ],
+   "pins": 6
+  },
+  "desktop/eiland/afgerond": {
+   "gut": 24,
+   "inner": 32,
+   "col": 68,
+   "big": [
+    "Reis"
+   ],
+   "portrait": 112,
+   "kaart": "eiland",
+   "dots": 3,
+   "primaries": 1,
+   "rowInfo": [
+    {
+     "state": "gold",
+     "bar": false,
+     "icon": "v3medal"
+    },
+    {
+     "state": "gold",
+     "bar": false,
+     "icon": "v3medal"
+    },
+    {
+     "state": "done",
+     "bar": false,
+     "icon": "v3check"
+    },
+    {
+     "state": "done",
+     "bar": false,
+     "icon": "v3check"
+    },
+    {
+     "state": "now",
+     "bar": true,
+     "icon": ""
+    },
+    {
+     "state": "locked",
+     "bar": false,
+     "icon": "v3lock"
+    },
+    {
+     "state": "locked",
+     "bar": false,
+     "icon": "v3lock"
+    },
+    {
+     "state": "locked",
+     "bar": false,
+     "icon": "v3lock"
+    },
+    {
+     "state": "locked",
+     "bar": false,
+     "icon": "v3lock"
+    },
+    {
+     "state": "locked",
+     "bar": false,
+     "icon": "v3lock"
+    },
+    {
+     "state": "locked",
+     "bar": false,
+     "icon": "v3lock"
+    }
+   ],
+   "pins": 0
+  },
+  "desktop/kaart/bezig": {
+   "gut": 24,
+   "inner": 32,
+   "col": 68,
+   "big": [
+    "Reis"
+   ],
+   "portrait": 112,
+   "kaart": "kaart",
+   "dots": 3,
+   "primaries": 1,
+   "rowInfo": [
+    {
+     "state": "done",
+     "bar": false,
+     "icon": "v3check"
+    },
+    {
+     "state": "now",
+     "bar": true,
+     "icon": ""
+    },
+    {
+     "state": "locked",
+     "bar": false,
+     "icon": "v3lock"
+    },
+    {
+     "state": "locked",
+     "bar": false,
+     "icon": "v3lock"
+    },
+    {
+     "state": "locked",
+     "bar": false,
+     "icon": "v3lock"
+    },
+    {
+     "state": "locked",
+     "bar": false,
+     "icon": "v3lock"
+    },
+    {
+     "state": "locked",
+     "bar": false,
+     "icon": "v3lock"
+    },
+    {
+     "state": "locked",
+     "bar": false,
+     "icon": "v3lock"
+    },
+    {
+     "state": "locked",
+     "bar": false,
+     "icon": "v3lock"
+    },
+    {
+     "state": "locked",
+     "bar": false,
+     "icon": "v3lock"
+    },
+    {
+     "state": "locked",
+     "bar": false,
+     "icon": "v3lock"
+    }
+   ],
+   "pins": 6
+  },
+  "desktop/kaart/afgerond": {
+   "gut": 24,
+   "inner": 32,
+   "col": 68,
+   "big": [
+    "Reis"
+   ],
+   "portrait": 112,
+   "kaart": "kaart",
+   "dots": 3,
+   "primaries": 1,
+   "rowInfo": [
+    {
+     "state": "gold",
+     "bar": false,
+     "icon": "v3medal"
+    },
+    {
+     "state": "gold",
+     "bar": false,
+     "icon": "v3medal"
+    },
+    {
+     "state": "done",
+     "bar": false,
+     "icon": "v3check"
+    },
+    {
+     "state": "done",
+     "bar": false,
+     "icon": "v3check"
+    },
+    {
+     "state": "now",
+     "bar": true,
+     "icon": ""
+    },
+    {
+     "state": "locked",
+     "bar": false,
+     "icon": "v3lock"
+    },
+    {
+     "state": "locked",
+     "bar": false,
+     "icon": "v3lock"
+    },
+    {
+     "state": "locked",
+     "bar": false,
+     "icon": "v3lock"
+    },
+    {
+     "state": "locked",
+     "bar": false,
+     "icon": "v3lock"
+    },
+    {
+     "state": "locked",
+     "bar": false,
+     "icon": "v3lock"
+    },
+    {
+     "state": "locked",
+     "bar": false,
+     "icon": "v3lock"
+    }
+   ],
+   "pins": 0
+  },
+  "ipad-liggend/eiland/bezig": {
+   "gut": 16,
+   "inner": 24,
+   "col": 59.666666666666664,
+   "big": [
+    "Reis"
+   ],
+   "portrait": 88,
+   "kaart": "eiland",
+   "dots": 3,
+   "primaries": 1,
+   "rowInfo": [
+    {
+     "state": "done",
+     "bar": false,
+     "icon": "v3check"
+    },
+    {
+     "state": "now",
+     "bar": true,
+     "icon": ""
+    },
+    {
+     "state": "locked",
+     "bar": false,
+     "icon": "v3lock"
+    },
+    {
+     "state": "locked",
+     "bar": false,
+     "icon": "v3lock"
+    },
+    {
+     "state": "locked",
+     "bar": false,
+     "icon": "v3lock"
+    },
+    {
+     "state": "locked",
+     "bar": false,
+     "icon": "v3lock"
+    },
+    {
+     "state": "locked",
+     "bar": false,
+     "icon": "v3lock"
+    },
+    {
+     "state": "locked",
+     "bar": false,
+     "icon": "v3lock"
+    },
+    {
+     "state": "locked",
+     "bar": false,
+     "icon": "v3lock"
+    },
+    {
+     "state": "locked",
+     "bar": false,
+     "icon": "v3lock"
+    },
+    {
+     "state": "locked",
+     "bar": false,
+     "icon": "v3lock"
+    }
+   ],
+   "pins": 6
+  },
+  "ipad-liggend/eiland/afgerond": {
+   "gut": 16,
+   "inner": 24,
+   "col": 59.666666666666664,
+   "big": [
+    "Reis"
+   ],
+   "portrait": 88,
+   "kaart": "eiland",
+   "dots": 3,
+   "primaries": 1,
+   "rowInfo": [
+    {
+     "state": "gold",
+     "bar": false,
+     "icon": "v3medal"
+    },
+    {
+     "state": "gold",
+     "bar": false,
+     "icon": "v3medal"
+    },
+    {
+     "state": "done",
+     "bar": false,
+     "icon": "v3check"
+    },
+    {
+     "state": "done",
+     "bar": false,
+     "icon": "v3check"
+    },
+    {
+     "state": "now",
+     "bar": true,
+     "icon": ""
+    },
+    {
+     "state": "locked",
+     "bar": false,
+     "icon": "v3lock"
+    },
+    {
+     "state": "locked",
+     "bar": false,
+     "icon": "v3lock"
+    },
+    {
+     "state": "locked",
+     "bar": false,
+     "icon": "v3lock"
+    },
+    {
+     "state": "locked",
+     "bar": false,
+     "icon": "v3lock"
+    },
+    {
+     "state": "locked",
+     "bar": false,
+     "icon": "v3lock"
+    },
+    {
+     "state": "locked",
+     "bar": false,
+     "icon": "v3lock"
+    }
+   ],
+   "pins": 0
+  },
+  "ipad-liggend/kaart/bezig": {
+   "gut": 16,
+   "inner": 24,
+   "col": 59.666666666666664,
+   "big": [
+    "Reis"
+   ],
+   "portrait": 88,
+   "kaart": "kaart",
+   "dots": 3,
+   "primaries": 1,
+   "rowInfo": [
+    {
+     "state": "done",
+     "bar": false,
+     "icon": "v3check"
+    },
+    {
+     "state": "now",
+     "bar": true,
+     "icon": ""
+    },
+    {
+     "state": "locked",
+     "bar": false,
+     "icon": "v3lock"
+    },
+    {
+     "state": "locked",
+     "bar": false,
+     "icon": "v3lock"
+    },
+    {
+     "state": "locked",
+     "bar": false,
+     "icon": "v3lock"
+    },
+    {
+     "state": "locked",
+     "bar": false,
+     "icon": "v3lock"
+    },
+    {
+     "state": "locked",
+     "bar": false,
+     "icon": "v3lock"
+    },
+    {
+     "state": "locked",
+     "bar": false,
+     "icon": "v3lock"
+    },
+    {
+     "state": "locked",
+     "bar": false,
+     "icon": "v3lock"
+    },
+    {
+     "state": "locked",
+     "bar": false,
+     "icon": "v3lock"
+    },
+    {
+     "state": "locked",
+     "bar": false,
+     "icon": "v3lock"
+    }
+   ],
+   "pins": 6
+  },
+  "ipad-liggend/kaart/afgerond": {
+   "gut": 16,
+   "inner": 24,
+   "col": 59.666666666666664,
+   "big": [
+    "Reis"
+   ],
+   "portrait": 88,
+   "kaart": "kaart",
+   "dots": 3,
+   "primaries": 1,
+   "rowInfo": [
+    {
+     "state": "gold",
+     "bar": false,
+     "icon": "v3medal"
+    },
+    {
+     "state": "gold",
+     "bar": false,
+     "icon": "v3medal"
+    },
+    {
+     "state": "done",
+     "bar": false,
+     "icon": "v3check"
+    },
+    {
+     "state": "done",
+     "bar": false,
+     "icon": "v3check"
+    },
+    {
+     "state": "now",
+     "bar": true,
+     "icon": ""
+    },
+    {
+     "state": "locked",
+     "bar": false,
+     "icon": "v3lock"
+    },
+    {
+     "state": "locked",
+     "bar": false,
+     "icon": "v3lock"
+    },
+    {
+     "state": "locked",
+     "bar": false,
+     "icon": "v3lock"
+    },
+    {
+     "state": "locked",
+     "bar": false,
+     "icon": "v3lock"
+    },
+    {
+     "state": "locked",
+     "bar": false,
+     "icon": "v3lock"
+    },
+    {
+     "state": "locked",
+     "bar": false,
+     "icon": "v3lock"
+    }
+   ],
+   "pins": 0
+  },
+  "ipad-staand/eiland/bezig": {
+   "gut": 16,
+   "inner": 24,
+   "col": 40,
+   "big": [
+    "Reis"
+   ],
+   "portrait": 56,
+   "kaart": "eiland",
+   "dots": 3,
+   "primaries": 1,
+   "rowInfo": [
+    {
+     "state": "done",
+     "bar": false,
+     "icon": "v3check"
+    },
+    {
+     "state": "now",
+     "bar": true,
+     "icon": ""
+    },
+    {
+     "state": "locked",
+     "bar": false,
+     "icon": "v3lock"
+    },
+    {
+     "state": "locked",
+     "bar": false,
+     "icon": "v3lock"
+    },
+    {
+     "state": "locked",
+     "bar": false,
+     "icon": "v3lock"
+    },
+    {
+     "state": "locked",
+     "bar": false,
+     "icon": "v3lock"
+    },
+    {
+     "state": "locked",
+     "bar": false,
+     "icon": "v3lock"
+    },
+    {
+     "state": "locked",
+     "bar": false,
+     "icon": "v3lock"
+    },
+    {
+     "state": "locked",
+     "bar": false,
+     "icon": "v3lock"
+    },
+    {
+     "state": "locked",
+     "bar": false,
+     "icon": "v3lock"
+    },
+    {
+     "state": "locked",
+     "bar": false,
+     "icon": "v3lock"
+    }
+   ],
+   "pins": 6
+  },
+  "ipad-staand/eiland/afgerond": {
+   "gut": 16,
+   "inner": 24,
+   "col": 40,
+   "big": [
+    "Reis"
+   ],
+   "portrait": 56,
+   "kaart": "eiland",
+   "dots": 3,
+   "primaries": 1,
+   "rowInfo": [
+    {
+     "state": "gold",
+     "bar": false,
+     "icon": "v3medal"
+    },
+    {
+     "state": "gold",
+     "bar": false,
+     "icon": "v3medal"
+    },
+    {
+     "state": "done",
+     "bar": false,
+     "icon": "v3check"
+    },
+    {
+     "state": "done",
+     "bar": false,
+     "icon": "v3check"
+    },
+    {
+     "state": "now",
+     "bar": true,
+     "icon": ""
+    },
+    {
+     "state": "locked",
+     "bar": false,
+     "icon": "v3lock"
+    },
+    {
+     "state": "locked",
+     "bar": false,
+     "icon": "v3lock"
+    },
+    {
+     "state": "locked",
+     "bar": false,
+     "icon": "v3lock"
+    },
+    {
+     "state": "locked",
+     "bar": false,
+     "icon": "v3lock"
+    },
+    {
+     "state": "locked",
+     "bar": false,
+     "icon": "v3lock"
+    },
+    {
+     "state": "locked",
+     "bar": false,
+     "icon": "v3lock"
+    }
+   ],
+   "pins": 0
+  },
+  "ipad-staand/kaart/bezig": {
+   "gut": 16,
+   "inner": 24,
+   "col": 40,
+   "big": [
+    "Reis"
+   ],
+   "portrait": 56,
+   "kaart": "kaart",
+   "dots": 3,
+   "primaries": 1,
+   "rowInfo": [
+    {
+     "state": "done",
+     "bar": false,
+     "icon": "v3check"
+    },
+    {
+     "state": "now",
+     "bar": true,
+     "icon": ""
+    },
+    {
+     "state": "locked",
+     "bar": false,
+     "icon": "v3lock"
+    },
+    {
+     "state": "locked",
+     "bar": false,
+     "icon": "v3lock"
+    },
+    {
+     "state": "locked",
+     "bar": false,
+     "icon": "v3lock"
+    },
+    {
+     "state": "locked",
+     "bar": false,
+     "icon": "v3lock"
+    },
+    {
+     "state": "locked",
+     "bar": false,
+     "icon": "v3lock"
+    },
+    {
+     "state": "locked",
+     "bar": false,
+     "icon": "v3lock"
+    },
+    {
+     "state": "locked",
+     "bar": false,
+     "icon": "v3lock"
+    },
+    {
+     "state": "locked",
+     "bar": false,
+     "icon": "v3lock"
+    },
+    {
+     "state": "locked",
+     "bar": false,
+     "icon": "v3lock"
+    }
+   ],
+   "pins": 6
+  },
+  "ipad-staand/kaart/afgerond": {
+   "gut": 16,
+   "inner": 24,
+   "col": 40,
+   "big": [
+    "Reis"
+   ],
+   "portrait": 56,
+   "kaart": "kaart",
+   "dots": 3,
+   "primaries": 1,
+   "rowInfo": [
+    {
+     "state": "gold",
+     "bar": false,
+     "icon": "v3medal"
+    },
+    {
+     "state": "gold",
+     "bar": false,
+     "icon": "v3medal"
+    },
+    {
+     "state": "done",
+     "bar": false,
+     "icon": "v3check"
+    },
+    {
+     "state": "done",
+     "bar": false,
+     "icon": "v3check"
+    },
+    {
+     "state": "now",
+     "bar": true,
+     "icon": ""
+    },
+    {
+     "state": "locked",
+     "bar": false,
+     "icon": "v3lock"
+    },
+    {
+     "state": "locked",
+     "bar": false,
+     "icon": "v3lock"
+    },
+    {
+     "state": "locked",
+     "bar": false,
+     "icon": "v3lock"
+    },
+    {
+     "state": "locked",
+     "bar": false,
+     "icon": "v3lock"
+    },
+    {
+     "state": "locked",
+     "bar": false,
+     "icon": "v3lock"
+    },
+    {
+     "state": "locked",
+     "bar": false,
+     "icon": "v3lock"
+    }
+   ],
+   "pins": 0
+  }
+ },
+ "errors": [],
+ "summary": {
+  "runs": 12,
+  "pass": true
+ }
+}

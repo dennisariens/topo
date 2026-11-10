@@ -1,6 +1,6 @@
 {
  "html": "/Users/dennisariens/projects/topo-v3/output/html/TOPO-V3-Reis-Preview.html",
- "sha256": "12d974a95402f2c44ff3afd91d85265587e88dce90f4203d58ef431507e5d6db",
+ "sha256": "d06f6ea23f8b8a49054f53dbb283666a4c0c94b14075ad3ca6e83572b909a34b",
  "indexSha256": "3aced3c31259011b0af2947c78f71965cb4beb2e88c69d1663e61792b0304f5a",
  "label": "na",
  "runs": {
@@ -12,7 +12,7 @@
     844,
     "28px"
    ],
-   "free": 0.721,
+   "free": 0.654,
    "wide": [],
    "edge": {
     "selector": ".v3Map",
@@ -20,20 +20,23 @@
     "opacity": 1,
     "overlays": [],
     "school": false,
+    "island": true,
+    "seaShown": false,
+    "islandFaint": [],
     "letterbox": false,
     "seeThrough": [],
     "box": [
-     696,
-     260,
-     360,
-     515
+     760,
+     178,
+     620,
+     498
     ]
    },
    "theme": "#5b45e0",
    "les": false,
    "view": "reis",
    "hOverflow": false,
-   "freePct": 72.1,
+   "freePct": 65.4,
    "lowContrast": [],
    "backdropFilters": [
     "blur(24px) saturate(1.15)",
@@ -50,7 +53,7 @@
     844,
     "28px"
    ],
-   "free": 0.354,
+   "free": 0.302,
    "wide": [],
    "edge": {
     "selector": ".v3Map",
@@ -58,20 +61,23 @@
     "opacity": 1,
     "overlays": [],
     "school": false,
+    "island": true,
+    "seaShown": false,
+    "islandFaint": [],
     "letterbox": false,
     "seeThrough": [],
     "box": [
-     696,
-     260,
-     360,
-     515
+     760,
+     178,
+     620,
+     498
     ]
    },
    "theme": "#5b45e0",
    "les": false,
    "view": "reis",
    "hOverflow": false,
-   "freePct": 35.4,
+   "freePct": 30.2,
    "lowContrast": [],
    "backdropFilters": [
     "none"
@@ -87,7 +93,7 @@
     844,
     "28px"
    ],
-   "free": 0.72,
+   "free": 0.653,
    "wide": [],
    "edge": {
     "selector": ".v3Map",
@@ -95,20 +101,23 @@
     "opacity": 1,
     "overlays": [],
     "school": true,
+    "island": true,
+    "seaShown": false,
+    "islandFaint": [],
     "letterbox": false,
     "seeThrough": [],
     "box": [
-     696,
-     260,
-     360,
-     515
+     760,
+     178,
+     620,
+     498
     ]
    },
    "theme": "#5b45e0",
    "les": false,
    "view": "reis",
    "hOverflow": false,
-   "freePct": 72.0,
+   "freePct": 65.3,
    "lowContrast": [],
    "backdropFilters": [
     "blur(24px) saturate(1.15)",
@@ -133,6 +142,9 @@
     "opacity": 1,
     "overlays": [],
     "school": true,
+    "island": false,
+    "seaShown": false,
+    "islandFaint": [],
     "letterbox": false,
     "seeThrough": [],
     "box": [
@@ -173,6 +185,9 @@
     "opacity": 1,
     "overlays": [],
     "school": true,
+    "island": false,
+    "seaShown": false,
+    "islandFaint": [],
     "letterbox": false,
     "seeThrough": [],
     "box": [
@@ -261,6 +276,9 @@
     "opacity": 1,
     "overlays": [],
     "school": true,
+    "island": false,
+    "seaShown": false,
+    "islandFaint": [],
     "letterbox": false,
     "seeThrough": [],
     "box": [
@@ -291,7 +309,7 @@
     780,
     "28px"
    ],
-   "free": 0.611,
+   "free": 0.6,
    "wide": [],
    "edge": {
     "selector": ".v3Map",
@@ -299,20 +317,23 @@
     "opacity": 1,
     "overlays": [],
     "school": false,
+    "island": true,
+    "seaShown": false,
+    "islandFaint": [],
     "letterbox": false,
     "seeThrough": [],
     "box": [
-     454,
-     183,
-     406,
-     581
+     622,
+     154,
+     514,
+     466
     ]
    },
    "theme": "#5b45e0",
    "les": false,
    "view": "reis",
    "hOverflow": false,
-   "freePct": 61.1,
+   "freePct": 60.0,
    "lowContrast": [],
    "backdropFilters": [
     "blur(24px) saturate(1.15)",
@@ -329,7 +350,7 @@
     780,
     "28px"
    ],
-   "free": 0.276,
+   "free": 0.197,
    "wide": [],
    "edge": {
     "selector": ".v3Map",
@@ -337,20 +358,23 @@
     "opacity": 1,
     "overlays": [],
     "school": false,
+    "island": true,
+    "seaShown": false,
+    "islandFaint": [],
     "letterbox": false,
     "seeThrough": [],
     "box": [
-     454,
-     183,
-     406,
-     581
+     622,
+     154,
+     514,
+     466
     ]
    },
    "theme": "#5b45e0",
    "les": false,
    "view": "reis",
    "hOverflow": false,
-   "freePct": 27.6,
+   "freePct": 19.7,
    "lowContrast": [],
    "backdropFilters": [
     "none"
@@ -366,7 +390,7 @@
     780,
     "28px"
    ],
-   "free": 0.609,
+   "free": 0.6,
    "wide": [],
    "edge": {
     "selector": ".v3Map",
@@ -374,20 +398,23 @@
     "opacity": 1,
     "overlays": [],
     "school": true,
+    "island": true,
+    "seaShown": false,
+    "islandFaint": [],
     "letterbox": false,
     "seeThrough": [],
     "box": [
-     454,
-     183,
-     406,
-     581
+     622,
+     154,
+     514,
+     466
     ]
    },
    "theme": "#5b45e0",
    "les": false,
    "view": "reis",
    "hOverflow": false,
-   "freePct": 60.9,
+   "freePct": 60.0,
    "lowContrast": [],
    "backdropFilters": [
     "blur(24px) saturate(1.15)",
@@ -412,6 +439,9 @@
     "opacity": 1,
     "overlays": [],
     "school": true,
+    "island": false,
+    "seaShown": false,
+    "islandFaint": [],
     "letterbox": false,
     "seeThrough": [],
     "box": [
@@ -452,6 +482,9 @@
     "opacity": 1,
     "overlays": [],
     "school": true,
+    "island": false,
+    "seaShown": false,
+    "islandFaint": [],
     "letterbox": false,
     "seeThrough": [],
     "box": [
@@ -481,14 +514,14 @@
     780,
     "28px"
    ],
-   "free": 0.799,
+   "free": 0.781,
    "wide": [],
    "edge": null,
    "theme": "#5b45e0",
    "les": false,
    "view": "oefenen",
    "hOverflow": false,
-   "freePct": 79.9,
+   "freePct": 78.1,
    "lowContrast": [],
    "backdropFilters": [
     "blur(24px) saturate(1.15)"
@@ -504,16 +537,16 @@
     780,
     "28px"
    ],
-   "free": 0.122,
+   "free": 0.2,
    "wide": [
-    "section.v3View.v3View-toets 1064"
+    "section.v3View.v3View-toets 940"
    ],
    "edge": null,
    "theme": "#5b45e0",
    "les": false,
    "view": "toets",
    "hOverflow": false,
-   "freePct": 12.2,
+   "freePct": 20.0,
    "lowContrast": [],
    "backdropFilters": [
     "blur(24px) saturate(1.15)",
@@ -530,9 +563,9 @@
     780,
     "28px"
    ],
-   "free": 0.122,
+   "free": 0.193,
    "wide": [
-    "section.v3View.v3View-voortgang 1064"
+    "section.v3View.v3View-voortgang 940"
    ],
    "edge": {
     "selector": ".v3Map",
@@ -540,10 +573,13 @@
     "opacity": 1,
     "overlays": [],
     "school": true,
+    "island": false,
+    "seaShown": false,
+    "islandFaint": [],
     "letterbox": false,
     "seeThrough": [],
     "box": [
-     211,
+     301,
      240,
      366,
      508
@@ -553,7 +589,7 @@
    "les": false,
    "view": "voortgang",
    "hOverflow": false,
-   "freePct": 12.2,
+   "freePct": 19.3,
    "lowContrast": [],
    "backdropFilters": [
     "blur(24px) saturate(1.15)",
@@ -567,22 +603,22 @@
  "summary": {
   "label": "na",
   "free": {
-   "reis-desktop": 72.1,
-   "reis-desktop-verminderd": 35.4,
-   "reis-schoolkaart-desktop": 72.0,
+   "reis-desktop": 65.4,
+   "reis-desktop-verminderd": 30.2,
+   "reis-schoolkaart-desktop": 65.3,
    "les-desktop": 66.5,
    "les-desktop-verminderd": 45.7,
    "oefenen-desktop": 84.9,
    "toets-desktop": 24.2,
    "voortgang-desktop": 24.2,
-   "reis-ipad-liggend": 61.1,
-   "reis-ipad-liggend-verminderd": 27.6,
-   "reis-schoolkaart-ipad-liggend": 60.9,
+   "reis-ipad-liggend": 60.0,
+   "reis-ipad-liggend-verminderd": 19.7,
+   "reis-schoolkaart-ipad-liggend": 60.0,
    "les-ipad-liggend": 73.1,
    "les-ipad-liggend-verminderd": 56.2,
-   "oefenen-ipad-liggend": 79.9,
-   "toets-ipad-liggend": 12.2,
-   "voortgang-ipad-liggend": 12.2
+   "oefenen-ipad-liggend": 78.1,
+   "toets-ipad-liggend": 20.0,
+   "voortgang-ipad-liggend": 19.3
   },
   "wide": {
    "les-desktop-verminderd": [
@@ -598,10 +634,10 @@
     "nav.v3.v3LesBar 1016"
    ],
    "toets-ipad-liggend": [
-    "section.v3View.v3View-toets 1064"
+    "section.v3View.v3View-toets 940"
    ],
    "voortgang-ipad-liggend": [
-    "section.v3View.v3View-voortgang 1064"
+    "section.v3View.v3View-voortgang 940"
    ]
   },
   "lowContrast": {},

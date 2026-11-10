@@ -60,19 +60,19 @@ PROBE = r'''() => {
   const srcOf = q => document.querySelector(q)?.getAttribute('src') || '';
   return {
     backdrop: {image: bg !== 'none', uri: bgUri, key: window.TOPO_V3_BG, size: cs(body).backgroundSize, attachment: cs(body).backgroundAttachment},
-    art: {portrait: srcOf('.v3Reis .v3PortraitArt img'), slice: srcOf('.v3Top .v3Mini:not(.v3MiniVespa)'), vespa: srcOf('.v3Top .v3MiniVespa'),
+    art: {portrait: srcOf('.v3Reis .v3PortraitArt img'), slice: document.querySelectorAll('.v3Top .v3Count use')[0]?.getAttribute('href') || '', vespa: document.querySelectorAll('.v3Top .v3Count use')[1]?.getAttribute('href') || '',
           kop: srcOf('.v3Panel .v3Kop img'), kopShown: (n => !!n && cs(n).display !== 'none')(document.querySelector('.v3Panel .v3Kop')),
           kopBeforeTitle: (n => !!n && n.nextElementSibling?.id === 'v3Title')(document.querySelector('.v3Panel .v3Kop')), selected: document.querySelector('.v3Row[aria-current], .v3Row[aria-pressed=true], .v3Row.isSelected')?.dataset.chapter},
     window: {radius: w.borderTopLeftRadius, backdropFilter: w.backdropFilter, shadow: w.boxShadow !== 'none', bgAlpha: alpha,
              gaps: [Math.round(r.left), Math.round(innerWidth - r.right), Math.round(r.top), Math.round(innerHeight - r.bottom)]},
     // Phase A (10-11): no window plate; sidebar, list and panel are separate glass panels on one level.
-    panels: ['.v3Reis > .v3Side', '.v3Reis > .v3List', '.v3Main > .v3Panel'].map(q => { const n = document.querySelector(q), s = cs(n), c = s.backgroundColor;
+    panels: ['.v3Reis > .v3Side', '.v3Reis .v3Rows', '.v3Main > .v3Panel'].map(q => { const n = document.querySelector(q), s = cs(n), c = s.backgroundColor;
       const a = (m => m.length > 3 ? +m[3] : 1)(c.match(/[\d.]+/g) || []);
       return {q, radius: s.borderTopLeftRadius, backdropFilter: s.backdropFilter, shadow: s.boxShadow !== 'none', bgAlpha: a}; }),
     rows,
     relief: {mode: map.dataset.relief, terrain: cs(terrain).display, pressed: document.querySelector('.v3Switch [aria-pressed=true]')?.textContent,
              layers: {terrain: href(terrain.querySelector('image')), sea: href(map.querySelector('.v3RSea')), shadow: href(map.querySelector('.v3RShadow')), coast: href(map.querySelector('.v3RCoast'))},
-             shown: ['.v3RSea', '.v3RShadow', '.v3RCoast'].map(q => map.querySelector(q) && cs(map.querySelector(q)).display), layerOrder,
+             shown: ['.v3RSea', '.v3RShadow', '.v3RCoast'].map(q => map.querySelector(q) && cs(map.querySelector(q)).display), layerOrder, kaart: map.dataset.kaart,
              decorationTargets: map.querySelectorAll('.v3R[data-id], .v3R[tabindex], :is(.v3CoastGlow,.v3LandBase) :is([data-id],[class])').length,
              pointer: [...map.querySelectorAll('.v3R')].every(n => n.getAttribute('pointer-events') === 'none' && n.getAttribute('aria-hidden') === 'true')},
     dim: {neighbour: cs(map.querySelector('.contextLand')).fillOpacity, country: (n => n ? cs(n).fillOpacity : null)(map.querySelector('.country:not(.v3Hit)')), italy: cs(italy).fillOpacity,
@@ -217,17 +217,19 @@ async def main():
                              and all(p['radius'] == '28px' and 'blur' in p['backdropFilter'] and p['shadow'] and p['bgAlpha'] < 1 for p in r['panels'][1:])),
         'reducedTransparencyOpaque': all(p['backdropFilter'] == 'none' and p['bgAlpha'] == 1 for p in res['reducedTransparency']),
         'miniaturesMatchManifest': every(runs, lambda r: len(r['rows']) == 11 and all(row['sha256'] == SCENE_SHA[row['chapter']]['mini'] and row['natural'] == [480, 270] and not row['icon'] for row in r['rows'])),
-        'kopsMatchManifest': len(res['kops']) == 11 and all(v == SCENE_SHA[k]['kop'] for k, v in res['kops'].items()) and every(big, lambda r: r['art']['kopShown'] and r['art']['kopBeforeTitle']),
-        'phoneNoKop': every({k: v for k, v in runs.items() if k.startswith('phone')}, lambda r: not r['art']['kopShown']),
+        # Fase B (R-reis-ijk): one chapter card with title, step dots and pill; the rows carry the scenes, no kop.
+        'cardWithoutKop': every(runs, lambda r: not r['art']['kopShown']) and all(v == dsha('') for v in res['kops'].values()),
         'portraitIsNinoPortret': every(runs, lambda r: r['art']['portrait'] == RENDER['NINO-PORTRET']['export']['sha256']),
-        'counterIcons': every(runs, lambda r: r['art']['slice'] == ICON_SHA['slice'] and r['art']['vespa'] == ICON_SHA['vespa']),
+        # Fase B: UI icons are line icons (Ingetogenheid 4); the IC-slice and IC-vespa illustrations stay content.
+        'counterIcons': every(runs, lambda r: r['art']['slice'] == '#topo-v3slice' and r['art']['vespa'] == '#topo-v3scooter'),
         'rewardsArt': every(res['rewards'], lambda r: r['ride']['art'] == RENDER['VE-01']['export']['sha256'] and [t['icon'] for t in r['tiles']] == [ICON_SHA[k] for k in ('pizza', 'stamp', 'gold', 'postcard')] and r['cover']),
         'rewardsCountsMatchV2Book': every(res['rewards'], lambda r: r['book']['open'] and [t['value'].split()[0] for t in r['tiles']] == [str(r['state']['slices']), str(r['book']['stamps']), str(r['book']['gold']), str(r['book']['postcards'])] and r['ride']['value'] == str(r['state']['trips']) and r['ride']['on'] == r['state']['pizzas'] % 3),
         'rewardsView': every(res['rewards'], lambda r: r['view'] == 'rewards' and r['shown'] and r['reisHidden'] and r['focus'] == 'v3RewardsTitle' and r['current'] == ['rewards'] and r['primaries'] == 1),
         'rewardsLayout': {k: r['clipped'] + r['overlap'] + ([] if r['allInView'] else ['not in view']) for k, r in res['rewards'].items() if r['clipped'] or r['overlap'] or not r['allInView'] or r['horizontalOverflow']},
         'lessonToRewards': res['lessonToRewards']['inLesson'] and res['lessonToRewards']['view'] == 'rewards' and not res['lessonToRewards']['les'] and res['lessonToRewards']['focus'] == 'v3RewardsTitle',
         'reliefDefaultZ8': every(runs, lambda r: r['relief']['mode'] == 'on' and r['relief']['terrain'] == 'block' and r['relief']['pressed'] == 'Reliëf'),
-        'reliefLayersMatchProvenance': every(runs, lambda r: r['relief']['layers'] == RELIEF_SHA and r['relief']['shown'] == ['block'] * 3),
+        # Variant (a) Eiland hides the sea and the land shadow (the sea is the wash; Italy carries its own shadow).
+        'reliefLayersMatchProvenance': every(runs, lambda r: r['relief']['layers'] == RELIEF_SHA and r['relief']['shown'] == (['none', 'none', 'block'] if r['relief']['kaart'] == 'eiland' else ['block'] * 3)),
         'reliefLayerOrder': every(runs, lambda r: r['relief']['layerOrder'] == ['v3RSea', 'v3CoastGlow', 'v3RShadow', 'v3LandBase', 'v3m-seaLayer', 'atlasTerrain', 'v3RCoast', 'v3m-landLayer']),
         'reliefIsDecorationOnly': every(runs, lambda r: r['relief']['decorationTargets'] == 0 and r['relief']['pointer'] and r['dim']['copies'] == 2 * r['dim']['landShapes']),
         'neighboursDimmed': every(runs, lambda r: float(r['dim']['neighbour']) < .6 and float(r['dim']['country']) < .6 and float(r['dim']['italy']) == 0),
@@ -252,7 +254,7 @@ async def main():
     (OUT / 'results.json').write_text(json.dumps(res, indent=1, ensure_ascii=False) + '\n')
     print(json.dumps(res['summary'], indent=1, ensure_ascii=False))
     bad = [k for k in ('indexUnchanged', 'backdropIsBG01', 'bgAlternativesSwitch', 'phoneNoBackdrop', 'glassPanels', 'reducedTransparencyOpaque', 'miniaturesMatchManifest',
-                       'kopsMatchManifest', 'phoneNoKop', 'portraitIsNinoPortret', 'counterIcons', 'rewardsArt', 'rewardsCountsMatchV2Book', 'rewardsView', 'lessonToRewards', 'reliefDefaultZ8', 'reliefLayersMatchProvenance', 'reliefLayerOrder', 'reliefIsDecorationOnly', 'neighboursDimmed', 'geometryAllSame', 'primaryAboveFold') if not res['summary'][k]]
+                       'cardWithoutKop', 'portraitIsNinoPortret', 'counterIcons', 'rewardsArt', 'rewardsCountsMatchV2Book', 'rewardsView', 'lessonToRewards', 'reliefDefaultZ8', 'reliefLayersMatchProvenance', 'reliefLayerOrder', 'reliefIsDecorationOnly', 'neighboursDimmed', 'geometryAllSame', 'primaryAboveFold') if not res['summary'][k]]
     bad += [k for k in ('namesClipped', 'horizontalOverflow', 'rewardsLayout') if res['summary'][k]] + (['errors'] if res['summary']['errors'] else [])
     print('problems:', bad or 'none')
     sys.exit(1 if bad else 0)

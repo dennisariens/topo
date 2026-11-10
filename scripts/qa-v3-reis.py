@@ -36,7 +36,7 @@ LAYOUT_JS = '''() => {
   const small = ctrls.filter(b => !b.closest('.v3Switch,.v3Again,.v3SchoolBtn') && (r(b).height < 44 || r(b).width < 44)).map(b => b.textContent.trim() + ' ' + Math.round(r(b).width) + 'x' + Math.round(r(b).height));
   const clipped = [...document.querySelectorAll('.v3Reis h1,.v3Reis h2,.v3Reis b,.v3Name,.v3Btn')].filter(e => e.scrollWidth > e.clientWidth + 1).map(e => e.textContent.trim());
   // Text whose painted line box runs past its column (siblings would touch or overlap).
-  for (const e of document.querySelectorAll('.v3Name,.v3Panel h1,.v3Count b,.v3NavItem span')) {
+  for (const e of document.querySelectorAll('.v3Name,.v3Panel #v3Title,.v3Count b,.v3NavItem span')) {
     if (e.getBoundingClientRect().width <= 1) continue; // visually hidden label (screen readers only)
     const col = e.parentElement.getBoundingClientRect(), rg = document.createRange(); rg.selectNodeContents(e);
     for (const q of rg.getClientRects()) if (q.right > col.right + 1 || q.left < col.left - 1) { clipped.push('overflow:' + e.textContent.trim()); break; }
@@ -117,7 +117,7 @@ async def sample_frame(pg):
 WORDBREAK_JS = '''() => {
   // Detect words split across lines: measure each word as its own inline box via Range rects.
   const out = [];
-  for (const el of document.querySelectorAll('.v3Name,.v3Panel h1,.v3Count b,.v3NavItem span')) {
+  for (const el of document.querySelectorAll('.v3Name,.v3Panel #v3Title,.v3Count b,.v3NavItem span')) {
     const walker = document.createTreeWalker(el, NodeFilter.SHOW_TEXT);
     let n; while ((n = walker.nextNode())) {
       const re = /[^\\s]+/g; let m;

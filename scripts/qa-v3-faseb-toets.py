@@ -11,14 +11,15 @@ On #bezig, desktop 1440×900, iPad landscape 1180×820, iPad portrait 820×1180 
   * ≥ 1024: the set-up starts on the plate's inner edge and spans 6 (desktop) or 7 (iPad landscape) of 12 columns
     (±1.5 px); Nino stands to its right, inside the plate, as decoration (aria-hidden);
   * no horizontal overflow.
-Toets resultaat (R-toets-resultaat), after a toets of 10 with 3 skipped, desktop and iPad landscape (variant (a)) and
-desktop (variant (b)):
-  * the score is the one display text, in a glass card; Nino (decoration) is visible;
-  * the map in the same variant as Reis ((a): relief clipped to Italy with this clone's clip; (b): a glass card), the
-    10 marks inside the map's box; the other places step back;
+Toets resultaat (R-toets-resultaat), after a toets of 10 with 3 skipped, desktop and iPad landscape
+(map variant (a) Eiland; afwerking 10-11: map left, panel right, the score without a card, Nino free):
+  * the score is the one display text, without a card (no background, no shadow); Nino (decoration) is visible;
+  * the map as on Reis (relief clipped to Italy with this clone's clip), the 10 marks inside the map's box; the other
+    places step back;
   * one glass panel on the right: the mistakes with a × (CSS, the list's DOM unchanged), the primary Oefen deze fouten
     with an icon, and Nieuwe toets, Kopieer, E-mail, Print as tiles with a line icon;
-  * ≥ 1024: the score card and the panel on one top line (±1 px); the map on 7 columns, the panel on 5 (±1.5 px).
+  * ≥ 1024: the score and the panel on one top line (±1 px); the map on 7 columns, the panel on 5 (±1.5 px); Nino in his
+    own grid area under the panel: in the panel's columns, below it, never overlapping it.
 Writes screenshots, the comparisons beside R-toets-instellen and R-toets-resultaat
 (docs/qa/v3-stijlbeeld/toets-instellen-<viewport>.jpg, toets-resultaat-<variant>-<viewport>.jpg)
 and results-toets.json to docs/qa/v3-faseb/.
@@ -72,7 +73,7 @@ RESULT = r'''() => {
     marks: marks.length, marksIn: marks.every(c => c.l >= mb.l - 2 && c.r <= mb.r + 2 && c.t >= mb.t - 2 && c.b <= mb.b + 2),
     cardBg: cs(card).backgroundColor, sideBg: cs(side).backgroundColor, kaartBg: cs(v.querySelector('.v3ToetsKaart')).backgroundColor, kaartRadius: cs(v.querySelector('.v3ToetsKaart')).borderTopLeftRadius,
     tiles, primary: prim && prim.textContent.trim(), primaryIcon: !!prim?.querySelector('svg.v3Icon'), rows,
-    card: R(card), side: R(side), kaartBox: R(v.querySelector('.v3ToetsKaart')), view: R(v), gut, col, hOverflow: document.documentElement.scrollWidth > innerWidth + 1};
+    card: R(card), side: R(side), ninoBox: R(v.querySelector('.v3ToetsNino img')), cardShadow: cs(card).boxShadow, kaartBox: R(v.querySelector('.v3ToetsKaart')), view: R(v), gut, col, hOverflow: document.documentElement.scrollWidth > innerWidth + 1};
 }'''
 
 
@@ -83,15 +84,16 @@ def result_checks(p, tag, variant, wide, fail):
     if p['marks'] != 10 or not p['marksIn']: f(f'marks {p["marks"]} inside={p["marksIn"]}')
     if p['kaart'] != variant: f(f'map variant {p["kaart"]}')
     if variant == 'eiland' and 'v3t-italyClip' not in p['clip']: f(f'relief not clipped ({p["clip"]})')
-    if variant == 'kaart' and wide and (p['kaartRadius'] != '28px' or p['kaartBg'] in ('rgba(0, 0, 0, 0)', 'transparent')): f('map not in a glass card')
-    for k in ('cardBg', 'sideBg'):
-        if p[k] in ('rgba(0, 0, 0, 0)', 'transparent'): f(f'{k} not glass')
+    if p['sideBg'] in ('rgba(0, 0, 0, 0)', 'transparent'): f('panel not glass')
+    if p['cardBg'] not in ('rgba(0, 0, 0, 0)', 'transparent') or p['cardShadow'] != 'none': f('score in a card')
     if [t['t'] for t in p['tiles']] != ['Nieuwe toets', 'Kopieer', 'E-mail', 'Print'] or not all(t['icon'] for t in p['tiles']): f(f'tiles {p["tiles"]}')
     if p['primary'] != 'Oefen deze fouten' or not p['primaryIcon']: f(f'primary {p["primary"]}')
     if len(p['rows']) != 3 or not all(p['rows']): f(f'mistake rows with × {p["rows"]}')
     if wide:
         if not near(p['card']['t'], p['side']['t']): f(f'score card top {p["card"]["t"]:.1f} ≠ panel top {p["side"]["t"]:.1f}')
         if not near(p['kaartBox']['w'], 7 * p['col'] + 6 * p['gut'], 1.5) or not near(p['side']['w'], 5 * p['col'] + 4 * p['gut'], 1.5): f(f'map {p["kaartBox"]["w"]:.1f} / panel {p["side"]["w"]:.1f} not 7 / 5 columns')
+        n, sd = p['ninoBox'], p['side']
+        if not n or n['t'] < sd['b'] - .5 or n['l'] < sd['l'] - .5 or n['r'] > sd['r'] + .5: f(f'Nino not in his own area under the panel ({n})')
     if p['hOverflow']: f('horizontal overflow')
 
 
@@ -176,20 +178,20 @@ async def main():
             if errs: fails.append(f'{vp}: page errors {errs[:2]}')
             res['runs'][vp] = {'big': p['big'], 'chipCols': p['chipCols'], 'chosen': [c['t'] for c in p2['chips'] if c['on']], 'forms': p['forms']}
             await ctx.close()
-        for vp, variant in (('desktop', 'eiland'), ('ipad-liggend', 'eiland'), ('desktop', 'kaart')):
+        for vp, variant in (('desktop', 'eiland'), ('ipad-liggend', 'eiland')):
             w, h = VIEWPORTS[vp]
             ctx = await b.new_context(viewport={'width': w, 'height': h}, has_touch=vp != 'desktop')
             pg = await ctx.new_page(); errs = []
             # The glass as designed (the QA machine may prefer reduced transparency; that variant is qa-v3-glas.py).
             await (await ctx.new_cdp_session(pg)).send('Emulation.setEmulatedMedia', {'features': [{'name': 'prefers-reduced-transparency', 'value': 'no-preference'}]})
             pg.on('pageerror', lambda e: errs.append(str(e)))
-            await pg.goto(HTML.as_uri() + '#bezig' + ('/kaart' if variant == 'kaart' else '')); await pg.wait_for_timeout(1500)
+            await pg.goto(HTML.as_uri() + '#bezig'); await pg.wait_for_timeout(1500)
             await play_toets(pg)
             if await pg.evaluate('TOPO_V3.ui.view') != 'toetsResult': fails.append(f'result {vp}/{variant}: no result view'); await ctx.close(); continue
             p = await pg.evaluate(RESULT); result_checks(p, f'{vp}/{variant}', variant, True, fails.append)
             shot = OUT / f'toets-resultaat-{variant}-{vp}.png'; await pg.screenshot(path=str(shot))
             bar = round(await pg.evaluate("document.querySelector('.v3PreviewBar')?.getBoundingClientRect().height || 0"))
-            side_by_side(ROOT / 'docs/v3/renders/R-toets-resultaat.webp', shot, STIJL / f'toets-resultaat-{variant}-{vp}.jpg', f'Build · variant ({"a" if variant == "eiland" else "b"}) {variant.capitalize()} · {vp}', bar)
+            side_by_side(ROOT / 'docs/v3/renders/R-toets-resultaat.webp', shot, STIJL / f'toets-resultaat-{variant}-{vp}.jpg', f'Build · {vp}', bar)
             if errs: fails.append(f'result {vp}/{variant}: page errors {errs[:2]}')
             res['runs'][f'result/{vp}/{variant}'] = {k: p[k] for k in ('big', 'marks', 'kaart', 'tiles', 'primary')}
             await ctx.close()

@@ -3,14 +3,15 @@
 § Verfijning). Presentation only; the lesson flow itself is covered by qa-v3-les.py.
 
 In a route lesson (#bezig, Steden 7–12, Aanwijzen) on desktop 1440×900 and iPad landscape 1180×820 (Focus Mode),
-with the map variant as default:
-  * desktop: the steps bar as two glass pills (the lesson; Schoolblad and the count on the right), tops and bottoms
-    on one line (±1 px); the steps as one segmented pill;
+with the map variant as default (afwerking 10-11: map left, controls right):
+  * desktop: the bar is one glass card at the top right (the lesson, Schoolblad and the count, the steps below as one
+    segmented pill); the map stands left over the full height, its top on the bar's top line (±1 px); the bar and the
+    question panel start one gutter right of the map (±1.5 px), the panel below the bar;
   * every step mark is a line icon (no digits or ✓ characters): a check for done, the stage's form icon otherwise;
   * desktop: the prompt is the one display text (≥ 30 px); the secondary answers ("Ik weet het nog niet", "Toon
     antwoord") are full-width pills with a line icon; hidden V2 buttons stay hidden;
   * desktop: the zoom group (− + 100%) and the camera tools lie inside the map's box, in its corners (bottom right,
-    top left); the map's top is on the question panel's top line (±1 px) and its bottom inside the frame;
+    top left); the map's bottom inside the frame;
   * (in a toets the hints stay hidden with the new pill style: checked by qa-v3-toets.py, "hints");
   * iPad (Focus Mode): the bar keeps its single row (the wrappers dissolve), the marks are icons, nothing overflows.
 Writes screenshots and the comparison beside R-les (docs/qa/v3-stijlbeeld/les-ijk-<viewport>.jpg) and
@@ -42,7 +43,8 @@ PROBE = r'''() => {
   const secondary = [...document.querySelectorAll('#quiz>.buttons>.button')].map(b => ({id: b.id, quiet: b.classList.contains('ninoQuiet'), hidden: b.classList.contains('hidden') || b.hidden, shown: vis(b), w: b.getBoundingClientRect().width,
     icon: cs(b, '::before').maskImage || cs(b, '::before').webkitMaskImage || 'none', radius: cs(b).borderTopLeftRadius}));
   const buttonsW = R(q('#quiz>.buttons'))?.w;
-  return {group: vis(group) ? R(group) : null, end: vis(end) ? R(end) : null, groupBg: group && cs(group).backgroundColor, groupDisplay: group && cs(group).display,
+  const bar = q('.v3LesBar');
+  return {bar: R(bar), barBg: cs(bar).backgroundColor, gut: px(cs(document.body).getPropertyValue('--v3-gut')), group: vis(group) ? R(group) : null, end: vis(end) ? R(end) : null, groupBg: group && cs(group).backgroundColor, groupDisplay: group && cs(group).display,
     steps: R(q('.v3LesSteps')), stepsBg: cs(q('.v3LesSteps')).backgroundColor, marks, big, secondary, buttonsW,
     map: R(q('.mapArea')), zoom: R([...document.querySelectorAll('.atlasZoom')].find(vis)), camera: vis(q('.focusCameraTools')) ? R(q('.focusCameraTools')) : null, panel: R(q('aside.panel')),
     frame: R(q('body')), focus: document.body.dataset.focusShell === 'true', hOverflow: document.documentElement.scrollWidth > innerWidth + 1};
@@ -69,9 +71,12 @@ def checks(p, vp, fail):
     if p['focus']:
         if p['groupDisplay'] != 'contents': f(f'Focus Mode bar wrappers not dissolved ({p["groupDisplay"]})')
         return
-    if not p['group'] or not p['end']: f('steps bar not two pills'); return
-    if not (near(p['group']['t'], p['end']['t']) and near(p['group']['b'], p['end']['b'])): f(f'bar pills not on one line {p["group"]} {p["end"]}')
-    if p['groupBg'] in ('rgba(0, 0, 0, 0)', 'transparent'): f('lesson pill not glass')
+    if p['barBg'] in ('rgba(0, 0, 0, 0)', 'transparent'): f('bar not one glass card')
+    if p['groupDisplay'] != 'contents': f(f'bar wrappers not dissolved into the card ({p["groupDisplay"]})')
+    bar, mp, pn = p['bar'], p['map'], p['panel']
+    if not near(mp['t'], bar['t']): f(f'map top {mp["t"]:.1f} ≠ bar top {bar["t"]:.1f}')
+    if not near(bar['l'] - mp['r'], p['gut'], 1.5) or not near(pn['l'] - mp['r'], p['gut'], 1.5): f(f'bar / panel not one gutter right of the map ({bar["l"] - mp["r"]:.1f}, {pn["l"] - mp["r"]:.1f})')
+    if pn['t'] < bar['b'] - .5: f('panel not below the bar')
     if p['stepsBg'] in ('rgba(0, 0, 0, 0)', 'transparent'): f('steps not one segmented pill')
     if p['big'] != [p['big'][0]] or not p['big'][0].startswith('Waar ligt'): f(f'display texts {p["big"]} (only the prompt)')
     for b in p['secondary']:
@@ -80,7 +85,7 @@ def checks(p, vp, fail):
             if not near(b['w'], p['buttonsW'], 1.5) or 'svg' not in b['icon']: f(f'secondary answer not a full-width pill with icon {b}')
     if not inside(p['zoom'], p['map']) or not near(p['zoom']['r'], p['map']['r'] - 14, 2) or not near(p['zoom']['b'], p['map']['b'] - 14, 2): f(f'zoom group not in the map\'s bottom-right corner {p["zoom"]} {p["map"]}')
     if p['camera'] and (not inside(p['camera'], p['map']) or not near(p['camera']['l'], p['map']['l'] + 14, 2) or not near(p['camera']['t'], p['map']['t'] + 14, 2)): f(f'camera tools not in the map\'s top-left corner {p["camera"]}')
-    if not near(p['map']['t'], p['panel']['t']): f(f'map top {p["map"]["t"]:.1f} ≠ panel top {p["panel"]["t"]:.1f}')
+    if p['map']['b'] > p['frame']['b'] + 1: f('map bottom outside the frame')
 
 
 def side_by_side(render_path, shot_path, out, label, top=0):

@@ -68,8 +68,6 @@
  .v3View-toetsResult .v3ToetsKaart .v3ToetsMap{position:absolute;inset:0;margin:auto;width:auto;height:auto;max-width:100%;max-height:100%}
  .v3View-toetsResult .v3ToetsSide{position:relative;z-index:1;grid-column:8/-1;grid-row:1/-1;align-self:start;max-height:100%;overflow:auto;padding:24px;border-radius:var(--v3-radius-glass);
   background:var(--v3-glass);-webkit-backdrop-filter:var(--v3-glass-filter);backdrop-filter:var(--v3-glass-filter);box-shadow:var(--v3-glass-shadow)}
- .v3Reis[data-kaart=kaart] .v3View-toetsResult .v3ToetsKaart{border-radius:var(--v3-radius-glass);background:var(--v3-glass);-webkit-backdrop-filter:var(--v3-glass-filter);backdrop-filter:var(--v3-glass-filter);box-shadow:var(--v3-glass-shadow)}
- .v3Reis[data-kaart=kaart] .v3View-toetsResult .v3ToetsKaart .v3ToetsMap{inset:10px;max-width:calc(100% - 20px);max-height:calc(100% - 20px)}
 }
 @media (max-width:1023px){.v3ToetsKaart .v3ToetsMap[data-kaart]{width:100%;height:420px;overflow:hidden!important}}
 @media (max-width:767px){.v3ToetsKaart .v3ToetsMap[data-kaart]{height:340px}.v3Reis .v3View-toetsResult .v3ToetsScore{font-size:48px}.v3ToetsTiles{grid-template-columns:repeat(2,minmax(0,1fr))}}

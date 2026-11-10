@@ -20,9 +20,9 @@
  const range=t=>{const f=document.createDocumentFragment();t.split(/(\d+–\d+)/).forEach(p=>{if(!p)return;if(/^\d+–\d+$/.test(p))f.append(make('span','nw',p));else f.append(p);});return f;};
  // Stijlbeeld (renderniveau): relief is the default map style; Schoolkaart stays one tap away.
  const ui={selected:null,relief:true,view:'reis'};
- // Reis map variant (fase B, owner 10-11): (a) "eiland" = Italy floating as land, neighbours as soft silhouettes, the
- // sea transparent on the wash (the default until the owner chooses); (b) "kaart" = the map as a rounded glass card.
- ui.kaart=window.TOPO_V3_KAART==='kaart'?'kaart':'eiland';
+ // Reis map (fase B; chosen in the afwerking 10-11): "eiland" = Italy floating as land, neighbours as soft silhouettes,
+ // the sea transparent on the wash. Variant (b), the map in a glass card, is gone.
+ ui.kaart='eiland';
  // Chapter scenes {mini, kop}: the 8 #75 scenes (assets/v3/scenes) and Roma, Venezia, Napoli (assets/v3/render);
  // a chapter without a scene keeps its chapter icon. Render assets: background, portrait, icons, VE-01.
  const scenes=window.TOPO_V3_SCENES||{},V3ART=window.TOPO_V3_ART||null;
@@ -113,7 +113,7 @@
   const set=new Set(c?c.itemIds:[]);
   mapClone.querySelectorAll('[data-id]').forEach(n=>n.classList.toggle('v3Hit',set.has(n.getAttribute('data-id'))));
   mapClone.dataset.focus=c?(c.itemIds[0]?.startsWith('city')?'points':'areas'):'';
-  fit(mapClone);
+  reserve();fit(mapClone);
  }
  /* Variant (a) Eiland: decoration layers on the Reis clone only (aria-hidden, no pointer events, no data-id; the
     geometry stays the live map's). A copy of Italy's own outline carries a soft drop shadow under the relief; a clip of
@@ -126,7 +126,9 @@
   const it=svg.querySelector('.italy');const d=[it?.getAttribute('d'),...isles.map(n=>n.getAttribute('d'))].filter(Boolean).join(' ');const terrain=svg.querySelector('.atlasTerrain');if(!it||!terrain)return;
   const defs=document.createElementNS(SVGNS,'defs');
   defs.innerHTML='<clipPath id="'+prefix+'italyClip"><path d="'+d+'"/></clipPath>'
-   +'<filter id="'+prefix+'isleShadow" x="-20%" y="-20%" width="140%" height="140%"><feDropShadow dx="0" dy="5" stdDeviation="7" flood-color="#2a2440" flood-opacity=".30"/></filter>'
+   +'<filter id="'+prefix+'isleShadow" x="-20%" y="-20%" width="140%" height="150%"><feDropShadow dx="0" dy="18" stdDeviation="12" flood-color="#2a2440" flood-opacity=".28"/></filter>'
+   // Relief depth (afwerking 10-11): saturation 1.15 and a stronger hillshade (contrast around the mid tone).
+   +'<filter id="'+prefix+'reliefDepth" color-interpolation-filters="sRGB"><feColorMatrix type="saturate" values="1.15"/><feComponentTransfer><feFuncR type="linear" slope="1.2" intercept="-.1"/><feFuncG type="linear" slope="1.2" intercept="-.1"/><feFuncB type="linear" slope="1.2" intercept="-.1"/></feComponentTransfer></filter>'
    +'<radialGradient id="'+prefix+'nbGrad" cx=".5" cy=".5" r=".5"><stop offset=".62" stop-color="#fff"/><stop offset="1" stop-color="#000"/></radialGradient>'
    +'<mask id="'+prefix+'nbFade" maskUnits="userSpaceOnUse"><rect class="v3FadeRect" x="0" y="0" width="890" height="1235" fill="url(#'+prefix+'nbGrad)"/></mask>';
   svg.prepend(defs);
@@ -138,6 +140,7 @@
   const nbg=document.createElementNS(SVGNS,'g');nbg.setAttribute('class','v3Neighbours');nbg.setAttribute('aria-hidden','true');nbg.setAttribute('pointer-events','none');nbg.setAttribute('mask','url(#'+prefix+'nbFade)');
   for(const n of svg.querySelectorAll('.contextLand,.country:not(.v3Isle)')){const q=document.createElementNS(SVGNS,'path');q.setAttribute('d',n.getAttribute('d')||'');nbg.append(q);}
   const base=document.createElementNS(SVGNS,'path');base.setAttribute('d',d);base.setAttribute('class','v3IsleBase');base.setAttribute('aria-hidden','true');base.setAttribute('pointer-events','none');base.setAttribute('filter','url(#'+prefix+'isleShadow)');
+  terrain.setAttribute('filter','url(#'+prefix+'reliefDepth)');
   terrain.before(nbg,base);
   const pins=document.createElementNS(SVGNS,'g');pins.setAttribute('class','v3Pins');pins.setAttribute('aria-hidden','true');pins.setAttribute('pointer-events','none');svg.append(pins);
  }
@@ -163,11 +166,16 @@
    // transparent and the neighbours fade out, so nothing beyond the data reads as sea); the stage letterboxes it.
    if(svg.dataset.kaart==='eiland'){const p=Math.max(x1-x0,y1-y0)*.04;x0-=p;y0-=p;x1+=p;y1+=p;svg.style.width=svg.style.height='';
     svg.setAttribute('viewBox',[x0,y0,x1-x0,y1-y0].map(v=>Math.round(v)).join(' '));
-    // The fade and the mask region are the element's whole visible box in map units (the stage letterboxes the frame
-    // and the neighbours draw beyond it): the fade reaches zero at that box's edges, so nothing ends in a straight cut.
-    const r=svg.getBoundingClientRect(),fr=svg.querySelector('.v3FadeRect'),mk=fr?.parentNode;
-    if(fr&&r.width&&r.height){const w=x1-x0,h=y1-y0,k=Math.max(w/r.width,h/r.height),bw=r.width*k,bh=r.height*k,bx=x0-(bw-w)/2,by=y0-(bh-h)/2;
-     for(const n of [fr,mk])for(const [a,v] of [['x',bx],['y',by],['width',bw],['height',bh]])n.setAttribute(a,v);}if(r.width&&r.height)drawPins(svg,Math.max((x1-x0)/r.width,(y1-y0)/r.height));return;}
+    // The viewBox, the fade and the mask region are the element's whole visible box in map units (the neighbours draw
+    // beyond the data): the fade reaches zero at that box's edges, so nothing ends in a straight cut. A panel laid
+    // over the map's bottom (Reis, afwerking 10-11) reserves --v3-fit-bottom px: Italy fits in the box above it.
+    const r=svg.getBoundingClientRect(),fr=svg.querySelector('.v3FadeRect'),mk=fr?.parentNode,res=Math.min(r.height*.5,parseFloat(getComputedStyle(svg).getPropertyValue('--v3-fit-bottom'))||0);
+    if(r.width&&r.height){const w=x1-x0,h=y1-y0,k=Math.max(w/r.width,h/(r.height-res)),bw=r.width*k,bh=r.height*k,bx=x0-(bw-w)/2,by=y0-((r.height-res)*k-h)/2;
+     svg.setAttribute('viewBox',[bx,by,bw,bh].map(v=>Math.round(v*10)/10).join(' '));
+     if(fr)for(const n of [fr,mk])for(const [a,v] of [['x',bx],['y',by],['width',bw],['height',bh]])n.setAttribute(a,v);
+     // The land's drop shadow in screen px (afwerking 10-11: 0 18px 24px rgba(42,36,64,.28)), in map units.
+     const ds=svg.querySelector('filter[id$="isleShadow"] feDropShadow');if(ds){ds.setAttribute('dy',(18*k).toFixed(1));ds.setAttribute('stdDeviation',(12*k).toFixed(1));}
+     drawPins(svg,k);}return;}
    const pad=Math.max(x1-x0,y1-y0)*MARGIN;x0=Math.max(0,x0-pad);y0=Math.max(0,y0-pad);x1=Math.min(CANVAS.w,x1+pad);y1=Math.min(CANVAS.h,y1+pad);
    // Match the stage aspect ratio by growing the shorter side, centred and clamped to the canvas.
    // Measure the free stage (any size set by an earlier fit is released first).
@@ -186,7 +194,9 @@
   }catch{}
  }
  // The stage size changes with the layout (rotation, sidebar width): refit on resize.
- if('ResizeObserver' in window)new ResizeObserver(()=>{if(mapClone)fit(mapClone);}).observe(stage);
+ // The chapter card lies over the map's bottom where the CSS says so (--v3-card-over: 1): the map keeps it free.
+ const reserve=()=>{const over=getComputedStyle(stage).getPropertyValue('--v3-card-over').trim()==='1';stage.style.setProperty('--v3-fit-bottom',over?Math.round(panel.getBoundingClientRect().height+24)+'px':'0px');};
+ if('ResizeObserver' in window){const ro=new ResizeObserver(()=>{reserve();if(mapClone)fit(mapClone);});ro.observe(stage);ro.observe(panel);}
 
  // Top of the map column: the map tools (Schoolblad, Schoolkaart | Reliëf) left, the counters right with line icons.
  // The tools sit beside the map, never on it (pins and coast stay free).
@@ -263,8 +273,9 @@
   const cards=(isl?.done?2:0)+(T>=3)+(T>=6),gold=m.chapters.filter(c=>c.gold).length;
   const tile=(cls,iconSrc,value,label,aria)=>{const t=make('div','v3Tile'+(cls?' '+cls:''));t.setAttribute('role','group');t.setAttribute('aria-label',aria);if(iconSrc)t.append(pic(iconSrc,'v3TileIcon',96,96));const v=make('b',null,value);v.setAttribute('aria-hidden','true');const l=make('span',null,label);l.setAttribute('aria-hidden','true');t.append(v,l);return t;};
   const openBook=e=>{e.stopPropagation();window.TopoBook?.open(e.currentTarget);};
-  const book=make('div','v3Book'),cover=btn('',openBook,'v3Btn v3BookCover');cover.setAttribute('aria-label','Open het Reisboekje');cover.tabIndex=-1;
-  if(art.cover)cover.append(img(art.cover,'v3CoverArt'));book.append(cover,btn('Open Reisboekje',openBook,'v3Btn primary'));
+  // The book is the button (afwerking 10-11): no separate "Open Reisboekje" button; the cover takes the focus.
+  const book=make('div','v3Book'),cover=btn('',openBook,'v3Btn v3BookCover');cover.setAttribute('aria-label','Open het Reisboekje');
+  if(art.cover)cover.append(img(art.cover,'v3CoverArt'));book.append(cover);
   const ride=make('div','v3Ride');ride.setAttribute('role','group');ride.setAttribute('aria-label',T+' Vespa-ritten; '+(P%3)+' van 3 pizza’s tot de volgende rit');
   // R-beloningen (fase B, stap 6): the ride's three pizzas above the Vespa, as the data has them (3 per ride, V2 order
   // margherita, salami, quattro formaggi): earned ones whole, the current one with its slices over a faint whole, the rest faint.
@@ -277,7 +288,7 @@
   const meter=make('div','v3Steps v3RideSteps');meter.setAttribute('aria-hidden','true');for(let i=0;i<3;i++){const s=make('i');if(i<P%3)s.className='on';meter.append(s);}
   const rv=make('b',null,String(T));rv.setAttribute('aria-hidden','true');const rl=make('span',null,'Vespa-ritten');rl.setAttribute('aria-hidden','true');ride.append(rv,rl,meter);
   const tiles=make('div','v3Tiles');
-  tiles.append(tile('v3TilePizza',V3ART?.icons.pizza,S+' / 8','Pizza '+(P+1),S+' van 8 stukjes van pizza '+(P+1)),tile('',V3ART?.icons.stamp,m.done+' / 11','Stempels',m.done+' van 11 stempels'),tile('',V3ART?.icons.gold,gold+' / 11','Goud',gold+' van 11 goudzegels'),tile('',V3ART?.icons.postcard,cards+' / 4','Postkaarten',cards+' van 4 postkaarten'));
+  tiles.append(tile('v3TilePizza',V3ART?.icons.pizza,S+' / 8','Pizza',S+' van 8 stukjes van pizza '+(P+1)),tile('',V3ART?.icons.stamp,m.done+' / 11','Stempels',m.done+' van 11 stempels'),tile('',V3ART?.icons.gold,gold+' / 11','Goud',gold+' van 11 goudzegels'),tile('',V3ART?.icons.postcard,cards+' / 4','Postkaarten',cards+' van 4 postkaarten'));
   rewardsView.replaceChildren(h,book,ride,tiles);
  }
  function renderSwitch(){

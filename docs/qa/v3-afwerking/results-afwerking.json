@@ -3,47 +3,65 @@
   "reis/desktop/bg01": {
    "texts": 31,
    "small": [],
-   "lowContrast": []
+   "lowContrast": [],
+   "mapShare": 0.519,
+   "ninoOverlap": null
   },
   "reis/desktop/bg02": {
    "texts": 31,
    "small": [],
-   "lowContrast": []
+   "lowContrast": [],
+   "mapShare": 0.519,
+   "ninoOverlap": null
   },
   "reis/desktop/bg03": {
    "texts": 31,
    "small": [],
-   "lowContrast": []
+   "lowContrast": [],
+   "mapShare": 0.519,
+   "ninoOverlap": null
   },
   "oefenen/desktop/bg01": {
    "texts": 29,
    "small": [],
-   "lowContrast": []
+   "lowContrast": [],
+   "mapShare": 0.489,
+   "ninoOverlap": null
   },
   "oefenen/desktop/bg02": {
    "texts": 29,
    "small": [],
-   "lowContrast": []
+   "lowContrast": [],
+   "mapShare": 0.489,
+   "ninoOverlap": null
   },
   "oefenen/desktop/bg03": {
    "texts": 29,
    "small": [],
-   "lowContrast": []
+   "lowContrast": [],
+   "mapShare": 0.489,
+   "ninoOverlap": null
   },
   "les/desktop/bg01": {
-   "texts": 25,
+   "texts": 24,
    "small": [],
-   "lowContrast": []
+   "lowContrast": [],
+   "mapShare": 0.486,
+   "ninoOverlap": null
   },
   "les/desktop/bg02": {
-   "texts": 25,
+   "texts": 24,
    "small": [],
-   "lowContrast": []
+   "lowContrast": [],
+   "mapShare": 0.486,
+   "ninoOverlap": null
   },
   "les/desktop/bg03": {
-   "texts": 25,
+   "texts": 24,
    "small": [],
-   "lowContrast": []
+   "lowContrast": [],
+   "mapShare": 0.486,
+   "ninoOverlap": null
   },
   "toets/desktop/bg01": {
    "texts": 31,
@@ -53,67 +71,87 @@
   "toetsResult/desktop/bg01": {
    "texts": 20,
    "small": [],
-   "lowContrast": []
+   "lowContrast": [],
+   "mapShare": 0.559,
+   "ninoOverlap": 0
   },
   "toetsResult/desktop/bg02": {
    "texts": 20,
    "small": [],
-   "lowContrast": []
+   "lowContrast": [],
+   "mapShare": 0.559,
+   "ninoOverlap": 0
   },
   "toetsResult/desktop/bg03": {
    "texts": 20,
    "small": [],
-   "lowContrast": []
+   "lowContrast": [],
+   "mapShare": 0.559,
+   "ninoOverlap": 0
   },
   "rewards/desktop/bg01": {
-   "texts": 18,
+   "texts": 17,
    "small": [],
    "lowContrast": []
   },
   "rewards/desktop/bg02": {
-   "texts": 18,
+   "texts": 17,
    "small": [],
    "lowContrast": []
   },
   "rewards/desktop/bg03": {
-   "texts": 18,
+   "texts": 17,
    "small": [],
    "lowContrast": []
   },
   "voortgang/desktop/bg01": {
-   "texts": 39,
+   "texts": 35,
    "small": [],
-   "lowContrast": []
+   "lowContrast": [],
+   "mapShare": 0.405,
+   "ninoOverlap": null
   },
   "reis/ipad-liggend/bg01": {
    "texts": 30,
    "small": [],
-   "lowContrast": []
+   "lowContrast": [],
+   "mapShare": 0.523,
+   "ninoOverlap": null
   },
   "reis/ipad-liggend/bg02": {
    "texts": 30,
    "small": [],
-   "lowContrast": []
+   "lowContrast": [],
+   "mapShare": 0.523,
+   "ninoOverlap": null
   },
   "reis/ipad-liggend/bg03": {
    "texts": 30,
    "small": [],
-   "lowContrast": []
+   "lowContrast": [],
+   "mapShare": 0.523,
+   "ninoOverlap": null
   },
   "oefenen/ipad-liggend/bg01": {
    "texts": 29,
    "small": [],
-   "lowContrast": []
+   "lowContrast": [],
+   "mapShare": 0.576,
+   "ninoOverlap": null
   },
   "oefenen/ipad-liggend/bg02": {
    "texts": 29,
    "small": [],
-   "lowContrast": []
+   "lowContrast": [],
+   "mapShare": 0.576,
+   "ninoOverlap": null
   },
   "oefenen/ipad-liggend/bg03": {
    "texts": 29,
    "small": [],
-   "lowContrast": []
+   "lowContrast": [],
+   "mapShare": 0.576,
+   "ninoOverlap": null
   },
   "les/ipad-liggend/bg01": {
    "texts": 19,
@@ -138,47 +176,59 @@
   "toetsResult/ipad-liggend/bg01": {
    "texts": 20,
    "small": [],
-   "lowContrast": []
+   "lowContrast": [],
+   "mapShare": 0.525,
+   "ninoOverlap": 0
   },
   "toetsResult/ipad-liggend/bg02": {
    "texts": 20,
    "small": [],
-   "lowContrast": []
+   "lowContrast": [],
+   "mapShare": 0.525,
+   "ninoOverlap": 0
   },
   "toetsResult/ipad-liggend/bg03": {
    "texts": 20,
    "small": [],
-   "lowContrast": []
+   "lowContrast": [],
+   "mapShare": 0.525,
+   "ninoOverlap": 0
   },
   "rewards/ipad-liggend/bg01": {
-   "texts": 18,
+   "texts": 17,
    "small": [],
    "lowContrast": []
   },
   "rewards/ipad-liggend/bg02": {
-   "texts": 18,
+   "texts": 17,
    "small": [],
    "lowContrast": []
   },
   "rewards/ipad-liggend/bg03": {
-   "texts": 18,
+   "texts": 17,
    "small": [],
    "lowContrast": []
   },
   "voortgang/ipad-liggend/bg01": {
-   "texts": 36,
+   "texts": 35,
    "small": [],
-   "lowContrast": []
+   "lowContrast": [],
+   "mapShare": 0.464,
+   "ninoOverlap": null
   },
   "reis/ipad-staand/bg01": {
    "texts": 25,
    "small": [],
-   "lowContrast": []
+   "lowContrast": [],
+   "mapShare": 0.51,
+   "ninoOverlap": null
   },
   "oefenen/ipad-staand/bg01": {
    "texts": 24,
    "small": [],
-   "lowContrast": []
+   "lowContrast": [],
+   "mapShare": 0.438,
+   "ninoOverlap": null
   },
   "les/ipad-staand/bg01": {
    "texts": 17,
@@ -193,17 +243,21 @@
   "toetsResult/ipad-staand/bg01": {
    "texts": 15,
    "small": [],
-   "lowContrast": []
+   "lowContrast": [],
+   "mapShare": 0.364,
+   "ninoOverlap": 0
   },
   "rewards/ipad-staand/bg01": {
-   "texts": 9,
+   "texts": 8,
    "small": [],
    "lowContrast": []
   },
   "voortgang/ipad-staand/bg01": {
    "texts": 22,
    "small": [],
-   "lowContrast": []
+   "lowContrast": [],
+   "mapShare": 0.563,
+   "ninoOverlap": null
   }
  },
  "errors": [],

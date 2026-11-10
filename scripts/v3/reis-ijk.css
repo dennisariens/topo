@@ -6,8 +6,8 @@
    * One title ("Reis"); the list is one glass panel; rows: scene, name, status (check · medal · thin bar · lock).
    * The map column: tools left and counters (line icons) right on top, the map, and one chapter card at the bottom with
      the title, three step dots and the pill. Pins never fall under the card: the map has its own row.
-   * Map variants: (a) data-kaart=eiland (default): Italy floats as land, neighbours soft silhouettes that fade out,
-     the sea transparent on the wash; (b) data-kaart=kaart: the map in a rounded glass card that fills its grid cell. */
+   * Map: data-kaart=eiland (chosen, afwerking 10-11): Italy floats as land, neighbours soft silhouettes that fade out,
+     the sea transparent on the wash. */
 .v3 .v3SrOnly{position:absolute!important;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap;border:0}
 .v3ScreenTitle{font:var(--v3-display);letter-spacing:-.01em;color:var(--v3-ink);margin:0}
 .v3ScreenTitle:focus{outline:0}.v3ScreenTitle:focus-visible{outline:3px solid var(--v3-focus);outline-offset:4px;border-radius:8px}
@@ -77,9 +77,6 @@
 .v3Map[data-kaart=eiland] :is(.contextLand,.country:not(.v3Hit):not(.v3Isle)){fill-opacity:0!important;stroke-opacity:0!important}
 .v3Map[data-kaart=eiland] :is(.contextLabel,.mapLabel){display:none}
 .v3Map[data-kaart=eiland] .v3Pins{filter:drop-shadow(0 2px 2px rgba(42,36,64,.30))}
-/* (b) Kaart: a rounded glass card around the map. */
-.v3Reis[data-kaart=kaart] .v3MapStage{border-radius:var(--v3-radius-glass);padding:10px;background:var(--v3-glass);-webkit-backdrop-filter:var(--v3-glass-filter);backdrop-filter:var(--v3-glass-filter);box-shadow:var(--v3-glass-shadow)}
-.v3Map[data-kaart=kaart]{border-radius:20px;box-shadow:none}
 
 /* Islands of Italy on the eiland: land like the mainland (relief through the clip; schoolkaart in Italy's colour). */
 .v3Map[data-kaart=eiland][data-relief=on] .v3Isle:not(.v3Hit){fill-opacity:0!important;stroke:#fff!important;stroke-opacity:.75!important}
@@ -87,7 +84,6 @@
 @media (min-width:768px){
  .v3Reis[data-view=reis] .v3MapStage{position:relative;display:block}
  .v3Reis[data-view=reis] .v3Map{position:absolute;inset:0;margin:auto;max-width:100%;max-height:100%}
- .v3Reis[data-view=reis][data-kaart=kaart] .v3Map{inset:10px;max-width:calc(100% - 20px);max-height:calc(100% - 20px)}
 }
 
 /* Layout ≥ 768 (desktop and iPad): the 12-column grid. */
@@ -101,7 +97,6 @@
  .v3Reis[data-view=reis]>.v3Main{display:grid;grid-template-columns:minmax(0,1fr);grid-template-rows:42px minmax(0,1fr) auto;gap:var(--v3-gut);margin:var(--v3-inner) var(--v3-inner) var(--v3-inner) 0;overflow:visible}
  .v3Reis[data-view=reis] .v3Main>.v3Top{grid-row:1;padding:0;background:none!important;-webkit-backdrop-filter:none!important;backdrop-filter:none!important;box-shadow:none!important;border-radius:0}
  .v3Reis[data-view=reis] .v3Main>.v3MapStage{grid-row:2;grid-column:1;min-height:0;padding:0}
- .v3Reis[data-view=reis][data-kaart=kaart] .v3Main>.v3MapStage{padding:10px}
  .v3Reis[data-view=reis] .v3Main>.v3Panel{grid-row:3;grid-column:1;align-self:end;padding:20px 24px!important}
 }
 /* iPad landscape (1024–1279): the labelled sidebar, 200 px, portrait 88 (Verfijning). */

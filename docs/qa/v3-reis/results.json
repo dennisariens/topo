@@ -1,14 +1,14 @@
 {
  "html": "output/html/TOPO-V3-Reis-Preview.html",
- "sha256": "653fd50556fc7407feeb3d67087ad27023f27440a917744b5fc487aa985a3b34",
- "bytes": 50391292,
+ "sha256": "17455c379266dfcae00ef2928cf2ff70c2017bf50ca64b7d21e4215bf41f5cb1",
+ "bytes": 50401837,
  "layout": {
   "desktop/nieuw": {
    "frame": {
-    "viewBox": "107 173 716 864",
+    "viewBox": "-29 173 989 1049",
     "mask": "none",
     "kept": {
-     "Frankrijk": 0.96,
+     "Frankrijk": 1,
      "Zwitserland": 1,
      "Oostenrijk": 1,
      "Slovenië": 1,
@@ -77,7 +77,7 @@
   },
   "desktop/bezig": {
    "frame": {
-    "viewBox": "107 173 716 864",
+    "viewBox": "-77 173 1085 1151",
     "mask": "none",
     "kept": {
      "Frankrijk": 1,
@@ -149,10 +149,10 @@
   },
   "desktop/afgerond": {
    "frame": {
-    "viewBox": "107 173 716 864",
+    "viewBox": "-29 173 989 1049",
     "mask": "none",
     "kept": {
-     "Frankrijk": 0.96,
+     "Frankrijk": 1,
      "Zwitserland": 1,
      "Oostenrijk": 1,
      "Slovenië": 1,
@@ -221,7 +221,7 @@
   },
   "desktop/alles": {
    "frame": {
-    "viewBox": "107 173 716 864",
+    "viewBox": "-77 173 1085 1151",
     "mask": "none",
     "kept": {
      "Frankrijk": 1,
@@ -293,7 +293,7 @@
   },
   "ipad-portrait/nieuw": {
    "frame": {
-    "viewBox": "107 173 716 864",
+    "viewBox": "107 -122 716 1764",
     "mask": "none",
     "kept": {
      "Frankrijk": 1,
@@ -364,7 +364,7 @@
   },
   "ipad-portrait/bezig": {
    "frame": {
-    "viewBox": "107 173 716 864",
+    "viewBox": "107 -76 716 1764",
     "mask": "none",
     "kept": {
      "Frankrijk": 1,
@@ -435,7 +435,7 @@
   },
   "ipad-portrait/afgerond": {
    "frame": {
-    "viewBox": "107 173 716 864",
+    "viewBox": "107 -122 716 1764",
     "mask": "none",
     "kept": {
      "Frankrijk": 1,
@@ -506,7 +506,7 @@
   },
   "ipad-portrait/alles": {
    "frame": {
-    "viewBox": "107 173 716 864",
+    "viewBox": "107 -34 716 1764",
     "mask": "none",
     "kept": {
      "Frankrijk": 1,
@@ -577,7 +577,7 @@
   },
   "ipad-landscape/nieuw": {
    "frame": {
-    "viewBox": "107 173 716 864",
+    "viewBox": "-3 173 937 1127",
     "mask": "none",
     "kept": {
      "Frankrijk": 1,
@@ -649,7 +649,7 @@
   },
   "ipad-landscape/bezig": {
    "frame": {
-    "viewBox": "107 173 716 864",
+    "viewBox": "-56 173 1042 1254",
     "mask": "none",
     "kept": {
      "Frankrijk": 1,
@@ -721,7 +721,7 @@
   },
   "ipad-landscape/afgerond": {
    "frame": {
-    "viewBox": "107 173 716 864",
+    "viewBox": "23 173 885 1064",
     "mask": "none",
     "kept": {
      "Frankrijk": 1,
@@ -793,7 +793,7 @@
   },
   "ipad-landscape/alles": {
    "frame": {
-    "viewBox": "107 173 716 864",
+    "viewBox": "-56 173 1042 1254",
     "mask": "none",
     "kept": {
      "Frankrijk": 1,
@@ -865,7 +865,7 @@
   },
   "phone/nieuw": {
    "frame": {
-    "viewBox": "107 173 716 864",
+    "viewBox": "-18 173 967 864",
     "mask": "none",
     "kept": {
      "Frankrijk": 1,
@@ -936,7 +936,7 @@
   },
   "phone/bezig": {
    "frame": {
-    "viewBox": "107 173 716 864",
+    "viewBox": "-18 173 967 864",
     "mask": "none",
     "kept": {
      "Frankrijk": 1,
@@ -1007,7 +1007,7 @@
   },
   "phone/afgerond": {
    "frame": {
-    "viewBox": "107 173 716 864",
+    "viewBox": "-18 173 967 864",
     "mask": "none",
     "kept": {
      "Frankrijk": 1,
@@ -1078,10 +1078,10 @@
   },
   "phone/alles": {
    "frame": {
-    "viewBox": "107 173 716 864",
+    "viewBox": "-18 173 967 864",
     "mask": "none",
     "kept": {
-     "Frankrijk": 1,
+     "Frankrijk": 0.99,
      "Zwitserland": 1,
      "Slovenië": 1,
      "Kroatië": 1,
@@ -1149,7 +1149,7 @@
   },
   "phone-small/nieuw": {
    "frame": {
-    "viewBox": "107 173 716 864",
+    "viewBox": "76 173 778 864",
     "mask": "none",
     "kept": {
      "Frankrijk": 1,
@@ -1220,7 +1220,7 @@
   },
   "phone-small/bezig": {
    "frame": {
-    "viewBox": "107 173 716 864",
+    "viewBox": "76 173 778 864",
     "mask": "none",
     "kept": {
      "Frankrijk": 1,
@@ -1291,7 +1291,7 @@
   },
   "phone-small/afgerond": {
    "frame": {
-    "viewBox": "107 173 716 864",
+    "viewBox": "76 173 778 864",
     "mask": "none",
     "kept": {
      "Frankrijk": 1,
@@ -1362,7 +1362,7 @@
   },
   "phone-small/alles": {
    "frame": {
-    "viewBox": "107 173 716 864",
+    "viewBox": "76 173 778 864",
     "mask": "none",
     "kept": {
      "Frankrijk": 1,
@@ -1462,9 +1462,9 @@
    },
    "backVia": "v3Btn v3NavItem",
    "primaryLabelWithActive": "Ga verder · Ontdekken",
-   "questionBefore": "city-12",
+   "questionBefore": "city-11",
    "reisVerderSameQuestion": {
-    "id": "city-12",
+    "id": "city-11",
     "chapter": "city2",
     "kind": "discover"
    },
@@ -1507,9 +1507,9 @@
    },
    "backVia": "v3Btn v3LesBack",
    "primaryLabelWithActive": "Ga verder · Ontdekken",
-   "questionBefore": "city-9",
+   "questionBefore": "city-7",
    "reisVerderSameQuestion": {
-    "id": "city-9",
+    "id": "city-7",
     "chapter": "city2",
     "kind": "discover"
    },

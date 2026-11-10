@@ -1,13 +1,14 @@
 #!/usr/bin/env python3
 """TOPO V3.0 fase B — Reis volgens R-reis-ijk (docs/v3/renders/README.md § Reis, § Raster en uitlijning, § Verfijning;
-DECISIONS 10-11 "Review fase A": two map variants, (a) Eiland and (b) Kaart).
+DECISIONS 10-11 "Review fase A"; afwerking 10-11: variant (a) Eiland chosen, map left and controls right).
 
 On #bezig (and #afgerond for the gold and done rows), desktop 1440×900, iPad landscape 1180×820 and iPad portrait
-820×1180, for both variants (a) eiland (default) and (b) kaart (#…/kaart):
+820×1180, map variant (a) Eiland:
   * raster: the content area has 12 columns with one gutter (24 desktop, 16 iPad) and an inner margin of gutter + 8;
-    the list spans 5 columns, the map column 7 (±1 px); the gutter between them is the gutter (±1 px);
-  * shared lines: the top of the title "Reis" and the top of the map column's first row (tools, counters) on one line
-    (±1 px); the bottom of the chapter list and the bottom of the chapter card on one line, on the inner margin (±1 px);
+    the map on 7 columns at the left, the chapter list on 5 at the right (±1.5 px); the gutter between them is the
+    gutter (±1 px); the inner margins left and right (±1 px);
+  * shared lines: the title "Reis" and the counters' row centred on one line (±3 px); the bottom of the chapter list,
+    the bottom of the map and the bottom of the chapter card on one line, on the inner margin (±1 px);
   * one title: exactly one display-size text (≥ 30 px, the wordmark aside) on the screen: "Reis"; no visible "Hoofdstukken" heading;
   * sidebar: portrait 112 px on desktop, 88 on iPad landscape (labelled sidebar, 200 px), rail on iPad portrait;
   * rows: done = a check only (no bar), gold = a medal, in progress = a thin bar, locked = a lock only (no bar);
@@ -17,7 +18,6 @@ On #bezig (and #afgerond for the gold and done rows), desktop 1440×900, iPad la
   * variant (a): no sea colour anywhere on the map (sea layers hidden, transparent background), neighbours visible as
     one soft silhouette (one group: effective alpha 0.3–0.8, faded by the mask; the original shapes draw nothing, so
     overlaps make no seams), the relief clipped to Italy;
-    variant (b): the map sits in a glass card (radius 28) that fills the map row;
   * the theme accent only on meaning (no violet text outside the active nav, selection and the primary pill).
 Writes screenshots and the comparisons beside R-reis-ijk (docs/qa/v3-stijlbeeld/reis-ijk-<variant>-<viewport>.jpg)
 and results.json to docs/qa/v3-faseb/.
@@ -37,7 +37,7 @@ STIJL = ROOT / 'docs/qa/v3-stijlbeeld'
 RENDER = ROOT / 'docs/v3/renders/R-reis-ijk.webp'
 MAC_CHROME = '/Applications/Google Chrome.app/Contents/MacOS/Google Chrome'
 VIEWPORTS = {'desktop': (1440, 900), 'ipad-liggend': (1180, 820), 'ipad-staand': (820, 1180)}
-VARIANTS = {'eiland': '', 'kaart': '/kaart'}
+VARIANTS = {'eiland': ''}
 
 PROBE = r'''() => {
   const q = s => document.querySelector(s), R = n => { if (!n) return null; const r = n.getBoundingClientRect(); return {l: r.left, t: r.top, r: r.right, b: r.bottom, w: r.width, h: r.height}; };
@@ -82,15 +82,16 @@ def checks(p, vp, variant, demo, fail):
     tag = f'{vp}/{variant}/{demo}'
     f = lambda why: fail(f'{tag}: {why}')
     # Raster (≥ 768 px).
-    list_w, main_w = p['rows']['w'], p['main']['w']
+    list_w, map_w = p['rows']['w'], p['stage']['w']
     if not near(list_w, 5 * p['col'] + 4 * p['gut'], 1.5): f(f'list {list_w:.1f} ≠ 5 columns {5 * p["col"] + 4 * p["gut"]:.1f}')
-    if not near(main_w, 7 * p['col'] + 6 * p['gut'], 1.5): f(f'map column {main_w:.1f} ≠ 7 columns {7 * p["col"] + 6 * p["gut"]:.1f}')
-    if not near(p['main']['l'] - p['rows']['r'], p['gut']): f(f'gutter list|map {p["main"]["l"] - p["rows"]["r"]:.1f} ≠ {p["gut"]}')
-    if not near(p['rows']['l'] - p['side']['r'], p['inner']): f(f'inner margin left {p["rows"]["l"] - p["side"]["r"]:.1f} ≠ {p["inner"]}')
-    if not near(p['frame']['r'] - p['main']['r'], p['inner']): f(f'inner margin right {p["frame"]["r"] - p["main"]["r"]:.1f} ≠ {p["inner"]}')
+    if not near(map_w, 7 * p['col'] + 6 * p['gut'], 1.5): f(f'map {map_w:.1f} ≠ 7 columns {7 * p["col"] + 6 * p["gut"]:.1f}')
+    if not near(p['rows']['l'] - p['stage']['r'], p['gut']): f(f'gutter map|list {p["rows"]["l"] - p["stage"]["r"]:.1f} ≠ {p["gut"]}')
+    if not near(p['stage']['l'] - p['side']['r'], p['inner']): f(f'inner margin left {p["stage"]["l"] - p["side"]["r"]:.1f} ≠ {p["inner"]}')
+    if not near(p['frame']['r'] - p['rows']['r'], p['inner']): f(f'inner margin right {p["frame"]["r"] - p["rows"]["r"]:.1f} ≠ {p["inner"]}')
+    if not near(p['card']['l'], p['stage']['l']) or not near(p['card']['r'], p['stage']['r']): f('chapter card not on the map area')
     # Shared lines.
-    if not near(p['title']['t'], p['top']['t']): f(f'title top {p["title"]["t"]:.1f} ≠ top row {p["top"]["t"]:.1f}')
-    if not near(p['rows']['b'], p['card']['b']): f(f'list bottom {p["rows"]["b"]:.1f} ≠ card bottom {p["card"]["b"]:.1f}')
+    if not near(p['title']['t'] + p['title']['h'] / 2, p['top']['t'] + p['top']['h'] / 2, 3): f(f'title and counters not on one line ({p["title"]["t"]:.1f}, {p["top"]["t"]:.1f})')
+    if not near(p['rows']['b'], p['card']['b']) or not near(p['stage']['b'], p['card']['b']): f(f'list / map / card bottom {p["rows"]["b"]:.1f} / {p["stage"]["b"]:.1f} / {p["card"]["b"]:.1f}')
     if not near(p['frame']['b'] - p['card']['b'], p['inner']): f(f'card bottom not on the inner margin ({p["frame"]["b"] - p["card"]["b"]:.1f})')
     # One title.
     if p['big'] != ['Reis']: f(f'display texts {p["big"]} (only "Reis")')
@@ -120,8 +121,6 @@ def checks(p, vp, variant, demo, fail):
         if not p['nb'] or bad: f(f'neighbours not one soft faded silhouette {p["nb"]}')
         if p['nbOriginals']: f(f'{p["nbOriginals"]} original neighbour shapes still drawn (double alpha, seams)')
         if 'italyClip' not in p['terrainClip']: f(f'relief not clipped to Italy ({p["terrainClip"]})')
-    else:
-        if p['stageRadius'] != '28px' or p['stageBg'] in ('rgba(0, 0, 0, 0)', 'transparent'): f(f'map not in a glass card ({p["stageRadius"]}, {p["stageBg"]})')
     if p['hOverflow']: f('horizontal overflow')
 
 
@@ -161,7 +160,7 @@ async def main():
                     await pg.screenshot(path=str(shot))
                     if demo == 'bezig' and vp != 'ipad-staand':
                         bar = round(await pg.evaluate("document.querySelector('.v3PreviewBar')?.getBoundingClientRect().height || 0"))
-                        side_by_side(RENDER, shot, STIJL / f'reis-ijk-{variant}-{vp}.jpg', f'Build · variant ({"a" if variant == "eiland" else "b"}) {variant.capitalize()} · {vp}', bar)
+                        side_by_side(RENDER, shot, STIJL / f'reis-ijk-{variant}-{vp}.jpg', f'Build · {vp}', bar)
                     res['runs'][f'{vp}/{variant}/{demo}'] = {k: p[k] for k in ('gut', 'inner', 'col', 'big', 'portrait', 'kaart', 'dots', 'primaries', 'rowInfo')} | {'pins': len(p['pins'])}
                     await ctx.close()
         await b.close()

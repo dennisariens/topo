@@ -71,7 +71,6 @@ body.v3Home #journeyScreen,body.v3Home #journeyScreen>#routeHome{background:none
 .v3Book{grid-template-rows:minmax(0,1fr) auto}
 .v3 .v3BookCover{display:flex;align-items:center;justify-content:center;padding:0;background:none;box-shadow:none;min-height:0;height:100%;border-radius:12px}
 .v3CoverArt{display:block;max-height:min(100%,420px);width:auto;max-width:100%;filter:drop-shadow(0 14px 22px rgba(60,40,20,.28));transform:rotate(-2deg)}
-.v3Book .v3Btn.primary{min-width:240px}
 .v3Ride{display:grid;grid-template-columns:auto 1fr;grid-template-rows:minmax(0,1fr) auto auto;column-gap:var(--v3-s3);align-content:end;min-height:0;padding:var(--v3-s5);border-radius:var(--v3-radius);background:color-mix(in srgb,var(--v3-surface) 80%,transparent);box-shadow:0 1px 2px rgba(28,40,44,.06)}
 .v3RideArt{grid-column:1/-1;justify-self:center;align-self:center;width:100%;max-width:420px;height:auto;max-height:min(34dvh,300px);object-fit:contain}
 .v3Ride>b{font:700 34px/1 var(--v3-font);font-variant-numeric:tabular-nums}

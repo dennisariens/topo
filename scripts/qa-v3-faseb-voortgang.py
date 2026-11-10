@@ -7,13 +7,16 @@ On #bezig (desktop 1440×900, iPad landscape 1180×820, iPad portrait 820×1180,
   * title bar: the display texts are exactly "Voortgang" and "n / 45", on one line (≥ 768), in ink (not violet), with
     a broad bar (≥ 14 px high; ≥ 768: ≥ 40% of the content width);
   * map card: a white card with the schoolkaart and the legend (Beheerst, Bezig, Nog niet) inside it; a mastered place
-    in the accent colour, a place not yet started in cream;
-  * chapters: 11 rows, each with its photo, a bar of three segments ≥ 10 px high and a status illustration; the card
-    scrolls on its own when the rows do not fit (≥ 1024);
+    in the accent colour, a place not yet started in cream; (≥ 1024, afwerking 10-11) the map fills the card (no empty
+    column: card = map + 12 px each side, ±2 px), "Italië" with the number and the legend lie on the map;
+  * chapters: 11 rows, each with its photo, a bar of three segments ≥ 10 px high (locked rows: no bar, the lock only)
+    and a status illustration; the card scrolls on its own when the rows do not fit (≥ 1024);
   * Dagdoel with a line icon and 8 dots (on = n of 8), Pizza's and Vespa-ritten as tiles; no greeting, offline badge
     or streak;
-  * ≥ 1024: 12 columns — title bar, map card on 1–7, chapters on 8–12 (±1.5 px), map card and chapters on one top
-    and bottom line (±1 px); Dagdoel on 6 columns, Pizza's and Vespa-ritten on 3 each;
+  * ≥ 1024 (afwerking 10-11: map left, controls right): the map card on the inner margin at the left over the
+    Werkblad's height below the title bar; the chapters one gutter right of it up to the inner margin, on the map
+    card's top line; under them Dagdoel over the column's width, Pizza's and Vespa-ritten side by side, the last row on
+    the map card's bottom line (±1 px); Toetsen and the paspoort below (the Werkblad scrolls as a whole);
   * no horizontal overflow.
 Runs with prefers-reduced-transparency: no-preference. Writes screenshots, the comparisons beside R-voortgang
 (docs/qa/v3-stijlbeeld/voortgang-ijk-<viewport>.jpg) and results-voortgang.json to docs/qa/v3-faseb/.
@@ -44,12 +47,12 @@ PROBE = r'''() => {
   const probe = document.createElement('i'); probe.style.color = 'var(--v3-accent)'; view.append(probe); const accent = cs(probe).color; probe.style.color = 'var(--v3-ink)'; const ink = cs(probe).color; probe.remove();
   const side = view.querySelector('.v3VgSide .v3Card');
   const rows = [...view.querySelectorAll('.v3VgChapters li')].map(li => ({photo: vis(li.querySelector('.v3VgThumb img')), bar: R(li.querySelector('.v3VgSteps'))?.h, segs: li.querySelectorAll('.v3VgSteps i').length,
-    art: vis(li.querySelector('.v3VgStatus img, .v3VgStatus svg')), status: li.dataset.status}));
+    art: vis(li.querySelector('.v3VgStatus img, .v3VgStatus svg')), status: li.dataset.status, barShown: !!li.querySelector('.v3VgSteps')?.checkVisibility({visibilityProperty: true})}));
   const dd = view.querySelector('.v3VgDagdoel'), dots = [...(dd?.querySelectorAll('.v3VgDots i') || [])];
   const vs = cs(view), gut = px(vs.columnGap), padL = px(vs.paddingLeft), inner = R(view).w - padL - px(vs.paddingRight), col = (inner - 11 * gut) / 12;
   const words = /buongiorno|offline|streak|reeks|dagen op rij/i;
   return {big, h1: R(h1), count: R(count), countText: count?.textContent, h1Color: cs(h1).color, countColor: cs(count).color, accent, ink, bar: R(bar),
-    fig: R(fig), figBg: fig && cs(fig).backgroundColor, svgIn: !!svg && fig.contains(svg), relief: svg?.dataset.relief, legend: legend ? [...legend.querySelectorAll('li')].map(l => l.textContent.split(' · ')[0]) : [], legendIn: !!legend && fig.contains(legend),
+    fig: R(fig), figBg: fig && cs(fig).backgroundColor, svgIn: !!svg && fig.contains(svg), relief: svg?.dataset.relief, legend: legend ? [...legend.querySelectorAll('li')].map(l => l.textContent.split(' · ')[0]) : [], legendIn: !!legend && fig.contains(legend), svgBox: R(svg), legendBox: R(legend), capBox: R(fig?.querySelector('.v3VgKaartTitle')),
     fillHi: circ('beheerst'), fillLo: circ('nog'), side: R(side), sideScroll: side ? {sh: side.scrollHeight, ch: side.clientHeight, ov: cs(side).overflowY} : null, rows,
     dagIcon: vis(dd?.querySelector('.v3VgTileIcon svg')), dots: dots.length, dotsOn: dots.filter(d => d.classList.contains('on')).length, daily: dd?.querySelector('strong')?.textContent,
     pizzas: vis(view.querySelector('.v3VgPizzas')), rides: vis(view.querySelector('.v3VgRides')), dag: R(dd), piz: R(view.querySelector('.v3VgPizzas')), rid: R(view.querySelector('.v3VgRides')),
@@ -77,17 +80,22 @@ def checks(p, tag, vp, fail):
     if p['legend'] != ['Beheerst', 'Bezig', 'Nog niet'] or not p['legendIn']: f(f'legend {p["legend"]}')
     if p['fillHi'] and p['fillHi'] != p['accent']: f(f'mastered place {p["fillHi"]} ≠ accent {p["accent"]}')
     if p['fillLo'] and p['fillLo'] != 'rgb(243, 236, 220)': f(f'place not started {p["fillLo"]} ≠ cream')
-    bad = [r for r in p['rows'] if not r['photo'] or not r['art'] or r['segs'] != 3 or (r['bar'] or 0) < 10]
+    bad = [r for r in p['rows'] if not r['photo'] or not r['art'] or r['segs'] != 3 or (r['status'] == 'locked') == r['barShown'] or (r['status'] != 'locked' and (r['bar'] or 0) < 10)]
     if len(p['rows']) != 11 or bad: f(f'chapter rows ({len(p["rows"])}, {bad[:2]})')
     if not p['dagIcon'] or p['dots'] != 8 or p['daily'] != f'{p["dotsOn"]} / 8' or not p['pizzas'] or not p['rides']: f(f'Dagdoel/tiles ({p["dagIcon"]}, {p["dots"]}, {p["daily"]}, {p["dotsOn"]})')
     if p['words']: f('greeting, offline badge or streak shown')
     if vp in ('desktop', 'ipad-liggend'):
-        v, c, g = p['view'], p['col'], p['gut']; span = lambda n: n * c + (n - 1) * g; x0 = v['l'] + p['padL']
-        if not near(p['fig']['l'], x0, 1.5) or not near(p['fig']['w'], span(7), 1.5): f(f'map card not on columns 1–7 ({p["fig"]["w"]:.1f} vs {span(7):.1f})')
-        if not near(p['side']['l'], x0 + span(7) + g, 1.5) or not near(p['side']['w'], span(5), 1.5): f(f'chapters not on columns 8–12 ({p["side"]["w"]:.1f} vs {span(5):.1f})')
-        if not near(p['side']['t'], p['fig']['t']) or not near(p['side']['b'], p['fig']['b']): f('map card and chapters not on one top and bottom line')
+        v, g = p['view'], p['gut']; x0, x1 = v['l'] + p['padL'], v['l'] + p['padL'] + p['inner']; fig, sd, sv = p['fig'], p['side'], p['svgBox']
+        inside = lambda a, b: a and b and a['l'] >= b['l'] - 1 and a['r'] <= b['r'] + 1 and a['t'] >= b['t'] - 1 and a['b'] <= b['b'] + 1
+        if not near(fig['l'], x0, 1.5): f(f'map card not on the inner margin ({fig["l"]:.1f} vs {x0:.1f})')
+        if not near(fig['w'], sv['w'] + 24, 2) or not near(fig['h'], sv['h'] + 24, 2): f(f'empty space in the map card ({fig["w"]:.0f}×{fig["h"]:.0f} vs map {sv["w"]:.0f}×{sv["h"]:.0f})')
+        if not inside(p['capBox'], sv) or not inside(p['legendBox'], sv): f('title or legend not on the map')
+        if not near(sd['l'], fig['r'] + g, 1.5) or not near(sd['r'], x1, 1.5): f(f'chapters not between the map card and the inner margin ({sd["l"]:.1f}–{sd["r"]:.1f})')
+        if not near(sd['t'], fig['t']): f('map card and chapters not on one top line')
         if p['sideScroll']['sh'] > p['sideScroll']['ch'] + 1 and p['sideScroll']['ov'] not in ('auto', 'scroll'): f('chapters overflow without their own scroll')
-        if not near(p['dag']['w'], span(6), 1.5) or not near(p['piz']['w'], span(3), 1.5) or not near(p['rid']['w'], span(3), 1.5): f('Dagdoel 6 / Pizza’s 3 / Vespa-ritten 3 columns')
+        dg, pz, rd = p['dag'], p['piz'], p['rid']
+        if not near(dg['l'], sd['l']) or not near(dg['r'], sd['r']) or dg['t'] < sd['b'] or not near(pz['l'], sd['l']) or not near(rd['r'], sd['r']) or not near(pz['t'], rd['t']) or not near(rd['b'], fig['b']):
+            f('Dagdoel over the column, Pizza’s and Vespa-ritten side by side on the map card’s bottom line')
     if p['hOverflow']: f('horizontal overflow')
 
 

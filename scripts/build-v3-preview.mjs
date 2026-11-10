@@ -27,7 +27,7 @@ const states=`(function(){
   'alles':make('Alles af',IDS.map(()=>({stage:3,gold:1})),{good:168,pizzas:21,trips:7})
  };
  const [raw0,...opts]=location.hash.slice(1).split('/'),theme=opts.includes('italia')?'italia':'viola',bgKey=opts.find(o=>/^bg0[123]$/.test(o))||'bg01',raw1=raw0||'',pair=/^thema-(ipad-)?/.exec(raw1),raw=pair?raw1.slice(pair[0].length):raw1,side=raw.startsWith('naast-'),key=side?raw.slice(6):raw,chosen=S[key]||S.bezig,th=theme==='viola'?'viola':'italia';
- window.TOPO_V3_THEME=th;window.TOPO_V3_BG=bgKey;window.TOPO_V3_KAART=opts.includes('kaart')?'kaart':'eiland';const tail=(th==='italia'?'/italia':'')+(bgKey!=='bg01'?'/'+bgKey:'')+(window.TOPO_V3_KAART==='kaart'?'/kaart':'');
+ window.TOPO_V3_THEME=th;window.TOPO_V3_BG=bgKey;const tail=(th==='italia'?'/italia':'')+(bgKey!=='bg01'?'/'+bgKey:'');
  // Theme pair (stijlbeeld): Italia and Viola side by side, desktop 1440×900 or iPad landscape 1180×820, two live frames.
  if(pair){
   window.stop();addEventListener('hashchange',()=>location.reload());

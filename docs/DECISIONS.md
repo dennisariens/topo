@@ -833,6 +833,7 @@ De data blijft gelijk: plekken uit het V2-paspoort, hoofdstukken uit `TopoRoute`
   - **Bakkerijbeloningen Frankrijk:** past in het landpakket als landeigen beloningsartwork. De regel (8 punten, 3 per rit) blijft in de kern.
 
 - **Masters ontvangen** (`art/master` `339c420`, `assets/art/masters/universal/`): Nino-poses 1024×1536 en Vespa's 1536×1024 (icoon 1254²), RGBA met echte alfa en schone uitsnede. Genoeg voor het toetsresultaat en de kennismaking (tot ±600 CSS-px hoog op 2×). De grens van 300 CSS-px vervalt.
+
 ## 2026-11-10 — V3.0 afwerking na fase B, stap 1: wash, glas en typeschaal
 
 Volgens renders/README § "Afwerking na fase B". Waar die waarden botsen met "Verfijning" of "Ingetogenheid", gaan ze voor. Alleen presentatie; nieuw bestand `scripts/v3/afwerking.css`, geladen na `voortgang-ijk.css`.
@@ -854,3 +855,33 @@ Volgens renders/README § "Afwerking na fase B". Waar die waarden botsen met "Ve
 - `qa-v3-faseb-beloningen.py` en `qa-v3-faseb-voortgang.py` tellen kerncijfers niet langer als display-tekst.
 
 **Open:** de tablabels op de telefoon blijven 11 px. Zes tabs passen niet op 13 px; de regel geldt vanaf 768 px.
+
+## 2026-11-10 — V3.0 afwerking na fase B, stap 2: kaart links, reliëf, per scherm
+
+Volgens renders/README § "Afwerking na fase B" en § "Bijstelling eigenaar (10-11, middag)". Alleen presentatie; de logica blijft gelijk.
+
+- **Kaart links, bediening rechts** op Reis, Oefenen, Les, Toets resultaat en Voortgang (≥ 1024 en iPad liggend). Zo staat de kaart op elke tab op dezelfde plek, op het rustige deel van het artwork.
+  - **Reis:** de kaart op 7/12 links. De hoofdstukkaart (titel, stappen, Aanwijzen) ligt onderaan op het kaartvlak; de tekening houdt die strook vrij (`--v3-fit-bottom`), zodat er geen pin onder de kaart valt. De lijst staat op 5/12 rechts.
+  - **Oefenen:** het keuzepaneel rechts (wijkt af van `R-oefenen-ijk`). Op iPad liggend staan de chips in twee kolommen en de vormtegels 2×2, zodat het paneel op 5 kolommen past.
+  - **Les (desktop):** de schoolkaart links, zo groot als het rastervlak toelaat (7 kolommen of de volle hoogte). Rechts staat één glaskaart met les, Schoolblad, teller en stappen, met de vraag eronder. **Focus Mode (iPad) houdt zijn eigen indeling** (V2-gedrag met safe-area en een inklapbaar blad); die is niet herschikt.
+  - **Toets resultaat:** de kaart op 7 kolommen over de volle hoogte, met de score linksboven op het kaartvlak. Het paneel staat rechts; Nino staat vrij in een eigen rastervlak onder het paneel en wordt nooit bedekt.
+  - **Voortgang:** de grote kaart links over de volle hoogte, met "Italië · 45 plekken" en de legenda op de kaart (geen lege kolom). Rechts staan de hoofdstukken (eigen scroll), met Dagdoel, Pizza's en Vespa-ritten eronder. Toetsen en het paspoort volgen; het Werkblad scrolt als geheel.
+- **Kaart en reliëf:** de kaart vult zijn rastervlak. Het reliëf krijgt diepte: verzadiging 1,15 en een sterkere hillshade (contrast 1,2 rond de middentoon, SVG-filter op het terrein). Onder het land ligt een slagschaduw `0 18px 24px rgba(42,36,64,.28)`, per fit omgerekend naar kaarteenheden. **Variant (a) Eiland is gekozen;** variant (b) Kaart, `#…/kaart` en de CSS ervoor zijn weg.
+- **Toetsscore:** violet (accent, want het is data), gewicht 600, zonder kader en zonder focusring. Het is een kop met `tabindex=-1` die alleen programmatisch focus krijgt.
+- **Beloningen:**
+  - het boek is de knop. Het witte rondje erachter was de glasstijl van de secundaire knop (achtergrond plus `backdrop-filter`); dat is weg;
+  - de aparte knop "Open Reisboekje" is weg, en het omslag krijgt de focus;
+  - "Pizza 2" heet nu "Pizza".
+- **Voortgang:** slotrijen tonen alleen het slot, zonder balk.
+
+**QA:**
+- `qa-v3-afwerking.py` meet nu ook:
+  - de kaart links van het paneel;
+  - de kaart ≥ 45% van het inhoudsvlak op Landschap (het vlak binnen de binnenmarges naast de zijbalk). Gemeten: Reis 52%, Oefenen 49–58%, Les 49%, Toets resultaat 53–56%;
+  - Nino zonder overlap met een paneel;
+  - de toetsscore, het boek als knop, "Pizza" en de slotrijen.
+- De `qa-v3-faseb-*.py` en `qa-v3-stijlbeeld.py` volgen de nieuwe indeling. De runs voor variant (b) en de bijbehorende beelden zijn verwijderd.
+
+**Open:**
+- de Les in Focus Mode (iPad) is nog de gecentreerde kaart met het blad onderaan: ongeveer 35% van het vlak, niet herschikt;
+- NINO-ONDERWEG: de masters liggen op `art/master` en gaan via de artworkpijplijn. Tot dan staat de huidige pose, vrij geplaatst.

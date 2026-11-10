@@ -5,11 +5,12 @@ qa-v3-stijlbeeld.py.
 
 On #bezig (desktop, iPad landscape 1180×820, iPad portrait 820×1180, phone 390×844) and #alles (desktop):
   * one display text (≥ 30 px, the wordmark aside): "Beloningen", without decorative lines (no pseudo-elements);
-  * the Reisboekje free on the landscape (no card: transparent, no shadow), the cover a button, one primary pill;
+  * the Reisboekje free on the landscape (no card: transparent, no shadow); the book is the button (focusable, no
+    circle or pill behind it), no other button (afwerking 10-11: no "Open Reisboekje");
   * one glass panel for the ride (backdrop filter, radius 28): three pizzas from the data (3 per ride: earned ones
     whole, the current one with its slices, the rest 0), the Vespa, the number of rides and a meter of three wide
     segments (on = pizzas mod 3);
-  * four glass tiles of equal width, each with an icon, a label and a number on 700 (32–44 px, afwerking 10-11; phone 22–26);
+  * four glass tiles of equal width, each with an icon, a label (Pizza, Stempels, Goud, Postkaarten) and a number on 700 (32–44 px, afwerking 10-11; phone 22–26);
   * ≥ 1024: 12 columns — the book on columns 1–5 from the view's left edge, the ride panel on 6–12 to its right edge
     (±1.5 px), book and panel on one top line (±1 px), the tiles over the full width;
   * no horizontal overflow.
@@ -47,7 +48,7 @@ PROBE = r'''() => {
   const bc = cs(book);
   return {big, title: h1?.textContent, deco: [cs(h1, '::before').content, cs(h1, '::after').content],
     state: {slices: state.slices | 0, pizzas: state.pizzas | 0, trips: state.trips | 0},
-    book: {bg: bc.backgroundColor, shadow: bc.boxShadow, cover: q('.v3BookCover')?.tagName, coverArt: vis(q('.v3CoverArt')), r: R(book)},
+    book: {bg: bc.backgroundColor, shadow: bc.boxShadow, cover: q('.v3BookCover')?.tagName, coverTab: q('.v3BookCover')?.tabIndex, coverBg: cs(q('.v3BookCover')).backgroundColor, coverBf: cs(q('.v3BookCover')).backdropFilter, coverArt: vis(q('.v3CoverArt')), r: R(book)},
     primaries: [...view.querySelectorAll('.v3Btn.primary')].filter(vis).map(b => b.textContent.trim()),
     ride: {glass: glass(ride), r: R(ride), art: vis(ride.querySelector('.v3RideArt')), n: ride.querySelector(':scope>b')?.textContent, nw: cs(ride.querySelector(':scope>b')).fontWeight},
     pizzas, meter, tiles, view: R(view), padL: px(vs.paddingLeft), gut, col, tilesR: R(q('.v3Tiles')),
@@ -70,7 +71,8 @@ def checks(p, tag, vp, fail):
     if any(c not in ('none', 'normal') for c in p['deco']): f(f'decoration by the title {p["deco"]}')
     b = p['book']
     if b['bg'] not in ('rgba(0, 0, 0, 0)', 'transparent') or b['shadow'] != 'none' or b['cover'] != 'BUTTON' or not b['coverArt']: f(f'book not free as a button {b}')
-    if p['primaries'] != ['Open Reisboekje']: f(f'primaries {p["primaries"]}')
+    if b['coverTab'] != 0 or b['coverBg'] not in ('rgba(0, 0, 0, 0)', 'transparent') or b['coverBf'] != 'none': f(f'book cover not the bare button {b}')
+    if p['primaries']: f(f'primaries {p["primaries"]} (the book is the button)')
     g = p['ride']['glass']
     if g['filter'] in ('none', '') or not near(g['radius'], 28): f(f'ride panel not glass {g}')
     s = p['state']; k = s['pizzas'] % 3
@@ -81,6 +83,7 @@ def checks(p, tag, vp, fail):
     t = p['tiles']; lo, hi = (22, 26) if vp == 'telefoon' else (32, 44)
     if len(t) != 4 or any(not x['icon'] or x['nw'] != '700' or not lo <= x['ns'] <= hi or x['glass']['filter'] in ('none', '') for x in t) or max(x['w'] for x in t) - min(x['w'] for x in t) > 1:
         f(f'tiles {[(x["label"], x["ns"], x["nw"], round(x["w"])) for x in t]}')
+    if [x['label'] for x in t] != ['Pizza', 'Stempels', 'Goud', 'Postkaarten']: f(f'tile labels {[x["label"] for x in t]} (afwerking 10-11: "Pizza")')
     if vp in ('desktop', 'ipad-liggend'):
         v, c, gu = p['view'], p['col'], p['gut']; span = lambda n: n * c + (n - 1) * gu
         if not near(b['r']['l'], v['l'] + p['padL'], 1.5) or not near(b['r']['w'], span(5), 1.5): f(f'book not on columns 1–5 ({b["r"]["l"] - v["l"]:.1f}, {b["r"]["w"]:.1f} vs {span(5):.1f})')

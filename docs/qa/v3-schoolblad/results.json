@@ -1,6 +1,6 @@
 {
  "html": "output/html/TOPO-V3-Reis-Preview.html",
- "sha256": "653fd50556fc7407feeb3d67087ad27023f27440a917744b5fc487aa985a3b34",
+ "sha256": "17455c379266dfcae00ef2928cf2ff70c2017bf50ca64b7d21e4215bf41f5cb1",
  "indexSha256": "3aced3c31259011b0af2947c78f71965cb4beb2e88c69d1663e61792b0304f5a",
  "runs": {
   "desktop": {
@@ -36,7 +36,7 @@
     ],
     "v2Buttons": 0,
     "mode": "route",
-    "q": "city-10",
+    "q": "city-11",
     "active": "ninoSchoolMapOnly v3On v3Shell lessonFocus v3Les",
     "answer": "",
     "sel": null
@@ -60,7 +60,7 @@
     ],
     "v2Buttons": 0,
     "mode": "write",
-    "q": "city-4",
+    "q": "city-6",
     "active": "answer",
     "answer": "Pisas",
     "sel": [
@@ -74,7 +74,7 @@
     "v3Buttons": [],
     "v2Buttons": 0,
     "mode": "write",
-    "q": "city-4",
+    "q": "city-6",
     "active": "ninoSchoolMapOnly v3On v3Shell v3Home",
     "answer": "Pisas",
     "sel": null
@@ -84,7 +84,7 @@
     "v3Buttons": [],
     "v2Buttons": 0,
     "mode": "exam",
-    "q": "city-2",
+    "q": "city-5",
     "active": "ninoSchoolMapOnly v3On v3Shell v3Les",
     "answer": "",
     "sel": null
@@ -94,7 +94,7 @@
     "v3Buttons": [],
     "v2Buttons": 0,
     "mode": "route",
-    "q": "city-15",
+    "q": "city-16",
     "active": "ninoSchoolMapOnly v3On v3Shell lessonFocus ninoGoldRound v3Les",
     "answer": "",
     "sel": null,
@@ -135,7 +135,7 @@
     ],
     "v2Buttons": 0,
     "mode": "route",
-    "q": "city-9",
+    "q": "city-8",
     "active": "ninoSchoolMapOnly v3On v3Shell lessonFocus v3Les",
     "answer": "",
     "sel": null
@@ -159,7 +159,7 @@
     ],
     "v2Buttons": 0,
     "mode": "write",
-    "q": "city-6",
+    "q": "city-4",
     "active": "answer",
     "answer": "Pisas",
     "sel": [
@@ -173,7 +173,7 @@
     "v3Buttons": [],
     "v2Buttons": 0,
     "mode": "write",
-    "q": "city-6",
+    "q": "city-4",
     "active": "ninoSchoolMapOnly v3On v3Shell v3Home",
     "answer": "Pisas",
     "sel": null
@@ -183,7 +183,7 @@
     "v3Buttons": [],
     "v2Buttons": 0,
     "mode": "exam",
-    "q": "city-5",
+    "q": "city-1",
     "active": "ninoSchoolMapOnly v3On v3Shell v3Les",
     "answer": "",
     "sel": null
@@ -193,7 +193,7 @@
     "v3Buttons": [],
     "v2Buttons": 0,
     "mode": "route",
-    "q": "city-15",
+    "q": "city-14",
     "active": "ninoSchoolMapOnly v3On v3Shell lessonFocus ninoGoldRound v3Les",
     "answer": "",
     "sel": null,
@@ -234,7 +234,7 @@
     ],
     "v2Buttons": 0,
     "mode": "route",
-    "q": "city-12",
+    "q": "city-7",
     "active": "ninoSchoolMapOnly v3On v3Shell lessonFocus v3Les",
     "answer": "",
     "sel": null
@@ -282,7 +282,7 @@
     "v3Buttons": [],
     "v2Buttons": 0,
     "mode": "exam",
-    "q": "city-5",
+    "q": "city-4",
     "active": "ninoSchoolMapOnly v3On v3Shell v3Les",
     "answer": "",
     "sel": null
@@ -292,7 +292,7 @@
     "v3Buttons": [],
     "v2Buttons": 0,
     "mode": "route",
-    "q": "city-14",
+    "q": "city-18",
     "active": "ninoSchoolMapOnly v3On v3Shell lessonFocus ninoGoldRound v3Les",
     "answer": "",
     "sel": null,
@@ -333,7 +333,7 @@
     ],
     "v2Buttons": 0,
     "mode": "route",
-    "q": "city-9",
+    "q": "city-11",
     "active": "ninoSchoolMapOnly v3On v3Shell lessonFocus v3Les",
     "answer": "",
     "sel": null
@@ -357,7 +357,7 @@
     ],
     "v2Buttons": 0,
     "mode": "write",
-    "q": "city-3",
+    "q": "city-4",
     "active": "answer",
     "answer": "Pisas",
     "sel": [
@@ -371,7 +371,7 @@
     "v3Buttons": [],
     "v2Buttons": 0,
     "mode": "write",
-    "q": "city-3",
+    "q": "city-4",
     "active": "ninoSchoolMapOnly v3On v3Shell v3Home",
     "answer": "Pisas",
     "sel": null
@@ -381,7 +381,7 @@
     "v3Buttons": [],
     "v2Buttons": 0,
     "mode": "exam",
-    "q": "city-5",
+    "q": "city-4",
     "active": "ninoSchoolMapOnly v3On v3Shell v3Les",
     "answer": "",
     "sel": null
@@ -391,7 +391,7 @@
     "v3Buttons": [],
     "v2Buttons": 0,
     "mode": "route",
-    "q": "city-15",
+    "q": "city-13",
     "active": "ninoSchoolMapOnly v3On v3Shell lessonFocus ninoGoldRound v3Les",
     "answer": "",
     "sel": null,
@@ -490,7 +490,7 @@
     "v3Buttons": [],
     "v2Buttons": 0,
     "mode": "route",
-    "q": "city-17",
+    "q": "city-14",
     "active": "ninoSchoolMapOnly v3On v3Shell lessonFocus ninoGoldRound v3Les",
     "answer": "",
     "sel": null,

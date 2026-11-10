@@ -91,12 +91,12 @@ REWARDS = r'''() => {
   return {view: document.querySelector('.v3Reis').dataset.view, shown: cs(v).display !== 'none', reisHidden: [...document.querySelectorAll('.v3Reis > :is(.v3List,.v3Main)')].every(n => cs(n).display === 'none'),
     focus: document.activeElement?.id, current: [...document.querySelectorAll('.v3Reis .v3Side [aria-current=page]')].map(n => n.dataset.nav),
     ride: {art: src(v.querySelector('.v3RideArt')), label: v.querySelector('.v3Ride').getAttribute('aria-label'), value: v.querySelector('.v3Ride > b').textContent, on: v.querySelectorAll('.v3RideSteps .on').length},
-    overlap: (() => { const rs = [...v.querySelectorAll('h1,.v3CoverArt,.v3Book .primary,.v3RideArt,.v3Ride > b,.v3Tile')].map(n => [n.className || n.tagName, n.getBoundingClientRect()]), hits = [];
+    overlap: (() => { const rs = [...v.querySelectorAll('h1,.v3CoverArt,.v3RideArt,.v3Ride > b,.v3Tile')].map(n => [n.className || n.tagName, n.getBoundingClientRect()]), hits = [];
       for (let i = 0; i < rs.length; i++) for (let j = i + 1; j < rs.length; j++) { const [a, A] = rs[i], [b, B] = rs[j];
         if (Math.min(A.right, B.right) - Math.max(A.left, B.left) > 1 && Math.min(A.bottom, B.bottom) - Math.max(A.top, B.top) > 1) hits.push(a + ' × ' + b); }
       const book = v.querySelector('.v3Book').getBoundingClientRect(), c = v.querySelector('.v3CoverArt')?.getBoundingClientRect();
       if (c && (c.top < book.top - 1 || c.bottom > book.bottom + 1)) hits.push('cover outside book'); return hits; })(),
-    tiles, primaries: v.querySelectorAll('.primary').length, cover: !!v.querySelector('.v3BookCover img'), allInView: [...v.querySelectorAll('.v3Tile,.v3Ride,.v3Book .primary')].every(box),
+    tiles, primaries: v.querySelectorAll('.primary').length, cover: !!v.querySelector('.v3BookCover img'), allInView: [...v.querySelectorAll('.v3Tile,.v3Ride,.v3BookCover')].every(box),
     clipped, state: {slices: state.slices | 0, pizzas: state.pizzas | 0, trips: state.trips | 0}, horizontalOverflow: document.documentElement.scrollWidth > innerWidth + 1};
 }'''
 # Walks the opened V2 Reisboekje spread by spread and counts what V2 itself shows as earned.
@@ -119,7 +119,7 @@ async def rewards(b, w, h, hash, shot=None):
     if shot: await pg.screenshot(path=str(OUT / shot))
     r['ride']['art'] = dsha(r['ride']['art'])
     for t in r['tiles']: t['icon'] = dsha(t['icon'])
-    await pg.click('.v3Rewards .v3Book .primary', timeout=5000); await pg.wait_for_timeout(700)
+    await pg.click('.v3Rewards .v3BookCover', timeout=5000); await pg.wait_for_timeout(700)  # the book is the button (afwerking 10-11)
     r['book'] = await pg.evaluate(BOOK)
     r['errors'] = errors; await pg.close(); return r
 
@@ -224,7 +224,7 @@ async def main():
         'counterIcons': every(runs, lambda r: r['art']['slice'] == '#topo-v3slice' and r['art']['vespa'] == '#topo-v3scooter'),
         'rewardsArt': every(res['rewards'], lambda r: r['ride']['art'] == RENDER['VE-01']['export']['sha256'] and [t['icon'] for t in r['tiles']] == [ICON_SHA[k] for k in ('pizza', 'stamp', 'gold', 'postcard')] and r['cover']),
         'rewardsCountsMatchV2Book': every(res['rewards'], lambda r: r['book']['open'] and [t['value'].split()[0] for t in r['tiles']] == [str(r['state']['slices']), str(r['book']['stamps']), str(r['book']['gold']), str(r['book']['postcards'])] and r['ride']['value'] == str(r['state']['trips']) and r['ride']['on'] == r['state']['pizzas'] % 3),
-        'rewardsView': every(res['rewards'], lambda r: r['view'] == 'rewards' and r['shown'] and r['reisHidden'] and r['focus'] == 'v3RewardsTitle' and r['current'] == ['rewards'] and r['primaries'] == 1),
+        'rewardsView': every(res['rewards'], lambda r: r['view'] == 'rewards' and r['shown'] and r['reisHidden'] and r['focus'] == 'v3RewardsTitle' and r['current'] == ['rewards'] and r['primaries'] == 0 and r['cover']),
         'rewardsLayout': {k: r['clipped'] + r['overlap'] + ([] if r['allInView'] else ['not in view']) for k, r in res['rewards'].items() if r['clipped'] or r['overlap'] or not r['allInView'] or r['horizontalOverflow']},
         'lessonToRewards': res['lessonToRewards']['inLesson'] and res['lessonToRewards']['view'] == 'rewards' and not res['lessonToRewards']['les'] and res['lessonToRewards']['focus'] == 'v3RewardsTitle',
         'reliefDefaultZ8': every(runs, lambda r: r['relief']['mode'] == 'on' and r['relief']['terrain'] == 'block' and r['relief']['pressed'] == 'Reliëf'),

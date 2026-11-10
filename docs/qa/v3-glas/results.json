@@ -1,6 +1,6 @@
 {
  "html": "/Users/dennisariens/projects/topo-v3/output/html/TOPO-V3-Reis-Preview.html",
- "sha256": "653fd50556fc7407feeb3d67087ad27023f27440a917744b5fc487aa985a3b34",
+ "sha256": "17455c379266dfcae00ef2928cf2ff70c2017bf50ca64b7d21e4215bf41f5cb1",
  "indexSha256": "3aced3c31259011b0af2947c78f71965cb4beb2e88c69d1663e61792b0304f5a",
  "label": "na",
  "runs": {
@@ -12,7 +12,7 @@
     844,
     "28px"
    ],
-   "free": 0.654,
+   "free": 0.641,
    "wide": [],
    "edge": {
     "selector": ".v3Map",
@@ -26,21 +26,20 @@
     "letterbox": false,
     "seeThrough": [],
     "box": [
-     760,
-     178,
+     300,
+     182,
      620,
-     498
+     658
     ]
    },
    "theme": "#5b45e0",
    "les": false,
    "view": "reis",
    "hOverflow": false,
-   "freePct": 65.4,
+   "freePct": 64.1,
    "lowContrast": [],
    "backdropFilters": [
-    "blur(28px) saturate(1.4)",
-    "none"
+    "blur(28px) saturate(1.4)"
    ],
    "pageErrors": [],
    "surface": "landschap"
@@ -53,7 +52,7 @@
     844,
     "28px"
    ],
-   "free": 0.298,
+   "free": 0.279,
    "wide": [],
    "edge": {
     "selector": ".v3Map",
@@ -67,17 +66,17 @@
     "letterbox": false,
     "seeThrough": [],
     "box": [
-     760,
-     178,
+     300,
+     182,
      620,
-     498
+     658
     ]
    },
    "theme": "#5b45e0",
    "les": false,
    "view": "reis",
    "hOverflow": false,
-   "freePct": 29.8,
+   "freePct": 27.9,
    "lowContrast": [],
    "backdropFilters": [
     "none"
@@ -93,7 +92,7 @@
     844,
     "28px"
    ],
-   "free": 0.653,
+   "free": 0.64,
    "wide": [],
    "edge": {
     "selector": ".v3Map",
@@ -107,21 +106,20 @@
     "letterbox": false,
     "seeThrough": [],
     "box": [
-     760,
-     178,
+     300,
+     182,
      620,
-     498
+     658
     ]
    },
    "theme": "#5b45e0",
    "les": false,
    "view": "reis",
    "hOverflow": false,
-   "freePct": 65.3,
+   "freePct": 64.0,
    "lowContrast": [],
    "backdropFilters": [
-    "blur(28px) saturate(1.4)",
-    "none"
+    "blur(28px) saturate(1.4)"
    ],
    "pageErrors": [],
    "surface": "landschap"
@@ -134,7 +132,7 @@
     844,
     "28px"
    ],
-   "free": 0.669,
+   "free": 0.523,
    "wide": [],
    "edge": {
     "selector": "#map",
@@ -148,17 +146,17 @@
     "letterbox": false,
     "seeThrough": [],
     "box": [
-     420,
-     208,
-     455,
-     632
+     300,
+     112,
+     525,
+     728
     ]
    },
    "theme": "#5b45e0",
    "les": true,
    "view": "reis",
    "hOverflow": false,
-   "freePct": 66.9,
+   "freePct": 52.3,
    "lowContrast": [],
    "backdropFilters": [
     "blur(28px) saturate(1.4)",
@@ -175,7 +173,7 @@
     844,
     "28px"
    ],
-   "free": 0.447,
+   "free": 0.306,
    "wide": [],
    "edge": {
     "selector": "#map",
@@ -189,17 +187,17 @@
     "letterbox": false,
     "seeThrough": [],
     "box": [
-     420,
-     208,
-     455,
-     632
+     300,
+     112,
+     525,
+     728
     ]
    },
    "theme": "#5b45e0",
    "les": true,
    "view": "reis",
    "hOverflow": false,
-   "freePct": 44.7,
+   "freePct": 30.6,
    "lowContrast": [],
    "backdropFilters": [
     "none"
@@ -215,7 +213,7 @@
     844,
     "28px"
    ],
-   "free": 0.563,
+   "free": 0.539,
    "wide": [],
    "edge": {
     "selector": ".v3Map",
@@ -229,7 +227,7 @@
     "letterbox": false,
     "seeThrough": [],
     "box": [
-     852,
+     300,
      112,
      528,
      728
@@ -239,7 +237,7 @@
    "les": false,
    "view": "oefenen",
    "hOverflow": false,
-   "freePct": 56.3,
+   "freePct": 53.9,
    "lowContrast": [],
    "backdropFilters": [
     "blur(28px) saturate(1.4)",
@@ -298,10 +296,10 @@
     "letterbox": false,
     "seeThrough": [],
     "box": [
-     549,
-     200,
-     346,
-     480
+     320,
+     192,
+     458,
+     636
     ]
    },
    "theme": "#5b45e0",
@@ -325,7 +323,7 @@
     780,
     "28px"
    ],
-   "free": 0.617,
+   "free": 0.603,
    "wide": [],
    "edge": {
     "selector": ".v3Map",
@@ -339,21 +337,20 @@
     "letterbox": false,
     "seeThrough": [],
     "box": [
-     622,
-     154,
+     244,
+     158,
      514,
-     438
+     618
     ]
    },
    "theme": "#5b45e0",
    "les": false,
    "view": "reis",
    "hOverflow": false,
-   "freePct": 61.7,
+   "freePct": 60.3,
    "lowContrast": [],
    "backdropFilters": [
-    "blur(28px) saturate(1.4)",
-    "none"
+    "blur(28px) saturate(1.4)"
    ],
    "pageErrors": [],
    "surface": "landschap"
@@ -366,7 +363,7 @@
     780,
     "28px"
    ],
-   "free": 0.208,
+   "free": 0.192,
    "wide": [],
    "edge": {
     "selector": ".v3Map",
@@ -380,17 +377,17 @@
     "letterbox": false,
     "seeThrough": [],
     "box": [
-     622,
-     154,
+     244,
+     158,
      514,
-     438
+     618
     ]
    },
    "theme": "#5b45e0",
    "les": false,
    "view": "reis",
    "hOverflow": false,
-   "freePct": 20.8,
+   "freePct": 19.2,
    "lowContrast": [],
    "backdropFilters": [
     "none"
@@ -406,7 +403,7 @@
     780,
     "28px"
    ],
-   "free": 0.617,
+   "free": 0.601,
    "wide": [],
    "edge": {
     "selector": ".v3Map",
@@ -420,21 +417,20 @@
     "letterbox": false,
     "seeThrough": [],
     "box": [
-     622,
-     154,
+     244,
+     158,
      514,
-     438
+     618
     ]
    },
    "theme": "#5b45e0",
    "les": false,
    "view": "reis",
    "hOverflow": false,
-   "freePct": 61.7,
+   "freePct": 60.1,
    "lowContrast": [],
    "backdropFilters": [
-    "blur(28px) saturate(1.4)",
-    "none"
+    "blur(28px) saturate(1.4)"
    ],
    "pageErrors": [],
    "surface": "landschap"
@@ -530,7 +526,7 @@
     780,
     "28px"
    ],
-   "free": 0.526,
+   "free": 0.397,
    "wide": [],
    "edge": {
     "selector": ".v3Map",
@@ -544,9 +540,9 @@
     "letterbox": false,
     "seeThrough": [],
     "box": [
-     849,
+     244,
      96,
-     287,
+     514,
      680
     ]
    },
@@ -554,7 +550,7 @@
    "les": false,
    "view": "oefenen",
    "hOverflow": false,
-   "freePct": 52.6,
+   "freePct": 39.7,
    "lowContrast": [],
    "backdropFilters": [
     "blur(28px) saturate(1.4)",
@@ -613,10 +609,10 @@
     "letterbox": false,
     "seeThrough": [],
     "box": [
-     444,
-     176,
-     288,
-     400
+     264,
+     168,
+     430,
+     596
     ]
    },
    "theme": "#5b45e0",
@@ -637,20 +633,20 @@
  "summary": {
   "label": "na",
   "free": {
-   "reis-desktop": 65.4,
-   "reis-desktop-verminderd": 29.8,
-   "reis-schoolkaart-desktop": 65.3,
-   "les-desktop": 66.9,
-   "les-desktop-verminderd": 44.7,
-   "oefenen-desktop": 56.3,
+   "reis-desktop": 64.1,
+   "reis-desktop-verminderd": 27.9,
+   "reis-schoolkaart-desktop": 64.0,
+   "les-desktop": 52.3,
+   "les-desktop-verminderd": 30.6,
+   "oefenen-desktop": 53.9,
    "toets-desktop": 24.2,
    "voortgang-desktop": 24.2,
-   "reis-ipad-liggend": 61.7,
-   "reis-ipad-liggend-verminderd": 20.8,
-   "reis-schoolkaart-ipad-liggend": 61.7,
+   "reis-ipad-liggend": 60.3,
+   "reis-ipad-liggend-verminderd": 19.2,
+   "reis-schoolkaart-ipad-liggend": 60.1,
    "les-ipad-liggend": 73.1,
    "les-ipad-liggend-verminderd": 56.2,
-   "oefenen-ipad-liggend": 52.6,
+   "oefenen-ipad-liggend": 39.7,
    "toets-ipad-liggend": 20.0,
    "voortgang-ipad-liggend": 19.3
   },

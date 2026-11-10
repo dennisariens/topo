@@ -21,3 +21,22 @@ Resultaat: `results-afwerking.json` (41 runs, geslaagd).
 Bijgesteld: `qa-v3-faseb-beloningen.py` en `qa-v3-faseb-voortgang.py` tellen kerncijfers (32–44/700) niet langer als display-tekst; alleen de titel is display.
 
 Open: de tablabels op de telefoon blijven 11 px. Zes tabs passen niet op 13 px; de check geldt vanaf 768 px.
+
+## Stap 2 — kaart links, reliëf en per scherm
+
+Dezelfde runs als stap 1. Op BG-01 komen daar deze checks bij:
+
+| Check | Schermen | Drempel |
+| --- | --- | --- |
+| kaart links van het paneel | Reis, Oefenen, Les, Toets resultaat, Voortgang (desktop, iPad liggend) | de linkerrand van de kaart ligt links van die van het paneel |
+| kaart ≥ 45% van het inhoudsvlak | Reis, Oefenen, Les, Toets resultaat (desktop, iPad liggend) | de kaartbox binnen het inhoudsvlak (binnenmarges, naast de zijbalk) ≥ 45%. De Les in Focus Mode (iPad) wordt niet gemeten |
+| Nino zonder overlap | Toets resultaat | 0 px² overlap tussen Nino en een paneel |
+| toetsscore | Toets resultaat | accentkleur, gewicht 600, geen kader of schaduw, geen focusring bij focus |
+| het boek is de knop | Beloningen | geen knop "Open Reisboekje"; het omslag is focusbaar, zonder achtergrond of `backdrop-filter`; tegellabel "Pizza" |
+| slotrijen | Voortgang | geen zichtbare balk |
+
+Gemeten (`mapShare` in `results-afwerking.json`): Reis 52%, Oefenen 49% (desktop) en 58% (iPad liggend), Les 49% (desktop), Toets resultaat 56% (desktop) en 53% (iPad liggend).
+
+De vergelijkingen naast de renders staan opnieuw in [`docs/qa/v3-stijlbeeld/`](../v3-stijlbeeld/README.md). Ze worden gemaakt door `qa-v3-faseb*.py`.
+
+Open: de Les in Focus Mode (iPad) houdt zijn eigen indeling (ongeveer 35%). NINO-ONDERWEG volgt via de artworkpijplijn.

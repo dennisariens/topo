@@ -26,8 +26,6 @@
  .v3OefPanel .v3Chips{grid-template-columns:repeat(3,minmax(max-content,1fr))}
  .v3OefStage{align-self:stretch;height:100%}
  .v3OefStage .v3Map{position:absolute;inset:0;margin:auto;max-width:100%;max-height:100%}
- .v3Reis[data-kaart=kaart] .v3OefStage{border-radius:var(--v3-radius-glass);background:var(--v3-glass);-webkit-backdrop-filter:var(--v3-glass-filter);backdrop-filter:var(--v3-glass-filter);box-shadow:var(--v3-glass-shadow)}
- .v3Reis[data-kaart=kaart] .v3OefStage .v3Map{inset:10px;max-width:calc(100% - 20px);max-height:calc(100% - 20px)}
 }
 @media (min-width:768px) and (max-width:1279px){
  .v3OefPanel{padding:22px 20px}

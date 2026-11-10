@@ -8,7 +8,14 @@ at desktop and iPad landscape:
   * text ≥ 13 px: every visible V3 text (map labels in the SVG aside) is at least 13 px;
   * AA against the artwork: on each background, every visible V3 text against the rendered pixels behind it (text
     hidden for a second screenshot; 5th percentile), ≥ 4.5, or ≥ 3 for large text — the lightest and the darkest spot;
-  * no horizontal overflow, no page errors.
+  * no horizontal overflow, no page errors;
+  * map left, controls right (≥ 1024 and iPad landscape): the map's box starts left of the panel's (Reis, Oefenen, Les,
+    Toets resultaat, Voortgang); on the Landschap screens with a map the map covers ≥ 45 % of the content area (the area
+    inside the inner margins beside the sidebar; Les in Focus Mode keeps its own layout and is not measured);
+  * Toets resultaat: Nino never overlaps a panel (0 px²); the score in the accent (violet), weight 600, without a card,
+    no focus ring when it receives focus;
+  * Beloningen: no "Open Reisboekje" button, the cover is the (focusable) button without a circle behind it; the tile
+    label is "Pizza"; Voortgang: locked rows show no bar.
 Runs with prefers-reduced-transparency: no-preference. Writes results-afwerking.json to docs/qa/v3-afwerking/.
 
 Usage: node scripts/build-v3-preview.mjs && python3 scripts/qa-v3-afwerking.py [preview.html]
@@ -25,6 +32,7 @@ VIEWPORTS = {'desktop': (1440, 900), 'ipad-liggend': (1180, 820), 'ipad-staand':
 SCREENS = ['reis', 'oefenen', 'les', 'toets', 'toetsResult', 'rewards', 'voortgang']
 LANDSCHAP = {'reis', 'oefenen', 'les', 'toetsResult', 'rewards'}
 BGS = ['bg01', 'bg02', 'bg03']
+MAPSHARE = {'reis', 'oefenen', 'les', 'toetsResult'}  # Landschap screens with a map; Les in Focus Mode (iPad) keeps its own layout
 
 TEXTS = r'''() => {
   const W = innerWidth, H = innerHeight, cs = n => getComputedStyle(n);
@@ -38,6 +46,55 @@ TEXTS = r'''() => {
         disabled: !!n.closest('button[disabled]')}; })
     .filter(x => x.box[2] > 2 && x.box[3] > 2 && x.box[0] >= 0 && x.box[1] >= 0 && x.box[0] + x.box[2] <= W && x.box[1] + x.box[3] <= H && !x.clipped);
 }'''
+
+
+LAYOUT = r'''(screen) => {
+  const R = n => { if (!n) return null; const r = n.getBoundingClientRect(); return r.width && r.height ? {l: r.left, t: r.top, r: r.right, b: r.bottom, w: r.width, h: r.height} : null; };
+  const q = s => [...document.querySelectorAll(s)].find(n => n.checkVisibility());
+  const host = document.body.classList.contains('v3Les') ? document.body : document.querySelector('.v3Reis'), v = k => { const d = document.createElement('div'); d.style.cssText = 'position:absolute;visibility:hidden;width:var(' + k + ')'; host.append(d); const w = d.getBoundingClientRect().width; d.remove(); return w; };
+  const bar = R(document.querySelector('.v3PreviewBar'))?.h || 0, m = v('--v3-frame-m'), side = v('--v3-side-w'), inner = v('--v3-inner');
+  const content = {l: m + side + inner, t: bar + m + inner, r: innerWidth - m - inner, b: innerHeight - m - inner};
+  content.w = content.r - content.l; content.h = content.b - content.t;
+  const sel = {reis: ['.v3MapStage svg.v3Map', '.v3Rows'], oefenen: ['.v3OefStage svg.v3Map', '.v3OefPanel'], les: ['.mapArea svg', 'aside.panel'],
+    toetsResult: ['.v3ToetsMap', '.v3ToetsSide'], voortgang: ['.v3VgKaart', '.v3VgSide']}[screen];
+  if (!sel) return null;
+  const map = R(q(sel[0])), panel = R(q(sel[1]));
+  const cut = map && {w: Math.max(0, Math.min(map.r, content.r) - Math.max(map.l, content.l)), h: Math.max(0, Math.min(map.b, content.b) - Math.max(map.t, content.t))};
+  const nino = screen === 'toetsResult' ? R(q('.v3ToetsNino img')) : null;
+  const over = (a, b) => a && b ? Math.max(0, Math.min(a.r, b.r) - Math.max(a.l, b.l)) * Math.max(0, Math.min(a.b, b.b) - Math.max(a.t, b.t)) : 0;
+  const panels = [...document.querySelectorAll('.v3ToetsSide, .v3ToetsScoreCard')].map(R).filter(Boolean);
+  return {content, map, panel, share: cut ? cut.w * cut.h / (content.w * content.h) : 0, nino, ninoOverlap: nino ? panels.reduce((s, p) => s + over(nino, p), 0) : null};
+}'''
+
+# Per screen (afwerking § Toets, § Beloningen, § Voortgang): the score, the book and the locked rows.
+SCREEN = r'''(screen) => {
+  const q = s => [...document.querySelectorAll(s)].find(n => n.checkVisibility()), cs = n => getComputedStyle(n);
+  if (screen === 'toetsResult') { const h = q('.v3ToetsScore'), card = q('.v3ToetsScoreCard'); h?.focus();
+    const accent = cs(document.querySelector('.v3Reis')).getPropertyValue('--v3-accent').trim(), c = document.createElement('i'); c.style.color = accent; document.body.append(c); const acc = cs(c).color; c.remove();
+    return {color: cs(h).color, accent: acc, weight: cs(h).fontWeight, outline: cs(h).outlineStyle, cardBg: cs(card).backgroundColor, cardShadow: cs(card).boxShadow}; }
+  if (screen === 'rewards') { const b = q('.v3BookCover');
+    return {openBtn: [...document.querySelectorAll('.v3Rewards button')].some(n => n.checkVisibility() && /Open Reisboekje/.test(n.textContent)), coverTab: b?.tabIndex,
+      coverBg: b && cs(b).backgroundColor, coverFilter: b && cs(b).backdropFilter, labels: [...document.querySelectorAll('.v3Rewards .v3Tile span')].map(n => n.textContent.trim())}; }
+  if (screen === 'voortgang') return {lockedBars: [...document.querySelectorAll('.v3VgChapters [data-status=locked] .v3VgSteps')].filter(n => n.checkVisibility({visibilityProperty: true})).length};
+  return null;
+}'''
+
+
+def screen_checks(screen, vp, lay, sc, f):
+    wide = vp != 'ipad-staand'
+    if lay and lay.get('map') and lay.get('panel') and wide and lay['map']['l'] > lay['panel']['l']: f('map not left of the panel')
+    if screen in MAPSHARE and wide and lay and lay['share'] < .45: f(f'map {lay["share"]:.0%} of the content area (< 45 %)')
+    if screen == 'toetsResult':
+        if wide and (lay['nino'] is None or lay['ninoOverlap'] > 0): f(f'Nino overlaps a panel ({lay["ninoOverlap"]} px²)')
+        if sc['color'] != sc['accent'] or sc['weight'] != '600': f(f'score {sc["color"]}/{sc["weight"]} (violet 600)')
+        if sc['outline'] not in ('none', ''): f(f'focus ring on the score ({sc["outline"]})')
+        if sc['cardBg'] not in ('rgba(0, 0, 0, 0)', 'transparent') or sc['cardShadow'] != 'none': f('score in a card')
+    if screen == 'rewards':
+        if sc['openBtn']: f('"Open Reisboekje" button shown')
+        if sc['coverTab'] != 0: f(f'book cover not focusable ({sc["coverTab"]})')
+        if sc['coverBg'] not in ('rgba(0, 0, 0, 0)', 'transparent') or sc['coverFilter'] != 'none': f(f'circle behind the book ({sc["coverBg"]}, {sc["coverFilter"]})')
+        if 'Pizza' not in sc['labels'] or any(l.startswith('Pizza ') for l in sc['labels']): f(f'tile labels {sc["labels"]}')
+    if screen == 'voortgang' and sc['lockedBars']: f(f'{sc["lockedBars"]} locked rows with a bar')
 
 
 def lum(rgb):
@@ -102,6 +159,9 @@ async def main():
                     await (await ctx.new_cdp_session(pg)).send('Emulation.setEmulatedMedia', {'features': [{'name': 'prefers-reduced-transparency', 'value': 'no-preference'}]})
                     await pg.goto(HTML.as_uri() + '#bezig' + ('' if bg == 'bg01' else '/' + bg)); await pg.wait_for_timeout(2000)
                     await goto(pg, screen)
+                    lay = await pg.evaluate(LAYOUT, screen); sc = await pg.evaluate(SCREEN, screen)
+                    if screen == 'les' and await pg.evaluate("document.body.dataset.focusShell === 'true'"): lay = None
+                    await pg.evaluate('document.activeElement?.blur?.()')
                     texts = await pg.evaluate(TEXTS)
                     small = sorted({f'{t["t"]} ({t["size"]:g})' for t in texts if t['size'] < 13})
                     await pg.add_style_tag(content='*{color:transparent!important;-webkit-text-fill-color:transparent!important;text-shadow:none!important;caret-color:transparent!important}')
@@ -113,7 +173,8 @@ async def main():
                     if low: f(f'contrast < AA: {low[:4]}')
                     if hov: f('horizontal overflow')
                     if errs: f(f'page errors {errs[:2]}')
-                    res['runs'][tag] = {'texts': len(texts), 'small': small, 'lowContrast': low}
+                    if bg == 'bg01': screen_checks(screen, vp, lay, sc, f)
+                    res['runs'][tag] = {'texts': len(texts), 'small': small, 'lowContrast': low} | ({'mapShare': round(lay['share'], 3), 'ninoOverlap': lay['ninoOverlap']} if lay else {})
                     await ctx.close()
         await b.close()
     res['errors'] = fails; res['summary'] = {'runs': len(res['runs']), 'pass': not fails}

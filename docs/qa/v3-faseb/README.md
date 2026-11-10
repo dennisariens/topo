@@ -2,18 +2,19 @@
 
 Alle fase B-scripts draaien met `prefers-reduced-transparency: no-preference`, het glas zoals ontworpen. De dichte variant zit in `qa-v3-glas.py` (DECISIONS 10-11, "QA fase B: vergelijkingen met het glas zoals ontworpen").
 
+> **Afwerking na fase B (10-11):** variant (a) Eiland is gekozen; variant (b) Kaart en `#…/kaart` zijn weg. De kaart staat links en de bediening rechts (Reis, Oefenen, Les, Toets resultaat, Voortgang). De checks in dit hoofdstuk zijn daarop bijgesteld; zie [v3-afwerking](../v3-afwerking/README.md).
+
 ## Stap 2: Reis volgens `R-reis-ijk`, met twee kaartvarianten
 
 Opdracht: fase B (`docs/v3/renders/README.md` § Reis, § Raster en uitlijning, § Verfijning) en de review van fase A: lever twee kaartvarianten naast `R-reis-ijk` en bouw Reis af in variant (a) tot de eigenaar kiest. Script: `scripts/qa-v3-faseb.py`. Resultaat: [`results.json`](results.json).
 
-Gemeten op `#bezig` en `#afgerond`, voor beide varianten, op desktop 1440×900, iPad liggend 1180×820 en iPad staand 820×1180.
+Gemeten op `#bezig` en `#afgerond`, variant (a) Eiland, op desktop 1440×900, iPad liggend 1180×820 en iPad staand 820×1180.
 
 **Naast het doelbeeld:**
 
 | Variant | Desktop | iPad liggend |
 | --- | --- | --- |
 | (a) Eiland, standaard | [vergelijking](../v3-stijlbeeld/reis-ijk-eiland-desktop.jpg) | [vergelijking](../v3-stijlbeeld/reis-ijk-eiland-ipad-liggend.jpg) |
-| (b) Kaart, `#…/kaart` | [vergelijking](../v3-stijlbeeld/reis-ijk-kaart-desktop.jpg) | [vergelijking](../v3-stijlbeeld/reis-ijk-kaart-ipad-liggend.jpg) |
 
 Losse screenshots: `reis-<variant>-<demo>-<formaat>.png`.
 
@@ -47,7 +48,6 @@ Gemeten op `#bezig`, voor beide kaartvarianten, op desktop, iPad liggend, iPad s
 | Variant | Desktop | iPad liggend |
 | --- | --- | --- |
 | (a) Eiland, standaard | [vergelijking](../v3-stijlbeeld/oefenen-ijk-eiland-desktop.jpg) | [vergelijking](../v3-stijlbeeld/oefenen-ijk-eiland-ipad-liggend.jpg) |
-| (b) Kaart, `#…/kaart` | [vergelijking](../v3-stijlbeeld/oefenen-ijk-kaart-desktop.jpg) | [vergelijking](../v3-stijlbeeld/oefenen-ijk-kaart-ipad-liggend.jpg) |
 
 Losse screenshots: `oefenen-<variant>-<formaat>.png`.
 
@@ -92,7 +92,7 @@ Script: `scripts/qa-v3-faseb-toets.py`. Resultaat: [`results-toets.json`](result
 
 **Instellen:** gemeten op `#bezig`, op desktop, iPad liggend, iPad staand en telefoon. Vergelijking: [desktop](../v3-stijlbeeld/toets-instellen-desktop.jpg) · [iPad liggend](../v3-stijlbeeld/toets-instellen-ipad-liggend.jpg).
 
-**Resultaat:** gemeten na een toets van 10 vragen met 3 overgeslagen. Variant (a) op desktop en iPad liggend, variant (b) op desktop. Vergelijking: [(a) desktop](../v3-stijlbeeld/toets-resultaat-eiland-desktop.jpg) · [(a) iPad liggend](../v3-stijlbeeld/toets-resultaat-eiland-ipad-liggend.jpg) · [(b) desktop](../v3-stijlbeeld/toets-resultaat-kaart-desktop.jpg).
+**Resultaat:** gemeten na een toets van 10 vragen met 3 overgeslagen. Op desktop en iPad liggend. Vergelijking: [desktop](../v3-stijlbeeld/toets-resultaat-eiland-desktop.jpg) · [iPad liggend](../v3-stijlbeeld/toets-resultaat-eiland-ipad-liggend.jpg).
 
 | Check | Drempel |
 | --- | --- |

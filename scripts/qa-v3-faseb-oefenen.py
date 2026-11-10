@@ -1,19 +1,18 @@
 #!/usr/bin/env python3
 """TOPO V3.0 fase B, stap 3 — Oefenen volgens R-oefenen-ijk (docs/v3/renders/README.md § IJkpunt stijl, § Raster en
-uitlijning, § Verfijning; map variants as Reis, DECISIONS 10-11 fase B stap 2).
+uitlijning, § Verfijning; afwerking 10-11: variant (a) Eiland, the map left and the panel right).
 
-On #bezig, desktop 1440×900, iPad landscape 1180×820 and iPad portrait 820×1180, for both variants (a) eiland and
-(b) kaart, with the group Steden 7–12 chosen (and Eilanden, and Slim rondje), plus the phone 390×844:
-  * raster (≥ 1024): the panel starts on the inner margin and spans a whole number of the 12 columns (5–8) — the one
-    after its longest chip; the map takes the rest up to the inner margin, one gutter between (±1.5 px);
+On #bezig, desktop 1440×900, iPad landscape 1180×820 and iPad portrait 820×1180, map variant (a) Eiland, with the group Steden 7–12 chosen (and Eilanden, and Slim rondje), plus the phone 390×844:
+  * raster (≥ 1024): the map starts on the inner margin at the left; the panel ends on the inner margin at the right and
+    spans a whole number of the 12 columns (5–8) — the one after its longest chip; one gutter between (±1.5 px);
   * shared line: the top of the panel and the top of the map row on one line (±1 px);
   * one title: exactly one display-size text (≥ 30 px, the wordmark aside): "Oefenen"; no visible field headings;
   * four form tiles, each a line icon and a label (no illustration); a thin line (1 px) between form and group;
-  * the groups as chips in three columns (two on the phone), each on one line, with the full names, all inside the
+  * the groups as chips in three columns (two on the phone and on iPad landscape), each on one line, with the full names, all inside the
     panel; one primary pill (Start) with the open play icon, full width;
   * pins: only the chosen group's places (Steden 7–12: 6 pins), all inside the map row; Eilanden as areas (no pins);
     Slim rondje: no group, no pins;
-  * variant (a): the relief clipped to Italy (this clone's own clip), no sea colour; (b): the map in a glass card;
+  * the relief clipped to Italy (this clone's own clip), no sea colour;
   * the panel keeps its width when the form changes (Slim rondje hides the groups);
   * portrait 112 / 88 / 56; no violet text outside the active nav, the selection and the primary pill; no overflow.
 Writes screenshots, the comparisons beside R-oefenen-ijk (docs/qa/v3-stijlbeeld/oefenen-ijk-<variant>-<viewport>.jpg)
@@ -34,7 +33,7 @@ STIJL = ROOT / 'docs/qa/v3-stijlbeeld'
 RENDER = ROOT / 'docs/v3/renders/R-oefenen-ijk.webp'
 MAC_CHROME = '/Applications/Google Chrome.app/Contents/MacOS/Google Chrome'
 VIEWPORTS = {'desktop': (1440, 900), 'ipad-liggend': (1180, 820), 'ipad-staand': (820, 1180), 'telefoon': (390, 844)}
-VARIANTS = {'eiland': '', 'kaart': '/kaart'}
+VARIANTS = {'eiland': ''}
 
 PROBE = r'''() => {
   const q = s => document.querySelector(s), R = n => { if (!n) return null; const r = n.getBoundingClientRect(); return {l: r.left, t: r.top, r: r.right, b: r.bottom, w: r.width, h: r.height}; };
@@ -76,16 +75,16 @@ def checks(p, vp, variant, case, fail):
     if wide:
         n = round((p['panel']['w'] + p['gut']) / (p['col'] + p['gut']))
         if not (5 <= n <= 8) or not near(p['panel']['w'], n * p['col'] + (n - 1) * p['gut'], 1.5): f(f'panel {p["panel"]["w"]:.1f} not on a column line ({n} cols = {n * p["col"] + (n - 1) * p["gut"]:.1f})')
-        if not near(p['panel']['l'] - p['side']['r'], p['inner']): f(f'inner margin left {p["panel"]["l"] - p["side"]["r"]:.1f}')
-        if not near(p['stage']['l'] - p['panel']['r'], p['gut']): f(f'gutter panel|map {p["stage"]["l"] - p["panel"]["r"]:.1f}')
-        if not near(p['frame']['r'] - p['stage']['r'], p['inner']): f(f'inner margin right {p["frame"]["r"] - p["stage"]["r"]:.1f}')
+        if not near(p['stage']['l'] - p['side']['r'], p['inner']): f(f'inner margin left {p["stage"]["l"] - p["side"]["r"]:.1f}')
+        if not near(p['panel']['l'] - p['stage']['r'], p['gut']): f(f'gutter map|panel {p["panel"]["l"] - p["stage"]["r"]:.1f}')
+        if not near(p['frame']['r'] - p['panel']['r'], p['inner']): f(f'inner margin right {p["frame"]["r"] - p["panel"]["r"]:.1f}')
         if not near(p['panel']['t'], p['stage']['t']): f(f'panel top {p["panel"]["t"]:.1f} ≠ map top {p["stage"]["t"]:.1f}')
     if p['big'] != ['Oefenen']: f(f'display texts {p["big"]}')
     if p['headings']: f(f'visible field headings {p["headings"]}')
     if len(p['forms']) != 4 or not all(x['icon'] and not x['img'] for x in p['forms']): f(f'form tiles {p["forms"]}')
     if case != 'smart':
         if p['line'] != '1px': f(f'line between form and group {p["line"]}')
-        want = 2 if vp == 'telefoon' else 3
+        want = 2 if vp in ('telefoon', 'ipad-liggend') else 3
         if p['chipCols'] != want: f(f'{p["chipCols"]} chip columns ≠ {want}')
         bad = [c for c in p['chipInfo'] if c['h'] > 48 or c['clip'] or c['out']]
         if bad: f(f'chips not on one line inside the panel {bad[:3]}')
@@ -99,10 +98,8 @@ def checks(p, vp, variant, case, fail):
     if vp != 'telefoon':
         for b in p['pins']:
             if b['t'] < p['stage']['t'] - 1 or b['b'] > p['stage']['b'] + 1 or b['l'] < p['stage']['l'] - 1 or b['r'] > p['stage']['r'] + 1: f(f'pin outside the map row {b}')
-    if variant == 'eiland':
-        if 'v3o-italyClip' not in p['clip']: f(f'relief not clipped to Italy ({p["clip"]})')
-        if p['sea'] or p['svgBg'] not in ('rgba(0, 0, 0, 0)', 'transparent'): f('sea colour on the island map')
-    elif vp != 'telefoon' and (p['stageRadius'] != '28px' or p['stageBg'] in ('rgba(0, 0, 0, 0)', 'transparent')): f(f'map not in a glass card ({p["stageRadius"]}, {p["stageBg"]})')
+    if 'v3o-italyClip' not in p['clip']: f(f'relief not clipped to Italy ({p["clip"]})')
+    if p['sea'] or p['svgBg'] not in ('rgba(0, 0, 0, 0)', 'transparent'): f('sea colour on the island map')
     want = {'desktop': 112, 'ipad-liggend': 88, 'ipad-staand': 56}.get(vp)
     if want and p['portrait'] != want: f(f'portrait {p["portrait"]} ≠ {want}')
     if p['violetText']: f(f'violet text outside meaning {p["violetText"][:5]}')
@@ -151,7 +148,7 @@ async def main():
                         await pg.screenshot(path=str(shot), full_page=vp == 'telefoon')
                         if vp in ('desktop', 'ipad-liggend'):
                             bar = round(await pg.evaluate("document.querySelector('.v3PreviewBar')?.getBoundingClientRect().height || 0"))
-                            side_by_side(RENDER, shot, STIJL / f'oefenen-ijk-{variant}-{vp}.jpg', f'Build · variant ({"a" if variant == "eiland" else "b"}) {variant.capitalize()} · {vp}', bar)
+                            side_by_side(RENDER, shot, STIJL / f'oefenen-ijk-{variant}-{vp}.jpg', f'Build · {vp}', bar)
                     if case == 'smart': await pg.locator('.v3View-oefenen [data-form=point]').click(); await pg.wait_for_timeout(300)
                 if errs: fails.append(f'{vp}/{variant}: page errors {errs[:2]}')
                 await ctx.close()

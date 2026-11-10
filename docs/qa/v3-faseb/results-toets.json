@@ -159,37 +159,11 @@
     }
    ],
    "primary": "Oefen deze fouten"
-  },
-  "result/desktop/kaart": {
-   "big": [
-    "7 / 10"
-   ],
-   "marks": 10,
-   "kaart": "kaart",
-   "tiles": [
-    {
-     "t": "Nieuwe toets",
-     "icon": true
-    },
-    {
-     "t": "Kopieer",
-     "icon": true
-    },
-    {
-     "t": "E-mail",
-     "icon": true
-    },
-    {
-     "t": "Print",
-     "icon": true
-    }
-   ],
-   "primary": "Oefen deze fouten"
   }
  },
  "errors": [],
  "summary": {
-  "runs": 7,
+  "runs": 6,
   "pass": true
  }
 }

@@ -39,53 +39,14 @@
    "focus": "",
    "pins": 0
   },
-  "desktop/kaart/city2": {
-   "gut": 24,
-   "col": 68,
-   "viewCols": "6",
-   "big": [
-    "Oefenen"
-   ],
-   "chipCols": 3,
-   "portrait": 112,
-   "kaart": "kaart",
-   "focus": "points",
-   "pins": 6
-  },
-  "desktop/kaart/islands": {
-   "gut": 24,
-   "col": 68,
-   "viewCols": "6",
-   "big": [
-    "Oefenen"
-   ],
-   "chipCols": 3,
-   "portrait": 112,
-   "kaart": "kaart",
-   "focus": "areas",
-   "pins": 0
-  },
-  "desktop/kaart/smart": {
-   "gut": 24,
-   "col": 68,
-   "viewCols": "6",
-   "big": [
-    "Oefenen"
-   ],
-   "chipCols": 0,
-   "portrait": 112,
-   "kaart": "kaart",
-   "focus": "",
-   "pins": 0
-  },
   "ipad-liggend/eiland/city2": {
    "gut": 16,
    "col": 59.666666666666664,
-   "viewCols": "8",
+   "viewCols": "5",
    "big": [
     "Oefenen"
    ],
-   "chipCols": 3,
+   "chipCols": 2,
    "portrait": 88,
    "kaart": "eiland",
    "focus": "points",
@@ -94,11 +55,11 @@
   "ipad-liggend/eiland/islands": {
    "gut": 16,
    "col": 59.666666666666664,
-   "viewCols": "8",
+   "viewCols": "5",
    "big": [
     "Oefenen"
    ],
-   "chipCols": 3,
+   "chipCols": 2,
    "portrait": 88,
    "kaart": "eiland",
    "focus": "areas",
@@ -107,52 +68,13 @@
   "ipad-liggend/eiland/smart": {
    "gut": 16,
    "col": 59.666666666666664,
-   "viewCols": "8",
+   "viewCols": "5",
    "big": [
     "Oefenen"
    ],
    "chipCols": 0,
    "portrait": 88,
    "kaart": "eiland",
-   "focus": "",
-   "pins": 0
-  },
-  "ipad-liggend/kaart/city2": {
-   "gut": 16,
-   "col": 59.666666666666664,
-   "viewCols": "8",
-   "big": [
-    "Oefenen"
-   ],
-   "chipCols": 3,
-   "portrait": 88,
-   "kaart": "kaart",
-   "focus": "points",
-   "pins": 6
-  },
-  "ipad-liggend/kaart/islands": {
-   "gut": 16,
-   "col": 59.666666666666664,
-   "viewCols": "8",
-   "big": [
-    "Oefenen"
-   ],
-   "chipCols": 3,
-   "portrait": 88,
-   "kaart": "kaart",
-   "focus": "areas",
-   "pins": 0
-  },
-  "ipad-liggend/kaart/smart": {
-   "gut": 16,
-   "col": 59.666666666666664,
-   "viewCols": "8",
-   "big": [
-    "Oefenen"
-   ],
-   "chipCols": 0,
-   "portrait": 88,
-   "kaart": "kaart",
    "focus": "",
    "pins": 0
   },
@@ -195,45 +117,6 @@
    "focus": "",
    "pins": 0
   },
-  "ipad-staand/kaart/city2": {
-   "gut": 16,
-   "col": 40,
-   "viewCols": null,
-   "big": [
-    "Oefenen"
-   ],
-   "chipCols": 3,
-   "portrait": 56,
-   "kaart": "kaart",
-   "focus": "points",
-   "pins": 6
-  },
-  "ipad-staand/kaart/islands": {
-   "gut": 16,
-   "col": 40,
-   "viewCols": null,
-   "big": [
-    "Oefenen"
-   ],
-   "chipCols": 3,
-   "portrait": 56,
-   "kaart": "kaart",
-   "focus": "areas",
-   "pins": 0
-  },
-  "ipad-staand/kaart/smart": {
-   "gut": 16,
-   "col": 40,
-   "viewCols": null,
-   "big": [
-    "Oefenen"
-   ],
-   "chipCols": 0,
-   "portrait": 56,
-   "kaart": "kaart",
-   "focus": "",
-   "pins": 0
-  },
   "telefoon/eiland/city2": {
    "gut": 0,
    "col": -1.3333333333333333,
@@ -272,50 +155,11 @@
    "kaart": "eiland",
    "focus": "",
    "pins": 0
-  },
-  "telefoon/kaart/city2": {
-   "gut": 0,
-   "col": -1.3333333333333333,
-   "viewCols": null,
-   "big": [
-    "Oefenen"
-   ],
-   "chipCols": 2,
-   "portrait": 0,
-   "kaart": "kaart",
-   "focus": "points",
-   "pins": 6
-  },
-  "telefoon/kaart/islands": {
-   "gut": 0,
-   "col": -1.3333333333333333,
-   "viewCols": null,
-   "big": [
-    "Oefenen"
-   ],
-   "chipCols": 2,
-   "portrait": 0,
-   "kaart": "kaart",
-   "focus": "areas",
-   "pins": 0
-  },
-  "telefoon/kaart/smart": {
-   "gut": 0,
-   "col": -1.3333333333333333,
-   "viewCols": null,
-   "big": [
-    "Oefenen"
-   ],
-   "chipCols": 0,
-   "portrait": 0,
-   "kaart": "kaart",
-   "focus": "",
-   "pins": 0
   }
  },
  "errors": [],
  "summary": {
-  "runs": 24,
+  "runs": 12,
   "pass": true
  }
 }

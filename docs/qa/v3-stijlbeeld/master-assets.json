@@ -1,0 +1,41 @@
+{
+  "source": "339c4207e6d4b212cda4073862b5df42c8d95474",
+  "pipeline": "b70e1ac",
+  "masters": 13,
+  "runs": {
+    "desktop": {
+      "setup": {
+        "ok": true,
+        "id": "NINO-SCHRIJFT"
+      },
+      "result": {
+        "ok": true,
+        "id": "VESPA-RIJDEND"
+      },
+      "offline": true
+    },
+    "ipad-liggend": {
+      "setup": {
+        "ok": true,
+        "id": "NINO-SCHRIJFT"
+      },
+      "result": {
+        "ok": true,
+        "id": "VESPA-RIJDEND"
+      },
+      "offline": true
+    },
+    "telefoon": {
+      "setup": {
+        "ok": true,
+        "id": "NINO-SCHRIJFT"
+      },
+      "result": {
+        "ok": true,
+        "id": "VESPA-RIJDEND"
+      },
+      "offline": true
+    }
+  },
+  "pass": true
+}

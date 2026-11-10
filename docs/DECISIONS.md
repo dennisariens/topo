@@ -894,3 +894,11 @@ Volgens renders/README § "Afwerking na fase B" en § "Bijstelling eigenaar (10-
 - Voortgang gebruikt Eiland. Elf rijen zijn elk minimaal 40 px en volledig binnen hun hoofdstukpaneel; de drie even brede tegels volgen onder de kaart/lijst. Het gehele Werkblad scrolt, ook naar Toetsen en het kennis-paspoort.
 - Oefenen gebruikt op desktop twee chipkolommen en compacte 2×2-vormtegels. Dit wijkt af van de eerdere drie kolommen: volledige namen op 17 px, kaart ≥45% en bediening rechts passen samen niet in vijf kolommen met drie chips naast elkaar. De selectie, inhoud en acties veranderen niet.
 - QA: minimumgroottes per elementtype toegevoegd aan qa-v3-afwerking.py, plus Eiland, elf rijen en afsnijding. Historische fase-B-asserties volgen de avondkalibratie (kaarttitels zijn geen extra schermtitels, score op glas).
+
+## 2026-11-10 — Master-assets via de artworkpijplijn (overdracht stap 4)
+
+- Pijplijn `art/v3-render-assets` @ `b70e1ac`: dertien bron-PNG's byte-gelijk uit `339c4207e6d4b212cda4073862b5df42c8d95474`, met reproduceerbaar exportscript, bronpad, SHA256, afmetingen en status **eigenaar akkoord, Hermes open**. Technische WebP-verkleining zonder uitsnijden of herschilderen: poses maximaal 800×1200; Vespa's maximaal 1200×800.
+- In de app komen alleen exports en het manifest; geen masters en geen merge van `art/master`. Elk ingebed bestand wordt tegen de manifest-SHA256 gecontroleerd.
+- V3 gebruikt `nino-schrijft` bij Toets instellen, `vespa-rijdend` als NINO-ONDERWEG en `nino-juicht` bij een perfecte toets. Bestaande V2-slots voor welkom, gids, aanmoediging, succes, goud en aankomst krijgen de overeenkomstige nieuwe pose via een V3-adapter; de slots en de momenten waarop ze verschijnen blijven van V2.
+- `nino-denkt`, `nino-wijst-rechts`, `nino-paspoort`, `vespa-zij` en `vespa-icoon` blijven reserve en worden niet ingebed. De paspoortomslag en het paspoortbinnenwerk zijn niet overgenomen. Omslag B en het canonieke zijbalkportret blijven de goedgekeurde beelden.
+- Bronnen behouden: sommige aangeleverde PNG's hebben maximaal alfa 254; die alfa en de geschilderde randen zijn niet aangepast. De technische test controleert bronhash, exporthash, afmetingen, beeldverhouding en offline laden. De onafhankelijke Hermes-modelcheck blijft open.

@@ -78,7 +78,7 @@
   const panel=make('div','v3ToetsSetup');
   panel.append(h,sh.field('Hoofdstukken',chapters,'v3ToetsHoofdstukken'),sh.field('Vorm',forms,'v3ToetsVorm'),
    sh.field('Lengte',choice(lens,v=>pick.length===v,v=>{pick.length=v;}),'v3ToetsLengte'),start);
-  const nino=make('div','v3ToetsSetupNino');nino.setAttribute('aria-hidden','true');try{nino.append(TopoArt.create(document,{role:'guide'},'exam-setup'));}catch{}
+  const nino=make('div','v3ToetsSetupNino');nino.setAttribute('aria-hidden','true');try{nino.append(V.pose?V.pose('NINO-SCHRIJFT','guide','exam-setup'):TopoArt.create(document,{role:'guide'},'exam-setup'));}catch{}
   view.replaceChildren(panel,nino);
  });
 
@@ -157,7 +157,7 @@
   const perfect=r.correct===r.total,head=make('div','v3ToetsHead');
   const card=make('div','v3ToetsScoreCard');card.append(make('span','v3ToetsLabel','Toets'));
   const h=make('h1','v3ToetsScore',scoreText(r));h.id='v3ToetsScore';h.tabIndex=-1;h.setAttribute('aria-label',r.correct+' van '+r.total+' goed');card.append(h);
-  const nino=make('div','v3ToetsNino');try{nino.append(TopoArt.create(document,{role:perfect?'success':'encourage'},'exam-result'));}catch{}
+  const nino=make('div','v3ToetsNino');try{nino.append(V.pose?V.pose(perfect?'NINO-JUICHT':'VESPA-RIJDEND',perfect?'success':'encourage','exam-result'):TopoArt.create(document,{role:perfect?'success':'encourage'},'exam-result'));}catch{}
   head.append(card,nino);
   const map=make('figure','v3ToetsKaart');map.setAttribute('aria-label','Kaart met je antwoorden');
   const wrong=r.items.filter(x=>!x.ok),side=make('div','v3ToetsSide');

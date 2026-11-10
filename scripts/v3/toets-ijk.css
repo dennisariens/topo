@@ -1,0 +1,75 @@
+/* TOPO V3.0 fase B, stap 5 — Toets instellen volgens R-toets-instellen (docs/v3/renders/README.md § Per render,
+   § Voortgang: Werkblad, § Raster en uitlijning, § Verfijning). Presentation only; loaded after les-ijk.css.
+   * Werkblad: the one light plate (glas.css); inside it 12 columns — the set-up on 6, Nino on the rest.
+   * The set-up: the title "Toets" (the one display text), three groups with a small label and a thin line between
+     them (no cards in cards): all 11 chapters and Alles as chips in three columns (a chosen one with a check), the
+     form as three tiles with line icons, the length as chips (no radio dots); the Start toets pill, full width.
+   * Nino: the V2 guide pose as decoration, standing on the plate's bottom edge (NINO-KLEMBORD replaces it later). */
+.v3ToetsSetup{display:flex;flex-direction:column;gap:var(--v3-s5);min-width:0}
+.v3ToetsSetup .v3Field{gap:12px}
+.v3ToetsSetup .v3Field+.v3Field{padding-top:var(--v3-s5);border-top:1px solid var(--v3-line)}
+.v3ToetsSetup .v3Field h2{font:600 16px/22px var(--v3-font);color:var(--v3-ink2)}
+.v3ToetsSetup .v3Chips{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px}
+.v3ToetsSetup .v3Chip{min-height:44px;padding:0 10px;font-size:15px;white-space:nowrap;justify-content:center;gap:6px}
+.v3ToetsSetup .v3Chip .v3Icon{width:18px;height:18px;flex:none;color:var(--v3-select-ink);stroke-width:2.4}
+.v3ToetsSetup .v3ToetsForms{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px}
+.v3ToetsSetup .v3FormBtn{min-height:96px;padding:12px 8px;gap:8px;line-height:20px}
+.v3FormIcons{display:flex;gap:4px}
+.v3ToetsSetup .v3Start{align-self:stretch;width:100%;min-width:0;margin-top:var(--v3-s2)}
+.v3ToetsSetupNino{display:none}
+
+@media (min-width:1024px){
+ .v3Reis[data-view=toets]>.v3View-toets{display:grid;grid-template-columns:repeat(12,minmax(0,1fr));column-gap:var(--v3-gut);align-items:start}
+ .v3ToetsSetup{grid-column:1/span 6;grid-row:1}
+ .v3ToetsSetupNino{display:flex;grid-column:8/-1;grid-row:1;align-self:end;justify-content:center;pointer-events:none}
+ .v3ToetsSetupNino .ninoArtSlot{margin:0}
+ .v3ToetsSetupNino img{display:block;width:auto;max-width:100%;max-height:min(62dvh,560px);object-fit:contain}
+}
+@media (min-width:1024px) and (max-width:1279px){
+ .v3ToetsSetup{grid-column:1/span 7}
+ .v3ToetsSetupNino{grid-column:9/-1}
+}
+@media (max-width:767px){
+ .v3ToetsSetup .v3Chips{grid-template-columns:repeat(2,minmax(0,1fr))}
+}
+
+/* Toets resultaat volgens R-toets-resultaat (Landschap): the score card and Nino, the map below, one glass panel on the
+   right with the mistakes and the actions. ≥ 1024 on the 12 columns: score and map on 7, the panel on 5. */
+.v3ToetsScoreCard{display:grid;gap:2px;padding:18px 28px 20px;border-radius:var(--v3-radius-glass);background:var(--v3-glass);-webkit-backdrop-filter:var(--v3-glass-filter);backdrop-filter:var(--v3-glass-filter);box-shadow:var(--v3-glass-shadow)}
+.v3ToetsLabel{font:600 18px/24px var(--v3-font);color:var(--v3-ink2)}
+.v3Reis .v3View-toetsResult .v3ToetsScore{font:700 64px/1 var(--v3-font);letter-spacing:-.02em;font-variant-numeric:tabular-nums;color:var(--v3-ink);margin:0}
+.v3ToetsScore:focus{outline:0}.v3ToetsScore:focus-visible{outline:3px solid var(--v3-focus);outline-offset:4px;border-radius:8px}
+.v3ToetsSide .v3Field h2{font:600 22px/28px var(--v3-font);color:var(--v3-ink)}
+.v3ToetsSide .v3ToetsFouten{gap:6px}
+.v3ToetsSide .v3ToetsFouten li{align-items:center;justify-content:flex-start;gap:12px;min-height:48px;padding:0 16px;border-radius:16px;background:rgba(255,255,255,.6);box-shadow:none;font:500 17px/1.2 var(--v3-font);color:var(--v3-ink)}
+.v3ToetsSide .v3ToetsFouten li strong{font-weight:600}
+.v3ToetsSide .v3ToetsFouten li span{margin-left:auto;font:500 15px/1.2 var(--v3-font);color:var(--v3-ink2)}
+/* The × is drawn by CSS (the list's DOM stays name + what was given). */
+.v3ToetsSide .v3ToetsFouten li::before{content:"";flex:none;width:24px;height:24px;background:#b8382b;-webkit-mask:var(--v3-x-icon) center/contain no-repeat;mask:var(--v3-x-icon) center/contain no-repeat}
+.v3ToetsSide .v3ToetsFouten{--v3-x-icon:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32' fill='none' stroke='%23000' stroke-width='2.2' stroke-linecap='round'%3E%3Ccircle cx='16' cy='16' r='11.5'/%3E%3Cpath d='m11.8 11.8 8.4 8.4M20.2 11.8l-8.4 8.4'/%3E%3C/svg%3E")}
+.v3ToetsSide .v3ToetsActions{display:grid;gap:12px}
+.v3ToetsSide .v3ToetsActions .primary{width:100%;flex:none}
+.v3ToetsTiles{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:8px}
+.v3ToetsSide .v3ToetsActions .v3ToetsTile{flex-direction:column;gap:6px;min-height:80px;padding:10px 6px;border-radius:18px;background:var(--v3-secondary-bg);box-shadow:var(--v3-secondary-edge);color:var(--v3-ink);font:500 15px/18px var(--v3-font);text-align:center;white-space:normal}
+.v3ToetsTile .v3Icon{width:26px;height:26px;color:var(--v3-ink2)}
+.v3ToetsKaart .v3ToetsMap[data-kaart]{border-radius:0}
+/* Only the toets's places are marked; the other places step back. */
+.v3ToetsMap[data-kaart] [data-id]:not(.v3Hit):is(.city,circle){opacity:.22}
+@media (min-width:1024px){
+ .v3Reis[data-view=toetsResult]>.v3View-toetsResult{display:grid;grid-template-columns:repeat(12,minmax(0,1fr));grid-template-rows:auto minmax(0,1fr);gap:var(--v3-gut);padding:0;overflow:visible;
+  background:none!important;-webkit-backdrop-filter:none!important;backdrop-filter:none!important;box-shadow:none!important;border-radius:0}
+ .v3View-toetsResult .v3ToetsHead{display:contents}
+ .v3View-toetsResult .v3ToetsScoreCard{grid-column:1/span 4;grid-row:1;justify-self:start}
+ /* Nino stands at the bottom of the panel column, under the panel (decoration; a long list of mistakes covers him). */
+ .v3View-toetsResult .v3ToetsNino{grid-column:8/-1;grid-row:1/-1;align-self:end;justify-self:center;z-index:0;width:auto;height:min(40dvh,360px);pointer-events:none}
+ .v3View-toetsResult .v3ToetsNino img{width:auto;height:100%}
+ .v3View-toetsResult .v3ToetsBody{display:contents}
+ .v3View-toetsResult .v3ToetsKaart{grid-column:1/span 7;grid-row:2;position:relative;min-height:0}
+ .v3View-toetsResult .v3ToetsKaart .v3ToetsMap{position:absolute;inset:0;margin:auto;width:auto;height:auto;max-width:100%;max-height:100%}
+ .v3View-toetsResult .v3ToetsSide{position:relative;z-index:1;grid-column:8/-1;grid-row:1/-1;align-self:start;max-height:100%;overflow:auto;padding:24px;border-radius:var(--v3-radius-glass);
+  background:var(--v3-glass);-webkit-backdrop-filter:var(--v3-glass-filter);backdrop-filter:var(--v3-glass-filter);box-shadow:var(--v3-glass-shadow)}
+ .v3Reis[data-kaart=kaart] .v3View-toetsResult .v3ToetsKaart{border-radius:var(--v3-radius-glass);background:var(--v3-glass);-webkit-backdrop-filter:var(--v3-glass-filter);backdrop-filter:var(--v3-glass-filter);box-shadow:var(--v3-glass-shadow)}
+ .v3Reis[data-kaart=kaart] .v3View-toetsResult .v3ToetsKaart .v3ToetsMap{inset:10px;max-width:calc(100% - 20px);max-height:calc(100% - 20px)}
+}
+@media (max-width:1023px){.v3ToetsKaart .v3ToetsMap[data-kaart]{width:100%;height:420px;overflow:hidden!important}}
+@media (max-width:767px){.v3ToetsKaart .v3ToetsMap[data-kaart]{height:340px}.v3Reis .v3View-toetsResult .v3ToetsScore{font-size:48px}.v3ToetsTiles{grid-template-columns:repeat(2,minmax(0,1fr))}}

@@ -1,14 +1,14 @@
 {
  "html": "output/html/TOPO-V3-Reis-Preview.html",
- "sha256": "9f5710f5a4506099baa4d7c90f09926cb82feb1c73f0533a6aca4158e8e86afe",
- "bytes": 50356464,
+ "sha256": "82d3732eeb96d4b723cbf54a685fe913f34191fb0fff80ac61bed79dc3b9f613",
+ "bytes": 50367985,
  "layout": {
   "desktop/nieuw": {
    "frame": {
     "viewBox": "107 173 716 864",
     "mask": "none",
     "kept": {
-     "Frankrijk": 1,
+     "Frankrijk": 0.96,
      "Zwitserland": 1,
      "Oostenrijk": 1,
      "Slovenië": 1,
@@ -152,7 +152,7 @@
     "viewBox": "107 173 716 864",
     "mask": "none",
     "kept": {
-     "Frankrijk": 0.97,
+     "Frankrijk": 0.96,
      "Zwitserland": 1,
      "Oostenrijk": 1,
      "Slovenië": 1,
@@ -1462,9 +1462,9 @@
    },
    "backVia": "v3Btn v3NavItem",
    "primaryLabelWithActive": "Ga verder · Ontdekken",
-   "questionBefore": "city-12",
+   "questionBefore": "city-9",
    "reisVerderSameQuestion": {
-    "id": "city-12",
+    "id": "city-9",
     "chapter": "city2",
     "kind": "discover"
    },

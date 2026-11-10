@@ -724,3 +724,32 @@ Gevonden bij fase B, stap 5. Het fout zat er al in sinds V3.0 deel 3.
 **Fix:** de hoofdstukkeuze rendert nu direct, net als Vorm en Lengte. Er is geen andere wijziging.
 
 **Test:** `qa-v3-toets.py` kiest een extra hoofdstuk, controleert dat het direct gekozen is en zet het weer uit. Op de oude code faalt die check (desktop en iPad).
+
+## 2026-11-10 — V3.0 fase B, stap 5: Toets instellen en Toets resultaat
+
+Beide schermen volgen hun render, met de regels van Ingetogenheid, Raster en Verfijning. De toets zelf is ongewijzigd: pool, vorm, lengte, beoordeling, opslag en reservekopie. De uitslag-DOM die `qa-v3-toets.py` leest, is ook gelijk gebleven.
+
+**Toets instellen (`R-toets-instellen`), Werkblad:**
+- het instelblok staat op de lichte plaat en neemt 6 van de 12 kolommen (iPad liggend 7);
+- de titel "Toets" is het enige display-element;
+- drie groepen met een klein label en een dunne lijn ertussen, zonder kaarten in kaarten:
+  - alle 11 hoofdstukken en Alles als chips in drie kolommen, voluit op één regel; een gekozen chip krijgt een vinkje;
+  - de vorm als drie tegels met lijniconen (Beide toont vizier en potlood);
+  - de lengte als chips, zonder radiorondjes;
+- de pil Start toets met het play-icoon, over de volle breedte;
+- rechts Nino als decoratie. Dat is tijdelijk de bestaande V2-pose "guide"; NINO-KLEMBORD volgt via de artworkpijplijn.
+
+**Toets resultaat (`R-toets-resultaat`), Landschap:**
+- de score in een glaskaart, als het enige display-element;
+- daaronder de kaart als het luide element, in dezelfde variant als Reis, met reliëf, de ✓/×-markeringen en de namen bij fouten. De andere plekken treden terug;
+- rechts één glaspaneel met de fouten (× via CSS, zodat de lijst-DOM gelijk blijft), de primaire pil Oefen deze fouten met icoon, en Nieuwe toets, Kopieer, E-mail en Print als tegels met lijnicoon. Zonder fouten is Nieuwe toets de primaire pil;
+- Nino staat onder het paneel in de rechterkolom;
+- op het raster: score en kaart op 7 kolommen, het paneel op 5, met de bovenkanten op één lijn.
+
+**Variant (a) Eiland, bijgesteld op alle schermen:**
+- de buurlanden waren halftransparante losse vormen. Waar die overlapten, ontstonden naden, en het standaard SVG-maskervlak sneed ze in een rechte lijn af;
+- nu tekent een kopie van hun omtrekken in één groep met één dekking (0,55). De originelen tekenen in variant (a) niets meer, behalve gekozen landen, die data zijn;
+- de vervaging en het maskervlak zijn het hele zichtbare kaartvak, zodat de vervaging precies daar nul wordt;
+- de QA (`qa-v3-faseb.py`, `qa-v3-glas.py`) meet nu die groep, en dat de originelen niets meer tekenen.
+
+**Bewijs:** `scripts/qa-v3-faseb-toets.py` en de vergelijkingen `docs/qa/v3-stijlbeeld/toets-instellen-{desktop,ipad-liggend}.jpg` en `toets-resultaat-{eiland,kaart}-*.jpg`.

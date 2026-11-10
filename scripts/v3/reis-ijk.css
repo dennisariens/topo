@@ -70,7 +70,11 @@
 .v3Map[data-kaart=eiland] .v3IsleBase{display:block;fill:#c5d6a2}
 .v3Map[data-kaart=eiland][data-relief=off] .v3IsleBase{fill:#f1e3c0}
 .v3Map[data-kaart=eiland] :is(.atlasTerrain,.v3RCoast){clip-path:var(--v3-isle-clip)}
-.v3Map[data-kaart=eiland] :is(.contextLand,.country:not(.v3Hit):not(.v3Isle)){fill:#cdc7da!important;fill-opacity:.55!important;stroke:#fff!important;stroke-opacity:.45!important;stroke-width:.8px!important;mask:var(--v3-isle-fade)}
+/* Neighbours: one silhouette group (reis.js addIsland), one opacity and one fade; the originals step aside. */
+.v3Map .v3Neighbours{display:none}
+.v3Map[data-kaart=eiland] .v3Neighbours{display:block;opacity:.55}
+.v3Map[data-kaart=eiland] .v3Neighbours path{fill:#cdc7da;stroke:#fff;stroke-opacity:.8;stroke-width:.8px}
+.v3Map[data-kaart=eiland] :is(.contextLand,.country:not(.v3Hit):not(.v3Isle)){fill-opacity:0!important;stroke-opacity:0!important}
 .v3Map[data-kaart=eiland] :is(.contextLabel,.mapLabel){display:none}
 .v3Map[data-kaart=eiland] .v3Pins{filter:drop-shadow(0 2px 2px rgba(42,36,64,.30))}
 /* (b) Kaart: a rounded glass card around the map. */

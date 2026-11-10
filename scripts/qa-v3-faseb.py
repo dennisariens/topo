@@ -15,7 +15,8 @@ On #bezig (and #afgerond for the gold and done rows), desktop 1440×900, iPad la
     never under the card (a pin's box ends above the card's top);
   * counters with line icons (no illustration in the UI);
   * variant (a): no sea colour anywhere on the map (sea layers hidden, transparent background), neighbours visible as
-    soft silhouettes (effective alpha 0.3–0.8, faded by the mask), the relief clipped to Italy;
+    one soft silhouette (one group: effective alpha 0.3–0.8, faded by the mask; the original shapes draw nothing, so
+    overlaps make no seams), the relief clipped to Italy;
     variant (b): the map sits in a glass card (radius 28) that fills the map row;
   * the theme accent only on meaning (no violet text outside the active nav, selection and the primary pill).
 Writes screenshots and the comparisons beside R-reis-ijk (docs/qa/v3-stijlbeeld/reis-ijk-<variant>-<viewport>.jpg)
@@ -51,7 +52,10 @@ PROBE = r'''() => {
   const pins = [...document.querySelectorAll('.v3Map .v3Pin')].map(p => R(p));
   const map = q('.v3Map'), sea = map && [...map.querySelectorAll('.sea,.v3RSea,.atlasWaterTexture')].some(n => cs(n).display !== 'none' && cs(n).visibility !== 'hidden');
   const eff = n => { let o = 1; for (let e = n; e && e !== map; e = e.parentNode) o *= parseFloat(cs(e).opacity); return o * parseFloat(cs(n).fillOpacity); };
-  const nb = map ? [...map.querySelectorAll('.contextLand,.country:not(.v3Hit):not(.v3Isle)')].filter(n => cs(n).display !== 'none').map(n => ({a: Math.round(eff(n) * 100) / 100, mask: cs(n).mask || cs(n).maskImage || ''})) : [];
+  // Variant (a): the neighbours are one silhouette group (one opacity, one fade); the originals draw nothing there.
+  const grp = map && map.querySelector('.v3Neighbours'), grpOn = grp && cs(grp).display !== 'none';
+  const nb = grpOn ? [{a: Math.round(eff(grp.querySelector('path')) * 100) / 100, mask: cs(grp).mask || cs(grp).maskImage || '', paths: grp.children.length}] : [];
+  const nbOriginals = map ? [...map.querySelectorAll('.contextLand,.country:not(.v3Hit):not(.v3Isle)')].filter(n => cs(n).display !== 'none' && parseFloat(cs(n).fillOpacity) > 0).length : 0;
   const terrainClip = map ? cs(map.querySelector('.atlasTerrain')).clipPath : '';
   const stageCs = cs(q('.v3MapStage'));
   const counters = [...document.querySelectorAll('.v3Count')].map(c => ({icon: !!c.querySelector('svg.v3Icon'), img: !!c.querySelector('img')}));
@@ -60,7 +64,7 @@ PROBE = r'''() => {
   const violetText = [...document.querySelectorAll('.v3Reis *')].filter(n => n.checkVisibility() && [...n.childNodes].some(c => c.nodeType === 3 && c.textContent.trim()) && cs(n).color === rgb(accent)
     && !n.closest('[aria-current=page],[aria-pressed=true],.primary')).map(n => n.textContent.trim().slice(0, 24));
   const portrait = R(q('.v3Reis .v3Portrait'));
-  return {frame, side, gut, inner, col, rows, main, title, top, card, stage, big, ltVisible, rowInfo, pins, sea, nb, terrainClip,
+  return {frame, side, gut, inner, col, rows, main, title, top, card, stage, big, ltVisible, rowInfo, pins, sea, nb, nbOriginals, terrainClip,
     stageRadius: stageCs.borderTopLeftRadius, stageBg: stageCs.backgroundColor, svgBg: map ? cs(map).backgroundColor : '', kaart: root.dataset.kaart,
     primaries: document.querySelectorAll('.v3Panel .v3Btn.primary').length, dots: document.querySelectorAll('.v3Panel .v3StageBar span').length,
     counters, violetText, portrait: portrait && Math.round(portrait.w), navLabels: [...document.querySelectorAll('.v3Reis .v3NavList .v3NavItem span')].every(s => s.getBoundingClientRect().width > 8),
@@ -110,8 +114,9 @@ def checks(p, vp, variant, demo, fail):
     # Variants.
     if variant == 'eiland':
         if p['sea'] or p['svgBg'] not in ('rgba(0, 0, 0, 0)', 'transparent'): f(f'sea colour on the island map (layers {p["sea"]}, background {p["svgBg"]})')
-        bad = [n for n in p['nb'] if not (.3 <= n['a'] <= .8) or 'nbFade' not in n['mask']]
-        if bad: f(f'neighbours not soft faded silhouettes {bad[:3]}')
+        bad = [n for n in p['nb'] if not (.3 <= n['a'] <= .8) or 'nbFade' not in n['mask'] or n['paths'] < 10]
+        if not p['nb'] or bad: f(f'neighbours not one soft faded silhouette {p["nb"]}')
+        if p['nbOriginals']: f(f'{p["nbOriginals"]} original neighbour shapes still drawn (double alpha, seams)')
         if 'italyClip' not in p['terrainClip']: f(f'relief not clipped to Italy ({p["terrainClip"]})')
     else:
         if p['stageRadius'] != '28px' or p['stageBg'] in ('rgba(0, 0, 0, 0)', 'transparent'): f(f'map not in a glass card ({p["stageRadius"]}, {p["stageBg"]})')

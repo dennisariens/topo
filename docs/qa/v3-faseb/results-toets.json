@@ -1,0 +1,195 @@
+{
+ "runs": {
+  "desktop": {
+   "big": [
+    "Toets"
+   ],
+   "chipCols": 3,
+   "chosen": [
+    "Steden 1–6",
+    "Steden 7–12"
+   ],
+   "forms": [
+    {
+     "v": "point",
+     "icons": 1,
+     "img": false
+    },
+    {
+     "v": "write",
+     "icons": 1,
+     "img": false
+    },
+    {
+     "v": "both",
+     "icons": 2,
+     "img": false
+    }
+   ]
+  },
+  "ipad-liggend": {
+   "big": [
+    "Toets"
+   ],
+   "chipCols": 3,
+   "chosen": [
+    "Steden 1–6",
+    "Steden 7–12"
+   ],
+   "forms": [
+    {
+     "v": "point",
+     "icons": 1,
+     "img": false
+    },
+    {
+     "v": "write",
+     "icons": 1,
+     "img": false
+    },
+    {
+     "v": "both",
+     "icons": 2,
+     "img": false
+    }
+   ]
+  },
+  "ipad-staand": {
+   "big": [
+    "Toets"
+   ],
+   "chipCols": 3,
+   "chosen": [
+    "Steden 1–6",
+    "Steden 7–12"
+   ],
+   "forms": [
+    {
+     "v": "point",
+     "icons": 1,
+     "img": false
+    },
+    {
+     "v": "write",
+     "icons": 1,
+     "img": false
+    },
+    {
+     "v": "both",
+     "icons": 2,
+     "img": false
+    }
+   ]
+  },
+  "telefoon": {
+   "big": [
+    "Toets"
+   ],
+   "chipCols": 2,
+   "chosen": [
+    "Steden 1–6",
+    "Steden 7–12"
+   ],
+   "forms": [
+    {
+     "v": "point",
+     "icons": 1,
+     "img": false
+    },
+    {
+     "v": "write",
+     "icons": 1,
+     "img": false
+    },
+    {
+     "v": "both",
+     "icons": 2,
+     "img": false
+    }
+   ]
+  },
+  "result/desktop/eiland": {
+   "big": [
+    "7 / 10"
+   ],
+   "marks": 10,
+   "kaart": "eiland",
+   "tiles": [
+    {
+     "t": "Nieuwe toets",
+     "icon": true
+    },
+    {
+     "t": "Kopieer",
+     "icon": true
+    },
+    {
+     "t": "E-mail",
+     "icon": true
+    },
+    {
+     "t": "Print",
+     "icon": true
+    }
+   ],
+   "primary": "Oefen deze fouten"
+  },
+  "result/ipad-liggend/eiland": {
+   "big": [
+    "7 / 10"
+   ],
+   "marks": 10,
+   "kaart": "eiland",
+   "tiles": [
+    {
+     "t": "Nieuwe toets",
+     "icon": true
+    },
+    {
+     "t": "Kopieer",
+     "icon": true
+    },
+    {
+     "t": "E-mail",
+     "icon": true
+    },
+    {
+     "t": "Print",
+     "icon": true
+    }
+   ],
+   "primary": "Oefen deze fouten"
+  },
+  "result/desktop/kaart": {
+   "big": [
+    "7 / 10"
+   ],
+   "marks": 10,
+   "kaart": "kaart",
+   "tiles": [
+    {
+     "t": "Nieuwe toets",
+     "icon": true
+    },
+    {
+     "t": "Kopieer",
+     "icon": true
+    },
+    {
+     "t": "E-mail",
+     "icon": true
+    },
+    {
+     "t": "Print",
+     "icon": true
+    }
+   ],
+   "primary": "Oefen deze fouten"
+  }
+ },
+ "errors": [],
+ "summary": {
+  "runs": 7,
+  "pass": true
+ }
+}

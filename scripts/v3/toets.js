@@ -9,6 +9,7 @@
  const {make,btn,ui}=V,sh=V.shell,$=s=>document.querySelector(s),SVGNS='http://www.w3.org/2000/svg';
  const KEY='topo-v3-toetsen-v1',MAX=10;
  const FORMS=[['point','Aanwijzen'],['write','Namen schrijven'],['both','Beide']];
+ const FORM_ICONS={point:['v3point'],write:['v3write'],both:['v3point','v3write']};
  const byId=Object.fromEntries(ITEMS.map(i=>[i.id,i])),chapterIds=ROUTE_CHAPTERS.map(c=>c.id);
  const title=id=>ROUTE_CHAPTERS.find(c=>c.id===id)?.title||id;
 
@@ -60,15 +61,25 @@
  const lengths=n=>[...(n>10?[[10,'10']]:[]),...(n>20?[[20,'20']]:[]),[0,'Alle']];
  const choice=(list,on,set)=>{const w=make('div','v3Chips');w.setAttribute('role','group');for(const [v,label] of list){const b=sh.chip(label,on(v),()=>{set(v);V.render();});b.dataset.value=String(v);w.append(b);}return w;};
  V.addView('toets','Toets',view=>{
-  const h=make('h1',null,'Toets');h.id='v3ToetsTitle';h.tabIndex=-1;
+  const h=make('h1','v3ScreenTitle','Toets');h.id='v3ToetsTitle';h.tabIndex=-1;
   const ids=chosen(),n=poolFor(ids).length;
   // The choice shows at once (the length chips follow the pool), as for Vorm and Lengte.
   const toggle=id=>{const cur=chosen();if(id==='all')pick.chapters=cur.length===chapterIds.length?[]:chapterIds.slice();else pick.chapters=cur.includes(id)?cur.filter(x=>x!==id):chapterIds.filter(x=>x===id||cur.includes(x));V.render();};
   const chapters=sh.groupChips(id=>id==='all'?ids.length===chapterIds.length:ids.includes(id),toggle,{extra:[['all','Alles']]});
   const lens=lengths(n);if(!lens.some(([v])=>v===pick.length))pick.length=0;
   const start=btn('Start toets',e=>{e.stopPropagation();startToets();},'v3Btn primary v3Start');start.disabled=!n;
-  view.replaceChildren(h,sh.field('Hoofdstukken',chapters,'v3ToetsHoofdstukken'),sh.field('Vorm',choice(FORMS,v=>pick.form===v,v=>{pick.form=v;}),'v3ToetsVorm'),
+  // R-toets-instellen (fase B, stap 5): one panel on the Werkblad — the title, three groups separated by a thin line
+  // (chapters as chips in three columns, a chosen one with a check; the form as tiles with line icons; the length as
+  // chips), the Start toets pill — and Nino on the right (decoration; the V2 guide pose until NINO-KLEMBORD exists).
+  for(const b of chapters.querySelectorAll('[aria-pressed=true]'))b.append(V.icon('v3checkmark'));
+  const forms=choice(FORMS,v=>pick.form===v,v=>{pick.form=v;});forms.className='v3Forms v3ToetsForms';
+  for(const b of forms.children){b.classList.replace('v3Chip','v3FormBtn');const label=b.textContent;b.textContent='';const ic=make('span','v3FormIcons');for(const g of FORM_ICONS[b.dataset.value])ic.append(V.icon(g));b.append(ic,make('span',null,label));}
+  start.replaceChildren(V.icon('v3play'),make('span',null,'Start toets'));
+  const panel=make('div','v3ToetsSetup');
+  panel.append(h,sh.field('Hoofdstukken',chapters,'v3ToetsHoofdstukken'),sh.field('Vorm',forms,'v3ToetsVorm'),
    sh.field('Lengte',choice(lens,v=>pick.length===v,v=>{pick.length=v;}),'v3ToetsLengte'),start);
+  const nino=make('div','v3ToetsSetupNino');nino.setAttribute('aria-hidden','true');try{nino.append(TopoArt.create(document,{role:'guide'},'exam-setup'));}catch{}
+  view.replaceChildren(panel,nino);
  });
 
  /* The toets: V2 runs it. resetExam takes its pool from groupItems(); for this one call V3 hands it the chosen,
@@ -136,28 +147,39 @@
  let mapSvg=null;
  // As on Reis: outside the drawn sea the canvas takes the school-map sea colour.
  const seaColour=svg=>{const sea=svg.querySelector('.sea');if(sea)svg.style.setProperty('--v3-sea-school',getComputedStyle(sea).fill);};
+ /* R-toets-resultaat (fase B, stap 5), Landschap: the score in a glass card (the one display text) with Nino beside it,
+    the map below as the loud element — the same variant as Reis (Eiland, or Kaart via #…/kaart), relief on, ✓/×
+    marks and the names of the mistakes — and on the right one glass panel: the mistakes (× and what was given),
+    Oefen deze fouten, and the other actions as tiles with a line icon (Nieuwe toets · Kopieer · E-mail · Print). */
  V.addView('toetsResult','Toetsuitslag',view=>{
   const r=last;if(!r){ui.view='toets';return;}
   if(view.dataset.at===r.at)return;view.dataset.at=r.at;
   const perfect=r.correct===r.total,head=make('div','v3ToetsHead');
-  const h=make('h1','v3ToetsScore',scoreText(r));h.id='v3ToetsScore';h.tabIndex=-1;h.setAttribute('aria-label',r.correct+' van '+r.total+' goed');
+  const card=make('div','v3ToetsScoreCard');card.append(make('span','v3ToetsLabel','Toets'));
+  const h=make('h1','v3ToetsScore',scoreText(r));h.id='v3ToetsScore';h.tabIndex=-1;h.setAttribute('aria-label',r.correct+' van '+r.total+' goed');card.append(h);
   const nino=make('div','v3ToetsNino');try{nino.append(TopoArt.create(document,{role:perfect?'success':'encourage'},'exam-result'));}catch{}
-  head.append(nino,h);
+  head.append(card,nino);
   const map=make('figure','v3ToetsKaart');map.setAttribute('aria-label','Kaart met je antwoorden');
   const wrong=r.items.filter(x=>!x.ok),side=make('div','v3ToetsSide');
   if(wrong.length){const f=make('section','v3Field');const h2=make('h2',null,'Fouten');h2.id='v3ToetsFoutenTitel';f.setAttribute('aria-labelledby',h2.id);f.append(h2,mistakeList(r));side.append(f);}
   const status=make('p','v3ToetsStatus');status.setAttribute('role','status');
   const actions=make('div','v3ToetsActions'),text=shareText(r);
-  if(wrong.length)actions.append(btn('Oefen deze fouten',e=>{e.stopPropagation();sh.practice(r.form==='write'?'write':'point','mistakes');},'v3Btn primary v3ToetsOefen'));
-  const again=btn('Nieuwe toets',e=>{e.stopPropagation();sh.show('toets','v3ToetsTitle');},'v3Btn'+(wrong.length?'':' primary'));
+  const tile=(b,glyph)=>{const label=b.textContent;b.textContent='';b.append(V.icon(glyph),make('span',null,label));b.classList.add('v3ToetsTile');return b;};
+  if(wrong.length){const o=btn('',e=>{e.stopPropagation();sh.practice(r.form==='write'?'write':'point','mistakes');},'v3Btn primary v3ToetsOefen');o.append(V.icon('v3point'),make('span',null,'Oefen deze fouten'));actions.append(o);}
+  const again=btn('Nieuwe toets',e=>{e.stopPropagation();sh.show('toets','v3ToetsTitle');},'v3Btn');
   const copy=btn('Kopieer',async e=>{e.stopPropagation();try{await navigator.clipboard.writeText(text);status.textContent='Score gekopieerd.';}catch{const t=make('textarea','v3ToetsCopy');t.readOnly=true;t.value=text;t.setAttribute('aria-label','Scoretekst');status.replaceChildren(t);t.focus();t.select();}},'v3Btn v3ToetsKopieer');
   const mail=make('a','v3Btn v3ToetsMail','E-mail');mail.href='mailto:?subject='+encodeURIComponent('Mijn NINO-toetsscore')+'&body='+encodeURIComponent(text);
   const printBtn=btn('Print',e=>{e.stopPropagation();print(r);},'v3Btn v3ToetsPrint');
-  actions.append(again,copy,mail,printBtn);side.append(actions,status);
+  // Without mistakes Nieuwe toets is the main action (a pill); otherwise all four are tiles in one row.
+  const tiles=make('div','v3ToetsTiles');
+  if(wrong.length)tiles.append(tile(again,'v3again'));else{again.classList.add('primary');again.replaceChildren(V.icon('v3again'),make('span',null,'Nieuwe toets'));actions.append(again);}
+  tiles.append(tile(copy,'v3copy'),tile(mail,'v3mail'),tile(printBtn,'v3print'));
+  actions.append(tiles);side.append(actions,status);
   const bodyGrid=make('div','v3ToetsBody');bodyGrid.append(map,side);
   view.replaceChildren(head,bodyGrid);
   mapSvg=V.cloneMap('v3t-','v3ToetsMap');mapSvg?.classList.add('v3Map');
-  if(mapSvg){map.append(mapSvg);mapSvg.dataset.relief='off';seaColour(mapSvg);marks(mapSvg,r);V.fit(mapSvg);}
+  if(mapSvg){map.append(mapSvg);V.addIsland(mapSvg,'v3t-');mapSvg.dataset.kaart=ui.kaart||'eiland';mapSvg.dataset.relief='on';seaColour(mapSvg);marks(mapSvg,r);
+   const fitMap=()=>{V.fit(mapSvg);};requestAnimationFrame(fitMap);if('ResizeObserver' in window)new ResizeObserver(fitMap).observe(map);}
  });
 
  // Print A4: name, date, score, map, mistakes. A separate sheet; only it prints.

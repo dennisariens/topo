@@ -130,10 +130,15 @@
    +'<radialGradient id="'+prefix+'nbGrad" cx=".5" cy=".5" r=".5"><stop offset=".62" stop-color="#fff"/><stop offset="1" stop-color="#000"/></radialGradient>'
    +'<mask id="'+prefix+'nbFade" maskUnits="userSpaceOnUse"><rect class="v3FadeRect" x="0" y="0" width="890" height="1235" fill="url(#'+prefix+'nbGrad)"/></mask>';
   svg.prepend(defs);
-  // Each clone references its own clip and fade (Reis v3m-, Oefenen v3o-); the CSS reads them from these properties.
-  svg.style.setProperty('--v3-isle-clip','url(#'+prefix+'italyClip)');svg.style.setProperty('--v3-isle-fade','url(#'+prefix+'nbFade)');
+  // Each clone references its own clip (Reis v3m-, Oefenen v3o-, Toets v3t-); the CSS reads it from this property.
+  svg.style.setProperty('--v3-isle-clip','url(#'+prefix+'italyClip)');
+  // The neighbours as one silhouette: copies of their outlines in one group, so the group's opacity and fade apply once
+  // (overlapping shapes, each half transparent, drew seams where they overlap). The originals step aside in variant (a),
+  // except a chapter's own countries (Landen), which stay the data.
+  const nbg=document.createElementNS(SVGNS,'g');nbg.setAttribute('class','v3Neighbours');nbg.setAttribute('aria-hidden','true');nbg.setAttribute('pointer-events','none');nbg.setAttribute('mask','url(#'+prefix+'nbFade)');
+  for(const n of svg.querySelectorAll('.contextLand,.country:not(.v3Isle)')){const q=document.createElementNS(SVGNS,'path');q.setAttribute('d',n.getAttribute('d')||'');nbg.append(q);}
   const base=document.createElementNS(SVGNS,'path');base.setAttribute('d',d);base.setAttribute('class','v3IsleBase');base.setAttribute('aria-hidden','true');base.setAttribute('pointer-events','none');base.setAttribute('filter','url(#'+prefix+'isleShadow)');
-  terrain.before(base);
+  terrain.before(nbg,base);
   const pins=document.createElementNS(SVGNS,'g');pins.setAttribute('class','v3Pins');pins.setAttribute('aria-hidden','true');pins.setAttribute('pointer-events','none');svg.append(pins);
  }
  // Pins (R-reis-ijk): the chapter's places as violet pins on the map, a constant on-screen size (redrawn on each fit).
@@ -158,10 +163,11 @@
    // transparent and the neighbours fade out, so nothing beyond the data reads as sea); the stage letterboxes it.
    if(svg.dataset.kaart==='eiland'){const p=Math.max(x1-x0,y1-y0)*.04;x0-=p;y0-=p;x1+=p;y1+=p;svg.style.width=svg.style.height='';
     svg.setAttribute('viewBox',[x0,y0,x1-x0,y1-y0].map(v=>Math.round(v)).join(' '));
-    // The fade reaches zero inside the drawn data (the canvas), so the neighbours never end in a straight cut.
-    const fr=svg.querySelector('.v3FadeRect');if(fr){const g=Math.max(x1-x0,y1-y0)*.12,fx0=Math.max(0,x0-g),fy0=Math.max(0,y0-g),fx1=Math.min(CANVAS.w,x1+g),fy1=Math.min(CANVAS.h,y1+g);
-     fr.setAttribute('x',fx0);fr.setAttribute('y',fy0);fr.setAttribute('width',fx1-fx0);fr.setAttribute('height',fy1-fy0);}
-    const r=svg.getBoundingClientRect();if(r.width&&r.height)drawPins(svg,Math.max((x1-x0)/r.width,(y1-y0)/r.height));return;}
+    // The fade and the mask region are the element's whole visible box in map units (the stage letterboxes the frame
+    // and the neighbours draw beyond it): the fade reaches zero at that box's edges, so nothing ends in a straight cut.
+    const r=svg.getBoundingClientRect(),fr=svg.querySelector('.v3FadeRect'),mk=fr?.parentNode;
+    if(fr&&r.width&&r.height){const w=x1-x0,h=y1-y0,k=Math.max(w/r.width,h/r.height),bw=r.width*k,bh=r.height*k,bx=x0-(bw-w)/2,by=y0-(bh-h)/2;
+     for(const n of [fr,mk])for(const [a,v] of [['x',bx],['y',by],['width',bw],['height',bh]])n.setAttribute(a,v);}if(r.width&&r.height)drawPins(svg,Math.max((x1-x0)/r.width,(y1-y0)/r.height));return;}
    const pad=Math.max(x1-x0,y1-y0)*MARGIN;x0=Math.max(0,x0-pad);y0=Math.max(0,y0-pad);x1=Math.min(CANVAS.w,x1+pad);y1=Math.min(CANVAS.h,y1+pad);
    // Match the stage aspect ratio by growing the shorter side, centred and clamped to the canvas.
    // Measure the free stage (any size set by an earlier fit is released first).

@@ -82,8 +82,9 @@ MEASURE = r'''() => {
     // never sea colour: no sea layer, a transparent background, every neighbour visible (alpha ≥ .3).
     const island = map.dataset.kaart === 'eiland';
     const seaShown = island && [...map.querySelectorAll('.sea,.v3RSea,.atlasWaterTexture')].some(n => cs(n).display !== 'none');
-    const islandFaint = island ? [...map.querySelectorAll('.contextLand,.country:not(.v3Isle)')].filter(n => { let o = 1; for (let e = n; e && e !== map; e = e.parentNode) o *= parseFloat(cs(e).opacity);
-      return o * parseFloat(cs(n).fillOpacity) < .3; }).map(n => n.dataset.id || n.dataset.country) : [];
+    // Variant (a): the neighbours are drawn by one silhouette group (fase B, stap 5); it must stay visible.
+    const grp = island && map.querySelector('.v3Neighbours');
+    const islandFaint = island ? (!grp || cs(grp).display === 'none' || (() => { let o = 1; for (let e = grp; e && e !== map; e = e.parentNode) o *= parseFloat(cs(e).opacity); return o < .3; })() ? ['v3Neighbours'] : []) : [];
     edge = {selector: map.id ? '#map' : '.v3Map', masks, opacity: op, overlays: [...over], school, island, seaShown, islandFaint,
       letterbox: school && !island && map.id !== 'map' ? Math.abs(vba - ea) > .015 : false, seeThrough: island ? [] : seeThrough,
       box: [Math.round(r.left), Math.round(r.top), Math.round(r.width), Math.round(r.height)]}; }

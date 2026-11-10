@@ -83,3 +83,25 @@ Gemeten in een routeles (`#bezig`, Steden 7–12, Aanwijzen) op desktop en iPad 
 | Focus Mode (iPad) | De wrappers lossen op (`display:contents`); geen horizontale scroll |
 
 Alle checks zijn groen.
+
+## Stap 5: Toets instellen en Toets resultaat
+
+Script: `scripts/qa-v3-faseb-toets.py`. Resultaat: [`results-toets.json`](results-toets.json).
+
+**Instellen:** gemeten op `#bezig`, op desktop, iPad liggend, iPad staand en telefoon. Vergelijking: [desktop](../v3-stijlbeeld/toets-instellen-desktop.jpg) · [iPad liggend](../v3-stijlbeeld/toets-instellen-ipad-liggend.jpg).
+
+**Resultaat:** gemeten na een toets van 10 vragen met 3 overgeslagen. Variant (a) op desktop en iPad liggend, variant (b) op desktop. Vergelijking: [(a) desktop](../v3-stijlbeeld/toets-resultaat-eiland-desktop.jpg) · [(a) iPad liggend](../v3-stijlbeeld/toets-resultaat-eiland-ipad-liggend.jpg) · [(b) desktop](../v3-stijlbeeld/toets-resultaat-kaart-desktop.jpg).
+
+| Check | Drempel |
+| --- | --- |
+| Eén display-tekst | Instellen: "Toets"; resultaat: de score |
+| Hoofdstukchips | Alle 11 en Alles; drie kolommen (telefoon: twee); voluit op één regel; vinkje ⇔ gekozen, ook direct na een tik |
+| Vorm en lengte | Drie tegels met lijniconen (Beide: twee); lengte zonder radio |
+| Start toets | Eén primaire pil met het play-icoon, zo breed als het instelblok |
+| Raster instellen (≥ 1024) | Het blok op de binnenrand van de plaat, 6 (desktop) of 7 (iPad liggend) kolommen (±1,5 px); Nino ernaast, binnen de plaat, `aria-hidden` |
+| Resultaat: kaart | Variant als Reis ((a) reliëf geclipt met de eigen clip; (b) glaskaart); de 10 markeringen binnen de kaart |
+| Resultaat: paneel | Glas; × per fout (CSS); de primaire pil met icoon; vier tegels met lijnicoon |
+| Raster resultaat (≥ 1024) | Scorekaart en paneel op één bovenlijn (±1 px); kaart 7 en paneel 5 kolommen (±1,5 px) |
+| Overflow | Geen horizontale scroll |
+
+Alle checks zijn groen. In `qa-v3-faseb.py` en `qa-v3-glas.py` meten de checks voor variant (a) nu de silhouetgroep van de buurlanden: dekking 0,3–0,8, de vervaging, en originelen die niets meer tekenen.

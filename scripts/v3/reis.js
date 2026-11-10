@@ -225,7 +225,7 @@
  function render(){
   const home=$('#routeHome');if(!home)return;
   if(root.parentNode!==home)home.prepend(root);
-  root.dataset.theme=window.TOPO_V3_THEME||'italia';
+  root.dataset.theme=window.TOPO_V3_THEME||'viola';
   const m=model();
   if(!ui.selected||!m.chapters.some(c=>c.id===ui.selected))ui.selected=(m.active&&m.chapters.find(c=>c.id===m.active.chapterId)||m.next||m.chapters.at(-1)).id;
   const c=m.chapters.find(x=>x.id===ui.selected);

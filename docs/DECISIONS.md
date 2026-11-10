@@ -510,3 +510,34 @@ Review-fix 3 (ook in `DESIGN_AUDIT_V3_0.md`: "het dubbele label weg"). In de ken
   - **voortgang per land**, met één profiel;
   - het **Reisboekje** wordt een paspoort met een hoofdstuk per land.
 - **Gevolg voor de architectuur:** `docs/v3/ARCHITECTUUR.md` (Codex, `arch/v3-runtime`) beschrijft de grens tussen landpakket en app, en het opslagschema per land met migratie van de bestaande Italië-saves.
+
+## 2026-11-10 — V3.0 fase A, stap 1: canvas en glas
+
+Uitvoering van de visuele herziening, alleen presentatie. Bronnen:
+- `docs/v3/DESIGN_AUDIT_V3_0.md`;
+- `docs/v3/renders/README.md`: § Ingetogenheid, § Voortgang (Landschap/Werkblad) en § Raster en uitlijning. Die gaan voor de renders.
+
+Nieuw bestand: `scripts/v3/glas.css`, geladen na `shell.css`.
+- **Thema:** viola is de standaard (tokens, `reis.js`, `les.js`, preview). Italia blijft als vergelijking beschikbaar via `#…/italia` en de previewbalk.
+- **Canvas:** de ondoorzichtige plaat is weg. Het artwork (BG-01) is het canvas op desktop en iPad, ook in lessen en in de Focus Mode van de iPad. Het kaartvlak van de les is geen zeekleurige plaat meer.
+- **Eén frame, op elk scherm identiek:**
+  - marge 28 px (iPad 20), radius 28, een fijne glasrand;
+  - in lessen tekent `body::after` hetzelfde frame;
+  - de zijbalk is de linkerkolom van het frame (240 px op desktop, rail 76 op iPad), van transparant glas (wit 34%, blur).
+- **Landschap** (Reis, Oefenen, Les, Toets resultaat, Beloningen): het inhoudsvlak is transparant.
+  - De panelen zweven op één niveau: wit 58%, blur 24, een binnenrand van 1 px, een kleine schaduw, radius 28.
+  - Goot 24 px (iPad 16); de binnenmarge is goot + 8.
+  - Kaarten binnen een paneel zijn lichter en hebben geen schaduw (niet gestapeld).
+  - Oefenen is zo groot als zijn inhoud.
+- **Werkblad** (Voortgang, Toets instellen): één lichte plaat (92%) vult het inhoudsvlak. Het artwork blijft langs de randen en onder de zijbalk zichtbaar.
+- **Wash:** `body::before`, fixed, met z-index −1: een lichte lavendelwitte gradiënt (sterker links) en `saturate(.72)` op het artwork. Hij ligt onder alle inhoud, dus nooit op de kaart.
+- **Verminderde transparantie en meer contrast:** glas en plaat worden ondoorzichtig (`--v3-surface`), zonder blur.
+- **Contrast-AA op glas:** `--v3-ink2` gaat van #66706d naar #525b58 en `--v3-done` van #2f9a5b naar #24804b (wit vinkje 4,9:1). Typografie, knoppen, iconen en de inkt `#2A2440` volgen in fase B.
+- **Telefoon:** ongewijzigd (geen achtergrond, zoals besloten).
+- **Nog niet in stap 1:** het 12-koloms raster en de gedeelde lijnen per scherm. Die horen bij de schermen in fase B.
+- **QA-drempels** (`scripts/qa-v3-glas.py`, desktop en iPad liggend):
+  - **frame:** identiek op alle tabs (±1 px) en gelijk aan de marge;
+  - **Landschap:** achtergrond zichtbaar op ≥ 30% en geen dekkend paneel (alfa ≥ 0,9) breder dan 70%. Een meetpunt telt mee als er geen kaart, beeld of dekkende laag boven ligt; glas met een gestapelde alfa ≤ 0,75 telt als zichtbaar;
+  - **Werkblad:** artwork zichtbaar op ≥ 12%;
+  - **contrast AA:** per tekst tegen de werkelijk gerenderde pixels.
+- **Bekende uitzondering:** met verminderde transparantie is de stappenbalk van de les ondoorzichtig en breder dan 70%. De QA rapporteert het, zonder af te keuren.

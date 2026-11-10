@@ -251,7 +251,7 @@ async def main():
         await pg.goto(HTML.as_uri() + '#bezig/viola'); await settle(pg)
         res['theme'] = {'viola': await pg.evaluate('getComputedStyle(document.querySelector(".v3Actions .primary")).backgroundColor')}
         await pg.screenshot(path=str(OUT / 'bezig-viola-desktop.png'))
-        await pg.close(); pg = await ctx.new_page(); await pg.goto(HTML.as_uri() + '#bezig'); await settle(pg)
+        await pg.close(); pg = await ctx.new_page(); await pg.goto(HTML.as_uri() + '#bezig/italia'); await settle(pg)
         res['theme']['italia'] = await pg.evaluate('getComputedStyle(document.querySelector(".v3Actions .primary")).backgroundColor')
         # Keyboard: Tab order sidebar -> list 1..11 -> panel action.
         order = []

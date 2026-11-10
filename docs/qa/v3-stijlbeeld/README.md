@@ -1,7 +1,7 @@
 # V3 stijlbeeld — Reis op renderniveau, met de renderassets
 
 **Kandidaat:** `output/html/TOPO-V3-Reis-Preview.html`, SHA256 `71c2f49bf65ae04e9a1908bd7661cf8889562c0af4b3f582fd9cacfdfc4131d4`. Niet in Git; reproduceer met `node scripts/build-v3-preview.mjs`. Basis: ongewijzigde V2.0.2-`index.html` (`3aced3c3…304f5a`) + `scripts/v3/` + `assets/v3/scenes/` + `assets/v3/render/` (exports en manifest van `art/v3-render-assets` @ `05ab1d0`, byte-gelijk; portret, Roma en Napoli vernieuwd met het gesloten blauwe werkshirt) + de z8-renderlagen (`assets/discovery/terrain-z8-render*`, van `v3/relief-z8` @ `2a7b0cf`).
-**Openen:** `file://…#bezig` (Italia, BG-01), `#bezig/bg02` en `#bezig/bg03` (alternatieve achtergronden; ook in de previewbalk), `#bezig/viola` (Viola), `#thema-bezig` (Italia en Viola naast elkaar, desktop) en `#thema-ipad-bezig` (iPad liggend). In de previewbalk: **Italia + Viola**.
+**Openen:** `file://…#bezig` (Italia, BG-01), `#bezig/bg02` en `#bezig/bg03` (alternatieve achtergronden; ook in de previewbalk), `#bezig` (Viola, standaard sinds 10-11), `#bezig/italia` (Italia), `#thema-bezig` (Italia en Viola naast elkaar, desktop) en `#thema-ipad-bezig` (iPad liggend). In de previewbalk: **Italia + Viola**.
 **Opdracht:** stijlbeeld volgens `docs/v3/ARTWORK_BRIEF.md` › Volgorde 1 en besluit "Renderniveau" (DECISIONS 2026-11-09). Er zijn geen nieuwe beelden gegenereerd; de renderassets zijn ongewijzigd overgenomen (SHA256 = manifest, gecontroleerd door de build én de QA).
 **Oordeel:** technisch geslaagd · **eigenaar: richting akkoord, accent Italia (9-11)**; renderassets ter beoordeling · Hermes: modelcheck en hertest open. Geen merge of deployment.
 
@@ -11,12 +11,12 @@
 | --- | --- |
 | Kaart en hoofdstukken (render 1), Viola | [vergelijking](vergelijking-r1-kaart-desktop-viola.jpg) |
 | Kaart en hoofdstukken (render 1), Italia | [vergelijking](vergelijking-r1-kaart-desktop-italia.jpg) |
-| Hoofdstukbeelden (render 5) | [vergelijking](vergelijking-r5-hoofdstukken-desktop-italia.jpg) |
-| iPad liggend | [vergelijking](vergelijking-r1-kaart-ipad-landscape-italia.jpg) |
+| Hoofdstukbeelden (render 5) | [vergelijking](vergelijking-r5-hoofdstukken-desktop-viola.jpg) |
+| iPad liggend | [vergelijking](vergelijking-r1-kaart-ipad-landscape-viola.jpg) |
 | Italia en Viola naast elkaar | [desktop](italia-viola-desktop.png) · [iPad liggend](italia-viola-ipad.png) |
-| Renderassets | [BG-01 (standaard)](desktop-italia.png) · [BG-02 Meer](desktop-bg02.png) · [BG-03 Kust](desktop-bg03.png) · [kop Roma](desktop-kop-roma.png) |
+| Renderassets | [BG-01 (standaard)](desktop-viola.png) · [BG-02 Meer](desktop-bg02.png) · [BG-03 Kust](desktop-bg03.png) · [kop Roma](desktop-kop-roma.png) |
 | Beloningen | [desktop, alles af](beloningen-desktop-alles.png) · [desktop, halte bezig](beloningen-desktop-bezig.png) · [iPad liggend](beloningen-ipad-landscape-alles.png) · [iPad staand](beloningen-ipad-portrait-alles.png) · [telefoon](beloningen-phone-alles.png) |
-| Losse schermen | [desktop Italia](desktop-italia.png) · [desktop Viola](desktop-viola.png) · [iPad Italia](ipad-landscape-italia.png) · [iPad Viola](ipad-landscape-viola.png) · [telefoon](phone-italia.png) · [Verminder transparantie](desktop-verminder-transparantie.png) |
+| Losse schermen | [desktop Italia](desktop-italia.png) · [desktop Viola](desktop-viola.png) · [iPad Italia](ipad-landscape-italia.png) · [iPad Viola](ipad-landscape-viola.png) · [telefoon](phone-viola.png) · [Verminder transparantie](desktop-verminder-transparantie.png) |
 
 De renders zelf staan niet in Git (bestanden van de eigenaar, `~/Downloads`). In de vergelijkingen staan ze verkleind naast het stijlbeeld.
 
@@ -25,8 +25,8 @@ De renders zelf staan niet in Git (bestanden van de eigenaar, `~/Downloads`). In
 | Punt | Wat je ziet | Bewijs (`results.json › summary`) | Oordeel |
 | --- | --- | --- | --- |
 | 1. Achtergrond | **BG-01** (Toscane) full-bleed achter de app; **BG-02** (meer) en **BG-03** (kust) schakelbaar in de previewbalk (`#…/bg02`, `/bg03`). Telefoon: geen achtergrond. Het V2-panorama is alleen nog terugval | `backdropIsBG01` (SHA256 = manifest), `bgAlternativesSwitch`, `phoneNoBackdrop` | ✓ |
-| 1. Zwevend venster | Zacht matglas (80% oppervlak, blur 26 px), hoeken 24, zachte schaduw, 24 px vrij rondom. Lijst als lichte kaart op het glas | `floatingGlassWindow` (radius 24px, blur, schaduw, alfa < 1, marge ≥ 16) | ✓ |
-| 1. Verminder transparantie | Bij macOS "Verminder transparantie" wordt het venster ondoorzichtig; het landschap blijft | `reducedTransparencyOpaque` | ✓ — **let op:** deze instelling staat aan op de Mac waar dit is gebouwd, dus daar zie je het glas niet |
+| 1. Glaspanelen (fase A, 10-11) | Geen vensterplaat meer. Er is één frame (marge 28, radius 28, glasrand). De zijbalk is de glazen linkerkolom van dat frame. Lijst en paneel zweven als glas (wit 58%, blur 24 px, binnenrand 1 px, kleine schaduw, radius 28). Dit vervangt het zwevende venster van 9 november | `glassPanels` | ✓ |
+| 1. Verminder transparantie | Bij macOS "Verminder transparantie" worden de panelen ondoorzichtig; het landschap blijft | `reducedTransparencyOpaque` | ✓ — **let op:** deze instelling staat aan op de Mac waar dit is gebouwd, dus daar zie je het glas niet |
 | 2. Hoofdstukbeelden | Miniatuur per rij voor alle 11 hoofdstukken: de 8 #75-scènes plus **SCENE-ROMA** (Steden 7–12), **SCENE-VENEZIA** (13–18) en **SCENE-NAPOLI** (19–23). De gekozen scène staat als kop (16:9) boven de titel; op telefoon geen kop (ruimte voor titel en actie) | `miniaturesMatchManifest` (11/11, 480×270, SHA256 = scenes- of rendermanifest), `kopsMatchManifest` (elke rij gekozen, kop-SHA256 = manifest, kop vóór de titel), `phoneNoKop` | ✓ |
 | Zijbalk | **NINO-PORTRET** in plaats van de `guide`-uitsnede (Reis en les) | `portraitIsNinoPortret` | ✓ |
 | Iconen | **IC-slice** bij de pizzateller, **IC-vespa** bij de ritten | `counterIcons` | ✓ |
@@ -76,3 +76,15 @@ De #75-scènes zitten niet in `index.html`; hergebruik is daarom niet mogelijk. 
 2. **Renderassets:** BG-01..03 akkoord (uitzondering bronresolutie). Portret, Roma en Napoli zijn vernieuwd (shirt) en wachten op de **Hermes-hertest**; Venezia wacht op de modelcheck; iconen en VE-01 staan "ter beoordeling eigenaar". De kaart en de leerinhoud zijn er niet door veranderd (46/46).
 3. **Postkaarten:** de tegel volgt de regel van het V2-Reisboekje (2 na Eilanden, +1 bij rit 3 en rit 6); de QA telt ze in het boek zelf na.
 4. **Telefoon:** links van het kaartcanvas heeft de bron geen landgeometrie (Frankrijk stopt bij x = 0), dus daar staat zee. Dat speelde al vóór het stijlbeeld. Telefoon valt buiten deze opdracht; er is geen geometrie toegevoegd.
+
+## Fase A voor en na
+
+Voor = pin `43e56d1`, na = de huidige stap van fase A. Links staat de oude build, rechts de nieuwe, op hetzelfde formaat. Gemaakt door `scripts/qa-v3-glas.py` (met `VOOR_DIR`); de metingen staan in [`../v3-glas/`](../v3-glas/README.md).
+
+| Scherm | Desktop 1440×900 | iPad liggend 1180×820 |
+| --- | --- | --- |
+| Reis | [voor/na](voor-na-reis-desktop.jpg) | [voor/na](voor-na-reis-ipad-liggend.jpg) |
+| Les | [voor/na](voor-na-les-desktop.jpg) | [voor/na](voor-na-les-ipad-liggend.jpg) |
+| Oefenen | [voor/na](voor-na-oefenen-desktop.jpg) | [voor/na](voor-na-oefenen-ipad-liggend.jpg) |
+| Toets | [voor/na](voor-na-toets-desktop.jpg) | [voor/na](voor-na-toets-ipad-liggend.jpg) |
+| Voortgang | [voor/na](voor-na-voortgang-desktop.jpg) | [voor/na](voor-na-voortgang-ipad-liggend.jpg) |

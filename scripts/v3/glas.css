@@ -1,0 +1,100 @@
+/* TOPO V3.0 — visuele herziening fase A, stap 1: canvas en glas (docs/v3/DESIGN_AUDIT_V3_0.md; docs/v3/renders/README.md
+   § Ingetogenheid, § Voortgang (Landschap/Werkblad) en § Raster en uitlijning). Desktop and iPad (≥ 768 px):
+   * the artwork is the canvas on every screen, lessons included; a light wash and less saturation behind the UI,
+     painted below everything (z-index −1), so never on the map;
+   * one frame, identical on every tab: margin 28 px (iPad 20), radius 28, a fine glass edge. The sidebar is the
+     frame's left column (240 px desktop, rail 76 on iPad), transparent glass;
+   * Landschap (Reis, Oefenen, Les, Toets resultaat, Beloningen): the content area is transparent, the panels float
+     inside it on one level (translucent white, blur, 1 px inner edge, small soft shadow, radius 28), the inner margin
+     is the gutter + 8 (desktop 24 + 8, iPad 16 + 8);
+   * Werkblad (Voortgang, Toets instellen): one light plate (±92%) fills the content area; artwork along the edges and
+     under the sidebar;
+   * typography, buttons and icons stay as they are (phase B). Reduced transparency / more contrast: opaque, no blur.
+   Phone: unchanged. */
+.v3,body.v3Les{
+ --v3-glass:rgba(255,255,255,.58);
+ --v3-glass-strong:rgba(255,255,255,.74);
+ --v3-glass-side:rgba(255,255,255,.34);
+ --v3-plate:rgba(251,250,254,.92);
+ --v3-glass-filter:blur(24px) saturate(1.15);
+ --v3-glass-shadow:inset 0 0 0 1px rgba(255,255,255,.7),0 1px 2px rgba(28,40,44,.06),0 10px 28px -14px rgba(28,40,44,.28);
+ --v3-radius-glass:28px;
+ --v3-frame-m:28px;--v3-gut:24px;--v3-side-w:240px;--v3-list-w:372px;--v3-panel-w:300px;
+ --v3-inner:calc(var(--v3-gut) + 8px);
+}
+@media (max-width:1279px){.v3,body.v3Les{--v3-frame-m:20px;--v3-gut:16px;--v3-side-w:76px;--v3-list-w:318px;--v3-panel-w:260px}}
+@media (min-width:768px){
+ /* Canvas + wash. */
+ body.v3Home,body.v3Les{background:#e9e4da var(--v3-pano,none) center/cover no-repeat fixed}
+ body:is(.v3Home,.v3Les)::before{content:"";position:fixed;inset:0;z-index:-1;pointer-events:none;
+  background:linear-gradient(90deg,rgba(249,247,255,.46) 0,rgba(249,247,255,.34) 38%,rgba(249,247,255,.16) 62%,rgba(249,247,255,.28) 100%);
+  -webkit-backdrop-filter:saturate(.72);backdrop-filter:saturate(.72)}
+
+ /* The frame. */
+ .v3Reis{width:calc(100% - 2*var(--v3-frame-m));height:calc(100dvh - var(--v3-bar,0px) - 2*var(--v3-frame-m));margin:var(--v3-frame-m) auto;padding:0;
+  grid-template-columns:var(--v3-side-w) var(--v3-list-w) minmax(0,1fr);column-gap:var(--v3-gut);row-gap:0;
+  background:none;-webkit-backdrop-filter:none;backdrop-filter:none;border-radius:var(--v3-radius-glass);overflow:hidden;
+  box-shadow:inset 0 0 0 1px rgba(255,255,255,.6),0 18px 50px -30px rgba(28,40,44,.35)}
+ .v3Reis>*{background:transparent}
+ /* Sidebar: the frame's left column, transparent glass. */
+ .v3Reis>.v3Side{border-radius:var(--v3-radius-glass) 0 0 var(--v3-radius-glass);border:0;border-right:1px solid rgba(255,255,255,.55);
+  background:var(--v3-glass-side);-webkit-backdrop-filter:var(--v3-glass-filter);backdrop-filter:var(--v3-glass-filter)}
+ /* Landschap: panels float on the inner margin. */
+ .v3Reis>:is(.v3List,.v3Main,.v3Rewards),.v3Reis>.v3View{margin:var(--v3-inner) var(--v3-inner) var(--v3-inner) 8px}
+ .v3Reis>.v3List{margin-right:0}
+ .v3Reis>:is(.v3List,.v3Rewards),.v3Reis>.v3View,.v3Main>:is(.v3Top,.v3Panel){
+  background:var(--v3-glass);-webkit-backdrop-filter:var(--v3-glass-filter);backdrop-filter:var(--v3-glass-filter);
+  box-shadow:var(--v3-glass-shadow);border:0;border-radius:var(--v3-radius-glass)}
+ .v3List{padding-right:var(--v3-s3)}
+ .v3Rows{background:transparent;box-shadow:none;padding:0}
+ .v3Main{gap:var(--v3-gut);background:transparent!important;overflow:visible;border-radius:0}
+ .v3Top{padding:var(--v3-s3) var(--v3-s5)}
+ @media (min-width:1024px){.v3Main{grid-template-columns:minmax(0,1fr) var(--v3-panel-w)}}
+ .v3Main>.v3Panel{align-self:start;padding:var(--v3-s6)!important}
+ .v3MapStage{padding:0}
+ .v3View .v3Card,.v3View .v3Field.v3Card{background:rgba(255,255,255,.42);box-shadow:none}
+ .v3Rewards :is(.v3Book,.v3Ride,.v3Tile){background:rgba(255,255,255,.42);box-shadow:none}
+ /* Oefenen (Landschap): as large as its content; the canvas stays visible beside it. */
+ .v3Reis[data-view=oefenen]>.v3View-oefenen{justify-self:start;align-self:start;width:min(calc(100% - var(--v3-inner) - 8px),760px);max-height:calc(100% - 2*var(--v3-inner))}
+ /* Werkblad (Voortgang, Toets instellen): one light plate fills the content area. */
+ .v3Reis[data-view=voortgang]>.v3View-voortgang,.v3Reis[data-view=toets]>.v3View-toets{margin:0 0 0 calc(-1 * var(--v3-gut));padding:var(--v3-inner) calc(var(--v3-inner) + 8px);
+  background:var(--v3-plate);-webkit-backdrop-filter:none;backdrop-filter:none;box-shadow:none;border-radius:0}
+
+ /* Lessons, desktop: the same frame; the sidebar is its left column; steps bar and panel float inside. */
+ body.v3Les:not([data-focus-shell=true]){--v3-side:var(--v3-side-w)}
+ body:is(.v3Les)::after{content:"";position:fixed;z-index:39;pointer-events:none;top:calc(var(--v3-bar,0px) + var(--v3-frame-m));left:var(--v3-frame-m);right:var(--v3-frame-m);bottom:var(--v3-frame-m);
+  border-radius:var(--v3-radius-glass);box-shadow:inset 0 0 0 1px rgba(255,255,255,.6),0 18px 50px -30px rgba(28,40,44,.35)}
+ body.v3Les[data-focus-shell=true]::after{top:calc(var(--focus-safe-top,0px) + var(--focus-vv-top,0px) + var(--v3-frame-m))}
+ body.v3Les:not([data-focus-shell=true]) .v3ShellNav{top:calc(var(--v3-bar,0px) + var(--v3-frame-m));left:var(--v3-frame-m);bottom:var(--v3-frame-m);border-right:1px solid rgba(255,255,255,.55);
+  background:var(--v3-glass-side);-webkit-backdrop-filter:var(--v3-glass-filter);backdrop-filter:var(--v3-glass-filter);border-radius:var(--v3-radius-glass) 0 0 var(--v3-radius-glass);overflow:hidden}
+ body.v3Les:not([data-focus-shell=true]) :is(.v3LesBar,main.layout){margin-left:calc(var(--v3-frame-m) + var(--v3-side) + var(--v3-inner))}
+ body.v3Les:not([data-focus-shell=true]) .v3LesBar{top:calc(var(--v3-frame-m) + var(--v3-inner));margin-top:calc(var(--v3-frame-m) + var(--v3-inner));margin-right:calc(var(--v3-frame-m) + var(--v3-inner));border-bottom:0;
+  background:var(--v3-glass);-webkit-backdrop-filter:var(--v3-glass-filter);backdrop-filter:var(--v3-glass-filter);box-shadow:var(--v3-glass-shadow);border-radius:var(--v3-radius-glass)}
+ body.v3Les:not([data-focus-shell=true]) main.layout{margin-right:calc(var(--v3-frame-m) + var(--v3-inner));padding:var(--v3-gut) 0 calc(var(--v3-frame-m) + var(--v3-inner));gap:var(--v3-gut)}
+ body.v3Les:not([data-focus-shell=true]) aside.panel{top:calc(var(--v3-frame-m) + var(--v3-inner) + 72px + var(--v3-gut));background:var(--v3-glass);-webkit-backdrop-filter:var(--v3-glass-filter);backdrop-filter:var(--v3-glass-filter);box-shadow:var(--v3-glass-shadow);border-radius:var(--v3-radius-glass)}
+ body.v3Les #ninoMeter{background:rgba(255,255,255,.42)}
+ /* The lesson map fits inside the frame: viewport − bar − frame − inner margins − steps bar − gutter − map tools. */
+ body.v3Les:not([data-focus-shell=true]) .routeLessonLayout .mapArea{width:min(100%,calc((100dvh - var(--v3-bar,0px) - 2*var(--v3-frame-m) - 2*var(--v3-inner) - 72px - var(--v3-gut) - 64px) * 890 / 1235))}
+
+ /* Lessons, iPad (Focus Mode): the same frame (margin 20); rail = its left column; steps bar floats; the map area
+    lets the canvas through. */
+ body.v3Les[data-focus-shell=true]{--v3-rail:var(--v3-side-w);--v3-ftop:calc(var(--focus-safe-top,0px) + var(--focus-vv-top,0px) + var(--v3-frame-m))}
+ body.v3Les[data-focus-shell=true] .v3ShellNav{top:var(--v3-ftop);left:var(--v3-frame-m);bottom:var(--v3-frame-m);border-right:1px solid rgba(255,255,255,.55);
+  background:var(--v3-glass-side);-webkit-backdrop-filter:var(--v3-glass-filter);backdrop-filter:var(--v3-glass-filter);border-radius:var(--v3-radius-glass) 0 0 var(--v3-radius-glass);overflow:hidden}
+ body.v3Les[data-focus-shell=true] .v3LesBar{left:calc(var(--v3-frame-m) + var(--v3-rail) + var(--v3-inner));right:calc(var(--v3-frame-m) + var(--v3-inner));top:calc(var(--v3-ftop) + var(--v3-inner));
+  background:var(--v3-glass);-webkit-backdrop-filter:var(--v3-glass-filter);backdrop-filter:var(--v3-glass-filter);box-shadow:var(--v3-glass-shadow);border-radius:var(--v3-radius-glass);border-bottom:0}
+ body.v3Les[data-focus-mode=true] .mapCard{left:calc(var(--v3-frame-m) + var(--v3-rail) + var(--v3-inner));right:calc(var(--v3-frame-m) + var(--v3-inner));top:calc(var(--v3-ftop) + var(--v3-inner) + var(--v3-lesbar) + var(--v3-gut));
+  height:calc(var(--focus-layout-height,100svh) - var(--v3-lesbar) - 2*var(--v3-frame-m) - 2*var(--v3-inner) - var(--v3-gut) - var(--focus-safe-top,0px) - var(--focus-safe-bottom,0px));background:transparent;border-radius:0}
+ body.v3Les[data-focus-mode=true] .mapTools{background:transparent}
+ body.v3Les[data-focus-shell=true]:not([data-focus-mode=true]) main.layout{margin-left:calc(var(--v3-frame-m) + var(--v3-rail) + var(--v3-inner))!important;margin-right:calc(var(--v3-frame-m) + var(--v3-inner))!important}
+ body.v3Les[data-focus-shell=true] :is(#focusAnswerSheet,#focusLearnBar){margin-left:calc((var(--v3-frame-m) + var(--v3-rail)) / 2);background:var(--v3-glass-strong);-webkit-backdrop-filter:var(--v3-glass-filter);backdrop-filter:var(--v3-glass-filter);box-shadow:var(--v3-glass-shadow),0 12px 40px rgba(29,37,35,.16)}
+ body.v3Les .mapArea.atlasViewport{background:transparent}
+ body.v3Les .mapTools :is(.button,button){background:var(--v3-glass-strong);color:var(--v3-ink)}
+ body.v3Les .mapTools button:disabled{color:var(--v3-ink2)}
+}
+/* Reduced transparency or more contrast: opaque panels and plate, no blur. */
+@media (min-width:768px) and (prefers-reduced-transparency:reduce),(min-width:768px) and (prefers-contrast:more){
+ .v3,body.v3Les{--v3-glass:var(--v3-surface);--v3-glass-strong:var(--v3-surface);--v3-glass-side:var(--v3-surface);--v3-plate:var(--v3-surface);--v3-glass-filter:none}
+ body:is(.v3Home,.v3Les)::before{-webkit-backdrop-filter:none;backdrop-filter:none}
+ .v3View .v3Card,.v3Rewards :is(.v3Book,.v3Ride,.v3Tile),body.v3Les #ninoMeter{background:var(--v3-surface2)}
+}

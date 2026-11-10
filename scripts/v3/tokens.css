@@ -12,17 +12,18 @@
  --v3-foot:600 13px/18px var(--v3-font);
  --v3-s1:4px;--v3-s2:8px;--v3-s3:12px;--v3-s4:16px;--v3-s5:20px;--v3-s6:24px;--v3-s8:32px;--v3-s12:48px;
  /* Neutral structure (shared by all countries). */
- --v3-canvas:#f4f1ea;--v3-surface:#fffdf9;--v3-surface2:#f8f5ef;--v3-ink:#1d2523;--v3-ink2:#66706d;--v3-line:rgba(29,37,35,.09);
- --v3-done:#2f9a5b;--v3-gold:#b8860b;--v3-gold-bg:#fff4cf;--v3-locked:#9aa39f;--v3-focus:#1d6fd8;
+ --v3-canvas:#f4f1ea;--v3-surface:#fffdf9;--v3-surface2:#f8f5ef;--v3-ink:#1d2523;--v3-ink2:#525b58;--v3-line:rgba(29,37,35,.09);
+ --v3-done:#24804b;--v3-gold:#b8860b;--v3-gold-bg:#fff4cf;--v3-locked:#9aa39f;--v3-focus:#1d6fd8;
  --v3-radius:16px;--v3-radius-btn:12px;--v3-radius-shell:24px;
  --v3-shadow:0 1px 2px rgba(29,37,35,.05),0 10px 30px rgba(29,37,35,.06);
  --v3-ease:cubic-bezier(.2,.8,.2,1);--v3-fast:160ms;--v3-move:280ms;
- /* Country theme: Italia (default). */
- --v3-accent:#b9502f;--v3-accent-press:#9c4126;--v3-accent-soft:#f6e6dd;--v3-accent-ink:#fff;
+ /* UI palette: Viola (default, owner 10-11); the country lives in the artwork and the flag. */
+ --v3-accent:#5b45e0;--v3-accent-press:#4834c4;--v3-accent-soft:#ebe7fd;--v3-accent-ink:#fff;
  --v3-flag:linear-gradient(90deg,#1f8a4c 0 33.3%,#f4f1ea 0 66.6%,#c8382c 0);
 }
 .v3{font:var(--v3-body);color:var(--v3-ink);-webkit-font-smoothing:antialiased}
-.v3[data-theme=viola],body.v3Les[data-v3-theme=viola]{--v3-accent:#5b45e0;--v3-accent-press:#4834c4;--v3-accent-soft:#ebe7fd}
+/* Italia (terracotta): kept for comparison in the preview (#…/italia). */
+.v3[data-theme=italia],body.v3Les[data-v3-theme=italia]{--v3-accent:#b9502f;--v3-accent-press:#9c4126;--v3-accent-soft:#f6e6dd}
 .v3 *,.v3 *::before,.v3 *::after{box-sizing:border-box}
 .v3 :is(h1,h2,h3,p,ol,ul){margin:0;padding:0}
 .v3 :is(ol,ul){list-style:none}

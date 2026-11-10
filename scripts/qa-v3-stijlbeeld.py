@@ -2,7 +2,7 @@
 """TOPO V3 — stijlbeeld (renderniveau) QA for Reis.
 
 Checks the style image against the brief (docs/v3/ARTWORK_BRIEF.md): BG-01 full-bleed behind the app on desktop and
-iPad (BG-02/BG-03 via #…/bg02 and /bg03; none on phone), the floating frosted-glass window (radius 24, soft shadow),
+iPad (BG-02/BG-03 via #…/bg02 and /bg03; none on phone), separate glass panels on one level (radius 28, blur, 1 px inner edge, soft shadow; phase A 10-11),
 the render assets from assets/v3/render/manifest.json (NINO-PORTRET, IC-slice/IC-vespa at the counters, kop per
 chapter, the Beloningen view with VE-01 and IC-pizza/stamp/gold/postcard, counts checked against the V2 Reisboekje),
 the 11 chapter miniatures (8 #75 scenes from assets/v3/scenes/manifest.json + Roma/Venezia/Napoli; byte-checked), and the z8
@@ -65,6 +65,10 @@ PROBE = r'''() => {
           kopBeforeTitle: (n => !!n && n.nextElementSibling?.id === 'v3Title')(document.querySelector('.v3Panel .v3Kop')), selected: document.querySelector('.v3Row[aria-current], .v3Row[aria-pressed=true], .v3Row.isSelected')?.dataset.chapter},
     window: {radius: w.borderTopLeftRadius, backdropFilter: w.backdropFilter, shadow: w.boxShadow !== 'none', bgAlpha: alpha,
              gaps: [Math.round(r.left), Math.round(innerWidth - r.right), Math.round(r.top), Math.round(innerHeight - r.bottom)]},
+    // Phase A (10-11): no window plate; sidebar, list and panel are separate glass panels on one level.
+    panels: ['.v3Reis > .v3Side', '.v3Reis > .v3List', '.v3Main > .v3Panel'].map(q => { const n = document.querySelector(q), s = cs(n), c = s.backgroundColor;
+      const a = (m => m.length > 3 ? +m[3] : 1)(c.match(/[\d.]+/g) || []);
+      return {q, radius: s.borderTopLeftRadius, backdropFilter: s.backdropFilter, shadow: s.boxShadow !== 'none', bgAlpha: a}; }),
     rows,
     relief: {mode: map.dataset.relief, terrain: cs(terrain).display, pressed: document.querySelector('.v3Switch [aria-pressed=true]')?.textContent,
              layers: {terrain: href(terrain.querySelector('image')), sea: href(map.querySelector('.v3RSea')), shadow: href(map.querySelector('.v3RShadow')), coast: href(map.querySelector('.v3RCoast'))},
@@ -152,9 +156,9 @@ async def main():
         b = await p.chromium.launch(executable_path=exe) if exe else await p.chromium.launch()
         res['browser'] = b.version
         for vp, (w, h) in VIEWPORTS.items():
-            for theme in (['italia', 'viola'] if vp != 'phone' else ['italia']):
+            for theme in (['viola', 'italia'] if vp != 'phone' else ['viola']):
                 key = f'{vp}-{theme}'
-                pg, errors = await page(b, w, h, 'bezig' + ('/viola' if theme == 'viola' else ''))
+                pg, errors = await page(b, w, h, 'bezig' + ('/italia' if theme == 'italia' else ''))
                 run = await pg.evaluate(PROBE); run['geometry'] = await pg.evaluate(GEOMETRY)
                 run['theme'] = await pg.evaluate('getComputedStyle(document.querySelector(".v3Reis")).getPropertyValue("--v3-accent").trim()')
                 # Miniatures: decoded bytes equal the manifest; missing scenes show the chapter icon.
@@ -192,7 +196,7 @@ async def main():
         res['errors'] += errors; await pg.close()
         # Reduced transparency (macOS "Verminder transparantie"): the window turns opaque, the backdrop stays.
         pg, errors = await page(b, 1440, 900, 'bezig', reduce=True)
-        res['reducedTransparency'] = (await pg.evaluate(PROBE))['window']; await pg.screenshot(path=str(OUT / 'desktop-verminder-transparantie.png')); await pg.close()
+        res['reducedTransparency'] = (await pg.evaluate(PROBE))['panels']; await pg.screenshot(path=str(OUT / 'desktop-verminder-transparantie.png')); await pg.close()
         # Theme pairs: Italia and Viola side by side.
         for name, hash in [('italia-viola-desktop', 'thema-bezig'), ('italia-viola-ipad', 'thema-ipad-bezig')]:
             pg, errors = await page(b, 1440, 900, hash)
@@ -207,8 +211,11 @@ async def main():
         'backdropIsBG01': every(big, lambda r: r['backdrop']['sha256'] == BG_SHA['bg01'] and r['backdrop']['size'] == 'cover'),
         'bgAlternativesSwitch': all(v['key'] == k and v['sha256'] == BG_SHA[k] and v['switch'] == ['bezig', 'bezig/bg02', 'bezig/bg03'] for k, v in res['bgAlternatives'].items()),
         'phoneNoBackdrop': every({k: v for k, v in runs.items() if k.startswith('phone')}, lambda r: not r['backdrop']['image']),
-        'floatingGlassWindow': every(big, lambda r: r['window']['radius'] == '24px' and 'blur' in r['window']['backdropFilter'] and r['window']['shadow'] and r['window']['bgAlpha'] < 1 and min(r['window']['gaps']) >= 16),
-        'reducedTransparencyOpaque': res['reducedTransparency']['backdropFilter'] == 'none' and res['reducedTransparency']['bgAlpha'] == 1,
+        # One frame (radius 28, no plate); the sidebar is its glass left column; list and panel float as glass with a shadow.
+        'glassPanels': every(big, lambda r: r['window']['bgAlpha'] == 0 and r['window']['backdropFilter'] == 'none' and r['window']['radius'] == '28px' and min(r['window']['gaps']) >= 16
+                             and 'blur' in r['panels'][0]['backdropFilter'] and r['panels'][0]['bgAlpha'] < 1
+                             and all(p['radius'] == '28px' and 'blur' in p['backdropFilter'] and p['shadow'] and p['bgAlpha'] < 1 for p in r['panels'][1:])),
+        'reducedTransparencyOpaque': all(p['backdropFilter'] == 'none' and p['bgAlpha'] == 1 for p in res['reducedTransparency']),
         'miniaturesMatchManifest': every(runs, lambda r: len(r['rows']) == 11 and all(row['sha256'] == SCENE_SHA[row['chapter']]['mini'] and row['natural'] == [480, 270] and not row['icon'] for row in r['rows'])),
         'kopsMatchManifest': len(res['kops']) == 11 and all(v == SCENE_SHA[k]['kop'] for k, v in res['kops'].items()) and every(big, lambda r: r['art']['kopShown'] and r['art']['kopBeforeTitle']),
         'phoneNoKop': every({k: v for k, v in runs.items() if k.startswith('phone')}, lambda r: not r['art']['kopShown']),
@@ -237,14 +244,14 @@ async def main():
     # Comparisons: each concept render next to the matching Reis screenshot (desktop 1440×900).
     comps = {}
     for rid, shot, title in [('r1-kaart', 'desktop-viola', 'Stijlbeeld Reis · Viola · 1440×900'), ('r1-kaart', 'desktop-italia', 'Stijlbeeld Reis · Italia · 1440×900'),
-                             ('r5-hoofdstukken', 'desktop-italia', 'Stijlbeeld Reis · hoofdstukbeelden'), ('r1-kaart', 'ipad-landscape-italia', 'Stijlbeeld Reis · iPad liggend 1180×820')]:
+                             ('r5-hoofdstukken', 'desktop-viola', 'Stijlbeeld Reis · hoofdstukbeelden'), ('r1-kaart', 'ipad-landscape-viola', 'Stijlbeeld Reis · iPad liggend 1180×820')]:
         src = RENDERS_DIR / RENDERS[rid]
         if not src.exists(): comps[f'{rid}+{shot}'] = 'render ontbreekt: ' + RENDERS[rid]; continue
         out = OUT / f'vergelijking-{rid}-{shot}.jpg'; composite(src, OUT / f'{shot}.png', out, title); comps[f'{rid}+{shot}'] = out.name
     res['comparisons'] = comps
     (OUT / 'results.json').write_text(json.dumps(res, indent=1, ensure_ascii=False) + '\n')
     print(json.dumps(res['summary'], indent=1, ensure_ascii=False))
-    bad = [k for k in ('indexUnchanged', 'backdropIsBG01', 'bgAlternativesSwitch', 'phoneNoBackdrop', 'floatingGlassWindow', 'reducedTransparencyOpaque', 'miniaturesMatchManifest',
+    bad = [k for k in ('indexUnchanged', 'backdropIsBG01', 'bgAlternativesSwitch', 'phoneNoBackdrop', 'glassPanels', 'reducedTransparencyOpaque', 'miniaturesMatchManifest',
                        'kopsMatchManifest', 'phoneNoKop', 'portraitIsNinoPortret', 'counterIcons', 'rewardsArt', 'rewardsCountsMatchV2Book', 'rewardsView', 'lessonToRewards', 'reliefDefaultZ8', 'reliefLayersMatchProvenance', 'reliefLayerOrder', 'reliefIsDecorationOnly', 'neighboursDimmed', 'geometryAllSame', 'primaryAboveFold') if not res['summary'][k]]
     bad += [k for k in ('namesClipped', 'horizontalOverflow', 'rewardsLayout') if res['summary'][k]] + (['errors'] if res['summary']['errors'] else [])
     print('problems:', bad or 'none')

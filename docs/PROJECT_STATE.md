@@ -4,6 +4,16 @@ Branch `codex/topo-v3` vanaf de V2-afsluiting `f53dc0b` (voorouder `v2.0.2` = `8
 
 **V3.0 deel 5 — Kennismaking** (9 november): de V2-eerste-keerdialoog is één V3-scène met welkomstpose, naam, favoriete pizza, Andiamo! en Start meteen; de hulpteksten zijn weg. Daarna opent Reis met hoofdstuk 1. Profielschema 1 en de V2-regel voor het eenmalig opnieuw aanbieden blijven gelijk. Preview-demo `#welkom`. [Bewijs](qa/v3-kennismaking/README.md).
 
+**V3.0 fase A — stap 1, canvas en glas** (10 november):
+- viola is de standaard (italia via `#…/italia`);
+- de witte plaat is weg: het artwork is het canvas op desktop en iPad, ook in lessen;
+- één frame, op elke tab gelijk (marge 28/20, radius 28), met de zijbalk als glazen linkerkolom;
+- Landschap-schermen hebben zwevende glaspanelen, Werkblad (Voortgang, Toets instellen) één lichte plaat;
+- een lichte wash en desaturatie achter de UI, nooit op de kaart;
+- verminderde transparantie maakt alles ondoorzichtig.
+
+Typografie, knoppen, iconen en het raster volgen in fase B. [Bewijs](qa/v3-glas/README.md) · [voor/na](qa/v3-stijlbeeld/README.md#fase-a-voor-en-na).
+
 **V3.0 review-fixes** (10 november, één commit per punt): (1) toetsfouten zonder "jij:", bij Aanwijzen alleen de plek. [Bewijs](qa/v3-toets/README.md). (2) Telefoon en 320 px: elk scherm buiten lessen krijgt onderaan ruimte voor de tabbalk en de safe area, ook bij toetsenbordfocus. [Bewijs](qa/v3-shell/README.md). (3) Kennismaking: label "Jouw naam" visueel weg, toegankelijke naam blijft. [Bewijs](qa/v3-kennismaking/README.md). Fix 4 (zoombalk in de les) vervalt volgens het eigenaarsbesluit van 10 november (herontwerp van de les).
 
 **V3.0 compleet op `codex/topo-v3`** (5 commits, één per onderdeel). Klaar voor de Hermes-hertest op #76. Geen merge of deployment.

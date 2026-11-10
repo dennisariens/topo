@@ -1,7 +1,7 @@
 {
  "html": "output/html/TOPO-V3-Reis-Preview.html",
- "sha256": "1dcd0840f773237d3af422ef565129e9cb0af269dd3c195c21a2eea21c409f6d",
- "bytes": 50255316,
+ "sha256": "bb96703006276dc8e6f4443ebb435c84d034d6bb246b002e5a54c42538b35862",
+ "bytes": 50266163,
  "layout": {
   "desktop/nieuw": {
    "frame": {
@@ -48,8 +48,8 @@
     ]
    },
    "lastRowClear": true,
-   "primaryTop": 496,
-   "primaryBottom": 548,
+   "primaryTop": 483,
+   "primaryBottom": 535,
    "viewport": 900,
    "primaryVisible": true,
    "covered": false,
@@ -122,8 +122,8 @@
     ]
    },
    "lastRowClear": true,
-   "primaryTop": 496,
-   "primaryBottom": 548,
+   "primaryTop": 483,
+   "primaryBottom": 535,
    "viewport": 900,
    "primaryVisible": true,
    "covered": false,
@@ -196,8 +196,8 @@
     ]
    },
    "lastRowClear": true,
-   "primaryTop": 496,
-   "primaryBottom": 548,
+   "primaryTop": 483,
+   "primaryBottom": 535,
    "viewport": 900,
    "primaryVisible": true,
    "covered": false,
@@ -270,8 +270,8 @@
     ]
    },
    "lastRowClear": true,
-   "primaryTop": 496,
-   "primaryBottom": 548,
+   "primaryTop": 483,
+   "primaryBottom": 535,
    "viewport": 900,
    "primaryVisible": true,
    "covered": false,
@@ -344,8 +344,8 @@
     ]
    },
    "lastRowClear": true,
-   "primaryTop": 459,
-   "primaryBottom": 511,
+   "primaryTop": 471,
+   "primaryBottom": 523,
    "viewport": 1180,
    "primaryVisible": true,
    "covered": false,
@@ -369,7 +369,7 @@
     "names": 56
    },
    "switchOcclusion": {
-    "rectOverlap": 12962.90625,
+    "rectOverlap": 12348,
     "covered": {}
    }
   },
@@ -418,14 +418,17 @@
     ]
    },
    "lastRowClear": true,
-   "primaryTop": 459,
-   "primaryBottom": 511,
+   "primaryTop": 471,
+   "primaryBottom": 523,
    "viewport": 1180,
    "primaryVisible": true,
    "covered": false,
    "overlaps": [],
    "small": [],
-   "clipped": [],
+   "clipped": [
+    "overflow:14 / 24",
+    "overflow:0"
+   ],
    "horizontalOverflow": false,
    "brokenWords": [],
    "labels": {
@@ -443,7 +446,7 @@
     "names": 56
    },
    "switchOcclusion": {
-    "rectOverlap": 12962.90625,
+    "rectOverlap": 12348,
     "covered": {}
    }
   },
@@ -492,14 +495,17 @@
     ]
    },
    "lastRowClear": true,
-   "primaryTop": 459,
-   "primaryBottom": 511,
+   "primaryTop": 471,
+   "primaryBottom": 523,
    "viewport": 1180,
    "primaryVisible": true,
    "covered": false,
    "overlaps": [],
    "small": [],
-   "clipped": [],
+   "clipped": [
+    "overflow:11 / 24",
+    "overflow:2"
+   ],
    "horizontalOverflow": false,
    "brokenWords": [],
    "labels": {
@@ -517,7 +523,7 @@
     "names": 56
    },
    "switchOcclusion": {
-    "rectOverlap": 12962.90625,
+    "rectOverlap": 12348,
     "covered": {}
    }
   },
@@ -531,12 +537,11 @@
      "Oostenrijk": 1,
      "Slovenië": 1,
      "Kroatië": 1,
-     "Sardinië": 1.0,
+     "Sardinië": 1,
      "Sicilië": 1,
      "label DUITSLAND": 1,
      "label HONGARIJE": 1,
      "label BOSNIË": 1,
-     "label TUNESIË": 1,
      "zee 1": 1,
      "zee 2": 1,
      "zee 3": 1,
@@ -544,7 +549,9 @@
      "zee 5": 1,
      "Noord-Afrika": 1
     },
-    "outOfFrame": [],
+    "outOfFrame": [
+     "label TUNESIË"
+    ],
     "visible": [
      "Frankrijk",
      "Kroatië",
@@ -557,7 +564,6 @@
      "label BOSNIË",
      "label DUITSLAND",
      "label HONGARIJE",
-     "label TUNESIË",
      "zee 1",
      "zee 2",
      "zee 3",
@@ -566,14 +572,17 @@
     ]
    },
    "lastRowClear": true,
-   "primaryTop": 459,
-   "primaryBottom": 511,
+   "primaryTop": 471,
+   "primaryBottom": 523,
    "viewport": 1180,
    "primaryVisible": true,
    "covered": false,
    "overlaps": [],
    "small": [],
-   "clipped": [],
+   "clipped": [
+    "overflow:0 / 24",
+    "overflow:7"
+   ],
    "horizontalOverflow": false,
    "brokenWords": [],
    "labels": {
@@ -591,7 +600,7 @@
     "names": 56
    },
    "switchOcclusion": {
-    "rectOverlap": 12962.90625,
+    "rectOverlap": 12348,
     "covered": {}
    }
   },
@@ -640,8 +649,8 @@
     ]
    },
    "lastRowClear": true,
-   "primaryTop": 485,
-   "primaryBottom": 537,
+   "primaryTop": 436,
+   "primaryBottom": 488,
    "viewport": 820,
    "primaryVisible": true,
    "covered": false,
@@ -714,8 +723,8 @@
     ]
    },
    "lastRowClear": true,
-   "primaryTop": 485,
-   "primaryBottom": 537,
+   "primaryTop": 436,
+   "primaryBottom": 488,
    "viewport": 820,
    "primaryVisible": true,
    "covered": false,
@@ -788,8 +797,8 @@
     ]
    },
    "lastRowClear": true,
-   "primaryTop": 485,
-   "primaryBottom": 537,
+   "primaryTop": 436,
+   "primaryBottom": 488,
    "viewport": 820,
    "primaryVisible": true,
    "covered": false,
@@ -862,8 +871,8 @@
     ]
    },
    "lastRowClear": true,
-   "primaryTop": 485,
-   "primaryBottom": 537,
+   "primaryTop": 436,
+   "primaryBottom": 488,
    "viewport": 820,
    "primaryVisible": true,
    "covered": false,
@@ -1506,9 +1515,9 @@
    },
    "backVia": "v3Btn v3NavItem",
    "primaryLabelWithActive": "Ga verder · Ontdekken",
-   "questionBefore": "city-9",
+   "questionBefore": "city-12",
    "reisVerderSameQuestion": {
-    "id": "city-9",
+    "id": "city-12",
     "chapter": "city2",
     "kind": "discover"
    },
@@ -1750,91 +1759,91 @@
    "covered": {}
   },
   "ipad-portrait/city1/schoolkaart": {
-   "rectOverlap": 12962.90625,
+   "rectOverlap": 12348,
    "covered": {}
   },
   "ipad-portrait/city1/reliëf": {
-   "rectOverlap": 12962.90625,
+   "rectOverlap": 12348,
    "covered": {}
   },
   "ipad-portrait/city2/schoolkaart": {
-   "rectOverlap": 12962.90625,
+   "rectOverlap": 12348,
    "covered": {}
   },
   "ipad-portrait/city2/reliëf": {
-   "rectOverlap": 12962.90625,
+   "rectOverlap": 12348,
    "covered": {}
   },
   "ipad-portrait/city3/schoolkaart": {
-   "rectOverlap": 12962.90625,
+   "rectOverlap": 12348,
    "covered": {}
   },
   "ipad-portrait/city3/reliëf": {
-   "rectOverlap": 12962.90625,
+   "rectOverlap": 12348,
    "covered": {}
   },
   "ipad-portrait/city4/schoolkaart": {
-   "rectOverlap": 12962.90625,
+   "rectOverlap": 12348,
    "covered": {}
   },
   "ipad-portrait/city4/reliëf": {
-   "rectOverlap": 12962.90625,
+   "rectOverlap": 12348,
    "covered": {}
   },
   "ipad-portrait/islands/schoolkaart": {
-   "rectOverlap": 12962.90625,
+   "rectOverlap": 12348,
    "covered": {}
   },
   "ipad-portrait/islands/reliëf": {
-   "rectOverlap": 12962.90625,
+   "rectOverlap": 12348,
    "covered": {}
   },
   "ipad-portrait/mountains/schoolkaart": {
-   "rectOverlap": 12962.90625,
+   "rectOverlap": 12348,
    "covered": {}
   },
   "ipad-portrait/mountains/reliëf": {
-   "rectOverlap": 12962.90625,
+   "rectOverlap": 12348,
    "covered": {}
   },
   "ipad-portrait/volcanoes/schoolkaart": {
-   "rectOverlap": 12962.90625,
+   "rectOverlap": 12348,
    "covered": {}
   },
   "ipad-portrait/volcanoes/reliëf": {
-   "rectOverlap": 12962.90625,
+   "rectOverlap": 12348,
    "covered": {}
   },
   "ipad-portrait/regions/schoolkaart": {
-   "rectOverlap": 12962.90625,
+   "rectOverlap": 12348,
    "covered": {}
   },
   "ipad-portrait/regions/reliëf": {
-   "rectOverlap": 12962.90625,
+   "rectOverlap": 12348,
    "covered": {}
   },
   "ipad-portrait/countries/schoolkaart": {
-   "rectOverlap": 12962.90625,
+   "rectOverlap": 12348,
    "covered": {}
   },
   "ipad-portrait/countries/reliëf": {
-   "rectOverlap": 12962.90625,
+   "rectOverlap": 12348,
    "covered": {}
   },
   "ipad-portrait/seas/schoolkaart": {
-   "rectOverlap": 12962.90625,
+   "rectOverlap": 12348,
    "covered": {}
   },
   "ipad-portrait/seas/reliëf": {
-   "rectOverlap": 12962.90625,
+   "rectOverlap": 12348,
    "covered": {}
   },
   "ipad-portrait/rivers/schoolkaart": {
-   "rectOverlap": 12962.90625,
+   "rectOverlap": 12348,
    "covered": {}
   },
   "ipad-portrait/rivers/reliëf": {
-   "rectOverlap": 12962.90625,
+   "rectOverlap": 12348,
    "covered": {}
   }
  },
@@ -1887,7 +1896,20 @@
   "primaryAboveFoldAll": true,
   "primaryBelowFold": [],
   "overlaps": {},
-  "clipped": {},
+  "clipped": {
+   "ipad-portrait/bezig": [
+    "overflow:14 / 24",
+    "overflow:0"
+   ],
+   "ipad-portrait/afgerond": [
+    "overflow:11 / 24",
+    "overflow:2"
+   ],
+   "ipad-portrait/alles": [
+    "overflow:0 / 24",
+    "overflow:7"
+   ]
+  },
   "brokenWords": {},
   "smallTargets": {},
   "horizontalOverflow": [],

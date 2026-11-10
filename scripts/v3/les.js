@@ -96,7 +96,7 @@
   const on=inLesson(),m=on?model():null;
   body.classList.toggle('v3Les',!!m);bar.hidden=!m;
   if(!m){last='';wasAnswered=false;for(const k of ['v3Theme','v3Kind','v3Q','v3Answered','v3Type'])delete body.dataset[k];return;}
-  bar.dataset.theme=body.dataset.v3Theme=window.TOPO_V3_THEME||'italia';
+  bar.dataset.theme=body.dataset.v3Theme=window.TOPO_V3_THEME||'viola';
   body.dataset.v3Kind=m.kind;body.dataset.v3Type=m.type;body.dataset.v3Q=m.done?'result':m.q||'';
   const answered=!!state.answered&&!m.done;body.dataset.v3Answered=String(answered);
   // Owner 9-11: after an answer the feedback and Volgende are always in view. When the child collapsed the Focus

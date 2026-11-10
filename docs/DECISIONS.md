@@ -885,3 +885,12 @@ Volgens renders/README § "Afwerking na fase B" en § "Bijstelling eigenaar (10-
 **Open:**
 - de Les in Focus Mode (iPad) is nog de gecentreerde kaart met het blad onderaan: ongeveer 35% van het vlak, niet herschikt;
 - NINO-ONDERWEG: de masters liggen op `art/master` en gaan via de artworkpijplijn. Tot dan staat de huidige pose, vrij geplaatst.
+
+## 2026-11-10 — Kalibratie typografie en beeld (overdracht stap 3b)
+
+- De avondkalibratie in renders/README vervangt de eerdere typeschaal: desktop titel 44, kaarttitel 32, nav 18, rijen/chips 17, tellers 20, tegels 40 en toetsscore 64; de iPad-waarden volgen de aparte kolom. Gewichten blijven 600/700 volgens de tabel.
+- De wash eindigt bij de zijbalk, zonder filter op het inhoudsvlak. Het gemeten z8-reliëf behoudt zijn sneeuw en geometrie; alleen de kleurmatrix (olijf/geel, wit blijft wit), verzadiging 1,15 en contrast 1,3 veranderen.
+- Toetsresultaat krijgt weer een glaskaart rond label en score; dit vervangt de kaderloze score van de middag. Programmatische focus verandert de maat niet en tekent geen ring op de kop.
+- Voortgang gebruikt Eiland. Elf rijen zijn elk minimaal 40 px en volledig binnen hun hoofdstukpaneel; de drie even brede tegels volgen onder de kaart/lijst. Het gehele Werkblad scrolt, ook naar Toetsen en het kennis-paspoort.
+- Oefenen gebruikt op desktop twee chipkolommen en compacte 2×2-vormtegels. Dit wijkt af van de eerdere drie kolommen: volledige namen op 17 px, kaart ≥45% en bediening rechts passen samen niet in vijf kolommen met drie chips naast elkaar. De selectie, inhoud en acties veranderen niet.
+- QA: minimumgroottes per elementtype toegevoegd aan qa-v3-afwerking.py, plus Eiland, elf rijen en afsnijding. Historische fase-B-asserties volgen de avondkalibratie (kaarttitels zijn geen extra schermtitels, score op glas).

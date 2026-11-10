@@ -71,12 +71,12 @@ def checks(p, tag, vp, fail):
     f = lambda why: fail(f'{tag}: {why}')
     # Afwerking 10-11: key figures are 32–44/700 by design; the words are only the title.
     words = [t for t in p['big'] if not FIG.match(t)]
-    if words != ['Voortgang'] or p['countText'] not in p['big'] or not p['countText'].endswith(' / 45'): f(f'display texts {p["big"]}')
+    if [w for w in words if not w.startswith('Italië')] != ['Voortgang'] or p['countText'] not in p['big'] or not p['countText'].endswith(' / 45'): f(f'display texts {p["big"]}')
     if p['h1Color'] != p['ink'] or p['countColor'] != p['ink']: f(f'title bar not in ink ({p["h1Color"]}, {p["countColor"]})')
     wide = vp != 'telefoon'
     if wide and not near(p['h1']['t'] + p['h1']['h'] / 2, p['count']['t'] + p['count']['h'] / 2, 4): f('title and count not on one line')
     if p['bar']['h'] < 14 or (wide and p['bar']['w'] < .4 * p['inner']): f(f'bar not broad ({p["bar"]["w"]:.0f}×{p["bar"]["h"]:.0f})')
-    if p['figBg'] != 'rgb(255, 255, 255)' or not p['svgIn'] or p['relief'] != 'off': f(f'map card ({p["figBg"]}, svg {p["svgIn"]}, relief {p["relief"]})')
+    if p['figBg'] not in ('rgba(0, 0, 0, 0)', 'transparent') or not p['svgIn'] or p['relief'] != 'off': f(f'map card ({p["figBg"]}, svg {p["svgIn"]}, relief {p["relief"]})')
     if p['legend'] != ['Beheerst', 'Bezig', 'Nog niet'] or not p['legendIn']: f(f'legend {p["legend"]}')
     if p['fillHi'] and p['fillHi'] != p['accent']: f(f'mastered place {p["fillHi"]} ≠ accent {p["accent"]}')
     if p['fillLo'] and p['fillLo'] != 'rgb(243, 236, 220)': f(f'place not started {p["fillLo"]} ≠ cream')
@@ -93,9 +93,9 @@ def checks(p, tag, vp, fail):
         if not near(sd['l'], fig['r'] + g, 1.5) or not near(sd['r'], x1, 1.5): f(f'chapters not between the map card and the inner margin ({sd["l"]:.1f}–{sd["r"]:.1f})')
         if not near(sd['t'], fig['t']): f('map card and chapters not on one top line')
         if p['sideScroll']['sh'] > p['sideScroll']['ch'] + 1 and p['sideScroll']['ov'] not in ('auto', 'scroll'): f('chapters overflow without their own scroll')
-        dg, pz, rd = p['dag'], p['piz'], p['rid']
-        if not near(dg['l'], sd['l']) or not near(dg['r'], sd['r']) or dg['t'] < sd['b'] or not near(pz['l'], sd['l']) or not near(rd['r'], sd['r']) or not near(pz['t'], rd['t']) or not near(rd['b'], fig['b']):
-            f('Dagdoel over the column, Pizza’s and Vespa-ritten side by side on the map card’s bottom line')
+        tiles = [p['dag'], p['piz'], p['rid']]
+        if max(t['t'] for t in tiles) - min(t['t'] for t in tiles) > 1 or min(t['t'] for t in tiles) < fig['b'] or max(t['w'] for t in tiles) - min(t['w'] for t in tiles) > 1:
+            f('three equal tiles must follow the map and chapter row')
     if p['hOverflow']: f('horizontal overflow')
 
 

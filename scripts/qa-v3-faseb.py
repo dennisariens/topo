@@ -47,7 +47,7 @@ PROBE = r'''() => {
   const gut = px(rs.columnGap), inner = gut + 8;
   const rows = R(q('.v3Rows')), main = R(q('.v3Main')), title = R(q('.v3ScreenTitle')), top = R(q('.v3Main>.v3Top')), card = R(q('.v3Panel')), stage = R(q('.v3MapStage'));
   const content = frame.w - side.w - 2 * inner, col = (content - 11 * gut) / 12;
-  const big = [...document.querySelectorAll('.v3Reis *')].filter(n => n.childNodes.length && [...n.childNodes].some(c => c.nodeType === 3 && c.textContent.trim()) && n.checkVisibility() && px(cs(n).fontSize) >= 30 && !n.closest('.v3Brand'))
+  const big = [...document.querySelectorAll('.v3Reis *')].filter(n => n.childNodes.length && [...n.childNodes].some(c => c.nodeType === 3 && c.textContent.trim()) && n.checkVisibility() && px(cs(n).fontSize) >= 30 && !n.closest('.v3Brand,.v3CardTitle'))
     .map(n => n.textContent.trim().slice(0, 30));
   const lt = q('#v3ListTitle'), ltVisible = lt && lt.getBoundingClientRect().width > 2;
   const rowInfo = [...document.querySelectorAll('.v3Row')].map(b => ({state: b.dataset.state, bar: !!b.querySelector('.v3RowBar'), icon: (b.querySelector('.v3End use')?.getAttribute('href') || '').replace('#topo-', '')}));

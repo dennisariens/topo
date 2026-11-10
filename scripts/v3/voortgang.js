@@ -38,7 +38,7 @@
   // Kaart: each place coloured by its status; legend.
   const fig=make('figure','v3VgKaart');
   const svg=V.cloneMap('v3v-','v3VgMap');
-  if(svg){svg.classList.add('v3Map');svg.dataset.relief='off';fig.append(svg);
+  if(svg){svg.classList.add('v3Map');svg.dataset.relief='off';svg.dataset.kaart='eiland';svg.dataset.frame='italy';V.addIsland(svg,'v3v-');fig.append(svg);
    const sea=svg.querySelector('.sea');
    for(const p of pp)svg.querySelectorAll('[data-id="'+p.item.id+'"]').forEach(n=>{n.classList.add('v3Hit','v3St-'+p.status);if(p.item.kind==='river')n.classList.add('v3StLine');});
    requestAnimationFrame(()=>{if(sea)svg.style.setProperty('--v3-sea-school',getComputedStyle(sea).fill);V.fit(svg);});}

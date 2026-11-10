@@ -20,7 +20,7 @@ Runs with prefers-reduced-transparency: no-preference. Writes results-afwerking.
 
 Usage: node scripts/build-v3-preview.mjs && python3 scripts/qa-v3-afwerking.py [preview.html]
 """
-import asyncio, io, json, pathlib, sys
+import asyncio, io, json, pathlib, sys, os
 from playwright.async_api import async_playwright
 from PIL import Image
 
@@ -43,7 +43,7 @@ TEXTS = r'''() => {
       const clipped = (() => { for (let a = n.parentElement; a && a !== document.body; a = a.parentElement) { const o = cs(a); if (o.overflowX !== 'visible' || o.overflowY !== 'visible') { const q = a.getBoundingClientRect();
         if (r.top < q.top - 1 || r.bottom > q.bottom + 1 || r.left < q.left - 1 || r.right > q.right + 1) return true; } } return false; })();
       return {t: n.textContent.trim().slice(0, 24), color: s.color, size: parseFloat(s.fontSize), weight: parseInt(s.fontWeight), box: [r.left, r.top, r.width, r.height], clipped,
-        disabled: !!n.closest('button[disabled]')}; })
+        kind: n.matches('.v3NavItem,.v3NavItem span') ? 'nav' : n.matches('h1:not(.v3ToetsScore)') ? 'title' : n.matches('.v3Name,.v3VgName,.v3Chip,.v3FormBtn,.v3Tile>span,.v3ToetsTile') ? 'row' : '', disabled: !!n.closest('button[disabled]')}; })
     .filter(x => x.box[2] > 2 && x.box[3] > 2 && x.box[0] >= 0 && x.box[1] >= 0 && x.box[0] + x.box[2] <= W && x.box[1] + x.box[3] <= H && !x.clipped);
 }'''
 
@@ -75,7 +75,7 @@ SCREEN = r'''(screen) => {
   if (screen === 'rewards') { const b = q('.v3BookCover');
     return {openBtn: [...document.querySelectorAll('.v3Rewards button')].some(n => n.checkVisibility() && /Open Reisboekje/.test(n.textContent)), coverTab: b?.tabIndex,
       coverBg: b && cs(b).backgroundColor, coverFilter: b && cs(b).backdropFilter, labels: [...document.querySelectorAll('.v3Rewards .v3Tile span')].map(n => n.textContent.trim())}; }
-  if (screen === 'voortgang') return {lockedBars: [...document.querySelectorAll('.v3VgChapters [data-status=locked] .v3VgSteps')].filter(n => n.checkVisibility({visibilityProperty: true})).length};
+  if (screen === 'voortgang') return {island:q('.v3VgMap')?.dataset.kaart, clippedRows:[...document.querySelectorAll('.v3VgChapters li')].filter(n=>{const r=n.getBoundingClientRect(),p=n.closest('.v3Card').getBoundingClientRect();return r.height<40 || r.top<p.top || r.bottom>p.bottom;}).length, rowCount:document.querySelectorAll('.v3VgChapters li').length, lockedBars: [...document.querySelectorAll('.v3VgChapters [data-status=locked] .v3VgSteps')].filter(n => n.checkVisibility({visibilityProperty: true})).length};
   return null;
 }'''
 
@@ -88,13 +88,15 @@ def screen_checks(screen, vp, lay, sc, f):
         if wide and (lay['nino'] is None or lay['ninoOverlap'] > 0): f(f'Nino overlaps a panel ({lay["ninoOverlap"]} px²)')
         if sc['color'] != sc['accent'] or sc['weight'] != '600': f(f'score {sc["color"]}/{sc["weight"]} (violet 600)')
         if sc['outline'] not in ('none', ''): f(f'focus ring on the score ({sc["outline"]})')
-        if sc['cardBg'] not in ('rgba(0, 0, 0, 0)', 'transparent') or sc['cardShadow'] != 'none': f('score in a card')
+        if sc['cardBg'] in ('rgba(0, 0, 0, 0)', 'transparent') or sc['cardShadow'] == 'none': f('score lacks glass card')
     if screen == 'rewards':
         if sc['openBtn']: f('"Open Reisboekje" button shown')
         if sc['coverTab'] != 0: f(f'book cover not focusable ({sc["coverTab"]})')
         if sc['coverBg'] not in ('rgba(0, 0, 0, 0)', 'transparent') or sc['coverFilter'] != 'none': f(f'circle behind the book ({sc["coverBg"]}, {sc["coverFilter"]})')
         if 'Pizza' not in sc['labels'] or any(l.startswith('Pizza ') for l in sc['labels']): f(f'tile labels {sc["labels"]}')
-    if screen == 'voortgang' and sc['lockedBars']: f(f'{sc["lockedBars"]} locked rows with a bar')
+    if screen == 'voortgang':
+        if sc['lockedBars']: f(f'{sc["lockedBars"]} locked rows with a bar')
+        if sc['island'] != 'eiland' or sc['rowCount'] != 11 or sc['clippedRows']: f(f'progress island/rows {sc}')
 
 
 def lum(rgb):
@@ -151,8 +153,9 @@ async def main():
     async with async_playwright() as pw:
         b = await pw.chromium.launch(executable_path=MAC_CHROME) if pathlib.Path(MAC_CHROME).exists() else await pw.chromium.launch()
         for vp, (w, h) in VIEWPORTS.items():
+            if os.environ.get('TOPO_QA_QUICK') and vp != 'desktop': continue
             for screen in SCREENS:
-                for bg in (BGS if screen in LANDSCHAP and vp != 'ipad-staand' else ['bg01']):
+                for bg in (BGS if not os.environ.get('TOPO_QA_QUICK') and screen in LANDSCHAP and vp != 'ipad-staand' else ['bg01']):
                     tag = f'{screen}/{vp}/{bg}'
                     ctx = await b.new_context(viewport={'width': w, 'height': h}, device_scale_factor=1, has_touch=vp != 'desktop')
                     pg = await ctx.new_page(); errs = []; pg.on('pageerror', lambda e: errs.append(str(e)))
@@ -170,10 +173,14 @@ async def main():
                     hov = await pg.evaluate('document.documentElement.scrollWidth > innerWidth + 1')
                     f = lambda why: fails.append(f'{tag}: {why}')
                     if small: f(f'text < 13 px: {small[:5]}')
+                    for t in texts:
+                        minimum = {'title': 44 if w >= 1280 else 36, 'nav': 18 if w >= 1280 else 16, 'row': 17 if w >= 1280 else 16}.get(t['kind'], 0)
+                        if t['size'] < minimum: f(f"{t['kind']} {t['t']}: {t['size']} < {minimum}")
                     if low: f(f'contrast < AA: {low[:4]}')
                     if hov: f('horizontal overflow')
                     if errs: f(f'page errors {errs[:2]}')
                     if bg == 'bg01': screen_checks(screen, vp, lay, sc, f)
+                    print(tag, 'checked', flush=True)
                     res['runs'][tag] = {'texts': len(texts), 'small': small, 'lowContrast': low} | ({'mapShare': round(lay['share'], 3), 'ninoOverlap': lay['ninoOverlap']} if lay else {})
                     await ctx.close()
         await b.close()

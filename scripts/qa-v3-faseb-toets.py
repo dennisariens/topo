@@ -44,7 +44,7 @@ PROBE = r'''() => {
   const cs = (n, pe) => getComputedStyle(n, pe), px = v => parseFloat(v) || 0, vis = n => n && n.checkVisibility() && n.getBoundingClientRect().width > 0;
   const text = n => [...n.childNodes].some(c => c.nodeType === 3 && c.textContent.trim());
   const view = q('.v3View-toets'), setup = q('.v3ToetsSetup'), nino = q('.v3ToetsSetupNino');
-  const big = [...document.querySelectorAll('.v3Reis *')].filter(n => text(n) && vis(n) && px(cs(n).fontSize) >= 30 && !n.closest('.v3Brand')).map(n => n.textContent.trim().slice(0, 30));
+  const big = [...document.querySelectorAll('.v3Reis *')].filter(n => text(n) && vis(n) && px(cs(n).fontSize) >= 30 && !n.closest('.v3Brand,.v3Field h2')).map(n => n.textContent.trim().slice(0, 30));
   const chips = [...document.querySelectorAll('[aria-labelledby=v3ToetsHoofdstukken] .v3Chip')].map(c => ({t: c.textContent.replace(/\s+/g, ' ').trim(), on: c.getAttribute('aria-pressed') === 'true',
     check: !!c.querySelector('use[href="#topo-v3checkmark"]'), h: Math.round(c.getBoundingClientRect().height), clip: c.scrollWidth > c.clientWidth + 1, l: Math.round(c.getBoundingClientRect().left)}));
   const forms = [...document.querySelectorAll('[aria-labelledby=v3ToetsVorm] .v3FormBtn')].map(b => ({v: b.dataset.value, icons: b.querySelectorAll('svg.v3Icon').length, img: !!b.querySelector('img')}));
@@ -63,7 +63,7 @@ RESULT = r'''() => {
   const cs = (n, pe) => getComputedStyle(n, pe), px = v => parseFloat(v) || 0, vis = n => n && n.checkVisibility() && n.getBoundingClientRect().width > 0;
   const text = n => [...n.childNodes].some(c => c.nodeType === 3 && c.textContent.trim());
   const v = q('.v3View-toetsResult'), map = v.querySelector('.v3ToetsMap'), card = v.querySelector('.v3ToetsScoreCard'), side = v.querySelector('.v3ToetsSide');
-  const big = [...document.querySelectorAll('.v3Reis *')].filter(n => text(n) && vis(n) && px(cs(n).fontSize) >= 30 && !n.closest('.v3Brand')).map(n => n.textContent.trim().slice(0, 30));
+  const big = [...document.querySelectorAll('.v3Reis *')].filter(n => text(n) && vis(n) && px(cs(n).fontSize) >= 30 && !n.closest('.v3Brand,.v3Field h2')).map(n => n.textContent.trim().slice(0, 30));
   const mb = R(map), marks = [...map.querySelectorAll('.v3Mark circle')].map(R);
   const tiles = [...v.querySelectorAll('.v3ToetsTile')].map(b => ({t: b.textContent.trim(), icon: !!b.querySelector('svg.v3Icon')}));
   const prim = v.querySelector('.v3ToetsActions .primary');
@@ -85,7 +85,7 @@ def result_checks(p, tag, variant, wide, fail):
     if p['kaart'] != variant: f(f'map variant {p["kaart"]}')
     if variant == 'eiland' and 'v3t-italyClip' not in p['clip']: f(f'relief not clipped ({p["clip"]})')
     if p['sideBg'] in ('rgba(0, 0, 0, 0)', 'transparent'): f('panel not glass')
-    if p['cardBg'] not in ('rgba(0, 0, 0, 0)', 'transparent') or p['cardShadow'] != 'none': f('score in a card')
+    if p['cardBg'] in ('rgba(0, 0, 0, 0)', 'transparent') or p['cardShadow'] == 'none': f('score lacks glass card')
     if [t['t'] for t in p['tiles']] != ['Nieuwe toets', 'Kopieer', 'E-mail', 'Print'] or not all(t['icon'] for t in p['tiles']): f(f'tiles {p["tiles"]}')
     if p['primary'] != 'Oefen deze fouten' or not p['primaryIcon']: f(f'primary {p["primary"]}')
     if len(p['rows']) != 3 or not all(p['rows']): f(f'mistake rows with × {p["rows"]}')

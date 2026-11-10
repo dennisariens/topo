@@ -84,7 +84,7 @@ def checks(p, vp, variant, case, fail):
     if len(p['forms']) != 4 or not all(x['icon'] and not x['img'] for x in p['forms']): f(f'form tiles {p["forms"]}')
     if case != 'smart':
         if p['line'] != '1px': f(f'line between form and group {p["line"]}')
-        want = 2 if vp in ('telefoon', 'ipad-liggend') else 3
+        want = 2 if vp in ('desktop', 'telefoon', 'ipad-liggend') else 3
         if p['chipCols'] != want: f(f'{p["chipCols"]} chip columns ≠ {want}')
         bad = [c for c in p['chipInfo'] if c['h'] > 48 or c['clip'] or c['out']]
         if bad: f(f'chips not on one line inside the panel {bad[:3]}')

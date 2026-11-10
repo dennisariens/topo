@@ -40,3 +40,11 @@ Gemeten (`mapShare` in `results-afwerking.json`): Reis 52%, Oefenen 49% (desktop
 De vergelijkingen naast de renders staan opnieuw in [`docs/qa/v3-stijlbeeld/`](../v3-stijlbeeld/README.md). Ze worden gemaakt door `qa-v3-faseb*.py`.
 
 Open: de Les in Focus Mode (iPad) houdt zijn eigen indeling (ongeveer 35%). NINO-ONDERWEG volgt via de artworkpijplijn.
+
+## Overdracht stap 3b — avondkalibratie
+
+De typeschaal volgt nu de gemeten desktop- en iPad-tabel in renders/README. De wash staat alleen achter de zijbalk, het reliëf is warmer (wit blijft wit) en heeft contrast 1,3. Het resultaatlabel en de violette score staan weer op glas. Voortgang is Eiland met elf volledige rijen van minstens 40 px; de drie gelijke tegels staan onder de kaart/lijst en het Werkblad scrolt als geheel.
+
+De checks meten minimumgroottes van titel, nav en rijen/chips; daarnaast elf rijen zonder afsnijding en Eiland. `TOPO_QA_QUICK=1` draait alleen desktop/BG-01 voor een tussentijdse controle; de eindcontrole gebruikt de volledige matrix zonder die variabele. Definitief bewijs volgt in stap 5.
+
+Afwijking: Oefenen heeft ook op desktop twee chipkolommen, om de volledige namen op 17 px samen met de grote kaart en bediening rechts te laten passen. De iPad-les in Focus Mode blijft het eerder vastgelegde open punt (geen herschikking van de V2-focuslogica).

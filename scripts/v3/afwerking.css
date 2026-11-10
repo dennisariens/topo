@@ -146,3 +146,67 @@
 .v3 .v3Rewards .v3BookCover{background:none!important;box-shadow:none!important;-webkit-backdrop-filter:none!important;backdrop-filter:none!important;border-radius:20px;cursor:pointer}
 .v3 .v3Rewards .v3BookCover:focus{outline:0}.v3 .v3Rewards .v3BookCover:focus-visible{outline:3px solid var(--v3-focus,#1d6fd8);outline-offset:6px}
 .v3 .v3Rewards .v3BookCover:active .v3CoverArt{transform:rotate(-2deg) scale(.98)}
+
+/* Kalibratie typografie en beeld, eigenaar 10-11 avond. Latest measured scale wins. */
+@media (min-width:768px){
+ .v3,body.v3Les{--v3-display:700 36px/1.15 var(--v3-font);--v3-row:600 16px/22px var(--v3-font);--v3-second:500 13px/18px var(--v3-font);--v3-card-title:700 28px/1.2 var(--v3-font);--v3-cal-nav:16px;--v3-cal-count:18px;--v3-cal-figure:32px;--v3-cal-score:52px;--v3-cal-action:17px;--v3-cal-action-h:48px}
+ body:is(.v3Home,.v3Les)::before{right:auto;width:calc(var(--v3-frame-m) + var(--v3-side-w));background:rgba(249,247,255,.25);-webkit-backdrop-filter:none;backdrop-filter:none}
+ .v3 .v3NavItem,body.v3Les .v3ShellNav .v3NavItem{font:600 var(--v3-cal-nav)/1.3 var(--v3-font)}
+ .v3 .v3NavItem .v3Icon{width:22px;height:22px}
+ .v3Reis :is(.v3Row,.v3Row .v3Name,.v3VgName,.v3Tile span,.v3VgTileLabel,.v3ToetsTile),.v3 :is(.v3Chip,.v3FormBtn),.v3Reis .v3ToetsSide .v3ToetsFouten li{font:var(--v3-row)}
+ .v3Reis .v3Count{font-size:var(--v3-cal-count)}
+ .v3Reis :is(.v3CardTitle,.v3VgKaartTitle){font:var(--v3-card-title)}
+ .v3Reis :is(.v3Rewards .v3Tile b,.v3Rewards .v3Ride>b,.v3VgTileText strong){font:700 var(--v3-cal-figure)/1.1 var(--v3-font)}
+ .v3Reis .v3View-toetsResult .v3ToetsScore{font-size:var(--v3-cal-score)}
+ .v3Reis :is(.v3VgLegend,.v3ToetsFouten li span,.v3VgDate,.v3VgEmpty){font:var(--v3-second)}
+ .v3 .v3Btn.primary{min-height:var(--v3-cal-action-h);font-size:var(--v3-cal-action);font-weight:600}
+ .v3Reis .v3View-toetsResult .v3ToetsScoreCard{padding:16px 24px;background:var(--v3-glass);-webkit-backdrop-filter:var(--v3-glass-filter);backdrop-filter:var(--v3-glass-filter);box-shadow:var(--v3-glass-shadow);border-radius:var(--v3-radius-glass);isolation:isolate}
+ .v3Rewards .v3TileIcon{width:72px;height:72px}
+ .v3Rewards .v3RidePizza{max-width:none;width:140px;max-width:100%}
+ .v3Rewards .v3RideArt{min-height:140px;max-height:210px}
+ .v3View-voortgang .v3VgKaart{background:none;box-shadow:none;border-radius:0}
+ .v3View-voortgang .v3VgMap{width:100%;max-width:100%}
+ .v3View-voortgang .v3VgChapters{overflow:visible;display:grid;gap:2px}
+ .v3View-voortgang .v3VgChapters li{min-height:40px;padding:3px 0}
+}
+@media (min-width:1280px){
+ .v3,body.v3Les{--v3-display:700 44px/1.15 var(--v3-font);--v3-row:600 17px/24px var(--v3-font);--v3-second:500 14px/20px var(--v3-font);--v3-card-title:700 32px/1.2 var(--v3-font);--v3-cal-nav:18px;--v3-cal-count:20px;--v3-cal-figure:40px;--v3-cal-score:64px;--v3-cal-action:18px;--v3-cal-action-h:52px}
+}
+@media (min-width:1024px){
+ /* All eleven rows are laid out; the whole Werkblad scrolls, never a clipped chapter row. */
+ .v3Reis[data-view=voortgang]>.v3View-voortgang{grid-template-columns:minmax(0,7fr) minmax(0,5fr);--v3-vg-h:max(800px,calc(100cqh - 76px - var(--v3-gut)))}
+ .v3View-voortgang .v3VgSide{height:auto;min-height:570px}
+ .v3View-voortgang .v3VgSide .v3Card{position:relative;inset:auto;height:auto;max-height:none;overflow:visible;padding:16px}
+ .v3View-voortgang .v3VgChapters li{grid-template-columns:44px minmax(0,1fr) 32px;gap:8px;position:relative;padding-bottom:7px}
+ .v3View-voortgang .v3VgThumb{width:44px;height:34px}
+ .v3View-voortgang .v3VgSteps{grid-column:2;grid-row:2;height:4px;margin-top:-4px}
+ .v3View-voortgang .v3VgStatus{grid-column:3;grid-row:1/3}
+}
+@media (min-width:1024px){
+ .v3Reis[data-view=voortgang]>.v3View-voortgang{grid-template-rows:auto 620px 204px;grid-auto-rows:auto}
+ .v3View-voortgang .v3VgKaart{height:auto;align-self:stretch}
+ .v3View-voortgang .v3VgKaart .v3VgMap{position:absolute;inset:12px;width:calc(100% - 24px);height:calc(100% - 24px)}
+ .v3View-voortgang .v3VgSide{min-height:0;height:100%}
+ .v3View-voortgang .v3VgSide .v3Card{box-sizing:border-box;height:100%}
+ .v3View-voortgang .v3VgSteps{height:10px}
+ .v3Reis .v3OefPanel .v3Chips{grid-template-columns:repeat(2,minmax(max-content,1fr))}
+ .v3OefPanel .v3Forms{grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}
+ .v3OefPanel .v3FormBtn{flex-direction:row;justify-content:flex-start;min-height:56px;padding:8px;gap:8px;text-align:left}
+ .v3OefPanel{gap:16px;padding:20px}
+}
+@media (max-width:767px){.v3View-voortgang .v3VgKaart{background:none;box-shadow:none}}
+.v3View-voortgang .v3VgMap[data-kaart=eiland]{overflow:hidden!important}
+@media (min-width:1024px){
+ .v3View-voortgang .v3VgSide .v3VgChapters li{height:44px;min-height:44px;box-sizing:border-box;grid-template-rows:24px 10px;padding:0;gap:4px 8px}
+ .v3View-voortgang .v3VgSide .v3VgChapters .v3VgSteps{margin:0;height:10px}
+}
+@media (min-width:1024px){
+ .v3View-voortgang .v3VgKaart{grid-row:2}
+ .v3View-voortgang .v3VgRow{grid-column:1/-1;grid-row:3;grid-template-columns:repeat(3,minmax(0,1fr));grid-template-rows:144px;height:144px}
+ .v3View-voortgang .v3VgRow>.v3VgTile{grid-column:auto;grid-template-columns:48px minmax(0,1fr);row-gap:8px;padding:16px}
+ .v3View-voortgang .v3VgRow>.v3VgTile .v3VgDots{grid-column:2;justify-self:start}
+ .v3View-voortgang .v3VgRow>.v3VgTile .v3VgTileIcon{grid-row:1/3}
+ .v3Reis[data-view=voortgang]>.v3View-voortgang{grid-template-rows:auto 620px 144px}
+}
+.v3VgMap[data-kaart=eiland] .country.v3Hit{fill-opacity:.2!important;stroke-opacity:.4!important}
+.v3VgMap[data-kaart=eiland] .water.v3Hit{fill-opacity:.12!important}

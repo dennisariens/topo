@@ -1,0 +1,41 @@
+# V3.0 doelrenders
+
+Conceptrenders van 10 november 2026 (ChatGPT, prompts in de chat; benchmark in `docs/qa/v3-stijlbeeld/vergelijking-r*`). **Een render bepaalt de stijl en de opbouw, niet de inhoud.** De kaart, de plekken, de hoofdstukken en de getallen komen altijd uit de app. Een scherm is klaar als de render en de build naast elkaar in `docs/qa/v3-stijlbeeld/` staan en de eigenaar daarvoor akkoord heeft gegeven.
+
+## Gedeelde stijl (uit alle zes)
+
+- **Canvas:** het artwork vult het hele scherm. Geen witte plaat; losse glaspanelen, radius ±28, doorschijnend wit met blur en een zachte schaduw.
+- **Zijbalk:** zwevend glaspaneel. Bovenaan het woordmerk TOPO (violet, zwaar, rond) met de driekleur, dan het portret, dan de nav-items in violet tekst op gewicht 700. Het actieve item is een lavendel pil. Onderaan alleen een tandwiel.
+- **Nav-iconen (vast):** Reis = kaart · Oefenen = baret · Toets = klembord · Beloningen = beker · Voortgang = staafjes · Instellingen = tandwiel.
+- **Typografie:** display violet op gewicht 800–900 (Oefenen, Toets, 7/10); labels violet-zwart op gewicht 700. Ronde schreefloze letter; SF Pro Rounded als die er is, anders een ingebedde ronde fallback (te bepalen bij de bouw).
+- **Knoppen:**
+  - primair: een violette pil met verloop, icoon links en pijl rechts;
+  - secundair: een witte glaspil;
+  - selectie: een lavendel vulling met een violette rand.
+- **Kaart:** zweeft vrij boven het artwork met een slagschaduw en zonder kader of waas. Bij Oefenen, Toets en Beloningen is het reliëf standaard; bij Les en Voortgang de schoolkaart. Buurlanden staan altijd in landkleur.
+- **Status-iconen:** groen vinkje = klaar · gouden lauwerkrans = goud · pizzapunt = bezig · rood × = fout.
+
+## Per render: overnemen en afwijken
+
+| Render | Overnemen | Niet overnemen / afwijken |
+| --- | --- | --- |
+| `R-les` | opbouw: een stappenbalk als glaspil, Schoolblad en 1/6 rechtsboven, de vraag in een glaspaneel, een compacte pizzameter, de zoomgroep in de kaarthoek, en de schoolkaart met buurlanden in landkleur | stijl van zijbalk en woordmerk (zwart): gelijktrekken met de andere renders; de nav-iconen volgens de vaste set |
+| `R-oefenen` | vier vormtegels met illustratie, chips in drie kolommen, één Start-pil, reliëfkaart met alleen de groep als pins | AI-kaart en pinposities (echte geometrie gebruiken) |
+| `R-toets-instellen` | één paneel met drie groepen; Nino op ware grootte met klembord rechts op het landschap | toon alle 11 hoofdstukken als chips (geselecteerd = vinkje), niet alleen vier; Lengte als chips zonder radiorondjes |
+| `R-toets-resultaat` | score in een glaskaart, Nino met duim omhoog, reliëfkaart met ✓/×-pins en labels bij fouten, het paneel Fouten en een rij icoonpillen | "overgeslagen" alleen waar het echt overgeslagen is; bij een fout antwoord bij Aanwijzen niets |
+| `R-beloningen` | groot boek als knop, pizza's boven de Vespa, vier tegels met icoon en display-cijfers | **boek:** het goedgekeurde omslag (B) houden, niet het nieuwe omslag met titel en gesp, tenzij de eigenaar anders besluit; **pizza's:** volgen de data (3 per rit); **decoratieve streepjes** bij de titel weg |
+| `R-voortgang` | titelbalk met 23/45 en een balk, een grote kaart met beheersingskleuren en legenda, hoofdstukrijen met foto, balk en status-icoon, dagdoel met stippen | **kaart:** kleur de **45 plekken** (steden, bergen, rivieren …), niet regio's; regiovlakken alleen voor het hoofdstuk Streken. **Lijst:** alle 11 hoofdstukken met de echte namen; past niet alles, dan krijgt het paneel een eigen scroll. **Decoratieve streepjes** weg |
+
+## Nieuw artwork nodig
+
+| ID | Wat | Gebruik |
+| --- | --- | --- |
+| NINO-DUIM | Nino ten voeten uit, duim omhoog (uniform: gesloten blauw werkshirt, rode sjaal, helm met bril, rugzak) | Toets resultaat, alles of bijna alles goed |
+| NINO-AANMOEDIGING | Nino ten voeten uit, bemoedigend gebaar | Toets resultaat, veel fouten |
+| NINO-KLEMBORD | Nino ten voeten uit, schrijft op een klembord | Toets instellen |
+| IC-ontdekken | verrekijker | vormtegel |
+| IC-aanwijzen | kaart met pin | vormtegel |
+| IC-schrijven | potlood | vormtegel |
+| IC-slim | kompas | vormtegel |
+
+Voor de bouw rendert Claude Code tijdelijk de bestaande V2-poses en lijniconen. Het definitieve artwork volgt de pijplijn van `art/v3-render-assets`.

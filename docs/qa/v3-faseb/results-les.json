@@ -1,0 +1,53 @@
+{
+ "runs": {
+  "desktop": {
+   "marks": [
+    {
+     "icon": "v3checkmark",
+     "text": "",
+     "state": "done"
+    },
+    {
+     "icon": "v3point",
+     "text": "",
+     "state": "now"
+    },
+    {
+     "icon": "v3write",
+     "text": "",
+     "state": "later"
+    }
+   ],
+   "big": [
+    "Waar ligt Palermo?"
+   ],
+   "focus": false
+  },
+  "ipad-liggend": {
+   "marks": [
+    {
+     "icon": "v3checkmark",
+     "text": "",
+     "state": "done"
+    },
+    {
+     "icon": "v3point",
+     "text": "",
+     "state": "now"
+    },
+    {
+     "icon": "v3write",
+     "text": "",
+     "state": "later"
+    }
+   ],
+   "big": [],
+   "focus": true
+  }
+ },
+ "errors": [],
+ "summary": {
+  "runs": 2,
+  "pass": true
+ }
+}

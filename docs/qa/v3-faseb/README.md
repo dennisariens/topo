@@ -65,3 +65,21 @@ Losse screenshots: `oefenen-<variant>-<formaat>.png`.
 | Zijbalk, violet, overflow | Portret 112/88/56; geen violette tekst buiten betekenis; geen horizontale scroll |
 
 Alle checks zijn groen.
+
+## Stap 4: Les volgens `R-les`
+
+Script: `scripts/qa-v3-faseb-les.py`. Resultaat: [`results-les.json`](results-les.json).
+
+Gemeten in een routeles (`#bezig`, Steden 7–12, Aanwijzen) op desktop en iPad liggend (Focus Mode). Vergelijking: [desktop](../v3-stijlbeeld/les-ijk-desktop.jpg) · [iPad liggend](../v3-stijlbeeld/les-ijk-ipad-liggend.jpg). De lesflow zelf blijft gedekt door `qa-v3-les.py`.
+
+| Check | Drempel |
+| --- | --- |
+| Stappenbalk (desktop) | Twee glaspillen met gelijke boven- en onderkant (±1 px); de stappen als één gesegmenteerde pil |
+| Stapmarkeringen | Lijniconen, geen cijfers of ✓-tekens: een vinkje bij klaar, anders het vormicoon |
+| Eén display-tekst (desktop) | Alleen de vraag |
+| Antwoordknoppen (desktop) | Secundaire pillen over de volle breedte met een lijnicoon; door V2 verborgen knoppen blijven verborgen |
+| Kaarthoeken (desktop) | De zoomgroep 14 px in de hoek rechtsonder, Heel Italië en Zoom op hoofdstuk linksboven, binnen de kaart (±2 px) |
+| Gedeelde lijn (desktop) | Bovenkant van de kaart = bovenkant van het vraagpaneel (±1 px) |
+| Focus Mode (iPad) | De wrappers lossen op (`display:contents`); geen horizontale scroll |
+
+Alle checks zijn groen.

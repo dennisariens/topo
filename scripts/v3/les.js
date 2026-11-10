@@ -34,7 +34,10 @@
  const bar=make('nav','v3 v3LesBar');bar.setAttribute('aria-label','Lesstappen');bar.hidden=true;
  const back=btn('',toBack,'v3Btn v3LesBack');back.append(make('span',null,'‹'),make('span','v3LesBackText','Reis'));
  const title=make('strong','v3LesTitle'),steps=make('ol','v3LesSteps'),gold=make('div','v3LesGold'),count=make('span','v3LesCount');
- bar.append(back,title,steps,gold,count);layout.before(bar);
+ // R-les (fase B, stap 4): two glass pills on desktop — the lesson (title and steps) and, on the right, Schoolblad and the
+ // count (schoolblad.js puts its button before the count). In Focus Mode both wrappers are display:contents (les-ijk.css).
+ const group=make('div','v3LesGroup'),end=make('div','v3LesEnd');group.append(back,title,steps,gold);end.append(count);
+ bar.append(group,end);layout.before(bar);
 
  function model(){
   if(state.mode==='exam'){const total=state.examTotal|0;return {type:'exam',kind:'exam',title:'Toets',total,n:Math.min(total,(state.examAnswered|0)+(state.answered?0:1)),done:!!state.examEnded,paused:false,q:state.questionMode};}
@@ -47,6 +50,7 @@
  const offHome=()=>$('#journeyScreen')?.classList.contains('hidden')!==false||$('#routeHome')?.classList.contains('hidden');
  const inLesson=()=>state.mode==='route'?!!state.route?.active&&$('#journeyScreen')?.classList.contains('hidden')&&(layout.classList.contains('routeLessonLayout')||layout.classList.contains('finishLayout')):(state.mode==='exam'||FREE.includes(state.mode))&&offHome()&&!layout.classList.contains('routeHomeLayout');
 
+ const STAGE_ICON={discover:'v3discover',point:'v3point',write:'v3write'};
  const FORM={discover:'Ontdekken',point:'Aanwijzen',write:'Namen schrijven',exam:'Toets',smart:'Slim rondje'};
  function renderBar(m){
   back.querySelector('.v3LesBackText').textContent=m.type==='route'?'Reis':m.type==='exam'?'Toets':'Oefenen';
@@ -64,7 +68,8 @@
    const li=make('li'),now=m.kind===stage&&!m.done,done=n<m.r.stage,st=now?'now':done?'done':'later';
    const b=btn('',now||!done?e=>e.stopPropagation():press(()=>v2Card(m.c.id)?.querySelectorAll('.routeStep')[n]),'v3Btn v3LesStep');
    b.dataset.state=st;b.dataset.stage=stage;
-   const mark=make('span','v3LesMark',done&&!now?'✓':String(n+1));mark.setAttribute('aria-hidden','true');
+   // The mark is a line icon (R-les): a check when done, else the stage's own form icon.
+   const mark=make('span','v3LesMark');mark.setAttribute('aria-hidden','true');mark.append(icon(done&&!now?'v3checkmark':STAGE_ICON[stage]));
    b.append(mark,make('span','v3LesStepName',STAGE[stage]));
    b.setAttribute('aria-label',STAGE[stage]+(now?', nu':done?', klaar · herhalen':', later'));
    if(now){li.setAttribute('aria-current','step');b.setAttribute('aria-disabled','true');}

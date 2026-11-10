@@ -1,14 +1,14 @@
 {
  "html": "output/html/TOPO-V3-Reis-Preview.html",
- "sha256": "76a2289d4cf23f09199ad394bbc102d034c6fd8e262e83290249d85982827272",
- "bytes": 50347969,
+ "sha256": "9f5710f5a4506099baa4d7c90f09926cb82feb1c73f0533a6aca4158e8e86afe",
+ "bytes": 50356464,
  "layout": {
   "desktop/nieuw": {
    "frame": {
     "viewBox": "107 173 716 864",
     "mask": "none",
     "kept": {
-     "Frankrijk": 0.97,
+     "Frankrijk": 1,
      "Zwitserland": 1,
      "Oostenrijk": 1,
      "Slovenië": 1,
@@ -1296,7 +1296,7 @@
     "kept": {
      "Frankrijk": 1,
      "Zwitserland": 1,
-     "Slovenië": 0.98,
+     "Slovenië": 1,
      "Kroatië": 1,
      "Sardinië": 1,
      "Sicilië": 1,
@@ -1462,9 +1462,9 @@
    },
    "backVia": "v3Btn v3NavItem",
    "primaryLabelWithActive": "Ga verder · Ontdekken",
-   "questionBefore": "city-11",
+   "questionBefore": "city-12",
    "reisVerderSameQuestion": {
-    "id": "city-11",
+    "id": "city-12",
     "chapter": "city2",
     "kind": "discover"
    },
@@ -1507,9 +1507,9 @@
    },
    "backVia": "v3Btn v3LesBack",
    "primaryLabelWithActive": "Ga verder · Ontdekken",
-   "questionBefore": "city-9",
+   "questionBefore": "city-10",
    "reisVerderSameQuestion": {
-    "id": "city-9",
+    "id": "city-10",
     "chapter": "city2",
     "kind": "discover"
    },

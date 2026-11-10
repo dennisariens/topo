@@ -1,6 +1,6 @@
 {
  "html": "/Users/dennisariens/projects/topo-v3/output/html/TOPO-V3-Reis-Preview.html",
- "sha256": "76a2289d4cf23f09199ad394bbc102d034c6fd8e262e83290249d85982827272",
+ "sha256": "9f5710f5a4506099baa4d7c90f09926cb82feb1c73f0533a6aca4158e8e86afe",
  "indexSha256": "3aced3c31259011b0af2947c78f71965cb4beb2e88c69d1663e61792b0304f5a",
  "label": "na",
  "runs": {
@@ -134,7 +134,7 @@
     844,
     "28px"
    ],
-   "free": 0.665,
+   "free": 0.67,
    "wide": [],
    "edge": {
     "selector": "#map",
@@ -148,17 +148,17 @@
     "letterbox": false,
     "seeThrough": [],
     "box": [
-     443,
-     260,
-     409,
-     568
+     420,
+     208,
+     455,
+     632
     ]
    },
    "theme": "#5b45e0",
    "les": true,
    "view": "reis",
    "hOverflow": false,
-   "freePct": 66.5,
+   "freePct": 67.0,
    "lowContrast": [],
    "backdropFilters": [
     "blur(24px) saturate(1.15)",
@@ -175,10 +175,8 @@
     844,
     "28px"
    ],
-   "free": 0.457,
-   "wide": [
-    "nav.v3.v3LesBar 1080"
-   ],
+   "free": 0.438,
+   "wide": [],
    "edge": {
     "selector": "#map",
     "masks": [],
@@ -191,17 +189,17 @@
     "letterbox": false,
     "seeThrough": [],
     "box": [
-     443,
-     260,
-     409,
-     568
+     420,
+     208,
+     455,
+     632
     ]
    },
    "theme": "#5b45e0",
    "les": true,
    "view": "reis",
    "hOverflow": false,
-   "freePct": 45.7,
+   "freePct": 43.8,
    "lowContrast": [],
    "backdropFilters": [
     "none"
@@ -642,8 +640,8 @@
    "reis-desktop": 65.4,
    "reis-desktop-verminderd": 30.2,
    "reis-schoolkaart-desktop": 65.3,
-   "les-desktop": 66.5,
-   "les-desktop-verminderd": 45.7,
+   "les-desktop": 67.0,
+   "les-desktop-verminderd": 43.8,
    "oefenen-desktop": 56.7,
    "toets-desktop": 24.2,
    "voortgang-desktop": 24.2,
@@ -657,9 +655,6 @@
    "voortgang-ipad-liggend": 19.3
   },
   "wide": {
-   "les-desktop-verminderd": [
-    "nav.v3.v3LesBar 1080"
-   ],
    "toets-desktop": [
     "section.v3View.v3View-toets 1144"
    ],

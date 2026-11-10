@@ -689,3 +689,28 @@ Oefenen volgt nu het ijkpunt `R-oefenen-ijk`, binnen het frame en het raster van
 **QA-bijstelling:** in `qa-v3-shell.py` telt een kaartkloon (svg) bij de tabbalkcheck als één element. Zijn paden mogen buiten het eigen vak lopen; op de telefoon wordt de Oefenen-kaart daar afgekapt.
 
 **Bewijs:** `scripts/qa-v3-faseb-oefenen.py` (24 runs, groen) en de vergelijkingen `docs/qa/v3-stijlbeeld/oefenen-ijk-{eiland,kaart}-{desktop,ipad-liggend}.jpg`.
+
+## 2026-11-10 — V3.0 fase B, stap 4: Les volgens R-les
+
+De les volgt nu de opbouw van `R-les`, met de stijl van `R-oefenen-ijk` en de Verfijning. De V2-les blijft ongewijzigd: `#quiz`, `#map`, hun knoppen, handlers en Focus Mode. V3 voegt alleen twee wrappers toe in zijn eigen lesbalk en zet iconen in zijn eigen stapmarkeringen.
+
+**Stappenbalk (desktop):**
+- twee glaspillen op één lijn: links de les (titel en de stappen als één gesegmenteerde pil), rechts Schoolblad en de teller;
+- elke stap heeft een lijnicoon in plaats van een cijfer of ✓: een vinkje bij klaar, anders het vormicoon (verrekijker, vizier, potlood);
+- in Focus Mode (iPad, telefoon) lossen de wrappers op (`display:contents`), zodat de bestaande ene rij blijft; alleen de iconen zijn ook daar nieuw.
+
+**Vraagpaneel (desktop):**
+- de vraag is het enige display-element;
+- "Ik weet het nog niet", "Toon antwoord" en "Oefen fouten" zijn secundaire pillen over de volle breedte, met een lijnicoon (vraagteken, oog, opnieuw);
+- de hoofdactie is de primaire pil met verloop;
+- door V2 verborgen knoppen blijven verborgen, en in een toets blijven de hints weg (`shell.css`);
+- de pizzameter is compact, met de stand ("6 van 8") als het getal dat leest. De tekst eromheen blijft staan, want die is inhoud.
+
+**Kaart (desktop):**
+- de zoomgroep (− + 100%) staat in de hoek rechtsonder van de kaart, Heel Italië en Zoom op hoofdstuk linksboven;
+- de kaart krijgt daardoor de hele kolomhoogte, en de bovenkant ligt op één lijn met het vraagpaneel;
+- de schoolkaart met buurlanden in landkleur bleef zoals hij was.
+
+**Niet overgenomen:** de render toont alleen − en +. De knoppen 100%, Heel Italië en Zoom op hoofdstuk zijn bestaand gedrag en blijven staan.
+
+**Bewijs:** `scripts/qa-v3-faseb-les.py` en `docs/qa/v3-stijlbeeld/les-ijk-{desktop,ipad-liggend}.jpg`. De lesflow zelf blijft gedekt door `qa-v3-les.py`.

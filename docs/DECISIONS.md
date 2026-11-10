@@ -484,3 +484,17 @@ Review-fix 3 (ook in `DESIGN_AUDIT_V3_0.md`: "het dubbele label weg"). In de ken
   - in de appwereld gebruiken we alleen de echte objecten (het omslag, het stempel-icoon, de postkaart) als artwork;
   - in de papierwereld verschijnen geen glas en geen violet, behalve de sluitknop en de focusring, die in de app-stijl blijven omdat ze bij de bediening horen.
 - **Herkomst:** de vergelijking met het eerdere concept "Vernieuwde interface" (atlas, perkament, diepgroen primair, terracotta accent). Daarvan nemen we de warmte over in het boek, niet de drukte (tagline, hulpteksten, veel blokken).
+
+## 2026-11-10 — Idee uitstapjes (V3.1, niet in V3.0)
+
+- **Idee van de eigenaar:** tijdens de leerroute nodigt Nino uit voor een uitstapje, bijvoorbeeld "Zin in een potje voetbal in Turijn?".
+- **Vorm (lead designer):** een uitstapje is de inhoud van de **Vespa-rit**, de bestaande beloning na 3 pizza's. Er komt geen nieuw beloningssysteem. Elke rit gaat naar een stad: een scène, één weetje en een korte interactie (≤ 30 s) die stiekem leert. Bij Turijn bijvoorbeeld: "schiet de bal naar Milaan" op een mini-kaart.
+- **Regels:**
+  - het uitstapje onderbreekt nooit een vraag; het verschijnt alleen op een natuurlijke pauze (na een lesstap);
+  - "Later" kan altijd en kost niets;
+  - geen uitstapjes in Toets en Gouden proef;
+  - toetsenbord, verminderde beweging en VoiceOver werken volledig;
+  - het uitstapje geeft geen extra pizza's: de rit is al de beloning;
+  - het eindigt als postkaart in het Reisboekje.
+- **Artwork:** Nino in zijn uniform (geen clubtenue, geen tekst in beeld). De Turijn-scène (Piazza San Carlo, bal, Vespa) is de eerste kandidaat.
+- **Planning:** na V3.0, eerst één prototype (Turijn) en daarna besluit de eigenaar.

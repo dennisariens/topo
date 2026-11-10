@@ -81,12 +81,16 @@ const prov=JSON.parse(read('assets/discovery/terrain-z8-render-provenance.json')
 for(const [role,e] of Object.entries(reliefFiles)){const b=readFileSync(new URL(e.path,root));if(createHash('sha256').update(b).digest('hex')!==e.sha256)throw Error('Relief layer differs from provenance: '+e.path);relief[role]='data:image/webp;base64,'+b.toString('base64');}
 if(Object.keys(relief).sort().join()!=='coast,sea,shadow,terrain')throw Error('Relief layers incomplete');
 const sceneJs='window.TOPO_V3_SCENES='+JSON.stringify(scenes)+';window.TOPO_V3_RELIEF='+JSON.stringify(relief)+';window.TOPO_V3_ART='+JSON.stringify(v3art)+';';
-const css=read('scripts/v3/tokens.css')+read('scripts/v3/reis.css')+read('scripts/v3/les.css')+read('scripts/v3/shell.css')+read('scripts/v3/glas.css')+barCss;
+// UI font (fase B): the embedded rounded fallback, checked against its manifest (SF Pro Rounded wins where present).
+const fontM=JSON.parse(read('assets/v3/font/manifest.json')),fontB=readFileSync(new URL(fontM.path,root));
+if(createHash('sha256').update(fontB).digest('hex')!==fontM.sha256)throw Error('UI font differs from manifest: '+fontM.path);
+const fontCss='@font-face{font-family:"Topo Rounded";src:url(data:font/woff2;base64,'+fontB.toString('base64')+') format("woff2");font-weight:200 1000;font-style:normal;font-display:swap}';
+const css=fontCss+read('scripts/v3/tokens.css')+read('scripts/v3/reis.css')+read('scripts/v3/les.css')+read('scripts/v3/shell.css')+read('scripts/v3/glas.css')+read('scripts/v3/stijl.css')+barCss;
 const head='<head>\n<script>\n'+states+'\n'+sceneJs+'\n</script>\n<style>/* BEGIN TOPO V3 */'+css+'/* END TOPO V3 */</style>';
 const last=html.lastIndexOf('</body>');if(last<0||html.indexOf('<head>')<0)throw Error('Unexpected index.html shape');
 let out=html.replace('<head>',()=>head);
 const end=out.lastIndexOf('</body>');
-out=out.slice(0,end)+'<script>\n// BEGIN TOPO V3\n'+read('scripts/v3/reis.js')+'\n'+read('scripts/v3/les.js')+'\n'+read('scripts/v3/shell.js')+'\n'+read('scripts/v3/schoolblad.js')+'\n'+read('scripts/v3/toets.js')+'\n'+read('scripts/v3/voortgang.js')+'\n'+read('scripts/v3/kennismaking.js')+'\n// END TOPO V3\n</script>\n'+out.slice(end);
+out=out.slice(0,end)+'<script>\n// BEGIN TOPO V3\n'+read('scripts/v3/iconen.js')+'\n'+read('scripts/v3/reis.js')+'\n'+read('scripts/v3/les.js')+'\n'+read('scripts/v3/shell.js')+'\n'+read('scripts/v3/schoolblad.js')+'\n'+read('scripts/v3/toets.js')+'\n'+read('scripts/v3/voortgang.js')+'\n'+read('scripts/v3/kennismaking.js')+'\n// END TOPO V3\n</script>\n'+out.slice(end);
 out=out.replace(/<title>([^<]*)<\/title>/,(m,t)=>'<title>V3-preview Reis · '+t+'</title>');
 const file='output/html/TOPO-V3-Reis-Preview.html';
 writeFileSync(new URL(file,root),out);

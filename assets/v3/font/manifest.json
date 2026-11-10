@@ -1,0 +1,10 @@
+{
+ "font": "Nunito (variable, wght 200–1000)",
+ "role": "embedded rounded fallback for the V3 UI font where SF Pro Rounded (ui-rounded) is unavailable (fase B, docs/v3/renders/README.md § Gedeelde stijl)",
+ "license": "SIL Open Font License 1.1 (OFL.txt)",
+ "source": "https://github.com/google/fonts/raw/main/ofl/nunito/Nunito%5Bwght%5D.ttf",
+ "sourceSha256": "bb55a5ca5c2042335b3991af27c4d0705d0ef41cac6164ac737fd8f2a1e85207",
+ "subset": "fontTools.subset: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2190-2193, U+2212, U+2215, U+20AC, U+2122, U+2713, U+2715, U+00D7; features kern, liga, tnum, lnum, case; woff2",
+ "path": "assets/v3/font/nunito-latin.woff2",
+ "sha256": "7050925e318343d6bf11a859e576ab8d9b55f5893817b2435b732aa6a85916bf"
+}

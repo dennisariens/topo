@@ -24,10 +24,7 @@
  // a chapter without a scene keeps its chapter icon. Render assets: background, portrait, icons, VE-01.
  const scenes=window.TOPO_V3_SCENES||{},V3ART=window.TOPO_V3_ART||null;
  const pic=(src,cls,w,h)=>{const i=make('img',cls);i.src=src;i.alt='';i.decoding='async';if(w){i.width=w;i.height=h;}return i;};
- // One extra symbol in the existing sprite: a gear for settings.
- const defs=document.querySelector('#topoIconSprite defs');
- if(defs&&!document.getElementById('topo-v3gear')){const g=document.createElementNS(SVGNS,'symbol');g.id='topo-v3gear';g.setAttribute('viewBox','0 0 32 32');g.innerHTML='<circle cx="16" cy="16" r="4.5"/><path d="M16 3v4m0 18v4M3 16h4m18 0h4M6.8 6.8l2.8 2.8m12.8 12.8 2.8 2.8M6.8 25.2l2.8-2.8m12.8-12.8 2.8-2.8"/>';defs.append(g);
-  for(const [id,d] of [['v3test','<rect x="6" y="4" width="20" height="25" rx="3"/><path d="M12 4h8v4h-8zM11 15l3 3 6-6M11 23h10"/>'],['v3progress','<path d="M4 28h24M8 24V16m8 8V8m8 16V12"/>'],['v3sheet','<path d="M8 3h11l6 6v20H8z"/><path d="M19 3v6h6M12 15h9M12 19h9M12 23h6"/>'],['v3smart','<path d="M16 3v7m0 12v7M3 16h7m12 0h7M7 7l4 4m10 10 4 4m0-18-4 4M11 21l-4 4"/>']]){const y=document.createElementNS(SVGNS,'symbol');y.id='topo-'+id;y.setAttribute('viewBox','0 0 32 32');y.innerHTML=d;defs.append(y);}}
+ // Line icons: iconen.js adds the V3 set to the V2 sprite (fase B).
 
  function model(){
   const chapters=ROUTE_CHAPTERS.map((c,index)=>{const r=TopoRoute.record(state.route,c.id);return {...c,index,r,open:TopoRoute.unlocked(state.route,ROUTE_CHAPTERS,c.id),done:r.stage===3,gold:r.goldAt>0};});
@@ -42,7 +39,7 @@
  // Sidebar: one component for Reis and the lesson. Inside a lesson, Reis returns to Reis through the V2 nav.
  // Navigation (V3.0, docs/v3/V3_0_REST.md § 1): six tabs on every screen. The shell (shell.js) routes each tab;
  // the current tab follows the route the learner chose (DECISIONS 7-11).
- const TABS=[['reis','Reis','vespa'],['oefenen','Oefenen','point'],['toets','Toets','v3test'],['rewards','Beloningen','gold'],['voortgang','Voortgang','v3progress']];
+ const TABS=[['reis','Reis','v3map'],['oefenen','Oefenen','v3cap'],['toets','Toets','v3test'],['rewards','Beloningen','v3trophy'],['voortgang','Voortgang','v3progress']];
  const go=tab=>e=>{e?.stopPropagation?.();window.TOPO_V3?.go?.(tab,e?.currentTarget);};
  function makeSide(){
   const side=make('nav','v3Side');side.setAttribute('aria-label','Hoofdnavigatie');

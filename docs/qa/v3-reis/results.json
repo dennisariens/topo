@@ -1,7 +1,7 @@
 {
  "html": "output/html/TOPO-V3-Reis-Preview.html",
- "sha256": "ecb9787961deba241e37ef4f039575d7e1354b1d1ce27951558c120d275ba6b1",
- "bytes": 50267587,
+ "sha256": "12d974a95402f2c44ff3afd91d85265587e88dce90f4203d58ef431507e5d6db",
+ "bytes": 50323521,
  "layout": {
   "desktop/nieuw": {
    "frame": {
@@ -48,14 +48,16 @@
     ]
    },
    "lastRowClear": true,
-   "primaryTop": 483,
-   "primaryBottom": 535,
+   "primaryTop": 486,
+   "primaryBottom": 538,
    "viewport": 900,
    "primaryVisible": true,
    "covered": false,
    "overlaps": [],
    "small": [],
-   "clipped": [],
+   "clipped": [
+    "Instellingen"
+   ],
    "horizontalOverflow": false,
    "brokenWords": [],
    "labels": {
@@ -73,7 +75,7 @@
     "names": 56
    },
    "switchOcclusion": {
-    "rectOverlap": 1388.8828125,
+    "rectOverlap": 1447.3125,
     "covered": {}
    }
   },
@@ -122,14 +124,16 @@
     ]
    },
    "lastRowClear": true,
-   "primaryTop": 483,
-   "primaryBottom": 535,
+   "primaryTop": 486,
+   "primaryBottom": 538,
    "viewport": 900,
    "primaryVisible": true,
    "covered": false,
    "overlaps": [],
    "small": [],
-   "clipped": [],
+   "clipped": [
+    "Instellingen"
+   ],
    "horizontalOverflow": false,
    "brokenWords": [],
    "labels": {
@@ -147,7 +151,7 @@
     "names": 56
    },
    "switchOcclusion": {
-    "rectOverlap": 1388.8828125,
+    "rectOverlap": 1447.3125,
     "covered": {}
    }
   },
@@ -196,14 +200,16 @@
     ]
    },
    "lastRowClear": true,
-   "primaryTop": 483,
-   "primaryBottom": 535,
+   "primaryTop": 486,
+   "primaryBottom": 538,
    "viewport": 900,
    "primaryVisible": true,
    "covered": false,
    "overlaps": [],
    "small": [],
-   "clipped": [],
+   "clipped": [
+    "Instellingen"
+   ],
    "horizontalOverflow": false,
    "brokenWords": [],
    "labels": {
@@ -221,7 +227,7 @@
     "names": 56
    },
    "switchOcclusion": {
-    "rectOverlap": 1388.8828125,
+    "rectOverlap": 1447.3125,
     "covered": {}
    }
   },
@@ -270,14 +276,16 @@
     ]
    },
    "lastRowClear": true,
-   "primaryTop": 483,
-   "primaryBottom": 535,
+   "primaryTop": 486,
+   "primaryBottom": 538,
    "viewport": 900,
    "primaryVisible": true,
    "covered": false,
    "overlaps": [],
    "small": [],
-   "clipped": [],
+   "clipped": [
+    "Instellingen"
+   ],
    "horizontalOverflow": false,
    "brokenWords": [],
    "labels": {
@@ -295,7 +303,7 @@
     "names": 56
    },
    "switchOcclusion": {
-    "rectOverlap": 1388.8828125,
+    "rectOverlap": 1447.3125,
     "covered": {}
    }
   },
@@ -344,8 +352,8 @@
     ]
    },
    "lastRowClear": true,
-   "primaryTop": 471,
-   "primaryBottom": 523,
+   "primaryTop": 474,
+   "primaryBottom": 526,
    "viewport": 1180,
    "primaryVisible": true,
    "covered": false,
@@ -369,7 +377,7 @@
     "names": 56
    },
    "switchOcclusion": {
-    "rectOverlap": 4134.375,
+    "rectOverlap": 4575.375,
     "covered": {}
    }
   },
@@ -418,8 +426,8 @@
     ]
    },
    "lastRowClear": true,
-   "primaryTop": 471,
-   "primaryBottom": 523,
+   "primaryTop": 474,
+   "primaryBottom": 526,
    "viewport": 1180,
    "primaryVisible": true,
    "covered": false,
@@ -495,8 +503,8 @@
     ]
    },
    "lastRowClear": true,
-   "primaryTop": 471,
-   "primaryBottom": 523,
+   "primaryTop": 474,
+   "primaryBottom": 526,
    "viewport": 1180,
    "primaryVisible": true,
    "covered": false,
@@ -523,7 +531,7 @@
     "names": 56
    },
    "switchOcclusion": {
-    "rectOverlap": 4134.375,
+    "rectOverlap": 4575.375,
     "covered": {}
    }
   },
@@ -571,8 +579,8 @@
     ]
    },
    "lastRowClear": true,
-   "primaryTop": 471,
-   "primaryBottom": 523,
+   "primaryTop": 474,
+   "primaryBottom": 526,
    "viewport": 1180,
    "primaryVisible": true,
    "covered": false,
@@ -648,8 +656,8 @@
     ]
    },
    "lastRowClear": true,
-   "primaryTop": 436,
-   "primaryBottom": 488,
+   "primaryTop": 439,
+   "primaryBottom": 491,
    "viewport": 820,
    "primaryVisible": true,
    "covered": false,
@@ -673,7 +681,7 @@
     "names": 56
    },
    "switchOcclusion": {
-    "rectOverlap": 12962.90625,
+    "rectOverlap": 13508.25,
     "covered": {}
    }
   },
@@ -722,8 +730,8 @@
     ]
    },
    "lastRowClear": true,
-   "primaryTop": 436,
-   "primaryBottom": 488,
+   "primaryTop": 439,
+   "primaryBottom": 491,
    "viewport": 820,
    "primaryVisible": true,
    "covered": false,
@@ -747,7 +755,7 @@
     "names": 56
    },
    "switchOcclusion": {
-    "rectOverlap": 12962.90625,
+    "rectOverlap": 13508.25,
     "covered": {}
    }
   },
@@ -796,8 +804,8 @@
     ]
    },
    "lastRowClear": true,
-   "primaryTop": 436,
-   "primaryBottom": 488,
+   "primaryTop": 439,
+   "primaryBottom": 491,
    "viewport": 820,
    "primaryVisible": true,
    "covered": false,
@@ -821,7 +829,7 @@
     "names": 56
    },
    "switchOcclusion": {
-    "rectOverlap": 12962.90625,
+    "rectOverlap": 13508.25,
     "covered": {}
    }
   },
@@ -870,8 +878,8 @@
     ]
    },
    "lastRowClear": true,
-   "primaryTop": 436,
-   "primaryBottom": 488,
+   "primaryTop": 439,
+   "primaryBottom": 491,
    "viewport": 820,
    "primaryVisible": true,
    "covered": false,
@@ -895,7 +903,7 @@
     "names": 56
    },
    "switchOcclusion": {
-    "rectOverlap": 12962.90625,
+    "rectOverlap": 13508.25,
     "covered": {}
    }
   },
@@ -943,8 +951,8 @@
     ]
    },
    "lastRowClear": true,
-   "primaryTop": 216,
-   "primaryBottom": 268,
+   "primaryTop": 224,
+   "primaryBottom": 276,
    "viewport": 844,
    "primaryVisible": true,
    "covered": false,
@@ -1016,8 +1024,8 @@
     ]
    },
    "lastRowClear": true,
-   "primaryTop": 216,
-   "primaryBottom": 268,
+   "primaryTop": 224,
+   "primaryBottom": 276,
    "viewport": 844,
    "primaryVisible": true,
    "covered": false,
@@ -1089,8 +1097,8 @@
     ]
    },
    "lastRowClear": true,
-   "primaryTop": 216,
-   "primaryBottom": 268,
+   "primaryTop": 224,
+   "primaryBottom": 276,
    "viewport": 844,
    "primaryVisible": true,
    "covered": false,
@@ -1162,8 +1170,8 @@
     ]
    },
    "lastRowClear": true,
-   "primaryTop": 216,
-   "primaryBottom": 268,
+   "primaryTop": 224,
+   "primaryBottom": 276,
    "viewport": 844,
    "primaryVisible": true,
    "covered": false,
@@ -1235,8 +1243,8 @@
     ]
    },
    "lastRowClear": true,
-   "primaryTop": 216,
-   "primaryBottom": 268,
+   "primaryTop": 224,
+   "primaryBottom": 276,
    "viewport": 640,
    "primaryVisible": true,
    "covered": false,
@@ -1308,8 +1316,8 @@
     ]
    },
    "lastRowClear": true,
-   "primaryTop": 216,
-   "primaryBottom": 268,
+   "primaryTop": 224,
+   "primaryBottom": 276,
    "viewport": 640,
    "primaryVisible": true,
    "covered": false,
@@ -1381,8 +1389,8 @@
     ]
    },
    "lastRowClear": true,
-   "primaryTop": 216,
-   "primaryBottom": 268,
+   "primaryTop": 224,
+   "primaryBottom": 276,
    "viewport": 640,
    "primaryVisible": true,
    "covered": false,
@@ -1454,8 +1462,8 @@
     ]
    },
    "lastRowClear": true,
-   "primaryTop": 216,
-   "primaryBottom": 268,
+   "primaryTop": 224,
+   "primaryBottom": 276,
    "viewport": 640,
    "primaryVisible": true,
    "covered": false,
@@ -1514,9 +1522,9 @@
    },
    "backVia": "v3Btn v3NavItem",
    "primaryLabelWithActive": "Ga verder · Ontdekken",
-   "questionBefore": "city-11",
+   "questionBefore": "city-8",
    "reisVerderSameQuestion": {
-    "id": "city-11",
+    "id": "city-8",
     "chapter": "city2",
     "kind": "discover"
    },
@@ -1559,9 +1567,9 @@
    },
    "backVia": "v3Btn v3LesBack",
    "primaryLabelWithActive": "Ga verder · Ontdekken",
-   "questionBefore": "city-7",
+   "questionBefore": "city-9",
    "reisVerderSameQuestion": {
-    "id": "city-7",
+    "id": "city-9",
     "chapter": "city2",
     "kind": "discover"
    },
@@ -1790,11 +1798,11 @@
    "covered": {}
   },
   "ipad-portrait/islands/schoolkaart": {
-   "rectOverlap": 4134.375,
+   "rectOverlap": 4575.375,
    "covered": {}
   },
   "ipad-portrait/islands/reliëf": {
-   "rectOverlap": 4134.375,
+   "rectOverlap": 4575.375,
    "covered": {}
   },
   "ipad-portrait/mountains/schoolkaart": {
@@ -1855,8 +1863,8 @@
   "nextTab": "★ Goud nog eens"
  },
  "theme": {
-  "viola": "rgb(91, 69, 224)",
-  "italia": "rgb(185, 80, 47)"
+  "viola": "rgba(0, 0, 0, 0)",
+  "italia": "rgba(0, 0, 0, 0)"
  },
  "keyboard": {
   "order": [
@@ -1896,6 +1904,18 @@
   "primaryBelowFold": [],
   "overlaps": {},
   "clipped": {
+   "desktop/nieuw": [
+    "Instellingen"
+   ],
+   "desktop/bezig": [
+    "Instellingen"
+   ],
+   "desktop/afgerond": [
+    "Instellingen"
+   ],
+   "desktop/alles": [
+    "Instellingen"
+   ],
    "ipad-portrait/bezig": [
     "overflow:14 / 24",
     "overflow:0"

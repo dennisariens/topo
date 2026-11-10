@@ -1,6 +1,6 @@
 {
  "html": "/Users/dennisariens/projects/topo-v3/output/html/TOPO-V3-Reis-Preview.html",
- "sha256": "ecb9787961deba241e37ef4f039575d7e1354b1d1ce27951558c120d275ba6b1",
+ "sha256": "12d974a95402f2c44ff3afd91d85265587e88dce90f4203d58ef431507e5d6db",
  "indexSha256": "3aced3c31259011b0af2947c78f71965cb4beb2e88c69d1663e61792b0304f5a",
  "label": "na",
  "runs": {
@@ -12,7 +12,7 @@
     844,
     "28px"
    ],
-   "free": 0.691,
+   "free": 0.721,
    "wide": [],
    "edge": {
     "selector": ".v3Map",
@@ -33,7 +33,7 @@
    "les": false,
    "view": "reis",
    "hOverflow": false,
-   "freePct": 69.1,
+   "freePct": 72.1,
    "lowContrast": [],
    "backdropFilters": [
     "blur(24px) saturate(1.15)",
@@ -50,7 +50,7 @@
     844,
     "28px"
    ],
-   "free": 0.341,
+   "free": 0.354,
    "wide": [],
    "edge": {
     "selector": ".v3Map",
@@ -71,7 +71,7 @@
    "les": false,
    "view": "reis",
    "hOverflow": false,
-   "freePct": 34.1,
+   "freePct": 35.4,
    "lowContrast": [],
    "backdropFilters": [
     "none"
@@ -87,7 +87,7 @@
     844,
     "28px"
    ],
-   "free": 0.691,
+   "free": 0.72,
    "wide": [],
    "edge": {
     "selector": ".v3Map",
@@ -108,7 +108,7 @@
    "les": false,
    "view": "reis",
    "hOverflow": false,
-   "freePct": 69.1,
+   "freePct": 72.0,
    "lowContrast": [],
    "backdropFilters": [
     "blur(24px) saturate(1.15)",
@@ -125,7 +125,7 @@
     844,
     "28px"
    ],
-   "free": 0.664,
+   "free": 0.665,
    "wide": [],
    "edge": {
     "selector": "#map",
@@ -146,7 +146,7 @@
    "les": true,
    "view": "reis",
    "hOverflow": false,
-   "freePct": 66.4,
+   "freePct": 66.5,
    "lowContrast": [],
    "backdropFilters": [
     "blur(24px) saturate(1.15)",
@@ -202,14 +202,14 @@
     844,
     "28px"
    ],
-   "free": 0.815,
+   "free": 0.849,
    "wide": [],
    "edge": null,
    "theme": "#5b45e0",
    "les": false,
    "view": "oefenen",
    "hOverflow": false,
-   "freePct": 81.5,
+   "freePct": 84.9,
    "lowContrast": [],
    "backdropFilters": [
     "blur(24px) saturate(1.15)"
@@ -225,7 +225,7 @@
     844,
     "28px"
    ],
-   "free": 0.238,
+   "free": 0.242,
    "wide": [
     "section.v3View.v3View-toets 1144"
    ],
@@ -234,7 +234,7 @@
    "les": false,
    "view": "toets",
    "hOverflow": false,
-   "freePct": 23.8,
+   "freePct": 24.2,
    "lowContrast": [],
    "backdropFilters": [
     "blur(24px) saturate(1.15)",
@@ -251,7 +251,7 @@
     844,
     "28px"
    ],
-   "free": 0.238,
+   "free": 0.242,
    "wide": [
     "section.v3View.v3View-voortgang 1144"
    ],
@@ -265,7 +265,7 @@
     "seeThrough": [],
     "box": [
      391,
-     255,
+     256,
      402,
      558
     ]
@@ -274,7 +274,7 @@
    "les": false,
    "view": "voortgang",
    "hOverflow": false,
-   "freePct": 23.8,
+   "freePct": 24.2,
    "lowContrast": [],
    "backdropFilters": [
     "blur(24px) saturate(1.15)",
@@ -291,7 +291,7 @@
     780,
     "28px"
    ],
-   "free": 0.583,
+   "free": 0.611,
    "wide": [],
    "edge": {
     "selector": ".v3Map",
@@ -312,7 +312,7 @@
    "les": false,
    "view": "reis",
    "hOverflow": false,
-   "freePct": 58.3,
+   "freePct": 61.1,
    "lowContrast": [],
    "backdropFilters": [
     "blur(24px) saturate(1.15)",
@@ -329,7 +329,7 @@
     780,
     "28px"
    ],
-   "free": 0.257,
+   "free": 0.276,
    "wide": [],
    "edge": {
     "selector": ".v3Map",
@@ -350,7 +350,7 @@
    "les": false,
    "view": "reis",
    "hOverflow": false,
-   "freePct": 25.7,
+   "freePct": 27.6,
    "lowContrast": [],
    "backdropFilters": [
     "none"
@@ -366,7 +366,7 @@
     780,
     "28px"
    ],
-   "free": 0.583,
+   "free": 0.609,
    "wide": [],
    "edge": {
     "selector": ".v3Map",
@@ -387,7 +387,7 @@
    "les": false,
    "view": "reis",
    "hOverflow": false,
-   "freePct": 58.3,
+   "freePct": 60.9,
    "lowContrast": [],
    "backdropFilters": [
     "blur(24px) saturate(1.15)",
@@ -481,14 +481,14 @@
     780,
     "28px"
    ],
-   "free": 0.792,
+   "free": 0.799,
    "wide": [],
    "edge": null,
    "theme": "#5b45e0",
    "les": false,
    "view": "oefenen",
    "hOverflow": false,
-   "freePct": 79.2,
+   "freePct": 79.9,
    "lowContrast": [],
    "backdropFilters": [
     "blur(24px) saturate(1.15)"
@@ -544,7 +544,7 @@
     "seeThrough": [],
     "box": [
      211,
-     239,
+     240,
      366,
      508
     ]
@@ -564,35 +564,23 @@
   }
  },
  "errors": [],
- "comparisons": [
-  "voor-na-reis-desktop.jpg",
-  "voor-na-reis-ipad-liggend.jpg",
-  "voor-na-les-desktop.jpg",
-  "voor-na-les-ipad-liggend.jpg",
-  "voor-na-oefenen-desktop.jpg",
-  "voor-na-oefenen-ipad-liggend.jpg",
-  "voor-na-toets-desktop.jpg",
-  "voor-na-toets-ipad-liggend.jpg",
-  "voor-na-voortgang-desktop.jpg",
-  "voor-na-voortgang-ipad-liggend.jpg"
- ],
  "summary": {
   "label": "na",
   "free": {
-   "reis-desktop": 69.1,
-   "reis-desktop-verminderd": 34.1,
-   "reis-schoolkaart-desktop": 69.1,
-   "les-desktop": 66.4,
+   "reis-desktop": 72.1,
+   "reis-desktop-verminderd": 35.4,
+   "reis-schoolkaart-desktop": 72.0,
+   "les-desktop": 66.5,
    "les-desktop-verminderd": 45.7,
-   "oefenen-desktop": 81.5,
-   "toets-desktop": 23.8,
-   "voortgang-desktop": 23.8,
-   "reis-ipad-liggend": 58.3,
-   "reis-ipad-liggend-verminderd": 25.7,
-   "reis-schoolkaart-ipad-liggend": 58.3,
+   "oefenen-desktop": 84.9,
+   "toets-desktop": 24.2,
+   "voortgang-desktop": 24.2,
+   "reis-ipad-liggend": 61.1,
+   "reis-ipad-liggend-verminderd": 27.6,
+   "reis-schoolkaart-ipad-liggend": 60.9,
    "les-ipad-liggend": 73.1,
    "les-ipad-liggend-verminderd": 56.2,
-   "oefenen-ipad-liggend": 79.2,
+   "oefenen-ipad-liggend": 79.9,
    "toets-ipad-liggend": 12.2,
    "voortgang-ipad-liggend": 12.2
   },

@@ -4,6 +4,15 @@ Branch `codex/topo-v3` vanaf de V2-afsluiting `f53dc0b` (voorouder `v2.0.2` = `8
 
 **V3.0 deel 5 — Kennismaking** (9 november): de V2-eerste-keerdialoog is één V3-scène met welkomstpose, naam, favoriete pizza, Andiamo! en Start meteen; de hulpteksten zijn weg. Daarna opent Reis met hoofdstuk 1. Profielschema 1 en de V2-regel voor het eenmalig opnieuw aanbieden blijven gelijk. Preview-demo `#welkom`. [Bewijs](qa/v3-kennismaking/README.md).
 
+**V3.0 fase B — stap 1, de gedeelde visuele laag** (10 november), volgens Ingetogenheid en Verfijning:
+- één ronde letter: SF Pro Rounded waar die er is, anders de ingebedde Nunito ("Topo Rounded", OFL, 33 KB);
+- inkt `#2A2440`, secundair `#5E5872`; titel op 700, rijen op 500, selectie op 600;
+- knoppen: een violette primaire pil met pijl, witte glaspillen, selectie in lavendel met violette rand;
+- één set dunne lijniconen, met de vaste nav-iconen;
+- het woordmerk TOPO in inkt, het portret 112 px.
+
+Raster en schermen volgen per stap, Reis eerst. [Besluit](DECISIONS.md).
+
 **V3.0 fase A — stap 1, canvas en glas** (10 november):
 - viola is de standaard (italia via `#…/italia`);
 - de witte plaat is weg: het artwork is het canvas op desktop en iPad, ook in lessen;

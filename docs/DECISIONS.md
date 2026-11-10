@@ -582,3 +582,43 @@ Nieuw bestand: `scripts/v3/glas.css`, geladen na `shell.css`.
   - Wis voortgang: annuleren en bevestigen.
   - Op de oude code faalt de test op beide punten.
 - **Karakteriseringstest op `arch/v3-runtime`:** de test "observed quirk" (`exam-storage.test.mjs`) legt het oude defect vast. Bij samenvoegen moet hij behoud bij annuleren verwachten. Deze branch raakt hem niet aan.
+
+## 2026-11-10 — V3.0 fase B, stap 1: de gedeelde visuele laag
+
+Bron: `docs/v3/renders/README.md` (Gedeelde stijl, Ingetogenheid, IJkpunt `R-oefenen-ijk`, Verfijning). Bij een conflict gaan de regels van Ingetogenheid en Verfijning voor de renders. Alleen presentatie; gedrag en logica blijven gelijk. Bestanden: `scripts/v3/stijl.css` (na `glas.css`) en `scripts/v3/iconen.js`.
+
+- **Letter:** één ronde schreefloze letter.
+  - Waar het systeem SF Pro Rounded heeft (Safari op Apple, via `ui-rounded`), is dat de letter.
+  - Elders is het een **ingebedde ronde fallback "Topo Rounded"**: Nunito (OFL), Latijns subset, variabel gewicht, 33 KB woff2. Het bestand staat in `assets/v3/font/` met manifest en SHA256; de previewbuild controleert de SHA256 en bedt het in.
+  - Waarom: Chrome kent `ui-rounded` niet, en op Chromebooks ontbreekt SF.
+- **Gewichten en maten:**
+  - de schermtitel op 700 en ±35 px;
+  - rijen en labels op 500, 15–17 px;
+  - actief of geselecteerd op 600;
+  - geen hoofdletters als nadruk (het kopje "HOOFDSTUK 2" wordt "Hoofdstuk 2", in secundaire inkt).
+- **Inkt:**
+  - de tekst is `#2A2440`;
+  - secundaire tekst is `#5E5872` (±62% van de inkt, licht donkerder voor AA op glas);
+  - een derde, stille inkt `#8B879A`, alleen voor iconen (bijvoorbeeld het slotje).
+  - De lijniconen staan in secundaire inkt.
+- **Violet alleen voor betekenis:** de primaire actie, de actieve nav, selectie en voortgang. Geen violette labels of lopende tekst.
+- **Knoppen:**
+  - **primair:** een violette pil met verloop en een stille pijl rechts, zonder glow;
+  - **secundair:** een witte glaspil met een binnenrand van 1 px;
+  - **selectie** (chips, vormtegels, rijen, nav): een lavendel vulling met een violette rand en violette tekst op 600;
+  - **hover:** maakt alleen stille knoppen lichter, nooit de selectie of de primaire knop.
+- **Iconen:** één set dunne lijniconen (32×32, streek 1,7, in de stijl van SF Symbols), toegevoegd aan de bestaande V2-sprite.
+  - **Nav (vast):** Reis = kaart, Oefenen = baret, Toets = klembord, Beloningen = beker, Voortgang = staafjes, Instellingen = tandwiel.
+  - **Vormen:** Ontdekken = verrekijker, Aanwijzen = vizier, Namen schrijven = potlood, Slim rondje = shuffle.
+  - **Status en acties:** vinkje, medaille, slot, pizzapunt, scooter, opnieuw, pijl, play.
+  - Illustraties blijven inhoud; ze komen niet in knoppen.
+- **Zijbalk:**
+  - het woordmerk TOPO in inkt (700) met de driekleur;
+  - het portret is kleiner: 112 px op desktop;
+  - de nav in inkt, het actieve item als lavendel pil;
+  - onderaan alleen een tandwiel, onder een dunne lijn.
+  - Het portret van 88 px op iPad komt met de gelabelde iPad-zijbalk in stap 2.
+- **Lessen:** de lesvorm-pil en de kaartknoppen nemen dezelfde pillen, inkt en gewichten over. Bij lessen onder 1280 px blijft de rail van 76 px.
+- **Nog niet in deze stap:**
+  - het 12-koloms raster en de schermen volgens de renders (vanaf stap 2, Reis eerst);
+  - ★ en ↻ in labels; die gaan per scherm mee.

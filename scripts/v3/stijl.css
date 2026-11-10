@@ -1,0 +1,104 @@
+/* TOPO V3.0 fase B, stap 1 — de gedeelde visuele laag: typografie, inkt, knoppen, selectie, iconen, woordmerk,
+   portret (docs/v3/renders/README.md § Gedeelde stijl, § Ingetogenheid, § IJkpunt R-oefenen-ijk, § Verfijning).
+   Presentation only; loaded after glas.css. Rules:
+   * one rounded sans-serif: SF Pro Rounded via ui-rounded where the system has it (Safari on Apple), else the embedded
+     rounded fallback "Topo Rounded" (Nunito, OFL, assets/v3/font, embedded by the preview build);
+   * display 700 only for the screen title (±35 px) and big numbers; rows and labels 500; active/selected 600;
+   * ink #2A2440 instead of black, secondary ink ±62% of it (darkened where AA asks), line icons in secondary ink;
+   * violet only for meaning: the primary action (solid pill, play/arrow), the active nav, selection, progress;
+   * selection = lavender fill + violet edge + violet text; secondary = white glass pill; no glow, no uppercase. */
+.v3,body.v3Les{
+ --v3-font:ui-rounded,"SF Pro Rounded","Topo Rounded",-apple-system,BlinkMacSystemFont,"Segoe UI",system-ui,sans-serif;
+ --v3-ink:#2a2440;--v3-ink2:#5e5872;--v3-ink3:#8b879a;--v3-line:rgba(42,36,64,.10);
+ --v3-display:700 35px/42px var(--v3-font);
+ --v3-large:var(--v3-display);
+ --v3-title:600 20px/26px var(--v3-font);
+ --v3-headline:600 17px/22px var(--v3-font);
+ --v3-body:500 16px/22px var(--v3-font);
+ --v3-sub:500 15px/20px var(--v3-font);
+ --v3-foot:500 13px/18px var(--v3-font);
+ --v3-pill:999px;
+ --v3-select-bg:#ece8fe;--v3-select-edge:#7a66ee;--v3-select-ink:#4a36c9;
+ --v3-primary-bg:linear-gradient(180deg,#6b57ee 0%,#5640dc 100%);
+ --v3-primary-shadow:0 1px 2px rgba(42,36,64,.18),inset 0 1px 0 rgba(255,255,255,.18);
+ --v3-secondary-bg:rgba(255,255,255,.72);
+ --v3-secondary-edge:inset 0 0 0 1px rgba(42,36,64,.08);
+ --v3-done:#1f7a46;
+}
+.v3{font:var(--v3-body);color:var(--v3-ink)}
+.v3 :is(h1,h2,h3){color:var(--v3-ink)}
+
+/* Icons: thin lines in secondary ink. */
+.v3 .v3Icon,body.v3Les .v3Icon{stroke-width:1.7;color:var(--v3-ink2)}
+
+/* Buttons. */
+.v3 .v3Btn{border-radius:var(--v3-pill);font:var(--v3-headline);background:var(--v3-secondary-bg);box-shadow:var(--v3-secondary-edge);color:var(--v3-ink)}
+/* Hover lightens quiet buttons only (low specificity: never over selection, active nav or the primary). */
+:where(.v3) .v3Btn:hover:where(:not(:disabled,[aria-current],[aria-pressed=true],.primary)){background:rgba(255,255,255,.88)}
+.v3 .v3Btn.primary{position:relative;gap:12px;min-height:52px;padding:0 22px 0 26px;border-radius:var(--v3-pill);background:var(--v3-primary-bg);color:#fff;box-shadow:var(--v3-primary-shadow);font:600 18px/1 var(--v3-font)}
+.v3 .v3Btn.primary:hover:not(:disabled){background:var(--v3-primary-bg);filter:brightness(1.05)}
+.v3 .v3Btn.primary:active{background:linear-gradient(180deg,#5d48e2,#4834c4)}
+.v3 .v3Btn.primary:disabled{filter:saturate(.35) opacity(.6)}
+/* The pill carries a quiet arrow on the right (decorative). */
+.v3 .v3Btn.primary::after{content:"";flex:none;width:20px;height:20px;margin-left:auto;background:currentColor;
+ -webkit-mask:var(--v3-arrow) center/contain no-repeat;mask:var(--v3-arrow) center/contain no-repeat}
+.v3 .v3Btn.primary .v3Icon{color:currentColor;width:22px;height:22px}
+.v3{--v3-arrow:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32' fill='none' stroke='%23000' stroke-width='2.2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M5 16h21M18.5 8.5 26 16l-7.5 7.5'/%3E%3C/svg%3E")}
+
+/* Selection: chips, form tiles, rows, nav. */
+.v3 .v3Chip{border-radius:var(--v3-pill);background:var(--v3-secondary-bg);box-shadow:var(--v3-secondary-edge);font:var(--v3-body);color:var(--v3-ink)}
+.v3 .v3Chip[aria-pressed=true]{background:var(--v3-select-bg);box-shadow:inset 0 0 0 1.5px var(--v3-select-edge);color:var(--v3-select-ink);font-weight:600}
+.v3 .v3FormBtn{border-radius:20px;background:var(--v3-secondary-bg);box-shadow:var(--v3-secondary-edge);font:var(--v3-body);color:var(--v3-ink)}
+.v3 .v3FormBtn .v3Icon{width:30px;height:30px;color:var(--v3-ink2)}
+.v3 .v3FormBtn[aria-pressed=true]{background:var(--v3-select-bg);box-shadow:inset 0 0 0 1.5px var(--v3-select-edge);color:var(--v3-select-ink);font-weight:600}
+.v3 .v3FormBtn[aria-pressed=true] .v3Icon{color:var(--v3-select-ink)}
+.v3 .v3Switch{border-radius:var(--v3-pill);background:var(--v3-secondary-bg);box-shadow:var(--v3-secondary-edge)}
+.v3 .v3Switch .v3Btn{border-radius:var(--v3-pill);background:transparent;box-shadow:none;font:var(--v3-sub);color:var(--v3-ink2)}
+.v3 .v3Switch .v3Btn[aria-pressed=true]{background:#fff;color:var(--v3-ink);font-weight:600;box-shadow:0 1px 3px rgba(42,36,64,.14)}
+
+/* Sidebar: wordmark in ink with the tricolour, a smaller portrait as anchor, nav in ink with a lavender active pill. */
+.v3Brand b{font:700 30px/1 var(--v3-font);letter-spacing:.01em;text-transform:uppercase;color:var(--v3-ink)}
+.v3Flag{width:52px;height:5px}
+.v3Portrait{width:112px;height:112px}
+.v3 .v3NavItem{border-radius:var(--v3-pill);background:transparent;box-shadow:none;font:var(--v3-body);font-size:17px;color:var(--v3-ink)}
+:where(.v3) .v3NavItem:hover:where(:not([aria-current])){background:rgba(255,255,255,.5)}
+.v3 .v3NavItem[aria-current=page]{background:var(--v3-select-bg);box-shadow:none;color:var(--v3-select-ink);font-weight:600}
+.v3 .v3NavItem[aria-current=page] .v3Icon{color:var(--v3-select-ink)}
+.v3 .v3Settings{width:auto}
+.v3 .v3Settings span{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+/* A thin line above the gear (R-reis-ijk): it is the last item, alone. */
+.v3Side .v3Settings{align-self:flex-start;border-radius:50%;width:48px;padding:0;justify-content:center;position:relative}
+.v3Side .v3Settings::before{content:"";position:absolute;left:0;top:-12px;width:min(168px,calc(var(--v3-side-w,240px) - 48px));height:1px;background:var(--v3-line)}
+@media (max-width:1279px){
+ .v3Portrait{width:56px;height:56px}
+ .v3Brand b{font-size:17px;letter-spacing:0}
+ .v3Side .v3Settings{align-self:center}
+ .v3Side .v3Settings::before{left:50%;transform:translateX(-50%);width:36px}
+}
+@media (max-width:767px){
+ .v3Side .v3Settings{width:auto;border-radius:var(--v3-pill)}
+ .v3Side .v3Settings::before{display:none}
+ .v3 .v3Settings span{position:static;width:auto;height:auto;overflow:visible;clip:auto}
+ .v3 .v3NavItem{font-size:11px;line-height:13px;border-radius:14px}
+}
+
+/* Titles: one display element per screen, in ink; no uppercase emphasis, no violet labels. */
+.v3 :is(.v3Panel h1,.v3View h1,.v3Rewards h1){font:var(--v3-display);letter-spacing:-.01em;color:var(--v3-ink)}
+.v3Panel h1 small{font:var(--v3-sub);letter-spacing:0;text-transform:none;color:var(--v3-ink2)}
+.v3Field h2,.v3List h2{font:var(--v3-headline);color:var(--v3-ink2)}
+.v3Row{font:var(--v3-body)}
+.v3Row[aria-pressed=true]{font-weight:600}
+.v3Count,.v3Frac{font-weight:600;color:var(--v3-ink)}
+.v3Count .v3Icon{color:var(--v3-ink2);stroke-width:1.7;width:28px;height:28px}
+.v3Again .v3Btn{border-radius:var(--v3-pill);font:var(--v3-sub);color:var(--v3-ink2);background:transparent;box-shadow:inset 0 0 0 1px var(--v3-line)}
+.v3Again .v3Btn .v3Icon{width:18px;height:18px}
+
+/* Lessons: the V2 lesson controls in the shell take the same pills, ink and weights (no behaviour change). */
+body.v3Les{color:var(--v3-ink)}
+body.v3Les .v3LesForm{border-radius:var(--v3-pill);background:var(--v3-select-bg);box-shadow:inset 0 0 0 1.5px var(--v3-select-edge);color:var(--v3-select-ink);font:var(--v3-headline)}
+@media (min-width:768px){
+ body.v3Les .mapTools :is(.button,button){border-radius:var(--v3-pill);font:var(--v3-sub);font-weight:600}
+}
+/* Rail (iPad, lessons below 1280): the uppercase wordmark fits the 76 px column. */
+@media (max-width:1279px){body.v3Les .v3ShellNav .v3Brand b{font-size:17px;letter-spacing:0}}
+body.v3Les[data-focus-shell=true] .v3ShellNav .v3Brand b{font-size:17px;letter-spacing:0}

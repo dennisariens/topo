@@ -63,7 +63,7 @@
  function marks(){V.markNav(document);}
 
  /* Oefenen (§ 1): free forms with a choice of group; the slim rondje is the V2 smart route lesson. */
- const FORMS=[['learn','Ontdekken','discover'],['point','Aanwijzen','point'],['write','Namen schrijven','write'],['smart','Slim rondje','v3smart']];
+ const FORMS=[['learn','Ontdekken','v3discover'],['point','Aanwijzen','v3point'],['write','Namen schrijven','v3write'],['smart','Slim rondje','v3smart']];
  const pick={form:'point',group:'city1'};
  function chip(label,on,fn,cls='v3Chip'){const b=btn(label,e=>{e.stopPropagation();fn();},'v3Btn '+cls);b.setAttribute('aria-pressed',String(!!on));return b;}
  function groupChips(selected,toggle,{multi=false,extra=[]}={}){

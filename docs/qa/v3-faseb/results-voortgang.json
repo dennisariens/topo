@@ -3,7 +3,10 @@
   "bezig/desktop": {
    "big": [
     "Voortgang",
-    "6 / 45"
+    "6 / 45",
+    "0 / 8",
+    "1 / 3",
+    "0"
    ],
    "rows": [
     "done",
@@ -28,7 +31,10 @@
   "bezig/ipad-liggend": {
    "big": [
     "Voortgang",
-    "6 / 45"
+    "6 / 45",
+    "0 / 8",
+    "1 / 3",
+    "0"
    ],
    "rows": [
     "done",
@@ -53,7 +59,10 @@
   "bezig/ipad-staand": {
    "big": [
     "Voortgang",
-    "6 / 45"
+    "6 / 45",
+    "0 / 8",
+    "1 / 3",
+    "0"
    ],
    "rows": [
     "done",
@@ -103,7 +112,10 @@
   "alles/desktop": {
    "big": [
     "Voortgang",
-    "45 / 45"
+    "45 / 45",
+    "0 / 8",
+    "0 / 3",
+    "7"
    ],
    "rows": [
     "gold",

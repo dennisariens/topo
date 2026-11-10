@@ -1,0 +1,38 @@
+/* TOPO V3.0 — afwerking na fase B (docs/v3/renders/README.md § Afwerking na fase B; these values win over § Verfijning
+   and § Ingetogenheid where they collide). Presentation only; loaded last. The wash and glass tokens live in
+   glas.css (so reduced transparency keeps its opaque variant), the display token in stijl.css. This layer sets the
+   type scale on desktop and iPad (≥ 768 px):
+   * nav 16/500, active 16/600;
+   * rows and labels 15/600 in ink #2A2440 at 100%;
+   * secondary text 13/500 in secondary ink, only for truly secondary text;
+   * screen title 34/700 (--v3-display), card title 28/700, key figures (score, 23/45, tiles) 32–44/700;
+   * no running text below 13 px. */
+.v3,body.v3Les{--v3-row:600 15px/20px var(--v3-font);--v3-second:500 13px/18px var(--v3-font);--v3-card-title:700 28px/34px var(--v3-font);--v3-figure:700 40px/1.1 var(--v3-font)}
+@media (min-width:768px){
+ /* Nav. */
+ .v3 .v3NavItem,body.v3Les .v3ShellNav .v3NavItem{font:500 16px/22px var(--v3-font)}
+ .v3 .v3NavItem[aria-current=page],body.v3Les .v3ShellNav .v3NavItem[aria-current=page]{font-weight:600}
+ /* Rows and labels. */
+ .v3Reis :is(.v3Row,.v3Row .v3Name,.v3VgName,.v3VgLegend,.v3Tile span,.v3VgTileLabel,.v3Field h2,.v3List h2,.v3Locked span),
+ .v3 :is(.v3Chip,.v3FormBtn),.v3Reis .v3ToetsSide .v3ToetsFouten li,.v3Reis .v3ToetsTile{font:var(--v3-row);color:var(--v3-ink)}
+ .v3 .v3Chip[aria-pressed=true],.v3 .v3FormBtn[aria-pressed=true]{color:var(--v3-select-ink)}
+ .v3Reis .v3ToetsSide .v3Field h2{font:var(--v3-card-title)}
+ /* Secondary text. */
+ .v3Reis :is(.v3VgCount span,.v3VgKaartTitle span,.v3ToetsFouten li span,.v3VgDate,.v3VgEmpty),.v3Panel h1 small{font:var(--v3-second);color:var(--v3-ink2)}
+ /* Card titles. */
+ .v3Reis :is(.v3CardTitle,.v3VgKaartTitle),body.v3Les:not([data-focus-shell=true]) .v3LesTitle{font:var(--v3-card-title);letter-spacing:-.01em;color:var(--v3-ink)}
+ .v3VgKaartTitle span{letter-spacing:0}
+ /* Key figures. */
+ .v3Reis .v3View-voortgang .v3VgCount strong{font:var(--v3-figure);letter-spacing:-.01em}
+ .v3Reis :is(.v3Rewards .v3Tile b,.v3Rewards .v3Ride>b,.v3VgTileText strong){font:700 32px/1.1 var(--v3-font);letter-spacing:-.01em}
+ .v3Reis .v3View-toetsResult .v3ToetsScore{font-size:44px;line-height:1.05}
+ /* Lesson: the quiet texts stay at 13 or more. */
+ body.v3Les:not([data-focus-shell=true]) #ninoMeter :is(.ninoMeterPoints,.ninoMeterGoal){font:var(--v3-second)}
+}
+@media (min-width:768px){
+ /* The counters sit on the artwork: a quiet glass pill keeps them AA on every background (BG-03 failed bare). */
+ .v3Reis .v3Counts{padding:8px 16px;border-radius:var(--v3-pill);background:var(--v3-glass);-webkit-backdrop-filter:var(--v3-glass-filter);backdrop-filter:var(--v3-glass-filter);box-shadow:var(--v3-glass-shadow)}
+ /* Lessons (Focus Mode included): the pizza meter's texts at 13 or more. */
+ body.v3Les #ninoMeter :is(.ninoMeterPoints,.ninoMeterGoal){font-size:max(13px,1em)}
+ body.v3Les #ninoMeter .ninoMeterGoal,body.v3Les #ninoMeter .ninoMeterGoal *{font-size:13px}
+}

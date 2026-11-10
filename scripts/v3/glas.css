@@ -12,12 +12,12 @@
    * typography, buttons and icons stay as they are (phase B). Reduced transparency / more contrast: opaque, no blur.
    Phone: unchanged. */
 .v3,body.v3Les{
- --v3-glass:rgba(255,255,255,.58);
+ --v3-glass:rgba(255,255,255,.72);
  --v3-glass-strong:rgba(255,255,255,.74);
- --v3-glass-side:rgba(255,255,255,.34);
+ --v3-glass-side:rgba(255,255,255,.55);
  --v3-plate:rgba(251,250,254,.92);
- --v3-glass-filter:blur(24px) saturate(1.15);
- --v3-glass-shadow:inset 0 0 0 1px rgba(255,255,255,.7),0 1px 2px rgba(28,40,44,.06),0 10px 28px -14px rgba(28,40,44,.28);
+ --v3-glass-filter:blur(28px) saturate(1.4);
+ --v3-glass-shadow:inset 0 0 0 1px rgba(255,255,255,.7),0 12px 32px rgba(42,36,64,.12);
  --v3-radius-glass:28px;
  --v3-frame-m:28px;--v3-gut:24px;--v3-side-w:240px;--v3-list-w:372px;--v3-panel-w:300px;
  --v3-inner:calc(var(--v3-gut) + 8px);
@@ -27,8 +27,10 @@
  /* Canvas + wash. */
  body.v3Home,body.v3Les{background:#e9e4da var(--v3-pano,none) center/cover no-repeat fixed}
  body:is(.v3Home,.v3Les)::before{content:"";position:fixed;inset:0;z-index:-1;pointer-events:none;
-  background:linear-gradient(90deg,rgba(249,247,255,.46) 0,rgba(249,247,255,.34) 38%,rgba(249,247,255,.16) 62%,rgba(249,247,255,.28) 100%);
-  -webkit-backdrop-filter:saturate(.72);backdrop-filter:saturate(.72)}
+  /* Afwerking na fase B: the artwork almost at full colour (.95) and bright at the edges; the lavender-white wash only
+     behind the sidebar (max. 35%), fading out just past it. */
+  background:linear-gradient(90deg,rgba(249,247,255,.35) 0,rgba(249,247,255,.35) calc(var(--v3-frame-m) + var(--v3-side-w)),rgba(249,247,255,0) calc(var(--v3-frame-m) + var(--v3-side-w) + 64px));
+  -webkit-backdrop-filter:saturate(.95);backdrop-filter:saturate(.95)}
 
  /* The frame. */
  .v3Reis{width:calc(100% - 2*var(--v3-frame-m));height:calc(100dvh - var(--v3-bar,0px) - 2*var(--v3-frame-m));margin:var(--v3-frame-m) auto;padding:0;

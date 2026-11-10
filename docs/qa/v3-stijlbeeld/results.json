@@ -1,6 +1,6 @@
 {
  "html": "output/html/TOPO-V3-Reis-Preview.html",
- "htmlSha256": "668a642bc7d54640f7e3bd414324ca7c4bf5f994fe1cdaf8f824c42828254329",
+ "htmlSha256": "653fd50556fc7407feeb3d67087ad27023f27440a917744b5fc487aa985a3b34",
  "indexSha256": "3aced3c31259011b0af2947c78f71965cb4beb2e88c69d1663e61792b0304f5a",
  "runs": {
   "desktop-viola": {
@@ -36,23 +36,23 @@
     {
      "q": ".v3Reis > .v3Side",
      "radius": "28px",
-     "backdropFilter": "blur(24px) saturate(1.15)",
+     "backdropFilter": "blur(28px) saturate(1.4)",
      "shadow": false,
-     "bgAlpha": 0.34
+     "bgAlpha": 0.55
     },
     {
      "q": ".v3Reis .v3Rows",
      "radius": "28px",
-     "backdropFilter": "blur(24px) saturate(1.15)",
+     "backdropFilter": "blur(28px) saturate(1.4)",
      "shadow": true,
-     "bgAlpha": 0.58
+     "bgAlpha": 0.72
     },
     {
      "q": ".v3Main > .v3Panel",
      "radius": "28px",
-     "backdropFilter": "blur(24px) saturate(1.15)",
+     "backdropFilter": "blur(28px) saturate(1.4)",
      "shadow": true,
-     "bgAlpha": 0.58
+     "bgAlpha": 0.72
     }
    ],
    "rows": [
@@ -307,23 +307,23 @@
     {
      "q": ".v3Reis > .v3Side",
      "radius": "28px",
-     "backdropFilter": "blur(24px) saturate(1.15)",
+     "backdropFilter": "blur(28px) saturate(1.4)",
      "shadow": false,
-     "bgAlpha": 0.34
+     "bgAlpha": 0.55
     },
     {
      "q": ".v3Reis .v3Rows",
      "radius": "28px",
-     "backdropFilter": "blur(24px) saturate(1.15)",
+     "backdropFilter": "blur(28px) saturate(1.4)",
      "shadow": true,
-     "bgAlpha": 0.58
+     "bgAlpha": 0.72
     },
     {
      "q": ".v3Main > .v3Panel",
      "radius": "28px",
-     "backdropFilter": "blur(24px) saturate(1.15)",
+     "backdropFilter": "blur(28px) saturate(1.4)",
      "shadow": true,
-     "bgAlpha": 0.58
+     "bgAlpha": 0.72
     }
    ],
    "rows": [
@@ -578,23 +578,23 @@
     {
      "q": ".v3Reis > .v3Side",
      "radius": "28px",
-     "backdropFilter": "blur(24px) saturate(1.15)",
+     "backdropFilter": "blur(28px) saturate(1.4)",
      "shadow": false,
-     "bgAlpha": 0.34
+     "bgAlpha": 0.55
     },
     {
      "q": ".v3Reis .v3Rows",
      "radius": "28px",
-     "backdropFilter": "blur(24px) saturate(1.15)",
+     "backdropFilter": "blur(28px) saturate(1.4)",
      "shadow": true,
-     "bgAlpha": 0.58
+     "bgAlpha": 0.72
     },
     {
      "q": ".v3Main > .v3Panel",
      "radius": "28px",
-     "backdropFilter": "blur(24px) saturate(1.15)",
+     "backdropFilter": "blur(28px) saturate(1.4)",
      "shadow": true,
-     "bgAlpha": 0.58
+     "bgAlpha": 0.72
     }
    ],
    "rows": [
@@ -849,23 +849,23 @@
     {
      "q": ".v3Reis > .v3Side",
      "radius": "28px",
-     "backdropFilter": "blur(24px) saturate(1.15)",
+     "backdropFilter": "blur(28px) saturate(1.4)",
      "shadow": false,
-     "bgAlpha": 0.34
+     "bgAlpha": 0.55
     },
     {
      "q": ".v3Reis .v3Rows",
      "radius": "28px",
-     "backdropFilter": "blur(24px) saturate(1.15)",
+     "backdropFilter": "blur(28px) saturate(1.4)",
      "shadow": true,
-     "bgAlpha": 0.58
+     "bgAlpha": 0.72
     },
     {
      "q": ".v3Main > .v3Panel",
      "radius": "28px",
-     "backdropFilter": "blur(24px) saturate(1.15)",
+     "backdropFilter": "blur(28px) saturate(1.4)",
      "shadow": true,
-     "bgAlpha": 0.58
+     "bgAlpha": 0.72
     }
    ],
    "rows": [

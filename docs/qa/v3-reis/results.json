@@ -1,7 +1,7 @@
 {
  "html": "output/html/TOPO-V3-Reis-Preview.html",
- "sha256": "668a642bc7d54640f7e3bd414324ca7c4bf5f994fe1cdaf8f824c42828254329",
- "bytes": 50388046,
+ "sha256": "653fd50556fc7407feeb3d67087ad27023f27440a917744b5fc487aa985a3b34",
+ "bytes": 50391292,
  "layout": {
   "desktop/nieuw": {
    "frame": {
@@ -615,8 +615,8 @@
     ]
    },
    "lastRowClear": true,
-   "primaryTop": 704,
-   "primaryBottom": 756,
+   "primaryTop": 690,
+   "primaryBottom": 742,
    "viewport": 820,
    "primaryVisible": true,
    "covered": false,
@@ -687,8 +687,8 @@
     ]
    },
    "lastRowClear": true,
-   "primaryTop": 656,
-   "primaryBottom": 708,
+   "primaryTop": 642,
+   "primaryBottom": 694,
    "viewport": 820,
    "primaryVisible": true,
    "covered": false,
@@ -831,8 +831,8 @@
     ]
    },
    "lastRowClear": true,
-   "primaryTop": 645,
-   "primaryBottom": 697,
+   "primaryTop": 642,
+   "primaryBottom": 694,
    "viewport": 820,
    "primaryVisible": true,
    "covered": false,
@@ -1462,9 +1462,9 @@
    },
    "backVia": "v3Btn v3NavItem",
    "primaryLabelWithActive": "Ga verder · Ontdekken",
-   "questionBefore": "city-7",
+   "questionBefore": "city-12",
    "reisVerderSameQuestion": {
-    "id": "city-7",
+    "id": "city-12",
     "chapter": "city2",
     "kind": "discover"
    },

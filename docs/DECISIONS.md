@@ -833,3 +833,24 @@ De data blijft gelijk: plekken uit het V2-paspoort, hoofdstukken uit `TopoRoute`
   - **Bakkerijbeloningen Frankrijk:** past in het landpakket als landeigen beloningsartwork. De regel (8 punten, 3 per rit) blijft in de kern.
 
 - **Masters ontvangen** (`art/master` `339c420`, `assets/art/masters/universal/`): Nino-poses 1024×1536 en Vespa's 1536×1024 (icoon 1254²), RGBA met echte alfa en schone uitsnede. Genoeg voor het toetsresultaat en de kennismaking (tot ±600 CSS-px hoog op 2×). De grens van 300 CSS-px vervalt.
+## 2026-11-10 — V3.0 afwerking na fase B, stap 1: wash, glas en typeschaal
+
+Volgens renders/README § "Afwerking na fase B". Waar die waarden botsen met "Verfijning" of "Ingetogenheid", gaan ze voor. Alleen presentatie; nieuw bestand `scripts/v3/afwerking.css`, geladen na `voortgang-ijk.css`.
+
+- **Wash:** verzadiging .95 over het hele artwork. De lavendel gradiënt (35%) staat alleen achter de zijbalk en loopt over 64 px uit. De randen blijven helder.
+- **Glas:** wit **72%** met `blur(28px) saturate(1.4)`, een binnenrand van 1 px (wit 70%) en schaduw `0 12px 32px rgba(42,36,64,.12)`; de zijbalk wit 55%. De opdracht noemde 80%. De README (laatste commit `e2da37f`) zegt 72%, en 80% alleen voor een paneel dat AA niet haalt. Geen enkel paneel faalt, dus het blijft 72%.
+- **Typeschaal:**
+  - nav 16/500, actief 600;
+  - rijen en labels 15/600 in inkt `#2A2440`;
+  - secundair 13/500 in inkt 62%;
+  - schermtitel 34/700, kaarttitel 28/700;
+  - kerncijfers 32–44/700;
+  - niets onder 13 px (≥ 768).
+- **Tellers op Reis:** een glaspil. Op BG-03 haalde de "0" van de Vespa-teller AA niet tegen het artwork.
+- **ninoMeter in de Les:** minimaal 13 px.
+
+**QA:**
+- nieuw `scripts/qa-v3-afwerking.py`: alle schermen op desktop en iPad (liggend en staand), Landschap op BG-01/02/03. Het controleert tekst ≥ 13 px, AA tegen het artwork en geen horizontale overloop;
+- `qa-v3-faseb-beloningen.py` en `qa-v3-faseb-voortgang.py` tellen kerncijfers niet langer als display-tekst.
+
+**Open:** de tablabels op de telefoon blijven 11 px. Zes tabs passen niet op 13 px; de regel geldt vanaf 768 px.

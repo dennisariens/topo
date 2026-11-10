@@ -9,7 +9,7 @@ On #bezig (desktop, iPad landscape 1180×820, iPad portrait 820×1180, phone 390
   * one glass panel for the ride (backdrop filter, radius 28): three pizzas from the data (3 per ride: earned ones
     whole, the current one with its slices, the rest 0), the Vespa, the number of rides and a meter of three wide
     segments (on = pizzas mod 3);
-  * four glass tiles of equal width, each with an icon, a label and a number on 700 (26–30 px; phone 22–26);
+  * four glass tiles of equal width, each with an icon, a label and a number on 700 (32–44 px, afwerking 10-11; phone 22–26);
   * ≥ 1024: 12 columns — the book on columns 1–5 from the view's left edge, the ride panel on 6–12 to its right edge
     (±1.5 px), book and panel on one top line (±1 px), the tiles over the full width;
   * no horizontal overflow.
@@ -19,6 +19,7 @@ results-beloningen.json to docs/qa/v3-faseb/.
 
 Usage: node scripts/build-v3-preview.mjs && python3 scripts/qa-v3-faseb-beloningen.py
 """
+import re
 import asyncio, json, pathlib, sys
 from playwright.async_api import async_playwright
 from PIL import Image, ImageDraw, ImageFont
@@ -54,13 +55,18 @@ PROBE = r'''() => {
 }'''
 
 
+FIG = re.compile(r'^[\d\s\u202f/]+$')
+
+
 def near(a, b, tol=1.0):
     return a is not None and b is not None and abs(a - b) <= tol
 
 
 def checks(p, tag, vp, fail):
     f = lambda why: fail(f'{tag}: {why}')
-    if p['big'] != ['Beloningen']: f(f'display texts {p["big"]}')
+    # Afwerking 10-11: key figures are 32–44/700 by design; only the title is a display text.
+    words = [t for t in p['big'] if not FIG.match(t)]
+    if words != ['Beloningen']: f(f'display texts {p["big"]}')
     if any(c not in ('none', 'normal') for c in p['deco']): f(f'decoration by the title {p["deco"]}')
     b = p['book']
     if b['bg'] not in ('rgba(0, 0, 0, 0)', 'transparent') or b['shadow'] != 'none' or b['cover'] != 'BUTTON' or not b['coverArt']: f(f'book not free as a button {b}')
@@ -72,7 +78,7 @@ def checks(p, tag, vp, fail):
     if [x['slices'] for x in p['pizzas']] != want or [x['on'] for x in p['pizzas']] != [i < k for i in range(3)] or not all(x['img'] for x in p['pizzas']): f(f'pizzas {p["pizzas"]} vs {want}')
     if not p['ride']['art'] or p['ride']['n'] != str(s['trips']) or p['ride']['nw'] != '700': f(f'ride {p["ride"]}')
     if len(p['meter']) != 3 or [m['on'] for m in p['meter']] != [i < k for i in range(3)] or min(m['w'] for m in p['meter']) < 40: f(f'ride meter {p["meter"]}')
-    t = p['tiles']; lo, hi = (22, 26) if vp == 'telefoon' else (26, 30)
+    t = p['tiles']; lo, hi = (22, 26) if vp == 'telefoon' else (32, 44)
     if len(t) != 4 or any(not x['icon'] or x['nw'] != '700' or not lo <= x['ns'] <= hi or x['glass']['filter'] in ('none', '') for x in t) or max(x['w'] for x in t) - min(x['w'] for x in t) > 1:
         f(f'tiles {[(x["label"], x["ns"], x["nw"], round(x["w"])) for x in t]}')
     if vp in ('desktop', 'ipad-liggend'):

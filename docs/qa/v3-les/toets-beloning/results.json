@@ -1,6 +1,6 @@
 {
  "html": "output/html/TOPO-V3-Reis-Preview.html",
- "sha256": "668a642bc7d54640f7e3bd414324ca7c4bf5f994fe1cdaf8f824c42828254329",
+ "sha256": "653fd50556fc7407feeb3d67087ad27023f27440a917744b5fc487aa985a3b34",
  "indexSha256": "3aced3c31259011b0af2947c78f71965cb4beb2e88c69d1663e61792b0304f5a",
  "runs": [
   {
@@ -9,7 +9,7 @@
    "reducedMotion": true,
    "presses": [
     {
-     "step": "write city-3 (8th rewarded answer)",
+     "step": "write city-1 (8th rewarded answer)",
      "key": "answer",
      "opened": [
       "pizzaCelebration"
@@ -40,7 +40,7 @@
    "moments": [
     {
      "moment": "pizzaCelebration",
-     "step": "write city-3 (8th rewarded answer)",
+     "step": "write city-1 (8th rewarded answer)",
      "stillOpen": true
     }
    ],
@@ -56,7 +56,7 @@
    "reducedMotion": true,
    "presses": [
     {
-     "step": "write city-6 (8th rewarded answer)",
+     "step": "write city-1 (8th rewarded answer)",
      "key": null,
      "opened": [
       "pizzaCelebration"
@@ -79,7 +79,7 @@
    "moments": [
     {
      "moment": "pizzaCelebration",
-     "step": "write city-6 (8th rewarded answer)",
+     "step": "write city-1 (8th rewarded answer)",
      "stillOpen": true
     }
    ],
@@ -95,7 +95,7 @@
    "reducedMotion": false,
    "presses": [
     {
-     "step": "write city-3 (8th rewarded answer)",
+     "step": "write city-5 (8th rewarded answer)",
      "key": "answer",
      "opened": [
       "pizzaCelebration"
@@ -126,7 +126,7 @@
    "moments": [
     {
      "moment": "pizzaCelebration",
-     "step": "write city-3 (8th rewarded answer)",
+     "step": "write city-5 (8th rewarded answer)",
      "stillOpen": true
     }
    ],
@@ -142,7 +142,7 @@
    "reducedMotion": false,
    "presses": [
     {
-     "step": "write city-1 (8th rewarded answer)",
+     "step": "write city-3 (8th rewarded answer)",
      "key": null,
      "opened": [
       "pizzaCelebration"
@@ -165,7 +165,7 @@
    "moments": [
     {
      "moment": "pizzaCelebration",
-     "step": "write city-1 (8th rewarded answer)",
+     "step": "write city-3 (8th rewarded answer)",
      "stillOpen": true
     }
    ],
@@ -181,7 +181,7 @@
    "reducedMotion": true,
    "presses": [
     {
-     "step": "point city-7",
+     "step": "point city-9",
      "key": "circle",
      "opened": [],
      "closed": [],
@@ -217,7 +217,7 @@
      "moment": null
     },
     {
-     "step": "point city-11",
+     "step": "point city-10",
      "key": "circle",
      "opened": [
       "pizzaCelebration"
@@ -273,43 +273,7 @@
      "moment": null
     },
     {
-     "step": "point city-12",
-     "key": "circle",
-     "opened": [],
-     "closed": [],
-     "foreignKeyClicks": [],
-     "leaked": [],
-     "bookOpenedByKey": false,
-     "pizzas": [
-      2,
-      2
-     ],
-     "trips": [
-      0,
-      0
-     ],
-     "moment": null
-    },
-    {
-     "step": "next",
-     "key": "next",
-     "opened": [],
-     "closed": [],
-     "foreignKeyClicks": [],
-     "leaked": [],
-     "bookOpenedByKey": false,
-     "pizzas": [
-      2,
-      2
-     ],
-     "trips": [
-      0,
-      0
-     ],
-     "moment": null
-    },
-    {
-     "step": "point city-10",
+     "step": "point city-7",
      "key": "circle",
      "opened": [],
      "closed": [],
@@ -381,7 +345,43 @@
      "moment": null
     },
     {
-     "step": "point city-9",
+     "step": "point city-12",
+     "key": "circle",
+     "opened": [],
+     "closed": [],
+     "foreignKeyClicks": [],
+     "leaked": [],
+     "bookOpenedByKey": false,
+     "pizzas": [
+      2,
+      2
+     ],
+     "trips": [
+      0,
+      0
+     ],
+     "moment": null
+    },
+    {
+     "step": "next",
+     "key": "next",
+     "opened": [],
+     "closed": [],
+     "foreignKeyClicks": [],
+     "leaked": [],
+     "bookOpenedByKey": false,
+     "pizzas": [
+      2,
+      2
+     ],
+     "trips": [
+      0,
+      0
+     ],
+     "moment": null
+    },
+    {
+     "step": "point city-11",
      "key": "circle",
      "opened": [],
      "closed": [],
@@ -453,7 +453,7 @@
      "moment": null
     },
     {
-     "step": "write city-11",
+     "step": "write city-9",
      "key": "answer",
      "opened": [],
      "closed": [],
@@ -525,7 +525,7 @@
      "moment": null
     },
     {
-     "step": "write city-10",
+     "step": "write city-11",
      "key": "answer",
      "opened": [
       "pizzaCelebration"
@@ -609,7 +609,7 @@
      "moment": null
     },
     {
-     "step": "write city-7",
+     "step": "write city-10",
      "key": "answer",
      "opened": [],
      "closed": [],
@@ -645,7 +645,7 @@
      "moment": null
     },
     {
-     "step": "write city-9",
+     "step": "write city-7",
      "key": "answer",
      "opened": [],
      "closed": [],
@@ -684,12 +684,12 @@
    "moments": [
     {
      "moment": "pizzaCelebration",
-     "step": "point city-11",
+     "step": "point city-10",
      "stillOpen": true
     },
     {
      "moment": "pizzaCelebration",
-     "step": "write city-10",
+     "step": "write city-11",
      "stillOpen": true
     },
     {
@@ -715,7 +715,7 @@
    "reducedMotion": true,
    "presses": [
     {
-     "step": "point city-7",
+     "step": "point city-10",
      "key": null,
      "opened": [],
      "closed": [],
@@ -751,12 +751,14 @@
      "moment": null
     },
     {
-     "step": "point city-10",
+     "step": "point city-9",
      "key": null,
      "opened": [
       "pizzaCelebration"
      ],
-     "closed": [],
+     "closed": [
+      "mapPicker"
+     ],
      "foreignKeyClicks": [],
      "leaked": [],
      "bookOpenedByKey": false,
@@ -772,6 +774,114 @@
     },
     {
      "step": "dialog Verder",
+     "key": null,
+     "opened": [],
+     "closed": [],
+     "foreignKeyClicks": [],
+     "leaked": [],
+     "bookOpenedByKey": false,
+     "pizzas": [
+      2,
+      2
+     ],
+     "trips": [
+      0,
+      0
+     ],
+     "moment": null
+    },
+    {
+     "step": "next",
+     "key": null,
+     "opened": [],
+     "closed": [],
+     "foreignKeyClicks": [],
+     "leaked": [],
+     "bookOpenedByKey": false,
+     "pizzas": [
+      2,
+      2
+     ],
+     "trips": [
+      0,
+      0
+     ],
+     "moment": null
+    },
+    {
+     "step": "point city-11",
+     "key": null,
+     "opened": [],
+     "closed": [],
+     "foreignKeyClicks": [],
+     "leaked": [],
+     "bookOpenedByKey": false,
+     "pizzas": [
+      2,
+      2
+     ],
+     "trips": [
+      0,
+      0
+     ],
+     "moment": null
+    },
+    {
+     "step": "next",
+     "key": null,
+     "opened": [],
+     "closed": [],
+     "foreignKeyClicks": [],
+     "leaked": [],
+     "bookOpenedByKey": false,
+     "pizzas": [
+      2,
+      2
+     ],
+     "trips": [
+      0,
+      0
+     ],
+     "moment": null
+    },
+    {
+     "step": "point city-7",
+     "key": null,
+     "opened": [],
+     "closed": [],
+     "foreignKeyClicks": [],
+     "leaked": [],
+     "bookOpenedByKey": false,
+     "pizzas": [
+      2,
+      2
+     ],
+     "trips": [
+      0,
+      0
+     ],
+     "moment": null
+    },
+    {
+     "step": "next",
+     "key": null,
+     "opened": [],
+     "closed": [],
+     "foreignKeyClicks": [],
+     "leaked": [],
+     "bookOpenedByKey": false,
+     "pizzas": [
+      2,
+      2
+     ],
+     "trips": [
+      0,
+      0
+     ],
+     "moment": null
+    },
+    {
+     "step": "point city-12",
      "key": null,
      "opened": [],
      "closed": [],
@@ -845,153 +955,7 @@
      "moment": null
     },
     {
-     "step": "point city-11",
-     "key": null,
-     "opened": [],
-     "closed": [],
-     "foreignKeyClicks": [],
-     "leaked": [],
-     "bookOpenedByKey": false,
-     "pizzas": [
-      2,
-      2
-     ],
-     "trips": [
-      0,
-      0
-     ],
-     "moment": null
-    },
-    {
-     "step": "next",
-     "key": null,
-     "opened": [],
-     "closed": [],
-     "foreignKeyClicks": [],
-     "leaked": [],
-     "bookOpenedByKey": false,
-     "pizzas": [
-      2,
-      2
-     ],
-     "trips": [
-      0,
-      0
-     ],
-     "moment": null
-    },
-    {
-     "step": "point city-9",
-     "key": null,
-     "opened": [],
-     "closed": [
-      "mapPicker"
-     ],
-     "foreignKeyClicks": [],
-     "leaked": [],
-     "bookOpenedByKey": false,
-     "pizzas": [
-      2,
-      2
-     ],
-     "trips": [
-      0,
-      0
-     ],
-     "moment": null
-    },
-    {
-     "step": "next",
-     "key": null,
-     "opened": [],
-     "closed": [],
-     "foreignKeyClicks": [],
-     "leaked": [],
-     "bookOpenedByKey": false,
-     "pizzas": [
-      2,
-      2
-     ],
-     "trips": [
-      0,
-      0
-     ],
-     "moment": null
-    },
-    {
-     "step": "point city-12",
-     "key": null,
-     "opened": [],
-     "closed": [],
-     "foreignKeyClicks": [],
-     "leaked": [],
-     "bookOpenedByKey": false,
-     "pizzas": [
-      2,
-      2
-     ],
-     "trips": [
-      0,
-      0
-     ],
-     "moment": null
-    },
-    {
-     "step": "next",
-     "key": null,
-     "opened": [],
-     "closed": [],
-     "foreignKeyClicks": [],
-     "leaked": [],
-     "bookOpenedByKey": false,
-     "pizzas": [
-      2,
-      2
-     ],
-     "trips": [
-      0,
-      0
-     ],
-     "moment": null
-    },
-    {
-     "step": "write city-7",
-     "key": null,
-     "opened": [],
-     "closed": [],
-     "foreignKeyClicks": [],
-     "leaked": [],
-     "bookOpenedByKey": false,
-     "pizzas": [
-      2,
-      2
-     ],
-     "trips": [
-      0,
-      0
-     ],
-     "moment": null
-    },
-    {
-     "step": "next",
-     "key": null,
-     "opened": [],
-     "closed": [],
-     "foreignKeyClicks": [],
-     "leaked": [],
-     "bookOpenedByKey": false,
-     "pizzas": [
-      2,
-      2
-     ],
-     "trips": [
-      0,
-      0
-     ],
-     "moment": null
-    },
-    {
-     "step": "write city-10",
+     "step": "write city-11",
      "key": null,
      "opened": [],
      "closed": [],
@@ -1064,6 +1028,42 @@
     },
     {
      "step": "write city-12",
+     "key": null,
+     "opened": [],
+     "closed": [],
+     "foreignKeyClicks": [],
+     "leaked": [],
+     "bookOpenedByKey": false,
+     "pizzas": [
+      2,
+      2
+     ],
+     "trips": [
+      0,
+      0
+     ],
+     "moment": null
+    },
+    {
+     "step": "next",
+     "key": null,
+     "opened": [],
+     "closed": [],
+     "foreignKeyClicks": [],
+     "leaked": [],
+     "bookOpenedByKey": false,
+     "pizzas": [
+      2,
+      2
+     ],
+     "trips": [
+      0,
+      0
+     ],
+     "moment": null
+    },
+    {
+     "step": "write city-7",
      "key": null,
      "opened": [
       "pizzaCelebration"
@@ -1175,7 +1175,7 @@
      "moment": null
     },
     {
-     "step": "write city-11",
+     "step": "write city-10",
      "key": null,
      "opened": [],
      "closed": [],
@@ -1214,12 +1214,12 @@
    "moments": [
     {
      "moment": "pizzaCelebration",
-     "step": "point city-10",
+     "step": "point city-9",
      "stillOpen": true
     },
     {
      "moment": "pizzaCelebration",
-     "step": "write city-12",
+     "step": "write city-7",
      "stillOpen": true
     },
     {
@@ -1245,7 +1245,7 @@
    "reducedMotion": false,
    "presses": [
     {
-     "step": "point city-7",
+     "step": "point city-9",
      "key": "circle",
      "opened": [],
      "closed": [],
@@ -1281,7 +1281,7 @@
      "moment": null
     },
     {
-     "step": "point city-11",
+     "step": "point city-8",
      "key": "circle",
      "opened": [
       "pizzaCelebration"
@@ -1337,43 +1337,7 @@
      "moment": null
     },
     {
-     "step": "point city-9",
-     "key": "circle",
-     "opened": [],
-     "closed": [],
-     "foreignKeyClicks": [],
-     "leaked": [],
-     "bookOpenedByKey": false,
-     "pizzas": [
-      2,
-      2
-     ],
-     "trips": [
-      0,
-      0
-     ],
-     "moment": null
-    },
-    {
-     "step": "next",
-     "key": "next",
-     "opened": [],
-     "closed": [],
-     "foreignKeyClicks": [],
-     "leaked": [],
-     "bookOpenedByKey": false,
-     "pizzas": [
-      2,
-      2
-     ],
-     "trips": [
-      0,
-      0
-     ],
-     "moment": null
-    },
-    {
-     "step": "point city-8",
+     "step": "point city-11",
      "key": "circle",
      "opened": [],
      "closed": [],
@@ -1410,6 +1374,42 @@
     },
     {
      "step": "point city-12",
+     "key": "circle",
+     "opened": [],
+     "closed": [],
+     "foreignKeyClicks": [],
+     "leaked": [],
+     "bookOpenedByKey": false,
+     "pizzas": [
+      2,
+      2
+     ],
+     "trips": [
+      0,
+      0
+     ],
+     "moment": null
+    },
+    {
+     "step": "next",
+     "key": "next",
+     "opened": [],
+     "closed": [],
+     "foreignKeyClicks": [],
+     "leaked": [],
+     "bookOpenedByKey": false,
+     "pizzas": [
+      2,
+      2
+     ],
+     "trips": [
+      0,
+      0
+     ],
+     "moment": null
+    },
+    {
+     "step": "point city-7",
      "key": "circle",
      "opened": [],
      "closed": [],
@@ -1517,42 +1517,6 @@
      "moment": null
     },
     {
-     "step": "write city-11",
-     "key": "answer",
-     "opened": [],
-     "closed": [],
-     "foreignKeyClicks": [],
-     "leaked": [],
-     "bookOpenedByKey": false,
-     "pizzas": [
-      2,
-      2
-     ],
-     "trips": [
-      0,
-      0
-     ],
-     "moment": null
-    },
-    {
-     "step": "next",
-     "key": "next",
-     "opened": [],
-     "closed": [],
-     "foreignKeyClicks": [],
-     "leaked": [],
-     "bookOpenedByKey": false,
-     "pizzas": [
-      2,
-      2
-     ],
-     "trips": [
-      0,
-      0
-     ],
-     "moment": null
-    },
-    {
      "step": "write city-10",
      "key": "answer",
      "opened": [],
@@ -1589,7 +1553,43 @@
      "moment": null
     },
     {
-     "step": "write city-12",
+     "step": "write city-11",
+     "key": "answer",
+     "opened": [],
+     "closed": [],
+     "foreignKeyClicks": [],
+     "leaked": [],
+     "bookOpenedByKey": false,
+     "pizzas": [
+      2,
+      2
+     ],
+     "trips": [
+      0,
+      0
+     ],
+     "moment": null
+    },
+    {
+     "step": "next",
+     "key": "next",
+     "opened": [],
+     "closed": [],
+     "foreignKeyClicks": [],
+     "leaked": [],
+     "bookOpenedByKey": false,
+     "pizzas": [
+      2,
+      2
+     ],
+     "trips": [
+      0,
+      0
+     ],
+     "moment": null
+    },
+    {
+     "step": "write city-9",
      "key": "answer",
      "opened": [
       "pizzaCelebration"
@@ -1727,7 +1727,7 @@
      "moment": null
     },
     {
-     "step": "write city-9",
+     "step": "write city-12",
      "key": "answer",
      "opened": [],
      "closed": [],
@@ -1766,12 +1766,12 @@
    "moments": [
     {
      "moment": "pizzaCelebration",
-     "step": "point city-11",
+     "step": "point city-8",
      "stillOpen": true
     },
     {
      "moment": "pizzaCelebration",
-     "step": "write city-12",
+     "step": "write city-9",
      "stillOpen": true
     },
     {
@@ -1833,12 +1833,14 @@
      "moment": null
     },
     {
-     "step": "point city-12",
+     "step": "point city-8",
      "key": null,
      "opened": [
       "pizzaCelebration"
      ],
-     "closed": [],
+     "closed": [
+      "mapPicker"
+     ],
      "foreignKeyClicks": [],
      "leaked": [],
      "bookOpenedByKey": false,
@@ -1857,44 +1859,6 @@
      "key": null,
      "opened": [],
      "closed": [],
-     "foreignKeyClicks": [],
-     "leaked": [],
-     "bookOpenedByKey": false,
-     "pizzas": [
-      2,
-      2
-     ],
-     "trips": [
-      0,
-      0
-     ],
-     "moment": null
-    },
-    {
-     "step": "next",
-     "key": null,
-     "opened": [],
-     "closed": [],
-     "foreignKeyClicks": [],
-     "leaked": [],
-     "bookOpenedByKey": false,
-     "pizzas": [
-      2,
-      2
-     ],
-     "trips": [
-      0,
-      0
-     ],
-     "moment": null
-    },
-    {
-     "step": "point city-8",
-     "key": null,
-     "opened": [],
-     "closed": [
-      "mapPicker"
-     ],
      "foreignKeyClicks": [],
      "leaked": [],
      "bookOpenedByKey": false,
@@ -1965,7 +1929,7 @@
      "moment": null
     },
     {
-     "step": "point city-11",
+     "step": "point city-12",
      "key": null,
      "opened": [],
      "closed": [],
@@ -2037,43 +2001,7 @@
      "moment": null
     },
     {
-     "step": "write city-9",
-     "key": null,
-     "opened": [],
-     "closed": [],
-     "foreignKeyClicks": [],
-     "leaked": [],
-     "bookOpenedByKey": false,
-     "pizzas": [
-      2,
-      2
-     ],
-     "trips": [
-      0,
-      0
-     ],
-     "moment": null
-    },
-    {
-     "step": "next",
-     "key": null,
-     "opened": [],
-     "closed": [],
-     "foreignKeyClicks": [],
-     "leaked": [],
-     "bookOpenedByKey": false,
-     "pizzas": [
-      2,
-      2
-     ],
-     "trips": [
-      0,
-      0
-     ],
-     "moment": null
-    },
-    {
-     "step": "write city-12",
+     "step": "point city-11",
      "key": null,
      "opened": [],
      "closed": [],
@@ -2145,7 +2073,79 @@
      "moment": null
     },
     {
+     "step": "write city-11",
+     "key": null,
+     "opened": [],
+     "closed": [],
+     "foreignKeyClicks": [],
+     "leaked": [],
+     "bookOpenedByKey": false,
+     "pizzas": [
+      2,
+      2
+     ],
+     "trips": [
+      0,
+      0
+     ],
+     "moment": null
+    },
+    {
+     "step": "next",
+     "key": null,
+     "opened": [],
+     "closed": [],
+     "foreignKeyClicks": [],
+     "leaked": [],
+     "bookOpenedByKey": false,
+     "pizzas": [
+      2,
+      2
+     ],
+     "trips": [
+      0,
+      0
+     ],
+     "moment": null
+    },
+    {
      "step": "write city-10",
+     "key": null,
+     "opened": [],
+     "closed": [],
+     "foreignKeyClicks": [],
+     "leaked": [],
+     "bookOpenedByKey": false,
+     "pizzas": [
+      2,
+      2
+     ],
+     "trips": [
+      0,
+      0
+     ],
+     "moment": null
+    },
+    {
+     "step": "next",
+     "key": null,
+     "opened": [],
+     "closed": [],
+     "foreignKeyClicks": [],
+     "leaked": [],
+     "bookOpenedByKey": false,
+     "pizzas": [
+      2,
+      2
+     ],
+     "trips": [
+      0,
+      0
+     ],
+     "moment": null
+    },
+    {
+     "step": "write city-9",
      "key": null,
      "opened": [
       "pizzaCelebration"
@@ -2239,7 +2239,7 @@
      "moment": null
     },
     {
-     "step": "write city-8",
+     "step": "write city-12",
      "key": null,
      "opened": [],
      "closed": [],
@@ -2275,7 +2275,7 @@
      "moment": null
     },
     {
-     "step": "write city-11",
+     "step": "write city-8",
      "key": null,
      "opened": [],
      "closed": [],
@@ -2314,12 +2314,12 @@
    "moments": [
     {
      "moment": "pizzaCelebration",
-     "step": "point city-12",
+     "step": "point city-8",
      "stillOpen": true
     },
     {
      "moment": "pizzaCelebration",
-     "step": "write city-10",
+     "step": "write city-9",
      "stillOpen": true
     },
     {
@@ -2345,6 +2345,114 @@
    "reducedMotion": true,
    "presses": [
     {
+     "step": "point city-16",
+     "key": "circle",
+     "opened": [],
+     "closed": [],
+     "foreignKeyClicks": [],
+     "leaked": [],
+     "bookOpenedByKey": false,
+     "pizzas": [
+      7,
+      7
+     ],
+     "trips": [
+      2,
+      2
+     ],
+     "moment": null
+    },
+    {
+     "step": "next",
+     "key": "next",
+     "opened": [],
+     "closed": [],
+     "foreignKeyClicks": [],
+     "leaked": [],
+     "bookOpenedByKey": false,
+     "pizzas": [
+      7,
+      7
+     ],
+     "trips": [
+      2,
+      2
+     ],
+     "moment": null
+    },
+    {
+     "step": "point city-14",
+     "key": "circle",
+     "opened": [],
+     "closed": [],
+     "foreignKeyClicks": [],
+     "leaked": [],
+     "bookOpenedByKey": false,
+     "pizzas": [
+      7,
+      7
+     ],
+     "trips": [
+      2,
+      2
+     ],
+     "moment": null
+    },
+    {
+     "step": "next",
+     "key": "next",
+     "opened": [],
+     "closed": [],
+     "foreignKeyClicks": [],
+     "leaked": [],
+     "bookOpenedByKey": false,
+     "pizzas": [
+      7,
+      7
+     ],
+     "trips": [
+      2,
+      2
+     ],
+     "moment": null
+    },
+    {
+     "step": "point city-15",
+     "key": "circle",
+     "opened": [],
+     "closed": [],
+     "foreignKeyClicks": [],
+     "leaked": [],
+     "bookOpenedByKey": false,
+     "pizzas": [
+      7,
+      7
+     ],
+     "trips": [
+      2,
+      2
+     ],
+     "moment": null
+    },
+    {
+     "step": "next",
+     "key": "next",
+     "opened": [],
+     "closed": [],
+     "foreignKeyClicks": [],
+     "leaked": [],
+     "bookOpenedByKey": false,
+     "pizzas": [
+      7,
+      7
+     ],
+     "trips": [
+      2,
+      2
+     ],
+     "moment": null
+    },
+    {
      "step": "point city-17",
      "key": "circle",
      "opened": [],
@@ -2382,114 +2490,6 @@
     },
     {
      "step": "point city-13",
-     "key": "circle",
-     "opened": [],
-     "closed": [],
-     "foreignKeyClicks": [],
-     "leaked": [],
-     "bookOpenedByKey": false,
-     "pizzas": [
-      7,
-      7
-     ],
-     "trips": [
-      2,
-      2
-     ],
-     "moment": null
-    },
-    {
-     "step": "next",
-     "key": "next",
-     "opened": [],
-     "closed": [],
-     "foreignKeyClicks": [],
-     "leaked": [],
-     "bookOpenedByKey": false,
-     "pizzas": [
-      7,
-      7
-     ],
-     "trips": [
-      2,
-      2
-     ],
-     "moment": null
-    },
-    {
-     "step": "point city-16",
-     "key": "circle",
-     "opened": [],
-     "closed": [],
-     "foreignKeyClicks": [],
-     "leaked": [],
-     "bookOpenedByKey": false,
-     "pizzas": [
-      7,
-      7
-     ],
-     "trips": [
-      2,
-      2
-     ],
-     "moment": null
-    },
-    {
-     "step": "next",
-     "key": "next",
-     "opened": [],
-     "closed": [],
-     "foreignKeyClicks": [],
-     "leaked": [],
-     "bookOpenedByKey": false,
-     "pizzas": [
-      7,
-      7
-     ],
-     "trips": [
-      2,
-      2
-     ],
-     "moment": null
-    },
-    {
-     "step": "point city-18",
-     "key": "circle",
-     "opened": [],
-     "closed": [],
-     "foreignKeyClicks": [],
-     "leaked": [],
-     "bookOpenedByKey": false,
-     "pizzas": [
-      7,
-      7
-     ],
-     "trips": [
-      2,
-      2
-     ],
-     "moment": null
-    },
-    {
-     "step": "next",
-     "key": "next",
-     "opened": [],
-     "closed": [],
-     "foreignKeyClicks": [],
-     "leaked": [],
-     "bookOpenedByKey": false,
-     "pizzas": [
-      7,
-      7
-     ],
-     "trips": [
-      2,
-      2
-     ],
-     "moment": null
-    },
-    {
-     "step": "point city-14",
      "key": "circle",
      "opened": [
       "pizzaCelebration"
@@ -2545,7 +2545,7 @@
      "moment": null
     },
     {
-     "step": "point city-15",
+     "step": "point city-18",
      "key": "circle",
      "opened": [],
      "closed": [],
@@ -2581,7 +2581,7 @@
      "moment": null
     },
     {
-     "step": "write city-16",
+     "step": "write city-14",
      "key": "answer",
      "opened": [],
      "closed": [],
@@ -2653,7 +2653,7 @@
      "moment": null
     },
     {
-     "step": "write city-14",
+     "step": "write city-13",
      "key": "answer",
      "opened": [],
      "closed": [],
@@ -2725,7 +2725,7 @@
      "moment": null
     },
     {
-     "step": "write city-13",
+     "step": "write city-16",
      "key": "answer",
      "opened": [],
      "closed": [],
@@ -2800,7 +2800,7 @@
    "moments": [
     {
      "moment": "pizzaCelebration",
-     "step": "point city-14",
+     "step": "point city-13",
      "stillOpen": true
     },
     {
@@ -2821,80 +2821,6 @@
    "reducedMotion": true,
    "presses": [
     {
-     "step": "point city-13",
-     "key": null,
-     "opened": [],
-     "closed": [
-      "mapPicker"
-     ],
-     "foreignKeyClicks": [],
-     "leaked": [],
-     "bookOpenedByKey": false,
-     "pizzas": [
-      7,
-      7
-     ],
-     "trips": [
-      2,
-      2
-     ],
-     "moment": null
-    },
-    {
-     "step": "next",
-     "key": null,
-     "opened": [],
-     "closed": [],
-     "foreignKeyClicks": [],
-     "leaked": [],
-     "bookOpenedByKey": false,
-     "pizzas": [
-      7,
-      7
-     ],
-     "trips": [
-      2,
-      2
-     ],
-     "moment": null
-    },
-    {
-     "step": "point city-14",
-     "key": null,
-     "opened": [],
-     "closed": [],
-     "foreignKeyClicks": [],
-     "leaked": [],
-     "bookOpenedByKey": false,
-     "pizzas": [
-      7,
-      7
-     ],
-     "trips": [
-      2,
-      2
-     ],
-     "moment": null
-    },
-    {
-     "step": "next",
-     "key": null,
-     "opened": [],
-     "closed": [],
-     "foreignKeyClicks": [],
-     "leaked": [],
-     "bookOpenedByKey": false,
-     "pizzas": [
-      7,
-      7
-     ],
-     "trips": [
-      2,
-      2
-     ],
-     "moment": null
-    },
-    {
      "step": "point city-17",
      "key": null,
      "opened": [],
@@ -2967,14 +2893,86 @@
      "moment": null
     },
     {
-     "step": "point city-15",
+     "step": "point city-13",
+     "key": null,
+     "opened": [],
+     "closed": [
+      "mapPicker"
+     ],
+     "foreignKeyClicks": [],
+     "leaked": [],
+     "bookOpenedByKey": false,
+     "pizzas": [
+      7,
+      7
+     ],
+     "trips": [
+      2,
+      2
+     ],
+     "moment": null
+    },
+    {
+     "step": "next",
+     "key": null,
+     "opened": [],
+     "closed": [],
+     "foreignKeyClicks": [],
+     "leaked": [],
+     "bookOpenedByKey": false,
+     "pizzas": [
+      7,
+      7
+     ],
+     "trips": [
+      2,
+      2
+     ],
+     "moment": null
+    },
+    {
+     "step": "point city-16",
+     "key": null,
+     "opened": [],
+     "closed": [],
+     "foreignKeyClicks": [],
+     "leaked": [],
+     "bookOpenedByKey": false,
+     "pizzas": [
+      7,
+      7
+     ],
+     "trips": [
+      2,
+      2
+     ],
+     "moment": null
+    },
+    {
+     "step": "next",
+     "key": null,
+     "opened": [],
+     "closed": [],
+     "foreignKeyClicks": [],
+     "leaked": [],
+     "bookOpenedByKey": false,
+     "pizzas": [
+      7,
+      7
+     ],
+     "trips": [
+      2,
+      2
+     ],
+     "moment": null
+    },
+    {
+     "step": "point city-14",
      "key": null,
      "opened": [
       "pizzaCelebration"
      ],
-     "closed": [
-      "mapPicker"
-     ],
+     "closed": [],
      "foreignKeyClicks": [],
      "leaked": [],
      "bookOpenedByKey": false,
@@ -3025,82 +3023,12 @@
      "moment": null
     },
     {
-     "step": "point city-16",
+     "step": "point city-15",
      "key": null,
      "opened": [],
-     "closed": [],
-     "foreignKeyClicks": [],
-     "leaked": [],
-     "bookOpenedByKey": false,
-     "pizzas": [
-      8,
-      8
+     "closed": [
+      "mapPicker"
      ],
-     "trips": [
-      2,
-      2
-     ],
-     "moment": null
-    },
-    {
-     "step": "next",
-     "key": null,
-     "opened": [],
-     "closed": [],
-     "foreignKeyClicks": [],
-     "leaked": [],
-     "bookOpenedByKey": false,
-     "pizzas": [
-      8,
-      8
-     ],
-     "trips": [
-      2,
-      2
-     ],
-     "moment": null
-    },
-    {
-     "step": "write city-14",
-     "key": null,
-     "opened": [],
-     "closed": [],
-     "foreignKeyClicks": [],
-     "leaked": [],
-     "bookOpenedByKey": false,
-     "pizzas": [
-      8,
-      8
-     ],
-     "trips": [
-      2,
-      2
-     ],
-     "moment": null
-    },
-    {
-     "step": "next",
-     "key": null,
-     "opened": [],
-     "closed": [],
-     "foreignKeyClicks": [],
-     "leaked": [],
-     "bookOpenedByKey": false,
-     "pizzas": [
-      8,
-      8
-     ],
-     "trips": [
-      2,
-      2
-     ],
-     "moment": null
-    },
-    {
-     "step": "write city-15",
-     "key": null,
-     "opened": [],
-     "closed": [],
      "foreignKeyClicks": [],
      "leaked": [],
      "bookOpenedByKey": false,
@@ -3169,7 +3097,7 @@
      "moment": null
     },
     {
-     "step": "write city-13",
+     "step": "write city-15",
      "key": null,
      "opened": [],
      "closed": [],
@@ -3274,13 +3202,85 @@
       2,
       2
      ],
+     "moment": null
+    },
+    {
+     "step": "write city-13",
+     "key": null,
+     "opened": [],
+     "closed": [],
+     "foreignKeyClicks": [],
+     "leaked": [],
+     "bookOpenedByKey": false,
+     "pizzas": [
+      8,
+      8
+     ],
+     "trips": [
+      2,
+      2
+     ],
+     "moment": null
+    },
+    {
+     "step": "next",
+     "key": null,
+     "opened": [],
+     "closed": [],
+     "foreignKeyClicks": [],
+     "leaked": [],
+     "bookOpenedByKey": false,
+     "pizzas": [
+      8,
+      8
+     ],
+     "trips": [
+      2,
+      2
+     ],
+     "moment": null
+    },
+    {
+     "step": "write city-14",
+     "key": null,
+     "opened": [],
+     "closed": [],
+     "foreignKeyClicks": [],
+     "leaked": [],
+     "bookOpenedByKey": false,
+     "pizzas": [
+      8,
+      8
+     ],
+     "trips": [
+      2,
+      2
+     ],
+     "moment": null
+    },
+    {
+     "step": "next",
+     "key": null,
+     "opened": [],
+     "closed": [],
+     "foreignKeyClicks": [],
+     "leaked": [],
+     "bookOpenedByKey": false,
+     "pizzas": [
+      8,
+      8
+     ],
+     "trips": [
+      2,
+      2
+     ],
      "moment": "gold:city3"
     }
    ],
    "moments": [
     {
      "moment": "pizzaCelebration",
-     "step": "point city-15",
+     "step": "point city-14",
      "stillOpen": true
     },
     {
@@ -3301,7 +3301,7 @@
    "reducedMotion": false,
    "presses": [
     {
-     "step": "point city-18",
+     "step": "point city-13",
      "key": "circle",
      "opened": [],
      "closed": [],
@@ -3373,7 +3373,7 @@
      "moment": null
     },
     {
-     "step": "point city-16",
+     "step": "point city-14",
      "key": "circle",
      "opened": [],
      "closed": [],
@@ -3409,7 +3409,7 @@
      "moment": null
     },
     {
-     "step": "point city-13",
+     "step": "point city-18",
      "key": "circle",
      "opened": [],
      "closed": [],
@@ -3501,7 +3501,7 @@
      "moment": null
     },
     {
-     "step": "point city-14",
+     "step": "point city-16",
      "key": "circle",
      "opened": [],
      "closed": [],
@@ -3537,79 +3537,43 @@
      "moment": null
     },
     {
-     "step": "write city-17",
-     "key": "answer",
-     "opened": [],
-     "closed": [],
-     "foreignKeyClicks": [],
-     "leaked": [],
-     "bookOpenedByKey": false,
-     "pizzas": [
-      8,
-      8
-     ],
-     "trips": [
-      2,
-      2
-     ],
-     "moment": null
-    },
-    {
-     "step": "next",
-     "key": "next",
-     "opened": [],
-     "closed": [],
-     "foreignKeyClicks": [],
-     "leaked": [],
-     "bookOpenedByKey": false,
-     "pizzas": [
-      8,
-      8
-     ],
-     "trips": [
-      2,
-      2
-     ],
-     "moment": null
-    },
-    {
-     "step": "write city-15",
-     "key": "answer",
-     "opened": [],
-     "closed": [],
-     "foreignKeyClicks": [],
-     "leaked": [],
-     "bookOpenedByKey": false,
-     "pizzas": [
-      8,
-      8
-     ],
-     "trips": [
-      2,
-      2
-     ],
-     "moment": null
-    },
-    {
-     "step": "next",
-     "key": "next",
-     "opened": [],
-     "closed": [],
-     "foreignKeyClicks": [],
-     "leaked": [],
-     "bookOpenedByKey": false,
-     "pizzas": [
-      8,
-      8
-     ],
-     "trips": [
-      2,
-      2
-     ],
-     "moment": null
-    },
-    {
      "step": "write city-13",
+     "key": "answer",
+     "opened": [],
+     "closed": [],
+     "foreignKeyClicks": [],
+     "leaked": [],
+     "bookOpenedByKey": false,
+     "pizzas": [
+      8,
+      8
+     ],
+     "trips": [
+      2,
+      2
+     ],
+     "moment": null
+    },
+    {
+     "step": "next",
+     "key": "next",
+     "opened": [],
+     "closed": [],
+     "foreignKeyClicks": [],
+     "leaked": [],
+     "bookOpenedByKey": false,
+     "pizzas": [
+      8,
+      8
+     ],
+     "trips": [
+      2,
+      2
+     ],
+     "moment": null
+    },
+    {
+     "step": "write city-18",
      "key": "answer",
      "opened": [],
      "closed": [],
@@ -3717,7 +3681,43 @@
      "moment": null
     },
     {
-     "step": "write city-18",
+     "step": "write city-17",
+     "key": "answer",
+     "opened": [],
+     "closed": [],
+     "foreignKeyClicks": [],
+     "leaked": [],
+     "bookOpenedByKey": false,
+     "pizzas": [
+      8,
+      8
+     ],
+     "trips": [
+      2,
+      2
+     ],
+     "moment": null
+    },
+    {
+     "step": "next",
+     "key": "next",
+     "opened": [],
+     "closed": [],
+     "foreignKeyClicks": [],
+     "leaked": [],
+     "bookOpenedByKey": false,
+     "pizzas": [
+      8,
+      8
+     ],
+     "trips": [
+      2,
+      2
+     ],
+     "moment": null
+    },
+    {
+     "step": "write city-15",
      "key": "answer",
      "opened": [],
      "closed": [],
@@ -3815,80 +3815,6 @@
      "moment": null
     },
     {
-     "step": "point city-18",
-     "key": null,
-     "opened": [],
-     "closed": [],
-     "foreignKeyClicks": [],
-     "leaked": [],
-     "bookOpenedByKey": false,
-     "pizzas": [
-      7,
-      7
-     ],
-     "trips": [
-      2,
-      2
-     ],
-     "moment": null
-    },
-    {
-     "step": "next",
-     "key": null,
-     "opened": [],
-     "closed": [],
-     "foreignKeyClicks": [],
-     "leaked": [],
-     "bookOpenedByKey": false,
-     "pizzas": [
-      7,
-      7
-     ],
-     "trips": [
-      2,
-      2
-     ],
-     "moment": null
-    },
-    {
-     "step": "point city-15",
-     "key": null,
-     "opened": [],
-     "closed": [
-      "mapPicker"
-     ],
-     "foreignKeyClicks": [],
-     "leaked": [],
-     "bookOpenedByKey": false,
-     "pizzas": [
-      7,
-      7
-     ],
-     "trips": [
-      2,
-      2
-     ],
-     "moment": null
-    },
-    {
-     "step": "next",
-     "key": null,
-     "opened": [],
-     "closed": [],
-     "foreignKeyClicks": [],
-     "leaked": [],
-     "bookOpenedByKey": false,
-     "pizzas": [
-      7,
-      7
-     ],
-     "trips": [
-      2,
-      2
-     ],
-     "moment": null
-    },
-    {
      "step": "point city-17",
      "key": null,
      "opened": [],
@@ -3926,6 +3852,78 @@
     },
     {
      "step": "point city-14",
+     "key": null,
+     "opened": [],
+     "closed": [],
+     "foreignKeyClicks": [],
+     "leaked": [],
+     "bookOpenedByKey": false,
+     "pizzas": [
+      7,
+      7
+     ],
+     "trips": [
+      2,
+      2
+     ],
+     "moment": null
+    },
+    {
+     "step": "next",
+     "key": null,
+     "opened": [],
+     "closed": [],
+     "foreignKeyClicks": [],
+     "leaked": [],
+     "bookOpenedByKey": false,
+     "pizzas": [
+      7,
+      7
+     ],
+     "trips": [
+      2,
+      2
+     ],
+     "moment": null
+    },
+    {
+     "step": "point city-18",
+     "key": null,
+     "opened": [],
+     "closed": [],
+     "foreignKeyClicks": [],
+     "leaked": [],
+     "bookOpenedByKey": false,
+     "pizzas": [
+      7,
+      7
+     ],
+     "trips": [
+      2,
+      2
+     ],
+     "moment": null
+    },
+    {
+     "step": "next",
+     "key": null,
+     "opened": [],
+     "closed": [],
+     "foreignKeyClicks": [],
+     "leaked": [],
+     "bookOpenedByKey": false,
+     "pizzas": [
+      7,
+      7
+     ],
+     "trips": [
+      2,
+      2
+     ],
+     "moment": null
+    },
+    {
+     "step": "point city-16",
      "key": null,
      "opened": [
       "pizzaCelebration"
@@ -3981,10 +3979,12 @@
      "moment": null
     },
     {
-     "step": "point city-16",
+     "step": "point city-15",
      "key": null,
      "opened": [],
-     "closed": [],
+     "closed": [
+      "mapPicker"
+     ],
      "foreignKeyClicks": [],
      "leaked": [],
      "bookOpenedByKey": false,
@@ -4017,43 +4017,7 @@
      "moment": null
     },
     {
-     "step": "write city-18",
-     "key": null,
-     "opened": [],
-     "closed": [],
-     "foreignKeyClicks": [],
-     "leaked": [],
-     "bookOpenedByKey": false,
-     "pizzas": [
-      8,
-      8
-     ],
-     "trips": [
-      2,
-      2
-     ],
-     "moment": null
-    },
-    {
-     "step": "next",
-     "key": null,
-     "opened": [],
-     "closed": [],
-     "foreignKeyClicks": [],
-     "leaked": [],
-     "bookOpenedByKey": false,
-     "pizzas": [
-      8,
-      8
-     ],
-     "trips": [
-      2,
-      2
-     ],
-     "moment": null
-    },
-    {
-     "step": "write city-13",
+     "step": "write city-16",
      "key": null,
      "opened": [],
      "closed": [],
@@ -4125,6 +4089,78 @@
      "moment": null
     },
     {
+     "step": "write city-17",
+     "key": null,
+     "opened": [],
+     "closed": [],
+     "foreignKeyClicks": [],
+     "leaked": [],
+     "bookOpenedByKey": false,
+     "pizzas": [
+      8,
+      8
+     ],
+     "trips": [
+      2,
+      2
+     ],
+     "moment": null
+    },
+    {
+     "step": "next",
+     "key": null,
+     "opened": [],
+     "closed": [],
+     "foreignKeyClicks": [],
+     "leaked": [],
+     "bookOpenedByKey": false,
+     "pizzas": [
+      8,
+      8
+     ],
+     "trips": [
+      2,
+      2
+     ],
+     "moment": null
+    },
+    {
+     "step": "write city-13",
+     "key": null,
+     "opened": [],
+     "closed": [],
+     "foreignKeyClicks": [],
+     "leaked": [],
+     "bookOpenedByKey": false,
+     "pizzas": [
+      8,
+      8
+     ],
+     "trips": [
+      2,
+      2
+     ],
+     "moment": null
+    },
+    {
+     "step": "next",
+     "key": null,
+     "opened": [],
+     "closed": [],
+     "foreignKeyClicks": [],
+     "leaked": [],
+     "bookOpenedByKey": false,
+     "pizzas": [
+      8,
+      8
+     ],
+     "trips": [
+      2,
+      2
+     ],
+     "moment": null
+    },
+    {
      "step": "write city-14",
      "key": null,
      "opened": [],
@@ -4161,43 +4197,7 @@
      "moment": null
     },
     {
-     "step": "write city-16",
-     "key": null,
-     "opened": [],
-     "closed": [],
-     "foreignKeyClicks": [],
-     "leaked": [],
-     "bookOpenedByKey": false,
-     "pizzas": [
-      8,
-      8
-     ],
-     "trips": [
-      2,
-      2
-     ],
-     "moment": null
-    },
-    {
-     "step": "next",
-     "key": null,
-     "opened": [],
-     "closed": [],
-     "foreignKeyClicks": [],
-     "leaked": [],
-     "bookOpenedByKey": false,
-     "pizzas": [
-      8,
-      8
-     ],
-     "trips": [
-      2,
-      2
-     ],
-     "moment": null
-    },
-    {
-     "step": "write city-17",
+     "step": "write city-18",
      "key": null,
      "opened": [],
      "closed": [],
@@ -4236,7 +4236,7 @@
    "moments": [
     {
      "moment": "pizzaCelebration",
-     "step": "point city-14",
+     "step": "point city-16",
      "stillOpen": true
     },
     {

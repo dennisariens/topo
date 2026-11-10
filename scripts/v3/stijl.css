@@ -10,7 +10,7 @@
 .v3,body.v3Les{
  --v3-font:ui-rounded,"SF Pro Rounded","Topo Rounded",-apple-system,BlinkMacSystemFont,"Segoe UI",system-ui,sans-serif;
  --v3-ink:#2a2440;--v3-ink2:#5e5872;--v3-ink3:#8b879a;--v3-line:rgba(42,36,64,.10);
- --v3-display:700 35px/42px var(--v3-font);
+ --v3-display:700 34px/40px var(--v3-font);
  --v3-large:var(--v3-display);
  --v3-title:600 20px/26px var(--v3-font);
  --v3-headline:600 17px/22px var(--v3-font);

@@ -20,6 +20,7 @@ Runs with prefers-reduced-transparency: no-preference. Writes screenshots, the c
 
 Usage: node scripts/build-v3-preview.mjs && python3 scripts/qa-v3-faseb-voortgang.py [preview.html]
 """
+import re
 import asyncio, json, pathlib, sys
 from playwright.async_api import async_playwright
 from PIL import Image, ImageDraw, ImageFont
@@ -56,13 +57,18 @@ PROBE = r'''() => {
 }'''
 
 
+FIG = re.compile(r'^[\d\s\u202f/]+$')
+
+
 def near(a, b, tol=1.0):
     return a is not None and b is not None and abs(a - b) <= tol
 
 
 def checks(p, tag, vp, fail):
     f = lambda why: fail(f'{tag}: {why}')
-    if len(p['big']) != 2 or p['big'][0] != 'Voortgang' or p['big'][1] != p['countText'] or not p['countText'].endswith(' / 45'): f(f'display texts {p["big"]}')
+    # Afwerking 10-11: key figures are 32–44/700 by design; the words are only the title.
+    words = [t for t in p['big'] if not FIG.match(t)]
+    if words != ['Voortgang'] or p['countText'] not in p['big'] or not p['countText'].endswith(' / 45'): f(f'display texts {p["big"]}')
     if p['h1Color'] != p['ink'] or p['countColor'] != p['ink']: f(f'title bar not in ink ({p["h1Color"]}, {p["countColor"]})')
     wide = vp != 'telefoon'
     if wide and not near(p['h1']['t'] + p['h1']['h'] / 2, p['count']['t'] + p['count']['h'] / 2, 4): f('title and count not on one line')

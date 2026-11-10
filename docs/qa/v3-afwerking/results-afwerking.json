@@ -1,0 +1,214 @@
+{
+ "runs": {
+  "reis/desktop/bg01": {
+   "texts": 31,
+   "small": [],
+   "lowContrast": []
+  },
+  "reis/desktop/bg02": {
+   "texts": 31,
+   "small": [],
+   "lowContrast": []
+  },
+  "reis/desktop/bg03": {
+   "texts": 31,
+   "small": [],
+   "lowContrast": []
+  },
+  "oefenen/desktop/bg01": {
+   "texts": 29,
+   "small": [],
+   "lowContrast": []
+  },
+  "oefenen/desktop/bg02": {
+   "texts": 29,
+   "small": [],
+   "lowContrast": []
+  },
+  "oefenen/desktop/bg03": {
+   "texts": 29,
+   "small": [],
+   "lowContrast": []
+  },
+  "les/desktop/bg01": {
+   "texts": 25,
+   "small": [],
+   "lowContrast": []
+  },
+  "les/desktop/bg02": {
+   "texts": 25,
+   "small": [],
+   "lowContrast": []
+  },
+  "les/desktop/bg03": {
+   "texts": 25,
+   "small": [],
+   "lowContrast": []
+  },
+  "toets/desktop/bg01": {
+   "texts": 31,
+   "small": [],
+   "lowContrast": []
+  },
+  "toetsResult/desktop/bg01": {
+   "texts": 20,
+   "small": [],
+   "lowContrast": []
+  },
+  "toetsResult/desktop/bg02": {
+   "texts": 20,
+   "small": [],
+   "lowContrast": []
+  },
+  "toetsResult/desktop/bg03": {
+   "texts": 20,
+   "small": [],
+   "lowContrast": []
+  },
+  "rewards/desktop/bg01": {
+   "texts": 18,
+   "small": [],
+   "lowContrast": []
+  },
+  "rewards/desktop/bg02": {
+   "texts": 18,
+   "small": [],
+   "lowContrast": []
+  },
+  "rewards/desktop/bg03": {
+   "texts": 18,
+   "small": [],
+   "lowContrast": []
+  },
+  "voortgang/desktop/bg01": {
+   "texts": 39,
+   "small": [],
+   "lowContrast": []
+  },
+  "reis/ipad-liggend/bg01": {
+   "texts": 30,
+   "small": [],
+   "lowContrast": []
+  },
+  "reis/ipad-liggend/bg02": {
+   "texts": 30,
+   "small": [],
+   "lowContrast": []
+  },
+  "reis/ipad-liggend/bg03": {
+   "texts": 30,
+   "small": [],
+   "lowContrast": []
+  },
+  "oefenen/ipad-liggend/bg01": {
+   "texts": 29,
+   "small": [],
+   "lowContrast": []
+  },
+  "oefenen/ipad-liggend/bg02": {
+   "texts": 29,
+   "small": [],
+   "lowContrast": []
+  },
+  "oefenen/ipad-liggend/bg03": {
+   "texts": 29,
+   "small": [],
+   "lowContrast": []
+  },
+  "les/ipad-liggend/bg01": {
+   "texts": 19,
+   "small": [],
+   "lowContrast": []
+  },
+  "les/ipad-liggend/bg02": {
+   "texts": 19,
+   "small": [],
+   "lowContrast": []
+  },
+  "les/ipad-liggend/bg03": {
+   "texts": 19,
+   "small": [],
+   "lowContrast": []
+  },
+  "toets/ipad-liggend/bg01": {
+   "texts": 31,
+   "small": [],
+   "lowContrast": []
+  },
+  "toetsResult/ipad-liggend/bg01": {
+   "texts": 20,
+   "small": [],
+   "lowContrast": []
+  },
+  "toetsResult/ipad-liggend/bg02": {
+   "texts": 20,
+   "small": [],
+   "lowContrast": []
+  },
+  "toetsResult/ipad-liggend/bg03": {
+   "texts": 20,
+   "small": [],
+   "lowContrast": []
+  },
+  "rewards/ipad-liggend/bg01": {
+   "texts": 18,
+   "small": [],
+   "lowContrast": []
+  },
+  "rewards/ipad-liggend/bg02": {
+   "texts": 18,
+   "small": [],
+   "lowContrast": []
+  },
+  "rewards/ipad-liggend/bg03": {
+   "texts": 18,
+   "small": [],
+   "lowContrast": []
+  },
+  "voortgang/ipad-liggend/bg01": {
+   "texts": 36,
+   "small": [],
+   "lowContrast": []
+  },
+  "reis/ipad-staand/bg01": {
+   "texts": 25,
+   "small": [],
+   "lowContrast": []
+  },
+  "oefenen/ipad-staand/bg01": {
+   "texts": 24,
+   "small": [],
+   "lowContrast": []
+  },
+  "les/ipad-staand/bg01": {
+   "texts": 17,
+   "small": [],
+   "lowContrast": []
+  },
+  "toets/ipad-staand/bg01": {
+   "texts": 26,
+   "small": [],
+   "lowContrast": []
+  },
+  "toetsResult/ipad-staand/bg01": {
+   "texts": 15,
+   "small": [],
+   "lowContrast": []
+  },
+  "rewards/ipad-staand/bg01": {
+   "texts": 9,
+   "small": [],
+   "lowContrast": []
+  },
+  "voortgang/ipad-staand/bg01": {
+   "texts": 22,
+   "small": [],
+   "lowContrast": []
+  }
+ },
+ "errors": [],
+ "summary": {
+  "runs": 41,
+  "pass": true
+ }
+}

@@ -805,3 +805,29 @@ De data blijft gelijk: plekken uit het V2-paspoort, hoofdstukken uit `TopoRoute`
 
 **Bewijs:** `scripts/qa-v3-faseb-voortgang.py` en de vergelijkingen `docs/qa/v3-stijlbeeld/voortgang-ijk-{desktop,ipad-liggend}.jpg`.
 
+
+## 2026-11-10 — Master-assets van `art/master` in V3 (lead designer)
+
+- **Bron:** `art/master` (`c3bce12`), uit een parallelle chat. Gemaakt met `docs/ASSET_BRIEF.md` op die branch, en gebaseerd op de oude `main` (`7e38160`).
+- **Oordeel:** de set is consistent onderling en met de V3-renderstijl (Nino, helm met bril, rode sjaal, blauw shirt, tas, rode Vespa). **Gebruiken in V3.**
+- **Toewijzing:**
+
+  | Asset | V3-gebruik |
+  | --- | --- |
+  | `nino-welkom` | Kennismaking (welkom) |
+  | `nino-schrijft` | Toets instellen (in plaats van NINO-KLEMBORD) |
+  | `vespa-rijdend` / `vespa-bagage` | Toets resultaat: **NINO-ONDERWEG** ("op weg naar de volgende bestemming"); `vespa-bagage` bij een afgerond hoofdstuk of land |
+  | `nino-aanmoediging` | Toets resultaat bij veel fouten, als alternatief voor ONDERWEG |
+  | `nino-juicht` | Toets resultaat 10/10; hoofdstuk afgerond |
+  | `nino-gold` | Gouden proef gehaald |
+  | `nino-paspoort` | Voortgang (lege staat); Reisboekje |
+  | `nino-denkt`, `nino-wijst`, `nino-wijst-rechts` | Les: hint, Toon antwoord, lege staten |
+  | `vespa-zij`, `vespa-icoon` | reserve; IC-vespa (goedgekeurd) blijft het teller-icoon |
+
+- **Resolutie:** de WebP's zijn 600 px hoog (poses) en 800 px breed (Vespa). Dat is genoeg tot ±300 CSS-px. Voor het toetsresultaat en de kennismaking zijn de bron-PNG's nodig, met ≥ 1200 px hoog (2× voor iPad); die staan niet in Git. De eigenaar levert ze aan, of de 600 px-versie wordt daar kleiner getoond.
+- **Branchhygiëne:** `art/master` wordt **niet** gemerged, want de basis is oud en DECISIONS en docs zouden botsen. De assets gaan via de V3-artworkpijplijn (`art/v3-render-assets`: masters, WebP, `manifest.json` met SHA256 en status, Hermes-QA). Claude Code integreert daarna.
+- **Afstemming met de `art/master`-briefing:**
+  - **3a/3b paspoort (teal omslag):** vervalt. Het paspoort ís het Reisboekje met omslag B (rood leer, kompasroos, DECISIONS 10-11).
+  - **6 Hero Frankrijk:** zonder tekst in beeld; het bord blijft leeg (regel: geen tekst in artwork).
+  - **Uniform:** het blauwe shirt dicht geknoopt, zoals in deze poses. Korte of opgerolde mouwen mogen; het portret blijft leidend.
+  - **Bakkerijbeloningen Frankrijk:** past in het landpakket als landeigen beloningsartwork. De regel (8 punten, 3 per rit) blijft in de kern.

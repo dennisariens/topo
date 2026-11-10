@@ -135,6 +135,23 @@ Dit doelbeeld is het ijkpunt voor het frame met de geïntegreerde zijbalk op een
 - **foto's:** de echte hoofdstukbeelden uit de app;
 - **kaart:** de pins vallen nooit onder de hoofdstukkaart; de kaart past in het vlak boven en naast die kaart.
 
+## Verfijning (eigenaar, 10-11, op `R-reis-ijk`)
+
+Deze regels gaan voor de renders:
+
+- **Portret:** kleiner, ±112 px breed op desktop (in de render ±170) en 88 px op iPad. Het blijft een anker en geen held, en geeft de nav meer lucht.
+- **Gewichten één stap lichter:**
+  - de schermtitel en het woordmerk op gewicht 700 (niet 800 tot 900);
+  - de score en de grote getallen op 700;
+  - rijen en labels op 500;
+  - actief of geselecteerd op 600.
+- **Inkt in plaats van zwart:**
+  - de tekst wordt een donkere, licht violette inkt (richtwaarde `#2A2440`), nooit `#000` of `#111`;
+  - secundaire tekst is dezelfde inkt op ±62%;
+  - de lijniconen gebruiken die secundaire inkt;
+  - contrast ≥ AA blijft de eis.
+- **Titelgrootte:** de schermtitel op ±34–36 px (in de render ±48).
+
 ## Per render: overnemen en afwijken
 
 | Render | Overnemen | Niet overnemen / afwijken |

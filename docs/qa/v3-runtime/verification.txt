@@ -1,0 +1,37 @@
+V3-runtime preparation — 2026-11-10
+Reference: codex/topo-v3 @ 68bb5ae9a8f195898fee49445c6151b5c2518b48
+Verification runtime: Node v26.7.0; existing jsdom dependency/lockfile.
+
+PASS: npm run lint (exit 0), raw output in lint.log.
+PASS: npm test (exit 0), entire maintained chain, raw output in regression.log.
+PASS: npm run build (exit 0), existing offline build, raw output in build.log.
+PASS: new characterization twice (22/22 per run; 0 skipped/todo).
+  npm run test:characterization (also directly verified 22/22; npm-characterization.log)
+  Evidence used the equivalent explicit node command with --test-reporter=tap:
+  node --test --test-concurrency=1 --test-reporter=tap tests/characterization/*.test.mjs
+  See characterization-run-1.tap and characterization-run-2.tap.
+PASS: equal test names/outcomes between runs; an additional test independently
+  proves identical question order, modes, result and saved progress on two boots.
+PASS: git diff --check.
+PASS: frozen index SHA256, including after build:
+  3aced3c31259011b0af2947c78f71965cb4beb2e88c69d1663e61792b0304f5a
+PASS: git diff --exit-code 68bb5ae -- index.html scripts/v3 docs/v3
+  ':(exclude)docs/v3/ARCHITECTUUR.md'
+  No existing protected files changed. ARCHITECTUUR.md is the requested new file.
+
+Read-only independent reviewer inspected all four test modules, harness and
+835-word architecture proposal; no blockers. Follow-up reviewed the strengthened
+prompt/visible-resumption/initial-lock assertions; no problems found. Reviewer
+made no edits and did not rerun the full suite.
+
+Existing V3 preview rebuilt only to measure the baseline, not a new runtime:
+  node scripts/build-v3-preview.mjs
+  index: 41445845 bytes; preview: 50255820 bytes.
+  Raw/gzip bytes and SHA256 are in baseline-metrics.json.
+  The preview remains ignored/uncommitted. No new runtime or runtime dependency.
+
+OPEN: observed cancelled-import quirk in scripts/v3/toets.js: a stale success
+status can allow result replacement after cancellation. Characterized, not fixed
+or accepted as desired behavior. See handoff. Browser/device/layout/real SVG
+fill-stroke/pointer/IME/print geometry and iPad memory are not proven by this
+DOM harness. No merge, deployment or release/publication performed.

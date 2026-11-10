@@ -1,0 +1,25 @@
+{
+  "base_commit": "68bb5ae9a8f195898fee49445c6151b5c2518b48",
+  "node": "v26.7.0",
+  "files": [
+    {
+      "path": "index.html",
+      "bytes": 41445845,
+      "gzip_bytes": 30927969,
+      "sha256": "3aced3c31259011b0af2947c78f71965cb4beb2e88c69d1663e61792b0304f5a"
+    },
+    {
+      "path": "output/html/TOPO-V3-Reis-Preview.html",
+      "bytes": 50255820,
+      "gzip_bytes": 37499941,
+      "sha256": "617c1c1ffb11b81695a1c653393eaa7233eb24a30e28b87b047e4c243eb272a9"
+    }
+  ],
+  "characterization": {
+    "runs": 2,
+    "passed_each": 22,
+    "skipped": 0,
+    "same_test_names_and_outcomes": true
+  },
+  "ipad_memory_measured": false
+}

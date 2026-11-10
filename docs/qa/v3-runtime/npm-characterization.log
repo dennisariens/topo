@@ -1,0 +1,34 @@
+
+> topo-italie-baseline@0.1.0 test:characterization
+> node --test --test-concurrency=1 tests/characterization/*.test.mjs
+
+✔ Reis → Verder preserves the route question, draft and backward selection (782.626083ms)
+✔ Oefenen → Reis → Oefenen preserves question, text, selection and saved progress (376.498667ms)
+✔ completed pointing replay gives daily credit once per accepted answer, but no new reward (514.782375ms)
+✔ knowledge passport and V3 mastery use both streaks >=3 and a strictly future due time (323.813709ms)
+✔ TopoBook and Schoolblad preserve progress; Schoolblad returns the draft and is blocked in exam/gold (280.4615ms)
+✔ gold keeps all twelve tasks across the six-question pause; answered reload cannot award twice (577.710042ms)
+✔ startup migration keeps legacy rewards; skipped introduction is offered once before the first lesson (540.191625ms)
+✔ 45 stable places, 11 ordered chapters, groups and source-pinned geometry (596.656416ms)
+✔ name grading accepts normalization and declared aliases, never fuzzy spelling or worksheet codes (398.989208ms)
+✔ point tolerance is 22 CSS px at zoom/pan; river corridor and visible geometry stay separate (162.369166ms)
+✔ V3 exam: real score, wrong/skipped list, share text and daily credit, with no points/pizza/ride/gold (875.793083ms)
+✔ last ten exams, newest first; schema, IDs, scores, answer-length and corrupt reads are bounded (1777.216ms)
+✔ real backup export/import: V3 → old V2 → V3 and new V3 → V3 keep compatible schemas and profile (861.993708ms)
+✔ backup storage failure rolls profile back and leaves active progress/results unchanged (220.577625ms)
+✔ observed quirk: cancelled import after an earlier success can still replace v3Toetsen (not a desired contract) (402.219542ms)
+✔ Wis voortgang retains profile/results; Begin helemaal opnieuw also clears profile, intro and exam history (609.497375ms)
+✔ fixed seed and clock reproduce exam order, modes, result and saved progress across isolated boots (816.48225ms)
+✔ locks, stage order, delayed repair, completion and reward-safe stage replay (7.091291ms)
+✔ gold requires every point and name correct; retry/replay and legacy saves never duplicate rewards (12.665084ms)
+✔ review and per-skill due boundaries use 1/3/7/14 days; wrong answers reset, smart deck respects locks (6.755292ms)
+✔ 8 retrieval points per pizza, every third pizza a ride; favorite is cosmetic and flavor rollover truthful (1.331959ms)
+✔ all eleven chapters require all three stages; next chapter opens only after writing (0.586042ms)
+ℹ tests 22
+ℹ suites 0
+ℹ pass 22
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 12405.901875

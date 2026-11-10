@@ -1,0 +1,34 @@
+{
+  "source": "68bb5ae9a8f195898fee49445c6151b5c2518b48",
+  "items_sha256": "59c4aadfa4ad3da20bca97ebbe9ad435c30090b890f628fba3027bd0adcaafd4",
+  "chapters_sha256": "5ec9fbb15d3fce7266de774c5afd7d4dd1cc2fd74c252bbd6cbe42e2cc7317a0",
+  "italy_sha256": "d0ae7bbf931af162143fb2b90d39c64aed1d3e01dd9bf627740659534070db31",
+  "context_sha256": "c81d76f51af4d019d5b0e60070f85d1f18ce8f9c17c8f93402fd890f9d08dad9",
+  "name_anchors_sha256": "83d7d603c81a0e2d0bc08fe01b888d275ff37e982a6d5b57715bc33e75414123",
+  "chapter_ids": [
+    "city1",
+    "city2",
+    "city3",
+    "city4",
+    "islands",
+    "mountains",
+    "volcanoes",
+    "regions",
+    "countries",
+    "seas",
+    "rivers"
+  ],
+  "chapter_sizes": [
+    6,
+    6,
+    6,
+    5,
+    2,
+    2,
+    2,
+    2,
+    7,
+    5,
+    2
+  ]
+}

@@ -105,3 +105,23 @@ Script: `scripts/qa-v3-faseb-toets.py`. Resultaat: [`results-toets.json`](result
 | Overflow | Geen horizontale scroll |
 
 Alle checks zijn groen. In `qa-v3-faseb.py` en `qa-v3-glas.py` meten de checks voor variant (a) nu de silhouetgroep van de buurlanden: dekking 0,3–0,8, de vervaging, en originelen die niets meer tekenen.
+
+## Stap 6: Beloningen volgens `R-beloningen`
+
+Script: `scripts/qa-v3-faseb-beloningen.py`. Resultaat: [`results-beloningen.json`](results-beloningen.json).
+
+Gemeten op `#bezig` op desktop, iPad liggend, iPad staand en telefoon, en op `#alles` op desktop. Het script draait met `prefers-reduced-transparency: no-preference`, het glas zoals ontworpen. Vergelijking: [desktop](../v3-stijlbeeld/beloningen-ijk-desktop.jpg) · [iPad liggend](../v3-stijlbeeld/beloningen-ijk-ipad-liggend.jpg). De tellingen tegen het V2-Reisboekje blijven gedekt door `qa-v3-stijlbeeld.py`.
+
+| Check | Drempel |
+| --- | --- |
+| Eén display-tekst | "Beloningen", zonder decoratie (geen pseudo-elementen) |
+| Boek | Vrij: transparant en zonder schaduw; het omslag is een knop; één primaire pil, Open Reisboekje |
+| Ritpaneel | Glas (backdrop-filter, radius 28) |
+| Pizza's | Drie, volgens de data: verdiend = 8 punten, de huidige = de punten van nu, de rest 0 |
+| Rit | Vespa zichtbaar; het aantal ritten op 700; een meter van drie brede segmenten, aan = pizza's mod 3 |
+| Tegels | Vier, even breed (±1 px), glas, met icoon, label en getal op 700 (26–30 px; telefoon 22–26) |
+| Raster (≥ 1024) | Boek op kolom 1–5, paneel op 6–12 (±1,5 px); boek en paneel op één bovenlijn (±1 px); tegels over de volle breedte |
+| Overflow | Geen horizontale scroll |
+
+Alle checks zijn groen.
+

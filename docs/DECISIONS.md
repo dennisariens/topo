@@ -753,3 +753,21 @@ Beide schermen volgen hun render, met de regels van Ingetogenheid, Raster en Ver
 - de QA (`qa-v3-faseb.py`, `qa-v3-glas.py`) meet nu die groep, en dat de originelen niets meer tekenen.
 
 **Bewijs:** `scripts/qa-v3-faseb-toets.py` en de vergelijkingen `docs/qa/v3-stijlbeeld/toets-instellen-{desktop,ipad-liggend}.jpg` en `toets-resultaat-{eiland,kaart}-*.jpg`.
+
+## 2026-11-10 — V3.0 fase B, stap 6: Beloningen
+
+**Beloningen (`R-beloningen`), Landschap, op het raster van 12 kolommen:**
+- de titel "Beloningen" staat op het canvas als het enige display-element, zonder decoratieve streepjes;
+- het Reisboekje staat groot en vrij op het landschap (kolom 1–5), zonder kaart eromheen, met het omslag als knop en de pil Open Reisboekje. Het omslag blijft het goedgekeurde omslag B (besluit eigenaar 10-11);
+- rechts staat één glaspaneel (kolom 6–12), op één bovenlijn met het boek:
+  - bovenaan de drie pizza's van de huidige rit, volgens de data (3 per rit, de V2-volgorde margherita, salami, quattro formaggi). Verdiende pizza's zijn heel, de huidige toont zijn punten boven een vage hele pizza, de rest is vaag. De pizza's komen uit de bestaande V2-sprite van 0–8 punten;
+  - een haarlijn;
+  - de Vespa naast het aantal ritten en een meter van drie brede segmenten;
+- daaronder vier gelijke glastegels over de volle breedte: icoon, label en een getal op 700 (28 px);
+- iPad staand: boek, paneel en tegels onder elkaar, de tegels in twee kolommen, met een eigen scroll. Telefoon: hetzelfde, ook met het boek vrij;
+- de pizza's zijn decoratie (`aria-hidden`); het label van de rit noemt het aantal al. Logica en tellingen blijven gelijk.
+
+**QA met glas zoals ontworpen:** deze Mac staat op "verminderde transparantie". Headless Chrome neemt dat over, en dan maakt `glas.css` de panelen terecht dicht. `qa-v3-glas.py` en `qa-v3-stijlbeeld.py` emuleren daarom al `no-preference`. `qa-v3-faseb-beloningen.py` doet dat nu ook, en controleert dat de panelen echt glas zijn (backdrop-filter).
+
+**Bewijs:** `scripts/qa-v3-faseb-beloningen.py` en de vergelijkingen `docs/qa/v3-stijlbeeld/beloningen-ijk-{desktop,ipad-liggend}.jpg`.
+

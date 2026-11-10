@@ -1,0 +1,139 @@
+{
+ "runs": {
+  "bezig/desktop": {
+   "big": [
+    "Beloningen"
+   ],
+   "state": {
+    "slices": 6,
+    "pizzas": 1,
+    "trips": 0
+   },
+   "pizzas": [
+    8,
+    6,
+    0
+   ],
+   "meter": [
+    true,
+    false,
+    false
+   ],
+   "tiles": [
+    "Pizza 2",
+    "Stempels",
+    "Goud",
+    "Postkaarten"
+   ]
+  },
+  "bezig/ipad-liggend": {
+   "big": [
+    "Beloningen"
+   ],
+   "state": {
+    "slices": 6,
+    "pizzas": 1,
+    "trips": 0
+   },
+   "pizzas": [
+    8,
+    6,
+    0
+   ],
+   "meter": [
+    true,
+    false,
+    false
+   ],
+   "tiles": [
+    "Pizza 2",
+    "Stempels",
+    "Goud",
+    "Postkaarten"
+   ]
+  },
+  "bezig/ipad-staand": {
+   "big": [
+    "Beloningen"
+   ],
+   "state": {
+    "slices": 6,
+    "pizzas": 1,
+    "trips": 0
+   },
+   "pizzas": [
+    8,
+    6,
+    0
+   ],
+   "meter": [
+    true,
+    false,
+    false
+   ],
+   "tiles": [
+    "Pizza 2",
+    "Stempels",
+    "Goud",
+    "Postkaarten"
+   ]
+  },
+  "bezig/telefoon": {
+   "big": [
+    "Beloningen"
+   ],
+   "state": {
+    "slices": 6,
+    "pizzas": 1,
+    "trips": 0
+   },
+   "pizzas": [
+    8,
+    6,
+    0
+   ],
+   "meter": [
+    true,
+    false,
+    false
+   ],
+   "tiles": [
+    "Pizza 2",
+    "Stempels",
+    "Goud",
+    "Postkaarten"
+   ]
+  },
+  "alles/desktop": {
+   "big": [
+    "Beloningen"
+   ],
+   "state": {
+    "slices": 0,
+    "pizzas": 21,
+    "trips": 7
+   },
+   "pizzas": [
+    0,
+    0,
+    0
+   ],
+   "meter": [
+    false,
+    false,
+    false
+   ],
+   "tiles": [
+    "Pizza 22",
+    "Stempels",
+    "Goud",
+    "Postkaarten"
+   ]
+  }
+ },
+ "errors": [],
+ "summary": {
+  "runs": 5,
+  "pass": true
+ }
+}

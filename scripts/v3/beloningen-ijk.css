@@ -1,0 +1,52 @@
+/* TOPO V3.0 fase B, stap 6 — Beloningen volgens R-beloningen (docs/v3/renders/README.md § Per render: R-beloningen,
+   § Ingetogenheid, § Raster en uitlijning, § Verfijning). Presentation only; loaded after toets-ijk.css.
+   Landschap: the title on the canvas; the Reisboekje (approved cover B, owner 10-11) large and free on the landscape as
+   the one loud element, with its pill; on the right one glass panel: the ride's three pizzas (3 per ride, from the
+   data), a hairline, then the Vespa beside the number of rides and the ride meter; below four equal glass tiles over
+   the 12 columns (icon, label, number on 700). No cards in cards, no decorative lines by the title. */
+.v3Rewards h1.v3ScreenTitle{font:var(--v3-display)}
+.v3RidePizzas{grid-area:pz;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:var(--v3-s4);justify-items:center;padding-bottom:var(--v3-s4);margin-bottom:var(--v3-s4);border-bottom:1px solid var(--v3-line)}
+/* V2's 3×3 sprite (0–8 slices): ::after draws the slices the data has, ::before a faint whole pizza beneath. */
+.v3RidePizza{position:relative;display:block;width:100%;max-width:min(150px,16dvh);aspect-ratio:1}
+.v3RidePizza::before,.v3RidePizza::after{content:"";position:absolute;inset:0;background-image:var(--v3-pz);background-repeat:no-repeat;background-size:300% 300%}
+.v3RidePizza::before{background-position:100% 100%;opacity:.26;filter:saturate(.3)}
+.v3RidePizza::after{background-position:var(--v3-pz-pos)}
+.v3RidePizza.on::before{content:none}
+.v3Rewards .v3Ride{grid-template-columns:minmax(0,1fr) auto minmax(0,1.1fr);grid-template-rows:auto auto auto;grid-template-areas:"pz pz pz" "art num lab" "art met met";column-gap:var(--v3-s3);align-content:center}
+.v3Rewards .v3RideArt{grid-area:art;justify-self:center;align-self:center;max-height:min(24dvh,210px)}
+.v3Rewards .v3Ride>b{grid-area:num;align-self:end;font:700 28px/1.1 var(--v3-font);color:var(--v3-ink)}
+.v3Rewards .v3Ride>span{grid-area:lab;align-self:end;padding-bottom:3px;font:700 22px/28px var(--v3-font);color:var(--v3-ink)}
+.v3Rewards .v3RideSteps{grid-area:met;align-self:start;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:6px;width:100%;max-width:none;margin-top:var(--v3-s3)}
+.v3Rewards .v3RideSteps i{width:auto;height:14px;border-radius:7px;background:color-mix(in srgb,var(--v3-accent) 16%,#fff)}
+.v3Rewards .v3RideSteps i.on{background:var(--v3-accent)}
+@media (min-width:768px){
+ .v3Reis[data-view=rewards]>.v3Rewards{grid-template-columns:repeat(12,minmax(0,1fr));grid-template-rows:auto minmax(0,1fr) auto;column-gap:var(--v3-gut);row-gap:var(--v3-gut);padding:0;overflow:visible;
+  background:none!important;-webkit-backdrop-filter:none!important;backdrop-filter:none!important;box-shadow:none!important;border-radius:0}
+ .v3Rewards h1.v3ScreenTitle{grid-column:1/-1;grid-row:1}
+ .v3Rewards .v3Book{grid-column:1/span 5;grid-row:2;padding:var(--v3-s3) 0;background:none!important;box-shadow:none!important;border-radius:0}
+ .v3Rewards .v3Ride{grid-column:6/-1;grid-row:2;align-self:stretch;min-height:auto;padding:24px 28px;border-radius:var(--v3-radius-glass);
+  background:var(--v3-glass)!important;-webkit-backdrop-filter:var(--v3-glass-filter);backdrop-filter:var(--v3-glass-filter);box-shadow:var(--v3-glass-shadow)!important}
+ .v3Rewards .v3Tiles{grid-column:1/-1;grid-row:3;grid-template-columns:repeat(4,minmax(0,1fr));gap:var(--v3-gut)}
+ .v3Rewards .v3Tile{grid-template-columns:minmax(0,1fr);grid-template-rows:auto auto auto;justify-items:center;row-gap:4px;padding:16px 12px 18px;text-align:center;border-radius:var(--v3-radius-glass);
+  background:var(--v3-glass)!important;-webkit-backdrop-filter:var(--v3-glass-filter);backdrop-filter:var(--v3-glass-filter);box-shadow:var(--v3-glass-shadow)!important}
+ .v3Rewards .v3TileIcon{grid-row:1;width:56px;height:56px}
+ .v3Rewards .v3Tile span{grid-row:2;font:700 16px/22px var(--v3-font);color:var(--v3-ink)}
+ .v3Rewards .v3Tile b{grid-row:3;font:700 28px/1.1 var(--v3-font);color:var(--v3-ink)}
+}
+/* iPad portrait: book, ride and tiles stacked over the full width; tiles in two columns. */
+@media (min-width:768px) and (max-width:1023px){
+ .v3Reis[data-view=rewards]>.v3Rewards{grid-template-rows:auto auto auto auto;align-content:start}
+ .v3Rewards .v3Book{grid-column:1/-1;grid-template-rows:auto auto}
+ .v3Rewards .v3BookCover{height:auto}.v3Rewards .v3CoverArt{max-height:260px}
+ .v3Reis[data-view=rewards]>.v3Rewards{overflow:auto}
+ .v3Rewards .v3RidePizza{max-width:120px}
+ .v3Rewards .v3Ride{grid-column:1/-1;grid-row:3;min-height:auto}
+ .v3Rewards .v3Book{min-height:auto}
+ .v3Rewards .v3Tiles{grid-row:4;grid-template-columns:repeat(2,minmax(0,1fr))}
+}
+@media (max-width:767px){
+ .v3Rewards .v3Book{padding:var(--v3-s3) 0;background:none!important;box-shadow:none!important}
+ .v3Rewards :is(.v3Ride,.v3Tile){border-radius:var(--v3-radius-glass);background:var(--v3-glass)!important;-webkit-backdrop-filter:var(--v3-glass-filter);backdrop-filter:var(--v3-glass-filter);box-shadow:var(--v3-glass-shadow)!important}
+ .v3Rewards .v3Tile{grid-template-columns:minmax(0,1fr);justify-items:center;text-align:center;row-gap:2px}
+ .v3Rewards .v3TileIcon{grid-row:1;width:44px;height:44px}.v3Rewards .v3Tile span{grid-row:2;font:700 14px/20px var(--v3-font);color:var(--v3-ink)}.v3Rewards .v3Tile b{grid-row:3;font:700 24px/1.1 var(--v3-font)}
+ .v3RidePizza{max-width:84px}.v3Rewards .v3Ride>b{font-size:24px}.v3Rewards .v3Ride>span{font-size:18px;line-height:24px}}

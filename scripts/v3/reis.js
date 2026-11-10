@@ -257,7 +257,7 @@
  }
 
  function renderRewards(m){
-  const h=make('h1',null,'Beloningen');h.id='v3RewardsTitle';h.tabIndex=-1;
+  const h=make('h1','v3ScreenTitle','Beloningen');h.id='v3RewardsTitle';h.tabIndex=-1;
   const S=state.slices|0,P=state.pizzas|0,T=state.trips|0,isl=m.chapters.find(c=>c.id==='islands');
   // Postcards as the Reisboekje earns them (V2): two after the islands chapter, one after the 3rd and 6th ride.
   const cards=(isl?.done?2:0)+(T>=3)+(T>=6),gold=m.chapters.filter(c=>c.gold).length;
@@ -266,6 +266,13 @@
   const book=make('div','v3Book'),cover=btn('',openBook,'v3Btn v3BookCover');cover.setAttribute('aria-label','Open het Reisboekje');cover.tabIndex=-1;
   if(art.cover)cover.append(img(art.cover,'v3CoverArt'));book.append(cover,btn('Open Reisboekje',openBook,'v3Btn primary'));
   const ride=make('div','v3Ride');ride.setAttribute('role','group');ride.setAttribute('aria-label',T+' Vespa-ritten; '+(P%3)+' van 3 pizza’s tot de volgende rit');
+  // R-beloningen (fase B, stap 6): the ride's three pizzas above the Vespa, as the data has them (3 per ride, V2 order
+  // margherita, salami, quattro formaggi): earned ones whole, the current one with its slices over a faint whole, the rest faint.
+  // The art is V2's 3×3 sprite of 0–8 slices. Decoration: the ride's aria-label already says how many.
+  const PZ=window.TOPO_PIZZA_ART?.assets,pz=make('div','v3RidePizzas');pz.setAttribute('aria-hidden','true');
+  if(PZ)['margherita','salami','quattro-formaggi'].forEach((k,i)=>{if(!PZ[k])return;const n=i<P%3?8:i===P%3?Math.min(8,S):0,e=make('span','v3RidePizza'+(i<P%3?' on':i===P%3?' now':''));
+   e.style.setProperty('--v3-pz','url("'+PZ[k]+'")');e.style.setProperty('--v3-pz-pos',(n%3*50)+'% '+(Math.floor(n/3)*50)+'%');e.dataset.slices=n;pz.append(e);});
+  if(pz.children.length)ride.append(pz);
   if(V3ART?.vespa)ride.append(pic(V3ART.vespa,'v3RideArt',1200,900));
   const meter=make('div','v3Steps v3RideSteps');meter.setAttribute('aria-hidden','true');for(let i=0;i<3;i++){const s=make('i');if(i<P%3)s.className='on';meter.append(s);}
   const rv=make('b',null,String(T));rv.setAttribute('aria-hidden','true');const rl=make('span',null,'Vespa-ritten');rl.setAttribute('aria-hidden','true');ride.append(rv,rl,meter);

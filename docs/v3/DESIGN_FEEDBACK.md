@@ -24,3 +24,4 @@ Design Taste-protocol: elke correctie krijgt een categorie (lay-out, identiteit,
 | 2026-11-10 | Beloningen | Losse knop Open Reisboekje dubbel (het boek is de knop); pizza's boven de Vespa; uitlijning artwork op de eerste pagina | interactie, lay-out | DESIGN_AUDIT › Beloningen |
 | 2026-11-10 | Voortgang | Hoofdstukken met ✓ en ★ ogen goedkoop; graag zoals de rijen in de render | beeld | DESIGN_AUDIT › Voortgang |
 | 2026-11-10 | alle | Twijfel terracotta tegenover paars; advies: violet als basis, land als accent | identiteit | besluit eigenaar open |
+| 2026-11-10 | alle (fase B) | Opbouw klopt; de build oogt melkig, dun en klein naast de doelbeelden. Oorzaak: wash, glasdekking, typeschaal en kaartgrootte (de verfijning schoot door) | identiteit, hiërarchie | renders/README › Afwerking na fase B; checks op tekst ≥ 13 px en kaart ≥ 45% |

@@ -169,6 +169,42 @@ Deze regels gaan voor de renders:
   - contrast ≥ AA blijft de eis.
 - **Titelgrootte:** de schermtitel op ±34–36 px (in de render ±48).
 
+## Afwerking na fase B (lead designer, 10-11)
+
+Na fase B klopt de opbouw op alle schermen, maar de build oogt melkig, dun en klein naast de doelbeelden. Dat komt door vier tokens, niet door de schermen. Deze waarden gaan voor de eerdere regels "Verfijning" en "Ingetogenheid" waar die botsen:
+
+1. **Wash:**
+   - de verzadiging van het artwork van `.72` naar `.95`;
+   - de lavendelwitte gradiënt alleen achter de zijbalk (max. 35%), niet over het hele scherm;
+   - het artwork aan de randen helder, zoals in de doelbeelden.
+2. **Glas:**
+   - panelen wit 80% (was 58%), blur 24, een binnenrand van 1 px wit 70% en de schaduw `0 12px 32px rgba(42,36,64,.12)`;
+   - de zijbalk wit 55%;
+   - panelen moeten tegen het artwork duidelijk loskomen.
+3. **Typografie:**
+   - nav 16/500 en actief 16/600;
+   - rijen en labels 15/600 in inkt `#2A2440` op 100%;
+   - secundaire tekst 13/500 in inkt op 62%, alleen voor echt bijkomende tekst;
+   - schermtitel 34/700, kaarttitel 28/700, kerncijfers (score, 23/45, tegels) 32–44/700;
+   - geen lopende tekst onder 13 px.
+4. **Kaart en illustratie:**
+   - de kaart vult zijn rastervlak (max. 4% marge) en is altijd het grootste element;
+   - het reliëf krijgt diepte: een sterkere hillshade, verzadiging ±1,15 en een slagschaduw onder het land (`drop-shadow(0 18px 24px rgba(42,36,64,.28))`);
+   - illustraties in tegels 56–64 px; de Vespa en de pizza's in Beloningen minstens 120 px.
+
+**Per scherm:**
+- **Reis, Oefenen, Toets resultaat:** variant (a) **Eiland** is gekozen (lead designer; de eigenaar kan het nog terugdraaien); variant (b) verdwijnt.
+- **Les:** het schoolkaartvlak is zo groot als het rastervlak toelaat.
+- **Toets resultaat:** geen zichtbare focusring op de scorekop na de programmatische focus (`:focus-visible` alleen bij toetsenbord; kop met `tabindex=-1` zonder outline).
+- **Beloningen:**
+  - het boek ís de knop: geen witte cirkel erachter en geen knop "Open Reisboekje";
+  - het label "Pizza 2" wordt "Pizza".
+- **Voortgang:**
+  - de kaart groot links, met "Italië" en het getal in de linkerbovenhoek erop; geen lege kolom;
+  - rijen op slot krijgen alleen een slotje, zonder balk;
+  - het blok Toetsen past binnen het frame, of het Werkblad scrolt als geheel, nooit half afgesneden.
+- **Check:** de vergelijkingen opnieuw, plus een check "tekst ≥ 13 px" en "kaart ≥ 45% van het inhoudsvlak" (Landschap).
+
 ## Per render: overnemen en afwijken
 
 | Render | Overnemen | Niet overnemen / afwijken |

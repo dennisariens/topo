@@ -1,7 +1,7 @@
 {
  "html": "output/html/TOPO-V3-Reis-Preview.html",
- "sha256": "1e758278f3af2e5955610e5c74303e6f684ecc10a46e4a1b969dda872c5588f6",
- "bytes": 50248993,
+ "sha256": "6f6f94c924a7fe211b18893dff20933795b6a393846121c0117c88a21fcf42e8",
+ "bytes": 50253460,
  "layout": {
   "desktop/nieuw": {
    "frame": {
@@ -1506,9 +1506,9 @@
    },
    "backVia": "v3Btn v3NavItem",
    "primaryLabelWithActive": "Ga verder · Ontdekken",
-   "questionBefore": "city-8",
+   "questionBefore": "city-12",
    "reisVerderSameQuestion": {
-    "id": "city-8",
+    "id": "city-12",
     "chapter": "city2",
     "kind": "discover"
    },
@@ -1551,9 +1551,9 @@
    },
    "backVia": "v3Btn v3LesBack",
    "primaryLabelWithActive": "Ga verder · Ontdekken",
-   "questionBefore": "city-8",
+   "questionBefore": "city-9",
    "reisVerderSameQuestion": {
-    "id": "city-8",
+    "id": "city-9",
     "chapter": "city2",
     "kind": "discover"
    },
@@ -1852,6 +1852,7 @@
  },
  "keyboard": {
   "order": [
+   "Kennismaking",
    "Nieuw profiel",
    "Halte bezig",
    "Haltes afgerond",
@@ -1876,8 +1877,7 @@
    "islands",
    "mountains",
    "volcanoes",
-   "regions",
-   "countries"
+   "regions"
   ],
   "enterSelects": "true",
   "focusRing": "solid 3px"

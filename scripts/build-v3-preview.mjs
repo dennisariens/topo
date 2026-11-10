@@ -20,6 +20,7 @@ const states=`(function(){
  const its=(spec)=>{const out={};IDS.forEach((id,i)=>{const st=spec[i]?.stage||0;if(!st)return;for(const it of CI[id])out[it]={correct:st===3?6:1,wrong:0,streak:st===3?3:1,lastSeen:at,lastWrong:0,skills:st===3?{point:sk(3),write:sk(3)}:{point:sk(1)}};});return out;};
  const make=(title,spec,r)=>({title,progress:{schema:3,good:r.good||0,pizzas:r.pizzas||0,slices:r.slices||0,trips:r.trips||0,mistakes:[],route:{schema:2,chapters:ch(spec),items:its(spec),rewardTokens:[],active:null},daily:{date:'2026-11-09',correct:0}},profile:{schema:1,name:'Demo',coverColor:'riviera',favoritePizza:'margherita'}});
  const S={
+  'welkom':{...make('Kennismaking',[],{}),profile:null,intro:null},
   'nieuw':make('Nieuw profiel',[],{}),
   'bezig':make('Halte bezig',[{stage:3},{stage:1}],{good:14,pizzas:1,slices:6}),
   'afgerond':make('Haltes afgerond',[{stage:3,gold:1,due:1},{stage:3,gold:1},{stage:3},{stage:3}],{good:61,pizzas:7,slices:3,trips:2}),
@@ -44,7 +45,8 @@ const states=`(function(){
   document.documentElement.innerHTML='<head><meta charset="utf-8"><title>V3-preview · naast elkaar</title><style>body{margin:0;background:#e9e3d6;font:600 13px/1.2 -apple-system,system-ui,sans-serif;color:#073f3b}nav{display:flex;gap:8px;align-items:center;padding:8px 12px;background:#073f3b;color:#f8f3e8;flex-wrap:wrap}nav a{color:#f8f3e8;text-decoration:none;padding:9px 12px;border-radius:9px;box-shadow:inset 0 0 0 1px #f8f3e855}nav a[aria-current]{background:#f8f3e8;color:#073f3b}main{display:flex;gap:32px;align-items:flex-start;justify-content:center;padding:24px}figure{margin:0;display:grid;gap:8px}.d{width:1024px;height:640px;overflow:hidden;border-radius:12px;box-shadow:0 8px 30px #0003;background:#fff}.d iframe{width:1440px;height:900px;border:0;transform:scale(.7111);transform-origin:0 0}.p iframe{width:390px;height:844px;border:0;border-radius:28px;box-shadow:0 8px 30px #0003;background:#fff}</style></head><body><nav><strong>V3-preview · naast elkaar · demo</strong>'+links+'<a href="#'+k+'">Alleen deze stand openen</a></nav><main><figure class="d"><iframe title="Desktop 1440×900" src="'+page+'#'+k+tail+'"></iframe></figure><figure class="p"><iframe title="Telefoon 390×844" src="'+page+'#'+k+tail+'"></iframe></figure></main></body>';
   return;
  }
- const entries=new Map([['topo-italie-v3',JSON.stringify(chosen.progress)],['topo-nino-profile-v1',JSON.stringify(chosen.profile)],['topo-nino-intro-v1','done']]);
+ // #welkom: a first visit (no profile, no introduction yet), so V2 opens the kennismaking.
+const entries=new Map([['topo-italie-v3',JSON.stringify(chosen.progress)],...(chosen.profile?[['topo-nino-profile-v1',JSON.stringify(chosen.profile)]]:[]),...(chosen.intro===null?[]:[['topo-nino-intro-v1','done']])]);
  const memory={get length(){return entries.size},key:i=>[...entries.keys()][i]??null,getItem:k=>entries.has(String(k))?entries.get(String(k)):null,setItem:(k,v)=>{entries.set(String(k),String(v))},removeItem:k=>{entries.delete(String(k))},clear:()=>entries.clear()};
  Object.defineProperty(window,'localStorage',{configurable:true,value:memory});
  window.TOPO_V3_PREVIEW={state:S[key]?key:'bezig',storage:entries};
@@ -84,7 +86,7 @@ const head='<head>\n<script>\n'+states+'\n'+sceneJs+'\n</script>\n<style>/* BEGI
 const last=html.lastIndexOf('</body>');if(last<0||html.indexOf('<head>')<0)throw Error('Unexpected index.html shape');
 let out=html.replace('<head>',()=>head);
 const end=out.lastIndexOf('</body>');
-out=out.slice(0,end)+'<script>\n// BEGIN TOPO V3\n'+read('scripts/v3/reis.js')+'\n'+read('scripts/v3/les.js')+'\n'+read('scripts/v3/shell.js')+'\n'+read('scripts/v3/schoolblad.js')+'\n'+read('scripts/v3/toets.js')+'\n'+read('scripts/v3/voortgang.js')+'\n// END TOPO V3\n</script>\n'+out.slice(end);
+out=out.slice(0,end)+'<script>\n// BEGIN TOPO V3\n'+read('scripts/v3/reis.js')+'\n'+read('scripts/v3/les.js')+'\n'+read('scripts/v3/shell.js')+'\n'+read('scripts/v3/schoolblad.js')+'\n'+read('scripts/v3/toets.js')+'\n'+read('scripts/v3/voortgang.js')+'\n'+read('scripts/v3/kennismaking.js')+'\n// END TOPO V3\n</script>\n'+out.slice(end);
 out=out.replace(/<title>([^<]*)<\/title>/,(m,t)=>'<title>V3-preview Reis · '+t+'</title>');
 const file='output/html/TOPO-V3-Reis-Preview.html';
 writeFileSync(new URL(file,root),out);

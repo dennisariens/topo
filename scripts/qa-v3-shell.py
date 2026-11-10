@@ -8,6 +8,8 @@ Per viewport (desktop, iPad landscape, iPad portrait, phone, 320 px), on the #be
   * a tab moves focus to the view title; Instellingen opens the V2 settings dialog and returns focus on close;
   * Oefenen → Start opens free practice in the shell (tab Oefenen); Reis and back to Oefenen restores the same question;
   * Reis → the V3 primary action (Ga verder / next stage) opens the route lesson (tab Reis); Beloningen and back via Reis → Ga verder restores it;
+  * no clipped V3 text and no overlapping V3 buttons on any of these screens; with reduced motion (extra phone run)
+    no V3 element transitions or animates;
   * nav items are at least 44 px, inside the viewport, and the page has no horizontal scroll; the rail or tab bar does
     not cover the answer sheet.
 Writes results.json and screenshots per viewport to docs/qa/v3-shell/.
@@ -21,7 +23,7 @@ ROOT = pathlib.Path(__file__).resolve().parent.parent
 HTML = pathlib.Path(sys.argv[1] if len(sys.argv) > 1 else ROOT / 'output/html/TOPO-V3-Reis-Preview.html').resolve()
 OUT = pathlib.Path(sys.argv[2] if len(sys.argv) > 2 else ROOT / 'docs/qa/v3-shell').resolve()
 MAC_CHROME = '/Applications/Google Chrome.app/Contents/MacOS/Google Chrome'
-VIEWPORTS = {'desktop': (1440, 900), 'ipad-liggend': (1180, 820), 'ipad-staand': (820, 1180), 'telefoon': (390, 844), 'telefoon-320': (320, 640)}
+VIEWPORTS = {'desktop': (1440, 900), 'ipad-liggend': (1180, 820), 'ipad-staand': (820, 1180), 'telefoon': (390, 844), 'telefoon-320': (320, 640), 'telefoon-verminderd': (390, 844)}
 TABS = ['reis', 'oefenen', 'toets', 'rewards', 'voortgang', 'instellingen']
 
 NAV_JS = '''() => { const vis = e => { const r = e.getBoundingClientRect(); return r.width > 1 && r.height > 1 && e.checkVisibility({visibilityProperty: true, opacityProperty: true}); };
@@ -36,6 +38,12 @@ NAV_JS = '''() => { const vis = e => { const r = e.getBoundingClientRect(); retu
     view: document.querySelector('.v3Reis')?.dataset.view || null, lesson: document.body.classList.contains('v3Les'),
     active: document.activeElement?.id || document.activeElement?.className || '', mode: state.mode, q: state.current?.id || null,
     hOverflow: document.documentElement.scrollWidth > innerWidth + 1,
+    // Afkapping: visible V3 text that does not fit its box (ellipsis or clipped), and overlapping buttons.
+    clipped: [...document.querySelectorAll('.v3 :is(h1,h2,strong,span,button,a,li,p)')].filter(e => vis(e) && e.children.length === 0 && (e.scrollWidth > e.clientWidth + 1) && getComputedStyle(e).overflow !== 'visible').map(e => e.textContent.trim().slice(0, 30)),
+    overlaps: (() => { const bs = [...document.querySelectorAll('.v3 .v3Btn')].filter(e => vis(e) && !e.closest('.v3Side')), out = [];  // the fixed tab bar sits above scrolling content by design
+      for (let i = 0; i < bs.length; i++) for (let j = i + 1; j < bs.length; j++) { if (bs[i].contains(bs[j]) || bs[j].contains(bs[i])) continue; const a = r(bs[i]), c = r(bs[j]);
+        if (a.left < c.right - 1 && a.right > c.left + 1 && a.top < c.bottom - 1 && a.bottom > c.top + 1) out.push(bs[i].textContent.trim().slice(0, 20) + ' × ' + bs[j].textContent.trim().slice(0, 20)); } return out; })(),
+    moving: matchMedia('(prefers-reduced-motion: reduce)').matches ? [...document.querySelectorAll('.v3, .v3 *')].filter(e => { const c = getComputedStyle(e); return vis(e) && (parseFloat(c.transitionDuration) > 0 || (c.animationName !== 'none' && parseFloat(c.animationDuration) > 0)); }).map(e => e.className.toString().slice(0, 30)) : [],
     sheetCovered: (() => { const s = ['#focusAnswerSheet', '#focusLearnBar'].map(q => document.querySelector(q)).find(x => x && vis(x)), t = document.querySelector('.v3ShellNav');
       if (!s || !t || !vis(t)) return false; const a = r(s), b = r(t); return a.bottom > b.top + 1 && a.top < b.bottom - 1 && a.right > b.left + 1 && a.left < b.right - 1; })()}; }'''
 
@@ -48,7 +56,7 @@ async def main():
     async with async_playwright() as p:
         b = await p.chromium.launch(executable_path=MAC_CHROME) if pathlib.Path(MAC_CHROME).exists() else await p.chromium.launch()
         for name, (w, h) in VIEWPORTS.items():
-            ctx = await b.new_context(viewport={'width': w, 'height': h}, has_touch=name != 'desktop', is_mobile=name.startswith('telefoon'))
+            ctx = await b.new_context(viewport={'width': w, 'height': h}, has_touch=name != 'desktop', is_mobile=name.startswith('telefoon'), reduced_motion='reduce' if 'verminderd' in name else 'no-preference')
             pg = await ctx.new_page(); errs = []
             pg.on('pageerror', lambda e: errs.append(str(e)))
             await pg.goto(HTML.as_uri() + '#bezig'); await pg.wait_for_timeout(1500)
@@ -67,12 +75,21 @@ async def main():
                 if s['outside']: fail(f'{label}: outside {s["outside"]}')
                 if s['hOverflow']: fail(f'{label}: horizontal scroll')
                 if s['sheetCovered']: fail(f'{label}: tab bar covers the answer sheet')
+                if s['clipped']: fail(f'{label}: clipped {s["clipped"][:4]}')
+                if s['overlaps']: fail(f'{label}: overlap {s["overlaps"][:3]}')
+                if s['moving']: fail(f'{label}: motion with reduced motion {s["moving"][:3]}')
                 if lesson is not None and s['lesson'] != lesson: fail(f'{label}: lesson={s["lesson"]}')
             check('reis', await nav(), 'reis', False)
             await pg.screenshot(path=str(OUT / f'reis-{name}.png'))
             for t, title in [('oefenen', 'v3OefenenTitle'), ('toets', 'v3ToetsTitle'), ('rewards', 'v3RewardsTitle'), ('voortgang', 'v3VoortgangTitle')]:
                 await tab(t); s = await nav(); check(t, s, t, False)
                 if s['view'] != t: fail(f'{t}: view {s["view"]}')
+                # The end of the view can scroll clear of a fixed tab bar.
+                hidden = await pg.evaluate('''(() => { scrollTo({top: document.documentElement.scrollHeight, behavior: 'instant'}); const v = document.querySelector('.v3Reis > .v3View-' + document.querySelector('.v3Reis').dataset.view);
+                  const bar = [...document.querySelectorAll('.v3Side')].find(e => e.checkVisibility() && getComputedStyle(e).position === 'fixed'); if (!v || !bar) return false;
+                  const last = [...v.querySelectorAll('button, li, p, table')].filter(e => e.checkVisibility() && e.getBoundingClientRect().height > 0).at(-1);
+                  const hit = last && last.getBoundingClientRect().bottom > bar.getBoundingClientRect().top + 1; scrollTo({top: 0, behavior: 'instant'}); return hit ? last.textContent.trim().slice(0, 30) : false; })()''')
+                if hidden: fail(f'{t}: last item under the tab bar: {hidden}')
                 if s['active'] != title: fail(f'{t}: focus on {s["active"]}')
                 await pg.screenshot(path=str(OUT / f'{t}-{name}.png'))
             # Instellingen: V2 dialog, focus back on the opener.

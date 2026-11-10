@@ -1,0 +1,552 @@
+{
+ "html": "output/html/TOPO-V3-Reis-Preview.html",
+ "sha256": "6f6f94c924a7fe211b18893dff20933795b6a393846121c0117c88a21fcf42e8",
+ "indexSha256": "3aced3c31259011b0af2947c78f71965cb4beb2e88c69d1663e61792b0304f5a",
+ "runs": {
+  "desktop": {
+   "andiamo": {
+    "dialog": {
+     "open": true,
+     "v3": true,
+     "firstRun": true,
+     "pose": true,
+     "name": true,
+     "pizzas": [
+      "margherita",
+      "salami",
+      "quattro_formaggi"
+     ],
+     "buttons": [
+      "Start meteen",
+      "Andiamo!"
+     ],
+     "help": [],
+     "focusInside": true,
+     "fits": true,
+     "hOverflow": false
+    },
+    "after": {
+     "open": false,
+     "profile": "{\"schema\":1,\"name\":\"Lia\",\"coverColor\":\"riviera\",\"favoritePizza\":\"salami\"}",
+     "intro": "done",
+     "view": "reis",
+     "selected": "city1",
+     "title": "Hoofdstuk 1Steden 1–6",
+     "lesson": false
+    },
+    "pageErrors": []
+   },
+   "start": {
+    "dialog": {
+     "open": true,
+     "v3": true,
+     "firstRun": true,
+     "pose": true,
+     "name": true,
+     "pizzas": [
+      "margherita",
+      "salami",
+      "quattro_formaggi"
+     ],
+     "buttons": [
+      "Start meteen",
+      "Andiamo!"
+     ],
+     "help": [],
+     "focusInside": true,
+     "fits": true,
+     "hOverflow": false
+    },
+    "after": {
+     "open": false,
+     "profile": "{\"schema\":1,\"name\":\"\",\"coverColor\":\"riviera\",\"favoritePizza\":null}",
+     "intro": "skipped",
+     "view": "reis",
+     "selected": "city1",
+     "title": "Hoofdstuk 1Steden 1–6",
+     "lesson": false
+    },
+    "offer": {
+     "v3": true,
+     "help": false,
+     "buttons": [
+      "Maak kennis met Nino",
+      "Start meteen"
+     ]
+    },
+    "lesson": true,
+    "pageErrors": []
+   },
+   "escape": {
+    "dialog": {
+     "open": true,
+     "v3": true,
+     "firstRun": true,
+     "pose": true,
+     "name": true,
+     "pizzas": [
+      "margherita",
+      "salami",
+      "quattro_formaggi"
+     ],
+     "buttons": [
+      "Start meteen",
+      "Andiamo!"
+     ],
+     "help": [],
+     "focusInside": true,
+     "fits": true,
+     "hOverflow": false
+    },
+    "after": {
+     "open": false,
+     "profile": "{\"schema\":1,\"name\":\"\",\"coverColor\":\"riviera\",\"favoritePizza\":null}",
+     "intro": "skipped",
+     "view": "reis",
+     "selected": "city1",
+     "title": "Hoofdstuk 1Steden 1–6",
+     "lesson": false
+    },
+    "pageErrors": []
+   }
+  },
+  "ipad-liggend": {
+   "andiamo": {
+    "dialog": {
+     "open": true,
+     "v3": true,
+     "firstRun": true,
+     "pose": true,
+     "name": true,
+     "pizzas": [
+      "margherita",
+      "salami",
+      "quattro_formaggi"
+     ],
+     "buttons": [
+      "Start meteen",
+      "Andiamo!"
+     ],
+     "help": [],
+     "focusInside": true,
+     "fits": true,
+     "hOverflow": false
+    },
+    "after": {
+     "open": false,
+     "profile": "{\"schema\":1,\"name\":\"Lia\",\"coverColor\":\"riviera\",\"favoritePizza\":\"salami\"}",
+     "intro": "done",
+     "view": "reis",
+     "selected": "city1",
+     "title": "Hoofdstuk 1Steden 1–6",
+     "lesson": false
+    },
+    "pageErrors": []
+   },
+   "start": {
+    "dialog": {
+     "open": true,
+     "v3": true,
+     "firstRun": true,
+     "pose": true,
+     "name": true,
+     "pizzas": [
+      "margherita",
+      "salami",
+      "quattro_formaggi"
+     ],
+     "buttons": [
+      "Start meteen",
+      "Andiamo!"
+     ],
+     "help": [],
+     "focusInside": true,
+     "fits": true,
+     "hOverflow": false
+    },
+    "after": {
+     "open": false,
+     "profile": "{\"schema\":1,\"name\":\"\",\"coverColor\":\"riviera\",\"favoritePizza\":null}",
+     "intro": "skipped",
+     "view": "reis",
+     "selected": "city1",
+     "title": "Hoofdstuk 1Steden 1–6",
+     "lesson": false
+    },
+    "offer": {
+     "v3": true,
+     "help": false,
+     "buttons": [
+      "Maak kennis met Nino",
+      "Start meteen"
+     ]
+    },
+    "lesson": true,
+    "pageErrors": []
+   },
+   "escape": {
+    "dialog": {
+     "open": true,
+     "v3": true,
+     "firstRun": true,
+     "pose": true,
+     "name": true,
+     "pizzas": [
+      "margherita",
+      "salami",
+      "quattro_formaggi"
+     ],
+     "buttons": [
+      "Start meteen",
+      "Andiamo!"
+     ],
+     "help": [],
+     "focusInside": true,
+     "fits": true,
+     "hOverflow": false
+    },
+    "after": {
+     "open": false,
+     "profile": "{\"schema\":1,\"name\":\"\",\"coverColor\":\"riviera\",\"favoritePizza\":null}",
+     "intro": "skipped",
+     "view": "reis",
+     "selected": "city1",
+     "title": "Hoofdstuk 1Steden 1–6",
+     "lesson": false
+    },
+    "pageErrors": []
+   }
+  },
+  "ipad-staand": {
+   "andiamo": {
+    "dialog": {
+     "open": true,
+     "v3": true,
+     "firstRun": true,
+     "pose": true,
+     "name": true,
+     "pizzas": [
+      "margherita",
+      "salami",
+      "quattro_formaggi"
+     ],
+     "buttons": [
+      "Start meteen",
+      "Andiamo!"
+     ],
+     "help": [],
+     "focusInside": true,
+     "fits": true,
+     "hOverflow": false
+    },
+    "after": {
+     "open": false,
+     "profile": "{\"schema\":1,\"name\":\"Lia\",\"coverColor\":\"riviera\",\"favoritePizza\":\"salami\"}",
+     "intro": "done",
+     "view": "reis",
+     "selected": "city1",
+     "title": "Hoofdstuk 1Steden 1–6",
+     "lesson": false
+    },
+    "pageErrors": []
+   },
+   "start": {
+    "dialog": {
+     "open": true,
+     "v3": true,
+     "firstRun": true,
+     "pose": true,
+     "name": true,
+     "pizzas": [
+      "margherita",
+      "salami",
+      "quattro_formaggi"
+     ],
+     "buttons": [
+      "Start meteen",
+      "Andiamo!"
+     ],
+     "help": [],
+     "focusInside": true,
+     "fits": true,
+     "hOverflow": false
+    },
+    "after": {
+     "open": false,
+     "profile": "{\"schema\":1,\"name\":\"\",\"coverColor\":\"riviera\",\"favoritePizza\":null}",
+     "intro": "skipped",
+     "view": "reis",
+     "selected": "city1",
+     "title": "Hoofdstuk 1Steden 1–6",
+     "lesson": false
+    },
+    "offer": {
+     "v3": true,
+     "help": false,
+     "buttons": [
+      "Maak kennis met Nino",
+      "Start meteen"
+     ]
+    },
+    "lesson": true,
+    "pageErrors": []
+   },
+   "escape": {
+    "dialog": {
+     "open": true,
+     "v3": true,
+     "firstRun": true,
+     "pose": true,
+     "name": true,
+     "pizzas": [
+      "margherita",
+      "salami",
+      "quattro_formaggi"
+     ],
+     "buttons": [
+      "Start meteen",
+      "Andiamo!"
+     ],
+     "help": [],
+     "focusInside": true,
+     "fits": true,
+     "hOverflow": false
+    },
+    "after": {
+     "open": false,
+     "profile": "{\"schema\":1,\"name\":\"\",\"coverColor\":\"riviera\",\"favoritePizza\":null}",
+     "intro": "skipped",
+     "view": "reis",
+     "selected": "city1",
+     "title": "Hoofdstuk 1Steden 1–6",
+     "lesson": false
+    },
+    "pageErrors": []
+   }
+  },
+  "telefoon": {
+   "andiamo": {
+    "dialog": {
+     "open": true,
+     "v3": true,
+     "firstRun": true,
+     "pose": true,
+     "name": true,
+     "pizzas": [
+      "margherita",
+      "salami",
+      "quattro_formaggi"
+     ],
+     "buttons": [
+      "Start meteen",
+      "Andiamo!"
+     ],
+     "help": [],
+     "focusInside": true,
+     "fits": true,
+     "hOverflow": false
+    },
+    "after": {
+     "open": false,
+     "profile": "{\"schema\":1,\"name\":\"Lia\",\"coverColor\":\"riviera\",\"favoritePizza\":\"salami\"}",
+     "intro": "done",
+     "view": "reis",
+     "selected": "city1",
+     "title": "Hoofdstuk 1Steden 1–6",
+     "lesson": false
+    },
+    "pageErrors": []
+   },
+   "start": {
+    "dialog": {
+     "open": true,
+     "v3": true,
+     "firstRun": true,
+     "pose": true,
+     "name": true,
+     "pizzas": [
+      "margherita",
+      "salami",
+      "quattro_formaggi"
+     ],
+     "buttons": [
+      "Start meteen",
+      "Andiamo!"
+     ],
+     "help": [],
+     "focusInside": true,
+     "fits": true,
+     "hOverflow": false
+    },
+    "after": {
+     "open": false,
+     "profile": "{\"schema\":1,\"name\":\"\",\"coverColor\":\"riviera\",\"favoritePizza\":null}",
+     "intro": "skipped",
+     "view": "reis",
+     "selected": "city1",
+     "title": "Hoofdstuk 1Steden 1–6",
+     "lesson": false
+    },
+    "offer": {
+     "v3": true,
+     "help": false,
+     "buttons": [
+      "Maak kennis met Nino",
+      "Start meteen"
+     ]
+    },
+    "lesson": true,
+    "pageErrors": []
+   },
+   "escape": {
+    "dialog": {
+     "open": true,
+     "v3": true,
+     "firstRun": true,
+     "pose": true,
+     "name": true,
+     "pizzas": [
+      "margherita",
+      "salami",
+      "quattro_formaggi"
+     ],
+     "buttons": [
+      "Start meteen",
+      "Andiamo!"
+     ],
+     "help": [],
+     "focusInside": true,
+     "fits": true,
+     "hOverflow": false
+    },
+    "after": {
+     "open": false,
+     "profile": "{\"schema\":1,\"name\":\"\",\"coverColor\":\"riviera\",\"favoritePizza\":null}",
+     "intro": "skipped",
+     "view": "reis",
+     "selected": "city1",
+     "title": "Hoofdstuk 1Steden 1–6",
+     "lesson": false
+    },
+    "pageErrors": []
+   }
+  },
+  "telefoon-320": {
+   "andiamo": {
+    "dialog": {
+     "open": true,
+     "v3": true,
+     "firstRun": true,
+     "pose": true,
+     "name": true,
+     "pizzas": [
+      "margherita",
+      "salami",
+      "quattro_formaggi"
+     ],
+     "buttons": [
+      "Start meteen",
+      "Andiamo!"
+     ],
+     "help": [],
+     "focusInside": true,
+     "fits": true,
+     "hOverflow": false
+    },
+    "after": {
+     "open": false,
+     "profile": "{\"schema\":1,\"name\":\"Lia\",\"coverColor\":\"riviera\",\"favoritePizza\":\"salami\"}",
+     "intro": "done",
+     "view": "reis",
+     "selected": "city1",
+     "title": "Hoofdstuk 1Steden 1–6",
+     "lesson": false
+    },
+    "pageErrors": []
+   },
+   "start": {
+    "dialog": {
+     "open": true,
+     "v3": true,
+     "firstRun": true,
+     "pose": true,
+     "name": true,
+     "pizzas": [
+      "margherita",
+      "salami",
+      "quattro_formaggi"
+     ],
+     "buttons": [
+      "Start meteen",
+      "Andiamo!"
+     ],
+     "help": [],
+     "focusInside": true,
+     "fits": true,
+     "hOverflow": false
+    },
+    "after": {
+     "open": false,
+     "profile": "{\"schema\":1,\"name\":\"\",\"coverColor\":\"riviera\",\"favoritePizza\":null}",
+     "intro": "skipped",
+     "view": "reis",
+     "selected": "city1",
+     "title": "Hoofdstuk 1Steden 1–6",
+     "lesson": false
+    },
+    "offer": {
+     "v3": true,
+     "help": false,
+     "buttons": [
+      "Maak kennis met Nino",
+      "Start meteen"
+     ]
+    },
+    "lesson": true,
+    "pageErrors": []
+   },
+   "escape": {
+    "dialog": {
+     "open": true,
+     "v3": true,
+     "firstRun": true,
+     "pose": true,
+     "name": true,
+     "pizzas": [
+      "margherita",
+      "salami",
+      "quattro_formaggi"
+     ],
+     "buttons": [
+      "Start meteen",
+      "Andiamo!"
+     ],
+     "help": [],
+     "focusInside": true,
+     "fits": true,
+     "hOverflow": false
+    },
+    "after": {
+     "open": false,
+     "profile": "{\"schema\":1,\"name\":\"\",\"coverColor\":\"riviera\",\"favoritePizza\":null}",
+     "intro": "skipped",
+     "view": "reis",
+     "selected": "city1",
+     "title": "Hoofdstuk 1Steden 1–6",
+     "lesson": false
+    },
+    "pageErrors": []
+   }
+  }
+ },
+ "errors": [],
+ "summary": {
+  "viewports": 5,
+  "flows": [
+   "andiamo",
+   "start",
+   "escape"
+  ],
+  "pass": true
+ }
+}

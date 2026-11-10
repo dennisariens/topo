@@ -427,3 +427,16 @@ Reservekopieën en reset horen in het algemene instellingenmenu. Wis voortgang b
   - de laatste 10 toetsuitslagen;
   - geen streak.
 - **Preview:** de demo-staten krijgen een skill-historie. Afgeronde hoofdstukken staan voor beide skills op "Goed onthouden", hoofdstukken die nog bezig zijn op Aanwijzen "Op weg". Daardoor laat Voortgang in `#bezig`, `#afgerond` en `#alles` iets zien. Dit raakt alleen de preview.
+
+## 2026-11-09 — V3.0 Kennismaking
+
+- **Eén scène:** de V2-eerste-keerdialoog (`TopoProfile.open({firstRun:true})`) in V3-stijl. Hij bevat:
+  - de welkomstpose op de scène, met de tekstballon "Ciao! Ik ben Nino." en "Hoe mag ik je noemen?";
+  - het naamveld, optioneel;
+  - de drie pizza's;
+  - **Andiamo!** (opslaan) en **Start meteen**. Start meteen is de V2-knop Overslaan met een nieuw label; Escape doet hetzelfde.
+- **Hulpteksten weg:** "(mag leeg blijven)" en "Maximaal 24 tekens." zijn verborgen. De limiet van 24 tekens blijft in V2 gelden.
+- **Profielschema 1 ongewijzigd:** `{schema, name, coverColor, favoritePizza}` onder `topo-nino-profile-v1`. Het opslaan, de introductiesleutel (`done` of `skipped`) en het eenmalig opnieuw aanbieden vóór de eerste les blijven V2. Het aanbod krijgt V3-stijl en zijn hulpregel is verborgen; "Start meteen" stond er al. **Begin helemaal opnieuw** opent de kennismaking via de bestaande V2-route (wissen en herladen).
+- **Daarna:** Reis met hoofdstuk 1 (Steden 1–6) geselecteerd. Start het aanbod een les, dan blijft die les staan.
+- **Preview:** de demo `#welkom` is een eerste bezoek, zonder profiel en zonder introductie.
+- **Fix bij deze ronde:** op 320 px werden de hoofdstuknamen in Voortgang met "…" afgekapt. Ze breken nu af over twee regels.

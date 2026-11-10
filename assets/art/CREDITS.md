@@ -16,3 +16,7 @@ Alle beelden zijn origineel gegenereerd voor TOPO; geen bestaande films, persona
 | `assets/art/universal/nino/nino-paspoort.webp` | 1f | ChatGPT (gegenereerd) | 2026-11-10 | Goedgekeurd |
 | `assets/art/universal/nino/nino-aanmoediging.webp` | 1g | ChatGPT (gegenereerd) | 2026-11-10 | Goedgekeurd |
 | `assets/art/universal/nino/nino-gold.webp` | 1h | ChatGPT (gegenereerd) | 2026-11-10 | Goedgekeurd |
+| `assets/art/universal/vespa/vespa-zij.webp` | 2a | ChatGPT (gegenereerd) | 2026-11-10 | Goedgekeurd |
+| `assets/art/universal/vespa/vespa-icoon.webp` | 2b | ChatGPT (gegenereerd) | 2026-11-10 | Goedgekeurd |
+| `assets/art/universal/vespa/vespa-rijdend.webp` | 2c | ChatGPT (gegenereerd) | 2026-11-10 | Goedgekeurd |
+| `assets/art/universal/vespa/vespa-bagage.webp` | 2d | ChatGPT (gegenereerd) | 2026-11-10 | Goedgekeurd |

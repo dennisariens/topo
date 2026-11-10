@@ -1,0 +1,134 @@
+{
+ "runs": {
+  "bezig/desktop": {
+   "big": [
+    "Voortgang",
+    "6 / 45"
+   ],
+   "rows": [
+    "done",
+    "open",
+    "locked",
+    "locked",
+    "locked",
+    "locked",
+    "locked",
+    "locked",
+    "locked",
+    "locked",
+    "locked"
+   ],
+   "daily": "0 / 8",
+   "legend": [
+    "Beheerst",
+    "Bezig",
+    "Nog niet"
+   ]
+  },
+  "bezig/ipad-liggend": {
+   "big": [
+    "Voortgang",
+    "6 / 45"
+   ],
+   "rows": [
+    "done",
+    "open",
+    "locked",
+    "locked",
+    "locked",
+    "locked",
+    "locked",
+    "locked",
+    "locked",
+    "locked",
+    "locked"
+   ],
+   "daily": "0 / 8",
+   "legend": [
+    "Beheerst",
+    "Bezig",
+    "Nog niet"
+   ]
+  },
+  "bezig/ipad-staand": {
+   "big": [
+    "Voortgang",
+    "6 / 45"
+   ],
+   "rows": [
+    "done",
+    "open",
+    "locked",
+    "locked",
+    "locked",
+    "locked",
+    "locked",
+    "locked",
+    "locked",
+    "locked",
+    "locked"
+   ],
+   "daily": "0 / 8",
+   "legend": [
+    "Beheerst",
+    "Bezig",
+    "Nog niet"
+   ]
+  },
+  "bezig/telefoon": {
+   "big": [
+    "Voortgang",
+    "6 / 45"
+   ],
+   "rows": [
+    "done",
+    "open",
+    "locked",
+    "locked",
+    "locked",
+    "locked",
+    "locked",
+    "locked",
+    "locked",
+    "locked",
+    "locked"
+   ],
+   "daily": "0 / 8",
+   "legend": [
+    "Beheerst",
+    "Bezig",
+    "Nog niet"
+   ]
+  },
+  "alles/desktop": {
+   "big": [
+    "Voortgang",
+    "45 / 45"
+   ],
+   "rows": [
+    "gold",
+    "gold",
+    "gold",
+    "gold",
+    "gold",
+    "gold",
+    "gold",
+    "gold",
+    "gold",
+    "gold",
+    "gold"
+   ],
+   "daily": "0 / 8",
+   "legend": [
+    "Beheerst",
+    "Bezig",
+    "Nog niet"
+   ]
+  }
+ },
+ "errors": [],
+ "summary": {
+  "runs": 5,
+  "pass": true
+ }
+}

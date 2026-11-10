@@ -9,7 +9,7 @@ Gecontroleerd op vijf formaten × drie demo's (`#bezig`, `#afgerond`, `#alles`):
   - De status per plek (beheerst, bezig, nog niet) staat op de echte kaart, met één klasse per plek.
   - Die status is gelijk aan een onafhankelijke herberekening uit `state.route.items` met de V2-labelregels.
   - De legenda-aantallen kloppen.
-- **Hoofdstukken.** Lesstaven, ✓ en ★ zijn gelijk aan `TopoRoute.record` voor alle 11.
+- **Hoofdstukken.** De lesstaven en de status (goud, klaar, open, op slot) zijn gelijk aan `TopoRoute.record` en `TopoRoute.unlocked`, voor alle 11. Elke rij heeft de hoofdstukfoto en een status-illustratie (fase B stap 7; eerder ✓/★ als tekst).
 - **Kennis-paspoort.** De V2-tabel met 45 rijen staat in Voortgang, zonder V2-samenvatting en -toelichting.
 - **Dagdoel.** Na drie V2-aanroepen van `recordDailyCorrect` toont Voortgang `3 / 8`, gelijk aan V2.
 - **Toetsuitslagen.** Zonder uitslagen staat er "Nog geen toetsen.". Met twee opgeslagen uitslagen staan ze er allebei, de nieuwste eerst, met datum en score.

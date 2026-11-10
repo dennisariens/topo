@@ -5,7 +5,8 @@ Per viewport (desktop, iPad landscape, iPad portrait, phone, 320 px) and demo (#
   * head `n / 45 plekken` with a bar; n = places with both V2 paspoort labels "Goed onthouden" (DECISIONS);
   * the status per place (beheerst / bezig / nog niet) equals an independent reading of the V2 skill history with the
     V2 label rules, on the real map (one class per place) and in the legend counts;
-  * 11 chapters with three lesson bars, ✓ = stage 3 and ★ = goud, from TopoRoute.record;
+  * 11 chapters with the chapter photo, one bar of three lesson segments and a status illustration (gold = goud, done =
+    stage 3, open, locked), from TopoRoute.record and TopoRoute.unlocked (fase B stap 7; earlier ✓/★ text);
   * daily goal = V2 (after three V2 recordDailyCorrect calls: 3 / 8);
   * the V2 kennis-paspoort (45 rows) sits in Voortgang, without its V2 summary and note;
   * toets results: "Nog geen toetsen." when empty; with two stored results both are listed, newest first;
@@ -31,8 +32,8 @@ READ_JS = '''() => { const v = document.querySelector('.v3View-voortgang'), vis 
     return [i.id, f === 'Goed onthouden' && n === 'Goed onthouden' ? 'beheerst' : f !== 'Nog oefenen' || n !== 'Nog oefenen' ? 'bezig' : 'nog']; }));
   const svg = v?.querySelector('svg.v3VgMap'), shown = {};
   for (const i of ITEMS) { const n = svg?.querySelector('[data-id="' + i.id + '"]'); shown[i.id] = ['beheerst', 'bezig', 'nog'].find(k => n?.classList.contains('v3St-' + k)) || null; }
-  const chapters = [...(v?.querySelectorAll('.v3VgChapters li') || [])].map(li => ({id: li.dataset.chapter, on: li.querySelectorAll('.v3VgSteps i.on').length, done: li.querySelector('.v3VgDone').textContent, gold: li.querySelector('.v3VgGold').textContent}));
-  const route = ROUTE_CHAPTERS.map(c => { const r = TopoRoute.record(state.route, c.id); return {id: c.id, on: r.stage, done: r.stage === 3 ? '✓' : '', gold: r.goldAt > 0 ? '★' : ''}; });
+  const chapters = [...(v?.querySelectorAll('.v3VgChapters li') || [])].map(li => ({id: li.dataset.chapter, on: li.querySelectorAll('.v3VgSteps i.on').length, status: li.dataset.status, art: !!li.querySelector('.v3VgStatus :is(img,svg)'), photo: !!li.querySelector('.v3VgThumb img')}));
+  const route = ROUTE_CHAPTERS.map(c => { const r = TopoRoute.record(state.route, c.id); return {id: c.id, on: r.stage, status: r.goldAt > 0 ? 'gold' : r.stage === 3 ? 'done' : TopoRoute.unlocked(state.route, ROUTE_CHAPTERS, c.id) ? 'open' : 'locked', art: true, photo: true}; });
   const mastery = v?.querySelector('details.mastery');
   return {count: v?.querySelector('.v3VgCount strong')?.textContent, bar: v?.querySelector('.v3VgBar')?.getAttribute('aria-valuenow'),
     expect, shown, legend: [...(v?.querySelectorAll('.v3VgLegend li') || [])].map(li => li.textContent), chapters, route,

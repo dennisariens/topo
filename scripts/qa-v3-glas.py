@@ -17,6 +17,7 @@ Per screen (Reis, Les, Oefenen, Toets, Voortgang) at desktop 1440×900 and iPad 
     visible silhouette (alpha ≥ .3) — the schoolkaart letterbox/see-through rule applies to variant (b) and the lessons;
   * contrast AA for every visible V3 text: the text colour against the rendered pixels behind it (text hidden for a
     second screenshot; 5th percentile of the per-pixel contrast), ≥ 4.5, or ≥ 3 for large text (≥ 24 px, or ≥ 18.66 px bold);
+    text cut off by a scrolling or clipping ancestor is not measured (fase B stap 7);
   * with reduced transparency the glass turns opaque (no backdrop blur).
 Writes screenshots <screen>-<viewport>.png and results.json to the outdir (default docs/qa/v3-glas/).
 
@@ -93,7 +94,10 @@ MEASURE = r'''() => {
   const texts = [...document.querySelectorAll(scope + ' *')].filter(n => [...n.childNodes].some(c => c.nodeType === 3 && c.textContent.trim()) && !n.closest('svg, button[disabled], .v3PreviewBar, dialog')
       && n.checkVisibility({opacityProperty: true, visibilityProperty: true}) && cs(n).color !== 'transparent')
     .map(n => { const r = n.getBoundingClientRect(), s = cs(n); return {t: n.textContent.trim().slice(0, 24), color: s.color, size: parseFloat(s.fontSize), weight: parseInt(s.fontWeight),
-      box: [r.left, r.top, r.width, r.height]}; }).filter(x => x.box[2] > 2 && x.box[3] > 2 && x.box[0] >= 0 && x.box[1] >= 0 && x.box[0] + x.box[2] <= W && x.box[1] + x.box[3] <= H);
+      box: [r.left, r.top, r.width, r.height],
+      // Text cut off by a scrolling or clipping ancestor (a card with its own scroll, the plate) is not what one sees.
+      clipped: (() => { for (let a = n.parentElement; a && a !== document.body; a = a.parentElement) { const o = cs(a); if (o.overflowX !== 'visible' || o.overflowY !== 'visible') { const q = a.getBoundingClientRect();
+        if (r.top < q.top - 1 || r.bottom > q.bottom + 1 || r.left < q.left - 1 || r.right > q.right + 1) return true; } } return false; })()}; }).filter(x => x.box[2] > 2 && x.box[3] > 2 && x.box[0] >= 0 && x.box[1] >= 0 && x.box[0] + x.box[2] <= W && x.box[1] + x.box[3] <= H && !x.clipped);
   const root = document.querySelector('.v3Reis'), les = document.body.classList.contains('v3Les');
   // The frame: .v3Reis outside lessons, the body::after outline in lessons.
   const fr = les ? (a => { const px = v => parseFloat(v); return [px(a.left), px(a.top), W - px(a.left) - px(a.right), H - px(a.top) - px(a.bottom), a.borderTopLeftRadius]; })(getComputedStyle(document.body, '::after'))

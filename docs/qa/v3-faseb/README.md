@@ -127,3 +127,21 @@ Gemeten op `#bezig` op desktop, iPad liggend, iPad staand en telefoon, en op `#a
 
 Alle checks zijn groen.
 
+## Stap 7: Voortgang (mix van `R-voortgang-doel` en `R-voortgang`)
+
+Script: `scripts/qa-v3-faseb-voortgang.py`. Resultaat: [`results-voortgang.json`](results-voortgang.json).
+
+Gemeten op `#bezig` op desktop, iPad liggend, iPad staand en telefoon, en op `#alles` op desktop. Vergelijking: [desktop](../v3-stijlbeeld/voortgang-ijk-desktop.jpg) · [iPad liggend](../v3-stijlbeeld/voortgang-ijk-ipad-liggend.jpg). De data blijft gedekt door `qa-v3-voortgang.py`.
+
+| Check | Drempel |
+| --- | --- |
+| Titelbalk | Display-teksten precies "Voortgang" en "n / 45", op één lijn (≥ 768), in inkt; balk ≥ 14 px hoog en (≥ 768) ≥ 40% van de inhoudsbreedte |
+| Kaartkaart | Wit; schoolkaart (reliëf uit) en legenda Beheerst/Bezig/Nog niet in de kaart; beheerst = accentkleur, nog niet = crème |
+| Hoofdstukken | 11 rijen, elk met foto, een balk van 3 segmenten (≥ 10 px hoog) en een status-illustratie; eigen scroll als ze niet passen |
+| Dagdoel en tegels | Lijnicoon, 8 stippen (aan = n van 8); Pizza's en Vespa-ritten zichtbaar |
+| Niet | Geen groet, offline-badge of streak |
+| Raster (≥ 1024) | Kaartkaart op kolom 1–7, hoofdstukken op 8–12 (±1,5 px), op één boven- en onderlijn (±1 px); Dagdoel 6 kolommen, Pizza's en Vespa-ritten elk 3 |
+| Overflow | Geen horizontale scroll |
+
+Alle checks zijn groen. Bijgesteld: `qa-v3-voortgang.py` leest de status per rij in plaats van ✓/★, en `qa-v3-glas.py` meet geen contrast van tekst die een scrollvak afsnijdt (DECISIONS 10-11, stap 7).
+

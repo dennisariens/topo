@@ -775,3 +775,33 @@ Beide schermen volgen hun render, met de regels van Ingetogenheid, Raster en Ver
 
 Gevonden bij fase B, stap 6. Deze Mac staat op "verminderde transparantie", en headless Chrome neemt dat over. De screenshots en vergelijkingen van stap 2–5 toonden daardoor dichte panelen: de terechte variant uit `glas.css`, maar niet het ontwerp. `qa-v3-faseb.py`, `-oefenen`, `-les` en `-toets` emuleren nu `prefers-reduced-transparency: no-preference`, net als `qa-v3-glas.py`, `qa-v3-stijlbeeld.py` en `-beloningen`. De dichte variant blijft gedekt door `qa-v3-glas.py`. De checks zelf zijn ongewijzigd en groen; het bewijs van stap 2–5 is opnieuw gemaakt.
 
+## 2026-11-10 — V3.0 fase B, stap 7: Voortgang
+
+Volgens de bijstelling van de eigenaar (renders/README § Voortgang, bijstelling): een mix van `R-voortgang-doel` (raster, lucht, kaartkaart, rustige inkt) en `R-voortgang` (levendigheid). Werkblad, op het raster van 12 kolommen.
+
+**Indeling:**
+- **titelbalk:** "Voortgang" en "n / 45" groot op één lijn, in inkt (niet violet), met een brede, dikke balk;
+- **kaartkaart (kolom 1–7):** een witte kaart met het onderschrift "Italië · 45 plekken" en de legenda links, de schoolkaart rechts;
+  - de 45 plekken in verzadigde beheersingskleuren: diep violet (beheerst), lavendel (bezig), crème (nog niet), met een witte rand en grotere stippen;
+  - de grote vlakken (buurlanden, zeeën) als een lichte, dekkende tint met een gekleurde rand. Volle kleur liet de kaart overspoelen. Nog niet begonnen houdt de eigen kaartkleur, dus buurlanden blijven landkleur;
+- **hoofdstukken (kolom 8–12):** alle 11 rijen met de echte hoofdstukfoto, "n. naam", één dikke ronde balk (de drie lessegmenten aaneen) en een status-illustratie:
+  - de gouden lauwerkrans (IC-gold) voor goud;
+  - het groene vinkje voor klaar;
+  - de pizzapunt (IC-slice) voor open;
+  - het slotje voor nog dicht.
+
+  De kaart heeft een eigen scroll en staat op één boven- en onderlijn met de kaartkaart;
+- **daaronder:**
+  - Dagdoel (lijnicoon, n / 8, een rij van 8 stippen) op 6 kolommen;
+  - Pizza's (n / 3, met stippen) en Vespa-ritten op 3 kolommen elk, uit dezelfde V2-state als Beloningen;
+  - dan Toetsen en het Kennis-paspoort.
+- **niet:** groet, offline-badge, streak, decoratieve streepjes, violette display-tekst.
+
+De data blijft gelijk: plekken uit het V2-paspoort, hoofdstukken uit `TopoRoute`, het dagdoel uit V2.
+
+**QA bijgesteld:**
+- `qa-v3-voortgang.py` leest de status per rij (`data-status`) in plaats van de ✓/★-tekst, en controleert ook `TopoRoute.unlocked`, de foto en de illustratie;
+- `qa-v3-glas.py` meet geen contrast meer voor tekst die een scrollend of afkappend vak afsnijdt. Die tekst is niet te zien; de rand van de eigen scroll van de hoofdstukkaart en van de plaat gaf schijnfouten.
+
+**Bewijs:** `scripts/qa-v3-faseb-voortgang.py` en de vergelijkingen `docs/qa/v3-stijlbeeld/voortgang-ijk-{desktop,ipad-liggend}.jpg`.
+

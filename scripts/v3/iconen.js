@@ -28,6 +28,7 @@
   v3lock:'<rect x="7.5" y="14" width="17" height="13.5" rx="3"/><path d="M11 14v-3.5a5 5 0 0 1 10 0V14"/>',
   v3medal:'<circle cx="16" cy="19.5" r="7.5"/><path d="M11.5 13 8 4.5h5.5l2.5 5.5M20.5 13 24 4.5h-5.5"/><path d="m16 16 1.1 2.3 2.5.4-1.8 1.7.4 2.5-2.2-1.2-2.2 1.2.4-2.5-1.8-1.7 2.5-.4z"/>',
   v3slice:'<path d="M5 6.5c8-3 16-1 22 5L11.5 28z"/><path d="M7 10.5c6.5-2 12.5-.8 17 3"/><circle cx="13.5" cy="15.5" r="1.5"/><circle cx="16.5" cy="21" r="1.3"/><circle cx="19.5" cy="15" r="1.1"/>',
+  v3target:'<circle cx="15" cy="17" r="11"/><circle cx="15" cy="17" r="6.5"/><circle cx="15" cy="17" r="2"/><path d="m15 17 9.5-9.5M21 4.5l3.5 3 3-3.5"/>',
   v3scooter:'<circle cx="7.5" cy="23" r="3.5"/><circle cx="24.5" cy="23" r="3.5"/><path d="M11 23h9.5c0-4.2 1.3-7.2 4-9L22.5 6.5H19M4.5 19.5c2.2-3.8 6.2-4.9 10-4l2.5 4.5"/>',
   // Toets resultaat (R-toets-resultaat): copy · mail · print.
   v3copy:'<rect x="11" y="10" width="14" height="17" rx="3"/><path d="M7 21.5V8a3 3 0 0 1 3-3h9.5"/>',

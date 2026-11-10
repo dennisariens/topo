@@ -4,6 +4,14 @@ Branch `codex/topo-v3` vanaf de V2-afsluiting `f53dc0b` (voorouder `v2.0.2` = `8
 
 **V3.0 deel 5 — Kennismaking** (9 november): de V2-eerste-keerdialoog is één V3-scène met welkomstpose, naam, favoriete pizza, Andiamo! en Start meteen; de hulpteksten zijn weg. Daarna opent Reis met hoofdstuk 1. Profielschema 1 en de V2-regel voor het eenmalig opnieuw aanbieden blijven gelijk. Preview-demo `#welkom`. [Bewijs](qa/v3-kennismaking/README.md).
 
+**V3.0 fase B — stap 7, Voortgang** (10 november):
+- de titelbalk met n / 45 en een brede balk;
+- de kaartkaart met de 45 plekken in violet, lavendel en crème;
+- hoofdstukrijen met foto, dikke balk en status-illustratie;
+- Dagdoel met stippen, Pizza's en Vespa-ritten.
+
+[Bewijs](qa/v3-faseb/README.md). Daarmee zijn alle schermen van fase B gebouwd.
+
 **V3.0 fase B — stap 6, Beloningen** (10 november): het Reisboekje vrij op het landschap, één glaspaneel met de pizza's van de rit (volgens de data), de Vespa en de meter, en vier glastegels, op 12 kolommen. [Bewijs](qa/v3-faseb/README.md).
 
 **V3.0 fase B — stap 5, Toets instellen en resultaat** (10 november):

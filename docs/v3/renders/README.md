@@ -15,6 +15,28 @@ Conceptrenders van 10 november 2026 (ChatGPT, prompts in de chat; benchmark in `
 - **Kaart:** zweeft vrij boven het artwork met een slagschaduw en zonder kader of waas. Bij Oefenen, Toets en Beloningen is het reliëf standaard; bij Les en Voortgang de schoolkaart. Buurlanden staan altijd in landkleur.
 - **Status-iconen:** groen vinkje = klaar · gouden lauwerkrans = goud · pizzapunt = bezig · rood × = fout.
 
+## Ingetogenheid: wat de benchmark voorheeft (eigenaar, 10-11)
+
+De zes renders zijn een grote stap, maar halen het niveau van de benchmark nog niet: ze ogen als een spel en niet als Apple of Linear. **Bij een conflict gaan deze regels voor de renders.**
+
+1. **Eén luid element per scherm.** Dat is de kaart, of de held (boek, score). De rest is stil.
+2. **Typografie:**
+   - display (gewicht 800) alleen voor de schermtitel of de score;
+   - verder 15–17 px op gewicht 500–600, in donkere inkt (niet violet);
+   - geen hoofdletters als nadruk.
+3. **Violet alleen voor betekenis:** de primaire actie, de actieve nav, selectie en voortgang. Geen violette lopende tekst en geen violette labels.
+4. **UI-iconen:** dunne lijniconen in één set (in de stijl van SF Symbols), monochroom. Illustraties (3D of geschilderd) alleen als inhoud: Nino, boek, Vespa, pizza, hoofdstukbeelden. Niet in tegels, knoppen of chips.
+5. **Achtergrond:** het artwork zit aan de randen en is rustig achter de panelen. Een zachte, lichte wash en verminderde verzadiging achter de UI-zone. Nooit op de kaart zelf.
+6. **Glas:**
+   - één niveau, met een fijne binnenrand van 1 px (licht) en een kleine, zachte schaduw;
+   - geen gestapelde kaarten in kaarten;
+   - groepen scheiden met witruimte, niet met extra panelen.
+7. **Ruimte:** 8-pt-raster, ruime marges en minder elementen. Liever één rij minder dan een volle tegel.
+8. **Kleurtemperatuur:** pastel, met lavendel en zacht zonlicht zoals in de benchmark. Het reliëf mag rijk zijn, maar harmonieert met het palet (geen neongroen).
+9. **Beweging en glans:** geen glow onder knoppen en geen decoratieve streepjes of sparkles.
+
+**Toets:** zet een scherm in grijstinten naast de benchmark. Klopt de hiërarchie (één luid element, de rest rustig), dan klopt het ontwerp.
+
 ## Per render: overnemen en afwijken
 
 | Render | Overnemen | Niet overnemen / afwijken |

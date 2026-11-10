@@ -29,6 +29,8 @@ Gecontroleerd op vijf formaten, met de demo `#afgerond`:
   - de export bevat `v3Toetsen`;
   - een import met 2 uitslagen vervangt de opgeslagen uitslagen;
   - een import van een oude kopie (zonder het veld) laat ze staan;
+  - een geannuleerde import laat ze staan, ook als `#backupStatus` nog "teruggezet" meldt van de import ervoor; een ongeldige import ook (fix 10-11);
+  - "Wis voortgang": geannuleerd blijven de uitslagen staan; bevestigd zijn ze weg en blijven profiel en intro staan (resetbeleid 10-11);
   - bij 10 opgeslagen uitslagen plus één nieuwe toets blijven er 10 over, met de nieuwe eerst;
   - Print bouwt het A4-blad met kaart en 10 markeringen. Het blad staat in [`print-a4.pdf`](print-a4.pdf): één pagina.
 

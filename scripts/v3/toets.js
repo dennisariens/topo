@@ -31,18 +31,26 @@
   window.Blob=function(parts,opts){try{if(parts?.length===1&&typeof parts[0]==='string'){const d=JSON.parse(parts[0]);if(d?.app==='topo-italie'){d.v3Toetsen={schema:1,results:load()};parts=[JSON.stringify(d,null,2)];}}}catch{}return new B(parts,opts);};
   try{return orig.call(this,e);}finally{window.Blob=B;}
  };}
- // Import: after V2 restored the progress, results from the copy replace the stored ones; a copy without results
- // (older copies) leaves them as they are.
+ // Import: only after V2 really restored the progress (its commitImport stored it without throwing), results from the
+ // copy replace the stored ones. A cancelled or failed import keeps them, and so does a copy without results (older
+ // copies). The status text is not evidence: it can still say "teruggezet" from an earlier import (DECISIONS 10-11).
  const file=$('#backupFile');
  if(file&&typeof file.onchange==='function'){const orig=file.onchange;file.onchange=async function(e){
   let extra;try{const f=e.target.files?.[0];if(f&&f.size<=1000000)extra=JSON.parse(await f.text())?.v3Toetsen;}catch{}
-  const r=await orig.call(this,e);
-  if(extra!==undefined&&valid(extra)&&/^Je voortgang is teruggezet/.test($('#backupStatus')?.textContent||''))store(extra.results);
+  const P=window.TopoProfile,commit=P&&P.commitImport;let committed=false;
+  if(commit)P.commitImport=function(...a){const r=commit.apply(this,a);committed=true;return r;};
+  let r;try{r=await orig.call(this,e);}finally{if(commit)P.commitImport=commit;}
+  if(committed&&extra!==undefined&&valid(extra))store(extra.results);
   return r;
  };}
  // Begin helemaal opnieuw (V2 settings) starts fresh: the results go with the progress.
  document.addEventListener('click',e=>{if(!e.target.closest?.('.ninoResetDanger'))return;const before=localStorage.getItem('topo-italie-v3');
   queueMicrotask(()=>{try{if(localStorage.getItem('topo-italie-v3')!==before)localStorage.removeItem(KEY);}catch{}});},true);
+ // Wis voortgang (#resetAll) wipes the progress the results are about, so they go too; profile and intro stay
+ // (DECISIONS 10-11, resetbeleid). Only when the V2 confirm is accepted: the confirm is observed for this one click.
+ document.addEventListener('click',e=>{if(!e.target.closest?.('#resetAll'))return;const c=window.confirm;
+  window.confirm=function(...a){const ok=c.apply(this,a);if(ok){try{localStorage.removeItem(KEY);}catch{}}return ok;};
+  setTimeout(()=>{window.confirm=c;},0);},true);
 
  /* Set-up (§ 2.1): chapters (default: completed ones, otherwise all), form, length; one button Start toets. */
  const completed=()=>ROUTE_CHAPTERS.filter(c=>TopoRoute.record(state.route,c.id).stage===3).map(c=>c.id);

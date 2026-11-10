@@ -8,6 +8,8 @@ Per viewport (desktop, iPad landscape, iPad portrait, phone, 320 px), on #afgero
   * no rewards: slices, pizzas, trips and the V2 good-counter unchanged, no reward dialog ever opened;
   * result: score `7 / 10` (= V2 examCorrect/examTotal), a Nino pose, the map with 10 marks (3 ×, with the name), the
     mistakes list, no V2 result dialog; one stored result under topo-v3-toetsen-v1 that matches;
+  * reservekopie: a copy with results replaces them, an old copy keeps them, a cancelled or invalid import keeps them
+    (even while #backupStatus still says "teruggezet"); Wis voortgang wipes them only when confirmed, profile and intro stay;
   * focus on the score; Oefen deze fouten opens the V2 mistakes exercise (tab Oefenen).
 Desktop only, in addition: the reservekopie contains the results (export), an import with results replaces them, an
 import of an old copy keeps them; at most 10 results (newest first); Print builds the A4 sheet (PDF in the outdir).
@@ -71,7 +73,8 @@ async def main():
             await ctx.add_init_script(LEDGER)
             pg = await ctx.new_page(); errs = []; run = {}
             pg.on('pageerror', lambda e: errs.append(str(e)))
-            pg.on('dialog', lambda d: asyncio.ensure_future(d.accept()))
+            answer = {'ok': True}  # confirm answers; False dismisses (cancelled import, cancelled reset)
+            pg.on('dialog', lambda d: asyncio.ensure_future(d.accept() if answer['ok'] else d.dismiss()))
             fail = lambda why: fails.append(f'{name}: {why}')
             st = lambda: pg.evaluate(STATE_JS)
             wait = lambda ms=450: pg.wait_for_timeout(ms)
@@ -176,6 +179,16 @@ async def main():
                 n2, msg2 = await imp(two, 'import-two'); n3, msg3 = await imp(old, 'import-old')
                 run['import'] = {'withResults': n2, 'oldCopy': n3, 'status': [msg2, msg3]}
                 if n2 != 2 or n3 != 2 or not msg2.startswith('Je voortgang is teruggezet') or not msg3.startswith('Je voortgang is teruggezet'): fail(f'import {run["import"]}')
+                # Cancelled import (DECISIONS 10-11): the confirm is dismissed while the status still says "teruggezet"
+                # from the import before; a copy with one result must not replace the two stored ones.
+                one = dict(exported); answer['ok'] = False
+                n4, msg4 = await imp(one, 'import-cancelled'); answer['ok'] = True
+                run['import']['cancelled'] = n4; run['import']['status'].append(msg4)
+                if n4 != 2 or not msg4.startswith('Je voortgang is teruggezet'): fail(f'cancelled import replaced the results ({n4}, status {msg4!r})')
+                # A failed import (invalid progress) keeps them too.
+                bad = dict(exported); bad['progress'] = {'schema': 3}
+                n5, msg5 = await imp(bad, 'import-invalid'); run['import']['invalid'] = n5
+                if n5 != 2 or not msg5.startswith('Terugzetten lukte niet'): fail(f'invalid import changed the results ({n5}, status {msg5!r})')
                 # At most 10, newest first: 10 stored + one more toets → 10, the new one first.
                 await pg.evaluate(f"(() => {{ const d = JSON.parse(localStorage.getItem('{KEY}')); const one = d.results[0]; d.results = Array.from({{length: 10}}, (_, i) => ({{...one, at: new Date(Date.UTC(2026, 0, 1 + i)).toISOString()}})); localStorage.setItem('{KEY}', JSON.stringify(d)); }})()")
                 await nav('toets'); await click('[aria-labelledby=v3ToetsLengte] [data-value="10"]'); await click('.v3View-toets .v3Start'); await wait(900)
@@ -203,6 +216,17 @@ async def main():
                 grp = await pg.evaluate("document.querySelector('#groupSelect').value")
                 run['oefen'] = {'mode': s['mode'], 'group': grp, 'tab': s['tab']}
                 if s['mode'] != 'point' or grp != 'mistakes' or s['tab'] != 'oefenen': fail(f'oefen deze fouten {run["oefen"]}')
+            if name == 'desktop':
+                # Wis voortgang (resetbeleid 10-11): cancelled keeps the results; accepted wipes them, profile and intro stay.
+                keys = "(() => ({toets: localStorage.getItem('topo-v3-toetsen-v1') !== null, profile: localStorage.getItem('topo-nino-profile-v1'), intro: localStorage.getItem('topo-nino-intro-v1')}))()"
+                before = await pg.evaluate(keys)
+                answer['ok'] = False; await pg.evaluate("document.querySelector('#resetAll').click()"); await wait(200); cancelled = await pg.evaluate(keys)
+                answer['ok'] = True; await pg.evaluate("document.querySelector('#resetAll').click()"); await wait(200); wiped = await pg.evaluate(keys)
+                good = await pg.evaluate("state.good + state.pizzas + state.trips")
+                run['wisVoortgang'] = {'before': before, 'cancelled': cancelled, 'accepted': wiped, 'progressLeft': good}
+                if not before['toets'] or not cancelled['toets']: fail(f'wis voortgang cancelled lost the results {run["wisVoortgang"]}')
+                if wiped['toets'] or good: fail(f'wis voortgang kept the results or progress {run["wisVoortgang"]}')
+                if wiped['profile'] != before['profile'] or wiped['intro'] != before['intro']: fail(f'wis voortgang touched profile or intro {run["wisVoortgang"]}')
             run['pageErrors'] = errs
             if errs: fail(f'page errors {errs[:3]}')
             res['runs'][name] = run

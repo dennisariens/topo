@@ -572,3 +572,13 @@ Nieuw bestand: `scripts/v3/glas.css`, geladen na `shell.css`.
   De eigenaar kiest. In de Les blijft de volledige schoolkaart met zeeën staan, want plekken aanwijzen en het hoofdstuk Zeeën hebben dat referentiekader nodig.
 - **Defect (Codex, karakterisering):** een geannuleerde import vervangt toch de toetsuitslagen, omdat `toets.js` de tekst van `#backupStatus` als bewijs leest. Fix: alleen vervangen bij een echte, geslaagde import. De karakteriseringstest verwacht dan behoud bij annuleren.
 - **Resetbeleid:** "Wis voortgang" wist ook de toetsuitslagen, want die gaan over de gewiste voortgang. Het profiel en de intro blijven staan. "Begin helemaal opnieuw" blijft ongewijzigd (alles weg).
+
+## 2026-11-10 — Fix: toetsuitslagen bij import en bij Wis voortgang
+
+- **Import.** `toets.js` leest `#backupStatus` niet meer. De uitslagen uit een kopie vervangen de opgeslagen uitslagen alleen als V2 de voortgang echt heeft opgeslagen. Het bewijs daarvoor is dat `TopoProfile.commitImport` in deze import zonder fout terugkwam; V3 kijkt alleen mee, V2 blijft ongewijzigd. Bij een geannuleerde of ongeldige import blijven de uitslagen staan.
+- **Wis voortgang** (`#resetAll`). Na de bevestiging in V2 is ook `topo-v3-toetsen-v1` weg. Het profiel en de intro blijven staan; bij annuleren verandert er niets. "Begin helemaal opnieuw" is ongewijzigd.
+- **Test:** `qa-v3-toets.py` dekt beide gevallen.
+  - Import: annuleren terwijl de status nog "teruggezet" meldt; daarnaast een ongeldige kopie.
+  - Wis voortgang: annuleren en bevestigen.
+  - Op de oude code faalt de test op beide punten.
+- **Karakteriseringstest op `arch/v3-runtime`:** de test "observed quirk" (`exam-storage.test.mjs`) legt het oude defect vast. Bij samenvoegen moet hij behoud bij annuleren verwachten. Deze branch raakt hem niet aan.

@@ -27,7 +27,7 @@ Typografie, knoppen, iconen en het raster volgen in fase B. [Bewijs](qa/v3-glas/
 
 **V3.0 deel 4 — Voortgang** (9 november): toont `n / 45 plekken` met een balk en de echte kaart, gekleurd naar beheersing (beheerst, bezig, nog niet; drempel in DECISIONS). Daaronder staan de 11 hoofdstukken met lesstaven, ✓ en ★, het dagdoel, het V2-kennis-paspoort (verplaatst) en de laatste 10 toetsuitslagen; er is geen streak. [Bewijs](qa/v3-voortgang/README.md).
 
-**V3.0 deel 3 — Toets** (9 november): instellen (hoofdstukken, vorm, lengte) → de V2-toets in de shell, met bovenaan alleen `7 / 20` → resultaat met score, Nino, kaart met ✓/×, fouten, Oefen deze fouten, Kopieer/E-mail en Print A4. Een toets geeft geen beloningen. De laatste 10 uitslagen staan in `topo-v3-toetsen-v1` en gaan mee in de reservekopie. [Bewijs](qa/v3-toets/README.md).
+**V3.0 deel 3 — Toets** (9 november): instellen (hoofdstukken, vorm, lengte) → de V2-toets in de shell, met bovenaan alleen `7 / 20` → resultaat met score, Nino, kaart met ✓/×, fouten, Oefen deze fouten, Kopieer/E-mail en Print A4. Een toets geeft geen beloningen. De laatste 10 uitslagen staan in `topo-v3-toetsen-v1` en gaan mee in de reservekopie. Fix 10-11: een geannuleerde of mislukte import laat ze staan; "Wis voortgang" wist ze (profiel en intro blijven). [Bewijs](qa/v3-toets/README.md).
 
 **V3.0 deel 2 — Schoolblad** (9 november): de knop **Schoolblad** staat op Reis (naast Schoolkaart/Reliëf) en in de leskop van Ontdekken, Aanwijzen en Namen schrijven. Toets **S** werkt overal, behalve in Toets en de Gouden proef. Het V2-venster opent; concept en selectie blijven bewaard. [Bewijs](qa/v3-schoolblad/README.md).
 

@@ -20,3 +20,5 @@ Alle beelden zijn origineel gegenereerd voor TOPO; geen bestaande films, persona
 | `assets/art/universal/vespa/vespa-icoon.webp` | 2b | ChatGPT (gegenereerd) | 2026-11-10 | Goedgekeurd |
 | `assets/art/universal/vespa/vespa-rijdend.webp` | 2c | ChatGPT (gegenereerd) | 2026-11-10 | Goedgekeurd |
 | `assets/art/universal/vespa/vespa-bagage.webp` | 2d | ChatGPT (gegenereerd) | 2026-11-10 | Goedgekeurd |
+| `assets/art/universal/paspoort/paspoort-cover.webp` | 3a | ChatGPT (gegenereerd) | 2026-11-10 | Goedgekeurd |
+| `assets/art/universal/paspoort/paspoort-binnen.webp` | 3b | ChatGPT (gegenereerd) | 2026-11-10 | Goedgekeurd |

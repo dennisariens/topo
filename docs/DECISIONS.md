@@ -560,3 +560,15 @@ Nieuw bestand: `scripts/v3/glas.css`, geladen na `shell.css`.
   - *Randwaas:* geen CSS-masker, opacity ≥ 0,85, en binnen 24 px van de rand niets anders dan de kaart of haar knoppen. De afgeronde hoeken tellen niet mee.
   - *Schoolkaart:* geen letterbox, en geen land met een effectieve dekking < 0,9. Gemeten op Reis Schoolkaart, Reis Reliëf en Les.
   - `qa-v3-reis.py` meet het referentiekader nu zonder fade-marge.
+
+## 2026-11-10 — Review fase A; besluiten uit de Codex-overdracht (lead designer)
+
+- **Fase A akkoord.**
+  - Wel goed: frame, glas, viola, het artwork zichtbaar, het reliëf zonder waas, buurlanden in landkleur.
+  - Nog niet: het raster, de typografie en de bediening (fase B).
+- **Kaart op Landschap-schermen (Reis, Oefenen, Toets resultaat):** de kaart is nu een rechthoek met een zeevlak. Het doelbeeld toont Italië als vrij zwevend land. Fase B levert voor Reis twee varianten naast het doelbeeld:
+  - (a) **Eiland:** Italië met de eilanden; de buurlanden alleen als zachte, onverzadigde landsilhouetten (geen waas en geen harde snijlijn); de zee transparant op de wash;
+  - (b) **Kaart:** de huidige kaart, maar de rechthoek afgerond tot een glaskaart die past in het raster.
+  De eigenaar kiest. In de Les blijft de volledige schoolkaart met zeeën staan, want plekken aanwijzen en het hoofdstuk Zeeën hebben dat referentiekader nodig.
+- **Defect (Codex, karakterisering):** een geannuleerde import vervangt toch de toetsuitslagen, omdat `toets.js` de tekst van `#backupStatus` als bewijs leest. Fix: alleen vervangen bij een echte, geslaagde import. De karakteriseringstest verwacht dan behoud bij annuleren.
+- **Resetbeleid:** "Wis voortgang" wist ook de toetsuitslagen, want die gaan over de gewiste voortgang. Het profiel en de intro blijven staan. "Begin helemaal opnieuw" blijft ongewijzigd (alles weg).

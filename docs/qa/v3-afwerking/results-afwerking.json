@@ -7,6 +7,20 @@
    "mapShare": 0.515,
    "ninoOverlap": null
   },
+  "reis/desktop/bg02": {
+   "texts": 31,
+   "small": [],
+   "lowContrast": [],
+   "mapShare": 0.515,
+   "ninoOverlap": null
+  },
+  "reis/desktop/bg03": {
+   "texts": 31,
+   "small": [],
+   "lowContrast": [],
+   "mapShare": 0.515,
+   "ninoOverlap": null
+  },
   "oefenen/desktop/bg01": {
    "texts": 29,
    "small": [],
@@ -14,7 +28,35 @@
    "mapShare": 0.574,
    "ninoOverlap": null
   },
+  "oefenen/desktop/bg02": {
+   "texts": 29,
+   "small": [],
+   "lowContrast": [],
+   "mapShare": 0.574,
+   "ninoOverlap": null
+  },
+  "oefenen/desktop/bg03": {
+   "texts": 29,
+   "small": [],
+   "lowContrast": [],
+   "mapShare": 0.574,
+   "ninoOverlap": null
+  },
   "les/desktop/bg01": {
+   "texts": 24,
+   "small": [],
+   "lowContrast": [],
+   "mapShare": 0.486,
+   "ninoOverlap": null
+  },
+  "les/desktop/bg02": {
+   "texts": 24,
+   "small": [],
+   "lowContrast": [],
+   "mapShare": 0.486,
+   "ninoOverlap": null
+  },
+  "les/desktop/bg03": {
    "texts": 24,
    "small": [],
    "lowContrast": [],
@@ -33,7 +75,31 @@
    "mapShare": 0.559,
    "ninoOverlap": 0
   },
+  "toetsResult/desktop/bg02": {
+   "texts": 20,
+   "small": [],
+   "lowContrast": [],
+   "mapShare": 0.559,
+   "ninoOverlap": 0
+  },
+  "toetsResult/desktop/bg03": {
+   "texts": 20,
+   "small": [],
+   "lowContrast": [],
+   "mapShare": 0.559,
+   "ninoOverlap": 0
+  },
   "rewards/desktop/bg01": {
+   "texts": 17,
+   "small": [],
+   "lowContrast": []
+  },
+  "rewards/desktop/bg02": {
+   "texts": 17,
+   "small": [],
+   "lowContrast": []
+  },
+  "rewards/desktop/bg03": {
    "texts": 17,
    "small": [],
    "lowContrast": []
@@ -44,11 +110,159 @@
    "lowContrast": [],
    "mapShare": 0.478,
    "ninoOverlap": null
+  },
+  "reis/ipad-liggend/bg01": {
+   "texts": 30,
+   "small": [],
+   "lowContrast": [],
+   "mapShare": 0.523,
+   "ninoOverlap": null
+  },
+  "reis/ipad-liggend/bg02": {
+   "texts": 30,
+   "small": [],
+   "lowContrast": [],
+   "mapShare": 0.523,
+   "ninoOverlap": null
+  },
+  "reis/ipad-liggend/bg03": {
+   "texts": 30,
+   "small": [],
+   "lowContrast": [],
+   "mapShare": 0.523,
+   "ninoOverlap": null
+  },
+  "oefenen/ipad-liggend/bg01": {
+   "texts": 29,
+   "small": [],
+   "lowContrast": [],
+   "mapShare": 0.491,
+   "ninoOverlap": null
+  },
+  "oefenen/ipad-liggend/bg02": {
+   "texts": 29,
+   "small": [],
+   "lowContrast": [],
+   "mapShare": 0.491,
+   "ninoOverlap": null
+  },
+  "oefenen/ipad-liggend/bg03": {
+   "texts": 29,
+   "small": [],
+   "lowContrast": [],
+   "mapShare": 0.491,
+   "ninoOverlap": null
+  },
+  "les/ipad-liggend/bg01": {
+   "texts": 19,
+   "small": [],
+   "lowContrast": []
+  },
+  "les/ipad-liggend/bg02": {
+   "texts": 19,
+   "small": [],
+   "lowContrast": []
+  },
+  "les/ipad-liggend/bg03": {
+   "texts": 19,
+   "small": [],
+   "lowContrast": []
+  },
+  "toets/ipad-liggend/bg01": {
+   "texts": 31,
+   "small": [],
+   "lowContrast": []
+  },
+  "toetsResult/ipad-liggend/bg01": {
+   "texts": 20,
+   "small": [],
+   "lowContrast": [],
+   "mapShare": 0.525,
+   "ninoOverlap": 0
+  },
+  "toetsResult/ipad-liggend/bg02": {
+   "texts": 20,
+   "small": [],
+   "lowContrast": [],
+   "mapShare": 0.525,
+   "ninoOverlap": 0
+  },
+  "toetsResult/ipad-liggend/bg03": {
+   "texts": 20,
+   "small": [],
+   "lowContrast": [],
+   "mapShare": 0.525,
+   "ninoOverlap": 0
+  },
+  "rewards/ipad-liggend/bg01": {
+   "texts": 17,
+   "small": [],
+   "lowContrast": []
+  },
+  "rewards/ipad-liggend/bg02": {
+   "texts": 17,
+   "small": [],
+   "lowContrast": []
+  },
+  "rewards/ipad-liggend/bg03": {
+   "texts": 17,
+   "small": [],
+   "lowContrast": []
+  },
+  "voortgang/ipad-liggend/bg01": {
+   "texts": 37,
+   "small": [],
+   "lowContrast": [],
+   "mapShare": 0.513,
+   "ninoOverlap": null
+  },
+  "reis/ipad-staand/bg01": {
+   "texts": 25,
+   "small": [],
+   "lowContrast": [],
+   "mapShare": 0.51,
+   "ninoOverlap": null
+  },
+  "oefenen/ipad-staand/bg01": {
+   "texts": 24,
+   "small": [],
+   "lowContrast": [],
+   "mapShare": 0.44,
+   "ninoOverlap": null
+  },
+  "les/ipad-staand/bg01": {
+   "texts": 17,
+   "small": [],
+   "lowContrast": []
+  },
+  "toets/ipad-staand/bg01": {
+   "texts": 26,
+   "small": [],
+   "lowContrast": []
+  },
+  "toetsResult/ipad-staand/bg01": {
+   "texts": 15,
+   "small": [],
+   "lowContrast": [],
+   "mapShare": 0.364,
+   "ninoOverlap": 0
+  },
+  "rewards/ipad-staand/bg01": {
+   "texts": 8,
+   "small": [],
+   "lowContrast": []
+  },
+  "voortgang/ipad-staand/bg01": {
+   "texts": 24,
+   "small": [],
+   "lowContrast": [],
+   "mapShare": 0.563,
+   "ninoOverlap": null
   }
  },
  "errors": [],
  "summary": {
-  "runs": 7,
+  "runs": 41,
   "pass": true
  }
 }

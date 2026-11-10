@@ -1,0 +1,44 @@
+/Users/dennisariens/projects/topo-v3/scripts/qa-v3-afwerking.py:119: DeprecationWarning: Image.Image.getdata is deprecated and will be removed in Pillow 14 (2027-10-15). Use get_flattened_data instead.
+  cs = sorted((max(fg, L) + .05) / (min(fg, L) + .05) for L in (lum(p) for p in crop.getdata()))
+reis/desktop/bg01 checked
+reis/desktop/bg02 checked
+reis/desktop/bg03 checked
+oefenen/desktop/bg01 checked
+oefenen/desktop/bg02 checked
+oefenen/desktop/bg03 checked
+les/desktop/bg01 checked
+les/desktop/bg02 checked
+les/desktop/bg03 checked
+toets/desktop/bg01 checked
+toetsResult/desktop/bg01 checked
+toetsResult/desktop/bg02 checked
+toetsResult/desktop/bg03 checked
+rewards/desktop/bg01 checked
+rewards/desktop/bg02 checked
+rewards/desktop/bg03 checked
+voortgang/desktop/bg01 checked
+reis/ipad-liggend/bg01 checked
+reis/ipad-liggend/bg02 checked
+reis/ipad-liggend/bg03 checked
+oefenen/ipad-liggend/bg01 checked
+oefenen/ipad-liggend/bg02 checked
+oefenen/ipad-liggend/bg03 checked
+les/ipad-liggend/bg01 checked
+les/ipad-liggend/bg02 checked
+les/ipad-liggend/bg03 checked
+toets/ipad-liggend/bg01 checked
+toetsResult/ipad-liggend/bg01 checked
+toetsResult/ipad-liggend/bg02 checked
+toetsResult/ipad-liggend/bg03 checked
+rewards/ipad-liggend/bg01 checked
+rewards/ipad-liggend/bg02 checked
+rewards/ipad-liggend/bg03 checked
+voortgang/ipad-liggend/bg01 checked
+reis/ipad-staand/bg01 checked
+oefenen/ipad-staand/bg01 checked
+les/ipad-staand/bg01 checked
+toets/ipad-staand/bg01 checked
+toetsResult/ipad-staand/bg01 checked
+rewards/ipad-staand/bg01 checked
+voortgang/ipad-staand/bg01 checked
+{"runs": 41, "pass": true}

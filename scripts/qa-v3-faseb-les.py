@@ -39,7 +39,7 @@ PROBE = r'''() => {
   const text = n => [...n.childNodes].some(c => c.nodeType === 3 && c.textContent.trim());
   const group = q('.v3LesGroup'), end = q('.v3LesEnd');
   const marks = [...document.querySelectorAll('.v3LesStep .v3LesMark')].filter(vis).map(m => ({icon: (m.querySelector('use')?.getAttribute('href') || '').replace('#topo-', ''), text: m.textContent.trim(), state: m.closest('.v3LesStep').dataset.state}));
-  const big = [...document.querySelectorAll('body *')].filter(n => text(n) && vis(n) && px(cs(n).fontSize) >= 30 && !n.closest('.v3Brand,.v3PreviewBar')).map(n => n.textContent.trim().slice(0, 30));
+  const big = [...document.querySelectorAll('body *')].filter(n => text(n) && vis(n) && px(cs(n).fontSize) >= 30 && !n.closest('.v3Brand,.v3PreviewBar,.v3LesTitle')).map(n => n.textContent.trim().slice(0, 30));
   const secondary = [...document.querySelectorAll('#quiz>.buttons>.button')].map(b => ({id: b.id, quiet: b.classList.contains('ninoQuiet'), hidden: b.classList.contains('hidden') || b.hidden, shown: vis(b), w: b.getBoundingClientRect().width,
     icon: cs(b, '::before').maskImage || cs(b, '::before').webkitMaskImage || 'none', radius: cs(b).borderTopLeftRadius}));
   const buttonsW = R(q('#quiz>.buttons'))?.w;

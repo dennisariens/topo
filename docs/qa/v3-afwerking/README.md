@@ -48,3 +48,7 @@ De typeschaal volgt nu de gemeten desktop- en iPad-tabel in renders/README. De w
 De checks meten minimumgroottes van titel, nav en rijen/chips; daarnaast elf rijen zonder afsnijding en Eiland. `TOPO_QA_QUICK=1` draait alleen desktop/BG-01 voor een tussentijdse controle; de eindcontrole gebruikt de volledige matrix zonder die variabele. Definitief bewijs volgt in stap 5.
 
 Afwijking: Oefenen heeft ook op desktop twee chipkolommen, om de volledige namen op 17 px samen met de grote kaart en bediening rechts te laten passen. De iPad-les in Focus Mode blijft het eerder vastgelegde open punt (geen herschikking van de V2-focuslogica).
+
+De titelminimumcheck geldt voor schermtitels, niet voor de vraagkop in de V2-focusles. De iPad-kolom van de kalibratietabel geldt voor liggend; de bestaande staande Reis-titel blijft 30 px.
+
+Eindrun op preview `4ac7b42…`: alle 41 runs geslaagd. Zie [de volledige bewijsregistratie](../v3-stijlbeeld/final/verification.json).

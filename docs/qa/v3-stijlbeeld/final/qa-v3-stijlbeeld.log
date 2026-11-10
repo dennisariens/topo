@@ -1,0 +1,53 @@
+{
+ "indexUnchanged": true,
+ "backdropIsBG01": true,
+ "bgAlternativesSwitch": true,
+ "phoneNoBackdrop": true,
+ "glassPanels": true,
+ "reducedTransparencyOpaque": true,
+ "miniaturesMatchManifest": true,
+ "cardWithoutKop": true,
+ "portraitIsNinoPortret": true,
+ "counterIcons": true,
+ "rewardsArt": true,
+ "rewardsCountsMatchV2Book": true,
+ "rewardsView": true,
+ "rewardsLayout": {},
+ "lessonToRewards": true,
+ "reliefDefaultZ8": true,
+ "reliefLayersMatchProvenance": true,
+ "reliefLayerOrder": true,
+ "reliefIsDecorationOnly": true,
+ "neighboursDimmed": true,
+ "geometrySame": {
+  "desktop-viola": "46/46",
+  "desktop-italia": "46/46",
+  "ipad-landscape-viola": "46/46",
+  "ipad-landscape-italia": "46/46",
+  "phone-viola": "46/46"
+ },
+ "geometryAllSame": true,
+ "themes": {
+  "desktop-viola": "#5b45e0",
+  "desktop-italia": "#b9502f",
+  "ipad-landscape-viola": "#5b45e0",
+  "ipad-landscape-italia": "#b9502f",
+  "phone-viola": "#5b45e0"
+ },
+ "themePairs": {
+  "italia-viola-desktop": [
+   "bezig/italia",
+   "bezig"
+  ],
+  "italia-viola-ipad": [
+   "bezig/italia",
+   "bezig"
+  ]
+ },
+ "namesClipped": [],
+ "namesTwoLines": [],
+ "primaryAboveFold": true,
+ "horizontalOverflow": [],
+ "errors": 0
+}
+problems: none

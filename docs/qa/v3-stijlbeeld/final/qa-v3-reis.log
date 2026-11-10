@@ -1,0 +1,265 @@
+{
+ "primaryAboveFoldAll": true,
+ "primaryBelowFold": [],
+ "overlaps": {},
+ "clipped": {
+  "desktop/nieuw": [
+   "Instellingen",
+   "Hoofdstukken"
+  ],
+  "desktop/bezig": [
+   "Instellingen",
+   "Hoofdstukken"
+  ],
+  "desktop/afgerond": [
+   "Instellingen",
+   "Hoofdstukken"
+  ],
+  "desktop/alles": [
+   "Instellingen",
+   "Hoofdstukken"
+  ],
+  "ipad-portrait/nieuw": [
+   "Hoofdstukken"
+  ],
+  "ipad-portrait/bezig": [
+   "Hoofdstukken"
+  ],
+  "ipad-portrait/afgerond": [
+   "Hoofdstukken"
+  ],
+  "ipad-portrait/alles": [
+   "Hoofdstukken"
+  ],
+  "ipad-landscape/nieuw": [
+   "Instellingen",
+   "Hoofdstukken"
+  ],
+  "ipad-landscape/bezig": [
+   "Instellingen",
+   "Hoofdstukken"
+  ],
+  "ipad-landscape/afgerond": [
+   "Instellingen",
+   "Hoofdstukken"
+  ],
+  "ipad-landscape/alles": [
+   "Instellingen",
+   "Hoofdstukken"
+  ],
+  "phone/nieuw": [
+   "Reis",
+   "Hoofdstukken"
+  ],
+  "phone/bezig": [
+   "Reis",
+   "Hoofdstukken"
+  ],
+  "phone/afgerond": [
+   "Reis",
+   "Hoofdstukken"
+  ],
+  "phone/alles": [
+   "Reis",
+   "Hoofdstukken"
+  ],
+  "phone-small/nieuw": [
+   "Reis",
+   "Hoofdstukken"
+  ],
+  "phone-small/bezig": [
+   "Reis",
+   "Hoofdstukken"
+  ],
+  "phone-small/afgerond": [
+   "Reis",
+   "Hoofdstukken"
+  ],
+  "phone-small/alles": [
+   "Reis",
+   "Hoofdstukken"
+  ]
+ },
+ "brokenWords": {},
+ "smallTargets": {},
+ "horizontalOverflow": [],
+ "lastRowHiddenByTabBar": [],
+ "mapFrameShort": {
+  "desktop/nieuw": [
+   "Noord-Afrika"
+  ],
+  "desktop/bezig": [
+   "Noord-Afrika"
+  ],
+  "desktop/afgerond": [
+   "Noord-Afrika"
+  ],
+  "desktop/alles": [
+   "Noord-Afrika"
+  ],
+  "ipad-portrait/nieuw": [
+   "Noord-Afrika"
+  ],
+  "ipad-portrait/bezig": [
+   "Noord-Afrika"
+  ],
+  "ipad-portrait/afgerond": [
+   "Noord-Afrika"
+  ],
+  "ipad-portrait/alles": [
+   "Noord-Afrika"
+  ],
+  "ipad-landscape/nieuw": [
+   "Noord-Afrika"
+  ],
+  "ipad-landscape/bezig": [
+   "Noord-Afrika"
+  ],
+  "ipad-landscape/afgerond": [
+   "Noord-Afrika"
+  ],
+  "ipad-landscape/alles": [
+   "Noord-Afrika"
+  ],
+  "phone/nieuw": [
+   "Noord-Afrika",
+   "Oostenrijk"
+  ],
+  "phone/bezig": [
+   "Noord-Afrika",
+   "Oostenrijk"
+  ],
+  "phone/afgerond": [
+   "Noord-Afrika",
+   "Oostenrijk"
+  ],
+  "phone/alles": [
+   "Noord-Afrika",
+   "Oostenrijk"
+  ],
+  "phone-small/nieuw": [
+   "Noord-Afrika",
+   "Oostenrijk"
+  ],
+  "phone-small/bezig": [
+   "Noord-Afrika",
+   "Oostenrijk"
+  ],
+  "phone-small/afgerond": [
+   "Noord-Afrika",
+   "Oostenrijk"
+  ],
+  "phone-small/alles": [
+   "Noord-Afrika",
+   "Oostenrijk"
+  ]
+ },
+ "labelsWithLearningName": {},
+ "labelCheckCatchesControl": true,
+ "contextLabels": [
+  "BOSNIË",
+  "DUITSLAND",
+  "HONGARIJE",
+  "I T A L I Ë",
+  "SLOWAKIJE",
+  "TSJECHIË",
+  "TUNESIË",
+  "▲"
+ ],
+ "switchCoversPlace": {},
+ "phoneSelectFocusOnTitle": true,
+ "errors": 0
+}
+{
+ "desktop": {
+  "mapGeometry": {
+   "same": 46,
+   "diff": [],
+   "total": 46
+  },
+  "defaultSelected": "islands",
+  "hitsForCurrent": [
+   "area-a",
+   "area-b"
+  ],
+  "lockedText": "Opent na Bergen",
+  "lockedPrimary": 0,
+  "reliefOn": "block",
+  "reliefOff": "none",
+  "donePrimary": "Goud nog eens",
+  "replays": [
+   "Ontdekken",
+   "Aanwijzen",
+   "Namen schrijven"
+  ],
+  "replayStarted": {
+   "chapter": "city2",
+   "kind": "discover",
+   "mode": "route",
+   "v3Hidden": true
+  },
+  "backVia": "v3Btn v3NavItem",
+  "primaryLabelWithActive": "Ga verder · Ontdekken",
+  "questionBefore": "city-10",
+  "reisVerderSameQuestion": {
+   "id": "city-10",
+   "chapter": "city2",
+   "kind": "discover"
+  },
+  "sameQuestion": true,
+  "activeTab": [
+   "Reis:page",
+   "Oefenen:false",
+   "Reisboekje:null",
+   "⚙:null"
+  ],
+  "memoryStorage": true
+ },
+ "phone": {
+  "mapGeometry": {
+   "same": 46,
+   "diff": [],
+   "total": 46
+  },
+  "defaultSelected": "islands",
+  "hitsForCurrent": [
+   "area-a",
+   "area-b"
+  ],
+  "lockedText": "Opent na Bergen",
+  "lockedPrimary": 0,
+  "reliefOn": "block",
+  "reliefOff": "none",
+  "donePrimary": "Goud nog eens",
+  "replays": [
+   "Ontdekken",
+   "Aanwijzen",
+   "Namen schrijven"
+  ],
+  "phonePanelInView": true,
+  "replayStarted": {
+   "chapter": "city2",
+   "kind": "discover",
+   "mode": "route",
+   "v3Hidden": true
+  },
+  "backVia": "v3Btn v3LesBack",
+  "primaryLabelWithActive": "Ga verder · Ontdekken",
+  "questionBefore": "city-12",
+  "reisVerderSameQuestion": {
+   "id": "city-12",
+   "chapter": "city2",
+   "kind": "discover"
+  },
+  "sameQuestion": true,
+  "activeTab": [
+   "Reis:page",
+   "Oefenen:false",
+   "Reisboekje:null",
+   "⚙:null"
+  ],
+  "memoryStorage": true
+ }
+}
+{"order": ["Kennismaking", "Nieuw profiel", "Halte bezig", "Haltes afgerond", "Alles af", "Italia", "Viola", "BG-01 Toscane", "BG-02 Meer", "BG-03 Kust", "Naast elkaar: desktop + ", "Italia + Viola", "Reis", "Oefenen", "Toets", "Beloningen", "Voortgang", "Instellingen", "city1", "city2", "city3", "city4", "islands", "mountains", "volcanoes", "regions"], "enterSelects": "true", "focusRing": "solid 3px"}
+theme {'viola': 'rgba(0, 0, 0, 0)', 'italia': 'rgba(0, 0, 0, 0)'} reducedMotion 0s

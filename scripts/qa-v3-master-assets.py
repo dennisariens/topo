@@ -28,8 +28,10 @@ async def main():
    await p.evaluate('TOPO_V3.shell.go("reis")');await q.play_toets(p)
    result=await p.locator('.v3ToetsNino img').evaluate('(n)=>({ok:n.complete&&n.naturalWidth>0,id:n.parentElement.dataset.v3Master})')
    assert result['ok'] and result['id']=='VESPA-RIJDEND'
+   label=await p.locator('.v3ToetsLabel').evaluate('''n=>{const r=n.getBoundingClientRect(),top=document.elementFromPoint(r.x+r.width/2,r.y+r.height/2),card=n.closest('.v3ToetsScoreCard');return {clear:r.top>=0&&r.bottom<=innerHeight&&(top===n||n.contains(top)||card===top),glass:getComputedStyle(card).backgroundColor};}''')
+   assert label['clear'] and label['glass'] not in ('rgba(0, 0, 0, 0)','transparent'),label
    assert not errors,errors
-   runs[vp]={'setup':setup,'result':result,'offline':True};await c.close()
+   runs[vp]={'setup':setup,'result':result,'label':label,'offline':True};await c.close()
   await b.close()
  out=ROOT/'docs/qa/v3-stijlbeeld/master-assets.json';out.write_text(json.dumps({'source':PIN,'pipeline':'b70e1ac','masters':len(entries),'runs':runs,'pass':True},indent=2)+'\n');print('13 provenance/exports and 3 offline viewports PASS')
 if __name__=='__main__':asyncio.run(main())

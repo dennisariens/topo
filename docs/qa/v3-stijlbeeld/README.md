@@ -96,3 +96,7 @@ Voor = pin `43e56d1`, na = fase A tot en met stap 2: canvas en glas, plus de kaa
 | Oefenen | [voor/na](voor-na-oefenen-desktop.jpg) | [voor/na](voor-na-oefenen-ipad-liggend.jpg) |
 | Toets | [voor/na](voor-na-toets-desktop.jpg) | [voor/na](voor-na-toets-ipad-liggend.jpg) |
 | Voortgang | [voor/na](voor-na-voortgang-desktop.jpg) | [voor/na](voor-na-voortgang-ipad-liggend.jpg) |
+
+## Eindbewijs overdracht 3b–5 (10-11 avond)
+
+Het [reviewpakket](final/README.md) bevat 21 vergelijkingen naast de doelbeelden (desktop, iPad liggend en telefoon), een register met de exacte preview- en scripthashes en de logs van alle V3-checks. Dit is het actuele bewijs voor de kalibratie en master-assets; de eerdere vergelijkingen hierboven zijn de historische tussenstappen. Designerakkoord en de Hermes-hertest blijven open volgens de overdracht.

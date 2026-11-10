@@ -43,7 +43,7 @@ TEXTS = r'''() => {
       const clipped = (() => { for (let a = n.parentElement; a && a !== document.body; a = a.parentElement) { const o = cs(a); if (o.overflowX !== 'visible' || o.overflowY !== 'visible') { const q = a.getBoundingClientRect();
         if (r.top < q.top - 1 || r.bottom > q.bottom + 1 || r.left < q.left - 1 || r.right > q.right + 1) return true; } } return false; })();
       return {t: n.textContent.trim().slice(0, 24), color: s.color, size: parseFloat(s.fontSize), weight: parseInt(s.fontWeight), box: [r.left, r.top, r.width, r.height], clipped,
-        kind: n.matches('.v3NavItem,.v3NavItem span') ? 'nav' : n.matches('h1:not(.v3ToetsScore)') ? 'title' : n.matches('.v3Name,.v3VgName,.v3Chip,.v3FormBtn,.v3Tile>span,.v3ToetsTile') ? 'row' : '', disabled: !!n.closest('button[disabled]')}; })
+        kind: n.matches('.v3NavItem,.v3NavItem span') ? 'nav' : n.matches('.v3ScreenTitle,.v3View>h1,.v3ToetsSetup>h1,.v3VgTitleBar h1') ? 'title' : n.matches('.v3Name,.v3VgName,.v3Chip,.v3FormBtn,.v3Tile>span,.v3ToetsTile') ? 'row' : '', disabled: !!n.closest('button[disabled]')}; })
     .filter(x => x.box[2] > 2 && x.box[3] > 2 && x.box[0] >= 0 && x.box[1] >= 0 && x.box[0] + x.box[2] <= W && x.box[1] + x.box[3] <= H && !x.clipped);
 }'''
 
@@ -174,7 +174,7 @@ async def main():
                     f = lambda why: fails.append(f'{tag}: {why}')
                     if small: f(f'text < 13 px: {small[:5]}')
                     for t in texts:
-                        minimum = {'title': 44 if w >= 1280 else 36, 'nav': 18 if w >= 1280 else 16, 'row': 17 if w >= 1280 else 16}.get(t['kind'], 0)
+                        minimum = {'title': 44 if w >= 1280 else 36 if w >= 1024 else 30, 'nav': 18 if w >= 1280 else 16, 'row': 17 if w >= 1280 else 16}.get(t['kind'], 0)
                         if t['size'] < minimum: f(f"{t['kind']} {t['t']}: {t['size']} < {minimum}")
                     if low: f(f'contrast < AA: {low[:4]}')
                     if hov: f('horizontal overflow')

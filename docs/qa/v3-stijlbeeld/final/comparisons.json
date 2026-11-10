@@ -1,0 +1,152 @@
+{
+  "previewSha256": "4ac7b42cc9251beb1a922f7f4a3bd8f20493870a0476aa9505f1cefb862d06d1",
+  "runs": {
+    "reis/desktop": {
+      "reference": "R-reis-ijk",
+      "viewport": [
+        1440,
+        900
+      ]
+    },
+    "oefenen/desktop": {
+      "reference": "R-oefenen-ijk-rust",
+      "viewport": [
+        1440,
+        900
+      ]
+    },
+    "les/desktop": {
+      "reference": "R-les",
+      "viewport": [
+        1440,
+        900
+      ]
+    },
+    "toets/desktop": {
+      "reference": "R-toets-instellen",
+      "viewport": [
+        1440,
+        900
+      ]
+    },
+    "toetsResult/desktop": {
+      "reference": "R-toets-resultaat",
+      "viewport": [
+        1440,
+        900
+      ]
+    },
+    "rewards/desktop": {
+      "reference": "R-beloningen",
+      "viewport": [
+        1440,
+        900
+      ]
+    },
+    "voortgang/desktop": {
+      "reference": "R-voortgang-doel",
+      "viewport": [
+        1440,
+        900
+      ]
+    },
+    "reis/ipad-liggend": {
+      "reference": "R-reis-ijk",
+      "viewport": [
+        1180,
+        820
+      ]
+    },
+    "oefenen/ipad-liggend": {
+      "reference": "R-oefenen-ijk-rust",
+      "viewport": [
+        1180,
+        820
+      ]
+    },
+    "les/ipad-liggend": {
+      "reference": "R-les",
+      "viewport": [
+        1180,
+        820
+      ]
+    },
+    "toets/ipad-liggend": {
+      "reference": "R-toets-instellen",
+      "viewport": [
+        1180,
+        820
+      ]
+    },
+    "toetsResult/ipad-liggend": {
+      "reference": "R-toets-resultaat",
+      "viewport": [
+        1180,
+        820
+      ]
+    },
+    "rewards/ipad-liggend": {
+      "reference": "R-beloningen",
+      "viewport": [
+        1180,
+        820
+      ]
+    },
+    "voortgang/ipad-liggend": {
+      "reference": "R-voortgang-doel",
+      "viewport": [
+        1180,
+        820
+      ]
+    },
+    "reis/telefoon": {
+      "reference": "R-reis-ijk",
+      "viewport": [
+        390,
+        844
+      ]
+    },
+    "oefenen/telefoon": {
+      "reference": "R-oefenen-ijk-rust",
+      "viewport": [
+        390,
+        844
+      ]
+    },
+    "les/telefoon": {
+      "reference": "R-les",
+      "viewport": [
+        390,
+        844
+      ]
+    },
+    "toets/telefoon": {
+      "reference": "R-toets-instellen",
+      "viewport": [
+        390,
+        844
+      ]
+    },
+    "toetsResult/telefoon": {
+      "reference": "R-toets-resultaat",
+      "viewport": [
+        390,
+        844
+      ]
+    },
+    "rewards/telefoon": {
+      "reference": "R-beloningen",
+      "viewport": [
+        390,
+        844
+      ]
+    },
+    "voortgang/telefoon": {
+      "reference": "R-voortgang-doel",
+      "viewport": [
+        390,
+        844
+      ]
+    }
+  }
+}

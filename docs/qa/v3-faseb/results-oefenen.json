@@ -3,11 +3,11 @@
   "desktop/eiland/city2": {
    "gut": 24,
    "col": 68,
-   "viewCols": "6",
+   "viewCols": "5",
    "big": [
     "Oefenen"
    ],
-   "chipCols": 3,
+   "chipCols": 2,
    "portrait": 112,
    "kaart": "eiland",
    "focus": "points",
@@ -16,11 +16,11 @@
   "desktop/eiland/islands": {
    "gut": 24,
    "col": 68,
-   "viewCols": "6",
+   "viewCols": "5",
    "big": [
     "Oefenen"
    ],
-   "chipCols": 3,
+   "chipCols": 2,
    "portrait": 112,
    "kaart": "eiland",
    "focus": "areas",
@@ -29,7 +29,7 @@
   "desktop/eiland/smart": {
    "gut": 24,
    "col": 68,
-   "viewCols": "6",
+   "viewCols": "5",
    "big": [
     "Oefenen"
    ],
@@ -42,7 +42,7 @@
   "ipad-liggend/eiland/city2": {
    "gut": 16,
    "col": 59.666666666666664,
-   "viewCols": "5",
+   "viewCols": "6",
    "big": [
     "Oefenen"
    ],
@@ -55,7 +55,7 @@
   "ipad-liggend/eiland/islands": {
    "gut": 16,
    "col": 59.666666666666664,
-   "viewCols": "5",
+   "viewCols": "6",
    "big": [
     "Oefenen"
    ],
@@ -68,7 +68,7 @@
   "ipad-liggend/eiland/smart": {
    "gut": 16,
    "col": 59.666666666666664,
-   "viewCols": "5",
+   "viewCols": "6",
    "big": [
     "Oefenen"
    ],

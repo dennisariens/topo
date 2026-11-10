@@ -12,6 +12,10 @@
         "ok": true,
         "id": "VESPA-RIJDEND"
       },
+      "label": {
+        "clear": true,
+        "glass": "rgb(255, 253, 249)"
+      },
       "offline": true
     },
     "ipad-liggend": {
@@ -23,6 +27,10 @@
         "ok": true,
         "id": "VESPA-RIJDEND"
       },
+      "label": {
+        "clear": true,
+        "glass": "rgb(255, 253, 249)"
+      },
       "offline": true
     },
     "telefoon": {
@@ -33,6 +41,10 @@
       "result": {
         "ok": true,
         "id": "VESPA-RIJDEND"
+      },
+      "label": {
+        "clear": true,
+        "glass": "rgba(255, 255, 255, 0.72)"
       },
       "offline": true
     }

@@ -1,0 +1,34 @@
+{
+  "previewSha256": "4ac7b42cc9251beb1a922f7f4a3bd8f20493870a0476aa9505f1cefb862d06d1",
+  "indexSha256": "3aced3c31259011b0af2947c78f71965cb4beb2e88c69d1663e61792b0304f5a",
+  "qaSuiteSha256": "83d014ea7e2d0b6117ff25ad2e676c90ffe56a97992a504fa6b74f6f112d1685",
+  "previewBytes": 53023281,
+  "qaScripts": 18,
+  "comparisonScreens": 7,
+  "comparisonViewports": 3,
+  "comparisons": 21,
+  "contrastTypographyRuns": 41,
+  "geometry": {
+    "desktop": {
+      "same": 46,
+      "diff": [],
+      "total": 46
+    },
+    "phone": {
+      "same": 46,
+      "diff": [],
+      "total": 46
+    }
+  },
+  "indexAndV2EnginesUnchanged": true,
+  "previewTracked": false,
+  "commands": {
+    "npm run lint": "pass; npm-lint.log",
+    "NODE_OPTIONS=--no-experimental-webstorage npm test": "pass; npm-test.log",
+    "npm run build": "pass; npm-build.log",
+    "test-v3-qa-runner.py": "pass; qa-runner-regression.log",
+    "qa-v3-all.py": "pass; results-all.json"
+  },
+  "acceptance": "lead designer and independent Hermes review open; no merge/deploy/publication",
+  "pass": true
+}

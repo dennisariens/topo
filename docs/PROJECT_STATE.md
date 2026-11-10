@@ -1,3 +1,15 @@
+# V3.0 — overdracht 3b–5 (10 november 2026)
+
+Branch `codex/topo-v3`. **Kalibratie** `9dcdfd3`: de gemeten typeschaal, helder artwork zonder wash over het inhoudsvlak, warmer reliëf, Voortgang als Eiland met elf volledige rijen en de toetsscore terug op glas. **Master-assets** `15b1619`, uit de pijplijn `art/v3-render-assets` @ `b70e1ac`, bron `339c420`: technische WebP-exports met SHA256, bron en status eigenaar akkoord / Hermes open. NINO-ONDERWEG is de rijdende rode Vespa; de paspoortomslag en het paspoortbinnenwerk zijn niet overgenomen.
+
+Het [reviewpakket met 21 vergelijkingen](qa/v3-stijlbeeld/final/README.md) bevat desktop 1440×900, iPad liggend 1180×820 en telefoon 390×844. Preview-SHA256 `4ac7b42cc9251beb1a922f7f4a3bd8f20493870a0476aa9505f1cefb862d06d1`; `index.html` blijft `3aced3c31259011b0af2947c78f71965cb4beb2e88c69d1663e61792b0304f5a`. De preview-HTML wordt niet gecommit. Het actuele [QA-register](qa/v3-stijlbeeld/final/results-all.json) koppelt elk resultaat aan preview-, index- en testhash en verwerpt wijzigingen tijdens de run.
+
+**Verificatie eindbuild:** 18/18 V3-QA-scripts groen, 41/41 contrast- en typografieruns groen, geometrie 46/46 en lint/test/build groen. [Vastgelegde controle](qa/v3-stijlbeeld/final/verification.json). De QA-runnerregressie controleert ook geïmporteerde helpers.
+
+**Open voor review:** de gedocumenteerde iPad Focus Mode-uitzondering (leskaart en antwoordblad behouden hun V2-indeling), twee chipkolommen op desktop Oefenen, fysiek iPad/Safari/VoiceOver, designerakkoord en de onafhankelijke Hermes-modelcheck/hertest. Dit is bouwbewijs, geen zelfstandig releaseakkoord. Na stap 5 stopt de bouw: de lead designer reviewt en vraagt daarna Hermes aan. Geen merge, deploy, publicatie of downloadvervanging.
+
+---
+
 # TOPO V3 — golden screen 1: Reis (9 november 2026)
 
 Branch `codex/topo-v3` vanaf de V2-afsluiting `f53dc0b` (voorouder `v2.0.2` = `83ec1ce` gecontroleerd). Reis v3b volgt de conceptrichting van de eigenaar: zijbalk · hoofdstukken · echte kaart · één actie, met Schoolkaart/Reliëf en landthema's (Italia, Viola). Presentatielaag `scripts/v3/` over de ongewijzigde V2.0.2-app; acties drukken de bestaande V2-knoppen. Preview: `node scripts/build-v3-preview.mjs` (niet meer in Git). [Audit](v3/AUDIT.md) · [ontwerpsysteem V3](DESIGN_SYSTEM.md) · [feedbacklog](v3/DESIGN_FEEDBACK.md) · [bewijs en open punten](qa/v3-reis/README.md). Eigenaar: v3b akkoord, Italia standaard. **Kaartkader verwerkt** (9 november): ruimer kader, echte zee, smalle randfade; buurlanden, zeeën en eilanden blijven zichtbaar (gemeten, zie bewijs). **Golden Experience 01, beat 3–7** (9 november): de les in V3 — lesstappen boven de kaart, taakpaneel, V2-feedback, verdiende pizza/Vespa/stempel en Reisboekje — gespeeld met echte tikken op vijf formaten ([spec](v3/GE01.md) · [bewijs](qa/v3-les/README.md)). Preview SHA256 `873f91f2…49ed`. Eigenaar 9-11: akkoord met de adviezen (sheet opent na antwoord, teller telt herhalingen, hulpregels/oefenmodi uit de les). Open: visueel oordeel eigenaar; daarna Reisboekje/Vespa-rit V3 of Oefenen. Geen merge, deployment of downloadvervanging.

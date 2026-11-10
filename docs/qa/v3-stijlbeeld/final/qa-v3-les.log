@@ -1,0 +1,321 @@
+{
+ "indexUnchanged": true,
+ "currentStepPerBeat": {
+  "desktop": {
+   "discover": "discover",
+   "point-q": "point",
+   "point-wrong": "point",
+   "point-ok": "point",
+   "pizza": "point",
+   "pause": "point",
+   "point-done": null,
+   "write-q": "write",
+   "write-wrong": "write",
+   "write-ok": "write",
+   "vespa": "write",
+   "finish": null
+  },
+  "ipad-landscape": {
+   "discover": "discover",
+   "point-q": "point",
+   "point-wrong": "point",
+   "point-ok": "point",
+   "pizza": "point",
+   "pause": "point",
+   "point-done": null,
+   "write-q": "write",
+   "write-wrong": "write",
+   "write-ok": "write",
+   "vespa": "write",
+   "finish": null
+  },
+  "ipad-portrait": {
+   "discover": "discover",
+   "point-q": "point",
+   "point-wrong": "point",
+   "point-ok": "point",
+   "pizza": "point",
+   "pause": "point",
+   "point-done": null,
+   "write-q": "write",
+   "write-wrong": "write",
+   "write-ok": "write",
+   "vespa": "write",
+   "finish": null
+  },
+  "phone": {
+   "discover": "discover",
+   "point-q": "point",
+   "point-wrong": "point",
+   "point-ok": "point",
+   "pizza": "point",
+   "pause": "point",
+   "point-done": null,
+   "write-q": "write",
+   "write-wrong": "write",
+   "write-ok": "write",
+   "vespa": "write",
+   "finish": null
+  },
+  "phone-small": {
+   "discover": "discover",
+   "point-q": "point",
+   "point-wrong": "point",
+   "point-ok": "point",
+   "pizza": "point",
+   "pause": "point",
+   "point-done": null,
+   "write-q": "write",
+   "write-wrong": "write",
+   "write-ok": "write",
+   "vespa": "write",
+   "finish": null
+  }
+ },
+ "stepsRight": true,
+ "oneMainAction": {},
+ "noMainAction": [
+  "desktop/discover",
+  "desktop/point-wrong",
+  "desktop/point-ok",
+  "desktop/pizza",
+  "desktop/pause",
+  "desktop/point-done",
+  "desktop/write-wrong",
+  "desktop/write-ok",
+  "desktop/finish",
+  "ipad-landscape/discover",
+  "ipad-landscape/point-wrong",
+  "ipad-landscape/point-ok",
+  "ipad-landscape/pizza",
+  "ipad-landscape/pause",
+  "ipad-landscape/point-done",
+  "ipad-landscape/write-wrong",
+  "ipad-landscape/write-ok",
+  "ipad-landscape/finish",
+  "ipad-portrait/discover",
+  "ipad-portrait/point-wrong",
+  "ipad-portrait/point-ok",
+  "ipad-portrait/pizza",
+  "ipad-portrait/pause",
+  "ipad-portrait/point-done",
+  "ipad-portrait/write-wrong",
+  "ipad-portrait/write-ok",
+  "ipad-portrait/finish",
+  "phone/discover",
+  "phone/point-wrong",
+  "phone/point-ok",
+  "phone/pizza",
+  "phone/pause",
+  "phone/point-done",
+  "phone/write-wrong",
+  "phone/write-ok",
+  "phone/finish",
+  "phone-small/discover",
+  "phone-small/point-wrong",
+  "phone-small/point-ok",
+  "phone-small/pizza",
+  "phone-small/pause",
+  "phone-small/point-done",
+  "phone-small/write-wrong",
+  "phone-small/write-ok",
+  "phone-small/finish"
+ ],
+ "collapsedSheetAfterAnswer": [],
+ "sheetOpensAfterAnswer": {
+  "desktop": [],
+  "ipad-landscape": [
+   true
+  ],
+  "ipad-portrait": [],
+  "phone": [
+   true
+  ],
+  "phone-small": [
+   true,
+   true
+  ]
+ },
+ "pointByRealTap": {
+  "desktop": [
+   "tap+kiezer",
+   "tap",
+   "tap",
+   "tap",
+   "tap",
+   "tap"
+  ],
+  "ipad-landscape": [
+   "tap+kiezer",
+   "tap",
+   "tap",
+   "tap+vrijmaken",
+   "tap+kiezer",
+   "tap"
+  ],
+  "ipad-portrait": [
+   "tap",
+   "tap",
+   "tap+kiezer",
+   "tap",
+   "tap",
+   "tap"
+  ],
+  "phone": [
+   "tap",
+   "tap+kiezer",
+   "tap",
+   "tap+kiezer",
+   "tap+vrijmaken",
+   "tap+kiezer"
+  ],
+  "phone-small": [
+   "tap",
+   "tap+kiezer+vrijmaken",
+   "tap+kiezer",
+   "tap+vrijmaken",
+   "tap",
+   "tap+kiezer"
+  ]
+ },
+ "tapsBlockedByV3": [],
+ "wrongAnswersNotRewarded": true,
+ "feedbackFromV2": true,
+ "meterMatchesState": true,
+ "rewardMomentsOnRealCount": true,
+ "pizzaAndVespaSeen": {
+  "desktop": [
+   "pizzaCelebration",
+   "vespaRide"
+  ],
+  "ipad-landscape": [
+   "pizzaCelebration",
+   "vespaRide"
+  ],
+  "ipad-portrait": [
+   "pizzaCelebration",
+   "vespaRide"
+  ],
+  "phone": [
+   "pizzaCelebration",
+   "vespaRide"
+  ],
+  "phone-small": [
+   "pizzaCelebration",
+   "vespaRide"
+  ]
+ },
+ "draftSurvivesFormatChange": true,
+ "finishStampAndBook": true,
+ "bookTapLandsOnButton": true,
+ "finishOneBackButton": {
+  "desktop": [
+   "Bekijk in Reisboekje",
+   "Later",
+   "Terug naar mijn reis →"
+  ],
+  "ipad-landscape": [
+   "Bekijk in Reisboekje",
+   "Later",
+   "Terug naar mijn reis →"
+  ],
+  "ipad-portrait": [
+   "Bekijk in Reisboekje",
+   "Later",
+   "Terug naar mijn reis →"
+  ],
+  "phone": [
+   "Bekijk in Reisboekje",
+   "Later",
+   "Terug naar mijn reis →"
+  ],
+  "phone-small": [
+   "Bekijk in Reisboekje",
+   "Later",
+   "Terug naar mijn reis →"
+  ]
+ },
+ "backToReisNextChapter": true,
+ "v2ChromeVisible": {},
+ "barOverlaps": {},
+ "clipped": {
+  "ipad-portrait/write-q": [
+   "Namen schrijven"
+  ],
+  "ipad-portrait/write-wrong": [
+   "Namen schrijven"
+  ],
+  "ipad-portrait/write-ok": [
+   "Namen schrijven"
+  ],
+  "ipad-portrait/vespa": [
+   "Namen schrijven"
+  ]
+ },
+ "smallTargets": {
+  "desktop/discover": [
+   "Ontdekken 148x40",
+   "Aanwijzen 144x40",
+   "Namen schrijven 188x40"
+  ],
+  "desktop/point-q": [
+   "Ontdekken 147x40",
+   "Aanwijzen 144x40",
+   "Namen schrijven 188x40"
+  ],
+  "desktop/point-wrong": [
+   "Ontdekken 147x40",
+   "Aanwijzen 144x40",
+   "Namen schrijven 188x40"
+  ],
+  "desktop/point-ok": [
+   "Ontdekken 147x40",
+   "Aanwijzen 144x40",
+   "Namen schrijven 188x40"
+  ],
+  "desktop/pizza": [
+   "Ontdekken 147x40",
+   "Aanwijzen 144x40",
+   "Namen schrijven 188x40"
+  ],
+  "desktop/pause": [
+   "Ontdekken 147x40",
+   "Aanwijzen 144x40",
+   "Namen schrijven 188x40"
+  ],
+  "desktop/point-done": [
+   "Ontdekken 147x40",
+   "Aanwijzen 144x40",
+   "Namen schrijven 188x40"
+  ],
+  "desktop/write-q": [
+   "Ontdekken 147x40",
+   "Aanwijzen 144x40",
+   "Namen schrijven 189x40"
+  ],
+  "desktop/write-wrong": [
+   "Ontdekken 147x40",
+   "Aanwijzen 144x40",
+   "Namen schrijven 189x40"
+  ],
+  "desktop/write-ok": [
+   "Ontdekken 147x40",
+   "Aanwijzen 144x40",
+   "Namen schrijven 189x40"
+  ],
+  "desktop/vespa": [
+   "Ontdekken 147x40",
+   "Aanwijzen 144x40",
+   "Namen schrijven 189x40"
+  ],
+  "desktop/finish": [
+   "Ontdekken 147x40",
+   "Aanwijzen 144x40",
+   "Namen schrijven 188x40",
+   "★ Goud 83x40"
+  ]
+ },
+ "horizontalOverflow": [],
+ "reducedMotion": "0s",
+ "errors": 0
+}

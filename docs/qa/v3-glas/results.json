@@ -1,6 +1,6 @@
 {
  "html": "/Users/dennisariens/projects/topo-v3/output/html/TOPO-V3-Reis-Preview.html",
- "sha256": "17455c379266dfcae00ef2928cf2ff70c2017bf50ca64b7d21e4215bf41f5cb1",
+ "sha256": "4ac7b42cc9251beb1a922f7f4a3bd8f20493870a0476aa9505f1cefb862d06d1",
  "indexSha256": "3aced3c31259011b0af2947c78f71965cb4beb2e88c69d1663e61792b0304f5a",
  "label": "na",
  "runs": {
@@ -12,7 +12,7 @@
     844,
     "28px"
    ],
-   "free": 0.641,
+   "free": 0.627,
    "wide": [],
    "edge": {
     "selector": ".v3Map",
@@ -27,16 +27,16 @@
     "seeThrough": [],
     "box": [
      300,
-     182,
+     187,
      620,
-     658
+     653
     ]
    },
    "theme": "#5b45e0",
    "les": false,
    "view": "reis",
    "hOverflow": false,
-   "freePct": 64.1,
+   "freePct": 62.7,
    "lowContrast": [],
    "backdropFilters": [
     "blur(28px) saturate(1.4)"
@@ -52,7 +52,7 @@
     844,
     "28px"
    ],
-   "free": 0.279,
+   "free": 0.28,
    "wide": [],
    "edge": {
     "selector": ".v3Map",
@@ -67,16 +67,16 @@
     "seeThrough": [],
     "box": [
      300,
-     182,
+     187,
      620,
-     658
+     653
     ]
    },
    "theme": "#5b45e0",
    "les": false,
    "view": "reis",
    "hOverflow": false,
-   "freePct": 27.9,
+   "freePct": 28.0,
    "lowContrast": [],
    "backdropFilters": [
     "none"
@@ -92,7 +92,7 @@
     844,
     "28px"
    ],
-   "free": 0.64,
+   "free": 0.626,
    "wide": [],
    "edge": {
     "selector": ".v3Map",
@@ -107,16 +107,16 @@
     "seeThrough": [],
     "box": [
      300,
-     182,
+     187,
      620,
-     658
+     653
     ]
    },
    "theme": "#5b45e0",
    "les": false,
    "view": "reis",
    "hOverflow": false,
-   "freePct": 64.0,
+   "freePct": 62.6,
    "lowContrast": [],
    "backdropFilters": [
     "blur(28px) saturate(1.4)"
@@ -132,7 +132,7 @@
     844,
     "28px"
    ],
-   "free": 0.523,
+   "free": 0.522,
    "wide": [],
    "edge": {
     "selector": "#map",
@@ -156,7 +156,7 @@
    "les": true,
    "view": "reis",
    "hOverflow": false,
-   "freePct": 52.3,
+   "freePct": 52.2,
    "lowContrast": [],
    "backdropFilters": [
     "blur(28px) saturate(1.4)",
@@ -173,7 +173,7 @@
     844,
     "28px"
    ],
-   "free": 0.306,
+   "free": 0.292,
    "wide": [],
    "edge": {
     "selector": "#map",
@@ -197,7 +197,7 @@
    "les": true,
    "view": "reis",
    "hOverflow": false,
-   "freePct": 30.6,
+   "freePct": 29.2,
    "lowContrast": [],
    "backdropFilters": [
     "none"
@@ -213,7 +213,7 @@
     844,
     "28px"
    ],
-   "free": 0.539,
+   "free": 0.465,
    "wide": [],
    "edge": {
     "selector": ".v3Map",
@@ -229,7 +229,7 @@
     "box": [
      300,
      112,
-     528,
+     620,
      728
     ]
    },
@@ -237,7 +237,7 @@
    "les": false,
    "view": "oefenen",
    "hOverflow": false,
-   "freePct": 53.9,
+   "freePct": 46.5,
    "lowContrast": [],
    "backdropFilters": [
     "blur(28px) saturate(1.4)",
@@ -290,16 +290,16 @@
     "opacity": 1,
     "overlays": [],
     "school": true,
-    "island": false,
+    "island": true,
     "seaShown": false,
     "islandFaint": [],
     "letterbox": false,
     "seeThrough": [],
     "box": [
      320,
-     192,
-     458,
-     636
+     199,
+     583,
+     596
     ]
    },
    "theme": "#5b45e0",
@@ -323,7 +323,7 @@
     780,
     "28px"
    ],
-   "free": 0.603,
+   "free": 0.604,
    "wide": [],
    "edge": {
     "selector": ".v3Map",
@@ -347,7 +347,7 @@
    "les": false,
    "view": "reis",
    "hOverflow": false,
-   "freePct": 60.3,
+   "freePct": 60.4,
    "lowContrast": [],
    "backdropFilters": [
     "blur(28px) saturate(1.4)"
@@ -403,7 +403,7 @@
     780,
     "28px"
    ],
-   "free": 0.601,
+   "free": 0.602,
    "wide": [],
    "edge": {
     "selector": ".v3Map",
@@ -427,7 +427,7 @@
    "les": false,
    "view": "reis",
    "hOverflow": false,
-   "freePct": 60.1,
+   "freePct": 60.2,
    "lowContrast": [],
    "backdropFilters": [
     "blur(28px) saturate(1.4)"
@@ -526,7 +526,7 @@
     780,
     "28px"
    ],
-   "free": 0.397,
+   "free": 0.412,
    "wide": [],
    "edge": {
     "selector": ".v3Map",
@@ -542,7 +542,7 @@
     "box": [
      244,
      96,
-     514,
+     438,
      680
     ]
    },
@@ -550,7 +550,7 @@
    "les": false,
    "view": "oefenen",
    "hOverflow": false,
-   "freePct": 39.7,
+   "freePct": 41.2,
    "lowContrast": [],
    "backdropFilters": [
     "blur(28px) saturate(1.4)",
@@ -567,7 +567,7 @@
     780,
     "28px"
    ],
-   "free": 0.2,
+   "free": 0.201,
    "wide": [
     "section.v3View.v3View-toets 940"
    ],
@@ -576,7 +576,7 @@
    "les": false,
    "view": "toets",
    "hOverflow": false,
-   "freePct": 20.0,
+   "freePct": 20.1,
    "lowContrast": [],
    "backdropFilters": [
     "blur(28px) saturate(1.4)",
@@ -593,7 +593,7 @@
     780,
     "28px"
    ],
-   "free": 0.193,
+   "free": 0.194,
    "wide": [
     "section.v3View.v3View-voortgang 940"
    ],
@@ -603,7 +603,7 @@
     "opacity": 1,
     "overlays": [],
     "school": true,
-    "island": false,
+    "island": true,
     "seaShown": false,
     "islandFaint": [],
     "letterbox": false,
@@ -611,7 +611,7 @@
     "box": [
      264,
      168,
-     430,
+     478,
      596
     ]
    },
@@ -619,7 +619,7 @@
    "les": false,
    "view": "voortgang",
    "hOverflow": false,
-   "freePct": 19.3,
+   "freePct": 19.4,
    "lowContrast": [],
    "backdropFilters": [
     "blur(28px) saturate(1.4)",
@@ -633,22 +633,22 @@
  "summary": {
   "label": "na",
   "free": {
-   "reis-desktop": 64.1,
-   "reis-desktop-verminderd": 27.9,
-   "reis-schoolkaart-desktop": 64.0,
-   "les-desktop": 52.3,
-   "les-desktop-verminderd": 30.6,
-   "oefenen-desktop": 53.9,
+   "reis-desktop": 62.7,
+   "reis-desktop-verminderd": 28.0,
+   "reis-schoolkaart-desktop": 62.6,
+   "les-desktop": 52.2,
+   "les-desktop-verminderd": 29.2,
+   "oefenen-desktop": 46.5,
    "toets-desktop": 24.2,
    "voortgang-desktop": 24.2,
-   "reis-ipad-liggend": 60.3,
+   "reis-ipad-liggend": 60.4,
    "reis-ipad-liggend-verminderd": 19.2,
-   "reis-schoolkaart-ipad-liggend": 60.1,
+   "reis-schoolkaart-ipad-liggend": 60.2,
    "les-ipad-liggend": 73.1,
    "les-ipad-liggend-verminderd": 56.2,
-   "oefenen-ipad-liggend": 39.7,
-   "toets-ipad-liggend": 20.0,
-   "voortgang-ipad-liggend": 19.3
+   "oefenen-ipad-liggend": 41.2,
+   "toets-ipad-liggend": 20.1,
+   "voortgang-ipad-liggend": 19.4
   },
   "wide": {
    "toets-desktop": [

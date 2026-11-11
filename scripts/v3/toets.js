@@ -55,8 +55,8 @@
 
  /* Set-up (§ 2.1): chapters (default: completed ones, otherwise all), form, length; one button Start toets. */
  const completed=()=>ROUTE_CHAPTERS.filter(c=>TopoRoute.record(state.route,c.id).stage===3).map(c=>c.id);
- const pick={chapters:null,form:'both',length:10};
- const chosen=()=>pick.chapters||(completed().length?completed():chapterIds.slice());
+ const pick={chapters:null,form:'both',length:10,random:false};
+ const chosen=()=>pick.random?ROUTE_CHAPTERS.filter(c=>TopoRoute.unlocked(state.route,ROUTE_CHAPTERS,c.id)).map(c=>c.id):pick.chapters||(completed().length?completed():chapterIds.slice());
  const poolFor=ids=>ITEMS.filter(i=>ROUTE_CHAPTERS.some(c=>ids.includes(c.id)&&c.itemIds.includes(i.id)));
  const lengths=n=>[...(n>10?[[10,'10']]:[]),...(n>20?[[20,'20']]:[]),[0,'Alle']];
  const choice=(list,on,set)=>{const w=make('div','v3Chips');w.setAttribute('role','group');for(const [v,label] of list){const b=sh.chip(label,on(v),()=>{set(v);V.render();});b.dataset.value=String(v);w.append(b);}return w;};
@@ -64,9 +64,10 @@
   const h=make('h1','v3ScreenTitle','Toets');h.id='v3ToetsTitle';h.tabIndex=-1;
   const ids=chosen(),n=poolFor(ids).length;
   // The choice shows at once (the length chips follow the pool), as for Vorm and Lengte.
-  const toggle=id=>{const cur=chosen();if(id==='all')pick.chapters=cur.length===chapterIds.length?[]:chapterIds.slice();else pick.chapters=cur.includes(id)?cur.filter(x=>x!==id):chapterIds.filter(x=>x===id||cur.includes(x));V.render();};
+  const toggle=id=>{const cur=chosen();pick.random=false;if(id==='all')pick.chapters=cur.length===chapterIds.length?[]:chapterIds.slice();else pick.chapters=cur.includes(id)?cur.filter(x=>x!==id):chapterIds.filter(x=>x===id||cur.includes(x));V.render();};
   const chapters=sh.groupChips(id=>id==='all'?ids.length===chapterIds.length:ids.includes(id),toggle,{extra:[['all','Alles']]});
-  const lens=lengths(n);if(!lens.some(([v])=>v===pick.length))pick.length=0;
+  const random=sh.chip('Willekeurig',pick.random,()=>{pick.random=!pick.random;pick.length=10;V.render();});random.dataset.random='true';chapters.append(random);
+  const lens=pick.random?[[10,'10']]:lengths(n);if(!lens.some(([v])=>v===pick.length))pick.length=0;
   const start=btn('Start toets',e=>{e.stopPropagation();startToets();},'v3Btn primary v3Start');start.disabled=!n;
   // R-toets-instellen (fase B, stap 5): one panel on the Werkblad — the title, three groups separated by a thin line
   // (chapters as chips in three columns, a chosen one with a check; the form as tiles with line icons; the length as
@@ -87,6 +88,7 @@
  let run=null,last=null,suppress=false;
  function startToets(){
   const ids=chosen();let pool=TopoLearning.shuffle(poolFor(ids));if(!pool.length)return;
+  if(pick.random&&pool.length<10){const source=pool.slice();while(pool.length<10)pool.push(source[pool.length%source.length]);}
   if(pick.length&&pool.length>pick.length)pool=pool.slice(0,pick.length);
   ui.view='reis';
   V.v2Nav('Oefenen')?.click();

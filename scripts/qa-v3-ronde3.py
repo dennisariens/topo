@@ -20,6 +20,15 @@ async def check(p,n,touch):
   assert (await p.locator('.v3Switch button').first.bounding_box())['height']>=44
   await act(p,'.v3MapTools [data-relief=true]',touch)
   assert await p.locator('.v3MapStage .v3Map').get_attribute('data-relief')=='on'
+ if n==16:
+  await q.goto(p,'toets');await act(p,'[data-random=true]',touch)
+  assert await p.locator('[data-random=true]').get_attribute('aria-pressed')=='true'
+  allowed=await p.evaluate('TOPO_V3.model().chapters.filter(c=>c.open).flatMap(c=>c.itemIds)')
+  await act(p,'.v3ToetsSetup .v3Start',touch)
+  assert await p.evaluate('state.examTotal')==10
+  assert set(await p.evaluate('state.examPool.map(i=>i.id)')).issubset(allowed)
+  await act(p,'.v3LesBack',touch)
+  return 'toets'
  if n==15:
   manifest=json.loads((ROOT/'assets/v3/render/manifest.json').read_text());samples={}
   for asset in manifest['assets']:

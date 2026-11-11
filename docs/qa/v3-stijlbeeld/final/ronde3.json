@@ -1,0 +1,24 @@
+{
+  "1": {
+    "previewSha256": "5abb4a5451172c6cce77d28fe7f258204a9ef7f4b6d2a5cdc75521adedcacb4a",
+    "runs": {
+      "desktop": {
+        "viewport": [
+          1440,
+          900
+        ],
+        "screen": "reis",
+        "errors": []
+      },
+      "ipad-liggend": {
+        "viewport": [
+          1080,
+          810
+        ],
+        "screen": "reis",
+        "errors": []
+      }
+    },
+    "pass": true
+  }
+}

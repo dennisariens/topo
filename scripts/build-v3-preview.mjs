@@ -86,11 +86,11 @@ const fontM=JSON.parse(read('assets/v3/font/manifest.json')),fontB=readFileSync(
 if(createHash('sha256').update(fontB).digest('hex')!==fontM.sha256)throw Error('UI font differs from manifest: '+fontM.path);
 const fontCss='@font-face{font-family:"Topo Rounded";src:url(data:font/woff2;base64,'+fontB.toString('base64')+') format("woff2");font-weight:200 1000;font-style:normal;font-display:swap}';
 const css=fontCss+read('scripts/v3/tokens.css')+read('scripts/v3/reis.css')+read('scripts/v3/les.css')+read('scripts/v3/shell.css')+read('scripts/v3/glas.css')+read('scripts/v3/stijl.css')+read('scripts/v3/reis-ijk.css')+read('scripts/v3/oefenen-ijk.css')+read('scripts/v3/les-ijk.css')+read('scripts/v3/toets-ijk.css')+read('scripts/v3/beloningen-ijk.css')+read('scripts/v3/voortgang-ijk.css')+read('scripts/v3/afwerking.css')+read('scripts/v3/ronde2.css')+read('scripts/v3/ronde3.css')+barCss;
-const head='<head>\n<script>\n'+states+'\n'+sceneJs+'\n</script>\n<style>/* BEGIN TOPO V3 */'+css+'/* END TOPO V3 */</style>';
+const head='<head>\n<style>html.v3Boot body{visibility:hidden}html.v3Ready body{animation:v3Ready .16s ease-out}@keyframes v3Ready{from{opacity:0}to{opacity:1}}@media(prefers-reduced-motion:reduce){html.v3Ready body{animation:none}}</style><script>document.documentElement.classList.add("v3Boot");</script>\n<script>\n'+states+'\n'+sceneJs+'\n</script>\n<style>/* BEGIN TOPO V3 */'+css+'/* END TOPO V3 */</style>';
 const last=html.lastIndexOf('</body>');if(last<0||html.indexOf('<head>')<0)throw Error('Unexpected index.html shape');
 let out=html.replace('<head>',()=>head);
 const end=out.lastIndexOf('</body>');
-out=out.slice(0,end)+'<script>\n// BEGIN TOPO V3\n'+read('scripts/v3/iconen.js')+'\n'+read('scripts/v3/reis.js')+'\n'+read('scripts/v3/master-assets.js')+'\n'+read('scripts/v3/les.js')+'\n'+read('scripts/v3/shell.js')+'\n'+read('scripts/v3/schoolblad.js')+'\n'+read('scripts/v3/toets.js')+'\n'+read('scripts/v3/voortgang.js')+'\n'+read('scripts/v3/kennismaking.js')+'\n// END TOPO V3\n</script>\n'+out.slice(end);
+out=out.slice(0,end)+'<script>\n// BEGIN TOPO V3\n'+read('scripts/v3/iconen.js')+'\n'+read('scripts/v3/reis.js')+'\n'+read('scripts/v3/master-assets.js')+'\n'+read('scripts/v3/les.js')+'\n'+read('scripts/v3/shell.js')+'\n'+read('scripts/v3/schoolblad.js')+'\n'+read('scripts/v3/toets.js')+'\n'+read('scripts/v3/voortgang.js')+'\n'+read('scripts/v3/kennismaking.js')+'\nrequestAnimationFrame(()=>{document.documentElement.classList.replace("v3Boot","v3Ready");});\n// END TOPO V3\n</script>\n'+out.slice(end);
 out=out.replace(/<title>([^<]*)<\/title>/,(m,t)=>'<title>V3-preview Reis · '+t+'</title>');
 const file='output/html/TOPO-V3-Reis-Preview.html';
 writeFileSync(new URL(file,root),out);

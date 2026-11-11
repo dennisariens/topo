@@ -19,6 +19,11 @@ async def check(p,n,touch):
   assert (await p.locator('.v3Switch button').first.bounding_box())['height']>=44
   await act(p,'.v3MapTools [data-relief=true]',touch)
   assert await p.locator('.v3MapStage .v3Map').get_attribute('data-relief')=='on'
+ if n==6:
+  await q.goto(p,'oefenen')
+  assert await p.locator('.v3OefPanel').evaluate('n=>n.scrollHeight<=n.clientHeight+1 && n.getBoundingClientRect().bottom<=innerHeight')
+  assert not await p.locator('.v3OefPanel button').evaluate_all('ns=>ns.filter(n=>n.scrollWidth>n.clientWidth+1).map(n=>n.textContent)')
+  return 'oefenen'
  if n==5:
   assert await p.locator('html').get_attribute('class')=='v3Ready'
   assert await p.locator('.v3Reis').is_visible()

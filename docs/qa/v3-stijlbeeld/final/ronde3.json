@@ -108,5 +108,27 @@
       }
     },
     "pass": true
+  },
+  "6": {
+    "previewSha256": "1546abe78e69ea4bb3ccf9176111ef98c351d9b8db2409887f2a20fcb65f0628",
+    "runs": {
+      "desktop": {
+        "viewport": [
+          1440,
+          900
+        ],
+        "screen": "oefenen",
+        "errors": []
+      },
+      "ipad-liggend": {
+        "viewport": [
+          1080,
+          810
+        ],
+        "screen": "oefenen",
+        "errors": []
+      }
+    },
+    "pass": true
   }
 }

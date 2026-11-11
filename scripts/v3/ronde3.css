@@ -22,3 +22,12 @@
  .v3ToetsSetup .v3FormBtn{padding:8px 6px}
  .v3 :is(.v3Btn,.v3Chip,.v3FormBtn){max-width:100%;overflow-wrap:break-word}
 }
+
+@media(min-width:1024px) and (max-width:1119px){
+ .v3OefPanel{gap:8px;padding:16px;overflow:visible}
+ .v3OefPanel .v3OefGroep{padding-top:8px}
+ .v3OefPanel .v3Chips{gap:6px}
+ .v3OefPanel .v3FormBtn{min-height:48px;padding:6px 8px}
+ .v3OefPanel .v3Chip{min-height:44px}
+ .v3OefPanel .v3Start{margin-top:0}
+}

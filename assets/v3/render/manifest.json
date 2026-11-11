@@ -1,926 +1,927 @@
 {
- "title": "TOPO V3 renderassets",
- "brief": "docs/v3/ARTWORK_BRIEF.md",
- "source": "OpenAI beeldgeneratie (ChatGPT), aangeleverd door de eigenaar op 2026-11-09",
- "assets": [
-  {
-   "id": "BG-01",
-   "status": "eigenaar akkoord; uitzondering bronresolutie vastgelegd (DECISIONS 9-11)",
-   "note": "Lanczos-upscale 1586x992 -> 2880x1800, geen generatieve upscale; iets zacht op DPR 2",
-   "master": {
-    "path": "assets/v3/render/masters/BG-01-toscane.png",
-    "bytes": 2159222,
-    "sha256": "36fbc4645d07fc60073faf305cdf44701dfdd81bd24f3a9dfc44d5c1c2961c9a",
-    "size": [
-     1586,
-     992
-    ],
-    "alpha": false
-   },
-   "export": {
-    "path": "assets/v3/render/exports/BG-01-toscane-2880.webp",
-    "bytes": 433106,
-    "sha256": "c07c938d990250fdcd3a370b90f74c7cb8d9a422f4b720dbeb5e93850309b9c0",
-    "size": [
-     2880,
-     1800
-    ],
-    "alpha": false
-   }
-  },
-  {
-   "id": "NINO-PORTRET",
-   "status": "eigenaar akkoord op correctie (gesloten werkshirt, 2026-11-09); Hermes PASS (05ab1d0, bewijs qa/v3-art-05ab1d0 @ 6fb8831)",
-   "note": "derde versie: gesloten blauw werkshirt (besluit 9-11); achtergrond verwijderd",
-   "master": {
-    "path": "assets/v3/render/masters/NINO-PORTRET.png",
-    "bytes": 2114016,
-    "sha256": "33a87818f5848dc4c7d6f91e6120742dc755cee7d3eee22e25ff41c8917d93fe",
-    "size": [
-     1122,
-     1402
-    ],
-    "alpha": false
-   },
-   "master_alpha": {
-    "path": "assets/v3/render/masters/NINO-PORTRET-alpha.png",
-    "bytes": 2451210,
-    "sha256": "d92f74212e2b97010afff9afc80b20137ebc6eef854547228facdbc5f038e216",
-    "size": [
-     1122,
-     1402
-    ],
-    "alpha": true
-   },
-   "export": {
-    "path": "assets/v3/render/exports/NINO-PORTRET-512.webp",
-    "bytes": 53086,
-    "sha256": "97fe052f40fea2ec7c07a2935d8bb2f544777b4e3893c1a509ab9bc0c1a492e2",
-    "size": [
-     512,
-     512
-    ],
-    "alpha": true
-   }
-  },
-  {
-   "id": "SCENE-ROMA",
-   "chapter": "city2",
-   "status": "eigenaar akkoord op correctie (gesloten werkshirt, 2026-11-09); Hermes PASS (05ab1d0, bewijs qa/v3-art-05ab1d0 @ 6fb8831)",
-   "note": "derde versie: gesloten blauw werkshirt (besluit 9-11); Vespa zonder merktekens",
-   "master": {
-    "path": "assets/v3/render/masters/SCENE-ROMA.png",
-    "bytes": 2719471,
-    "sha256": "f7478b9cd7288309b1a4348897c124729bd3e260bc531d6747e2301a170560e6",
-    "size": [
-     1672,
-     941
-    ],
-    "alpha": false
-   },
-   "export_kop": {
-    "path": "assets/v3/render/exports/SCENE-ROMA-kop-1672.webp",
-    "bytes": 336364,
-    "sha256": "5a01badbf0f26fe28109e999c592615d882eb704e6bef809d40e70436b4f6465",
-    "size": [
-     1672,
-     941
-    ],
-    "alpha": false
-   },
-   "export_mini": {
-    "path": "assets/v3/render/exports/SCENE-ROMA-mini-480.webp",
-    "bytes": 34598,
-    "sha256": "518ab33ebc0b6902850ea46bdf3a57cc7556351ce40be2fc235e9c3eb439c146",
-    "size": [
-     480,
-     270
-    ],
-    "alpha": false
-   }
-  },
-  {
-   "id": "SCENE-VENEZIA",
-   "chapter": "city3",
-   "status": "eigenaar akkoord (2026-11-09); Hermes PASS (908b4a4)",
-   "note": "Piaggio-achtig schildje op de Vespa lokaal weggeretoucheerd (OpenCV inpaint, 24x23 px); origineel bewaard. Rialto en de koepel van de Salute samen in beeld: illustratieve compositie, geen leergeografie",
-   "master": {
-    "path": "assets/v3/render/masters/SCENE-VENEZIA.png",
-    "bytes": 2896664,
-    "sha256": "4b12fb1c2ea8b068c2851f45c6c11182b3c5ce7429ac9099d0f3b7d6219d1cb9",
-    "size": [
-     1672,
-     941
-    ],
-    "alpha": false
-   },
-   "master_original": {
-    "path": "assets/v3/render/masters/SCENE-VENEZIA-origineel.png",
-    "bytes": 2598896,
-    "sha256": "539fd4d9c4938bda61b48c1d58b6a5e1730525580439da5bbf4574ade3100f6f",
-    "size": [
-     1672,
-     941
-    ],
-    "alpha": false
-   },
-   "export_kop": {
-    "path": "assets/v3/render/exports/SCENE-VENEZIA-kop-1672.webp",
-    "bytes": 311914,
-    "sha256": "719344db49bfd156f6b22904b1ff31dd2e2899ac133b0c303fdcf85b165dae02",
-    "size": [
-     1672,
-     941
-    ],
-    "alpha": false
-   },
-   "export_mini": {
-    "path": "assets/v3/render/exports/SCENE-VENEZIA-mini-480.webp",
-    "bytes": 28758,
-    "sha256": "927c80380ed1571cdb4cc8bef8704b6a3e6b01e58ad68dc5bc2617ef4f7a8244",
-    "size": [
-     480,
-     270
-    ],
-    "alpha": false
-   }
-  },
-  {
-   "id": "SCENE-NAPOLI",
-   "chapter": "city4",
-   "status": "eigenaar akkoord op correctie (gesloten werkshirt, 2026-11-09); Hermes PASS (05ab1d0, bewijs qa/v3-art-05ab1d0 @ 6fb8831)",
-   "note": "derde versie: gesloten blauw werkshirt, omgeslagen broek (besluit 9-11); Vespa zonder merktekens",
-   "master": {
-    "path": "assets/v3/render/masters/SCENE-NAPOLI.png",
-    "bytes": 2495974,
-    "sha256": "0a361636f52069f517e1bb7387f4b2f34a60d2721b14f09863862fa58628ab72",
-    "size": [
-     1672,
-     941
-    ],
-    "alpha": false
-   },
-   "export_kop": {
-    "path": "assets/v3/render/exports/SCENE-NAPOLI-kop-1672.webp",
-    "bytes": 275572,
-    "sha256": "d9662509ce537fa8fcfb0485acc5478ff8ddc632b7768dbaf192269148a12668",
-    "size": [
-     1672,
-     941
-    ],
-    "alpha": false
-   },
-   "export_mini": {
-    "path": "assets/v3/render/exports/SCENE-NAPOLI-mini-480.webp",
-    "bytes": 27984,
-    "sha256": "f62e812526d488d47740ae87ca5b38a04291729360cae764886453336a954778",
-    "size": [
-     480,
-     270
-    ],
-    "alpha": false
-   }
-  },
-  {
-   "id": "BG-02",
-   "status": "eigenaar akkoord; uitzondering bronresolutie vastgelegd (DECISIONS 9-11)",
-   "note": "Lanczos-upscale naar 2880x1800, geen generatieve upscale",
-   "master": {
-    "path": "assets/v3/render/masters/BG-02-meer.png",
-    "bytes": 2010968,
-    "sha256": "a2c3b48e6a47fe83c1975cba73fbe61fae9a8129c3df204ae0156b3212f1e9de",
-    "size": [
-     1586,
-     992
-    ],
-    "alpha": false
-   },
-   "export": {
-    "path": "assets/v3/render/exports/BG-02-meer-2880.webp",
-    "bytes": 321346,
-    "sha256": "939934b56be3406fa5a48717b900acea521f6f45674cce82b09993ca3630c660",
-    "size": [
-     2880,
-     1800
-    ],
-    "alpha": false
-   }
-  },
-  {
-   "id": "BG-03",
-   "status": "eigenaar akkoord; uitzondering bronresolutie vastgelegd (DECISIONS 9-11)",
-   "note": "Lanczos-upscale naar 2880x1800; midden feller dan BG-01/02 (verzadigde zee)",
-   "master": {
-    "path": "assets/v3/render/masters/BG-03-kust.png",
-    "bytes": 2463310,
-    "sha256": "ecbc8c14cc6415ed433270adf7096e56921432c90ef1b8ceec8d9d1a4a68e11c",
-    "size": [
-     1586,
-     992
-    ],
-    "alpha": false
-   },
-   "export": {
-    "path": "assets/v3/render/exports/BG-03-kust-2880.webp",
-    "bytes": 452702,
-    "sha256": "b4a423ef64fdb58773aa99659ec23b58283b1cf96763f591d41d09eb6619f20b",
-    "size": [
-     2880,
-     1800
-    ],
-    "alpha": false
-   }
-  },
-  {
-   "id": "IC-pizza",
-   "status": "eigenaar akkoord (2026-11-09); Hermes PASS (908b4a4)",
-   "note": "hele margherita in plaats van punt (beter voor de pizzameter); iets fotografischer dan de rest",
-   "master": {
-    "path": "assets/v3/render/masters/icons/IC-pizza.png",
-    "bytes": 1719890,
-    "sha256": "f72fea6e36b66996a71e016cb3f4fb4b69af0c7e63dc4116474a5a9262d8705e",
-    "size": [
-     1254,
-     1254
-    ],
-    "alpha": true
-   },
-   "exports": {
-    "96": {
-     "path": "assets/v3/render/exports/icons/IC-pizza-96.webp",
-     "bytes": 5694,
-     "sha256": "5d3dbef4e73ed6d3f3e3edea75a29ad21100f9f9ccfacaa52715c5eebe6492d9",
-     "size": [
-      96,
-      96
-     ],
-     "alpha": true
+  "title": "TOPO V3 renderassets",
+  "brief": "docs/v3/ARTWORK_BRIEF.md",
+  "source": "OpenAI beeldgeneratie (ChatGPT), aangeleverd door de eigenaar op 2026-11-09",
+  "assets": [
+    {
+      "id": "BG-01",
+      "status": "eigenaar akkoord; uitzondering bronresolutie vastgelegd (DECISIONS 9-11)",
+      "note": "Lanczos-upscale 1586x992 -> 2880x1800, geen generatieve upscale; iets zacht op DPR 2",
+      "master": {
+        "path": "assets/v3/render/masters/BG-01-toscane.png",
+        "bytes": 2159222,
+        "sha256": "36fbc4645d07fc60073faf305cdf44701dfdd81bd24f3a9dfc44d5c1c2961c9a",
+        "size": [
+          1586,
+          992
+        ],
+        "alpha": false
+      },
+      "export": {
+        "path": "assets/v3/render/exports/BG-01-toscane-2880.webp",
+        "bytes": 433106,
+        "sha256": "c07c938d990250fdcd3a370b90f74c7cb8d9a422f4b720dbeb5e93850309b9c0",
+        "size": [
+          2880,
+          1800
+        ],
+        "alpha": false
+      }
     },
-    "48": {
-     "path": "assets/v3/render/exports/icons/IC-pizza-48.webp",
-     "bytes": 2274,
-     "sha256": "95638a96a526cf81c7d5cad1a6fd9f590e5660cf4f2910402d09cbe11ef5777c",
-     "size": [
-      48,
-      48
-     ],
-     "alpha": true
-    }
-   }
-  },
-  {
-   "id": "IC-vespa",
-   "status": "eigenaar akkoord (2026-11-09); Hermes PASS (908b4a4)",
-   "note": "zonder logo's of tekst; dient ook als VE-01",
-   "master": {
-    "path": "assets/v3/render/masters/icons/IC-vespa.png",
-    "bytes": 1155053,
-    "sha256": "ed23e7f6b2ea26b16baae6f0809cac0a8ae839f7976630a4abc7375e47ce2e80",
-    "size": [
-     1253,
-     1253
-    ],
-    "alpha": true
-   },
-   "exports": {
-    "96": {
-     "path": "assets/v3/render/exports/icons/IC-vespa-96.webp",
-     "bytes": 6026,
-     "sha256": "0a060a0cc77a46487b3eac060653383e7feb883f6e4736b9512cf6086af8e869",
-     "size": [
-      96,
-      96
-     ],
-     "alpha": true
+    {
+      "id": "NINO-PORTRET",
+      "status": "eigenaar akkoord op correctie (gesloten werkshirt, 2026-11-09); Hermes PASS (05ab1d0, bewijs qa/v3-art-05ab1d0 @ 6fb8831)",
+      "note": "derde versie: gesloten blauw werkshirt (besluit 9-11); achtergrond verwijderd",
+      "master": {
+        "path": "assets/v3/render/masters/NINO-PORTRET.png",
+        "bytes": 2114016,
+        "sha256": "33a87818f5848dc4c7d6f91e6120742dc755cee7d3eee22e25ff41c8917d93fe",
+        "size": [
+          1122,
+          1402
+        ],
+        "alpha": false
+      },
+      "master_alpha": {
+        "path": "assets/v3/render/masters/NINO-PORTRET-alpha.png",
+        "bytes": 2451210,
+        "sha256": "d92f74212e2b97010afff9afc80b20137ebc6eef854547228facdbc5f038e216",
+        "size": [
+          1122,
+          1402
+        ],
+        "alpha": true
+      },
+      "export": {
+        "path": "assets/v3/render/exports/NINO-PORTRET-512.webp",
+        "bytes": 53086,
+        "sha256": "97fe052f40fea2ec7c07a2935d8bb2f544777b4e3893c1a509ab9bc0c1a492e2",
+        "size": [
+          512,
+          512
+        ],
+        "alpha": true
+      }
     },
-    "48": {
-     "path": "assets/v3/render/exports/icons/IC-vespa-48.webp",
-     "bytes": 2388,
-     "sha256": "84fc217ccb576d45ec7615b0b9165e229793cb3e2bc1ed2b7305b738683b864d",
-     "size": [
-      48,
-      48
-     ],
-     "alpha": true
-    }
-   }
-  },
-  {
-   "id": "IC-gold",
-   "status": "eigenaar akkoord (2026-11-09); Hermes PASS (908b4a4)",
-   "note": "gouden zegel met ster en lauwerkrans",
-   "master": {
-    "path": "assets/v3/render/masters/icons/IC-gold.png",
-    "bytes": 1603708,
-    "sha256": "c33c2f329e42add855e955daf15c40d33d6aed022820812e27e72107af4c1d6e",
-    "size": [
-     1255,
-     1255
-    ],
-    "alpha": true
-   },
-   "exports": {
-    "96": {
-     "path": "assets/v3/render/exports/icons/IC-gold-96.webp",
-     "bytes": 5318,
-     "sha256": "ee806f0938efbe93cf5b41817f81f5b9357acdf049288bde9cd223fcbd18a865",
-     "size": [
-      96,
-      96
-     ],
-     "alpha": true
+    {
+      "id": "SCENE-ROMA",
+      "chapter": "city2",
+      "status": "eigenaar akkoord op correctie (gesloten werkshirt, 2026-11-09); Hermes PASS (05ab1d0, bewijs qa/v3-art-05ab1d0 @ 6fb8831)",
+      "note": "derde versie: gesloten blauw werkshirt (besluit 9-11); Vespa zonder merktekens",
+      "master": {
+        "path": "assets/v3/render/masters/SCENE-ROMA.png",
+        "bytes": 2719471,
+        "sha256": "f7478b9cd7288309b1a4348897c124729bd3e260bc531d6747e2301a170560e6",
+        "size": [
+          1672,
+          941
+        ],
+        "alpha": false
+      },
+      "export_kop": {
+        "path": "assets/v3/render/exports/SCENE-ROMA-kop-1672.webp",
+        "bytes": 336364,
+        "sha256": "5a01badbf0f26fe28109e999c592615d882eb704e6bef809d40e70436b4f6465",
+        "size": [
+          1672,
+          941
+        ],
+        "alpha": false
+      },
+      "export_mini": {
+        "path": "assets/v3/render/exports/SCENE-ROMA-mini-480.webp",
+        "bytes": 34598,
+        "sha256": "518ab33ebc0b6902850ea46bdf3a57cc7556351ce40be2fc235e9c3eb439c146",
+        "size": [
+          480,
+          270
+        ],
+        "alpha": false
+      }
     },
-    "48": {
-     "path": "assets/v3/render/exports/icons/IC-gold-48.webp",
-     "bytes": 2258,
-     "sha256": "9bc731086dd8a720ee9c86b7f8609016072aa549ba44393fb4b04ba3f2870bff",
-     "size": [
-      48,
-      48
-     ],
-     "alpha": true
-    }
-   }
-  },
-  {
-   "id": "VE-01",
-   "status": "eigenaar akkoord (2026-11-09); Hermes PASS (908b4a4)",
-   "note": "zelfde bron als IC-vespa, 1200x900 transparant",
-   "master": {
-    "path": "assets/v3/render/masters/icons/IC-vespa.png",
-    "bytes": 1155053,
-    "sha256": "ed23e7f6b2ea26b16baae6f0809cac0a8ae839f7976630a4abc7375e47ce2e80",
-    "size": [
-     1253,
-     1253
-    ],
-    "alpha": true
-   },
-   "export": {
-    "path": "assets/v3/render/exports/VE-01-vespa-1200.webp",
-    "bytes": 88680,
-    "sha256": "41b49a4f69162062d0af7df0f31eb775c1defea72eb1448e86e6332bf975c84e",
-    "size": [
-     1200,
-     900
-    ],
-    "alpha": true
-   }
-  },
-  {
-   "id": "IC-slice",
-   "status": "eigenaar akkoord (2026-11-09); Hermes PASS (908b4a4)",
-   "note": "pizzapunt voor tellers (eenheid = punt); hele pizza blijft voor meter en Beloningen",
-   "master": {
-    "path": "assets/v3/render/masters/icons/IC-slice.png",
-    "bytes": 1296924,
-    "sha256": "df74a29c367e45e74cb2bac8c30450d6e1e43ad29f3fc6e2afb991f8daa82b8b",
-    "size": [
-     1233,
-     1233
-    ],
-    "alpha": true
-   },
-   "exports": {
-    "96": {
-     "path": "assets/v3/render/exports/icons/IC-slice-96.webp",
-     "bytes": 4658,
-     "sha256": "1b1fa303abc5775133b00d76f9b2d4c6945f759c12caf75d50b492bdb96ad550",
-     "size": [
-      96,
-      96
-     ],
-     "alpha": true
+    {
+      "id": "SCENE-VENEZIA",
+      "chapter": "city3",
+      "status": "eigenaar akkoord (2026-11-09); Hermes PASS (908b4a4)",
+      "note": "Piaggio-achtig schildje op de Vespa lokaal weggeretoucheerd (OpenCV inpaint, 24x23 px); origineel bewaard. Rialto en de koepel van de Salute samen in beeld: illustratieve compositie, geen leergeografie",
+      "master": {
+        "path": "assets/v3/render/masters/SCENE-VENEZIA.png",
+        "bytes": 2896664,
+        "sha256": "4b12fb1c2ea8b068c2851f45c6c11182b3c5ce7429ac9099d0f3b7d6219d1cb9",
+        "size": [
+          1672,
+          941
+        ],
+        "alpha": false
+      },
+      "master_original": {
+        "path": "assets/v3/render/masters/SCENE-VENEZIA-origineel.png",
+        "bytes": 2598896,
+        "sha256": "539fd4d9c4938bda61b48c1d58b6a5e1730525580439da5bbf4574ade3100f6f",
+        "size": [
+          1672,
+          941
+        ],
+        "alpha": false
+      },
+      "export_kop": {
+        "path": "assets/v3/render/exports/SCENE-VENEZIA-kop-1672.webp",
+        "bytes": 311914,
+        "sha256": "719344db49bfd156f6b22904b1ff31dd2e2899ac133b0c303fdcf85b165dae02",
+        "size": [
+          1672,
+          941
+        ],
+        "alpha": false
+      },
+      "export_mini": {
+        "path": "assets/v3/render/exports/SCENE-VENEZIA-mini-480.webp",
+        "bytes": 28758,
+        "sha256": "927c80380ed1571cdb4cc8bef8704b6a3e6b01e58ad68dc5bc2617ef4f7a8244",
+        "size": [
+          480,
+          270
+        ],
+        "alpha": false
+      }
     },
-    "48": {
-     "path": "assets/v3/render/exports/icons/IC-slice-48.webp",
-     "bytes": 2044,
-     "sha256": "cec6dd44ada6ca6712b8cf20b49f8f93c607fa71f3b3f68ab0695fd95e9e7998",
-     "size": [
-      48,
-      48
-     ],
-     "alpha": true
-    }
-   }
-  },
-  {
-   "id": "IC-postcard",
-   "status": "eigenaar akkoord (2026-11-09); Hermes PASS (908b4a4)",
-   "note": "tweede versie: kustlandschap, geen kaart; getande rand zoals de echte postkaarten",
-   "master": {
-    "path": "assets/v3/render/masters/icons/IC-postcard.png",
-    "bytes": 2000791,
-    "sha256": "fe47a2601efe3afbcb303fbf0a0f2104864ca5e8a2975cd624599d16ea8e66a7",
-    "size": [
-     1254,
-     1254
-    ],
-    "alpha": true
-   },
-   "exports": {
-    "96": {
-     "path": "assets/v3/render/exports/icons/IC-postcard-96.webp",
-     "bytes": 6638,
-     "sha256": "b4abe1371d848c583af9a843edaf1b2450e21571a9c8ab576b9a3dd78b2ef158",
-     "size": [
-      96,
-      96
-     ],
-     "alpha": true
+    {
+      "id": "SCENE-NAPOLI",
+      "chapter": "city4",
+      "status": "eigenaar akkoord op correctie (gesloten werkshirt, 2026-11-09); Hermes PASS (05ab1d0, bewijs qa/v3-art-05ab1d0 @ 6fb8831)",
+      "note": "derde versie: gesloten blauw werkshirt, omgeslagen broek (besluit 9-11); Vespa zonder merktekens",
+      "master": {
+        "path": "assets/v3/render/masters/SCENE-NAPOLI.png",
+        "bytes": 2495974,
+        "sha256": "0a361636f52069f517e1bb7387f4b2f34a60d2721b14f09863862fa58628ab72",
+        "size": [
+          1672,
+          941
+        ],
+        "alpha": false
+      },
+      "export_kop": {
+        "path": "assets/v3/render/exports/SCENE-NAPOLI-kop-1672.webp",
+        "bytes": 275572,
+        "sha256": "d9662509ce537fa8fcfb0485acc5478ff8ddc632b7768dbaf192269148a12668",
+        "size": [
+          1672,
+          941
+        ],
+        "alpha": false
+      },
+      "export_mini": {
+        "path": "assets/v3/render/exports/SCENE-NAPOLI-mini-480.webp",
+        "bytes": 27984,
+        "sha256": "f62e812526d488d47740ae87ca5b38a04291729360cae764886453336a954778",
+        "size": [
+          480,
+          270
+        ],
+        "alpha": false
+      }
     },
-    "48": {
-     "path": "assets/v3/render/exports/icons/IC-postcard-48.webp",
-     "bytes": 2554,
-     "sha256": "0d3975e248c3751f3e204734e417feb3bb7147e2fed56cb51656c789aa08603d",
-     "size": [
-      48,
-      48
-     ],
-     "alpha": true
-    }
-   }
-  },
-  {
-   "id": "IC-stamp",
-   "status": "eigenaar akkoord (2026-11-09); Hermes PASS (908b4a4)",
-   "note": "tweede versie: afdruk zoals in het Reisboekje",
-   "master": {
-    "path": "assets/v3/render/masters/icons/IC-stamp.png",
-    "bytes": 2473307,
-    "sha256": "c577d992fde854535147558fa4c972da69eb9207c853b864544d1f3baf30906a",
-    "size": [
-     1244,
-     1244
-    ],
-    "alpha": true
-   },
-   "exports": {
-    "96": {
-     "path": "assets/v3/render/exports/icons/IC-stamp-96.webp",
-     "bytes": 7116,
-     "sha256": "a578ddedb395fc9fc97c672923ed6f6f681628016e1c1e4c014019385a14144a",
-     "size": [
-      96,
-      96
-     ],
-     "alpha": true
+    {
+      "id": "BG-02",
+      "status": "eigenaar akkoord; uitzondering bronresolutie vastgelegd (DECISIONS 9-11)",
+      "note": "Lanczos-upscale naar 2880x1800, geen generatieve upscale",
+      "master": {
+        "path": "assets/v3/render/masters/BG-02-meer.png",
+        "bytes": 2010968,
+        "sha256": "a2c3b48e6a47fe83c1975cba73fbe61fae9a8129c3df204ae0156b3212f1e9de",
+        "size": [
+          1586,
+          992
+        ],
+        "alpha": false
+      },
+      "export": {
+        "path": "assets/v3/render/exports/BG-02-meer-2880.webp",
+        "bytes": 321346,
+        "sha256": "939934b56be3406fa5a48717b900acea521f6f45674cce82b09993ca3630c660",
+        "size": [
+          2880,
+          1800
+        ],
+        "alpha": false
+      }
     },
-    "48": {
-     "path": "assets/v3/render/exports/icons/IC-stamp-48.webp",
-     "bytes": 2488,
-     "sha256": "50907c9f470defcfe7e5e50e4654025007a87d7943c9cef6b210a3ce526598c7",
-     "size": [
-      48,
-      48
-     ],
-     "alpha": true
+    {
+      "id": "BG-03",
+      "status": "eigenaar akkoord; uitzondering bronresolutie vastgelegd (DECISIONS 9-11)",
+      "note": "Lanczos-upscale naar 2880x1800; midden feller dan BG-01/02 (verzadigde zee)",
+      "master": {
+        "path": "assets/v3/render/masters/BG-03-kust.png",
+        "bytes": 2463310,
+        "sha256": "ecbc8c14cc6415ed433270adf7096e56921432c90ef1b8ceec8d9d1a4a68e11c",
+        "size": [
+          1586,
+          992
+        ],
+        "alpha": false
+      },
+      "export": {
+        "path": "assets/v3/render/exports/BG-03-kust-2880.webp",
+        "bytes": 452702,
+        "sha256": "b4a423ef64fdb58773aa99659ec23b58283b1cf96763f591d41d09eb6619f20b",
+        "size": [
+          2880,
+          1800
+        ],
+        "alpha": false
+      }
+    },
+    {
+      "id": "IC-pizza",
+      "status": "eigenaar akkoord (2026-11-09); Hermes PASS (908b4a4)",
+      "note": "hele margherita in plaats van punt (beter voor de pizzameter); iets fotografischer dan de rest",
+      "master": {
+        "path": "assets/v3/render/masters/icons/IC-pizza.png",
+        "bytes": 1719890,
+        "sha256": "f72fea6e36b66996a71e016cb3f4fb4b69af0c7e63dc4116474a5a9262d8705e",
+        "size": [
+          1254,
+          1254
+        ],
+        "alpha": true
+      },
+      "exports": {
+        "96": {
+          "path": "assets/v3/render/exports/icons/IC-pizza-96.webp",
+          "bytes": 5694,
+          "sha256": "5d3dbef4e73ed6d3f3e3edea75a29ad21100f9f9ccfacaa52715c5eebe6492d9",
+          "size": [
+            96,
+            96
+          ],
+          "alpha": true
+        },
+        "48": {
+          "path": "assets/v3/render/exports/icons/IC-pizza-48.webp",
+          "bytes": 2274,
+          "sha256": "95638a96a526cf81c7d5cad1a6fd9f590e5660cf4f2910402d09cbe11ef5777c",
+          "size": [
+            48,
+            48
+          ],
+          "alpha": true
+        }
+      }
+    },
+    {
+      "id": "IC-vespa",
+      "status": "vervangen",
+      "note": "Master-Vespa vervangt dit icoon overal; VESPA-ZIJ voor Beloningen en rit.",
+      "master": {
+        "path": "assets/v3/render/masters/icons/IC-vespa.png",
+        "bytes": 1155053,
+        "sha256": "ed23e7f6b2ea26b16baae6f0809cac0a8ae839f7976630a4abc7375e47ce2e80",
+        "size": [
+          1253,
+          1253
+        ],
+        "alpha": true
+      },
+      "exports": {
+        "96": {
+          "path": "assets/v3/render/exports/icons/IC-vespa-96.webp",
+          "bytes": 6026,
+          "sha256": "0a060a0cc77a46487b3eac060653383e7feb883f6e4736b9512cf6086af8e869",
+          "size": [
+            96,
+            96
+          ],
+          "alpha": true
+        },
+        "48": {
+          "path": "assets/v3/render/exports/icons/IC-vespa-48.webp",
+          "bytes": 2388,
+          "sha256": "84fc217ccb576d45ec7615b0b9165e229793cb3e2bc1ed2b7305b738683b864d",
+          "size": [
+            48,
+            48
+          ],
+          "alpha": true
+        }
+      },
+      "replacedBy": "VESPA-ICOON"
+    },
+    {
+      "id": "IC-gold",
+      "status": "eigenaar akkoord (2026-11-09); Hermes PASS (908b4a4)",
+      "note": "gouden zegel met ster en lauwerkrans",
+      "master": {
+        "path": "assets/v3/render/masters/icons/IC-gold.png",
+        "bytes": 1603708,
+        "sha256": "c33c2f329e42add855e955daf15c40d33d6aed022820812e27e72107af4c1d6e",
+        "size": [
+          1255,
+          1255
+        ],
+        "alpha": true
+      },
+      "exports": {
+        "96": {
+          "path": "assets/v3/render/exports/icons/IC-gold-96.webp",
+          "bytes": 5318,
+          "sha256": "ee806f0938efbe93cf5b41817f81f5b9357acdf049288bde9cd223fcbd18a865",
+          "size": [
+            96,
+            96
+          ],
+          "alpha": true
+        },
+        "48": {
+          "path": "assets/v3/render/exports/icons/IC-gold-48.webp",
+          "bytes": 2258,
+          "sha256": "9bc731086dd8a720ee9c86b7f8609016072aa549ba44393fb4b04ba3f2870bff",
+          "size": [
+            48,
+            48
+          ],
+          "alpha": true
+        }
+      }
+    },
+    {
+      "id": "VE-01",
+      "status": "eigenaar akkoord (2026-11-09); Hermes PASS (908b4a4)",
+      "note": "zelfde bron als IC-vespa, 1200x900 transparant",
+      "master": {
+        "path": "assets/v3/render/masters/icons/IC-vespa.png",
+        "bytes": 1155053,
+        "sha256": "ed23e7f6b2ea26b16baae6f0809cac0a8ae839f7976630a4abc7375e47ce2e80",
+        "size": [
+          1253,
+          1253
+        ],
+        "alpha": true
+      },
+      "export": {
+        "path": "assets/v3/render/exports/VE-01-vespa-1200.webp",
+        "bytes": 88680,
+        "sha256": "41b49a4f69162062d0af7df0f31eb775c1defea72eb1448e86e6332bf975c84e",
+        "size": [
+          1200,
+          900
+        ],
+        "alpha": true
+      }
+    },
+    {
+      "id": "IC-slice",
+      "status": "eigenaar akkoord (2026-11-09); Hermes PASS (908b4a4)",
+      "note": "pizzapunt voor tellers (eenheid = punt); hele pizza blijft voor meter en Beloningen",
+      "master": {
+        "path": "assets/v3/render/masters/icons/IC-slice.png",
+        "bytes": 1296924,
+        "sha256": "df74a29c367e45e74cb2bac8c30450d6e1e43ad29f3fc6e2afb991f8daa82b8b",
+        "size": [
+          1233,
+          1233
+        ],
+        "alpha": true
+      },
+      "exports": {
+        "96": {
+          "path": "assets/v3/render/exports/icons/IC-slice-96.webp",
+          "bytes": 4658,
+          "sha256": "1b1fa303abc5775133b00d76f9b2d4c6945f759c12caf75d50b492bdb96ad550",
+          "size": [
+            96,
+            96
+          ],
+          "alpha": true
+        },
+        "48": {
+          "path": "assets/v3/render/exports/icons/IC-slice-48.webp",
+          "bytes": 2044,
+          "sha256": "cec6dd44ada6ca6712b8cf20b49f8f93c607fa71f3b3f68ab0695fd95e9e7998",
+          "size": [
+            48,
+            48
+          ],
+          "alpha": true
+        }
+      }
+    },
+    {
+      "id": "IC-postcard",
+      "status": "eigenaar akkoord (2026-11-09); Hermes PASS (908b4a4)",
+      "note": "tweede versie: kustlandschap, geen kaart; getande rand zoals de echte postkaarten",
+      "master": {
+        "path": "assets/v3/render/masters/icons/IC-postcard.png",
+        "bytes": 2000791,
+        "sha256": "fe47a2601efe3afbcb303fbf0a0f2104864ca5e8a2975cd624599d16ea8e66a7",
+        "size": [
+          1254,
+          1254
+        ],
+        "alpha": true
+      },
+      "exports": {
+        "96": {
+          "path": "assets/v3/render/exports/icons/IC-postcard-96.webp",
+          "bytes": 6638,
+          "sha256": "b4abe1371d848c583af9a843edaf1b2450e21571a9c8ab576b9a3dd78b2ef158",
+          "size": [
+            96,
+            96
+          ],
+          "alpha": true
+        },
+        "48": {
+          "path": "assets/v3/render/exports/icons/IC-postcard-48.webp",
+          "bytes": 2554,
+          "sha256": "0d3975e248c3751f3e204734e417feb3bb7147e2fed56cb51656c789aa08603d",
+          "size": [
+            48,
+            48
+          ],
+          "alpha": true
+        }
+      }
+    },
+    {
+      "id": "IC-stamp",
+      "status": "eigenaar akkoord (2026-11-09); Hermes PASS (908b4a4)",
+      "note": "tweede versie: afdruk zoals in het Reisboekje",
+      "master": {
+        "path": "assets/v3/render/masters/icons/IC-stamp.png",
+        "bytes": 2473307,
+        "sha256": "c577d992fde854535147558fa4c972da69eb9207c853b864544d1f3baf30906a",
+        "size": [
+          1244,
+          1244
+        ],
+        "alpha": true
+      },
+      "exports": {
+        "96": {
+          "path": "assets/v3/render/exports/icons/IC-stamp-96.webp",
+          "bytes": 7116,
+          "sha256": "a578ddedb395fc9fc97c672923ed6f6f681628016e1c1e4c014019385a14144a",
+          "size": [
+            96,
+            96
+          ],
+          "alpha": true
+        },
+        "48": {
+          "path": "assets/v3/render/exports/icons/IC-stamp-48.webp",
+          "bytes": 2488,
+          "sha256": "50907c9f470defcfe7e5e50e4654025007a87d7943c9cef6b210a3ce526598c7",
+          "size": [
+            48,
+            48
+          ],
+          "alpha": true
+        }
+      }
+    },
+    {
+      "id": "IC-stamp-tool",
+      "status": "bewaard, niet als icoon",
+      "note": "houten stempel; mogelijk voor het moment waarop een stempel in het boek wordt gezet",
+      "master": {
+        "path": "assets/v3/render/masters/icons/IC-stamp-tool.png",
+        "bytes": 1370747,
+        "sha256": "e7651d68b476e45ad29fc9cff6441ebe4f3823f5df0210304b07ed92c9fd3ed7",
+        "size": [
+          1250,
+          1250
+        ],
+        "alpha": true
+      }
+    },
+    {
+      "id": "NINO-WELKOM",
+      "universalMaster": true,
+      "status": "eigenaar akkoord, Hermes open",
+      "source": {
+        "repository": "dennisariens/topo",
+        "ref": "origin/art/master",
+        "commit": "339c4207e6d4b212cda4073862b5df42c8d95474",
+        "path": "assets/art/masters/universal/nino/nino-welkom.png",
+        "sha256": "7abaf4217db907f89f3ac1bc2206428c03a7c90fa270c81b3d9ef3c0f8a66b50"
+      },
+      "note": "Technical Lanczos downscale; full frame and alpha preserved. No passport cover/interior.",
+      "master": {
+        "path": "assets/v3/render/masters/universal/nino-welkom.png",
+        "bytes": 2212075,
+        "sha256": "7abaf4217db907f89f3ac1bc2206428c03a7c90fa270c81b3d9ef3c0f8a66b50",
+        "size": [
+          1024,
+          1536
+        ],
+        "alpha": true
+      },
+      "export": {
+        "path": "assets/v3/render/exports/nino-welkom-v3.webp",
+        "bytes": 211882,
+        "sha256": "bd25cc6689f869e9d924c150514fe60da143dc1eadf840413698fb634601f2b6",
+        "size": [
+          800,
+          1200
+        ],
+        "alpha": true
+      }
+    },
+    {
+      "id": "NINO-SCHRIJFT",
+      "universalMaster": true,
+      "status": "eigenaar akkoord, Hermes open",
+      "source": {
+        "repository": "dennisariens/topo",
+        "ref": "origin/art/master",
+        "commit": "339c4207e6d4b212cda4073862b5df42c8d95474",
+        "path": "assets/art/masters/universal/nino/nino-schrijft.png",
+        "sha256": "ecc6a0fb28fbd1a50f9cbd908a1d23a10041fbb297e4cf26ee0770b246638470"
+      },
+      "note": "Technical Lanczos downscale; full frame and alpha preserved. No passport cover/interior.",
+      "master": {
+        "path": "assets/v3/render/masters/universal/nino-schrijft.png",
+        "bytes": 2221923,
+        "sha256": "ecc6a0fb28fbd1a50f9cbd908a1d23a10041fbb297e4cf26ee0770b246638470",
+        "size": [
+          1024,
+          1536
+        ],
+        "alpha": true
+      },
+      "export": {
+        "path": "assets/v3/render/exports/nino-schrijft-v3.webp",
+        "bytes": 283204,
+        "sha256": "78e77822d041d29173182af1fa13d6c3ddd0d946039f97d51fcca5150cb1391f",
+        "size": [
+          800,
+          1200
+        ],
+        "alpha": true
+      }
+    },
+    {
+      "id": "NINO-AANMOEDIGING",
+      "universalMaster": true,
+      "status": "eigenaar akkoord, Hermes open",
+      "source": {
+        "repository": "dennisariens/topo",
+        "ref": "origin/art/master",
+        "commit": "339c4207e6d4b212cda4073862b5df42c8d95474",
+        "path": "assets/art/masters/universal/nino/nino-aanmoediging.png",
+        "sha256": "a6da029399419d89f50c492eeac737aa8ff947f97690b3f92f30d7df903d5419"
+      },
+      "note": "Technical Lanczos downscale; full frame and alpha preserved. No passport cover/interior.",
+      "master": {
+        "path": "assets/v3/render/masters/universal/nino-aanmoediging.png",
+        "bytes": 2198235,
+        "sha256": "a6da029399419d89f50c492eeac737aa8ff947f97690b3f92f30d7df903d5419",
+        "size": [
+          1024,
+          1536
+        ],
+        "alpha": true
+      },
+      "export": {
+        "path": "assets/v3/render/exports/nino-aanmoediging-v3.webp",
+        "bytes": 292096,
+        "sha256": "327f0f173f7756cbf03956d1c044c604826318ee2f1801482547bd2820104478",
+        "size": [
+          800,
+          1200
+        ],
+        "alpha": true
+      }
+    },
+    {
+      "id": "NINO-JUICHT",
+      "universalMaster": true,
+      "status": "eigenaar akkoord, Hermes open",
+      "source": {
+        "repository": "dennisariens/topo",
+        "ref": "origin/art/master",
+        "commit": "339c4207e6d4b212cda4073862b5df42c8d95474",
+        "path": "assets/art/masters/universal/nino/nino-juicht.png",
+        "sha256": "5adeedbb632b986add7d32949e0a3b8ef0c8a919a0c6c8517265364184adb3da"
+      },
+      "note": "Technical Lanczos downscale; full frame and alpha preserved. No passport cover/interior.",
+      "master": {
+        "path": "assets/v3/render/masters/universal/nino-juicht.png",
+        "bytes": 2480758,
+        "sha256": "5adeedbb632b986add7d32949e0a3b8ef0c8a919a0c6c8517265364184adb3da",
+        "size": [
+          1024,
+          1536
+        ],
+        "alpha": true
+      },
+      "export": {
+        "path": "assets/v3/render/exports/nino-juicht-v3.webp",
+        "bytes": 269398,
+        "sha256": "e270e3406986cfdd97851e347e9dc68db6e31b4d1c0576162b5c3563652b2665",
+        "size": [
+          800,
+          1200
+        ],
+        "alpha": true
+      }
+    },
+    {
+      "id": "NINO-GOLD",
+      "universalMaster": true,
+      "status": "eigenaar akkoord, Hermes open",
+      "source": {
+        "repository": "dennisariens/topo",
+        "ref": "origin/art/master",
+        "commit": "339c4207e6d4b212cda4073862b5df42c8d95474",
+        "path": "assets/art/masters/universal/nino/nino-gold.png",
+        "sha256": "3b2438e32ab8a167c4b1dd60852265a0bf54a5476e9e81de80b135b2f25a0729"
+      },
+      "note": "Technical Lanczos downscale; full frame and alpha preserved. No passport cover/interior.",
+      "master": {
+        "path": "assets/v3/render/masters/universal/nino-gold.png",
+        "bytes": 2021670,
+        "sha256": "3b2438e32ab8a167c4b1dd60852265a0bf54a5476e9e81de80b135b2f25a0729",
+        "size": [
+          1024,
+          1536
+        ],
+        "alpha": true
+      },
+      "export": {
+        "path": "assets/v3/render/exports/nino-gold-v3.webp",
+        "bytes": 197042,
+        "sha256": "7f40ee47da77b41fdd8f139b70fe392ddb54d40fbbefc9eb330c0994893885f2",
+        "size": [
+          800,
+          1200
+        ],
+        "alpha": true
+      }
+    },
+    {
+      "id": "NINO-DENKT",
+      "universalMaster": true,
+      "status": "eigenaar akkoord, Hermes open",
+      "source": {
+        "repository": "dennisariens/topo",
+        "ref": "origin/art/master",
+        "commit": "339c4207e6d4b212cda4073862b5df42c8d95474",
+        "path": "assets/art/masters/universal/nino/nino-denkt.png",
+        "sha256": "6d1fcc1bcc023c7c164ca076120113d9fdb20f3f5f89bd873070e80f06e38e1a"
+      },
+      "note": "Technical Lanczos downscale; full frame and alpha preserved. No passport cover/interior.",
+      "master": {
+        "path": "assets/v3/render/masters/universal/nino-denkt.png",
+        "bytes": 2187322,
+        "sha256": "6d1fcc1bcc023c7c164ca076120113d9fdb20f3f5f89bd873070e80f06e38e1a",
+        "size": [
+          1024,
+          1536
+        ],
+        "alpha": true
+      },
+      "export": {
+        "path": "assets/v3/render/exports/nino-denkt-v3.webp",
+        "bytes": 206558,
+        "sha256": "9304ca962788213598f35463882c5d6d3e126692252d7045d8f640072644b676",
+        "size": [
+          800,
+          1200
+        ],
+        "alpha": true
+      }
+    },
+    {
+      "id": "NINO-WIJST",
+      "universalMaster": true,
+      "status": "eigenaar akkoord, Hermes open",
+      "source": {
+        "repository": "dennisariens/topo",
+        "ref": "origin/art/master",
+        "commit": "339c4207e6d4b212cda4073862b5df42c8d95474",
+        "path": "assets/art/masters/universal/nino/nino-wijst.png",
+        "sha256": "fe0ce6b4767b3fa5c18f5781db3a3678dd36f91dee07374370c1aff6981ac9c2"
+      },
+      "note": "Technical Lanczos downscale; full frame and alpha preserved. No passport cover/interior.",
+      "master": {
+        "path": "assets/v3/render/masters/universal/nino-wijst.png",
+        "bytes": 2234980,
+        "sha256": "fe0ce6b4767b3fa5c18f5781db3a3678dd36f91dee07374370c1aff6981ac9c2",
+        "size": [
+          1024,
+          1536
+        ],
+        "alpha": true
+      },
+      "export": {
+        "path": "assets/v3/render/exports/nino-wijst-v3.webp",
+        "bytes": 216546,
+        "sha256": "427ec65cde84c40165879b165e8867878b99ed83f83e72c9dbb50fdc4af44744",
+        "size": [
+          800,
+          1200
+        ],
+        "alpha": true
+      }
+    },
+    {
+      "id": "NINO-WIJST-RECHTS",
+      "universalMaster": true,
+      "status": "eigenaar akkoord, Hermes open",
+      "source": {
+        "repository": "dennisariens/topo",
+        "ref": "origin/art/master",
+        "commit": "339c4207e6d4b212cda4073862b5df42c8d95474",
+        "path": "assets/art/masters/universal/nino/nino-wijst-rechts.png",
+        "sha256": "d67224ea39867dc47f9cf8493c1b8f0bdaf463c9872c93a7c15da997fd42a208"
+      },
+      "note": "Technical Lanczos downscale; full frame and alpha preserved. No passport cover/interior.",
+      "master": {
+        "path": "assets/v3/render/masters/universal/nino-wijst-rechts.png",
+        "bytes": 2290295,
+        "sha256": "d67224ea39867dc47f9cf8493c1b8f0bdaf463c9872c93a7c15da997fd42a208",
+        "size": [
+          1024,
+          1536
+        ],
+        "alpha": true
+      },
+      "export": {
+        "path": "assets/v3/render/exports/nino-wijst-rechts-v3.webp",
+        "bytes": 226714,
+        "sha256": "5289080556c27c596db1094e9305191cdd46cbcbb3731fe24a065ee3f16f22fc",
+        "size": [
+          800,
+          1200
+        ],
+        "alpha": true
+      }
+    },
+    {
+      "id": "NINO-PASPOORT",
+      "universalMaster": true,
+      "status": "eigenaar akkoord, Hermes open",
+      "source": {
+        "repository": "dennisariens/topo",
+        "ref": "origin/art/master",
+        "commit": "339c4207e6d4b212cda4073862b5df42c8d95474",
+        "path": "assets/art/masters/universal/nino/nino-paspoort.png",
+        "sha256": "f830717b990bc259c29d05972c4d804382778688c8db51c52e895a7b5e7b93c6"
+      },
+      "note": "Technical Lanczos downscale; full frame and alpha preserved. No passport cover/interior.",
+      "master": {
+        "path": "assets/v3/render/masters/universal/nino-paspoort.png",
+        "bytes": 2240530,
+        "sha256": "f830717b990bc259c29d05972c4d804382778688c8db51c52e895a7b5e7b93c6",
+        "size": [
+          1024,
+          1536
+        ],
+        "alpha": true
+      },
+      "export": {
+        "path": "assets/v3/render/exports/nino-paspoort-v3.webp",
+        "bytes": 283372,
+        "sha256": "9fb4e8e43da0bbc370bd938c0292289b3d4af8be7df559ccb9e32e8cc067a7fa",
+        "size": [
+          800,
+          1200
+        ],
+        "alpha": true
+      }
+    },
+    {
+      "id": "VESPA-RIJDEND",
+      "universalMaster": true,
+      "status": "eigenaar akkoord, Hermes open",
+      "source": {
+        "repository": "dennisariens/topo",
+        "ref": "origin/art/master",
+        "commit": "339c4207e6d4b212cda4073862b5df42c8d95474",
+        "path": "assets/art/masters/universal/vespa/vespa-rijdend.png",
+        "sha256": "aad06ca3ad488ef33b27752d22d116979b9a2f2651454f3badf0c38501850c9b"
+      },
+      "note": "Technical Lanczos downscale; full frame and alpha preserved. No passport cover/interior.",
+      "master": {
+        "path": "assets/v3/render/masters/universal/vespa-rijdend.png",
+        "bytes": 2160755,
+        "sha256": "aad06ca3ad488ef33b27752d22d116979b9a2f2651454f3badf0c38501850c9b",
+        "size": [
+          1536,
+          1024
+        ],
+        "alpha": true
+      },
+      "export": {
+        "path": "assets/v3/render/exports/vespa-rijdend-v3.webp",
+        "bytes": 223340,
+        "sha256": "86f084c1599aa1dd8065875ab8edad2e771b271570fb3cadc1174435199a1c90",
+        "size": [
+          1200,
+          800
+        ],
+        "alpha": true
+      }
+    },
+    {
+      "id": "VESPA-BAGAGE",
+      "universalMaster": true,
+      "status": "eigenaar akkoord, Hermes open",
+      "source": {
+        "repository": "dennisariens/topo",
+        "ref": "origin/art/master",
+        "commit": "339c4207e6d4b212cda4073862b5df42c8d95474",
+        "path": "assets/art/masters/universal/vespa/vespa-bagage.png",
+        "sha256": "efc05dd9f6870b1185284eb86712b533da13ea346b837597e8f9f4643104aabc"
+      },
+      "note": "Technical Lanczos downscale; full frame and alpha preserved. No passport cover/interior.",
+      "master": {
+        "path": "assets/v3/render/masters/universal/vespa-bagage.png",
+        "bytes": 2380235,
+        "sha256": "efc05dd9f6870b1185284eb86712b533da13ea346b837597e8f9f4643104aabc",
+        "size": [
+          1536,
+          1024
+        ],
+        "alpha": true
+      },
+      "export": {
+        "path": "assets/v3/render/exports/vespa-bagage-v3.webp",
+        "bytes": 266370,
+        "sha256": "4827324478e2631272dd3f24acf5193fd88dcde253a6057be68f98f428375881",
+        "size": [
+          1200,
+          800
+        ],
+        "alpha": true
+      }
+    },
+    {
+      "id": "VESPA-ZIJ",
+      "universalMaster": true,
+      "status": "eigenaar akkoord, Hermes open",
+      "source": {
+        "repository": "dennisariens/topo",
+        "ref": "origin/art/master",
+        "commit": "339c4207e6d4b212cda4073862b5df42c8d95474",
+        "path": "assets/art/masters/universal/vespa/vespa-zij.png",
+        "sha256": "7730624e90f2a36db99c9a4d59b7a759d9ab27ee27e824ec8b2cebb16004d901"
+      },
+      "note": "Technical Lanczos downscale; full frame and alpha preserved. No passport cover/interior.",
+      "master": {
+        "path": "assets/v3/render/masters/universal/vespa-zij.png",
+        "bytes": 2319492,
+        "sha256": "7730624e90f2a36db99c9a4d59b7a759d9ab27ee27e824ec8b2cebb16004d901",
+        "size": [
+          1536,
+          1024
+        ],
+        "alpha": true
+      },
+      "export": {
+        "path": "assets/v3/render/exports/vespa-zij-v3.webp",
+        "bytes": 224492,
+        "sha256": "9ebfeeb30285ef1d1dd30776d6286591c354c12417b8309d5270ab36e099599c",
+        "size": [
+          1200,
+          800
+        ],
+        "alpha": true
+      }
+    },
+    {
+      "id": "VESPA-ICOON",
+      "universalMaster": true,
+      "status": "eigenaar akkoord, Hermes open",
+      "source": {
+        "repository": "dennisariens/topo",
+        "ref": "origin/art/master",
+        "commit": "339c4207e6d4b212cda4073862b5df42c8d95474",
+        "path": "assets/art/masters/universal/vespa/vespa-icoon.png",
+        "sha256": "902c2bb089557b04f50c43ed3112b4e859716033777e91cd321c8ad95b00679e"
+      },
+      "note": "Technical Lanczos downscale; full frame and alpha preserved. No passport cover/interior.",
+      "master": {
+        "path": "assets/v3/render/masters/universal/vespa-icoon.png",
+        "bytes": 1442267,
+        "sha256": "902c2bb089557b04f50c43ed3112b4e859716033777e91cd321c8ad95b00679e",
+        "size": [
+          1254,
+          1254
+        ],
+        "alpha": true
+      },
+      "export": {
+        "path": "assets/v3/render/exports/vespa-icoon-v3.webp",
+        "bytes": 131496,
+        "sha256": "07af5136d5d523791a3de1154f661ed050766751e46cc17a523594b4562f38cb",
+        "size": [
+          800,
+          800
+        ],
+        "alpha": true
+      }
     }
-   }
-  },
-  {
-   "id": "IC-stamp-tool",
-   "status": "bewaard, niet als icoon",
-   "note": "houten stempel; mogelijk voor het moment waarop een stempel in het boek wordt gezet",
-   "master": {
-    "path": "assets/v3/render/masters/icons/IC-stamp-tool.png",
-    "bytes": 1370747,
-    "sha256": "e7651d68b476e45ad29fc9cff6441ebe4f3823f5df0210304b07ed92c9fd3ed7",
-    "size": [
-     1250,
-     1250
-    ],
-    "alpha": true
-   }
-  },
-  {
-   "id": "NINO-WELKOM",
-   "universalMaster": true,
-   "status": "eigenaar akkoord, Hermes open",
-   "source": {
-    "repository": "dennisariens/topo",
-    "ref": "origin/art/master",
-    "commit": "339c4207e6d4b212cda4073862b5df42c8d95474",
-    "path": "assets/art/masters/universal/nino/nino-welkom.png",
-    "sha256": "7abaf4217db907f89f3ac1bc2206428c03a7c90fa270c81b3d9ef3c0f8a66b50"
-   },
-   "note": "Technical Lanczos downscale; full frame and alpha preserved. No passport cover/interior.",
-   "master": {
-    "path": "assets/v3/render/masters/universal/nino-welkom.png",
-    "bytes": 2212075,
-    "sha256": "7abaf4217db907f89f3ac1bc2206428c03a7c90fa270c81b3d9ef3c0f8a66b50",
-    "size": [
-     1024,
-     1536
-    ],
-    "alpha": true
-   },
-   "export": {
-    "path": "assets/v3/render/exports/nino-welkom-v3.webp",
-    "bytes": 211882,
-    "sha256": "bd25cc6689f869e9d924c150514fe60da143dc1eadf840413698fb634601f2b6",
-    "size": [
-     800,
-     1200
-    ],
-    "alpha": true
-   }
-  },
-  {
-   "id": "NINO-SCHRIJFT",
-   "universalMaster": true,
-   "status": "eigenaar akkoord, Hermes open",
-   "source": {
-    "repository": "dennisariens/topo",
-    "ref": "origin/art/master",
-    "commit": "339c4207e6d4b212cda4073862b5df42c8d95474",
-    "path": "assets/art/masters/universal/nino/nino-schrijft.png",
-    "sha256": "ecc6a0fb28fbd1a50f9cbd908a1d23a10041fbb297e4cf26ee0770b246638470"
-   },
-   "note": "Technical Lanczos downscale; full frame and alpha preserved. No passport cover/interior.",
-   "master": {
-    "path": "assets/v3/render/masters/universal/nino-schrijft.png",
-    "bytes": 2221923,
-    "sha256": "ecc6a0fb28fbd1a50f9cbd908a1d23a10041fbb297e4cf26ee0770b246638470",
-    "size": [
-     1024,
-     1536
-    ],
-    "alpha": true
-   },
-   "export": {
-    "path": "assets/v3/render/exports/nino-schrijft-v3.webp",
-    "bytes": 283204,
-    "sha256": "78e77822d041d29173182af1fa13d6c3ddd0d946039f97d51fcca5150cb1391f",
-    "size": [
-     800,
-     1200
-    ],
-    "alpha": true
-   }
-  },
-  {
-   "id": "NINO-AANMOEDIGING",
-   "universalMaster": true,
-   "status": "eigenaar akkoord, Hermes open",
-   "source": {
-    "repository": "dennisariens/topo",
-    "ref": "origin/art/master",
-    "commit": "339c4207e6d4b212cda4073862b5df42c8d95474",
-    "path": "assets/art/masters/universal/nino/nino-aanmoediging.png",
-    "sha256": "a6da029399419d89f50c492eeac737aa8ff947f97690b3f92f30d7df903d5419"
-   },
-   "note": "Technical Lanczos downscale; full frame and alpha preserved. No passport cover/interior.",
-   "master": {
-    "path": "assets/v3/render/masters/universal/nino-aanmoediging.png",
-    "bytes": 2198235,
-    "sha256": "a6da029399419d89f50c492eeac737aa8ff947f97690b3f92f30d7df903d5419",
-    "size": [
-     1024,
-     1536
-    ],
-    "alpha": true
-   },
-   "export": {
-    "path": "assets/v3/render/exports/nino-aanmoediging-v3.webp",
-    "bytes": 292096,
-    "sha256": "327f0f173f7756cbf03956d1c044c604826318ee2f1801482547bd2820104478",
-    "size": [
-     800,
-     1200
-    ],
-    "alpha": true
-   }
-  },
-  {
-   "id": "NINO-JUICHT",
-   "universalMaster": true,
-   "status": "eigenaar akkoord, Hermes open",
-   "source": {
-    "repository": "dennisariens/topo",
-    "ref": "origin/art/master",
-    "commit": "339c4207e6d4b212cda4073862b5df42c8d95474",
-    "path": "assets/art/masters/universal/nino/nino-juicht.png",
-    "sha256": "5adeedbb632b986add7d32949e0a3b8ef0c8a919a0c6c8517265364184adb3da"
-   },
-   "note": "Technical Lanczos downscale; full frame and alpha preserved. No passport cover/interior.",
-   "master": {
-    "path": "assets/v3/render/masters/universal/nino-juicht.png",
-    "bytes": 2480758,
-    "sha256": "5adeedbb632b986add7d32949e0a3b8ef0c8a919a0c6c8517265364184adb3da",
-    "size": [
-     1024,
-     1536
-    ],
-    "alpha": true
-   },
-   "export": {
-    "path": "assets/v3/render/exports/nino-juicht-v3.webp",
-    "bytes": 269398,
-    "sha256": "e270e3406986cfdd97851e347e9dc68db6e31b4d1c0576162b5c3563652b2665",
-    "size": [
-     800,
-     1200
-    ],
-    "alpha": true
-   }
-  },
-  {
-   "id": "NINO-GOLD",
-   "universalMaster": true,
-   "status": "eigenaar akkoord, Hermes open",
-   "source": {
-    "repository": "dennisariens/topo",
-    "ref": "origin/art/master",
-    "commit": "339c4207e6d4b212cda4073862b5df42c8d95474",
-    "path": "assets/art/masters/universal/nino/nino-gold.png",
-    "sha256": "3b2438e32ab8a167c4b1dd60852265a0bf54a5476e9e81de80b135b2f25a0729"
-   },
-   "note": "Technical Lanczos downscale; full frame and alpha preserved. No passport cover/interior.",
-   "master": {
-    "path": "assets/v3/render/masters/universal/nino-gold.png",
-    "bytes": 2021670,
-    "sha256": "3b2438e32ab8a167c4b1dd60852265a0bf54a5476e9e81de80b135b2f25a0729",
-    "size": [
-     1024,
-     1536
-    ],
-    "alpha": true
-   },
-   "export": {
-    "path": "assets/v3/render/exports/nino-gold-v3.webp",
-    "bytes": 197042,
-    "sha256": "7f40ee47da77b41fdd8f139b70fe392ddb54d40fbbefc9eb330c0994893885f2",
-    "size": [
-     800,
-     1200
-    ],
-    "alpha": true
-   }
-  },
-  {
-   "id": "NINO-DENKT",
-   "universalMaster": true,
-   "status": "eigenaar akkoord, Hermes open",
-   "source": {
-    "repository": "dennisariens/topo",
-    "ref": "origin/art/master",
-    "commit": "339c4207e6d4b212cda4073862b5df42c8d95474",
-    "path": "assets/art/masters/universal/nino/nino-denkt.png",
-    "sha256": "6d1fcc1bcc023c7c164ca076120113d9fdb20f3f5f89bd873070e80f06e38e1a"
-   },
-   "note": "Technical Lanczos downscale; full frame and alpha preserved. No passport cover/interior.",
-   "master": {
-    "path": "assets/v3/render/masters/universal/nino-denkt.png",
-    "bytes": 2187322,
-    "sha256": "6d1fcc1bcc023c7c164ca076120113d9fdb20f3f5f89bd873070e80f06e38e1a",
-    "size": [
-     1024,
-     1536
-    ],
-    "alpha": true
-   },
-   "export": {
-    "path": "assets/v3/render/exports/nino-denkt-v3.webp",
-    "bytes": 206558,
-    "sha256": "9304ca962788213598f35463882c5d6d3e126692252d7045d8f640072644b676",
-    "size": [
-     800,
-     1200
-    ],
-    "alpha": true
-   }
-  },
-  {
-   "id": "NINO-WIJST",
-   "universalMaster": true,
-   "status": "eigenaar akkoord, Hermes open",
-   "source": {
-    "repository": "dennisariens/topo",
-    "ref": "origin/art/master",
-    "commit": "339c4207e6d4b212cda4073862b5df42c8d95474",
-    "path": "assets/art/masters/universal/nino/nino-wijst.png",
-    "sha256": "fe0ce6b4767b3fa5c18f5781db3a3678dd36f91dee07374370c1aff6981ac9c2"
-   },
-   "note": "Technical Lanczos downscale; full frame and alpha preserved. No passport cover/interior.",
-   "master": {
-    "path": "assets/v3/render/masters/universal/nino-wijst.png",
-    "bytes": 2234980,
-    "sha256": "fe0ce6b4767b3fa5c18f5781db3a3678dd36f91dee07374370c1aff6981ac9c2",
-    "size": [
-     1024,
-     1536
-    ],
-    "alpha": true
-   },
-   "export": {
-    "path": "assets/v3/render/exports/nino-wijst-v3.webp",
-    "bytes": 216546,
-    "sha256": "427ec65cde84c40165879b165e8867878b99ed83f83e72c9dbb50fdc4af44744",
-    "size": [
-     800,
-     1200
-    ],
-    "alpha": true
-   }
-  },
-  {
-   "id": "NINO-WIJST-RECHTS",
-   "universalMaster": true,
-   "status": "eigenaar akkoord, Hermes open",
-   "source": {
-    "repository": "dennisariens/topo",
-    "ref": "origin/art/master",
-    "commit": "339c4207e6d4b212cda4073862b5df42c8d95474",
-    "path": "assets/art/masters/universal/nino/nino-wijst-rechts.png",
-    "sha256": "d67224ea39867dc47f9cf8493c1b8f0bdaf463c9872c93a7c15da997fd42a208"
-   },
-   "note": "Technical Lanczos downscale; full frame and alpha preserved. No passport cover/interior.",
-   "master": {
-    "path": "assets/v3/render/masters/universal/nino-wijst-rechts.png",
-    "bytes": 2290295,
-    "sha256": "d67224ea39867dc47f9cf8493c1b8f0bdaf463c9872c93a7c15da997fd42a208",
-    "size": [
-     1024,
-     1536
-    ],
-    "alpha": true
-   },
-   "export": {
-    "path": "assets/v3/render/exports/nino-wijst-rechts-v3.webp",
-    "bytes": 226714,
-    "sha256": "5289080556c27c596db1094e9305191cdd46cbcbb3731fe24a065ee3f16f22fc",
-    "size": [
-     800,
-     1200
-    ],
-    "alpha": true
-   }
-  },
-  {
-   "id": "NINO-PASPOORT",
-   "universalMaster": true,
-   "status": "eigenaar akkoord, Hermes open",
-   "source": {
-    "repository": "dennisariens/topo",
-    "ref": "origin/art/master",
-    "commit": "339c4207e6d4b212cda4073862b5df42c8d95474",
-    "path": "assets/art/masters/universal/nino/nino-paspoort.png",
-    "sha256": "f830717b990bc259c29d05972c4d804382778688c8db51c52e895a7b5e7b93c6"
-   },
-   "note": "Technical Lanczos downscale; full frame and alpha preserved. No passport cover/interior.",
-   "master": {
-    "path": "assets/v3/render/masters/universal/nino-paspoort.png",
-    "bytes": 2240530,
-    "sha256": "f830717b990bc259c29d05972c4d804382778688c8db51c52e895a7b5e7b93c6",
-    "size": [
-     1024,
-     1536
-    ],
-    "alpha": true
-   },
-   "export": {
-    "path": "assets/v3/render/exports/nino-paspoort-v3.webp",
-    "bytes": 283372,
-    "sha256": "9fb4e8e43da0bbc370bd938c0292289b3d4af8be7df559ccb9e32e8cc067a7fa",
-    "size": [
-     800,
-     1200
-    ],
-    "alpha": true
-   }
-  },
-  {
-   "id": "VESPA-RIJDEND",
-   "universalMaster": true,
-   "status": "eigenaar akkoord, Hermes open",
-   "source": {
-    "repository": "dennisariens/topo",
-    "ref": "origin/art/master",
-    "commit": "339c4207e6d4b212cda4073862b5df42c8d95474",
-    "path": "assets/art/masters/universal/vespa/vespa-rijdend.png",
-    "sha256": "aad06ca3ad488ef33b27752d22d116979b9a2f2651454f3badf0c38501850c9b"
-   },
-   "note": "Technical Lanczos downscale; full frame and alpha preserved. No passport cover/interior.",
-   "master": {
-    "path": "assets/v3/render/masters/universal/vespa-rijdend.png",
-    "bytes": 2160755,
-    "sha256": "aad06ca3ad488ef33b27752d22d116979b9a2f2651454f3badf0c38501850c9b",
-    "size": [
-     1536,
-     1024
-    ],
-    "alpha": true
-   },
-   "export": {
-    "path": "assets/v3/render/exports/vespa-rijdend-v3.webp",
-    "bytes": 223340,
-    "sha256": "86f084c1599aa1dd8065875ab8edad2e771b271570fb3cadc1174435199a1c90",
-    "size": [
-     1200,
-     800
-    ],
-    "alpha": true
-   }
-  },
-  {
-   "id": "VESPA-BAGAGE",
-   "universalMaster": true,
-   "status": "eigenaar akkoord, Hermes open",
-   "source": {
-    "repository": "dennisariens/topo",
-    "ref": "origin/art/master",
-    "commit": "339c4207e6d4b212cda4073862b5df42c8d95474",
-    "path": "assets/art/masters/universal/vespa/vespa-bagage.png",
-    "sha256": "efc05dd9f6870b1185284eb86712b533da13ea346b837597e8f9f4643104aabc"
-   },
-   "note": "Technical Lanczos downscale; full frame and alpha preserved. No passport cover/interior.",
-   "master": {
-    "path": "assets/v3/render/masters/universal/vespa-bagage.png",
-    "bytes": 2380235,
-    "sha256": "efc05dd9f6870b1185284eb86712b533da13ea346b837597e8f9f4643104aabc",
-    "size": [
-     1536,
-     1024
-    ],
-    "alpha": true
-   },
-   "export": {
-    "path": "assets/v3/render/exports/vespa-bagage-v3.webp",
-    "bytes": 266370,
-    "sha256": "4827324478e2631272dd3f24acf5193fd88dcde253a6057be68f98f428375881",
-    "size": [
-     1200,
-     800
-    ],
-    "alpha": true
-   }
-  },
-  {
-   "id": "VESPA-ZIJ",
-   "universalMaster": true,
-   "status": "eigenaar akkoord, Hermes open",
-   "source": {
-    "repository": "dennisariens/topo",
-    "ref": "origin/art/master",
-    "commit": "339c4207e6d4b212cda4073862b5df42c8d95474",
-    "path": "assets/art/masters/universal/vespa/vespa-zij.png",
-    "sha256": "7730624e90f2a36db99c9a4d59b7a759d9ab27ee27e824ec8b2cebb16004d901"
-   },
-   "note": "Technical Lanczos downscale; full frame and alpha preserved. No passport cover/interior.",
-   "master": {
-    "path": "assets/v3/render/masters/universal/vespa-zij.png",
-    "bytes": 2319492,
-    "sha256": "7730624e90f2a36db99c9a4d59b7a759d9ab27ee27e824ec8b2cebb16004d901",
-    "size": [
-     1536,
-     1024
-    ],
-    "alpha": true
-   },
-   "export": {
-    "path": "assets/v3/render/exports/vespa-zij-v3.webp",
-    "bytes": 224492,
-    "sha256": "9ebfeeb30285ef1d1dd30776d6286591c354c12417b8309d5270ab36e099599c",
-    "size": [
-     1200,
-     800
-    ],
-    "alpha": true
-   }
-  },
-  {
-   "id": "VESPA-ICOON",
-   "universalMaster": true,
-   "status": "eigenaar akkoord, Hermes open",
-   "source": {
-    "repository": "dennisariens/topo",
-    "ref": "origin/art/master",
-    "commit": "339c4207e6d4b212cda4073862b5df42c8d95474",
-    "path": "assets/art/masters/universal/vespa/vespa-icoon.png",
-    "sha256": "902c2bb089557b04f50c43ed3112b4e859716033777e91cd321c8ad95b00679e"
-   },
-   "note": "Technical Lanczos downscale; full frame and alpha preserved. No passport cover/interior.",
-   "master": {
-    "path": "assets/v3/render/masters/universal/vespa-icoon.png",
-    "bytes": 1442267,
-    "sha256": "902c2bb089557b04f50c43ed3112b4e859716033777e91cd321c8ad95b00679e",
-    "size": [
-     1254,
-     1254
-    ],
-    "alpha": true
-   },
-   "export": {
-    "path": "assets/v3/render/exports/vespa-icoon-v3.webp",
-    "bytes": 131496,
-    "sha256": "07af5136d5d523791a3de1154f661ed050766751e46cc17a523594b4562f38cb",
-    "size": [
-     800,
-     800
-    ],
-    "alpha": true
-   }
-  }
- ]
+  ]
 }

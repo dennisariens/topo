@@ -19,6 +19,19 @@ async def check(p,n,touch):
   assert (await p.locator('.v3Switch button').first.bounding_box())['height']>=44
   await act(p,'.v3MapTools [data-relief=true]',touch)
   assert await p.locator('.v3MapStage .v3Map').get_attribute('data-relief')=='on'
+ if n==13:
+  await q.goto(p,'rewards');await act(p,'.v3TileStamp',touch)
+  assert await p.locator('#travelBook').evaluate('n=>n.open')
+  assert await p.locator('#travelBook .ninoBookSettings').count()==0
+  assert await p.locator('.stampFolio').count()>0
+  label=await p.locator('.bookFooter .micro').inner_text()
+  await p.locator('#travelBook').press('ArrowRight')
+  assert await p.locator('.bookFooter .micro').inner_text()!=label
+  await p.locator('.bookSpread').evaluate('n=>{n.dispatchEvent(new PointerEvent("pointerdown",{clientX:100,clientY:100,pointerId:1,isPrimary:true,bubbles:true}));n.dispatchEvent(new PointerEvent("pointerup",{clientX:220,clientY:100,pointerId:1,isPrimary:true,bubbles:true}));}')
+  assert await p.locator('.bookFooter .micro').inner_text()==label
+  await p.keyboard.press('Escape');await act(p,'.v3TilePostcard',touch)
+  assert 'Post uit Italië' in await p.locator('.bookSpread').inner_text()
+  return 'boek'
  if n==12:
   await p.evaluate('TOPO_V3.shell.practice("point","city1")');await p.wait_for_timeout(500)
   assert await p.locator('.v3LesBack').is_visible()

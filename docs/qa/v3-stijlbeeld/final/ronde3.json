@@ -262,5 +262,27 @@
       }
     },
     "pass": true
+  },
+  "13": {
+    "previewSha256": "d24ac9a84f086cb31a23d0aad9baa2a3bceec6fca9d191a1fda0f0fb695f4e77",
+    "runs": {
+      "desktop": {
+        "viewport": [
+          1440,
+          900
+        ],
+        "screen": "boek",
+        "errors": []
+      },
+      "ipad-liggend": {
+        "viewport": [
+          1080,
+          810
+        ],
+        "screen": "boek",
+        "errors": []
+      }
+    },
+    "pass": true
   }
 }

@@ -271,7 +271,7 @@
   const S=state.slices|0,P=state.pizzas|0,T=state.trips|0,isl=m.chapters.find(c=>c.id==='islands');
   // Postcards as the Reisboekje earns them (V2): two after the islands chapter, one after the 3rd and 6th ride.
   const cards=(isl?.done?2:0)+(T>=3)+(T>=6),gold=m.chapters.filter(c=>c.gold).length;
-  const tile=(cls,iconSrc,value,label,aria)=>{const t=make('div','v3Tile'+(cls?' '+cls:''));t.setAttribute('role','group');t.setAttribute('aria-label',aria);if(iconSrc)t.append(pic(iconSrc,'v3TileIcon',96,96));const v=make('b',null,value);v.setAttribute('aria-hidden','true');const l=make('span',null,label);l.setAttribute('aria-hidden','true');t.append(v,l);return t;};
+  const tile=(cls,iconSrc,value,label,aria)=>{const interactive=label!=='Pizza',t=make(interactive?'button':'div','v3Tile'+(cls?' '+cls:''));if(interactive){t.type='button';t.addEventListener('click',()=>window.TOPO_V3.book?.open(t,label));}else t.setAttribute('role','group');t.setAttribute('aria-label',aria);if(iconSrc)t.append(pic(iconSrc,'v3TileIcon',96,96));const v=make('b',null,value);v.setAttribute('aria-hidden','true');const l=make('span',null,label);l.setAttribute('aria-hidden','true');t.append(v,l);return t;};
   const openBook=e=>{e.stopPropagation();window.TopoBook?.open(e.currentTarget);};
   // The book is the button (afwerking 10-11): no separate "Open Reisboekje" button; the cover takes the focus.
   const book=make('div','v3Book'),cover=btn('',openBook,'v3Btn v3BookCover');cover.setAttribute('aria-label','Open het Reisboekje');

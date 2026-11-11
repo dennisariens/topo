@@ -66,3 +66,6 @@ body.v3Les #answer:focus-visible{outline:3px solid #9675f5;outline-offset:2px}
 body.v3Les .v3LesBar .v3LesBack{display:flex!important;min-width:44px;min-height:44px;flex:none;padding:0 10px;touch-action:manipulation}
 body.v3Les .v3LesBack .v3LesBackText{display:none}
 body.v3Les .v3LesGroup{min-width:0}
+
+.v3Tiles button.v3Tile{color:var(--v3-ink);font:inherit;text-align:center;border:0;cursor:pointer;min-height:44px;touch-action:manipulation}
+.v3Tiles button.v3Tile:focus-visible{outline:3px solid var(--v3-accent);outline-offset:3px}

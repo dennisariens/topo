@@ -218,5 +218,27 @@
       }
     },
     "pass": true
+  },
+  "11": {
+    "previewSha256": "ad7ac8ea4205ab03770f67ead9faf2b0f48419b2abf3876101d632ee142240b1",
+    "runs": {
+      "desktop": {
+        "viewport": [
+          1440,
+          900
+        ],
+        "screen": "reis",
+        "errors": []
+      },
+      "ipad-liggend": {
+        "viewport": [
+          1080,
+          810
+        ],
+        "screen": "reis",
+        "errors": []
+      }
+    },
+    "pass": true
   }
 }

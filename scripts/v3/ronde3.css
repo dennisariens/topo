@@ -60,3 +60,5 @@ body.v3Les #answer{border-color:#c7b6ee;color:var(--v3-ink);background:#ffffffd9
 body.v3Les #answer:focus-visible{outline:3px solid #9675f5;outline-offset:2px}
 
 .v3Counts .v3CountArt{width:40px;height:40px;object-fit:contain;flex:none}
+
+.v3End .v3StatusArt{width:32px;height:32px;object-fit:contain;flex:none}

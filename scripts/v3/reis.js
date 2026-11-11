@@ -210,7 +210,7 @@
   top.replaceChildren(tools,counts);
  }
 
- // Chapter rows (R-reis-ijk): scene, name, status. Done = a check only; gold = a medal; in progress = a thin bar under
+ // Chapter rows (R-reis-ijk): scene, name, status. Done = the earned stamp; gold = the illustrated laurel; in progress = a thin bar under
  // the name; locked = a lock only. The selected row is the selection style.
  function renderRows(m){
   rows.replaceChildren(...m.chapters.map(c=>{
@@ -222,8 +222,8 @@
    else if(art['chapter'+c.index]){thumb.classList.add('v3ThumbIcon');thumb.append(img(art['chapter'+c.index]));}
    const mid=make('span','v3RowMid');mid.append(name);
    const end=make('span','v3End');
-   if(st==='gold'){end.append(icon('v3medal'));end.classList.add('v3EndGold');end.setAttribute('aria-label','goud');}
-   else if(st==='done'){end.append(icon('v3check'));end.classList.add('v3EndDone');end.setAttribute('aria-label','afgerond');}
+   if(st==='gold'){end.append(pic(V3ART.icons.gold,'v3StatusArt',32,32));end.classList.add('v3EndGold');end.setAttribute('aria-label','goud');}
+   else if(st==='done'){end.append(pic(V3ART.icons.stamp,'v3StatusArt',32,32));end.classList.add('v3EndDone');end.setAttribute('aria-label','afgerond');}
    else if(st==='locked'){end.append(icon('v3lock'));end.setAttribute('aria-label','op slot');}
    else{const bar=make('span','v3RowBar');bar.style.setProperty('--v3-on',String(c.r.stage/3));bar.setAttribute('aria-hidden','true');mid.append(bar);end.setAttribute('aria-label',c.r.stage+' van 3 lessen');}
    b.append(thumb,mid,end);

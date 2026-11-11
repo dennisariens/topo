@@ -144,6 +144,11 @@ async def check(p,n,touch):
   return 'toets'
  return 'reis'
 async def main(point):
+ if point==19:
+  report=ROOT/'docs/v3/ARTWORK-INVENTARIS-RONDE3.md';content=report.read_text()
+  files=[f for f in (ROOT/'assets').rglob('*') if f.is_file() and f.suffix.lower() in ('.png','.webp','.jpg','.jpeg','.svg','.gif','.woff2') and 'landmarks' not in str(f)]
+  assert all(str(f.relative_to(ROOT)) in content for f in files)
+  path=OUT/'ronde3.json';data=json.loads(path.read_text());data['19']={'pass':True,'files':len(files),'reportSha256':hashlib.sha256(report.read_bytes()).hexdigest(),'screenshots':'none: documentation only'};path.write_text(json.dumps(data,indent=2)+'\n');print('Ronde 3 punt 19 PASS');return
  initial=hashlib.sha256(q.HTML.read_bytes()).hexdigest();runs={}
  async with async_playwright() as pw:
   b=await pw.chromium.launch(executable_path=q.MAC_CHROME)

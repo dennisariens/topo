@@ -8,6 +8,8 @@
  const body=document.body;
  function decorate(d){
   if(d.dataset.v3)return;d.dataset.v3='welkom';d.classList.add('v3','v3Welkom');
+  const welcome=d.querySelector('.profileWelcome'),asset=V.art?.poses?.['NINO-WELKOM'];
+  if(welcome&&asset){welcome.src=asset.src;welcome.alt='Nino heet je welkom';}
   const skip=d.querySelector('[data-profile-cancel]');if(skip){skip.textContent='Start meteen';skip.classList.add('v3Btn');}
   d.querySelector('[type=submit]')?.classList.add('v3Btn','primary');
   // Help lines of the V2 form (V3 principle: no help texts).

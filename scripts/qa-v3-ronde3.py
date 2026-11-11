@@ -19,6 +19,12 @@ async def check(p,n,touch):
   assert (await p.locator('.v3Switch button').first.bounding_box())['height']>=44
   await act(p,'.v3MapTools [data-relief=true]',touch)
   assert await p.locator('.v3MapStage .v3Map').get_attribute('data-relief')=='on'
+ if n==8:
+  await p.goto(q.HTML.as_uri()+'#welkom/bg03');await p.wait_for_timeout(800)
+  assert await p.locator('.v3Welkom .profileWelcome').count()==1
+  assert await p.locator('.v3Welkom .profileScene').evaluate('n=>getComputedStyle(n).backgroundImage')=='none'
+  assert await p.locator('.v3Welkom .profileBubble h2').evaluate('n=>getComputedStyle(n).fontSize')=='17px'
+  return 'kennismaking'
  if n==7:
   await act(p,'[data-nav=instellingen]',touch)
   d=p.locator('dialog.ninoSettings')

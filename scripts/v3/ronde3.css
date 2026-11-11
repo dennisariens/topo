@@ -42,3 +42,10 @@ dialog.ninoSettings.v3SettingsSheet{width:min(640px,calc(100vw - 40px));padding:
 .v3SettingsSheet button{border:0;border-radius:12px;background:var(--v3-accent-soft);color:var(--v3-accent);font:var(--v3-row);padding:10px 14px;text-align:left}
 .v3SettingsSheet .ninoSettingsGroup>button{width:100%;border-top:1px solid var(--v3-line);border-radius:0;background:transparent}
 .v3SettingsSheet .ninoResetDanger{color:#9b233d}
+
+/* One welcome character, on a glass card over the existing canvas artwork. */
+dialog.ninoProfile.v3Welkom{background:rgba(255,255,255,.72);backdrop-filter:blur(28px) saturate(1.4);border:1px solid #ffffffb3;color:var(--v3-ink)}
+.v3Welkom.ninoFirstRun .profileScene{background:transparent;min-height:190px;align-items:center;padding-top:12px}
+.v3Welkom .profileWelcome{width:170px;height:190px;object-fit:contain;flex:none}
+.v3Welkom .profileBubble{background:rgba(255,255,255,.72);padding:14px;box-shadow:var(--v3-glass-shadow)}
+.v3Welkom .profileBubble h2,.v3Welkom .profileBubble p{font:600 17px/24px var(--v3-font)}

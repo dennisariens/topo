@@ -152,5 +152,27 @@
       }
     },
     "pass": true
+  },
+  "8": {
+    "previewSha256": "4b212e72a0101d81e9f8803b8b339a3d2442ba0230288a48fcff2ca984d906a8",
+    "runs": {
+      "desktop": {
+        "viewport": [
+          1440,
+          900
+        ],
+        "screen": "kennismaking",
+        "errors": []
+      },
+      "ipad-liggend": {
+        "viewport": [
+          1080,
+          810
+        ],
+        "screen": "kennismaking",
+        "errors": []
+      }
+    },
+    "pass": true
   }
 }

@@ -11,7 +11,7 @@ On #bezig (and #afgerond for the gold and done rows), desktop 1440×900, iPad la
     the bottom of the map and the bottom of the chapter card on one line, on the inner margin (±1 px);
   * one title: exactly one display-size text (≥ 30 px, the wordmark aside) on the screen: "Reis"; no visible "Hoofdstukken" heading;
   * sidebar: portrait 112 px on desktop, 88 on iPad landscape (labelled sidebar, 200 px), rail on iPad portrait;
-  * rows: done = a check only (no bar), gold = a medal, in progress = a thin bar, locked = a lock only (no bar);
+  * rows: done = the illustrated stamp (no bar), gold = the illustrated laurel, in progress = a thin bar, locked = a lock only (no bar);
   * the card: title, three step dots and one primary pill; pins of the chapter's places all inside the map's row,
     never under the card (a pin's box ends above the card's top);
   * counters with line icons (no illustration in the UI);
@@ -50,7 +50,7 @@ PROBE = r'''() => {
   const big = [...document.querySelectorAll('.v3Reis *')].filter(n => n.childNodes.length && [...n.childNodes].some(c => c.nodeType === 3 && c.textContent.trim()) && n.checkVisibility() && px(cs(n).fontSize) >= 30 && !n.closest('.v3Brand,.v3CardTitle'))
     .map(n => n.textContent.trim().slice(0, 30));
   const lt = q('#v3ListTitle'), ltVisible = lt && lt.getBoundingClientRect().width > 2;
-  const rowInfo = [...document.querySelectorAll('.v3Row')].map(b => ({state: b.dataset.state, bar: !!b.querySelector('.v3RowBar'), icon: (b.querySelector('.v3End use')?.getAttribute('href') || '').replace('#topo-', '')}));
+  const rowInfo = [...document.querySelectorAll('.v3Row')].map(b => ({state: b.dataset.state, bar: !!b.querySelector('.v3RowBar'), icon: (b.querySelector('.v3End use')?.getAttribute('href') || '').replace('#topo-', ''), art: ['stamp','gold'].find(k=>b.querySelector('.v3End img')?.src===TOPO_V3.art.icons[k]) || '', decoded: !!b.querySelector('.v3End img')?.naturalWidth}));
   const pins = [...document.querySelectorAll('.v3Map .v3Pin')].map(p => R(p));
   const map = q('.v3Map'), sea = map && [...map.querySelectorAll('.sea,.v3RSea,.atlasWaterTexture')].some(n => cs(n).display !== 'none' && cs(n).visibility !== 'hidden');
   const eff = n => { let o = 1; for (let e = n; e && e !== map; e = e.parentNode) o *= parseFloat(cs(e).opacity); return o * parseFloat(cs(n).fillOpacity); };
@@ -60,7 +60,7 @@ PROBE = r'''() => {
   const nbOriginals = map ? [...map.querySelectorAll('.contextLand,.country:not(.v3Hit):not(.v3Isle)')].filter(n => cs(n).display !== 'none' && parseFloat(cs(n).fillOpacity) > 0).length : 0;
   const terrainClip = map ? cs(map.querySelector('.atlasTerrain')).clipPath : '';
   const stageCs = cs(q('.v3MapStage'));
-  const counters = [...document.querySelectorAll('.v3Count')].map(c => ({icon: !!c.querySelector('svg.v3Icon'), img: !!c.querySelector('img')}));
+  const counters = [...document.querySelectorAll('.v3Count')].map((c,index) => ({icon: !!c.querySelector('svg.v3Icon'), img: !!c.querySelector('img'), expected: c.querySelector('img')?.src===TOPO_V3.art.icons[index===0?'slice':'vespa'], decoded: !!c.querySelector('img')?.naturalWidth}));
   const accent = cs(root).getPropertyValue('--v3-accent').trim().toLowerCase();
   const rgb = h => { const m = h.match(/^#(..)(..)(..)$/); return m ? 'rgb(' + [1, 2, 3].map(i => parseInt(m[i], 16)).join(', ') + ')' : h; };
   const violetText = [...document.querySelectorAll('.v3Reis *')].filter(n => n.checkVisibility() && [...n.childNodes].some(c => c.nodeType === 3 && c.textContent.trim()) && cs(n).color === rgb(accent)
@@ -102,8 +102,8 @@ def checks(p, vp, variant, demo, fail):
     if vp != 'ipad-staand' and not p['navLabels']: f('nav labels hidden')
     # Rows.
     for r in p['rowInfo']:
-        if r['state'] == 'done' and (r['bar'] or r['icon'] != 'v3check'): f(f'done row {r}')
-        if r['state'] == 'gold' and (r['bar'] or r['icon'] != 'v3medal'): f(f'gold row {r}')
+        if r['state'] == 'done' and (r['bar'] or r['art'] != 'stamp' or not r['decoded']): f(f'done row {r}')
+        if r['state'] == 'gold' and (r['bar'] or r['art'] != 'gold' or not r['decoded']): f(f'gold row {r}')
         if r['state'] == 'locked' and (r['bar'] or r['icon'] != 'v3lock'): f(f'locked row {r}')
         if r['state'] in ('now', 'open') and not r['bar']: f(f'row in progress without bar {r}')
     # Card, pins.
@@ -112,7 +112,7 @@ def checks(p, vp, variant, demo, fail):
     for b in p['pins']:
         if b['b'] > p['card']['t'] - 1 or b['t'] < p['stage']['t'] - 1 or b['l'] < p['stage']['l'] - 1 or b['r'] > p['stage']['r'] + 1: f(f'pin outside the map row {b} (card top {p["card"]["t"]:.0f})')
     if demo == 'bezig' and len(p['pins']) != 6: f(f'{len(p["pins"])} pins (Steden 7–12: 6)')
-    if not all(c['icon'] and not c['img'] for c in p['counters']): f(f'counters {p["counters"]}')
+    if len(p['counters'])!=2 or not all(not c['icon'] and c['img'] and c['expected'] and c['decoded'] for c in p['counters']): f(f'counters {p["counters"]}')
     if p['violetText']: f(f'violet text outside meaning {p["violetText"][:5]}')
     # Variants.
     if variant == 'eiland':

@@ -1,0 +1,29 @@
+{
+  "date": "2026-11-11T19:11:54.077041+00:00",
+  "commands": {
+    "npm run lint": "PASS",
+    "npm test": "PASS",
+    "npm run build": "PASS",
+    "python3 scripts/qa-v3-all.py": "PASS (20/20 scripts, immutable inputs)"
+  },
+  "indexSha256": "3aced3c31259011b0af2947c78f71965cb4beb2e88c69d1663e61792b0304f5a",
+  "previewSha256": "24b32f9626782878edc76256424d11095d62e836b4bc459f991e5f166a3f2f0e",
+  "qaSuiteSha256": "96a76a6d184757dbc52b09a770af6281cddc1f91119f2608d27e3d9c6b0aa529",
+  "round3Points": "20/20 PASS",
+  "review": "Independent read-only review: no critical/important findings",
+  "screenshots": {
+    "desktop": [
+      1440,
+      900
+    ],
+    "ipadLandscape": [
+      1080,
+      810
+    ]
+  },
+  "open": [
+    "Physical iPad/Safari retest by Hermes",
+    "Owner/Hermes visual review of the ten new landmark illustrations"
+  ],
+  "delivery": "codex/topo-v3; no merge, deployment or publication"
+}

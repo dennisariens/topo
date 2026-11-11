@@ -122,11 +122,11 @@ def checks(p, vp, fail, tag=''):
     f = lambda why: fail(f'{vp}{tag}: {why}')
     if p['big'] != ['Toets']: f(f'display texts {p["big"]}')
     shown = [c['t'] for c in p['chips']]
-    if [t for t in p['titles'] if t not in shown] or 'Alles' not in shown or len(shown) != 12: f(f'chapter chips {shown}')
+    if [t for t in p['titles'] if t not in shown] or 'Alles' not in shown or 'Willekeurig' not in shown or len(shown) != 13: f(f'chapter chips {shown}')
     want = 2 if vp == 'telefoon' else 3
     if p['chipCols'] != want: f(f'{p["chipCols"]} chip columns ≠ {want}')
-    bad = [c for c in p['chips'] if c['h'] > 48 or c['clip'] or c['on'] != c['check']]
-    if bad: f(f'chips not on one line, or check ≠ chosen {bad[:3]}')
+    bad = [c for c in p['chips'] if c['h'] < 44 or c['clip'] or c['on'] != c['check']]
+    if bad: f(f'chips below 44 px, clipped, or check ≠ chosen {bad[:3]}')
     if [x['icons'] for x in p['forms']] != [1, 1, 2] or any(x['img'] for x in p['forms']): f(f'form tiles {p["forms"]}')
     if any(x['radio'] or x['before'] not in ('none', 'normal', '""') for x in p['lens']): f(f'length chips with radio {p["lens"]}')
     if p['primaries'] != 1 or p['play'] != '#topo-v3play' or not near(p['startW'], p['setup']['w'], 1.5): f(f'start pill ({p["primaries"]}, {p["play"]}, {p["startW"]} vs {p["setup"]["w"]})')

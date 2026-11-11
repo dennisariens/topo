@@ -30,7 +30,7 @@ const states=`(function(){
  window.TOPO_V3_THEME=th;window.TOPO_V3_BG=bgKey;const tail=(th==='italia'?'/italia':'')+(bgKey!=='bg03'?'/'+bgKey:'');
  // Theme pair (stijlbeeld): Italia and Viola side by side, desktop 1440×900 or iPad landscape 1180×820, two live frames.
  if(pair){
-  window.stop();addEventListener('hashchange',()=>location.reload());
+  window.stop();document.documentElement.classList.remove('v3Boot');addEventListener('hashchange',()=>location.reload());
   const page=location.href.split('#')[0],k=S[key]?key:'bezig',ipad=!!pair[1],w=ipad?1180:1440,h=ipad?820:900,sc=ipad?.57:.465;
   const links=Object.entries(S).map(([id,s])=>'<a href="#'+pair[0]+id+'"'+(id===k?' aria-current="page"':'')+'>'+s.title+'</a>').join('')+'<a href="#thema-'+k+'"'+(ipad?'':' aria-current="page"')+'>Desktop</a><a href="#thema-ipad-'+k+'"'+(ipad?' aria-current="page"':'')+'>iPad liggend</a>';
   const fr=t=>'<figure><figcaption>'+t[0].toUpperCase()+t.slice(1)+'</figcaption><div class="f" style="width:'+Math.round(w*sc)+'px;height:'+Math.round(h*sc)+'px"><iframe title="'+t+'" style="width:'+w+'px;height:'+h+'px;transform:scale('+sc+')" src="'+page+'#'+k+(t==='italia'?'/italia':'')+'"></iframe></div></figure>';
@@ -39,7 +39,7 @@ const states=`(function(){
  }
  // Side-by-side: stop loading this copy and show two live frames of the same file (desktop and phone).
  if(side){
-  window.stop();addEventListener('hashchange',()=>location.reload());
+  window.stop();document.documentElement.classList.remove('v3Boot');addEventListener('hashchange',()=>location.reload());
   const page=location.href.split('#')[0],k=S[key]?key:'bezig';
   const links=Object.entries(S).map(([id,s])=>'<a href="#naast-'+id+tail+'"'+(id===k?' aria-current="page"':'')+'>'+s.title+'</a>').join('');
   document.documentElement.innerHTML='<head><meta charset="utf-8"><title>V3-preview · naast elkaar</title><style>body{margin:0;background:#e9e3d6;font:600 13px/1.2 -apple-system,system-ui,sans-serif;color:#073f3b}nav{display:flex;gap:8px;align-items:center;padding:8px 12px;background:#073f3b;color:#f8f3e8;flex-wrap:wrap}nav a{color:#f8f3e8;text-decoration:none;padding:9px 12px;border-radius:9px;box-shadow:inset 0 0 0 1px #f8f3e855}nav a[aria-current]{background:#f8f3e8;color:#073f3b}main{display:flex;gap:32px;align-items:flex-start;justify-content:center;padding:24px}figure{margin:0;display:grid;gap:8px}.d{width:1024px;height:640px;overflow:hidden;border-radius:12px;box-shadow:0 8px 30px #0003;background:#fff}.d iframe{width:1440px;height:900px;border:0;transform:scale(.7111);transform-origin:0 0}.p iframe{width:390px;height:844px;border:0;border-radius:28px;box-shadow:0 8px 30px #0003;background:#fff}</style></head><body><nav><strong>V3-preview · naast elkaar · demo</strong>'+links+'<a href="#'+k+'">Alleen deze stand openen</a></nav><main><figure class="d"><iframe title="Desktop 1440×900" src="'+page+'#'+k+tail+'"></iframe></figure><figure class="p"><iframe title="Telefoon 390×844" src="'+page+'#'+k+tail+'"></iframe></figure></main></body>';

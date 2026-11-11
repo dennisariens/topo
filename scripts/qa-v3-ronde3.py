@@ -147,6 +147,8 @@ async def check(p,n,touch):
   assert await p.locator('#schoolbladDialog').evaluate('n=>n.open')
   await p.keyboard.press('Escape')
   if touch:assert await p.locator('.v3SchoolBtn span').evaluate('n=>n.getBoundingClientRect().width')>30
+ if n==4:
+  assert await p.locator('.v3MapTools').evaluate('n=>{const r=n.getBoundingClientRect(),f=n.closest(".v3Reis").getBoundingClientRect();return r.top>=f.top&&r.bottom<=f.bottom&&r.left>=f.left&&r.right<=f.right}')
  if n in (3,4):
   await q.goto(p,'toets')
   bad=await p.locator('.v3ToetsSetup button').evaluate_all("nodes=>nodes.filter(n=>{const r=n.getBoundingClientRect();return r.width<44||r.height<44||n.scrollWidth>n.clientWidth+1}).map(n=>n.textContent)")
@@ -162,7 +164,7 @@ async def check(p,n,touch):
 async def main(point):
  if point==19:
   report=ROOT/'docs/v3/ARTWORK-INVENTARIS-RONDE3.md';content=report.read_text()
-  files=[f for f in (ROOT/'assets').rglob('*') if f.is_file() and f.suffix.lower() in ('.png','.webp','.jpg','.jpeg','.svg','.gif','.woff2') and 'landmarks' not in str(f)]
+  files=[f for f in (ROOT/'assets').rglob('*') if f.is_file() and f.suffix.lower() in ('.png','.webp','.jpg','.jpeg','.svg','.gif','.woff2')]
   assert all(str(f.relative_to(ROOT)) in content for f in files)
   path=OUT/'ronde3.json';data=json.loads(path.read_text());data['19']={'pass':True,'files':len(files),'reportSha256':hashlib.sha256(report.read_bytes()).hexdigest(),'screenshots':'none: documentation only'};path.write_text(json.dumps(data,indent=2)+'\n');print('Ronde 3 punt 19 PASS');return
  initial=hashlib.sha256(q.HTML.read_bytes()).hexdigest();runs={}
@@ -178,10 +180,17 @@ async def main(point):
     raise
    assert not errors,errors
    await p.screenshot(path=str(OUT/f'{screen}-{vp}.png'))
+   if point==17:
+    await p.emulate_media(reduced_motion='reduce')
+    await p.keyboard.press('Escape');await p.keyboard.press('Escape')
+    await p.evaluate('celebrateTrip("Rome","Florence")');await p.wait_for_timeout(100)
+    assert await p.locator('.vespaRide').get_attribute('data-phase')=='arrived'
+    assert await p.locator('.rideArrival').evaluate('n=>getComputedStyle(n).animationDuration')=='0.16s'
    runs[vp]={'viewport':[w,h],'screen':screen,'errors':errors};await c.close()
   await b.close()
  assert initial==hashlib.sha256(q.HTML.read_bytes()).hexdigest()
  path=OUT/'ronde3.json';data=json.loads(path.read_text()) if path.exists() else {};data[str(point)]={'previewSha256':initial,'runs':runs,'pass':True};path.write_text(json.dumps(data,indent=2)+'\n')
  print('Ronde 3 punt',point,'PASS',flush=True)
 if __name__=='__main__':
- parser=argparse.ArgumentParser();parser.add_argument('--point',type=int,choices=range(1,21),default=1);asyncio.run(main(parser.parse_args().point))
+ parser=argparse.ArgumentParser();parser.add_argument('--point',type=int,choices=range(1,21));args=parser.parse_args()
+ for point in ([args.point] if args.point else range(1,21)):asyncio.run(main(point))

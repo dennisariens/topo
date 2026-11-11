@@ -262,3 +262,7 @@ Peildatum: 2026-11-11. Alle lokaal aanwezige raster-, SVG- en fontassets onder `
 | `VESPA-BAGAGE` | eigenaar akkoord, Hermes open | `assets/v3/render/exports/vespa-bagage-v3.webp` — Aankomstpose; alleen bij bijbehorend feedbackmoment. |
 | `VESPA-ZIJ` | eigenaar akkoord, Hermes open | `assets/v3/render/exports/vespa-zij-v3.webp` — Beloningen en Vespa-rit (master-Vespa). |
 | `VESPA-ICOON` | eigenaar akkoord, Hermes open | `assets/v3/render/exports/vespa-icoon-v3.webp` — Reis-teller en Voortgang-tegel (master-Vespa). |
+
+## Aanvulling na punt 20
+
+De inventaris omvat nu 210 aanwezige beeld-/fontbestanden. Nieuw: `assets/v3/landmarks/italia-landmarks-atlas.png` (SHA-256 `17331192b1946e499aafc5608e203bdd239b0c25101d6c78006890824f80c39e`), één transparante atlas met tien illustraties: Colosseum bij Rome, Toren van Pisa, Vesuvius, Etna, Gondel bij Venetië, Duomo bij Florence, Duomo bij Milaan, Mole Antonelliana bij Turijn, Lanterna bij Genua, Twee torens bij Bologna. Alleen zichtbaar op Reis en het toetsresultaat wanneer Reliëf actief is; nooit op de leerkaart of Oefenen. Plaatsing gebruikt de bestaande ITEMS-stads-/vulkaanankers; geen gebouwspecifieke landmeetkundige precisie geclaimd. Visuele eigenaar- en fysieke iPad/Safari-review blijven open.

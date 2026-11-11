@@ -28,6 +28,7 @@ for _id in ('SCENE-ROMA', 'SCENE-VENEZIA', 'SCENE-NAPOLI'):
     SCENE_SHA[RENDER[_id]['chapter']] = {'mini': RENDER[_id]['export_mini']['sha256'], 'kop': RENDER[_id]['export_kop']['sha256']}
 BG_SHA = {f'bg0{i}': RENDER[f'BG-0{i}']['export']['sha256'] for i in (1, 2, 3)}
 ICON_SHA = {k: RENDER['IC-' + k]['exports']['96']['sha256'] for k in ('slice', 'pizza', 'vespa', 'gold', 'stamp', 'postcard')}
+ICON_SHA['vespa']=RENDER['VESPA-ICOON']['export']['sha256']
 RELIEF_PROV = json.loads((ROOT / 'assets/discovery/terrain-z8-render-provenance.json').read_text())
 RELIEF_SHA = {'terrain': json.loads((ROOT / 'assets/v3/relief-r2-provenance.json').read_text())['output']['sha256'], **{l['role']: l['sha256'] for l in RELIEF_PROV['pipeline']['decorative_layers']}}
 MAC_CHROME = '/Applications/Google Chrome.app/Contents/MacOS/Google Chrome'
@@ -60,7 +61,7 @@ PROBE = r'''() => {
   const srcOf = q => document.querySelector(q)?.getAttribute('src') || '';
   return {
     backdrop: {image: bg !== 'none', uri: bgUri, key: window.TOPO_V3_BG, size: cs(body).backgroundSize, attachment: cs(body).backgroundAttachment},
-    art: {portrait: srcOf('.v3Reis .v3PortraitArt img'), slice: document.querySelectorAll('.v3Top .v3Count use')[0]?.getAttribute('href') || '', vespa: document.querySelectorAll('.v3Top .v3Count use')[1]?.getAttribute('href') || '',
+    art: {portrait: srcOf('.v3Reis .v3PortraitArt img'), slice: document.querySelectorAll('.v3Top .v3Count img')[0]?.getAttribute('src') || '', vespa: document.querySelectorAll('.v3Top .v3Count img')[1]?.getAttribute('src') || '',
           kop: srcOf('.v3Panel .v3Kop img'), kopShown: (n => !!n && cs(n).display !== 'none')(document.querySelector('.v3Panel .v3Kop')),
           kopBeforeTitle: (n => !!n && n.nextElementSibling?.id === 'v3Title')(document.querySelector('.v3Panel .v3Kop')), selected: document.querySelector('.v3Row[aria-current], .v3Row[aria-pressed=true], .v3Row.isSelected')?.dataset.chapter},
     window: {radius: w.borderTopLeftRadius, backdropFilter: w.backdropFilter, shadow: w.boxShadow !== 'none', bgAlpha: alpha,
@@ -220,9 +221,9 @@ async def main():
         # Fase B (R-reis-ijk): one chapter card with title, step dots and pill; the rows carry the scenes, no kop.
         'cardWithoutKop': every(runs, lambda r: not r['art']['kopShown']) and all(v == dsha('') for v in res['kops'].values()),
         'portraitIsNinoPortret': every(runs, lambda r: r['art']['portrait'] == RENDER['NINO-PORTRET']['export']['sha256']),
-        # Fase B: UI icons are line icons (Ingetogenheid 4); the IC-slice and IC-vespa illustrations stay content.
-        'counterIcons': every(runs, lambda r: r['art']['slice'] == '#topo-v3slice' and r['art']['vespa'] == '#topo-v3scooter'),
-        'rewardsArt': every(res['rewards'], lambda r: r['ride']['art'] == RENDER['VE-01']['export']['sha256'] and [t['icon'] for t in r['tiles']] == [ICON_SHA[k] for k in ('pizza', 'stamp', 'gold', 'postcard')] and r['cover']),
+        # Ronde 3: illustrated counters, exact slice/master-Vespa bytes; side-view master at Beloningen.
+        'counterIcons': every(runs, lambda r: r['art']['slice'] == ICON_SHA['slice'] and r['art']['vespa'] == ICON_SHA['vespa']),
+        'rewardsArt': every(res['rewards'], lambda r: r['ride']['art'] == RENDER['VESPA-ZIJ']['export']['sha256'] and [t['icon'] for t in r['tiles']] == [ICON_SHA[k] for k in ('pizza', 'stamp', 'gold', 'postcard')] and r['cover']),
         'rewardsCountsMatchV2Book': every(res['rewards'], lambda r: r['book']['open'] and [t['value'].split()[0] for t in r['tiles']] == [str(r['state']['slices']), str(r['book']['stamps']), str(r['book']['gold']), str(r['book']['postcards'])] and r['ride']['value'] == str(r['state']['trips']) and r['ride']['on'] == r['state']['pizzas'] % 3),
         'rewardsView': every(res['rewards'], lambda r: r['view'] == 'rewards' and r['shown'] and r['reisHidden'] and r['focus'] == 'v3RewardsTitle' and r['current'] == ['rewards'] and r['primaries'] == 0 and r['cover']),
         'rewardsLayout': {k: r['clipped'] + r['overlap'] + ([] if r['allInView'] else ['not in view']) for k, r in res['rewards'].items() if r['clipped'] or r['overlap'] or not r['allInView'] or r['horizontalOverflow']},

@@ -73,3 +73,48 @@ Stap 3b–5 zijn akkoord: de typeschaal is gemeten en doorgevoerd, de master-ass
    - contrast 1,3; niet khaki, niet neon.
 5. **Beloningen:** de iconen in de tegels 72 px en de cijfers 40/700; nu ogen ze nog klein.
 6. Daarna: de vergelijkingen opnieuw, en de vergelijking van BG-03 erbij voor alle schermen. Push, en vraag in het afsluitende bericht een hertest door Hermes aan op de eindpin.
+
+## Ronde 3: iPad-test van de eigenaar (11-11)
+
+**Apparaat (de ondergrens):** iPad 9e generatie (3 GB RAM, 1080×810 pt), iPadOS 26.7.2, Safari.
+
+Werk in deze volgorde, één punt per commit:
+- alleen de QA van het gewijzigde scherm;
+- één desktop-screenshot en één screenshot op iPad 1080×810 in `docs/qa/v3-stijlbeeld/final/`.
+
+### P1: fouten
+1. **Reis:** de schakelaar Schoolkaart/Reliëf werkt niet.
+2. **Reis:** de knop Schoolblad reageert niet. Geef hem op iPad ook zijn label "Schoolblad"; alleen het icoon is onduidelijk.
+3. **Toets:** sommige knoppen reageren slecht op aanraking, en tekst is groter dan de knop. Controleer de tik-doelen (≥ 44 pt), `pointer-events` en overlappende lagen.
+4. **iPad 1080×810:** een eigen breakpoint, zodat geen tekst buiten knoppen of panelen valt. Volg de iPad-kolom van de typeschaal, en verklein bij krapte de ruimte, niet de leesbaarheid.
+5. **V2 flitst bij het laden:** verberg de app tot de V3-laag klaar is, met een korte fade vanaf de achtergrond. Na de runtime-migratie verdwijnt V2 helemaal.
+6. **Oefenen:** het rechterpaneel scrolt op iPad. Het moet zonder scroll passen.
+
+### P2: ontwerp
+7. **Instellingen:** zet het V2-dialoogvenster om naar V3: violet glas (Werkblad) en een lijst zoals de Instellingen van iOS. Geen terracotta.
+8. **Kennismaking:**
+   - één Nino: de kopscène met de Vespa óf `nino-welkom`, niet allebei;
+   - de tekstballon kleiner (17/600);
+   - een glaskaart over het artwork in plaats van veel wit.
+9. **Aanwijs- en feedbackstijl in de les** (de markering van het goede antwoord en de verduidelijking): in de V3-stijl, violet, zonder V2-terracotta.
+10. **Tellers (pizza, Vespa):** de geïllustreerde iconen (IC-slice, IC-vespa) in plaats van lijniconen.
+11. **Afgerond hoofdstuk in de lijst:** het verdiende stempel (IC-stamp, klein) in plaats van een kaal vinkje. Goud krijgt de lauwerkrans.
+12. **Terug:** in de les en de toets een terugknop (chevron) in de kop, naar het scherm waar je vandaan kwam. Elders volstaan de tabs.
+13. **Beloningen:**
+    - de tegels Stempels, Goud en Postkaarten openen het boek op de bijbehorende pagina;
+    - de instellingenknop ín het boek vervalt;
+    - in het boek kun je **vegen** naar links en rechts (en de pijltjestoetsen gebruiken), naast Vorige, Volgende en Sluit.
+14. **Boek, pagina 1 en 2:** een nieuwe indeling als papierwereld. Eén schreeftype voor de titels plus één leesletter; geen mengelmoes. Rustige marges.
+15. **Glas rechts:** 68% als AA tegen het artwork overal haalbaar is (meten); anders 72% laten staan.
+
+### P3: na akkoord van de eigenaar
+16. **Toets:** een chip **Willekeurig**: 10 vragen uit de ontgrendelde hoofdstukken.
+17. **Vespa-rit:** de Vespa schudt even (de motor start) en rijdt dan het beeld uit, in plaats van over het lijntje te rijden. Bij verminderde beweging een korte fade.
+18. **Achtergrond kiesbaar** in Instellingen: Kust, Toscane, Meer, of **Wisselen** (per hoofdstuk een passende achtergrond).
+19. **Inventaris van het artwork:** een lijst van alle aanwezige assets (V2 en V3) en waar ze wel of niet zichtbaar zijn. Daarna stelt de lead designer voor waar ongebruikte assets een plek krijgen (scènes Roma, Venezia en Napoli, postkaarten, VE-01).
+20. **Reliëfkaart in de stijl van de render** (advies van de lead designer):
+    - het reliëf warmer en minder groen;
+    - met **geïllustreerde bezienswaardigheden** op de juiste plek: Colosseum bij Rome, de toren van Pisa, Vesuvius en Etna, een gondel bij Venetië, enzovoort;
+    - alleen op Reis en het toetsresultaat;
+    - **leren blijft op de schoolkaart.**
+    Hiervoor is nieuw artwork nodig (±10 iconen).

@@ -33,6 +33,9 @@ Lees voor V3-werk **alleen dit bestand en `docs/v3/OVERDRACHT.md`**. `DECISIONS.
 - **Preview:** niet bouwen als het niet nodig is (50 MB); niet committen.
 - **Afsluiten:** één korte overdracht met de pin, wat er veranderd is en wat open staat. Geen lange logs in Git.
 
+## Ondergrens
+- iPad 9e generatie (3 GB RAM, 1080×810 pt), iPadOS 26.7.2, Safari. Elk scherm moet daar passen, zonder afgesneden tekst.
+
 ## Stand
 - **V3.0:** inhoudelijk en visueel klaar voor de Hermes-hertest op `d2383f2`.
 - **Open:**

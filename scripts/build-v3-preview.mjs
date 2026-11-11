@@ -75,6 +75,9 @@ const render=JSON.parse(read('assets/v3/render/manifest.json')),A=Object.fromEnt
 for(const id of ['SCENE-ROMA','SCENE-VENEZIA','SCENE-NAPOLI'])scenes[A[id].chapter]={mini:uri(A[id].export_mini,id),kop:uri(A[id].export_kop,id)};
 const v3art={bg:{bg01:uri(A['BG-01'].export,'BG-01'),bg02:uri(A['BG-02'].export,'BG-02'),bg03:uri(A['BG-03'].export,'BG-03')},portrait:uri(A['NINO-PORTRET'].export,'NINO-PORTRET'),poses:Object.fromEntries(render.assets.filter(a=>a.universalMaster && !['NINO-PASPOORT','VESPA-ZIJ','VESPA-ICOON','NINO-DENKT','NINO-WIJST-RECHTS'].includes(a.id)).map(a=>[a.id,{src:uri(a.export,a.id),size:a.export.size}])),vespa:uri(A['VESPA-ZIJ'].export,'VESPA-ZIJ'),
  icons:Object.fromEntries(['slice','pizza','vespa','gold','stamp','postcard'].map(k=>[k,k==='vespa'?uri(A['VESPA-ICOON'].export,'VESPA-ICOON'):uri(A['IC-'+k].exports['96'],'IC-'+k)]))};
+const landmarks=JSON.parse(read('assets/v3/landmarks/manifest.json')),landmarkBytes=readFileSync(new URL(landmarks.path,root));
+if(createHash('sha256').update(landmarkBytes).digest('hex')!==landmarks.sha256)throw Error('Landmark atlas differs from manifest');
+v3art.landmarks={...landmarks,src:'data:image/png;base64,'+landmarkBytes.toString('base64')};
 if(Object.keys(scenes).length!==11)throw Error('Expected 11 chapter scenes, found '+Object.keys(scenes).length);
 // Relief z8 render layers (v3/relief-z8 @ 2a7b0cf), checked against their provenance SHA256, embedded as data URIs.
 const prov=JSON.parse(read('assets/discovery/terrain-z8-render-provenance.json')),reliefFiles={terrain:JSON.parse(read('assets/v3/relief-r2-provenance.json')).output,...Object.fromEntries(prov.pipeline.decorative_layers.map(l=>[l.role,l]))},relief={};
@@ -90,7 +93,7 @@ const head='<head>\n<style>html.v3Boot body{visibility:hidden}html.v3Ready body{
 const last=html.lastIndexOf('</body>');if(last<0||html.indexOf('<head>')<0)throw Error('Unexpected index.html shape');
 let out=html.replace('<head>',()=>head);
 const end=out.lastIndexOf('</body>');
-out=out.slice(0,end)+'<script>\n// BEGIN TOPO V3\n'+read('scripts/v3/iconen.js')+'\n'+read('scripts/v3/reis.js')+'\n'+read('scripts/v3/master-assets.js')+'\n'+read('scripts/v3/les.js')+'\n'+read('scripts/v3/shell.js')+'\n'+read('scripts/v3/schoolblad.js')+'\n'+read('scripts/v3/toets.js')+'\n'+read('scripts/v3/voortgang.js')+'\n'+read('scripts/v3/boek.js')+'\n'+read('scripts/v3/kennismaking.js')+'\nrequestAnimationFrame(()=>{document.documentElement.classList.replace("v3Boot","v3Ready");});\n// END TOPO V3\n</script>\n'+out.slice(end);
+out=out.slice(0,end)+'<script>\n// BEGIN TOPO V3\n'+read('scripts/v3/iconen.js')+'\n'+read('scripts/v3/landmarks.js')+'\n'+read('scripts/v3/reis.js')+'\n'+read('scripts/v3/master-assets.js')+'\n'+read('scripts/v3/les.js')+'\n'+read('scripts/v3/shell.js')+'\n'+read('scripts/v3/schoolblad.js')+'\n'+read('scripts/v3/toets.js')+'\n'+read('scripts/v3/voortgang.js')+'\n'+read('scripts/v3/boek.js')+'\n'+read('scripts/v3/kennismaking.js')+'\nrequestAnimationFrame(()=>{document.documentElement.classList.replace("v3Boot","v3Ready");});\n// END TOPO V3\n</script>\n'+out.slice(end);
 out=out.replace(/<title>([^<]*)<\/title>/,(m,t)=>'<title>V3-preview Reis · '+t+'</title>');
 const file='output/html/TOPO-V3-Reis-Preview.html';
 writeFileSync(new URL(file,root),out);

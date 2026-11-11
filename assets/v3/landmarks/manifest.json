@@ -1,0 +1,74 @@
+{
+  "version": 1,
+  "status": "nieuw artwork; visuele eigenaar/Hermes-review open",
+  "source": "OpenAI image generation, 2026-11-11; one transparent 5×2 sprite atlas, original bytes retained",
+  "path": "assets/v3/landmarks/italia-landmarks-atlas.png",
+  "sha256": "17331192b1946e499aafc5608e203bdd239b0c25101d6c78006890824f80c39e",
+  "width": 1983,
+  "height": 793,
+  "columns": 5,
+  "rows": 2,
+  "placement": "Existing ITEMS px/py, exact unmodified city/volcano anchor. City landmarks represent their city at this map scale, not building-survey coordinates. Native projection and DEM unchanged. Reis and exam result only.",
+  "items": [
+    {
+      "id": "colosseum",
+      "label": "Colosseum bij Rome",
+      "anchor": "city-9",
+      "cell": 0
+    },
+    {
+      "id": "pisa",
+      "label": "Toren van Pisa",
+      "anchor": "city-8",
+      "cell": 1
+    },
+    {
+      "id": "vesuvius",
+      "label": "Vesuvius",
+      "anchor": "area-e",
+      "cell": 2
+    },
+    {
+      "id": "etna",
+      "label": "Etna",
+      "anchor": "area-f",
+      "cell": 3
+    },
+    {
+      "id": "gondel",
+      "label": "Gondel bij Venetië",
+      "anchor": "city-11",
+      "cell": 4
+    },
+    {
+      "id": "firenze",
+      "label": "Duomo bij Florence",
+      "anchor": "city-3",
+      "cell": 5
+    },
+    {
+      "id": "milano",
+      "label": "Duomo bij Milaan",
+      "anchor": "city-5",
+      "cell": 6
+    },
+    {
+      "id": "torino",
+      "label": "Mole Antonelliana bij Turijn",
+      "anchor": "city-10",
+      "cell": 7
+    },
+    {
+      "id": "genova",
+      "label": "Lanterna bij Genua",
+      "anchor": "city-4",
+      "cell": 8
+    },
+    {
+      "id": "bologna",
+      "label": "Twee torens bij Bologna",
+      "anchor": "city-2",
+      "cell": 9
+    }
+  ]
+}

@@ -20,6 +20,22 @@ async def check(p,n,touch):
   assert (await p.locator('.v3Switch button').first.bounding_box())['height']>=44
   await act(p,'.v3MapTools [data-relief=true]',touch)
   assert await p.locator('.v3MapStage .v3Map').get_attribute('data-relief')=='on'
+ if n==20:
+  geometry='() => [...document.querySelectorAll("#map [data-id]")].map(n=>[n.dataset.id,n.getAttribute("d"),n.getAttribute("cx"),n.getAttribute("cy")])'
+  before=await p.evaluate(geometry)
+  assert await p.locator('.v3MapStage .v3Landmarks>g').count()==10
+  assert await p.locator('.v3Landmarks>g').evaluate_all('ns=>ns.every(n=>{const a=ITEMS.find(i=>i.id===n.dataset.anchor);return n.getAttribute("transform").startsWith("translate("+a.px+" "+a.py+")")})')
+  assert await p.locator('#map .v3Landmarks').count()==0
+  await act(p,'.v3MapTools [data-relief=false]',touch)
+  assert not await p.locator('.v3MapStage .v3Landmarks').is_visible()
+  await act(p,'.v3MapTools [data-relief=true]',touch)
+  await p.screenshot(path=str(OUT/f'reis-{("ipad-liggend" if touch else "desktop")}.png'))
+  await q.goto(p,'oefenen');assert await p.locator('.v3OefMap .v3Landmarks').count()==0
+  await q.play_toets(p)
+  assert await p.locator('.v3ToetsMap .v3Landmarks>g').count()==10
+  assert await p.evaluate(geometry)==before
+  assert await p.locator('.v3ToetsMap .atlasTerrain').get_attribute('filter')=='url(#v3t-warmRelief)'
+  return 'toetsResult'
  if n==18:
   await act(p,'[data-nav=instellingen]',touch)
   for key in ['bg01','bg02','bg03','auto']:
@@ -158,7 +174,7 @@ async def main(point):
    await p.goto(q.HTML.as_uri()+'#bezig/bg03');await p.wait_for_timeout(650)
    try:screen=await check(p,point,vp!='desktop')
    except Exception:
-    print(await p.locator('.v3MapTools').evaluate('(n)=>{const r=n.getBoundingClientRect();return {rect:r.toJSON(),hits:document.elementsFromPoint(r.x+r.width/2,r.y+r.height/2).slice(0,5).map(x=>x.tagName+"."+x.className)}}'))
+    print('Point',point,'failed at viewport',vp,flush=True)
     raise
    assert not errors,errors
    await p.screenshot(path=str(OUT/f'{screen}-{vp}.png'))

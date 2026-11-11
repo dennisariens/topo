@@ -400,5 +400,27 @@
     "files": 209,
     "reportSha256": "3d4ece1fa819af62553e187b90e6754dd24f1a3e7a37466cbf8f21f309e9b412",
     "screenshots": "none: documentation only"
+  },
+  "20": {
+    "previewSha256": "26fddf61793146b6e7952a17d274883b95de41da54ec2d699b805d08ad15b045",
+    "runs": {
+      "desktop": {
+        "viewport": [
+          1440,
+          900
+        ],
+        "screen": "toetsResult",
+        "errors": []
+      },
+      "ipad-liggend": {
+        "viewport": [
+          1080,
+          810
+        ],
+        "screen": "toetsResult",
+        "errors": []
+      }
+    },
+    "pass": true
   }
 }

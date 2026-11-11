@@ -181,7 +181,7 @@
      if(fr)for(const n of [fr,mk])for(const [a,v] of [['x',bx],['y',by],['width',bw],['height',bh]])n.setAttribute(a,v);
      // The land's drop shadow in screen px (afwerking 10-11: 0 18px 24px rgba(42,36,64,.28)), in map units.
      const ds=svg.querySelector('filter[id$="isleShadow"] feDropShadow');if(ds){ds.setAttribute('dy',(18*k).toFixed(1));ds.setAttribute('stdDeviation',(12*k).toFixed(1));}
-     drawPins(svg,k);}return;}
+     drawPins(svg,k);window.TopoV3Landmarks?.(svg,k);}return;}
    const pad=Math.max(x1-x0,y1-y0)*MARGIN;x0=Math.max(0,x0-pad);y0=Math.max(0,y0-pad);x1=Math.min(CANVAS.w,x1+pad);y1=Math.min(CANVAS.h,y1+pad);
    // Match the stage aspect ratio by growing the shorter side, centred and clamped to the canvas.
    // Measure the free stage (any size set by an earlier fit is released first).
@@ -196,7 +196,7 @@
    if(aspect&&Math.abs(vb-aspect)>.01){if(vb<aspect)svg.style.width=Math.round(box.height*vb)+'px';else svg.style.height=Math.round(box.width/vb)+'px';}
    // The neighbours' fade follows the frame; pins keep their on-screen size (map units per px).
    const fr=svg.querySelector('.v3FadeRect');if(fr){fr.setAttribute('x',x0);fr.setAttribute('y',y0);fr.setAttribute('width',x1-x0);fr.setAttribute('height',y1-y0);}
-   const r2=svg.getBoundingClientRect();if(r2.width&&r2.height)drawPins(svg,Math.max((x1-x0)/r2.width,(y1-y0)/r2.height));
+   const r2=svg.getBoundingClientRect();if(r2.width&&r2.height){const k=Math.max((x1-x0)/r2.width,(y1-y0)/r2.height);drawPins(svg,k);window.TopoV3Landmarks?.(svg,k);}
   }catch{}
  }
  // The stage size changes with the layout (rotation, sidebar width): refit on resize.

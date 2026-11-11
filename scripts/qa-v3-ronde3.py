@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 """Targeted Round 3 screen checks; two requested viewports, overwrite final evidence."""
 import argparse,asyncio,hashlib,importlib.util,json,pathlib
+from PIL import Image
 from playwright.async_api import async_playwright
 ROOT=pathlib.Path(__file__).resolve().parent.parent
 OUT=ROOT/'docs/qa/v3-stijlbeeld/final'
@@ -19,6 +20,17 @@ async def check(p,n,touch):
   assert (await p.locator('.v3Switch button').first.bounding_box())['height']>=44
   await act(p,'.v3MapTools [data-relief=true]',touch)
   assert await p.locator('.v3MapStage .v3Map').get_attribute('data-relief')=='on'
+ if n==15:
+  manifest=json.loads((ROOT/'assets/v3/render/manifest.json').read_text());samples={}
+  for asset in manifest['assets']:
+   if asset['id'] not in ('BG-01','BG-02','BG-03'):continue
+   image=Image.open(ROOT/asset['export']['path']).convert('RGB').resize((240,160))
+   fg=q.lum((94,88,114))
+   ratios=[(q.lum(tuple(255*.68+c*.32 for c in pixel))+.05)/(fg+.05) for pixel in image.getdata()]
+   samples[asset['id']]=round(min(ratios),2)
+  assert any(v<4.5 for v in samples.values()),samples
+  assert await p.locator('.v3Reis').evaluate('n=>getComputedStyle(n).getPropertyValue("--v3-glass").trim()')=='rgba(255,255,255,.72)'
+  (OUT/'glas-ronde3.json').write_text(json.dumps({'decision':'KEEP 72%','candidate':.68,'method':'Conservative white compositing across entire unwashed background artwork; secondary text #5e5872, AA 4.5','minimumContrast':samples},indent=2)+'\n')
  if n==14:
   await q.goto(p,'rewards');await act(p,'.v3BookCover',touch)
   while not await p.locator('.bookFooter button').first.is_disabled():await p.locator('.bookFooter button').first.click()

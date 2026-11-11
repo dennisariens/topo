@@ -1,0 +1,10 @@
+{
+  "decision": "KEEP 72%",
+  "candidate": 0.68,
+  "method": "Conservative white compositing across entire unwashed background artwork; secondary text #5e5872, AA 4.5",
+  "minimumContrast": {
+    "BG-01": 3.06,
+    "BG-02": 3.21,
+    "BG-03": 3.02
+  }
+}

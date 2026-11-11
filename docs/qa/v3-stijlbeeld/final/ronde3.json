@@ -306,5 +306,27 @@
       }
     },
     "pass": true
+  },
+  "15": {
+    "previewSha256": "1be1dbac20ba87628a99f63c8aef762fa7403447a7551833cc5a0fe10e74c675",
+    "runs": {
+      "desktop": {
+        "viewport": [
+          1440,
+          900
+        ],
+        "screen": "reis",
+        "errors": []
+      },
+      "ipad-liggend": {
+        "viewport": [
+          1080,
+          810
+        ],
+        "screen": "reis",
+        "errors": []
+      }
+    },
+    "pass": true
   }
 }

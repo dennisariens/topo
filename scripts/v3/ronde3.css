@@ -87,3 +87,11 @@ body.v3Les .v3LesGroup{min-width:0}
 .travelBook .folioWriting:is(.coverFolio,:has(.bookFact)){background:rgba(255,248,227,.88);border-radius:8px;padding:16px;gap:8px}
 .travelBook .folioWriting:is(.coverFolio,:has(.bookFact)) :is(.bookNote,.bookNote span){white-space:normal;font-size:13px;overflow-wrap:anywhere}
 .travelBook .folioWriting:is(.coverFolio,:has(.bookFact)) .bookScript{font-size:clamp(24px,6cqw,32px)!important}
+
+body.v3On .vespaRide .rideRoad{display:none}
+body.v3On .vespaRide .rideNino{left:5%;width:38%;bottom:4%;transition:none}
+body.v3On .vespaRide[data-phase=depart] .rideNino{animation:v3Engine .12s ease-in-out infinite alternate}
+body.v3On .vespaRide[data-phase=ride] .rideNino{left:5%;animation:v3RideOut 1.5s cubic-bezier(.45,0,.8,.4) forwards}
+@keyframes v3Engine{from{transform:translateY(0) rotate(-.5deg)}to{transform:translateY(-2px) rotate(.5deg)}}
+@keyframes v3RideOut{from{transform:translateX(0)}to{transform:translateX(300%)}}
+@media(prefers-reduced-motion:reduce){body.v3On .vespaRide .rideNino{animation:none!important;transition:none!important}body.v3On .vespaRide .rideArrival{animation:v3Ready .16s ease-out!important}}

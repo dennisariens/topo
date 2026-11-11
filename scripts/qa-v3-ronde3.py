@@ -20,6 +20,15 @@ async def check(p,n,touch):
   assert (await p.locator('.v3Switch button').first.bounding_box())['height']>=44
   await act(p,'.v3MapTools [data-relief=true]',touch)
   assert await p.locator('.v3MapStage .v3Map').get_attribute('data-relief')=='on'
+ if n==17:
+  await p.evaluate('celebrateTrip("Rome","Florence")');await p.wait_for_timeout(100)
+  assert await p.locator('.rideNino').evaluate('n=>getComputedStyle(n).animationName')=='v3Engine'
+  assert await p.locator('.rideRoad').evaluate('n=>getComputedStyle(n).display')=='none'
+  await p.wait_for_timeout(1000)
+  assert await p.locator('.rideNino').evaluate('n=>getComputedStyle(n).animationName')=='v3RideOut'
+  for animation in await p.locator('.rideNino').evaluate('n=>n.getAnimations().map(a=>a.animationName)'):assert animation=='v3RideOut'
+  await p.locator('.rideNino').evaluate('n=>n.getAnimations().forEach(a=>{a.pause();a.currentTime=500})')
+  return 'vespa'
  if n==16:
   await q.goto(p,'toets');await act(p,'[data-random=true]',touch)
   assert await p.locator('[data-random=true]').get_attribute('aria-pressed')=='true'

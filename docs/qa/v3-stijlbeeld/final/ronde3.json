@@ -350,5 +350,27 @@
       }
     },
     "pass": true
+  },
+  "17": {
+    "previewSha256": "d5445933361cad91d7d7774ec360133939b1f5fe6593075f8c30397dfa56d71c",
+    "runs": {
+      "desktop": {
+        "viewport": [
+          1440,
+          900
+        ],
+        "screen": "vespa",
+        "errors": []
+      },
+      "ipad-liggend": {
+        "viewport": [
+          1080,
+          810
+        ],
+        "screen": "vespa",
+        "errors": []
+      }
+    },
+    "pass": true
   }
 }

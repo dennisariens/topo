@@ -16,6 +16,8 @@
    for(let i=0;i<12&&!d.querySelector('.earnedPostcard')&&![...d.querySelectorAll('h3')].some(n=>n.textContent==='Post uit Italië')&&!next.disabled;i++)next.click();
   }
  }};
+ const ride=document.querySelector('.vespaRide'),rider=ride?.querySelector('.rideNino');
+ if(rider){rider.src=V.art.vespa;rider.addEventListener('animationend',e=>{if(e.animationName==='v3RideOut'&&ride.dataset.phase==='ride')ride.querySelector('.rideActions button')?.click();});}
  let start=null;
  spread.style.touchAction='pan-y';
  spread.addEventListener('pointerdown',e=>{if(e.isPrimary!==false)start={x:e.clientX,y:e.clientY,t:e.timeStamp,id:e.pointerId};});

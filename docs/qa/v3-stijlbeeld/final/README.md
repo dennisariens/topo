@@ -1,54 +1,56 @@
-# V3.0 — eindbewijs overdracht 3b–5
+# V3.0 — Ronde 2, eindbewijs en Hermes-hertest
 
-Voor de lead designer. De avondsectie **Kalibratie typografie en beeld** in `docs/v3/renders/README.md` gaat voor eerdere renders en typografiewaarden. Alle kaarten en getallen blijven uit de app komen; de conceptrenders zijn geen geografische bron.
+De opdracht `docs/v3/OVERDRACHT.md` › **Ronde 2** is verwerkt met één commit per punt. Punten 1–4: `eb4fd31`, `58f4d4f`, `0aa4730`, `441ac63`; punt 5: `64250c9`; dit bewijs vormt de afzonderlijke commit voor punt 6. De definitieve volledige eindpin staat in het afsluitende overdrachtsbericht.
 
-**Eindcontrole:** 18/18 V3-QA-scripts, 41/41 contrast-/typeschaalruns, geometrie 46/46 en lint/test/build groen. Exacte hashes en commandologs: [verification.json](verification.json) en [results-all.json](results-all.json). Preview `4ac7b42cc9251beb1a922f7f4a3bd8f20493870a0476aa9505f1cefb862d06d1`.
+**Eindcontrole:** 19/19 V3-QA-scripts groen, inclusief alle vijf Ronde-2-controles; 41/41 contrast-/typografieruns, geometrie 46/46, lint/test/build en de QA-runnerregressie groen. Alle bewijsbestanden gebruiken dezelfde onveranderde preview. [Hashregister](verification.json) · [suiteregister](results-all.json) · [vergelijkingsregister](comparisons.json).
 
-## Vergelijkingen op gelijke breedte
+Preview-SHA256: `0c9a576648896d56a2b7f8f2dad1bd62b595b058cb8122e1318e2efdadbbf329`.
 
-Elke vergelijking bevat het doelbeeld links en de browserbuild rechts. De build is vastgelegd op 1440×900, 1180×820 en 390×844. Er is geen apart telefoonconcept: op telefoon vergelijken we hiërarchie, inhoud en beeldgebruik, niet de desktopkolommen. De previewbalk bovenaan is testbediening en wordt niet gepubliceerd.
+`index.html` blijft byte-gelijk: `3aced3c31259011b0af2947c78f71965cb4beb2e88c69d1663e61792b0304f5a`. De preview-HTML wordt niet gecommit. Er is geen merge, deployment, publicatie of downloadvervanging uitgevoerd.
 
-| Scherm | Doelbeeld | Desktop | iPad liggend | Telefoon |
+## Nieuwe BG-03-vergelijkingen
+
+Alle zeven schermen zijn opnieuw vastgelegd op **BG-03 Kust**: desktop 1440×900, iPad liggend 1180×820 en telefoon 390×844. Elke vergelijking bevat links het goedgekeurde doelbeeld, rechts de actuele browserbuild met expliciet achtergrondlabel. De previewbalk is testbediening. Telefoon heeft geen apart conceptrender: daar beoordelen we hiërarchie, inhoud, bereikbaarheid en beeldgebruik, niet desktopkolommen.
+
+| Scherm | Desktop | iPad liggend | Telefoon | BG-01 / BG-02 / BG-03, desktop |
 | --- | --- | --- | --- | --- |
-| Reis | R-reis-ijk | [vergelijking](vergelijking-reis-desktop.jpg) | [vergelijking](vergelijking-reis-ipad-liggend.jpg) | [vergelijking](vergelijking-reis-telefoon.jpg) |
-| Oefenen | R-oefenen-ijk-rust | [vergelijking](vergelijking-oefenen-desktop.jpg) | [vergelijking](vergelijking-oefenen-ipad-liggend.jpg) | [vergelijking](vergelijking-oefenen-telefoon.jpg) |
-| Les | R-les | [vergelijking](vergelijking-les-desktop.jpg) | [vergelijking](vergelijking-les-ipad-liggend.jpg) | [vergelijking](vergelijking-les-telefoon.jpg) |
-| Toets instellen | R-toets-instellen | [vergelijking](vergelijking-toets-desktop.jpg) | [vergelijking](vergelijking-toets-ipad-liggend.jpg) | [vergelijking](vergelijking-toets-telefoon.jpg) |
-| Toets resultaat | R-toets-resultaat | [vergelijking](vergelijking-toetsResult-desktop.jpg) | [vergelijking](vergelijking-toetsResult-ipad-liggend.jpg) | [vergelijking](vergelijking-toetsResult-telefoon.jpg) |
-| Beloningen | R-beloningen | [vergelijking](vergelijking-rewards-desktop.jpg) | [vergelijking](vergelijking-rewards-ipad-liggend.jpg) | [vergelijking](vergelijking-rewards-telefoon.jpg) |
-| Voortgang | R-voortgang-doel | [vergelijking](vergelijking-voortgang-desktop.jpg) | [vergelijking](vergelijking-voortgang-ipad-liggend.jpg) | [vergelijking](vergelijking-voortgang-telefoon.jpg) |
+| Reis | [vergelijking](vergelijking-reis-desktop.jpg) | [vergelijking](vergelijking-reis-ipad-liggend.jpg) | [vergelijking](vergelijking-reis-telefoon.jpg) | [achtergrondstrook](achtergronden-reis-desktop.jpg) |
+| Oefenen | [vergelijking](vergelijking-oefenen-desktop.jpg) | [vergelijking](vergelijking-oefenen-ipad-liggend.jpg) | [vergelijking](vergelijking-oefenen-telefoon.jpg) | [achtergrondstrook](achtergronden-oefenen-desktop.jpg) |
+| Les | [vergelijking](vergelijking-les-desktop.jpg) | [vergelijking](vergelijking-les-ipad-liggend.jpg) | [vergelijking](vergelijking-les-telefoon.jpg) | [achtergrondstrook](achtergronden-les-desktop.jpg) |
+| Toets instellen | [vergelijking](vergelijking-toets-desktop.jpg) | [vergelijking](vergelijking-toets-ipad-liggend.jpg) | [vergelijking](vergelijking-toets-telefoon.jpg) | [achtergrondstrook](achtergronden-toets-desktop.jpg) |
+| Toets resultaat | [vergelijking](vergelijking-toetsResult-desktop.jpg) | [vergelijking](vergelijking-toetsResult-ipad-liggend.jpg) | [vergelijking](vergelijking-toetsResult-telefoon.jpg) | [achtergrondstrook](achtergronden-toetsResult-desktop.jpg) |
+| Beloningen | [vergelijking](vergelijking-rewards-desktop.jpg) | [vergelijking](vergelijking-rewards-ipad-liggend.jpg) | [vergelijking](vergelijking-rewards-telefoon.jpg) | [achtergrondstrook](achtergronden-rewards-desktop.jpg) |
+| Voortgang | [vergelijking](vergelijking-voortgang-desktop.jpg) | [vergelijking](vergelijking-voortgang-ipad-liggend.jpg) | [vergelijking](vergelijking-voortgang-telefoon.jpg) | [achtergrondstrook](achtergronden-voortgang-desktop.jpg) |
 
-## Visuele beoordeling door de bouwer
+## Wat is geverifieerd
 
-| Vergelijkingspunt | Verwerkt / beoordeling |
-| --- | --- |
-| Hiërarchie en typografie | Gemeten desktop- en iPad-schaal; titel, nav, rijen en cijfers hebben verschillende rollen. Minimumgroottes worden op echte berekende tekst gemeten. |
-| Opbouw | Kaart links, bediening rechts op de brede schermen; Reis-hoofdstukkaart onder op het kaartvlak. Nieuwste eigenaarsbesluit gaat voor de oudere renders met de omgekeerde opbouw. |
-| Kleur en materiaal | Geen filter of wash over het inhoudsvlak; glas 72% met vibrancy. Reliëf contrasteert sterker en is warmer, met sneeuw/wit behouden. Geen wijziging van paden of ankers. |
-| Beeld | Nieuwe Nino bij instellen/resultaat; NINO-ONDERWEG is de rode rijdende Vespa. Het canonieke portret en boek B blijven. Nieuwe beelden zijn technische exports uit de goedgekeurde masters. |
-| Ruimte en lijsten | Alle elf hoofdstukken in Voortgang staan volledig in hun paneel, minimaal 40 px per rij. Drie gelijke tegels volgen eronder; het hele Werkblad scrolt. |
-| Tekst en acties | Geen nieuwe zichtbare UI-copy toegevoegd. De bestaande V2-acties, echte hoofdstuknamen en getallen blijven leidend; geen fictieve inhoud uit de renders. |
-| Responsive | Telefoon gebruikt de bestaande scrollende schermen en vaste tabbalk. Acties lager op het scherm blijven via scroll en toetsenbord bereikbaar. De score houdt ook hier glas en een vrij label. |
+1. BG-03 is standaard; Toscane en Meer blijven kiesbaar. De previewkeuze wordt bij navigatie behouden.
+2. Zijbalk wit 70%, `saturate(.6)`, gemeten CIE76/D65 ΔE ≤8 op Home en Les bij alle achtergronden. De materiaalmetingen verbergen tijdelijk de inhoud; de gewone vergelijkingen tonen de echte app.
+3. Op 1440×900 staan kaart, elf rijen en Dagdoel · Pizza’s · Vespa-ritten volledig binnen het eerste frame. Toetsen en het kennis-paspoort beginnen onder de vouw met een scheidingsrand; de inhoud van de eerste rij wordt niet afgesneden.
+4. Reliëf uit hetzelfde gepinde DEM, met warm geelgroen, olijf, bruin en sneeuw/wit, contrast 1,3. Bronhash, rasterhash, registratie en geometrie zijn gecontroleerd.
+5. Beloningen: vanaf 768 px zijn de geschilderde iconen 72 px en de cijfers 40/700. De alfa-inhoud wordt mee gemeten; de canonieke beeldmarges blijven intact. Telefoon behoudt de bestaande compacte typeschaal en twee kolommen.
+6. 21 nieuwe doelbeeldvergelijkingen en zeven achtergrondstroken. Alle vijf `point-N.json`-bestanden zijn op de eindpreview opnieuw gegenereerd. De QA-runner registreert input-, suite- en scripthashes en verwerpt tussentijdse mutaties.
 
-Bewuste afwijkingen en open punten:
+De bestaande interactieve QA heeft de echte V2-acties, toetsenbord-, focus-, belonings-, opslag-, import- en responsieve routes gecontroleerd. De bouwer heeft daarnaast BG-03 Beloningen op desktop/iPad, Voortgang op desktop en Toets resultaat op telefoon visueel gecontroleerd. De aparte read-only codereview vond geen Critical/Important/Minor-bevindingen. Dit is bouwbewijs; geen vervanging voor onafhankelijke ontwerpacceptatie.
 
-- Oefenen heeft op desktop twee chipkolommen en compacte 2×2-vormtegels: volledige namen op 17 px passen zo samen met de grote kaart en bediening rechts. Op iPad liggend was die compacte indeling al aanwezig.
-- De iPad-les behoudt V2 Focus Mode, met de kaart en het inklapbare antwoordblad. Dat was op de overdrachtspin al een expliciet open punt; deze opdracht begint bij 3b. De kaartoppervlaktecheck sluit die Focus Mode uit. Dit blijft zichtbaar voor de designerreview, niet stilzwijgend als opgelost gemarkeerd.
-- De telefoonnavlabels blijven de bestaande 11 px; de minimumschaal geldt vanaf 768 px. Op 320 px gebruikt de bestaande nav iconen met toegankelijke namen.
-- Visueel akkoord van de lead designer, de Hermes-modelcheck en de onafhankelijke hertest zijn open. Een browser met gesimuleerde viewport is geen fysieke iPad/Safari/VoiceOver-goedkeuring.
+## Reproduceren
 
-## Reproduceerbaarheid
+Gebruik Python 3.11 met Playwright en Pillow en lokaal geïnstalleerde Google Chrome. De tijdelijke QA-omgeving van deze run was `/private/tmp/topo-v3-ronde2-qa` (geen projectdependencies aangepast). De browsers moesten buiten de besturingssysteemsandbox draaien; daarbinnen werd Chrome met EPERM afgebroken.
 
-Gebruik Python 3.11 met Playwright en Pillow en de lokaal geïnstalleerde Chrome. `node scripts/build-v3-preview.mjs` maakt de offline preview; deze HTML staat niet in Git. `qa-v3-all.py` draait alle V3-browserchecks en bewaart exitcodes, bronhashes, scripthashes en een digest van de volledige QA-suite. `--failed` hergebruikt uitsluitend resultaten met identieke inputs én identieke testbytes, inclusief gedeelde testhelpers. Een wijziging tijdens de run maakt de eindstatus rood. `test-v3-qa-runner.py` bewijst die cache- en mutatieregels, inclusief het wijzigen van alleen een geïmporteerde helper met een geïsoleerde regressie.
+```sh
+node scripts/build-v3-preview.mjs
+python scripts/qa-v3-all.py
+python scripts/qa-v3-comparisons.py
+python scripts/test-v3-qa-runner.py
+npm run lint
+NODE_OPTIONS=--no-experimental-webstorage npm test
+npm run build
+```
 
-`qa-v3-comparisons.py` maakt de 21 vergelijkingen. `results-all.json` en `comparisons.json` bevatten de exacte preview-SHA256. De losse logs horen bij die eindrun. Historische Reis/Les-scripts bewaren ook diagnostische velden uit de oudere ontwerpfasen; de actuele presentatieregels worden door fase-B- en afwerkingschecks beoordeeld.
+`qa-v3-ronde2.py` zonder argument voert punten 1–5 uit; `--point N` blijft beschikbaar voor gerichte checks. `qa-v3-all.py --failed` hergebruikt alleen identieke inputs/testbytes, inclusief helpers. De laatste suite draaide volledig zonder cachehergebruik. De preview bleef tijdens alle tests/vergelijkingen gelijk. De herstart tijdens de voorbereiding vereiste een hervatte npm-run; die voltooide met exitcode 0.
 
-## Review en hertest
+## Hermes-hertest op de eindpin
 
-Interne codereview van `877800b..15b1619`: geen kritieke runtimebevindingen. Het gevonden risico op hergebruik van oude QA-uitslagen is hersteld en met een gerichte regressie gecontroleerd.
+[Gericht hertestverzoek](../ronde2/HERMES-HERTEST.md). Hermes: test de definitieve gepushte bewijscommit uit het afsluitende bericht op `codex/topo-v3`, controleer de previewhash hierboven en geef PASS/REWORK met bewijs per punt 1–6.
 
-**Stop na stap 5.** Deze map is het reviewpakket. Er is geen Hermes-verzoek verstuurd: de lead designer beoordeelt de vergelijkingen en vraagt daarna de onafhankelijke hertest op de eindpin aan. Geen merge, deploy, publicatie of vervanging van een download.
-
-## Toegankelijkheidsreview van de wijzigingen
-
-Getoetst aan de [Web Interface Guidelines](https://raw.githubusercontent.com/vercel-labs/web-interface-guidelines/main/command.md): de nieuwe beelden behouden lege alt/aria-hidden en expliciete afmetingen; de bestaande semantische knoppen, labels en focusafhandeling blijven intact. De adapter introduceert geen animatie, netwerkbron of nieuwe interactieve bediening. De scorekop is niet sequentieel focusbaar (`tabindex=-1`); de bewuste ringuitzondering daarop volgt het eigenaarsbesluit. Algemene aanbevelingen veranderen hier geen goedgekeurde V2-navigatie of leerlogica.
+Open voor de onafhankelijke hertest: model-/assetcontrole, visueel designerakkoord en fysiek iPad/Safari/VoiceOver. De gedocumenteerde iPad Focus Mode behoudt de V2-leskaart en antwoordblad; de 45%-kaartcheck sluit die Focus Mode uit. Op telefoon blijft de bestaande compacte navigatie/typeschaal behouden. Geen nieuwe afwijkingen zijn stilzwijgend als opgelost aangemerkt. Geen bericht aan een externe dienst verzonden; dit bestand en het afsluitende bericht vormen het hertestverzoek.

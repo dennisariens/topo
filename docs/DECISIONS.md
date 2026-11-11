@@ -937,3 +937,9 @@ Het reproduceerbare script controleert de hash van het aangeleverde DEM. Bronman
 Op desktop en iPad (vanaf 768 px) zijn de vier geschilderde tegeliconen 72 px en de cijfers 40/700. De canonieke bestanden houden hun transparante bronmarges; de V3-presentatielaag compenseert die per icoon met een schaalfactor. Geen uitsnede, nieuwe illustratie of wijziging van beloningsdata/acties. Telefoon behoudt de bestaande compacte typeschaal en twee kolommen.
 
 De browserregressie meet de berekende beeldmaat én de zichtbare alfa-inhoud (alfa ≥16), zodat een 72px-element met een te kleine tekening niet meer als akkoord telt. Dezelfde check faalde met de CSS van punt 4: Pizza tekende slechts 60,75 px ondanks een 72px-beeldvak. Met deze correctie tekenen alle vier iconen 72 px op standaard/BG-01/BG-02/BG-03. Bewijs: `ronde2/point-5.json` en `beloningen-size-*.png`.
+
+## 2026-11-11 — Ronde 2, punt 6: eindbewijs en Hermes-hertest
+
+Alle zeven schermen opnieuw op expliciet BG-03 vastgelegd: 21 doelbeeldvergelijkingen (1440×900, 1180×820, 390×844), plus zeven desktopstroken met BG-01/02/03. Vergelijkingen weigeren een gewijzigde preview en registreren de achtergrond. `qa-v3-ronde2.py` draait standaard alle vijf punten; gerichte `--point N` blijft beschikbaar. Alle puntmetingen zijn op dezelfde eindpreview ververst.
+
+19/19 V3-QA-scripts, 41 contrast-/typografieruns, geometrie 46/46, QA-runnerregressie en lint/test/build groen. Het hashregister en PROJECT_STATE zijn vernieuwd. Read-only eindcodereview zonder Critical/Important/Minor. Het gerichte Hermes-hertestverzoek staat in het bewijs en wordt afgesloten met de gepushte eindpin; geen externe berichten, merge, deployment of downloadvervanging. Onafhankelijke model-/assetcheck, designerakkoord en fysiek Safari/iPad/VoiceOver blijven open.

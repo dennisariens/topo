@@ -19,12 +19,12 @@ Legacy saves, skill isolation, round/lifetime scores, neutral keyboard picker, m
 QA-1: stage/gold replay daily credit, reload/resubmit idempotence and pizza ledger: PASS
 QA-2: 19 malformed imports preserve exact memory/storage before confirmation; valid schemas 1/2 and interrupted/code migrations: PASS
 Release 1.1: eleven icon references/fallback, continuous route and locked/replay stages, eight-slice copy, NOW gating and truthful Nino outcomes: PASS
-✔ pure role policy: strict Gold, real success, exam suppression and genuine trip only (1.426791ms)
-✔ all six local exports equal manifest hashes and canonical embedded WebP bytes (5735.433417ms)
-✔ pending scenes/postcards stay locked or empty; missing and failed art falls back safely (5770.251459ms)
-✔ canonical engines, geometry, original artwork and print artifacts equal pinned base (6533.612875ms)
-✔ DOM grade/resubmit/reload, chapter completion, Gold/replay/miss preserve base progress and rewards (20453.891208ms)
-✔ free practice wrong-only art, exam suppression, and arrival only at real reward threshold (4573.24575ms)
+✔ pure role policy: strict Gold, real success, exam suppression and genuine trip only (1.363833ms)
+✔ all six local exports equal manifest hashes and canonical embedded WebP bytes (4786.600875ms)
+✔ pending scenes/postcards stay locked or empty; missing and failed art falls back safely (4919.880875ms)
+✔ canonical engines, geometry, original artwork and print artifacts equal pinned base (4390.645125ms)
+✔ DOM grade/resubmit/reload, chapter completion, Gold/replay/miss preserve base progress and rewards (17989.4705ms)
+✔ free practice wrong-only art, exam suppression, and arrival only at real reward threshold (4613.232666ms)
 ℹ tests 6
 ℹ suites 0
 ℹ pass 6
@@ -32,12 +32,12 @@ Release 1.1: eleven icon references/fallback, continuous route and locked/replay
 ℹ cancelled 0
 ℹ skipped 0
 ℹ todo 0
-ℹ duration_ms 44345.497041
+ℹ duration_ms 37769.85675
 Six pinned lake polygons, exact projection/envelopes/hashes, Como forks, live/static/offline parity and noninteractive background contract: OK
-✔ one unchanged photograph; pre-existing code exact except the bounded map resolver hotfix (780.231583ms)
-✔ Learn, Point, Write, exam and route reference opening never mutates a task or progress (5388.733084ms)
-✔ answered/unanswered route and Gold remain exact across cancel; draft answer/caret recover (4621.640167ms)
-✔ modal semantics, keyboard containment and progressive legacy fallback (8929.297958ms)
+✔ one unchanged photograph; pre-existing code exact except the bounded map resolver hotfix (622.73525ms)
+✔ Learn, Point, Write, exam and route reference opening never mutates a task or progress (4411.683792ms)
+✔ answered/unanswered route and Gold remain exact across cancel; draft answer/caret recover (4463.260167ms)
+✔ modal semantics, keyboard containment and progressive legacy fallback (8507.809375ms)
 ℹ tests 4
 ℹ suites 0
 ℹ pass 4
@@ -45,11 +45,11 @@ Six pinned lake polygons, exact projection/envelopes/hashes, Como forks, live/st
 ℹ cancelled 0
 ℹ skipped 0
 ℹ todo 0
-ℹ duration_ms 20997.164792
-✔ verified PR27 app retained except isolated atlas and bounded semantic resolver replacement (945.349791ms)
-✔ pinned DEM bytes embedded, original frame and source land references, no new geographic paths (5143.937666ms)
-✔ activity defaults, explicit persistent choice and exact active-question continuity (8793.196708ms)
-✔ exactly two styles per utility, separate original schoolblad and safe zoom (4753.67ms)
+ℹ duration_ms 18976.518958
+✔ verified PR27 app retained except isolated atlas and bounded semantic resolver replacement (763.495041ms)
+✔ pinned DEM bytes embedded, original frame and source land references, no new geographic paths (4760.707792ms)
+✔ activity defaults, explicit persistent choice and exact active-question continuity (8428.307833ms)
+✔ exactly two styles per utility, separate original schoolblad and safe zoom (4174.980291ms)
 ℹ tests 4
 ℹ suites 0
 ℹ pass 4
@@ -57,17 +57,17 @@ Six pinned lake polygons, exact projection/envelopes/hashes, Como forks, live/st
 ℹ cancelled 0
 ℹ skipped 0
 ℹ todo 0
-ℹ duration_ms 20908.01075
-✔ the only canonical app delta is the bounded resolver; engines, geography, schoolblad and atlas remain exact (733.8725ms)
-✔ all 45 stable IDs have semantic classes: 27 points and independent polygons/river corridors (5327.057083ms)
-✔ neutral display order is not distance or expected-answer order, and never mutates candidates (4493.831834ms)
-✔ real Rome/Vatican keyboard chooser grades stable IDs with both first/second correct and wrong cases (4492.454208ms)
-✔ every point pair keeps its exact source anchors and answer-independent regional framing (4866.4ms)
-✔ all recorded point collision sets keep noncrossing leaders at compact and wide sizes (4286.583375ms)
-✔ Vatican is illustrated inside Rome with two different noncrossing endpoint targets (4496.32425ms)
-✔ approved owner SVG is embedded exactly; shuffled numbers cannot change its drawing (5322.65775ms)
-✔ regional choosers retain distinct volcano/city/state glyphs and source context (5172.101084ms)
-✔ picker rendering does not read expected answer and names containment only in Discover (1.834958ms)
+ℹ duration_ms 19335.230917
+✔ the only canonical app delta is the bounded resolver; engines, geography, schoolblad and atlas remain exact (575.655917ms)
+✔ all 45 stable IDs have semantic classes: 27 points and independent polygons/river corridors (5222.225125ms)
+✔ neutral display order is not distance or expected-answer order, and never mutates candidates (3991.566584ms)
+✔ real Rome/Vatican keyboard chooser grades stable IDs with both first/second correct and wrong cases (3733.098709ms)
+✔ every point pair keeps its exact source anchors and answer-independent regional framing (4258.642375ms)
+✔ all recorded point collision sets keep noncrossing leaders at compact and wide sizes (4159.971667ms)
+✔ Vatican is illustrated inside Rome with two different noncrossing endpoint targets (4848.692834ms)
+✔ approved owner SVG is embedded exactly; shuffled numbers cannot change its drawing (4608.66ms)
+✔ regional choosers retain distinct volcano/city/state glyphs and source context (4238.491583ms)
+✔ picker rendering does not read expected answer and names containment only in Discover (1.276708ms)
 ℹ tests 10
 ℹ suites 0
 ℹ pass 10
@@ -75,16 +75,16 @@ Six pinned lake polygons, exact projection/envelopes/hashes, Como forks, live/st
 ℹ cancelled 0
 ℹ skipped 0
 ℹ todo 0
-ℹ duration_ms 40697.814875
-✔ P0 iPad hotfix preserves verified PR39 teaching, rewards and source outside explicit changes (755.499917ms)
-✔ one canonical input/submit; responsive reparenting retains draft, caret, task and saved progress (4482.625833ms)
-✔ visual viewport adapter reads real offsets without editing learner state or field selection (5103.481292ms)
-✔ chapter availability writes are idempotent: no MutationObserver disabled loop (4631.160917ms)
-✔ Frosted Parchment keeps children opaque and exposes reduced-transparency/contrast fallbacks (1.236125ms)
-✔ F1 Reis/Oefenen resumes the visible writing question, draft and backward selection without progress changes (4816.357208ms)
-✔ F1 navigation preserves every practice mode; a route lesson stays under Reis and resumes through Verder (5085.966792ms)
-✔ F1 Reis can display the journey from a completed round and Verder resumes the same result screen (4396.031541ms)
-✔ F1 canceled journey reset or lesson change keeps the suspended exercise (4388.524042ms)
+ℹ duration_ms 37057.134375
+✔ P0 iPad hotfix preserves verified PR39 teaching, rewards and source outside explicit changes (639.38175ms)
+✔ one canonical input/submit; responsive reparenting retains draft, caret, task and saved progress (4635.047208ms)
+✔ visual viewport adapter reads real offsets without editing learner state or field selection (5452.66625ms)
+✔ chapter availability writes are idempotent: no MutationObserver disabled loop (6967.697375ms)
+✔ Frosted Parchment keeps children opaque and exposes reduced-transparency/contrast fallbacks (1.968291ms)
+✔ F1 Reis/Oefenen resumes the visible writing question, draft and backward selection without progress changes (6696.327708ms)
+✔ F1 navigation preserves every practice mode; a route lesson stays under Reis and resumes through Verder (5223.316875ms)
+✔ F1 Reis can display the journey from a completed round and Verder resumes the same result screen (5270.707709ms)
+✔ F1 canceled journey reset or lesson change keeps the suspended exercise (8378.638167ms)
 ℹ tests 9
 ℹ suites 0
 ℹ pass 9
@@ -92,43 +92,40 @@ Six pinned lake polygons, exact projection/envelopes/hashes, Como forks, live/st
 ℹ cancelled 0
 ℹ skipped 0
 ℹ todo 0
-ℹ duration_ms 34986.70675
-✔ playable journey exposes all eleven ordered stops, and every book interior uses real folios (6228.388167ms)
-✔ iPad portrait reads a single page; stamps and Gold are projections of real completion state (6768.611333ms)
-✔ reward presentation survives result-screen removal and cannot become detached from the active lesson (8753.265917ms)
-✔ third earned pizza opens the ride once; arrival, book and Verder keep the same exercise and progress (6409.559416ms)
-✔ skip jumps to arrival during motion (6477.156ms)
-✔ a new stamp invites once and opens its page; reload, reopening and imports never replay it (13794.960916ms)
-✔ restored progress is rebased quietly and legacy colour backups stay valid (5097.78625ms)
-✔ Gold earned in place invites and targets the same chapter page; onboarding and book carry no colour control (4915.681625ms)
+ℹ duration_ms 44537.774375
+✔ playable journey exposes all eleven ordered stops, and every book interior uses real folios (14482.283208ms)
+✔ iPad portrait reads a single page; stamps and Gold are projections of real completion state (14884.423666ms)
+✔ reward presentation survives result-screen removal and cannot become detached from the active lesson (39889.890208ms)
+✔ third earned pizza opens the ride once; arrival, book and Verder keep the same exercise and progress (14853.661375ms)
+✔ skip jumps to arrival during motion (14721.393667ms)
+✔ a new stamp invites once and opens its page; reload, reopening and imports never replay it (60058.696083ms)
+✔ restored progress is rebased quietly and legacy colour backups stay valid (18417.47875ms)
+✔ Gold earned in place invites and targets the same chapter page; onboarding and book carry no colour control (16282.871708ms)
 Profile validation, Unicode, safe rendering, skip/cancel, reload, legacy, preference isolation and storage failure passed
 Bounded backup inverse audit, whitespace editing and failed-import rollback passed
 Immediate cosmetic favorite feedback and first-run CTA passed
-✔ scripts/nino-profile.test.mjs (2332.802542ms)
-✔ skipped introduction is offered once at the first route lesson; Start meteen opens it under Reis; never again after reload (14708.756084ms)
-✔ Maak kennis met Nino runs the introduction, then the chosen lesson (8336.969625ms)
-✔ completed introduction, legacy saves and existing journey progress go straight to the lesson (15312.903291ms)
-✔ Oefenen marks free practice; route lessons from Reis never mark Oefenen (4500.016417ms)
-✔ only the Schoolkaart is offered; a saved Ontdekkingskaart preference falls back without touching lesson or progress (8600.93525ms)
-✔ one pizza meter in lessons: points, saved pizzas and the last-pizza announcement; legacy meters hidden (4391.4555ms)
-✔ after Bewaar and Annuleren in profile editing, arrow keys page the book again (4420.109834ms)
-✔ a free question on the same place as a suspended route question never restores the route view (4435.126875ms)
-✔ four postcard backs carry Nino’s message on the reverse art and turn within the same card (9130.242958ms)
-✔ design preview is a separate file: in-memory states, direct choices and a ride preview that changes nothing (12341.642083ms)
-✔ controls: the learn bar carries its layout class; Ik weet het nog niet/Overslaan stay secondary until answered (4228.065167ms)
-✔ gold round: ★ Goudronde with the real question count above every gold question, never in a normal lesson; one outcome at the end (15261.190584ms)
-✔ favicon: exactly the owner-supplied NINO N at 16 and 32 px, embedded offline; the old PR65 icons are gone (49.967667ms)
-✔ 2.0.2 exam result: the illustration is bounded by its own box (browser geometry: qa-nino-202-exam-result.mjs) (4303.108708ms)
-✔ 2.0.2 installers: native Mac launcher, unchanged install script, Windows script pinned to the built HTML (2.405542ms)
-✔ every flavor has all nine atlas cells and eight distinct sector selectors; no reward writes (131.665542ms)
-✔ zero rollover retains just-earned flavor; queue orders pizza, static box, trip once (45.909125ms)
-✔ reset cancels pending trip and replay-invalid events cannot fabricate rewards (14.215042ms)
-✔ PR29 approved source and runtime checksums, unique assembly proof (74.195542ms)
-✔ integration applies exactly once and reverse restores untouched baseline (912.06425ms)
-✔ authoritative engine earns 8 answers per pizza and 3 pizzas per trip regardless of favorite (50.635792ms)
-✔ bounded art-slot audit rejects unexpected code and altered hooks (24.71275ms)
-✔ Verder first reveals the box, then continues; saved pizzas are illustrated with an accessible count (22.63225ms)
-✔ the third box says Start de Vespa-rit; the first and second keep Verder (49.26325ms)
+✔ scripts/nino-profile.test.mjs (5347.807917ms)
+✔ skipped introduction is offered once at the first route lesson; Start meteen opens it under Reis; never again after reload (23165.208916ms)
+✔ Maak kennis met Nino runs the introduction, then the chosen lesson (11827.559208ms)
+✔ completed introduction, legacy saves and existing journey progress go straight to the lesson (35858.439042ms)
+✔ Oefenen marks free practice; route lessons from Reis never mark Oefenen (7715.586709ms)
+✔ only the Schoolkaart is offered; a saved Ontdekkingskaart preference falls back without touching lesson or progress (22920.5ms)
+✔ one pizza meter in lessons: points, saved pizzas and the last-pizza announcement; legacy meters hidden (15303.347583ms)
+✔ after Bewaar and Annuleren in profile editing, arrow keys page the book again (10250.454ms)
+✔ a free question on the same place as a suspended route question never restores the route view (9639.81020✔ f✔ four postcard backs carry Nino’s message on the reverse art and turn within the same card (14683.50604✔ d✔ design preview is a separate file: in-memory states, direct choices and a ride preview that changes nothing (21076.905ms)
+✔ controls: the learn bar carries its layout class; Ik weet het nog niet/Overslaan stay secondary until answered (7045.764542ms�✔ gold round: ★ Goudronde with the real question count above every gold question, never in a normal lesson; one outcome at the end (24126.176042ms)
+✔ favicon: exactly the owner-supplied NINO N at 16 and 32 px, embedded offline; the old PR65 icons are gone (57.258375ms)
+✔ 2.0.2 exam result: the illustration is bounded by its own box (browser geometry: qa-nino-202-exam-result.mjs) (4765.431792ms)
+✔ 2.0.2 installers: native Mac launcher, unchanged install script, Windows script pinned to the built HTML (2.163916ms)
+✔ every flavor has all nine atlas cells and eight distinct sector selectors; no reward writes (464.94125ms)
+✔ zero rollover retains just-earned flavor; queue orders pizza, static box, trip once (69.423709ms)
+✔ reset cancels pending trip and replay-invalid events cannot fabricate rewards (31.505583ms)
+✔ PR29 approved source and runtime checksums, unique assembly proof (93.313458ms)
+✔ integration applies exactly once and reverse restores untouched baseline (2402.77725ms)
+✔ authoritative engine earns 8 answers per pizza and 3 pizzas per trip regardless of favorite (98.155542ms)
+✔ bounded art-slot audit rejects unexpected code and altered hooks (33.837792ms)
+✔ Verder first reveals the box, then continues; saved pizzas are illustrated with an accessible count (31.315375ms)
+✔ the third box says Start de Vespa-rit; the first and second keep Verder (66.610583ms)
 ℹ tests 33
 ℹ suites 0
 ℹ pass 33
@@ -136,4 +133,4 @@ Immediate cosmetic favorite feedback and first-run CTA passed
 ℹ cancelled 0
 ℹ skipped 0
 ℹ todo 0
-ℹ duration_ms 111391.52125
+ℹ duration_ms 210713.111125

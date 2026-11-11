@@ -1,14 +1,14 @@
 {
  "html": "output/html/TOPO-V3-Reis-Preview.html",
- "sha256": "4ac7b42cc9251beb1a922f7f4a3bd8f20493870a0476aa9505f1cefb862d06d1",
+ "sha256": "0c9a576648896d56a2b7f8f2dad1bd62b595b058cb8122e1318e2efdadbbf329",
  "indexSha256": "3aced3c31259011b0af2947c78f71965cb4beb2e88c69d1663e61792b0304f5a",
  "runs": {
   "desktop": {
    "beats": {
     "discover": {
      "mode": "discover",
-     "id": "city-11",
-     "name": "Venetië",
+     "id": "city-7",
+     "name": "Palermo",
      "answered": false,
      "paused": false,
      "kind": "discover",
@@ -27,7 +27,7 @@
      "dialogs": [],
      "message": "Kijk goed naar de plek en zeg de naam.",
      "messageClass": "message ",
-     "prompt": "Venetië",
+     "prompt": "Palermo",
      "meter": "6 van 8",
      "active": "ninoSchoolMapOnly v3On v3Shell lessonFocus v3Les",
      "layout": {
@@ -46,8 +46,8 @@
     },
     "point-q": {
      "mode": "point",
-     "id": "city-11",
-     "name": "Venetië",
+     "id": "city-12",
+     "name": "Verona",
      "answered": false,
      "paused": false,
      "kind": "point",
@@ -66,7 +66,7 @@
      "dialogs": [],
      "message": "Jij bent aan zet.",
      "messageClass": "message ",
-     "prompt": "Waar ligt Venetië?",
+     "prompt": "Waar ligt Verona?",
      "meter": "6 van 8",
      "active": "ninoSchoolMapOnly v3On v3Shell v3Les lessonFocus",
      "layout": {
@@ -85,8 +85,8 @@
     },
     "point-wrong": {
      "mode": "point",
-     "id": "city-11",
-     "name": "Venetië",
+     "id": "city-12",
+     "name": "Verona",
      "answered": true,
      "paused": false,
      "kind": "point",
@@ -105,9 +105,9 @@
      "currentStep": "point",
      "count": "1 / 7",
      "dialogs": [],
-     "message": "Dat was Bari. Gezocht: Venetië.",
+     "message": "Dat was Bari. Gezocht: Verona.",
      "messageClass": "message bad",
-     "prompt": "Waar ligt Venetië?",
+     "prompt": "Waar ligt Verona?",
      "meter": "6 van 8",
      "active": {},
      "layout": {
@@ -167,8 +167,8 @@
     },
     "pizza": {
      "mode": "point",
-     "id": "city-7",
-     "name": "Palermo",
+     "id": "city-8",
+     "name": "Pisa",
      "answered": true,
      "paused": false,
      "kind": "point",
@@ -191,7 +191,7 @@
      ],
      "message": "Perfetto! Een pizza compleet.",
      "messageClass": "message good",
-     "prompt": "Waar ligt Palermo?",
+     "prompt": "Waar ligt Pisa?",
      "meter": "0 van 8",
      "active": "button primary",
      "layout": {
@@ -210,8 +210,8 @@
     },
     "pause": {
      "mode": "point",
-     "id": "city-10",
-     "name": "Turijn",
+     "id": "city-7",
+     "name": "Palermo",
      "answered": true,
      "paused": true,
      "kind": "point",
@@ -230,7 +230,7 @@
      "dialogs": [],
      "message": "Goed gevonden!",
      "messageClass": "message good",
-     "prompt": "Waar ligt Turijn?",
+     "prompt": "Waar ligt Palermo?",
      "meter": "3 van 8",
      "active": "finishTitle",
      "layout": {
@@ -288,8 +288,8 @@
     },
     "write-q": {
      "mode": "write",
-     "id": "city-9",
-     "name": "Rome",
+     "id": "city-7",
+     "name": "Palermo",
      "answered": false,
      "paused": false,
      "kind": "write",
@@ -327,8 +327,8 @@
     },
     "write-wrong": {
      "mode": "write",
-     "id": "city-9",
-     "name": "Rome",
+     "id": "city-7",
+     "name": "Palermo",
      "answered": true,
      "paused": false,
      "kind": "write",
@@ -347,7 +347,7 @@
      "currentStep": "write",
      "count": "1 / 7",
      "dialogs": [],
-     "message": "De juiste naam is Rome.",
+     "message": "De juiste naam is Palermo.",
      "messageClass": "message bad",
      "prompt": "Hoe heet deze plek?",
      "meter": "4 van 8",
@@ -368,8 +368,8 @@
     },
     "write-ok": {
      "mode": "write",
-     "id": "city-10",
-     "name": "Turijn",
+     "id": "city-9",
+     "name": "Rome",
      "answered": true,
      "paused": false,
      "kind": "write",
@@ -409,8 +409,8 @@
     },
     "vespa": {
      "mode": "write",
-     "id": "city-8",
-     "name": "Pisa",
+     "id": "city-11",
+     "name": "Venetië",
      "answered": true,
      "paused": false,
      "kind": "write",
@@ -695,24 +695,8 @@
       "ok": true
      },
      {
-      "x": 599.8258361816406,
-      "y": 639.5499267578125,
-      "onMap": true,
-      "v3": false,
-      "via": "tap",
-      "ok": true
-     },
-     {
       "x": 504.25059509277344,
       "y": 385.6690673828125,
-      "onMap": true,
-      "v3": false,
-      "via": "tap",
-      "ok": true
-     },
-     {
-      "x": 523.3786010742188,
-      "y": 307.60675048828125,
       "onMap": true,
       "v3": false,
       "via": "tap",
@@ -733,6 +717,22 @@
       "v3": false,
       "via": "tap",
       "ok": true
+     },
+     {
+      "x": 599.8258361816406,
+      "y": 639.5499267578125,
+      "onMap": true,
+      "v3": false,
+      "via": "tap",
+      "ok": true
+     },
+     {
+      "x": 523.3786010742188,
+      "y": 307.60675048828125,
+      "onMap": true,
+      "v3": false,
+      "via": "tap",
+      "ok": true
      }
     ],
     "pointOkFeedback": true,
@@ -741,12 +741,12 @@
     "writeWrongNotOk": true,
     "draft": {
      "mid": {
-      "v": "Tur",
+      "v": "Rom",
       "f": true,
       "shell": "true"
      },
      "end": {
-      "v": "Tur",
+      "v": "Rom",
       "f": true,
       "shell": "false"
      },
@@ -811,8 +811,8 @@
    "beats": {
     "discover": {
      "mode": "discover",
-     "id": "city-8",
-     "name": "Pisa",
+     "id": "city-7",
+     "name": "Palermo",
      "answered": false,
      "paused": false,
      "kind": "discover",
@@ -831,7 +831,7 @@
      "dialogs": [],
      "message": "Kijk goed naar de plek en zeg de naam.",
      "messageClass": "message ",
-     "prompt": "Pisa",
+     "prompt": "Palermo",
      "meter": "6 van 8",
      "active": "ninoSchoolMapOnly v3On v3Shell lessonFocus v3Les",
      "layout": {
@@ -846,8 +846,8 @@
     },
     "point-q": {
      "mode": "point",
-     "id": "city-10",
-     "name": "Turijn",
+     "id": "city-12",
+     "name": "Verona",
      "answered": false,
      "paused": false,
      "kind": "point",
@@ -866,7 +866,7 @@
      "dialogs": [],
      "message": "Jij bent aan zet.",
      "messageClass": "message ",
-     "prompt": "Waar ligt Turijn?",
+     "prompt": "Waar ligt Verona?",
      "meter": "6 van 8",
      "active": "ninoSchoolMapOnly v3On v3Shell v3Les lessonFocus",
      "layout": {
@@ -881,8 +881,8 @@
     },
     "point-wrong": {
      "mode": "point",
-     "id": "city-10",
-     "name": "Turijn",
+     "id": "city-12",
+     "name": "Verona",
      "answered": true,
      "paused": false,
      "kind": "point",
@@ -901,9 +901,9 @@
      "currentStep": "point",
      "count": "1 / 7",
      "dialogs": [],
-     "message": "Dat was Bari. Gezocht: Turijn.",
+     "message": "Dat was Bari. Gezocht: Verona.",
      "messageClass": "message bad",
-     "prompt": "Waar ligt Turijn?",
+     "prompt": "Waar ligt Verona?",
      "meter": "6 van 8",
      "active": {},
      "layout": {
@@ -918,8 +918,8 @@
     },
     "point-ok": {
      "mode": "point",
-     "id": "city-9",
-     "name": "Rome",
+     "id": "city-10",
+     "name": "Turijn",
      "answered": true,
      "paused": false,
      "kind": "point",
@@ -940,7 +940,7 @@
      "dialogs": [],
      "message": "Goed gevonden!",
      "messageClass": "message good",
-     "prompt": "Waar ligt Rome?",
+     "prompt": "Waar ligt Turijn?",
      "meter": "7 van 8",
      "active": {},
      "layout": {
@@ -955,8 +955,8 @@
     },
     "pizza": {
      "mode": "point",
-     "id": "city-11",
-     "name": "Venetië",
+     "id": "city-8",
+     "name": "Pisa",
      "answered": true,
      "paused": false,
      "kind": "point",
@@ -979,7 +979,7 @@
      ],
      "message": "Perfetto! Een pizza compleet.",
      "messageClass": "message good",
-     "prompt": "Waar ligt Venetië?",
+     "prompt": "Waar ligt Pisa?",
      "meter": "0 van 8",
      "active": "button primary",
      "layout": {
@@ -994,8 +994,8 @@
     },
     "pause": {
      "mode": "point",
-     "id": "city-8",
-     "name": "Pisa",
+     "id": "city-9",
+     "name": "Rome",
      "answered": true,
      "paused": true,
      "kind": "point",
@@ -1014,7 +1014,7 @@
      "dialogs": [],
      "message": "Goed gevonden!",
      "messageClass": "message good",
-     "prompt": "Waar ligt Pisa?",
+     "prompt": "Waar ligt Rome?",
      "meter": "3 van 8",
      "active": "finishTitle",
      "layout": {
@@ -1064,8 +1064,8 @@
     },
     "write-q": {
      "mode": "write",
-     "id": "city-12",
-     "name": "Verona",
+     "id": "city-9",
+     "name": "Rome",
      "answered": false,
      "paused": false,
      "kind": "write",
@@ -1099,8 +1099,8 @@
     },
     "write-wrong": {
      "mode": "write",
-     "id": "city-12",
-     "name": "Verona",
+     "id": "city-9",
+     "name": "Rome",
      "answered": true,
      "paused": false,
      "kind": "write",
@@ -1119,7 +1119,7 @@
      "currentStep": "write",
      "count": "1 / 7",
      "dialogs": [],
-     "message": "De juiste naam is Verona.",
+     "message": "De juiste naam is Rome.",
      "messageClass": "message bad",
      "prompt": "Hoe heet deze plek?",
      "meter": "4 van 8",
@@ -1136,8 +1136,8 @@
     },
     "write-ok": {
      "mode": "write",
-     "id": "city-7",
-     "name": "Palermo",
+     "id": "city-10",
+     "name": "Turijn",
      "answered": true,
      "paused": false,
      "kind": "write",
@@ -1173,8 +1173,8 @@
     },
     "vespa": {
      "mode": "write",
-     "id": "city-11",
-     "name": "Venetië",
+     "id": "city-8",
+     "name": "Pisa",
      "answered": true,
      "paused": false,
      "kind": "write",
@@ -1392,27 +1392,19 @@
     "pointWrongNotOk": true,
     "pointTaps": [
      {
-      "x": 635.7767333984375,
-      "y": 468.716796875,
+      "x": 506.7347869873047,
+      "y": 349.57005310058594,
+      "onMap": true,
+      "v3": false,
+      "via": "tap",
+      "ok": true
+     },
+     {
+      "x": 579.9786071777344,
+      "y": 400.3084411621094,
       "onMap": true,
       "v3": false,
       "picker": true,
-      "via": "tap",
-      "ok": true
-     },
-     {
-      "x": 631.852783203125,
-      "y": 335.81915283203125,
-      "onMap": true,
-      "v3": false,
-      "via": "tap",
-      "ok": true
-     },
-     {
-      "x": 595.7962951660156,
-      "y": 335.75579833984375,
-      "onMap": true,
-      "v3": false,
       "via": "tap",
       "ok": true
      },
@@ -1427,8 +1419,16 @@
       "ok": true
      },
      {
-      "x": 579.9786071777344,
-      "y": 400.3084411621094,
+      "x": 631.852783203125,
+      "y": 335.81915283203125,
+      "onMap": true,
+      "v3": false,
+      "via": "tap",
+      "ok": true
+     },
+     {
+      "x": 635.7767333984375,
+      "y": 468.716796875,
       "onMap": true,
       "v3": false,
       "picker": true,
@@ -1436,8 +1436,8 @@
       "ok": true
      },
      {
-      "x": 506.7347869873047,
-      "y": 349.57005310058594,
+      "x": 595.7962951660156,
+      "y": 335.75579833984375,
       "onMap": true,
       "v3": false,
       "via": "tap",
@@ -1507,8 +1507,8 @@
    "beats": {
     "discover": {
      "mode": "discover",
-     "id": "city-11",
-     "name": "Venetië",
+     "id": "city-10",
+     "name": "Turijn",
      "answered": false,
      "paused": false,
      "kind": "discover",
@@ -1527,7 +1527,7 @@
      "dialogs": [],
      "message": "Kijk goed naar de plek en zeg de naam.",
      "messageClass": "message ",
-     "prompt": "Venetië",
+     "prompt": "Turijn",
      "meter": "6 van 8",
      "active": "ninoSchoolMapOnly v3On v3Shell lessonFocus v3Les",
      "layout": {
@@ -1542,8 +1542,8 @@
     },
     "point-q": {
      "mode": "point",
-     "id": "city-12",
-     "name": "Verona",
+     "id": "city-11",
+     "name": "Venetië",
      "answered": false,
      "paused": false,
      "kind": "point",
@@ -1562,7 +1562,7 @@
      "dialogs": [],
      "message": "Jij bent aan zet.",
      "messageClass": "message ",
-     "prompt": "Waar ligt Verona?",
+     "prompt": "Waar ligt Venetië?",
      "meter": "6 van 8",
      "active": "ninoSchoolMapOnly v3On v3Shell v3Les lessonFocus",
      "layout": {
@@ -1577,8 +1577,8 @@
     },
     "point-wrong": {
      "mode": "point",
-     "id": "city-12",
-     "name": "Verona",
+     "id": "city-11",
+     "name": "Venetië",
      "answered": true,
      "paused": false,
      "kind": "point",
@@ -1597,9 +1597,9 @@
      "currentStep": "point",
      "count": "1 / 7",
      "dialogs": [],
-     "message": "Dat was Bari. Gezocht: Verona.",
+     "message": "Dat was Bari. Gezocht: Venetië.",
      "messageClass": "message bad",
-     "prompt": "Waar ligt Verona?",
+     "prompt": "Waar ligt Venetië?",
      "meter": "6 van 8",
      "active": {},
      "layout": {
@@ -1614,8 +1614,8 @@
     },
     "point-ok": {
      "mode": "point",
-     "id": "city-7",
-     "name": "Palermo",
+     "id": "city-10",
+     "name": "Turijn",
      "answered": true,
      "paused": false,
      "kind": "point",
@@ -1636,7 +1636,7 @@
      "dialogs": [],
      "message": "Goed gevonden!",
      "messageClass": "message good",
-     "prompt": "Waar ligt Palermo?",
+     "prompt": "Waar ligt Turijn?",
      "meter": "7 van 8",
      "active": {},
      "layout": {
@@ -1651,8 +1651,8 @@
     },
     "pizza": {
      "mode": "point",
-     "id": "city-10",
-     "name": "Turijn",
+     "id": "city-12",
+     "name": "Verona",
      "answered": true,
      "paused": false,
      "kind": "point",
@@ -1675,7 +1675,7 @@
      ],
      "message": "Perfetto! Een pizza compleet.",
      "messageClass": "message good",
-     "prompt": "Waar ligt Turijn?",
+     "prompt": "Waar ligt Verona?",
      "meter": "0 van 8",
      "active": "button primary",
      "layout": {
@@ -1690,8 +1690,8 @@
     },
     "pause": {
      "mode": "point",
-     "id": "city-11",
-     "name": "Venetië",
+     "id": "city-8",
+     "name": "Pisa",
      "answered": true,
      "paused": true,
      "kind": "point",
@@ -1710,7 +1710,7 @@
      "dialogs": [],
      "message": "Goed gevonden!",
      "messageClass": "message good",
-     "prompt": "Waar ligt Venetië?",
+     "prompt": "Waar ligt Pisa?",
      "meter": "3 van 8",
      "active": "finishTitle",
      "layout": {
@@ -1836,8 +1836,8 @@
     },
     "write-ok": {
      "mode": "write",
-     "id": "city-7",
-     "name": "Palermo",
+     "id": "city-11",
+     "name": "Venetië",
      "answered": true,
      "paused": false,
      "kind": "write",
@@ -1875,8 +1875,8 @@
     },
     "vespa": {
      "mode": "write",
-     "id": "city-12",
-     "name": "Verona",
+     "id": "city-9",
+     "name": "Rome",
      "answered": true,
      "paused": false,
      "kind": "write",
@@ -2104,16 +2104,16 @@
     "pointWrongNotOk": true,
     "pointTaps": [
      {
-      "x": 494.9071350097656,
-      "y": 859.4991455078125,
+      "x": 264.6465148925781,
+      "y": 465.3215637207031,
       "onMap": true,
       "v3": false,
       "via": "tap",
       "ok": true
      },
      {
-      "x": 264.6465148925781,
-      "y": 465.3215637207031,
+      "x": 399.3165588378906,
+      "y": 444.4329833984375,
       "onMap": true,
       "v3": false,
       "via": "tap",
@@ -2129,6 +2129,14 @@
       "ok": true
      },
      {
+      "x": 494.9071350097656,
+      "y": 859.4991455078125,
+      "onMap": true,
+      "v3": false,
+      "via": "tap",
+      "ok": true
+     },
+     {
       "x": 375.39862060546875,
       "y": 542.0431518554688,
       "onMap": true,
@@ -2139,14 +2147,6 @@
      {
       "x": 453.8376159667969,
       "y": 444.52880859375,
-      "onMap": true,
-      "v3": false,
-      "via": "tap",
-      "ok": true
-     },
-     {
-      "x": 399.3165588378906,
-      "y": 444.4329833984375,
       "onMap": true,
       "v3": false,
       "via": "tap",
@@ -2216,8 +2216,8 @@
    "beats": {
     "discover": {
      "mode": "discover",
-     "id": "city-12",
-     "name": "Verona",
+     "id": "city-11",
+     "name": "Venetië",
      "answered": false,
      "paused": false,
      "kind": "discover",
@@ -2236,7 +2236,7 @@
      "dialogs": [],
      "message": "Kijk goed naar de plek en zeg de naam.",
      "messageClass": "message ",
-     "prompt": "Verona",
+     "prompt": "Venetië",
      "meter": "6 van 8",
      "active": "ninoSchoolMapOnly v3On v3Shell lessonFocus v3Les",
      "layout": {
@@ -2251,8 +2251,8 @@
     },
     "point-q": {
      "mode": "point",
-     "id": "city-9",
-     "name": "Rome",
+     "id": "city-11",
+     "name": "Venetië",
      "answered": false,
      "paused": false,
      "kind": "point",
@@ -2271,7 +2271,7 @@
      "dialogs": [],
      "message": "Jij bent aan zet.",
      "messageClass": "message ",
-     "prompt": "Waar ligt Rome?",
+     "prompt": "Waar ligt Venetië?",
      "meter": "6 van 8",
      "active": "ninoSchoolMapOnly v3On v3Shell v3Les lessonFocus",
      "layout": {
@@ -2286,8 +2286,8 @@
     },
     "point-wrong": {
      "mode": "point",
-     "id": "city-9",
-     "name": "Rome",
+     "id": "city-11",
+     "name": "Venetië",
      "answered": true,
      "paused": false,
      "kind": "point",
@@ -2306,9 +2306,9 @@
      "currentStep": "point",
      "count": "1 / 7",
      "dialogs": [],
-     "message": "Dat was Bari. Gezocht: Rome.",
+     "message": "Dat was Bari. Gezocht: Venetië.",
      "messageClass": "message bad",
-     "prompt": "Waar ligt Rome?",
+     "prompt": "Waar ligt Venetië?",
      "meter": "6 van 8",
      "active": {},
      "layout": {
@@ -2323,8 +2323,8 @@
     },
     "point-ok": {
      "mode": "point",
-     "id": "city-10",
-     "name": "Turijn",
+     "id": "city-9",
+     "name": "Rome",
      "answered": true,
      "paused": false,
      "kind": "point",
@@ -2345,7 +2345,7 @@
      "dialogs": [],
      "message": "Goed gevonden!",
      "messageClass": "message good",
-     "prompt": "Waar ligt Turijn?",
+     "prompt": "Waar ligt Rome?",
      "meter": "7 van 8",
      "active": {},
      "layout": {
@@ -2360,8 +2360,8 @@
     },
     "pizza": {
      "mode": "point",
-     "id": "city-8",
-     "name": "Pisa",
+     "id": "city-12",
+     "name": "Verona",
      "answered": true,
      "paused": false,
      "kind": "point",
@@ -2384,7 +2384,7 @@
      ],
      "message": "Perfetto! Een pizza compleet.",
      "messageClass": "message good",
-     "prompt": "Waar ligt Pisa?",
+     "prompt": "Waar ligt Verona?",
      "meter": "0 van 8",
      "active": "button primary",
      "layout": {
@@ -2399,8 +2399,8 @@
     },
     "pause": {
      "mode": "point",
-     "id": "city-7",
-     "name": "Palermo",
+     "id": "city-8",
+     "name": "Pisa",
      "answered": true,
      "paused": true,
      "kind": "point",
@@ -2419,7 +2419,7 @@
      "dialogs": [],
      "message": "Goed gevonden!",
      "messageClass": "message good",
-     "prompt": "Waar ligt Palermo?",
+     "prompt": "Waar ligt Pisa?",
      "meter": "3 van 8",
      "active": "finishTitle",
      "layout": {
@@ -2469,8 +2469,8 @@
     },
     "write-q": {
      "mode": "write",
-     "id": "city-7",
-     "name": "Palermo",
+     "id": "city-9",
+     "name": "Rome",
      "answered": false,
      "paused": false,
      "kind": "write",
@@ -2504,8 +2504,8 @@
     },
     "write-wrong": {
      "mode": "write",
-     "id": "city-7",
-     "name": "Palermo",
+     "id": "city-9",
+     "name": "Rome",
      "answered": true,
      "paused": false,
      "kind": "write",
@@ -2524,7 +2524,7 @@
      "currentStep": "write",
      "count": "1 / 7",
      "dialogs": [],
-     "message": "De juiste naam is Palermo.",
+     "message": "De juiste naam is Rome.",
      "messageClass": "message bad",
      "prompt": "Hoe heet deze plek?",
      "meter": "4 van 8",
@@ -2541,8 +2541,8 @@
     },
     "write-ok": {
      "mode": "write",
-     "id": "city-12",
-     "name": "Verona",
+     "id": "city-11",
+     "name": "Venetië",
      "answered": true,
      "paused": false,
      "kind": "write",
@@ -2578,8 +2578,8 @@
     },
     "vespa": {
      "mode": "write",
-     "id": "city-10",
-     "name": "Turijn",
+     "id": "city-8",
+     "name": "Pisa",
      "answered": true,
      "paused": false,
      "kind": "write",
@@ -2797,27 +2797,11 @@
     "pointWrongNotOk": true,
     "pointTaps": [
      {
-      "x": 91.58395004272461,
-      "y": 339.01751708984375,
-      "onMap": true,
-      "v3": false,
-      "via": "tap",
-      "ok": true
-     },
-     {
-      "x": 154.05097198486328,
-      "y": 382.29046630859375,
+      "x": 201.63915252685547,
+      "y": 440.6334686279297,
       "onMap": true,
       "v3": false,
       "picker": true,
-      "via": "tap",
-      "ok": true
-     },
-     {
-      "x": 198.2925567626953,
-      "y": 327.2898712158203,
-      "onMap": true,
-      "v3": false,
       "via": "tap",
       "ok": true
      },
@@ -2841,11 +2825,27 @@
       "ok": true
      },
      {
-      "x": 201.63915252685547,
-      "y": 440.6334686279297,
+      "x": 91.58395004272461,
+      "y": 339.01751708984375,
+      "onMap": true,
+      "v3": false,
+      "via": "tap",
+      "ok": true
+     },
+     {
+      "x": 154.05097198486328,
+      "y": 382.29046630859375,
       "onMap": true,
       "v3": false,
       "picker": true,
+      "via": "tap",
+      "ok": true
+     },
+     {
+      "x": 198.2925567626953,
+      "y": 327.2898712158203,
+      "onMap": true,
+      "v3": false,
       "via": "tap",
       "ok": true
      }
@@ -2913,8 +2913,8 @@
    "beats": {
     "discover": {
      "mode": "discover",
-     "id": "city-9",
-     "name": "Rome",
+     "id": "city-7",
+     "name": "Palermo",
      "answered": false,
      "paused": false,
      "kind": "discover",
@@ -2933,7 +2933,7 @@
      "dialogs": [],
      "message": "Kijk goed naar de plek en zeg de naam.",
      "messageClass": "message ",
-     "prompt": "Rome",
+     "prompt": "Palermo",
      "meter": "6 van 8",
      "active": "ninoSchoolMapOnly v3On v3Shell lessonFocus v3Les",
      "layout": {
@@ -2948,8 +2948,8 @@
     },
     "point-q": {
      "mode": "point",
-     "id": "city-8",
-     "name": "Pisa",
+     "id": "city-7",
+     "name": "Palermo",
      "answered": false,
      "paused": false,
      "kind": "point",
@@ -2968,7 +2968,7 @@
      "dialogs": [],
      "message": "Jij bent aan zet.",
      "messageClass": "message ",
-     "prompt": "Waar ligt Pisa?",
+     "prompt": "Waar ligt Palermo?",
      "meter": "6 van 8",
      "active": "ninoSchoolMapOnly v3On v3Shell v3Les lessonFocus",
      "layout": {
@@ -2983,8 +2983,8 @@
     },
     "point-wrong": {
      "mode": "point",
-     "id": "city-8",
-     "name": "Pisa",
+     "id": "city-7",
+     "name": "Palermo",
      "answered": true,
      "paused": false,
      "kind": "point",
@@ -3003,9 +3003,9 @@
      "currentStep": "point",
      "count": "1 / 7",
      "dialogs": [],
-     "message": "Dat was Bari. Gezocht: Pisa.",
+     "message": "Dat was Bari. Gezocht: Palermo.",
      "messageClass": "message bad",
-     "prompt": "Waar ligt Pisa?",
+     "prompt": "Waar ligt Palermo?",
      "meter": "6 van 8",
      "active": {},
      "layout": {
@@ -3057,8 +3057,8 @@
     },
     "pizza": {
      "mode": "point",
-     "id": "city-9",
-     "name": "Rome",
+     "id": "city-8",
+     "name": "Pisa",
      "answered": true,
      "paused": false,
      "kind": "point",
@@ -3081,7 +3081,7 @@
      ],
      "message": "Perfetto! Een pizza compleet.",
      "messageClass": "message good",
-     "prompt": "Waar ligt Rome?",
+     "prompt": "Waar ligt Pisa?",
      "meter": "0 van 8",
      "active": "button primary",
      "layout": {
@@ -3096,8 +3096,8 @@
     },
     "pause": {
      "mode": "point",
-     "id": "city-10",
-     "name": "Turijn",
+     "id": "city-12",
+     "name": "Verona",
      "answered": true,
      "paused": true,
      "kind": "point",
@@ -3116,7 +3116,7 @@
      "dialogs": [],
      "message": "Goed gevonden!",
      "messageClass": "message good",
-     "prompt": "Waar ligt Turijn?",
+     "prompt": "Waar ligt Verona?",
      "meter": "3 van 8",
      "active": "finishTitle",
      "layout": {
@@ -3166,8 +3166,8 @@
     },
     "write-q": {
      "mode": "write",
-     "id": "city-11",
-     "name": "Venetië",
+     "id": "city-9",
+     "name": "Rome",
      "answered": false,
      "paused": false,
      "kind": "write",
@@ -3201,8 +3201,8 @@
     },
     "write-wrong": {
      "mode": "write",
-     "id": "city-11",
-     "name": "Venetië",
+     "id": "city-9",
+     "name": "Rome",
      "answered": true,
      "paused": false,
      "kind": "write",
@@ -3221,7 +3221,7 @@
      "currentStep": "write",
      "count": "1 / 7",
      "dialogs": [],
-     "message": "De juiste naam is Venetië.",
+     "message": "De juiste naam is Rome.",
      "messageClass": "message bad",
      "prompt": "Hoe heet deze plek?",
      "meter": "4 van 8",
@@ -3238,8 +3238,8 @@
     },
     "write-ok": {
      "mode": "write",
-     "id": "city-12",
-     "name": "Verona",
+     "id": "city-7",
+     "name": "Palermo",
      "answered": true,
      "paused": false,
      "kind": "write",
@@ -3275,8 +3275,8 @@
     },
     "vespa": {
      "mode": "write",
-     "id": "city-7",
-     "name": "Palermo",
+     "id": "city-12",
+     "name": "Verona",
      "answered": true,
      "paused": false,
      "kind": "write",
@@ -3502,6 +3502,15 @@
       "ok": true
      },
      {
+      "x": 126.79862213134766,
+      "y": 292.3351745605469,
+      "onMap": true,
+      "v3": false,
+      "picker": true,
+      "via": "tap",
+      "ok": true
+     },
+     {
       "x": 165.3830108642578,
       "y": 339.6395263671875,
       "onMap": true,
@@ -3509,6 +3518,14 @@
       "freedMap": true,
       "picker": true,
       "sheetOpenAfter": true,
+      "via": "tap",
+      "ok": true
+     },
+     {
+      "x": 76.15050888061523,
+      "y": 257.2495651245117,
+      "onMap": true,
+      "v3": false,
       "via": "tap",
       "ok": true
      },
@@ -3528,23 +3545,6 @@
       "v3": false,
       "freedMap": true,
       "sheetOpenAfter": true,
-      "via": "tap",
-      "ok": true
-     },
-     {
-      "x": 76.15050888061523,
-      "y": 257.2495651245117,
-      "onMap": true,
-      "v3": false,
-      "via": "tap",
-      "ok": true
-     },
-     {
-      "x": 126.79862213134766,
-      "y": 292.3351745605469,
-      "onMap": true,
-      "v3": false,
-      "picker": true,
       "via": "tap",
       "ok": true
      }
@@ -3760,10 +3760,10 @@
     "tap"
    ],
    "ipad-landscape": [
+    "tap",
     "tap+kiezer",
-    "tap",
-    "tap",
     "tap+vrijmaken",
+    "tap",
     "tap+kiezer",
     "tap"
    ],
@@ -3776,20 +3776,20 @@
     "tap"
    ],
    "phone": [
-    "tap",
     "tap+kiezer",
-    "tap",
     "tap+kiezer",
     "tap+vrijmaken",
-    "tap+kiezer"
+    "tap",
+    "tap+kiezer",
+    "tap"
    ],
    "phone-small": [
     "tap",
-    "tap+kiezer+vrijmaken",
     "tap+kiezer",
-    "tap+vrijmaken",
+    "tap+kiezer+vrijmaken",
     "tap",
-    "tap+kiezer"
+    "tap+kiezer",
+    "tap+vrijmaken"
    ]
   },
   "tapsBlockedByV3": [],

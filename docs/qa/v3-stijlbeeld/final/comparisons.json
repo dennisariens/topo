@@ -1,152 +1,302 @@
 {
-  "previewSha256": "4ac7b42cc9251beb1a922f7f4a3bd8f20493870a0476aa9505f1cefb862d06d1",
+  "previewSha256": "0c9a576648896d56a2b7f8f2dad1bd62b595b058cb8122e1318e2efdadbbf329",
   "runs": {
     "reis/desktop": {
       "reference": "R-reis-ijk",
       "viewport": [
         1440,
         900
-      ]
+      ],
+      "background": "bg03",
+      "pageErrors": [],
+      "comparison": "vergelijking-reis-desktop.jpg"
     },
     "oefenen/desktop": {
       "reference": "R-oefenen-ijk-rust",
       "viewport": [
         1440,
         900
-      ]
+      ],
+      "background": "bg03",
+      "pageErrors": [],
+      "comparison": "vergelijking-oefenen-desktop.jpg"
     },
     "les/desktop": {
       "reference": "R-les",
       "viewport": [
         1440,
         900
-      ]
+      ],
+      "background": "bg03",
+      "pageErrors": [],
+      "comparison": "vergelijking-les-desktop.jpg"
     },
     "toets/desktop": {
       "reference": "R-toets-instellen",
       "viewport": [
         1440,
         900
-      ]
+      ],
+      "background": "bg03",
+      "pageErrors": [],
+      "comparison": "vergelijking-toets-desktop.jpg"
     },
     "toetsResult/desktop": {
       "reference": "R-toets-resultaat",
       "viewport": [
         1440,
         900
-      ]
+      ],
+      "background": "bg03",
+      "pageErrors": [],
+      "comparison": "vergelijking-toetsResult-desktop.jpg"
     },
     "rewards/desktop": {
       "reference": "R-beloningen",
       "viewport": [
         1440,
         900
-      ]
+      ],
+      "background": "bg03",
+      "pageErrors": [],
+      "comparison": "vergelijking-rewards-desktop.jpg"
     },
     "voortgang/desktop": {
       "reference": "R-voortgang-doel",
       "viewport": [
         1440,
         900
-      ]
+      ],
+      "background": "bg03",
+      "pageErrors": [],
+      "comparison": "vergelijking-voortgang-desktop.jpg"
     },
     "reis/ipad-liggend": {
       "reference": "R-reis-ijk",
       "viewport": [
         1180,
         820
-      ]
+      ],
+      "background": "bg03",
+      "pageErrors": [],
+      "comparison": "vergelijking-reis-ipad-liggend.jpg"
     },
     "oefenen/ipad-liggend": {
       "reference": "R-oefenen-ijk-rust",
       "viewport": [
         1180,
         820
-      ]
+      ],
+      "background": "bg03",
+      "pageErrors": [],
+      "comparison": "vergelijking-oefenen-ipad-liggend.jpg"
     },
     "les/ipad-liggend": {
       "reference": "R-les",
       "viewport": [
         1180,
         820
-      ]
+      ],
+      "background": "bg03",
+      "pageErrors": [],
+      "comparison": "vergelijking-les-ipad-liggend.jpg"
     },
     "toets/ipad-liggend": {
       "reference": "R-toets-instellen",
       "viewport": [
         1180,
         820
-      ]
+      ],
+      "background": "bg03",
+      "pageErrors": [],
+      "comparison": "vergelijking-toets-ipad-liggend.jpg"
     },
     "toetsResult/ipad-liggend": {
       "reference": "R-toets-resultaat",
       "viewport": [
         1180,
         820
-      ]
+      ],
+      "background": "bg03",
+      "pageErrors": [],
+      "comparison": "vergelijking-toetsResult-ipad-liggend.jpg"
     },
     "rewards/ipad-liggend": {
       "reference": "R-beloningen",
       "viewport": [
         1180,
         820
-      ]
+      ],
+      "background": "bg03",
+      "pageErrors": [],
+      "comparison": "vergelijking-rewards-ipad-liggend.jpg"
     },
     "voortgang/ipad-liggend": {
       "reference": "R-voortgang-doel",
       "viewport": [
         1180,
         820
-      ]
+      ],
+      "background": "bg03",
+      "pageErrors": [],
+      "comparison": "vergelijking-voortgang-ipad-liggend.jpg"
     },
     "reis/telefoon": {
       "reference": "R-reis-ijk",
       "viewport": [
         390,
         844
-      ]
+      ],
+      "background": "bg03",
+      "pageErrors": [],
+      "comparison": "vergelijking-reis-telefoon.jpg"
     },
     "oefenen/telefoon": {
       "reference": "R-oefenen-ijk-rust",
       "viewport": [
         390,
         844
-      ]
+      ],
+      "background": "bg03",
+      "pageErrors": [],
+      "comparison": "vergelijking-oefenen-telefoon.jpg"
     },
     "les/telefoon": {
       "reference": "R-les",
       "viewport": [
         390,
         844
-      ]
+      ],
+      "background": "bg03",
+      "pageErrors": [],
+      "comparison": "vergelijking-les-telefoon.jpg"
     },
     "toets/telefoon": {
       "reference": "R-toets-instellen",
       "viewport": [
         390,
         844
-      ]
+      ],
+      "background": "bg03",
+      "pageErrors": [],
+      "comparison": "vergelijking-toets-telefoon.jpg"
     },
     "toetsResult/telefoon": {
       "reference": "R-toets-resultaat",
       "viewport": [
         390,
         844
-      ]
+      ],
+      "background": "bg03",
+      "pageErrors": [],
+      "comparison": "vergelijking-toetsResult-telefoon.jpg"
     },
     "rewards/telefoon": {
       "reference": "R-beloningen",
       "viewport": [
         390,
         844
-      ]
+      ],
+      "background": "bg03",
+      "pageErrors": [],
+      "comparison": "vergelijking-rewards-telefoon.jpg"
     },
     "voortgang/telefoon": {
       "reference": "R-voortgang-doel",
       "viewport": [
         390,
         844
-      ]
+      ],
+      "background": "bg03",
+      "pageErrors": [],
+      "comparison": "vergelijking-voortgang-telefoon.jpg"
     }
-  }
+  },
+  "backgroundComparisons": {
+    "reis": {
+      "viewport": [
+        1440,
+        900
+      ],
+      "backgrounds": {
+        "bg01": "BG-01 Toscane",
+        "bg02": "BG-02 Meer",
+        "bg03": "BG-03 Kust"
+      },
+      "comparison": "achtergronden-reis-desktop.jpg"
+    },
+    "oefenen": {
+      "viewport": [
+        1440,
+        900
+      ],
+      "backgrounds": {
+        "bg01": "BG-01 Toscane",
+        "bg02": "BG-02 Meer",
+        "bg03": "BG-03 Kust"
+      },
+      "comparison": "achtergronden-oefenen-desktop.jpg"
+    },
+    "les": {
+      "viewport": [
+        1440,
+        900
+      ],
+      "backgrounds": {
+        "bg01": "BG-01 Toscane",
+        "bg02": "BG-02 Meer",
+        "bg03": "BG-03 Kust"
+      },
+      "comparison": "achtergronden-les-desktop.jpg"
+    },
+    "toets": {
+      "viewport": [
+        1440,
+        900
+      ],
+      "backgrounds": {
+        "bg01": "BG-01 Toscane",
+        "bg02": "BG-02 Meer",
+        "bg03": "BG-03 Kust"
+      },
+      "comparison": "achtergronden-toets-desktop.jpg"
+    },
+    "toetsResult": {
+      "viewport": [
+        1440,
+        900
+      ],
+      "backgrounds": {
+        "bg01": "BG-01 Toscane",
+        "bg02": "BG-02 Meer",
+        "bg03": "BG-03 Kust"
+      },
+      "comparison": "achtergronden-toetsResult-desktop.jpg"
+    },
+    "rewards": {
+      "viewport": [
+        1440,
+        900
+      ],
+      "backgrounds": {
+        "bg01": "BG-01 Toscane",
+        "bg02": "BG-02 Meer",
+        "bg03": "BG-03 Kust"
+      },
+      "comparison": "achtergronden-rewards-desktop.jpg"
+    },
+    "voortgang": {
+      "viewport": [
+        1440,
+        900
+      ],
+      "backgrounds": {
+        "bg01": "BG-01 Toscane",
+        "bg02": "BG-02 Meer",
+        "bg03": "BG-03 Kust"
+      },
+      "comparison": "achtergronden-voortgang-desktop.jpg"
+    }
+  },
+  "pass": true
 }

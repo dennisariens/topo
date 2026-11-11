@@ -1,3 +1,15 @@
+# TOPO V3 — Ronde 2 voltooid voor Hermes-hertest (11 november 2026)
+
+Branch `codex/topo-v3`. Eén commit per punt: **1** `eb4fd31` BG-03 Kust standaard, **2** `58f4d4f` neutrale zijbalk, **3** `0aa4730` Voortgang in het eerste 1440×900-frame, **4** `441ac63` reliëfpalet uit hetzelfde DEM, **5** `64250c9` zichtbare 72px-iconen en 40/700-cijfers op desktop/iPad. **Punt 6** is de afzonderlijke bewijscommit met vernieuwde vergelijkingen, metingen en deze status. De volledige eindpin volgt in het afsluitende overdrachtsbericht.
+
+**Bewijs:** 19/19 V3-QA-scripts (alle vijf Ronde-2-checks), 41/41 contrast-/typografieruns, geometrie 46/46, QA-runnerregressie en lint/test/build groen. [21 BG-03-doelbeeldvergelijkingen plus zeven achtergrondstroken](qa/v3-stijlbeeld/final/README.md); [hashregister](qa/v3-stijlbeeld/final/verification.json). Preview `0c9a576648896d56a2b7f8f2dad1bd62b595b058cb8122e1318e2efdadbbf329`; `index.html` blijft `3aced3c31259011b0af2947c78f71965cb4beb2e88c69d1663e61792b0304f5a`. Preview-HTML blijft buiten Git.
+
+**Hermes:** [gericht hertestverzoek](qa/v3-stijlbeeld/ronde2/HERMES-HERTEST.md) op de gepushte eindpin, inclusief alle zes punten. Interne read-only review: geen Critical/Important/Minor-bevindingen. Onafhankelijke Hermes-/asset-/modelcheck, fysiek Safari/iPad/VoiceOver en visueel designerakkoord blijven open. Bestaande compacte telefoonweergave en iPad-les Focus Mode blijven behouden. Geen merge, deploy, publicatie of downloadvervanging.
+
+---
+
+## Historische overdracht en voortgang
+
 # V3.0 — overdracht 3b–5 (10 november 2026)
 
 Branch `codex/topo-v3`. **Kalibratie** `9dcdfd3`: de gemeten typeschaal, helder artwork zonder wash over het inhoudsvlak, warmer reliëf, Voortgang als Eiland met elf volledige rijen en de toetsscore terug op glas. **Master-assets** `15b1619`, uit de pijplijn `art/v3-render-assets` @ `b70e1ac`, bron `339c420`: technische WebP-exports met SHA256, bron en status eigenaar akkoord / Hermes open. NINO-ONDERWEG is de rijdende rode Vespa; de paspoortomslag en het paspoortbinnenwerk zijn niet overgenomen.

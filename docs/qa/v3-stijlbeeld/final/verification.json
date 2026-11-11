@@ -1,34 +1,56 @@
 {
-  "previewSha256": "4ac7b42cc9251beb1a922f7f4a3bd8f20493870a0476aa9505f1cefb862d06d1",
+  "round": 2,
+  "codeCommit": "64250c94f26d364898d07383788b065ec3842166",
+  "previewSha256": "0c9a576648896d56a2b7f8f2dad1bd62b595b058cb8122e1318e2efdadbbf329",
   "indexSha256": "3aced3c31259011b0af2947c78f71965cb4beb2e88c69d1663e61792b0304f5a",
-  "qaSuiteSha256": "83d014ea7e2d0b6117ff25ad2e676c90ffe56a97992a504fa6b74f6f112d1685",
-  "previewBytes": 53023281,
-  "qaScripts": 18,
+  "qaSuiteSha256": "8067f9c670770270f8fbdde941fbf2fb6f876229df2b78db597983c0b1ddc5f8",
+  "previewBytes": 53015550,
+  "qaScripts": 19,
   "comparisonScreens": 7,
   "comparisonViewports": 3,
   "comparisons": 21,
+  "backgroundComparisons": 7,
   "contrastTypographyRuns": 41,
   "geometry": {
-    "desktop": {
+    "desktop-viola": {
       "same": 46,
       "diff": [],
       "total": 46
     },
-    "phone": {
+    "desktop-italia": {
+      "same": 46,
+      "diff": [],
+      "total": 46
+    },
+    "ipad-landscape-viola": {
+      "same": 46,
+      "diff": [],
+      "total": 46
+    },
+    "ipad-landscape-italia": {
+      "same": 46,
+      "diff": [],
+      "total": 46
+    },
+    "phone-viola": {
       "same": 46,
       "diff": [],
       "total": 46
     }
   },
+  "round2Points": 5,
   "indexAndV2EnginesUnchanged": true,
   "previewTracked": false,
+  "browser": "local Google Chrome / Playwright 1.65.0; viewport simulation",
   "commands": {
     "npm run lint": "pass; npm-lint.log",
     "NODE_OPTIONS=--no-experimental-webstorage npm test": "pass; npm-test.log",
     "npm run build": "pass; npm-build.log",
     "test-v3-qa-runner.py": "pass; qa-runner-regression.log",
-    "qa-v3-all.py": "pass; results-all.json"
+    "qa-v3-all.py": "pass; results-all.json; includes round-2 points 1–5",
+    "qa-v3-comparisons.py": "pass; comparisons.json / comparisons.log"
   },
-  "acceptance": "lead designer and independent Hermes review open; no merge/deploy/publication",
+  "review": "Fresh-context read-only review: no Critical/Important/Minor findings. Designer/Hermes and physical Safari/iPad/VoiceOver review remain open.",
+  "acceptance": "independent Hermes retest requested on final evidence commit; no merge/deploy/publication",
   "pass": true
 }

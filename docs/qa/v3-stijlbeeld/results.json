@@ -1,15 +1,15 @@
 {
  "html": "output/html/TOPO-V3-Reis-Preview.html",
- "htmlSha256": "4ac7b42cc9251beb1a922f7f4a3bd8f20493870a0476aa9505f1cefb862d06d1",
+ "htmlSha256": "0c9a576648896d56a2b7f8f2dad1bd62b595b058cb8122e1318e2efdadbbf329",
  "indexSha256": "3aced3c31259011b0af2947c78f71965cb4beb2e88c69d1663e61792b0304f5a",
  "runs": {
   "desktop-viola": {
    "backdrop": {
     "image": true,
-    "key": "bg01",
+    "key": "bg03",
     "size": "cover",
     "attachment": "fixed",
-    "sha256": "c07c938d990250fdcd3a370b90f74c7cb8d9a422f4b720dbeb5e93850309b9c0"
+    "sha256": "b4a423ef64fdb58773aa99659ec23b58283b1cf96763f591d41d09eb6619f20b"
    },
    "art": {
     "portrait": "97fe052f40fea2ec7c07a2935d8bb2f544777b4e3893c1a509ab9bc0c1a492e2",
@@ -36,9 +36,9 @@
     {
      "q": ".v3Reis > .v3Side",
      "radius": "28px",
-     "backdropFilter": "blur(28px) saturate(1.4)",
+     "backdropFilter": "blur(28px) saturate(0.6)",
      "shadow": false,
-     "bgAlpha": 0.55
+     "bgAlpha": 0.7
     },
     {
      "q": ".v3Reis .v3Rows",
@@ -227,7 +227,7 @@
     "terrain": "block",
     "pressed": "Reliëf",
     "layers": {
-     "terrain": "440d631c8ff5777b13a2583870339caa8255c10a0ddcaaa3edd087b8fc524ab5",
+     "terrain": "596e2f1e19d925435e082bc06c9f0558f021838b5f2748c8fcaa87ef7eb5543e",
      "sea": "daded673fe77a75f631b40251c09ef158b1c541b037f32c8d75ed4141b4409d5",
      "shadow": "e2fe511cc8c72fb8bf6a1e67e5041e64c99d3f76da665f0e3ee3e5e2428c0aec",
      "coast": "e685ba188bbe1e434a0071c930f11d1ac7c6394f64300d53dda737ab63b2bcaf"
@@ -277,10 +277,10 @@
   "desktop-italia": {
    "backdrop": {
     "image": true,
-    "key": "bg01",
+    "key": "bg03",
     "size": "cover",
     "attachment": "fixed",
-    "sha256": "c07c938d990250fdcd3a370b90f74c7cb8d9a422f4b720dbeb5e93850309b9c0"
+    "sha256": "b4a423ef64fdb58773aa99659ec23b58283b1cf96763f591d41d09eb6619f20b"
    },
    "art": {
     "portrait": "97fe052f40fea2ec7c07a2935d8bb2f544777b4e3893c1a509ab9bc0c1a492e2",
@@ -307,9 +307,9 @@
     {
      "q": ".v3Reis > .v3Side",
      "radius": "28px",
-     "backdropFilter": "blur(28px) saturate(1.4)",
+     "backdropFilter": "blur(28px) saturate(0.6)",
      "shadow": false,
-     "bgAlpha": 0.55
+     "bgAlpha": 0.7
     },
     {
      "q": ".v3Reis .v3Rows",
@@ -498,7 +498,7 @@
     "terrain": "block",
     "pressed": "Reliëf",
     "layers": {
-     "terrain": "440d631c8ff5777b13a2583870339caa8255c10a0ddcaaa3edd087b8fc524ab5",
+     "terrain": "596e2f1e19d925435e082bc06c9f0558f021838b5f2748c8fcaa87ef7eb5543e",
      "sea": "daded673fe77a75f631b40251c09ef158b1c541b037f32c8d75ed4141b4409d5",
      "shadow": "e2fe511cc8c72fb8bf6a1e67e5041e64c99d3f76da665f0e3ee3e5e2428c0aec",
      "coast": "e685ba188bbe1e434a0071c930f11d1ac7c6394f64300d53dda737ab63b2bcaf"
@@ -548,10 +548,10 @@
   "ipad-landscape-viola": {
    "backdrop": {
     "image": true,
-    "key": "bg01",
+    "key": "bg03",
     "size": "cover",
     "attachment": "fixed",
-    "sha256": "c07c938d990250fdcd3a370b90f74c7cb8d9a422f4b720dbeb5e93850309b9c0"
+    "sha256": "b4a423ef64fdb58773aa99659ec23b58283b1cf96763f591d41d09eb6619f20b"
    },
    "art": {
     "portrait": "97fe052f40fea2ec7c07a2935d8bb2f544777b4e3893c1a509ab9bc0c1a492e2",
@@ -578,9 +578,9 @@
     {
      "q": ".v3Reis > .v3Side",
      "radius": "28px",
-     "backdropFilter": "blur(28px) saturate(1.4)",
+     "backdropFilter": "blur(28px) saturate(0.6)",
      "shadow": false,
-     "bgAlpha": 0.55
+     "bgAlpha": 0.7
     },
     {
      "q": ".v3Reis .v3Rows",
@@ -769,7 +769,7 @@
     "terrain": "block",
     "pressed": "Reliëf",
     "layers": {
-     "terrain": "440d631c8ff5777b13a2583870339caa8255c10a0ddcaaa3edd087b8fc524ab5",
+     "terrain": "596e2f1e19d925435e082bc06c9f0558f021838b5f2748c8fcaa87ef7eb5543e",
      "sea": "daded673fe77a75f631b40251c09ef158b1c541b037f32c8d75ed4141b4409d5",
      "shadow": "e2fe511cc8c72fb8bf6a1e67e5041e64c99d3f76da665f0e3ee3e5e2428c0aec",
      "coast": "e685ba188bbe1e434a0071c930f11d1ac7c6394f64300d53dda737ab63b2bcaf"
@@ -819,10 +819,10 @@
   "ipad-landscape-italia": {
    "backdrop": {
     "image": true,
-    "key": "bg01",
+    "key": "bg03",
     "size": "cover",
     "attachment": "fixed",
-    "sha256": "c07c938d990250fdcd3a370b90f74c7cb8d9a422f4b720dbeb5e93850309b9c0"
+    "sha256": "b4a423ef64fdb58773aa99659ec23b58283b1cf96763f591d41d09eb6619f20b"
    },
    "art": {
     "portrait": "97fe052f40fea2ec7c07a2935d8bb2f544777b4e3893c1a509ab9bc0c1a492e2",
@@ -849,9 +849,9 @@
     {
      "q": ".v3Reis > .v3Side",
      "radius": "28px",
-     "backdropFilter": "blur(28px) saturate(1.4)",
+     "backdropFilter": "blur(28px) saturate(0.6)",
      "shadow": false,
-     "bgAlpha": 0.55
+     "bgAlpha": 0.7
     },
     {
      "q": ".v3Reis .v3Rows",
@@ -1040,7 +1040,7 @@
     "terrain": "block",
     "pressed": "Reliëf",
     "layers": {
-     "terrain": "440d631c8ff5777b13a2583870339caa8255c10a0ddcaaa3edd087b8fc524ab5",
+     "terrain": "596e2f1e19d925435e082bc06c9f0558f021838b5f2748c8fcaa87ef7eb5543e",
      "sea": "daded673fe77a75f631b40251c09ef158b1c541b037f32c8d75ed4141b4409d5",
      "shadow": "e2fe511cc8c72fb8bf6a1e67e5041e64c99d3f76da665f0e3ee3e5e2428c0aec",
      "coast": "e685ba188bbe1e434a0071c930f11d1ac7c6394f64300d53dda737ab63b2bcaf"
@@ -1090,7 +1090,7 @@
   "phone-viola": {
    "backdrop": {
     "image": false,
-    "key": "bg01",
+    "key": "bg03",
     "size": "auto",
     "attachment": "scroll",
     "sha256": null
@@ -1311,7 +1311,7 @@
     "terrain": "block",
     "pressed": "Reliëf",
     "layers": {
-     "terrain": "440d631c8ff5777b13a2583870339caa8255c10a0ddcaaa3edd087b8fc524ab5",
+     "terrain": "596e2f1e19d925435e082bc06c9f0558f021838b5f2748c8fcaa87ef7eb5543e",
      "sea": "daded673fe77a75f631b40251c09ef158b1c541b037f32c8d75ed4141b4409d5",
      "shadow": "e2fe511cc8c72fb8bf6a1e67e5041e64c99d3f76da665f0e3ee3e5e2428c0aec",
      "coast": "e685ba188bbe1e434a0071c930f11d1ac7c6394f64300d53dda737ab63b2bcaf"
@@ -1362,22 +1362,22 @@
  "errors": [],
  "browser": "157.0.8103.50",
  "bgAlternatives": {
+  "bg01": {
+   "key": "bg01",
+   "sha256": "c07c938d990250fdcd3a370b90f74c7cb8d9a422f4b720dbeb5e93850309b9c0",
+   "switch": [
+    "bezig/bg01",
+    "bezig/bg02",
+    "bezig"
+   ]
+  },
   "bg02": {
    "key": "bg02",
    "sha256": "939934b56be3406fa5a48717b900acea521f6f45674cce82b09993ca3630c660",
    "switch": [
-    "bezig",
+    "bezig/bg01",
     "bezig/bg02",
-    "bezig/bg03"
-   ]
-  },
-  "bg03": {
-   "key": "bg03",
-   "sha256": "b4a423ef64fdb58773aa99659ec23b58283b1cf96763f591d41d09eb6619f20b",
-   "switch": [
-    "bezig",
-    "bezig/bg02",
-    "bezig/bg03"
+    "bezig"
    ]
   }
  },
@@ -1877,7 +1877,7 @@
  },
  "summary": {
   "indexUnchanged": true,
-  "backdropIsBG01": true,
+  "backdropIsBG03": true,
   "bgAlternativesSwitch": true,
   "phoneNoBackdrop": true,
   "glassPanels": true,

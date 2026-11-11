@@ -1,6 +1,6 @@
 {
  "html": "/Users/dennisariens/projects/topo-v3/output/html/TOPO-V3-Reis-Preview.html",
- "sha256": "4ac7b42cc9251beb1a922f7f4a3bd8f20493870a0476aa9505f1cefb862d06d1",
+ "sha256": "0c9a576648896d56a2b7f8f2dad1bd62b595b058cb8122e1318e2efdadbbf329",
  "indexSha256": "3aced3c31259011b0af2947c78f71965cb4beb2e88c69d1663e61792b0304f5a",
  "label": "na",
  "runs": {
@@ -39,7 +39,7 @@
    "freePct": 62.7,
    "lowContrast": [],
    "backdropFilters": [
-    "blur(28px) saturate(1.4)"
+    "blur(28px) saturate(0.6)"
    ],
    "pageErrors": [],
    "surface": "landschap"
@@ -119,7 +119,7 @@
    "freePct": 62.6,
    "lowContrast": [],
    "backdropFilters": [
-    "blur(28px) saturate(1.4)"
+    "blur(28px) saturate(0.6)"
    ],
    "pageErrors": [],
    "surface": "landschap"
@@ -240,7 +240,7 @@
    "freePct": 46.5,
    "lowContrast": [],
    "backdropFilters": [
-    "blur(28px) saturate(1.4)",
+    "blur(28px) saturate(0.6)",
     "none"
    ],
    "pageErrors": [],
@@ -266,7 +266,7 @@
    "freePct": 24.2,
    "lowContrast": [],
    "backdropFilters": [
-    "blur(28px) saturate(1.4)",
+    "blur(28px) saturate(0.6)",
     "none"
    ],
    "pageErrors": [],
@@ -299,7 +299,7 @@
      320,
      199,
      583,
-     596
+     501
     ]
    },
    "theme": "#5b45e0",
@@ -309,7 +309,7 @@
    "freePct": 24.2,
    "lowContrast": [],
    "backdropFilters": [
-    "blur(28px) saturate(1.4)",
+    "blur(28px) saturate(0.6)",
     "none"
    ],
    "pageErrors": [],
@@ -350,7 +350,7 @@
    "freePct": 60.4,
    "lowContrast": [],
    "backdropFilters": [
-    "blur(28px) saturate(1.4)"
+    "blur(28px) saturate(0.6)"
    ],
    "pageErrors": [],
    "surface": "landschap"
@@ -430,7 +430,7 @@
    "freePct": 60.2,
    "lowContrast": [],
    "backdropFilters": [
-    "blur(28px) saturate(1.4)"
+    "blur(28px) saturate(0.6)"
    ],
    "pageErrors": [],
    "surface": "landschap"
@@ -553,7 +553,7 @@
    "freePct": 41.2,
    "lowContrast": [],
    "backdropFilters": [
-    "blur(28px) saturate(1.4)",
+    "blur(28px) saturate(0.6)",
     "none"
    ],
    "pageErrors": [],
@@ -579,7 +579,7 @@
    "freePct": 20.1,
    "lowContrast": [],
    "backdropFilters": [
-    "blur(28px) saturate(1.4)",
+    "blur(28px) saturate(0.6)",
     "none"
    ],
    "pageErrors": [],
@@ -622,7 +622,7 @@
    "freePct": 19.4,
    "lowContrast": [],
    "backdropFilters": [
-    "blur(28px) saturate(1.4)",
+    "blur(28px) saturate(0.6)",
     "none"
    ],
    "pageErrors": [],

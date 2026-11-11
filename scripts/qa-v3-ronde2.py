@@ -89,4 +89,7 @@ async def main(point):
  (OUT/f'point-{point}.json').write_text(json.dumps({'point':point,'previewSha256':hashlib.sha256(q.HTML.read_bytes()).hexdigest(),'runs':runs,'pass':True},indent=2)+'\n')
  print('Round 2 point',point,'PASS')
 if __name__=='__main__':
- parser=argparse.ArgumentParser();parser.add_argument('--point',type=int,default=1);asyncio.run(main(parser.parse_args().point))
+ parser=argparse.ArgumentParser();parser.add_argument('--point',type=int,choices=range(1,6));point=parser.parse_args().point
+ async def selected():
+  for n in ([point] if point else range(1,6)):await main(n)
+ asyncio.run(selected())

@@ -9,3 +9,16 @@
 .v3 .v3ToetsSetup :is(.v3Chip,.v3FormBtn){min-width:44px;min-height:44px;height:auto;white-space:normal;line-height:1.3;padding:8px 10px;touch-action:manipulation;pointer-events:auto}
 .v3ToetsSetup :is(.v3Icon,.v3FormIcons){pointer-events:none;flex-shrink:0}
 .v3ToetsSetupNino{pointer-events:none}
+
+/* Dedicated 1080 × 810 landscape scale: retain readable type, spend less space on gaps. */
+@media (min-width:1024px) and (max-width:1119px){
+ .v3,body.v3Les{--v3-inner:16px;--v3-gut:12px;--v3-display:700 36px/1.15 var(--v3-font);--v3-card-title:700 28px/1.2 var(--v3-font);--v3-row:600 16px/22px var(--v3-font);--v3-second:500 13px/18px var(--v3-font)}
+ .v3Reis[data-view=reis] .v3Main>.v3Top{flex-wrap:wrap;gap:8px;padding:0}
+ .v3Reis .v3MapTools{gap:6px;max-width:100%}
+ .v3ToetsSetup{gap:12px}
+ .v3ToetsSetup .v3Field{gap:8px}
+ .v3ToetsSetup .v3Field+.v3Field{padding-top:12px}
+ .v3ToetsSetup .v3ToetsForms{gap:6px}
+ .v3ToetsSetup .v3FormBtn{padding:8px 6px}
+ .v3 :is(.v3Btn,.v3Chip,.v3FormBtn){max-width:100%;overflow-wrap:break-word}
+}

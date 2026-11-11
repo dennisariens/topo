@@ -24,10 +24,12 @@ async def check(p,n,touch):
   assert await p.locator('#schoolbladDialog').evaluate('n=>n.open')
   await p.keyboard.press('Escape')
   if touch:assert await p.locator('.v3SchoolBtn span').evaluate('n=>n.getBoundingClientRect().width')>30
- if n==3:
+ if n in (3,4):
   await q.goto(p,'toets')
   bad=await p.locator('.v3ToetsSetup button').evaluate_all("nodes=>nodes.filter(n=>{const r=n.getBoundingClientRect();return r.width<44||r.height<44||n.scrollWidth>n.clientWidth+1}).map(n=>n.textContent)")
   assert not bad,bad
+  if n==4:
+   assert await p.locator('.v3ToetsSetup').evaluate('n=>n.getBoundingClientRect().bottom<=innerHeight && n.scrollWidth<=n.clientWidth+1')
   await act(p,'.v3ToetsForms [data-value=write]',touch)
   assert await p.locator('.v3ToetsForms [data-value=write]').get_attribute('aria-pressed')=='true'
   await act(p,'[aria-labelledby=v3ToetsHoofdstukken] [data-group=city2]',touch)

@@ -204,8 +204,8 @@
  function renderTop(m){
   const cycle=(state.pizzas%3)*8+state.slices;
   const pz=make('span','v3Count');pz.setAttribute('aria-label',cycle+' van 24 pizzapunten tot de volgende Vespa-rit');
-  pz.append(icon('v3slice'),make('b',null,cycle+' / 24'));
-  const trip=make('span','v3Count');trip.setAttribute('aria-label',state.trips+' Vespa-ritten');trip.append(icon('v3scooter'),make('b',null,String(state.trips)));
+  pz.append(pic(V3ART.icons.slice,'v3CountArt',40,40),make('b',null,cycle+' / 24'));
+  const trip=make('span','v3Count');trip.setAttribute('aria-label',state.trips+' Vespa-ritten');trip.append(pic(V3ART.icons.vespa,'v3CountArt',40,40),make('b',null,String(state.trips)));
   const counts=make('div','v3Counts');counts.append(pz,make('i','v3CountSep'),trip);
   top.replaceChildren(tools,counts);
  }

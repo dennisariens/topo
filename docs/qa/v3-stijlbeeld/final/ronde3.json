@@ -240,5 +240,27 @@
       }
     },
     "pass": true
+  },
+  "12": {
+    "previewSha256": "b83fe1811fe660b1a5f053ae2109aa8cf9fea2799361f825b7888d6186c19711",
+    "runs": {
+      "desktop": {
+        "viewport": [
+          1440,
+          900
+        ],
+        "screen": "toets-les",
+        "errors": []
+      },
+      "ipad-liggend": {
+        "viewport": [
+          1080,
+          810
+        ],
+        "screen": "toets-les",
+        "errors": []
+      }
+    },
+    "pass": true
   }
 }

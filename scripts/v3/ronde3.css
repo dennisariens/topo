@@ -62,3 +62,7 @@ body.v3Les #answer:focus-visible{outline:3px solid #9675f5;outline-offset:2px}
 .v3Counts .v3CountArt{width:40px;height:40px;object-fit:contain;flex:none}
 
 .v3End .v3StatusArt{width:32px;height:32px;object-fit:contain;flex:none}
+
+body.v3Les .v3LesBar .v3LesBack{display:flex!important;min-width:44px;min-height:44px;flex:none;padding:0 10px;touch-action:manipulation}
+body.v3Les .v3LesBack .v3LesBackText{display:none}
+body.v3Les .v3LesGroup{min-width:0}

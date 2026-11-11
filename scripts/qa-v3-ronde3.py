@@ -19,6 +19,18 @@ async def check(p,n,touch):
   assert (await p.locator('.v3Switch button').first.bounding_box())['height']>=44
   await act(p,'.v3MapTools [data-relief=true]',touch)
   assert await p.locator('.v3MapStage .v3Map').get_attribute('data-relief')=='on'
+ if n==12:
+  await p.evaluate('TOPO_V3.shell.practice("point","city1")');await p.wait_for_timeout(500)
+  assert await p.locator('.v3LesBack').is_visible()
+  await act(p,'.v3LesBack',touch)
+  assert await p.locator('.v3View-oefenen').is_visible()
+  await p.evaluate('TOPO_V3.shell.go("toets")');await p.wait_for_timeout(250)
+  await act(p,'.v3ToetsSetup .v3Start',touch)
+  assert await p.locator('.v3LesBack').is_visible()
+  await act(p,'.v3LesBack',touch)
+  assert await p.locator('.v3ToetsSetup').is_visible()
+  await p.evaluate('TOPO_V3.shell.go("toets")');await p.wait_for_timeout(300)
+  return 'toets-les'
  if n==11:
   assert await p.locator('.v3EndDone img').count()>0
   assert await p.locator('.v3EndDone img').evaluate_all('ns=>ns.every(n=>n.complete&&n.naturalWidth>0)')

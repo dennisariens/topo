@@ -174,5 +174,27 @@
       }
     },
     "pass": true
+  },
+  "9": {
+    "previewSha256": "f564ed0188b0cbe3396e4af06cd37affd3e22306258c8051905190daea70bc26",
+    "runs": {
+      "desktop": {
+        "viewport": [
+          1440,
+          900
+        ],
+        "screen": "les",
+        "errors": []
+      },
+      "ipad-liggend": {
+        "viewport": [
+          1080,
+          810
+        ],
+        "screen": "les",
+        "errors": []
+      }
+    },
+    "pass": true
   }
 }

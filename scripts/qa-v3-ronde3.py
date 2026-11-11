@@ -19,6 +19,12 @@ async def check(p,n,touch):
   assert (await p.locator('.v3Switch button').first.bounding_box())['height']>=44
   await act(p,'.v3MapTools [data-relief=true]',touch)
   assert await p.locator('.v3MapStage .v3Map').get_attribute('data-relief')=='on'
+ if n==9:
+  await p.evaluate('TOPO_V3.shell.practice("point","city1")');await p.wait_for_timeout(700)
+  item=await p.evaluate('state.current.id')
+  await p.locator(f'#map [data-id="{item}"][tabindex="0"]').first.press('Enter');await p.wait_for_timeout(300)
+  assert await p.locator('#message').evaluate('n=>n.classList.contains("good") && getComputedStyle(n).color==="rgb(77, 50, 165)"')
+  return 'les'
  if n==8:
   await p.goto(q.HTML.as_uri()+'#welkom/bg03');await p.wait_for_timeout(800)
   assert await p.locator('.v3Welkom .profileWelcome').count()==1

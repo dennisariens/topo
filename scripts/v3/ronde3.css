@@ -49,3 +49,12 @@ dialog.ninoProfile.v3Welkom{background:rgba(255,255,255,.72);backdrop-filter:blu
 .v3Welkom .profileWelcome{width:170px;height:190px;object-fit:contain;flex:none}
 .v3Welkom .profileBubble{background:rgba(255,255,255,.72);padding:14px;box-shadow:var(--v3-glass-shadow)}
 .v3Welkom .profileBubble h2,.v3Welkom .profileBubble p{font:600 17px/24px var(--v3-font)}
+
+body.v3Les{--focus:#7655eb;--accent:#6548d9;--good:#5a40c2;--bad:#9b234b}
+body.v3Les #map .activeTarget{filter:drop-shadow(0 0 8px #7655eb80)}
+body.v3Les #map .activeTarget:is(.country,.zone,.water,.city,.feature){fill:#9b83f5!important;stroke:#6548d9!important}
+body.v3Les #map .activeTarget.lineTarget{stroke:#7655eb!important}
+body.v3Les :is(#quiz,#focusAnswerSheet) #message.good{background:#eee8ff;color:#4d32a5}
+body.v3Les :is(#quiz,#focusAnswerSheet) #message.bad{background:#fae8f1;color:#902345}
+body.v3Les #answer{border-color:#c7b6ee;color:var(--v3-ink);background:#ffffffd9}
+body.v3Les #answer:focus-visible{outline:3px solid #9675f5;outline-offset:2px}

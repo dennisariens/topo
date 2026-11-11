@@ -107,7 +107,7 @@ Werk in deze volgorde, één punt per commit:
 14. **Boek, pagina 1 en 2:** een nieuwe indeling als papierwereld. Eén schreeftype voor de titels plus één leesletter; geen mengelmoes. Rustige marges.
 15. **Glas rechts:** 68% als AA tegen het artwork overal haalbaar is (meten); anders 72% laten staan.
 
-### P3: na akkoord van de eigenaar
+### P3: akkoord van de eigenaar (11-11)
 16. **Toets:** een chip **Willekeurig**: 10 vragen uit de ontgrendelde hoofdstukken.
 17. **Vespa-rit:** de Vespa schudt even (de motor start) en rijdt dan het beeld uit, in plaats van over het lijntje te rijden. Bij verminderde beweging een korte fade.
 18. **Achtergrond kiesbaar** in Instellingen: Kust, Toscane, Meer, of **Wisselen** (per hoofdstuk een passende achtergrond).

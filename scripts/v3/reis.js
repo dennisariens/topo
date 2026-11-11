@@ -288,7 +288,7 @@
   const meter=make('div','v3Steps v3RideSteps');meter.setAttribute('aria-hidden','true');for(let i=0;i<3;i++){const s=make('i');if(i<P%3)s.className='on';meter.append(s);}
   const rv=make('b',null,String(T));rv.setAttribute('aria-hidden','true');const rl=make('span',null,'Vespa-ritten');rl.setAttribute('aria-hidden','true');ride.append(rv,rl,meter);
   const tiles=make('div','v3Tiles');
-  tiles.append(tile('v3TilePizza',V3ART?.icons.pizza,S+' / 8','Pizza',S+' van 8 stukjes van pizza '+(P+1)),tile('',V3ART?.icons.stamp,m.done+' / 11','Stempels',m.done+' van 11 stempels'),tile('',V3ART?.icons.gold,gold+' / 11','Goud',gold+' van 11 goudzegels'),tile('',V3ART?.icons.postcard,cards+' / 4','Postkaarten',cards+' van 4 postkaarten'));
+  tiles.append(tile('v3TilePizza',V3ART?.icons.pizza,S+' / 8','Pizza',S+' van 8 stukjes van pizza '+(P+1)),tile('v3TileStamp',V3ART?.icons.stamp,m.done+' / 11','Stempels',m.done+' van 11 stempels'),tile('v3TileGold',V3ART?.icons.gold,gold+' / 11','Goud',gold+' van 11 goudzegels'),tile('v3TilePostcard',V3ART?.icons.postcard,cards+' / 4','Postkaarten',cards+' van 4 postkaarten'));
   rewardsView.replaceChildren(h,book,ride,tiles);
  }
  function renderSwitch(){

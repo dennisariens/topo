@@ -54,6 +54,19 @@ async def relief(p,bg):
  await p.screenshot(path=str(OUT/f'relief-{bg}.png'))
  return {**data,'palette':palette,'sourceDemSha256':meta['rawDemSha256'],'rasterSha256':meta['output']['sha256']}
 
+
+async def rewards(p,bg):
+ await q.goto(p,'rewards')
+ rows=await p.evaluate("""()=>[...document.querySelectorAll('.v3Rewards .v3Tile')].map(n=>{const img=n.querySelector('img'),b=n.querySelector('b'),s=getComputedStyle(img),t=getComputedStyle(b);return {label:n.querySelector('span').textContent,src:img.src,box:parseFloat(s.width),scale:new DOMMatrix(s.transform).a,size:parseFloat(t.fontSize),weight:t.fontWeight}})""")
+ import base64
+ assert len(rows)==4
+ for row in rows:
+  data=base64.b64decode(row.pop('src').split(',')[1]);im=Image.open(io.BytesIO(data)).convert('RGBA');a=im.getchannel('A').point(lambda p:255 if p>=16 else 0).getbbox()
+  painted=max(a[2]-a[0],a[3]-a[1])/im.width*row['box']*row['scale'];row['paintedPx']=round(painted,3)
+  assert row['box']==72 and abs(painted-72)<.1 and row['size']==40 and row['weight']=='700',row
+ await p.screenshot(path=str(OUT/f'beloningen-size-{bg}.png'))
+ return rows
+
 async def main(point):
  OUT.mkdir(parents=True,exist_ok=True);runs={}
  async with async_playwright() as pw:
@@ -65,6 +78,7 @@ async def main(point):
    data=await p.evaluate('''()=>({bg:window.TOPO_V3_BG,links:[...document.querySelectorAll('.v3Bg')].map(n=>n.hash),active:document.querySelector('.v3Bg[aria-current]')?.textContent})''')
    assert data['bg']==('bg03' if bg=='default' else bg),data
    assert data['links']==['#bezig/bg01','#bezig/bg02','#bezig'],data
+   if point==5:data['rewards']=await rewards(p,bg)
    if point==4:data['relief']=await relief(p,bg)
    if point==3:data['progress']=await progress(p,bg)
    if point==2:

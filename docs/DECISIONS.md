@@ -931,3 +931,9 @@ Op desktop vanaf 1280 px vormt `v3VgOverview` één viewporthoog raster: titel, 
 Het nieuwe raster `assets/v3/relief-r2.webp` gebruikt exact het bestaande z8-DPR2-hoogtemodel (ruwe float64-SHA256 `b831aff5…`), dezelfde registratie, smoothing en hillshade. Alleen het hoogtepalet verandert: laagland `#A8C25A`, olijfkleurige heuvels, bergen `#8A5A3A`, wit vanaf de bestaande sneeuwhoogte. De basisverf is teruggerekend voor de afsluitende SVG-contrastfactor 1,3; de oude khaki kleurmatrix en extra saturatie zijn weg. Sneeuw is een hoogteklasse, geen gemeten sneeuwdek.
 
 Het reproduceerbare script controleert de hash van het aangeleverde DEM. Bronmanifest, output-SHA256, doel- en basiskleuren, encoder en lichtinstellingen staan in `relief-r2-provenance.json`. Het raster heeft dezelfde 1780×2470 pixels en geen kustmasker; de oorspronkelijke SVG-geometrie blijft de clip. De preview controleert de nieuwe rasterhash; geometrievalidatie en de gerichte palet-/filtercheck zijn groen.
+
+## 2026-11-11 — Ronde 2, punt 5: zichtbare beloningsiconen op 72 px
+
+Op desktop en iPad (vanaf 768 px) zijn de vier geschilderde tegeliconen 72 px en de cijfers 40/700. De canonieke bestanden houden hun transparante bronmarges; de V3-presentatielaag compenseert die per icoon met een schaalfactor. Geen uitsnede, nieuwe illustratie of wijziging van beloningsdata/acties. Telefoon behoudt de bestaande compacte typeschaal en twee kolommen.
+
+De browserregressie meet de berekende beeldmaat én de zichtbare alfa-inhoud (alfa ≥16), zodat een 72px-element met een te kleine tekening niet meer als akkoord telt. Dezelfde check faalde met de CSS van punt 4: Pizza tekende slechts 60,75 px ondanks een 72px-beeldvak. Met deze correctie tekenen alle vier iconen 72 px op standaard/BG-01/BG-02/BG-03. Bewijs: `ronde2/point-5.json` en `beloningen-size-*.png`.

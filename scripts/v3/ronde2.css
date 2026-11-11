@@ -28,3 +28,12 @@
  .v3View-voortgang .v3VgRow>.v3VgTile .v3VgDots i{width:10px;height:10px}
  .v3View-voortgang>.v3Card{margin-top:calc(var(--v3-inner) + 8px);border-top:1px solid var(--v3-line)}
 }
+
+@media (min-width:768px){
+ /* Alpha padding stays in the canonical files. Scale only their transparent image boxes so the painted icons are 72 px. */
+ .v3 .v3Rewards .v3Tile .v3TileIcon{width:72px;height:72px;transform:scale(var(--v3-reward-icon-scale,1));transform-origin:center}
+ .v3TilePizza,.v3TileGold{--v3-reward-icon-scale:1.1851851852}
+ .v3TileStamp{--v3-reward-icon-scale:1.0909090909}
+ .v3TilePostcard{--v3-reward-icon-scale:1.0666666667}
+ .v3 .v3Rewards .v3Tile b{font:700 40px/1.1 var(--v3-font)}
+}

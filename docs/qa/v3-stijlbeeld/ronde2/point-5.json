@@ -1,0 +1,179 @@
+{
+  "point": 5,
+  "previewSha256": "0c9a576648896d56a2b7f8f2dad1bd62b595b058cb8122e1318e2efdadbbf329",
+  "runs": {
+    "default": {
+      "bg": "bg03",
+      "links": [
+        "#bezig/bg01",
+        "#bezig/bg02",
+        "#bezig"
+      ],
+      "active": "BG-03 Kust",
+      "rewards": [
+        {
+          "label": "Pizza",
+          "box": 72,
+          "scale": 1.18519,
+          "size": 40,
+          "weight": "700",
+          "paintedPx": 72.0
+        },
+        {
+          "label": "Stempels",
+          "box": 72,
+          "scale": 1.09091,
+          "size": 40,
+          "weight": "700",
+          "paintedPx": 72.0
+        },
+        {
+          "label": "Goud",
+          "box": 72,
+          "scale": 1.18519,
+          "size": 40,
+          "weight": "700",
+          "paintedPx": 72.0
+        },
+        {
+          "label": "Postkaarten",
+          "box": 72,
+          "scale": 1.06667,
+          "size": 40,
+          "weight": "700",
+          "paintedPx": 72.0
+        }
+      ]
+    },
+    "bg01": {
+      "bg": "bg01",
+      "links": [
+        "#bezig/bg01",
+        "#bezig/bg02",
+        "#bezig"
+      ],
+      "active": "BG-01 Toscane",
+      "rewards": [
+        {
+          "label": "Pizza",
+          "box": 72,
+          "scale": 1.18519,
+          "size": 40,
+          "weight": "700",
+          "paintedPx": 72.0
+        },
+        {
+          "label": "Stempels",
+          "box": 72,
+          "scale": 1.09091,
+          "size": 40,
+          "weight": "700",
+          "paintedPx": 72.0
+        },
+        {
+          "label": "Goud",
+          "box": 72,
+          "scale": 1.18519,
+          "size": 40,
+          "weight": "700",
+          "paintedPx": 72.0
+        },
+        {
+          "label": "Postkaarten",
+          "box": 72,
+          "scale": 1.06667,
+          "size": 40,
+          "weight": "700",
+          "paintedPx": 72.0
+        }
+      ]
+    },
+    "bg02": {
+      "bg": "bg02",
+      "links": [
+        "#bezig/bg01",
+        "#bezig/bg02",
+        "#bezig"
+      ],
+      "active": "BG-02 Meer",
+      "rewards": [
+        {
+          "label": "Pizza",
+          "box": 72,
+          "scale": 1.18519,
+          "size": 40,
+          "weight": "700",
+          "paintedPx": 72.0
+        },
+        {
+          "label": "Stempels",
+          "box": 72,
+          "scale": 1.09091,
+          "size": 40,
+          "weight": "700",
+          "paintedPx": 72.0
+        },
+        {
+          "label": "Goud",
+          "box": 72,
+          "scale": 1.18519,
+          "size": 40,
+          "weight": "700",
+          "paintedPx": 72.0
+        },
+        {
+          "label": "Postkaarten",
+          "box": 72,
+          "scale": 1.06667,
+          "size": 40,
+          "weight": "700",
+          "paintedPx": 72.0
+        }
+      ]
+    },
+    "bg03": {
+      "bg": "bg03",
+      "links": [
+        "#bezig/bg01",
+        "#bezig/bg02",
+        "#bezig"
+      ],
+      "active": "BG-03 Kust",
+      "rewards": [
+        {
+          "label": "Pizza",
+          "box": 72,
+          "scale": 1.18519,
+          "size": 40,
+          "weight": "700",
+          "paintedPx": 72.0
+        },
+        {
+          "label": "Stempels",
+          "box": 72,
+          "scale": 1.09091,
+          "size": 40,
+          "weight": "700",
+          "paintedPx": 72.0
+        },
+        {
+          "label": "Goud",
+          "box": 72,
+          "scale": 1.18519,
+          "size": 40,
+          "weight": "700",
+          "paintedPx": 72.0
+        },
+        {
+          "label": "Postkaarten",
+          "box": 72,
+          "scale": 1.06667,
+          "size": 40,
+          "weight": "700",
+          "paintedPx": 72.0
+        }
+      ]
+    }
+  },
+  "pass": true
+}

@@ -20,6 +20,19 @@ async def check(p,n,touch):
   assert (await p.locator('.v3Switch button').first.bounding_box())['height']>=44
   await act(p,'.v3MapTools [data-relief=true]',touch)
   assert await p.locator('.v3MapStage .v3Map').get_attribute('data-relief')=='on'
+ if n==18:
+  await act(p,'[data-nav=instellingen]',touch)
+  for key in ['bg01','bg02','bg03','auto']:
+   await act(p,f'[data-background={key}]',touch)
+   assert await p.locator(f'[data-background={key}]').get_attribute('aria-pressed')=='true'
+   assert await p.evaluate('TOPO_V3.background.get()')==key
+  assert await p.evaluate('localStorage.getItem("topo-v3-background-v1")')=='auto'
+  await p.keyboard.press('Escape')
+  await act(p,'.v3Row[data-chapter=city1]',touch);first=await p.locator('body').get_attribute('data-v3-background')
+  await act(p,'.v3Row[data-chapter=city2]',touch);second=await p.locator('body').get_attribute('data-v3-background')
+  assert first!=second
+  await act(p,'[data-nav=instellingen]',touch)
+  return 'instellingen'
  if n==17:
   await p.evaluate('celebrateTrip("Rome","Florence")');await p.wait_for_timeout(100)
   assert await p.locator('.rideNino').evaluate('n=>getComputedStyle(n).animationName')=='v3Engine'

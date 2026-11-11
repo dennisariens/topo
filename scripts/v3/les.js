@@ -40,6 +40,7 @@
  bar.append(group,end);layout.before(bar);
 
  function model(){
+  V.background?.refresh();
   if(state.mode==='exam'){const total=state.examTotal|0;return {type:'exam',kind:'exam',title:'Toets',total,n:Math.min(total,(state.examAnswered|0)+(state.answered?0:1)),done:!!state.examEnded,paused:false,q:state.questionMode};}
   if(FREE.includes(state.mode)){const g=$('#groupSelect');return {type:'free',kind:state.mode==='learn'?'discover':state.mode,title:g?.selectedOptions[0]?.textContent.replace(/ · .*$/,'').trim()||'',group:g?.value,total:0,n:0,done:false,paused:false,q:state.mode==='learn'?'discover':state.questionMode};}
   const s=state.route?.active;if(state.mode!=='route'||!s)return null;

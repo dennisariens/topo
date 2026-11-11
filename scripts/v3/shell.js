@@ -59,7 +59,11 @@
  if(settings){
   settings.classList.add('v3','v3SettingsSheet');
   const profile=make('section','ninoSettingsGroup');profile.append(make('h3',null,'Profiel'),btn('Naam en favoriete pizza',()=>window.TopoProfile?.open(), 'v3Btn'));
-  settings.querySelector('.ninoSettingsActions')?.prepend(profile);
+  const backdrop=make('section','ninoSettingsGroup v3BackgroundChoices');backdrop.append(make('h3',null,'Achtergrond'));
+  const options=[['bg03','Kust'],['bg01','Toscane'],['bg02','Meer'],['auto','Wisselen']];
+  const mark=()=>backdrop.querySelectorAll('button').forEach(b=>b.setAttribute('aria-pressed',String(b.dataset.background===V.background.get())));
+  for(const [key,label] of options){const b=btn(label,()=>{V.background.set(key);mark();},'v3Btn');b.dataset.background=key;backdrop.append(b);}
+  mark();settings.querySelector('.ninoSettingsActions')?.prepend(profile,backdrop);
  }
  function openSettings(opener){settingsOrigin=opener||document.activeElement;$('.ninoSettingsButton')?.click();}
  $('dialog.ninoSettings')?.addEventListener('close',()=>{const o=settingsOrigin;settingsOrigin=null;if(o?.isConnected&&o.checkVisibility?.()!==false)requestAnimationFrame(()=>o.focus({preventScroll:true}));});

@@ -23,6 +23,12 @@
  // Reis map (fase B; chosen in the afwerking 10-11): "eiland" = Italy floating as land, neighbours as soft silhouettes,
  // the sea transparent on the wash. Variant (b), the map in a glass card, is gone.
  ui.kaart='eiland';
+ const BGKEY='topo-v3-background-v1',BACKDROPS={city1:'bg01',city2:'bg03',city3:'bg01',city4:'bg03',islands:'bg03',mountains:'bg02',volcanoes:'bg03',regions:'bg01',countries:'bg02',seas:'bg03',rivers:'bg02'};
+ try{ui.background=localStorage.getItem(BGKEY);}catch{}
+ const background=()=>{const chapter=$('#journeyScreen')?.classList.contains('hidden')?state.route?.active?.chapterId:ui.selected;
+  const key=ui.background==='auto'?(BACKDROPS[chapter]||'bg03'):ui.background||window.TOPO_V3_BG||'bg03';
+  const src=V3ART?.bg?.[key];if(src){document.body.style.setProperty('--v3-pano','url("'+src+'")');document.body.dataset.v3Background=key;}
+ };
  // Chapter scenes {mini, kop}: the 8 #75 scenes (assets/v3/scenes) and Roma, Venezia, Napoli (assets/v3/render);
  // a chapter without a scene keeps its chapter icon. Render assets: background, portrait, icons, VE-01.
  const scenes=window.TOPO_V3_SCENES||{},V3ART=window.TOPO_V3_ART||null;
@@ -309,7 +315,7 @@
   const c=m.chapters.find(x=>x.id===ui.selected);
   // Backdrop: BG-03 (BG-01/BG-02 in the preview), full-bleed behind the window; the V2 panorama only as fallback.
   const pano=V3ART?.bg?.[window.TOPO_V3_BG||'bg03']||V3ART?.bg?.bg03||$('.routeScene img')?.currentSrc||$('.routeScene img')?.src;
-  if(pano&&!document.body.style.getPropertyValue('--v3-pano'))document.body.style.setProperty('--v3-pano','url("'+pano+'")');
+  if(V3ART?.bg)background();else if(pano)document.body.style.setProperty('--v3-pano','url("'+pano+'")');
   root.dataset.view=views[ui.view]?ui.view:'reis';root.dataset.kaart=ui.kaart;
   markNav(root);
   renderTop(m);renderRows(m);renderPanel(m,c);renderSwitch();paintMap(c);renderRewards(m);
@@ -321,6 +327,6 @@
  const base=renderRouteHome;
  renderRouteHome=function(...a){const out=base.apply(this,a);try{render();chrome();}catch(e){console.error('V3 Reis',e);}return out;};
  document.body.classList.add('v3On');
- window.TOPO_V3={render,model,ui,makeSide,markNav,addView,cloneMap,fit,addIsland,icon,make,btn,pic,img,press,v2Card,v2Nav,STAGE,KIND,range,scenes,art:V3ART,nino,root};
+ window.TOPO_V3={background:{refresh:background,get:()=>ui.background||window.TOPO_V3_BG||'bg03',set:key=>{if(!['bg01','bg02','bg03','auto'].includes(key))return;ui.background=key;try{localStorage.setItem(BGKEY,key);}catch{}background();}},render,model,ui,makeSide,markNav,addView,cloneMap,fit,addIsland,icon,make,btn,pic,img,press,v2Card,v2Nav,STAGE,KIND,range,scenes,art:V3ART,nino,root};
  if(!$('#journeyScreen')?.classList.contains('hidden')){render();chrome();}
 })();

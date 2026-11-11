@@ -264,7 +264,29 @@
     "pass": true
   },
   "13": {
-    "previewSha256": "d24ac9a84f086cb31a23d0aad9baa2a3bceec6fca9d191a1fda0f0fb695f4e77",
+    "previewSha256": "c1bfebec8a53b611ddb48419d73e7ccc2735034fdc63767327d642eacadcd92f",
+    "runs": {
+      "desktop": {
+        "viewport": [
+          1440,
+          900
+        ],
+        "screen": "boek",
+        "errors": []
+      },
+      "ipad-liggend": {
+        "viewport": [
+          1080,
+          810
+        ],
+        "screen": "boek",
+        "errors": []
+      }
+    },
+    "pass": true
+  },
+  "14": {
+    "previewSha256": "1be1dbac20ba87628a99f63c8aef762fa7403447a7551833cc5a0fe10e74c675",
     "runs": {
       "desktop": {
         "viewport": [

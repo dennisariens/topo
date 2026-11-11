@@ -19,6 +19,13 @@ async def check(p,n,touch):
   assert (await p.locator('.v3Switch button').first.bounding_box())['height']>=44
   await act(p,'.v3MapTools [data-relief=true]',touch)
   assert await p.locator('.v3MapStage .v3Map').get_attribute('data-relief')=='on'
+ if n==14:
+  await q.goto(p,'rewards');await act(p,'.v3BookCover',touch)
+  while not await p.locator('.bookFooter button').first.is_disabled():await p.locator('.bookFooter button').first.click()
+  assert await p.locator('.coverFolio').count()==1
+  assert await p.locator('.bookScript').first.evaluate('n=>getComputedStyle(n).fontFamily')=='Georgia, serif'
+  assert await p.locator('.folioWriting').evaluate_all('ns=>ns.every(n=>n.scrollHeight<=n.clientHeight+1)')
+  return 'boek'
  if n==13:
   await q.goto(p,'rewards');await act(p,'.v3TileStamp',touch)
   assert await p.locator('#travelBook').evaluate('n=>n.open')

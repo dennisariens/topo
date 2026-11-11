@@ -31,3 +31,14 @@
  .v3OefPanel .v3Chip{min-height:44px}
  .v3OefPanel .v3Start{margin-top:0}
 }
+
+/* Settings uses the same worksheet and violet controls as the application. */
+dialog.ninoSettings.v3SettingsSheet{width:min(640px,calc(100vw - 40px));padding:24px;border:1px solid #ffffffb3;border-radius:28px;background:var(--v3-plate);color:var(--v3-ink);font:var(--v3-row);box-shadow:var(--v3-glass-shadow);backdrop-filter:var(--v3-glass-filter)}
+.v3SettingsSheet::backdrop{background:rgba(42,36,64,.35);backdrop-filter:blur(8px)}
+.v3SettingsSheet .ninoSettingsGroup{margin:16px 0;padding:12px 16px;gap:0;border-radius:18px;background:rgba(255,255,255,.72)}
+.v3SettingsSheet .ninoSettingsGroup h3{font-size:16px;padding:4px 0 8px}
+.v3SettingsSheet .ninoSettingsGroup p{font:var(--v3-second);padding:8px 0;color:var(--v3-ink2)}
+.v3SettingsSheet :is(button,summary){min-height:44px;touch-action:manipulation}
+.v3SettingsSheet button{border:0;border-radius:12px;background:var(--v3-accent-soft);color:var(--v3-accent);font:var(--v3-row);padding:10px 14px;text-align:left}
+.v3SettingsSheet .ninoSettingsGroup>button{width:100%;border-top:1px solid var(--v3-line);border-radius:0;background:transparent}
+.v3SettingsSheet .ninoResetDanger{color:#9b233d}

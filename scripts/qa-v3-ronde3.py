@@ -19,6 +19,12 @@ async def check(p,n,touch):
   assert (await p.locator('.v3Switch button').first.bounding_box())['height']>=44
   await act(p,'.v3MapTools [data-relief=true]',touch)
   assert await p.locator('.v3MapStage .v3Map').get_attribute('data-relief')=='on'
+ if n==7:
+  await act(p,'[data-nav=instellingen]',touch)
+  d=p.locator('dialog.ninoSettings')
+  assert await d.evaluate('n=>n.open && n.classList.contains("v3SettingsSheet")')
+  assert await d.locator('button').count()>=5
+  return 'instellingen'
  if n==6:
   await q.goto(p,'oefenen')
   assert await p.locator('.v3OefPanel').evaluate('n=>n.scrollHeight<=n.clientHeight+1 && n.getBoundingClientRect().bottom<=innerHeight')

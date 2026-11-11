@@ -55,6 +55,12 @@
  }
  // Settings: the V2 dialog (profile, reservekopie, wissen); focus returns to the V3 control that opened it.
  let settingsOrigin=null;
+ const settings=$('dialog.ninoSettings');
+ if(settings){
+  settings.classList.add('v3','v3SettingsSheet');
+  const profile=make('section','ninoSettingsGroup');profile.append(make('h3',null,'Profiel'),btn('Naam en favoriete pizza',()=>window.TopoProfile?.open(), 'v3Btn'));
+  settings.querySelector('.ninoSettingsActions')?.prepend(profile);
+ }
  function openSettings(opener){settingsOrigin=opener||document.activeElement;$('.ninoSettingsButton')?.click();}
  $('dialog.ninoSettings')?.addEventListener('close',()=>{const o=settingsOrigin;settingsOrigin=null;if(o?.isConnected&&o.checkVisibility?.()!==false)requestAnimationFrame(()=>o.focus({preventScroll:true}));});
 

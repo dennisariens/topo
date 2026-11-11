@@ -1,3 +1,5 @@
+**V3-werk:** lees eerst `docs/v3/SPEC.md` (één pagina, de huidige waarheid) en `docs/v3/OVERDRACHT.md`. Lees `index.html` en `docs/DECISIONS.md` nooit volledig; zoek er gericht in.
+
 # Instructions for coding agents
 
 1. Read `docs/PROJECT_STATE.md` first; read `docs/MAP_SYSTEM.md` before map or geography changes and `docs/DECISIONS.md` before product decisions.

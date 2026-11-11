@@ -118,3 +118,15 @@ Werk in deze volgorde, één punt per commit:
     - alleen op Reis en het toetsresultaat;
     - **leren blijft op de schoolkaart.**
     Hiervoor is nieuw artwork nodig (±10 iconen).
+
+### Aanvulling ronde 3: Vespa (eigenaar, 11-11)
+
+De Vespa uit de master-set vervangt **IC-vespa** overal. Reden: dezelfde scooter waarop Nino rijdt (`vespa-rijdend`, `vespa-bagage`), met hetzelfde versleten rood en chroom; IC-vespa was glanzender, oranjer en had spiegels. Daarmee is er één Vespa in de hele app.
+
+| Plek | Asset (master `art/master` `339c420`) |
+| --- | --- |
+| Tellers (Reis, Voortgang) en kleine iconen | `vespa-icoon` (driekwart vooraanzicht; leest goed op 24–48 px) |
+| Beloningen (Vespa-ritten) en de animatie van de Vespa-rit (P3, punt 17) | `vespa-zij` (zijaanzicht naar rechts: de motor start, de Vespa schudt even en rijdt naar rechts het beeld uit) |
+| Toets resultaat, kennismaking, uitstapjes | `vespa-rijdend` / `vespa-bagage` (met Nino) |
+
+IC-vespa gaat in het manifest naar de status "vervangen", met de verwijzing. Dit hoort bij punt 10 (tellers met illustraties) en punt 13 (Beloningen).

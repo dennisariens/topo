@@ -2,3 +2,7 @@
 .v3Reis .v3MapTools{position:relative;z-index:3;pointer-events:auto}
 .v3Reis .v3Switch .v3Btn{min-height:44px;min-width:44px;touch-action:manipulation;pointer-events:auto}
 .v3Map[data-relief=off] :is(.atlasTerrain,.v3RCoast,.v3RSea,.v3RShadow){display:none!important}
+@media (min-width:768px){
+ .v3Reis .v3MapTools .v3SchoolBtn{width:auto;min-height:44px;padding:0 12px;flex-shrink:0;touch-action:manipulation}
+ .v3Reis .v3MapTools .v3SchoolBtn span{position:static;width:auto;height:auto;overflow:visible;clip:auto}
+}

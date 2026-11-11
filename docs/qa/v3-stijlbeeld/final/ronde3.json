@@ -20,5 +20,27 @@
       }
     },
     "pass": true
+  },
+  "2": {
+    "previewSha256": "ff1da073aed1fb8d653e2bf7d537784d7e6f18757d975a1eb7bdeb9fc72af677",
+    "runs": {
+      "desktop": {
+        "viewport": [
+          1440,
+          900
+        ],
+        "screen": "reis",
+        "errors": []
+      },
+      "ipad-liggend": {
+        "viewport": [
+          1080,
+          810
+        ],
+        "screen": "reis",
+        "errors": []
+      }
+    },
+    "pass": true
   }
 }

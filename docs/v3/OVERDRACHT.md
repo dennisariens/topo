@@ -138,3 +138,10 @@ Eindpin (geteste code): `70cdb342b47898d98225d889fb7d5b49270b3616` op `codex/top
 Controle: `npm run lint`, `npm test`, `npm run build` en `python3 scripts/qa-v3-all.py` PASS (20/20 scripts; Ronde 3: 20/20 punten). `index.html` is byte-gelijk; leerengine en echte geometrie zijn behouden. Compact bewijs: `docs/qa/v3-stijlbeeld/final/verification-ronde3.json`; screenshots desktop 1440×900 en iPad 1080×810 staan in dezelfde map. Preview en lange logs zijn niet gecommit. Geen merge, deploy of publicatie.
 
 Open: fysieke iPad/Safari-hertest en visuele eigenaar/Hermes-review van het nieuwe landmarkartwork. **Hermes: hertest deze eindpin**, vooral kaartschakelaar/Schoolblad, toetsaanraakvlakken, Oefenen zonder scroll, terugnavigatie, boekvegen, willekeurige toets, Vespa met verminderde beweging en achtergrondwisseling. Controleer dat de landmarks alleen op Reis/toetsresultaat verschijnen en leren op de schoolkaart blijft.
+
+### Aanvulling 12-11 (eigenaar en lead designer): Vespa
+21. **Vespa uit de master-set in plaats van IC-vespa.** De master-Vespa (versleten kersenrood, chroom, realistischer) is beter dan het glanzende V3-icoon en past bij Nino op de Vespa.
+    - **Teller en tegels:** `vespa-icoon` (driekwart);
+    - **Beloningen, de grote Vespa:** `vespa-zij`. Bij een gemaakte rit `vespa-rijdend` en bij een afgerond land `vespa-bagage`;
+    - **IC-vespa** verdwijnt uit het gebruik maar blijft in het manifest (status "vervangen");
+    - **check:** het icoon blijft herkenbaar op de kleinste maat (teller 20 px). Is het dan te druk, toon het in de teller op minimaal 24 px.

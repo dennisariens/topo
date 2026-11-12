@@ -25,14 +25,16 @@ Masters = originele ChatGPT-download, ongewijzigd en ongeschaald, met alfa (`ass
 | 3b | `assets/art/universal/paspoort/paspoort-binnen.webp` | 1200×815 | `assets/art/masters/universal/paspoort/paspoort-binnen.png` | 1536×1024 | ChatGPT | 2026-11-10 | Goedgekeurd |
 | 6 | `assets/art/fr/hero/fr-hero.webp` | 1600×900 | `assets/art/masters/fr/hero/fr-hero.png` | 1672×941 | ChatGPT | 2026-11-12 | Goedgekeurd |
 | 6 (2:1) | `assets/art/fr/hero/fr-hero-2x1.webp` | 1600×800 | `assets/art/masters/fr/hero/fr-hero.png` | 1672×941 | ChatGPT, bijgesneden | 2026-11-12 | Goedgekeurd |
-| 7a | `assets/art/fr/rewards/doos-leeg.webp` | 1200×900 | `assets/art/masters/fr/rewards/doos-leeg.png` | 1448×1086 | ChatGPT | 2026-11-12 | Goedgekeurd; canvas niet bijgesneden zodat 7b exact past |
-| 7b | `assets/art/fr/rewards/doos-vol.webp` | 1200×900 | `assets/art/masters/fr/rewards/doos-vol.png` | 1448×1086 | ChatGPT | 2026-11-12 | Goedgekeurd; past op 7a (afwijking ≤7 px) |
+| 7a | `assets/art/fr/rewards/doos-leeg.webp` | 1200×640 | `assets/art/masters/fr/rewards/doos-leeg.png` | 1717×916 | ChatGPT | 2026-11-12 | Goedgekeurd (v2, 8 vakjes); vakposities in `vakjes.json` |
+| 7b | `assets/art/fr/rewards/doos-vol.webp` | 1200×640 | `assets/art/masters/fr/rewards/doos-vol.png` | 1717×916 | ChatGPT | 2026-11-12 | Goedgekeurd (v2, 8 gebakjes) |
 | 7c | `assets/art/fr/rewards/croissant.webp` | 256×256 | `assets/art/masters/fr/rewards/doos-vol.png` | uitsnede | Uit 7b gesneden | 2026-11-12 | Goedgekeurd |
 | 7d | `assets/art/fr/rewards/pain-au-chocolat.webp` | 256×256 | `assets/art/masters/fr/rewards/doos-vol.png` | uitsnede | Uit 7b gesneden | 2026-11-12 | Goedgekeurd |
 | 7e | `assets/art/fr/rewards/macaron.webp` | 256×256 | `assets/art/masters/fr/rewards/doos-vol.png` | uitsnede | Uit 7b gesneden | 2026-11-12 | Goedgekeurd |
 | 7f | `assets/art/fr/rewards/eclair.webp` | 256×256 | `assets/art/masters/fr/rewards/doos-vol.png` | uitsnede | Uit 7b gesneden | 2026-11-12 | Goedgekeurd |
 | 7g | `assets/art/fr/rewards/aardbeientaartje.webp` | 256×256 | `assets/art/masters/fr/rewards/doos-vol.png` | uitsnede | Uit 7b gesneden | 2026-11-12 | Goedgekeurd |
-| 7h | `assets/art/fr/rewards/madeleine.webp` | 256×256 | `assets/art/masters/fr/rewards/doos-vol.png` | uitsnede | Uit 7b gesneden | 2026-11-12 | Goedgekeurd |
+| 7h | `assets/art/fr/rewards/chou-a-la-creme.webp` | 256×256 | `assets/art/masters/fr/rewards/doos-vol.png` | uitsnede | Uit 7b gesneden | 2026-11-12 | Goedgekeurd |
+| 7i | `assets/art/fr/rewards/mille-feuille.webp` | 256×256 | `assets/art/masters/fr/rewards/doos-vol.png` | uitsnede | Uit 7b gesneden | 2026-11-12 | Goedgekeurd |
+| 7j | `assets/art/fr/rewards/madeleine.webp` | 256×256 | `assets/art/masters/fr/rewards/doos-vol.png` | uitsnede | Uit 7b gesneden | 2026-11-12 | Goedgekeurd |
 | 8 | `assets/art/fr/rewards/doos-goud.webp` | 512×391 | `assets/art/masters/fr/rewards/doos-goud.png` | 1536×1024 | ChatGPT | 2026-11-12 | Goedgekeurd |
 | 8b | `assets/art/fr/rewards/doos-dicht.webp` | 512×363 | `assets/art/masters/fr/rewards/doos-dicht.png` | 1254×1254 | ChatGPT | 2026-11-12 | Goedgekeurd; teller 3 dozen = Vespa-rit |
 | 9a | `assets/art/fr/stempels/fr-land.webp` | 512×512 | `assets/art/masters/fr/stempels/fr-land.png` | 1254×1254 | ChatGPT | 2026-11-12 | Goedgekeurd; alleen op licht papier gebruiken |

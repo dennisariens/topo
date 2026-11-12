@@ -1,0 +1,64 @@
+{
+ "bron": "doos-leeg.webp / doos-vol.webp (zelfde canvas 1717x916)",
+ "uitleg": "cx, cy en d als fractie van de breedte resp. hoogte (d = diameter / breedte). Leg het gebakje-webp op de lege doos op deze plek.",
+ "volgorde": [
+  "croissant",
+  "pain-au-chocolat",
+  "macaron",
+  "eclair",
+  "aardbeientaartje",
+  "chou-a-la-creme",
+  "mille-feuille",
+  "madeleine"
+ ],
+ "vakjes": [
+  {
+   "gebakje": "croissant",
+   "cx": 0.2038,
+   "cy": 0.3843,
+   "d": 0.1957
+  },
+  {
+   "gebakje": "pain-au-chocolat",
+   "cx": 0.3978,
+   "cy": 0.3843,
+   "d": 0.1957
+  },
+  {
+   "gebakje": "macaron",
+   "cx": 0.5917,
+   "cy": 0.3843,
+   "d": 0.1957
+  },
+  {
+   "gebakje": "eclair",
+   "cx": 0.7874,
+   "cy": 0.3843,
+   "d": 0.1957
+  },
+  {
+   "gebakje": "aardbeientaartje",
+   "cx": 0.2038,
+   "cy": 0.7424,
+   "d": 0.1957
+  },
+  {
+   "gebakje": "chou-a-la-creme",
+   "cx": 0.3978,
+   "cy": 0.7424,
+   "d": 0.1957
+  },
+  {
+   "gebakje": "mille-feuille",
+   "cx": 0.5917,
+   "cy": 0.7424,
+   "d": 0.1957
+  },
+  {
+   "gebakje": "madeleine",
+   "cx": 0.7874,
+   "cy": 0.7424,
+   "d": 0.1957
+  }
+ ]
+}

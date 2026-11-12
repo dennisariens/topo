@@ -79,7 +79,7 @@ Rijdende pose bestaat al (`nino-op-de-scooter.webp`). Nodig: 8 losse poses, **st
 Universeel klaar: 1a–1h (+ 1b-variant), 2a–2d, 3a–3b, met masters. Frankrijk: nog niets.
 Bijgewerkt na de V4-besluiten: Frankrijk heeft **11 hoofdstukken** (per kopje op het schoolblad) en de beloning is een **gebakjesdoos met 6 Franse gebakjes; 3 volle dozen = een Vespa-rit**. De bakkerijvitrine en de 5 regio-stempels uit de eerste versie vervallen.
 
-Volgorde Frankrijk: 6 → 7a/7b → 8 → 9. (6, 7a–7h, 8, 8b, 9a en 9b zijn klaar: fase 1 Frankrijk compleet.) Stempels en tegels per hoofdstuk (10) pas na de oefenkaart.
+Volgorde Frankrijk: 6 → 7a/7b → 8 → 9. (6, 7a–7j, 8, 8b, 9a en 9b zijn klaar: fase 1 Frankrijk compleet.) Stempels en tegels per hoofdstuk (10) pas na de oefenkaart.
 
 ## 6 · Hero Frankrijk — 1536×1024
 
@@ -89,24 +89,13 @@ Upload als extra referentie `vespa-zij` (2a), zodat de scooter gelijk blijft.
 
 Controleer zelf het bord: alleen "France", correct gespeld. Anders opnieuw.
 
-## 7 · Gebakjesdoos + 6 gebakjes (Frankrijk) — transparant
+## 7 · Gebakjesdoos + 8 gebakjes (Frankrijk) — klaar (v2)
 
-De doos is de voortgangsbalk: elk vakje vult zich met een gebakje. Daarom moeten doos en gebakjes exact op elkaar passen: eerst de doos, dan de gebakjes in dezelfde chat.
+8 gebakjes per doos, gelijk aan de kernregel (8 per beloning, 3 per rit) en aan de oefenkaart op `land/fr-geo`. De eerste versie met 6 vakjes is vervangen.
 
-- **7a Doos leeg** (1536×1024) — `An open French pâtisserie box seen from straight above (top-down, no perspective): cream cardboard with a thin gold edge, lid folded open at the top edge, inside a 3×2 grid of six empty round paper cups with crisp white doilies, evenly spaced. No text, no logos. Transparent background.`
-- **7b Doos vol** (1536×1024) — `The exact same box, same top-down angle, size and position, now with one pastry in each cup: croissant, pain au chocolat, pink macaron, chocolate éclair, strawberry tartlet, madeleine. Transparent background.`
-- **7c–7h Gebakjes: niet genereren.** Ze zijn rond uitgesneden uit 7b, zodat ze exact in de vakjes van 7a passen. Oorspronkelijke prompt, alleen nodig voor extra gebakjes — `A single [GEBAKJE] seen from straight above, sitting in a round paper cup with a white doily, same light and style as the box. Transparent background, readable at 64 pixels.`
-
-| # | [GEBAKJE] |
-| --- | --- |
-| 7c | golden flaky croissant |
-| 7d | pain au chocolat with two chocolate stripes visible |
-| 7e | pastel pink macaron |
-| 7f | chocolate éclair with glossy icing |
-| 7g | small strawberry tartlet with glazed strawberries |
-| 7h | shell-shaped golden madeleine |
-
-Zelfde camera-afstand en licht voor 7c–7h.
+- **7a Doos leeg** (4×2 vakjes) en **7b Doos vol**: zelfde canvas 1717×916, vakjes vallen samen.
+- **7c–7j Gebakjes: niet genereren.** Rond uitgesneden uit 7b, volgorde: croissant, pain au chocolat, macaron, éclair, aardbeientaartje, chou à la crème, mille-feuille, madeleine.
+- `assets/art/fr/rewards/vakjes.json` geeft per vakje het midden en de diameter (als fractie), zodat de app elk gebakje precies op de lege doos legt.
 
 ## 8 · Gouden doos (Gold, Frankrijk) — transparant, 1024×1024
 
@@ -135,7 +124,7 @@ Volgt na de oefenkaart, afgestemd op de 11 hoofdstukken in `data/fr/items.draft.
 - Echte transparantie (geen nep-dambord), geen afgesneden ledematen of wielen
 - Geen tekst of logo's, behalve "France" op 6 en 9a, correct gespeld
 - Formaat en marge; leesbaar op klein formaat (iconen, baksels)
-- Serie-consistentie: zelfde licht, schaal en camera binnen 7a–7h
+- Serie-consistentie: zelfde licht, schaal en camera binnen 7a–7j
 
 Afgekeurd → ik zeg kort wat er mis is en geef een correctieprompt.
 

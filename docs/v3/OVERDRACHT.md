@@ -144,3 +144,16 @@ Open: fysieke iPad/Safari-hertest en visuele eigenaar/Hermes-review van het nieu
 De bestaande masters op `art/master` zijn gepind op `69c945c16a8bd34c8e45cffa96c12442c2672cb1`. TOPO_11 is daar geschrapt. TOPO_01–10 vervangen de Ronde 3-atlas, met gecontroleerde WebP 128/256 en broncoördinaten (Wikidata/UNESCO; vulkanen uit canonieke ITEMS). Alleen Reis en toetsresultaat bij Reliëf; geen decoratie op de leerkaart. Pisa/Florence zijn kleiner gemaakt tegen overlap, zonder hun ankers te verplaatsen. TOPO_12–16 staan uitsluitend in het manifest als `V3.1 uitstapjes`.
 
 Gerichte QA: Reis en toetsresultaat PASS, desktop 1440×900 en iPad 1080×810, inclusief offline laden, exacte projectie, bron-/exporthashes, alpha, 128/256-selectie, kaartschakelaar, onveranderde leergeometrie en overlapcontrole. Bewijs: `docs/qa/v3-stijlbeeld/final/landmarks.json` en de vier overschreven screenshots. `index.html` blijft byte-gelijk. Open: fysieke iPad/Safari; TOPO_12 toont geen zichtbare logo’s maar wel rood-zwarte tribunes, dus kleurreview blijft open en de master is niet als clubneutraal goedgekeurd. Geen merge of deploy.
+
+## Ronde 4: klein (lead designer, 12-11, review van `5d1ae77`)
+
+Ronde 3 en de landmarks zijn akkoord. Reis, Toets resultaat, Oefenen, Beloningen, het boek en Instellingen staan op het beoogde niveau. Bundel deze punten met de bevindingen van de iPad-test en Hermes; geen aparte ronde.
+
+1. **Landmarks:**
+   - ±40 px op desktop en ±34 px op iPad (nu ±24 px, te klein om te herkennen);
+   - nooit onder of over een pin of foutlabel: verschuif ze naar de rand van de plek, met een botsingscheck;
+   - de pin blijft altijd boven.
+2. **Kennismaking:**
+   - de focusring van het naamveld in violet, niet het V2-groen;
+   - het venster als glaspaneel in plaats van een witte plaat;
+   - Nino groter (±160 px hoog).

@@ -28,6 +28,7 @@ Lees voor V3-werk **alleen dit bestand en `docs/v3/OVERDRACHT.md`**. `DECISIONS.
 - **Doelbeelden:** `docs/v3/renders/R-*.webp`, met als laatste stand `docs/qa/v3-stijlbeeld/final/`.
 
 ## Werkwijze die credits spaart
+- **Elk pakket begint met een meetbaar doel en een stopcriterium** (wat bewijst dat het af is), afgeleid van de echte eis (bijv. stabiliteit op de iPad 9), niet van een geschatte streefwaarde.
 - **Eén punt per sessie.** Lees alleen de bestanden die je wijzigt.
 - **QA:** draai alleen de scripts voor het scherm dat je wijzigt. Het volledige pakket (`npm test` plus alle `qa-v3-*`) alleen bij de eindpin.
 - **Screenshots:** alleen desktop van het gewijzigde scherm, overschreven in `docs/qa/v3-stijlbeeld/final/`. Geen nieuwe mappen per stap, en geen iPad of telefoon tussendoor.

@@ -38,3 +38,10 @@
 - Offline blijft één HTML-bestand; geen externe bestanden.
 - Werk SPEC.md bij met de budgetten en de exportregel.
 - Overdracht onderaan dit bestand: de pin, de groottes voor en na, en de open punten.
+
+## Bijstelling (lead developer, 12-11)
+
+Na stap 3 staat de preview op 28,1 MB (was 53,7). Stap 4–7 zijn **geparkeerd**. Die 20 MB was een schatting, geen eis. Het echte criterium is stabiliteit op de iPad 9: geen herladen tabblad en geen hapering bij het wisselen van scherm. Dat had vooraf als doel en stopcriterium moeten staan.
+
+- **Stabiel op de iPad 9:** het dieet is af. AVIF komt eventueel bij de web-app (runtime-migratie), waar ook de base64-opslag verdwijnt.
+- **Niet stabiel:** alleen stap 6 (decoderen bij gebruik).

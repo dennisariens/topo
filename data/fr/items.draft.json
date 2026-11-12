@@ -1,0 +1,611 @@
+{
+ "status": "draft",
+ "land": "fr",
+ "bron": {
+  "document": "Schoolblad 'Topografie Frankrijk' (kolommen Plaatsen, Gebieden, Wateren)",
+  "bestand": "docs/v4/bron/ (origineel volgt; zie docs/v4/fr-inhoud.md)",
+  "transcriptie": "2026-11-12, van een foto van het blad; letterlijk te controleren tegen het origineel"
+ },
+ "velden": {
+  "code": "schoolcode zoals op het blad",
+  "blad": "plek op het blad: kolom › kopje › code",
+  "chapter": "1–11, zie chapters",
+  "aliases": "toegestane schrijfvarianten (zonder accenten); Franse namen niet automatisch goed"
+ },
+ "chapters": [
+  {
+   "nr": 1,
+   "id": "steden-1",
+   "titel": "Steden 1–5",
+   "blad": "Plaatsen › Belangrijke steden › nr. 1–5",
+   "items": [
+    "bordeaux",
+    "calais",
+    "le-havre",
+    "lille",
+    "lyon"
+   ]
+  },
+  {
+   "nr": 2,
+   "id": "steden-2",
+   "titel": "Steden 6–10",
+   "blad": "Plaatsen › Belangrijke steden › nr. 6–10",
+   "items": [
+    "marseille",
+    "metz",
+    "montpellier",
+    "nancy",
+    "nantes"
+   ]
+  },
+  {
+   "nr": 3,
+   "id": "steden-3",
+   "titel": "Steden 11–14",
+   "blad": "Plaatsen › Belangrijke steden › nr. 11–14",
+   "items": [
+    "nice",
+    "parijs",
+    "straatsburg",
+    "toulouse"
+   ]
+  },
+  {
+   "nr": 4,
+   "id": "eiland-gebergten",
+   "titel": "Eiland en gebergten",
+   "blad": "Gebieden › Eilanden a + Bergen en vulkanen b–d",
+   "items": [
+    "corsica",
+    "alpen",
+    "pyreneeen",
+    "vogezen"
+   ]
+  },
+  {
+   "nr": 5,
+   "id": "streken",
+   "titel": "Streken",
+   "blad": "Gebieden › Streken e–i",
+   "items": [
+    "bretagne",
+    "dordogne",
+    "elzas",
+    "normandie",
+    "provence"
+   ]
+  },
+  {
+   "nr": 6,
+   "id": "landen-1",
+   "titel": "Buurlanden a–e",
+   "blad": "Gebieden › Landen a–e",
+   "items": [
+    "andorra",
+    "belgie",
+    "duitsland",
+    "groot-brittannie",
+    "italie"
+   ]
+  },
+  {
+   "nr": 7,
+   "id": "landen-2",
+   "titel": "Buurlanden f–i",
+   "blad": "Gebieden › Landen f–i",
+   "items": [
+    "luxemburg",
+    "monaco",
+    "spanje",
+    "zwitserland"
+   ]
+  },
+  {
+   "nr": 8,
+   "id": "zeeen-1",
+   "titel": "Zeeën A–C",
+   "blad": "Wateren › Zeeën, oceanen A–C",
+   "items": [
+    "noordzee",
+    "atlantische-oceaan",
+    "middellandse-zee"
+   ]
+  },
+  {
+   "nr": 9,
+   "id": "zeeen-2",
+   "titel": "Zeeën D–F",
+   "blad": "Wateren › Zeeën, oceanen D–F",
+   "items": [
+    "het-kanaal",
+    "nauw-van-calais",
+    "golf-van-biskaje"
+   ]
+  },
+  {
+   "nr": 10,
+   "id": "rivieren-1",
+   "titel": "Rivieren G–I",
+   "blad": "Wateren › Rivieren G–I",
+   "items": [
+    "garonne",
+    "loire",
+    "maas"
+   ]
+  },
+  {
+   "nr": 11,
+   "id": "rivieren-2",
+   "titel": "Rivieren J–L",
+   "blad": "Wateren › Rivieren J–L",
+   "items": [
+    "rhone",
+    "rijn",
+    "seine"
+   ]
+  }
+ ],
+ "items": [
+  {
+   "id": "bordeaux",
+   "code": "1",
+   "nl": "Bordeaux",
+   "fr": "Bordeaux",
+   "type": "stad",
+   "chapter": 1,
+   "blad": "Plaatsen › Belangrijke steden › nr. 1",
+   "aliases": []
+  },
+  {
+   "id": "calais",
+   "code": "2",
+   "nl": "Calais",
+   "fr": "Calais",
+   "type": "stad",
+   "chapter": 1,
+   "blad": "Plaatsen › Belangrijke steden › nr. 2",
+   "aliases": []
+  },
+  {
+   "id": "le-havre",
+   "code": "3",
+   "nl": "Le Havre",
+   "fr": "Le Havre",
+   "type": "stad",
+   "chapter": 1,
+   "blad": "Plaatsen › Belangrijke steden › nr. 3",
+   "aliases": [
+    "Havre"
+   ]
+  },
+  {
+   "id": "lille",
+   "code": "4",
+   "nl": "Lille",
+   "fr": "Lille",
+   "type": "stad",
+   "chapter": 1,
+   "blad": "Plaatsen › Belangrijke steden › nr. 4",
+   "aliases": []
+  },
+  {
+   "id": "lyon",
+   "code": "5",
+   "nl": "Lyon",
+   "fr": "Lyon",
+   "type": "stad",
+   "chapter": 1,
+   "blad": "Plaatsen › Belangrijke steden › nr. 5",
+   "aliases": []
+  },
+  {
+   "id": "marseille",
+   "code": "6",
+   "nl": "Marseille",
+   "fr": "Marseille",
+   "type": "stad",
+   "chapter": 2,
+   "blad": "Plaatsen › Belangrijke steden › nr. 6",
+   "aliases": []
+  },
+  {
+   "id": "metz",
+   "code": "7",
+   "nl": "Metz",
+   "fr": "Metz",
+   "type": "stad",
+   "chapter": 2,
+   "blad": "Plaatsen › Belangrijke steden › nr. 7",
+   "aliases": []
+  },
+  {
+   "id": "montpellier",
+   "code": "8",
+   "nl": "Montpellier",
+   "fr": "Montpellier",
+   "type": "stad",
+   "chapter": 2,
+   "blad": "Plaatsen › Belangrijke steden › nr. 8",
+   "aliases": []
+  },
+  {
+   "id": "nancy",
+   "code": "9",
+   "nl": "Nancy",
+   "fr": "Nancy",
+   "type": "stad",
+   "chapter": 2,
+   "blad": "Plaatsen › Belangrijke steden › nr. 9",
+   "aliases": []
+  },
+  {
+   "id": "nantes",
+   "code": "10",
+   "nl": "Nantes",
+   "fr": "Nantes",
+   "type": "stad",
+   "chapter": 2,
+   "blad": "Plaatsen › Belangrijke steden › nr. 10",
+   "aliases": []
+  },
+  {
+   "id": "nice",
+   "code": "11",
+   "nl": "Nice",
+   "fr": "Nice",
+   "type": "stad",
+   "chapter": 3,
+   "blad": "Plaatsen › Belangrijke steden › nr. 11",
+   "aliases": []
+  },
+  {
+   "id": "parijs",
+   "code": "12",
+   "nl": "Parijs",
+   "fr": "Paris",
+   "type": "stad",
+   "chapter": 3,
+   "blad": "Plaatsen › Belangrijke steden › nr. 12",
+   "aliases": []
+  },
+  {
+   "id": "straatsburg",
+   "code": "13",
+   "nl": "Straatsburg",
+   "fr": "Strasbourg",
+   "type": "stad",
+   "chapter": 3,
+   "blad": "Plaatsen › Belangrijke steden › nr. 13",
+   "aliases": []
+  },
+  {
+   "id": "toulouse",
+   "code": "14",
+   "nl": "Toulouse",
+   "fr": "Toulouse",
+   "type": "stad",
+   "chapter": 3,
+   "blad": "Plaatsen › Belangrijke steden › nr. 14",
+   "aliases": []
+  },
+  {
+   "id": "corsica",
+   "code": "a",
+   "nl": "Corsica",
+   "fr": "Corse",
+   "type": "eiland",
+   "chapter": 4,
+   "blad": "Gebieden › Eilanden › a",
+   "aliases": []
+  },
+  {
+   "id": "alpen",
+   "code": "b",
+   "nl": "Alpen",
+   "fr": "Alpes",
+   "type": "gebergte",
+   "chapter": 4,
+   "blad": "Gebieden › Bergen en vulkanen › b",
+   "aliases": []
+  },
+  {
+   "id": "pyreneeen",
+   "code": "c",
+   "nl": "Pyreneeën",
+   "fr": "Pyrénées",
+   "type": "gebergte",
+   "chapter": 4,
+   "blad": "Gebieden › Bergen en vulkanen › c",
+   "aliases": [
+    "Pyreneeen"
+   ]
+  },
+  {
+   "id": "vogezen",
+   "code": "d",
+   "nl": "Vogezen",
+   "fr": "Vosges",
+   "type": "gebergte",
+   "chapter": 4,
+   "blad": "Gebieden › Bergen en vulkanen › d",
+   "aliases": []
+  },
+  {
+   "id": "bretagne",
+   "code": "e",
+   "nl": "Bretagne",
+   "fr": "Bretagne",
+   "type": "regio",
+   "chapter": 5,
+   "blad": "Gebieden › Streken › e",
+   "aliases": []
+  },
+  {
+   "id": "dordogne",
+   "code": "f",
+   "nl": "Dordogne",
+   "fr": "Dordogne",
+   "type": "regio",
+   "chapter": 5,
+   "blad": "Gebieden › Streken › f",
+   "aliases": []
+  },
+  {
+   "id": "elzas",
+   "code": "g",
+   "nl": "Elzas",
+   "fr": "Alsace",
+   "type": "regio",
+   "chapter": 5,
+   "blad": "Gebieden › Streken › g",
+   "aliases": []
+  },
+  {
+   "id": "normandie",
+   "code": "h",
+   "nl": "Normandië",
+   "fr": "Normandie",
+   "type": "regio",
+   "chapter": 5,
+   "blad": "Gebieden › Streken › h",
+   "aliases": [
+    "Normandie"
+   ]
+  },
+  {
+   "id": "provence",
+   "code": "i",
+   "nl": "Provence",
+   "fr": "Provence",
+   "type": "regio",
+   "chapter": 5,
+   "blad": "Gebieden › Streken › i",
+   "aliases": []
+  },
+  {
+   "id": "andorra",
+   "code": "a",
+   "nl": "Andorra",
+   "fr": "Andorre",
+   "type": "buurland",
+   "chapter": 6,
+   "blad": "Gebieden › Landen › a",
+   "aliases": []
+  },
+  {
+   "id": "belgie",
+   "code": "b",
+   "nl": "België",
+   "fr": "Belgique",
+   "type": "buurland",
+   "chapter": 6,
+   "blad": "Gebieden › Landen › b",
+   "aliases": [
+    "Belgie"
+   ]
+  },
+  {
+   "id": "duitsland",
+   "code": "c",
+   "nl": "Duitsland",
+   "fr": "Allemagne",
+   "type": "buurland",
+   "chapter": 6,
+   "blad": "Gebieden › Landen › c",
+   "aliases": []
+  },
+  {
+   "id": "groot-brittannie",
+   "code": "d",
+   "nl": "Groot-Brittannië",
+   "fr": "Grande-Bretagne",
+   "type": "buurland",
+   "chapter": 6,
+   "blad": "Gebieden › Landen › d",
+   "aliases": [
+    "Groot-Brittannie",
+    "Groot Brittannië",
+    "Groot Brittannie"
+   ]
+  },
+  {
+   "id": "italie",
+   "code": "e",
+   "nl": "Italië",
+   "fr": "Italie",
+   "type": "buurland",
+   "chapter": 6,
+   "blad": "Gebieden › Landen › e",
+   "aliases": [
+    "Italie"
+   ]
+  },
+  {
+   "id": "luxemburg",
+   "code": "f",
+   "nl": "Luxemburg",
+   "fr": "Luxembourg",
+   "type": "buurland",
+   "chapter": 7,
+   "blad": "Gebieden › Landen › f",
+   "aliases": []
+  },
+  {
+   "id": "monaco",
+   "code": "g",
+   "nl": "Monaco",
+   "fr": "Monaco",
+   "type": "buurland",
+   "chapter": 7,
+   "blad": "Gebieden › Landen › g",
+   "aliases": []
+  },
+  {
+   "id": "spanje",
+   "code": "h",
+   "nl": "Spanje",
+   "fr": "Espagne",
+   "type": "buurland",
+   "chapter": 7,
+   "blad": "Gebieden › Landen › h",
+   "aliases": []
+  },
+  {
+   "id": "zwitserland",
+   "code": "i",
+   "nl": "Zwitserland",
+   "fr": "Suisse",
+   "type": "buurland",
+   "chapter": 7,
+   "blad": "Gebieden › Landen › i",
+   "aliases": []
+  },
+  {
+   "id": "noordzee",
+   "code": "A",
+   "nl": "Noordzee",
+   "fr": "Mer du Nord",
+   "type": "zee",
+   "chapter": 8,
+   "blad": "Wateren › Zeeën, oceanen › A",
+   "aliases": []
+  },
+  {
+   "id": "atlantische-oceaan",
+   "code": "B",
+   "nl": "Atlantische Oceaan",
+   "fr": "Océan Atlantique",
+   "type": "zee",
+   "chapter": 8,
+   "blad": "Wateren › Zeeën, oceanen › B",
+   "aliases": [
+    "Atlantische oceaan"
+   ]
+  },
+  {
+   "id": "middellandse-zee",
+   "code": "C",
+   "nl": "Middellandse Zee",
+   "fr": "Mer Méditerranée",
+   "type": "zee",
+   "chapter": 8,
+   "blad": "Wateren › Zeeën, oceanen › C",
+   "aliases": []
+  },
+  {
+   "id": "het-kanaal",
+   "code": "D",
+   "nl": "Het Kanaal",
+   "fr": "La Manche",
+   "type": "zee",
+   "chapter": 9,
+   "blad": "Wateren › Zeeën, oceanen › D",
+   "aliases": [
+    "Kanaal"
+   ]
+  },
+  {
+   "id": "nauw-van-calais",
+   "code": "E",
+   "nl": "Nauw van Calais",
+   "fr": "Pas de Calais",
+   "type": "zee",
+   "chapter": 9,
+   "blad": "Wateren › Zeeën, oceanen › E",
+   "aliases": []
+  },
+  {
+   "id": "golf-van-biskaje",
+   "code": "F",
+   "nl": "Golf van Biskaje",
+   "fr": "Golfe de Gascogne",
+   "type": "zee",
+   "chapter": 9,
+   "blad": "Wateren › Zeeën, oceanen › F",
+   "aliases": []
+  },
+  {
+   "id": "garonne",
+   "code": "G",
+   "nl": "Garonne",
+   "fr": "Garonne",
+   "type": "rivier",
+   "chapter": 10,
+   "blad": "Wateren › Rivieren › G",
+   "aliases": []
+  },
+  {
+   "id": "loire",
+   "code": "H",
+   "nl": "Loire",
+   "fr": "Loire",
+   "type": "rivier",
+   "chapter": 10,
+   "blad": "Wateren › Rivieren › H",
+   "aliases": []
+  },
+  {
+   "id": "maas",
+   "code": "I",
+   "nl": "Maas",
+   "fr": "Meuse",
+   "type": "rivier",
+   "chapter": 10,
+   "blad": "Wateren › Rivieren › I",
+   "aliases": []
+  },
+  {
+   "id": "rhone",
+   "code": "J",
+   "nl": "Rhône",
+   "fr": "Rhône",
+   "type": "rivier",
+   "chapter": 11,
+   "blad": "Wateren › Rivieren › J",
+   "aliases": [
+    "Rhone"
+   ]
+  },
+  {
+   "id": "rijn",
+   "code": "K",
+   "nl": "Rijn",
+   "fr": "Rhin",
+   "type": "rivier",
+   "chapter": 11,
+   "blad": "Wateren › Rivieren › K",
+   "aliases": []
+  },
+  {
+   "id": "seine",
+   "code": "L",
+   "nl": "Seine",
+   "fr": "Seine",
+   "type": "rivier",
+   "chapter": 11,
+   "blad": "Wateren › Rivieren › L",
+   "aliases": []
+  }
+ ]
+}

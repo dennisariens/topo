@@ -79,7 +79,7 @@ Rijdende pose bestaat al (`nino-op-de-scooter.webp`). Nodig: 8 losse poses, **st
 Universeel klaar: 1a–1h (+ 1b-variant), 2a–2d, 3a–3b, met masters. Frankrijk: nog niets.
 Bijgewerkt na de V4-besluiten: Frankrijk heeft **11 hoofdstukken** (per kopje op het schoolblad) en de beloning is een **gebakjesdoos met 6 Franse gebakjes; 3 volle dozen = een Vespa-rit**. De bakkerijvitrine en de 5 regio-stempels uit de eerste versie vervallen.
 
-Volgorde Frankrijk: 6 → 7 → 8 → 9. Stempels en tegels per hoofdstuk (10) pas na de oefenkaart.
+Volgorde Frankrijk: 6 → 7a/7b → 8 → 9. (6, 7a, 7b en 7c–7h zijn klaar.) Stempels en tegels per hoofdstuk (10) pas na de oefenkaart.
 
 ## 6 · Hero Frankrijk — 1536×1024
 
@@ -95,7 +95,7 @@ De doos is de voortgangsbalk: elk vakje vult zich met een gebakje. Daarom moeten
 
 - **7a Doos leeg** (1536×1024) — `An open French pâtisserie box seen from straight above (top-down, no perspective): cream cardboard with a thin gold edge, lid folded open at the top edge, inside a 3×2 grid of six empty round paper cups with crisp white doilies, evenly spaced. No text, no logos. Transparent background.`
 - **7b Doos vol** (1536×1024) — `The exact same box, same top-down angle, size and position, now with one pastry in each cup: croissant, pain au chocolat, pink macaron, chocolate éclair, strawberry tartlet, madeleine. Transparent background.`
-- **7c–7h Gebakjes** (1024×1024, elk apart, bovenaanzicht zoals in de doos) — `A single [GEBAKJE] seen from straight above, sitting in a round paper cup with a white doily, same light and style as the box. Transparent background, readable at 64 pixels.`
+- **7c–7h Gebakjes: niet genereren.** Ze zijn rond uitgesneden uit 7b, zodat ze exact in de vakjes van 7a passen. Oorspronkelijke prompt, alleen nodig voor extra gebakjes — `A single [GEBAKJE] seen from straight above, sitting in a round paper cup with a white doily, same light and style as the box. Transparent background, readable at 64 pixels.`
 
 | # | [GEBAKJE] |
 | --- | --- |

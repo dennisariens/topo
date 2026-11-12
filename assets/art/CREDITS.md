@@ -26,3 +26,10 @@ Masters = originele ChatGPT-download, ongewijzigd en ongeschaald, met alfa (`ass
 | 6 | `assets/art/fr/hero/fr-hero.webp` | 1600×900 | `assets/art/masters/fr/hero/fr-hero.png` | 1672×941 | ChatGPT | 2026-11-12 | Goedgekeurd |
 | 6 (2:1) | `assets/art/fr/hero/fr-hero-2x1.webp` | 1600×800 | `assets/art/masters/fr/hero/fr-hero.png` | 1672×941 | ChatGPT, bijgesneden | 2026-11-12 | Goedgekeurd |
 | 7a | `assets/art/fr/rewards/doos-leeg.webp` | 1200×900 | `assets/art/masters/fr/rewards/doos-leeg.png` | 1448×1086 | ChatGPT | 2026-11-12 | Goedgekeurd; canvas niet bijgesneden zodat 7b exact past |
+| 7b | `assets/art/fr/rewards/doos-vol.webp` | 1200×900 | `assets/art/masters/fr/rewards/doos-vol.png` | 1448×1086 | ChatGPT | 2026-11-12 | Goedgekeurd; past op 7a (afwijking ≤7 px) |
+| 7c | `assets/art/fr/rewards/croissant.webp` | 256×256 | `assets/art/masters/fr/rewards/doos-vol.png` | uitsnede | Uit 7b gesneden | 2026-11-12 | Goedgekeurd |
+| 7d | `assets/art/fr/rewards/pain-au-chocolat.webp` | 256×256 | `assets/art/masters/fr/rewards/doos-vol.png` | uitsnede | Uit 7b gesneden | 2026-11-12 | Goedgekeurd |
+| 7e | `assets/art/fr/rewards/macaron.webp` | 256×256 | `assets/art/masters/fr/rewards/doos-vol.png` | uitsnede | Uit 7b gesneden | 2026-11-12 | Goedgekeurd |
+| 7f | `assets/art/fr/rewards/eclair.webp` | 256×256 | `assets/art/masters/fr/rewards/doos-vol.png` | uitsnede | Uit 7b gesneden | 2026-11-12 | Goedgekeurd |
+| 7g | `assets/art/fr/rewards/aardbeientaartje.webp` | 256×256 | `assets/art/masters/fr/rewards/doos-vol.png` | uitsnede | Uit 7b gesneden | 2026-11-12 | Goedgekeurd |
+| 7h | `assets/art/fr/rewards/madeleine.webp` | 256×256 | `assets/art/masters/fr/rewards/doos-vol.png` | uitsnede | Uit 7b gesneden | 2026-11-12 | Goedgekeurd |

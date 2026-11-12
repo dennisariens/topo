@@ -46,28 +46,39 @@ ul.items small{font-weight:500;opacity:.7}
 .progress i{display:block;height:100%;background:var(--violet);width:0}
 .result b{font-size:52px;color:var(--violet)}
 .muted{color:var(--soft);font-size:13px}
-/* kaart */
-.sea{fill:var(--sea)}
-.ctx-land{fill:var(--land);stroke:#a99f8b;stroke-width:.7}
-.fr{fill:var(--fr);stroke:#3f3a30;stroke-width:1.4}
-.borders{fill:none;stroke:#a99f8b;stroke-width:.7}
-.lakes{fill:var(--sea)}
-.ctx-rivers{fill:none;stroke:#bcdaee;stroke-width:.6}
-.t-area{fill:transparent;stroke:none}
-.t-river{fill:none;stroke:#1f6fae;stroke-width:2.3;stroke-linejoin:round;stroke-linecap:round}
-.t-city{fill:#1d1a14}
-.t-micro{fill:#1d1a14}
-.hl-area{fill:var(--violet);fill-opacity:.35;stroke:var(--violet);stroke-width:2}
-.hl-river{stroke:var(--violet);stroke-width:5}
-.hl-ring{fill:none;stroke:var(--violet);stroke-width:3}
-.ok-area{fill:var(--good);fill-opacity:.35;stroke:var(--good);stroke-width:2}
-.ok-river{stroke:var(--good);stroke-width:5}
-.ok-ring{fill:none;stroke:var(--good);stroke-width:3}
-.no-area{fill:var(--bad);fill-opacity:.25;stroke:var(--bad);stroke-width:1.5}
-.no-river{stroke:var(--bad);stroke-width:4}
-.no-ring{fill:none;stroke:var(--bad);stroke-width:2.5}
-.lbl{font:700 14px -apple-system,Helvetica,Arial,sans-serif;fill:var(--ink);stroke:#fff;stroke-width:3.5px;paint-order:stroke;pointer-events:none}
-.lbl.small{font-size:12px}
+/* kaart: zelfde kleuren als de Italie-kaart (v2): focusland warm, lesstof-landen perkament, context grijsgroen */
+.sea{fill:#bde4ee}
+.water{fill:#acd5dc;fill-opacity:.36;stroke:#71adb9;stroke-width:1.2}
+.ctx-land{fill:#dce4cf;stroke:#849685;stroke-width:1}
+.country{fill:#eee2c7;stroke:#a89d86;stroke-width:1.4}
+.fr,.island{fill:#efcd93;stroke:#9f8e76;stroke-width:1.8}
+.zone{fill:#dcad70;fill-opacity:.22;stroke:#b87e46;stroke-width:1.4;stroke-dasharray:6 5}
+.lakes{fill:#9fd0dd;stroke:#71adb9;stroke-width:.6}
+.ctx-rivers{fill:none;stroke:#8fc3d0;stroke-width:.8}
+.lineTarget{fill:none;stroke:#68a5b5;stroke-width:4.5;stroke-linecap:round;stroke-linejoin:round}
+.city{fill:#a44336;stroke:#fff;stroke-width:2.2}
+.microstate{fill:#934832;stroke:#fff;stroke-width:1.2}
+.ctxlbl{fill:#788277;font:700 12px -apple-system,Helvetica,Arial,sans-serif;letter-spacing:1.5px;pointer-events:none}
+/* hover (muis/pen): wat je zou aantikken kleurt oranje */
+.hov.country,.hov.zone,.hov.water,.hov.island{fill:#f7b078;fill-opacity:.76}
+.hov.lineTarget{stroke:#ed8f57}
+.hov.city,.hov.microstate{fill:#f89b49;stroke-width:3.5}
+svg#map{cursor:pointer}
+/* markeren: oranje zoals Italie; goed groen, fout rood */
+.hl-area{fill:#f19a55;fill-opacity:.65;stroke:#af4b23;stroke-width:3}
+.hl-river{stroke:#f19a55;stroke-width:9}
+.hl-ring{fill:none;stroke:#ab4d28;stroke-width:3.5}
+.ok-area{fill:var(--good);fill-opacity:.4;stroke:var(--good);stroke-width:2.5}
+.ok-river{stroke:var(--good);stroke-width:8}
+.ok-ring{fill:none;stroke:var(--good);stroke-width:3.5}
+.no-area{fill:var(--bad);fill-opacity:.3;stroke:var(--bad);stroke-width:2}
+.no-river{stroke:var(--bad);stroke-width:7}
+.no-ring{fill:none;stroke:var(--bad);stroke-width:3}
+.lbl{font:850 15px -apple-system,Helvetica,Arial,sans-serif;fill:#152e38;stroke:#fff;stroke-width:4px;paint-order:stroke;stroke-linejoin:round;pointer-events:none}
+.lbl.small{font-size:13px}
+.lbl.sea{fill:#116a83;font-style:italic}
+.lbl.region{fill:#684c35}
+.lbl.hovlbl{fill:#7a3a12}
 .tap{fill:none;stroke:var(--ink);stroke-width:1.5;stroke-dasharray:3 3;pointer-events:none}
 @media (prefers-reduced-motion:no-preference){.pulse{animation:pulse 1.2s ease-in-out infinite}@keyframes pulse{50%{opacity:.45}}}
 footer{padding:0 18px 18px;color:var(--soft);font-size:12px}
@@ -156,22 +167,29 @@ const save=()=>{try{localStorage.setItem(KEY,JSON.stringify(S))}catch(e){}};
 // ---------- kaart tekenen ----------
 const [,,W,H]=MAP.viewBox; svg.setAttribute('viewBox',`0 0 ${W} ${H}`);
 const el=(n,a,p)=>{const e=document.createElementNS(NS,n);for(const k in a)e.setAttribute(k,a[k]);(p||svg).appendChild(e);return e};
-el('rect',{x:0,y:0,width:W,height:H,class:'sea'});
+const AREA_CLASS={buurland:'country',zee:'water',regio:'zone',gebergte:'zone',eiland:'island'};
+const NODE={}, DOT={}, SMALL=new Set();
+const layer=()=>el('g',{});
+el('rect',{x:-50,y:-50,width:W+100,height:H+100,class:'sea'});
+const gWater=layer();
 el('path',{d:MAP.context.land,class:'ctx-land'});
+const gCountry=layer();
 el('path',{d:MAP.context.france,class:'fr'});
+const gIsland=layer(), gZone=layer();
 el('path',{d:MAP.context.lakes,class:'lakes'});
+for(const l of MAP.context.labels){const t=el('text',{x:l.x,y:l.y,class:'ctxlbl','text-anchor':'middle'});t.textContent=l.t;}
 el('path',{d:MAP.context.rivers,class:'ctx-rivers'});
-el('path',{d:MAP.context.borders,class:'borders'});
-const gTargets=el('g',{}), gHL=el('g',{}), gMarks=el('g',{}), gLbl=el('g',{});
-const NODE={}, SMALL=new Set();
-// vlakken: onzichtbaar, alleen voor de hit-test (zoals op het schoolblad: geen streek- of zeegrenzen)
+const gRiver=layer(), gHL=layer(), gMarks=layer(), gLbl=layer();
+const gTargets=gZone;
+const GROUP={country:gCountry,water:gWater,zone:gZone,island:gIsland};
+// vlakken: zichtbaar zoals bij Italie (zeeen, landen, gestippelde zones voor streken en gebergten)
+for(const it of ITEMS){const m=MAP.items[it.id],c=AREA_CLASS[it.type];
+  if(c) NODE[it.id]=el('path',{d:m.d,class:c,'data-id':it.id,'fill-rule':'evenodd'},GROUP[c]);}
 for(const it of ITEMS){const m=MAP.items[it.id];
-  if(AREA(it.type)) NODE[it.id]=el('path',{d:m.d,class:'t-area','data-id':it.id,'fill-rule':'evenodd'},gTargets);}
+  if(it.type==='rivier') NODE[it.id]=el('path',{d:m.d,class:'lineTarget','data-id':it.id},gRiver);}
 for(const it of ITEMS){const m=MAP.items[it.id];
-  if(it.type==='rivier') NODE[it.id]=el('path',{d:m.d,class:'t-river','data-id':it.id},gMarks);}
-for(const it of ITEMS){const m=MAP.items[it.id];
-  if(it.type==='stad') el('circle',{cx:m.x,cy:m.y,r:3.6,class:'t-city'},gMarks);
-  else if(m.x!=null) el('path',{d:`M${m.x} ${m.y-4.5}l4.5 4.5l-4.5 4.5l-4.5 -4.5z`,class:'t-micro'},gMarks);}
+  if(it.type==='stad') DOT[it.id]=el('circle',{cx:m.x,cy:m.y,r:5.5,class:'city','data-id':it.id},gMarks);
+  else if(m.x!=null) DOT[it.id]=el('path',{d:`M${m.x} ${m.y-6}l6 6l-6 6l-6 -6z`,class:'microstate','data-id':it.id},gMarks);}
 
 for(const it of ITEMS) if(AREA(it.type)){const b=NODE[it.id].getBBox(); if(Math.hypot(b.width,b.height)<80) SMALL.add(it.id);}
 // rivierpunten voor afstandsberekening
@@ -253,14 +271,14 @@ function openPicker(list,x,y,named,cb){
   const base=ang[idx[0]]??-Math.PI/2, R=S*0.34, br=S*0.06;
   const pos={}; idx.forEach((i,j)=>{const t=base+j*2*Math.PI/n;pos[i]=[x+Math.cos(t)*R,y+Math.sin(t)*R]});
   const sw=v=>`stroke-width="${v}" vector-effect="non-scaling-stroke"`;
-  let h=`<rect x="${x0-S}" y="${y0-S}" width="${3*S}" height="${3*S}" class="sea"/><path d="${MAP.context.land}" class="ctx-land" ${sw(1)}/><path d="${MAP.context.france}" class="fr" ${sw(1.6)}/><path d="${MAP.context.lakes}" class="lakes"/><path d="${MAP.context.rivers}" class="ctx-rivers" ${sw(1)}/><path d="${MAP.context.borders}" class="borders" ${sw(1)}/>`;
-  for(const it of ITEMS){const m=MAP.items[it.id];if(it.type==='rivier')h+=`<path d="${m.d}" class="t-river" ${sw(2.5)}/>`;}
+  let h=`<rect x="${x0-S}" y="${y0-S}" width="${3*S}" height="${3*S}" class="sea"/>${ITEMS.filter(i=>AREA_CLASS[i.type]==='water').map(i=>`<path d="${MAP.items[i.id].d}" class="water" ${sw(1)}/>`).join('')}<path d="${MAP.context.land}" class="ctx-land" ${sw(1)}/>${ITEMS.filter(i=>AREA_CLASS[i.type]==='country').map(i=>`<path d="${MAP.items[i.id].d}" class="country" ${sw(1.4)}/>`).join('')}<path d="${MAP.context.france}" class="fr" ${sw(1.8)}/>${ITEMS.filter(i=>AREA_CLASS[i.type]==='zone').map(i=>`<path d="${MAP.items[i.id].d}" class="zone" fill-rule="evenodd" ${sw(1.4)}/>`).join('')}<path d="${MAP.context.lakes}" class="lakes"/><path d="${MAP.context.rivers}" class="ctx-rivers" ${sw(1)}/>`;
+  for(const it of ITEMS){const m=MAP.items[it.id];if(it.type==='rivier')h+=`<path d="${m.d}" class="lineTarget" ${sw(3.5)}/>`;}
   ns.forEach(c=>{const t=BYID[c.id].type,m=MAP.items[c.id];
     if(AREA(t)&&m.x==null)h+=`<path d="${m.d}" class="pk-area" fill-rule="evenodd" ${sw(2)}/>`;
     if(t==='rivier')h+=`<path d="${m.d}" class="pk-river" ${sw(5)}/>`;});
   for(const it of ITEMS){const m=MAP.items[it.id];
-    if(it.type==='stad')h+=`<circle cx="${m.x}" cy="${m.y}" r="${4.5*k}" class="t-city"/>`;
-    else if(m.x!=null)h+=`<path d="M${m.x} ${m.y-5*k}l${5*k} ${5*k}l${-5*k} ${5*k}l${-5*k} ${-5*k}z" class="t-micro"/>`;}
+    if(it.type==='stad')h+=`<circle cx="${m.x}" cy="${m.y}" r="${5.5*k}" class="city" ${sw(2)}/>`;
+    else if(m.x!=null)h+=`<path d="M${m.x} ${m.y-6*k}l${6*k} ${6*k}l${-6*k} ${6*k}l${-6*k} ${-6*k}z" class="microstate" ${sw(1.2)}/>`;}
   ns.forEach((c,i)=>{const [bx,by]=pos[i],[ax,ay]=c.a,d=Math.hypot(ax-bx,ay-by)||1,ex=bx+(ax-bx)/d*br,ey=by+(ay-by)/d*br;
     const rr=7*k,ux=(ax-bx)/d,uy=(ay-by)/d;
     h+=`<line x1="${ex}" y1="${ey}" x2="${ax-ux*rr}" y2="${ay-uy*rr}" class="pk-lead" ${sw(2)}/><circle cx="${ax}" cy="${ay}" r="${rr}" fill="none" stroke="#6a4fd6" ${sw(2.5)}/>`;
@@ -280,19 +298,20 @@ document.addEventListener('keydown',e=>{if(e.key==='Escape'&&!document.getElemen
 function clearMarks(){gHL.textContent='';gLbl.textContent='';}
 function mark(id,kind,pulse){ // kind: hl | ok | no
   const it=BYID[id], m=MAP.items[id], c=pulse?' pulse':'';
-  if(it.type==='stad') el('circle',{cx:m.x,cy:m.y,r:11,class:kind+'-ring'+c},gHL);
-  else if(it.type==='rivier') el('path',{d:m.d,class:'t-river '+kind+'-river'+c},gHL);
+  if(it.type==='stad') el('circle',{cx:m.x,cy:m.y,r:12,class:kind+'-ring'+c},gHL);
+  else if(it.type==='rivier') el('path',{d:m.d,class:'lineTarget '+kind+'-river'+c},gHL);
   else { el('path',{d:m.d,class:kind+'-area'+c,'fill-rule':'evenodd'},gHL);
     if(m.x!=null) el('circle',{cx:m.x,cy:m.y,r:11,class:kind+'-ring'+c},gHL);
     else if(SMALL.has(id)) el('circle',{cx:m.lx,cy:m.ly,r:16,class:kind+'-ring'+c},gHL); }
 }
 // alleen de plek van de naam wordt verschoven, nooit de plek zelf
 const LBL={'groot-brittannie':[-20,-18,'middle'],'atlantische-oceaan':[4,-16,'start'],'nauw-van-calais':[-10,-14,'end'],'vogezen':[14,-8,'start'],'seine':[-34,8,'middle'],'nancy':[0,0,'start']};
-function label(id){const it=BYID[id],m=MAP.items[id];
-  let [x,y]=it.type==="stad"?[m.x+7,m.y-6]:m.x!=null?[m.x+7,m.y+16]:[m.lx,m.ly];
+function label(id,extra){const it=BYID[id],m=MAP.items[id];
+  let [x,y]=it.type==="stad"?[m.x+8,m.y-7]:m.x!=null?[m.x+8,m.y+18]:[m.lx,m.ly];
   let anchor=it.type==='stad'||m.x!=null?'start':'middle';
   if(LBL[id]){x+=LBL[id][0];y+=LBL[id][1];anchor=LBL[id][2];}
-  const t=el('text',{x,y,class:'lbl'+(it.type==='stad'?' small':''),'text-anchor':anchor},gLbl);t.textContent=it.nl;}
+  const cls='lbl'+(it.type==='stad'?' small':'')+(it.type==='zee'?' sea':'')+(it.type==='regio'||it.type==='gebergte'?' region':'')+(extra?' '+extra:'');
+  const t=el('text',{x,y,class:cls,'text-anchor':anchor},gLbl);t.textContent=it.nl;return t;}
 
 // ---------- selectie ----------
 const chapterItems=()=>S.chapter==='alles'?ITEMS.map(i=>i.id):S.chapter==='fouten'?Object.keys(S.mistakes).filter(k=>S.mistakes[k]>0):CH.find(c=>c.id===S.chapter).items;
@@ -432,6 +451,24 @@ function toetsEnd(){
   panel.querySelector('#again').onclick=()=>start('toets');
   const f=panel.querySelector('#fout'); if(f) f.onclick=()=>{S.chapter='fouten';save();start('wijs');};
 }
+
+// ---------- hover (muis of pen): oranje zoals Italie; bij Leren ook de naam ----------
+let hovId=null, hovLbl=null, hovRaf=0;
+function hoverAt(x,y){const u=unitsPerPx();let best=null,bd=1e9;
+  for(const it of ITEMS){const m=MAP.items[it.id];
+    if(m.x!=null){const d=Math.hypot(x-m.x,y-m.y)/u; if(d<=12&&d<bd){bd=d;best=it.id;}}
+    else if(it.type==='rivier'){const d=riverDist(it.id,x,y)/u; if(d<=10&&d<bd){bd=d;best=it.id;}}}
+  if(best) return best;
+  const ins=ITEMS.filter(it=>AREA_CLASS[it.type]&&inFill(it.id,x,y)).map(it=>[it.id,NODE[it.id].getBBox()]);
+  if(!ins.length) return null; ins.sort((a,b)=>a[1].width*a[1].height-b[1].width*b[1].height); return ins[0][0];}
+function setHover(id){ if(id===hovId) return;
+  if(hovId){(DOT[hovId]||NODE[hovId]).classList.remove('hov');}
+  if(hovLbl){hovLbl.remove();hovLbl=null;}
+  hovId=id; if(!id) return; (DOT[id]||NODE[id]).classList.add('hov');
+  if(mode==='leren') hovLbl=label(id,'hovlbl'); }
+svg.addEventListener('pointermove',e=>{ if(e.pointerType==='touch') return; const cx=e.clientX,cy=e.clientY;
+  cancelAnimationFrame(hovRaf); hovRaf=requestAnimationFrame(()=>{const p=toSvg(cx,cy); setHover(hoverAt(p.x,p.y));}); });
+svg.addEventListener('pointerleave',()=>{cancelAnimationFrame(hovRaf);setHover(null);});
 
 // ---------- invoer ----------
 svg.addEventListener('click',e=>{ if(!onTap) return; const p=toSvg(e.clientX,e.clientY); onTap(p.x,p.y); });

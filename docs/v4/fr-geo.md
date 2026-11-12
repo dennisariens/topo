@@ -35,7 +35,15 @@ viewBox = 0 0 1000 796.4
 
 Elke zone staat ook in `data/fr/map.json` bij het item (`zone`).
 
-Op de kaart zelf staan, net als op het schoolblad, alleen de landsgrenzen, de rivieren en de stippen. Streken, gebergten en zeeën zijn onzichtbare vlakken voor het aanwijzen, en worden alleen gekleurd bij leren en bij feedback.
+In de oefenkaart staan dezelfde kleuren als in de Italië-kaart (v2):
+- Frankrijk warm oranje (`#efcd93`);
+- landen uit de lesstof in perkament (`#eee2c7`);
+- overige landen grijsgroen (`#dce4cf`), met een klein naamlabel (NEDERLAND, OOSTENRIJK, TSJECHIË, PORTUGAL);
+- zeeën lichtblauw met een fijne rand;
+- streken en gebergten als gestippelde zones;
+- rivieren dik blauw (`#68a5b5`) en steden roodbruin met een witte rand.
+
+Met de muis of pen kleurt wat je zou aantikken oranje. Bij Leren verschijnt dan ook de naam.
 
 ## Geometriecheck
 

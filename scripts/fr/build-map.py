@@ -206,7 +206,20 @@ for it in items:
     out_items[it["id"]] = rec
 
 france = P(countries["France"]).intersection(FRAME)
-others = P(LAND.difference(countries["France"])).intersection(FRAME)
+QUIZ_COUNTRIES = ["Andorra", "Belgium", "Germany", "United Kingdom", "Italy", "Luxembourg", "Monaco", "Spain", "Switzerland"]
+others = P(LAND.difference(unary_union([countries[c] for c in ["France", *QUIZ_COUNTRIES]]))).intersection(FRAME)
+# Landen buiten de lesstof: alleen context, met een klein naamlabel (zoals bij Italie)
+CONTEXT_NL = {"Netherlands": "NEDERLAND", "Austria": "OOSTENRIJK", "Czechia": "TSJECHIË", "Slovenia": "SLOVENIË",
+              "Croatia": "KROATIË", "Portugal": "PORTUGAL", "Ireland": "IERLAND", "Bosnia and Herzegovina": "BOSNIË",
+              "Liechtenstein": None, "San Marino": None, "Vatican": None}
+ctx_labels = []
+for name, nl in CONTEXT_NL.items():
+    if nl and name in countries:
+        vis = P(countries[name]).intersection(FRAME.buffer(-12))
+        if vis.area > 600:
+            big = max(vis.geoms, key=lambda g: g.area) if vis.geom_type == "MultiPolygon" else vis
+            c = big.representative_point()
+            ctx_labels.append({"t": nl, "x": round(c.x, 1), "y": round(c.y, 1)})
 ctx_rivers = [shape(f["geometry"]) for f in rivers_all
               if shape(f["geometry"]).intersects(EXT) and f["properties"].get("scalerank", 99) <= 7
               and f["properties"].get("name") not in {"Garonne", "Loire", "Maas", "Meuse", "Rhône", "Rhone",
@@ -219,7 +232,7 @@ data = {
     "projectie": {"soort": "equirectangulair (affien lon/lat)", "x": f"{K:.6f} * (lon - ({LON0}))",
                   "y": f"{KY:.6f} * ({LAT1} - lat)", "middenbreedte": PHI,
                   "uitsnede": {"lon": [LON0, LON1], "lat": [LAT0, LAT1]}},
-    "context": {"france": d_of(france), "land": d_of(others), "lakes": d_of(P(lakes).intersection(FRAME)),
+    "context": {"france": d_of(france), "land": d_of(others), "labels": ctx_labels, "lakes": d_of(P(lakes).intersection(FRAME)),
                 "borders": d_of(borders),
                 "rivers": d_of(P(unary_union(ctx_rivers).intersection(EXT)).intersection(FRAME))},
     "items": out_items,

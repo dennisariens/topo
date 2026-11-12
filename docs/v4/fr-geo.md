@@ -39,9 +39,11 @@ In de oefenkaart staan dezelfde kleuren als in de Italië-kaart (v2):
 - Frankrijk warm oranje (`#efcd93`);
 - landen uit de lesstof in perkament (`#eee2c7`);
 - overige landen grijsgroen (`#dce4cf`), met een klein naamlabel (NEDERLAND, OOSTENRIJK, TSJECHIË, PORTUGAL);
-- zeeën lichtblauw met een fijne rand;
+- zee in één egale kleur, zonder getekende zonegrenzen (de zeevlakken zijn alleen voor aanwijzen en hover);
 - streken en gebergten als gestippelde zones;
 - rivieren dik blauw (`#68a5b5`) en steden roodbruin met een witte rand.
+
+De kaart is op het kader afgesneden. Het land loopt tot de rand door, en buiten het kader staat geen zee, dus geen enkel land lijkt aan een niet-bestaande kust te liggen.
 
 Met de muis of pen kleurt wat je zou aantikken oranje. Bij Leren verschijnt dan ook de naam.
 

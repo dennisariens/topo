@@ -3,12 +3,14 @@
 // index.html itself never contains V3 or preview code.
 import {readFileSync,writeFileSync} from 'node:fs';
 import {createHash} from 'node:crypto';
+import {project} from './geography/lakes.mjs';
 const root=new URL('../',import.meta.url),read=p=>readFileSync(new URL(p,root),'utf8');
 const html=read('index.html');
 if(html.includes('NINO_DESIGN_PREVIEW')||html.includes('TOPO_V3'))throw Error('index.html must not contain preview or V3 code');
 // Demo skill history per place (V3.0 Voortgang reads the V2 kennis-paspoort): the item ids per chapter come from
 // index.html (ITEMS, GROUPS) with the V2 chapter rule; completed chapters read "Goed onthouden", started ones "Op weg".
-const CHAPTER_ITEMS=(()=>{const items=eval(html.match(/const ITEMS=(\[[\s\S]*?\]);/)[1]),groups=eval('('+html.match(/const GROUPS=(\{[\s\S]*?\});/)[1]+')');
+const canonicalItems=JSON.parse(html.match(/const ITEMS=(\[[\s\S]*?\]);/)[1]);
+const CHAPTER_ITEMS=(()=>{const items=canonicalItems,groups=eval('('+html.match(/const GROUPS=(\{[\s\S]*?\});/)[1]+')');
  const ids=['city1','city2','city3','city4','islands','mountains','volcanoes','regions','countries','seas','rivers'];
  return Object.fromEntries(ids.map(id=>[id,items.filter(i=>id.startsWith('city')?i.kind==='city'&&Number(i.code)>(Number(id.slice(-1))-1)*6&&Number(i.code)<=Number(id.slice(-1))*6:(groups[id]||[]).includes(i.id)).map(i=>i.id)]));})();
 const states=`(function(){
@@ -75,9 +77,15 @@ const render=JSON.parse(read('assets/v3/render/manifest.json')),A=Object.fromEnt
 for(const id of ['SCENE-ROMA','SCENE-VENEZIA','SCENE-NAPOLI'])scenes[A[id].chapter]={mini:uri(A[id].export_mini,id),kop:uri(A[id].export_kop,id)};
 const v3art={bg:{bg01:uri(A['BG-01'].export,'BG-01'),bg02:uri(A['BG-02'].export,'BG-02'),bg03:uri(A['BG-03'].export,'BG-03')},portrait:uri(A['NINO-PORTRET'].export,'NINO-PORTRET'),poses:Object.fromEntries(render.assets.filter(a=>a.universalMaster && !['NINO-PASPOORT','VESPA-ZIJ','VESPA-ICOON','NINO-DENKT','NINO-WIJST-RECHTS'].includes(a.id)).map(a=>[a.id,{src:uri(a.export,a.id),size:a.export.size}])),vespa:uri(A['VESPA-ZIJ'].export,'VESPA-ZIJ'),
  icons:Object.fromEntries(['slice','pizza','vespa','gold','stamp','postcard'].map(k=>[k,k==='vespa'?uri(A['VESPA-ICOON'].export,'VESPA-ICOON'):uri(A['IC-'+k].exports['96'],'IC-'+k)]))};
-const landmarks=JSON.parse(read('assets/v3/landmarks/manifest.json')),landmarkBytes=readFileSync(new URL(landmarks.path,root));
-if(createHash('sha256').update(landmarkBytes).digest('hex')!==landmarks.sha256)throw Error('Landmark atlas differs from manifest');
-v3art.landmarks={...landmarks,src:'data:image/png;base64,'+landmarkBytes.toString('base64')};
+const landmarks=JSON.parse(read('assets/v3/landmarks/manifest.json'));
+const activeLandmarks=landmarks.items.filter(a=>a.ui);
+if(activeLandmarks.map(a=>a.id).join(',')!==Array.from({length:10},(_,i)=>'TOPO_'+String(i+1).padStart(2,'0')).join(','))throw Error('Expected only TOPO_01–10 in UI');
+v3art.landmarks={source:landmarks.source,items:activeLandmarks.map(a=>{
+ const item=a.location.canonicalItemId&&canonicalItems.find(i=>i.id===a.location.canonicalItemId);
+ const coordinates=item?[item.lon,item.lat]:a.location.coordinates;
+ if(!coordinates?.every(Number.isFinite))throw Error('Missing geographic point: '+a.id);
+ return {id:a.id,label:a.label,paintSize:a.paintSize,coordinates,point:project(coordinates),exports:Object.fromEntries(Object.entries(a.exports).map(([size,e])=>[size,{...e,src:uri(e,a.id+' '+size)}]))};
+})};
 if(Object.keys(scenes).length!==11)throw Error('Expected 11 chapter scenes, found '+Object.keys(scenes).length);
 // Relief z8 render layers (v3/relief-z8 @ 2a7b0cf), checked against their provenance SHA256, embedded as data URIs.
 const prov=JSON.parse(read('assets/discovery/terrain-z8-render-provenance.json')),reliefFiles={terrain:JSON.parse(read('assets/v3/relief-r2-provenance.json')).output,...Object.fromEntries(prov.pipeline.decorative_layers.map(l=>[l.role,l]))},relief={};

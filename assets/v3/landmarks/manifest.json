@@ -1,74 +1,1072 @@
 {
-  "version": 1,
-  "status": "nieuw artwork; visuele eigenaar/Hermes-review open",
-  "source": "OpenAI image generation, 2026-11-11; one transparent 5×2 sprite atlas, original bytes retained",
-  "path": "assets/v3/landmarks/italia-landmarks-atlas.png",
-  "sha256": "17331192b1946e499aafc5608e203bdd239b0c25101d6c78006890824f80c39e",
-  "width": 1983,
-  "height": 793,
-  "columns": 5,
-  "rows": 2,
-  "placement": "Existing ITEMS px/py, exact unmodified city/volcano anchor. City landmarks represent their city at this map scale, not building-survey coordinates. Native projection and DEM unchanged. Reis and exam result only.",
+  "version": 2,
+  "source": {
+    "repository": "dennisariens/topo",
+    "ref": "art/master",
+    "commit": "69c945c16a8bd34c8e45cffa96c12442c2672cb1",
+    "path": "assets/art/masters/italia/landmarks/MANIFEST.json",
+    "sha256": "8b3a3b773589ef607d309e0d9e6429eab92b651f84209ebcfb29f85dd14a74cf"
+  },
+  "pipeline": {
+    "script": "scripts/build-v3-landmarks.py",
+    "pillow": "13.0.0",
+    "resize": "Lanczos; preserve full frame and alpha; no recolouring or crop",
+    "webp": {
+      "sizes": [
+        128,
+        256
+      ],
+      "quality": 88,
+      "method": 6,
+      "exact": true
+    }
+  },
+  "scope": "Only TOPO_01–10 on Reis/toetsresultaat in relief mode; never in lessons.",
+  "excluded": [
+    {
+      "id": "TOPO_11",
+      "reason": "Ferrari brand; removed from art/master."
+    }
+  ],
+  "supersedes": {
+    "path": "assets/v3/landmarks/italia-landmarks-atlas.png",
+    "commit": "23133b7a43ed2c68c91c7c9a8a10772e4c984efb"
+  },
   "items": [
     {
-      "id": "colosseum",
-      "label": "Colosseum bij Rome",
-      "anchor": "city-9",
-      "cell": 0
+      "id": "TOPO_01",
+      "label": "Colosseum Rome",
+      "status": "V3.0 reliëfkaart",
+      "ui": true,
+      "master": {
+        "path": "assets/art/masters/italia/landmarks/TOPO_01_Colosseum_Rome.png",
+        "sha256": "196728cca1ab9fa1861a0faaca8df4252b321a1524e9e89a8a0ea3bcd911d823",
+        "bytes": 877587,
+        "size": [
+          1024,
+          1024
+        ],
+        "alpha": true
+      },
+      "paintSize": 34,
+      "location": {
+        "feature": "Colosseum",
+        "coordinates": [
+          12.492222222222,
+          41.890277777778
+        ],
+        "source": {
+          "dataset": "Wikidata P625 (CC0)",
+          "entity": "Q10285",
+          "revision": 2551136894,
+          "url": "https://www.wikidata.org/w/index.php?title=Q10285&oldid=2551136894",
+          "retrieved": "2026-11-12",
+          "entityResponseSha256": "f946b691ede96896f6aa3f44ab038949c11bf88c360fc785ea3332c39f49b95d",
+          "claim": {
+            "mainsnak": {
+              "snaktype": "value",
+              "property": "P625",
+              "hash": "bc04e762c09eea2e8b5e14b5c7b4c30b7f350329",
+              "datavalue": {
+                "value": {
+                  "latitude": 41.890277777778,
+                  "longitude": 12.492222222222,
+                  "altitude": null,
+                  "precision": 0.000277778,
+                  "globe": "http://www.wikidata.org/entity/Q2"
+                },
+                "type": "globecoordinate"
+              },
+              "datatype": "globe-coordinate"
+            },
+            "type": "statement",
+            "id": "q10285$BB0E1322-8805-4748-9544-5B050532C0F9",
+            "rank": "normal",
+            "references": [
+              {
+                "hash": "fa278ebfc458360e5aed63d5058cca83c46134f1",
+                "snaks": {
+                  "P143": [
+                    {
+                      "snaktype": "value",
+                      "property": "P143",
+                      "hash": "e4f6d9441d0600513c4533c672b5ab472dc73694",
+                      "datavalue": {
+                        "value": {
+                          "entity-type": "item",
+                          "numeric-id": 328,
+                          "id": "Q328"
+                        },
+                        "type": "wikibase-entityid"
+                      },
+                      "datatype": "wikibase-item"
+                    }
+                  ]
+                },
+                "snaks-order": [
+                  "P143"
+                ]
+              }
+            ]
+          }
+        },
+        "note": "Monument location, not Rome city centre."
+      },
+      "exports": {
+        "128": {
+          "path": "assets/v3/landmarks/exports/TOPO_01-128.webp",
+          "sha256": "dfd0204c17d5cbf91e48179d3473a221171ce336b012f9f5e409f5e8b4b45393",
+          "bytes": 6470,
+          "size": [
+            128,
+            128
+          ],
+          "alpha": true,
+          "paintBounds": [
+            12,
+            29,
+            116,
+            99
+          ]
+        },
+        "256": {
+          "path": "assets/v3/landmarks/exports/TOPO_01-256.webp",
+          "sha256": "bc5daf04d039f6784d73e89aae2ee769c69cd0b42c000607006ab74c0638b684",
+          "bytes": 18042,
+          "size": [
+            256,
+            256
+          ],
+          "alpha": true,
+          "paintBounds": [
+            25,
+            58,
+            231,
+            198
+          ]
+        }
+      }
     },
     {
-      "id": "pisa",
-      "label": "Toren van Pisa",
-      "anchor": "city-8",
-      "cell": 1
+      "id": "TOPO_02",
+      "label": "Leaning Tower Pisa",
+      "status": "V3.0 reliëfkaart",
+      "ui": true,
+      "master": {
+        "path": "assets/art/masters/italia/landmarks/TOPO_02_Leaning_Tower_Pisa.png",
+        "sha256": "7875f1797d8f1aa3d27023ec82506b25c2f8c871e4770e140433e7edb0b64c13",
+        "bytes": 574513,
+        "size": [
+          1024,
+          1024
+        ],
+        "alpha": true
+      },
+      "paintSize": 26,
+      "location": {
+        "feature": "Leaning Tower of Pisa",
+        "coordinates": [
+          10.396624,
+          43.72301
+        ],
+        "source": {
+          "dataset": "Wikidata P625 (CC0)",
+          "entity": "Q39054",
+          "revision": 2547401969,
+          "url": "https://www.wikidata.org/w/index.php?title=Q39054&oldid=2547401969",
+          "retrieved": "2026-11-12",
+          "entityResponseSha256": "23d780c094bc0b0e307c1c9db849918c1c9a35f6216ded708d327b2f124922f9",
+          "claim": {
+            "mainsnak": {
+              "snaktype": "value",
+              "property": "P625",
+              "hash": "f0f324d137c4debdb4e77285be047a7068c308d0",
+              "datavalue": {
+                "value": {
+                  "latitude": 43.72301,
+                  "longitude": 10.396624,
+                  "altitude": null,
+                  "precision": 1e-06,
+                  "globe": "http://www.wikidata.org/entity/Q2"
+                },
+                "type": "globecoordinate"
+              },
+              "datatype": "globe-coordinate"
+            },
+            "type": "statement",
+            "id": "q39054$2B2F6431-0AF3-4014-98B4-E7225300AE48",
+            "rank": "normal"
+          }
+        },
+        "note": "Bell tower location, not Pisa city centre."
+      },
+      "exports": {
+        "128": {
+          "path": "assets/v3/landmarks/exports/TOPO_02-128.webp",
+          "sha256": "2f571f751dc9a4bb00f22cbe2e195c271b0261f3d032716a4d8b86530fd3623b",
+          "bytes": 4750,
+          "size": [
+            128,
+            128
+          ],
+          "alpha": true,
+          "paintBounds": [
+            40,
+            12,
+            88,
+            116
+          ]
+        },
+        "256": {
+          "path": "assets/v3/landmarks/exports/TOPO_02-256.webp",
+          "sha256": "5dd2697ad2691c31b92df76900285f24920cdae75eb6c5568802fc64c8c0e1aa",
+          "bytes": 12312,
+          "size": [
+            256,
+            256
+          ],
+          "alpha": true,
+          "paintBounds": [
+            81,
+            25,
+            175,
+            231
+          ]
+        }
+      }
     },
     {
-      "id": "vesuvius",
-      "label": "Vesuvius",
-      "anchor": "area-e",
-      "cell": 2
+      "id": "TOPO_03",
+      "label": "Vesuvius Naples",
+      "status": "V3.0 reliëfkaart",
+      "ui": true,
+      "master": {
+        "path": "assets/art/masters/italia/landmarks/TOPO_03_Vesuvius_Naples.png",
+        "sha256": "0541b33de4cf5c924d93a647553438cd38731bfadd835559bbf847b72ffb1e93",
+        "bytes": 569706,
+        "size": [
+          1024,
+          1024
+        ],
+        "alpha": true
+      },
+      "paintSize": 34,
+      "location": {
+        "canonicalItemId": "area-e",
+        "source": {
+          "dataset": "Existing canonical ITEMS / Smithsonian GVP",
+          "url": "https://volcano.si.edu/volcano.cfm?vn=211020"
+        },
+        "note": "Resolve the existing WGS84 volcano coordinate from the canonical item; do not maintain a second coordinate copy."
+      },
+      "exports": {
+        "128": {
+          "path": "assets/v3/landmarks/exports/TOPO_03-128.webp",
+          "sha256": "97162495ab61d3813d495280f843225b5826f394b73836faeac6ace108bbfb0b",
+          "bytes": 4454,
+          "size": [
+            128,
+            128
+          ],
+          "alpha": true,
+          "paintBounds": [
+            12,
+            34,
+            116,
+            94
+          ]
+        },
+        "256": {
+          "path": "assets/v3/landmarks/exports/TOPO_03-256.webp",
+          "sha256": "444587077247281792e70942021cdc138c5480bfef8c24489e954e2354ef0e1c",
+          "bytes": 12852,
+          "size": [
+            256,
+            256
+          ],
+          "alpha": true,
+          "paintBounds": [
+            25,
+            68,
+            231,
+            188
+          ]
+        }
+      }
     },
     {
-      "id": "etna",
-      "label": "Etna",
-      "anchor": "area-f",
-      "cell": 3
+      "id": "TOPO_04",
+      "label": "Etna Sicily",
+      "status": "V3.0 reliëfkaart",
+      "ui": true,
+      "master": {
+        "path": "assets/art/masters/italia/landmarks/TOPO_04_Etna_Sicily.png",
+        "sha256": "f56d5ef0aee2bd2f4d99f8e789f68d1e9d08c88dcd85472c264113c881ee6409",
+        "bytes": 640412,
+        "size": [
+          1024,
+          1024
+        ],
+        "alpha": true
+      },
+      "paintSize": 34,
+      "location": {
+        "canonicalItemId": "area-f",
+        "source": {
+          "dataset": "Existing canonical ITEMS / Smithsonian GVP",
+          "url": "https://volcano.si.edu/volcano.cfm?vn=211060"
+        },
+        "note": "Resolve the existing WGS84 volcano coordinate from the canonical item; do not maintain a second coordinate copy."
+      },
+      "exports": {
+        "128": {
+          "path": "assets/v3/landmarks/exports/TOPO_04-128.webp",
+          "sha256": "6c81d6ea3f45876e77e21a736b4abc332a549c9899ae2fc665b491d7c6044c9a",
+          "bytes": 4512,
+          "size": [
+            128,
+            128
+          ],
+          "alpha": true,
+          "paintBounds": [
+            12,
+            32,
+            116,
+            96
+          ]
+        },
+        "256": {
+          "path": "assets/v3/landmarks/exports/TOPO_04-256.webp",
+          "sha256": "3547a18bcd1e588043a85bd4e51b771c28b630d39c550dc08661141869db3500",
+          "bytes": 12488,
+          "size": [
+            256,
+            256
+          ],
+          "alpha": true,
+          "paintBounds": [
+            25,
+            65,
+            231,
+            191
+          ]
+        }
+      }
     },
     {
-      "id": "gondel",
-      "label": "Gondel bij Venetië",
-      "anchor": "city-11",
-      "cell": 4
+      "id": "TOPO_05",
+      "label": "Venetian Gondola Venice",
+      "status": "V3.0 reliëfkaart",
+      "ui": true,
+      "master": {
+        "path": "assets/art/masters/italia/landmarks/TOPO_05_Venetian_Gondola_Venice.png",
+        "sha256": "d0689885cec6b0dcc7d283d8e7b5688304681efb3db0cd31f0425f8e223bdf99",
+        "bytes": 632369,
+        "size": [
+          1024,
+          1024
+        ],
+        "alpha": true
+      },
+      "paintSize": 34,
+      "location": {
+        "feature": "Canal Grande bij Rialto, Venezia",
+        "coordinates": [
+          12.335639,
+          45.438008
+        ],
+        "source": {
+          "dataset": "Wikidata P625 (CC0)",
+          "entity": "Q52505",
+          "revision": 2547480065,
+          "url": "https://www.wikidata.org/w/index.php?title=Q52505&oldid=2547480065",
+          "retrieved": "2026-11-12",
+          "entityResponseSha256": "24a4a4fb5bdaa2592a48bcbe336c8d62a9d74011834d64db87ec1f6226886719",
+          "claim": {
+            "mainsnak": {
+              "snaktype": "value",
+              "property": "P625",
+              "hash": "9d97c6c5229dadafa8b2ab020546cf0ba266b687",
+              "datavalue": {
+                "value": {
+                  "latitude": 45.438008,
+                  "longitude": 12.335639,
+                  "altitude": null,
+                  "precision": 1e-05,
+                  "globe": "http://www.wikidata.org/entity/Q2"
+                },
+                "type": "globecoordinate"
+              },
+              "datatype": "globe-coordinate"
+            },
+            "type": "statement",
+            "id": "q52505$F1A3E814-2E37-4A1F-922C-4F5FB327E8F1",
+            "rank": "normal",
+            "references": [
+              {
+                "hash": "732ec1c90a6f0694c7db9a71bf09fe7f2b674172",
+                "snaks": {
+                  "P143": [
+                    {
+                      "snaktype": "value",
+                      "property": "P143",
+                      "hash": "9123b0de1cc9c3954366ba797d598e4e1ea4146f",
+                      "datavalue": {
+                        "value": {
+                          "entity-type": "item",
+                          "numeric-id": 10000,
+                          "id": "Q10000"
+                        },
+                        "type": "wikibase-entityid"
+                      },
+                      "datatype": "wikibase-item"
+                    }
+                  ]
+                },
+                "snaks-order": [
+                  "P143"
+                ]
+              }
+            ]
+          }
+        },
+        "note": "Gondola is a symbolic Venice marker; the surveyed Rialto crossing is its declared geographic reference, not a live boat position."
+      },
+      "exports": {
+        "128": {
+          "path": "assets/v3/landmarks/exports/TOPO_05-128.webp",
+          "sha256": "e0532d88c31a191b7cc142ee28a0519b7ed234584943458b750ab54bfd4ad009",
+          "bytes": 5664,
+          "size": [
+            128,
+            128
+          ],
+          "alpha": true,
+          "paintBounds": [
+            12,
+            26,
+            116,
+            102
+          ]
+        },
+        "256": {
+          "path": "assets/v3/landmarks/exports/TOPO_05-256.webp",
+          "sha256": "2c6bce94704d64d038db293501d7a4225ed740775e54f28fdc5fcf16f361501c",
+          "bytes": 14428,
+          "size": [
+            256,
+            256
+          ],
+          "alpha": true,
+          "paintBounds": [
+            25,
+            52,
+            231,
+            203
+          ]
+        }
+      }
     },
     {
-      "id": "firenze",
-      "label": "Duomo bij Florence",
-      "anchor": "city-3",
-      "cell": 5
+      "id": "TOPO_06",
+      "label": "Duomo Milan",
+      "status": "V3.0 reliëfkaart",
+      "ui": true,
+      "master": {
+        "path": "assets/art/masters/italia/landmarks/TOPO_06_Duomo_Milan.png",
+        "sha256": "fcadc7a71cf73f6bdb10a4172afb9ee828222d7aea3f4f17e3c08f34cadcc096",
+        "bytes": 1150166,
+        "size": [
+          1024,
+          1024
+        ],
+        "alpha": true
+      },
+      "paintSize": 34,
+      "location": {
+        "feature": "Duomo di Milano",
+        "coordinates": [
+          9.190578,
+          45.463968
+        ],
+        "source": {
+          "dataset": "Wikidata P625 (CC0)",
+          "entity": "Q18068",
+          "revision": 2561699129,
+          "url": "https://www.wikidata.org/w/index.php?title=Q18068&oldid=2561699129",
+          "retrieved": "2026-11-12",
+          "entityResponseSha256": "3e3c10c6dff9511d5c856b6b61f844a025ff9fd19a9b4a7b549eeb192bc10e89",
+          "claim": {
+            "mainsnak": {
+              "snaktype": "value",
+              "property": "P625",
+              "hash": "4cd681868711ffbaa7fd1c025b7777aaf30f98be",
+              "datavalue": {
+                "value": {
+                  "latitude": 45.463968,
+                  "longitude": 9.190578,
+                  "altitude": null,
+                  "precision": 1e-06,
+                  "globe": "http://www.wikidata.org/entity/Q2"
+                },
+                "type": "globecoordinate"
+              },
+              "datatype": "globe-coordinate"
+            },
+            "type": "statement",
+            "id": "Q18068$7858130F-2037-4C0C-9A32-1C91C2B43B22",
+            "rank": "normal",
+            "references": [
+              {
+                "hash": "0137d5206ccfa321572beda1145984926a889482",
+                "snaks": {
+                  "P248": [
+                    {
+                      "snaktype": "value",
+                      "property": "P248",
+                      "hash": "d55b25e30a962e2e40cef0d37ca8b19ab7902eb7",
+                      "datavalue": {
+                        "value": {
+                          "entity-type": "item",
+                          "numeric-id": 111178821,
+                          "id": "Q111178821"
+                        },
+                        "type": "wikibase-entityid"
+                      },
+                      "datatype": "wikibase-item"
+                    }
+                  ]
+                },
+                "snaks-order": [
+                  "P248"
+                ]
+              }
+            ]
+          }
+        },
+        "note": "Cathedral location, not Milan city centre."
+      },
+      "exports": {
+        "128": {
+          "path": "assets/v3/landmarks/exports/TOPO_06-128.webp",
+          "sha256": "cb3eac551b4350cb35859d09146eefa84fa4064d9323dfa32b33f6167f72e42d",
+          "bytes": 8658,
+          "size": [
+            128,
+            128
+          ],
+          "alpha": true,
+          "paintBounds": [
+            16,
+            13,
+            112,
+            116
+          ]
+        },
+        "256": {
+          "path": "assets/v3/landmarks/exports/TOPO_06-256.webp",
+          "sha256": "a7f866b0e6d7a10f8fffe733fa096439235ecc513626c0e7ada3508303283192",
+          "bytes": 26006,
+          "size": [
+            256,
+            256
+          ],
+          "alpha": true,
+          "paintBounds": [
+            32,
+            25,
+            224,
+            231
+          ]
+        }
+      }
     },
     {
-      "id": "milano",
-      "label": "Duomo bij Milaan",
-      "anchor": "city-5",
-      "cell": 6
+      "id": "TOPO_07",
+      "label": "Florence Cathedral",
+      "status": "V3.0 reliëfkaart",
+      "ui": true,
+      "master": {
+        "path": "assets/art/masters/italia/landmarks/TOPO_07_Florence_Cathedral.png",
+        "sha256": "16df22dde8add7551b6879cf834dbcb1c2624dd6062c1a763baebb6a7a892770",
+        "bytes": 987971,
+        "size": [
+          1024,
+          1024
+        ],
+        "alpha": true
+      },
+      "paintSize": 26,
+      "location": {
+        "feature": "Cattedrale di Santa Maria del Fiore",
+        "coordinates": [
+          11.256944444444445,
+          43.77305555555556
+        ],
+        "source": {
+          "dataset": "Wikidata P625 (CC0)",
+          "entity": "Q191739",
+          "revision": 2535624323,
+          "url": "https://www.wikidata.org/w/index.php?title=Q191739&oldid=2535624323",
+          "retrieved": "2026-11-12",
+          "entityResponseSha256": "8486cfdce4153a5cbbc7ad788161248d427b7e9a576b34e710ea65a66b974afb",
+          "claim": {
+            "mainsnak": {
+              "snaktype": "value",
+              "property": "P625",
+              "hash": "d613e0e3fd92a0850034052d1e973fa6656559d6",
+              "datavalue": {
+                "value": {
+                  "latitude": 43.77305555555556,
+                  "longitude": 11.256944444444445,
+                  "altitude": null,
+                  "precision": 0.0002777777777777778,
+                  "globe": "http://www.wikidata.org/entity/Q2"
+                },
+                "type": "globecoordinate"
+              },
+              "datatype": "globe-coordinate"
+            },
+            "type": "statement",
+            "id": "Q191739$E55E9DD6-0D31-4324-BB13-6436783AC284",
+            "rank": "normal",
+            "references": [
+              {
+                "hash": "f6f3d53ad9a3add255ad50d41ca228f86932e0d7",
+                "snaks": {
+                  "P248": [
+                    {
+                      "snaktype": "value",
+                      "property": "P248",
+                      "hash": "8931fde9e1e988f2eeeafc690a355ce3d979cc93",
+                      "datavalue": {
+                        "value": {
+                          "entity-type": "item",
+                          "numeric-id": 80199870,
+                          "id": "Q80199870"
+                        },
+                        "type": "wikibase-entityid"
+                      },
+                      "datatype": "wikibase-item"
+                    }
+                  ],
+                  "P813": [
+                    {
+                      "snaktype": "value",
+                      "property": "P813",
+                      "hash": "3c9660fcd9367333d48d62d239caa60339a07fef",
+                      "datavalue": {
+                        "value": {
+                          "time": "+2020-01-31T00:00:00Z",
+                          "timezone": 0,
+                          "before": 0,
+                          "after": 0,
+                          "precision": 11,
+                          "calendarmodel": "http://www.wikidata.org/entity/Q1985727"
+                        },
+                        "type": "time"
+                      },
+                      "datatype": "time"
+                    }
+                  ]
+                },
+                "snaks-order": [
+                  "P248",
+                  "P813"
+                ]
+              }
+            ]
+          }
+        },
+        "note": "Cathedral location, not Florence city centre."
+      },
+      "exports": {
+        "128": {
+          "path": "assets/v3/landmarks/exports/TOPO_07-128.webp",
+          "sha256": "029ac9cec62bed2bae413842617ed44ac676866a01970d0f5257e1e28e561747",
+          "bytes": 6790,
+          "size": [
+            128,
+            128
+          ],
+          "alpha": true,
+          "paintBounds": [
+            13,
+            22,
+            116,
+            107
+          ]
+        },
+        "256": {
+          "path": "assets/v3/landmarks/exports/TOPO_07-256.webp",
+          "sha256": "dfdc070e24eb8eb19f10d2979c1718903c5369cd2ee7c4a906b8a4c98671e5f4",
+          "bytes": 19886,
+          "size": [
+            256,
+            256
+          ],
+          "alpha": true,
+          "paintBounds": [
+            25,
+            44,
+            231,
+            213
+          ]
+        }
+      }
     },
     {
-      "id": "torino",
-      "label": "Mole Antonelliana bij Turijn",
-      "anchor": "city-10",
-      "cell": 7
+      "id": "TOPO_08",
+      "label": "Nuraghe Sardinia",
+      "status": "V3.0 reliëfkaart",
+      "ui": true,
+      "master": {
+        "path": "assets/art/masters/italia/landmarks/TOPO_08_Nuraghe_Sardinia.png",
+        "sha256": "63eef3351692b89c8679633dcc5bbdc02d5e75afa432a46ee0d42015fdea9891",
+        "bytes": 1132311,
+        "size": [
+          1024,
+          1024
+        ],
+        "alpha": true
+      },
+      "paintSize": 34,
+      "location": {
+        "feature": "Su Nuraxi di Barumini",
+        "coordinates": [
+          8.991388888888888,
+          39.70583333333334
+        ],
+        "source": {
+          "dataset": "UNESCO World Heritage Centre geographical data",
+          "url": "https://whc.unesco.org/en/list/833/maps/",
+          "retrieved": "2026-11-12",
+          "sourceDms": {
+            "latitude": [
+              39,
+              42,
+              21
+            ],
+            "longitude": [
+              8,
+              59,
+              29
+            ]
+          },
+          "propertyId": "833"
+        },
+        "note": "Actual heritage-site reference; the generic illustration is symbolic, not a surveyed footprint."
+      },
+      "exports": {
+        "128": {
+          "path": "assets/v3/landmarks/exports/TOPO_08-128.webp",
+          "sha256": "b8f3691317bc3ac62e72a12a82ad5bcdd804bec2098953f3c4f4d981cca3cfa2",
+          "bytes": 7234,
+          "size": [
+            128,
+            128
+          ],
+          "alpha": true,
+          "paintBounds": [
+            12,
+            22,
+            115,
+            106
+          ]
+        },
+        "256": {
+          "path": "assets/v3/landmarks/exports/TOPO_08-256.webp",
+          "sha256": "78b174193f96f2cb217bebce4b478ca937692f67804534909a9968a19002b557",
+          "bytes": 21418,
+          "size": [
+            256,
+            256
+          ],
+          "alpha": true,
+          "paintBounds": [
+            25,
+            45,
+            231,
+            211
+          ]
+        }
+      }
     },
     {
-      "id": "genova",
-      "label": "Lanterna bij Genua",
-      "anchor": "city-4",
-      "cell": 8
+      "id": "TOPO_09",
+      "label": "Dolomites Northern Italy",
+      "status": "V3.0 reliëfkaart",
+      "ui": true,
+      "master": {
+        "path": "assets/art/masters/italia/landmarks/TOPO_09_Dolomites_Northern_Italy.png",
+        "sha256": "16b282a90d9a40aee14eece1101b606af5278c5078297a98ff4e8d2e0c4850e6",
+        "bytes": 1119696,
+        "size": [
+          1024,
+          1024
+        ],
+        "alpha": true
+      },
+      "paintSize": 34,
+      "location": {
+        "feature": "Tre Cime di Lavaredo, Dolomiti",
+        "coordinates": [
+          12.305556,
+          46.618611
+        ],
+        "source": {
+          "dataset": "Wikidata P625 (CC0)",
+          "entity": "Q1257207",
+          "revision": 2561624122,
+          "url": "https://www.wikidata.org/w/index.php?title=Q1257207&oldid=2561624122",
+          "retrieved": "2026-11-12",
+          "entityResponseSha256": "32cfcab54988b4994cb947a4a8a42dd917f86c8b7df06a45cfb2e5dc3dbe31a3",
+          "claim": {
+            "mainsnak": {
+              "snaktype": "value",
+              "property": "P625",
+              "hash": "28c852915ab50a359781dec0cf962e9d459604a2",
+              "datavalue": {
+                "value": {
+                  "latitude": 46.618611,
+                  "longitude": 12.305556,
+                  "altitude": null,
+                  "precision": 1e-05,
+                  "globe": "http://www.wikidata.org/entity/Q2"
+                },
+                "type": "globecoordinate"
+              },
+              "datatype": "globe-coordinate"
+            },
+            "type": "statement",
+            "id": "q1257207$0140FDD2-ACFF-4262-A322-3D0A5F2C9E7A",
+            "rank": "normal",
+            "references": [
+              {
+                "hash": "732ec1c90a6f0694c7db9a71bf09fe7f2b674172",
+                "snaks": {
+                  "P143": [
+                    {
+                      "snaktype": "value",
+                      "property": "P143",
+                      "hash": "9123b0de1cc9c3954366ba797d598e4e1ea4146f",
+                      "datavalue": {
+                        "value": {
+                          "entity-type": "item",
+                          "numeric-id": 10000,
+                          "id": "Q10000"
+                        },
+                        "type": "wikibase-entityid"
+                      },
+                      "datatype": "wikibase-item"
+                    }
+                  ]
+                },
+                "snaks-order": [
+                  "P143"
+                ]
+              }
+            ]
+          }
+        },
+        "note": "Declared real mountain-group reference for the three-peak illustration, not a schematic Dolomites-zone centre."
+      },
+      "exports": {
+        "128": {
+          "path": "assets/v3/landmarks/exports/TOPO_09-128.webp",
+          "sha256": "76e5139c40e4592a878f28f16b2c0b0f01358db000b8fd1b3a6d5866d36848a2",
+          "bytes": 6892,
+          "size": [
+            128,
+            128
+          ],
+          "alpha": true,
+          "paintBounds": [
+            12,
+            19,
+            116,
+            109
+          ]
+        },
+        "256": {
+          "path": "assets/v3/landmarks/exports/TOPO_09-256.webp",
+          "sha256": "6e7ef73b198dd3ccd6ab60cd7504711c4535e1d6feaaa76a0933c051e899a45a",
+          "bytes": 19874,
+          "size": [
+            256,
+            256
+          ],
+          "alpha": true,
+          "paintBounds": [
+            25,
+            39,
+            231,
+            217
+          ]
+        }
+      }
     },
     {
-      "id": "bologna",
-      "label": "Twee torens bij Bologna",
-      "anchor": "city-2",
-      "cell": 9
+      "id": "TOPO_10",
+      "label": "Trulli Alberobello",
+      "status": "V3.0 reliëfkaart",
+      "ui": true,
+      "master": {
+        "path": "assets/art/masters/italia/landmarks/TOPO_10_Trulli_Alberobello.png",
+        "sha256": "519bb285918bf9ffe5cdfc09b27313f7e0c1aa2a4dce4b1d28f119ae420bce39",
+        "bytes": 1166318,
+        "size": [
+          1024,
+          1024
+        ],
+        "alpha": true
+      },
+      "paintSize": 34,
+      "location": {
+        "feature": "Quartiere Monti, trulli di Alberobello",
+        "coordinates": [
+          17.236944444444447,
+          40.78221666666666
+        ],
+        "source": {
+          "dataset": "UNESCO World Heritage Centre geographical data",
+          "url": "https://whc.unesco.org/en/list/787/maps/",
+          "retrieved": "2026-11-12",
+          "sourceDms": {
+            "latitude": [
+              40,
+              46,
+              55.98
+            ],
+            "longitude": [
+              17,
+              14,
+              13
+            ]
+          },
+          "propertyId": "787-006"
+        },
+        "note": "Actual heritage-site reference; the generic illustration is symbolic, not a surveyed footprint."
+      },
+      "exports": {
+        "128": {
+          "path": "assets/v3/landmarks/exports/TOPO_10-128.webp",
+          "sha256": "6fdc1c1cdcddd8dc1a772e0950f7b97cce51976b526a1feac73837f1d65cc533",
+          "bytes": 7556,
+          "size": [
+            128,
+            128
+          ],
+          "alpha": true,
+          "paintBounds": [
+            12,
+            17,
+            116,
+            111
+          ]
+        },
+        "256": {
+          "path": "assets/v3/landmarks/exports/TOPO_10-256.webp",
+          "sha256": "5973c72a994c2db81b1c53e8b0c94d6ce22ebffd4f17098d08ddc136fcf3208e",
+          "bytes": 21348,
+          "size": [
+            256,
+            256
+          ],
+          "alpha": true,
+          "paintBounds": [
+            25,
+            34,
+            231,
+            222
+          ]
+        }
+      }
+    },
+    {
+      "id": "TOPO_12",
+      "label": "Football Stadium Milan",
+      "status": "V3.1 uitstapjes",
+      "ui": false,
+      "master": {
+        "path": "assets/art/masters/italia/landmarks/TOPO_12_Football_Stadium_Milan.png",
+        "sha256": "0be276ffd08814c4c4d1f6dd32b314e3f63dec4c82e92504c940804a956a215c",
+        "bytes": 971368,
+        "size": [
+          1024,
+          1024
+        ],
+        "alpha": true
+      },
+      "visualReview": {
+        "logos": "No visible logos or lettering in the 1024px master.",
+        "clubColours": "OPEN: red/black seating; do not certify neutral club colours.",
+        "uiBlocked": true
+      }
+    },
+    {
+      "id": "TOPO_13",
+      "label": "Gelato Italy",
+      "status": "V3.1 uitstapjes",
+      "ui": false,
+      "master": {
+        "path": "assets/art/masters/italia/landmarks/TOPO_13_Gelato_Italy.png",
+        "sha256": "cd54eafa22dd34ed122cb1d23e0b1af5b613a634478672adf8aeecb6650d1d5e",
+        "bytes": 565523,
+        "size": [
+          1024,
+          1024
+        ],
+        "alpha": true
+      }
+    },
+    {
+      "id": "TOPO_14",
+      "label": "Beach Rimini",
+      "status": "V3.1 uitstapjes",
+      "ui": false,
+      "master": {
+        "path": "assets/art/masters/italia/landmarks/TOPO_14_Beach_Rimini.png",
+        "sha256": "8c5a8761523dc38650204a8d38dcba9e7f12ed57428ca374f2631e1ff56d4889",
+        "bytes": 1070826,
+        "size": [
+          1024,
+          1024
+        ],
+        "alpha": true
+      }
+    },
+    {
+      "id": "TOPO_15",
+      "label": "Pasta Bologna",
+      "status": "V3.1 uitstapjes",
+      "ui": false,
+      "master": {
+        "path": "assets/art/masters/italia/landmarks/TOPO_15_Pasta_Bologna.png",
+        "sha256": "d3151d242d89b0c77eb4e471465656e4f40aa1d819fe0be1dacee69cbf2d3482",
+        "bytes": 1094281,
+        "size": [
+          1024,
+          1024
+        ],
+        "alpha": true
+      }
+    },
+    {
+      "id": "TOPO_16",
+      "label": "Fiat 500 Turin",
+      "status": "V3.1 uitstapjes",
+      "ui": false,
+      "master": {
+        "path": "assets/art/masters/italia/landmarks/TOPO_16_Fiat_500_Turin.png",
+        "sha256": "d7a067a8bb4658c74fdeee41d549d8c37fe9674354098e1b932ff9e000367f1f",
+        "bytes": 849498,
+        "size": [
+          1024,
+          1024
+        ],
+        "alpha": true
+      }
     }
   ]
 }

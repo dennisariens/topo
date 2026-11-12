@@ -266,3 +266,30 @@ Peildatum: 2026-11-11. Alle lokaal aanwezige raster-, SVG- en fontassets onder `
 ## Aanvulling na punt 20
 
 De inventaris omvat nu 210 aanwezige beeld-/fontbestanden. Nieuw: `assets/v3/landmarks/italia-landmarks-atlas.png` (SHA-256 `17331192b1946e499aafc5608e203bdd239b0c25101d6c78006890824f80c39e`), één transparante atlas met tien illustraties: Colosseum bij Rome, Toren van Pisa, Vesuvius, Etna, Gondel bij Venetië, Duomo bij Florence, Duomo bij Milaan, Mole Antonelliana bij Turijn, Lanterna bij Genua, Twee torens bij Bologna. Alleen zichtbaar op Reis en het toetsresultaat wanneer Reliëf actief is; nooit op de leerkaart of Oefenen. Plaatsing gebruikt de bestaande ITEMS-stads-/vulkaanankers; geen gebouwspecifieke landmeetkundige precisie geclaimd. Visuele eigenaar- en fysieke iPad/Safari-review blijven open.
+
+## Master-landmarks 12-11 — vervangt de gegenereerde atlas
+
+Actueel: 229 lokale beeld-/fontbestanden. De vorige atlas is vervangen door TOPO_01–10 uit `art/master` op `69c945c16a8bd34c8e45cffa96c12442c2672cb1`, met twintig WebP-exports (128 en 256 px). De PNG-masters blijven op de art-branch. TOPO_11 ontbreekt; TOPO_12–16 zijn uitsluitend manifestvermeldingen met status `V3.1 uitstapjes`, zonder exports of UI. TOPO_12: geen zichtbare logo’s, maar rood-zwarte tribunes; kleurreview blijft open.
+
+| Bestand | KiB | SHA-256 | Plek |
+| --- | ---: | --- | --- |
+| `assets/v3/landmarks/exports/TOPO_01-128.webp` | 6.3 | `dfd0204c17d5` | TOPO_01: Reis / toetsresultaat, alleen Reliëf |
+| `assets/v3/landmarks/exports/TOPO_01-256.webp` | 17.6 | `bc5daf04d039` | TOPO_01: Reis / toetsresultaat, alleen Reliëf |
+| `assets/v3/landmarks/exports/TOPO_02-128.webp` | 4.6 | `2f571f751dc9` | TOPO_02: Reis / toetsresultaat, alleen Reliëf |
+| `assets/v3/landmarks/exports/TOPO_02-256.webp` | 12.0 | `5dd2697ad269` | TOPO_02: Reis / toetsresultaat, alleen Reliëf |
+| `assets/v3/landmarks/exports/TOPO_03-128.webp` | 4.3 | `97162495ab61` | TOPO_03: Reis / toetsresultaat, alleen Reliëf |
+| `assets/v3/landmarks/exports/TOPO_03-256.webp` | 12.6 | `444587077247` | TOPO_03: Reis / toetsresultaat, alleen Reliëf |
+| `assets/v3/landmarks/exports/TOPO_04-128.webp` | 4.4 | `6c81d6ea3f45` | TOPO_04: Reis / toetsresultaat, alleen Reliëf |
+| `assets/v3/landmarks/exports/TOPO_04-256.webp` | 12.2 | `3547a18bcd1e` | TOPO_04: Reis / toetsresultaat, alleen Reliëf |
+| `assets/v3/landmarks/exports/TOPO_05-128.webp` | 5.5 | `e0532d88c31a` | TOPO_05: Reis / toetsresultaat, alleen Reliëf |
+| `assets/v3/landmarks/exports/TOPO_05-256.webp` | 14.1 | `2c6bce94704d` | TOPO_05: Reis / toetsresultaat, alleen Reliëf |
+| `assets/v3/landmarks/exports/TOPO_06-128.webp` | 8.5 | `cb3eac551b43` | TOPO_06: Reis / toetsresultaat, alleen Reliëf |
+| `assets/v3/landmarks/exports/TOPO_06-256.webp` | 25.4 | `a7f866b0e6d7` | TOPO_06: Reis / toetsresultaat, alleen Reliëf |
+| `assets/v3/landmarks/exports/TOPO_07-128.webp` | 6.6 | `029ac9cec62b` | TOPO_07: Reis / toetsresultaat, alleen Reliëf |
+| `assets/v3/landmarks/exports/TOPO_07-256.webp` | 19.4 | `dfdc070e24eb` | TOPO_07: Reis / toetsresultaat, alleen Reliëf |
+| `assets/v3/landmarks/exports/TOPO_08-128.webp` | 7.1 | `b8f3691317bc` | TOPO_08: Reis / toetsresultaat, alleen Reliëf |
+| `assets/v3/landmarks/exports/TOPO_08-256.webp` | 20.9 | `78b174193f96` | TOPO_08: Reis / toetsresultaat, alleen Reliëf |
+| `assets/v3/landmarks/exports/TOPO_09-128.webp` | 6.7 | `76e5139c40e4` | TOPO_09: Reis / toetsresultaat, alleen Reliëf |
+| `assets/v3/landmarks/exports/TOPO_09-256.webp` | 19.4 | `6e7ef73b198d` | TOPO_09: Reis / toetsresultaat, alleen Reliëf |
+| `assets/v3/landmarks/exports/TOPO_10-128.webp` | 7.4 | `6fdc1c1cdcdd` | TOPO_10: Reis / toetsresultaat, alleen Reliëf |
+| `assets/v3/landmarks/exports/TOPO_10-256.webp` | 20.8 | `5973c72a994c` | TOPO_10: Reis / toetsresultaat, alleen Reliëf |

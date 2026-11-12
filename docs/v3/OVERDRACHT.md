@@ -139,3 +139,8 @@ Controle: `npm run lint`, `npm test`, `npm run build` en `python3 scripts/qa-v3-
 
 Open: fysieke iPad/Safari-hertest en visuele eigenaar/Hermes-review van het nieuwe landmarkartwork. **Hermes: hertest deze eindpin**, vooral kaartschakelaar/Schoolblad, toetsaanraakvlakken, Oefenen zonder scroll, terugnavigatie, boekvegen, willekeurige toets, Vespa met verminderde beweging en achtergrondwisseling. Controleer dat de landmarks alleen op Reis/toetsresultaat verschijnen en leren op de schoolkaart blijft.
 
+## Master-landmarks — 12-11
+
+De bestaande masters op `art/master` zijn gepind op `69c945c16a8bd34c8e45cffa96c12442c2672cb1`. TOPO_11 is daar geschrapt. TOPO_01–10 vervangen de Ronde 3-atlas, met gecontroleerde WebP 128/256 en broncoördinaten (Wikidata/UNESCO; vulkanen uit canonieke ITEMS). Alleen Reis en toetsresultaat bij Reliëf; geen decoratie op de leerkaart. Pisa/Florence zijn kleiner gemaakt tegen overlap, zonder hun ankers te verplaatsen. TOPO_12–16 staan uitsluitend in het manifest als `V3.1 uitstapjes`.
+
+Gerichte QA: Reis en toetsresultaat PASS, desktop 1440×900 en iPad 1080×810, inclusief offline laden, exacte projectie, bron-/exporthashes, alpha, 128/256-selectie, kaartschakelaar, onveranderde leergeometrie en overlapcontrole. Bewijs: `docs/qa/v3-stijlbeeld/final/landmarks.json` en de vier overschreven screenshots. `index.html` blijft byte-gelijk. Open: fysieke iPad/Safari; TOPO_12 toont geen zichtbare logo’s maar wel rood-zwarte tribunes, dus kleurreview blijft open en de master is niet als clubneutraal goedgekeurd. Geen merge of deploy.

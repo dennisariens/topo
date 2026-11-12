@@ -15,11 +15,13 @@ window.TopoV3Landmarks=function(svg,k){
   warm.append(temperature);depth.after(warm);svg.querySelector('.atlasTerrain')?.setAttribute('filter','url(#'+warm.id+')');
  }
  let g=svg.querySelector('.v3Landmarks');if(!g){g=make('g',{class:'v3Landmarks','aria-hidden':'true','pointer-events':'none'});svg.insertBefore(g,svg.querySelector('.v3Marks'));}
- g.replaceChildren();const cw=art.width/art.columns,ch=art.height/art.rows;
+ g.replaceChildren();
  for(const item of art.items){
-  const anchor=ITEMS.find(i=>i.id===item.anchor);if(!anchor)continue;
-  const node=make('g',{'data-landmark':item.id,'data-anchor':anchor.id,transform:'translate('+anchor.px+' '+anchor.py+') scale('+k+')'});
-  const cell=make('svg',{x:-17,y:-34,width:34,height:34,viewBox:[item.cell%art.columns*cw,Math.floor(item.cell/art.columns)*ch,cw,ch].join(' '),overflow:'hidden',preserveAspectRatio:'xMidYMax meet'});
-  cell.append(make('image',{href:art.src,width:art.width,height:art.height}));node.append(cell);g.append(node);
+  const size=window.devicePixelRatio>1?256:128,asset=item.exports[size];
+  const [left,top,right,bottom]=asset.paintBounds;
+  // Anchor the painted bottom centre, not the padded square, at the real geographic point.
+  const units=item.paintSize/Math.max(right-left,bottom-top),width=asset.size[0]*units;
+  const node=make('g',{'data-landmark':item.id,'data-longitude':item.coordinates[0],'data-latitude':item.coordinates[1],transform:'translate('+item.point[0]+' '+item.point[1]+') scale('+k+')'});
+  node.append(make('image',{href:asset.src,x:-(left+right)/2*units,y:-bottom*units,width,height:width,'data-export-size':size}));g.append(node);
  }
 };

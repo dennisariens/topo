@@ -24,7 +24,7 @@ async def check(p,n,touch):
   geometry='() => [...document.querySelectorAll("#map [data-id]")].map(n=>[n.dataset.id,n.getAttribute("d"),n.getAttribute("cx"),n.getAttribute("cy")])'
   before=await p.evaluate(geometry)
   assert await p.locator('.v3MapStage .v3Landmarks>g').count()==10
-  assert await p.locator('.v3Landmarks>g').evaluate_all('ns=>ns.every(n=>{const a=ITEMS.find(i=>i.id===n.dataset.anchor);return n.getAttribute("transform").startsWith("translate("+a.px+" "+a.py+")")})')
+  assert await p.locator('.v3Landmarks>g').evaluate_all('ns=>ns.every(n=>{const a=TOPO_V3.art.landmarks.items.find(i=>i.id===n.dataset.landmark);return n.getAttribute("transform").startsWith("translate("+a.point[0]+" "+a.point[1]+")")})')
   assert await p.locator('#map .v3Landmarks').count()==0
   await act(p,'.v3MapTools [data-relief=false]',touch)
   assert not await p.locator('.v3MapStage .v3Landmarks').is_visible()

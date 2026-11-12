@@ -1,0 +1,116 @@
+{
+  "pass": true,
+  "scope": [
+    "Reis",
+    "toetsresultaat"
+  ],
+  "previewSha256": "974f4fb89618f8f202493b565260cc30d4c620b0e2e34c4b7dd3d3aa707114b0",
+  "indexSha256": "3aced3c31259011b0af2947c78f71965cb4beb2e88c69d1663e61792b0304f5a",
+  "sourceCommit": "69c945c16a8bd34c8e45cffa96c12442c2672cb1",
+  "manifestSha256": "7eaef281023e9ccbda60ed41219ad1596336f21c251382a2f4544c9720e16ec7",
+  "locationsSha256": "83a3eafc9e172f852dbe424d88a4937ef6c3a38c1516be0d79d8d6f2ef7f866f",
+  "qaScriptSha256": "35097a8fead4e108367c7badcb658d4982858c7d6a86775fee5ec19378bc914a",
+  "masters": 15,
+  "webpExports": 20,
+  "excluded": [
+    "TOPO_11"
+  ],
+  "futureManifestOnly": [
+    "TOPO_12",
+    "TOPO_13",
+    "TOPO_14",
+    "TOPO_15",
+    "TOPO_16"
+  ],
+  "runs": {
+    "desktop": {
+      "viewport": [
+        1440,
+        900
+      ],
+      "deviceScaleFactor": 1,
+      "reis": {
+        "landmarks": 10,
+        "exactProjectedCoordinates": true,
+        "exportSize": 128,
+        "decoded": true,
+        "paintBoundsDoNotOverlap": true,
+        "learningMapUndecorated": true
+      },
+      "toetsResultaat": {
+        "landmarks": 10,
+        "exactProjectedCoordinates": true,
+        "exportSize": 128,
+        "decoded": true,
+        "paintBoundsDoNotOverlap": true,
+        "learningMapUndecorated": true
+      },
+      "screenshots": {
+        "reis": {
+          "path": "docs/qa/v3-stijlbeeld/final/reis-desktop.png",
+          "size": [
+            1440,
+            900
+          ],
+          "sha256": "59a12d9d138a7f283a424ca97749b1b76e74f8522f1e35b35fc3f376ab6863a2"
+        },
+        "toetsResult": {
+          "path": "docs/qa/v3-stijlbeeld/final/toetsResult-desktop.png",
+          "size": [
+            1440,
+            900
+          ],
+          "sha256": "3c4f46e3f337ee3e8fdbaf3fc1416068e6bc65d3a1feabe8ae6ee515440ae471"
+        }
+      },
+      "errors": []
+    },
+    "ipad-liggend": {
+      "viewport": [
+        1080,
+        810
+      ],
+      "deviceScaleFactor": 2,
+      "reis": {
+        "landmarks": 10,
+        "exactProjectedCoordinates": true,
+        "exportSize": 256,
+        "decoded": true,
+        "paintBoundsDoNotOverlap": true,
+        "learningMapUndecorated": true
+      },
+      "toetsResultaat": {
+        "landmarks": 10,
+        "exactProjectedCoordinates": true,
+        "exportSize": 256,
+        "decoded": true,
+        "paintBoundsDoNotOverlap": true,
+        "learningMapUndecorated": true
+      },
+      "screenshots": {
+        "reis": {
+          "path": "docs/qa/v3-stijlbeeld/final/reis-ipad-liggend.png",
+          "size": [
+            1080,
+            810
+          ],
+          "sha256": "afc267f0b5c12972a6756163f198bc40bbe12128f9c907eaa34154d847ddbd9d"
+        },
+        "toetsResult": {
+          "path": "docs/qa/v3-stijlbeeld/final/toetsResult-ipad-liggend.png",
+          "size": [
+            1080,
+            810
+          ],
+          "sha256": "09585a7d9719e5d9e972bb540eabec903f5e03744202aa4b300edd8e126c96dc"
+        }
+      },
+      "errors": []
+    }
+  },
+  "browser": "Chrome / Playwright; Browser plugin not available",
+  "open": [
+    "Physical iPad Safari",
+    "TOPO_12 red/black seating colour review"
+  ]
+}

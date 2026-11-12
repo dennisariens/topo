@@ -1,0 +1,447 @@
+{
+  "crs": "EPSG:4326",
+  "axisOrder": "longitude, latitude",
+  "scope": "Decoration only; existing learning items, projection, boundaries and DEM are unchanged.",
+  "items": {
+    "TOPO_01": {
+      "feature": "Colosseum",
+      "coordinates": [
+        12.492222222222,
+        41.890277777778
+      ],
+      "source": {
+        "dataset": "Wikidata P625 (CC0)",
+        "entity": "Q10285",
+        "revision": 2551136894,
+        "url": "https://www.wikidata.org/w/index.php?title=Q10285&oldid=2551136894",
+        "retrieved": "2026-11-12",
+        "entityResponseSha256": "f946b691ede96896f6aa3f44ab038949c11bf88c360fc785ea3332c39f49b95d",
+        "claim": {
+          "mainsnak": {
+            "snaktype": "value",
+            "property": "P625",
+            "hash": "bc04e762c09eea2e8b5e14b5c7b4c30b7f350329",
+            "datavalue": {
+              "value": {
+                "latitude": 41.890277777778,
+                "longitude": 12.492222222222,
+                "altitude": null,
+                "precision": 0.000277778,
+                "globe": "http://www.wikidata.org/entity/Q2"
+              },
+              "type": "globecoordinate"
+            },
+            "datatype": "globe-coordinate"
+          },
+          "type": "statement",
+          "id": "q10285$BB0E1322-8805-4748-9544-5B050532C0F9",
+          "rank": "normal",
+          "references": [
+            {
+              "hash": "fa278ebfc458360e5aed63d5058cca83c46134f1",
+              "snaks": {
+                "P143": [
+                  {
+                    "snaktype": "value",
+                    "property": "P143",
+                    "hash": "e4f6d9441d0600513c4533c672b5ab472dc73694",
+                    "datavalue": {
+                      "value": {
+                        "entity-type": "item",
+                        "numeric-id": 328,
+                        "id": "Q328"
+                      },
+                      "type": "wikibase-entityid"
+                    },
+                    "datatype": "wikibase-item"
+                  }
+                ]
+              },
+              "snaks-order": [
+                "P143"
+              ]
+            }
+          ]
+        }
+      },
+      "note": "Monument location, not Rome city centre."
+    },
+    "TOPO_02": {
+      "feature": "Leaning Tower of Pisa",
+      "coordinates": [
+        10.396624,
+        43.72301
+      ],
+      "source": {
+        "dataset": "Wikidata P625 (CC0)",
+        "entity": "Q39054",
+        "revision": 2547401969,
+        "url": "https://www.wikidata.org/w/index.php?title=Q39054&oldid=2547401969",
+        "retrieved": "2026-11-12",
+        "entityResponseSha256": "23d780c094bc0b0e307c1c9db849918c1c9a35f6216ded708d327b2f124922f9",
+        "claim": {
+          "mainsnak": {
+            "snaktype": "value",
+            "property": "P625",
+            "hash": "f0f324d137c4debdb4e77285be047a7068c308d0",
+            "datavalue": {
+              "value": {
+                "latitude": 43.72301,
+                "longitude": 10.396624,
+                "altitude": null,
+                "precision": 1e-06,
+                "globe": "http://www.wikidata.org/entity/Q2"
+              },
+              "type": "globecoordinate"
+            },
+            "datatype": "globe-coordinate"
+          },
+          "type": "statement",
+          "id": "q39054$2B2F6431-0AF3-4014-98B4-E7225300AE48",
+          "rank": "normal"
+        }
+      },
+      "note": "Bell tower location, not Pisa city centre."
+    },
+    "TOPO_03": {
+      "canonicalItemId": "area-e",
+      "source": {
+        "dataset": "Existing canonical ITEMS / Smithsonian GVP",
+        "url": "https://volcano.si.edu/volcano.cfm?vn=211020"
+      },
+      "note": "Resolve the existing WGS84 volcano coordinate from the canonical item; do not maintain a second coordinate copy."
+    },
+    "TOPO_04": {
+      "canonicalItemId": "area-f",
+      "source": {
+        "dataset": "Existing canonical ITEMS / Smithsonian GVP",
+        "url": "https://volcano.si.edu/volcano.cfm?vn=211060"
+      },
+      "note": "Resolve the existing WGS84 volcano coordinate from the canonical item; do not maintain a second coordinate copy."
+    },
+    "TOPO_05": {
+      "feature": "Canal Grande bij Rialto, Venezia",
+      "coordinates": [
+        12.335639,
+        45.438008
+      ],
+      "source": {
+        "dataset": "Wikidata P625 (CC0)",
+        "entity": "Q52505",
+        "revision": 2547480065,
+        "url": "https://www.wikidata.org/w/index.php?title=Q52505&oldid=2547480065",
+        "retrieved": "2026-11-12",
+        "entityResponseSha256": "24a4a4fb5bdaa2592a48bcbe336c8d62a9d74011834d64db87ec1f6226886719",
+        "claim": {
+          "mainsnak": {
+            "snaktype": "value",
+            "property": "P625",
+            "hash": "9d97c6c5229dadafa8b2ab020546cf0ba266b687",
+            "datavalue": {
+              "value": {
+                "latitude": 45.438008,
+                "longitude": 12.335639,
+                "altitude": null,
+                "precision": 1e-05,
+                "globe": "http://www.wikidata.org/entity/Q2"
+              },
+              "type": "globecoordinate"
+            },
+            "datatype": "globe-coordinate"
+          },
+          "type": "statement",
+          "id": "q52505$F1A3E814-2E37-4A1F-922C-4F5FB327E8F1",
+          "rank": "normal",
+          "references": [
+            {
+              "hash": "732ec1c90a6f0694c7db9a71bf09fe7f2b674172",
+              "snaks": {
+                "P143": [
+                  {
+                    "snaktype": "value",
+                    "property": "P143",
+                    "hash": "9123b0de1cc9c3954366ba797d598e4e1ea4146f",
+                    "datavalue": {
+                      "value": {
+                        "entity-type": "item",
+                        "numeric-id": 10000,
+                        "id": "Q10000"
+                      },
+                      "type": "wikibase-entityid"
+                    },
+                    "datatype": "wikibase-item"
+                  }
+                ]
+              },
+              "snaks-order": [
+                "P143"
+              ]
+            }
+          ]
+        }
+      },
+      "note": "Gondola is a symbolic Venice marker; the surveyed Rialto crossing is its declared geographic reference, not a live boat position."
+    },
+    "TOPO_06": {
+      "feature": "Duomo di Milano",
+      "coordinates": [
+        9.190578,
+        45.463968
+      ],
+      "source": {
+        "dataset": "Wikidata P625 (CC0)",
+        "entity": "Q18068",
+        "revision": 2561699129,
+        "url": "https://www.wikidata.org/w/index.php?title=Q18068&oldid=2561699129",
+        "retrieved": "2026-11-12",
+        "entityResponseSha256": "3e3c10c6dff9511d5c856b6b61f844a025ff9fd19a9b4a7b549eeb192bc10e89",
+        "claim": {
+          "mainsnak": {
+            "snaktype": "value",
+            "property": "P625",
+            "hash": "4cd681868711ffbaa7fd1c025b7777aaf30f98be",
+            "datavalue": {
+              "value": {
+                "latitude": 45.463968,
+                "longitude": 9.190578,
+                "altitude": null,
+                "precision": 1e-06,
+                "globe": "http://www.wikidata.org/entity/Q2"
+              },
+              "type": "globecoordinate"
+            },
+            "datatype": "globe-coordinate"
+          },
+          "type": "statement",
+          "id": "Q18068$7858130F-2037-4C0C-9A32-1C91C2B43B22",
+          "rank": "normal",
+          "references": [
+            {
+              "hash": "0137d5206ccfa321572beda1145984926a889482",
+              "snaks": {
+                "P248": [
+                  {
+                    "snaktype": "value",
+                    "property": "P248",
+                    "hash": "d55b25e30a962e2e40cef0d37ca8b19ab7902eb7",
+                    "datavalue": {
+                      "value": {
+                        "entity-type": "item",
+                        "numeric-id": 111178821,
+                        "id": "Q111178821"
+                      },
+                      "type": "wikibase-entityid"
+                    },
+                    "datatype": "wikibase-item"
+                  }
+                ]
+              },
+              "snaks-order": [
+                "P248"
+              ]
+            }
+          ]
+        }
+      },
+      "note": "Cathedral location, not Milan city centre."
+    },
+    "TOPO_07": {
+      "feature": "Cattedrale di Santa Maria del Fiore",
+      "coordinates": [
+        11.256944444444445,
+        43.77305555555556
+      ],
+      "source": {
+        "dataset": "Wikidata P625 (CC0)",
+        "entity": "Q191739",
+        "revision": 2535624323,
+        "url": "https://www.wikidata.org/w/index.php?title=Q191739&oldid=2535624323",
+        "retrieved": "2026-11-12",
+        "entityResponseSha256": "8486cfdce4153a5cbbc7ad788161248d427b7e9a576b34e710ea65a66b974afb",
+        "claim": {
+          "mainsnak": {
+            "snaktype": "value",
+            "property": "P625",
+            "hash": "d613e0e3fd92a0850034052d1e973fa6656559d6",
+            "datavalue": {
+              "value": {
+                "latitude": 43.77305555555556,
+                "longitude": 11.256944444444445,
+                "altitude": null,
+                "precision": 0.0002777777777777778,
+                "globe": "http://www.wikidata.org/entity/Q2"
+              },
+              "type": "globecoordinate"
+            },
+            "datatype": "globe-coordinate"
+          },
+          "type": "statement",
+          "id": "Q191739$E55E9DD6-0D31-4324-BB13-6436783AC284",
+          "rank": "normal",
+          "references": [
+            {
+              "hash": "f6f3d53ad9a3add255ad50d41ca228f86932e0d7",
+              "snaks": {
+                "P248": [
+                  {
+                    "snaktype": "value",
+                    "property": "P248",
+                    "hash": "8931fde9e1e988f2eeeafc690a355ce3d979cc93",
+                    "datavalue": {
+                      "value": {
+                        "entity-type": "item",
+                        "numeric-id": 80199870,
+                        "id": "Q80199870"
+                      },
+                      "type": "wikibase-entityid"
+                    },
+                    "datatype": "wikibase-item"
+                  }
+                ],
+                "P813": [
+                  {
+                    "snaktype": "value",
+                    "property": "P813",
+                    "hash": "3c9660fcd9367333d48d62d239caa60339a07fef",
+                    "datavalue": {
+                      "value": {
+                        "time": "+2020-01-31T00:00:00Z",
+                        "timezone": 0,
+                        "before": 0,
+                        "after": 0,
+                        "precision": 11,
+                        "calendarmodel": "http://www.wikidata.org/entity/Q1985727"
+                      },
+                      "type": "time"
+                    },
+                    "datatype": "time"
+                  }
+                ]
+              },
+              "snaks-order": [
+                "P248",
+                "P813"
+              ]
+            }
+          ]
+        }
+      },
+      "note": "Cathedral location, not Florence city centre."
+    },
+    "TOPO_08": {
+      "feature": "Su Nuraxi di Barumini",
+      "coordinates": [
+        8.991388888888888,
+        39.70583333333334
+      ],
+      "source": {
+        "dataset": "UNESCO World Heritage Centre geographical data",
+        "url": "https://whc.unesco.org/en/list/833/maps/",
+        "retrieved": "2026-11-12",
+        "sourceDms": {
+          "latitude": [
+            39,
+            42,
+            21
+          ],
+          "longitude": [
+            8,
+            59,
+            29
+          ]
+        },
+        "propertyId": "833"
+      },
+      "note": "Actual heritage-site reference; the generic illustration is symbolic, not a surveyed footprint."
+    },
+    "TOPO_09": {
+      "feature": "Tre Cime di Lavaredo, Dolomiti",
+      "coordinates": [
+        12.305556,
+        46.618611
+      ],
+      "source": {
+        "dataset": "Wikidata P625 (CC0)",
+        "entity": "Q1257207",
+        "revision": 2561624122,
+        "url": "https://www.wikidata.org/w/index.php?title=Q1257207&oldid=2561624122",
+        "retrieved": "2026-11-12",
+        "entityResponseSha256": "32cfcab54988b4994cb947a4a8a42dd917f86c8b7df06a45cfb2e5dc3dbe31a3",
+        "claim": {
+          "mainsnak": {
+            "snaktype": "value",
+            "property": "P625",
+            "hash": "28c852915ab50a359781dec0cf962e9d459604a2",
+            "datavalue": {
+              "value": {
+                "latitude": 46.618611,
+                "longitude": 12.305556,
+                "altitude": null,
+                "precision": 1e-05,
+                "globe": "http://www.wikidata.org/entity/Q2"
+              },
+              "type": "globecoordinate"
+            },
+            "datatype": "globe-coordinate"
+          },
+          "type": "statement",
+          "id": "q1257207$0140FDD2-ACFF-4262-A322-3D0A5F2C9E7A",
+          "rank": "normal",
+          "references": [
+            {
+              "hash": "732ec1c90a6f0694c7db9a71bf09fe7f2b674172",
+              "snaks": {
+                "P143": [
+                  {
+                    "snaktype": "value",
+                    "property": "P143",
+                    "hash": "9123b0de1cc9c3954366ba797d598e4e1ea4146f",
+                    "datavalue": {
+                      "value": {
+                        "entity-type": "item",
+                        "numeric-id": 10000,
+                        "id": "Q10000"
+                      },
+                      "type": "wikibase-entityid"
+                    },
+                    "datatype": "wikibase-item"
+                  }
+                ]
+              },
+              "snaks-order": [
+                "P143"
+              ]
+            }
+          ]
+        }
+      },
+      "note": "Declared real mountain-group reference for the three-peak illustration, not a schematic Dolomites-zone centre."
+    },
+    "TOPO_10": {
+      "feature": "Quartiere Monti, trulli di Alberobello",
+      "coordinates": [
+        17.236944444444447,
+        40.78221666666666
+      ],
+      "source": {
+        "dataset": "UNESCO World Heritage Centre geographical data",
+        "url": "https://whc.unesco.org/en/list/787/maps/",
+        "retrieved": "2026-11-12",
+        "sourceDms": {
+          "latitude": [
+            40,
+            46,
+            55.98
+          ],
+          "longitude": [
+            17,
+            14,
+            13
+          ]
+        },
+        "propertyId": "787-006"
+      },
+      "note": "Actual heritage-site reference; the generic illustration is symbolic, not a surveyed footprint."
+    }
+  }
+}

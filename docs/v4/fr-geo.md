@@ -72,7 +72,7 @@ python3 scripts/fr/check-map.py
 
 ## Losse oefenkaart voor 17-11 (tijdelijk, naast V3)
 
-`output/fr/TOPO-Frankrijk-oefenkaart.html` is één offline bestand van 346 KB, in de opzet van v1:
+`output/fr/TOPO-Frankrijk-oefenkaart.html` is één offline bestand van 1,3 MB, in de opzet van v1:
 - **Leren:** per hoofdstuk, of alle namen tonen.
 - **Aanwijzen:**
   - stippen en rivieren tellen binnen 22 px, vlakken binnen de vorm of tot 14 px naast de rand;
@@ -88,6 +88,8 @@ python3 scripts/fr/check-map.py
 - **Namen schrijven:** hoofdletters tellen niet. Zonder accent meldt hij "bijna" met de juiste schrijfwijze. De spelling "LeHavre" van het blad telt als goed.
 - **Toets:** elke plek één keer, om en om aanwijzen en schrijven, met uitslag en cijfer. In de toets moet de schrijfwijze foutloos zijn.
 - **Mijn fouten:** een apart hoofdstuk.
+- **Schoolblad:** de knop rechts in de balk opent de originele foto's, met de tabs Lijst (IMG_0802) en Leerkaart (IMG_0801), en de knoppen Vergroot, Sluiten en Escape. In de app staan webkopieën in JPEG van 1700 px; de originelen blijven in `docs/v4/bron/`. Daardoor is het bestand nu 1,3 MB.
+- **Nagekeken tegen de leerkaart (IMG_0801):** dezelfde 14 stippen op dezelfde plekken, en dezelfde rivierlopen. De schoolkaart is iets hoger door een andere projectie.
 - **Beloning (besluit eigenaar 12-11):** elk goed antwoord bij het oefenen levert een Frans gebakje op, in deze volgorde: croissant, pain au chocolat, macaron, éclair, tartelette, chou à la crème, mille-feuille, madeleine. Acht gebakjes vullen een bakkerijdoos (zoals 8 pizzapunten), en drie volle dozen geven een Vespa-rit (de rode master-Vespa met Nino) naar de volgende Franse stad. In de toets zijn er geen beloningen. Bij "verminderde beweging" staat er geen rij-animatie, alleen de melding.
 - **Opslag:** de voortgang staat in `topo-frankrijk-v1`, alleen op het apparaat.
 

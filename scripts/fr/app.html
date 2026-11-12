@@ -83,6 +83,18 @@ svg#map{cursor:pointer}
 .frame{fill:none;stroke:#849685;stroke-width:1.2;pointer-events:none}
 @media (prefers-reduced-motion:no-preference){.pulse{animation:pulse 1.2s ease-in-out infinite}@keyframes pulse{50%{opacity:.45}}}
 footer{padding:0 18px 18px;color:var(--soft);font-size:12px}
+.sheetbtn{margin-left:auto}
+nav button.sheetbtn{background:#fff6ec;box-shadow:inset 0 0 0 1px #f0dcc4}
+#sheet{position:fixed;inset:0;background:#2a244077;display:grid;place-items:center;z-index:45;padding:12px}
+#sheet[hidden]{display:none}
+.sheetcard{background:#fff;border-radius:18px;padding:14px;width:min(980px,98vw);height:min(94vh,1100px);display:flex;flex-direction:column;gap:10px;box-shadow:0 20px 50px #0004}
+.sheethead{display:flex;align-items:center;gap:8px;flex-wrap:wrap}
+.sheethead h2{margin:0 8px 0 0;font-size:20px}
+.sheethead #sheetZoom{margin-left:auto}
+.chip[aria-pressed=true]{background:var(--violet);color:#fff;box-shadow:none}
+.sheetscroll{flex:1;overflow:auto;border-radius:12px;background:#f4f1ea;-webkit-overflow-scrolling:touch}
+.sheetscroll img{display:block;width:100%;height:auto;margin:0 auto}
+.sheetscroll.zoom img{width:200%;max-width:none}
 /* beloning: bakkerijdoos met 8 gebakjes, 3 volle dozen = Vespa-rit */
 header{flex-wrap:wrap}
 .box{display:flex;align-items:center;gap:10px;background:#fff6ec;border-radius:12px;padding:6px 10px;box-shadow:inset 0 0 0 1px #f0dcc4}
@@ -141,12 +153,18 @@ header{flex-wrap:wrap}
   <button data-mode="wijs" aria-pressed="false">Aanwijzen</button>
   <button data-mode="schrijf" aria-pressed="false">Namen schrijven</button>
   <button data-mode="toets" aria-pressed="false">Toets</button>
+  <button id="sheetBtn" class="sheetbtn" type="button">Schoolblad</button>
 </nav>
 <main>
   <div class="mapwrap"><svg id="map" role="img" aria-label="Kaart van Frankrijk"></svg></div>
   <section class="panel" id="panel" aria-live="polite"></section>
 </main>
 <div id="pick" hidden role="dialog" aria-modal="true" aria-labelledby="pickT"><div class="pickcard"><h2 id="pickT">Welke plek bedoel je?</h2><p id="pickP">Hier liggen meer plekken dicht bij elkaar. Kies het nummer.</p><svg id="pickmap" aria-hidden="true"></svg><div id="pickBtns"></div><button class="btn" id="pickX" type="button">Annuleren</button></div></div>
+<div id="sheet" hidden role="dialog" aria-modal="true" aria-labelledby="sheetT"><div class="sheetcard">
+  <div class="sheethead"><h2 id="sheetT">Schoolblad</h2><div class="row" role="tablist"><button type="button" class="chip" data-sheet="lijst" aria-pressed="true">Lijst</button><button type="button" class="chip" data-sheet="kaart" aria-pressed="false">Leerkaart</button></div><button type="button" class="btn" id="sheetZoom">Vergroot</button><button type="button" class="btn primary" id="sheetX">Sluiten</button></div>
+  <div class="sheetscroll" id="sheetScroll"><img id="sheetImg" alt="Schoolblad Topografie Frankrijk" src="__SB_LIJST__"></div>
+  <p class="muted">Origineel blad van school (foto). De app volgt deze lijst: 44 plekken.</p>
+</div></div>
 <div id="toast" role="status"></div>
 <div id="ride" aria-hidden="true"><div class="msg" id="rideMsg"></div><div class="scoot"><img class="n" alt="" src="__NINO__"><img class="v" alt="" src="__VESPA__"></div></div>
 <footer>Kaartdata: Natural Earth (publiek domein). Lesstof: schoolblad "Topografie Frankrijk". Voortgang blijft alleen op dit apparaat.</footer>
@@ -376,7 +394,7 @@ let mode='leren', deck=[], qi=0, cur=null, answered=false, onTap=null, test=null
 function next(){ if(!deck.length) return null; if(qi>=deck.length){deck=shuffle(deck);qi=0;
     if(deck.length>1&&deck[0]===cur){[deck[0],deck[1]]=[deck[1],deck[0]];}} return deck[qi++]; }
 
-function start(m){mode=m;document.querySelectorAll('nav button').forEach(b=>b.setAttribute('aria-pressed',b.dataset.mode===m));
+function start(m){mode=m;document.querySelectorAll('nav [data-mode]').forEach(b=>b.setAttribute('aria-pressed',b.dataset.mode===m));
   clearMarks();onTap=null;answered=false;test=null;deck=shuffle(chapterItems());qi=0;cur=null;
   ({leren:leren,wijs:wijs,schrijf:schrijf,toets:toetsStart})[m]();}
 
@@ -476,9 +494,22 @@ svg.addEventListener('pointermove',e=>{ if(e.pointerType==='touch') return; cons
   cancelAnimationFrame(hovRaf); hovRaf=requestAnimationFrame(()=>{const p=toSvg(cx,cy); setHover(hoverAt(p.x,p.y));}); });
 svg.addEventListener('pointerleave',()=>{cancelAnimationFrame(hovRaf);setHover(null);});
 
+// ---------- schoolblad bekijken ----------
+const SHEETS={lijst:'__SB_LIJST__',kaart:'__SB_KAART__'};
+const sheet=document.getElementById('sheet'), sheetImg=document.getElementById('sheetImg'), sheetScroll=document.getElementById('sheetScroll');
+function openSheet(){sheet.hidden=false;document.getElementById('sheetX').focus();}
+function closeSheet(){sheet.hidden=true;document.getElementById('sheetBtn').focus();}
+document.getElementById('sheetBtn').onclick=openSheet;
+document.getElementById('sheetX').onclick=closeSheet;
+sheet.addEventListener('click',e=>{if(e.target===sheet)closeSheet();});
+document.getElementById('sheetZoom').onclick=e=>{const z=sheetScroll.classList.toggle('zoom');e.target.textContent=z?'Verklein':'Vergroot';};
+sheet.querySelectorAll('[data-sheet]').forEach(b=>b.onclick=()=>{sheet.querySelectorAll('[data-sheet]').forEach(x=>x.setAttribute('aria-pressed',x===b));
+  sheetImg.src=SHEETS[b.dataset.sheet];sheetImg.alt=b.dataset.sheet==='lijst'?'Schoolblad: lijst met 44 plekken':'Schoolblad: leerkaart';sheetScroll.scrollTo(0,0);});
+document.addEventListener('keydown',e=>{if(e.key==='Escape'&&!sheet.hidden)closeSheet();});
+
 // ---------- invoer ----------
 svg.addEventListener('click',e=>{ if(!onTap) return; const p=toSvg(e.clientX,e.clientY); if(p.x<0||p.y<0||p.x>W||p.y>H) return; onTap(p.x,p.y); });
-document.querySelectorAll('nav button').forEach(b=>b.onclick=()=>start(b.dataset.mode));
+document.querySelectorAll('nav [data-mode]').forEach(b=>b.onclick=()=>start(b.dataset.mode));
 stats();boxRender(-1);start("leren");
 </script>
 </body>

@@ -68,6 +68,7 @@ python3 scripts/fr/check-map.py
 - **Namen schrijven:** hoofdletters tellen niet. Zonder accent meldt hij "bijna" met de juiste schrijfwijze. De spelling "LeHavre" van het blad telt als goed.
 - **Toets:** elke plek één keer, om en om aanwijzen en schrijven, met uitslag en cijfer. In de toets moet de schrijfwijze foutloos zijn.
 - **Mijn fouten:** een apart hoofdstuk.
+- **Beloning (besluit eigenaar 12-11):** elk goed antwoord bij het oefenen levert een Frans gebakje op, in deze volgorde: croissant, pain au chocolat, macaron, éclair, tartelette, madeleine. Zes gebakjes vullen een bakkerijdoos, en drie volle dozen geven een Vespa-rit (de rode master-Vespa met Nino) naar de volgende Franse stad. In de toets zijn er geen beloningen. Bij "verminderde beweging" staat er geen rij-animatie, alleen de melding.
 - **Opslag:** de voortgang staat in `topo-frankrijk-v1`, alleen op het apparaat.
 
 Bouwen en testen:
@@ -80,5 +81,7 @@ python3 scripts/fr/test-app.py chromium
 De test tikt alle 44 plekken goed aan en schrijft alle 44 namen. Daarnaast test hij varianten, een fout antwoord en een toets. Screenshots staan in `output/fr/screens/`.
 
 **Niet getest hier:** WebKit/Safari (niet installeerbaar in deze omgeving). De iPad-test doet de eigenaar.
+
+**Voor de V3-chat:** volgens de overdracht is de beloningsregel in de kern 8 punten per beloning en 3 per rit (Italië: 8 pizzapunten). De eigenaar kiest voor Frankrijk 6 gebakjes per doos. Daarvoor moet de kern het aantal per land kunnen instellen, of Frankrijk gaat ook naar 8. Dat is een besluit voor de runtime-migratie. De gebakjes zijn eenvoudige SVG-iconen, geen artwork uit spoor C.
 
 Deze kaart is geen V3-scherm. In V4 gaat dezelfde `data/fr/map.json` mee in het landpakket `src/lands/fr/`.

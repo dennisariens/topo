@@ -71,6 +71,31 @@ ul.items small{font-weight:500;opacity:.7}
 .tap{fill:none;stroke:var(--ink);stroke-width:1.5;stroke-dasharray:3 3;pointer-events:none}
 @media (prefers-reduced-motion:no-preference){.pulse{animation:pulse 1.2s ease-in-out infinite}@keyframes pulse{50%{opacity:.45}}}
 footer{padding:0 18px 18px;color:var(--soft);font-size:12px}
+/* beloning: bakkerijdoos met 6 gebakjes, 3 volle dozen = Vespa-rit */
+header{flex-wrap:wrap}
+.box{display:flex;align-items:center;gap:10px;background:#fff6ec;border-radius:12px;padding:6px 10px;box-shadow:inset 0 0 0 1px #f0dcc4}
+.slots{display:grid;grid-template-columns:repeat(6,32px);gap:4px}
+.slot{width:32px;height:32px;border-radius:9px;background:#f2e3cf;display:grid;place-items:center}
+.slot svg{width:30px;height:30px}
+.boxinfo{font-size:12px;color:var(--soft);line-height:1.25;min-width:64px}
+.boxinfo b{font-size:15px;color:var(--ink)}
+#toast{position:fixed;left:50%;top:96px;transform:translate(-50%,-260%);background:#fff;border-radius:16px;padding:10px 16px;box-shadow:0 10px 30px #0003;display:flex;align-items:center;gap:10px;font-weight:700;font-size:18px;z-index:20;opacity:0;transition:transform .35s ease,opacity .35s}
+#toast.on{transform:translate(-50%,0);opacity:1}
+#toast svg{width:44px;height:44px}
+#ride{position:fixed;inset:0;pointer-events:none;display:none;z-index:30;background:linear-gradient(#0000 55%,#2a244018)}
+#ride.on{display:block}
+#ride .scoot{position:absolute;bottom:9%;left:-300px;width:260px}
+#ride .scoot img.v{width:260px;display:block}
+#ride .scoot img.n{position:absolute;width:86px;height:86px;border-radius:50%;left:52px;top:-18px;border:3px solid #fff;box-shadow:0 4px 12px #0003}
+#ride .msg{position:absolute;top:26%;left:50%;transform:translateX(-50%);background:#fff;border-radius:18px;padding:16px 24px;font-weight:700;font-size:24px;box-shadow:0 10px 30px #0003;text-align:center;white-space:nowrap}
+#ride .msg small{display:block;font-size:15px;color:var(--soft);font-weight:600}
+@media (prefers-reduced-motion:no-preference){
+ .pop{animation:pop .55s cubic-bezier(.3,1.6,.5,1)}
+ @keyframes pop{0%{transform:scale(0) rotate(-25deg)}100%{transform:none}}
+ #ride.on .scoot{animation:drive 3.4s cubic-bezier(.45,0,.55,1) forwards}
+ @keyframes drive{0%{transform:translateX(0) rotate(0)}20%{transform:translateX(25vw) rotate(-1.5deg)}40%{transform:translateX(50vw) rotate(1deg)}100%{transform:translateX(calc(100vw + 340px)) rotate(0)}}
+}
+@media (prefers-reduced-motion:reduce){#ride .scoot{left:50%;margin-left:-130px}}
 </style>
 </head>
 <body>
@@ -78,6 +103,7 @@ footer{padding:0 18px 18px;color:var(--soft);font-size:12px}
   <img alt="" src="__NINO__">
   <div><h1>Topo Frankrijk</h1><small>Oefenkaart van het schoolblad · 44 plekken</small></div>
   <div class="stats">
+    <div class="box" aria-label="Bakkerijdoos"><div class="slots" id="slots"></div><div class="boxinfo"><b id="sBoxes">0</b> <span id="lBoxes">dozen</span><br><b id="sRides">0</b> <span id="lRides">ritten</span></div></div>
     <div class="stat"><b id="sGood">0</b><span>goed</span></div>
     <div class="stat"><b id="sStreak">0</b><span>reeks</span></div>
     <div class="stat"><b id="sMiss">0</b><span>fouten</span></div>
@@ -93,6 +119,8 @@ footer{padding:0 18px 18px;color:var(--soft);font-size:12px}
   <div class="mapwrap"><svg id="map" role="img" aria-label="Kaart van Frankrijk"></svg></div>
   <section class="panel" id="panel" aria-live="polite"></section>
 </main>
+<div id="toast" role="status"></div>
+<div id="ride" aria-hidden="true"><div class="msg" id="rideMsg"></div><div class="scoot"><img class="n" alt="" src="__NINO__"><img class="v" alt="" src="__VESPA__"></div></div>
 <footer>Kaartdata: Natural Earth (publiek domein). Lesstof: schoolblad "Topografie Frankrijk". Voortgang blijft alleen op dit apparaat.</footer>
 <script>
 'use strict';
@@ -173,8 +201,37 @@ function chapterSelect(){
 function bindChapter(){const s=panel.querySelector('#chap');if(s)s.onchange=()=>{S.chapter=s.value;save();start(mode)};}
 const shuffle=a=>{a=a.slice();for(let i=a.length-1;i>0;i--){const j=Math.random()*(i+1)|0;[a[i],a[j]]=[a[j],a[i]]}return a};
 
+// ---------- beloning: 6 Franse gebakjes per doos, 3 volle dozen = Vespa-rit ----------
+const ST='stroke="#a8641d" stroke-width="1.5"';
+const PASTRY=[
+ ['croissant',`<path d="M5 31c4-12 14-19 19-19s15 7 19 19c-3 2-7 1-9-2-2 4-6 6-10 6s-8-2-10-6c-2 3-6 4-9 2z" fill="#e3a446" ${ST}/><path d="M16 17l4 16M24 13v21M32 17l-4 16" fill="none" ${ST}/>`],
+ ['pain au chocolat',`<rect x="6" y="16" width="36" height="18" rx="7" fill="#e2a24a" ${ST}/><path d="M14 17v16M34 17v16" stroke="#5a3418" stroke-width="3.5"/><path d="M8 23h32" stroke="#c98a32" stroke-width="1.2"/>`],
+ ['macaron',`<ellipse cx="24" cy="30" rx="16" ry="7" fill="#f2a7c3" stroke="#c9638c" stroke-width="1.5"/><rect x="9" y="22" width="30" height="6" rx="3" fill="#fff4e6"/><ellipse cx="24" cy="19" rx="16" ry="7" fill="#f5b5cd" stroke="#c9638c" stroke-width="1.5"/>`],
+ ['eclair',`<rect x="5" y="21" width="38" height="13" rx="6.5" fill="#e8b766" ${ST}/><rect x="7" y="17" width="34" height="8" rx="4" fill="#5a3418"/><path d="M12 19.5h8" stroke="#8a5a34" stroke-width="1.5" stroke-linecap="round"/>`],
+ ['tartelette',`<path d="M7 25h34l-4 12H11z" fill="#e2a24a" ${ST}/><ellipse cx="24" cy="25" rx="17" ry="4" fill="#fff4d6" stroke="#a8641d" stroke-width="1.2"/><circle cx="16" cy="21" r="4.5" fill="#e0353a"/><circle cx="24.5" cy="19" r="5" fill="#e0353a"/><circle cx="33" cy="21.5" r="4.5" fill="#e0353a"/><path d="M24 14l2-3" stroke="#3f8f3a" stroke-width="2" stroke-linecap="round"/>`],
+ ['madeleine',`<path d="M7 31c0-10 7-18 17-18s17 8 17 18c-5 3-11 4-17 4s-12-1-17-4z" fill="#eab35a" ${ST}/><path d="M24 15v19M17 17l3 16M31 17l-3 16M11 23l7 10M37 23l-7 10" fill="none" stroke="#c98a32" stroke-width="1.2"/>`]];
+const pastrySvg=i=>`<svg viewBox="0 0 48 48" role="img" aria-label="${PASTRY[i][0]}">${PASTRY[i][1]}</svg>`;
+const BOX_SVG='<svg viewBox="0 0 48 48"><rect x="6" y="16" width="36" height="24" rx="3" fill="#f6d6e3" stroke="#c9638c" stroke-width="1.5"/><path d="M6 16l4-6h28l4 6" fill="#fbe7ef" stroke="#c9638c" stroke-width="1.5"/><path d="M24 10v30" stroke="#6a4fd6" stroke-width="3"/><path d="M24 12c-6-8-12-2-6 1M24 12c6-8 12-2 6 1" fill="none" stroke="#6a4fd6" stroke-width="2.5"/></svg>';
+const RIDE_TO=['Parijs','Lille','Straatsburg','Lyon','Marseille','Nice','Montpellier','Toulouse','Bordeaux','Nantes','Le Havre'];
+S.pz=S.pz||0;S.boxes=S.boxes||0;
+function boxRender(popAt,shown){const n=shown==null?S.pz:shown;slots.innerHTML=PASTRY.map((_,i)=>`<div class="slot">${i<n?`<span${i===popAt?' class="pop"':''} style="display:grid">${pastrySvg(i)}</span>`:''}</div>`).join('');
+  const r=Math.floor(S.boxes/3);sBoxes.textContent=S.boxes;sRides.textContent=r;lBoxes.textContent=S.boxes===1?"doos":"dozen";lRides.textContent=r===1?"rit":"ritten";}
+let toastT=0;
+function toast(html){const t=document.getElementById('toast');t.innerHTML=html;t.classList.add('on');clearTimeout(toastT);toastT=setTimeout(()=>t.classList.remove('on'),1800);}
+function ride(){const r=document.getElementById('ride'),n=Math.floor(S.boxes/3);
+  rideMsg.innerHTML=`3 dozen vol!<small>Nino rijdt met de Vespa naar ${RIDE_TO[(n-1)%RIDE_TO.length]}</small>`;
+  r.classList.remove('on');void r.offsetWidth;r.classList.add('on');setTimeout(()=>r.classList.remove('on'),3600);}
+function reward(){
+  const at=S.pz;S.pz++;
+  if(S.pz<6) return boxRender(at);
+  // doos vol: teller meteen terug (snel doortikken telt dus nooit dubbel), volle doos nog even tonen
+  S.pz=0;S.boxes++;save();boxRender(at,6);const rideNow=S.boxes%3===0;
+  setTimeout(()=>{boxRender(-1);toast(`${BOX_SVG}<span>Doos vol!</span>`);if(rideNow) setTimeout(ride,700);},650);
+}
+
 // ---------- score ----------
-function score(ok,id){ if(ok){S.good++;streak++; if(S.mistakes[id]) S.mistakes[id]=Math.max(0,S.mistakes[id]-1);} else {S.miss++;streak=0;S.mistakes[id]=(S.mistakes[id]||0)+1;}
+function score(ok,id){ if(ok){S.good++;streak++; if(S.mistakes[id]) S.mistakes[id]=Math.max(0,S.mistakes[id]-1); if(mode!=='toets') reward();}
+  else {S.miss++;streak=0;S.mistakes[id]=(S.mistakes[id]||0)+1;}
   save();stats();}
 function stats(){sGood.textContent=S.good;sStreak.textContent=streak;sMiss.textContent=S.miss;}
 
@@ -276,7 +333,7 @@ function toetsEnd(){
 // ---------- invoer ----------
 svg.addEventListener('click',e=>{ if(!onTap) return; const p=toSvg(e.clientX,e.clientY); onTap(p.x,p.y); });
 document.querySelectorAll('nav button').forEach(b=>b.onclick=()=>start(b.dataset.mode));
-stats();start('leren');
+stats();boxRender(-1);start("leren");
 </script>
 </body>
 </html>

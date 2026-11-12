@@ -18,7 +18,7 @@
 | Wateren › Rivieren | G–L | Garonne, Loire, Maas, Rhône, Rijn, Seine | 6 |
 | **Totaal** | | | **44** |
 
-Per item staan in de JSON: id, schoolcode, Nederlandse naam (zoals op het blad), Franse naam, type, hoofdstuk, plek op het blad en de toegestane schrijfvarianten. De Franse namen staan niet op het blad. Ze zijn er alleen voor de beleving en tellen in Namen schrijven niet als goed antwoord.
+Per item staan in de JSON: id, schoolcode, Nederlandse naam (zoals op het blad), Franse naam, type, hoofdstuk, plek op het blad en de andere goede schrijfwijzen (LeHavre, Kanaal). Zonder accent is niet foutloos. De Franse namen staan niet op het blad. Ze zijn er alleen voor de beleving en tellen in Namen schrijven niet als goed antwoord.
 
 ## 11 hoofdstukken
 
@@ -56,4 +56,4 @@ Afgeleid, dus niet van het blad: de knip van de steden in 5/5/4, het samenvoegen
 ## Open (eigenaar)
 
 - School en methode aanvullen in `docs/v4/bron/README.md`.
-- Besluit: tellen Franse namen als goed? Voorstel: nee.
+- Besluit: tellen Franse namen als goed? Voorstel: nee (zo staat het nu in de oefenkaart).

@@ -11,7 +11,7 @@
   "code": "schoolcode zoals op het blad",
   "blad": "plek op IMG_0802: kolom › kopje › code",
   "chapter": "1–11, zie chapters",
-  "aliases": "toegestane schrijfvarianten (zonder accenten); Franse namen niet automatisch goed"
+  "aliases": "andere goede schrijfwijzen: 'LeHavre' (spelling van het blad) en 'Kanaal'. Hoofdletters tellen niet. Zonder accent is niet foutloos: bij oefenen 'bijna', in de toets fout. Franse namen tellen niet."
  },
  "chapters": [
   {
@@ -177,8 +177,7 @@
    "chapter": 1,
    "blad": "Plaatsen › Belangrijke steden › nr. 3",
    "aliases": [
-    "LeHavre",
-    "Havre"
+    "LeHavre"
    ],
    "opmerking": "op het blad gespeld als 'LeHavre' (Plaatsen › Belangrijke steden › nr. 3); hier de gangbare spelling, de bladspelling telt ook goed"
   },
@@ -320,9 +319,7 @@
    "type": "gebergte",
    "chapter": 4,
    "blad": "Gebieden › Bergen en vulkanen › c",
-   "aliases": [
-    "Pyreneeen"
-   ]
+   "aliases": []
   },
   {
    "id": "vogezen",
@@ -372,9 +369,7 @@
    "type": "regio",
    "chapter": 5,
    "blad": "Gebieden › Streken › h",
-   "aliases": [
-    "Normandie"
-   ]
+   "aliases": []
   },
   {
    "id": "provence",
@@ -404,9 +399,7 @@
    "type": "buurland",
    "chapter": 6,
    "blad": "Gebieden › Landen › b",
-   "aliases": [
-    "Belgie"
-   ]
+   "aliases": []
   },
   {
    "id": "duitsland",
@@ -426,11 +419,7 @@
    "type": "buurland",
    "chapter": 6,
    "blad": "Gebieden › Landen › d",
-   "aliases": [
-    "Groot-Brittannie",
-    "Groot Brittannië",
-    "Groot Brittannie"
-   ]
+   "aliases": []
   },
   {
    "id": "italie",
@@ -440,9 +429,7 @@
    "type": "buurland",
    "chapter": 6,
    "blad": "Gebieden › Landen › e",
-   "aliases": [
-    "Italie"
-   ]
+   "aliases": []
   },
   {
    "id": "luxemburg",
@@ -502,9 +489,7 @@
    "type": "zee",
    "chapter": 8,
    "blad": "Wateren › Zeeën, oceanen › B",
-   "aliases": [
-    "Atlantische oceaan"
-   ]
+   "aliases": []
   },
   {
    "id": "middellandse-zee",
@@ -586,9 +571,7 @@
    "type": "rivier",
    "chapter": 11,
    "blad": "Wateren › Rivieren › J",
-   "aliases": [
-    "Rhone"
-   ]
+   "aliases": []
   },
   {
    "id": "rijn",

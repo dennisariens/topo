@@ -17,7 +17,8 @@ ROOT = Path(__file__).resolve().parents[2]
 M = json.loads((ROOT / "data/fr/map.json").read_text("utf-8"))
 ITEMS = json.loads((ROOT / "data/fr/items.draft.json").read_text("utf-8"))["items"]
 W, H = M["viewBox"][2], M["viewBox"][3]
-KM = W / 19 / (111.32 * 0.6884)  # SVG-eenheden per km (oost-west, op 46.6 graden)
+U = M["projectie"]["uitsnede"]
+KM = W / (U["lon"][1] - U["lon"][0]) / (111.32 * 0.6871)  # SVG-eenheden per km (oost-west, op 46.6 graden)
 
 
 def parts(d):
@@ -87,5 +88,8 @@ for a in ["noordzee", "atlantische-oceaan", "middellandse-zee", "het-kanaal", "n
     check(not G[a].intersects(FR.buffer(-1)), f"{a}: geen water over Frankrijk")
 check(G["nauw-van-calais"].distance(G["het-kanaal"]) < 1 and G["nauw-van-calais"].distance(G["noordzee"]) < 1,
       "nauw van calais ligt tussen het kanaal en de noordzee")
+check(G["atlantische-oceaan"].area > 5000, "atlantische oceaan is goed zichtbaar (> 5000 eenheden2)")
+check(G["golf-van-biskaje"].distance(G["spanje"]) < 1 and G["golf-van-biskaje"].distance(G["bretagne"]) < 3 * KM, "golf van biskaje ligt tussen spanje en bretagne")
+check(G["atlantische-oceaan"].distance(G["golf-van-biskaje"]) < 1 and G["atlantische-oceaan"].distance(G["het-kanaal"]) < 1, "atlantische oceaan grenst aan biskaje en het kanaal")
 print(f"\n{len(errors)} fout(en)")
 sys.exit(1 if errors else 0)

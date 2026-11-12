@@ -18,7 +18,7 @@ ROOT = Path(__file__).resolve().parents[2]
 NE = Path(sys.argv[1] if len(sys.argv) > 1 else "ne")
 
 # Uitsnede zoals het leerblad (IMG_0801): Zuid-Engeland tot Corsica, Bretagne tot Noord-Italie.
-LON0, LON1, LAT0, LAT1 = -6.0, 13.0, 40.8, 52.4
+LON0, LON1, LAT0, LAT1 = -7.6, 13.6, 40.8, 52.4  # opgemeten op IMG_0801 (punt Bretagne, Corsica)
 PHI = 46.6  # middenbreedte voor de equirectangulaire projectie
 W = 1000.0
 K = W / (LON1 - LON0)
@@ -122,6 +122,12 @@ def sea(names):
 # ruim over land getrokken en daarna met het land afgesneden.
 STRAIT_ZONE = Polygon([(0.97, 50.91), (1.40, 51.17), (1.92, 51.00), (1.58, 50.87)]).intersection(WATER)
 
+# Open oceaan: water ten westen van de IHO-grenzen van de Golf van Biskaje (Pointe de Penmarch - Cap Ortegal)
+# en van Het Kanaal (Ouessant - Land's End). Natural Earth rekent dat water tot Biskaje en het Kanaal,
+# waardoor de Atlantische Oceaan in deze uitsnede bijna zou verdwijnen.
+ATL_WEST = Polygon([(LON0 - 3, LAT0 - 3), (-7.87, 43.77), (-4.37, 47.80), (-5.10, 48.45), (-5.70, 50.07),
+                    (-5.70, LAT1 + 3), (LON0 - 3, LAT1 + 3)])
+
 GEO = {
     # gebieden
     "corsica": uni(["Haute-Corse", "Corse-du-Sud"], deps),
@@ -140,14 +146,12 @@ GEO = {
     "zwitserland": countries["Switzerland"],
     # wateren
     "noordzee": sea(["North Sea"]).difference(STRAIT_ZONE),
-    "atlantische-oceaan": unary_union([sea(["North Atlantic Ocean"]), WATER.intersection(box(LON0 - 1, LAT0, 0.0, LAT1 + 1))])
-    .difference(unary_union([marine[n] for n in ("Bay of Biscay", "English Channel", "North Sea", "Bristol Channel",
-                                                  "Irish Sea") if n in marine])),
+    "atlantische-oceaan": WATER.intersection(ATL_WEST).difference(unary_union([marine[n] for n in ("North Sea", "Irish Sea", "Bristol Channel") if n in marine])),
     "middellandse-zee": sea([n for n in ("Mediterranean Sea", "Golfe du Lion", "Ligurian Sea", "Balearic Sea",
                                          "Tyrrhenian Sea") if n in marine]),
-    "het-kanaal": sea(["English Channel"]).difference(STRAIT_ZONE),
+    "het-kanaal": sea(["English Channel"]).difference(STRAIT_ZONE).difference(ATL_WEST),
     "nauw-van-calais": STRAIT_ZONE,
-    "golf-van-biskaje": sea(["Bay of Biscay"]),
+    "golf-van-biskaje": sea(["Bay of Biscay"]).difference(ATL_WEST),
     "garonne": river({"Garonne"}), "loire": river({"Loire"}), "maas": river({"Maas", "Meuse"}),
     "rhone": river({"Rhône", "Rhone"}), "rijn": river({"Rhine", "Rhin"}), "seine": river({"Seine"}),
 }
@@ -164,7 +168,9 @@ ZONES = {  # geen gemeten grens: educatieve zone of bron-'Range/mtn'-vlak
     "provence": "historische streek, benaderd met de departementen Bouches-du-Rhone, Var, Vaucluse, Alpes-de-Haute-Provence",
     "dordogne": "streek gelijkgesteld aan het departement Dordogne",
     "nauw-van-calais": "zone tussen de lijnen Dungeness-Cap Gris-Nez en Leathercoat Point-Walde (benaderd)",
-    "atlantische-oceaan": "zone: Natural Earth 'North Atlantic Ocean' + al het open water ten westen van 0 graden lengte, zonder Golf van Biskaje, Kanaal, Noordzee, Bristol Channel en Irish Sea",
+    "atlantische-oceaan": "zone: open water ten westen van de IHO-lijnen Penmarch-Cap Ortegal en Ouessant-Land's End",
+    "golf-van-biskaje": "Natural Earth 'Bay of Biscay' oostelijk van de IHO-lijn Penmarch-Cap Ortegal",
+    "het-kanaal": "Natural Earth 'English Channel' oostelijk van Ouessant-Land's End, zonder Nauw van Calais",
     "middellandse-zee": "Natural Earth Mediterranean Sea + Golfe du Lion, Ligurian, Balearic, Tyrrhenian Sea",
 }
 MICRO = {"monaco", "andorra"}  # te klein om te tikken: symbolische locator (zoals San Marino in Italie)

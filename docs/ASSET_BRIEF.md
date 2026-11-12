@@ -1,4 +1,4 @@
-# TOPO — Assetbriefing fase 1 (ChatGPT-prompts, 36 assets)
+# TOPO — Assetbriefing fase 1 (ChatGPT-prompts)
 
 Werkwijze: jij genereert in ChatGPT en plaatst de bestanden hier in de chat (of in een gekoppelde map). Ik controleer, hernoem, converteer naar WebP en zet ze in de repo.
 
@@ -74,70 +74,54 @@ Rijdende pose bestaat al (`nino-op-de-scooter.webp`). Nodig: 8 losse poses, **st
 
 > 4 (UI-componenten) en 5 (kaart) genereer je **niet**: die bouw ik als SVG in code. De kaart komt uit geografische brondata.
 
+## Status (12 nov 2026)
+
+Universeel klaar: 1a–1h (+ 1b-variant), 2a–2d, 3a–3b, met masters. Frankrijk: nog niets.
+Bijgewerkt na de V4-besluiten: Frankrijk heeft **11 hoofdstukken** (per kopje op het schoolblad) en de beloning is een **gebakjesdoos met 6 Franse gebakjes; 3 volle dozen = een Vespa-rit**. De bakkerijvitrine en de 5 regio-stempels uit de eerste versie vervallen.
+
+Volgorde Frankrijk: 6 → 7 → 8 → 9. Stempels en tegels per hoofdstuk (10) pas na de oefenkaart.
+
 ## 6 · Hero Frankrijk — 1536×1024
+
+Upload als extra referentie `vespa-zij` (2a), zodat de scooter gelijk blijft.
 
 - **6 Hero** — `Wide cinematic scene: Nino rides the red scooter toward the viewer on a sunny country road entering France, right third of the frame. At the roadside a small blue-and-white enamel road sign reads exactly "France". Background: gentle rolling fields with lavender rows, a stone farmhouse with blue shutters, distant poplar trees, a small village with a church spire on a hill, soft summer sky. Same render style and light as the Italian harbour reference. Keep Nino, the sign and horizon within the middle band of the image; plenty of plain sky on top and road at the bottom for cropping.`
 
 Controleer zelf het bord: alleen "France", correct gespeld. Anders opnieuw.
 
-## 7 · Bakkerijvitrine + baksels (Frankrijk) — transparant
+## 7 · Gebakjesdoos + 6 gebakjes (Frankrijk) — transparant
 
-- **7a Vitrine leeg** (1536×1024) — `A charming French bakery display case, front view, flat-on with no perspective: wooden frame painted pale sage green, curved glass front, three empty shelves with white paper doilies, small brass details. No text. Transparent background.`
-- **7b Vitrine vol** (1536×1024) — `The exact same display case, same angle and size, now with all three shelves full of croissants, baguettes, pastel macarons and pains au chocolat, neatly arranged. Transparent background.`
-- **7c Croissant** (1024×1024) — `A single golden flaky croissant, three-quarter view, appetizing, same 3D film style, transparent background, readable at 64 pixels.`
-- **7d Stokbrood** (1024×1024) — `A single French baguette lying diagonally, golden crust with scoring, transparent background, readable at 64 pixels.`
-- **7e Macaron** (1024×1024) — `A single pastel pink macaron, three-quarter view, transparent background, readable at 64 pixels.`
-- **7f Pain au chocolat** (1024×1024) — `A single pain au chocolat with two chocolate stripes visible on the ends, transparent background, readable at 64 pixels.`
+De doos is de voortgangsbalk: elk vakje vult zich met een gebakje. Daarom moeten doos en gebakjes exact op elkaar passen: eerst de doos, dan de gebakjes in dezelfde chat.
 
-Zelfde camera-afstand en licht voor 7c–7f, zodat ze naast elkaar even groot ogen.
+- **7a Doos leeg** (1536×1024) — `An open French pâtisserie box seen from straight above (top-down, no perspective): cream cardboard with a thin gold edge, lid folded open at the top edge, inside a 3×2 grid of six empty round paper cups with crisp white doilies, evenly spaced. No text, no logos. Transparent background.`
+- **7b Doos vol** (1536×1024) — `The exact same box, same top-down angle, size and position, now with one pastry in each cup: croissant, pain au chocolat, pink macaron, chocolate éclair, strawberry tartlet, madeleine. Transparent background.`
+- **7c–7h Gebakjes** (1024×1024, elk apart, bovenaanzicht zoals in de doos) — `A single [GEBAKJE] seen from straight above, sitting in a round paper cup with a white doily, same light and style as the box. Transparent background, readable at 64 pixels.`
 
-## 8 · Gouden taartdoos (Frankrijk) — transparant, 1024×1024
+| # | [GEBAKJE] |
+| --- | --- |
+| 7c | golden flaky croissant |
+| 7d | pain au chocolat with two chocolate stripes visible |
+| 7e | pastel pink macaron |
+| 7f | chocolate éclair with glossy icing |
+| 7g | small strawberry tartlet with glazed strawberries |
+| 7h | shell-shaped golden madeleine |
 
-- **8 Taartdoos** — `A festive French pastry box in shiny gold card with a cream satin ribbon and bow, three-quarter view, lid slightly lifted with a warm glow from inside, a few sparkles. No text. Transparent background.`
+Zelfde camera-afstand en licht voor 7c–7h.
+
+## 8 · Gouden doos (Gold, Frankrijk) — transparant, 1024×1024
+
+- **8 Gouden doos** — `The same pâtisserie box closed, three-quarter view, now made of shiny gold card with a cream satin ribbon and bow, a warm glow and a few sparkles. No text. Transparent background.`
 
 ## 9 · Landstempel + Gold-zegel (Frankrijk) — transparant, 1024×1024
 
-Plat, geen 3D. Dit is "inkt op papier".
+Plat, geen 3D. Dit is "inkt op papier". Past in de stempelvakken van het reisboekje (3b).
 
 - **9a Landstempel** — `A flat rubber-stamp ink impression, single color dark navy blue ink, slightly imperfect with uneven ink and tiny gaps as if stamped by hand, circular with a double border. Inside: a simple line drawing of the Eiffel Tower and a small scooter. Around the border the word "FRANCE" at the top. Transparent background, no paper.`
 - **9b Gold-zegel** — `A flat embossed gold wax-seal style emblem, round with scalloped edge, single gold color with subtle highlights, a simple rooster silhouette in the center and a small star above. No text. Transparent background.`
 
-## 10 · Hoofdstukstempels (5) + tegels (7)
+## 10 · Hoofdstukstempels + tegels (later)
 
-### Stempels — transparant, 1024×1024, zelfde stijl als 9a, elk een andere inktkleur
-
-Vervang `[MOTIEF]` en `[KLEUR]`:
-
-```
-A flat rubber-stamp ink impression in the same style as the France stamp: single color [KLEUR] ink,
-slightly imperfect hand-stamped look, [VORM] with a border. Inside: a simple line drawing of [MOTIEF].
-No text. Transparent background, no paper.
-```
-
-| # | Hoofdstuk | Vorm | Motief | Kleur |
-| --- | --- | --- | --- | --- |
-| 10a | Parijs | circular | the Eiffel Tower and the Seine with a small bridge | dark navy blue |
-| 10b | Bretagne | rectangular with rounded corners | a lighthouse on rocks with waves | teal |
-| 10c | Elzas | oval | a half-timbered house with a stork on the roof | burgundy red |
-| 10d | Alpen | triangular | snowy mountain peaks with a small chalet | forest green |
-| 10e | Provence | octagonal | lavender rows with a sun | purple |
-
-### Tegels — 1024×1024, volledig beeld, 3D-filmstijl
-
-```
-Square illustration tile, same 3D animated film style and light as the references, centered subject,
-soft vignette, no text: [SCENE]
-```
-
-| # | Hoofdstuk | Scene |
-| --- | --- | --- |
-| 10f | 0 Welkom | Nino on the red scooter passing a France border sign at sunrise, fields behind |
-| 10g | 1 Parijs en het noorden | Paris rooftops with the Eiffel Tower, Seine in front, seagulls toward the Channel cliffs in the far distance |
-| 10h | 2 Westkust | Breton rocky coast with a lighthouse, Atlantic waves, a vineyard on the far hills |
-| 10i | 3 Oostgrens | Strasbourg-style half-timbered houses along a canal, Vosges hills behind |
-| 10j | 4 Bergen en zuidwesten | snowy Alps with a winding road, Pyrenees-style peaks fading into the distance |
-| 10k | 5 Middellandse Zee | sunny Mediterranean harbour with sailboats, palm trees, lavender in front |
-| 10l | 6 Grande Finale | Nino cheering on the scooter in front of a golden-lit French landscape with confetti |
+Volgt na de oefenkaart, afgestemd op de 11 hoofdstukken in `data/fr/items.draft.json`. Prompts komen dan.
 
 ---
 
@@ -147,7 +131,7 @@ soft vignette, no text: [SCENE]
 - Echte transparantie (geen nep-dambord), geen afgesneden ledematen of wielen
 - Geen tekst of logo's, behalve "France" op 6 en 9a, correct gespeld
 - Formaat en marge; leesbaar op klein formaat (iconen, baksels)
-- Serie-consistentie: zelfde licht, schaal en camera binnen 7c–7f, 10a–10e, 10f–10l
+- Serie-consistentie: zelfde licht, schaal en camera binnen 7a–7h
 
 Afgekeurd → ik zeg kort wat er mis is en geef een correctieprompt.
 
@@ -161,7 +145,7 @@ assets/art/
 │   └── paspoort/    paspoort-cover.webp, paspoort-binnen.webp
 └── fr/
     ├── hero/        fr-hero.webp
-    ├── rewards/     vitrine-leeg.webp, croissant.webp, taartdoos-goud.webp, …
+    ├── rewards/     doos-leeg.webp, doos-vol.webp, croissant.webp, doos-goud.webp, …
     ├── stempels/    fr-land.webp, fr-gold.webp, fr-parijs.webp, …
     └── tegels/      fr-h0-welkom.webp … fr-h6-finale.webp
 ```

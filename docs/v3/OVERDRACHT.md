@@ -180,3 +180,25 @@ Ronde 3 en de landmarks zijn akkoord. Reis, Toets resultaat, Oefenen, Beloningen
 - De iPad-test door de eigenaar en de hertest door Hermes (met de Nino-maat uit punt 2).
 - De locatorcirkel en het insetkader in de Rome/Vaticaan-uitvergroting volgen deels nog de V2-kleuren (kader neutraal gemaakt, stippelcirkel ongewijzigd).
 - De vlakkenkiezer ("Welk gebied bedoel je?") krijgt dezelfde stijl, maar alleen de stippenkiezer is in de QA met screenshots gecontroleerd.
+
+## Ronde 5: iPad-test van de eigenaar op `95d5199` (12-11, avond)
+
+Algemeen oordeel van de eigenaar: "ziet er zeer goed uit". De bevindingen van Hermes (`qa/v3-95d5199`) komen hieronder als 5B.
+
+**Doel en stopcriterium:** elk punt hieronder is in de screenshots van desktop en iPad 1080×810 aantoonbaar opgelost, en de QA van het gewijzigde scherm is groen.
+
+1. **Reis: kaart even groot per hoofdstuk.**
+   - Italië staat bij elk hoofdstuk zo groot mogelijk in het kaartvlak, op **dezelfde schaal**.
+   - Alleen hoofdstukken die meer context nodig hebben, zoomen uit tot een tweede vaste uitsnede **Italië en omgeving** (buurlanden en zeeën): Landen en Zeeën. Eilanden alleen als Corsica of Malta erbij horen.
+   - Dus twee vaste uitsneden, geen schaal per hoofdstuk. De overgang tussen de twee is zacht (bij verminderde beweging direct).
+2. **Reis: relevante landmarks per hoofdstuk.**
+   - Elke landmark wordt gekoppeld aan items of een regio (`assets/v3/landmarks/locations.json`).
+   - Op Reis staan de landmarks van het **actieve hoofdstuk** vol in beeld (bijv. Vulkanen: Vesuvius en Etna; Bergen: Dolomieten; Steden: de landmarks van die steden). Andere landmarks verdwijnen of staan gedimd op 40%.
+   - Een hoofdstuk zonder relevante landmark toont een rustige basisset van maximaal 4.
+   - Ontbreekt er voor een hoofdstuk een passende landmark, noteer dat dan in een lijst (de eigenaar maakt die in ChatGPT); niet zelf genereren.
+3. **Boek, pagina 1 en 2:** geen witte tekstvakken; de tekst staat direct op het perkament, met contrast AA.
+4. **Voortgang bij alles af:** geen groot effen paars vlak.
+   - De beheersingskleur ligt als **tint over de kaart**, zodat reliëf en contouren zichtbaar blijven, met verzadigd violet alleen als rand of accent.
+   - Bij 45/45 een rustige felicitatie: een gouden rand om de kaart, `nino-juicht` klein in de kaartkaart en de tekst 45 / 45. Geen confetti.
+5. **Overal groene randen weg:** de knop "Terug naar mijn kaart" in Schoolblad en de knop Sluiten in Instellingen hebben nog V2-groen. Zoek alle resten van V2-groen in V3 (randen, focus, tekst) en vervang ze door de V3-tokens. **Check:** geen zichtbaar element in V3 heeft nog de V2-groene kleurwaarden (lijst die waarden in de check).
+6. **Vespa-rit met Nino:** de animatie gebruikt `vespa-rijdend` (Nino op de Vespa) in plaats van de lege `vespa-zij`. Schudden, starten en wegrijden blijven gelijk, en verminderde beweging wordt nog steeds gerespecteerd.

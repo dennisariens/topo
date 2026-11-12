@@ -1,8 +1,11 @@
 import { readFileSync } from 'node:fs';
 import { Script } from 'node:vm';
 import { createHash } from 'node:crypto';
+import { assemble } from './assemble-index.mjs';
 
 const html = readFileSync(new URL('../index.html', import.meta.url), 'utf8');
+if (!assemble().equals(readFileSync(new URL('../index.html', import.meta.url)))) throw new Error('index.html differs from src/v2 + assets/v2. Edit src/v2, then run: node scripts/assemble-index.mjs');
+console.log('index.html equals assembled src/v2 + assets/v2: OK');
 for (const [file,start,end] of [['schoolblad.js','// BEGIN SCHOOLBLAD\n','// END SCHOOLBLAD'],['schoolblad.css','/* BEGIN SCHOOLBLAD */\n','/* END SCHOOLBLAD */']]) {
   if(!html.includes(start+readFileSync(new URL(file,import.meta.url),'utf8')+end))throw Error('Embedded schoolblad source is stale; rebuild');
 }

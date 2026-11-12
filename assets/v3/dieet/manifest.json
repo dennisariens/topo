@@ -1,0 +1,151 @@
+{
+ "version": 1,
+ "stap": 2,
+ "placeholder": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNkYPhfDwAChwGA60e6kgAAAABJRU5ErkJggg==",
+ "rule": "Vervanging alleen in de V3-preview. Stap 2: bewezen ongebruikt → 1×1 transparante PNG. Stap 3: hooguit 2× de grootste weergavemaat (desktop of iPad, CSS px), nooit groter; WebP met SSIM ≥ 0.99 tegen een Lanczos-referentie; alleen bij een winst van ≥ 20 KB; reliëf/kaartlagen en landmarks blijven ongewijzigd (uitlijning op de geometrie).",
+ "images": {
+  "6bd74e9cdc1388172c119b02d32e512862ae08c40b588f834d53efd98cdcea7b": {
+   "id": "assets/v3/scenes/topo-streken-toscana.webp",
+   "kind": "scene",
+   "sourceBytes": 441230,
+   "sourceSize": [
+    1672,
+    941
+   ],
+   "action": "placeholder",
+   "reason": "hoofdstukscène \"kop\": scripts/v3 leest alleen scenes[id].mini, nooit .kop"
+  },
+  "ea8841762b495239c1ec89a5759c03ec09c002af3a5c550c1370205ea6ef3fce": {
+   "id": "assets/v3/scenes/topo-bergen-dolomieten.webp",
+   "kind": "scene",
+   "sourceBytes": 423450,
+   "sourceSize": [
+    1672,
+    941
+   ],
+   "action": "placeholder",
+   "reason": "hoofdstukscène \"kop\": scripts/v3 leest alleen scenes[id].mini, nooit .kop"
+  },
+  "10c798c0e9d679987f4b446e412c05f6b80fc7a57f26ab709ac099414e39421d": {
+   "id": "assets/v3/scenes/topo-landen-italie-slovenie.webp",
+   "kind": "scene",
+   "sourceBytes": 403120,
+   "sourceSize": [
+    1672,
+    941
+   ],
+   "action": "placeholder",
+   "reason": "hoofdstukscène \"kop\": scripts/v3 leest alleen scenes[id].mini, nooit .kop"
+  },
+  "fc30759340d0a54a2b63e29adcb4a4f4b20078021941410faf0f564793baf048": {
+   "id": "assets/v3/scenes/topo-steden-firenze.webp",
+   "kind": "scene",
+   "sourceBytes": 402776,
+   "sourceSize": [
+    1672,
+    941
+   ],
+   "action": "placeholder",
+   "reason": "hoofdstukscène \"kop\": scripts/v3 leest alleen scenes[id].mini, nooit .kop"
+  },
+  "fb3a1c781a099eebbb078a35d82a9666e69475eb528f3e505037e7e7638454d1": {
+   "id": "assets/v3/scenes/topo-zeeen-amalfi.webp",
+   "kind": "scene",
+   "sourceBytes": 397262,
+   "sourceSize": [
+    1672,
+    941
+   ],
+   "action": "placeholder",
+   "reason": "hoofdstukscène \"kop\": scripts/v3 leest alleen scenes[id].mini, nooit .kop"
+  },
+  "a69ae30fda1271431e5d1ffe7145249f0c25a048074d185a1a81fbad2f3811e1": {
+   "id": "assets/v3/scenes/topo-rivieren-po.webp",
+   "kind": "scene",
+   "sourceBytes": 383964,
+   "sourceSize": [
+    1672,
+    941
+   ],
+   "action": "placeholder",
+   "reason": "hoofdstukscène \"kop\": scripts/v3 leest alleen scenes[id].mini, nooit .kop"
+  },
+  "80623ad790d3f8c32a39276e84106bda9ccd37d57f79d3268091f0206466b654": {
+   "id": "assets/v3/scenes/topo-vulkanen-etna.webp",
+   "kind": "scene",
+   "sourceBytes": 354542,
+   "sourceSize": [
+    1672,
+    941
+   ],
+   "action": "placeholder",
+   "reason": "hoofdstukscène \"kop\": scripts/v3 leest alleen scenes[id].mini, nooit .kop"
+  },
+  "8b2d530acee7c727479cf9593e55e1b03bbadbdf85971a631cce2c1097ee9093": {
+   "id": "assets/v3/scenes/topo-eilanden-v2.webp",
+   "kind": "scene",
+   "sourceBytes": 348408,
+   "sourceSize": [
+    1672,
+    941
+   ],
+   "action": "placeholder",
+   "reason": "hoofdstukscène \"kop\": scripts/v3 leest alleen scenes[id].mini, nooit .kop"
+  },
+  "5a01badbf0f26fe28109e999c592615d882eb704e6bef809d40e70436b4f6465": {
+   "id": "assets/v3/render/exports/SCENE-ROMA-kop-1672.webp",
+   "kind": "scene",
+   "sourceBytes": 336364,
+   "sourceSize": [
+    1672,
+    941
+   ],
+   "action": "placeholder",
+   "reason": "hoofdstukscène \"kop\": scripts/v3 leest alleen scenes[id].mini, nooit .kop"
+  },
+  "719344db49bfd156f6b22904b1ff31dd2e2899ac133b0c303fdcf85b165dae02": {
+   "id": "assets/v3/render/exports/SCENE-VENEZIA-kop-1672.webp",
+   "kind": "scene",
+   "sourceBytes": 311914,
+   "sourceSize": [
+    1672,
+    941
+   ],
+   "action": "placeholder",
+   "reason": "hoofdstukscène \"kop\": scripts/v3 leest alleen scenes[id].mini, nooit .kop"
+  },
+  "d9662509ce537fa8fcfb0485acc5478ff8ddc632b7768dbaf192269148a12668": {
+   "id": "assets/v3/render/exports/SCENE-NAPOLI-kop-1672.webp",
+   "kind": "scene",
+   "sourceBytes": 275572,
+   "sourceSize": [
+    1672,
+    941
+   ],
+   "action": "placeholder",
+   "reason": "hoofdstukscène \"kop\": scripts/v3 leest alleen scenes[id].mini, nooit .kop"
+  },
+  "daded673fe77a75f631b40251c09ef158b1c541b037f32c8d75ed4141b4409d5": {
+   "id": "assets/discovery/terrain-z8-render-sea.webp",
+   "kind": "kaart",
+   "sourceBytes": 245696,
+   "sourceSize": [
+    1780,
+    2470
+   ],
+   "action": "placeholder",
+   "reason": "reliëflaag zee/schaduw: alleen in variant Kaart; ui.kaart is altijd eiland en reis-ijk.css verbergt de lagen daar"
+  },
+  "e2fe511cc8c72fb8bf6a1e67e5041e64c99d3f76da665f0e3ee3e5e2428c0aec": {
+   "id": "assets/discovery/terrain-z8-render-shadow.webp",
+   "kind": "kaart",
+   "sourceBytes": 119588,
+   "sourceSize": [
+    1780,
+    2470
+   ],
+   "action": "placeholder",
+   "reason": "reliëflaag zee/schaduw: alleen in variant Kaart; ui.kaart is altijd eiland en reis-ijk.css verbergt de lagen daar"
+  }
+ }
+}

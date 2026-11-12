@@ -103,6 +103,21 @@ let out=html.replace('<head>',()=>head);
 const end=out.lastIndexOf('</body>');
 out=out.slice(0,end)+'<script>\n// BEGIN TOPO V3\n'+read('scripts/v3/iconen.js')+'\n'+read('scripts/v3/landmarks.js')+'\n'+read('scripts/v3/reis.js')+'\n'+read('scripts/v3/master-assets.js')+'\n'+read('scripts/v3/les.js')+'\n'+read('scripts/v3/shell.js')+'\n'+read('scripts/v3/schoolblad.js')+'\n'+read('scripts/v3/toets.js')+'\n'+read('scripts/v3/voortgang.js')+'\n'+read('scripts/v3/boek.js')+'\n'+read('scripts/v3/kennismaking.js')+'\n'+read('scripts/v3/keuze.js')+'\nrequestAnimationFrame(()=>{document.documentElement.classList.replace("v3Boot","v3Ready");});\n// END TOPO V3\n</script>\n'+out.slice(end);
 out=out.replace(/<title>([^<]*)<\/title>/,(m,t)=>'<title>V3-preview Reis · '+t+'</title>');
+// Assetdieet (docs/v3/ASSETDIEET.md): replace images in this output only, by the source bytes' sha256, from
+// assets/v3/dieet/manifest.json (made by scripts/v3-assets-export.py). index.html and the masters stay unchanged.
+const dietFile=new URL('assets/v3/dieet/manifest.json',root);
+let diet=null;if(!process.env.TOPO_V3_NODIET)try{diet=JSON.parse(readFileSync(dietFile,'utf8'));}catch{}  // TOPO_V3_NODIET=1: the undieted output (inventory)
+if(diet){
+ const cache=new Map(),stats={placeholder:0,scale:0};
+ out=out.replace(/data:(image\/[a-z0-9+.-]+);base64,([A-Za-z0-9+/=]+)/g,(m,mime,b64)=>{
+  if(cache.has(b64))return cache.get(b64);
+  const e=diet.images[createHash('sha256').update(Buffer.from(b64,'base64')).digest('hex')];let r=m;
+  if(e?.action==='placeholder'){r=diet.placeholder;stats.placeholder++;}
+  else if(e?.action==='scale'){const b=readFileSync(new URL(e.path,root));if(createHash('sha256').update(b).digest('hex')!==e.sha256)throw Error('Diet export differs from manifest: '+e.path);r='data:'+e.mime+';base64,'+b.toString('base64');stats.scale++;}
+  cache.set(b64,r);return r;
+ });
+ console.log('  assetdieet: '+stats.placeholder+' placeholders, '+stats.scale+' scaled');
+}
 const file='output/html/TOPO-V3-Reis-Preview.html';
 writeFileSync(new URL(file,root),out);
 const sha=s=>createHash('sha256').update(s).digest('hex');

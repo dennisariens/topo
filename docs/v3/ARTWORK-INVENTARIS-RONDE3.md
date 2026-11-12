@@ -293,3 +293,66 @@ Actueel: 229 lokale beeld-/fontbestanden. De vorige atlas is vervangen door TOPO
 | `assets/v3/landmarks/exports/TOPO_09-256.webp` | 19.4 | `6e7ef73b198d` | TOPO_09: Reis / toetsresultaat, alleen Reliëf |
 | `assets/v3/landmarks/exports/TOPO_10-128.webp` | 7.4 | `6fdc1c1cdcdd` | TOPO_10: Reis / toetsresultaat, alleen Reliëf |
 | `assets/v3/landmarks/exports/TOPO_10-256.webp` | 20.8 | `5973c72a994c` | TOPO_10: Reis / toetsresultaat, alleen Reliëf |
+
+## V2-bron na stap 0 (12-11) — gedecodeerde data-URI’s
+
+Deze bestanden zijn geen nieuwe artwork: het zijn de beelden die al in `index.html` (V2.0.2) stonden, door stap 0 (`docs/v3/STAP0_BRON.md`) uit de data-URI’s gehaald. `scripts/assemble-index.mjs` zet ze byte-gelijk terug. Bron van waarheid voor gebruik en sha256: `assets/v2/assets.json`.
+
+| Bestand | KB | sha256 (12) | Gebruikt in |
+|---|---:|---|---|
+| `assets/v2/nino-art-css.webp` | 66.1 | `0b83332392b9` | `src/v2/styles/02-stabilisatie.css` |
+| `assets/v2/pizza-board-css.webp` | 93.9 | `e241b9408c86` | `src/v2/styles/04-release-1-1-focus.css`, `src/v2/scripts/03-pizza-reward.js` |
+| `assets/v2/favicon-16.png` | 0.1 | `3a3e320851db` | `src/v2/index.template.html` |
+| `assets/v2/favicon-32.png` | 0.2 | `3f737bc4f491` | `src/v2/index.template.html` |
+| `assets/v2/route-panorama.webp` | 169.6 | `18befedac70a` | `src/v2/markup/01-body-voor-kaart.html` |
+| `assets/v2/schoolblad-foto.jpg` | 194.2 | `90c18b197234` | `src/v2/markup/01-body-voor-kaart.html` |
+| `assets/v2/nino-art-guide.webp` | 218.7 | `13cb4bc888d6` | `src/v2/scripts/02-nino-art.js` |
+| `assets/v2/nino-art-encourage.webp` | 249.4 | `4ab8b1af4289` | `src/v2/scripts/02-nino-art.js` |
+| `assets/v2/nino-art-success.webp` | 249.0 | `e43124089abf` | `src/v2/scripts/02-nino-art.js` |
+| `assets/v2/nino-art-gold.webp` | 224.0 | `b735c2dd4400` | `src/v2/scripts/02-nino-art.js` |
+| `assets/v2/nino-art-welcome.webp` | 242.1 | `89966925cb2f` | `src/v2/scripts/02-nino-art.js`, `src/v2/scripts/13-nino-v2.js` |
+| `assets/v2/nino-art-arrival.webp` | 290.4 | `ff1b6908fcbc` | `src/v2/scripts/02-nino-art.js`, `src/v2/scripts/13-nino-v2.js` |
+| `assets/v2/pizza-reward-margherita.webp` | 244.3 | `b3fa5fbdd2ee` | `src/v2/scripts/03-pizza-reward.js` |
+| `assets/v2/pizza-reward-salami.webp` | 268.6 | `ff782e287391` | `src/v2/scripts/03-pizza-reward.js` |
+| `assets/v2/pizza-reward-quattro-formaggi.webp` | 229.1 | `e99a7e0d6ed2` | `src/v2/scripts/03-pizza-reward.js` |
+| `assets/v2/pizza-reward-box-margherita.webp` | 218.5 | `742a5d39843d` | `src/v2/scripts/03-pizza-reward.js`, `src/v2/scripts/13-nino-v2.js` |
+| `assets/v2/pizza-reward-box-salami.webp` | 278.5 | `9f3795b47f6b` | `src/v2/scripts/03-pizza-reward.js`, `src/v2/scripts/13-nino-v2.js` |
+| `assets/v2/pizza-reward-box-quattro-formaggi.webp` | 204.7 | `1b317d389808` | `src/v2/scripts/03-pizza-reward.js`, `src/v2/scripts/13-nino-v2.js` |
+| `assets/v2/discovery-map-terrain.webp` | 57.8 | `c9130b73fe1e` | `src/v2/index.template.html` |
+| `assets/v2/nino-v2-cover.webp` | 1492.9 | `8901f57c74fe` | `src/v2/scripts/13-nino-v2.js` |
+| `assets/v2/nino-v2-travel.webp` | 231.3 | `d12e2738fbbb` | `src/v2/scripts/13-nino-v2.js` |
+| `assets/v2/nino-v2-chapter0.webp` | 106.1 | `337e02ba2c1e` | `src/v2/scripts/13-nino-v2.js` |
+| `assets/v2/nino-v2-chapter1.webp` | 102.2 | `f9c76c2c0926` | `src/v2/scripts/13-nino-v2.js` |
+| `assets/v2/nino-v2-chapter2.webp` | 107.4 | `1801146a77b1` | `src/v2/scripts/13-nino-v2.js` |
+| `assets/v2/nino-v2-chapter3.webp` | 121.1 | `125a496d4c65` | `src/v2/scripts/13-nino-v2.js` |
+| `assets/v2/nino-v2-chapter4.webp` | 124.3 | `f1ca42b2a08c` | `src/v2/scripts/13-nino-v2.js` |
+| `assets/v2/nino-v2-chapter5.webp` | 118.8 | `a6b8def0c138` | `src/v2/scripts/13-nino-v2.js` |
+| `assets/v2/nino-v2-chapter6.webp` | 117.2 | `52efca255b21` | `src/v2/scripts/13-nino-v2.js` |
+| `assets/v2/nino-v2-chapter7.webp` | 124.7 | `2885eeb2d2b4` | `src/v2/scripts/13-nino-v2.js` |
+| `assets/v2/nino-v2-chapter8.webp` | 99.0 | `c616f7524a54` | `src/v2/scripts/13-nino-v2.js` |
+| `assets/v2/nino-v2-chapter9.webp` | 115.2 | `66139c111992` | `src/v2/scripts/13-nino-v2.js` |
+| `assets/v2/nino-v2-chapter10.webp` | 133.3 | `c08a48c15a9e` | `src/v2/scripts/13-nino-v2.js` |
+| `assets/v2/nino-v2-stamp0.webp` | 350.0 | `de4d32cf277a` | `src/v2/scripts/13-nino-v2.js` |
+| `assets/v2/nino-v2-stamp1.webp` | 236.7 | `b34ff0780ebd` | `src/v2/scripts/13-nino-v2.js` |
+| `assets/v2/nino-v2-stamp2.webp` | 383.2 | `b00fb30fc5eb` | `src/v2/scripts/13-nino-v2.js` |
+| `assets/v2/nino-v2-stamp3.webp` | 331.0 | `b7cf9eeb47dd` | `src/v2/scripts/13-nino-v2.js` |
+| `assets/v2/nino-v2-stamp4.webp` | 832.5 | `b9dbc0d44b4a` | `src/v2/scripts/13-nino-v2.js` |
+| `assets/v2/nino-v2-stamp5.webp` | 354.9 | `4d989d4b6147` | `src/v2/scripts/13-nino-v2.js` |
+| `assets/v2/nino-v2-stamp6.webp` | 307.1 | `1794a3ee5742` | `src/v2/scripts/13-nino-v2.js` |
+| `assets/v2/nino-v2-stamp7.webp` | 251.5 | `042bd1d30100` | `src/v2/scripts/13-nino-v2.js` |
+| `assets/v2/nino-v2-stamp8.webp` | 227.8 | `9032c4ff1ec9` | `src/v2/scripts/13-nino-v2.js` |
+| `assets/v2/nino-v2-stamp9.webp` | 240.7 | `686b3f091f93` | `src/v2/scripts/13-nino-v2.js` |
+| `assets/v2/nino-v2-stamp10.webp` | 366.8 | `063a643d0d16` | `src/v2/scripts/13-nino-v2.js` |
+| `assets/v2/nino-v2-chaptergold.webp` | 6.9 | `54224a2edf4e` | `src/v2/scripts/13-nino-v2.js` |
+| `assets/v2/nino-v2-finalgold.webp` | 356.2 | `63b8e838caff` | `src/v2/scripts/13-nino-v2.js` |
+| `assets/v2/nino-v2-arrival.webp` | 1562.0 | `cc3cd8efb207` | `src/v2/scripts/13-nino-v2.js` |
+| `assets/v2/nino-v2-favorite0.webp` | 162.5 | `75b08c68393c` | `src/v2/scripts/13-nino-v2.js` |
+| `assets/v2/nino-v2-favorite1.webp` | 187.8 | `61e86fd6f033` | `src/v2/scripts/13-nino-v2.js` |
+| `assets/v2/nino-v2-favorite2.webp` | 148.5 | `cd5e75889d7c` | `src/v2/scripts/13-nino-v2.js` |
+| `assets/v2/nino-v2-sicilia.webp` | 2456.5 | `8c7e1ef3cd72` | `src/v2/scripts/13-nino-v2.js` |
+| `assets/v2/nino-v2-sardegna.webp` | 2620.4 | `9e350e91c1a2` | `src/v2/scripts/13-nino-v2.js` |
+| `assets/v2/nino-v2-napoli.webp` | 2392.3 | `819a3d3d1de5` | `src/v2/scripts/13-nino-v2.js` |
+| `assets/v2/nino-v2-reverse.webp` | 2129.0 | `a6c9fbb31f92` | `src/v2/scripts/13-nino-v2.js` |
+| `assets/v2/nino-v2-venezia.webp` | 2287.1 | `45902f75dcb6` | `src/v2/scripts/13-nino-v2.js` |
+| `assets/v2/nino-v2-folioleft.webp` | 1864.3 | `d4862f0f5e34` | `src/v2/scripts/13-nino-v2.js` |
+| `assets/v2/nino-v2-folioright.webp` | 2050.6 | `3ce3133d483b` | `src/v2/scripts/13-nino-v2.js` |

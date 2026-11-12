@@ -1,6 +1,6 @@
 {
   "1": {
-    "previewSha256": "b8d00e93d51a52c79c28d4a6396877b9bd8ebaab2f12a0aa2bc22b383f255d7e",
+    "previewSha256": "28348d719162764a2f173d5e3064c3e1a7ccefe108e98f303b960df5b7b895bc",
     "runs": {
       "desktop": {
         "viewport": [
@@ -62,7 +62,7 @@
     "pass": true
   },
   "2": {
-    "previewSha256": "c2308d5b71b1f8591c8b9f226347eefcf2bb5e87151790be591c969d5761dcc5",
+    "previewSha256": "28348d719162764a2f173d5e3064c3e1a7ccefe108e98f303b960df5b7b895bc",
     "runs": {
       "desktop": {
         "viewport": [

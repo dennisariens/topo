@@ -1,4 +1,4 @@
-/Users/dennisariens/projects/topo-v3/scripts/qa-v3-afwerking.py:119: DeprecationWarning: Image.Image.getdata is deprecated and will be removed in Pillow 14 (2027-10-15). Use get_flattened_data instead.
+/Users/dennisariens/topo-claude/scripts/qa-v3-afwerking.py:119: DeprecationWarning: Image.Image.getdata is deprecated and will be removed in Pillow 14 (2027-10-15). Use get_flattened_data instead.
   cs = sorted((max(fg, L) + .05) / (min(fg, L) + .05) for L in (lum(p) for p in crop.getdata()))
 reis/desktop/bg01 checked
 reis/desktop/bg02 checked

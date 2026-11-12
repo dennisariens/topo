@@ -166,3 +166,17 @@ Ronde 3 en de landmarks zijn akkoord. Reis, Toets resultaat, Oefenen, Beloningen
    - de hulpzin "Volg de lijn…" vervalt (de lijnen spreken voor zich);
    - de legenda compact (symbolen en de woorden stad, vulkaan, kleine staat) zonder de zin "Symbolen, geen grenzen…";
    - toetsenbord en focus ongewijzigd; Escape gaat terug naar de kaart.
+
+### Overdracht ronde 4 (Claude Code, 12-11)
+
+**Pin:** `bde7729` (laatste codewijziging; de commit hierna voegt alleen deze overdracht, de artworkinventaris en QA-bewijs toe). `index.html` byte-gelijk (`3aced3c3…`); V2 en `src/v2/` niet gewijzigd.
+
+- **Punt 1, landmarks** (`2b788dd`): mediane zichtbare hoogte 40 px op desktop en 34 px op iPad (≤ 1279 px), met de onderlinge verhoudingen behouden. Een botsingscheck verschuift een landmark die een pin, ✓/×-teken of foutlabel (of een andere landmark) raakt naar de dichtstbijzijnde vrije plek aan de rand. Het anker blijft op het echte punt en de laag ligt onder de pins en tekens (eerder lag die op Reis erboven).
+- **Punt 2, kennismaking** (`1242046`): één glaspaneel zonder crèmekleurige platen, een violette focusring en Nino ~210 px zichtbaar. *Afwijking:* de opdracht noemde ±160 px, maar Nino was al ~183 px; de eigenaar koos "groter". De lead designer kan dit bij de iPad-test corrigeren.
+- **Punt 3, keuzevenster** (`bde7729`): `scripts/v3/keuze.js` + `ronde4.css`. Glas, titel 28/700, de uitvergroting met een zachte rand, violette badges en lijnen, chips van 48 px, "Terug naar de kaart" als glaspil, geen hulpzin en een legenda met alleen symbolen. Kandidaten, aria-labels, toetsenbord en Escape komen ongewijzigd uit V2 (`scripts/map-hit.js`). De zijmarge blijft 12 px, omdat V2 de uitvergroting op breedte − 24 berekent.
+- **QA:** `scripts/qa-v3-ronde4.py` (punten 1–3, desktop 1440×900 en iPad 1080×810). Eindcontrole: `npm run lint`, `npm test` en `npm run build` groen; `qa-v3-all.py` 21/21. Ronde 3 punt 19 faalde eerst, omdat `assets/v2/` (stap 0) ontbrak in `ARTWORK-INVENTARIS-RONDE3.md`; die bestanden staan er nu in een eigen sectie. De QA draait met Python + Playwright uit `/private/tmp/topo-v3-ronde2-qa`; de systeem-`python3` heeft geen Playwright.
+
+**Open**
+- De iPad-test door de eigenaar en de hertest door Hermes (met de Nino-maat uit punt 2).
+- De locatorcirkel en het insetkader in de Rome/Vaticaan-uitvergroting volgen deels nog de V2-kleuren (kader neutraal gemaakt, stippelcirkel ongewijzigd).
+- De vlakkenkiezer ("Welk gebied bedoel je?") krijgt dezelfde stijl, maar alleen de stippenkiezer is in de QA met screenshots gecontroleerd.

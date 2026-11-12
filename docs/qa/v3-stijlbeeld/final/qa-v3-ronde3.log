@@ -1,0 +1,22 @@
+Ronde 3 punt 1 PASS
+Ronde 3 punt 2 PASS
+Ronde 3 punt 3 PASS
+Ronde 3 punt 4 PASS
+Ronde 3 punt 5 PASS
+Ronde 3 punt 6 PASS
+Ronde 3 punt 7 PASS
+Ronde 3 punt 8 PASS
+Ronde 3 punt 9 PASS
+Ronde 3 punt 10 PASS
+Ronde 3 punt 11 PASS
+Ronde 3 punt 12 PASS
+Ronde 3 punt 13 PASS
+Ronde 3 punt 14 PASS
+/Users/dennisariens/topo-claude/scripts/qa-v3-ronde3.py:76: DeprecationWarning: Image.Image.getdata is deprecated and will be removed in Pillow 14 (2027-10-15). Use get_flattened_data instead.
+  ratios=[(q.lum(tuple(255*.68+c*.32 for c in pixel))+.05)/(fg+.05) for pixel in image.getdata()]
+Ronde 3 punt 15 PASS
+Ronde 3 punt 16 PASS
+Ronde 3 punt 17 PASS
+Ronde 3 punt 18 PASS
+Ronde 3 punt 19 PASS
+Ronde 3 punt 20 PASS

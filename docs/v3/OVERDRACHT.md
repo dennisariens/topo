@@ -202,3 +202,15 @@ Algemeen oordeel van de eigenaar: "ziet er zeer goed uit". De bevindingen van He
    - Bij 45/45 een rustige felicitatie: een gouden rand om de kaart, `nino-juicht` klein in de kaartkaart en de tekst 45 / 45. Geen confetti.
 5. **Overal groene randen weg:** de knop "Terug naar mijn kaart" in Schoolblad en de knop Sluiten in Instellingen hebben nog V2-groen. Zoek alle resten van V2-groen in V3 (randen, focus, tekst) en vervang ze door de V3-tokens. **Check:** geen zichtbaar element in V3 heeft nog de V2-groene kleurwaarden (lijst die waarden in de check).
 6. **Vespa-rit met Nino:** de animatie gebruikt `vespa-rijdend` (Nino op de Vespa) in plaats van de lege `vespa-zij`. Schudden, starten en wegrijden blijven gelijk, en verminderde beweging wordt nog steeds gerespecteerd.
+7. **Lifestyle-iconen nu al gebruiken** (eigenaar, 12-11; vervangt "TOPO_12–16 pas in V3.1"): stadion Milaan, gelato, strand Rimini, pasta Bologna en Fiat 500 (masters `art/master` `69c945c`, bestanden TOPO_12–16).
+   - **Reis-kaart, per hoofdstuk 1–2 lifestyle-iconen naast de landmarks van het hoofdstuk:**
+     - op een plek waar ze geloofwaardig zijn: stadion bij Milaan, pasta bij Bologna, strand op de Adriatische kust bij Rimini, gelato in een stad of aan zee;
+     - de **Fiat 500** "rijdt" in minstens 4 hoofdstukken op een andere plek (Turijn, Rome, de kust bij Napels, Toscane);
+     - **stabiel per hoofdstuk**: dezelfde indeling bij elk bezoek, maar wel gevarieerd tussen de hoofdstukken (een vaste lijst per hoofdstuk, geen echte willekeur);
+     - nooit op of over een pin, label of leerplek (de botsingscheck van ronde 4); kleiner dan de landmarks (±32/28 px).
+   - **Ook toegestaan, maximaal één per scherm:**
+     - bij het toetsresultaat: gelato bij ≥ 8/10;
+     - bij Voortgang 45/45: gelato of de Fiat 500 bij Nino;
+     - bij de Vespa-rit: de Fiat 500 die op de achtergrond voorbijrijdt (verminderde beweging: stilstaand).
+   - **Nooit:** in de les, in Toets tijdens de vragen, in de Gouden proef of in het keuzevenster. Het zijn geen leerplekken.
+   - Ze komen in het manifest (status "in gebruik V3.0") en in `locations.json` met de vlag `lifestyle:true`.

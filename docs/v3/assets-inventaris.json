@@ -1,0 +1,5876 @@
+{
+ "preview": "output/html/TOPO-V3-Reis-Preview.html",
+ "previewBytes": 53715471,
+ "previewSha256": "28348d719162764a2f173d5e3064c3e1a7ccefe108e98f303b960df5b7b895bc",
+ "scan": {
+  "viewports": {
+   "desktop": [
+    1440,
+    900
+   ],
+   "ipad": [
+    1080,
+    810
+   ],
+   "telefoon": [
+    390,
+    844
+   ]
+  },
+  "states": [
+   "welkom",
+   "nieuw",
+   "bezig",
+   "afgerond",
+   "alles"
+  ],
+  "steps": 1390,
+  "errors": [],
+  "seconds": 1363
+ },
+ "rule": "ongebruikt = nooit getekend in de volledige scan, geen enkele scanfout, en een positief bewijs in de code (proven_unused); anders gebruikt",
+ "totals": {
+  "images": 121,
+  "imageBase64Bytes": 52814080,
+  "unused": 13,
+  "unusedBase64Bytes": 5925200
+ },
+ "images": [
+  {
+   "id": "assets/v2/nino-v2-sardegna.webp",
+   "source": "v2",
+   "mime": "image/webp",
+   "format": "WEBP",
+   "mode": "RGBA",
+   "bytes": 2683314,
+   "base64Bytes": 3577752,
+   "occurrences": 1,
+   "size": [
+    1536,
+    1024
+   ],
+   "sha256": "9e350e91c1a2f6f172bc0aa12c41a0212f78d6bc661ec4c4905c1105235252b6",
+   "kind": "scene",
+   "inDom": true,
+   "drawn": true,
+   "screens": [
+    "boek"
+   ],
+   "elements": [
+    "section.bookPage img.postcardArt.postcardFront"
+   ],
+   "hiddenInDom": [],
+   "maxDisplayCss": {
+    "desktop": [
+     376,
+     251
+    ],
+    "ipad": [
+     350,
+     234
+    ],
+    "telefoon": [
+     237,
+     158
+    ]
+   },
+   "used": true
+  },
+  {
+   "id": "assets/v2/nino-v2-sicilia.webp",
+   "source": "v2",
+   "mime": "image/webp",
+   "format": "WEBP",
+   "mode": "RGBA",
+   "bytes": 2515504,
+   "base64Bytes": 3354008,
+   "occurrences": 1,
+   "size": [
+    1536,
+    1024
+   ],
+   "sha256": "8c7e1ef3cd72816e41656eeee5c142413b1259ac211b313b55b50458c35ef6ae",
+   "kind": "scene",
+   "inDom": true,
+   "drawn": true,
+   "screens": [
+    "boek",
+    "rewards-v3TilePostcard"
+   ],
+   "elements": [
+    "section.bookPage img.postcardArt.postcardFront"
+   ],
+   "hiddenInDom": [],
+   "maxDisplayCss": {
+    "desktop": [
+     376,
+     251
+    ],
+    "ipad": [
+     350,
+     234
+    ],
+    "telefoon": [
+     237,
+     158
+    ]
+   },
+   "used": true
+  },
+  {
+   "id": "assets/v2/nino-v2-napoli.webp",
+   "source": "v2",
+   "mime": "image/webp",
+   "format": "WEBP",
+   "mode": "RGBA",
+   "bytes": 2449680,
+   "base64Bytes": 3266240,
+   "occurrences": 1,
+   "size": [
+    1536,
+    1024
+   ],
+   "sha256": "819a3d3d1de50d5fb78d67ef7cbdbe9bafb6620cfa144e57842813a8df70ee94",
+   "kind": "scene",
+   "inDom": true,
+   "drawn": true,
+   "screens": [
+    "boek"
+   ],
+   "elements": [
+    "section.bookPage img.postcardArt.postcardFront"
+   ],
+   "hiddenInDom": [
+    "section.bookPage img.postcardArt.postcardFront"
+   ],
+   "maxDisplayCss": {
+    "desktop": [
+     376,
+     251
+    ],
+    "ipad": [
+     350,
+     234
+    ],
+    "telefoon": [
+     237,
+     158
+    ]
+   },
+   "used": true
+  },
+  {
+   "id": "assets/v2/nino-v2-venezia.webp",
+   "source": "v2",
+   "mime": "image/webp",
+   "format": "WEBP",
+   "mode": "RGBA",
+   "bytes": 2341994,
+   "base64Bytes": 3122660,
+   "occurrences": 1,
+   "size": [
+    1497,
+    973
+   ],
+   "sha256": "45902f75dcb6e5c8185190a707ab03d9e422aed45639a711ccc14618647e2e03",
+   "kind": "scene",
+   "inDom": true,
+   "drawn": true,
+   "screens": [
+    "boek"
+   ],
+   "elements": [
+    "section.bookPage img.postcardArt.postcardFront"
+   ],
+   "hiddenInDom": [],
+   "maxDisplayCss": {
+    "desktop": [
+     376,
+     245
+    ],
+    "ipad": [
+     350,
+     228
+    ],
+    "telefoon": [
+     237,
+     154
+    ]
+   },
+   "used": true
+  },
+  {
+   "id": "assets/v2/nino-v2-reverse.webp",
+   "source": "v2",
+   "mime": "image/webp",
+   "format": "WEBP",
+   "mode": "RGBA",
+   "bytes": 2180096,
+   "base64Bytes": 2906796,
+   "occurrences": 1,
+   "size": [
+    1536,
+    1024
+   ],
+   "sha256": "a6c9fbb31f92dcfe05ea0297bd77d946af9f14bbd8d13b8b92c34b7f970262df",
+   "kind": "scene",
+   "inDom": true,
+   "drawn": false,
+   "screens": [],
+   "elements": [],
+   "hiddenInDom": [
+    "section.bookPage img.postcardArt"
+   ],
+   "maxDisplayCss": {
+    "desktop": [
+     0,
+     0
+    ],
+    "ipad": [
+     0,
+     0
+    ],
+    "telefoon": [
+     0,
+     0
+    ]
+   },
+   "used": true,
+   "note": "niet getekend in de scan, maar niet bewezen ongebruikt: telt als gebruikt"
+  },
+  {
+   "id": "assets/v2/nino-v2-folioright.webp",
+   "source": "v2",
+   "mime": "image/webp",
+   "format": "WEBP",
+   "mode": "RGBA",
+   "bytes": 2099822,
+   "base64Bytes": 2799764,
+   "occurrences": 1,
+   "size": [
+    1086,
+    1448
+   ],
+   "sha256": "3ce3133d483bec940e961a5a920a30bbb00e16da3ebb2445966fc83e3f210b16",
+   "kind": "scene",
+   "inDom": true,
+   "drawn": true,
+   "screens": [
+    "boek",
+    "rewards-v3BookCover",
+    "rewards-v3TilePostcard"
+   ],
+   "elements": [
+    "section.bookPage img.folioPaper"
+   ],
+   "hiddenInDom": [
+    "section.bookPage img.folioPaper"
+   ],
+   "maxDisplayCss": {
+    "desktop": [
+     543,
+     724
+    ],
+    "ipad": [
+     506,
+     674
+    ],
+    "telefoon": [
+     342,
+     456
+    ]
+   },
+   "used": true
+  },
+  {
+   "id": "assets/v2/nino-v2-folioleft.webp",
+   "source": "v2",
+   "mime": "image/webp",
+   "format": "WEBP",
+   "mode": "RGBA",
+   "bytes": 1909020,
+   "base64Bytes": 2545360,
+   "occurrences": 1,
+   "size": [
+    1086,
+    1448
+   ],
+   "sha256": "d4862f0f5e34631c4e483761f933baa92bd85dee05b7ea0d581a7eb29be668a2",
+   "kind": "scene",
+   "inDom": true,
+   "drawn": true,
+   "screens": [
+    "boek",
+    "rewards-v3BookCover",
+    "rewards-v3TileGold",
+    "rewards-v3TilePostcard",
+    "rewards-v3TileStamp"
+   ],
+   "elements": [
+    "section.bookPage img.folioPaper",
+    "section.bookPage img.folioPaper.folioMirrored"
+   ],
+   "hiddenInDom": [
+    "section.bookPage img.folioPaper"
+   ],
+   "maxDisplayCss": {
+    "desktop": [
+     543,
+     724
+    ],
+    "ipad": [
+     506,
+     674
+    ],
+    "telefoon": [
+     342,
+     456
+    ]
+   },
+   "used": true
+  },
+  {
+   "id": "assets/v2/nino-v2-arrival.webp",
+   "source": "v2",
+   "mime": "image/webp",
+   "format": "WEBP",
+   "mode": "RGBA",
+   "bytes": 1599446,
+   "base64Bytes": 2132596,
+   "occurrences": 1,
+   "size": [
+    1536,
+    1536
+   ],
+   "sha256": "cc3cd8efb2075698df1c50c8b82c833d4032585b43ea208d8fa86e0d7b336be4",
+   "kind": "scene",
+   "inDom": true,
+   "drawn": true,
+   "screens": [
+    "boek",
+    "rewards-v3TilePostcard"
+   ],
+   "elements": [
+    "section.bookPage img.arrivalStamp"
+   ],
+   "hiddenInDom": [
+    "dialog.vespaRide img.rideSeal",
+    "section.bookPage img.arrivalStamp"
+   ],
+   "maxDisplayCss": {
+    "desktop": [
+     198,
+     198
+    ],
+    "ipad": [
+     184,
+     184
+    ],
+    "telefoon": [
+     125,
+     125
+    ]
+   },
+   "used": true
+  },
+  {
+   "id": "assets/v2/nino-v2-cover.webp",
+   "source": "v2",
+   "mime": "image/webp",
+   "format": "WEBP",
+   "mode": "RGBA",
+   "bytes": 1528760,
+   "base64Bytes": 2038348,
+   "occurrences": 1,
+   "size": [
+    1254,
+    1254
+   ],
+   "sha256": "8901f57c74feb6d81fea23cb7b216ef403b982e8bdf66f1c89ea83eca15add44",
+   "kind": "scene",
+   "inDom": true,
+   "drawn": true,
+   "screens": [
+    "boek",
+    "instellingen",
+    "rewards",
+    "rewards-v3BookCover",
+    "rewards-v3TileGold",
+    "rewards-v3TilePizza",
+    "rewards-v3TilePostcard",
+    "rewards-v3TileStamp",
+    "vespa-100",
+    "vespa-1200",
+    "vespa-2500",
+    "vespa-600"
+   ],
+   "elements": [
+    "section.v3Rewards img.v3CoverArt"
+   ],
+   "hiddenInDom": [
+    "section.bookPage img.bookCover",
+    "section.v3Rewards img.v3CoverArt"
+   ],
+   "maxDisplayCss": {
+    "desktop": [
+     417,
+     417
+    ],
+    "ipad": [
+     342,
+     408
+    ],
+    "telefoon": [
+     248,
+     248
+    ]
+   },
+   "used": true
+  },
+  {
+   "id": "assets/v2/nino-v2-stamp4.webp",
+   "source": "v2",
+   "mime": "image/webp",
+   "format": "WEBP",
+   "mode": "RGBA",
+   "bytes": 852496,
+   "base64Bytes": 1136664,
+   "occurrences": 1,
+   "size": [
+    1254,
+    1254
+   ],
+   "sha256": "b9dbc0d44b4a69fdd3ce3bdafbcdee761d059203c9b73013a535087138c2f93a",
+   "kind": "icoon",
+   "inDom": true,
+   "drawn": true,
+   "screens": [
+    "boek",
+    "rewards-v3TileGold",
+    "rewards-v3TileStamp"
+   ],
+   "elements": [
+    "section.bookPage img.stampArt"
+   ],
+   "hiddenInDom": [],
+   "maxDisplayCss": {
+    "desktop": [
+     132,
+     132
+    ],
+    "ipad": [
+     123,
+     123
+    ],
+    "telefoon": [
+     86,
+     86
+    ]
+   },
+   "used": true
+  },
+  {
+   "id": "assets/v2/nino-art-arrival.webp",
+   "source": "v2",
+   "mime": "image/webp",
+   "format": "WEBP",
+   "mode": "RGB",
+   "bytes": 297324,
+   "base64Bytes": 396432,
+   "occurrences": 2,
+   "size": [
+    1600,
+    900
+   ],
+   "sha256": "ff1b6908fcbcfd81098232b9e108ad2b32826c5914a2c3414465385b05fcbd78",
+   "kind": "scene",
+   "inDom": true,
+   "drawn": false,
+   "screens": [],
+   "elements": [],
+   "hiddenInDom": [
+    "dialog.vespaRide img.rideArrival"
+   ],
+   "maxDisplayCss": {
+    "desktop": [
+     0,
+     0
+    ],
+    "ipad": [
+     0,
+     0
+    ],
+    "telefoon": [
+     0,
+     0
+    ]
+   },
+   "used": true,
+   "note": "niet getekend in de scan, maar niet bewezen ongebruikt: telt als gebruikt"
+  },
+  {
+   "id": "assets/v2/pizza-reward-box-salami.webp",
+   "source": "v2",
+   "mime": "image/webp",
+   "format": "WEBP",
+   "mode": "RGBA",
+   "bytes": 285172,
+   "base64Bytes": 380232,
+   "occurrences": 2,
+   "size": [
+    960,
+    960
+   ],
+   "sha256": "9f3795b47f6b60a975f3f83af6edb07981739cc2a55c0d4de1b7cb66f2b184aa",
+   "kind": "icoon",
+   "inDom": false,
+   "drawn": false,
+   "screens": [],
+   "elements": [],
+   "hiddenInDom": [],
+   "maxDisplayCss": {
+    "desktop": [
+     0,
+     0
+    ],
+    "ipad": [
+     0,
+     0
+    ],
+    "telefoon": [
+     0,
+     0
+    ]
+   },
+   "used": true,
+   "note": "niet getekend in de scan, maar niet bewezen ongebruikt: telt als gebruikt"
+  },
+  {
+   "id": "assets/v2/nino-art-welcome.webp",
+   "source": "v2",
+   "mime": "image/webp",
+   "format": "WEBP",
+   "mode": "RGBA",
+   "bytes": 247918,
+   "base64Bytes": 330560,
+   "occurrences": 2,
+   "size": [
+    1254,
+    1254
+   ],
+   "sha256": "89966925cb2f277e89bdd53eb22a5a328a26c54c1f52ccf9a91a3b263bd4a568",
+   "kind": "nino",
+   "inDom": true,
+   "drawn": true,
+   "screens": [
+    "boek",
+    "rewards-v3BookCover"
+   ],
+   "elements": [
+    "section.bookPage img.bookNino"
+   ],
+   "hiddenInDom": [
+    "section.bookPage img.bookNino"
+   ],
+   "maxDisplayCss": {
+    "desktop": [
+     194,
+     194
+    ],
+    "ipad": [
+     180,
+     180
+    ],
+    "telefoon": [
+     118,
+     118
+    ]
+   },
+   "used": true
+  },
+  {
+   "id": "assets/v3/render/exports/BG-03-kust-2880.webp",
+   "source": "v3",
+   "mime": "image/webp",
+   "format": "WEBP",
+   "mode": "RGB",
+   "bytes": 452702,
+   "base64Bytes": 603604,
+   "occurrences": 1,
+   "size": [
+    2880,
+    1800
+   ],
+   "sha256": "b4a423ef64fdb58773aa99659ec23b58283b1cf96763f591d41d09eb6619f20b",
+   "kind": "achtergrond",
+   "inDom": true,
+   "drawn": true,
+   "screens": [
+    "boek",
+    "instellingen",
+    "kennismaking",
+    "kennismaking-aanbod",
+    "keuzevenster",
+    "keuzevenster-rome",
+    "les-point",
+    "les-point-fout",
+    "les-point-goed",
+    "les-write",
+    "les-write-fout",
+    "les-write-goed",
+    "oefenen",
+    "reis",
+    "reis-city1",
+    "reis-city2",
+    "reis-city3",
+    "reis-city4",
+    "reis-countries",
+    "reis-islands",
+    "reis-mountains",
+    "reis-regions",
+    "reis-relief-uit",
+    "reis-rivers",
+    "reis-seas",
+    "reis-volcanoes",
+    "rewards",
+    "rewards-v3BookCover",
+    "rewards-v3TileGold",
+    "rewards-v3TilePizza",
+    "rewards-v3TilePostcard",
+    "rewards-v3TileStamp",
+    "schoolblad",
+    "toets",
+    "toetsResult-fouten",
+    "toetsResult-perfect",
+    "vespa-100",
+    "vespa-1200",
+    "vespa-2500",
+    "vespa-600",
+    "voortgang"
+   ],
+   "elements": [
+    "body.ninoSchoolMapOnly.v3On"
+   ],
+   "hiddenInDom": [],
+   "maxDisplayCss": {
+    "desktop": [
+     1688,
+     1055
+    ],
+    "ipad": [
+     1296,
+     810
+    ],
+    "telefoon": [
+     0,
+     0
+    ]
+   },
+   "used": true
+  },
+  {
+   "id": "assets/v2/pizza-reward-box-margherita.webp",
+   "source": "v2",
+   "mime": "image/webp",
+   "format": "WEBP",
+   "mode": "RGBA",
+   "bytes": 223780,
+   "base64Bytes": 298376,
+   "occurrences": 2,
+   "size": [
+    960,
+    960
+   ],
+   "sha256": "742a5d39843dc84b6a8b781678edcb3ce6643a60bde1c8ae67c1e0567125f7d7",
+   "kind": "icoon",
+   "inDom": false,
+   "drawn": false,
+   "screens": [],
+   "elements": [],
+   "hiddenInDom": [],
+   "maxDisplayCss": {
+    "desktop": [
+     0,
+     0
+    ],
+    "ipad": [
+     0,
+     0
+    ],
+    "telefoon": [
+     0,
+     0
+    ]
+   },
+   "used": true,
+   "note": "niet getekend in de scan, maar niet bewezen ongebruikt: telt als gebruikt"
+  },
+  {
+   "id": "assets/v3/scenes/topo-streken-toscana.webp",
+   "source": "v3",
+   "mime": "image/webp",
+   "format": "WEBP",
+   "mode": "RGB",
+   "bytes": 441230,
+   "base64Bytes": 588308,
+   "occurrences": 1,
+   "size": [
+    1672,
+    941
+   ],
+   "sha256": "6bd74e9cdc1388172c119b02d32e512862ae08c40b588f834d53efd98cdcea7b",
+   "kind": "scene",
+   "inDom": false,
+   "drawn": false,
+   "screens": [],
+   "elements": [],
+   "hiddenInDom": [],
+   "maxDisplayCss": {
+    "desktop": [
+     0,
+     0
+    ],
+    "ipad": [
+     0,
+     0
+    ],
+    "telefoon": [
+     0,
+     0
+    ]
+   },
+   "used": false,
+   "unusedReason": "hoofdstukscène \"kop\": scripts/v3 leest alleen scenes[id].mini, nooit .kop"
+  },
+  {
+   "id": "assets/v3/render/exports/BG-01-toscane-2880.webp",
+   "source": "v3",
+   "mime": "image/webp",
+   "format": "WEBP",
+   "mode": "RGB",
+   "bytes": 433106,
+   "base64Bytes": 577476,
+   "occurrences": 1,
+   "size": [
+    2880,
+    1800
+   ],
+   "sha256": "c07c938d990250fdcd3a370b90f74c7cb8d9a422f4b720dbeb5e93850309b9c0",
+   "kind": "achtergrond",
+   "inDom": true,
+   "drawn": true,
+   "screens": [
+    "boek",
+    "instellingen",
+    "keuzevenster",
+    "keuzevenster-rome",
+    "les-point",
+    "les-point-fout",
+    "les-point-goed",
+    "les-write",
+    "les-write-fout",
+    "les-write-goed",
+    "oefenen",
+    "reis",
+    "reis-city1",
+    "reis-city2",
+    "reis-city3",
+    "reis-city4",
+    "reis-countries",
+    "reis-islands",
+    "reis-mountains",
+    "reis-regions",
+    "reis-relief-uit",
+    "reis-rivers",
+    "reis-seas",
+    "reis-volcanoes",
+    "rewards",
+    "rewards-v3BookCover",
+    "rewards-v3TileGold",
+    "rewards-v3TilePizza",
+    "rewards-v3TilePostcard",
+    "rewards-v3TileStamp",
+    "schoolblad",
+    "toets",
+    "toetsResult-fouten",
+    "toetsResult-perfect",
+    "vespa-100",
+    "vespa-1200",
+    "vespa-2500",
+    "vespa-600",
+    "voortgang"
+   ],
+   "elements": [
+    "body.ninoSchoolMapOnly.v3On"
+   ],
+   "hiddenInDom": [],
+   "maxDisplayCss": {
+    "desktop": [
+     1688,
+     1055
+    ],
+    "ipad": [
+     1296,
+     810
+    ],
+    "telefoon": [
+     0,
+     0
+    ]
+   },
+   "used": true
+  },
+  {
+   "id": "assets/v3/scenes/topo-bergen-dolomieten.webp",
+   "source": "v3",
+   "mime": "image/webp",
+   "format": "WEBP",
+   "mode": "RGB",
+   "bytes": 423450,
+   "base64Bytes": 564600,
+   "occurrences": 1,
+   "size": [
+    1672,
+    941
+   ],
+   "sha256": "ea8841762b495239c1ec89a5759c03ec09c002af3a5c550c1370205ea6ef3fce",
+   "kind": "scene",
+   "inDom": false,
+   "drawn": false,
+   "screens": [],
+   "elements": [],
+   "hiddenInDom": [],
+   "maxDisplayCss": {
+    "desktop": [
+     0,
+     0
+    ],
+    "ipad": [
+     0,
+     0
+    ],
+    "telefoon": [
+     0,
+     0
+    ]
+   },
+   "used": false,
+   "unusedReason": "hoofdstukscène \"kop\": scripts/v3 leest alleen scenes[id].mini, nooit .kop"
+  },
+  {
+   "id": "assets/v2/pizza-reward-box-quattro-formaggi.webp",
+   "source": "v2",
+   "mime": "image/webp",
+   "format": "WEBP",
+   "mode": "RGBA",
+   "bytes": 209562,
+   "base64Bytes": 279416,
+   "occurrences": 2,
+   "size": [
+    960,
+    960
+   ],
+   "sha256": "1b317d38980873756276ffaedeca3843a30c386233e83ecf846a1563f99903b2",
+   "kind": "icoon",
+   "inDom": false,
+   "drawn": false,
+   "screens": [],
+   "elements": [],
+   "hiddenInDom": [],
+   "maxDisplayCss": {
+    "desktop": [
+     0,
+     0
+    ],
+    "ipad": [
+     0,
+     0
+    ],
+    "telefoon": [
+     0,
+     0
+    ]
+   },
+   "used": true,
+   "note": "niet getekend in de scan, maar niet bewezen ongebruikt: telt als gebruikt"
+  },
+  {
+   "id": "assets/v3/scenes/topo-landen-italie-slovenie.webp",
+   "source": "v3",
+   "mime": "image/webp",
+   "format": "WEBP",
+   "mode": "RGB",
+   "bytes": 403120,
+   "base64Bytes": 537496,
+   "occurrences": 1,
+   "size": [
+    1672,
+    941
+   ],
+   "sha256": "10c798c0e9d679987f4b446e412c05f6b80fc7a57f26ab709ac099414e39421d",
+   "kind": "scene",
+   "inDom": false,
+   "drawn": false,
+   "screens": [],
+   "elements": [],
+   "hiddenInDom": [],
+   "maxDisplayCss": {
+    "desktop": [
+     0,
+     0
+    ],
+    "ipad": [
+     0,
+     0
+    ],
+    "telefoon": [
+     0,
+     0
+    ]
+   },
+   "used": false,
+   "unusedReason": "hoofdstukscène \"kop\": scripts/v3 leest alleen scenes[id].mini, nooit .kop"
+  },
+  {
+   "id": "assets/v3/scenes/topo-steden-firenze.webp",
+   "source": "v3",
+   "mime": "image/webp",
+   "format": "WEBP",
+   "mode": "RGB",
+   "bytes": 402776,
+   "base64Bytes": 537036,
+   "occurrences": 1,
+   "size": [
+    1672,
+    941
+   ],
+   "sha256": "fc30759340d0a54a2b63e29adcb4a4f4b20078021941410faf0f564793baf048",
+   "kind": "scene",
+   "inDom": false,
+   "drawn": false,
+   "screens": [],
+   "elements": [],
+   "hiddenInDom": [],
+   "maxDisplayCss": {
+    "desktop": [
+     0,
+     0
+    ],
+    "ipad": [
+     0,
+     0
+    ],
+    "telefoon": [
+     0,
+     0
+    ]
+   },
+   "used": false,
+   "unusedReason": "hoofdstukscène \"kop\": scripts/v3 leest alleen scenes[id].mini, nooit .kop"
+  },
+  {
+   "id": "assets/v3/scenes/topo-zeeen-amalfi.webp",
+   "source": "v3",
+   "mime": "image/webp",
+   "format": "WEBP",
+   "mode": "RGB",
+   "bytes": 397262,
+   "base64Bytes": 529684,
+   "occurrences": 1,
+   "size": [
+    1672,
+    941
+   ],
+   "sha256": "fb3a1c781a099eebbb078a35d82a9666e69475eb528f3e505037e7e7638454d1",
+   "kind": "scene",
+   "inDom": false,
+   "drawn": false,
+   "screens": [],
+   "elements": [],
+   "hiddenInDom": [],
+   "maxDisplayCss": {
+    "desktop": [
+     0,
+     0
+    ],
+    "ipad": [
+     0,
+     0
+    ],
+    "telefoon": [
+     0,
+     0
+    ]
+   },
+   "used": false,
+   "unusedReason": "hoofdstukscène \"kop\": scripts/v3 leest alleen scenes[id].mini, nooit .kop"
+  },
+  {
+   "id": "assets/v2/nino-v2-stamp2.webp",
+   "source": "v2",
+   "mime": "image/webp",
+   "format": "WEBP",
+   "mode": "RGBA",
+   "bytes": 392392,
+   "base64Bytes": 523192,
+   "occurrences": 1,
+   "size": [
+    768,
+    768
+   ],
+   "sha256": "b00fb30fc5ebfedcdec8970fa78bbba48b6d1b52288d5aa440a85dd6b9dfcae5",
+   "kind": "icoon",
+   "inDom": true,
+   "drawn": true,
+   "screens": [
+    "boek",
+    "rewards-v3TileGold",
+    "rewards-v3TileStamp"
+   ],
+   "elements": [
+    "section.bookPage img.stampArt"
+   ],
+   "hiddenInDom": [],
+   "maxDisplayCss": {
+    "desktop": [
+     131,
+     131
+    ],
+    "ipad": [
+     122,
+     122
+    ],
+    "telefoon": [
+     86,
+     86
+    ]
+   },
+   "used": true
+  },
+  {
+   "id": "assets/v3/scenes/topo-rivieren-po.webp",
+   "source": "v3",
+   "mime": "image/webp",
+   "format": "WEBP",
+   "mode": "RGB",
+   "bytes": 383964,
+   "base64Bytes": 511952,
+   "occurrences": 1,
+   "size": [
+    1672,
+    941
+   ],
+   "sha256": "a69ae30fda1271431e5d1ffe7145249f0c25a048074d185a1a81fbad2f3811e1",
+   "kind": "scene",
+   "inDom": false,
+   "drawn": false,
+   "screens": [],
+   "elements": [],
+   "hiddenInDom": [],
+   "maxDisplayCss": {
+    "desktop": [
+     0,
+     0
+    ],
+    "ipad": [
+     0,
+     0
+    ],
+    "telefoon": [
+     0,
+     0
+    ]
+   },
+   "used": false,
+   "unusedReason": "hoofdstukscène \"kop\": scripts/v3 leest alleen scenes[id].mini, nooit .kop"
+  },
+  {
+   "id": "assets/v2/nino-v2-stamp10.webp",
+   "source": "v2",
+   "mime": "image/webp",
+   "format": "WEBP",
+   "mode": "RGBA",
+   "bytes": 375622,
+   "base64Bytes": 500832,
+   "occurrences": 1,
+   "size": [
+    768,
+    768
+   ],
+   "sha256": "063a643d0d16436e0be7fdacd39316d0bf1bd99427137bf284c027b0610b63b7",
+   "kind": "icoon",
+   "inDom": true,
+   "drawn": true,
+   "screens": [
+    "boek"
+   ],
+   "elements": [
+    "section.bookPage img.stampArt"
+   ],
+   "hiddenInDom": [],
+   "maxDisplayCss": {
+    "desktop": [
+     134,
+     134
+    ],
+    "ipad": [
+     125,
+     125
+    ],
+    "telefoon": [
+     88,
+     88
+    ]
+   },
+   "used": true
+  },
+  {
+   "id": "assets/v2/nino-v2-finalgold.webp",
+   "source": "v2",
+   "mime": "image/webp",
+   "format": "WEBP",
+   "mode": "RGBA",
+   "bytes": 364730,
+   "base64Bytes": 486308,
+   "occurrences": 1,
+   "size": [
+    480,
+    480
+   ],
+   "sha256": "63b8e838caff5d32ee1c890f0b03cf2479b4c3d37cb1d1950f255d991fcdfb91",
+   "kind": "icoon",
+   "inDom": true,
+   "drawn": true,
+   "screens": [
+    "boek"
+   ],
+   "elements": [
+    "section.bookPage img.bookFinalGold"
+   ],
+   "hiddenInDom": [
+    "section.bookPage img.bookFinalGold"
+   ],
+   "maxDisplayCss": {
+    "desktop": [
+     252,
+     252
+    ],
+    "ipad": [
+     234,
+     234
+    ],
+    "telefoon": [
+     159,
+     159
+    ]
+   },
+   "used": true
+  },
+  {
+   "id": "assets/v2/nino-v2-stamp5.webp",
+   "source": "v2",
+   "mime": "image/webp",
+   "format": "WEBP",
+   "mode": "RGBA",
+   "bytes": 363386,
+   "base64Bytes": 484516,
+   "occurrences": 1,
+   "size": [
+    768,
+    768
+   ],
+   "sha256": "4d989d4b6147acd3b43ff11ee068123eea643ec5d2cc530d7fa3826dd4430c98",
+   "kind": "icoon",
+   "inDom": true,
+   "drawn": true,
+   "screens": [
+    "boek",
+    "rewards-v3TileGold",
+    "rewards-v3TileStamp"
+   ],
+   "elements": [
+    "section.bookPage img.stampArt"
+   ],
+   "hiddenInDom": [],
+   "maxDisplayCss": {
+    "desktop": [
+     131,
+     131
+    ],
+    "ipad": [
+     122,
+     122
+    ],
+    "telefoon": [
+     86,
+     86
+    ]
+   },
+   "used": true
+  },
+  {
+   "id": "assets/v2/nino-v2-stamp0.webp",
+   "source": "v2",
+   "mime": "image/webp",
+   "format": "WEBP",
+   "mode": "RGBA",
+   "bytes": 358350,
+   "base64Bytes": 477800,
+   "occurrences": 1,
+   "size": [
+    768,
+    768
+   ],
+   "sha256": "de4d32cf277a806fad8fc343451f574ef7a9d0a482cc2b8bb7e5c24c3fc47125",
+   "kind": "icoon",
+   "inDom": true,
+   "drawn": true,
+   "screens": [
+    "boek",
+    "rewards-v3TileGold",
+    "rewards-v3TileStamp"
+   ],
+   "elements": [
+    "section.bookPage img.stampArt"
+   ],
+   "hiddenInDom": [],
+   "maxDisplayCss": {
+    "desktop": [
+     134,
+     134
+    ],
+    "ipad": [
+     125,
+     125
+    ],
+    "telefoon": [
+     88,
+     88
+    ]
+   },
+   "used": true
+  },
+  {
+   "id": "assets/v3/scenes/topo-vulkanen-etna.webp",
+   "source": "v3",
+   "mime": "image/webp",
+   "format": "WEBP",
+   "mode": "RGB",
+   "bytes": 354542,
+   "base64Bytes": 472724,
+   "occurrences": 1,
+   "size": [
+    1672,
+    941
+   ],
+   "sha256": "80623ad790d3f8c32a39276e84106bda9ccd37d57f79d3268091f0206466b654",
+   "kind": "scene",
+   "inDom": false,
+   "drawn": false,
+   "screens": [],
+   "elements": [],
+   "hiddenInDom": [],
+   "maxDisplayCss": {
+    "desktop": [
+     0,
+     0
+    ],
+    "ipad": [
+     0,
+     0
+    ],
+    "telefoon": [
+     0,
+     0
+    ]
+   },
+   "used": false,
+   "unusedReason": "hoofdstukscène \"kop\": scripts/v3 leest alleen scenes[id].mini, nooit .kop"
+  },
+  {
+   "id": "assets/v3/scenes/topo-eilanden-v2.webp",
+   "source": "v3",
+   "mime": "image/webp",
+   "format": "WEBP",
+   "mode": "RGB",
+   "bytes": 348408,
+   "base64Bytes": 464544,
+   "occurrences": 1,
+   "size": [
+    1672,
+    941
+   ],
+   "sha256": "8b2d530acee7c727479cf9593e55e1b03bbadbdf85971a631cce2c1097ee9093",
+   "kind": "scene",
+   "inDom": false,
+   "drawn": false,
+   "screens": [],
+   "elements": [],
+   "hiddenInDom": [],
+   "maxDisplayCss": {
+    "desktop": [
+     0,
+     0
+    ],
+    "ipad": [
+     0,
+     0
+    ],
+    "telefoon": [
+     0,
+     0
+    ]
+   },
+   "used": false,
+   "unusedReason": "hoofdstukscène \"kop\": scripts/v3 leest alleen scenes[id].mini, nooit .kop"
+  },
+  {
+   "id": "assets/v2/nino-v2-stamp3.webp",
+   "source": "v2",
+   "mime": "image/webp",
+   "format": "WEBP",
+   "mode": "RGBA",
+   "bytes": 338984,
+   "base64Bytes": 451980,
+   "occurrences": 1,
+   "size": [
+    768,
+    768
+   ],
+   "sha256": "b7cf9eeb47dd88028ce8da8789fd6f042c0998df182b43bd4996453148dc4fac",
+   "kind": "icoon",
+   "inDom": true,
+   "drawn": true,
+   "screens": [
+    "boek",
+    "rewards-v3TileGold",
+    "rewards-v3TileStamp"
+   ],
+   "elements": [
+    "section.bookPage img.stampArt"
+   ],
+   "hiddenInDom": [],
+   "maxDisplayCss": {
+    "desktop": [
+     133,
+     133
+    ],
+    "ipad": [
+     124,
+     124
+    ],
+    "telefoon": [
+     87,
+     87
+    ]
+   },
+   "used": true
+  },
+  {
+   "id": "assets/v3/render/exports/SCENE-ROMA-kop-1672.webp",
+   "source": "v3",
+   "mime": "image/webp",
+   "format": "WEBP",
+   "mode": "RGB",
+   "bytes": 336364,
+   "base64Bytes": 448488,
+   "occurrences": 1,
+   "size": [
+    1672,
+    941
+   ],
+   "sha256": "5a01badbf0f26fe28109e999c592615d882eb704e6bef809d40e70436b4f6465",
+   "kind": "scene",
+   "inDom": false,
+   "drawn": false,
+   "screens": [],
+   "elements": [],
+   "hiddenInDom": [],
+   "maxDisplayCss": {
+    "desktop": [
+     0,
+     0
+    ],
+    "ipad": [
+     0,
+     0
+    ],
+    "telefoon": [
+     0,
+     0
+    ]
+   },
+   "used": false,
+   "unusedReason": "hoofdstukscène \"kop\": scripts/v3 leest alleen scenes[id].mini, nooit .kop"
+  },
+  {
+   "id": "assets/v3/render/exports/BG-02-meer-2880.webp",
+   "source": "v3",
+   "mime": "image/webp",
+   "format": "WEBP",
+   "mode": "RGB",
+   "bytes": 321346,
+   "base64Bytes": 428464,
+   "occurrences": 1,
+   "size": [
+    2880,
+    1800
+   ],
+   "sha256": "939934b56be3406fa5a48717b900acea521f6f45674cce82b09993ca3630c660",
+   "kind": "achtergrond",
+   "inDom": true,
+   "drawn": true,
+   "screens": [
+    "boek",
+    "instellingen",
+    "keuzevenster",
+    "keuzevenster-rome",
+    "les-point",
+    "les-point-fout",
+    "les-point-goed",
+    "les-write",
+    "les-write-fout",
+    "les-write-goed",
+    "oefenen",
+    "reis",
+    "reis-city1",
+    "reis-city2",
+    "reis-city3",
+    "reis-city4",
+    "reis-countries",
+    "reis-islands",
+    "reis-mountains",
+    "reis-regions",
+    "reis-relief-uit",
+    "reis-rivers",
+    "reis-seas",
+    "reis-volcanoes",
+    "rewards",
+    "rewards-v3BookCover",
+    "rewards-v3TileGold",
+    "rewards-v3TilePizza",
+    "rewards-v3TilePostcard",
+    "rewards-v3TileStamp",
+    "schoolblad",
+    "toets",
+    "toetsResult-fouten",
+    "toetsResult-perfect",
+    "vespa-100",
+    "vespa-1200",
+    "vespa-2500",
+    "vespa-600",
+    "voortgang"
+   ],
+   "elements": [
+    "body.ninoSchoolMapOnly.v3On"
+   ],
+   "hiddenInDom": [],
+   "maxDisplayCss": {
+    "desktop": [
+     1688,
+     1055
+    ],
+    "ipad": [
+     1296,
+     810
+    ],
+    "telefoon": [
+     0,
+     0
+    ]
+   },
+   "used": true
+  },
+  {
+   "id": "assets/v2/nino-v2-stamp6.webp",
+   "source": "v2",
+   "mime": "image/webp",
+   "format": "WEBP",
+   "mode": "RGBA",
+   "bytes": 314476,
+   "base64Bytes": 419304,
+   "occurrences": 1,
+   "size": [
+    768,
+    768
+   ],
+   "sha256": "1794a3ee574294278b5147aefd069d0904d6d356c3e350cac56f302c497c1a6f",
+   "kind": "icoon",
+   "inDom": true,
+   "drawn": true,
+   "screens": [
+    "boek"
+   ],
+   "elements": [
+    "section.bookPage img.stampArt"
+   ],
+   "hiddenInDom": [],
+   "maxDisplayCss": {
+    "desktop": [
+     133,
+     133
+    ],
+    "ipad": [
+     124,
+     124
+    ],
+    "telefoon": [
+     87,
+     87
+    ]
+   },
+   "used": true
+  },
+  {
+   "id": "assets/v3/render/exports/SCENE-VENEZIA-kop-1672.webp",
+   "source": "v3",
+   "mime": "image/webp",
+   "format": "WEBP",
+   "mode": "RGB",
+   "bytes": 311914,
+   "base64Bytes": 415888,
+   "occurrences": 1,
+   "size": [
+    1672,
+    941
+   ],
+   "sha256": "719344db49bfd156f6b22904b1ff31dd2e2899ac133b0c303fdcf85b165dae02",
+   "kind": "scene",
+   "inDom": false,
+   "drawn": false,
+   "screens": [],
+   "elements": [],
+   "hiddenInDom": [],
+   "maxDisplayCss": {
+    "desktop": [
+     0,
+     0
+    ],
+    "ipad": [
+     0,
+     0
+    ],
+    "telefoon": [
+     0,
+     0
+    ]
+   },
+   "used": false,
+   "unusedReason": "hoofdstukscène \"kop\": scripts/v3 leest alleen scenes[id].mini, nooit .kop"
+  },
+  {
+   "id": "assets/v3/relief-r2.webp",
+   "source": "v3",
+   "mime": "image/webp",
+   "format": "WEBP",
+   "mode": "RGB",
+   "bytes": 300466,
+   "base64Bytes": 400624,
+   "occurrences": 1,
+   "size": [
+    1780,
+    2470
+   ],
+   "sha256": "596e2f1e19d925435e082bc06c9f0558f021838b5f2748c8fcaa87ef7eb5543e",
+   "kind": "kaart",
+   "inDom": true,
+   "drawn": true,
+   "screens": [
+    "kennismaking",
+    "kennismaking-aanbod",
+    "oefenen",
+    "reis",
+    "reis-city1",
+    "reis-city2",
+    "reis-city3",
+    "reis-city4",
+    "reis-countries",
+    "reis-islands",
+    "reis-mountains",
+    "reis-regions",
+    "reis-rivers",
+    "reis-seas",
+    "reis-volcanoes",
+    "schoolblad",
+    "toetsResult-fouten",
+    "toetsResult-perfect"
+   ],
+   "elements": [
+    "section.v3Main image",
+    "section.v3View image"
+   ],
+   "hiddenInDom": [
+    "section.v3Main image"
+   ],
+   "maxDisplayCss": {
+    "desktop": [
+     750,
+     1040
+    ],
+    "ipad": [
+     576,
+     800
+    ],
+    "telefoon": [
+     350,
+     486
+    ]
+   },
+   "used": true
+  },
+  {
+   "id": "assets/v3/render/exports/nino-aanmoediging-v3.webp",
+   "source": "v3",
+   "mime": "image/webp",
+   "format": "WEBP",
+   "mode": "RGBA",
+   "bytes": 292096,
+   "base64Bytes": 389464,
+   "occurrences": 1,
+   "size": [
+    800,
+    1200
+   ],
+   "sha256": "327f0f173f7756cbf03956d1c044c604826318ee2f1801482547bd2820104478",
+   "kind": "nino",
+   "inDom": true,
+   "drawn": false,
+   "screens": [],
+   "elements": [],
+   "hiddenInDom": [
+    "#practiceArt img",
+    "dialog.ninoExamResult img"
+   ],
+   "maxDisplayCss": {
+    "desktop": [
+     0,
+     0
+    ],
+    "ipad": [
+     0,
+     0
+    ],
+    "telefoon": [
+     0,
+     0
+    ]
+   },
+   "used": true,
+   "note": "niet getekend in de scan, maar niet bewezen ongebruikt: telt als gebruikt"
+  },
+  {
+   "id": "assets/v3/render/exports/nino-schrijft-v3.webp",
+   "source": "v3",
+   "mime": "image/webp",
+   "format": "WEBP",
+   "mode": "RGBA",
+   "bytes": 283204,
+   "base64Bytes": 377608,
+   "occurrences": 1,
+   "size": [
+    800,
+    1200
+   ],
+   "sha256": "78e77822d041d29173182af1fa13d6c3ddd0d946039f97d51fcca5150cb1391f",
+   "kind": "nino",
+   "inDom": true,
+   "drawn": true,
+   "screens": [
+    "toets"
+   ],
+   "elements": [
+    "section.v3View img"
+   ],
+   "hiddenInDom": [
+    "section.v3View img"
+   ],
+   "maxDisplayCss": {
+    "desktop": [
+     372,
+     558
+    ],
+    "ipad": [
+     335,
+     502
+    ],
+    "telefoon": [
+     0,
+     0
+    ]
+   },
+   "used": true
+  },
+  {
+   "id": "assets/v3/render/exports/SCENE-NAPOLI-kop-1672.webp",
+   "source": "v3",
+   "mime": "image/webp",
+   "format": "WEBP",
+   "mode": "RGB",
+   "bytes": 275572,
+   "base64Bytes": 367432,
+   "occurrences": 1,
+   "size": [
+    1672,
+    941
+   ],
+   "sha256": "d9662509ce537fa8fcfb0485acc5478ff8ddc632b7768dbaf192269148a12668",
+   "kind": "scene",
+   "inDom": false,
+   "drawn": false,
+   "screens": [],
+   "elements": [],
+   "hiddenInDom": [],
+   "maxDisplayCss": {
+    "desktop": [
+     0,
+     0
+    ],
+    "ipad": [
+     0,
+     0
+    ],
+    "telefoon": [
+     0,
+     0
+    ]
+   },
+   "used": false,
+   "unusedReason": "hoofdstukscène \"kop\": scripts/v3 leest alleen scenes[id].mini, nooit .kop"
+  },
+  {
+   "id": "assets/v2/pizza-reward-salami.webp",
+   "source": "v2",
+   "mime": "image/webp",
+   "format": "WEBP",
+   "mode": "RGBA",
+   "bytes": 275088,
+   "base64Bytes": 366784,
+   "occurrences": 1,
+   "size": [
+    960,
+    960
+   ],
+   "sha256": "ff782e287391c4e707b8b967327bc13277f456776e30d48d02eeeb169cf587ed",
+   "kind": "icoon",
+   "inDom": true,
+   "drawn": true,
+   "screens": [
+    "boek",
+    "instellingen",
+    "keuzevenster",
+    "keuzevenster-rome",
+    "les-point",
+    "les-point-fout",
+    "les-point-goed",
+    "les-write",
+    "les-write-fout",
+    "les-write-goed",
+    "rewards",
+    "rewards-v3BookCover",
+    "rewards-v3TileGold",
+    "rewards-v3TilePizza",
+    "rewards-v3TilePostcard",
+    "rewards-v3TileStamp",
+    "vespa-100",
+    "vespa-1200",
+    "vespa-2500",
+    "vespa-600"
+   ],
+   "elements": [
+    "#ninoMeter span.pizzaPixels",
+    "section.v3Rewards span.v3RidePizza",
+    "section.v3Rewards span.v3RidePizza.now"
+   ],
+   "hiddenInDom": [
+    "#journeyWheel span.pizzaPixels",
+    "section.v3Rewards span.v3RidePizza",
+    "section.v3Rewards span.v3RidePizza.now"
+   ],
+   "maxDisplayCss": {
+    "desktop": [
+     420,
+     420
+    ],
+    "ipad": [
+     376,
+     376
+    ],
+    "telefoon": [
+     252,
+     252
+    ]
+   },
+   "used": true
+  },
+  {
+   "id": "assets/v3/render/exports/nino-juicht-v3.webp",
+   "source": "v3",
+   "mime": "image/webp",
+   "format": "WEBP",
+   "mode": "RGBA",
+   "bytes": 269398,
+   "base64Bytes": 359200,
+   "occurrences": 1,
+   "size": [
+    800,
+    1200
+   ],
+   "sha256": "e270e3406986cfdd97851e347e9dc68db6e31b4d1c0576162b5c3563652b2665",
+   "kind": "nino",
+   "inDom": true,
+   "drawn": true,
+   "screens": [
+    "toetsResult-perfect"
+   ],
+   "elements": [
+    "section.v3View img"
+   ],
+   "hiddenInDom": [
+    "dialog.ninoExamResult img",
+    "section.v3View img"
+   ],
+   "maxDisplayCss": {
+    "desktop": [
+     240,
+     360
+    ],
+    "ipad": [
+     240,
+     360
+    ],
+    "telefoon": [
+     59,
+     88
+    ]
+   },
+   "used": true
+  },
+  {
+   "id": "assets/v3/render/exports/vespa-bagage-v3.webp",
+   "source": "v3",
+   "mime": "image/webp",
+   "format": "WEBP",
+   "mode": "RGBA",
+   "bytes": 266370,
+   "base64Bytes": 355160,
+   "occurrences": 1,
+   "size": [
+    1200,
+    800
+   ],
+   "sha256": "4827324478e2631272dd3f24acf5193fd88dcde253a6057be68f98f428375881",
+   "kind": "nino",
+   "inDom": false,
+   "drawn": false,
+   "screens": [],
+   "elements": [],
+   "hiddenInDom": [],
+   "maxDisplayCss": {
+    "desktop": [
+     0,
+     0
+    ],
+    "ipad": [
+     0,
+     0
+    ],
+    "telefoon": [
+     0,
+     0
+    ]
+   },
+   "used": true,
+   "note": "niet getekend in de scan, maar niet bewezen ongebruikt: telt als gebruikt"
+  },
+  {
+   "id": "assets/v2/nino-v2-stamp7.webp",
+   "source": "v2",
+   "mime": "image/webp",
+   "format": "WEBP",
+   "mode": "RGBA",
+   "bytes": 257492,
+   "base64Bytes": 343324,
+   "occurrences": 1,
+   "size": [
+    768,
+    512
+   ],
+   "sha256": "042bd1d301006582b6d91b98ae3132b81a8fb40cbc7a69aaac936fee62f82403",
+   "kind": "icoon",
+   "inDom": true,
+   "drawn": true,
+   "screens": [
+    "boek"
+   ],
+   "elements": [
+    "section.bookPage img.stampArt"
+   ],
+   "hiddenInDom": [],
+   "maxDisplayCss": {
+    "desktop": [
+     132,
+     92
+    ],
+    "ipad": [
+     123,
+     85
+    ],
+    "telefoon": [
+     86,
+     60
+    ]
+   },
+   "used": true
+  },
+  {
+   "id": "assets/v2/nino-art-encourage.webp",
+   "source": "v2",
+   "mime": "image/webp",
+   "format": "WEBP",
+   "mode": "RGBA",
+   "bytes": 255360,
+   "base64Bytes": 340480,
+   "occurrences": 1,
+   "size": [
+    1067,
+    1600
+   ],
+   "sha256": "4ab8b1af4289ffd47dd9d2e8e102dfff68a53da97030741df1db16bc0889d3c5",
+   "kind": "nino",
+   "inDom": false,
+   "drawn": false,
+   "screens": [],
+   "elements": [],
+   "hiddenInDom": [],
+   "maxDisplayCss": {
+    "desktop": [
+     0,
+     0
+    ],
+    "ipad": [
+     0,
+     0
+    ],
+    "telefoon": [
+     0,
+     0
+    ]
+   },
+   "used": true,
+   "note": "niet getekend in de scan, maar niet bewezen ongebruikt: telt als gebruikt"
+  },
+  {
+   "id": "assets/v2/nino-art-success.webp",
+   "source": "v2",
+   "mime": "image/webp",
+   "format": "WEBP",
+   "mode": "RGBA",
+   "bytes": 255022,
+   "base64Bytes": 340032,
+   "occurrences": 1,
+   "size": [
+    1067,
+    1600
+   ],
+   "sha256": "e43124089abfa0878705c9f4c9389487c16b914c3579cff88d8532f64f6fa518",
+   "kind": "nino",
+   "inDom": false,
+   "drawn": false,
+   "screens": [],
+   "elements": [],
+   "hiddenInDom": [],
+   "maxDisplayCss": {
+    "desktop": [
+     0,
+     0
+    ],
+    "ipad": [
+     0,
+     0
+    ],
+    "telefoon": [
+     0,
+     0
+    ]
+   },
+   "used": true,
+   "note": "niet getekend in de scan, maar niet bewezen ongebruikt: telt als gebruikt"
+  },
+  {
+   "id": "assets/v2/pizza-reward-margherita.webp",
+   "source": "v2",
+   "mime": "image/webp",
+   "format": "WEBP",
+   "mode": "RGBA",
+   "bytes": 250164,
+   "base64Bytes": 333552,
+   "occurrences": 1,
+   "size": [
+    960,
+    960
+   ],
+   "sha256": "b3fa5fbdd2eea780186742b802d0f9acf996842365b18f2f734a78e55011829f",
+   "kind": "icoon",
+   "inDom": true,
+   "drawn": true,
+   "screens": [
+    "boek",
+    "instellingen",
+    "keuzevenster",
+    "keuzevenster-rome",
+    "les-point",
+    "les-point-fout",
+    "les-point-goed",
+    "les-write",
+    "les-write-fout",
+    "les-write-goed",
+    "rewards",
+    "rewards-v3BookCover",
+    "rewards-v3TileGold",
+    "rewards-v3TilePizza",
+    "rewards-v3TilePostcard",
+    "rewards-v3TileStamp",
+    "vespa-100",
+    "vespa-1200",
+    "vespa-2500",
+    "vespa-600"
+   ],
+   "elements": [
+    "#ninoMeter span.pizzaPixels",
+    "section.bookPage span.pizzaPixels",
+    "section.v3Rewards span.v3RidePizza.now",
+    "section.v3Rewards span.v3RidePizza.on"
+   ],
+   "hiddenInDom": [
+    "#journeyWheel span.pizzaPixels",
+    "#routeHome span.pizzaPixels",
+    "section.v3Rewards span.v3RidePizza.now",
+    "section.v3Rewards span.v3RidePizza.on"
+   ],
+   "maxDisplayCss": {
+    "desktop": [
+     420,
+     420
+    ],
+    "ipad": [
+     376,
+     376
+    ],
+    "telefoon": [
+     252,
+     252
+    ]
+   },
+   "used": true
+  },
+  {
+   "id": "assets/v2/nino-v2-stamp9.webp",
+   "source": "v2",
+   "mime": "image/webp",
+   "format": "WEBP",
+   "mode": "RGBA",
+   "bytes": 246464,
+   "base64Bytes": 328620,
+   "occurrences": 1,
+   "size": [
+    768,
+    702
+   ],
+   "sha256": "686b3f091f933dcec54a9710405af24236bf8921cdeca316cd7403c806a0e34f",
+   "kind": "icoon",
+   "inDom": true,
+   "drawn": true,
+   "screens": [
+    "boek"
+   ],
+   "elements": [
+    "section.bookPage img.stampArt"
+   ],
+   "hiddenInDom": [],
+   "maxDisplayCss": {
+    "desktop": [
+     132,
+     121
+    ],
+    "ipad": [
+     122,
+     113
+    ],
+    "telefoon": [
+     86,
+     79
+    ]
+   },
+   "used": true
+  },
+  {
+   "id": "assets/discovery/terrain-z8-render-sea.webp",
+   "source": "v3",
+   "mime": "image/webp",
+   "format": "WEBP",
+   "mode": "RGB",
+   "bytes": 245696,
+   "base64Bytes": 327596,
+   "occurrences": 1,
+   "size": [
+    1780,
+    2470
+   ],
+   "sha256": "daded673fe77a75f631b40251c09ef158b1c541b037f32c8d75ed4141b4409d5",
+   "kind": "kaart",
+   "inDom": true,
+   "drawn": false,
+   "screens": [],
+   "elements": [],
+   "hiddenInDom": [
+    "section.v3Main image"
+   ],
+   "maxDisplayCss": {
+    "desktop": [
+     0,
+     0
+    ],
+    "ipad": [
+     0,
+     0
+    ],
+    "telefoon": [
+     0,
+     0
+    ]
+   },
+   "used": false,
+   "unusedReason": "reliëflaag zee/schaduw: alleen in variant Kaart; ui.kaart is altijd eiland en reis-ijk.css verbergt de lagen daar"
+  },
+  {
+   "id": "assets/v2/nino-v2-stamp1.webp",
+   "source": "v2",
+   "mime": "image/webp",
+   "format": "WEBP",
+   "mode": "RGBA",
+   "bytes": 242356,
+   "base64Bytes": 323144,
+   "occurrences": 1,
+   "size": [
+    768,
+    512
+   ],
+   "sha256": "b34ff0780ebd442080f53d79c13d63bb89d45cb4ad961ec582a902758fec8628",
+   "kind": "icoon",
+   "inDom": true,
+   "drawn": true,
+   "screens": [
+    "boek",
+    "rewards-v3TileGold",
+    "rewards-v3TileStamp"
+   ],
+   "elements": [
+    "section.bookPage img.stampArt"
+   ],
+   "hiddenInDom": [],
+   "maxDisplayCss": {
+    "desktop": [
+     130,
+     90
+    ],
+    "ipad": [
+     122,
+     83
+    ],
+    "telefoon": [
+     86,
+     59
+    ]
+   },
+   "used": true
+  },
+  {
+   "id": "assets/v2/nino-v2-travel.webp",
+   "source": "v2",
+   "mime": "image/webp",
+   "format": "WEBP",
+   "mode": "RGBA",
+   "bytes": 236836,
+   "base64Bytes": 315784,
+   "occurrences": 1,
+   "size": [
+    1254,
+    1254
+   ],
+   "sha256": "d12e2738fbbbfd05f174ab5af8d555f22fc4505a4c57fb72f28020096dc7a424",
+   "kind": "nino",
+   "inDom": true,
+   "drawn": false,
+   "screens": [],
+   "elements": [],
+   "hiddenInDom": [
+    "img.headerIcon"
+   ],
+   "maxDisplayCss": {
+    "desktop": [
+     0,
+     0
+    ],
+    "ipad": [
+     0,
+     0
+    ],
+    "telefoon": [
+     0,
+     0
+    ]
+   },
+   "used": true,
+   "note": "niet getekend in de scan, maar niet bewezen ongebruikt: telt als gebruikt"
+  },
+  {
+   "id": "assets/v2/pizza-reward-quattro-formaggi.webp",
+   "source": "v2",
+   "mime": "image/webp",
+   "format": "WEBP",
+   "mode": "RGBA",
+   "bytes": 234570,
+   "base64Bytes": 312760,
+   "occurrences": 1,
+   "size": [
+    960,
+    960
+   ],
+   "sha256": "e99a7e0d6ed2fab32898074b4a375f35eff3bb0ffac715667434cb5d45d1d795",
+   "kind": "icoon",
+   "inDom": true,
+   "drawn": true,
+   "screens": [
+    "boek",
+    "instellingen",
+    "rewards",
+    "rewards-v3BookCover",
+    "rewards-v3TileGold",
+    "rewards-v3TilePizza",
+    "rewards-v3TilePostcard",
+    "rewards-v3TileStamp",
+    "vespa-100",
+    "vespa-1200",
+    "vespa-2500",
+    "vespa-600"
+   ],
+   "elements": [
+    "section.v3Rewards span.v3RidePizza"
+   ],
+   "hiddenInDom": [
+    "section.v3Rewards span.v3RidePizza"
+   ],
+   "maxDisplayCss": {
+    "desktop": [
+     420,
+     420
+    ],
+    "ipad": [
+     376,
+     376
+    ],
+    "telefoon": [
+     252,
+     252
+    ]
+   },
+   "used": true
+  },
+  {
+   "id": "assets/v2/nino-v2-stamp8.webp",
+   "source": "v2",
+   "mime": "image/webp",
+   "format": "WEBP",
+   "mode": "RGBA",
+   "bytes": 233276,
+   "base64Bytes": 311036,
+   "occurrences": 1,
+   "size": [
+    768,
+    512
+   ],
+   "sha256": "9032c4ff1ec9083b8ddf4a5dc4107e448d9578675fec4ab62221dc13310d38cf",
+   "kind": "icoon",
+   "inDom": true,
+   "drawn": true,
+   "screens": [
+    "boek"
+   ],
+   "elements": [
+    "section.bookPage img.stampArt"
+   ],
+   "hiddenInDom": [],
+   "maxDisplayCss": {
+    "desktop": [
+     129,
+     87
+    ],
+    "ipad": [
+     120,
+     81
+    ],
+    "telefoon": [
+     84,
+     57
+    ]
+   },
+   "used": true
+  },
+  {
+   "id": "assets/v2/nino-art-gold.webp",
+   "source": "v2",
+   "mime": "image/webp",
+   "format": "WEBP",
+   "mode": "RGBA",
+   "bytes": 229344,
+   "base64Bytes": 305792,
+   "occurrences": 1,
+   "size": [
+    1024,
+    1536
+   ],
+   "sha256": "b735c2dd44003c62969adcf4d11b446ec432f86a2f2f27f56aa6281b2ce435f2",
+   "kind": "nino",
+   "inDom": false,
+   "drawn": false,
+   "screens": [],
+   "elements": [],
+   "hiddenInDom": [],
+   "maxDisplayCss": {
+    "desktop": [
+     0,
+     0
+    ],
+    "ipad": [
+     0,
+     0
+    ],
+    "telefoon": [
+     0,
+     0
+    ]
+   },
+   "used": true,
+   "note": "niet getekend in de scan, maar niet bewezen ongebruikt: telt als gebruikt"
+  },
+  {
+   "id": "assets/v3/render/exports/vespa-zij-v3.webp",
+   "source": "v3",
+   "mime": "image/webp",
+   "format": "WEBP",
+   "mode": "RGBA",
+   "bytes": 224492,
+   "base64Bytes": 299324,
+   "occurrences": 1,
+   "size": [
+    1200,
+    800
+   ],
+   "sha256": "9ebfeeb30285ef1d1dd30776d6286591c354c12417b8309d5270ab36e099599c",
+   "kind": "nino",
+   "inDom": true,
+   "drawn": true,
+   "screens": [
+    "boek",
+    "instellingen",
+    "rewards",
+    "rewards-v3BookCover",
+    "rewards-v3TileGold",
+    "rewards-v3TilePizza",
+    "rewards-v3TilePostcard",
+    "rewards-v3TileStamp",
+    "vespa-100",
+    "vespa-1200",
+    "vespa-2500",
+    "vespa-600"
+   ],
+   "elements": [
+    "dialog.vespaRide img.rideNino",
+    "section.v3Rewards img.v3RideArt"
+   ],
+   "hiddenInDom": [
+    "dialog.vespaRide img.rideNino",
+    "section.v3Rewards img.v3RideArt"
+   ],
+   "maxDisplayCss": {
+    "desktop": [
+     328,
+     220
+    ],
+    "ipad": [
+     328,
+     220
+    ],
+    "telefoon": [
+     134,
+     90
+    ]
+   },
+   "used": true
+  },
+  {
+   "id": "assets/v2/nino-art-guide.webp",
+   "source": "v2",
+   "mime": "image/webp",
+   "format": "WEBP",
+   "mode": "RGBA",
+   "bytes": 223920,
+   "base64Bytes": 298560,
+   "occurrences": 1,
+   "size": [
+    1024,
+    1536
+   ],
+   "sha256": "13cb4bc888d62573dde1cfb6a6645da82c20180547354aab8f3557e99a691a2a",
+   "kind": "nino",
+   "inDom": false,
+   "drawn": false,
+   "screens": [],
+   "elements": [],
+   "hiddenInDom": [],
+   "maxDisplayCss": {
+    "desktop": [
+     0,
+     0
+    ],
+    "ipad": [
+     0,
+     0
+    ],
+    "telefoon": [
+     0,
+     0
+    ]
+   },
+   "used": true,
+   "note": "niet getekend in de scan, maar niet bewezen ongebruikt: telt als gebruikt"
+  },
+  {
+   "id": "assets/v3/render/exports/vespa-rijdend-v3.webp",
+   "source": "v3",
+   "mime": "image/webp",
+   "format": "WEBP",
+   "mode": "RGBA",
+   "bytes": 223340,
+   "base64Bytes": 297788,
+   "occurrences": 1,
+   "size": [
+    1200,
+    800
+   ],
+   "sha256": "86f084c1599aa1dd8065875ab8edad2e771b271570fb3cadc1174435199a1c90",
+   "kind": "nino",
+   "inDom": true,
+   "drawn": true,
+   "screens": [
+    "toetsResult-fouten"
+   ],
+   "elements": [
+    "section.v3View img"
+   ],
+   "hiddenInDom": [],
+   "maxDisplayCss": {
+    "desktop": [
+     436,
+     291
+    ],
+    "ipad": [
+     328,
+     219
+    ],
+    "telefoon": [
+     88,
+     59
+    ]
+   },
+   "used": true
+  },
+  {
+   "id": "assets/v3/render/exports/nino-wijst-v3.webp",
+   "source": "v3",
+   "mime": "image/webp",
+   "format": "WEBP",
+   "mode": "RGBA",
+   "bytes": 216546,
+   "base64Bytes": 288728,
+   "occurrences": 1,
+   "size": [
+    800,
+    1200
+   ],
+   "sha256": "427ec65cde84c40165879b165e8867878b99ed83f83e72c9dbb50fdc4af44744",
+   "kind": "nino",
+   "inDom": false,
+   "drawn": false,
+   "screens": [],
+   "elements": [],
+   "hiddenInDom": [],
+   "maxDisplayCss": {
+    "desktop": [
+     0,
+     0
+    ],
+    "ipad": [
+     0,
+     0
+    ],
+    "telefoon": [
+     0,
+     0
+    ]
+   },
+   "used": true,
+   "note": "niet getekend in de scan, maar niet bewezen ongebruikt: telt als gebruikt"
+  },
+  {
+   "id": "assets/v3/render/exports/nino-welkom-v3.webp",
+   "source": "v3",
+   "mime": "image/webp",
+   "format": "WEBP",
+   "mode": "RGBA",
+   "bytes": 211882,
+   "base64Bytes": 282512,
+   "occurrences": 1,
+   "size": [
+    800,
+    1200
+   ],
+   "sha256": "bd25cc6689f869e9d924c150514fe60da143dc1eadf840413698fb634601f2b6",
+   "kind": "nino",
+   "inDom": true,
+   "drawn": true,
+   "screens": [
+    "kennismaking"
+   ],
+   "elements": [
+    "dialog.ninoProfile img.profileWelcome"
+   ],
+   "hiddenInDom": [
+    "#welcomeArt img"
+   ],
+   "maxDisplayCss": {
+    "desktop": [
+     145,
+     218
+    ],
+    "ipad": [
+     145,
+     218
+    ],
+    "telefoon": [
+     145,
+     218
+    ]
+   },
+   "used": true
+  },
+  {
+   "id": "assets/v2/schoolblad-foto.jpg",
+   "source": "v2",
+   "mime": "image/jpeg",
+   "format": "JPEG",
+   "mode": "RGB",
+   "bytes": 198891,
+   "base64Bytes": 265188,
+   "occurrences": 1,
+   "size": [
+    890,
+    1235
+   ],
+   "sha256": "90c18b197234be71871809d51c898215977d253834c558082050080bd3d57fcc",
+   "kind": "foto",
+   "inDom": true,
+   "drawn": true,
+   "screens": [
+    "schoolblad"
+   ],
+   "elements": [
+    "img#school.school"
+   ],
+   "hiddenInDom": [
+    "img#school.school"
+   ],
+   "maxDisplayCss": {
+    "desktop": [
+     489,
+     678
+    ],
+    "ipad": [
+     424,
+     588
+    ],
+    "telefoon": [
+     332,
+     461
+    ]
+   },
+   "used": true
+  },
+  {
+   "id": "assets/v3/render/exports/nino-gold-v3.webp",
+   "source": "v3",
+   "mime": "image/webp",
+   "format": "WEBP",
+   "mode": "RGBA",
+   "bytes": 197042,
+   "base64Bytes": 262724,
+   "occurrences": 1,
+   "size": [
+    800,
+    1200
+   ],
+   "sha256": "7f40ee47da77b41fdd8f139b70fe392ddb54d40fbbefc9eb330c0994893885f2",
+   "kind": "nino",
+   "inDom": false,
+   "drawn": false,
+   "screens": [],
+   "elements": [],
+   "hiddenInDom": [],
+   "maxDisplayCss": {
+    "desktop": [
+     0,
+     0
+    ],
+    "ipad": [
+     0,
+     0
+    ],
+    "telefoon": [
+     0,
+     0
+    ]
+   },
+   "used": true,
+   "note": "niet getekend in de scan, maar niet bewezen ongebruikt: telt als gebruikt"
+  },
+  {
+   "id": "assets/v2/pizza-board-css.webp",
+   "source": "v2",
+   "mime": "image/webp",
+   "format": "WEBP",
+   "mode": "RGBA",
+   "bytes": 96202,
+   "base64Bytes": 128272,
+   "occurrences": 2,
+   "size": [
+    640,
+    640
+   ],
+   "sha256": "e241b9408c866a5ad4aff787cbd1be7a74a23f4875d52359792d424ea5c5de9e",
+   "kind": "icoon",
+   "inDom": true,
+   "drawn": true,
+   "screens": [
+    "boek",
+    "keuzevenster",
+    "keuzevenster-rome",
+    "les-point",
+    "les-point-fout",
+    "les-point-goed",
+    "les-write",
+    "les-write-fout",
+    "les-write-goed",
+    "rewards-v3BookCover"
+   ],
+   "elements": [
+    "#ninoMeter div.pizzaWheel.ninoMeterWheel",
+    "#ninoMeter span.pizzaWheel",
+    "section.bookPage span.pizzaWheel"
+   ],
+   "hiddenInDom": [
+    "div#journeyWheel.pizzaWheel"
+   ],
+   "maxDisplayCss": {
+    "desktop": [
+     104,
+     104
+    ],
+    "ipad": [
+     72,
+     72
+    ],
+    "telefoon": [
+     64,
+     64
+    ]
+   },
+   "used": true
+  },
+  {
+   "id": "assets/v2/nino-v2-favorite1.webp",
+   "source": "v2",
+   "mime": "image/webp",
+   "format": "WEBP",
+   "mode": "RGBA",
+   "bytes": 192292,
+   "base64Bytes": 256392,
+   "occurrences": 1,
+   "size": [
+    640,
+    629
+   ],
+   "sha256": "61e86fd6f0337d02749a25e9e69fb8c4a34312d68e16eaf2284b8089eedfabb6",
+   "kind": "icoon",
+   "inDom": true,
+   "drawn": true,
+   "screens": [
+    "kennismaking"
+   ],
+   "elements": [
+    "dialog.ninoProfile img"
+   ],
+   "hiddenInDom": [],
+   "maxDisplayCss": {
+    "desktop": [
+     92,
+     90
+    ],
+    "ipad": [
+     92,
+     90
+    ],
+    "telefoon": [
+     72,
+     71
+    ]
+   },
+   "used": true
+  },
+  {
+   "id": "assets/v2/route-panorama.webp",
+   "source": "v2",
+   "mime": "image/webp",
+   "format": "WEBP",
+   "mode": "RGB",
+   "bytes": 173702,
+   "base64Bytes": 231604,
+   "occurrences": 1,
+   "size": [
+    1680,
+    560
+   ],
+   "sha256": "18befedac70a95876f5a620c78bd0a210920ff1de4b40d084190eb371ed8acb9",
+   "kind": "scene",
+   "inDom": true,
+   "drawn": true,
+   "screens": [
+    "vespa-100",
+    "vespa-1200",
+    "vespa-2500",
+    "vespa-600"
+   ],
+   "elements": [
+    "dialog.vespaRide div.rideStage"
+   ],
+   "hiddenInDom": [
+    "#routeHome img"
+   ],
+   "maxDisplayCss": {
+    "desktop": [
+     1451,
+     484
+    ],
+    "ipad": [
+     1451,
+     484
+    ],
+    "telefoon": [
+     594,
+     198
+    ]
+   },
+   "used": true
+  },
+  {
+   "id": "assets/v2/nino-v2-favorite0.webp",
+   "source": "v2",
+   "mime": "image/webp",
+   "format": "WEBP",
+   "mode": "RGBA",
+   "bytes": 166414,
+   "base64Bytes": 221888,
+   "occurrences": 1,
+   "size": [
+    640,
+    640
+   ],
+   "sha256": "75b08c68393c7fd281c6a0a97fc0b3f0f714b2fb0b44a1264f882e3ad68b04c2",
+   "kind": "icoon",
+   "inDom": true,
+   "drawn": true,
+   "screens": [
+    "boek",
+    "kennismaking",
+    "rewards-v3BookCover"
+   ],
+   "elements": [
+    "dialog.ninoProfile img",
+    "section.bookPage img.favoriteSticker"
+   ],
+   "hiddenInDom": [
+    "section.bookPage img.favoriteSticker"
+   ],
+   "maxDisplayCss": {
+    "desktop": [
+     92,
+     92
+    ],
+    "ipad": [
+     92,
+     92
+    ],
+    "telefoon": [
+     72,
+     72
+    ]
+   },
+   "used": true
+  },
+  {
+   "id": "assets/v2/nino-v2-favorite2.webp",
+   "source": "v2",
+   "mime": "image/webp",
+   "format": "WEBP",
+   "mode": "RGBA",
+   "bytes": 152090,
+   "base64Bytes": 202788,
+   "occurrences": 1,
+   "size": [
+    640,
+    640
+   ],
+   "sha256": "cd5e75889d7cc97ce67cd9d411fdb24102b46795718c780d79792aae48d00ab1",
+   "kind": "icoon",
+   "inDom": true,
+   "drawn": true,
+   "screens": [
+    "kennismaking"
+   ],
+   "elements": [
+    "dialog.ninoProfile img"
+   ],
+   "hiddenInDom": [],
+   "maxDisplayCss": {
+    "desktop": [
+     92,
+     92
+    ],
+    "ipad": [
+     92,
+     92
+    ],
+    "telefoon": [
+     72,
+     72
+    ]
+   },
+   "used": true
+  },
+  {
+   "id": "assets/v2/nino-v2-chapter10.webp",
+   "source": "v2",
+   "mime": "image/webp",
+   "format": "WEBP",
+   "mode": "RGBA",
+   "bytes": 136506,
+   "base64Bytes": 182008,
+   "occurrences": 1,
+   "size": [
+    512,
+    512
+   ],
+   "sha256": "c08a48c15a9e64abe11e6f839b160c0d24961a09ea2d627dd43277575b368ff2",
+   "kind": "icoon",
+   "inDom": true,
+   "drawn": false,
+   "screens": [],
+   "elements": [],
+   "hiddenInDom": [
+    "#routeCards img.chapterPicture"
+   ],
+   "maxDisplayCss": {
+    "desktop": [
+     0,
+     0
+    ],
+    "ipad": [
+     0,
+     0
+    ],
+    "telefoon": [
+     0,
+     0
+    ]
+   },
+   "used": true,
+   "note": "niet getekend in de scan, maar niet bewezen ongebruikt: telt als gebruikt"
+  },
+  {
+   "id": "assets/v3/render/exports/vespa-icoon-v3.webp",
+   "source": "v3",
+   "mime": "image/webp",
+   "format": "WEBP",
+   "mode": "RGBA",
+   "bytes": 131496,
+   "base64Bytes": 175328,
+   "occurrences": 1,
+   "size": [
+    800,
+    800
+   ],
+   "sha256": "07af5136d5d523791a3de1154f661ed050766751e46cc17a523594b4562f38cb",
+   "kind": "nino",
+   "inDom": true,
+   "drawn": true,
+   "screens": [
+    "kennismaking",
+    "kennismaking-aanbod",
+    "reis",
+    "reis-city1",
+    "reis-city2",
+    "reis-city3",
+    "reis-city4",
+    "reis-countries",
+    "reis-islands",
+    "reis-mountains",
+    "reis-regions",
+    "reis-relief-uit",
+    "reis-rivers",
+    "reis-seas",
+    "reis-volcanoes",
+    "schoolblad",
+    "voortgang"
+   ],
+   "elements": [
+    "section.v3Main img.v3CountArt",
+    "section.v3VgTile img"
+   ],
+   "hiddenInDom": [
+    "section.v3Main img.v3CountArt"
+   ],
+   "maxDisplayCss": {
+    "desktop": [
+     44,
+     44
+    ],
+    "ipad": [
+     44,
+     44
+    ],
+    "telefoon": [
+     44,
+     44
+    ]
+   },
+   "used": true
+  },
+  {
+   "id": "assets/v2/nino-v2-chapter7.webp",
+   "source": "v2",
+   "mime": "image/webp",
+   "format": "WEBP",
+   "mode": "RGBA",
+   "bytes": 127734,
+   "base64Bytes": 170312,
+   "occurrences": 1,
+   "size": [
+    512,
+    512
+   ],
+   "sha256": "2885eeb2d2b4d2479895761457968768d7046e65958ed6df0fd1ee056ee88a14",
+   "kind": "icoon",
+   "inDom": true,
+   "drawn": false,
+   "screens": [],
+   "elements": [],
+   "hiddenInDom": [
+    "#routeCards img.chapterPicture"
+   ],
+   "maxDisplayCss": {
+    "desktop": [
+     0,
+     0
+    ],
+    "ipad": [
+     0,
+     0
+    ],
+    "telefoon": [
+     0,
+     0
+    ]
+   },
+   "used": true,
+   "note": "niet getekend in de scan, maar niet bewezen ongebruikt: telt als gebruikt"
+  },
+  {
+   "id": "assets/v2/nino-v2-chapter4.webp",
+   "source": "v2",
+   "mime": "image/webp",
+   "format": "WEBP",
+   "mode": "RGBA",
+   "bytes": 127238,
+   "base64Bytes": 169652,
+   "occurrences": 1,
+   "size": [
+    512,
+    512
+   ],
+   "sha256": "f1ca42b2a08c2586ef601a1d4e6174a1996bdeb95a64c0b8fadabafbcb2fe9f0",
+   "kind": "icoon",
+   "inDom": true,
+   "drawn": false,
+   "screens": [],
+   "elements": [],
+   "hiddenInDom": [
+    "#routeCards img.chapterPicture"
+   ],
+   "maxDisplayCss": {
+    "desktop": [
+     0,
+     0
+    ],
+    "ipad": [
+     0,
+     0
+    ],
+    "telefoon": [
+     0,
+     0
+    ]
+   },
+   "used": true,
+   "note": "niet getekend in de scan, maar niet bewezen ongebruikt: telt als gebruikt"
+  },
+  {
+   "id": "assets/v2/nino-v2-chapter3.webp",
+   "source": "v2",
+   "mime": "image/webp",
+   "format": "WEBP",
+   "mode": "RGBA",
+   "bytes": 124022,
+   "base64Bytes": 165364,
+   "occurrences": 1,
+   "size": [
+    512,
+    512
+   ],
+   "sha256": "125a496d4c65e3008c5b25606048b087a8d1678dfe551f3d7b2d256a33de1526",
+   "kind": "icoon",
+   "inDom": true,
+   "drawn": false,
+   "screens": [],
+   "elements": [],
+   "hiddenInDom": [
+    "#routeCards img.chapterPicture"
+   ],
+   "maxDisplayCss": {
+    "desktop": [
+     0,
+     0
+    ],
+    "ipad": [
+     0,
+     0
+    ],
+    "telefoon": [
+     0,
+     0
+    ]
+   },
+   "used": true,
+   "note": "niet getekend in de scan, maar niet bewezen ongebruikt: telt als gebruikt"
+  },
+  {
+   "id": "assets/v2/nino-v2-chapter5.webp",
+   "source": "v2",
+   "mime": "image/webp",
+   "format": "WEBP",
+   "mode": "RGBA",
+   "bytes": 121680,
+   "base64Bytes": 162240,
+   "occurrences": 1,
+   "size": [
+    512,
+    512
+   ],
+   "sha256": "a6b8def0c138109385f96de64c02026d11dd19bea9ffa9ad6e31fca5fab0b7c3",
+   "kind": "icoon",
+   "inDom": true,
+   "drawn": false,
+   "screens": [],
+   "elements": [],
+   "hiddenInDom": [
+    "#routeCards img.chapterPicture"
+   ],
+   "maxDisplayCss": {
+    "desktop": [
+     0,
+     0
+    ],
+    "ipad": [
+     0,
+     0
+    ],
+    "telefoon": [
+     0,
+     0
+    ]
+   },
+   "used": true,
+   "note": "niet getekend in de scan, maar niet bewezen ongebruikt: telt als gebruikt"
+  },
+  {
+   "id": "assets/v2/nino-v2-chapter6.webp",
+   "source": "v2",
+   "mime": "image/webp",
+   "format": "WEBP",
+   "mode": "RGBA",
+   "bytes": 119992,
+   "base64Bytes": 159992,
+   "occurrences": 1,
+   "size": [
+    512,
+    512
+   ],
+   "sha256": "52efca255b21936d51c7c86868d438005393b2fac66a7ae8c2f05daaa593c232",
+   "kind": "icoon",
+   "inDom": true,
+   "drawn": false,
+   "screens": [],
+   "elements": [],
+   "hiddenInDom": [
+    "#routeCards img.chapterPicture"
+   ],
+   "maxDisplayCss": {
+    "desktop": [
+     0,
+     0
+    ],
+    "ipad": [
+     0,
+     0
+    ],
+    "telefoon": [
+     0,
+     0
+    ]
+   },
+   "used": true,
+   "note": "niet getekend in de scan, maar niet bewezen ongebruikt: telt als gebruikt"
+  },
+  {
+   "id": "assets/discovery/terrain-z8-render-shadow.webp",
+   "source": "v3",
+   "mime": "image/webp",
+   "format": "WEBP",
+   "mode": "RGBA",
+   "bytes": 119588,
+   "base64Bytes": 159452,
+   "occurrences": 1,
+   "size": [
+    1780,
+    2470
+   ],
+   "sha256": "e2fe511cc8c72fb8bf6a1e67e5041e64c99d3f76da665f0e3ee3e5e2428c0aec",
+   "kind": "kaart",
+   "inDom": true,
+   "drawn": false,
+   "screens": [],
+   "elements": [],
+   "hiddenInDom": [
+    "section.v3Main image"
+   ],
+   "maxDisplayCss": {
+    "desktop": [
+     0,
+     0
+    ],
+    "ipad": [
+     0,
+     0
+    ],
+    "telefoon": [
+     0,
+     0
+    ]
+   },
+   "used": false,
+   "unusedReason": "reliëflaag zee/schaduw: alleen in variant Kaart; ui.kaart is altijd eiland en reis-ijk.css verbergt de lagen daar"
+  },
+  {
+   "id": "assets/v2/nino-v2-chapter9.webp",
+   "source": "v2",
+   "mime": "image/webp",
+   "format": "WEBP",
+   "mode": "RGBA",
+   "bytes": 117930,
+   "base64Bytes": 157240,
+   "occurrences": 1,
+   "size": [
+    512,
+    512
+   ],
+   "sha256": "66139c1119925b9584aaa0de0be9472ff2c0272235ac019bf5316be7c2325f0f",
+   "kind": "icoon",
+   "inDom": true,
+   "drawn": false,
+   "screens": [],
+   "elements": [],
+   "hiddenInDom": [
+    "#routeCards img.chapterPicture"
+   ],
+   "maxDisplayCss": {
+    "desktop": [
+     0,
+     0
+    ],
+    "ipad": [
+     0,
+     0
+    ],
+    "telefoon": [
+     0,
+     0
+    ]
+   },
+   "used": true,
+   "note": "niet getekend in de scan, maar niet bewezen ongebruikt: telt als gebruikt"
+  },
+  {
+   "id": "assets/v2/nino-v2-chapter2.webp",
+   "source": "v2",
+   "mime": "image/webp",
+   "format": "WEBP",
+   "mode": "RGBA",
+   "bytes": 109932,
+   "base64Bytes": 146576,
+   "occurrences": 1,
+   "size": [
+    512,
+    512
+   ],
+   "sha256": "1801146a77b15f4e7b57b3e8a543244b55e37f828b57f02bf83dd1636f034b63",
+   "kind": "icoon",
+   "inDom": true,
+   "drawn": false,
+   "screens": [],
+   "elements": [],
+   "hiddenInDom": [
+    "#routeCards img.chapterPicture"
+   ],
+   "maxDisplayCss": {
+    "desktop": [
+     0,
+     0
+    ],
+    "ipad": [
+     0,
+     0
+    ],
+    "telefoon": [
+     0,
+     0
+    ]
+   },
+   "used": true,
+   "note": "niet getekend in de scan, maar niet bewezen ongebruikt: telt als gebruikt"
+  },
+  {
+   "id": "assets/v2/nino-v2-chapter0.webp",
+   "source": "v2",
+   "mime": "image/webp",
+   "format": "WEBP",
+   "mode": "RGBA",
+   "bytes": 108690,
+   "base64Bytes": 144920,
+   "occurrences": 1,
+   "size": [
+    512,
+    512
+   ],
+   "sha256": "337e02ba2c1ecb909d9e1f9921070492e575c64e6f255733b5837c817fa42c11",
+   "kind": "icoon",
+   "inDom": true,
+   "drawn": false,
+   "screens": [],
+   "elements": [],
+   "hiddenInDom": [
+    "#routeCards img.chapterPicture"
+   ],
+   "maxDisplayCss": {
+    "desktop": [
+     0,
+     0
+    ],
+    "ipad": [
+     0,
+     0
+    ],
+    "telefoon": [
+     0,
+     0
+    ]
+   },
+   "used": true,
+   "note": "niet getekend in de scan, maar niet bewezen ongebruikt: telt als gebruikt"
+  },
+  {
+   "id": "assets/v2/nino-v2-chapter1.webp",
+   "source": "v2",
+   "mime": "image/webp",
+   "format": "WEBP",
+   "mode": "RGBA",
+   "bytes": 104694,
+   "base64Bytes": 139592,
+   "occurrences": 1,
+   "size": [
+    512,
+    512
+   ],
+   "sha256": "f9c76c2c0926d31838abc82063a4e866546e0c5b49c4c75cf68ac3d1fb739589",
+   "kind": "icoon",
+   "inDom": true,
+   "drawn": false,
+   "screens": [],
+   "elements": [],
+   "hiddenInDom": [
+    "#routeCards img.chapterPicture"
+   ],
+   "maxDisplayCss": {
+    "desktop": [
+     0,
+     0
+    ],
+    "ipad": [
+     0,
+     0
+    ],
+    "telefoon": [
+     0,
+     0
+    ]
+   },
+   "used": true,
+   "note": "niet getekend in de scan, maar niet bewezen ongebruikt: telt als gebruikt"
+  },
+  {
+   "id": "assets/v2/nino-v2-chapter8.webp",
+   "source": "v2",
+   "mime": "image/webp",
+   "format": "WEBP",
+   "mode": "RGBA",
+   "bytes": 101332,
+   "base64Bytes": 135112,
+   "occurrences": 1,
+   "size": [
+    512,
+    512
+   ],
+   "sha256": "c616f7524a546ed77e59347cbf8335be9013e687483fa689e00b1c26ab7a0f79",
+   "kind": "icoon",
+   "inDom": true,
+   "drawn": false,
+   "screens": [],
+   "elements": [],
+   "hiddenInDom": [
+    "#routeCards img.chapterPicture"
+   ],
+   "maxDisplayCss": {
+    "desktop": [
+     0,
+     0
+    ],
+    "ipad": [
+     0,
+     0
+    ],
+    "telefoon": [
+     0,
+     0
+    ]
+   },
+   "used": true,
+   "note": "niet getekend in de scan, maar niet bewezen ongebruikt: telt als gebruikt"
+  },
+  {
+   "id": "assets/v2/nino-art-css.webp",
+   "source": "v2",
+   "mime": "image/webp",
+   "format": "WEBP",
+   "mode": "RGBA",
+   "bytes": 67658,
+   "base64Bytes": 90212,
+   "occurrences": 1,
+   "size": [
+    514,
+    650
+   ],
+   "sha256": "0b83332392b90193eff04979fbc592df5bbc3e0ef3f19a16801d1d7dc822b2a1",
+   "kind": "nino",
+   "inDom": true,
+   "drawn": false,
+   "screens": [],
+   "elements": [],
+   "hiddenInDom": [
+    "#vespaTripToast div.ninoTrip"
+   ],
+   "maxDisplayCss": {
+    "desktop": [
+     0,
+     0
+    ],
+    "ipad": [
+     0,
+     0
+    ],
+    "telefoon": [
+     0,
+     0
+    ]
+   },
+   "used": true,
+   "note": "niet getekend in de scan, maar niet bewezen ongebruikt: telt als gebruikt"
+  },
+  {
+   "id": "assets/v2/discovery-map-terrain.webp",
+   "source": "v2",
+   "mime": "image/webp",
+   "format": "WEBP",
+   "mode": "RGB",
+   "bytes": 59152,
+   "base64Bytes": 78872,
+   "occurrences": 1,
+   "size": [
+    890,
+    1235
+   ],
+   "sha256": "c9130b73fe1e52800e2b85750e203491071f1c4835932afbeab207ea9ecfa0db",
+   "kind": "kaart",
+   "inDom": true,
+   "drawn": false,
+   "screens": [],
+   "elements": [],
+   "hiddenInDom": [
+    "#map image"
+   ],
+   "maxDisplayCss": {
+    "desktop": [
+     0,
+     0
+    ],
+    "ipad": [
+     0,
+     0
+    ],
+    "telefoon": [
+     0,
+     0
+    ]
+   },
+   "used": true,
+   "note": "niet getekend in de scan, maar niet bewezen ongebruikt: telt als gebruikt"
+  },
+  {
+   "id": "assets/v3/render/exports/NINO-PORTRET-512.webp",
+   "source": "v3",
+   "mime": "image/webp",
+   "format": "WEBP",
+   "mode": "RGBA",
+   "bytes": 53086,
+   "base64Bytes": 70784,
+   "occurrences": 1,
+   "size": [
+    512,
+    512
+   ],
+   "sha256": "97fe052f40fea2ec7c07a2935d8bb2f544777b4e3893c1a509ab9bc0c1a492e2",
+   "kind": "nino",
+   "inDom": true,
+   "drawn": true,
+   "screens": [
+    "boek",
+    "instellingen",
+    "kennismaking",
+    "kennismaking-aanbod",
+    "keuzevenster",
+    "keuzevenster-rome",
+    "les-point",
+    "les-point-fout",
+    "les-point-goed",
+    "les-write",
+    "les-write-fout",
+    "les-write-goed",
+    "oefenen",
+    "reis",
+    "reis-city1",
+    "reis-city2",
+    "reis-city3",
+    "reis-city4",
+    "reis-countries",
+    "reis-islands",
+    "reis-mountains",
+    "reis-regions",
+    "reis-relief-uit",
+    "reis-rivers",
+    "reis-seas",
+    "reis-volcanoes",
+    "rewards",
+    "rewards-v3BookCover",
+    "rewards-v3TileGold",
+    "rewards-v3TilePizza",
+    "rewards-v3TilePostcard",
+    "rewards-v3TileStamp",
+    "schoolblad",
+    "toets",
+    "toetsResult-fouten",
+    "toetsResult-perfect",
+    "vespa-100",
+    "vespa-1200",
+    "vespa-2500",
+    "vespa-600",
+    "voortgang"
+   ],
+   "elements": [
+    "#routeHome img",
+    "img"
+   ],
+   "hiddenInDom": [
+    "#routeHome img",
+    "img"
+   ],
+   "maxDisplayCss": {
+    "desktop": [
+     112,
+     112
+    ],
+    "ipad": [
+     88,
+     88
+    ],
+    "telefoon": [
+     0,
+     0
+    ]
+   },
+   "used": true
+  },
+  {
+   "id": "assets/discovery/terrain-z8-render-coast.webp",
+   "source": "v3",
+   "mime": "image/webp",
+   "format": "WEBP",
+   "mode": "RGBA",
+   "bytes": 50682,
+   "base64Bytes": 67576,
+   "occurrences": 1,
+   "size": [
+    1780,
+    2470
+   ],
+   "sha256": "e685ba188bbe1e434a0071c930f11d1ac7c6394f64300d53dda737ab63b2bcaf",
+   "kind": "kaart",
+   "inDom": true,
+   "drawn": true,
+   "screens": [
+    "kennismaking",
+    "kennismaking-aanbod",
+    "oefenen",
+    "reis",
+    "reis-city1",
+    "reis-city2",
+    "reis-city3",
+    "reis-city4",
+    "reis-countries",
+    "reis-islands",
+    "reis-mountains",
+    "reis-regions",
+    "reis-rivers",
+    "reis-seas",
+    "reis-volcanoes",
+    "schoolblad",
+    "toetsResult-fouten",
+    "toetsResult-perfect"
+   ],
+   "elements": [
+    "section.v3Main image",
+    "section.v3View image"
+   ],
+   "hiddenInDom": [
+    "section.v3Main image"
+   ],
+   "maxDisplayCss": {
+    "desktop": [
+     750,
+     1040
+    ],
+    "ipad": [
+     576,
+     800
+    ],
+    "telefoon": [
+     350,
+     486
+    ]
+   },
+   "used": true
+  },
+  {
+   "id": "assets/v3/scenes/topo-streken-toscana-mini.webp",
+   "source": "v3",
+   "mime": "image/webp",
+   "format": "WEBP",
+   "mode": "RGB",
+   "bytes": 36784,
+   "base64Bytes": 49048,
+   "occurrences": 1,
+   "size": [
+    480,
+    270
+   ],
+   "sha256": "482349912963d3cf50a775d06ec70c892a42a3cbda29fa066464911d73176b45",
+   "kind": "scene",
+   "inDom": true,
+   "drawn": true,
+   "screens": [
+    "kennismaking",
+    "kennismaking-aanbod",
+    "reis",
+    "reis-city1",
+    "reis-city2",
+    "reis-city3",
+    "reis-city4",
+    "reis-countries",
+    "reis-islands",
+    "reis-mountains",
+    "reis-regions",
+    "reis-relief-uit",
+    "reis-rivers",
+    "reis-seas",
+    "reis-volcanoes",
+    "schoolblad",
+    "voortgang"
+   ],
+   "elements": [
+    "section.v3Field img",
+    "section.v3List img"
+   ],
+   "hiddenInDom": [
+    "section.v3List img"
+   ],
+   "maxDisplayCss": {
+    "desktop": [
+     75,
+     42
+    ],
+    "ipad": [
+     68,
+     38
+    ],
+    "telefoon": [
+     85,
+     48
+    ]
+   },
+   "used": true
+  },
+  {
+   "id": "assets/v3/render/exports/SCENE-ROMA-mini-480.webp",
+   "source": "v3",
+   "mime": "image/webp",
+   "format": "WEBP",
+   "mode": "RGB",
+   "bytes": 34598,
+   "base64Bytes": 46132,
+   "occurrences": 1,
+   "size": [
+    480,
+    270
+   ],
+   "sha256": "518ab33ebc0b6902850ea46bdf3a57cc7556351ce40be2fc235e9c3eb439c146",
+   "kind": "scene",
+   "inDom": true,
+   "drawn": true,
+   "screens": [
+    "kennismaking",
+    "kennismaking-aanbod",
+    "reis",
+    "reis-city1",
+    "reis-city2",
+    "reis-city3",
+    "reis-city4",
+    "reis-countries",
+    "reis-islands",
+    "reis-mountains",
+    "reis-regions",
+    "reis-relief-uit",
+    "reis-rivers",
+    "reis-seas",
+    "reis-volcanoes",
+    "schoolblad",
+    "voortgang"
+   ],
+   "elements": [
+    "section.v3Field img",
+    "section.v3List img"
+   ],
+   "hiddenInDom": [
+    "section.v3List img"
+   ],
+   "maxDisplayCss": {
+    "desktop": [
+     75,
+     42
+    ],
+    "ipad": [
+     68,
+     38
+    ],
+    "telefoon": [
+     85,
+     48
+    ]
+   },
+   "used": true
+  },
+  {
+   "id": "assets/v3/scenes/topo-steden-firenze-mini.webp",
+   "source": "v3",
+   "mime": "image/webp",
+   "format": "WEBP",
+   "mode": "RGB",
+   "bytes": 33352,
+   "base64Bytes": 44472,
+   "occurrences": 1,
+   "size": [
+    480,
+    270
+   ],
+   "sha256": "26865876290044697872bb748d2b55e09fc826989a6fc37e190914147bbda03c",
+   "kind": "scene",
+   "inDom": true,
+   "drawn": true,
+   "screens": [
+    "kennismaking",
+    "kennismaking-aanbod",
+    "reis",
+    "reis-city1",
+    "reis-city2",
+    "reis-city3",
+    "reis-city4",
+    "reis-countries",
+    "reis-islands",
+    "reis-mountains",
+    "reis-regions",
+    "reis-relief-uit",
+    "reis-rivers",
+    "reis-seas",
+    "reis-volcanoes",
+    "schoolblad",
+    "voortgang"
+   ],
+   "elements": [
+    "section.v3Field img",
+    "section.v3List img"
+   ],
+   "hiddenInDom": [
+    "section.v3List img"
+   ],
+   "maxDisplayCss": {
+    "desktop": [
+     75,
+     42
+    ],
+    "ipad": [
+     68,
+     38
+    ],
+    "telefoon": [
+     85,
+     48
+    ]
+   },
+   "used": true
+  },
+  {
+   "id": "assets/v3/scenes/topo-rivieren-po-mini.webp",
+   "source": "v3",
+   "mime": "image/webp",
+   "format": "WEBP",
+   "mode": "RGB",
+   "bytes": 32446,
+   "base64Bytes": 43264,
+   "occurrences": 1,
+   "size": [
+    480,
+    270
+   ],
+   "sha256": "8f1517c7d5a84a598dac8c14d0351c06bd972048d9835602a6df42f7e6357f5b",
+   "kind": "scene",
+   "inDom": true,
+   "drawn": true,
+   "screens": [
+    "kennismaking",
+    "kennismaking-aanbod",
+    "reis",
+    "reis-city1",
+    "reis-city2",
+    "reis-city3",
+    "reis-city4",
+    "reis-countries",
+    "reis-islands",
+    "reis-mountains",
+    "reis-regions",
+    "reis-relief-uit",
+    "reis-rivers",
+    "reis-seas",
+    "reis-volcanoes",
+    "schoolblad",
+    "voortgang"
+   ],
+   "elements": [
+    "section.v3Field img",
+    "section.v3List img"
+   ],
+   "hiddenInDom": [
+    "section.v3List img"
+   ],
+   "maxDisplayCss": {
+    "desktop": [
+     75,
+     42
+    ],
+    "ipad": [
+     68,
+     38
+    ],
+    "telefoon": [
+     85,
+     48
+    ]
+   },
+   "used": true
+  },
+  {
+   "id": "assets/v3/scenes/topo-zeeen-amalfi-mini.webp",
+   "source": "v3",
+   "mime": "image/webp",
+   "format": "WEBP",
+   "mode": "RGB",
+   "bytes": 29672,
+   "base64Bytes": 39564,
+   "occurrences": 1,
+   "size": [
+    480,
+    270
+   ],
+   "sha256": "c0147c714afc3a07cc744cbbb6b1cb3f816e0c728835dbdb66711bd4e3929a60",
+   "kind": "scene",
+   "inDom": true,
+   "drawn": true,
+   "screens": [
+    "kennismaking",
+    "kennismaking-aanbod",
+    "reis",
+    "reis-city1",
+    "reis-city2",
+    "reis-city3",
+    "reis-city4",
+    "reis-countries",
+    "reis-islands",
+    "reis-mountains",
+    "reis-regions",
+    "reis-relief-uit",
+    "reis-rivers",
+    "reis-seas",
+    "reis-volcanoes",
+    "schoolblad",
+    "voortgang"
+   ],
+   "elements": [
+    "section.v3Field img",
+    "section.v3List img"
+   ],
+   "hiddenInDom": [
+    "section.v3List img"
+   ],
+   "maxDisplayCss": {
+    "desktop": [
+     75,
+     42
+    ],
+    "ipad": [
+     68,
+     38
+    ],
+    "telefoon": [
+     85,
+     48
+    ]
+   },
+   "used": true
+  },
+  {
+   "id": "assets/v3/render/exports/SCENE-VENEZIA-mini-480.webp",
+   "source": "v3",
+   "mime": "image/webp",
+   "format": "WEBP",
+   "mode": "RGB",
+   "bytes": 28758,
+   "base64Bytes": 38344,
+   "occurrences": 1,
+   "size": [
+    480,
+    270
+   ],
+   "sha256": "927c80380ed1571cdb4cc8bef8704b6a3e6b01e58ad68dc5bc2617ef4f7a8244",
+   "kind": "scene",
+   "inDom": true,
+   "drawn": true,
+   "screens": [
+    "kennismaking",
+    "kennismaking-aanbod",
+    "reis",
+    "reis-city1",
+    "reis-city2",
+    "reis-city3",
+    "reis-city4",
+    "reis-countries",
+    "reis-islands",
+    "reis-mountains",
+    "reis-regions",
+    "reis-relief-uit",
+    "reis-rivers",
+    "reis-seas",
+    "reis-volcanoes",
+    "schoolblad",
+    "voortgang"
+   ],
+   "elements": [
+    "section.v3Field img",
+    "section.v3List img"
+   ],
+   "hiddenInDom": [
+    "section.v3List img"
+   ],
+   "maxDisplayCss": {
+    "desktop": [
+     75,
+     42
+    ],
+    "ipad": [
+     68,
+     38
+    ],
+    "telefoon": [
+     85,
+     48
+    ]
+   },
+   "used": true
+  },
+  {
+   "id": "assets/v3/scenes/topo-landen-italie-slovenie-mini.webp",
+   "source": "v3",
+   "mime": "image/webp",
+   "format": "WEBP",
+   "mode": "RGB",
+   "bytes": 28270,
+   "base64Bytes": 37696,
+   "occurrences": 1,
+   "size": [
+    480,
+    270
+   ],
+   "sha256": "3f4ce7e6caa69edbc7fd9a6ed345c570a4e22bf262bc6750a3fd5065ee64bd89",
+   "kind": "scene",
+   "inDom": true,
+   "drawn": true,
+   "screens": [
+    "kennismaking",
+    "kennismaking-aanbod",
+    "reis",
+    "reis-city1",
+    "reis-city2",
+    "reis-city3",
+    "reis-city4",
+    "reis-countries",
+    "reis-islands",
+    "reis-mountains",
+    "reis-regions",
+    "reis-relief-uit",
+    "reis-rivers",
+    "reis-seas",
+    "reis-volcanoes",
+    "schoolblad",
+    "voortgang"
+   ],
+   "elements": [
+    "section.v3Field img",
+    "section.v3List img"
+   ],
+   "hiddenInDom": [
+    "section.v3List img"
+   ],
+   "maxDisplayCss": {
+    "desktop": [
+     75,
+     42
+    ],
+    "ipad": [
+     68,
+     38
+    ],
+    "telefoon": [
+     85,
+     48
+    ]
+   },
+   "used": true
+  },
+  {
+   "id": "assets/v3/render/exports/SCENE-NAPOLI-mini-480.webp",
+   "source": "v3",
+   "mime": "image/webp",
+   "format": "WEBP",
+   "mode": "RGB",
+   "bytes": 27984,
+   "base64Bytes": 37312,
+   "occurrences": 1,
+   "size": [
+    480,
+    270
+   ],
+   "sha256": "f62e812526d488d47740ae87ca5b38a04291729360cae764886453336a954778",
+   "kind": "scene",
+   "inDom": true,
+   "drawn": true,
+   "screens": [
+    "kennismaking",
+    "kennismaking-aanbod",
+    "reis",
+    "reis-city1",
+    "reis-city2",
+    "reis-city3",
+    "reis-city4",
+    "reis-countries",
+    "reis-islands",
+    "reis-mountains",
+    "reis-regions",
+    "reis-relief-uit",
+    "reis-rivers",
+    "reis-seas",
+    "reis-volcanoes",
+    "schoolblad",
+    "voortgang"
+   ],
+   "elements": [
+    "section.v3Field img",
+    "section.v3List img"
+   ],
+   "hiddenInDom": [
+    "section.v3List img"
+   ],
+   "maxDisplayCss": {
+    "desktop": [
+     75,
+     42
+    ],
+    "ipad": [
+     68,
+     38
+    ],
+    "telefoon": [
+     85,
+     48
+    ]
+   },
+   "used": true
+  },
+  {
+   "id": "assets/v3/scenes/topo-bergen-dolomieten-mini.webp",
+   "source": "v3",
+   "mime": "image/webp",
+   "format": "WEBP",
+   "mode": "RGB",
+   "bytes": 26542,
+   "base64Bytes": 35392,
+   "occurrences": 1,
+   "size": [
+    480,
+    270
+   ],
+   "sha256": "88d66acc264653b3f4354455b5c2887a0027b0da05a66e73758fc7ddb8f40171",
+   "kind": "scene",
+   "inDom": true,
+   "drawn": true,
+   "screens": [
+    "kennismaking",
+    "kennismaking-aanbod",
+    "reis",
+    "reis-city1",
+    "reis-city2",
+    "reis-city3",
+    "reis-city4",
+    "reis-countries",
+    "reis-islands",
+    "reis-mountains",
+    "reis-regions",
+    "reis-relief-uit",
+    "reis-rivers",
+    "reis-seas",
+    "reis-volcanoes",
+    "schoolblad",
+    "voortgang"
+   ],
+   "elements": [
+    "section.v3Field img",
+    "section.v3List img"
+   ],
+   "hiddenInDom": [
+    "section.v3List img"
+   ],
+   "maxDisplayCss": {
+    "desktop": [
+     75,
+     42
+    ],
+    "ipad": [
+     68,
+     38
+    ],
+    "telefoon": [
+     85,
+     48
+    ]
+   },
+   "used": true
+  },
+  {
+   "id": "assets/v3/landmarks/exports/TOPO_06-256.webp",
+   "source": "v3",
+   "mime": "image/webp",
+   "format": "WEBP",
+   "mode": "RGBA",
+   "bytes": 26006,
+   "base64Bytes": 34676,
+   "occurrences": 1,
+   "size": [
+    256,
+    256
+   ],
+   "sha256": "a7f866b0e6d7a10f8fffe733fa096439235ecc513626c0e7ada3508303283192",
+   "kind": "landmark",
+   "inDom": true,
+   "drawn": true,
+   "screens": [
+    "kennismaking",
+    "kennismaking-aanbod",
+    "reis",
+    "reis-city1",
+    "reis-city2",
+    "reis-city3",
+    "reis-city4",
+    "reis-countries",
+    "reis-islands",
+    "reis-mountains",
+    "reis-regions",
+    "reis-rivers",
+    "reis-seas",
+    "reis-volcanoes",
+    "schoolblad",
+    "toetsResult-fouten",
+    "toetsResult-perfect"
+   ],
+   "elements": [
+    "section.v3Main image",
+    "section.v3View image"
+   ],
+   "hiddenInDom": [
+    "section.v3Main image"
+   ],
+   "maxDisplayCss": {
+    "desktop": [
+     0,
+     0
+    ],
+    "ipad": [
+     56,
+     56
+    ],
+    "telefoon": [
+     56,
+     56
+    ]
+   },
+   "used": true
+  },
+  {
+   "id": "assets/v3/scenes/topo-eilanden-v2-mini.webp",
+   "source": "v3",
+   "mime": "image/webp",
+   "format": "WEBP",
+   "mode": "RGB",
+   "bytes": 24694,
+   "base64Bytes": 32928,
+   "occurrences": 1,
+   "size": [
+    480,
+    270
+   ],
+   "sha256": "2b027de93af0155f076f3fc5a68be460807a668496c5dcc2464668718a4a3b9d",
+   "kind": "scene",
+   "inDom": true,
+   "drawn": true,
+   "screens": [
+    "kennismaking",
+    "kennismaking-aanbod",
+    "reis",
+    "reis-city1",
+    "reis-city2",
+    "reis-city3",
+    "reis-city4",
+    "reis-countries",
+    "reis-islands",
+    "reis-mountains",
+    "reis-regions",
+    "reis-relief-uit",
+    "reis-rivers",
+    "reis-seas",
+    "reis-volcanoes",
+    "schoolblad",
+    "voortgang"
+   ],
+   "elements": [
+    "section.v3Field img",
+    "section.v3List img"
+   ],
+   "hiddenInDom": [
+    "section.v3List img"
+   ],
+   "maxDisplayCss": {
+    "desktop": [
+     75,
+     42
+    ],
+    "ipad": [
+     68,
+     38
+    ],
+    "telefoon": [
+     85,
+     48
+    ]
+   },
+   "used": true
+  },
+  {
+   "id": "assets/v3/landmarks/exports/TOPO_08-256.webp",
+   "source": "v3",
+   "mime": "image/webp",
+   "format": "WEBP",
+   "mode": "RGBA",
+   "bytes": 21418,
+   "base64Bytes": 28560,
+   "occurrences": 1,
+   "size": [
+    256,
+    256
+   ],
+   "sha256": "78b174193f96f2cb217bebce4b478ca937692f67804534909a9968a19002b557",
+   "kind": "landmark",
+   "inDom": true,
+   "drawn": true,
+   "screens": [
+    "kennismaking",
+    "kennismaking-aanbod",
+    "reis",
+    "reis-city1",
+    "reis-city2",
+    "reis-city3",
+    "reis-city4",
+    "reis-countries",
+    "reis-islands",
+    "reis-mountains",
+    "reis-regions",
+    "reis-rivers",
+    "reis-seas",
+    "reis-volcanoes",
+    "schoolblad",
+    "toetsResult-fouten",
+    "toetsResult-perfect"
+   ],
+   "elements": [
+    "section.v3Main image",
+    "section.v3View image"
+   ],
+   "hiddenInDom": [
+    "section.v3Main image"
+   ],
+   "maxDisplayCss": {
+    "desktop": [
+     0,
+     0
+    ],
+    "ipad": [
+     56,
+     56
+    ],
+    "telefoon": [
+     56,
+     56
+    ]
+   },
+   "used": true
+  },
+  {
+   "id": "assets/v3/landmarks/exports/TOPO_10-256.webp",
+   "source": "v3",
+   "mime": "image/webp",
+   "format": "WEBP",
+   "mode": "RGBA",
+   "bytes": 21348,
+   "base64Bytes": 28464,
+   "occurrences": 1,
+   "size": [
+    256,
+    256
+   ],
+   "sha256": "5973c72a994c2db81b1c53e8b0c94d6ce22ebffd4f17098d08ddc136fcf3208e",
+   "kind": "landmark",
+   "inDom": true,
+   "drawn": true,
+   "screens": [
+    "kennismaking",
+    "kennismaking-aanbod",
+    "reis",
+    "reis-city1",
+    "reis-city2",
+    "reis-city3",
+    "reis-city4",
+    "reis-countries",
+    "reis-islands",
+    "reis-mountains",
+    "reis-regions",
+    "reis-rivers",
+    "reis-seas",
+    "reis-volcanoes",
+    "schoolblad",
+    "toetsResult-fouten",
+    "toetsResult-perfect"
+   ],
+   "elements": [
+    "section.v3Main image",
+    "section.v3View image"
+   ],
+   "hiddenInDom": [
+    "section.v3Main image"
+   ],
+   "maxDisplayCss": {
+    "desktop": [
+     0,
+     0
+    ],
+    "ipad": [
+     56,
+     56
+    ],
+    "telefoon": [
+     56,
+     56
+    ]
+   },
+   "used": true
+  },
+  {
+   "id": "assets/v3/scenes/topo-vulkanen-etna-mini.webp",
+   "source": "v3",
+   "mime": "image/webp",
+   "format": "WEBP",
+   "mode": "RGB",
+   "bytes": 19894,
+   "base64Bytes": 26528,
+   "occurrences": 1,
+   "size": [
+    480,
+    270
+   ],
+   "sha256": "21f4566b9d32909526c2f542bc6b0e12a2d4beb47b32ee1c7194644de68b287d",
+   "kind": "scene",
+   "inDom": true,
+   "drawn": true,
+   "screens": [
+    "kennismaking",
+    "kennismaking-aanbod",
+    "reis",
+    "reis-city1",
+    "reis-city2",
+    "reis-city3",
+    "reis-city4",
+    "reis-countries",
+    "reis-islands",
+    "reis-mountains",
+    "reis-regions",
+    "reis-relief-uit",
+    "reis-rivers",
+    "reis-seas",
+    "reis-volcanoes",
+    "schoolblad",
+    "voortgang"
+   ],
+   "elements": [
+    "section.v3Field img",
+    "section.v3List img"
+   ],
+   "hiddenInDom": [
+    "section.v3List img"
+   ],
+   "maxDisplayCss": {
+    "desktop": [
+     75,
+     42
+    ],
+    "ipad": [
+     68,
+     38
+    ],
+    "telefoon": [
+     85,
+     48
+    ]
+   },
+   "used": true
+  },
+  {
+   "id": "assets/v3/landmarks/exports/TOPO_07-256.webp",
+   "source": "v3",
+   "mime": "image/webp",
+   "format": "WEBP",
+   "mode": "RGBA",
+   "bytes": 19886,
+   "base64Bytes": 26516,
+   "occurrences": 1,
+   "size": [
+    256,
+    256
+   ],
+   "sha256": "dfdc070e24eb8eb19f10d2979c1718903c5369cd2ee7c4a906b8a4c98671e5f4",
+   "kind": "landmark",
+   "inDom": true,
+   "drawn": true,
+   "screens": [
+    "kennismaking",
+    "kennismaking-aanbod",
+    "reis",
+    "reis-city1",
+    "reis-city2",
+    "reis-city3",
+    "reis-city4",
+    "reis-countries",
+    "reis-islands",
+    "reis-mountains",
+    "reis-regions",
+    "reis-rivers",
+    "reis-seas",
+    "reis-volcanoes",
+    "schoolblad",
+    "toetsResult-fouten",
+    "toetsResult-perfect"
+   ],
+   "elements": [
+    "section.v3Main image",
+    "section.v3View image"
+   ],
+   "hiddenInDom": [
+    "section.v3Main image"
+   ],
+   "maxDisplayCss": {
+    "desktop": [
+     0,
+     0
+    ],
+    "ipad": [
+     43,
+     43
+    ],
+    "telefoon": [
+     43,
+     43
+    ]
+   },
+   "used": true
+  },
+  {
+   "id": "assets/v3/landmarks/exports/TOPO_09-256.webp",
+   "source": "v3",
+   "mime": "image/webp",
+   "format": "WEBP",
+   "mode": "RGBA",
+   "bytes": 19874,
+   "base64Bytes": 26500,
+   "occurrences": 1,
+   "size": [
+    256,
+    256
+   ],
+   "sha256": "6e7ef73b198dd3ccd6ab60cd7504711c4535e1d6feaaa76a0933c051e899a45a",
+   "kind": "landmark",
+   "inDom": true,
+   "drawn": true,
+   "screens": [
+    "kennismaking",
+    "kennismaking-aanbod",
+    "reis",
+    "reis-city1",
+    "reis-city2",
+    "reis-city3",
+    "reis-city4",
+    "reis-countries",
+    "reis-islands",
+    "reis-mountains",
+    "reis-regions",
+    "reis-rivers",
+    "reis-seas",
+    "reis-volcanoes",
+    "schoolblad",
+    "toetsResult-fouten",
+    "toetsResult-perfect"
+   ],
+   "elements": [
+    "section.v3Main image",
+    "section.v3View image"
+   ],
+   "hiddenInDom": [
+    "section.v3Main image"
+   ],
+   "maxDisplayCss": {
+    "desktop": [
+     0,
+     0
+    ],
+    "ipad": [
+     56,
+     56
+    ],
+    "telefoon": [
+     56,
+     56
+    ]
+   },
+   "used": true
+  },
+  {
+   "id": "assets/v3/landmarks/exports/TOPO_01-256.webp",
+   "source": "v3",
+   "mime": "image/webp",
+   "format": "WEBP",
+   "mode": "RGBA",
+   "bytes": 18042,
+   "base64Bytes": 24056,
+   "occurrences": 1,
+   "size": [
+    256,
+    256
+   ],
+   "sha256": "bc5daf04d039f6784d73e89aae2ee769c69cd0b42c000607006ab74c0638b684",
+   "kind": "landmark",
+   "inDom": true,
+   "drawn": true,
+   "screens": [
+    "kennismaking",
+    "kennismaking-aanbod",
+    "reis",
+    "reis-city1",
+    "reis-city2",
+    "reis-city3",
+    "reis-city4",
+    "reis-countries",
+    "reis-islands",
+    "reis-mountains",
+    "reis-regions",
+    "reis-rivers",
+    "reis-seas",
+    "reis-volcanoes",
+    "schoolblad",
+    "toetsResult-fouten",
+    "toetsResult-perfect"
+   ],
+   "elements": [
+    "section.v3Main image",
+    "section.v3View image"
+   ],
+   "hiddenInDom": [
+    "section.v3Main image"
+   ],
+   "maxDisplayCss": {
+    "desktop": [
+     0,
+     0
+    ],
+    "ipad": [
+     56,
+     56
+    ],
+    "telefoon": [
+     56,
+     56
+    ]
+   },
+   "used": true
+  },
+  {
+   "id": "assets/v3/landmarks/exports/TOPO_05-256.webp",
+   "source": "v3",
+   "mime": "image/webp",
+   "format": "WEBP",
+   "mode": "RGBA",
+   "bytes": 14428,
+   "base64Bytes": 19240,
+   "occurrences": 1,
+   "size": [
+    256,
+    256
+   ],
+   "sha256": "2c6bce94704d64d038db293501d7a4225ed740775e54f28fdc5fcf16f361501c",
+   "kind": "landmark",
+   "inDom": true,
+   "drawn": true,
+   "screens": [
+    "kennismaking",
+    "kennismaking-aanbod",
+    "reis",
+    "reis-city1",
+    "reis-city2",
+    "reis-city3",
+    "reis-city4",
+    "reis-countries",
+    "reis-islands",
+    "reis-mountains",
+    "reis-regions",
+    "reis-rivers",
+    "reis-seas",
+    "reis-volcanoes",
+    "schoolblad",
+    "toetsResult-fouten",
+    "toetsResult-perfect"
+   ],
+   "elements": [
+    "section.v3Main image",
+    "section.v3View image"
+   ],
+   "hiddenInDom": [
+    "section.v3Main image"
+   ],
+   "maxDisplayCss": {
+    "desktop": [
+     0,
+     0
+    ],
+    "ipad": [
+     56,
+     56
+    ],
+    "telefoon": [
+     56,
+     56
+    ]
+   },
+   "used": true
+  },
+  {
+   "id": "assets/v3/landmarks/exports/TOPO_03-256.webp",
+   "source": "v3",
+   "mime": "image/webp",
+   "format": "WEBP",
+   "mode": "RGBA",
+   "bytes": 12852,
+   "base64Bytes": 17136,
+   "occurrences": 1,
+   "size": [
+    256,
+    256
+   ],
+   "sha256": "444587077247281792e70942021cdc138c5480bfef8c24489e954e2354ef0e1c",
+   "kind": "landmark",
+   "inDom": true,
+   "drawn": true,
+   "screens": [
+    "kennismaking",
+    "kennismaking-aanbod",
+    "reis",
+    "reis-city1",
+    "reis-city2",
+    "reis-city3",
+    "reis-city4",
+    "reis-countries",
+    "reis-islands",
+    "reis-mountains",
+    "reis-regions",
+    "reis-rivers",
+    "reis-seas",
+    "reis-volcanoes",
+    "schoolblad",
+    "toetsResult-fouten",
+    "toetsResult-perfect"
+   ],
+   "elements": [
+    "section.v3Main image",
+    "section.v3View image"
+   ],
+   "hiddenInDom": [
+    "section.v3Main image"
+   ],
+   "maxDisplayCss": {
+    "desktop": [
+     0,
+     0
+    ],
+    "ipad": [
+     56,
+     56
+    ],
+    "telefoon": [
+     56,
+     56
+    ]
+   },
+   "used": true
+  },
+  {
+   "id": "assets/v3/landmarks/exports/TOPO_04-256.webp",
+   "source": "v3",
+   "mime": "image/webp",
+   "format": "WEBP",
+   "mode": "RGBA",
+   "bytes": 12488,
+   "base64Bytes": 16652,
+   "occurrences": 1,
+   "size": [
+    256,
+    256
+   ],
+   "sha256": "3547a18bcd1e588043a85bd4e51b771c28b630d39c550dc08661141869db3500",
+   "kind": "landmark",
+   "inDom": true,
+   "drawn": true,
+   "screens": [
+    "kennismaking",
+    "kennismaking-aanbod",
+    "reis",
+    "reis-city1",
+    "reis-city2",
+    "reis-city3",
+    "reis-city4",
+    "reis-countries",
+    "reis-islands",
+    "reis-mountains",
+    "reis-regions",
+    "reis-rivers",
+    "reis-seas",
+    "reis-volcanoes",
+    "schoolblad",
+    "toetsResult-fouten",
+    "toetsResult-perfect"
+   ],
+   "elements": [
+    "section.v3Main image",
+    "section.v3View image"
+   ],
+   "hiddenInDom": [
+    "section.v3Main image"
+   ],
+   "maxDisplayCss": {
+    "desktop": [
+     0,
+     0
+    ],
+    "ipad": [
+     56,
+     56
+    ],
+    "telefoon": [
+     56,
+     56
+    ]
+   },
+   "used": true
+  },
+  {
+   "id": "assets/v3/landmarks/exports/TOPO_02-256.webp",
+   "source": "v3",
+   "mime": "image/webp",
+   "format": "WEBP",
+   "mode": "RGBA",
+   "bytes": 12312,
+   "base64Bytes": 16416,
+   "occurrences": 1,
+   "size": [
+    256,
+    256
+   ],
+   "sha256": "5dd2697ad2691c31b92df76900285f24920cdae75eb6c5568802fc64c8c0e1aa",
+   "kind": "landmark",
+   "inDom": true,
+   "drawn": true,
+   "screens": [
+    "kennismaking",
+    "kennismaking-aanbod",
+    "reis",
+    "reis-city1",
+    "reis-city2",
+    "reis-city3",
+    "reis-city4",
+    "reis-countries",
+    "reis-islands",
+    "reis-mountains",
+    "reis-regions",
+    "reis-rivers",
+    "reis-seas",
+    "reis-volcanoes",
+    "schoolblad",
+    "toetsResult-fouten",
+    "toetsResult-perfect"
+   ],
+   "elements": [
+    "section.v3Main image",
+    "section.v3View image"
+   ],
+   "hiddenInDom": [
+    "section.v3Main image"
+   ],
+   "maxDisplayCss": {
+    "desktop": [
+     0,
+     0
+    ],
+    "ipad": [
+     43,
+     43
+    ],
+    "telefoon": [
+     43,
+     43
+    ]
+   },
+   "used": true
+  },
+  {
+   "id": "assets/v3/landmarks/exports/TOPO_06-128.webp",
+   "source": "v3",
+   "mime": "image/webp",
+   "format": "WEBP",
+   "mode": "RGBA",
+   "bytes": 8658,
+   "base64Bytes": 11544,
+   "occurrences": 1,
+   "size": [
+    128,
+    128
+   ],
+   "sha256": "cb3eac551b4350cb35859d09146eefa84fa4064d9323dfa32b33f6167f72e42d",
+   "kind": "landmark",
+   "inDom": true,
+   "drawn": true,
+   "screens": [
+    "kennismaking",
+    "kennismaking-aanbod",
+    "reis",
+    "reis-city1",
+    "reis-city2",
+    "reis-city3",
+    "reis-city4",
+    "reis-countries",
+    "reis-islands",
+    "reis-mountains",
+    "reis-regions",
+    "reis-rivers",
+    "reis-seas",
+    "reis-volcanoes",
+    "schoolblad",
+    "toetsResult-fouten",
+    "toetsResult-perfect"
+   ],
+   "elements": [
+    "section.v3Main image",
+    "section.v3View image"
+   ],
+   "hiddenInDom": [
+    "section.v3Main image"
+   ],
+   "maxDisplayCss": {
+    "desktop": [
+     66,
+     66
+    ],
+    "ipad": [
+     0,
+     0
+    ],
+    "telefoon": [
+     0,
+     0
+    ]
+   },
+   "used": true
+  },
+  {
+   "id": "assets/v3/landmarks/exports/TOPO_10-128.webp",
+   "source": "v3",
+   "mime": "image/webp",
+   "format": "WEBP",
+   "mode": "RGBA",
+   "bytes": 7556,
+   "base64Bytes": 10076,
+   "occurrences": 1,
+   "size": [
+    128,
+    128
+   ],
+   "sha256": "6fdc1c1cdcddd8dc1a772e0950f7b97cce51976b526a1feac73837f1d65cc533",
+   "kind": "landmark",
+   "inDom": true,
+   "drawn": true,
+   "screens": [
+    "kennismaking",
+    "kennismaking-aanbod",
+    "reis",
+    "reis-city1",
+    "reis-city2",
+    "reis-city3",
+    "reis-city4",
+    "reis-countries",
+    "reis-islands",
+    "reis-mountains",
+    "reis-regions",
+    "reis-rivers",
+    "reis-seas",
+    "reis-volcanoes",
+    "schoolblad",
+    "toetsResult-fouten",
+    "toetsResult-perfect"
+   ],
+   "elements": [
+    "section.v3Main image",
+    "section.v3View image"
+   ],
+   "hiddenInDom": [
+    "section.v3Main image"
+   ],
+   "maxDisplayCss": {
+    "desktop": [
+     66,
+     66
+    ],
+    "ipad": [
+     0,
+     0
+    ],
+    "telefoon": [
+     0,
+     0
+    ]
+   },
+   "used": true
+  },
+  {
+   "id": "assets/v3/landmarks/exports/TOPO_08-128.webp",
+   "source": "v3",
+   "mime": "image/webp",
+   "format": "WEBP",
+   "mode": "RGBA",
+   "bytes": 7234,
+   "base64Bytes": 9648,
+   "occurrences": 1,
+   "size": [
+    128,
+    128
+   ],
+   "sha256": "b8f3691317bc3ac62e72a12a82ad5bcdd804bec2098953f3c4f4d981cca3cfa2",
+   "kind": "landmark",
+   "inDom": true,
+   "drawn": true,
+   "screens": [
+    "kennismaking",
+    "kennismaking-aanbod",
+    "reis",
+    "reis-city1",
+    "reis-city2",
+    "reis-city3",
+    "reis-city4",
+    "reis-countries",
+    "reis-islands",
+    "reis-mountains",
+    "reis-regions",
+    "reis-rivers",
+    "reis-seas",
+    "reis-volcanoes",
+    "schoolblad",
+    "toetsResult-fouten",
+    "toetsResult-perfect"
+   ],
+   "elements": [
+    "section.v3Main image",
+    "section.v3View image"
+   ],
+   "hiddenInDom": [
+    "section.v3Main image"
+   ],
+   "maxDisplayCss": {
+    "desktop": [
+     66,
+     66
+    ],
+    "ipad": [
+     0,
+     0
+    ],
+    "telefoon": [
+     0,
+     0
+    ]
+   },
+   "used": true
+  },
+  {
+   "id": "assets/v3/render/exports/icons/IC-stamp-96.webp",
+   "source": "v3",
+   "mime": "image/webp",
+   "format": "WEBP",
+   "mode": "RGBA",
+   "bytes": 7116,
+   "base64Bytes": 9488,
+   "occurrences": 1,
+   "size": [
+    96,
+    96
+   ],
+   "sha256": "a578ddedb395fc9fc97c672923ed6f6f681628016e1c1e4c014019385a14144a",
+   "kind": "icoon",
+   "inDom": true,
+   "drawn": true,
+   "screens": [
+    "boek",
+    "instellingen",
+    "reis",
+    "reis-city1",
+    "reis-city2",
+    "reis-city3",
+    "reis-city4",
+    "reis-countries",
+    "reis-islands",
+    "reis-mountains",
+    "reis-regions",
+    "reis-relief-uit",
+    "reis-rivers",
+    "reis-seas",
+    "reis-volcanoes",
+    "rewards",
+    "rewards-v3BookCover",
+    "rewards-v3TileGold",
+    "rewards-v3TilePizza",
+    "rewards-v3TilePostcard",
+    "rewards-v3TileStamp",
+    "schoolblad",
+    "vespa-100",
+    "vespa-1200",
+    "vespa-2500",
+    "vespa-600"
+   ],
+   "elements": [
+    "section.v3List img.v3StatusArt",
+    "section.v3Rewards img.v3TileIcon"
+   ],
+   "hiddenInDom": [
+    "section.v3List img.v3StatusArt",
+    "section.v3Rewards img.v3TileIcon"
+   ],
+   "maxDisplayCss": {
+    "desktop": [
+     78,
+     78
+    ],
+    "ipad": [
+     78,
+     78
+    ],
+    "telefoon": [
+     44,
+     44
+    ]
+   },
+   "used": true
+  },
+  {
+   "id": "assets/v2/nino-v2-chaptergold.webp",
+   "source": "v2",
+   "mime": "image/webp",
+   "format": "WEBP",
+   "mode": "RGBA",
+   "bytes": 7074,
+   "base64Bytes": 9432,
+   "occurrences": 1,
+   "size": [
+    64,
+    64
+   ],
+   "sha256": "54224a2edf4e266bf63b374fbb1ecc988c1b6aa08a6904abf045c2a159916772",
+   "kind": "icoon",
+   "inDom": true,
+   "drawn": true,
+   "screens": [
+    "boek",
+    "rewards-v3BookCover",
+    "rewards-v3TileGold",
+    "rewards-v3TileStamp"
+   ],
+   "elements": [
+    "section.bookPage img.chapterSeal",
+    "section.bookPage img.factIcon"
+   ],
+   "hiddenInDom": [
+    "section.bookPage img.factIcon"
+   ],
+   "maxDisplayCss": {
+    "desktop": [
+     43,
+     43
+    ],
+    "ipad": [
+     39,
+     39
+    ],
+    "telefoon": [
+     26,
+     26
+    ]
+   },
+   "used": true
+  },
+  {
+   "id": "assets/v3/landmarks/exports/TOPO_09-128.webp",
+   "source": "v3",
+   "mime": "image/webp",
+   "format": "WEBP",
+   "mode": "RGBA",
+   "bytes": 6892,
+   "base64Bytes": 9192,
+   "occurrences": 1,
+   "size": [
+    128,
+    128
+   ],
+   "sha256": "76e5139c40e4592a878f28f16b2c0b0f01358db000b8fd1b3a6d5866d36848a2",
+   "kind": "landmark",
+   "inDom": true,
+   "drawn": true,
+   "screens": [
+    "kennismaking",
+    "kennismaking-aanbod",
+    "reis",
+    "reis-city1",
+    "reis-city2",
+    "reis-city3",
+    "reis-city4",
+    "reis-countries",
+    "reis-islands",
+    "reis-mountains",
+    "reis-regions",
+    "reis-rivers",
+    "reis-seas",
+    "reis-volcanoes",
+    "schoolblad",
+    "toetsResult-fouten",
+    "toetsResult-perfect"
+   ],
+   "elements": [
+    "section.v3Main image",
+    "section.v3View image"
+   ],
+   "hiddenInDom": [
+    "section.v3Main image"
+   ],
+   "maxDisplayCss": {
+    "desktop": [
+     66,
+     66
+    ],
+    "ipad": [
+     0,
+     0
+    ],
+    "telefoon": [
+     0,
+     0
+    ]
+   },
+   "used": true
+  },
+  {
+   "id": "assets/v3/landmarks/exports/TOPO_07-128.webp",
+   "source": "v3",
+   "mime": "image/webp",
+   "format": "WEBP",
+   "mode": "RGBA",
+   "bytes": 6790,
+   "base64Bytes": 9056,
+   "occurrences": 1,
+   "size": [
+    128,
+    128
+   ],
+   "sha256": "029ac9cec62bed2bae413842617ed44ac676866a01970d0f5257e1e28e561747",
+   "kind": "landmark",
+   "inDom": true,
+   "drawn": true,
+   "screens": [
+    "kennismaking",
+    "kennismaking-aanbod",
+    "reis",
+    "reis-city1",
+    "reis-city2",
+    "reis-city3",
+    "reis-city4",
+    "reis-countries",
+    "reis-islands",
+    "reis-mountains",
+    "reis-regions",
+    "reis-rivers",
+    "reis-seas",
+    "reis-volcanoes",
+    "schoolblad",
+    "toetsResult-fouten",
+    "toetsResult-perfect"
+   ],
+   "elements": [
+    "section.v3Main image",
+    "section.v3View image"
+   ],
+   "hiddenInDom": [
+    "section.v3Main image"
+   ],
+   "maxDisplayCss": {
+    "desktop": [
+     51,
+     51
+    ],
+    "ipad": [
+     0,
+     0
+    ],
+    "telefoon": [
+     0,
+     0
+    ]
+   },
+   "used": true
+  },
+  {
+   "id": "assets/v3/render/exports/icons/IC-postcard-96.webp",
+   "source": "v3",
+   "mime": "image/webp",
+   "format": "WEBP",
+   "mode": "RGBA",
+   "bytes": 6638,
+   "base64Bytes": 8852,
+   "occurrences": 1,
+   "size": [
+    96,
+    96
+   ],
+   "sha256": "b4abe1371d848c583af9a843edaf1b2450e21571a9c8ab576b9a3dd78b2ef158",
+   "kind": "icoon",
+   "inDom": true,
+   "drawn": true,
+   "screens": [
+    "boek",
+    "instellingen",
+    "rewards",
+    "rewards-v3BookCover",
+    "rewards-v3TileGold",
+    "rewards-v3TilePizza",
+    "rewards-v3TilePostcard",
+    "rewards-v3TileStamp",
+    "vespa-100",
+    "vespa-1200",
+    "vespa-2500",
+    "vespa-600"
+   ],
+   "elements": [
+    "section.v3Rewards img.v3TileIcon"
+   ],
+   "hiddenInDom": [
+    "section.v3Rewards img.v3TileIcon"
+   ],
+   "maxDisplayCss": {
+    "desktop": [
+     77,
+     77
+    ],
+    "ipad": [
+     77,
+     77
+    ],
+    "telefoon": [
+     44,
+     44
+    ]
+   },
+   "used": true
+  },
+  {
+   "id": "assets/v3/landmarks/exports/TOPO_01-128.webp",
+   "source": "v3",
+   "mime": "image/webp",
+   "format": "WEBP",
+   "mode": "RGBA",
+   "bytes": 6470,
+   "base64Bytes": 8628,
+   "occurrences": 1,
+   "size": [
+    128,
+    128
+   ],
+   "sha256": "dfd0204c17d5cbf91e48179d3473a221171ce336b012f9f5e409f5e8b4b45393",
+   "kind": "landmark",
+   "inDom": true,
+   "drawn": true,
+   "screens": [
+    "kennismaking",
+    "kennismaking-aanbod",
+    "reis",
+    "reis-city1",
+    "reis-city2",
+    "reis-city3",
+    "reis-city4",
+    "reis-countries",
+    "reis-islands",
+    "reis-mountains",
+    "reis-regions",
+    "reis-rivers",
+    "reis-seas",
+    "reis-volcanoes",
+    "schoolblad",
+    "toetsResult-fouten",
+    "toetsResult-perfect"
+   ],
+   "elements": [
+    "section.v3Main image",
+    "section.v3View image"
+   ],
+   "hiddenInDom": [
+    "section.v3Main image"
+   ],
+   "maxDisplayCss": {
+    "desktop": [
+     66,
+     66
+    ],
+    "ipad": [
+     0,
+     0
+    ],
+    "telefoon": [
+     0,
+     0
+    ]
+   },
+   "used": true
+  },
+  {
+   "id": "assets/v3/render/exports/icons/IC-pizza-96.webp",
+   "source": "v3",
+   "mime": "image/webp",
+   "format": "WEBP",
+   "mode": "RGBA",
+   "bytes": 5694,
+   "base64Bytes": 7592,
+   "occurrences": 1,
+   "size": [
+    96,
+    96
+   ],
+   "sha256": "5d3dbef4e73ed6d3f3e3edea75a29ad21100f9f9ccfacaa52715c5eebe6492d9",
+   "kind": "icoon",
+   "inDom": true,
+   "drawn": true,
+   "screens": [
+    "boek",
+    "instellingen",
+    "rewards",
+    "rewards-v3BookCover",
+    "rewards-v3TileGold",
+    "rewards-v3TilePizza",
+    "rewards-v3TilePostcard",
+    "rewards-v3TileStamp",
+    "vespa-100",
+    "vespa-1200",
+    "vespa-2500",
+    "vespa-600",
+    "voortgang"
+   ],
+   "elements": [
+    "section.v3Rewards img.v3TileIcon",
+    "section.v3VgTile img"
+   ],
+   "hiddenInDom": [
+    "section.v3Rewards img.v3TileIcon",
+    "section.v3VgTile img"
+   ],
+   "maxDisplayCss": {
+    "desktop": [
+     85,
+     85
+    ],
+    "ipad": [
+     85,
+     85
+    ],
+    "telefoon": [
+     44,
+     44
+    ]
+   },
+   "used": true
+  },
+  {
+   "id": "assets/v3/landmarks/exports/TOPO_05-128.webp",
+   "source": "v3",
+   "mime": "image/webp",
+   "format": "WEBP",
+   "mode": "RGBA",
+   "bytes": 5664,
+   "base64Bytes": 7552,
+   "occurrences": 1,
+   "size": [
+    128,
+    128
+   ],
+   "sha256": "e0532d88c31a191b7cc142ee28a0519b7ed234584943458b750ab54bfd4ad009",
+   "kind": "landmark",
+   "inDom": true,
+   "drawn": true,
+   "screens": [
+    "kennismaking",
+    "kennismaking-aanbod",
+    "reis",
+    "reis-city1",
+    "reis-city2",
+    "reis-city3",
+    "reis-city4",
+    "reis-countries",
+    "reis-islands",
+    "reis-mountains",
+    "reis-regions",
+    "reis-rivers",
+    "reis-seas",
+    "reis-volcanoes",
+    "schoolblad",
+    "toetsResult-fouten",
+    "toetsResult-perfect"
+   ],
+   "elements": [
+    "section.v3Main image",
+    "section.v3View image"
+   ],
+   "hiddenInDom": [
+    "section.v3Main image"
+   ],
+   "maxDisplayCss": {
+    "desktop": [
+     66,
+     66
+    ],
+    "ipad": [
+     0,
+     0
+    ],
+    "telefoon": [
+     0,
+     0
+    ]
+   },
+   "used": true
+  },
+  {
+   "id": "assets/v3/render/exports/icons/IC-gold-96.webp",
+   "source": "v3",
+   "mime": "image/webp",
+   "format": "WEBP",
+   "mode": "RGBA",
+   "bytes": 5318,
+   "base64Bytes": 7092,
+   "occurrences": 1,
+   "size": [
+    96,
+    96
+   ],
+   "sha256": "ee806f0938efbe93cf5b41817f81f5b9357acdf049288bde9cd223fcbd18a865",
+   "kind": "icoon",
+   "inDom": true,
+   "drawn": true,
+   "screens": [
+    "boek",
+    "instellingen",
+    "reis",
+    "reis-city1",
+    "reis-city2",
+    "reis-city3",
+    "reis-city4",
+    "reis-countries",
+    "reis-islands",
+    "reis-mountains",
+    "reis-regions",
+    "reis-relief-uit",
+    "reis-rivers",
+    "reis-seas",
+    "reis-volcanoes",
+    "rewards",
+    "rewards-v3BookCover",
+    "rewards-v3TileGold",
+    "rewards-v3TilePizza",
+    "rewards-v3TilePostcard",
+    "rewards-v3TileStamp",
+    "schoolblad",
+    "vespa-100",
+    "vespa-1200",
+    "vespa-2500",
+    "vespa-600",
+    "voortgang"
+   ],
+   "elements": [
+    "section.v3Field img",
+    "section.v3List img.v3StatusArt",
+    "section.v3Rewards img.v3TileIcon"
+   ],
+   "hiddenInDom": [
+    "section.v3List img.v3StatusArt",
+    "section.v3Rewards img.v3TileIcon"
+   ],
+   "maxDisplayCss": {
+    "desktop": [
+     85,
+     85
+    ],
+    "ipad": [
+     85,
+     85
+    ],
+    "telefoon": [
+     44,
+     44
+    ]
+   },
+   "used": true
+  },
+  {
+   "id": "assets/v3/landmarks/exports/TOPO_02-128.webp",
+   "source": "v3",
+   "mime": "image/webp",
+   "format": "WEBP",
+   "mode": "RGBA",
+   "bytes": 4750,
+   "base64Bytes": 6336,
+   "occurrences": 1,
+   "size": [
+    128,
+    128
+   ],
+   "sha256": "2f571f751dc9a4bb00f22cbe2e195c271b0261f3d032716a4d8b86530fd3623b",
+   "kind": "landmark",
+   "inDom": true,
+   "drawn": true,
+   "screens": [
+    "kennismaking",
+    "kennismaking-aanbod",
+    "reis",
+    "reis-city1",
+    "reis-city2",
+    "reis-city3",
+    "reis-city4",
+    "reis-countries",
+    "reis-islands",
+    "reis-mountains",
+    "reis-regions",
+    "reis-rivers",
+    "reis-seas",
+    "reis-volcanoes",
+    "schoolblad",
+    "toetsResult-fouten",
+    "toetsResult-perfect"
+   ],
+   "elements": [
+    "section.v3Main image",
+    "section.v3View image"
+   ],
+   "hiddenInDom": [
+    "section.v3Main image"
+   ],
+   "maxDisplayCss": {
+    "desktop": [
+     50,
+     50
+    ],
+    "ipad": [
+     0,
+     0
+    ],
+    "telefoon": [
+     0,
+     0
+    ]
+   },
+   "used": true
+  },
+  {
+   "id": "assets/v3/render/exports/icons/IC-slice-96.webp",
+   "source": "v3",
+   "mime": "image/webp",
+   "format": "WEBP",
+   "mode": "RGBA",
+   "bytes": 4658,
+   "base64Bytes": 6212,
+   "occurrences": 1,
+   "size": [
+    96,
+    96
+   ],
+   "sha256": "1b1fa303abc5775133b00d76f9b2d4c6945f759c12caf75d50b492bdb96ad550",
+   "kind": "icoon",
+   "inDom": true,
+   "drawn": true,
+   "screens": [
+    "kennismaking",
+    "kennismaking-aanbod",
+    "reis",
+    "reis-city1",
+    "reis-city2",
+    "reis-city3",
+    "reis-city4",
+    "reis-countries",
+    "reis-islands",
+    "reis-mountains",
+    "reis-regions",
+    "reis-relief-uit",
+    "reis-rivers",
+    "reis-seas",
+    "reis-volcanoes",
+    "schoolblad",
+    "voortgang"
+   ],
+   "elements": [
+    "section.v3Field img",
+    "section.v3Main img.v3CountArt"
+   ],
+   "hiddenInDom": [
+    "section.v3Main img.v3CountArt"
+   ],
+   "maxDisplayCss": {
+    "desktop": [
+     40,
+     40
+    ],
+    "ipad": [
+     40,
+     40
+    ],
+    "telefoon": [
+     40,
+     40
+    ]
+   },
+   "used": true
+  },
+  {
+   "id": "assets/v3/landmarks/exports/TOPO_04-128.webp",
+   "source": "v3",
+   "mime": "image/webp",
+   "format": "WEBP",
+   "mode": "RGBA",
+   "bytes": 4512,
+   "base64Bytes": 6016,
+   "occurrences": 1,
+   "size": [
+    128,
+    128
+   ],
+   "sha256": "6c81d6ea3f45876e77e21a736b4abc332a549c9899ae2fc665b491d7c6044c9a",
+   "kind": "landmark",
+   "inDom": true,
+   "drawn": true,
+   "screens": [
+    "kennismaking",
+    "kennismaking-aanbod",
+    "reis",
+    "reis-city1",
+    "reis-city2",
+    "reis-city3",
+    "reis-city4",
+    "reis-countries",
+    "reis-islands",
+    "reis-mountains",
+    "reis-regions",
+    "reis-rivers",
+    "reis-seas",
+    "reis-volcanoes",
+    "schoolblad",
+    "toetsResult-fouten",
+    "toetsResult-perfect"
+   ],
+   "elements": [
+    "section.v3Main image",
+    "section.v3View image"
+   ],
+   "hiddenInDom": [
+    "section.v3Main image"
+   ],
+   "maxDisplayCss": {
+    "desktop": [
+     66,
+     66
+    ],
+    "ipad": [
+     0,
+     0
+    ],
+    "telefoon": [
+     0,
+     0
+    ]
+   },
+   "used": true
+  },
+  {
+   "id": "assets/v3/landmarks/exports/TOPO_03-128.webp",
+   "source": "v3",
+   "mime": "image/webp",
+   "format": "WEBP",
+   "mode": "RGBA",
+   "bytes": 4454,
+   "base64Bytes": 5940,
+   "occurrences": 1,
+   "size": [
+    128,
+    128
+   ],
+   "sha256": "97162495ab61d3813d495280f843225b5826f394b73836faeac6ace108bbfb0b",
+   "kind": "landmark",
+   "inDom": true,
+   "drawn": true,
+   "screens": [
+    "kennismaking",
+    "kennismaking-aanbod",
+    "reis",
+    "reis-city1",
+    "reis-city2",
+    "reis-city3",
+    "reis-city4",
+    "reis-countries",
+    "reis-islands",
+    "reis-mountains",
+    "reis-regions",
+    "reis-rivers",
+    "reis-seas",
+    "reis-volcanoes",
+    "schoolblad",
+    "toetsResult-fouten",
+    "toetsResult-perfect"
+   ],
+   "elements": [
+    "section.v3Main image",
+    "section.v3View image"
+   ],
+   "hiddenInDom": [
+    "section.v3Main image"
+   ],
+   "maxDisplayCss": {
+    "desktop": [
+     66,
+     66
+    ],
+    "ipad": [
+     0,
+     0
+    ],
+    "telefoon": [
+     0,
+     0
+    ]
+   },
+   "used": true
+  },
+  {
+   "id": "assets/v2/favicon-32.png",
+   "source": "v2",
+   "mime": "image/png",
+   "format": "PNG",
+   "mode": "RGBA",
+   "bytes": 197,
+   "base64Bytes": 264,
+   "occurrences": 1,
+   "size": [
+    32,
+    32
+   ],
+   "sha256": "3f737bc4f4910f16f7065f73fcfc9dff76b33718ee4f4ad7706b00a006aba1d9",
+   "kind": "icoon",
+   "inDom": false,
+   "drawn": false,
+   "screens": [],
+   "elements": [],
+   "hiddenInDom": [],
+   "maxDisplayCss": {
+    "desktop": [
+     0,
+     0
+    ],
+    "ipad": [
+     0,
+     0
+    ],
+    "telefoon": [
+     0,
+     0
+    ]
+   },
+   "used": true,
+   "keepReason": "browser-tabicoon (niet in de DOM getekend)"
+  },
+  {
+   "id": "assets/v2/favicon-16.png",
+   "source": "v2",
+   "mime": "image/png",
+   "format": "PNG",
+   "mode": "RGBA",
+   "bytes": 138,
+   "base64Bytes": 184,
+   "occurrences": 1,
+   "size": [
+    16,
+    16
+   ],
+   "sha256": "3a3e320851dbdd3c87210cba284aade1d95f8efdb0a677f82600c2b372272143",
+   "kind": "icoon",
+   "inDom": false,
+   "drawn": false,
+   "screens": [],
+   "elements": [],
+   "hiddenInDom": [],
+   "maxDisplayCss": {
+    "desktop": [
+     0,
+     0
+    ],
+    "ipad": [
+     0,
+     0
+    ],
+    "telefoon": [
+     0,
+     0
+    ]
+   },
+   "used": true,
+   "keepReason": "browser-tabicoon (niet in de DOM getekend)"
+  }
+ ]
+}

@@ -4,6 +4,7 @@ Lees voor V3-werk **alleen dit bestand en `docs/v3/OVERDRACHT.md`**. `DECISIONS.
 
 ## Grenzen
 - `index.html` (V2.0.2, 41 MB, SHA256 `3aced3c3…`) blijft byte-gelijk; **nooit volledig lezen**. Zoek gericht (`grep -n`, `sed -n` met een bereik).
+- **Wijzig `src/v2/` of `assets/v2/`, nooit `index.html`.** `index.html` wordt gegenereerd met `node scripts/assemble-index.mjs` (pin in `src/v2/index.sha256`); `npm run lint` faalt als het afwijkt van de bron. Indeling: `docs/v3/STAP0_BRON.md`.
 - V3 is de presentatielaag in `scripts/v3/` en wordt alleen in de preview geïnjecteerd (`node scripts/build-v3-preview.mjs`). Acties lopen via de bestaande V2-knoppen en -functies.
 - Echte geometrie (geometriecheck 46/46); offline; toetsenbord, focus, verminderde beweging en contrast AA.
 - Geen merge, deploy of publicatie zonder akkoord van de eigenaar.

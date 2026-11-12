@@ -1,0 +1,31 @@
+<!doctype html><html lang="nl"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>NINO · La Grande Avventura · Topografie Italië</title>
+<style><!--@part:src/v2/styles/01-basis.css--></style>
+<style><!--@part:src/v2/styles/02-stabilisatie.css--></style><style><!--@part:src/v2/styles/03-lesbeloning.css--></style><style><!--@part:src/v2/styles/04-release-1-1-focus.css--></style><!-- BEGIN NINO MICRO ICONS -->
+<link rel="icon" type="image/png" sizes="16x16" href="<!--@asset:favicon-16.png-->">
+<link rel="icon" type="image/png" sizes="32x32" href="<!--@asset:favicon-32.png-->">
+<!-- END NINO MICRO ICONS -->
+<style>/* BEGIN NINO CPLUS */
+<!--@part:scripts/nino-cplus.css-->/* END NINO CPLUS */
+</style><style>/* BEGIN NINO V2 CSS */<!--@part:scripts/nino-v2.css--><!--@part:scripts/nino-profile.css--><!--@part:scripts/nino-moments.css--><!--@part:scripts/nino-exam-result.css-->/* END NINO V2 CSS */</style></head><body><!--@part:src/v2/markup/01-body-voor-kaart.html--><!--@part:src/v2/markup/02-kaart.svg.html--><!--@part:src/v2/markup/03-body-na-kaart.html--><script>
+<!--@part:scripts/learning-engine.js--></script>
+<script>
+<!--@part:scripts/route-engine.js--></script>
+<script>
+<!--@part:src/v2/scripts/02-nino-art.js--><!--@part:src/v2/scripts/03-pizza-reward.js-->// BEGIN NINO FEEDBACK
+<!--@part:scripts/nino-feedback.js-->// END NINO FEEDBACK
+<!--@part:src/v2/scripts/05-app-kern.js-->// BEGIN MAP HIT
+<!--@part:scripts/map-hit.js-->// END MAP HIT
+<!--@part:src/v2/scripts/07-app-rivieren.js-->// BEGIN NINO ART UI
+<!--@part:scripts/nino-art-ui.js-->// END NINO ART UI
+// BEGIN SCHOOLBLAD
+<!--@part:scripts/schoolblad.js-->// END SCHOOLBLAD
+// BEGIN DISCOVERY MAP
+window.TOPO_ATLAS_DATA={"terrain":"<!--@asset:discovery-map-terrain.webp-->","sha256":"c9130b73fe1e52800e2b85750e203491071f1c4835932afbeab207ea9ecfa0db","width":890,"height":1235};
+<!--@part:scripts/discovery-map.js-->// END DISCOVERY MAP
+// BEGIN FOCUS MODE
+<!--@part:scripts/focus-camera.js-->
+<!--@part:scripts/focus-mode.js-->// END FOCUS MODE
+sync();mode('route');
+document.getElementById('previewMap')?.remove();
+
+<!--@part:src/v2/scripts/13-nino-v2.js--></script></body></html>

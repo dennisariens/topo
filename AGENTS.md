@@ -1,3 +1,5 @@
+**Bron van `index.html`:** wijzig `src/v2/` of `assets/v2/`, nooit `index.html` direct. Draai daarna `node scripts/assemble-index.mjs` (controleert de pin `src/v2/index.sha256`; `--update-pin` voor een bedoelde wijziging). `npm run lint` faalt als `index.html` afwijkt van de bron. Indeling: `docs/v3/STAP0_BRON.md`.
+
 **V3-werk:** lees eerst `docs/v3/SPEC.md` (één pagina, de huidige waarheid) en `docs/v3/OVERDRACHT.md`. Lees `index.html` en `docs/DECISIONS.md` nooit volledig; zoek er gericht in.
 
 # Instructions for coding agents

@@ -1,0 +1,50 @@
+/* Release 1.1: retain Nino's artwork and palette, focus the existing route. */
+.routeSectionLabel{font-size:12px;font-weight:850;letter-spacing:.08em;text-transform:uppercase;color:#9a4e37;margin:4px 0 10px}
+#routeCards .routeCard:nth-child(n){transform:none;max-width:none;margin:0 0 15px}
+#routeCards .routeCard:after{display:none}
+.routeCard.spotlight{border-width:2px!important;padding:19px;background:#fff6e9}
+.routeCardTitle{display:flex;align-items:center;gap:8px;font-size:18px;line-height:1.3;margin:0 0 6px;color:inherit}
+.routeCardTitle .chapterIcon{width:24px;height:24px;flex:none;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+.routeCard.nextPreview{background:#faf6ec!important;border-style:dashed!important;box-shadow:none;padding:13px 16px}
+.routeCard.locked .routeSteps{display:none}
+.routeCard.locked .routeBadge{color:#435d53;background:#e2e7df}
+.routeCard.nextPreview .routeCardTitle{font-size:16px}.routeCard.nextPreview .micro{margin-bottom:0}
+.routeCollection{margin:12px 0;border:1px solid #dedccc;border-radius:15px;background:#fffdf8}
+.routeCollection>summary,.mapCaption>summary,.mastery>summary{cursor:pointer;min-height:44px;padding:11px 14px;font-weight:750;line-height:1.4}
+.routeCollection>summary:focus-visible,.mapCaption>summary:focus-visible,.mastery>summary:focus-visible{outline:3px solid #147486;outline-offset:2px;border-radius:10px}
+.routeCollectionBody{padding:3px 12px 0;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
+#routeCards .routeCollection .routeCard{padding:12px;gap:10px;margin-bottom:10px;border-width:1px!important;box-shadow:none}
+.routeCollection .routeCardTitle{font-size:15px}.routeCollection .routeCard .routeBadge{width:38px;height:38px}.routeCollection .routeCard .routeBadge .routeGlyph{width:24px;height:24px}
+.routeCollection .routeSteps{grid-template-columns:1fr}.routeCollection .routeActions .button{width:100%}
+.journeyScreen .routeHero{margin-bottom:22px}.routeScene{height:clamp(155px,23vw,225px);margin-bottom:17px}
+.journeyScreen .routeHero h2{font-size:clamp(28px,4vw,38px)}
+.journeyScreen .routeHero .button{display:block;max-width:none;font-size:16px}
+.journeyScreen .routeHero .button.secondary{background:#fffcf6;color:#165e6c;border-color:#a9c3be;box-shadow:none;min-height:44px;font-size:14px;margin-top:10px}
+.journeyReward{margin-top:15px;padding:9px 12px}.journeyReward .pizzaWheel{width:46px;height:46px}.journeyReward .journeyScooter{height:47px;width:45px}
+.smartNote{color:#526f69;line-height:1.45}.routeHero .smartNote{margin-top:9px;margin-bottom:0;font-size:12px!important}
+.mastery{padding:0}.mastery>div{padding:0 14px 12px}.dailyGoal{margin-top:18px}
+.mapCaption{padding:0;font-size:12px;border-top:1px solid #e3e2d7}.mapCaption>summary{font-size:13px;color:#395b59}.mapCaption>p{padding:0 16px 13px;margin:0;line-height:1.6;max-width:78ch}
+#routeLessonIntro{font-size:13px;color:#526f69;margin:6px 0}.routeCard .routeBadge,.routeCard{transition:none}
+@media(max-width:600px){
+ header{flex-wrap:wrap;gap:10px;padding:14px 14px 10px}.brand{font-size:26px}.brand small{font-size:10px;letter-spacing:.1em}.stats{flex-basis:100%;flex-wrap:nowrap;gap:7px}.stat{display:flex;align-items:baseline;gap:6px;padding:4px 9px;border-radius:9px;font-size:11px}.stat strong{display:inline;font-size:13px}
+ body>nav.tabs{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:7px;padding:0 12px;margin-bottom:13px;overflow:visible}
+ body>nav.tabs .tab{min-width:0;white-space:normal;min-height:44px;padding:8px 5px;font-size:12px;line-height:1.25}
+ body>nav.tabs .tab[data-mode="route"]{grid-column:span 2;font-size:14px}
+ .journeyScreen{padding:12px}.routeScene{height:128px;margin-bottom:13px}.sceneStamp{font-size:9px}.journeyScreen .routeHero h2{font-size:29px}.journeyScreen .routeHero{margin-bottom:18px;padding-bottom:17px}
+ .routeHero p{line-height:1.4}.journeyScreen .routeHero .button{font-size:15px;min-height:48px}
+ .routeCard.spotlight{padding:14px;gap:11px}.routeSteps{grid-template-columns:1fr}.routeCardTitle{font-size:17px}
+ .routeCollectionBody{grid-template-columns:1fr}.routeCollection .routeCardTitle{font-size:15px}
+ .routeCollection>summary{font-size:13px}.routeCard.locked{gap:10px}.routeCard.locked .micro{font-size:12px}
+ .dailyGoal{padding:12px 14px}.mastery{margin-bottom:16px}#routeLessonIntro{font-size:12px}
+}
+@media print{.routeCollection{display:none!important}}
+/* BEGIN PIZZA REWARD CSS */
+:root{--pizza-board:url("<!--@asset:pizza-board-css.webp-->")}
+<!--@part:scripts/pizza-reward.css-->/* END PIZZA REWARD CSS */
+/* BEGIN NINO ART CSS */
+<!--@part:scripts/nino-art.css-->/* END NINO ART CSS */
+/* BEGIN DISCOVERY MAP */
+<!--@part:scripts/discovery-map.css-->/* END DISCOVERY MAP */
+/* BEGIN FOCUS MODE */
+<!--@part:scripts/focus-camera.css-->
+<!--@part:scripts/focus-mode.css-->/* END FOCUS MODE */

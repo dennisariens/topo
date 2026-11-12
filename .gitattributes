@@ -1,1 +1,3 @@
 *.pdf binary
+src/v2/** -text
+assets/v2/** binary

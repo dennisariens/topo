@@ -1,0 +1,456 @@
+{
+ "nino-art-css.webp": {
+  "mime": "image/webp",
+  "sha256": "0b83332392b90193eff04979fbc592df5bbc3e0ef3f19a16801d1d7dc822b2a1",
+  "bytes": 67658,
+  "uses": [
+   "src/v2/styles/02-stabilisatie.css"
+  ]
+ },
+ "pizza-board-css.webp": {
+  "mime": "image/webp",
+  "sha256": "e241b9408c866a5ad4aff787cbd1be7a74a23f4875d52359792d424ea5c5de9e",
+  "bytes": 96202,
+  "uses": [
+   "src/v2/styles/04-release-1-1-focus.css",
+   "src/v2/scripts/03-pizza-reward.js"
+  ]
+ },
+ "favicon-16.png": {
+  "mime": "image/png",
+  "sha256": "3a3e320851dbdd3c87210cba284aade1d95f8efdb0a677f82600c2b372272143",
+  "bytes": 138,
+  "uses": [
+   "src/v2/index.template.html"
+  ]
+ },
+ "favicon-32.png": {
+  "mime": "image/png",
+  "sha256": "3f737bc4f4910f16f7065f73fcfc9dff76b33718ee4f4ad7706b00a006aba1d9",
+  "bytes": 197,
+  "uses": [
+   "src/v2/index.template.html"
+  ]
+ },
+ "route-panorama.webp": {
+  "mime": "image/webp",
+  "sha256": "18befedac70a95876f5a620c78bd0a210920ff1de4b40d084190eb371ed8acb9",
+  "bytes": 173702,
+  "uses": [
+   "src/v2/markup/01-body-voor-kaart.html"
+  ]
+ },
+ "schoolblad-foto.jpg": {
+  "mime": "image/jpeg",
+  "sha256": "90c18b197234be71871809d51c898215977d253834c558082050080bd3d57fcc",
+  "bytes": 198891,
+  "uses": [
+   "src/v2/markup/01-body-voor-kaart.html"
+  ]
+ },
+ "nino-art-guide.webp": {
+  "mime": "image/webp",
+  "sha256": "13cb4bc888d62573dde1cfb6a6645da82c20180547354aab8f3557e99a691a2a",
+  "bytes": 223920,
+  "uses": [
+   "src/v2/scripts/02-nino-art.js"
+  ]
+ },
+ "nino-art-encourage.webp": {
+  "mime": "image/webp",
+  "sha256": "4ab8b1af4289ffd47dd9d2e8e102dfff68a53da97030741df1db16bc0889d3c5",
+  "bytes": 255360,
+  "uses": [
+   "src/v2/scripts/02-nino-art.js"
+  ]
+ },
+ "nino-art-success.webp": {
+  "mime": "image/webp",
+  "sha256": "e43124089abfa0878705c9f4c9389487c16b914c3579cff88d8532f64f6fa518",
+  "bytes": 255022,
+  "uses": [
+   "src/v2/scripts/02-nino-art.js"
+  ]
+ },
+ "nino-art-gold.webp": {
+  "mime": "image/webp",
+  "sha256": "b735c2dd44003c62969adcf4d11b446ec432f86a2f2f27f56aa6281b2ce435f2",
+  "bytes": 229344,
+  "uses": [
+   "src/v2/scripts/02-nino-art.js"
+  ]
+ },
+ "nino-art-welcome.webp": {
+  "mime": "image/webp",
+  "sha256": "89966925cb2f277e89bdd53eb22a5a328a26c54c1f52ccf9a91a3b263bd4a568",
+  "bytes": 247918,
+  "uses": [
+   "src/v2/scripts/02-nino-art.js",
+   "src/v2/scripts/13-nino-v2.js"
+  ]
+ },
+ "nino-art-arrival.webp": {
+  "mime": "image/webp",
+  "sha256": "ff1b6908fcbcfd81098232b9e108ad2b32826c5914a2c3414465385b05fcbd78",
+  "bytes": 297324,
+  "uses": [
+   "src/v2/scripts/02-nino-art.js",
+   "src/v2/scripts/13-nino-v2.js"
+  ]
+ },
+ "pizza-reward-margherita.webp": {
+  "mime": "image/webp",
+  "sha256": "b3fa5fbdd2eea780186742b802d0f9acf996842365b18f2f734a78e55011829f",
+  "bytes": 250164,
+  "uses": [
+   "src/v2/scripts/03-pizza-reward.js"
+  ]
+ },
+ "pizza-reward-salami.webp": {
+  "mime": "image/webp",
+  "sha256": "ff782e287391c4e707b8b967327bc13277f456776e30d48d02eeeb169cf587ed",
+  "bytes": 275088,
+  "uses": [
+   "src/v2/scripts/03-pizza-reward.js"
+  ]
+ },
+ "pizza-reward-quattro-formaggi.webp": {
+  "mime": "image/webp",
+  "sha256": "e99a7e0d6ed2fab32898074b4a375f35eff3bb0ffac715667434cb5d45d1d795",
+  "bytes": 234570,
+  "uses": [
+   "src/v2/scripts/03-pizza-reward.js"
+  ]
+ },
+ "pizza-reward-box-margherita.webp": {
+  "mime": "image/webp",
+  "sha256": "742a5d39843dc84b6a8b781678edcb3ce6643a60bde1c8ae67c1e0567125f7d7",
+  "bytes": 223780,
+  "uses": [
+   "src/v2/scripts/03-pizza-reward.js",
+   "src/v2/scripts/13-nino-v2.js"
+  ]
+ },
+ "pizza-reward-box-salami.webp": {
+  "mime": "image/webp",
+  "sha256": "9f3795b47f6b60a975f3f83af6edb07981739cc2a55c0d4de1b7cb66f2b184aa",
+  "bytes": 285172,
+  "uses": [
+   "src/v2/scripts/03-pizza-reward.js",
+   "src/v2/scripts/13-nino-v2.js"
+  ]
+ },
+ "pizza-reward-box-quattro-formaggi.webp": {
+  "mime": "image/webp",
+  "sha256": "1b317d38980873756276ffaedeca3843a30c386233e83ecf846a1563f99903b2",
+  "bytes": 209562,
+  "uses": [
+   "src/v2/scripts/03-pizza-reward.js",
+   "src/v2/scripts/13-nino-v2.js"
+  ]
+ },
+ "discovery-map-terrain.webp": {
+  "mime": "image/webp",
+  "sha256": "c9130b73fe1e52800e2b85750e203491071f1c4835932afbeab207ea9ecfa0db",
+  "bytes": 59152,
+  "uses": [
+   "src/v2/index.template.html"
+  ]
+ },
+ "nino-v2-cover.webp": {
+  "mime": "image/webp",
+  "sha256": "8901f57c74feb6d81fea23cb7b216ef403b982e8bdf66f1c89ea83eca15add44",
+  "bytes": 1528760,
+  "uses": [
+   "src/v2/scripts/13-nino-v2.js"
+  ]
+ },
+ "nino-v2-travel.webp": {
+  "mime": "image/webp",
+  "sha256": "d12e2738fbbbfd05f174ab5af8d555f22fc4505a4c57fb72f28020096dc7a424",
+  "bytes": 236836,
+  "uses": [
+   "src/v2/scripts/13-nino-v2.js"
+  ]
+ },
+ "nino-v2-chapter0.webp": {
+  "mime": "image/webp",
+  "sha256": "337e02ba2c1ecb909d9e1f9921070492e575c64e6f255733b5837c817fa42c11",
+  "bytes": 108690,
+  "uses": [
+   "src/v2/scripts/13-nino-v2.js"
+  ]
+ },
+ "nino-v2-chapter1.webp": {
+  "mime": "image/webp",
+  "sha256": "f9c76c2c0926d31838abc82063a4e866546e0c5b49c4c75cf68ac3d1fb739589",
+  "bytes": 104694,
+  "uses": [
+   "src/v2/scripts/13-nino-v2.js"
+  ]
+ },
+ "nino-v2-chapter2.webp": {
+  "mime": "image/webp",
+  "sha256": "1801146a77b15f4e7b57b3e8a543244b55e37f828b57f02bf83dd1636f034b63",
+  "bytes": 109932,
+  "uses": [
+   "src/v2/scripts/13-nino-v2.js"
+  ]
+ },
+ "nino-v2-chapter3.webp": {
+  "mime": "image/webp",
+  "sha256": "125a496d4c65e3008c5b25606048b087a8d1678dfe551f3d7b2d256a33de1526",
+  "bytes": 124022,
+  "uses": [
+   "src/v2/scripts/13-nino-v2.js"
+  ]
+ },
+ "nino-v2-chapter4.webp": {
+  "mime": "image/webp",
+  "sha256": "f1ca42b2a08c2586ef601a1d4e6174a1996bdeb95a64c0b8fadabafbcb2fe9f0",
+  "bytes": 127238,
+  "uses": [
+   "src/v2/scripts/13-nino-v2.js"
+  ]
+ },
+ "nino-v2-chapter5.webp": {
+  "mime": "image/webp",
+  "sha256": "a6b8def0c138109385f96de64c02026d11dd19bea9ffa9ad6e31fca5fab0b7c3",
+  "bytes": 121680,
+  "uses": [
+   "src/v2/scripts/13-nino-v2.js"
+  ]
+ },
+ "nino-v2-chapter6.webp": {
+  "mime": "image/webp",
+  "sha256": "52efca255b21936d51c7c86868d438005393b2fac66a7ae8c2f05daaa593c232",
+  "bytes": 119992,
+  "uses": [
+   "src/v2/scripts/13-nino-v2.js"
+  ]
+ },
+ "nino-v2-chapter7.webp": {
+  "mime": "image/webp",
+  "sha256": "2885eeb2d2b4d2479895761457968768d7046e65958ed6df0fd1ee056ee88a14",
+  "bytes": 127734,
+  "uses": [
+   "src/v2/scripts/13-nino-v2.js"
+  ]
+ },
+ "nino-v2-chapter8.webp": {
+  "mime": "image/webp",
+  "sha256": "c616f7524a546ed77e59347cbf8335be9013e687483fa689e00b1c26ab7a0f79",
+  "bytes": 101332,
+  "uses": [
+   "src/v2/scripts/13-nino-v2.js"
+  ]
+ },
+ "nino-v2-chapter9.webp": {
+  "mime": "image/webp",
+  "sha256": "66139c1119925b9584aaa0de0be9472ff2c0272235ac019bf5316be7c2325f0f",
+  "bytes": 117930,
+  "uses": [
+   "src/v2/scripts/13-nino-v2.js"
+  ]
+ },
+ "nino-v2-chapter10.webp": {
+  "mime": "image/webp",
+  "sha256": "c08a48c15a9e64abe11e6f839b160c0d24961a09ea2d627dd43277575b368ff2",
+  "bytes": 136506,
+  "uses": [
+   "src/v2/scripts/13-nino-v2.js"
+  ]
+ },
+ "nino-v2-stamp0.webp": {
+  "mime": "image/webp",
+  "sha256": "de4d32cf277a806fad8fc343451f574ef7a9d0a482cc2b8bb7e5c24c3fc47125",
+  "bytes": 358350,
+  "uses": [
+   "src/v2/scripts/13-nino-v2.js"
+  ]
+ },
+ "nino-v2-stamp1.webp": {
+  "mime": "image/webp",
+  "sha256": "b34ff0780ebd442080f53d79c13d63bb89d45cb4ad961ec582a902758fec8628",
+  "bytes": 242356,
+  "uses": [
+   "src/v2/scripts/13-nino-v2.js"
+  ]
+ },
+ "nino-v2-stamp2.webp": {
+  "mime": "image/webp",
+  "sha256": "b00fb30fc5ebfedcdec8970fa78bbba48b6d1b52288d5aa440a85dd6b9dfcae5",
+  "bytes": 392392,
+  "uses": [
+   "src/v2/scripts/13-nino-v2.js"
+  ]
+ },
+ "nino-v2-stamp3.webp": {
+  "mime": "image/webp",
+  "sha256": "b7cf9eeb47dd88028ce8da8789fd6f042c0998df182b43bd4996453148dc4fac",
+  "bytes": 338984,
+  "uses": [
+   "src/v2/scripts/13-nino-v2.js"
+  ]
+ },
+ "nino-v2-stamp4.webp": {
+  "mime": "image/webp",
+  "sha256": "b9dbc0d44b4a69fdd3ce3bdafbcdee761d059203c9b73013a535087138c2f93a",
+  "bytes": 852496,
+  "uses": [
+   "src/v2/scripts/13-nino-v2.js"
+  ]
+ },
+ "nino-v2-stamp5.webp": {
+  "mime": "image/webp",
+  "sha256": "4d989d4b6147acd3b43ff11ee068123eea643ec5d2cc530d7fa3826dd4430c98",
+  "bytes": 363386,
+  "uses": [
+   "src/v2/scripts/13-nino-v2.js"
+  ]
+ },
+ "nino-v2-stamp6.webp": {
+  "mime": "image/webp",
+  "sha256": "1794a3ee574294278b5147aefd069d0904d6d356c3e350cac56f302c497c1a6f",
+  "bytes": 314476,
+  "uses": [
+   "src/v2/scripts/13-nino-v2.js"
+  ]
+ },
+ "nino-v2-stamp7.webp": {
+  "mime": "image/webp",
+  "sha256": "042bd1d301006582b6d91b98ae3132b81a8fb40cbc7a69aaac936fee62f82403",
+  "bytes": 257492,
+  "uses": [
+   "src/v2/scripts/13-nino-v2.js"
+  ]
+ },
+ "nino-v2-stamp8.webp": {
+  "mime": "image/webp",
+  "sha256": "9032c4ff1ec9083b8ddf4a5dc4107e448d9578675fec4ab62221dc13310d38cf",
+  "bytes": 233276,
+  "uses": [
+   "src/v2/scripts/13-nino-v2.js"
+  ]
+ },
+ "nino-v2-stamp9.webp": {
+  "mime": "image/webp",
+  "sha256": "686b3f091f933dcec54a9710405af24236bf8921cdeca316cd7403c806a0e34f",
+  "bytes": 246464,
+  "uses": [
+   "src/v2/scripts/13-nino-v2.js"
+  ]
+ },
+ "nino-v2-stamp10.webp": {
+  "mime": "image/webp",
+  "sha256": "063a643d0d16436e0be7fdacd39316d0bf1bd99427137bf284c027b0610b63b7",
+  "bytes": 375622,
+  "uses": [
+   "src/v2/scripts/13-nino-v2.js"
+  ]
+ },
+ "nino-v2-chaptergold.webp": {
+  "mime": "image/webp",
+  "sha256": "54224a2edf4e266bf63b374fbb1ecc988c1b6aa08a6904abf045c2a159916772",
+  "bytes": 7074,
+  "uses": [
+   "src/v2/scripts/13-nino-v2.js"
+  ]
+ },
+ "nino-v2-finalgold.webp": {
+  "mime": "image/webp",
+  "sha256": "63b8e838caff5d32ee1c890f0b03cf2479b4c3d37cb1d1950f255d991fcdfb91",
+  "bytes": 364730,
+  "uses": [
+   "src/v2/scripts/13-nino-v2.js"
+  ]
+ },
+ "nino-v2-arrival.webp": {
+  "mime": "image/webp",
+  "sha256": "cc3cd8efb2075698df1c50c8b82c833d4032585b43ea208d8fa86e0d7b336be4",
+  "bytes": 1599446,
+  "uses": [
+   "src/v2/scripts/13-nino-v2.js"
+  ]
+ },
+ "nino-v2-favorite0.webp": {
+  "mime": "image/webp",
+  "sha256": "75b08c68393c7fd281c6a0a97fc0b3f0f714b2fb0b44a1264f882e3ad68b04c2",
+  "bytes": 166414,
+  "uses": [
+   "src/v2/scripts/13-nino-v2.js"
+  ]
+ },
+ "nino-v2-favorite1.webp": {
+  "mime": "image/webp",
+  "sha256": "61e86fd6f0337d02749a25e9e69fb8c4a34312d68e16eaf2284b8089eedfabb6",
+  "bytes": 192292,
+  "uses": [
+   "src/v2/scripts/13-nino-v2.js"
+  ]
+ },
+ "nino-v2-favorite2.webp": {
+  "mime": "image/webp",
+  "sha256": "cd5e75889d7cc97ce67cd9d411fdb24102b46795718c780d79792aae48d00ab1",
+  "bytes": 152090,
+  "uses": [
+   "src/v2/scripts/13-nino-v2.js"
+  ]
+ },
+ "nino-v2-sicilia.webp": {
+  "mime": "image/webp",
+  "sha256": "8c7e1ef3cd72816e41656eeee5c142413b1259ac211b313b55b50458c35ef6ae",
+  "bytes": 2515504,
+  "uses": [
+   "src/v2/scripts/13-nino-v2.js"
+  ]
+ },
+ "nino-v2-sardegna.webp": {
+  "mime": "image/webp",
+  "sha256": "9e350e91c1a2f6f172bc0aa12c41a0212f78d6bc661ec4c4905c1105235252b6",
+  "bytes": 2683314,
+  "uses": [
+   "src/v2/scripts/13-nino-v2.js"
+  ]
+ },
+ "nino-v2-napoli.webp": {
+  "mime": "image/webp",
+  "sha256": "819a3d3d1de50d5fb78d67ef7cbdbe9bafb6620cfa144e57842813a8df70ee94",
+  "bytes": 2449680,
+  "uses": [
+   "src/v2/scripts/13-nino-v2.js"
+  ]
+ },
+ "nino-v2-reverse.webp": {
+  "mime": "image/webp",
+  "sha256": "a6c9fbb31f92dcfe05ea0297bd77d946af9f14bbd8d13b8b92c34b7f970262df",
+  "bytes": 2180096,
+  "uses": [
+   "src/v2/scripts/13-nino-v2.js"
+  ]
+ },
+ "nino-v2-venezia.webp": {
+  "mime": "image/webp",
+  "sha256": "45902f75dcb6e5c8185190a707ab03d9e422aed45639a711ccc14618647e2e03",
+  "bytes": 2341994,
+  "uses": [
+   "src/v2/scripts/13-nino-v2.js"
+  ]
+ },
+ "nino-v2-folioleft.webp": {
+  "mime": "image/webp",
+  "sha256": "d4862f0f5e34631c4e483761f933baa92bd85dee05b7ea0d581a7eb29be668a2",
+  "bytes": 1909020,
+  "uses": [
+   "src/v2/scripts/13-nino-v2.js"
+  ]
+ },
+ "nino-v2-folioright.webp": {
+  "mime": "image/webp",
+  "sha256": "3ce3133d483bec940e961a5a920a30bbb00e16da3ebb2445966fc83e3f210b16",
+  "bytes": 2099822,
+  "uses": [
+   "src/v2/scripts/13-nino-v2.js"
+  ]
+ }
+}

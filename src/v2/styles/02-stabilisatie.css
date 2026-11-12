@@ -1,0 +1,155 @@
+
+/* Stabilization: a true-size Vatican mark, a separate generous selector, and quiet rewards. */
+.feature.microstate{fill:#934832;stroke:#fff;stroke-width:1.2}.activeTarget.feature.microstate{stroke-width:2;filter:drop-shadow(0 0 6px #df7b38)}
+.microHit{fill:transparent;stroke:transparent;stroke-width:22;cursor:zoom-in;pointer-events:all}
+.microHit:focus-visible{stroke:#067b8b;stroke-opacity:.35;outline:none}
+.romeLens{position:absolute;left:52.5%;top:47.5%;z-index:5;width:min(245px,79vw);padding:10px 12px;background:#fffdf6;border:2px solid #3a6671;border-radius:16px;box-shadow:0 12px 30px #18313c44;transform:translate(-50%,-105%);font-size:13px}
+.romeLens strong{display:block;margin-bottom:5px}
+.lensSketch{position:relative;height:53px;background:#f6ddb0;border-radius:9px;margin:6px 0 9px;overflow:hidden}
+.lensSketch:before{content:'Rome';position:absolute;left:58%;top:20px;color:#683e32;font-weight:750}
+.lensRome,.lensVatican{position:absolute;display:block;border-radius:100%;background:#a44336;border:2px solid white}
+.lensRome{width:12px;height:12px;left:56%;top:16px}.lensVatican{width:6px;height:6px;left:30%;top:27px}
+.lensSketch:after{content:'Vaticaanstad';position:absolute;left:4%;top:7px;color:#683e32;font-size:11px;font-weight:700}
+.lensActions{display:flex;gap:6px}.lensActions button{flex:1;min-height:42px;border-radius:9px;border:1px solid #b8c9c8;background:#fff;color:var(--ink);font-size:13px;font-weight:750}
+.lensActions button:hover,.lensActions button:focus-visible{background:#e8f6f3;outline:2px solid #087887}
+.rewardDetails{padding:7px 10px;margin:8px 0 12px;border-radius:11px;background:#fff8e9;font-size:13px;color:#5b513f}
+.rewardDetails strong{color:#29434a}.vespaRoute{margin-top:6px;display:flex;gap:7px;align-items:center}.vespa{display:inline-block;font-size:21px}
+.vespa.trip{animation:vespaTrip 1.4s ease-out 1}@keyframes vespaTrip{from{transform:translateX(-24px);opacity:.2}to{transform:translateX(0);opacity:1}}
+@media (prefers-reduced-motion:reduce){.vespa.trip{animation:none}.progress i{transition:none}}
+@media(max-width:600px){.romeLens{top:49%;transform:translate(-50%,-104%)}.lensActions button{min-height:48px}}
+.testSetup{display:grid;gap:5px;margin:-6px 0 18px}.testSetup label{font-weight:750;font-size:14px}.testSetup select{width:100%;min-height:44px;padding:8px 10px;border-radius:10px;border:1px solid #b8c9c8;background:white;color:var(--ink)}.testStatus{font-size:13px;font-weight:750;color:#345b62;margin:4px 0 10px}.testSetup.hidden,.testStatus.hidden{display:none}
+/* Leerroute: calm progress, one primary next step. */
+.routeHero{padding:19px;border-radius:17px;background:#eaf4ee;border:1px solid #c7dfd0;margin-bottom:18px}
+.routeHero h2{margin:7px 0;font-size:26px;line-height:1.1;letter-spacing:-.04em}.routeHero p{font-size:14px;margin:10px 0}
+.routeHero .button{width:100%;margin-top:12px}.routeHero .progress{margin:12px 0;background:#d0e3d5}.routeHero .progress i{background:#368963}
+.routeCard{display:flex;gap:11px;padding:15px 0;border-top:1px solid #e4e9e4}.routeCard:first-child{border-top:0}
+.routeBadge{flex:none;display:grid;place-items:center;width:35px;height:35px;border-radius:50%;background:#e9f2ef;color:#216f51;font-weight:900;font-size:20px}
+.routeCard.gold .routeBadge{background:#ffe4a0;color:#86610a}.routeCard.locked .routeBadge{background:#f0f1ed;font-size:15px}.routeCard.locked{color:#64726b}
+.routeCardContent{min-width:0;flex:1}.routeCardContent>strong{font-size:15px}.routeCardContent p{margin:4px 0 8px}.routeCard .button{font-size:13px;padding:8px 10px}
+.routeSteps{display:grid;grid-template-columns:1fr 1fr;gap:5px;margin:10px 0;font-size:11px}.routeSteps span{padding:5px;border-radius:6px;background:#f3f4f1;color:#64726b}.routeSteps .done{color:#1b694c;background:#eaf4ee}.routeSteps .current{font-weight:800;color:#173c34;border:1px solid #79af94}
+.routeActions{display:flex;gap:6px;flex-wrap:wrap}.goldButton{background:#fff5d7;border-color:#d8b65b;color:#70520c}.routeHint{font-size:12px;color:#60747b;margin:13px 0}.routeLessonBar{border-bottom:1px solid #dde7e0;padding-bottom:13px;margin-bottom:14px}.routeLessonBar strong{display:block;margin:10px 0 4px}.routeLessonBar .progress{margin-top:8px;height:7px}.routeLessonBar .button{font-size:12px;padding:5px 9px}
+.routeMapDock{display:none;background:#fffdf6;border-bottom:1px solid #dddcca;padding:12px 15px;position:sticky;top:0;z-index:8}.routeMapDock strong{display:block;font-size:18px;line-height:1.2}.routeDockFeedback{font-size:13px;margin:7px 0}.routeDockFeedback.answered{font-weight:750;color:#285e4c}.routeDockInput{display:flex;gap:6px;margin:8px 0}.routeDockInput input{min-width:0;flex:1;border:1px solid #aec6b7;padding:10px;border-radius:9px;font:inherit}.routeMapDock .button{font-size:13px}.routeMapDock input:disabled{opacity:.8}
+.storageNote{font-size:12px;padding:9px;border:1px solid #d9b362;border-radius:8px;background:#fff8e8;color:#73551b;margin:10px 0}
+.lensSketch{height:104px;background:#f4eddc}.lensSketch:before{content:'ROME · STAD';z-index:2;left:48%;top:65px;font-size:12px;color:#745744}.lensSketch:after{content:'Vaticaanstad';z-index:3;left:9%;top:14px;font-size:11px;color:#593f78}.lensRome{width:90%;height:88px;left:5%;top:8px;border-radius:48%;background:#f4d29f;border:1px dashed #ac8050}.lensVatican{z-index:3;width:9px;height:9px;left:31%;top:38px;background:#7858a3;border:2px solid white}.lensNote{font-size:12px;line-height:1.35;margin:6px 0}.lensScale{display:block;font-size:10px;color:#63716b;margin-bottom:7px}.feature.microstate[data-id="area-o"]{fill:#7858a3}
+@media(max-width:950px){.routeLessonLayout .routeMapDock{display:block}.routeLessonLayout .panel #quiz>:not(#routeLessonBar){display:none!important}.routeLessonLayout .panel{padding-bottom:4px}.routeLessonLayout .tabs{margin-bottom:12px}.routeLessonLayout .routeLessonBar{margin-bottom:0}.routeLessonLayout .mapCard{overflow:visible}.routeLessonLayout .mapArea{overflow:hidden}.routeLessonLayout .mapTools{display:none}.routeLessonLayout .mapCaption{font-size:11px}.routeHero{padding:15px}}
+@media print{.routeMapDock,.romeLens{display:none!important}}
+
+
+/* The journey is a dedicated screen; the map returns during a lesson. */
+body>nav.tabs{max-width:1390px;margin:0 auto 18px;padding:0 28px;gap:8px}
+body>nav.tabs .tab{background:#fffdf8;border-color:#d8dfd4}
+body>nav.tabs .tab.active{background:#155e4a;border-color:#155e4a;color:#fff;box-shadow:0 3px 0 #0c4938}
+.layout.routeHomeLayout{display:block;max-width:960px}
+.routeHomeLayout>.mapCard,.routeHomeLayout>.panel{display:none}
+.journeyScreen{max-width:780px;margin:auto;background:#fffcf6;border:1px solid #e1dfd2;border-radius:28px;box-shadow:0 16px 46px #24433114;padding:26px clamp(15px,5vw,46px)}
+.journeyScreen.hidden{display:none}
+.journeyScreen .routeHero{max-width:660px;margin:0 auto 32px;padding:27px;background:linear-gradient(125deg,#e2f4e9,#f4f8e9);border-color:#bdd8c3;border-radius:24px}
+.journeyScreen .routeHero h2{font-size:clamp(28px,5vw,43px);line-height:1.06;margin:8px 0 12px;color:#174e3e}
+.journeyScreen .routeHero .eyebrow{color:#146552}
+.journeyScreen .routeHero .button{max-width:380px;background:#237e5d;color:#fff;box-shadow:0 4px 0 #15523d;border-color:#237e5d;font-size:17px;min-height:52px}
+.journeyScreen .routeHero #routeReview{background:#fff;color:#185b49;border-color:#a2cbb0;box-shadow:none}
+.journeyReward{display:flex;align-items:center;gap:13px;margin:21px 0 7px;padding:12px 14px;border:1px solid #e6d6ad;background:#fffdf5;border-radius:16px}
+.journeyReward>div:nth-child(2){display:grid;gap:1px;flex:1;min-width:0}
+.journeyReward b{color:#463915}.journeyReward span{font-size:13px;color:#706550}
+.pizzaWheel{display:grid;place-items:center;width:51px;height:51px;border-radius:50%;font-size:27px;background:conic-gradient(#efa84d calc(var(--slices,0) * 12.5%),#eee7d6 0)}
+.journeyScooter{font-size:31px}.journeyStops{font-size:13px;color:#496b56}
+#routeCards{max-width:650px;margin:auto;position:relative}
+.routeCard{position:relative;max-width:490px;margin:0 auto 30px;display:flex;gap:16px;padding:18px;border:2px solid #d1dfcf!important;border-radius:21px;background:#f5faf2;box-shadow:0 5px 0 #d4e2d0}
+.routeCard:nth-child(even){transform:translateX(min(8vw,56px))}
+.routeCard:nth-child(odd){transform:translateX(max(-8vw,-56px))}
+.routeCard:not(:last-child):after{content:'';position:absolute;top:100%;left:48%;height:30px;border-left:4px dotted #b4cbbc}
+.routeCard.current{border-color:#55ad77!important;background:#effaf0;box-shadow:0 5px 0 #a6d0ab}
+.routeCard.complete{background:#f0f9f4}.routeCard.gold{border-color:#e2b552!important;background:#fff8e7;box-shadow:0 5px 0 #e9d399}
+.routeCard.locked{background:#f3f3ef;border-color:#e0e2db!important;box-shadow:none;color:#57645e}
+.routeCard .routeBadge{width:48px;height:48px;background:#d2ebd5;color:#136547;box-shadow:0 3px 0 #a8c8a9}
+.routeCard.current .routeBadge{background:#23865c;color:#fff;box-shadow:0 3px 0 #14553c}
+.routeCard.gold .routeBadge{background:#ffdf84;box-shadow:0 3px 0 #d5b351}
+.routeCard.locked .routeBadge{background:#e2e5e1;box-shadow:none}
+.routeCardContent>strong{font-size:18px}.routeCardContent p{margin:2px 0 10px}
+.routeSteps{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:7px;margin:10px 0}
+.routeStep{padding:8px 6px;min-height:46px;border:1px solid #c9ddce;border-radius:12px;background:#fff;color:#22533f;font-size:12px;font-weight:750;text-align:left;cursor:pointer}
+.routeStep.done{background:#e0f2e6;border-color:#a8d5b6}.routeStep.current{background:#26885f;color:white;border-color:#1c7452;box-shadow:0 3px 0 #115539}
+.routeStep.locked{color:#4c6257;background:#eceeeb;border-color:#e1e5df;cursor:default;opacity:1}
+.routeStep:focus-visible,.routeCard .button:focus-visible,.tab:focus-visible{outline:3px solid #de9e37;outline-offset:3px}
+.journeyScreen .routeHint,.journeyScreen #routeReward,.journeyScreen #routeReset{display:block;max-width:630px;margin:12px auto}
+.journeyScreen .routeHint{font-size:13px}.journeyScreen #routeReward{font-size:14px;color:#305d48}
+@media(max-width:600px){body>nav.tabs{padding:0 12px;margin-bottom:12px;flex-wrap:nowrap;overflow-x:auto;scrollbar-width:thin}body>nav.tabs .tab{white-space:nowrap;font-size:13px;padding:9px 11px;flex:none}.layout.routeHomeLayout{padding:0 9px 18px}.journeyScreen{border-radius:19px;padding:15px 12px}.journeyScreen .routeHero{padding:18px;margin-bottom:26px}.journeyScreen .routeHero .button{width:100%}.routeCard:nth-child(n){transform:none;margin-bottom:21px}.routeCard{padding:12px;gap:9px}.routeCardContent>strong{font-size:16px}.routeSteps{gap:5px}.routeStep{font-size:11px;min-height:45px;padding:6px 4px}.routeCard .routeBadge{width:38px;height:38px;font-size:19px}.journeyReward{padding:9px}.journeyScooter{font-size:24px}}
+@media print{body>nav.tabs,.journeyScreen{display:none!important}.layout.routeHomeLayout>.mapCard{display:block}}
+
+/* Original Topo artwork: scenic Vespa route, icon family and eight earned pizza wedges. */
+.journeyScreen .routeHero{padding:0 0 22px;overflow:hidden;background:#f2f8ec}
+.routeScene{height:clamp(140px,25vw,210px);position:relative;background:#184e49;margin-bottom:22px}
+.routeScene>svg{width:100%;height:100%;display:block}
+.sceneStamp{position:absolute;top:14px;left:17px;padding:5px 9px;border-radius:6px;background:#f7e9c9ed;color:#315a44;font-size:11px;letter-spacing:.16em;font-weight:900}
+.journeyScreen .routeHero>.eyebrow,.journeyScreen .routeHero>h2,.journeyScreen .routeHero>p,.journeyScreen .routeHero>strong,.journeyScreen .routeHero>.journeyReward,.journeyScreen .routeHero>.journeyStops,.journeyScreen .routeHero>.progress,.journeyScreen .routeHero>.button{margin-left:clamp(16px,4vw,28px);margin-right:clamp(16px,4vw,28px)}
+.journeyScreen .routeHero>.button{width:calc(100% - clamp(32px,8vw,56px))}
+.pizzaWheel{width:56px;height:56px;flex:none;display:grid;place-items:center;background:#f8ecdb;border-radius:50%;border:3px solid #e5ad61;box-shadow:0 2px 0 #bd894e}
+.pizzaWheel svg{display:block;width:100%;height:100%;overflow:visible}
+.pizzaWheel .wheelSlice{fill:#efeadf;stroke:#b58e64;stroke-width:1.1;transition:fill .25s ease}
+.pizzaWheel .wheelSlice.earned{fill:#ee8c56}
+.pizzaWheel .wheelCenter{fill:#f5d38d;stroke:#b68459;stroke-width:1.2}
+.journeyScooter svg{width:54px;height:38px;fill:none;stroke:#286951;stroke-width:3;stroke-linecap:round;stroke-linejoin:round}
+.routeCard .routeBadge .routeGlyph{width:28px;height:28px;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+.routeCard.current .routeBadge .routeGlyph{stroke:#fff}
+.routeCard.gold .routeBadge{position:relative}
+.routeCard.gold .routeBadge:after{content:'★';position:absolute;top:-10px;right:-9px;background:#ffd473;color:#7b530d;border-radius:50%;font-size:14px;padding:1px 5px;box-shadow:0 2px 0 #d8ae5a}
+.routeCard.complete:not(.gold) .routeBadge:after{content:'✓';position:absolute;transform:translate(17px,-18px);background:#278966;border:2px solid white;color:#fff;border-radius:50%;font-size:12px;padding:0 4px}
+.routeStep{display:flex;align-items:center;gap:6px}
+.routeStep .routeGlyph{flex:none;width:17px;height:17px;fill:none;stroke:currentColor;stroke-width:2.2;stroke-linecap:round;stroke-linejoin:round}
+.routeCard.locked .routeGlyph,.routeStep.locked .routeGlyph{opacity:.75}
+.routeCard:not(.locked) .routeBadge,.routeStep.current{transition:transform .18s,box-shadow .18s}
+.routeStep.current:hover{transform:translateY(-2px);box-shadow:0 5px 0 #115539}
+.journeyScreen .routeHint{line-height:1.5}
+@media(max-width:600px){.routeScene{height:147px}.sceneStamp{font-size:9px;top:9px;left:9px}.routeCard .routeBadge .routeGlyph{width:22px;height:22px}.routeStep .routeGlyph{width:15px;height:15px}.journeyScooter svg{width:42px}.journeyReward{gap:7px}.journeyScreen .routeHero{padding:0 0 17px}}
+@media(prefers-reduced-motion:reduce){.pizzaWheel .wheelSlice,.routeCard .routeBadge,.routeStep.current{transition:none}}
+
+#pizzaRow{display:flex;align-items:center;gap:12px;letter-spacing:0;font-size:19px;padding:8px 0}
+#pizzaRow .pizzaWheel{width:47px;height:47px}
+#pizzaRow strong{font-size:23px;color:#6a432a}
+.vespaRoute .vespa{display:grid;place-items:center;width:42px;height:29px}
+.vespaRoute .vespa svg{width:42px;height:29px;fill:none;stroke:#22654f;stroke-width:3;stroke-linecap:round;stroke-linejoin:round}
+
+/* Nino is an original illustrated guide; scenery never replaces map geometry. */
+:root{--nino-art:url("<!--@asset:nino-art-css.webp-->");--topo-sea:#0a788c;--topo-coral:#d96349;--topo-sun:#f2bc65}
+body{background:#f8f3e9}
+header .brandWrap{display:flex;align-items:center;gap:10px;min-width:0}
+header .brandMark{width:58px;height:58px;flex:none;border-radius:17px;background-color:#e4eccc;background-image:var(--nino-art);background-repeat:no-repeat;background-size:136px auto;background-position:52% -4px;border:2px solid #e6d8bd;box-shadow:0 3px 0 #dac49f}
+header .brand small{color:#ae573b}
+.journeyScreen{background:#fffcf6;border-color:#e8dac3}
+.journeyScreen .routeHero{background:#fff7eb;border-color:#e8d2b1}
+.journeyScreen .routeHero h2{color:#214c4b}
+.journeyScreen .routeHero .eyebrow{color:#b85d41}
+.journeyScreen .routeHero .button{background:#126b7d;color:white;border-color:#126b7d;box-shadow:0 4px 0 #0a5260}
+.journeyScreen .routeHero #routeReview{background:#fff;color:#105d6c;border-color:#95c5c7;box-shadow:none}
+.journeyScreen .routeHero .progress{background:#e5e7d8}
+.journeyScreen .routeHero .progress i{background:#d76347}
+.routeScene{height:clamp(185px,32vw,280px);background:#cead81}
+.routeScene>img{width:100%;height:100%;display:block;object-fit:cover;object-position:center center}
+.sceneStamp{background:#184d52e8;color:#fff6e5;box-shadow:0 2px 10px #273d424d}
+.routeCard.current{border-color:#e39b75!important;background:#fff6e9;box-shadow:0 5px 0 #edc49e}
+.routeCard.current .routeBadge.ninoBadge{width:58px;height:58px;background-color:#dce9d8;background-image:var(--nino-art);background-repeat:no-repeat;background-size:142px auto;background-position:50% -1px;box-shadow:0 3px 0 #d7ad81;border-color:#f2ddc0}
+.routeStep.current{background:#147486;border-color:#0e6472;box-shadow:0 3px 0 #094c58}
+.routeStep.current:hover{box-shadow:0 5px 0 #094c58}
+.routeCard.complete .routeBadge{background:#d9eee3}
+.journeyScooter,.vespaRoute .vespa{width:55px;height:58px;display:block;flex:none;background-image:var(--nino-art);background-size:contain;background-repeat:no-repeat;background-position:center}
+.vespaRoute .vespa{width:44px;height:49px}
+.ninoLesson{display:flex;align-items:center;gap:10px;margin:10px 0 5px}
+.ninoLesson .ninoPortrait{width:48px;height:48px;flex:none;border-radius:50%;background-color:#e8e8d8;background-image:var(--nino-art);background-repeat:no-repeat;background-size:112px auto;background-position:51% -2px;border:2px solid #e6b674}
+.ninoCaption{display:block;color:#b45e43;font-size:11px;font-weight:850;text-transform:uppercase;letter-spacing:.1em}
+.ninoLesson strong{margin:0!important}
+.vespaTripToast{position:fixed;z-index:25;right:clamp(12px,4vw,36px);bottom:20px;display:flex;align-items:center;gap:8px;max-width:min(350px,calc(100vw - 24px));padding:9px 15px 9px 6px;border:2px solid #e4be83;border-radius:18px;background:#fff9e8;box-shadow:0 8px 28px #283b3955;color:#214a48;font-size:14px}
+.vespaTripToast.hidden{display:none}
+.ninoTrip{width:66px;height:70px;flex:none;background-image:var(--nino-art);background-position:center;background-size:contain;background-repeat:no-repeat}
+.vespaTripToast.riding .ninoTrip{animation:vespaTrip 1.4s ease-out 1}
+.journeyScreen .routeHint,.journeyStops{color:#526f69}
+@media(max-width:600px){.routeScene{height:176px}.routeScene>img{object-position:72% center}header .brandMark{width:43px;height:43px;background-size:102px auto;background-position:51% -2px;border-radius:12px}.routeCard.current .routeBadge.ninoBadge{width:41px;height:41px;background-size:105px auto}.journeyScooter{width:39px;height:45px}.ninoLesson .ninoPortrait{width:42px;height:42px}}
+@media(prefers-reduced-motion:reduce){.vespaTripToast.riding .ninoTrip{animation:none}}
+@media print{.vespaTripToast,header .brandMark{display:none!important}}
+
+/* The same guide and palette continue through free Learn, Point, Write and Test. */
+.panel,.mapCard{border-color:#e8d9c1;box-shadow:0 10px 30px #5b42210f}
+.tab.active,.button.primary{background:#145e6e;border-color:#145e6e;color:#fff}
+.tab:hover,.button:hover{border-color:#c77a57}
+.ninoCoach{display:flex;align-items:center;gap:10px;padding:8px 10px;margin:0 0 14px;border:1px solid #e9d4b3;border-radius:15px;background:#fff8ec;color:#415958;font-size:13px;font-weight:700;line-height:1.3}
+.ninoCoach .ninoPortrait{width:42px;height:42px;border-radius:50%;flex:none;background-color:#e6e9d7;background-image:var(--nino-art);background-size:98px auto;background-position:52% -2px;background-repeat:no-repeat;border:1px solid #dfc296}
+.ninoCoach.hidden{display:none}

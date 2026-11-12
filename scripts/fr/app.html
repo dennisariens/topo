@@ -1,0 +1,282 @@
+<!doctype html>
+<html lang="nl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<title>Topo Frankrijk · oefenkaart</title>
+<style>
+:root{--ink:#2A2440;--soft:#6c6683;--violet:#6a4fd6;--violet-l:#ece7ff;--good:#1f8a5b;--bad:#c2412d;--sea:#a9d1ea;--land:#ece6d8;--fr:#fffaf0;--line:#d9d3c4;--card:#fff}
+*{box-sizing:border-box}
+html,body{margin:0;height:100%}
+body{font:500 16px/1.35 -apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif;color:var(--ink);background:#f4f1ea;-webkit-text-size-adjust:100%}
+header{display:flex;align-items:center;gap:14px;padding:10px 18px;background:#fff;border-bottom:1px solid var(--line)}
+header img{width:46px;height:46px;border-radius:50%;object-fit:cover;background:#eee}
+header h1{margin:0;font-size:22px;font-weight:700}
+header small{display:block;color:var(--soft);font-size:13px;font-weight:500}
+.stats{margin-left:auto;display:flex;gap:8px}
+.stat{background:#f6f3fb;border-radius:10px;padding:5px 12px;text-align:center;min-width:64px}
+.stat b{display:block;font-size:19px}
+.stat span{font-size:12px;color:var(--soft)}
+nav{display:flex;gap:6px;padding:10px 18px 0;flex-wrap:wrap}
+nav button,.chip,.btn{font:inherit;font-weight:600;border:0;border-radius:12px;padding:11px 16px;min-height:44px;cursor:pointer;background:#fff;color:var(--ink);box-shadow:inset 0 0 0 1px var(--line)}
+nav button[aria-pressed=true]{background:var(--violet);color:#fff;box-shadow:none}
+main{display:grid;grid-template-columns:minmax(0,1fr) 360px;gap:16px;padding:12px 18px 18px;align-items:start}
+@media (max-width:950px){main{grid-template-columns:1fr}}
+.mapwrap{background:#fff;border-radius:16px;padding:8px;box-shadow:0 1px 3px #0001}
+svg{display:block;width:100%;height:auto;max-height:calc(100vh - 180px);touch-action:manipulation;user-select:none;-webkit-user-select:none}
+.panel{background:var(--card);border-radius:16px;padding:16px;box-shadow:0 1px 3px #0001;display:flex;flex-direction:column;gap:12px}
+label.sel{font-size:13px;color:var(--soft);font-weight:600}
+select{font:inherit;font-weight:600;width:100%;min-height:44px;border-radius:12px;border:1px solid var(--line);padding:8px 10px;background:#fff;color:var(--ink)}
+.prompt{font-size:15px;color:var(--soft)}
+.prompt b{display:block;font-size:30px;color:var(--ink);line-height:1.15;margin-top:2px}
+.fb{border-radius:12px;padding:10px 12px;font-weight:600;min-height:44px}
+.fb.good{background:#e5f5ec;color:var(--good)}
+.fb.bad{background:#fbe9e5;color:var(--bad)}
+.fb.info{background:var(--violet-l);color:var(--ink)}
+.btn.primary{background:var(--violet);color:#fff;box-shadow:none}
+.row{display:flex;gap:8px;flex-wrap:wrap}
+input[type=text]{font:inherit;font-size:20px;width:100%;min-height:48px;border-radius:12px;border:2px solid var(--line);padding:8px 12px;color:var(--ink)}
+input[type=text]:focus{outline:none;border-color:var(--violet)}
+ul.items{list-style:none;margin:0;padding:0;display:grid;gap:4px;max-height:52vh;overflow:auto}
+ul.items button{width:100%;text-align:left;font:inherit;font-weight:600;border:0;background:#f7f5f0;border-radius:10px;padding:10px 12px;min-height:44px;cursor:pointer;color:var(--ink);display:flex;justify-content:space-between;gap:8px}
+ul.items button[aria-current=true]{background:var(--violet);color:#fff}
+ul.items small{font-weight:500;opacity:.7}
+.progress{height:8px;background:#eee;border-radius:8px;overflow:hidden}
+.progress i{display:block;height:100%;background:var(--violet);width:0}
+.result b{font-size:52px;color:var(--violet)}
+.muted{color:var(--soft);font-size:13px}
+/* kaart */
+.sea{fill:var(--sea)}
+.ctx-land{fill:var(--land);stroke:#b9b1a0;stroke-width:.6}
+.fr{fill:var(--fr);stroke:#5d5647;stroke-width:1.1}
+.borders{fill:none;stroke:#b9b1a0;stroke-width:.6}
+.lakes{fill:var(--sea)}
+.ctx-rivers{fill:none;stroke:#9cc6e2;stroke-width:.7}
+.t-area{fill:transparent;stroke:none}
+.t-river{fill:none;stroke:#2f7fb8;stroke-width:1.8;stroke-linejoin:round;stroke-linecap:round}
+.t-city{fill:#1d1a14}
+.t-micro{fill:#1d1a14}
+.hl-area{fill:var(--violet);fill-opacity:.35;stroke:var(--violet);stroke-width:2}
+.hl-river{stroke:var(--violet);stroke-width:5}
+.hl-ring{fill:none;stroke:var(--violet);stroke-width:3}
+.ok-area{fill:var(--good);fill-opacity:.35;stroke:var(--good);stroke-width:2}
+.ok-river{stroke:var(--good);stroke-width:5}
+.ok-ring{fill:none;stroke:var(--good);stroke-width:3}
+.no-area{fill:var(--bad);fill-opacity:.25;stroke:var(--bad);stroke-width:1.5}
+.no-river{stroke:var(--bad);stroke-width:4}
+.no-ring{fill:none;stroke:var(--bad);stroke-width:2.5}
+.lbl{font:700 14px -apple-system,Helvetica,Arial,sans-serif;fill:var(--ink);stroke:#fff;stroke-width:3.5px;paint-order:stroke;pointer-events:none}
+.lbl.small{font-size:12px}
+.tap{fill:none;stroke:var(--ink);stroke-width:1.5;stroke-dasharray:3 3;pointer-events:none}
+@media (prefers-reduced-motion:no-preference){.pulse{animation:pulse 1.2s ease-in-out infinite}@keyframes pulse{50%{opacity:.45}}}
+footer{padding:0 18px 18px;color:var(--soft);font-size:12px}
+</style>
+</head>
+<body>
+<header>
+  <img alt="" src="__NINO__">
+  <div><h1>Topo Frankrijk</h1><small>Oefenkaart van het schoolblad · 44 plekken</small></div>
+  <div class="stats">
+    <div class="stat"><b id="sGood">0</b><span>goed</span></div>
+    <div class="stat"><b id="sStreak">0</b><span>reeks</span></div>
+    <div class="stat"><b id="sMiss">0</b><span>fouten</span></div>
+  </div>
+</header>
+<nav aria-label="Oefenvorm">
+  <button data-mode="leren" aria-pressed="true">Leren</button>
+  <button data-mode="wijs" aria-pressed="false">Aanwijzen</button>
+  <button data-mode="schrijf" aria-pressed="false">Namen schrijven</button>
+  <button data-mode="toets" aria-pressed="false">Toets</button>
+</nav>
+<main>
+  <div class="mapwrap"><svg id="map" role="img" aria-label="Kaart van Frankrijk"></svg></div>
+  <section class="panel" id="panel" aria-live="polite"></section>
+</main>
+<footer>Kaartdata: Natural Earth (publiek domein). Lesstof: schoolblad "Topografie Frankrijk". Voortgang blijft alleen op dit apparaat.</footer>
+<script>
+'use strict';
+const MAP=__MAP__, LES=__LES__;
+const NS='http://www.w3.org/2000/svg';
+const ITEMS=LES.items, BYID=Object.fromEntries(ITEMS.map(i=>[i.id,i]));
+const CH=LES.chapters;
+const TYPE_NL={stad:'stad',eiland:'eiland',gebergte:'gebergte',regio:'streek',buurland:'land',zee:'zee',rivier:'rivier'};
+const AREA=t=>t!=='stad'&&t!=='rivier';
+const svg=document.getElementById('map'), panel=document.getElementById('panel');
+const KEY='topo-frankrijk-v1';
+let S=(()=>{try{return JSON.parse(localStorage.getItem(KEY))||{}}catch(e){return {}}})();
+S.mistakes=S.mistakes||{};S.good=S.good||0;S.miss=S.miss||0;S.chapter=S.chapter||'alles';
+let streak=0;
+const save=()=>{try{localStorage.setItem(KEY,JSON.stringify(S))}catch(e){}};
+
+// ---------- kaart tekenen ----------
+const [,,W,H]=MAP.viewBox; svg.setAttribute('viewBox',`0 0 ${W} ${H}`);
+const el=(n,a,p)=>{const e=document.createElementNS(NS,n);for(const k in a)e.setAttribute(k,a[k]);(p||svg).appendChild(e);return e};
+el('rect',{x:0,y:0,width:W,height:H,class:'sea'});
+el('path',{d:MAP.context.land,class:'ctx-land'});
+el('path',{d:MAP.context.france,class:'fr'});
+el('path',{d:MAP.context.lakes,class:'lakes'});
+el('path',{d:MAP.context.rivers,class:'ctx-rivers'});
+el('path',{d:MAP.context.borders,class:'borders'});
+const gTargets=el('g',{}), gHL=el('g',{}), gMarks=el('g',{}), gLbl=el('g',{});
+const NODE={};
+// vlakken: onzichtbaar, alleen voor de hit-test (zoals op het schoolblad: geen streek- of zeegrenzen)
+for(const it of ITEMS){const m=MAP.items[it.id];
+  if(AREA(it.type)) NODE[it.id]=el('path',{d:m.d,class:'t-area','data-id':it.id,'fill-rule':'evenodd'},gTargets);}
+for(const it of ITEMS){const m=MAP.items[it.id];
+  if(it.type==='rivier') NODE[it.id]=el('path',{d:m.d,class:'t-river','data-id':it.id},gMarks);}
+for(const it of ITEMS){const m=MAP.items[it.id];
+  if(it.type==='stad') el('circle',{cx:m.x,cy:m.y,r:3.6,class:'t-city'},gMarks);
+  else if(m.x!=null) el('path',{d:`M${m.x} ${m.y-4.5}l4.5 4.5l-4.5 4.5l-4.5 -4.5z`,class:'t-micro'},gMarks);}
+
+// rivierpunten voor afstandsberekening
+const RIV={};
+for(const it of ITEMS) if(it.type==='rivier'){
+  RIV[it.id]=MAP.items[it.id].d.split('M').filter(Boolean).map(s=>s.split('L').map(p=>p.split(' ').map(Number)));}
+const segDist=(px,py,[ax,ay],[bx,by])=>{const dx=bx-ax,dy=by-ay,l=dx*dx+dy*dy;let t=l?((px-ax)*dx+(py-ay)*dy)/l:0;t=Math.max(0,Math.min(1,t));return Math.hypot(px-ax-t*dx,py-ay-t*dy)};
+const riverDist=(id,x,y)=>{let m=1e9;for(const line of RIV[id])for(let i=1;i<line.length;i++)m=Math.min(m,segDist(x,y,line[i-1],line[i]));return m};
+const unitsPerPx=()=>{const r=svg.getBoundingClientRect();return W/r.width};
+const toSvg=(cx,cy)=>{const p=svg.createSVGPoint();p.x=cx;p.y=cy;return p.matrixTransform(svg.getScreenCTM().inverse())};
+
+// welke plekken van een type liggen op dit punt? (puntjes 22 px, rivieren 22 px, vlakken: binnen de vorm)
+function hitsAt(x,y,type){
+  const u=unitsPerPx(), out=[];
+  for(const it of ITEMS){ if(type&&it.type!==type) continue; const m=MAP.items[it.id];
+    if(it.type==='stad'){ const d=Math.hypot(x-m.x,y-m.y)/u; if(d<=22) out.push([it.id,d]); }
+    else if(it.type==='rivier'){ const d=riverDist(it.id,x,y)/u; if(d<=22) out.push([it.id,d]); }
+    else { let inside=false; const p=svg.createSVGPoint();p.x=x;p.y=y;
+      try{inside=NODE[it.id].isPointInFill(p)}catch(e){}
+      let d=inside?0:1e9;
+      if(m.x!=null){const dm=Math.hypot(x-m.x,y-m.y)/u; if(dm<=22) d=Math.min(d,dm||0.1);}
+      if(d<1e9) out.push([it.id,d]); } }
+  return out.sort((a,b)=>a[1]-b[1]).map(a=>a[0]);
+}
+
+// ---------- markeren en namen ----------
+function clearMarks(){gHL.textContent='';gLbl.textContent='';}
+function mark(id,kind,pulse){ // kind: hl | ok | no
+  const it=BYID[id], m=MAP.items[id], c=pulse?' pulse':'';
+  if(it.type==='stad') el('circle',{cx:m.x,cy:m.y,r:11,class:kind+'-ring'+c},gHL);
+  else if(it.type==='rivier') el('path',{d:m.d,class:'t-river '+kind+'-river'+c},gHL);
+  else { el('path',{d:m.d,class:kind+'-area'+c,'fill-rule':'evenodd'},gHL);
+    if(m.x!=null) el('circle',{cx:m.x,cy:m.y,r:11,class:kind+'-ring'+c},gHL); }
+}
+function label(id){const it=BYID[id],m=MAP.items[id];
+  const [x,y]=it.type==="stad"?[m.x+7,m.y-6]:m.x!=null?[m.x+7,m.y+16]:[m.lx,m.ly];
+  const t=el('text',{x,y,class:'lbl'+(it.type==='stad'?' small':''),'text-anchor':it.type==='stad'||m.x!=null?'start':'middle'},gLbl);t.textContent=it.nl;}
+
+// ---------- selectie ----------
+const chapterItems=()=>S.chapter==='alles'?ITEMS.map(i=>i.id):S.chapter==='fouten'?Object.keys(S.mistakes).filter(k=>S.mistakes[k]>0):CH.find(c=>c.id===S.chapter).items;
+function chapterSelect(){
+  const opts=[['alles','Alle 44 plekken'],...CH.map(c=>[c.id,`${c.nr}. ${c.titel}`]),['fouten',`Mijn fouten (${Object.values(S.mistakes).filter(v=>v>0).length})`]];
+  return `<label class="sel" for="chap">Hoofdstuk</label><select id="chap">${opts.map(([v,t])=>`<option value="${v}"${v===S.chapter?' selected':''}>${t}</option>`).join('')}</select>`;}
+function bindChapter(){const s=panel.querySelector('#chap');if(s)s.onchange=()=>{S.chapter=s.value;save();start(mode)};}
+const shuffle=a=>{a=a.slice();for(let i=a.length-1;i>0;i--){const j=Math.random()*(i+1)|0;[a[i],a[j]]=[a[j],a[i]]}return a};
+
+// ---------- score ----------
+function score(ok,id){ if(ok){S.good++;streak++; if(S.mistakes[id]) S.mistakes[id]=Math.max(0,S.mistakes[id]-1);} else {S.miss++;streak=0;S.mistakes[id]=(S.mistakes[id]||0)+1;}
+  save();stats();}
+function stats(){sGood.textContent=S.good;sStreak.textContent=streak;sMiss.textContent=S.miss;}
+
+// ---------- schrijven: vergelijken ----------
+const norm=s=>s.normalize('NFD').replace(/[̀-ͯ]/g,'').toLowerCase().replace(/[-‐]/g,' ').replace(/\s+/g,' ').trim();
+const exact=s=>s.toLowerCase().replace(/\s+/g,' ').trim();
+function checkName(id,val){const it=BYID[id];const ok=[it.nl,...it.aliases];
+  if(ok.some(a=>exact(a)===exact(val))) return {ok:true,exact:true};
+  if(ok.some(a=>norm(a)===norm(val))) return {ok:true,exact:false};
+  return {ok:false};}
+
+// ---------- modi ----------
+let mode='leren', deck=[], qi=0, cur=null, answered=false, onTap=null, test=null;
+function next(){ if(!deck.length) return null; if(qi>=deck.length){deck=shuffle(deck);qi=0;
+    if(deck.length>1&&deck[0]===cur){[deck[0],deck[1]]=[deck[1],deck[0]];}} return deck[qi++]; }
+
+function start(m){mode=m;document.querySelectorAll('nav button').forEach(b=>b.setAttribute('aria-pressed',b.dataset.mode===m));
+  clearMarks();onTap=null;answered=false;test=null;deck=shuffle(chapterItems());qi=0;cur=null;
+  ({leren:leren,wijs:wijs,schrijf:schrijf,toets:toetsStart})[m]();}
+
+function emptyMsg(){panel.innerHTML=chapterSelect()+`<div class="fb info">Geen plekken in deze keuze. ${S.chapter==='fouten'?'Je hebt nog geen fouten. Knap!':''}</div>`;bindChapter();}
+
+function leren(){
+  const ids=chapterItems(); if(!ids.length) return emptyMsg();
+  panel.innerHTML=chapterSelect()+`<p class="prompt">Tik op een naam of op de kaart.</p>
+   <div class="row"><button class="btn" id="all">Alle namen tonen</button></div>
+   <ul class="items">${ids.map(id=>`<li><button data-id="${id}">${BYID[id].nl}<small>${TYPE_NL[BYID[id].type]}</small></button></li>`).join('')}</ul>`;
+  bindChapter();
+  const show=id=>{clearMarks();mark(id,'hl');label(id);panel.querySelectorAll('ul.items button').forEach(b=>b.setAttribute('aria-current',b.dataset.id===id));};
+  panel.querySelectorAll('ul.items button').forEach(b=>b.onclick=()=>show(b.dataset.id));
+  panel.querySelector('#all').onclick=()=>{clearMarks();ids.forEach(label);};
+  onTap=(x,y)=>{const h=hitsAt(x,y).filter(id=>ids.includes(id)); if(h.length) show(h[0]); else {const any=hitsAt(x,y); if(any.length){clearMarks();mark(any[0],'hl');label(any[0]);}}};
+}
+
+function wijs(){ if(!chapterItems().length) return emptyMsg(); askWijs(); }
+function askWijs(){
+  cur=next();answered=false;clearMarks();const it=BYID[cur];
+  panel.innerHTML=chapterSelect()+`<div class="prompt">Wijs aan op de kaart (${TYPE_NL[it.type]}):<b>${it.nl}</b></div><div class="fb info" id="fb">Tik op de juiste plek.</div><div class="row"><button class="btn" id="skip">Weet ik niet</button></div>`;
+  bindChapter();
+  const fb=panel.querySelector('#fb');
+  const finish=(ok,msg)=>{answered=true;score(ok,cur);fb.className='fb '+(ok?'good':'bad');fb.textContent=msg;
+    panel.querySelector('.row').innerHTML='<button class="btn primary" id="nx">Volgende</button>';panel.querySelector('#nx').onclick=askWijs;panel.querySelector('#nx').focus();};
+  panel.querySelector('#skip').onclick=()=>{mark(cur,'ok',true);label(cur);finish(false,`Hier ligt ${it.nl}.`);};
+  onTap=(x,y)=>{ if(answered) return; const h=hitsAt(x,y,it.type);
+    if(h.includes(cur)){mark(cur,'ok');label(cur);finish(true,'Goed zo!');}
+    else if(h.length){mark(h[0],'no');label(h[0]);mark(cur,'ok',true);label(cur);finish(false,`Dat is ${BYID[h[0]].nl}. ${it.nl} ligt hier.`);}
+    else {el('circle',{cx:x,cy:y,r:7*unitsPerPx(),class:'tap'},gHL);mark(cur,'ok',true);label(cur);finish(false,`Daar ligt geen ${TYPE_NL[it.type]}. ${it.nl} ligt hier.`);} };
+}
+
+function schrijf(){ if(!chapterItems().length) return emptyMsg(); askSchrijf(); }
+function askSchrijf(){
+  cur=next();answered=false;clearMarks();const it=BYID[cur];mark(cur,'hl',true);
+  panel.innerHTML=chapterSelect()+`<div class="prompt">Welke ${TYPE_NL[it.type]} is gekleurd?</div>
+   <form id="f" autocomplete="off"><input type="text" id="in" autocapitalize="words" autocorrect="off" spellcheck="false" aria-label="Naam"></form>
+   <div class="fb info" id="fb">Schrijf de naam en druk op Enter.</div>
+   <div class="row" id="r"><button class="btn primary" id="go" form="f">Controleer</button><button class="btn" id="skip" type="button">Weet ik niet</button></div>`;
+  bindChapter();const inp=panel.querySelector('#in'),fb=panel.querySelector('#fb');setTimeout(()=>inp.focus(),30);
+  const finish=(ok,msg,cls)=>{answered=true;score(ok,cur);fb.className='fb '+(cls||(ok?'good':'bad'));fb.innerHTML=msg;clearMarks();mark(cur,ok?'ok':'no');label(cur);inp.disabled=true;
+    panel.querySelector('#r').innerHTML='<button class="btn primary" id="nx">Volgende</button>';panel.querySelector('#nx').onclick=askSchrijf;panel.querySelector('#nx').focus();};
+  panel.querySelector('#f').onsubmit=e=>{e.preventDefault();if(answered)return;const v=inp.value;if(!v.trim())return;const r=checkName(cur,v);
+    if(r.ok&&r.exact) finish(true,'Goed zo!'); else if(r.ok) finish(true,`Bijna foutloos! Let op de schrijfwijze: <b>${it.nl}</b>`,'info'); else finish(false,`Het is <b>${it.nl}</b>. Jij schreef: ${v.replace(/[<>&]/g,'')}`);};
+  panel.querySelector('#skip').onclick=()=>finish(false,`Het is <b>${it.nl}</b>.`);
+}
+
+function toetsStart(){
+  const ids=chapterItems(); if(!ids.length) return emptyMsg();
+  panel.innerHTML=chapterSelect()+`<p class="prompt">Een toets zoals de overhoring: elke plek één keer, om en om aanwijzen en schrijven. De uitslag zie je aan het eind.</p><div class="muted">${ids.length} vragen</div><button class="btn primary" id="go">Start de toets</button>`;
+  bindChapter();panel.querySelector('#go').onclick=()=>{test={ids:shuffle(ids),i:0,wrong:[]};toetsQ();};
+}
+function toetsQ(){
+  clearMarks();onTap=null;
+  if(test.i>=test.ids.length) return toetsEnd();
+  const id=test.ids[test.i], it=BYID[id], kind=test.i%2?'schrijf':'wijs', n=test.i+1, tot=test.ids.length;
+  const head=`<div class="muted">Vraag ${n} van ${tot}</div><div class="progress"><i style="width:${(n-1)/tot*100}%"></i></div>`;
+  const done=(ok)=>{score(ok,id);if(!ok)test.wrong.push(id);test.i++;setTimeout(toetsQ,250);};
+  if(kind==='wijs'){
+    panel.innerHTML=head+`<div class="prompt">Wijs aan (${TYPE_NL[it.type]}):<b>${it.nl}</b></div><button class="btn" id="skip">Weet ik niet</button>`;
+    panel.querySelector('#skip').onclick=()=>done(false);
+    onTap=(x,y)=>{onTap=null;done(hitsAt(x,y,it.type).includes(id));};
+  } else {
+    mark(id,'hl',true);
+    panel.innerHTML=head+`<div class="prompt">Welke ${TYPE_NL[it.type]} is gekleurd?</div><form id="f" autocomplete="off"><input type="text" id="in" autocapitalize="words" autocorrect="off" spellcheck="false" aria-label="Naam"></form><div class="row"><button class="btn primary" form="f">Volgende</button></div>`;
+    const inp=panel.querySelector('#in');setTimeout(()=>inp.focus(),30);
+    panel.querySelector('#f').onsubmit=e=>{e.preventDefault();const r=checkName(id,inp.value);done(r.ok&&r.exact);};
+  }
+}
+function toetsEnd(){
+  const tot=test.ids.length, good=tot-test.wrong.length, cijfer=Math.max(1,Math.round((1+9*good/tot)*10)/10);
+  panel.innerHTML=chapterSelect()+`<div class="result"><div class="muted">Uitslag</div><b>${good} / ${tot}</b><div>Cijfer: <strong>${cijfer.toFixed(1).replace('.',',')}</strong></div></div>
+   ${test.wrong.length?`<div class="prompt">Nog oefenen:</div><ul class="items">${test.wrong.map(id=>`<li><button data-id="${id}">${BYID[id].nl}<small>${TYPE_NL[BYID[id].type]}</small></button></li>`).join('')}</ul>`:'<div class="fb good">Alles goed. Foutloos!</div>'}
+   <div class="row"><button class="btn primary" id="again">Nog een keer</button>${test.wrong.length?'<button class="btn" id="fout">Oefen mijn fouten</button>':''}</div>
+   <p class="muted">In de toets telt een naam alleen als hij foutloos is geschreven: hoofdletters maken niet uit, accenten wel (Pyreneeën, Normandië).</p>`;
+  bindChapter();
+  panel.querySelectorAll('ul.items button').forEach(b=>b.onclick=()=>{clearMarks();mark(b.dataset.id,'hl');label(b.dataset.id);});
+  panel.querySelector('#again').onclick=()=>start('toets');
+  const f=panel.querySelector('#fout'); if(f) f.onclick=()=>{S.chapter='fouten';save();start('wijs');};
+}
+
+// ---------- invoer ----------
+svg.addEventListener('click',e=>{ if(!onTap) return; const p=toSvg(e.clientX,e.clientY); onTap(p.x,p.y); });
+document.querySelectorAll('nav button').forEach(b=>b.onclick=()=>start(b.dataset.mode));
+stats();start('leren');
+</script>
+</body>
+</html>

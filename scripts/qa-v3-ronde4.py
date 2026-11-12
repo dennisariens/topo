@@ -31,6 +31,18 @@ WELKOM='''()=>{
  return {glass:alpha(cs.backgroundColor)<.9&&cs.backdropFilter!=='none',plates,focus,nino:Math.round(img.height*1159/1200),fits:r.top>=0&&r.bottom<=innerHeight&&d.scrollHeight<=d.clientHeight+1,dialog:[Math.round(r.width),Math.round(r.height)]};
 }'''
 
+KEUZE='''()=>{
+ const d=document.getElementById('mapPicker'),cs=getComputedStyle(d),alpha=c=>{const m=c.match(/rgba?\(([^)]+)\)/);const v=m?m[1].split(',').map(Number):[0,0,0,0];return v.length>3?v[3]:1;};
+ const h=getComputedStyle(d.querySelector('h2')),svg=d.querySelector('.pickerViewport>svg').getBoundingClientRect(),view=d.querySelector('.pickerViewport').getBoundingClientRect();
+ const badges=[...d.querySelectorAll('[data-picker-badge]')],r=d.getBoundingClientRect(),cancel=d.querySelector('.pickerCancel').getBoundingClientRect();
+ return {glass:alpha(cs.backgroundColor)<.9&&cs.backdropFilter!=='none',title:[h.fontSize,h.fontWeight,h.color],
+  help:[...d.querySelectorAll(':scope>p:not(.pickerNote)')].some(n=>n.getClientRects().length),note:d.querySelector('.pickerNote').textContent,
+  badges:badges.map(n=>getComputedStyle(n).fill),leaders:[...d.querySelectorAll('[data-picker-leader]')].map(n=>getComputedStyle(n).stroke),
+  chips:Math.min(...[...d.querySelectorAll('[data-map-choice]')].map(n=>n.getBoundingClientRect().height)),cancel:[cancel.height,cancel.width],width:r.width,
+  inside:svg.right<=view.right+1&&badges.every(n=>{const b=n.getBoundingClientRect();return b.left>=svg.left-1&&b.right<=svg.right+1&&b.top>=svg.top-1&&b.bottom<=svg.bottom+1;}),
+  fits:r.top>=0&&r.bottom<=innerHeight&&d.scrollHeight<=d.clientHeight+1,focus:document.activeElement?.classList.contains('pickerCancel')?'pickerCancel':document.activeElement?.tagName};
+}'''
+
 async def act(p,selector,touch=False):
  n=p.locator(selector).filter(visible=True).first
  await (n.tap(timeout=2500) if touch else n.click(timeout=2500))
@@ -64,6 +76,28 @@ async def check(p,n,touch,vp):
   await p.locator('.v3Welkom [name=name]').focus();await p.wait_for_timeout(150)
   await p.screenshot(path=str(OUT/f'kennismaking-{vp}.png'));shots.append('kennismaking')
   return shots,r
+ if n==3:
+  await p.evaluate('TOPO_V3.shell.practice("point","city1")');await p.wait_for_timeout(800)
+  out={}
+  for case,ids in (('rome',['city-9','area-o']),('napels',['city-6','area-e'])):
+   await p.evaluate("ids=>{document.activeElement?.blur?.();openMapPicker(ITEMS.filter(i=>ids.includes(i.id)))}",ids);await p.wait_for_timeout(700)
+   r=await p.evaluate(KEUZE);out[case]=r
+   assert r['glass'] and r['title']==['28px','700','rgb(42, 36, 64)'],r
+   assert not r['help'] and 'Symbolen' not in r['note'] and r['note'].startswith('○ stad'),r
+   assert r['badges'] and all(c=='rgb(91, 69, 224)' for c in r['badges']+r['leaders']),r
+   assert r['chips']>=44 and r['cancel'][0]>=44 and r['cancel'][1]<r['width']-60,r
+   assert r['inside'] and r['fits'] and r['focus']=='pickerCancel',r
+   if case=='napels':
+    await p.evaluate('document.querySelector(".pickerCancel").blur()');await p.mouse.move(1,1);await p.wait_for_timeout(150)
+    await p.screenshot(path=str(OUT/f'keuzevenster-{vp}.png'));shots.append('keuzevenster')
+   await p.keyboard.press('Escape');await p.wait_for_timeout(250)
+   assert not await p.evaluate('document.getElementById("mapPicker").open')
+  # Keyboard choice is V2's: Tab to "Stip 1", Enter answers and closes.
+  await p.evaluate("()=>{document.activeElement?.blur?.();openMapPicker(ITEMS.filter(i=>['city-6','area-e'].includes(i.id)))}");await p.wait_for_timeout(500)
+  await p.locator('#mapPicker [data-map-choice]').first.focus();await p.keyboard.press('Enter');await p.wait_for_timeout(300)
+  assert not await p.evaluate('document.getElementById("mapPicker").open')
+  assert await p.evaluate('state.answered')
+  return shots,out
  raise SystemExit('unknown point')
 
 async def main(point):

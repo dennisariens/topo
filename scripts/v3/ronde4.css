@@ -13,3 +13,24 @@ dialog.v3Welkom::backdrop{background:rgba(42,36,64,.22);-webkit-backdrop-filter:
 /* Nino larger: ~210 px visible figure (the pose's figure is 96.6% of the image height). */
 .v3Welkom.ninoFirstRun .profileScene{min-height:0}
 .v3Welkom .profileWelcome{width:145px;height:218px}
+
+/* 3. Keuzevenster (V2 appends its picker styles at runtime, after these: every rule is scoped to dialog.mapPicker.v3Keuze;
+   the side padding stays 12 px because V2 sizes the close-up as the dialog width − 24). Keuzevenster "Welke plek bedoel je?" (V2 #mapPicker): glass, the school map as the close-up with a soft edge,
+   violet badges and leader lines, V3 chips ≥ 44 px, "Terug naar de kaart" as a secondary glass pill. */
+dialog.mapPicker.v3Keuze{width:min(620px,96vw);padding:20px 12px 16px;gap:8px;border:1px solid rgba(255,255,255,.7);border-radius:var(--v3-radius-glass,28px);background:var(--v3-glass,rgba(255,255,255,.72));-webkit-backdrop-filter:var(--v3-glass-filter,blur(28px) saturate(1.4));backdrop-filter:var(--v3-glass-filter,blur(28px) saturate(1.4));box-shadow:var(--v3-glass-shadow),0 30px 80px rgba(42,36,64,.24);color:var(--v3-ink);font-family:var(--v3-font)}
+dialog.mapPicker.v3Keuze::backdrop{background:rgba(42,36,64,.22);-webkit-backdrop-filter:blur(4px);backdrop-filter:blur(4px)}
+dialog.mapPicker.v3Keuze>h2{font:700 28px/34px var(--v3-font);color:var(--v3-ink);margin:0;padding:0 8px}
+dialog.mapPicker.v3Keuze>p:not(.pickerNote){display:none}
+dialog.mapPicker.v3Keuze>.pickerNote{font:500 14px/18px var(--v3-font);color:var(--v3-ink2);margin:0;text-align:center}
+dialog.mapPicker.v3Keuze .pickerViewport>svg,dialog.mapPicker.v3Keuze figure>svg{border:0!important;border-radius:20px;overflow:hidden;box-shadow:0 0 0 1px rgba(255,255,255,.8),0 2px 6px rgba(42,36,64,.10),0 18px 40px -20px rgba(42,36,64,.40)}
+dialog.mapPicker.v3Keuze figcaption{font:600 14px/18px var(--v3-font);color:var(--v3-ink)}
+dialog.mapPicker.v3Keuze [data-picker-badge]{fill:var(--v3-accent);stroke:#fff}
+dialog.mapPicker.v3Keuze [data-picker-leader],dialog.mapPicker.v3Keuze [data-picker-outline]{stroke:var(--v3-accent)}
+dialog.mapPicker.v3Keuze [data-picker-endpoint]{fill:var(--v3-accent);stroke:#fff}
+dialog.mapPicker.v3Keuze [data-picker-inset-frame]{fill:#fff;stroke:rgba(42,36,64,.18)}
+dialog.mapPicker.v3Keuze .pickerActions{gap:8px;margin:0}
+dialog.mapPicker.v3Keuze .pickerActions button{min-height:48px;padding:0 20px;border:0;border-radius:999px;background:rgba(255,255,255,.6);box-shadow:inset 0 0 0 1px rgba(42,36,64,.14);color:var(--v3-ink);font:600 17px/22px var(--v3-font)}
+dialog.mapPicker.v3Keuze .pickerActions button:hover{background:var(--v3-accent-soft);box-shadow:inset 0 0 0 1.5px var(--v3-accent)}
+dialog.mapPicker.v3Keuze .pickerCancel{align-self:center;min-height:48px;width:auto;padding:0 28px;border:0;border-radius:999px;background:rgba(255,255,255,.45);box-shadow:inset 0 0 0 1px rgba(255,255,255,.85),0 2px 8px rgba(42,36,64,.08);color:var(--v3-accent);font:600 17px/22px var(--v3-font)}
+dialog.mapPicker.v3Keuze .pickerCancel:hover{background:rgba(255,255,255,.7)}
+dialog.mapPicker.v3Keuze :focus-visible,dialog.mapPicker.v3Keuze .pickerCancel:focus{outline:3px solid var(--v3-accent);outline-offset:2px}

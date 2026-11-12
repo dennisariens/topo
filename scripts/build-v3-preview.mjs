@@ -101,7 +101,7 @@ const head='<head>\n<style>html.v3Boot body{visibility:hidden}html.v3Ready body{
 const last=html.lastIndexOf('</body>');if(last<0||html.indexOf('<head>')<0)throw Error('Unexpected index.html shape');
 let out=html.replace('<head>',()=>head);
 const end=out.lastIndexOf('</body>');
-out=out.slice(0,end)+'<script>\n// BEGIN TOPO V3\n'+read('scripts/v3/iconen.js')+'\n'+read('scripts/v3/landmarks.js')+'\n'+read('scripts/v3/reis.js')+'\n'+read('scripts/v3/master-assets.js')+'\n'+read('scripts/v3/les.js')+'\n'+read('scripts/v3/shell.js')+'\n'+read('scripts/v3/schoolblad.js')+'\n'+read('scripts/v3/toets.js')+'\n'+read('scripts/v3/voortgang.js')+'\n'+read('scripts/v3/boek.js')+'\n'+read('scripts/v3/kennismaking.js')+'\nrequestAnimationFrame(()=>{document.documentElement.classList.replace("v3Boot","v3Ready");});\n// END TOPO V3\n</script>\n'+out.slice(end);
+out=out.slice(0,end)+'<script>\n// BEGIN TOPO V3\n'+read('scripts/v3/iconen.js')+'\n'+read('scripts/v3/landmarks.js')+'\n'+read('scripts/v3/reis.js')+'\n'+read('scripts/v3/master-assets.js')+'\n'+read('scripts/v3/les.js')+'\n'+read('scripts/v3/shell.js')+'\n'+read('scripts/v3/schoolblad.js')+'\n'+read('scripts/v3/toets.js')+'\n'+read('scripts/v3/voortgang.js')+'\n'+read('scripts/v3/boek.js')+'\n'+read('scripts/v3/kennismaking.js')+'\n'+read('scripts/v3/keuze.js')+'\nrequestAnimationFrame(()=>{document.documentElement.classList.replace("v3Boot","v3Ready");});\n// END TOPO V3\n</script>\n'+out.slice(end);
 out=out.replace(/<title>([^<]*)<\/title>/,(m,t)=>'<title>V3-preview Reis · '+t+'</title>');
 const file='output/html/TOPO-V3-Reis-Preview.html';
 writeFileSync(new URL(file,root),out);

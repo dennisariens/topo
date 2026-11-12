@@ -1,0 +1,227 @@
+[
+  {
+    "id": 1,
+    "name": "Colosseum Rome",
+    "filename": "TOPO_01_Colosseum_Rome.png",
+    "source": "a_high_detail_realistic_clean_isolated_image_tr.png",
+    "size": [
+      1024,
+      1024
+    ],
+    "alpha": true,
+    "mode": "RGBA",
+    "sha256": "196728cca1ab9fa1861a0faaca8df4252b321a1524e9e89a8a0ea3bcd911d823",
+    "transparent_share": 0.7,
+    "use": "reliefkaart (Reis, toetsresultaat)"
+  },
+  {
+    "id": 2,
+    "name": "Leaning Tower Pisa",
+    "filename": "TOPO_02_Leaning_Tower_Pisa.png",
+    "source": "leunende_toren_van_pisa_in_marmer.png",
+    "size": [
+      1024,
+      1024
+    ],
+    "alpha": true,
+    "mode": "RGBA",
+    "sha256": "7875f1797d8f1aa3d27023ec82506b25c2f8c871e4770e140433e7edb0b64c13",
+    "transparent_share": 0.8,
+    "use": "reliefkaart (Reis, toetsresultaat)"
+  },
+  {
+    "id": 3,
+    "name": "Vesuvius Naples",
+    "filename": "TOPO_03_Vesuvius_Naples.png",
+    "source": "TOPO_03_Vesuvius_V3_1024_transparent.png",
+    "size": [
+      1024,
+      1024
+    ],
+    "alpha": true,
+    "mode": "RGBA",
+    "sha256": "0541b33de4cf5c924d93a647553438cd38731bfadd835559bbf847b72ffb1e93",
+    "transparent_share": 0.82,
+    "use": "reliefkaart (Reis, toetsresultaat)"
+  },
+  {
+    "id": 4,
+    "name": "Etna Sicily",
+    "filename": "TOPO_04_Etna_Sicily.png",
+    "source": "TOPO_04_Etna_V3_1024_transparent.png",
+    "size": [
+      1024,
+      1024
+    ],
+    "alpha": true,
+    "mode": "RGBA",
+    "sha256": "f56d5ef0aee2bd2f4d99f8e789f68d1e9d08c88dcd85472c264113c881ee6409",
+    "transparent_share": 0.79,
+    "use": "reliefkaart (Reis, toetsresultaat)"
+  },
+  {
+    "id": 5,
+    "name": "Venetian Gondola Venice",
+    "filename": "TOPO_05_Venetian_Gondola_Venice.png",
+    "source": "gondola_met_venetiaans_fluweel.png",
+    "size": [
+      1024,
+      1024
+    ],
+    "alpha": true,
+    "mode": "RGBA",
+    "sha256": "d0689885cec6b0dcc7d283d8e7b5688304681efb3db0cd31f0425f8e223bdf99",
+    "transparent_share": 0.77,
+    "use": "reliefkaart (Reis, toetsresultaat)"
+  },
+  {
+    "id": 6,
+    "name": "Duomo Milan",
+    "filename": "TOPO_06_Duomo_Milan.png",
+    "source": "miniatuur_van_de_dom_van_milaan.png",
+    "size": [
+      1024,
+      1024
+    ],
+    "alpha": true,
+    "mode": "RGBA",
+    "sha256": "fcadc7a71cf73f6bdb10a4172afb9ee828222d7aea3f4f17e3c08f34cadcc096",
+    "transparent_share": 0.59,
+    "use": "reliefkaart (Reis, toetsresultaat)"
+  },
+  {
+    "id": 7,
+    "name": "Florence Cathedral",
+    "filename": "TOPO_07_Florence_Cathedral.png",
+    "source": "a_highly_detailed_realistic_isometric_photoreal_c.png",
+    "size": [
+      1024,
+      1024
+    ],
+    "alpha": true,
+    "mode": "RGBA",
+    "sha256": "16df22dde8add7551b6879cf834dbcb1c2624dd6062c1a763baebb6a7a892770",
+    "transparent_share": 0.66,
+    "use": "reliefkaart (Reis, toetsresultaat)"
+  },
+  {
+    "id": 8,
+    "name": "Nuraghe Sardinia",
+    "filename": "TOPO_08_Nuraghe_Sardinia.png",
+    "source": "TOPO_08_Sardinian_Nuraghe_1024_transparent.png",
+    "size": [
+      1024,
+      1024
+    ],
+    "alpha": true,
+    "mode": "RGBA",
+    "sha256": "63eef3351692b89c8679633dcc5bbdc02d5e75afa432a46ee0d42015fdea9891",
+    "transparent_share": 0.63,
+    "use": "reliefkaart (Reis, toetsresultaat)"
+  },
+  {
+    "id": 9,
+    "name": "Dolomites Northern Italy",
+    "filename": "TOPO_09_Dolomites_Northern_Italy.png",
+    "source": "dolomietentoppen_in_gouden_uurlicht.png",
+    "size": [
+      1024,
+      1024
+    ],
+    "alpha": true,
+    "mode": "RGBA",
+    "sha256": "16b282a90d9a40aee14eece1101b606af5278c5078297a98ff4e8d2e0c4850e6",
+    "transparent_share": 0.62,
+    "use": "reliefkaart (Reis, toetsresultaat)"
+  },
+  {
+    "id": 10,
+    "name": "Trulli Alberobello",
+    "filename": "TOPO_10_Trulli_Alberobello.png",
+    "source": "apulische_trulli_bei_goldenem_licht.png",
+    "size": [
+      1024,
+      1024
+    ],
+    "alpha": true,
+    "mode": "RGBA",
+    "sha256": "519bb285918bf9ffe5cdfc09b27313f7e0c1aa2a4dce4b1d28f119ae420bce39",
+    "transparent_share": 0.6,
+    "use": "reliefkaart (Reis, toetsresultaat)"
+  },
+  {
+    "id": 12,
+    "name": "Football Stadium Milan",
+    "filename": "TOPO_12_Football_Stadium_Milan.png",
+    "source": "a_highly_detailed_3d_isometric_angled_illustration.png",
+    "size": [
+      1024,
+      1024
+    ],
+    "alpha": true,
+    "mode": "RGBA",
+    "sha256": "0be276ffd08814c4c4d1f6dd32b314e3f63dec4c82e92504c940804a956a215c",
+    "transparent_share": 0.66,
+    "use": "V3.1 uitstapjes/postkaarten — niet in UI"
+  },
+  {
+    "id": 13,
+    "name": "Gelato Italy",
+    "filename": "TOPO_13_Gelato_Italy.png",
+    "source": "a_clean_high_detail_photorealistic_3d_style_food.png",
+    "size": [
+      1024,
+      1024
+    ],
+    "alpha": true,
+    "mode": "RGBA",
+    "sha256": "cd54eafa22dd34ed122cb1d23e0b1af5b613a634478672adf8aeecb6650d1d5e",
+    "transparent_share": 0.81,
+    "use": "V3.1 uitstapjes/postkaarten — niet in UI"
+  },
+  {
+    "id": 14,
+    "name": "Beach Rimini",
+    "filename": "TOPO_14_Beach_Rimini.png",
+    "source": "a_crisp_high_detail_3d_illustration_style_icon.png",
+    "size": [
+      1024,
+      1024
+    ],
+    "alpha": true,
+    "mode": "RGBA",
+    "sha256": "8c5a8761523dc38650204a8d38dcba9e7f12ed57428ca374f2631e1ff56d4889",
+    "transparent_share": 0.61,
+    "use": "V3.1 uitstapjes/postkaarten — niet in UI"
+  },
+  {
+    "id": 15,
+    "name": "Pasta Bologna",
+    "filename": "TOPO_15_Pasta_Bologna.png",
+    "source": "tagliatelle_alla_bolognese_op_rustiek_bord.png",
+    "size": [
+      1024,
+      1024
+    ],
+    "alpha": true,
+    "mode": "RGBA",
+    "sha256": "d3151d242d89b0c77eb4e471465656e4f40aa1d819fe0be1dacee69cbf2d3482",
+    "transparent_share": 0.59,
+    "use": "V3.1 uitstapjes/postkaarten — niet in UI"
+  },
+  {
+    "id": 16,
+    "name": "Fiat 500 Turin",
+    "filename": "TOPO_16_Fiat_500_Turin.png",
+    "source": "klassieke_mintgroene_fiat_500.png",
+    "size": [
+      1024,
+      1024
+    ],
+    "alpha": true,
+    "mode": "RGBA",
+    "sha256": "d7a067a8bb4658c74fdeee41d549d8c37fe9674354098e1b932ff9e000367f1f",
+    "transparent_share": 0.66,
+    "use": "V3.1 uitstapjes/postkaarten — niet in UI"
+  }
+]

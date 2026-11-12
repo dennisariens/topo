@@ -130,3 +130,11 @@ De Vespa uit de master-set vervangt **IC-vespa** overal. Reden: dezelfde scooter
 | Toets resultaat, kennismaking, uitstapjes | `vespa-rijdend` / `vespa-bagage` (met Nino) |
 
 IC-vespa gaat in het manifest naar de status "vervangen", met de verwijzing. Dit hoort bij punt 10 (tellers met illustraties) en punt 13 (Beloningen).
+
+## Ronde 3 — korte eindoverdracht (12-11)
+
+Eindpin (geteste code): `70cdb342b47898d98225d889fb7d5b49270b3616` op `codex/topo-v3`. Punten 1–20 zijn uitgevoerd, met één oorspronkelijke commit per punt; de eindverificatie bevat de gerichte kopruimte- en laadcorrecties. Glas blijft 72%; de master-Vespa is verwerkt en de artworkinventaris bevat ook de tien nieuwe landmarkillustraties.
+
+Controle: `npm run lint`, `npm test`, `npm run build` en `python3 scripts/qa-v3-all.py` PASS (20/20 scripts; Ronde 3: 20/20 punten). `index.html` is byte-gelijk; leerengine en echte geometrie zijn behouden. Compact bewijs: `docs/qa/v3-stijlbeeld/final/verification-ronde3.json`; screenshots desktop 1440×900 en iPad 1080×810 staan in dezelfde map. Preview en lange logs zijn niet gecommit. Geen merge, deploy of publicatie.
+
+Open: fysieke iPad/Safari-hertest en visuele eigenaar/Hermes-review van het nieuwe landmarkartwork. **Hermes: hertest deze eindpin**, vooral kaartschakelaar/Schoolblad, toetsaanraakvlakken, Oefenen zonder scroll, terugnavigatie, boekvegen, willekeurige toets, Vespa met verminderde beweging en achtergrondwisseling. Controleer dat de landmarks alleen op Reis/toetsresultaat verschijnen en leren op de schoolkaart blijft.

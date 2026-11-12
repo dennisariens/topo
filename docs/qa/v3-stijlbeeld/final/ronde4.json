@@ -60,5 +60,51 @@
       }
     },
     "pass": true
+  },
+  "2": {
+    "previewSha256": "c2308d5b71b1f8591c8b9f226347eefcf2bb5e87151790be591c969d5761dcc5",
+    "runs": {
+      "desktop": {
+        "viewport": [
+          1440,
+          900
+        ],
+        "screens": [
+          "kennismaking"
+        ],
+        "detail": {
+          "glass": true,
+          "plates": [],
+          "focus": "rgb(91, 69, 224)",
+          "nino": 211,
+          "fits": true,
+          "dialog": [
+            620,
+            559
+          ]
+        }
+      },
+      "ipad-liggend": {
+        "viewport": [
+          1080,
+          810
+        ],
+        "screens": [
+          "kennismaking"
+        ],
+        "detail": {
+          "glass": true,
+          "plates": [],
+          "focus": "rgb(91, 69, 224)",
+          "nino": 211,
+          "fits": true,
+          "dialog": [
+            620,
+            559
+          ]
+        }
+      }
+    },
+    "pass": true
   }
 }

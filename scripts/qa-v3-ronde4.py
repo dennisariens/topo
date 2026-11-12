@@ -23,6 +23,14 @@ LANDMARKS='''map=>{
   pinAbove:!top||!!(lm.compareDocumentPosition(top)&Node.DOCUMENT_POSITION_FOLLOWING)};
 }'''
 
+WELKOM='''()=>{
+ const d=document.querySelector('dialog.v3Welkom'),cs=getComputedStyle(d),alpha=c=>{const m=c.match(/rgba?\(([^)]+)\)/);if(!m)return 0;const v=m[1].split(',').map(Number);return v.length>3?v[3]:1;};
+ const plates=[...d.querySelectorAll('*')].filter(n=>!n.matches('.primary,.primary *')&&!n.matches('.profileChoice:has(:checked)')&&n.getClientRects().length&&alpha(getComputedStyle(n).backgroundColor)>=.9).map(n=>n.tagName+'.'+n.className);
+ const i=d.querySelector('[name=name]');i.focus();const focus=getComputedStyle(i).outlineColor;i.blur();
+ const img=d.querySelector('.profileWelcome').getBoundingClientRect(),r=d.getBoundingClientRect();
+ return {glass:alpha(cs.backgroundColor)<.9&&cs.backdropFilter!=='none',plates,focus,nino:Math.round(img.height*1159/1200),fits:r.top>=0&&r.bottom<=innerHeight&&d.scrollHeight<=d.clientHeight+1,dialog:[Math.round(r.width),Math.round(r.height)]};
+}'''
+
 async def act(p,selector,touch=False):
  n=p.locator(selector).filter(visible=True).first
  await (n.tap(timeout=2500) if touch else n.click(timeout=2500))
@@ -46,6 +54,16 @@ async def check(p,n,touch,vp):
   await p.evaluate('document.activeElement?.blur?.()');await p.mouse.move(1,1);await p.wait_for_timeout(300)
   await p.screenshot(path=str(OUT/f'toetsResult-{vp}.png'));shots.append('toetsResult')
   return shots,{'reis':r,'toetsResult':r2}
+ if n==2:
+  await p.goto(q.HTML.as_uri()+'#welkom/bg03');await p.wait_for_timeout(900)
+  r=await p.evaluate(WELKOM)
+  assert r['glass'] and not r['plates'],r
+  assert r['focus']=='rgb(91, 69, 224)',r
+  assert 200<=r['nino']<=220,r
+  assert r['fits'],r
+  await p.locator('.v3Welkom [name=name]').focus();await p.wait_for_timeout(150)
+  await p.screenshot(path=str(OUT/f'kennismaking-{vp}.png'));shots.append('kennismaking')
+  return shots,r
  raise SystemExit('unknown point')
 
 async def main(point):

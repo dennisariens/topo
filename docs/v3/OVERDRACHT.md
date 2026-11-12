@@ -157,3 +157,12 @@ Ronde 3 en de landmarks zijn akkoord. Reis, Toets resultaat, Oefenen, Beloningen
    - de focusring van het naamveld in violet, niet het V2-groen;
    - het venster als glaspaneel in plaats van een witte plaat;
    - Nino groter (±160 px hoog).
+3. **Keuzevenster "Welke plek bedoel je?"** (twee plekken dicht bij elkaar, zoals een stad bij een vulkaan of een kleine staat). Nu nog in de V2-stijl: beige, groene nummers, een witte plaat. Gedrag en logica blijven gelijk; alleen de vormgeving in V3:
+   - een glaspaneel, en de titel "Welke plek bedoel je?" op 28/700 in inkt;
+   - de uitvergroting op de V3-schoolkaart (zoals in de les), met een zachte rand in plaats van een bruine cirkel;
+   - de nummers als violette badges met witte cijfers, en de verbindingslijnen in violet;
+   - de keuzeknoppen als V3-chips ("Stip 1", "Stip 2"), op ≥ 44 pt hoog;
+   - "Terug naar de kaart" als secundaire glaspil;
+   - de hulpzin "Volg de lijn…" vervalt (de lijnen spreken voor zich);
+   - de legenda compact (symbolen en de woorden stad, vulkaan, kleine staat) zonder de zin "Symbolen, geen grenzen…";
+   - toetsenbord en focus ongewijzigd; Escape gaat terug naar de kaart.

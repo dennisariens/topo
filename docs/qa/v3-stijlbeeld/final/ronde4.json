@@ -1,0 +1,64 @@
+{
+  "1": {
+    "previewSha256": "b8d00e93d51a52c79c28d4a6396877b9bd8ebaab2f12a0aa2bc22b383f255d7e",
+    "runs": {
+      "desktop": {
+        "viewport": [
+          1440,
+          900
+        ],
+        "screens": [
+          "reis",
+          "toetsResult"
+        ],
+        "detail": {
+          "reis": {
+            "count": 10,
+            "anchored": true,
+            "overlaps": [],
+            "median": 40,
+            "obstacles": 6,
+            "pinAbove": true
+          },
+          "toetsResult": {
+            "count": 10,
+            "anchored": true,
+            "overlaps": [],
+            "median": 40,
+            "obstacles": 13,
+            "pinAbove": true
+          }
+        }
+      },
+      "ipad-liggend": {
+        "viewport": [
+          1080,
+          810
+        ],
+        "screens": [
+          "reis",
+          "toetsResult"
+        ],
+        "detail": {
+          "reis": {
+            "count": 10,
+            "anchored": true,
+            "overlaps": [],
+            "median": 34,
+            "obstacles": 6,
+            "pinAbove": true
+          },
+          "toetsResult": {
+            "count": 10,
+            "anchored": true,
+            "overlaps": [],
+            "median": 34,
+            "obstacles": 13,
+            "pinAbove": true
+          }
+        }
+      }
+    },
+    "pass": true
+  }
+}

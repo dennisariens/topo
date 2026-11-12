@@ -1,9 +1,9 @@
 # V4 Frankrijk · spoor A: lesstof en hoofdstukken
 
 **Status:** draft, ter review in de V3-chat. Data: `data/fr/items.draft.json`.
-**Enige bron:** het schoolblad "Topografie Frankrijk", met de kolommen Plaatsen, Gebieden en Wateren. Het origineel komt in `docs/v4/bron/`. Achter elk item en elk hoofdstuk staat de plek op het blad (kolom › kopje › code). Wat niet op het blad staat, hoort niet bij de lesstof.
+**Enige bron:** het schoolblad "Topografie Frankrijk" (`docs/v4/bron/IMG_0802.HEIC`, origineel en ongewijzigd, zie de README daar). Achter elk item en elk hoofdstuk staat de plek op het blad (kolom › kopje › code). Wat niet op het blad staat, hoort niet bij de lesstof. Alle 44 plekken en codes zijn op 12-11 tegen het origineel gecontroleerd.
 
-**Let op:** deze transcriptie komt van een foto die via een chat is gedeeld, en volgens `AGENTS.md` is dat geen brondata. De status blijft daarom draft tot het origineel in `docs/v4/bron/` staat en alles daartegen is gecontroleerd.
+**Wat de school toetst** (blad, onder "TIP"): de namen foutloos schrijven, de plek op de kaart aanwijzen, en de plek op de kaart herkennen en opschrijven. Dat zijn precies de V3-stappen Aanwijzen en Namen schrijven. De nummers en letters zijn een opdracht op het werkblad ("Werkwijze" 3), geen toetsstof.
 
 ## De 44 plekken van het blad
 
@@ -44,7 +44,8 @@ Afgeleid, dus niet van het blad: de knip van de steden in 5/5/4, het samenvoegen
 
 - **Dubbele codes a–i.** Op het blad lopen de letters a–i twee keer: bij Eilanden/Bergen/Streken (a = Corsica … i = Provence) en bij Landen (a = Andorra … i = Zwitserland). De V3-route vraagt geen schoolcodes, maar in de toets en op de print is "a" niet eenduidig. Daarom is `id` de sleutel, nooit de code. Komt er toch een codevraag, dan altijd met het kopje erbij ("Landen: a"). Bij Italië waren alle codes uniek.
 - **"Bergen en vulkanen"** staat als kopje op het blad, maar er staan geen vulkanen onder. De lesstof bevat dus geen vulkanen.
-- **Extra steden:** het blad heeft een vak "Extra steden:". Op de foto lijkt dat leeg; dat moet tegen het origineel gecontroleerd worden.
+- **Extra steden:** het vak "Extra steden:" (Plaatsen, onder nr. 14) is leeg op het origineel. Er komen dus geen extra steden bij.
+- **"LeHavre":** zo staat het op het blad (Plaatsen › nr. 3). In de data staat "Le Havre", en de spelling van het blad telt ook als goed.
 - **Dordogne** staat onder Streken. Het is dus een gebied en geen rivier.
 - **Niet op het blad, dus geen lesstof:** Massif Central, Jura en verdere rivieren uit de overdracht (spoor B). Die kunnen hooguit reliëf of beleving zijn.
 
@@ -54,6 +55,5 @@ Afgeleid, dus niet van het blad: de knip van de steden in 5/5/4, het samenvoegen
 
 ## Open (eigenaar)
 
-- Het originele schoolblad in `docs/v4/bron/` zetten, met school en methode in de README.
-- De transcriptie letterlijk tegen het origineel controleren: spelling, codes en het vak Extra steden.
+- School en methode aanvullen in `docs/v4/bron/README.md` (staan niet op het blad).
 - Besluiten: kopje noemen bij codevragen, akkoord met de 11 hoofdstukken, en of Franse namen goed tellen (voorstel: nee).

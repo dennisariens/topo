@@ -3,12 +3,13 @@
  "land": "fr",
  "bron": {
   "document": "Schoolblad 'Topografie Frankrijk' (kolommen Plaatsen, Gebieden, Wateren)",
-  "bestand": "docs/v4/bron/ (origineel volgt; zie docs/v4/fr-inhoud.md)",
-  "transcriptie": "2026-11-12, van een foto van het blad; letterlijk te controleren tegen het origineel"
+  "bestand": "docs/v4/bron/IMG_0802.HEIC",
+  "sha256": "61f29c9a44977c95f3bb164f8d5852c45dd93efc3c46d6e555eccb362c084f04",
+  "gecontroleerd": "2026-11-12, alle 44 plekken en codes tegen het origineel"
  },
  "velden": {
   "code": "schoolcode zoals op het blad",
-  "blad": "plek op het blad: kolom › kopje › code",
+  "blad": "plek op IMG_0802: kolom › kopje › code",
   "chapter": "1–11, zie chapters",
   "aliases": "toegestane schrijfvarianten (zonder accenten); Franse namen niet automatisch goed"
  },
@@ -176,8 +177,10 @@
    "chapter": 1,
    "blad": "Plaatsen › Belangrijke steden › nr. 3",
    "aliases": [
+    "LeHavre",
     "Havre"
-   ]
+   ],
+   "opmerking": "op het blad gespeld als 'LeHavre' (Plaatsen › Belangrijke steden › nr. 3); hier de gangbare spelling, de bladspelling telt ook goed"
   },
   {
    "id": "lille",

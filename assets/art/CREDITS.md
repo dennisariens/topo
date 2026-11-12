@@ -23,3 +23,5 @@ Masters = originele ChatGPT-download, ongewijzigd en ongeschaald, met alfa (`ass
 | 2d | `assets/art/universal/vespa/vespa-bagage.webp` | 800×648 | `assets/art/masters/universal/vespa/vespa-bagage.png` | 1536×1024 | ChatGPT | 2026-11-10 | Goedgekeurd |
 | 3a | `assets/art/universal/paspoort/paspoort-cover.webp` | 599×800 | `assets/art/masters/universal/paspoort/paspoort-cover.png` | 1024×1536 | ChatGPT | 2026-11-10 | Goedgekeurd |
 | 3b | `assets/art/universal/paspoort/paspoort-binnen.webp` | 1200×815 | `assets/art/masters/universal/paspoort/paspoort-binnen.png` | 1536×1024 | ChatGPT | 2026-11-10 | Goedgekeurd |
+| 6 | `assets/art/fr/hero/fr-hero.webp` | 1600×900 | `assets/art/masters/fr/hero/fr-hero.png` | 1672×941 | ChatGPT | 2026-11-12 | Goedgekeurd |
+| 6 (2:1) | `assets/art/fr/hero/fr-hero-2x1.webp` | 1600×800 | `assets/art/masters/fr/hero/fr-hero.png` | 1672×941 | ChatGPT, bijgesneden | 2026-11-12 | Goedgekeurd |

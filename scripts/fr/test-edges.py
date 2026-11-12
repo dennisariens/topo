@@ -50,11 +50,13 @@ with sync_playwright() as p:
         ("metz", C("nancy"), False, "Metz gevraagd, tik op Nancy"),
         ("nancy", C("metz"), False, "Nancy gevraagd, tik op Metz"),
         ("metz", (M["metz"]["x"] + px(10), M["metz"]["y"]), True, "Metz, 10 px ernaast"),
+        ("metz", ((M["metz"]["x"] + M["nancy"]["x"]) / 2, (M["metz"]["y"] + M["nancy"]["y"]) / 2), "kies", "Midden tussen Metz en Nancy -> verduidelijking"),
+        ("rijn", pt(G["rijn"].buffer(px(4)).intersection(G["maas"].buffer(px(30)))) if not G["rijn"].buffer(px(4)).intersection(G["maas"].buffer(px(30))).is_empty else C("straatsburg"), True, "Rijn, waar de Maas niet ver is"),
         ("dordogne", pt(G["dordogne"].buffer(px(8)).difference(G["dordogne"].buffer(px(3)))), True, "Dordogne, net buiten de rand (≈ 3–8 px)"),
         ("dordogne", pt(G["dordogne"].buffer(px(40)).difference(G["dordogne"].buffer(px(25)))), False, "Dordogne, 25–40 px ernaast"),
-        ("luxemburg", pt(G["belgie"].intersection(G["luxemburg"].buffer(px(8)))), True, "Luxemburg, net in België naast de grens (klein land)"),
+        ("luxemburg", pt(G["belgie"].intersection(G["luxemburg"].buffer(px(8)))), "kies", "Luxemburg, net in België naast de grens -> verduidelijking"),
         ("belgie", pt(G["luxemburg"].buffer(-px(4))), False, "België gevraagd, tik midden in Luxemburg"),
-        ("nauw-van-calais", pt(G["het-kanaal"].intersection(G["nauw-van-calais"].buffer(px(6)))), True, "Nauw van Calais, net in Het Kanaal"),
+        ("nauw-van-calais", pt(G["het-kanaal"].intersection(G["nauw-van-calais"].buffer(px(6)))), "kies", "Nauw van Calais, net in Het Kanaal -> verduidelijking"),
         ("het-kanaal", pt(G["nauw-van-calais"].buffer(-px(1))), False, "Het Kanaal gevraagd, tik midden in het Nauw"),
         ("atlantische-oceaan", pt(G["golf-van-biskaje"]), True, "Atlantische Oceaan, tik in de Golf van Biskaje (hoort erbij)"),
         ("golf-van-biskaje", pt(G["atlantische-oceaan"]), False, "Golf van Biskaje gevraagd, tik in open oceaan"),
@@ -83,9 +85,15 @@ with sync_playwright() as p:
     fails = 0
     for ask, (x, y), want, desc in cases:
         r = pg.evaluate("([id,x,y])=>grade(id,x,y)", [ask, x, y])
-        ok = r["ok"] == want
+        if want == "kies":
+            ok = r["ok"] is None and ask in r["choices"] and len(r["choices"]) > 1
+        elif want is True:
+            ok = r["ok"] is True or (r["ok"] is None and ask in r["choices"])
+        else:
+            ok = r["ok"] is False or (r["ok"] is None and ask not in r["choices"])
         fails += not ok
-        print(("ok   " if ok else "FOUT ") + f"{desc}: {'goed' if r['ok'] else 'fout'}" + ("" if r["ok"] else f" (aangetikt: {r['got']})"))
+        res = "kiezen uit " + ", ".join(r["choices"]) if r["ok"] is None else ("goed" if r["ok"] else f"fout (aangetikt: {r['got']})")
+        print(("ok   " if ok else "FOUT ") + f"{desc}: {res}")
     b.close()
 print(f"\n{len(cases) - fails}/{len(cases)} randgevallen zoals bedoeld")
 sys.exit(1 if fails else 0)

@@ -96,6 +96,21 @@ header{flex-wrap:wrap}
  @keyframes drive{0%{transform:translateX(0) rotate(0)}20%{transform:translateX(25vw) rotate(-1.5deg)}40%{transform:translateX(50vw) rotate(1deg)}100%{transform:translateX(calc(100vw + 340px)) rotate(0)}}
 }
 @media (prefers-reduced-motion:reduce){#ride .scoot{left:50%;margin-left:-130px}}
+/* keuzevenster bij twijfel: welke plek bedoel je? */
+#pick{position:fixed;inset:0;background:#2a244066;display:grid;place-items:center;z-index:40;padding:12px}
+#pick[hidden]{display:none}
+.pickcard{background:#fff;border-radius:18px;padding:16px;width:min(460px,96vw);display:grid;gap:12px;box-shadow:0 20px 50px #0004}
+.pickcard h2{margin:0;font-size:20px}
+.pickcard p{margin:0;color:var(--soft);font-size:14px}
+#pickmap{width:100%;height:auto;border-radius:12px;display:block;max-height:52vh}
+#pickBtns{display:flex;gap:8px;flex-wrap:wrap}
+#pickBtns button{font:inherit;font-weight:700;font-size:20px;min-width:64px;min-height:52px;border:0;border-radius:12px;background:var(--violet);color:#fff;cursor:pointer;padding:0 16px}
+#pickBtns button small{font-size:15px;font-weight:600;margin-left:6px}
+.pk-badge{fill:#fff;stroke:var(--violet)}
+.pk-num{fill:var(--ink);font-weight:800;font-family:-apple-system,Helvetica,Arial,sans-serif;text-anchor:middle;dominant-baseline:central}
+.pk-lead{stroke:var(--violet);fill:none}
+.pk-area{fill:var(--violet);fill-opacity:.12;stroke:var(--violet);stroke-dasharray:5 4}
+.pk-river{fill:none;stroke:var(--violet)}
 </style>
 </head>
 <body>
@@ -119,6 +134,7 @@ header{flex-wrap:wrap}
   <div class="mapwrap"><svg id="map" role="img" aria-label="Kaart van Frankrijk"></svg></div>
   <section class="panel" id="panel" aria-live="polite"></section>
 </main>
+<div id="pick" hidden role="dialog" aria-modal="true" aria-labelledby="pickT"><div class="pickcard"><h2 id="pickT">Welke plek bedoel je?</h2><p id="pickP">Hier liggen meer plekken dicht bij elkaar. Kies het nummer.</p><svg id="pickmap" aria-hidden="true"></svg><div id="pickBtns"></div><button class="btn" id="pickX" type="button">Annuleren</button></div></div>
 <div id="toast" role="status"></div>
 <div id="ride" aria-hidden="true"><div class="msg" id="rideMsg"></div><div class="scoot"><img class="n" alt="" src="__NINO__"><img class="v" alt="" src="__VESPA__"></div></div>
 <footer>Kaartdata: Natural Earth (publiek domein). Lesstof: schoolblad "Topografie Frankrijk". Voortgang blijft alleen op dit apparaat.</footer>
@@ -165,6 +181,7 @@ for(const it of ITEMS) if(it.type==='rivier'){
 const segDist=(px,py,[ax,ay],[bx,by])=>{const dx=bx-ax,dy=by-ay,l=dx*dx+dy*dy;let t=l?((px-ax)*dx+(py-ay)*dy)/l:0;t=Math.max(0,Math.min(1,t));return Math.hypot(px-ax-t*dx,py-ay-t*dy)};
 const riverDist=(id,x,y)=>{let m=1e9;for(const line of RIV[id])for(let i=1;i<line.length;i++)m=Math.min(m,segDist(x,y,line[i-1],line[i]));return m};
 const unitsPerPx=()=>{const r=svg.getBoundingClientRect();return W/r.width};
+const pickBtns=document.getElementById('pickBtns'), pickP=document.getElementById('pickP');
 const toSvg=(cx,cy)=>{const p=svg.createSVGPoint();p.x=cx;p.y=cy;return p.matrixTransform(svg.getScreenCTM().inverse())};
 
 // ---------- aanwijzen: wat ligt er op dit punt? ----------
@@ -187,20 +204,77 @@ function hitsAt(x,y,type){
       const e=nearEdge(it.id,x,y,PX_EDGE*u); if(e!=null) out.push({id:it.id,d:e/u,edge:1}); } }
   return out.sort((a,b)=>a.d-b.d);
 }
-// beoordeling: {ok, got} — got is wat er werkelijk is aangetikt (voor de uitleg)
-function grade(id,x,y){
-  const it=BYID[id], h=hitsAt(x,y,it.type);
-  if(!h.length) return {ok:false,got:null};
-  if(!AREA(it.type)) return {ok:h[0].id===id,got:h[0].id};
-  const inside=h.filter(c=>c.inside).map(c=>c.id), me=h.find(c=>c.id===id);
-  if(inside.includes(id)||(PARENT[id]||[]).some(p=>inside.includes(p))) return {ok:true,got:id};
-  if(me&&(!inside.length||SMALL.has(id))) return {ok:true,got:id};
-  return {ok:false,got:inside[0]||h[0].id};
+// ---------- kandidaten en verduidelijking ----------
+// Stip of rivier: alles binnen 22 px. Tik je duidelijk op één stip (< 8 px, de volgende > 16 px), dan geen vraag.
+// Vlak: binnen de vorm; zonder vlak eronder ook de vlakken tot 14 px; kleine vlakken altijd tot 14 px.
+// Meer dan één kandidaat -> keuzevenster met nummers (willekeurige volgorde, verraadt het antwoord niet).
+function nearPt(line,x,y){let best=[1e9,x,y];for(let i=1;i<line.length;i++){const [ax,ay]=line[i-1],[bx,by]=line[i],dx=bx-ax,dy=by-ay,l=dx*dx+dy*dy;let t=l?((x-ax)*dx+(y-ay)*dy)/l:0;t=Math.max(0,Math.min(1,t));const px=ax+t*dx,py=ay+t*dy,d=Math.hypot(x-px,y-py);if(d<best[0])best=[d,px,py];}return best}
+function edgePoint(id,x,y,r){for(const f of [0.5,1])for(let k=0;k<12;k++){const a=k*Math.PI/6,px=x+Math.cos(a)*r*f,py=y+Math.sin(a)*r*f;if(inFill(id,px,py))return [px,py];}return null}
+function anchorOf(c,x,y){const m=MAP.items[c.id],t=BYID[c.id].type;
+  if(t==='stad'||(m.x!=null&&!inFill(c.id,x,y)))return [m.x,m.y];
+  if(t==='rivier'){let b=[1e9,x,y];for(const l of RIV[c.id]){const n=nearPt(l,x,y);if(n[0]<b[0])b=n;}return [b[1],b[2]];}
+  if(c.inside)return [x,y];
+  return edgePoint(c.id,x,y,PX_EDGE*unitsPerPx())||[m.lx,m.ly];}
+function candidates(type,x,y){
+  const h=hitsAt(x,y,type);let out;
+  if(!h.length) return [];
+  if(!AREA(type)){ out=(h[0].d<=8&&(!h[1]||h[1].d>16))?[h[0]]:h; }
+  else { const ins=h.filter(c=>c.inside);
+    out=ins.length?[...ins,...h.filter(c=>c.edge&&SMALL.has(c.id))]:h; }
+  return out.map(c=>({id:c.id,a:anchorOf(c,x,y)}));
 }
-// in Leren: het kleinste wat je aantikt (stip of rivier voor een vlak, klein vlak voor een groot)
-function pickAt(x,y){const h=hitsAt(x,y).filter(c=>c.pt||c.inside);if(!h.length)return null;
-  const pts=h.filter(c=>c.pt);if(pts.length)return pts[0].id;
-  return h.map(c=>[c.id,NODE[c.id].getBBox()]).sort((a,b)=>a[1].width*a[1].height-b[1].width*b[1].height)[0][0];}
+const okFor=(asked,got)=>got===asked||(PARENT[asked]||[]).includes(got);
+// synchroon, voor tests: {ok:true|false|null, got, choices}
+function grade(id,x,y){const c=candidates(BYID[id].type,x,y);
+  if(!c.length) return {ok:false,got:null,choices:[]};
+  if(c.length===1) return {ok:okFor(id,c[0].id),got:c[0].id,choices:[c[0].id]};
+  return {ok:null,got:null,choices:c.map(k=>k.id)};}
+// in Leren: stippen en rivieren onder de vinger, en vlakken waar je in tikt (alle soorten)
+function learnCandidates(x,y){const h=hitsAt(x,y).filter(c=>c.pt||c.inside);
+  const pts=h.filter(c=>c.pt), close=pts.length&&pts[0].d<=8&&(!pts[1]||pts[1].d>16)?[pts[0]]:pts;
+  const list=close.length?close:h.filter(c=>c.inside).sort((a,b)=>{const A=NODE[a.id].getBBox(),B=NODE[b.id].getBBox();return A.width*A.height-B.width*B.height});
+  return (close.length?list:list.slice(0,4)).map(c=>({id:c.id,a:anchorOf(c,x,y)}));}
+
+let pickCb=null;
+function resolveTap(list,x,y,named,cb){ if(list.length<=1) return cb(list.length?list[0].id:null); openPicker(list,x,y,named,cb); }
+function openPicker(list,x,y,named,cb){
+  pickCb=cb;const n=list.length;
+  // uitsnede rond de tik, groot genoeg voor alle ankers
+  const far=Math.max(...list.map(c=>Math.hypot(c.a[0]-x,c.a[1]-y)));
+  const S=Math.max(90,far*3.2), x0=x-S/2, y0=y-S/2, k=S/400; // k = eenheden per px in de uitsnede (±400 px breed)
+  const ns=list.map(c=>({...c,a:c.a.slice()})), order=shuffle(ns.map((_,i)=>i)); // nummer per kandidaat, willekeurig
+  // vallen twee ankers samen (stad aan rivier), dan wijst het lijntje van de rivier naar een stuk rivier ernaast
+  ns.forEach((c,i)=>{ if(BYID[c.id].type!=='rivier') return;
+    if(!ns.some((o,j)=>j!==i&&Math.hypot(o.a[0]-c.a[0],o.a[1]-c.a[1])<S*0.06)) return;
+    let best=null,bd=1e9; for(const l of RIV[c.id]) for(const [vx,vy] of l){const d=Math.abs(Math.hypot(vx-x,vy-y)-S*0.2); if(d<bd){bd=d;best=[vx,vy];}}
+    if(best) c.a=best; });
+  const ang=ns.map(c=>{const dx=c.a[0]-x,dy=c.a[1]-y;return Math.hypot(dx,dy)<S*0.02?null:Math.atan2(dy,dx)});
+  const idx=ns.map((_,i)=>i).sort((i,j)=>(ang[i]??-9)-(ang[j]??-9));
+  const base=ang[idx[0]]??-Math.PI/2, R=S*0.34, br=S*0.06;
+  const pos={}; idx.forEach((i,j)=>{const t=base+j*2*Math.PI/n;pos[i]=[x+Math.cos(t)*R,y+Math.sin(t)*R]});
+  const sw=v=>`stroke-width="${v}" vector-effect="non-scaling-stroke"`;
+  let h=`<rect x="${x0-S}" y="${y0-S}" width="${3*S}" height="${3*S}" class="sea"/><path d="${MAP.context.land}" class="ctx-land" ${sw(1)}/><path d="${MAP.context.france}" class="fr" ${sw(1.6)}/><path d="${MAP.context.lakes}" class="lakes"/><path d="${MAP.context.rivers}" class="ctx-rivers" ${sw(1)}/><path d="${MAP.context.borders}" class="borders" ${sw(1)}/>`;
+  for(const it of ITEMS){const m=MAP.items[it.id];if(it.type==='rivier')h+=`<path d="${m.d}" class="t-river" ${sw(2.5)}/>`;}
+  ns.forEach(c=>{const t=BYID[c.id].type,m=MAP.items[c.id];
+    if(AREA(t)&&m.x==null)h+=`<path d="${m.d}" class="pk-area" fill-rule="evenodd" ${sw(2)}/>`;
+    if(t==='rivier')h+=`<path d="${m.d}" class="pk-river" ${sw(5)}/>`;});
+  for(const it of ITEMS){const m=MAP.items[it.id];
+    if(it.type==='stad')h+=`<circle cx="${m.x}" cy="${m.y}" r="${4.5*k}" class="t-city"/>`;
+    else if(m.x!=null)h+=`<path d="M${m.x} ${m.y-5*k}l${5*k} ${5*k}l${-5*k} ${5*k}l${-5*k} ${-5*k}z" class="t-micro"/>`;}
+  ns.forEach((c,i)=>{const [bx,by]=pos[i],[ax,ay]=c.a,d=Math.hypot(ax-bx,ay-by)||1,ex=bx+(ax-bx)/d*br,ey=by+(ay-by)/d*br;
+    const rr=7*k,ux=(ax-bx)/d,uy=(ay-by)/d;
+    h+=`<line x1="${ex}" y1="${ey}" x2="${ax-ux*rr}" y2="${ay-uy*rr}" class="pk-lead" ${sw(2)}/><circle cx="${ax}" cy="${ay}" r="${rr}" fill="none" stroke="#6a4fd6" ${sw(2.5)}/>`;
+    h+=`<circle cx="${bx}" cy="${by}" r="${br}" class="pk-badge" ${sw(3)}/><text x="${bx}" y="${by}" class="pk-num" font-size="${br*1.15}">${order[i]+1}</text>`;});
+  const pm=document.getElementById('pickmap');pm.setAttribute('viewBox',`${x0} ${y0} ${S} ${S}`);pm.innerHTML=h;
+  pickP.textContent=named?'Hier liggen meer plekken. Welke wil je zien?':'Hier liggen meer plekken dicht bij elkaar. Kies het nummer.';
+  const btn=ns.map((c,i)=>[order[i]+1,c.id]).sort((a,b)=>a[0]-b[0]);
+  pickBtns.innerHTML=btn.map(([nr,id])=>`<button type="button" data-id="${id}">${nr}${named?`<small>${BYID[id].nl}</small>`:''}</button>`).join('');
+  pickBtns.querySelectorAll('button').forEach(b=>b.onclick=()=>closePicker(b.dataset.id));
+  document.getElementById('pick').hidden=false;pickBtns.querySelector('button').focus();
+}
+function closePicker(id){const cb=pickCb;pickCb=null;document.getElementById('pick').hidden=true;if(id&&cb)cb(id);}
+document.getElementById('pickX').onclick=()=>closePicker(null);
+document.addEventListener('keydown',e=>{if(e.key==='Escape'&&!document.getElementById('pick').hidden)closePicker(null);});
 
 // ---------- markeren en namen ----------
 function clearMarks(){gHL.textContent='';gLbl.textContent='';}
@@ -292,7 +366,7 @@ function leren(){
   const show=id=>{clearMarks();mark(id,'hl');label(id);panel.querySelectorAll('ul.items button').forEach(b=>b.setAttribute('aria-current',b.dataset.id===id));};
   panel.querySelectorAll('ul.items button').forEach(b=>b.onclick=()=>show(b.dataset.id));
   panel.querySelector('#all').onclick=()=>{clearMarks();ids.forEach(label);};
-  onTap=(x,y)=>{const id=pickAt(x,y); if(!id) return; if(ids.includes(id)) show(id); else {clearMarks();mark(id,'hl');label(id);}};
+  onTap=(x,y)=>resolveTap(learnCandidates(x,y),x,y,true,id=>{ if(!id) return; if(ids.includes(id)) show(id); else {clearMarks();mark(id,'hl');label(id);} });
 }
 
 function wijs(){ if(!chapterItems().length) return emptyMsg(); askWijs(); }
@@ -304,10 +378,10 @@ function askWijs(){
   const finish=(ok,msg)=>{answered=true;score(ok,cur);fb.className='fb '+(ok?'good':'bad');fb.textContent=msg;
     panel.querySelector('.row').innerHTML='<button class="btn primary" id="nx">Volgende</button>';panel.querySelector('#nx').onclick=askWijs;panel.querySelector('#nx').focus();};
   panel.querySelector('#skip').onclick=()=>{mark(cur,'ok',true);label(cur);finish(false,`Hier ligt ${it.nl}.`);};
-  onTap=(x,y)=>{ if(answered) return; const r=grade(cur,x,y);
-    if(r.ok){mark(cur,'ok');label(cur);finish(true,'Goed zo!');}
-    else if(r.got){mark(r.got,'no');label(r.got);mark(cur,'ok',true);label(cur);finish(false,`Dat is ${BYID[r.got].nl}. ${it.nl} ligt hier.`);}
-    else {el('circle',{cx:x,cy:y,r:7*unitsPerPx(),class:'tap'},gHL);mark(cur,'ok',true);label(cur);finish(false,`Daar ligt geen ${TYPE_NL[it.type]}. ${it.nl} ligt hier.`);} };
+  onTap=(x,y)=>{ if(answered) return; resolveTap(candidates(it.type,x,y),x,y,false,got=>{ if(answered) return;
+    if(got&&okFor(cur,got)){mark(cur,'ok');label(cur);finish(true,'Goed zo!');}
+    else if(got){mark(got,'no');label(got);mark(cur,'ok',true);label(cur);finish(false,`Dat is ${BYID[got].nl}. ${it.nl} ligt hier.`);}
+    else {el('circle',{cx:x,cy:y,r:7*unitsPerPx(),class:'tap'},gHL);mark(cur,'ok',true);label(cur);finish(false,`Daar ligt geen ${TYPE_NL[it.type]}. ${it.nl} ligt hier.`);} }); };
 }
 
 function schrijf(){ if(!chapterItems().length) return emptyMsg(); askSchrijf(); }
@@ -339,7 +413,7 @@ function toetsQ(){
   if(kind==='wijs'){
     panel.innerHTML=head+`<div class="prompt">Wijs aan (${TYPE_NL[it.type]}):<b>${it.nl}</b></div><button class="btn" id="skip">Weet ik niet</button>`;
     panel.querySelector('#skip').onclick=()=>done(false);
-    onTap=(x,y)=>{onTap=null;done(grade(id,x,y).ok);};
+    onTap=(x,y)=>resolveTap(candidates(it.type,x,y),x,y,false,got=>{ if(!onTap) return; onTap=null; done(!!got&&okFor(id,got)); });
   } else {
     mark(id,'hl',true);
     panel.innerHTML=head+`<div class="prompt">Welke ${TYPE_NL[it.type]} is gekleurd?</div><form id="f" autocomplete="off"><input type="text" id="in" autocapitalize="words" autocorrect="off" spellcheck="false" aria-label="Naam"></form><div class="row"><button class="btn primary" form="f">Volgende</button></div>`;

@@ -65,12 +65,16 @@ python3 scripts/fr/check-map.py
 `output/fr/TOPO-Frankrijk-oefenkaart.html` is één offline bestand van 346 KB, in de opzet van v1:
 - **Leren:** per hoofdstuk, of alle namen tonen.
 - **Aanwijzen:**
-  - stippen en rivieren: binnen 22 px, alleen de dichtstbijzijnde telt (Metz/Nancy);
-  - vlakken: binnen de vorm, of tot 14 px naast de rand;
-  - kleine vlakken (Luxemburg, Nauw van Calais, Monaco, Andorra): die marge geldt ook als je net in het buurvlak tikt;
-  - overlappende soorten (Elzas/Vogezen, Provence/Alpen, stad aan rivier of zee): alleen de gevraagde soort telt;
+  - stippen en rivieren tellen binnen 22 px, vlakken binnen de vorm of tot 14 px naast de rand;
+  - kleine vlakken (Luxemburg, Nauw van Calais, Monaco, Andorra) houden die marge van 14 px ook over een buurvlak heen;
+  - alleen de gevraagde soort telt, dus Elzas/Vogezen, Provence/Alpen en een stad aan een rivier of zee zitten elkaar niet in de weg;
   - een tik in de Golf van Biskaje telt ook voor de Atlantische Oceaan.
-  - `scripts/fr/test-edges.py` test 32 van zulke randgevallen op iPad-formaat.
+- **Verduidelijking bij twijfel** (zoals bij Italië): liggen er meer plekken van de gevraagde soort onder de tik, dan verschijnt een uitvergrote uitsnede.
+  - Elke kandidaat heeft daarin een genummerde badge, met een lijntje naar de stip, de rivier of het vlak. Je kiest het nummer, of Annuleren of Escape.
+  - De nummers staan in willekeurige volgorde en verraden het antwoord niet. Alleen bij Leren staan de namen bij de knoppen.
+  - Vallen een stad en een rivier samen (Parijs/Seine), dan wijst het lijntje van de rivier naar een stuk rivier ernaast.
+  - Tik je duidelijk op één stip (minder dan 8 px ervandaan, en de volgende meer dan 16 px), dan komt er geen vraag.
+- `scripts/fr/test-edges.py` test 34 randgevallen op iPad-formaat, waaronder de verduidelijking bij Metz/Nancy, Luxemburg/België, Nauw/Kanaal en Nauw/Noordzee.
 - **Namen schrijven:** hoofdletters tellen niet. Zonder accent meldt hij "bijna" met de juiste schrijfwijze. De spelling "LeHavre" van het blad telt als goed.
 - **Toets:** elke plek één keer, om en om aanwijzen en schrijven, met uitslag en cijfer. In de toets moet de schrijfwijze foutloos zijn.
 - **Mijn fouten:** een apart hoofdstuk.

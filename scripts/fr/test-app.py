@@ -57,6 +57,8 @@ with sync_playwright() as p:
         i = NAME2ID[name]
         seen.add(i)
         tap(pg, *target(i))
+        if pg.is_visible("#pick"):  # verduidelijking: kies het gevraagde nummer
+            pg.click(f'#pickBtns button[data-id="{i}"]')
         cls = pg.get_attribute("#fb", "class")
         if "good" not in cls:
             fails.append(f"aanwijzen {i}: {pg.inner_text('#fb')}")

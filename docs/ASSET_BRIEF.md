@@ -79,7 +79,7 @@ Rijdende pose bestaat al (`nino-op-de-scooter.webp`). Nodig: 8 losse poses, **st
 Universeel klaar: 1a–1h (+ 1b-variant), 2a–2d, 3a–3b, met masters. Frankrijk: nog niets.
 Bijgewerkt na de V4-besluiten: Frankrijk heeft **11 hoofdstukken** (per kopje op het schoolblad) en de beloning is een **gebakjesdoos met 6 Franse gebakjes; 3 volle dozen = een Vespa-rit**. De bakkerijvitrine en de 5 regio-stempels uit de eerste versie vervallen.
 
-Volgorde Frankrijk: 6 → 7a/7b → 8 → 9. (6, 7a–7h, 8 en 8b zijn klaar.) Stempels en tegels per hoofdstuk (10) pas na de oefenkaart.
+Volgorde Frankrijk: 6 → 7a/7b → 8 → 9. (6, 7a–7h, 8, 8b, 9a en 9b zijn klaar: fase 1 Frankrijk compleet.) Stempels en tegels per hoofdstuk (10) pas na de oefenkaart.
 
 ## 6 · Hero Frankrijk — 1536×1024
 

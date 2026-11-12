@@ -9,8 +9,8 @@ output; index.html, src/v2/ and the masters are never changed.
   --stap 3   + scale to at most 2× the largest display size (desktop or iPad, CSS px), never up; WebP, SSIM-checked
   --stap 4   + AVIF where it passes SSIM ≥ 0.97 against the scaled reference (see ASSETDIEET.md)
 
-Visual rule: a scaled export is only kept when it is smaller than the source and its SSIM against a Lanczos reference at
-the same size is ≥ 0.99 (WebP). Doubt → the source stays.
+Visual rule: lossy WebP only when its SSIM against a Lanczos reference at the same size is ≥ 0.99; otherwise lossless WebP
+of the scaled image. An export is only kept with a saving of ≥ 20 KB. Doubt → the source stays.
 """
 import argparse,base64,hashlib,io,json,pathlib,re,sys
 import numpy as np
@@ -62,11 +62,14 @@ def encode_webp(ref,lossless_src):
  if lossless_src:
   b=save(ref,'WEBP',lossless=True,method=6);return b,1.0,'lossless'
  best=None
- for q in (80,85,90,94):
+ for q in (80,85,90,94,97):
   b=save(ref,'WEBP',quality=q,method=6,alpha_quality=100)
   s=ssim(sample(ref),sample(Image.open(io.BytesIO(b))))
   if s>=WEBP_SSIM:best=(b,s,q);break
- if not best:b=save(ref,'WEBP',quality=97,method=6,alpha_quality=100);best=(b,ssim(sample(ref),sample(Image.open(io.BytesIO(b)))),97)
+ if not best:
+  b=save(ref,'WEBP',quality=97,method=6,alpha_quality=100)
+  if ssim(sample(ref),sample(Image.open(io.BytesIO(b))))>=WEBP_SSIM:best=(b,ssim(sample(ref),sample(Image.open(io.BytesIO(b)))),97)
+  else:best=(save(ref,'WEBP',lossless=True,method=6,quality=100),1.0,'lossless')  # no lossy setting reaches the bar: exact pixels
  return best
 
 def main():

@@ -1,9 +1,201 @@
 {
  "version": 1,
- "stap": 2,
+ "stap": 3,
  "placeholder": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNkYPhfDwAChwGA60e6kgAAAABJRU5ErkJggg==",
  "rule": "Vervanging alleen in de V3-preview. Stap 2: bewezen ongebruikt → 1×1 transparante PNG. Stap 3: hooguit 2× de grootste weergavemaat (desktop of iPad, CSS px), nooit groter; WebP met SSIM ≥ 0.99 tegen een Lanczos-referentie; alleen bij een winst van ≥ 20 KB; reliëf/kaartlagen en landmarks blijven ongewijzigd (uitlijning op de geometrie).",
  "images": {
+  "9e350e91c1a2f6f172bc0aa12c41a0212f78d6bc661ec4c4905c1105235252b6": {
+   "id": "assets/v2/nino-v2-sardegna.webp",
+   "kind": "scene",
+   "sourceBytes": 2683314,
+   "sourceSize": [
+    1536,
+    1024
+   ],
+   "action": "scale",
+   "path": "assets/v3/dieet/9e350e91c1a2-753x502.webp",
+   "mime": "image/webp",
+   "size": [
+    753,
+    502
+   ],
+   "bytes": 663880,
+   "sha256": "4e2ddd0d7bac0b7fc3700521c544f4475d00f2cdd573408da1adf4d828b419a6",
+   "quality": "lossless",
+   "ssim": 1.0,
+   "targetCss": [
+    376,
+    251
+   ]
+  },
+  "8c7e1ef3cd72816e41656eeee5c142413b1259ac211b313b55b50458c35ef6ae": {
+   "id": "assets/v2/nino-v2-sicilia.webp",
+   "kind": "scene",
+   "sourceBytes": 2515504,
+   "sourceSize": [
+    1536,
+    1024
+   ],
+   "action": "scale",
+   "path": "assets/v3/dieet/8c7e1ef3cd72-753x502.webp",
+   "mime": "image/webp",
+   "size": [
+    753,
+    502
+   ],
+   "bytes": 634674,
+   "sha256": "1b68ae23ea6816e33c5e7d75f85cde1ac503d2e9b21a87aac9592631f5bfa303",
+   "quality": "lossless",
+   "ssim": 1.0,
+   "targetCss": [
+    376,
+    251
+   ]
+  },
+  "819a3d3d1de50d5fb78d67ef7cbdbe9bafb6620cfa144e57842813a8df70ee94": {
+   "id": "assets/v2/nino-v2-napoli.webp",
+   "kind": "scene",
+   "sourceBytes": 2449680,
+   "sourceSize": [
+    1536,
+    1024
+   ],
+   "action": "scale",
+   "path": "assets/v3/dieet/819a3d3d1de5-753x502.webp",
+   "mime": "image/webp",
+   "size": [
+    753,
+    502
+   ],
+   "bytes": 648596,
+   "sha256": "495ed8343be41e4242c24761e35265df9d15eca766a0dd13965a0a97098aaf36",
+   "quality": "lossless",
+   "ssim": 1.0,
+   "targetCss": [
+    376,
+    251
+   ]
+  },
+  "45902f75dcb6e5c8185190a707ab03d9e422aed45639a711ccc14618647e2e03": {
+   "id": "assets/v2/nino-v2-venezia.webp",
+   "kind": "scene",
+   "sourceBytes": 2341994,
+   "sourceSize": [
+    1497,
+    973
+   ],
+   "action": "scale",
+   "path": "assets/v3/dieet/45902f75dcb6-754x490.webp",
+   "mime": "image/webp",
+   "size": [
+    754,
+    490
+   ],
+   "bytes": 676412,
+   "sha256": "1884dc558327c6d7d02825af7513892f9257b6780ff1cde44f5167d4a95fbf27",
+   "quality": "lossless",
+   "ssim": 1.0,
+   "targetCss": [
+    376,
+    245
+   ]
+  },
+  "cc3cd8efb2075698df1c50c8b82c833d4032585b43ea208d8fa86e0d7b336be4": {
+   "id": "assets/v2/nino-v2-arrival.webp",
+   "kind": "scene",
+   "sourceBytes": 1599446,
+   "sourceSize": [
+    1536,
+    1536
+   ],
+   "action": "scale",
+   "path": "assets/v3/dieet/cc3cd8efb207-396x396.webp",
+   "mime": "image/webp",
+   "size": [
+    396,
+    396
+   ],
+   "bytes": 85348,
+   "sha256": "2167ce9bef6683a44b114a164785669b012cfb800d174ed94d837a23d0488e08",
+   "quality": 90,
+   "ssim": 0.9915,
+   "targetCss": [
+    198,
+    198
+   ]
+  },
+  "8901f57c74feb6d81fea23cb7b216ef403b982e8bdf66f1c89ea83eca15add44": {
+   "id": "assets/v2/nino-v2-cover.webp",
+   "kind": "scene",
+   "sourceBytes": 1528760,
+   "sourceSize": [
+    1254,
+    1254
+   ],
+   "action": "scale",
+   "path": "assets/v3/dieet/8901f57c74fe-834x834.webp",
+   "mime": "image/webp",
+   "size": [
+    834,
+    834
+   ],
+   "bytes": 720120,
+   "sha256": "893eeddbd2fecae7fd30f501a8ffd43f8263f5af0aaa3310014be5a010fe78f1",
+   "quality": "lossless",
+   "ssim": 1.0,
+   "targetCss": [
+    417,
+    417
+   ]
+  },
+  "b9dbc0d44b4a69fdd3ce3bdafbcdee761d059203c9b73013a535087138c2f93a": {
+   "id": "assets/v2/nino-v2-stamp4.webp",
+   "kind": "icoon",
+   "sourceBytes": 852496,
+   "sourceSize": [
+    1254,
+    1254
+   ],
+   "action": "scale",
+   "path": "assets/v3/dieet/b9dbc0d44b4a-264x264.webp",
+   "mime": "image/webp",
+   "size": [
+    264,
+    264
+   ],
+   "bytes": 27408,
+   "sha256": "85cf1f22c12c6d5d19e017c71d7ebcf71679e3fa895d2992dec4b32bf0e0c6a6",
+   "quality": 80,
+   "ssim": 0.9935,
+   "targetCss": [
+    132,
+    132
+   ]
+  },
+  "89966925cb2f277e89bdd53eb22a5a328a26c54c1f52ccf9a91a3b263bd4a568": {
+   "id": "assets/v2/nino-art-welcome.webp",
+   "kind": "nino",
+   "sourceBytes": 247918,
+   "sourceSize": [
+    1254,
+    1254
+   ],
+   "action": "scale",
+   "path": "assets/v3/dieet/89966925cb2f-388x388.webp",
+   "mime": "image/webp",
+   "size": [
+    388,
+    388
+   ],
+   "bytes": 133478,
+   "sha256": "52d135d887ebe134274b9fd5ef2c0cc18ab135933ae55814f85976bfcc68737d",
+   "quality": "lossless",
+   "ssim": 1.0,
+   "targetCss": [
+    194,
+    194
+   ]
+  },
   "6bd74e9cdc1388172c119b02d32e512862ae08c40b588f834d53efd98cdcea7b": {
    "id": "assets/v3/scenes/topo-streken-toscana.webp",
    "kind": "scene",
@@ -59,6 +251,30 @@
    "action": "placeholder",
    "reason": "hoofdstukscène \"kop\": scripts/v3 leest alleen scenes[id].mini, nooit .kop"
   },
+  "b00fb30fc5ebfedcdec8970fa78bbba48b6d1b52288d5aa440a85dd6b9dfcae5": {
+   "id": "assets/v2/nino-v2-stamp2.webp",
+   "kind": "icoon",
+   "sourceBytes": 392392,
+   "sourceSize": [
+    768,
+    768
+   ],
+   "action": "scale",
+   "path": "assets/v3/dieet/b00fb30fc5eb-262x262.webp",
+   "mime": "image/webp",
+   "size": [
+    262,
+    262
+   ],
+   "bytes": 50684,
+   "sha256": "e6957c4a5eb472b9adb876db2ae7dfac57f8803858ffabd58b6931dd8e14a966",
+   "quality": 80,
+   "ssim": 0.9904,
+   "targetCss": [
+    131,
+    131
+   ]
+  },
   "a69ae30fda1271431e5d1ffe7145249f0c25a048074d185a1a81fbad2f3811e1": {
    "id": "assets/v3/scenes/topo-rivieren-po.webp",
    "kind": "scene",
@@ -69,6 +285,78 @@
    ],
    "action": "placeholder",
    "reason": "hoofdstukscène \"kop\": scripts/v3 leest alleen scenes[id].mini, nooit .kop"
+  },
+  "063a643d0d16436e0be7fdacd39316d0bf1bd99427137bf284c027b0610b63b7": {
+   "id": "assets/v2/nino-v2-stamp10.webp",
+   "kind": "icoon",
+   "sourceBytes": 375622,
+   "sourceSize": [
+    768,
+    768
+   ],
+   "action": "scale",
+   "path": "assets/v3/dieet/063a643d0d16-268x268.webp",
+   "mime": "image/webp",
+   "size": [
+    268,
+    268
+   ],
+   "bytes": 50738,
+   "sha256": "60c6cc7f4344da43a6c9a934a22a4289fbd3fe384eb5aad18fd9934cd066ea60",
+   "quality": 80,
+   "ssim": 0.9924,
+   "targetCss": [
+    134,
+    134
+   ]
+  },
+  "4d989d4b6147acd3b43ff11ee068123eea643ec5d2cc530d7fa3826dd4430c98": {
+   "id": "assets/v2/nino-v2-stamp5.webp",
+   "kind": "icoon",
+   "sourceBytes": 363386,
+   "sourceSize": [
+    768,
+    768
+   ],
+   "action": "scale",
+   "path": "assets/v3/dieet/4d989d4b6147-262x262.webp",
+   "mime": "image/webp",
+   "size": [
+    262,
+    262
+   ],
+   "bytes": 44920,
+   "sha256": "616469a63a12868b837146726940705dea9fba872b3fc67c3e3389dc7df4759c",
+   "quality": 80,
+   "ssim": 0.9937,
+   "targetCss": [
+    131,
+    131
+   ]
+  },
+  "de4d32cf277a806fad8fc343451f574ef7a9d0a482cc2b8bb7e5c24c3fc47125": {
+   "id": "assets/v2/nino-v2-stamp0.webp",
+   "kind": "icoon",
+   "sourceBytes": 358350,
+   "sourceSize": [
+    768,
+    768
+   ],
+   "action": "scale",
+   "path": "assets/v3/dieet/de4d32cf277a-268x268.webp",
+   "mime": "image/webp",
+   "size": [
+    268,
+    268
+   ],
+   "bytes": 48708,
+   "sha256": "3595db75290d2ced36962af4ca7d2f84749d2b2bdf09c8e21e91f17991dfda5c",
+   "quality": 80,
+   "ssim": 0.9924,
+   "targetCss": [
+    134,
+    134
+   ]
   },
   "80623ad790d3f8c32a39276e84106bda9ccd37d57f79d3268091f0206466b654": {
    "id": "assets/v3/scenes/topo-vulkanen-etna.webp",
@@ -92,6 +380,30 @@
    "action": "placeholder",
    "reason": "hoofdstukscène \"kop\": scripts/v3 leest alleen scenes[id].mini, nooit .kop"
   },
+  "b7cf9eeb47dd88028ce8da8789fd6f042c0998df182b43bd4996453148dc4fac": {
+   "id": "assets/v2/nino-v2-stamp3.webp",
+   "kind": "icoon",
+   "sourceBytes": 338984,
+   "sourceSize": [
+    768,
+    768
+   ],
+   "action": "scale",
+   "path": "assets/v3/dieet/b7cf9eeb47dd-266x266.webp",
+   "mime": "image/webp",
+   "size": [
+    266,
+    266
+   ],
+   "bytes": 49276,
+   "sha256": "ea8fadeaad15a946f2b78ae0c9ab8adde7a55d8782839282b0dc55f4b75c72ba",
+   "quality": 85,
+   "ssim": 0.9906,
+   "targetCss": [
+    133,
+    133
+   ]
+  },
   "5a01badbf0f26fe28109e999c592615d882eb704e6bef809d40e70436b4f6465": {
    "id": "assets/v3/render/exports/SCENE-ROMA-kop-1672.webp",
    "kind": "scene",
@@ -102,6 +414,30 @@
    ],
    "action": "placeholder",
    "reason": "hoofdstukscène \"kop\": scripts/v3 leest alleen scenes[id].mini, nooit .kop"
+  },
+  "1794a3ee574294278b5147aefd069d0904d6d356c3e350cac56f302c497c1a6f": {
+   "id": "assets/v2/nino-v2-stamp6.webp",
+   "kind": "icoon",
+   "sourceBytes": 314476,
+   "sourceSize": [
+    768,
+    768
+   ],
+   "action": "scale",
+   "path": "assets/v3/dieet/1794a3ee5742-266x266.webp",
+   "mime": "image/webp",
+   "size": [
+    266,
+    266
+   ],
+   "bytes": 42998,
+   "sha256": "32ac132fcaf83e374bc0be58ee9708d2a07a3ff5c54ca2299bb195b1fa21534c",
+   "quality": 80,
+   "ssim": 0.9939,
+   "targetCss": [
+    133,
+    133
+   ]
   },
   "719344db49bfd156f6b22904b1ff31dd2e2899ac133b0c303fdcf85b165dae02": {
    "id": "assets/v3/render/exports/SCENE-VENEZIA-kop-1672.webp",
@@ -114,6 +450,17 @@
    "action": "placeholder",
    "reason": "hoofdstukscène \"kop\": scripts/v3 leest alleen scenes[id].mini, nooit .kop"
   },
+  "78e77822d041d29173182af1fa13d6c3ddd0d946039f97d51fcca5150cb1391f": {
+   "id": "assets/v3/render/exports/nino-schrijft-v3.webp",
+   "kind": "nino",
+   "sourceBytes": 283204,
+   "sourceSize": [
+    800,
+    1200
+   ],
+   "action": "keep",
+   "reason": "winst < 20 KB"
+  },
   "d9662509ce537fa8fcfb0485acc5478ff8ddc632b7768dbaf192269148a12668": {
    "id": "assets/v3/render/exports/SCENE-NAPOLI-kop-1672.webp",
    "kind": "scene",
@@ -124,6 +471,126 @@
    ],
    "action": "placeholder",
    "reason": "hoofdstukscène \"kop\": scripts/v3 leest alleen scenes[id].mini, nooit .kop"
+  },
+  "ff782e287391c4e707b8b967327bc13277f456776e30d48d02eeeb169cf587ed": {
+   "id": "assets/v2/pizza-reward-salami.webp",
+   "kind": "icoon",
+   "sourceBytes": 275088,
+   "sourceSize": [
+    960,
+    960
+   ],
+   "action": "scale",
+   "path": "assets/v3/dieet/ff782e287391-840x840.webp",
+   "mime": "image/webp",
+   "size": [
+    840,
+    840
+   ],
+   "bytes": 178936,
+   "sha256": "806250e470d0c071f45a250aa585cdf9992d15ead6db7d17f97b61444107fc39",
+   "quality": 90,
+   "ssim": 0.9928,
+   "targetCss": [
+    420,
+    420
+   ]
+  },
+  "e270e3406986cfdd97851e347e9dc68db6e31b4d1c0576162b5c3563652b2665": {
+   "id": "assets/v3/render/exports/nino-juicht-v3.webp",
+   "kind": "nino",
+   "sourceBytes": 269398,
+   "sourceSize": [
+    800,
+    1200
+   ],
+   "action": "scale",
+   "path": "assets/v3/dieet/e270e3406986-480x720.webp",
+   "mime": "image/webp",
+   "size": [
+    480,
+    720
+   ],
+   "bytes": 120168,
+   "sha256": "a9edbbf0388bd837001addac5c9780f44d47505939aa83b744eaa17f7f82eb04",
+   "quality": 94,
+   "ssim": 0.9918,
+   "targetCss": [
+    240,
+    360
+   ]
+  },
+  "042bd1d301006582b6d91b98ae3132b81a8fb40cbc7a69aaac936fee62f82403": {
+   "id": "assets/v2/nino-v2-stamp7.webp",
+   "kind": "icoon",
+   "sourceBytes": 257492,
+   "sourceSize": [
+    768,
+    512
+   ],
+   "action": "scale",
+   "path": "assets/v3/dieet/042bd1d30100-276x184.webp",
+   "mime": "image/webp",
+   "size": [
+    276,
+    184
+   ],
+   "bytes": 35326,
+   "sha256": "7cc0f1da1a972c6260c90edcd1e05bc5df9d41ef623fce1ed2b839f5f09ee189",
+   "quality": 80,
+   "ssim": 0.9978,
+   "targetCss": [
+    132,
+    92
+   ]
+  },
+  "b3fa5fbdd2eea780186742b802d0f9acf996842365b18f2f734a78e55011829f": {
+   "id": "assets/v2/pizza-reward-margherita.webp",
+   "kind": "icoon",
+   "sourceBytes": 250164,
+   "sourceSize": [
+    960,
+    960
+   ],
+   "action": "scale",
+   "path": "assets/v3/dieet/b3fa5fbdd2ee-840x840.webp",
+   "mime": "image/webp",
+   "size": [
+    840,
+    840
+   ],
+   "bytes": 161698,
+   "sha256": "f6ea8f49ca0018a763432aff5d9504aa621fecd2b9339149db517fe251b1ec14",
+   "quality": 90,
+   "ssim": 0.9912,
+   "targetCss": [
+    420,
+    420
+   ]
+  },
+  "686b3f091f933dcec54a9710405af24236bf8921cdeca316cd7403c806a0e34f": {
+   "id": "assets/v2/nino-v2-stamp9.webp",
+   "kind": "icoon",
+   "sourceBytes": 246464,
+   "sourceSize": [
+    768,
+    702
+   ],
+   "action": "scale",
+   "path": "assets/v3/dieet/686b3f091f93-265x242.webp",
+   "mime": "image/webp",
+   "size": [
+    265,
+    242
+   ],
+   "bytes": 37006,
+   "sha256": "bd30c4950ce94ab792596ffd5d0e31eccb22590d3dc89569d55e7d82251c2927",
+   "quality": 80,
+   "ssim": 0.9942,
+   "targetCss": [
+    132,
+    121
+   ]
   },
   "daded673fe77a75f631b40251c09ef158b1c541b037f32c8d75ed4141b4409d5": {
    "id": "assets/discovery/terrain-z8-render-sea.webp",
@@ -136,6 +603,270 @@
    "action": "placeholder",
    "reason": "reliëflaag zee/schaduw: alleen in variant Kaart; ui.kaart is altijd eiland en reis-ijk.css verbergt de lagen daar"
   },
+  "b34ff0780ebd442080f53d79c13d63bb89d45cb4ad961ec582a902758fec8628": {
+   "id": "assets/v2/nino-v2-stamp1.webp",
+   "kind": "icoon",
+   "sourceBytes": 242356,
+   "sourceSize": [
+    768,
+    512
+   ],
+   "action": "scale",
+   "path": "assets/v3/dieet/b34ff0780ebd-270x180.webp",
+   "mime": "image/webp",
+   "size": [
+    270,
+    180
+   ],
+   "bytes": 33184,
+   "sha256": "f9608b8051d155e0a96446867c20aee379cc49fc4e088da758cbd91d361248e5",
+   "quality": 80,
+   "ssim": 0.993,
+   "targetCss": [
+    130,
+    90
+   ]
+  },
+  "e99a7e0d6ed2fab32898074b4a375f35eff3bb0ffac715667434cb5d45d1d795": {
+   "id": "assets/v2/pizza-reward-quattro-formaggi.webp",
+   "kind": "icoon",
+   "sourceBytes": 234570,
+   "sourceSize": [
+    960,
+    960
+   ],
+   "action": "scale",
+   "path": "assets/v3/dieet/e99a7e0d6ed2-840x840.webp",
+   "mime": "image/webp",
+   "size": [
+    840,
+    840
+   ],
+   "bytes": 157940,
+   "sha256": "63800f210f2653a78904cd5a607c0515ec0cb68514cbb5c9c8ec96b9e3ca5965",
+   "quality": 90,
+   "ssim": 0.9913,
+   "targetCss": [
+    420,
+    420
+   ]
+  },
+  "9032c4ff1ec9083b8ddf4a5dc4107e448d9578675fec4ab62221dc13310d38cf": {
+   "id": "assets/v2/nino-v2-stamp8.webp",
+   "kind": "icoon",
+   "sourceBytes": 233276,
+   "sourceSize": [
+    768,
+    512
+   ],
+   "action": "scale",
+   "path": "assets/v3/dieet/9032c4ff1ec9-261x174.webp",
+   "mime": "image/webp",
+   "size": [
+    261,
+    174
+   ],
+   "bytes": 29528,
+   "sha256": "723312414e4daa4a6ad7eb4fdaad35bc9bf1e63abdc5678160ac008c500dff6c",
+   "quality": 80,
+   "ssim": 0.9943,
+   "targetCss": [
+    129,
+    87
+   ]
+  },
+  "9ebfeeb30285ef1d1dd30776d6286591c354c12417b8309d5270ab36e099599c": {
+   "id": "assets/v3/render/exports/vespa-zij-v3.webp",
+   "kind": "nino",
+   "sourceBytes": 224492,
+   "sourceSize": [
+    1200,
+    800
+   ],
+   "action": "scale",
+   "path": "assets/v3/dieet/9ebfeeb30285-660x440.webp",
+   "mime": "image/webp",
+   "size": [
+    660,
+    440
+   ],
+   "bytes": 101648,
+   "sha256": "519575c41058239afd74111eaea13d3d7dd7c6d57acdb405ab2a23d8862e5801",
+   "quality": 97,
+   "ssim": 0.9902,
+   "targetCss": [
+    328,
+    220
+   ]
+  },
+  "86f084c1599aa1dd8065875ab8edad2e771b271570fb3cadc1174435199a1c90": {
+   "id": "assets/v3/render/exports/vespa-rijdend-v3.webp",
+   "kind": "nino",
+   "sourceBytes": 223340,
+   "sourceSize": [
+    1200,
+    800
+   ],
+   "action": "scale",
+   "path": "assets/v3/dieet/86f084c1599a-873x582.webp",
+   "mime": "image/webp",
+   "size": [
+    873,
+    582
+   ],
+   "bytes": 142594,
+   "sha256": "0e56408e5e3aa6a9b8f475b3ce5d1ddd7cf0069994dee8aa7d57eee36c184f70",
+   "quality": 94,
+   "ssim": 0.9928,
+   "targetCss": [
+    436,
+    291
+   ]
+  },
+  "bd25cc6689f869e9d924c150514fe60da143dc1eadf840413698fb634601f2b6": {
+   "id": "assets/v3/render/exports/nino-welkom-v3.webp",
+   "kind": "nino",
+   "sourceBytes": 211882,
+   "sourceSize": [
+    800,
+    1200
+   ],
+   "action": "scale",
+   "path": "assets/v3/dieet/bd25cc6689f8-291x436.webp",
+   "mime": "image/webp",
+   "size": [
+    291,
+    436
+   ],
+   "bytes": 43536,
+   "sha256": "5e7df066540e0441086a01f7a32c4cb0feaf00fe0f2c260b90b6a003278f59cb",
+   "quality": 94,
+   "ssim": 0.9915,
+   "targetCss": [
+    145,
+    218
+   ]
+  },
+  "e241b9408c866a5ad4aff787cbd1be7a74a23f4875d52359792d424ea5c5de9e": {
+   "id": "assets/v2/pizza-board-css.webp",
+   "kind": "icoon",
+   "sourceBytes": 96202,
+   "sourceSize": [
+    640,
+    640
+   ],
+   "action": "scale",
+   "path": "assets/v3/dieet/e241b9408c86-208x208.webp",
+   "mime": "image/webp",
+   "size": [
+    208,
+    208
+   ],
+   "bytes": 48052,
+   "sha256": "b9d1ee90453e3146b11c14bf077cd271e4de5f7bf450ce1d5aa96db575065e1c",
+   "quality": "lossless",
+   "ssim": 1.0,
+   "targetCss": [
+    104,
+    104
+   ]
+  },
+  "61e86fd6f0337d02749a25e9e69fb8c4a34312d68e16eaf2284b8089eedfabb6": {
+   "id": "assets/v2/nino-v2-favorite1.webp",
+   "kind": "icoon",
+   "sourceBytes": 192292,
+   "sourceSize": [
+    640,
+    629
+   ],
+   "action": "scale",
+   "path": "assets/v3/dieet/61e86fd6f033-184x181.webp",
+   "mime": "image/webp",
+   "size": [
+    184,
+    181
+   ],
+   "bytes": 63674,
+   "sha256": "39b77fccc18d6dce5b7cf71e0c530606469d1f6caf75bbc29b8b59ddd450a2fa",
+   "quality": "lossless",
+   "ssim": 1.0,
+   "targetCss": [
+    92,
+    90
+   ]
+  },
+  "75b08c68393c7fd281c6a0a97fc0b3f0f714b2fb0b44a1264f882e3ad68b04c2": {
+   "id": "assets/v2/nino-v2-favorite0.webp",
+   "kind": "icoon",
+   "sourceBytes": 166414,
+   "sourceSize": [
+    640,
+    640
+   ],
+   "action": "scale",
+   "path": "assets/v3/dieet/75b08c68393c-184x184.webp",
+   "mime": "image/webp",
+   "size": [
+    184,
+    184
+   ],
+   "bytes": 58398,
+   "sha256": "304492938d9c0bf93c3e8daab627e26352aec957a5ef1e8bc890fbdf08ec1246",
+   "quality": "lossless",
+   "ssim": 1.0,
+   "targetCss": [
+    92,
+    92
+   ]
+  },
+  "cd5e75889d7cc97ce67cd9d411fdb24102b46795718c780d79792aae48d00ab1": {
+   "id": "assets/v2/nino-v2-favorite2.webp",
+   "kind": "icoon",
+   "sourceBytes": 152090,
+   "sourceSize": [
+    640,
+    640
+   ],
+   "action": "scale",
+   "path": "assets/v3/dieet/cd5e75889d7c-184x184.webp",
+   "mime": "image/webp",
+   "size": [
+    184,
+    184
+   ],
+   "bytes": 57484,
+   "sha256": "5e3777c807a6deafb3634a38d0b2ab85655567787eefc47150428bb19b15d0ed",
+   "quality": "lossless",
+   "ssim": 1.0,
+   "targetCss": [
+    92,
+    92
+   ]
+  },
+  "07af5136d5d523791a3de1154f661ed050766751e46cc17a523594b4562f38cb": {
+   "id": "assets/v3/render/exports/vespa-icoon-v3.webp",
+   "kind": "nino",
+   "sourceBytes": 131496,
+   "sourceSize": [
+    800,
+    800
+   ],
+   "action": "scale",
+   "path": "assets/v3/dieet/07af5136d5d5-88x88.webp",
+   "mime": "image/webp",
+   "size": [
+    88,
+    88
+   ],
+   "bytes": 9544,
+   "sha256": "12600e1aece67017ce66b131a030eded68b947e0c56c838019b36c3984b60420",
+   "quality": "lossless",
+   "ssim": 1.0,
+   "targetCss": [
+    44,
+    44
+   ]
+  },
   "e2fe511cc8c72fb8bf6a1e67e5041e64c99d3f76da665f0e3ee3e5e2428c0aec": {
    "id": "assets/discovery/terrain-z8-render-shadow.webp",
    "kind": "kaart",
@@ -146,6 +877,149 @@
    ],
    "action": "placeholder",
    "reason": "reliëflaag zee/schaduw: alleen in variant Kaart; ui.kaart is altijd eiland en reis-ijk.css verbergt de lagen daar"
+  },
+  "97fe052f40fea2ec7c07a2935d8bb2f544777b4e3893c1a509ab9bc0c1a492e2": {
+   "id": "assets/v3/render/exports/NINO-PORTRET-512.webp",
+   "kind": "nino",
+   "sourceBytes": 53086,
+   "sourceSize": [
+    512,
+    512
+   ],
+   "action": "keep",
+   "reason": "winst < 20 KB"
+  },
+  "482349912963d3cf50a775d06ec70c892a42a3cbda29fa066464911d73176b45": {
+   "id": "assets/v3/scenes/topo-streken-toscana-mini.webp",
+   "kind": "scene",
+   "sourceBytes": 36784,
+   "sourceSize": [
+    480,
+    270
+   ],
+   "action": "keep",
+   "reason": "winst < 20 KB"
+  },
+  "518ab33ebc0b6902850ea46bdf3a57cc7556351ce40be2fc235e9c3eb439c146": {
+   "id": "assets/v3/render/exports/SCENE-ROMA-mini-480.webp",
+   "kind": "scene",
+   "sourceBytes": 34598,
+   "sourceSize": [
+    480,
+    270
+   ],
+   "action": "keep",
+   "reason": "winst < 20 KB"
+  },
+  "26865876290044697872bb748d2b55e09fc826989a6fc37e190914147bbda03c": {
+   "id": "assets/v3/scenes/topo-steden-firenze-mini.webp",
+   "kind": "scene",
+   "sourceBytes": 33352,
+   "sourceSize": [
+    480,
+    270
+   ],
+   "action": "keep",
+   "reason": "winst < 20 KB"
+  },
+  "8f1517c7d5a84a598dac8c14d0351c06bd972048d9835602a6df42f7e6357f5b": {
+   "id": "assets/v3/scenes/topo-rivieren-po-mini.webp",
+   "kind": "scene",
+   "sourceBytes": 32446,
+   "sourceSize": [
+    480,
+    270
+   ],
+   "action": "keep",
+   "reason": "winst < 20 KB"
+  },
+  "c0147c714afc3a07cc744cbbb6b1cb3f816e0c728835dbdb66711bd4e3929a60": {
+   "id": "assets/v3/scenes/topo-zeeen-amalfi-mini.webp",
+   "kind": "scene",
+   "sourceBytes": 29672,
+   "sourceSize": [
+    480,
+    270
+   ],
+   "action": "keep",
+   "reason": "winst < 20 KB"
+  },
+  "927c80380ed1571cdb4cc8bef8704b6a3e6b01e58ad68dc5bc2617ef4f7a8244": {
+   "id": "assets/v3/render/exports/SCENE-VENEZIA-mini-480.webp",
+   "kind": "scene",
+   "sourceBytes": 28758,
+   "sourceSize": [
+    480,
+    270
+   ],
+   "action": "keep",
+   "reason": "winst < 20 KB"
+  },
+  "3f4ce7e6caa69edbc7fd9a6ed345c570a4e22bf262bc6750a3fd5065ee64bd89": {
+   "id": "assets/v3/scenes/topo-landen-italie-slovenie-mini.webp",
+   "kind": "scene",
+   "sourceBytes": 28270,
+   "sourceSize": [
+    480,
+    270
+   ],
+   "action": "keep",
+   "reason": "winst < 20 KB"
+  },
+  "f62e812526d488d47740ae87ca5b38a04291729360cae764886453336a954778": {
+   "id": "assets/v3/render/exports/SCENE-NAPOLI-mini-480.webp",
+   "kind": "scene",
+   "sourceBytes": 27984,
+   "sourceSize": [
+    480,
+    270
+   ],
+   "action": "keep",
+   "reason": "winst < 20 KB"
+  },
+  "88d66acc264653b3f4354455b5c2887a0027b0da05a66e73758fc7ddb8f40171": {
+   "id": "assets/v3/scenes/topo-bergen-dolomieten-mini.webp",
+   "kind": "scene",
+   "sourceBytes": 26542,
+   "sourceSize": [
+    480,
+    270
+   ],
+   "action": "keep",
+   "reason": "winst < 20 KB"
+  },
+  "2b027de93af0155f076f3fc5a68be460807a668496c5dcc2464668718a4a3b9d": {
+   "id": "assets/v3/scenes/topo-eilanden-v2-mini.webp",
+   "kind": "scene",
+   "sourceBytes": 24694,
+   "sourceSize": [
+    480,
+    270
+   ],
+   "action": "keep",
+   "reason": "winst < 20 KB"
+  },
+  "21f4566b9d32909526c2f542bc6b0e12a2d4beb47b32ee1c7194644de68b287d": {
+   "id": "assets/v3/scenes/topo-vulkanen-etna-mini.webp",
+   "kind": "scene",
+   "sourceBytes": 19894,
+   "sourceSize": [
+    480,
+    270
+   ],
+   "action": "keep",
+   "reason": "winst < 20 KB"
+  },
+  "1b1fa303abc5775133b00d76f9b2d4c6945f759c12caf75d50b492bdb96ad550": {
+   "id": "assets/v3/render/exports/icons/IC-slice-96.webp",
+   "kind": "icoon",
+   "sourceBytes": 4658,
+   "sourceSize": [
+    96,
+    96
+   ],
+   "action": "keep",
+   "reason": "winst < 20 KB"
   }
  }
 }

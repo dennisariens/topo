@@ -42,9 +42,14 @@ RENDERS = {  # the owner's five concept renders (9 November 2026), the target im
 }
 VIEWPORTS = {'desktop': (1440, 900), 'ipad-landscape': (1180, 820), 'phone': (390, 844)}
 sha = lambda b: hashlib.sha256(b).hexdigest()
+_diet = ROOT / 'assets/v3/dieet/manifest.json'
+_dm = json.loads(_diet.read_text()) if _diet.exists() else {'images': {}, 'placeholder': None}
+DIET = {e['sha256']: src for src, e in _dm['images'].items() if e.get('sha256')}
+PLACEHOLDER_SRC = {src for src, e in _dm['images'].items() if e['action'] == 'placeholder'}  # proven unused, docs/v3/assets-inventaris.json
 def dsha(src):
     """SHA256 of the bytes inside a data:…;base64 URI (None otherwise)."""
-    return sha(base64.b64decode(src.split(',', 1)[1])) if src and src.startswith('data:') and ';base64,' in src[:40] else None
+    h = sha(base64.b64decode(src.split(',', 1)[1])) if src and src.startswith('data:') and ';base64,' in src[:40] else None
+    return DIET.get(h, h)  # an assetdieet export counts as its source (assets/v3/dieet/manifest.json)
 
 PROBE = r'''() => {
   const body = document.body, cs = n => getComputedStyle(n), win = document.querySelector('.v3Reis'), w = cs(win), r = win.getBoundingClientRect();
@@ -164,7 +169,7 @@ async def main():
                 run['theme'] = await pg.evaluate('getComputedStyle(document.querySelector(".v3Reis")).getPropertyValue("--v3-accent").trim()')
                 # Miniatures: decoded bytes equal the manifest; missing scenes show the chapter icon.
                 for k2, v2 in run['relief']['layers'].items():
-                    run['relief']['layers'][k2] = sha(base64.b64decode(v2.split(',', 1)[1])) if v2.startswith('data:image/webp;base64,') else None
+                    run['relief']['layers'][k2] = 'placeholder' if v2 == _dm['placeholder'] else dsha(v2) if v2.startswith('data:image/webp;base64,') else None
                 for row in run['rows']:
                     row['sha256'] = dsha(row['src']); del row['src']
                 run['backdrop']['sha256'] = dsha(run['backdrop'].pop('uri'))
@@ -230,7 +235,7 @@ async def main():
         'lessonToRewards': res['lessonToRewards']['inLesson'] and res['lessonToRewards']['view'] == 'rewards' and not res['lessonToRewards']['les'] and res['lessonToRewards']['focus'] == 'v3RewardsTitle',
         'reliefDefaultZ8': every(runs, lambda r: r['relief']['mode'] == 'on' and r['relief']['terrain'] == 'block' and r['relief']['pressed'] == 'Reliëf'),
         # Variant (a) Eiland hides the sea and the land shadow (the sea is the wash; Italy carries its own shadow).
-        'reliefLayersMatchProvenance': every(runs, lambda r: r['relief']['layers'] == RELIEF_SHA and r['relief']['shown'] == (['none', 'none', 'block'] if r['relief']['kaart'] == 'eiland' else ['block'] * 3)),
+        'reliefLayersMatchProvenance': every(runs, lambda r: r['relief']['layers'] == {k: ('placeholder' if v in PLACEHOLDER_SRC else v) for k, v in RELIEF_SHA.items()} and r['relief']['shown'] == (['none', 'none', 'block'] if r['relief']['kaart'] == 'eiland' else ['block'] * 3)),
         'reliefLayerOrder': every(runs, lambda r: r['relief']['layerOrder'] == ['v3RSea', 'v3CoastGlow', 'v3RShadow', 'v3LandBase', 'v3m-seaLayer', 'atlasTerrain', 'v3RCoast', 'v3m-landLayer']),
         'reliefIsDecorationOnly': every(runs, lambda r: r['relief']['decorationTargets'] == 0 and r['relief']['pointer'] and r['dim']['copies'] == 2 * r['dim']['landShapes']),
         'neighboursDimmed': every(runs, lambda r: float(r['dim']['neighbour']) < .6 and float(r['dim']['country']) < .6 and float(r['dim']['italy']) == 0),

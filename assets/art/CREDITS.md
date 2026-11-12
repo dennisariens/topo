@@ -34,3 +34,4 @@ Masters = originele ChatGPT-download, ongewijzigd en ongeschaald, met alfa (`ass
 | 7g | `assets/art/fr/rewards/aardbeientaartje.webp` | 256×256 | `assets/art/masters/fr/rewards/doos-vol.png` | uitsnede | Uit 7b gesneden | 2026-11-12 | Goedgekeurd |
 | 7h | `assets/art/fr/rewards/madeleine.webp` | 256×256 | `assets/art/masters/fr/rewards/doos-vol.png` | uitsnede | Uit 7b gesneden | 2026-11-12 | Goedgekeurd |
 | 8 | `assets/art/fr/rewards/doos-goud.webp` | 512×391 | `assets/art/masters/fr/rewards/doos-goud.png` | 1536×1024 | ChatGPT | 2026-11-12 | Goedgekeurd |
+| 8b | `assets/art/fr/rewards/doos-dicht.webp` | 512×363 | `assets/art/masters/fr/rewards/doos-dicht.png` | 1254×1254 | ChatGPT | 2026-11-12 | Goedgekeurd; teller 3 dozen = Vespa-rit |

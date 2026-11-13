@@ -308,3 +308,10 @@ Toelichting bij punt 9 (melding bij nieuwe post):
   3. de release-build (`v3/release-build`, de opdracht staat in de chat);
   4. de eindtest door Hermes en de iPad-test op de release-build;
   5. het akkoord van de eigenaar.
+
+### Overdracht Ronde 5B punt 10–12 (13-11)
+- Klaar en afzonderlijk gepusht: **10 `fec8891`**, **11 `e856080`**, **12 `f55f247`** (eindpin implementatie).
+- Reis: hoofdstukkaart rechts onder de lijst, maximaal 40% breed; zichtbare kaart minimaal **51,43% desktop / 47,36% iPad**, titel maximaal één regel bij 28/24 px. Alle 11 hoofdstukken in drie profielstaten gecontroleerd (66 gevallen).
+- Landen: 12% tint met violette randen; reliëf en echte geometrie behouden. Overslaan: secundaire glaspil met violette focusring; overslaan bereikt aankomst zonder beloningswijziging.
+- Alleen schermgerichte QA: `scripts/qa-v3-ronde5b.py --point 10`, `--point 11`, `--point 12` groen; screenshots van Reis/Steden, Landen en Vespa overschreven in `docs/qa/v3-stijlbeeld/final/` op **1440×900 en 1080×810**. Bewijs: `ronde5b.json`. Eindreview akkoord; `index.html` byte-gelijk, preview niet gecommit.
+- Open: fysieke iPad/Safari-test en Hermes-hertest op de latere release-build, volgens bovenstaande volgorde. Historisch `qa-v3-faseb.py` veronderstelt nog de oude kaartonderkant/hoofdstukkaart-uitlijning; die assertions zijn achterhaald door punt 10 en niet gebruikt voor deze acceptatie. Geen volledige suite, merge of deploy uitgevoerd.

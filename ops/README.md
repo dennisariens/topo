@@ -11,7 +11,9 @@ Het besturingssysteem van het project: wie beslist wat, hoe werk stroomt, hoe he
    Codex leest `AGENTS.md`, Claude Code leest `CLAUDE.md`. Beide komen zo op dezelfde plek uit.
 3. ~~Besluiten in `ops/NORTH_STAR.md`~~ ✅ 13-11
 4. Merge `ops/setup` naar `main`. Vanaf dat moment is `main` weer de waarheid.
-5. Zet de nachtrun aan op de Mac mini. Test eerst met `DRY_RUN=1 ops/scripts/nightly.sh`, en installeer dan `ops/scripts/com.colddesert.topo-night.plist` in `~/Library/LaunchAgents/` (of plan hem via Hermes). Telegram: zet `TELEGRAM_BOT_TOKEN` en `TELEGRAM_CHAT_ID` in `~/.topo-night/env`.
+5. Nachtrun installeren op de Mac mini, in Terminal vanuit de topo-repo:
+   `git fetch origin main && git show origin/main:ops/scripts/install-nightly.sh | bash`
+   Dat zet launchd op (01:00), legt de paden vast in `~/.topo-night/env`, doet een proefdraai en checkt of Claude headless werkt. Telegram is optioneel: vul de token en chat-ID in `~/.topo-night/env`.
 6. Eerste taak voor Claude: `BL-001 Consolidatie` uit `ops/BACKLOG.md`.
 
 ## Kaart

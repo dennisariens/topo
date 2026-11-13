@@ -1,12 +1,14 @@
 #!/usr/bin/env bash
-# TOPO nachtrun — draait op de Mac mini via launchd of de scheduler van Hermes (01:00).
+# TOPO nachtrun — draait op de Mac mini via launchd (01:00), geïnstalleerd met ops/scripts/install-nightly.sh.
 # Werkt in een aparte git worktree en raakt main nooit aan. Levert één draft-PR per nacht en een brief.
-# Eerste keer: test met `DRY_RUN=1 ops/scripts/nightly.sh` en controleer flags met `claude --help` / `codex exec --help`.
+# launchd haalt dit script elke nacht vers van origin/main, dus wijzigingen via een PR werken automatisch door.
 set -euo pipefail
 
-REPO="${TOPO_REPO:-$HOME/code/topo}"
-WT="${TOPO_WORKTREE:-$HOME/code/topo-night}"
 STATE_DIR="$HOME/.topo-night"
+# Paden, PATH en optioneel TELEGRAM_BOT_TOKEN/TELEGRAM_CHAT_ID (geschreven door install-nightly.sh)
+[ -f "$STATE_DIR/env" ] && source "$STATE_DIR/env"
+REPO="${TOPO_REPO:-$HOME/topo-claude}"
+WT="${TOPO_WORKTREE:-$HOME/topo-night}"
 DATE="$(date +%F)"
 BRANCH="night/$DATE"
 mkdir -p "$STATE_DIR"
@@ -14,8 +16,6 @@ LOG="$STATE_DIR/$DATE.log"
 exec >>"$LOG" 2>&1
 echo "=== start $(date) ==="
 
-# Optioneel: TELEGRAM_BOT_TOKEN, TELEGRAM_CHAT_ID
-[ -f "$STATE_DIR/env" ] && source "$STATE_DIR/env"
 
 body() { awk 'BEGIN{n=0} /^---$/ && n<2 {n++; next} n>=2' "$1"; }   # strip frontmatter
 

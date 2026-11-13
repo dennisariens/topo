@@ -22,3 +22,4 @@ Regels:
 | FR-01 | FR-curriculum: itemlijst groep 7 (toetsstof, schoolatlas), met bron per item → `src/lands/fr/items.draft.json` (pure data) | M2 · parallel | P2 | S | idee | **Codex** | — |
 | FR-02 | FR-geometrie: bron met licentie (Natural Earth/OSM), projectie, hashes, validatierapport, overnemen uit `land/fr-geo` waar het klopt | M2 · parallel | P2 | M | idee | **Codex** | — |
 | FR-03 | FR-artwork-brief: Nino in Frankrijk (thema-object, scènes, landmarks), voortbouwend op de goedgekeurde gebakjes uit `art/master` | M2 · parallel | P2 | S | idee | **Codex** | — |
+| BL-011 | Domein- en merkstrategie internationaal: `ninotopo.com` als hub met taalpaden (`/en`, `/de`), betekenis van "topo" per taal checken (IT = muis, ES = mol, FR = praatje, EN = topokaart), alleen ccTLD's kopen voor markten waar we live gaan | M3 | P2 | S | idee | Claude | — |

@@ -1,3 +1,5 @@
+> **Werkwijze, rollen en loops:** `ops/OPERATING_MODEL.md` · **Huidige stand:** `ops/STATE.md` · **Roadmap:** `ops/ROADMAP.md` (vervangt `docs/ROADMAP.md`). De projectregels hieronder blijven gelden.
+
 # Instructions for coding agents
 
 1. Read `docs/PROJECT_STATE.md` first; read `docs/MAP_SYSTEM.md` before map or geography changes and `docs/DECISIONS.md` before product decisions.

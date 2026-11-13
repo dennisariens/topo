@@ -150,6 +150,20 @@
     "use": "reliefkaart (Reis, toetsresultaat)"
   },
   {
+    "id": 11,
+    "name": "Classic Ferrari Modena",
+    "filename": "TOPO_11_Classic_Ferrari_Modena.png",
+    "size": [
+      1024,
+      1024
+    ],
+    "mode": "RGBA",
+    "alpha": true,
+    "sha256": "ebfc6eedbca374b2174e8edf42525187de555a1714f4cb0113801576c58830eb",
+    "transparent_share": 0.78,
+    "use": "lifestyle — in gebruik V3.0 (eigenaar 13-11; zonder badge/logo)"
+  },
+  {
     "id": 12,
     "name": "Football Stadium Milan",
     "filename": "TOPO_12_Football_Stadium_Milan.png",
@@ -162,7 +176,7 @@
     "mode": "RGBA",
     "sha256": "0be276ffd08814c4c4d1f6dd32b314e3f63dec4c82e92504c940804a956a215c",
     "transparent_share": 0.66,
-    "use": "V3.1 uitstapjes/postkaarten — niet in UI"
+    "use": "lifestyle — in gebruik V3.0 (eigenaar 12-11)"
   },
   {
     "id": 13,
@@ -177,7 +191,7 @@
     "mode": "RGBA",
     "sha256": "cd54eafa22dd34ed122cb1d23e0b1af5b613a634478672adf8aeecb6650d1d5e",
     "transparent_share": 0.81,
-    "use": "V3.1 uitstapjes/postkaarten — niet in UI"
+    "use": "lifestyle — in gebruik V3.0 (eigenaar 12-11)"
   },
   {
     "id": 14,
@@ -192,7 +206,7 @@
     "mode": "RGBA",
     "sha256": "8c5a8761523dc38650204a8d38dcba9e7f12ed57428ca374f2631e1ff56d4889",
     "transparent_share": 0.61,
-    "use": "V3.1 uitstapjes/postkaarten — niet in UI"
+    "use": "lifestyle — in gebruik V3.0 (eigenaar 12-11)"
   },
   {
     "id": 15,
@@ -207,7 +221,7 @@
     "mode": "RGBA",
     "sha256": "d3151d242d89b0c77eb4e471465656e4f40aa1d819fe0be1dacee69cbf2d3482",
     "transparent_share": 0.59,
-    "use": "V3.1 uitstapjes/postkaarten — niet in UI"
+    "use": "lifestyle — in gebruik V3.0 (eigenaar 12-11)"
   },
   {
     "id": 16,
@@ -222,6 +236,6 @@
     "mode": "RGBA",
     "sha256": "d7a067a8bb4658c74fdeee41d549d8c37fe9674354098e1b932ff9e000367f1f",
     "transparent_share": 0.66,
-    "use": "V3.1 uitstapjes/postkaarten — niet in UI"
+    "use": "lifestyle — in gebruik V3.0 (eigenaar 12-11)"
   }
 ]

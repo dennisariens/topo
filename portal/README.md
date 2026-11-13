@@ -13,7 +13,10 @@ From the repository root, serve the checkout with `python3 -m http.server 8000` 
 ## Behavior
 Desktop hover crossfades default to paired hover artwork (400ms). The original returns when hover ends. Touch does not require hover; future countries remain unlinked and visibly unavailable. Reduced-motion preferences disable transitions. The header switches from LOGO-01 to LOGO-02 at narrow widths.
 
-**Activation gate:** Italy and France still need verified entry URLs. These are intentionally null; the portal shows "Leeromgeving volgt" rather than a fake Start action. Do not set a production URL until that experience is confirmed.
+**Activation gate:** The Italy card links to the existing repository-root `../index.html`, which is present on this branch. This is a working in-repository preview route, **not yet an approved public-domain deployment contract**. France has no verified learning entry and explicitly shows "Leeromgeving volgt". Never invent a France URL. Verify route mapping before deploying the standalone portal at `/`.
+
+## QA command
+Run `node portal/qa/verify.mjs` from the repository checkout to verify all R2 assets, canonical logos and the current route contract. See `portal/qa/STATE.md` for evidence and remaining manual acceptance gates.
 
 ## QA status
 - Git tree confirms the presence of the 10 destination WebP assets, both canonical SVG logos, Nino/Vespa cutout and favicon.

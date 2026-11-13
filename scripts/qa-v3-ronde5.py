@@ -53,7 +53,7 @@ VOORTGANG='''()=>{const f=document.querySelector('.v3VgKaart'),svg=f.querySelect
 def v2_greens():
  import colorsys,re
  t=re.sub(r'data:[a-z/+.-]+;base64,[A-Za-z0-9+/=]+','',(ROOT/'index.html').read_text(encoding='utf-8'));out={'#087887','#147486','#067b8b'}
- hexes=[m.lower() for m in re.findall(r'#([0-9a-fA-F]{6}|[0-9a-fA-F]{3})(?![0-9a-fA-F])',t)]
+ hexes=[m.lower()[:6] if len(m)==8 else m.lower() for m in re.findall(r'#([0-9a-fA-F]{8}|[0-9a-fA-F]{6}|[0-9a-fA-F]{3})(?![0-9a-fA-F])',t)]
  rgbs=['%02x%02x%02x'%tuple(map(int,m)) for m in re.findall(r'rgba?\((\d+),\s*(\d+),\s*(\d+)',t)]
  for h in hexes+rgbs:
   h=''.join(x*2 for x in h) if len(h)==3 else h
@@ -72,7 +72,8 @@ GREEN_SCAN='''greens=>{const want=new Set(greens.map(h=>[1,3,5].map(i=>parseInt(
   if(cs.textDecorationLine!=='none')props.push('text-decoration-color');
   for(const pr of props){if(pr==='stroke'&&cs.stroke==='none')continue;if(pr==='fill'&&!(n instanceof SVGElement))continue;for(const c of rgb(cs.getPropertyValue(pr)))if(want.has(c))hits.push([name(n)+where,pr,c]);}};
  for(const n of document.querySelectorAll('body *')){if(n.closest('.v3PreviewBar,#v3PreviewBar,[data-preview-bar]'))continue;if(!n.getClientRects().length)continue;const cs=getComputedStyle(n);if(cs.visibility!=='visible'||+cs.opacity===0)continue;
-  look(n,cs,'');for(const ps of ['::before','::after']){const c2=getComputedStyle(n,ps);if(c2.content&&c2.content!=='none'&&c2.display!=='none')look(n,c2,ps);}}
+  look(n,cs,'');if(n.tagName==='DIALOG'&&n.open){const bd=getComputedStyle(n,'::backdrop');for(const c of rgb(bd.backgroundColor))if(want.has(c))hits.push([name(n)+'::backdrop','background-color',c]);}
+  for(const ps of ['::before','::after']){const c2=getComputedStyle(n,ps);if(c2.content&&c2.content!=='none'&&c2.display!=='none')look(n,c2,ps);}}
  return hits;}'''
 
 FOCUS_SCAN='''greens=>{const want=new Set(greens.map(h=>[1,3,5].map(i=>parseInt(h.slice(i,i+2),16)).join(',')));const n=document.activeElement;if(!n||n===document.body)return [];
@@ -221,6 +222,27 @@ async def check(p,n,touch,vp):
   await act(p,'[data-nav=instellingen]',touch);await p.mouse.move(1,1);await p.wait_for_timeout(200)
   await p.screenshot(path=str(OUT/f'instellingen-{vp}.png'));shots.append('instellingen')
   return shots,{'screens':sorted(out),'v2Greens':V2_GREENS,'v2GreenCount':len(V2_GREENS),'hits':0}
+ if n==6:
+  out={}
+  ride='''()=>{const r=document.querySelector('.vespaRide'),n=r.querySelector('.rideNino'),cs=getComputedStyle(n);
+   return {open:r.open,phase:r.dataset.phase||'',master:n.dataset.v3Master||'',rijdend:n.src===TOPO_V3.art.poses['VESPA-RIJDEND'].src,anim:cs.animationName,visible:cs.display!=='none'};}'''
+  await p.evaluate('celebrateTrip("Rome","Napels")');await p.wait_for_timeout(300)
+  r=await p.evaluate(ride);out['depart']=r
+  g=await p.evaluate(GREEN_SCAN,V2_GREENS);assert not g,g
+  assert r['open'] and r['phase']=='depart' and r['rijdend'] and r['master']=='VESPA-RIJDEND' and r['anim']=='v3Engine' and r['visible'],r
+  await p.wait_for_timeout(900);r=await p.evaluate(ride);out['ride']=r
+  assert r['phase']=='ride' and r['rijdend'] and r['anim']=='v3RideOut',r
+  await p.mouse.move(1,1);await p.screenshot(path=str(OUT/f'vespa-rit-{vp}.png'));shots.append('vespa-rit')
+  await p.wait_for_timeout(1800);r=await p.evaluate(ride);out['arrived']=r
+  assert r['phase']=='arrived',r
+  await p.keyboard.press('Escape');await p.wait_for_timeout(300)
+  # Reduced motion: straight to the arrival, no shake or ride-out.
+  await p.emulate_media(reduced_motion='reduce')
+  await p.evaluate('celebrateTrip("Napels","Palermo")');await p.wait_for_timeout(300)
+  r=await p.evaluate(ride);out['reducedMotion']=r
+  assert r['phase']=='arrived' and r['anim']=='none',r
+  await p.keyboard.press('Escape');await p.emulate_media(reduced_motion='no-preference')
+  return shots,out
  raise SystemExit('unknown point')
 
 async def main(point):

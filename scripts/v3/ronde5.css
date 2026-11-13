@@ -57,3 +57,7 @@ body.v3On[data-focus-mode="true"] .focusCameraTools button[aria-pressed="true"]:
 body.v3On .atlasOptions summary,body.v3On .atlasZoom button,body.v3On .schoolbladButton{border-color:rgba(42,36,64,.16)}
 body.v3On #focusAnswerSheet #answer{border-color:rgba(42,36,64,.22)}
 body.v3On .ninoMeterPoints{color:#5e5872}
+/* V2's dialog backdrops are a dark green-teal: V3 ink instead (the book keeps a deeper backdrop for its paper world). */
+body.v3On :is(.schoolbladDialog,.mapPicker,.ninoIntroOffer,.ninoSettings,.ninoProfile,.pizzaCelebration,.vespaRide,.ninoExamResult)::backdrop{background:rgba(42,36,64,.4)}
+body.v3On :is(.travelBook,.stampZoom)::backdrop{background:rgba(29,24,44,.82)}
+body.v3On .button{border-color:rgba(42,36,64,.16)}

@@ -416,7 +416,7 @@
     "pass": true
   },
   "5": {
-    "previewSha256": "e0600e5fa77bb8d7879591ebd3de50132acadf8f2569ef678977b7bc4edf467e",
+    "previewSha256": "9997f1ff3f43822b0a8b6cd2dd5eb576497259b42b1be5b7f520e5feec376621",
     "runs": {
       "desktop": {
         "viewport": [
@@ -450,17 +450,22 @@
             "voortgang"
           ],
           "v2Greens": [
+            "#003c3a",
             "#007c72",
             "#067b8b",
             "#073f3b",
             "#074d47",
             "#087887",
             "#0c4938",
+            "#104a3f",
             "#115539",
+            "#123c3f",
+            "#134840",
             "#136547",
             "#14553c",
             "#146552",
             "#147486",
+            "#153d34",
             "#15523d",
             "#155c50",
             "#155e4a",
@@ -469,7 +474,10 @@
             "#173c34",
             "#174e3e",
             "#176843",
+            "#18352f",
             "#183b3a",
+            "#183e35",
+            "#184d52",
             "#184e49",
             "#185b49",
             "#193d35",
@@ -479,6 +487,7 @@
             "#1c3530",
             "#1c7051",
             "#1c7452",
+            "#1d2b2b",
             "#1d3634",
             "#214a48",
             "#214c4b",
@@ -490,11 +499,16 @@
             "#237e5d",
             "#23865c",
             "#243f3a",
+            "#244331",
+            "#244838",
             "#246a47",
             "#254c46",
+            "#263c32",
+            "#263d39",
             "#264e48",
             "#26885f",
             "#278966",
+            "#283b39",
             "#285e4c",
             "#286951",
             "#29453b",
@@ -580,7 +594,7 @@
             "#e7ede8",
             "#eaf1e6"
           ],
-          "v2GreenCount": 129,
+          "v2GreenCount": 143,
           "hits": 0
         }
       },
@@ -616,17 +630,22 @@
             "voortgang"
           ],
           "v2Greens": [
+            "#003c3a",
             "#007c72",
             "#067b8b",
             "#073f3b",
             "#074d47",
             "#087887",
             "#0c4938",
+            "#104a3f",
             "#115539",
+            "#123c3f",
+            "#134840",
             "#136547",
             "#14553c",
             "#146552",
             "#147486",
+            "#153d34",
             "#15523d",
             "#155c50",
             "#155e4a",
@@ -635,7 +654,10 @@
             "#173c34",
             "#174e3e",
             "#176843",
+            "#18352f",
             "#183b3a",
+            "#183e35",
+            "#184d52",
             "#184e49",
             "#185b49",
             "#193d35",
@@ -645,6 +667,7 @@
             "#1c3530",
             "#1c7051",
             "#1c7452",
+            "#1d2b2b",
             "#1d3634",
             "#214a48",
             "#214c4b",
@@ -656,11 +679,16 @@
             "#237e5d",
             "#23865c",
             "#243f3a",
+            "#244331",
+            "#244838",
             "#246a47",
             "#254c46",
+            "#263c32",
+            "#263d39",
             "#264e48",
             "#26885f",
             "#278966",
+            "#283b39",
             "#285e4c",
             "#286951",
             "#29453b",
@@ -746,8 +774,100 @@
             "#e7ede8",
             "#eaf1e6"
           ],
-          "v2GreenCount": 129,
+          "v2GreenCount": 143,
           "hits": 0
+        }
+      }
+    },
+    "pass": true
+  },
+  "6": {
+    "previewSha256": "9997f1ff3f43822b0a8b6cd2dd5eb576497259b42b1be5b7f520e5feec376621",
+    "runs": {
+      "desktop": {
+        "viewport": [
+          1440,
+          900
+        ],
+        "screens": [
+          "vespa-rit"
+        ],
+        "detail": {
+          "depart": {
+            "open": true,
+            "phase": "depart",
+            "master": "VESPA-RIJDEND",
+            "rijdend": true,
+            "anim": "v3Engine",
+            "visible": true
+          },
+          "ride": {
+            "open": true,
+            "phase": "ride",
+            "master": "VESPA-RIJDEND",
+            "rijdend": true,
+            "anim": "v3RideOut",
+            "visible": true
+          },
+          "arrived": {
+            "open": true,
+            "phase": "arrived",
+            "master": "VESPA-RIJDEND",
+            "rijdend": true,
+            "anim": "none",
+            "visible": false
+          },
+          "reducedMotion": {
+            "open": true,
+            "phase": "arrived",
+            "master": "VESPA-RIJDEND",
+            "rijdend": true,
+            "anim": "none",
+            "visible": false
+          }
+        }
+      },
+      "ipad-liggend": {
+        "viewport": [
+          1080,
+          810
+        ],
+        "screens": [
+          "vespa-rit"
+        ],
+        "detail": {
+          "depart": {
+            "open": true,
+            "phase": "depart",
+            "master": "VESPA-RIJDEND",
+            "rijdend": true,
+            "anim": "v3Engine",
+            "visible": true
+          },
+          "ride": {
+            "open": true,
+            "phase": "ride",
+            "master": "VESPA-RIJDEND",
+            "rijdend": true,
+            "anim": "v3RideOut",
+            "visible": true
+          },
+          "arrived": {
+            "open": true,
+            "phase": "arrived",
+            "master": "VESPA-RIJDEND",
+            "rijdend": true,
+            "anim": "none",
+            "visible": false
+          },
+          "reducedMotion": {
+            "open": true,
+            "phase": "arrived",
+            "master": "VESPA-RIJDEND",
+            "rijdend": true,
+            "anim": "none",
+            "visible": false
+          }
         }
       }
     },

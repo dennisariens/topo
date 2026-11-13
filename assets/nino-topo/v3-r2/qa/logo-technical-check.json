@@ -1,0 +1,28 @@
+{
+  "logo-01-primary.svg": {
+    "path_count": 6,
+    "embedded_images": 1,
+    "live_text": 0
+  },
+  "logo-02-compact.svg": {
+    "path_count": 2,
+    "embedded_images": 1,
+    "live_text": 0
+  },
+  "logo-03-monochrome.svg": {
+    "path_count": 2,
+    "embedded_images": 0,
+    "live_text": 0
+  },
+  "logo-03-wordmark.svg": {
+    "path_count": 2,
+    "embedded_images": 0,
+    "live_text": 0
+  },
+  "same_wordmark_paths_all_variants": true,
+  "same_nino_embedded_image_in_logo01_logo02": true,
+  "character_source_px": [
+    528,
+    591
+  ]
+}

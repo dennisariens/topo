@@ -80,3 +80,23 @@ body.v3On .vespaRide[data-phase=arrived] .v3RideFiat{display:none}
 .v3Map .v3Sun{display:none;mix-blend-mode:soft-light}
 .v3Map[data-relief=on] .v3Sun{display:block}
 .v3Map[data-relief=on] .v3RCoast{filter:drop-shadow(0 0 1px rgba(255,255,255,.8))}
+
+/* 9. Post voor jou! A glass card near the bottom right, above the tab bar on phones; the dot on Beloningen. */
+.v3Post{position:fixed;right:24px;bottom:24px;z-index:60;pointer-events:none;--v3-glass-strong:rgba(255,255,255,.8);--v3-glass-filter:blur(28px) saturate(1.4);
+ --v3-font:-apple-system,BlinkMacSystemFont,"SF Pro Text","Segoe UI",system-ui,sans-serif;-webkit-font-smoothing:antialiased}
+.v3Post:empty{display:none}
+body.v3On .v3Post .v3PostCard{pointer-events:auto;display:flex;align-items:center;gap:14px;width:min(340px,calc(100vw - 32px));min-height:0;padding:12px 18px 12px 12px;
+ border:1px solid rgba(255,255,255,.7);border-radius:20px;background:var(--v3-glass-strong,rgba(255,255,255,.86));
+ -webkit-backdrop-filter:var(--v3-glass-filter);backdrop-filter:var(--v3-glass-filter);box-shadow:0 12px 34px rgba(42,36,64,.18);
+ color:#2a2440;text-align:left;font:400 15px/1.35 var(--v3-font);cursor:pointer;transform-origin:center}
+body.v3On .v3Post .v3PostCard:focus-visible{outline:3px solid #5b45e0;outline-offset:3px}
+.v3PostArt{flex:none;width:108px;height:72px;object-fit:cover;border-radius:6px;box-shadow:0 2px 8px rgba(42,36,64,.22);transform:rotate(-3deg);background:#fff}
+.v3PostArt.v3PostScallop{object-fit:contain;background:none;box-shadow:none}
+.v3PostCopy{display:grid;gap:2px}
+.v3PostCopy strong{font:700 19px/1.2 var(--v3-font);color:#2a2440}
+.v3PostCopy span{color:#5e5872}
+@media (max-width:767px){.v3Post{right:16px;left:16px;bottom:calc(var(--v3-tabbar,72px) + 12px)}body.v3On .v3Post .v3PostCard{width:100%}}
+@media (prefers-reduced-transparency:reduce),(prefers-contrast:more){body.v3On .v3Post .v3PostCard{background:#fff;-webkit-backdrop-filter:none;backdrop-filter:none}}
+body.v3On [data-nav=rewards]{position:relative}
+body.v3On [data-nav=rewards] .v3PostDot{position:absolute;top:6px;left:28px;width:10px;height:10px;border-radius:50%;background:#7c5cff;box-shadow:0 0 0 2px #fff;pointer-events:none}
+body.v3On [data-nav=rewards] .v3PostDot em{font-style:normal}

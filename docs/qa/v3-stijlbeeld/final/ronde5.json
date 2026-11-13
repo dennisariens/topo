@@ -1264,5 +1264,61 @@
       }
     },
     "pass": true
+  },
+  "9": {
+    "previewSha256": "aef16dd04014dee291d75cd98959494cbfbc95533dfa928b34aa9ef4357f37db",
+    "runs": {
+      "desktop": {
+        "viewport": [
+          1440,
+          900
+        ],
+        "screens": [
+          "post (kaart + stip)",
+          "post-boek (postkaartpagina)"
+        ],
+        "detail": {
+          "start": {
+            "earned": [],
+            "seen": []
+          },
+          "card": {
+            "text": "Post voor jou!\nEen nieuwe postkaart in je Reisboekje.",
+            "live": "polite",
+            "src": true,
+            "post": "venezia",
+            "bg": "blur(28px) saturate(1.4)",
+            "anim": 1
+          },
+          "goldChecked": true
+        }
+      },
+      "ipad-liggend": {
+        "viewport": [
+          1080,
+          810
+        ],
+        "screens": [
+          "post (kaart + stip)",
+          "post-boek (postkaartpagina)"
+        ],
+        "detail": {
+          "start": {
+            "earned": [],
+            "seen": []
+          },
+          "card": {
+            "text": "Post voor jou!\nEen nieuwe postkaart in je Reisboekje.",
+            "live": "polite",
+            "src": true,
+            "post": "venezia",
+            "bg": "blur(28px) saturate(1.4)",
+            "anim": 1
+          },
+          "goldChecked": true
+        }
+      }
+    },
+    "pass": true
   }
 }

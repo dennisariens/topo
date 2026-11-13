@@ -371,6 +371,67 @@ async def check(p,n,touch,vp):
   await p.evaluate('document.querySelectorAll(".v3MapStage .v3Map :is(.v3Pins,.v3Landmarks,.v3Lifestyle)").forEach(n=>n.style.display="")')
   await p.screenshot(path=str(OUT/f'reis-{vp}.png'));shots.append('reis')
   return shots,{'before':so,'after':sn}
+ if n==9:
+  # V2 has no moment for a new postcard (only stamps and gold, nino-moments.js); V3 adds one with V2's rule.
+  card='.v3Post .v3PostCard';dot='[data-nav=rewards] .v3PostDot'
+  earn='()=>{state.trips=2;persist();state.trips=3;persist();}'
+  async def visible_dot():return await p.evaluate('()=>[...document.querySelectorAll("'+dot+'")].some(n=>n.closest("[data-nav]").checkVisibility())')
+  await act(p,'[data-nav=reis]',touch);await p.mouse.move(1,1)
+  start=await p.evaluate('()=>({earned:TOPO_V3.post.earned(),seen:TOPO_V3.post.seen()})')
+  # Earlier progress is not celebrated and has no dot.
+  assert sorted(start['earned'])==sorted(start['seen']) and not await p.locator(card).count() and not await visible_dot(),start
+  # Earning Venetië (the 3rd ride, V2's rule): the glass card with that postcard, announced politely, and the dot.
+  await p.evaluate(earn);await p.wait_for_timeout(120)
+  info=await p.evaluate('()=>{const c=document.querySelector("'+card+'"),i=c.querySelector("img");return {text:c.innerText,live:c.parentElement.getAttribute("aria-live"),src:i.src===NINO_V2_ART.venezia.src,post:c.dataset.post,bg:getComputedStyle(c).backdropFilter,anim:c.getAnimations().length}}')
+  assert info['text'].startswith('Post voor jou!') and info['live']=='polite' and info['src'] and info['post']=='venezia' and 'blur' in info['bg'] and info['anim']==1,info
+  assert await visible_dot()
+  await p.screenshot(path=str(OUT/f'post-{vp}.png'));shots.append('post (kaart + stip)')
+  # After 4 s it slides into the Reisboekje (towards Beloningen) and is gone; the dot stays until the postcard is seen.
+  await p.wait_for_timeout(3000);assert await p.locator(card).count()
+  await p.wait_for_timeout(700);assert await p.evaluate('document.querySelector("'+card+'")?.dataset.leaving')=='1'
+  await p.wait_for_timeout(800);assert not await p.locator(card).count() and await visible_dot()
+  # A tap opens the book on the postcard page; seen, so the dot goes.
+  await p.evaluate(earn);await p.wait_for_timeout(500)
+  await act(p,card,touch);await p.wait_for_timeout(500)
+  shown=await p.evaluate('[...document.querySelectorAll("#travelBook section.bookPage")].map(s=>s.getAttribute("aria-label"))')
+  assert 'Venetië, je derde Vespa-rit' in shown and await p.evaluate('TopoBook.element.open'),shown
+  await p.mouse.move(1,1);await p.screenshot(path=str(OUT/f'post-boek-{vp}.png'));shots.append('post-boek (postkaartpagina)')
+  await p.keyboard.press('Escape');await p.wait_for_timeout(300)
+  assert not await visible_dot() and 'venezia' in await p.evaluate('TOPO_V3.post.seen()')
+  # Reduced motion: no animation in or out.
+  await p.emulate_media(reduced_motion='reduce')
+  await p.evaluate(earn);await p.wait_for_timeout(400)
+  assert await p.evaluate('document.querySelector("'+card+'").getAnimations().length')==0
+  await p.wait_for_timeout(4100);assert not await p.locator(card).count()
+  await p.emulate_media(reduced_motion='no-preference')
+  # Never during the toets: it waits until the toets is over.
+  await p.evaluate('TOPO_V3.shell.go("toets")');await p.wait_for_timeout(300)
+  await p.locator('[aria-labelledby=v3ToetsHoofdstukken] [data-group=city2]').click();await p.wait_for_timeout(200)
+  await p.locator('[aria-labelledby=v3ToetsLengte] [data-value="10"]').click();await p.wait_for_timeout(200)
+  await p.locator('.v3View-toets .v3Start').click();await p.wait_for_timeout(800)
+  await p.evaluate(earn)
+  for k in range(10):
+   assert not await p.locator(card).count(),('toets',k)
+   await p.evaluate('document.querySelector("#next").click()');await p.wait_for_timeout(200)
+   await p.evaluate('document.querySelector("#next").click()');await p.wait_for_timeout(250)
+  await p.wait_for_timeout(1500)
+  assert await p.evaluate('state.examEnded') and await p.locator(card).count(),'after toets'
+  await p.wait_for_timeout(4600)
+  # Never during the Gouden proef (a finished chapter's gold run), until the child leaves it.
+  goldChecked=False
+  await act(p,'[data-nav=reis]',touch);await p.wait_for_timeout(400)
+  for cid in await p.evaluate('ROUTE_CHAPTERS.map(c=>c.id)'):
+   await p.evaluate(FRAME,cid)
+   gold=p.locator('.v3Reis .v3Panel .v3Btn').filter(has_text='oud')
+   if not await gold.count():continue
+   await gold.first.click();await p.wait_for_timeout(1000)
+   if await p.evaluate('state.route?.active?.kind')!='gold':continue
+   await p.evaluate(earn);await p.wait_for_timeout(1500)
+   assert not await p.locator(card).count(),'gold'
+   await act(p,'[data-nav=reis]',touch);await p.wait_for_timeout(1200)
+   assert await p.locator(card).count(),'after gold';goldChecked=True;break
+  assert goldChecked
+  return shots,{'start':start,'card':info,'goldChecked':goldChecked}
  raise SystemExit('unknown point')
 
 async def main(point):

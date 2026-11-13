@@ -15,6 +15,13 @@
    while(!previous.disabled)previous.click();
    for(let i=0;i<12&&!d.querySelector('.earnedPostcard')&&![...d.querySelectorAll('h3')].some(n=>n.textContent==='Post uit Italië')&&!next.disabled;i++)next.click();
   }
+ },
+ // Ronde 5 punt 9: open the book on one page, by the label V2 gives it (section aria-label), e.g. a new postcard.
+ openPage(opener,label){
+  book.open(opener);if(!d.open)return;
+  while(!previous.disabled)previous.click();
+  const has=()=>[...d.querySelectorAll('section.bookPage[aria-label]')].some(s=>s.getAttribute('aria-label')===label);
+  for(let i=0;i<24&&!has()&&!next.disabled;i++)next.click();
  }};
  const ride=document.querySelector('.vespaRide'),rider=ride?.querySelector('.rideNino');
  // Ronde 5 punt 7: the Fiat 500 drives past in the background (behind Nino); with reduced motion it stands still.

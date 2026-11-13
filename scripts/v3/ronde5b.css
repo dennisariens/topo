@@ -12,3 +12,6 @@
 @media(min-width:1024px) and (max-width:1279px){
  .v3Reis[data-view=reis] .v3Panel .v3CardTitle{font-size:24px}
 }
+
+/* Landen: preserve the map underneath; strong violet belongs to the outlines. */
+.v3MapStage .v3Map[data-focus=areas] .country.v3Hit{fill-opacity:.12!important;stroke:var(--v3-accent)!important;stroke-opacity:.9;stroke-width:2;vector-effect:non-scaling-stroke}

@@ -29,6 +29,20 @@ assert(portal.includes('country:focus-within') || portal.includes('country:focus
 assert(portal.includes('./assets/flags/'), 'Native SVG flag paths missing');
 assert(!portal.includes('/legacy/superseded-logo-v1/'), 'Deprecated logo used');
 assert(!portal.includes('raw.githubusercontent.com'), 'Unpinned external asset references found');
+assert(portal.includes('class="flag-pill"'), 'Flag capsule markup missing');
+assert(portal.includes('vespa-icon-02-compact.webp'), 'Side-view Vespa favicon candidate missing');
+assert(portal.includes('.country.active:hover .action[href]'), 'CTA hover state missing');
+assert(portal.includes('.country.future:hover .visual img.alt'), 'Independent future-card hover missing');
+const allFutureHover = (portal.match(/\\.future:hover/g)||[]).length;
+const cardScopedHover = (portal.match(/\\.country\\.future:hover/g)||[]).length;
+assert.equal(allFutureHover,cardScopedHover,'BUG: parent grid shares `.future:hover` and triggers all 3 cards');
+function contrast(a,b){const color=x=>[1,3,5].map(i=>parseInt(x.slice(i,i+2),16)/255).map(v=>v<=.04045?v/12.92:((v+.055)/1.055)**2.4).reduce((v,x,i)=>v+x*[.2126,.7152,.0722][i],0);let x=color(a),y=color(b);return (Math.max(x,y)+.05)/(Math.min(x,y)+.05);}
+for(const token of ['lav-dark','lav-hover']){
+ const match=portal.match(new RegExp('--'+token+':(#[0-9A-Fa-f]{6})'));
+ assert(match,'Missing '+token+' token');
+ assert(contrast(match[1],'#FFFFFF')>=4.5,'Insufficient white-on-'+token+' CTA text contrast');
+}
+
 const logoSvg=readFileSync(resolve(repo, 'assets/nino-topo/v3-r2/brand/logo/logo-01-primary.svg'),'utf8');
 assert(logoSvg.includes('viewBox'), 'Logo is not a valid SVG');
 console.log('Nino Topo portal static R2 checks: PASS — '+required.length+' files, 5 destination pairs, 5 licensed vector flags, 2 canonical logos.');

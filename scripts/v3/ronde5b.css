@@ -1,0 +1,14 @@
+/* Ronde 5B: scoped presentation corrections; source geometry and actions remain unchanged. */
+@media(min-width:1024px){
+ .v3Reis[data-view=reis]{grid-template-columns:var(--v3-side-w) minmax(0,1fr) calc((100% - var(--v3-side-w) - 2*var(--v3-inner)) * .4 + var(--v3-inner))}
+ .v3Reis[data-view=reis] .v3Main>.v3MapStage{--v3-card-over:0}
+ .v3Reis[data-view=reis] .v3List>.v3Rows{grid-row:2;margin-bottom:0}
+ .v3Reis[data-view=reis] .v3Main>.v3Panel{grid-column:3;grid-row:3;min-width:0;margin:0 var(--v3-inner) var(--v3-inner) 0;padding:16px 20px!important;grid-template-columns:minmax(0,1fr);gap:10px}
+ .v3Reis[data-view=reis] .v3Panel .v3CardHead{gap:10px}
+ .v3Reis[data-view=reis] .v3Panel .v3CardTitle{flex:1 1 100%;font:700 28px/1.2 var(--v3-font)}
+ .v3Reis[data-view=reis] .v3Panel>.v3Locked{grid-column:1}
+ .v3Reis[data-view=reis] .v3Panel .v3Actions .primary{width:100%;min-width:0;white-space:normal;line-height:1.25;padding-block:8px}
+}
+@media(min-width:1024px) and (max-width:1279px){
+ .v3Reis[data-view=reis] .v3Panel .v3CardTitle{font-size:24px}
+}

@@ -1,0 +1,97 @@
+{
+  "10": {
+    "pass": true,
+    "previewSha256": "1d79db722dbc5eae4e51725f2156102de535eaeca2bf1520b138b6322f24a685",
+    "indexSha256": "3aced3c31259011b0af2947c78f71965cb4beb2e88c69d1663e61792b0304f5a",
+    "runs": {
+      "desktop": {
+        "viewport": [
+          1440,
+          900
+        ],
+        "screen": "reis",
+        "checks": {
+          "cases": 33,
+          "states": [
+            "alles",
+            "bezig",
+            "nieuw"
+          ],
+          "chapters": 11,
+          "minExposedMapShare": 0.5143,
+          "maxCardShare": 0.4,
+          "maxTitleLines": 1,
+          "fonts": [
+            28
+          ],
+          "longTitleCases": [
+            {
+              "state": "nieuw",
+              "title": "Hoofdstuk 4: Extra steden 19–23",
+              "lines": 1,
+              "font": 28
+            },
+            {
+              "state": "bezig",
+              "title": "Hoofdstuk 4: Extra steden 19–23",
+              "lines": 1,
+              "font": 28
+            },
+            {
+              "state": "alles",
+              "title": "Hoofdstuk 4: Extra steden 19–23",
+              "lines": 1,
+              "font": 28
+            }
+          ],
+          "framesStable": true
+        },
+        "errors": []
+      },
+      "ipad-liggend": {
+        "viewport": [
+          1080,
+          810
+        ],
+        "screen": "reis",
+        "checks": {
+          "cases": 33,
+          "states": [
+            "alles",
+            "bezig",
+            "nieuw"
+          ],
+          "chapters": 11,
+          "minExposedMapShare": 0.4736,
+          "maxCardShare": 0.4,
+          "maxTitleLines": 1,
+          "fonts": [
+            24
+          ],
+          "longTitleCases": [
+            {
+              "state": "nieuw",
+              "title": "Hoofdstuk 4: Extra steden 19–23",
+              "lines": 1,
+              "font": 24
+            },
+            {
+              "state": "bezig",
+              "title": "Hoofdstuk 4: Extra steden 19–23",
+              "lines": 1,
+              "font": 24
+            },
+            {
+              "state": "alles",
+              "title": "Hoofdstuk 4: Extra steden 19–23",
+              "lines": 1,
+              "font": 24
+            }
+          ],
+          "framesStable": true
+        },
+        "errors": []
+      }
+    }
+  }
+}

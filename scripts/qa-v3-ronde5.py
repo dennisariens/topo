@@ -17,7 +17,7 @@ FRAME='''async id=>{
  const b=[it,...isl].reduce((a,r)=>({l:Math.min(a.l,r.left),t:Math.min(a.t,r.top),r:Math.max(a.r,r.right),b:Math.max(a.b,r.bottom)}),{l:1e9,t:1e9,r:-1e9,b:-1e9});
  const st=document.querySelector('.v3Reis .v3MapStage').getBoundingClientRect(),card=document.querySelector('.v3Reis .v3Main>.v3Panel').getBoundingClientRect();
  return {id,frame:svg.dataset.frame,viewBox:svg.getAttribute('viewBox'),italyH:Math.round(b.b-b.t),italyW:Math.round(b.r-b.l),
-  clearOfCard:b.b<=card.top+1,inStage:b.t>=st.top-1&&b.l>=st.left-1&&b.r<=st.right+1,stageH:Math.round(st.height),stageW:Math.round(st.width),
+  clearOfCard:b.b<=card.top+1||b.r<=card.left+1||b.l>=card.right-1||b.t>=card.bottom-1,inStage:b.t>=st.top-1&&b.l>=st.left-1&&b.r<=st.right+1,stageH:Math.round(st.height),stageW:Math.round(st.width),
   freeH:Math.round(st.height-parseFloat(getComputedStyle(document.querySelector('.v3Reis .v3MapStage')).getPropertyValue('--v3-fit-bottom')))};
 }'''
 

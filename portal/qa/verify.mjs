@@ -3,7 +3,7 @@ import { existsSync, readFileSync } from 'node:fs';
 import { fileURLToPath } from 'node:url';
 import { dirname, resolve } from 'node:path';
 
-const repo = resolve(dirname(fileURLToPath(import.meta.url)), '../../..');
+const repo = resolve(dirname(fileURLToPath(import.meta.url)), '../..');
 const portal = readFileSync(resolve(repo, 'portal/index.html'), 'utf8');
 const required = [
   'assets/nino-topo/v3-r2/brand/logo/logo-01-primary.svg',

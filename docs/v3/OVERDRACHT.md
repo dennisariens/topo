@@ -202,7 +202,7 @@ Algemeen oordeel van de eigenaar: "ziet er zeer goed uit". De bevindingen van He
    - Bij 45/45 een rustige felicitatie: een gouden rand om de kaart, `nino-juicht` klein in de kaartkaart en de tekst 45 / 45. Geen confetti.
 5. **Overal groene randen weg:** de knop "Terug naar mijn kaart" in Schoolblad en de knop Sluiten in Instellingen hebben nog V2-groen. Zoek alle resten van V2-groen in V3 (randen, focus, tekst) en vervang ze door de V3-tokens. **Check:** geen zichtbaar element in V3 heeft nog de V2-groene kleurwaarden (lijst die waarden in de check).
 6. **Vespa-rit met Nino:** de animatie gebruikt `vespa-rijdend` (Nino op de Vespa) in plaats van de lege `vespa-zij`. Schudden, starten en wegrijden blijven gelijk, en verminderde beweging wordt nog steeds gerespecteerd.
-7. **Lifestyle-iconen nu al gebruiken** (eigenaar, 12-11; vervangt "TOPO_12–16 pas in V3.1"): stadion Milaan, gelato, strand Rimini, pasta Bologna en Fiat 500 (masters `art/master` `69c945c`, bestanden TOPO_12–16).
+7. **Lifestyle-iconen nu al gebruiken** (eigenaar, 12/13-11; vervangt "TOPO_12–16 pas in V3.1"): **Ferrari (Modena/Maranello)**, stadion Milaan, gelato, strand Rimini, pasta Bologna en Fiat 500 (masters `art/master` `daa188f`, bestanden TOPO_11–16). De Ferrari staat bij Modena, en net als de Fiat mag hij in meerdere hoofdstukken voorkomen.
    - **Reis-kaart, per hoofdstuk 1–2 lifestyle-iconen naast de landmarks van het hoofdstuk:**
      - op een plek waar ze geloofwaardig zijn: stadion bij Milaan, pasta bij Bologna, strand op de Adriatische kust bij Rimini, gelato in een stad of aan zee;
      - de **Fiat 500** "rijdt" in minstens 4 hoofdstukken op een andere plek (Turijn, Rome, de kust bij Napels, Toscane);
@@ -214,3 +214,20 @@ Algemeen oordeel van de eigenaar: "ziet er zeer goed uit". De bevindingen van He
      - bij de Vespa-rit: de Fiat 500 die op de achtergrond voorbijrijdt (verminderde beweging: stilstaand).
    - **Nooit:** in de les, in Toets tijdens de vragen, in de Gouden proef of in het keuzevenster. Het zijn geen leerplekken.
    - Ze komen in het manifest (status "in gebruik V3.0") en in `locations.json` met de vlag `lifestyle:true`.
+8. **Reliëf sprankelender** (eigenaar, 13-11):
+   - meer licht en leven: een warm zonlicht uit het noordwesten met een iets hoger lokaal contrast in de hillshade;
+   - toppen en sneeuw lichten op;
+   - groen en geel iets verzadigder, maar nooit neon (richting: de doelbeelden `R-reis-ijk` en `R-oefenen-ijk`);
+   - een zachte glans op de kustlijn.
+   Geometrie en sneeuwlaag blijven gelijk. **Stopcriterium:** de vergelijking naast `R-reis-ijk` op desktop en iPad, en akkoord van de lead designer.
+9. **Melding bij nieuwe post** (eigenaar, 13-11): krijgt een kind een postkaart (of een stempel of goud), dan volgt een melding.
+   - **Eerst uitzoeken:** heeft V2 al een moment voor een nieuwe postkaart? Zo ja, zet het om naar V3; zo nee, voeg het toe. Geen nieuwe beloningsregel: alleen tonen wat V2 al toekent.
+   - **Vorm:**
+     - een kort glaskaartje "Post voor jou!" met de postkaart als illustratie;
+     - het kaartje schuift het Reisboekje in;
+     - een tik opent het boek op de postkaartpagina;
+     - na 4 s verdwijnt het vanzelf;
+     - bij verminderde beweging zonder animatie;
+     - aangekondigd voor VoiceOver (`aria-live="polite"`).
+   - **Op de tab Beloningen** een kleine violette stip tot de nieuwe postkaart bekeken is.
+   - **Nooit tijdens** een vraag, de toets of de Gouden proef: de melding wacht tot het moment voorbij is.

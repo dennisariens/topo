@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """Targeted Round 5 screen checks (docs/v3/OVERDRACHT.md › Ronde 5); desktop 1440×900 and iPad 1080×810,
-overwriting the final evidence screenshots. One point per run: --point N."""
+overwriting the final evidence screenshots. One point per run: --point N; without it, points 1–9 in order."""
 import argparse,asyncio,hashlib,importlib.util,io,json,pathlib
 from PIL import Image
 from playwright.async_api import async_playwright
@@ -454,5 +454,6 @@ async def main(point):
  print('Ronde 5 punt',point,'PASS',flush=True)
 
 if __name__=='__main__':
- parser=argparse.ArgumentParser();parser.add_argument('--point',type=int,choices=range(1,10),required=True);args=parser.parse_args()
- asyncio.run(main(args.point))
+ parser=argparse.ArgumentParser();parser.add_argument('--point',type=int,choices=range(1,10));args=parser.parse_args()
+ # Without --point (qa-v3-all.py): every point in order, so the last screenshots are those of the latest point.
+ for n in ([args.point] if args.point else range(1,10)):asyncio.run(main(n))

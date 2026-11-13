@@ -244,3 +244,57 @@ Punt 1–7 zijn akkoord. Sterk: Voortgang bij 45/45 (tint, gouden rand, Nino met
 12. **Vespa-rit, knop Overslaan:** de focusring is donker en moet in V3-violet; de knop wordt een secundaire glaspil.
 
 **Stopcriterium:** screenshots van Reis (Steden en Landen) en de Vespa-rit op desktop en iPad, met de checks kaart ≥ 45% en titel ≤ 2 regels groen.
+
+### Overdracht ronde 5 (Claude Code, 13-11)
+
+**Pin:** `6809458` (laatste codewijziging). De commit hierna voegt alleen deze overdracht toe, plus de dieet-exports in `ARTWORK-INVENTARIS-RONDE3.md` (ronde 3 punt 19 faalde sinds assetdieet stap 3), een QA-runner zonder `--point` en het QA-bewijs. `index.html` is byte-gelijk (`3aced3c3…`, gelijk aan de pin in `src/v2/index.sha256`); V2 en `src/v2/` zijn niet gewijzigd.
+
+**Klaar:** punt 1–9, één commit per punt. QA: `scripts/qa-v3-ronde5.py --point N`, op desktop 1440×900 en iPad 1080×810; de screenshots staan in `docs/qa/v3-stijlbeeld/final/`.
+
+| Punt | Commit | Wat |
+|---|---|---|
+| 1 | `423e6ce` | Reis op één schaal, met twee vaste uitsneden: Italië, en Italië met omgeving (Landen, Zeeën). Glijdt in 450 ms; zonder animatie bij reduced motion. De hoogte van de hoofdstukkaart wordt gereserveerd. |
+| 2 | `c3247f8` | Alleen de landmarks van het actieve hoofdstuk (`relevantItems`); anders de basisset. De ontbrekende staan in `docs/v3/LANDMARKS-ONTBREKEND.md`. |
+| 3 | `1efe8ea` | Boek, pagina 1 en 2: geen witte tekstvakken, contrast AA. |
+| 4 | `81df178` | Voortgang: de beheersing als tint. Bij 45/45 komen er een gouden rand, een kleine nino-juicht en "45 / 45 beheerst" bij. |
+| 5 | `32dc52a` | Geen V2-groen meer onder V3. De check leest de groenwaarden uit V2 af en scant schermen, focus en backdrops. |
+| 6 | `7769c51` | De Vespa-rit gebruikt VESPA-RIJDEND (Nino rijdt mee). |
+| 7 | `f736073` | Lifestyle-iconen TOPO_11–16 (met de Ferrari) uit `daa188f`, via de manifestpijplijn, verschillend per hoofdstuk. De Fiat rijdt mee in de rit, de gelato komt bij een toets ≥ 80 %, en de Fiat staat op Voortgang. |
+| 8 | `40f9e9d` | Het reliëf sprankelt meer. Zie de toelichting hieronder. |
+| 9 | `6809458` | Melding bij nieuwe post. Zie de toelichting hieronder. |
+
+Toelichting bij punt 8 (reliëf):
+- Warm noordwestlicht, meer lokaal contrast, lichtere toppen en sneeuw, en een zachte kustglans.
+- Raster, geometrie en sneeuwlaag zijn ongewijzigd.
+- Desktop: satMean .42 → .56, satP99 .65 (≤ .75, geen neon), lokaal contrast 18,5 → 24,3.
+- De vergelijking staat in `relief-vergelijking-{desktop,ipad-liggend}.png` (voor | na | R-reis-ijk).
+
+Toelichting bij punt 9 (melding bij nieuwe post):
+- V2 had zo'n moment alleen voor stempels en goud, dus het is in V3 toegevoegd. De regel komt van V2 (eilandenles; 3e en 6e rit).
+- Een glaskaart "Post voor jou!" verschijnt; na 4 s schuift ze naar Beloningen. Een tik opent het boek op de postkaart.
+- `aria-live="polite"`; zonder animatie bij reduced motion.
+- Een violette stip op Beloningen blijft staan tot de kaart gezien is.
+- De melding wacht tijdens een vraag, de toets, de Gouden proef, de rit en het boek.
+- "Gezien" bewaart het apparaat in `localStorage` (`topoV3PostSeen`).
+
+**Eindcontrole:**
+- `npm run lint` is groen.
+- `npm test` is groen: 33/33.
+- `npm run build` is groen.
+- `qa-v3-all.py`: 23/23 groen. Daarvoor faalden twee checks, en die zijn nu bijgewerkt:
+  - ronde 3 punt 19: de dieet-exports ontbraken in de inventaris;
+  - ronde 3 punt 20: de check verwachtte 10 landmarks op Reis, wat sinds punt 2 per hoofdstuk verschilt.
+
+**Open**
+- Punt 8 wacht op het akkoord van de hoofdontwerper.
+  - De dramatiek van R-reis-ijk (oranje bergen, sterke hillshade) haal je niet met een filter over dit raster.
+  - Daarvoor is een nieuwe hillshade-render uit de DEM nodig: een eigen pakket, met een eigen doel en stopcriterium.
+- Ronde 5B punt 10–12 van de review zijn niet in deze opdracht gedaan (die liep tot punt 9):
+  - 10: iPad-kaart ≥ 45 %, hoofdstuktitel op ≤ 2 regels;
+  - 11: Landen als tint;
+  - 12: focus van Overslaan.
+- Landmarks die ontbreken: de eigenaar maakt ze aan (`LANDMARKS-ONTBREKEND.md`).
+- TOPO_12: de kleurnotitie staat nog open; voor UI-gebruik is het vrijgegeven door de eigenaar.
+- De coördinaten van de lifestyle-plekken Rimini en de kust bij Napels (Sorrento) zijn niet geverifieerd.
+- De test op een fysieke iPad 9.
+- Assetdieet stap 4–7 blijft geparkeerd (`95d5199`).

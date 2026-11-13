@@ -200,9 +200,9 @@
   },
   "backVia": "v3Btn v3LesBack",
   "primaryLabelWithActive": "Ga verder · Ontdekken",
-  "questionBefore": "city-7",
+  "questionBefore": "city-8",
   "reisVerderSameQuestion": {
-   "id": "city-7",
+   "id": "city-8",
    "chapter": "city2",
    "kind": "discover"
   },
@@ -245,9 +245,9 @@
   },
   "backVia": "v3Btn v3LesBack",
   "primaryLabelWithActive": "Ga verder · Ontdekken",
-  "questionBefore": "city-12",
+  "questionBefore": "city-8",
   "reisVerderSameQuestion": {
-   "id": "city-12",
+   "id": "city-8",
    "chapter": "city2",
    "kind": "discover"
   },

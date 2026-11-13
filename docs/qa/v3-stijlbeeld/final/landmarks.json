@@ -4,7 +4,7 @@
     "Reis",
     "toetsresultaat"
   ],
-  "previewSha256": "28abfced205994ec79becfe5a3e9dfec4a4c664ce33f342067912b0e1042d3c7",
+  "previewSha256": "aef16dd04014dee291d75cd98959494cbfbc95533dfa928b34aa9ef4357f37db",
   "indexSha256": "3aced3c31259011b0af2947c78f71965cb4beb2e88c69d1663e61792b0304f5a",
   "sourceCommit": "daa188fad9966329805ed7912d64d2fc221b4dd5",
   "manifestSha256": "49bc053c8745c086097d4346181b1c391ebc6c121d72d65d142921f99a8b3cf9",
@@ -59,7 +59,7 @@
             1440,
             900
           ],
-          "sha256": "38ac041c7d2a503c559ca5eebcdcf32719fd9da8a7560fa7820185f81bb58a05"
+          "sha256": "3232c0f63ada849f3ba72ff793ca5aa3bf2aae3cdb36ea103c35ff8b43ddf33a"
         }
       },
       "errors": []
@@ -101,7 +101,7 @@
             1080,
             810
           ],
-          "sha256": "6d70b05d0e146ea2aad6fdcc8cec86de0a15d73467ff0dbbe2419e4c3b89f790"
+          "sha256": "acf4800a72521784e9350118a3d1af00b852df5284b4c9cd86c98108585a446f"
         }
       },
       "errors": []

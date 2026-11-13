@@ -141,14 +141,14 @@
    "tap",
    "tap",
    "tap",
-   "tap+kiezer",
    "tap",
-   "tap"
+   "tap",
+   "tap+kiezer"
   ],
   "ipad-landscape": [
-   "tap",
    "tap+kiezer",
    "tap+vrijmaken",
+   "tap",
    "tap",
    "tap",
    "tap+kiezer"
@@ -156,26 +156,26 @@
   "ipad-portrait": [
    "tap",
    "tap",
+   "tap",
+   "tap",
    "tap+kiezer",
-   "tap",
-   "tap",
    "tap"
   ],
   "phone": [
+   "tap+kiezer",
+   "tap+kiezer",
    "tap+vrijmaken",
-   "tap+kiezer",
    "tap",
-   "tap+kiezer",
    "tap",
    "tap+kiezer"
   ],
   "phone-small": [
    "tap+kiezer",
    "tap",
-   "tap+kiezer",
    "tap+kiezer+vrijmaken",
+   "tap",
    "tap+vrijmaken",
-   "tap"
+   "tap+kiezer"
   ]
  },
  "tapsBlockedByV3": [],

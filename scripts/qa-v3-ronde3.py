@@ -23,7 +23,8 @@ async def check(p,n,touch):
  if n==20:
   geometry='() => [...document.querySelectorAll("#map [data-id]")].map(n=>[n.dataset.id,n.getAttribute("d"),n.getAttribute("cx"),n.getAttribute("cy")])'
   before=await p.evaluate(geometry)
-  assert await p.locator('.v3MapStage .v3Landmarks>g').count()==10
+  # Ronde 5 punt 2: only the active chapter's landmarks (or the basisset), no longer all 10.
+  assert await p.locator('.v3MapStage .v3Landmarks>g').count()>=1 and await p.locator('.v3MapStage .v3Map').get_attribute('data-landmark-set') in ('chapter','basis')
   assert await p.locator('.v3Landmarks>g').evaluate_all('ns=>ns.every(n=>{const a=TOPO_V3.art.landmarks.items.find(i=>i.id===n.dataset.landmark);return n.getAttribute("transform").startsWith("translate("+a.point[0]+" "+a.point[1]+")")})')
   assert await p.locator('#map .v3Landmarks').count()==0
   await act(p,'.v3MapTools [data-relief=false]',touch)

@@ -1,0 +1,11 @@
+Ronde 5 punt 1 PASS
+Ronde 5 punt 2 PASS
+/Users/dennisariens/topo-claude/scripts/qa-v3-ronde5.py:235: DeprecationWarning: Image.Image.getdata is deprecated and will be removed in Pillow 14 (2027-10-15). Use get_flattened_data instead.
+  cs=sorted((max(fg,L)+.05)/(min(fg,L)+.05) for L in (q.lum(px) for px in crop.getdata()))
+Ronde 5 punt 3 PASS
+Ronde 5 punt 4 PASS
+Ronde 5 punt 5 PASS
+Ronde 5 punt 6 PASS
+Ronde 5 punt 7 PASS
+Ronde 5 punt 8 PASS
+Ronde 5 punt 9 PASS

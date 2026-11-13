@@ -1,6 +1,6 @@
 {
   "1": {
-    "previewSha256": "b5dcd6c3f6a8e91cfc59073fc44f93c079347cea8ec2d1f9e08a73bdfe28e2e6",
+    "previewSha256": "aef16dd04014dee291d75cd98959494cbfbc95533dfa928b34aa9ef4357f37db",
     "runs": {
       "desktop": {
         "viewport": [
@@ -134,7 +134,7 @@
     "pass": true
   },
   "2": {
-    "previewSha256": "5637495df2fed0ff2e9dfe57fd45cee6dde2c537593bd556bc10c729287297f5",
+    "previewSha256": "aef16dd04014dee291d75cd98959494cbfbc95533dfa928b34aa9ef4357f37db",
     "runs": {
       "desktop": {
         "viewport": [
@@ -320,7 +320,7 @@
     "pass": true
   },
   "3": {
-    "previewSha256": "fc722a29d5519cdc85aedbd6899ae88b57bcd849bac19be80a70021dfdc18e76",
+    "previewSha256": "aef16dd04014dee291d75cd98959494cbfbc95533dfa928b34aa9ef4357f37db",
     "runs": {
       "desktop": {
         "viewport": [
@@ -352,7 +352,7 @@
     "pass": true
   },
   "4": {
-    "previewSha256": "87f58289053dedee67f9c2de2ff350a8eb9c7ab106c52c11cb926d41ffc0f2c2",
+    "previewSha256": "aef16dd04014dee291d75cd98959494cbfbc95533dfa928b34aa9ef4357f37db",
     "runs": {
       "desktop": {
         "viewport": [
@@ -416,7 +416,7 @@
     "pass": true
   },
   "5": {
-    "previewSha256": "9997f1ff3f43822b0a8b6cd2dd5eb576497259b42b1be5b7f520e5feec376621",
+    "previewSha256": "aef16dd04014dee291d75cd98959494cbfbc95533dfa928b34aa9ef4357f37db",
     "runs": {
       "desktop": {
         "viewport": [
@@ -782,7 +782,7 @@
     "pass": true
   },
   "6": {
-    "previewSha256": "9997f1ff3f43822b0a8b6cd2dd5eb576497259b42b1be5b7f520e5feec376621",
+    "previewSha256": "aef16dd04014dee291d75cd98959494cbfbc95533dfa928b34aa9ef4357f37db",
     "runs": {
       "desktop": {
         "viewport": [
@@ -874,7 +874,7 @@
     "pass": true
   },
   "7": {
-    "previewSha256": "5637495df2fed0ff2e9dfe57fd45cee6dde2c537593bd556bc10c729287297f5",
+    "previewSha256": "aef16dd04014dee291d75cd98959494cbfbc95533dfa928b34aa9ef4357f37db",
     "runs": {
       "desktop": {
         "viewport": [
@@ -1212,7 +1212,7 @@
     "pass": true
   },
   "8": {
-    "previewSha256": "28abfced205994ec79becfe5a3e9dfec4a4c664ce33f342067912b0e1042d3c7",
+    "previewSha256": "aef16dd04014dee291d75cd98959494cbfbc95533dfa928b34aa9ef4357f37db",
     "runs": {
       "desktop": {
         "viewport": [

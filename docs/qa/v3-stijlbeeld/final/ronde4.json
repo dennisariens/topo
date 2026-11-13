@@ -1,6 +1,6 @@
 {
   "1": {
-    "previewSha256": "5637495df2fed0ff2e9dfe57fd45cee6dde2c537593bd556bc10c729287297f5",
+    "previewSha256": "aef16dd04014dee291d75cd98959494cbfbc95533dfa928b34aa9ef4357f37db",
     "runs": {
       "desktop": {
         "viewport": [
@@ -62,7 +62,7 @@
     "pass": true
   },
   "2": {
-    "previewSha256": "28348d719162764a2f173d5e3064c3e1a7ccefe108e98f303b960df5b7b895bc",
+    "previewSha256": "aef16dd04014dee291d75cd98959494cbfbc95533dfa928b34aa9ef4357f37db",
     "runs": {
       "desktop": {
         "viewport": [
@@ -108,7 +108,7 @@
     "pass": true
   },
   "3": {
-    "previewSha256": "e0600e5fa77bb8d7879591ebd3de50132acadf8f2569ef678977b7bc4edf467e",
+    "previewSha256": "aef16dd04014dee291d75cd98959494cbfbc95533dfa928b34aa9ef4357f37db",
     "runs": {
       "desktop": {
         "viewport": [

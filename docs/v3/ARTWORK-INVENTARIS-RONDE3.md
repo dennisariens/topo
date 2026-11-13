@@ -368,3 +368,40 @@ Deze bestanden zijn geen nieuwe artwork: het zijn de beelden die al in `index.ht
 | `assets/v2/nino-v2-venezia.webp` | 2287.1 | `45902f75dcb6` | `src/v2/scripts/13-nino-v2.js` |
 | `assets/v2/nino-v2-folioleft.webp` | 1864.3 | `d4862f0f5e34` | `src/v2/scripts/13-nino-v2.js` |
 | `assets/v2/nino-v2-folioright.webp` | 2050.6 | `3ce3133d483b` | `src/v2/scripts/13-nino-v2.js` |
+
+## Assetdieet stap 3: afgeleide exports (`assets/v3/dieet/`)
+
+Geschaalde WebP-kopieën die alleen de V3-preview gebruikt (`scripts/v3-assets-export.py --stap 3`, manifest `assets/v3/dieet/manifest.json`). Geen nieuwe artwork: elke rij is een verkleining van de genoemde bron; de bron blijft ongewijzigd.
+
+| Export | Bron | Maat | Bytes | SSIM |
+|---|---|---|---|---|
+| assets/v3/dieet/042bd1d30100-276x184.webp | assets/v2/nino-v2-stamp7.webp | 276×184 | 35326 | 0.9978 |
+| assets/v3/dieet/063a643d0d16-268x268.webp | assets/v2/nino-v2-stamp10.webp | 268×268 | 50738 | 0.9924 |
+| assets/v3/dieet/07af5136d5d5-88x88.webp | assets/v3/render/exports/vespa-icoon-v3.webp | 88×88 | 9544 | 1.0 |
+| assets/v3/dieet/1794a3ee5742-266x266.webp | assets/v2/nino-v2-stamp6.webp | 266×266 | 42998 | 0.9939 |
+| assets/v3/dieet/45902f75dcb6-754x490.webp | assets/v2/nino-v2-venezia.webp | 754×490 | 676412 | 1.0 |
+| assets/v3/dieet/4d989d4b6147-262x262.webp | assets/v2/nino-v2-stamp5.webp | 262×262 | 44920 | 0.9937 |
+| assets/v3/dieet/61e86fd6f033-184x181.webp | assets/v2/nino-v2-favorite1.webp | 184×181 | 63674 | 1.0 |
+| assets/v3/dieet/686b3f091f93-265x242.webp | assets/v2/nino-v2-stamp9.webp | 265×242 | 37006 | 0.9942 |
+| assets/v3/dieet/75b08c68393c-184x184.webp | assets/v2/nino-v2-favorite0.webp | 184×184 | 58398 | 1.0 |
+| assets/v3/dieet/819a3d3d1de5-753x502.webp | assets/v2/nino-v2-napoli.webp | 753×502 | 648596 | 1.0 |
+| assets/v3/dieet/86f084c1599a-873x582.webp | assets/v3/render/exports/vespa-rijdend-v3.webp | 873×582 | 142594 | 0.9928 |
+| assets/v3/dieet/8901f57c74fe-834x834.webp | assets/v2/nino-v2-cover.webp | 834×834 | 720120 | 1.0 |
+| assets/v3/dieet/89966925cb2f-388x388.webp | assets/v2/nino-art-welcome.webp | 388×388 | 133478 | 1.0 |
+| assets/v3/dieet/8c7e1ef3cd72-753x502.webp | assets/v2/nino-v2-sicilia.webp | 753×502 | 634674 | 1.0 |
+| assets/v3/dieet/9032c4ff1ec9-261x174.webp | assets/v2/nino-v2-stamp8.webp | 261×174 | 29528 | 0.9943 |
+| assets/v3/dieet/9e350e91c1a2-753x502.webp | assets/v2/nino-v2-sardegna.webp | 753×502 | 663880 | 1.0 |
+| assets/v3/dieet/9ebfeeb30285-660x440.webp | assets/v3/render/exports/vespa-zij-v3.webp | 660×440 | 101648 | 0.9902 |
+| assets/v3/dieet/b00fb30fc5eb-262x262.webp | assets/v2/nino-v2-stamp2.webp | 262×262 | 50684 | 0.9904 |
+| assets/v3/dieet/b34ff0780ebd-270x180.webp | assets/v2/nino-v2-stamp1.webp | 270×180 | 33184 | 0.993 |
+| assets/v3/dieet/b3fa5fbdd2ee-840x840.webp | assets/v2/pizza-reward-margherita.webp | 840×840 | 161698 | 0.9912 |
+| assets/v3/dieet/b7cf9eeb47dd-266x266.webp | assets/v2/nino-v2-stamp3.webp | 266×266 | 49276 | 0.9906 |
+| assets/v3/dieet/b9dbc0d44b4a-264x264.webp | assets/v2/nino-v2-stamp4.webp | 264×264 | 27408 | 0.9935 |
+| assets/v3/dieet/bd25cc6689f8-291x436.webp | assets/v3/render/exports/nino-welkom-v3.webp | 291×436 | 43536 | 0.9915 |
+| assets/v3/dieet/cc3cd8efb207-396x396.webp | assets/v2/nino-v2-arrival.webp | 396×396 | 85348 | 0.9915 |
+| assets/v3/dieet/cd5e75889d7c-184x184.webp | assets/v2/nino-v2-favorite2.webp | 184×184 | 57484 | 1.0 |
+| assets/v3/dieet/de4d32cf277a-268x268.webp | assets/v2/nino-v2-stamp0.webp | 268×268 | 48708 | 0.9924 |
+| assets/v3/dieet/e241b9408c86-208x208.webp | assets/v2/pizza-board-css.webp | 208×208 | 48052 | 1.0 |
+| assets/v3/dieet/e270e3406986-480x720.webp | assets/v3/render/exports/nino-juicht-v3.webp | 480×720 | 120168 | 0.9918 |
+| assets/v3/dieet/e99a7e0d6ed2-840x840.webp | assets/v2/pizza-reward-quattro-formaggi.webp | 840×840 | 157940 | 0.9913 |
+| assets/v3/dieet/ff782e287391-840x840.webp | assets/v2/pizza-reward-salami.webp | 840×840 | 178936 | 0.9928 |

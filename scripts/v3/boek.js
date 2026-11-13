@@ -24,6 +24,7 @@
   for(let i=0;i<24&&!has()&&!next.disabled;i++)next.click();
  }};
  const ride=document.querySelector('.vespaRide'),rider=ride?.querySelector('.rideNino');
+ ride?.querySelector('.rideActions button')?.classList.add('v3RideSkip');
  // Ronde 5 punt 7: the Fiat 500 drives past in the background (behind Nino); with reduced motion it stands still.
  const fiat=V.art.lifestyle?.items.find(i=>i.id==='TOPO_16');
  if(rider&&fiat&&!ride.querySelector('.v3RideFiat')){const f=document.createElement('img');f.className='v3RideFiat';f.src=fiat.exports[devicePixelRatio>1?256:128].src;f.alt='';f.setAttribute('aria-hidden','true');f.dataset.lifestyle='TOPO_16';rider.before(f);}

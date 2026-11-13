@@ -15,3 +15,8 @@
 
 /* Landen: preserve the map underneath; strong violet belongs to the outlines. */
 .v3MapStage .v3Map[data-focus=areas] .country.v3Hit{fill-opacity:.12!important;stroke:var(--v3-accent)!important;stroke-opacity:.9;stroke-width:2;vector-effect:non-scaling-stroke}
+
+/* Overslaan keeps its original action; only its secondary surface and keyboard focus change. */
+body.v3On .vespaRide .v3RideSkip{min-width:44px;min-height:48px;padding:0 20px;border:0;border-radius:999px;background:rgba(255,255,255,.72);color:#2a2440;box-shadow:inset 0 0 0 1px rgba(255,255,255,.7),0 4px 12px rgba(42,36,64,.1);-webkit-backdrop-filter:blur(28px) saturate(1.4);backdrop-filter:blur(28px) saturate(1.4);font:600 17px/1.2 var(--v3-font,system-ui,sans-serif)}
+body.v3On .vespaRide .v3RideSkip:focus-visible{outline:3px solid #5b45e0!important;outline-offset:3px}
+@media(prefers-reduced-transparency:reduce),(prefers-contrast:more){body.v3On .vespaRide .v3RideSkip{background:#fff;-webkit-backdrop-filter:none;backdrop-filter:none}}

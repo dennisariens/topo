@@ -85,6 +85,7 @@ async def countries(page, name):
         errors.append(data)
     if any(c['alpha']>.2 or c['alpha']<=0 or c['stroke']!='rgb(91, 69, 224)' or c['strokeAlpha']<.5 or c['width']<1 for c in data['countries']):
         errors.append(data['countries'])
+    data['geometrySha256']=hashlib.sha256(json.dumps(data.pop('geometry')).encode()).hexdigest()
     return data, errors, 'reis-omgeving'
 
 
@@ -93,6 +94,7 @@ async def ride(page, name):
     await page.clock.install(time=0)
     await page.clock.pause_at(100)
     await page.keyboard.press('Tab')
+    before = await page.evaluate('[state.good,state.pizzas,state.trips]')
     await page.evaluate('celebrateTrip("Rome","Florence")')
     button = page.locator('.vespaRide .rideActions button').first
     data = await button.evaluate('''b=>{const s=getComputedStyle(b),r=b.getBoundingClientRect();return{text:b.textContent,focus:document.activeElement===b,visible:b.matches(':focus-visible'),
@@ -104,6 +106,7 @@ async def ride(page, name):
     rgba = re.findall(r'[\d.]+', data['background'])
     if not data['background'].startswith('rgba(') or not .5<=float(rgba[-1])<1:
         errors.append(data)
+    data['rewardCountersBefore']=before
     return data, errors, 'vespa-rit'
 
 
@@ -133,6 +136,11 @@ async def main(point):
                     await page.evaluate('document.activeElement?.blur?.()')
                     await page.mouse.move(1,1)
                 await page.screenshot(path=str(OUT/f'{screen}-{name}.png'))
+                if point==12:
+                    await page.locator('.vespaRide .v3RideSkip').click()
+                    assert await page.locator('.vespaRide').get_attribute('data-phase')=='arrived'
+                    assert await page.evaluate('[state.good,state.pizzas,state.trips]')==result['rewardCountersBefore']
+                    result['skipReachesArrivalWithoutRewardChanges']=True
             runs[name] = {'viewport':[width,height],'screen':screen,'checks':compact_reis(result) if point==10 and not bad else result,'errors':errors}
             await context.close()
         await browser.close()
@@ -140,6 +148,11 @@ async def main(point):
     assert not failures, json.dumps(failures,ensure_ascii=False)
     path = OUT/'ronde5b.json'
     data = json.loads(path.read_text()) if path.exists() else {}
+    for entry in data.values():
+        for run in entry.get('runs',{}).values():
+            checks=run.get('checks',{})
+            if isinstance(checks,dict) and 'geometry' in checks:
+                checks['geometrySha256']=hashlib.sha256(json.dumps(checks.pop('geometry')).encode()).hexdigest()
     data[str(point)] = {'pass':True,'previewSha256':initial,'indexSha256':index,'runs':runs}
     path.write_text(json.dumps(data,ensure_ascii=False,indent=2)+'\n')
     print(f'Ronde 5B punt {point}: PASS ({len(runs)} viewports)',flush=True)

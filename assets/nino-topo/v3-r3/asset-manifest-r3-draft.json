@@ -1,0 +1,30 @@
+{
+  "status": "DRAFT_REVIEW_NOT_APPROVED",
+  "createdFromBranch": "art/nino-topo-website-v1",
+  "r2": {
+    "primary": {
+      "path": "assets/nino-topo/v3-r2/brand/logo/logo-01-primary.svg",
+      "gitBlob": "7b37b9b52c0cbcb752c90732978b984c0eff88a6"
+    },
+    "compact": {
+      "path": "assets/nino-topo/v3-r2/brand/logo/logo-02-compact.svg",
+      "gitBlob": "0926ed3422bfa2bc20cce59b8517688ef6ac5663"
+    },
+    "wordmark": {
+      "path": "assets/nino-topo/v3-r2/brand/logo/logo-03-wordmark.svg",
+      "gitBlob": "964156f36c23044027450f24cf59e2e44ca508db"
+    }
+  },
+  "r3": {
+    "logo01": "brand/logo-r3/logo-01-primary-r3.svg",
+    "logo02": "brand/logo-r3/logo-02-compact-r3.svg"
+  },
+  "checks": {
+    "originalsUnchanged": true,
+    "pathsRetained": true,
+    "r3ImageReducedBy": "18%",
+    "browserScreenshots": "pending",
+    "ownerSignoff": false,
+    "productionDeployment": false
+  }
+}

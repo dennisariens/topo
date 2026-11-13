@@ -1,0 +1,24 @@
+# Backlog
+
+Regels:
+- Bovenaan staat wat het eerst gebeurt. De nachtrun pakt de **bovenste taak met status `ready`**.
+- `ready` betekent dat er een contract is met toetsbare criteria. Zonder contract blijft een taak op `idee`.
+- Prioriteit: P0 = blokkeert de mijlpaal · P1 = mijlpaal · P2 = later.
+- Grootte: S ≤ 1 run · M ≤ 3 runs · L moet eerst gesplitst worden.
+- Statussen: `idee` → `ready` → `bezig` → `review` → `klaar` | `fail(n)` | `geblokkeerd: <reden>`
+
+| ID | Taak | Mijlpaal | P | Grootte | Status | Bouwer | Contract |
+|---|---|---|---|---|---|---|---|
+| BL-001 | Branch-inventaris: per branch de status (gemerged, achter, uniek werk), voorstel keep/merge/archive | M0 | P0 | S | ready | Claude | Criteria: tabel met alle 71 branches in `ops/reports/branches.md`, elke rij heeft een actie en een reden, niets verwijderd |
+| BL-002 | Docs-inventaris: wat is actueel, wat naar `docs/archive/` | M0 | P0 | S | ready | Claude | Criteria: lijst plus verplaatsplan, `AGENTS.md`-verwijzingen blijven kloppen |
+| BL-003 | `ops/STATE.md` vullen uit `docs/v3/SPEC.md` en `OVERDRACHT.md` | M0 | P0 | S | ready | Claude | Criteria: ≤ 60 regels, elke bewering verwijst naar een pin of bestand |
+| BL-004 | V3.0 release-kandidaat: Hermes-hertest op de laatste pin plus checklist voor de iPad-test van Dennis | M0 | P0 | M | idee | Hermes | — |
+| BL-005 | Integratieplan `codex/topo-v3` + `art/master` → `main` | M0 | P0 | M | idee | Claude | — |
+| BL-006 | Vercel: productie = `main`, preview per PR, portal op een eigen pad | M0 | P1 | S | idee | Claude | — |
+| BL-007 | Runtime-migratie stap 1: karakterisering op de V3.0-pin | M1 | P1 | M | idee | Claude | — |
+| BL-008 | Speeltest-protocol met 2–3 kinderen (taken, observatie, vragen) | M0 | P1 | S | idee | Claude | — |
+| BL-009 | Domein koppelen aan Vercel (na aankoop door Dennis), productie-URL vastleggen | M0 | P1 | S | geblokkeerd: domeinaankoop | Claude | — |
+| BL-010 | Speeltest-ronde 1 met groep 7 op V3.0 (na BL-004) | M0 | P1 | S | idee | Dennis + Claude | — |
+| FR-01 | FR-curriculum: itemlijst groep 7 (toetsstof, schoolatlas), met bron per item → `src/lands/fr/items.draft.json` (pure data) | M2 · parallel | P2 | S | idee | **Codex** | — |
+| FR-02 | FR-geometrie: bron met licentie (Natural Earth/OSM), projectie, hashes, validatierapport, overnemen uit `land/fr-geo` waar het klopt | M2 · parallel | P2 | M | idee | **Codex** | — |
+| FR-03 | FR-artwork-brief: Nino in Frankrijk (thema-object, scènes, landmarks), voortbouwend op de goedgekeurde gebakjes uit `art/master` | M2 · parallel | P2 | S | idee | **Codex** | — |

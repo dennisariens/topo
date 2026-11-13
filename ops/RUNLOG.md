@@ -1,0 +1,10 @@
+# RUNLOG
+
+Append-only, één regel per run. Elke vrijdag rolt de weekreview oudere weken op tot één samenvattingsregel.
+
+Formaat:
+`YYYY-MM-DD HH:MM | agent/model | taak | PASS/FAIL/BLOCKED | pin | creditgebruik (laag/mid/hoog) | één zin`
+
+---
+2026-11-13 22:30 | claude/opus | setup | — | — | mid | ops/ geïnstalleerd, wacht op G0
+2026-11-13 22:50 | claude/opus | setup | — | — | laag | Besluiten Dennis verwerkt (GO, B2C+B2B, groep 7, FR-code pauze, parallel op Codex 🟡); ops/ naar repo

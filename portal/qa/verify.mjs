@@ -13,6 +13,9 @@ const required = [
   'index.html'
 ];
 const countries = ['italy','france','spain','germany','netherlands'];
+const flagCodes = ['it','fr','es','de','nl'];
+for (const code of flagCodes) required.push('portal/assets/flags/'+code+'.svg');
+required.push('portal/assets/flags/LICENSE');
 for (const country of countries) {
   required.push('assets/nino-topo/v3-r2/destinations/'+country+'-destination.webp');
   required.push('assets/nino-topo/v3-r2/destinations/'+country+'-hover.webp');
@@ -23,8 +26,9 @@ assert(portal.includes("const countries=[") && portal.includes('countries){'), '
 assert(portal.includes("const routes={italy:'../index.html',france:null}"), 'Route contract changed: re-verify Italy and France');
 assert(portal.includes('prefers-reduced-motion'), 'Reduced-motion support missing');
 assert(portal.includes('country:focus-within') || portal.includes('country:focus-visible'), 'Keyboard focus state missing');
+assert(portal.includes('./assets/flags/'), 'Native SVG flag paths missing');
 assert(!portal.includes('/legacy/superseded-logo-v1/'), 'Deprecated logo used');
 assert(!portal.includes('raw.githubusercontent.com'), 'Unpinned external asset references found');
 const logoSvg=readFileSync(resolve(repo, 'assets/nino-topo/v3-r2/brand/logo/logo-01-primary.svg'),'utf8');
 assert(logoSvg.includes('viewBox'), 'Logo is not a valid SVG');
-console.log('Nino Topo portal static R2 checks: PASS — '+required.length+' files, 5 destination pairs, 2 canonical logos.');
+console.log('Nino Topo portal static R2 checks: PASS — '+required.length+' files, 5 destination pairs, 5 licensed vector flags, 2 canonical logos.');

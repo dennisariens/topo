@@ -20,8 +20,7 @@ header{display:flex;align-items:center;justify-content:space-between;height:92px
 .country:hover .visual img.alt,.country:focus-within .visual img.alt{opacity:1}.country:hover .visual img.base,.country:focus-within .visual img.base{opacity:0}
 .country:hover .visual img{transform:scale(1.025)}
 .country .bottom{display:flex;align-items:center;justify-content:space-between;gap:14px;padding:21px 22px 24px;min-height:102px}.title{min-width:0}h2,h3{display:flex;align-items:center;gap:10px;margin:0 0 6px;font-size:22px;letter-spacing:-.025em}p.description{margin:0;font-size:13px;color:var(--secondary);line-height:1.45}
-.flag{height:18px;width:26px;display:inline-block;flex-shrink:0;border:1px solid #0001;border-radius:3px;box-shadow:0 1px 2px #0002}.it{background:linear-gradient(90deg,#009246 33.33%,#fff 33.33% 66.66%,#ce2b37 66.66%)}.fr{background:linear-gradient(90deg,#002395 33.33%,#fff 33.33% 66.66%,#ed2939 66.66%)}.es{background:linear-gradient(#aa151b 25%,#f1bf00 25% 75%,#aa151b 75%)}.de{background:linear-gradient(#111 33.33%,#dd0000 33.33% 66.66%,#ffce00 66.66%)}.nl{background:linear-gradient(#ae1c28 33.33%,#fff 33.33% 66.66%,#21468b 66.66%)}
-.action,.soon{display:inline-flex;align-items:center;justify-content:center;gap:9px;white-space:nowrap;border-radius:99px;font-size:12px;font-weight:650;line-height:1.2}
+.flag{height:20px;width:26px;display:inline-block;flex-shrink:0;border:1px solid #0001;border-radius:3px;box-shadow:0 1px 2px #0002;object-fit:cover;background:#fff}.action,.soon{display:inline-flex;align-items:center;justify-content:center;gap:9px;white-space:nowrap;border-radius:99px;font-size:12px;font-weight:650;line-height:1.2}
 .action{background:var(--lav);color:#fff;padding:13px 18px;min-height:44px;text-decoration:none}.action:hover{background:var(--lav-dark)}.action[href]::after{content:"";position:absolute;inset:0;cursor:pointer}.country:focus-within{outline:3px solid var(--lav);outline-offset:3px}.action:focus-visible{outline:0}
 .pending{background:var(--lav-tint);border:1px solid var(--lav-soft);color:#685398;padding:12px 15px}
 .soon{border:1px solid var(--lav-soft);background:var(--lav-tint);color:#7761AD;padding:8px 12px}
@@ -74,7 +73,7 @@ for(const c of countries){
  const h=c.active?'h2':'h3';const src=base+c.id+'-';
  const action=c.active?(routes[c.id]?'<a class="action" href="'+routes[c.id]+'" aria-label="Start '+c.name+' leren">Start leren <span aria-hidden="true">→</span></a>':'<span class="action pending">Leeromgeving volgt</span>'):'<span class="soon">'+lock+' Binnenkort</span>';
  const text=c.desc?'<p class="description">'+c.desc+'</p>':'';
- card.innerHTML='<div class="visual"><img class="base" src="'+src+'destination.webp" alt="Illustratie van '+c.name+'" '+(c.id==='italy'?'fetchpriority="high"':'loading="lazy"')+'><img class="alt" src="'+src+'hover.webp" alt="" loading="lazy"></div><div class="bottom"><div class="title"><'+h+'><span class="flag '+c.flag+'" role="img" aria-label="Vlag van '+c.name+'"></span>'+c.name+'</'+h+'>'+text+'</div>'+action+'</div>';
+ card.innerHTML='<div class="visual"><img class="base" src="'+src+'destination.webp" alt="Illustratie van '+c.name+'" '+(c.id==='italy'?'fetchpriority="high"':'loading="lazy"')+'><img class="alt" src="'+src+'hover.webp" alt="" loading="lazy"></div><div class="bottom"><div class="title"><'+h+'><img class="flag" src="./assets/flags/'+c.flag+'.svg" width="26" height="20" alt="" aria-hidden="true">'+c.name+'</'+h+'>'+text+'</div>'+action+'</div>';
  document.getElementById(c.active?'featured':'future').append(card);
 }
 document.getElementById('year').textContent=new Date().getFullYear();

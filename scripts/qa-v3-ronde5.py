@@ -48,6 +48,76 @@ VOORTGANG='''()=>{const f=document.querySelector('.v3VgKaart'),svg=f.querySelect
  return {count:document.querySelector('.v3VgCount strong').textContent,flat,outlined,relief:svg.dataset.relief==='on'&&!!terrain&&getComputedStyle(terrain).display!=='none',
   gold:f.classList.contains('v3VgAllDone')&&getComputedStyle(f).boxShadow.includes('rgb(210, 165, 60)'),cheer:cheer?.dataset.v3Master||'',caption:f.querySelector('.v3VgKaartTitle span').textContent};}'''
 
+# Point 5: every V2 green and teal (index.html outside data URIs: hue 85–186°, saturation ≥ 12 %, lightness 10–93 %),
+# plus V2's three focus teals at 187° (#087887 focus, #147486 summary focus, #067b8b map micro-hit). Derived at run time.
+def v2_greens():
+ import colorsys,re
+ t=re.sub(r'data:[a-z/+.-]+;base64,[A-Za-z0-9+/=]+','',(ROOT/'index.html').read_text(encoding='utf-8'));out={'#087887','#147486','#067b8b'}
+ hexes=[m.lower() for m in re.findall(r'#([0-9a-fA-F]{6}|[0-9a-fA-F]{3})(?![0-9a-fA-F])',t)]
+ rgbs=['%02x%02x%02x'%tuple(map(int,m)) for m in re.findall(r'rgba?\((\d+),\s*(\d+),\s*(\d+)',t)]
+ for h in hexes+rgbs:
+  h=''.join(x*2 for x in h) if len(h)==3 else h
+  H,L,S=colorsys.rgb_to_hls(*(int(h[i:i+2],16)/255 for i in (0,2,4)))
+  if 85<=H*360<=186 and S>=.12 and .1<L<.93:out.add('#'+h)
+ return sorted(out)
+V2_GREENS=v2_greens()
+GREEN_SCAN='''greens=>{const want=new Set(greens.map(h=>[1,3,5].map(i=>parseInt(h.slice(i,i+2),16)).join(',')));const hits=[];
+ const rgb=v=>[...(v||'').matchAll(/rgba?\\(([\\d.]+),\\s*([\\d.]+),\\s*([\\d.]+)(?:,\\s*([\\d.]+))?/g)].filter(m=>m[4]===undefined||+m[4]>0).map(m=>[m[1],m[2],m[3]].map(Math.round).join(','));
+ const name=n=>n.tagName.toLowerCase()+(n.id?'#'+n.id:'')+(typeof n.className==='string'&&n.className?'.'+n.className.trim().split(/\\s+/).slice(0,2).join('.'):'');
+ const look=(n,cs,where)=>{const props=[];
+  if([...n.childNodes].some(c=>c.nodeType===3&&c.textContent.trim()))props.push('color');
+  props.push('background-color','background-image','box-shadow','fill','stroke');
+  for(const s of ['top','right','bottom','left'])if(parseFloat(cs['border-'+s+'-width'])>0&&cs['border-'+s+'-style']!=='none')props.push('border-'+s+'-color');
+  if(cs.outlineStyle!=='none'&&parseFloat(cs.outlineWidth)>0)props.push('outline-color');
+  if(cs.textDecorationLine!=='none')props.push('text-decoration-color');
+  for(const pr of props){if(pr==='stroke'&&cs.stroke==='none')continue;if(pr==='fill'&&!(n instanceof SVGElement))continue;for(const c of rgb(cs.getPropertyValue(pr)))if(want.has(c))hits.push([name(n)+where,pr,c]);}};
+ for(const n of document.querySelectorAll('body *')){if(n.closest('.v3PreviewBar,#v3PreviewBar,[data-preview-bar]'))continue;if(!n.getClientRects().length)continue;const cs=getComputedStyle(n);if(cs.visibility!=='visible'||+cs.opacity===0)continue;
+  look(n,cs,'');for(const ps of ['::before','::after']){const c2=getComputedStyle(n,ps);if(c2.content&&c2.content!=='none'&&c2.display!=='none')look(n,c2,ps);}}
+ return hits;}'''
+
+FOCUS_SCAN='''greens=>{const want=new Set(greens.map(h=>[1,3,5].map(i=>parseInt(h.slice(i,i+2),16)).join(',')));const n=document.activeElement;if(!n||n===document.body)return [];
+ const cs=getComputedStyle(n),vals=[cs.outlineStyle!=='none'?cs.outlineColor:'',cs.boxShadow,cs.borderTopColor,cs.color,cs.backgroundColor];
+ const hit=vals.flatMap(v=>[...(v||'').matchAll(/rgba?\\(([\\d.]+),\\s*([\\d.]+),\\s*([\\d.]+)/g)].map(m=>[m[1],m[2],m[3]].map(Math.round).join(','))).filter(c=>want.has(c));
+ return hit.length?[[n.tagName+'.'+(n.className&&n.className.baseVal===undefined?n.className:''),'focus',hit[0]]]:[];}'''
+
+async def tab_scan(p,steps=14):
+ hits=[]
+ for _ in range(steps):
+  await p.keyboard.press('Tab');hits+=await p.evaluate(FOCUS_SCAN,V2_GREENS)
+ return hits
+
+async def green_screens(p,touch):
+ """Visit the V3 screens and dialogs; per screen the elements still painted in a V2 green."""
+ scan=lambda:p.evaluate(GREEN_SCAN,V2_GREENS);out={}
+ blur='()=>{document.activeElement?.blur?.()}'
+ out['reis']=await scan()
+ await act(p,'.v3SchoolBtn',touch);out['schoolblad']=await scan()
+ b=p.locator('#schoolbladDialog button').filter(visible=True)
+ out['schoolblad-focus']=await tab_scan(p,6)
+ await p.keyboard.press('Escape');await p.wait_for_timeout(300)
+ await act(p,'[data-nav=instellingen]',touch);out['instellingen']=await scan()
+ out['instellingen-focus']=await tab_scan(p,12)
+ await p.keyboard.press('Escape');await p.wait_for_timeout(300)
+ await q.goto(p,'oefenen');out['oefenen']=await scan()
+ await p.evaluate('TOPO_V3.shell.practice("point","city1")');await p.wait_for_timeout(900);out['les']=await scan();out['les-focus']=await tab_scan(p,10)
+ wrong=await p.evaluate('()=>[...document.querySelectorAll("#map [data-id][tabindex=\\"0\\"]")].map(n=>n.dataset.id).find(id=>id!==state.current.id&&id.startsWith("city"))')
+ await p.locator('#map [data-id="'+wrong+'"][tabindex="0"]').first.press('Enter');await p.wait_for_timeout(500);out['les-fout']=await scan()
+ await p.evaluate('document.querySelector("#next")?.click()');await p.wait_for_timeout(500)
+ await p.locator('#map [data-id="'+await p.evaluate('state.current.id')+'"][tabindex="0"]').first.press('Enter');await p.wait_for_timeout(500);out['les-goed']=await scan()
+ await p.evaluate('TOPO_V3.shell.practice("write","city1")');await p.wait_for_timeout(900)
+ await p.locator('#answer').fill(await p.evaluate('state.current.name'));await p.locator('#answer').press('Enter');await p.wait_for_timeout(500);out['les-schrijf']=await scan()
+ await p.evaluate('()=>{document.activeElement?.blur?.();openMapPicker(ITEMS.filter(i=>["city-6","area-e"].includes(i.id)))}');await p.wait_for_timeout(600);out['keuzevenster']=await scan()
+ out['keuzevenster-focus']=await tab_scan(p,5)
+ await p.keyboard.press('Escape');await p.wait_for_timeout(300)
+ await p.goto('about:blank');await p.goto(q.HTML.as_uri()+'#alles/bg03');await p.wait_for_timeout(800)
+ await q.goto(p,'rewards');out['beloningen']=await scan()
+ await act(p,'.v3BookCover',touch);out['boek']=await scan();await p.keyboard.press('Escape');await p.wait_for_timeout(300)
+ await q.goto(p,'voortgang');out['voortgang']=await scan()
+ await q.goto(p,'toets');out['toets']=await scan()
+ await q.play_toets(p);out['toetsResult']=await scan()
+ await p.goto('about:blank');await p.goto(q.HTML.as_uri()+'#welkom/bg03');await p.wait_for_timeout(900);out['kennismaking']=await scan()
+ return out
+
 async def act(p,selector,touch=False):
  n=p.locator(selector).filter(visible=True).first
  await (n.tap(timeout=2500) if touch else n.click(timeout=2500))
@@ -139,6 +209,18 @@ async def check(p,n,touch,vp):
    else:
     assert not r['gold'] and not r['cheer'],r
   return shots,out
+ if n==5:
+  out=await green_screens(p,touch)
+  hits={k:v for k,v in out.items() if v}
+  for k,v in hits.items():print(vp,k,len(v),v[:6])
+  assert not hits,list(hits)
+  await p.goto('about:blank');await p.goto(q.HTML.as_uri()+'#bezig/bg03');await p.wait_for_timeout(800)
+  await act(p,'.v3SchoolBtn',touch);await p.mouse.move(1,1);await p.wait_for_timeout(200)
+  await p.screenshot(path=str(OUT/f'schoolblad-{vp}.png'));shots.append('schoolblad')
+  await p.keyboard.press('Escape');await p.wait_for_timeout(300)
+  await act(p,'[data-nav=instellingen]',touch);await p.mouse.move(1,1);await p.wait_for_timeout(200)
+  await p.screenshot(path=str(OUT/f'instellingen-{vp}.png'));shots.append('instellingen')
+  return shots,{'screens':sorted(out),'v2Greens':V2_GREENS,'v2GreenCount':len(V2_GREENS),'hits':0}
  raise SystemExit('unknown point')
 
 async def main(point):

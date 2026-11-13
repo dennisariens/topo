@@ -30,3 +30,30 @@
 .v3View-voortgang .v3VgCheer{position:absolute;right:20px;bottom:16px;width:96px;height:118px;pointer-events:none;z-index:1}
 .v3View-voortgang .v3VgCheer .ninoArtSlot,.v3View-voortgang .v3VgCheer img{width:100%;height:100%;object-fit:contain;object-position:bottom}
 @media (max-width:1279px){.v3View-voortgang .v3VgCheer{width:80px;height:98px;right:14px;bottom:12px}}
+
+/* 5. No V2 green under V3 (owner 12-11): V2's green theme variables point to the V3 tokens (Viola), the variables V2
+   resolved at :root are set again here, and every focus ring outside the V3 root is violet. Checked by
+   scripts/qa-v3-ronde5.py --point 5 against every green/teal value in index.html. */
+body.v3On{--nino-forest:#2a2440;--nino-teal:#5b45e0;--nino-ink:#2a2440;--nino-line:rgba(42,36,64,.12);--ctl-forest:#2a2440;--ctl-line:rgba(42,36,64,.16);--ctl-tint:#ebe7fd;
+ --ink:#2a2440;--muted:#5e5872;--accent:#5b45e0;--good:#1f7a46}
+body.v3On :not(.v3 *):focus-visible{outline-color:#5b45e0!important}
+body.v3On .microHit:focus-visible{stroke:#5b45e0}
+/* Schoolblad: "Terug naar mijn kaart" as the V3 secondary glass pill; zoom buttons and texts in V3 ink. */
+body.v3On .schoolbladDialog{color:#2a2440}
+body.v3On .schoolbladClose{min-height:44px;padding:0 20px;border:0;border-radius:999px;background:rgba(255,255,255,.6);box-shadow:inset 0 0 0 1px rgba(42,36,64,.14);color:#5b45e0;font-weight:600}
+body.v3On .schoolbladDialog :is(h2,h3,strong){color:#2a2440}
+body.v3On .schoolbladDialog p{color:#5e5872}
+body.v3On .schoolbladToolbar button{border-color:rgba(42,36,64,.16);color:#2a2440}
+/* V2 dialogs and panels that set the green ink directly (not via the variables). */
+body.v3On .ninoIntroOffer,body.v3On .ninoProfile,body.v3On .pizzaCelebration,body.v3On .vespaRide,body.v3On .rideSign{color:#2a2440}
+body.v3On .profileActions [data-profile-cancel],body.v3On #ninoMeter,body.v3On .ninoMeterPoints strong{color:#2a2440}
+/* Keuzevenster: V2 draws the close-up's ink as SVG attributes; :where keeps the violet badges and leaders of ronde 4 on top. */
+dialog.mapPicker.v3Keuze :where([fill="#254c46"]){fill:#2a2440}
+dialog.mapPicker.v3Keuze :where([stroke="#254c46"]){stroke:#2a2440}
+/* Les in focus mode (iPad): the camera tools and the status line. */
+body.v3On[data-focus-mode="true"] #focusLessonStatus{color:#5e5872}
+body.v3On[data-focus-mode="true"] .focusCameraTools button{border-color:rgba(42,36,64,.16)}
+body.v3On[data-focus-mode="true"] .focusCameraTools button[aria-pressed="true"]:not(:disabled){background:#ebe7fd;border-color:#5b45e0}
+body.v3On .atlasOptions summary,body.v3On .atlasZoom button,body.v3On .schoolbladButton{border-color:rgba(42,36,64,.16)}
+body.v3On #focusAnswerSheet #answer{border-color:rgba(42,36,64,.22)}
+body.v3On .ninoMeterPoints{color:#5e5872}

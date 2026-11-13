@@ -28,3 +28,5 @@ Niet elk hoofdstuk heeft een eigen landmark nodig. Eén of twee herkenbare beeld
 6. Rome aan de Tiber: Engelenburcht met brug (Rivieren)
 
 De rest van de lijst hierboven vervalt: Extra steden, Bergen, Streken en Zeeën gebruiken de basisset en de lifestyle-iconen, en de buurlanden krijgen geen eigen beeld.
+
+**Ontvangen (13-11):** TOPO_17–22 staan op `art/master` `7714e22`, met manifest en hoofdstuk. Ze zijn goedgekeurd door de lead designer. Koppel ze bij de volgende pakket-ronde aan hun items in `locations.json`.

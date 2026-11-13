@@ -17,8 +17,8 @@ header{display:flex;align-items:center;justify-content:space-between;height:100p
 .landscape{position:relative;padding-bottom:74px}.grid{display:grid;gap:22px}.featured{grid-template-columns:repeat(2,minmax(0,1fr))}.future{grid-template-columns:repeat(3,minmax(0,1fr));margin-top:22px}
 .country{overflow:hidden;position:relative;min-width:0;background:var(--surface);border:1px solid var(--line);border-radius:18px;box-shadow:0 4px 14px rgba(25,20,35,.035),0 19px 42px rgba(25,20,35,.025)}
 .visual{height:245px;position:relative;overflow:hidden;background:#F1EFF1}.visual img{display:block;position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transition:opacity .4s ease,transform .6s ease}.visual img.alt{opacity:0}
-.country:hover .visual img.alt,.country:focus-within .visual img.alt{opacity:1}.country:hover .visual img.base,.country:focus-within .visual img.base{opacity:0}
-.country:hover .visual img{transform:scale(1.025)}
+.country:hover .visual img.alt,.country:focus-within .visual img.alt,.country:focus-visible .visual img.alt{opacity:1}.country:hover .visual img.base,.country:focus-within .visual img.base,.country:focus-visible .visual img.base{opacity:0}
+.country:hover .visual img{transform:scale(1.025)}.country:focus-visible{outline:3px solid var(--lav);outline-offset:3px}
 .country .bottom{display:flex;align-items:center;justify-content:space-between;gap:14px;padding:21px 22px 24px;min-height:102px}.title{min-width:0}h2,h3{display:flex;align-items:center;gap:10px;margin:0 0 6px;font-size:22px;letter-spacing:-.025em}p.description{margin:0;font-size:13px;color:var(--secondary);line-height:1.45}
 .flag{height:18px;width:26px;display:inline-block;flex-shrink:0;border:1px solid #0001;border-radius:3px;box-shadow:0 1px 2px #0002}.it{background:linear-gradient(90deg,#009246 33.33%,#fff 33.33% 66.66%,#ce2b37 66.66%)}.fr{background:linear-gradient(90deg,#002395 33.33%,#fff 33.33% 66.66%,#ed2939 66.66%)}.es{background:linear-gradient(#aa151b 25%,#f1bf00 25% 75%,#aa151b 75%)}.de{background:linear-gradient(#111 33.33%,#dd0000 33.33% 66.66%,#ffce00 66.66%)}.nl{background:linear-gradient(#ae1c28 33.33%,#fff 33.33% 66.66%,#21468b 66.66%)}
 .action,.soon{display:inline-flex;align-items:center;justify-content:center;gap:9px;white-space:nowrap;border-radius:99px;font-size:12px;font-weight:650;line-height:1.2}
@@ -26,7 +26,7 @@ header{display:flex;align-items:center;justify-content:space-between;height:100p
 .pending{background:var(--lav-tint);border:1px solid var(--lav-soft);color:#685398;padding:12px 15px}
 .soon{border:1px solid var(--lav-soft);background:var(--lav-tint);color:#7761AD;padding:8px 12px}
 .soon svg{width:12px;height:12px}
-.future .visual{height:145px}.future .visual img{filter:grayscale(1)}.future .visual img.base{opacity:.38}.future:hover .visual img.base{opacity:0}.future:hover .visual img.alt{opacity:.43}.future h3{font-size:18px;margin:0}.future .bottom{min-height:72px;padding:16px 18px 18px}
+.future .visual{height:145px}.future .visual img{filter:grayscale(1)}.future .visual img.base{opacity:.38}.future:hover .visual img.base,.future:focus-visible .visual img.base{opacity:0}.future:hover .visual img.alt,.future:focus-visible .visual img.alt{opacity:.43}.future h3{font-size:18px;margin:0}.future .bottom{min-height:72px;padding:16px 18px 18px}
 .mascot{position:absolute;width:130px;height:135px;object-fit:contain;bottom:4px;left:-44px;pointer-events:none}
 footer{margin-top:auto;border-top:1px solid #EEEEF1;padding:24px 0 32px;display:flex;justify-content:space-between;gap:16px;color:#9999A3;font-size:11px}
 @media(max-width:900px){.shell{padding:0 24px}.featured .bottom{flex-wrap:wrap}.visual{height:205px}.future .visual{height:120px}.mascot{left:-15px;width:95px}}
@@ -71,7 +71,7 @@ const countries=[
 const routes={italy:null,france:null};
 const lock='<svg viewBox="0 0 20 20" fill="none" aria-hidden="true"><rect x="5" y="9" width="10" height="8" rx="2" stroke="currentColor" stroke-width="1.5"/><path d="M7 9V6a3 3 0 0 1 6 0v3" stroke="currentColor" stroke-width="1.5"/></svg>';
 for(const c of countries){
- const card=document.createElement('article');card.className='country '+(c.active?'active':'future');
+ const card=document.createElement('article');card.className='country '+(c.active?'active':'future');card.tabIndex=0;card.setAttribute('aria-label',c.name+(c.active?' — leeromgeving wordt gekoppeld':' — binnenkort beschikbaar'));
  const h=c.active?'h2':'h3';const src=base+c.id+'-';
  const action=c.active?(routes[c.id]?'<a class="action" href="'+routes[c.id]+'">Start leren →</a>':'<span class="action pending">Leeromgeving volgt</span>'):'<span class="soon">'+lock+' Binnenkort</span>';
  const text=c.desc?'<p class="description">'+c.desc+'</p>':'';

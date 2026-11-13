@@ -76,7 +76,8 @@ def checks(p, tag, vp, fail):
     wide = vp != 'telefoon'
     if wide and not near(p['h1']['t'] + p['h1']['h'] / 2, p['count']['t'] + p['count']['h'] / 2, 4): f('title and count not on one line')
     if p['bar']['h'] < 14 or (wide and p['bar']['w'] < .4 * p['inner']): f(f'bar not broad ({p["bar"]["w"]:.0f}×{p["bar"]["h"]:.0f})')
-    if p['figBg'] not in ('rgba(0, 0, 0, 0)', 'transparent') or not p['svgIn'] or p['relief'] != 'off': f(f'map card ({p["figBg"]}, svg {p["svgIn"]}, relief {p["relief"]})')
+    # Ronde 5 punt 4 (12-11): the relief stays visible under the mastery tint (was: relief off).
+    if p['figBg'] not in ('rgba(0, 0, 0, 0)', 'transparent') or not p['svgIn'] or p['relief'] != 'on': f(f'map card ({p["figBg"]}, svg {p["svgIn"]}, relief {p["relief"]})')
     if p['legend'] != ['Beheerst', 'Bezig', 'Nog niet'] or not p['legendIn']: f(f'legend {p["legend"]}')
     if p['fillHi'] and p['fillHi'] != p['accent']: f(f'mastered place {p["fillHi"]} ≠ accent {p["accent"]}')
     if p['fillLo'] and p['fillLo'] != 'rgb(243, 236, 220)': f(f'place not started {p["fillLo"]} ≠ cream')

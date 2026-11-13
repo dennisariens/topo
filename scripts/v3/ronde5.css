@@ -18,3 +18,15 @@
 .travelBook .folioWriting:has(.bookFact) .pizzaSaved{margin:4px 0 0;gap:8px}
 .travelBook .folioWriting:has(.bookFact) .pizzaSlot{width:36px;height:36px}
 .travelBook .folioWriting:has(.bookFact) .bookLink{margin-top:2px}
+
+/* 4. Voortgang: the mastery colour as a tint over the relief map (relief and outlines stay visible); saturated violet
+   only as an edge or accent (pins, rivers, outlines). At 45 / 45 a gold edge round the map and a small cheering Nino. */
+.v3VgMap :is(path,polygon).v3St-beheerst:not(.v3StLine):not(.country,.water),.v3VgMap .v3St-beheerst :is(path,polygon){fill:var(--v3-vg-hi);fill-opacity:.2;stroke:var(--v3-vg-hi);stroke-width:2;stroke-opacity:.9;vector-effect:non-scaling-stroke}
+.v3VgMap :is(path,polygon).v3St-bezig:not(.v3StLine):not(.country,.water),.v3VgMap .v3St-bezig :is(path,polygon){fill:var(--v3-vg-hi);fill-opacity:.1;stroke:var(--v3-vg-hi);stroke-width:1.5;stroke-opacity:.55;stroke-dasharray:6 4;vector-effect:non-scaling-stroke}
+.v3VgMap :is(path,polygon).v3St-nog:not(.v3StLine):not(.country,.water),.v3VgMap .v3St-nog :is(path,polygon){fill:#fff;fill-opacity:.18;stroke:var(--v3-ink);stroke-opacity:.25;stroke-width:1.2;vector-effect:non-scaling-stroke}
+.v3VgMap path:is(.country,.water).v3St-beheerst{fill:var(--v3-vg-hi);fill-opacity:.12}
+.v3VgMap path:is(.country,.water).v3St-bezig{fill:var(--v3-vg-hi);fill-opacity:.06}
+.v3View-voortgang .v3VgKaart.v3VgAllDone{border-radius:var(--v3-radius-glass,28px)!important;box-shadow:inset 0 0 0 3px #d2a53c,0 0 0 4px rgba(210,165,60,.2)!important}
+.v3View-voortgang .v3VgCheer{position:absolute;right:20px;bottom:16px;width:96px;height:118px;pointer-events:none;z-index:1}
+.v3View-voortgang .v3VgCheer .ninoArtSlot,.v3View-voortgang .v3VgCheer img{width:100%;height:100%;object-fit:contain;object-position:bottom}
+@media (max-width:1279px){.v3View-voortgang .v3VgCheer{width:80px;height:98px;right:14px;bottom:12px}}

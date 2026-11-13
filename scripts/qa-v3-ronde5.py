@@ -37,6 +37,17 @@ TEXTS='''()=>{const out=[];const w=document.createTreeWalker(document.querySelec
   const r=document.createRange();r.selectNodeContents(t);for(const b of r.getClientRects())if(b.width>2&&b.height>2)out.push({t:t.textContent.trim().slice(0,30),color:cs.color,size:parseFloat(cs.fontSize),weight:+cs.fontWeight,box:[b.left,b.top,b.width,b.height]});}
  return out;}'''
 
+# Point 4: Voortgang's map — saturated violet only as an edge or accent; relief visible; the 45 / 45 congratulation.
+VOORTGANG='''()=>{const f=document.querySelector('.v3VgKaart'),svg=f.querySelector('.v3VgMap'),acc=getComputedStyle(document.querySelector('.v3View-voortgang')).getPropertyValue('--v3-vg-hi').trim();
+ const probe=document.createElement('i');probe.style.color=acc;document.body.append(probe);const violet=getComputedStyle(probe).color;probe.remove();
+ const flat=[],area=svg.getBoundingClientRect().width*svg.getBoundingClientRect().height;let outlined=0;
+ for(const n of svg.querySelectorAll('.v3Hit')){const cs=getComputedStyle(n),b=n.getBoundingClientRect();
+  if(cs.stroke===violet&&cs.strokeWidth!=='0px')outlined++;
+  if(cs.fill===violet&&+cs.fillOpacity*+cs.opacity>.25&&b.width*b.height>area*.004&&n.tagName!=='circle')flat.push(n.dataset.id);}
+ const terrain=svg.querySelector('.atlasTerrain'),cheer=f.querySelector('.v3VgCheer [data-v3-master]');
+ return {count:document.querySelector('.v3VgCount strong').textContent,flat,outlined,relief:svg.dataset.relief==='on'&&!!terrain&&getComputedStyle(terrain).display!=='none',
+  gold:f.classList.contains('v3VgAllDone')&&getComputedStyle(f).boxShadow.includes('rgb(210, 165, 60)'),cheer:cheer?.dataset.v3Master||'',caption:f.querySelector('.v3VgKaartTitle span').textContent};}'''
+
 async def act(p,selector,touch=False):
  n=p.locator(selector).filter(visible=True).first
  await (n.tap(timeout=2500) if touch else n.click(timeout=2500))
@@ -112,6 +123,22 @@ async def check(p,n,touch,vp):
   await p.evaluate('document.activeElement?.blur?.()');await p.mouse.move(1,1);await p.wait_for_timeout(200)
   await p.screenshot(path=str(OUT/f'boek-p1-2-{vp}.png'));shots.append('boek-p1-2')
   return shots,{'texts':len(texts),'lowestContrast':round(low,2)}
+ if n==4:
+  out={}
+  for st in ('alles','bezig'):
+   await p.goto(q.HTML.as_uri()+'#'+st+'/bg03');await p.wait_for_timeout(700)
+   await q.goto(p,'voortgang');await p.wait_for_timeout(500)
+   r=await p.evaluate(VOORTGANG);out[st]=r
+   # No large flat violet: every filled shape with the accent colour is a tint (≤ 0.25) or small (a pin).
+   assert not r['flat'],r
+   assert r['relief'] and (st!='alles' or r['outlined']>0),r
+   if st=='alles':
+    assert r['count']=='45 / 45' and r['gold'] and r['cheer']=='NINO-JUICHT' and r['caption'].startswith('45 / 45'),r
+    await p.evaluate('document.activeElement?.blur?.()');await p.mouse.move(1,1);await p.wait_for_timeout(200)
+    await p.screenshot(path=str(OUT/f'voortgang-alles-{vp}.png'));shots.append('voortgang-alles')
+   else:
+    assert not r['gold'] and not r['cheer'],r
+  return shots,out
  raise SystemExit('unknown point')
 
 async def main(point):

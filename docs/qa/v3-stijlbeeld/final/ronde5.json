@@ -350,5 +350,69 @@
       }
     },
     "pass": true
+  },
+  "4": {
+    "previewSha256": "87f58289053dedee67f9c2de2ff350a8eb9c7ab106c52c11cb926d41ffc0f2c2",
+    "runs": {
+      "desktop": {
+        "viewport": [
+          1440,
+          900
+        ],
+        "screens": [
+          "voortgang-alles"
+        ],
+        "detail": {
+          "alles": {
+            "count": "45 / 45",
+            "flat": [],
+            "outlined": 20,
+            "relief": true,
+            "gold": true,
+            "cheer": "NINO-JUICHT",
+            "caption": "45 / 45 beheerst"
+          },
+          "bezig": {
+            "count": "6 / 45",
+            "flat": [],
+            "outlined": 0,
+            "relief": true,
+            "gold": false,
+            "cheer": "",
+            "caption": "45 plekken"
+          }
+        }
+      },
+      "ipad-liggend": {
+        "viewport": [
+          1080,
+          810
+        ],
+        "screens": [
+          "voortgang-alles"
+        ],
+        "detail": {
+          "alles": {
+            "count": "45 / 45",
+            "flat": [],
+            "outlined": 20,
+            "relief": true,
+            "gold": true,
+            "cheer": "NINO-JUICHT",
+            "caption": "45 / 45 beheerst"
+          },
+          "bezig": {
+            "count": "6 / 45",
+            "flat": [],
+            "outlined": 0,
+            "relief": true,
+            "gold": false,
+            "cheer": "",
+            "caption": "45 plekken"
+          }
+        }
+      }
+    },
+    "pass": true
   }
 }

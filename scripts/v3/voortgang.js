@@ -38,14 +38,19 @@
   // Kaart: each place coloured by its status; legend.
   const fig=make('figure','v3VgKaart');
   const svg=V.cloneMap('v3v-','v3VgMap');
-  if(svg){svg.classList.add('v3Map');svg.dataset.relief='off';svg.dataset.kaart='eiland';svg.dataset.frame='italy';V.addIsland(svg,'v3v-');fig.append(svg);
+  // Ronde 5 punt 4: relief on; the mastery colour lies over it as a tint (ronde5.css).
+  if(svg){svg.classList.add('v3Map');svg.dataset.relief='on';svg.dataset.kaart='eiland';svg.dataset.frame='italy';V.addIsland(svg,'v3v-');fig.append(svg);
    const sea=svg.querySelector('.sea');
    for(const p of pp)svg.querySelectorAll('[data-id="'+p.item.id+'"]').forEach(n=>{n.classList.add('v3Hit','v3St-'+p.status);if(p.item.kind==='river')n.classList.add('v3StLine');});
    requestAnimationFrame(()=>{if(sea)svg.style.setProperty('--v3-sea-school',getComputedStyle(sea).fill);V.fit(svg);});}
   const legend=make('ul','v3VgLegend');for(const [k,label] of Object.entries(STATUS)){const li=make('li','v3St-'+k);li.append(make('i'),make('span',null,label+' · '+pp.filter(p=>p.status===k).length));legend.append(li);}
   // The card's caption (R-voortgang-doel): the map's subject; the count stays in the title bar.
-  const cap=make('figcaption','v3VgKaartTitle','Italië');cap.append(make('span',null,ITEMS.length+' plekken'));
-  fig.append(cap,legend);fig.setAttribute('aria-label',count+' van '+ITEMS.length+' plekken beheerst');
+  const all=pp.length===ITEMS.length&&count===ITEMS.length;
+  const cap=make('figcaption','v3VgKaartTitle','Italië');cap.append(make('span',null,all?count+' / '+ITEMS.length+' beheerst':ITEMS.length+' plekken'));
+  fig.append(cap,legend);
+  // 45 / 45: a calm congratulation (ronde 5 punt 4) — a gold edge round the map and a small cheering Nino; no confetti.
+  fig.classList.toggle('v3VgAllDone',all);
+  if(all&&V.pose){const cheer=make('div','v3VgCheer');cheer.setAttribute('aria-hidden','true');cheer.append(V.pose('NINO-JUICHT','success','progress-cheer'));fig.append(cheer);}fig.setAttribute('aria-label',count+' van '+ITEMS.length+' plekken beheerst');
 
   // Hoofdstukken (R-voortgang, fase B stap 7): the chapter's real photo, "n. naam", one thick bar of the three lessons
   // (three segments, so the bar still reads the stage) and a status illustration: gold laurel (IC-gold) = goud, the

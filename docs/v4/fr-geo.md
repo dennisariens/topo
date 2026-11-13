@@ -104,6 +104,6 @@ De test tikt alle 44 plekken goed aan en schrijft alle 44 namen. Daarnaast test 
 
 **Niet getest hier:** WebKit/Safari (niet installeerbaar in deze omgeving). De iPad-test doet de eigenaar.
 
-**Voor de V3-chat:** de doos heeft 8 gebakjes, dus de kernregel (8 per beloning, 3 per rit) blijft voor Frankrijk gelijk. Alleen het beeld verschilt. De gebakjes zijn eenvoudige SVG-iconen; een inventarisatie van Franse lekkernijen en de echte artwork volgen in spoor C.
+**Voor de V3-chat:** de doos heeft 8 gebakjes, dus de kernregel (8 per beloning, 3 per rit) blijft voor Frankrijk gelijk. Alleen het beeld verschilt. De gebakjes en de dichte doos komen uit de goedgekeurde artwork van `art/master` (CREDITS 7c–7j en 8b), verkleind naar 96 px.
 
 Deze kaart is geen V3-scherm. In V4 gaat dezelfde `data/fr/map.json` mee in het landpakket `src/lands/fr/`.

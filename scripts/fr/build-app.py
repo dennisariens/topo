@@ -20,6 +20,9 @@ html = (tpl.replace("__MAP__", (ROOT / "data/fr/map.json").read_text("utf-8").st
         .replace("__NINO__", nino)
         .replace("__SB_LIJST__", "data:image/jpeg;base64," + base64.b64encode((ROOT / "data/fr/schoolblad-lijst.jpg").read_bytes()).decode())
         .replace("__SB_KAART__", "data:image/jpeg;base64," + base64.b64encode((ROOT / "data/fr/schoolblad-leerkaart.jpg").read_bytes()).decode())
+        .replace("__PASTRY__", json.dumps([[n, "data:image/webp;base64," + base64.b64encode((ROOT / f"data/fr/art/{n}.webp").read_bytes()).decode()]
+            for n in ["croissant", "pain-au-chocolat", "macaron", "eclair", "aardbeientaartje", "chou-a-la-creme", "mille-feuille", "madeleine"]]))
+        .replace("__BOX__", "data:image/webp;base64," + base64.b64encode((ROOT / "data/fr/art/doos-dicht.webp").read_bytes()).decode())
         .replace("__VESPA__", "data:image/webp;base64," + base64.b64encode((ROOT / "data/fr/vespa.webp").read_bytes()).decode()))
 out = ROOT / "output/fr/TOPO-Frankrijk-oefenkaart.html"
 out.parent.mkdir(parents=True, exist_ok=True)

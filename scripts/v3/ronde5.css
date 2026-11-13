@@ -61,3 +61,17 @@ body.v3On .ninoMeterPoints{color:#5e5872}
 body.v3On :is(.schoolbladDialog,.mapPicker,.ninoIntroOffer,.ninoSettings,.ninoProfile,.pizzaCelebration,.vespaRide,.ninoExamResult)::backdrop{background:rgba(42,36,64,.4)}
 body.v3On :is(.travelBook,.stampZoom)::backdrop{background:rgba(29,24,44,.82)}
 body.v3On .button{border-color:rgba(42,36,64,.16)}
+
+/* 7. Lifestyle icons: on the Reis map only with relief (like the landmarks); once on Toets resultaat (≥ 8/10),
+   Voortgang (45 / 45) and the Vespa ride. */
+.v3Map[data-relief=off] .v3Lifestyle{display:none}
+.v3ToetsScoreCard{position:relative}
+.v3ToetsScoreCard .v3ToetsTreat{position:absolute;right:-18px;top:-22px;width:64px;height:64px;object-fit:contain;transform:rotate(8deg);pointer-events:none;filter:drop-shadow(0 6px 8px rgba(42,36,64,.18))}
+@media (max-width:1279px){.v3ToetsScoreCard .v3ToetsTreat{width:52px;height:52px;right:-14px;top:-18px}}
+.v3View-voortgang .v3VgCheer .v3VgTreat{position:absolute;right:88%;bottom:0;width:72px;height:72px;object-fit:contain;filter:drop-shadow(0 6px 8px rgba(42,36,64,.18))}
+@media (max-width:1279px){.v3View-voortgang .v3VgCheer .v3VgTreat{width:60px;height:60px}}
+body.v3On .vespaRide .v3RideFiat{position:absolute;bottom:22%;right:-20%;width:16%;height:auto;opacity:.92;filter:drop-shadow(0 4px 4px rgba(42,36,64,.25));transform:scaleX(-1)}
+body.v3On .vespaRide[data-phase=ride] .v3RideFiat{animation:v3FiatPast 4.2s linear forwards}
+@keyframes v3FiatPast{from{right:-20%}to{right:110%}}
+@media (prefers-reduced-motion:reduce){body.v3On .vespaRide .v3RideFiat{animation:none!important;right:8%}}
+body.v3On .vespaRide[data-phase=arrived] .v3RideFiat{display:none}

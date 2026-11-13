@@ -3,9 +3,9 @@
   "source": {
     "repository": "dennisariens/topo",
     "ref": "art/master",
-    "commit": "69c945c16a8bd34c8e45cffa96c12442c2672cb1",
+    "commit": "daa188fad9966329805ed7912d64d2fc221b4dd5",
     "path": "assets/art/masters/italia/landmarks/MANIFEST.json",
-    "sha256": "8b3a3b773589ef607d309e0d9e6429eab92b651f84209ebcfb29f85dd14a74cf"
+    "sha256": "a3166aab4c4a88e863a252c8337eb845a394d22be199b9072c4b02733c6da4b8"
   },
   "pipeline": {
     "script": "scripts/build-v3-landmarks.py",
@@ -21,13 +21,8 @@
       "exact": true
     }
   },
-  "scope": "Only TOPO_01–10 on Reis/toetsresultaat in relief mode; never in lessons.",
-  "excluded": [
-    {
-      "id": "TOPO_11",
-      "reason": "Ferrari brand; removed from art/master."
-    }
-  ],
+  "scope": "TOPO_01–10 on Reis/toetsresultaat in relief mode; lifestyle TOPO_11–16 on the Reis map (per chapter) and once on toetsresultaat ≥ 8/10, Voortgang 45/45 and the Vespa ride; never in lessons, exam questions, Gouden proef or picker.",
+  "excluded": [],
   "supersedes": {
     "path": "assets/v3/landmarks/italia-landmarks-atlas.png",
     "commit": "23133b7a43ed2c68c91c7c9a8a10772e4c984efb"
@@ -38,6 +33,7 @@
       "label": "Colosseum Rome",
       "status": "V3.0 reliëfkaart",
       "ui": true,
+      "lifestyle": false,
       "master": {
         "path": "assets/art/masters/italia/landmarks/TOPO_01_Colosseum_Rome.png",
         "sha256": "196728cca1ab9fa1861a0faaca8df4252b321a1524e9e89a8a0ea3bcd911d823",
@@ -156,6 +152,7 @@
       "label": "Leaning Tower Pisa",
       "status": "V3.0 reliëfkaart",
       "ui": true,
+      "lifestyle": false,
       "master": {
         "path": "assets/art/masters/italia/landmarks/TOPO_02_Leaning_Tower_Pisa.png",
         "sha256": "7875f1797d8f1aa3d27023ec82506b25c2f8c871e4770e140433e7edb0b64c13",
@@ -248,6 +245,7 @@
       "label": "Vesuvius Naples",
       "status": "V3.0 reliëfkaart",
       "ui": true,
+      "lifestyle": false,
       "master": {
         "path": "assets/art/masters/italia/landmarks/TOPO_03_Vesuvius_Naples.png",
         "sha256": "0541b33de4cf5c924d93a647553438cd38731bfadd835559bbf847b72ffb1e93",
@@ -311,6 +309,7 @@
       "label": "Etna Sicily",
       "status": "V3.0 reliëfkaart",
       "ui": true,
+      "lifestyle": false,
       "master": {
         "path": "assets/art/masters/italia/landmarks/TOPO_04_Etna_Sicily.png",
         "sha256": "f56d5ef0aee2bd2f4d99f8e789f68d1e9d08c88dcd85472c264113c881ee6409",
@@ -375,6 +374,7 @@
       "label": "Venetian Gondola Venice",
       "status": "V3.0 reliëfkaart",
       "ui": true,
+      "lifestyle": false,
       "master": {
         "path": "assets/art/masters/italia/landmarks/TOPO_05_Venetian_Gondola_Venice.png",
         "sha256": "d0689885cec6b0dcc7d283d8e7b5688304681efb3db0cd31f0425f8e223bdf99",
@@ -493,6 +493,7 @@
       "label": "Duomo Milan",
       "status": "V3.0 reliëfkaart",
       "ui": true,
+      "lifestyle": false,
       "master": {
         "path": "assets/art/masters/italia/landmarks/TOPO_06_Duomo_Milan.png",
         "sha256": "fcadc7a71cf73f6bdb10a4172afb9ee828222d7aea3f4f17e3c08f34cadcc096",
@@ -611,6 +612,7 @@
       "label": "Florence Cathedral",
       "status": "V3.0 reliëfkaart",
       "ui": true,
+      "lifestyle": false,
       "master": {
         "path": "assets/art/masters/italia/landmarks/TOPO_07_Florence_Cathedral.png",
         "sha256": "16df22dde8add7551b6879cf834dbcb1c2624dd6062c1a763baebb6a7a892770",
@@ -749,6 +751,7 @@
       "label": "Nuraghe Sardinia",
       "status": "V3.0 reliëfkaart",
       "ui": true,
+      "lifestyle": false,
       "master": {
         "path": "assets/art/masters/italia/landmarks/TOPO_08_Nuraghe_Sardinia.png",
         "sha256": "63eef3351692b89c8679633dcc5bbdc02d5e75afa432a46ee0d42015fdea9891",
@@ -830,6 +833,7 @@
       "label": "Dolomites Northern Italy",
       "status": "V3.0 reliëfkaart",
       "ui": true,
+      "lifestyle": false,
       "master": {
         "path": "assets/art/masters/italia/landmarks/TOPO_09_Dolomites_Northern_Italy.png",
         "sha256": "16b282a90d9a40aee14eece1101b606af5278c5078297a98ff4e8d2e0c4850e6",
@@ -948,6 +952,7 @@
       "label": "Trulli Alberobello",
       "status": "V3.0 reliëfkaart",
       "ui": true,
+      "lifestyle": false,
       "master": {
         "path": "assets/art/masters/italia/landmarks/TOPO_10_Trulli_Alberobello.png",
         "sha256": "519bb285918bf9ffe5cdfc09b27313f7e0c1aa2a4dce4b1d28f119ae420bce39",
@@ -1024,10 +1029,71 @@
       }
     },
     {
+      "id": "TOPO_11",
+      "label": "Classic Ferrari Modena",
+      "status": "in gebruik V3.0",
+      "ui": true,
+      "lifestyle": true,
+      "master": {
+        "path": "assets/art/masters/italia/landmarks/TOPO_11_Classic_Ferrari_Modena.png",
+        "sha256": "ebfc6eedbca374b2174e8edf42525187de555a1714f4cb0113801576c58830eb",
+        "bytes": 595167,
+        "size": [
+          1024,
+          1024
+        ],
+        "alpha": true
+      },
+      "location": {
+        "feature": "Classic Ferrari (Modena/Maranello)",
+        "lifestyle": true,
+        "canonicalItemId": "city-20",
+        "note": "Decorative lifestyle icon, not a learning item and not a surveyed location. Anchored at the canonical Modena item; Maranello lies ±15 km south."
+      },
+      "exports": {
+        "128": {
+          "path": "assets/v3/landmarks/exports/TOPO_11-128.webp",
+          "sha256": "55906e39bd810db095c605cd02b6ce5d6e4c6e9ba8b738abec363005954de01e",
+          "bytes": 4572,
+          "size": [
+            128,
+            128
+          ],
+          "alpha": true,
+          "paintBounds": [
+            12,
+            37,
+            116,
+            91
+          ]
+        },
+        "256": {
+          "path": "assets/v3/landmarks/exports/TOPO_11-256.webp",
+          "sha256": "f1a5af9ebd9eb78f5556525ac494fe9f5ea0e3f72014a8ce78b50e78576a7e01",
+          "bytes": 12240,
+          "size": [
+            256,
+            256
+          ],
+          "alpha": true,
+          "paintBounds": [
+            25,
+            75,
+            231,
+            181
+          ]
+        }
+      },
+      "visualReview": {
+        "logos": "Owner 13-11: included without badge or logo (art/master daa188f)."
+      }
+    },
+    {
       "id": "TOPO_12",
       "label": "Football Stadium Milan",
-      "status": "V3.1 uitstapjes",
-      "ui": false,
+      "status": "in gebruik V3.0",
+      "ui": true,
+      "lifestyle": true,
       "master": {
         "path": "assets/art/masters/italia/landmarks/TOPO_12_Football_Stadium_Milan.png",
         "sha256": "0be276ffd08814c4c4d1f6dd32b314e3f63dec4c82e92504c940804a956a215c",
@@ -1038,17 +1104,58 @@
         ],
         "alpha": true
       },
+      "location": {
+        "feature": "Football stadium Milan",
+        "lifestyle": true,
+        "canonicalItemId": "city-5",
+        "note": "Decorative lifestyle icon, not a learning item and not a surveyed location. Anchored at the canonical Milaan item."
+      },
+      "exports": {
+        "128": {
+          "path": "assets/v3/landmarks/exports/TOPO_12-128.webp",
+          "sha256": "0ff4221e2a596a79a546028b3442afda6eef8fb8fa6dacdf3c765cf8f587b5dd",
+          "bytes": 7216,
+          "size": [
+            128,
+            128
+          ],
+          "alpha": true,
+          "paintBounds": [
+            12,
+            23,
+            116,
+            105
+          ]
+        },
+        "256": {
+          "path": "assets/v3/landmarks/exports/TOPO_12-256.webp",
+          "sha256": "48fdf0aa5d471c9a6ae9e94fa7438f1c269900558aa867b08f9df165d64831d6",
+          "bytes": 20754,
+          "size": [
+            256,
+            256
+          ],
+          "alpha": true,
+          "paintBounds": [
+            25,
+            47,
+            231,
+            209
+          ]
+        }
+      },
       "visualReview": {
         "logos": "No visible logos or lettering in the 1024px master.",
-        "clubColours": "OPEN: red/black seating; do not certify neutral club colours.",
-        "uiBlocked": true
+        "clubColours": "Red/black seating: not certified as club-neutral; in use by owner decision (12-11).",
+        "uiBlocked": false
       }
     },
     {
       "id": "TOPO_13",
       "label": "Gelato Italy",
-      "status": "V3.1 uitstapjes",
-      "ui": false,
+      "status": "in gebruik V3.0",
+      "ui": true,
+      "lifestyle": true,
       "master": {
         "path": "assets/art/masters/italia/landmarks/TOPO_13_Gelato_Italy.png",
         "sha256": "cd54eafa22dd34ed122cb1d23e0b1af5b613a634478672adf8aeecb6650d1d5e",
@@ -1058,13 +1165,54 @@
           1024
         ],
         "alpha": true
+      },
+      "location": {
+        "feature": "Gelato",
+        "lifestyle": true,
+        "canonicalItemId": "city-9",
+        "note": "Decorative lifestyle icon, not a learning item and not a surveyed location. Placed per chapter in a city or by the sea (lifestyle.places)."
+      },
+      "exports": {
+        "128": {
+          "path": "assets/v3/landmarks/exports/TOPO_13-128.webp",
+          "sha256": "a41cfca6ba8ec4e024376c00ba86be5f5d2736eaa6100afd43bf7a29e6576404",
+          "bytes": 5172,
+          "size": [
+            128,
+            128
+          ],
+          "alpha": true,
+          "paintBounds": [
+            34,
+            12,
+            94,
+            116
+          ]
+        },
+        "256": {
+          "path": "assets/v3/landmarks/exports/TOPO_13-256.webp",
+          "sha256": "9be7e79d6231793547d3f3fc60d67ca733f453c31468f7afc4df5a99d117d46b",
+          "bytes": 13284,
+          "size": [
+            256,
+            256
+          ],
+          "alpha": true,
+          "paintBounds": [
+            68,
+            25,
+            188,
+            231
+          ]
+        }
       }
     },
     {
       "id": "TOPO_14",
       "label": "Beach Rimini",
-      "status": "V3.1 uitstapjes",
-      "ui": false,
+      "status": "in gebruik V3.0",
+      "ui": true,
+      "lifestyle": true,
       "master": {
         "path": "assets/art/masters/italia/landmarks/TOPO_14_Beach_Rimini.png",
         "sha256": "8c5a8761523dc38650204a8d38dcba9e7f12ed57428ca374f2631e1ff56d4889",
@@ -1074,13 +1222,57 @@
           1024
         ],
         "alpha": true
+      },
+      "location": {
+        "feature": "Beach Rimini",
+        "lifestyle": true,
+        "coordinates": [
+          12.58,
+          44.07
+        ],
+        "note": "Decorative lifestyle icon, not a learning item and not a surveyed location. Rounded coordinate of Rimini on the Adriatic coast (0.01°), not checked against a dataset."
+      },
+      "exports": {
+        "128": {
+          "path": "assets/v3/landmarks/exports/TOPO_14-128.webp",
+          "sha256": "71957e5dc9fc7a9e982d5147d899765340831cda166afb9e1bd0557e3a5cf3c5",
+          "bytes": 8498,
+          "size": [
+            128,
+            128
+          ],
+          "alpha": true,
+          "paintBounds": [
+            12,
+            13,
+            116,
+            115
+          ]
+        },
+        "256": {
+          "path": "assets/v3/landmarks/exports/TOPO_14-256.webp",
+          "sha256": "18d4e0e7c3448d0449ccdbe534dd20e54fd94b8ed6c406241364d678b100679e",
+          "bytes": 21544,
+          "size": [
+            256,
+            256
+          ],
+          "alpha": true,
+          "paintBounds": [
+            25,
+            27,
+            231,
+            229
+          ]
+        }
       }
     },
     {
       "id": "TOPO_15",
       "label": "Pasta Bologna",
-      "status": "V3.1 uitstapjes",
-      "ui": false,
+      "status": "in gebruik V3.0",
+      "ui": true,
+      "lifestyle": true,
       "master": {
         "path": "assets/art/masters/italia/landmarks/TOPO_15_Pasta_Bologna.png",
         "sha256": "d3151d242d89b0c77eb4e471465656e4f40aa1d819fe0be1dacee69cbf2d3482",
@@ -1090,13 +1282,54 @@
           1024
         ],
         "alpha": true
+      },
+      "location": {
+        "feature": "Pasta Bologna",
+        "lifestyle": true,
+        "canonicalItemId": "city-2",
+        "note": "Decorative lifestyle icon, not a learning item and not a surveyed location. Anchored at the canonical Bologna item."
+      },
+      "exports": {
+        "128": {
+          "path": "assets/v3/landmarks/exports/TOPO_15-128.webp",
+          "sha256": "0560bbd65b736ffdd2ca45a9e508976432e418d05b96ee0e182a9d5f123c2c2e",
+          "bytes": 7550,
+          "size": [
+            128,
+            128
+          ],
+          "alpha": true,
+          "paintBounds": [
+            12,
+            21,
+            116,
+            107
+          ]
+        },
+        "256": {
+          "path": "assets/v3/landmarks/exports/TOPO_15-256.webp",
+          "sha256": "b928acc36ec1af22ea7e53e0b86703a6ce8ac2885a2b3077acdd21e4ffb8d49e",
+          "bytes": 20854,
+          "size": [
+            256,
+            256
+          ],
+          "alpha": true,
+          "paintBounds": [
+            25,
+            43,
+            231,
+            213
+          ]
+        }
       }
     },
     {
       "id": "TOPO_16",
       "label": "Fiat 500 Turin",
-      "status": "V3.1 uitstapjes",
-      "ui": false,
+      "status": "in gebruik V3.0",
+      "ui": true,
+      "lifestyle": true,
       "master": {
         "path": "assets/art/masters/italia/landmarks/TOPO_16_Fiat_500_Turin.png",
         "sha256": "d7a067a8bb4658c74fdeee41d549d8c37fe9674354098e1b932ff9e000367f1f",
@@ -1106,6 +1339,46 @@
           1024
         ],
         "alpha": true
+      },
+      "location": {
+        "feature": "Fiat 500",
+        "lifestyle": true,
+        "canonicalItemId": "city-10",
+        "note": "Decorative lifestyle icon, not a learning item and not a surveyed location. Drives per chapter at another place (lifestyle.places)."
+      },
+      "exports": {
+        "128": {
+          "path": "assets/v3/landmarks/exports/TOPO_16-128.webp",
+          "sha256": "c492bc92d93e74fa1bbed75c8af40d6215e18b36f08475db01a06fdc19567753",
+          "bytes": 6066,
+          "size": [
+            128,
+            128
+          ],
+          "alpha": true,
+          "paintBounds": [
+            12,
+            24,
+            116,
+            104
+          ]
+        },
+        "256": {
+          "path": "assets/v3/landmarks/exports/TOPO_16-256.webp",
+          "sha256": "fb02fbf294ea634d6e528c1763ece9c6a3453be38fa15e4903ebcc9d9ad94a06",
+          "bytes": 15924,
+          "size": [
+            256,
+            256
+          ],
+          "alpha": true,
+          "paintBounds": [
+            25,
+            48,
+            231,
+            208
+          ]
+        }
       }
     }
   ]

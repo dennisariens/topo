@@ -53,4 +53,25 @@ window.TopoV3Landmarks=function(svg,k){
   if(dx||dy){node.dataset.shift=dx+' '+dy;}
   node.append(make('image',{href:asset.src,x:-(left+right)/2*units+dx,y:-bottom*units+dy,width,height:width,'data-export-size':size}));g.append(node);
  }
+ // Ronde 5 punt 7: the chapter's lifestyle icons (a fixed list per chapter, locations.json), Reis only, smaller than the
+ // landmarks (painted 32 px desktop / 28 px iPad), in their own layer above the landmarks and below every pin and mark;
+ // the same collision search keeps them off pins, marks, labels and the landmarks just placed.
+ let ls=svg.querySelector(':scope>.v3Lifestyle');
+ const plan=chapter&&window.TOPO_V3_ART?.lifestyle?.chapters?.[chapter.id];
+ if(!plan){ls?.remove();return;}
+ if(!ls)ls=make('g',{class:'v3Lifestyle','aria-hidden':'true','pointer-events':'none'});
+ g.after(ls);ls.replaceChildren();
+ const lsTarget=matchMedia('(max-width:1279px)').matches?28:32,lsItems=window.TOPO_V3_ART.lifestyle.items;
+ for(const {id,place,point} of plan){
+  const item=lsItems.find(i=>i.id===id);if(!item)continue;
+  const asset=item.exports[size],[left,top,right,bottom]=asset.paintBounds;
+  const units=lsTarget/Math.max(right-left,bottom-top),width=asset.size[0]*units,pw=(right-left)*units,ph=(bottom-top)*units;
+  const at=(dx,dy)=>[point[0]+(dx-pw/2)*k,point[1]+(dy-ph)*k,point[0]+(dx+pw/2)*k,point[1]+dy*k];
+  let dx=0,dy=0;
+  if(hits(at(0,0)))search:for(let d=4;d<=96;d+=4)for(const [sx,sy] of STEPS){const r=at(sx*d,sy*d);if(!hits(r)){dx=sx*d;dy=sy*d;break search;}}
+  obstacles.push(at(dx,dy));
+  const node=make('g',{'data-lifestyle':id,'data-place':place,transform:'translate('+point[0]+' '+point[1]+') scale('+k+')'});
+  if(dx||dy)node.dataset.shift=dx+' '+dy;
+  node.append(make('image',{href:asset.src,x:-(left+right)/2*units+dx,y:-bottom*units+dy,width,height:width,'data-export-size':size}));ls.append(node);
+ }
 };

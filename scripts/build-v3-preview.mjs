@@ -78,11 +78,20 @@ for(const id of ['SCENE-ROMA','SCENE-VENEZIA','SCENE-NAPOLI'])scenes[A[id].chapt
 const v3art={bg:{bg01:uri(A['BG-01'].export,'BG-01'),bg02:uri(A['BG-02'].export,'BG-02'),bg03:uri(A['BG-03'].export,'BG-03')},portrait:uri(A['NINO-PORTRET'].export,'NINO-PORTRET'),poses:Object.fromEntries(render.assets.filter(a=>a.universalMaster && !['NINO-PASPOORT','VESPA-ZIJ','VESPA-ICOON','NINO-DENKT','NINO-WIJST-RECHTS'].includes(a.id)).map(a=>[a.id,{src:uri(a.export,a.id),size:a.export.size}])),vespa:uri(A['VESPA-ZIJ'].export,'VESPA-ZIJ'),
  icons:Object.fromEntries(['slice','pizza','vespa','gold','stamp','postcard'].map(k=>[k,k==='vespa'?uri(A['VESPA-ICOON'].export,'VESPA-ICOON'):uri(A['IC-'+k].exports['96'],'IC-'+k)]))};
 const landmarks=JSON.parse(read('assets/v3/landmarks/manifest.json'));
-const activeLandmarks=landmarks.items.filter(a=>a.ui);
+const activeLandmarks=landmarks.items.filter(a=>a.ui&&!a.lifestyle);
 if(activeLandmarks.map(a=>a.id).join(',')!==Array.from({length:10},(_,i)=>'TOPO_'+String(i+1).padStart(2,'0')).join(','))throw Error('Expected only TOPO_01–10 in UI');
 // Ronde 5 punt 2: relevance per chapter (locations.json: relevantItems per landmark, basisSet for chapters without one).
 const lmLocations=JSON.parse(read('assets/v3/landmarks/locations.json'));
 for(const a of activeLandmarks)for(const id of a.location.relevantItems||[])if(!canonicalItems.some(i=>i.id===id))throw Error('Unknown relevant item '+id+' for '+a.id);
+// Ronde 5 punt 7: lifestyle icons (TOPO_11–16) with their fixed per-chapter places, projected like the landmarks.
+const lifestyle=landmarks.items.filter(a=>a.ui&&a.lifestyle);
+if(lifestyle.map(a=>a.id).join(',')!=='TOPO_11,TOPO_12,TOPO_13,TOPO_14,TOPO_15,TOPO_16')throw Error('Expected lifestyle TOPO_11–16');
+const placePoint=(key,pl)=>{if(pl.canonicalItemId){const i=canonicalItems.find(i=>i.id===pl.canonicalItemId);if(!i)throw Error('Unknown place item '+pl.canonicalItemId);
+ return Number.isFinite(i.lon)?project([i.lon,i.lat]):[i.px,i.py];}if(pl.coordinates?.every(Number.isFinite))return project(pl.coordinates);throw Error('Place without a point: '+key);};
+const LS=lmLocations.lifestyle,lsPlaces=Object.fromEntries(Object.entries(LS.places).map(([k,pl])=>[k,placePoint(k,pl)]));
+for(const [cid,list] of Object.entries(LS.chapters))for(const [id,place] of list)if(!lifestyle.some(a=>a.id===id)||!lsPlaces[place])throw Error('Bad lifestyle entry '+cid+' '+id+' '+place);
+v3art.lifestyle={items:lifestyle.map(a=>({id:a.id,label:a.label,exports:Object.fromEntries(Object.entries(a.exports).map(([size,e])=>[size,{...e,src:uri(e,a.id+' '+size)}]))})),
+ chapters:Object.fromEntries(Object.entries(LS.chapters).map(([cid,list])=>[cid,list.map(([id,place])=>({id,place,point:lsPlaces[place]}))]))};
 v3art.landmarks={source:landmarks.source,basisSet:lmLocations.relevance.basisSet,items:activeLandmarks.map(a=>{
  const item=a.location.canonicalItemId&&canonicalItems.find(i=>i.id===a.location.canonicalItemId);
  const coordinates=item?[item.lon,item.lat]:a.location.coordinates;

@@ -119,6 +119,39 @@ async def green_screens(p,touch):
  await p.goto('about:blank');await p.goto(q.HTML.as_uri()+'#welkom/bg03');await p.wait_for_timeout(900);out['kennismaking']=await scan()
  return out
 
+# Point 7: lifestyle icons on Reis (painted boxes) against pins, marks, labels and landmarks.
+LIFESTYLE='''()=>{const svg=document.querySelector('.v3MapStage .v3Map'),A=TOPO_V3.art,boxes=[];
+ const paint=(g,e)=>{const img=g.querySelector('image'),x=e.exports[img.dataset.exportSize],r=img.getBoundingClientRect(),s=r.width/x.size[0],[l,t,rr,b]=x.paintBounds;
+  return {left:r.left+l*s,top:r.top+t*s,right:r.left+rr*s,bottom:r.top+b*s};};
+ const ls=[...svg.querySelectorAll('.v3Lifestyle>g')].map(g=>({id:g.dataset.lifestyle,place:g.dataset.place,transform:g.getAttribute('transform'),shift:g.dataset.shift||'',box:paint(g,A.lifestyle.items.find(i=>i.id===g.dataset.lifestyle))}));
+ const lm=[...svg.querySelectorAll('.v3Landmarks>g')].map(g=>paint(g,A.landmarks.items.find(i=>i.id===g.dataset.landmark)));
+ const ob=[...svg.querySelectorAll('.v3Pin,.v3Mark>circle,.v3MarkName')].map(n=>n.getBoundingClientRect()).concat(lm);
+ const over=(a,b)=>a.left<b.right&&b.left<a.right&&a.top<b.bottom&&b.top<a.bottom;
+ const overlaps=ls.filter((x,i)=>ob.some(o=>over(x.box,o))||ls.some((y,j)=>j!==i&&over(x.box,y.box))).map(x=>x.id);
+ const order=[...svg.children].map(n=>n.getAttribute('class')||'');
+ return {items:ls.map(x=>[x.id,x.place]),placement:ls.map(x=>x.transform+x.shift),sizes:ls.map(x=>Math.round(Math.max(x.box.right-x.box.left,x.box.bottom-x.box.top)*10)/10),overlaps,
+  below:order.indexOf('v3Lifestyle')<Math.min(...['v3Pins','v3Marks'].map(c=>order.indexOf(c)).filter(i=>i>=0))};}'''
+VISIBLE_LIFESTYLE='()=>[...document.querySelectorAll("[data-lifestyle]")].filter(n=>n.getClientRects().length&&getComputedStyle(n).visibility==="visible").map(n=>n.dataset.lifestyle)'
+
+async def toets(pg,skips):
+ """The V2 exam through the V3 setup (city2, 10 questions); skips at the given question numbers."""
+ await pg.evaluate('TOPO_V3.shell.go("toets")');await pg.wait_for_timeout(300)
+ await pg.locator('[aria-labelledby=v3ToetsHoofdstukken] [data-group=city2]').click();await pg.wait_for_timeout(200)
+ await pg.locator('[aria-labelledby=v3ToetsLengte] [data-value="10"]').click();await pg.wait_for_timeout(200)
+ await pg.locator('.v3View-toets .v3Start').click();await pg.wait_for_timeout(800)
+ during=[]
+ for n in range(10):
+  during+=await pg.evaluate(VISIBLE_LIFESTYLE)
+  q2=await pg.evaluate('state.current.id');mode=await pg.evaluate('state.questionMode')
+  if n in skips:
+   await pg.evaluate('document.querySelector("#next").click()');await pg.wait_for_timeout(250)
+   await pg.evaluate('document.querySelector("#next").click()');await pg.wait_for_timeout(300);continue
+  if mode=='point':await pg.locator(f'#map [data-id="{q2}"][tabindex="0"]').first.press('Enter')
+  else:await pg.locator('#answer').fill(await pg.evaluate('state.current.name'));await pg.locator('#answer').press('Enter')
+  await pg.wait_for_timeout(200);await pg.evaluate('document.querySelector("#next").click()');await pg.wait_for_timeout(300)
+ await pg.wait_for_timeout(900)
+ return during
+
 async def act(p,selector,touch=False):
  n=p.locator(selector).filter(visible=True).first
  await (n.tap(timeout=2500) if touch else n.click(timeout=2500))
@@ -159,7 +192,7 @@ async def check(p,n,touch,vp):
   for cid,items in await p.evaluate('ROUTE_CHAPTERS.map(c=>[c.id,c.itemIds])'):
    await p.evaluate(FRAME,cid)
    r=await p.evaluate(LANDMARKS)
-   want={k for k,v in loc['items'].items() if set(v['relevantItems'])&set(items)}
+   want={k for k,v in loc['items'].items() if set(v.get('relevantItems',[]))&set(items)}
    kind='chapter' if want else 'basis';want=want or set(loc['relevance']['basisSet'])
    assert set(r['ids'])==want and r['set']==kind and not r['overlaps'],(cid,r,want)
    assert kind=='chapter' or len(want)<=4
@@ -243,6 +276,63 @@ async def check(p,n,touch,vp):
   assert r['phase']=='arrived' and r['anim']=='none',r
   await p.keyboard.press('Escape');await p.emulate_media(reduced_motion='no-preference')
   return shots,out
+ if n==7:
+  loc=json.loads((ROOT/'assets/v3/landmarks/locations.json').read_text())['lifestyle']['chapters'];out={};target=28 if vp!='desktop' else 32
+  lm_target=34 if vp!='desktop' else 40
+  for cid in await p.evaluate('ROUTE_CHAPTERS.map(c=>c.id)'):
+   await p.evaluate(FRAME,cid);r=await p.evaluate(LIFESTYLE)
+   assert r['items']==[list(x) for x in loc[cid]] and 1<=len(r['items'])<=2,(cid,r)
+   assert not r['overlaps'] and r['below'],(cid,r)
+   assert all(abs(z-target)<=1.5 and z<lm_target for z in r['sizes']),(cid,r)
+   out[cid]=r
+  # Stable: the same placement on a second visit.
+  for cid in ('city4','rivers'):
+   await p.evaluate(FRAME,cid);assert (await p.evaluate(LIFESTYLE))['placement']==out[cid]['placement'],cid
+  fiat={tuple(x) for c in loc.values() for x in c if x[0]=='TOPO_16'};fiat_ch=[c for c,v in loc.items() if any(x[0]=='TOPO_16' for x in v)]
+  assert len(fiat_ch)>=4 and {'turijn','rome','kust-napels','toscane'}<= {pl for _,pl in fiat},(fiat_ch,fiat)
+  await p.evaluate(FRAME,'city4');await p.evaluate('document.activeElement?.blur?.()');await p.mouse.move(1,1);await p.wait_for_timeout(250)
+  await p.screenshot(path=str(OUT/f'reis-lifestyle-{vp}.png'));shots.append('reis-lifestyle')
+  # Never in the lesson or the picker.
+  await p.evaluate('TOPO_V3.shell.practice("point","city1")');await p.wait_for_timeout(900)
+  assert not await p.evaluate(VISIBLE_LIFESTYLE),'lesson'
+  await p.evaluate('()=>{openMapPicker(ITEMS.filter(i=>["city-6","area-e"].includes(i.id)))}');await p.wait_for_timeout(500)
+  assert not await p.evaluate(VISIBLE_LIFESTYLE),'picker'
+  await p.keyboard.press('Escape');await p.wait_for_timeout(300)
+  # Toets: nothing during the questions; 7/10 no gelato; ≥ 8/10 one gelato by the score, never on the result map.
+  during=await toets(p,(2,5,8));assert not during,during
+  assert await p.locator('.v3ToetsScore').inner_text()=='7 / 10' and not await p.evaluate(VISIBLE_LIFESTYLE)
+  await p.goto('about:blank');await p.goto(q.HTML.as_uri()+'#bezig/bg03');await p.wait_for_timeout(700)
+  during=await toets(p,(4,));assert not during,during
+  assert await p.locator('.v3ToetsScore').inner_text()=='9 / 10',await p.locator('.v3ToetsScore').inner_text()
+  vis=await p.evaluate(VISIBLE_LIFESTYLE);assert vis==['TOPO_13'],vis
+  assert await p.locator('.v3ToetsMap [data-lifestyle]').count()==0
+  await p.evaluate('document.activeElement?.blur?.()');await p.mouse.move(1,1);await p.wait_for_timeout(250)
+  await p.screenshot(path=str(OUT/f'toetsResult-goed-{vp}.png'));shots.append('toetsResult-goed')
+  # Voortgang 45 / 45: the Fiat by Nino, once.
+  await p.goto('about:blank');await p.goto(q.HTML.as_uri()+'#alles/bg03');await p.wait_for_timeout(700)
+  await q.goto(p,'voortgang');await p.wait_for_timeout(400)
+  vis=await p.evaluate(VISIBLE_LIFESTYLE);assert vis==['TOPO_16'],vis
+  await p.evaluate('document.activeElement?.blur?.()');await p.mouse.move(1,1);await p.wait_for_timeout(200)
+  await p.screenshot(path=str(OUT/f'voortgang-alles-{vp}.png'));shots.append('voortgang-alles')
+  # Gouden proef: never (the gold run of a finished chapter).
+  await act(p,'[data-nav=reis]',touch);await p.wait_for_timeout(400);await p.evaluate(FRAME,'city1')
+  gold=p.locator('.v3Reis .v3Panel .v3Btn.primary').filter(has_text='goud')
+  if await gold.count():
+   await gold.first.click();await p.wait_for_timeout(1000)
+   assert not await p.evaluate(VISIBLE_LIFESTYLE),'gold';out['goldChecked']=True
+  # Vespa ride: the Fiat passes behind Nino; with reduced motion it stands still.
+  await p.goto('about:blank');await p.goto(q.HTML.as_uri()+'#bezig/bg03');await p.wait_for_timeout(700)
+  await p.evaluate('celebrateTrip("Rome","Napels")');await p.wait_for_timeout(1300)
+  f=await p.evaluate('()=>{const f=document.querySelector(".vespaRide .v3RideFiat");return [getComputedStyle(f).animationName,f.compareDocumentPosition(document.querySelector(".vespaRide .rideNino"))&Node.DOCUMENT_POSITION_FOLLOWING]}')
+  assert f[0]=='v3FiatPast' and f[1],f
+  vis=await p.evaluate('()=>[...document.querySelectorAll(".vespaRide [data-lifestyle]")].filter(n=>n.getClientRects().length).map(n=>n.dataset.lifestyle)');assert vis==['TOPO_16'],vis
+  await p.mouse.move(1,1);await p.screenshot(path=str(OUT/f'vespa-rit-{vp}.png'));shots.append('vespa-rit')
+  await p.keyboard.press('Escape');await p.wait_for_timeout(300)
+  await p.emulate_media(reduced_motion='reduce')
+  await p.evaluate('celebrateTrip("Napels","Palermo")');await p.wait_for_timeout(300)
+  assert await p.evaluate('getComputedStyle(document.querySelector(".vespaRide .v3RideFiat")).animationName')=='none'
+  await p.keyboard.press('Escape');await p.emulate_media(reduced_motion='no-preference')
+  return shots,{k:{'items':v['items'],'sizes':v['sizes']} for k,v in out.items() if isinstance(v,dict)}|{'goldChecked':out.get('goldChecked',False)}
  raise SystemExit('unknown point')
 
 async def main(point):

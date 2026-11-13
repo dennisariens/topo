@@ -17,6 +17,9 @@
   }
  }};
  const ride=document.querySelector('.vespaRide'),rider=ride?.querySelector('.rideNino');
+ // Ronde 5 punt 7: the Fiat 500 drives past in the background (behind Nino); with reduced motion it stands still.
+ const fiat=V.art.lifestyle?.items.find(i=>i.id==='TOPO_16');
+ if(rider&&fiat&&!ride.querySelector('.v3RideFiat')){const f=document.createElement('img');f.className='v3RideFiat';f.src=fiat.exports[devicePixelRatio>1?256:128].src;f.alt='';f.setAttribute('aria-hidden','true');f.dataset.lifestyle='TOPO_16';rider.before(f);}
  // Ronde 5 punt 6: Nino rides along (VESPA-RIJDEND), not the empty Vespa; shake, start and ride-out stay as they were.
  if(rider){rider.src=V.art.poses?.['VESPA-RIJDEND']?.src||V.art.vespa;rider.dataset.v3Master=V.art.poses?.['VESPA-RIJDEND']?'VESPA-RIJDEND':'VESPA-ZIJ';rider.addEventListener('animationend',e=>{if(e.animationName==='v3RideOut'&&ride.dataset.phase==='ride')ride.querySelector('.rideActions button')?.click();});}
  let start=null;

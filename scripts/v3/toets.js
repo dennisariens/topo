@@ -160,6 +160,9 @@
   const card=make('div','v3ToetsScoreCard');card.append(make('span','v3ToetsLabel','Toets'));
   const h=make('h1','v3ToetsScore',scoreText(r));h.id='v3ToetsScore';h.tabIndex=-1;h.setAttribute('aria-label',r.correct+' van '+r.total+' goed');card.append(h);
   const nino=make('div','v3ToetsNino');try{nino.append(V.pose?V.pose(perfect?'NINO-JUICHT':'VESPA-RIJDEND',perfect?'success':'encourage','exam-result'):TopoArt.create(document,{role:perfect?'success':'encourage'},'exam-result'));}catch{}
+  // Ronde 5 punt 7: a gelato beside the score at ≥ 8/10 (decoration; the only lifestyle icon on this screen).
+  const gelato=V.art?.lifestyle?.items.find(i=>i.id==='TOPO_13');
+  if(gelato&&r.total&&r.correct/r.total>=.8){const g=V.pic(gelato.exports[devicePixelRatio>1?256:128].src,'v3ToetsTreat',128,128);g.setAttribute('aria-hidden','true');g.dataset.lifestyle='TOPO_13';card.append(g);}
   head.append(card,nino);
   const map=make('figure','v3ToetsKaart');map.setAttribute('aria-label','Kaart met je antwoorden');
   const wrong=r.items.filter(x=>!x.ok),side=make('div','v3ToetsSide');

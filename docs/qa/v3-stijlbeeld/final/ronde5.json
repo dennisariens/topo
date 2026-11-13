@@ -134,7 +134,7 @@
     "pass": true
   },
   "2": {
-    "previewSha256": "2575a4bbfabd223633939b207812d942c3b88d4c6f01735fb9a1fba23659724b",
+    "previewSha256": "5637495df2fed0ff2e9dfe57fd45cee6dde2c537593bd556bc10c729287297f5",
     "runs": {
       "desktop": {
         "viewport": [
@@ -868,6 +868,344 @@
             "anim": "none",
             "visible": false
           }
+        }
+      }
+    },
+    "pass": true
+  },
+  "7": {
+    "previewSha256": "5637495df2fed0ff2e9dfe57fd45cee6dde2c537593bd556bc10c729287297f5",
+    "runs": {
+      "desktop": {
+        "viewport": [
+          1440,
+          900
+        ],
+        "screens": [
+          "reis-lifestyle",
+          "toetsResult-goed",
+          "voortgang-alles",
+          "vespa-rit"
+        ],
+        "detail": {
+          "city1": {
+            "items": [
+              [
+                "TOPO_15",
+                "bologna"
+              ],
+              [
+                "TOPO_12",
+                "milaan"
+              ]
+            ],
+            "sizes": [
+              32,
+              32
+            ]
+          },
+          "city2": {
+            "items": [
+              [
+                "TOPO_16",
+                "turijn"
+              ],
+              [
+                "TOPO_13",
+                "rome"
+              ]
+            ],
+            "sizes": [
+              32,
+              32
+            ]
+          },
+          "city3": {
+            "items": [
+              [
+                "TOPO_13",
+                "catania"
+              ]
+            ],
+            "sizes": [
+              32
+            ]
+          },
+          "city4": {
+            "items": [
+              [
+                "TOPO_11",
+                "modena"
+              ],
+              [
+                "TOPO_14",
+                "rimini"
+              ]
+            ],
+            "sizes": [
+              32,
+              32
+            ]
+          },
+          "islands": {
+            "items": [
+              [
+                "TOPO_13",
+                "palermo"
+              ]
+            ],
+            "sizes": [
+              32
+            ]
+          },
+          "mountains": {
+            "items": [
+              [
+                "TOPO_16",
+                "toscane"
+              ]
+            ],
+            "sizes": [
+              32
+            ]
+          },
+          "volcanoes": {
+            "items": [
+              [
+                "TOPO_16",
+                "kust-napels"
+              ]
+            ],
+            "sizes": [
+              32
+            ]
+          },
+          "regions": {
+            "items": [
+              [
+                "TOPO_15",
+                "bologna"
+              ],
+              [
+                "TOPO_11",
+                "modena"
+              ]
+            ],
+            "sizes": [
+              32,
+              32
+            ]
+          },
+          "countries": {
+            "items": [
+              [
+                "TOPO_16",
+                "turijn"
+              ]
+            ],
+            "sizes": [
+              32
+            ]
+          },
+          "seas": {
+            "items": [
+              [
+                "TOPO_14",
+                "rimini"
+              ],
+              [
+                "TOPO_13",
+                "genua"
+              ]
+            ],
+            "sizes": [
+              32,
+              32
+            ]
+          },
+          "rivers": {
+            "items": [
+              [
+                "TOPO_16",
+                "rome"
+              ],
+              [
+                "TOPO_11",
+                "modena"
+              ]
+            ],
+            "sizes": [
+              32,
+              32
+            ]
+          },
+          "goldChecked": true
+        }
+      },
+      "ipad-liggend": {
+        "viewport": [
+          1080,
+          810
+        ],
+        "screens": [
+          "reis-lifestyle",
+          "toetsResult-goed",
+          "voortgang-alles",
+          "vespa-rit"
+        ],
+        "detail": {
+          "city1": {
+            "items": [
+              [
+                "TOPO_15",
+                "bologna"
+              ],
+              [
+                "TOPO_12",
+                "milaan"
+              ]
+            ],
+            "sizes": [
+              28,
+              28
+            ]
+          },
+          "city2": {
+            "items": [
+              [
+                "TOPO_16",
+                "turijn"
+              ],
+              [
+                "TOPO_13",
+                "rome"
+              ]
+            ],
+            "sizes": [
+              28,
+              28
+            ]
+          },
+          "city3": {
+            "items": [
+              [
+                "TOPO_13",
+                "catania"
+              ]
+            ],
+            "sizes": [
+              28
+            ]
+          },
+          "city4": {
+            "items": [
+              [
+                "TOPO_11",
+                "modena"
+              ],
+              [
+                "TOPO_14",
+                "rimini"
+              ]
+            ],
+            "sizes": [
+              28,
+              28
+            ]
+          },
+          "islands": {
+            "items": [
+              [
+                "TOPO_13",
+                "palermo"
+              ]
+            ],
+            "sizes": [
+              28
+            ]
+          },
+          "mountains": {
+            "items": [
+              [
+                "TOPO_16",
+                "toscane"
+              ]
+            ],
+            "sizes": [
+              28
+            ]
+          },
+          "volcanoes": {
+            "items": [
+              [
+                "TOPO_16",
+                "kust-napels"
+              ]
+            ],
+            "sizes": [
+              28
+            ]
+          },
+          "regions": {
+            "items": [
+              [
+                "TOPO_15",
+                "bologna"
+              ],
+              [
+                "TOPO_11",
+                "modena"
+              ]
+            ],
+            "sizes": [
+              28,
+              28
+            ]
+          },
+          "countries": {
+            "items": [
+              [
+                "TOPO_16",
+                "turijn"
+              ]
+            ],
+            "sizes": [
+              28
+            ]
+          },
+          "seas": {
+            "items": [
+              [
+                "TOPO_14",
+                "rimini"
+              ],
+              [
+                "TOPO_13",
+                "genua"
+              ]
+            ],
+            "sizes": [
+              28,
+              28
+            ]
+          },
+          "rivers": {
+            "items": [
+              [
+                "TOPO_16",
+                "rome"
+              ],
+              [
+                "TOPO_11",
+                "modena"
+              ]
+            ],
+            "sizes": [
+              28,
+              28
+            ]
+          },
+          "goldChecked": true
         }
       }
     },

@@ -482,6 +482,45 @@
       "relevantItems": [
         "city-1"
       ]
+    },
+    "TOPO_11": {
+      "feature": "Classic Ferrari (Modena/Maranello)",
+      "lifestyle": true,
+      "canonicalItemId": "city-20",
+      "note": "Decorative lifestyle icon, not a learning item and not a surveyed location. Anchored at the canonical Modena item; Maranello lies ±15 km south."
+    },
+    "TOPO_12": {
+      "feature": "Football stadium Milan",
+      "lifestyle": true,
+      "canonicalItemId": "city-5",
+      "note": "Decorative lifestyle icon, not a learning item and not a surveyed location. Anchored at the canonical Milaan item."
+    },
+    "TOPO_13": {
+      "feature": "Gelato",
+      "lifestyle": true,
+      "canonicalItemId": "city-9",
+      "note": "Decorative lifestyle icon, not a learning item and not a surveyed location. Placed per chapter in a city or by the sea (lifestyle.places)."
+    },
+    "TOPO_14": {
+      "feature": "Beach Rimini",
+      "lifestyle": true,
+      "coordinates": [
+        12.58,
+        44.07
+      ],
+      "note": "Decorative lifestyle icon, not a learning item and not a surveyed location. Rounded coordinate of Rimini on the Adriatic coast (0.01°), not checked against a dataset."
+    },
+    "TOPO_15": {
+      "feature": "Pasta Bologna",
+      "lifestyle": true,
+      "canonicalItemId": "city-2",
+      "note": "Decorative lifestyle icon, not a learning item and not a surveyed location. Anchored at the canonical Bologna item."
+    },
+    "TOPO_16": {
+      "feature": "Fiat 500",
+      "lifestyle": true,
+      "canonicalItemId": "city-10",
+      "note": "Decorative lifestyle icon, not a learning item and not a surveyed location. Drives per chapter at another place (lifestyle.places)."
     }
   },
   "relevance": {
@@ -492,5 +531,144 @@
       "TOPO_03",
       "TOPO_04"
     ]
+  },
+  "lifestyle": {
+    "rule": "Ronde 5 punt 7: per hoofdstuk 1–2 lifestyle-iconen naast de landmarks, een vaste lijst (stabiel per hoofdstuk, gevarieerd tussen hoofdstukken). Nooit op of over een pin, label, markering of landmark (botsingscheck); kleiner dan de landmarks (±32/28 px). Ook: gelato bij toetsresultaat ≥ 8/10, de Fiat 500 bij Nino op Voortgang 45/45 en voorbijrijdend in de Vespa-rit; nooit in de les, de toetsvragen, de Gouden proef of het keuzevenster.",
+    "places": {
+      "bologna": {
+        "canonicalItemId": "city-2"
+      },
+      "milaan": {
+        "canonicalItemId": "city-5"
+      },
+      "turijn": {
+        "canonicalItemId": "city-10"
+      },
+      "rome": {
+        "canonicalItemId": "city-9"
+      },
+      "catania": {
+        "canonicalItemId": "city-15"
+      },
+      "modena": {
+        "canonicalItemId": "city-20"
+      },
+      "palermo": {
+        "canonicalItemId": "city-7"
+      },
+      "genua": {
+        "canonicalItemId": "city-4"
+      },
+      "toscane": {
+        "canonicalItemId": "area-h",
+        "note": "The Toscane label point (no lon/lat in ITEMS)."
+      },
+      "rimini": {
+        "coordinates": [
+          12.58,
+          44.07
+        ],
+        "note": "Rounded coordinate of Rimini (0.01°), not checked against a dataset."
+      },
+      "kust-napels": {
+        "coordinates": [
+          14.38,
+          40.63
+        ],
+        "note": "Rounded coordinate of Sorrento on the coast south of Naples (0.01°), not checked against a dataset."
+      }
+    },
+    "chapters": {
+      "city1": [
+        [
+          "TOPO_15",
+          "bologna"
+        ],
+        [
+          "TOPO_12",
+          "milaan"
+        ]
+      ],
+      "city2": [
+        [
+          "TOPO_16",
+          "turijn"
+        ],
+        [
+          "TOPO_13",
+          "rome"
+        ]
+      ],
+      "city3": [
+        [
+          "TOPO_13",
+          "catania"
+        ]
+      ],
+      "city4": [
+        [
+          "TOPO_11",
+          "modena"
+        ],
+        [
+          "TOPO_14",
+          "rimini"
+        ]
+      ],
+      "islands": [
+        [
+          "TOPO_13",
+          "palermo"
+        ]
+      ],
+      "mountains": [
+        [
+          "TOPO_16",
+          "toscane"
+        ]
+      ],
+      "volcanoes": [
+        [
+          "TOPO_16",
+          "kust-napels"
+        ]
+      ],
+      "regions": [
+        [
+          "TOPO_15",
+          "bologna"
+        ],
+        [
+          "TOPO_11",
+          "modena"
+        ]
+      ],
+      "countries": [
+        [
+          "TOPO_16",
+          "turijn"
+        ]
+      ],
+      "seas": [
+        [
+          "TOPO_14",
+          "rimini"
+        ],
+        [
+          "TOPO_13",
+          "genua"
+        ]
+      ],
+      "rivers": [
+        [
+          "TOPO_16",
+          "rome"
+        ],
+        [
+          "TOPO_11",
+          "modena"
+        ]
+      ]
+    }
   }
 }

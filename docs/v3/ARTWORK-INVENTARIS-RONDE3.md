@@ -269,7 +269,7 @@ De inventaris omvat nu 210 aanwezige beeld-/fontbestanden. Nieuw: `assets/v3/lan
 
 ## Master-landmarks 12-11 — vervangt de gegenereerde atlas
 
-Actueel: 229 lokale beeld-/fontbestanden. De vorige atlas is vervangen door TOPO_01–10 uit `art/master` op `69c945c16a8bd34c8e45cffa96c12442c2672cb1`, met twintig WebP-exports (128 en 256 px). De PNG-masters blijven op de art-branch. TOPO_11 ontbreekt; TOPO_12–16 zijn uitsluitend manifestvermeldingen met status `V3.1 uitstapjes`, zonder exports of UI. TOPO_12: geen zichtbare logo’s, maar rood-zwarte tribunes; kleurreview blijft open.
+Actueel: 229 lokale beeld-/fontbestanden. De vorige atlas is vervangen door TOPO_01–10 uit `art/master` op `69c945c16a8bd34c8e45cffa96c12442c2672cb1`, met twintig WebP-exports (128 en 256 px). De PNG-masters blijven op de art-branch. Ronde 5 punt 7: pin `daa188f`; TOPO_11–16 (lifestyle, Ferrari erbij) met status `in gebruik V3.0` en twaalf extra WebP-exports. TOPO_12: rood-zwarte tribunes, in gebruik op besluit van de eigenaar.
 
 | Bestand | KiB | SHA-256 | Plek |
 | --- | ---: | --- | --- |
@@ -293,6 +293,18 @@ Actueel: 229 lokale beeld-/fontbestanden. De vorige atlas is vervangen door TOPO
 | `assets/v3/landmarks/exports/TOPO_09-256.webp` | 19.4 | `6e7ef73b198d` | TOPO_09: Reis / toetsresultaat, alleen Reliëf |
 | `assets/v3/landmarks/exports/TOPO_10-128.webp` | 7.4 | `6fdc1c1cdcdd` | TOPO_10: Reis / toetsresultaat, alleen Reliëf |
 | `assets/v3/landmarks/exports/TOPO_10-256.webp` | 20.8 | `5973c72a994c` | TOPO_10: Reis / toetsresultaat, alleen Reliëf |
+| `assets/v3/landmarks/exports/TOPO_11-128.webp` | 4.5 | `55906e39bd81` | TOPO_11: lifestyle, Reis per hoofdstuk (+ één vaste plek), alleen Reliëf |
+| `assets/v3/landmarks/exports/TOPO_11-256.webp` | 12.0 | `f1a5af9ebd9e` | TOPO_11: lifestyle, Reis per hoofdstuk (+ één vaste plek), alleen Reliëf |
+| `assets/v3/landmarks/exports/TOPO_12-128.webp` | 7.0 | `0ff4221e2a59` | TOPO_12: lifestyle, Reis per hoofdstuk (+ één vaste plek), alleen Reliëf |
+| `assets/v3/landmarks/exports/TOPO_12-256.webp` | 20.3 | `48fdf0aa5d47` | TOPO_12: lifestyle, Reis per hoofdstuk (+ één vaste plek), alleen Reliëf |
+| `assets/v3/landmarks/exports/TOPO_13-128.webp` | 5.1 | `a41cfca6ba8e` | TOPO_13: lifestyle, Reis per hoofdstuk (+ één vaste plek), alleen Reliëf |
+| `assets/v3/landmarks/exports/TOPO_13-256.webp` | 13.0 | `9be7e79d6231` | TOPO_13: lifestyle, Reis per hoofdstuk (+ één vaste plek), alleen Reliëf |
+| `assets/v3/landmarks/exports/TOPO_14-128.webp` | 8.3 | `71957e5dc9fc` | TOPO_14: lifestyle, Reis per hoofdstuk (+ één vaste plek), alleen Reliëf |
+| `assets/v3/landmarks/exports/TOPO_14-256.webp` | 21.0 | `18d4e0e7c344` | TOPO_14: lifestyle, Reis per hoofdstuk (+ één vaste plek), alleen Reliëf |
+| `assets/v3/landmarks/exports/TOPO_15-128.webp` | 7.4 | `0560bbd65b73` | TOPO_15: lifestyle, Reis per hoofdstuk (+ één vaste plek), alleen Reliëf |
+| `assets/v3/landmarks/exports/TOPO_15-256.webp` | 20.4 | `b928acc36ec1` | TOPO_15: lifestyle, Reis per hoofdstuk (+ één vaste plek), alleen Reliëf |
+| `assets/v3/landmarks/exports/TOPO_16-128.webp` | 5.9 | `c492bc92d93e` | TOPO_16: lifestyle, Reis per hoofdstuk (+ één vaste plek), alleen Reliëf |
+| `assets/v3/landmarks/exports/TOPO_16-256.webp` | 15.6 | `fb02fbf294ea` | TOPO_16: lifestyle, Reis per hoofdstuk (+ één vaste plek), alleen Reliëf |
 
 ## V2-bron na stap 0 (12-11) — gedecodeerde data-URI’s
 

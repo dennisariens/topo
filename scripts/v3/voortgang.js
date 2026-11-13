@@ -50,7 +50,10 @@
   fig.append(cap,legend);
   // 45 / 45: a calm congratulation (ronde 5 punt 4) — a gold edge round the map and a small cheering Nino; no confetti.
   fig.classList.toggle('v3VgAllDone',all);
-  if(all&&V.pose){const cheer=make('div','v3VgCheer');cheer.setAttribute('aria-hidden','true');cheer.append(V.pose('NINO-JUICHT','success','progress-cheer'));fig.append(cheer);}fig.setAttribute('aria-label',count+' van '+ITEMS.length+' plekken beheerst');
+  if(all&&V.pose){const cheer=make('div','v3VgCheer');cheer.setAttribute('aria-hidden','true');cheer.append(V.pose('NINO-JUICHT','success','progress-cheer'));
+   // Ronde 5 punt 7: the Fiat 500 beside the cheering Nino (the only lifestyle icon on this screen).
+   const fiat=V.art?.lifestyle?.items.find(i=>i.id==='TOPO_16');if(fiat){const f=V.pic(fiat.exports[devicePixelRatio>1?256:128].src,'v3VgTreat',128,128);f.setAttribute('aria-hidden','true');f.dataset.lifestyle='TOPO_16';cheer.append(f);}
+   fig.append(cheer);}fig.setAttribute('aria-label',count+' van '+ITEMS.length+' plekken beheerst');
 
   // Hoofdstukken (R-voortgang, fase B stap 7): the chapter's real photo, "n. naam", one thick bar of the three lessons
   // (three segments, so the bar still reads the stage) and a status illustration: gold laurel (IC-gold) = goud, the

@@ -30,9 +30,11 @@ def check_pipeline():
     assert sha(raw) == source['sha256']
     masters = {f'TOPO_{a["id"]:02}': a for a in json.loads(raw)}
     locations = json.loads((ROOT / 'assets/v3/landmarks/locations.json').read_text())['items']
-    assert set(masters) == {f'TOPO_{i:02}' for i in [*range(1, 11), *range(12, 17)]}
-    active = {a['id']: a for a in manifest['items'] if a['ui']}
+    # Ronde 5 punt 7 (art/master daa188f): 16 masters; 01–10 landmarks, 11–16 lifestyle (own QA: qa-v3-ronde5.py --point 7).
+    assert set(masters) == {f'TOPO_{i:02}' for i in range(1, 17)}
+    active = {a['id']: a for a in manifest['items'] if a['ui'] and not a.get('lifestyle')}
     assert set(active) == {f'TOPO_{i:02}' for i in range(1, 11)}
+    assert {a['id'] for a in manifest['items'] if a.get('lifestyle')} == {f'TOPO_{i:02}' for i in range(11, 17)}
     for entry in manifest['items']:
         data = subprocess.check_output(['git', 'show', source['commit'] + ':' + entry['master']['path']], cwd=ROOT)
         assert sha(data) == masters[entry['id']]['sha256'] == entry['master']['sha256']
@@ -40,7 +42,11 @@ def check_pipeline():
             assert entry['status'] == 'V3.1 uitstapjes' and 'exports' not in entry
             continue
         assert entry['location'] == locations[entry['id']]
-        source_point = entry['location']['source']
+        if entry.get('lifestyle'):
+            assert entry['status'] == 'in gebruik V3.0' and entry['location']['lifestyle'] is True
+            source_point = {}
+        else:
+            source_point = entry['location']['source']
         if 'claim' in source_point:
             value = source_point['claim']['mainsnak']['datavalue']['value']
             assert entry['location']['coordinates'] == [value['longitude'], value['latitude']]
@@ -132,7 +138,7 @@ async def main():
             # Ronde 5 punt 2: Reis shows the active chapter's landmarks (locations.json relevantItems) or the basis set.
             chapter = await page.evaluate('(()=>{const c=ROUTE_CHAPTERS.find(c=>c.id===TOPO_V3.ui.selected);return c.itemIds})()')
             relevance = json.loads((ROOT/'assets/v3/landmarks/locations.json').read_text())
-            shown = {k for k, v in relevance['items'].items() if set(v['relevantItems']) & set(chapter)} or set(relevance['relevance']['basisSet'])
+            shown = {k for k, v in relevance['items'].items() if set(v.get('relevantItems', [])) & set(chapter)} or set(relevance['relevance']['basisSet'])
             reis = await map_check(page, '.v3MapStage .v3Map', active, expected, 128*dpr, shown)
             for value in ('false', 'true'):
                 button = page.locator(f'.v3MapTools [data-relief={value}]')
@@ -167,12 +173,12 @@ async def main():
               'manifestSha256': sha((ROOT/'assets/v3/landmarks/manifest.json').read_bytes()),
               'locationsSha256': sha((ROOT/'assets/v3/landmarks/locations.json').read_bytes()),
               'qaScriptSha256': sha(pathlib.Path(__file__).read_bytes()),
-              'masters': 15, 'webpExports': 20, 'excluded': ['TOPO_11'],
-              'futureManifestOnly': [f'TOPO_{i}' for i in range(12, 17)], 'runs': runs,
+              'masters': 16, 'webpExports': 32, 'excluded': [],
+              'lifestyleInUse': [f'TOPO_{i}' for i in range(11, 17)], 'runs': runs,
               'browser': 'Chrome / Playwright; Browser plugin not available',
-              'open': ['Physical iPad Safari', 'TOPO_12 red/black seating colour review']}
+              'open': ['Physical iPad Safari', 'TOPO_12 red/black seating: in use by owner decision, not certified club-neutral']}
     (OUT / 'landmarks.json').write_text(json.dumps(report, indent=2) + '\n')
-    print('Reis + toetsresultaat: 4 screens PASS; 15 master hashes / 20 WebPs / 10 exact coordinates PASS')
+    print('Reis + toetsresultaat: 4 screens PASS; 16 master hashes / 32 WebPs / 10 exact coordinates PASS')
 
 
 if __name__ == '__main__':

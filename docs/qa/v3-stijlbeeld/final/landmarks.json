@@ -4,18 +4,17 @@
     "Reis",
     "toetsresultaat"
   ],
-  "previewSha256": "2575a4bbfabd223633939b207812d942c3b88d4c6f01735fb9a1fba23659724b",
+  "previewSha256": "5637495df2fed0ff2e9dfe57fd45cee6dde2c537593bd556bc10c729287297f5",
   "indexSha256": "3aced3c31259011b0af2947c78f71965cb4beb2e88c69d1663e61792b0304f5a",
-  "sourceCommit": "69c945c16a8bd34c8e45cffa96c12442c2672cb1",
-  "manifestSha256": "3131c5925a976ed10ef08bc67144a10060ca96cef57af22776765a53695a04ab",
-  "locationsSha256": "06cb09e30ca6d7bfa43b4d0f41fa54138d12fd9d3806b2b248bb5fe63a2719a3",
-  "qaScriptSha256": "c0b3cd573aa761e2beb0abe99fff04eb65579788bf87594a32d182339b337317",
-  "masters": 15,
-  "webpExports": 20,
-  "excluded": [
-    "TOPO_11"
-  ],
-  "futureManifestOnly": [
+  "sourceCommit": "daa188fad9966329805ed7912d64d2fc221b4dd5",
+  "manifestSha256": "49bc053c8745c086097d4346181b1c391ebc6c121d72d65d142921f99a8b3cf9",
+  "locationsSha256": "73ac2f9c3d21bee031fa1659250f4caf60c97cf22f302f64502c65d36dbd1b82",
+  "qaScriptSha256": "e2a24c250553bcd17b647cd4a24c5983da73ada519bb89a78d9f241224f9adce",
+  "masters": 16,
+  "webpExports": 32,
+  "excluded": [],
+  "lifestyleInUse": [
+    "TOPO_11",
     "TOPO_12",
     "TOPO_13",
     "TOPO_14",
@@ -52,7 +51,7 @@
             1440,
             900
           ],
-          "sha256": "062a15302a6de6ffbb0a0a7388d14322fac40fa2e74fb0d7c568c68d603c7a75"
+          "sha256": "6cc59ecf3b352e1193fd37d322dc0aae40542855760f638e6edf1c0cc5ca09e9"
         },
         "toetsResult": {
           "path": "docs/qa/v3-stijlbeeld/final/toetsResult-desktop.png",
@@ -60,7 +59,7 @@
             1440,
             900
           ],
-          "sha256": "663b708ee3d2f4e23d566f7610c205329a1c21a5cb894fd5f7d18c0d24cd9cd4"
+          "sha256": "c5b051109e8bae44cd04ce1a376ff582fbc748df36d5b426b6023f4494a3451b"
         }
       },
       "errors": []
@@ -94,7 +93,7 @@
             1080,
             810
           ],
-          "sha256": "56044500864b842f1615346b1f6ab77e84d3f2850875246b32dff130b96a941d"
+          "sha256": "85383c63f72dcae238095d474306fa3877b086deedb472626c536b1d10391f1e"
         },
         "toetsResult": {
           "path": "docs/qa/v3-stijlbeeld/final/toetsResult-ipad-liggend.png",
@@ -102,7 +101,7 @@
             1080,
             810
           ],
-          "sha256": "2605af744ac615fc4d8289bcfcdf2da7ed5318a325a7bf582b5686deacb8c2c3"
+          "sha256": "170a584dc9ac53a1eb6baf26ab3fdd43b2cc9e95eb46420a53b8007807a12bdd"
         }
       },
       "errors": []
@@ -111,6 +110,6 @@
   "browser": "Chrome / Playwright; Browser plugin not available",
   "open": [
     "Physical iPad Safari",
-    "TOPO_12 red/black seating colour review"
+    "TOPO_12 red/black seating: in use by owner decision, not certified club-neutral"
   ]
 }

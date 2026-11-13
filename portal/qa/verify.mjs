@@ -10,6 +10,8 @@ const required = [
   'assets/nino-topo/v3-r2/brand/logo/logo-02-compact.svg',
   'assets/nino-topo/v3-r2/brand/characters/nino-vespa-canonical.webp',
   'assets/nino-topo/v3-r2/brand/icons/vespa-premium-192.png',
+  'assets/nino-topo/v3-r2/brand/icons/vespa-premium-180.png',
+  'assets/nino-topo/v3-r2/brand/icons/vespa-icon-02-compact.webp',
   'index.html'
 ];
 const countries = ['italy','france','spain','germany','netherlands'];

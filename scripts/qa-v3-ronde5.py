@@ -1,7 +1,8 @@
 #!/usr/bin/env python3
 """Targeted Round 5 screen checks (docs/v3/OVERDRACHT.md › Ronde 5); desktop 1440×900 and iPad 1080×810,
 overwriting the final evidence screenshots. One point per run: --point N."""
-import argparse,asyncio,hashlib,importlib.util,json,pathlib
+import argparse,asyncio,hashlib,importlib.util,io,json,pathlib
+from PIL import Image
 from playwright.async_api import async_playwright
 ROOT=pathlib.Path(__file__).resolve().parent.parent
 OUT=ROOT/'docs/qa/v3-stijlbeeld/final'
@@ -27,6 +28,19 @@ LANDMARKS='''()=>{const svg=document.querySelector('.v3MapStage .v3Map'),items=T
  const ob=[...svg.querySelectorAll('.v3Pin,.v3Mark>circle,.v3MarkName')].map(n=>n.getBoundingClientRect());
  const overlaps=[];lm.forEach((a,i)=>ob.forEach(b=>{if(a.left<b.right&&b.left<a.right&&a.top<b.bottom&&b.top<a.bottom)overlaps.push(ids[i]);}));
  return {ids,set:svg.dataset.landmarkSet||'',overlaps};}'''
+
+# Point 3: on the book's first spread, no plate behind the text, and every text line box (Range rects) with its ink.
+PLATES='''()=>[...document.querySelectorAll('#travelBook .bookSpread .folioWriting,#travelBook .bookSpread .folioWriting *')].filter(n=>{
+ if(!n.getClientRects().length||n.matches('img,svg,svg *'))return false;const m=getComputedStyle(n).backgroundColor.match(/[\\d.]+/g);return m&&(m.length>3?+m[3]:1)>.05;}).map(n=>n.className)'''
+TEXTS='''()=>{const out=[];const w=document.createTreeWalker(document.querySelector('#travelBook .bookSpread'),NodeFilter.SHOW_TEXT);
+ while(w.nextNode()){const t=w.currentNode;if(!t.textContent.trim()||!t.parentElement.closest('.folioWriting'))continue;const cs=getComputedStyle(t.parentElement);
+  const r=document.createRange();r.selectNodeContents(t);for(const b of r.getClientRects())if(b.width>2&&b.height>2)out.push({t:t.textContent.trim().slice(0,30),color:cs.color,size:parseFloat(cs.fontSize),weight:+cs.fontWeight,box:[b.left,b.top,b.width,b.height]});}
+ return out;}'''
+
+async def act(p,selector,touch=False):
+ n=p.locator(selector).filter(visible=True).first
+ await (n.tap(timeout=2500) if touch else n.click(timeout=2500))
+ await p.wait_for_timeout(300)
 
 async def check(p,n,touch,vp):
  shots=[]
@@ -74,6 +88,30 @@ async def check(p,n,touch,vp):
   await q.play_toets(p)
   assert await p.evaluate('document.querySelectorAll(".v3ToetsMap .v3Landmarks>g").length')==10
   return shots,out
+ if n==3:
+  await p.goto(q.HTML.as_uri()+'#alles/bg03');await p.wait_for_timeout(700)
+  await q.goto(p,'rewards');await act(p,'.v3BookCover',touch)
+  while not await p.locator('.bookFooter button').first.is_disabled():await p.locator('.bookFooter button').first.click()
+  await p.wait_for_timeout(400)
+  plates=await p.evaluate(PLATES)
+  assert not plates,plates
+  texts=await p.evaluate(TEXTS)
+  assert len(texts)>=8,texts
+  await p.evaluate('document.querySelectorAll("#travelBook .bookSpread .folioWriting").forEach(n=>n.style.setProperty("color","transparent","important"));document.head.insertAdjacentHTML("beforeend","<style id=qaHide>#travelBook .bookSpread .folioWriting *{color:transparent!important;text-shadow:none!important}</style>")')
+  await p.wait_for_timeout(150);bg=await p.screenshot()
+  await p.evaluate('document.getElementById("qaHide").remove();document.querySelectorAll("#travelBook .bookSpread .folioWriting").forEach(n=>n.style.removeProperty("color"))')
+  im=Image.open(io.BytesIO(bg)).convert('RGB');fails=[];low=99
+  for t in texts:
+   fg=q.lum(q.parse_rgb(t['color']));x,y,w,h=t['box']
+   crop=im.crop((int(x),int(y),int(x+w)+1,int(y+h)+1))
+   cs=sorted((max(fg,L)+.05)/(min(fg,L)+.05) for L in (q.lum(px) for px in crop.getdata()))
+   c=cs[int(len(cs)*.05)];low=min(low,c)
+   large=t['size']>=24 or (t['size']>=18.66 and t['weight']>=700)
+   if c<(3 if large else 4.5):fails.append({'text':t['t'],'contrast':round(c,2),'size':t['size']})
+  assert not fails,fails
+  await p.evaluate('document.activeElement?.blur?.()');await p.mouse.move(1,1);await p.wait_for_timeout(200)
+  await p.screenshot(path=str(OUT/f'boek-p1-2-{vp}.png'));shots.append('boek-p1-2')
+  return shots,{'texts':len(texts),'lowestContrast':round(low,2)}
  raise SystemExit('unknown point')
 
 async def main(point):

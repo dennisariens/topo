@@ -1,0 +1,20 @@
+/* Ronde 5 (docs/v3/OVERDRACHT.md › Ronde 5). Presentation only; V2 behaviour, keyboard and focus order are unchanged. */
+
+/* 3. Boek, pagina 1 en 2: no cream text plate; the text stands on the parchment itself in a deep sepia ink (AA, measured
+   against the bare parchment by scripts/qa-v3-ronde5.py --point 3). */
+.travelBook .folioWriting:is(.coverFolio,:has(.bookFact)){background:none;border-radius:0;color:#2b1d11}
+.travelBook .folioWriting:is(.coverFolio,:has(.bookFact)) :is(h3,p,span,strong,small,.bookNote){color:inherit}
+.travelBook .folioWriting:is(.coverFolio,:has(.bookFact)) .bookFact{border-bottom-color:#5a412a59}
+.travelBook .folioWriting:is(.coverFolio,:has(.bookFact)) .bookLink{color:#6e1414}
+/* The text stays on the calm parchment: above the painted coast (right page, from ±62 % down) and the balustrade
+   (left page, from ±72 % down). The facts read as one line each, so everything fits above the painting. */
+.travelBook .folioWriting.coverFolio{inset:13% 14% 28% 16%}
+.travelBook .folioWriting:has(.bookFact){inset:12% 13% 38% 15%;gap:6px}
+.travelBook .folioWriting:has(.bookFact)>h3{margin:0 0 2px}
+.travelBook .folioWriting .bookFact{display:flex;align-items:center;gap:10px;padding:5px 0}
+.travelBook .folioWriting .bookFact .factIcon{width:32px;height:32px;flex:none}
+.travelBook .folioWriting .bookFact p{flex-direction:row!important;align-items:baseline;gap:8px!important}
+.travelBook .folioWriting .bookFact strong{font-size:24px!important;line-height:1.1}
+.travelBook .folioWriting:has(.bookFact) .pizzaSaved{margin:4px 0 0;gap:8px}
+.travelBook .folioWriting:has(.bookFact) .pizzaSlot{width:36px;height:36px}
+.travelBook .folioWriting:has(.bookFact) .bookLink{margin-top:2px}

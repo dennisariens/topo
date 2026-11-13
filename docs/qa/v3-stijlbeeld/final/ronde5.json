@@ -318,5 +318,37 @@
       }
     },
     "pass": true
+  },
+  "3": {
+    "previewSha256": "fc722a29d5519cdc85aedbd6899ae88b57bcd849bac19be80a70021dfdc18e76",
+    "runs": {
+      "desktop": {
+        "viewport": [
+          1440,
+          900
+        ],
+        "screens": [
+          "boek-p1-2"
+        ],
+        "detail": {
+          "texts": 13,
+          "lowestContrast": 6.01
+        }
+      },
+      "ipad-liggend": {
+        "viewport": [
+          1080,
+          810
+        ],
+        "screens": [
+          "boek-p1-2"
+        ],
+        "detail": {
+          "texts": 14,
+          "lowestContrast": 5.84
+        }
+      }
+    },
+    "pass": true
   }
 }

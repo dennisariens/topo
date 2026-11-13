@@ -27,7 +27,7 @@ BL-001 branch-inventaris
 - FR-code gepauzeerd tot M1. FR-data, research en art mogen parallel op Codex (OPERATING_MODEL §5, 🟡)
 
 ## Open beslissingen voor Dennis
-1. Domeinnaam kiezen en kopen (voorstel: `ninotopo.nl` + `.com`, beschikbaarheid nog niet gecheckt)
+1. Domein: `ninotopo.nl` wordt gekocht door Dennis (13-11). Internationale domeinstrategie: BL-011
 2. Akkoord op de branch-inventaris (BL-001) voordat er iets verwijderd wordt
 
 ## Bekende risico's

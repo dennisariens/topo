@@ -34,7 +34,7 @@ async def check(p,n,touch):
   await q.play_toets(p)
   assert await p.locator('.v3ToetsMap .v3Landmarks>g').count()==10
   assert await p.evaluate(geometry)==before
-  assert await p.locator('.v3ToetsMap .atlasTerrain').get_attribute('filter')=='url(#v3t-warmRelief)'
+  assert await p.locator('.v3ToetsMap .atlasTerrain').get_attribute('filter')=='url(#v3t-reliefDepth)'  # ronde 5 punt 8: one relief chain for every map
   return 'toetsResult'
  if n==18:
   await act(p,'[data-nav=instellingen]',touch)

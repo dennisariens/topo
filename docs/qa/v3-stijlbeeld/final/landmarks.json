@@ -4,7 +4,7 @@
     "Reis",
     "toetsresultaat"
   ],
-  "previewSha256": "5637495df2fed0ff2e9dfe57fd45cee6dde2c537593bd556bc10c729287297f5",
+  "previewSha256": "28abfced205994ec79becfe5a3e9dfec4a4c664ce33f342067912b0e1042d3c7",
   "indexSha256": "3aced3c31259011b0af2947c78f71965cb4beb2e88c69d1663e61792b0304f5a",
   "sourceCommit": "daa188fad9966329805ed7912d64d2fc221b4dd5",
   "manifestSha256": "49bc053c8745c086097d4346181b1c391ebc6c121d72d65d142921f99a8b3cf9",
@@ -51,7 +51,7 @@
             1440,
             900
           ],
-          "sha256": "6cc59ecf3b352e1193fd37d322dc0aae40542855760f638e6edf1c0cc5ca09e9"
+          "sha256": "c9cc7636603707e38c9bcc37e00257dc420ac4d32522283764a253096fafabd4"
         },
         "toetsResult": {
           "path": "docs/qa/v3-stijlbeeld/final/toetsResult-desktop.png",
@@ -59,7 +59,7 @@
             1440,
             900
           ],
-          "sha256": "c5b051109e8bae44cd04ce1a376ff582fbc748df36d5b426b6023f4494a3451b"
+          "sha256": "38ac041c7d2a503c559ca5eebcdcf32719fd9da8a7560fa7820185f81bb58a05"
         }
       },
       "errors": []
@@ -93,7 +93,7 @@
             1080,
             810
           ],
-          "sha256": "85383c63f72dcae238095d474306fa3877b086deedb472626c536b1d10391f1e"
+          "sha256": "989a9db0a58ccaf9a6de90e7fb145a7d2ee61f3f7c2c15b681393a7a27f47a6a"
         },
         "toetsResult": {
           "path": "docs/qa/v3-stijlbeeld/final/toetsResult-ipad-liggend.png",
@@ -101,7 +101,7 @@
             1080,
             810
           ],
-          "sha256": "170a584dc9ac53a1eb6baf26ab3fdd43b2cc9e95eb46420a53b8007807a12bdd"
+          "sha256": "6d70b05d0e146ea2aad6fdcc8cec86de0a15d73467ff0dbbe2419e4c3b89f790"
         }
       },
       "errors": []

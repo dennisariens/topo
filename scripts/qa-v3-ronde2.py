@@ -49,7 +49,8 @@ async def relief(p,bg):
  palette={x['elevation_m']:x['color'] for x in meta['displayPalette']};assert palette[0]=='#A8C25A' and palette[1700]=='#8A5A3A' and palette[3400]=='#FFFFFF'
  data=await p.evaluate("""()=>{const s=document.querySelector('.v3Map'),f=s.querySelector('filter[id$=reliefDepth]');return {matrix:f.querySelectorAll('feColorMatrix').length,contrast:[...f.querySelectorAll('feFuncR,feFuncG,feFuncB')].map(n=>+n.getAttribute('slope')),image:s.querySelector('.atlasTerrain image').getAttribute('href')};}""")
  import base64
- assert data['matrix']==0 and data['contrast']==[1.3]*3
+ # Ronde 5 punt 8: the sparklier chain (local contrast, contrast 1.12, warm shift; one saturate matrix of 1.15).
+ assert data['matrix']==1 and data['contrast'][:6]==[1.12]*3+[1.05,1.01,.92]
  assert hashlib.sha256(base64.b64decode(data.pop('image').split(',')[1])).hexdigest()==meta['output']['sha256']
  await p.screenshot(path=str(OUT/f'relief-{bg}.png'))
  return {**data,'palette':palette,'sourceDemSha256':meta['rawDemSha256'],'rasterSha256':meta['output']['sha256']}

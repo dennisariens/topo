@@ -75,3 +75,8 @@ body.v3On .vespaRide[data-phase=ride] .v3RideFiat{animation:v3FiatPast 4.2s line
 @keyframes v3FiatPast{from{right:-20%}to{right:110%}}
 @media (prefers-reduced-motion:reduce){body.v3On .vespaRide .v3RideFiat{animation:none!important;right:8%}}
 body.v3On .vespaRide[data-phase=arrived] .v3RideFiat{display:none}
+
+/* 8. Reliëf sprankelender: the warm northwest light blends softly; a gentle gloss on the coast rim. Only with relief on. */
+.v3Map .v3Sun{display:none;mix-blend-mode:soft-light}
+.v3Map[data-relief=on] .v3Sun{display:block}
+.v3Map[data-relief=on] .v3RCoast{filter:drop-shadow(0 0 1px rgba(255,255,255,.8))}

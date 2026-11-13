@@ -138,7 +138,17 @@
   defs.innerHTML='<clipPath id="'+prefix+'italyClip"><path d="'+d+'"/></clipPath>'
    +'<filter id="'+prefix+'isleShadow" x="-20%" y="-20%" width="140%" height="150%"><feDropShadow dx="0" dy="18" stdDeviation="12" flood-color="#2a2440" flood-opacity=".28"/></filter>'
    // Relief depth (afwerking 10-11): saturation 1.15 and a stronger hillshade (contrast around the mid tone).
-   +'<filter id="'+prefix+'reliefDepth" color-interpolation-filters="sRGB"><feComponentTransfer><feFuncR type="linear" slope="1.3" intercept="-.15"/><feFuncG type="linear" slope="1.3" intercept="-.15"/><feFuncB type="linear" slope="1.3" intercept="-.15"/></feComponentTransfer></filter>'
+   // Ronde 5 punt 8 (sprankelender): local contrast (unsharp mask) for a livelier hillshade, a mild global contrast, green
+   // and yellow a little more saturated (1.15, was 0.65 via warmRelief), a light warm shift and lifted highlights (peaks,
+   // snow). Same raster, same geometry; the id stays reliefDepth.
+   +'<filter id="'+prefix+'reliefDepth" color-interpolation-filters="sRGB"><feGaussianBlur in="SourceGraphic" stdDeviation="5" result="soft"/>'
+   +'<feComposite in="SourceGraphic" in2="soft" operator="arithmetic" k1="0" k2="1.55" k3="-.55" k4="0" result="local"/>'
+   +'<feComponentTransfer in="local"><feFuncR type="linear" slope="1.12" intercept="-.04"/><feFuncG type="linear" slope="1.12" intercept="-.04"/><feFuncB type="linear" slope="1.12" intercept="-.04"/></feComponentTransfer>'
+   +'<feColorMatrix type="saturate" values="1.15"/>'
+   +'<feComponentTransfer><feFuncR type="linear" slope="1.05" intercept=".02"/><feFuncG type="linear" slope="1.01" intercept=".01"/><feFuncB type="linear" slope=".92" intercept="0"/></feComponentTransfer>'
+   +'<feComponentTransfer><feFuncR type="table" tableValues="0 .1 .2 .3 .4 .5 .61 .74 .88 1"/><feFuncG type="table" tableValues="0 .1 .2 .3 .4 .5 .61 .74 .88 1"/><feFuncB type="table" tableValues="0 .1 .2 .3 .4 .5 .61 .74 .88 1"/></feComponentTransfer></filter>'
+   // Warm sunlight from the northwest over Italy (soft-light, clipped to the island), a little shade to the southeast.
+   +'<linearGradient id="'+prefix+'sun" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#fff0c8" stop-opacity=".55"/><stop offset=".5" stop-color="#fff" stop-opacity="0"/><stop offset="1" stop-color="#2a2440" stop-opacity=".18"/></linearGradient>'
    +'<radialGradient id="'+prefix+'nbGrad" cx=".5" cy=".5" r=".5"><stop offset=".62" stop-color="#fff"/><stop offset="1" stop-color="#000"/></radialGradient>'
    +'<mask id="'+prefix+'nbFade" maskUnits="userSpaceOnUse"><rect class="v3FadeRect" x="0" y="0" width="890" height="1235" fill="url(#'+prefix+'nbGrad)"/></mask>';
   svg.prepend(defs);
@@ -151,6 +161,9 @@
   for(const n of svg.querySelectorAll('.contextLand,.country:not(.v3Isle)')){const q=document.createElementNS(SVGNS,'path');q.setAttribute('d',n.getAttribute('d')||'');nbg.append(q);}
   const base=document.createElementNS(SVGNS,'path');base.setAttribute('d',d);base.setAttribute('class','v3IsleBase');base.setAttribute('aria-hidden','true');base.setAttribute('pointer-events','none');base.setAttribute('filter','url(#'+prefix+'isleShadow)');
   terrain.setAttribute('filter','url(#'+prefix+'reliefDepth)');
+  // The sun layer: the whole canvas, clipped to Italy's outline, above the relief and below the coast rim (punt 8).
+  const sun=document.createElementNS(SVGNS,'rect');for(const [k,v] of Object.entries({x:0,y:0,width:890,height:1235,fill:'url(#'+prefix+'sun)',class:'v3Sun','aria-hidden':'true','pointer-events':'none','clip-path':'url(#'+prefix+'italyClip)'}))sun.setAttribute(k,v);
+  const coast=svg.querySelector('.v3RCoast');if(coast)coast.before(sun);else terrain.after(sun);
   terrain.before(nbg,base);
   const pins=document.createElementNS(SVGNS,'g');pins.setAttribute('class','v3Pins');pins.setAttribute('aria-hidden','true');pins.setAttribute('pointer-events','none');svg.append(pins);
  }

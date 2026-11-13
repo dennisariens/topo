@@ -152,6 +152,19 @@ async def toets(pg,skips):
  await pg.wait_for_timeout(900)
  return during
 
+# Point 8: the relief before (the previous chain: contrast 1.3, then warmRelief's saturate .65 and warm shift; no sun or gloss)
+# and after, measured on the Italy crop of Reis (pins, landmarks and lifestyle hidden).
+OLD_RELIEF='''()=>{const svg=document.querySelector('.v3MapStage .v3Map'),f=svg.querySelector('filter[id$=reliefDepth]');svg._qaNew=f.innerHTML;
+ f.innerHTML='<feComponentTransfer><feFuncR type="linear" slope="1.3" intercept="-.15"/><feFuncG type="linear" slope="1.3" intercept="-.15"/><feFuncB type="linear" slope="1.3" intercept="-.15"/></feComponentTransfer><feColorMatrix type="saturate" values=".65"/><feComponentTransfer><feFuncR type="linear" slope="1.08" intercept=".035"/><feFuncG type="linear" slope="1" intercept=".015"/><feFuncB type="linear" slope=".88" intercept=".025"/></feComponentTransfer>';
+ svg.querySelector('.v3Sun').style.display='none';svg.querySelector('.v3RCoast').style.filter='none';}'''
+NEW_RELIEF='''()=>{const svg=document.querySelector('.v3MapStage .v3Map');svg.querySelector('filter[id$=reliefDepth]').innerHTML=svg._qaNew;svg.querySelector('.v3Sun').style.display='';svg.querySelector('.v3RCoast').style.filter='';}'''
+def relief_stats(png):
+ import numpy as np
+ im=Image.open(io.BytesIO(png)).convert('RGB');a=np.asarray(im.convert('HSV'),dtype=float)/255;g=np.asarray(im.convert('L'),dtype=float)
+ land=(a[...,1]>.2)&(a[...,0]>.1)&(a[...,0]<.35)
+ lap=np.abs(4*g[1:-1,1:-1]-g[:-2,1:-1]-g[2:,1:-1]-g[1:-1,:-2]-g[1:-1,2:])[land[1:-1,1:-1]]
+ return {'satMean':round(float(a[...,1][land].mean()),3),'satP99':round(float(np.percentile(a[...,1][land],99)),3),'valP99':round(float(np.percentile(a[...,2][land],99)),3),'localContrast':round(float(lap.mean()),2)}
+
 async def act(p,selector,touch=False):
  n=p.locator(selector).filter(visible=True).first
  await (n.tap(timeout=2500) if touch else n.click(timeout=2500))
@@ -333,6 +346,31 @@ async def check(p,n,touch,vp):
   assert await p.evaluate('getComputedStyle(document.querySelector(".vespaRide .v3RideFiat")).animationName')=='none'
   await p.keyboard.press('Escape');await p.emulate_media(reduced_motion='no-preference')
   return shots,{k:{'items':v['items'],'sizes':v['sizes']} for k,v in out.items() if isinstance(v,dict)}|{'goldChecked':out.get('goldChecked',False)}
+ if n==8:
+  geometry='() => [...document.querySelectorAll("#map [data-id]")].map(n=>[n.dataset.id,n.getAttribute("d"),n.getAttribute("cx"),n.getAttribute("cy")])'
+  before_geo=await p.evaluate(geometry)
+  await p.evaluate(FRAME,'city2')
+  # Same rasters (terrain, coast, sea, shadow) as their provenance; the snow is part of the terrain raster.
+  hrefs=await p.evaluate('()=>{const s=document.querySelector(".v3MapStage .v3Map");return {terrain:s.querySelector(".atlasTerrain image").getAttribute("href"),...Object.fromEntries(["Coast","Sea","Shadow"].map(k=>[k.toLowerCase(),s.querySelector(".v3R"+k).getAttribute("href")]))}}')
+  assert hrefs==await p.evaluate('({terrain:TOPO_V3_RELIEF.terrain,coast:TOPO_V3_RELIEF.coast,sea:TOPO_V3_RELIEF.sea,shadow:TOPO_V3_RELIEF.shadow})')
+  chain=await p.evaluate('()=>{const s=document.querySelector(".v3MapStage .v3Map"),t=s.querySelector(".atlasTerrain"),sun=s.querySelector(".v3Sun");return {filter:t.getAttribute("filter"),sat:s.querySelector("filter[id$=reliefDepth] feColorMatrix")?.getAttribute("values"),warm:!!s.querySelector("filter[id$=warmRelief]"),sun:!!sun&&getComputedStyle(sun).mixBlendMode==="soft-light"&&getComputedStyle(sun).display!=="none"&&sun.getAttribute("clip-path")==="url(#v3m-italyClip)"}}')
+  assert chain=={'filter':'url(#v3m-reliefDepth)','sat':'1.15','warm':False,'sun':True},chain
+  await p.evaluate('document.querySelectorAll(".v3MapStage .v3Map :is(.v3Pins,.v3Landmarks,.v3Lifestyle)").forEach(n=>n.style.display="none")');await p.mouse.move(1,1)
+  box=await p.evaluate('(()=>{const b=document.querySelector(".v3MapStage .v3Map .italy").getBoundingClientRect();return {x:b.left-10,y:b.top-10,width:b.width+20,height:b.height+20}})()')
+  await p.evaluate(OLD_RELIEF);await p.wait_for_timeout(250);old=await p.screenshot(clip=box)
+  await p.evaluate(NEW_RELIEF);await p.wait_for_timeout(250);new=await p.screenshot(clip=box)
+  so,sn=relief_stats(old),relief_stats(new)
+  # Livelier and more saturated, highlights lifted, never neon.
+  assert sn['satMean']>=so['satMean']+.08 and sn['localContrast']>=1.2*so['localContrast'] and sn['valP99']>=so['valP99'] and sn['satP99']<=.75,(so,sn)
+  assert await p.evaluate(geometry)==before_geo
+  a,b2=Image.open(io.BytesIO(old)).convert('RGB'),Image.open(io.BytesIO(new)).convert('RGB')
+  r=Image.open(ROOT/'docs/v3/renders/R-reis-ijk.webp').convert('RGB').crop((820,80,1400,770));h=max(a.height,b2.height);r=r.resize((round(r.width*h/r.height),h))
+  c=Image.new('RGB',(a.width+b2.width+r.width+48,h+16),(246,244,250));x=8
+  for im in (a,b2,r):c.paste(im,(x,8));x+=im.width+16
+  c.save(OUT/f'relief-vergelijking-{vp}.png');shots.append('relief-vergelijking (voor | na | R-reis-ijk)')
+  await p.evaluate('document.querySelectorAll(".v3MapStage .v3Map :is(.v3Pins,.v3Landmarks,.v3Lifestyle)").forEach(n=>n.style.display="")')
+  await p.screenshot(path=str(OUT/f'reis-{vp}.png'));shots.append('reis')
+  return shots,{'before':so,'after':sn}
  raise SystemExit('unknown point')
 
 async def main(point):

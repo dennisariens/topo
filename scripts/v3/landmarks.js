@@ -5,15 +5,7 @@ window.TopoV3Landmarks=function(svg,k){
  if(!art||!svg.matches('.v3MapStage .v3Map,.v3ToetsMap'))return;
  const NS='http://www.w3.org/2000/svg',make=(tag,attrs)=>{const n=document.createElementNS(NS,tag);for(const [key,value] of Object.entries(attrs))n.setAttribute(key,String(value));return n;};
  svg.classList.add('v3LandmarkMap');
- // Compose the existing depth transform with a gentle warm, less green palette. Only the raster is filtered.
- const depth=svg.querySelector('filter[id$="reliefDepth"]');
- if(depth&&!svg.querySelector('filter[id$="warmRelief"]')){
-  const warm=depth.cloneNode(true);warm.id=depth.id.replace('reliefDepth','warmRelief');
-  warm.append(make('feColorMatrix',{type:'saturate',values:.65}));
-  const temperature=make('feComponentTransfer',{});
-  for(const [tag,slope,intercept] of [['R',1.08,.035],['G',1,.015],['B',.88,.025]])temperature.append(make('feFunc'+tag,{type:'linear',slope,intercept}));
-  warm.append(temperature);depth.after(warm);svg.querySelector('.atlasTerrain')?.setAttribute('filter','url(#'+warm.id+')');
- }
+ // Ronde 5 punt 8: the relief look lives in reliefDepth (reis.js) for every map; no separate warm/desaturated copy here.
  // Ronde 4: landmarks below every pin and mark layer; the pin stays on top.
  let g=svg.querySelector('.v3Landmarks');if(!g)g=make('g',{class:'v3Landmarks','aria-hidden':'true','pointer-events':'none'});
  svg.insertBefore(g,svg.querySelector(':scope>.v3Pins,:scope>.v3Marks'));

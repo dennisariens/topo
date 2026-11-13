@@ -15,3 +15,16 @@ Op Reis staan alleen de landmarks van het actieve hoofdstuk (`assets/v3/landmark
 | Rivieren | Colosseum (Rome aan de Tiber) | Tiber (Engelenburcht met brug), Po (brug of rivierboot) |
 
 Eilanden en Vulkanen zijn compleet (Etna, Nuraghe; Vesuvius, Etna).
+
+## Besluit van de lead designer (13-11)
+
+Niet elk hoofdstuk heeft een eigen landmark nodig. Eén of twee herkenbare beelden per hoofdstuk zijn genoeg; waar die ontbreken, vullen de basisset en de lifestyle-iconen aan. Er komen er alleen **zes** bij, waar ze iets leren of een hoofdstuk anders leeg blijft:
+
+1. Bologna: Due Torri (Steden 1–6)
+2. Turijn: Mole Antonelliana (Steden 7–12)
+3. Verona: Arena (Steden 7–12)
+4. Vaticaanstad: Sint-Pieter (Landen)
+5. San Marino: drie torens op de rots (Landen)
+6. Rome aan de Tiber: Engelenburcht met brug (Rivieren)
+
+De rest van de lijst hierboven vervalt: Extra steden, Bergen, Streken en Zeeën gebruiken de basisset en de lifestyle-iconen, en de buurlanden krijgen geen eigen beeld.

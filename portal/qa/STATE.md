@@ -33,3 +33,25 @@ A **previous ZIP-based modular variant**, with local mock images and a mocked lo
 8. Owner visual acceptance.
 
 **Status: QA PARTIAL — NOT REVIEW_READY. No merge or deployment authorized.**
+
+## R3 refinement pass — 13 November 2026
+**Owner feedback:** design is calm and premium, but must feel more inviting; logo Vespa appears oversized vs wordmark, divider too subtle, hero Nino repeats the logo and looks younger than desired.
+
+**Implemented in portal code**
+- CTA hover now reacts to card hover with understated elevation, deeper lavender and +3px arrow movement; respects reduced-motion.
+- Root cause of synchronized teaser hovers corrected: previously `.future:hover` matched the shared `div.grid.future` container **and** individual cards. Selectors are now scoped to `.country.future:hover` only.
+- Coming-soon visuals retain gentle color and are less fogged while still distinct from open destinations.
+- Official 4:3 SVG flags now sit inside a subtle rounded capsule instead of exposed rectangles.
+- The existing R2 side-view Vespa is the favicon candidate (WebP); native 16/32/48px checked exports remain in the asset task.
+- The subtitle is now invitation-led: “Kies een land, ontdek bijzondere plekken en leer de kaart kennen.”
+- White normal-text contrast on brand `#9781D5` is about 3.27:1 (below AA 4.5:1). The primary CTA now uses dark lavender `#7B66B7` (~4.74:1) and hover `#6A539F` (~6.27:1); brand lavender stays an accent.
+- Automated static regression assertions added to `portal/qa/verify.mjs` for selective hover, CTA color contrast, vector flag capsules and side-view favicon binding.
+
+**Awaiting owner-approved source artwork (not coded around)**
+- R3 logo internal proportions, separator and TOPO optical alignment.
+- Separate Nino-welcome illustration with a slightly older, more confident age impression, still unmistakably canonical.
+- Tiny-size quality checked favicon raster exports.
+
+**See:** `portal/docs/FINAL-REFINEMENT-BRIEF.md` and `portal/docs/ARTWORK-R3-PROMPTS.md`.
+
+**Gate status:** Static code and asset mapping updates completed; exact real-R2 screenshot review on desktop, tablet and mobile, functional browser verification and owner approval still outstanding. No merge or production release.

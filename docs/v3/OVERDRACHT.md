@@ -298,3 +298,13 @@ Toelichting bij punt 9 (melding bij nieuwe post):
 - De coördinaten van de lifestyle-plekken Rimini en de kust bij Napels (Sorrento) zijn niet geverifieerd.
 - De test op een fysieke iPad 9.
 - Assetdieet stap 4–7 blijft geparkeerd (`95d5199`).
+
+### Review ronde 5, punt 8–9 (lead designer, 13-11)
+- **Punt 9, melding bij nieuwe post:** akkoord (glaskaartje, stip op Beloningen, opent het boek bij de postkaart).
+- **Punt 8, reliëf:** voorlopig akkoord. Het is een verbetering, maar haalt het doelbeeld niet. Volgt in een eigen pakket: `docs/v3/RELIEF_RENDER.md`.
+- **Volgorde vanaf nu, één agent tegelijk:**
+  1. 5B punt 10–12 (Claude Code);
+  2. de reliëf-render (`RELIEF_RENDER.md`);
+  3. de release-build (`v3/release-build`, de opdracht staat in de chat);
+  4. de eindtest door Hermes en de iPad-test op de release-build;
+  5. het akkoord van de eigenaar.

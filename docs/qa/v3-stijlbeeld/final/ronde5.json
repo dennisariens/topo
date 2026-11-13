@@ -1,0 +1,136 @@
+{
+  "1": {
+    "previewSha256": "b5dcd6c3f6a8e91cfc59073fc44f93c079347cea8ec2d1f9e08a73bdfe28e2e6",
+    "runs": {
+      "desktop": {
+        "viewport": [
+          1440,
+          900
+        ],
+        "screens": [
+          "reis",
+          "reis-omgeving"
+        ],
+        "detail": {
+          "bezig": {
+            "italy": {
+              "id": "city1",
+              "frame": "italy",
+              "viewBox": "-88.5 173.4 1107.3 1157.3",
+              "italyH": 448,
+              "italyW": 365,
+              "clearOfCard": true,
+              "inStage": true,
+              "stageH": 648,
+              "stageW": 620,
+              "freeH": 484
+            },
+            "omgeving": {
+              "id": "countries",
+              "frame": "omgeving",
+              "viewBox": "-654.6 -158.3 1699.8 1776.6",
+              "italyH": 292,
+              "italyW": 238,
+              "clearOfCard": true,
+              "inStage": true,
+              "stageH": 648,
+              "stageW": 620,
+              "freeH": 484
+            }
+          },
+          "alles": {
+            "italy": {
+              "id": "city1",
+              "frame": "italy",
+              "viewBox": "-127.7 173.4 1185.7 1239.2",
+              "italyH": 419,
+              "italyW": 341,
+              "clearOfCard": true,
+              "inStage": true,
+              "stageH": 648,
+              "stageW": 620,
+              "freeH": 452
+            },
+            "omgeving": {
+              "id": "countries",
+              "frame": "omgeving",
+              "viewBox": "-714.8 -158.3 1820.2 1902.4",
+              "italyH": 273,
+              "italyW": 222,
+              "clearOfCard": true,
+              "inStage": true,
+              "stageH": 648,
+              "stageW": 620,
+              "freeH": 452
+            }
+          }
+        }
+      },
+      "ipad-liggend": {
+        "viewport": [
+          1080,
+          810
+        ],
+        "screens": [
+          "reis",
+          "reis-omgeving"
+        ],
+        "detail": {
+          "bezig": {
+            "italy": {
+              "id": "city1",
+              "frame": "italy",
+              "viewBox": "-151.6 173.4 1233.5 1494",
+              "italyH": 300,
+              "italyW": 244,
+              "clearOfCard": true,
+              "inStage": true,
+              "stageH": 560,
+              "stageW": 462,
+              "freeH": 324
+            },
+            "omgeving": {
+              "id": "countries",
+              "frame": "omgeving",
+              "viewBox": "-751.5 -158.3 1893.6 2293.5",
+              "italyH": 195,
+              "italyW": 159,
+              "clearOfCard": true,
+              "inStage": true,
+              "stageH": 560,
+              "stageW": 462,
+              "freeH": 324
+            }
+          },
+          "alles": {
+            "italy": {
+              "id": "city1",
+              "frame": "italy",
+              "viewBox": "-221.5 173.4 1373.3 1663.4",
+              "italyH": 269,
+              "italyW": 220,
+              "clearOfCard": true,
+              "inStage": true,
+              "stageH": 560,
+              "stageW": 462,
+              "freeH": 291
+            },
+            "omgeving": {
+              "id": "countries",
+              "frame": "omgeving",
+              "viewBox": "-858.9 -158.3 2108.3 2553.6",
+              "italyH": 176,
+              "italyW": 143,
+              "clearOfCard": true,
+              "inStage": true,
+              "stageH": 560,
+              "stageW": 462,
+              "freeH": 291
+            }
+          }
+        }
+      }
+    },
+    "pass": true
+  }
+}

@@ -69,7 +69,7 @@
  const listTitle=make('h2','v3SrOnly','Hoofdstukken');listTitle.id='v3ListTitle';const rows=make('ol','v3Rows');list.append(screenTitle,listTitle,rows);
  const main=make('section','v3Main');main.setAttribute('aria-labelledby','v3Title');
  const top=make('div','v3Top'),panel=make('div','v3Panel'),stage=make('div','v3MapStage');
- main.append(top,stage,panel);
+ main.append(top,stage,panel);const livePanel=panel;
  // Beloningen (richting B): a calm frame around the rich Reisboekje; counts come from the V2 state.
  const rewardsView=make('section','v3Rewards');rewardsView.setAttribute('aria-labelledby','v3RewardsTitle');
  // Further V3 views (Oefenen, Toets, Voortgang) share this window; shell.js fills them.
@@ -119,6 +119,9 @@
   const set=new Set(c?c.itemIds:[]);
   mapClone.querySelectorAll('[data-id]').forEach(n=>n.classList.toggle('v3Hit',set.has(n.getAttribute('data-id'))));
   mapClone.dataset.focus=c?(c.itemIds[0]?.startsWith('city')?'points':'areas'):'';
+  // Ronde 5 punt 1: two fixed frames, one scale. Italy (with Sicily and Sardinia) for every chapter; only the chapters
+  // whose items lie beyond Italy (OMGEVING: Landen, Zeeën) zoom out to "Italië en omgeving".
+  mapClone.dataset.frame=c&&OMGEVING.includes(c.id)?'omgeving':'italy';
   reserve();fit(mapClone);
  }
  /* Variant (a) Eiland: decoration layers on the Reis clone only (aria-hidden, no pointer events, no data-id; the
@@ -161,10 +164,12 @@
  }
  // Frame Italy and the chapter's places with a generous margin, then widen the frame to the stage's shape
  // inside the map canvas (890×1235), so neighbouring countries, seas and islands stay visible as reference.
- const CANVAS={w:890,h:1235},MARGIN=.14;
+ const CANVAS={w:890,h:1235},MARGIN=.14,OMGEVING=['countries','seas'];
  function fit(svg){
   try{
-   const parts=[...svg.querySelectorAll(svg.dataset.frame==='italy'?'.italy,.v3Isle':'.italy,.v3Hit')];if(!parts.length)return;
+   const fr0=svg.dataset.frame,parts=[...svg.querySelectorAll(fr0==='italy'||fr0==='omgeving'?'.italy,.v3Isle':'.italy,.v3Hit')];if(!parts.length)return;
+   // "Italië en omgeving": Italy plus every item of the OMGEVING chapters (neighbouring countries and seas), whichever is selected.
+   if(fr0==='omgeving')for(const id of ROUTE_CHAPTERS.filter(c=>OMGEVING.includes(c.id)).flatMap(c=>c.itemIds))svg.querySelectorAll('[data-id="'+id+'"]').forEach(n=>parts.push(n));
    let x0=Infinity,y0=Infinity,x1=-Infinity,y1=-Infinity;
    for(const p of parts){const b=p.getBBox();if(!b.width&&!b.height&&p.tagName!=='circle')continue;x0=Math.min(x0,b.x);y0=Math.min(y0,b.y);x1=Math.max(x1,b.x+b.width);y1=Math.max(y1,b.y+b.height);}
    if(!isFinite(x0))return;
@@ -177,11 +182,21 @@
     // over the map's bottom (Reis, afwerking 10-11) reserves --v3-fit-bottom px: Italy fits in the box above it.
     const r=svg.getBoundingClientRect(),fr=svg.querySelector('.v3FadeRect'),mk=fr?.parentNode,res=Math.min(r.height*.5,parseFloat(getComputedStyle(svg).getPropertyValue('--v3-fit-bottom'))||0);
     if(r.width&&r.height){const w=x1-x0,h=y1-y0,k=Math.max(w/r.width,h/(r.height-res)),bw=r.width*k,bh=r.height*k,bx=x0-(bw-w)/2,by=y0-((r.height-res)*k-h)/2;
-     svg.setAttribute('viewBox',[bx,by,bw,bh].map(v=>Math.round(v*10)/10).join(' '));
-     if(fr)for(const n of [fr,mk])for(const [a,v] of [['x',bx],['y',by],['width',bw],['height',bh]])n.setAttribute(a,v);
-     // The land's drop shadow in screen px (afwerking 10-11: 0 18px 24px rgba(42,36,64,.28)), in map units.
-     const ds=svg.querySelector('filter[id$="isleShadow"] feDropShadow');if(ds){ds.setAttribute('dy',(18*k).toFixed(1));ds.setAttribute('stdDeviation',(12*k).toFixed(1));}
-     drawPins(svg,k);window.TopoV3Landmarks?.(svg,k);}return;}
+     const box=v=>{svg._v3Shown=v;svg.setAttribute('viewBox',v.map(n=>Math.round(n*10)/10).join(' '));if(fr)for(const n of [fr,mk])['x','y','width','height'].forEach((a,i)=>n.setAttribute(a,v[i]));};
+     const settle=()=>{box([bx,by,bw,bh]);
+      // The land's drop shadow in screen px (afwerking 10-11: 0 18px 24px rgba(42,36,64,.28)), in map units.
+      const ds=svg.querySelector('filter[id$="isleShadow"] feDropShadow');if(ds){ds.setAttribute('dy',(18*k).toFixed(1));ds.setAttribute('stdDeviation',(12*k).toFixed(1));}
+      drawPins(svg,k);window.TopoV3Landmarks?.(svg,k);};
+     // A change between the two fixed frames glides (±450 ms); a refit within one frame, or reduced motion, is immediate.
+     // A refit during a glide (the card's resize) keeps gliding, from the box shown now, within the same 450 ms.
+     const kind=svg.dataset.frame||'',calm=matchMedia('(prefers-reduced-motion: reduce)').matches,busy=svg.dataset.gliding==='1'&&!calm;
+     const glide=busy||svg._v3Box&&svg._v3Kind&&svg._v3Kind!==kind&&!calm,from=svg._v3Shown||svg._v3Box;
+     cancelAnimationFrame(svg._v3Tween||0);svg._v3Box=[bx,by,bw,bh];svg._v3Kind=kind;
+     if(!glide){delete svg.dataset.gliding;settle();}
+     else{const t0=busy?svg._v3T0:performance.now(),to=svg._v3Box,ease=t=>t<.5?2*t*t:1-Math.pow(-2*t+2,2)/2,base=busy?svg._v3From:from;svg._v3T0=t0;svg._v3From=base;svg.dataset.gliding='1';
+      const step=now=>{const t=Math.min(1,(now-t0)/450);if(t<1){const e=ease(t);box(base.map((v,i)=>v+(to[i]-v)*e));svg._v3Tween=requestAnimationFrame(step);}else{delete svg.dataset.gliding;settle();}};
+      svg._v3Tween=requestAnimationFrame(step);}}
+    return;}
    const pad=Math.max(x1-x0,y1-y0)*MARGIN;x0=Math.max(0,x0-pad);y0=Math.max(0,y0-pad);x1=Math.min(CANVAS.w,x1+pad);y1=Math.min(CANVAS.h,y1+pad);
    // Match the stage aspect ratio by growing the shorter side, centred and clamped to the canvas.
    // Measure the free stage (any size set by an earlier fit is released first).
@@ -201,7 +216,13 @@
  }
  // The stage size changes with the layout (rotation, sidebar width): refit on resize.
  // The chapter card lies over the map's bottom where the CSS says so (--v3-card-over: 1): the map keeps it free.
- const reserve=()=>{const over=getComputedStyle(stage).getPropertyValue('--v3-card-over').trim()==='1';stage.style.setProperty('--v3-fit-bottom',over?Math.round(panel.getBoundingClientRect().height+24)+'px':'0px');};
+ // Ronde 5 punt 1: the reserve is the tallest card of any chapter in the current state (measured in a hidden copy, so focus
+ // and the live card stay put), so switching chapters never changes the map's scale.
+ const reserve=()=>{const over=getComputedStyle(stage).getPropertyValue('--v3-card-over').trim()==='1';
+  let hMax=0;if(over){const m=model(),probe=panel.cloneNode(false);probe.removeAttribute('id');probe.setAttribute('aria-hidden','true');probe.inert=true;
+   Object.assign(probe.style,{position:'absolute',visibility:'hidden',pointerEvents:'none',left:'0',top:'0',width:panel.getBoundingClientRect().width+'px'});panel.after(probe);
+   try{for(const c of m.chapters){renderPanel(m,c,probe);hMax=Math.max(hMax,probe.getBoundingClientRect().height);}}finally{probe.remove();}}
+  stage.style.setProperty('--v3-fit-bottom',over?Math.round(Math.max(hMax,panel.getBoundingClientRect().height)+24)+'px':'0px');};
  if('ResizeObserver' in window){const ro=new ResizeObserver(()=>{reserve();if(mapClone)fit(mapClone);});ro.observe(stage);ro.observe(panel);}
 
  // Top of the map column: the map tools (Schoolblad, Schoolkaart | Reliëf) left, the counters right with line icons.
@@ -244,10 +265,10 @@
 
  // The chapter card (R-reis-ijk): title, three step dots, one pill; replays quietly below. No scene header (the rows
  // carry the scenes).
- function renderPanel(m,c){
+ function renderPanel(m,c,panel=livePanel){
   panel.replaceChildren();if(!c)return;
   // tabindex -1: on phone, focus moves here after choosing a chapter (Hermes V3-03).
-  const h=make('h2','v3CardTitle');h.id='v3Title';h.tabIndex=-1;
+  const h=make('h2','v3CardTitle');if(panel===livePanel)h.id='v3Title';h.tabIndex=-1;
   h.append(make('span','v3SrOnly','Hoofdstuk '+(c.index+1)+': '),range(c.title));
   const head=make('div','v3CardHead');head.append(h);
   const segs=make('div','v3StageBar');segs.setAttribute('role','list');segs.setAttribute('aria-label','Lessen');

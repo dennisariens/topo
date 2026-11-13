@@ -17,6 +17,7 @@
 - Removed unproductive tabindex stops from disabled/future cards.
 - R2 palette and soft lavender status badges preserved.
 - Deterministic `node portal/qa/verify.mjs` check added.
+- Replaced approximate CSS flags with the 4×3 ISO-country vector flags from MIT-licensed lipis/flag-icons, including the Spanish coat of arms and bundled LICENSE.
 
 ## Local browser exercise — limited scope
 A **previous ZIP-based modular variant**, with local mock images and a mocked logo (not the exact GitHub commit), was exercised using Chromium `page.set_content` at 1440×900, 820×1180, 390×844 and 320×720. It showed five country cards, ten image elements, no overlap or horizontal overflow and no JS page errors. The exercise helped identify the previous left-gutter overlap. **These screenshots are NOT production-R2 screenshot evidence and do not validate the final GitHub layout.**
@@ -26,7 +27,7 @@ A **previous ZIP-based modular variant**, with local mock images and a mocked lo
 2. Header-size LOGO-01/02 visual review (canonical raster is embedded in SVG).
 3. Hover transitions and image crops tested with the original R2 image bytes across all five pairs.
 4. Keyboard, touch, reduced-motion, VoiceOver and Safari coverage on the final artifact.
-5. Spanish flag: CSS striping omits the official coat of arms; replace with reviewed high-fidelity vector flags before final visual signoff.
+5. Vector flag integration complete; still verify legibility/alignment at actual card size in final browser review.
 6. Public-domain route contract: Italy `../index.html` is valid within repo hosting but must be remapped if the portal is deployed at domain root; France entry remains unavailable.
 7. Ensure no 404s, CSP conflicts or loading regressions in a real hosted preview.
 8. Owner visual acceptance.

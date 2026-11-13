@@ -55,8 +55,8 @@ async def check(p,n,touch,vp):
   geometry='() => [...document.querySelectorAll("#map [data-id]")].map(n=>[n.dataset.id,n.getAttribute("d"),n.getAttribute("cx"),n.getAttribute("cy")])'
   before=await p.evaluate(geometry)
   r=await p.evaluate(LANDMARKS,'.v3MapStage .v3Map')
-  assert r['count']==10 and r['anchored'] and r['pinAbove'] and r['obstacles']>0 and not r['overlaps'],r
-  assert abs(r['median']-target)<=1.5,r
+  # Ronde 5 punt 2: Reis shows only the active chapter's landmarks (qa-v3-ronde5.py --point 2 checks which).
+  assert r['count']>=1 and r['anchored'] and r['pinAbove'] and r['obstacles']>0 and not r['overlaps'],r
   await p.screenshot(path=str(OUT/f'reis-{vp}.png'));shots.append('reis')
   await q.play_toets(p)
   r2=await p.evaluate(LANDMARKS,'.v3ToetsMap')

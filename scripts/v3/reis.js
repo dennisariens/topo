@@ -122,6 +122,7 @@
   // Ronde 5 punt 1: two fixed frames, one scale. Italy (with Sicily and Sardinia) for every chapter; only the chapters
   // whose items lie beyond Italy (OMGEVING: Landen, Zeeën) zoom out to "Italië en omgeving".
   mapClone.dataset.frame=c&&OMGEVING.includes(c.id)?'omgeving':'italy';
+  if(c)mapClone.dataset.chapter=c.id;else delete mapClone.dataset.chapter;
   reserve();fit(mapClone);
  }
  /* Variant (a) Eiland: decoration layers on the Reis clone only (aria-hidden, no pointer events, no data-id; the

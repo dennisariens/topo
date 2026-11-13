@@ -20,6 +20,14 @@ FRAME='''async id=>{
   freeH:Math.round(st.height-parseFloat(getComputedStyle(document.querySelector('.v3Reis .v3MapStage')).getPropertyValue('--v3-fit-bottom')))};
 }'''
 
+# Point 2: the landmarks drawn on Reis and any overlap with a pin or mark.
+LANDMARKS='''()=>{const svg=document.querySelector('.v3MapStage .v3Map'),items=TOPO_V3.art.landmarks.items,ids=[],lm=[];
+ for(const g of svg.querySelectorAll('.v3Landmarks>g')){const a=items.find(i=>i.id===g.dataset.landmark),img=g.querySelector('image'),e=a.exports[img.dataset.exportSize];
+  const r=img.getBoundingClientRect(),s=r.width/e.size[0],[l,t,rr,bb]=e.paintBounds;ids.push(a.id);lm.push({left:r.left+l*s,top:r.top+t*s,right:r.left+rr*s,bottom:r.top+bb*s});}
+ const ob=[...svg.querySelectorAll('.v3Pin,.v3Mark>circle,.v3MarkName')].map(n=>n.getBoundingClientRect());
+ const overlaps=[];lm.forEach((a,i)=>ob.forEach(b=>{if(a.left<b.right&&b.left<a.right&&a.top<b.bottom&&b.top<a.bottom)overlaps.push(ids[i]);}));
+ return {ids,set:svg.dataset.landmarkSet||'',overlaps};}'''
+
 async def check(p,n,touch,vp):
  shots=[]
  if n==1:
@@ -49,6 +57,22 @@ async def check(p,n,touch,vp):
   await p.screenshot(path=str(OUT/f'reis-{vp}.png'));shots.append('reis')
   await p.evaluate(FRAME,'countries');await p.mouse.move(1,1);await p.wait_for_timeout(300)
   await p.screenshot(path=str(OUT/f'reis-omgeving-{vp}.png'));shots.append('reis-omgeving')
+  return shots,out
+ if n==2:
+  loc=json.loads((ROOT/'assets/v3/landmarks/locations.json').read_text());out={}
+  for cid,items in await p.evaluate('ROUTE_CHAPTERS.map(c=>[c.id,c.itemIds])'):
+   await p.evaluate(FRAME,cid)
+   r=await p.evaluate(LANDMARKS)
+   want={k for k,v in loc['items'].items() if set(v['relevantItems'])&set(items)}
+   kind='chapter' if want else 'basis';want=want or set(loc['relevance']['basisSet'])
+   assert set(r['ids'])==want and r['set']==kind and not r['overlaps'],(cid,r,want)
+   assert kind=='chapter' or len(want)<=4
+   out[cid]={'landmarks':sorted(r['ids']),'set':kind}
+  await p.evaluate(FRAME,'volcanoes');await p.evaluate('document.activeElement?.blur?.()');await p.mouse.move(1,1);await p.wait_for_timeout(300)
+  await p.screenshot(path=str(OUT/f'reis-{vp}.png'));shots.append('reis')
+  # Toets resultaat (no chapter) keeps all ten.
+  await q.play_toets(p)
+  assert await p.evaluate('document.querySelectorAll(".v3ToetsMap .v3Landmarks>g").length')==10
   return shots,out
  raise SystemExit('unknown point')
 

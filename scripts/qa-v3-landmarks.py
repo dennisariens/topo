@@ -73,13 +73,14 @@ def check_pipeline():
     return manifest, active, expected
 
 
-async def map_check(page, selector, active, expected, export_size):
+async def map_check(page, selector, active, expected, export_size, ids=None):
     svg = page.locator(selector)
     nodes = await svg.locator('.v3Landmarks>g').evaluate_all('''nodes=>nodes.map(n=>{
       const img=n.querySelector('image');return {id:n.dataset.landmark,transform:n.getAttribute('transform'),
         href:img.getAttribute('href'),size:img.dataset.exportSize,pointer:getComputedStyle(n.parentNode).pointerEvents,
         hidden:n.parentNode.getAttribute('aria-hidden')};})''')
-    assert {n['id'] for n in nodes} == set(expected)
+    ids = set(expected) if ids is None else ids
+    assert {n['id'] for n in nodes} == ids
     for node in nodes:
         position = re.match(r'translate\(([^ ]+) ([^)]+)\)', node['transform'])
         assert position and all(math.isclose(float(position[i+1]), v, abs_tol=1e-8) for i, v in enumerate(expected[node['id']]))
@@ -101,7 +102,7 @@ async def map_check(page, selector, active, expected, export_size):
       }return overlap;}''')
     assert not overlaps, overlaps
     assert await page.locator('#map .v3Landmarks').count() == 0
-    return {'landmarks': 10, 'exactProjectedCoordinates': True, 'exportSize': export_size,
+    return {'landmarks': len(ids), 'exactProjectedCoordinates': True, 'exportSize': export_size,
             'decoded': True, 'paintBoundsDoNotOverlap': True, 'learningMapUndecorated': True}
 
 
@@ -128,7 +129,11 @@ async def main():
             geometry = '()=>[...document.querySelectorAll("#map [data-id]")].map(n=>[n.dataset.id,n.getAttribute("d"),n.getAttribute("cx"),n.getAttribute("cy")])'
             before = await page.evaluate(geometry)
             await page.evaluate('TopoV3Landmarks(document.querySelector("#map"),1)')
-            reis = await map_check(page, '.v3MapStage .v3Map', active, expected, 128*dpr)
+            # Ronde 5 punt 2: Reis shows the active chapter's landmarks (locations.json relevantItems) or the basis set.
+            chapter = await page.evaluate('(()=>{const c=ROUTE_CHAPTERS.find(c=>c.id===TOPO_V3.ui.selected);return c.itemIds})()')
+            relevance = json.loads((ROOT/'assets/v3/landmarks/locations.json').read_text())
+            shown = {k for k, v in relevance['items'].items() if set(v['relevantItems']) & set(chapter)} or set(relevance['relevance']['basisSet'])
+            reis = await map_check(page, '.v3MapStage .v3Map', active, expected, 128*dpr, shown)
             for value in ('false', 'true'):
                 button = page.locator(f'.v3MapTools [data-relief={value}]')
                 await (button.tap() if dpr==2 else button.click())

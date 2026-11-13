@@ -1,6 +1,6 @@
 {
   "1": {
-    "previewSha256": "28348d719162764a2f173d5e3064c3e1a7ccefe108e98f303b960df5b7b895bc",
+    "previewSha256": "2575a4bbfabd223633939b207812d942c3b88d4c6f01735fb9a1fba23659724b",
     "runs": {
       "desktop": {
         "viewport": [
@@ -13,10 +13,10 @@
         ],
         "detail": {
           "reis": {
-            "count": 10,
+            "count": 3,
             "anchored": true,
             "overlaps": [],
-            "median": 40,
+            "median": 39.1,
             "obstacles": 6,
             "pinAbove": true
           },
@@ -41,10 +41,10 @@
         ],
         "detail": {
           "reis": {
-            "count": 10,
+            "count": 3,
             "anchored": true,
             "overlaps": [],
-            "median": 34,
+            "median": 33.2,
             "obstacles": 6,
             "pinAbove": true
           },

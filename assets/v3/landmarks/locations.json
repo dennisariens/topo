@@ -64,7 +64,11 @@
           ]
         }
       },
-      "note": "Monument location, not Rome city centre."
+      "note": "Monument location, not Rome city centre.",
+      "relevantItems": [
+        "city-9",
+        "water-F"
+      ]
     },
     "TOPO_02": {
       "feature": "Leaning Tower of Pisa",
@@ -101,7 +105,11 @@
           "rank": "normal"
         }
       },
-      "note": "Bell tower location, not Pisa city centre."
+      "note": "Bell tower location, not Pisa city centre.",
+      "relevantItems": [
+        "city-8",
+        "area-h"
+      ]
     },
     "TOPO_03": {
       "canonicalItemId": "area-e",
@@ -109,7 +117,11 @@
         "dataset": "Existing canonical ITEMS / Smithsonian GVP",
         "url": "https://volcano.si.edu/volcano.cfm?vn=211020"
       },
-      "note": "Resolve the existing WGS84 volcano coordinate from the canonical item; do not maintain a second coordinate copy."
+      "note": "Resolve the existing WGS84 volcano coordinate from the canonical item; do not maintain a second coordinate copy.",
+      "relevantItems": [
+        "area-e",
+        "city-6"
+      ]
     },
     "TOPO_04": {
       "canonicalItemId": "area-f",
@@ -117,7 +129,12 @@
         "dataset": "Existing canonical ITEMS / Smithsonian GVP",
         "url": "https://volcano.si.edu/volcano.cfm?vn=211060"
       },
-      "note": "Resolve the existing WGS84 volcano coordinate from the canonical item; do not maintain a second coordinate copy."
+      "note": "Resolve the existing WGS84 volcano coordinate from the canonical item; do not maintain a second coordinate copy.",
+      "relevantItems": [
+        "area-f",
+        "area-a",
+        "city-15"
+      ]
     },
     "TOPO_05": {
       "feature": "Canal Grande bij Rialto, Venezia",
@@ -180,7 +197,11 @@
           ]
         }
       },
-      "note": "Gondola is a symbolic Venice marker; the surveyed Rialto crossing is its declared geographic reference, not a live boat position."
+      "note": "Gondola is a symbolic Venice marker; the surveyed Rialto crossing is its declared geographic reference, not a live boat position.",
+      "relevantItems": [
+        "city-11",
+        "water-B"
+      ]
     },
     "TOPO_06": {
       "feature": "Duomo di Milano",
@@ -243,7 +264,11 @@
           ]
         }
       },
-      "note": "Cathedral location, not Milan city centre."
+      "note": "Cathedral location, not Milan city centre.",
+      "relevantItems": [
+        "city-5",
+        "area-g"
+      ]
     },
     "TOPO_07": {
       "feature": "Cattedrale di Santa Maria del Fiore",
@@ -326,7 +351,11 @@
           ]
         }
       },
-      "note": "Cathedral location, not Florence city centre."
+      "note": "Cathedral location, not Florence city centre.",
+      "relevantItems": [
+        "city-3",
+        "area-h"
+      ]
     },
     "TOPO_08": {
       "feature": "Su Nuraxi di Barumini",
@@ -352,7 +381,11 @@
         },
         "propertyId": "833"
       },
-      "note": "Actual heritage-site reference; the generic illustration is symbolic, not a surveyed footprint."
+      "note": "Actual heritage-site reference; the generic illustration is symbolic, not a surveyed footprint.",
+      "relevantItems": [
+        "area-b",
+        "city-14"
+      ]
     },
     "TOPO_09": {
       "feature": "Tre Cime di Lavaredo, Dolomiti",
@@ -415,7 +448,11 @@
           ]
         }
       },
-      "note": "Declared real mountain-group reference for the three-peak illustration, not a schematic Dolomites-zone centre."
+      "note": "Declared real mountain-group reference for the three-peak illustration, not a schematic Dolomites-zone centre.",
+      "relevantItems": [
+        "area-d",
+        "city-22"
+      ]
     },
     "TOPO_10": {
       "feature": "Quartiere Monti, trulli di Alberobello",
@@ -441,7 +478,19 @@
         },
         "propertyId": "787-006"
       },
-      "note": "Actual heritage-site reference; the generic illustration is symbolic, not a surveyed footprint."
+      "note": "Actual heritage-site reference; the generic illustration is symbolic, not a surveyed footprint.",
+      "relevantItems": [
+        "city-1"
+      ]
     }
+  },
+  "relevance": {
+    "rule": "Ronde 5 punt 2: op Reis staan alleen de landmarks waarvan een relevantItems-item in het actieve hoofdstuk zit; andere verdwijnen. Een hoofdstuk zonder relevante landmark toont basisSet (≤ 4). Toetsresultaat toont alle landmarks.",
+    "basisSet": [
+      "TOPO_06",
+      "TOPO_01",
+      "TOPO_03",
+      "TOPO_04"
+    ]
   }
 }

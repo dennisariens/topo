@@ -110,7 +110,11 @@
             ]
           }
         },
-        "note": "Monument location, not Rome city centre."
+        "note": "Monument location, not Rome city centre.",
+        "relevantItems": [
+          "city-9",
+          "water-F"
+        ]
       },
       "exports": {
         "128": {
@@ -198,7 +202,11 @@
             "rank": "normal"
           }
         },
-        "note": "Bell tower location, not Pisa city centre."
+        "note": "Bell tower location, not Pisa city centre.",
+        "relevantItems": [
+          "city-8",
+          "area-h"
+        ]
       },
       "exports": {
         "128": {
@@ -257,7 +265,11 @@
           "dataset": "Existing canonical ITEMS / Smithsonian GVP",
           "url": "https://volcano.si.edu/volcano.cfm?vn=211020"
         },
-        "note": "Resolve the existing WGS84 volcano coordinate from the canonical item; do not maintain a second coordinate copy."
+        "note": "Resolve the existing WGS84 volcano coordinate from the canonical item; do not maintain a second coordinate copy.",
+        "relevantItems": [
+          "area-e",
+          "city-6"
+        ]
       },
       "exports": {
         "128": {
@@ -316,7 +328,12 @@
           "dataset": "Existing canonical ITEMS / Smithsonian GVP",
           "url": "https://volcano.si.edu/volcano.cfm?vn=211060"
         },
-        "note": "Resolve the existing WGS84 volcano coordinate from the canonical item; do not maintain a second coordinate copy."
+        "note": "Resolve the existing WGS84 volcano coordinate from the canonical item; do not maintain a second coordinate copy.",
+        "relevantItems": [
+          "area-f",
+          "area-a",
+          "city-15"
+        ]
       },
       "exports": {
         "128": {
@@ -430,7 +447,11 @@
             ]
           }
         },
-        "note": "Gondola is a symbolic Venice marker; the surveyed Rialto crossing is its declared geographic reference, not a live boat position."
+        "note": "Gondola is a symbolic Venice marker; the surveyed Rialto crossing is its declared geographic reference, not a live boat position.",
+        "relevantItems": [
+          "city-11",
+          "water-B"
+        ]
       },
       "exports": {
         "128": {
@@ -544,7 +565,11 @@
             ]
           }
         },
-        "note": "Cathedral location, not Milan city centre."
+        "note": "Cathedral location, not Milan city centre.",
+        "relevantItems": [
+          "city-5",
+          "area-g"
+        ]
       },
       "exports": {
         "128": {
@@ -678,7 +703,11 @@
             ]
           }
         },
-        "note": "Cathedral location, not Florence city centre."
+        "note": "Cathedral location, not Florence city centre.",
+        "relevantItems": [
+          "city-3",
+          "area-h"
+        ]
       },
       "exports": {
         "128": {
@@ -755,7 +784,11 @@
           },
           "propertyId": "833"
         },
-        "note": "Actual heritage-site reference; the generic illustration is symbolic, not a surveyed footprint."
+        "note": "Actual heritage-site reference; the generic illustration is symbolic, not a surveyed footprint.",
+        "relevantItems": [
+          "area-b",
+          "city-14"
+        ]
       },
       "exports": {
         "128": {
@@ -869,7 +902,11 @@
             ]
           }
         },
-        "note": "Declared real mountain-group reference for the three-peak illustration, not a schematic Dolomites-zone centre."
+        "note": "Declared real mountain-group reference for the three-peak illustration, not a schematic Dolomites-zone centre.",
+        "relevantItems": [
+          "area-d",
+          "city-22"
+        ]
       },
       "exports": {
         "128": {
@@ -946,7 +983,10 @@
           },
           "propertyId": "787-006"
         },
-        "note": "Actual heritage-site reference; the generic illustration is symbolic, not a surveyed footprint."
+        "note": "Actual heritage-site reference; the generic illustration is symbolic, not a surveyed footprint.",
+        "relevantItems": [
+          "city-1"
+        ]
       },
       "exports": {
         "128": {

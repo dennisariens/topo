@@ -80,11 +80,14 @@ const v3art={bg:{bg01:uri(A['BG-01'].export,'BG-01'),bg02:uri(A['BG-02'].export,
 const landmarks=JSON.parse(read('assets/v3/landmarks/manifest.json'));
 const activeLandmarks=landmarks.items.filter(a=>a.ui);
 if(activeLandmarks.map(a=>a.id).join(',')!==Array.from({length:10},(_,i)=>'TOPO_'+String(i+1).padStart(2,'0')).join(','))throw Error('Expected only TOPO_01–10 in UI');
-v3art.landmarks={source:landmarks.source,items:activeLandmarks.map(a=>{
+// Ronde 5 punt 2: relevance per chapter (locations.json: relevantItems per landmark, basisSet for chapters without one).
+const lmLocations=JSON.parse(read('assets/v3/landmarks/locations.json'));
+for(const a of activeLandmarks)for(const id of a.location.relevantItems||[])if(!canonicalItems.some(i=>i.id===id))throw Error('Unknown relevant item '+id+' for '+a.id);
+v3art.landmarks={source:landmarks.source,basisSet:lmLocations.relevance.basisSet,items:activeLandmarks.map(a=>{
  const item=a.location.canonicalItemId&&canonicalItems.find(i=>i.id===a.location.canonicalItemId);
  const coordinates=item?[item.lon,item.lat]:a.location.coordinates;
  if(!coordinates?.every(Number.isFinite))throw Error('Missing geographic point: '+a.id);
- return {id:a.id,label:a.label,paintSize:a.paintSize,coordinates,point:project(coordinates),exports:Object.fromEntries(Object.entries(a.exports).map(([size,e])=>[size,{...e,src:uri(e,a.id+' '+size)}]))};
+ return {id:a.id,label:a.label,paintSize:a.paintSize,relevantItems:a.location.relevantItems||[],coordinates,point:project(coordinates),exports:Object.fromEntries(Object.entries(a.exports).map(([size,e])=>[size,{...e,src:uri(e,a.id+' '+size)}]))};
 })};
 if(Object.keys(scenes).length!==11)throw Error('Expected 11 chapter scenes, found '+Object.keys(scenes).length);
 // Relief z8 render layers (v3/relief-z8 @ 2a7b0cf), checked against their provenance SHA256, embedded as data URIs.

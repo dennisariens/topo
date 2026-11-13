@@ -33,7 +33,14 @@ window.TopoV3Landmarks=function(svg,k){
  for(const n of svg.querySelectorAll(':scope>.v3Pins .v3Pin,:scope>.v3Marks .v3Mark>circle,:scope>.v3Marks .v3MarkName')){const b=boxOf(n);if(b)obstacles.push(b);}
  const hits=(r)=>obstacles.some(o=>r[0]<o[2]+GAP*k&&o[0]<r[2]+GAP*k&&r[1]<o[3]+GAP*k&&o[1]<r[3]+GAP*k);
  const STEPS=[[0,-1],[1,0],[-1,0],[1,-1],[-1,-1],[0,1],[1,1],[-1,1]];
- for(const item of art.items){
+ // Ronde 5 punt 2: on Reis only the active chapter's landmarks (data-chapter, set by reis.js); a chapter without one shows
+ // the calm basis set (≤ 4). Toets resultaat (no chapter) keeps them all.
+ const chapter=svg.dataset.chapter&&typeof ROUTE_CHAPTERS!=='undefined'?ROUTE_CHAPTERS.find(c=>c.id===svg.dataset.chapter):null;
+ let shown=art.items;
+ if(chapter){const ids=new Set(chapter.itemIds);shown=art.items.filter(i=>i.relevantItems.some(id=>ids.has(id)));svg.dataset.landmarkSet='chapter';
+  if(!shown.length){shown=art.items.filter(i=>(art.basisSet||[]).includes(i.id));svg.dataset.landmarkSet='basis';}}
+ else delete svg.dataset.landmarkSet;
+ for(const item of shown){
   const asset=item.exports[size];
   const [left,top,right,bottom]=asset.paintBounds;
   // Anchor the painted bottom centre, not the padded square, at the real geographic point.

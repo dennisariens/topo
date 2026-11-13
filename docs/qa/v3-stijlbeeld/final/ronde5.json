@@ -132,5 +132,191 @@
       }
     },
     "pass": true
+  },
+  "2": {
+    "previewSha256": "2575a4bbfabd223633939b207812d942c3b88d4c6f01735fb9a1fba23659724b",
+    "runs": {
+      "desktop": {
+        "viewport": [
+          1440,
+          900
+        ],
+        "screens": [
+          "reis"
+        ],
+        "detail": {
+          "city1": {
+            "landmarks": [
+              "TOPO_03",
+              "TOPO_06",
+              "TOPO_07",
+              "TOPO_10"
+            ],
+            "set": "chapter"
+          },
+          "city2": {
+            "landmarks": [
+              "TOPO_01",
+              "TOPO_02",
+              "TOPO_05"
+            ],
+            "set": "chapter"
+          },
+          "city3": {
+            "landmarks": [
+              "TOPO_04",
+              "TOPO_08"
+            ],
+            "set": "chapter"
+          },
+          "city4": {
+            "landmarks": [
+              "TOPO_09"
+            ],
+            "set": "chapter"
+          },
+          "islands": {
+            "landmarks": [
+              "TOPO_04",
+              "TOPO_08"
+            ],
+            "set": "chapter"
+          },
+          "mountains": {
+            "landmarks": [
+              "TOPO_09"
+            ],
+            "set": "chapter"
+          },
+          "volcanoes": {
+            "landmarks": [
+              "TOPO_03",
+              "TOPO_04"
+            ],
+            "set": "chapter"
+          },
+          "regions": {
+            "landmarks": [
+              "TOPO_02",
+              "TOPO_06",
+              "TOPO_07"
+            ],
+            "set": "chapter"
+          },
+          "countries": {
+            "landmarks": [
+              "TOPO_01",
+              "TOPO_03",
+              "TOPO_04",
+              "TOPO_06"
+            ],
+            "set": "basis"
+          },
+          "seas": {
+            "landmarks": [
+              "TOPO_05"
+            ],
+            "set": "chapter"
+          },
+          "rivers": {
+            "landmarks": [
+              "TOPO_01"
+            ],
+            "set": "chapter"
+          }
+        }
+      },
+      "ipad-liggend": {
+        "viewport": [
+          1080,
+          810
+        ],
+        "screens": [
+          "reis"
+        ],
+        "detail": {
+          "city1": {
+            "landmarks": [
+              "TOPO_03",
+              "TOPO_06",
+              "TOPO_07",
+              "TOPO_10"
+            ],
+            "set": "chapter"
+          },
+          "city2": {
+            "landmarks": [
+              "TOPO_01",
+              "TOPO_02",
+              "TOPO_05"
+            ],
+            "set": "chapter"
+          },
+          "city3": {
+            "landmarks": [
+              "TOPO_04",
+              "TOPO_08"
+            ],
+            "set": "chapter"
+          },
+          "city4": {
+            "landmarks": [
+              "TOPO_09"
+            ],
+            "set": "chapter"
+          },
+          "islands": {
+            "landmarks": [
+              "TOPO_04",
+              "TOPO_08"
+            ],
+            "set": "chapter"
+          },
+          "mountains": {
+            "landmarks": [
+              "TOPO_09"
+            ],
+            "set": "chapter"
+          },
+          "volcanoes": {
+            "landmarks": [
+              "TOPO_03",
+              "TOPO_04"
+            ],
+            "set": "chapter"
+          },
+          "regions": {
+            "landmarks": [
+              "TOPO_02",
+              "TOPO_06",
+              "TOPO_07"
+            ],
+            "set": "chapter"
+          },
+          "countries": {
+            "landmarks": [
+              "TOPO_01",
+              "TOPO_03",
+              "TOPO_04",
+              "TOPO_06"
+            ],
+            "set": "basis"
+          },
+          "seas": {
+            "landmarks": [
+              "TOPO_05"
+            ],
+            "set": "chapter"
+          },
+          "rivers": {
+            "landmarks": [
+              "TOPO_01"
+            ],
+            "set": "chapter"
+          }
+        }
+      }
+    },
+    "pass": true
   }
 }

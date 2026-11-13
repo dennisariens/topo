@@ -4,12 +4,12 @@
     "Reis",
     "toetsresultaat"
   ],
-  "previewSha256": "28348d719162764a2f173d5e3064c3e1a7ccefe108e98f303b960df5b7b895bc",
+  "previewSha256": "2575a4bbfabd223633939b207812d942c3b88d4c6f01735fb9a1fba23659724b",
   "indexSha256": "3aced3c31259011b0af2947c78f71965cb4beb2e88c69d1663e61792b0304f5a",
   "sourceCommit": "69c945c16a8bd34c8e45cffa96c12442c2672cb1",
-  "manifestSha256": "7eaef281023e9ccbda60ed41219ad1596336f21c251382a2f4544c9720e16ec7",
-  "locationsSha256": "83a3eafc9e172f852dbe424d88a4937ef6c3a38c1516be0d79d8d6f2ef7f866f",
-  "qaScriptSha256": "35097a8fead4e108367c7badcb658d4982858c7d6a86775fee5ec19378bc914a",
+  "manifestSha256": "3131c5925a976ed10ef08bc67144a10060ca96cef57af22776765a53695a04ab",
+  "locationsSha256": "06cb09e30ca6d7bfa43b4d0f41fa54138d12fd9d3806b2b248bb5fe63a2719a3",
+  "qaScriptSha256": "c0b3cd573aa761e2beb0abe99fff04eb65579788bf87594a32d182339b337317",
   "masters": 15,
   "webpExports": 20,
   "excluded": [
@@ -30,7 +30,7 @@
       ],
       "deviceScaleFactor": 1,
       "reis": {
-        "landmarks": 10,
+        "landmarks": 3,
         "exactProjectedCoordinates": true,
         "exportSize": 128,
         "decoded": true,
@@ -52,7 +52,7 @@
             1440,
             900
           ],
-          "sha256": "647e016ee331e35c98a25495f13ba50c0537ecc459e7d4615e787a50c18a064d"
+          "sha256": "062a15302a6de6ffbb0a0a7388d14322fac40fa2e74fb0d7c568c68d603c7a75"
         },
         "toetsResult": {
           "path": "docs/qa/v3-stijlbeeld/final/toetsResult-desktop.png",
@@ -60,7 +60,7 @@
             1440,
             900
           ],
-          "sha256": "112bed22d37200ab32cafff7076fabbd6e73ca5e17011efba0521d6e1b608793"
+          "sha256": "663b708ee3d2f4e23d566f7610c205329a1c21a5cb894fd5f7d18c0d24cd9cd4"
         }
       },
       "errors": []
@@ -72,7 +72,7 @@
       ],
       "deviceScaleFactor": 2,
       "reis": {
-        "landmarks": 10,
+        "landmarks": 3,
         "exactProjectedCoordinates": true,
         "exportSize": 256,
         "decoded": true,
@@ -94,7 +94,7 @@
             1080,
             810
           ],
-          "sha256": "3d03110d6de9ca3ab3c6c86736399f6cd81556315ef0ab0604ecc72899b0439c"
+          "sha256": "56044500864b842f1615346b1f6ab77e84d3f2850875246b32dff130b96a941d"
         },
         "toetsResult": {
           "path": "docs/qa/v3-stijlbeeld/final/toetsResult-ipad-liggend.png",
@@ -102,7 +102,7 @@
             1080,
             810
           ],
-          "sha256": "fe3299cd868f2efa48e1b3738136b9a830e9cc98a480fb98e0e6f64c7d7ca46b"
+          "sha256": "2605af744ac615fc4d8289bcfcdf2da7ed5318a325a7bf582b5686deacb8c2c3"
         }
       },
       "errors": []

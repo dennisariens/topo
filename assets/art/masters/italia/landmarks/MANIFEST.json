@@ -237,5 +237,89 @@
     "sha256": "d7a067a8bb4658c74fdeee41d549d8c37fe9674354098e1b932ff9e000367f1f",
     "transparent_share": 0.66,
     "use": "lifestyle — in gebruik V3.0 (eigenaar 12-11)"
+  },
+  {
+    "id": 17,
+    "name": "Bologna Due Torri",
+    "filename": "TOPO_17_Bologna_Due_Torri.png",
+    "size": [
+      1024,
+      1024
+    ],
+    "mode": "RGBA",
+    "alpha": true,
+    "sha256": "ef66c845d6cee31835fe19c363650a2d0b5b25bb5fbfea24d24d55236d7ab163",
+    "transparent_share": 0.84,
+    "use": "landmark reliëfkaart — hoofdstuk Steden 1–6"
+  },
+  {
+    "id": 18,
+    "name": "Turin Mole Antonelliana",
+    "filename": "TOPO_18_Turin_Mole_Antonelliana.png",
+    "size": [
+      1024,
+      1024
+    ],
+    "mode": "RGBA",
+    "alpha": true,
+    "sha256": "dc4f06f748a118d95a93925ea2d52dc84c844dfb4855231f283fe7cd7357df92",
+    "transparent_share": 0.83,
+    "use": "landmark reliëfkaart — hoofdstuk Steden 7–12"
+  },
+  {
+    "id": 19,
+    "name": "Verona Arena",
+    "filename": "TOPO_19_Verona_Arena.png",
+    "size": [
+      1024,
+      1024
+    ],
+    "mode": "RGBA",
+    "alpha": true,
+    "sha256": "3e1f633eb686dd3a1b196da7c47409834af6c349b2da1330ae87231c3cef62f3",
+    "transparent_share": 0.63,
+    "use": "landmark reliëfkaart — hoofdstuk Steden 7–12"
+  },
+  {
+    "id": 20,
+    "name": "Vatican St. Peter's Basilica",
+    "filename": "TOPO_20_Vatican_St_Peters_Basilica.png",
+    "size": [
+      1024,
+      1024
+    ],
+    "mode": "RGBA",
+    "alpha": true,
+    "sha256": "1d5f336d6f034f54c0ca0cc9ca001258e8295823c73117c55ece37e51ad26e6b",
+    "transparent_share": 0.63,
+    "use": "landmark reliëfkaart — hoofdstuk Landen"
+  },
+  {
+    "id": 21,
+    "name": "San Marino Three Towers",
+    "filename": "TOPO_21_San_Marino_Three_Towers.png",
+    "size": [
+      1024,
+      1024
+    ],
+    "mode": "RGBA",
+    "alpha": true,
+    "sha256": "45acc1019ea507808e5c7f2176b011bc23cd827d1bc49c314850d43e91ad3a66",
+    "transparent_share": 0.69,
+    "use": "landmark reliëfkaart — hoofdstuk Landen"
+  },
+  {
+    "id": 22,
+    "name": "Rome Castel Sant'Angelo (Tiber)",
+    "filename": "TOPO_22_Rome_Castel_Sant_Angelo.png",
+    "size": [
+      1024,
+      1024
+    ],
+    "mode": "RGBA",
+    "alpha": true,
+    "sha256": "9e5ae70d95933876daefacba9a85b743b4c2c21dc90939604eafa195c924433a",
+    "transparent_share": 0.63,
+    "use": "landmark reliëfkaart — hoofdstuk Rivieren"
   }
 ]

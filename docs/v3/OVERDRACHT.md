@@ -231,3 +231,16 @@ Algemeen oordeel van de eigenaar: "ziet er zeer goed uit". De bevindingen van He
      - aangekondigd voor VoiceOver (`aria-live="polite"`).
    - **Op de tab Beloningen** een kleine violette stip tot de nieuwe postkaart bekeken is.
    - **Nooit tijdens** een vraag, de toets of de Gouden proef: de melding wacht tot het moment voorbij is.
+
+### Ronde 5B: review lead designer (13-11, op `f736073`)
+
+Punt 1–7 zijn akkoord. Sterk: Voortgang bij 45/45 (tint, gouden rand, Nino met de Fiat), de Vespa-rit met Nino, het boek, de lifestyle-iconen. Na punt 8–9 nog:
+
+10. **Reis op iPad:**
+    - de kaart is te klein geworden, en de hoofdstukkaart te groot (de titel "Extra steden 19–23" breekt over 3 regels);
+    - de kaart blijft ≥ 45% van het inhoudsvlak, ook op iPad 1080×810;
+    - de hoofdstukkaart is maximaal ±40% breed, met de titel op maximaal 2 regels (verklein de titel daar naar 28/24, niet de kaart).
+11. **Landen (Italië en omgeving):** de buurlanden staan als een vol paars vlak. Gebruik dezelfde regel als Voortgang: een tint over de kaart en violet alleen als rand, zodat het reliëf en de grenzen zichtbaar blijven.
+12. **Vespa-rit, knop Overslaan:** de focusring is donker en moet in V3-violet; de knop wordt een secundaire glaspil.
+
+**Stopcriterium:** screenshots van Reis (Steden en Landen) en de Vespa-rit op desktop en iPad, met de checks kaart ≥ 45% en titel ≤ 2 regels groen.

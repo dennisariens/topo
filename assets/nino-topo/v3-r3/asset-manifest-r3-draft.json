@@ -17,7 +17,8 @@
   },
   "r3": {
     "logo01": "brand/logo-r3/logo-01-primary-r3.svg",
-    "logo02": "brand/logo-r3/logo-02-compact-r3.svg"
+    "logo02": "brand/logo-r3/logo-02-compact-r3.svg",
+    "logo03": "brand/logo-r3/logo-03-wordmark-r3.svg"
   },
   "checks": {
     "originalsUnchanged": true,
@@ -25,6 +26,9 @@
     "r3ImageReducedBy": "18%",
     "browserScreenshots": "pending",
     "ownerSignoff": false,
-    "productionDeployment": false
+    "productionDeployment": false,
+    "wordmarkByteIdentical": true,
+    "sourceInvariantTest": "qa/check-logo-r3.mjs",
+    "binaryExports": "pending owner visual acceptance"
   }
 }

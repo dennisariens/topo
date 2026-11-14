@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="nl">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#FAFAF9">
+<meta name="description" content="Nino Topo — ontdek landen en leer topografie.">
+<title>Nino Topo — Waar gaan we vandaag naartoe?</title>
+<link rel="icon" href="../assets/nino-topo/v3-r2/brand/icons/vespa-icon-02-compact.webp" type="image/webp">
+<link rel="apple-touch-icon" href="../assets/nino-topo/v3-r2/brand/icons/vespa-premium-180.png">
+<style>
+:root{color-scheme:light;--bg:#FAFAF9;--surface:#fff;--ink:#171B20;--secondary:#73737D;--line:#E5E5EA;--lav:#9781D5;--lav-dark:#7b66b7;--lav-hover:#6A539F;--lav-soft:#D3C7ED;--lav-tint:#F1EDFA}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--ink);font-family:Inter,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;-webkit-font-smoothing:antialiased}
+a{color:inherit}.skip{position:absolute;top:-70px;left:12px;background:white;padding:12px;z-index:20}.skip:focus{top:12px}a:focus-visible{outline:3px solid var(--lav);outline-offset:4px}
+.shell{max-width:1480px;margin:auto;padding:0 46px;min-height:100vh;display:flex;flex-direction:column}
+header{display:flex;align-items:center;justify-content:space-between;height:92px;border-bottom:1px solid #EEEEF1}
+.brand{display:flex;align-items:center;height:86px;max-width:280px}.brand img{display:block;width:246px;height:86px;object-fit:contain;object-position:left}.brand .compact{display:none}.brand-fallback{font-size:34px;font-weight:800;letter-spacing:-.06em}.brand-fallback b{color:var(--lav)}.tagline{font-size:10px;letter-spacing:.18em;font-weight:700;color:#92929A}
+.hero{text-align:center;padding:54px 12px 39px}.eyebrow{font-size:11px;letter-spacing:.18em;font-weight:750;color:var(--lav-dark);margin-bottom:17px}.hero h1{font-size:clamp(31px,4.4vw,54px);line-height:1.13;letter-spacing:-.045em;margin:0;font-weight:750}.hero p{font-size:16px;color:var(--secondary);line-height:1.6;margin:18px 0 0}
+.landscape{position:relative;padding:0 0 68px 206px}.grid{display:grid;gap:22px}.featured{grid-template-columns:repeat(2,minmax(0,1fr))}.future{grid-template-columns:repeat(3,minmax(0,1fr));margin-top:22px}
+.country{overflow:hidden;position:relative;min-width:0;background:var(--surface);border:1px solid var(--line);border-radius:18px;box-shadow:0 4px 14px rgba(25,20,35,.035),0 19px 42px rgba(25,20,35,.025);transition:transform .22s ease,box-shadow .24s ease}
+.country.active:hover,.country.active:focus-within{transform:translateY(-3px);box-shadow:0 12px 32px rgba(37,24,62,.105),0 21px 44px rgba(37,24,62,.04)}
+.visual{height:234px;position:relative;overflow:hidden;background:#F1EFF1}.visual img{display:block;position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transition:opacity .4s ease,transform .6s ease}.visual img.alt{opacity:0}
+.country:hover .visual img.alt,.country:focus-within .visual img.alt{opacity:1}.country:hover .visual img.base,.country:focus-within .visual img.base{opacity:0}
+.country:hover .visual img{transform:scale(1.025)}
+.country .bottom{display:flex;align-items:center;justify-content:space-between;gap:14px;padding:21px 22px 24px;min-height:102px}.title{min-width:0}h2,h3{display:flex;align-items:center;gap:10px;margin:0 0 6px;font-size:22px;letter-spacing:-.025em}p.description{margin:0;font-size:13px;color:var(--secondary);line-height:1.45}
+.flag-pill{width:40px;height:28px;flex-shrink:0;display:inline-flex;align-items:center;justify-content:center;background:#F6F6F8;border:1px solid #E9E7EE;border-radius:999px}.flag{height:16px;width:22px;display:block;border:1px solid #00000012;border-radius:3px;object-fit:cover;background:#fff}.action,.soon{display:inline-flex;align-items:center;justify-content:center;gap:9px;white-space:nowrap;border-radius:99px;font-size:12px;font-weight:650;line-height:1.2}
+.action{background:var(--lav-dark);color:#fff;padding:13px 18px;min-height:44px;text-decoration:none;transition:background-color .18s ease,box-shadow .2s ease,transform .2s ease}.country.active:hover .action[href],.country.active:focus-within .action[href],.action[href]:hover{background:var(--lav-hover);box-shadow:0 5px 14px rgba(112,87,166,.20)}.action[href] span[aria-hidden]{display:inline-block;transition:transform .2s ease}.country.active:hover .action[href] span[aria-hidden],.country.active:focus-within .action[href] span[aria-hidden]{transform:translateX(3px)}.action[href]::after{content:"";position:absolute;inset:0;cursor:pointer}.country:focus-within{outline:3px solid var(--lav);outline-offset:3px}.action:focus-visible{outline:0}
+.pending{background:var(--lav-tint);border:1px solid var(--lav-soft);color:#685398;padding:12px 15px}
+.soon{border:1px solid var(--lav-soft);background:var(--lav-tint);color:#7761AD;padding:8px 12px}
+.soon svg{width:12px;height:12px}
+.future .visual{height:124px}.future .visual img{filter:grayscale(.78) saturate(.62)}.future .visual img.base{opacity:.69}.country.future:hover .visual img.base{opacity:0}.country.future:hover .visual img.alt{opacity:.73}.country.future:hover{box-shadow:0 7px 21px rgba(25,20,35,.07)}.future h3{font-size:18px;margin:0}.future .bottom{min-height:72px;padding:16px 18px 18px}
+.mascot{position:absolute;width:220px;height:310px;object-fit:contain;object-position:bottom;bottom:28px;left:-22px;pointer-events:none}
+footer{margin-top:auto;border-top:1px solid #EEEEF1;padding:24px 0 32px;display:flex;justify-content:space-between;gap:16px;color:#9999A3;font-size:11px}
+@media(max-width:1050px){.shell{padding:0 25px}.landscape{padding-left:154px}.mascot{width:155px;height:235px;left:-9px}.featured .bottom{flex-wrap:wrap}.visual{height:205px}.future .visual{height:120px}}@media(max-width:820px){.landscape{padding-left:0}.mascot{display:none}}
+@media(max-width:650px){.shell{padding:0 16px}header{height:78px}.tagline{display:none}.brand .primary{display:none}.brand .compact{display:block}.brand img{height:60px;max-width:180px}.hero{padding:50px 0 30px}.hero h1{font-size:33px}.hero p{font-size:14px}.featured,.future{grid-template-columns:1fr;gap:14px}.future{margin-top:16px}.visual{height:210px}.future .visual{height:116px}.country .bottom{padding:16px}.mascot{display:none}.landscape{padding:0 0 40px}footer{flex-direction:column;align-items:center;gap:6px}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.visual img,.country,.action,.action[href] span[aria-hidden]{transition:none!important;transform:none!important}}
+</style>
+</head>
+<body>
+<a class="skip" href="#landen">Ga naar de landen</a>
+<div class="shell">
+<header>
+<a href="./" class="brand" aria-label="Nino Topo startpagina">
+<picture class="primary"><img src="../assets/nino-topo/v3-r3/brand/logo-r3/logo-01-primary-r3-1.svg" alt="Nino Topo" width="280" height="73"></picture>
+<picture class="compact"><img src="../assets/nino-topo/v3-r3/brand/logo-r3/logo-02-compact-r3-1.svg" alt="Nino" width="180" height="60"></picture>
+</a>
+<span class="tagline">LEREN, LAND VOOR LAND</span>
+</header>
+<main>
+<section class="hero" aria-labelledby="hero-title">
+<h1 id="hero-title">Waar gaan we vandaag naartoe?</h1>
+<p>Kies een land, ontdek bijzondere plekken en leer de kaart kennen.</p>
+</section>
+<section class="landscape" id="landen" aria-label="Kies een land">
+<div class="grid featured" id="featured"></div>
+<div class="grid future" id="future"></div>
+<img class="mascot" alt="" aria-hidden="true" src="../assets/nino-topo/v3-r2/brand/characters/nino-vespa-canonical.webp">
+</section>
+</main>
+<footer><span>© <span id="year">2026</span> Nino Topo</span><span>De wereld leren kennen, land voor land.</span></footer>
+</div>
+<script>
+const base='../assets/nino-topo/v3-r2/destinations/';
+const countries=[
+ {id:'italy',name:'Italië',flag:'it',desc:'Steden, bergen, meren en rivieren.',active:true},
+ {id:'france',name:'Frankrijk',flag:'fr',desc:'Ontdek regio’s, steden en landschappen.',active:true},
+ {id:'spain',name:'Spanje',flag:'es'},
+ {id:'germany',name:'Duitsland',flag:'de'},
+ {id:'netherlands',name:'Nederland',flag:'nl'}
+];
+// Do not fabricate a learning-app route. Set only after verification.
+const routes={italy:'../index.html',france:null}; // Italy: verified repository-root learning entry; production routing must be reviewed.
+const lock='<svg viewBox="0 0 20 20" fill="none" aria-hidden="true"><rect x="5" y="9" width="10" height="8" rx="2" stroke="currentColor" stroke-width="1.5"/><path d="M7 9V6a3 3 0 0 1 6 0v3" stroke="currentColor" stroke-width="1.5"/></svg>';
+for(const c of countries){
+ const card=document.createElement('article');card.className='country '+(c.active?'active':'future');
+ const h=c.active?'h2':'h3';const src=base+c.id+'-';
+ const action=c.active?(routes[c.id]?'<a class="action" href="'+routes[c.id]+'" aria-label="Start '+c.name+' leren">Start leren <span aria-hidden="true">→</span></a>':'<span class="action pending">Leeromgeving volgt</span>'):'<span class="soon">'+lock+' Binnenkort</span>';
+ const text=c.desc?'<p class="description">'+c.desc+'</p>':'';
+ card.innerHTML='<div class="visual"><img class="base" src="'+src+'destination.webp" alt="Illustratie van '+c.name+'" '+(c.id==='italy'?'fetchpriority="high"':'loading="lazy"')+'><img class="alt" src="'+src+'hover.webp" alt="" loading="lazy"></div><div class="bottom"><div class="title"><'+h+'><span class="flag-pill"><img class="flag" src="./assets/flags/'+c.flag+'.svg" width="22" height="16" alt="" aria-hidden="true"></span>'+c.name+'</'+h+'>'+text+'</div>'+action+'</div>';
+ document.getElementById(c.active?'featured':'future').append(card);
+}
+document.getElementById('year').textContent=new Date().getFullYear();
+</script>
+</body>
+</html>

@@ -22,7 +22,7 @@ Regels:
 | BL-006 | Vercel: productie = `main`, preview per PR, portal op een eigen pad | M0 | P1 | S | idee | Claude | — |
 | BL-007 | Runtime-migratie stap 1: karakterisering op de V3.0-pin | M1 | P1 | M | idee | Claude | — |
 | BL-008 | Speeltest-protocol met 2–3 kinderen (taken, observatie, vragen) | M0 | P1 | S | idee | Claude | — |
-| BL-009 | Domein koppelen aan Vercel (na aankoop door Dennis), productie-URL vastleggen | M0 | P1 | S | geblokkeerd: domeinaankoop | Claude | — |
+| BL-009 | Domein koppelen aan Vercel (na aankoop door Dennis), productie-URL vastleggen | M0 | P1 | S | idee (ninotopo.nl gekocht 14-11; wacht op DNS-toegang van Dennis) | Claude | — |
 | BL-010 | Speeltest-ronde 1 met groep 7 op V3.0 (na BL-004) | M0 | P1 | S | idee | Dennis + Claude | — |
 | FR-01 | FR-curriculum: itemlijst groep 7 (toetsstof, schoolatlas), met bron per item → `src/lands/fr/items.draft.json` (pure data) | M2 · parallel | P2 | S | idee | **Codex** | — |
 | FR-02 | FR-geometrie: bron met licentie (Natural Earth/OSM), projectie, hashes, validatierapport, overnemen uit `land/fr-geo` waar het klopt | M2 · parallel | P2 | M | idee | **Codex** | — |

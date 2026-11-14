@@ -55,3 +55,17 @@ A **previous ZIP-based modular variant**, with local mock images and a mocked lo
 **See:** `portal/docs/FINAL-REFINEMENT-BRIEF.md` and `portal/docs/ARTWORK-R3-PROMPTS.md`.
 
 **Gate status:** Static code and asset mapping updates completed; exact real-R2 screenshot review on desktop, tablet and mobile, functional browser verification and owner approval still outstanding. No merge or production release.
+
+
+## Logo R3.1 owner approval — 14 November 2026
+**Visual decision:** OWNER APPROVED Logo R3.1, with exact original Nino/Vespa, smaller icon and centered composition, for portal use. This is logo-specific approval, **not a site release GO**.
+
+**Integrated unchanged on feature branch:**
+- `assets/nino-topo/v3-r3/brand/logo-r3/logo-01-primary-r3-1.svg` — desktop
+- `assets/nino-topo/v3-r3/brand/logo-r3/logo-02-compact-r3-1.svg` — mobile
+
+Original R2 logos kept. Updated `portal/index.html` header references only; no change to learning engine or country data.
+
+**QA added:** `portal/qa/verify.mjs` asserts the embedded Nino PNG and wordmark SVG path data remain identical to R2. GitHub import/asset path validation is separate from actual browser rendering.
+
+**Remaining gates:** logo display at true responsive header size, official welcome mascot artwork (not yet approved), app route verification, complete mobile/Safari/a11y review, owner portal GO. No merge/deployment.

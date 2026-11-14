@@ -9,7 +9,7 @@ Regels:
 
 | ID | Taak | Mijlpaal | P | Grootte | Status | Bouwer | Contract |
 |---|---|---|---|---|---|---|---|
-| BL-001 | Branch-inventaris: per branch de status (gemerged, achter, uniek werk), voorstel keep/merge/archive | M0 | P0 | S | ready | Claude | Criteria: tabel met alle 71 branches in `ops/reports/branches.md`, elke rij heeft een actie en een reden, niets verwijderd |
+| BL-001 | Branch-inventaris: per branch de status (gemerged, achter, uniek werk), voorstel keep/merge/archive | M0 | P0 | S | review | Claude | `ops/contracts/BL-001.md` (11 criteria: alle branches in `ops/reports/branches.md`, cijfers via `git rev-list`, actie + reden per rij, niets verwijderd) |
 | BL-002 | Docs-inventaris: wat is actueel, wat naar `docs/archive/` | M0 | P0 | S | ready | Claude | Criteria: lijst plus verplaatsplan, `AGENTS.md`-verwijzingen blijven kloppen |
 | BL-003 | `ops/STATE.md` vullen uit `docs/v3/SPEC.md` en `OVERDRACHT.md` | M0 | P0 | S | ready | Claude | Criteria: ≤ 60 regels, elke bewering verwijst naar een pin of bestand |
 | BL-004 | V3.0 release-kandidaat: Hermes-hertest op de laatste pin plus checklist voor de iPad-test van Dennis | M0 | P0 | M | idee | Hermes | — |

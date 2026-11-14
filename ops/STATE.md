@@ -19,7 +19,7 @@ M0 Consolidatie, deadline vr 20 nov · **GO 13-11**
 | `arch/v3-runtime` | Migratievoorstel en landpakket | 10-11 |
 
 ## Volgende taak
-BL-001 branch-inventaris
+BL-001 staat in `review` (PASS met voorbehoud C4, shell ontbrak). Daarna: BL-002 docs-inventaris. Vervolg BL-001: tegen `origin/main` opnieuw draaien met `git cherry` (shelltoegang nodig)
 
 ## Besloten 13-11
 - Roadmap M0–M3: GO
@@ -28,8 +28,9 @@ BL-001 branch-inventaris
 
 ## Open beslissingen voor Dennis
 1. Domein: `ninotopo.nl` wordt gekocht door Dennis (13-11). Internationale domeinstrategie: BL-011
-2. Akkoord op de branch-inventaris (BL-001) voordat er iets verwijderd wordt
+2. Branch-opruiming na BL-001 (`ops/reports/branches.md`), kies: (a) alle 95 `archive`-rijen taggen en daarna verwijderen · (b) eerst lokale `main` bijwerken en `git cherry` draaien (vervolgtaak), dan pas verwijderen · (c) per rij doorlopen met Claude. Rapport: 107 branches, 0 `delete`, 95 `archive`, 3 `merge`, 9 `keep`. **Aanbeveling: (b)**: tags maken mag al zonder akkoord, en 29 lokale `pr*` zijn dubbelen van remote-branches (alleen `pr7`/`pr70` uniek)
 
 ## Bekende risico's
 - Artwork-goedkeuring is de bottleneck voor elk land
+- M0-deadline krap: na BL-001 nog 2 M-taken (BL-004, BL-005) plus iPad-test Dennis in 6 dagen. Nog niet verschoven; check bij de volgende planning, voorstel dan: portal-preview naar M1
 - `index.html` van 41 MB en een preview van 50 MB: geheugen op iPad 9

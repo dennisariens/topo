@@ -42,7 +42,10 @@ Zijpaden: `review → fail(n) → bezig` · `fail(3) → idee (herplannen)` · `
 | Planning, contracten, architectuur, design-review, evaluatie van UI | Opus | Oordeel en kwaliteit |
 | Bouwen, tests schrijven, refactors, docs | Sonnet | ±5× goedkoper, voldoende voor een helder contract |
 | Zoeken in de repo, samenvatten, logs lezen | Haiku of de Explore-subagent | Houdt de hoofdcontext schoon |
-| Tweede code-review, of builder bij een lege Claude-limiet | Codex | Ander budget (OpenAI), andere blik |
+| Tweede code-review, eenvoudig data- en docswerk, of builder bij een lege Claude-limiet | Codex (`codex-worker`) | Ander budget (OpenAI), andere blik |
+| Uitzonderlijk zware taken (architectuur, grote refactor), alleen als Dennis het aanzet | Fable (`TOPO_MAIN_MODEL=claude-fable-5-2`) of de hoofdsessie van Dennis | Sterkste model, beperkt beschikbaar |
+
+**Orkestratie:** de hoofdsessie (Opus) bouwt zelf niet. Hij delegeert aan `planner`, `builder`, `evaluator`, `design-critic`, `scout` en `codex-worker` (`.claude/agents/`). Zo blijft de context van de hoofdsessie klein en goedkoop, en draait elk deel op het goedkoopste model dat volstaat.
 
 **Credits: de regels**
 1. **Eén bouwer per scope.** Claude Code en Codex nooit tegelijk aan hetzelfde.

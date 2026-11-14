@@ -36,10 +36,11 @@ DENIED=( "Bash(git push*)" "Bash(git checkout main*)" "Bash(git switch main*)" "
 
 if [ "${DRY_RUN:-0}" = "1" ]; then echo "DRY_RUN: worktree klaar op $WT"; exit 0; fi
 
-# 2. Claude-nachtrun (builder op Sonnet; planner/evaluator-subagents op Opus via hun frontmatter)
+# 2. Claude-nachtrun: hoofdsessie orkestreert (Opus; override met TOPO_MAIN_MODEL in ~/.topo-night/env),
+#    subagents draaien op hun eigen model (frontmatter in .claude/agents/)
 set +e
 OUT="$(claude -p "$(body .claude/commands/nachtrun.md)" \
-  --model sonnet --max-turns 200 \
+  --model "${TOPO_MAIN_MODEL:-opus}" --max-turns 300 \
   --permission-mode bypassPermissions \
   --disallowedTools "${DENIED[@]}" \
   --append-system-prompt "Vergelijk altijd met origin/main (lokale main is bijgewerkt maar origin/main is de waarheid). Read-only git (for-each-ref, rev-list, cherry, merge-base, show, ls-tree) en pipes zijn toegestaan." 2>&1)"

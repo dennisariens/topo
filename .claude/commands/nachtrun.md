@@ -6,7 +6,7 @@ Je draait de nachtrun van TOPO zonder dat Dennis meekijkt. Je kunt niets vragen.
 
 Herhaal tot 05:00 of tot je een usage limit bereikt:
 1. Laat de `planner` de volgende taak kiezen en het contract maken (als dat nog niet bestaat).
-2. Bouw precies het contract. Lees alleen de genoemde bestanden. Commit op de nachtbranch, één commit per taak met de BL-ID in de message.
+2. Laat de `builder` het contract bouwen, of de `codex-worker` als het contract `Bouwer: Codex` noemt. Bouw niet zelf: jij orkestreert. Eén commit per taak op de nachtbranch, met de BL-ID in de message.
 3. Laat de `evaluator` toetsen (nieuwe context). Bij FAIL: herstel en evalueer opnieuw, maximaal 2×.
 4. Bij PASS: werk `ops/BACKLOG.md` (status `review`), `ops/STATE.md`, `ops/RUNLOG.md` en eventueel `ops/LEARNINGS.md` bij, en commit. Het script doet push en PR.
 5. Bij een 3e FAIL: taak naar `idee` met een diagnose, en een les in LEARNINGS.

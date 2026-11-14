@@ -8,6 +8,8 @@ const portal = readFileSync(resolve(repo, 'portal/index.html'), 'utf8');
 const required = [
   'assets/nino-topo/v3-r2/brand/logo/logo-01-primary.svg',
   'assets/nino-topo/v3-r2/brand/logo/logo-02-compact.svg',
+  'assets/nino-topo/v3-r3/brand/logo-r3/logo-01-primary-r3-1.svg',
+  'assets/nino-topo/v3-r3/brand/logo-r3/logo-02-compact-r3-1.svg',
   'assets/nino-topo/v3-r2/brand/characters/nino-vespa-canonical.webp',
   'assets/nino-topo/v3-r2/brand/icons/vespa-premium-192.png',
   'assets/nino-topo/v3-r2/brand/icons/vespa-premium-180.png',
@@ -23,7 +25,7 @@ for (const country of countries) {
   required.push('assets/nino-topo/v3-r2/destinations/'+country+'-hover.webp');
 }
 for (const file of required) assert(existsSync(resolve(repo,file)), 'Missing R2 asset or Italy entry: '+file);
-assert(portal.includes('logo-01-primary.svg') && portal.includes('logo-02-compact.svg'), 'Canonical logo bindings missing');
+assert(portal.includes('logo-01-primary-r3-1.svg') && portal.includes('logo-02-compact-r3-1.svg'), 'Owner-approved R3.1 logo bindings missing');
 assert(portal.includes("const countries=[") && portal.includes('countries){'), 'Country mapping missing');
 assert(portal.includes("const routes={italy:'../index.html',france:null}"), 'Route contract changed: re-verify Italy and France');
 assert(portal.includes('prefers-reduced-motion'), 'Reduced-motion support missing');
@@ -45,6 +47,15 @@ for(const token of ['lav-dark','lav-hover']){
  assert(contrast(match[1],'#FFFFFF')>=4.5,'Insufficient white-on-'+token+' CTA text contrast');
 }
 
-const logoSvg=readFileSync(resolve(repo, 'assets/nino-topo/v3-r2/brand/logo/logo-01-primary.svg'),'utf8');
-assert(logoSvg.includes('viewBox'), 'Logo is not a valid SVG');
-console.log('Nino Topo portal static R2 checks: PASS — '+required.length+' files, 5 destination pairs, 5 licensed vector flags, 2 canonical logos.');
+const baseLogo='assets/nino-topo/v3-r2/brand/logo/';
+const newLogo='assets/nino-topo/v3-r3/brand/logo-r3/';
+for(const [a,b] of [['logo-01-primary.svg','logo-01-primary-r3-1.svg'],['logo-02-compact.svg','logo-02-compact-r3-1.svg']]){
+ const original=readFileSync(resolve(repo,baseLogo+a),'utf8');
+ const updated=readFileSync(resolve(repo,newLogo+b),'utf8');
+ const image=x=>x.match(/xlink:href="(data:image\\/png;base64,[^"]+)"/)?.[1];
+ const outlines=x=>[...x.matchAll(/<path\\b[^>]*d="([^"]+)"/g)].map(m=>m[1]);
+ assert(updated.includes('viewBox'), 'Logo has no viewBox: '+b);
+ assert.equal(image(updated),image(original),'Logo R3.1 altered canonical Nino raster: '+b);
+ assert.deepEqual(outlines(updated),outlines(original),'Logo R3.1 altered approved wordmark paths: '+b);
+}
+console.log('Nino Topo portal static R3.1 checks: PASS — '+required.length+' files, 5 destinations, 5 SVG flags, R3.1 logos preserving canonical Nino raster and wordmark outlines.');

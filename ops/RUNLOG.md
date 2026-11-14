@@ -20,3 +20,4 @@ Formaat:
 2026-11-14 18:10 | claude/fable | taak | BL-013 | review | mid | Portal R3 gebouwd als site-root, Italië op /italie/; browsercheck 4 formaten zonder fouten; wacht op evaluator en G1
 2026-11-14 18:30 | claude/fable | taak | BL-013 | fail(1) → herstel | mid | Evaluator FAIL: namen afgesneden op iPad, labels <13 px en contrast; hersteld en op 7 formaten gemeten (0 afgesneden, 0 overlap)
 2026-11-14 18:50 | evaluator/opus | taak | BL-013 | PASS (ronde 2) | mid | 9/9 criteria; restpunten (ondertitel-contrast, 320 px-rij, dode CSS) daarna hersteld; wacht op G1 en Vercel-koppeling
+2026-11-14 19:20 | claude/fable | taak | BL-013 | feedback Dennis | laag | Nino Welcome lager, vlaggen als pill; 7 formaten opnieuw gemeten (0 afgesneden, 0 overlap). Wijziging na evaluator-PASS, niet opnieuw geëvalueerd

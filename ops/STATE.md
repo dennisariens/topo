@@ -1,7 +1,7 @@
 # STATE — huidige stand
 
 > Max. 60 regels. Overschrijven, niet aanvullen. Historie staat in `RUNLOG.md`.
-> Bijgewerkt: 2026-11-13 · door: Claude (setup + besluiten Dennis)
+> Bijgewerkt: 2026-11-14 · door: Claude (planner, contract BL-005)
 
 ## Mijlpaal
 M0 Consolidatie, deadline vr 20 nov · **GO 13-11**
@@ -30,7 +30,10 @@ BL-001 staat in `review` (PASS met voorbehoud C4, shell ontbrak). Daarna: BL-002
 1. Domein: `ninotopo.nl` wordt gekocht door Dennis (13-11). Internationale domeinstrategie: BL-011
 2. Branch-opruiming na BL-001 (`ops/reports/branches.md`), kies: (a) alle 95 `archive`-rijen taggen en daarna verwijderen · (b) eerst lokale `main` bijwerken en `git cherry` draaien (vervolgtaak), dan pas verwijderen · (c) per rij doorlopen met Claude. Rapport: 107 branches, 0 `delete`, 95 `archive`, 3 `merge`, 9 `keep`. **Aanbeveling: (b)**: tags maken mag al zonder akkoord, en 29 lokale `pr*` zijn dubbelen van remote-branches (alleen `pr7`/`pr70` uniek)
 
+3. Integratie V3.0 + art naar `main` (BL-005, plan en proefintegratie; contract `ops/contracts/BL-005.md`). Het plan schrijven raakt geen gate; de uitvoering (BL-005b) wel, zolang `main` productie is. Kies: (a) BL-005b pas na G3 (BL-004 PASS) én BL-006 (productie alleen vanaf tag); dan blijft er één G4-akkoord over, op tag `v3.0.0` · (b) als (a), en Dennis keurt daarnaast `ops/reports/integratie.md` vooraf goed · (c) direct na het plan naar `main`, met de merge als G4. **Aanbeveling: (a)**: één contactmoment, en de merge is omkeerbaar zonder productie te raken
+4. M0-scope (zie risico hieronder). Kies: (a) portal-preview naar M1 · (b) deadline M0 naar vr 27 nov · (c) niets schuiven. **Aanbeveling: (a)**
+
 ## Bekende risico's
 - Artwork-goedkeuring is de bottleneck voor elk land
-- M0-deadline krap: na BL-001 nog 2 M-taken (BL-004, BL-005) plus iPad-test Dennis in 6 dagen. Nog niet verschoven; check bij de volgende planning, voorstel dan: portal-preview naar M1
+- M0-deadline dreigt te schuiven: na BL-005 volgen nog BL-004 (M), BL-005b (M, na G3), BL-006 (S) en de iPad-test van Dennis, in 6 dagen tot vr 20 nov. Voorstel: portal-preview naar M1 (beslissing 4)
 - `index.html` van 41 MB en een preview van 50 MB: geheugen op iPad 9

@@ -14,7 +14,7 @@ Regels:
 | BL-002 | Docs-inventaris: wat is actueel, wat naar `docs/archive/` | M0 | P0 | S | ready | Claude | Criteria: lijst plus verplaatsplan, `AGENTS.md`-verwijzingen blijven kloppen |
 | BL-003 | `ops/STATE.md` vullen uit `docs/v3/SPEC.md` en `OVERDRACHT.md` | M0 | P0 | S | ready | Claude | Criteria: ≤ 60 regels, elke bewering verwijst naar een pin of bestand |
 | BL-004 | V3.0 release-kandidaat: Hermes-hertest op de laatste pin plus checklist voor de iPad-test van Dennis | M0 | P0 | M | idee | Hermes | — |
-| BL-005 | Integratieplan `codex/topo-v3` + `art/master` → `main` | M0 | P0 | M | idee | Claude | — |
+| BL-005 | Integratieplan `codex/topo-v3` + `art/master` → `main` (plan plus droge proefintegratie op detached worktree; de merge zelf is vervolgtaak BL-005b) | M0 | P0 | M | ready | Claude (builder, Sonnet) | `ops/contracts/BL-005.md` (14 criteria: volgorde, conflicten via `merge-tree`, niets verloren in `DRY`, grootte per pad, lint/test/build in de dry-run, gates, rollback, geen refs geraakt) |
 | BL-006 | Vercel: productie = `main`, preview per PR, portal op een eigen pad | M0 | P1 | S | idee | Claude | — |
 | BL-007 | Runtime-migratie stap 1: karakterisering op de V3.0-pin | M1 | P1 | M | idee | Claude | — |
 | BL-008 | Speeltest-protocol met 2–3 kinderen (taken, observatie, vragen) | M0 | P1 | S | idee | Claude | — |

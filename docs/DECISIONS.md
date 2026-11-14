@@ -91,3 +91,7 @@
 ## 2026-11-13 — Operating model: Claude leidt het project, `ops/` is de bron voor werkwijze
 
 **Decision** Dennis is opdrachtgever (G0 richting, G1 design, G4 live); Claude is lead project, dev en design. Werk loopt via `ops/BACKLOG.md` → sprintcontract → bouw → onafhankelijke evaluator → `main`. Roadmap M0–M3 in `ops/ROADMAP.md` (GO). Doelgroep B2C én B2B; hoofddoel: kinderen leren topografie op een leuke manier, gemeten via leren én plezier; testkinderen groep 7 (10–11 jaar). Code voor Frankrijk wacht op het landpakket-contract (M1); FR-data, research en artwork mogen parallel op Codex. **Reason** `main` stond sinds 28-09 stil met 71 branches en parallelle werkstromen; er kwam geen versie af. **Status** ACTIVE. **Supersedes** `docs/ROADMAP.md` als roadmap en `docs/PROJECT_STATE.md` als statusbron (worden in BL-002 gearchiveerd).
+
+## 2026-11-14 — Favicon R3 vastgelegd
+
+**Decision** De favicon en app-iconen gebruiken de rode Vespa in zijaanzicht op een warme ivoorkleurige achtergrond, zonder Nino. Geldt voor `favicon.ico`, PNG 16/32/48, Apple Touch 180 en app-iconen 192/512. Doelpad: `assets/nino-topo/v3-r3/brand/icons/`. **Reason** Het zijaanzicht blijft op 16 px beter herkenbaar dan de driekwart-Vespa. Het is een nieuwe illustratie op basis van de referenties, geen pixelkopie van de R2-Vespa. **Status** ACTIVE (akkoord eigenaar, 14-11, in ChatGPT-chat "Website controleren"). **Supersedes** de driekwart-Vespa-favicon (`assets/nino/app-icon/`).

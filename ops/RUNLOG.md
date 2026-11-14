@@ -16,5 +16,6 @@ Formaat:
 2026-11-14 16:30 | claude/fable+sonnet | taak | BL-005 | PASS* | mid | Integratieplan + proefintegratie (DRY df72c39, lint/test/build 0); run 1 FAIL op C11 (sync -X theirs overschrijft art), run 2 PASS; *uitsluitingen breken ±240 doc-links, door hoofdsessie in rapport gezet, niet herevalueerd; schijf vol → nulmeting sparse
 2026-11-14 17:00 | claude/fable | domein | BL-009 | — | laag | ninotopo.nl gekocht door Dennis; BL-009 gedeblokkeerd, wacht op DNS-gegevens
 2026-11-14 17:40 | claude/fable | besluit | BL-012 | — | laag | Favicon R3 (Vespa zijaanzicht) vastgelegd in DECISIONS; assets nog niet in repo
+2026-11-14 17:50 | claude/fable | art | BL-012 | — | laag | R3-merkassets (favicon, Nino Welcome, Logo R3.1) op art/master b9e4a38; logo-SVG's bevatten ingebedde rasterafbeelding (525 KB)
 2026-11-14 18:10 | claude/fable | taak | BL-013 | review | mid | Portal R3 gebouwd als site-root, Italië op /italie/; browsercheck 4 formaten zonder fouten; wacht op evaluator en G1
 2026-11-14 18:30 | claude/fable | taak | BL-013 | fail(1) → herstel | mid | Evaluator FAIL: namen afgesneden op iPad, labels <13 px en contrast; hersteld en op 7 formaten gemeten (0 afgesneden, 0 overlap)

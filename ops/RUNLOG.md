@@ -13,3 +13,4 @@ Formaat:
 2026-11-14 01:30 | claude/sonnet | night | BL-001 | PASS* | mid | Branch-inventaris 107 branches (0 delete, 95 archive); *C4 indirect getoetst, cherry niet gedraaid (sandbox)
 2026-11-14 08:50 | claude/opus | nachtrun-fix | — | — | laag | Nacht 1 geanalyseerd: werkt end-to-end, stopte na BL-001 door te smalle Bash-rechten; fix: bypassPermissions + deny-lijst, main fetchen, machine-feiten in rapport
 2026-11-14 11:30 | claude/opus | model-routing | — | — | laag | Subagents builder (Sonnet), scout (Haiku), codex-worker (Codex); hoofdsessie orkestreert op Opus; TOPO_MAIN_MODEL-override
+2026-11-14 16:30 | claude/fable+sonnet | taak | BL-005 | PASS* | mid | Integratieplan + proefintegratie (DRY df72c39, lint/test/build 0); run 1 FAIL op C11 (sync -X theirs overschrijft art), run 2 PASS; *uitsluitingen breken ±240 doc-links, door hoofdsessie in rapport gezet, niet herevalueerd; schijf vol → nulmeting sparse

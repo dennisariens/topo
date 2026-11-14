@@ -1,5 +1,5 @@
 {
-  "status": "DRAFT_REVIEW_NOT_APPROVED",
+  "status": "LOGO_R3_1_OWNER_APPROVED_PORTAL_INTEGRATION_QA_PENDING",
   "createdFromBranch": "art/nino-topo-website-v1",
   "r2": {
     "primary": {
@@ -27,13 +27,15 @@
     "pathsRetained": true,
     "r3ImageReducedBy": "18%",
     "browserScreenshots": "pending",
-    "ownerSignoff": false,
+    "ownerSignoff": true,
     "productionDeployment": false,
     "wordmarkByteIdentical": true,
     "sourceInvariantTest": "qa/check-logo-r3.mjs",
     "binaryExports": "pending owner visual acceptance",
     "identityVersion": "R3.1 exact canonical Nino",
     "centeredAlignment": "image center y=299.5; wordmark visible center approximately y=301; TOPO center approximately y=300",
-    "reviewPage": "qa/header-review-r3-1.html"
+    "reviewPage": "qa/header-review-r3-1.html",
+    "ownerSignoffScope": "R3.1 centered logo SVGs only; not entire portal or future welcome artwork",
+    "ownerApprovalDate": "2026-11-14"
   }
 }

@@ -1,4 +1,8 @@
 {
-  "buildCommand": "npm run build",
-  "outputDirectory": "dist"
+  "buildCommand": "npm run build && npm run build:site",
+  "outputDirectory": "dist",
+  "redirects": [
+    { "source": "/print.html", "destination": "/italie/print.html", "permanent": false },
+    { "source": "/printboek.pdf", "destination": "/italie/printboek.pdf", "permanent": false }
+  ]
 }

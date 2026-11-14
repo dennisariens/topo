@@ -29,5 +29,14 @@ Dit bestand is bewust kort, want het wordt elke sessie geladen. Lees de rest **a
 | Nieuwe feature | `ops/playbooks/FEATURE.md` |
 | Wat waar onthouden wordt | `ops/MEMORY.md` |
 
-## Model en credits
-Plan en review op Opus. Bouwen, tests en refactors op Sonnet. Zoekwerk en samenvatten op Haiku. Zie `ops/HARNESS.md` §4.
+## Model en credits — jij orkestreert, je delegeert
+Jij (de hoofdsessie) plant en beslist, en bouwt zelf niet. Delegeer:
+| Werk | Subagent | Model |
+|---|---|---|
+| Contract schrijven | `planner` | Opus |
+| Bouwen volgens contract | `builder` | Sonnet |
+| Toetsen | `evaluator` | Opus |
+| Design-review | `design-critic` | Opus |
+| Zoeken, logs, samenvatten | `scout` | Haiku |
+| Eenvoudige data, docs, kleine fixes | `codex-worker` | Codex (OpenAI) |
+Uitzondering: een taak met `Bouwer: hoofdsessie` in het contract (bijv. een zware refactor die Dennis met Fable doet). Zie `ops/HARNESS.md` §4.

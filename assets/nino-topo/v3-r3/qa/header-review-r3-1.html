@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Nino TOPO R2 ↔ R3 ↔ R3.1 header review — no integration</title>
+<style>
+:root{font-family:system-ui,-apple-system,BlinkMacSystemFont,sans-serif;color:#171B20}
+*{box-sizing:border-box}body{margin:0;background:#eaeae7;padding:30px}
+h1{font-size:22px;margin:0 0 12px}p{font-size:14px;line-height:1.5;max-width:900px}
+h2{font-size:16px;margin:28px 0 12px}h3{font-size:13px;margin:0 0 10px}
+.surface{background:#fff;border:1px solid #d7d7d3;border-radius:12px;margin:10px 0 25px;padding:18px;overflow-x:auto}
+.compare{display:grid;grid-template-columns:repeat(3,minmax(280px,1fr));gap:18px;min-width:880px}
+.card{border:1px solid #dededb;border-radius:9px;padding:16px;overflow-x:auto}
+.header{display:flex;align-items:center;justify-content:space-between;border:1px solid #ddd;height:80px;padding:0 32px;max-width:100%}
+.header img{height:52px;max-width:330px;width:auto;display:block}
+.nav{font-size:13px;color:#777}.mobile{width:390px;height:66px;padding:0 16px}.mobile img{height:40px}.tablet{width:1024px;height:76px}.tablet img{height:48px}
+.native{width:1440px;max-width:none}.native2{width:2880px;max-width:none;height:160px;padding:0 64px}.native2 img{height:104px}.native2 .nav{font-size:26px}
+.tag{font:12px ui-monospace,SFMono-Regular,monospace;color:#666;margin-bottom:7px}
+.notice{background:#fff8e4;border-left:3px solid #d5a556;padding:12px;margin:10px 0}
+</style></head><body>
+<h1>NINO TOPO • R3.1 optical-center review</h1>
+<p><strong>Draft review only.</strong> R2 wordmark paths and the exact original Nino/Vespa raster are embedded unchanged in both R3 and R3.1. R3.1 vertically centers the wordmark and illustration rather than aligning their lower edges. Do not integrate before owner sign-off.</p>
+<div class="notice">This is a browser review fixture, NOT screenshots. Open from repository checkout to test at native browser zoom 100% and 200%, and capture actual Chrome/Safari/iPad screenshots for signoff.</div>
+<script>
+const a={primary:'../../v3-r2/brand/logo/logo-01-primary.svg',compact:'../../v3-r2/brand/logo/logo-02-compact.svg'};
+const b={primary:'../brand/logo-r3/logo-01-primary-r3.svg',compact:'../brand/logo-r3/logo-02-compact-r3.svg'};
+const c={primary:'../brand/logo-r3/logo-01-primary-r3-1.svg',compact:'../brand/logo-r3/logo-02-compact-r3-1.svg'};
+const configs=[['Desktop 1440 CSS px • 1×','native','primary'],['Desktop 2880 physical px • 2×','native2','primary'],['Tablet 1024 CSS px','tablet','primary'],['Mobile 390 CSS px','mobile','compact']];
+for(const bg of ['#FAFAF9','#FFFFFF']){
+ const section=document.createElement('section');section.className='surface';section.style.background=bg;
+ const title=document.createElement('h2');title.textContent='Background '+bg;section.append(title);
+ for(const [label,cls,key] of configs){
+ const row=document.createElement('section');const t=document.createElement('h3');t.textContent=label;row.append(t);
+ const cmp=document.createElement('div');cmp.className='compare';
+ for(const [ver,path] of [['R2 approved Nino',a[key]],['R3 baseline draft',b[key]],['R3.1 centered, original Nino',c[key]]]){
+ const card=document.createElement('div');card.className='card';const text=document.createElement('div');text.className='tag';text.textContent=ver;card.append(text);
+ const header=document.createElement('div');header.className='header '+cls;header.style.background=bg;
+ const img=document.createElement('img');img.src=path;img.alt=ver+' '+key;
+ const nav=document.createElement('span');nav.className='nav';nav.textContent='Ontdekken　　Reis';header.append(img,nav);card.append(header);cmp.append(card)}
+ row.append(cmp);section.append(row)}
+ document.body.append(section)}
+</script></body></html>

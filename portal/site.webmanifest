@@ -1,0 +1,13 @@
+{
+  "name": "Nino Topo",
+  "short_name": "Nino Topo",
+  "lang": "nl",
+  "start_url": "./",
+  "display": "browser",
+  "background_color": "#FAFAF9",
+  "theme_color": "#FAFAF9",
+  "icons": [
+    { "src": "./assets/nino-topo/v3-r3/brand/icons/app-icon-192.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "./assets/nino-topo/v3-r3/brand/icons/app-icon-512.png", "sizes": "512x512", "type": "image/png" }
+  ]
+}

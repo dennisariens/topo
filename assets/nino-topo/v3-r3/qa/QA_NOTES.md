@@ -24,3 +24,24 @@ Status: **REVIEW ONLY** — never replace the R2 production files until owner ap
 - Export versioned R3 PNG/WebP only after optical visual acceptance; the SVG work alone is NOT release ready.
 - Welcome image candidates, favicon and Safari pinned tab need separate owner and real-device checks.
 - No merge and no production deployment.
+
+
+## R3.1 centered correction — 14 November 2026
+The generated standalone illustration in chat was **not** canonically correct: it replaced Nino's face, cap and clothing. It is not a production asset and must never be integrated. 
+
+The production correction uses **only the exact unchanged canonical raster embedded in the approved R2 SVG**: Nino has the original goggles, aviator helmet, blue shirt, scarf, olive trousers and red Vespa. No new drawing, image generation or photographic reinterpretation.
+
+Created:
+- `brand/logo-r3/logo-01-primary-r3-1.svg`
+- `brand/logo-r3/logo-02-compact-r3-1.svg`
+- `qa/header-review-r3-1.html` (R2/R3/R3.1 at actual CSS sizes)
+
+Changed vs R3:
+- Original R2 embedded image bytes **identical**; red Vespa and Nino appearance fully unchanged.
+- Original nino. and TOPO path data **identical**.
+- Original 18% size reduction remains; image x80/y70/410×459, image box midpoint y299.5.
+- Wordmark group y275.192 → y120.192, placing visible lettering midpoint near y301 rather than bottom-aligning it.
+- TOPO path transforms y515.400 → y360.400; visual midpoint near y300.
+- Divider y205 / h190 / 5px, centered at y300, lavender #9781D5, opacity 0.84.
+
+**Review:** Use `qa/header-review-r3-1.html`, not the AI-generated composition. Compare at 100% browser zoom on desktop and mobile. If approved, export SVG/PNG/WebP variants; do not overwrite R2 assets or merge/deploy yet.

@@ -8,7 +8,7 @@ import { fileURLToPath } from 'node:url';
 
 const root = resolve(dirname(fileURLToPath(import.meta.url)), '..');
 const dist = join(root, 'dist');
-if (!existsSync(join(dist, 'index.html'))) throw new Error('Draai eerst `npm run build` (dist/index.html ontbreekt).');
+if (!existsSync(join(dist, 'index.html')) || !readFileSync(join(dist, 'index.html'), 'utf8').includes('Topo Italië')) throw new Error('Draai eerst `npm run build`: dist/index.html moet de Italië-app zijn.');
 
 // 1. Italië-app naar /italie/
 const italie = join(dist, 'italie');

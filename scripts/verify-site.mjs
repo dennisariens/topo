@@ -11,7 +11,7 @@ const must = f => assert(existsSync(join(dist, f)) && statSync(join(dist, f)).si
 assert(html.includes('Waar gaan we vandaag naartoe?'), 'dist/index.html is niet het portal');
 assert(!html.includes('../'), 'Portal verwijst buiten de site-root');
 assert(html.includes("italy:'./italie/'") && html.includes('france:null'), 'Routecontract gewijzigd (Italië → ./italie/, Frankrijk nog geen route)');
-for (const m of html.matchAll(/(?:src|href)="\.\/([^"#'+]+\.[a-z0-9]+)"/g)) must(m[1]);
+for (const m of html.matchAll(/(?:src|srcset|href)="\.\/([^"#'+]+\.[a-z0-9]+)"/g)) must(m[1]);
 for (const c of ['italy', 'france', 'spain', 'germany', 'netherlands']) for (const k of ['destination', 'hover']) must(`assets/nino-topo/v3-r2/destinations/${c}-${k}.webp`);
 for (const f of ['it', 'fr', 'es', 'de', 'nl']) must(`assets/flags/${f}.svg`);
 for (const i of JSON.parse(readFileSync(join(dist, 'site.webmanifest'), 'utf8')).icons) must(i.src.slice(2));

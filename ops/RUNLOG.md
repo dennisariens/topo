@@ -17,3 +17,4 @@ Formaat:
 2026-11-14 17:00 | claude/fable | domein | BL-009 | — | laag | ninotopo.nl gekocht door Dennis; BL-009 gedeblokkeerd, wacht op DNS-gegevens
 2026-11-14 17:40 | claude/fable | besluit | BL-012 | — | laag | Favicon R3 (Vespa zijaanzicht) vastgelegd in DECISIONS; assets nog niet in repo
 2026-11-14 18:10 | claude/fable | taak | BL-013 | review | mid | Portal R3 gebouwd als site-root, Italië op /italie/; browsercheck 4 formaten zonder fouten; wacht op evaluator en G1
+2026-11-14 18:30 | claude/fable | taak | BL-013 | fail(1) → herstel | mid | Evaluator FAIL: namen afgesneden op iPad, labels <13 px en contrast; hersteld en op 7 formaten gemeten (0 afgesneden, 0 overlap)

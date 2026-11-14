@@ -19,3 +19,4 @@ Dit is waar het systeem slimmer wordt. Elke FAIL, elke correctie van Dennis en e
 ---
 2026-11-13 | analyse | Een week werk zonder versie die af is | 6 parallelle werkstromen, main staat sinds 28-09 stil, overdrachten via chats | Eén actieve mijlpaal, max. 5 open branches, integreren naar main is onderdeel van "klaar" | → gepromoveerd naar `GIT_RELEASE.md` §1
 2026-11-13 | analyse | Credits snel op | Parallelle Opus-agents plus Codex op dezelfde scope, lange docs elke sessie herlezen | Modelrouting en één bouwer per scope, CLAUDE.md kort | → gepromoveerd naar `HARNESS.md` §4
+2026-11-14 | FAIL (nacht 1) | Nachtrun stopte na 1 taak, cherry-check onmogelijk | allowlist per Bash-commando te smal (pipes/samengestelde git geweigerd) en lokale main verouderd | Worktree met bypassPermissions + harde deny-lijst; lokale main fetchen; vergelijken met origin/main | → gepromoveerd naar `ops/scripts/nightly.sh`

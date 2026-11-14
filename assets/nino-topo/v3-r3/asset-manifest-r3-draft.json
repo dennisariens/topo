@@ -18,7 +18,9 @@
   "r3": {
     "logo01": "brand/logo-r3/logo-01-primary-r3.svg",
     "logo02": "brand/logo-r3/logo-02-compact-r3.svg",
-    "logo03": "brand/logo-r3/logo-03-wordmark-r3.svg"
+    "logo03": "brand/logo-r3/logo-03-wordmark-r3.svg",
+    "logo01_centered": "brand/logo-r3/logo-01-primary-r3-1.svg",
+    "logo02_centered": "brand/logo-r3/logo-02-compact-r3-1.svg"
   },
   "checks": {
     "originalsUnchanged": true,
@@ -29,6 +31,9 @@
     "productionDeployment": false,
     "wordmarkByteIdentical": true,
     "sourceInvariantTest": "qa/check-logo-r3.mjs",
-    "binaryExports": "pending owner visual acceptance"
+    "binaryExports": "pending owner visual acceptance",
+    "identityVersion": "R3.1 exact canonical Nino",
+    "centeredAlignment": "image center y=299.5; wordmark visible center approximately y=301; TOPO center approximately y=300",
+    "reviewPage": "qa/header-review-r3-1.html"
   }
 }

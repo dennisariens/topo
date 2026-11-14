@@ -18,13 +18,15 @@ Datum: 2026-11-14 · contract `ops/contracts/BL-002.md` · bouwer: builder (Sonn
 | Hash van de tags vóór de run | `90e8b859d85a0e06932bf79ba5491e91ebc76d1e` | `git for-each-ref refs/tags | sha1sum` (moet na de run gelijk zijn, criterium 14) |
 | Terugval | niet nodig | `V ∩ E` is niet gemeten omdat `D = DRY` bestaat; `comm -23 <(git ls-tree -r --name-only V | sort) <(git ls-tree -r --name-only D | sort) | wc -l` geeft 2184, gelijk aan de waarde in `integratie.md` |
 
+Gewijzigde bestanden (criterium 14): zes, namelijk `ops/reports/docs-inventaris.md`, `ops/BACKLOG.md`, `ops/STATE.md`, `ops/RUNLOG.md`, `ops/LEARNINGS.md` en `ops/contracts/BL-002.md`. Het contract zelf staat maar vijf bestanden toe; `ops/contracts/BL-002.md` is bewust als zesde meegecommit (het was ongecommit, zoals bij eerdere taken), en inhoudelijk niet gewijzigd.
+
 Gebruikte commando's: alleen lezend (`rev-parse`, `cat-file`, `ls-tree`, `show`, `log`, `diff`, `grep`, `for-each-ref`, `cat-file --batch` in het linkscript). Geen `fetch`, `gc`, `prune`, tag, push, merge of `git mv`. Schrijvend: `switch -c t/BL-002-docs-inventaris` en `add`/`commit` van de toegestane bestanden.
 
 Afwijkingen van het contract:
 1. `docs/ASSET_BRIEF.md` staat in `D` maar niet in `V` en niet in `M`: het komt uit `art/master` (`A`, commit `f163e90`, 2026-11-12). Het contract zegt dat `A` hier geen markdown toevoegt; dat klopt voor dit ene bestand niet. De datum in de tabel komt uit `A`. Voor de overige 69 bestanden van `I` is de datum uit `V` genomen.
 2. De `AGENTS.md` in `D` heeft andere regelnummers dan die van `M` (het contract noemt r.5, r.11, r.14 voor `M`). In `D` zijn dat r.9, r.15 en r.18. De tabel in `## Verwijzingen in projectregels` geeft beide versies.
 3. De bestanden voor criterium 8 komen uit `D` en `M` apart (`ops/*.md` van `D` is ouder dan dat van `M`); beide zijn gemeten.
-4. De definitie van (c) is iets ruimer dan het contract: een link is ook "(c) door het eigen plan" kapot als het **bronbestand** wordt verplaatst en de relatieve link daardoor niet meer klopt (zie `## Linkanalyse`).
+4. De contractdefinitie van (c) omvat alleen c-doel (het doel wordt verplaatst: 4 links). Het script telt daarnaast c-bron (het bronbestand zelf wordt verplaatst en de relatieve link breekt daardoor: 21 links); samen zijn dat de 25 onder (c).
 
 ## Samenvatting
 - Inventaris: 70 bestanden: 47 `actueel`, 21 `archief`, 2 `vervangen`. Verplaatsplan: 23 `git mv`'s (alleen `.md`; alles wat geen markdown is blijft staan).
@@ -302,15 +304,17 @@ for src, i, img, t, cs in links:
     here = [(k, c) for k, c in cs if exists(c, Dp, Dd)]
     if here:
         if any(after_move(src, t, k, c) for k, c in here): continue
-        cause = 'c'
+        if any(c in moved for k, c in here): cause = 'c'    # doel verplaatst
+        elif src in moved: cause = 'cb'                       # bronbestand verplaatst
+        else: cause = 'd'                                     # overig
     elif any(exists(c, Vp, Vd) for k, c in cs): cause = 'a'
     else: cause = 'b'
     broken.append((src, i, img, t, cs[0][1], cause))
-tot = {k: sum(1 for b in broken if b[5] == k) for k in 'abc'}
+tot = {k: sum(1 for b in broken if b[5] == k) for k in ('a', 'b', 'c', 'cb', 'd')}
 print(f'md-bestanden gescand: {len(mdfiles)}')
 print(f'links gecontroleerd: {len(links)}')
 print(f'verplaatste bronnen in plan: {len(moved)}')
-print(f'gebroken totaal: {len(broken)}  (a) doel in E: {tot["a"]}  (b) al kapot in V: {tot["b"]}  (c) door eigen plan: {tot["c"]}  (d) overig: 0')
+print(f'gebroken totaal: {len(broken)}  (a) doel in E: {tot["a"]}  (b) al kapot in V: {tot["b"]}  (c) door eigen plan: {tot["c"] + tot["cb"]} [c-doel {tot["c"]}, c-bron {tot["cb"]}]  (d) overig: {tot["d"]}')
 def tag(path):
     for pre, tg in (('docs/qa/', 'archive/v3-qa'), ('docs/visual/', 'archive/v3-visual'), ('output/installers/', 'archive/v3-installers'), ('output/html/', 'archive/v3-output-html')):
         if path.startswith(pre): return tg
@@ -318,9 +322,9 @@ def tag(path):
 groups = {}
 for src, i, img, t, c0, cause in broken:
     if src in moved: g = 'laten (bron is archief/vervangen)'
-    elif cause == 'c': g = '3 herschrijven naar docs/archive/'
+    elif cause in ('c', 'cb'): g = '3 herschrijven naar docs/archive/'
     elif cause == 'a': g = '2 herschrijven naar tag ' + (tag(c0) or '?')
-    else: g = '4 link weghalen (al kapot in V)'
+    else: g = '4 link weghalen (al kapot in V, of overig)'
     groups[g] = groups.get(g, 0) + 1
 for g in sorted(groups): print(f'groep {g}: {groups[g]}')
 if MODE == '--detail':
@@ -338,7 +342,7 @@ if MODE == '--groups':
 md-bestanden gescand: 101
 links gecontroleerd: 338
 verplaatste bronnen in plan: 23
-gebroken totaal: 281  (a) doel in E: 256  (b) al kapot in V: 0  (c) door eigen plan: 25  (d) overig: 0
+gebroken totaal: 281  (a) doel in E: 256  (b) al kapot in V: 0  (c) door eigen plan: 25 [c-doel 4, c-bron 21]  (d) overig: 0
 groep 2 herschrijven naar tag archive/v3-qa: 56
 groep 2 herschrijven naar tag archive/v3-visual: 16
 groep 3 herschrijven naar docs/archive/: 4
@@ -349,9 +353,9 @@ Definitie van de groepen staat in `## Besluit per gebroken link`. Vergelijking m
 - `docs/v3/AUDIT.md:24` en `docs/v3/GE01.md:3` → `docs/qa/v3-reis/`: beide aanwezig (oorzaak a).
 - `docs/MAP_SYSTEM.md:83` → `docs/visual/map-picker-58-revision/README.md`: aanwezig (a). `docs/MAP_SYSTEM.md:58` en `:64` zijn nieuw: ze wijzen naar `MAP_SELECTION_HOTFIX.md` en `MAP_PICKER_58.md`, die door het plan worden verplaatst (c).
 - `docs/DECISIONS.md:202` en `:226` → `docs/qa/nino-v2-closure-67/README.md` en `docs/qa/ux-20261107/README.md`: aanwezig (a); dit zijn de enige twee `qa/`-links in `DECISIONS.md` (`git grep -nE '\]\([^)]*qa/' D -- docs/DECISIONS.md`).
-- `docs/qa/v3-stijlbeeld/README.md`: 47 links, 42 kapot. Daarvan zijn 41 de links naar bestanden in `docs/qa/v3-stijlbeeld/` zelf (het getal 41 uit `integratie.md`), plus 1 naar `../v3-glas/README.md` (r.90; `docs/qa/v3-glas/` staat in `V`, niet in `D`). Het contract noemt 46 links; het script telt er 47. Het verschil van 1 is de r.90-link `../v3-glas/README.md` die in de eerdere telling vermoedelijk niet is meegeteld; dit is niet geverifieerd.
+- `docs/qa/v3-stijlbeeld/README.md`: 47 links, 42 kapot. Daarvan zijn 41 de links naar bestanden in `docs/qa/v3-stijlbeeld/` zelf (het getal 41 uit `integratie.md`), plus 1 naar `../v3-glas/README.md` (r.90), die buiten de eigen map wijst (`docs/qa/v3-glas/` staat in `V`, niet in `D`). Verklaring van het verschil met het contract (46 links, 41 kapot): het contract telde alleen links binnen de map; de evaluator heeft dit bevestigd.
 - Het aantal (a) is 256 (contract: ±240, grens 30% = 168 tot 312): binnen de grens.
-- De regexp-telling van het contract (`\]\([^)h#][^)]*\)`) levert 338 treffers; het script controleert 338 links. De 21 `http(s)`-links vallen buiten beide.
+- De regexp-telling van het contract (`\]\([^)h#][^)]*\)`) levert 338 treffers met `git grep -ohE` (elke treffer apart, `-o`); met `git grep -nE` zijn het 171 regels, want een regel kan meerdere links hebben. Het script controleert 338 links. De 21 `http(s)`-links vallen buiten beide.
 
 ## Besluit per gebroken link
 Elke gebroken link valt in precies één groep. Een bron is "archief" als hij in het verplaatsplan staat (status `archief` of `vervangen`), anders "actueel" (ook alle bestanden buiten `I`: `assets/**/README.md`, `work-sync/`, `ops/`, `docs/qa/**/README.md`).
@@ -372,7 +376,7 @@ Groep 2 in cijfers: 56 links naar `docs/qa/` (tag `archive/v3-qa`), 16 naar `doc
 ## docs/qa/v3-reis/
 - In `V`: 33 bestanden, 15 956 760 bytes (`git ls-tree -r -l 55b4d86ea15fc3824c4180b99cb9a18167fcccd2 -- docs/qa/v3-reis/ | awk '{n++; s+=$4} END{print n, s}'` geeft `33 15956760`).
 - Links ernaar in `D`: 3 in totaal, waarvan 2 vanuit `actueel`-bestanden (`docs/v3/AUDIT.md:24` en `docs/v3/GE01.md:3`) en 1 vanuit bestanden die naar het archief gaan (`docs/PROJECT_STATE.md:27`).
-- **Advies: niet meenemen in BL-005b.** Reden: slechts 2 links raken `actueel`-documenten en die kunnen naar de tag `archive/v3-qa` wijzen (groep 2); de overige 1 staat in een document dat naar het archief gaat. Effect op de repogrootte: meenemen is +15 956 760 bytes (± 16.0 MB), dat is +26% bovenop de 60 590 182 B `docs/qa/` die al meegaat en +3.2% van `DRY` (500 273 227 B = 1 355 802 195 B van `V` min 855 528 968 B uitgesloten). Niet meenemen houdt `docs/qa/` bij de 129 al bepaalde bestanden en laat het bewijs bereikbaar via de tag. Het is dus een kleine vermindering, geen noodzaak voor de build; afwegen blijft aan Dennis bij het G4-moment van BL-005b.
+- **Advies: niet meenemen in BL-005b.** Reden: slechts 2 links raken `actueel`-documenten en die kunnen naar de tag `archive/v3-qa` wijzen (groep 2); de overige 1 staat in een document dat naar het archief gaat. Effect op de repogrootte: meenemen is +15 956 760 bytes (± 16.0 MB), dat is +26% bovenop de 60 590 182 B `docs/qa/` die al meegaat en +2.8% van `DRY` (572 336 202 B, 922 bestanden: `git ls-tree -r -l df72c393e62a0c1e918fdf0e40dac1f7557069f1 | awk '{s+=$4} END{print s}'`; de 500 273 227 B uit `V` min `E` is een andere maat, want in `DRY` zit ook de inhoud van `art/master`). Niet meenemen houdt `docs/qa/` bij de 128 bestanden die nu al meegaan (`git ls-tree -r df72c393e62a0c1e918fdf0e40dac1f7557069f1 -- docs/qa | wc -l`; `docs/visual/` heeft er 1 extra) en laat het bewijs bereikbaar via de tag. Het is dus een kleine vermindering, geen noodzaak voor de build; afwegen blijft aan Dennis bij het G4-moment van BL-005b.
 
 ## Uitvoering
 - **Wanneer:** vervolgtaak **BL-002b** draait op `main`, direct na BL-005b stap 2 (de squash van `V`), of als laatste commit in dezelfde PR.

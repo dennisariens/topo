@@ -1,0 +1,14 @@
+36dced9d45ca09e2f3174902cc4880ba8ea9baad049280aebd00e198bb7fa269  ./brand/characters/nino-welcome-r3.png
+f9ff8991b66ed0b2e302cfccb8d25697a226e88a722b921449ca3b173a4c8492  ./brand/characters/nino-welcome-r3.webp
+1a8e168a806e632cc169a43f8251b1f89244544b93795d2dbd47c6050bb50e9d  ./brand/icons/app-icon-192.png
+3d83a0555a93152af83b54ad966a17eb9fb0887a1049508198d96e7b83056988  ./brand/icons/app-icon-512.png
+67fe2dca18150209354840fd7221ad35ad37e17864117b23f6021b0eddfa3b30  ./brand/icons/apple-touch-icon-180.png
+9fea41b1be5ed93eabb92fcd5c061b160229dbb59a9060ae2ae26be96d0983ad  ./brand/icons/favicon-16.png
+15f37d60e3ba76d8b3f7841cda51caef99b2cbfb82103467ca6530e03f4fee03  ./brand/icons/favicon-32.png
+2ed26b813725fd237a282de8b015ec1a06ee84e05a51bda5922ea0a4f1b80192  ./brand/icons/favicon-48.png
+57ee477e6776ec49c4edfe7166c5b93529ebe8b2c7377025721370b8d2b5fb63  ./brand/icons/favicon-r3-master-1024.png
+6431b5f265f5d4fa3e78d3f48d75b7c9a7572117ea9f63621d2f2fdbe302011a  ./brand/icons/favicon-r3-master-1024.webp
+da686e09eb2dd389487207d7093df974ea80d675db0d8cd6f4b967bc01cad305  ./brand/icons/favicon.ico
+7acfee009011fd86f068e1fa7258c06abb0ee2b36f3c1fce013e3dc5791eff6d  ./brand/logo-r3/logo-01-primary-r3-1.svg
+0c512022bed84ec71927dc8d057ee159215ccb62179e792b67eb531e04eab4e6  ./brand/logo-r3/logo-02-compact-r3-1.svg
+5c4140a6ba1946b9646de9d55c1cffa69c7d09297c8c737d75be4b9e4240fe93  ./manifest-upload.json

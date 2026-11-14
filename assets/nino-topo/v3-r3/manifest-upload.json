@@ -1,0 +1,16 @@
+{
+  "asset_pack": "Nino Topo R3 — approved Welcome & Favicon",
+  "status": "owner-approved artwork, to be committed to art/master",
+  "logo_note": "Approved Logo R3.1 SVGs already live on art/nino-topo-r3-refinements. Copy their exact files to art/master; do not recreate from images.",
+  "welcome": {
+    "file": "assets/nino-topo/v3-r3/brand/characters/nino-welcome-r3.webp",
+    "master": "assets/nino-topo/v3-r3/brand/characters/nino-welcome-r3.png",
+    "dimensions": "1122x1402",
+    "identity": "owner-approved 2026-11-14"
+  },
+  "favicon": {
+    "dir": "assets/nino-topo/v3-r3/brand/icons",
+    "status": "owner-approved 2026-11-14"
+  },
+  "release": "No merge, website integration, or deployment until follow-up approval."
+}

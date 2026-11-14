@@ -1,0 +1,41 @@
+{
+  "status": "LOGO_R3_1_OWNER_APPROVED_PORTAL_INTEGRATION_QA_PENDING",
+  "createdFromBranch": "art/nino-topo-website-v1",
+  "r2": {
+    "primary": {
+      "path": "assets/nino-topo/v3-r2/brand/logo/logo-01-primary.svg",
+      "gitBlob": "7b37b9b52c0cbcb752c90732978b984c0eff88a6"
+    },
+    "compact": {
+      "path": "assets/nino-topo/v3-r2/brand/logo/logo-02-compact.svg",
+      "gitBlob": "0926ed3422bfa2bc20cce59b8517688ef6ac5663"
+    },
+    "wordmark": {
+      "path": "assets/nino-topo/v3-r2/brand/logo/logo-03-wordmark.svg",
+      "gitBlob": "964156f36c23044027450f24cf59e2e44ca508db"
+    }
+  },
+  "r3": {
+    "logo01": "brand/logo-r3/logo-01-primary-r3.svg",
+    "logo02": "brand/logo-r3/logo-02-compact-r3.svg",
+    "logo03": "brand/logo-r3/logo-03-wordmark-r3.svg",
+    "logo01_centered": "brand/logo-r3/logo-01-primary-r3-1.svg",
+    "logo02_centered": "brand/logo-r3/logo-02-compact-r3-1.svg"
+  },
+  "checks": {
+    "originalsUnchanged": true,
+    "pathsRetained": true,
+    "r3ImageReducedBy": "18%",
+    "browserScreenshots": "pending",
+    "ownerSignoff": true,
+    "productionDeployment": false,
+    "wordmarkByteIdentical": true,
+    "sourceInvariantTest": "qa/check-logo-r3.mjs",
+    "binaryExports": "pending owner visual acceptance",
+    "identityVersion": "R3.1 exact canonical Nino",
+    "centeredAlignment": "image center y=299.5; wordmark visible center approximately y=301; TOPO center approximately y=300",
+    "reviewPage": "qa/header-review-r3-1.html",
+    "ownerSignoffScope": "R3.1 centered logo SVGs only; not entire portal or future welcome artwork",
+    "ownerApprovalDate": "2026-11-14"
+  }
+}

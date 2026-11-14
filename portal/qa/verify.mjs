@@ -52,8 +52,8 @@ const newLogo='assets/nino-topo/v3-r3/brand/logo-r3/';
 for(const [a,b] of [['logo-01-primary.svg','logo-01-primary-r3-1.svg'],['logo-02-compact.svg','logo-02-compact-r3-1.svg']]){
  const original=readFileSync(resolve(repo,baseLogo+a),'utf8');
  const updated=readFileSync(resolve(repo,newLogo+b),'utf8');
- const image=x=>x.match(/xlink:href="(data:image\\/png;base64,[^"]+)"/)?.[1];
- const outlines=x=>[...x.matchAll(/<path\\b[^>]*d="([^"]+)"/g)].map(m=>m[1]);
+ const image=x=>x.match(/xlink:href="(data:image\/png;base64,[^"]+)"/)?.[1];
+ const outlines=x=>[...x.matchAll(/<path\b[^>]*d="([^"]+)"/g)].map(m=>m[1]);
  assert(updated.includes('viewBox'), 'Logo has no viewBox: '+b);
  assert.equal(image(updated),image(original),'Logo R3.1 altered canonical Nino raster: '+b);
  assert.deepEqual(outlines(updated),outlines(original),'Logo R3.1 altered approved wordmark paths: '+b);
